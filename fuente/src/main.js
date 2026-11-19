@@ -32,10 +32,10 @@ function shell() {
  app().innerHTML = '<div class="lab">' +
   '<aside class="rail"><a class="wordmark" href="#/hoy" aria-label="I+D">I<b>+</b>D</a><div class="rail-rest">' + esc(t('Cuaderno de cocina', 'Kitchen notebook')) + '</div>' +
    '<nav class="rail-nav" aria-label="' + esc(t('Secciones', 'Sections')) + '">' + NAV.map(item).join('') + '<a class="nav-item" href="#/preguntar" data-nav="preguntar">' + icon('chat') + '<span>' + esc(t('Preguntar', 'Ask')) + '</span></a><a class="nav-item" href="#/cocina" data-nav="cocina">' + icon('pan') + '<span>' + esc(t('Mi cocina', 'My kitchen')) + '</span></a></nav>' +
-   '<div class="rail-foot"><button type="button" class="rail-link" data-act="menu">' + icon('down') + '<span>' + esc(t('Copia de seguridad y pantalla', 'Backup and display')) + '</span></button></div></aside>' +
-  '<header class="top"><a class="wordmark" href="#/hoy" aria-label="I+D">I<b>+</b>D</a><span class="top-rest">' + esc(t('Cuaderno de cocina', 'Kitchen notebook')) + '</span><a class="iconbtn" href="#/preguntar" aria-label="' + esc(t('Preguntar', 'Ask')) + '">' + icon('chat') + '</a><button type="button" class="iconbtn" data-act="menu" aria-label="' + esc(t('Menú', 'Menu')) + '">' + icon('menu') + '</button></header>' +
+   '<div class="rail-foot"><button type="button" class="rail-link" data-act="menu">' + icon('gear') + '<span>' + esc(t('Ajustes', 'Settings')) + '</span></button></div></aside>' +
+  '<header class="top"><a class="wordmark" href="#/hoy" aria-label="I+D">I<b>+</b>D</a><span class="top-rest">' + esc(t('Cuaderno de cocina', 'Kitchen notebook')) + '</span><a class="top-ask" href="#/preguntar" data-nav="preguntar">' + icon('chat') + '<span>' + esc(t('Preguntar', 'Ask')) + '</span></a><button type="button" class="iconbtn" data-act="menu" aria-label="' + esc(t('Más y ajustes', 'More and settings')) + '">' + icon('menu') + '</button></header>' +
   '<div id="notices"></div><main id="view" tabindex="-1"></main><nav class="tabs" aria-label="' + esc(t('Secciones', 'Sections')) + '">' + NAV.map(item).join('') + '</nav></div>';
- $$('[data-act=menu]', app()).forEach(b => { b.onclick = menu; });
+ $$('[data-act=menu]', app()).forEach(b => { b.onclick = () => menu({nav: !!b.closest('.top')}); });
 }
 // Aviso para no olvidarse de la copia: los datos están solo en este ordenador.
 function notices() {
@@ -91,19 +91,31 @@ async function backup() {
   toast(t('Copia descargada. Guárdala donde guardes tus copias.', 'Backup downloaded. Keep it where you keep your backups.')); notices();
  } catch (e) { toast(friendly(e), 'error'); }
 }
-function menu() {
- const s = sheet({title: t('Copia de seguridad y pantalla', 'Backup and display'), body:
-  '<p class="lead">' + esc(t('Todo lo que apuntas se guarda en este ordenador, en este navegador. Descarga una copia de vez en cuando: es un archivo con tus platos y sus imágenes.', 'Everything you note is saved on this computer, in this browser. Download a backup now and then: one file with your dishes and their images.')) + '</p>' +
-  '<div class="menu-grid"><button type="button" class="tile" data-act="backup">' + icon('down') + '<span>' + esc(t('Descargar copia', 'Download backup')) + '</span></button>' +
-  '<label class="tile" for="restoreFile">' + icon('undo') + '<span>' + esc(t('Recuperar una copia', 'Restore a backup')) + '</span></label><input id="restoreFile" class="sr" type="file" accept="application/json,.json">' +
-  '<button type="button" class="tile" data-act="ia">' + icon('chat') + '<span>' + esc(iaOn() ? t('ChatGPT en la app: conectado', 'ChatGPT in the app: connected') : t('Conectar ChatGPT a la app', 'Connect ChatGPT to the app')) + '</span></button>' +
-  '<button type="button" class="tile" data-act="theme" aria-pressed="' + isDark() + '">' + icon(isDark() ? 'sun' : 'moon') + '<span>' + esc(isDark() ? t('Modo día', 'Day mode') : t('Modo noche', 'Night mode')) + '</span></button>' +
-  '<button type="button" class="tile" data-act="lang" lang="' + (prefs.lang === 'en' ? 'es' : 'en') + '">' + icon('globe') + '<span>' + (prefs.lang === 'en' ? 'Español' : 'English') + '</span></button></div>' +
-  '<p class="fine">' + esc(state.lastBackup ? t('Última copia: ', 'Last backup: ') + new Date(state.lastBackup).toLocaleDateString(prefs.lang === 'en' ? 'en-GB' : 'es-ES') : t('Aún no has descargado ninguna copia.', 'You have not downloaded a backup yet.')) + ' ' + esc(t('Recuperar una copia nunca borra nada: añade lo que falte.', 'Restoring a backup never deletes anything: it adds what is missing.')) + '</p>'});
+// Ajustes: filas claras por apartados. En el móvil (botón de arriba) lleva también los accesos que no caben abajo.
+function menu({nav = false} = {}) {
+ const cfg = iaConfig(), on = iaOn(), when = state.lastBackup ? new Date(state.lastBackup).toLocaleDateString(prefs.lang === 'en' ? 'en-GB' : 'es-ES', {day: 'numeric', month: 'long'}) : '';
+ const days = state.lastBackup ? Math.floor((Date.now() - new Date(state.lastBackup).getTime()) / 86400000) : null, live = state.dishes.filter(d => !d.deleted_at).length;
+ const rowItem = (tag, attrs, ic, title, sub, end = icon('right'), extra = '') => '<' + tag + ' class="set-row" ' + attrs + '><span class="set-ic">' + icon(ic) + '</span><span class="set-text"><strong>' + esc(title) + '</strong>' + (sub ? '<small>' + sub + '</small>' : '') + '</span>' + end + '</' + tag + '>' + extra;
+ const sw = onOff => '<span class="switch' + (onOff ? ' on' : '') + '" aria-hidden="true"><i></i></span>';
+ const s = sheet({title: nav ? t('Más', 'More') : t('Ajustes', 'Settings'), body:
+  (nav ? '<div class="set-group"><p class="set-label">' + esc(t('Ir a', 'Go to')) + '</p>' +
+   rowItem('a', 'href="#/preguntar" data-go', 'chat', t('Preguntar', 'Ask'), esc(on ? t('ChatGPT contesta aquí mismo', 'ChatGPT answers right here') : t('Pregunta lo que quieras de cocina', 'Ask anything about cooking'))) +
+   rowItem('a', 'href="#/cocina" data-go', 'pan', t('Mi cocina', 'My kitchen'), esc(t('Tus básicos, tu equipo y lo que no quieres', 'Your staples, equipment and what you avoid'))) + '</div>' : '') +
+  '<div class="set-group"><p class="set-label">ChatGPT</p>' +
+  rowItem('button', 'type="button" data-act="ia"', 'chat', on ? t('ChatGPT en la app', 'ChatGPT in the app') : t('Conectar ChatGPT a la app', 'Connect ChatGPT to the app'),
+   on ? '<span class="dot-ok"></span>' + esc(t('Conectado', 'Connected') + ' · ' + (cfg.choice === 'smart' ? t('el más listo', 'the smartest') : t('rápido', 'fast')) + (cfg.daily === false ? '' : ' · ' + t('radar diario', 'daily radar'))) : esc(t('Para preguntar, leer capturas y buscar tendencias sin copiar ni pegar', 'To ask, read screenshots and find trends without copy and paste'))) + '</div>' +
+  '<div class="set-group"><p class="set-label">' + esc(t('Tus datos', 'Your data')) + '</p>' +
+  rowItem('button', 'type="button" data-act="backup"', 'down', t('Descargar copia de seguridad', 'Download a backup'), ((days !== null && days > 14) || (days === null && live >= 3) ? '<span class="dot-warn"></span>' : '') + esc(when ? t('Última: ', 'Last: ') + when : t('Aún no has hecho ninguna', 'You have not made one yet')) + ' · ' + esc(live === 1 ? t('1 plato', '1 dish') : live + t(' platos', ' dishes')), '') +
+  rowItem('label', 'for="restoreFile"', 'undo', t('Recuperar una copia', 'Restore a backup'), esc(t('Nunca borra nada: solo añade lo que falte', 'Never deletes anything: only adds what is missing')), '', '<input id="restoreFile" class="sr" type="file" accept="application/json,.json">') +
+  '<p class="set-note">' + esc(t('Tus platos se guardan en este aparato. Con la copia los pasas del PC al móvil, o al revés.', 'Your dishes are saved on this device. With a backup you can move them between PC and phone.')) + '</p></div>' +
+  '<div class="set-group"><p class="set-label">' + esc(t('Pantalla', 'Display')) + '</p>' +
+  rowItem('button', 'type="button" data-act="theme" role="switch" aria-checked="' + isDark() + '"', isDark() ? 'moon' : 'sun', t('Modo noche', 'Night mode'), esc(t('Más cómodo con poca luz', 'Easier in low light')), sw(isDark())) +
+  '<div class="set-row set-static"><span class="set-ic">' + icon('globe') + '</span><span class="set-text"><strong>' + esc(t('Idioma', 'Language')) + '</strong></span><span class="seg seg-sm">' + [['es', 'Español'], ['en', 'English']].map(([id, label]) => '<button type="button" class="seg-btn' + ((prefs.lang === 'en' ? 'en' : 'es') === id ? ' active' : '') + '" data-lang="' + id + '" lang="' + id + '">' + label + '</button>').join('') + '</span></div></div>'});
+ $$('[data-go]', s.el).forEach(a => { a.onclick = () => s.close(); });
  $('[data-act=backup]', s.el).onclick = () => { s.close(); backup(); };
  $('[data-act=ia]', s.el).onclick = () => { s.close(); setTimeout(() => iaSheet(() => route({keepScroll: true})), 250); };
- $('[data-act=theme]', s.el).onclick = () => { setPref('theme', isDark() ? 'light' : 'dark'); s.close(); };
- $('[data-act=lang]', s.el).onclick = () => { setPref('lang', prefs.lang === 'en' ? 'es' : 'en'); s.close(); shell(); route(); };
+ $('[data-act=theme]', s.el).onclick = e => { setPref('theme', isDark() ? 'light' : 'dark'); const b = e.currentTarget; b.setAttribute('aria-checked', isDark()); b.querySelector('.switch').classList.toggle('on', isDark()); b.querySelector('.set-ic').innerHTML = icon(isDark() ? 'moon' : 'sun'); };
+ $$('[data-lang]', s.el).forEach(b => { b.onclick = () => { if ((prefs.lang === 'en' ? 'en' : 'es') === b.dataset.lang) return; setPref('lang', b.dataset.lang); s.close(); shell(); route(); }; });
  $('#restoreFile', s.el).onchange = async e => {
   const file = e.target.files[0];
   if (!file) return;

@@ -54,6 +54,8 @@ EN EL MÓVIL
 en ese aparato: para pasarlos, descarga una copia de seguridad en uno y recupérala en el otro.
 
 TENDENCIAS (RADAR)
+ - El radar se ve por tema (arriba, lo más útil para tu cocina; luego producto, técnicas, platos, dulces y bebidas,
+   restaurantes e ideas del día), por fecha o solo lo que has guardado. Tiene buscador y marca lo nuevo.
  - Cuando quieras: Radar → «Buscar tendencias de hoy». Copia la búsqueda, pégala en Claude o ChatGPT (con internet)
    y pega aquí lo que encuentren.
  - Automático cada mañana (opcional): si usas Claude en este ordenador, abre un chat en esta carpeta y pídele:

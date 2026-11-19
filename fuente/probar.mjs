@@ -96,10 +96,15 @@ ok(await page.inputValue('#dishName') === 'Mojo verde' && (await page.inputValue
 const importedIds = await page.evaluate(() => JSON.parse(localStorage.getItem('id-cocina-v1')).dishes.filter(d => d.source?.kind === 'import').map(d => d.id));
 ok(importedIds.length === 2, 'no se guardaron las dos recetas importadas');
 // Radar pegado
-await go('#/radar'); await page.waitForSelector('.trend'); const radarCount = await page.locator('.trend').count(); await page.click('[data-act=search]'); await page.click('.sheet [data-act=copy]'); await wait(200);
+await go('#/radar'); await page.waitForSelector('.trow'); await page.click('[data-filter=fecha]'); const radarCount = await page.locator('.trow').count(); await page.click('[data-act=search]'); await page.click('.sheet [data-act=copy]'); await wait(200);
 ok((await page.evaluate(() => navigator.clipboard.readText())).includes('Busca en internet'), 'la búsqueda de tendencias no se copia');
 await page.fill('#radarReply', '```json\n[{"kind":"tecnica","heat":"alza","title":"Verduras enteras a la brasa","summary":"La verdura como principal.","why":"Parrillas de referencia.","adapt":"En tu brasa.","places":["Ejemplo"],"sources":[{"name":"Revista","url":"https://example.org/x","date":"2026-11-10"}],"ideas":[{"name":"Puerro a la brasa","line":"Entero","components":[{"role":"principal","name":"Puerro","techniques":["brasa"],"items":["Puerro"]}]}],"tags":["brasa"],"fit":90},{"kind":"idea","title":"Calabaza, miso y pipas","summary":"Dulce y umami.","ideas":[{"name":"Calabaza, miso y pipas","line":"x","components":[{"role":"principal","name":"Calabaza","techniques":["brasa"],"items":["Calabaza"]}]}]}]\n```');
-await page.click('.sheet [data-act=add]'); await page.waitForSelector('.trend'); ok(await page.locator('.trend').count() === radarCount + 2, 'los avisos pegados no entran');
+await page.click('.sheet [data-act=add]'); await page.waitForSelector('.group'); await page.click('[data-filter=fecha]'); ok(await page.locator('.trow').count() === radarCount + 2, 'los avisos pegados no entran');
+// Radar por temas: grupos, búsqueda y tema abierto
+await page.click('[data-filter=tema]'); ok(await page.locator('.group').count() >= 3 && await page.locator('.trend-strip .trend').count() === 3, 'el radar no se agrupa por temas');
+await page.fill('#radarQ', 'calabaza'); await wait(150); ok((await page.textContent('#radarBody')).includes('Calabaza, miso y pipas') && await page.locator('#radarBody .trow').count() === 1, 'la búsqueda del radar no encuentra');
+await page.fill('#radarQ', ''); await wait(150); await page.locator('.group-more').first().click(); await wait(150); ok(await page.locator('.group-title').count() === 1 && await page.locator('.trend-grid .trend').count() >= 3, 'no se abre un tema entero');
+await page.locator('.trend-grid .trend').first().click(); await page.waitForSelector('.story'); ok(await page.locator('.story-next').count() === 1, 'el aviso no ofrece el siguiente del tema');
 await go('#/hoy'); await page.waitForSelector('.cover-title'); ok((await page.textContent('.cover-title')).trim().length > 5, 'la portada no enseña ningún aviso');
 await page.screenshot({path: shots + 'hoy-con-radar.png', fullPage: true});
 // Libreta, papelera, sabores, cocina
