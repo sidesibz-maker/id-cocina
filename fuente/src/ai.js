@@ -6,7 +6,8 @@ import {state} from './store.js';
 import {en} from './i18n.js';
 
 const lang = () => (en() ? 'Write the texts in British English.' : 'Escribe los textos en español de España.');
-const kitchen = () => kitchenRequest(state.kb, state.kitchen, state.settings, null);
+// Los básicos van en una sola línea: la consulta cabe así en el enlace que abre el chat.
+const kitchen = () => { const k = kitchenRequest(state.kb, state.kitchen, state.settings, null); return Object.fromEntries(Object.entries({...k, basics: k.basics.join(', ')}).filter(([, v]) => v !== '' && v != null && !(Array.isArray(v) && !v.length))); };
 const RULES = 'Eres un jefe de cocina con mucho oficio que ayuda a otro cocinero con el I+D de su restaurante. No haces alta cocina de laboratorio: buscas platos novedosos, ricos, con personalidad propia y que se puedan servir bien con el servicio lleno. Habla claro y de tú, con frases cortas y concretas, sin halagos. Usa primero los básicos de su cocina; cualquier otro producto debe ser fácil de encontrar en España. No inventes cantidades exactas ni tiempos: orienta. Respeta lo que la cocina dice que no quiere.';
 const ONLY_JSON = 'Responde SOLO con un bloque de código JSON válido (```json … ```), sin texto antes ni después.';
 
@@ -17,14 +18,14 @@ export function advicePrompt(dish) {
   '- "signature": cómo darle el sello de la casa, en dos o tres frases.\n- "service": {"mise": de 3 a 5 cosas que se dejan hechas, "pass": cómo se termina y cuánto tarda en salir, "risks": de 1 a 3 cosas que pueden fallar en pleno servicio}.\n' +
   '- "plating": emplatado sencillo, sin pinzas ni flores: qué va debajo, qué encima y qué color manda.\n- "variants": exactamente 3, cada una {"label": «Más sencilla», «Más atrevida» o «De temporada», "idea": qué cambia}.\n' +
   '- "names": 3 nombres de carta, cada uno {"es", "en"}.\n- "allergens": los que probablemente lleva, solo de esta lista: ' + ALLERGENS.map(a => a[0]).join(', ') + '.\n- "issues": dudas; lista vacía si no hay.\n' +
-  'Ten en cuenta el perfil de sabor calculado (de 0 a 10) y los avisos de equilibrio, pero usa tu criterio. ' + lang() + '\n\nDATOS:\n' + JSON.stringify({plato: dishRequest(state.kb, dish), cocina: kitchen()}, null, 1);
+  'Ten en cuenta el perfil de sabor calculado (de 0 a 10) y los avisos de equilibrio, pero usa tu criterio. ' + lang() + '\n\nDATOS:\n' + JSON.stringify({plato: dishRequest(state.kb, dish), cocina: kitchen()});
 }
 export function ideasPrompt({brief = '', course = '', lead = '', wants = [], trend = null} = {}) {
  return RULES + '\n\nPropón exactamente 3 platos distintos entre sí a partir de esta petición. ' + ONLY_JSON + ' Formato: {"ideas": [ … ], "issues": [ … ]}. Cada idea:\n' +
   '- "name": nombre de carta corto. "line": la idea en una frase. "course": uno de ' + COURSE_IDS.join(', ') + '.\n- "why": por qué funciona (equilibrio de sabores y texturas). "twist": qué lo hace propio y no una copia.\n' +
   '- "components": de 3 a 6, cada uno {"role": uno de ' + ROLE_IDS.join(', ') + '; "name": cómo se llama en el plato; "techniques": de esta lista: ' + AI_TECHS.join(', ') + '; "items": ingredientes con nombres simples}.\n' +
   'Cada plato lleva un protagonista claro, algo ácido o fresco que equilibre y un contraste de textura. Nada de espumas, esferificaciones ni geles. Una de las tres puede ser más atrevida. ' + lang() + '\n\nDATOS:\n' +
-  JSON.stringify({peticion: {texto: brief.slice(0, 600), tipo: course, producto_principal: lead.slice(0, 80), que_sea: wants, tendencia: trend ? {titulo: trend.title, resumen: trend.summary} : null}, cocina: kitchen()}, null, 1);
+  JSON.stringify({peticion: {texto: brief.slice(0, 600), tipo: course, producto_principal: lead.slice(0, 80), que_sea: wants, tendencia: trend ? {titulo: trend.title, resumen: trend.summary} : null}, cocina: kitchen()});
 }
 const STYLE = {mesa: 'ángulo de 45 grados, luz natural lateral de ventana, mesa de madera clara, poca profundidad de campo', cenital: 'vista cenital, luz de día suave, superficie de piedra o lino, el plato entero a la vista', cerca: 'primer plano a baja altura, muy poca profundidad de campo, se ven las texturas y el brillo de la salsa', oscuro: 'fondo oscuro, una sola luz cálida lateral, superficie de pizarra o madera quemada, brasas desenfocadas al fondo'};
 export function imagePrompt(dish, style) {
@@ -39,7 +40,7 @@ export function importPrompt() {
   '{"name": "nombre del plato", "concept": "qué es, en una frase", "course": uno de ' + COURSE_IDS.join(', ') + ', "portions": "raciones si lo dice", "source": {"author": "la cuenta, chef o web si sale", "url": "el enlace si sale"}, ' +
   '"components": [{"role": uno de ' + ROLE_IDS.join(', ') + ', "name": "nombre del componente (p. ej. Alioli)", "techniques": ids de esta lista si encajan: ' + AI_TECHS.join(', ') + ', "items": [{"name": "ingrediente", "qty": "cantidad tal cual (120 g, 2 cdas, al gusto)"}], "method": ["paso 1", "paso 2"]}], ' +
   '"plating": "cómo se emplata si lo dice", "notes": "trucos o avisos que dé", "issues": ["lo que no se lee bien o falta"]}\n' +
-  'Separa la receta en componentes (lo principal, la salsa, la guarnición, lo crujiente…), cada uno con sus ingredientes y sus pasos. Copia las cantidades, tiempos y temperaturas tal cual aparecen; no inventes nada que no salga: si falta algo, déjalo vacío y dilo en "issues". Si la receta tiene subtítulos o se dice hablando, usa lo que se entienda. ' + lang();
+  'Si todavía no te he pasado la receta, pídemela en una frase corta y espera. Separa la receta en componentes (lo principal, la salsa, la guarnición, lo crujiente…), cada uno con sus ingredientes y sus pasos. Copia las cantidades, tiempos y temperaturas tal cual aparecen; no inventes nada que no salga: si falta algo, déjalo vacío y dilo en "issues". Si la receta tiene subtítulos o se dice hablando, usa lo que se entienda. ' + lang();
 }
 // La respuesta de la IA (JSON) o el texto de la receta pegado tal cual.
 export function recipeFromReply(text) {
@@ -53,7 +54,7 @@ export function radarPrompt() {
   ONLY_JSON + ' Es una lista de 4 a 6 avisos y 1 idea del día. Cada aviso:\n' +
   '{"kind": tecnica, producto, plato, escena, dulce o bebida; "heat": emergente, alza o consolidada; "title": hasta 90 caracteres; "summary": una o dos frases; "why": por qué ahora y quién lo hace; "adapt": cómo llevarlo a esta cocina con su equipo y sus básicos; "places": hasta 5 restaurantes o ciudades; "sources": [{"name", "url", "date": "AAAA-MM-DD"}]; ' +
   '"ideas": 1 o 2 platos {"name", "line", "components": [{"role": ' + ROLE_IDS.join('/') + ', "name", "techniques": de ' + AI_TECHS.join(', ') + ', "items": [ingredientes]}]}; "tags": de 2 a 4 palabras; "fit": de 0 a 100, cuánto encaja con esta cocina}.\n' +
-  'La idea del día lleva "kind": "idea", sin sources ni places: "title" es el nombre del plato, "summary" la idea y "ideas" ese plato.\n' + lang() + '\n\nLA COCINA:\n' + JSON.stringify(k, null, 1) + (recent.length ? '\n\nNo repitas estos avisos anteriores:\n- ' + recent.join('\n- ') : '');
+  'La idea del día lleva "kind": "idea", sin sources ni places: "title" es el nombre del plato, "summary" la idea y "ideas" ese plato.\n' + lang() + '\n\nLA COCINA:\n' + JSON.stringify(k) + (recent.length ? '\n\nNo repitas estos avisos anteriores:\n- ' + recent.join('\n- ') : '');
 }
 // Saca el JSON de una respuesta pegada (con o sin bloque de código alrededor). null si no hay JSON.
 export function parseReply(text) {
@@ -78,7 +79,10 @@ export function trendsFromReply(text) {
  const v = parseReply(text), list = Array.isArray(v) ? v : Array.isArray(v?.avisos) ? v.avisos : Array.isArray(v?.trends) ? v.trends : [];
  return list.filter(t => t && typeof t === 'object' && typeof t.title === 'string' && t.title.trim()).slice(0, 12);
 }
+// Lo último copiado: los botones «Preguntar a ChatGPT / Claude» lo llevan ya escrito al chat.
+export let lastCopied = null;
 export async function copy(text) {
+ lastCopied = {text: String(text || ''), at: Date.now()};
  try { await navigator.clipboard.writeText(text); return true; } catch {}
  try { const a = document.createElement('textarea'); a.value = text; a.style.position = 'fixed'; a.style.opacity = '0'; document.body.append(a); a.select(); const done = document.execCommand('copy'); a.remove(); return done; } catch { return false; }
 }

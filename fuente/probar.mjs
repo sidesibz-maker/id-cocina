@@ -29,8 +29,15 @@ await page.waitForSelector('.save-saved', {timeout: 8000});
 await page.click('[data-act=advice]'); await wait(200);
 const prompt = await page.evaluate(() => navigator.clipboard.readText());
 ok(prompt.includes('Pulpo, romesco y encurtido') && prompt.includes('"basics"') && !/precio|price|supplier|Albar/i.test(prompt), 'la consulta no lleva el plato o lleva algo de más');
+console.log('consulta de consejo:', prompt.length, 'caracteres,', encodeURIComponent(prompt).length, 'en enlace');
+// «Preguntar a ChatGPT» abre el chat con la consulta escrita; «Pegar y leer» trae la respuesta de un toque
+await ctx.route(/chatgpt\.com|claude\.ai/, r => r.fulfill({body: 'chat'}));
+const [chat] = await Promise.all([ctx.waitForEvent('page'), page.click('#adviceSec a[data-chat][href^="https://chatgpt.com"]')]);
+const chatUrl = chat.url(); await chat.close();
+ok(chatUrl.startsWith('https://chatgpt.com/') && (chatUrl.includes('?q=') ? decodeURIComponent(chatUrl).includes('Pulpo, romesco y encurtido') : true), 'Preguntar a ChatGPT no abre el chat con la consulta: ' + chatUrl.slice(0, 80));
+console.log('enlace al chat con la consulta escrita:', chatUrl.includes('?q='));
 await page.fill('#adviceReply', 'Claro:\n```json\n{"verdict":"Tiene sentido, baja el romesco.","works":["La brasa"],"changes":[{"what":"Más ácido","why":"Hay grasa","how":"Cebolla encurtida"}],"signature":"Aceite ahumado","service":{"mise":["Pulpo cocido"],"pass":"Tres minutos","risks":[]},"plating":"Sencillo","variants":[{"label":"Más sencilla","idea":"Solo patata"}],"names":[{"es":"Pulpo brasa","en":"Charcoal octopus"}],"allergens":["moluscos"],"issues":[]}\n```');
-await page.click('[data-act=save-advice]'); await page.waitForSelector('.advice-lead');
+await page.evaluate(t => navigator.clipboard.writeText(t), await page.inputValue('#adviceReply')); await page.fill('#adviceReply', ''); await page.click('#adviceSec [data-paste]'); await page.waitForSelector('.advice-lead');
 // Imagen: copiar descripción y añadir un archivo
 await page.click('[data-act=image]'); await wait(200);
 ok((await page.evaluate(() => navigator.clipboard.readText())).includes('fotografía gastronómica'), 'la descripción de la imagen no se copia');

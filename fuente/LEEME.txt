@@ -17,11 +17,14 @@ otros programas. Por eso:
  - Descarga una copia de seguridad de vez en cuando (menú «Copia de seguridad y pantalla»). Es un archivo con tus
    platos y sus imágenes. Si cambias de ordenador o borras los datos del navegador, la recuperas desde ese mismo menú.
 
-CONSEJO, IDEAS E IMÁGENES
-La app prepara la consulta completa y la copia; tú la pegas en Claude o en ChatGPT y pegas de vuelta la respuesta.
- - Consejo sobre un plato: en el plato, «Copiar la consulta» → pegar en Claude o ChatGPT → pegar la respuesta → «Guardar».
+CONSEJO, IDEAS E IMÁGENES (CON TU CHATGPT O CLAUDE DE SIEMPRE)
+ - Pulsa «Preguntar a ChatGPT» (o a Claude): se abre el chat con la consulta ya escrita. Si no saliera escrita, ya
+   está copiada: mantén pulsado en el chat y pega.
+ - Cuando conteste, copia su respuesta, vuelve a la app y pulsa «Pegar y leer». La app la guarda en el plato.
+ - Consejo sobre un plato: en el plato, apartado «Consejo».
  - Ideas de platos: Crear → Dame ideas.
- - Imagen del plato: en el plato, «Copiar descripción para ChatGPT» → ChatGPT crea la imagen → «Añadir imagen».
+ - Imagen del plato: en el plato, «Preguntar a ChatGPT» en «Imagen del plato» → ChatGPT crea la imagen → la guardas y
+   pulsas «Añadir imagen».
 
 FICHA TÉCNICA (NUEVO)
 En cada plato: toca un ingrediente y pon su cantidad por ración (120 g, 2 ud, c/s). En cada componente abre
@@ -32,8 +35,13 @@ IMPORTAR RECETAS DE TIKTOK, INSTAGRAM O UNA WEB (NUEVO)
 Crear → Importar receta.
  - Si es texto (la descripción del vídeo, una web, un mensaje): pégalo tal cual y pulsa «Leer la receta». La app separa
    ingredientes, cantidades y pasos ella sola, sin internet.
- - Si es una captura o un vídeo: «Copiar la instrucción» → en ChatGPT o Claude pega la instrucción y adjunta la captura
-   → copia lo que conteste y pégalo en la app. Revisa cómo queda y pulsa «Guardar en la libreta».
+ - Si es una captura o un vídeo: «Preguntar a ChatGPT» → adjunta la captura en el chat y envía → copia lo que conteste
+   → vuelve a la app y pulsa «Pegar y leer». Revisa cómo queda y pulsa «Guardar en la libreta».
+
+EN EL MÓVIL
+Ábrela en https://sidesibz-maker.github.io/id-cocina/ y añádela a la pantalla de inicio. En Android, al pulsar
+«Compartir» en TikTok o Instagram puedes elegir I+D y la receta llega ya leída. Los platos de cada aparato se guardan
+en ese aparato: para pasarlos, descarga una copia de seguridad en uno y recupérala en el otro.
 
 TENDENCIAS (RADAR)
  - Cuando quieras: Radar → «Buscar tendencias de hoy». Copia la búsqueda, pégala en Claude o ChatGPT (con internet)

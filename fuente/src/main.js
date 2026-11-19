@@ -3,6 +3,7 @@ import './lab.css';
 import {applyPrefs, prefs, setPref, isDark, t} from './i18n.js';
 import {$, $$, esc, icon, sheet, toast, closeSheets, friendly} from './ui.js';
 import {presetRecipe} from './views/create.js';
+import {lastCopied} from './ai.js';
 import {state, loadAll, onChange, unseenTrends, exportBackup, importBackup} from './store.js';
 import * as home from './views/home.js';
 import * as radar from './views/radar.js';
@@ -99,7 +100,39 @@ function menu() {
   catch { toast(t('Ese archivo no es una copia de esta app.', 'That file is not a backup from this app.'), 'error'); }
  };
 }
+// «Preguntar a ChatGPT / Claude»: copia la consulta (con el botón de copiar de su misma fila) y abre el chat con ella ya escrita.
+// Si la consulta es muy larga para un enlace, el chat se abre vacío y basta con pegar: ya está copiada.
+const CHAT_MAX = 9000;
+function chatClick(e) {
+ const a = e.target.closest('a[data-chat]');
+ if (!a) return;
+ const trigger = a.closest('.row-actions')?.querySelector('button');
+ if (!trigger) return;
+ e.preventDefault();
+ const before = lastCopied;
+ trigger.click();
+ if (lastCopied === before) return; // falta algo (la app ya lo ha dicho): no se abre el chat
+ const base = a.getAttribute('href'), q = encodeURIComponent(lastCopied.text);
+ const fits = q.length <= CHAT_MAX;
+ window.open(fits ? base + (base.includes('?') ? '&' : '?') + 'q=' + q : base, '_blank', 'noopener');
+ if (!fits) setTimeout(() => toast(t('La consulta ya está copiada: en el chat, mantén pulsado y pega.', 'The request is already copied: in the chat, long-press and paste.'), 'info', 6000), 400);
+}
+// «Pegar y leer»: trae lo copiado al recuadro y lo procesa de un toque.
+async function pasteClick(e) {
+ const b = e.target.closest('[data-paste]');
+ if (!b) return;
+ const box = document.getElementById(b.dataset.paste);
+ if (!box) return;
+ let text = '';
+ try { text = await navigator.clipboard.readText(); } catch {}
+ if (!text.trim()) { box.focus(); toast(t('No puedo leer lo copiado desde aquí: mantén pulsado el recuadro y pega.', 'I cannot read the clipboard here: long-press the box and paste.'), 'error', 6000); return; }
+ box.value = text; box.dispatchEvent(new Event('input', {bubbles: true}));
+ b.closest('.row-actions')?.querySelector(b.dataset.then)?.click();
+}
+
 async function start() {
+ document.addEventListener('click', chatClick, true);
+ document.addEventListener('click', pasteClick);
  const shared = new URLSearchParams(location.search);
  if (['title', 'text', 'url'].some(k => shared.get(k))) { const keys = shared.get('text') ? ['text', 'url'] : ['title', 'url']; presetRecipe([...new Set(keys.map(k => (shared.get(k) || '').trim()).filter(Boolean))].join('\n')); history.replaceState(null, '', location.pathname + '#/crear/importar'); }
  applyPrefs();
