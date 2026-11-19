@@ -7,6 +7,7 @@ import {t, en, pick, relDay, shortDate, seasonOf, seasonLabel, dayKey} from '../
 import {esc, icon, $, $$, uid, toast, friendly, sheet, ask, flavorMeters, flavorPrint, verdictText, axisName, lackName, clip} from '../ui.js';
 import {state, dishById, fetchDish, createDish, saveDish, trashDish, restoreDish, imageUrl, uploadImage, userName} from '../store.js';
 import {advicePrompt, imagePrompt, adviceFromReply, copy, shrinkImage} from '../ai.js';
+import {iaOn, askIa, iaMessage} from '../ia.js';
 import {STATUSES, emptyState, skeleton} from './shared.js';
 import {go} from '../nav.js';
 
@@ -181,9 +182,13 @@ function imagesHtml() {
 function adviceHtml() {
  const a = cur.advice, can = editable();
  let html = '<h2>' + esc(t('Consejo', 'Advice')) + '</h2>';
- const ask = can ? '<div class="row-actions row-left"><button type="button" class="btn ' + (a ? 'ghost' : 'primary') + '" data-act="advice">' + icon('copy') + esc(t('1 · Copiar la consulta', '1 · Copy the request')) + '</button><a class="btn ghost" href="https://claude.ai/new" data-chat target="_blank" rel="noopener noreferrer">' + esc(t('Preguntar a Claude', 'Ask Claude')) + icon('out') + '</a><a class="btn ghost" href="https://chatgpt.com/" data-chat target="_blank" rel="noopener noreferrer">' + esc(t('Preguntar a ChatGPT', 'Ask ChatGPT')) + icon('out') + '</a></div>' +
+ const manual = can ? '<div class="row-actions row-left"><button type="button" class="btn ' + (a ? 'ghost' : 'primary') + '" data-act="advice">' + icon('copy') + esc(t('1 · Copiar la consulta', '1 · Copy the request')) + '</button><a class="btn ghost" href="https://claude.ai/new" data-chat target="_blank" rel="noopener noreferrer">' + esc(t('Preguntar a Claude', 'Ask Claude')) + icon('out') + '</a><a class="btn ghost" href="https://chatgpt.com/" data-chat target="_blank" rel="noopener noreferrer">' + esc(t('Preguntar a ChatGPT', 'Ask ChatGPT')) + icon('out') + '</a></div>' +
   '<label class="mini" for="adviceReply">' + esc(t('2 · Pega aquí la respuesta', '2 · Paste the answer here')) + '</label><textarea id="adviceReply" rows="3" placeholder="' + esc(t('Pega la respuesta entera, tal cual', 'Paste the whole answer as it is')) + '"></textarea>' +
   '<div class="row-actions row-left"><button type="button" class="btn ghost" data-paste="adviceReply" data-then="[data-act=save-advice]">' + icon('copy') + esc(t('Pegar y leer', 'Paste and read')) + '</button><button type="button" class="btn primary" data-act="save-advice">' + icon('check') + esc(t('3 · Guardar el consejo', '3 · Save the advice')) + '</button></div>' : '';
+ const askAbout = cur.id ? '<a class="btn ghost" href="#/preguntar/' + esc(cur.id) + '">' + icon('chat') + esc(t('Preguntar sobre este plato', 'Ask about this dish')) + '</a>' : '';
+ const ask = !can ? '' : iaOn()
+  ? '<div class="row-actions row-left"><button type="button" class="btn ' + (a ? 'ghost' : 'primary') + '" data-act="advice-ia">' + icon('spark') + esc(a ? t('Pedir otro consejo a ChatGPT', 'Ask ChatGPT for new advice') : t('Pedir consejo a ChatGPT', 'Ask ChatGPT for advice')) + '</button>' + askAbout + '</div><details class="fold fold-quiet"><summary>' + esc(t('Hacerlo copiando y pegando', 'Do it by copy and paste')) + '</summary>' + manual + '</details>'
+  : manual + (askAbout ? '<div class="row-actions row-left">' + askAbout + '</div>' : '');
  if (!a || !a.verdict && !(a.changes || []).length && !a.raw) {
   return html + '<p class="hint">' + esc(t('Pide una segunda opinión: qué funciona, qué cambiar, cómo darle tu sello, cómo sacarlo en el servicio y cómo emplatarlo sin complicarse. La app prepara la consulta con el plato y tu cocina; la contestan Claude o ChatGPT.', 'Ask for a second opinion: what works, what to change, how to make it yours, how to run it in service and how to plate it simply. The app prepares the request with the dish and your kitchen; Claude or ChatGPT answer it.')) + '</p>' + ask;
  }
@@ -201,7 +206,7 @@ function adviceHtml() {
   if (a.allergens?.length) html += '<h3>' + esc(t('Alérgenos probables', 'Likely allergens')) + '</h3><div class="chips">' + a.allergens.map(id => { const row = ALLERGENS.find(x => x[0] === id); return row ? '<span class="chip chip-static">' + esc(lbl(row)) + '</span>' : ''; }).join('') + '</div><p class="fine">' + esc(t('Es solo una pista: compruébalo siempre con las fichas de cada producto.', 'This is only a hint: always check it against each product\'s data sheet.')) + '</p>';
   if (a.issues?.length) html += '<p class="fine">' + esc(a.issues.join(' ')) + '</p>';
  }
- html += (a.at ? '<p class="fine">' + esc(t('Consejo del ', 'Advice from ') + shortDate(a.at)) + '</p>' : '') + (can ? '<details class="fold"><summary>' + esc(t('Pedir otro consejo', 'Ask again')) + '</summary>' + ask + '</details>' : '');
+ html += (a.at ? '<p class="fine">' + esc(t('Consejo del ', 'Advice from ') + shortDate(a.at)) + '</p>' : '') + (can ? (iaOn() ? ask : '<details class="fold"><summary>' + esc(t('Pedir otro consejo', 'Ask again')) + '</summary>' + ask + '</details>') : '');
  return html;
 }
 
@@ -482,6 +487,17 @@ export function mount(el) {
    if (cur.components.reduce((n, c) => n + c.items.length, 0) < 2) { toast(t('Añade al menos dos ingredientes al plato.', 'Add at least two ingredients to the dish.'), 'error'); return; }
    const done = await copy(advicePrompt(cur));
    toast(done ? t('Consulta copiada. Pégala en Claude o en ChatGPT.', 'Request copied. Paste it into Claude or ChatGPT.') : t('No se pudo copiar. Prueba otra vez.', 'It could not be copied. Please try again.'), done ? 'info' : 'error');
+  }
+  else if (act === 'advice-ia') {
+   if (cur.components.reduce((n, c) => n + c.items.length, 0) < 2) { toast(t('Añade al menos dos ingredientes al plato.', 'Add at least two ingredients to the dish.'), 'error'); return; }
+   const dish = cur; b.disabled = true; b.classList.add('is-busy'); b.lastChild.textContent = t('ChatGPT está mirando el plato…', 'ChatGPT is looking at the dish…');
+   try {
+    const advice = adviceFromReply(await askIa({text: advicePrompt(dish), json: true}));
+    if (!advice) throw Object.assign(Error('empty'), {kind: 'empty'});
+    dish.advice = advice;
+    if (cur === dish) { touch('advice'); part('adviceSec', adviceHtml()); if (!$('#fichaSec', root)?.contains(document.activeElement)) part('fichaSec', fichaSecHtml()); toast(t('Consejo guardado en el plato.', 'Advice saved in the dish.')); }
+    else if (dish.id) { await saveDish(dish.id, {advice}); toast(t('Consejo guardado en «', 'Advice saved in “') + dish.name + t('».', '”.')); }
+   } catch (err) { toast(iaMessage(err), 'error', 7000); if (b.isConnected) { b.disabled = false; b.classList.remove('is-busy'); b.lastChild.textContent = t('Pedir consejo a ChatGPT', 'Ask ChatGPT for advice'); } }
   }
   else if (act === 'save-advice') {
    const advice = adviceFromReply($('#adviceReply', root).value);

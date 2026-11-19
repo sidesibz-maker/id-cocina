@@ -17,6 +17,16 @@ otros programas. Por eso:
  - Descarga una copia de seguridad de vez en cuando (menú «Copia de seguridad y pantalla»). Es un archivo con tus
    platos y sus imágenes. Si cambias de ordenador o borras los datos del navegador, la recuperas desde ese mismo menú.
 
+CHATGPT DENTRO DE LA APP (OPCIONAL)
+Menú → «Conectar ChatGPT a la app». Con eso la app pregunta ella sola, sin copiar ni pegar:
+ - «Preguntar» (icono de bocadillo): preguntas lo que quieras, también con una foto. Dentro de un plato, «Preguntar
+   sobre este plato» ya le pasa el plato; cada respuesta se puede guardar en las notas del plato.
+ - Consejo del plato, ideas, leer capturas de recetas y buscar tendencias: un botón cada cosa.
+ - Las tendencias se buscan solas una vez al día al abrir la app (se puede apagar en ese mismo menú).
+ - Las imágenes del plato se siguen haciendo en tu ChatGPT de siempre.
+Hace falta una clave de platform.openai.com con saldo de prepago (va aparte de la suscripción de ChatGPT; pon un límite
+de gasto). La clave se guarda solo en ese aparato y no va en las copias: pégala una vez en el PC y otra en el móvil.
+
 CONSEJO, IDEAS E IMÁGENES (CON TU CHATGPT O CLAUDE DE SIEMPRE)
  - Pulsa «Preguntar a ChatGPT» (o a Claude): se abre el chat con la consulta ya escrita. Si no saliera escrita, ya
    está copiada: mantén pulsado en el chat y pega.

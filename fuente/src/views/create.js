@@ -9,6 +9,7 @@ import {esc, icon, $, toast, flavorPrint, uid, friendly} from '../ui.js';
 import {state, createDish} from '../store.js';
 import {ideasPrompt, ideasFromReply, importPrompt, recipeFromReply, copy} from '../ai.js';
 import {go} from '../nav.js';
+import {iaOn, askIa, iaMessage, imageData} from '../ia.js';
 import {trText, adoptIdea, sectionHead} from './shared.js';
 
 let form = {brief: '', course: '', lead: '', wants: []}, result = null, lastTrend = '', recipe = null, recipeText = '';
@@ -44,16 +45,18 @@ function ideaResult(idea, k) {
 function ideasPage(trendId) {
  const trend = trendId ? state.trends.find(x => x.id === trendId) : null;
  if ((trendId || '') !== lastTrend) { result = null; lastTrend = trendId || ''; }
- const can = state.canEdit && !state.setupPending;
+ const can = state.canEdit && !state.setupPending, on = iaOn();
  let html = '<a class="back" href="' + (trend ? '#/radar/' + esc(trend.id) : '#/crear') + '">' + icon('left') + esc(trend ? t('Aviso', 'Alert') : t('Crear', 'Create')) + '</a><header class="page-head"><h1>' + esc(t('Dame ideas', 'Give me ideas')) + '</h1><p>' + esc(t('Cuenta qué buscas, copia la petición y pégala en Claude o en ChatGPT. Luego pega aquí su respuesta y la app te monta las tres propuestas.', 'Say what you are after, copy the request and paste it into Claude or ChatGPT. Then paste the answer here and the app builds the three proposals.')) + '</p></header>';
  if (trend) html += '<div class="notice">' + icon('radar') + '<p><strong>' + esc(t('A partir del aviso: ', 'Based on the alert: ')) + '</strong>' + esc(trText(trend, 'title')) + '</p></div>';
  html += '<form id="ideasForm" class="card form"><label for="brief">' + esc(t('¿Qué buscas?', 'What are you after?')) + '</label><textarea id="brief" rows="3" maxlength="600" placeholder="' + esc(t('Un entrante de invierno para compartir con alcachofa, que no sea otra alcachofa a la brasa sin más…', 'A winter starter to share with artichoke, that is not just another grilled artichoke…')) + '">' + esc(form.brief) + '</textarea>' +
   '<div class="form-row"><div><label for="ideaCourse">' + esc(t('Tipo de plato', 'Type of dish')) + '</label><select id="ideaCourse"><option value="">' + esc(t('Cualquiera', 'Any')) + '</option>' + COURSES.filter(c => c[0] !== 'otro').map(c => '<option value="' + c[0] + '"' + (form.course === c[0] ? ' selected' : '') + '>' + esc(lbl(c)) + '</option>').join('') + '</select></div>' +
   '<div><label for="ideaLead">' + esc(t('Producto principal (opcional)', 'Main product (optional)')) + '</label><input id="ideaLead" value="' + esc(form.lead) + '" maxlength="80" placeholder="' + esc(t('Pulpo, calabaza…', 'Octopus, pumpkin…')) + '" autocomplete="off"></div></div>' +
   '<fieldset class="choice"><legend>' + esc(t('Que sea…', 'Make it…')) + '</legend>' + WANTS().map(([id, label]) => '<button type="button" class="pill' + (form.wants.includes(id) ? ' active' : '') + '" data-want="' + id + '" aria-pressed="' + form.wants.includes(id) + '">' + esc(label) + '</button>').join('') + '</fieldset>' +
-  '<div class="row-actions row-left"><button type="submit" class="btn primary">' + icon('copy') + esc(t('1 · Copiar la petición', '1 · Copy the request')) + '</button><a class="btn ghost" href="https://claude.ai/new" data-chat target="_blank" rel="noopener noreferrer">' + esc(t('Preguntar a Claude', 'Ask Claude')) + icon('out') + '</a><a class="btn ghost" href="https://chatgpt.com/" data-chat target="_blank" rel="noopener noreferrer">' + esc(t('Preguntar a ChatGPT', 'Ask ChatGPT')) + icon('out') + '</a></div>' +
-  '<label for="ideasReply">' + esc(t('2 · Pega aquí la respuesta', '2 · Paste the answer here')) + '</label><textarea id="ideasReply" rows="4" placeholder="' + esc(t('Pega la respuesta entera, tal cual', 'Paste the whole answer as it is')) + '"></textarea>' +
-  '<div class="row-actions row-left"><button type="button" class="btn ghost" data-paste="ideasReply" data-then="[data-act=read-ideas]">' + icon('copy') + esc(t('Pegar y leer', 'Paste and read')) + '</button><button type="button" class="btn primary" data-act="read-ideas">' + icon('spark') + esc(t('3 · Ver las propuestas', '3 · See the proposals')) + '</button></div></form>';
+  (on ? '<div class="row-actions row-left"><button type="submit" class="btn primary">' + icon('spark') + esc(t('Pedir ideas a ChatGPT', 'Ask ChatGPT for ideas')) + '</button></div><details class="fold fold-quiet"><summary>' + esc(t('Hacerlo copiando y pegando', 'Do it by copy and paste')) + '</summary>' : '') +
+  '<div class="row-actions row-left"><button type="button" class="btn ' + (on ? 'ghost' : 'primary') + '" data-act="copy-ideas">' + icon('copy') + esc(t('1 · Copiar la petición', '1 · Copy the request')) + '</button><a class="btn ghost" href="https://claude.ai/new" data-chat target="_blank" rel="noopener noreferrer">' + esc(t('Preguntar a Claude', 'Ask Claude')) + icon('out') + '</a><a class="btn ghost" href="https://chatgpt.com/" data-chat target="_blank" rel="noopener noreferrer">' + esc(t('Preguntar a ChatGPT', 'Ask ChatGPT')) + icon('out') + '</a></div>' +
+  '<label class="mini" for="ideasReply">' + esc(t('2 · Pega aquí la respuesta', '2 · Paste the answer here')) + '</label><textarea id="ideasReply" rows="4" placeholder="' + esc(t('Pega la respuesta entera, tal cual', 'Paste the whole answer as it is')) + '"></textarea>' +
+  '<div class="row-actions row-left"><button type="button" class="btn ghost" data-paste="ideasReply" data-then="[data-act=read-ideas]">' + icon('copy') + esc(t('Pegar y leer', 'Paste and read')) + '</button><button type="button" class="btn primary" data-act="read-ideas">' + icon('spark') + esc(t('3 · Ver las propuestas', '3 · See the proposals')) + '</button></div>' +
+  (on ? '</details>' : '') + '</form>';
  if (result) html += '<section class="sec" id="ideaResults">' + sectionHead(t('Propuestas', 'Proposals'), '', t('Son borradores: abre la que te guste y cámbiala a tu manera.', 'These are drafts: open the one you like and make it yours.')) + '<div class="idea-list">' + result.ideas.map(ideaResult).join('') + '</div>' + (result.issues.length ? '<p class="fine">' + esc(result.issues.join(' ')) + '</p>' : '') + '</section>';
  return html;
 }
@@ -72,8 +75,10 @@ function recipePreview(r) {
 function importPage() {
  return '<a class="back" href="#/crear">' + icon('left') + esc(t('Crear', 'Create')) + '</a><header class="page-head"><h1>' + esc(t('Importar receta', 'Import a recipe')) + '</h1><p>' + esc(t('¿Has visto una receta en TikTok, Instagram o una web? Tráetela a la libreta con sus cantidades y pasos, y luego hazla tuya.', 'Seen a recipe on TikTok, Instagram or a website? Bring it into the notebook with its quantities and steps, then make it yours.')) + '</p></header>' +
   '<div class="card form" id="importForm"><h2>' + esc(t('Si es una captura o un vídeo', 'If it is a screenshot or a video')) + '</h2>' +
+  (iaOn() ? '<p class="fine">' + esc(t('Elige la captura (o varias, si la receta ocupa más de una) y ChatGPT la lee y la monta.', 'Choose the screenshot (or several, if the recipe spans more than one) and ChatGPT reads and builds it.')) + '</p><div class="row-actions row-left"><label class="btn primary" for="recipeShot">' + icon('image') + '<span>' + esc(t('Elegir captura o foto', 'Choose screenshot or photo')) + '</span></label><input id="recipeShot" class="sr" type="file" accept="image/*" multiple></div><details class="fold fold-quiet"><summary>' + esc(t('Hacerlo copiando y pegando', 'Do it by copy and paste')) + '</summary>' : '') +
   '<ol class="steps-list"><li>' + esc(t('Pulsa «Preguntar a ChatGPT» (o a Claude): se abre con la instrucción ya escrita.', 'Tap “Ask ChatGPT” (or Claude): it opens with the instruction already written.')) + '</li><li>' + esc(t('Adjunta allí la captura (o pega el enlace o el texto del vídeo) y envía.', 'Attach the screenshot there (or paste the link or the video text) and send.')) + '</li><li>' + esc(t('Copia lo que conteste, vuelve aquí y pulsa «Pegar y leer».', 'Copy its answer, come back here and tap “Paste and read”.')) + '</li></ol>' +
   '<div class="row-actions row-left"><button type="button" class="btn primary" data-act="copy-import">' + icon('copy') + esc(t('Copiar la instrucción', 'Copy the instruction')) + '</button><a class="btn ghost" href="https://chatgpt.com/" data-chat target="_blank" rel="noopener noreferrer">' + esc(t('Preguntar a ChatGPT', 'Ask ChatGPT')) + icon('out') + '</a><a class="btn ghost" href="https://claude.ai/new" data-chat target="_blank" rel="noopener noreferrer">' + esc(t('Preguntar a Claude', 'Ask Claude')) + icon('out') + '</a></div>' +
+  (iaOn() ? '</details>' : '') +
   '<h2>' + esc(t('Si es texto, pégalo tal cual', 'If it is text, paste it as it is')) + '</h2><p class="fine">' + esc(t('La descripción del vídeo, una web, un mensaje… La app separa ingredientes, cantidades y pasos sin conexión.', 'The video caption, a website, a message… The app separates ingredients, quantities and steps offline.')) + '</p>' +
   '<label class="sr" for="recipeReply">' + esc(t('Respuesta o texto de la receta', 'Answer or recipe text')) + '</label><textarea id="recipeReply" rows="7" placeholder="' + esc(t('Pega aquí la respuesta de ChatGPT o Claude, o el texto de la receta', 'Paste the ChatGPT or Claude answer here, or the recipe text')) + '">' + esc(recipeText) + '</textarea>' +
   '<div class="row-actions row-left"><button type="button" class="btn ghost" data-paste="recipeReply" data-then="[data-act=read-recipe]">' + icon('copy') + esc(t('Pegar y leer', 'Paste and read')) + '</button><button type="button" class="btn primary" data-act="read-recipe">' + icon('spark') + esc(t('Leer la receta', 'Read the recipe')) + '</button></div></div>' +
@@ -81,15 +86,41 @@ function importPage() {
 }
 function mountImport(root) {
  root.addEventListener('input', e => { if (e.target.id === 'recipeReply') recipeText = e.target.value; });
+ root.addEventListener('change', e => { if (e.target.id === 'recipeShot' && e.target.files.length) readShots([...e.target.files]).finally(() => { e.target.value = ''; }); });
+ // Lee una o varias capturas con ChatGPT (elegidas en la galería o pegadas en el recuadro).
+ async function readShots(all) {
+  const files = all.slice(0, 4), label = $('label[for=recipeShot]', root);
+  label?.classList.add('is-busy'); if (label) label.lastChild.textContent = t('ChatGPT está leyendo la receta…', 'ChatGPT is reading the recipe…');
+  try {
+   const images = [];
+   for (const f of files) images.push(await imageData(f));
+   const r = recipeFromReply(await askIa({text: importPrompt() + '\n\nTe paso ' + (images.length === 1 ? 'la captura' : 'las ' + images.length + ' capturas, en orden') + '.', images, json: true}));
+   if (!r || !r.components.length) throw Object.assign(Error('empty'), {kind: 'empty'});
+   recipe = r; root.innerHTML = importPage(); $('#recipePreview', root)?.scrollIntoView({behavior: 'smooth', block: 'start'});
+  } catch (err) {
+   toast(err?.message === 'image' ? t('No se pudo abrir esa imagen.', 'That image could not be opened.') : err?.kind === 'empty' ? t('ChatGPT no ha encontrado una receta en esa imagen.', 'ChatGPT found no recipe in that image.') : iaMessage(err), 'error', 7000);
+   if (label?.isConnected) { label.classList.remove('is-busy'); label.lastChild.textContent = t('Elegir captura o foto', 'Choose screenshot or photo'); }
+  }
+ }
  root.addEventListener('paste', e => {
   if (e.target.id !== 'recipeReply' || !e.clipboardData) return;
-  if ([...e.clipboardData.items].some(i => i.type.startsWith('image/')) && !e.clipboardData.getData('text')) { e.preventDefault(); toast(t('Eso es una imagen: pégala en ChatGPT o Claude con la instrucción y trae aquí lo que conteste.', 'That is an image: paste it into ChatGPT or Claude with the instruction and bring back the answer.'), 'error', 6000); }
+  const pics = [...e.clipboardData.items].filter(i => i.type.startsWith('image/')).map(i => i.getAsFile()).filter(Boolean);
+  if (pics.length && !e.clipboardData.getData('text') && iaOn()) { e.preventDefault(); readShots(pics); return; }
+  if (pics.length && !e.clipboardData.getData('text')) { e.preventDefault(); toast(t('Eso es una imagen: pégala en ChatGPT o Claude con la instrucción y trae aquí lo que conteste.', 'That is an image: paste it into ChatGPT or Claude with the instruction and bring back the answer.'), 'error', 6000); }
  });
  root.addEventListener('click', async e => {
   const act = e.target.closest('[data-act]')?.dataset.act;
   if (act === 'copy-import') { const done = await copy(importPrompt()); toast(done ? t('Instrucción copiada. Pégala en ChatGPT o Claude junto a la captura.', 'Instruction copied. Paste it into ChatGPT or Claude with the screenshot.') : t('No se pudo copiar. Prueba otra vez.', 'It could not be copied. Please try again.'), done ? 'info' : 'error'); }
   if (act === 'read-recipe') {
-   const r = recipeFromReply($('#recipeReply', root).value);
+   const text = $('#recipeReply', root).value;
+   let r = null;
+   // Con ChatGPT conectado, un texto normal (no su respuesta en JSON) lo lee ChatGPT; si falla, lo lee la app.
+   if (iaOn() && text.trim() && !/^\s*[{[`]/.test(text) && !/```/.test(text)) {
+    const b = e.target.closest('button'); b.disabled = true; b.classList.add('is-busy');
+    try { r = recipeFromReply(await askIa({text: importPrompt() + '\n\nLA RECETA:\n' + text.slice(0, 20000), json: true})); } catch (err) { toast(iaMessage(err) + ' ' + t('La leo yo sin ChatGPT.', 'I will read it without ChatGPT.'), 'error', 6000); }
+    finally { if (b.isConnected) { b.disabled = false; b.classList.remove('is-busy'); } }
+   }
+   r = r && r.components.length ? r : recipeFromReply(text);
    if (!r || !r.components.length) { toast(t('No encuentro ingredientes en ese texto. Pega la receta entera o la respuesta de la IA.', 'I cannot find ingredients in that text. Paste the whole recipe or the AI answer.'), 'error'); return; }
    recipe = r; root.innerHTML = importPage(); $('#recipePreview', root)?.scrollIntoView({behavior: 'smooth', block: 'start'});
   }
@@ -127,10 +158,25 @@ export function mount(root, params) {
  root.addEventListener('submit', async e => {
   if (e.target.id !== 'ideasForm') return;
   e.preventDefault();
+  if (iaOn()) { askIdeas(e.submitter || $('#ideasForm button[type=submit]', root)); return; }
+  copyIdeas();
+ });
+ root.addEventListener('click', e => { if (e.target.closest('[data-act=copy-ideas]')) copyIdeas(); });
+ const hasBrief = () => form.brief.trim() || form.lead.trim() || trend || form.wants.length;
+ async function askIdeas(b) {
+  if (!hasBrief()) { toast(t('Cuenta algo: qué buscas o con qué producto.', 'Say something: what you are after or which product.'), 'error'); return; }
+  b.disabled = true; b.classList.add('is-busy'); const label = b.lastChild.textContent; b.lastChild.textContent = t('ChatGPT está pensando platos…', 'ChatGPT is thinking up dishes…');
+  try {
+   const clean = ideasFromReply(await askIa({text: ideasPrompt({...form, trend}), json: true}));
+   if (!clean.ideas.length) throw Object.assign(Error('empty'), {kind: 'empty'});
+   result = clean; repaint(); $('#ideaResults', root)?.scrollIntoView({behavior: 'smooth', block: 'start'});
+  } catch (err) { toast(iaMessage(err), 'error', 7000); if (b.isConnected) { b.disabled = false; b.classList.remove('is-busy'); b.lastChild.textContent = label; } }
+ }
+ async function copyIdeas() {
   if (!form.brief.trim() && !form.lead.trim() && !trend && !form.wants.length) { toast(t('Cuenta algo: qué buscas o con qué producto.', 'Say something: what you are after or which product.'), 'error'); return; }
   const done = await copy(ideasPrompt({...form, trend}));
   toast(done ? t('Petición copiada. Pégala en Claude o en ChatGPT.', 'Request copied. Paste it into Claude or ChatGPT.') : t('No se pudo copiar. Prueba otra vez.', 'It could not be copied. Please try again.'), done ? 'info' : 'error');
- });
+ }
  root.addEventListener('click', e => {
   if (!e.target.closest('[data-act=read-ideas]')) return;
   const clean = ideasFromReply($('#ideasReply', root).value);

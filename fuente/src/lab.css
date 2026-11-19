@@ -76,7 +76,7 @@ button.chip:active,a.chip:active{transform:scale(.97)}button.chip[disabled]{curs
 /* ---------- Campos ---------- */
 input,select,textarea{font-size:16px}
 .form label,.test-form label,.bench-meta label,.choice legend{display:block;font-size:13px;font-weight:700;color:var(--ink2);margin:16px 0 6px}
-input:not([type=radio]),select,textarea{width:100%;min-height:46px;padding:11px 13px;border:1px solid var(--line2);border-radius:var(--r-sm);background:var(--card);color:var(--ink)}
+input:not([type=radio]),select,textarea{box-sizing:border-box;width:100%;min-height:46px;padding:11px 13px;border:1px solid var(--line2);border-radius:var(--r-sm);background:var(--card);color:var(--ink)}
 textarea{resize:vertical;line-height:1.45;min-height:76px}input::placeholder,textarea::placeholder{color:var(--mut);opacity:.85}
 input:disabled,select:disabled,textarea:disabled{opacity:.75}
 select{appearance:none;-webkit-appearance:none;padding-right:34px;background-image:linear-gradient(45deg,transparent 50%,var(--mut) 50%),linear-gradient(135deg,var(--mut) 50%,transparent 50%);background-position:calc(100% - 18px) 50%,calc(100% - 13px) 50%;background-size:5px 5px;background-repeat:no-repeat}
@@ -265,7 +265,19 @@ select.comp-role{font-size:14px;letter-spacing:0;text-transform:none;color:var(-
 .ing .qty{color:var(--ember);font-weight:700;letter-spacing:0;text-transform:none}
 .comp-method{margin-top:10px}.comp-method summary{cursor:pointer;display:inline-flex;align-items:baseline;gap:8px;min-height:36px;padding:6px 0;font-size:14px;font-weight:700;color:var(--ink2)}.comp-method summary small{font-weight:400;color:var(--mut)}.comp-method textarea{margin-top:4px}
 #fichaSec .linkbtn{margin-top:8px}
-#printFicha{display:none}.steps-list{list-style:decimal;margin:6px 0 4px;padding-left:22px;display:grid;gap:4px;color:var(--ink2)}#importForm h2{margin-top:6px}#importForm h2+p.fine{margin-top:-4px}[hidden]{display:none!important}
+#printFicha{display:none}
+.notice-ok{background:var(--ok);color:var(--ok-ink)}.fold-quiet{margin-top:12px}.fold-quiet>summary{font-size:14px;color:var(--mut)}
+label.check{display:flex;gap:10px;align-items:flex-start;margin:14px 0 4px;font-size:14.5px;cursor:pointer}label.check input{width:20px;height:20px;margin-top:1px;flex:none;accent-color:var(--ember)}
+.chat{display:grid;gap:14px}.msgs{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+.msg{max-width:min(640px,92%);padding:11px 14px;border-radius:var(--r-sm);font-size:15.5px;line-height:1.5}
+.msg-me{justify-self:end;background:var(--ink);color:var(--bg);white-space:pre-wrap}.msg-photo{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;opacity:.75;margin-bottom:4px}.msg-photo .ic{width:15px;height:15px}
+.msg-ai{justify-self:start;background:var(--soft);color:var(--ink)}.msg-body p+p,.msg-body p+ul,.msg-body ul+p{margin-top:8px}.msg-body ul{margin:6px 0 0;padding-left:20px;list-style:disc}.msg-body li+li{margin-top:3px}
+.msg-actions{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:8px}.msg-actions .linkbtn{display:inline-flex;align-items:center;gap:5px;font-size:13px}.msg-actions .ic{width:15px;height:15px}
+.msg-wait{color:var(--mut);font-style:italic;animation:pulse 1.4s ease-in-out infinite}@keyframes pulse{50%{opacity:.45}}
+.composer{display:grid;gap:8px;border-top:1px solid var(--line);padding-top:14px}.composer textarea{min-height:64px}
+.composer-row{display:flex;gap:8px;align-items:center}.composer-row .btn.primary{margin-left:auto}.chat-top{display:flex;justify-content:flex-end;margin:-4px 0 -6px}.chat-top .linkbtn{display:inline-flex;align-items:center;gap:5px;font-size:13.5px}.chat-top .ic{width:15px;height:15px}
+.pending{display:flex;flex-wrap:wrap;gap:6px}.pending:empty{display:none}.pending .chip{display:inline-flex;align-items:center;gap:6px}.pending .iconbtn{width:28px;height:28px;min-height:28px}
+.top .iconbtn+.iconbtn{margin-left:2px}.steps-list{list-style:decimal;margin:6px 0 4px;padding-left:22px;display:grid;gap:4px;color:var(--ink2)}#importForm h2{margin-top:6px}#importForm h2+p.fine{margin-top:-4px}[hidden]{display:none!important}
 
 /* ---------- Imprimir: la ficha del plato, limpia ---------- */
 @media print{

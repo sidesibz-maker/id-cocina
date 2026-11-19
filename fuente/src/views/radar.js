@@ -9,6 +9,7 @@ import {radarPrompt, trendsFromReply, copy} from '../ai.js';
 import {sheet} from '../ui.js';
 import {trendCard, KINDS, kindLabel, heatMark, trText, trIdeas, trSources, trPlaces, emptyState, skeleton, adoptIdea, hostOf} from './shared.js';
 import {go} from '../nav.js';
+import {iaOn, askIa, iaMessage} from '../ia.js';
 
 let filter = 'todo';
 export const title = params => (params[0] ? t('Aviso', 'Alert') : t('Radar', 'Radar'));
@@ -18,7 +19,7 @@ const FILTERS = () => [['todo', t('Todo', 'All')], ...Object.keys(KINDS).map(k =
 function list() {
  const all = state.trends, hidden = all.filter(x => x.dismissed_at).length;
  const shown = filter === 'descartados' ? all.filter(x => x.dismissed_at) : liveTrends().filter(x => filter === 'todo' || (filter === 'guardados' ? !!x.saved_at : x.kind === filter));
- let html = '<header class="page-head"><h1>' + esc(t('Radar', 'Radar')) + '</h1><p>' + esc(t('Lo que se mueve en las mejores cocinas y revistas, llevado a tu cocina.', 'What is moving in the best kitchens and magazines, brought to your kitchen.')) + '</p><div class="row-actions row-left"><button type="button" class="btn primary" data-act="search">' + icon('search') + esc(t('Buscar tendencias de hoy', 'Find today\'s trends')) + '</button></div></header>';
+ let html = '<header class="page-head"><h1>' + esc(t('Radar', 'Radar')) + '</h1><p>' + esc(t('Lo que se mueve en las mejores cocinas y revistas, llevado a tu cocina.', 'What is moving in the best kitchens and magazines, brought to your kitchen.')) + '</p><div class="row-actions row-left"><button type="button" class="btn primary" data-act="search">' + icon('search') + esc(t('Buscar tendencias de hoy', 'Find today\'s trends')) + '</button>' + (iaOn() ? '<button type="button" class="btn ghost" data-act="search-manual">' + esc(t('Hacerlo copiando y pegando', 'Do it by copy and paste')) + '</button>' : '') + '</div></header>';
  html += '<div class="filters" role="group" aria-label="' + esc(t('Filtrar avisos', 'Filter alerts')) + '">' + FILTERS().map(([id, label]) => '<button type="button" class="pill' + (filter === id ? ' active' : '') + '" data-filter="' + id + '" aria-pressed="' + (filter === id) + '">' + (id === 'guardados' ? icon('star') : '') + esc(label) + '</button>').join('') + '</div>';
  if (!shown.length) {
   html += !state.loaded && !state.loadError ? skeleton(3) : filter === 'todo'
@@ -97,7 +98,21 @@ export function mount(root, params) {
  root.addEventListener('click', async e => {
   const f = e.target.closest('[data-filter]');
   if (f) { filter = f.dataset.filter; root.innerHTML = list(); return; }
-  if (e.target.closest('[data-act=search]')) { searchSheet(root); return; }
+  if (e.target.closest('[data-act=search-manual]')) { searchSheet(root); return; }
+  const sb = e.target.closest('[data-act=search]');
+  if (sb && !iaOn()) { searchSheet(root); return; }
+  if (sb) {
+   // Con ChatGPT conectado busca él solo en internet; tarda un poco porque lee varias fuentes.
+   sb.disabled = true; sb.classList.add('is-busy'); sb.lastChild.textContent = t('Buscando en internet… (puede tardar un minuto)', 'Searching the internet… (may take a minute)');
+   try {
+    const found = trendsFromReply(await askIa({text: radarPrompt(), web: true}));
+    if (!found.length) throw Object.assign(Error('empty'), {kind: 'empty'});
+    const n = addTrends(found); filter = 'todo';
+    toast(n ? t('Radar al día: ' + n + ' avisos nuevos.', 'Radar updated: ' + n + ' new alerts.') : t('No hay avisos nuevos desde la última búsqueda.', 'No new alerts since the last search.'));
+    if (root.isConnected) root.innerHTML = list();
+   } catch (err) { toast(iaMessage(err), 'error', 7000); if (sb.isConnected) { sb.disabled = false; sb.classList.remove('is-busy'); sb.lastChild.textContent = t('Buscar tendencias de hoy', 'Find today\'s trends'); } }
+   return;
+  }
   if (!tr) return;
   const adopt = e.target.closest('[data-adopt]');
   if (adopt) { const idea = trIdeas(tr)[Number(adopt.dataset.adopt)]; if (!idea) return; adopt.disabled = true; await adoptIdea(idea, {kind: 'radar', trend_id: tr.id, title: tr.title}); if (adopt.isConnected) adopt.disabled = false; return; }

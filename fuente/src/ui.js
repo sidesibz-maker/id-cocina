@@ -49,6 +49,8 @@ const PATHS = {
  user: '<circle cx="12" cy="8.500" r="3.500"/><path d="M5 20c.800-3.500 3.500-5.500 7-5.500s6.200 2 7 5.500"/>',
  menu: '<path d="M4 7h16M4 12h16M4 17h16"/>',
  drop: '<path d="M12 3.500c3.500 4.200 6 7 6 10.500a6 6 0 0 1-12 0c0-3.500 2.500-6.300 6-10.500z"/>',
+ chat: '<path d="M4 5h16v11H10l-5 4v-4H4z"/><path d="M8 9.5h8M8 12.5h5"/>',
+ send: '<path d="M4 12l16-8-6 16-2.5-6.5z"/><path d="M11.5 13.5L20 4"/>',
  bolt: '<path d="M13 3L5 13.500h6L10 21l8-10.500h-6z"/>'
 };
 export const icon = (name, cls = '') => '<svg class="ic ' + cls + '" viewBox="0 0 24 24" aria-hidden="true" focusable="false">' + (PATHS[name] || '') + '</svg>';

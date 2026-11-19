@@ -76,7 +76,7 @@ const old = await page.evaluate(() => JSON.parse(localStorage.getItem('id-cocina
 ok(old.concept === 'Tocado' && old.components[0].extra === 'guardar' && old.components[0].items[0].raro === 1 && old.components[0].name === 'Cordero', 'un plato antiguo pierde datos al guardarlo');
 await go('#/plato/' + (await page.evaluate(() => JSON.parse(localStorage.getItem('id-cocina-v1')).dishes.find(d => d.name === 'Pulpo, romesco y encurtido').id))); await page.waitForSelector('#dishName');
 // Ideas pegadas
-await go('#/crear/ideas'); await page.waitForSelector('#ideasForm'); await page.fill('#brief', 'Entrante con coliflor'); await page.click('#ideasForm button[type=submit]'); await wait(200);
+await go('#/crear/ideas'); await page.waitForSelector('#ideasForm'); await page.fill('#brief', 'Entrante con coliflor'); await page.click('#ideasForm [data-act=copy-ideas]'); await wait(200);
 ok((await page.evaluate(() => navigator.clipboard.readText())).includes('Entrante con coliflor'), 'la petición de ideas no se copia');
 await page.fill('#ideasReply', '{"ideas":[{"name":"Coliflor asada y miso","line":"Entera a la brasa","course":"entrante","why":"Dulce y umami","twist":"Tu toque","components":[{"role":"principal","name":"Coliflor","techniques":["brasa"],"items":["Coliflor"]},{"role":"salsa","name":"Miso","techniques":[],"items":["Miso"]}]}],"issues":[]}');
 await page.click('[data-act=read-ideas]'); await page.waitForSelector('.idea-result'); await page.locator('.idea-result [data-open]').first().click(); await page.waitForSelector('#dishName');

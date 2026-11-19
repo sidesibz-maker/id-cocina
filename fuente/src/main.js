@@ -12,8 +12,13 @@ import * as dish from './views/dish.js';
 import * as notebook from './views/notebook.js';
 import * as flavors from './views/flavors.js';
 import * as kitchenView from './views/kitchen-view.js';
+import * as ask from './views/ask.js';
+import {iaSheet} from './views/ia-sheet.js';
+import {iaOn, iaConfig, saveIa, askIa} from './ia.js';
+import {radarPrompt, trendsFromReply} from './ai.js';
+import {addTrends} from './store.js';
 
-const VIEWS = {hoy: home, radar, crear: create, plato: dish, libreta: notebook, sabores: flavors, cocina: kitchenView};
+const VIEWS = {hoy: home, radar, crear: create, plato: dish, libreta: notebook, sabores: flavors, cocina: kitchenView, preguntar: ask};
 const NAV = [['hoy', 'flame', () => t('Hoy', 'Today')], ['radar', 'radar', () => t('Radar', 'Radar')], ['crear', 'plus', () => t('Crear', 'Create')], ['libreta', 'book', () => t('Libreta', 'Notebook')], ['sabores', 'wheel', () => t('Sabores', 'Flavours')]];
 const app = () => $('#app');
 let current = {name: '', params: [], cleanup: null};
@@ -26,9 +31,9 @@ function shell() {
  const item = ([id, ic, label]) => '<a class="nav-item' + (id === 'crear' ? ' nav-create' : '') + '" href="#/' + id + '" data-nav="' + id + '">' + icon(ic) + '<span>' + esc(label()) + '</span><i class="badge" data-badge="' + id + '" hidden></i></a>';
  app().innerHTML = '<div class="lab">' +
   '<aside class="rail"><a class="wordmark" href="#/hoy" aria-label="I+D">I<b>+</b>D</a><div class="rail-rest">' + esc(t('Cuaderno de cocina', 'Kitchen notebook')) + '</div>' +
-   '<nav class="rail-nav" aria-label="' + esc(t('Secciones', 'Sections')) + '">' + NAV.map(item).join('') + '<a class="nav-item" href="#/cocina" data-nav="cocina">' + icon('pan') + '<span>' + esc(t('Mi cocina', 'My kitchen')) + '</span></a></nav>' +
+   '<nav class="rail-nav" aria-label="' + esc(t('Secciones', 'Sections')) + '">' + NAV.map(item).join('') + '<a class="nav-item" href="#/preguntar" data-nav="preguntar">' + icon('chat') + '<span>' + esc(t('Preguntar', 'Ask')) + '</span></a><a class="nav-item" href="#/cocina" data-nav="cocina">' + icon('pan') + '<span>' + esc(t('Mi cocina', 'My kitchen')) + '</span></a></nav>' +
    '<div class="rail-foot"><button type="button" class="rail-link" data-act="menu">' + icon('down') + '<span>' + esc(t('Copia de seguridad y pantalla', 'Backup and display')) + '</span></button></div></aside>' +
-  '<header class="top"><a class="wordmark" href="#/hoy" aria-label="I+D">I<b>+</b>D</a><span class="top-rest">' + esc(t('Cuaderno de cocina', 'Kitchen notebook')) + '</span><button type="button" class="iconbtn" data-act="menu" aria-label="' + esc(t('Menú', 'Menu')) + '">' + icon('menu') + '</button></header>' +
+  '<header class="top"><a class="wordmark" href="#/hoy" aria-label="I+D">I<b>+</b>D</a><span class="top-rest">' + esc(t('Cuaderno de cocina', 'Kitchen notebook')) + '</span><a class="iconbtn" href="#/preguntar" aria-label="' + esc(t('Preguntar', 'Ask')) + '">' + icon('chat') + '</a><button type="button" class="iconbtn" data-act="menu" aria-label="' + esc(t('Menú', 'Menu')) + '">' + icon('menu') + '</button></header>' +
   '<div id="notices"></div><main id="view" tabindex="-1"></main><nav class="tabs" aria-label="' + esc(t('Secciones', 'Sections')) + '">' + NAV.map(item).join('') + '</nav></div>';
  $$('[data-act=menu]', app()).forEach(b => { b.onclick = menu; });
 }
@@ -66,12 +71,16 @@ function route({keepScroll = false} = {}) {
  scrollTo(0, scroll);
  if (!same) root.focus({preventScroll: true});
 }
+let pendingRefresh = false;
+new MutationObserver(() => { if (pendingRefresh && !document.documentElement.classList.contains('has-sheet')) { pendingRefresh = false; refresh('load'); } }).observe(document.documentElement, {attributes: true, attributeFilter: ['class']});
 function refresh(what) {
  badges(); notices();
  const view = VIEWS[current.name];
  if (!view || !$('#view')) return;
  if (view.onData) { view.onData(what, $('#view'), current.params); return; }
  if (document.activeElement && /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName) && $('#view').contains(document.activeElement)) return;
+ // Con una ventana abierta no se repinta (cerrarla de golpe molesta): se repinta al cerrarla.
+ if (document.documentElement.classList.contains('has-sheet')) { pendingRefresh = true; return; }
  route({keepScroll: true});
 }
 async function backup() {
@@ -87,10 +96,12 @@ function menu() {
   '<p class="lead">' + esc(t('Todo lo que apuntas se guarda en este ordenador, en este navegador. Descarga una copia de vez en cuando: es un archivo con tus platos y sus imágenes.', 'Everything you note is saved on this computer, in this browser. Download a backup now and then: one file with your dishes and their images.')) + '</p>' +
   '<div class="menu-grid"><button type="button" class="tile" data-act="backup">' + icon('down') + '<span>' + esc(t('Descargar copia', 'Download backup')) + '</span></button>' +
   '<label class="tile" for="restoreFile">' + icon('undo') + '<span>' + esc(t('Recuperar una copia', 'Restore a backup')) + '</span></label><input id="restoreFile" class="sr" type="file" accept="application/json,.json">' +
+  '<button type="button" class="tile" data-act="ia">' + icon('chat') + '<span>' + esc(iaOn() ? t('ChatGPT en la app: conectado', 'ChatGPT in the app: connected') : t('Conectar ChatGPT a la app', 'Connect ChatGPT to the app')) + '</span></button>' +
   '<button type="button" class="tile" data-act="theme" aria-pressed="' + isDark() + '">' + icon(isDark() ? 'sun' : 'moon') + '<span>' + esc(isDark() ? t('Modo día', 'Day mode') : t('Modo noche', 'Night mode')) + '</span></button>' +
   '<button type="button" class="tile" data-act="lang" lang="' + (prefs.lang === 'en' ? 'es' : 'en') + '">' + icon('globe') + '<span>' + (prefs.lang === 'en' ? 'Español' : 'English') + '</span></button></div>' +
   '<p class="fine">' + esc(state.lastBackup ? t('Última copia: ', 'Last backup: ') + new Date(state.lastBackup).toLocaleDateString(prefs.lang === 'en' ? 'en-GB' : 'es-ES') : t('Aún no has descargado ninguna copia.', 'You have not downloaded a backup yet.')) + ' ' + esc(t('Recuperar una copia nunca borra nada: añade lo que falte.', 'Restoring a backup never deletes anything: it adds what is missing.')) + '</p>'});
  $('[data-act=backup]', s.el).onclick = () => { s.close(); backup(); };
+ $('[data-act=ia]', s.el).onclick = () => { s.close(); setTimeout(() => iaSheet(() => route({keepScroll: true})), 250); };
  $('[data-act=theme]', s.el).onclick = () => { setPref('theme', isDark() ? 'light' : 'dark'); s.close(); };
  $('[data-act=lang]', s.el).onclick = () => { setPref('lang', prefs.lang === 'en' ? 'es' : 'en'); s.close(); shell(); route(); };
  $('#restoreFile', s.el).onchange = async e => {
@@ -141,5 +152,17 @@ async function start() {
  onChange(refresh);
  addEventListener('hashchange', () => route());
  await loadAll();
+ dailyRadar();
+}
+// Con ChatGPT conectado, el radar se pone al día solo una vez al día (al abrir la app), sin molestar.
+async function dailyRadar() {
+ const cfg = iaConfig(), today = new Date().toISOString().slice(0, 10);
+ if (!iaOn() || cfg.daily === false || cfg.lastRadar === today || navigator.onLine === false) return;
+ saveIa({lastRadar: today});
+ try {
+  const found = trendsFromReply(await askIa({text: radarPrompt(), web: true}));
+  const added = found.length ? addTrends(found) : 0;
+  if (added) toast(t('Radar al día: ', 'Radar updated: ') + added + t(' avisos nuevos.', ' new alerts.'));
+ } catch { saveIa({lastRadar: cfg.lastRadar || null}); }
 }
 start();

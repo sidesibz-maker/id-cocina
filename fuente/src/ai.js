@@ -11,6 +11,11 @@ const kitchen = () => { const k = kitchenRequest(state.kb, state.kitchen, state.
 const RULES = 'Eres un jefe de cocina con mucho oficio que ayuda a otro cocinero con el I+D de su restaurante. No haces alta cocina de laboratorio: buscas platos novedosos, ricos, con personalidad propia y que se puedan servir bien con el servicio lleno. Habla claro y de tú, con frases cortas y concretas, sin halagos. Usa primero los básicos de su cocina; cualquier otro producto debe ser fácil de encontrar en España. No inventes cantidades exactas ni tiempos: orienta. Respeta lo que la cocina dice que no quiere.';
 const ONLY_JSON = 'Responde SOLO con un bloque de código JSON válido (```json … ```), sin texto antes ni después.';
 
+// Instrucciones para preguntar libremente (pantalla «Preguntar»), con la cocina y, si lo hay, el plato del que se habla.
+export function chatInstructions(dish = null) {
+ return RULES + ' Aquí te hace preguntas sueltas: contesta en texto normal (nada de JSON), al grano y práctico, como lo dirías en la cocina; usa listas cortas solo si ayudan. Si te pasa una foto o una captura, léela con atención. Si algo depende de un dato que no tienes, dilo en una frase. ' + lang() +
+  '\n\nSU COCINA:\n' + JSON.stringify(kitchen()) + (dish ? '\n\nEL PLATO DEL QUE HABLA:\n' + JSON.stringify(dishRequest(state.kb, dish)) : '');
+}
 export function advicePrompt(dish) {
  return RULES + '\n\nAnaliza este plato en desarrollo y da consejo práctico para afinarlo. ' + ONLY_JSON + ' Claves:\n' +
   '- "verdict": una o dos frases con lo esencial y qué tocarías primero.\n- "works": de 2 a 4 cosas concretas que ya funcionan.\n' +
