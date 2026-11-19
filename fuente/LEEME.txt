@@ -1,0 +1,49 @@
+I+D · CUADERNO DE COCINA
+========================
+
+QUÉ ES
+Una app para crear platos: montas el plato por componentes y ves al momento qué sabores dominan, qué le falta
+(ácido, crujiente, frescor, color...) y con qué arreglarlo. Lleva un catálogo de 384 productos (tus básicos de
+siempre salen los primeros), combinaciones clásicas y atrevidas, libreta con pruebas de cata y un radar de tendencias.
+
+CÓMO SE ABRE
+Doble clic en «ID Cocina.html». Se abre en tu navegador (Chrome o Edge). No necesita internet ni instalar nada.
+Deja los dos archivos («ID Cocina.html» y «radar.js») juntos en la misma carpeta.
+
+DÓNDE SE GUARDA LO QUE APUNTAS
+En este ordenador, dentro del navegador con el que la abres. No sale a ningún servidor ni tiene nada que ver con
+otros programas. Por eso:
+ - Ábrela siempre con el mismo navegador y sin mover la carpeta de sitio.
+ - Descarga una copia de seguridad de vez en cuando (menú «Copia de seguridad y pantalla»). Es un archivo con tus
+   platos y sus imágenes. Si cambias de ordenador o borras los datos del navegador, la recuperas desde ese mismo menú.
+
+CONSEJO, IDEAS E IMÁGENES
+La app prepara la consulta completa y la copia; tú la pegas en Claude o en ChatGPT y pegas de vuelta la respuesta.
+ - Consejo sobre un plato: en el plato, «Copiar la consulta» → pegar en Claude o ChatGPT → pegar la respuesta → «Guardar».
+ - Ideas de platos: Crear → Dame ideas.
+ - Imagen del plato: en el plato, «Copiar descripción para ChatGPT» → ChatGPT crea la imagen → «Añadir imagen».
+
+FICHA TÉCNICA (NUEVO)
+En cada plato: toca un ingrediente y pon su cantidad por ración (120 g, 2 ud, c/s). En cada componente abre
+«Elaboración» y escribe los pasos. En «Ficha técnica» pon las raciones y el emplatado. «Imprimir ficha o guardar en
+PDF» saca una hoja limpia para el equipo: ingredientes con cantidades, pasos, emplatado, alérgenos y última prueba.
+
+IMPORTAR RECETAS DE TIKTOK, INSTAGRAM O UNA WEB (NUEVO)
+Crear → Importar receta.
+ - Si es texto (la descripción del vídeo, una web, un mensaje): pégalo tal cual y pulsa «Leer la receta». La app separa
+   ingredientes, cantidades y pasos ella sola, sin internet.
+ - Si es una captura o un vídeo: «Copiar la instrucción» → en ChatGPT o Claude pega la instrucción y adjunta la captura
+   → copia lo que conteste y pégalo en la app. Revisa cómo queda y pulsa «Guardar en la libreta».
+
+TENDENCIAS (RADAR)
+ - Cuando quieras: Radar → «Buscar tendencias de hoy». Copia la búsqueda, pégala en Claude o ChatGPT (con internet)
+   y pega aquí lo que encuentren.
+ - Automático cada mañana (opcional): si usas Claude en este ordenador, abre un chat en esta carpeta y pídele:
+     «Cada mañana busca en internet tendencias gastronómicas (The World's 50 Best, Guía Michelin, Repsol, Eater,
+      Gastroactitud, 7 Caníbales, cocinas de brasa) y añade los avisos de hoy al principio de radar.js, con el
+      formato que explica el propio archivo. No borres los anteriores ni toques nada más.»
+   La app lee radar.js cada vez que se abre.
+
+SI UN PRODUCTO NO ESTÁ EN EL CATÁLOGO
+Escríbelo tal cual al añadirlo al plato: se guarda igual. Si se parece a algo conocido, tócalo y dile a qué se parece
+para que cuente en el cálculo de sabores.
