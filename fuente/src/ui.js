@@ -52,6 +52,7 @@ const PATHS = {
  gear: '<path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/>',
  mic: '<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/>',
  brain: '<path d="M12 5a3 3 0 0 0-5.6-1.5A3 3 0 0 0 4 8a3 3 0 0 0 .3 5.5A3.2 3.2 0 0 0 8 18a2.8 2.8 0 0 0 4 1.5z"/><path d="M12 5a3 3 0 0 1 5.6-1.5A3 3 0 0 1 20 8a3 3 0 0 1-.3 5.5A3.2 3.2 0 0 1 16 18a2.8 2.8 0 0 1-4 1.5z"/><path d="M12 5v14.5"/>',
+ library: '<path d="M4 4h4v16H4z"/><path d="M10 4h4v16h-4z"/><path d="m15.5 5.3 3.6-1 3.2 14.5-3.6 1z"/>',
  chat: '<path d="M4 5h16v11H10l-5 4v-4H4z"/><path d="M8 9.5h8M8 12.5h5"/>',
  send: '<path d="M4 12l16-8-6 16-2.5-6.5z"/><path d="M11.5 13.5L20 4"/>',
  bolt: '<path d="M13 3L5 13.500h6L10 21l8-10.500h-6z"/>'

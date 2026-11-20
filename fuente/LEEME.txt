@@ -59,13 +59,16 @@ En el otro, pega ese código en «Unir este aparato». Desde entonces lo que apu
 cartas, fotos, lo guardado del radar y Mi cocina). Se juntan los dos sin perder nada; gana siempre el cambio más
 reciente y el anterior queda guardado en el servidor. Guarda el código como una contraseña.
 
-SABER: TU CEREBRO DE COCINA (NUEVO)
-Sección «Saber» (en el móvil, en la barra de abajo; en el PC, en la barra lateral; y un buscador en la portada).
- - 50 entradas de salsas, fondos y bases: bechamel y sus derivadas, salsas madre, emulsiones, salsas españolas,
-   fondos, jugos, glasas, consomé, salmueras, marinadas… Cada una con qué es, receta base, cómo cambia según para qué
-   se usa, variantes, claves, errores y cómo arreglarlos, historia, conservación y producción.
- - Buscador: por nombre, por otros nombres (besamel) o por cualquier cosa que aparezca (croquetas, holandesa…).
- - Enlaces: dentro de los textos, lo subrayado en dorado lleva a otra entrada.
+BIBLIOTECA: TU CEREBRO DE COCINA (NUEVO)
+Sección «Biblioteca» (en el móvil, en la barra de abajo; en el PC, en la barra lateral; y un buscador en la portada).
+ - Al entrar te pregunta «¿Qué quieres saber?». Escribe lo que sea (bechamel, besamel, croquetas, mayonesa cortada…)
+   o toca uno de los accesos para empezar. Debajo están los estantes por temas, lo último que has consultado y
+   las entradas donde tienes tu versión. No sale todo de golpe.
+ - Estantes: Salsas, Fondos, Bases y aliños, Conceptos y técnicas, y Tus entradas. Al tocar uno ves solo ese tema,
+   ordenado por grupos.
+ - Cada entrada (hay 50) se lee por partes: arriba una frase con lo que es y, debajo, pestañas: Qué es, Receta,
+   Según el uso, Variantes, Trucos y errores, Historia y usos, Conservación y servicio, y Tu versión.
+ - Lo subrayado en dorado lleva a otra entrada. Abajo: en qué platos y subrecetas tuyos se usa y qué leer después.
  - «Tu versión»: escribe cómo lo haces tú. Cada vez que guardas queda una versión nueva y la anterior se queda en
    «Cómo ha ido cambiando», con la fecha y el porqué. Nunca se borra ninguna.
  - Si buscas algo que no está, ChatGPT puede escribir la entrada con el mismo formato (va a «Tus entradas»).
