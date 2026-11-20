@@ -9,10 +9,11 @@ import {copy, parseReply} from '../ai.js';
 import {emptyState} from './shared.js';
 import {go} from '../nav.js';
 
-let query = '', activeTab = null, tabFor = '';
+let query = '', category = '', fixes = false, activeTab = null, tabFor = '';
 const SEEN = 'id-cocina-biblioteca-vistas';
+const FAVORITES = 'id-cocina-biblioteca-favoritas';
 export const title = params => (params[0] === 'estante' ? shelfName(params[1]) : params[0] ? entryById(params[0])?.name || t('Biblioteca', 'Library') : t('Biblioteca', 'Library'));
-export const presetSaber = q => { query = String(q || ''); };
+export const presetSaber = q => { query = String(q || ''); category = ''; fixes = false; };
 const norm = v => String(v || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
 const SHELF = {
  salsas: ['drop', t('Madres y derivadas, emulsiones, salsas españolas y del mundo.', 'Mother sauces and derivatives, emulsions, Spanish and world sauces.')],
@@ -33,35 +34,51 @@ const para = text => String(text || '').split(/\n{2,}/).filter(Boolean).map(p =>
 const flat = text => linked(text).replace(/<a[^>]*>|<\/a>/g, '');
 
 // Lo último que has abierto (solo en este aparato).
-const seen = () => { try { const v = JSON.parse(localStorage.getItem(SEEN) || '[]'); return Array.isArray(v) ? v : []; } catch { return []; } };
+const storedIds = key => { try { const v = JSON.parse(localStorage.getItem(key) || '[]'); return Array.isArray(v) ? v : []; } catch { return []; } };
+const seen = () => storedIds(SEEN);
+const favorites = () => storedIds(FAVORITES);
 const markSeen = id => { try { localStorage.setItem(SEEN, JSON.stringify([id, ...seen().filter(x => x !== id)].slice(0, 8))); } catch {} };
 
 // ---------- Inicio: «¿Qué quieres saber?» ----------
-function row(e) {
- return '<li><a class="krow" href="' + href(e.id) + '"><span class="krow-name">' + esc(e.name) + (saberMine(e.id)?.versions?.length ? '<span class="kmine">' + esc(t('tu versión', 'your version')) + '</span>' : '') + '</span><span class="krow-sum">' + flat(clip(e.summary || '', 160)) + '</span></a></li>';
+function row(e, tab) {
+ return '<li><a class="krow" href="' + href(e.id, tab) + '"><span class="krow-name">' + esc(e.name) + (saberMine(e.id)?.versions?.length ? '<span class="kmine">' + esc(t('tu versión', 'your version')) + '</span>' : '') + '</span><span class="krow-sum">' + flat(clip(e.summary || '', 160)) + '</span></a></li>';
 }
+const hasSearch = () => !!(query.trim() || category || fixes);
 function results() {
  const q = query.trim();
- if (!q) return '';
- const list = search(q);
- if (list.length) return '<p class="fine">' + esc(list.length === 1 ? t('1 entrada', '1 entry') : list.length + t(' entradas', ' entries')) + '</p><ul class="krows">' + list.map(row).join('') + '</ul>';
+ if (!hasSearch()) return '';
+ const list = q ? search(q, Infinity, {category, fixes}) :
+  entries().filter(e => (!category || e.cat === category) && (!fixes || e.errors?.length)).sort((a, b) => a.name.localeCompare(b.name, 'es'));
+ if (list.length) return '<p class="fine">' + esc(list.length === 1 ? t('1 entrada', '1 entry') : list.length + t(' entradas', ' entries')) + '</p><ul class="krows">' + list.map(e => row(e, fixes ? 'trucos' : undefined)).join('') + '</ul>';
+ if (category || fixes) return '<p class="hint">' + esc(t('No hay coincidencias con estos filtros.', 'No matches with these filters.')) + '</p>';
  return emptyState('search', t('«', '“') + q + t('» no está todavía', '” is not here yet'), iaOn() ? t('Puedes pedir a ChatGPT que la escriba con el mismo formato. Luego la revisas y le añades tu versión.', 'Ask ChatGPT to write it in the same format. Then check it and add your version.') : t('Puedes pedirla a ChatGPT: copia la petición, pégala allí y trae aquí la respuesta.', 'Ask ChatGPT for it: copy the request, paste it there and bring back the answer.'),
   iaOn() ? '<button type="button" class="btn primary" data-act="create-ia">' + icon('spark') + esc(t('Escribir «', 'Write “') + q + t('» con ChatGPT', '” with ChatGPT')) + '</button>'
    : '<div class="row-actions"><button type="button" class="btn primary" data-act="create-copy">' + icon('copy') + esc(t('Copiar la petición', 'Copy the request')) + '</button><a class="btn ghost" href="https://chatgpt.com/" data-chat target="_blank" rel="noopener noreferrer">' + esc(t('Preguntar a ChatGPT', 'Ask ChatGPT')) + '</a></div><label class="mini" for="kReply">' + esc(t('Pega aquí la respuesta', 'Paste the answer here')) + '</label><textarea id="kReply" rows="3"></textarea><div class="row-actions"><button type="button" class="btn ghost" data-paste="kReply" data-then="[data-act=create-save]">' + icon('copy') + esc(t('Pegar y leer', 'Paste and read')) + '</button><button type="button" class="btn primary" data-act="create-save">' + icon('check') + esc(t('Guardar la entrada', 'Save the entry')) + '</button></div>');
 }
 const STARTERS = ['bechamel', 'mayonesa', 'fumet', 'holandesa', 'romesco', 'jugo-de-carne'];
+const GUIDES = [
+ ['Salsas que se cortan', 'Split sauces', t('Distingue si falló la emulsión en frío o al calentarla.', 'Check whether the emulsion broke cold or over heat.'), ['mayonesa', 'holandesa'], 'trucos'],
+ ['Jugos para carnes a la brasa', 'Jus for grilled meats', t('Consulta el fondo de partida y cómo llevarlo a un jugo de servicio.', 'Look up the starting stock and how to turn it into a jus for service.'), ['fondo-oscuro', 'jugo-de-carne'], 'receta'],
+ ['Salsas para pescado y verdura', 'Sauces for fish and vegetables', t('Elige entre una salsa de frutos secos y una emulsión caliente de mantequilla.', 'Choose between a nut sauce and a warm butter emulsion.'), ['romesco', 'beurre-blanc'], 'receta']
+];
 function homeHtml() {
- const all = entries(), q = query.trim();
+ const all = entries(), filtering = hasSearch();
  const last = seen().map(entryById).filter(Boolean).slice(0, 4), mineList = Object.values(state.saber || {}).filter(x => x?.versions?.length && !x.deleted_at).sort((a, b) => String(b.updated_at).localeCompare(String(a.updated_at))).slice(0, 4).map(x => entryById(x.id)).filter(Boolean);
+ const saved = favorites().map(entryById).filter(Boolean);
+ const trash = Object.values(state.saber || {}).filter(x => x?.custom && x.deleted_at);
  const shelves = CATS.map(([id]) => [id, all.filter(e => (e.cat || 'conceptos') === id).length]).filter(([, n]) => n);
  return '<section class="kwelcome"><h1>' + esc(t('¿Qué quieres saber?', 'What do you want to know?')) + '</h1><p>' + esc(t('Una salsa, un fondo, una base o el porqué de algo. Escríbelo y te lo encuentro.', 'A sauce, a stock, a base or the why of something. Type it and I will find it.')) + '</p>' +
   '<label class="sr" for="saberQ">' + esc(t('Buscar en la Biblioteca', 'Search the library')) + '</label><div class="searchbox searchbox-big kask">' + icon('search') + '<input id="saberQ" type="search" value="' + esc(query) + '" placeholder="' + esc(t('Bechamel, fumet, alioli…', 'Béchamel, fish stock, aioli…')) + '" autocomplete="off" enterkeyhint="search"></div>' +
-  '<div class="kstart"' + (q ? ' hidden' : '') + '><span class="kstart-label">' + esc(t('Para empezar', 'To start')) + '</span>' + STARTERS.map(entryById).filter(Boolean).map(e => '<a class="kchip" href="' + href(e.id) + '">' + esc(e.name) + '</a>').join('') + '</div></section>' +
+  '<div class="ksearch-filters"><label for="saberCategory">' + esc(t('Estante', 'Shelf')) + '</label><select id="saberCategory"><option value="">' + esc(t('Todos los estantes', 'All shelves')) + '</option>' + shelves.map(([id]) => '<option value="' + esc(id) + '"' + (category === id ? ' selected' : '') + '>' + esc(shelfName(id)) + '</option>').join('') + '</select><label class="kfix-filter"><input id="saberFixes" type="checkbox"' + (fixes ? ' checked' : '') + '> ' + esc(t('Buscar errores y soluciones', 'Search mistakes and fixes')) + '</label></div>' +
+  '<div class="kstart"' + (filtering ? ' hidden' : '') + '><span class="kstart-label">' + esc(t('Para empezar', 'To start')) + '</span>' + STARTERS.map(entryById).filter(Boolean).map(e => '<a class="kchip" href="' + href(e.id) + '">' + esc(e.name) + '</a>').join('') + '</div></section>' +
   '<div id="saberRes">' + results() + '</div>' +
-  '<div class="khome"' + (q ? ' hidden' : '') + '>' +
-  (last.length ? '<section class="sec"><h2 class="day">' + esc(t('Lo último que has consultado', 'Recently opened')) + '</h2><ul class="krows">' + last.map(row).join('') + '</ul></section>' : '') +
+  '<div class="khome"' + (filtering ? ' hidden' : '') + '>' +
+  (saved.length ? '<section class="sec"><h2 class="day">' + esc(t('Favoritas', 'Favourites')) + '</h2><ul class="krows">' + saved.map(e => row(e)).join('') + '</ul></section>' : '') +
+  '<section class="sec"><h2 class="day">' + esc(t('Consultas de cocina', 'Kitchen reference')) + '</h2><div class="kguides">' + GUIDES.map(([es, english, hint, ids, tab]) => '<section class="kguide"><h3>' + esc(t(es, english)) + '</h3><p>' + esc(hint) + '</p><div class="chips">' + ids.map(entryById).filter(Boolean).map(e => '<a class="chip" href="' + href(e.id, tab) + '">' + esc(e.name) + '</a>').join('') + '</div></section>').join('') + '</div></section>' +
+  (last.length ? '<section class="sec"><h2 class="day">' + esc(t('Lo último que has consultado', 'Recently opened')) + '</h2><ul class="krows">' + last.map(e => row(e)).join('') + '</ul></section>' : '') +
   '<section class="sec"><h2 class="day">' + esc(t('Los estantes', 'The shelves')) + '</h2><div class="kshelves">' + shelves.map(([id, n]) => '<a class="kshelf" href="#/biblioteca/estante/' + id + '">' + icon((SHELF[id] || SHELF.conceptos)[0]) + '<strong>' + esc(shelfName(id)) + '</strong><span>' + esc((SHELF[id] || SHELF.conceptos)[1]) + '</span><small>' + esc(n === 1 ? t('1 entrada', '1 entry') : n + t(' entradas', ' entries')) + '</small></a>').join('') + '</div></section>' +
-  (mineList.length ? '<section class="sec"><h2 class="day">' + esc(t('Con tu versión', 'With your version')) + '</h2><ul class="krows">' + mineList.map(row).join('') + '</ul></section>' : '') +
+  (mineList.length ? '<section class="sec"><h2 class="day">' + esc(t('Con tu versión', 'With your version')) + '</h2><ul class="krows">' + mineList.map(e => row(e)).join('') + '</ul></section>' : '') +
+  (trash.length ? '<details class="sec kbin"><summary>' + esc(t('Papelera de la Biblioteca', 'Library bin')) + ' (' + trash.length + ')</summary><ul>' + trash.map(x => '<li><span>' + esc(x.custom.name) + '</span><button type="button" class="btn ghost" data-restore-entry="' + esc(x.id) + '">' + esc(t('Recuperar', 'Restore')) + '</button></li>').join('') + '</ul></details>' : '') +
   '<p class="fine">' + esc(t(all.length + ' entradas, escritas para esta app con palabras propias. Lo que añades tú lleva tu nombre y su historia.', all.length + ' entries, written for this app in its own words. What you add keeps your name and its history.')) + '</p></div>';
 }
 
@@ -69,7 +86,8 @@ function homeHtml() {
 function shelfHtml(id) {
  const list = entries().filter(e => (e.cat || 'conceptos') === id), groups = [...new Set(list.map(e => e.group || ''))];
  return '<a class="back" href="#/biblioteca">' + icon('left') + esc(t('Biblioteca', 'Library')) + '</a><header class="page-head"><h1>' + esc(shelfName(id)) + '</h1><p>' + esc((SHELF[id] || SHELF.conceptos)[1]) + '</p></header>' +
-  (list.length ? groups.map(g => '<section class="kgroup-sec">' + (g ? '<h2 class="day">' + esc(g) + '<span class="count">' + list.filter(e => (e.group || '') === g).length + '</span></h2>' : '') + '<ul class="krows">' + list.filter(e => (e.group || '') === g).sort((a, b) => a.name.localeCompare(b.name, 'es')).map(row).join('') + '</ul></section>').join('') : emptyState('book', t('Este estante está vacío', 'This shelf is empty'), t('Vuelve a la Biblioteca y busca lo que necesites.', 'Go back to the library and search for what you need.')));
+  (groups.filter(Boolean).length > 1 ? '<nav class="chips kgroup-index" aria-label="' + esc(t('Grupos de este estante', 'Groups in this shelf')) + '">' + groups.map((g, i) => g ? '<button type="button" class="chip" data-kgroup="' + i + '">' + esc(g) + '</button>' : '').join('') + '</nav>' : '') +
+  (list.length ? groups.map((g, i) => '<section class="kgroup-sec" id="kgroup-' + i + '" tabindex="-1">' + (g ? '<h2 class="day">' + esc(g) + '<span class="count">' + list.filter(e => (e.group || '') === g).length + '</span></h2>' : '') + '<ul class="krows">' + list.filter(e => (e.group || '') === g).sort((a, b) => a.name.localeCompare(b.name, 'es')).map(e => row(e)).join('') + '</ul></section>').join('') : emptyState('book', t('Este estante está vacío', 'This shelf is empty'), t('Vuelve a la Biblioteca y busca lo que necesites.', 'Go back to the library and search for what you need.')));
 }
 
 // ---------- Una entrada, por partes ----------
@@ -89,9 +107,19 @@ function mineHtml(e) {
   '<div class="row-actions row-left"><button type="button" class="btn primary" data-act="save-version">' + icon('check') + esc(t('Guardar como versión nueva', 'Save as a new version')) + '</button></div>' +
   (vs.length > 1 ? '<h3 class="kh3">' + esc(t('Cómo ha ido cambiando', 'How it has changed')) + '</h3><ol class="khistory">' + vs.slice(1).map(v => '<li><details><summary><strong>' + esc(shortDate(v.at)) + '</strong>' + (v.why ? ' ' + esc(v.why) : '') + '</summary><div class="kv-text">' + esc(v.text) + '</div></details></li>').join('') + '</ol>' : '') + '</div>';
 }
+// Solo se multiplican medidas inequívocas. Los rangos, fracciones y «al gusto» quedan como referencia.
+const metricAmount = /^(\d+(?:[.,]\d+)?)\s*(kg|g|mg|ml|cl|dl|l)$/i;
+function recipeTable(base) {
+ const canScale = base.items.some(([, quantity]) => metricAmount.test(quantity));
+ return (canScale ? '<div class="kbatch"><label for="kBatch">' + esc(t('Multiplicar la receta base', 'Scale the base recipe')) + '</label><select id="kBatch">' +
+  [0.5, 1, 1.5, 2, 3, 4, 5, 10].map(factor => '<option value="' + factor + '"' + (factor === 1 ? ' selected' : '') + '>× ' + factor.toLocaleString(en() ? 'en' : 'es') + '</option>').join('') + '</select>' +
+  '<p class="fine">' + esc(t('Se ajustan los pesos y volúmenes simples. Las demás cantidades, los tiempos y las temperaturas son los de la receta base.', 'Simple weights and volumes are scaled. Other amounts, times and temperatures are from the base recipe.')) + '</p></div>' : '') +
+  '<table class="ktable"><caption>' + esc(t('Receta base para ', 'Base recipe for ') + (base.for || '')) + '</caption><tbody>' +
+  base.items.map(([ingredient, quantity]) => '<tr><td>' + linked(ingredient) + '</td><td class="q" data-quantity="' + esc(quantity || '') + '">' + esc(quantity || '') + '</td></tr>').join('') + '</tbody></table>';
+}
 function panels(e) {
  const out = [['que', t('Qué es', 'What it is'), '<h2 class="sr">' + esc(t('Qué es', 'What it is')) + '</h2>' + para(e.what)]];
- if (e.base && (e.base.items || []).length) out.push(['receta', t('Receta', 'Recipe'), '<h2 class="sr">' + esc(t('Receta base', 'Base recipe')) + '</h2><table class="ktable"><caption>' + esc(t('Receta base para ', 'Base recipe for ') + (e.base.for || '')) + '</caption><tbody>' + e.base.items.map(x => '<tr><td>' + linked(x[0]) + '</td><td class="q">' + esc(x[1] || '') + '</td></tr>').join('') + '</tbody></table>' + ((e.base.steps || []).length ? '<ol class="ksteps">' + e.base.steps.map(s => '<li>' + linked(s) + '</li>').join('') + '</ol>' : '')]);
+ if (e.base && (e.base.items || []).length) out.push(['receta', t('Receta', 'Recipe'), '<h2 class="sr">' + esc(t('Receta base', 'Base recipe')) + '</h2>' + recipeTable(e.base) + ((e.base.steps || []).length ? '<ol class="ksteps">' + e.base.steps.map(s => '<li>' + linked(s) + '</li>').join('') + '</ol>' : '')]);
  if ((e.ratios || []).length) out.push(['uso', t('Según el uso', 'By use'), '<h2 class="sr">' + esc(t('Cómo cambia según para qué', 'How it changes by use')) + '</h2><table class="ktable kratios"><thead><tr><th>' + esc(t('Para', 'For')) + '</th><th>' + esc(t('Cómo cambia', 'How it changes')) + '</th></tr></thead><tbody>' + e.ratios.map(r => '<tr><td><strong>' + linked(r.use) + '</strong></td><td>' + linked(r.ratio) + (r.note ? '<small>' + linked(r.note) + '</small>' : '') + '</td></tr>').join('') + '</tbody></table>']);
  if ((e.variants || []).length) out.push(['variantes', t('Variantes', 'Variants'), '<h2 class="sr">' + esc(t('Variantes y derivadas', 'Variants and derivatives')) + '</h2><ul class="kvariants">' + e.variants.map(v => '<li>' + (v.id && entryById(v.id) ? '<a class="kref" href="' + href(v.id) + '">' + esc(v.name) + '</a>' : '<strong>' + esc(v.name) + '</strong>') + (v.note ? ' ' + linked(v.note) : '') + '</li>').join('') + '</ul>']);
  if ((e.keys || []).length || (e.errors || []).length) out.push(['trucos', t('Trucos y errores', 'Tips and mistakes'), ((e.keys || []).length ? '<h2 class="kh3">' + esc(t('Claves', 'Key points')) + '</h2><ul class="kbullets">' + e.keys.map(x => '<li>' + linked(x) + '</li>').join('') + '</ul>' : '') + ((e.errors || []).length ? '<h2 class="kh3">' + esc(t('Errores y cómo arreglarlos', 'Mistakes and fixes')) + '</h2><dl class="kerrors">' + e.errors.map(x => '<dt>' + linked(x.p) + '</dt><dd>' + linked(x.fix) + '</dd>').join('') + '</dl>' : '')]);
@@ -105,10 +133,11 @@ function entryHtml(id, tab) {
  const e = entryById(id);
  const back = '<a class="back" href="#/biblioteca">' + icon('left') + esc(t('Biblioteca', 'Library')) + '</a>';
  if (!e) return back + emptyState('book', t('Esta entrada no está', 'This entry is not here'), t('Búscala en la Biblioteca.', 'Search for it in the library.'));
+ const saved = favorites().includes(id);
  const list = panels(e), on = list.some(p => p[0] === tab) ? tab : list[0][0];
  const {dishes, subs} = inDishes(e), rel = [...new Set([...(e.related || []), ...backlinks(e.id).map(x => x.id)])].map(entryById).filter(x => x && x.id !== e.id);
  return '<a class="back" href="#/biblioteca/estante/' + esc(e.cat || 'conceptos') + '">' + icon('left') + esc(shelfName(e.cat || 'conceptos')) + '</a><article class="kentry">' +
-  '<header class="page-head"><h1>' + esc(e.name) + '</h1>' + (e.aka?.length ? '<p class="kaka">' + esc(t('También: ', 'Also: ') + e.aka.join(', ')) + '</p>' : '') + '</header>' +
+  '<header class="page-head"><h1>' + esc(e.name) + '</h1>' + (e.aka?.length ? '<p class="kaka">' + esc(t('También: ', 'Also: ') + e.aka.join(', ')) + '</p>' : '') + '<button type="button" class="btn ghost" data-act="favorite" aria-pressed="' + saved + '">' + esc(saved ? t('Quitar de favoritas', 'Remove from favourites') : t('Guardar en favoritas', 'Save to favourites')) + '</button></header>' +
   (e.summary ? '<div class="kbody"><p class="lead">' + linked(e.summary) + '</p></div>' : '') +
   '<div class="ktabs" role="tablist" aria-label="' + esc(t('Partes de la entrada', 'Parts of the entry')) + '">' + list.map(([pid, label]) => '<button type="button" role="tab" id="kt-' + pid + '" aria-controls="kp-' + pid + '" aria-selected="' + (pid === on) + '" class="ktab' + (pid === on ? ' active' : '') + '" data-ktab="' + pid + '">' + esc(label) + '</button>').join('') + '</div>' +
   list.map(([pid, , body]) => '<section class="kpanel" role="tabpanel" id="kp-' + pid + '" aria-labelledby="kt-' + pid + '"' + (pid === on ? '' : ' hidden') + '>' + body + '</section>').join('') +
@@ -155,11 +184,29 @@ export function mount(root, params) {
   $$('.kpanel', root).forEach(p => { p.hidden = p.id !== 'kp-' + id; });
   history.replaceState(null, '', '#/biblioteca/' + params[0] + '/' + id);
  };
+ const refreshResults = () => {
+  $('#saberRes', root).innerHTML = results();
+  $$('.khome, .kstart', root).forEach(x => { x.hidden = hasSearch(); });
+ };
+ root.addEventListener('change', e => {
+  if (e.target.id === 'saberCategory' || e.target.id === 'saberFixes') {
+   category = $('#saberCategory', root).value;
+   fixes = $('#saberFixes', root).checked;
+   refreshResults();
+   return;
+  }
+  if (e.target.id === 'kBatch') {
+   const factor = Number(e.target.value);
+   $$('[data-quantity]', root).forEach(cell => {
+    const original = cell.dataset.quantity, amount = original.match(metricAmount);
+    cell.textContent = amount && factor !== 1 ? (Number(amount[1].replace(',', '.')) * factor).toLocaleString(en() ? 'en' : 'es', {maximumFractionDigits: 6}) + ' ' + amount[2] : original;
+   });
+  }
+ });
  root.addEventListener('input', e => {
   if (e.target.id !== 'saberQ') return;
   query = e.target.value;
-  const r = $('#saberRes', root); if (r) r.innerHTML = results();
-  const has = !!query.trim(); $$('.khome, .kstart', root).forEach(x => { x.hidden = has; });
+  refreshResults();
  });
  root.addEventListener('keydown', e => {
   if (e.target.id === 'saberQ' && e.key === 'Enter') { const first = root.querySelector('#saberRes .krow'); if (first) { e.preventDefault(); location.hash = first.getAttribute('href'); } }
@@ -169,8 +216,29 @@ export function mount(root, params) {
  root.addEventListener('click', async e => {
   const b = e.target.closest('button');
   if (!b) return;
+  if (b.dataset.kgroup !== undefined) {
+   const group = $('#kgroup-' + b.dataset.kgroup, root);
+   group?.scrollIntoView({block: 'start'});
+   group?.focus({preventScroll: true});
+   return;
+  }
+  if (b.dataset.restoreEntry) {
+   await trashSaberEntry(b.dataset.restoreEntry, true);
+   repaint();
+   toast(t('Entrada recuperada.', 'Entry restored.'));
+   return;
+  }
   if (b.dataset.ktab) { showTab(b.dataset.ktab); return; }
   const act = b.dataset.act, id = params[0];
+  if (act === 'favorite' && id) {
+   const saved = favorites(), on = !saved.includes(id);
+   try {
+    localStorage.setItem(FAVORITES, JSON.stringify(on ? [id, ...saved] : saved.filter(x => x !== id)));
+    b.setAttribute('aria-pressed', on);
+    b.textContent = on ? t('Quitar de favoritas', 'Remove from favourites') : t('Guardar en favoritas', 'Save to favourites');
+   } catch { toast(t('No se pudo guardar la selección.', 'Could not save this selection.'), 'error'); }
+   return;
+  }
   if (act === 'save-version' && id) {
    const text = ($('#kText', root)?.value || '').trim();
    if (!text) { toast(t('Escribe tu versión primero.', 'Write your version first.'), 'error'); return; }

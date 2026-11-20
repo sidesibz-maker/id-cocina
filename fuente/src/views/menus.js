@@ -2,7 +2,7 @@
 // el mismo producto en varios platos, demasiada brasa, nada crujiente, alérgenos…). Nada se borra: un menú va a la papelera.
 import {COURSES, dishProfile, technique, AXIS_IDS} from '../flavor-core.js';
 import {ALLERGENS} from '../ai-core.js';
-import {t, en, relDay, shortDate} from '../i18n.js';
+import {t, en, relDay, shortDate, seasonLabel} from '../i18n.js';
 import {esc, icon, $, $$, sheet, toast, ask, flavorPrint, axisName, clip} from '../ui.js';
 import {state, dishById, liveMenus, menuById, createMenu, saveMenu} from '../store.js';
 import {dishRequest} from '../ai-core.js';
@@ -16,6 +16,7 @@ export const title = params => (params[0] ? menuById(params[0])?.name || t('Men�
 const lbl = row => (en() ? row[2] : row[1]);
 const courseName = id => lbl(COURSES.find(c => c[0] === id) || COURSES[COURSES.length - 1]);
 const KINDS = () => [['degustacion', t('Menú degustación', 'Tasting menu')], ['carta', t('Carta', 'À la carte menu')]];
+const textKey = value => String(value || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
 const kindName = k => (KINDS().find(x => x[0] === k) || KINDS()[0])[1];
 // Lo que está en casi todos los platos no cuenta como «repetido».
 const BASIC = new Set(['sal', 'sal-escamas', 'aove', 'aceite-girasol', 'pimienta', 'ajo', 'cebolla', 'limon', 'mantequilla', 'azucar', 'agua', 'vinagre-jerez', 'perejil']);
@@ -25,31 +26,30 @@ export const tabs = active => '<div class="seg book-tabs" role="tablist"><a clas
 
 // ---------- Análisis del conjunto ----------
 function analyse(menu) {
- const dishes = menu.items.map(x => dishById(x.dish_id)).filter(d => d && !d.deleted_at);
  const kb = state.kb, rows = menu.items.flatMap(({dish_id}, itemIndex) => {
   const d = dishById(dish_id);
   return d && !d.deleted_at ? [{d, itemIndex, p: kb ? dishProfile(kb, d) : null}] : [];
  });
  const notes = [];
- const say = (level, text) => notes.push({level, text});
- if (dishes.length < 2) return {rows, notes, allergens: []};
+ const say = (level, text, passes = []) => notes.push({level, text, passes});
+ if (rows.length < 2) return {rows, notes, allergens: []};
  const ordered = menu.kind === 'degustacion';
  // Sabor que manda, seguido
  if (ordered) {
   for (let i = 1; i < rows.length; i++) {
    const a = rows[i - 1].p?.dominant?.[0], b = rows[i].p?.dominant?.[0];
-   if (a && a === b) say('warn', t('Los platos ' + i + ' y ' + (i + 1) + ' van seguidos y los dos los domina el ' + axisName(a).toLowerCase() + '. Separa uno o cambia su acompañamiento.', 'Dishes ' + i + ' and ' + (i + 1) + ' come one after the other and both are led by ' + axisName(a).toLowerCase() + '. Move one or change its garnish.'));
+   if (a && a === b) say('warn', t('Los platos ' + i + ' y ' + (i + 1) + ' van seguidos y los dos los domina el ' + axisName(a).toLowerCase() + '. Separa uno o cambia su acompañamiento.', 'Dishes ' + i + ' and ' + (i + 1) + ' come one after the other and both are led by ' + axisName(a).toLowerCase() + '. Move one or change its garnish.'), [i, i + 1]);
   }
-  for (let i = 2; i < rows.length; i++) if ([rows[i - 2], rows[i - 1], rows[i]].every(r => (r.p?.axes?.graso || 0) >= 6.5)) say('warn', t('Los platos ' + (i - 1) + ' a ' + (i + 1) + ' son muy grasos seguidos: mete algo ácido o fresco en medio.', 'Dishes ' + (i - 1) + ' to ' + (i + 1) + ' are very rich in a row: put something sharp or fresh between them.'));
+  for (let i = 2; i < rows.length; i++) if ([rows[i - 2], rows[i - 1], rows[i]].every(r => (r.p?.axes?.graso || 0) >= 6.5)) say('warn', t('Los platos ' + (i - 1) + ' a ' + (i + 1) + ' son muy grasos seguidos: mete algo ácido o fresco en medio.', 'Dishes ' + (i - 1) + ' to ' + (i + 1) + ' are very rich in a row: put something sharp or fresh between them.'), [i - 1, i, i + 1]);
   const last = rows[rows.length - 1].d;
-  if (!dishes.some(d => d.course === 'postre')) say('tip', t('No hay postre.', 'There is no dessert.'));
+  if (!rows.some(({d}) => d.course === 'postre')) say('tip', t('No hay postre.', 'There is no dessert.'));
   else if (last.course !== 'postre') say('tip', t('El postre no está al final.', 'The dessert is not at the end.'));
  }
  // Producto repetido
  const seen = new Map();
  rows.forEach(({d}, k) => { for (const id of new Set(d.components.flatMap(c => c.items.map(i => i.k)).filter(Boolean))) { if (BASIC.has(id)) continue; seen.set(id, [...(seen.get(id) || []), k + 1]); } });
  const rep = [...seen.entries()].filter(([, v]) => v.length > 1).sort((a, b) => b[1].length - a[1].length);
- for (const [id, where] of rep.slice(0, 5)) { const name = state.kb?.byId[id] ? (en() ? state.kb.byId[id].en : state.kb.byId[id].es) : id; say(where.length > 2 ? 'warn' : 'tip', t(name + ' sale en ' + where.length + ' platos (' + where.join(', ') + ').', name + ' appears in ' + where.length + ' dishes (' + where.join(', ') + ').')); }
+ for (const [id, where] of rep.slice(0, 5)) { const name = state.kb?.byId[id] ? (en() ? state.kb.byId[id].en : state.kb.byId[id].es) : id; say(where.length > 2 ? 'warn' : 'tip', t(name + ' sale en ' + where.length + ' platos (' + where.join(', ') + ').', name + ' appears in ' + where.length + ' dishes (' + where.join(', ') + ').'), where); }
  // Brasa
  const grill = rows.filter(({d}) => d.components.some(c => c.techniques.some(x => GRILL.has(x)))).length;
  if (grill / rows.length > .6 && rows.length >= 3) say('tip', t(grill + ' de ' + rows.length + ' platos llevan brasa. Es tu sello, pero alguno crudo, encurtido o al vapor da descanso.', grill + ' of ' + rows.length + ' dishes use the grill. It is your signature, but something raw, pickled or steamed gives a rest.'));
@@ -77,25 +77,31 @@ function listPage() {
    : emptyState('book', t('Aún no hay cartas ni menús', 'No menus yet'), state.dishes.some(d => !d.deleted_at) ? t('Crea uno y añade platos de tu libreta: la app te dirá qué se repite, qué choca y qué falta.', 'Create one and add dishes from your notebook: the app tells you what repeats, clashes or is missing.') : t('Primero crea algunos platos en la libreta.', 'First create some dishes in the notebook.'), '<button type="button" class="btn primary" data-act="new">' + icon('plus') + esc(t('Nuevo menú', 'New menu')) + '</button>')) +
   (trashed.length ? '<section class="sec"><h2 class="day">' + esc(t('Papelera', 'Bin')) + '</h2><ul class="bin">' + trashed.map(m => '<li><div><strong>' + esc(m.name) + '</strong><small>' + esc(kindName(m.kind)) + '</small></div><button type="button" class="btn ghost" data-restore="' + esc(m.id) + '">' + icon('undo') + esc(t('Recuperar', 'Restore')) + '</button></li>').join('') + '</ul></section>' : '');
 }
+function comparison(menu) {
+ const result = analyse(menu);
+ return '<section><h3>' + esc(menu.name) + '</h3><ol>' + result.rows.map(({d}) => '<li>' + esc(d.name) + '</li>').join('') + '</ol><ul>' +
+  result.notes.filter(n => n.level !== 'ok').map(n => '<li>' + esc(n.text) + '</li>').join('') + '</ul></section>';
+}
 function editPage(id) {
  const m = menuById(id);
  if (!m) return '<a class="back" href="#/menus">' + icon('left') + esc(t('Cartas y menús', 'Menus')) + '</a>' + emptyState('book', t('Este menú no está', 'This menu is not here'), t('Puede que se haya movido.', 'It may have moved.'));
- const a = analyse(m), on = iaOn();
- const dishRow = ({d, p, itemIndex}, k) => '<li class="mrow" data-k="' + k + '"><span class="mrow-n">' + (k + 1) + '</span>' + flavorPrint(p && !p.empty ? p.axes : d.flavor?.axes, {size: 44}) + '<a class="mrow-main" href="#/plato/' + esc(d.id) + '"><strong>' + esc(d.name) + '</strong><small>' + esc([courseName(d.course), p?.dominant?.length ? t('domina ', 'led by ') + p.dominant.map(x => axisName(x).toLowerCase()).join(' y ') : ''].filter(Boolean).join(', ')) + '</small></a>' +
-  '<span class="mrow-act"><button type="button" class="iconbtn" data-up="' + itemIndex + '" aria-label="' + esc(t('Subir', 'Move up')) + '"' + (k ? '' : ' disabled') + '>' + '↑</button><button type="button" class="iconbtn" data-down="' + itemIndex + '" aria-label="' + esc(t('Bajar', 'Move down')) + '"' + (k < a.rows.length - 1 ? '' : ' disabled') + '>' + '↓</button><button type="button" class="iconbtn" data-out="' + itemIndex + '" aria-label="' + esc(t('Quitar del menú', 'Remove from menu')) + '">' + icon('x') + '</button></span></li>';
+ const a = analyse(m), on = iaOn(), others = liveMenus().filter(menu => menu.id !== id);
+ const dishRow = ({d, p, itemIndex}, k) => '<li class="mrow" data-k="' + k + '" tabindex="-1"><span class="mrow-n">' + (k + 1) + '</span>' + flavorPrint(p && !p.empty ? p.axes : d.flavor?.axes, {size: 44}) + '<a class="mrow-main" href="#/plato/' + esc(d.id) + '"><strong>' + esc(d.name) + '</strong><small>' + esc([courseName(d.course), p?.dominant?.length ? t('domina ', 'led by ') + p.dominant.map(x => axisName(x).toLowerCase()).join(' y ') : ''].filter(Boolean).join(', ')) + '</small></a>' +
+  '<span class="mrow-act"><button type="button" class="iconbtn" data-up="' + itemIndex + '" aria-label="' + esc(t('Subir', 'Move up')) + '"' + (k ? '' : ' disabled') + '>' + '↑</button><button type="button" class="iconbtn" data-down="' + itemIndex + '" aria-label="' + esc(t('Bajar', 'Move down')) + '"' + (k < a.rows.length - 1 ? '' : ' disabled') + '>' + '↓</button><button type="button" class="iconbtn" data-out="' + itemIndex + '" aria-label="' + esc(t('Quitar del menú', 'Remove from menu')) + '">' + icon('x') + '</button></span><label class="mrow-tasting"><span>' + esc(t('Nota de cata', 'Tasting note')) + '</span><textarea rows="2" maxlength="1000" data-tasting="' + itemIndex + '">' + esc(m.items[itemIndex].tasting || '') + '</textarea></label></li>';
  return '<a class="back" href="#/menus">' + icon('left') + esc(t('Cartas y menús', 'Menus')) + '</a><div class="bench menu-bench">' +
   '<header class="card bench-head"><div class="bench-top"><label class="sr" for="menuKind">' + esc(t('Tipo', 'Type')) + '</label><select id="menuKind" class="status-select">' + KINDS().map(([k, l]) => '<option value="' + k + '"' + (m.kind === k ? ' selected' : '') + '>' + esc(l) + '</option>').join('') + '</select><button type="button" class="btn ghost sala-btn" data-act="sala">' + icon('down') + esc(t('Imprimir para la sala', 'Print for the dining room')) + '</button><button type="button" class="iconbtn" data-act="more" aria-label="' + esc(t('Enviar a la papelera', 'Move to the bin')) + '">' + icon('trash') + '</button></div>' +
-  '<label class="sr" for="menuName">' + esc(t('Nombre', 'Name')) + '</label><input id="menuName" class="title-input" value="' + esc(m.name) + '" maxlength="120" autocomplete="off"></header>' +
+  '<label class="sr" for="menuName">' + esc(t('Nombre', 'Name')) + '</label><input id="menuName" class="title-input" value="' + esc(m.name) + '" maxlength="120" autocomplete="off"><div class="row-actions row-left"><button type="button" class="btn ghost" data-act="duplicate">' + esc(t('Duplicar para probar', 'Duplicate to test')) + '</button></div></header>' +
   '<section class="card"><div class="row-actions row-left"><button type="button" class="btn primary" data-act="add">' + icon('plus') + esc(t('Añadir platos', 'Add dishes')) + '</button></div><h2>' + esc(t('Platos', 'Dishes')) + (a.rows.length ? '<span class="count">' + a.rows.length + '</span>' : '') + '</h2>' + (a.rows.length ? '<ol class="mrows">' + a.rows.map(dishRow).join('') + '</ol>' : '<p class="hint">' + esc(t('Añade platos de tu libreta. En un menú degustación, el orden cuenta.', 'Add dishes from your notebook. In a tasting menu, the order matters.')) + '</p>') +
   '</section>' +
   '<aside class="card analysis"><h2>' + esc(t('¿Está equilibrado?', 'Is it balanced?')) + '</h2>' + (a.rows.length < 2 ? '<p class="hint">' + esc(t('Con dos platos o más, aquí verás qué se repite, qué choca y qué falta.', 'With two dishes or more, you will see here what repeats, clashes or is missing.')) + '</p>' :
-   '<ul class="notes">' + a.notes.map(n => '<li class="note note-' + (n.level === 'warn' ? 'warn' : n.level === 'ok' ? 'ok' : 'tip') + '">' + icon(n.level === 'ok' ? 'check' : n.level === 'warn' ? 'alert' : 'info') + '<div><p>' + esc(n.text) + '</p></div></li>').join('') + '</ul>' +
+   '<ul class="notes">' + a.notes.map(n => '<li class="note note-' + (n.level === 'warn' ? 'warn' : n.level === 'ok' ? 'ok' : 'tip') + '">' + icon(n.level === 'ok' ? 'check' : n.level === 'warn' ? 'alert' : 'info') + '<div><p>' + esc(n.text) + '</p>' + (n.passes.length ? '<button type="button" class="linkbtn" data-passes="' + n.passes.join(',') + '" aria-pressed="false">' + esc(t('Marcar estos pases', 'Highlight these courses')) + '</button>' : '') + '</div></li>').join('') + '</ul>' +
    (a.allergens.length ? '<h3>' + esc(t('Alérgenos (según el consejo de cada plato)', 'Allergens (from each dish\'s advice)')) + '</h3><div class="chips">' + a.allergens.map(([al, w]) => '<span class="chip chip-static">' + esc(lbl(al)) + '<small>' + esc(w.join(', ')) + '</small></span>').join('') + '</div>' : '')) +
    '<details><summary>' + esc(t('Consejos y cómo corregir el menú', 'Tips and how to correct the menu')) + '</summary><dl>' +
    '<dt><strong>' + esc(t('Los platos seguidos saben parecido', 'Consecutive dishes taste similar')) + '</strong></dt><dd>' + esc(t('El paladar se acostumbra al mismo sabor. Separa los platos o cambia el aliño de uno y vuelve a catarlos en orden.', 'The palate adapts to the same flavour. Separate the dishes or change one dressing and taste them in order again.')) + '</dd>' +
    '<dt><strong>' + esc(t('El menú se hace pesado', 'The menu feels heavy')) + '</strong></dt><dd>' + esc(t('Varios bocados grasos seguidos pierden contraste. Prueba una guarnición fresca o un encurtido entre los pases más intensos.', 'Several rich bites in a row lose contrast. Try a fresh garnish or a pickle between the richest courses.')) + '</dd>' +
    '<dt><strong>' + esc(t('Las texturas se parecen', 'Textures feel too similar')) + '</strong></dt><dd>' + esc(t('Si todo es blando, cada bocado se parece al anterior. Prueba un crujiente y añádelo al pase si se ablanda con la salsa.', 'If everything is soft, each bite feels like the previous one. Try a crisp element and add it at service if the sauce softens it.')) + '</dd>' +
    '</dl></details></aside>' +
+  (others.length ? '<section class="card"><h2>' + esc(t('Comparar menús', 'Compare menus')) + '</h2><label for="menuCompare">' + esc(t('Comparar con', 'Compare with')) + '</label><select id="menuCompare"><option value="">' + esc(t('Elige un menú', 'Choose a menu')) + '</option>' + others.map(x => '<option value="' + esc(x.id) + '">' + esc(x.name) + '</option>').join('') + '</select><div id="menuComparison" class="menu-comparison" aria-live="polite"></div></section>' : '') +
   '<section class="card" id="menuAdvice"><h2>' + esc(t('Opinión de ChatGPT', 'ChatGPT\'s view')) + '</h2>' + (m.advice?.text ? '<div class="msg-body">' + rich(m.advice.text) + '</div><p class="fine">' + esc(t('Del ', 'From ') + shortDate(m.advice.at)) + '</p>' : '<p class="hint">' + esc(t('Una segunda opinión sobre el conjunto: ritmo, repeticiones y qué cambiaría.', 'A second opinion on the whole: rhythm, repetitions and what to change.')) + '</p>') +
    (a.rows.length >= 2 ? (on ? '<div class="row-actions row-left"><button type="button" class="btn ' + (m.advice ? 'ghost' : 'primary') + '" data-act="advice">' + icon('spark') + esc(m.advice ? t('Pedir otra opinión', 'Ask again') : t('Pedir opinión a ChatGPT', 'Ask ChatGPT')) + '</button></div>' : '<div class="row-actions row-left"><button type="button" class="btn ghost" data-act="copy">' + icon('copy') + esc(t('Copiar la consulta', 'Copy the request')) + '</button><a class="btn ghost" href="https://chatgpt.com/" data-chat target="_blank" rel="noopener noreferrer">' + esc(t('Preguntar a ChatGPT', 'Ask ChatGPT')) + icon('out') + '</a></div>') : '') + '</section>' +
   '<section class="card" id="menuPair"><h2>' + esc(t('Maridaje del menú', 'Menu pairing')) + '</h2>' + (m.pairing?.text ? '<div class="msg-body">' + rich(m.pairing.text) + '</div>' : '<p class="hint">' + esc(t('Un vino para cada plato y una alternativa sin alcohol para todo el menú.', 'A wine for each dish and an alcohol-free option for the whole menu.')) + '</p>') +
@@ -128,11 +134,15 @@ async function printSala(m) {
 export const render = params => (params[0] ? editPage(params[0]) : listPage());
 
 function pickDishes(m, done) {
- let q = '';
+ let q = '', course = '', season = '';
+ const seasons = [...new Set(state.dishes.filter(d => !d.deleted_at).map(d => d.season).filter(Boolean))].sort();
  const chosen = new Set(m.items.map(x => x.dish_id));
- const draw = () => state.dishes.filter(d => !d.deleted_at && (!q || (d.name + ' ' + (d.concept || '')).toLowerCase().includes(q))).map(d => '<label class="pick"><input type="checkbox" value="' + esc(d.id) + '"' + (chosen.has(d.id) ? ' checked' : '') + '>' + flavorPrint(d.flavor?.axes, {size: 32}) + '<span><strong>' + esc(d.name) + '</strong><small>' + esc(courseName(d.course)) + '</small></span></label>').join('') || '<p class="hint">' + esc(t('No hay platos con ese nombre.', 'No dishes with that name.')) + '</p>';
- const s = sheet({title: t('Añadir platos', 'Add dishes'), wide: true, body: '<div class="searchbox">' + icon('search') + '<input id="pickQ" type="search" placeholder="' + esc(t('Buscar plato', 'Search dish')) + '" autocomplete="off"></div><div id="pickList" class="pick-list">' + draw() + '</div><div class="row-actions"><button type="button" class="btn primary" data-act="ok">' + icon('check') + esc(t('Listo', 'Done')) + '</button></div>'});
- $('#pickQ', s.el).oninput = e => { q = e.target.value.toLowerCase().trim(); $('#pickList', s.el).innerHTML = draw(); };
+ const draw = () => state.dishes.filter(d => !d.deleted_at && (!course || d.course === course) && (!season || d.season === season) && (!q || textKey(d.name + ' ' + (d.concept || '')).includes(q))).map(d => '<label class="pick"><input type="checkbox" value="' + esc(d.id) + '"' + (chosen.has(d.id) ? ' checked' : '') + '>' + flavorPrint(d.flavor?.axes, {size: 32}) + '<span><strong>' + esc(d.name) + '</strong><small>' + esc(courseName(d.course)) + '</small></span></label>').join('') || '<p class="hint">' + esc(t('No hay platos con esos filtros.', 'No dishes match these filters.')) + '</p>';
+ const s = sheet({title: t('Añadir platos', 'Add dishes'), wide: true, body: '<div class="searchbox">' + icon('search') + '<input id="pickQ" type="search" placeholder="' + esc(t('Buscar plato', 'Search dish')) + '" autocomplete="off"></div><div class="menu-filters"><label>' + esc(t('Tipo de pase', 'Course')) + '<select id="pickCourse"><option value="">' + esc(t('Todos', 'All')) + '</option>' + COURSES.map(c => '<option value="' + esc(c[0]) + '">' + esc(lbl(c)) + '</option>').join('') + '</select></label><label>' + esc(t('Temporada', 'Season')) + '<select id="pickSeason"><option value="">' + esc(t('Todas', 'All')) + '</option>' + seasons.map(key => '<option value="' + esc(key) + '">' + esc(/^\d{4}$/.test(key) ? t('Todo el año ', 'All year ') + key : seasonLabel(key)) + '</option>').join('') + '</select></label></div><div id="pickList" class="pick-list">' + draw() + '</div><div class="row-actions"><button type="button" class="btn primary" data-act="ok">' + icon('check') + esc(t('Listo', 'Done')) + '</button></div>'});
+ const refresh = () => { $('#pickList', s.el).innerHTML = draw(); };
+ $('#pickQ', s.el).oninput = e => { q = textKey(e.target.value).trim(); refresh(); };
+ $('#pickCourse', s.el).onchange = e => { course = e.target.value; refresh(); };
+ $('#pickSeason', s.el).onchange = e => { season = e.target.value; refresh(); };
  $('#pickList', s.el).onchange = e => { if (e.target.checked) chosen.add(e.target.value); else chosen.delete(e.target.value); };
  $('[data-act=ok]', s.el).onclick = () => { s.close(); const keep = m.items.filter(x => chosen.has(x.dish_id)), have = new Set(keep.map(x => x.dish_id)); done([...keep, ...[...chosen].filter(id => !have.has(id)).map(dish_id => ({dish_id}))]); };
 }
@@ -142,10 +152,23 @@ export function mount(root, params) {
  const patch = async p => { await saveMenu(id, p); repaint(); };
  root.addEventListener('input', e => {
   if (!id) return;
+  if (e.target.dataset.tasting !== undefined) {
+   const index = Number(e.target.dataset.tasting), items = menuById(id)?.items.slice();
+   if (items?.[index]) {
+    items[index] = {...items[index], tasting: e.target.value.slice(0, 1000)};
+    saveMenu(id, {items});
+   }
+  }
   if (e.target.id === 'menuName') saveMenu(id, {name: clip(e.target.value, 120) || t('Menú sin nombre', 'Untitled menu')});
   if (e.target.id === 'menuNotes') saveMenu(id, {notes: e.target.value.slice(0, 4000)});
  });
- root.addEventListener('change', e => { if (id && e.target.id === 'menuKind') patch({kind: e.target.value}); });
+ root.addEventListener('change', e => {
+  if (id && e.target.id === 'menuKind') patch({kind: e.target.value});
+  if (e.target.id === 'menuCompare') {
+   const other = menuById(e.target.value);
+   $('#menuComparison', root).innerHTML = other ? comparison(menuById(id)) + comparison(other) : '';
+  }
+ });
  root.addEventListener('click', async e => {
   const b = e.target.closest('button');
   if (!b) return;
@@ -153,6 +176,22 @@ export function mount(root, params) {
   if (b.dataset.act === 'new') { const made = await createMenu({name: t('Menú nuevo', 'New menu'), kind: 'degustacion'}); go('menus/' + made.id); return; }
   if (b.dataset.restore) { await saveMenu(b.dataset.restore, {deleted_at: null}); repaint(); toast(t('Recuperado.', 'Restored.')); return; }
   if (!m) return;
+  if (b.dataset.act === 'duplicate') {
+   b.disabled = true;
+   const suffix = t(' (prueba)', ' (test)');
+   const made = await createMenu({name: m.name.slice(0, 120 - suffix.length) + suffix, kind: m.kind, notes: m.notes, items: structuredClone(m.items)});
+   go('menus/' + made.id);
+   return;
+  }
+  if (b.dataset.passes) {
+   const on = b.getAttribute('aria-pressed') !== 'true';
+   const passes = b.dataset.passes.split(',').map(Number);
+   $$('[data-passes]', root).forEach(button => button.setAttribute('aria-pressed', button === b && on));
+   const rows = $$('.mrow', root);
+   rows.forEach((row, i) => row.classList.toggle('mrow-highlight', on && passes.includes(i + 1)));
+   if (on) rows[passes[0] - 1]?.focus();
+   return;
+  }
   const items = m.items.slice();
   if (b.dataset.up !== undefined || b.dataset.down !== undefined) {
    const direction = b.dataset.up !== undefined ? 'up' : 'down';

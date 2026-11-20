@@ -24,28 +24,38 @@ function fullText(e) {
  const parts = [e.what, e.history, e.keep, e.pro, ...(e.keys || []), ...(e.uses || []), ...(e.errors || []).flatMap(x => [x.p, x.fix]), ...(e.ratios || []).flatMap(x => [x.use, x.ratio, x.note]), ...(e.variants || []).flatMap(x => [x.name, x.note]), ...(e.base?.items || []).map(x => x[0]), ...(e.base?.steps || [])];
  return norm(plain(parts.join(' ')));
 }
-let cache = null, cacheKey = '';
-function index() {
- const list = entries(), key = list.length + '|' + Object.keys(state.saber || {}).length;
- if (cache && cacheKey === key) return cache;
- cacheKey = key;
- cache = list.map(e => ({e, name: norm(e.name), aka: (e.aka || []).map(norm), summary: norm(plain(e.summary)), body: fullText(e)}));
- return cache;
+const STOP = new Set(['como', 'por', 'que', 'para', 'con', 'sin', 'del', 'los', 'las', 'una', 'unos', 'unas', 'hacer', 'arreglar', 'evitar', 'mi', 'el', 'la', 'de', 'se', 'me', 'en', 'un']);
+const wordList = value => norm(value).split(' ').filter(w => w.length > 1 && !STOP.has(w));
+
+function near(a, b) {
+ if (a === b) return true;
+ if (a.length === b.length) {
+  const first = [...a].findIndex((letter, i) => letter !== b[i]);
+  return a.slice(first + 1) === b.slice(first + 1) ||
+   (a[first] === b[first + 1] && a[first + 1] === b[first] && a.slice(first + 2) === b.slice(first + 2));
+ }
+ if (Math.abs(a.length - b.length) !== 1) return false;
+ const [long, short] = a.length > b.length ? [a, b] : [b, a];
+ const first = [...long].findIndex((letter, i) => letter !== short[i]);
+ return long.slice(first + 1) === short.slice(first);
 }
-// Buscar: primero por nombre, luego otros nombres, luego resumen y, al final, cualquier mención en el texto.
-export function search(q, limit = 40) {
- const words = norm(q).split(' ').filter(w => w.length > 1);
+
+// Las preguntas pueden combinar el nombre con un síntoma de la ficha.
+export function search(q, limit = 40, {category = '', fixes = false} = {}) {
+ const words = wordList(q);
  if (!words.length) return [];
+ const phrase = words.join(' ');
  const out = [];
- for (const x of index()) {
-  let score = 0;
-  const all = [x.name, ...x.aka].join(' ');
-  if (x.name === words.join(' ') || x.aka.includes(words.join(' '))) score += 100;
-  if (words.every(w => x.name.includes(w))) score += 50;
-  else if (words.every(w => all.includes(w))) score += 35;
-  if (words.every(w => x.summary.includes(w))) score += 15;
-  if (words.every(w => x.body.includes(w))) score += 6 + Math.min(6, words.reduce((n, w) => n + (x.body.split(w).length - 1), 0));
-  if (score) out.push({e: x.e, score});
+ for (const e of entries()) {
+  if (category && e.cat !== category) continue;
+  if (fixes && !e.errors?.length) continue;
+  const name = wordList(e.name).join(' '), aliases = (e.aka || []).map(a => wordList(a).join(' '));
+  const names = [name, ...aliases].join(' ');
+  const problems = norm(plain((e.errors || []).map(x => x.p).join(' ')));
+  const summary = norm(plain(e.summary)), body = fixes ? norm(plain((e.errors || []).flatMap(x => [x.p, x.fix]).join(' '))) : fullText(e);
+  const scores = words.map(w => names.includes(w) ? 40 : problems.includes(w) ? 24 : summary.includes(w) ? 12 : body.includes(w) ? 5 : 0);
+  if (scores.every(Boolean)) out.push({e, score: scores.reduce((a, b) => a + b, 0) + ([name, ...aliases].includes(phrase) ? 100 : 0)});
+  else if (!fixes && words.length === 1 && phrase.length >= 5 && names.split(' ').some(w => near(w, phrase))) out.push({e, score: 3});
  }
  return out.sort((a, b) => b.score - a.score || a.e.name.localeCompare(b.e.name, 'es')).slice(0, limit).map(x => x.e);
 }

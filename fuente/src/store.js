@@ -136,7 +136,7 @@ export const menuById = id => state.menus.find(m => m.id === id) || null;
 export const liveMenus = () => state.menus.filter(m => !m.deleted_at).sort((a, b) => String(b.updated_at || '').localeCompare(String(a.updated_at || '')));
 export async function createMenu(fields = {}) {
  const at = new Date().toISOString();
- const row = cleanMenu({id: uid(), name: String(fields.name || '').trim().slice(0, 120) || 'Menú sin nombre', kind: fields.kind, items: arr(fields.items), notes: '', advice: null, created_at: at, updated_at: at, deleted_at: null, version: 1});
+ const row = cleanMenu({id: uid(), name: String(fields.name || '').trim().slice(0, 120) || 'Menú sin nombre', kind: fields.kind, items: arr(fields.items), notes: fields.notes, advice: null, created_at: at, updated_at: at, deleted_at: null, version: 1});
  state.menus.unshift(row); save('menus');
  return row;
 }
