@@ -1,0 +1,14 @@
+{
+  "name": "id-cocina",
+  "private": true,
+  "type": "module",
+  "description": "I+D · Cuaderno de cocina. Código de la app; la app publicada está en la raíz del repositorio.",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node probar.mjs && node probar-ia.mjs && node probar-nuevo.mjs && node probar-mas.mjs && node probar-saber.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.12",
+    "playwright": "^1.49.0"
+  }
+}

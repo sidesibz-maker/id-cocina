@@ -1,5 +1,7 @@
 // I+D, Hoy: la portada. El aviso del día, el resto del radar, la idea del día, los platos en marcha y lo que está de temporada.
 import {inSeason} from '../flavor-core.js';
+import {presetSaber} from './saber.js';
+import {go} from '../nav.js';
 import {t, en, longDate, greeting, dayKey, relDay, monthName} from '../i18n.js';
 import {esc, icon, $, metaRow} from '../ui.js';
 import {state, liveTrends, liveDishes, userName} from '../store.js';
@@ -48,6 +50,7 @@ export function render() {
 
  let html = '<header class="hello"><h1>' + esc(greeting()) + (name ? ', ' + esc(name) : '') + '.</h1>' +
   '<p class="hello-sub">' + esc(longDate().replace(/^./, c => c.toUpperCase()) + '. ') + esc(counts.length ? (counts.join(t(' y ', ' and ')) + '.').replace(/^./, c => c.toUpperCase()) : t('Tu cuaderno de I+D: crea, prueba y afina platos propios.', 'Your R&D notebook: create, test and refine dishes of your own.')) + '</p></header>';
+ html += '<form class="ksearch" id="homeSaber" role="search"><label class="sr" for="homeSaberQ">' + esc(t('Buscar en el Saber', 'Search knowledge')) + '</label><div class="searchbox">' + icon('search') + '<input id="homeSaberQ" type="search" placeholder="' + esc(t('Busca en tu Saber: bechamel, fumet, emulsión…', 'Search your knowledge: béchamel, stock, emulsion…')) + '" autocomplete="off" enterkeyhint="search"></div></form>';
 
  if (top) html += lead(top, day);
  else html += '<div class="cover cover-empty"><span class="kicker">' + esc(t('Radar', 'Radar')) + '</span><span class="cover-title">' + esc(state.loaded ? t('El radar está vacío', 'The radar is empty') : t('Abriendo el radar…', 'Opening the radar…')) + '</span>' +
@@ -81,6 +84,7 @@ export function render() {
 
 export function mount(root) {
  hydrateImages(root);
+ root.addEventListener('submit', e => { if (e.target.id !== 'homeSaber') return; e.preventDefault(); presetSaber(e.target.querySelector('input').value); go('saber'); });
  root.addEventListener('click', e => {
   const b = e.target.closest('[data-adopt]');
   if (!b) return;

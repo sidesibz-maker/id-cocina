@@ -1,0 +1,2433 @@
+[
+  {
+    "id": "fondo-blanco",
+    "name": "Fondo blanco",
+    "aka": [
+      "fondo claro",
+      "caldo blanco",
+      "fond blanc",
+      "fondo blanco de ave",
+      "fondo blanco de ternera",
+      "caldo de pollo"
+    ],
+    "cat": "fondos",
+    "group": "Fondos claros",
+    "summary": "Caldo claro de huesos sin tostar, de ave o de ternera, base neutra de velutés, sopas, arroces y guisos claros.",
+    "what": "Fondo hecho con carcasas o huesos crudos, bien limpios o blanqueados, cocidos muy despacio desde agua fría con [[mirepoix]] blanco y [[bouquet-garni]]. Busca sabor limpio, color pálido y mucha gelatina. De él salen la [[veloute]] y la [[suprema]], el [[consome]] y, reducido, la [[glace]] de ave.",
+    "base": {
+      "for": "5 l aprox. (fondo blanco de ave)",
+      "items": [
+        [
+          "Carcasas, cuellos y alitas de pollo o gallina (para ternera: rodilla, caña y morcillo)",
+          "5 kg"
+        ],
+        [
+          "Patas de pollo limpias (gelatina)",
+          "500 g"
+        ],
+        [
+          "Agua fría",
+          "7 l"
+        ],
+        [
+          "Cebolla",
+          "400 g"
+        ],
+        [
+          "Puerro, parte blanca",
+          "250 g"
+        ],
+        [
+          "Apio",
+          "200 g"
+        ],
+        [
+          "Zanahoria (opcional, poca)",
+          "100 g"
+        ],
+        [
+          "Bouquet garni",
+          "1"
+        ],
+        [
+          "Pimienta blanca en grano",
+          "10 g"
+        ],
+        [
+          "Sal",
+          "nada"
+        ]
+      ],
+      "steps": [
+        "Quitar grasa, restos de vísceras y coágulos. Lavar con agua fría. La ternera se blanquea: cubrir con agua fría, llevar a hervor, escurrir y refrescar.",
+        "Cubrir con el agua fría y subir despacio hasta 85-90 °C, sin llegar a hervir.",
+        "Desespumar a menudo durante los primeros 20-30 minutos.",
+        "Añadir las verduras en trozos de 2-3 cm, el bouquet y la pimienta.",
+        "Mantener a 85-90 °C, con un temblor apenas visible: ave 3-4 h, ternera 6-8 h. Rellenar con agua fría si los huesos quedan al aire.",
+        "Colar con cazo, sin volcar ni apretar, por chino y estameña. Abatir, guardar en cámara y quitar la grasa ya cuajada."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Velouté y suprema",
+        "ratio": "1 kg de carcasa por 1,3-1,5 l de agua, 4 h",
+        "note": "Tiene que cuajar en frío; si no, reducir un 20-30 %."
+      },
+      {
+        "use": "Consomé",
+        "ratio": "Fondo de ave sin zanahoria, desgrasado al máximo",
+        "note": "Cuanto más limpio entre, mejor clarifica."
+      },
+      {
+        "use": "Arroces y fideos de carne",
+        "ratio": "Reducir 1/4 y añadir un hueso de jamón la última hora",
+        "note": "El arroz pide caldo con más sabor que una sopa."
+      },
+      {
+        "use": "Fondo blanco de ternera",
+        "ratio": "1 kg de hueso por 1,5-2 l de agua, 6-8 h",
+        "note": "Blanquear siempre para que no salga gris."
+      }
+    ],
+    "variants": [
+      {
+        "id": null,
+        "name": "Fondo blanco de ternera",
+        "note": "Huesos de ternera blanqueados; cocción larga y sabor más neutro."
+      },
+      {
+        "id": null,
+        "name": "Remojo o segundo caldo",
+        "note": "Los huesos del primer fondo se cuecen otra vez con agua; sirve para mojar el siguiente fondo o para guisos."
+      },
+      {
+        "id": "consome",
+        "name": "Consomé",
+        "note": "Fondo blanco enriquecido y clarificado."
+      }
+    ],
+    "keys": [
+      "Siempre desde agua fría: las proteínas salen poco a poco y suben como espuma que se retira.",
+      "Nunca hervir: la ebullición emulsiona la grasa y enturbia sin remedio.",
+      "Sin sal: el fondo se reduce y se usa en muchas cosas; se sala el plato final.",
+      "Patas, alitas y rodilla dan el colágeno; sin gelatina no hay cuerpo.",
+      "Verduras grandes para cocciones largas; las pequeñas se deshacen y enturbian."
+    ],
+    "errors": [
+      {
+        "p": "Turbio",
+        "fix": "Ha hervido o se ha removido. Úsalo en guisos o clarifícalo con claras como un consomé."
+      },
+      {
+        "p": "Sin cuerpo, no cuaja",
+        "fix": "Poco hueso con colágeno o demasiada agua. Reducir o hacer el siguiente con patas y alitas."
+      },
+      {
+        "p": "Gris y con sabor sucio",
+        "fix": "Ternera sin blanquear o huesos con sangre. Blanquear y lavar bien."
+      }
+    ],
+    "history": "Los fondos son la base sobre la que la cocina clásica francesa ordenó sus salsas. En la cocina española cumplen un papel parecido el caldo del cocido y el de gallina. Hoy se hacen más concentrados y se ligan menos con harina.",
+    "uses": [
+      "Velouté y suprema",
+      "Sopas y cremas",
+      "Arroces de carne y de verduras",
+      "Guisos claros",
+      "Consomé",
+      "Glace de ave"
+    ],
+    "keep": "Abatir de 60 °C a menos de 10 °C en menos de 2 horas. En cámara a 0-4 °C, 3-4 días con la capa de grasa encima; congelado, 3 meses. Antes de usar, llevar a hervor.",
+    "pro": "Ponerlo a fuego mínimo o en marmita con control de temperatura al acabar el servicio y colar por la mañana. Porcionar en bolsas planas de 1 l o en cubiteras y etiquetar con tipo y fecha.",
+    "related": [
+      "veloute",
+      "suprema",
+      "consome",
+      "glace",
+      "mirepoix",
+      "bouquet-garni",
+      "fondo-oscuro",
+      "alemana"
+    ]
+  },
+  {
+    "id": "fondo-oscuro",
+    "name": "Fondo oscuro",
+    "aka": [
+      "fondo oscuro de ternera",
+      "fondo de vaca",
+      "fond brun",
+      "fondo tostado",
+      "caldo oscuro"
+    ],
+    "cat": "fondos",
+    "group": "Fondos oscuros",
+    "summary": "Fondo de huesos de ternera o vaca tostados con verduras y tomate, base de las salsas oscuras, los jugos y la glace.",
+    "what": "Huesos de ternera o vaca tostados en el horno, con [[mirepoix]] dorado y tomate tostado, mojados con agua fría y cocidos muchas horas sin hervir. El tostado aporta color y sabor a asado; los cartílagos, la gelatina. Es la base de la [[espanola]], la [[demi-glace]], el [[jugo-de-carne]] y la [[glace]] de carne.",
+    "base": {
+      "for": "5 l aprox.",
+      "items": [
+        [
+          "Huesos de ternera troceados (rodilla, caña, cola)",
+          "5 kg"
+        ],
+        [
+          "Recortes de carne o morcillo",
+          "500 g"
+        ],
+        [
+          "Agua fría",
+          "8 l"
+        ],
+        [
+          "Cebolla",
+          "500 g"
+        ],
+        [
+          "Zanahoria",
+          "300 g"
+        ],
+        [
+          "Apio",
+          "200 g"
+        ],
+        [
+          "Puerro",
+          "200 g"
+        ],
+        [
+          "Ajo, cabeza partida",
+          "1"
+        ],
+        [
+          "Tomate concentrado",
+          "100 g"
+        ],
+        [
+          "Tomate maduro",
+          "300 g"
+        ],
+        [
+          "Vino tinto (opcional)",
+          "300 ml"
+        ],
+        [
+          "Bouquet garni y pimienta negra en grano",
+          "1 y 10 g"
+        ]
+      ],
+      "steps": [
+        "Tostar los huesos en una sola capa a 200-220 °C, 45-60 minutos, dándoles la vuelta, hasta marrón dorado. Negro es amargo.",
+        "Añadir las verduras en trozos de 4-5 cm los últimos 20-30 minutos y dorarlas.",
+        "Untar el tomate concentrado por encima y tostarlo 5-10 minutos, hasta que pierda el rojo vivo.",
+        "Pasar todo a la marmita sin la grasa. Desglasar la bandeja con el vino o agua, raspando, y añadirlo.",
+        "Cubrir con el agua fría, subir a 85-90 °C, desespumar y poner el bouquet y el tomate fresco.",
+        "Cocer 6-8 horas sin hervir, desespumando y desgrasando. Colar sin apretar, abatir y desgrasar en frío."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Demi-glace o media glasa",
+        "ratio": "Reducir a la mitad o a un tercio",
+        "note": "Con o sin [[espanola]], según la escuela."
+      },
+      {
+        "use": "Glace de carne",
+        "ratio": "Reducir a 1/10",
+        "note": "Ver [[glace]]."
+      },
+      {
+        "use": "Rabo, carrillera, guisos",
+        "ratio": "Fondo sin reducir como mojado",
+        "note": "El guiso ya concentra en la cocción."
+      },
+      {
+        "use": "Jugo de cordero o pichón",
+        "ratio": "Fondo a medio reducir para mojar los recortes tostados",
+        "note": "Ver [[jugo-de-carne]]."
+      },
+      {
+        "use": "Fondo oscuro de ave (rápido)",
+        "ratio": "Alitas tostadas, 1 kg por 1,2 l, 3-4 h",
+        "note": "Para jugos de ave y salsas de carne blanca."
+      }
+    ],
+    "variants": [
+      {
+        "id": null,
+        "name": "Fondo oscuro de ave",
+        "note": "Carcasas y alitas tostadas; más corto y ligero."
+      },
+      {
+        "id": null,
+        "name": "Fondo de cordero",
+        "note": "Huesos de cordero tostados, 4-5 h; ajo y romero."
+      },
+      {
+        "id": null,
+        "name": "Fondo de caza",
+        "note": "Huesos de caza, enebro y vino tinto; para salsas de venado o jabalí."
+      },
+      {
+        "id": "espanola",
+        "name": "Española",
+        "note": "Fondo oscuro ligado con roux oscuro."
+      },
+      {
+        "id": "demi-glace",
+        "name": "Demi-glace",
+        "note": "Fondo oscuro reducido, con o sin española."
+      }
+    ],
+    "keys": [
+      "El sabor está en el tostado, pero quemado amarga todo el fondo: mejor dorado oscuro que negro.",
+      "Retirar la grasa de la bandeja antes de pasar los huesos.",
+      "Tostar el tomate concentrado quita acidez y da color.",
+      "Pedir rodilla, cola y manos de ternera: el cartílago es el que da cuerpo.",
+      "Sin sal, porque casi siempre se reduce."
+    ],
+    "errors": [
+      {
+        "p": "Amargo",
+        "fix": "Huesos, verduras o tomate quemados. No tiene arreglo; descartar la parte quemada antes de mojar."
+      },
+      {
+        "p": "Turbio y graso",
+        "fix": "Ha hervido. Desgrasar en frío y usarlo para guisos; para salsa fina, colar por estameña tras reposar."
+      },
+      {
+        "p": "Sin cuerpo",
+        "fix": "Faltan cartílagos. Añadir manos de ternera o cerdo en la siguiente tanda, o reducir."
+      },
+      {
+        "p": "Ácido",
+        "fix": "Exceso de tomate o vino sin reducir. Reducir el vino antes de mojar."
+      }
+    ],
+    "history": "Es una pieza central de la cocina clásica francesa, base de casi todas sus salsas oscuras. Hoy se liga menos con harina y se usa sobre todo reducido, para jugos y salsas concentradas.",
+    "uses": [
+      "Demi-glace y salsas oscuras",
+      "Jugos de asado",
+      "Glace de carne",
+      "Guisos de rabo y carrillera",
+      "Arroces de carne"
+    ],
+    "keep": "Abatir rápido y guardar en cámara a 0-4 °C, 4-5 días con la grasa encima. Congelado, 3 meses. Hervir antes de usar.",
+    "pro": "Tostar en varias bandejas para no amontonar: amontonado se cuece en vez de tostarse. Lo ideal es dejarlo toda la noche a fuego mínimo o en horno a 90-95 °C con la marmita tapada a medias. Porcionar parte sin reducir en bolsas de 1 l y parte reducido en cubiteras.",
+    "related": [
+      "espanola",
+      "demi-glace",
+      "glace",
+      "jugo-de-carne",
+      "mirepoix",
+      "bouquet-garni",
+      "reducciones",
+      "fondo-blanco"
+    ]
+  },
+  {
+    "id": "fumet",
+    "name": "Fumet",
+    "aka": [
+      "fumet de pescado",
+      "caldo de pescado",
+      "fondo de pescado",
+      "fumé"
+    ],
+    "cat": "fondos",
+    "group": "Fondos de mar",
+    "summary": "Fondo rápido de espinas y cabezas de pescado blanco, base de arroces, suquets, sopas y salsas de pescado.",
+    "what": "Fondo corto hecho con espinas y cabezas de pescado blanco, limpias de agallas y sangre, sudadas con verdura en lámina fina, con vino blanco y agua, y cocidas solo 20-30 minutos. Ligado da la [[veloute]] de pescado; es el mojado de arroces, fideuás y guisos marineros, y de salsas como la [[salsa-verde]].",
+    "base": {
+      "for": "4 l aprox.",
+      "items": [
+        [
+          "Espinas y cabezas de pescado blanco (rape, merluza, rodaballo, gallo, lubina, dorada)",
+          "4 kg"
+        ],
+        [
+          "Agua fría",
+          "4,5 l"
+        ],
+        [
+          "Cebolla en lámina fina",
+          "250 g"
+        ],
+        [
+          "Puerro en lámina fina",
+          "200 g"
+        ],
+        [
+          "Hinojo o apio en lámina",
+          "150 g"
+        ],
+        [
+          "Vino blanco seco",
+          "300 ml"
+        ],
+        [
+          "Tallos de perejil",
+          "1 manojo"
+        ],
+        [
+          "Laurel",
+          "1 hoja"
+        ],
+        [
+          "Pimienta blanca en grano",
+          "5 g"
+        ],
+        [
+          "Aceite de oliva o mantequilla",
+          "40 g"
+        ]
+      ],
+      "steps": [
+        "Quitar agallas y la sangre del espinazo. Desangrar las espinas en agua con hielo 30-60 minutos, cambiando el agua.",
+        "Sudar la verdura en el aceite 5 minutos sin color. Añadir las espinas escurridas y sudar 3-4 minutos más.",
+        "Mojar con el vino y reducir a la mitad.",
+        "Añadir el agua fría, llevar a un hervor muy suave y desespumar. Poner perejil, laurel y pimienta.",
+        "Cocer 20-30 minutos a fuego mínimo, no más.",
+        "Apartar, reposar 10 minutos y colar con cazo por estameña sin aplastar. Abatir enseguida."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Arroces y fideuá",
+        "ratio": "Reducir 1/3 tras colar o mojar con fumet en vez de agua",
+        "note": "Se suele reforzar con sofrito y ñora."
+      },
+      {
+        "use": "Suquet, bullit, guisos",
+        "ratio": "Fumet base, 1 kg de espina por litro",
+        "note": "Lo concentra la propia cocción del guiso."
+      },
+      {
+        "use": "Velouté y salsa al vino blanco",
+        "ratio": "Reducir a la mitad y ligar con [[roux]] blanco",
+        "note": "Terminar con nata o mantequilla."
+      },
+      {
+        "use": "Escalfar pescado",
+        "ratio": "Fumet ligero, sin reducir",
+        "note": "Luego se reduce el líquido de cocción para la salsa."
+      },
+      {
+        "use": "Caldo de roca o morralla",
+        "ratio": "Pescado de roca entero dorado con sofrito, 30-40 minutos",
+        "note": "Más intenso y coloreado; triturar y colar."
+      }
+    ],
+    "variants": [
+      {
+        "id": null,
+        "name": "Caldo de roca o de morralla",
+        "note": "Pescado pequeño de roca tostado con tomate, ajo y ñora; para arroces."
+      },
+      {
+        "id": null,
+        "name": "Fumet de vino tinto",
+        "note": "Con tinto en lugar de blanco; para pescados con salsa de carne."
+      },
+      {
+        "id": "fondo-de-marisco",
+        "name": "Fondo de marisco",
+        "note": "Cabezas y caparazones de crustáceos tostados."
+      },
+      {
+        "id": "dashi",
+        "name": "Dashi",
+        "note": "Caldo japonés de mar, de infusión rápida."
+      }
+    ],
+    "keys": [
+      "Solo pescado blanco y no graso: caballa, sardina o salmón dan un caldo fuerte y aceitoso.",
+      "Pasados 30 minutos el fumet se vuelve pegajoso y amargo.",
+      "Verdura en lámina fina, porque solo cuece media hora.",
+      "Sin agallas ni sangre: son las que amargan y oscurecen.",
+      "Colar sin presionar; el pescado aplastado enturbia."
+    ],
+    "errors": [
+      {
+        "p": "Amargo o gris",
+        "fix": "Agallas, sangre o cocción larga. Limpiar y desangrar, y respetar los 30 minutos."
+      },
+      {
+        "p": "Turbio",
+        "fix": "Hervor fuerte o espinas aplastadas al colar. Reposar y colar por estameña."
+      },
+      {
+        "p": "Olor fuerte",
+        "fix": "Espinas viejas o de pescado graso. Usar espinas del día."
+      },
+      {
+        "p": "Sin sabor",
+        "fix": "Demasiada agua. Reducir o aumentar la espina en la siguiente tanda."
+      }
+    ],
+    "history": "El fumet viene de la cocina clásica francesa como fondo corto de pescado. En el litoral mediterráneo cumplen esa función los caldos de pescado de roca de los arroces y guisos marineros, que suelen ser más intensos y llevan sofrito.",
+    "uses": [
+      "Arroces y fideuá",
+      "Suquet y guisos de pescado",
+      "Salsa verde",
+      "Velouté de pescado",
+      "Sopas de pescado",
+      "Escalfados"
+    ],
+    "keep": "Abatir enseguida. En cámara a 0-4 °C, 2 días como máximo. Congelado, 2-3 meses. Hervir antes de usar.",
+    "pro": "Hacerlo cada mañana con las espinas del despiece del día; las que no se usen se congelan limpias y desangradas. Porcionar en bolsas de 1-2 l para arroces y en cubiteras para salsas.",
+    "related": [
+      "fondo-de-marisco",
+      "veloute",
+      "salsa-verde",
+      "sofrito",
+      "picada",
+      "mirepoix",
+      "bouquet-garni",
+      "pil-pil"
+    ]
+  },
+  {
+    "id": "fondo-de-marisco",
+    "name": "Fondo de marisco",
+    "aka": [
+      "caldo de marisco",
+      "fumet de marisco",
+      "fondo de crustáceos",
+      "caldo de cabezas",
+      "caldo de gamba"
+    ],
+    "cat": "fondos",
+    "group": "Fondos de mar",
+    "summary": "Fondo de cabezas y caparazones de crustáceos tostados con sofrito y brandy, para arroces, bisques y salsa americana.",
+    "what": "Se tuestan en aceite cabezas y caparazones de gamba, carabinero, cigala o cangrejo, se añaden verduras, tomate y ñora, se flambea y se moja con agua o [[fumet]]. Cuece poco, 30-40 minutos. Es la base de los arroces de marisco, de la [[salsa-americana]] y de las bisques, y con las mismas cabezas se hace aceite de marisco ([[aceites-aromatizados]]).",
+    "base": {
+      "for": "3 l aprox.",
+      "items": [
+        [
+          "Cabezas y caparazones de gamba, cigala o cangrejo",
+          "2 kg"
+        ],
+        [
+          "Aceite de oliva",
+          "100 ml"
+        ],
+        [
+          "Cebolla",
+          "300 g"
+        ],
+        [
+          "Zanahoria",
+          "150 g"
+        ],
+        [
+          "Puerro",
+          "150 g"
+        ],
+        [
+          "Hinojo",
+          "100 g"
+        ],
+        [
+          "Ajo, cabeza partida",
+          "1"
+        ],
+        [
+          "Tomate maduro rallado",
+          "400 g"
+        ],
+        [
+          "Tomate concentrado",
+          "40 g"
+        ],
+        [
+          "Ñoras hidratadas, la pulpa",
+          "2"
+        ],
+        [
+          "Brandy",
+          "100 ml"
+        ],
+        [
+          "Vino blanco",
+          "200 ml"
+        ],
+        [
+          "Agua fría o fumet",
+          "4 l"
+        ],
+        [
+          "Estragón o tallos de perejil, laurel",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Saltear las cabezas en el aceite muy caliente 8-10 minutos, aplastándolas para soltar el jugo, hasta rojo intenso con puntos tostados.",
+        "Añadir la verdura en dados de 1 cm y rehogar 8-10 minutos.",
+        "Añadir el concentrado, el tomate y la ñora, y cocinar 5 minutos.",
+        "Flambear con el brandy, mojar con el vino y reducir casi a seco.",
+        "Cubrir con el agua o fumet frío, hervor suave, desespumar y cocer 30-40 minutos.",
+        "Pasar por pasapurés o triturar a golpes cortos para sacar el jugo de las cabezas, y colar por chino y estameña."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Arroz de marisco y paella",
+        "ratio": "Caldo reducido a 2/3, salado ligeramente",
+        "note": "La cantidad por arroz depende del grano y la paella; probar siempre."
+      },
+      {
+        "use": "Fideuá",
+        "ratio": "Caldo más concentrado que para arroz",
+        "note": "El fideo absorbe menos y se cuece antes."
+      },
+      {
+        "use": "Salsa americana",
+        "ratio": "Reducir a la mitad y ligar",
+        "note": "Ver [[salsa-americana]]."
+      },
+      {
+        "use": "Bisque y cremas",
+        "ratio": "Triturar las cabezas en el caldo, colar y ligar con arroz o nata",
+        "note": "Pasar por estameña para que no quede arenoso."
+      },
+      {
+        "use": "Mojar un guiso de pescado",
+        "ratio": "Mitad fondo de marisco, mitad [[fumet]]",
+        "note": "Da color y sabor sin tapar el pescado."
+      }
+    ],
+    "variants": [
+      {
+        "id": "salsa-americana",
+        "name": "Salsa americana",
+        "note": "Salsa de crustáceos con tomate, brandy y estragón."
+      },
+      {
+        "id": null,
+        "name": "Bisque",
+        "note": "Crema de crustáceo triturado y colado, ligada."
+      },
+      {
+        "id": null,
+        "name": "Caldo de galeras o cangrejo",
+        "note": "Crustáceo pequeño triturado en crudo; muy sabroso y barato."
+      },
+      {
+        "id": "aceites-aromatizados",
+        "name": "Aceite de marisco",
+        "note": "Cabezas tostadas confitadas en aceite."
+      }
+    ],
+    "keys": [
+      "El sabor está en el tostado de las cabezas y en el jugo que sueltan al aplastarlas.",
+      "No cocer más de 40-45 minutos: el caparazón da amargor y sabor terroso.",
+      "Mojar con fumet en vez de agua da un caldo mucho más redondo.",
+      "Congelar las cabezas crudas el mismo día que se pela el marisco y juntarlas hasta tener una tanda.",
+      "Colar dos veces: chino y luego estameña."
+    ],
+    "errors": [
+      {
+        "p": "Amargo",
+        "fix": "Cabezas o ajo quemados, o cocción larga. Tostar sin negro y respetar el tiempo."
+      },
+      {
+        "p": "Sin color",
+        "fix": "Poco tostado o poco tomate. Tostar más y pinchar bien el concentrado."
+      },
+      {
+        "p": "Arenoso",
+        "fix": "Restos de caparazón. Colar por estameña fina."
+      },
+      {
+        "p": "Olor a amoniaco",
+        "fix": "Cabezas viejas. No tiene arreglo; descartar."
+      }
+    ],
+    "history": "Los caldos de cabezas de marisco son tradicionales en los arroces del litoral mediterráneo, y la cocina francesa los convirtió en bisques y salsas como la americana. Hoy se usan mucho para dar sabor de marisco a arroces y salsas sin gastar el marisco entero.",
+    "uses": [
+      "Arroces de marisco",
+      "Fideuá",
+      "Salsa americana",
+      "Bisques y cremas",
+      "Guisos de pescado",
+      "Aceite de marisco"
+    ],
+    "keep": "Las cabezas se estropean muy rápido: usarlas o congelarlas el mismo día. El caldo, abatido, aguanta 2 días a 0-4 °C y 3 meses congelado. Hervir antes de usar.",
+    "pro": "Hacer tandas grandes con las cabezas congeladas de la semana y porcionar en bolsas por número de raciones de arroz. Usar sartenes anchas o la propia paella para tostar sin amontonar.",
+    "related": [
+      "fumet",
+      "salsa-americana",
+      "sofrito",
+      "picada",
+      "aceites-aromatizados",
+      "reducciones"
+    ]
+  },
+  {
+    "id": "caldo-de-verduras",
+    "name": "Caldo de verduras",
+    "aka": [
+      "fondo de verduras",
+      "caldo vegetal",
+      "fondo vegetal",
+      "court-bouillon"
+    ],
+    "cat": "fondos",
+    "group": "Fondos claros",
+    "summary": "Caldo corto de verduras aromáticas y hierbas, base de risottos, cremas, platos vegetales y cocciones de pescado.",
+    "what": "Infusión de verduras aromáticas, [[mirepoix]] con puerro, hinojo y algo de tomate o setas, cocidas menos de una hora y reposadas con hierbas. Es el mojado neutro de la cocina vegetal y, con vino y vinagre, el court-bouillon para escalfar pescado y marisco. Con kombu o setas secas gana el umami que le suele faltar (ver [[dashi]]).",
+    "base": {
+      "for": "3 l aprox.",
+      "items": [
+        [
+          "Agua fría",
+          "4 l"
+        ],
+        [
+          "Cebolla",
+          "400 g"
+        ],
+        [
+          "Puerro",
+          "300 g"
+        ],
+        [
+          "Zanahoria",
+          "300 g"
+        ],
+        [
+          "Apio",
+          "200 g"
+        ],
+        [
+          "Hinojo",
+          "150 g"
+        ],
+        [
+          "Champiñón o recortes de setas",
+          "200 g"
+        ],
+        [
+          "Tomate maduro",
+          "200 g"
+        ],
+        [
+          "Ajo",
+          "4 dientes"
+        ],
+        [
+          "Tallos de perejil, tomillo, laurel, pimienta en grano",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Lavar y cortar en dados de 1-2 cm o en lámina gruesa.",
+        "Opcional: sudar en un poco de aceite 10 minutos sin color para más sabor.",
+        "Cubrir con el agua fría, llevar a hervor suave y cocer 40 minutos, sin pasar de una hora.",
+        "Apartar del fuego, añadir las hierbas tiernas y dejar infusionar 10-15 minutos.",
+        "Colar sin aplastar y abatir."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Risotto y arroces de verduras",
+        "ratio": "Caldo base + setas secas 10 g por litro",
+        "note": "Sin coles ni remolacha, que tiñen y dominan."
+      },
+      {
+        "use": "Caldo oscuro de verduras",
+        "ratio": "Verduras tostadas a 200 °C 30-40 minutos antes de mojar",
+        "note": "Para jugos vegetales y guisos de legumbre."
+      },
+      {
+        "use": "Court-bouillon para pescado y marisco",
+        "ratio": "Caldo + 10 % de vino blanco o 3-5 % de vinagre, sal 10-15 g por litro",
+        "note": "Cocer 20-30 minutos antes de meter el pescado."
+      },
+      {
+        "use": "Cremas de verdura",
+        "ratio": "Caldo ligero hecho con los recortes de la misma verdura",
+        "note": "Refuerza el sabor principal."
+      }
+    ],
+    "variants": [
+      {
+        "id": null,
+        "name": "Court-bouillon",
+        "note": "Caldo corto ácido y salado para escalfar."
+      },
+      {
+        "id": null,
+        "name": "Caldo de verduras tostadas",
+        "note": "Más color y sabor; sustituye a un fondo oscuro en cocina vegetal."
+      },
+      {
+        "id": null,
+        "name": "Caldo de setas",
+        "note": "Setas frescas y secas; muy sabroso para arroces y risottos."
+      },
+      {
+        "id": "dashi",
+        "name": "Dashi de kombu",
+        "note": "Infusión de alga, aporta umami sin pescado."
+      }
+    ],
+    "keys": [
+      "Más de una hora no mejora: la verdura se pasa y amarga.",
+      "Fuera coles, brócoli, alcachofa y remolacha salvo que se busque ese sabor.",
+      "La patata enturbia; reservarla para cremas.",
+      "Aprovechar recortes limpios de la partida, nunca restos viejos.",
+      "Sin sal, salvo el court-bouillon."
+    ],
+    "errors": [
+      {
+        "p": "Amargo o con olor a azufre",
+        "fix": "Coles o cocción larga. Sacar las crucíferas y cortar a los 40 minutos."
+      },
+      {
+        "p": "Plano",
+        "fix": "Falta umami. Añadir setas secas, tomate o kombu, o tostar parte de la verdura."
+      },
+      {
+        "p": "Dulzón",
+        "fix": "Demasiada zanahoria o hinojo. Equilibrar con apio y puerro."
+      },
+      {
+        "p": "Turbio",
+        "fix": "Hervor fuerte o patata. Hervor suave y colar sin aplastar."
+      }
+    ],
+    "history": "Los caldos de verdura existen en todas las cocinas, y el court-bouillon es la versión clásica francesa para cocer pescado. Han ganado peso con la cocina vegetal, que pide caldos con más sabor que el simple hervido de verduras.",
+    "uses": [
+      "Risotto",
+      "Arroces de verduras",
+      "Cremas y sopas",
+      "Guisos de legumbre",
+      "Escalfar pescado y marisco",
+      "Platos veganos"
+    ],
+    "keep": "Abatir y guardar a 0-4 °C, 3 días. Congelado, 3 meses.",
+    "pro": "Juntar durante el día los recortes limpios en un gastronorm en cámara y hacer el caldo por la tarde. Porcionar en bolsas de 1 l.",
+    "related": [
+      "mirepoix",
+      "bouquet-garni",
+      "dashi",
+      "fondo-blanco",
+      "fumet"
+    ]
+  },
+  {
+    "id": "dashi",
+    "name": "Dashi",
+    "aka": [
+      "caldo dashi",
+      "ichiban dashi",
+      "awase dashi",
+      "caldo de kombu y bonito"
+    ],
+    "cat": "fondos",
+    "group": "Fondos de mar",
+    "summary": "Caldo japonés de alga kombu y bonito seco ahumado, de infusión corta y mucho umami.",
+    "what": "Es más una infusión que un fondo: el alga kombu se calienta despacio en agua y después se infusionan las virutas de bonito seco ahumado (katsuobushi). Kombu y bonito se refuerzan entre sí y dan un umami muy limpio. El primer caldo es para sopas y salsas finas; los restos dan un segundo caldo para cocciones. Combina bien con pescado y marisco, también a la brasa.",
+    "base": {
+      "for": "1 l",
+      "items": [
+        [
+          "Agua blanda o mineral de mineralización débil",
+          "1,1 l"
+        ],
+        [
+          "Alga kombu",
+          "15-20 g"
+        ],
+        [
+          "Katsuobushi (bonito seco en virutas)",
+          "20-30 g"
+        ]
+      ],
+      "steps": [
+        "Limpiar la kombu con un paño húmedo sin lavarla: el polvo blanco es sabor.",
+        "Remojarla en el agua fría, de 30 minutos a toda la noche en cámara.",
+        "Calentar despacio y retirar la kombu justo antes de que hierva, hacia 80 °C. Otra opción: mantenerla a 60 °C durante 1 hora y retirarla.",
+        "Llevar el agua a unos 85 °C, apartar, echar el bonito y dejarlo 2-3 minutos, hasta que se hunda.",
+        "Colar por estameña sin apretar."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Sopa de miso",
+        "ratio": "Primer dashi, 60-80 g de miso por litro",
+        "note": "Desleír el miso fuera del fuego; si hierve pierde aroma."
+      },
+      {
+        "use": "Guisos y cocciones",
+        "ratio": "Segundo dashi: restos + 500 ml de agua, 10-15 minutos de hervor suave",
+        "note": "Más fuerte y menos fino."
+      },
+      {
+        "use": "Cocina vegetal",
+        "ratio": "Solo kombu y 2-3 setas shiitake secas por litro, en frío 8-12 h",
+        "note": "Sin pescado."
+      },
+      {
+        "use": "Salsas tipo tsuyu o ponzu",
+        "ratio": "Dashi con soja y mirin, o con cítrico",
+        "note": "Proporciones según uso; probar."
+      },
+      {
+        "use": "Arroces y pescado a la brasa",
+        "ratio": "Dashi como mojado o para bañar el pescado al servir",
+        "note": "Da fondo marino sin tapar el humo."
+      }
+    ],
+    "variants": [
+      {
+        "id": null,
+        "name": "Segundo dashi (niban)",
+        "note": "Segunda extracción de los mismos restos."
+      },
+      {
+        "id": null,
+        "name": "Kombu dashi",
+        "note": "Solo alga; vegano."
+      },
+      {
+        "id": null,
+        "name": "Dashi de shiitake",
+        "note": "Setas secas, a menudo junto a la kombu."
+      },
+      {
+        "id": null,
+        "name": "Dashi de sardinitas secas (niboshi)",
+        "note": "Más intenso, para miso y guisos."
+      }
+    ],
+    "keys": [
+      "La kombu no debe hervir: se vuelve viscosa y amarga.",
+      "El bonito no se aprieta al colar: enturbia y amarga.",
+      "Agua blanda: la dura extrae peor.",
+      "Se hace en el día; pierde aroma enseguida.",
+      "Salar poco o nada: suele acompañar soja o miso."
+    ],
+    "errors": [
+      {
+        "p": "Viscoso y con sabor fuerte a alga",
+        "fix": "La kombu ha hervido. Retirarla antes."
+      },
+      {
+        "p": "Turbio o ahumado agresivo",
+        "fix": "Bonito exprimido o cocido. Infusionar fuera del fuego y colar sin apretar."
+      },
+      {
+        "p": "Insípido",
+        "fix": "Poca kombu, poco bonito o agua dura. Aumentar y cambiar de agua."
+      }
+    ],
+    "history": "Es la base de la cocina japonesa desde hace siglos. A principios del siglo XX un químico japonés identificó en la kombu el glutamato y dio nombre al umami, el sabor que define este caldo.",
+    "uses": [
+      "Sopa de miso",
+      "Caldos y fideos japoneses",
+      "Cocción de verduras y pescado",
+      "Salsas con soja y cítrico",
+      "Arroces de pescado"
+    ],
+    "keep": "En cámara a 0-4 °C, 2-3 días, pero lo mejor es el mismo día. Se puede congelar, aunque pierde aroma.",
+    "pro": "Dejar la kombu en remojo en frío la noche anterior en la cubeta del día y terminar el bonito al empezar el servicio. Los restos se aprovechan para el segundo dashi del personal o de cocciones.",
+    "related": [
+      "fumet",
+      "caldo-de-verduras",
+      "consome",
+      "marinada",
+      "fondo-de-marisco"
+    ]
+  },
+  {
+    "id": "jugo-de-carne",
+    "name": "Jugo de carne",
+    "aka": [
+      "jus",
+      "jugo de asado",
+      "jugo de cordero",
+      "jugo de pichón",
+      "jugo corto",
+      "jugo de ave"
+    ],
+    "cat": "fondos",
+    "group": "Jugos y glasas",
+    "summary": "Salsa corta de los recortes tostados del mismo animal, mojados con fondo y reducidos, sin harina; el acompañamiento natural de la brasa.",
+    "what": "Se tuestan huesos y recortes de la pieza que se va a servir, se desglasa y se moja con [[fondo-oscuro]] o fondo de ave en varias veces, reduciendo cada vez, hasta tener una salsa brillante que napa ligeramente. Es más directo y ligero que la [[demi-glace]]. La brasa no deja fondo de sartén: el jugo se hace aparte, y la parrilla sirve para tostar los recortes y dar el jugo del reposo.",
+    "base": {
+      "for": "500 ml (12-15 raciones de 30-40 ml)",
+      "items": [
+        [
+          "Huesos y recortes del animal troceados a 3-4 cm (cordero, pichón, ave, ternera)",
+          "1,5 kg"
+        ],
+        [
+          "Aceite de oliva",
+          "50 ml"
+        ],
+        [
+          "Mantequilla",
+          "50 g"
+        ],
+        [
+          "Chalota en láminas",
+          "150 g"
+        ],
+        [
+          "Ajo con piel, aplastado",
+          "6 dientes"
+        ],
+        [
+          "Tomillo y romero",
+          "unas ramas"
+        ],
+        [
+          "Vino blanco o tinto",
+          "200 ml"
+        ],
+        [
+          "Fondo oscuro o fondo de ave",
+          "2 l"
+        ],
+        [
+          "Mantequilla fría para terminar",
+          "30-50 g"
+        ],
+        [
+          "Sal y unas gotas de vinagre de jerez",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Tostar los recortes con el aceite en una cocotte ancha a fuego fuerte 15-20 minutos, removiendo poco, hasta dorado intenso. También se pueden tostar en la parrilla o en el horno a 200 °C.",
+        "Quitar el exceso de grasa, añadir la mantequilla, la chalota, el ajo y las hierbas y rehogar 5 minutos.",
+        "Desglasar con el vino, raspando, y reducir hasta que glasee.",
+        "Mojar con un vaso de fondo y reducir a glaseado; repetir dos o tres veces y añadir el resto. Cocer suave 45-60 minutos (pichón y ave, 30-40).",
+        "Colar por chino apretando poco, desgrasar y reducir a punto de napa ligera.",
+        "Al pase: añadir el jugo del reposo de la pieza, montar con mantequilla fría y ajustar sal y acidez."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Cordero y cabrito a la brasa",
+        "ratio": "Recortes de cordero + fondo oscuro, romero y ajo",
+        "note": "Una anchoa en el tostado refuerza."
+      },
+      {
+        "use": "Pichón y caza",
+        "ratio": "Carcasas tostadas + fondo oscuro; ligar al final con el hígado triturado, fuera del fuego",
+        "note": "No dejar hervir después de ligar."
+      },
+      {
+        "use": "Vaca y chuletón",
+        "ratio": "Jugo de ternera reducido + grasa de la propia vaca derretida en la brasa",
+        "note": "Servir al lado, no encima de la costra."
+      },
+      {
+        "use": "Ligado rápido",
+        "ratio": "5-10 g de fécula por litro, desleída en frío",
+        "note": "Solo si no hay tiempo de reducir; ver [[ligazones]]."
+      }
+    ],
+    "variants": [
+      {
+        "id": null,
+        "name": "Jugo de cordero",
+        "note": "Con romero, ajo y a veces anchoa."
+      },
+      {
+        "id": null,
+        "name": "Jugo de pichón",
+        "note": "Corto, ligado con hígado; muy intenso."
+      },
+      {
+        "id": null,
+        "name": "Jugo de ave asada",
+        "note": "Alitas y fondo de ave; claro y ligero."
+      },
+      {
+        "id": "demi-glace",
+        "name": "Demi-glace",
+        "note": "Salsa oscura más concentrada y neutra."
+      }
+    ],
+    "keys": [
+      "Mojar en varias veces y reducir a glaseado entre ellas da color y profundidad.",
+      "El jugo del reposo de la carne es oro: recogerlo de la tabla y añadirlo al cazo.",
+      "Tostar recortes en la brasa aporta humo al jugo y lo une con el plato.",
+      "Unas gotas de vinagre o cítrico levantan un jugo pesado."
+    ],
+    "errors": [
+      {
+        "p": "Demasiado ligero",
+        "fix": "Reducir más o añadir un poco de [[glace]]."
+      },
+      {
+        "p": "Pega en los labios",
+        "fix": "Sobrerreducido. Aflojar con fondo o un poco de agua."
+      },
+      {
+        "p": "Graso",
+        "fix": "Desgrasar con cazo y papel; montar la mantequilla solo al final."
+      }
+    ],
+    "history": "El jugo es la salsa más sencilla de un asado en la cocina francesa. Desde finales del siglo XX los restaurantes han ido cambiando las salsas ligadas con harina por jugos y reducciones más ligeros.",
+    "uses": [
+      "Cordero y cabrito a la brasa",
+      "Pichón y caza",
+      "Pollo asado",
+      "Carnes rojas"
+    ],
+    "keep": "Abatir y guardar a 0-4 °C, 4-5 días; congelado, 3 meses. Regenerar a fuego suave y montar de nuevo.",
+    "pro": "Tener el jugo reducido en cazo pequeño al baño maría a 70-80 °C, tapado, y montar solo lo que se sirve. Guardar congelados los recortes de cada despiece, por especie, para el jugo de esa carne.",
+    "related": [
+      "fondo-oscuro",
+      "glace",
+      "demi-glace",
+      "reducciones",
+      "ligazones",
+      "mantequillas-compuestas",
+      "mantequilla-noisette"
+    ]
+  },
+  {
+    "id": "glace",
+    "name": "Glace",
+    "aka": [
+      "glasa",
+      "glace de viande",
+      "glasa de carne",
+      "glace de ave",
+      "media glasa"
+    ],
+    "cat": "fondos",
+    "group": "Jugos y glasas",
+    "summary": "Fondo reducido hasta jarabe espeso que cuaja duro en frío; concentrado para reforzar salsas y jugos.",
+    "what": "Es un fondo bien desgrasado reducido a una décima parte, hasta que tiene textura de jarabe y cuaja como goma en frío. La de carne sale del [[fondo-oscuro]]; la de ave, del [[fondo-blanco]] o del oscuro de ave. En muchas cocinas se llama media glasa al fondo oscuro reducido a la mitad o a un tercio sin harina, que es lo que en la cocina clásica corresponde a la [[demi-glace]].",
+    "base": {
+      "for": "500 ml de glace de carne",
+      "items": [
+        [
+          "Fondo oscuro de ternera, frío y desgrasado, sin sal",
+          "5 l"
+        ]
+      ],
+      "steps": [
+        "Quitar en frío toda la grasa cuajada.",
+        "Reducir en un cazo ancho a fuego medio, desespumando a menudo.",
+        "Cuando ha bajado a la mitad, colar por chino a un cazo más pequeño para que no se queme en las paredes.",
+        "Repetir el cambio de cazo cada vez que reduzca bastante y bajar el fuego al final.",
+        "Punto: napa espesa, burbujas grandes y lentas, unos 500 ml.",
+        "Verter en bandeja o en moldes pequeños y enfriar."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Glace de carne",
+        "ratio": "Fondo oscuro de ternera a 1/10",
+        "note": "Cuaja firme; se corta en dados."
+      },
+      {
+        "use": "Glace de ave",
+        "ratio": "Fondo de ave a 1/8-1/10",
+        "note": "Más clara y suave."
+      },
+      {
+        "use": "Glace de pescado",
+        "ratio": "Fumet muy limpio a 1/5-1/8",
+        "note": "Delicada; se amarga si se pasa."
+      },
+      {
+        "use": "Media glasa",
+        "ratio": "Fondo oscuro a 1/2-1/3",
+        "note": "Base lista para salsas al momento."
+      },
+      {
+        "use": "Reforzar un jugo o salsa",
+        "ratio": "10-20 g de glace por cada 100 ml",
+        "note": "Disolver en caliente y probar."
+      },
+      {
+        "use": "Glasear carnes de brasa",
+        "ratio": "Glace aflojada con un poco de agua o jugo, a pincel",
+        "note": "Al final de la cocción, para brillo."
+      }
+    ],
+    "variants": [
+      {
+        "id": null,
+        "name": "Glace de viande",
+        "note": "De fondo oscuro de ternera."
+      },
+      {
+        "id": null,
+        "name": "Glace de ave",
+        "note": "De fondo de ave."
+      },
+      {
+        "id": null,
+        "name": "Glace de pescado",
+        "note": "De fumet; para salsas de pescado."
+      },
+      {
+        "id": "demi-glace",
+        "name": "Demi-glace o media glasa",
+        "note": "Reducción intermedia para salsas."
+      },
+      {
+        "id": "jugo-de-carne",
+        "name": "Jugo de carne",
+        "note": "Salsa de la pieza, que la glace refuerza."
+      }
+    ],
+    "keys": [
+      "Solo sale de un fondo con gelatina; un fondo flojo nunca cuaja.",
+      "El fondo no puede llevar sal: a 1/10 sería incomible.",
+      "Cambiar a cazos más pequeños evita el sabor a quemado de las paredes.",
+      "Desgrasar del todo antes de reducir: la grasa concentrada enturbia y enrancia.",
+      "Fuego más bajo al final, cuando hay más riesgo."
+    ],
+    "errors": [
+      {
+        "p": "Sabor a quemado",
+        "fix": "Paredes requemadas o fuego fuerte al final. Cambiar de cazo y bajar fuego."
+      },
+      {
+        "p": "No cuaja",
+        "fix": "Fondo sin gelatina o poco reducido. Reducir más o hacer el fondo con más cartílago."
+      },
+      {
+        "p": "Salada",
+        "fix": "Fondo con sal. No tiene arreglo; usarla en poca cantidad."
+      },
+      {
+        "p": "Turbia",
+        "fix": "Grasa o hervor sin espumar. Desgrasar y espumar mejor."
+      }
+    ],
+    "history": "La glace viene de la cocina clásica francesa, donde se usaba para reforzar salsas. Hoy se usa sobre todo como concentrado casero para terminar jugos y reducciones al momento.",
+    "uses": [
+      "Reforzar jugos y salsas",
+      "Salsas al momento",
+      "Glasear carnes",
+      "Dar cuerpo a vinagretas calientes",
+      "Mantequillas compuestas para carne"
+    ],
+    "keep": "En cámara a 0-4 °C, bien tapada, 2-3 semanas. Congelada en porciones, 6 meses.",
+    "pro": "Congelar en cubiteras o moldes de silicona de 20-30 g y guardar en bolsa. En el pase basta un dado para corregir un jugo flojo. Reducir en la cocina cuando hay fuego libre, por la tarde.",
+    "related": [
+      "fondo-oscuro",
+      "fondo-blanco",
+      "demi-glace",
+      "jugo-de-carne",
+      "reducciones",
+      "espanola",
+      "mantequillas-compuestas"
+    ]
+  },
+  {
+    "id": "consome",
+    "name": "Consomé",
+    "aka": [
+      "consommé",
+      "caldo clarificado",
+      "consomé doble",
+      "consomé al jerez",
+      "clarificación"
+    ],
+    "cat": "fondos",
+    "group": "Fondos claros",
+    "summary": "Fondo enriquecido y clarificado con carne picada, claras y verduras hasta quedar transparente.",
+    "what": "Se parte de un fondo frío y desgrasado y se calienta con una mezcla de carne magra picada, claras, verdura y tomate (la clarificación). Al coagular, las claras suben y forman una capa, la balsa, que atrapa las impurezas mientras la carne enriquece el caldo. El consomé doble se hace con el doble de carne. Puede ser de ave, carne o pescado, caliente o frío y gelatinoso.",
+    "base": {
+      "for": "4 l aprox.",
+      "items": [
+        [
+          "Fondo blanco de ave o ternera, frío y desgrasado",
+          "5 l"
+        ],
+        [
+          "Carne magra picada (morcillo de ternera o muslo de pollo sin piel)",
+          "1 kg"
+        ],
+        [
+          "Claras",
+          "250 g (6-8)"
+        ],
+        [
+          "Mirepoix picado fino (cebolla, puerro, zanahoria, apio)",
+          "400 g"
+        ],
+        [
+          "Tomate",
+          "150 g"
+        ],
+        [
+          "Pimienta en grano, perejil, laurel",
+          "al gusto"
+        ],
+        [
+          "Sal",
+          "al final"
+        ]
+      ],
+      "steps": [
+        "Mezclar carne, claras, verdura y tomate con un poco de fondo frío. Reposar 30 minutos en cámara.",
+        "Añadir el resto del fondo frío y mezclar bien.",
+        "Calentar despacio removiendo con espátula desde el fondo hasta 50-60 °C, para que no se pegue.",
+        "Dejar de remover: las claras cuajan y suben formando la balsa.",
+        "Abrir un agujero en la balsa y mantener a 85-90 °C, sin hervir, 60-90 minutos (pescado, 30-40), regando la balsa por el agujero.",
+        "Sacar el caldo con cazo por el agujero y colar por estameña húmeda, sin romper la balsa. Quitar la grasa con papel y salar."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Consomé doble",
+        "ratio": "2 kg de carne por 5 l, o clarificar con consomé en vez de fondo",
+        "note": "Más sabor y más cuerpo."
+      },
+      {
+        "use": "Consomé de pescado",
+        "ratio": "Fumet + 600 g de pescado blanco picado + claras, 30-40 minutos",
+        "note": "Sin tomate en exceso; hinojo y perejil."
+      },
+      {
+        "use": "Consomé frío gelatinoso",
+        "ratio": "Fondo rico en colágeno o 8-10 g de gelatina por litro",
+        "note": "Cuajado tembloroso; servir muy frío."
+      },
+      {
+        "use": "Clarificación sin carne",
+        "ratio": "Unos 2 g de agar por litro: cuajar, romper y escurrir en estameña en cámara",
+        "note": "Para caldos vegetales, de tomate o de marisco."
+      },
+      {
+        "use": "Consomé al jerez",
+        "ratio": "Un chorrito de fino u oloroso por ración, al pase",
+        "note": "No hervir después."
+      }
+    ],
+    "variants": [
+      {
+        "id": null,
+        "name": "Consomé doble",
+        "note": "Con el doble de carne."
+      },
+      {
+        "id": null,
+        "name": "Consomé de ave",
+        "note": "Fondo y carne de ave."
+      },
+      {
+        "id": null,
+        "name": "Consomé de pescado",
+        "note": "Fumet clarificado con pescado blanco."
+      },
+      {
+        "id": null,
+        "name": "Consomé frío",
+        "note": "Gelatinoso, como entrante de verano."
+      },
+      {
+        "id": null,
+        "name": "Agua de tomate clarificada",
+        "note": "Clarificada con agar o por goteo en frío."
+      }
+    ],
+    "keys": [
+      "Fondo frío y sin grasa al empezar; si entra caliente, las claras cuajan de golpe sin atrapar nada.",
+      "Remover solo hasta que se forma la balsa; luego no tocar.",
+      "Nunca hervir: rompe la balsa y enturbia.",
+      "Carne magra: la grasa no se va con la clarificación.",
+      "La acidez del tomate ayuda a coagular y clarificar."
+    ],
+    "errors": [
+      {
+        "p": "Turbio",
+        "fix": "Ha hervido o se ha removido con la balsa formada. Enfriar y volver a clarificar con claras y algo de carne."
+      },
+      {
+        "p": "Pegado en el fondo",
+        "fix": "No se removió al calentar. Cambiar de olla sin raspar."
+      },
+      {
+        "p": "Graso",
+        "fix": "Pasar papel por la superficie o enfriar y retirar la grasa."
+      },
+      {
+        "p": "Insípido",
+        "fix": "Poca carne o fondo flojo. Hacer consomé doble."
+      }
+    ],
+    "history": "El consomé es un clásico de la cocina francesa, de los tiempos en que un caldo transparente era muestra del oficio de la cocina. La técnica de clarificar con claras sigue igual; ahora se usan también agar y goteo en frío.",
+    "uses": [
+      "Consomé caliente con guarnición",
+      "Consomé frío",
+      "Base para gelatinas",
+      "Caldos de arroz de lujo",
+      "Pequeñas tazas de bienvenida"
+    ],
+    "keep": "Abatir. En cámara a 0-4 °C, 3-4 días; congelado, 3 meses. Recalentar suave sin hervir fuerte.",
+    "pro": "Hacerlo la víspera. Al pase, servir a unos 80 °C en taza o plato caliente, con la guarnición cortada fina y escaldada aparte para no enturbiarlo.",
+    "related": [
+      "fondo-blanco",
+      "fumet",
+      "mirepoix",
+      "bouquet-garni",
+      "dashi",
+      "caldo-de-verduras"
+    ]
+  },
+  {
+    "id": "mirepoix",
+    "name": "Mirepoix",
+    "aka": [
+      "guarnición aromática",
+      "mirepoix blanco",
+      "matignon",
+      "sofrito base",
+      "soffritto",
+      "holy trinity"
+    ],
+    "cat": "bases",
+    "group": "Aromáticos",
+    "summary": "Mezcla de cebolla, zanahoria y apio que da fondo de sabor a fondos, salsas y guisos; el tamaño se corta según el tiempo de cocción.",
+    "what": "Base aromática francesa: dos partes de cebolla, una de zanahoria y una de apio, en peso. Se suda sin color para fondos claros y se dora para oscuros. El mirepoix blanco cambia la zanahoria por puerro y a veces champiñón. Otras cocinas tienen su versión: el soffritto italiano (las mismas verduras en aceite), la trinidad de Luisiana (cebolla, apio y pimiento verde) y, en España, el [[sofrito]] de cebolla, ajo, pimiento y tomate.",
+    "base": {
+      "for": "1 kg",
+      "items": [
+        [
+          "Cebolla",
+          "500 g"
+        ],
+        [
+          "Zanahoria",
+          "250 g"
+        ],
+        [
+          "Apio",
+          "250 g"
+        ],
+        [
+          "Opcional: puerro, ajo, tomate, recortes de champiñón",
+          "según uso"
+        ]
+      ],
+      "steps": [
+        "Lavar y pelar. Quitar las hojas del apio si la cocción es larga.",
+        "Cortar todas las verduras al mismo tamaño según el tiempo de cocción (ver cambios).",
+        "Fondos claros: sudar en poca grasa sin color o poner en crudo. Fondos oscuros: dorar en la bandeja o en la marmita.",
+        "Añadir tras desespumar, salvo en fondos oscuros, donde se tuesta con los huesos."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Fumet y caldos de 20-45 minutos",
+        "ratio": "Lámina fina o dados de 3-5 mm",
+        "note": "Tiene que soltar sabor rápido."
+      },
+      {
+        "use": "Jugos y salsas al momento (30-60 minutos)",
+        "ratio": "Dados de 1 cm",
+        "note": "Se cuela al final."
+      },
+      {
+        "use": "Fondo blanco de ave (3-4 h) y braseados",
+        "ratio": "Dados de 2-3 cm",
+        "note": "Aguanta sin deshacerse."
+      },
+      {
+        "use": "Fondo oscuro (6-8 h)",
+        "ratio": "Trozos de 4-5 cm o mitades",
+        "note": "Cortado fino se deshace y enturbia."
+      },
+      {
+        "use": "Fondos claros",
+        "ratio": "Mirepoix blanco: cebolla, puerro y apio, poca o ninguna zanahoria",
+        "note": "Mantiene el color pálido."
+      },
+      {
+        "use": "Guarnición que se come (matignon)",
+        "ratio": "Brunoise de 2-3 mm con jamón o panceta, rehogada",
+        "note": "Para braseados y salsas que no se cuelan."
+      }
+    ],
+    "variants": [
+      {
+        "id": null,
+        "name": "Mirepoix blanco",
+        "note": "Sin zanahoria, con puerro; para fondos claros."
+      },
+      {
+        "id": null,
+        "name": "Matignon",
+        "note": "Cortado fino, con curado, y se come en el plato."
+      },
+      {
+        "id": null,
+        "name": "Soffritto",
+        "note": "Cebolla, zanahoria y apio picados y pochados en aceite."
+      },
+      {
+        "id": null,
+        "name": "Trinidad de Luisiana",
+        "note": "Cebolla, apio y pimiento verde."
+      },
+      {
+        "id": "sofrito",
+        "name": "Sofrito",
+        "note": "Base española de cebolla, ajo, pimiento y tomate."
+      }
+    ],
+    "keys": [
+      "Proporción en peso, no a ojo: 2:1:1.",
+      "Todo al mismo tamaño para que se cueza igual.",
+      "El tamaño depende del tiempo: corto, fino; largo, grande.",
+      "Para fondos oscuros, tostar; para claros, nunca dar color.",
+      "Aprovechar recortes limpios, nunca verdura pasada."
+    ],
+    "errors": [
+      {
+        "p": "Fondo turbio",
+        "fix": "Corte demasiado fino para una cocción larga. Cortar más grande."
+      },
+      {
+        "p": "Fondo dulzón",
+        "fix": "Exceso de zanahoria. Respetar la proporción."
+      },
+      {
+        "p": "Amargo",
+        "fix": "Hojas de apio en cocción larga o verdura quemada. Quitar hojas y vigilar el tostado."
+      },
+      {
+        "p": "Fondo claro con color",
+        "fix": "Zanahoria o verdura dorada. Usar mirepoix blanco y sudar sin color."
+      }
+    ],
+    "history": "El nombre se suele atribuir a un noble francés del siglo XVIII. Cada tradición ha resuelto lo mismo con sus verduras: la cocina española con el sofrito, la italiana con el soffritto y la criolla de Luisiana con su trinidad.",
+    "uses": [
+      "Fondos claros y oscuros",
+      "Fumet",
+      "Jugos y salsas",
+      "Braseados y guisos",
+      "Consomé"
+    ],
+    "keep": "Cortado en crudo, 2-3 días a 0-4 °C en gastronorm con papel húmedo y tapado. Se puede congelar para fondos, no para guarnición.",
+    "pro": "Cortar mirepoix en lote al principio de la semana, separado por tamaños y etiquetado. Para fondos grandes, el robot cortador ahorra tiempo en los cortes de 1 cm.",
+    "related": [
+      "sofrito",
+      "bouquet-garni",
+      "fondo-blanco",
+      "fondo-oscuro",
+      "fumet",
+      "caldo-de-verduras",
+      "consome"
+    ]
+  },
+  {
+    "id": "bouquet-garni",
+    "name": "Bouquet garni",
+    "aka": [
+      "ramillete de hierbas",
+      "atadillo de hierbas",
+      "manojo aromático",
+      "muñequilla de especias"
+    ],
+    "cat": "bases",
+    "group": "Aromáticos",
+    "summary": "Hierbas atadas que perfuman fondos y guisos y se retiran enteras al final.",
+    "what": "Ramillete de laurel, tomillo y tallos de perejil envuelto en hojas verdes de puerro y atado con bramante, para retirarlo de una vez. Las especias que no se quieren encontrar en el plato (pimienta, clavo, enebro, ajo) van en una muñequilla de estameña. Acompaña al [[mirepoix]] en fondos, guisos y el [[consome]].",
+    "base": {
+      "for": "1 bouquet para 5 l",
+      "items": [
+        [
+          "Hojas verdes de puerro",
+          "2"
+        ],
+        [
+          "Tallos de perejil",
+          "8-10"
+        ],
+        [
+          "Tomillo fresco",
+          "3-4 ramas"
+        ],
+        [
+          "Laurel",
+          "1-2 hojas"
+        ],
+        [
+          "Apio, una rama (opcional)",
+          "1"
+        ],
+        [
+          "Bramante de cocina",
+          "50 cm"
+        ]
+      ],
+      "steps": [
+        "Lavar las hierbas y escurrirlas.",
+        "Poner perejil, tomillo, laurel y apio en el centro de una hoja de puerro y cerrar con la otra.",
+        "Atar fuerte con bramante en varias vueltas y dejar un cabo largo.",
+        "Atar el cabo al asa de la marmita y meter el bouquet tras desespumar.",
+        "Retirarlo al final o antes si el sabor ya está; en cocciones de 6-8 h las hierbas tiernas se cambian a mitad."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Fondo blanco y de ave",
+        "ratio": "Bouquet clásico, 1 por 5 l",
+        "note": "Laurel discreto."
+      },
+      {
+        "use": "Fumet",
+        "ratio": "Perejil, hinojo y poco laurel, sin tomillo fuerte",
+        "note": "Solo 20-30 minutos de cocción."
+      },
+      {
+        "use": "Fondo oscuro y caza",
+        "ratio": "Bouquet clásico + muñequilla con 4-6 bayas de enebro y 1 clavo",
+        "note": "Retirar el clavo a las 2 h."
+      },
+      {
+        "use": "Cordero y carnes de brasa",
+        "ratio": "Romero y tomillo, poco romero",
+        "note": "El romero domina enseguida."
+      },
+      {
+        "use": "Pescado mediterráneo",
+        "ratio": "Hinojo, tallos de perejil, piel de limón sin blanco",
+        "note": "Para fumet y suquets."
+      }
+    ],
+    "variants": [
+      {
+        "id": null,
+        "name": "Muñequilla de especias",
+        "note": "Estameña atada con pimienta, clavo, enebro, ajo; se retira igual."
+      },
+      {
+        "id": null,
+        "name": "Bouquet mediterráneo",
+        "note": "Tomillo, romero, hinojo, ajedrea, piel de naranja o limón."
+      }
+    ],
+    "keys": [
+      "Atado al asa: no se pierde ni hay que buscarlo.",
+      "Hierbas leñosas (tomillo, romero, laurel) aguantan horas; las tiernas se ponen al final o se cambian.",
+      "Tallos de perejil, no hojas: dan sabor sin teñir.",
+      "Poco laurel: una hoja de más amarga 5 litros.",
+      "En la muñequilla, especias enteras, nunca molidas."
+    ],
+    "errors": [
+      {
+        "p": "Hierbas sueltas en el fondo",
+        "fix": "Mal atado. Atar con varias vueltas y apretar."
+      },
+      {
+        "p": "Sabor medicinal",
+        "fix": "Exceso de laurel, romero o clavo. Reducir cantidades y retirar antes."
+      },
+      {
+        "p": "Fondo verdoso o amargo",
+        "fix": "Hojas tiernas cocidas horas. Usar tallos y retirar a tiempo."
+      }
+    ],
+    "history": "Es un recurso de la cocina clásica francesa para perfumar sin dejar restos. Cada región lo adapta a sus hierbas; en la cocina mediterránea tienen más peso el romero, el hinojo y las pieles de cítrico.",
+    "uses": [
+      "Fondos y fumets",
+      "Consomé",
+      "Guisos y braseados",
+      "Legumbres",
+      "Escabeches",
+      "Court-bouillon"
+    ],
+    "keep": "Prepararlo el día de uso. Las hierbas, a 0-4 °C en caja con papel húmedo, 4-5 días.",
+    "pro": "Hacer bouquets en lote en la mise en place, uno por marmita o por cada 5-10 l, y guardarlos tapados en cámara. Para marmitas grandes, varios bouquets mejor que uno enorme.",
+    "related": [
+      "mirepoix",
+      "fondo-blanco",
+      "fondo-oscuro",
+      "fumet",
+      "consome",
+      "caldo-de-verduras",
+      "escabeche"
+    ]
+  },
+  {
+    "id": "salmuera",
+    "name": "Salmuera",
+    "aka": [
+      "salmuera húmeda",
+      "salmuera en seco",
+      "salado en seco",
+      "brine",
+      "cura en seco"
+    ],
+    "cat": "bases",
+    "group": "Curas y marinados",
+    "summary": "Agua con sal, o sal sola, aplicada antes de cocinar para sazonar por dentro, retener jugo y, en dosis altas, curar.",
+    "what": "En húmedo, la pieza se sumerge en agua con un porcentaje de sal (a veces azúcar y aromáticos); la sal entra, cambia las proteínas y la carne retiene más jugo al cocinarse. En seco, se reparte un porcentaje de sal sobre la pieza en cámara: sazona igual y seca la piel para la brasa. No es lo mismo que el [[adobo]] o la [[marinada]].",
+    "base": {
+      "for": "5 l al 5 %",
+      "items": [
+        [
+          "Agua (contando el hielo)",
+          "5 l"
+        ],
+        [
+          "Sal fina sin yodo",
+          "250 g"
+        ],
+        [
+          "Azúcar (opcional)",
+          "100 g"
+        ],
+        [
+          "Laurel, pimienta, ajo, piel de cítrico, hierbas",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Calentar 1 l de agua con la sal, el azúcar y los aromáticos hasta disolver; infusionar 10 minutos.",
+        "Completar con 4 l de agua fría y hielo. Usar solo por debajo de 4 °C.",
+        "Sumergir la pieza del todo, con peso encima, en cámara a 0-4 °C.",
+        "Respetar el tiempo según pieza (ver cambios).",
+        "Sacar, enjuagar si hace falta y secar muy bien; mejor en rejilla destapada en cámara unas horas para que la piel dore.",
+        "Desechar la salmuera usada: nunca se reutiliza."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Lomos y filetes de pescado",
+        "ratio": "5 % 15-30 minutos o 10 % 5-10 minutos",
+        "note": "Reafirma la carne y ayuda a que no se pegue en la parrilla."
+      },
+      {
+        "use": "Pollo en piezas o pechugas",
+        "ratio": "5-6 %, 1-2 h",
+        "note": "Secar bien antes de la brasa."
+      },
+      {
+        "use": "Cerdo (chuleta, presa, costilla)",
+        "ratio": "5-6 %, 4-12 h según grosor",
+        "note": "Muy útil en cortes magros."
+      },
+      {
+        "use": "Salmuera de equilibrio",
+        "ratio": "Sal = 1-1,5 % del peso de agua más pieza",
+        "note": "No se pasa de sal aunque se alargue; 24-72 h."
+      },
+      {
+        "use": "En seco: carne y ave",
+        "ratio": "1-1,5 % del peso de la pieza",
+        "note": "Salar justo antes de la brasa o con 1-24 h de antelación; entre medias, el jugo queda en la superficie y cuesta dorar."
+      }
+    ],
+    "variants": [
+      {
+        "id": null,
+        "name": "Salmuera en seco",
+        "note": "Sal en porcentaje sobre la pieza, en cámara y destapada."
+      },
+      {
+        "id": null,
+        "name": "Salmuera de equilibrio",
+        "note": "Sal calculada sobre el peso total; no puede pasarse."
+      },
+      {
+        "id": null,
+        "name": "Cura de sal y azúcar",
+        "note": "Para pescado: lomos finos 1-3 h, un lomo de salmón entero 24-48 h; luego lavar y secar."
+      },
+      {
+        "id": "adobo",
+        "name": "Adobo",
+        "note": "Condimento con vinagre y pimentón; otra técnica."
+      }
+    ],
+    "keys": [
+      "El porcentaje es en peso de sal sobre agua: 50 g por litro es un 5 %.",
+      "Siempre fría y en cámara; nunca a temperatura ambiente.",
+      "El azúcar ayuda a dorar, pero en la brasa se quema: poco o nada para parrilla.",
+      "Secar a fondo antes de la brasa; con la piel húmeda no hay costra.",
+      "Salar o curar no elimina el anisakis: el pescado que se va a servir crudo o poco hecho se congela antes según la norma (en el centro de la pieza, -20 °C al menos 24 h o -35 °C al menos 15 h)."
+    ],
+    "errors": [
+      {
+        "p": "Demasiado salado",
+        "fix": "Tiempo largo o porcentaje alto. Remojar en agua fría 20-30 minutos y apuntar el tiempo correcto."
+      },
+      {
+        "p": "Textura de jamón",
+        "fix": "Se ha curado. Bajar porcentaje o tiempo."
+      },
+      {
+        "p": "Piel blanda en la brasa",
+        "fix": "No se secó. Rejilla destapada en cámara antes de cocinar."
+      }
+    ],
+    "history": "Salar para conservar es de las técnicas más antiguas, y en el Mediterráneo la sal ha ido unida a la conservación del pescado desde la Antigüedad. Las salmueras suaves, pensadas solo para jugosidad y sabor, se han extendido en la cocina de parrilla en las últimas décadas.",
+    "uses": [
+      "Pollo y ave a la brasa",
+      "Cerdo",
+      "Pescado a la parrilla",
+      "Piezas grandes asadas",
+      "Curado de pescado"
+    ],
+    "keep": "La salmuera preparada y sin usar, 1 semana a 0-4 °C. La pieza ya salmuerada, cocinarla en 24-48 h.",
+    "pro": "Gastronorms con tapa, etiquetados con pieza, porcentaje y horas de entrada y salida. Enfriar el concentrado caliente con hielo pesado como parte del agua. En bolsa de vacío se gasta mucha menos salmuera.",
+    "related": [
+      "adobo",
+      "marinada",
+      "escabeche",
+      "jugo-de-carne",
+      "aceites-aromatizados"
+    ]
+  },
+  {
+    "id": "adobo",
+    "name": "Adobo",
+    "aka": [
+      "adobado",
+      "adobar",
+      "adobo de pimentón",
+      "adobo para cazón",
+      "adobo para pinchos morunos"
+    ],
+    "cat": "bases",
+    "group": "Curas y marinados",
+    "summary": "Mezcla española de vinagre, pimentón, ajo, orégano, comino, sal y aceite para sazonar y aromatizar carne y pescado antes de cocinarlos.",
+    "what": "Condimento concentrado, con vinagre y pimentón como base, ajo, orégano, comino, sal y aceite. Sazona, perfuma y, con el vinagre, cambia algo la textura de la superficie. Tradicionalmente ayudaba a conservar; hoy se usa por sabor. Se diferencia de la [[marinada]] en que es más espeso y especiado, y de la [[salmuera]] en que el sabor manda sobre la jugosidad.",
+    "base": {
+      "for": "2 kg de carne o pescado",
+      "items": [
+        [
+          "Pimentón dulce",
+          "30 g"
+        ],
+        [
+          "Pimentón picante",
+          "5 g"
+        ],
+        [
+          "Ajo",
+          "6-8 dientes"
+        ],
+        [
+          "Orégano seco",
+          "5 g"
+        ],
+        [
+          "Comino molido",
+          "5 g"
+        ],
+        [
+          "Pimienta negra molida",
+          "2 g"
+        ],
+        [
+          "Sal fina",
+          "30 g (1,5 % del peso)"
+        ],
+        [
+          "Vinagre de vino o de jerez",
+          "150 ml"
+        ],
+        [
+          "Agua",
+          "150 ml"
+        ],
+        [
+          "Aceite de oliva",
+          "80 ml"
+        ],
+        [
+          "Laurel",
+          "2 hojas"
+        ]
+      ],
+      "steps": [
+        "Majar el ajo con la sal en el mortero hasta hacer pasta.",
+        "Añadir los pimentones, el orégano, el comino y la pimienta.",
+        "Desleír con el vinagre y el agua, y añadir el aceite y el laurel.",
+        "Cubrir bien la pieza, en recipiente de acero, vidrio o plástico alimentario (nunca aluminio), o en bolsa de vacío.",
+        "Dejar en cámara a 0-4 °C el tiempo que pida la pieza.",
+        "Escurrir y secar antes de cocinar. En la brasa, fuego medio: el pimentón se quema y amarga."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Cazón y pescado blanco para freír",
+        "ratio": "Más vinagre y agua, 8-12 h",
+        "note": "Escurrir y enharinar justo antes de freír."
+      },
+      {
+        "use": "Lomo, presa o costilla de cerdo",
+        "ratio": "Adobo base, 12-24 h",
+        "note": "En brasa, terminar lejos del fuego vivo."
+      },
+      {
+        "use": "Pinchos morunos",
+        "ratio": "Adobo base con más comino, cilantro molido y un toque de cúrcuma, 4-12 h",
+        "note": "Dados de 3 cm para que se haga por igual."
+      },
+      {
+        "use": "Pollo",
+        "ratio": "Adobo base, 6-12 h",
+        "note": "Con piel, secar bien antes de asar."
+      },
+      {
+        "use": "Para la brasa en general",
+        "ratio": "Menos vinagre y más aceite",
+        "note": "Escurrir 30 minutos en rejilla para que no llamee."
+      }
+    ],
+    "variants": [
+      {
+        "id": null,
+        "name": "Adobo de cazón",
+        "note": "Para freír; vinagre y comino marcados."
+      },
+      {
+        "id": null,
+        "name": "Adobo de pinchos morunos",
+        "note": "Especias tostadas y molidas, más comino."
+      },
+      {
+        "id": null,
+        "name": "Lomo en adobo",
+        "note": "Lomo de cerdo adobado y luego frito o asado; tradicionalmente se conservaba en aceite."
+      },
+      {
+        "id": null,
+        "name": "Adobos americanos y filipinos",
+        "note": "Comparten nombre: llevan chiles, vinagre, a veces soja, y en Filipinas es un guiso."
+      },
+      {
+        "id": "escabeche",
+        "name": "Escabeche",
+        "note": "La pieza se cocina y se conserva en el líquido ácido."
+      }
+    ],
+    "keys": [
+      "El vinagre trabaja la superficie: en pescado, no pasarse de tiempo.",
+      "El pimentón quema muy pronto; en brasa, calor medio y vuelta frecuente.",
+      "Sal medida en porcentaje sobre la pieza para repetir el resultado.",
+      "Recipientes no reactivos: el ácido ataca el aluminio.",
+      "Secar antes de cocinar: el adobo líquido hierve la carne en vez de dorarla."
+    ],
+    "errors": [
+      {
+        "p": "Pescado blando o pastoso",
+        "fix": "Exceso de vinagre o de tiempo. Bajar el ácido o acortar."
+      },
+      {
+        "p": "Amargo en la brasa",
+        "fix": "Pimentón quemado. Fuego más suave y escurrir más."
+      },
+      {
+        "p": "Sabe solo por fuera",
+        "fix": "Piezas gruesas. Cortar más pequeño o alargar el tiempo con menos vinagre."
+      },
+      {
+        "p": "Llamas en la parrilla",
+        "fix": "Exceso de aceite. Escurrir en rejilla antes."
+      }
+    ],
+    "history": "Adobar con vinagre, sal y especias se usaba en la Península para conservar la carne antes de que hubiera frío. El pimentón, de pimientos americanos, se incorporó después del contacto con América y acabó siendo su sabor más reconocible.",
+    "uses": [
+      "Cazón en adobo",
+      "Lomo y presa adobados",
+      "Pinchos morunos",
+      "Pollo a la brasa",
+      "Costilla"
+    ],
+    "keep": "El adobo preparado, 1 semana a 0-4 °C. La pieza adobada, 2-3 días como máximo en cámara: el vinagre no basta para conservar.",
+    "pro": "Adobar en bolsas de vacío: se usa la mitad de adobo y penetra parejo. Etiquetar con hora de inicio. Sacar las piezas a rejilla 30 minutos antes del servicio.",
+    "related": [
+      "marinada",
+      "salmuera",
+      "escabeche",
+      "mojo-picon",
+      "chimichurri",
+      "aceites-aromatizados"
+    ]
+  },
+  {
+    "id": "marinada",
+    "name": "Marinada",
+    "aka": [
+      "marinado",
+      "maceración",
+      "marinade",
+      "macerado"
+    ],
+    "cat": "bases",
+    "group": "Curas y marinados",
+    "summary": "Líquido aromático con ácido, grasa y aromáticos para perfumar carnes y pescados y, en superficie, ablandarlos.",
+    "what": "Mezcla de un ácido (vino, vinagre, cítrico, yogur), una grasa y aromáticos. Perfuma la superficie; dentro de la pieza solo entra unos milímetros, salvo la sal. Puede ser cruda o cocida; las de vino para caza se cuecen. Las cítricas cortas, tipo ceviche, coagulan la proteína del pescado. Se distingue del [[adobo]], más espeso y con pimentón, y de la [[salmuera]], cuyo fin es la jugosidad.",
+    "base": {
+      "for": "1 l (para 3-4 kg de carne)",
+      "items": [
+        [
+          "Vino tinto o blanco",
+          "600 ml"
+        ],
+        [
+          "Aceite de oliva",
+          "150 ml"
+        ],
+        [
+          "Vinagre de vino",
+          "50 ml"
+        ],
+        [
+          "Cebolla en láminas",
+          "150 g"
+        ],
+        [
+          "Zanahoria en rodajas",
+          "100 g"
+        ],
+        [
+          "Ajo aplastado",
+          "4 dientes"
+        ],
+        [
+          "Tomillo, romero, laurel",
+          "unas ramas"
+        ],
+        [
+          "Pimienta negra en grano y enebro",
+          "5 g y 10 bayas"
+        ]
+      ],
+      "steps": [
+        "Cruda: mezclar todo y cubrir la pieza.",
+        "Cocida: rehogar las verduras, mojar con el vino y el vinagre, hervir 10 minutos, añadir el aceite y enfriar del todo antes de usar.",
+        "Marinar en cámara a 0-4 °C, en recipiente no reactivo o bolsa de vacío, dando la vuelta a la pieza.",
+        "Escurrir y secar muy bien antes de dorar o de la brasa.",
+        "La marinada que ha estado con carne cruda solo se aprovecha si se hierve, por ejemplo para la salsa del guiso."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Caza y carnes para guisar (venado, jabalí)",
+        "ratio": "Marinada de vino cocida, 12-48 h",
+        "note": "Luego se reduce para la salsa."
+      },
+      {
+        "use": "Cordero y cabrito a la brasa",
+        "ratio": "Aceite, ajo, romero y ralladura de limón, 4-12 h",
+        "note": "El zumo, al final: ácido largo endurece la superficie."
+      },
+      {
+        "use": "Pollo",
+        "ratio": "Yogur o suero con especias, 4-12 h",
+        "note": "El lácteo ablanda suave y dora bien."
+      },
+      {
+        "use": "Pescado para la brasa",
+        "ratio": "Aceite, hierbas y ralladura, 15-30 minutos",
+        "note": "El cítrico en zumo, justo al servir."
+      },
+      {
+        "use": "Ceviche y marinadas cítricas",
+        "ratio": "Lima o limón y sal, 5-15 minutos",
+        "note": "Pescado previamente congelado según norma, por el anisakis."
+      },
+      {
+        "use": "Marinadas con piña, papaya o kiwi",
+        "ratio": "30 minutos a 2 h como máximo",
+        "note": "Sus enzimas dejan la carne harinosa si se pasan."
+      }
+    ],
+    "variants": [
+      {
+        "id": null,
+        "name": "Marinada cocida de vino",
+        "note": "Para caza y guisos largos."
+      },
+      {
+        "id": null,
+        "name": "Marinada cítrica",
+        "note": "Para ceviches y pescado crudo."
+      },
+      {
+        "id": null,
+        "name": "Marinada de yogur",
+        "note": "Para ave y cordero; ablanda sin deshacer."
+      },
+      {
+        "id": "adobo",
+        "name": "Adobo",
+        "note": "Versión española con pimentón y vinagre."
+      },
+      {
+        "id": "escabeche",
+        "name": "Escabeche",
+        "note": "Ácido y aceite sobre una pieza ya cocinada."
+      }
+    ],
+    "keys": [
+      "La marinada perfuma; para sazonar por dentro, sal o [[salmuera]].",
+      "Mucho ácido o mucho tiempo deja la superficie harinosa.",
+      "El aceite lleva los aromas que se disuelven en grasa (ajo, hierbas, especias).",
+      "Miel y azúcar se queman en la brasa: pincelar al final.",
+      "Siempre en cámara; el vacío reduce cantidad y tiempo."
+    ],
+    "errors": [
+      {
+        "p": "Textura harinosa o pastosa",
+        "fix": "Exceso de tiempo, de ácido o de enzimas. Acortar y poner el ácido al final."
+      },
+      {
+        "p": "No dora",
+        "fix": "Pieza mojada. Escurrir y secar con papel."
+      },
+      {
+        "p": "Llamas o hollín en la brasa",
+        "fix": "Exceso de aceite. Escurrir en rejilla."
+      },
+      {
+        "p": "Sin sabor dentro",
+        "fix": "La marinada no penetra. Añadir sal, cortar más fino o salmuera antes."
+      }
+    ],
+    "history": "Macerar carnes en vino o vinagre con hierbas es una práctica antigua en toda Europa, al principio para conservar y suavizar la caza. Hoy se usa sobre todo para dar sabor, con tiempos más cortos y más atención a la textura.",
+    "uses": [
+      "Caza",
+      "Cordero y cabrito",
+      "Pollo",
+      "Pescado a la brasa",
+      "Ceviches",
+      "Verduras a la parrilla"
+    ],
+    "keep": "La marinada cocida, 1 semana a 0-4 °C. La pieza marinada, 1-3 días según el producto; el pescado, el mismo día.",
+    "pro": "Marinar en bolsas de vacío, etiquetadas con la hora. Para piezas grandes, inyectar una salmuera aromatizada y marinar fuera. Preparar la marinada base en lote y añadir el cítrico en el momento.",
+    "related": [
+      "adobo",
+      "salmuera",
+      "escabeche",
+      "chimichurri",
+      "aceites-aromatizados",
+      "reducciones"
+    ]
+  },
+  {
+    "id": "aceites-aromatizados",
+    "name": "Aceites aromatizados",
+    "aka": [
+      "aceite aromatizado",
+      "aceite infusionado",
+      "aceite de hierbas",
+      "aceite verde",
+      "aceite de ajo",
+      "aceite de gamba"
+    ],
+    "cat": "bases",
+    "group": "Bases",
+    "summary": "Aceites con aroma, color o sabor de hierbas, especias, cítricos, ajo o marisco, para terminar platos; los de producto fresco tienen riesgo de botulismo.",
+    "what": "Se hacen infusionando en frío o en caliente, o triturando y filtrando. Sirven para terminar platos, dar color y ligar [[vinagreta|vinagretas]] y [[emulsiones]]. Ajo, hierbas frescas y verduras pueden llevar esporas de la bacteria del botulismo, que en aceite (sin oxígeno) y a temperatura ambiente pueden producir toxina sin cambiar olor ni sabor. Por eso se guardan siempre en frío y poco tiempo.",
+    "base": {
+      "for": "Aceite verde, 400 ml aprox.",
+      "items": [
+        [
+          "Hojas de hierbas tiernas (perejil, albahaca, cebollino)",
+          "250 g"
+        ],
+        [
+          "Aceite de girasol o de oliva suave",
+          "500 ml"
+        ],
+        [
+          "Sal",
+          "una pizca"
+        ]
+      ],
+      "steps": [
+        "Escaldar las hojas 10-15 segundos y cortar la cocción en agua con hielo. Escurrir y secar a fondo: el agua lo enturbia y da más riesgo.",
+        "Triturar con el aceite en vaso de alta potencia 4-6 minutos, hasta 60-70 °C como máximo.",
+        "Enfriar el vaso en hielo enseguida.",
+        "Colar por estameña o filtro de papel en cámara, sin apretar, varias horas.",
+        "Envasar en biberón opaco, etiquetar con la fecha y guardar a 0-4 °C."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Aceite de ajo",
+        "ratio": "Ajo laminado o entero en aceite a 80-90 °C, 30-40 minutos",
+        "note": "Frío siempre y máximo 4 días, o congelar. Nunca en el pase todo el día."
+      },
+      {
+        "use": "Aceite de guindilla o especias secas",
+        "ratio": "Infusionar a 80-100 °C, 10 minutos",
+        "note": "Menos riesgo que lo fresco; aun así, guardar en frío."
+      },
+      {
+        "use": "Aceite de cítricos",
+        "ratio": "Piel sin la parte blanca a 60-70 °C, 20 minutos",
+        "note": "Colar y enfriar enseguida."
+      },
+      {
+        "use": "Aceite de gamba o marisco",
+        "ratio": "Cabezas tostadas, cubiertas de aceite, a 85-90 °C 30-45 minutos",
+        "note": "Colar fino; ver [[fondo-de-marisco]]."
+      },
+      {
+        "use": "Aceite de romero o tomillo para brasa",
+        "ratio": "Hierba leñosa en aceite a 70-80 °C, 15 minutos",
+        "note": "Para pincelar carnes al servir."
+      },
+      {
+        "use": "Aceite de pimentón o ñora",
+        "ratio": "Pimentón en aceite a no más de 60 °C, 5 minutos, y decantar",
+        "note": "Más caliente se quema y amarga."
+      }
+    ],
+    "variants": [
+      {
+        "id": null,
+        "name": "Aceite verde",
+        "note": "Hierbas trituradas y filtradas; color vivo."
+      },
+      {
+        "id": null,
+        "name": "Aceite de ajo confitado",
+        "note": "El ajo sirve para salsas; el aceite para saltear o terminar."
+      },
+      {
+        "id": null,
+        "name": "Aceite de gamba",
+        "note": "Cabezas confitadas; para arroces, crudos y emulsiones."
+      },
+      {
+        "id": null,
+        "name": "Aceite de guindilla",
+        "note": "Especia seca infusionada."
+      },
+      {
+        "id": null,
+        "name": "Aceite de cítricos",
+        "note": "Piel infusionada; para pescado y crudos."
+      }
+    ],
+    "keys": [
+      "Ajo, hierbas frescas o verduras en aceite: siempre a 0-4 °C, máximo 4 días, o congelados.",
+      "Calentar no basta para eliminar las esporas; lo que protege es el frío y el tiempo corto.",
+      "En el pase, poca cantidad y sobre hielo; lo que sobra no vuelve al biberón grande.",
+      "El aceite de oliva virgen extra amarga si se tritura mucho; para aceite verde, neutro o suave.",
+      "Luz, calor y aire enrancian: biberón opaco y lleno."
+    ],
+    "errors": [
+      {
+        "p": "El verde se vuelve marrón",
+        "fix": "Calor por encima de 70 °C o luz. Triturar menos tiempo y enfriar enseguida."
+      },
+      {
+        "p": "Turbio",
+        "fix": "Agua en las hierbas o colado apretando. Secar mejor y filtrar sin presión."
+      },
+      {
+        "p": "Amargo",
+        "fix": "Virgen extra triturado o especias quemadas. Cambiar de aceite y bajar temperatura."
+      },
+      {
+        "p": "Rancio",
+        "fix": "Demasiado tiempo o mal guardado. Producir para pocos días."
+      }
+    ],
+    "history": "Aromatizar aceite con hierbas y especias es antiguo en el Mediterráneo. Los aceites verdes y de marisco filtrados se han hecho habituales en la cocina de restaurante para terminar platos con color y aroma.",
+    "uses": [
+      "Terminar pescados y carnes de brasa",
+      "Crudos y tartares",
+      "Arroces",
+      "Vinagretas",
+      "Emulsiones y mayonesas",
+      "Cremas frías"
+    ],
+    "keep": "Con producto fresco (ajo, hierbas, marisco): 0-4 °C, máximo 4 días; congelados en porciones, 2-3 meses. Con especias secas: en frío, 2-3 semanas. Desechar si hay burbujas, turbidez o envase hinchado.",
+    "pro": "Producir para 2-3 días. Congelar el aceite verde en cubiteras o bolsitas y descongelar en cámara. En el pase, biberones pequeños sobre hielo, rotulados con fecha.",
+    "related": [
+      "emulsiones",
+      "vinagreta",
+      "pesto",
+      "fondo-de-marisco",
+      "chimichurri",
+      "mayonesa",
+      "alioli"
+    ]
+  },
+  {
+    "id": "reducciones",
+    "name": "Reducciones",
+    "aka": [
+      "reducción",
+      "reducir",
+      "reducción de vino",
+      "reducción de vinagre",
+      "reducción de Pedro Ximénez",
+      "gastrique"
+    ],
+    "cat": "bases",
+    "group": "Bases",
+    "summary": "Evaporar agua de vino, vinagre, fondo o nata para concentrar sabor, cuerpo y color; base de muchas salsas.",
+    "what": "Reducir es hervir un líquido para que pierda agua y concentre lo demás. Es base de salsas emulsionadas como la [[bearnesa]] y el [[beurre-blanc]], de las salsas de vino para carne, de la [[glace]] y de acabados dulces como el Pedro Ximénez. Lo que se concentra es todo: sabor, acidez, azúcar y sal.",
+    "base": {
+      "for": "Reducción de vino tinto para salsa de carne, 300 ml aprox.",
+      "items": [
+        [
+          "Vino tinto",
+          "750 ml"
+        ],
+        [
+          "Chalota en láminas",
+          "80 g"
+        ],
+        [
+          "Ajo",
+          "1 diente"
+        ],
+        [
+          "Tomillo, laurel, pimienta en grano",
+          "al gusto"
+        ],
+        [
+          "Fondo oscuro",
+          "1 l"
+        ],
+        [
+          "Mantequilla fría",
+          "40 g"
+        ],
+        [
+          "Sal",
+          "al final"
+        ]
+      ],
+      "steps": [
+        "Sudar la chalota y el ajo en un poco de mantequilla 3-4 minutos.",
+        "Añadir el vino y las hierbas y reducir a fuego vivo en cazo ancho hasta casi seco, con textura de jarabe.",
+        "Mojar con el fondo y reducir a fuego medio, desespumando, hasta que nape la cuchara.",
+        "Colar por chino fino.",
+        "Al pase, montar con la mantequilla fría fuera del hervor y salar."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Bearnesa y holandesa",
+        "ratio": "100 ml de vinagre de vino blanco + 100 ml de vino blanco + 50 g de chalota + estragón, reducido a 30-40 ml",
+        "note": "Para 4-5 yemas; colar o no según la salsa."
+      },
+      {
+        "use": "Beurre blanc",
+        "ratio": "100 ml de vino blanco + 100 ml de vinagre + chalota, reducido a 2-3 cucharadas",
+        "note": "Montar con unos 250 g de mantequilla fría."
+      },
+      {
+        "use": "Pedro Ximénez u oporto",
+        "ratio": "Reducir a 1/3 o 1/4, hasta jarabe ligero",
+        "note": "Espesa mucho al enfriar; probar en plato frío."
+      },
+      {
+        "use": "Vinagre balsámico",
+        "ratio": "Reducir a la mitad",
+        "note": "Más se vuelve amargo y pegajoso."
+      },
+      {
+        "use": "Gastrique",
+        "ratio": "Caramelo de azúcar disuelto con vinagre, 1:1, reducido",
+        "note": "Agridulce para pato, cerdo y carnes grasas."
+      },
+      {
+        "use": "Nata para salsa",
+        "ratio": "Reducir 1/3",
+        "note": "Fuego suave para que no se corte."
+      },
+      {
+        "use": "Fondos",
+        "ratio": "Demi-glace a 1/2-1/3, glace a 1/10",
+        "note": "Ver [[demi-glace]] y [[glace]]."
+      }
+    ],
+    "variants": [
+      {
+        "id": null,
+        "name": "Gastrique",
+        "note": "Caramelo y vinagre; base agridulce."
+      },
+      {
+        "id": null,
+        "name": "Reducción de Pedro Ximénez",
+        "note": "Jarabe para carnes, quesos y postres."
+      },
+      {
+        "id": null,
+        "name": "Reducción bordelesa",
+        "note": "Vino tinto y chalota reducidos, con fondo; para carnes rojas."
+      },
+      {
+        "id": "glace",
+        "name": "Glace",
+        "note": "Fondo reducido a jarabe."
+      },
+      {
+        "id": "demi-glace",
+        "name": "Demi-glace",
+        "note": "Fondo oscuro reducido."
+      }
+    ],
+    "keys": [
+      "Cazo ancho: más superficie, reducción más rápida y limpia.",
+      "Nunca salar antes: la sal no se evapora.",
+      "Reducir el vino antes de mojar con fondo; si no, la salsa sabe a vino crudo y ácido.",
+      "Vino a fuego vivo; fondo a fuego medio y espumando, porque el hervor fuerte emulsiona la grasa.",
+      "Marcar el nivel inicial o pesar el cazo para saber cuánto ha reducido."
+    ],
+    "errors": [
+      {
+        "p": "Pegajosa o amarga",
+        "fix": "Sobrerreducida. Aflojar con agua o fondo caliente."
+      },
+      {
+        "p": "Salada",
+        "fix": "Se saló antes. Aflojar con líquido sin sal; mejor no salar hasta el final."
+      },
+      {
+        "p": "Ácida o con sabor a alcohol",
+        "fix": "Vino poco reducido. Reducir más antes de añadir el fondo."
+      },
+      {
+        "p": "Turbia o grasa",
+        "fix": "Hervor fuerte con fondo. Espumar, bajar fuego y colar."
+      },
+      {
+        "p": "Jarabe de PX duro en frío",
+        "fix": "Demasiado reducido. Aflojar con agua caliente."
+      }
+    ],
+    "history": "Las reducciones han estado siempre en las salsas de la cocina francesa. Desde finales del siglo XX ganan terreno a las salsas ligadas con harina, porque dan sabor concentrado con menos peso.",
+    "uses": [
+      "Salsas de vino para carne",
+      "Bearnesa y beurre blanc",
+      "Jarabes para acabado",
+      "Vinagretas calientes",
+      "Salsas agridulces"
+    ],
+    "keep": "Reducciones de vino o vinagre sin lácteo: 1-2 semanas a 0-4 °C; con chalota, 5-7 días. Jarabes de PX o balsámico: varias semanas en frío. Las de nata, 2-3 días.",
+    "pro": "Hacer al principio de la semana la reducción base de bearnesa y la de vino tinto, y guardarlas en botes rotulados. Al pase se calienta la cantidad justa con jugo o fondo y se monta al momento. Al baño maría, tapadas.",
+    "related": [
+      "glace",
+      "demi-glace",
+      "bearnesa",
+      "beurre-blanc",
+      "holandesa",
+      "jugo-de-carne",
+      "vinagreta",
+      "ligazones"
+    ]
+  }
+]

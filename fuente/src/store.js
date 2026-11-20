@@ -9,7 +9,7 @@ import {uid} from './ui.js';
 const KEY = 'id-cocina-v1';
 export const state = {
  canSee: true, canEdit: true, canPrices: false, setupPending: false,
- dishes: [], menus: [], subs: [], trends: [], settings: {}, marks: {}, pasted: [], lastBackup: '', seen: '',
+ dishes: [], menus: [], subs: [], saber: {}, trends: [], settings: {}, marks: {}, pasted: [], lastBackup: '', seen: '',
  kb: null, kitchen: null, loaded: false, loadError: '', restaurant: {name: ''}
 };
 const listeners = new Set();
@@ -21,7 +21,7 @@ const arr = v => (Array.isArray(v) ? v : []);
 function read() { try { const v = JSON.parse(localStorage.getItem(KEY) || 'null'); return v && typeof v === 'object' ? v : {}; } catch { return {}; } }
 export function persist() {
  try {
-  localStorage.setItem(KEY, JSON.stringify({dishes: state.dishes, menus: state.menus, subs: state.subs, settings: state.settings, marks: state.marks, pasted: state.pasted, lastBackup: state.lastBackup, seen: state.seen}));
+  localStorage.setItem(KEY, JSON.stringify({dishes: state.dishes, menus: state.menus, subs: state.subs, saber: state.saber, settings: state.settings, marks: state.marks, pasted: state.pasted, lastBackup: state.lastBackup, seen: state.seen}));
   return true;
  } catch { return false; }
 }
@@ -48,6 +48,7 @@ export async function loadAll() {
  state.dishes = arr(saved.dishes).map(cleanDish).sort((a, b) => String(b.updated_at || '').localeCompare(String(a.updated_at || '')));
  state.menus = arr(saved.menus).filter(m => m && m.id).map(cleanMenu);
  state.subs = arr(saved.subs).filter(x => x && x.id).map(cleanSub);
+ state.saber = saved.saber && typeof saved.saber === 'object' ? saved.saber : {};
  state.settings = saved.settings && typeof saved.settings === 'object' ? saved.settings : {};
  state.marks = saved.marks && typeof saved.marks === 'object' ? saved.marks : {};
  state.pasted = arr(saved.pasted); state.lastBackup = String(saved.lastBackup || ''); state.seen = String(saved.seen || '');
@@ -105,6 +106,28 @@ export async function saveSub(id, patch) {
  state.subs[at] = cleanSub({...state.subs[at], ...patch, version: state.subs[at].version + 1, updated_at: new Date().toISOString()});
  rebuildKitchen(); save('subs');
  return state.subs[at];
+}
+
+// ---------- Saber: tus versiones de cada entrada (con su historia) y las entradas que creas tú ----------
+// Nunca se sobrescribe una versión: cada cambio se añade con su fecha y el porqué.
+export const saberMine = id => state.saber[id] || null;
+export async function addSaberVersion(id, text, why = '') {
+ const at = new Date().toISOString(), cur = state.saber[id] || {id, custom: null, versions: [], created_at: at};
+ state.saber[id] = {...cur, versions: [...arr(cur.versions), {at, text: String(text).slice(0, 8000), why: String(why).slice(0, 300), by: userName()}].slice(-300), updated_at: at};
+ save('saber');
+ return state.saber[id];
+}
+export async function saveSaberEntry(entry) {
+ const at = new Date().toISOString(), cur = state.saber[entry.id] || {id: entry.id, versions: [], created_at: at};
+ state.saber[entry.id] = {...cur, custom: entry, updated_at: at, deleted_at: null};
+ save('saber');
+ return state.saber[entry.id];
+}
+export async function trashSaberEntry(id, back = false) {
+ const cur = state.saber[id];
+ if (!cur) return;
+ state.saber[id] = {...cur, deleted_at: back ? null : new Date().toISOString(), updated_at: new Date().toISOString()};
+ save('saber');
 }
 
 // ---------- Cartas y menús: platos de la libreta en orden, para ver si el conjunto está equilibrado ----------
@@ -182,6 +205,7 @@ export function applyRemote(items) {
   if (it.kind === 'dish') { const at = state.dishes.findIndex(x => x.id === it.id); if (at < 0) { state.dishes.push(cleanDish(d)); changed++; } else if (newer(d.updated_at, state.dishes[at].updated_at)) { snapshotDish(state.dishes[at], true); state.dishes[at] = cleanDish(d); changed++; } }
   else if (it.kind === 'menu') { const at = state.menus.findIndex(x => x.id === it.id); if (at < 0) { state.menus.push(cleanMenu(d)); changed++; } else if (newer(d.updated_at, state.menus[at].updated_at)) { state.menus[at] = cleanMenu(d); changed++; } }
   else if (it.kind === 'sub') { const at = state.subs.findIndex(x => x.id === it.id); if (at < 0) { state.subs.push(cleanSub(d)); changed++; } else if (newer(d.updated_at, state.subs[at].updated_at)) { state.subs[at] = cleanSub(d); changed++; } }
+  else if (it.kind === 'saber') { const next = mergeSaber(state.saber[it.id], d); if (JSON.stringify(next) !== JSON.stringify(state.saber[it.id] || null)) { state.saber[it.id] = next; changed++; } }
   else if (it.kind === 'mark') { if (newer(d.at, state.marks[it.id]?.at)) { state.marks[it.id] = d; changed++; } }
   else if (it.kind === 'trend') { if (!state.pasted.some(x => trendId(x) === it.id)) { state.pasted.push(d); changed++; } }
   else if (it.kind === 'settings') { if (newer(d._at, state.settings?._at)) { state.settings = d; changed++; } }
@@ -202,10 +226,18 @@ export function syncItems() {
   ...state.dishes.map(d => ({kind: 'dish', id: d.id, data: d, updated_at: at(d.updated_at)})),
   ...state.menus.map(m => ({kind: 'menu', id: m.id, data: m, updated_at: at(m.updated_at)})),
   ...state.subs.map(x => ({kind: 'sub', id: x.id, data: x, updated_at: at(x.updated_at)})),
+  ...Object.values(state.saber).filter(x => x && x.id).map(x => ({kind: 'saber', id: x.id, data: x, updated_at: at(x.updated_at)})),
   ...Object.entries(state.marks).map(([id, m]) => ({kind: 'mark', id, data: m, updated_at: at(m?.at)})),
   ...state.pasted.map(t => ({kind: 'trend', id: trendId(t), data: t, updated_at: at(t.added_at || t.day)})),
   ...(Object.keys(state.settings || {}).length ? [{kind: 'settings', id: 'perfil', data: state.settings, updated_at: at(state.settings._at)}] : [])
  ];
+}
+// Dos copias de lo mismo en el Saber: se suman las versiones (sin repetir) y se queda la entrada propia y la papelera más recientes.
+export function mergeSaber(a, b) {
+ if (!a) return b; if (!b) return a;
+ const seen = new Set(), versions = [...arr(a.versions), ...arr(b.versions)].filter(v => { const k = v.at + '|' + v.text; if (seen.has(k)) return false; seen.add(k); return true; }).sort((x, y) => String(x.at).localeCompare(String(y.at)));
+ const newer = String(b.updated_at || '') > String(a.updated_at || '') ? b : a;
+ return {...a, ...b, versions, custom: newer.custom ?? a.custom ?? b.custom ?? null, deleted_at: newer.deleted_at || null, updated_at: [a.updated_at, b.updated_at].sort().pop()};
 }
 export const imagePaths = () => [...new Set(state.dishes.flatMap(d => arr(d.images).map(i => i?.path).filter(Boolean)))];
 
@@ -235,7 +267,7 @@ export async function exportBackup() {
  const images = {};
  for (const d of state.dishes) for (const i of d.images) { if (!i?.path || images[i.path]) continue; try { const blob = await tx('readonly', s => s.get(i.path)); if (blob) images[i.path] = await toData(blob); } catch {} }
  state.lastBackup = new Date().toISOString(); persist();
- return new Blob([JSON.stringify({app: 'id-cocina', version: 1, exported_at: state.lastBackup, dishes: state.dishes, menus: state.menus, subs: state.subs, settings: state.settings, marks: state.marks, pasted: state.pasted, images})], {type: 'application/json'});
+ return new Blob([JSON.stringify({app: 'id-cocina', version: 1, exported_at: state.lastBackup, dishes: state.dishes, menus: state.menus, subs: state.subs, saber: state.saber, settings: state.settings, marks: state.marks, pasted: state.pasted, images})], {type: 'application/json'});
 }
 // Recuperar una copia suma: los platos que no están se añaden y, si un plato está en los dos sitios, se queda el más reciente.
 export async function importBackup(text) {
@@ -247,6 +279,11 @@ export async function importBackup(text) {
   const at = state.dishes.findIndex(d => d.id === raw.id);
   if (at < 0) { state.dishes.push(cleanDish(raw)); added++; }
   else if (String(raw.updated_at || '') > String(state.dishes[at].updated_at || '')) { state.dishes[at] = cleanDish(raw); updated++; }
+ }
+ // Saber: se juntan las versiones de los dos lados (ninguna se pierde) y gana la entrada propia más reciente.
+ for (const [id, raw] of Object.entries(data.saber && typeof data.saber === 'object' ? data.saber : {})) {
+  if (!raw || typeof raw !== 'object') continue;
+  state.saber[id] = mergeSaber(state.saber[id], raw);
  }
  for (const raw of arr(data.subs)) {
   if (!raw || !raw.id) continue;

@@ -8,6 +8,7 @@ import {state, subById, saveSub} from '../store.js';
 import {dishAdvice} from '../flavor-core.js';
 import {emptyState} from './shared.js';
 import {go} from '../nav.js';
+import {entryForName} from '../saber/index.js';
 
 export const title = params => subById(params[0])?.name || t('Subreceta', 'Sub-recipe');
 const pseudo = x => ({components: [{role: 'salsa', techniques: [], items: x.items.map(i => ({n: i.n, k: i.k || null, w: i.w || 2}))}]});
@@ -32,7 +33,7 @@ export function render(params) {
  const uses = usedIn(x.id);
  return back + (x.deleted_at ? '<div class="notice" role="status">' + icon('trash') + '<p><strong>' + esc(t('Está en la papelera.', 'It is in the bin.')) + '</strong> <button type="button" class="linkbtn" data-act="restore">' + esc(t('Recuperar', 'Restore')) + '</button></p></div>' : '') + '<div class="bench">' +
   '<header class="card bench-head"><div class="bench-top"><span class="kicker">' + esc(t('Subreceta', 'Sub-recipe')) + '</span><button type="button" class="iconbtn" data-act="trash" aria-label="' + esc(t('Enviar a la papelera', 'Move to the bin')) + '" style="margin-left:auto">' + icon('trash') + '</button></div>' +
-  '<label class="sr" for="subName">' + esc(t('Nombre', 'Name')) + '</label><input id="subName" class="title-input sub-title" value="' + esc(x.name) + '" maxlength="90" autocomplete="off">' +
+  (entryForName(x.name) ? '<p class="fine"><a href="#/saber/' + esc(entryForName(x.name).id) + '">' + esc(t('Ver «', 'See “') + entryForName(x.name).name + t('» en el Saber', '” in Knowledge')) + '</a></p>' : '') + '<label class="sr" for="subName">' + esc(t('Nombre', 'Name')) + '</label><input id="subName" class="title-input sub-title" value="' + esc(x.name) + '" maxlength="90" autocomplete="off">' +
   '<div class="bench-meta"><label for="subYield">' + esc(t('Rinde', 'Yields')) + '</label><input id="subYield" value="' + esc(x.yield) + '" maxlength="40" placeholder="' + esc(t('p. ej. 1 litro, 20 raciones', 'e.g. 1 litre, 20 portions')) + '" autocomplete="off"></div></header>' +
   '<section class="card" id="subItems"><h2>' + esc(t('Ingredientes', 'Ingredients')) + '</h2>' + itemsHtml(x) + '</section>' +
   '<aside class="card analysis" id="subFlavour">' + flavourHtml(x) + '</aside>' +

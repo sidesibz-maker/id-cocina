@@ -1,0 +1,2367 @@
+[
+  {
+    "id": "emulsiones",
+    "name": "Emulsiones",
+    "aka": [
+      "emulsión",
+      "emulsionar",
+      "ligar una salsa",
+      "montar una salsa"
+    ],
+    "cat": "conceptos",
+    "group": "Fundamentos",
+    "summary": "Mezcla de dos líquidos que no se mezclan, grasa y agua, que se mantiene unida gracias al batido y a un emulsionante.",
+    "what": "Gotas muy finas de un líquido repartidas dentro de otro con el que no se mezcla; en cocina, casi siempre grasa dentro de agua. Las inestables, como la [[vinagreta]], se separan en minutos; las estables aguantan horas o días porque un emulsionante recubre cada gota. Las hay frías ([[mayonesa]], [[alioli]]) y calientes ([[holandesa]], [[bearnesa]], [[beurre-blanc]], [[pil-pil]]).",
+    "base": {
+      "for": "Principios válidos para cualquier emulsión de aceite",
+      "items": [
+        [
+          "Fase acuosa (yema, vinagre, zumo, agua, fondo)",
+          "15-25 % del total"
+        ],
+        [
+          "Fase grasa (aceite, mantequilla clarificada, grasa del pescado)",
+          "75-85 % del total"
+        ],
+        [
+          "Yema de huevo (lecitina y proteínas)",
+          "1 yema por 200-250 ml de aceite"
+        ],
+        [
+          "Mostaza",
+          "5-10 g por yema; refuerza y estabiliza"
+        ],
+        [
+          "Gelatina del bacalao o de la merluza",
+          "la que suelta la piel al confitar a 60-70 °C"
+        ],
+        [
+          "Lecitina de soja en polvo",
+          "0,3-1 % del peso del líquido, según sea aire o salsa"
+        ]
+      ],
+      "steps": [
+        "Igualar temperaturas: en frío, todo a 18-22 °C; en caliente, la grasa a 50-65 °C según la salsa y la yema sin pasar de 65 °C.",
+        "Fase acuosa y emulsionante primero; la grasa después, sin dejar de batir: gota a gota al principio, en hilo cuando la salsa espesa y se vuelve opaca.",
+        "Si espesa demasiado, unas gotas de agua, ácido o fondo permiten seguir añadiendo grasa sin que se corte.",
+        "Sazonar al final. Si suelta grasa por los bordes, está al límite."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Mayonesa",
+        "ratio": "1 yema por 200-250 ml de aceite",
+        "note": "no pasar de 300 ml"
+      },
+      {
+        "use": "Vinagreta (inestable)",
+        "ratio": "3 partes de aceite por 1 de ácido",
+        "note": "la mostaza la mantiene ligada más tiempo"
+      },
+      {
+        "use": "Holandesa o bearnesa (caliente)",
+        "ratio": "1 yema por 70-100 g de mantequilla clarificada",
+        "note": "yemas al baño maría sin pasar de 65 °C"
+      },
+      {
+        "use": "Beurre blanc",
+        "ratio": "unos 250 g de mantequilla fría sobre una reducción de chalota, vino y vinagre",
+        "note": "sin yema; mantener a 50-60 °C"
+      },
+      {
+        "use": "Aire o espuma",
+        "ratio": "lecitina al 0,3-0,6 %",
+        "note": "túrmix en superficie"
+      }
+    ],
+    "variants": [
+      {
+        "id": "mayonesa",
+        "name": "Mayonesa",
+        "note": "Fría y estable."
+      },
+      {
+        "id": "holandesa",
+        "name": "Holandesa",
+        "note": "Caliente, de yema y mantequilla."
+      },
+      {
+        "id": "pil-pil",
+        "name": "Pil-pil",
+        "note": "Ligada con la gelatina del pescado."
+      }
+    ],
+    "keys": [
+      "La temperatura manda: en frío el aceite engorda y cuesta integrarlo; en caliente, la yema cuaja hacia 65-70 °C.",
+      "Gota más fina, salsa más estable: el túrmix da emulsiones más firmes que las varillas.",
+      "La grasa entra a la velocidad a la que la salsa la absorbe.",
+      "Una salsa demasiado espesa está a punto de cortarse: aclarar antes de seguir.",
+      "El virgen extra intenso amarga batido a máquina; mezclarlo con girasol o añadirlo al final a mano."
+    ],
+    "errors": [
+      {
+        "p": "Se corta en frío",
+        "fix": "En un bol limpio, una yema nueva o una cucharada de agua tibia o mostaza; añadir la salsa cortada en hilo, batiendo."
+      },
+      {
+        "p": "Se corta en caliente por exceso de temperatura",
+        "fix": "Fuera del fuego, batir con una cucharada de agua fría; si la yema ha cuajado, empezar con otra yema y añadir la salsa cortada poco a poco."
+      },
+      {
+        "p": "No espesa",
+        "fix": "Falta emulsionante o sobra líquido: más grasa despacio o una yema más."
+      }
+    ],
+    "history": "Las salsas de ajo y aceite al mortero son muy antiguas en el Mediterráneo; las de yema y aceite o mantequilla se fijaron en la cocina francesa clásica. La explicación científica llegó mucho después, y la cocina moderna ha sumado emulsionantes como la lecitina.",
+    "uses": [
+      "Salsas frías",
+      "Salsas de mantequilla",
+      "Aliños",
+      "Aires",
+      "Ligar jugos al pase"
+    ],
+    "keep": "Frías con huevo: huevo pasteurizado en restauración, a 4 °C o menos y 24 horas. Calientes de mantequilla: tibias a 55-60 °C, como máximo un par de horas, y se desechan. Vinagretas simples: varios días en frío.",
+    "pro": "Montar en volumen con robot o túrmix y tener a mano una yema pasteurizada o agua tibia para recuperar. En el pase, las calientes en termo a 55-60 °C; las frías en biberón sobre hielo.",
+    "related": [
+      "mayonesa",
+      "holandesa",
+      "vinagreta",
+      "pil-pil",
+      "beurre-blanc",
+      "ligazones",
+      "alioli"
+    ]
+  },
+  {
+    "id": "mayonesa",
+    "name": "Mayonesa",
+    "aka": [
+      "mahonesa",
+      "salsa mayonesa"
+    ],
+    "cat": "salsas",
+    "group": "Emulsiones frías",
+    "summary": "Emulsión fría de yema y aceite con ácido y sal; base de muchas salsas frías.",
+    "what": "Emulsión estable de aceite en la fase acuosa que aportan la yema y el ácido (vinagre o limón), con sal. Es la [[emulsiones|emulsión]] fría de referencia y la madre de la [[tartara|tártara]], del [[alioli]] con huevo, de la salsa rosa y de muchas salsas de autor. En restauración se elabora siempre con huevo pasteurizado.",
+    "base": {
+      "for": "unos 500 ml",
+      "items": [
+        [
+          "Yema de huevo pasteurizada",
+          "2 (unos 40 g)"
+        ],
+        [
+          "Mostaza de Dijon (opcional)",
+          "10 g"
+        ],
+        [
+          "Vinagre de vino blanco o zumo de limón",
+          "15-20 ml"
+        ],
+        [
+          "Sal fina",
+          "4-5 g"
+        ],
+        [
+          "Aceite de girasol",
+          "300 ml"
+        ],
+        [
+          "Aceite de oliva suave",
+          "150 ml"
+        ],
+        [
+          "Agua fría",
+          "10-15 ml, para ajustar"
+        ]
+      ],
+      "steps": [
+        "Atemperar yemas, ácido y aceites a 18-22 °C; la yema pasteurizada, fuera de cámara solo unos 20 minutos.",
+        "Batir las yemas con la mostaza, la sal y la mitad del ácido en un bol sobre paño húmedo.",
+        "Añadir el aceite gota a gota los primeros 50-60 ml, hasta que espese y se vuelva opaca; después, en hilo fino.",
+        "Cuando esté muy espesa, aclarar con el resto del ácido y unas gotas de agua y terminar el aceite. Rectificar: brillante y con pico blando.",
+        "Con túrmix: todo en vaso estrecho, brazo en el fondo; arrancar sin moverlo hasta que monte abajo y subir despacio."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Mayonesa de mesa, fritura o marisco",
+        "ratio": "1 yema por 220-250 ml de aceite",
+        "note": "pico blando"
+      },
+      {
+        "use": "Ensaladilla o rellenos",
+        "ratio": "1 yema por 250-280 ml, con mostaza",
+        "note": "más firme: la patata la afloja"
+      },
+      {
+        "use": "Para salsear o puntos en biberón",
+        "ratio": "aclarar con 10-20 ml de agua o [[fumet]] por cada 250 ml",
+        "note": "que caiga en cinta"
+      },
+      {
+        "use": "Con aceite de oliva virgen extra",
+        "ratio": "como mucho un tercio de virgen extra si se monta a máquina",
+        "note": "el resto a mano y al final, para que no amargue"
+      },
+      {
+        "use": "Sin huevo (lactonesa)",
+        "ratio": "1 parte de leche entera fría por 2 de aceite, con túrmix",
+        "note": "para alérgicos al huevo; menos firme"
+      }
+    ],
+    "variants": [
+      {
+        "id": "tartara",
+        "name": "Salsa tártara",
+        "note": "Con encurtidos, alcaparras, chalota y huevo cocido."
+      },
+      {
+        "id": "alioli",
+        "name": "Alioli con huevo",
+        "note": "Con ajo majado."
+      },
+      {
+        "id": null,
+        "name": "Salsa rosa",
+        "note": "Con tomate concentrado, un punto de brandy y zumo de naranja."
+      },
+      {
+        "id": null,
+        "name": "Mayonesas aromatizadas",
+        "note": "Azafrán, pimentón ahumado, hierbas, cítricos o jugo de cabezas de marisco."
+      }
+    ],
+    "keys": [
+      "En restauración, siempre huevo pasteurizado, nunca huevo fresco crudo.",
+      "El ácido da sabor y estabilidad, pero no sustituye al huevo pasteurizado ni al frío.",
+      "Dos tercios de girasol y un tercio de oliva suave: neutra y estable.",
+      "Sal disuelta en el ácido antes de montar.",
+      "Paño húmedo bajo el bol y ácido en dos tiempos evitan casi todos los cortes."
+    ],
+    "errors": [
+      {
+        "p": "Se corta",
+        "fix": "Bol limpio con una yema nueva o una cucharada de agua tibia; añadir la mayonesa cortada en hilo, batiendo."
+      },
+      {
+        "p": "Amarga",
+        "fix": "Virgen extra batido a máquina: montar con girasol y añadir el oliva al final, a mano."
+      },
+      {
+        "p": "Plana",
+        "fix": "Falta ácido y sal."
+      }
+    ],
+    "history": "Su origen se discute: se relaciona con Mahón y con la cocina francesa del siglo XVIII, de ahí la doble forma mayonesa y mahonesa. Lo seguro es que antes ya existían en el Mediterráneo emulsiones de ajo y aceite al mortero, como el [[alioli]].",
+    "uses": [
+      "Ensaladilla",
+      "Pescado y marisco cocidos",
+      "Fritos y rebozados",
+      "Bocadillos",
+      "Base de salsas frías"
+    ],
+    "keep": "A 4 °C o menos, tapada y etiquetada con la hora, y consumida en 24 horas. No congelar: se corta. No dejarla en el pase fuera de frío.",
+    "pro": "Montar en lotes de 1-2 litros según la previsión del día. En el pase, biberones pequeños sobre hielo y el repuesto en cámara. Las aromatizadas, como derivadas de una sola base.",
+    "related": [
+      "emulsiones",
+      "alioli",
+      "tartara",
+      "salsa-brava",
+      "vinagreta",
+      "holandesa"
+    ]
+  },
+  {
+    "id": "alioli",
+    "name": "Alioli",
+    "aka": [
+      "allioli",
+      "all i oli",
+      "ajoaceite",
+      "aïoli"
+    ],
+    "cat": "salsas",
+    "group": "Emulsiones frías",
+    "summary": "Emulsión de ajo y aceite: la tradicional, al mortero solo con ajo, aceite y sal; la habitual en cocina, con huevo.",
+    "what": "Salsa mediterránea de ajo majado y aceite de oliva. La versión tradicional de Cataluña, Valencia, Baleares y Aragón se hace al mortero solo con ajo, sal y aceite: el propio ajo sostiene la [[emulsiones|emulsión]]. La versión con huevo es en realidad una [[mayonesa]] de ajo, más rápida y estable, y es la habitual en cocina.",
+    "base": {
+      "for": "unos 250 ml (mortero) o 500 ml (con huevo)",
+      "items": [
+        [
+          "Mortero: ajo pelado y sin germen",
+          "6 dientes (25-30 g)"
+        ],
+        [
+          "Mortero: sal gruesa",
+          "2-3 g"
+        ],
+        [
+          "Mortero: aceite de oliva suave",
+          "200 ml"
+        ],
+        [
+          "Con huevo: yema pasteurizada",
+          "2"
+        ],
+        [
+          "Con huevo: ajo",
+          "3-5 dientes"
+        ],
+        [
+          "Con huevo: zumo de limón",
+          "10 ml"
+        ],
+        [
+          "Con huevo: aceite (mitad oliva suave, mitad girasol)",
+          "400 ml"
+        ],
+        [
+          "Con huevo: sal fina",
+          "4 g"
+        ]
+      ],
+      "steps": [
+        "Mortero: majar el ajo con la sal hasta una pasta lisa, sin trozos.",
+        "Añadir el aceite gota a gota, girando siempre en el mismo sentido y sin prisa; se tarda 15-20 minutos.",
+        "Cuando engorde y blanquee, el aceite puede caer en hilo muy fino. Si se ve brillante y aceitosa, parar y majar hasta que lo absorba.",
+        "Con huevo: majar el ajo con la sal, pasarlo al vaso con las yemas y el limón y montar como una mayonesa."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Mortero estricto",
+        "ratio": "25-30 g de ajo por 200 ml de aceite",
+        "note": "con más ajo monta mejor"
+      },
+      {
+        "use": "Con huevo, para arroces",
+        "ratio": "1 yema por 200 ml de aceite y 1-2 dientes por yema",
+        "note": "el ajo crudo pica más con las horas"
+      },
+      {
+        "use": "Suave",
+        "ratio": "1 cabeza de ajo confitado o escaldado por 250 ml",
+        "note": "dulce y más estable"
+      },
+      {
+        "use": "Para gratinar",
+        "ratio": "con huevo, firme",
+        "note": "salamandra fuerte, sobre bacalao o verduras"
+      }
+    ],
+    "variants": [
+      {
+        "id": "mayonesa",
+        "name": "Mayonesa",
+        "note": "Base de la versión con huevo."
+      },
+      {
+        "id": null,
+        "name": "Allioli de membrillo",
+        "note": "Catalán, para carnes y caza; proporciones de cada casa."
+      },
+      {
+        "id": null,
+        "name": "Rouille",
+        "note": "Provenzal, con pimiento o guindilla, azafrán y pan; para sopas de pescado."
+      }
+    ],
+    "keys": [
+      "Ajo fresco, firme y sin germen: el germen amarga.",
+      "En el mortero, constancia antes que velocidad.",
+      "El de mortero se hace para el servicio: con las horas pica y amarga.",
+      "Con huevo, siempre pasteurizado y conservado como la mayonesa.",
+      "Hay quien ayuda con gotas de agua, limón o miga de pan: funciona, pero ya no es la versión estricta."
+    ],
+    "errors": [
+      {
+        "p": "Se corta en el mortero",
+        "fix": "En un mortero limpio, majar otro diente con sal e incorporar la salsa cortada poco a poco."
+      },
+      {
+        "p": "Amarga o pica en exceso",
+        "fix": "Germen, aceite muy intenso o salsa con horas; usar ajo escaldado si la sala lo pide suave."
+      }
+    ],
+    "history": "Es una salsa muy antigua del Mediterráneo occidental, anterior a la mayonesa con yema, propia de la cocina popular catalana, valenciana, balear y aragonesa, y de la provenzal como aïoli. La versión con huevo se generalizó en las cocinas profesionales por rapidez y estabilidad.",
+    "uses": [
+      "Arroces y fideuá",
+      "Carnes y verduras a la brasa",
+      "Bacalao gratinado",
+      "Patatas",
+      "Conejo y caracoles"
+    ],
+    "keep": "El de mortero, en el día. Con huevo pasteurizado, a 4 °C o menos y 24 horas. No congelar. Ajo pelado o confitado en aceite, siempre en frío y en pocos días: fuera de frío hay riesgo de botulismo.",
+    "pro": "Para volumen, robot con el ajo ya majado y yemas pasteurizadas; el de mortero, por raciones. En el pase, biberón sobre hielo o quenelle sobre el arroz al salir.",
+    "related": [
+      "mayonesa",
+      "emulsiones",
+      "aceites-aromatizados",
+      "salsa-brava",
+      "picada",
+      "romesco"
+    ]
+  },
+  {
+    "id": "tartara",
+    "name": "Salsa tártara",
+    "aka": [
+      "tártara",
+      "salsa tartar"
+    ],
+    "cat": "salsas",
+    "group": "Emulsiones frías",
+    "summary": "Mayonesa con encurtidos, alcaparras, chalota, huevo cocido y hierbas; pareja clásica del pescado frito.",
+    "what": "Derivada de la [[mayonesa]] a la que se añaden elementos picados: pepinillo, alcaparra, chalota o cebolleta, perejil, a menudo huevo cocido y a veces estragón o cebollino. Aporta acidez y textura a fritos, rebozados y pescado a la plancha o a la brasa. Existen versiones clásicas montadas con yema cocida, pero hoy casi siempre se parte de una mayonesa firme.",
+    "base": {
+      "for": "unos 500 g",
+      "items": [
+        [
+          "Mayonesa firme",
+          "400 g"
+        ],
+        [
+          "Pepinillos en vinagre",
+          "40 g"
+        ],
+        [
+          "Alcaparras",
+          "25 g"
+        ],
+        [
+          "Chalota",
+          "30 g"
+        ],
+        [
+          "Huevo cocido",
+          "1"
+        ],
+        [
+          "Perejil",
+          "5 g"
+        ],
+        [
+          "Estragón y cebollino",
+          "3 g"
+        ],
+        [
+          "Mostaza de Dijon",
+          "10 g"
+        ],
+        [
+          "Zumo de limón o vinagre de los encurtidos, sal y pimienta",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Picar la chalota muy fina, lavarla en agua fría y escurrirla: pierde el picor fuerte y no domina con las horas.",
+        "Picar pepinillos y alcaparras en brunoise y prensarlos en un paño para quitarles líquido; si no, aguan la salsa.",
+        "Cocer el huevo 10-11 minutos desde que rompe el hervor, enfriar en agua con hielo y picarlo fino.",
+        "Picar las hierbas en el último momento.",
+        "Mezclar todo con la mayonesa y la mostaza con espátula, sin batir. Ajustar con limón o vinagre de los encurtidos, sal y pimienta.",
+        "Reposar 30 minutos en frío para que se integren los sabores."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Pescado frito y rebozados",
+        "ratio": "100 g de picados por 400 g de mayonesa",
+        "note": "picado con tropezón, que se note"
+      },
+      {
+        "use": "Para salsear o biberón",
+        "ratio": "60-70 g de picados muy finos por 400 g, aclarada con 20 ml de agua",
+        "note": "que pase por la boquilla"
+      },
+      {
+        "use": "Bocadillo o hamburguesa de pescado",
+        "ratio": "más pepinillo y mostaza (el doble)",
+        "note": "más ácida para cortar la grasa del pan y del rebozado"
+      },
+      {
+        "use": "Versión ligera",
+        "ratio": "mitad mayonesa, mitad yogur griego",
+        "note": "más fresca; dura lo mismo que la mayonesa"
+      }
+    ],
+    "variants": [
+      {
+        "id": "mayonesa",
+        "name": "Mayonesa",
+        "note": "La base."
+      },
+      {
+        "id": null,
+        "name": "Gribiche",
+        "note": "Emparentada: se monta sobre yema de huevo cocido con mostaza, encurtidos y hierbas; más rústica."
+      },
+      {
+        "id": null,
+        "name": "Remoulade",
+        "note": "Mayonesa con mostaza, encurtidos, alcaparras y a veces anchoa; muy próxima."
+      },
+      {
+        "id": null,
+        "name": "Tártara de yogur",
+        "note": "Más ligera, para pescado a la plancha."
+      }
+    ],
+    "keys": [
+      "Encurtidos y alcaparras bien escurridos y prensados: son los que aguan la salsa.",
+      "Chalota lavada; sin lavar, al día siguiente la salsa sabe solo a cebolla.",
+      "Mezclar con espátula, nunca con túrmix: es una salsa con textura.",
+      "Hierbas picadas al momento; picadas de víspera se oscurecen.",
+      "Partir de una mayonesa más firme de lo normal, porque los picados la aflojan."
+    ],
+    "errors": [
+      {
+        "p": "Se agua en cámara",
+        "fix": "Picados sin escurrir. Prensarlos en paño y, si ya está aguada, añadir más mayonesa firme."
+      },
+      {
+        "p": "Demasiado ácida",
+        "fix": "Exceso de vinagre de encurtidos; compensar con más mayonesa."
+      },
+      {
+        "p": "Sabor fuerte de cebolla al día siguiente",
+        "fix": "Chalota sin lavar o salsa hecha con demasiada antelación; lavarla y no preparar más de lo del día."
+      }
+    ],
+    "history": "Es una salsa clásica de la cocina francesa, derivada de la mayonesa y presente en los recetarios clásicos de los siglos XIX y XX. El nombre se suele asociar a los tártaros, pero no hay una explicación segura de por qué. Desde allí se extendió por todo el mundo como pareja del pescado frito.",
+    "uses": [
+      "Pescado frito y rebozado",
+      "Calamares",
+      "Croquetas de pescado",
+      "Pescado a la brasa o a la plancha",
+      "Bocadillos"
+    ],
+    "keep": "Con mayonesa de huevo pasteurizado, a 4 °C o menos y consumida en 24 horas; el huevo cocido y la chalota tampoco permiten alargarla. No congelar. Etiquetar con la hora de elaboración.",
+    "pro": "Tener los picados escurridos en cubetas en la mise en place y mezclarlos con la mayonesa en lotes pequeños a lo largo del servicio. En el pase, biberón de boca ancha dentro de hielo, o quenelle en el plato. Si el pescado frito va en cesta, la tártara aparte en un cuenco para que no reblandezca el rebozado.",
+    "related": [
+      "mayonesa",
+      "emulsiones",
+      "alioli",
+      "vinagreta"
+    ]
+  },
+  {
+    "id": "vinagreta",
+    "name": "Vinagreta",
+    "aka": [
+      "vinagreta clásica",
+      "aliño",
+      "vinaigrette"
+    ],
+    "cat": "salsas",
+    "group": "Bases y aliños",
+    "summary": "Emulsión inestable de aceite y ácido con sal; aliño básico de ensaladas, pescados, verduras y legumbres.",
+    "what": "Mezcla de aceite y ácido (vinagre o cítrico) con sal y, a menudo, mostaza, chalota y hierbas. Es una [[emulsiones|emulsión]] inestable: se separa en minutos salvo que lleve algo que la sostenga, como mostaza, un poco de yema o miel. Sirve de aliño, de [[marinada]] corta y de salsa fría o templada para pescados y verduras a la brasa.",
+    "base": {
+      "for": "unos 400 ml",
+      "items": [
+        [
+          "Aceite de oliva virgen extra",
+          "300 ml"
+        ],
+        [
+          "Vinagre de Jerez o de vino",
+          "100 ml"
+        ],
+        [
+          "Sal fina",
+          "5-6 g"
+        ],
+        [
+          "Mostaza de Dijon (opcional)",
+          "15 g"
+        ],
+        [
+          "Chalota (opcional)",
+          "30 g"
+        ],
+        [
+          "Pimienta negra recién molida",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Disolver la sal en el vinagre antes de añadir el aceite: en la grasa no se disuelve.",
+        "Añadir la mostaza y la chalota picada fina y dejar 5-10 minutos para que la chalota se suavice en el ácido.",
+        "Incorporar el aceite en hilo batiendo con varillas, o agitar en botella. Con túrmix queda más ligada, opaca y dura más sin separarse.",
+        "Probar sobre una hoja o sobre el producto, no a cucharadas: el sabor cambia.",
+        "Volver a emulsionar justo antes de aliñar."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Ensalada verde",
+        "ratio": "3 partes de aceite por 1 de vinagre",
+        "note": "la clásica; aliñar al momento"
+      },
+      {
+        "use": "Con cítrico o vinagre suave (arroz, sidra)",
+        "ratio": "2:1",
+        "note": "menos acidez, admite más ácido"
+      },
+      {
+        "use": "Pescado o marisco a la brasa",
+        "ratio": "4:1, con un chorrito de [[fumet]] o del jugo del pescado",
+        "note": "más suave: manda el producto"
+      },
+      {
+        "use": "Legumbres, patata o verduras templadas",
+        "ratio": "3:1 con más mostaza",
+        "note": "aliñar en caliente: lo absorben mejor"
+      },
+      {
+        "use": "Vinagreta de jugo, templada",
+        "ratio": "1 parte de [[jugo-de-carne]] o [[reducciones|reducción]], 1 de ácido y 3 de aceite",
+        "note": "para carnes, setas o verduras asadas"
+      },
+      {
+        "use": "Marinada corta",
+        "ratio": "2:1 con ajo y hierbas",
+        "note": "20-30 minutos para pescado en filetes"
+      }
+    ],
+    "variants": [
+      {
+        "id": null,
+        "name": "Vinagreta de mostaza",
+        "note": "Más mostaza, más ligada y estable."
+      },
+      {
+        "id": null,
+        "name": "Vinagreta de picadillo",
+        "note": "Pimiento, cebolla y tomate en brunoise; para mejillones, pulpo o pescado a la brasa."
+      },
+      {
+        "id": "chimichurri",
+        "name": "Chimichurri",
+        "note": "Vinagreta cargada de hierbas, ajo y guindilla para la carne."
+      },
+      {
+        "id": "escabeche",
+        "name": "Escabeche",
+        "note": "Aceite y vinagre con aromáticos, en caliente y como técnica de cocción."
+      }
+    ],
+    "keys": [
+      "Sal en el ácido primero; después el aceite.",
+      "El vinagre marca la vinagreta más que el aceite: uno bueno y suave vale más que uno fuerte.",
+      "Las hojas se aliñan en el último momento y bien secas; aliñadas antes se queman y sueltan agua.",
+      "En pescados y verduras a la brasa, aliñar justo al salir del fuego, cuando absorben mejor.",
+      "En cámara el aceite de oliva se espesa y enturbia: sacar la vinagreta 20 minutos antes del servicio."
+    ],
+    "errors": [
+      {
+        "p": "Se separa en el pase",
+        "fix": "Es normal. Agitar antes de cada uso o ligar con mostaza, un poco de miel o túrmix."
+      },
+      {
+        "p": "Ensalada blanda y aguada",
+        "fix": "Hojas mojadas o aliñadas antes de tiempo; centrifugar bien y aliñar al pase."
+      },
+      {
+        "p": "Muy ácida",
+        "fix": "Corregir con más aceite o rebajar el vinagre con un poco de agua o fondo."
+      }
+    ],
+    "history": "Aliñar con aceite, vinagre y sal es costumbre antiquísima en el Mediterráneo. La palabra vinagreta viene del francés y se asoció a la versión emulsionada con mostaza y chalota de la cocina clásica francesa. En España el aliño tradicional es echar aceite, vinagre y sal directamente sobre la ensalada, sin emulsionar.",
+    "uses": [
+      "Ensaladas",
+      "Pescado y marisco a la brasa",
+      "Verduras asadas",
+      "Legumbres",
+      "Pulpo y mejillones"
+    ],
+    "keep": "Vinagreta simple: hasta una semana en frío, tapada. Con chalota, ajo o hierbas frescas, 2-3 días, y las hierbas se oscurecen: mejor añadirlas al usar. Con picadillo de verduras, 1-2 días. Sacarla del frío antes del servicio.",
+    "pro": "Producir la base sin hierbas en botellas con dosificador, etiquetadas con fecha. Hierbas y picados al pase. Para un restaurante de brasa, tener dos: una clásica para ensaladas y otra más suave para pescados, para no tapar el producto.",
+    "related": [
+      "emulsiones",
+      "mayonesa",
+      "chimichurri",
+      "marinada",
+      "escabeche",
+      "aceites-aromatizados"
+    ]
+  },
+  {
+    "id": "romesco",
+    "name": "Romesco",
+    "aka": [
+      "salsa romesco",
+      "romesco de Tarragona"
+    ],
+    "cat": "salsas",
+    "group": "Salsas españolas",
+    "summary": "Salsa de Tarragona de ñora, tomate y ajo asados, frutos secos tostados, pan, vinagre y aceite; para pescados y verduras a la brasa.",
+    "what": "Salsa majada del Camp de Tarragona hecha con carne de ñora (pimiento seco), tomate y ajo asados, almendra y avellana tostadas, pan frito o tostado, vinagre y aceite de oliva. En la zona el nombre también designa guisos de pescado que la usan como base. Es pariente de la [[picada]]: comparte la lógica de dar sabor y cuerpo con frutos secos y pan.",
+    "base": {
+      "for": "unos 600 ml",
+      "items": [
+        [
+          "Ñoras",
+          "6 (unos 30 g)"
+        ],
+        [
+          "Tomates maduros",
+          "3 (400 g)"
+        ],
+        [
+          "Ajo",
+          "1 cabeza"
+        ],
+        [
+          "Almendra tostada",
+          "50 g"
+        ],
+        [
+          "Avellana tostada y pelada",
+          "50 g"
+        ],
+        [
+          "Pan del día anterior frito en aceite",
+          "30 g"
+        ],
+        [
+          "Vinagre de vino",
+          "20-30 ml"
+        ],
+        [
+          "Aceite de oliva",
+          "200 ml"
+        ],
+        [
+          "Sal y guindilla (opcional)",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Quitar rabo y pepitas a las ñoras, hidratarlas en agua caliente 30 minutos y raspar la carne.",
+        "Asar tomates y la cabeza de ajo entera a 180-200 °C, 25-35 minutos. Pelar.",
+        "Tostar almendras y avellanas a 160-170 °C, 10-12 minutos; pelar las avellanas en un paño. Freír el pan.",
+        "Majar o triturar ajos, frutos secos y pan; añadir ñora y tomate sin pepitas.",
+        "Emulsionar con el aceite en hilo y el vinagre, dejando grano. Salar y reposar al menos una hora."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Pescado y verduras a la brasa",
+        "ratio": "receta base, con grano",
+        "note": "servir atemperada"
+      },
+      {
+        "use": "Dip o para untar",
+        "ratio": "+30 % de frutos secos y pan, -30 % de aceite",
+        "note": "más densa"
+      },
+      {
+        "use": "Para calçots o cebolletas asadas",
+        "ratio": "más tomate y ajo asados, más vinagre y aceite",
+        "note": "más fluida y sedosa; ver salsa de calçots"
+      },
+      {
+        "use": "Base de guiso de pescado",
+        "ratio": "la salsa se afloja con [[fumet]] y el pescado se cuece en ella",
+        "note": "las recetas de la zona varían mucho"
+      }
+    ],
+    "variants": [
+      {
+        "id": null,
+        "name": "Salsa de calçots / salvitxada",
+        "note": "Muy próxima, propia de Valls y su comarca para la calçotada; suele ser más fluida y con más tomate y ajo asados. Nombre y proporciones cambian de un pueblo a otro, y no todos distinguen salvitxada de salsa de calçots."
+      },
+      {
+        "id": null,
+        "name": "Romesco de peix",
+        "note": "Guiso de pescado tarraconense con la salsa como base."
+      },
+      {
+        "id": "picada",
+        "name": "Picada",
+        "note": "El majado catalán que comparte su lógica."
+      }
+    ],
+    "keys": [
+      "La ñora aporta color y dulzor, no picor; el picante, si se quiere, viene de la guindilla.",
+      "Frutos secos bien tostados: son el sabor principal. Pálidos, la salsa queda plana.",
+      "Asar tomate y ajo quita el sabor crudo y da profundidad.",
+      "Dejar textura con grano; triturada en exceso se vuelve una pasta sin carácter."
+    ],
+    "errors": [
+      {
+        "p": "Amarga",
+        "fix": "Ñora o frutos secos quemados, o pepitas de ñora. Vigilar el tostado y limpiar bien las ñoras."
+      },
+      {
+        "p": "Grasienta, el aceite se separa",
+        "fix": "Demasiado aceite o poco pan; majar más pan y frutos secos e incorporar la salsa sobre ellos, o añadir un poco del agua de las ñoras."
+      },
+      {
+        "p": "Plana",
+        "fix": "Falta vinagre y sal; corregir poco a poco y dejar reposar antes de volver a probar."
+      }
+    ],
+    "history": "Nace en el Camp de Tarragona, en el entorno marinero de la ciudad, como salsa y como base de guisos de pescado. Su origen exacto y la receta auténtica se discuten: cada familia y cada concurso local tiene la suya.",
+    "uses": [
+      "Pescado blanco a la brasa",
+      "Calçots y cebolletas asadas",
+      "Alcachofas y verduras a la brasa",
+      "Gambas y marisco a la plancha",
+      "Carnes blancas"
+    ],
+    "keep": "En frío 4-5 días, tapada y con una película de aceite por encima. Se puede congelar en porciones; pierde algo de textura y hay que remover y ajustar de vinagre al regenerar. Servir siempre atemperada, nunca recién salida de cámara.",
+    "pro": "Lotes de 2-3 litros con robot, a grano medio. Sacar del frío 30 minutos antes. En el pase, cuenco aparte o quenelle junto al producto, no encima de la piel crujiente.",
+    "related": [
+      "picada",
+      "sofrito",
+      "salsa-de-tomate",
+      "mojo-picon",
+      "salsa-vizcaina",
+      "chimichurri"
+    ]
+  },
+  {
+    "id": "salsa-verde",
+    "name": "Salsa verde",
+    "aka": [
+      "merluza en salsa verde",
+      "salsa verde vasca"
+    ],
+    "cat": "salsas",
+    "group": "Salsas españolas",
+    "summary": "Salsa vasca de aceite, ajo y perejil ligada con la gelatina del pescado y fumet; clásica de la merluza y las almejas.",
+    "what": "Salsa del País Vasco que se hace en la misma cazuela que el pescado: ajo en aceite, perejil y [[fumet]] o el jugo de las almejas, ligada por la gelatina que suelta la merluza (sobre todo cogote y kokotxas) con un movimiento de vaivén, como el [[pil-pil]]. Muchas casas añaden una pizca de harina para asegurar la [[ligazones|ligazón]]; la versión más fina se liga solo con la gelatina del pescado.",
+    "base": {
+      "for": "4 raciones de merluza (unos 300 ml de salsa)",
+      "items": [
+        [
+          "Aceite de oliva suave",
+          "100 ml"
+        ],
+        [
+          "Ajo picado o en láminas",
+          "4 dientes"
+        ],
+        [
+          "Harina (opcional)",
+          "5-10 g"
+        ],
+        [
+          "Vino blanco seco (opcional)",
+          "50 ml"
+        ],
+        [
+          "Fumet suave de merluza, caliente",
+          "200-250 ml"
+        ],
+        [
+          "Merluza en rodajas o lomos con piel",
+          "4 x 180 g"
+        ],
+        [
+          "Almejas",
+          "12-16"
+        ],
+        [
+          "Perejil picado",
+          "15 g"
+        ],
+        [
+          "Sal y guindilla (opcional)",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "En cazuela baja, calentar el aceite con el ajo a fuego suave hasta que apenas empiece a dorar.",
+        "Si se usa harina, rehogarla un minuto. Mojar con el vino y dejar evaporar.",
+        "Añadir el fumet caliente poco a poco moviendo la cazuela.",
+        "Cocer la merluza salada a fuego suave 3-4 minutos en vaivén; darle la vuelta, añadir las almejas y seguir hasta que se abran.",
+        "Fuera del fuego, el perejil y un último meneo. La salsa debe napar, ligera y brillante."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Merluza en rodajas o lomos",
+        "ratio": "receta base",
+        "note": "6-8 minutos en total según grosor"
+      },
+      {
+        "use": "Kokotxas en salsa verde",
+        "ratio": "sin harina y con la mitad de fumet",
+        "note": "la gelatina de las kokotxas liga sola en 4-5 minutos"
+      },
+      {
+        "use": "Almejas en salsa verde",
+        "ratio": "el jugo de abrirlas, colado, sustituye parte del fumet",
+        "note": "más vino y algo más de harina para que la salsa tenga cuerpo"
+      },
+      {
+        "use": "Base adelantada para servicio",
+        "ratio": "15-20 g de harina por litro de fumet",
+        "note": "permite ligar sin depender de la gelatina de cada ración"
+      }
+    ],
+    "variants": [
+      {
+        "id": "pil-pil",
+        "name": "Pil-pil",
+        "note": "La misma lógica de ligar con gelatina del pescado, sin perejil ni fumet."
+      },
+      {
+        "id": null,
+        "name": "Merluza a la koskera",
+        "note": "Salsa verde con almejas, espárragos blancos, guisantes y huevo cocido."
+      },
+      {
+        "id": null,
+        "name": "Kokotxas en salsa verde",
+        "note": "Ligadas solo con su gelatina."
+      }
+    ],
+    "keys": [
+      "Movimiento de vaivén constante en vez de remover con cuchara: liga la salsa y no rompe el pescado.",
+      "Fuego suave: si hierve fuerte, la salsa se corta y la merluza se seca.",
+      "El perejil siempre al final, para que quede verde y fresco.",
+      "Fumet suave, de espinas de pescado blanco; uno de marisco o muy reducido tapa la merluza.",
+      "La piel y la espina de la merluza aportan gelatina: no quitarlas antes de cocinar."
+    ],
+    "errors": [
+      {
+        "p": "No liga",
+        "fix": "Poca gelatina o demasiado líquido. Reducir un poco, mover más o añadir una pizca de harina desleída en fumet frío."
+      },
+      {
+        "p": "Se corta o queda grasienta",
+        "fix": "Exceso de calor o de aceite; retirar del fuego y añadir un chorrito de fumet frío meneando."
+      },
+      {
+        "p": "Perejil oscuro y amargo",
+        "fix": "Ha cocido demasiado; añadirlo fuera del fuego al final."
+      }
+    ],
+    "history": "Es una de las salsas de cazuela de la cocina vasca tradicional, emparentada con el pil-pil por su forma de ligar con la gelatina del pescado. Las versiones con harina son habituales en casas y restaurantes; las ligadas solo con gelatina se consideran más finas.",
+    "uses": [
+      "Merluza",
+      "Kokotxas",
+      "Almejas",
+      "Rape",
+      "Bacalao fresco"
+    ],
+    "keep": "Mejor al momento. Una base sin pescado (aceite, ajo, harina y fumet) aguanta 2-3 días en frío y se termina en el servicio con el pescado y el perejil. Hecha con el pescado, se consume en el día y no se recalienta a fuego fuerte.",
+    "pro": "Base ligada preparada en frío; al pedido, cazuela individual con la base, el pescado y las almejas, 6-8 minutos. Almejas purgadas en agua con sal antes del servicio.",
+    "related": [
+      "pil-pil",
+      "fumet",
+      "ligazones",
+      "emulsiones",
+      "salsa-vizcaina",
+      "roux"
+    ]
+  },
+  {
+    "id": "pil-pil",
+    "name": "Pil-pil",
+    "aka": [
+      "al pil-pil",
+      "bacalao al pil-pil",
+      "pilpil"
+    ],
+    "cat": "salsas",
+    "group": "Salsas españolas",
+    "summary": "Emulsión vasca de aceite de oliva y gelatina del bacalao, ligada en tibio con movimiento; sin huevo ni harina.",
+    "what": "Salsa que se forma al confitar bacalao desalado en aceite de oliva con ajo y guindilla: la piel suelta gelatina, que se acumula como un jugo blanquecino en el fondo, y al mover la cazuela o batir con un colador ese jugo emulsiona el aceite. Es una [[emulsiones|emulsión]] sostenida por las proteínas y el colágeno del pescado, de la misma familia que la [[salsa-verde]].",
+    "base": {
+      "for": "4 raciones",
+      "items": [
+        [
+          "Bacalao desalado, lomos con piel",
+          "4 x 200 g"
+        ],
+        [
+          "Aceite de oliva suave (o mezcla con virgen extra)",
+          "400 ml"
+        ],
+        [
+          "Ajo en láminas",
+          "4-6 dientes"
+        ],
+        [
+          "Guindilla seca",
+          "1"
+        ]
+      ],
+      "steps": [
+        "Secar bien el bacalao. Dorar suavemente el ajo y la guindilla en el aceite y retirarlos. Dejar bajar el aceite a 60-70 °C.",
+        "Confitar el bacalao con la piel hacia abajo, sin que el aceite borbotee, 5-6 minutos; darle la vuelta y otros 3-4 minutos según grosor. Retirarlo a una bandeja y recoger el jugo que suelte.",
+        "Dejar templar el aceite hasta unos 40 °C: en el fondo debe quedar un jugo blanquecino de gelatina.",
+        "Montar: mover la cazuela en vaivén o trabajar el fondo en círculos con un colador de malla, incorporando el aceite al jugo hasta lograr una salsa espesa, amarillenta y brillante.",
+        "Devolver el bacalao y su jugo, napar, calentar un minuto sin que hierva y servir con el ajo y la guindilla."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Bacalao al pil-pil",
+        "ratio": "unos 100 ml de aceite por ración de 200 g",
+        "note": "lomo grueso, con piel"
+      },
+      {
+        "use": "Kokotxas al pil-pil",
+        "ratio": "unos 60 ml de aceite por ración",
+        "note": "sueltan mucha gelatina; 4-5 minutos"
+      },
+      {
+        "use": "Pil-pil en volumen",
+        "ratio": "reservar en frío la gelatina de pieles y recortes confitados",
+        "note": "se monta en una tanda con túrmix o varillas sobre el aceite tibio"
+      },
+      {
+        "use": "Pil-pil para otros pescados",
+        "ratio": "reforzar con gelatina de bacalao o de kokotxas",
+        "note": "merluza o rape solos sueltan poca"
+      }
+    ],
+    "variants": [
+      {
+        "id": null,
+        "name": "Bacalao al Club Ranero",
+        "note": "Bacalao al pil-pil con una fritada de pimiento, cebolla y tomate; clásico bilbaíno."
+      },
+      {
+        "id": null,
+        "name": "Kokotxas al pil-pil",
+        "note": "La versión más rápida y de ligazón más segura."
+      },
+      {
+        "id": "salsa-verde",
+        "name": "Salsa verde",
+        "note": "Misma técnica, con perejil y fumet."
+      }
+    ],
+    "keys": [
+      "El aceite tibio, unos 40 °C, para montar: caliente no liga.",
+      "Bacalao con piel y con su punto de sal; mal desalado no se puede corregir después.",
+      "Aceite suave o mezcla: un virgen extra muy intenso amarga y domina.",
+      "El colador acelera la emulsión y es lo práctico en servicio; el vaivén es lo tradicional.",
+      "Confitar por debajo de 70 °C: el bacalao queda en lascas jugosas."
+    ],
+    "errors": [
+      {
+        "p": "No liga",
+        "fix": "Aceite caliente o poca gelatina. Dejar templar, añadir el jugo de la bandeja o gelatina reservada y seguir moviendo."
+      },
+      {
+        "p": "Se corta al recalentar",
+        "fix": "Exceso de calor; retirar, añadir una cucharada de agua tibia o gelatina y volver a montar."
+      },
+      {
+        "p": "Bacalao seco y deshecho",
+        "fix": "Aceite demasiado caliente o tiempo de más; controlar con termómetro."
+      }
+    ],
+    "history": "Es uno de los pilares de la cocina vasca; el nombre se suele explicar por el sonido del aceite al burbujear suavemente. El bacalao en salazón llegó a toda la península por el comercio y la pesca del Atlántico norte, en la que participaron marineros vascos, y el pil-pil es una de sus preparaciones más características.",
+    "uses": [
+      "Bacalao",
+      "Kokotxas de bacalao o merluza",
+      "Merluza",
+      "Rape",
+      "Patatas confitadas"
+    ],
+    "keep": "Mejor recién hecho. El bacalao confitado y la gelatina se guardan en frío 2 días. La salsa montada se corta al enfriarse: se vuelve a montar en tibio. El aceite de confitar, colado, se guarda en frío unos días y sirve para el siguiente pil-pil.",
+    "pro": "Confitar los lomos en bandeja al horno a 60-65 °C y montar la salsa en una sola tanda. Mantenerla en baño tibio, 45-50 °C, como máximo un par de horas; regenerar cada ración un minuto a fuego suave.",
+    "related": [
+      "emulsiones",
+      "salsa-verde",
+      "salsa-vizcaina",
+      "aceites-aromatizados",
+      "alioli"
+    ]
+  },
+  {
+    "id": "mojo-picon",
+    "name": "Mojo picón",
+    "aka": [
+      "mojo rojo",
+      "mojo colorado"
+    ],
+    "cat": "salsas",
+    "group": "Salsas españolas",
+    "summary": "Salsa canaria de ajo, pimienta roja seca, comino, pimentón, vinagre y aceite; para papas arrugadas, carnes y pescados.",
+    "what": "Mojo rojo de Canarias, majado al mortero: ajo, pimienta roja seca (picona o guindilla), comino, pimentón, sal gruesa, vinagre y aceite de oliva. Queda espeso y ligeramente emulsionado. Cada isla y cada casa tiene su versión: más o menos picante, con pan para espesar o con pimiento rojo para dar cuerpo y suavizar. Su pareja es el [[mojo-verde]].",
+    "base": {
+      "for": "unos 300 ml",
+      "items": [
+        [
+          "Ajo",
+          "6 dientes (25 g)"
+        ],
+        [
+          "Pimienta roja seca picante o guindilla",
+          "2-4, al gusto"
+        ],
+        [
+          "Pimiento rojo seco suave (opcional, para cuerpo)",
+          "2"
+        ],
+        [
+          "Comino en grano",
+          "4 g"
+        ],
+        [
+          "Pimentón dulce",
+          "10 g"
+        ],
+        [
+          "Sal gruesa",
+          "5 g"
+        ],
+        [
+          "Vinagre de vino",
+          "50 ml"
+        ],
+        [
+          "Aceite de oliva",
+          "200 ml"
+        ],
+        [
+          "Pan del día anterior (opcional)",
+          "20 g"
+        ]
+      ],
+      "steps": [
+        "Quitar rabo y pepitas a las pimientas secas e hidratarlas en agua templada 20-30 minutos.",
+        "Tostar el comino en sartén seca un minuto, sin que humee, y majarlo con la sal y los ajos hasta hacer pasta.",
+        "Añadir las pimientas escurridas, el pan si se usa y el pimentón, y seguir majando.",
+        "Incorporar el vinagre y después el aceite en hilo, removiendo para que espese. Con túrmix, a pulsos cortos para que no blanquee.",
+        "Reposar al menos 2 horas; mejor de un día para otro."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Papas arrugadas",
+        "ratio": "receta base, espeso",
+        "note": "que se agarre a la papa"
+      },
+      {
+        "use": "Pescado o carne a la brasa",
+        "ratio": "+50 % de aceite y un poco de agua",
+        "note": "más fluido, para napar"
+      },
+      {
+        "use": "Suave, para toda la sala",
+        "ratio": "1 pimienta picante y 100 g de pimiento rojo asado",
+        "note": "y servir aparte la versión picante"
+      },
+      {
+        "use": "Como [[adobo]] para cerdo",
+        "ratio": "doble de vinagre, con orégano y tomillo, poco aceite",
+        "note": "en Canarias la carne de fiesta se adoba con un aliño de esta familia; 12-24 horas en frío"
+      }
+    ],
+    "variants": [
+      {
+        "id": "mojo-verde",
+        "name": "Mojo verde",
+        "note": "Con pimiento verde y cilantro o perejil."
+      },
+      {
+        "id": null,
+        "name": "Mojo palmero",
+        "note": "En La Palma suele hacerse más picante y potente; variedad de pimienta y proporciones cambian según la casa."
+      },
+      {
+        "id": null,
+        "name": "Almogrote",
+        "note": "Pasta gomera de queso curado, pimienta, ajo y aceite; de la misma familia, no es un mojo."
+      }
+    ],
+    "keys": [
+      "Comino en grano y tostado al momento; el molido viejo no sabe a nada.",
+      "El pimentón nunca al fuego: se quema en segundos y amarga.",
+      "El picor se regula con las semillas y con la cantidad de pimienta, no con más aceite.",
+      "El mortero da mejor textura; el túrmix emulsiona de más y lo vuelve pálido.",
+      "Vinagre de vino suave: el mojo debe saber a ajo y pimienta, no a vinagre."
+    ],
+    "errors": [
+      {
+        "p": "Amargo",
+        "fix": "Comino o pimentón quemados, o pepitas de pimienta. Tostar con cuidado y limpiar bien."
+      },
+      {
+        "p": "Se separa el aceite",
+        "fix": "Es normal en parte; remover antes de servir o añadir un poco de pan majado para ligarlo."
+      },
+      {
+        "p": "Pica demasiado",
+        "fix": "Rebajar con pimiento rojo asado y pan majado; no con más aceite, que lo vuelve grasiento."
+      }
+    ],
+    "history": "Los mojos forman parte de la cocina popular canaria y hay variantes en cada isla. Se suelen relacionar con las salsas de ajo y aceite peninsulares y con el uso de pimientos y especias llegados por el comercio atlántico, pero no hay una historia documentada única ni una receta oficial.",
+    "uses": [
+      "Papas arrugadas",
+      "Carnes a la brasa",
+      "Pescado a la brasa o a la sal",
+      "Queso asado",
+      "Adobo de cerdo"
+    ],
+    "keep": "En frío, tapado, 5-7 días; mejora el segundo día. Con ajo crudo en aceite, siempre en frío. Remover y atemperar antes de servir.",
+    "pro": "Lotes de 1-2 litros. Tener la versión suave para sala y la picante aparte. En el pase, cuencos pequeños o biberón de boca ancha; sacar solo lo del servicio y no devolver a cámara lo que haya estado en mesa.",
+    "related": [
+      "mojo-verde",
+      "adobo",
+      "alioli",
+      "romesco",
+      "chimichurri",
+      "marinada"
+    ]
+  },
+  {
+    "id": "mojo-verde",
+    "name": "Mojo verde",
+    "aka": [
+      "mojo de cilantro",
+      "mojo de perejil"
+    ],
+    "cat": "salsas",
+    "group": "Salsas españolas",
+    "summary": "Mojo canario de ajo, pimiento verde, cilantro o perejil, comino, vinagre y aceite; para pescados y papas.",
+    "what": "Variante verde del [[mojo-picon]]: lleva pimiento verde en lugar de la pimienta roja seca y una hierba fresca, normalmente cilantro, perejil o ambas. Es más fresco y herbáceo, y en Canarias acompaña sobre todo al pescado y a las papas arrugadas. Como todo lo verde, su problema es el color: se oxida con el ácido y con el calor.",
+    "base": {
+      "for": "unos 300 ml",
+      "items": [
+        [
+          "Ajo",
+          "4 dientes"
+        ],
+        [
+          "Pimiento verde italiano",
+          "1 (100 g)"
+        ],
+        [
+          "Pimienta verde picante (opcional)",
+          "1"
+        ],
+        [
+          "Cilantro, hojas y tallos tiernos",
+          "30 g"
+        ],
+        [
+          "Perejil (opcional)",
+          "10 g"
+        ],
+        [
+          "Comino en grano",
+          "3 g"
+        ],
+        [
+          "Sal gruesa",
+          "5 g"
+        ],
+        [
+          "Vinagre de vino blanco",
+          "40 ml"
+        ],
+        [
+          "Aceite de oliva",
+          "180 ml"
+        ]
+      ],
+      "steps": [
+        "Tostar el comino un minuto en sartén seca y majarlo con la sal y el ajo hasta pasta.",
+        "Añadir el pimiento sin semillas, picado y bien escurrido, y majar.",
+        "Incorporar las hierbas secas y lavadas y majar poco, lo justo para romperlas.",
+        "Añadir el aceite en hilo y por último el vinagre. Con túrmix, vaso frío, pulsos cortos y el aceite frío para no calentar las hierbas.",
+        "Reposar 30 minutos y probar de sal y vinagre."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Pescado a la brasa o a la sal",
+        "ratio": "+50 % de cilantro, más fluido",
+        "note": "se pone al salir del fuego"
+      },
+      {
+        "use": "Papas arrugadas",
+        "ratio": "receta base, espeso",
+        "note": "que se agarre a la papa"
+      },
+      {
+        "use": "Para quien no tolera el cilantro",
+        "ratio": "todo perejil, mismo peso",
+        "note": "menos aroma, más color"
+      },
+      {
+        "use": "Producción adelantada",
+        "ratio": "hacer la base sin vinagre",
+        "note": "el vinagre se añade al pase; así aguanta el color"
+      }
+    ],
+    "variants": [
+      {
+        "id": "mojo-picon",
+        "name": "Mojo picón",
+        "note": "El rojo, con pimienta seca y pimentón."
+      },
+      {
+        "id": null,
+        "name": "Mojo de cilantro",
+        "note": "Solo cilantro: el más aromático, el clásico para pescado."
+      },
+      {
+        "id": null,
+        "name": "Mojo de perejil",
+        "note": "Solo perejil: más suave."
+      },
+      {
+        "id": "chimichurri",
+        "name": "Chimichurri",
+        "note": "Primo rioplatense de hierbas, ajo y vinagre para la carne."
+      }
+    ],
+    "keys": [
+      "Hierbas bien secas tras lavarlas; el agua apaga el sabor y acelera la oxidación.",
+      "El calor oscurece: túrmix a pulsos con vaso y aceite fríos, o mejor al mortero.",
+      "El vinagre oxida el verde con las horas; añadirlo al final o al servir.",
+      "El tallo tierno del cilantro tiene mucho sabor: aprovecharlo.",
+      "Pimiento escurrido; si suelta agua, el mojo se separa."
+    ],
+    "errors": [
+      {
+        "p": "Se pone marrón",
+        "fix": "Ácido o calor. Hacerlo al día, añadir el vinagre al servir y conservar con película de aceite en contacto."
+      },
+      {
+        "p": "Amargo",
+        "fix": "Hierbas trituradas demasiado tiempo o tallos duros; romperlas poco y usar solo tallos tiernos."
+      },
+      {
+        "p": "Aguado o separado",
+        "fix": "Pimiento o hierbas con agua; escurrir bien y ligar con un poco más de ajo majado."
+      }
+    ],
+    "history": "Es el compañero verde del mojo rojo en la cocina popular canaria, con variantes en cada isla. Como el resto de mojos, no tiene una receta fija ni una historia documentada única; lo que sí es constante es el uso de cilantro o perejil, ajo, comino y vinagre.",
+    "uses": [
+      "Pescado a la brasa o a la sal",
+      "Papas arrugadas",
+      "Queso asado",
+      "Verduras a la brasa",
+      "Marisco a la plancha"
+    ],
+    "keep": "2-3 días en frío, tapado con aceite en contacto; pierde color cada día. Base sin vinagre algo más. Con ajo crudo en aceite, siempre en frío.",
+    "pro": "Hacer al inicio de cada servicio la cantidad del día; tener la base majada sin vinagre y terminar en el pase. En cuenco pequeño o biberón de boca ancha; reponer, no rellenar sobre lo que lleva horas fuera.",
+    "related": [
+      "mojo-picon",
+      "chimichurri",
+      "pesto",
+      "salsa-verde",
+      "vinagreta",
+      "adobo"
+    ]
+  },
+  {
+    "id": "salsa-vizcaina",
+    "name": "Salsa vizcaína",
+    "aka": [
+      "a la vizcaína",
+      "bacalao a la vizcaína"
+    ],
+    "cat": "salsas",
+    "group": "Salsas españolas",
+    "summary": "Salsa vasca de cebolla roja pochada lentamente y carne de pimiento choricero; para bacalao, callos y otros guisos.",
+    "what": "Salsa de Bizkaia hecha con mucha cebolla, tradicionalmente roja, pochada a fuego muy lento, y la carne del pimiento choricero, pasada por el pasapurés. La receta tradicional no lleva tomate o lleva muy poco; muchas versiones modernas lo añaden y la acercan a una [[salsa-de-tomate]] con choricero, algo que en Bizkaia se discute. Su color y su dulzor vienen de la cebolla y del choricero, no del tomate.",
+    "base": {
+      "for": "1 litro",
+      "items": [
+        [
+          "Cebolla roja",
+          "1,5 kg"
+        ],
+        [
+          "Pimientos choriceros secos",
+          "10-12"
+        ],
+        [
+          "Ajo",
+          "4 dientes"
+        ],
+        [
+          "Aceite de oliva",
+          "150 ml"
+        ],
+        [
+          "Pan del día anterior (opcional, para ligar)",
+          "30 g"
+        ],
+        [
+          "Fumet o caldo de la cocción, o agua de los choriceros",
+          "300-500 ml"
+        ],
+        [
+          "Sal y guindilla (opcional)",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Quitar rabo y pepitas a los choriceros e hidratarlos en agua caliente una hora (o cocerlos 10 minutos). Raspar la carne con una cuchara.",
+        "Pochar la cebolla en juliana con el ajo y el aceite a fuego muy suave, tapada al principio, 1,5-2 horas, hasta que esté muy blanda y dorada sin quemar.",
+        "Añadir la carne de choricero y el pan, mojar con el fondo o con el agua de los choriceros colada y cocer 15-20 minutos.",
+        "Pasar por el pasapurés o triturar y colar. Ajustar la textura con fondo y la sal."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Bacalao a la vizcaína",
+        "ratio": "mojar con [[fumet]] o agua de cocer las pieles",
+        "note": "espesa, que nape; el bacalao se termina 8-10 minutos en ella"
+      },
+      {
+        "use": "Callos o guisos de carne",
+        "ratio": "mojar con [[fondo-oscuro]] o el caldo de la cocción",
+        "note": "más líquida, para cocer dentro"
+      },
+      {
+        "use": "Base para otros platos (huevos, pimientos rellenos, merluza)",
+        "ratio": "receta base",
+        "note": "se aclara con el fondo del plato"
+      },
+      {
+        "use": "Versión con tomate",
+        "ratio": "1 tomate maduro por cada 500 g de cebolla",
+        "note": "más ácida y roja; no es la tradicional"
+      }
+    ],
+    "variants": [
+      {
+        "id": null,
+        "name": "Bacalao a la vizcaína",
+        "note": "El plato que la hizo famosa."
+      },
+      {
+        "id": null,
+        "name": "Vizcaína con tomate",
+        "note": "Versión extendida fuera de Bizkaia."
+      },
+      {
+        "id": "sofrito",
+        "name": "Sofrito",
+        "note": "Familia de bases de hortalizas pochadas en aceite."
+      },
+      {
+        "id": "salsa-de-tomate",
+        "name": "Salsa de tomate",
+        "note": "Pariente cercana, pero no es lo mismo."
+      }
+    ],
+    "keys": [
+      "Cebolla roja y pochado largo: es la mitad de la salsa.",
+      "La carne del choricero, raspada, sin piel: la piel amarga y da hebras.",
+      "Pasapurés antes que túrmix: textura sedosa sin airear ni blanquear.",
+      "Choriceros de calidad, oscuros y flexibles; los muy secos y rotos dan poco sabor.",
+      "Se mejora de un día para otro."
+    ],
+    "errors": [
+      {
+        "p": "Amarga",
+        "fix": "Piel de choricero o cebolla quemada en el fondo. Raspar bien y pochar tapado y a fuego mínimo."
+      },
+      {
+        "p": "Demasiado dulce",
+        "fix": "Equilibrar con sal, un punto de guindilla o un poco de fondo; no con azúcar ni vinagre."
+      },
+      {
+        "p": "Color pálido",
+        "fix": "Poco choricero o cebolla poco pochada; añadir más carne de choricero."
+      }
+    ],
+    "history": "Es la salsa tradicional de Bizkaia unida al bacalao en salazón. Sobre su origen circulan historias locales, pero lo que comparten las recetas antiguas es la cebolla y el pimiento choricero como protagonistas. El tomate se fue incorporando con el tiempo en muchas cocinas.",
+    "uses": [
+      "Bacalao",
+      "Callos",
+      "Merluza y pescados blancos",
+      "Huevos",
+      "Pimientos rellenos"
+    ],
+    "keep": "En frío 5 días; congela muy bien en bolsas o cubetas porcionadas. Regenerar a fuego suave con un poco de fondo.",
+    "pro": "Pochar en marmita o en horno a 140-150 °C tapado para no estar pendiente; producir 5-10 litros de una vez y congelar en porciones. En el pase, en baño maría a 65 °C o más, removiendo, o regenerar por raciones.",
+    "related": [
+      "sofrito",
+      "pil-pil",
+      "salsa-verde",
+      "salsa-de-tomate",
+      "fumet",
+      "romesco"
+    ]
+  },
+  {
+    "id": "sofrito",
+    "name": "Sofrito",
+    "aka": [
+      "sofregit",
+      "sofrito de tomate"
+    ],
+    "cat": "bases",
+    "group": "Bases y aliños",
+    "summary": "Base de cebolla, ajo y tomate (a veces pimiento) cocinados lentamente en aceite; punto de partida de arroces, guisos y salsas.",
+    "what": "Fondo de sabor de la cocina mediterránea: hortalizas aromáticas, casi siempre cebolla, ajo y tomate, cocinadas en aceite de oliva hasta concentrar y caramelizar. En los arroces de la costa se lleva más oscuro y concentrado; en guisos, más claro. Cumple un papel parecido a la [[mirepoix]] francesa, pero en aceite y llevado mucho más lejos. Al principio de un guiso va el sofrito y al final, a menudo, la [[picada]].",
+    "base": {
+      "for": "unos 500 g de sofrito",
+      "items": [
+        [
+          "Cebolla",
+          "600 g"
+        ],
+        [
+          "Tomate maduro rallado",
+          "800 g"
+        ],
+        [
+          "Ajo",
+          "4 dientes"
+        ],
+        [
+          "Pimiento rojo o verde (opcional)",
+          "150 g"
+        ],
+        [
+          "Aceite de oliva",
+          "150 ml"
+        ],
+        [
+          "Sal",
+          "5 g"
+        ],
+        [
+          "Azúcar, solo si el tomate es ácido",
+          "una pizca"
+        ],
+        [
+          "Laurel o pimentón (opcional)",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Pochar la cebolla picada fina con el aceite y la sal a fuego medio-bajo, 25-30 minutos, hasta que esté blanda y dorada.",
+        "Añadir el ajo y el pimiento y seguir 5-10 minutos.",
+        "Incorporar el tomate rallado y cocinar a fuego suave 40-60 minutos, removiendo, hasta que pierda el agua y el aceite se separe por los bordes.",
+        "Para arroces de costa, seguir hasta color caoba oscuro; el sofregit catalán de cebolla puede llevar 1-2 horas.",
+        "Si lleva pimentón, añadirlo al final, fuera del fuego, y mojar enseguida."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Arroces y fideuá",
+        "ratio": "muy reducido, color caoba",
+        "note": "pimentón al final unos segundos y mojar con el [[fumet]] o el caldo"
+      },
+      {
+        "use": "Guisos de carne o legumbre",
+        "ratio": "cebolla y tomate a partes iguales, color dorado",
+        "note": "más suave"
+      },
+      {
+        "use": "Salsas de tomate",
+        "ratio": "1 parte de cebolla por 3 de tomate",
+        "note": "ver [[salsa-de-tomate]]"
+      },
+      {
+        "use": "Sofregit catalán",
+        "ratio": "solo cebolla y tomate, 2:1, cocción 1-2 horas",
+        "note": "casi una mermelada oscura"
+      },
+      {
+        "use": "Suquet y guisos de pescado",
+        "ratio": "sofrito corto, claro, con ajo y algo de tomate",
+        "note": "el pescado manda"
+      }
+    ],
+    "variants": [
+      {
+        "id": null,
+        "name": "Sofregit",
+        "note": "Versión catalana, larga y oscura."
+      },
+      {
+        "id": "salsa-vizcaina",
+        "name": "Salsa vizcaína",
+        "note": "Cebolla roja pochada con choricero."
+      },
+      {
+        "id": "mirepoix",
+        "name": "Mirepoix",
+        "note": "Equivalente francés de hortalizas aromáticas."
+      },
+      {
+        "id": null,
+        "name": "Soffritto italiano",
+        "note": "Cebolla, zanahoria y apio en aceite o mantequilla; base de ragús."
+      }
+    ],
+    "keys": [
+      "Paciencia: el sabor viene de la caramelización lenta, no del fuego fuerte.",
+      "Sal en la cebolla desde el principio: suelta agua y se pocha sin quemarse.",
+      "Tomate maduro rallado, sin piel; fuera de temporada, tomate triturado de buena calidad.",
+      "El aceite que se separa por los bordes indica que el tomate ha perdido el agua.",
+      "El pimentón se quema en segundos: fuera del fuego y mojar enseguida."
+    ],
+    "errors": [
+      {
+        "p": "Quemado o amargo",
+        "fix": "Fuego alto o fondo pegado. No tiene arreglo: empezar de nuevo y bajar el fuego o pasar al horno."
+      },
+      {
+        "p": "Ácido",
+        "fix": "Tomate poco maduro o poco cocinado; cocinar más y, si hace falta, una pizca de azúcar."
+      },
+      {
+        "p": "Aguado",
+        "fix": "Falta reducción; seguir hasta que se separe el aceite."
+      }
+    ],
+    "history": "Cocinar hortalizas aromáticas en grasa como base es una técnica común a muchas cocinas. El tomate entró en la cocina española después de su llegada de América y con el tiempo se convirtió en el centro del sofrito mediterráneo. Las versiones cambian de una región a otra y de una casa a otra.",
+    "uses": [
+      "Arroces y fideuá",
+      "Guisos de carne, pescado y legumbre",
+      "Salsas",
+      "Suquet",
+      "Rellenos"
+    ],
+    "keep": "En frío 5-7 días cubierto con una capa de aceite. Congela perfectamente en porciones; se puede usar directamente congelado en el guiso.",
+    "pro": "Lotes de 5-10 kg en marmita o en horno a 150-160 °C, tapado al principio y destapado al final, removiendo cada 20 minutos. Porcionar en bolsas por receta (por ejemplo, la cantidad de una paella) y congelar. Etiquetar con el tipo: sofrito de arroz y sofrito de guiso no son intercambiables.",
+    "related": [
+      "picada",
+      "salsa-de-tomate",
+      "mirepoix",
+      "salsa-vizcaina",
+      "romesco",
+      "fumet"
+    ]
+  },
+  {
+    "id": "picada",
+    "name": "Picada",
+    "aka": [
+      "picada catalana",
+      "majado"
+    ],
+    "cat": "bases",
+    "group": "Bases y aliños",
+    "summary": "Majado catalán de frutos secos, ajo, perejil y pan frito que se añade al final de los guisos para ligar y dar sabor.",
+    "what": "Majado que se incorpora en los últimos minutos de un guiso: almendra o avellana tostadas, ajo, perejil, pan frito y, según el plato, azafrán, chocolate, galleta o hígado de la propia pieza. Liga y espesa el caldo, como una [[ligazones|ligazón]], y le da un sabor final. Con el [[sofrito]] al principio y la picada al final se define buena parte de la cocina catalana.",
+    "base": {
+      "for": "un guiso de 4-6 raciones (unos 80 g)",
+      "items": [
+        [
+          "Almendra tostada",
+          "20 g"
+        ],
+        [
+          "Avellana tostada y pelada",
+          "20 g"
+        ],
+        [
+          "Pan frito en aceite",
+          "15 g"
+        ],
+        [
+          "Ajo",
+          "2 dientes"
+        ],
+        [
+          "Perejil",
+          "5 g"
+        ],
+        [
+          "Azafrán (opcional)",
+          "unas hebras"
+        ],
+        [
+          "Caldo del propio guiso",
+          "30-50 ml"
+        ],
+        [
+          "Sal gruesa",
+          "una pizca"
+        ]
+      ],
+      "steps": [
+        "Tostar almendras y avellanas a 160-170 °C, 10-12 minutos, y pelar las avellanas frotándolas en un paño.",
+        "Freír el pan en aceite hasta dorar y escurrir.",
+        "Majar el ajo con la sal; añadir los frutos secos, el pan, el perejil y el azafrán tostado, y majar hasta pasta con algo de grano.",
+        "Aflojar con caldo del propio guiso.",
+        "Añadir al guiso 5-10 minutos antes del final y dejar hervir suave para que espese y el ajo pierda el crudo."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Suquet y guisos de pescado",
+        "ratio": "almendra, pan, ajo, perejil y azafrán",
+        "note": "ligera, el pescado manda"
+      },
+      {
+        "use": "Caza y carnes guisadas",
+        "ratio": "añadir 10-15 g de chocolate negro por guiso y, si se quiere, galleta o el hígado de la pieza",
+        "note": "más oscura y potente"
+      },
+      {
+        "use": "Arroces caldosos y fideos",
+        "ratio": "sin pan, solo frutos secos, ajo y perejil",
+        "note": "para no empastar el caldo"
+      },
+      {
+        "use": "Para espesar más un guiso",
+        "ratio": "doblar el pan",
+        "note": "sin pasarse: el guiso se vuelve pastoso"
+      }
+    ],
+    "variants": [
+      {
+        "id": "romesco",
+        "name": "Romesco",
+        "note": "Salsa de la misma familia, con ñora y tomate."
+      },
+      {
+        "id": null,
+        "name": "Picada de chocolate",
+        "note": "Para caza, conejo o langosta con pollo."
+      },
+      {
+        "id": null,
+        "name": "Picada de hígado",
+        "note": "Con el hígado salteado de la propia ave o conejo."
+      },
+      {
+        "id": "pesto",
+        "name": "Pesto",
+        "note": "Majado italiano de lógica parecida, pero en crudo y como salsa."
+      }
+    ],
+    "keys": [
+      "Va al final: si cuece mucho, el perejil se apaga y los frutos secos pierden aroma.",
+      "Nunca en crudo en el plato: necesita unos minutos de hervor para perder el sabor del ajo.",
+      "Mortero mejor que robot: textura con grano y sin calentar.",
+      "Frutos secos bien tostados, sin quemar: son el sabor principal.",
+      "Ajustar la sal del guiso después de añadir la picada."
+    ],
+    "errors": [
+      {
+        "p": "Guiso espeso y pastoso",
+        "fix": "Demasiado pan o picada; aflojar con caldo y usar menos la próxima vez."
+      },
+      {
+        "p": "Sabor a ajo crudo",
+        "fix": "No ha hervido lo suficiente; 5 minutos más a fuego suave."
+      },
+      {
+        "p": "Amarga",
+        "fix": "Frutos secos o pan quemados, o azafrán tostado de más."
+      }
+    ],
+    "history": "Majar frutos secos con pan para ligar guisos es una técnica muy antigua del Mediterráneo y está en la base de la cocina catalana desde hace siglos. Las variantes con chocolate o galleta son propias de guisos de caza y de los platos de mar y montaña.",
+    "uses": [
+      "Suquet",
+      "Guisos de caza y conejo",
+      "Mar y montaña",
+      "Arroces caldosos",
+      "Guisos de legumbre"
+    ],
+    "keep": "Mejor al momento: el perejil y el ajo se oxidan. La base de frutos secos y pan majados, sin ajo ni perejil, aguanta 3-4 días en frío o se congela en porciones.",
+    "pro": "Tener la base de frutos secos y pan majada en robot para el día y añadir ajo y perejil al momento por guiso. Porcionar según la receta para que todas las raciones liguen igual.",
+    "related": [
+      "sofrito",
+      "romesco",
+      "ligazones",
+      "pesto",
+      "salsa-verde",
+      "fumet"
+    ]
+  },
+  {
+    "id": "chimichurri",
+    "name": "Chimichurri",
+    "aka": [
+      "chimichurri argentino",
+      "chimi"
+    ],
+    "cat": "salsas",
+    "group": "Salsas del mundo",
+    "summary": "Aliño rioplatense de perejil, orégano, ajo, guindilla, vinagre y aceite; la salsa de la carne a la brasa.",
+    "what": "Salsa-aliño de Argentina y Uruguay para el asado: perejil y orégano, ajo, ají molido (guindilla en escamas), vinagre, aceite y sal; a veces pimentón, cebolla o pimiento. Hay una versión de hierbas secas, que se hidrata con [[salmuera]] caliente y dura más, y otra fresca, más verde y viva. Es una [[vinagreta]] cargada de hierbas, no una emulsión: el aceite queda suelto por encima.",
+    "base": {
+      "for": "unos 400 ml (versión fresca)",
+      "items": [
+        [
+          "Perejil picado a cuchillo",
+          "40 g"
+        ],
+        [
+          "Orégano seco (o fresco 10 g)",
+          "5 g"
+        ],
+        [
+          "Ajo muy picado",
+          "4 dientes"
+        ],
+        [
+          "Guindilla en escamas",
+          "3 g"
+        ],
+        [
+          "Pimentón dulce (opcional)",
+          "3 g"
+        ],
+        [
+          "Vinagre de vino tinto",
+          "80 ml"
+        ],
+        [
+          "Agua caliente",
+          "40 ml"
+        ],
+        [
+          "Sal",
+          "6 g"
+        ],
+        [
+          "Aceite de girasol u oliva suave",
+          "200 ml"
+        ]
+      ],
+      "steps": [
+        "Disolver la sal en el agua caliente y el vinagre e hidratar en ella el orégano, la guindilla y el pimentón 10 minutos.",
+        "Picar el perejil a cuchillo, no con túrmix, y el ajo muy fino.",
+        "Mezclar todo y cubrir con el aceite.",
+        "Reposar al menos una hora a temperatura ambiente antes del servicio; la versión seca, mejor de víspera en frío."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Para servir con carne a la brasa",
+        "ratio": "receta base",
+        "note": "sobre la carne recién cortada"
+      },
+      {
+        "use": "Para adobar antes de la brasa",
+        "ratio": "la mitad de aceite y el doble de ajo y vinagre",
+        "note": "2-12 horas en frío; ver [[adobo]] y [[marinada]]"
+      },
+      {
+        "use": "Para pincelar durante la brasa",
+        "ratio": "salmuera de agua, sal, ajo y hierbas, sin aceite",
+        "note": "no provoca llamaradas en las brasas"
+      },
+      {
+        "use": "Pescado o verduras a la brasa",
+        "ratio": "mitad vinagre, mitad limón, el doble de perejil",
+        "note": "más fresco"
+      }
+    ],
+    "variants": [
+      {
+        "id": null,
+        "name": "Chimichurri seco",
+        "note": "Con hierbas secas hidratadas en salmuera caliente; dura más y se puede tener en lote."
+      },
+      {
+        "id": null,
+        "name": "Chimichurri rojo",
+        "note": "Con más pimentón y pimiento rojo."
+      },
+      {
+        "id": "mojo-verde",
+        "name": "Mojo verde",
+        "note": "Pariente canario con cilantro y comino."
+      },
+      {
+        "id": "vinagreta",
+        "name": "Vinagreta",
+        "note": "La base de su lógica."
+      }
+    ],
+    "keys": [
+      "Picar a cuchillo: con túrmix el perejil se oscurece y amarga y la salsa se vuelve un puré.",
+      "Aceite neutro o de oliva suave; un virgen extra intenso tapa las hierbas.",
+      "La salmuera caliente despierta las hierbas secas y la guindilla.",
+      "Reposo: recién hecho sabe a ajo y vinagre por separado.",
+      "Se sirve sobre la carne ya cortada, no sobre la pieza entera, para que no arrastre la costra."
+    ],
+    "errors": [
+      {
+        "p": "Oscuro y amargo",
+        "fix": "Hierbas trituradas a máquina o picadas de víspera; picar a cuchillo y el perejil fresco del día."
+      },
+      {
+        "p": "Demasiado ácido",
+        "fix": "Más aceite y perejil; o rebajar el vinagre con agua."
+      },
+      {
+        "p": "Ajo agresivo",
+        "fix": "Escaldar los ajos un momento o dejarlo reposar más."
+      }
+    ],
+    "history": "Es la salsa del asado en el Río de la Plata. Sobre el origen del nombre circulan varias historias y ninguna está demostrada. Lo que existe es una salsa popular con casi tantas recetas como parrillas.",
+    "uses": [
+      "Carnes a la brasa",
+      "Achuras y embutidos a la parrilla",
+      "Pescado y verduras a la brasa",
+      "Adobo previo",
+      "Pan a la brasa"
+    ],
+    "keep": "Versión seca, en frío y tapada, 1-2 semanas. Versión fresca, 3-4 días; pierde color. Con ajo crudo en aceite, siempre en frío; servir atemperado.",
+    "pro": "En un restaurante de brasa compensa tener la base seca en lote y añadir perejil fresco a diario. Sacar del frío 30 minutos antes; durante el servicio, reponer en cantidades pequeñas en vez de dejar el bote fuera de frío todo el turno.",
+    "related": [
+      "vinagreta",
+      "mojo-verde",
+      "adobo",
+      "salmuera",
+      "marinada",
+      "jugo-de-carne"
+    ]
+  },
+  {
+    "id": "pesto",
+    "name": "Pesto",
+    "aka": [
+      "pesto genovés",
+      "pesto alla genovese",
+      "salsa de albahaca"
+    ],
+    "cat": "salsas",
+    "group": "Salsas del mundo",
+    "summary": "Majado genovés de albahaca, ajo, piñones, queso curado y aceite de oliva; para pasta, verduras y pescados.",
+    "what": "Salsa cruda de Liguria hecha al mortero con hojas de albahaca, ajo, sal gruesa, piñones, queso parmesano y pecorino rallados y aceite de oliva suave. No se cocina: se aliña con ella, como mucho aflojada con agua de cocción de la pasta. Comparte con la [[picada]] y el [[mojo-verde]] la técnica del majado, y con todas las salsas verdes el mismo enemigo: el calor y la oxidación.",
+    "base": {
+      "for": "unos 300 g",
+      "items": [
+        [
+          "Albahaca, solo hojas",
+          "60 g"
+        ],
+        [
+          "Ajo",
+          "1-2 dientes"
+        ],
+        [
+          "Piñones",
+          "25 g"
+        ],
+        [
+          "Parmesano curado rallado",
+          "50 g"
+        ],
+        [
+          "Pecorino rallado",
+          "20 g"
+        ],
+        [
+          "Aceite de oliva virgen extra suave",
+          "120-150 ml"
+        ],
+        [
+          "Sal gruesa",
+          "2-3 g"
+        ]
+      ],
+      "steps": [
+        "Lavar la albahaca sin frotar y secarla muy bien.",
+        "Majar el ajo con la sal; añadir los piñones (crudos o apenas tostados) y majar hasta crema.",
+        "Añadir las hojas por tandas, trabajando en círculos contra las paredes del mortero, sin golpear, hasta que se deshagan.",
+        "Incorporar los quesos y después el aceite en hilo.",
+        "Con robot: vaso y cuchilla fríos, aceite frío y pulsos cortos. Para que no oscurezca en producción, blanquear las hojas 5-10 segundos y enfriar en agua con hielo (no es la versión tradicional)."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Pasta",
+        "ratio": "25-30 g por ración",
+        "note": "aflojado con agua de cocción, fuera del fuego"
+      },
+      {
+        "use": "Pescado o verduras a la brasa",
+        "ratio": "+50 % de aceite, la mitad de queso",
+        "note": "más fluido, para pincelar al salir"
+      },
+      {
+        "use": "Sopas de verduras",
+        "ratio": "sin piñones, una cucharada por plato",
+        "note": "se añade al servir, no se cuece"
+      },
+      {
+        "use": "Untar o aperitivo",
+        "ratio": "más piñones y queso, menos aceite",
+        "note": "más denso"
+      }
+    ],
+    "variants": [
+      {
+        "id": null,
+        "name": "Pistou",
+        "note": "Versión provenzal, sin piñones y a menudo sin queso; para la sopa del mismo nombre."
+      },
+      {
+        "id": null,
+        "name": "Pesto alla trapanese",
+        "note": "Siciliano, con almendra y tomate además de la albahaca."
+      },
+      {
+        "id": null,
+        "name": "Pestos de otras hierbas o frutos secos",
+        "note": "Rúcula, perejil, pistacho o nuez; misma lógica."
+      },
+      {
+        "id": "aceites-aromatizados",
+        "name": "Aceite de albahaca",
+        "note": "Para dar el aroma sin la textura."
+      }
+    ],
+    "keys": [
+      "El calor es el enemigo: mortero o máquina fría, y nunca cocerlo.",
+      "Hojas secas: el agua lo aclara y lo oscurece.",
+      "Aceite suave; uno intenso batido a máquina amarga.",
+      "Piñones de calidad y frescos; rancios arruinan la salsa.",
+      "Con pasta, el queso no debe fundirse a fuego: se mezcla fuera del fuego con agua de cocción."
+    ],
+    "errors": [
+      {
+        "p": "Se oscurece",
+        "fix": "Calor u oxidación. Película de aceite en contacto, máquina fría o hojas blanqueadas."
+      },
+      {
+        "p": "Amargo",
+        "fix": "Aceite intenso batido, tallos o hojas machacadas a golpes. Usar solo hojas y trabajar en círculo."
+      },
+      {
+        "p": "Aguado o separado",
+        "fix": "Hojas mojadas; secar bien y ligar con un poco más de queso y piñón."
+      }
+    ],
+    "history": "Es la salsa tradicional de Génova y Liguria. Las majadas de hierbas, ajo, queso y aceite son antiguas en el Mediterráneo; la versión con albahaca y piñones es la que se fijó en la cocina ligur y se extendió con la popularidad de la pasta italiana.",
+    "uses": [
+      "Pasta",
+      "Verduras a la brasa",
+      "Pescado blanco",
+      "Sopas de verduras",
+      "Burrata y tomate"
+    ],
+    "keep": "En frío 3-5 días, cubierto con una capa de aceite. Congela bien sin queso: se añade al descongelar.",
+    "pro": "Producir la base sin queso en robot frío y congelar en porciones; añadir el queso al terminar. En el pase, en cubeta pequeña con película de aceite. Para pincelar pescado a la brasa, aclarar con aceite al momento.",
+    "related": [
+      "picada",
+      "mojo-verde",
+      "chimichurri",
+      "aceites-aromatizados",
+      "alioli"
+    ]
+  },
+  {
+    "id": "salsa-brava",
+    "name": "Salsa brava",
+    "aka": [
+      "salsa de bravas",
+      "salsa para patatas bravas"
+    ],
+    "cat": "salsas",
+    "group": "Salsas españolas",
+    "summary": "Salsa picante de las patatas bravas: de pimentón y caldo ligada con harina, o de tomate según la zona.",
+    "what": "Salsa picante de bar muy asociada a Madrid. No hay receta única: la madrileña clásica se hace con aceite, pimentón dulce y picante, harina para ligar y caldo, sin tomate; en otras zonas lleva tomate y guindilla. En Cataluña y Valencia es habitual servir las bravas con [[alioli]] además de la salsa picante. Técnicamente, la versión de pimentón es un [[roux]] rojo mojado con caldo.",
+    "base": {
+      "for": "unos 500 ml",
+      "items": [
+        [
+          "Aceite de oliva",
+          "60 ml"
+        ],
+        [
+          "Cebolla (opcional)",
+          "100 g"
+        ],
+        [
+          "Ajo",
+          "2 dientes"
+        ],
+        [
+          "Harina",
+          "25 g"
+        ],
+        [
+          "Pimentón dulce",
+          "15 g"
+        ],
+        [
+          "Pimentón picante",
+          "5-10 g"
+        ],
+        [
+          "Guindilla o cayena (opcional)",
+          "1-2"
+        ],
+        [
+          "Caldo de pollo o fondo blanco, caliente",
+          "500 ml"
+        ],
+        [
+          "Vinagre de Jerez",
+          "10 ml"
+        ],
+        [
+          "Sal",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Pochar la cebolla y el ajo en el aceite a fuego suave 10 minutos.",
+        "Añadir la harina y rehogar 2 minutos sin que tome color.",
+        "Fuera del fuego, añadir los pimentones y remover 20-30 segundos.",
+        "Mojar con el caldo caliente batiendo para evitar grumos y cocer a fuego suave 10-15 minutos.",
+        "Triturar y colar. Ajustar con vinagre y sal; textura de napar."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Patatas bravas de bar",
+        "ratio": "receta base",
+        "note": "que nape la patata sin empaparla"
+      },
+      {
+        "use": "Brava de tomate",
+        "ratio": "sustituir la mitad del caldo por [[salsa-de-tomate]]",
+        "note": "más roja y algo ácida"
+      },
+      {
+        "use": "Para biberón o puntos en el plato",
+        "ratio": "15 g de harina por 500 ml",
+        "note": "más fluida"
+      },
+      {
+        "use": "Más picante sin más harina",
+        "ratio": "terminar con [[aceites-aromatizados|aceite de guindilla]]",
+        "note": "el picor se ajusta al final"
+      }
+    ],
+    "variants": [
+      {
+        "id": null,
+        "name": "Brava de tomate",
+        "note": "Con tomate y guindilla; habitual fuera de Madrid."
+      },
+      {
+        "id": null,
+        "name": "Bravas mixtas",
+        "note": "Con brava y alioli; típicas de Cataluña y Valencia."
+      },
+      {
+        "id": "alioli",
+        "name": "Alioli",
+        "note": "Su pareja en muchas barras."
+      },
+      {
+        "id": "salsa-de-tomate",
+        "name": "Salsa de tomate",
+        "note": "Base de la versión de tomate."
+      }
+    ],
+    "keys": [
+      "El pimentón fuera del fuego: quemado amarga sin remedio.",
+      "La calidad del pimentón es la salsa; un poco de pimentón ahumado le da carácter.",
+      "Patata frita en dos tiempos: confitada a 130-140 °C y terminada a 180 °C justo antes de servir.",
+      "Salsa templada sobre patata recién frita y en el último momento, para que no se ablande.",
+      "Ajustar el picante en dos niveles: suave para la sala y aceite picante aparte."
+    ],
+    "errors": [
+      {
+        "p": "Amarga",
+        "fix": "Pimentón quemado; no tiene arreglo, empezar de nuevo."
+      },
+      {
+        "p": "Grumos",
+        "fix": "Caldo frío o vertido de golpe; triturar y colar."
+      },
+      {
+        "p": "Sabe a harina",
+        "fix": "Harina poco rehogada o salsa poco cocida; cocer 5 minutos más."
+      },
+      {
+        "p": "Demasiado espesa al enfriar",
+        "fix": "Aclarar con caldo caliente al regenerar."
+      }
+    ],
+    "history": "Se asocia a los bares de Madrid, donde las patatas bravas se convirtieron en tapa clásica a lo largo del siglo XX. Varios locales reclaman su invención y no hay una versión probada. Fuera de Madrid cada zona la ha adaptado a su manera.",
+    "uses": [
+      "Patatas bravas",
+      "Huevos",
+      "Calamares y fritos",
+      "Torreznos",
+      "Croquetas"
+    ],
+    "keep": "En frío 5 días; congela bien. Regenerar a fuego suave aclarando con caldo.",
+    "pro": "Hacer en lotes de 2-3 litros. En el pase, en baño maría a 65 °C o más y en biberón templado, removiendo de vez en cuando. Patata confitada en bandejas en frío y terminada al pedido.",
+    "related": [
+      "roux",
+      "alioli",
+      "salsa-de-tomate",
+      "fondo-blanco",
+      "aceites-aromatizados",
+      "mayonesa"
+    ]
+  },
+  {
+    "id": "escabeche",
+    "name": "Escabeche",
+    "aka": [
+      "escabechado",
+      "en escabeche"
+    ],
+    "cat": "bases",
+    "group": "Bases y aliños",
+    "summary": "Preparación de aceite, vinagre, aromáticos y especias en la que se cocina o se cubre un producto para darle sabor y alargar su vida.",
+    "what": "Técnica y salsa a la vez: el producto (pescado azul, caza, aves, setas, verduras) se fríe o se marca y se cubre con un líquido caliente de aceite, vinagre, vino o agua, ajo, laurel, pimienta, pimentón y otras especias. El ácido y el reposo lo aromatizan y le dan textura firme. Hoy se hace sobre todo por sabor: la conservación depende siempre del frío. Está a medio camino entre la [[marinada]] y una [[vinagreta]] caliente.",
+    "base": {
+      "for": "1 litro de escabeche (para 1-1,5 kg de producto)",
+      "items": [
+        [
+          "Aceite de oliva",
+          "400 ml"
+        ],
+        [
+          "Vinagre de vino",
+          "200-250 ml"
+        ],
+        [
+          "Vino blanco",
+          "150 ml"
+        ],
+        [
+          "Agua o fondo",
+          "200 ml"
+        ],
+        [
+          "Ajo",
+          "1 cabeza en dientes"
+        ],
+        [
+          "Cebolla en juliana",
+          "1 (200 g)"
+        ],
+        [
+          "Zanahoria en rodajas",
+          "1 (100 g)"
+        ],
+        [
+          "Laurel",
+          "3 hojas"
+        ],
+        [
+          "Pimienta negra en grano",
+          "10 granos"
+        ],
+        [
+          "Tomillo",
+          "2 ramas"
+        ],
+        [
+          "Pimentón dulce (opcional)",
+          "5 g"
+        ],
+        [
+          "Sal",
+          "10-12 g"
+        ]
+      ],
+      "steps": [
+        "Marcar o freír el producto sin terminar de cocinarlo (el pescado, enharinado; la carne y las aves, doradas) y reservar.",
+        "En el aceite, confitar ajos, cebolla y zanahoria a fuego suave 10-15 minutos; añadir laurel, pimienta y tomillo.",
+        "Fuera del fuego, el pimentón; mojar enseguida con el vinagre, el vino y el agua, salar y hervir 5 minutos.",
+        "Pescado azul: verter el escabeche caliente sobre el pescado o darle 2-3 minutos dentro. Caza y aves: terminar la cocción dentro del escabeche a fuego suave hasta que estén tiernas.",
+        "Enfriar rápido y reposar en frío al menos 24 horas antes de servir."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Pescado azul (caballa, sardina, bonito)",
+        "ratio": "aceite y vinagre 2:1",
+        "note": "verter caliente sobre el pescado marcado; si cuece dentro, se reseca"
+      },
+      {
+        "use": "Caza y aves (perdiz, codorniz, conejo)",
+        "ratio": "aceite y vinagre 1,5:1, con vino y [[fondo-blanco]]",
+        "note": "cocción dentro del escabeche"
+      },
+      {
+        "use": "Verduras y setas",
+        "ratio": "3:1 con agua",
+        "note": "más suave para no tapar el producto"
+      },
+      {
+        "use": "Escabeche ligero de servicio",
+        "ratio": "3:1 con [[fumet]], templado",
+        "note": "como salsa para pescado de la brasa; más cerca de una vinagreta"
+      }
+    ],
+    "variants": [
+      {
+        "id": null,
+        "name": "Escabeche de caza",
+        "note": "Perdiz, codorniz o conejo, cocinados dentro."
+      },
+      {
+        "id": null,
+        "name": "Escabeche ligero o templado",
+        "note": "Para servir al momento con producto de la brasa."
+      },
+      {
+        "id": "marinada",
+        "name": "Marinada",
+        "note": "Aromatizar en crudo, sin cocción."
+      },
+      {
+        "id": "adobo",
+        "name": "Adobo",
+        "note": "Pariente con más pimentón y especias."
+      }
+    ],
+    "keys": [
+      "El escabeche de cocina no es una conserva estéril: siempre en frío, nunca a temperatura ambiente ni en tarro cerrado sin tratamiento térmico.",
+      "Si el pescado queda poco hecho o solo se cubre con el líquido caliente, congelarlo antes a -20 °C al menos 24 horas por el anisakis.",
+      "Producto seco y bien marcado: la costra aguanta el ácido.",
+      "Reposo de 24-48 horas: el primer día sabe a vinagre, el segundo a escabeche."
+    ],
+    "errors": [
+      {
+        "p": "Pescado seco o deshecho",
+        "fix": "Cocido de más dentro del escabeche; para pescado azul, solo verter caliente."
+      },
+      {
+        "p": "Demasiado ácido",
+        "fix": "Más aceite o fondo en el próximo; el ya hecho, servirlo con más líquido de aceite templado."
+      },
+      {
+        "p": "Amargo",
+        "fix": "Pimentón quemado o ajos tostados de más."
+      },
+      {
+        "p": "El aceite cuaja en cámara",
+        "fix": "Es normal; atemperar 30 minutos antes de servir."
+      }
+    ],
+    "history": "Conservar con vinagre es una técnica muy antigua del Mediterráneo. La etimología más aceptada relaciona la palabra con un guiso de vinagre de la cocina árabe medieval. Existe en España, Portugal, Italia y Latinoamérica, con variantes en cada sitio.",
+    "uses": [
+      "Pescado azul",
+      "Perdiz, codorniz y conejo",
+      "Mejillones",
+      "Setas y verduras",
+      "Ensaladas templadas"
+    ],
+    "keep": "A 4 °C o menos, con el producto cubierto por completo de líquido. Pescado, 4-5 días; caza y aves, alrededor de una semana. Mejora a las 24-48 horas. Servir atemperado.",
+    "pro": "En un restaurante de brasa, el escabeche de producto marcado al carbón (caballa, bonito, codorniz) es un entrante de producción adelantada. Gastronorm con el producto cubierto, film en contacto y fecha; fuera de frío, como máximo 2 horas.",
+    "related": [
+      "marinada",
+      "adobo",
+      "vinagreta",
+      "salmuera",
+      "fumet",
+      "aceites-aromatizados"
+    ]
+  }
+]

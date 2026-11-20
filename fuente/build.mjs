@@ -1,6 +1,6 @@
 // Empaqueta la app en un solo archivo HTML que se abre con doble clic (sin servidor ni instalación).
 import {createRequire} from 'node:module';
-import {readFileSync, writeFileSync, mkdirSync, rmSync} from 'node:fs';
+import {readFileSync, writeFileSync, mkdirSync, rmSync, copyFileSync} from 'node:fs';
 const require = createRequire(import.meta.url);
 const esbuild = require(process.env.ESBUILD || 'esbuild');
 const out = new URL('./salida/', import.meta.url).pathname, tmp = new URL('./tmp/', import.meta.url).pathname;
@@ -33,8 +33,10 @@ const html = `<!doctype html>
 </html>
 `;
 writeFileSync(out + 'ID Cocina/ID Cocina.html', html);
+// El radar y las instrucciones se guardan en el código (radar.js, LEEME.txt) y se copian a la versión del PC.
+copyFileSync(new URL('./radar.js', import.meta.url), out + 'ID Cocina/radar.js');
+copyFileSync(new URL('./LEEME.txt', import.meta.url), out + 'ID Cocina/LEEME.txt');
 // Versión para el móvil: la misma app servida en una dirección web, instalable («Añadir a pantalla de inicio») y que funciona sin conexión.
-import {copyFileSync} from 'node:fs';
 const web = out + 'web/'; rmSync(web, {recursive: true, force: true}); mkdirSync(web, {recursive: true});
 const head = '<meta name="theme-color" content="#ECE7DE">\n<link rel="manifest" href="manifest.webmanifest">\n<link rel="apple-touch-icon" href="icon-180.png">\n<meta name="apple-mobile-web-app-capable" content="yes">\n<meta name="apple-mobile-web-app-title" content="I+D">\n<meta name="robots" content="noindex">\n';
 const sw = "<script>if('serviceWorker' in navigator&&location.protocol==='https:')navigator.serviceWorker.register('sw.js')</script>\n";

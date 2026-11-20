@@ -11,6 +11,7 @@ import {iaOn, askIa, iaMessage, imageData} from '../ia.js';
 import {STATUSES, emptyState, skeleton} from './shared.js';
 import {go} from '../nav.js';
 import {rich} from './ask.js';
+import {entryForName} from '../saber/index.js';
 import {dishRequest} from '../ai-core.js';
 import {startShare, stopShare, shareUrl, refreshShareSoon} from '../share.js';
 
@@ -471,7 +472,7 @@ function itemSheet(ci, ii) {
   (top.length ? '<p class="fine">' + esc(t('Aporta sobre todo: ', 'Mostly brings: ')) + esc(top.map(x => axisName(x[0]).toLowerCase()).join(', ')) + '</p>' : '') +
   (unknown ? '<p class="hint">' + esc(t('No está en la tabla de sabores, así que no cuenta en el cálculo. Si se parece a algo conocido, dilo y contará.', 'It is not in the flavour table, so it is not counted. If it resembles something known, say so and it will count.')) + '</p><button type="button" class="btn ghost" data-act="map">' + icon('search') + esc(t('Decir a qué se parece', 'Say what it resembles')) + '</button>' : '') +
   '<fieldset class="choice"><legend>' + esc(t('Cuánto pesa en el plato', 'How much it weighs in the dish')) + '</legend>' + [[3, t('Protagonista', 'Lead')], [2, t('Normal', 'Normal')], [1, t('Un toque', 'A touch')]].map(([w, label]) => '<button type="button" class="pill' + (it.w === w ? ' active' : '') + '" data-w="' + w + '" aria-pressed="' + (it.w === w) + '">' + esc(label) + '</button>').join('') + '</fieldset>' +
-  '<div class="row-actions">' + (ing ? '<a class="btn ghost" href="#/sabores/' + esc(ing.id) + '">' + icon('wheel') + esc(t('Con qué combina', 'What it pairs with')) + '</a>' : '') + '<button type="button" class="btn danger" data-act="del-item">' + icon('x') + esc(t('Quitar', 'Remove')) + '</button></div>'});
+  '<div class="row-actions">' + (entryForName(it.n) ? '<a class="btn ghost" href="#/saber/' + esc(entryForName(it.n).id) + '">' + icon('brain') + esc(t('En el Saber', 'In Knowledge')) + '</a>' : '') + (ing ? '<a class="btn ghost" href="#/sabores/' + esc(ing.id) + '">' + icon('wheel') + esc(t('Con qué combina', 'What it pairs with')) + '</a>' : '') + '<button type="button" class="btn danger" data-act="del-item">' + icon('x') + esc(t('Quitar', 'Remove')) + '</button></div>'});
  const qty = $('#itemQty', s.el);
  qty.oninput = () => { const v = clip(qty.value, 30); if (v) it.q = v; else delete it.q; changedQty = true; touch('components'); };
  qty.onkeydown = e => { if (e.key === 'Enter') { e.preventDefault(); s.close(); } };

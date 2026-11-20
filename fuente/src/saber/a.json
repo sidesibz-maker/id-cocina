@@ -1,0 +1,2269 @@
+[
+  {
+    "id": "roux",
+    "name": "Roux",
+    "aka": [
+      "ru",
+      "roux blanco",
+      "roux rubio",
+      "roux oscuro"
+    ],
+    "cat": "conceptos",
+    "group": "Ligazones",
+    "summary": "Grasa y harina a partes iguales, cocinadas juntas, para espesar salsas, cremas y masas.",
+    "what": "Es la [[ligazones|ligazón]] clásica de la cocina francesa: grasa (normalmente mantequilla) y harina de trigo en el mismo peso, cocinadas para quitar el gusto a crudo y envolver el almidón en grasa, de modo que se reparta sin grumos al añadir el líquido. Según el tiempo de cocción sale blanco, rubio u oscuro; cuanto más tostado, más sabor y menos poder espesante. Es la base de la [[bechamel]], el [[veloute|velouté]] y la [[espanola|salsa española]].",
+    "base": {
+      "for": "120 g de roux (liga 1 litro de líquido a consistencia media)",
+      "items": [
+        [
+          "Mantequilla o grasa clarificada",
+          "60 g"
+        ],
+        [
+          "Harina de trigo floja",
+          "60 g"
+        ]
+      ],
+      "steps": [
+        "Funde la grasa a fuego medio-bajo en un cazo de fondo grueso.",
+        "Añade la harina de golpe y mezcla con varilla o espátula hasta tener una pasta lisa.",
+        "Roux blanco: 2-3 minutos sin que coja color, hasta que huela a galleta y no a harina cruda.",
+        "Roux rubio: 5-8 minutos removiendo, hasta color paja o arena.",
+        "Roux oscuro: 15-25 minutos a fuego suave sin dejar de remover, hasta color avellana tostada. Mejor con grasa clarificada, que aguanta más temperatura sin quemarse.",
+        "Liga con contraste de temperatura: roux caliente con líquido frío o templado, o roux frío con líquido caliente. Bate con energía, lleva a ebullición y cuece al menos 10-15 minutos para que el almidón termine de hincharse."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Sopa crema o salsa ligera",
+        "ratio": "30-50 g de mantequilla y 30-50 g de harina por litro",
+        "note": "Apenas napa; para cremas y salsas que todavía van a reducir."
+      },
+      {
+        "use": "Salsa napante",
+        "ratio": "60 g + 60 g por litro",
+        "note": "Cubre la cuchara; bechamel de canelones o velouté de servicio."
+      },
+      {
+        "use": "Salsa espesa para ligar rellenos",
+        "ratio": "80 g + 80 g por litro",
+        "note": "Rellenos, bases de soufflé, gratinados con guarnición que suelta agua."
+      },
+      {
+        "use": "Masa de croquetas",
+        "ratio": "90-110 g + 90-110 g por litro",
+        "note": "Más con géneros húmedos (setas, bacalao, marisco), menos con jamón seco."
+      },
+      {
+        "use": "Roux oscuro",
+        "ratio": "Sube un 20-30 % la cantidad",
+        "note": "El tostado degrada parte del almidón y espesa menos."
+      }
+    ],
+    "variants": [
+      {
+        "id": null,
+        "name": "Roux blanco",
+        "note": "Para bechamel y salsas que deben quedar blancas."
+      },
+      {
+        "id": null,
+        "name": "Roux rubio",
+        "note": "Para velouté y salsas de ave o pescado."
+      },
+      {
+        "id": null,
+        "name": "Roux oscuro",
+        "note": "Para salsa española y guisos oscuros; aporta sabor tostado."
+      }
+    ],
+    "keys": [
+      "Pesa siempre: la proporción 1:1 en peso es la que funciona, no a ojo.",
+      "Contraste de temperatura al ligar; si roux y líquido están ambos muy calientes, salen grumos.",
+      "Después de ligar, cuece mínimo 10-15 minutos: si no, la salsa sabe a harina aunque el roux estuviera bien hecho.",
+      "La harina floja da salsas más finas; la de fuerza tiende a quedar gomosa."
+    ],
+    "errors": [
+      {
+        "p": "Grumos",
+        "fix": "Faltó contraste de temperatura o se echó el líquido de golpe sin batir. Bate fuerte, pasa por chino o tritura y vuelve a hervir."
+      },
+      {
+        "p": "Puntos negros o sabor amargo",
+        "fix": "Roux quemado: no tiene arreglo. Tíralo y empieza a fuego más bajo."
+      },
+      {
+        "p": "La salsa no espesa con roux oscuro",
+        "fix": "Es normal: el tostado resta fuerza. Añade más roux o reduce la salsa."
+      }
+    ],
+    "history": "Tostar harina con grasa para ligar se generalizó en la cocina francesa entre los siglos XVII y XVIII y quedó fijado en el sistema clásico de salsas madre. El nombre alude al tono rojizo del roux tostado. Desde finales del siglo XX muchas cocinas lo han cambiado por reducciones y almidones, pero en bechamel y croquetas sigue siendo insustituible.",
+    "uses": [
+      "Bechamel y croquetas",
+      "Velouté y derivadas",
+      "Salsa española",
+      "Sopas crema",
+      "Guisos y estofados"
+    ],
+    "keep": "Cocinado, enfriado y tapado aguanta 1-2 semanas en cámara y se congela bien en porciones. Se usa directamente desde frío sobre líquido caliente.",
+    "pro": "Para cantidad, hazlo en el horno: bandeja con grasa y harina a 170-180 °C, removiendo cada 10 minutos, hasta el color buscado. Porciónalo frío en bloques de 60-100 g etiquetados: ligazón inmediata en el pase, añadido a trozos al líquido hirviendo.",
+    "related": [
+      "ligazones",
+      "bechamel",
+      "veloute",
+      "espanola",
+      "fondo-blanco",
+      "fondo-oscuro"
+    ]
+  },
+  {
+    "id": "ligazones",
+    "name": "Ligazones",
+    "aka": [
+      "espesantes",
+      "ligar salsas",
+      "liaison",
+      "cómo espesar"
+    ],
+    "cat": "conceptos",
+    "group": "Ligazones",
+    "summary": "Las formas de espesar y dar cuerpo a salsas, caldos y cremas, y cuándo conviene cada una.",
+    "what": "Ligar es dar cuerpo a un líquido para que nape y sea estable. Se consigue con almidones (harina en [[roux]] o beurre manié, maicena, fécula, arrurruz, kuzu), con proteínas (yema, sangre, gelatina), con grasa emulsionada (ver [[emulsiones]]), por [[reducciones|reducción]] o con sólidos (purés, pan, [[picada]]). Cada método cambia sabor, brillo y comportamiento al recalentar y congelar.",
+    "base": {
+      "for": "1 litro de fondo o jugo (ligazón rápida con maicena)",
+      "items": [
+        [
+          "Fondo o jugo caliente",
+          "1 l"
+        ],
+        [
+          "Maicena (almidón de maíz)",
+          "25-30 g"
+        ],
+        [
+          "Agua o fondo frío",
+          "50-60 ml"
+        ]
+      ],
+      "steps": [
+        "Disuelve la maicena en el líquido frío justo antes de usarla; se deposita en el fondo enseguida.",
+        "Con el fondo hirviendo, añádela en hilo sin dejar de batir.",
+        "Hierve 1-2 minutos: hasta que no rompe el hervor no espesa del todo ni pierde el gusto a almidón.",
+        "Rectifica poco a poco; es fácil pasarse y quitar cuerpo es más difícil que ponerlo."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Maicena",
+        "ratio": "15-20 g/l jugo ligero; 25-35 g/l salsa napante",
+        "note": "Algo opaca; pierde fuerza con cocción larga y al congelar."
+      },
+      {
+        "use": "Fécula de patata",
+        "ratio": "15-25 g/l",
+        "note": "Muy transparente; cocida de más se vuelve filamentosa."
+      },
+      {
+        "use": "Arrurruz o kuzu",
+        "ratio": "20-30 g/l",
+        "note": "Brillo y transparencia; disolver en frío y añadir al final."
+      },
+      {
+        "use": "Yema y nata",
+        "ratio": "2-3 yemas + 100-200 ml de nata por litro",
+        "note": "Templar antes; no pasar de 80-85 °C y no volver a hervir."
+      },
+      {
+        "use": "Gelatina",
+        "ratio": "6-10 g/l para dar cuerpo; 12-16 g/l para cuajar firme",
+        "note": "Hojas de unos 2 g; hidratar en agua fría y disolver en caliente sin hervir."
+      },
+      {
+        "use": "Agar",
+        "ratio": "1-2 g/l gel blando; 3-5 g/l firme",
+        "note": "Hervir 1-2 minutos; cuaja hacia 35-40 °C y aguanta templado."
+      },
+      {
+        "use": "Goma xantana",
+        "ratio": "1-3 g/l",
+        "note": "Espesa sin cocción; dispersar con batidora de brazo."
+      }
+    ],
+    "variants": [
+      {
+        "id": "roux",
+        "name": "Roux",
+        "note": "Harina y grasa cocinadas; base de bechamel, velouté y española."
+      },
+      {
+        "id": null,
+        "name": "Beurre manié",
+        "note": "Harina y mantequilla crudas amasadas a partes iguales; en bolitas al final, 40-60 g por litro, hervir 2-3 minutos."
+      },
+      {
+        "id": "reducciones",
+        "name": "Reducción",
+        "note": "Concentra sabor y gelatina natural; sin añadidos."
+      },
+      {
+        "id": "picada",
+        "name": "Picada",
+        "note": "Frutos secos, pan frito y ajo majados; liga y da sabor a guisos catalanes."
+      }
+    ],
+    "keys": [
+      "Harina y maicena aguantan mejor el recalentado; fécula, arrurruz y kuzu dan más brillo pero se rompen con cocción larga.",
+      "El ácido debilita los almidones: añade limón o vinagre al final.",
+      "No metas en la salsa la cuchara con la que pruebas: la saliva tiene enzimas que licúan las salsas ligadas con almidón.",
+      "La piña, el kiwi o la papaya frescos impiden cuajar la gelatina; cuécelos antes o usa agar."
+    ],
+    "errors": [
+      {
+        "p": "La salsa ligada se vuelve líquida en el baño maría",
+        "fix": "Almidón de raíz sobrecocido o saliva en la salsa. Vuelve a ligar con poca cantidad y no la remuevas con la cuchara de probar."
+      },
+      {
+        "p": "Yema granulada",
+        "fix": "Se pasó de 85 °C. Tritura con un chorrito de líquido frío y cuela; si no se recupera, rehaz la ligazón."
+      },
+      {
+        "p": "Gelatina que no cuaja",
+        "fix": "Fruta con enzimas, se hirvió demasiado o falta dosis. Revisa el peso de las hojas y no la hiervas."
+      }
+    ],
+    "history": "La cocina clásica francesa ligó durante siglos con harina. Desde los años setenta del siglo XX se impusieron salsas más ligeras, basadas en reducciones, mantequilla y emulsiones, y después entraron en la cocina profesional el kuzu, el agar o la xantana, que ligan con muy poca cantidad sin tapar el sabor.",
+    "uses": [
+      "Salsas y jugos",
+      "Sopas y cremas",
+      "Guisos y estofados",
+      "Glaseados",
+      "Gelatinas y fondos fríos"
+    ],
+    "keep": "Lo ligado con harina regenera bien a fuego suave con un poco de líquido; con maicena o fécula puede soltar agua al día siguiente o al congelar. Con yema o mantequilla, nunca a hervor: baño maría a 60-70 °C.",
+    "pro": "Ten en el pase roux en bloque, maicena pesada y mantequilla fría en dados: con eso corriges cualquier salsa en un minuto. Deja el último punto (mantequilla, yema) para el momento de servir.",
+    "related": [
+      "roux",
+      "reducciones",
+      "emulsiones",
+      "picada",
+      "glace",
+      "alemana",
+      "beurre-blanc"
+    ]
+  },
+  {
+    "id": "bechamel",
+    "name": "Bechamel",
+    "aka": [
+      "besamel",
+      "salsa blanca"
+    ],
+    "cat": "salsas",
+    "group": "Salsas madre",
+    "summary": "Salsa madre de leche ligada con roux blanco; base de croquetas, canelones y gratinados.",
+    "what": "Leche ligada con [[roux]] blanco y sazonada con sal, pimienta blanca y nuez moscada. Es una de las salsas madre de la cocina clásica y, en España, la base de la croqueta. Su espesor se regula solo con la proporción de roux por litro, así que una misma técnica sirve para salsas fluidas, para gratinar o para masas que se cortan en frío. De ella salen la [[mornay]] y la [[soubise]].",
+    "base": {
+      "for": "1 litro (consistencia media)",
+      "items": [
+        [
+          "Leche entera",
+          "1 l"
+        ],
+        [
+          "Mantequilla",
+          "60 g"
+        ],
+        [
+          "Harina de trigo floja",
+          "60 g"
+        ],
+        [
+          "Cebolla clavada con clavo y laurel (opcional)",
+          "1/2 cebolla"
+        ],
+        [
+          "Sal, pimienta blanca y nuez moscada",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Calienta la leche (si quieres, infusionada 10 minutos con la cebolla clavada y el laurel, y luego colada).",
+        "Haz un roux blanco con la mantequilla y la harina: 2-3 minutos a fuego medio-bajo, sin color.",
+        "Añade la leche caliente poco a poco al principio, batiendo con varilla, y el resto de golpe cuando la mezcla esté lisa.",
+        "Lleva a ebullición sin dejar de remover por el fondo y las esquinas.",
+        "Cuece 15-20 minutos a fuego suave, removiendo, hasta que no sepa a harina.",
+        "Sazona con sal, pimienta blanca y nuez moscada recién rallada. Pasa por chino si hace falta y cubre con film en contacto."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Bechamel ligera",
+        "ratio": "40-50 g de mantequilla y 40-50 g de harina por litro",
+        "note": "Salsas para verduras, bases de sopa crema, para alargar otras salsas."
+      },
+      {
+        "use": "Bechamel media",
+        "ratio": "60 g + 60 g por litro",
+        "note": "Canelones, lasaña, base de mornay y gratinados."
+      },
+      {
+        "use": "Bechamel espesa",
+        "ratio": "80 g + 80 g por litro",
+        "note": "Rellenos, base de soufflé, para envolver piezas (tipo villaroy)."
+      },
+      {
+        "use": "Croquetas",
+        "ratio": "90-110 g + 90-110 g por litro",
+        "note": "Más roux si el género es húmedo; cocer 20-30 minutos para una masa fina que se sostenga en frío."
+      }
+    ],
+    "variants": [
+      {
+        "id": "mornay",
+        "name": "Mornay",
+        "note": "Con queso y, para gratinar, yemas."
+      },
+      {
+        "id": "soubise",
+        "name": "Soubise",
+        "note": "Con puré de cebolla pochada sin color."
+      },
+      {
+        "id": null,
+        "name": "Bechamel con nata",
+        "note": "Se termina con un 10-20 % de nata; más untuosa y fina."
+      },
+      {
+        "id": null,
+        "name": "Bechamel con fondo",
+        "note": "Mitad leche, mitad caldo de ave o de cocción de marisco; para croquetas y canelones con más sabor."
+      }
+    ],
+    "keys": [
+      "La cocción después de ligar es la que quita el gusto a harina: no menos de 15 minutos.",
+      "Film en contacto o una película de mantequilla por encima para que no haga costra.",
+      "En croquetas, el sabor del género va en la grasa del roux: rehoga ahí el jamón, la cebolla o las setas antes de la harina.",
+      "Al enfriar espesa mucho; si es para salsear, déjala más fluida de lo que parece."
+    ],
+    "errors": [
+      {
+        "p": "Grumos",
+        "fix": "Bate fuerte o pasa por batidora de brazo y chino; vuelve a hervir 2-3 minutos."
+      },
+      {
+        "p": "Sabe a harina",
+        "fix": "Poca cocción. Sigue cociendo a fuego suave removiendo."
+      },
+      {
+        "p": "Demasiado espesa",
+        "fix": "Aligérala con leche caliente, batiendo, y vuelve a llevar a ebullición."
+      },
+      {
+        "p": "Croquetas que se abren al freír",
+        "fix": "Masa blanda o poco fría. Más roux o más reducción, abatir bien y empanado doble."
+      }
+    ],
+    "history": "Es una salsa francesa del siglo XVII; su nombre se asocia tradicionalmente a un personaje de la corte de Luis XIV, aunque la autoría real no está clara. En España se convirtió en la base de croquetas, canelones y la villaroy.",
+    "uses": [
+      "Croquetas",
+      "Canelones y lasaña",
+      "Gratinados de verduras y pescado",
+      "Pechugas villaroy",
+      "Base de soufflé"
+    ],
+    "keep": "Abatir rápido (por debajo de 10 °C en menos de 2 horas) con film en contacto; 3-4 días en cámara. Regenerar a fuego suave con un chorrito de leche, batiendo. Se congela, aunque puede quedar algo granulosa: tritúrala al regenerar. La masa de croquetas formada y empanada congela muy bien.",
+    "pro": "En lotes grandes, cazo ancho de fondo grueso y leche caliente; para croquetas, extiende la masa en bandeja GN con film en contacto y abate. En el pase, baño maría a 65-70 °C tapada, corrigiendo con leche caliente.",
+    "related": [
+      "roux",
+      "mornay",
+      "soubise",
+      "ligazones",
+      "veloute"
+    ]
+  },
+  {
+    "id": "mornay",
+    "name": "Mornay",
+    "aka": [
+      "salsa mornay",
+      "bechamel con queso",
+      "salsa de queso"
+    ],
+    "cat": "salsas",
+    "group": "Derivadas de la bechamel",
+    "summary": "Bechamel con queso rallado y, a menudo, yemas; la salsa clásica para gratinar.",
+    "what": "Derivada de la [[bechamel]] a la que se añade queso curado rallado y mantequilla, y para gratinar también yemas, que ayudan a dorar y dan una costra más lisa. Para pescado se hace tradicionalmente con parte de [[fumet]] reducido. Es la salsa de los gratinados de verdura, huevos, pasta y pescados blancos.",
+    "base": {
+      "for": "1 litro aproximado",
+      "items": [
+        [
+          "Bechamel media (60 + 60 g por litro)",
+          "1 l"
+        ],
+        [
+          "Queso curado rallado (tipo gruyer o emmental, o mezcla con parmesano)",
+          "100-150 g"
+        ],
+        [
+          "Yemas (opcional, para gratinar)",
+          "2"
+        ],
+        [
+          "Mantequilla",
+          "30-50 g"
+        ],
+        [
+          "Nuez moscada, pimienta blanca y cayena",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Prepara la bechamel y déjala a fuego mínimo, recién hecha y bien cocida.",
+        "Fuera del fuego, añade el queso rallado y remueve hasta que se funda; si hace falta, devuelve al fuego muy bajo sin que hierva.",
+        "Si lleva yemas, témplalas con un cazo de salsa y luego incorpóralas al conjunto; ya no debe hervir.",
+        "Termina con la mantequilla en dados, ajusta sal al final (el queso ya sala) y un punto de cayena.",
+        "Napa el género y gratina con el grill fuerte o el horno a 220-250 °C hasta dorar."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Gratinar (verduras, canelones, huevos)",
+        "ratio": "120-150 g de queso y 2 yemas por litro",
+        "note": "Dora parejo y forma costra."
+      },
+      {
+        "use": "Salsa para pasta o coliflor sin gratinar",
+        "ratio": "80-100 g de queso, sin yemas, bechamel ligera",
+        "note": "Más fluida, no se corta al mantener."
+      },
+      {
+        "use": "Pescado gratinado",
+        "ratio": "Mitad bechamel, mitad fumet reducido; 80 g de queso",
+        "note": "Más ligera y con sabor a mar."
+      },
+      {
+        "use": "Glaseado rápido",
+        "ratio": "3 partes de mornay + 1 de nata montada",
+        "note": "Dora en segundos bajo la salamandra."
+      }
+    ],
+    "variants": [
+      {
+        "id": "bechamel",
+        "name": "Bechamel",
+        "note": "La base, sin queso."
+      },
+      {
+        "id": null,
+        "name": "Mornay de pescado",
+        "note": "Con fumet reducido; para lenguado, merluza o mejillones gratinados."
+      },
+      {
+        "id": null,
+        "name": "Mornay con nata montada",
+        "note": "Para glasear al momento en salamandra."
+      },
+      {
+        "id": null,
+        "name": "Salsa de queso azul",
+        "note": "Cambia parte del queso por queso azul; para carnes y pasta, sin yemas."
+      }
+    ],
+    "keys": [
+      "Que no hierva una vez echado el queso: suelta grasa y se vuelve elástica.",
+      "Queso curado y bien seco, rallado fino; los quesos tiernos se hacen hebra.",
+      "Sala al final: el queso aporta mucha sal.",
+      "Para gratinar, la capa de salsa debe ser fina y el calor fuerte y de arriba; si tarda, el queso suelta grasa.",
+      "Las yemas mejoran el dorado pero la salsa ya no se puede hervir ni recalentar fuerte."
+    ],
+    "errors": [
+      {
+        "p": "Salsa grasienta o cortada",
+        "fix": "Se hirvió o el queso era graso. Añade un poco de bechamel caliente o leche y bate fuera del fuego."
+      },
+      {
+        "p": "Hebras de queso",
+        "fix": "Queso poco curado o demasiado calor. Usa queso seco y fúndelo fuera del fuego."
+      },
+      {
+        "p": "No dora",
+        "fix": "Falta calor de arriba o faltan yemas. Gratina más cerca del grill o añade yema o nata montada."
+      },
+      {
+        "p": "Demasiado salada",
+        "fix": "Alarga con bechamel sin sal."
+      }
+    ],
+    "history": "El nombre no tiene un origen documentado con certeza. Se fijó en la cocina francesa del siglo XIX como derivada clásica de la bechamel y desde entonces es la salsa de gratinar por excelencia en la cocina de hotel y de restaurante.",
+    "uses": [
+      "Coliflor y verduras gratinadas",
+      "Canelones",
+      "Huevos gratinados",
+      "Pescado blanco gratinado",
+      "Sándwich caliente de jamón y queso"
+    ],
+    "keep": "Abatir con film en contacto; 2-3 días en cámara (con yemas, mejor consumir en 48 horas). Regenerar a fuego muy suave o al baño maría con un poco de leche, sin hervir. No conviene congelarla con yemas.",
+    "pro": "Ten bechamel base en lote y termina la mornay en la cantidad del servicio. Mantenla al baño maría a 60-65 °C tapada; si va con yemas, prepara solo lo del turno. Para gratinar en cantidad, napa en frío y pasa a horno muy caliente.",
+    "related": [
+      "bechamel",
+      "roux",
+      "fumet",
+      "soubise"
+    ]
+  },
+  {
+    "id": "soubise",
+    "name": "Soubise",
+    "aka": [
+      "salsa soubise",
+      "puré soubise",
+      "salsa de cebolla"
+    ],
+    "cat": "salsas",
+    "group": "Derivadas de la bechamel",
+    "summary": "Bechamel con puré de cebolla pochada sin color; salsa suave y dulce para carnes blancas, cordero y huevos.",
+    "what": "Salsa de cebolla blanca pochada lentamente en mantequilla, sin que coja color, mezclada con [[bechamel]] espesa, cocida y pasada fina. Queda blanca, dulce y sedosa. Existe también una versión más antigua ligada con arroz en lugar de bechamel. Hecha muy espesa se usa como puré o como relleno para gratinar.",
+    "base": {
+      "for": "1 litro aproximado",
+      "items": [
+        [
+          "Cebolla blanca en juliana fina",
+          "1 kg"
+        ],
+        [
+          "Mantequilla",
+          "80 g"
+        ],
+        [
+          "Bechamel espesa (80 + 80 g por litro)",
+          "500 ml"
+        ],
+        [
+          "Nata (35 % de grasa)",
+          "100-150 ml"
+        ],
+        [
+          "Sal, pimienta blanca y nuez moscada",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Blanquea la cebolla 2-3 minutos en agua hirviendo con sal y escúrrela bien: quita acritud y ayuda a que quede blanca.",
+        "Pocha la cebolla con la mantequilla y una pizca de sal, tapada y a fuego muy suave, 30-40 minutos, hasta que esté tierna y sin color.",
+        "Añade la bechamel y cuece 10-15 minutos a fuego suave removiendo.",
+        "Tritura y pasa por chino fino.",
+        "Ajusta la textura con la nata caliente, sazona y termina con unos dados de mantequilla fría."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Salsa para carnes",
+        "ratio": "1 kg de cebolla por 500 ml de bechamel, con 150 ml de nata",
+        "note": "Napante y fluida."
+      },
+      {
+        "use": "Puré o guarnición",
+        "ratio": "1 kg de cebolla por 250 ml de bechamel espesa, sin nata",
+        "note": "Se sirve con cuchara; muy dulce."
+      },
+      {
+        "use": "Relleno para gratinar",
+        "ratio": "Puré espeso con 1 yema por cada 250 g",
+        "note": "Para rellenar o cubrir piezas y dorar al horno."
+      },
+      {
+        "use": "Versión con arroz",
+        "ratio": "1 kg de cebolla con 100 g de arroz y 500 ml de caldo blanco",
+        "note": "Cocer juntos al horno tapado y triturar; sin harina."
+      }
+    ],
+    "variants": [
+      {
+        "id": "bechamel",
+        "name": "Bechamel",
+        "note": "La base."
+      },
+      {
+        "id": null,
+        "name": "Soubise de arroz",
+        "note": "Ligada con arroz cocido en caldo; más rústica y sin gluten si el caldo lo es."
+      },
+      {
+        "id": null,
+        "name": "Soubise con tomate",
+        "note": "Con un poco de tomate concentrado; tono rosado."
+      },
+      {
+        "id": null,
+        "name": "Soubise de cebolleta o puerro",
+        "note": "Más verde y ligera."
+      }
+    ],
+    "keys": [
+      "La cebolla no debe dorarse nunca: tapa, fuego mínimo y una pizca de sal para que sude.",
+      "Blanquear la cebolla quita picor y amargor, sobre todo si no es de temporada.",
+      "Pasa por chino fino; las fibras de cebolla estropean la textura.",
+      "Su dulzor pide contraste: sirve con carnes asadas con buen jugo o con algo ácido."
+    ],
+    "errors": [
+      {
+        "p": "Salsa amarillenta o tostada",
+        "fix": "La cebolla cogió color. Rehaz el pochado más lento y tapado."
+      },
+      {
+        "p": "Textura fibrosa",
+        "fix": "Tritura más tiempo y pasa por chino fino."
+      },
+      {
+        "p": "Sabor picante o amargo",
+        "fix": "Cebolla poco pochada o sin blanquear. Prolonga la cocción a fuego suave."
+      }
+    ],
+    "history": "Su nombre remite a una casa noble francesa del siglo XVIII y aparece en los recetarios clásicos tanto en versión de bechamel como de arroz. Fue una salsa habitual de la cocina de hotel para cordero y ternera, y hoy se usa sobre todo como puré o como acompañamiento suave.",
+    "uses": [
+      "Cordero asado",
+      "Ternera y carnes blancas",
+      "Huevos gratinados",
+      "Pescado blanco",
+      "Puré de guarnición"
+    ],
+    "keep": "3-4 días en cámara, abatida y con film en contacto. Regenerar a fuego suave con un poco de nata o leche. Congela razonablemente bien; tritura al regenerar.",
+    "pro": "El pochado lento de la cebolla se puede hacer en lote en horno a 140-150 °C, tapado, en bandeja GN. Guarda la base de cebolla pochada y termina con bechamel y nata según el servicio. Baño maría a 65 °C tapada.",
+    "related": [
+      "bechamel",
+      "roux",
+      "mornay"
+    ]
+  },
+  {
+    "id": "veloute",
+    "name": "Velouté",
+    "aka": [
+      "veluté",
+      "velouté de ave",
+      "velouté de pescado",
+      "salsa rubia"
+    ],
+    "cat": "salsas",
+    "group": "Salsas madre",
+    "summary": "Salsa madre de fondo blanco (ave, ternera o pescado) ligado con roux rubio.",
+    "what": "Un fondo blanco claro ([[fondo-blanco|de ave o ternera]] o [[fumet]] de pescado) ligado con [[roux]] rubio y cocido lentamente hasta quedar sedoso. Es la base de la [[suprema]], la [[alemana]] y las salsas de vino blanco para pescado. La calidad depende casi por completo del fondo. En cocina actual, velouté también llama a cremas de verdura finas, pero la salsa clásica es esta.",
+    "base": {
+      "for": "1 litro",
+      "items": [
+        [
+          "Fondo blanco de ave o ternera, o fumet",
+          "1,2 l"
+        ],
+        [
+          "Mantequilla",
+          "50-60 g"
+        ],
+        [
+          "Harina de trigo floja",
+          "50-60 g"
+        ],
+        [
+          "Recortes de champiñón (opcional)",
+          "50 g"
+        ],
+        [
+          "Sal y pimienta blanca",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Haz un roux rubio claro: 4-5 minutos a fuego medio-bajo hasta color paja.",
+        "Déjalo templar y añade el fondo caliente batiendo.",
+        "Lleva a ebullición, añade los recortes de champiñón y baja a fuego suave.",
+        "Cuece 25-30 minutos con el cazo ladeado, retirando la grasa y la espuma que suben por un lado.",
+        "Cuela por chino fino o estameña. Ajusta sal solo al final, porque reduce."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Base de sopa o crema",
+        "ratio": "30-40 g + 30-40 g por litro",
+        "note": "Se termina con nata o yema."
+      },
+      {
+        "use": "Salsa napante de servicio",
+        "ratio": "50-60 g + 50-60 g por litro",
+        "note": "Para napar ave, ternera o pescado."
+      },
+      {
+        "use": "Para ligar rellenos o croquetas de ave",
+        "ratio": "90-100 g + 90-100 g por litro",
+        "note": "Masa que se sostiene en frío."
+      },
+      {
+        "use": "Salsa de vino blanco para pescado",
+        "ratio": "Velouté de pescado + fumet reducido con vino + nata y mantequilla",
+        "note": "Reducir hasta napar y montar al final."
+      }
+    ],
+    "variants": [
+      {
+        "id": "suprema",
+        "name": "Suprema",
+        "note": "Velouté de ave con nata y mantequilla."
+      },
+      {
+        "id": "alemana",
+        "name": "Alemana",
+        "note": "Velouté de ternera ligado con yemas y nata."
+      },
+      {
+        "id": null,
+        "name": "Salsa de vino blanco",
+        "note": "Velouté de pescado con reducción de vino y fumet."
+      },
+      {
+        "id": null,
+        "name": "Salsa Bercy",
+        "note": "Velouté de pescado con chalota y vino blanco reducidos."
+      },
+      {
+        "id": null,
+        "name": "Salsa aurora",
+        "note": "Velouté con un poco de tomate concentrado."
+      }
+    ],
+    "keys": [
+      "El fondo manda: si el fondo es flojo, la salsa también. Mejor un fondo bien reducido y gelatinoso.",
+      "Desgrasar y espumar durante la cocción es lo que da la textura aterciopelada.",
+      "Roux templado y fondo caliente, o al revés: contraste para evitar grumos.",
+      "Para pescado, cocción más corta (15-20 minutos): el fumet se enturbia y amarga si cuece mucho."
+    ],
+    "errors": [
+      {
+        "p": "Salsa turbia o grasa",
+        "fix": "No se espumó. Vuelve a hervir suave con el cazo ladeado y retira lo que sube."
+      },
+      {
+        "p": "Sabe a harina",
+        "fix": "Poca cocción. Prolonga a fuego suave."
+      },
+      {
+        "p": "Sabor plano",
+        "fix": "Fondo débil. Añade fondo reducido o un poco de glace de ave."
+      },
+      {
+        "p": "Color gris",
+        "fix": "Roux demasiado tostado o fondo oscuro. Para salsas blancas, roux claro y fondo blanco."
+      }
+    ],
+    "history": "Su nombre significa aterciopelada. Fue una de las grandes salsas de la cocina francesa del siglo XIX, y la clasificación clásica de salsas madre la mantuvo como base de todas las salsas blancas de carne y pescado. Hoy se usa menos que antes, sustituida a menudo por fondos reducidos con nata.",
+    "uses": [
+      "Ave y ternera en blanco",
+      "Pescado blanco",
+      "Fricasés y blanquetas",
+      "Volovanes y rellenos",
+      "Base de cremas"
+    ],
+    "keep": "Abatida y con film en contacto, 3-4 días en cámara; la de pescado, 2 días. Congela bien en porciones. Regenera a fuego suave con un poco de fondo.",
+    "pro": "Prepara la velouté base en lote y termina cada derivada al pase. Mantén al baño maría a 65-70 °C tapada. Para servicio de banquete, ten preparado fondo reducido caliente para corregir la textura en el último momento.",
+    "related": [
+      "fondo-blanco",
+      "fumet",
+      "roux",
+      "suprema",
+      "alemana",
+      "bechamel"
+    ]
+  },
+  {
+    "id": "suprema",
+    "name": "Suprema",
+    "aka": [
+      "salsa suprema",
+      "suprême",
+      "salsa de ave con nata"
+    ],
+    "cat": "salsas",
+    "group": "Derivadas del velouté",
+    "summary": "Velouté de ave reducido con nata y terminado con mantequilla; salsa blanca fina para aves.",
+    "what": "Derivada del [[veloute|velouté]] de ave: se reduce con más [[fondo-blanco|fondo de ave]] y nata hasta que nape y se termina con mantequilla fría y unas gotas de limón. Es la salsa clásica de la pechuga de ave escalfada o asada en blanco. Debe quedar de color marfil, brillante, sin sabor a harina y con mucho gusto a ave.",
+    "base": {
+      "for": "1 litro aproximado",
+      "items": [
+        [
+          "Velouté de ave",
+          "1 l"
+        ],
+        [
+          "Fondo blanco de ave reducido",
+          "250 ml"
+        ],
+        [
+          "Recortes de champiñón",
+          "60 g"
+        ],
+        [
+          "Nata (35 % de grasa)",
+          "250-300 ml"
+        ],
+        [
+          "Mantequilla fría en dados",
+          "50-80 g"
+        ],
+        [
+          "Zumo de limón, sal y pimienta blanca",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Lleva a ebullición el velouté con el fondo de ave y los recortes de champiñón.",
+        "Reduce a fuego medio, removiendo y espumando, hasta un tercio menos aproximadamente.",
+        "Añade la nata poco a poco y sigue reduciendo hasta que nape la cuchara.",
+        "Cuela por chino fino.",
+        "Fuera del fuego, monta con la mantequilla fría y ajusta con limón, sal y pimienta blanca."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Salsa para pechuga o pularda",
+        "ratio": "1 l de velouté + 250 ml de nata + 60 g de mantequilla",
+        "note": "Napante."
+      },
+      {
+        "use": "Fricasé o volován",
+        "ratio": "Menos reducción, 300 ml de nata",
+        "note": "Más fluida para envolver guarnición."
+      },
+      {
+        "use": "Versión rápida sin velouté",
+        "ratio": "1 l de fondo de ave reducido a 300 ml + 300 ml de nata",
+        "note": "Reducir juntos hasta napar; sin harina."
+      },
+      {
+        "use": "Con setas o trufa",
+        "ratio": "Añadir 50-100 ml de jugo de setas o de trufa al reducir",
+        "note": "Para aves de fiesta."
+      }
+    ],
+    "variants": [
+      {
+        "id": "veloute",
+        "name": "Velouté",
+        "note": "La base."
+      },
+      {
+        "id": null,
+        "name": "Salsa marfil",
+        "note": "Suprema con un poco de glace de ave; color marfil."
+      },
+      {
+        "id": null,
+        "name": "Salsa Albufera",
+        "note": "Suprema con glace de carne y mantequilla de pimiento."
+      },
+      {
+        "id": null,
+        "name": "Suprema de setas",
+        "note": "Con setas salteadas y su jugo; para ave y arroces."
+      }
+    ],
+    "keys": [
+      "El sabor a ave sale del fondo reducido, no de la nata: no la alargues con nata para tapar un fondo flojo.",
+      "Monta la mantequilla fuera del fuego y no vuelvas a hervir.",
+      "El limón, en gotas y al final: realza sin notarse.",
+      "Con [[glace]] de ave ganas cuerpo sin añadir harina."
+    ],
+    "errors": [
+      {
+        "p": "Demasiado espesa o pastosa",
+        "fix": "Se redujo de más. Aligera con fondo de ave caliente."
+      },
+      {
+        "p": "Sabe solo a nata",
+        "fix": "Poco fondo. Añade fondo reducido o glace de ave y vuelve a reducir."
+      },
+      {
+        "p": "Se separa la grasa",
+        "fix": "Hirvió con la mantequilla. Bate con un chorrito de fondo frío o nata fría."
+      }
+    ],
+    "history": "Pertenece al repertorio clásico francés de salsas blancas derivadas del velouté, fijado en los recetarios del siglo XIX y principios del XX. Su nombre indica que se consideraba la más fina de las salsas de ave.",
+    "uses": [
+      "Pechuga y pularda",
+      "Volovanes y hojaldres",
+      "Fricasé de ave",
+      "Arroz y pasta con ave",
+      "Mollejas"
+    ],
+    "keep": "2-3 días en cámara, abatida. Regenerar a fuego suave con un poco de fondo y volver a montar con mantequilla. No se recomienda congelar ya terminada; mejor congelar la base sin mantequilla.",
+    "pro": "Ten la base reducida con nata en lote y monta con mantequilla solo lo de cada servicio. Mantén en baño maría a 60-65 °C tapada. Para banquetes, hazla un poco más fluida: en el baño maría espesa.",
+    "related": [
+      "veloute",
+      "fondo-blanco",
+      "alemana",
+      "glace",
+      "reducciones"
+    ]
+  },
+  {
+    "id": "alemana",
+    "name": "Alemana",
+    "aka": [
+      "salsa alemana",
+      "allemande",
+      "salsa parisina"
+    ],
+    "cat": "salsas",
+    "group": "Derivadas del velouté",
+    "summary": "Velouté de ternera ligado con yemas y nata y acidulado con limón; base de la poulette y la villaroy clásica.",
+    "what": "Es un [[veloute|velouté]] de ternera (o de ave) enriquecido con una ligazón de yemas y nata, jugo de champiñón y limón. Las yemas le dan color marfil, cuerpo y untuosidad. Es la clásica [[ligazones|ligazón]] con yema llevada a salsa: hay que controlar la temperatura para no granularla.",
+    "base": {
+      "for": "1 litro aproximado",
+      "items": [
+        [
+          "Velouté de ternera o ave",
+          "1 l"
+        ],
+        [
+          "Jugo de cocción de champiñón",
+          "100 ml"
+        ],
+        [
+          "Yemas",
+          "3-4"
+        ],
+        [
+          "Nata (35 % de grasa)",
+          "150 ml"
+        ],
+        [
+          "Mantequilla fría",
+          "30-50 g"
+        ],
+        [
+          "Zumo de limón, nuez moscada, sal y pimienta blanca",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Reduce el velouté con el jugo de champiñón hasta que nape ligeramente.",
+        "Mezcla las yemas con la nata en un bol.",
+        "Tempera las yemas con un cazo de salsa caliente, batiendo.",
+        "Vierte la mezcla en el cazo y calienta a fuego suave removiendo, sin que hierva, hasta que espese (unos 80-85 °C).",
+        "Cuela, termina con la mantequilla, el limón y una pizca de nuez moscada, y ajusta de sal."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Salsa para ternera o ave",
+        "ratio": "3 yemas y 150 ml de nata por litro",
+        "note": "Napante, suave."
+      },
+      {
+        "use": "Para cubrir y empanar piezas",
+        "ratio": "4-5 yemas por litro y velouté más espeso",
+        "note": "Se cuaja en frío sobre la pieza."
+      },
+      {
+        "use": "Poulette (moluscos)",
+        "ratio": "Con el jugo de cocción de los mejillones reducido y perejil",
+        "note": "Más fluida y ácida."
+      }
+    ],
+    "variants": [
+      {
+        "id": "veloute",
+        "name": "Velouté",
+        "note": "La base."
+      },
+      {
+        "id": null,
+        "name": "Poulette",
+        "note": "Alemana con perejil, limón y jugo de champiñón o de mejillón; para moluscos y sesos."
+      },
+      {
+        "id": null,
+        "name": "Villaroy clásica",
+        "note": "Alemana espesa reducida para napar piezas antes de empanar; en España suele hacerse con bechamel."
+      },
+      {
+        "id": "suprema",
+        "name": "Suprema",
+        "note": "La hermana con nata y sin yemas."
+      }
+    ],
+    "keys": [
+      "Templa siempre las yemas antes de juntarlas con la salsa caliente.",
+      "Una vez ligada con yema, no hierve: por encima de 85 °C se granula.",
+      "El limón, al final y en gotas: refresca y equilibra la riqueza de la yema.",
+      "Si la vas a mantener, mejor un poco fluida: espesa en el baño maría."
+    ],
+    "errors": [
+      {
+        "p": "Salsa granulada o cortada",
+        "fix": "Se pasó de temperatura. Tritura con un chorrito de nata fría y cuela; si no se recupera, rehaz la ligazón con yemas nuevas sobre velouté."
+      },
+      {
+        "p": "Sabe a huevo",
+        "fix": "Demasiadas yemas o falta acidez. Alarga con velouté y añade limón."
+      },
+      {
+        "p": "Poco cuerpo",
+        "fix": "Velouté poco reducido. Reduce la base antes de ligar, nunca después."
+      }
+    ],
+    "history": "En la gran cocina francesa del siglo XIX se consideró una de las salsas fundamentales; más tarde la clasificación clásica la pasó a derivada del velouté. También se ha llamado salsa parisina. Su nombre no tiene un origen claro.",
+    "uses": [
+      "Ternera y ave en blanco",
+      "Mejillones y moluscos (poulette)",
+      "Piezas napadas y empanadas",
+      "Sesos y mollejas",
+      "Volovanes"
+    ],
+    "keep": "Por llevar yema, consumir en 24-48 horas en cámara. Regenerar al baño maría sin pasar de 70 °C, batiendo. No se recomienda congelar.",
+    "pro": "Prepara el velouté reducido en lote y liga con yemas solo la cantidad del servicio. Mantén al baño maría a 60-65 °C tapada y desecha lo sobrante al final del turno.",
+    "related": [
+      "veloute",
+      "suprema",
+      "ligazones",
+      "fondo-blanco",
+      "holandesa"
+    ]
+  },
+  {
+    "id": "espanola",
+    "name": "Salsa española",
+    "aka": [
+      "española",
+      "espagnole",
+      "salsa oscura",
+      "salsa morena"
+    ],
+    "cat": "salsas",
+    "group": "Salsas madre",
+    "summary": "Salsa madre oscura de fondo de ternera tostado, mirepoix y roux oscuro; base clásica de la demi-glace.",
+    "what": "Salsa oscura que se obtiene cociendo largo [[fondo-oscuro|fondo oscuro]] de ternera con [[mirepoix]] tostada, tomate, [[bouquet-garni]] y [[roux]] oscuro, desgrasando hasta que queda brillante. En la cocina clásica casi no se sirve tal cual: es el paso previo a la [[demi-glace]] y a las salsas oscuras derivadas. En cocina actual se suele sustituir por fondo oscuro reducido sin harina.",
+    "base": {
+      "for": "1 litro",
+      "items": [
+        [
+          "Fondo oscuro de ternera",
+          "2 l"
+        ],
+        [
+          "Mirepoix (cebolla, zanahoria y apio en dados)",
+          "250 g"
+        ],
+        [
+          "Panceta o recortes de jamón (opcional)",
+          "50 g"
+        ],
+        [
+          "Mantequilla clarificada o grasa",
+          "60 g"
+        ],
+        [
+          "Harina de trigo",
+          "60-70 g"
+        ],
+        [
+          "Tomate concentrado",
+          "40 g"
+        ],
+        [
+          "Tomate maduro troceado",
+          "200 g"
+        ],
+        [
+          "Bouquet garni",
+          "1"
+        ]
+      ],
+      "steps": [
+        "Dora bien la mirepoix con la panceta en la grasa, a fuego medio, 10-15 minutos.",
+        "Añade la harina y tuéstala con las verduras hasta color avellana, removiendo sin parar (roux oscuro).",
+        "Añade el tomate concentrado y tuéstalo 2 minutos.",
+        "Moja con el fondo caliente poco a poco, batiendo, e incorpora el tomate y el bouquet garni.",
+        "Cuece a fuego muy suave 2-3 horas, con el cazo ladeado, retirando grasa e impurezas, hasta reducir a la mitad.",
+        "Cuela por chino fino presionando poco y desgrasa de nuevo."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Base para demi-glace",
+        "ratio": "Partes iguales de española y fondo oscuro, reducidas a la mitad",
+        "note": "La vía clásica."
+      },
+      {
+        "use": "Salsa de guiso o estofado",
+        "ratio": "Sin reducir del todo: 1,5 l de salida",
+        "note": "Para mojar ragús y carnes guisadas."
+      },
+      {
+        "use": "Sin harina (versión actual)",
+        "ratio": "3 l de fondo oscuro reducidos a 1 l con la misma guarnición",
+        "note": "Ligar al final con un poco de almidón o mantequilla."
+      }
+    ],
+    "variants": [
+      {
+        "id": "demi-glace",
+        "name": "Demi-glace",
+        "note": "Española reducida con fondo oscuro."
+      },
+      {
+        "id": "jugo-de-carne",
+        "name": "Jugo de carne ligado",
+        "note": "La alternativa moderna sin harina."
+      },
+      {
+        "id": null,
+        "name": "Española de vigilia",
+        "note": "Con fondo de pescado tostado; poco habitual hoy."
+      }
+    ],
+    "keys": [
+      "El color debe venir del tostado de huesos, verduras y harina, nunca de quemar: el amargor no se va.",
+      "Cocción larga y suave, cazo ladeado y desgrasar a menudo: así queda brillante y no turbia.",
+      "La sal, al final: tras horas de reducción cualquier sal temprana se multiplica.",
+      "Un buen fondo oscuro gelatinoso hace la mitad del trabajo."
+    ],
+    "errors": [
+      {
+        "p": "Sabor amargo",
+        "fix": "Mirepoix, roux o tomate quemados. No tiene arreglo: vuelve a empezar."
+      },
+      {
+        "p": "Turbia y grasa",
+        "fix": "Hirvió fuerte o no se desgrasó. Cuela, enfría, retira la grasa sólida y vuelve a hervir suave espumando."
+      },
+      {
+        "p": "Pastosa",
+        "fix": "Exceso de harina. Aligera con fondo y reduce despacio."
+      }
+    ],
+    "history": "Fue una de las grandes salsas oscuras de la cocina francesa del siglo XIX y quedó como salsa madre en la clasificación clásica. El nombre no tiene un origen probado; hay varias teorías y ninguna confirmada. Desde los años setenta muchas cocinas la han cambiado por fondos reducidos sin harina.",
+    "uses": [
+      "Base de demi-glace",
+      "Estofados y ragús",
+      "Salsas de caza",
+      "Carnes guisadas",
+      "Salsas derivadas oscuras"
+    ],
+    "keep": "Abatida, 5-7 días en cámara. Congela muy bien en porciones o cubiteras. Regenerar a fuego suave y rectificar textura con fondo.",
+    "pro": "Se hace en grandes cantidades, de una vez, en marmita: compensa por el tiempo de cocción. Porciona en bolsas o recipientes de 1 l etiquetados, congelados. En el pase, se trabaja ya como demi-glace o salsa derivada.",
+    "related": [
+      "fondo-oscuro",
+      "demi-glace",
+      "roux",
+      "mirepoix",
+      "bouquet-garni",
+      "salsa-de-tomate"
+    ]
+  },
+  {
+    "id": "demi-glace",
+    "name": "Demi-glace",
+    "aka": [
+      "demiglás",
+      "media glasa",
+      "demi glace",
+      "salsa de carne reducida"
+    ],
+    "cat": "salsas",
+    "group": "Salsas madre",
+    "summary": "Salsa oscura concentrada de fondo de ternera reducido, a medio camino entre una salsa y una glace.",
+    "what": "Clásicamente es [[espanola|salsa española]] y [[fondo-oscuro|fondo oscuro]] a partes iguales reducidos a la mitad. Hoy en la mayoría de cocinas es un fondo oscuro muy reducido sin harina, ligado por su propia gelatina, a medio camino entre un [[jugo-de-carne|jugo]] y una [[glace]]. Es la base de casi todas las salsas oscuras de restaurante.",
+    "base": {
+      "for": "1 litro (versión clásica)",
+      "items": [
+        [
+          "Salsa española",
+          "1 l"
+        ],
+        [
+          "Fondo oscuro de ternera",
+          "1 l"
+        ],
+        [
+          "Vino de Madeira, oporto o jerez seco (opcional)",
+          "50-100 ml"
+        ]
+      ],
+      "steps": [
+        "Junta la salsa española y el fondo oscuro en un cazo ancho.",
+        "Reduce a fuego suave, espumando y desgrasando, hasta la mitad (1-1,5 horas).",
+        "Debe napar la cuchara y tener brillo.",
+        "Cuela por estameña o chino muy fino.",
+        "Si lleva vino generoso, añádelo al final y dale solo 1-2 minutos de hervor."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Versión moderna sin harina",
+        "ratio": "4-5 l de fondo oscuro reducidos a 1 l",
+        "note": "Ligada por la gelatina; si hace falta, un punto de almidón."
+      },
+      {
+        "use": "Salsa de servicio",
+        "ratio": "Demi-glace + reducción de vino o chalota + 30-50 g de mantequilla por 250 ml",
+        "note": "Montar al pase."
+      },
+      {
+        "use": "Para glasear piezas",
+        "ratio": "Reducir otra vez a la mitad",
+        "note": "Se acerca a la glace; pincelar al final."
+      },
+      {
+        "use": "Para mojar un guiso",
+        "ratio": "1 parte de demi-glace + 2-3 de fondo",
+        "note": "Da cuerpo sin empastar."
+      }
+    ],
+    "variants": [
+      {
+        "id": "espanola",
+        "name": "Salsa española",
+        "note": "Su base clásica."
+      },
+      {
+        "id": "glace",
+        "name": "Glace de carne",
+        "note": "El siguiente paso de reducción."
+      },
+      {
+        "id": null,
+        "name": "Salsa bordelesa",
+        "note": "Con reducción de vino tinto y chalota, y tuétano."
+      },
+      {
+        "id": null,
+        "name": "Salsa al vino generoso",
+        "note": "Con Madeira, oporto o Pedro Ximénez."
+      },
+      {
+        "id": null,
+        "name": "Salsa a la pimienta",
+        "note": "Con pimienta verde o negra, flambeado y nata."
+      },
+      {
+        "id": null,
+        "name": "Salsa cazadora",
+        "note": "Con champiñón, chalota, vino blanco y tomate."
+      }
+    ],
+    "keys": [
+      "Reduce despacio y desgrasando: si hierve fuerte, se enturbia y emulsiona la grasa.",
+      "Sala solo al final: la reducción concentra todo.",
+      "Prueba en frío sobre un plato: debe gelificar ligeramente si el fondo era bueno.",
+      "Para las derivadas, haz primero la reducción aromática (vino, chalota) y luego añade la demi-glace."
+    ],
+    "errors": [
+      {
+        "p": "Pegajosa o demasiado dulce",
+        "fix": "Reducida de más o con demasiado vino generoso. Aligera con fondo."
+      },
+      {
+        "p": "Turbia",
+        "fix": "Hirvió fuerte. Desgrasa en frío y vuelve a reducir suave."
+      },
+      {
+        "p": "Sin cuerpo",
+        "fix": "Fondo con poca gelatina. Añade glace o algo de pata de ternera en el siguiente fondo."
+      },
+      {
+        "p": "Amarga",
+        "fix": "Huesos o mirepoix quemados en el fondo. No tiene arreglo."
+      }
+    ],
+    "history": "La cocina francesa clásica la definió como una salsa española reducida con fondo, y así la recogieron los grandes recetarios de principios del siglo XX. Con la cocina más ligera de finales del siglo XX se impuso la versión sin harina, que es la que se trabaja hoy en la mayoría de restaurantes.",
+    "uses": [
+      "Carnes rojas a la plancha o asadas",
+      "Salsas derivadas",
+      "Guisos y rabo",
+      "Caza",
+      "Glasear piezas"
+    ],
+    "keep": "Abatida, 1 semana en cámara. Congela muy bien en cubiteras o bolsas pequeñas durante meses. Regenerar a fuego suave.",
+    "pro": "Es mise en place básica: tenla congelada en porciones de 100-250 ml. Para servicio, hazla en un cazo pequeño al baño maría a 70-80 °C y monta cada salsa al momento con mantequilla. Etiqueta con fecha y lote.",
+    "related": [
+      "espanola",
+      "fondo-oscuro",
+      "glace",
+      "jugo-de-carne",
+      "reducciones"
+    ]
+  },
+  {
+    "id": "salsa-de-tomate",
+    "name": "Salsa de tomate",
+    "aka": [
+      "tomate frito",
+      "tomate frito casero",
+      "salsa de tomate casera",
+      "sauce tomate"
+    ],
+    "cat": "salsas",
+    "group": "Salsas madre",
+    "summary": "Tomate maduro cocinado lentamente en aceite con cebolla y ajo; base de guisos, pastas y frituras.",
+    "what": "En la cocina española es el tomate frito: tomate maduro cocinado despacio en aceite de oliva con cebolla y ajo hasta que pierde el agua y el aceite asoma. La versión clásica francesa, salsa madre, lleva además panceta, [[mirepoix]], fondo blanco y a veces [[roux]]. Es la base de muchos guisos y del [[sofrito]] y la [[salsa-vizcaina|vizcaína]].",
+    "base": {
+      "for": "1 litro aproximado",
+      "items": [
+        [
+          "Tomate maduro (pera o similar) triturado o rallado",
+          "2 kg"
+        ],
+        [
+          "Aceite de oliva virgen extra",
+          "150 ml"
+        ],
+        [
+          "Cebolla en brunoise",
+          "200 g"
+        ],
+        [
+          "Ajo picado",
+          "2 dientes"
+        ],
+        [
+          "Laurel",
+          "1 hoja"
+        ],
+        [
+          "Sal",
+          "10-12 g"
+        ],
+        [
+          "Azúcar (según acidez)",
+          "0-15 g"
+        ]
+      ],
+      "steps": [
+        "Pocha la cebolla en el aceite a fuego suave 15 minutos, sin que coja color.",
+        "Añade el ajo y rehoga 1 minuto sin que se dore.",
+        "Incorpora el tomate y el laurel, sala ligeramente y sube a hervor.",
+        "Cuece a fuego suave 45-90 minutos, removiendo de vez en cuando, hasta que reduzca a la mitad y el aceite brille en la superficie.",
+        "Prueba y corrige la acidez con azúcar si hace falta.",
+        "Pasa por el pasapurés: queda rojo y con textura. Triturado a máquina emulsiona el aceite y se vuelve anaranjado."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Pasta",
+        "ratio": "Reducir a la mitad, con 100 ml de aceite por 2 kg",
+        "note": "Fluida, que nape la pasta."
+      },
+      {
+        "use": "Pizza o rellenos",
+        "ratio": "Reducir a un tercio",
+        "note": "Espesa, que no moje la masa."
+      },
+      {
+        "use": "Guisos y albóndigas",
+        "ratio": "Reducir solo un tercio y alargar con fondo",
+        "note": "Más líquida, va a seguir cociendo."
+      },
+      {
+        "use": "Clásica francesa",
+        "ratio": "Con 100 g de panceta, 200 g de mirepoix y 500 ml de fondo blanco por 2 kg",
+        "note": "Cocción 1,5-2 horas, se pasa fina."
+      },
+      {
+        "use": "Con tomate en conserva",
+        "ratio": "2 kg de tomate pelado en lata, cocción 30-40 minutos",
+        "note": "Fuera de temporada, mejor que tomate fresco sin sabor."
+      }
+    ],
+    "variants": [
+      {
+        "id": "sofrito",
+        "name": "Sofrito",
+        "note": "Más concentrado y con más cebolla; base de arroces y guisos."
+      },
+      {
+        "id": "salsa-vizcaina",
+        "name": "Salsa vizcaína",
+        "note": "Con pimiento choricero y cebolla roja; color más oscuro."
+      },
+      {
+        "id": "salsa-brava",
+        "name": "Salsa brava",
+        "note": "Picante; según la zona lleva tomate o solo pimentón."
+      },
+      {
+        "id": null,
+        "name": "Salsa de tomate con albahaca",
+        "note": "Más rápida y fresca, con aceite y albahaca al final."
+      },
+      {
+        "id": null,
+        "name": "Salsa picante de guindilla",
+        "note": "Con guindilla y ajo; para pasta."
+      }
+    ],
+    "keys": [
+      "El tomate maduro es todo: fuera de temporada, mejor tomate pelado en conserva de calidad.",
+      "Fuego suave y tiempo: se fríe, no se hierve; está listo cuando el aceite asoma.",
+      "Corrige la acidez al final, probando; el azúcar a ojo la convierte en dulce.",
+      "Pasapurés para un tomate frito rojo; triturado a máquina queda más claro y emulsionado.",
+      "Una pizca de bicarbonato neutraliza acidez extrema, pero con mucha cautela: cambia el sabor."
+    ],
+    "errors": [
+      {
+        "p": "Ácida",
+        "fix": "Tomate verde o poca cocción. Prolonga la cocción y corrige con azúcar poco a poco."
+      },
+      {
+        "p": "Pegada o con sabor a quemado",
+        "fix": "Fuego alto al final de la reducción. Pásala a otro cazo sin rascar; si sabe a quemado, no se salva."
+      },
+      {
+        "p": "Aguada",
+        "fix": "Poca reducción. Sigue cociendo destapada."
+      },
+      {
+        "p": "Color anaranjado",
+        "fix": "Se trituró con el aceite emulsionado. Usa pasapurés o tritura antes de añadir todo el aceite."
+      }
+    ],
+    "history": "El tomate llegó de América en el siglo XVI y tardó en entrar en la cocina; en España y en Italia se generalizó como salsa a partir del siglo XVIII. La cocina francesa clásica lo incluyó como salsa madre con fondo y panceta. El tomate frito casero sigue siendo una base fija de la cocina española.",
+    "uses": [
+      "Pasta",
+      "Albóndigas y guisos",
+      "Huevos y pisto",
+      "Pescado en salsa",
+      "Base de salsas y arroces"
+    ],
+    "keep": "Abatida, 5 días en cámara. Congela muy bien. En conserva, en tarros esterilizados y con tratamiento térmico adecuado. Regenerar a fuego suave.",
+    "pro": "Se hace en grandes lotes en marmita o en horno a 160-170 °C en bandeja GN destapada, removiendo cada 20 minutos: reduce sin pegarse. Porciona y congela. Etiqueta con fecha.",
+    "related": [
+      "sofrito",
+      "salsa-vizcaina",
+      "salsa-brava",
+      "espanola",
+      "mirepoix"
+    ]
+  },
+  {
+    "id": "holandesa",
+    "name": "Holandesa",
+    "aka": [
+      "salsa holandesa",
+      "hollandaise"
+    ],
+    "cat": "salsas",
+    "group": "Emulsiones calientes",
+    "summary": "Emulsión caliente de yemas y mantequilla, acidulada con limón; para huevos, espárragos y pescado.",
+    "what": "Es una de las grandes [[emulsiones]] calientes: yemas cocinadas hasta formar un sabayón y montadas con mantequilla clarificada o fundida, con limón o una reducción ácida. Se mantiene estable solo en una franja de temperatura estrecha, en torno a 60-65 °C. De ella derivan la muselina y la maltesa, y es hermana de la [[bearnesa]].",
+    "base": {
+      "for": "400 g aproximado (8-10 raciones)",
+      "items": [
+        [
+          "Yemas",
+          "4"
+        ],
+        [
+          "Agua o reducción (vinagre de vino, agua y pimienta)",
+          "40 ml"
+        ],
+        [
+          "Mantequilla clarificada templada (50-60 °C)",
+          "250 g"
+        ],
+        [
+          "Zumo de limón",
+          "15-20 ml"
+        ],
+        [
+          "Sal y cayena",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Si usas reducción, reduce el vinagre con agua y pimienta machacada a 2-3 cucharadas, cuélala y enfríala.",
+        "En un bol al baño maría (el agua sin hervir), bate las yemas con el agua o la reducción.",
+        "Cocina batiendo hasta que espesen, hagan cordón y lleguen a 60-65 °C. Retira del baño si se calientan demasiado.",
+        "Fuera del fuego, añade la mantequilla templada en hilo fino, batiendo sin parar, hasta emulsionar.",
+        "Ajusta con limón, sal y cayena. Si queda muy espesa, aligera con unas gotas de agua templada."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Clásica",
+        "ratio": "60-70 g de mantequilla por yema",
+        "note": "Napante y estable."
+      },
+      {
+        "use": "Más ligera",
+        "ratio": "40-50 g de mantequilla por yema",
+        "note": "Más sabor a yema; menos rica."
+      },
+      {
+        "use": "Muselina",
+        "ratio": "3 partes de holandesa + 1 de nata montada",
+        "note": "Ligera, para pescados y espárragos; se sirve enseguida."
+      },
+      {
+        "use": "Maltesa",
+        "ratio": "Holandesa con zumo reducido y piel de naranja sanguina",
+        "note": "Para espárragos."
+      },
+      {
+        "use": "En sifón",
+        "ratio": "Holandesa más fluida, 1 carga de N2O por 500 ml",
+        "note": "Mantener al baño a 60-65 °C."
+      }
+    ],
+    "variants": [
+      {
+        "id": "bearnesa",
+        "name": "Bearnesa",
+        "note": "Con reducción de chalota, estragón y vinagre."
+      },
+      {
+        "id": null,
+        "name": "Muselina",
+        "note": "Con nata montada."
+      },
+      {
+        "id": null,
+        "name": "Maltesa",
+        "note": "Con naranja sanguina."
+      },
+      {
+        "id": null,
+        "name": "Holandesa de mostaza",
+        "note": "Con mostaza de Dijon; para pescados a la plancha."
+      }
+    ],
+    "keys": [
+      "La temperatura lo es todo: yemas a 60-65 °C; por encima de 70 °C cuajan y se granula.",
+      "Mantequilla clarificada da una salsa más espesa y estable; fundida entera, más sabor y más fluida.",
+      "Añade la mantequilla al principio gota a gota; cuando la emulsión arranca, ya en hilo.",
+      "Usa yemas pasteurizadas en servicio a colectividades o banquetes.",
+      "Nunca hierve y nunca se guarda de un servicio para otro."
+    ],
+    "errors": [
+      {
+        "p": "Cortada por exceso de calor (granulada, aceitosa)",
+        "fix": "En otro bol, una yema con una cucharada de agua templada; añade la salsa cortada poco a poco batiendo."
+      },
+      {
+        "p": "Cortada por frío o mantequilla añadida muy rápido",
+        "fix": "Unas gotas de agua caliente y batir fuerte; si no, rehacer sobre una yema nueva."
+      },
+      {
+        "p": "Demasiado espesa",
+        "fix": "Aligera con agua templada o limón, batiendo."
+      },
+      {
+        "p": "Sabe a huevo",
+        "fix": "Falta ácido o mantequilla. Ajusta con limón y sal."
+      }
+    ],
+    "history": "Es una salsa de la cocina francesa clásica; el nombre alude a Holanda, pero su origen exacto no está documentado. Con el tiempo la enseñanza moderna la ha incluido entre las salsas madre. Se popularizó en todo el mundo con los huevos Benedict.",
+    "uses": [
+      "Huevos Benedict",
+      "Espárragos",
+      "Pescado escalfado",
+      "Verduras al vapor",
+      "Gratinados rápidos de salamandra"
+    ],
+    "keep": "Se mantiene al baño maría a 60-65 °C un máximo de 2 horas y lo sobrante se desecha. No se abate ni se guarda. En sifón y en baño termostático a 62-64 °C aguanta todo el servicio con buena textura.",
+    "pro": "Para servicio largo, hazla en sifón y mantenla al baño a temperatura controlada. Tener la mantequilla clarificada ya en mise en place y las yemas pasteurizadas acelera el pase. Haz pequeños lotes por turno.",
+    "related": [
+      "emulsiones",
+      "bearnesa",
+      "beurre-blanc",
+      "mayonesa",
+      "alemana"
+    ]
+  },
+  {
+    "id": "bearnesa",
+    "name": "Bearnesa",
+    "aka": [
+      "salsa bearnesa",
+      "béarnaise"
+    ],
+    "cat": "salsas",
+    "group": "Emulsiones calientes",
+    "summary": "Emulsión caliente de yemas y mantequilla con reducción de chalota, estragón y vinagre; la salsa de la carne a la parrilla.",
+    "what": "Es la [[holandesa]] con otra base ácida: una [[reducciones|reducción]] de vinagre de vino, vino blanco, chalota, estragón y pimienta. Se termina con estragón y perifollo picados. Es más aromática, más ácida y algo más espesa que la holandesa, y es la salsa clásica de la carne roja a la parrilla.",
+    "base": {
+      "for": "400 g aproximado (8-10 raciones)",
+      "items": [
+        [
+          "Chalota picada",
+          "2 (50 g)"
+        ],
+        [
+          "Vinagre de vino blanco o de estragón",
+          "100 ml"
+        ],
+        [
+          "Vino blanco seco",
+          "50 ml"
+        ],
+        [
+          "Estragón fresco (tallos y hojas)",
+          "1 manojo pequeño"
+        ],
+        [
+          "Pimienta negra machacada (mignonette)",
+          "1 cucharadita"
+        ],
+        [
+          "Yemas",
+          "4"
+        ],
+        [
+          "Mantequilla clarificada templada (50-60 °C)",
+          "250 g"
+        ],
+        [
+          "Estragón y perifollo picados, sal y cayena",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Reduce el vinagre, el vino, la chalota, los tallos de estragón y la pimienta hasta que queden 2-3 cucharadas de líquido.",
+        "Cuela apretando bien o, si la prefieres rústica, deja la chalota; deja templar.",
+        "Bate las yemas con la reducción al baño maría hasta que espesen y lleguen a 60-65 °C.",
+        "Fuera del fuego, añade la mantequilla templada en hilo, batiendo sin parar.",
+        "Termina con el estragón y el perifollo picados, sal y cayena."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Clásica",
+        "ratio": "60-70 g de mantequilla por yema",
+        "note": "Para carne a la parrilla."
+      },
+      {
+        "use": "Choron",
+        "ratio": "Bearnesa + 1 cucharada de tomate concentrado reducido por cada 250 g",
+        "note": "Rosada; para carne y pescado a la parrilla."
+      },
+      {
+        "use": "Foyot o Valois",
+        "ratio": "Bearnesa + 1 cucharada de glace de carne por cada 250 g",
+        "note": "Más intensa; para carnes."
+      },
+      {
+        "use": "Paloise",
+        "ratio": "Menta en lugar de estragón",
+        "note": "Para cordero."
+      }
+    ],
+    "variants": [
+      {
+        "id": "holandesa",
+        "name": "Holandesa",
+        "note": "La base sin aromáticos."
+      },
+      {
+        "id": null,
+        "name": "Choron",
+        "note": "Con tomate."
+      },
+      {
+        "id": null,
+        "name": "Foyot o Valois",
+        "note": "Con glace de carne."
+      },
+      {
+        "id": null,
+        "name": "Paloise",
+        "note": "Con menta."
+      }
+    ],
+    "keys": [
+      "La reducción tiene que quedar bien concentrada: es lo que da el sabor y la estabilidad.",
+      "Temperatura de las yemas entre 60 y 65 °C; nunca hirviendo el agua del baño maría.",
+      "Las hierbas frescas, al final y recién picadas; si se añaden pronto, se oscurecen.",
+      "Es más espesa que la holandesa; aligera con unas gotas de agua templada si hace falta.",
+      "Nunca se recalienta en el fuego directo."
+    ],
+    "errors": [
+      {
+        "p": "Cortada por exceso de calor",
+        "fix": "Una yema nueva con una cucharada de agua templada; añade la salsa cortada poco a poco, batiendo."
+      },
+      {
+        "p": "Cortada por frío",
+        "fix": "Unas gotas de agua caliente y batir con energía."
+      },
+      {
+        "p": "Muy ácida",
+        "fix": "Reducción poco concentrada o demasiado vinagre. Añade un poco más de mantequilla."
+      },
+      {
+        "p": "Hierbas negras",
+        "fix": "Se añadieron demasiado pronto. Pica y añade al momento de servir."
+      }
+    ],
+    "history": "Su nombre remite a la región del Bearne, en el suroeste de Francia, pero la versión más repetida sitúa su creación en las afueras de París en el siglo XIX; conviene tomarlo como tradición, no como dato probado. Desde entonces es la salsa clásica del entrecot y del solomillo a la parrilla.",
+    "uses": [
+      "Entrecot y solomillo a la parrilla",
+      "Patatas fritas",
+      "Pescados a la parrilla",
+      "Huevos escalfados",
+      "Cordero (paloise)"
+    ],
+    "keep": "Al baño maría a 60-65 °C un máximo de 2 horas; lo sobrante se desecha. La reducción aromática sí se guarda: 1 semana en cámara o congelada en cubiteras.",
+    "pro": "Ten la reducción ya hecha y colada en mise en place (en cubiteras congeladas dura semanas). Monta en sifón o en bol al baño maría por turno. Hierbas picadas al momento.",
+    "related": [
+      "holandesa",
+      "emulsiones",
+      "reducciones",
+      "beurre-blanc",
+      "demi-glace"
+    ]
+  },
+  {
+    "id": "beurre-blanc",
+    "name": "Beurre blanc",
+    "aka": [
+      "mantequilla blanca",
+      "salsa de mantequilla",
+      "beurre nantais"
+    ],
+    "cat": "salsas",
+    "group": "Emulsiones calientes",
+    "summary": "Reducción de chalota, vino blanco y vinagre montada con mantequilla fría; salsa clásica para pescado.",
+    "what": "Emulsión de mantequilla fría sobre una [[reducciones|reducción]] ácida de chalota, vino blanco seco y vinagre. No lleva yema: la estabilidad viene de la poca agua de la reducción y de montar la mantequilla poco a poco a la temperatura justa. Es ligera, ácida y muy sedosa. Es la salsa clásica para pescados blancos y verduras. Ver también [[emulsiones]].",
+    "base": {
+      "for": "300 g aproximado (6-8 raciones)",
+      "items": [
+        [
+          "Chalota picada muy fina",
+          "60 g"
+        ],
+        [
+          "Vino blanco seco",
+          "100 ml"
+        ],
+        [
+          "Vinagre de vino blanco",
+          "50 ml"
+        ],
+        [
+          "Nata (opcional, para estabilizar)",
+          "30 ml"
+        ],
+        [
+          "Mantequilla fría en dados",
+          "250 g"
+        ],
+        [
+          "Sal y pimienta blanca",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Reduce la chalota con el vino y el vinagre hasta que queden unas 2 cucharadas de líquido, casi a seco.",
+        "Si usas nata, añádela y reduce 1 minuto.",
+        "A fuego muy suave, incorpora la mantequilla fría en dados, poco a poco, batiendo sin parar. Cada dado debe deshacerse antes de añadir el siguiente.",
+        "La salsa nunca debe hervir; mantenla alrededor de 55-60 °C.",
+        "Sala, cuela si la quieres fina y sirve enseguida."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Clásica",
+        "ratio": "250 g de mantequilla por 150 ml de líquido reducido a 2 cucharadas",
+        "note": "Fluida y ácida."
+      },
+      {
+        "use": "Más estable para servicio",
+        "ratio": "Con 30-50 ml de nata en la reducción",
+        "note": "Aguanta más tiempo en el baño maría."
+      },
+      {
+        "use": "Beurre rouge",
+        "ratio": "Vino tinto en lugar de blanco",
+        "note": "Para pescados con carne o carnes blancas."
+      },
+      {
+        "use": "Cítrica",
+        "ratio": "Cambiar el vinagre por zumo de limón, lima o yuzu",
+        "note": "Para mariscos y pescados al vapor."
+      }
+    ],
+    "variants": [
+      {
+        "id": null,
+        "name": "Beurre rouge",
+        "note": "Con vino tinto."
+      },
+      {
+        "id": null,
+        "name": "Beurre blanc con nata",
+        "note": "Más estable, menos ácida."
+      },
+      {
+        "id": null,
+        "name": "Beurre blanc de cava",
+        "note": "Con cava o vino espumoso."
+      },
+      {
+        "id": "mantequillas-compuestas",
+        "name": "Mantequillas compuestas",
+        "note": "Mantequilla aromatizada en frío, sin emulsionar."
+      }
+    ],
+    "keys": [
+      "La mantequilla debe estar fría: si está blanda, se funde sin emulsionar.",
+      "Temperatura de servicio 55-60 °C. Por encima de 65 °C se separa; por debajo de 35 °C cuaja.",
+      "La reducción tiene que estar casi a seco; con mucho líquido no emulsiona bien.",
+      "Una cucharada de nata en la reducción da margen de error.",
+      "Sírvela recién hecha o mantenla al baño maría tibio, nunca en fuego directo."
+    ],
+    "errors": [
+      {
+        "p": "Se separa (aceitosa)",
+        "fix": "Se calentó demasiado. Fuera del fuego, añade un dado de mantequilla fría o una cucharada de nata fría y bate."
+      },
+      {
+        "p": "Cuaja o se vuelve espesa",
+        "fix": "Se enfrió. Calienta suavemente batiendo."
+      },
+      {
+        "p": "Demasiado ácida",
+        "fix": "Reducción poco concentrada. Añade más mantequilla."
+      }
+    ],
+    "history": "Es propia de la cocina del bajo Loira, alrededor de Nantes, donde se servía con pescado de río. Se popularizó en la cocina francesa del siglo XX y hoy es una salsa básica para pescados en restaurantes de todo el mundo.",
+    "uses": [
+      "Pescados blancos al vapor o a la plancha",
+      "Rodaballo, lubina y merluza",
+      "Mariscos",
+      "Espárragos y verduras",
+      "Ravioli de pescado"
+    ],
+    "keep": "Al baño maría a 55-60 °C durante el servicio. No se guarda de un día para otro: si se enfría, cuaja y al recalentar se separa. La reducción sí se puede preparar y guardar 2-3 días.",
+    "pro": "Prepara la reducción de antemano y monta la mantequilla por turno. Para servicio largo, añade nata y mantenla en termo o baño maría a temperatura controlada. Ten mantequilla fría a mano para corregir.",
+    "related": [
+      "emulsiones",
+      "holandesa",
+      "reducciones",
+      "fumet",
+      "mantequillas-compuestas"
+    ]
+  },
+  {
+    "id": "mantequilla-noisette",
+    "name": "Mantequilla noisette",
+    "aka": [
+      "mantequilla avellana",
+      "beurre noisette",
+      "mantequilla tostada",
+      "mantequilla dorada"
+    ],
+    "cat": "salsas",
+    "group": "Mantequillas",
+    "summary": "Mantequilla cocinada hasta que sus sólidos se tuestan y huelen a avellana; para pescados, verduras, pasta y repostería.",
+    "what": "Se cocina la mantequilla hasta que el agua se evapora y los sólidos lácteos se doran y huelen a avellana. Es la base de la salsa meunière (con limón y perejil) y de la mantequilla negra (más tostada, con alcaparras y vinagre). En pastelería da sabor a magdalenas y financieros. Comparte familia con las [[mantequillas-compuestas]].",
+    "base": {
+      "for": "200 g aproximado",
+      "items": [
+        [
+          "Mantequilla",
+          "250 g"
+        ],
+        [
+          "Zumo de limón (opcional, para cortar la cocción)",
+          "15 ml"
+        ]
+      ],
+      "steps": [
+        "Corta la mantequilla en dados y ponla en un cazo claro (para ver el color) a fuego medio.",
+        "Funde y deja que chisporrotee: es el agua evaporándose. Remueve de vez en cuando.",
+        "Cuando el chisporroteo cesa, se forma espuma y los sólidos del fondo empiezan a dorar.",
+        "Retira del fuego cuando el color sea avellana y huela a frutos secos tostados (1-3 minutos desde que se forma la espuma).",
+        "Pasa enseguida a un bol frío o añade el limón para cortar la cocción. Cuela si la quieres limpia."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Meunière",
+        "ratio": "100 g de noisette + 15 ml de limón + perejil picado",
+        "note": "Para pescado enharinado y salteado."
+      },
+      {
+        "use": "Mantequilla negra",
+        "ratio": "Más tostada + alcaparras + un chorrito de vinagre",
+        "note": "Para raya y sesos; sin quemar."
+      },
+      {
+        "use": "Pasta con salvia",
+        "ratio": "80 g de noisette con hojas de salvia por 4 raciones",
+        "note": "Las hojas se fríen en la mantequilla."
+      },
+      {
+        "use": "Repostería",
+        "ratio": "La receta de mantequilla sale un 15-20 % menor en peso",
+        "note": "Compensar: 250 g de mantequilla dan unos 200 g."
+      }
+    ],
+    "variants": [
+      {
+        "id": null,
+        "name": "Meunière",
+        "note": "Con limón y perejil."
+      },
+      {
+        "id": null,
+        "name": "Mantequilla negra",
+        "note": "Más tostada, con alcaparras y vinagre."
+      },
+      {
+        "id": "mantequillas-compuestas",
+        "name": "Mantequillas compuestas",
+        "note": "Mantequilla aromatizada en frío."
+      },
+      {
+        "id": "beurre-blanc",
+        "name": "Beurre blanc",
+        "note": "Emulsión caliente con reducción ácida."
+      }
+    ],
+    "keys": [
+      "Cazo claro para ver el color; en uno oscuro se quema sin que te des cuenta.",
+      "Del avellana al quemado hay segundos: retira un punto antes, el calor residual sigue cocinando.",
+      "Los sólidos tostados son el sabor; si la cuelas, guárdalos para otras preparaciones.",
+      "La mantequilla pierde un 15-20 % de su peso (el agua).",
+      "Si la añades sobre limón o un líquido frío, chisporrotea: hazlo con cuidado."
+    ],
+    "errors": [
+      {
+        "p": "Quemada (negra y amarga)",
+        "fix": "No se salva. Tírala y vuelve a empezar a fuego más bajo."
+      },
+      {
+        "p": "Sin color ni sabor",
+        "fix": "Retirada demasiado pronto. Vuelve a calentar hasta que los sólidos se doren."
+      },
+      {
+        "p": "Sólidos dorados de forma desigual",
+        "fix": "Remueve durante la cocción y usa un cazo de fondo grueso."
+      }
+    ],
+    "history": "Es una técnica clásica de la cocina francesa; el nombre noisette significa avellana. La meunière y la mantequilla negra son preparaciones clásicas del repertorio de pescados y casquería. Hoy se usa también mucho en pastelería y en salsas emulsionadas.",
+    "uses": [
+      "Pescado a la meunière",
+      "Raya y sesos",
+      "Pasta con salvia",
+      "Verduras salteadas",
+      "Magdalenas y financieros"
+    ],
+    "keep": "Enfriada, 2-3 semanas en cámara; congelada, meses. Para usarla en salsa, se funde de nuevo a fuego suave sin que se queme.",
+    "pro": "Hazla en cantidad, enfríala y guárdala en porciones en cámara. En el pase, se calienta al momento en sartén con el limón y el perejil. En pastelería, pésala ya hecha.",
+    "related": [
+      "mantequillas-compuestas",
+      "beurre-blanc",
+      "emulsiones",
+      "holandesa"
+    ]
+  },
+  {
+    "id": "mantequillas-compuestas",
+    "name": "Mantequillas compuestas",
+    "aka": [
+      "mantequilla maître d'hôtel",
+      "mantequilla de hierbas",
+      "mantequilla aromatizada",
+      "beurres composés"
+    ],
+    "cat": "salsas",
+    "group": "Mantequillas",
+    "summary": "Mantequilla pomada mezclada con hierbas, especias u otros aromáticos, enfriada en cilindros y cortada en rodajas.",
+    "what": "Mantequilla pomada mezclada con aromáticos crudos o cocinados, enrollada en film, enfriada y cortada en rodajas que se funden sobre la pieza caliente. La más conocida es la maître d'hôtel (perejil y limón), pero las hay de anchoa, ajo, hierbas, chalota y vino, especias, algas o marisco. Son una salsa de reserva para la parrilla. Ver también [[mantequilla-noisette]].",
+    "base": {
+      "for": "300 g aproximado (maître d'hôtel)",
+      "items": [
+        [
+          "Mantequilla pomada",
+          "250 g"
+        ],
+        [
+          "Perejil picado fino",
+          "20-30 g"
+        ],
+        [
+          "Zumo de limón",
+          "15 ml"
+        ],
+        [
+          "Sal fina",
+          "3-4 g"
+        ],
+        [
+          "Pimienta negra molida",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Saca la mantequilla con tiempo hasta que esté pomada (blanda, sin fundirse).",
+        "Mezcla con espátula o varilla hasta que esté cremosa.",
+        "Añade el perejil, el limón, la sal y la pimienta; mezcla bien.",
+        "Extiende la mantequilla sobre film en forma de cilindro de 3-4 cm de diámetro y enrolla apretando.",
+        "Enfría en cámara al menos 2 horas o congela. Corta en rodajas de 1 cm al momento de servir."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Maître d'hôtel",
+        "ratio": "250 g de mantequilla + 25 g de perejil + 15 ml de limón",
+        "note": "Para carnes y pescados a la parrilla."
+      },
+      {
+        "use": "De anchoa",
+        "ratio": "250 g de mantequilla + 40-60 g de anchoa en salazón",
+        "note": "Para carnes rojas y pescado."
+      },
+      {
+        "use": "De ajo y perejil",
+        "ratio": "250 g de mantequilla + 15-20 g de ajo + 30 g de perejil",
+        "note": "Para caracoles, almejas y pan."
+      },
+      {
+        "use": "Bercy o vino tinto",
+        "ratio": "250 g de mantequilla + 30 g de chalota + 100 ml de vino reducido a seco",
+        "note": "Para carnes rojas."
+      },
+      {
+        "use": "De marisco",
+        "ratio": "250 g de mantequilla + 150 g de caparazones, cocinada, colada y enfriada",
+        "note": "Para salsas de marisco y arroces."
+      }
+    ],
+    "variants": [
+      {
+        "id": null,
+        "name": "Maître d'hôtel",
+        "note": "Perejil y limón."
+      },
+      {
+        "id": null,
+        "name": "De anchoa",
+        "note": "Anchoa en salazón majada."
+      },
+      {
+        "id": null,
+        "name": "De ajo y perejil",
+        "note": "Para caracoles y mariscos."
+      },
+      {
+        "id": null,
+        "name": "De vino tinto y chalota",
+        "note": "Para carnes."
+      },
+      {
+        "id": null,
+        "name": "De pimentón o especias",
+        "note": "Para carnes y pescados a la brasa."
+      },
+      {
+        "id": "beurre-blanc",
+        "name": "Beurre blanc",
+        "note": "La versión emulsionada en caliente."
+      }
+    ],
+    "keys": [
+      "Mantequilla pomada, no fundida: si se funde, no recupera la textura.",
+      "Hierbas bien secas antes de picar; el agua hace que la mantequilla se corte.",
+      "Los ajos y hierbas crudos limitan la conservación; para guardar más tiempo, congela.",
+      "Corta las rodajas con un cuchillo caliente si está congelada.",
+      "Ponla sobre la pieza justo al servir, para que se funda en la mesa."
+    ],
+    "errors": [
+      {
+        "p": "Se separa el agua",
+        "fix": "Hierbas mojadas o limón en exceso. Mezcla más tiempo o añade el líquido poco a poco."
+      },
+      {
+        "p": "Sabor rancio o fuerte",
+        "fix": "Se guardó demasiado. Hazla en lotes pequeños o congélala."
+      },
+      {
+        "p": "Color oscuro en las hierbas",
+        "fix": "Hierbas cortadas con cuchillo romo o picadas con mucha antelación. Pica al momento con cuchillo afilado."
+      }
+    ],
+    "history": "Son un recurso clásico de la cocina francesa, recogido en los recetarios del siglo XIX y principios del XX con numerosas variantes. Se pensaron para dar sabor rápido a la parrilla sin tener que hacer una salsa en el momento.",
+    "uses": [
+      "Carnes y pescados a la parrilla",
+      "Caracoles y almejas",
+      "Pan tostado",
+      "Verduras al vapor",
+      "Para terminar salsas"
+    ],
+    "keep": "Con hierbas y ajo crudos, 5-7 días en cámara. Congelada, 2-3 meses. Siempre bien envuelta en film para que no coja olores.",
+    "pro": "Hazla en lotes, en cilindros etiquetados y congelados. Corta las rodajas con antelación y guárdalas en cámara sobre papel sulfurizado para el servicio. Ten dos o tres tipos para combinar con la carta.",
+    "related": [
+      "mantequilla-noisette",
+      "beurre-blanc",
+      "chimichurri",
+      "pesto",
+      "salsa-verde"
+    ]
+  },
+  {
+    "id": "salsa-americana",
+    "name": "Salsa americana",
+    "aka": [
+      "americana",
+      "salsa armoricana",
+      "sauce américaine",
+      "salsa de marisco"
+    ],
+    "cat": "salsas",
+    "group": "Salsas de marisco",
+    "summary": "Salsa de cabezas y caparazones de crustáceo salteados, flambeados con coñac y cocidos con tomate y vino blanco.",
+    "what": "Se hace salteando cabezas y caparazones de crustáceo (bogavante, cigala, langostino, gamba), flambeándolos con coñac o brandy y cociéndolos con [[mirepoix]] fina, tomate, vino blanco y [[fondo-de-marisco|fondo de marisco]] o [[fumet]]. Se cuela, se reduce y se liga con nata, mantequilla o coral. En España es la salsa de la merluza y el rape a la americana.",
+    "base": {
+      "for": "1 litro aproximado",
+      "items": [
+        [
+          "Cabezas y caparazones de crustáceo",
+          "1 kg"
+        ],
+        [
+          "Aceite de oliva",
+          "60 ml"
+        ],
+        [
+          "Mantequilla",
+          "50 g"
+        ],
+        [
+          "Mirepoix fina (chalota o cebolla, zanahoria, apio)",
+          "150 g"
+        ],
+        [
+          "Ajo",
+          "2 dientes"
+        ],
+        [
+          "Coñac o brandy",
+          "100 ml"
+        ],
+        [
+          "Vino blanco seco",
+          "200 ml"
+        ],
+        [
+          "Tomate maduro troceado",
+          "300 g"
+        ],
+        [
+          "Tomate concentrado",
+          "1 cucharada"
+        ],
+        [
+          "Fumet o fondo de marisco",
+          "1,5 l"
+        ],
+        [
+          "Estragón, cayena o pimentón",
+          "al gusto"
+        ],
+        [
+          "Nata (opcional)",
+          "150-200 ml"
+        ]
+      ],
+      "steps": [
+        "Saltea las cabezas y caparazones en el aceite a fuego fuerte hasta que cojan color, aplastándolas para que suelten el jugo.",
+        "Añade la mirepoix y el ajo, y rehoga 5 minutos.",
+        "Flambea con el coñac, con la campana apagada y lejos de material inflamable.",
+        "Añade el tomate concentrado y tuéstalo 1 minuto; incorpora el vino blanco y reduce a la mitad.",
+        "Añade el tomate, el fumet y las hierbas, y cuece a fuego suave 30-40 minutos.",
+        "Tritura, cuela por chino apretando bien y luego por estameña.",
+        "Reduce hasta el punto deseado y termina con la nata y la mantequilla."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Salsa para pescado",
+        "ratio": "Reducir hasta 1 l con 150 ml de nata",
+        "note": "Napante; para merluza, rape o crepes."
+      },
+      {
+        "use": "Bisque o crema",
+        "ratio": "Con 50-80 g de arroz cocido en la salsa y triturado",
+        "note": "Más fluida; se sirve como plato."
+      },
+      {
+        "use": "Para arroces o pasta",
+        "ratio": "Reducir a la mitad sin nata",
+        "note": "Muy concentrada; da mucho sabor."
+      },
+      {
+        "use": "Ligada con mantequilla",
+        "ratio": "50-80 g de mantequilla por litro",
+        "note": "Más brillante, sin nata."
+      }
+    ],
+    "variants": [
+      {
+        "id": null,
+        "name": "Bisque",
+        "note": "Crema de marisco ligada con arroz."
+      },
+      {
+        "id": null,
+        "name": "Salsa Nantua",
+        "note": "Bechamel con mantequilla de cangrejo; para pescado."
+      },
+      {
+        "id": "fondo-de-marisco",
+        "name": "Fondo de marisco",
+        "note": "La base líquida de la salsa."
+      },
+      {
+        "id": "mantequillas-compuestas",
+        "name": "Mantequilla de marisco",
+        "note": "Para terminar la salsa."
+      }
+    ],
+    "keys": [
+      "El sabor sale del tostado de las cabezas: color fuerte y aplastarlas para sacar el jugo.",
+      "No quemes el ajo ni el tomate concentrado: amargan toda la salsa.",
+      "Cuela dos veces; los restos de caparazón estropean la textura.",
+      "Flambea con seguridad: campana apagada, cazo fuera del fuego al verter.",
+      "El coral y la mantequilla al final dan brillo y color."
+    ],
+    "errors": [
+      {
+        "p": "Amarga",
+        "fix": "Caparazones quemados o cocción demasiado larga. No tiene arreglo completo; alarga con fumet y nata."
+      },
+      {
+        "p": "Poco sabor",
+        "fix": "Pocas cabezas o tostado insuficiente. Añade más y reduce."
+      },
+      {
+        "p": "Textura arenosa",
+        "fix": "Restos de caparazón. Cuela por estameña."
+      }
+    ],
+    "history": "Su origen se discute: hay quien defiende que el nombre es americana y quien defiende armoricana (de Bretaña). La versión más aceptada sitúa su creación en París en el siglo XIX. En España se popularizó con platos como la merluza o el rape a la americana.",
+    "uses": [
+      "Merluza y rape a la americana",
+      "Crepes de marisco",
+      "Arroces y fideos",
+      "Pasta con marisco",
+      "Bisque"
+    ],
+    "keep": "Abatida, 3 días en cámara. Congela muy bien sin nata. Regenerar a fuego suave y terminar con nata y mantequilla.",
+    "pro": "Aprovecha todas las cabezas y caparazones del servicio: congélalas hasta tener cantidad y haz la salsa en lote. Porciona en bolsas o recipientes de 500 ml y congela. En el pase, termina con nata y mantequilla al momento.",
+    "related": [
+      "fondo-de-marisco",
+      "fumet",
+      "mirepoix",
+      "salsa-de-tomate",
+      "reducciones"
+    ]
+  }
+]
