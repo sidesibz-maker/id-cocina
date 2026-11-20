@@ -7,3 +7,5 @@ Proyecto de Supabase propio y separado: `id-cocina` (ref `dyacksxibcwvrdsulsfc`,
 - Gana el cambio más reciente de cada cosa; la versión sustituida queda en `id_history`. Nada se borra.
 - Como mucho 5 libretas, 50 000 cosas y 4000 imágenes por libreta.
 - La clave pública (anon) que va en `src/sync.js` no da acceso a nada sin el código.
+- Las subrecetas se sincronizan como tipo `sub`.
+- Fichas para el equipo: tabla `id_shares` (enlace largo + resumen de una clave de edición que solo tiene el aparato que la creó). Funciones `id_share_put`, `id_share_get` (solo lectura) e `id_share_off` (la desactiva; no se borra). La página `ficha.html#enlace` la muestra.

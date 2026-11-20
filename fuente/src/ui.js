@@ -50,6 +50,7 @@ const PATHS = {
  menu: '<path d="M4 7h16M4 12h16M4 17h16"/>',
  drop: '<path d="M12 3.500c3.500 4.200 6 7 6 10.500a6 6 0 0 1-12 0c0-3.500 2.500-6.300 6-10.500z"/>',
  gear: '<path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/>',
+ mic: '<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/>',
  chat: '<path d="M4 5h16v11H10l-5 4v-4H4z"/><path d="M8 9.5h8M8 12.5h5"/>',
  send: '<path d="M4 12l16-8-6 16-2.5-6.5z"/><path d="M11.5 13.5L20 4"/>',
  bolt: '<path d="M13 3L5 13.500h6L10 21l8-10.500h-6z"/>'

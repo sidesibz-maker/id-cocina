@@ -1,7 +1,7 @@
 // I+D · consejo, ideas, imágenes y tendencias sin servidores. La app prepara la consulta completa (el plato, tu cocina y el
 // formato de respuesta) y la copia: se pega en Claude o en ChatGPT, y lo que contesten se pega de vuelta aquí. La app limpia
 // la respuesta y la guarda en el plato. Las imágenes se crean en ChatGPT con la descripción que da la app y se añaden al plato.
-import {cleanAdvice, cleanIdeas, dishRequest, kitchenRequest, imageRequest, cleanRecipe, recipeFromText, ALLERGENS, ROLE_IDS, COURSE_IDS, AI_TECHS} from './ai-core.js';
+import {cleanProfile, cleanAdvice, cleanIdeas, dishRequest, kitchenRequest, imageRequest, cleanRecipe, recipeFromText, ALLERGENS, ROLE_IDS, COURSE_IDS, AI_TECHS} from './ai-core.js';
 import {state} from './store.js';
 import {en} from './i18n.js';
 
@@ -15,6 +15,13 @@ const ONLY_JSON = 'Responde SOLO con un bloque de código JSON válido (```json 
 export function chatInstructions(dish = null) {
  return RULES + ' Aquí te hace preguntas sueltas: contesta en texto normal (nada de JSON), al grano y práctico, como lo dirías en la cocina; usa listas cortas solo si ayudan. Si te pasa una foto o una captura, léela con atención. Si algo depende de un dato que no tienes, dilo en una frase. ' + lang() +
   '\n\nSU COCINA:\n' + JSON.stringify(kitchen()) + (dish ? '\n\nEL PLATO DEL QUE HABLA:\n' + JSON.stringify(dishRequest(state.kb, dish)) : '');
+}
+// Maridaje de un plato: vino, sin alcohol y cerveza o sidra. Sin precios.
+export function pairingPrompt(dish) {
+ return 'Eres sumiller en un restaurante de brasa mediterráneo en Ibiza. Propón el maridaje de este plato, en texto corto y práctico, una propuesta por línea empezando por «- »: un vino (mejor español: zona o D.O., uva y por qué encaja), otra opción de vino distinta, una bebida sin alcohol fácil de hacer en barra (cóctel sin alcohol, kombucha, agua aromatizada…) y una cerveza o sidra si encaja. Termina con una frase sobre la temperatura de servicio. Sin precios. ' + lang() + '\n\nEL PLATO:\n' + JSON.stringify(dishRequest(state.kb, dish));
+}
+export function menuPairingPrompt(menu, dishes) {
+ return 'Eres sumiller en un restaurante de brasa mediterráneo en Ibiza. Propón el maridaje de este ' + (menu.kind === 'carta' ? 'conjunto de platos de carta' : 'menú degustación, en su orden') + ': para cada plato, una línea «- N. Plato: vino (zona o D.O. y uva)», y al final una alternativa sin alcohol para todo el menú' + (menu.kind === 'carta' ? '' : ' y cómo va subiendo la intensidad') + '. Corto y práctico, sin precios. ' + lang() + '\n\nPLATOS:\n' + JSON.stringify(dishes.map((d, k) => ({n: k + 1, ...dishRequest(state.kb, d)})));
 }
 export function advicePrompt(dish) {
  return RULES + '\n\nAnaliza este plato en desarrollo y da consejo práctico para afinarlo. ' + ONLY_JSON + ' Claves:\n' +
@@ -59,7 +66,7 @@ export function radarPrompt() {
   ONLY_JSON + ' Es una lista de 4 a 6 avisos y 1 idea del día. Cada aviso:\n' +
   '{"kind": tecnica, producto, plato, escena, dulce o bebida; "heat": emergente, alza o consolidada; "title": hasta 90 caracteres; "summary": una o dos frases; "why": por qué ahora y quién lo hace; "adapt": cómo llevarlo a esta cocina con su equipo y sus básicos; "places": hasta 5 restaurantes o ciudades; "sources": [{"name", "url", "date": "AAAA-MM-DD"}]; ' +
   '"ideas": 1 o 2 platos {"name", "line", "components": [{"role": ' + ROLE_IDS.join('/') + ', "name", "techniques": de ' + AI_TECHS.join(', ') + ', "items": [ingredientes]}]}; "tags": de 2 a 4 palabras; "fit": de 0 a 100, cuánto encaja con esta cocina}.\n' +
-  'La idea del día lleva "kind": "idea", sin sources ni places: "title" es el nombre del plato, "summary" la idea y "ideas" ese plato.\n' + lang() + '\n\nLA COCINA:\n' + JSON.stringify(k) + (recent.length ? '\n\nNo repitas estos avisos anteriores:\n- ' + recent.join('\n- ') : '');
+  'La idea del día lleva "kind": "idea", sin sources ni places: "title" es el nombre del plato, "summary" la idea y "ideas" ese plato.\n' + (cleanProfile(state.settings).interests.length ? 'Da prioridad (al menos la mitad de los avisos) a lo que más le interesa: ' + cleanProfile(state.settings).interests.join(', ') + '.\n' : '') + lang() + '\n\nLA COCINA:\n' + JSON.stringify(k) + (recent.length ? '\n\nNo repitas estos avisos anteriores:\n- ' + recent.join('\n- ') : '');
 }
 // Saca el JSON de una respuesta pegada (con o sin bloque de código alrededor). null si no hay JSON.
 export function parseReply(text) {

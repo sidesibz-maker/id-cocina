@@ -1,8 +1,8 @@
-const C = 'id-cocina-mwoslw1i', FILES = ['./', 'index.html', 'radar.js', 'manifest.webmanifest', 'icon-192.png', 'icon-180.png'];
+const C = 'id-cocina-mwotopk9', FILES = ['./', 'index.html', 'radar.js', 'manifest.webmanifest', 'icon-192.png', 'icon-180.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(C).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(k => Promise.all(k.filter(x => x !== C).map(x => caches.delete(x)))).then(() => self.clients.claim())); });
 self.addEventListener('fetch', e => {
  const u = new URL(e.request.url);
- if (e.request.method !== 'GET' || u.origin !== location.origin) return;
+ if (e.request.method !== 'GET' || u.origin !== location.origin || u.pathname.endsWith('ficha.html')) return;
  e.respondWith(fetch(e.request).then(r => { if (r.ok) { const copy = r.clone(); caches.open(C).then(c => c.put(e.request, copy)); } return r; }).catch(() => caches.match(e.request, {ignoreSearch: true}).then(r => r || caches.match('index.html'))));
 });

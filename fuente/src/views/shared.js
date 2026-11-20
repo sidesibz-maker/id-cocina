@@ -46,6 +46,7 @@ export function dishCard(d) {
  return '<a class="dish" href="#/plato/' + esc(d.id) + '"><span class="dish-media' + (d.cover_path ? '' : ' dish-print') + '">' + media + '</span>' +
   '<span class="dish-main"><span class="dish-name">' + esc(d.name) + '</span>' +
   '<span class="dish-meta"><span class="status status-' + esc(d.status) + '">' + esc(statusLabel(d.status)) + '</span><span>' + esc(courseLabel(d.course)) + '</span></span>' +
+  ((d.tags || []).length ? '<span class="dish-tags">' + d.tags.slice(0, 4).map(x => '#' + esc(x)).join(' ') + '</span>' : '') +
   '<span class="dish-foot">' + esc(relDay(d.updated_at || d.created_at || new Date())) + (tests ? ' · ' + tests + ' ' + esc(tests === 1 ? t('prueba', 'test') : t('pruebas', 'tests')) : '') + '</span></span></a>';
 }
 

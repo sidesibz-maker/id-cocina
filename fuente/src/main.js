@@ -14,6 +14,9 @@ import * as flavors from './views/flavors.js';
 import * as kitchenView from './views/kitchen-view.js';
 import * as ask from './views/ask.js';
 import * as menus from './views/menus.js';
+import * as sub from './views/sub.js';
+import * as season from './views/season.js';
+import {startVoice} from './voice.js';
 import {iaSheet} from './views/ia-sheet.js';
 import {syncSheet, syncLine} from './views/sync-sheet.js';
 import {startAutoSync, syncOn, syncStatus} from './sync.js';
@@ -21,7 +24,7 @@ import {iaOn, iaConfig, saveIa, askIa} from './ia.js';
 import {radarPrompt, trendsFromReply} from './ai.js';
 import {addTrends} from './store.js';
 
-const VIEWS = {hoy: home, radar, crear: create, plato: dish, libreta: notebook, sabores: flavors, cocina: kitchenView, preguntar: ask, menus};
+const VIEWS = {hoy: home, radar, crear: create, plato: dish, libreta: notebook, sabores: flavors, cocina: kitchenView, preguntar: ask, menus, subreceta: sub, temporada: season};
 const NAV = [['hoy', 'flame', () => t('Hoy', 'Today')], ['radar', 'radar', () => t('Radar', 'Radar')], ['crear', 'plus', () => t('Crear', 'Create')], ['libreta', 'book', () => t('Libreta', 'Notebook')], ['sabores', 'wheel', () => t('Sabores', 'Flavours')]];
 const app = () => $('#app');
 let current = {name: '', params: [], cleanup: null};
@@ -34,7 +37,7 @@ function shell() {
  const item = ([id, ic, label]) => '<a class="nav-item' + (id === 'crear' ? ' nav-create' : '') + '" href="#/' + id + '" data-nav="' + id + '">' + icon(ic) + '<span>' + esc(label()) + '</span><i class="badge" data-badge="' + id + '" hidden></i></a>';
  app().innerHTML = '<div class="lab">' +
   '<aside class="rail"><a class="wordmark" href="#/hoy" aria-label="I+D">I<b>+</b>D</a><div class="rail-rest">' + esc(t('Cuaderno de cocina', 'Kitchen notebook')) + '</div>' +
-   '<nav class="rail-nav" aria-label="' + esc(t('Secciones', 'Sections')) + '">' + NAV.map(item).join('') + '<a class="nav-item" href="#/preguntar" data-nav="preguntar">' + icon('chat') + '<span>' + esc(t('Preguntar', 'Ask')) + '</span></a><a class="nav-item" href="#/cocina" data-nav="cocina">' + icon('pan') + '<span>' + esc(t('Mi cocina', 'My kitchen')) + '</span></a></nav>' +
+   '<nav class="rail-nav" aria-label="' + esc(t('Secciones', 'Sections')) + '">' + NAV.map(item).join('') + '<a class="nav-item" href="#/temporada" data-nav="temporada">' + icon('leaf') + '<span>' + esc(t('Temporada', 'Season')) + '</span></a><a class="nav-item" href="#/preguntar" data-nav="preguntar">' + icon('chat') + '<span>' + esc(t('Preguntar', 'Ask')) + '</span></a><a class="nav-item" href="#/cocina" data-nav="cocina">' + icon('pan') + '<span>' + esc(t('Mi cocina', 'My kitchen')) + '</span></a></nav>' +
    '<div class="rail-foot"><button type="button" class="rail-link" data-act="menu">' + icon('gear') + '<span>' + esc(t('Ajustes', 'Settings')) + '</span></button></div></aside>' +
   '<header class="top"><a class="wordmark" href="#/hoy" aria-label="I+D">I<b>+</b>D</a><span class="top-rest">' + esc(t('Cuaderno de cocina', 'Kitchen notebook')) + '</span><a class="top-ask" href="#/preguntar" data-nav="preguntar">' + icon('chat') + '<span>' + esc(t('Preguntar', 'Ask')) + '</span></a><button type="button" class="iconbtn" data-act="menu" aria-label="' + esc(t('Más y ajustes', 'More and settings')) + '">' + icon('menu') + '</button></header>' +
   '<div id="notices"></div><main id="view" tabindex="-1"></main><nav class="tabs" aria-label="' + esc(t('Secciones', 'Sections')) + '">' + NAV.map(item).join('') + '</nav></div>';
@@ -53,7 +56,7 @@ function badges() {
  $$('[data-badge=radar]').forEach(b => { b.hidden = !n; b.textContent = n > 9 ? '9+' : String(n); b.setAttribute('aria-label', n + ' ' + t('avisos nuevos', 'new alerts')); });
 }
 function markNav() {
- const active = ['plato', 'menus'].includes(current.name) ? 'libreta' : current.name;
+ const active = ['plato', 'menus'].includes(current.name) ? 'libreta' : current.name === 'subreceta' ? 'cocina' : current.name;
  $$('[data-nav]').forEach(a => { const on = a.dataset.nav === active; a.classList.toggle('active', on); if (on) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
 }
 function route({keepScroll = false} = {}) {
@@ -103,6 +106,7 @@ function menu({nav = false} = {}) {
  const s = sheet({title: nav ? t('Más', 'More') : t('Ajustes', 'Settings'), body:
   (nav ? '<div class="set-group"><p class="set-label">' + esc(t('Ir a', 'Go to')) + '</p>' +
    rowItem('a', 'href="#/preguntar" data-go', 'chat', t('Preguntar', 'Ask'), esc(on ? t('ChatGPT contesta aquí mismo', 'ChatGPT answers right here') : t('Pregunta lo que quieras de cocina', 'Ask anything about cooking'))) +
+   rowItem('a', 'href="#/temporada" data-go', 'leaf', t('Temporada', 'Season'), esc(t('Qué entra, qué está en su punto y qué se va', 'What comes in, what is at its best and what is leaving'))) +
    rowItem('a', 'href="#/cocina" data-go', 'pan', t('Mi cocina', 'My kitchen'), esc(t('Tus básicos, tu equipo y lo que no quieres', 'Your staples, equipment and what you avoid'))) + '</div>' : '') +
   '<div class="set-group"><p class="set-label">ChatGPT</p>' +
   rowItem('button', 'type="button" data-act="ia"', 'chat', on ? t('ChatGPT en la app', 'ChatGPT in the app') : t('Conectar ChatGPT a la app', 'Connect ChatGPT to the app'),
@@ -170,6 +174,7 @@ async function start() {
  addEventListener('hashchange', () => route());
  await loadAll();
  startAutoSync();
+ startVoice();
  dailyRadar();
 }
 // Con ChatGPT conectado, el radar se pone al día solo una vez al día (al abrir la app), sin molestar.

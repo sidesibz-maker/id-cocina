@@ -6,7 +6,7 @@ import {t, en, relDay, shortDate} from '../i18n.js';
 import {esc, icon, $, $$, sheet, toast, ask, flavorPrint, axisName, clip} from '../ui.js';
 import {state, dishById, liveMenus, menuById, createMenu, saveMenu} from '../store.js';
 import {dishRequest} from '../ai-core.js';
-import {copy} from '../ai.js';
+import {copy, menuPairingPrompt} from '../ai.js';
 import {iaOn, askIa, iaMessage} from '../ia.js';
 import {rich} from './ask.js';
 import {emptyState} from './shared.js';
@@ -81,7 +81,7 @@ function editPage(id) {
  const dishRow = ({d, p}, k) => '<li class="mrow" data-k="' + k + '"><span class="mrow-n">' + (k + 1) + '</span>' + flavorPrint(p && !p.empty ? p.axes : d.flavor?.axes, {size: 44}) + '<a class="mrow-main" href="#/plato/' + esc(d.id) + '"><strong>' + esc(d.name) + '</strong><small>' + esc([courseName(d.course), p?.dominant?.length ? t('domina ', 'led by ') + p.dominant.map(x => axisName(x).toLowerCase()).join(' y ') : ''].filter(Boolean).join(' · ')) + '</small></a>' +
   '<span class="mrow-act"><button type="button" class="iconbtn" data-up="' + k + '" aria-label="' + esc(t('Subir', 'Move up')) + '"' + (k ? '' : ' disabled') + '>' + icon('left') + '</button><button type="button" class="iconbtn" data-down="' + k + '" aria-label="' + esc(t('Bajar', 'Move down')) + '"' + (k < a.rows.length - 1 ? '' : ' disabled') + '>' + icon('right') + '</button><button type="button" class="iconbtn" data-out="' + k + '" aria-label="' + esc(t('Quitar del menú', 'Remove from menu')) + '">' + icon('x') + '</button></span></li>';
  return '<a class="back" href="#/menus">' + icon('left') + esc(t('Cartas y menús', 'Menus')) + '</a><div class="bench menu-bench">' +
-  '<header class="card bench-head"><div class="bench-top"><label class="sr" for="menuKind">' + esc(t('Tipo', 'Type')) + '</label><select id="menuKind" class="status-select">' + KINDS().map(([k, l]) => '<option value="' + k + '"' + (m.kind === k ? ' selected' : '') + '>' + esc(l) + '</option>').join('') + '</select><button type="button" class="iconbtn" data-act="more" aria-label="' + esc(t('Enviar a la papelera', 'Move to the bin')) + '">' + icon('trash') + '</button></div>' +
+  '<header class="card bench-head"><div class="bench-top"><label class="sr" for="menuKind">' + esc(t('Tipo', 'Type')) + '</label><select id="menuKind" class="status-select">' + KINDS().map(([k, l]) => '<option value="' + k + '"' + (m.kind === k ? ' selected' : '') + '>' + esc(l) + '</option>').join('') + '</select><button type="button" class="btn ghost sala-btn" data-act="sala">' + icon('down') + esc(t('Imprimir para la sala', 'Print for the dining room')) + '</button><button type="button" class="iconbtn" data-act="more" aria-label="' + esc(t('Enviar a la papelera', 'Move to the bin')) + '">' + icon('trash') + '</button></div>' +
   '<label class="sr" for="menuName">' + esc(t('Nombre', 'Name')) + '</label><input id="menuName" class="title-input" value="' + esc(m.name) + '" maxlength="120" autocomplete="off"></header>' +
   '<section class="card"><h2>' + esc(t('Platos', 'Dishes')) + (a.rows.length ? ' · ' + a.rows.length : '') + '</h2>' + (a.rows.length ? '<ol class="mrows">' + a.rows.map(dishRow).join('') + '</ol>' : '<p class="hint">' + esc(t('Añade platos de tu libreta. En un menú degustación, el orden cuenta.', 'Add dishes from your notebook. In a tasting menu, the order matters.')) + '</p>') +
   '<div class="row-actions row-left"><button type="button" class="btn ' + (a.rows.length ? 'ghost' : 'primary') + '" data-act="add">' + icon('plus') + esc(t('Añadir platos', 'Add dishes')) + '</button></div></section>' +
@@ -90,8 +90,33 @@ function editPage(id) {
    (a.allergens.length ? '<h3>' + esc(t('Alérgenos (según el consejo de cada plato)', 'Allergens (from each dish\'s advice)')) + '</h3><div class="chips">' + a.allergens.map(([al, w]) => '<span class="chip chip-static">' + esc(lbl(al)) + '<small>' + esc(w.join(', ')) + '</small></span>').join('') + '</div>' : '')) + '</aside>' +
   '<section class="card" id="menuAdvice"><h2>' + esc(t('Opinión de ChatGPT', 'ChatGPT\'s view')) + '</h2>' + (m.advice?.text ? '<div class="msg-body">' + rich(m.advice.text) + '</div><p class="fine">' + esc(t('Del ', 'From ') + shortDate(m.advice.at)) + '</p>' : '<p class="hint">' + esc(t('Una segunda opinión sobre el conjunto: ritmo, repeticiones y qué cambiaría.', 'A second opinion on the whole: rhythm, repetitions and what to change.')) + '</p>') +
    (a.rows.length >= 2 ? (on ? '<div class="row-actions row-left"><button type="button" class="btn ' + (m.advice ? 'ghost' : 'primary') + '" data-act="advice">' + icon('spark') + esc(m.advice ? t('Pedir otra opinión', 'Ask again') : t('Pedir opinión a ChatGPT', 'Ask ChatGPT')) + '</button></div>' : '<div class="row-actions row-left"><button type="button" class="btn ghost" data-act="copy">' + icon('copy') + esc(t('Copiar la consulta', 'Copy the request')) + '</button><a class="btn ghost" href="https://chatgpt.com/" data-chat target="_blank" rel="noopener noreferrer">' + esc(t('Preguntar a ChatGPT', 'Ask ChatGPT')) + icon('out') + '</a></div>') : '') + '</section>' +
-  '<section class="card"><h2>' + esc(t('Notas', 'Notes')) + '</h2><label class="sr" for="menuNotes">' + esc(t('Notas del menú', 'Menu notes')) + '</label><textarea id="menuNotes" rows="3" maxlength="4000" placeholder="' + esc(t('Para cuándo es, bebidas, cambios pendientes…', 'When it is for, drinks, pending changes…')) + '">' + esc(m.notes) + '</textarea></section></div>';
+  '<section class="card" id="menuPair"><h2>' + esc(t('Maridaje del menú', 'Menu pairing')) + '</h2>' + (m.pairing?.text ? '<div class="msg-body">' + rich(m.pairing.text) + '</div>' : '<p class="hint">' + esc(t('Un vino para cada plato y una alternativa sin alcohol para todo el menú.', 'A wine for each dish and an alcohol-free option for the whole menu.')) + '</p>') +
+   (a.rows.length >= 1 ? (on ? '<div class="row-actions row-left"><button type="button" class="btn ghost" data-act="pair">' + icon('drop') + esc(m.pairing ? t('Otra propuesta', 'Another suggestion') : t('Proponer maridaje', 'Suggest a pairing')) + '</button></div>' : '<div class="row-actions row-left"><button type="button" class="btn ghost" data-act="pair-copy">' + icon('copy') + esc(t('Copiar la consulta de maridaje', 'Copy the pairing request')) + '</button><a class="btn ghost" href="https://chatgpt.com/" data-chat target="_blank" rel="noopener noreferrer">' + esc(t('Preguntar a ChatGPT', 'Ask ChatGPT')) + icon('out') + '</a></div>') : '') + '</section>' +
+  '<section class="card"><h2>' + esc(t('Notas', 'Notes')) + '</h2><label class="sr" for="menuNotes">' + esc(t('Notas del menú', 'Menu notes')) + '</label><textarea id="menuNotes" data-voice rows="3" maxlength="4000" placeholder="' + esc(t('Para cuándo es, bebidas, cambios pendientes…', 'When it is for, drinks, pending changes…')) + '">' + esc(m.notes) + '</textarea></section></div>';
 }
+// ---------- Para la sala: la carta o el menú, limpio y bonito, con los alérgenos ----------
+const ORDER = ['picar', 'entrante', 'principal', 'guarnicion', 'postre', 'brunch', 'salsa', 'otro'];
+function salaHtml(m) {
+ const dishes = m.items.map(x => dishById(x.dish_id)).filter(d => d && !d.deleted_at);
+ const al = d => (d.advice?.allergens || []).map(id => ALLERGENS.find(a => a[0] === id)).filter(Boolean).map(lbl);
+ const item = d => '<div class="sala-dish"><h3>' + esc(d.name) + '</h3>' + (d.concept ? '<p>' + esc(d.concept) + '</p>' : '') + (al(d).length ? '<small>' + esc(t('Alérgenos: ', 'Allergens: ') + al(d).join(', ')) + '</small>' : '') + '</div>';
+ let body = '';
+ if (m.kind === 'carta') {
+  for (const c of ORDER) { const list = dishes.filter(d => (d.course || 'otro') === c); if (list.length) body += '<section class="sala-sec"><h2>' + esc(courseName(c)) + '</h2>' + list.map(item).join('') + '</section>'; }
+ } else body = '<section class="sala-sec">' + dishes.map(item).join('<div class="sala-sep">·</div>') + '</section>';
+ return '<article class="sala"><header><p class="sala-kicker">' + esc(kindName(m.kind)) + '</p><h1>' + esc(m.name) + '</h1></header>' + body +
+  '<footer>' + esc(t('Consulte al personal de sala por alérgenos e intolerancias.', 'Please ask our staff about allergens and intolerances.')) + '</footer></article>';
+}
+async function printSala(m) {
+ let host = document.getElementById('printFicha');
+ if (!host) { host = document.createElement('div'); host.id = 'printFicha'; document.body.append(host); }
+ host.innerHTML = salaHtml(m);
+ document.documentElement.classList.add('printing');
+ const done = () => { document.documentElement.classList.remove('printing'); host.innerHTML = ''; removeEventListener('afterprint', done); };
+ addEventListener('afterprint', done);
+ setTimeout(() => print(), 50);
+}
+
 export const render = params => (params[0] ? editPage(params[0]) : listPage());
 
 function pickDishes(m, done) {
@@ -126,11 +151,19 @@ export function mount(root, params) {
   if (b.dataset.out) { items.splice(Number(b.dataset.out), 1); patch({items}); }
   if (b.dataset.act === 'add') pickDishes(m, next => patch({items: next}));
   if (b.dataset.act === 'copy') { const done = await copy(menuPrompt(m)); toast(done ? t('Consulta copiada.', 'Request copied.') : t('No se pudo copiar.', 'It could not be copied.'), done ? 'info' : 'error'); }
+  const dishesOf = () => m.items.map(x => dishById(x.dish_id)).filter(d => d && !d.deleted_at);
+  if (b.dataset.act === 'pair-copy') { const done = await copy(menuPairingPrompt(m, dishesOf())); toast(done ? t('Consulta copiada.', 'Request copied.') : t('No se pudo copiar.', 'It could not be copied.'), done ? 'info' : 'error'); }
+  if (b.dataset.act === 'pair') {
+   b.disabled = true; b.classList.add('is-busy'); b.lastChild.textContent = t('Pensando el maridaje…', 'Thinking of a pairing…');
+   try { const text = await askIa({text: menuPairingPrompt(m, dishesOf())}); await saveMenu(id, {pairing: {text: text.trim(), at: new Date().toISOString()}}); repaint(); }
+   catch (err) { toast(iaMessage(err), 'error', 7000); if (b.isConnected) { b.disabled = false; b.classList.remove('is-busy'); b.lastChild.textContent = t('Proponer maridaje', 'Suggest a pairing'); } }
+  }
   if (b.dataset.act === 'advice') {
    b.disabled = true; b.classList.add('is-busy'); b.lastChild.textContent = t('ChatGPT está mirando el menú…', 'ChatGPT is looking at the menu…');
    try { const text = await askIa({text: menuPrompt(m)}); await saveMenu(id, {advice: {text: text.trim(), at: new Date().toISOString()}}); repaint(); }
    catch (err) { toast(iaMessage(err), 'error', 7000); if (b.isConnected) { b.disabled = false; b.classList.remove('is-busy'); b.lastChild.textContent = t('Pedir opinión a ChatGPT', 'Ask ChatGPT'); } }
   }
+  if (b.dataset.act === 'sala') { if (!m.items.some(x => dishById(x.dish_id))) { toast(t('Añade platos primero.', 'Add dishes first.'), 'error'); return; } printSala(m); return; }
   if (b.dataset.act === 'more') {
    if (!await ask({title: t('¿Enviar a la papelera?', 'Move to the bin?'), text: t('No se borra: lo encontrarás abajo, en Cartas y menús, y podrás recuperarlo. Los platos no se tocan.', 'It is not deleted: you will find it below in Menus and can restore it. The dishes are not touched.'), yes: t('Enviar a la papelera', 'Move to the bin'), danger: true})) return;
    await saveMenu(id, {deleted_at: new Date().toISOString()}); toast(t('En la papelera.', 'Moved to the bin.')); go('menus');
@@ -138,4 +171,4 @@ export function mount(root, params) {
  });
  return null;
 }
-export function onData(what, el, params) { if (!params[0] && el) el.innerHTML = render(params); }
+export function onData(what, el, params) { if (!el) return; if (!params[0] || !el.querySelector('#menuName')) el.innerHTML = render(params); }

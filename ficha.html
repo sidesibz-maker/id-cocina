@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#ECE7DE">
+<title>Ficha de cocina</title>
+<style>
+:root{--bg:#ECE7DE;--card:#FAF6EF;--ink:#24211D;--ink2:#4A443C;--mut:#7A7166;--line:#DCD3C5;--ember:#C4401A;--soft:#F1EBE0}
+@media (prefers-color-scheme:dark){:root{--bg:#141311;--card:#1D1B18;--ink:#F4EEE3;--ink2:#D8D0C2;--mut:#A79E90;--line:#35312B;--ember:#FF8A50;--soft:#24211D}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:20px 16px calc(40px + env(safe-area-inset-bottom))}
+.kicker{font:700 12px/1.2 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--ember)}
+h1{font:400 38px/1.05 Georgia,"Times New Roman",serif;margin:6px 0 8px}.concept{font-style:italic;color:var(--ink2);margin:0 0 6px}.meta{color:var(--mut);font-size:14px}
+.photo{width:100%;max-height:420px;object-fit:cover;border-radius:6px;margin:14px 0 4px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:16px;margin-top:14px}
+h2{font-size:17px;margin:0 0 8px;display:flex;flex-wrap:wrap;gap:8px;align-items:baseline}h2 small{font-weight:400;color:var(--mut);font-size:13.5px}
+table{width:100%;border-collapse:collapse}td{padding:7px 0;border-bottom:1px dotted var(--line);vertical-align:top}td.q{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums;font-weight:700;padding-left:12px}
+.method{margin-top:10px}.method p{margin:4px 0}.allergens{color:var(--ink2)}
+.note{color:var(--mut);font-size:13px;margin-top:22px;text-align:center}
+.empty{text-align:center;padding:60px 10px;color:var(--ink2)}.empty h1{font-size:28px}
+button{font:inherit;font-weight:700;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:4px;min-height:44px;padding:0 16px;margin-top:18px;cursor:pointer}
+@media print{body{background:#fff;color:#000}.card{border:0;padding:6px 0}button,.note{display:none}}
+</style>
+</head>
+<body>
+<main id="app"><p class="empty">Cargando la ficha…</p></main>
+<script>
+// Ficha de cocina en solo lectura para el equipo. Se lee de la base de datos de la app con el código del enlace (lo que va
+// detrás de «#»). No guarda nada en este aparato y no se puede cambiar desde aquí.
+const API = 'https://dyacksxibcwvrdsulsfc.supabase.co/rest/v1/rpc/id_share_get';
+const ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR5YWNrc3hpYmN3dnJkc3Vsc2ZjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTUxMzg2OTYsImV4cCI6MjExMDcxNDY5Nn0.8nuuA4yjJLHlrdD1XWjSyYmOtGH3RTS2BtdeJrOnNcs';
+const esc = v => String(v == null ? '' : v).replace(/[&<>"']/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
+const lines = text => String(text || '').split(/\n+/).filter(l => l.trim()).map(l => '<p>' + esc(l) + '</p>').join('');
+const table = items => items.length ? '<table><tbody>' + items.map(i => '<tr><td>' + esc(i.n) + '</td><td class="q">' + esc(i.q) + '</td></tr>').join('') + '</tbody></table>' : '';
+const app = document.getElementById('app');
+let last = '';
+async function load() {
+ const token = decodeURIComponent(location.hash.slice(1)).trim();
+ if (!/^[A-Za-z0-9]{20,64}$/.test(token)) { app.innerHTML = '<div class="empty"><h1>Enlace incompleto</h1><p>Pide al jefe de cocina que te lo vuelva a mandar.</p></div>'; return; }
+ let r;
+ try { const res = await fetch(API, {method: 'POST', headers: {'Content-Type': 'application/json', apikey: ANON, Authorization: 'Bearer ' + ANON}, body: JSON.stringify({token})}); r = await res.json(); }
+ catch { if (!last) app.innerHTML = '<div class="empty"><h1>Sin conexión</h1><p>Necesitas internet para ver la ficha.</p></div>'; return; }
+ if (!r || !r.ok) { app.innerHTML = '<div class="empty"><h1>Esta ficha ya no se comparte</h1><p>Pide al jefe de cocina la ficha nueva.</p></div>'; return; }
+ const d = r.data || {}, key = JSON.stringify(d);
+ if (key === last) return;
+ last = key;
+ document.title = d.name + ' · Ficha de cocina';
+ const when = r.updated_at ? new Date(r.updated_at).toLocaleString('es-ES', {day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit'}) : '';
+ app.innerHTML = '<p class="kicker">Ficha de cocina</p><h1>' + esc(d.name) + '</h1>' + (d.concept ? '<p class="concept">' + esc(d.concept) + '</p>' : '') +
+  '<p class="meta">' + [d.portions ? 'Raciones: ' + esc(d.portions) : '', when ? 'Actualizada el ' + esc(when) : ''].filter(Boolean).join(' · ') + '</p>' +
+  (d.image ? '<img class="photo" src="' + esc(d.image) + '" alt="">' : '') +
+  (d.components || []).map(c => '<section class="card"><h2>' + esc(c.role) + (c.name ? ' · ' + esc(c.name) : '') + (c.techniques && c.techniques.length ? '<small>' + esc(c.techniques.join(', ')) + '</small>' : '') + '</h2>' + table(c.items || []) + (c.method ? '<div class="method">' + lines(c.method) + '</div>' : '') + '</section>').join('') +
+  (d.subs || []).map(x => '<section class="card"><h2>Subreceta · ' + esc(x.name) + (x.yield ? '<small>Rinde ' + esc(x.yield) + '</small>' : '') + '</h2>' + table(x.items || []) + (x.method ? '<div class="method">' + lines(x.method) + '</div>' : '') + '</section>').join('') +
+  (d.plating ? '<section class="card"><h2>Emplatado</h2><div class="method">' + lines(d.plating) + '</div></section>' : '') +
+  (d.allergens && d.allergens.length ? '<section class="card"><h2>Alérgenos probables</h2><p class="allergens">' + esc(d.allergens.join(', ')) + '. Compruébalos siempre con las fichas de cada producto.</p></section>' : '') +
+  '<button type="button" onclick="print()">Imprimir</button><p class="note">Solo lectura. Se pone al día sola cuando el jefe de cocina cambia el plato.</p>';
+}
+load();
+addEventListener('hashchange', () => { last = ''; load(); });
+document.addEventListener('visibilitychange', () => { if (!document.hidden) load(); });
+setInterval(() => { if (!document.hidden) load(); }, 60000);
+</script>
+</body>
+</html>

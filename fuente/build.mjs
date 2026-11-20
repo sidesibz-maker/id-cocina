@@ -37,6 +37,7 @@ const sw = "<script>if('serviceWorker' in navigator&&location.protocol==='https:
 writeFileSync(web + 'index.html', html.replace('<link rel="icon"', head + '<link rel="icon"').replace('</body>', sw + '</body>'));
 for (const [from, to] of [['lab-192.png', 'icon-192.png'], ['lab-512.png', 'icon-512.png'], ['lab-maskable-512.png', 'icon-maskable-512.png'], ['lab-touch-180.png', 'icon-180.png']]) copyFileSync(new URL('./origen/public/' + from, import.meta.url), web + to);
 copyFileSync(out + 'ID Cocina/radar.js', web + 'radar.js');
+copyFileSync(new URL('./ficha.html', import.meta.url), web + 'ficha.html');
 writeFileSync(web + 'manifest.webmanifest', JSON.stringify({name: 'I+D · Cuaderno de cocina', short_name: 'I+D', start_url: './', scope: './', display: 'standalone', background_color: '#ECE7DE', theme_color: '#ECE7DE', lang: 'es', share_target: {action: './', method: 'GET', params: {title: 'title', text: 'text', url: 'url'}}, shortcuts: [{name: 'Importar receta', url: './#/crear/importar'}, {name: 'Crear un plato', url: './#/crear'}, {name: 'Radar', url: './#/radar'}], icons: [{src: 'icon-192.png', sizes: '192x192', type: 'image/png'}, {src: 'icon-512.png', sizes: '512x512', type: 'image/png'}, {src: 'icon-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable'}]}, null, 1));
 // La app y el radar se piden primero a la red (para tener siempre lo último) y, sin conexión, salen de la copia guardada.
 writeFileSync(web + 'sw.js', `const C = 'id-cocina-${Date.now().toString(36)}', FILES = ['./', 'index.html', 'radar.js', 'manifest.webmanifest', 'icon-192.png', 'icon-180.png'];
@@ -44,7 +45,7 @@ self.addEventListener('install', e => { e.waitUntil(caches.open(C).then(c => c.a
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(k => Promise.all(k.filter(x => x !== C).map(x => caches.delete(x)))).then(() => self.clients.claim())); });
 self.addEventListener('fetch', e => {
  const u = new URL(e.request.url);
- if (e.request.method !== 'GET' || u.origin !== location.origin) return;
+ if (e.request.method !== 'GET' || u.origin !== location.origin || u.pathname.endsWith('ficha.html')) return;
  e.respondWith(fetch(e.request).then(r => { if (r.ok) { const copy = r.clone(); caches.open(C).then(c => c.put(e.request, copy)); } return r; }).catch(() => caches.match(e.request, {ignoreSearch: true}).then(r => r || caches.match('index.html'))));
 });
 `);

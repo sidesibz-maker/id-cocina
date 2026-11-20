@@ -30,7 +30,8 @@ function seasonal() {
   .map(i => ({i, have: pantry.has(i.id), fresh: !i.months.has(((m + 10) % 12) + 1), local: i.tags.includes('ibiza')}))
   .sort((a, b) => (b.local - a.local) || (b.fresh - a.fresh) || (b.have - a.have) || a.i.es.localeCompare(b.i.es)).slice(0, 14);
  if (!rows.length) return '';
- return '<section class="sec">' + sectionHead(t('De temporada en ', 'In season in ') + monthName(m), moreLink('#/sabores', t('Explorar sabores', 'Explore flavours')), t('Toca un producto para ver con qué combina.', 'Tap a product to see what it pairs with.')) +
+ const entering = kb.list.filter(i => fresh.includes(i.family) && i.months.size > 0 && i.months.size < 12 && inSeason(i, m) && !i.months.has(((m + 10) % 12) + 1)).map(i => (en() ? i.en : i.es));
+ return '<section class="sec">' + sectionHead(t('De temporada en ', 'In season in ') + monthName(m), moreLink('#/temporada', t('Ver la temporada', 'See the season')), entering.length ? t('Entra ahora: ', 'Coming in now: ') + entering.slice(0, 6).join(', ') + '.' : t('Toca un producto para ver con qué combina.', 'Tap a product to see what it pairs with.')) +
   '<div class="chips">' + rows.map(({i, have, local}) => '<a class="chip' + (have ? ' chip-have' : '') + '" href="#/sabores/' + esc(i.id) + '">' + esc(en() ? i.en : i.es) + (local ? '<small>' + esc(t('de aquí', 'local')) + '</small>' : have ? '<small>' + esc(t('de tus básicos', 'one of your staples')) + '</small>' : '') + '</a>').join('') + '</div></section>';
 }
 

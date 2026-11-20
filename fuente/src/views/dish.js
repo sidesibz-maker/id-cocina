@@ -5,13 +5,14 @@ import {ALLERGENS, IMAGE_STYLES} from '../ai-core.js';
 import {searchIngredients, flavorContext} from '../kitchen.js';
 import {t, en, pick, relDay, shortDate, seasonOf, seasonLabel, dayKey} from '../i18n.js';
 import {esc, icon, $, $$, uid, toast, friendly, sheet, ask, flavorMeters, flavorPrint, verdictText, axisName, lackName, clip} from '../ui.js';
-import {state, dishById, fetchDish, createDish, saveDish, trashDish, restoreDish, imageUrl, uploadImage, userName} from '../store.js';
-import {advicePrompt, imagePrompt, adviceFromReply, copy, shrinkImage} from '../ai.js';
+import {state, dishById, fetchDish, createDish, saveDish, trashDish, restoreDish, imageUrl, uploadImage, userName, subById, createSub, dishVersions, snapshotDish} from '../store.js';
+import {advicePrompt, imagePrompt, adviceFromReply, copy, shrinkImage, pairingPrompt} from '../ai.js';
 import {iaOn, askIa, iaMessage, imageData} from '../ia.js';
 import {STATUSES, emptyState, skeleton} from './shared.js';
 import {go} from '../nav.js';
 import {rich} from './ask.js';
 import {dishRequest} from '../ai-core.js';
+import {startShare, stopShare, shareUrl, refreshShareSoon} from '../share.js';
 
 let cur = null, root = null, ready = false, dirty = new Set(), removedTests = new Set(), removedImages = new Set();
 let timer = null, firstDirty = 0, saving = false, saveState = 'saved', style = 'mesa';
@@ -60,6 +61,7 @@ async function flush() {
   } else {
    const saved = await saveDish(dish.id, Object.fromEntries(fields.map(f => [f, dish[f]])), {removedTests, removedImages});
    dish.version = saved.version; dish.updated_at = saved.updated_at;
+   refreshShareSoon(saved);
    if (fields.includes('tests') && !dirty.has('tests')) dish.tests = saved.tests;
    if (fields.includes('images') && !dirty.has('images')) dish.images = saved.images;
   }
@@ -99,6 +101,8 @@ function open(params) {
  cur = JSON.parse(JSON.stringify(found));
  cur.components = cur.components.filter(c => c && typeof c === 'object').map(c => ({...c, id: c.id || sid(), role: c.role || 'guarnicion', name: c.name || '', method: typeof c.method === 'string' ? c.method : '', techniques: Array.isArray(c.techniques) ? c.techniques : [], items: (Array.isArray(c.items) ? c.items : []).map(cleanItem)}));
  cur.plating = typeof cur.plating === 'string' ? cur.plating : ''; cur.portions = cur.portions == null ? '' : String(cur.portions);
+ // Si una subreceta propia ha cambiado, el plato usa su mezcla de ahora (solo para calcular; el ingrediente se queda igual).
+ for (const c of cur.components) for (const it of c.items) { if (it.src !== 'recipe' || !it.ref) continue; const own = state.kitchen?.subrecipes.find(x => x.id === it.ref); if (own && own.mix.length) it.mix = own.mix; }
  let draft = null;
  try { draft = JSON.parse(localStorage.getItem(draftKey(cur.id)) || 'null'); } catch {}
  // Cambios que no llegaron a guardarse la última vez (se cerró la app, no había cobertura): se recuperan si el plato no ha cambiado desde entonces.
@@ -127,7 +131,7 @@ function compCard(c, ci) {
   (can ? '<button type="button" class="iconbtn" data-act="del-comp" aria-label="' + esc(t('Quitar este componente', 'Remove this component')) + '">' + icon('x') + '</button>' : '') + '</header>' +
   '<div class="comp-items">' + c.items.map((it, ii) => itemChip(it, ci, ii)).join('') + (can ? '<button type="button" class="ing ing-add" data-act="add-item">' + icon('plus') + esc(t('Ingrediente', 'Ingredient')) + '</button>' : '') + '</div>' +
   '<div class="comp-techs">' + c.techniques.filter(technique).map(id => '<span class="tech">' + esc(techName(id)) + '</span>').join('') + (can ? '<button type="button" class="tech tech-add" data-act="techs">' + icon(c.techniques.length ? 'edit' : 'plus') + esc(c.techniques.length ? t('Cambiar', 'Change') : t('Técnica', 'Technique')) + '</button>' : '') + '</div>' +
-  (can || c.method ? '<details class="comp-method"' + (c.method ? ' open' : '') + '><summary>' + esc(t('Elaboración', 'Method')) + (c.method ? '' : '<small>' + esc(t('pasos, tiempos y temperaturas', 'steps, times and temperatures')) + '</small>') + '</summary><label class="sr" for="cmethod' + ci + '">' + esc(t('Elaboración de este componente', 'Method for this component')) + '</label><textarea id="cmethod' + ci + '" data-field="method" rows="3" maxlength="3000" placeholder="' + esc(t('1. Cocer el pulpo 40 min a fuego suave…\n2. Marcar en la brasa al pase, 2 min por lado.', '1. Simmer the octopus for 40 min…\n2. Char on the grill at the pass, 2 min per side.')) + '"' + (can ? '' : ' disabled') + '>' + esc(c.method || '') + '</textarea></details>' : '') + '</article>';
+  (can || c.method ? '<details class="comp-method"' + (c.method ? ' open' : '') + '><summary>' + esc(t('Elaboración', 'Method')) + (c.method ? '' : '<small>' + esc(t('pasos, tiempos y temperaturas', 'steps, times and temperatures')) + '</small>') + '</summary><label class="sr" for="cmethod' + ci + '">' + esc(t('Elaboración de este componente', 'Method for this component')) + '</label><textarea id="cmethod' + ci + '" data-field="method" data-voice rows="3" maxlength="3000" placeholder="' + esc(t('1. Cocer el pulpo 40 min a fuego suave…\n2. Marcar en la brasa al pase, 2 min por lado.', '1. Simmer the octopus for 40 min…\n2. Char on the grill at the pass, 2 min per side.')) + '"' + (can ? '' : ' disabled') + '>' + esc(c.method || '') + '</textarea></details>' : '') + (can && c.items.filter(i => i.src !== 'recipe').length >= 2 ? '<button type="button" class="linkbtn comp-sub" data-act="to-sub">' + icon('book') + esc(t('Guardar como subreceta', 'Save as a sub-recipe')) + '</button>' : '') + '</article>';
 }
 function compsHtml() {
  const can = editable();
@@ -152,7 +156,7 @@ function analysisHtml() {
  const fixes = advice.verdict.lacking.map(fix => [fix, suggest(kb, cur, fix, ctx, 5)]).filter(([, list]) => list.length);
  if (fixes.length && editable()) {
   html += '<h3>' + esc(t('Para equilibrarlo', 'To balance it')) + '</h3>';
-  for (const [fix, list] of fixes) html += '<div class="fix"><span class="fix-name">' + esc(lackName(fix).replace(/^./, c => c.toUpperCase())) + '</span><div class="chips">' + list.map(s => '<button type="button" class="chip chip-add' + (s.own || s.have ? ' chip-have' : '') + '" data-fix="' + fix + '" data-add="' + esc(s.id) + '">' + icon('plus') + esc(s.own ? s.recipe : ingName(s.id)) + (s.own ? '<small>' + esc(t('subreceta tuya', 'your sub-recipe')) + '</small>' : s.have ? '<small>' + esc(t('de tus básicos', 'one of your staples')) + '</small>' : s.season ? '<small>' + esc(t('de temporada', 'in season')) + '</small>' : '') + '</button>').join('') + '</div></div>';
+  for (const [fix, list] of fixes) html += '<div class="fix"><span class="fix-name">' + esc(lackName(fix).replace(/^./, c => c.toUpperCase())) + '</span><div class="chips">' + list.map(s => '<button type="button" class="chip chip-add' + (s.own || s.have ? ' chip-have' : '') + '" data-fix="' + fix + '" data-add="' + esc(s.id) + '">' + icon('plus') + esc(s.own ? s.recipe?.name || ingName(s.id) : ingName(s.id)) + (s.own ? '<small>' + esc(t('subreceta tuya', 'your sub-recipe')) + '</small>' : s.have ? '<small>' + esc(t('de tus básicos', 'one of your staples')) + '</small>' : s.season ? '<small>' + esc(t('de temporada', 'in season')) + '</small>' : '') + '</button>').join('') + '</div></div>';
  }
  // Lo que combina con los protagonistas y aún no está en el plato.
  const used = new Set(profile.ids), score = new Map();
@@ -238,18 +242,53 @@ function adviceHtml() {
  return html;
 }
 
+// ---------- Maridaje ----------
+function pairingHtml() {
+ const p = cur.pairing, can = editable();
+ let html = '<h2>' + esc(t('Maridaje', 'Pairing')) + '</h2>' + (p?.text ? '<div class="msg-body">' + rich(p.text) + '</div><p class="fine">' + esc(t('Del ', 'From ') + shortDate(p.at)) + '</p>' : '<p class="hint">' + esc(t('Qué vino, qué bebida sin alcohol y qué cerveza o sidra van con este plato.', 'Which wine, which alcohol-free drink and which beer or cider go with this dish.')) + '</p>');
+ if (!can) return html;
+ if (iaOn()) return html + '<div class="row-actions row-left"><button type="button" class="btn ' + (p ? 'ghost' : 'primary') + '" data-act="pair-ia">' + icon('drop') + esc(p ? t('Otra propuesta', 'Another suggestion') : t('Proponer maridaje', 'Suggest a pairing')) + '</button></div>';
+ return html + '<details class="fold"' + (p ? '' : ' open') + '><summary>' + esc(t('Pedirlo a ChatGPT', 'Ask ChatGPT')) + '</summary><div class="row-actions row-left"><button type="button" class="btn ghost" data-act="pair-copy">' + icon('copy') + esc(t('Copiar la consulta', 'Copy the request')) + '</button><a class="btn ghost" href="https://chatgpt.com/" data-chat target="_blank" rel="noopener noreferrer">' + esc(t('Preguntar a ChatGPT', 'Ask ChatGPT')) + icon('out') + '</a></div>' +
+  '<label class="mini" for="pairReply">' + esc(t('Pega aquí la respuesta', 'Paste the answer here')) + '</label><textarea id="pairReply" rows="3"></textarea><div class="row-actions row-left"><button type="button" class="btn ghost" data-paste="pairReply" data-then="[data-act=pair-save]">' + icon('copy') + esc(t('Pegar y leer', 'Paste and read')) + '</button><button type="button" class="btn primary" data-act="pair-save">' + icon('check') + esc(t('Guardar', 'Save')) + '</button></div></details>';
+}
+
 // ---------- Pruebas de cata ----------
 const stars = n => '<span class="stars" aria-label="' + n + ' ' + esc(t('de 5', 'out of 5')) + '">' + [1, 2, 3, 4, 5].map(k => '<i class="' + (k <= n ? 'on' : '') + '">' + icon('star') + '</i>').join('') + '</span>';
 function testsHtml() {
  const can = editable(), tests = [...cur.tests].filter(Boolean).reverse();
  let html = '<h2>' + esc(t('Pruebas de cata', 'Tasting tests')) + '</h2>';
  if (can) html += '<form class="test-form" id="testForm"><fieldset class="rating"><legend>' + esc(t('¿Cómo salió?', 'How did it go?')) + '</legend>' + [1, 2, 3, 4, 5].map(k => '<label><input type="radio" name="rating" value="' + k + '"><span>' + icon('star') + '<b class="sr">' + k + '</b></span></label>').join('') + '</fieldset>' +
-  '<label for="testText">' + esc(t('Qué tal estaba', 'How it tasted')) + '</label><textarea id="testText" rows="2" maxlength="1200" placeholder="' + esc(t('Punto, sabor, textura, lo que dijo el equipo…', 'Doneness, flavour, texture, what the team said…')) + '"></textarea>' +
-  '<label for="testNext">' + esc(t('Qué cambio la próxima vez', 'What I will change next time')) + '</label><textarea id="testNext" rows="2" maxlength="800" placeholder="' + esc(t('Menos sal en la salsa, más brasa…', 'Less salt in the sauce, more char…')) + '"></textarea>' +
+  '<label for="testText">' + esc(t('Qué tal estaba', 'How it tasted')) + '</label><textarea id="testText" data-voice rows="2" maxlength="1200" placeholder="' + esc(t('Punto, sabor, textura, lo que dijo el equipo…', 'Doneness, flavour, texture, what the team said…')) + '"></textarea>' +
+  '<label for="testNext">' + esc(t('Qué cambio la próxima vez', 'What I will change next time')) + '</label><textarea id="testNext" data-voice rows="2" maxlength="800" placeholder="' + esc(t('Menos sal en la salsa, más brasa…', 'Less salt in the sauce, more char…')) + '"></textarea>' +
   '<button type="submit" class="btn primary">' + icon('plus') + esc(t('Apuntar prueba', 'Log test')) + '</button></form>';
  if (!tests.length) html += '<p class="hint">' + esc(t('Cada vez que lo cocines, apunta cómo salió y qué cambiarías. Así se ve cómo evoluciona el plato.', 'Each time you cook it, log how it went and what you would change. That is how you see the dish evolve.')) + '</p>';
  else html += '<ol class="tests">' + tests.map(x => '<li><div class="test-head"><span class="test-date">' + esc(relDay(x.at || new Date())) + (x.by ? ' · ' + esc(x.by) : '') + '</span>' + (x.rating ? stars(x.rating) : '') + (can ? '<button type="button" class="iconbtn" data-del-test="' + esc(x.id) + '" aria-label="' + esc(t('Quitar esta prueba', 'Remove this test')) + '">' + icon('x') + '</button>' : '') + '</div>' + (x.text ? '<p>' + esc(x.text) + '</p>' : '') + (x.next ? '<p class="test-next"><strong>' + esc(t('Próxima vez: ', 'Next time: ')) + '</strong>' + esc(x.next) + '</p>' : '') + '</li>').join('') + '</ol>';
  return html;
+}
+
+// ---------- Compartir con el equipo (enlace de solo lectura) ----------
+async function teamSheet() {
+ if (!cur.id) { dirty.add('name'); await flush(); }
+ if (!cur.id) { toast(t('Ponle nombre al plato primero.', 'Name the dish first.'), 'error'); return; }
+ await flush();
+ const dish = cur;
+ const body = () => dish.share?.on
+  ? '<p class="lead">' + esc(t('Quien tenga este enlace ve la ficha en su móvil: ingredientes, cantidades, elaboración, emplatado, subrecetas y alérgenos. No puede cambiar nada y no ve tus notas, consejos ni pruebas. Se actualiza sola cuando cambias el plato.', 'Anyone with this link sees the sheet on their phone: ingredients, quantities, method, plating, sub-recipes and allergens. They cannot change anything and do not see your notes, advice or tests. It updates itself when you change the dish.')) + '</p>' +
+    '<p class="sync-code share-url">' + esc(shareUrl(dish)) + '</p><div class="row-actions row-left"><button type="button" class="btn primary" data-s="wa">' + icon('out') + esc(t('Enviar por WhatsApp', 'Send on WhatsApp')) + '</button><button type="button" class="btn ghost" data-s="copy">' + icon('copy') + esc(t('Copiar enlace', 'Copy link')) + '</button><a class="btn ghost" href="' + esc(shareUrl(dish)) + '" target="_blank" rel="noopener">' + icon('out') + esc(t('Ver como el equipo', 'View as the team')) + '</a></div>' +
+    '<div class="set-group"><button type="button" class="btn danger" data-s="off">' + icon('x') + esc(t('Dejar de compartir', 'Stop sharing')) + '</button><p class="set-note">' + esc(t('El enlace deja de funcionar. Si vuelves a compartir, se usa el mismo enlace.', 'The link stops working. If you share again, the same link is used.')) + '</p></div>'
+  : '<p class="lead">' + esc(t('Crea un enlace para que tu equipo vea la ficha de este plato en su móvil, en solo lectura. Se guarda en la base de datos de la app y se actualiza sola cuando cambias el plato. Tus notas, consejos y pruebas de cata no se comparten.', 'Create a link so your team can see this dish sheet on their phone, read-only. It is stored in the app database and updates itself when you change the dish. Your notes, advice and tasting tests are not shared.')) + '</p><div class="row-actions row-left"><button type="button" class="btn primary" data-s="on">' + icon('user') + esc(t('Crear enlace para el equipo', 'Create a link for the team')) + '</button></div>';
+ const s = sheet({title: t('Compartir con el equipo', 'Share with the team'), wide: true, body: body()});
+ s.el.addEventListener('click', async e => {
+  const b = e.target.closest('[data-s]'), act = b?.dataset.s;
+  if (!act) return;
+  const busy = on => { b.disabled = on; b.classList.toggle('is-busy', on); };
+  try {
+   if (act === 'on') { busy(true); dish.share = await startShare(dish); touch('share'); await flush(); s.body.innerHTML = body(); part('fichaSec', fichaSecHtml()); toast(t('Enlace listo. Mándaselo al equipo.', 'Link ready. Send it to the team.')); }
+   if (act === 'off') { busy(true); dish.share = await stopShare(dish); touch('share'); await flush(); s.body.innerHTML = body(); part('fichaSec', fichaSecHtml()); toast(t('Ya no se comparte.', 'No longer shared.')); }
+   if (act === 'copy') { const done = await copy(shareUrl(dish)); toast(done ? t('Enlace copiado.', 'Link copied.') : t('No se pudo copiar.', 'It could not be copied.'), done ? 'info' : 'error'); }
+   if (act === 'wa') window.open('https://wa.me/?text=' + encodeURIComponent(t('Ficha de «', 'Sheet for “') + dish.name + t('»: ', '”: ') + shareUrl(dish)), '_blank', 'noopener');
+  } catch (err) { busy(false); toast(err.kind === 'offline' ? t('Sin conexión: inténtalo con internet.', 'Offline: try again with internet.') : t('No se pudo ahora. Prueba otra vez.', 'It did not work now. Try again.'), 'error', 6000); }
+ });
 }
 
 // ---------- Ficha técnica ----------
@@ -257,11 +296,16 @@ function fichaSecHtml() {
  const can = editable(), from = cur.advice?.plating;
  return '<h2>' + esc(t('Ficha técnica', 'Recipe sheet')) + '</h2><p class="hint">' + esc(t('Pon la cantidad tocando cada ingrediente y escribe la elaboración en cada componente. Aquí van las raciones y el emplatado; luego imprímela o guárdala en PDF para el equipo.', 'Set quantities by tapping each ingredient and write the method in each component. Portions and plating go here; then print it or save it as PDF for the team.')) + '</p>' +
   '<div class="bench-meta"><label for="dishPortions">' + esc(t('Raciones', 'Portions')) + '</label><input id="dishPortions" value="' + esc(cur.portions || '') + '" maxlength="30" inputmode="text" placeholder="' + esc(t('p. ej. 1, 4, 10 pases', 'e.g. 1, 4, 10 covers')) + '"' + (can ? '' : ' disabled') + ' autocomplete="off"></div>' +
-  '<label class="mini" for="dishPlating">' + esc(t('Emplatado', 'Plating')) + '</label><textarea id="dishPlating" rows="3" maxlength="2000" placeholder="' + esc(t('Plato, qué va debajo, qué encima, cómo se termina en el pase…', 'Plate, what goes underneath, what on top, how it is finished at the pass…')) + '"' + (can ? '' : ' disabled') + '>' + esc(cur.plating || '') + '</textarea>' +
+  '<label class="mini" for="dishPlating">' + esc(t('Emplatado', 'Plating')) + '</label><textarea id="dishPlating" data-voice rows="3" maxlength="2000" placeholder="' + esc(t('Plato, qué va debajo, qué encima, cómo se termina en el pase…', 'Plate, what goes underneath, what on top, how it is finished at the pass…')) + '"' + (can ? '' : ' disabled') + '>' + esc(cur.plating || '') + '</textarea>' +
   (can && from && !cur.plating ? '<button type="button" class="linkbtn" data-act="plating-from-advice">' + esc(t('Usar el emplatado del consejo', 'Use the plating from the advice')) + icon('right') + '</button>' : '') +
-  '<div class="row-actions row-left"><button type="button" class="btn ghost" data-act="print">' + icon('down') + esc(t('Imprimir ficha o guardar en PDF', 'Print sheet or save as PDF')) + '</button><button type="button" class="btn ghost" data-act="share">' + icon('out') + esc(t('Enviar por WhatsApp', 'Send on WhatsApp')) + '</button></div>';
+  '<div class="row-actions row-left"><button type="button" class="btn ghost" data-act="print">' + icon('down') + esc(t('Imprimir ficha o guardar en PDF', 'Print sheet or save as PDF')) + '</button><button type="button" class="btn ghost" data-act="share">' + icon('out') + esc(t('Enviar por WhatsApp', 'Send on WhatsApp')) + '</button><button type="button" class="btn ghost" data-act="team">' + icon('user') + esc(cur.share?.on ? t('Compartida con el equipo', 'Shared with the team') : t('Compartir con el equipo', 'Share with the team')) + '</button></div>';
 }
 const roleName = c => pick([role(c.role).es, role(c.role).en]);
+// Las subrecetas propias del plato, con su receta, al final de la ficha.
+function subsUsedHtml() {
+ const ids = [...new Set(cur.components.flatMap(c => c.items.filter(i => i.src === 'recipe' && i.ref).map(i => i.ref)))], subs = ids.map(subById).filter(x => x && !x.deleted_at);
+ return subs.map(x => '<section class="ficha-comp"><h2>' + esc(t('Subreceta · ', 'Sub-recipe · ') + x.name) + (x.yield ? '<small>' + esc(t('Rinde ', 'Yields ') + x.yield) + '</small>' : '') + '</h2>' + (x.items.length ? '<table><tbody>' + x.items.map(i => '<tr><td>' + esc(i.n) + '</td><td class="ficha-q">' + esc(i.q || '') + '</td></tr>').join('') + '</tbody></table>' : '') + (x.method ? '<div class="ficha-method">' + esc(x.method).split(/\n+/).map(l => '<p>' + l + '</p>').join('') + '</div>' : '') + '</section>').join('');
+}
 async function fichaPrintHtml() {
  const imgs = (cur.images || []).filter(i => i && i.path), cover = imgs.find(i => i.path === cur.cover_path) || imgs[imgs.length - 1];
  const url = cover ? await imageUrl(cover.path).catch(() => null) : null;
@@ -276,6 +320,7 @@ async function fichaPrintHtml() {
   (comps.length ? comps.map(c => '<section class="ficha-comp"><h2>' + esc(roleName(c)) + (c.name ? ' · ' + esc(c.name) : '') + (c.techniques.length ? '<small>' + esc(c.techniques.filter(technique).map(techName).join(', ')) + '</small>' : '') + '</h2>' +
    (c.items.length ? '<table><tbody>' + c.items.map(i => '<tr><td>' + esc(i.n) + '</td><td class="ficha-q">' + esc(i.q || '') + '</td></tr>').join('') + '</tbody></table>' : '') +
    (c.method ? '<div class="ficha-method">' + esc(c.method).split(/\n+/).map(l => '<p>' + l + '</p>').join('') + '</div>' : '') + '</section>').join('') : '') +
+  subsUsedHtml() +
   (cur.plating ? '<section class="ficha-comp"><h2>' + esc(t('Emplatado', 'Plating')) + '</h2><div class="ficha-method">' + esc(cur.plating).split(/\n+/).map(l => '<p>' + l + '</p>').join('') + '</div></section>' : '') +
   (advice ? '<p class="ficha-line"><strong>' + esc(t('Sabor: ', 'Flavour: ')) + '</strong>' + esc(verdictText(advice.verdict, profile)) + '</p>' : '') +
   (allergens.length ? '<p class="ficha-line"><strong>' + esc(t('Alérgenos probables: ', 'Likely allergens: ')) + '</strong>' + esc(allergens.join(', ')) + ' <small>' + esc(t('(compruébalos con las fichas de producto)', '(check them against product sheets)')) + '</small></p>' : '') +
@@ -328,6 +373,22 @@ function sourceHtml() {
  return '<p class="fine">' + icon('radar') + esc(t('Nació de un aviso del radar: ', 'Born from a radar alert: ')) + (s.trend_id ? link('#/radar/' + s.trend_id, s.title) : esc(s.title)) + '</p>';
 }
 
+// ---------- Etiquetas ----------
+const TAG_IDEAS = () => [t('vegetal', 'plant-based'), t('vegano', 'vegan'), t('sin gluten', 'gluten-free'), t('para compartir', 'to share'), t('para grupos', 'for groups'), t('brasa', 'grill'), t('verano', 'summer'), t('invierno', 'winter'), t('menú del día', 'set menu'), t('carta', 'menu'), t('de la casa', 'house classic')];
+export const allTags = () => [...new Set(state.dishes.filter(d => !d.deleted_at).flatMap(d => d.tags || []))].sort((a, b) => a.localeCompare(b, 'es'));
+function tagsHtml() {
+ const can = editable(), have = cur.tags || [];
+ const ideas = [...new Set([...allTags(), ...TAG_IDEAS()])].filter(x => !have.includes(x));
+ return have.map(x => '<span class="tag">#' + esc(x) + (can ? '<button type="button" class="tag-x" data-untag="' + esc(x) + '" aria-label="' + esc(t('Quitar etiqueta ', 'Remove tag ') + x) + '">' + icon('x') + '</button>' : '') + '</span>').join('') +
+  (can ? '<label class="sr" for="tagInput">' + esc(t('Añadir etiqueta', 'Add tag')) + '</label><input id="tagInput" class="tag-input" list="tagIdeas" maxlength="30" placeholder="' + esc(t('+ etiqueta', '+ tag')) + '" autocomplete="off" enterkeyhint="done"><datalist id="tagIdeas">' + ideas.map(x => '<option value="' + esc(x) + '">').join('') + '</datalist>' : (have.length ? '' : ''));
+}
+function addTag(raw) {
+ const v = String(raw || '').trim().replace(/^#/, '').toLowerCase().slice(0, 30);
+ if (!v || (cur.tags || []).includes(v)) return false;
+ cur.tags = [...(cur.tags || []), v].slice(0, 20); touch('tags'); part('tagsRow', tagsHtml()); $('#tagInput', root)?.focus();
+ return true;
+}
+
 // ---------- Pantalla ----------
 function headHtml() {
  const can = editable();
@@ -336,9 +397,10 @@ function headHtml() {
   '<span id="saveState" class="save" role="status"></span>' + (state.canEdit && !state.setupPending ? '<button type="button" class="iconbtn" data-act="more" aria-label="' + esc(t('Más acciones', 'More actions')) + '">' + icon('more') + '</button>' : '') + '</div>' +
   (cur.deleted_at ? '<div class="notice" role="status">' + icon('trash') + '<p><strong>' + esc(t('Está en la papelera.', 'It is in the bin.')) + '</strong> ' + esc(t('Recupéralo para seguir trabajando en él.', 'Restore it to keep working on it.')) + ' <button type="button" class="linkbtn" data-act="restore">' + esc(t('Recuperar', 'Restore')) + '</button></p></div>' : '') +
   '<label class="sr" for="dishName">' + esc(t('Nombre del plato', 'Dish name')) + '</label><textarea id="dishName" class="title-input" rows="1" maxlength="140" placeholder="' + esc(t('Nombre del plato', 'Dish name')) + '"' + (can ? '' : ' disabled') + ' autocomplete="off" enterkeyhint="done">' + esc(cur.name) + '</textarea>' +
-  '<label class="sr" for="dishConcept">' + esc(t('La idea en una frase', 'The idea in one sentence')) + '</label><textarea id="dishConcept" class="concept-input" rows="2" maxlength="600" placeholder="' + esc(t('La idea en una frase: qué quieres que se sienta al comerlo', 'The idea in one sentence: what should it feel like to eat')) + '"' + (can ? '' : ' disabled') + '>' + esc(cur.concept) + '</textarea>' +
+  '<label class="sr" for="dishConcept">' + esc(t('La idea en una frase', 'The idea in one sentence')) + '</label><textarea id="dishConcept" data-voice class="concept-input" rows="2" maxlength="600" placeholder="' + esc(t('La idea en una frase: qué quieres que se sienta al comerlo', 'The idea in one sentence: what should it feel like to eat')) + '"' + (can ? '' : ' disabled') + '>' + esc(cur.concept) + '</textarea>' +
   '<div class="bench-meta"><label for="dishCourse">' + esc(t('Tipo', 'Type')) + '</label><select id="dishCourse"' + (can ? '' : ' disabled') + '>' + COURSES.map(c => '<option value="' + c[0] + '"' + (c[0] === cur.course ? ' selected' : '') + '>' + esc(lbl(c)) + '</option>').join('') + '</select>' +
   '<label for="dishSeason">' + esc(t('Temporada', 'Season')) + '</label><select id="dishSeason"' + (can ? '' : ' disabled') + '>' + seasons.map(s => '<option value="' + esc(s) + '"' + (s === cur.season ? ' selected' : '') + '>' + esc(/^\d{4}$/.test(s) ? t('Todo el año ', 'All year ') + s : seasonLabel(s)) + '</option>').join('') + '</select></div>' +
+  '<div class="tags-row" id="tagsRow">' + tagsHtml() + '</div>' +
   sourceHtml();
 }
 export function render(params) {
@@ -351,8 +413,9 @@ export function render(params) {
   '<section class="card" id="fichaSec">' + fichaSecHtml() + '</section>' +
   '<section class="card" id="imgSec">' + imagesHtml() + '</section>' +
   '<section class="card" id="adviceSec">' + adviceHtml() + '</section>' +
+  '<section class="card" id="pairSec">' + pairingHtml() + '</section>' +
   '<section class="card" id="testsSec">' + testsHtml() + '</section>' +
-  '<section class="card" id="notesSec"><h2>' + esc(t('Notas', 'Notes')) + '</h2><label class="sr" for="dishNotes">' + esc(t('Notas del plato', 'Dish notes')) + '</label><textarea id="dishNotes" rows="4" maxlength="6000" placeholder="' + esc(t('Proveedor, cantidades que te han funcionado, de dónde vino la idea…', 'Supplier, quantities that worked, where the idea came from…')) + '"' + (editable() ? '' : ' disabled') + '>' + esc(cur.notes) + '</textarea></section></div>';
+  '<section class="card" id="notesSec"><h2>' + esc(t('Notas', 'Notes')) + '</h2><label class="sr" for="dishNotes">' + esc(t('Notas del plato', 'Dish notes')) + '</label><textarea id="dishNotes" data-voice rows="4" maxlength="6000" placeholder="' + esc(t('Proveedor, cantidades que te han funcionado, de dónde vino la idea…', 'Supplier, quantities that worked, where the idea came from…')) + '"' + (editable() ? '' : ' disabled') + '>' + esc(cur.notes) + '</textarea></section></div>';
 }
 function paint() { if (!root?.isConnected) return; root.innerHTML = render([cur?.id || 'nuevo']); bind(); }
 function paintMissing() { if (root?.isConnected) root.innerHTML = '<a class="back" href="#/libreta">' + icon('left') + esc(t('Libreta', 'Notebook')) + '</a>' + emptyState('book', t('Este plato no está', 'This dish is not here'), t('Puede que se haya movido o que no tengas conexión.', 'It may have moved, or you may be offline.'), '<a class="btn primary" href="#/libreta">' + esc(t('Ir a la libreta', 'Go to the notebook')) + '</a>'); }
@@ -444,6 +507,7 @@ function addAs(kbId, fix = null) {
 }
 function moreSheet() {
  const s = sheet({title: cur.name || t('Plato', 'Dish'), body: '<div class="menu-grid">' +
+  (cur.id ? '<button type="button" class="tile" data-act="versions">' + icon('clock') + '<span>' + esc(t('Versiones anteriores', 'Earlier versions')) + '</span></button>' : '') +
   (cur.id ? '<button type="button" class="tile" data-act="dup">' + icon('copy') + '<span>' + esc(t('Duplicar como variante', 'Duplicate as a variant')) + '</span></button>' : '') +
   '<button type="button" class="tile" data-act="share">' + icon('out') + '<span>' + esc(t('Enviar ficha por WhatsApp', 'Send sheet on WhatsApp')) + '</span></button>' +
   '<button type="button" class="tile" data-act="print">' + icon('down') + '<span>' + esc(t('Imprimir ficha o guardar en PDF', 'Print sheet or save as PDF')) + '</span></button>' +
@@ -455,12 +519,44 @@ function moreSheet() {
   s.close();
   if (act === 'print') printFicha();
   if (act === 'share') shareFicha();
+  if (act === 'versions') versionsSheet();
   if (act === 'dup') duplicate(cur.name + t(' · variante', ' · variant'), cur.concept);
   if (act === 'trash') {
    if (!await ask({title: t('¿Enviar a la papelera?', 'Move to the bin?'), text: t('No se borra: lo encontrarás en la papelera de la libreta y podrás recuperarlo.', 'It is not deleted: you will find it in the notebook bin and can restore it.'), yes: t('Enviar a la papelera', 'Move to the bin'), danger: true})) return;
    try { await flush(); await trashDish(cur.id); toast(t('En la papelera.', 'Moved to the bin.')); go('libreta'); } catch (err) { toast(friendly(err), 'error'); }
   }
  };
+}
+// Versiones anteriores: qué cambió y volver a una. Las pruebas de cata y las fotos se quedan como están ahora.
+const RESTORE = ['name', 'concept', 'course', 'season', 'status', 'tags', 'components', 'plating', 'portions', 'notes'];
+function diffText(old, now) {
+ const names = d => new Set((d.components || []).flatMap(c => (c.items || []).map(i => i.n)));
+ const a = names(old), b = names(now), gone = [...a].filter(x => !b.has(x)), added = [...b].filter(x => !a.has(x)), out = [];
+ if (old.name !== now.name) out.push(t('se llamaba «', 'was called “') + old.name + t('»', '”'));
+ if (gone.length) out.push(t('tenía ', 'had ') + gone.slice(0, 5).join(', '));
+ if (added.length) out.push(t('no tenía ', 'did not have ') + added.slice(0, 5).join(', '));
+ if ((old.concept || '') !== (now.concept || '') && !out.length) out.push(t('otra idea del plato', 'a different idea'));
+ if (!out.length && JSON.stringify(old.components) !== JSON.stringify(now.components)) out.push(t('cambios en cantidades, técnicas o elaboración', 'changes in quantities, techniques or method'));
+ if (!out.length) out.push(t('cambios en notas, estado o emplatado', 'changes in notes, status or plating'));
+ return out.join(' · ');
+}
+async function versionsSheet() {
+ await flush();
+ const list = await dishVersions(cur.id), dish = cur;
+ const s = sheet({title: t('Versiones anteriores', 'Earlier versions'), wide: true, body: list.length
+  ? '<p class="lead">' + esc(t('Cómo estaba el plato antes de cada tanda de cambios. Al recuperar una, las pruebas de cata y las fotos se quedan como están, y lo de ahora también se guarda como versión.', 'How the dish was before each round of changes. Restoring keeps tasting tests and photos as they are, and the current state is saved as a version too.')) + '</p><ol class="versions">' +
+    list.map((v, k) => '<li><div><strong>' + esc(relDay(v.at) + ' · ' + new Date(v.at).toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})) + '</strong><small>' + esc(diffText(v.data, dish)) + '</small></div><button type="button" class="btn ghost" data-v="' + k + '">' + icon('undo') + esc(t('Recuperar', 'Restore')) + '</button></li>').join('') + '</ol>'
+  : '<p class="hint">' + esc(t('Aún no hay versiones anteriores. Se guardan solas mientras trabajas el plato (una cada 15 minutos como mucho).', 'No earlier versions yet. They are saved automatically while you work on the dish (at most one every 15 minutes).')) + '</p>'});
+ s.el.addEventListener('click', async e => {
+  const b = e.target.closest('[data-v]');
+  if (!b || cur !== dish) return;
+  const v = list[Number(b.dataset.v)];
+  if (!await ask({title: t('¿Volver a esta versión?', 'Go back to this version?'), text: t('Lo de ahora queda guardado como otra versión, así que puedes deshacerlo.', 'The current state is saved as another version, so you can undo it.'), yes: t('Recuperar', 'Restore')})) return;
+  await snapshotDish(dishById(dish.id), true);
+  const patch = Object.fromEntries(RESTORE.filter(f => f in v.data).map(f => [f, v.data[f]]));
+  await saveDish(dish.id, patch);
+  s.close(); open([dish.id]); paint(); toast(t('Versión recuperada.', 'Version restored.'));
+ });
 }
 async function duplicate(name, concept) {
  try {
@@ -522,6 +618,7 @@ export function mount(el) {
    if (!await ask({title: t('¿Quitar esta prueba?', 'Remove this test?'), text: t('Se quita solo este apunte de la libreta.', 'Only this entry is removed from the notebook.'), yes: t('Quitar', 'Remove'), danger: true})) return;
    removedTests.add(b.dataset.delTest); cur.tests = cur.tests.filter(x => x && x.id !== b.dataset.delTest); touch('tests'); part('testsSec', testsHtml()); return;
   }
+  if (b.dataset.untag) { cur.tags = (cur.tags || []).filter(x => x !== b.dataset.untag); touch('tags'); part('tagsRow', tagsHtml()); return; }
   if (b.dataset.name !== undefined) { const n = cur.advice?.names?.[Number(b.dataset.name)]; if (n) { cur.name = en() && n.en ? n.en : n.es; $('#dishName', root).value = cur.name; fitName(); touch('name'); toast(t('Nombre cambiado.', 'Name changed.')); } return; }
   if (b.dataset.variant !== undefined) { const v = cur.advice?.variants?.[Number(b.dataset.variant)]; if (v) duplicate(cur.name + (v.label ? ' · ' + v.label : t(' · variante', ' · variant')), v.idea); return; }
   if (act === 'add-item') pickIngredient(ci);
@@ -531,9 +628,16 @@ export function mount(el) {
    if (c.items.length && !await ask({title: t('¿Quitar este componente?', 'Remove this component?'), text: t('Se quita del plato con sus ingredientes.', 'It is removed from the dish with its ingredients.'), yes: t('Quitar', 'Remove'), danger: true})) return;
    cur.components.splice(ci, 1); touch('components'); redrawComps();
   }
+  else if (act === 'to-sub') {
+   const c = cur.components[ci];
+   if (!c) return;
+   const made = await createSub({name: c.name || (cur.name ? cur.name + ' · ' : '') + pick([role(c.role).es, role(c.role).en]), items: c.items.filter(i => i.src !== 'recipe').map(i => ({n: i.n, k: i.k || null, q: i.q || '', w: i.w})), method: c.method || ''});
+   toast(t('Subreceta guardada en Mi cocina: ', 'Sub-recipe saved in My kitchen: ') + made.name);
+  }
   else if (act === 'more') moreSheet();
   else if (act === 'print') printFicha();
   else if (act === 'share') shareFicha();
+  else if (act === 'team') teamSheet();
   else if (act === 'plating-from-advice') { cur.plating = clip(cur.advice?.plating, 2000); touch('plating'); part('fichaSec', fichaSecHtml()); }
   else if (act === 'restore') { try { await restoreDish(cur.id); cur.deleted_at = null; toast(t('Recuperado.', 'Restored.')); paint(); } catch (err) { toast(friendly(err), 'error'); } }
   else if (act === 'advice') {
@@ -551,6 +655,14 @@ export function mount(el) {
     if (cur === dish) { touch('advice'); part('adviceSec', adviceHtml()); if (!$('#fichaSec', root)?.contains(document.activeElement)) part('fichaSec', fichaSecHtml()); toast(t('Consejo guardado en el plato.', 'Advice saved in the dish.')); }
     else if (dish.id) { await saveDish(dish.id, {advice}); toast(t('Consejo guardado en «', 'Advice saved in “') + dish.name + t('».', '”.')); }
    } catch (err) { toast(iaMessage(err), 'error', 7000); if (b.isConnected) { b.disabled = false; b.classList.remove('is-busy'); b.lastChild.textContent = t('Pedir consejo a ChatGPT', 'Ask ChatGPT for advice'); } }
+  }
+  else if (act === 'pair-copy') { const done = await copy(pairingPrompt(cur)); toast(done ? t('Consulta copiada.', 'Request copied.') : t('No se pudo copiar.', 'It could not be copied.'), done ? 'info' : 'error'); }
+  else if (act === 'pair-save') { const text = ($('#pairReply', root)?.value || '').trim(); if (!text) { toast(t('Pega primero la respuesta.', 'Paste the answer first.'), 'error'); return; } cur.pairing = {text: text.slice(0, 4000), at: new Date().toISOString()}; touch('pairing'); part('pairSec', pairingHtml()); toast(t('Maridaje guardado.', 'Pairing saved.')); }
+  else if (act === 'pair-ia') {
+   if (cur.components.reduce((n, c) => n + c.items.length, 0) < 2) { toast(t('Añade al menos dos ingredientes al plato.', 'Add at least two ingredients to the dish.'), 'error'); return; }
+   const dish = cur; b.disabled = true; b.classList.add('is-busy'); b.lastChild.textContent = t('Pensando el maridaje…', 'Thinking of a pairing…');
+   try { const text = await askIa({text: pairingPrompt(dish)}); dish.pairing = {text: text.trim().slice(0, 4000), at: new Date().toISOString()}; if (cur === dish) { touch('pairing'); part('pairSec', pairingHtml()); } else if (dish.id) await saveDish(dish.id, {pairing: dish.pairing}); }
+   catch (err) { toast(iaMessage(err), 'error', 7000); if (b.isConnected) { b.disabled = false; b.classList.remove('is-busy'); b.lastChild.textContent = t('Proponer maridaje', 'Suggest a pairing'); } }
   }
   else if (act === 'save-advice') {
    const advice = adviceFromReply($('#adviceReply', root).value);
@@ -570,6 +682,8 @@ export function mount(el) {
    touch('images', 'cover_path'); redrawImages();
   }
  };
+ root.addEventListener('keydown', e => { if (e.target.id === 'tagInput' && (e.key === 'Enter' || e.key === ',')) { e.preventDefault(); addTag(e.target.value); } });
+ root.addEventListener('change', e => { if (e.target.id === 'tagInput' && e.target.value) addTag(e.target.value); });
  const onSubmit = e => {
   if (e.target.id !== 'testForm') return;
   e.preventDefault();

@@ -10,6 +10,9 @@ import {sheet} from '../ui.js';
 import {trendCard, KINDS, kindLabel, heatMark, trText, trIdeas, trSources, trPlaces, emptyState, skeleton, adoptIdea, hostOf} from './shared.js';
 import {go} from '../nav.js';
 import {iaOn, askIa, iaMessage} from '../ia.js';
+import {cleanProfile} from '../ai-core.js';
+import {saveSettings} from '../store.js';
+import {INTERESTS} from './kitchen-view.js';
 
 // El radar se ve por tema (lo más útil arriba y cada tema con sus avisos), por fecha o solo lo guardado.
 // «filter» es la vista: 'tema', 'fecha', 'guardados', 'descartados' o el id de un tema abierto entero.
@@ -28,25 +31,47 @@ const groupOf = tr => GROUPS().find(g => g[2].includes(tr.kind)) || GROUPS()[2];
 const isNew = tr => seenAtOpen !== null && String(tr.day) > seenAtOpen;
 const age = tr => Math.max(0, (Date.now() - new Date(tr.day + 'T12:00:00').getTime()) / 86400000);
 // Lo más útil: encaja con tu cocina (fit) y es reciente.
-const useful = list => list.filter(x => x.kind !== 'idea').map(x => [x, (Number(x.fit) || 60) - age(x) * 1.5 + (x.saved_at ? 5 : 0)]).sort((a, b) => b[1] - a[1]).map(x => x[0]);
+const useful = list => list.filter(x => x.kind !== 'idea').map(x => [x, (Number(x.fit) || 60) - age(x) * 1.5 + (x.saved_at ? 5 : 0) + (followed(x) ? 20 : 0)]).sort((a, b) => b[1] - a[1]).map(x => x[0]);
 const norm = v => String(v || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+// Lo que te interesa (de Mi cocina): un aviso encaja si su texto lleva todas las palabras de alguno de tus temas.
+const interests = () => cleanProfile(state.settings).interests;
+const trWords = tr => norm([trText(tr, 'title'), trText(tr, 'summary'), trText(tr, 'adapt'), (tr.tags || []).join(' '), trIdeas(tr).map(i => i.name).join(' ')].join(' '));
+const followed = tr => { const text = trWords(tr); return interests().find(x => norm(x).split(' ').filter(w => w.length > 2).every(w => text.includes(w))) || null; };
 const matches = (tr, q) => !q || norm([trText(tr, 'title'), trText(tr, 'summary'), trText(tr, 'adapt'), (tr.tags || []).join(' '), trPlaces(tr).join(' '), trIdeas(tr).map(i => i.name).join(' ')].join(' ')).includes(q);
 
 // Un aviso en una línea: lo que es, el título y de dónde viene. Para leer muchos de un vistazo.
 function row(tr, {kind = true} = {}) {
  const src = trSources(tr)[0]?.name || (tr.kind === 'idea' ? t('Idea para tu cocina', 'An idea for your kitchen') : '');
  return '<li><a class="trow' + (tr.saved_at ? ' is-saved' : '') + '" href="#/radar/' + esc(tr.id) + '" data-kind="' + esc(tr.kind) + '">' +
-  '<span class="trow-top">' + (kind ? '<span class="trow-kind">' + esc(kindLabel(tr.kind)) + '</span>' : '') + (tr.kind === 'idea' ? '' : heatMark(tr.heat)) + (isNew(tr) ? '<span class="new">' + esc(t('Nuevo', 'New')) + '</span>' : '') + (tr.saved_at ? '<span class="saved-mark">' + icon('star') + '</span>' : '') + '</span>' +
+  '<span class="trow-top">' + (kind ? '<span class="trow-kind">' + esc(kindLabel(tr.kind)) + '</span>' : '') + (tr.kind === 'idea' ? '' : heatMark(tr.heat)) + (isNew(tr) ? '<span class="new">' + esc(t('Nuevo', 'New')) + '</span>' : '') + (followed(tr) ? '<span class="follow">' + icon('check') + esc(followed(tr)) + '</span>' : '') + (tr.saved_at ? '<span class="saved-mark">' + icon('star') + '</span>' : '') + '</span>' +
   '<span class="trow-title">' + esc(trText(tr, 'title')) + '</span>' +
   '<span class="trow-sum">' + esc(trText(tr, 'summary')) + '</span>' +
   '<span class="trow-meta">' + esc([relDay(tr.day), src].filter(Boolean).join(' · ')) + '</span>' + icon('right') + '</a></li>';
 }
 const rows = (list, opts) => '<ul class="trows">' + list.map(x => row(x, opts)).join('') + '</ul>';
 
+function interestsSheet(done) {
+ let chosen = interests().slice();
+ const all = () => [...new Set([...INTERESTS(), ...chosen])];
+ const draw = () => all().map(x => '<button type="button" class="pill' + (chosen.includes(x) ? ' active' : '') + '" data-i="' + esc(x) + '" aria-pressed="' + chosen.includes(x) + '">' + esc(x) + '</button>').join('');
+ const s = sheet({title: t('Lo que te interesa', 'What you follow'), wide: true, body: '<p class="lead">' + esc(t('Lo que elijas sale primero en el radar, con su marca, y la búsqueda de cada día le da prioridad.', 'What you choose comes first on the radar, marked, and the daily search gives it priority.')) + '</p><div class="chips" id="iList">' + draw() + '</div>' +
+  '<div class="row-actions row-left"><label class="sr" for="iNew">' + esc(t('Otro tema', 'Another topic')) + '</label><input id="iNew" maxlength="60" placeholder="' + esc(t('Otro: alcachofa, cocina nikkei, Etxebarri…', 'Another: artichoke, nikkei, Etxebarri…')) + '" autocomplete="off" style="max-width:320px"><button type="button" class="btn ghost" data-act="i-add">' + icon('plus') + esc(t('Añadir', 'Add')) + '</button></div>' +
+  '<div class="row-actions"><button type="button" class="btn primary" data-act="i-save">' + icon('check') + esc(t('Guardar', 'Save')) + '</button></div>'});
+ const add = () => { const v = $('#iNew', s.el).value.trim().slice(0, 60); if (v && !chosen.includes(v)) chosen = [...chosen, v].slice(0, 16); $('#iNew', s.el).value = ''; $('#iList', s.el).innerHTML = draw(); };
+ s.el.addEventListener('keydown', e => { if (e.target.id === 'iNew' && e.key === 'Enter') { e.preventDefault(); add(); } });
+ s.el.addEventListener('click', async e => {
+  const p = e.target.closest('[data-i]');
+  if (p) { const v = p.dataset.i; chosen = chosen.includes(v) ? chosen.filter(x => x !== v) : [...chosen, v].slice(0, 16); p.classList.toggle('active', chosen.includes(v)); p.setAttribute('aria-pressed', chosen.includes(v)); return; }
+  const act = e.target.closest('[data-act]')?.dataset.act;
+  if (act === 'i-add') add();
+  if (act === 'i-save') { await saveSettings({...cleanProfile(state.settings), interests: chosen}); s.close(); toast(t('Guardado. El radar te lo pondrá primero.', 'Saved. The radar will put it first.')); done(); }
+ });
+}
 function toolbar(live) {
  const saved = live.filter(x => x.saved_at).length, view = GROUPS().some(g => g[0] === filter) ? 'tema' : filter;
  const tabs = [['tema', t('Por tema', 'By topic')], ['fecha', t('Por fecha', 'By date')], ['guardados', t('Guardados', 'Saved') + (saved ? ' · ' + saved : '')]];
  return '<div class="radar-bar"><div class="seg" role="tablist" aria-label="' + esc(t('Cómo ver el radar', 'How to view the radar')) + '">' + tabs.map(([id, label]) => '<button type="button" role="tab" class="seg-btn' + (view === id ? ' active' : '') + '" data-filter="' + id + '" aria-selected="' + (view === id) + '">' + (id === 'guardados' ? icon('star') : '') + esc(label) + '</button>').join('') + '</div>' +
+  '<button type="button" class="btn ghost radar-follow" data-act="interests">' + icon('star') + esc(interests().length ? t('Te interesa: ', 'You follow: ') + interests().slice(0, 3).join(', ') + (interests().length > 3 ? '…' : '') : t('Elegir lo que te interesa', 'Choose what you follow')) + '</button>' +
   '<label class="sr" for="radarQ">' + esc(t('Buscar en el radar', 'Search the radar')) + '</label><div class="searchbox radar-q">' + icon('search') + '<input id="radarQ" type="search" value="' + esc(query) + '" placeholder="' + esc(t('Buscar: alcachofa, brasa, Etxebarri…', 'Search: artichoke, charcoal, Etxebarri…')) + '" autocomplete="off" enterkeyhint="search"></div></div>';
 }
 function body(live) {
@@ -68,9 +93,9 @@ function body(live) {
   const d = x => age(x), parts = [[t('Hoy', 'Today'), x => d(x) < 1], [t('Esta semana', 'This week'), x => d(x) >= 1 && d(x) < 7], [t('Este mes', 'This month'), x => d(x) >= 7 && d(x) < 31], [t('Antes', 'Earlier'), x => d(x) >= 31]];
   return parts.map(([label, test]) => { const list = live.filter(test); return list.length ? '<section class="sec"><h2 class="day">' + esc(label) + ' · ' + list.length + '</h2>' + rows(list) + '</section>' : ''; }).join('');
  }
- // Por tema: lo más útil arriba y luego cada tema con sus tres primeros.
- const top = useful(live).slice(0, 3), topIds = new Set(top.map(x => x.id));
- let html = top.length ? '<section class="sec"><h2 class="day">' + icon('pan') + esc(t('Lo más útil para tu cocina', 'Most useful for your kitchen')) + '</h2><div class="strip trend-strip">' + top.map(x => trendCard(x, {lead: true})).join('') + '</div></section>' : '';
+ // Por tema: lo que sigues, lo más útil y luego cada tema con sus tres primeros.
+ const top = useful(live).slice(0, 3), topIds = new Set(top.map(x => x.id)), mine = live.filter(x => followed(x) && !topIds.has(x.id)).slice(0, 5);
+ let html = (mine.length ? '<section class="group card group-follow"><header class="group-head"><h2>' + icon('star') + esc(t('Lo que sigues', 'What you follow')) + '</h2><span class="group-n">' + live.filter(followed).length + '</span></header>' + rows(mine) + '</section>' : '') + top.length ? '<section class="sec"><h2 class="day">' + icon('pan') + esc(t('Lo más útil para tu cocina', 'Most useful for your kitchen')) + '</h2><div class="strip trend-strip">' + top.map(x => trendCard(x, {lead: true})).join('') + '</div></section>' : '';
  html += '<div class="groups">' + GROUPS().map(([id, label, kinds, ic]) => {
   const all = live.filter(x => kinds.includes(x.kind)), rest = all.filter(x => !topIds.has(x.id)), list = (rest.length ? rest : all).slice(0, 3), fresh = all.filter(isNew).length;
   if (!all.length) return '';
@@ -156,6 +181,7 @@ export function mount(root, params) {
  if (!id) setTimeout(() => { if (root.isConnected && root.classList.contains('view-radar')) markRadarSeen(); }, 1200);
  root.addEventListener('input', e => { if (e.target.id !== 'radarQ') return; query = e.target.value; const b = $('#radarBody', root); if (b) b.innerHTML = body(liveTrends()); });
  root.addEventListener('click', async e => {
+  if (e.target.closest('[data-act=interests]')) { interestsSheet(() => { if (root.isConnected) root.innerHTML = list(); }); return; }
   const f = e.target.closest('[data-filter]');
   if (f) { filter = f.dataset.filter; query = ''; root.innerHTML = list(); if (!f.closest('.radar-bar')) root.querySelector('.radar-bar, .group-title')?.scrollIntoView({block: 'start', behavior: 'smooth'}); return; }
   if (e.target.closest('[data-act=search-manual]')) { searchSheet(root); return; }

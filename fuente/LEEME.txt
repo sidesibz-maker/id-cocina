@@ -59,6 +59,21 @@ En el otro, pega ese código en «Unir este aparato». Desde entonces lo que apu
 cartas, fotos, lo guardado del radar y Mi cocina). Se juntan los dos sin perder nada; gana siempre el cambio más
 reciente y el anterior queda guardado en el servidor. Guarda el código como una contraseña.
 
+MÁS NOVEDADES
+ - Mi cocina → «Mis subrecetas»: tu romesco, tus fondos, tus encurtidos, con cantidades, elaboración y lo que rinden.
+   En los platos se buscan por su nombre (salen los primeros) y cuentan con su sabor. Salen en la ficha impresa.
+   Desde un plato, «Guardar como subreceta» convierte un componente en subreceta.
+ - En el plato, menú «…» → «Versiones anteriores»: cómo estaba antes de cada tanda de cambios y volver a una.
+   Las pruebas de cata y las fotos no se tocan, y lo de ahora queda guardado como otra versión.
+ - «Temporada»: qué entra, qué está en su punto y qué se va cada mes, con lo de Ibiza destacado.
+ - Botón «Dictar» debajo de las notas, pruebas, elaboración y preguntas (si el navegador entiende la voz).
+ - Etiquetas en cada plato (#vegetal, #para compartir…) y filtro por etiqueta en la libreta.
+ - Maridaje: vino, sin alcohol y cerveza para cada plato, y para un menú entero.
+ - Radar: «Te interesa…» para elegir tus temas; salen primero y la búsqueda diaria los prioriza.
+ - Cartas y menús → «Imprimir para la sala»: la carta o el menú limpio, con alérgenos.
+ - Ficha técnica → «Compartir con el equipo»: un enlace de solo lectura para el móvil del equipo, que se pone al día
+   solo cuando cambias el plato. No lleva tus notas, consejos ni pruebas. Se puede dejar de compartir.
+
 OTRAS NOVEDADES
  - Crear → «Ha llegado género»: foto o texto de lo que ha entrado y tres platos para sacarle partido.
  - Libreta → «Cartas y menús»: junta platos y la app avisa de lo que se repite, choca o falta (y ChatGPT opina).

@@ -6,10 +6,10 @@ import {state, restoreDish} from '../store.js';
 import {STATUSES, statusLabel, dishCard, hydrateImages, emptyState, skeleton} from './shared.js';
 import {tabs} from './menus.js';
 
-let status = 'todos', query = '';
+let status = 'todos', query = '', tagf = '';
 export const title = params => (params[0] === 'papelera' ? t('Papelera', 'Bin') : t('Libreta', 'Notebook'));
 
-const matches = d => { const q = norm(query); if (!q) return true; const text = norm([d.name, d.concept, ...(d.tags || []), ...(d.components || []).flatMap(c => [c?.name, ...(c?.items || []).map(i => i?.n)])].join(' ')); return q.split(' ').every(w => text.includes(w)); };
+const matches = d => { if (tagf && !(d.tags || []).includes(tagf)) return false; const q = norm(query); if (!q) return true; const text = norm([d.name, d.concept, ...(d.tags || []), ...(d.components || []).flatMap(c => [c?.name, ...(c?.items || []).map(i => i?.n)])].join(' ')); return q.split(' ').every(w => text.includes(w)); };
 function grid() {
  const live = state.dishes.filter(d => !d.deleted_at), shown = live.filter(d => (status === 'todos' || d.status === status) && matches(d));
  if (!live.length) return !state.loaded && !state.loadError ? skeleton(3) : emptyState('book', t('Tu libreta está vacía', 'Your notebook is empty'), t('Aquí se guardan tus platos en desarrollo, con sus pruebas de cata y cómo van cambiando.', 'Your dishes in development are kept here, with their tasting tests and how they evolve.'), state.canEdit ? '<a class="btn primary" href="#/crear">' + icon('plus') + esc(t('Crear un plato', 'Create a dish')) + '</a>' : '');
@@ -21,6 +21,7 @@ function list() {
  const count = id => (id === 'todos' ? live.length : live.filter(d => d.status === id).length);
  return '<header class="page-head page-head-row"><div><h1>' + esc(t('Libreta', 'Notebook')) + '</h1><p>' + esc(t('Tus platos de I+D, de la idea a la carta.', 'Your R&D dishes, from idea to menu.')) + '</p></div>' + (state.canEdit ? '<a class="btn primary" href="#/crear">' + icon('plus') + esc(t('Crear', 'Create')) + '</a>' : '') + '</header>' + tabs('platos') +
   '<div class="filters" role="group" aria-label="' + esc(t('Filtrar por estado', 'Filter by status')) + '">' + [['todos', t('Todos', 'All')], ...STATUSES.map(s => [s[0], statusLabel(s[0])])].filter(([id]) => id === 'todos' || count(id) || id === status).map(([id, label]) => '<button type="button" class="pill' + (status === id ? ' active' : '') + '" data-status="' + id + '" aria-pressed="' + (status === id) + '">' + esc(label) + '<span class="count">' + count(id) + '</span></button>').join('') + '</div>' +
+  (() => { const tags = [...new Set(live.flatMap(d => d.tags || []))].sort((a, b) => a.localeCompare(b, 'es')); return tags.length ? '<div class="filters tag-filters" role="group" aria-label="' + esc(t('Filtrar por etiqueta', 'Filter by tag')) + '">' + tags.map(x => '<button type="button" class="pill pill-tag' + (tagf === x ? ' active' : '') + '" data-tagf="' + esc(x) + '" aria-pressed="' + (tagf === x) + '">#' + esc(x) + '</button>').join('') + '</div>' : ''; })() +
   (live.length > 5 ? '<label class="sr" for="bookSearch">' + esc(t('Buscar en la libreta', 'Search the notebook')) + '</label><div class="searchbox">' + icon('search') + '<input id="bookSearch" type="search" value="' + esc(query) + '" placeholder="' + esc(t('Buscar por nombre o ingrediente', 'Search by name or ingredient')) + '" autocomplete="off" enterkeyhint="search"></div>' : '') +
   '<div id="bookGrid">' + grid() + '</div>' +
   (trashed ? '<p class="fine center"><a class="linkbtn" href="#/libreta/papelera">' + icon('trash') + esc(t('Papelera', 'Bin')) + ' (' + trashed + ')</a></p>' : '');
@@ -39,7 +40,9 @@ export function mount(root, params) {
  root.addEventListener('click', async e => {
   const s = e.target.closest('[data-status]');
   if (s) { status = s.dataset.status; root.querySelectorAll('[data-status]').forEach(b => { const on = b.dataset.status === status; b.classList.toggle('active', on); b.setAttribute('aria-pressed', on); }); redraw(); return; }
-  if (e.target.closest('[data-reset]')) { status = 'todos'; query = ''; root.innerHTML = list(); hydrateImages(root); return; }
+  const tf = e.target.closest('[data-tagf]');
+  if (tf) { tagf = tagf === tf.dataset.tagf ? '' : tf.dataset.tagf; root.querySelectorAll('[data-tagf]').forEach(b => { const on = b.dataset.tagf === tagf; b.classList.toggle('active', on); b.setAttribute('aria-pressed', on); }); redraw(); return; }
+  if (e.target.closest('[data-reset]')) { status = 'todos'; query = ''; tagf = ''; root.innerHTML = list(); hydrateImages(root); return; }
   const r = e.target.closest('[data-restore]');
   if (r) { r.disabled = true; try { await restoreDish(r.dataset.restore); toast(t('Recuperado: vuelve a estar en la libreta.', 'Restored: it is back in the notebook.')); } catch (err) { toast(friendly(err), 'error'); if (r.isConnected) r.disabled = false; } }
  });
