@@ -53,6 +53,17 @@ EN EL MÓVIL
 «Compartir» en TikTok o Instagram puedes elegir I+D y la receta llega ya leída. Los platos de cada aparato se guardan
 en ese aparato: para pasarlos, descarga una copia de seguridad en uno y recupérala en el otro.
 
+SINCRONIZAR PC Y MÓVIL (NUEVO)
+Ajustes → «Sincronizar PC y móvil». En un aparato pulsa «Empezar a sincronizar aquí»: te da un código de 24 letras.
+En el otro, pega ese código en «Unir este aparato». Desde entonces lo que apuntas en uno aparece en el otro (platos,
+cartas, fotos, lo guardado del radar y Mi cocina). Se juntan los dos sin perder nada; gana siempre el cambio más
+reciente y el anterior queda guardado en el servidor. Guarda el código como una contraseña.
+
+OTRAS NOVEDADES
+ - Crear → «Ha llegado género»: foto o texto de lo que ha entrado y tres platos para sacarle partido.
+ - Libreta → «Cartas y menús»: junta platos y la app avisa de lo que se repite, choca o falta (y ChatGPT opina).
+ - En el plato: «Enviar por WhatsApp» la ficha, y «Revisar el emplatado con una foto» (con ChatGPT conectado).
+
 TENDENCIAS (RADAR)
  - El radar se ve por tema (arriba, lo más útil para tu cocina; luego producto, técnicas, platos, dulces y bebidas,
    restaurantes e ideas del día), por fecha o solo lo que has guardado. Tiene buscador y marca lo nuevo.

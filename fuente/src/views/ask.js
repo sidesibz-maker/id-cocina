@@ -15,7 +15,7 @@ function store(ctx, list) { const all = load(); all[ctx] = list.slice(-MAX); try
 
 export const title = () => t('Preguntar', 'Ask');
 // Texto de la respuesta con un formato mínimo: párrafos, listas y negritas.
-function rich(text) {
+export function rich(text) {
  const out = [];
  let list = null;
  for (const raw of String(text).split('\n')) {

@@ -9,7 +9,7 @@ import {uid} from './ui.js';
 const KEY = 'id-cocina-v1';
 export const state = {
  canSee: true, canEdit: true, canPrices: false, setupPending: false,
- dishes: [], trends: [], settings: {}, marks: {}, pasted: [], lastBackup: '', seen: '',
+ dishes: [], menus: [], trends: [], settings: {}, marks: {}, pasted: [], lastBackup: '', seen: '',
  kb: null, kitchen: null, loaded: false, loadError: '', restaurant: {name: ''}
 };
 const listeners = new Set();
@@ -21,14 +21,14 @@ const arr = v => (Array.isArray(v) ? v : []);
 function read() { try { const v = JSON.parse(localStorage.getItem(KEY) || 'null'); return v && typeof v === 'object' ? v : {}; } catch { return {}; } }
 export function persist() {
  try {
-  localStorage.setItem(KEY, JSON.stringify({dishes: state.dishes, settings: state.settings, marks: state.marks, pasted: state.pasted, lastBackup: state.lastBackup, seen: state.seen}));
+  localStorage.setItem(KEY, JSON.stringify({dishes: state.dishes, menus: state.menus, settings: state.settings, marks: state.marks, pasted: state.pasted, lastBackup: state.lastBackup, seen: state.seen}));
   return true;
  } catch { return false; }
 }
 export function cleanDish(d) {
  return {...d, name: String(d.name || ''), concept: String(d.concept || ''), course: d.course || 'otro', season: d.season || '', status: d.status || 'idea', tags: arr(d.tags), components: arr(d.components), tests: arr(d.tests), images: arr(d.images), notes: String(d.notes || ''), version: Number(d.version) || 1};
 }
-const trendId = t => t.id || 'r' + [...(String(t.day) + '|' + String(t.title))].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7).toString(36);
+export const trendId = t => t.id || 'r' + [...(String(t.day) + '|' + String(t.title))].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7).toString(36);
 function mergeTrends() {
  const file = arr(typeof window !== 'undefined' ? window.ID_RADAR : []), seen = new Set(), out = [];
  for (const t of [...file, ...state.pasted]) {
@@ -46,6 +46,7 @@ export function loadKB() { kbPromise ||= import('./flavor-data.js').then(m => { 
 export async function loadAll() {
  const saved = read();
  state.dishes = arr(saved.dishes).map(cleanDish).sort((a, b) => String(b.updated_at || '').localeCompare(String(a.updated_at || '')));
+ state.menus = arr(saved.menus).filter(m => m && m.id).map(cleanMenu);
  state.settings = saved.settings && typeof saved.settings === 'object' ? saved.settings : {};
  state.marks = saved.marks && typeof saved.marks === 'object' ? saved.marks : {};
  state.pasted = arr(saved.pasted); state.lastBackup = String(saved.lastBackup || ''); state.seen = String(saved.seen || '');
@@ -84,18 +85,36 @@ export async function saveDish(id, patch) {
  return next;
 }
 export const trashDish = id => saveDish(id, {deleted_at: new Date().toISOString()});
+
+// ---------- Cartas y menús: platos de la libreta en orden, para ver si el conjunto está equilibrado ----------
+export function cleanMenu(m) { return {...m, name: String(m.name || ''), kind: m.kind === 'carta' ? 'carta' : 'degustacion', items: arr(m.items).filter(x => x && x.dish_id), notes: String(m.notes || ''), version: Number(m.version) || 1}; }
+export const menuById = id => state.menus.find(m => m.id === id) || null;
+export const liveMenus = () => state.menus.filter(m => !m.deleted_at).sort((a, b) => String(b.updated_at || '').localeCompare(String(a.updated_at || '')));
+export async function createMenu(fields = {}) {
+ const at = new Date().toISOString();
+ const row = cleanMenu({id: uid(), name: String(fields.name || '').trim().slice(0, 120) || 'Menú sin nombre', kind: fields.kind, items: arr(fields.items), notes: '', advice: null, created_at: at, updated_at: at, deleted_at: null, version: 1});
+ state.menus.unshift(row); save('menus');
+ return row;
+}
+export async function saveMenu(id, patch) {
+ const at = state.menus.findIndex(m => m.id === id);
+ if (at < 0) throw Error('not found');
+ const next = cleanMenu({...state.menus[at], ...patch, version: state.menus[at].version + 1, updated_at: new Date().toISOString()});
+ state.menus[at] = next; save('menus');
+ return next;
+}
 export const restoreDish = id => saveDish(id, {deleted_at: null});
 
 // ---------- El radar ----------
 export async function markTrend(id, patch) {
- const m = {...(state.marks[id] || {})};
+ const m = {...(state.marks[id] || {}), at: new Date().toISOString()};
  for (const k of ['saved_at', 'dismissed_at']) if (k in patch) m[k] = patch[k];
  state.marks[id] = m; mergeTrends(); save('trends');
 }
 // Avisos pegados desde una búsqueda hecha con Claude o ChatGPT: se suman al radar, nunca sustituyen a los anteriores.
 export function addTrends(list) {
  const day = dayKey(), before = state.trends.length;
- state.pasted = [...state.pasted, ...arr(list).filter(t => t && typeof t === 'object' && String(t.title || '').trim()).map(t => ({...t, day: /^\d{4}-\d{2}-\d{2}$/.test(String(t.day || '')) ? t.day : day}))].slice(-400);
+ state.pasted = [...state.pasted, ...arr(list).filter(t => t && typeof t === 'object' && String(t.title || '').trim()).map(t => ({...t, day: /^\d{4}-\d{2}-\d{2}$/.test(String(t.day || '')) ? t.day : day, added_at: new Date().toISOString()}))].slice(-400);
  mergeTrends(); save('trends');
  return state.trends.length - before;
 }
@@ -109,7 +128,7 @@ export function markRadarSeen() {
 }
 
 // ---------- Mi cocina ----------
-export async function saveSettings(profile) { state.settings = profile; state.hasSettings = true; save('settings'); }
+export async function saveSettings(profile) { state.settings = {...profile, _at: new Date().toISOString()}; state.hasSettings = true; save('settings'); }
 
 // ---------- Imágenes (en la base de datos local del navegador) ----------
 const DB = 'id-cocina', STORE = 'images', urls = new Map();
@@ -127,13 +146,53 @@ export async function uploadImage(folder, blob) {
  return path;
 }
 
+export const imageBlob = path => tx('readonly', st => st.get(path)).catch(() => null);
+export async function storeImage(path, blob) { await tx('readwrite', st => st.put(blob, path)); urls.delete(path); }
+export const hasImage = async path => !!(await imageBlob(path));
+
+// ---------- Lo que llega del otro aparato (sincronización) ----------
+// Gana lo más reciente de cada cosa; nada se borra (lo que se quita va con su marca de papelera).
+export function applyRemote(items) {
+ let changed = 0;
+ const newer = (a, b) => String(a || '') > String(b || '');
+ for (const it of arr(items)) {
+  const d = it?.data;
+  if (!d || typeof d !== 'object') continue;
+  if (it.kind === 'dish') { const at = state.dishes.findIndex(x => x.id === it.id); if (at < 0) { state.dishes.push(cleanDish(d)); changed++; } else if (newer(d.updated_at, state.dishes[at].updated_at)) { state.dishes[at] = cleanDish(d); changed++; } }
+  else if (it.kind === 'menu') { const at = state.menus.findIndex(x => x.id === it.id); if (at < 0) { state.menus.push(cleanMenu(d)); changed++; } else if (newer(d.updated_at, state.menus[at].updated_at)) { state.menus[at] = cleanMenu(d); changed++; } }
+  else if (it.kind === 'mark') { if (newer(d.at, state.marks[it.id]?.at)) { state.marks[it.id] = d; changed++; } }
+  else if (it.kind === 'trend') { if (!state.pasted.some(x => trendId(x) === it.id)) { state.pasted.push(d); changed++; } }
+  else if (it.kind === 'settings') { if (newer(d._at, state.settings?._at)) { state.settings = d; changed++; } }
+ }
+ if (changed) {
+  state.dishes.sort((a, b) => String(b.updated_at || '').localeCompare(String(a.updated_at || '')));
+  state.pasted = state.pasted.slice(-400);
+  mergeTrends(); state.kitchen = state.kb ? buildKitchen(state.kb) : state.kitchen;
+  if (!persist()) throw Error('quota');
+  emit('remote');
+ }
+ return changed;
+}
+// Todo lo de este aparato que se sincroniza, con la fecha de su último cambio.
+export function syncItems() {
+ const at = v => (v && !isNaN(new Date(v)) ? new Date(v).toISOString() : '2026-01-01T00:00:00.000Z');
+ return [
+  ...state.dishes.map(d => ({kind: 'dish', id: d.id, data: d, updated_at: at(d.updated_at)})),
+  ...state.menus.map(m => ({kind: 'menu', id: m.id, data: m, updated_at: at(m.updated_at)})),
+  ...Object.entries(state.marks).map(([id, m]) => ({kind: 'mark', id, data: m, updated_at: at(m?.at)})),
+  ...state.pasted.map(t => ({kind: 'trend', id: trendId(t), data: t, updated_at: at(t.added_at || t.day)})),
+  ...(Object.keys(state.settings || {}).length ? [{kind: 'settings', id: 'perfil', data: state.settings, updated_at: at(state.settings._at)}] : [])
+ ];
+}
+export const imagePaths = () => [...new Set(state.dishes.flatMap(d => arr(d.images).map(i => i?.path).filter(Boolean)))];
+
 // ---------- Copia de seguridad: un archivo con todo, imágenes incluidas ----------
 const toData = blob => new Promise((resolve, reject) => { const r = new FileReader(); r.onload = () => resolve(r.result); r.onerror = () => reject(r.error); r.readAsDataURL(blob); });
 export async function exportBackup() {
  const images = {};
  for (const d of state.dishes) for (const i of d.images) { if (!i?.path || images[i.path]) continue; try { const blob = await tx('readonly', s => s.get(i.path)); if (blob) images[i.path] = await toData(blob); } catch {} }
  state.lastBackup = new Date().toISOString(); persist();
- return new Blob([JSON.stringify({app: 'id-cocina', version: 1, exported_at: state.lastBackup, dishes: state.dishes, settings: state.settings, marks: state.marks, pasted: state.pasted, images})], {type: 'application/json'});
+ return new Blob([JSON.stringify({app: 'id-cocina', version: 1, exported_at: state.lastBackup, dishes: state.dishes, menus: state.menus, settings: state.settings, marks: state.marks, pasted: state.pasted, images})], {type: 'application/json'});
 }
 // Recuperar una copia suma: los platos que no están se añaden y, si un plato está en los dos sitios, se queda el más reciente.
 export async function importBackup(text) {
@@ -145,6 +204,12 @@ export async function importBackup(text) {
   const at = state.dishes.findIndex(d => d.id === raw.id);
   if (at < 0) { state.dishes.push(cleanDish(raw)); added++; }
   else if (String(raw.updated_at || '') > String(state.dishes[at].updated_at || '')) { state.dishes[at] = cleanDish(raw); updated++; }
+ }
+ for (const raw of arr(data.menus)) {
+  if (!raw || !raw.id) continue;
+  const at = state.menus.findIndex(m => m.id === raw.id);
+  if (at < 0) state.menus.push(cleanMenu(raw));
+  else if (String(raw.updated_at || '') > String(state.menus[at].updated_at || '')) state.menus[at] = cleanMenu(raw);
  }
  for (const [path, url] of Object.entries(data.images || {})) { try { const blob = await (await fetch(url)).blob(); await tx('readwrite', s => s.put(blob, path)); } catch {} }
  if (data.settings && typeof data.settings === 'object' && !Object.keys(state.settings).length) state.settings = data.settings;

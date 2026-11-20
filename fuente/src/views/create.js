@@ -13,7 +13,7 @@ import {iaOn, askIa, iaMessage, imageData} from '../ia.js';
 import {trText, adoptIdea, sectionHead} from './shared.js';
 
 let form = {brief: '', course: '', lead: '', wants: []}, result = null, lastTrend = '', recipe = null, recipeText = '';
-export const title = params => (params[0] === 'ideas' ? t('Dame ideas', 'Give me ideas') : params[0] === 'importar' ? t('Importar receta', 'Import a recipe') : t('Crear', 'Create'));
+export const title = params => (params[0] === 'llegado' ? t('Ha llegado género', 'New produce in') : params[0] === 'ideas' ? t('Dame ideas', 'Give me ideas') : params[0] === 'importar' ? t('Importar receta', 'Import a recipe') : t('Crear', 'Create'));
 const lbl = row => (en() ? row[2] : row[1]);
 const WANTS = () => [
  ['brasa', t('Con la brasa', 'Over charcoal')], ['compartir', t('Para compartir', 'To share')], ['vegetal', t('Vegetal', 'Plant-based')], ['temporada', t('De temporada', 'Seasonal')],
@@ -24,11 +24,13 @@ function launcher() {
  const kb = state.kb, pantry = state.kitchen?.pantry || new Set();
  const leads = kb ? kb.list.filter(i => pantry.has(i.id) && ['carne', 'ave', 'pescado', 'marisco', 'verdura', 'seta', 'queso'].includes(i.family)).slice(0, 60).sort((a, b) => (en() ? a.en.localeCompare(b.en) : a.es.localeCompare(b.es, 'es'))).slice(0, 24) : [];
  return '<header class="page-head"><h1>' + esc(t('Crear', 'Create')) + '</h1><p>' + esc(t('Empieza como quieras. Todo acaba en la mesa de trabajo, donde ves qué sabores dominan y qué le falta al plato.', 'Start however you like. Everything ends at the workbench, where you see which flavours lead and what the dish lacks.')) + '</p></header>' +
-  '<div class="tiles tiles-4">' +
+  '<div class="tiles tiles-3 tiles-6">' +
   '<a class="tile tile-big" href="#/plato/nuevo">' + icon('plus') + '<strong>' + esc(t('Desde cero', 'From scratch')) + '</strong><span>' + esc(t('Un plato en blanco para montarlo por componentes', 'A blank dish to build from components')) + '</span></a>' +
   '<a class="tile tile-big tile-ember" href="#/crear/ideas">' + icon('spark') + '<strong>' + esc(t('Dame ideas', 'Give me ideas')) + '</strong><span>' + esc(t('Di qué buscas y saca tres propuestas para tu cocina', 'Say what you want and get three proposals for your kitchen')) + '</span></a>' +
   '<a class="tile tile-big" href="#/sabores">' + icon('wheel') + '<strong>' + esc(t('Desde una combinación', 'From a pairing')) + '</strong><span>' + esc(t('Explora qué va con qué y tira del hilo', 'Explore what goes with what and follow the thread')) + '</span></a>' +
-  '<a class="tile tile-big" href="#/crear/importar">' + icon('copy') + '<strong>' + esc(t('Importar receta', 'Import a recipe')) + '</strong><span>' + esc(t('De una captura de TikTok, Instagram, una web o un libro', 'From a TikTok or Instagram screenshot, a website or a book')) + '</span></a></div>' +
+  '<a class="tile tile-big" href="#/crear/importar">' + icon('copy') + '<strong>' + esc(t('Importar receta', 'Import a recipe')) + '</strong><span>' + esc(t('De una captura de TikTok, Instagram, una web o un libro', 'From a TikTok or Instagram screenshot, a website or a book')) + '</span></a>' +
+  '<a class="tile tile-big" href="#/crear/llegado">' + icon('box') + '<strong>' + esc(t('Ha llegado género', 'New produce in')) + '</strong><span>' + esc(t('Una foto de lo que ha entrado y tres platos para sacarle partido', 'A photo of what came in and three dishes to make the most of it')) + '</span></a>' +
+  '<a class="tile tile-big" href="#/menus">' + icon('book') + '<strong>' + esc(t('Montar una carta o menú', 'Build a menu')) + '</strong><span>' + esc(t('Junta platos y mira si el conjunto está equilibrado', 'Put dishes together and check the whole is balanced')) + '</span></a></div>' +
   '<section class="sec">' + sectionHead(t('Con un producto', 'From a product'), '', t('Elige quién manda en el plato y empieza por ahí.', 'Choose what leads the dish and start there.')) +
   '<label class="sr" for="leadSearch">' + esc(t('Buscar producto', 'Search product')) + '</label><div class="searchbox">' + icon('search') + '<input id="leadSearch" type="search" placeholder="' + esc(t('Pulpo, alcachofa, carrillera…', 'Octopus, artichoke, pork cheek…')) + '" autocomplete="off" enterkeyhint="search"></div><div id="leadResults" class="chips"></div>' +
   (leads.length ? '<p class="mini">' + esc(t('Tus básicos', 'Your staples')) + '</p><div class="chips">' + leads.map(i => '<a class="chip chip-have" href="#/plato/nuevo/' + esc(i.id) + '">' + esc(en() ? i.en : i.es) + '</a>').join('') + '</div>' : '') + '</section>';
@@ -133,10 +135,58 @@ function mountImport(root) {
  });
 }
 
-export const render = params => (params[0] === 'ideas' ? ideasPage(params[1]) : params[0] === 'importar' ? importPage() : launcher());
+// ---------- Ha llegado género: fotos o texto de lo que ha entrado → tres platos ----------
+let arrived = {text: '', photos: []};
+function arrivedPage() {
+ const on = iaOn();
+ return '<a class="back" href="#/crear">' + icon('left') + esc(t('Crear', 'Create')) + '</a><header class="page-head"><h1>' + esc(t('Ha llegado género', 'New produce in')) + '</h1><p>' + esc(t('Haz una foto de lo que ha entrado (pescado de lonja, una caja de setas, la verdura de hoy) o escríbelo, y te propone tres platos con tus básicos y tu brasa.', 'Take a photo of what came in (fish from the market, a box of mushrooms, today\'s vegetables) or write it, and get three dishes with your staples and your grill.')) + '</p></header>' +
+  '<form id="arrivedForm" class="card form">' +
+  (on ? '<div class="row-actions row-left"><label class="btn ghost" for="arrivedPhoto">' + icon('image') + '<span>' + esc(t('Hacer foto o elegir', 'Take or choose photo')) + '</span></label><input id="arrivedPhoto" class="sr" type="file" accept="image/*" multiple></div><div id="arrivedPics" class="pending">' + arrived.photos.map((_, k) => '<span class="chip chip-static">' + icon('image') + esc(t('Foto ', 'Photo ') + (k + 1)) + '<button type="button" class="iconbtn" data-unpic="' + k + '" aria-label="' + esc(t('Quitar foto', 'Remove photo')) + '">' + icon('x') + '</button></span>').join('') + '</div>' : '') +
+  '<label for="arrivedText">' + esc(t('Qué ha llegado (y cuánto, si importa)', 'What came in (and how much, if it matters)')) + '</label><textarea id="arrivedText" rows="3" maxlength="600" placeholder="' + esc(t('6 kg de rape, una caja de níscalos, calabaza de la huerta…', '6 kg of monkfish, a box of saffron milk caps, pumpkin from the garden…')) + '">' + esc(arrived.text) + '</textarea>' +
+  (on ? '<div class="row-actions row-left"><button type="submit" class="btn primary">' + icon('spark') + esc(t('Proponer platos', 'Suggest dishes')) + '</button></div>'
+   : '<p class="fine">' + esc(t('Con ChatGPT conectado (Ajustes) basta con la foto. Sin conectar: escribe lo que ha llegado, pulsa «Preguntar a ChatGPT», adjunta allí la foto si quieres, y trae la respuesta.', 'With ChatGPT connected (Settings) a photo is enough. Without it: write what came in, tap “Ask ChatGPT”, attach the photo there if you like, and bring back the answer.')) + '</p><div class="row-actions row-left"><button type="button" class="btn primary" data-act="copy-arrived">' + icon('copy') + esc(t('Copiar la petición', 'Copy the request')) + '</button><a class="btn ghost" href="https://chatgpt.com/" data-chat target="_blank" rel="noopener noreferrer">' + esc(t('Preguntar a ChatGPT', 'Ask ChatGPT')) + icon('out') + '</a></div>' +
+     '<label class="mini" for="ideasReply">' + esc(t('Pega aquí la respuesta', 'Paste the answer here')) + '</label><textarea id="ideasReply" rows="3"></textarea><div class="row-actions row-left"><button type="button" class="btn ghost" data-paste="ideasReply" data-then="[data-act=read-ideas]">' + icon('copy') + esc(t('Pegar y leer', 'Paste and read')) + '</button><button type="button" class="btn primary" data-act="read-ideas">' + icon('spark') + esc(t('Ver las propuestas', 'See the proposals')) + '</button></div>') +
+  '</form>' + (result && result.from === 'arrived' ? '<section class="sec" id="ideaResults">' + sectionHead(t('Propuestas', 'Proposals'), '', t('Son borradores: abre la que te guste y cámbiala a tu manera.', 'These are drafts: open the one you like and make it yours.')) + '<div class="idea-list">' + result.ideas.map(ideaResult).join('') + '</div>' + (result.issues.length ? '<p class="fine">' + esc(result.issues.join(' ')) + '</p>' : '') + '</section>' : '');
+}
+const arrivedBrief = () => t('Ha llegado este género a la cocina', 'This produce has just come into the kitchen') + (arrived.text.trim() ? ': ' + arrived.text.trim() : '') + (arrived.photos.length ? t(' (mira las fotos: identifica el producto, su calidad y cantidad aproximada)', ' (look at the photos: identify the product, its quality and rough quantity)') : '') + t('. Propón platos para sacarle partido esta semana, aprovechándolo entero.', '. Suggest dishes to make the most of it this week, using all of it.');
+function mountArrived(root) {
+ const repaint = () => { if (root.isConnected) { root.innerHTML = arrivedPage(); } };
+ root.addEventListener('input', e => { if (e.target.id === 'arrivedText') arrived.text = e.target.value; });
+ root.addEventListener('change', async e => {
+  if (e.target.id !== 'arrivedPhoto') return;
+  for (const f of [...e.target.files].slice(0, 3 - arrived.photos.length)) { try { arrived.photos.push(await imageData(f)); } catch { toast(t('No se pudo abrir esa imagen.', 'That image could not be opened.'), 'error'); } }
+  arrived.text = $('#arrivedText', root)?.value || arrived.text; repaint();
+ });
+ root.addEventListener('click', async e => {
+  const b = e.target.closest('button');
+  if (!b) return;
+  if (b.dataset.unpic) { arrived.photos.splice(Number(b.dataset.unpic), 1); repaint(); return; }
+  if (b.dataset.act === 'copy-arrived') {
+   if (!arrived.text.trim()) { toast(t('Escribe qué ha llegado.', 'Write what came in.'), 'error'); return; }
+   const done = await copy(ideasPrompt({brief: arrivedBrief()})); toast(done ? t('Petición copiada.', 'Request copied.') : t('No se pudo copiar.', 'It could not be copied.'), done ? 'info' : 'error');
+  }
+  if (b.dataset.act === 'read-ideas') { const clean = ideasFromReply($('#ideasReply', root).value); if (!clean.ideas.length) { toast(t('No encuentro las propuestas en ese texto.', 'I cannot find the proposals in that text.'), 'error'); return; } result = {...clean, from: 'arrived'}; repaint(); $('#ideaResults', root)?.scrollIntoView({behavior: 'smooth', block: 'start'}); }
+  const open = b.closest('[data-open]');
+  if (open && result) { const idea = result.ideas[Number(open.dataset.open)]; if (idea) { open.disabled = true; await adoptIdea(idea, {kind: 'ideas', title: arrived.text.slice(0, 140) || t('Género recién llegado', 'Fresh produce')}); } }
+ });
+ root.addEventListener('submit', async e => {
+  if (e.target.id !== 'arrivedForm') return;
+  e.preventDefault();
+  if (!arrived.text.trim() && !arrived.photos.length) { toast(t('Haz una foto o escribe qué ha llegado.', 'Take a photo or write what came in.'), 'error'); return; }
+  const b = e.submitter || $('#arrivedForm button[type=submit]', root); b.disabled = true; b.classList.add('is-busy'); b.lastChild.textContent = t('ChatGPT está mirando el género…', 'ChatGPT is looking at the produce…');
+  try {
+   const clean = ideasFromReply(await askIa({text: ideasPrompt({brief: arrivedBrief()}), images: arrived.photos, json: true}));
+   if (!clean.ideas.length) throw Object.assign(Error('empty'), {kind: 'empty'});
+   result = {...clean, from: 'arrived'}; repaint(); $('#ideaResults', root)?.scrollIntoView({behavior: 'smooth', block: 'start'});
+  } catch (err) { toast(iaMessage(err), 'error', 7000); if (b.isConnected) { b.disabled = false; b.classList.remove('is-busy'); b.lastChild.textContent = t('Proponer platos', 'Suggest dishes'); } }
+ });
+}
+
+export const render = params => (params[0] === 'llegado' ? arrivedPage() : params[0] === 'ideas' ? ideasPage(params[1]) : params[0] === 'importar' ? importPage() : launcher());
 
 export function mount(root, params) {
  if (params[0] === 'importar') { mountImport(root); return null; }
+ if (params[0] === 'llegado') { mountArrived(root); return null; }
  if (params[0] !== 'ideas') {
   const input = $('#leadSearch', root), box = $('#leadResults', root);
   if (input) input.oninput = () => {

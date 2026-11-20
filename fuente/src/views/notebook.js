@@ -4,6 +4,7 @@ import {t, relDay} from '../i18n.js';
 import {esc, icon, $, toast, friendly} from '../ui.js';
 import {state, restoreDish} from '../store.js';
 import {STATUSES, statusLabel, dishCard, hydrateImages, emptyState, skeleton} from './shared.js';
+import {tabs} from './menus.js';
 
 let status = 'todos', query = '';
 export const title = params => (params[0] === 'papelera' ? t('Papelera', 'Bin') : t('Libreta', 'Notebook'));
@@ -18,7 +19,7 @@ function grid() {
 function list() {
  const live = state.dishes.filter(d => !d.deleted_at), trashed = state.dishes.filter(d => d.deleted_at).length;
  const count = id => (id === 'todos' ? live.length : live.filter(d => d.status === id).length);
- return '<header class="page-head page-head-row"><div><h1>' + esc(t('Libreta', 'Notebook')) + '</h1><p>' + esc(t('Tus platos de I+D, de la idea a la carta.', 'Your R&D dishes, from idea to menu.')) + '</p></div>' + (state.canEdit ? '<a class="btn primary" href="#/crear">' + icon('plus') + esc(t('Crear', 'Create')) + '</a>' : '') + '</header>' +
+ return '<header class="page-head page-head-row"><div><h1>' + esc(t('Libreta', 'Notebook')) + '</h1><p>' + esc(t('Tus platos de I+D, de la idea a la carta.', 'Your R&D dishes, from idea to menu.')) + '</p></div>' + (state.canEdit ? '<a class="btn primary" href="#/crear">' + icon('plus') + esc(t('Crear', 'Create')) + '</a>' : '') + '</header>' + tabs('platos') +
   '<div class="filters" role="group" aria-label="' + esc(t('Filtrar por estado', 'Filter by status')) + '">' + [['todos', t('Todos', 'All')], ...STATUSES.map(s => [s[0], statusLabel(s[0])])].filter(([id]) => id === 'todos' || count(id) || id === status).map(([id, label]) => '<button type="button" class="pill' + (status === id ? ' active' : '') + '" data-status="' + id + '" aria-pressed="' + (status === id) + '">' + esc(label) + '<span class="count">' + count(id) + '</span></button>').join('') + '</div>' +
   (live.length > 5 ? '<label class="sr" for="bookSearch">' + esc(t('Buscar en la libreta', 'Search the notebook')) + '</label><div class="searchbox">' + icon('search') + '<input id="bookSearch" type="search" value="' + esc(query) + '" placeholder="' + esc(t('Buscar por nombre o ingrediente', 'Search by name or ingredient')) + '" autocomplete="off" enterkeyhint="search"></div>' : '') +
   '<div id="bookGrid">' + grid() + '</div>' +

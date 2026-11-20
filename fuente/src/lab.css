@@ -40,7 +40,7 @@ a{color:inherit}button,input,select,textarea{font:inherit;color:inherit}button{c
 img,svg{display:block;max-width:100%}
 :focus-visible{outline:3px solid var(--ember);outline-offset:2px;border-radius:var(--r-sm)}
 ::selection{background:var(--ember-soft);color:var(--ink)}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.sr{position:absolute;width:1px!important;height:1px!important;min-height:0!important;padding:0!important;border:0!important;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .ic{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 .num{font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:14px}
 .fine{font-size:13.5px;color:var(--mut);margin-top:10px;display:flex;gap:6px;flex-wrap:wrap;align-items:center}.fine .ic{width:16px;height:16px}.fine a{color:var(--ember-ink);font-weight:700}
@@ -344,3 +344,23 @@ label.check{display:flex;gap:10px;align-items:flex-start;margin:14px 0 4px;font-
 }
 
 .raw p{margin-top:10px;color:var(--ink2)}.fold .row-actions{margin-top:10px}label.btn{cursor:pointer}label.tile{cursor:pointer}
+.sync-code{font:600 19px/1.4 var(--mono);letter-spacing:.06em;padding:12px 14px;border-radius:var(--r-sm);background:var(--soft);border:1px dashed var(--line2);user-select:all;overflow-wrap:anywhere;margin:2px 0 8px}
+
+
+/* ---------- Cartas y menús ---------- */
+.book-tabs{margin:2px 0 14px}.book-tabs .seg-btn{text-decoration:none}
+.menu-list{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.menu-card{display:grid;gap:6px;padding:16px;border-radius:var(--r);border:1px solid var(--line);background:var(--card);text-decoration:none;color:inherit}.menu-card:hover{border-color:var(--line2)}
+.menu-card strong{font-family:var(--serif);font-weight:400;font-size:24px;line-height:1.1}.menu-meta{font-size:13px;color:var(--mut)}.menu-dots{display:flex;flex-wrap:wrap;gap:4px;margin-top:4px}
+.mrows{list-style:none;margin:0;padding:0}.mrow{display:grid;grid-template-columns:22px 44px minmax(0,1fr) auto;align-items:center;gap:10px;padding:8px 0;border-top:1px solid var(--line)}.mrow:first-child{border-top:0}
+.mrow-n{font:700 14px var(--mono);color:var(--mut);text-align:right}.mrow-main{display:grid;gap:2px;min-width:0;text-decoration:none;color:inherit}.mrow-main strong{font-size:16px;overflow-wrap:anywhere}.mrow-main small{font-size:13px;color:var(--mut)}
+.mrow-act{display:flex}.mrow-act .iconbtn{width:38px;height:38px}.mrow-act [data-up] .ic,.mrow-act [data-down] .ic{transform:rotate(90deg)}.mrow-act .iconbtn:disabled{opacity:.3}
+.pick-list{display:grid;gap:2px;max-height:52vh;overflow:auto;margin-bottom:8px}.pick{display:grid;grid-template-columns:22px 32px minmax(0,1fr);align-items:center;gap:10px;padding:8px 6px;border-radius:var(--r-sm);cursor:pointer}.pick:hover{background:var(--soft)}
+.pick input{width:20px;height:20px;accent-color:var(--ember)}.pick span{display:grid}.pick small{font-size:12.5px;color:var(--mut)}
+.menu-bench .title-input{font-family:var(--serif);font-size:30px;border:0;background:none;padding:4px 0;min-height:0}
+@media (min-width:960px){.mrow-act .iconbtn{width:34px;height:34px}}
+
+.plate-check{margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}.plate-check .fine{margin:0 0 8px}
+.plate-compare{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-bottom:12px}.plate-compare img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:var(--r-sm)}.plate-compare figcaption{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin-top:4px}
+
+.form label.btn{display:inline-flex;margin:0;font-size:15.5px;font-weight:700;color:inherit}.form .row-actions:first-child{margin-top:0}

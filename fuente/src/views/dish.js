@@ -7,9 +7,11 @@ import {t, en, pick, relDay, shortDate, seasonOf, seasonLabel, dayKey} from '../
 import {esc, icon, $, $$, uid, toast, friendly, sheet, ask, flavorMeters, flavorPrint, verdictText, axisName, lackName, clip} from '../ui.js';
 import {state, dishById, fetchDish, createDish, saveDish, trashDish, restoreDish, imageUrl, uploadImage, userName} from '../store.js';
 import {advicePrompt, imagePrompt, adviceFromReply, copy, shrinkImage} from '../ai.js';
-import {iaOn, askIa, iaMessage} from '../ia.js';
+import {iaOn, askIa, iaMessage, imageData} from '../ia.js';
 import {STATUSES, emptyState, skeleton} from './shared.js';
 import {go} from '../nav.js';
+import {rich} from './ask.js';
+import {dishRequest} from '../ai-core.js';
 
 let cur = null, root = null, ready = false, dirty = new Set(), removedTests = new Set(), removedImages = new Set();
 let timer = null, firstDirty = 0, saving = false, saveState = 'saved', style = 'mesa';
@@ -173,9 +175,35 @@ function imagesHtml() {
  if (can) {
   html += '<div class="filters" role="group" aria-label="' + esc(t('Estilo de la imagen', 'Image style')) + '">' + IMAGE_STYLES.map(s => '<button type="button" class="pill' + (style === s[0] ? ' active' : '') + '" data-style="' + s[0] + '" aria-pressed="' + (style === s[0]) + '">' + esc(lbl(s)) + '</button>').join('') + '</div>' +
    '<div class="row-actions row-left"><button type="button" class="btn primary" data-act="image">' + icon('copy') + esc(t('Copiar descripción para ChatGPT', 'Copy description for ChatGPT')) + '</button><a class="btn ghost" href="https://chatgpt.com/" data-chat target="_blank" rel="noopener noreferrer">' + esc(t('Preguntar a ChatGPT', 'Ask ChatGPT')) + icon('out') + '</a>' +
-   '<label class="btn ghost" for="imageFile">' + icon('image') + esc(t('Añadir imagen', 'Add image')) + '</label><input id="imageFile" class="sr" type="file" accept="image/*"></div>';
+   '<label class="btn ghost" for="imageFile">' + icon('image') + esc(t('Añadir imagen', 'Add image')) + '</label><input id="imageFile" class="sr" type="file" accept="image/*"></div>' +
+   (iaOn() ? '<div class="plate-check"><p class="fine">' + esc(t('¿Ya lo has emplatado? Hazle una foto y ChatGPT la compara con la imagen del plato: qué está bien y qué corregir antes de que salga.', 'Plated it already? Take a photo and ChatGPT compares it with the dish image: what works and what to fix before it goes out.')) + '</p><label class="btn primary" for="plateFile">' + icon('image') + '<span>' + esc(t('Revisar el emplatado con una foto', 'Check the plating with a photo')) + '</span></label><input id="plateFile" class="sr" type="file" accept="image/*" capture="environment"></div>' : '');
  }
  return html;
+}
+
+// ---------- Revisar el emplatado: foto del pase frente a la imagen objetivo ----------
+async function reviewPlate(file, label) {
+ const dish = cur;
+ label.classList.add('is-busy'); const was = label.lastChild.textContent; label.lastChild.textContent = t('ChatGPT está mirando el plato…', 'ChatGPT is looking at the plate…');
+ try {
+  const shot = await imageData(file), imgs = [shot];
+  const target = (dish.images || []).find(i => i.path === dish.cover_path) || (dish.images || [])[dish.images.length - 1];
+  if (target) { const url = await imageUrl(target.path); if (url) { try { imgs.push(await imageData(await (await fetch(url)).blob())); } catch {} } }
+  const text = await askIa({images: imgs, text: 'Eres un jefe de cocina revisando el emplatado en el pase, con ojo práctico (no de concurso). La primera imagen es el plato tal como ha salido hoy.' + (imgs.length > 1 ? ' La segunda es la imagen de cómo queremos que sea.' : ' No hay imagen objetivo: júzgalo por la descripción.') +
+   ' Di en texto corto: lo que está bien; lo que corregirías antes de que salga (ración, limpieza del borde, altura, color, salsa, brillo, temperatura que se vea), cada cosa en una línea que empiece por «- »; y termina con una línea «Nota: X/10». ' + (en() ? 'Write in British English.' : 'Escribe en español de España.') +
+   '\n\nEL PLATO:\n' + JSON.stringify({...dishRequest(state.kb, dish), emplatado: dish.plating || dish.advice?.plating || ''})});
+  const score = Number((text.match(/nota:\s*(\d+(?:[.,]\d)?)\s*\/\s*10/i) || [])[1]?.replace(',', '.')) || null;
+  const sh = sheet({title: t('Revisión del emplatado', 'Plating check'), wide: true, body: '<div class="plate-compare"><figure><img src="' + shot + '" alt=""><figcaption>' + esc(t('Hoy', 'Today')) + '</figcaption></figure>' + (imgs[1] ? '<figure><img src="' + imgs[1] + '" alt=""><figcaption>' + esc(t('Objetivo', 'Target')) + '</figcaption></figure>' : '') + '</div><div class="msg-body">' + rich(text) + '</div>' +
+   '<div class="row-actions"><button type="button" class="btn ghost" data-r="photo">' + icon('image') + esc(t('Guardar la foto en el plato', 'Save the photo in the dish')) + '</button><button type="button" class="btn primary" data-r="test">' + icon('check') + esc(t('Apuntarlo como prueba', 'Log it as a test')) + '</button></div>'});
+  sh.el.addEventListener('click', async e => {
+   const r = e.target.closest('[data-r]')?.dataset.r;
+   if (!r || cur !== dish) return;
+   e.target.closest('button').disabled = true;
+   if (r === 'photo') { const blob = await (await fetch(shot)).blob(), path = await uploadImage(dish.id || 'nuevo', blob); dish.images = [...dish.images, {id: sid(), path, style: 'pase', at: new Date().toISOString()}].slice(-12); touch('images'); redrawImages(); toast(t('Foto guardada en el plato.', 'Photo saved in the dish.')); }
+   if (r === 'test') { dish.tests = [...dish.tests, {id: sid(), at: dayKey(), rating: score ? Math.max(1, Math.min(5, Math.round(score / 2))) : null, text: t('Revisión del emplatado: ', 'Plating check: ') + clip(text, 1100), next: '', by: userName()}].slice(-200); touch('tests'); part('testsSec', testsHtml()); toast(t('Apuntado en las pruebas de cata.', 'Logged in the tasting tests.')); }
+  });
+ } catch (err) { toast(err?.message === 'image' ? t('No se pudo abrir esa foto.', 'That photo could not be opened.') : iaMessage(err), 'error', 7000); }
+ finally { if (label.isConnected) { label.classList.remove('is-busy'); label.lastChild.textContent = was; } }
 }
 
 // ---------- Consejo ----------
@@ -231,7 +259,7 @@ function fichaSecHtml() {
   '<div class="bench-meta"><label for="dishPortions">' + esc(t('Raciones', 'Portions')) + '</label><input id="dishPortions" value="' + esc(cur.portions || '') + '" maxlength="30" inputmode="text" placeholder="' + esc(t('p. ej. 1, 4, 10 pases', 'e.g. 1, 4, 10 covers')) + '"' + (can ? '' : ' disabled') + ' autocomplete="off"></div>' +
   '<label class="mini" for="dishPlating">' + esc(t('Emplatado', 'Plating')) + '</label><textarea id="dishPlating" rows="3" maxlength="2000" placeholder="' + esc(t('Plato, qué va debajo, qué encima, cómo se termina en el pase…', 'Plate, what goes underneath, what on top, how it is finished at the pass…')) + '"' + (can ? '' : ' disabled') + '>' + esc(cur.plating || '') + '</textarea>' +
   (can && from && !cur.plating ? '<button type="button" class="linkbtn" data-act="plating-from-advice">' + esc(t('Usar el emplatado del consejo', 'Use the plating from the advice')) + icon('right') + '</button>' : '') +
-  '<div class="row-actions row-left"><button type="button" class="btn ghost" data-act="print">' + icon('down') + esc(t('Imprimir ficha o guardar en PDF', 'Print sheet or save as PDF')) + '</button></div>';
+  '<div class="row-actions row-left"><button type="button" class="btn ghost" data-act="print">' + icon('down') + esc(t('Imprimir ficha o guardar en PDF', 'Print sheet or save as PDF')) + '</button><button type="button" class="btn ghost" data-act="share">' + icon('out') + esc(t('Enviar por WhatsApp', 'Send on WhatsApp')) + '</button></div>';
 }
 const roleName = c => pick([role(c.role).es, role(c.role).en]);
 async function fichaPrintHtml() {
@@ -254,6 +282,27 @@ async function fichaPrintHtml() {
   (last ? '<p class="ficha-line"><strong>' + esc(t('Última prueba', 'Last test')) + ' (' + esc(shortDate(last.at || new Date())) + '): </strong>' + esc([last.text, last.next ? t('Próxima vez: ', 'Next time: ') + last.next : ''].filter(Boolean).join(' · ')) + '</p>' : '') +
   (cur.notes ? '<p class="ficha-line"><strong>' + esc(t('Notas: ', 'Notes: ')) + '</strong>' + esc(cur.notes) + '</p>' : '') +
   '<footer class="ficha-foot">I+D · ' + esc(shortDate(new Date())) + '</footer></article>';
+}
+// La ficha en texto, para mandarla por WhatsApp al equipo.
+function fichaText() {
+ const lines = ['*' + (cur.name || t('Plato sin nombre', 'Untitled dish')) + '*'];
+ if (cur.concept) lines.push('_' + cur.concept + '_');
+ if (cur.portions) lines.push(t('Raciones: ', 'Portions: ') + cur.portions);
+ for (const c of cur.components.filter(c => c.items.length || c.method)) {
+  lines.push('', '*' + roleName(c) + (c.name ? ' · ' + c.name : '') + '*' + (c.techniques.length ? ' (' + c.techniques.filter(technique).map(techName).join(', ') + ')' : ''));
+  for (const i of c.items) lines.push('• ' + i.n + (i.q ? ' — ' + i.q : ''));
+  if (c.method) lines.push(c.method.trim());
+ }
+ if (cur.plating) lines.push('', '*' + t('Emplatado', 'Plating') + '*', cur.plating.trim());
+ const allergens = (cur.advice?.allergens || []).map(id => ALLERGENS.find(x => x[0] === id)).filter(Boolean).map(lbl);
+ if (allergens.length) lines.push('', t('Alérgenos probables: ', 'Likely allergens: ') + allergens.join(', '));
+ return lines.join('\n');
+}
+async function shareFicha() {
+ await flush();
+ const text = fichaText();
+ if (matchMedia('(pointer:coarse)').matches && navigator.share) { try { await navigator.share({title: cur.name, text}); return; } catch (e) { if (e?.name === 'AbortError') return; } }
+ window.open('https://wa.me/?text=' + encodeURIComponent(text), '_blank', 'noopener');
 }
 async function printFicha() {
  await flush();
@@ -396,6 +445,7 @@ function addAs(kbId, fix = null) {
 function moreSheet() {
  const s = sheet({title: cur.name || t('Plato', 'Dish'), body: '<div class="menu-grid">' +
   (cur.id ? '<button type="button" class="tile" data-act="dup">' + icon('copy') + '<span>' + esc(t('Duplicar como variante', 'Duplicate as a variant')) + '</span></button>' : '') +
+  '<button type="button" class="tile" data-act="share">' + icon('out') + '<span>' + esc(t('Enviar ficha por WhatsApp', 'Send sheet on WhatsApp')) + '</span></button>' +
   '<button type="button" class="tile" data-act="print">' + icon('down') + '<span>' + esc(t('Imprimir ficha o guardar en PDF', 'Print sheet or save as PDF')) + '</span></button>' +
   (cur.id && !cur.deleted_at ? '<button type="button" class="tile tile-danger" data-act="trash">' + icon('trash') + '<span>' + esc(t('Enviar a la papelera', 'Move to the bin')) + '</span></button>' : '') + '</div>' +
   ''});
@@ -404,6 +454,7 @@ function moreSheet() {
   if (!act) return;
   s.close();
   if (act === 'print') printFicha();
+  if (act === 'share') shareFicha();
   if (act === 'dup') duplicate(cur.name + t(' · variante', ' · variant'), cur.concept);
   if (act === 'trash') {
    if (!await ask({title: t('¿Enviar a la papelera?', 'Move to the bin?'), text: t('No se borra: lo encontrarás en la papelera de la libreta y podrás recuperarlo.', 'It is not deleted: you will find it in the notebook bin and can restore it.'), yes: t('Enviar a la papelera', 'Move to the bin'), danger: true})) return;
@@ -447,6 +498,7 @@ export function mount(el) {
   if (x.id === 'dishStatus') { cur.status = x.value; x.className = 'status-select status-' + x.value; touch('status'); }
   else if (x.id === 'dishCourse') { cur.course = x.value; touch('course'); part('analysis', analysisHtml()); }
   else if (x.id === 'dishSeason') { cur.season = x.value; touch('season'); }
+  else if (x.id === 'plateFile' && x.files[0]) { const f = x.files[0]; x.value = ''; reviewPlate(f, $('label[for=plateFile]', root)); }
   else if (x.id === 'imageFile' && x.files[0]) {
    shrinkImage(x.files[0]).then(async blob => {
     if (!cur.id) { dirty.add('name'); await flush(); }
@@ -481,6 +533,7 @@ export function mount(el) {
   }
   else if (act === 'more') moreSheet();
   else if (act === 'print') printFicha();
+  else if (act === 'share') shareFicha();
   else if (act === 'plating-from-advice') { cur.plating = clip(cur.advice?.plating, 2000); touch('plating'); part('fichaSec', fichaSecHtml()); }
   else if (act === 'restore') { try { await restoreDish(cur.id); cur.deleted_at = null; toast(t('Recuperado.', 'Restored.')); paint(); } catch (err) { toast(friendly(err), 'error'); } }
   else if (act === 'advice') {

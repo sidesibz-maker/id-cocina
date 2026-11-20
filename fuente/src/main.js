@@ -13,12 +13,15 @@ import * as notebook from './views/notebook.js';
 import * as flavors from './views/flavors.js';
 import * as kitchenView from './views/kitchen-view.js';
 import * as ask from './views/ask.js';
+import * as menus from './views/menus.js';
 import {iaSheet} from './views/ia-sheet.js';
+import {syncSheet, syncLine} from './views/sync-sheet.js';
+import {startAutoSync, syncOn, syncStatus} from './sync.js';
 import {iaOn, iaConfig, saveIa, askIa} from './ia.js';
 import {radarPrompt, trendsFromReply} from './ai.js';
 import {addTrends} from './store.js';
 
-const VIEWS = {hoy: home, radar, crear: create, plato: dish, libreta: notebook, sabores: flavors, cocina: kitchenView, preguntar: ask};
+const VIEWS = {hoy: home, radar, crear: create, plato: dish, libreta: notebook, sabores: flavors, cocina: kitchenView, preguntar: ask, menus};
 const NAV = [['hoy', 'flame', () => t('Hoy', 'Today')], ['radar', 'radar', () => t('Radar', 'Radar')], ['crear', 'plus', () => t('Crear', 'Create')], ['libreta', 'book', () => t('Libreta', 'Notebook')], ['sabores', 'wheel', () => t('Sabores', 'Flavours')]];
 const app = () => $('#app');
 let current = {name: '', params: [], cleanup: null};
@@ -50,7 +53,7 @@ function badges() {
  $$('[data-badge=radar]').forEach(b => { b.hidden = !n; b.textContent = n > 9 ? '9+' : String(n); b.setAttribute('aria-label', n + ' ' + t('avisos nuevos', 'new alerts')); });
 }
 function markNav() {
- const active = current.name === 'plato' ? 'libreta' : current.name;
+ const active = ['plato', 'menus'].includes(current.name) ? 'libreta' : current.name;
  $$('[data-nav]').forEach(a => { const on = a.dataset.nav === active; a.classList.toggle('active', on); if (on) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
 }
 function route({keepScroll = false} = {}) {
@@ -105,15 +108,17 @@ function menu({nav = false} = {}) {
   rowItem('button', 'type="button" data-act="ia"', 'chat', on ? t('ChatGPT en la app', 'ChatGPT in the app') : t('Conectar ChatGPT a la app', 'Connect ChatGPT to the app'),
    on ? '<span class="dot-ok"></span>' + esc(t('Conectado', 'Connected') + ' · ' + (cfg.choice === 'smart' ? t('el más listo', 'the smartest') : t('rápido', 'fast')) + (cfg.daily === false ? '' : ' · ' + t('radar diario', 'daily radar'))) : esc(t('Para preguntar, leer capturas y buscar tendencias sin copiar ni pegar', 'To ask, read screenshots and find trends without copy and paste'))) + '</div>' +
   '<div class="set-group"><p class="set-label">' + esc(t('Tus datos', 'Your data')) + '</p>' +
+  rowItem('button', 'type="button" data-act="sync"', 'refresh', t('Sincronizar PC y móvil', 'Sync PC and phone'), (syncOn() ? '<span class="' + (syncStatus().state === 'error' ? 'dot-warn' : 'dot-ok') + '"></span>' : '') + esc(syncLine())) +
   rowItem('button', 'type="button" data-act="backup"', 'down', t('Descargar copia de seguridad', 'Download a backup'), ((days !== null && days > 14) || (days === null && live >= 3) ? '<span class="dot-warn"></span>' : '') + esc(when ? t('Última: ', 'Last: ') + when : t('Aún no has hecho ninguna', 'You have not made one yet')) + ' · ' + esc(live === 1 ? t('1 plato', '1 dish') : live + t(' platos', ' dishes')), '') +
   rowItem('label', 'for="restoreFile"', 'undo', t('Recuperar una copia', 'Restore a backup'), esc(t('Nunca borra nada: solo añade lo que falte', 'Never deletes anything: only adds what is missing')), '', '<input id="restoreFile" class="sr" type="file" accept="application/json,.json">') +
-  '<p class="set-note">' + esc(t('Tus platos se guardan en este aparato. Con la copia los pasas del PC al móvil, o al revés.', 'Your dishes are saved on this device. With a backup you can move them between PC and phone.')) + '</p></div>' +
+  '<p class="set-note">' + esc(syncOn() ? t('Tus platos están en este aparato y en tu libreta sincronizada. La copia de seguridad es un archivo extra por si acaso.', 'Your dishes are on this device and in your synced notebook. The backup is an extra file just in case.') : t('Tus platos se guardan en este aparato. Para tenerlos también en el otro, activa la sincronización.', 'Your dishes are saved on this device. To have them on the other one too, turn on sync.')) + '</p></div>' +
   '<div class="set-group"><p class="set-label">' + esc(t('Pantalla', 'Display')) + '</p>' +
   rowItem('button', 'type="button" data-act="theme" role="switch" aria-checked="' + isDark() + '"', isDark() ? 'moon' : 'sun', t('Modo noche', 'Night mode'), esc(t('Más cómodo con poca luz', 'Easier in low light')), sw(isDark())) +
   '<div class="set-row set-static"><span class="set-ic">' + icon('globe') + '</span><span class="set-text"><strong>' + esc(t('Idioma', 'Language')) + '</strong></span><span class="seg seg-sm">' + [['es', 'Español'], ['en', 'English']].map(([id, label]) => '<button type="button" class="seg-btn' + ((prefs.lang === 'en' ? 'en' : 'es') === id ? ' active' : '') + '" data-lang="' + id + '" lang="' + id + '">' + label + '</button>').join('') + '</span></div></div>'});
  $$('[data-go]', s.el).forEach(a => { a.onclick = () => s.close(); });
  $('[data-act=backup]', s.el).onclick = () => { s.close(); backup(); };
  $('[data-act=ia]', s.el).onclick = () => { s.close(); setTimeout(() => iaSheet(() => route({keepScroll: true})), 250); };
+ $('[data-act=sync]', s.el).onclick = () => { s.close(); setTimeout(() => syncSheet(), 250); };
  $('[data-act=theme]', s.el).onclick = e => { setPref('theme', isDark() ? 'light' : 'dark'); const b = e.currentTarget; b.setAttribute('aria-checked', isDark()); b.querySelector('.switch').classList.toggle('on', isDark()); b.querySelector('.set-ic').innerHTML = icon(isDark() ? 'moon' : 'sun'); };
  $$('[data-lang]', s.el).forEach(b => { b.onclick = () => { if ((prefs.lang === 'en' ? 'en' : 'es') === b.dataset.lang) return; setPref('lang', b.dataset.lang); s.close(); shell(); route(); }; });
  $('#restoreFile', s.el).onchange = async e => {
@@ -164,6 +169,7 @@ async function start() {
  onChange(refresh);
  addEventListener('hashchange', () => route());
  await loadAll();
+ startAutoSync();
  dailyRadar();
 }
 // Con ChatGPT conectado, el radar se pone al día solo una vez al día (al abrir la app), sin molestar.
