@@ -1,11 +1,14 @@
 // Empaqueta la app en un solo archivo HTML que se abre con doble clic (sin servidor ni instalación).
 import {createRequire} from 'node:module';
+import {fileURLToPath} from 'node:url';
 import {readFileSync, writeFileSync, mkdirSync, rmSync, copyFileSync} from 'node:fs';
 const require = createRequire(import.meta.url);
 const esbuild = require(process.env.ESBUILD || 'esbuild');
-const out = new URL('./salida/', import.meta.url).pathname, tmp = new URL('./tmp/', import.meta.url).pathname;
+// fileURLToPath: para que también compile en Windows y en carpetas con espacios.
+const ruta = r => fileURLToPath(new URL(r, import.meta.url));
+const out = ruta('./salida/'), tmp = ruta('./tmp/');
 rmSync(tmp, {recursive: true, force: true}); mkdirSync(tmp, {recursive: true}); mkdirSync(out + 'ID Cocina', {recursive: true});
-await esbuild.build({entryPoints: [new URL('./src/main.js', import.meta.url).pathname], bundle: true, minify: true, format: 'iife', target: ['chrome100', 'safari15', 'firefox100'], outfile: tmp + 'app.js', loader: {'.css': 'css'}, external: ['/fonts/*'], legalComments: 'none'});
+await esbuild.build({entryPoints: [ruta('./src/main.js')], bundle: true, minify: true, format: 'iife', target: ['chrome100', 'safari15', 'firefox100'], outfile: tmp + 'app.js', loader: {'.css': 'css'}, external: ['/fonts/*'], legalComments: 'none'});
 let css = readFileSync(tmp + 'app.css', 'utf8');
 // El sello de Hallmark (los primeros comentarios de lab.css) va delante: el empaquetador quita los comentarios.
 const stamp = (readFileSync(new URL('./src/lab.css', import.meta.url), 'utf8').match(/^(?:\/\*[\s\S]*?\*\/\s*)+/) || [''])[0].split('/* I+D')[0].trim();
