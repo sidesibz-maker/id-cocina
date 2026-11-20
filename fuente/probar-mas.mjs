@@ -60,7 +60,7 @@ const it = await page.evaluate(() => JSON.parse(localStorage.getItem('id-cocina-
 ok(it.src === 'recipe' && it.ref && it.mix?.length === 3, 'el plato no usa la subreceta con su sabor');
 await page.evaluate(() => { window.print = () => { window.__p = document.getElementById('printFicha').innerText; }; });
 await page.click('#fichaSec [data-act=print]'); await page.waitForFunction(() => window.__p);
-ok((await page.evaluate(() => window.__p)).includes('Subreceta · Romesco de la casa'), 'la ficha impresa no lleva la subreceta');
+ok((await page.evaluate(() => window.__p)).includes('Subreceta: Romesco de la casa'), 'la ficha impresa no lleva la subreceta');
 await page.evaluate(() => dispatchEvent(new Event('afterprint')));
 await page.locator('[data-comp="0"] [data-act=to-sub]').click(); await wait(300);
 ok(await page.evaluate(() => JSON.parse(localStorage.getItem('id-cocina-v1')).subs.length) === 2, 'no se guarda un componente como subreceta');

@@ -2,7 +2,7 @@
 import {COURSES} from '../flavor-core.js';
 import {ideaToDish} from '../ai-core.js';
 import {t, en, pick, relDay, seasonOf} from '../i18n.js';
-import {esc, icon, flavorPrint, toast, friendly, safeUrl, hostOf, uid} from '../ui.js';
+import {metaRow, short, esc, icon, flavorPrint, toast, friendly, safeUrl, hostOf, uid} from '../ui.js';
 import {state, imageUrl, createDish} from '../store.js';
 import {go} from '../nav.js';
 
@@ -28,26 +28,26 @@ export function heatMark(heat) {
  const level = (HEAT[heat] || HEAT.alza)[2];
  return '<span class="heat" data-level="' + level + '"><span class="heat-pips" aria-hidden="true"><i></i><i></i><i></i></span>' + esc(heatLabel(heat)) + '</span>';
 }
-export const sourceLine = tr => { const s = trSources(tr); return s.length ? s.slice(0, 3).map(x => esc(x.name)).join(' · ') : ''; };
+export const sourceLine = tr => { const s = trSources(tr); return s.length ? s.slice(0, 3).map(x => esc(x.name)).join(', ') : ''; };
 
 export function trendCard(tr, {lead = false} = {}) {
  const kind = tr.kind in KINDS ? tr.kind : 'plato';
  return '<a class="trend' + (lead ? ' trend-lead' : '') + (tr.saved_at ? ' is-saved' : '') + '" href="#/radar/' + esc(tr.id) + '" data-kind="' + kind + '">' +
-  '<span class="kicker">' + esc(kindLabel(kind)) + (kind === 'idea' ? '' : ' · ' + heatMark(tr.heat)) + '</span>' +
   '<span class="trend-title">' + esc(trText(tr, 'title')) + '</span>' +
-  '<span class="trend-sum">' + esc(trText(tr, 'summary')) + '</span>' +
+  '<span class="trend-sum">' + esc(short(trText(tr, 'summary'), 150)) + '</span>' +
+  metaRow([esc(kindLabel(kind)), kind === 'idea' ? '' : heatMark(tr.heat)], 'kicker') +
   '<span class="trend-foot">' + (sourceLine(tr) ? '<span class="trend-src">' + sourceLine(tr) + '</span>' : '<span class="trend-src">' + esc(t('Idea propia para tu cocina', 'An idea for your kitchen')) + '</span>') +
   (tr.saved_at ? '<span class="saved-mark">' + icon('star') + esc(t('Guardado', 'Saved')) + '</span>' : '') + '</span></a>';
 }
 
 export function dishCard(d) {
  const tests = Array.isArray(d.tests) ? d.tests.length : Number(d.tests) || 0;
- const media = d.cover_path ? '<img class="dish-img" data-img="' + esc(d.cover_path) + '" alt="" loading="lazy">' : flavorPrint(d.flavor?.axes, {size: 64, title: t('Huella de sabor de ', 'Flavour print of ') + d.name});
+ const media = d.cover_path ? '<img class="dish-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" width="1" height="1" data-img="' + esc(d.cover_path) + '" alt="" loading="lazy">' : flavorPrint(d.flavor?.axes, {size: 64, title: t('Huella de sabor de ', 'Flavour print of ') + d.name});
  return '<a class="dish" href="#/plato/' + esc(d.id) + '"><span class="dish-media' + (d.cover_path ? '' : ' dish-print') + '">' + media + '</span>' +
   '<span class="dish-main"><span class="dish-name">' + esc(d.name) + '</span>' +
   '<span class="dish-meta"><span class="status status-' + esc(d.status) + '">' + esc(statusLabel(d.status)) + '</span><span>' + esc(courseLabel(d.course)) + '</span></span>' +
   ((d.tags || []).length ? '<span class="dish-tags">' + d.tags.slice(0, 4).map(x => '#' + esc(x)).join(' ') + '</span>' : '') +
-  '<span class="dish-foot">' + esc(relDay(d.updated_at || d.created_at || new Date())) + (tests ? ' · ' + tests + ' ' + esc(tests === 1 ? t('prueba', 'test') : t('pruebas', 'tests')) : '') + '</span></span></a>';
+  '<span class="dish-foot">' + metaRow([esc(relDay(d.updated_at || d.created_at || new Date())), tests ? tests + ' ' + esc(tests === 1 ? t('prueba', 'test') : t('pruebas', 'tests')) : '']) + '</span></span></a>';
 }
 
 // Pone en cada <img data-img> el enlace temporal de su imagen (la carpeta es privada).

@@ -7,6 +7,9 @@ const out = new URL('./salida/', import.meta.url).pathname, tmp = new URL('./tmp
 rmSync(tmp, {recursive: true, force: true}); mkdirSync(tmp, {recursive: true}); mkdirSync(out + 'ID Cocina', {recursive: true});
 await esbuild.build({entryPoints: [new URL('./src/main.js', import.meta.url).pathname], bundle: true, minify: true, format: 'iife', target: ['chrome100', 'safari15', 'firefox100'], outfile: tmp + 'app.js', loader: {'.css': 'css'}, external: ['/fonts/*'], legalComments: 'none'});
 let css = readFileSync(tmp + 'app.css', 'utf8');
+// El sello de Hallmark (los primeros comentarios de lab.css) va delante: el empaquetador quita los comentarios.
+const stamp = (readFileSync(new URL('./src/lab.css', import.meta.url), 'utf8').match(/^(?:\/\*[\s\S]*?\*\/\s*)+/) || [''])[0].split('/* I+D')[0].trim();
+css = stamp + '\n' + css;
 css = css.replace(/url\(["']?\/fonts\/([^"')]+)["']?\)/g, (_, f) => 'url(data:font/woff2;base64,' + readFileSync(new URL('./fonts/' + f, import.meta.url)).toString('base64') + ')');
 const js = readFileSync(tmp + 'app.js', 'utf8').replace(/<\/script/gi, '<\\/script');
 const icon = readFileSync(new URL('./origen/public/lab-192.png', import.meta.url)).toString('base64');
@@ -15,7 +18,8 @@ const html = `<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>I+D · Cuaderno de cocina</title>
+<title>I+D, cuaderno de cocina</title>
+<meta name="description" content="Cuaderno de I+D de cocina: crea platos, mira qué sabores dominan y sigue las tendencias.">
 <link rel="icon" type="image/png" href="data:image/png;base64,${icon}">
 <style>${css}</style>
 </head>

@@ -15,7 +15,7 @@ export function syncLine() {
  if (st.state === 'syncing') return t('Sincronizando…', 'Syncing…');
  if (st.state === 'error') return errText(st.error);
  const at = st.last ? new Date(st.last) : null;
- return at ? t('Al día · ', 'Up to date · ') + (Date.now() - at < 90000 ? t('hace un momento', 'just now') : relDay(at) + ' ' + at.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})) : t('Activado', 'On');
+ return at ? t('Al día, ', 'Up to date, ') + (Date.now() - at < 90000 ? t('hace un momento', 'just now') : relDay(at) + ' ' + at.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})) : t('Activado', 'On');
 }
 
 export function syncSheet(onDone = null) {

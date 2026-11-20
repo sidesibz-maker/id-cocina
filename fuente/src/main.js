@@ -72,7 +72,7 @@ function route({keepScroll = false} = {}) {
  root.className = 'view view-' + next.name;
  root.innerHTML = view.render(next.params);
  current.cleanup = view.mount?.(root, next.params) || null;
- document.title = (view.title?.(next.params) || 'I+D') + ' · I+D';
+ document.title = (view.title?.(next.params) || 'I+D') + ' — I+D';
  markNav(); badges(); notices();
  scrollTo(0, scroll);
  if (!same) root.focus({preventScroll: true});
@@ -110,10 +110,10 @@ function menu({nav = false} = {}) {
    rowItem('a', 'href="#/cocina" data-go', 'pan', t('Mi cocina', 'My kitchen'), esc(t('Tus básicos, tu equipo y lo que no quieres', 'Your staples, equipment and what you avoid'))) + '</div>' : '') +
   '<div class="set-group"><p class="set-label">ChatGPT</p>' +
   rowItem('button', 'type="button" data-act="ia"', 'chat', on ? t('ChatGPT en la app', 'ChatGPT in the app') : t('Conectar ChatGPT a la app', 'Connect ChatGPT to the app'),
-   on ? '<span class="dot-ok"></span>' + esc(t('Conectado', 'Connected') + ' · ' + (cfg.choice === 'smart' ? t('el más listo', 'the smartest') : t('rápido', 'fast')) + (cfg.daily === false ? '' : ' · ' + t('radar diario', 'daily radar'))) : esc(t('Para preguntar, leer capturas y buscar tendencias sin copiar ni pegar', 'To ask, read screenshots and find trends without copy and paste'))) + '</div>' +
+   on ? esc(t('Conectado, ', 'Connected, ') + (cfg.choice === 'smart' ? t('el más listo', 'the smartest') : t('rápido', 'fast')) + (cfg.daily === false ? '' : t(', con radar diario', ', with daily radar'))) : esc(t('Para preguntar, leer capturas y buscar tendencias sin copiar ni pegar', 'To ask, read screenshots and find trends without copy and paste'))) + '</div>' +
   '<div class="set-group"><p class="set-label">' + esc(t('Tus datos', 'Your data')) + '</p>' +
-  rowItem('button', 'type="button" data-act="sync"', 'refresh', t('Sincronizar PC y móvil', 'Sync PC and phone'), (syncOn() ? '<span class="' + (syncStatus().state === 'error' ? 'dot-warn' : 'dot-ok') + '"></span>' : '') + esc(syncLine())) +
-  rowItem('button', 'type="button" data-act="backup"', 'down', t('Descargar copia de seguridad', 'Download a backup'), ((days !== null && days > 14) || (days === null && live >= 3) ? '<span class="dot-warn"></span>' : '') + esc(when ? t('Última: ', 'Last: ') + when : t('Aún no has hecho ninguna', 'You have not made one yet')) + ' · ' + esc(live === 1 ? t('1 plato', '1 dish') : live + t(' platos', ' dishes')), '') +
+  rowItem('button', 'type="button" data-act="sync"', 'refresh', t('Sincronizar PC y móvil', 'Sync PC and phone'), esc(syncLine())) +
+  rowItem('button', 'type="button" data-act="backup"', 'down', t('Descargar copia de seguridad', 'Download a backup'), esc(when ? t('Última: ', 'Last: ') + when : t('Aún no has hecho ninguna', 'You have not made one yet')) + ', ' + esc(live === 1 ? t('1 plato', '1 dish') : live + t(' platos', ' dishes')), '') +
   rowItem('label', 'for="restoreFile"', 'undo', t('Recuperar una copia', 'Restore a backup'), esc(t('Nunca borra nada: solo añade lo que falte', 'Never deletes anything: only adds what is missing')), '', '<input id="restoreFile" class="sr" type="file" accept="application/json,.json">') +
   '<p class="set-note">' + esc(syncOn() ? t('Tus platos están en este aparato y en tu libreta sincronizada. La copia de seguridad es un archivo extra por si acaso.', 'Your dishes are on this device and in your synced notebook. The backup is an extra file just in case.') : t('Tus platos se guardan en este aparato. Para tenerlos también en el otro, activa la sincronización.', 'Your dishes are saved on this device. To have them on the other one too, turn on sync.')) + '</p></div>' +
   '<div class="set-group"><p class="set-label">' + esc(t('Pantalla', 'Display')) + '</p>' +

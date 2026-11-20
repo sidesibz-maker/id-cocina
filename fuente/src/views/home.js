@@ -1,7 +1,7 @@
-// I+D · Hoy: la portada. El aviso del día, el resto del radar, la idea del día, los platos en marcha y lo que está de temporada.
+// I+D, Hoy: la portada. El aviso del día, el resto del radar, la idea del día, los platos en marcha y lo que está de temporada.
 import {inSeason} from '../flavor-core.js';
 import {t, en, longDate, greeting, dayKey, relDay, monthName} from '../i18n.js';
-import {esc, icon, $} from '../ui.js';
+import {esc, icon, $, metaRow} from '../ui.js';
 import {state, liveTrends, liveDishes, userName} from '../store.js';
 import {trendCard, dishCard, hydrateImages, trText, trIdeas, kindLabel, heatMark, sourceLine, sectionHead, moreLink, emptyState, skeleton, adoptIdea} from './shared.js';
 
@@ -15,11 +15,11 @@ function latestDay(trends) {
 function lead(tr, day) {
  const ideas = trIdeas(tr);
  return '<a class="cover" href="#/radar/' + esc(tr.id) + '">' +
-  '<span class="kicker">' + esc(t('Radar', 'Radar')) + ' · ' + esc(relDay(day)) + ' · ' + esc(kindLabel(tr.kind)) + (tr.kind === 'idea' ? '' : ' · ' + heatMark(tr.heat)) + '</span>' +
   '<span class="cover-title">' + esc(trText(tr, 'title')) + '</span>' +
+  metaRow([esc(t('Radar de ', 'Radar, ') + relDay(day).toLowerCase()), esc(kindLabel(tr.kind)), tr.kind === 'idea' ? '' : heatMark(tr.heat)], 'cover-meta') +
   '<span class="cover-sum">' + esc(trText(tr, 'summary')) + '</span>' +
   (ideas.length ? '<span class="cover-idea"><em>' + esc(t('En tu cocina', 'In your kitchen')) + '</em>' + esc(ideas[0].name) + '</span>' : '') +
-  '<span class="cover-foot"><span>' + (sourceLine(tr) || esc(t('Idea propia', 'Our own idea'))) + '</span><span class="cover-go">' + esc(t('Ver cómo llevarlo a tu cocina', 'See how to bring it to your kitchen')) + icon('arrow') + '</span></span></a>';
+  '<span class="cover-foot"><span>' + (sourceLine(tr) || esc(t('Idea propia', 'Our own idea'))) + '</span><span class="cover-go">' + esc(t('Ver cómo llevarlo a tu cocina', 'See how to bring it to your kitchen')) + '</span></span></a>';
 }
 function seasonal() {
  const kb = state.kb;
@@ -46,8 +46,8 @@ export function render() {
  if (todays.length) counts.push(day === dayKey() ? (todays.length === 1 ? t('1 aviso nuevo en el radar', '1 new alert on the radar') : todays.length + t(' avisos nuevos en el radar', ' new alerts on the radar')) : t('el último radar es de ', 'the latest radar is from ') + relDay(day).toLowerCase());
  if (dishes.length) counts.push(dishes.length === 1 ? t('1 plato en marcha', '1 dish in progress') : dishes.length + t(' platos en marcha', ' dishes in progress'));
 
- let html = '<header class="hello"><p class="kicker">' + esc(longDate()) + '</p><h1>' + esc(greeting()) + (name ? ', <span class="hello-name">' + esc(name) + '</span>' : '') + '.</h1>' +
-  '<p class="hello-sub">' + esc(counts.length ? (counts.join(t(' y ', ' and ')) + '.').replace(/^./, c => c.toUpperCase()) : t('Tu cuaderno de I+D: crea, prueba y afina platos propios.', 'Your R&D notebook: create, test and refine dishes of your own.')) + '</p></header>';
+ let html = '<header class="hello"><h1>' + esc(greeting()) + (name ? ', ' + esc(name) : '') + '.</h1>' +
+  '<p class="hello-sub">' + esc(longDate().replace(/^./, c => c.toUpperCase()) + '. ') + esc(counts.length ? (counts.join(t(' y ', ' and ')) + '.').replace(/^./, c => c.toUpperCase()) : t('Tu cuaderno de I+D: crea, prueba y afina platos propios.', 'Your R&D notebook: create, test and refine dishes of your own.')) + '</p></header>';
 
  if (top) html += lead(top, day);
  else html += '<div class="cover cover-empty"><span class="kicker">' + esc(t('Radar', 'Radar')) + '</span><span class="cover-title">' + esc(state.loaded ? t('El radar está vacío', 'The radar is empty') : t('Abriendo el radar…', 'Opening the radar…')) + '</span>' +
@@ -73,7 +73,7 @@ export function render() {
   '<a class="tile tile-big" href="#/crear">' + icon('plus') + '<strong>' + esc(t('Crear un plato', 'Create a dish')) + '</strong><span>' + esc(t('Monta componentes y mira qué sabores dominan', 'Build components and see which flavours lead')) + '</span></a>' +
   '<a class="tile tile-big" href="#/crear/ideas">' + icon('spark') + '<strong>' + esc(t('Dame ideas', 'Give me ideas')) + '</strong><span>' + esc(t('Tres propuestas a partir de lo que buscas', 'Three proposals from what you are after')) + '</span></a>' +
   '<a class="tile tile-big" href="#/sabores">' + icon('wheel') + '<strong>' + esc(t('¿Con qué combina?', 'What does it pair with?')) + '</strong><span>' + esc(t('Combinaciones clásicas, atrevidas y puentes entre dos productos', 'Classic and bold pairings, and bridges between two products')) + '</span></a>' +
-  '<a class="tile tile-big" href="#/cocina">' + icon('pan') + '<strong>' + esc(t('Mi cocina', 'My kitchen')) + '</strong><span>' + esc(k ? k.catalogue + t(' productos en el catálogo · ', ' products in the catalogue · ') + k.known + t(' básicos tuyos', ' staples of yours') : t('Tu equipo, tu estilo y tus reglas', 'Your equipment, style and rules')) + '</span></a></div></section>';
+  '<a class="tile tile-big" href="#/cocina">' + icon('pan') + '<strong>' + esc(t('Mi cocina', 'My kitchen')) + '</strong><span>' + esc(k ? k.catalogue + t(' productos en el catálogo, ', ' products in the catalogue, ') + k.known + t(' básicos tuyos', ' staples of yours') : t('Tu equipo, tu estilo y tus reglas', 'Your equipment, style and rules')) + '</span></a></div></section>';
 
  html += seasonal();
  return html;

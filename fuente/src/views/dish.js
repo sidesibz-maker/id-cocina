@@ -172,8 +172,8 @@ function imagesHtml() {
  let html = '<h2>' + esc(t('Imagen del plato', 'Dish image')) + '</h2>';
  if (imgs.length) {
   const cover = imgs.find(i => i.path === cur.cover_path) || imgs[imgs.length - 1];
-  html += '<figure class="shot"><img data-shot="' + esc(cover.path) + '" alt="' + esc(t('Imagen del plato', 'Image of the dish')) + '"></figure>';
-  if (imgs.length > 1) html += '<div class="thumbs">' + imgs.map(i => '<button type="button" class="thumb' + (i.path === cover.path ? ' active' : '') + '" data-thumb="' + esc(i.id || i.path) + '" aria-label="' + esc(t('Ver esta imagen', 'View this image')) + '"><img data-shot="' + esc(i.path) + '" alt=""></button>').join('') + '</div>';
+  html += '<figure class="shot"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" width="1" height="1" data-shot="' + esc(cover.path) + '" alt="' + esc(t('Imagen del plato', 'Image of the dish')) + '"></figure>';
+  if (imgs.length > 1) html += '<div class="thumbs">' + imgs.map(i => '<button type="button" class="thumb' + (i.path === cover.path ? ' active' : '') + '" data-thumb="' + esc(i.id || i.path) + '" aria-label="' + esc(t('Ver esta imagen', 'View this image')) + '"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" width="1" height="1" data-shot="' + esc(i.path) + '" alt=""></button>').join('') + '</div>';
   if (can) html += '<div class="row-actions row-left"><a class="btn ghost" data-open-shot href="#" target="_blank" rel="noopener">' + icon('down') + esc(t('Abrir', 'Open')) + '</a><button type="button" class="btn ghost" data-act="del-image" data-path="' + esc(cover.path) + '">' + icon('x') + esc(t('Quitar esta', 'Remove this one')) + '</button></div>';
  } else html += '<p class="hint">' + esc(t('Para ver el plato antes de cocinarlo: copia la descripción, pégala en ChatGPT (crea la imagen) y añade aquí la imagen que te dé. También puedes poner una foto tuya.', 'To see the dish before cooking it: copy the description, paste it into ChatGPT (it creates the image) and add the image it gives you here. You can also add a photo of your own.')) + '</p>';
  if (can) {
@@ -214,9 +214,9 @@ async function reviewPlate(file, label) {
 function adviceHtml() {
  const a = cur.advice, can = editable();
  let html = '<h2>' + esc(t('Consejo', 'Advice')) + '</h2>';
- const manual = can ? '<div class="row-actions row-left"><button type="button" class="btn ' + (a ? 'ghost' : 'primary') + '" data-act="advice">' + icon('copy') + esc(t('1 · Copiar la consulta', '1 · Copy the request')) + '</button><a class="btn ghost" href="https://claude.ai/new" data-chat target="_blank" rel="noopener noreferrer">' + esc(t('Preguntar a Claude', 'Ask Claude')) + icon('out') + '</a><a class="btn ghost" href="https://chatgpt.com/" data-chat target="_blank" rel="noopener noreferrer">' + esc(t('Preguntar a ChatGPT', 'Ask ChatGPT')) + icon('out') + '</a></div>' +
-  '<label class="mini" for="adviceReply">' + esc(t('2 · Pega aquí la respuesta', '2 · Paste the answer here')) + '</label><textarea id="adviceReply" rows="3" placeholder="' + esc(t('Pega la respuesta entera, tal cual', 'Paste the whole answer as it is')) + '"></textarea>' +
-  '<div class="row-actions row-left"><button type="button" class="btn ghost" data-paste="adviceReply" data-then="[data-act=save-advice]">' + icon('copy') + esc(t('Pegar y leer', 'Paste and read')) + '</button><button type="button" class="btn primary" data-act="save-advice">' + icon('check') + esc(t('3 · Guardar el consejo', '3 · Save the advice')) + '</button></div>' : '';
+ const manual = can ? '<div class="row-actions row-left"><button type="button" class="btn ' + (a ? 'ghost' : 'primary') + '" data-act="advice">' + icon('copy') + esc(t('1. Copiar la consulta', '1. Copy the request')) + '</button><a class="btn ghost" href="https://claude.ai/new" data-chat target="_blank" rel="noopener noreferrer">' + esc(t('Preguntar a Claude', 'Ask Claude')) + icon('out') + '</a><a class="btn ghost" href="https://chatgpt.com/" data-chat target="_blank" rel="noopener noreferrer">' + esc(t('Preguntar a ChatGPT', 'Ask ChatGPT')) + icon('out') + '</a></div>' +
+  '<label class="mini" for="adviceReply">' + esc(t('2. Pega aquí la respuesta', '2. Paste the answer here')) + '</label><textarea id="adviceReply" rows="3" placeholder="' + esc(t('Pega la respuesta entera, tal cual', 'Paste the whole answer as it is')) + '"></textarea>' +
+  '<div class="row-actions row-left"><button type="button" class="btn ghost" data-paste="adviceReply" data-then="[data-act=save-advice]">' + icon('copy') + esc(t('Pegar y leer', 'Paste and read')) + '</button><button type="button" class="btn primary" data-act="save-advice">' + icon('check') + esc(t('3. Guardar el consejo', '3. Save the advice')) + '</button></div>' : '';
  const askAbout = cur.id ? '<a class="btn ghost" href="#/preguntar/' + esc(cur.id) + '">' + icon('chat') + esc(t('Preguntar sobre este plato', 'Ask about this dish')) + '</a>' : '';
  const ask = !can ? '' : iaOn()
   ? '<div class="row-actions row-left"><button type="button" class="btn ' + (a ? 'ghost' : 'primary') + '" data-act="advice-ia">' + icon('spark') + esc(a ? t('Pedir otro consejo a ChatGPT', 'Ask ChatGPT for new advice') : t('Pedir consejo a ChatGPT', 'Ask ChatGPT for advice')) + '</button>' + askAbout + '</div><details class="fold fold-quiet"><summary>' + esc(t('Hacerlo copiando y pegando', 'Do it by copy and paste')) + '</summary>' + manual + '</details>'
@@ -233,7 +233,7 @@ function adviceHtml() {
   const s = a.service || {};
   if (s.mise?.length || s.pass || s.risks?.length) html += '<h3>' + esc(t('Para el servicio', 'For service')) + '</h3>' + (s.mise?.length ? '<p class="mini">' + esc(t('Mise en place', 'Mise en place')) + '</p><ul class="plain">' + s.mise.map(m => '<li>' + esc(m) + '</li>').join('') + '</ul>' : '') + (s.pass ? '<p class="mini">' + esc(t('En el pase', 'At the pass')) + '</p><p>' + esc(s.pass) + '</p>' : '') + (s.risks?.length ? '<p class="mini">' + esc(t('Ojo con', 'Watch out for')) + '</p><ul class="plain">' + s.risks.map(m => '<li>' + esc(m) + '</li>').join('') + '</ul>' : '');
   if (a.plating) html += '<h3>' + esc(t('Emplatado', 'Plating')) + '</h3><p>' + esc(a.plating) + '</p>';
-  if (a.variants?.length) html += '<h3>' + esc(t('Variantes', 'Variants')) + '</h3><div class="variants">' + a.variants.map((v, k) => '<article class="variant">' + (v.label ? '<span class="kicker">' + esc(v.label) + '</span>' : '') + '<p>' + esc(v.idea) + '</p>' + (can ? '<button type="button" class="linkbtn" data-variant="' + k + '">' + esc(t('Abrir como plato nuevo', 'Open as a new dish')) + icon('right') + '</button>' : '') + '</article>').join('') + '</div>';
+  if (a.variants?.length) html += '<h3>' + esc(t('Variantes', 'Variants')) + '</h3><div class="variants">' + a.variants.map((v, k) => '<article class="variant">' + (v.label ? '<span class="kicker">' + esc(v.label) + '</span>' : '') + '<p>' + esc(v.idea) + '</p>' + (can ? '<button type="button" class="linkbtn" data-variant="' + k + '">' + esc(t('Abrir como plato nuevo', 'Open as a new dish')) + '</button>' : '') + '</article>').join('') + '</div>';
   if (a.names?.length) html += '<h3>' + esc(t('Nombres para la carta', 'Names for the menu')) + '</h3><div class="chips">' + a.names.map((n, k) => '<button type="button" class="chip' + (can ? ' chip-add' : '') + '" data-name="' + k + '"' + (can ? '' : ' disabled') + '>' + esc(en() && n.en ? n.en : n.es) + '</button>').join('') + '</div>' + (can ? '<p class="fine">' + esc(t('Toca un nombre para ponérselo al plato.', 'Tap a name to use it for the dish.')) + '</p>' : '');
   if (a.allergens?.length) html += '<h3>' + esc(t('Alérgenos probables', 'Likely allergens')) + '</h3><div class="chips">' + a.allergens.map(id => { const row = ALLERGENS.find(x => x[0] === id); return row ? '<span class="chip chip-static">' + esc(lbl(row)) + '</span>' : ''; }).join('') + '</div><p class="fine">' + esc(t('Es solo una pista: compruébalo siempre con las fichas de cada producto.', 'This is only a hint: always check it against each product\'s data sheet.')) + '</p>';
   if (a.issues?.length) html += '<p class="fine">' + esc(a.issues.join(' ')) + '</p>';
@@ -262,7 +262,7 @@ function testsHtml() {
   '<label for="testNext">' + esc(t('Qué cambio la próxima vez', 'What I will change next time')) + '</label><textarea id="testNext" data-voice rows="2" maxlength="800" placeholder="' + esc(t('Menos sal en la salsa, más brasa…', 'Less salt in the sauce, more char…')) + '"></textarea>' +
   '<button type="submit" class="btn primary">' + icon('plus') + esc(t('Apuntar prueba', 'Log test')) + '</button></form>';
  if (!tests.length) html += '<p class="hint">' + esc(t('Cada vez que lo cocines, apunta cómo salió y qué cambiarías. Así se ve cómo evoluciona el plato.', 'Each time you cook it, log how it went and what you would change. That is how you see the dish evolve.')) + '</p>';
- else html += '<ol class="tests">' + tests.map(x => '<li><div class="test-head"><span class="test-date">' + esc(relDay(x.at || new Date())) + (x.by ? ' · ' + esc(x.by) : '') + '</span>' + (x.rating ? stars(x.rating) : '') + (can ? '<button type="button" class="iconbtn" data-del-test="' + esc(x.id) + '" aria-label="' + esc(t('Quitar esta prueba', 'Remove this test')) + '">' + icon('x') + '</button>' : '') + '</div>' + (x.text ? '<p>' + esc(x.text) + '</p>' : '') + (x.next ? '<p class="test-next"><strong>' + esc(t('Próxima vez: ', 'Next time: ')) + '</strong>' + esc(x.next) + '</p>' : '') + '</li>').join('') + '</ol>';
+ else html += '<ol class="tests">' + tests.map(x => '<li><div class="test-head"><span class="test-date">' + esc(relDay(x.at || new Date())) + (x.by ? ', ' + esc(x.by) : '') + '</span>' + (x.rating ? stars(x.rating) : '') + (can ? '<button type="button" class="iconbtn" data-del-test="' + esc(x.id) + '" aria-label="' + esc(t('Quitar esta prueba', 'Remove this test')) + '">' + icon('x') + '</button>' : '') + '</div>' + (x.text ? '<p>' + esc(x.text) + '</p>' : '') + (x.next ? '<p class="test-next"><strong>' + esc(t('Próxima vez: ', 'Next time: ')) + '</strong>' + esc(x.next) + '</p>' : '') + '</li>').join('') + '</ol>';
  return html;
 }
 
@@ -297,14 +297,14 @@ function fichaSecHtml() {
  return '<h2>' + esc(t('Ficha técnica', 'Recipe sheet')) + '</h2><p class="hint">' + esc(t('Pon la cantidad tocando cada ingrediente y escribe la elaboración en cada componente. Aquí van las raciones y el emplatado; luego imprímela o guárdala en PDF para el equipo.', 'Set quantities by tapping each ingredient and write the method in each component. Portions and plating go here; then print it or save it as PDF for the team.')) + '</p>' +
   '<div class="bench-meta"><label for="dishPortions">' + esc(t('Raciones', 'Portions')) + '</label><input id="dishPortions" value="' + esc(cur.portions || '') + '" maxlength="30" inputmode="text" placeholder="' + esc(t('p. ej. 1, 4, 10 pases', 'e.g. 1, 4, 10 covers')) + '"' + (can ? '' : ' disabled') + ' autocomplete="off"></div>' +
   '<label class="mini" for="dishPlating">' + esc(t('Emplatado', 'Plating')) + '</label><textarea id="dishPlating" data-voice rows="3" maxlength="2000" placeholder="' + esc(t('Plato, qué va debajo, qué encima, cómo se termina en el pase…', 'Plate, what goes underneath, what on top, how it is finished at the pass…')) + '"' + (can ? '' : ' disabled') + '>' + esc(cur.plating || '') + '</textarea>' +
-  (can && from && !cur.plating ? '<button type="button" class="linkbtn" data-act="plating-from-advice">' + esc(t('Usar el emplatado del consejo', 'Use the plating from the advice')) + icon('right') + '</button>' : '') +
+  (can && from && !cur.plating ? '<button type="button" class="linkbtn" data-act="plating-from-advice">' + esc(t('Usar el emplatado del consejo', 'Use the plating from the advice')) + '</button>' : '') +
   '<div class="row-actions row-left"><button type="button" class="btn ghost" data-act="print">' + icon('down') + esc(t('Imprimir ficha o guardar en PDF', 'Print sheet or save as PDF')) + '</button><button type="button" class="btn ghost" data-act="share">' + icon('out') + esc(t('Enviar por WhatsApp', 'Send on WhatsApp')) + '</button><button type="button" class="btn ghost" data-act="team">' + icon('user') + esc(cur.share?.on ? t('Compartida con el equipo', 'Shared with the team') : t('Compartir con el equipo', 'Share with the team')) + '</button></div>';
 }
 const roleName = c => pick([role(c.role).es, role(c.role).en]);
 // Las subrecetas propias del plato, con su receta, al final de la ficha.
 function subsUsedHtml() {
  const ids = [...new Set(cur.components.flatMap(c => c.items.filter(i => i.src === 'recipe' && i.ref).map(i => i.ref)))], subs = ids.map(subById).filter(x => x && !x.deleted_at);
- return subs.map(x => '<section class="ficha-comp"><h2>' + esc(t('Subreceta · ', 'Sub-recipe · ') + x.name) + (x.yield ? '<small>' + esc(t('Rinde ', 'Yields ') + x.yield) + '</small>' : '') + '</h2>' + (x.items.length ? '<table><tbody>' + x.items.map(i => '<tr><td>' + esc(i.n) + '</td><td class="ficha-q">' + esc(i.q || '') + '</td></tr>').join('') + '</tbody></table>' : '') + (x.method ? '<div class="ficha-method">' + esc(x.method).split(/\n+/).map(l => '<p>' + l + '</p>').join('') + '</div>' : '') + '</section>').join('');
+ return subs.map(x => '<section class="ficha-comp"><h2>' + esc(t('Subreceta: ', 'Sub-recipe: ') + x.name) + (x.yield ? '<small>' + esc(t('Rinde ', 'Yields ') + x.yield) + '</small>' : '') + '</h2>' + (x.items.length ? '<table><tbody>' + x.items.map(i => '<tr><td>' + esc(i.n) + '</td><td class="ficha-q">' + esc(i.q || '') + '</td></tr>').join('') + '</tbody></table>' : '') + (x.method ? '<div class="ficha-method">' + esc(x.method).split(/\n+/).map(l => '<p>' + l + '</p>').join('') + '</div>' : '') + '</section>').join('');
 }
 async function fichaPrintHtml() {
  const imgs = (cur.images || []).filter(i => i && i.path), cover = imgs.find(i => i.path === cur.cover_path) || imgs[imgs.length - 1];
@@ -315,18 +315,18 @@ async function fichaPrintHtml() {
  const comps = cur.components.filter(c => c.items.length || c.name || c.method);
  const allergens = (cur.advice?.allergens || []).map(id => ALLERGENS.find(x => x[0] === id)).filter(Boolean).map(lbl);
  const last = [...(cur.tests || [])].filter(Boolean).pop();
- return '<article class="ficha"><header class="ficha-head"><div><p class="ficha-kicker">' + esc(t('Ficha técnica', 'Recipe sheet')) + '</p><h1>' + esc(cur.name || t('Plato sin nombre', 'Untitled dish')) + '</h1>' + (cur.concept ? '<p class="ficha-concept">' + esc(cur.concept) + '</p>' : '') + (meta.length ? '<p class="ficha-meta">' + esc(meta.join(' · ')) + '</p>' : '') + '</div>' +
+ return '<article class="ficha"><header class="ficha-head"><div><p class="ficha-kicker">' + esc(t('Ficha técnica', 'Recipe sheet')) + '</p><h1>' + esc(cur.name || t('Plato sin nombre', 'Untitled dish')) + '</h1>' + (cur.concept ? '<p class="ficha-concept">' + esc(cur.concept) + '</p>' : '') + (meta.length ? '<p class="ficha-meta">' + esc(meta.join(', ')) + '</p>' : '') + '</div>' +
   (url ? '<img src="' + esc(url) + '" alt="">' : !profile.empty ? flavorPrint(profile.axes, {size: 110, labels: true}) : '') + '</header>' +
-  (comps.length ? comps.map(c => '<section class="ficha-comp"><h2>' + esc(roleName(c)) + (c.name ? ' · ' + esc(c.name) : '') + (c.techniques.length ? '<small>' + esc(c.techniques.filter(technique).map(techName).join(', ')) + '</small>' : '') + '</h2>' +
+  (comps.length ? comps.map(c => '<section class="ficha-comp"><h2>' + esc(roleName(c)) + (c.name ? ': ' + esc(c.name) : '') + (c.techniques.length ? '<small>' + esc(c.techniques.filter(technique).map(techName).join(', ')) + '</small>' : '') + '</h2>' +
    (c.items.length ? '<table><tbody>' + c.items.map(i => '<tr><td>' + esc(i.n) + '</td><td class="ficha-q">' + esc(i.q || '') + '</td></tr>').join('') + '</tbody></table>' : '') +
    (c.method ? '<div class="ficha-method">' + esc(c.method).split(/\n+/).map(l => '<p>' + l + '</p>').join('') + '</div>' : '') + '</section>').join('') : '') +
   subsUsedHtml() +
   (cur.plating ? '<section class="ficha-comp"><h2>' + esc(t('Emplatado', 'Plating')) + '</h2><div class="ficha-method">' + esc(cur.plating).split(/\n+/).map(l => '<p>' + l + '</p>').join('') + '</div></section>' : '') +
   (advice ? '<p class="ficha-line"><strong>' + esc(t('Sabor: ', 'Flavour: ')) + '</strong>' + esc(verdictText(advice.verdict, profile)) + '</p>' : '') +
   (allergens.length ? '<p class="ficha-line"><strong>' + esc(t('Alérgenos probables: ', 'Likely allergens: ')) + '</strong>' + esc(allergens.join(', ')) + ' <small>' + esc(t('(compruébalos con las fichas de producto)', '(check them against product sheets)')) + '</small></p>' : '') +
-  (last ? '<p class="ficha-line"><strong>' + esc(t('Última prueba', 'Last test')) + ' (' + esc(shortDate(last.at || new Date())) + '): </strong>' + esc([last.text, last.next ? t('Próxima vez: ', 'Next time: ') + last.next : ''].filter(Boolean).join(' · ')) + '</p>' : '') +
+  (last ? '<p class="ficha-line"><strong>' + esc(t('Última prueba', 'Last test')) + ' (' + esc(shortDate(last.at || new Date())) + '): </strong>' + esc([last.text, last.next ? t('Próxima vez: ', 'Next time: ') + last.next : ''].filter(Boolean).join(', ')) + '</p>' : '') +
   (cur.notes ? '<p class="ficha-line"><strong>' + esc(t('Notas: ', 'Notes: ')) + '</strong>' + esc(cur.notes) + '</p>' : '') +
-  '<footer class="ficha-foot">I+D · ' + esc(shortDate(new Date())) + '</footer></article>';
+  '<footer class="ficha-foot">I+D, ' + esc(shortDate(new Date())) + '</footer></article>';
 }
 // La ficha en texto, para mandarla por WhatsApp al equipo.
 function fichaText() {
@@ -334,7 +334,7 @@ function fichaText() {
  if (cur.concept) lines.push('_' + cur.concept + '_');
  if (cur.portions) lines.push(t('Raciones: ', 'Portions: ') + cur.portions);
  for (const c of cur.components.filter(c => c.items.length || c.method)) {
-  lines.push('', '*' + roleName(c) + (c.name ? ' · ' + c.name : '') + '*' + (c.techniques.length ? ' (' + c.techniques.filter(technique).map(techName).join(', ') + ')' : ''));
+  lines.push('', '*' + roleName(c) + (c.name ? ': ' + c.name : '') + '*' + (c.techniques.length ? ' (' + c.techniques.filter(technique).map(techName).join(', ') + ')' : ''));
   for (const i of c.items) lines.push('• ' + i.n + (i.q ? ' — ' + i.q : ''));
   if (c.method) lines.push(c.method.trim());
  }
@@ -406,7 +406,8 @@ function headHtml() {
 export function render(params) {
  open(params);
  if (!ready) return '<a class="back" href="#/libreta">' + icon('left') + esc(t('Libreta', 'Notebook')) + '</a>' + skeleton(4);
- return '<a class="back" href="#/libreta">' + icon('left') + esc(t('Libreta', 'Notebook')) + '</a><div class="bench">' +
+ return '<a class="back" href="#/libreta">' + icon('left') + esc(t('Libreta', 'Notebook')) + '</a>' +
+  '<nav class="jump" aria-label="' + esc(t('Partes del plato', 'Parts of the dish')) + '">' + [['compSec', t('Composición', 'Composition')], ['analysis', t('Sabores', 'Flavours')], ['fichaSec', t('Ficha', 'Sheet')], ['imgSec', t('Imagen', 'Image')], ['adviceSec', t('Consejo', 'Advice')], ['pairSec', t('Maridaje', 'Pairing')], ['testsSec', t('Catas', 'Tastings')], ['notesSec', t('Notas', 'Notes')]].map(([id, label]) => '<button type="button" data-jump="' + id + '">' + esc(label) + '</button>').join('') + '</nav><div class="bench">' +
   '<header class="bench-head card" id="benchHead">' + headHtml() + '</header>' +
   '<section class="card" id="compSec"><h2>' + esc(t('Composición', 'Composition')) + '</h2><div id="comps">' + compsHtml() + '</div></section>' +
   '<aside class="card analysis" id="analysis" aria-live="polite">' + analysisHtml() + '</aside>' +
@@ -520,7 +521,7 @@ function moreSheet() {
   if (act === 'print') printFicha();
   if (act === 'share') shareFicha();
   if (act === 'versions') versionsSheet();
-  if (act === 'dup') duplicate(cur.name + t(' · variante', ' · variant'), cur.concept);
+  if (act === 'dup') duplicate(cur.name + t(' (variante)', ' (variant)'), cur.concept);
   if (act === 'trash') {
    if (!await ask({title: t('¿Enviar a la papelera?', 'Move to the bin?'), text: t('No se borra: lo encontrarás en la papelera de la libreta y podrás recuperarlo.', 'It is not deleted: you will find it in the notebook bin and can restore it.'), yes: t('Enviar a la papelera', 'Move to the bin'), danger: true})) return;
    try { await flush(); await trashDish(cur.id); toast(t('En la papelera.', 'Moved to the bin.')); go('libreta'); } catch (err) { toast(friendly(err), 'error'); }
@@ -538,14 +539,14 @@ function diffText(old, now) {
  if ((old.concept || '') !== (now.concept || '') && !out.length) out.push(t('otra idea del plato', 'a different idea'));
  if (!out.length && JSON.stringify(old.components) !== JSON.stringify(now.components)) out.push(t('cambios en cantidades, técnicas o elaboración', 'changes in quantities, techniques or method'));
  if (!out.length) out.push(t('cambios en notas, estado o emplatado', 'changes in notes, status or plating'));
- return out.join(' · ');
+ return out.join('; ');
 }
 async function versionsSheet() {
  await flush();
  const list = await dishVersions(cur.id), dish = cur;
  const s = sheet({title: t('Versiones anteriores', 'Earlier versions'), wide: true, body: list.length
   ? '<p class="lead">' + esc(t('Cómo estaba el plato antes de cada tanda de cambios. Al recuperar una, las pruebas de cata y las fotos se quedan como están, y lo de ahora también se guarda como versión.', 'How the dish was before each round of changes. Restoring keeps tasting tests and photos as they are, and the current state is saved as a version too.')) + '</p><ol class="versions">' +
-    list.map((v, k) => '<li><div><strong>' + esc(relDay(v.at) + ' · ' + new Date(v.at).toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})) + '</strong><small>' + esc(diffText(v.data, dish)) + '</small></div><button type="button" class="btn ghost" data-v="' + k + '">' + icon('undo') + esc(t('Recuperar', 'Restore')) + '</button></li>').join('') + '</ol>'
+    list.map((v, k) => '<li><div><strong>' + esc(relDay(v.at) + ', ' + new Date(v.at).toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})) + '</strong><small>' + esc(diffText(v.data, dish)) + '</small></div><button type="button" class="btn ghost" data-v="' + k + '">' + icon('undo') + esc(t('Recuperar', 'Restore')) + '</button></li>').join('') + '</ol>'
   : '<p class="hint">' + esc(t('Aún no hay versiones anteriores. Se guardan solas mientras trabajas el plato (una cada 15 minutos como mucho).', 'No earlier versions yet. They are saved automatically while you work on the dish (at most one every 15 minutes).')) + '</p>'});
  s.el.addEventListener('click', async e => {
   const b = e.target.closest('[data-v]');
@@ -609,6 +610,7 @@ export function mount(el) {
   const b = e.target.closest('button,a');
   if (!b || !root.contains(b)) return;
   const ci = b.closest('[data-comp]') ? Number(b.closest('[data-comp]').dataset.comp) : -1, act = b.dataset.act;
+  if (b.dataset.jump) { document.getElementById(b.dataset.jump)?.scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start'}); return; }
   if (b.dataset.item) { const [a, i] = b.dataset.item.split(':').map(Number); itemSheet(a, i); return; }
   if (b.dataset.addComp) { cur.components.push({id: sid(), role: b.dataset.addComp, name: '', techniques: [], items: []}); touch('components'); redrawComps(); pickIngredient(cur.components.length - 1); return; }
   if (b.dataset.add) { addAs(b.dataset.add, b.dataset.fix || null); return; }
@@ -620,7 +622,7 @@ export function mount(el) {
   }
   if (b.dataset.untag) { cur.tags = (cur.tags || []).filter(x => x !== b.dataset.untag); touch('tags'); part('tagsRow', tagsHtml()); return; }
   if (b.dataset.name !== undefined) { const n = cur.advice?.names?.[Number(b.dataset.name)]; if (n) { cur.name = en() && n.en ? n.en : n.es; $('#dishName', root).value = cur.name; fitName(); touch('name'); toast(t('Nombre cambiado.', 'Name changed.')); } return; }
-  if (b.dataset.variant !== undefined) { const v = cur.advice?.variants?.[Number(b.dataset.variant)]; if (v) duplicate(cur.name + (v.label ? ' · ' + v.label : t(' · variante', ' · variant')), v.idea); return; }
+  if (b.dataset.variant !== undefined) { const v = cur.advice?.variants?.[Number(b.dataset.variant)]; if (v) duplicate(cur.name + (v.label ? ' (' + v.label.toLowerCase() + ')' : t(' (variante)', ' (variant)')), v.idea); return; }
   if (act === 'add-item') pickIngredient(ci);
   else if (act === 'techs') techSheet(ci);
   else if (act === 'del-comp') {
@@ -631,7 +633,7 @@ export function mount(el) {
   else if (act === 'to-sub') {
    const c = cur.components[ci];
    if (!c) return;
-   const made = await createSub({name: c.name || (cur.name ? cur.name + ' · ' : '') + pick([role(c.role).es, role(c.role).en]), items: c.items.filter(i => i.src !== 'recipe').map(i => ({n: i.n, k: i.k || null, q: i.q || '', w: i.w})), method: c.method || ''});
+   const made = await createSub({name: c.name || pick([role(c.role).es, role(c.role).en]) + (cur.name ? t(' de ', ' for ') + cur.name : ''), items: c.items.filter(i => i.src !== 'recipe').map(i => ({n: i.n, k: i.k || null, q: i.q || '', w: i.w})), method: c.method || ''});
    toast(t('Subreceta guardada en Mi cocina: ', 'Sub-recipe saved in My kitchen: ') + made.name);
   }
   else if (act === 'more') moreSheet();

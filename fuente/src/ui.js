@@ -58,6 +58,10 @@ const PATHS = {
 export const icon = (name, cls = '') => '<svg class="ic ' + cls + '" viewBox="0 0 24 24" aria-hidden="true" focusable="false">' + (PATHS[name] || '') + '</svg>';
 
 // ---------- Avisos breves ----------
+// Un resumen recortado por palabras, con puntos suspensivos (en el texto, no con CSS: así nada queda tapado).
+export const short = (text, max) => { const v = String(text || '').trim(); if (v.length <= max) return v; const cut = v.slice(0, max); return cut.slice(0, Math.max(cut.lastIndexOf(' '), max - 20)).replace(/[,.;:]$/, '') + '…'; };
+// Metadatos en fila: cada parte en su hueco, sin puntos entre medias.
+export const metaRow = (parts, cls = '') => { const list = parts.filter(Boolean); return list.length ? '<span class="meta-row' + (cls ? ' ' + cls : '') + '">' + list.map(p => '<span>' + p + '</span>').join('') + '</span>' : ''; };
 export function toast(message, kind = 'info', ms = 3600) {
  const host = $('#toasts');
  if (!host) return;

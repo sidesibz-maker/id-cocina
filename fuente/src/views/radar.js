@@ -3,7 +3,7 @@
 // con internet y guarda lo que contesten. Aquí se leen, se guardan o se descartan, y cada idea se puede llevar a la libreta.
 import {role, technique} from '../flavor-core.js';
 import {t, en, longDate, relDay, dayKey, shortDate} from '../i18n.js';
-import {esc, icon, $, toast, friendly} from '../ui.js';
+import {esc, icon, $, toast, friendly, metaRow, short} from '../ui.js';
 import {state, liveTrends, markTrend, markRadarSeen, addTrends} from '../store.js';
 import {radarPrompt, trendsFromReply, copy} from '../ai.js';
 import {sheet} from '../ui.js';
@@ -43,10 +43,10 @@ const matches = (tr, q) => !q || norm([trText(tr, 'title'), trText(tr, 'summary'
 function row(tr, {kind = true} = {}) {
  const src = trSources(tr)[0]?.name || (tr.kind === 'idea' ? t('Idea para tu cocina', 'An idea for your kitchen') : '');
  return '<li><a class="trow' + (tr.saved_at ? ' is-saved' : '') + '" href="#/radar/' + esc(tr.id) + '" data-kind="' + esc(tr.kind) + '">' +
-  '<span class="trow-top">' + (kind ? '<span class="trow-kind">' + esc(kindLabel(tr.kind)) + '</span>' : '') + (tr.kind === 'idea' ? '' : heatMark(tr.heat)) + (isNew(tr) ? '<span class="new">' + esc(t('Nuevo', 'New')) + '</span>' : '') + (followed(tr) ? '<span class="follow">' + icon('check') + esc(followed(tr)) + '</span>' : '') + (tr.saved_at ? '<span class="saved-mark">' + icon('star') + '</span>' : '') + '</span>' +
-  '<span class="trow-title">' + esc(trText(tr, 'title')) + '</span>' +
-  '<span class="trow-sum">' + esc(trText(tr, 'summary')) + '</span>' +
-  '<span class="trow-meta">' + esc([relDay(tr.day), src].filter(Boolean).join(' · ')) + '</span>' + icon('right') + '</a></li>';
+  '<span class="trow-title">' + esc(trText(tr, 'title')) + (isNew(tr) ? ' <span class="new">' + esc(t('Nuevo', 'New')) + '</span>' : '') + '</span>' +
+  '<span class="trow-sum">' + esc(short(trText(tr, 'summary'), 130)) + '</span>' +
+  '<span class="trow-top">' + metaRow([kind ? esc(kindLabel(tr.kind)) : '', tr.kind === 'idea' ? '' : heatMark(tr.heat), followed(tr) ? '<span class="follow">' + icon('check') + esc(followed(tr)) + '</span>' : '', tr.saved_at ? '<span class="saved-mark">' + icon('star') + esc(t('Guardado', 'Saved')) + '</span>' : '']) + '</span>' +
+  '<span class="trow-meta">' + metaRow([esc(relDay(tr.day)), esc(src)]) + '</span>' + icon('right') + '</a></li>';
 }
 const rows = (list, opts) => '<ul class="trows">' + list.map(x => row(x, opts)).join('') + '</ul>';
 
@@ -69,7 +69,7 @@ function interestsSheet(done) {
 }
 function toolbar(live) {
  const saved = live.filter(x => x.saved_at).length, view = GROUPS().some(g => g[0] === filter) ? 'tema' : filter;
- const tabs = [['tema', t('Por tema', 'By topic')], ['fecha', t('Por fecha', 'By date')], ['guardados', t('Guardados', 'Saved') + (saved ? ' · ' + saved : '')]];
+ const tabs = [['tema', t('Por tema', 'By topic')], ['fecha', t('Por fecha', 'By date')], ['guardados', t('Guardados', 'Saved') + (saved ? ' (' + saved + ')' : '')]];
  return '<div class="radar-bar"><div class="seg" role="tablist" aria-label="' + esc(t('Cómo ver el radar', 'How to view the radar')) + '">' + tabs.map(([id, label]) => '<button type="button" role="tab" class="seg-btn' + (view === id ? ' active' : '') + '" data-filter="' + id + '" aria-selected="' + (view === id) + '">' + (id === 'guardados' ? icon('star') : '') + esc(label) + '</button>').join('') + '</div>' +
   '<button type="button" class="btn ghost radar-follow" data-act="interests">' + icon('star') + esc(interests().length ? t('Te interesa: ', 'You follow: ') + interests().slice(0, 3).join(', ') + (interests().length > 3 ? '…' : '') : t('Elegir lo que te interesa', 'Choose what you follow')) + '</button>' +
   '<label class="sr" for="radarQ">' + esc(t('Buscar en el radar', 'Search the radar')) + '</label><div class="searchbox radar-q">' + icon('search') + '<input id="radarQ" type="search" value="' + esc(query) + '" placeholder="' + esc(t('Buscar: alcachofa, brasa, Etxebarri…', 'Search: artichoke, charcoal, Etxebarri…')) + '" autocomplete="off" enterkeyhint="search"></div></div>';
@@ -91,7 +91,7 @@ function body(live) {
  }
  if (filter === 'fecha') {
   const d = x => age(x), parts = [[t('Hoy', 'Today'), x => d(x) < 1], [t('Esta semana', 'This week'), x => d(x) >= 1 && d(x) < 7], [t('Este mes', 'This month'), x => d(x) >= 7 && d(x) < 31], [t('Antes', 'Earlier'), x => d(x) >= 31]];
-  return parts.map(([label, test]) => { const list = live.filter(test); return list.length ? '<section class="sec"><h2 class="day">' + esc(label) + ' · ' + list.length + '</h2>' + rows(list) + '</section>' : ''; }).join('');
+  return parts.map(([label, test]) => { const list = live.filter(test); return list.length ? '<section class="sec"><h2 class="day">' + esc(label) + '<span class="count">' + list.length + '</span></h2>' + rows(list) + '</section>' : ''; }).join('');
  }
  // Por tema: lo que sigues, lo más útil y luego cada tema con sus tres primeros.
  const top = useful(live).slice(0, 3), topIds = new Set(top.map(x => x.id)), mine = live.filter(x => followed(x) && !topIds.has(x.id)).slice(0, 5);
@@ -101,7 +101,7 @@ function body(live) {
   if (!all.length) return '';
   return '<section class="group card"><header class="group-head"><h2>' + icon(ic) + esc(label) + '</h2><span class="group-n">' + (fresh ? '<span class="new">' + fresh + ' ' + esc(fresh === 1 ? t('nuevo', 'new') : t('nuevos', 'new')) + '</span>' : '') + all.length + '</span></header>' +
    (list.length ? rows(list, {kind: kinds.length > 1}) : '<p class="fine">' + esc(t('Lo de este tema está arriba, en lo más útil.', 'This topic\'s alerts are above, in the most useful.')) + '</p>') +
-   (all.length > list.length ? '<button type="button" class="linkbtn group-more" data-filter="' + id + '">' + esc(t('Ver los ', 'See all ') + all.length) + icon('right') + '</button>' : '') + '</section>';
+   (all.length > list.length ? '<button type="button" class="linkbtn group-more" data-filter="' + id + '">' + esc(t('Ver los ', 'See all ') + all.length) + '</button>' : '') + '</section>';
  }).join('') + '</div>';
  return html;
 }
@@ -109,7 +109,7 @@ function list() {
  const all = state.trends, hidden = all.filter(x => x.dismissed_at).length, live = liveTrends();
  if (seenAtOpen === null) seenAtOpen = state.seen || '';
  const fresh = live.filter(isNew).length;
- let html = '<header class="page-head"><h1>' + esc(t('Radar', 'Radar')) + '</h1><p>' + esc(t('Lo que se mueve en las mejores cocinas y revistas, llevado a tu cocina.', 'What is moving in the best kitchens and magazines, brought to your kitchen.')) + (live.length ? ' <span class="radar-sum">' + esc(live.length + t(' avisos', ' alerts') + (fresh ? ' · ' + fresh + ' ' + (fresh === 1 ? t('nuevo', 'new') : t('nuevos', 'new')) : '')) + '</span>' : '') + '</p><div class="row-actions row-left"><button type="button" class="btn primary" data-act="search">' + icon('search') + esc(t('Buscar tendencias de hoy', 'Find today\'s trends')) + '</button>' + (iaOn() ? '<button type="button" class="btn ghost" data-act="search-manual">' + esc(t('Hacerlo copiando y pegando', 'Do it by copy and paste')) + '</button>' : '') + '</div></header>';
+ let html = '<header class="page-head"><h1>' + esc(t('Radar', 'Radar')) + '</h1><p>' + esc(t('Lo que se mueve en las mejores cocinas y revistas, llevado a tu cocina.', 'What is moving in the best kitchens and magazines, brought to your kitchen.')) + (live.length ? ' <span class="radar-sum">' + esc(live.length + t(' avisos', ' alerts') + (fresh ? ', ' + fresh + ' ' + (fresh === 1 ? t('nuevo', 'new') : t('nuevos', 'new')) : '')) + '</span>' : '') + '</p><div class="row-actions row-left"><button type="button" class="btn primary" data-act="search">' + icon('search') + esc(t('Buscar tendencias de hoy', 'Find today\'s trends')) + '</button>' + (iaOn() ? '<button type="button" class="btn ghost" data-act="search-manual">' + esc(t('Hacerlo copiando y pegando', 'Do it by copy and paste')) + '</button>' : '') + '</div></header>';
  if (filter === 'descartados') {
   const gone = all.filter(x => x.dismissed_at);
   return html + '<button type="button" class="back linkback" data-filter="tema">' + icon('left') + esc(t('Volver al radar', 'Back to the radar')) + '</button><h2 class="group-title">' + esc(t('Descartados', 'Dismissed')) + '<small>' + gone.length + '</small></h2>' + (gone.length ? rows(gone) : '');
@@ -128,7 +128,7 @@ function ideaCard(idea, k) {
   const items = (Array.isArray(c?.items) ? c.items : []).map(x => (typeof x === 'string' ? x : x?.name || x?.n)).filter(Boolean);
   const techs = (Array.isArray(c?.techniques) ? c.techniques : []).map(technique).filter(Boolean).map(x => (en() ? x.en : x.es));
   const r = role(c?.role);
-  return '<li><span class="comp-role">' + esc(en() ? r.en : r.es) + '</span><span><strong>' + esc(c?.name || items[0] || '') + '</strong>' + (techs.length ? ' · ' + esc(techs.join(', ')) : '') + (items.length ? '<br><small>' + esc(items.join(', ')) + '</small>' : '') + '</span></li>';
+  return '<li><span class="comp-role">' + esc(en() ? r.en : r.es) + '</span><span><strong>' + esc(c?.name || items[0] || '') + '</strong>' + (techs.length ? ', ' + esc(techs.join(', ')) : '') + (items.length ? '<br><small>' + esc(items.join(', ')) + '</small>' : '') + '</span></li>';
  }).join('');
  return '<article class="idea-card"><h3>' + esc(idea.name) + '</h3>' + (idea.line ? '<p>' + esc(idea.line) + '</p>' : '') + (comps ? '<ul class="comp-list">' + comps + '</ul>' : '') +
   (state.canEdit ? '<button type="button" class="btn primary" data-adopt="' + k + '">' + icon('book') + esc(t('Llevar a la libreta', 'Add to notebook')) + '</button>' : '') + '</article>';
@@ -139,12 +139,12 @@ function detail(id) {
  if (!tr) return '<a class="back" href="#/radar">' + icon('left') + esc(t('Radar', 'Radar')) + '</a>' + (state.loaded || state.loadError ? emptyState('radar', t('Este aviso ya no está', 'This alert is no longer here'), t('Puede que sea de hace tiempo. Mira el radar de hoy.', 'It may be an old one. Have a look at today\'s radar.'), '<a class="btn primary" href="#/radar">' + esc(t('Ir al radar', 'Go to the radar')) + '</a>') : skeleton(3));
  const ideas = trIdeas(tr), sources = trSources(tr), places = trPlaces(tr), why = trText(tr, 'why'), adapt = trText(tr, 'adapt');
  let html = '<a class="back" href="#/radar">' + icon('left') + esc(t('Radar', 'Radar')) + '</a><article class="story">';
- html += '<p class="kicker">' + esc(kindLabel(tr.kind)) + (tr.kind === 'idea' ? '' : ' · ' + heatMark(tr.heat)) + ' · ' + esc(relDay(tr.day)) + '</p><h1>' + esc(trText(tr, 'title')) + '</h1><p class="story-lead">' + esc(trText(tr, 'summary')) + '</p>';
+ html += '<h1>' + esc(trText(tr, 'title')) + '</h1>' + metaRow([esc(kindLabel(tr.kind)), tr.kind === 'idea' ? '' : heatMark(tr.heat), esc(relDay(tr.day))], 'kicker story-meta') + '<p class="story-lead">' + esc(trText(tr, 'summary')) + '</p>';
  if (why) html += '<section class="story-sec"><h2>' + esc(t('Por qué ahora', 'Why now')) + '</h2><p>' + esc(why) + '</p></section>';
  if (places.length) html += '<section class="story-sec"><h2>' + esc(t('Dónde se ve', 'Where it shows up')) + '</h2><div class="chips">' + places.map(p => '<span class="chip chip-static">' + esc(p) + '</span>').join('') + '</div></section>';
  if (adapt) html += '<section class="story-sec adapt"><h2>' + icon('pan') + esc(t('En tu cocina', 'In your kitchen')) + '</h2><p>' + esc(adapt) + '</p></section>';
  if (ideas.length) html += '<section class="story-sec"><h2>' + esc(ideas.length === 1 ? t('Una idea de plato', 'A dish idea') : t('Ideas de plato', 'Dish ideas')) + '</h2><div class="idea-list">' + ideas.map(ideaCard).join('') + '</div></section>';
- if (sources.length) html += '<section class="story-sec"><h2>' + esc(t('Fuentes', 'Sources')) + '</h2><ul class="sources">' + sources.map(s => '<li><a href="' + esc(s.url) + '" target="_blank" rel="noopener noreferrer">' + esc(s.name) + icon('out') + '</a><small>' + esc(hostOf(s.url)) + (/^\d{4}-\d{2}-\d{2}$/.test(s.date) ? ' · ' + esc(shortDate(s.date)) : '') + '</small></li>').join('') + '</ul></section>';
+ if (sources.length) html += '<section class="story-sec"><h2>' + esc(t('Fuentes', 'Sources')) + '</h2><ul class="sources">' + sources.map(s => '<li><a href="' + esc(s.url) + '" target="_blank" rel="noopener noreferrer">' + esc(s.name) + icon('out') + '</a><small>' + esc(hostOf(s.url)) + (/^\d{4}-\d{2}-\d{2}$/.test(s.date) ? ', ' + esc(shortDate(s.date)) : '') + '</small></li>').join('') + '</ul></section>';
  if (state.canEdit) {
   html += '<div class="story-actions"><button type="button" class="btn ' + (tr.saved_at ? 'primary' : 'ghost') + '" data-act="save" aria-pressed="' + !!tr.saved_at + '">' + icon('star') + esc(tr.saved_at ? t('Guardado', 'Saved') : t('Guardar', 'Save')) + '</button>' +
    '<a class="btn ghost" href="#/crear/ideas/' + esc(tr.id) + '">' + icon('spark') + esc(t('Más ideas con esto', 'More ideas from this')) + '</a>' +
@@ -160,9 +160,9 @@ function detail(id) {
 function searchSheet(root) {
  const s = sheet({title: t('Buscar tendencias de hoy', 'Find today\'s trends'), wide: true, body:
   '<p class="lead">' + esc(t('La búsqueda la hace Claude o ChatGPT con internet: copia la petición, pégala allí y pega aquí lo que conteste.', 'Claude or ChatGPT do the search on the internet: copy the request, paste it there and paste the answer here.')) + '</p>' +
-  '<div class="row-actions row-left"><button type="button" class="btn primary" data-act="copy">' + icon('copy') + esc(t('1 · Copiar la búsqueda', '1 · Copy the search')) + '</button><a class="btn ghost" href="https://claude.ai/new" data-chat target="_blank" rel="noopener noreferrer">' + esc(t('Preguntar a Claude', 'Ask Claude')) + icon('out') + '</a><a class="btn ghost" href="https://chatgpt.com/" data-chat target="_blank" rel="noopener noreferrer">' + esc(t('Preguntar a ChatGPT', 'Ask ChatGPT')) + icon('out') + '</a></div>' +
-  '<label class="mini" for="radarReply">' + esc(t('2 · Pega aquí la respuesta', '2 · Paste the answer here')) + '</label><textarea id="radarReply" rows="6" placeholder="' + esc(t('Pega la respuesta entera, tal cual', 'Paste the whole answer as it is')) + '"></textarea>' +
-  '<div class="row-actions"><button type="button" class="btn ghost" data-paste="radarReply" data-then="[data-act=add]">' + icon('copy') + esc(t('Pegar y leer', 'Paste and read')) + '</button><button type="button" class="btn primary" data-act="add">' + icon('plus') + esc(t('3 · Añadir al radar', '3 · Add to the radar')) + '</button></div>'});
+  '<div class="row-actions row-left"><button type="button" class="btn primary" data-act="copy">' + icon('copy') + esc(t('1. Copiar la búsqueda', '1. Copy the search')) + '</button><a class="btn ghost" href="https://claude.ai/new" data-chat target="_blank" rel="noopener noreferrer">' + esc(t('Preguntar a Claude', 'Ask Claude')) + icon('out') + '</a><a class="btn ghost" href="https://chatgpt.com/" data-chat target="_blank" rel="noopener noreferrer">' + esc(t('Preguntar a ChatGPT', 'Ask ChatGPT')) + icon('out') + '</a></div>' +
+  '<label class="mini" for="radarReply">' + esc(t('2. Pega aquí la respuesta', '2. Paste the answer here')) + '</label><textarea id="radarReply" rows="6" placeholder="' + esc(t('Pega la respuesta entera, tal cual', 'Paste the whole answer as it is')) + '"></textarea>' +
+  '<div class="row-actions"><button type="button" class="btn ghost" data-paste="radarReply" data-then="[data-act=add]">' + icon('copy') + esc(t('Pegar y leer', 'Paste and read')) + '</button><button type="button" class="btn primary" data-act="add">' + icon('plus') + esc(t('3. Añadir al radar', '3. Add to the radar')) + '</button></div>'});
  s.el.addEventListener('click', async e => {
   const act = e.target.closest('[data-act]')?.dataset.act;
   if (act === 'copy') { const done = await copy(radarPrompt()); toast(done ? t('Búsqueda copiada. Pégala en Claude o en ChatGPT.', 'Search copied. Paste it into Claude or ChatGPT.') : t('No se pudo copiar. Prueba otra vez.', 'It could not be copied. Please try again.'), done ? 'info' : 'error'); }
