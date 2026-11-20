@@ -634,3 +634,13 @@ input:disabled,select:disabled,textarea:disabled{opacity:.55;cursor:not-allowed;
 @media (max-width:959px){.kwelcome{padding-top:8px}.kwelcome h1{font-size:38px}.kwelcome>p{font-size:16px;margin-bottom:16px}.kstart{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:0 -16px;padding:0 16px 4px}.kstart::-webkit-scrollbar{display:none}.kchip{flex:none;padding:8px 12px}}
 @media (min-width:640px){.kshelves{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (min-width:960px){.kerrors{grid-template-columns:minmax(0,1fr) minmax(0,2fr)}.kerrors dt{margin-top:0}.kentry .page-head h1{font-size:48px}}
+
+.menu-bench .mrow-act { gap: 4px; }
+.menu-bench .mrow-act .iconbtn { min-width: 44px; min-height: 44px; }
+.menu-bench .analysis summary { cursor: pointer; padding: 12px 0; }
+.menu-bench .analysis dd { margin: 4px 0 16px; }
+@media (max-width: 560px) {
+ .menu-bench .mrow { grid-template-columns: 24px 44px minmax(0, 1fr); }
+ .menu-bench .mrow-act { grid-column: 3; flex-wrap: wrap; }
+ .menu-bench .bench-top { flex-wrap: wrap; }
+}
