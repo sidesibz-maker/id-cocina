@@ -1,8 +1,8 @@
 // I+D · Biblioteca: el cerebro de cocina. Se entra por una pregunta («¿Qué quieres saber?»), se busca o se elige un estante,
 // y cada entrada se lee por partes (pestañas), sin soltar toda la información de golpe. Las versiones propias nunca se borran.
 import {t, en, relDay, shortDate} from '../i18n.js';
-import {esc, icon, $, $$, toast, clip} from '../ui.js';
-import {state, saberMine, addSaberVersion, saveSaberEntry, trashSaberEntry, liveSubs} from '../store.js';
+import {esc, icon, $, $$, toast, clip, sheet} from '../ui.js';
+import {state, saberMine, addSaberVersion, saveSaberEntry, trashSaberEntry, liveSubs, liveDishes} from '../store.js';
 import {entries, entryById, search, backlinks, CATS, slug, builtIds} from '../saber/index.js';
 import {iaOn, askIa, iaMessage} from '../ia.js';
 import {copy, parseReply} from '../ai.js';
@@ -93,7 +93,7 @@ function shelfHtml(id) {
 // ---------- Una entrada, por partes ----------
 function inDishes(e) {
  const names = [e.name, ...(e.aka || [])].map(norm);
- const dishes = state.dishes.filter(d => !d.deleted_at && d.components.some(c => c.items.some(i => names.includes(norm(i.n))) || names.includes(norm(c.name))));
+ const dishes = state.dishes.filter(d => !d.deleted_at && d.components.some(c => c.catalog_id === e.id || c.items.some(i => names.includes(norm(i.n))) || names.includes(norm(c.name))));
  const subs = liveSubs().filter(x => names.some(n => norm(x.name).includes(n)));
  return {dishes, subs};
 }
@@ -137,7 +137,7 @@ function entryHtml(id, tab) {
  const list = panels(e), on = list.some(p => p[0] === tab) ? tab : list[0][0];
  const {dishes, subs} = inDishes(e), rel = [...new Set([...(e.related || []), ...backlinks(e.id).map(x => x.id)])].map(entryById).filter(x => x && x.id !== e.id);
  return '<a class="back" href="#/biblioteca/estante/' + esc(e.cat || 'conceptos') + '">' + icon('left') + esc(shelfName(e.cat || 'conceptos')) + '</a><article class="kentry">' +
-  '<header class="page-head"><h1>' + esc(e.name) + '</h1>' + (e.aka?.length ? '<p class="kaka">' + esc(t('También: ', 'Also: ') + e.aka.join(', ')) + '</p>' : '') + '<button type="button" class="btn ghost" data-act="favorite" aria-pressed="' + saved + '">' + esc(saved ? t('Quitar de favoritas', 'Remove from favourites') : t('Guardar en favoritas', 'Save to favourites')) + '</button></header>' +
+  '<header class="page-head"><h1>' + esc(e.name) + '</h1>' + (e.aka?.length ? '<p class="kaka">' + esc(t('También: ', 'Also: ') + e.aka.join(', ')) + '</p>' : '') + '<button type="button" class="btn ghost" data-act="favorite" aria-pressed="' + saved + '">' + esc(saved ? t('Quitar de favoritas', 'Remove from favourites') : t('Guardar en favoritas', 'Save to favourites')) + '</button>' + (e.base?.items?.length && state.canEdit && !state.setupPending ? '<button type="button" class="btn primary k-use" data-act="use-recipe">' + icon('plus') + esc(t('Usar en un plato', 'Use in a dish')) + '</button>' : '') + '</header>' +
   (e.summary ? '<div class="kbody"><p class="lead">' + linked(e.summary) + '</p></div>' : '') +
   '<div class="ktabs" role="tablist" aria-label="' + esc(t('Partes de la entrada', 'Parts of the entry')) + '">' + list.map(([pid, label]) => '<button type="button" role="tab" id="kt-' + pid + '" aria-controls="kp-' + pid + '" aria-selected="' + (pid === on) + '" class="ktab' + (pid === on ? ' active' : '') + '" data-ktab="' + pid + '">' + esc(label) + '</button>').join('') + '</div>' +
   list.map(([pid, , body]) => '<section class="kpanel" role="tabpanel" id="kp-' + pid + '" aria-labelledby="kt-' + pid + '"' + (pid === on ? '' : ' hidden') + '>' + body + '</section>').join('') +
@@ -230,6 +230,18 @@ export function mount(root, params) {
   }
   if (b.dataset.ktab) { showTab(b.dataset.ktab); return; }
   const act = b.dataset.act, id = params[0];
+  if (act === 'use-recipe' && id) {
+   const dishes = liveDishes();
+   const selection = sheet({title: t('¿En qué plato?', 'Which dish?'), body:
+    '<label class="sr" for="kDish">' + esc(t('Elige el plato', 'Choose the dish')) + '</label><select id="kDish"><option value="nuevo">' + esc(t('En un plato nuevo', 'In a new dish')) + '</option>' +
+    dishes.map(dish => '<option value="' + esc(dish.id) + '">' + esc(dish.name) + '</option>').join('') + '</select><div class="row-actions"><button type="button" class="btn primary" data-use-go>' + esc(t('Abrir mesa de trabajo', 'Open workbench')) + '</button></div>'});
+   $('[data-use-go]', selection.el).onclick = () => {
+    const dish = $('#kDish', selection.el).value;
+    selection.close();
+    go('plato/' + dish + '/biblioteca/' + id);
+   };
+   return;
+  }
   if (act === 'favorite' && id) {
    const saved = favorites(), on = !saved.includes(id);
    try {

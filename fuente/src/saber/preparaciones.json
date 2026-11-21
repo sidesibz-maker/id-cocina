@@ -1,0 +1,77 @@
+[
+  {
+    "id": "cebolla-encurtida",
+    "name": "Cebolla morada encurtida",
+    "name_en": "Pickled red onion",
+    "aka": [
+      "cebolla encurtida",
+      "cebolla roja encurtida",
+      "encurtido de cebolla",
+      "pickled onion"
+    ],
+    "cat": "bases",
+    "group": "Encurtidos y marinadas",
+    "summary": "Cebolla morada laminada en vinagre. Da contraste ácido y crujiente a unas alcachofas a la brasa.",
+    "what": "Es un encurtido rápido de nevera. El corte fino permite que la cebolla tome el aliño y conserve la mordida. Escúrrela bien para que el líquido no se quede en el plato.",
+    "base": {
+      "for": "300 g de cebolla antes de escurrir",
+      "items": [
+        [
+          "Cebolla morada",
+          "300 g"
+        ],
+        [
+          "Vinagre de Jerez",
+          "100 ml"
+        ],
+        [
+          "Agua",
+          "100 ml"
+        ],
+        [
+          "Azúcar",
+          "15 g"
+        ],
+        [
+          "Sal",
+          "4 g"
+        ]
+      ],
+      "steps": [
+        "Laminar la cebolla fina y uniforme.",
+        "Mezclar el vinagre, el agua, el azúcar y la sal hasta disolver.",
+        "Cubrir la cebolla con el líquido y dejar reposar en la nevera. Probar para ajustar el corte y la intensidad en la siguiente tanda.",
+        "Escurrir lo que vayas a usar y añadir al final del emplatado."
+      ]
+    },
+    "role": "fresco",
+    "techniques": [
+      "encurtido"
+    ],
+    "keys": [
+      "Deja algo de mordida para contrastar con la alcachofa tierna.",
+      "Prueba la cebolla junto a un bocado del plato completo antes de ajustar la acidez.",
+      "Para cambiar la acidez en el plato, empieza por variar la cantidad que sirves."
+    ],
+    "errors": [
+      {
+        "p": "El vinagre tapa la alcachofa",
+        "fix": "Escurre bien la cebolla y prueba una cantidad más pequeña con el bocado completo."
+      },
+      {
+        "p": "La cebolla moja la base",
+        "fix": "Escurre la cantidad del pase antes de emplatar."
+      }
+    ],
+    "uses": [
+      "Alcachofas a la brasa",
+      "Pescado azul",
+      "Bocadillos"
+    ],
+    "related": [
+      "salmuera",
+      "vinagreta",
+      "escabeche"
+    ]
+  }
+]

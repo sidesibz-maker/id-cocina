@@ -33,3 +33,5 @@ Reglas:
 - No inventes datos históricos, nombres ni fechas dudosas: si no es seguro, generaliza.
 - Los enlaces en el texto van como [[id]] o [[id|texto visible]] y SOLO a ids de la lista completa.
 - Entre 350 y 650 palabras por entrada en total.
+
+Las elaboraciones de catálogo pueden incluir `name_en`, `role` (un id de `ROLES`) y `techniques` (ids de `TECHNIQUES` en `flavor-core.js`). Si incluyen ingredientes en `base.items`, se pueden llevar al editor como componente independiente. Sus cantidades son de la tanda y se copian al método. Los ingredientes se enlazan al perfil de sabor si el nombre coincide con el catálogo o con uno de sus alias.

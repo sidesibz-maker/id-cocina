@@ -11,11 +11,13 @@ import {iaOn, askIa, iaMessage, imageData} from '../ia.js';
 import {STATUSES, emptyState, skeleton} from './shared.js';
 import {go} from '../nav.js';
 import {rich} from './ask.js';
-import {entryForName} from '../saber/index.js';
+import {entryById, entryForName} from '../saber/index.js';
+import {openDishCatalog} from './dish-catalog.js';
 import {dishRequest} from '../ai-core.js';
 import {startShare, stopShare, shareUrl, refreshShareSoon} from '../share.js';
 
 let cur = null, root = null, ready = false, dirty = new Set(), removedTests = new Set(), removedImages = new Set();
+let pendingCatalog = '';
 let timer = null, firstDirty = 0, saving = false, saveState = 'saved', style = 'mesa';
 const editable = () => state.canEdit && !state.setupPending && !cur?.deleted_at;
 const sid = () => uid().slice(0, 8);
@@ -125,12 +127,13 @@ function itemChip(item, ci, ii) {
   esc(item.n) + (item.q ? '<small class="qty">' + esc(item.q) + '</small>' : '') + (weightName(item.w) ? '<small>' + esc(weightName(item.w)) + '</small>' : '') + (unknown ? '<small>' + esc(t('sin perfil', 'no profile')) + '</small>' : '') + '</button>';
 }
 function compCard(c, ci) {
- const r = role(c.role), can = editable();
- return '<article class="comp" data-comp="' + ci + '"><header class="comp-head">' +
+ const r = role(c.role), can = editable(), source = c.catalog_id && entryById(c.catalog_id);
+ return '<article class="comp" data-comp="' + ci + '" tabindex="-1"><header class="comp-head">' +
   '<label class="sr" for="role' + ci + '">' + esc(t('Papel en el plato', 'Role in the dish')) + '</label><select id="role' + ci + '" class="comp-role" data-field="role"' + (can ? '' : ' disabled') + '>' + ROLES.map(x => '<option value="' + x[0] + '"' + (x[0] === r.id ? ' selected' : '') + '>' + esc(lbl(x)) + '</option>').join('') + '</select>' +
   '<label class="sr" for="cname' + ci + '">' + esc(t('Nombre del componente', 'Component name')) + '</label><input id="cname' + ci + '" class="comp-name" data-field="name" value="' + esc(c.name) + '" maxlength="90" placeholder="' + esc(t('Nombre (p. ej. pulpo a la brasa)', 'Name (e.g. charcoal octopus)')) + '"' + (can ? '' : ' disabled') + ' enterkeyhint="done" autocomplete="off">' +
   (can ? '<button type="button" class="iconbtn" data-act="del-comp" aria-label="' + esc(t('Quitar este componente', 'Remove this component')) + '">' + icon('x') + '</button>' : '') + '</header>' +
-  '<div class="comp-items">' + c.items.map((it, ii) => itemChip(it, ci, ii)).join('') + (can ? '<button type="button" class="ing ing-add" data-act="add-item">' + icon('plus') + esc(t('Ingrediente', 'Ingredient')) + '</button>' : '') + '</div>' +
+  (source ? '<a class="comp-source" href="#/biblioteca/' + esc(source.id) + '/receta">' + icon('library') + esc(t('Receta de la Biblioteca', 'Library recipe')) + '</a>' : '') +
+  '<div class="comp-items">' + c.items.map((it, ii) => itemChip(it, ci, ii)).join('') + (can ? '<button type="button" class="ing ing-add" data-act="add-item">' + icon('plus') + esc(t('Añadir ingrediente', 'Add ingredient')) + '</button>' : '') + '</div>' +
   '<div class="comp-techs">' + c.techniques.filter(technique).map(id => '<span class="tech">' + esc(techName(id)) + '</span>').join('') + (can ? '<button type="button" class="tech tech-add" data-act="techs">' + icon(c.techniques.length ? 'edit' : 'plus') + esc(c.techniques.length ? t('Cambiar', 'Change') : t('Técnica', 'Technique')) + '</button>' : '') + '</div>' +
   (can || c.method ? '<details class="comp-method"' + (c.method ? ' open' : '') + '><summary>' + esc(t('Elaboración', 'Method')) + (c.method ? '' : '<small>' + esc(t('pasos, tiempos y temperaturas', 'steps, times and temperatures')) + '</small>') + '</summary><label class="sr" for="cmethod' + ci + '">' + esc(t('Elaboración de este componente', 'Method for this component')) + '</label><textarea id="cmethod' + ci + '" data-field="method" data-voice rows="3" maxlength="3000" placeholder="' + esc(t('1. Cocer el pulpo 40 min a fuego suave…\n2. Marcar en la brasa al pase, 2 min por lado.', '1. Simmer the octopus for 40 min…\n2. Char on the grill at the pass, 2 min per side.')) + '"' + (can ? '' : ' disabled') + '>' + esc(c.method || '') + '</textarea></details>' : '') + (can && c.items.filter(i => i.src !== 'recipe').length >= 2 ? '<button type="button" class="linkbtn comp-sub" data-act="to-sub">' + icon('book') + esc(t('Guardar como subreceta', 'Save as a sub-recipe')) + '</button>' : '') + '</article>';
 }
@@ -408,9 +411,14 @@ export function render(params) {
  open(params);
  if (!ready) return '<a class="back" href="#/libreta">' + icon('left') + esc(t('Libreta', 'Notebook')) + '</a>' + skeleton(4);
  return '<a class="back" href="#/libreta">' + icon('left') + esc(t('Libreta', 'Notebook')) + '</a>' +
-  '<nav class="jump" aria-label="' + esc(t('Partes del plato', 'Parts of the dish')) + '">' + [['compSec', t('Composición', 'Composition')], ['analysis', t('Sabores', 'Flavours')], ['fichaSec', t('Ficha', 'Sheet')], ['imgSec', t('Imagen', 'Image')], ['adviceSec', t('Consejo', 'Advice')], ['pairSec', t('Maridaje', 'Pairing')], ['testsSec', t('Catas', 'Tastings')], ['notesSec', t('Notas', 'Notes')]].map(([id, label]) => '<button type="button" data-jump="' + id + '">' + esc(label) + '</button>').join('') + '</nav><div class="bench">' +
+  '<nav class="jump dish-jump" aria-label="' + esc(t('Partes del plato', 'Parts of the dish')) + '">' +
+  (editable() ? '<button type="button" class="jump-add" data-act="catalog">' + icon('plus') + esc(t('Añadir al plato', 'Add to dish')) + '</button>' : '') +
+  [['compSec', t('Mesa', 'Workbench')], ['analysis', t('Sabores', 'Flavours')], ['fichaSec', t('Ficha', 'Sheet')], ['imgSec', t('Imagen', 'Image')], ['adviceSec', t('Consejo', 'Advice')], ['pairSec', t('Maridaje', 'Pairing')], ['testsSec', t('Catas', 'Tastings')], ['notesSec', t('Notas', 'Notes')]].map(([id, label]) => '<button type="button" data-jump="' + id + '">' + esc(label) + '</button>').join('') + '</nav><div class="bench dish-bench">' +
   '<header class="bench-head card" id="benchHead">' + headHtml() + '</header>' +
-  '<section class="card" id="compSec"><h2>' + esc(t('Composición', 'Composition')) + '</h2><div id="comps">' + compsHtml() + '</div></section>' +
+  '<section class="card dish-compose" id="compSec"><div class="compose-head"><div><h2>' + esc(t('Mesa de trabajo', 'Workbench')) + '</h2>' +
+  (editable() ? '<p>' + esc(t('Añade ingredientes, elaboraciones y técnicas al plato.', 'Add ingredients, preparations and techniques to the dish.')) + '</p>' : '') + '</div>' +
+  (editable() ? '<button type="button" class="btn primary compose-add" data-act="catalog">' + icon('plus') + esc(t('Añadir al plato', 'Add to dish')) + '</button>' : '') +
+  '</div><div id="comps">' + compsHtml() + '</div></section>' +
   '<aside class="card analysis" id="analysis" aria-live="polite">' + analysisHtml() + '</aside>' +
   '<section class="card" id="fichaSec">' + fichaSecHtml() + '</section>' +
   '<section class="card" id="imgSec">' + imagesHtml() + '</section>' +
@@ -435,6 +443,30 @@ function addItem(ci, item) {
  if (['sal', 'sal-escamas'].includes(item.k)) item.w = 1;
  c.items.push(cleanItem(item)); touch('components'); redrawComps();
  return true;
+}
+function catalogSheet(initialId = '') {
+ if (!ready || !editable()) return;
+ const dish = cur;
+ openDishCatalog(dish.components, ({target, role, component, item, technique, techniqueName}) => {
+  if (cur !== dish || !editable()) return false;
+  let index = target;
+  if (index === null) {
+   index = dish.components.length;
+   dish.components.push(component ? {...component, id: sid()} : {id: sid(), role, name: techniqueName, items: [], techniques: []});
+  }
+  const destination = dish.components[index];
+  if (!destination) return false;
+  if (item && !addItem(index, item)) { toast(t('Este ingrediente ya está en el componente.', 'This ingredient is already in the component.')); return false; }
+  if (technique) {
+   if (destination.techniques.includes(technique)) { toast(t('Esta técnica ya está aplicada.', 'This technique is already applied.')); return false; }
+   if (destination.techniques.length >= 6) { toast(t('Este componente ya tiene seis técnicas.', 'This component already has six techniques.'), 'error'); return false; }
+   destination.techniques.push(technique);
+  }
+  if (!item) { touch('components'); redrawComps(); }
+  toast(t('Añadido al plato.', 'Added to the dish.'));
+  requestAnimationFrame(() => root?.querySelector('[data-comp="' + index + '"]')?.focus());
+  return true;
+ }, initialId);
 }
 function pickIngredient(ci, replaceIndex = null) {
  const c = cur.components[ci];
@@ -576,9 +608,18 @@ function bind() {
  setSave(dirty.size ? 'dirty' : 'saved');
  fitName();
  shots();
+ if (pendingCatalog && editable()) {
+  const id = pendingCatalog;
+  pendingCatalog = '';
+  history.replaceState(null, '', '#/plato/' + (cur.id || 'nuevo'));
+  const dish = cur;
+  requestAnimationFrame(() => { if (root?.isConnected && cur === dish) catalogSheet(id); });
+ }
 }
-export function mount(el) {
- root = el; bind();
+export function mount(el, params) {
+ root = el;
+ pendingCatalog = params[1] === 'biblioteca' ? params[2] : '';
+ bind();
  const onInput = e => {
   if (!ready || !editable()) return;
   const x = e.target;
@@ -624,7 +665,8 @@ export function mount(el) {
   if (b.dataset.untag) { cur.tags = (cur.tags || []).filter(x => x !== b.dataset.untag); touch('tags'); part('tagsRow', tagsHtml()); return; }
   if (b.dataset.name !== undefined) { const n = cur.advice?.names?.[Number(b.dataset.name)]; if (n) { cur.name = en() && n.en ? n.en : n.es; $('#dishName', root).value = cur.name; fitName(); touch('name'); toast(t('Nombre cambiado.', 'Name changed.')); } return; }
   if (b.dataset.variant !== undefined) { const v = cur.advice?.variants?.[Number(b.dataset.variant)]; if (v) duplicate(cur.name + (v.label ? ' (' + v.label.toLowerCase() + ')' : t(' (variante)', ' (variant)')), v.idea); return; }
-  if (act === 'add-item') pickIngredient(ci);
+  if (act === 'catalog') catalogSheet();
+  else if (act === 'add-item') pickIngredient(ci);
   else if (act === 'techs') techSheet(ci);
   else if (act === 'del-comp') {
    const c = cur.components[ci];
