@@ -73,5 +73,531 @@
       "vinagreta",
       "escabeche"
     ]
+  },
+  {
+    "id": "crema-berenjena-brasa",
+    "name": "Crema de berenjena a la brasa",
+    "name_en": "Charcoal aubergine cream",
+    "aka": [
+      "berenjena asada triturada",
+      "puré de berenjena asada",
+      "crema de berenjena ahumada",
+      "aubergine puree"
+    ],
+    "cat": "bases",
+    "group": "Cremas y guarniciones",
+    "role": "cremoso",
+    "techniques": [
+      "brasa",
+      "pure"
+    ],
+    "summary": "Base untuosa de berenjena asada, limón y aceite de oliva para verduras, cordero y pescados a la brasa.",
+    "what": "Esta crema usa la pulpa asada de la berenjena y liga con aceite. El sabor a brasa debe percibirse sin que la piel quemada domine. Se puede dejar rústica para acompañar una carne o triturar fina para trazar una base debajo de una verdura.",
+    "base": {
+      "for": "500 g de pulpa ya asada y escurrida",
+      "items": [
+        [
+          "Berenjena",
+          "500 g"
+        ],
+        [
+          "Aceite de oliva virgen extra",
+          "45 g"
+        ],
+        [
+          "Zumo de limón",
+          "18 g"
+        ],
+        [
+          "Sal",
+          "4 g"
+        ]
+      ],
+      "steps": [
+        "Parte las berenjenas longitudinalmente. Marca la cara cortada sobre la rejilla y termina de asarlas con calor indirecto, girándolas si el calor llega de un solo lado. La pulpa debe ceder al presionarla con la cuchara hasta el centro.",
+        "Saca la pulpa con una cuchara, dejando la piel ennegrecida en la tabla. Escurre el líquido que suelte y pesa 500 g de pulpa. Conserva algo de ese jugo por si necesitas ajustar después la textura.",
+        "Tritura primero la pulpa con la sal y parte del limón. Incorpora el aceite poco a poco y añade el resto del limón al probar. Si quieres un acabado más rústico, reserva parte de la pulpa y únela al final con la espátula.",
+        "Extiende una cucharada en el plato. Si pierde el surco y hace un charco, vuelve a escurrir la pulpa en la siguiente tanda. Si está demasiado espesa para extender, añade a esta un poco del jugo reservado y mezcla."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Base para verdura asada",
+        "ratio": "45 g de aceite por 500 g de pulpa",
+        "note": "Deja un surco limpio sin cubrir del todo la verdura."
+      },
+      {
+        "use": "Guarnición rústica para cordero",
+        "ratio": "Tritura parte de la tanda",
+        "note": "Pica la pulpa restante con cuchillo para que se note al morder."
+      }
+    ],
+    "keys": [
+      "Pesa la pulpa después de escurrir. Dos berenjenas de tamaño parecido pueden soltar cantidades distintas de agua.",
+      "Prueba la crema junto al plato. Si el conjunto ya lleva [[cebolla-encurtida|cebolla encurtida]], ajusta el limón al final para evitar duplicar intensidad.",
+      "Para un acabado fino, quita las fibras duras al sacar la pulpa en lugar de intentar romperlas triturando más."
+    ],
+    "errors": [
+      {
+        "p": "La crema amarga",
+        "fix": "Busca motas de piel quemada. Retíralas antes de triturar y asa la tanda siguiente con menos calor directo al final."
+      },
+      {
+        "p": "La crema suelta agua en el plato",
+        "fix": "Deja escurrir la pulpa antes de emulsionar y usa el jugo solo para corregir una tanda espesa."
+      }
+    ],
+    "uses": [
+      "Base para alcachofas a la brasa",
+      "Guarnición de cordero",
+      "Crema para caballa asada"
+    ],
+    "pro": "En el pase, extiéndela con el dorso de una cuchara y monta encima el producto escurrido. Prueba el primer plato completo para decidir si hace falta limón en la crema o un punto ácido aparte.",
+    "related": [
+      "cebolla-encurtida",
+      "emulsiones"
+    ]
+  },
+  {
+    "id": "migas-limon",
+    "name": "Migas crujientes de limón y perejil",
+    "name_en": "Lemon and parsley breadcrumbs",
+    "aka": [
+      "pan crujiente de limón",
+      "pan rallado tostado",
+      "pangrattato de limon",
+      "crujiente para pescado",
+      "lemon breadcrumbs"
+    ],
+    "cat": "bases",
+    "group": "Crujientes y acabados",
+    "role": "crujiente",
+    "techniques": [
+      "tostado"
+    ],
+    "summary": "Pan tostado con ralladura de limón y perejil para rematar pescados, verduras asadas y cremas.",
+    "what": "Son migas de pan de tamaño irregular, tostadas con un poco de aceite. El limón y el perejil entran fuera del fuego. Esta preparación aporta una textura seca y crujiente a platos con salsa, especialmente si se añade justo antes de salir.",
+    "base": {
+      "for": "una tanda con 120 g de pan",
+      "items": [
+        [
+          "Pan",
+          "120 g"
+        ],
+        [
+          "Aceite de oliva virgen extra",
+          "22 g"
+        ],
+        [
+          "Ralladura de limón",
+          "4 g"
+        ],
+        [
+          "Perejil",
+          "6 g"
+        ],
+        [
+          "Sal",
+          "1 g"
+        ]
+      ],
+      "steps": [
+        "Pica el pan hasta conseguir migas entre 2 y 5 mm. Separa los trozos grandes y repásalos con cuchillo. Si el pan está muy blando, sécalo primero en horno suave hasta que puedas romperlo sin apelmazarlo.",
+        "Mezcla las migas con el aceite y extiéndelas en una bandeja amplia. Tuesta en horno a 160 °C, removiendo cuando empiecen a dorarse en el borde. Retira la bandeja cuando la mayor parte tenga un dorado uniforme y huela a pan tostado.",
+        "Vuelca las migas a una bandeja limpia y deja que pierdan el calor. Ralla la parte amarilla del limón y pica el perejil bien seco. Mezcla ambos con la cantidad que vayas a servir y ajusta la sal al final.",
+        "Prueba una miga sobre la salsa o crema del plato. Si quieres que dure más tiempo crujiente, colócala en una zona seca del producto y deja la salsa al lado."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Acabado ligero sobre pescado",
+        "ratio": "22 g de aceite por 120 g de pan",
+        "note": "Mantén el grano fino para que acompañe al pescado sin cubrirlo."
+      },
+      {
+        "use": "Contraste en un puré",
+        "ratio": "Grano de 4 a 5 mm",
+        "note": "Coloca un pequeño cordón fuera del centro más húmedo."
+      }
+    ],
+    "keys": [
+      "Reparte las migas en una capa fina. Si hay mucha cantidad, usa dos bandejas en lugar de acumular una capa gruesa.",
+      "Añade la ralladura al enfriar para que conserve su aroma. Usa solo la parte coloreada.",
+      "Acaba una tanda pequeña con perejil justo antes del pase. El resto del pan tostado puede esperar separado."
+    ],
+    "errors": [
+      {
+        "p": "Migas blandas",
+        "fix": "Si aún no llevan perejil, dales otro tostado breve y enfríalas extendidas en vez de dejarlas juntas en un cuenco."
+      },
+      {
+        "p": "Migas amargas o muy oscuras",
+        "fix": "Retira el polvo fino antes de tostar y revisa el fondo de la bandeja al remover. Añade la ralladura fuera del fuego."
+      }
+    ],
+    "uses": [
+      "Merluza o lubina a la brasa",
+      "Puré de coliflor",
+      "Alcachofas con jugo"
+    ],
+    "pro": "Pon el pan tostado en un recipiente aparte de la salsa. Mezcla los aromáticos en pequeñas tandas y usa una cuchara seca para conservar la textura durante el servicio.",
+    "related": [
+      "crema-berenjena-brasa",
+      "aceites-aromatizados"
+    ]
+  },
+  {
+    "id": "pimientos-asados-alinados",
+    "name": "Pimientos asados aliñados",
+    "name_en": "Dressed roast peppers",
+    "aka": [
+      "pimientos asados en tiras",
+      "ensalada de pimiento asado",
+      "pimiento asado aliñado",
+      "roast pepper salad"
+    ],
+    "cat": "bases",
+    "group": "Cremas y guarniciones",
+    "role": "guarnicion",
+    "techniques": [
+      "horno"
+    ],
+    "summary": "Tiras de pimiento asado con su jugo, vinagre de Jerez y aceite de oliva para pescados y carnes.",
+    "what": "El aliño usa el jugo del propio asado como parte líquida. La idea es que las tiras sigan firmes y con sabor a pimiento. Sirven como guarnición, como fondo de plato templado o como punto dulce delante de una salsa más ahumada.",
+    "base": {
+      "for": "500 g de pimiento asado limpio",
+      "items": [
+        [
+          "Pimiento rojo",
+          "500 g"
+        ],
+        [
+          "Jugo de asar los pimientos",
+          "50 g"
+        ],
+        [
+          "Aceite de oliva virgen extra",
+          "32 g"
+        ],
+        [
+          "Vinagre de Jerez",
+          "12 g"
+        ],
+        [
+          "Sal",
+          "4 g"
+        ]
+      ],
+      "steps": [
+        "Asa los pimientos enteros en horno a 220 °C sobre una bandeja que recoja el jugo. Gíralos cuando la cara de arriba se ampolle. Retira los que estén tiernos antes de que colapsen del todo y reserva el líquido de la bandeja.",
+        "Déjalos tapados unos minutos para facilitar el pelado. Retira piel, semillas y pedúnculos. Evita lavarlos bajo el grifo. Pasa el jugo reservado por un colador fino y pesa por separado la carne limpia y el jugo.",
+        "Corta el pimiento en tiras que se puedan coger sin que se rompan. Disuelve la sal en el jugo con el vinagre, añade el aceite y mezcla con las tiras sin aplastarlas.",
+        "Prueba una tira junto con el aliño. Si va con un pescado delicado, escurre un poco más antes de servir. Para carne o patata asada, usa una cucharada del jugo aliñado alrededor de la guarnición."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Guarnición escurrida",
+        "ratio": "32 g de aceite y 12 g de vinagre por 500 g de pimiento",
+        "note": "Aliña toda la tanda y escurre solo la porción que sale."
+      },
+      {
+        "use": "Fondo de plato templado",
+        "ratio": "Hasta 50 g del jugo colado por 500 g",
+        "note": "Ajusta con el jugo antes de añadir más aceite."
+      }
+    ],
+    "keys": [
+      "Guarda el líquido del asado antes de pelar. Es lo que une la guarnición y el aliño.",
+      "Si el pimiento ya tiene un tostado intenso, compensa en el plato con un componente fresco, como [[cebolla-encurtida|cebolla encurtida]] en poca cantidad.",
+      "Corta las tiras de tamaño parecido para repartir el aliño y emplatar sin tener que recortar cada porción."
+    ],
+    "errors": [
+      {
+        "p": "El pimiento se deshace al servir",
+        "fix": "Retira los pimientos del horno en cuanto estén tiernos. Pela y corta cuando puedas manipularlos sin romper la carne."
+      },
+      {
+        "p": "El aliño queda aguado",
+        "fix": "Escurre las tiras antes de aliñar y usa la cantidad de jugo medida. Corrige al final con unas gotas de vinagre si la acidez se ha diluido."
+      }
+    ],
+    "uses": [
+      "Bonito o ventresca",
+      "Patata asada",
+      "Pollo a la brasa"
+    ],
+    "pro": "Sirve las tiras con pinzas y añade el jugo aparte con cuchara. Así cada plato recibe la misma cantidad de guarnición y puedes ajustar el aliño según el producto principal.",
+    "related": [
+      "vinagreta",
+      "cebolla-encurtida",
+      "crema-berenjena-brasa"
+    ]
+  },
+  {
+    "id": "vinagreta-piparras",
+    "name": "Vinagreta de piparras",
+    "name_en": "Pickled green pepper vinaigrette",
+    "aka": [
+      "aliño de piparras",
+      "vinagreta de guindillas",
+      "vinagreta para alubias",
+      "piparra vinaigrette"
+    ],
+    "cat": "salsas",
+    "group": "Aliños de pase",
+    "role": "fresco",
+    "techniques": [],
+    "summary": "Aliño de piparra picada y aceite de oliva para legumbres, verduras a la brasa y pescado azul.",
+    "what": "La piparra aporta trozos ácidos y un picante que cambia según el producto. La vinagreta queda suelta: se remueve antes de servir para repartir el aceite y los trozos. Está pensada para dar contraste a una base suave como alubias, patata o un pescado graso.",
+    "base": {
+      "for": "una tanda con 60 g de piparras escurridas",
+      "items": [
+        [
+          "Piparra",
+          "60 g"
+        ],
+        [
+          "Aceite de oliva virgen extra",
+          "75 g"
+        ],
+        [
+          "Vinagre de Jerez",
+          "12 g"
+        ],
+        [
+          "Agua",
+          "12 g"
+        ],
+        [
+          "Perejil",
+          "5 g"
+        ]
+      ],
+      "steps": [
+        "Escurre las piparras, quita el tallo y prueba una pieza para conocer su punto de picante y sal. Pica parte en dados pequeños y otra parte un poco mayor, de modo que se perciban trozos en el bocado.",
+        "Mezcla el agua y el vinagre en un cuenco. Añade la piparra y prueba. Si el encurtido ya es muy intenso, reserva parte del vinagre y termina de ajustar cuando hayas añadido el aceite.",
+        "Incorpora el aceite batiendo con tenedor. Añade el perejil picado al final y deja que la mezcla repose lo justo para preparar el resto del plato. Remueve de nuevo antes de dosificar: el aliño se separa de manera natural.",
+        "Prueba una cucharada con el ingrediente principal. En alubias o patata admite un poco más de aliño; sobre pescado, coloca primero unas gotas en un lado y decide si quieres cubrir el producto."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Con patata o judías blancas",
+        "ratio": "75 g de aceite por 60 g de piparras",
+        "note": "Sirve un poco del líquido con cada cucharada de sólidos."
+      },
+      {
+        "use": "Sobre pescado a la brasa",
+        "ratio": "Misma proporción, menor cantidad en el plato",
+        "note": "Reparte a un lado para mantener visible el tostado de la piel."
+      }
+    ],
+    "keys": [
+      "Prueba la piparra antes de salar el aliño. Las partidas cambian de intensidad y una receta fija de sal puede pasarse.",
+      "Pica a cuchillo: los trozos definen el efecto de esta vinagreta. Si necesitas textura lisa, consulta la [[vinagreta|vinagreta base]].",
+      "En un plato con dos encurtidos, usa uno como aliño y el otro en una cantidad pequeña para conservar contraste."
+    ],
+    "errors": [
+      {
+        "p": "Pica más que el plato principal",
+        "fix": "Empieza sirviendo menos sólidos y mezcla la vinagreta con una parte del aliño base sin piparra."
+      },
+      {
+        "p": "Sale solo aceite en la primera cucharada",
+        "fix": "Remueve con una cuchara que llegue al fondo y toma sólidos y líquido en el mismo gesto."
+      }
+    ],
+    "uses": [
+      "Caballa a la brasa",
+      "Judías blancas templadas",
+      "Patata asada",
+      "Alcachofa"
+    ],
+    "pro": "En el pase, mantén una cuchara junto al recipiente para remover antes de cada porción. Anota en tu versión qué piparra has usado y cuánto vinagre necesitó la tanda.",
+    "related": [
+      "vinagreta",
+      "cebolla-encurtida"
+    ]
+  },
+  {
+    "id": "pure-coliflor-tostada",
+    "name": "Puré de coliflor tostada",
+    "name_en": "Roasted cauliflower purée",
+    "aka": [
+      "crema de coliflor asada",
+      "puré de coliflor al horno",
+      "pure para pescado",
+      "cauliflower puree"
+    ],
+    "cat": "bases",
+    "group": "Cremas y guarniciones",
+    "role": "cremoso",
+    "techniques": [
+      "horno",
+      "pure"
+    ],
+    "summary": "Puré de coliflor asada y caldo vegetal, firme para emplatar bajo pescado, verduras o setas.",
+    "what": "La coliflor se tuesta primero para dar profundidad y se tritura después con caldo. La cantidad de líquido se decide por el acabado que necesite el plato: una cucharada firme para acompañar o una base más fluida si va debajo de la pieza.",
+    "base": {
+      "for": "una tanda con 600 g de coliflor limpia",
+      "items": [
+        [
+          "Coliflor",
+          "600 g"
+        ],
+        [
+          "Aceite de oliva virgen extra",
+          "30 g"
+        ],
+        [
+          "Caldo de verduras",
+          "150 g"
+        ],
+        [
+          "Mantequilla",
+          "25 g"
+        ],
+        [
+          "Sal",
+          "4 g"
+        ]
+      ],
+      "steps": [
+        "Corta la coliflor en ramilletes de tamaño parecido. Usa también la parte tierna del tallo pelado y córtala más fina para que se ase al mismo ritmo. Mezcla con aceite y reparte en una capa sobre la bandeja.",
+        "Asa a 200 °C hasta que la coliflor tenga zonas doradas y se pueda aplastar. Gira los ramilletes cuando la primera cara se tueste. Si algunos quedan oscuros mientras otros siguen duros, retira los hechos y termina los más grandes.",
+        "Calienta el caldo. Tritura la coliflor con una parte del caldo y añade más a cucharadas hasta que las cuchillas trabajen sin dejar trozos. Incorpora la mantequilla y ajusta la sal al final, teniendo en cuenta el caldo.",
+        "Comprueba la textura en un plato: para guarnición debe aguantar la forma de una cucharada. Para una línea debajo de un pescado, añade caldo poco a poco hasta que se extienda con el dorso de la cuchara."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Guarnición firme",
+        "ratio": "Añadir el caldo por tandas hasta 150 g por 600 g de coliflor",
+        "note": "Reserva parte del caldo si la coliflor retuvo agua."
+      },
+      {
+        "use": "Base fluida",
+        "ratio": "Ajustar con caldo de 15 en 15 g",
+        "note": "Prueba la textura en un plato caliente antes de añadir más."
+      }
+    ],
+    "keys": [
+      "El tostado aporta sabor, pero la coliflor debe quedar tierna. Retira las puntas demasiado negras antes de triturar.",
+      "Prueba el puré con el jugo o la salsa que irá en el plato. Un caldo fuerte puede tapar el sabor de una pieza delicada.",
+      "Para dar contraste, termina con [[migas-limon|migas crujientes de limón]] sobre la pieza en vez de mezclarlas en el puré."
+    ],
+    "errors": [
+      {
+        "p": "Textura arenosa",
+        "fix": "Comprueba que los tallos estén tiernos. Si quedan duros, termínalos con un poco de caldo antes de volver a triturar."
+      },
+      {
+        "p": "Queda más líquido de lo previsto",
+        "fix": "Mezcla con un poco más de coliflor asada triturada. En la siguiente tanda incorpora el caldo gradualmente."
+      }
+    ],
+    "uses": [
+      "Lubina o rodaballo",
+      "Setas a la plancha",
+      "Coliflor a la brasa con su propio puré"
+    ],
+    "pro": "Ten un poco de caldo caliente al lado para ajustar pequeñas tandas. Sirve la base antes de colocar el producto y deja que se vea parte del dorado de la pieza.",
+    "related": [
+      "caldo-de-verduras",
+      "migas-limon",
+      "crema-berenjena-brasa"
+    ]
+  },
+  {
+    "id": "salsa-yogur-limon",
+    "name": "Salsa de yogur, limón y hierbas",
+    "name_en": "Lemon and herb yoghurt sauce",
+    "aka": [
+      "yogur con hierbas",
+      "salsa fría de yogur",
+      "yogur al limon",
+      "yoghurt dressing"
+    ],
+    "cat": "salsas",
+    "group": "Aliños de pase",
+    "role": "salsa",
+    "techniques": [],
+    "summary": "Salsa fría y cremosa para rebajar la intensidad de verduras asadas, cordero y platos especiados.",
+    "what": "La base es yogur natural espeso con aceite y limón. El yogur aporta acidez de partida, así que conviene probarlo antes de añadir todo el zumo. Las hierbas pueden ir picadas dentro o repartirse sobre el plato si quieres distinguir mejor su aroma.",
+    "base": {
+      "for": "una tanda con 300 g de yogur",
+      "items": [
+        [
+          "Yogur griego natural",
+          "300 g"
+        ],
+        [
+          "Aceite de oliva virgen extra",
+          "18 g"
+        ],
+        [
+          "Zumo de limón",
+          "12 g"
+        ],
+        [
+          "Menta",
+          "5 g"
+        ],
+        [
+          "Perejil",
+          "5 g"
+        ],
+        [
+          "Sal",
+          "2 g"
+        ]
+      ],
+      "steps": [
+        "Prueba el yogur y comprueba cómo cae de una cuchara. Si se separó algo de suero y quieres una salsa espesa, retira ese líquido antes de mezclar. Pesa la base ya preparada.",
+        "Bate el yogur a mano lo justo para alisarlo. Añade el aceite, la sal y la mitad del zumo de limón. Prueba y añade el resto poco a poco si todavía falta acidez. Para textura de aliño, afina con pequeñas cantidades de agua.",
+        "Seca las hierbas y pícalas a cuchillo. Incorpora el perejil y la menta justo antes de porcionar. Prueba un poco de salsa con el producto caliente para comprobar cuánto se nota la menta.",
+        "Pon una cucharada en el lateral del plato o debajo de una parte del producto. Si el plato lleva además encurtido, reduce el limón y deja que el yogur haga de contrapunto cremoso."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Salsa para cordero o calabaza",
+        "ratio": "18 g de aceite por 300 g de yogur",
+        "note": "Conserva una textura que aguante el lomo de la cuchara."
+      },
+      {
+        "use": "Aliño para pepino",
+        "ratio": "Aligerar por tandas de 10 g de agua",
+        "note": "El pepino también soltará agua. Prueba antes de seguir aligerando."
+      }
+    ],
+    "keys": [
+      "Escurre las hierbas antes de picarlas para añadir aroma con menos agua.",
+      "Usa yogur natural sin endulzar. Si una tanda tiene más acidez que otra, ajusta por sabor en lugar de añadir el limón entero.",
+      "Sirve la salsa junto a la pieza en platos muy calientes si quieres conservar el contraste de temperatura."
+    ],
+    "errors": [
+      {
+        "p": "La salsa queda demasiado ácida",
+        "fix": "Añade yogur sin aliñar y prueba el conjunto antes de volver a salar."
+      },
+      {
+        "p": "Se licúa en el plato",
+        "fix": "Empieza con yogur más espeso y escurre la guarnición. Pon la salsa a un lado si el producto suelta jugo."
+      }
+    ],
+    "uses": [
+      "Calabaza a la brasa",
+      "Cordero especiado",
+      "Pepino y legumbres",
+      "Pimiento asado"
+    ],
+    "pro": "Mantén una parte del yogur sin aliñar para corregir tandas. Para emplatar, utiliza una cuchara limpia que permita dosificar porciones de grosor parecido.",
+    "related": [
+      "vinagreta",
+      "pimientos-asados-alinados",
+      "vinagreta-piparras"
+    ]
   }
 ]

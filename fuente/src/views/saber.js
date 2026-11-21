@@ -28,7 +28,15 @@ const href = (id, tab) => '#/biblioteca/' + esc(id) + (tab ? '/' + tab : '');
 
 // Texto con enlaces: [[id]] o [[id|texto]] a otras entradas; lo que no existe se queda como texto.
 function linked(text) {
- return esc(text).replace(/\[\[([^\]|]+?)(?:\|([^\]]+))?\]\]/g, (m, id, label) => { const e = entryById(id.trim()); const show = label || e?.name || id; return e ? '<a class="kref" href="' + href(e.id) + '">' + show + '</a>' : show; });
+ const source = String(text || '');
+ let html = '', end = 0;
+ for (const match of source.matchAll(/\[\[([^\]|]+?)(?:\|([^\]]+))?\]\]/g)) {
+  const [syntax, id, label] = match, entry = entryById(id.trim());
+  const labelHtml = esc(label || entry?.name || id);
+  html += esc(source.slice(end, match.index)) + (entry ? '<a class="kref" href="' + href(entry.id) + '">' + labelHtml + '</a>' : labelHtml);
+  end = match.index + syntax.length;
+ }
+ return html + esc(source.slice(end));
 }
 const para = text => String(text || '').split(/\n{2,}/).filter(Boolean).map(p => '<p>' + linked(p).replace(/\n/g, '<br>') + '</p>').join('');
 const flat = text => linked(text).replace(/<a[^>]*>|<\/a>/g, '');
@@ -46,32 +54,35 @@ function row(e, tab) {
 const hasSearch = () => !!(query.trim() || category || fixes);
 function results() {
  const q = query.trim();
- if (!hasSearch()) return '';
+ if (!hasSearch()) return {status: '', html: ''};
  const list = q ? search(q, Infinity, {category, fixes}) :
   entries().filter(e => (!category || e.cat === category) && (!fixes || e.errors?.length)).sort((a, b) => a.name.localeCompare(b.name, 'es'));
- if (list.length) return '<p class="fine">' + esc(list.length === 1 ? t('1 entrada', '1 entry') : list.length + t(' entradas', ' entries')) + '</p><ul class="krows">' + list.map(e => row(e, fixes ? 'trucos' : undefined)).join('') + '</ul>';
- if (category || fixes) return '<p class="hint">' + esc(t('No hay coincidencias con estos filtros.', 'No matches with these filters.')) + '</p>';
- return emptyState('search', t('«', '“') + q + t('» no está todavía', '” is not here yet'), iaOn() ? t('Puedes pedir a ChatGPT que la escriba con el mismo formato. Luego la revisas y le añades tu versión.', 'Ask ChatGPT to write it in the same format. Then check it and add your version.') : t('Puedes pedirla a ChatGPT: copia la petición, pégala allí y trae aquí la respuesta.', 'Ask ChatGPT for it: copy the request, paste it there and bring back the answer.'),
+ const status = list.length === 1 ? t('1 entrada', '1 entry') : list.length + t(' entradas', ' entries');
+ if (list.length) return {status, html: '<ul class="krows">' + list.map(e => row(e, fixes ? 'trucos' : undefined)).join('') + '</ul>'};
+ if (category || fixes) return {status: t('No hay coincidencias con estos filtros.', 'No matches with these filters.'), html: ''};
+ return {status, html: emptyState('search', t('«', '“') + q + t('» no está todavía', '” is not here yet'), iaOn() ? t('Puedes pedir a ChatGPT que la escriba con el mismo formato. Luego la revisas y le añades tu versión.', 'Ask ChatGPT to write it in the same format. Then check it and add your version.') : t('Puedes pedirla a ChatGPT: copia la petición, pégala allí y trae aquí la respuesta.', 'Ask ChatGPT for it: copy the request, paste it there and bring back the answer.'),
   iaOn() ? '<button type="button" class="btn primary" data-act="create-ia">' + icon('spark') + esc(t('Escribir «', 'Write “') + q + t('» con ChatGPT', '” with ChatGPT')) + '</button>'
-   : '<div class="row-actions"><button type="button" class="btn primary" data-act="create-copy">' + icon('copy') + esc(t('Copiar la petición', 'Copy the request')) + '</button><a class="btn ghost" href="https://chatgpt.com/" data-chat target="_blank" rel="noopener noreferrer">' + esc(t('Preguntar a ChatGPT', 'Ask ChatGPT')) + '</a></div><label class="mini" for="kReply">' + esc(t('Pega aquí la respuesta', 'Paste the answer here')) + '</label><textarea id="kReply" rows="3"></textarea><div class="row-actions"><button type="button" class="btn ghost" data-paste="kReply" data-then="[data-act=create-save]">' + icon('copy') + esc(t('Pegar y leer', 'Paste and read')) + '</button><button type="button" class="btn primary" data-act="create-save">' + icon('check') + esc(t('Guardar la entrada', 'Save the entry')) + '</button></div>');
+   : '<div class="row-actions"><button type="button" class="btn primary" data-act="create-copy">' + icon('copy') + esc(t('Copiar la petición', 'Copy the request')) + '</button><a class="btn ghost" href="https://chatgpt.com/" data-chat target="_blank" rel="noopener noreferrer">' + esc(t('Preguntar a ChatGPT', 'Ask ChatGPT')) + '</a></div><label class="mini" for="kReply">' + esc(t('Pega aquí la respuesta', 'Paste the answer here')) + '</label><textarea id="kReply" rows="3"></textarea><div class="row-actions"><button type="button" class="btn ghost" data-paste="kReply" data-then="[data-act=create-save]">' + icon('copy') + esc(t('Pegar y leer', 'Paste and read')) + '</button><button type="button" class="btn primary" data-act="create-save">' + icon('check') + esc(t('Guardar la entrada', 'Save the entry')) + '</button></div>')};
 }
 const STARTERS = ['bechamel', 'mayonesa', 'fumet', 'holandesa', 'romesco', 'jugo-de-carne'];
 const GUIDES = [
  ['Salsas que se cortan', 'Split sauces', t('Distingue si falló la emulsión en frío o al calentarla.', 'Check whether the emulsion broke cold or over heat.'), ['mayonesa', 'holandesa'], 'trucos'],
  ['Jugos para carnes a la brasa', 'Jus for grilled meats', t('Consulta el fondo de partida y cómo llevarlo a un jugo de servicio.', 'Look up the starting stock and how to turn it into a jus for service.'), ['fondo-oscuro', 'jugo-de-carne'], 'receta'],
+ ['Contrastes para la brasa', 'Contrasts for grilled dishes', t('Elige entre una base cremosa, un acabado crujiente y un aliño ácido.', 'Choose a creamy base, a crunchy finish or a sharp dressing.'), ['crema-berenjena-brasa', 'migas-limon', 'vinagreta-piparras'], 'receta'],
+ ['Guarniciones listas para el pase', 'Sides ready for service', t('Añade una verdura asada, un puré o una salsa fría a tu plato.', 'Add a roast vegetable, a purée or a chilled sauce to your dish.'), ['pimientos-asados-alinados', 'pure-coliflor-tostada', 'salsa-yogur-limon'], 'receta'],
  ['Salsas para pescado y verdura', 'Sauces for fish and vegetables', t('Elige entre una salsa de frutos secos y una emulsión caliente de mantequilla.', 'Choose between a nut sauce and a warm butter emulsion.'), ['romesco', 'beurre-blanc'], 'receta']
 ];
 function homeHtml() {
- const all = entries(), filtering = hasSearch();
+ const all = entries(), filtering = hasSearch(), result = results();
  const last = seen().map(entryById).filter(Boolean).slice(0, 4), mineList = Object.values(state.saber || {}).filter(x => x?.versions?.length && !x.deleted_at).sort((a, b) => String(b.updated_at).localeCompare(String(a.updated_at))).slice(0, 4).map(x => entryById(x.id)).filter(Boolean);
  const saved = favorites().map(entryById).filter(Boolean);
  const trash = Object.values(state.saber || {}).filter(x => x?.custom && x.deleted_at);
  const shelves = CATS.map(([id]) => [id, all.filter(e => (e.cat || 'conceptos') === id).length]).filter(([, n]) => n);
  return '<section class="kwelcome"><h1>' + esc(t('¿Qué quieres saber?', 'What do you want to know?')) + '</h1><p>' + esc(t('Una salsa, un fondo, una base o el porqué de algo. Escríbelo y te lo encuentro.', 'A sauce, a stock, a base or the why of something. Type it and I will find it.')) + '</p>' +
-  '<label class="sr" for="saberQ">' + esc(t('Buscar en la Biblioteca', 'Search the library')) + '</label><div class="searchbox searchbox-big kask">' + icon('search') + '<input id="saberQ" type="search" value="' + esc(query) + '" placeholder="' + esc(t('Bechamel, fumet, alioli…', 'Béchamel, fish stock, aioli…')) + '" autocomplete="off" enterkeyhint="search"></div>' +
+  '<label class="sr" for="saberQ">' + esc(t('Buscar en la Biblioteca', 'Search the library')) + '</label><div class="searchbox searchbox-big kask">' + icon('search') + '<input id="saberQ" type="search" aria-controls="saberRes" value="' + esc(query) + '" placeholder="' + esc(t('Migas crujientes, coliflor, grumos…', 'Crunchy crumbs, cauliflower, lumps…')) + '" autocomplete="off" enterkeyhint="search"></div>' +
   '<div class="ksearch-filters"><label for="saberCategory">' + esc(t('Estante', 'Shelf')) + '</label><select id="saberCategory"><option value="">' + esc(t('Todos los estantes', 'All shelves')) + '</option>' + shelves.map(([id]) => '<option value="' + esc(id) + '"' + (category === id ? ' selected' : '') + '>' + esc(shelfName(id)) + '</option>').join('') + '</select><label class="kfix-filter"><input id="saberFixes" type="checkbox"' + (fixes ? ' checked' : '') + '> ' + esc(t('Buscar errores y soluciones', 'Search mistakes and fixes')) + '</label></div>' +
   '<div class="kstart"' + (filtering ? ' hidden' : '') + '><span class="kstart-label">' + esc(t('Para empezar', 'To start')) + '</span>' + STARTERS.map(entryById).filter(Boolean).map(e => '<a class="kchip" href="' + href(e.id) + '">' + esc(e.name) + '</a>').join('') + '</div></section>' +
-  '<div id="saberRes">' + results() + '</div>' +
+  '<p class="fine kresult-status" id="saberStatus" role="status">' + esc(result.status) + '</p><div id="saberRes">' + result.html + '</div>' +
   '<div class="khome"' + (filtering ? ' hidden' : '') + '>' +
   (saved.length ? '<section class="sec"><h2 class="day">' + esc(t('Favoritas', 'Favourites')) + '</h2><ul class="krows">' + saved.map(e => row(e)).join('') + '</ul></section>' : '') +
   '<section class="sec"><h2 class="day">' + esc(t('Consultas de cocina', 'Kitchen reference')) + '</h2><div class="kguides">' + GUIDES.map(([es, english, hint, ids, tab]) => '<section class="kguide"><h3>' + esc(t(es, english)) + '</h3><p>' + esc(hint) + '</p><div class="chips">' + ids.map(entryById).filter(Boolean).map(e => '<a class="chip" href="' + href(e.id, tab) + '">' + esc(e.name) + '</a>').join('') + '</div></section>').join('') + '</div></section>' +
@@ -115,11 +126,18 @@ function recipeTable(base) {
   [0.5, 1, 1.5, 2, 3, 4, 5, 10].map(factor => '<option value="' + factor + '"' + (factor === 1 ? ' selected' : '') + '>× ' + factor.toLocaleString(en() ? 'en' : 'es') + '</option>').join('') + '</select>' +
   '<p class="fine">' + esc(t('Se ajustan los pesos y volúmenes simples. Las demás cantidades, los tiempos y las temperaturas son los de la receta base.', 'Simple weights and volumes are scaled. Other amounts, times and temperatures are from the base recipe.')) + '</p></div>' : '') +
   '<table class="ktable"><caption>' + esc(t('Receta base para ', 'Base recipe for ') + (base.for || '')) + '</caption><tbody>' +
-  base.items.map(([ingredient, quantity]) => '<tr><td>' + linked(ingredient) + '</td><td class="q" data-quantity="' + esc(quantity || '') + '">' + esc(quantity || '') + '</td></tr>').join('') + '</tbody></table>';
+  base.items.map(([ingredient, quantity]) => '<tr><th scope="row">' + linked(ingredient) + '</th><td class="q" data-quantity="' + esc(quantity || '') + '">' + esc(quantity || '') + '</td></tr>').join('') + '</tbody></table>';
+}
+function recipeSteps(steps) {
+ return '<div class="krecipe-actions"><button type="button" class="btn ghost" data-act="copy-recipe">' + esc(t('Copiar receta', 'Copy recipe')) + '</button>' +
+  (steps.length ? '<button type="button" class="btn ghost" data-act="cook-mode" aria-pressed="false" aria-controls="kRecipeSteps">' + esc(t('Modo cocina', 'Cooking mode')) + '</button>' : '') + '</div>' +
+  (steps.length ? '<p id="kStepStatus" class="fine" role="status"></p><ol id="kRecipeSteps" class="ksteps">' + steps.map((step, i) =>
+   '<li><span class="kstep-text">' + linked(step) + '</span><label class="kstep-check" hidden><input type="checkbox" data-kstep aria-label="' +
+    esc(t('Paso ' + (i + 1) + ' completado', 'Step ' + (i + 1) + ' complete')) + '"><span>' + esc(t('Hecho', 'Done')) + '</span></label></li>').join('') + '</ol>' : '');
 }
 function panels(e) {
  const out = [['que', t('Qué es', 'What it is'), '<h2 class="sr">' + esc(t('Qué es', 'What it is')) + '</h2>' + para(e.what)]];
- if (e.base && (e.base.items || []).length) out.push(['receta', t('Receta', 'Recipe'), '<h2 class="sr">' + esc(t('Receta base', 'Base recipe')) + '</h2>' + recipeTable(e.base) + ((e.base.steps || []).length ? '<ol class="ksteps">' + e.base.steps.map(s => '<li>' + linked(s) + '</li>').join('') + '</ol>' : '')]);
+ if (e.base && (e.base.items || []).length) out.push(['receta', t('Receta', 'Recipe'), '<h2 class="sr">' + esc(t('Receta base', 'Base recipe')) + '</h2>' + recipeTable(e.base) + recipeSteps(e.base.steps || [])]);
  if ((e.ratios || []).length) out.push(['uso', t('Según el uso', 'By use'), '<h2 class="sr">' + esc(t('Cómo cambia según para qué', 'How it changes by use')) + '</h2><table class="ktable kratios"><thead><tr><th>' + esc(t('Para', 'For')) + '</th><th>' + esc(t('Cómo cambia', 'How it changes')) + '</th></tr></thead><tbody>' + e.ratios.map(r => '<tr><td><strong>' + linked(r.use) + '</strong></td><td>' + linked(r.ratio) + (r.note ? '<small>' + linked(r.note) + '</small>' : '') + '</td></tr>').join('') + '</tbody></table>']);
  if ((e.variants || []).length) out.push(['variantes', t('Variantes', 'Variants'), '<h2 class="sr">' + esc(t('Variantes y derivadas', 'Variants and derivatives')) + '</h2><ul class="kvariants">' + e.variants.map(v => '<li>' + (v.id && entryById(v.id) ? '<a class="kref" href="' + href(v.id) + '">' + esc(v.name) + '</a>' : '<strong>' + esc(v.name) + '</strong>') + (v.note ? ' ' + linked(v.note) : '') + '</li>').join('') + '</ul>']);
  if ((e.keys || []).length || (e.errors || []).length) out.push(['trucos', t('Trucos y errores', 'Tips and mistakes'), ((e.keys || []).length ? '<h2 class="kh3">' + esc(t('Claves', 'Key points')) + '</h2><ul class="kbullets">' + e.keys.map(x => '<li>' + linked(x) + '</li>').join('') + '</ul>' : '') + ((e.errors || []).length ? '<h2 class="kh3">' + esc(t('Errores y cómo arreglarlos', 'Mistakes and fixes')) + '</h2><dl class="kerrors">' + e.errors.map(x => '<dt>' + linked(x.p) + '</dt><dd>' + linked(x.fix) + '</dd>').join('') + '</dl>' : '')]);
@@ -131,16 +149,16 @@ function panels(e) {
 }
 function entryHtml(id, tab) {
  const e = entryById(id);
- const back = '<a class="back" href="#/biblioteca">' + icon('left') + esc(t('Biblioteca', 'Library')) + '</a>';
+ const back = '<a class="back" href="#/biblioteca">' + icon('left') + esc(hasSearch() ? t('Volver a la búsqueda', 'Back to search') : t('Biblioteca', 'Library')) + '</a>';
  if (!e) return back + emptyState('book', t('Esta entrada no está', 'This entry is not here'), t('Búscala en la Biblioteca.', 'Search for it in the library.'));
  const saved = favorites().includes(id);
  const list = panels(e), on = list.some(p => p[0] === tab) ? tab : list[0][0];
  const {dishes, subs} = inDishes(e), rel = [...new Set([...(e.related || []), ...backlinks(e.id).map(x => x.id)])].map(entryById).filter(x => x && x.id !== e.id);
- return '<a class="back" href="#/biblioteca/estante/' + esc(e.cat || 'conceptos') + '">' + icon('left') + esc(shelfName(e.cat || 'conceptos')) + '</a><article class="kentry">' +
+ return '<div class="kentry-back">' + (hasSearch() ? back : '') + '<a class="back" href="#/biblioteca/estante/' + esc(e.cat || 'conceptos') + '">' + icon('left') + esc(shelfName(e.cat || 'conceptos')) + '</a></div><article class="kentry">' +
   '<header class="page-head"><h1>' + esc(e.name) + '</h1>' + (e.aka?.length ? '<p class="kaka">' + esc(t('También: ', 'Also: ') + e.aka.join(', ')) + '</p>' : '') + '<button type="button" class="btn ghost" data-act="favorite" aria-pressed="' + saved + '">' + esc(saved ? t('Quitar de favoritas', 'Remove from favourites') : t('Guardar en favoritas', 'Save to favourites')) + '</button>' + (e.base?.items?.length && state.canEdit && !state.setupPending ? '<button type="button" class="btn primary k-use" data-act="use-recipe">' + icon('plus') + esc(t('Usar en un plato', 'Use in a dish')) + '</button>' : '') + '</header>' +
   (e.summary ? '<div class="kbody"><p class="lead">' + linked(e.summary) + '</p></div>' : '') +
-  '<div class="ktabs" role="tablist" aria-label="' + esc(t('Partes de la entrada', 'Parts of the entry')) + '">' + list.map(([pid, label]) => '<button type="button" role="tab" id="kt-' + pid + '" aria-controls="kp-' + pid + '" aria-selected="' + (pid === on) + '" class="ktab' + (pid === on ? ' active' : '') + '" data-ktab="' + pid + '">' + esc(label) + '</button>').join('') + '</div>' +
-  list.map(([pid, , body]) => '<section class="kpanel" role="tabpanel" id="kp-' + pid + '" aria-labelledby="kt-' + pid + '"' + (pid === on ? '' : ' hidden') + '>' + body + '</section>').join('') +
+  '<div class="ktabs" role="tablist" aria-label="' + esc(t('Partes de la entrada', 'Parts of the entry')) + '">' + list.map(([pid, label]) => '<button type="button" role="tab" id="kt-' + pid + '" aria-controls="kp-' + pid + '" aria-selected="' + (pid === on) + '" tabindex="' + (pid === on ? 0 : -1) + '" class="ktab' + (pid === on ? ' active' : '') + '" data-ktab="' + pid + '">' + esc(label) + '</button>').join('') + '</div>' +
+  list.map(([pid, , body]) => '<section class="kpanel" role="tabpanel" tabindex="0" id="kp-' + pid + '" aria-labelledby="kt-' + pid + '"' + (pid === on ? '' : ' hidden') + '>' + body + '</section>').join('') +
   ((dishes.length || subs.length) ? '<section class="sec ksec-mine"><h2 class="day">' + esc(t('En tu cocina', 'In your kitchen')) + '</h2><div class="chips">' + dishes.map(d => '<a class="chip" href="#/plato/' + esc(d.id) + '">' + esc(d.name) + '<small>' + esc(t('plato', 'dish')) + '</small></a>').join('') + subs.map(x => '<a class="chip" href="#/subreceta/' + esc(x.id) + '">' + esc(x.name) + '<small>' + esc(t('subreceta', 'sub-recipe')) + '</small></a>').join('') + '</div></section>' : '') +
   (rel.length ? '<section class="sec"><h2 class="day">' + esc(t('Para seguir leyendo', 'Keep reading')) + '</h2><div class="chips">' + rel.slice(0, 10).map(x => '<a class="chip" href="' + href(x.id) + '">' + esc(x.name) + '</a>').join('') + '</div></section>' : '') +
   (e.mine ? '<p class="fine center"><button type="button" class="linkbtn" data-act="trash-entry">' + esc(t('Enviar esta entrada a la papelera', 'Move this entry to the bin')) + '</button></p>' : '') + '</article>';
@@ -180,15 +198,26 @@ export function mount(root, params) {
  if (params[0] && params[0] !== 'estante' && entryById(params[0])) markSeen(params[0]);
  const showTab = id => {
   activeTab = id; params[1] = id;
-  $$('[data-ktab]', root).forEach(b => { const on = b.dataset.ktab === id; b.classList.toggle('active', on); b.setAttribute('aria-selected', on); });
+  $$('[data-ktab]', root).forEach(b => { const on = b.dataset.ktab === id; b.classList.toggle('active', on); b.setAttribute('aria-selected', on); b.tabIndex = on ? 0 : -1; });
   $$('.kpanel', root).forEach(p => { p.hidden = p.id !== 'kp-' + id; });
   history.replaceState(null, '', '#/biblioteca/' + params[0] + '/' + id);
  };
  const refreshResults = () => {
-  $('#saberRes', root).innerHTML = results();
+  const result = results();
+  $('#saberRes', root).innerHTML = result.html;
+  $('#saberStatus', root).textContent = result.status;
   $$('.khome, .kstart', root).forEach(x => { x.hidden = hasSearch(); });
  };
+ const stepStatus = () => {
+  const steps = $$('[data-kstep]', root), done = steps.filter(box => box.checked).length;
+  $('#kStepStatus', root).textContent = t(done + ' de ' + steps.length + ' pasos hechos', done + ' of ' + steps.length + ' steps done');
+ };
  root.addEventListener('change', e => {
+  if (e.target.hasAttribute('data-kstep')) {
+   e.target.closest('li').classList.toggle('kstep-done', e.target.checked);
+   stepStatus();
+   return;
+  }
   if (e.target.id === 'saberCategory' || e.target.id === 'saberFixes') {
    category = $('#saberCategory', root).value;
    fixes = $('#saberFixes', root).checked;
@@ -209,9 +238,25 @@ export function mount(root, params) {
   refreshResults();
  });
  root.addEventListener('keydown', e => {
-  if (e.target.id === 'saberQ' && e.key === 'Enter') { const first = root.querySelector('#saberRes .krow'); if (first) { e.preventDefault(); location.hash = first.getAttribute('href'); } }
-  const tab = e.target.closest?.('[data-ktab]');
-  if (tab && (e.key === 'ArrowRight' || e.key === 'ArrowLeft')) { const all = $$('[data-ktab]', root), k = all.indexOf(tab), next = all[(k + (e.key === 'ArrowRight' ? 1 : all.length - 1)) % all.length]; next.focus(); showTab(next.dataset.ktab); }
+  if (e.isComposing || e.altKey || e.ctrlKey || e.metaKey) return;
+  const result = e.target.closest('#saberRes .krow');
+  if (e.target.id === 'saberQ' || result) {
+   const hits = $$('#saberRes .krow', root);
+   if (hits.length && e.target.id === 'saberQ' && e.key === 'Enter') { e.preventDefault(); hits[0].click(); return; }
+   if (hits.length && (e.key === 'ArrowDown' || (result && e.key === 'ArrowUp'))) {
+    e.preventDefault();
+    const i = hits.indexOf(result) + (e.key === 'ArrowDown' ? 1 : -1);
+    (i < 0 ? $('#saberQ', root) : hits[Math.min(i, hits.length - 1)]).focus();
+   }
+  }
+  const tab = e.target.closest('[data-ktab]');
+  if (tab && ['ArrowRight', 'ArrowLeft', 'Home', 'End'].includes(e.key)) {
+   e.preventDefault();
+   const all = $$('[data-ktab]', root), i = all.indexOf(tab);
+   const next = e.key === 'Home' ? all[0] : e.key === 'End' ? all.at(-1) : all[(i + (e.key === 'ArrowRight' ? 1 : all.length - 1)) % all.length];
+   showTab(next.dataset.ktab);
+   next.focus();
+  }
  });
  root.addEventListener('click', async e => {
   const b = e.target.closest('button');
@@ -230,6 +275,25 @@ export function mount(root, params) {
   }
   if (b.dataset.ktab) { showTab(b.dataset.ktab); return; }
   const act = b.dataset.act, id = params[0];
+  if (act === 'cook-mode') {
+   const on = b.getAttribute('aria-pressed') === 'false';
+   b.setAttribute('aria-pressed', on);
+   $$('.kstep-check', root).forEach(label => { label.hidden = !on; });
+   if (on) stepStatus(); else $('#kStepStatus', root).textContent = '';
+   return;
+  }
+  if (act === 'copy-recipe') {
+   const recipe = entryById(id);
+   const factor = Number($('#kBatch', root)?.value || 1);
+   const base = $('#kp-receta caption', root).textContent;
+   const batch = factor === 1 ? base : t('Tanda ×', 'Batch ×') + factor.toLocaleString(en() ? 'en' : 'es') + ' (' + base + ')';
+   const ingredients = $$('#kp-receta tbody tr', root).map(row => [...row.cells].map(cell => cell.textContent.trim()).filter(Boolean).join(' — '));
+   const steps = $$('#kRecipeSteps .kstep-text', root).map((step, i) => (i + 1) + '. ' + step.innerText.trim());
+   const done = await copy([recipe.name, batch, ingredients.join('\n'), steps.join('\n')].filter(Boolean).join('\n\n'), {forChat: false});
+   if (b.isConnected) b.focus({preventScroll: true});
+   toast(done ? t('Receta copiada.', 'Recipe copied.') : t('No se pudo copiar.', 'Could not copy.'), done ? 'info' : 'error');
+   return;
+  }
   if (act === 'use-recipe' && id) {
    const dishes = liveDishes();
    const selection = sheet({title: t('¿En qué plato?', 'Which dish?'), body:

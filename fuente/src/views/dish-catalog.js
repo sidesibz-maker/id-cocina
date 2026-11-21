@@ -40,12 +40,12 @@ export function openDishCatalog(components, onAdd, initialId = '') {
  const roleOptions = ROLES.map(row => '<option value="' + row[0] + '">' + esc(label(row)) + '</option>').join('');
  const dialog = sheet({title: t('Añadir a la mesa de trabajo', 'Add to the workbench'), wide: true, body:
   '<div class="dish-catalog"><label for="catalogQ">' + esc(t('Buscar en el catálogo', 'Search the catalogue')) + '</label><div class="searchbox">' + icon('search') +
-  '<input id="catalogQ" type="search" maxlength="120" autocomplete="off" placeholder="' + esc(t('Cebolla encurtida, alcachofa, brasa…', 'Pickled onion, artichoke, charcoal grill…')) + '"></div>' +
+  '<input id="catalogQ" type="search" aria-controls="catalogResults" maxlength="120" autocomplete="off" placeholder="' + esc(t('Cebolla encurtida, alcachofa, brasa…', 'Pickled onion, artichoke, charcoal grill…')) + '"></div>' +
   '<div class="catalog-types" role="group" aria-label="' + esc(t('Tipo de resultado', 'Result type')) + '">' + types.map(([kind, title]) => '<button type="button" class="pill' + (kind === 'all' ? ' active' : '') + '" data-catalog-kind="' + kind + '" aria-pressed="' + (kind === 'all') + '">' + esc(title) + '</button>').join('') + '</div>' +
-  '<div id="catalogResults" class="catalog-results"></div><div id="catalogChoice" class="catalog-choice" hidden></div>' +
+  '<p id="catalogStatus" class="sr" role="status"></p><div id="catalogResults" class="catalog-results"></div><div id="catalogChoice" class="catalog-choice" hidden></div>' +
   '</div>'});
- const input = $('#catalogQ', dialog.el), box = $('#catalogResults', dialog.el), choice = $('#catalogChoice', dialog.el);
- let kind = 'all', current = [], selected = null;
+ const input = $('#catalogQ', dialog.el), box = $('#catalogResults', dialog.el), choice = $('#catalogChoice', dialog.el), status = $('#catalogStatus', dialog.el);
+ let kind = 'all', current = [], selected = null, lastResult = null;
  function draw() {
   const q = normalize(input.value), words = q.split(' ').filter(Boolean);
   const match = text => words.every(word => text.includes(word));
@@ -62,6 +62,7 @@ export function openDishCatalog(components, onAdd, initialId = '') {
   const all = [...preparations, ...ingredients, ...techniques];
   current = (kind === 'all' ? all.sort((a, b) => Number(b.exact) - Number(a.exact)) : all.filter(result => result.kind === kind));
   if (q && kind !== 'tech' && kind !== 'recipe' && !current.some(result => result.exact)) current.push({kind: 'ingredient', text: clip(input.value, 80), detail: t('Añadir con este nombre', 'Add with this name'), item: {n: clip(input.value, 80), k: null, src: 'free', w: 2}});
+  status.textContent = current.length === 1 ? t('1 resultado mostrado', '1 result shown') : t(current.length + ' resultados mostrados', current.length + ' results shown');
   const labels = {recipe: t('Elaboración', 'Preparation'), ingredient: t('Ingrediente', 'Ingredient'), tech: t('Técnica', 'Technique')};
   box.innerHTML = current.map((result, i) => '<button type="button" class="catalog-result" data-catalog-pick="' + i + '"><span><strong>' + esc(result.text) + '</strong>' +
    (result.detail ? '<small>' + esc(clip(result.detail, 140)) + '</small>' : '') + '</span><span class="catalog-tag">' + labels[result.kind] + '</span></button>').join('') ||
@@ -69,6 +70,7 @@ export function openDishCatalog(components, onAdd, initialId = '') {
  }
  function select(result) {
   selected = result;
+  lastResult = current.indexOf(result);
   box.hidden = true; choice.hidden = false;
   const target = result.kind === 'recipe' ? '' :
    '<label for="catalogTarget">' + esc(t('Dónde añadirlo', 'Where to add it')) + '</label><select id="catalogTarget"><option value="">' + esc(t('Nuevo componente', 'New component')) + '</option>' +
@@ -77,7 +79,7 @@ export function openDishCatalog(components, onAdd, initialId = '') {
   const preview = base ? '<details class="catalog-preview"><summary>' + esc(t('Ver ingredientes y cantidades', 'See ingredients and amounts')) + '</summary>' +
    (base.for ? '<p class="fine">' + esc(base.for) + '</p>' : '') +
    '<ul>' + base.items.map(([name, amount]) => '<li><span>' + esc(plain(name, names)) + '</span><strong>' + esc(amount) + '</strong></li>').join('') + '</ul></details>' : '';
-  choice.innerHTML = '<h3>' + esc(result.text) + '</h3>' + (result.detail ? '<p>' + esc(result.detail) + '</p>' : '') + preview + target +
+  choice.innerHTML = '<h3 tabindex="-1">' + esc(result.text) + '</h3>' + (result.detail ? '<p>' + esc(result.detail) + '</p>' : '') + preview + target +
    '<div id="catalogRoleWrap"><label for="catalogRole">' + esc(t('Papel en el plato', 'Role in the dish')) + '</label><select id="catalogRole">' + roleOptions + '</select></div>' +
    '<div class="row-actions"><button type="button" class="btn ghost" data-catalog-back>' + esc(t('Volver a los resultados', 'Back to results')) + '</button><button type="button" class="btn primary" data-catalog-add>' + icon('plus') + esc(t('Añadir al plato', 'Add to dish')) + '</button></div>';
   const role = $('#catalogRole', choice);
@@ -87,11 +89,23 @@ export function openDishCatalog(components, onAdd, initialId = '') {
   const sync = () => { $('#catalogRoleWrap', choice).hidden = !!targetSelect?.value; };
   if (targetSelect) targetSelect.onchange = sync;
   sync();
-  (targetSelect || role).focus();
+  $('h3', choice).focus();
  }
  const reset = () => { selected = null; choice.hidden = true; box.hidden = false; };
  input.oninput = () => { reset(); draw(); };
- input.onkeydown = e => { if (e.key === 'Enter' && !selected && current.length) { e.preventDefault(); select(current[0]); } };
+ dialog.el.addEventListener('keydown', e => {
+  if (selected || e.isComposing || e.altKey || e.ctrlKey || e.metaKey) return;
+  const result = e.target.closest('[data-catalog-pick]');
+  if (e.target !== input && !result) return;
+  if (e.target === input && e.key === 'Enter' && current.length) {
+   e.preventDefault(); select(current[0]); return;
+  }
+  if (!current.length || !(e.key === 'ArrowDown' || (result && ['ArrowUp', 'Home', 'End'].includes(e.key)))) return;
+  e.preventDefault();
+  const i = result ? Number(result.dataset.catalogPick) : -1;
+  const j = e.key === 'Home' ? 0 : e.key === 'End' ? current.length - 1 : Math.min(i + (e.key === 'ArrowUp' ? -1 : 1), current.length - 1);
+  (j < 0 ? input : box.children[j]).focus();
+ });
  dialog.el.addEventListener('click', e => {
   const b = e.target.closest('button');
   if (!b) return;
@@ -101,7 +115,7 @@ export function openDishCatalog(components, onAdd, initialId = '') {
    reset(); draw();
   }
   if (b.dataset.catalogPick !== undefined) select(current[Number(b.dataset.catalogPick)]);
-  if (b.hasAttribute('data-catalog-back')) { reset(); input.focus(); }
+  if (b.hasAttribute('data-catalog-back')) { reset(); (box.children[lastResult] || input).focus(); }
   if (b.hasAttribute('data-catalog-add') && selected) {
    const target = $('#catalogTarget', choice)?.value;
    const role = $('#catalogRole', choice).value;
@@ -114,8 +128,8 @@ export function openDishCatalog(components, onAdd, initialId = '') {
   input.value = recipeName(initial);
   draw();
   select({kind: 'recipe', text: recipeName(initial), detail: plain(initial.summary, names), entry: initial});
-  requestAnimationFrame(() => $('#catalogRole', choice)?.focus());
+  requestAnimationFrame(() => $('h3', choice)?.focus());
  } else {
-  draw(); setTimeout(() => { if (input.isConnected) input.focus(); }, 250);
+  draw(); requestAnimationFrame(() => { if (dialog.el.classList.contains('in')) input.focus(); });
  }
 }

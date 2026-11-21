@@ -37,11 +37,18 @@ function parseHash(hash = location.hash) {
 function shell() {
  const item = ([id, ic, label]) => '<a class="nav-item' + (id === 'crear' ? ' nav-create' : '') + '" href="#/' + id + '" data-nav="' + id + '">' + icon(ic) + '<span>' + esc(label()) + '</span><i class="badge" data-badge="' + id + '" hidden></i></a>';
  app().innerHTML = '<div class="lab">' +
+  '<a class="skip-link" href="#view">' + esc(t('Saltar al contenido', 'Skip to content')) + '</a>' +
   '<aside class="rail"><a class="wordmark" href="#/hoy" aria-label="I+D">I<b>+</b>D</a><div class="rail-rest">' + esc(t('Cuaderno de cocina', 'Kitchen notebook')) + '</div>' +
    '<nav class="rail-nav" aria-label="' + esc(t('Secciones', 'Sections')) + '">' + NAV.map(item).join('') + '<a class="nav-item" href="#/sabores" data-nav="sabores">' + icon('wheel') + '<span>' + esc(t('Sabores', 'Flavours')) + '</span></a><a class="nav-item" href="#/temporada" data-nav="temporada">' + icon('leaf') + '<span>' + esc(t('Temporada', 'Season')) + '</span></a><a class="nav-item" href="#/preguntar" data-nav="preguntar">' + icon('chat') + '<span>' + esc(t('Preguntar', 'Ask')) + '</span></a><a class="nav-item" href="#/cocina" data-nav="cocina">' + icon('pan') + '<span>' + esc(t('Mi cocina', 'My kitchen')) + '</span></a></nav>' +
    '<div class="rail-foot"><button type="button" class="rail-link" data-act="menu">' + icon('gear') + '<span>' + esc(t('Ajustes', 'Settings')) + '</span></button></div></aside>' +
   '<header class="top"><a class="wordmark" href="#/hoy" aria-label="I+D">I<b>+</b>D</a><span class="top-rest">' + esc(t('Cuaderno de cocina', 'Kitchen notebook')) + '</span><a class="top-ask" href="#/preguntar" data-nav="preguntar">' + icon('chat') + '<span>' + esc(t('Preguntar', 'Ask')) + '</span></a><button type="button" class="iconbtn" data-act="menu" aria-label="' + esc(t('Más y ajustes', 'More and settings')) + '">' + icon('menu') + '</button></header>' +
   '<div id="notices"></div><main id="view" tabindex="-1"></main><nav class="tabs" aria-label="' + esc(t('Secciones', 'Sections')) + '">' + NAV.map(item).join('') + '</nav></div>';
+ $('.skip-link', app()).onclick = e => {
+  e.preventDefault();
+  const view = $('#view');
+  view.scrollIntoView({block: 'start'});
+  view.focus({preventScroll: true});
+ };
  $$('[data-act=menu]', app()).forEach(b => { b.onclick = () => menu({nav: !!b.closest('.top')}); });
 }
 // Aviso para no olvidarse de la copia: los datos están solo en este ordenador.

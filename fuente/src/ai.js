@@ -93,8 +93,8 @@ export function trendsFromReply(text) {
 }
 // Lo último copiado: los botones «Preguntar a ChatGPT / Claude» lo llevan ya escrito al chat.
 export let lastCopied = null;
-export async function copy(text) {
- lastCopied = {text: String(text || ''), at: Date.now()};
+export async function copy(text, {forChat = true} = {}) {
+ if (forChat) lastCopied = {text: String(text || ''), at: Date.now()};
  try { await navigator.clipboard.writeText(text); return true; } catch {}
  try { const a = document.createElement('textarea'); a.value = text; a.style.position = 'fixed'; a.style.opacity = '0'; document.body.append(a); a.select(); const done = document.execCommand('copy'); a.remove(); return done; } catch { return false; }
 }
