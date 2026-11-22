@@ -22,11 +22,14 @@ export const builtIds = () => BUILT.map(e => e.id);
 
 // Todo el texto de una entrada, para buscar.
 function fullText(e) {
- const parts = [e.what, e.history, e.keep, e.pro, ...(e.keys || []), ...(e.uses || []), ...(e.errors || []).flatMap(x => [x.p, x.fix]), ...(e.ratios || []).flatMap(x => [x.use, x.ratio, x.note]), ...(e.variants || []).flatMap(x => [x.name, x.note]), ...(e.base?.items || []).map(x => x[0]), ...(e.base?.steps || [])];
+ const parts = [e.what, e.history, e.keep, e.pro, ...(e.keys || []), ...(e.uses || []), ...(e.errors || []).flatMap(x => [x.p, x.fix]), ...(e.ratios || []).flatMap(x => [x.use, x.ratio, x.note]), ...(e.variants || []).flatMap(x => [x.name, x.note]), ...(e.base?.items || []).map(x => x[0]), ...(e.base?.steps || []), ...(e.method || [])];
  return norm(plain(parts.join(' ')));
 }
 const STOP = new Set(['como', 'por', 'que', 'para', 'con', 'sin', 'del', 'los', 'las', 'una', 'unos', 'unas', 'hacer', 'arreglar', 'evitar', 'mi', 'el', 'la', 'de', 'se', 'me', 'en', 'un']);
 const wordList = value => norm(value).split(' ').filter(w => w.length > 1 && !STOP.has(w));
+
+// Admite palabras a medio escribir sin confundir «ostras» con «costras».
+const startsWord = (text, word) => (' ' + text).includes(' ' + word);
 
 function near(a, b) {
  if (a === b) return true;
@@ -54,7 +57,7 @@ export function search(q, limit = 40, {category = '', fixes = false} = {}) {
   const names = [name, ...aliases].join(' ');
   const problems = norm(plain((e.errors || []).map(x => x.p).join(' ')));
   const summary = norm(plain(e.summary)), body = fixes ? norm(plain((e.errors || []).flatMap(x => [x.p, x.fix]).join(' '))) : fullText(e);
-  const scores = words.map(w => names.includes(w) ? 40 : problems.includes(w) ? 24 : summary.includes(w) ? 12 : body.includes(w) ? 5 : 0);
+  const scores = words.map(w => startsWord(names, w) ? 40 : startsWord(problems, w) ? 24 : startsWord(summary, w) ? 12 : startsWord(body, w) ? 5 : 0);
   if (scores.every(Boolean)) out.push({e, score: scores.reduce((a, b) => a + b, 0) + ([name, ...aliases].includes(phrase) ? 100 : 0)});
   else if (!fixes && words.length === 1 && phrase.length >= 5 && names.split(' ').some(w => near(w, phrase))) out.push({e, score: 3});
  }

@@ -31,6 +31,8 @@ export function openDishCatalog(components, onAdd, initialId = '') {
  const names = new Map(allEntries.map(e => [e.id, e]));
  const recipeIndex = recipes.map(entry => ({entry, keys: [entry.name, entry.name_en, ...(entry.aka || [])].filter(Boolean).map(normalize), text: normalize([entry.name, entry.name_en, ...(entry.aka || []), entry.summary, ...entry.base.items.map(([name]) => name)].join(' '))}));
  const techs = [...TECHNIQUES, ...['josper', 'ofyr'].filter(id => state.settings?.equipment?.includes(id)).map(id => [id, technique(id).es, technique(id).en])];
+ const guides = allEntries.filter(entry => technique(entry.technique));
+ const guideResult = entry => ({kind: 'tech', id: entry.technique, text: recipeName(entry), detail: plain(entry.summary, names)});
  const types = [
   ['all', t('Todo', 'All')],
   ['ingredient', t('Ingredientes', 'Ingredients')],
@@ -57,8 +59,11 @@ export function openDishCatalog(components, onAdd, initialId = '') {
    .map(candidate => ({kind: 'recipe', text: recipeName(candidate.entry), exact: exactRecipe(candidate), detail: plain(candidate.entry.summary, names), entry: candidate.entry}));
   const ingredients = state.kb ? searchIngredients(state.kb, state.kitchen, input.value, {limit: kind === 'all' && !q ? 5 : 30, english: en()})
    .map(result => ({kind: 'ingredient', text: result.label, exact: normalize(result.label) === q, detail: result.type === 'recipe' ? t('Subreceta propia', 'Your sub-recipe') : '', item: result.item})) : [];
-  const techniques = techs.filter(row => match(normalize(row.join(' ')))).slice(0, kind === 'all' && !q ? 4 : 30)
-   .map(row => ({kind: 'tech', text: label(row), exact: normalize(label(row)) === q, id: row[0]}));
+  const guideHits = guides.filter(entry => match(normalize([entry.name, entry.name_en, ...(entry.aka || [])].join(' '))))
+   .map(entry => ({...guideResult(entry), exact: !!q && [entry.name, entry.name_en, ...(entry.aka || [])].some(name => normalize(name) === q)}));
+  const techniques = [...guideHits, ...techs.filter(row => match(normalize(row.join(' '))))
+   .map(row => ({kind: 'tech', text: label(row), exact: !!q && normalize(label(row)) === q, id: row[0]}))]
+   .sort((a, b) => Number(b.exact) - Number(a.exact)).slice(0, kind === 'all' && !q ? 4 : 30);
   const all = [...preparations, ...ingredients, ...techniques];
   current = (kind === 'all' ? all.sort((a, b) => Number(b.exact) - Number(a.exact)) : all.filter(result => result.kind === kind));
   if (q && kind !== 'tech' && kind !== 'recipe' && !current.some(result => result.exact)) current.push({kind: 'ingredient', text: clip(input.value, 80), detail: t('Añadir con este nombre', 'Add with this name'), item: {n: clip(input.value, 80), k: null, src: 'free', w: 2}});
@@ -124,10 +129,13 @@ export function openDishCatalog(components, onAdd, initialId = '') {
   }
  });
  const initial = initialId && recipes.find(entry => entry.id === initialId);
- if (initial) {
-  input.value = recipeName(initial);
+ const initialGuide = initialId && guides.find(entry => entry.id === initialId);
+ if (initial || initialGuide) {
+  input.value = recipeName(initial || initialGuide);
   draw();
-  select({kind: 'recipe', text: recipeName(initial), detail: plain(initial.summary, names), entry: initial});
+  const result = initial ? {kind: 'recipe', text: recipeName(initial), detail: plain(initial.summary, names), entry: initial} : guideResult(initialGuide);
+  select(result);
+  lastResult = current.findIndex(hit => hit.kind === result.kind && hit.text === result.text);
   requestAnimationFrame(() => $('h3', choice)?.focus());
  } else {
   draw(); requestAnimationFrame(() => { if (dialog.el.classList.contains('in')) input.focus(); });

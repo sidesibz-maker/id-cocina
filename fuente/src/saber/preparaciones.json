@@ -599,5 +599,705 @@
       "pimientos-asados-alinados",
       "vinagreta-piparras"
     ]
+  },
+  {
+    "id": "verduras-a-la-brasa",
+    "name": "Verduras a la brasa",
+    "name_en": "Charcoal-grilled vegetables",
+    "cat": "conceptos",
+    "group": "Técnicas para verduras",
+    "aka": [
+      "asado de verduras a la parrilla",
+      "dorar sin quemar",
+      "brasa indirecta",
+      "charcoal grilled vegetables"
+    ],
+    "technique": "brasa",
+    "summary": "Organiza dos zonas de calor para dorar las verduras y terminar el interior sin pasarlas de tostado.",
+    "what": "La brasa permite separar el dorado de la cocción interior. Una zona caliente marca las superficies y otra más suave deja que el calor entre sin que se oscurezca demasiado la cara exterior. La dureza y el grosor de cada pieza determinan cuánto tiempo debe pasar en cada zona. La misma parrilla puede servir para calabacín, berenjena e hinojo si se tratan por separado.",
+    "method": [
+      "Prepara la parrilla con una zona de más brasa y otra de calor indirecto. Limpia la rejilla y deja que se estabilice el fuego. Reserva un sitio donde puedas apartar una pieza rápidamente si aparecen llamas.",
+      "Corta las verduras de forma regular y seca la superficie. Unta una película fina de aceite sobre el producto. Separa las piezas gruesas de las láminas y marca cada grupo por tandas, dejando hueco para dar la vuelta.",
+      "Dora una cara en la zona caliente hasta que se despegue con facilidad. Termina la pieza gruesa fuera del calor más fuerte. Usa una brocheta fina o la punta de un cuchillo para comprobar el centro en lugar de fiarte solo de las marcas.",
+      "Saca las piezas a una rejilla o bandeja sin apilarlas. Prueba una porción entera con la salsa que irá en el plato y ajusta sal o acidez al final."
+    ],
+    "ratios": [
+      {
+        "use": "Verdura tierna en láminas",
+        "ratio": "Corte uniforme de 8 a 12 mm",
+        "note": "Para calabacín son suficientes tandas cortas en la zona caliente si el centro cede al presionar."
+      },
+      {
+        "use": "Berenjena o hinojo grueso",
+        "ratio": "Cortes que mantengan una cara plana",
+        "note": "Marca y termina con calor indirecto. Si una cara se oscurece antes que la otra, gírala lejos de la brasa."
+      }
+    ],
+    "keys": [
+      "Distingue una marca tostada de un sabor a hollín. Si hay llamas continuas, cambia la pieza de zona antes de que la superficie se queme.",
+      "Separa las tandas por tipo y grosor. Una lámina fina no necesita la misma espera que un gajo de hinojo.",
+      "Para una aplicación concreta, prueba la [[crema-berenjena-brasa|crema de berenjena]] y compara su tostado con la verdura del plato."
+    ],
+    "errors": [
+      {
+        "p": "El exterior ya está negro y el centro duro",
+        "fix": "Acaba en calor indirecto. En la tanda siguiente reduce el grosor o usa antes el calor suave."
+      },
+      {
+        "p": "Las verduras pierden las marcas y se ablandan juntas",
+        "fix": "Retíralas sin apilar y añade el aliño al pase. Deja que salga el vapor de cada tanda."
+      }
+    ],
+    "pro": "Organiza una bandeja por producto y decide en cuál de las dos zonas termina cada pieza. Ten a mano pinzas y una bandeja libre para retirar primero las que lleguen a su punto. Prueba una sola al inicio del servicio para recalibrar cuando cambie la intensidad de la brasa.",
+    "uses": [
+      "Gajos de hinojo",
+      "Berenjena",
+      "Calabacín",
+      "Pimientos"
+    ],
+    "related": [
+      "crema-berenjena-brasa",
+      "verduras-al-vapor",
+      "hinojo-brasa-limon"
+    ]
+  },
+  {
+    "id": "verduras-al-vapor",
+    "name": "Verduras al vapor",
+    "name_en": "Steaming vegetables",
+    "cat": "conceptos",
+    "group": "Técnicas para verduras",
+    "aka": [
+      "cocción al vapor",
+      "vapor para verduras",
+      "cómo cocinar al vapor",
+      "steaming greens"
+    ],
+    "technique": "vapor",
+    "summary": "Cuece verduras con vapor y comprueba su punto por grosor para conservar una textura jugosa.",
+    "what": "En una vaporera, la verdura se cocina por el vapor que la rodea. La altura de la cesta, la carga y el grosor influyen en el resultado. Es un recurso práctico para servir una verdura con su propio sabor o para preparar una pieza que después solo necesita un tostado breve a la brasa.",
+    "method": [
+      "Corta la verdura en piezas de tamaño parecido. Separa los tallos duros y pásalos a cortes más finos. Si la vas a terminar a la brasa, corta de modo que cada pieza tenga una cara plana para marcar.",
+      "Lleva el agua a vapor antes de colocar la verdura. La cesta debe quedar por encima del agua. Coloca las piezas con espacio entre ellas y tapa; si tienes mucha cantidad, trabaja por tandas para que no se acumule peso sobre la primera capa.",
+      "Prueba una de las piezas gruesas cerca del final. Abre la tapa alejando de ti el vapor. Introduce una brocheta o corta una pieza y prueba el centro. Para marcarla después, retírala cuando aún ofrezca un poco de resistencia.",
+      "Deja que pierda vapor sobre una bandeja o rejilla. Si va a salir directamente, alíñala al final. Si necesita tostado, seca las caras de corte antes de ponerlas sobre la plancha o la brasa."
+    ],
+    "ratios": [
+      {
+        "use": "Guarnición de tallos firmes",
+        "ratio": "Cortes regulares de 1 a 2 cm",
+        "note": "Empieza la cata por una pieza del centro de la cesta, que puede cocerse a otro ritmo que las expuestas al borde."
+      },
+      {
+        "use": "Preparación para un marcado final",
+        "ratio": "Retirar un punto antes de servir",
+        "note": "El calor de la brasa termina el centro. Ajusta el tiempo según el primer corte que pruebes."
+      }
+    ],
+    "keys": [
+      "Para que el vapor circule, elige una cesta ancha y evita presionar la verdura con la tapa.",
+      "Elimina el exceso de humedad superficial antes de tostar. Una verdura mojada tarda más en marcarse.",
+      "Compara con [[verduras-a-la-brasa|verduras a la brasa]] si quieres usar vapor para el interior y fuego directo para el acabado."
+    ],
+    "errors": [
+      {
+        "p": "Algunas piezas duras y otras blandas",
+        "fix": "Separa tallos y hojas o piezas grandes y pequeñas. Saca primero las que ya ceden y prueba otra vez las más gruesas."
+      },
+      {
+        "p": "La verdura pierde cuerpo al aliñar",
+        "fix": "Déjala escurrir sin apilar. Añade la salsa fuera de la cesta y ajusta el aliño en el último momento."
+      }
+    ],
+    "pro": "Apunta qué grosor funcionó y prueba el centro al empezar cada tanda. Para un servicio con varias verduras, avanza primero las que tardan más y deja para el final las piezas finas. Si quieres contraste de temperatura, ten el aliño preparado y monta justo al sacar la cesta.",
+    "uses": [
+      "Brócoli y coliflor",
+      "Espárragos",
+      "Preparar hinojo para marcar"
+    ],
+    "related": [
+      "verduras-a-la-brasa",
+      "pure-coliflor-tostada",
+      "hinojo-brasa-limon"
+    ]
+  },
+  {
+    "id": "hinojo-brasa-limon",
+    "name": "Hinojo a la brasa con limón",
+    "name_en": "Charcoal fennel with lemon",
+    "cat": "bases",
+    "group": "Cremas y guarniciones",
+    "aka": [
+      "hinojo marcado",
+      "gajos de hinojo",
+      "hinojo a la parrilla",
+      "charcoal fennel"
+    ],
+    "role": "guarnicion",
+    "techniques": [
+      "brasa"
+    ],
+    "summary": "Gajos dorados con una cara tostada y el centro tierno, acabados con limón y aceite.",
+    "what": "La base del bulbo mantiene unido el gajo durante la cocción. El hinojo necesita calor suficiente para que ceda el centro; un marcado rápido solo dora la cara de corte. Este método te permite terminarlo en una zona suave y usar en el pase el jugo de limón y las hojas finas del propio hinojo.",
+    "base": {
+      "for": "una tanda con 600 g de hinojo limpio",
+      "items": [
+        [
+          "Hinojo",
+          "600 g"
+        ],
+        [
+          "Aceite de oliva virgen extra",
+          "35 g"
+        ],
+        [
+          "Zumo de limón",
+          "15 g"
+        ],
+        [
+          "Sal",
+          "4 g"
+        ]
+      ],
+      "steps": [
+        "Quita capas exteriores fibrosas y corta los tallos largos. Reserva las hojas finas. Abre el bulbo en gajos de grosor parecido, conservando una pequeña parte de la base para que no se separen las capas.",
+        "Unta los cortes con parte del aceite y márcalos en la rejilla caliente. Gira los gajos en cuanto la cara de abajo esté dorada y se desprenda con facilidad. Llévalos después a calor indirecto.",
+        "Comprueba el centro del gajo con una brocheta fina. Si el exterior va más adelantado, tápalo en la zona suave para terminar de ablandar el centro. Retira cada gajo cuando ceda sin perder la forma.",
+        "Aliña con el resto del aceite, el limón y parte de la sal. Prueba con el plato completo antes de añadir más. Usa las hojas finas picadas al final si el hinojo necesita un aroma fresco."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Guarnición de pescado",
+        "ratio": "15 g de zumo por 600 g de hinojo",
+        "note": "Pon primero parte del limón y ajusta si el pescado ya lleva una salsa ácida."
+      },
+      {
+        "use": "Tapa templada de verduras",
+        "ratio": "Cortar cada gajo ancho en dos por el centro",
+        "note": "Aliña ya cortado para que el líquido llegue entre las capas."
+      }
+    ],
+    "keys": [
+      "Mientras cortes, deja una parte de la base en cada gajo. Así no se escapan las capas al girar con pinzas.",
+      "El tostado debe ir con un centro tierno. Consulta [[verduras-a-la-brasa|las dos zonas de calor]] si la primera tanda se dora demasiado deprisa.",
+      "Acaba con una cucharada pequeña de aliño. Prueba el hinojo junto a la pieza para decidir si hace falta más acidez."
+    ],
+    "errors": [
+      {
+        "p": "El gajo se rompe al voltearlo",
+        "fix": "Corta por el centro del bulbo conservando base en los dos gajos; gira sujetando toda la cara de corte."
+      },
+      {
+        "p": "Centro fibroso después de marcar",
+        "fix": "Termina en calor suave. Para bulbos grandes, adelanta el centro con [[verduras-al-vapor|vapor]] y seca antes de pasar por la rejilla."
+      }
+    ],
+    "uses": [
+      "Lubina a la brasa",
+      "Calabaza asada",
+      "Ensalada templada de legumbres"
+    ],
+    "pro": "Antes del servicio, separa los gajos por grosor para que cada tanda termine a la vez. Ten el limón y el aceite medidos aparte y aliña solo cuando emplatas. Si necesitas una guarnición más fresca, sustituye parte del limón del aliño por unas hojas crudas picadas.",
+    "related": [
+      "verduras-a-la-brasa",
+      "verduras-al-vapor",
+      "gremolata"
+    ]
+  },
+  {
+    "id": "gremolata",
+    "name": "Gremolata de limón y perejil",
+    "name_en": "Lemon-parsley gremolata",
+    "cat": "bases",
+    "group": "Crujientes y acabados",
+    "aka": [
+      "picada de perejil y limon",
+      "acabado de limón y ajo",
+      "gremolata de perejil",
+      "parsley gremolata"
+    ],
+    "role": "toque",
+    "techniques": [],
+    "summary": "Picada fresca de perejil, ralladura de limón y ajo para terminar carnes, pescados y verduras.",
+    "what": "La gremolata se reparte como un acabado aromático. La ralladura aporta aroma de limón sin añadir tanto líquido como un aliño y el perejil mantiene el contraste verde. El ajo crudo tiene mucha presencia, por lo que conviene probar la picada en pequeñas cantidades con el producto que va a acompañar.",
+    "base": {
+      "for": "una tanda con 30 g de perejil limpio",
+      "items": [
+        [
+          "Perejil",
+          "30 g"
+        ],
+        [
+          "Ralladura de limón",
+          "5 g"
+        ],
+        [
+          "Ajo",
+          "3 g"
+        ]
+      ],
+      "steps": [
+        "Lava y seca bien el perejil. Separa los tallos gruesos y pesa 30 g de hojas y tallos finos. Si sale agua al apretarlo en la tabla, sécalo antes de picar.",
+        "Ralla la piel amarilla del limón. Pica el ajo muy fino con un cuchillo, retirando primero el germen si prefieres reducir su intensidad. Mezcla el ajo con la ralladura para que se reparta al añadir el perejil.",
+        "Pica el perejil a cuchillo. Mezcla solo lo necesario para distribuir los tres ingredientes. Prueba primero una pizca con una cucharada de la salsa o la guarnición del plato.",
+        "Reparte la picada al final. Para una carne con jugo, ponla encima de la pieza o en una zona sin líquido. Si va con pescado, empieza con poco ajo y deja los trozos de perejil visibles."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Para guiso o cordero",
+        "ratio": "Hasta 3 g de ajo por 30 g de perejil",
+        "note": "La salsa del guiso distribuye el ajo en el bocado. Ajusta con una prueba en el plato."
+      },
+      {
+        "use": "Para pescado blanco",
+        "ratio": "Empieza con 1 g de ajo por 30 g de perejil",
+        "note": "Mantén el limón y el perejil como aromas principales."
+      }
+    ],
+    "keys": [
+      "Pica con cuchillo afilado para no machacar el perejil ni hacerlo sudar en la tabla.",
+      "Añádela al final con una cuchara seca. Si la hierves en el jugo, perderás parte del contraste fresco.",
+      "Si el plato también necesita crujiente, usa [[migas-limon|migas de limón]] en lugar de sumar dos acabados con el mismo aroma."
+    ],
+    "errors": [
+      {
+        "p": "Solo se nota ajo",
+        "fix": "Añade más perejil y ralladura a la mezcla. Para la próxima tanda, reserva parte del ajo hasta catar el conjunto."
+      },
+      {
+        "p": "La picada se oscurece o se apelmaza",
+        "fix": "Seca mejor el perejil y pica por tandas. Incorpórala al plato caliente justo antes de servir."
+      }
+    ],
+    "uses": [
+      "Cordero asado",
+      "Setas a la plancha",
+      "Hinojo a la brasa",
+      "Pescado blanco"
+    ],
+    "pro": "Prepara los ingredientes limpios y secos. Pica y mezcla la cantidad que esperas usar al inicio del pase. Sirve con la punta de una cuchara, ajustando por plato. Si la salsa ya tiene ajo crudo, prueba antes de añadir la picada para evitar superponer intensidad.",
+    "related": [
+      "hinojo-brasa-limon",
+      "migas-limon",
+      "aceites-aromatizados"
+    ]
+  },
+  {
+    "id": "ajoblanco",
+    "name": "Ajoblanco de almendra",
+    "name_en": "Almond ajoblanco",
+    "cat": "salsas",
+    "group": "Aliños de pase",
+    "aka": [
+      "ajo blanco",
+      "sopa fría de almendras",
+      "salsa fría de almendra",
+      "cold almond soup"
+    ],
+    "role": "salsa",
+    "techniques": [
+      "emulsion"
+    ],
+    "summary": "Crema fría de almendra y pan que puedes servir como sopa o dejar más espesa para acompañar verduras.",
+    "what": "El ajoblanco combina almendra, pan, agua, aceite, ajo y vinagre. La textura cambia al ajustar el agua: puede caer como una sopa fría o quedar bastante ligada para acompañar una pieza asada. La almendra y el ajo varían según la partida; el vinagre se ajusta al final para mantener el equilibrio.",
+    "base": {
+      "for": "una tanda con 180 g de almendra",
+      "items": [
+        [
+          "Almendra",
+          "180 g"
+        ],
+        [
+          "Pan",
+          "65 g"
+        ],
+        [
+          "Agua",
+          "600 ml"
+        ],
+        [
+          "Aceite de oliva virgen extra",
+          "55 g"
+        ],
+        [
+          "Vinagre de Jerez",
+          "16 g"
+        ],
+        [
+          "Ajo",
+          "4 g"
+        ],
+        [
+          "Sal",
+          "5 g"
+        ]
+      ],
+      "steps": [
+        "Usa almendra cruda pelada y pan sin corteza dura. Humedece el pan con parte del agua medida. Reserva una porción de agua para el ajuste final y corta el ajo en trozos.",
+        "Tritura la almendra con el pan, el ajo y buena parte del agua. Sigue hasta que desaparezca el grano grueso. Si la batidora apenas mueve la pasta, añade algo de agua de la jarra en lugar de insistir con las cuchillas en vacío.",
+        "Añade el aceite en hilo fino. Incorpora la sal y parte del vinagre. Prueba la base y decide cuánto del agua y del vinagre reservados añadir según vaya a servirse como sopa o como salsa.",
+        "Cuela si quieres una textura especialmente lisa y prueba otra vez una vez fría. Para servir con verdura asada, coloca una cucharada bajo una parte del producto y deja un lado visible y seco."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Sopa fría",
+        "ratio": "Hasta 600 ml por 180 g de almendra",
+        "note": "Ajusta el líquido en el último momento y prueba la acidez en frío."
+      },
+      {
+        "use": "Salsa para un plato",
+        "ratio": "Empieza con 400 ml por 180 g de almendra",
+        "note": "Añade más agua en pequeñas cantidades según la absorción del pan."
+      }
+    ],
+    "keys": [
+      "Mide el agua antes de empezar y reserva parte. Así puedes aligerar sin perder de vista la proporción de la tanda.",
+      "Tritura bien la almendra antes de añadir todo el aceite. Si buscas un acabado fino, usa un colador después.",
+      "Prueba con la guarnición final. Un acompañamiento ácido como [[cebolla-encurtida|cebolla encurtida]] puede hacer innecesario añadir el resto del vinagre."
+    ],
+    "errors": [
+      {
+        "p": "El ajoblanco queda arenoso",
+        "fix": "Tritura con suficiente agua para que circulen las almendras y cuela al final si aún se nota grano."
+      },
+      {
+        "p": "Demasiado ajo para servirlo como salsa",
+        "fix": "Mezcla con una porción de base sin ajo. En la próxima tanda, añade el ajo en dos veces."
+      }
+    ],
+    "uses": [
+      "Pimientos asados",
+      "Uvas y almendras",
+      "Pescado a la brasa",
+      "Ensaladas templadas"
+    ],
+    "pro": "Para dos servicios distintos, deja una parte de la tanda espesa y aligera solo la que sirvas en cuenco. Guarda por escrito qué cantidad de agua y vinagre funcionó con el pan de hoy para poder repetir la textura en la próxima tanda.",
+    "related": [
+      "emulsiones",
+      "pimientos-asados-alinados",
+      "cebolla-encurtida"
+    ]
+  },
+  {
+    "id": "patata-chafada-brasa",
+    "name": "Patata chafada a la brasa",
+    "name_en": "Crushed charcoal-grilled potatoes",
+    "cat": "bases",
+    "group": "Cremas y guarniciones",
+    "aka": [
+      "patata aplastada crujiente",
+      "patatas chafadas",
+      "patata cocida y marcada",
+      "smashed grilled potatoes"
+    ],
+    "role": "guarnicion",
+    "techniques": [
+      "hervido",
+      "brasa"
+    ],
+    "summary": "Patatas tiernas por dentro y doradas por fuera que puedes acabar con una picada fresca o servir junto a un jugo.",
+    "what": "La patata se cuece entera hasta que cede y se aplasta lo justo para ganar superficie. Después se dora por las dos caras. El grosor y la humedad importan más que la forma: una patata húmeda tarda en hacer costra, mientras que una demasiado fina puede romperse al darle la vuelta.",
+    "base": {
+      "for": "una tanda con 600 g de patatas pequeñas",
+      "items": [
+        [
+          "Patata",
+          "600 g"
+        ],
+        [
+          "Aceite de oliva virgen extra",
+          "30 g"
+        ],
+        [
+          "Sal",
+          "5 g"
+        ]
+      ],
+      "steps": [
+        "Elige patatas de tamaño parecido y cuécelas enteras con piel. Empieza a comprobar las más pequeñas en cuanto puedas atravesarlas con una brocheta. Saca cada una cuando el centro ceda y la patata mantenga su forma.",
+        "Escurre las patatas y déjalas extenderse en una bandeja hasta que pierdan humedad superficial. Cháfalas con una espátula ancha hasta dejar aproximadamente 1,5 cm de grosor. Conserva la piel en las caras planas y los bordes irregulares.",
+        "Úntalas con una parte del aceite. Dóralas sobre una plancha de hierro o una rejilla que permita girarlas sin que se cuelen los trozos. Espera a que la primera cara se despegue con facilidad antes de dar la vuelta.",
+        "Retíralas a una rejilla, acaba con la sal y sirve la salsa al lado si quieres mantener crujiente la base. Si preparas un acabado con [[gremolata|gremolata]], añádelo justo al emplatar."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Guarnición crujiente",
+        "ratio": "30 g de aceite por 600 g de patata",
+        "note": "Usa el suficiente para cubrir las caras con una película fina. Si cae aceite al fuego, cambia a una plancha."
+      },
+      {
+        "use": "Patata para un plato con jugo",
+        "ratio": "Grosor de 1,5 a 2 cm",
+        "note": "Deja que se vea parte de la cara dorada. Sirve el jugo en el fondo o al lado."
+      }
+    ],
+    "keys": [
+      "Cuece hasta que el centro ceda. Si aún está duro, la patata se partirá en vez de aplastarse.",
+      "Usa una espátula amplia para girar cada pieza de una vez. Mantén la parrilla limpia para facilitar el despegado.",
+      "Para tandas grandes, dora solo lo que puedas emplatar sin apilar. Una fuente honda retiene vapor y ablanda las costras."
+    ],
+    "errors": [
+      {
+        "p": "Se deshacen al chafar",
+        "fix": "Prueba con otra patata de la tanda y presiona menos. La próxima vez, retíralas de la cocción en cuanto ceda el centro."
+      },
+      {
+        "p": "Se pegan y no se doran",
+        "fix": "Seca las caras, usa una película fina de aceite y espera a que el primer lado forme costra antes de moverlo."
+      }
+    ],
+    "uses": [
+      "Verduras a la brasa",
+      "Carne con jugo",
+      "Guarnición de pescado"
+    ],
+    "pro": "Pasa una de las primeras patatas del servicio por la zona de calor que vas a usar y comprueba el punto al abrirla. Guarda los acabados frescos o húmedos aparte para poder dosificar plato a plato.",
+    "related": [
+      "verduras-a-la-brasa",
+      "gremolata",
+      "jugo-de-carne"
+    ]
+  },
+  {
+    "id": "crema-garbanzos-comino",
+    "name": "Crema de garbanzos y comino",
+    "name_en": "Chickpea and cumin purée",
+    "cat": "bases",
+    "group": "Cremas y guarniciones",
+    "aka": [
+      "puré de garbanzos con limón",
+      "base de garbanzo",
+      "crema de legumbres",
+      "chickpea cream"
+    ],
+    "role": "cremoso",
+    "techniques": [
+      "pure"
+    ],
+    "summary": "Una crema de garbanzos cocidos con limón y comino, firme para poner bajo verduras tibias o más fluida para servir con pan.",
+    "what": "La crema se sostiene con la propia pulpa del garbanzo. Se afina con agua mientras se tritura y se ajusta con aceite y limón. Un garbanzo recién cocido puede necesitar menos agua que uno muy escurrido, de modo que el líquido indicado sirve como punto de partida para ajustar cada tanda.",
+    "base": {
+      "for": "una tanda con 500 g de garbanzos cocidos y escurridos",
+      "items": [
+        [
+          "Garbanzo",
+          "500 g"
+        ],
+        [
+          "Agua",
+          "140 g"
+        ],
+        [
+          "Aceite de oliva virgen extra",
+          "35 g"
+        ],
+        [
+          "Zumo de limón",
+          "22 g"
+        ],
+        [
+          "Comino",
+          "2 g"
+        ],
+        [
+          "Sal",
+          "4 g"
+        ]
+      ],
+      "steps": [
+        "Comprueba que los garbanzos se aplastan fácilmente y pésalos una vez escurridos. Si están duros al morder, termina su cocción antes de triturar. Si ya llevan sal, reserva parte de la que indica la receta.",
+        "Tuesta el comino brevemente en una sartén sin aceite hasta que se note su aroma. Pásalo a un plato para detener el tostado y, si es entero, muélelo antes de mezclar.",
+        "Tritura los garbanzos con la mitad del agua, el comino y parte del limón. Añade agua a cucharadas mientras las cuchillas trabajen. Cuando la crema se alise, incorpora el aceite y prueba antes de añadir toda la sal o el resto del limón.",
+        "Extiende una cucharada en un plato. Si necesitas que aguante una verdura encima, para cuando conserve el surco. Si la sirves en un cuenco con pan, añade parte del agua restante para que se recoja sin esfuerzo."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Base para hinojo o calabaza",
+        "ratio": "Hasta 140 g de agua por 500 g de garbanzos cocidos",
+        "note": "Empieza con menos de la mitad y comprueba la consistencia con la verdura encima."
+      },
+      {
+        "use": "Crema más fluida para un cuenco",
+        "ratio": "Añadir agua de 15 en 15 g",
+        "note": "Prueba la acidez y la sal tras cada ajuste."
+      }
+    ],
+    "keys": [
+      "El centro del garbanzo tiene que estar tierno antes de triturar. Añadir más aceite no arregla un garbanzo duro.",
+      "El comino acompaña al plato. Mezcla y prueba antes de decidir si la base necesita más.",
+      "Un encurtido como la [[cebolla-encurtida|cebolla morada]] puede aportar el contraste ácido y dejar el limón de la crema en segundo plano."
+    ],
+    "errors": [
+      {
+        "p": "La crema queda granulosa",
+        "fix": "Si los garbanzos estaban tiernos, añade un poco de agua para que circulen en la batidora y tritura de nuevo. Si estaban duros, corrige primero la cocción."
+      },
+      {
+        "p": "El comino tapa todo",
+        "fix": "Mezcla con parte de garbanzos triturados sin comino. En la siguiente tanda, añade la especia en dos veces y prueba con el plato completo."
+      }
+    ],
+    "uses": [
+      "Hinojo a la brasa",
+      "Calabaza tostada",
+      "Verduras con aliño ácido"
+    ],
+    "pro": "Ajusta el espesor antes del pase. Usa una cuchara para poner la misma cantidad en cada plato y reserva una parte como base sin terminar por si necesitas suavizar una tanda. Pruébala junto a la verdura, que puede aportar su propio jugo.",
+    "related": [
+      "hinojo-brasa-limon",
+      "cebolla-encurtida",
+      "vinagreta-piparras"
+    ]
+  },
+  {
+    "id": "alino-alcaparras-limon",
+    "name": "Aliño de alcaparras y limón",
+    "name_en": "Caper and lemon dressing",
+    "cat": "salsas",
+    "group": "Aliños de pase",
+    "aka": [
+      "vinagreta de alcaparras",
+      "aliño para pescado blanco",
+      "alcaparras con limón",
+      "caper vinaigrette"
+    ],
+    "role": "fresco",
+    "techniques": [],
+    "summary": "Una vinagreta suelta con trocitos salados de alcaparra para pescado, patatas y verdura asada.",
+    "what": "La alcaparra da puntos de sal y acidez en un aliño con limón y aceite. El resultado se sirve removido y con parte del sólido en cada cucharada. Va bien cuando tienes una pieza principal con tostado o grasa y quieres aportar frescor sin cubrirla con una salsa densa.",
+    "base": {
+      "for": "una tanda con 40 g de alcaparras escurridas",
+      "items": [
+        [
+          "Alcaparra",
+          "40 g"
+        ],
+        [
+          "Aceite de oliva virgen extra",
+          "65 g"
+        ],
+        [
+          "Zumo de limón",
+          "18 g"
+        ],
+        [
+          "Agua",
+          "12 g"
+        ],
+        [
+          "Perejil",
+          "5 g"
+        ]
+      ],
+      "steps": [
+        "Prueba una alcaparra antes de montar el aliño. Escurre las de vinagre y, si están conservadas en sal, enjuágalas hasta que su punto de sal sea adecuado. Pesa 40 g después de ese ajuste.",
+        "Pica la mitad de las alcaparras a cuchillo y deja el resto entero si su tamaño es pequeño. Mezcla el zumo de limón y el agua, añade la alcaparra y prueba la parte líquida antes de añadir aceite.",
+        "Incorpora el aceite con un tenedor y añade el perejil seco picado. Si el limón ya domina, reserva algo de la parte ácida antes de completar la tanda. Remueve cada vez que vayas a servir para repartir sólidos y aceite.",
+        "Prueba primero unas gotas sobre una porción del producto. Para una patata caliente, puedes dejar caer algo de líquido en la base. En un pescado de piel crujiente, ponlo al lado o sobre la carne y conserva la parte tostada visible."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Pescado a la brasa",
+        "ratio": "65 g de aceite y hasta 18 g de limón por 40 g de alcaparras",
+        "note": "Empieza con poca cantidad y reparte el sólido alrededor."
+      },
+      {
+        "use": "Patata o legumbres templadas",
+        "ratio": "12 g de agua para aligerar la base",
+        "note": "Añade un poco más si necesitas que el aliño se reparta por toda la guarnición."
+      }
+    ],
+    "keys": [
+      "No sales por costumbre. Prueba primero las alcaparras y después el aliño con el producto principal.",
+      "El perejil va al final para mantener su aroma. Si quieres un toque seco sin más líquido, prueba la [[gremolata|gremolata]].",
+      "Remueve con una cuchara que llegue al fondo. La alcaparra picada se asienta al reposar."
+    ],
+    "errors": [
+      {
+        "p": "El aliño está demasiado salado",
+        "fix": "Retira parte de las alcaparras y añade un poco de base de aceite, agua y limón sin sal. Vuelve a probar con el plato."
+      },
+      {
+        "p": "Llega poco sólido al plato",
+        "fix": "Remueve y recoge el aliño desde el fondo del recipiente. Pica algunas alcaparras más para repartir mejor el bocado."
+      }
+    ],
+    "uses": [
+      "Lubina a la brasa",
+      "Patata chafada",
+      "Pimientos asados"
+    ],
+    "pro": "Mantén un recipiente de boca amplia para poder recoger líquido y sólido en la misma cucharada. Prepara el primero del servicio como una cata completa y anota cuánta cantidad queda visible en el plato y cuánto sabor a limón aporta.",
+    "related": [
+      "vinagreta",
+      "gremolata",
+      "patata-chafada-brasa"
+    ]
+  },
+  {
+    "id": "escaldado-de-verduras",
+    "name": "Escaldado de verduras",
+    "name_en": "Blanching vegetables",
+    "cat": "conceptos",
+    "group": "Técnicas para verduras",
+    "aka": [
+      "blanquear verduras",
+      "blanqueado de judías verdes",
+      "escaldar espárragos",
+      "vegetable blanching"
+    ],
+    "technique": "hervido",
+    "summary": "Cocción breve en agua que puedes usar para preparar una verdura antes de saltearla, aliñarla o marcarla.",
+    "what": "El escaldado usa agua en ebullición y una cocción breve. El objetivo puede ser quitar dureza a la verdura, dejarla al punto para otro acabado o ablandar una piel que quieras retirar. Los segundos o minutos cambian con el corte y la carga. La prueba de una pieza te dice más que un tiempo fijo tomado de otra receta.",
+    "method": [
+      "Prepara piezas del mismo tamaño. Separa las partes finas de los tallos gruesos. Pon una olla con agua suficiente para cubrir la tanda y una bandeja con espacio para escurrirla al sacarla.",
+      "Cuando hierva, incorpora poca cantidad. Prueba una pieza gruesa tras recuperar el hervor. Si debe terminar en la brasa o el salteado, sácala mientras aún ofrezca algo de resistencia, contando con ese calor adicional.",
+      "Si quieres parar la cocción para una preparación posterior, pásala a agua muy fría y escúrrela en cuanto deje de estar caliente. Extiéndela y sécala antes de marcarla. Si se va a servir caliente enseguida, puedes escurrirla y acabar directamente.",
+      "Prueba el resultado en el plato completo. Si la verdura necesita más cuerpo, reduce el tiempo de la siguiente tanda. Si después de marcar sigue dura, adelanta más la cocción en agua o separa los tallos por grosor."
+    ],
+    "ratios": [
+      {
+        "use": "Judías verdes o espárragos para guarnición",
+        "ratio": "Tandas pequeñas y regulares",
+        "note": "Empieza probando los tallos más gruesos. Retira primero los que estén a punto si hay varios tamaños."
+      },
+      {
+        "use": "Pieza para saltear o dorar",
+        "ratio": "Retirar antes de que esté lista para servir",
+        "note": "Escurre y seca la superficie para que tome color al final."
+      }
+    ],
+    "keys": [
+      "Mide el tiempo de la primera tanda que funcione y anota el grosor. Así puedes repetir una tanda comparable.",
+      "Prepara el escurrido antes de empezar. El agua que queda entre las piezas sigue calentándolas.",
+      "Si buscas una cocción inicial con menos agua en contacto con el producto, compara con [[verduras-al-vapor|verduras al vapor]]."
+    ],
+    "errors": [
+      {
+        "p": "La primera tanda queda al punto y la segunda blanda",
+        "fix": "Mira si se acumularon más piezas juntas. Reduce la carga, espera a que el agua recupere temperatura y prueba antes de sacar."
+      },
+      {
+        "p": "La verdura cuece en la sartén y queda sin color",
+        "fix": "Escurre y seca bien antes de saltear. Calienta la sartén y trabaja por tandas, dejando hueco entre piezas."
+      }
+    ],
+    "uses": [
+      "Judías verdes",
+      "Espárragos",
+      "Acelga para saltear"
+    ],
+    "pro": "Define qué verdura se sirve directamente y qué verdura termina sobre la plancha. Separa ambas tandas y señala el punto que quieres en la primera prueba. Coloca el escurridor y la bandeja cerca para poder retirar cada tanda de una vez.",
+    "related": [
+      "verduras-al-vapor",
+      "verduras-a-la-brasa",
+      "patata-chafada-brasa"
+    ]
   }
 ]

@@ -86,41 +86,61 @@ export function friendly(error, fallback) {
 }
 
 // ---------- Hojas (ventanas): abajo en el móvil, centradas en el ordenador ----------
-let openSheets = [];
+const openSheets = [];
+function updateSheets() {
+ const top = openSheets.at(-1);
+ $('#app').inert = !!top;
+ document.documentElement.classList.toggle('has-sheet', !!top);
+ openSheets.forEach(s => { s.el.inert = s !== top; });
+}
 export function sheet({title = '', body = '', wide = false, onClose = null, label = ''} = {}) {
  const host = $('#sheets'), wrap = document.createElement('div');
  wrap.className = 'sheet-wrap';
- wrap.innerHTML = '<div class="sheet-back" data-close></div><section class="sheet' + (wide ? ' sheet-wide' : '') + '" role="dialog" aria-modal="true" aria-label="' + esc(label || title) + '" tabindex="-1">' +
+ wrap.innerHTML = '<div class="sheet-back" data-close></div><section class="sheet' + (wide ? ' sheet-wide' : '') + '" role="dialog" aria-modal="true" aria-label="' + esc(label || title || t('Ventana', 'Dialog')) + '" tabindex="-1">' +
   '<header class="sheet-head"><h2 class="sheet-title">' + esc(title) + '</h2><button type="button" class="iconbtn" data-close aria-label="' + esc(t('Cerrar', 'Close')) + '">' + icon('x') + '</button></header>' +
   '<div class="sheet-body">' + body + '</div></section>';
- const previous = document.activeElement;
- const close = () => {
-  if (!wrap.isConnected) return;
+ const previous = document.activeElement, dialog = $('.sheet', wrap);
+ const close = ({restoreFocus = true} = {}) => {
+  const index = openSheets.indexOf(api);
+  if (index < 0) return;
+  const wasTop = index === openSheets.length - 1;
+  openSheets.splice(index, 1);
+  wrap.inert = true;
   wrap.classList.remove('in');
-  openSheets = openSheets.filter(s => s !== api);
-  setTimeout(() => wrap.remove(), 220);
-  if (!openSheets.length) document.documentElement.classList.remove('has-sheet');
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) wrap.remove();
+  else setTimeout(() => wrap.remove(), 220);
+  updateSheets();
+  const next = openSheets.at(-1);
   onClose?.();
-  previous?.focus?.({preventScroll: true});
+  if (!restoreFocus || !wasTop || next !== openSheets.at(-1)) return;
+  if (previous?.isConnected && !previous.closest('[inert]')) previous.focus({preventScroll: true});
+  if (document.activeElement === document.body) (next ? $('.sheet', next.el) : $('#view'))?.focus({preventScroll: true});
  };
  const api = {el: wrap, body: $('.sheet-body', wrap), close};
- wrap.addEventListener('click', e => { if (e.target.closest('[data-close]')) close(); });
+ wrap.addEventListener('click', e => { if (openSheets.at(-1) === api && e.target.closest('[data-close]')) close(); });
  wrap.addEventListener('keydown', e => {
-  if (e.key === 'Escape') { e.stopPropagation(); close(); return; }
+  if (openSheets.at(-1) !== api || e.isComposing) return;
+  if (e.key === 'Escape') { e.preventDefault(); e.stopPropagation(); close(); return; }
   if (e.key !== 'Tab') return;
-  const items = $$('button,a[href],input,select,textarea,[tabindex]:not([tabindex="-1"])', wrap).filter(el => !el.disabled && el.offsetParent !== null);
-  if (!items.length) return;
-  const first = items[0], last = items[items.length - 1];
-  if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
-  else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  const items = $$('button, a[href], input, select, textarea, summary, [contenteditable], [tabindex]', dialog)
+   .filter(el => el.tabIndex >= 0 && !el.matches(':disabled') && el.getClientRects().length && getComputedStyle(el).visibility === 'visible');
+  const current = items.indexOf(document.activeElement);
+  if (current < 0 || (e.shiftKey ? current === 0 : current === items.length - 1)) {
+   e.preventDefault();
+   (e.shiftKey ? items.at(-1) || dialog : items[0] || dialog).focus();
+  }
  });
  host.append(wrap);
  openSheets.push(api);
- document.documentElement.classList.add('has-sheet');
- requestAnimationFrame(() => { wrap.classList.add('in'); $('.sheet', wrap).focus({preventScroll: true}); });
+ updateSheets();
+ requestAnimationFrame(() => {
+  if (!openSheets.includes(api)) return;
+  wrap.classList.add('in');
+  if (openSheets.at(-1) === api && !wrap.contains(document.activeElement)) dialog.focus({preventScroll: true});
+ });
  return api;
 }
-export const closeSheets = () => [...openSheets].forEach(s => s.close());
+export const closeSheets = () => [...openSheets].reverse().forEach(s => s.close({restoreFocus: false}));
 
 // Pregunta de sí o no. Devuelve una promesa con true o false.
 export function ask({title, text = '', yes, no = t('Cancelar', 'Cancel'), danger = false}) {

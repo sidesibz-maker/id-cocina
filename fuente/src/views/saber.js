@@ -8,6 +8,7 @@ import {iaOn, askIa, iaMessage} from '../ia.js';
 import {copy, parseReply} from '../ai.js';
 import {emptyState} from './shared.js';
 import {go} from '../nav.js';
+import {technique} from '../flavor-core.js';
 
 let query = '', category = '', fixes = false, activeTab = null, tabFor = '';
 const SEEN = 'id-cocina-biblioteca-vistas';
@@ -66,11 +67,12 @@ function results() {
 }
 const STARTERS = ['bechamel', 'mayonesa', 'fumet', 'holandesa', 'romesco', 'jugo-de-carne'];
 const GUIDES = [
+ ['Técnicas para verduras', 'Vegetable techniques', t('Dora con dos zonas de calor o usa vapor antes de marcar.', 'Brown in two heat zones or steam before grilling.'), ['verduras-a-la-brasa', 'verduras-al-vapor', 'escaldado-de-verduras'], 'metodo'],
  ['Salsas que se cortan', 'Split sauces', t('Distingue si falló la emulsión en frío o al calentarla.', 'Check whether the emulsion broke cold or over heat.'), ['mayonesa', 'holandesa'], 'trucos'],
  ['Jugos para carnes a la brasa', 'Jus for grilled meats', t('Consulta el fondo de partida y cómo llevarlo a un jugo de servicio.', 'Look up the starting stock and how to turn it into a jus for service.'), ['fondo-oscuro', 'jugo-de-carne'], 'receta'],
  ['Contrastes para la brasa', 'Contrasts for grilled dishes', t('Elige entre una base cremosa, un acabado crujiente y un aliño ácido.', 'Choose a creamy base, a crunchy finish or a sharp dressing.'), ['crema-berenjena-brasa', 'migas-limon', 'vinagreta-piparras'], 'receta'],
- ['Guarniciones listas para el pase', 'Sides ready for service', t('Añade una verdura asada, un puré o una salsa fría a tu plato.', 'Add a roast vegetable, a purée or a chilled sauce to your dish.'), ['pimientos-asados-alinados', 'pure-coliflor-tostada', 'salsa-yogur-limon'], 'receta'],
- ['Salsas para pescado y verdura', 'Sauces for fish and vegetables', t('Elige entre una salsa de frutos secos y una emulsión caliente de mantequilla.', 'Choose between a nut sauce and a warm butter emulsion.'), ['romesco', 'beurre-blanc'], 'receta']
+ ['Guarniciones listas para el pase', 'Sides ready for service', t('Añade una verdura asada, un puré o una salsa fría a tu plato.', 'Add a roast vegetable, a purée or a chilled sauce to your dish.'), ['patata-chafada-brasa', 'crema-garbanzos-comino', 'pimientos-asados-alinados'], 'receta'],
+ ['Salsas para pescado y verdura', 'Sauces for fish and vegetables', t('Elige entre una salsa de frutos secos y una emulsión caliente de mantequilla.', 'Choose between a nut sauce and a warm butter emulsion.'), ['romesco', 'beurre-blanc', 'alino-alcaparras-limon'], 'receta']
 ];
 function homeHtml() {
  const all = entries(), filtering = hasSearch(), result = results();
@@ -110,34 +112,47 @@ function inDishes(e) {
 }
 function mineHtml(e) {
  const m = saberMine(e.id), vs = (m?.versions || []).slice().reverse(), last = vs[0];
- const start = last ? last.text : (e.base ? (e.base.for ? t('Para ', 'For ') + e.base.for + '\n' : '') + (e.base.items || []).map(x => '- ' + x[0] + ': ' + x[1]).join('\n') + '\n\n' + (e.base.steps || []).map((s, k) => (k + 1) + '. ' + s).join('\n') : '');
+ const steps = (e.base?.steps || e.method || []).map((step, i) => (i + 1) + '. ' + step).join('\n');
+ const start = last ? last.text : (e.base ? (e.base.for ? t('Para ', 'For ') + e.base.for + '\n' : '') + (e.base.items || []).map(x => '- ' + x[0] + ': ' + x[1]).join('\n') + '\n\n' + steps : steps);
  return '<div id="kMine">' +
   (last ? '<div class="kversion"><p class="fine">' + esc(t('Tu última versión, ', 'Your latest version, ') + relDay(last.at).toLowerCase() + (last.by ? t(', de ', ', by ') + last.by : '')) + (last.why ? '. ' + esc(last.why) : '') + '</p><div class="kv-text">' + esc(last.text) + '</div></div>' : '<p class="hint">' + esc(t('Escribe cómo lo haces tú: tus proporciones, tus trucos, para qué platos lo cambias. Cada vez que guardes queda una versión nueva y la anterior se guarda en el historial.', 'Write how you make it: your ratios, your tricks, which dishes you change it for. Each save is a new version and the previous one stays in the history.')) + '</p>') +
-  '<label class="mini" for="kText">' + esc(last ? t('Cambiarla', 'Change it') : t('Empieza desde la receta base', 'Start from the base recipe')) + '</label><textarea id="kText" rows="8" maxlength="8000" data-voice>' + esc(start) + '</textarea>' +
+  '<label class="mini" for="kText">' + esc(last ? t('Cambiarla', 'Change it') : (e.method?.length ? t('Empieza desde el método base', 'Start from the base method') : t('Empieza desde la receta base', 'Start from the base recipe'))) + '</label><textarea id="kText" rows="8" maxlength="8000" data-voice>' + esc(start) + '</textarea>' +
   '<label class="mini" for="kWhy">' + esc(t('Qué cambias y por qué (opcional)', 'What you change and why (optional)')) + '</label><input id="kWhy" maxlength="300" placeholder="' + esc(t('p. ej. más espesa para las croquetas de jamón', 'e.g. thicker for the ham croquettes')) + '" autocomplete="off">' +
   '<div class="row-actions row-left"><button type="button" class="btn primary" data-act="save-version">' + icon('check') + esc(t('Guardar como versión nueva', 'Save as a new version')) + '</button></div>' +
   (vs.length > 1 ? '<h3 class="kh3">' + esc(t('Cómo ha ido cambiando', 'How it has changed')) + '</h3><ol class="khistory">' + vs.slice(1).map(v => '<li><details><summary><strong>' + esc(shortDate(v.at)) + '</strong>' + (v.why ? ' ' + esc(v.why) : '') + '</summary><div class="kv-text">' + esc(v.text) + '</div></details></li>').join('') + '</ol>' : '') + '</div>';
 }
 // Solo se multiplican medidas inequívocas. Los rangos, fracciones y «al gusto» quedan como referencia.
 const metricAmount = /^(\d+(?:[.,]\d+)?)\s*(kg|g|mg|ml|cl|dl|l)$/i;
+function batchFactor(root) {
+ const value = $('#kBatch', root)?.value || '1';
+ if (value !== 'custom') return Number(value);
+ const text = $('#kBatchCustom', root).value.trim();
+ const factor = /^(?:[0-9]+(?:[.,][0-9]+)?|[.,][0-9]+)$/.test(text) ? Number(text.replace(',', '.')) : NaN;
+ return Number.isFinite(factor) && factor > 0 ? factor : null;
+}
 function recipeTable(base) {
  const canScale = base.items.some(([, quantity]) => metricAmount.test(quantity));
  return (canScale ? '<div class="kbatch"><label for="kBatch">' + esc(t('Multiplicar la receta base', 'Scale the base recipe')) + '</label><select id="kBatch">' +
-  [0.5, 1, 1.5, 2, 3, 4, 5, 10].map(factor => '<option value="' + factor + '"' + (factor === 1 ? ' selected' : '') + '>× ' + factor.toLocaleString(en() ? 'en' : 'es') + '</option>').join('') + '</select>' +
+  [0.5, 1, 1.5, 2, 3, 4, 5, 10].map(factor => '<option value="' + factor + '"' + (factor === 1 ? ' selected' : '') + '>× ' + factor.toLocaleString(en() ? 'en' : 'es') + '</option>').join('') + '<option value="custom">' + esc(t('Otra cantidad', 'Custom amount')) + '</option></select>' +
+  '<div class="kbatch-custom" id="kBatchBox" hidden><label for="kBatchCustom">' + esc(t('Multiplicador', 'Multiplier')) + '</label><input type="text" inputmode="decimal" id="kBatchCustom" maxlength="16" value="1" autocomplete="off" aria-describedby="kBatchError"><span id="kBatchError" class="fine" role="status"></span></div>' +
   '<p class="fine">' + esc(t('Se ajustan los pesos y volúmenes simples. Las demás cantidades, los tiempos y las temperaturas son los de la receta base.', 'Simple weights and volumes are scaled. Other amounts, times and temperatures are from the base recipe.')) + '</p></div>' : '') +
-  '<table class="ktable"><caption>' + esc(t('Receta base para ', 'Base recipe for ') + (base.for || '')) + '</caption><tbody>' +
-  base.items.map(([ingredient, quantity]) => '<tr><th scope="row">' + linked(ingredient) + '</th><td class="q" data-quantity="' + esc(quantity || '') + '">' + esc(quantity || '') + '</td></tr>').join('') + '</tbody></table>';
+  '<table class="ktable" id="kRecipeIngredients"><caption>' + esc(t('Receta base para ', 'Base recipe for ') + (base.for || '')) + '</caption><tbody>' +
+  base.items.map(([ingredient, quantity], i) => '<tr><th scope="row">' + linked(ingredient) + '</th><td class="q" data-quantity="' + esc(quantity || '') + '">' + esc(quantity || '') +
+  '</td><td class="kprep-cell" hidden><label class="kprep-check"><input type="checkbox" data-kprep aria-labelledby="kprep-label-' + i + '"><span id="kprep-label-' + i + '">' + esc(t('Listo', 'Ready')) + '<span class="sr"> ' + flat(ingredient) + '</span></span></label></td></tr>').join('') + '</tbody></table><p id="kPrepStatus" class="fine" role="status"></p>';
+}
+function recipeActions(hasSteps) {
+ return '<div class="krecipe-actions"><button type="button" class="btn ghost" data-act="copy-recipe">' + esc(t('Copiar receta', 'Copy recipe')) + '</button>' +
+  '<button type="button" class="btn ghost" data-act="cook-mode" aria-pressed="false" aria-controls="kRecipeIngredients' + (hasSteps ? ' kRecipeSteps' : '') + '">' + esc(t('Modo cocina', 'Cooking mode')) + '</button></div>';
 }
 function recipeSteps(steps) {
- return '<div class="krecipe-actions"><button type="button" class="btn ghost" data-act="copy-recipe">' + esc(t('Copiar receta', 'Copy recipe')) + '</button>' +
-  (steps.length ? '<button type="button" class="btn ghost" data-act="cook-mode" aria-pressed="false" aria-controls="kRecipeSteps">' + esc(t('Modo cocina', 'Cooking mode')) + '</button>' : '') + '</div>' +
-  (steps.length ? '<p id="kStepStatus" class="fine" role="status"></p><ol id="kRecipeSteps" class="ksteps">' + steps.map((step, i) =>
+ return steps.length ? '<p id="kStepStatus" class="fine" role="status"></p><ol id="kRecipeSteps" class="ksteps">' + steps.map((step, i) =>
    '<li><span class="kstep-text">' + linked(step) + '</span><label class="kstep-check" hidden><input type="checkbox" data-kstep aria-label="' +
-    esc(t('Paso ' + (i + 1) + ' completado', 'Step ' + (i + 1) + ' complete')) + '"><span>' + esc(t('Hecho', 'Done')) + '</span></label></li>').join('') + '</ol>' : '');
+    esc(t('Paso ' + (i + 1) + ' completado', 'Step ' + (i + 1) + ' complete')) + '"><span>' + esc(t('Hecho', 'Done')) + '</span></label></li>').join('') + '</ol>' : '';
 }
 function panels(e) {
  const out = [['que', t('Qué es', 'What it is'), '<h2 class="sr">' + esc(t('Qué es', 'What it is')) + '</h2>' + para(e.what)]];
- if (e.base && (e.base.items || []).length) out.push(['receta', t('Receta', 'Recipe'), '<h2 class="sr">' + esc(t('Receta base', 'Base recipe')) + '</h2>' + recipeTable(e.base) + recipeSteps(e.base.steps || [])]);
+ if (e.base && (e.base.items || []).length) out.push(['receta', t('Receta', 'Recipe'), '<h2 class="sr">' + esc(t('Receta base', 'Base recipe')) + '</h2>' + recipeActions(e.base.steps?.length) + recipeTable(e.base) + recipeSteps(e.base.steps || [])]);
+ if (e.method?.length) out.push(['metodo', t('Cómo hacerlo', 'Method'), '<h2 class="sr">' + esc(t('Cómo hacerlo', 'Method')) + '</h2><ol class="ksteps">' + e.method.map(step => '<li>' + linked(step) + '</li>').join('') + '</ol>']);
  if ((e.ratios || []).length) out.push(['uso', t('Según el uso', 'By use'), '<h2 class="sr">' + esc(t('Cómo cambia según para qué', 'How it changes by use')) + '</h2><table class="ktable kratios"><thead><tr><th>' + esc(t('Para', 'For')) + '</th><th>' + esc(t('Cómo cambia', 'How it changes')) + '</th></tr></thead><tbody>' + e.ratios.map(r => '<tr><td><strong>' + linked(r.use) + '</strong></td><td>' + linked(r.ratio) + (r.note ? '<small>' + linked(r.note) + '</small>' : '') + '</td></tr>').join('') + '</tbody></table>']);
  if ((e.variants || []).length) out.push(['variantes', t('Variantes', 'Variants'), '<h2 class="sr">' + esc(t('Variantes y derivadas', 'Variants and derivatives')) + '</h2><ul class="kvariants">' + e.variants.map(v => '<li>' + (v.id && entryById(v.id) ? '<a class="kref" href="' + href(v.id) + '">' + esc(v.name) + '</a>' : '<strong>' + esc(v.name) + '</strong>') + (v.note ? ' ' + linked(v.note) : '') + '</li>').join('') + '</ul>']);
  if ((e.keys || []).length || (e.errors || []).length) out.push(['trucos', t('Trucos y errores', 'Tips and mistakes'), ((e.keys || []).length ? '<h2 class="kh3">' + esc(t('Claves', 'Key points')) + '</h2><ul class="kbullets">' + e.keys.map(x => '<li>' + linked(x) + '</li>').join('') + '</ul>' : '') + ((e.errors || []).length ? '<h2 class="kh3">' + esc(t('Errores y cómo arreglarlos', 'Mistakes and fixes')) + '</h2><dl class="kerrors">' + e.errors.map(x => '<dt>' + linked(x.p) + '</dt><dd>' + linked(x.fix) + '</dd>').join('') + '</dl>' : '')]);
@@ -155,7 +170,7 @@ function entryHtml(id, tab) {
  const list = panels(e), on = list.some(p => p[0] === tab) ? tab : list[0][0];
  const {dishes, subs} = inDishes(e), rel = [...new Set([...(e.related || []), ...backlinks(e.id).map(x => x.id)])].map(entryById).filter(x => x && x.id !== e.id);
  return '<div class="kentry-back">' + (hasSearch() ? back : '') + '<a class="back" href="#/biblioteca/estante/' + esc(e.cat || 'conceptos') + '">' + icon('left') + esc(shelfName(e.cat || 'conceptos')) + '</a></div><article class="kentry">' +
-  '<header class="page-head"><h1>' + esc(e.name) + '</h1>' + (e.aka?.length ? '<p class="kaka">' + esc(t('También: ', 'Also: ') + e.aka.join(', ')) + '</p>' : '') + '<button type="button" class="btn ghost" data-act="favorite" aria-pressed="' + saved + '">' + esc(saved ? t('Quitar de favoritas', 'Remove from favourites') : t('Guardar en favoritas', 'Save to favourites')) + '</button>' + (e.base?.items?.length && state.canEdit && !state.setupPending ? '<button type="button" class="btn primary k-use" data-act="use-recipe">' + icon('plus') + esc(t('Usar en un plato', 'Use in a dish')) + '</button>' : '') + '</header>' +
+  '<header class="page-head"><h1>' + esc(e.name) + '</h1>' + (e.aka?.length ? '<p class="kaka">' + esc(t('También: ', 'Also: ') + e.aka.join(', ')) + '</p>' : '') + '<button type="button" class="btn ghost" data-act="favorite" aria-pressed="' + saved + '">' + esc(saved ? t('Quitar de favoritas', 'Remove from favourites') : t('Guardar en favoritas', 'Save to favourites')) + '</button>' + ((e.base?.items?.length || technique(e.technique)) && state.canEdit && !state.setupPending ? '<button type="button" class="btn primary k-use" data-act="use-recipe">' + icon('plus') + esc(technique(e.technique) ? t('Aplicar técnica a un plato', 'Apply technique to a dish') : t('Usar en un plato', 'Use in a dish')) + '</button>' : '') + '</header>' +
   (e.summary ? '<div class="kbody"><p class="lead">' + linked(e.summary) + '</p></div>' : '') +
   '<div class="ktabs" role="tablist" aria-label="' + esc(t('Partes de la entrada', 'Parts of the entry')) + '">' + list.map(([pid, label]) => '<button type="button" role="tab" id="kt-' + pid + '" aria-controls="kp-' + pid + '" aria-selected="' + (pid === on) + '" tabindex="' + (pid === on ? 0 : -1) + '" class="ktab' + (pid === on ? ' active' : '') + '" data-ktab="' + pid + '">' + esc(label) + '</button>').join('') + '</div>' +
   list.map(([pid, , body]) => '<section class="kpanel" role="tabpanel" tabindex="0" id="kp-' + pid + '" aria-labelledby="kt-' + pid + '"' + (pid === on ? '' : ' hidden') + '>' + body + '</section>').join('') +
@@ -210,9 +225,37 @@ export function mount(root, params) {
  };
  const stepStatus = () => {
   const steps = $$('[data-kstep]', root), done = steps.filter(box => box.checked).length;
-  $('#kStepStatus', root).textContent = t(done + ' de ' + steps.length + ' pasos hechos', done + ' of ' + steps.length + ' steps done');
+  const status = $('#kStepStatus', root);
+  if (status) status.textContent = t(done + ' de ' + steps.length + ' pasos hechos', done + ' of ' + steps.length + ' steps done');
+ };
+ const prepStatus = () => {
+  const items = $$('[data-kprep]', root), done = items.filter(box => box.checked).length;
+  $('#kPrepStatus', root).textContent = t(done + ' de ' + items.length + ' ingredientes preparados', done + ' of ' + items.length + ' ingredients ready');
+ };
+ const changeBatch = (showError = true) => {
+  const custom = $('#kBatchCustom', root), useCustom = $('#kBatch', root).value === 'custom';
+  $('#kBatchBox', root).hidden = !useCustom;
+  const factor = batchFactor(root);
+  custom.setAttribute('aria-invalid', factor === null);
+  $('#kBatchError', root).textContent = factor === null && showError ? t('Escribe un número mayor que cero, como 1,25.', 'Enter a number greater than zero, such as 1.25.') : '';
+  if (factor === null) return;
+  let reset = false;
+  $$('[data-quantity]', root).forEach(cell => {
+   const original = cell.dataset.quantity, amount = original.match(metricAmount);
+   const value = amount && factor !== 1 ? (Number(amount[1].replace(',', '.')) * factor).toLocaleString(en() ? 'en' : 'es', {maximumSignificantDigits: 8}) + ' ' + amount[2] : original;
+   if (cell.textContent === value) return;
+   cell.textContent = value;
+   const row = cell.closest('tr'), check = $('[data-kprep]', row);
+   if (check.checked) { check.checked = false; row.classList.remove('kprep-done'); reset = true; }
+  });
+  if (reset && $('[data-act=cook-mode]', root).getAttribute('aria-pressed') === 'true') prepStatus();
  };
  root.addEventListener('change', e => {
+  if (e.target.hasAttribute('data-kprep')) {
+   e.target.closest('tr').classList.toggle('kprep-done', e.target.checked);
+   prepStatus();
+   return;
+  }
   if (e.target.hasAttribute('data-kstep')) {
    e.target.closest('li').classList.toggle('kstep-done', e.target.checked);
    stepStatus();
@@ -224,15 +267,10 @@ export function mount(root, params) {
    refreshResults();
    return;
   }
-  if (e.target.id === 'kBatch') {
-   const factor = Number(e.target.value);
-   $$('[data-quantity]', root).forEach(cell => {
-    const original = cell.dataset.quantity, amount = original.match(metricAmount);
-    cell.textContent = amount && factor !== 1 ? (Number(amount[1].replace(',', '.')) * factor).toLocaleString(en() ? 'en' : 'es', {maximumFractionDigits: 6}) + ' ' + amount[2] : original;
-   });
-  }
+  if (e.target.id === 'kBatch' || e.target.id === 'kBatchCustom') changeBatch();
  });
  root.addEventListener('input', e => {
+  if (e.target.id === 'kBatchCustom') { changeBatch(false); return; }
   if (e.target.id !== 'saberQ') return;
   query = e.target.value;
   refreshResults();
@@ -278,16 +316,22 @@ export function mount(root, params) {
   if (act === 'cook-mode') {
    const on = b.getAttribute('aria-pressed') === 'false';
    b.setAttribute('aria-pressed', on);
-   $$('.kstep-check', root).forEach(label => { label.hidden = !on; });
-   if (on) stepStatus(); else $('#kStepStatus', root).textContent = '';
+   $$('.kstep-check, .kprep-cell', root).forEach(control => { control.hidden = !on; });
+   if (on) { prepStatus(); stepStatus(); }
+   else {
+    $('#kPrepStatus', root).textContent = '';
+    const status = $('#kStepStatus', root);
+    if (status) status.textContent = '';
+   }
    return;
   }
   if (act === 'copy-recipe') {
    const recipe = entryById(id);
-   const factor = Number($('#kBatch', root)?.value || 1);
+   const factor = batchFactor(root);
+   if (factor === null) { changeBatch(); $('#kBatchCustom', root).focus(); return; }
    const base = $('#kp-receta caption', root).textContent;
-   const batch = factor === 1 ? base : t('Tanda ×', 'Batch ×') + factor.toLocaleString(en() ? 'en' : 'es') + ' (' + base + ')';
-   const ingredients = $$('#kp-receta tbody tr', root).map(row => [...row.cells].map(cell => cell.textContent.trim()).filter(Boolean).join(' — '));
+   const batch = factor === 1 ? base : t('Tanda ×', 'Batch ×') + factor.toLocaleString(en() ? 'en' : 'es', {maximumSignificantDigits: 16}) + ' (' + base + ')';
+   const ingredients = $$('#kRecipeIngredients tbody tr', root).map(row => [$('th', row), $('[data-quantity]', row)].map(cell => cell.textContent.trim()).filter(Boolean).join(' — '));
    const steps = $$('#kRecipeSteps .kstep-text', root).map((step, i) => (i + 1) + '. ' + step.innerText.trim());
    const done = await copy([recipe.name, batch, ingredients.join('\n'), steps.join('\n')].filter(Boolean).join('\n\n'), {forChat: false});
    if (b.isConnected) b.focus({preventScroll: true});
