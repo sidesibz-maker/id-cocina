@@ -759,3 +759,10 @@ export function onData(what, el, params) {
  if (!$('#comps', root)?.contains(document.activeElement)) part('comps', compsHtml());
  part('analysis', analysisHtml());
 }
+
+// La ficha de cualquier plato (para el recetario completo), sin tocar el plato que esté abierto.
+export async function fichaFor(dish) {
+ const keep = cur;
+ cur = {...dish, components: (dish.components || []).map(c => ({...c, techniques: c.techniques || [], items: c.items || []}))};
+ try { return await fichaPrintHtml(); } finally { cur = keep; }
+}

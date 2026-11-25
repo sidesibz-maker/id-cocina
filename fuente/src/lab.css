@@ -909,3 +909,11 @@ html.cooking .tabs{display:none}html.cooking .view{padding-bottom:calc(32px + en
 .bfdishes .chip{cursor:pointer}.bfdishes .chip:focus-within{outline:3px solid var(--ember);outline-offset:1px}
 .bfpast{display:flex;flex-wrap:wrap;gap:0 16px}
 .sec.steps{margin:24px 0 32px}
+
+/* ---------- Mi recetario (impreso) ---------- */
+.bkst .chip{cursor:pointer}.bkst .chip:focus-within{outline:3px solid var(--ember);outline-offset:1px}
+@media print{
+ .book-cover{min-height:240mm;display:flex;flex-direction:column;justify-content:center;break-after:page}.book-cover h1{font-family:var(--serif,serif);font-weight:400;font-size:40pt;line-height:1.05;margin:4px 0 8px}.book-who{font-size:15pt}
+ .book-index{break-after:page}.book-index h2{font-family:var(--serif,serif);font-weight:400;font-size:20pt}.book-index ol{padding-left:20px;list-style:decimal;columns:2;font-size:11pt}
+ .book-page{break-before:page}.book-page:first-of-type{break-before:auto}
+}

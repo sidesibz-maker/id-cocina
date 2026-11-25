@@ -7,6 +7,7 @@ import {t, en, locale, dayKey} from '../i18n.js';
 import {esc, icon, $, $$, toast, sheet, ask, friendly, flavorPrint} from '../ui.js';
 import {state, liveDocs, docById, saveDoc, trashDoc, liveDishes, imageUrl} from '../store.js';
 import {courseLabel, statusLabel} from './shared.js';
+import {entries} from '../saber/index.js';
 
 export const title = () => t('Mi trayectoria', 'My career');
 const PERFIL = 'carrera:perfil';
@@ -51,7 +52,7 @@ export function render() {
   (goals.filter(g => !g.done_at).length ? '<div class="cgoals">' + goals.filter(g => !g.done_at).map(goalCard).join('') + '</div>' : '<p class="hint">' + esc(t('Ideas: dominar la masa madre, hacer un stage en un restaurante que admiras, llevar la partida de carnes, sacar tu primer menú degustación.', 'Ideas: master sourdough, do a stage at a restaurant you admire, run the meat section, put out your first tasting menu.')) + '</p>') + '</section>' +
   // Técnicas
   '<section class="sec"><header class="sec-head"><div><h2>' + esc(t('Técnicas', 'Techniques')) + '</h2><p>' + esc(t('Marca cómo vas con cada una. El número es cuántas veces la usas en tus platos.', 'Mark how you are doing with each one. The number is how often you use it in your dishes.')) + '</p></div></header>' +
-  '<div class="cskills">' + TECHNIQUES.map(([id, es, eng]) => '<button type="button" class="cskill" data-skill="' + esc(id) + '" data-level="' + (Number(sk[id]) || 0) + '"><span class="cskill-name">' + esc(en() ? eng : es) + '</span><span class="cskill-lv">' + esc(lv(sk[id])) + '</span>' + (used[id] ? '<small>' + used[id] + (used[id] === 1 ? t(' plato', ' dish') : t(' platos', ' dishes')) + '</small>' : '') + '<i class="cskill-bar" aria-hidden="true"><b></b><b></b><b></b></i></button>').join('') + '</div></section>' +
+  '<div class="cskills">' + TECHNIQUES.map(([id, es, eng]) => '<button type="button" class="cskill" data-skill="' + esc(id) + '" data-level="' + (Number(sk[id]) || 0) + '"><span class="cskill-name">' + esc(en() ? eng : es) + '</span><span class="cskill-lv">' + esc(lv(sk[id])) + '</span>' + (used[id] ? '<small>' + used[id] + (used[id] === 1 ? t(' plato', ' dish') : t(' platos', ' dishes')) + '</small>' : '') + '<i class="cskill-bar" aria-hidden="true"><b></b><b></b><b></b></i></button>').join('') + '</div>' + learnLinks() + '</section>' +
   // Platos firma
   '<section class="sec"><header class="sec-head"><div><h2>' + esc(t('Platos firma', 'Signature dishes')) + '</h2><p>' + esc(t('Los platos de tu libreta que mejor te representan. Salen en tu dossier con su foto.', 'The dishes from your notebook that best represent you. They appear in your dossier with their photo.')) + '</p></div><button type="button" class="btn ghost" data-act="signature">' + icon('star') + esc(t('Elegir', 'Choose')) + '</button></header>' +
   (sig.length ? '<div class="csig">' + sig.map(d => '<a class="csig-card" href="#/plato/' + esc(d.id) + '"><span class="csig-media">' + (d.cover_path ? '<img data-img="' + esc(d.cover_path) + '" alt="">' : flavorPrint(d.flavor?.axes, {size: 72})) + '</span><strong>' + esc(d.name) + '</strong><small>' + esc(courseLabel(d.course) + ', ' + statusLabel(d.status).toLowerCase()) + '</small></a>').join('') + '</div>' : '<p class="hint">' + esc(t('Aún no has elegido ninguno.', 'You have not chosen any yet.')) + '</p>') + '</section>' +
@@ -61,6 +62,11 @@ export function render() {
   // Logros
   '<section class="sec"><header class="sec-head"><div><h2>' + esc(t('Logros', 'Achievements')) + '</h2></div><button type="button" class="btn ghost" data-act="win">' + icon('plus') + esc(t('Añadir', 'Add')) + '</button></header>' +
   (wins.length ? '<ul class="cwins">' + wins.map(w => '<li>' + icon(w.fromGoal ? 'check' : 'star') + '<div><strong>' + esc(w.title) + '</strong><small>' + esc(w.when ? new Date(w.when + 'T12:00:00').toLocaleDateString(locale(), {day: 'numeric', month: 'long', year: 'numeric'}) : '') + (w.fromGoal ? t(', objetivo cumplido', ', goal achieved') : '') + '</small>' + (w.note ? '<p>' + esc(w.note) + '</p>' : '') + '</div>' + (w.fromGoal ? '' : '<button type="button" class="iconbtn" data-edit="' + esc(w.id) + '" aria-label="' + esc(t('Editar', 'Edit')) + '">' + icon('edit') + '</button>') + '</li>').join('') + '</ul>' : '<p class="hint">' + esc(t('Un ascenso, un premio, una buena crítica, tu primer plato en carta, un stage terminado.', 'A promotion, an award, a good review, your first dish on the menu, a finished stage.')) + '</p>') + '</section>';
+}
+// Las técnicas que tienen ficha en la Biblioteca, para aprenderlas o repasarlas.
+function learnLinks() {
+ const list = entries().filter(e => e.technique && TECHNIQUES.some(x => x[0] === e.technique));
+ return list.length ? '<p class="fine clearn">' + icon('library') + esc(t('Aprende o repasa en la Biblioteca:', 'Learn or review in the Library:')) + '</p><div class="chips">' + list.map(e => '<a class="chip" href="#/biblioteca/' + esc(e.id) + '">' + esc(e.name) + '</a>').join('') + '</div>' : '';
 }
 function goalCard(g) {
  const steps = g.steps || [], done = steps.filter(s => s.done).length, late = g.due && g.due < dayKey();

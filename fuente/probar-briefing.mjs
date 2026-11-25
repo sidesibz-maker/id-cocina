@@ -29,6 +29,13 @@ const saved = await page.evaluate(() => Object.values(JSON.parse(localStorage.ge
 ok(saved && saved.covers === '80' && saved.dishes[0] === 'd1', 'el briefing no se guarda');
 await go('#/hoy'); await go('#/herramientas/briefing'); await page.fill('#bfOut', ''); await page.click('[data-load]'); await wait(200);
 ok((await page.inputValue('#bfOut')) === 'Gamba roja', 'no se puede recuperar un briefing anterior');
+// Mi recetario: portada, índice y una ficha por plato
+await page.evaluate(() => { const v = JSON.parse(localStorage.getItem('id-cocina-v1')); v.dishes.push({id: 'd2', name: 'Arroz de brasa', status: 'lista', course: 'principal', components: [{id: 'c', role: 'principal', name: 'Arroz', techniques: [], items: [{n: 'Arroz bomba', q: '80 g'}], method: 'Sofreír y mojar.'}], tests: [], images: [], version: 1, updated_at: '2026-11-21T10:00:00Z'}, {id: 'd3', name: 'Idea suelta', status: 'idea', components: [], tests: [], images: [], version: 1}); localStorage.setItem('id-cocina-v1', JSON.stringify(v)); });
+await page.reload(); await wait(500); await go('#/libreta'); await page.evaluate(() => { window.print = () => { window.__book = document.getElementById('printFicha').innerText; window.__pages = document.querySelectorAll('#printFicha .book-page').length; }; });
+await page.click('[data-act=book]'); await page.waitForSelector('.sheet [data-ok]'); await page.click('.sheet [data-ok]'); await wait(1200);
+const book = await page.evaluate(() => window.__book || '');
+ok(await page.evaluate(() => window.__pages) === 2, 'el recetario no lleva solo los platos en carta y listos');
+ok(book.includes('Índice') && book.includes('Arroz bomba') && book.includes('Sofreír y mojar') && !book.includes('Idea suelta'), 'el recetario no lleva índice o fichas completas');
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();
 if (fails.length) { console.error('FALLOS en briefing y primeros pasos:\n - ' + fails.join('\n - ')); process.exit(1); }
