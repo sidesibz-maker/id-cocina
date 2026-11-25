@@ -4,9 +4,12 @@ import {presetSaber} from './saber.js';
 import {go} from '../nav.js';
 import {t, en, longDate, greeting, dayKey, relDay, monthName} from '../i18n.js';
 import {esc, icon, $, metaRow} from '../ui.js';
-import {state, liveTrends, liveDishes, userName, liveDocs} from '../store.js';
+import {state, liveTrends, liveDishes, userName, liveDocs, docById} from '../store.js';
 import {timers} from '../timers.js';
 import {dueToday} from './train.js';
+import {iaOn} from '../ia.js';
+import {syncOn} from '../sync.js';
+import {prefs, setPref} from '../i18n.js';
 import {trendCard, dishCard, hydrateImages, trText, trIdeas, kindLabel, heatMark, sourceLine, sectionHead, moreLink, emptyState, skeleton, adoptIdea} from './shared.js';
 
 export const title = () => t('Hoy', 'Today');
@@ -39,6 +42,24 @@ function seasonal() {
   '<div class="chips">' + rows.map(({i, have, local}) => '<a class="chip' + (have ? ' chip-have' : '') + '" href="#/sabores/' + esc(i.id) + '">' + esc(en() ? i.en : i.es) + (local ? '<small>' + esc(t('de aquí', 'local')) + '</small>' : have ? '<small>' + esc(t('de tus básicos', 'one of your staples')) + '</small>' : '') + '</a>').join('') + '</div></section>';
 }
 
+// Primeros pasos: lo que deja la app a punto. Cada paso se marca solo al hacerlo; se puede ocultar.
+function firstSteps() {
+ if (!state.loaded || prefs.stepsHidden) return '';
+ const s = state.settings || {}, kitchen = (s.equipment || []).length || (s.interests || []).length || s.style;
+ const steps = [
+  [!!kitchen, '#/cocina', t('Cuenta cómo es tu cocina', 'Describe your kitchen'), t('Tu equipo, tu estilo y lo que no quieres: las ideas y consejos parten de aquí.', 'Your equipment, style and what you avoid: ideas and advice start from here.')],
+  [!!docById('carrera:perfil')?.name, '#/trayectoria', t('Di quién eres en cocina', 'Say who you are in the kitchen'), t('Tu puesto, dónde estás y tu cocina en una frase.', 'Your role, where you are and your cooking in one sentence.')],
+  [liveDishes().length > 0, '#/crear', t('Crea tu primer plato', 'Create your first dish'), t('Por componentes, para ver qué sabores dominan y qué le falta.', 'By components, to see which flavours lead and what is missing.')],
+  [syncOn(), '#/hoy', t('Junta el PC y el móvil', 'Join PC and phone'), t('Ajustes → Sincronizar PC y móvil: lo que apuntas en uno aparece en el otro.', 'Settings → Sync PC and phone: what you note on one appears on the other.'), 'sync'],
+  [iaOn(), '#/hoy', t('Conecta ChatGPT', 'Connect ChatGPT'), t('Para preguntar, ideas, radar diario y el repaso de tu semana.', 'For questions, ideas, a daily radar and your weekly review.'), 'ia'],
+  [liveDocs('diario').length > 0, '#/diario/nuevo', t('Escribe tu primer diario', 'Write your first journal'), t('Al acabar el servicio: qué salió bien, qué falló y qué has aprendido.', 'After service: what went well, what went wrong and what you learned.')]
+ ];
+ const done = steps.filter(x => x[0]).length;
+ if (done === steps.length) return '';
+ return '<section class="sec steps"><header class="sec-head"><div><h2>' + esc(t('Primeros pasos', 'First steps')) + '</h2><p>' + esc(done + t(' de ', ' of ') + steps.length + t(' hechos. Se marcan solos.', ' done. They tick themselves.')) + '</p></div><button type="button" class="linkbtn" data-act="hide-steps">' + esc(t('Ocultar', 'Hide')) + '</button></header>' +
+  '<ol class="steps-grid">' + steps.map(([ok, href, title, sub, act]) => '<li class="' + (ok ? 'is-done' : '') + '"><a href="' + href + '"' + (act ? ' data-open="' + act + '"' : '') + '><span class="steps-mark" aria-hidden="true">' + (ok ? icon('check') : '') + '</span><span><strong>' + esc(title) + '</strong><small>' + esc(sub) + '</small></span>' + (ok ? '<span class="sr">' + esc(t('Hecho', 'Done')) + '</span>' : '') + '</a></li>').join('') + '</ol></section>';
+}
+
 // Tu oficio: el diario de hoy, el objetivo más cercano y lo que tienes en el fuego.
 function craft() {
  const today = dayKey(), wrote = liveDocs('diario').some(e => e.day === today), hour = new Date().getHours();
@@ -69,6 +90,7 @@ export function render() {
   '<p class="hello-sub">' + esc(longDate().replace(/^./, c => c.toUpperCase()) + '. ') + esc(counts.length ? (counts.join(t(' y ', ' and ')) + '.').replace(/^./, c => c.toUpperCase()) : t('Tu cuaderno de I+D: crea, prueba y afina platos propios.', 'Your R&D notebook: create, test and refine dishes of your own.')) + '</p></header>';
  html += '<form class="ksearch" id="homeSaber" role="search"><label class="sr" for="homeSaberQ">' + esc(t('Buscar en la Biblioteca', 'Search the library')) + '</label><div class="searchbox">' + icon('search') + '<input id="homeSaberQ" type="search" placeholder="' + esc(t('¿Qué quieres saber? Bechamel, fumet, emulsión…', 'What do you want to know? Béchamel, stock, emulsion…')) + '" autocomplete="off" enterkeyhint="search"></div></form>';
 
+ html += firstSteps();
  if (top) html += lead(top, day);
  else html += '<div class="cover cover-empty"><span class="kicker">' + esc(t('Radar', 'Radar')) + '</span><span class="cover-title">' + esc(state.loaded ? t('El radar está vacío', 'The radar is empty') : t('Abriendo el radar…', 'Opening the radar…')) + '</span>' +
   '<span class="cover-sum">' + esc(t('Aquí sale lo que se mueve en las mejores cocinas y revistas, llevado a tu cocina. Entra en el Radar y pulsa «Buscar tendencias de hoy».', 'What is moving in the best kitchens and magazines, brought to your kitchen, shows up here. Open the Radar and press “Find today\'s trends”.')) + '</span></div>';
@@ -104,6 +126,9 @@ export function mount(root) {
  hydrateImages(root);
  root.addEventListener('submit', e => { if (e.target.id !== 'homeSaber') return; e.preventDefault(); presetSaber(e.target.querySelector('input').value); go('biblioteca'); });
  root.addEventListener('click', e => {
+  if (e.target.closest('[data-act=hide-steps]')) { setPref('stepsHidden', true); e.target.closest('.steps').remove(); return; }
+  const o = e.target.closest('[data-open]');
+  if (o) { e.preventDefault(); document.dispatchEvent(new CustomEvent('id-open', {detail: o.dataset.open})); return; }
   const b = e.target.closest('[data-adopt]');
   if (!b) return;
   const tr = state.trends.find(x => x.id === b.dataset.adopt), idea = tr && trIdeas(tr)[0];

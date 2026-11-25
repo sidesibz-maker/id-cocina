@@ -191,6 +191,8 @@ async function start() {
  applyPrefs();
  startTimers();
  startFinder();
+ // Otras pantallas piden abrir los ajustes de ChatGPT o de sincronización.
+ document.addEventListener('id-open', e => { if (e.detail === 'ia') iaSheet(() => route({keepScroll: true})); if (e.detail === 'sync') syncSheet(() => route({keepScroll: true})); });
  shell();
  route();
  onChange(refresh);

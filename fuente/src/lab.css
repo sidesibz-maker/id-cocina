@@ -896,3 +896,16 @@ html.cooking .tabs{display:none}html.cooking .view{padding-bottom:calc(32px + en
 @media (min-width:960px){.rail-nav{flex:1 1 auto;min-height:0;align-content:start}}
 @media (min-width:960px) and (max-height:860px){.rail{padding-top:16px}.rail .wordmark{font-size:36px}.rail-rest{padding-bottom:12px}.rail-find{min-height:36px;margin-bottom:8px}.rail .nav-item{height:36px;font-size:15px}.rail-sep{margin:4px 12px}}
 @media (min-width:960px) and (max-height:760px){.rail .nav-item{height:33px;font-size:14.5px}.rail .nav-item .ic{width:19px;height:19px}.rail-rest{display:none}.rail .wordmark{margin-bottom:12px}.rail-foot .rail-link{min-height:36px}}
+
+/* ---------- Primeros pasos ---------- */
+.steps-grid{display:grid;gap:8px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+.steps-grid a{display:grid;grid-template-columns:32px minmax(0,1fr);gap:12px;align-items:start;min-height:72px;padding:12px 16px;border:1px solid var(--line2);background:var(--card);text-decoration:none;color:inherit}
+.steps-grid a:hover{border-color:var(--ink)}.steps-grid strong{display:block}.steps-grid small{display:block;color:var(--mut);font-size:13.5px;line-height:1.4;margin-top:2px}
+.steps-mark{display:grid;place-items:center;width:28px;height:28px;border:2px solid var(--line2);border-radius:50%}
+.steps-grid .is-done a{background:none;border-style:dashed}.steps-grid .is-done strong{color:var(--mut);text-decoration:line-through;text-decoration-thickness:1px}
+.steps-grid .is-done .steps-mark{background:var(--gold);border-color:var(--gold);color:var(--on-accent)}.steps-mark .ic{width:16px;height:16px;stroke-width:2.4}
+
+.bfpre{white-space:pre-wrap;font:15px/1.55 var(--sans);margin:0;padding:16px;background:var(--paper-2);border:1px solid var(--line2);max-height:60vh;overflow:auto}
+.bfdishes .chip{cursor:pointer}.bfdishes .chip:focus-within{outline:3px solid var(--ember);outline-offset:1px}
+.bfpast{display:flex;flex-wrap:wrap;gap:0 16px}
+.sec.steps{margin:24px 0 32px}

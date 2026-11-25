@@ -7,7 +7,8 @@ function read() {
 const saved = read();
 export const prefs = {
  lang: saved.lang === 'en' ? 'en' : 'es',
- theme: saved.theme === 'dark' || saved.theme === 'light' ? saved.theme : null
+ theme: saved.theme === 'dark' || saved.theme === 'light' ? saved.theme : null,
+ stepsHidden: !!saved.stepsHidden
 };
 
 export const systemDark = () => typeof matchMedia === 'function' && matchMedia('(prefers-color-scheme: dark)').matches;

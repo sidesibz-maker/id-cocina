@@ -1,7 +1,7 @@
 // I+D · Herramientas (segunda parte): producción y pedido de un menú, y etiquetas de conservación para la mise en place.
 import {t, en, locale, dayKey} from '../i18n.js';
 import {esc, icon, $, $$, toast} from '../ui.js';
-import {liveMenus, liveDishes, liveDocs, subById, dishById} from '../store.js';
+import {liveMenus, liveDishes, liveDocs, subById, dishById, docById as docByIdSafe, saveDoc as saveDocSafe} from '../store.js';
 import {ALLERGENS} from '../ai-core.js';
 import {copy} from '../ai.js';
 
@@ -136,3 +136,60 @@ export function printText(html) {
  addEventListener('afterprint', done);
  setTimeout(() => print(), 50);
 }
+
+// ---------- Briefing del servicio ----------
+// Lo que el equipo de sala y de cocina tiene que saber antes de abrir: platos del día y cómo contarlos, lo que se ha
+// acabado, alergias de las reservas y avisos. Se imprime, se manda por WhatsApp y queda guardado por días.
+const SERV = [['comida', 'Comida', 'Lunch'], ['cena', 'Cena', 'Dinner'], ['evento', 'Evento', 'Event']];
+const bKey = (day, svc) => 'briefing:' + day + '-' + svc;
+const area = (id, label, value, ph) => '<div class="tfield"><label for="' + id + '">' + esc(label) + '</label><textarea id="' + id + '" rows="2" maxlength="2000" data-voice placeholder="' + esc(ph) + '">' + esc(value || '') + '</textarea></div>';
+export const briefing = {
+ html() {
+  const day = dayKey(), svc = new Date().getHours() < 17 ? 'comida' : 'cena', saved = docByIdSafe(bKey(day, svc)), chosen = new Set(saved?.dishes || []);
+  const dishes = liveDishes().filter(d => ['lista', 'carta', 'afinando', 'pruebas'].includes(d.status)).slice(0, 60);
+  const past = liveDocs('briefing').sort((a, b) => String(b.id).localeCompare(String(a.id))).slice(0, 8);
+  return '<div class="tgrid"><section class="card"><h2>' + esc(t('El servicio', 'The service')) + '</h2>' +
+   '<div class="tpair"><div class="tfield"><label for="bfDay">' + esc(t('Día', 'Day')) + '</label><input id="bfDay" type="date" value="' + day + '"></div><div class="tfield"><label for="bfSvc">' + esc(t('Servicio', 'Service')) + '</label><select id="bfSvc">' + SERV.map(s => '<option value="' + s[0] + '"' + (s[0] === svc ? ' selected' : '') + '>' + esc(en() ? s[2] : s[1]) + '</option>').join('') + '</select></div>' + field('bfCovers', t('Cubiertos previstos', 'Expected covers'), saved?.covers || '', '', 'numeric') + '</div>' +
+   (dishes.length ? '<fieldset class="tfield"><legend class="jlegend">' + esc(t('Platos del día o sugerencias', 'Dishes of the day or specials')) + '</legend><div class="chips bfdishes">' + dishes.map(d => '<label class="chip' + (chosen.has(d.id) ? ' chip-have' : '') + '"><input type="checkbox" class="sr" value="' + esc(d.id) + '"' + (chosen.has(d.id) ? ' checked' : '') + '>' + esc(d.name) + '</label>').join('') + '</div></fieldset>' : '') +
+   area('bfSpecials', t('Otros fuera de carta', 'Other specials'), saved?.specials, t('Pescado del día, postre de temporada…', 'Fish of the day, seasonal dessert…')) +
+   area('bfOut', t('Se ha acabado o no sale hoy', 'Sold out or off today'), saved?.out, t('Gamba roja, tarta de queso…', 'Red prawn, cheesecake…')) +
+   area('bfAllergy', t('Alergias e intolerancias en las reservas', 'Allergies and intolerances in bookings'), saved?.allergy, t('Mesa 12: celíaco. Mesa 4: sin frutos secos.', 'Table 12: coeliac. Table 4: no nuts.')) +
+   area('bfFront', t('Para sala', 'For front of house'), saved?.front, t('Cómo contar el plato nuevo, maridaje, tiempos…', 'How to describe the new dish, pairing, timings…')) +
+   area('bfKitchen', t('Para cocina', 'For the kitchen'), saved?.kitchen, t('Quién va a cada partida, mise en place pendiente, pedidos…', 'Who is on each section, pending mise en place, orders…')) + '</section>' +
+   '<section class="card"><h2>' + esc(t('El briefing', 'The briefing')) + '</h2><div id="bfOutBox"></div><div class="row-actions row-left"><button type="button" class="btn primary" data-act="bf-save">' + icon('check') + esc(t('Guardar', 'Save')) + '</button><button type="button" class="btn ghost" data-act="bf-wa">' + icon('out') + 'WhatsApp</button><button type="button" class="btn ghost" data-act="bf-print">' + icon('down') + esc(t('Imprimir', 'Print')) + '</button></div>' +
+   (past.length ? '<h3>' + esc(t('Anteriores', 'Earlier')) + '</h3><ul class="bfpast">' + past.map(b => '<li><button type="button" class="linkbtn" data-load="' + esc(b.id) + '">' + esc(new Date(b.day + 'T12:00:00').toLocaleDateString(locale(), {weekday: 'short', day: 'numeric', month: 'short'}) + ', ' + ((SERV.find(s => s[0] === b.svc) || SERV[1])[en() ? 2 : 1])) + '</button></li>').join('') + '</ul>' : '') + '</section></div>';
+ },
+ data(root) {
+  const v = id => ($('#' + id, root)?.value || '').trim();
+  return {day: v('bfDay') || dayKey(), svc: v('bfSvc') || 'cena', covers: v('bfCovers'), dishes: $$('.bfdishes input:checked', root).map(x => x.value), specials: v('bfSpecials'), out: v('bfOut'), allergy: v('bfAllergy'), front: v('bfFront'), kitchen: v('bfKitchen')};
+ },
+ text(b) {
+  const svc = SERV.find(s => s[0] === b.svc) || SERV[1], ds = b.dishes.map(id => dishById(id)).filter(Boolean);
+  const al = d => (d.advice?.allergens || []).map(id => ALLERGENS.find(a => a[0] === id)).filter(Boolean).map(a => (en() ? a[2] : a[1]));
+  const list = v => v.split('\n').filter(x => x.trim()).map(x => '• ' + x.trim());
+  const lines = ['BRIEFING, ' + new Date(b.day + 'T12:00:00').toLocaleDateString(locale(), {weekday: 'long', day: 'numeric', month: 'long'}) + ', ' + (en() ? svc[2] : svc[1]).toLowerCase() + (b.covers ? ', ' + b.covers + t(' cubiertos', ' covers') : '')];
+  if (ds.length || b.specials) lines.push('', t('PLATOS DEL DÍA', 'DISHES OF THE DAY'), ...ds.map(d => '• ' + d.name + (d.concept ? ': ' + d.concept : '') + (al(d).length ? t(' (alérgenos: ', ' (allergens: ') + al(d).join(', ') + ')' : '')), ...list(b.specials));
+  if (b.out) lines.push('', t('NO SALE HOY', 'OFF TODAY'), ...list(b.out));
+  if (b.allergy) lines.push('', t('ALERGIAS EN RESERVAS', 'ALLERGIES IN BOOKINGS'), ...list(b.allergy));
+  if (b.front) lines.push('', t('SALA', 'FRONT OF HOUSE'), b.front);
+  if (b.kitchen) lines.push('', t('COCINA', 'KITCHEN'), b.kitchen);
+  return lines.join('\n');
+ },
+ calc(root) { $('#bfOutBox', root).innerHTML = '<pre class="bfpre">' + esc(briefing.text(briefing.data(root))) + '</pre>'; },
+ mount(root) {
+  root.addEventListener('change', e => { const c = e.target.closest('.bfdishes input'); if (c) c.closest('.chip').classList.toggle('chip-have', c.checked); });
+  root.addEventListener('click', async e => {
+   const a = e.target.closest('[data-act]')?.dataset.act, ld = e.target.closest('[data-load]'), b = briefing.data(root);
+   if (a === 'bf-save') { await saveDocSafe('briefing', bKey(b.day, b.svc), b); toast(t('Briefing guardado.', 'Briefing saved.')); }
+   if (a === 'bf-wa') window.open('https://wa.me/?text=' + encodeURIComponent(briefing.text(b)), '_blank', 'noopener');
+   if (a === 'bf-print') printText('<pre class="prprint">' + esc(briefing.text(b)) + '</pre>');
+   if (ld) {
+    const x = docByIdSafe(ld.dataset.load); if (!x) return;
+    const set = (id, v) => { const el = $('#' + id, root); if (el) el.value = v || ''; };
+    set('bfDay', x.day); set('bfSvc', x.svc); set('bfCovers', x.covers); set('bfSpecials', x.specials); set('bfOut', x.out); set('bfAllergy', x.allergy); set('bfFront', x.front); set('bfKitchen', x.kitchen);
+    $$('.bfdishes input', root).forEach(c => { c.checked = (x.dishes || []).includes(c.value); c.closest('.chip').classList.toggle('chip-have', c.checked); });
+    briefing.calc(root);
+   }
+  });
+ }
+};
