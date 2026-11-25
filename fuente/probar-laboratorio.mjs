@@ -39,6 +39,15 @@ await go('#/laboratorio'); ok((await page.textContent('.labsparks')).includes('y
 await page.click('[data-act=lab-dish]'); await wait(600);
 const d2 = await page.evaluate(() => JSON.parse(localStorage.getItem('id-cocina-v1')).dishes.find(d => d.source?.kind === 'laboratorio'));
 ok(d2 && d2.components[0]?.items.length >= 2 && d2.status === 'idea', 'llevar a la libreta no crea el plato con sus productos');
+// La ficha del día en la portada, el estante de creatividad y el tamaño de letra
+await go('#/hoy'); ok(await page.locator('.daily[href^="#/biblioteca/"]').count() === 1, 'la portada no trae la ficha del día');
+await go('#/biblioteca'); ok(await page.locator('.kshelf[href="#/biblioteca/estante/creatividad"]').count() === 1, 'falta el estante de creatividad');
+await go('#/biblioteca/construir-un-plato'); ok((await page.textContent('.kentry')).includes('idea en una frase'), 'no abre «Construir un plato»');
+await page.click('.rail [data-act=menu]'); await page.click('[data-size=grande]'); await wait(200);
+ok(await page.evaluate(() => document.documentElement.dataset.size) === 'grande', 'el tamaño de letra no cambia');
+await page.reload(); await wait(500); ok(await page.evaluate(() => document.documentElement.dataset.size) === 'grande', 'el tamaño de letra no se recuerda');
+await page.click('.rail [data-act=menu]'); await page.click('[data-size=normal]'); await wait(200);
+ok(!(await page.evaluate(() => document.documentElement.dataset.size)), 'no vuelve al tamaño normal');
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();
 if (fails.length) { console.error('FALLOS en el laboratorio:\n - ' + fails.join('\n - ')); process.exit(1); }

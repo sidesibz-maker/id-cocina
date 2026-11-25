@@ -8,6 +8,7 @@ import {state, liveTrends, liveDishes, userName, liveDocs, docById} from '../sto
 import {timers} from '../timers.js';
 import {dueToday} from './train.js';
 import {challenge, completeChallenge, challengeText} from '../challenge.js';
+import {entries} from '../saber/index.js';
 import {iaOn} from '../ia.js';
 import {syncOn} from '../sync.js';
 import {prefs, setPref} from '../i18n.js';
@@ -61,6 +62,15 @@ function firstSteps() {
   '<ol class="steps-grid">' + steps.map(([ok, href, title, sub, act]) => '<li class="' + (ok ? 'is-done' : '') + '"><a href="' + href + '"' + (act ? ' data-open="' + act + '"' : '') + '><span class="steps-mark" aria-hidden="true">' + (ok ? icon('check') : '') + '</span><span><strong>' + esc(title) + '</strong><small>' + esc(sub) + '</small></span>' + (ok ? '<span class="sr">' + esc(t('Hecho', 'Done')) + '</span>' : '') + '</a></li>').join('') + '</ol></section>';
 }
 
+// La ficha del día: cada día una entrada distinta de la Biblioteca, para aprender algo cada vez que se abre la app.
+function dailyEntry() {
+ const all = entries().filter(e => !e.mine && e.summary);
+ if (!all.length) return '';
+ const d = new Date(), n = Math.floor((d - new Date(d.getFullYear(), 0, 0)) / 86400000) + d.getFullYear() * 7;
+ const e = all[n % all.length], tip = (e.keys || [])[n % Math.max(1, (e.keys || []).length)];
+ return '<section class="sec"><a class="daily" href="#/biblioteca/' + esc(e.id) + '"><span class="daily-k">' + esc(t('La ficha del día', 'Entry of the day')) + '</span><strong>' + esc(e.name) + '</strong><span class="daily-s">' + esc(e.summary) + '</span>' + (tip ? '<span class="daily-tip"><em>' + esc(t('Un truco: ', 'A tip: ')) + '</em>' + esc(tip.replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, '$2').replace(/\[\[([^\]]+)\]\]/g, '$1')) + '</span>' : '') + '<span class="more">' + esc(t('Leer la ficha', 'Read the entry')) + icon('right') + '</span></a></section>';
+}
+
 // Tu oficio: el diario de hoy, el objetivo más cercano y lo que tienes en el fuego.
 function craft() {
  const today = dayKey(), wrote = liveDocs('diario').some(e => e.day === today), hour = new Date().getHours();
@@ -97,6 +107,8 @@ export function render() {
  if (top) html += lead(top, day);
  else html += '<div class="cover cover-empty"><span class="kicker">' + esc(t('Radar', 'Radar')) + '</span><span class="cover-title">' + esc(state.loaded ? t('El radar está vacío', 'The radar is empty') : t('Abriendo el radar…', 'Opening the radar…')) + '</span>' +
   '<span class="cover-sum">' + esc(t('Aquí sale lo que se mueve en las mejores cocinas y revistas, llevado a tu cocina. Entra en el Radar y pulsa «Buscar tendencias de hoy».', 'What is moving in the best kitchens and magazines, brought to your kitchen, shows up here. Open the Radar and press “Find today\'s trends”.')) + '</span></div>';
+
+ html += dailyEntry();
 
  if (rest.length) html += '<section class="sec">' + sectionHead(day === dayKey() ? t('Hoy en el radar', 'On the radar today') : t('Lo último del radar', 'Latest on the radar'), moreLink('#/radar', t('Todo el radar', 'Full radar'))) + '<div class="strip">' + rest.map(x => trendCard(x)).join('') + '</div></section>';
 

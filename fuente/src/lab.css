@@ -938,3 +938,14 @@ html.cooking .tabs{display:none}html.cooking .view{padding-bottom:calc(32px + en
 .labmech h3{font-family:var(--serif);font-weight:400;font-size:22px;line-height:1.15}.labmech p{color:var(--ink2);font-size:15px}.labex{font-size:14px!important}.labex em{font-style:normal;font-weight:600;color:var(--ink)}
 .labmech .linkbtn{justify-self:start;min-height:36px}
 .labspark .csec-head{flex-wrap:wrap;gap:4px 16px}.labspark .csec-head h2{white-space:nowrap}
+
+/* ---------- Tamaño de letra ---------- */
+:root[data-size=grande]{zoom:1.12}:root[data-size=enorme]{zoom:1.25}
+@media print{:root[data-size]{zoom:1}}
+
+/* ---------- La ficha del día ---------- */
+.daily{display:grid;gap:8px;padding:20px 24px;border:1px solid var(--ink);border-left:6px solid var(--gold);background:var(--card);box-shadow:var(--shadow-s);text-decoration:none;color:inherit}
+.daily:hover{border-color:var(--ember)}.daily-k{font-family:var(--narrow);font-weight:600;color:var(--ember-ink)}
+.daily strong{font-family:var(--serif);font-weight:400;font-size:clamp(26px,3vw,34px);line-height:1.1}
+.daily-s{color:var(--ink2);font-size:16.5px;max-width:70ch}.daily-tip{font-size:15px;color:var(--ink2);max-width:70ch}.daily-tip em{font-style:normal;font-weight:700;color:var(--ink)}
+.daily .more{justify-self:start}

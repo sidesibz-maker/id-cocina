@@ -8,7 +8,8 @@ const saved = read();
 export const prefs = {
  lang: saved.lang === 'en' ? 'en' : 'es',
  theme: saved.theme === 'dark' || saved.theme === 'light' ? saved.theme : null,
- stepsHidden: !!saved.stepsHidden
+ stepsHidden: !!saved.stepsHidden,
+ size: ['grande', 'enorme'].includes(saved.size) ? saved.size : 'normal'
 };
 
 export const systemDark = () => typeof matchMedia === 'function' && matchMedia('(prefers-color-scheme: dark)').matches;
@@ -18,6 +19,8 @@ export function applyPrefs() {
  const root = document.documentElement;
  root.lang = prefs.lang;
  if (prefs.theme) root.dataset.theme = prefs.theme; else delete root.dataset.theme;
+ // Tamaño de letra: toda la app crece a la vez (texto, botones y huecos), para leer de lejos o con poca vista.
+ if (prefs.size && prefs.size !== 'normal') root.dataset.size = prefs.size; else delete root.dataset.size;
  document.querySelectorAll('meta[name=theme-color]').forEach(meta => {
   if (prefs.theme) meta.content = prefs.theme === 'dark' ? '#141311' : '#ECE7DE';
  });

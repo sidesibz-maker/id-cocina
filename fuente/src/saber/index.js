@@ -7,10 +7,11 @@ import PREPARACIONES from './preparaciones.json';
 import TECNICAS from './tecnicas.json';
 import DULCE from './dulce.json';
 import PRODUCTO from './producto.json';
+import CREATIVIDAD from './creatividad.json';
 import {state} from '../store.js';
 
-const BUILT = [...A, ...B, ...C, ...PREPARACIONES, ...TECNICAS, ...DULCE, ...PRODUCTO].filter(e => e && e.id && e.name);
-export const CATS = [['salsas', 'Salsas', 'Sauces'], ['fondos', 'Fondos, jugos y caldos', 'Stocks, jus and broths'], ['bases', 'Bases y aliños', 'Bases and dressings'], ['tecnicas', 'Técnicas de cocción', 'Cooking techniques'], ['dulce', 'Pastelería y masas', 'Pastry and doughs'], ['producto', 'Producto: arroz, pescado, marisco y carne', 'Produce: rice, fish, shellfish and meat'], ['conceptos', 'Conceptos y técnicas', 'Concepts and techniques'], ['mias', 'Tus entradas', 'Your entries']];
+const BUILT = [...A, ...B, ...C, ...PREPARACIONES, ...TECNICAS, ...DULCE, ...PRODUCTO, ...CREATIVIDAD].filter(e => e && e.id && e.name);
+export const CATS = [['salsas', 'Salsas', 'Sauces'], ['fondos', 'Fondos, jugos y caldos', 'Stocks, jus and broths'], ['bases', 'Bases y aliños', 'Bases and dressings'], ['creatividad', 'Creatividad y método', 'Creativity and method'], ['tecnicas', 'Técnicas de cocción', 'Cooking techniques'], ['dulce', 'Pastelería y masas', 'Pastry and doughs'], ['producto', 'Producto: arroz, pescado, marisco y carne', 'Produce: rice, fish, shellfish and meat'], ['conceptos', 'Conceptos y técnicas', 'Concepts and techniques'], ['mias', 'Tus entradas', 'Your entries']];
 const norm = v => String(v || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9ñ ]+/g, ' ').replace(/\s+/g, ' ').trim();
 const plain = v => String(v || '').replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, '$2').replace(/\[\[([^\]]+)\]\]/g, '$1');
 
