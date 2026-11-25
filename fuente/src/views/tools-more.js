@@ -5,6 +5,7 @@ import {liveMenus, liveDishes, liveDocs, subById, dishById, docById as docByIdSa
 import {ALLERGENS} from '../ai-core.js';
 import {copy} from '../ai.js';
 import {supplierFor} from './suppliers.js';
+import {dishAllergens} from './shared.js';
 
 const parseNum = v => { const s = String(v ?? '').trim().replace(',', '.'); const n = Number(s); return Number.isFinite(n) ? n : NaN; };
 const nice = n => { const a = Math.abs(n), r = a >= 1000 ? Math.round(n / 10) * 10 : a >= 100 ? Math.round(n) : a >= 10 ? Math.round(n * 10) / 10 : Math.round(n * 100) / 100; return r.toLocaleString(locale(), {maximumFractionDigits: 2, useGrouping: false}); };
@@ -172,7 +173,7 @@ export const briefing = {
  },
  text(b) {
   const svc = SERV.find(s => s[0] === b.svc) || SERV[1], ds = b.dishes.map(id => dishById(id)).filter(Boolean);
-  const al = d => (d.advice?.allergens || []).map(id => ALLERGENS.find(a => a[0] === id)).filter(Boolean).map(a => (en() ? a[2] : a[1]));
+  const al = d => dishAllergens(d).names;
   const list = v => v.split('\n').filter(x => x.trim()).map(x => '• ' + x.trim());
   const lines = ['BRIEFING, ' + new Date(b.day + 'T12:00:00').toLocaleDateString(locale(), {weekday: 'long', day: 'numeric', month: 'long'}) + ', ' + (en() ? svc[2] : svc[1]).toLowerCase() + (b.covers ? ', ' + b.covers + t(' cubiertos', ' covers') : '')];
   if (ds.length || b.specials) lines.push('', t('PLATOS DEL DÍA', 'DISHES OF THE DAY'), ...ds.map(d => '• ' + d.name + (d.concept ? ': ' + d.concept : '') + (al(d).length ? t(' (alérgenos: ', ' (allergens: ') + al(d).join(', ') + ')' : '')), ...list(b.specials));

@@ -944,3 +944,11 @@ html.cooking .tabs{display:none}html.cooking .view{padding-bottom:calc(32px + en
 .skink i{display:inline-block;width:14px;height:14px;border-radius:50%;border:1px solid var(--line2)}
 .skcanvas{display:block;width:100%;max-width:560px;aspect-ratio:1;margin:0 auto;border:1px solid var(--ink);touch-action:none;cursor:crosshair;background:var(--paper-2)}
 .skbar .seg{flex-wrap:wrap;width:auto}
+
+/* ---------- Alérgenos ---------- */
+.dalg{margin-top:16px}.dalg .chip{cursor:pointer}.dalg .chip:focus-within{outline:3px solid var(--ember);outline-offset:1px}
+@media print{
+ .algtable table{width:100%;border-collapse:collapse;font-size:9pt}.algtable th,.algtable td{border:1px solid var(--line);padding:3px 4px}
+ .algtable .algth{height:30mm;vertical-align:bottom;padding:4px 2px}.algtable .algth span{display:block;writing-mode:vertical-rl;transform:rotate(180deg);white-space:nowrap;font-weight:600}
+ .algtable .algc{text-align:center;font-size:11pt;width:6mm}.algtable td small{color:var(--mut)}
+}

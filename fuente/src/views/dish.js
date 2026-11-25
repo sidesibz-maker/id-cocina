@@ -8,7 +8,7 @@ import {esc, icon, $, $$, uid, toast, friendly, sheet, ask, flavorMeters, flavor
 import {state, dishById, fetchDish, createDish, saveDish, trashDish, restoreDish, imageUrl, uploadImage, userName, subById, createSub, dishVersions, snapshotDish} from '../store.js';
 import {advicePrompt, imagePrompt, adviceFromReply, copy, shrinkImage, pairingPrompt} from '../ai.js';
 import {iaOn, askIa, iaMessage, imageData} from '../ia.js';
-import {STATUSES, emptyState, skeleton} from './shared.js';
+import {STATUSES, emptyState, skeleton, dishAllergens} from './shared.js';
 import {go} from '../nav.js';
 import {rich} from './ask.js';
 import {entryById, entryForName} from '../saber/index.js';
@@ -312,10 +312,19 @@ async function teamSheet() {
 }
 
 // ---------- Ficha técnica ----------
+// Alérgenos que confirma el cocinero (los 14 del Reglamento UE 1169/2011). La pista de la IA solo se propone.
+function allergenPicker(can) {
+ const mine = Array.isArray(cur.allergens) ? new Set(cur.allergens) : null, hint = cur.advice?.allergens || [];
+ return '<fieldset class="dalg"><legend class="mini">' + esc(t('Alérgenos (los confirmas tú)', 'Allergens (you confirm them)')) + '</legend>' +
+  (!mine && hint.length ? '<p class="fine">' + esc(t('La IA cree que lleva: ', 'The AI thinks it contains: ') + hint.map(id => lbl(ALLERGENS.find(a => a[0] === id) || [id, id, id])).join(', ') + '.') + (can ? ' <button type="button" class="linkbtn" data-act="alg-hint">' + esc(t('Usar y revisar', 'Use and review')) + '</button>' : '') + '</p>' : '') +
+  '<div class="chips">' + ALLERGENS.map(a => '<label class="chip' + (mine?.has(a[0]) ? ' chip-have' : '') + '"><input type="checkbox" class="sr" value="' + a[0] + '"' + (mine?.has(a[0]) ? ' checked' : '') + (can ? '' : ' disabled') + '>' + esc(lbl(a)) + '</label>').join('') + '</div>' +
+  (mine ? '<p class="fine">' + esc(mine.size ? t('Confirmados por ti.', 'Confirmed by you.') : t('Confirmado: sin ninguno de los 14 alérgenos.', 'Confirmed: none of the 14 allergens.')) + '</p>' : can ? '<button type="button" class="linkbtn" data-act="alg-none">' + esc(t('No lleva ninguno', 'Contains none')) + '</button>' : '') + '</fieldset>';
+}
 function fichaSecHtml() {
  const can = editable(), from = cur.advice?.plating;
  return '<h2>' + esc(t('Ficha técnica', 'Recipe sheet')) + '</h2><p class="hint">' + esc(t('Pon la cantidad tocando cada ingrediente y escribe la elaboración en cada componente. Aquí van las raciones y el emplatado; luego imprímela o guárdala en PDF para el equipo.', 'Set quantities by tapping each ingredient and write the method in each component. Portions and plating go here; then print it or save it as PDF for the team.')) + '</p>' +
   '<div class="bench-meta"><label for="dishPortions">' + esc(t('Raciones', 'Portions')) + '</label><input id="dishPortions" value="' + esc(cur.portions || '') + '" maxlength="30" inputmode="text" placeholder="' + esc(t('p. ej. 1, 4, 10 pases', 'e.g. 1, 4, 10 covers')) + '"' + (can ? '' : ' disabled') + ' autocomplete="off"></div>' +
+  allergenPicker(can) +
   '<label class="mini" for="dishPlating">' + esc(t('Emplatado', 'Plating')) + '</label><textarea id="dishPlating" data-voice rows="3" maxlength="2000" placeholder="' + esc(t('Plato, qué va debajo, qué encima, cómo se termina en el pase…', 'Plate, what goes underneath, what on top, how it is finished at the pass…')) + '"' + (can ? '' : ' disabled') + '>' + esc(cur.plating || '') + '</textarea>' +
   (can && from && !cur.plating ? '<button type="button" class="linkbtn" data-act="plating-from-advice">' + esc(t('Usar el emplatado del consejo', 'Use the plating from the advice')) + '</button>' : '') +
   '<div class="row-actions row-left">' + (cur.id ? '<a class="btn primary" href="#/cocinar/plato/' + esc(cur.id) + '">' + icon('flame') + esc(t('Cocinar paso a paso', 'Cook step by step')) + '</a>' : '') + '<button type="button" class="btn ghost" data-act="print">' + icon('down') + esc(t('Imprimir ficha o guardar en PDF', 'Print sheet or save as PDF')) + '</button><button type="button" class="btn ghost" data-act="share">' + icon('out') + esc(t('Enviar por WhatsApp', 'Send on WhatsApp')) + '</button><button type="button" class="btn ghost" data-act="team">' + icon('user') + esc(cur.share?.on ? t('Compartida con el equipo', 'Shared with the team') : t('Compartir con el equipo', 'Share with the team')) + '</button></div>';
@@ -333,7 +342,7 @@ async function fichaPrintHtml() {
  const course = COURSES.find(c => c[0] === cur.course), status = STATUSES.find(s => s[0] === cur.status);
  const meta = [course && cur.course !== 'otro' ? lbl(course) : '', cur.season ? (/^\d{4}$/.test(cur.season) ? t('Todo el año ', 'All year ') + cur.season : seasonLabel(cur.season)) : '', cur.portions ? t('Raciones: ', 'Portions: ') + cur.portions : '', status ? lbl(status) : ''].filter(Boolean);
  const comps = cur.components.filter(c => c.items.length || c.name || c.method);
- const allergens = (cur.advice?.allergens || []).map(id => ALLERGENS.find(x => x[0] === id)).filter(Boolean).map(lbl);
+ const alg = dishAllergens(cur), allergens = alg.names;
  const last = [...(cur.tests || [])].filter(Boolean).pop();
  return '<article class="ficha"><header class="ficha-head"><div><p class="ficha-kicker">' + esc(t('Ficha técnica', 'Recipe sheet')) + '</p><h1>' + esc(cur.name || t('Plato sin nombre', 'Untitled dish')) + '</h1>' + (cur.concept ? '<p class="ficha-concept">' + esc(cur.concept) + '</p>' : '') + (meta.length ? '<p class="ficha-meta">' + esc(meta.join(', ')) + '</p>' : '') + '</div>' +
   (url ? '<img src="' + esc(url) + '" alt="">' : !profile.empty ? flavorPrint(profile.axes, {size: 110, labels: true}) : '') + '</header>' +
@@ -343,7 +352,7 @@ async function fichaPrintHtml() {
   subsUsedHtml() +
   (cur.plating ? '<section class="ficha-comp"><h2>' + esc(t('Emplatado', 'Plating')) + '</h2><div class="ficha-method">' + esc(cur.plating).split(/\n+/).map(l => '<p>' + l + '</p>').join('') + '</div></section>' : '') +
   (advice ? '<p class="ficha-line"><strong>' + esc(t('Sabor: ', 'Flavour: ')) + '</strong>' + esc(verdictText(advice.verdict, profile)) + '</p>' : '') +
-  (allergens.length ? '<p class="ficha-line"><strong>' + esc(t('Alérgenos probables: ', 'Likely allergens: ')) + '</strong>' + esc(allergens.join(', ')) + ' <small>' + esc(t('(compruébalos con las fichas de producto)', '(check them against product sheets)')) + '</small></p>' : '') +
+  (allergens.length ? '<p class="ficha-line"><strong>' + esc(alg.confirmed ? t('Alérgenos: ', 'Allergens: ') : t('Alérgenos probables: ', 'Likely allergens: ')) + '</strong>' + esc(allergens.join(', ')) + ' <small>' + esc(t('(compruébalos con las fichas de producto)', '(check them against product sheets)')) + '</small></p>' : '') +
   (last ? '<p class="ficha-line"><strong>' + esc(t('Última prueba', 'Last test')) + ' (' + esc(shortDate(last.at || new Date())) + '): </strong>' + esc([last.text, last.next ? t('Próxima vez: ', 'Next time: ') + last.next : ''].filter(Boolean).join(', ')) + '</p>' : '') +
   (cur.notes ? '<p class="ficha-line"><strong>' + esc(t('Notas: ', 'Notes: ')) + '</strong>' + esc(cur.notes) + '</p>' : '') +
   '<footer class="ficha-foot">I+D, ' + esc(shortDate(new Date())) + '</footer></article>';
@@ -359,8 +368,8 @@ function fichaText() {
   if (c.method) lines.push(c.method.trim());
  }
  if (cur.plating) lines.push('', '*' + t('Emplatado', 'Plating') + '*', cur.plating.trim());
- const allergens = (cur.advice?.allergens || []).map(id => ALLERGENS.find(x => x[0] === id)).filter(Boolean).map(lbl);
- if (allergens.length) lines.push('', t('Alérgenos probables: ', 'Likely allergens: ') + allergens.join(', '));
+ const alg = dishAllergens(cur);
+ if (alg.names.length) lines.push('', (alg.confirmed ? t('Alérgenos: ', 'Allergens: ') : t('Alérgenos probables: ', 'Likely allergens: ')) + alg.names.join(', '));
  return lines.join('\n');
 }
 async function shareFicha() {
@@ -651,6 +660,7 @@ export function mount(el, params) {
  const onChange = e => {
   if (!ready || !editable()) return;
   const x = e.target;
+  if (x.closest?.('.dalg')) { cur.allergens = $$('.dalg input:checked', root).map(i => i.value); touch('allergens'); part('fichaSec', fichaSecHtml()); return; }
   if (x.id === 'dishStatus') { cur.status = x.value; x.className = 'status-select status-' + x.value; touch('status'); }
   else if (x.id === 'dishCourse') { cur.course = x.value; touch('course'); part('analysis', analysisHtml()); }
   else if (x.id === 'dishSeason') { cur.season = x.value; touch('season'); }
@@ -731,6 +741,7 @@ export function mount(el, params) {
    if (!advice) { toast(t('Pega primero la respuesta.', 'Paste the answer first.'), 'error'); return; }
    cur.advice = advice; touch('advice'); part('adviceSec', adviceHtml()); if (!$('#fichaSec', root)?.contains(document.activeElement)) part('fichaSec', fichaSecHtml()); toast(t('Consejo guardado en el plato.', 'Advice saved in the dish.'));
   }
+  else if (act === 'alg-hint' || act === 'alg-none') { cur.allergens = act === 'alg-none' ? [] : [...(cur.advice?.allergens || [])]; touch('allergens'); part('fichaSec', fichaSecHtml()); }
   else if (act === 'sketch') {
    const {sketchSheet} = await import('../sketch.js');
    sketchSheet(async blob => {

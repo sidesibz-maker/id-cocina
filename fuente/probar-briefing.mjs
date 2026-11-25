@@ -44,6 +44,20 @@ ok((await page.textContent('.test-pending')).includes('Menos sal en el ajoblanco
 // Biblioteca: estantes nuevos
 await go('#/biblioteca'); ok(await page.locator('.kshelf[href="#/biblioteca/estante/dulce"]').count() === 1 && await page.locator('.kshelf[href="#/biblioteca/estante/tecnicas"]').count() === 1, 'faltan los estantes nuevos de la Biblioteca');
 await go('#/biblioteca/crema-inglesa'); ok((await page.textContent('.kentry')).includes('82'), 'no abre la crema inglesa');
+// Alérgenos confirmados en el plato y tabla de la carta
+await go('#/plato/d1'); await wait(300);
+ok((await page.textContent('.dalg')).includes('La IA cree que lleva'), 'el plato no propone los alérgenos de la IA');
+await page.click('[data-act=alg-hint]'); await wait(300);
+await page.click('.dalg label:has-text("Gluten")'); await wait(1500);
+const alg = await page.evaluate(() => JSON.parse(localStorage.getItem('id-cocina-v1')).dishes.find(d => d.id === 'd1').allergens);
+ok(JSON.stringify(alg && [...alg].sort()) === JSON.stringify(['frutos_cascara', 'gluten', 'moluscos']), 'no guarda los alérgenos confirmados: ' + JSON.stringify(alg));
+await page.evaluate(() => { const v = JSON.parse(localStorage.getItem('id-cocina-v1')); v.menus = [{id: 'm1', name: 'Carta de invierno', kind: 'carta', items: [{dish_id: 'd1'}, {dish_id: 'd2'}], version: 1, updated_at: '2026-11-20T10:00:00Z'}]; localStorage.setItem('id-cocina-v1', JSON.stringify(v)); });
+await page.reload(); await wait(500); await go('#/menus/m1'); await wait(300);
+await page.evaluate(() => { window.print = () => { window.__alg = document.getElementById('printFicha').innerText; window.__dots = document.querySelectorAll('#printFicha .algc').length; }; });
+await page.click('[data-act=alg-table]'); await wait(400);
+const tab = await page.evaluate(() => window.__alg || '');
+ok(tab.includes('Carta de invierno') && tab.includes('Calamar a la brasa') && tab.includes('sin confirmar') && tab.includes('Arroz de brasa'), 'la tabla de alérgenos no sale bien: ' + tab.slice(0, 300));
+ok(await page.evaluate(() => window.__dots) === 28, 'la tabla no tiene los 14 alérgenos por plato');
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();
 if (fails.length) { console.error('FALLOS en briefing y primeros pasos:\n - ' + fails.join('\n - ')); process.exit(1); }

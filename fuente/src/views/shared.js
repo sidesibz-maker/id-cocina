@@ -77,3 +77,11 @@ export const sectionHead = (title, link = '', sub = '') => '<header class="sec-h
 export const moreLink = (href, label) => '<a class="more" href="' + href + '">' + esc(label) + icon('right') + '</a>';
 export const skeleton = (n = 3) => '<div class="sk-list" aria-hidden="true">' + '<div class="sk"></div>'.repeat(n) + '</div>';
 export {hostOf};
+
+// Alérgenos de un plato: los que ha confirmado el cocinero (d.allergens) o, si aún no, la pista de la IA (probables).
+import {ALLERGENS as ALG} from '../ai-core.js';
+export function dishAllergens(d) {
+ const confirmed = Array.isArray(d?.allergens), ids = confirmed ? d.allergens : (d?.advice?.allergens || []);
+ const list = ids.map(id => ALG.find(a => a[0] === id)).filter(Boolean);
+ return {confirmed, ids: list.map(a => a[0]), names: list.map(a => (en() ? a[2] : a[1]))};
+}

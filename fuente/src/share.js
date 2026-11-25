@@ -28,7 +28,7 @@ async function sheetData(d) {
   name: d.name, concept: d.concept || '', portions: d.portions || '', plating: d.plating || '', image,
   components: d.components.filter(c => c.items.length || c.method).map(c => ({role: role(c.role).es, name: c.name || '', techniques: (c.techniques || []).map(techName).filter(Boolean), items: c.items.map(i => ({n: i.n, q: i.q || ''})), method: c.method || ''})),
   subs: subs.map(x => ({name: x.name, yield: x.yield, items: x.items.map(i => ({n: i.n, q: i.q || ''})), method: x.method})),
-  allergens: (d.advice?.allergens || []).map(id => ALLERGENS.find(a => a[0] === id)?.[1]).filter(Boolean),
+  allergens: (Array.isArray(d.allergens) ? d.allergens : d.advice?.allergens || []).map(id => ALLERGENS.find(a => a[0] === id)?.[1]).filter(Boolean),
   updated_at: new Date().toISOString()
  };
 }
