@@ -5,10 +5,11 @@ import B from './b.json';
 import C from './c.json';
 import PREPARACIONES from './preparaciones.json';
 import TECNICAS from './tecnicas.json';
+import DULCE from './dulce.json';
 import {state} from '../store.js';
 
-const BUILT = [...A, ...B, ...C, ...PREPARACIONES, ...TECNICAS].filter(e => e && e.id && e.name);
-export const CATS = [['salsas', 'Salsas', 'Sauces'], ['fondos', 'Fondos, jugos y caldos', 'Stocks, jus and broths'], ['bases', 'Bases y aliños', 'Bases and dressings'], ['tecnicas', 'Técnicas de cocción', 'Cooking techniques'], ['conceptos', 'Conceptos y técnicas', 'Concepts and techniques'], ['mias', 'Tus entradas', 'Your entries']];
+const BUILT = [...A, ...B, ...C, ...PREPARACIONES, ...TECNICAS, ...DULCE].filter(e => e && e.id && e.name);
+export const CATS = [['salsas', 'Salsas', 'Sauces'], ['fondos', 'Fondos, jugos y caldos', 'Stocks, jus and broths'], ['bases', 'Bases y aliños', 'Bases and dressings'], ['tecnicas', 'Técnicas de cocción', 'Cooking techniques'], ['dulce', 'Pastelería y masas', 'Pastry and doughs'], ['conceptos', 'Conceptos y técnicas', 'Concepts and techniques'], ['mias', 'Tus entradas', 'Your entries']];
 const norm = v => String(v || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9ñ ]+/g, ' ').replace(/\s+/g, ' ').trim();
 const plain = v => String(v || '').replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, '$2').replace(/\[\[([^\]]+)\]\]/g, '$1');
 

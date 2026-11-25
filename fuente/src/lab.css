@@ -917,3 +917,9 @@ html.cooking .tabs{display:none}html.cooking .view{padding-bottom:calc(32px + en
  .book-index{break-after:page}.book-index h2{font-family:var(--serif,serif);font-weight:400;font-size:20pt}.book-index ol{padding-left:20px;list-style:decimal;columns:2;font-size:11pt}
  .book-page{break-before:page}.book-page:first-of-type{break-before:auto}
 }
+
+/* ---------- Pruebas de cata: evolución ---------- */
+.test-pending{margin:8px 0 16px}.test-pending p{color:var(--ink)}
+.test-trend{margin:8px 0 16px}.test-trend svg{display:block;max-width:100%;height:auto}
+.tt-grid{stroke:var(--line);stroke-width:1}.tt-line{fill:none;stroke:var(--ember);stroke-width:2;stroke-linejoin:round}.tt-dot{fill:var(--card);stroke:var(--ember);stroke-width:2}
+.test-trend figcaption{font-size:13.5px;color:var(--mut);margin-top:4px}

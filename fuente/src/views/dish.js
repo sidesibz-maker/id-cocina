@@ -258,9 +258,25 @@ function pairingHtml() {
 
 // ---------- Pruebas de cata ----------
 const stars = n => '<span class="stars" aria-label="' + n + ' ' + esc(t('de 5', 'out of 5')) + '">' + [1, 2, 3, 4, 5].map(k => '<i class="' + (k <= n ? 'on' : '') + '">' + icon('star') + '</i>').join('') + '</span>';
+// Cómo ha ido evolucionando la nota del plato, prueba a prueba.
+function testTrend(list) {
+ if (list.length < 2) return '';
+ const w = 280, h = 64, pad = 8, n = list.length, x = k => pad + k * (w - pad * 2) / (n - 1), y = r => h - pad - (r - 1) * (h - pad * 2) / 4;
+ const pts = list.map((v, k) => x(k).toFixed(1) + ',' + y(v.rating).toFixed(1)).join(' ');
+ const first = list[0].rating, last = list[n - 1].rating, avg = list.reduce((a, v) => a + v.rating, 0) / n;
+ const word = last > first ? t('va a mejor', 'is improving') : last < first ? t('ha bajado', 'has dropped') : t('se mantiene', 'is steady');
+ return '<figure class="test-trend"><svg viewBox="0 0 ' + w + ' ' + h + '" width="' + w + '" height="' + h + '" role="img" aria-label="' + esc(t('Notas de las pruebas, de la primera a la última: ', 'Test ratings, first to last: ') + list.map(v => v.rating).join(', ')) + '">' +
+  [1, 3, 5].map(r => '<line class="tt-grid" x1="' + pad + '" x2="' + (w - pad) + '" y1="' + y(r) + '" y2="' + y(r) + '"/>').join('') +
+  '<polyline class="tt-line" points="' + pts + '"/>' + list.map((v, k) => '<circle class="tt-dot" cx="' + x(k).toFixed(1) + '" cy="' + y(v.rating).toFixed(1) + '" r="3.5"/>').join('') + '</svg>' +
+  '<figcaption>' + esc(n + t(' pruebas con nota, media ', ' rated tests, average ') + avg.toLocaleString(undefined, {maximumFractionDigits: 1}) + t(' de 5; ', ' out of 5; ') + word + '.') + '</figcaption></figure>';
+}
 function testsHtml() {
  const can = editable(), tests = [...cur.tests].filter(Boolean).reverse();
  let html = '<h2>' + esc(t('Pruebas de cata', 'Tasting tests')) + '</h2>';
+ // Lo que te apuntaste para la próxima vez, arriba, antes de volver a cocinarlo.
+ const pending = tests.find(x => x.next);
+ if (pending) html += '<div class="callout test-pending"><h3>' + esc(t('Lo que te apuntaste para esta vez', 'What you noted for this time')) + '</h3><p>' + esc(pending.next) + '</p></div>';
+ html += testTrend([...cur.tests].filter(x => x && x.rating));
  if (can) html += '<form class="test-form" id="testForm"><fieldset class="rating"><legend>' + esc(t('¿Cómo salió?', 'How did it go?')) + '</legend>' + [1, 2, 3, 4, 5].map(k => '<label><input type="radio" name="rating" value="' + k + '"><span>' + icon('star') + '<b class="sr">' + k + '</b></span></label>').join('') + '</fieldset>' +
   '<label for="testText">' + esc(t('Qué tal estaba', 'How it tasted')) + '</label><textarea id="testText" data-voice rows="2" maxlength="1200" placeholder="' + esc(t('Punto, sabor, textura, lo que dijo el equipo…', 'Doneness, flavour, texture, what the team said…')) + '"></textarea>' +
   '<label for="testNext">' + esc(t('Qué cambio la próxima vez', 'What I will change next time')) + '</label><textarea id="testNext" data-voice rows="2" maxlength="800" placeholder="' + esc(t('Menos sal en la salsa, más brasa…', 'Less salt in the sauce, more char…')) + '"></textarea>' +

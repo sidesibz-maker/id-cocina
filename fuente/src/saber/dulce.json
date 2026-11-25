@@ -1,0 +1,196 @@
+[
+ {
+  "id": "crema-inglesa",
+  "name": "Crema inglesa",
+  "name_en": "Custard (crème anglaise)",
+  "cat": "dulce",
+  "group": "Cremas",
+  "aka": ["creme anglaise", "natillas", "base de helado", "custard"],
+  "summary": "Leche o nata con yemas y azúcar, cocida sin hervir hasta que napa la cuchara: salsa de postre y base de helados y bavaroises.",
+  "what": "Es una crema que espesa solo con la yema, sin almidón. Por eso no puede hervir: entre 82 y 84 °C la yema liga; por encima, cuaja en grumos. Bien hecha napa la cuchara y al pasar el dedo deja un surco limpio. Con gelatina y nata montada se convierte en bavaroise; mantecada, en helado.",
+  "base": {
+   "for": "1 litro",
+   "items": [["Leche entera", "500 ml"], ["Nata 35 %", "500 ml"], ["Yemas", "200 g (unas 10)"], ["Azúcar", "180 g"], ["Vainilla u otro aroma", "1 vaina"]],
+   "steps": ["Calienta la leche y la nata con la vainilla abierta hasta que hierva; tapa y deja infusionar 10 minutos.", "Blanquea las yemas con el azúcar sin montarlas.", "Vierte un tercio del líquido caliente sobre las yemas removiendo, y devuelve todo al cazo.", "Cuece a fuego suave sin dejar de remover con espátula hasta 82-84 °C, cuando nape.", "Cuela enseguida sobre un recipiente frío y abate removiendo de vez en cuando."]
+  },
+  "ratios": [
+   {"use": "Salsa de postre", "ratio": "160-200 g de yema por litro", "note": "Fluida, napa la cuchara."},
+   {"use": "Base de helado", "ratio": "200-240 g de yema por litro", "note": "Con más nata para cremosidad."},
+   {"use": "Bavaroise", "ratio": "Crema inglesa más 8-10 g de gelatina por litro y nata semimontada a partes iguales", "note": "Se cuaja en frío."}
+  ],
+  "variants": [{"id": "crema-pastelera", "name": "Crema pastelera", "note": "La misma idea con almidón: aguanta el hervor y se sostiene."}],
+  "keys": ["Termómetro: el margen entre ligar y cuajar es de pocos grados.", "Espátula, no varilla: no hay que meter aire.", "Cuela siempre sobre un recipiente frío para cortar la cocción.", "Infusiona en la leche cualquier aroma: café, hierbas, cítricos, tostados.", "Abate rápido: es un medio perfecto para bacterias."],
+  "errors": [{"p": "Se corta en grumos", "fix": "Pasó de unos 85 °C. Si está empezando, cuela sobre frío y tritura con túrmix; si está muy cuajada, empieza de nuevo."}, {"p": "Queda líquida", "fix": "No llegó a la temperatura. Vuelve al fuego suave y sube despacio a 82 °C."}, {"p": "Sabe a huevo", "fix": "Pocas yemas de calidad o infusión débil. Más aroma y yemas frescas pasteurizadas."}],
+  "history": "Las cremas de leche, huevo y azúcar están en los recetarios europeos desde hace siglos; en España las natillas son su versión casera más conocida.",
+  "uses": ["Salsa para tartas y bizcochos", "Helados", "Bavaroises", "Torrijas", "Islas flotantes"],
+  "keep": "Abatida y en frío, uno o dos días como mucho; sigue tu plan APPCC. No se congela como salsa: se corta.",
+  "pro": "Hazla con yema pasteurizada en producción. Una tanda al día, abatida y en biberón para el pase.",
+  "related": ["crema-pastelera", "ligazones", "emulsiones"]
+ },
+ {
+  "id": "crema-pastelera",
+  "name": "Crema pastelera",
+  "name_en": "Pastry cream",
+  "cat": "dulce",
+  "group": "Cremas",
+  "aka": ["pastelera", "crema de relleno", "creme patissiere"],
+  "summary": "Crema espesa de leche, yema, azúcar y almidón que hierve sin cortarse: relleno de pasteles, base de cremas y suflés.",
+  "what": "Lleva almidón, que protege a la yema y permite hervir la crema. Hay que hervirla un par de minutos para que el almidón espese del todo y pierda el sabor a crudo. Fría queda firme; batida se suaviza. Con mantequilla se convierte en crema muselina y con nata montada en crema diplomática.",
+  "base": {
+   "for": "1 litro de leche",
+   "items": [["Leche entera", "1 l"], ["Yemas", "160 g (unas 8)"], ["Azúcar", "200 g"], ["Almidón de maíz", "80 g"], ["Mantequilla", "50 g"], ["Vainilla o piel de cítrico", "al gusto"]],
+   "steps": ["Calienta la leche con el aroma.", "Mezcla las yemas, el azúcar y el almidón hasta que no queden grumos.", "Vierte parte de la leche caliente sobre la mezcla, remueve y devuelve al cazo.", "Cuece con varilla sin parar hasta que hierva y mantén el hervor 1-2 minutos.", "Fuera del fuego añade la mantequilla, pasa a bandeja, film a piel y abate."]
+  },
+  "ratios": [
+   {"use": "Relleno firme (milhojas, lionesas)", "ratio": "80-90 g de almidón por litro", "note": "Se sostiene al cortar."},
+   {"use": "Crema más suave (tartas de fruta)", "ratio": "60-70 g de almidón por litro", "note": "Se extiende fácil."},
+   {"use": "Crema diplomática", "ratio": "Pastelera fría y nata semimontada a partes iguales", "note": "Ligera, para rellenos."}
+  ],
+  "variants": [{"id": "crema-inglesa", "name": "Crema inglesa", "note": "Sin almidón; más fluida y delicada."}],
+  "keys": ["Que hierva: si no, se licúa al día siguiente por la enzima de la yema.", "Film pegado a la superficie para que no haga costra.", "Antes de usarla, bátela para devolverle la textura lisa.", "La mantequilla al final da brillo y sabor.", "Abate y guarda en frío siempre."],
+  "errors": [{"p": "Grumos", "fix": "Almidón mal disuelto o falta de varilla. Tritura con túrmix en caliente y cuela."}, {"p": "Se licúa en la nevera", "fix": "No hirvió lo suficiente. Hiérvela 1-2 minutos la próxima vez."}, {"p": "Sabor a harina", "fix": "Hervor corto. Alarga un minuto el hervor removiendo."}],
+  "history": "La crema pastelera es una base clásica de la pastelería europea y de muchos dulces españoles, como los pasteles de crema y las bambas.",
+  "uses": ["Milhojas", "Lionesas y relámpagos", "Tartas de fruta", "Bambas y ensaimadas", "Suflés"],
+  "keep": "En frío, film a piel, uno o dos días; lo que marque tu plan APPCC.",
+  "pro": "Haz la cantidad del día. Guárdala en manga en frío y bátela antes del servicio.",
+  "related": ["crema-inglesa", "ligazones", "masa-quebrada"]
+ },
+ {
+  "id": "merengues",
+  "name": "Merengues",
+  "name_en": "Meringues",
+  "cat": "dulce",
+  "group": "Espumas y azúcar",
+  "aka": ["merengue frances", "merengue italiano", "merengue suizo", "claras montadas"],
+  "summary": "Clara y azúcar montados: francés para hornear, suizo más firme y estable, italiano con almíbar para mousses y para quemar.",
+  "what": "La clara batida atrapa aire y el azúcar la estabiliza. Según cómo entra el azúcar cambia todo: en crudo (francés) es ligero y se hornea; calentado al baño maría (suizo) queda denso y brillante; con almíbar a 118-121 °C (italiano) queda cocido, muy estable y se puede quemar con soplete.",
+  "base": {
+   "for": "Unos 400 g de merengue italiano",
+   "items": [["Claras", "100 g"], ["Azúcar para el almíbar", "200 g"], ["Agua", "60 ml"], ["Azúcar para las claras", "20 g"]],
+   "steps": ["Cuece el agua con el azúcar del almíbar sin remover.", "Cuando el almíbar llegue a unos 114 °C, empieza a montar las claras con el resto del azúcar.", "Al llegar a 118-121 °C, vierte el almíbar en hilo fino sobre las claras, sin tocar las varillas.", "Sigue batiendo a velocidad media hasta que el merengue esté tibio y brillante."]
+  },
+  "ratios": [
+   {"use": "Merengue francés (secar al horno)", "ratio": "2 partes de azúcar por 1 de clara", "note": "Hornear a 90-100 °C hasta que esté seco."},
+   {"use": "Merengue suizo", "ratio": "2 partes de azúcar por 1 de clara, calentado a 60-70 °C", "note": "Para decorar y crema de mantequilla."},
+   {"use": "Merengue italiano", "ratio": "2 partes de azúcar por 1 de clara, almíbar a 118-121 °C", "note": "Mousses, tartas de limón, quemar con soplete."}
+  ],
+  "variants": [{"id": "caramelo", "name": "Caramelo y almíbares", "note": "Los puntos del azúcar que pide el merengue italiano."}],
+  "keys": ["Bol y varillas sin rastro de grasa ni de yema.", "Claras a temperatura ambiente montan con más volumen.", "El azúcar se añade cuando la clara ya espuma, no al principio.", "Para el italiano, termómetro: el punto del almíbar decide la firmeza.", "Un poco de ácido (zumo de limón) estabiliza el francés."],
+  "errors": [{"p": "No monta", "fix": "Hay grasa o yema en el bol. Limpia con vinagre y empieza con claras nuevas."}, {"p": "Llora almíbar", "fix": "Azúcar mal disuelto o merengue poco cocido. Añade el azúcar poco a poco o usa suizo o italiano."}, {"p": "Se agrieta o se dora en el horno", "fix": "Horno demasiado fuerte. Baja a 90-100 °C y alarga."}],
+  "history": "El merengue aparece en los recetarios europeos desde hace siglos; las tres formas clásicas se fijaron en la pastelería francesa y suiza.",
+  "uses": ["Tartas de limón y de merengue", "Pavlovas", "Mousses y semifríos", "Decoración quemada", "Cremas de mantequilla"],
+  "keep": "El francés seco, en recipiente hermético y sin humedad, varios días. El suizo y el italiano se usan al momento.",
+  "pro": "Prepara el italiano justo antes de montar mousses o decorar. El francés seco aguanta y se puede hacer en tandas.",
+  "related": ["caramelo", "crema-inglesa"]
+ },
+ {
+  "id": "caramelo",
+  "name": "Caramelo y almíbares",
+  "name_en": "Caramel and syrups",
+  "cat": "dulce",
+  "group": "Espumas y azúcar",
+  "aka": ["almibar", "puntos del azucar", "caramelo en seco", "toffee", "caramelo salado"],
+  "summary": "Los puntos del azúcar, de almíbar ligero a caramelo oscuro, y cómo hacer un caramelo de nata que no se corte.",
+  "what": "Al calentar azúcar con agua, el agua se evapora y el almíbar va concentrándose: cada temperatura da una textura al enfriar. Pasados unos 160 °C el azúcar se carameliza y gana color y amargor. Un termómetro hace repetible lo que antes se medía a ojo.",
+  "base": {
+   "for": "Unos 500 g de caramelo de nata",
+   "items": [["Azúcar", "250 g"], ["Nata 35 % caliente", "250 ml"], ["Mantequilla", "50 g"], ["Sal en escamas", "3-5 g"]],
+   "steps": ["Carameliza el azúcar en seco a fuego medio, añadiéndolo por tandas, hasta color ámbar (unos 170-175 °C).", "Retira del fuego y añade la nata caliente poco a poco, con cuidado porque salta.", "Vuelve al fuego y deja que hierva un minuto hasta que todo esté disuelto.", "Fuera del fuego, añade la mantequilla y la sal."]
+  },
+  "ratios": [
+   {"use": "Almíbar para borrachos y frutas", "ratio": "1 parte de azúcar y 1 de agua, hervir", "note": "Ligero."},
+   {"use": "Punto de bola blanda (fondant, merengue italiano)", "ratio": "115-121 °C", "note": "Al enfriar queda blando y maleable."},
+   {"use": "Punto de caramelo duro", "ratio": "145-155 °C", "note": "Quebradizo y transparente."},
+   {"use": "Caramelo rubio a oscuro", "ratio": "160-180 °C", "note": "Cuanto más oscuro, más amargo."}
+  ],
+  "variants": [{"id": "merengues", "name": "Merengue italiano", "note": "Con almíbar a 118-121 °C."}],
+  "keys": ["Cazo limpio y de fondo grueso.", "En almíbar, no remover: pincel con agua para limpiar las paredes.", "La nata se añade caliente para no cuajar el caramelo.", "Un poco de glucosa o zumo de limón evita que cristalice.", "Ten agua fría cerca: una quemadura de caramelo es grave."],
+  "errors": [{"p": "Cristaliza y se queda arenoso", "fix": "Se removió o quedaron cristales en las paredes. Añade agua, disuelve de nuevo y no remuevas."}, {"p": "Amargo", "fix": "Pasó de punto. Sácalo antes y corta la cocción con la nata."}, {"p": "Se hace un bloque al añadir la nata", "fix": "La nata estaba fría. Vuelve al fuego suave hasta que se funda."}],
+  "history": "Cocer azúcar a distintos puntos es una técnica de confitería muy antigua; los nombres de los puntos (hebra, bola, lámina) vienen de cómo se comprobaban a mano.",
+  "uses": ["Flanes", "Salsas de caramelo", "Turrones y garrapiñados", "Decoraciones", "Merengue italiano"],
+  "keep": "El caramelo de nata en frío una o dos semanas; el caramelo duro, hermético y sin humedad.",
+  "pro": "Termómetro de azúcar en el cazo y caramelo de nata en biberón para el pase.",
+  "related": ["merengues", "crema-inglesa"]
+ },
+ {
+  "id": "ganache",
+  "name": "Ganache",
+  "name_en": "Ganache",
+  "cat": "dulce",
+  "group": "Chocolate",
+  "aka": ["crema de chocolate", "trufa", "glaseado de chocolate"],
+  "summary": "Chocolate y nata emulsionados: según la proporción, glaseado, relleno, trufa o ganache montada.",
+  "what": "Es una emulsión: la grasa del cacao y de la nata se reparte en el agua de la nata. Cuanto más chocolate, más firme. Se hace mejor vertiendo la nata caliente sobre el chocolate en tres veces o terminando con túrmix sin meter aire.",
+  "base": {
+   "for": "Unos 500 g de ganache para rellenar",
+   "items": [["Chocolate negro 60-70 %", "250 g"], ["Nata 35 %", "250 ml"], ["Glucosa o miel (opcional)", "20 g"], ["Mantequilla (opcional)", "25 g"]],
+   "steps": ["Pica el chocolate o usa pastillas.", "Lleva la nata (con la glucosa) a hervor.", "Viértela sobre el chocolate en tres veces, removiendo desde el centro para formar la emulsión.", "Termina con túrmix sin levantarlo, y añade la mantequilla a unos 35 °C.", "Film a piel y deja cristalizar a temperatura fresca."]
+  },
+  "ratios": [
+   {"use": "Glaseado brillante", "ratio": "1 parte de chocolate negro por 1 de nata", "note": "Usar a 30-35 °C."},
+   {"use": "Relleno firme o trufa", "ratio": "2 partes de chocolate negro por 1 de nata", "note": "Se bolea en frío."},
+   {"use": "Ganache montada", "ratio": "1 de chocolate por 2-3 de nata, reposada en frío y montada", "note": "Ligera, para manga."},
+   {"use": "Con chocolate con leche o blanco", "ratio": "Aumenta el chocolate un 30-50 %", "note": "Tienen menos cacao y cuajan menos."}
+  ],
+  "variants": [{"id": "emulsiones", "name": "Emulsiones", "note": "La misma física que la mayonesa."}],
+  "keys": ["Es una emulsión: empieza por el centro y amplía.", "El túrmix sin meter aire da la textura más fina.", "La glucosa da brillo y alarga la vida.", "Cristaliza mejor a temperatura fresca que en nevera.", "Infusiona la nata con café, especias o hierbas antes."],
+  "errors": [{"p": "Se corta y suelta grasa", "fix": "Demasiado caliente o poca agua. Añade un poco de nata o leche tibia y emulsiona con túrmix."}, {"p": "Granulosa", "fix": "Chocolate quemado o con agua. Empieza de nuevo y no hiervas el chocolate."}, {"p": "No cuaja", "fix": "Proporción con poco chocolate. Funde y añade más chocolate."}],
+  "history": "La ganache es una preparación clásica de la pastelería francesa del siglo XIX que hoy está en todas las pastelerías.",
+  "uses": ["Trufas y bombones", "Relleno de tartas", "Glaseados", "Tartaletas", "Macarons"],
+  "keep": "Con film a piel, en lugar fresco o en frío unos días; la montada, en frío y al momento.",
+  "pro": "Pesa siempre y anota el chocolate exacto: cada marca y porcentaje cambia la textura.",
+  "related": ["emulsiones", "crema-inglesa"]
+ },
+ {
+  "id": "masa-quebrada",
+  "name": "Masa quebrada y sablée",
+  "name_en": "Shortcrust and sablé pastry",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": ["pasta brisa", "masa brisa", "pasta sablee", "masa para tartaletas", "pate sucree", "shortcrust"],
+  "summary": "Harina, mantequilla y poco líquido: la base de tartas y tartaletas, salada (brisa) o dulce y arenosa (sablée).",
+  "what": "Lo importante es que la mantequilla recubra la harina antes de que entre el líquido, para que se forme poco gluten y la masa quede quebradiza en vez de elástica. Se trabaja en frío, se amasa lo justo y se deja reposar antes de estirar para que no encoja en el horno.",
+  "base": {
+   "for": "Unos 700 g de masa sablée (2 tartas de 24 cm)",
+   "items": [["Harina floja", "300 g"], ["Mantequilla fría en dados", "180 g"], ["Azúcar glas", "110 g"], ["Almendra en polvo", "40 g"], ["Huevo", "60 g (1)"], ["Sal", "2 g"]],
+   "steps": ["Arena la harina, la almendra, el azúcar y la sal con la mantequilla fría hasta que parezca arena.", "Añade el huevo y une sin amasar más de lo necesario.", "Aplana, envuelve y reposa en frío al menos 1 hora.", "Estira entre papeles a 3 mm, forra el molde y vuelve a enfriar 20 minutos.", "Hornea a 160-170 °C, con peso si va en blanco, hasta que esté dorada."]
+  },
+  "ratios": [
+   {"use": "Brisa salada (quiches)", "ratio": "2 partes de harina, 1 de mantequilla, agua fría a ojo y sal", "note": "Sin azúcar."},
+   {"use": "Sablée dulce", "ratio": "Harina 100, mantequilla 60, azúcar 35-40, huevo 20 (en peso)", "note": "Arenosa y fina."},
+   {"use": "Horneado en blanco", "ratio": "160-170 °C, 15-20 min con peso y 5-10 sin peso", "note": "Hasta dorar el fondo."}
+  ],
+  "variants": [{"id": "crema-pastelera", "name": "Crema pastelera", "note": "El relleno clásico de la tarta de frutas."}],
+  "keys": ["Todo frío: mantequilla, huevo y manos rápidas.", "Amasa lo justo; cuanto más amasas, más encoge.", "Reposa en frío antes de estirar y otra vez antes de hornear.", "Estira entre dos papeles para no añadir harina.", "Pincha el fondo y hornea en blanco para que no quede cruda."],
+  "errors": [{"p": "Encoge en el horno", "fix": "Se amasó mucho o no reposó. Reposa más y no estires la masa al forrar."}, {"p": "Fondo crudo", "fix": "Faltó horneado en blanco o el relleno era muy húmedo. Hornea en blanco y pincela con huevo o chocolate."}, {"p": "Se rompe al estirar", "fix": "Demasiado fría o seca. Déjala templar unos minutos o añade una gota de huevo."}],
+  "history": "Las masas quebradas son la base de las tartas de la pastelería europea; la versión con almendra es muy habitual en la pastelería actual.",
+  "uses": ["Tartas de fruta", "Tartaletas de crema", "Quiches", "Galletas"],
+  "keep": "La masa cruda, en frío varios días o congelada semanas. Las bases horneadas, herméticas y secas.",
+  "pro": "Haz bloques grandes y congela en porciones. Forra tartaletas por cientos y hornéalas en blanco con antelación.",
+  "related": ["crema-pastelera", "ganache"]
+ },
+ {
+  "id": "masa-madre",
+  "name": "Masa madre",
+  "name_en": "Sourdough starter",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": ["levadura natural", "prefermento", "sourdough", "masa madre de cultivo", "levain"],
+  "summary": "Harina y agua fermentadas por sus levaduras y bacterias: cómo empezarla, alimentarla y saber cuándo está lista para el pan.",
+  "what": "La masa madre es un cultivo de levaduras y bacterias lácticas que viven en la harina. Alimentada con regularidad, hace subir el pan y le da acidez y aroma. Se lleva por hidratación (agua respecto a la harina): una madre líquida al 100 % es la más fácil de controlar en cocina.",
+  "method": ["Mezcla 50 g de harina integral de centeno o trigo con 50 g de agua templada y tapa sin cerrar del todo.", "Cada 24 horas, tira la mitad y alimenta con 50 g de harina y 50 g de agua. A los 5-10 días debe doblar su volumen de forma regular.", "Cuando dobla en 4-8 horas a 24-26 °C y huele a yogur y fruta, está lista.", "Para el pan, alimenta la víspera o unas horas antes y úsala en su pico, cuando está más alta.", "Guárdala en frío entre usos y aliméntala al menos una vez por semana."],
+  "ratios": [
+   {"use": "Refresco habitual", "ratio": "1 de madre, 1 de harina, 1 de agua (en peso)", "note": "Pico en 4-6 horas a 25 °C."},
+   {"use": "Refresco lento (para la noche)", "ratio": "1 de madre, 5 de harina, 5 de agua", "note": "Pico en 10-12 horas."},
+   {"use": "Pan de masa madre", "ratio": "15-25 % de madre sobre la harina, hidratación 68-78 %, 2 % de sal", "note": "Ver la calculadora de panadero."}
+  ],
+  "variants": [{"id": "fermentacion-lactica", "name": "Fermentación láctica", "note": "Las mismas bacterias que en los fermentos de verdura."}],
+  "keys": ["Constancia: mismas horas, misma harina, misma temperatura.", "Usa la madre en su pico, no cuando ya ha bajado.", "La harina integral arranca antes que la blanca.", "Un líquido gris por encima es alcohol: tiene hambre, aliméntala.", "Apunta cada refresco en el diario hasta que la domines."],
+  "errors": [{"p": "No sube", "fix": "Frío o harina muy refinada. Lleva a 24-26 °C y usa integral unos días."}, {"p": "Huele a acetona", "fix": "Lleva demasiado sin comer. Refresca dos veces al día durante un par de días."}, {"p": "Moho de colores", "fix": "Contaminación. Tírala y empieza de nuevo con un bote limpio."}],
+  "history": "Fermentar el pan con masa madre fue la forma de hacer pan durante miles de años, antes de la levadura comercial; hoy ha vuelto a muchas panaderías y restaurantes.",
+  "uses": ["Pan de la casa", "Focaccias", "Masas de pizza", "Bizcochos y galletas con descarte"],
+  "keep": "En frío, alimentada una vez por semana. Se puede secar en láminas para tener una copia de seguridad.",
+  "pro": "Ten dos madres por si una falla y un horario fijo de refrescos. El descarte sirve para crackers y masas fritas.",
+  "related": ["fermentacion-lactica", "masa-quebrada"]
+ }
+]

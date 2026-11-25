@@ -36,6 +36,14 @@ await page.click('[data-act=book]'); await page.waitForSelector('.sheet [data-ok
 const book = await page.evaluate(() => window.__book || '');
 ok(await page.evaluate(() => window.__pages) === 2, 'el recetario no lleva solo los platos en carta y listos');
 ok(book.includes('Índice') && book.includes('Arroz bomba') && book.includes('Sofreír y mojar') && !book.includes('Idea suelta'), 'el recetario no lleva índice o fichas completas');
+// Pruebas de cata: evolución de la nota y lo pendiente para la próxima vez
+await page.evaluate(() => { const v = JSON.parse(localStorage.getItem('id-cocina-v1')); v.dishes[0].tests = [{id: 't1', at: '2026-11-01', rating: 2, text: 'Seco', next: ''}, {id: 't2', at: '2026-11-10', rating: 3, text: 'Mejor', next: ''}, {id: 't3', at: '2026-11-20', rating: 4, text: 'Casi', next: 'Menos sal en el ajoblanco'}]; localStorage.setItem('id-cocina-v1', JSON.stringify(v)); });
+await page.reload(); await wait(500); await go('#/plato/d1'); await wait(400);
+ok(await page.locator('.test-trend circle').count() === 3 && (await page.textContent('.test-trend')).includes('va a mejor'), 'no enseña la evolución de las pruebas');
+ok((await page.textContent('.test-pending')).includes('Menos sal en el ajoblanco'), 'no recuerda lo apuntado para la próxima vez');
+// Biblioteca: estantes nuevos
+await go('#/biblioteca'); ok(await page.locator('.kshelf[href="#/biblioteca/estante/dulce"]').count() === 1 && await page.locator('.kshelf[href="#/biblioteca/estante/tecnicas"]').count() === 1, 'faltan los estantes nuevos de la Biblioteca');
+await go('#/biblioteca/crema-inglesa'); ok((await page.textContent('.kentry')).includes('82'), 'no abre la crema inglesa');
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();
 if (fails.length) { console.error('FALLOS en briefing y primeros pasos:\n - ' + fails.join('\n - ')); process.exit(1); }
