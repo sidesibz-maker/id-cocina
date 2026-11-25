@@ -877,8 +877,8 @@ html.cooking .tabs{display:none}html.cooking .view{padding-bottom:calc(32px + en
 .lbl-dates{display:grid;grid-template-columns:1fr 1fr;gap:8px}.lbl-dates span{display:grid;font-weight:700;font-variant-numeric:tabular-nums}.lbl-dates small{font:600 11.5px var(--narrow);color:var(--mut)}
 .lbl-end{color:var(--ember-ink)}.lbl-keep,.lbl-al,.lbl-who{font-size:13px;color:var(--ink2)}
 @media print{
- .lbl-sheet{display:grid;grid-template-columns:repeat(3,1fr);gap:3mm}.lbl-sheet .lbl{max-width:none;break-inside:avoid;padding:3mm;border:1.5px solid #000;background:#fff;color:#000}
- .lbl-sheet .lbl-name{font-size:15pt}.lbl-sheet .lbl-end{color:#000}.lbl-sheet .lbl-dates small,.lbl-sheet .lbl-keep,.lbl-sheet .lbl-al,.lbl-sheet .lbl-who{color:#000}
+ .lbl-sheet{display:grid;grid-template-columns:repeat(3,1fr);gap:3mm}.lbl-sheet .lbl{max-width:none;break-inside:avoid;padding:3mm;border:1.5px solid var(--print-ink);background:var(--print-paper);color:var(--print-ink)}
+ .lbl-sheet .lbl-name{font-size:15pt}.lbl-sheet .lbl-end{color:var(--print-ink)}.lbl-sheet .lbl-dates small,.lbl-sheet .lbl-keep,.lbl-sheet .lbl-al,.lbl-sheet .lbl-who{color:var(--print-ink)}
  .prprint{font:10.5pt/1.45 var(--sans,sans-serif);white-space:pre-wrap;margin:0}
 }
 
@@ -925,3 +925,5 @@ html.cooking .tabs{display:none}html.cooking .view{padding-bottom:calc(32px + en
 .test-trend figcaption{font-size:13.5px;color:var(--mut);margin-top:4px}
 .craft-challenge{border-color:var(--gold);box-shadow:var(--shadow-s)}.craft-challenge.is-done{box-shadow:none;border-style:dashed}
 .craft-acts{display:flex;flex-wrap:wrap;gap:0 16px;margin-top:4px}.craft-acts .linkbtn{min-height:40px;padding:0}
+/* Móvil: el título de página ocupa todo el ancho y los botones bajan debajo. */
+@media (max-width:640px){.page-head-row{flex-direction:column;align-items:stretch}.page-head-row>.btn,.page-head-row>.row-actions{align-self:flex-start}.page-head-row .row-actions{justify-content:flex-start;margin-top:0}.sec-head{flex-wrap:wrap}.sec-head>.linkbtn,.sec-head>.btn{margin-left:auto}}
