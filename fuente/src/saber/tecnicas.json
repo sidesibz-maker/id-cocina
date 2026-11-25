@@ -5,29 +5,112 @@
   "name_en": "Meat doneness",
   "cat": "tecnicas",
   "group": "Calor y punto",
-  "aka": ["puntos de coccion", "temperatura a corazon", "poco hecho al punto hecho", "doneness"],
+  "aka": [
+   "puntos de coccion",
+   "temperatura a corazon",
+   "poco hecho al punto hecho",
+   "doneness"
+  ],
   "summary": "Cómo saber y repetir el punto de cada carne: temperatura a corazón, la subida durante el reposo y por qué el dedo engaña.",
   "what": "El punto es la temperatura que alcanza el centro de la pieza, no el tiempo que ha estado en el fuego. Con una sonda se repite igual en cada servicio, lo haga quien lo haga. Hay que contar con que la pieza sigue subiendo unos grados fuera del calor, sobre todo si es gruesa: se saca antes del punto final y se deja [[sellado-y-reposo|reposar]].",
   "base": {
    "for": "1 pieza de vacuno de 4 cm de grosor",
-   "items": [["Lomo de vacuno atemperado 30 minutos", "350 g"], ["Sal en escamas", "al gusto"], ["Aceite de oliva", "10 ml"]],
-   "steps": ["Seca bien la superficie y sala justo antes de cocinar o con al menos 40 minutos de antelación, nunca a medias.", "Marca a fuego vivo por todas las caras hasta tener costra.", "Pasa a calor más suave y pincha con sonda en el centro de la parte más gruesa.", "Saca 3 o 4 °C antes del punto que quieres y deja reposar en rejilla 5 a 8 minutos.", "Corta contra la fibra y termina con la sal en escamas."]
+   "items": [
+    [
+     "Lomo de vacuno atemperado 30 minutos",
+     "350 g"
+    ],
+    [
+     "Sal en escamas",
+     "al gusto"
+    ],
+    [
+     "Aceite de oliva",
+     "10 ml"
+    ]
+   ],
+   "steps": [
+    "Seca bien la superficie y sala justo antes de cocinar o con al menos 40 minutos de antelación, nunca a medias.",
+    "Marca a fuego vivo por todas las caras hasta tener costra.",
+    "Pasa a calor más suave y pincha con sonda en el centro de la parte más gruesa.",
+    "Saca 3 o 4 °C antes del punto que quieres y deja reposar en rejilla 5 a 8 minutos.",
+    "Corta contra la fibra y termina con la sal en escamas."
+   ]
   },
   "ratios": [
-   {"use": "Vacuno y cordero, poco hecho", "ratio": "50-52 °C a corazón al servir", "note": "Sacar a unos 47-48 °C en piezas gruesas."},
-   {"use": "Vacuno y cordero, al punto", "ratio": "54-57 °C a corazón", "note": "El punto más pedido; sacar a 51-53 °C."},
-   {"use": "Cerdo jugoso", "ratio": "62-65 °C a corazón", "note": "Cerdo de calidad y bien conservado; manda tu plan APPCC."},
-   {"use": "Aves", "ratio": "72-74 °C a corazón", "note": "Muslo más hecho que pechuga: mejor separarlos."},
-   {"use": "Pescado nacarado", "ratio": "45-50 °C a corazón", "note": "Lascas que se separan pero aún brillantes."}
+   {
+    "use": "Vacuno y cordero, poco hecho",
+    "ratio": "50-52 °C a corazón al servir",
+    "note": "Sacar a unos 47-48 °C en piezas gruesas."
+   },
+   {
+    "use": "Vacuno y cordero, al punto",
+    "ratio": "54-57 °C a corazón",
+    "note": "El punto más pedido; sacar a 51-53 °C."
+   },
+   {
+    "use": "Cerdo jugoso",
+    "ratio": "62-65 °C a corazón",
+    "note": "Cerdo de calidad y bien conservado; manda tu plan APPCC."
+   },
+   {
+    "use": "Aves",
+    "ratio": "72-74 °C a corazón",
+    "note": "Muslo más hecho que pechuga: mejor separarlos."
+   },
+   {
+    "use": "Pescado nacarado",
+    "ratio": "45-50 °C a corazón",
+    "note": "Lascas que se separan pero aún brillantes."
+   }
   ],
-  "variants": [{"id": "sellado-y-reposo", "name": "Sellado y reposo", "note": "La parte del fuego y del descanso que fija el punto."}, {"id": "baja-temperatura", "name": "Baja temperatura", "note": "Llevar toda la pieza al punto exacto y marcar al final."}],
-  "keys": ["La sonda va al centro de la parte más gruesa, sin tocar hueso.", "Las piezas gruesas suben 3 a 5 °C en el reposo; las finas, casi nada.", "Atemperar acorta el tiempo y hace el punto más uniforme de borde a centro.", "Anota en la ficha a qué temperatura sacas cada corte: así se repite.", "La prueba del dedo cambia con cada pieza y cada mano; úsala solo como apoyo."],
-  "errors": [{"p": "Anillo gris grueso bajo la costra", "fix": "Demasiado calor demasiado tiempo. Marca fuerte y corto, y termina a fuego suave o en horno."}, {"p": "Se pasa en el pase", "fix": "No se contó la subida del reposo. Saca antes y reposa en rejilla, no tapado en la bandeja caliente."}, {"p": "Suelta mucho jugo al cortar", "fix": "Falta de reposo. Deja que la temperatura se reparta antes de cortar."}],
+  "variants": [
+   {
+    "id": "sellado-y-reposo",
+    "name": "Sellado y reposo",
+    "note": "La parte del fuego y del descanso que fija el punto."
+   },
+   {
+    "id": "baja-temperatura",
+    "name": "Baja temperatura",
+    "note": "Llevar toda la pieza al punto exacto y marcar al final."
+   }
+  ],
+  "keys": [
+   "La sonda va al centro de la parte más gruesa, sin tocar hueso.",
+   "Las piezas gruesas suben 3 a 5 °C en el reposo; las finas, casi nada.",
+   "Atemperar acorta el tiempo y hace el punto más uniforme de borde a centro.",
+   "Anota en la ficha a qué temperatura sacas cada corte: así se repite.",
+   "La prueba del dedo cambia con cada pieza y cada mano; úsala solo como apoyo."
+  ],
+  "errors": [
+   {
+    "p": "Anillo gris grueso bajo la costra",
+    "fix": "Demasiado calor demasiado tiempo. Marca fuerte y corto, y termina a fuego suave o en horno."
+   },
+   {
+    "p": "Se pasa en el pase",
+    "fix": "No se contó la subida del reposo. Saca antes y reposa en rejilla, no tapado en la bandeja caliente."
+   },
+   {
+    "p": "Suelta mucho jugo al cortar",
+    "fix": "Falta de reposo. Deja que la temperatura se reparta antes de cortar."
+   }
+  ],
   "history": "Durante mucho tiempo el punto se juzgaba al tacto y por el color del jugo. El uso de sondas y de la cocción a temperatura controlada lo ha convertido en una medida que se puede escribir y repetir.",
-  "uses": ["Carnes a la brasa", "Asados", "Pescados enteros", "Aves"],
+  "uses": [
+   "Carnes a la brasa",
+   "Asados",
+   "Pescados enteros",
+   "Aves"
+  ],
   "keep": "La carne cocinada que no se sirve se abate y se guarda en frío; al regenerarla se pierde el punto, así que mejor marcar al momento.",
   "pro": "Ten una tabla de puntos pegada en el pase y una sonda por partida. Marca con antelación las piezas grandes, abátelas si hace falta y termina al pase para servir rápido sin pasar el punto.",
-  "related": ["sellado-y-reposo", "baja-temperatura", "jugo-de-carne"]
+  "related": [
+   "sellado-y-reposo",
+   "baja-temperatura",
+   "jugo-de-carne"
+  ]
  },
  {
   "id": "sellado-y-reposo",
@@ -36,23 +119,87 @@
   "cat": "tecnicas",
   "group": "Calor y punto",
   "technique": "plancha",
-  "aka": ["marcar", "dorar", "costra", "reaccion de maillard", "reposar la carne", "searing"],
+  "aka": [
+   "marcar",
+   "dorar",
+   "costra",
+   "reaccion de maillard",
+   "reposar la carne",
+   "searing"
+  ],
   "summary": "Cómo conseguir una costra dorada y sabrosa sin pasar el interior, y por qué el reposo forma parte de la cocción.",
   "what": "Marcar no sella los jugos: lo que hace es crear una costra dorada, con mucho sabor, por las reacciones que se dan en la superficie seca a más de unos 140 °C. Para que salga hace falta una superficie sin agua, una sartén o plancha muy caliente y no amontonar piezas. El reposo deja que el calor del borde termine de llegar al centro y que la pieza suelte menos jugo al cortarla.",
-  "method": ["Saca la pieza del frío con antelación y sécala con papel; si está húmeda, primero cuece en su agua y luego dora.", "Calienta la plancha o sartén hasta que una gota de agua baile y se evapore al momento. Unta la pieza, no la sartén, con una película de aceite.", "Pon las piezas separadas y no las muevas hasta que se despeguen solas. Da la vuelta una vez o varias, según el grosor.", "Al final se puede añadir mantequilla, ajo y hierbas y regar la pieza con la cuchara durante un minuto.", "Reposa en rejilla en un sitio templado, más o menos un tercio del tiempo que ha estado al fuego."],
-  "ratios": [
-   {"use": "Pieza fina (menos de 2 cm)", "ratio": "1-2 minutos por cara a fuego máximo", "note": "Reposo corto, 2-3 minutos."},
-   {"use": "Pieza gruesa (4-5 cm)", "ratio": "Marcar 2-3 minutos por cara y terminar a calor suave", "note": "Reposo de 6-10 minutos."},
-   {"use": "Vieira o pescado", "ratio": "Solo una cara bien dorada, la otra casi cruda", "note": "Se termina con el calor residual."}
+  "method": [
+   "Saca la pieza del frío con antelación y sécala con papel; si está húmeda, primero cuece en su agua y luego dora.",
+   "Calienta la plancha o sartén hasta que una gota de agua baile y se evapore al momento. Unta la pieza, no la sartén, con una película de aceite.",
+   "Pon las piezas separadas y no las muevas hasta que se despeguen solas. Da la vuelta una vez o varias, según el grosor.",
+   "Al final se puede añadir mantequilla, ajo y hierbas y regar la pieza con la cuchara durante un minuto.",
+   "Reposa en rejilla en un sitio templado, más o menos un tercio del tiempo que ha estado al fuego."
   ],
-  "variants": [{"id": "punto-de-la-carne", "name": "Punto de la carne", "note": "A qué temperatura sacar cada pieza."}, {"id": "mantequilla-noisette", "name": "Mantequilla noisette", "note": "Para regar al final y dar aroma tostado."}],
-  "keys": ["Superficie seca, sartén muy caliente y piezas separadas: si no, cuece en vez de dorar.", "No pinches para darle la vuelta: usa pinzas o espátula.", "Sala con tiempo o justo antes, no en medio: la sal a medias saca agua a la superficie.", "Reposa sobre rejilla para que la costra no se ablande con su propio vapor.", "El jugo que suelta en el reposo va a la salsa."],
-  "errors": [{"p": "Sale gris y hervida", "fix": "Sartén poco caliente, demasiadas piezas o superficie húmeda. Seca, calienta más y cocina por tandas."}, {"p": "Costra quemada y centro crudo", "fix": "Pieza fría y fuego alto todo el tiempo. Atempera, marca y termina a calor suave o en horno."}, {"p": "Se pega", "fix": "Se movió antes de tiempo o la sartén no estaba caliente. Espera a que se despegue sola."}],
+  "ratios": [
+   {
+    "use": "Pieza fina (menos de 2 cm)",
+    "ratio": "1-2 minutos por cara a fuego máximo",
+    "note": "Reposo corto, 2-3 minutos."
+   },
+   {
+    "use": "Pieza gruesa (4-5 cm)",
+    "ratio": "Marcar 2-3 minutos por cara y terminar a calor suave",
+    "note": "Reposo de 6-10 minutos."
+   },
+   {
+    "use": "Vieira o pescado",
+    "ratio": "Solo una cara bien dorada, la otra casi cruda",
+    "note": "Se termina con el calor residual."
+   }
+  ],
+  "variants": [
+   {
+    "id": "punto-de-la-carne",
+    "name": "Punto de la carne",
+    "note": "A qué temperatura sacar cada pieza."
+   },
+   {
+    "id": "mantequilla-noisette",
+    "name": "Mantequilla noisette",
+    "note": "Para regar al final y dar aroma tostado."
+   }
+  ],
+  "keys": [
+   "Superficie seca, sartén muy caliente y piezas separadas: si no, cuece en vez de dorar.",
+   "No pinches para darle la vuelta: usa pinzas o espátula.",
+   "Sala con tiempo o justo antes, no en medio: la sal a medias saca agua a la superficie.",
+   "Reposa sobre rejilla para que la costra no se ablande con su propio vapor.",
+   "El jugo que suelta en el reposo va a la salsa."
+  ],
+  "errors": [
+   {
+    "p": "Sale gris y hervida",
+    "fix": "Sartén poco caliente, demasiadas piezas o superficie húmeda. Seca, calienta más y cocina por tandas."
+   },
+   {
+    "p": "Costra quemada y centro crudo",
+    "fix": "Pieza fría y fuego alto todo el tiempo. Atempera, marca y termina a calor suave o en horno."
+   },
+   {
+    "p": "Se pega",
+    "fix": "Se movió antes de tiempo o la sartén no estaba caliente. Espera a que se despegue sola."
+   }
+  ],
   "history": "La idea de que marcar sella los jugos fue una explicación muy repetida en los libros de cocina; hoy se sabe que la costra aporta sabor y textura, y que lo que más conserva el jugo es no pasarse de punto y reposar.",
-  "uses": ["Carnes a la plancha", "Vieiras", "Lomos de pescado con piel", "Magret"],
+  "uses": [
+   "Carnes a la plancha",
+   "Vieiras",
+   "Lomos de pescado con piel",
+   "Magret"
+  ],
   "keep": "Lo marcado con antelación se abate de inmediato y se guarda en frío; se termina al pase.",
   "pro": "En servicio, marca por tandas lo que vas a necesitar en la siguiente media hora y deja reposando en el pase templado. Una sartén por tipo de producto evita sabores cruzados.",
-  "related": ["punto-de-la-carne", "mantequilla-noisette", "jugo-de-carne"]
+  "related": [
+   "punto-de-la-carne",
+   "mantequilla-noisette",
+   "jugo-de-carne"
+  ]
  },
  {
   "id": "baja-temperatura",
@@ -61,25 +208,97 @@
   "cat": "tecnicas",
   "group": "Calor y punto",
   "technique": "bajatemp",
-  "aka": ["sous vide", "al vacio", "roner", "coccion controlada", "baño termostatico"],
+  "aka": [
+   "sous vide",
+   "al vacio",
+   "roner",
+   "coccion controlada",
+   "baño termostatico"
+  ],
   "summary": "Llevar el producto a la temperatura exacta del punto en un baño controlado: textura uniforme, punto repetible y producción adelantada.",
   "what": "Con un baño de agua a temperatura fija, el producto envasado al vacío llega entero a esa temperatura y no la pasa. El punto queda igual de borde a centro y se puede preparar con antelación. A cambio, no hay costra: casi siempre se [[sellado-y-reposo|marca]] al final. La seguridad depende de la combinación de temperatura, tiempo y grosor, y del frío inmediato si no se sirve.",
-  "method": ["Sazona el producto con poca sal (en bolsa se nota más) y envasa al vacío sin arrugas, con las piezas separadas.", "Pon el baño a la temperatura del punto que quieres y espera a que se estabilice antes de meter las bolsas.", "Cuenta el tiempo según el grosor, no según el peso; las bolsas tienen que quedar cubiertas de agua.", "Si no se sirve en el momento, abate la bolsa en agua con hielo hasta bajar de 4 °C y guarda en frío.", "Para servir, regenera en el baño a la misma temperatura o algo menos, seca la pieza y márcala muy rápido."],
-  "ratios": [
-   {"use": "Pescado blanco o salmón", "ratio": "45-52 °C, 15-25 minutos (2-3 cm)", "note": "Nacarado; servir al momento."},
-   {"use": "Pechuga de ave", "ratio": "62-65 °C, 1 a 2 horas", "note": "Jugosa; el tiempo depende del grosor."},
-   {"use": "Lomo de vacuno o cordero", "ratio": "54-57 °C, 1 a 3 horas", "note": "Marcar después."},
-   {"use": "Carrillera, falda o pluma", "ratio": "62-70 °C, 12 a 48 horas", "note": "Piezas con colágeno que se ablandan con el tiempo."},
-   {"use": "Huevo a baja temperatura", "ratio": "63-64 °C, 45-60 minutos", "note": "Clara cremosa y yema fluida."}
+  "method": [
+   "Sazona el producto con poca sal (en bolsa se nota más) y envasa al vacío sin arrugas, con las piezas separadas.",
+   "Pon el baño a la temperatura del punto que quieres y espera a que se estabilice antes de meter las bolsas.",
+   "Cuenta el tiempo según el grosor, no según el peso; las bolsas tienen que quedar cubiertas de agua.",
+   "Si no se sirve en el momento, abate la bolsa en agua con hielo hasta bajar de 4 °C y guarda en frío.",
+   "Para servir, regenera en el baño a la misma temperatura o algo menos, seca la pieza y márcala muy rápido."
   ],
-  "variants": [{"id": "punto-de-la-carne", "name": "Punto de la carne", "note": "Las temperaturas de cada punto."}, {"id": "confitado", "name": "Confitado", "note": "La misma idea de calor suave, pero en grasa."}],
-  "keys": ["El tiempo depende del grosor: el doble de grosor pide bastante más del doble de tiempo.", "Etiqueta cada bolsa con producto, temperatura, día y hora.", "Lo que no se sirve se abate al momento en agua con hielo.", "Sala menos de lo habitual; las especias y el ajo crudo se notan mucho en bolsa.", "Seca muy bien antes de marcar o no habrá costra."],
-  "errors": [{"p": "Textura pastosa", "fix": "Demasiado tiempo para una pieza tierna. Ajusta el tiempo al grosor y no lo alargues sin motivo."}, {"p": "Bolsas que flotan", "fix": "Queda aire o el producto suelta gas. Revisa el envasado y pon peso encima."}, {"p": "Sabor a hervido sin costra", "fix": "Falta el marcado final. Seca bien y dora muy fuerte y corto."}],
+  "ratios": [
+   {
+    "use": "Pescado blanco o salmón",
+    "ratio": "45-52 °C, 15-25 minutos (2-3 cm)",
+    "note": "Nacarado; servir al momento."
+   },
+   {
+    "use": "Pechuga de ave",
+    "ratio": "62-65 °C, 1 a 2 horas",
+    "note": "Jugosa; el tiempo depende del grosor."
+   },
+   {
+    "use": "Lomo de vacuno o cordero",
+    "ratio": "54-57 °C, 1 a 3 horas",
+    "note": "Marcar después."
+   },
+   {
+    "use": "Carrillera, falda o pluma",
+    "ratio": "62-70 °C, 12 a 48 horas",
+    "note": "Piezas con colágeno que se ablandan con el tiempo."
+   },
+   {
+    "use": "Huevo a baja temperatura",
+    "ratio": "63-64 °C, 45-60 minutos",
+    "note": "Clara cremosa y yema fluida."
+   }
+  ],
+  "variants": [
+   {
+    "id": "punto-de-la-carne",
+    "name": "Punto de la carne",
+    "note": "Las temperaturas de cada punto."
+   },
+   {
+    "id": "confitado",
+    "name": "Confitado",
+    "note": "La misma idea de calor suave, pero en grasa."
+   }
+  ],
+  "keys": [
+   "El tiempo depende del grosor: el doble de grosor pide bastante más del doble de tiempo.",
+   "Etiqueta cada bolsa con producto, temperatura, día y hora.",
+   "Lo que no se sirve se abate al momento en agua con hielo.",
+   "Sala menos de lo habitual; las especias y el ajo crudo se notan mucho en bolsa.",
+   "Seca muy bien antes de marcar o no habrá costra."
+  ],
+  "errors": [
+   {
+    "p": "Textura pastosa",
+    "fix": "Demasiado tiempo para una pieza tierna. Ajusta el tiempo al grosor y no lo alargues sin motivo."
+   },
+   {
+    "p": "Bolsas que flotan",
+    "fix": "Queda aire o el producto suelta gas. Revisa el envasado y pon peso encima."
+   },
+   {
+    "p": "Sabor a hervido sin costra",
+    "fix": "Falta el marcado final. Seca bien y dora muy fuerte y corto."
+   }
+  ],
   "history": "La cocción al vacío a temperatura controlada pasó de la industria a la alta cocina a finales del siglo XX y hoy es habitual en cocinas de todo tipo por la regularidad que da en producción.",
-  "uses": ["Carnes de cocción larga", "Lomos y pechugas", "Pescados", "Huevos", "Verduras"],
+  "uses": [
+   "Carnes de cocción larga",
+   "Lomos y pechugas",
+   "Pescados",
+   "Huevos",
+   "Verduras"
+  ],
   "keep": "Abatido y bien etiquetado, en frío y el tiempo que marque tu plan APPCC para cada producto. Las combinaciones de tiempo y temperatura para pasteurizar deben estar validadas en ese plan.",
   "pro": "Es la técnica de producción por excelencia: se cocina en la tarde tranquila, se abate y en servicio solo se regenera y se marca. Documenta cada producto en su ficha con temperatura, tiempo y grosor.",
-  "related": ["punto-de-la-carne", "sellado-y-reposo", "confitado"]
+  "related": [
+   "punto-de-la-carne",
+   "sellado-y-reposo",
+   "confitado"
+  ]
  },
  {
   "id": "confitado",
@@ -88,25 +307,97 @@
   "cat": "tecnicas",
   "group": "Calor y punto",
   "technique": "confitado",
-  "aka": ["confit", "confitar en aceite", "confit de pato", "bacalao confitado", "tomate confitado"],
+  "aka": [
+   "confit",
+   "confitar en aceite",
+   "confit de pato",
+   "bacalao confitado",
+   "tomate confitado"
+  ],
   "summary": "Cocer despacio en grasa a temperatura moderada para ablandar sin secar, o para dejar el producto jugoso y brillante.",
   "what": "Confitar es cocinar sumergido en grasa (aceite, grasa de pato o de cerdo) muy por debajo de la temperatura de fritura. La grasa transmite el calor con suavidad y no arrastra el sabor como el agua. Sirve para carnes con colágeno, que se ablandan durante horas, y para pescados y verduras que se quieren jugosos sin que se desmonten.",
-  "method": ["Si es carne, sálala la víspera (unos 15-20 g de sal por kilo) con hierbas y ajo, y sécala antes de confitar.", "Calienta la grasa a la temperatura de la tabla y mete el producto cubierto por completo.", "Mantén la temperatura con termómetro; no tiene que hervir ni hacer burbuja grande.", "Comprueba el punto: la carne se separa del hueso sin esfuerzo, el pescado se lasca, la verdura está tierna.", "Deja templar en la grasa si se va a guardar, o escurre y termina dorando al servir."],
-  "ratios": [
-   {"use": "Muslo de pato o carne con colágeno", "ratio": "80-90 °C, 4 a 8 horas", "note": "Hasta que se separe del hueso."},
-   {"use": "Bacalao o pescado blanco", "ratio": "60-65 °C, 10-20 minutos", "note": "Lascas jugosas; la gelatina suelta liga el pil-pil."},
-   {"use": "Tomate o pimiento", "ratio": "90-100 °C en horno, 1 a 2 horas", "note": "Con aceite, ajo y tomillo."},
-   {"use": "Ajos", "ratio": "80-90 °C, 30-40 minutos", "note": "Hasta que estén tiernos; ver conservación."},
-   {"use": "Patata", "ratio": "90-100 °C hasta que esté tierna", "note": "Después se puede dorar o chafar."}
+  "method": [
+   "Si es carne, sálala la víspera (unos 15-20 g de sal por kilo) con hierbas y ajo, y sécala antes de confitar.",
+   "Calienta la grasa a la temperatura de la tabla y mete el producto cubierto por completo.",
+   "Mantén la temperatura con termómetro; no tiene que hervir ni hacer burbuja grande.",
+   "Comprueba el punto: la carne se separa del hueso sin esfuerzo, el pescado se lasca, la verdura está tierna.",
+   "Deja templar en la grasa si se va a guardar, o escurre y termina dorando al servir."
   ],
-  "variants": [{"id": "pil-pil", "name": "Pil-pil", "note": "La gelatina del bacalao confitado emulsiona el aceite."}, {"id": "aceites-aromatizados", "name": "Aceites aromatizados", "note": "La grasa del confitado se aprovecha con su aroma."}],
-  "keys": ["Termómetro siempre: la diferencia entre confitar y freír son pocos grados.", "Que la grasa cubra todo el producto.", "La sal previa en carnes da sabor por dentro y mejor textura.", "La grasa colada se reutiliza para el mismo tipo de producto.", "Para servir, escurre y dora la piel en sartén o al horno fuerte."],
-  "errors": [{"p": "Carne seca o fibrosa", "fix": "Temperatura demasiado alta. Baja y alarga el tiempo."}, {"p": "Pescado que se deshace", "fix": "Demasiado tiempo o temperatura. Saca antes y deja terminar con el calor residual."}, {"p": "Grasa con sabor a quemado", "fix": "Se pasó de temperatura o tiene restos. Cuela, filtra o cambia la grasa."}],
+  "ratios": [
+   {
+    "use": "Muslo de pato o carne con colágeno",
+    "ratio": "80-90 °C, 4 a 8 horas",
+    "note": "Hasta que se separe del hueso."
+   },
+   {
+    "use": "Bacalao o pescado blanco",
+    "ratio": "60-65 °C, 10-20 minutos",
+    "note": "Lascas jugosas; la gelatina suelta liga el pil-pil."
+   },
+   {
+    "use": "Tomate o pimiento",
+    "ratio": "90-100 °C en horno, 1 a 2 horas",
+    "note": "Con aceite, ajo y tomillo."
+   },
+   {
+    "use": "Ajos",
+    "ratio": "80-90 °C, 30-40 minutos",
+    "note": "Hasta que estén tiernos; ver conservación."
+   },
+   {
+    "use": "Patata",
+    "ratio": "90-100 °C hasta que esté tierna",
+    "note": "Después se puede dorar o chafar."
+   }
+  ],
+  "variants": [
+   {
+    "id": "pil-pil",
+    "name": "Pil-pil",
+    "note": "La gelatina del bacalao confitado emulsiona el aceite."
+   },
+   {
+    "id": "aceites-aromatizados",
+    "name": "Aceites aromatizados",
+    "note": "La grasa del confitado se aprovecha con su aroma."
+   }
+  ],
+  "keys": [
+   "Termómetro siempre: la diferencia entre confitar y freír son pocos grados.",
+   "Que la grasa cubra todo el producto.",
+   "La sal previa en carnes da sabor por dentro y mejor textura.",
+   "La grasa colada se reutiliza para el mismo tipo de producto.",
+   "Para servir, escurre y dora la piel en sartén o al horno fuerte."
+  ],
+  "errors": [
+   {
+    "p": "Carne seca o fibrosa",
+    "fix": "Temperatura demasiado alta. Baja y alarga el tiempo."
+   },
+   {
+    "p": "Pescado que se deshace",
+    "fix": "Demasiado tiempo o temperatura. Saca antes y deja terminar con el calor residual."
+   },
+   {
+    "p": "Grasa con sabor a quemado",
+    "fix": "Se pasó de temperatura o tiene restos. Cuela, filtra o cambia la grasa."
+   }
+  ],
   "history": "Confitar en grasa fue una forma tradicional de conservar carnes en muchas zonas del sur de Europa antes del frío; hoy se usa sobre todo por la textura que da.",
-  "uses": ["Pato y oca", "Bacalao al pil-pil", "Carrilleras y cochinillo", "Tomates y pimientos", "Ajos y chalotas"],
+  "uses": [
+   "Pato y oca",
+   "Bacalao al pil-pil",
+   "Carrilleras y cochinillo",
+   "Tomates y pimientos",
+   "Ajos y chalotas"
+  ],
   "keep": "Las carnes confitadas, cubiertas de grasa y en frío, aguantan días; sigue lo que marque tu plan APPCC. Los ajos u hortalizas en aceite son un riesgo de botulismo: siempre en frío, bien etiquetados y para pocos días.",
   "pro": "Se confita en grandes tandas en horas tranquilas, con baño o horno a temperatura fija. En servicio solo se dora. La grasa se cuela y se etiqueta por producto para reutilizarla.",
-  "related": ["pil-pil", "aceites-aromatizados", "baja-temperatura"]
+  "related": [
+   "pil-pil",
+   "aceites-aromatizados",
+   "baja-temperatura"
+  ]
  },
  {
   "id": "fritura",
@@ -115,25 +406,96 @@
   "cat": "tecnicas",
   "group": "Calor y punto",
   "technique": "fritura",
-  "aka": ["freir", "freidora", "fritura profunda", "rebozado", "tempura", "doble fritura"],
+  "aka": [
+   "freir",
+   "freidora",
+   "fritura profunda",
+   "rebozado",
+   "tempura",
+   "doble fritura"
+  ],
   "summary": "Freír crujiente y sin grasa: temperatura del aceite, tamaño de las tandas, rebozados y cuándo cambiar el aceite.",
   "what": "En la fritura el aceite muy caliente evapora el agua de la superficie y forma una capa seca y crujiente. Si la temperatura cae, el producto se empapa de aceite. Por eso importan la cantidad de aceite, las tandas pequeñas y el producto seco. El aceite se degrada con el uso y hay que vigilarlo.",
-  "method": ["Llena la freidora hasta la marca y calienta a la temperatura de la tabla; espera a que se recupere entre tanda y tanda.", "Seca el producto y rebózalo justo antes de freír; sacude el exceso de harina o masa.", "Fríe en tandas pequeñas para que el aceite no se enfríe.", "Escurre en rejilla, no sobre papel apilado, y sala al momento.", "Al acabar el servicio, filtra el aceite en frío y revisa su estado."],
-  "ratios": [
-   {"use": "Tempura y rebozados ligeros", "ratio": "170-180 °C", "note": "Masa muy fría y poco batida."},
-   {"use": "Patatas, primera fritura", "ratio": "130-150 °C hasta que estén tiernas", "note": "Sin color."},
-   {"use": "Patatas, segunda fritura", "ratio": "180-190 °C hasta dorar", "note": "Crujientes por fuera."},
-   {"use": "Croquetas y empanados", "ratio": "175-185 °C", "note": "Pocas a la vez, que no bajen la temperatura."},
-   {"use": "Pescado enharinado", "ratio": "180-190 °C", "note": "Piezas pequeñas, fritura corta."}
+  "method": [
+   "Llena la freidora hasta la marca y calienta a la temperatura de la tabla; espera a que se recupere entre tanda y tanda.",
+   "Seca el producto y rebózalo justo antes de freír; sacude el exceso de harina o masa.",
+   "Fríe en tandas pequeñas para que el aceite no se enfríe.",
+   "Escurre en rejilla, no sobre papel apilado, y sala al momento.",
+   "Al acabar el servicio, filtra el aceite en frío y revisa su estado."
   ],
-  "variants": [{"id": "bechamel", "name": "Bechamel para croquetas", "note": "La masa que más se fríe en una cocina española."}],
-  "keys": ["Producto seco y aceite a temperatura: así no chupa grasa.", "Tandas pequeñas; si el aceite baja mucho, el producto se empapa.", "Sala al salir, en caliente, para que la sal se pegue.", "No mezcles en el mismo aceite pescado y lo que no lo lleva: alérgenos y sabores.", "Filtra el aceite cada día y anota cuándo lo cambias."],
-  "errors": [{"p": "Sale aceitoso y blando", "fix": "Aceite frío o tandas grandes. Sube la temperatura y fríe menos piezas a la vez."}, {"p": "Dorado por fuera y crudo por dentro", "fix": "Demasiada temperatura para el tamaño. Baja unos grados o haz doble fritura."}, {"p": "Rebozado que se cae", "fix": "Producto húmedo o rebozado con antelación. Seca, enharina fino y fríe al momento."}, {"p": "Aceite oscuro, espeso y con humo", "fix": "Está degradado. Cámbialo: la normativa española marca un límite de compuestos polares y se puede medir con un tester."}],
+  "ratios": [
+   {
+    "use": "Tempura y rebozados ligeros",
+    "ratio": "170-180 °C",
+    "note": "Masa muy fría y poco batida."
+   },
+   {
+    "use": "Patatas, primera fritura",
+    "ratio": "130-150 °C hasta que estén tiernas",
+    "note": "Sin color."
+   },
+   {
+    "use": "Patatas, segunda fritura",
+    "ratio": "180-190 °C hasta dorar",
+    "note": "Crujientes por fuera."
+   },
+   {
+    "use": "Croquetas y empanados",
+    "ratio": "175-185 °C",
+    "note": "Pocas a la vez, que no bajen la temperatura."
+   },
+   {
+    "use": "Pescado enharinado",
+    "ratio": "180-190 °C",
+    "note": "Piezas pequeñas, fritura corta."
+   }
+  ],
+  "variants": [
+   {
+    "id": "bechamel",
+    "name": "Bechamel para croquetas",
+    "note": "La masa que más se fríe en una cocina española."
+   }
+  ],
+  "keys": [
+   "Producto seco y aceite a temperatura: así no chupa grasa.",
+   "Tandas pequeñas; si el aceite baja mucho, el producto se empapa.",
+   "Sala al salir, en caliente, para que la sal se pegue.",
+   "No mezcles en el mismo aceite pescado y lo que no lo lleva: alérgenos y sabores.",
+   "Filtra el aceite cada día y anota cuándo lo cambias."
+  ],
+  "errors": [
+   {
+    "p": "Sale aceitoso y blando",
+    "fix": "Aceite frío o tandas grandes. Sube la temperatura y fríe menos piezas a la vez."
+   },
+   {
+    "p": "Dorado por fuera y crudo por dentro",
+    "fix": "Demasiada temperatura para el tamaño. Baja unos grados o haz doble fritura."
+   },
+   {
+    "p": "Rebozado que se cae",
+    "fix": "Producto húmedo o rebozado con antelación. Seca, enharina fino y fríe al momento."
+   },
+   {
+    "p": "Aceite oscuro, espeso y con humo",
+    "fix": "Está degradado. Cámbialo: la normativa española marca un límite de compuestos polares y se puede medir con un tester."
+   }
+  ],
   "history": "Freír en aceite de oliva es una de las bases de la cocina mediterránea; la tempura japonesa y otras tradiciones han aportado masas más ligeras.",
-  "uses": ["Croquetas", "Pescaíto frito", "Patatas", "Tempuras", "Buñuelos"],
+  "uses": [
+   "Croquetas",
+   "Pescaíto frito",
+   "Patatas",
+   "Tempuras",
+   "Buñuelos"
+  ],
   "keep": "Lo frito se sirve al momento. El aceite se filtra, se tapa y se guarda lejos de la luz; se cambia antes de que se degrade.",
   "pro": "Una freidora por tipo de producto si se puede (pescado, carne, dulce, sin gluten). Anota la temperatura de cada producto en la ficha y el cambio de aceite en el registro.",
-  "related": ["bechamel", "punto-de-la-carne"]
+  "related": [
+   "bechamel",
+   "punto-de-la-carne"
+  ]
  },
  {
   "id": "curado-de-pescado",
@@ -142,28 +504,113 @@
   "cat": "tecnicas",
   "group": "Conservar y transformar",
   "technique": "curado",
-  "aka": ["salazon", "pescado marinado en sal", "gravlax", "salmon marinado", "curar", "anisakis"],
+  "aka": [
+   "salazon",
+   "pescado marinado en sal",
+   "gravlax",
+   "salmon marinado",
+   "curar",
+   "anisakis"
+  ],
   "summary": "Sal y azúcar para afirmar y sazonar el pescado crudo: proporciones, tiempos según el grosor y la congelación previa obligatoria.",
   "what": "La sal saca agua y afirma la carne del pescado; el azúcar suaviza y equilibra. El resultado se puede comer crudo, con una textura más tersa y un sabor más profundo. Como el pescado no se cocina, hay que congelarlo antes para eliminar el riesgo de anisakis, salvo que esté exento según la normativa.",
   "base": {
    "for": "1 lomo de salmón o corvina de 1 kg",
-   "items": [["Sal gorda", "250 g"], ["Azúcar", "250 g"], ["Ralladura de cítrico y especias", "al gusto"], ["Eneldo o hierbas frescas", "1 manojo"]],
-   "steps": ["Congela el pescado limpio a −20 °C o menos durante al menos 24 horas (o el tiempo que indique tu plan APPCC) y descongela en frío.", "Mezcla la sal, el azúcar, la ralladura y las especias.", "Cubre el lomo por completo con la mezcla, en una bandeja, y tapa.", "Deja en frío el tiempo de la tabla según el grosor.", "Lava rápido en agua fría, seca muy bien y deja reposar en frío unas horas antes de cortar."]
+   "items": [
+    [
+     "Sal gorda",
+     "250 g"
+    ],
+    [
+     "Azúcar",
+     "250 g"
+    ],
+    [
+     "Ralladura de cítrico y especias",
+     "al gusto"
+    ],
+    [
+     "Eneldo o hierbas frescas",
+     "1 manojo"
+    ]
+   ],
+   "steps": [
+    "Congela el pescado limpio a −20 °C o menos durante al menos 24 horas (o el tiempo que indique tu plan APPCC) y descongela en frío.",
+    "Mezcla la sal, el azúcar, la ralladura y las especias.",
+    "Cubre el lomo por completo con la mezcla, en una bandeja, y tapa.",
+    "Deja en frío el tiempo de la tabla según el grosor.",
+    "Lava rápido en agua fría, seca muy bien y deja reposar en frío unas horas antes de cortar."
+   ]
   },
   "ratios": [
-   {"use": "Lomo fino (1-2 cm)", "ratio": "Sal y azúcar a partes iguales, 2-4 horas", "note": "Boquerón, caballa o salmonete."},
-   {"use": "Lomo medio (3-4 cm)", "ratio": "Sal y azúcar a partes iguales, 8-12 horas", "note": "Corvina, lubina o atún."},
-   {"use": "Lomo grueso de salmón", "ratio": "Sal y azúcar a partes iguales, 24-36 horas", "note": "Dar la vuelta a mitad."},
-   {"use": "Curado más salado", "ratio": "60 % sal, 40 % azúcar", "note": "Para pescados que luego se ahúman."}
+   {
+    "use": "Lomo fino (1-2 cm)",
+    "ratio": "Sal y azúcar a partes iguales, 2-4 horas",
+    "note": "Boquerón, caballa o salmonete."
+   },
+   {
+    "use": "Lomo medio (3-4 cm)",
+    "ratio": "Sal y azúcar a partes iguales, 8-12 horas",
+    "note": "Corvina, lubina o atún."
+   },
+   {
+    "use": "Lomo grueso de salmón",
+    "ratio": "Sal y azúcar a partes iguales, 24-36 horas",
+    "note": "Dar la vuelta a mitad."
+   },
+   {
+    "use": "Curado más salado",
+    "ratio": "60 % sal, 40 % azúcar",
+    "note": "Para pescados que luego se ahúman."
+   }
   ],
-  "variants": [{"id": "escabeche", "name": "Escabeche", "note": "Otra forma tradicional de conservar pescado con ácido."}, {"id": "ahumado", "name": "Ahumado", "note": "El curado es el paso previo al ahumado en frío."}],
-  "keys": ["Congelación previa del pescado que se va a comer crudo o poco hecho: es obligatorio.", "El tiempo va por grosor, no por peso.", "Lava rápido y seca bien; si se queda en agua, vuelve a ablandarse.", "Reposar en frío después iguala la sal por dentro.", "Corta fino y contra la fibra, con cuchillo muy afilado."],
-  "errors": [{"p": "Demasiado salado", "fix": "Demasiado tiempo para el grosor. Acorta y pon más azúcar en la mezcla."}, {"p": "Textura blanda", "fix": "Poco tiempo o mal secado. Alarga un poco y deja reposar destapado en frío."}, {"p": "Sabor a pescado poco fresco", "fix": "Ni el curado arregla un mal producto: cura solo pescado de primera."}],
+  "variants": [
+   {
+    "id": "escabeche",
+    "name": "Escabeche",
+    "note": "Otra forma tradicional de conservar pescado con ácido."
+   },
+   {
+    "id": "ahumado",
+    "name": "Ahumado",
+    "note": "El curado es el paso previo al ahumado en frío."
+   }
+  ],
+  "keys": [
+   "Congelación previa del pescado que se va a comer crudo o poco hecho: es obligatorio.",
+   "El tiempo va por grosor, no por peso.",
+   "Lava rápido y seca bien; si se queda en agua, vuelve a ablandarse.",
+   "Reposar en frío después iguala la sal por dentro.",
+   "Corta fino y contra la fibra, con cuchillo muy afilado."
+  ],
+  "errors": [
+   {
+    "p": "Demasiado salado",
+    "fix": "Demasiado tiempo para el grosor. Acorta y pon más azúcar en la mezcla."
+   },
+   {
+    "p": "Textura blanda",
+    "fix": "Poco tiempo o mal secado. Alarga un poco y deja reposar destapado en frío."
+   },
+   {
+    "p": "Sabor a pescado poco fresco",
+    "fix": "Ni el curado arregla un mal producto: cura solo pescado de primera."
+   }
+  ],
   "history": "Salar pescado es una de las formas más antiguas de conservarlo, en el Mediterráneo y en el norte de Europa; las versiones suaves con azúcar y hierbas se han hecho habituales en las cocinas actuales.",
-  "uses": ["Salmón marinado", "Boquerones y caballa", "Atún y corvina", "Huevas"],
+  "uses": [
+   "Salmón marinado",
+   "Boquerones y caballa",
+   "Atún y corvina",
+   "Huevas"
+  ],
   "keep": "En frío, bien envuelto y etiquetado, unos pocos días; lo que marque tu plan APPCC.",
   "pro": "Cura en lotes, etiqueta con fecha de congelación y de curado, y corta al pase. Guarda el registro de la congelación por si te lo piden.",
-  "related": ["escabeche", "ahumado", "salmuera"]
+  "related": [
+   "escabeche",
+   "ahumado",
+   "salmuera"
+  ]
  },
  {
   "id": "fermentacion-lactica",
@@ -172,27 +619,108 @@
   "cat": "tecnicas",
   "group": "Conservar y transformar",
   "technique": "fermentado",
-  "aka": ["fermentar", "fermentos", "chucrut", "kimchi", "encurtido fermentado", "lactofermentacion"],
+  "aka": [
+   "fermentar",
+   "fermentos",
+   "chucrut",
+   "kimchi",
+   "encurtido fermentado",
+   "lactofermentacion"
+  ],
   "summary": "Verdura, sal y tiempo: cómo fermentar con seguridad, qué proporción de sal usar y cómo saber que va bien.",
   "what": "Las bacterias lácticas que vienen en la propia verdura transforman sus azúcares en ácido. Con la sal justa y sin aire, ganan a los microbios que estropean el producto. El resultado es ácido, complejo y crujiente. Se pesa la sal sobre el total de verdura y agua para que no dependa del tamaño del bote.",
   "base": {
    "for": "1 kg entre verdura y agua",
-   "items": [["Verdura limpia y cortada", "600 g"], ["Agua sin cloro", "400 ml"], ["Sal sin yodo", "20-25 g"], ["Ajo, especias o hierbas", "al gusto"]],
-   "steps": ["Pesa la verdura y el agua juntas y calcula entre el 2 y el 2,5 % de sal sobre ese total.", "Disuelve la sal en el agua y mete la verdura en un bote limpio, bien apretada.", "Cubre con la salmuera y pon peso encima para que nada quede fuera del líquido.", "Cierra con tapa que deje salir gas o abre a diario, y deja entre 18 y 22 °C.", "Prueba a partir del tercer día; cuando tenga la acidez que quieres, pasa a frío."]
+   "items": [
+    [
+     "Verdura limpia y cortada",
+     "600 g"
+    ],
+    [
+     "Agua sin cloro",
+     "400 ml"
+    ],
+    [
+     "Sal sin yodo",
+     "20-25 g"
+    ],
+    [
+     "Ajo, especias o hierbas",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Pesa la verdura y el agua juntas y calcula entre el 2 y el 2,5 % de sal sobre ese total.",
+    "Disuelve la sal en el agua y mete la verdura en un bote limpio, bien apretada.",
+    "Cubre con la salmuera y pon peso encima para que nada quede fuera del líquido.",
+    "Cierra con tapa que deje salir gas o abre a diario, y deja entre 18 y 22 °C.",
+    "Prueba a partir del tercer día; cuando tenga la acidez que quieres, pasa a frío."
+   ]
   },
   "ratios": [
-   {"use": "Verdura en salmuera (pepinos, zanahoria, coliflor)", "ratio": "2-3 % de sal sobre verdura más agua", "note": "Más sal en verano o para fermentaciones largas."},
-   {"use": "Col en su jugo (chucrut)", "ratio": "2 % de sal sobre el peso de la col", "note": "Se masajea hasta que suelte agua."},
-   {"use": "Salsa picante fermentada", "ratio": "3-5 % de sal sobre guindillas y agua", "note": "Después se tritura y se cuela."}
+   {
+    "use": "Verdura en salmuera (pepinos, zanahoria, coliflor)",
+    "ratio": "2-3 % de sal sobre verdura más agua",
+    "note": "Más sal en verano o para fermentaciones largas."
+   },
+   {
+    "use": "Col en su jugo (chucrut)",
+    "ratio": "2 % de sal sobre el peso de la col",
+    "note": "Se masajea hasta que suelte agua."
+   },
+   {
+    "use": "Salsa picante fermentada",
+    "ratio": "3-5 % de sal sobre guindillas y agua",
+    "note": "Después se tritura y se cuela."
+   }
   ],
-  "variants": [{"id": "salmuera", "name": "Salmuera", "note": "Cómo calcular la sal de cualquier baño."}, {"id": "cebolla-encurtida", "name": "Cebolla encurtida", "note": "Encurtido rápido con vinagre, sin fermentar."}],
-  "keys": ["Todo sumergido: lo que queda al aire se estropea.", "Sal sin yodo y agua sin cloro, que no frenen a las bacterias.", "Temperatura estable; con mucho calor fermenta rápido y queda blando.", "Huele a ácido limpio; si huele a podrido o tiene moho de colores, se tira entero.", "Una capa blanca y plana en la superficie suele ser levadura; se retira, pero vigila."],
-  "errors": [{"p": "Verdura blanda", "fix": "Demasiado calor, poca sal o verdura poco fresca. Baja la temperatura y usa producto muy firme."}, {"p": "Moho de colores o pelusa", "fix": "Algo quedó fuera del líquido. Se desecha todo el bote; la próxima vez, más peso."}, {"p": "No coge acidez", "fix": "Demasiado frío o demasiada sal. Lleva a 18-22 °C y revisa el cálculo."}],
+  "variants": [
+   {
+    "id": "salmuera",
+    "name": "Salmuera",
+    "note": "Cómo calcular la sal de cualquier baño."
+   },
+   {
+    "id": "cebolla-encurtida",
+    "name": "Cebolla encurtida",
+    "note": "Encurtido rápido con vinagre, sin fermentar."
+   }
+  ],
+  "keys": [
+   "Todo sumergido: lo que queda al aire se estropea.",
+   "Sal sin yodo y agua sin cloro, que no frenen a las bacterias.",
+   "Temperatura estable; con mucho calor fermenta rápido y queda blando.",
+   "Huele a ácido limpio; si huele a podrido o tiene moho de colores, se tira entero.",
+   "Una capa blanca y plana en la superficie suele ser levadura; se retira, pero vigila."
+  ],
+  "errors": [
+   {
+    "p": "Verdura blanda",
+    "fix": "Demasiado calor, poca sal o verdura poco fresca. Baja la temperatura y usa producto muy firme."
+   },
+   {
+    "p": "Moho de colores o pelusa",
+    "fix": "Algo quedó fuera del líquido. Se desecha todo el bote; la próxima vez, más peso."
+   },
+   {
+    "p": "No coge acidez",
+    "fix": "Demasiado frío o demasiada sal. Lleva a 18-22 °C y revisa el cálculo."
+   }
+  ],
   "history": "Fermentar verduras con sal es una técnica de conservación presente en casi todas las cocinas del mundo, del chucrut centroeuropeo al kimchi coreano.",
-  "uses": ["Encurtidos para cortar grasa", "Salsas picantes", "Aliños", "Guarniciones ácidas"],
+  "uses": [
+   "Encurtidos para cortar grasa",
+   "Salsas picantes",
+   "Aliños",
+   "Guarniciones ácidas"
+  ],
   "keep": "Cuando está a tu gusto, en frío, donde sigue despacio; varias semanas si se mantiene sumergido y limpio. Etiqueta con fecha de inicio y de paso a frío.",
   "pro": "Ten una tabla de fermentos con fecha, peso y sal de cada bote. Prueba y anota la acidez; las fermentaciones que salen bien se repiten idénticas solo si están apuntadas.",
-  "related": ["salmuera", "cebolla-encurtida", "curado-de-pescado"]
+  "related": [
+   "salmuera",
+   "cebolla-encurtida",
+   "curado-de-pescado"
+  ]
  },
  {
   "id": "ahumado",
@@ -201,22 +729,190 @@
   "cat": "tecnicas",
   "group": "Conservar y transformar",
   "technique": "ahumado",
-  "aka": ["ahumar", "ahumado en frio", "ahumado en caliente", "humo", "pistola de humo"],
+  "aka": [
+   "ahumar",
+   "ahumado en frio",
+   "ahumado en caliente",
+   "humo",
+   "pistola de humo"
+  ],
   "summary": "Ahumado en frío y en caliente: maderas, temperaturas, cuánto tiempo y cómo conseguir un humo limpio que perfume sin amargar.",
   "what": "El humo aporta aroma y, en el ahumado en frío, se aplica a producto ya curado sin cocinarlo. En caliente, el producto se cocina a la vez que se ahúma. Lo que da buen sabor es un humo fino y casi transparente; el humo blanco y espeso deja amargor. Se usan maderas duras y secas, nunca resinosas ni tratadas.",
-  "method": ["Cura o sala antes el producto y sécalo: el humo se pega mejor a una superficie seca y algo pegajosa.", "Enciende la madera y espera a que el humo sea fino y azulado.", "En frío, mantén la cámara por debajo de unos 30 °C, si hace falta con hielo; en caliente, controla la temperatura de la cámara.", "Ahúma por tiempo corto y prueba; siempre se puede ahumar más, no menos.", "Deja reposar en frío unas horas para que el aroma se asiente."],
-  "ratios": [
-   {"use": "Ahumado en frío (salmón, mantequilla, aceite)", "ratio": "Menos de 30 °C, de 20 minutos a varias horas", "note": "Siempre sobre producto curado y frío."},
-   {"use": "Ahumado en caliente (pescado, aves)", "ratio": "Cámara a 60-85 °C hasta el punto a corazón", "note": "Cocina y ahúma a la vez."},
-   {"use": "Toque al pase con campana", "ratio": "30 segundos a 2 minutos", "note": "Aroma al abrir delante del cliente."}
+  "method": [
+   "Cura o sala antes el producto y sécalo: el humo se pega mejor a una superficie seca y algo pegajosa.",
+   "Enciende la madera y espera a que el humo sea fino y azulado.",
+   "En frío, mantén la cámara por debajo de unos 30 °C, si hace falta con hielo; en caliente, controla la temperatura de la cámara.",
+   "Ahúma por tiempo corto y prueba; siempre se puede ahumar más, no menos.",
+   "Deja reposar en frío unas horas para que el aroma se asiente."
   ],
-  "variants": [{"id": "curado-de-pescado", "name": "Curado de pescado", "note": "El paso previo al ahumado en frío."}, {"id": "aceites-aromatizados", "name": "Aceites aromatizados", "note": "Un aceite ahumado lleva el aroma a cualquier plato."}],
-  "keys": ["Humo fino y azulado; el blanco y espeso amarga.", "Maderas duras y secas: haya, roble, frutales, sarmiento.", "En frío, el producto entra frío y curado, y sale a la cámara frigorífica.", "Empieza por poco tiempo: el ahumado se nota más al día siguiente.", "Separa lo ahumado de lo demás en la cámara: el olor viaja."],
-  "errors": [{"p": "Sabor amargo o a ceniza", "fix": "Humo sucio, madera húmeda o demasiado tiempo. Espera a que el humo aclare y acorta."}, {"p": "Producto cocido en un ahumado en frío", "fix": "La cámara pasó de temperatura. Usa hielo o ahúma a primera hora con frío."}, {"p": "Apenas sabe a humo", "fix": "Superficie húmeda o tiempo corto. Seca mejor y alarga un poco."}],
+  "ratios": [
+   {
+    "use": "Ahumado en frío (salmón, mantequilla, aceite)",
+    "ratio": "Menos de 30 °C, de 20 minutos a varias horas",
+    "note": "Siempre sobre producto curado y frío."
+   },
+   {
+    "use": "Ahumado en caliente (pescado, aves)",
+    "ratio": "Cámara a 60-85 °C hasta el punto a corazón",
+    "note": "Cocina y ahúma a la vez."
+   },
+   {
+    "use": "Toque al pase con campana",
+    "ratio": "30 segundos a 2 minutos",
+    "note": "Aroma al abrir delante del cliente."
+   }
+  ],
+  "variants": [
+   {
+    "id": "curado-de-pescado",
+    "name": "Curado de pescado",
+    "note": "El paso previo al ahumado en frío."
+   },
+   {
+    "id": "aceites-aromatizados",
+    "name": "Aceites aromatizados",
+    "note": "Un aceite ahumado lleva el aroma a cualquier plato."
+   }
+  ],
+  "keys": [
+   "Humo fino y azulado; el blanco y espeso amarga.",
+   "Maderas duras y secas: haya, roble, frutales, sarmiento.",
+   "En frío, el producto entra frío y curado, y sale a la cámara frigorífica.",
+   "Empieza por poco tiempo: el ahumado se nota más al día siguiente.",
+   "Separa lo ahumado de lo demás en la cámara: el olor viaja."
+  ],
+  "errors": [
+   {
+    "p": "Sabor amargo o a ceniza",
+    "fix": "Humo sucio, madera húmeda o demasiado tiempo. Espera a que el humo aclare y acorta."
+   },
+   {
+    "p": "Producto cocido en un ahumado en frío",
+    "fix": "La cámara pasó de temperatura. Usa hielo o ahúma a primera hora con frío."
+   },
+   {
+    "p": "Apenas sabe a humo",
+    "fix": "Superficie húmeda o tiempo corto. Seca mejor y alarga un poco."
+   }
+  ],
   "history": "Ahumar fue durante siglos una forma de conservar carne y pescado junto al curado; hoy se usa más por el aroma que por la conservación.",
-  "uses": ["Salmón y sardina", "Mantequilla y aceite", "Quesos", "Sal y pimentón", "Aves y cerdo"],
+  "uses": [
+   "Salmón y sardina",
+   "Mantequilla y aceite",
+   "Quesos",
+   "Sal y pimentón",
+   "Aves y cerdo"
+  ],
   "keep": "Lo ahumado en frío sigue siendo un producto crudo curado: en frío y el tiempo que marque tu plan APPCC.",
   "pro": "Ahúma en lotes en horas tranquilas y etiqueta. Para el pase, una campana o pistola de humo da el efecto en sala sin cargar el producto.",
-  "related": ["curado-de-pescado", "aceites-aromatizados", "salmuera"]
+  "related": [
+   "curado-de-pescado",
+   "aceites-aromatizados",
+   "salmuera"
+  ]
+ },
+ {
+  "id": "puntos-del-huevo",
+  "name": "Puntos del huevo",
+  "name_en": "Egg cooking points",
+  "cat": "tecnicas",
+  "group": "Calor y punto",
+  "aka": [
+   "huevo cocido",
+   "huevo poche",
+   "huevo escalfado",
+   "huevo a baja temperatura",
+   "huevo mollet",
+   "yema curada"
+  ],
+  "summary": "Tiempos y temperaturas para cada punto del huevo, de la yema líquida a la dura, y cómo escalfar sin que se deshaga.",
+  "what": "La clara y la yema cuajan a temperaturas distintas: la clara empieza a cuajar hacia los 62 °C y la yema algo más arriba, hacia los 65-70 °C. Con agua hirviendo se controla por tiempo; con [[baja-temperatura]], por temperatura exacta. El tamaño del huevo y si sale de la nevera cambian el resultado.",
+  "method": [
+   "Para cocidos, saca los huevos de la nevera con tiempo o suma 30-60 segundos si van fríos.",
+   "Échalos en agua hirviendo con cuidado y cuenta desde que vuelve a hervir.",
+   "Al cumplir el tiempo, pásalos a agua con hielo para cortar la cocción y pelarlos mejor.",
+   "Para escalfar, agua a 85-90 °C sin borbotones, un chorrito de vinagre opcional, y el huevo muy fresco cascado antes en un cuenco.",
+   "Escurre el escalfado sobre papel y recorta los hilos de clara."
+  ],
+  "ratios": [
+   {
+    "use": "Yema líquida, clara cuajada (mollet)",
+    "ratio": "6 minutos en agua hirviendo (huevo M, del tiempo)",
+    "note": "Enfriar en hielo."
+   },
+   {
+    "use": "Yema melosa",
+    "ratio": "7-8 minutos",
+    "note": "Para ensaladas y ramen."
+   },
+   {
+    "use": "Huevo duro",
+    "ratio": "10-11 minutos",
+    "note": "Más tiempo da el anillo verde."
+   },
+   {
+    "use": "Escalfado (poché)",
+    "ratio": "3-4 minutos en agua a 85-90 °C",
+    "note": "Huevo muy fresco."
+   },
+   {
+    "use": "Huevo a baja temperatura",
+    "ratio": "63-64 °C, 45-60 minutos",
+    "note": "Clara cremosa, yema fluida."
+   },
+   {
+    "use": "Yema curada",
+    "ratio": "Enterrada en sal y azúcar a partes iguales, 4-7 días en frío",
+    "note": "Se ralla como un queso; huevo pasteurizado o según tu plan APPCC."
+   }
+  ],
+  "variants": [
+   {
+    "id": "baja-temperatura",
+    "name": "Baja temperatura",
+    "note": "El huevo a 63-64 °C."
+   },
+   {
+    "id": "holandesa",
+    "name": "Holandesa",
+    "note": "La yema que liga con calor suave."
+   }
+  ],
+  "keys": [
+   "Huevo fresco para escalfar: la clara se mantiene unida.",
+   "Corta en hielo: frena el punto y se pela mejor.",
+   "Anota el tamaño de huevo que usas: un L necesita más que un M.",
+   "Para servicio, escalfa con antelación, enfría en hielo y regenera 30-45 segundos en agua caliente.",
+   "Para crudos o poco hechos en elaboraciones, usa huevo pasteurizado si tu plan lo pide."
+  ],
+  "errors": [
+   {
+    "p": "Anillo verde en la yema",
+    "fix": "Demasiada cocción. Saca antes y enfría en hielo."
+   },
+   {
+    "p": "No se pela bien",
+    "fix": "Huevo muy fresco o sin choque térmico. Hielo nada más sacarlo; para cocer, mejor huevos de unos días."
+   },
+   {
+    "p": "El escalfado se deshace",
+    "fix": "Agua hirviendo fuerte o huevo viejo. Baja a 85-90 °C y usa huevo fresco."
+   }
+  ],
+  "history": "Los puntos del huevo son uno de los ejercicios básicos de cualquier cocina, y la cocción a temperatura controlada ha añadido el huevo a baja temperatura a muchas cartas.",
+  "uses": [
+   "Huevos rotos y fritos",
+   "Ensaladas",
+   "Huevo con verduras a la brasa",
+   "Ramen y caldos",
+   "Yema curada rallada"
+  ],
+  "keep": "Los cocidos, pelados o sin pelar, en frío pocos días; los escalfados, en agua fría y en frío, solo para el servicio del día.",
+  "pro": "Escalfa por bandejas antes del servicio y guárdalos en agua con hielo; en el pase solo se calientan. Temporizador por tanda.",
+  "related": [
+   "baja-temperatura",
+   "holandesa",
+   "mayonesa"
+  ]
  }
 ]

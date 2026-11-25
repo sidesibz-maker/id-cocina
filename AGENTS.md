@@ -14,13 +14,16 @@ App personal de I+D de un jefe de cocina (restaurante mediterráneo de brasa en 
     lectura para el equipo. `src/views/*`: pantallas. `src/saber/`: la «Biblioteca» (cerebro de cocina; ruta `#/biblioteca`, pantalla `views/saber.js`): `index.js`, contenido
     en `a.json`, `b.json`, `c.json`, `preparaciones.json`, `tecnicas.json`, `dulce.json` y `producto.json` con el formato de
     `saber/FORMATO.md`. `src/lab.css`: diseño (Hallmark, tema Solstice).
-  - Oficio (nov 2026): `views/tools.js` y `views/tools-more.js` (Herramientas: escalar, temporizadores, rendimiento, salmueras,
-    espesantes, panadero, temperaturas, producción y pedido, etiquetas, briefing), `timers.js`, `views/cook.js` (modo cocina,
+  - **Esta app no gestiona el restaurante** (eso lo lleva el dueño en otra app): nada de pedidos, stock, APPCC, equipo ni
+    sala. Es para crear, aprender y su carrera.
+  - Oficio (nov 2026): `views/tools.js` (Herramientas de cocina: escalar, temporizadores, salmueras, espesantes, panadero,
+    temperaturas), `views/lab.js` (Laboratorio creativo, `#/laboratorio`: chispas, mecanismos, cuaderno de chispas), `sketch.js`
+    (boceto de emplatado), `timers.js`, `views/cook.js` (modo cocina,
     `#/cocinar/plato|sub|biblioteca/<id>`), `views/journal.js` (Diario, `#/diario`), `views/career.js` (Mi trayectoria y
     dossier, `#/trayectoria`), `views/train.js` (Entrenar, tarjetas con repetición espaciada), `challenge.js` (reto de la
     semana), `finder.js` (buscador Ctrl+K).
   - Documentos: `state.docs` en `store.js` (`saveDoc`, `liveDocs`, `trashDoc`), con id `tipo:…` (diario, carrera:perfil,
-    puesto, formacion, objetivo, logro, rendimiento, briefing, repaso:estado). Van en la copia y se sincronizan como tipo
+    puesto, formacion, objetivo, logro, chispa, repaso:estado; y otros de pantallas ya retiradas que se conservan). Van en la copia y se sincronizan como tipo
     `doc`. **Pendiente**: el servidor aún no acepta `doc`; la migración probada está en `fuente/migracion-doc.sql` y la tiene
     que autorizar el dueño. Mientras, `sync.js` los deja en cola (marca `pushedDoc`) sin perder nada.
   - `radar.js`: avisos del radar que trae la app. `LEEME.txt`: instrucciones para el dueño.
@@ -34,7 +37,7 @@ cd fuente
 npm install
 npm run build        # genera salida/web (móvil, GitHub Pages) y salida/ID Cocina (PC)
 npx playwright install chromium   # solo la primera vez, si no hay navegador
-npm test             # 11 baterías en navegador: tienen que pasar TODAS
+npm test             # 12 baterías en navegador: tienen que pasar TODAS
 ```
 
 Publicar: con las pruebas en verde, copia `fuente/salida/web/*` a la raíz del repositorio, haz commit (`[codex] …`) y

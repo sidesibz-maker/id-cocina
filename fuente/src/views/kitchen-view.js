@@ -27,8 +27,6 @@ export function render() {
  let html = '<header class="page-head"><h1>' + esc(t('Mi cocina', 'My kitchen')) + '</h1><p>' + esc(t('Cuéntame cómo es tu cocina. Con esto se afinan los consejos, las ideas y la búsqueda de tendencias.', 'Tell me what your kitchen is like. It sharpens the advice, the ideas and the trend search.')) + '</p></header>';
  if (s) html += '<div class="stats"><div class="stat"><strong>' + s.catalogue + '</strong><span>' + esc(t('productos en el catálogo', 'products in the catalogue')) + '</span></div><div class="stat"><strong>' + s.known + '</strong><span>' + esc(t('básicos de tu cocina', 'staples of your kitchen')) + '</span></div><div class="stat"><strong>' + s.families + '</strong><span>' + esc(t('familias de producto', 'product families')) + '</span></div></div><p class="fine">' + esc(t('Si un producto no está, escríbelo tal cual al montar el plato: se guarda igual.', 'If a product is missing, type it as it is when building the dish: it is saved all the same.')) + '</p>';
  else html += skeleton(1);
- // Proveedores
- html += '<a class="craft-card kv-suppliers" href="#/proveedores">' + icon('box') + '<strong>' + esc(t('Mis proveedores', 'My suppliers')) + '</strong><span>' + esc(t('Quién te trae cada cosa, contacto y notas. El pedido de Producción se agrupa por proveedor.', 'Who brings you what, contact and notes. The Production order is grouped by supplier.')) + '</span></a>';
  // Mis subrecetas
  const subs = liveSubs(), binned = state.subs.filter(x => x.deleted_at);
  const subAxes = x => { const p = state.kb ? dishProfile(state.kb, {components: [{role: 'salsa', techniques: [], items: x.items.map(i => ({n: i.n, k: i.k || null, w: i.w || 2}))}]}) : null; return p && !p.empty ? p.axes : null; };

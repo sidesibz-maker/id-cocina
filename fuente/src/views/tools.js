@@ -1,14 +1,11 @@
 // I+D · Herramientas: las cuentas de oficio que se hacen cada día en cocina, sin sacar la calculadora.
-// Escalar una receta, salmueras, espesar y gelificar, porcentaje de panadero, rendimiento y mermas, temperaturas y
+// Escalar una receta, salmueras, espesar y gelificar, porcentaje de panadero, temperaturas y
 // conversiones, y temporizadores. Todo se calcula en este aparato; nada lleva precios.
 import {t, en, locale} from '../i18n.js';
 import {esc, icon, $, $$, toast} from '../ui.js';
 import {state, liveSubs, liveDishes, liveDocs, saveDoc, trashDoc} from '../store.js';
 import {copy} from '../ai.js';
 import {timers, onTimers, addTimer, pauseTimer, restartTimer, removeTimer, left, clock} from '../timers.js';
-import {produccion, etiquetas, briefing} from './tools-more.js';
-import {haccp} from './haccp.js';
-import {mep} from './mep.js';
 
 export const title = p => (TOOLS.find(x => x.id === p?.[0])?.name() || t('Herramientas', 'Tools'));
 
@@ -171,47 +168,7 @@ const panadero = {
  }
 };
 
-// ---------- 5. Rendimiento y mermas ----------
-const yields = () => liveDocs('rendimiento').sort((a, b) => String(a.name).localeCompare(String(b.name), 'es'));
-const rendimiento = {
- html() {
-  return '<div class="tgrid"><section class="card"><h2>' + esc(t('Cuánto rinde un género', 'How much a product yields')) + '</h2>' +
-   field('ydName', t('Género y cómo lo limpias', 'Product and how you trim it'), {mode: 'text', ph: t('p. ej. Lubina de 2 kg, en lomos sin piel', 'e.g. 2 kg sea bass, skinless fillets')}) +
-   '<div class="tpair">' + field('ydGross', t('Peso bruto (como llega)', 'Gross weight (as delivered)'), {unit: 'kg'}) + field('ydNet', t('Peso limpio', 'Trimmed weight'), {unit: 'kg'}) + '</div><div id="ydOut" aria-live="polite"></div>' +
-   '<div class="row-actions row-left"><button type="button" class="btn primary" data-act="save-yield">' + icon('check') + esc(t('Guardar en mis rendimientos', 'Save to my yields')) + '</button></div></section>' +
-   '<section class="card"><h2>' + esc(t('Cuánto pedir', 'How much to order')) + '</h2><div class="tpair">' + field('odPortions', t('Raciones', 'Portions'), {value: '60', mode: 'numeric'}) + field('odEach', t('Peso limpio por ración', 'Trimmed weight per portion'), {value: '140', unit: 'g'}) + '</div>' +
-   field('odYield', t('Rendimiento', 'Yield'), {value: '45', unit: '%', hint: t('Toca uno de tus rendimientos para usarlo.', 'Tap one of your yields to use it.')}) + '<div id="odOut" aria-live="polite"></div></section></div>' +
-   '<section class="sec" id="ydList">' + rendimiento.list() + '</section>';
- },
- list() {
-  const rows = yields();
-  return '<header class="sec-head"><div><h2>' + esc(t('Mis rendimientos', 'My yields')) + '</h2><p>' + esc(t('Lo que mides tú vale más que cualquier tabla: guárdalo cada vez que limpies un género.', 'What you measure beats any table: save it every time you trim a product.')) + '</p></div></header>' +
-   (rows.length ? '<table class="ktable tyields"><thead><tr><th>' + esc(t('Género', 'Product')) + '</th><th class="q">' + esc(t('Rinde', 'Yields')) + '</th><th class="q">' + esc(t('Merma', 'Loss')) + '</th><th></th></tr></thead><tbody>' + rows.map(r => '<tr><td><button type="button" class="linkbtn" data-use-yield="' + esc(r.pct) + '">' + esc(r.name) + '</button><small>' + esc(new Date(r.updated_at).toLocaleDateString(locale(), {day: 'numeric', month: 'short', year: 'numeric'})) + '</small></td><td class="q">' + esc(nice(r.pct)) + ' %</td><td class="q">' + esc(nice(100 - r.pct)) + ' %</td><td class="q"><button type="button" class="iconbtn" data-del-yield="' + esc(r.id) + '" aria-label="' + esc(t('Quitar ', 'Remove ') + r.name) + '">' + icon('trash') + '</button></td></tr>').join('') + '</tbody></table>'
-    : '<p class="tresult-empty">' + esc(t('Aún no has guardado ninguno.', 'You have not saved any yet.')) + '</p>');
- },
- calc(root) {
-  const gross = val(root, 'ydGross'), net = val(root, 'ydNet'), y = $('#ydOut', root);
-  y.innerHTML = gross > 0 && net > 0 && net <= gross ? result([[t('Rendimiento', 'Yield'), nice(net / gross * 100) + ' %', true], [t('Merma', 'Loss'), nice(100 - net / gross * 100) + ' %'], [t('Para 1 kg limpio hay que pedir', 'For 1 kg trimmed, order'), grams(gross / net * 1000)]]) : net > gross ? empty(t('El peso limpio no puede ser mayor que el bruto.', 'Trimmed weight cannot be greater than gross.')) : '';
-  const n = val(root, 'odPortions'), each = val(root, 'odEach'), pct = val(root, 'odYield'), o = $('#odOut', root);
-  o.innerHTML = n > 0 && each > 0 && pct > 0 && pct <= 100 ? result([[t('Pedir', 'Order'), grams(n * each / (pct / 100)), true], [t('Limpio que necesitas', 'Trimmed you need'), grams(n * each)]]) : '';
- },
- mount(root) {
-  root.addEventListener('click', async e => {
-   const use = e.target.closest('[data-use-yield]'), del = e.target.closest('[data-del-yield]'), save = e.target.closest('[data-act=save-yield]');
-   if (use) { $('#odYield', root).value = String(use.dataset.useYield).replace('.', ','); rendimiento.calc(root); $('#odYield', root).scrollIntoView({block: 'center', behavior: 'smooth'}); }
-   if (del) { await trashDoc(del.dataset.delYield); $('#ydList', root).innerHTML = rendimiento.list(); toast(t('Quitado de tus rendimientos.', 'Removed from your yields.')); }
-   if (save) {
-    const name = $('#ydName', root).value.trim(), gross = val(root, 'ydGross'), net = val(root, 'ydNet');
-    if (!name || !(gross > 0) || !(net > 0) || net > gross) { toast(t('Pon el género, el peso bruto y el peso limpio.', 'Enter the product, the gross weight and the trimmed weight.'), 'error'); return; }
-    await saveDoc('rendimiento', null, {name: name.slice(0, 120), gross, net, pct: Math.round(net / gross * 1000) / 10});
-    $('#ydList', root).innerHTML = rendimiento.list(); $('#ydName', root).value = '';
-    toast(t('Guardado en tus rendimientos.', 'Saved to your yields.'));
-   }
-  });
- }
-};
-
-// ---------- 6. Temperaturas y conversiones ----------
+// ---------- 5. Temperaturas y conversiones ----------
 const TEMPS = [
  ['Vacuno y cordero, poco hecho', 'Beef and lamb, rare', '50–52'], ['Vacuno y cordero, al punto', 'Beef and lamb, medium', '54–57'], ['Vacuno y cordero, hecho', 'Beef and lamb, well done', '63–68'],
  ['Cerdo jugoso', 'Juicy pork', '62–65'], ['Aves, a corazón', 'Poultry, at the core', '72–74'], ['Pescado jugoso, nacarado', 'Juicy, pearly fish', '45–50'], ['Pescado cuajado', 'Fully set fish', '55–60'],
@@ -272,13 +229,7 @@ const temporizadores = {
 
 const TOOLS = [
  {id: 'escalar', ic: 'refresh', name: () => t('Escalar una receta', 'Scale a recipe'), sub: () => t('De 4 raciones a 60 sin hacer cuentas', 'From 4 portions to 60 without the maths'), tool: escalar},
- {id: 'produccion', ic: 'book', name: () => t('Producción y pedido', 'Production and order'), sub: () => t('De un menú y unos cubiertos a la lista de pedido', 'From a menu and covers to the order list'), tool: produccion},
- {id: 'briefing', ic: 'user', name: () => t('Briefing del servicio', 'Service briefing'), sub: () => t('Platos del día, lo que no sale, alergias y avisos para el equipo', 'Dishes of the day, what is off, allergies and notes for the team'), tool: briefing},
- {id: 'mise', ic: 'list', name: () => t('Mise en place por partidas', 'Mise en place by section'), sub: () => t('La lista de cada día de cada partida, para marcar', 'A daily list per section, to tick off'), tool: mep},
- {id: 'registros', ic: 'shield', name: () => t('Registros APPCC', 'HACCP records'), sub: () => t('Temperaturas de cámaras, aceite de freír y recepción de mercancía', 'Fridge temperatures, frying oil and goods in'), tool: haccp},
- {id: 'etiquetas', ic: 'tag', name: () => t('Etiquetas de conservación', 'Storage labels'), sub: () => t('Elaborado, consumir antes de y alérgenos', 'Made, use by and allergens'), tool: etiquetas},
  {id: 'temporizadores', ic: 'clock', name: () => t('Temporizadores', 'Timers'), sub: () => t('Varios a la vez, con nombre', 'Several at once, with a name'), tool: temporizadores},
- {id: 'rendimiento', ic: 'scale', name: () => t('Rendimiento y mermas', 'Yield and losses'), sub: () => t('Cuánto rinde un género y cuánto pedir', 'How much a product yields and how much to order'), tool: rendimiento},
  {id: 'salmuera', ic: 'drop', name: () => t('Salmueras y salazones', 'Brines and dry salting'), sub: () => t('La sal justa para baño, equilibrio o en seco', 'The right salt for a bath, equilibrium or dry'), tool: salmuera},
  {id: 'ligar', ic: 'spark', name: () => t('Espesar y gelificar', 'Thicken and set'), sub: () => t('Roux, almidón, xantana, gelatina y agar', 'Roux, starch, xanthan, gelatine and agar'), tool: ligar},
  {id: 'panadero', ic: 'wheel', name: () => t('Porcentaje de panadero', 'Baker\'s percentage'), sub: () => t('Masas por hidratación y peso de pieza', 'Doughs by hydration and piece weight'), tool: panadero},
@@ -290,9 +241,8 @@ export function render(params) {
  const cur = TOOLS.find(x => x.id === params[0]);
  if (!cur) {
   const running = timers().filter(x => !x.done).length;
-  return '<header class="page-head"><h1>' + esc(t('Herramientas', 'Tools')) + '</h1><p>' + esc(t('Las cuentas de cada día, hechas: escribe lo que tienes y te digo lo que hay que pesar.', 'The everyday sums, done: type what you have and I tell you what to weigh.')) + '</p></header>' +
-   [[t('Al cocinar', 'While cooking'), ['escalar', 'temporizadores', 'salmuera', 'ligar', 'panadero', 'temperaturas']], [t('Organizar la cocina', 'Running the kitchen'), ['mise', 'produccion', 'rendimiento', 'briefing', 'etiquetas', 'registros']]].map(([title, ids]) =>
-    '<section class="sec"><h2 class="day">' + esc(title) + '</h2><div class="tiles ttiles">' + TOOLS.filter(x => ids.includes(x.id)).map(x => '<a class="tile tile-big" href="#/herramientas/' + x.id + '">' + icon(x.ic) + '<strong>' + esc(x.name()) + '</strong><span>' + esc(x.id === 'temporizadores' && running ? (running === 1 ? t('1 en marcha', '1 running') : running + t(' en marcha', ' running')) : x.sub()) + '</span></a>').join('') + '</div></section>').join('');
+  return '<header class="page-head"><h1>' + esc(t('Herramientas', 'Tools')) + '</h1><p>' + esc(t('Las cuentas de cocina, hechas: escribe lo que tienes y te digo lo que hay que pesar.', 'Kitchen sums, done: type what you have and I tell you what to weigh.')) + '</p></header>' +
+   '<div class="tiles ttiles">' + TOOLS.map(x => '<a class="tile tile-big" href="#/herramientas/' + x.id + '">' + icon(x.ic) + '<strong>' + esc(x.name()) + '</strong><span>' + esc(x.id === 'temporizadores' && running ? (running === 1 ? t('1 en marcha', '1 running') : running + t(' en marcha', ' running')) : x.sub()) + '</span></a>').join('') + '</div>';
  }
  return '<a class="back" href="#/herramientas">' + icon('left') + esc(t('Herramientas', 'Tools')) + '</a><header class="page-head"><h1>' + esc(cur.name()) + '</h1><p>' + esc(cur.sub()) + '.</p></header><div class="tool tool-' + cur.id + '">' + cur.tool.html() + '</div>';
 }
@@ -312,5 +262,5 @@ export function mount(root, params) {
  return off;
 }
 // Los datos que llegan (sincronización) no deben borrar lo que se está escribiendo en una calculadora.
-export function onData(what, root, params) { if (params[0] === 'rendimiento' && what === 'remote') { const host = $('#ydList', root); if (host) host.innerHTML = rendimiento.list(); } }
+export function onData() {}
 export {state};

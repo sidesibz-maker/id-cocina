@@ -1,4 +1,4 @@
-// Prueba del buscador general (Ctrl+K), de «Producción y pedido» y de las etiquetas de conservación.
+// Prueba del buscador general (Ctrl+K) y de que no quedan herramientas de gestión.
 import {createRequire} from 'node:module';
 const require = createRequire(import.meta.url);
 const {chromium} = require('playwright');
@@ -35,34 +35,10 @@ ok(await page.evaluate(() => location.hash) === '#/plato/d1', 'Intro no abre el 
 ok(!(await page.isVisible('#finderQ')), 'el buscador no se cierra al abrir');
 await page.click('.rail [data-act=finder]'); await page.waitForSelector('#finderQ'); await page.keyboard.press('Escape'); await wait(300);
 ok(!(await page.isVisible('#finderQ')), 'Esc no cierra el buscador');
-// Producción
-await go('#/herramientas'); ok(await page.locator('.ttiles .tile').count() === 12, 'no salen las 12 herramientas');
-await go('#/herramientas/produccion'); await page.fill('#prCovers', '40'); await page.dispatchEvent('#prCovers', 'input'); await wait(200);
-const pr = await page.textContent('#prOut');
-// Calamar: 150 g × 40 + 50 g × 40 = 8 kg limpio; con rendimiento del 75 % → 10,7 kg en bruto
-ok(pr.includes('10,7 kg'), 'el pedido no suma el calamar de los dos platos con tu rendimiento: ' + pr.slice(0, 300));
-ok(pr.includes('80 ud'), 'no cuenta las unidades de gamba');
-ok(pr.includes('1,6 kg') && pr.includes('1,6 tandas'), 'no calcula la subreceta y sus tandas');
-ok(pr.includes('Sal en escamas') && pr.includes('c/s'), 'lo que no tiene cantidad no sale aparte');
-// Etiquetas
-await go('#/herramientas/etiquetas'); await page.fill('#lbName', 'Romesco'); await page.fill('#lbDay', '2026-11-25'); await page.click('[data-life="5"]'); await page.click('.lballerg label:has-text("Frutos de cáscara")'); await page.dispatchEvent('#lbName', 'input'); await wait(150);
-const lb = await page.textContent('#lbOut');
-ok(lb.includes('Romesco') && lb.includes('30/11/26') && lb.includes('Frutos de cáscara'), 'la etiqueta no sale bien: ' + lb);
-await page.evaluate(() => { window.print = () => { window.__n = document.querySelectorAll('#printFicha .lbl').length; }; });
-await page.fill('#lbCount', '9'); await page.click('[data-act=lb-print]'); await wait(300);
-ok(await page.evaluate(() => window.__n) === 9, 'no imprime las etiquetas pedidas');
-// Proveedores: alta, búsqueda y pedido agrupado por proveedor
-await go('#/cocina'); ok(await page.locator('a[href="#/proveedores"]').count() >= 1, 'Mi cocina no lleva a los proveedores');
-await go('#/proveedores'); await page.click('[data-act=new]'); await page.waitForSelector('#spform');
-await page.fill('#sp-name', 'Pescados Juan'); await page.selectOption('#sp-kind', 'pescado'); await page.fill('#sp-products', 'calamar, gamba roja'); await page.fill('#sp-phone', '+34 600 111 222');
-await page.click('.sprate label:nth-child(5)'); await page.click('#spform button[type=submit]'); await wait(500);
-ok((await page.textContent('.spcards')).includes('Pescados Juan') && await page.locator('a[href^="tel:"]').count() === 1, 'no guarda el proveedor');
-await page.fill('#spq', 'gamba'); await wait(100); ok(await page.locator('.spcard:not([hidden])').count() === 1, 'no busca por producto');
-await go('#/herramientas/produccion'); await page.fill('#prCovers', '40'); await page.dispatchEvent('#prCovers', 'input'); await wait(200);
-const grouped = await page.textContent('#prOut');
-ok(grouped.includes('Pescados Juan') && grouped.includes('Mandar por WhatsApp'), 'el pedido no se agrupa por proveedor: ' + grouped.slice(0, 200));
-await page.keyboard.press('Control+k'); await page.fill('#finderQ', 'pescados juan'); await wait(150); ok((await page.textContent('#finderRes')).includes('Proveedores'), 'el buscador no encuentra proveedores'); await page.keyboard.press('Escape');
+// Herramientas: solo las de cocinar, nada de gestión (eso va en la otra app del dueño)
+await go('#/herramientas'); ok(await page.locator('.ttiles .tile').count() === 6, 'no salen las 6 herramientas');
+for (const gone of ['produccion', 'etiquetas', 'briefing', 'registros', 'mise', 'rendimiento']) ok(await page.locator('a[href="#/herramientas/' + gone + '"]').count() === 0, 'sigue la herramienta de gestión ' + gone);
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();
-if (fails.length) { console.error('FALLOS en buscador, producción y etiquetas:\n - ' + fails.join('\n - ')); process.exit(1); }
-console.log('buscador, producción y etiquetas: todo correcto');
+if (fails.length) { console.error('FALLOS en el buscador:\n - ' + fails.join('\n - ')); process.exit(1); }
+console.log('buscador: todo correcto');

@@ -5,29 +5,128 @@
   "name_en": "Dry and creamy rice dishes",
   "cat": "producto",
   "group": "Arroces",
-  "aka": ["paella", "arroz a banda", "arroz meloso", "arroz caldoso", "socarrat", "arroz al horno"],
+  "aka": [
+   "paella",
+   "arroz a banda",
+   "arroz meloso",
+   "arroz caldoso",
+   "socarrat",
+   "arroz al horno"
+  ],
   "summary": "Proporciones de caldo, tiempos y fuego para arroces secos, melosos y caldosos, y cómo sacar el socarrat sin quemarlo.",
   "what": "El arroz absorbe el caldo y suelta almidón. En un arroz seco se mueve al principio y luego no se toca, para que quede suelto y con [[sofrito]] y caldo bien concentrados. En el meloso se remueve más y se moja más, para que el almidón ligue. El sabor depende sobre todo del fondo: un buen [[fumet]] o [[fondo-de-marisco]] es la mitad del plato.",
   "base": {
    "for": "4 raciones de arroz seco en paella de 40 cm",
-   "items": [["Arroz bomba o senia", "320 g"], ["Fondo o caldo caliente y bien sazonado", "1-1,1 l"], ["Sofrito", "150 g"], ["Aceite de oliva", "60 ml"], ["Producto principal (marisco, verdura, carne)", "400-600 g"], ["Azafrán o colorante natural", "al gusto"]],
-   "steps": ["Marca el producto en el aceite y aparta si se pasa con la cocción larga.", "Añade el sofrito y el arroz, y nácaralo 1-2 minutos removiendo.", "Moja con el caldo hirviendo, reparte el arroz y prueba de sal: el caldo tiene que estar algo salado.", "10 minutos a fuego fuerte y 7-8 a fuego medio-bajo sin remover; coloca el producto encima a mitad.", "Sube el fuego el último minuto escuchando el crujido para el socarrat y reposa 3-5 minutos."]
+   "items": [
+    [
+     "Arroz bomba o senia",
+     "320 g"
+    ],
+    [
+     "Fondo o caldo caliente y bien sazonado",
+     "1-1,1 l"
+    ],
+    [
+     "Sofrito",
+     "150 g"
+    ],
+    [
+     "Aceite de oliva",
+     "60 ml"
+    ],
+    [
+     "Producto principal (marisco, verdura, carne)",
+     "400-600 g"
+    ],
+    [
+     "Azafrán o colorante natural",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Marca el producto en el aceite y aparta si se pasa con la cocción larga.",
+    "Añade el sofrito y el arroz, y nácaralo 1-2 minutos removiendo.",
+    "Moja con el caldo hirviendo, reparte el arroz y prueba de sal: el caldo tiene que estar algo salado.",
+    "10 minutos a fuego fuerte y 7-8 a fuego medio-bajo sin remover; coloca el producto encima a mitad.",
+    "Sube el fuego el último minuto escuchando el crujido para el socarrat y reposa 3-5 minutos."
+   ]
   },
   "ratios": [
-   {"use": "Arroz seco en paella (bomba)", "ratio": "3 a 3,5 partes de caldo por 1 de arroz", "note": "17-19 minutos."},
-   {"use": "Arroz seco (arroz tipo redondo normal)", "ratio": "2,5 a 3 partes de caldo por 1 de arroz", "note": "Absorbe menos que el bomba."},
-   {"use": "Arroz meloso", "ratio": "4 a 4,5 partes de caldo por 1 de arroz", "note": "Mover de vez en cuando; ligado."},
-   {"use": "Arroz caldoso", "ratio": "5 a 6 partes de caldo por 1 de arroz", "note": "Se sirve con su caldo."},
-   {"use": "Ración", "ratio": "70-90 g de arroz crudo por persona", "note": "Más si es plato único."}
+   {
+    "use": "Arroz seco en paella (bomba)",
+    "ratio": "3 a 3,5 partes de caldo por 1 de arroz",
+    "note": "17-19 minutos."
+   },
+   {
+    "use": "Arroz seco (arroz tipo redondo normal)",
+    "ratio": "2,5 a 3 partes de caldo por 1 de arroz",
+    "note": "Absorbe menos que el bomba."
+   },
+   {
+    "use": "Arroz meloso",
+    "ratio": "4 a 4,5 partes de caldo por 1 de arroz",
+    "note": "Mover de vez en cuando; ligado."
+   },
+   {
+    "use": "Arroz caldoso",
+    "ratio": "5 a 6 partes de caldo por 1 de arroz",
+    "note": "Se sirve con su caldo."
+   },
+   {
+    "use": "Ración",
+    "ratio": "70-90 g de arroz crudo por persona",
+    "note": "Más si es plato único."
+   }
   ],
-  "variants": [{"id": "sofrito", "name": "Sofrito", "note": "La base del sabor."}, {"id": "alioli", "name": "Alioli", "note": "El acompañante clásico de los arroces de pescado."}],
-  "keys": ["Caldo siempre caliente y probado de sal antes de mojar.", "Arroz extendido en capa fina: la paella grande y el arroz plano.", "Una vez repartido, no se remueve el arroz seco.", "El socarrat se escucha: crepita al final, huele a tostado, no a quemado.", "Reposo corto fuera del fuego para que termine de absorber."],
-  "errors": [{"p": "Arroz pasado o empastado", "fix": "Demasiado caldo, se removió o el arroz no era el adecuado. Ajusta la proporción y no lo toques."}, {"p": "Duro por arriba y quemado abajo", "fix": "Fuego desigual o poco caldo. Reparte el fuego, tapa con papel los últimos minutos si hace falta."}, {"p": "Soso", "fix": "El caldo no tenía suficiente sabor ni sal. Prueba y corrige el caldo antes de mojar."}],
+  "variants": [
+   {
+    "id": "sofrito",
+    "name": "Sofrito",
+    "note": "La base del sabor."
+   },
+   {
+    "id": "alioli",
+    "name": "Alioli",
+    "note": "El acompañante clásico de los arroces de pescado."
+   }
+  ],
+  "keys": [
+   "Caldo siempre caliente y probado de sal antes de mojar.",
+   "Arroz extendido en capa fina: la paella grande y el arroz plano.",
+   "Una vez repartido, no se remueve el arroz seco.",
+   "El socarrat se escucha: crepita al final, huele a tostado, no a quemado.",
+   "Reposo corto fuera del fuego para que termine de absorber."
+  ],
+  "errors": [
+   {
+    "p": "Arroz pasado o empastado",
+    "fix": "Demasiado caldo, se removió o el arroz no era el adecuado. Ajusta la proporción y no lo toques."
+   },
+   {
+    "p": "Duro por arriba y quemado abajo",
+    "fix": "Fuego desigual o poco caldo. Reparte el fuego, tapa con papel los últimos minutos si hace falta."
+   },
+   {
+    "p": "Soso",
+    "fix": "El caldo no tenía suficiente sabor ni sal. Prueba y corrige el caldo antes de mojar."
+   }
+  ],
   "history": "Los arroces en paella son una seña de la cocina valenciana y de toda la costa mediterránea española, con una enorme variedad local de caldos y productos.",
-  "uses": ["Arroz a banda", "Arroz de marisco", "Arroz de verduras", "Arroz de pescado y alioli", "Arroces de brasa"],
+  "uses": [
+   "Arroz a banda",
+   "Arroz de marisco",
+   "Arroz de verduras",
+   "Arroz de pescado y alioli",
+   "Arroces de brasa"
+  ],
   "keep": "El arroz cocinado se sirve al momento. El sofrito y el caldo se preparan con antelación y se guardan en frío.",
   "pro": "En servicio, ten caldo y sofrito en porciones por paella pesadas. Precocina el arroz 8-9 minutos, abátelo extendido y termina al pase con el caldo restante: así salen arroces en 10 minutos.",
-  "related": ["sofrito", "fumet", "fondo-de-marisco", "alioli"]
+  "related": [
+   "sofrito",
+   "fumet",
+   "fondo-de-marisco",
+   "alioli"
+  ]
  },
  {
   "id": "coccion-de-marisco",
@@ -35,25 +134,97 @@
   "name_en": "Cooking shellfish",
   "cat": "producto",
   "group": "Pescado y marisco",
-  "aka": ["cocer marisco", "gamba cocida", "langostino", "bogavante", "mejillones al vapor", "salmuera de marisco"],
+  "aka": [
+   "cocer marisco",
+   "gamba cocida",
+   "langostino",
+   "bogavante",
+   "mejillones al vapor",
+   "salmuera de marisco"
+  ],
   "summary": "Agua de mar o salmuera, tiempos por pieza y corte en frío: para que el marisco quede tierso y con su punto de sal.",
   "what": "El marisco cocido se pasa en segundos. Se cuece en agua con la salinidad del mar, a fuego vivo, y se corta la cocción en agua con hielo y sal. Los bivalvos se abren al vapor y se retiran según se abren. La plancha o la brasa, en cambio, piden fuego muy fuerte y muy poco tiempo.",
-  "method": ["Prepara agua con 35-40 g de sal por litro (o agua de mar limpia) y llévala a hervor fuerte.", "Prepara al lado un baño de agua, hielo y la misma sal.", "Echa el marisco y cuenta el tiempo desde que el agua vuelve a hervir.", "Saca y pasa al baño de hielo justo el tiempo de enfriar, y escurre.", "Para bivalvos, vapor en recipiente tapado con un poco de líquido; retira cada pieza en cuanto se abra."],
-  "ratios": [
-   {"use": "Gamba o langostino mediano", "ratio": "1-2 minutos desde que vuelve a hervir", "note": "Agua de mar o 35-40 g de sal por litro."},
-   {"use": "Cigala", "ratio": "2-3 minutos", "note": "Según tamaño."},
-   {"use": "Bogavante o langosta de 500-600 g", "ratio": "7-9 minutos", "note": "Corta la cocción en hielo."},
-   {"use": "Nécora o centollo", "ratio": "15-20 minutos por kilo", "note": "Echarlos en agua hirviendo."},
-   {"use": "Mejillón al vapor", "ratio": "2-3 minutos tapado", "note": "Retirar al abrir."}
+  "method": [
+   "Prepara agua con 35-40 g de sal por litro (o agua de mar limpia) y llévala a hervor fuerte.",
+   "Prepara al lado un baño de agua, hielo y la misma sal.",
+   "Echa el marisco y cuenta el tiempo desde que el agua vuelve a hervir.",
+   "Saca y pasa al baño de hielo justo el tiempo de enfriar, y escurre.",
+   "Para bivalvos, vapor en recipiente tapado con un poco de líquido; retira cada pieza en cuanto se abra."
   ],
-  "variants": [{"id": "fondo-de-marisco", "name": "Fondo de marisco", "note": "Cabezas y cáscaras para el caldo."}, {"id": "salmuera", "name": "Salmuera", "note": "Cómo calcular la sal."}],
-  "keys": ["Agua con la sal del mar: el marisco no pierde sabor.", "Hervor fuerte y tandas pequeñas para que no se corte.", "Corta en hielo con sal, no en agua dulce.", "Los bivalvos que no se abren se desechan.", "Cabezas y cáscaras van al fondo de marisco."],
-  "errors": [{"p": "Gamba harinosa o que se pela mal", "fix": "Se pasó de cocción. Acorta el tiempo y corta en hielo enseguida."}, {"p": "Sosa", "fix": "Agua sin sal suficiente o enfriado en agua dulce. Usa 35-40 g por litro también en el hielo."}, {"p": "Mejillón seco", "fix": "Se dejó al fuego después de abrir. Retira cada uno al abrirse."}],
+  "ratios": [
+   {
+    "use": "Gamba o langostino mediano",
+    "ratio": "1-2 minutos desde que vuelve a hervir",
+    "note": "Agua de mar o 35-40 g de sal por litro."
+   },
+   {
+    "use": "Cigala",
+    "ratio": "2-3 minutos",
+    "note": "Según tamaño."
+   },
+   {
+    "use": "Bogavante o langosta de 500-600 g",
+    "ratio": "7-9 minutos",
+    "note": "Corta la cocción en hielo."
+   },
+   {
+    "use": "Nécora o centollo",
+    "ratio": "15-20 minutos por kilo",
+    "note": "Echarlos en agua hirviendo."
+   },
+   {
+    "use": "Mejillón al vapor",
+    "ratio": "2-3 minutos tapado",
+    "note": "Retirar al abrir."
+   }
+  ],
+  "variants": [
+   {
+    "id": "fondo-de-marisco",
+    "name": "Fondo de marisco",
+    "note": "Cabezas y cáscaras para el caldo."
+   },
+   {
+    "id": "salmuera",
+    "name": "Salmuera",
+    "note": "Cómo calcular la sal."
+   }
+  ],
+  "keys": [
+   "Agua con la sal del mar: el marisco no pierde sabor.",
+   "Hervor fuerte y tandas pequeñas para que no se corte.",
+   "Corta en hielo con sal, no en agua dulce.",
+   "Los bivalvos que no se abren se desechan.",
+   "Cabezas y cáscaras van al fondo de marisco."
+  ],
+  "errors": [
+   {
+    "p": "Gamba harinosa o que se pela mal",
+    "fix": "Se pasó de cocción. Acorta el tiempo y corta en hielo enseguida."
+   },
+   {
+    "p": "Sosa",
+    "fix": "Agua sin sal suficiente o enfriado en agua dulce. Usa 35-40 g por litro también en el hielo."
+   },
+   {
+    "p": "Mejillón seco",
+    "fix": "Se dejó al fuego después de abrir. Retira cada uno al abrirse."
+   }
+  ],
   "history": "Cocer el marisco en agua de mar es la forma tradicional en los puertos del Cantábrico y de Galicia; en el Mediterráneo manda la plancha y la brasa.",
-  "uses": ["Mariscadas", "Ensaladas y salpicones", "Arroces", "Brasa"],
+  "uses": [
+   "Mariscadas",
+   "Ensaladas y salpicones",
+   "Arroces",
+   "Brasa"
+  ],
   "keep": "Cocido y frío, en cámara y para consumir en poco tiempo; el marisco vivo, en lugar fresco y húmedo, nunca en agua dulce.",
   "pro": "Cuece por tandas antes del servicio, abate y guarda tapado. Las cabezas se congelan para el fondo de marisco de la semana.",
-  "related": ["fondo-de-marisco", "salmuera", "arroces"]
+  "related": [
+   "fondo-de-marisco",
+   "salmuera",
+   "arroces"
+  ]
  },
  {
   "id": "pescado-entero",
@@ -61,23 +232,87 @@
   "name_en": "Cleaning and portioning fish",
   "cat": "producto",
   "group": "Pescado y marisco",
-  "aka": ["desespinar", "filetear", "sacar lomos", "pescado plano", "pescado redondo", "descamar"],
+  "aka": [
+   "desespinar",
+   "filetear",
+   "sacar lomos",
+   "pescado plano",
+   "pescado redondo",
+   "descamar"
+  ],
   "summary": "Cómo sacar lomos limpios de un pescado redondo y de uno plano, qué rinde cada uno y qué se aprovecha.",
   "what": "Un pescado bien limpio rinde más y se cocina mejor. El redondo (lubina, dorada, merluza) da dos lomos; el plano (rodaballo, lenguado, gallo) da cuatro filetes. Las espinas y cabezas limpias son el [[fumet]] del día siguiente. El pescado que se vaya a comer crudo o poco hecho debe congelarse antes.",
-  "method": ["Descama a contrapelo bajo un chorro fino o dentro de una bolsa, y vacía sin romper la hiel.", "Pescado redondo: corte detrás de la cabeza hasta la espina y, apoyando el cuchillo en la espina, saca el lomo de cabeza a cola. Repite por el otro lado.", "Pescado plano: corte por la línea central hasta la espina y saca dos filetes de cada cara deslizando el cuchillo desde el centro hacia fuera.", "Retira las espinas de la ventresca y las espinas finas con pinzas, a favor de la carne.", "Racionar: corta piezas del mismo grosor y peso, y guarda los recortes para tartares o rellenos."],
-  "ratios": [
-   {"use": "Pescado redondo (lubina, dorada)", "ratio": "40-50 % de rendimiento en lomo limpio", "note": "Depende del tamaño."},
-   {"use": "Pescado plano (rodaballo)", "ratio": "35-45 % en filetes", "note": "Mucha cabeza y espina."},
-   {"use": "Ración de pescado", "ratio": "140-180 g de lomo limpio", "note": "Plato principal."}
+  "method": [
+   "Descama a contrapelo bajo un chorro fino o dentro de una bolsa, y vacía sin romper la hiel.",
+   "Pescado redondo: corte detrás de la cabeza hasta la espina y, apoyando el cuchillo en la espina, saca el lomo de cabeza a cola. Repite por el otro lado.",
+   "Pescado plano: corte por la línea central hasta la espina y saca dos filetes de cada cara deslizando el cuchillo desde el centro hacia fuera.",
+   "Retira las espinas de la ventresca y las espinas finas con pinzas, a favor de la carne.",
+   "Racionar: corta piezas del mismo grosor y peso, y guarda los recortes para tartares o rellenos."
   ],
-  "variants": [{"id": "fumet", "name": "Fumet", "note": "El aprovechamiento de espinas y cabezas."}, {"id": "curado-de-pescado", "name": "Curado de pescado", "note": "Para servir crudo."}],
-  "keys": ["Cuchillo de filetear muy afilado y flexible.", "Apoya siempre la hoja en la espina: el lomo sale entero.", "Seca el pescado y guárdalo en bandeja sobre rejilla, sin agua.", "Mide tus rendimientos en la herramienta de mermas: es tu mejor dato para pedir.", "Congela antes lo que vaya crudo o poco hecho."],
-  "errors": [{"p": "Lomos rotos o con carne pegada a la espina", "fix": "Cuchillo sin filo o separado de la espina. Afila y apoya la hoja."}, {"p": "Sabor amargo", "fix": "Se rompió la hiel o quedaron restos de sangre. Vacía con cuidado y lava la espina central."}, {"p": "Raciones desiguales", "fix": "Cortes a ojo. Pesa la primera ración y corta las demás iguales."}],
+  "ratios": [
+   {
+    "use": "Pescado redondo (lubina, dorada)",
+    "ratio": "40-50 % de rendimiento en lomo limpio",
+    "note": "Depende del tamaño."
+   },
+   {
+    "use": "Pescado plano (rodaballo)",
+    "ratio": "35-45 % en filetes",
+    "note": "Mucha cabeza y espina."
+   },
+   {
+    "use": "Ración de pescado",
+    "ratio": "140-180 g de lomo limpio",
+    "note": "Plato principal."
+   }
+  ],
+  "variants": [
+   {
+    "id": "fumet",
+    "name": "Fumet",
+    "note": "El aprovechamiento de espinas y cabezas."
+   },
+   {
+    "id": "curado-de-pescado",
+    "name": "Curado de pescado",
+    "note": "Para servir crudo."
+   }
+  ],
+  "keys": [
+   "Cuchillo de filetear muy afilado y flexible.",
+   "Apoya siempre la hoja en la espina: el lomo sale entero.",
+   "Seca el pescado y guárdalo en bandeja sobre rejilla, sin agua.",
+   "Mide tus rendimientos en la herramienta de mermas: es tu mejor dato para pedir.",
+   "Congela antes lo que vaya crudo o poco hecho."
+  ],
+  "errors": [
+   {
+    "p": "Lomos rotos o con carne pegada a la espina",
+    "fix": "Cuchillo sin filo o separado de la espina. Afila y apoya la hoja."
+   },
+   {
+    "p": "Sabor amargo",
+    "fix": "Se rompió la hiel o quedaron restos de sangre. Vacía con cuidado y lava la espina central."
+   },
+   {
+    "p": "Raciones desiguales",
+    "fix": "Cortes a ojo. Pesa la primera ración y corta las demás iguales."
+   }
+  ],
   "history": "Limpiar y racionar pescado es uno de los oficios básicos de la partida de pescados, aprendido tradicionalmente en el día a día de cocina.",
-  "uses": ["Lomos a la plancha o brasa", "Crudos y curados", "Fumet", "Tartares con recortes"],
+  "uses": [
+   "Lomos a la plancha o brasa",
+   "Crudos y curados",
+   "Fumet",
+   "Tartares con recortes"
+  ],
   "keep": "Lomos limpios en frío, bien tapados y sin agua; el tiempo que marque tu plan APPCC.",
   "pro": "Limpia y raciona al recibir el género, anota el rendimiento y guarda las espinas para el fumet. Una ficha por pescado con su peso de ración.",
-  "related": ["fumet", "curado-de-pescado", "punto-de-la-carne"]
+  "related": [
+   "fumet",
+   "curado-de-pescado",
+   "punto-de-la-carne"
+  ]
  },
  {
   "id": "cortes-de-vacuno",
@@ -85,25 +320,105 @@
   "name_en": "Beef cuts for the grill",
   "cat": "producto",
   "group": "Carne",
-  "aka": ["chuleton", "lomo alto", "lomo bajo", "entraña", "vacio", "picaña", "solomillo", "cortes de carne"],
+  "aka": [
+   "chuleton",
+   "lomo alto",
+   "lomo bajo",
+   "entraña",
+   "vacio",
+   "picaña",
+   "solomillo",
+   "cortes de carne"
+  ],
   "summary": "Qué corte va a la brasa y cuál pide cocción larga, cómo se cortan y a qué punto sacan lo mejor.",
   "what": "Los cortes de músculo poco trabajado y con grasa infiltrada (lomo alto, lomo bajo, solomillo) van directos a la brasa. Los cortes con más fibra y sabor (entraña, vacío, picaña) también, pero cortados en contra de la fibra. Los que tienen mucho colágeno (morcillo, carrillera, falda) piden [[baja-temperatura]] o guiso.",
-  "method": ["Atempera la pieza y sécala; sala con tiempo o justo antes.", "Brasa bien hecha, sin llama, con una zona fuerte y otra suave.", "Marca la grasa exterior de pie primero en piezas como el chuletón, para que se funda.", "Saca antes del punto y reposa en rejilla.", "Corta en contra de la fibra, en lonchas de 1 a 1,5 cm, y sala en escamas."],
-  "ratios": [
-   {"use": "Chuletón o lomo alto", "ratio": "4-5 cm de grosor, poco hecho o al punto", "note": "Mucha grasa infiltrada, mucho sabor."},
-   {"use": "Lomo bajo (lomo, entrecot)", "ratio": "3-4 cm, al punto", "note": "Más magro y regular."},
-   {"use": "Entraña y vacío", "ratio": "Fuego muy fuerte y corto, poco hecho", "note": "Cortar fino contra la fibra."},
-   {"use": "Picaña", "ratio": "Con su capa de grasa, al punto", "note": "Cortar en filetes gruesos contra la fibra."},
-   {"use": "Morcillo, carrillera, falda", "ratio": "Cocción larga o baja temperatura", "note": "Luego se marca a la brasa."}
+  "method": [
+   "Atempera la pieza y sécala; sala con tiempo o justo antes.",
+   "Brasa bien hecha, sin llama, con una zona fuerte y otra suave.",
+   "Marca la grasa exterior de pie primero en piezas como el chuletón, para que se funda.",
+   "Saca antes del punto y reposa en rejilla.",
+   "Corta en contra de la fibra, en lonchas de 1 a 1,5 cm, y sala en escamas."
   ],
-  "variants": [{"id": "punto-de-la-carne", "name": "Punto de la carne", "note": "Temperaturas a corazón."}, {"id": "maduracion-de-carne", "name": "Maduración", "note": "Lo que cambia con semanas de cámara."}, {"id": "chimichurri", "name": "Chimichurri", "note": "La salsa clásica de la parrilla."}],
-  "keys": ["Contra la fibra siempre en entraña, vacío y picaña.", "La grasa del chuletón se funde mejor marcándola de pie.", "Sal gruesa o en escamas al final; si es con tiempo, mínimo 40 minutos antes.", "Reposa siempre sobre rejilla.", "Pide el peso y el grosor exacto a tu carnicero y anótalo en la ficha."],
-  "errors": [{"p": "Carne dura en entraña o vacío", "fix": "Cortada a favor de la fibra o pasada de punto. Corta en contra y sácala antes."}, {"p": "Llamas que ennegrecen", "fix": "Grasa goteando sobre la brasa. Aparta a la zona suave y deja que pase la llama."}, {"p": "Exterior quemado, interior frío", "fix": "Pieza fría y gruesa. Atempera y termina en la zona suave."}],
+  "ratios": [
+   {
+    "use": "Chuletón o lomo alto",
+    "ratio": "4-5 cm de grosor, poco hecho o al punto",
+    "note": "Mucha grasa infiltrada, mucho sabor."
+   },
+   {
+    "use": "Lomo bajo (lomo, entrecot)",
+    "ratio": "3-4 cm, al punto",
+    "note": "Más magro y regular."
+   },
+   {
+    "use": "Entraña y vacío",
+    "ratio": "Fuego muy fuerte y corto, poco hecho",
+    "note": "Cortar fino contra la fibra."
+   },
+   {
+    "use": "Picaña",
+    "ratio": "Con su capa de grasa, al punto",
+    "note": "Cortar en filetes gruesos contra la fibra."
+   },
+   {
+    "use": "Morcillo, carrillera, falda",
+    "ratio": "Cocción larga o baja temperatura",
+    "note": "Luego se marca a la brasa."
+   }
+  ],
+  "variants": [
+   {
+    "id": "punto-de-la-carne",
+    "name": "Punto de la carne",
+    "note": "Temperaturas a corazón."
+   },
+   {
+    "id": "maduracion-de-carne",
+    "name": "Maduración",
+    "note": "Lo que cambia con semanas de cámara."
+   },
+   {
+    "id": "chimichurri",
+    "name": "Chimichurri",
+    "note": "La salsa clásica de la parrilla."
+   }
+  ],
+  "keys": [
+   "Contra la fibra siempre en entraña, vacío y picaña.",
+   "La grasa del chuletón se funde mejor marcándola de pie.",
+   "Sal gruesa o en escamas al final; si es con tiempo, mínimo 40 minutos antes.",
+   "Reposa siempre sobre rejilla.",
+   "Pide el peso y el grosor exacto a tu carnicero y anótalo en la ficha."
+  ],
+  "errors": [
+   {
+    "p": "Carne dura en entraña o vacío",
+    "fix": "Cortada a favor de la fibra o pasada de punto. Corta en contra y sácala antes."
+   },
+   {
+    "p": "Llamas que ennegrecen",
+    "fix": "Grasa goteando sobre la brasa. Aparta a la zona suave y deja que pase la llama."
+   },
+   {
+    "p": "Exterior quemado, interior frío",
+    "fix": "Pieza fría y gruesa. Atempera y termina en la zona suave."
+   }
+  ],
   "history": "La parrilla de vacuno tiene grandes tradiciones en el norte de España y en Sudamérica, que han extendido cortes como la entraña o la picaña en las cocinas de brasa.",
-  "uses": ["Brasa y josper", "Carne para compartir", "Tartar y carpaccio (solomillo)", "Cocciones largas (cortes con colágeno)"],
+  "uses": [
+   "Brasa y josper",
+   "Carne para compartir",
+   "Tartar y carpaccio (solomillo)",
+   "Cocciones largas (cortes con colágeno)"
+  ],
   "keep": "En cámara, sobre rejilla y sin envolver si se va a usar pronto, o al vacío; lo que marque tu plan APPCC.",
   "pro": "Racionar en el momento de la recepción, al peso de la carta, y etiquetar. Una sonda por cada parrilla y la tabla de puntos en el pase.",
-  "related": ["punto-de-la-carne", "sellado-y-reposo", "chimichurri", "maduracion-de-carne"]
+  "related": [
+   "punto-de-la-carne",
+   "sellado-y-reposo",
+   "chimichurri",
+   "maduracion-de-carne"
+  ]
  },
  {
   "id": "maduracion-de-carne",
@@ -111,22 +426,79 @@
   "name_en": "Dry-ageing beef",
   "cat": "producto",
   "group": "Carne",
-  "aka": ["dry aged", "carne madurada", "maduracion en seco", "carne de buey", "vaca vieja"],
+  "aka": [
+   "dry aged",
+   "carne madurada",
+   "maduracion en seco",
+   "carne de buey",
+   "vaca vieja"
+  ],
   "summary": "Qué pasa en la cámara cuando la carne madura, cuánto tiempo y en qué condiciones, y cuánto se pierde.",
   "what": "Durante la maduración, las enzimas de la propia carne la ablandan y el sabor se concentra al perder agua. En seco, la pieza entera con hueso y grasa se deja en cámara con frío, humedad y aire controlados; se forma una costra que luego se recorta. Cuanto más tiempo, más intenso el sabor y más merma.",
-  "method": ["Elige piezas grandes, con hueso y buena cobertura de grasa (lomo alto o lomo bajo enteros).", "Colócalas en rejilla, con aire alrededor, en cámara propia o en una zona que no se abra continuamente.", "Mantén unos 1-3 °C, humedad del 75-85 % y ventilación constante.", "Revisa y anota el peso y el aspecto cada semana.", "Al usarla, recorta la costra seca y raciona al momento."],
-  "ratios": [
-   {"use": "Maduración corta", "ratio": "21-30 días", "note": "Más tierna, sabor algo más profundo; merma moderada."},
-   {"use": "Maduración media", "ratio": "30-45 días", "note": "Aromas a fruto seco; más merma."},
-   {"use": "Maduración larga", "ratio": "Más de 45 días", "note": "Sabor muy intenso y merma grande; no a todos los clientes les gusta."}
+  "method": [
+   "Elige piezas grandes, con hueso y buena cobertura de grasa (lomo alto o lomo bajo enteros).",
+   "Colócalas en rejilla, con aire alrededor, en cámara propia o en una zona que no se abra continuamente.",
+   "Mantén unos 1-3 °C, humedad del 75-85 % y ventilación constante.",
+   "Revisa y anota el peso y el aspecto cada semana.",
+   "Al usarla, recorta la costra seca y raciona al momento."
   ],
-  "variants": [{"id": "cortes-de-vacuno", "name": "Cortes de vacuno", "note": "Qué cortes madurar."}],
-  "keys": ["Pieza grande, con hueso y grasa: las pequeñas se secan sin madurar.", "Frío, humedad y aire constantes: anótalos a diario.", "Pesa al entrar y cada semana: así sabes tu merma real.", "Separada de otros productos: absorbe olores.", "Mide la merma con la herramienta de rendimiento."],
-  "errors": [{"p": "Olor desagradable o pegajosa", "fix": "Humedad alta o falta de aire. Revisa la cámara; si el olor es agrio o la superficie viscosa, no se usa."}, {"p": "Se seca sin ganar sabor", "fix": "Pieza demasiado pequeña o sin grasa. Madura piezas enteras."}, {"p": "Merma mayor de la prevista", "fix": "Mucho tiempo o aire muy seco. Ajusta humedad y anota el peso."}],
+  "ratios": [
+   {
+    "use": "Maduración corta",
+    "ratio": "21-30 días",
+    "note": "Más tierna, sabor algo más profundo; merma moderada."
+   },
+   {
+    "use": "Maduración media",
+    "ratio": "30-45 días",
+    "note": "Aromas a fruto seco; más merma."
+   },
+   {
+    "use": "Maduración larga",
+    "ratio": "Más de 45 días",
+    "note": "Sabor muy intenso y merma grande; no a todos los clientes les gusta."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cortes-de-vacuno",
+    "name": "Cortes de vacuno",
+    "note": "Qué cortes madurar."
+   }
+  ],
+  "keys": [
+   "Pieza grande, con hueso y grasa: las pequeñas se secan sin madurar.",
+   "Frío, humedad y aire constantes: anótalos a diario.",
+   "Pesa al entrar y cada semana: así sabes tu merma real.",
+   "Separada de otros productos: absorbe olores.",
+   "Mide la merma con la herramienta de rendimiento."
+  ],
+  "errors": [
+   {
+    "p": "Olor desagradable o pegajosa",
+    "fix": "Humedad alta o falta de aire. Revisa la cámara; si el olor es agrio o la superficie viscosa, no se usa."
+   },
+   {
+    "p": "Se seca sin ganar sabor",
+    "fix": "Pieza demasiado pequeña o sin grasa. Madura piezas enteras."
+   },
+   {
+    "p": "Merma mayor de la prevista",
+    "fix": "Mucho tiempo o aire muy seco. Ajusta humedad y anota el peso."
+   }
+  ],
   "history": "Dejar reposar la carne colgada antes de comerla es una costumbre antigua; la maduración controlada en cámaras se ha extendido en asadores y restaurantes de brasa.",
-  "uses": ["Chuletón y lomo alto", "Carpaccio y tartar de vaca vieja", "Grasa madurada para aceites y mantequillas"],
+  "uses": [
+   "Chuletón y lomo alto",
+   "Carpaccio y tartar de vaca vieja",
+   "Grasa madurada para aceites y mantequillas"
+  ],
   "keep": "Una vez recortada, la carne madurada se trata como carne fresca: en frío y para pocos días.",
   "pro": "Lleva un registro por pieza con fecha de entrada, peso semanal, temperatura y humedad. Con el rendimiento final ajustas el peso de ración de carta.",
-  "related": ["cortes-de-vacuno", "punto-de-la-carne", "aceites-aromatizados"]
+  "related": [
+   "cortes-de-vacuno",
+   "punto-de-la-carne",
+   "aceites-aromatizados"
+  ]
  }
 ]

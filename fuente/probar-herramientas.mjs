@@ -1,5 +1,5 @@
 // Prueba de Herramientas: escalar (cantidades sí, temperaturas y tiempos no), salmuera, espesantes, panadero,
-// rendimiento guardado (en la copia y en lo que se sincroniza, sin borrar), conversiones y temporizadores.
+// conversiones y temporizadores.
 import {createRequire} from 'node:module';
 const require = createRequire(import.meta.url);
 const {chromium} = require('playwright');
@@ -15,7 +15,7 @@ await page.reload(); await page.waitForSelector('.hello h1');
 // Menú y portada de herramientas
 ok((await page.textContent('.rail')).includes('Herramientas'), 'el menú no tiene Herramientas');
 await page.click('.rail a[href="#/herramientas"]'); await page.waitForSelector('.ttiles');
-ok(await page.locator('.ttiles .tile').count() === 12, 'no salen las 12 herramientas');
+ok(await page.locator('.ttiles .tile').count() === 6, 'no salen las 6 herramientas');
 // Escalar
 await go('#/herramientas/escalar');
 await page.fill('#scText', '1 l de leche\n60 g de mantequilla\n1/2 cucharadita de nuez moscada\nHornear a 180 °C 25 min\nSal, c/s');
@@ -38,22 +38,6 @@ ok((await page.textContent('#agOut')).includes('hojas'), 'gelatina no dice hojas
 // Panadero
 await go('#/herramientas/panadero'); await page.fill('#bkFlour', '1000'); await page.fill('#bkWater', '70'); await page.fill('#bkSalt', '2'); await wait(100);
 const bk = await page.textContent('#bkOut'); ok(bk.includes('700 g') && bk.includes('20 g'), 'panadero mal calculado: ' + bk);
-// Rendimiento
-await go('#/herramientas/rendimiento'); await page.fill('#ydName', 'Lubina en lomos'); await page.fill('#ydGross', '2'); await page.fill('#ydNet', '0,9'); await wait(100);
-ok((await page.textContent('#ydOut')).includes('45 %'), 'rendimiento mal calculado');
-await page.click('[data-act=save-yield]'); await wait(200);
-ok((await page.textContent('#ydList')).includes('Lubina en lomos'), 'no guarda el rendimiento');
-await page.click('[data-use-yield]'); await page.fill('#odPortions', '60'); await page.fill('#odEach', '150'); await wait(100);
-ok((await page.textContent('#odOut')).includes('20 kg'), 'cuánto pedir mal calculado: ' + await page.textContent('#odOut'));
-const saved = await page.evaluate(() => JSON.parse(localStorage.getItem('id-cocina-v1')).docs);
-ok(Object.values(saved || {}).some(d => d.type === 'rendimiento' && d.name === 'Lubina en lomos'), 'el rendimiento no se guarda en la libreta');
-await page.click('[data-del-yield]'); await wait(200);
-const after = await page.evaluate(() => Object.values(JSON.parse(localStorage.getItem('id-cocina-v1')).docs));
-ok(after.length === 1 && after[0].deleted_at, 'quitar un rendimiento lo borra en vez de mandarlo a la papelera');
-// Copia de seguridad: los documentos van dentro y al recuperarla vuelven
-const dl = page.waitForEvent('download'); await page.click('.rail [data-act=menu]'); await page.click('[data-act=backup]');
-const file = await (await dl).path(); const backup = JSON.parse((await import('node:fs')).readFileSync(file, 'utf8'));
-ok(backup.docs && Object.keys(backup.docs).length === 1, 'la copia no lleva los documentos');
 // Conversiones
 await go('#/herramientas/temperaturas'); await page.fill('#cv-c', '180'); await page.dispatchEvent('#cv-c', 'input'); await wait(100);
 ok((await page.inputValue('#cv-f')) === '356', 'conversión de grados mal');
