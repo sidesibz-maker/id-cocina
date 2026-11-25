@@ -7,6 +7,7 @@ import {state, liveSubs, liveDishes, liveDocs, saveDoc, trashDoc} from '../store
 import {copy} from '../ai.js';
 import {timers, onTimers, addTimer, pauseTimer, restartTimer, removeTimer, left, clock} from '../timers.js';
 import {produccion, etiquetas, briefing} from './tools-more.js';
+import {haccp} from './haccp.js';
 
 export const title = p => (TOOLS.find(x => x.id === p?.[0])?.name() || t('Herramientas', 'Tools'));
 
@@ -272,6 +273,7 @@ const TOOLS = [
  {id: 'escalar', ic: 'refresh', name: () => t('Escalar una receta', 'Scale a recipe'), sub: () => t('De 4 raciones a 60 sin hacer cuentas', 'From 4 portions to 60 without the maths'), tool: escalar},
  {id: 'produccion', ic: 'book', name: () => t('Producción y pedido', 'Production and order'), sub: () => t('De un menú y unos cubiertos a la lista de pedido', 'From a menu and covers to the order list'), tool: produccion},
  {id: 'briefing', ic: 'user', name: () => t('Briefing del servicio', 'Service briefing'), sub: () => t('Platos del día, lo que no sale, alergias y avisos para el equipo', 'Dishes of the day, what is off, allergies and notes for the team'), tool: briefing},
+ {id: 'registros', ic: 'check', name: () => t('Registros APPCC', 'HACCP records'), sub: () => t('Temperaturas de cámaras, aceite de freír y recepción de mercancía', 'Fridge temperatures, frying oil and goods in'), tool: haccp},
  {id: 'etiquetas', ic: 'box', name: () => t('Etiquetas de conservación', 'Storage labels'), sub: () => t('Elaborado, consumir antes de y alérgenos', 'Made, use by and allergens'), tool: etiquetas},
  {id: 'temporizadores', ic: 'clock', name: () => t('Temporizadores', 'Timers'), sub: () => t('Varios a la vez, con nombre', 'Several at once, with a name'), tool: temporizadores},
  {id: 'rendimiento', ic: 'box', name: () => t('Rendimiento y mermas', 'Yield and losses'), sub: () => t('Cuánto rinde un género y cuánto pedir', 'How much a product yields and how much to order'), tool: rendimiento},

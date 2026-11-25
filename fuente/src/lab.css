@@ -952,3 +952,11 @@ html.cooking .tabs{display:none}html.cooking .view{padding-bottom:calc(32px + en
  .algtable .algth{height:30mm;vertical-align:bottom;padding:4px 2px}.algtable .algth span{display:block;writing-mode:vertical-rl;transform:rotate(180deg);white-space:nowrap;font-weight:600}
  .algtable .algc{text-align:center;font-size:11pt;width:6mm}.algtable td small{color:var(--mut)}
 }
+
+/* ---------- Registros APPCC ---------- */
+.rgkinds{margin-bottom:16px}.rgmonth{width:auto!important;min-height:40px!important;padding:6px 8px!important}
+.rgeq small{font-weight:400;color:var(--mut)}
+.rgtable tr.is-alert td{background:var(--bad)}.rgtable .rgbad{color:var(--bad-ink);font-weight:700}.rgnote{display:block;color:var(--ink2)}
+.rglist{display:grid}.rglist li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 12px;padding:8px 0;border-bottom:1px solid var(--line)}.rglist li>span{grid-column:1;color:var(--ink2);font-size:14.5px}.rglist li>.iconbtn{grid-column:2;grid-row:1/span 2}
+.rglist li.is-alert strong{color:var(--bad-ink)}
+.tool-registros .seg .seg-btn{cursor:pointer}

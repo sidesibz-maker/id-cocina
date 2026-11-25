@@ -15,7 +15,7 @@ await page.reload(); await page.waitForSelector('.hello h1');
 // Menú y portada de herramientas
 ok((await page.textContent('.rail')).includes('Herramientas'), 'el menú no tiene Herramientas');
 await page.click('.rail a[href="#/herramientas"]'); await page.waitForSelector('.ttiles');
-ok(await page.locator('.ttiles .tile').count() === 10, 'no salen las 10 herramientas');
+ok(await page.locator('.ttiles .tile').count() === 11, 'no salen las 11 herramientas');
 // Escalar
 await go('#/herramientas/escalar');
 await page.fill('#scText', '1 l de leche\n60 g de mantequilla\n1/2 cucharadita de nuez moscada\nHornear a 180 °C 25 min\nSal, c/s');
