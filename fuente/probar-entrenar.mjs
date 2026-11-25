@@ -33,6 +33,13 @@ ok((await page.textContent('.trmeta')).includes('Temperaturas'), 'el tema no fil
 await page.evaluate(d => { const v = JSON.parse(localStorage.getItem('id-cocina-v1')); const s = v.docs['repaso:estado']; for (const k of Object.keys(s.cards)) s.cards[k].due = d; localStorage.setItem('id-cocina-v1', JSON.stringify(v)); }, day());
 await page.reload(); await wait(500); await go('#/hoy'); await page.waitForSelector('.craft');
 ok((await page.textContent('.craft')).includes('2 tarjetas para repasar'), 'la portada no avisa de lo que hay que repasar: ' + await page.textContent('.craft'));
+// Reto de la semana: sale en la portada y, al cumplirlo, sube el nivel de la técnica
+const ch = await page.textContent('.craft-challenge');
+ok(ch.includes('Reto de la semana'), 'la portada no propone el reto de la semana');
+await page.click('[data-act=challenge-done]'); await wait(600);
+const perfil = await page.evaluate(() => JSON.parse(localStorage.getItem('id-cocina-v1')).docs['carrera:perfil']);
+ok(perfil && Object.values(perfil.skills || {}).some(v => v === 1) && Object.keys(perfil.challenges || {}).length === 1, 'cumplir el reto no sube el nivel: ' + JSON.stringify(perfil));
+ok((await page.textContent('.craft-challenge')).includes('Hecho'), 'el reto no queda como hecho');
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();
 if (fails.length) { console.error('FALLOS en entrenar:\n - ' + fails.join('\n - ')); process.exit(1); }

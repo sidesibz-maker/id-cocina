@@ -923,3 +923,5 @@ html.cooking .tabs{display:none}html.cooking .view{padding-bottom:calc(32px + en
 .test-trend{margin:8px 0 16px}.test-trend svg{display:block;max-width:100%;height:auto}
 .tt-grid{stroke:var(--line);stroke-width:1}.tt-line{fill:none;stroke:var(--ember);stroke-width:2;stroke-linejoin:round}.tt-dot{fill:var(--card);stroke:var(--ember);stroke-width:2}
 .test-trend figcaption{font-size:13.5px;color:var(--mut);margin-top:4px}
+.craft-challenge{border-color:var(--gold);box-shadow:var(--shadow-s)}.craft-challenge.is-done{box-shadow:none;border-style:dashed}
+.craft-acts{display:flex;flex-wrap:wrap;gap:0 16px;margin-top:4px}.craft-acts .linkbtn{min-height:40px;padding:0}
