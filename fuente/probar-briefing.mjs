@@ -42,6 +42,15 @@ await page.click('.dalg label:has-text("Gluten")'); await wait(1500);
 const alg = await page.evaluate(() => JSON.parse(localStorage.getItem('id-cocina-v1')).dishes.find(d => d.id === 'd1').allergens);
 ok(JSON.stringify(alg && [...alg].sort()) === JSON.stringify(['frutos_cascara', 'gluten', 'moluscos']), 'no guarda los alérgenos confirmados: ' + JSON.stringify(alg));
 await go('#/menus'); ok(await page.locator('[data-act=alg-table]').count() === 0, 'sigue la tabla de alérgenos de sala');
+// Catálogo general: numerado por orden de creación, por temporadas, filtro e impresión
+await go('#/libreta'); await page.click('a[href="#/catalogo"]'); await page.waitForSelector('.catgrid');
+ok(await page.locator('.catcard').count() === 3, 'el catálogo no tiene todos los platos');
+ok((await page.locator('.catnum').allTextContents()).sort().join(',') === '001,002,003', 'los números del catálogo no van seguidos');
+await page.selectOption('#catFilter', 'carta'); await wait(200); ok(await page.locator('.catcard').count() === 1, 'el filtro por estado no funciona');
+await page.click('[data-mode=lista]'); await wait(200); ok(await page.locator('.catseason').count() === 0, 'la lista completa sigue separada por temporadas');
+await page.evaluate(() => { window.print = () => { window.__cat = document.getElementById('printFicha').innerText; }; }); await page.click('[data-act=cat-print]'); await wait(300);
+ok((await page.evaluate(() => window.__cat || '')).includes('Catálogo general'), 'no imprime el catálogo');
+await page.selectOption('#catFilter', 'todos');
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();
 if (fails.length) { console.error('FALLOS en primeros pasos y fichas:\n - ' + fails.join('\n - ')); process.exit(1); }

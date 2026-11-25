@@ -394,6 +394,8 @@ async function printFicha() {
 // De dónde salió el plato.
 function sourceHtml() {
  const s = cur.source;
+ if (s?.kind === 'laboratorio') return '<p class="fine">' + icon('spark') + esc(t('Nació en el ', 'Born in the ')) + '<a href="#/laboratorio">' + esc(t('Laboratorio creativo', 'Creative lab')) + '</a>' + (cur.concept ? esc(': ' + cur.concept.split('. ')[0]) : '') + '</p>';
+ if (s?.kind === 'chispa') return '<p class="fine">' + icon('spark') + esc(t('Nació de una chispa de tu cuaderno', 'Born from a spark in your notebook')) + ' <a href="#/laboratorio">' + esc(t('Ver el cuaderno', 'See the notebook')) + '</a></p>';
  if (!s || !s.title && !s.url) return '';
  const link = (href, text, ext) => '<a href="' + esc(href) + '"' + (ext ? ' target="_blank" rel="noopener noreferrer"' : '') + '>' + esc(text) + '</a>';
  if (s.kind === 'import') return '<p class="fine">' + icon('copy') + esc(t('Receta importada', 'Imported recipe')) + (s.url && /^https?:\/\//.test(s.url) ? ': ' + link(s.url, s.title && s.title !== 'Receta importada' ? s.title : s.url.replace(/^https?:\/\/(www\.)?/, '').slice(0, 40), true) : s.title && s.title !== 'Receta importada' ? ': ' + esc(s.title) : '') + '</p>';

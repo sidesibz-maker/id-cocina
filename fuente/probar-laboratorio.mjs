@@ -34,6 +34,7 @@ await page.locator('.labsp', {hasText: 'hojas de higuera'}).locator('[data-to-di
 ok((await page.evaluate(() => location.hash)).startsWith('#/plato/'), 'convertir no abre el plato');
 const st = await page.evaluate(() => { const v = JSON.parse(localStorage.getItem('id-cocina-v1')); return {dishes: v.dishes.length, sp: Object.values(v.docs).filter(d => d.type === 'chispa')}; });
 ok(st.dishes === 1 && st.sp.length === 2 && st.sp.some(s => s.dish_id), 'la chispa no queda enlazada al plato o se ha perdido');
+ok((await page.textContent('#view')).includes('Nació de una chispa'), 'el plato no recuerda que nació de una chispa');
 await go('#/laboratorio'); ok((await page.textContent('.labsparks')).includes('ya es un plato'), 'la chispa no dice que ya es un plato');
 // Llevar la chispa directamente a la libreta
 await page.click('[data-act=lab-dish]'); await wait(600);

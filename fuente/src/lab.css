@@ -960,3 +960,15 @@ html.cooking .tabs{display:none}html.cooking .view{padding-bottom:calc(32px + en
 .kpath-list .is-read a{color:var(--mut);text-decoration:line-through;text-decoration-thickness:1px}
 .kpath .btn{justify-self:start;white-space:normal;text-align:left;margin-top:4px}
 .kpath.is-done{border-color:var(--gold);box-shadow:none}
+
+/* ---------- Catálogo general ---------- */
+.catstats{margin-bottom:16px}
+.catbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:8px}.catfilter{width:auto!important;min-height:44px!important}
+.catseason{display:flex;align-items:baseline;gap:12px;font-family:var(--serif);font-weight:400;font-size:30px;line-height:1.1;padding-bottom:8px;margin-bottom:16px;border-bottom:var(--rule-bar) solid var(--ink)}
+.catgrid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(200px,1fr))}
+.catcard{position:relative;display:grid;gap:4px;align-content:start;text-decoration:none;color:inherit}
+.catnum{position:absolute;top:8px;left:8px;z-index:1;padding:2px 8px;background:var(--ink);color:var(--paper);font-family:var(--narrow);font-weight:600;font-variant-numeric:tabular-nums;font-size:14px}
+.catmedia{display:grid;place-items:center;aspect-ratio:1;background:var(--soft);border:1px solid var(--line);overflow:hidden}.catmedia img{width:100%;height:100%;object-fit:cover}
+.catcard strong{font-family:var(--serif);font-weight:400;font-size:19px;line-height:1.15;margin-top:4px}.catcard small{color:var(--mut);font-size:13px}
+.catconcept{font-size:13.5px;color:var(--ink2)}
+.catcard:hover strong{text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
