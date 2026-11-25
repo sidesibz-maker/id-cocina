@@ -48,6 +48,14 @@ ok(await page.evaluate(() => document.documentElement.dataset.size) === 'grande'
 await page.reload(); await wait(500); ok(await page.evaluate(() => document.documentElement.dataset.size) === 'grande', 'el tamaño de letra no se recuerda');
 await page.click('.rail [data-act=menu]'); await page.click('[data-size=normal]'); await wait(200);
 ok(!(await page.evaluate(() => document.documentElement.dataset.size)), 'no vuelve al tamaño normal');
+// Rutas de aprendizaje: abrir una ficha la marca como leída y la ruta avanza
+await go('#/biblioteca/construir-un-plato'); await wait(1900);
+const rd = await page.evaluate(() => JSON.parse(localStorage.getItem('id-cocina-v1')).docs['lectura:estado']);
+ok(rd && rd.read['construir-un-plato'], 'abrir una ficha no la marca como leída');
+await go('#/biblioteca'); ok(await page.locator('.kpath').count() >= 7, 'faltan rutas de aprendizaje');
+const crear = page.locator('.kpath', {hasText: 'Crear platos'});
+ok((await crear.textContent()).includes('1 de 6') && (await crear.locator('.btn').textContent()).includes('Contraste y equilibrio'), 'la ruta no avanza: ' + await crear.textContent());
+await go('#/hoy'); ok((await page.textContent('.craft')).includes('Tu ruta: Crear platos'), 'la portada no dice la siguiente ficha de la ruta');
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();
 if (fails.length) { console.error('FALLOS en el laboratorio:\n - ' + fails.join('\n - ')); process.exit(1); }

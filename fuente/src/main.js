@@ -25,6 +25,7 @@ import * as train from './views/train.js';
 import * as lab from './views/lab.js';
 import {startTimers} from './timers.js';
 import {startFinder} from './finder.js';
+import {markRead} from './views/paths.js';
 import {startVoice} from './voice.js';
 import {iaSheet} from './views/ia-sheet.js';
 import {syncSheet, syncLine} from './views/sync-sheet.js';
@@ -91,6 +92,7 @@ function route({keepScroll = false} = {}) {
  current.cleanup = view.mount?.(root, next.params) || null;
  document.title = (view.title?.(next.params) || 'I+D') + ' — I+D';
  markNav(); badges(); notices();
+ if (next.name === 'biblioteca' && next.params[0] && next.params[0] !== 'estante') setTimeout(() => markRead(next.params[0]), 1500);
  scrollTo(0, scroll);
  if (!same) root.focus({preventScroll: true});
 }

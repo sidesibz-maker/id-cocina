@@ -9,6 +9,7 @@ import {timers} from '../timers.js';
 import {dueToday} from './train.js';
 import {challenge, completeChallenge, challengeText} from '../challenge.js';
 import {entries} from '../saber/index.js';
+import {currentPath} from './paths.js';
 import {iaOn} from '../ia.js';
 import {syncOn} from '../sync.js';
 import {prefs, setPref} from '../i18n.js';
@@ -82,6 +83,8 @@ function craft() {
  else cards.push('<a class="craft-card" href="#/trayectoria">' + icon('star') + '<strong>' + esc(t('Ponte un objetivo', 'Set yourself a goal')) + '</strong><span>' + esc(t('Una técnica, un stage, una partida: lo partes en pasos y lo sigues aquí', 'A technique, a stage, a section: break it into steps and follow it here')) + '</span></a>');
  const ch = challenge();
  if (ch) cards.push('<div class="craft-card craft-challenge' + (ch.done ? ' is-done' : '') + '">' + icon('flame') + '<strong>' + esc(t('Reto de la semana: ', 'Challenge of the week: ') + ch.entry.name) + '</strong><span>' + esc(ch.done ? t('Hecho. Tu nivel en ', 'Done. Your level in ') + ch.techName.toLowerCase() + t(' ha subido.', ' went up.') : challengeText(ch)) + '</span>' + (ch.done ? '' : '<span class="craft-acts"><a class="linkbtn" href="#/biblioteca/' + esc(ch.entry.id) + '">' + esc(t('Leer la ficha', 'Read the entry')) + '</a><button type="button" class="linkbtn" data-act="challenge-done">' + icon('check') + esc(t('Hecho', 'Done')) + '</button></span>') + '</div>');
+ const cp = currentPath();
+ if (cp) { const nx = entries().find(e => e.id === cp.next); if (nx) cards.push('<a class="craft-card" href="#/biblioteca/' + esc(nx.id) + '">' + icon('library') + '<strong>' + esc(t('Tu ruta: ', 'Your path: ') + (en() ? cp.p[2] : cp.p[1])) + '</strong><span>' + esc(t('Siguiente ficha: ', 'Next entry: ') + nx.name + ' (' + cp.done + '/' + cp.ids.length + ')') + '</span></a>'); }
  const due = dueToday();
  cards.push('<a class="craft-card" href="#/entrenar">' + icon('brain') + '<strong>' + esc(due ? (due === 1 ? t('1 tarjeta para repasar', '1 card to review') : due + t(' tarjetas para repasar', ' cards to review')) : t('Entrenar cinco minutos', 'Train for five minutes')) + '</strong><span>' + esc(t('Proporciones, fallos y recetas base hasta que te los sepas de memoria', 'Ratios, faults and base recipes until you know them by heart')) + '</span></a>');
  cards.push('<a class="craft-card" href="#/herramientas' + (running.length ? '/temporizadores' : '') + '">' + icon(running.length ? 'clock' : 'bolt') + '<strong>' + esc(running.length ? (running.length === 1 ? t('1 temporizador en marcha', '1 timer running') : running.length + t(' temporizadores en marcha', ' timers running')) : t('Herramientas', 'Tools')) + '</strong><span>' + esc(t('Escalar recetas, salmueras, espesantes, panadero y temporizadores', 'Scale recipes, brines, thickeners, baking and timers')) + '</span></a>');

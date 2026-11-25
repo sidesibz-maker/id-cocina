@@ -950,3 +950,13 @@ html.cooking .tabs{display:none}html.cooking .view{padding-bottom:calc(32px + en
 .daily-s{color:var(--ink2);font-size:16.5px;max-width:70ch}.daily-tip{font-size:15px;color:var(--ink2);max-width:70ch}.daily-tip em{font-style:normal;font-weight:700;color:var(--ink)}
 .daily .more{justify-self:start}
 .empty h2{font-family:var(--serif);font-weight:400;font-size:25px;line-height:1.15;color:var(--ink)}
+
+/* ---------- Rutas de aprendizaje ---------- */
+.kpaths{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+.kpath{display:grid;gap:8px;align-content:start;padding:16px;border:1px solid var(--ink);background:var(--card);box-shadow:var(--shadow-s)}
+.kpath h3{font-family:var(--serif);font-weight:400;font-size:24px;line-height:1.1}.kpath>p{color:var(--ink2);font-size:15px}
+.kpath .cook-bar{margin:4px 0 0}.kpath-n{font-family:var(--narrow);font-weight:600;color:var(--mut)!important;font-size:13.5px!important}
+.kpath-list{list-style:decimal;padding-left:24px;display:grid;gap:2px;font-size:15px}.kpath-list a{color:var(--ink);text-decoration:none}.kpath-list a:hover{text-decoration:underline}
+.kpath-list .is-read a{color:var(--mut);text-decoration:line-through;text-decoration-thickness:1px}
+.kpath .btn{justify-self:start;white-space:normal;text-align:left;margin-top:4px}
+.kpath.is-done{border-color:var(--gold);box-shadow:none}

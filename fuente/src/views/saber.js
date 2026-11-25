@@ -9,6 +9,7 @@ import {copy, parseReply} from '../ai.js';
 import {emptyState} from './shared.js';
 import {go} from '../nav.js';
 import {technique} from '../flavor-core.js';
+import {pathsHtml} from './paths.js';
 
 let query = '', category = '', fixes = false, activeTab = null, tabFor = '';
 const SEEN = 'id-cocina-biblioteca-vistas';
@@ -91,6 +92,7 @@ function homeHtml() {
   '<p class="fine kresult-status" id="saberStatus" role="status">' + esc(result.status) + '</p><div id="saberRes">' + result.html + '</div>' +
   '<div class="khome"' + (filtering ? ' hidden' : '') + '>' +
   (saved.length ? '<section class="sec"><h2 class="day">' + esc(t('Favoritas', 'Favourites')) + '</h2><ul class="krows">' + saved.map(e => row(e)).join('') + '</ul></section>' : '') +
+  pathsHtml() +
   '<section class="sec"><h2 class="day">' + esc(t('Consultas de cocina', 'Kitchen reference')) + '</h2><div class="kguides">' + GUIDES.map(([es, english, hint, ids, tab]) => '<section class="kguide"><h3>' + esc(t(es, english)) + '</h3><p>' + esc(hint) + '</p><div class="chips">' + ids.map(entryById).filter(Boolean).map(e => '<a class="chip" href="' + href(e.id, tab) + '">' + esc(e.name) + '</a>').join('') + '</div></section>').join('') + '</div></section>' +
   (last.length ? '<section class="sec"><h2 class="day">' + esc(t('Lo último que has consultado', 'Recently opened')) + '</h2><ul class="krows">' + last.map(e => row(e)).join('') + '</ul></section>' : '') +
   '<section class="sec"><h2 class="day">' + esc(t('Los estantes', 'The shelves')) + '</h2><div class="kshelves">' + shelves.map(([id, n]) => '<a class="kshelf" href="#/biblioteca/estante/' + id + '">' + icon((SHELF[id] || SHELF.conceptos)[0]) + '<strong>' + esc(shelfName(id)) + '</strong><span>' + esc((SHELF[id] || SHELF.conceptos)[1]) + '</span><small>' + esc(n === 1 ? t('1 entrada', '1 entry') : n + t(' entradas', ' entries')) + '</small></a>').join('') + '</div></section>' +
