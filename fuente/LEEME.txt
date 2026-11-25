@@ -108,3 +108,22 @@ TENDENCIAS (RADAR)
 SI UN PRODUCTO NO ESTÁ EN EL CATÁLOGO
 Escríbelo tal cual al añadirlo al plato: se guarda igual. Si se parece a algo conocido, tócalo y dile a qué se parece
 para que cuente en el cálculo de sabores.
+
+LO NUEVO PARA TU OFICIO (NOVIEMBRE 2026)
+ - Buscar en todo: Ctrl+K (o el botón «Buscar» del menú, o la lupa en el móvil). Platos, subrecetas, Biblioteca, diario,
+   productos y herramientas a la vez.
+ - Herramientas: escalar una receta, temporizadores con nombre (siguen contando aunque cambies de pantalla), rendimiento y
+   mermas (guarda lo que rinde cada género), cuánto pedir, salmueras, espesantes y gelificantes, porcentaje de panadero,
+   temperaturas y conversiones, producción y pedido de un menú, etiquetas de conservación y briefing del servicio.
+ - Modo cocina: en cada plato, subreceta o receta de la Biblioteca, «Cocinar paso a paso». Letra grande, un paso cada vez,
+   cantidades para las raciones que vas a hacer, y los tiempos del paso son botones de temporizador.
+ - Diario de cocina: al acabar el servicio, qué salió bien, qué falló y qué has aprendido. Con ChatGPT, repaso de la semana.
+ - Mi trayectoria: perfil, experiencia, formación, técnicas por nivel, platos firma, objetivos con pasos y logros.
+   «Ver mi dossier» lo imprime o lo guarda en PDF.
+ - Entrenar: tarjetas de repaso sacadas de la Biblioteca. Lo que fallas vuelve mañana; lo que sabes, más tarde.
+ - Reto de la semana (en Hoy): una técnica con su ficha; al cumplirlo sube tu nivel.
+ - Libreta → «Mi recetario en PDF»: todas tus fichas con portada e índice.
+ - Pruebas de cata: cómo va la nota del plato y, arriba, lo que te apuntaste para la próxima vez.
+ - Biblioteca: estantes nuevos de técnicas de cocción, pastelería y masas, y producto (arroces, marisco, pescado y carne).
+ - Pendiente: el diario, la trayectoria y lo demás nuevo todavía no pasan al móvil por la sincronización (falta un cambio
+   en el servidor que tienes que autorizar). Están en este aparato y en la copia de seguridad.

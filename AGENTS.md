@@ -12,7 +12,17 @@ App personal de I+D de un jefe de cocina (restaurante mediterráneo de brasa en 
     IndexedDB `id-cocina` con imágenes y versiones de platos), copia de seguridad. `src/sync.js`: sincronización PC–móvil.
     `src/ia.js`: ChatGPT con la clave del propio dueño (Responses API). `src/share.js` + `ficha.html`: fichas de solo
     lectura para el equipo. `src/views/*`: pantallas. `src/saber/`: la «Biblioteca» (cerebro de cocina; ruta `#/biblioteca`, pantalla `views/saber.js`): `index.js`, contenido
-    en `a.json`, `b.json`, `c.json` con el formato de `saber/FORMATO.md`. `src/lab.css`: diseño (Hallmark, tema Solstice).
+    en `a.json`, `b.json`, `c.json`, `preparaciones.json`, `tecnicas.json`, `dulce.json` y `producto.json` con el formato de
+    `saber/FORMATO.md`. `src/lab.css`: diseño (Hallmark, tema Solstice).
+  - Oficio (nov 2026): `views/tools.js` y `views/tools-more.js` (Herramientas: escalar, temporizadores, rendimiento, salmueras,
+    espesantes, panadero, temperaturas, producción y pedido, etiquetas, briefing), `timers.js`, `views/cook.js` (modo cocina,
+    `#/cocinar/plato|sub|biblioteca/<id>`), `views/journal.js` (Diario, `#/diario`), `views/career.js` (Mi trayectoria y
+    dossier, `#/trayectoria`), `views/train.js` (Entrenar, tarjetas con repetición espaciada), `challenge.js` (reto de la
+    semana), `finder.js` (buscador Ctrl+K).
+  - Documentos: `state.docs` en `store.js` (`saveDoc`, `liveDocs`, `trashDoc`), con id `tipo:…` (diario, carrera:perfil,
+    puesto, formacion, objetivo, logro, rendimiento, briefing, repaso:estado). Van en la copia y se sincronizan como tipo
+    `doc`. **Pendiente**: el servidor aún no acepta `doc`; la migración probada está en `fuente/migracion-doc.sql` y la tiene
+    que autorizar el dueño. Mientras, `sync.js` los deja en cola (marca `pushedDoc`) sin perder nada.
   - `radar.js`: avisos del radar que trae la app. `LEEME.txt`: instrucciones para el dueño.
 - La versión del PC es un solo archivo, `ID Cocina.html`, que se abre con doble clic (desde `file://`), con `radar.js` y
   `LEEME.txt` al lado.
@@ -24,13 +34,15 @@ cd fuente
 npm install
 npm run build        # genera salida/web (móvil, GitHub Pages) y salida/ID Cocina (PC)
 npx playwright install chromium   # solo la primera vez, si no hay navegador
-npm test             # 5 baterías en navegador: tienen que pasar TODAS
+npm test             # 11 baterías en navegador: tienen que pasar TODAS
 ```
 
 Publicar: con las pruebas en verde, copia `fuente/salida/web/*` a la raíz del repositorio, haz commit (`[codex] …`) y
 `git push` a `main`; GitHub Pages lo publica en uno o dos minutos. Para el PC del dueño, copia
 `fuente/salida/ID Cocina/ID Cocina.html` y `radar.js` encima de los de la carpeta donde tiene la app (sus datos están en el
-navegador, no en esos archivos, así que no se pierden).
+navegador, no en esos archivos, así que no se pierden). En este PC el programa de Windows está en
+`Documentos\ID Cocina\programa`: copia también esos dos archivos a `programa\ID Cocina-win32-x64\resources\app\app\` y a
+`Documentos\ID Cocina\app\` (el programa sirve la app en http://127.0.0.1:4781; no cambiar el puerto).
 
 ## Normas que no se saltan
 
