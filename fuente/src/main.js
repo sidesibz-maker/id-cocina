@@ -17,6 +17,8 @@ import * as menus from './views/menus.js';
 import * as sub from './views/sub.js';
 import * as season from './views/season.js';
 import * as saber from './views/saber.js';
+import * as tools from './views/tools.js';
+import {startTimers} from './timers.js';
 import {startVoice} from './voice.js';
 import {iaSheet} from './views/ia-sheet.js';
 import {syncSheet, syncLine} from './views/sync-sheet.js';
@@ -25,7 +27,7 @@ import {iaOn, iaConfig, saveIa, askIa} from './ia.js';
 import {radarPrompt, trendsFromReply} from './ai.js';
 import {addTrends} from './store.js';
 
-const VIEWS = {hoy: home, radar, crear: create, plato: dish, libreta: notebook, sabores: flavors, cocina: kitchenView, preguntar: ask, menus, subreceta: sub, temporada: season, biblioteca: saber, saber};
+const VIEWS = {hoy: home, radar, crear: create, plato: dish, libreta: notebook, sabores: flavors, cocina: kitchenView, preguntar: ask, menus, subreceta: sub, temporada: season, biblioteca: saber, saber, herramientas: tools};
 const NAV = [['hoy', 'flame', () => t('Hoy', 'Today')], ['radar', 'radar', () => t('Radar', 'Radar')], ['crear', 'plus', () => t('Crear', 'Create')], ['libreta', 'book', () => t('Libreta', 'Notebook')], ['biblioteca', 'library', () => t('Biblioteca', 'Library')]];
 const app = () => $('#app');
 let current = {name: '', params: [], cleanup: null};
@@ -39,7 +41,7 @@ function shell() {
  app().innerHTML = '<div class="lab">' +
   '<a class="skip-link" href="#view">' + esc(t('Saltar al contenido', 'Skip to content')) + '</a>' +
   '<aside class="rail"><a class="wordmark" href="#/hoy" aria-label="I+D">I<b>+</b>D</a><div class="rail-rest">' + esc(t('Cuaderno de cocina', 'Kitchen notebook')) + '</div>' +
-   '<nav class="rail-nav" aria-label="' + esc(t('Secciones', 'Sections')) + '">' + NAV.map(item).join('') + '<a class="nav-item" href="#/sabores" data-nav="sabores">' + icon('wheel') + '<span>' + esc(t('Sabores', 'Flavours')) + '</span></a><a class="nav-item" href="#/temporada" data-nav="temporada">' + icon('leaf') + '<span>' + esc(t('Temporada', 'Season')) + '</span></a><a class="nav-item" href="#/preguntar" data-nav="preguntar">' + icon('chat') + '<span>' + esc(t('Preguntar', 'Ask')) + '</span></a><a class="nav-item" href="#/cocina" data-nav="cocina">' + icon('pan') + '<span>' + esc(t('Mi cocina', 'My kitchen')) + '</span></a></nav>' +
+   '<nav class="rail-nav" aria-label="' + esc(t('Secciones', 'Sections')) + '">' + NAV.map(item).join('') + '<a class="nav-item" href="#/sabores" data-nav="sabores">' + icon('wheel') + '<span>' + esc(t('Sabores', 'Flavours')) + '</span></a><a class="nav-item" href="#/temporada" data-nav="temporada">' + icon('leaf') + '<span>' + esc(t('Temporada', 'Season')) + '</span></a><a class="nav-item" href="#/herramientas" data-nav="herramientas">' + icon('bolt') + '<span>' + esc(t('Herramientas', 'Tools')) + '</span></a><a class="nav-item" href="#/preguntar" data-nav="preguntar">' + icon('chat') + '<span>' + esc(t('Preguntar', 'Ask')) + '</span></a><a class="nav-item" href="#/cocina" data-nav="cocina">' + icon('pan') + '<span>' + esc(t('Mi cocina', 'My kitchen')) + '</span></a></nav>' +
    '<div class="rail-foot"><button type="button" class="rail-link" data-act="menu">' + icon('gear') + '<span>' + esc(t('Ajustes', 'Settings')) + '</span></button></div></aside>' +
   '<header class="top"><a class="wordmark" href="#/hoy" aria-label="I+D">I<b>+</b>D</a><span class="top-rest">' + esc(t('Cuaderno de cocina', 'Kitchen notebook')) + '</span><a class="top-ask" href="#/preguntar" data-nav="preguntar">' + icon('chat') + '<span>' + esc(t('Preguntar', 'Ask')) + '</span></a><button type="button" class="iconbtn" data-act="menu" aria-label="' + esc(t('Más y ajustes', 'More and settings')) + '">' + icon('menu') + '</button></header>' +
   '<div id="notices"></div><main id="view" tabindex="-1"></main><nav class="tabs" aria-label="' + esc(t('Secciones', 'Sections')) + '">' + NAV.map(item).join('') + '</nav></div>';
@@ -114,6 +116,7 @@ function menu({nav = false} = {}) {
  const s = sheet({title: nav ? t('Más', 'More') : t('Ajustes', 'Settings'), body:
   (nav ? '<div class="set-group"><p class="set-label">' + esc(t('Ir a', 'Go to')) + '</p>' +
    rowItem('a', 'href="#/preguntar" data-go', 'chat', t('Preguntar', 'Ask'), esc(on ? t('ChatGPT contesta aquí mismo', 'ChatGPT answers right here') : t('Pregunta lo que quieras de cocina', 'Ask anything about cooking'))) +
+   rowItem('a', 'href="#/herramientas" data-go', 'bolt', t('Herramientas', 'Tools'), esc(t('Escalar recetas, temporizadores, mermas, salmueras', 'Scale recipes, timers, yields, brines'))) +
    rowItem('a', 'href="#/sabores" data-go', 'wheel', t('Sabores', 'Flavours'), esc(t('Qué combina con qué y por qué', 'What goes with what and why'))) +
    rowItem('a', 'href="#/temporada" data-go', 'leaf', t('Temporada', 'Season'), esc(t('Qué entra, qué está en su punto y qué se va', 'What comes in, what is at its best and what is leaving'))) +
    rowItem('a', 'href="#/cocina" data-go', 'pan', t('Mi cocina', 'My kitchen'), esc(t('Tus básicos, tu equipo y lo que no quieres', 'Your staples, equipment and what you avoid'))) + '</div>' : '') +
@@ -177,6 +180,7 @@ async function start() {
  const shared = new URLSearchParams(location.search);
  if (['title', 'text', 'url'].some(k => shared.get(k))) { const keys = shared.get('text') ? ['text', 'url'] : ['title', 'url']; presetRecipe([...new Set(keys.map(k => (shared.get(k) || '').trim()).filter(Boolean))].join('\n')); history.replaceState(null, '', location.pathname + '#/crear/importar'); }
  applyPrefs();
+ startTimers();
  shell();
  route();
  onChange(refresh);

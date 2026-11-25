@@ -735,3 +735,41 @@ input:disabled,select:disabled,textarea:disabled{opacity:.55;cursor:not-allowed;
 .kbatch-custom input{width:112px}
 #kBatchError:not(:empty){color:var(--bad-ink)}
 #kBatchError:empty,#kPrepStatus:empty{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);margin:0}
+
+/* ---------- Herramientas: calculadoras de oficio y temporizadores ---------- */
+@media (min-width:960px){.rail-nav{overflow-y:auto;min-height:0;scrollbar-width:none}.rail{gap:0}}
+.ttiles{grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+.tgrid{display:grid;gap:24px;align-items:start}
+@media (min-width:960px){.tgrid{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}.tgrid>section:last-child{position:sticky;top:24px}}
+.tfield{margin-top:16px}.tfield>label{display:block;font-size:14px;font-weight:600;color:var(--ink2);margin-bottom:8px}.tfield>small{display:block;margin-top:4px;font-size:13px;color:var(--mut)}
+.tinput{display:flex;align-items:stretch}.tinput input{flex:1;min-width:0}.tinput span{display:flex;align-items:center;padding:0 12px;border:1px solid var(--ink2);border-left:0;background:var(--soft);font-family:var(--narrow);font-weight:600;font-size:14px;color:var(--ink2);white-space:nowrap}
+.tpair{display:grid;gap:0 16px;grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+.tool .seg{margin-top:8px}
+.tresult{display:grid;gap:0;margin:0}.tresult>div{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:12px 0;border-bottom:1px solid var(--line)}
+.tresult dt{color:var(--ink2)}.tresult dd{margin:0;font-weight:700;font-variant-numeric:tabular-nums;text-align:right}
+.tresult .is-main dd{font-family:var(--serif);font-weight:400;font-size:32px;line-height:1;color:var(--ember-ink)}
+.tresult-empty{color:var(--mut);padding:16px 0}
+.tfactor{font-family:var(--narrow);font-weight:600;color:var(--mut);margin-bottom:8px}
+.tlist{display:grid;gap:0}.tlist li{padding:8px 0;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+.tnote{margin-top:16px;padding:12px 16px;background:var(--soft);border-left:var(--rule-bar) solid var(--gold);color:var(--ink2);font-size:15px}
+.ktable td.q small{display:block;font-weight:400;font-size:12.5px;color:var(--mut)}.ktable td.tq-wrap{white-space:normal;max-width:22ch}
+.tyields td small{display:block;font-size:12.5px;color:var(--mut)}.tyields .linkbtn{min-height:32px;padding:0;text-align:left}
+.tconv{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:8px;align-items:center;margin-top:12px}.tconv>i{font-style:normal;color:var(--mut);font-weight:700}
+.tmform{display:grid;gap:0 16px;grid-template-columns:minmax(0,2fr) minmax(0,1fr) auto;align-items:end}.tmform .btn{margin-bottom:0;min-height:46px}
+@media (max-width:640px){.tmform{grid-template-columns:1fr}.tmform .btn{margin-top:16px}}
+.tool-temporizadores .chips{margin-top:16px}
+.tmlist{display:grid;gap:12px}
+.tm{padding:16px;border:1px solid var(--ink);background:var(--card);box-shadow:var(--shadow-s)}
+.tm-main{display:flex;justify-content:space-between;align-items:baseline;gap:16px}.tm-main strong{font-size:17px;overflow-wrap:anywhere}
+.tm-clock{font-family:var(--serif);font-size:40px;line-height:1;font-variant-numeric:tabular-nums;color:var(--ink)}
+.tm-bar{height:6px;margin:12px 0;background:var(--track)}.tm-bar i{display:block;height:100%;background:var(--gold)}
+.tm.is-done{border-color:var(--ember);background:var(--ember-soft)}.tm.is-done .tm-clock{font-size:24px;color:var(--ember-ink)}.tm.is-done .tm-bar i{background:var(--ember)}
+.tm.is-paused .tm-clock{color:var(--mut)}
+.tm-acts{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.tm-acts .iconbtn{margin-left:auto}
+.timer-chip{position:fixed;z-index:30;right:16px;bottom:calc(80px + env(safe-area-inset-bottom));display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;background:var(--ink);color:var(--paper);text-decoration:none;font-weight:600;font-size:14.5px;box-shadow:4px 4px 0 var(--paper-3)}
+.timer-chip b{font-variant-numeric:tabular-nums;font-weight:700}.timer-chip small{opacity:.75}.timer-chip .ic{width:18px;height:18px;color:var(--gold-2)}
+.timer-chip.is-done{background:var(--ember);color:var(--on-accent)}.timer-chip.is-done .ic{color:inherit}
+@media (min-width:960px){.timer-chip{bottom:24px;right:24px}}
+@media (prefers-reduced-motion:no-preference){.timer-chip.is-done{animation:tpulse 1.2s ease-in-out infinite}}
+@keyframes tpulse{50%{transform:translateY(-3px)}}
+@media print{.timer-chip{display:none!important}}

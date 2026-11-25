@@ -35,13 +35,22 @@ async function round() {
  const cfg = syncConfig(), secret = cfg.code;
  // 1. Subir
  const mark = cfg.pushed || '';
- const mine = syncItems().filter(x => x.updated_at > mark).sort((a, b) => a.updated_at.localeCompare(b.updated_at));
+ const all = syncItems();
+ const mine = all.filter(x => x.kind !== 'doc' && x.updated_at > mark).sort((a, b) => a.updated_at.localeCompare(b.updated_at));
  let top = mark;
  for (let i = 0; i < mine.length; i += 120) {
   const part = mine.slice(i, i + 120);
   await rpc('id_push', {secret, items: part});
   top = part[part.length - 1].updated_at > top ? part[part.length - 1].updated_at : top;
   saveConfig({pushed: top});
+ }
+ // 1b. El diario y la trayectoria (tipo «doc») llevan su propia marca: solo avanza si el servidor los acepta todos,
+ // así no se queda nada sin subir si el servidor todavía no conoce ese tipo.
+ const docMark = cfg.pushedDoc || '', docs = all.filter(x => x.kind === 'doc' && x.updated_at > docMark).sort((a, b) => a.updated_at.localeCompare(b.updated_at));
+ for (let i = 0; i < docs.length; i += 120) {
+  const part = docs.slice(i, i + 120), r = await rpc('id_push', {secret, items: part});
+  if (Number(r?.accepted) !== part.length && Number(r?.skipped) > 0 && Number(r?.accepted) === 0) break;
+  saveConfig({pushedDoc: part[part.length - 1].updated_at});
  }
  // 2. Bajar
  let seq = Number(syncConfig().seq) || 0, got = 0;

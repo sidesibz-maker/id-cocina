@@ -9,7 +9,7 @@ import {uid} from './ui.js';
 const KEY = 'id-cocina-v1';
 export const state = {
  canSee: true, canEdit: true, canPrices: false, setupPending: false,
- dishes: [], menus: [], subs: [], saber: {}, trends: [], settings: {}, marks: {}, pasted: [], lastBackup: '', seen: '',
+ dishes: [], menus: [], subs: [], saber: {}, docs: {}, trends: [], settings: {}, marks: {}, pasted: [], lastBackup: '', seen: '',
  kb: null, kitchen: null, loaded: false, loadError: '', restaurant: {name: ''}
 };
 const listeners = new Set();
@@ -21,7 +21,7 @@ const arr = v => (Array.isArray(v) ? v : []);
 function read() { try { const v = JSON.parse(localStorage.getItem(KEY) || 'null'); return v && typeof v === 'object' ? v : {}; } catch { return {}; } }
 export function persist() {
  try {
-  localStorage.setItem(KEY, JSON.stringify({dishes: state.dishes, menus: state.menus, subs: state.subs, saber: state.saber, settings: state.settings, marks: state.marks, pasted: state.pasted, lastBackup: state.lastBackup, seen: state.seen}));
+  localStorage.setItem(KEY, JSON.stringify({dishes: state.dishes, menus: state.menus, subs: state.subs, saber: state.saber, docs: state.docs, settings: state.settings, marks: state.marks, pasted: state.pasted, lastBackup: state.lastBackup, seen: state.seen}));
   return true;
  } catch { return false; }
 }
@@ -49,6 +49,7 @@ export async function loadAll() {
  state.menus = arr(saved.menus).filter(m => m && m.id).map(cleanMenu);
  state.subs = arr(saved.subs).filter(x => x && x.id).map(cleanSub);
  state.saber = saved.saber && typeof saved.saber === 'object' ? saved.saber : {};
+ state.docs = saved.docs && typeof saved.docs === 'object' && !Array.isArray(saved.docs) ? saved.docs : {};
  state.settings = saved.settings && typeof saved.settings === 'object' ? saved.settings : {};
  state.marks = saved.marks && typeof saved.marks === 'object' ? saved.marks : {};
  state.pasted = arr(saved.pasted); state.lastBackup = String(saved.lastBackup || ''); state.seen = String(saved.seen || '');
@@ -130,6 +131,18 @@ export async function trashSaberEntry(id, back = false) {
  save('saber');
 }
 
+// ---------- Documentos: el diario de servicio, la trayectoria y lo demás que no es un plato ----------
+// Cada uno lleva su tipo delante del id («diario:…», «carrera:…»). Nunca se borran: van a la papelera con deleted_at.
+export const docById = id => state.docs[id] || null;
+export const liveDocs = type => Object.values(state.docs).filter(x => x && x.id && x.type === type && !x.deleted_at);
+export async function saveDoc(type, id, patch) {
+ const at = new Date().toISOString(), key = id || type + ':' + uid(), cur = state.docs[key] || {id: key, type, created_at: at, version: 0};
+ state.docs[key] = {...cur, ...patch, id: key, type, version: (Number(cur.version) || 0) + 1, updated_at: at};
+ save('docs');
+ return state.docs[key];
+}
+export const trashDoc = (id, back = false) => { const cur = state.docs[id]; return cur ? saveDoc(cur.type, id, {deleted_at: back ? null : new Date().toISOString()}) : null; };
+
 // ---------- Cartas y menús: platos de la libreta en orden, para ver si el conjunto está equilibrado ----------
 export function cleanMenu(m) { return {...m, name: String(m.name || ''), kind: m.kind === 'carta' ? 'carta' : 'degustacion', items: arr(m.items).filter(x => x && x.dish_id), notes: String(m.notes || ''), version: Number(m.version) || 1}; }
 export const menuById = id => state.menus.find(m => m.id === id) || null;
@@ -206,6 +219,7 @@ export function applyRemote(items) {
   else if (it.kind === 'menu') { const at = state.menus.findIndex(x => x.id === it.id); if (at < 0) { state.menus.push(cleanMenu(d)); changed++; } else if (newer(d.updated_at, state.menus[at].updated_at)) { state.menus[at] = cleanMenu(d); changed++; } }
   else if (it.kind === 'sub') { const at = state.subs.findIndex(x => x.id === it.id); if (at < 0) { state.subs.push(cleanSub(d)); changed++; } else if (newer(d.updated_at, state.subs[at].updated_at)) { state.subs[at] = cleanSub(d); changed++; } }
   else if (it.kind === 'saber') { const next = mergeSaber(state.saber[it.id], d); if (JSON.stringify(next) !== JSON.stringify(state.saber[it.id] || null)) { state.saber[it.id] = next; changed++; } }
+  else if (it.kind === 'doc') { if (!state.docs[it.id] || newer(d.updated_at, state.docs[it.id].updated_at)) { state.docs[it.id] = d; changed++; } }
   else if (it.kind === 'mark') { if (newer(d.at, state.marks[it.id]?.at)) { state.marks[it.id] = d; changed++; } }
   else if (it.kind === 'trend') { if (!state.pasted.some(x => trendId(x) === it.id)) { state.pasted.push(d); changed++; } }
   else if (it.kind === 'settings') { if (newer(d._at, state.settings?._at)) { state.settings = d; changed++; } }
@@ -227,6 +241,7 @@ export function syncItems() {
   ...state.menus.map(m => ({kind: 'menu', id: m.id, data: m, updated_at: at(m.updated_at)})),
   ...state.subs.map(x => ({kind: 'sub', id: x.id, data: x, updated_at: at(x.updated_at)})),
   ...Object.values(state.saber).filter(x => x && x.id).map(x => ({kind: 'saber', id: x.id, data: x, updated_at: at(x.updated_at)})),
+  ...Object.values(state.docs).filter(x => x && x.id).map(x => ({kind: 'doc', id: x.id, data: x, updated_at: at(x.updated_at)})),
   ...Object.entries(state.marks).map(([id, m]) => ({kind: 'mark', id, data: m, updated_at: at(m?.at)})),
   ...state.pasted.map(t => ({kind: 'trend', id: trendId(t), data: t, updated_at: at(t.added_at || t.day)})),
   ...(Object.keys(state.settings || {}).length ? [{kind: 'settings', id: 'perfil', data: state.settings, updated_at: at(state.settings._at)}] : [])
@@ -267,7 +282,7 @@ export async function exportBackup() {
  const images = {};
  for (const d of state.dishes) for (const i of d.images) { if (!i?.path || images[i.path]) continue; try { const blob = await tx('readonly', s => s.get(i.path)); if (blob) images[i.path] = await toData(blob); } catch {} }
  state.lastBackup = new Date().toISOString(); persist();
- return new Blob([JSON.stringify({app: 'id-cocina', version: 1, exported_at: state.lastBackup, dishes: state.dishes, menus: state.menus, subs: state.subs, saber: state.saber, settings: state.settings, marks: state.marks, pasted: state.pasted, images})], {type: 'application/json'});
+ return new Blob([JSON.stringify({app: 'id-cocina', version: 1, exported_at: state.lastBackup, dishes: state.dishes, menus: state.menus, subs: state.subs, saber: state.saber, docs: state.docs, settings: state.settings, marks: state.marks, pasted: state.pasted, images})], {type: 'application/json'});
 }
 // Recuperar una copia suma: los platos que no están se añaden y, si un plato está en los dos sitios, se queda el más reciente.
 export async function importBackup(text) {
@@ -284,6 +299,10 @@ export async function importBackup(text) {
  for (const [id, raw] of Object.entries(data.saber && typeof data.saber === 'object' ? data.saber : {})) {
   if (!raw || typeof raw !== 'object') continue;
   state.saber[id] = mergeSaber(state.saber[id], raw);
+ }
+ for (const [id, raw] of Object.entries(data.docs && typeof data.docs === 'object' ? data.docs : {})) {
+  if (!raw || typeof raw !== 'object' || !raw.id) continue;
+  if (!state.docs[id] || String(raw.updated_at || '') > String(state.docs[id].updated_at || '')) state.docs[id] = raw;
  }
  for (const raw of arr(data.subs)) {
   if (!raw || !raw.id) continue;
