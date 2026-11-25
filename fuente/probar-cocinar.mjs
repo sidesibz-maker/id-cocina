@@ -41,6 +41,14 @@ await go('#/biblioteca/bechamel'); ok(await page.locator('a[href="#/cocinar/bibl
 await go('#/cocinar/biblioteca/bechamel'); ok(await page.locator('.cook-list li').count() >= 3, 'la bechamel no trae ingredientes');
 await page.fill('#cookN', '5'); await wait(150); ok((await page.textContent('#cookIngs')).includes('5 l'), 'no escala la receta de la Biblioteca: ' + await page.textContent('#cookIngs'));
 await go('#/hoy'); ok(!(await page.evaluate(() => document.documentElement.classList.contains('cooking'))), 'al salir sigue en modo cocina');
+// Boceto de emplatado: dibujar y guardar como imagen del plato
+await go('#/plato/d1'); await page.click('[data-act=sketch]'); await page.waitForSelector('#skCanvas');
+const box = await page.locator('#skCanvas').boundingBox();
+await page.mouse.move(box.x + box.width * .3, box.y + box.height * .5); await page.mouse.down(); await page.mouse.move(box.x + box.width * .7, box.y + box.height * .5, {steps: 8}); await page.mouse.up();
+await page.click('[data-ink="--ember"]'); await page.mouse.click(box.x + box.width * .5, box.y + box.height * .3);
+await page.click('[data-sk=undo]'); await page.click('[data-sk=save]'); await wait(1500);
+const imgs = await page.evaluate(() => JSON.parse(localStorage.getItem('id-cocina-v1')).dishes.find(d => d.id === 'd1').images);
+ok(imgs.length === 1 && imgs[0].style === 'boceto', 'el boceto no se guarda en el plato: ' + JSON.stringify(imgs));
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();
 if (fails.length) { console.error('FALLOS en el modo cocina:\n - ' + fails.join('\n - ')); process.exit(1); }

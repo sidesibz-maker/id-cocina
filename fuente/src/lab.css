@@ -938,3 +938,9 @@ html.cooking .tabs{display:none}html.cooking .view{padding-bottom:calc(32px + en
 .sprate{flex-wrap:wrap}.sprate .seg-btn{cursor:pointer}.sprate .seg-btn:focus-within{outline:3px solid var(--ember);outline-offset:1px}
 .prsup th{padding-top:16px;font-family:var(--sans);font-weight:700;color:var(--ink);font-size:15px}.prsup .linkbtn{min-height:32px;margin-left:8px;font-weight:600}
 .kv-suppliers{margin:16px 0}
+
+/* ---------- Boceto de emplatado ---------- */
+.skbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0 12px}.skbar .btn{min-height:40px}
+.skink i{display:inline-block;width:14px;height:14px;border-radius:50%;border:1px solid var(--line2)}
+.skcanvas{display:block;width:100%;max-width:560px;aspect-ratio:1;margin:0 auto;border:1px solid var(--ink);touch-action:none;cursor:crosshair;background:var(--paper-2)}
+.skbar .seg{flex-wrap:wrap;width:auto}

@@ -183,7 +183,7 @@ function imagesHtml() {
  if (can) {
   html += '<div class="filters" role="group" aria-label="' + esc(t('Estilo de la imagen', 'Image style')) + '">' + IMAGE_STYLES.map(s => '<button type="button" class="pill' + (style === s[0] ? ' active' : '') + '" data-style="' + s[0] + '" aria-pressed="' + (style === s[0]) + '">' + esc(lbl(s)) + '</button>').join('') + '</div>' +
    '<div class="row-actions row-left"><button type="button" class="btn primary" data-act="image">' + icon('copy') + esc(t('Copiar descripción para ChatGPT', 'Copy description for ChatGPT')) + '</button><a class="btn ghost" href="https://chatgpt.com/" data-chat target="_blank" rel="noopener noreferrer">' + esc(t('Preguntar a ChatGPT', 'Ask ChatGPT')) + icon('out') + '</a>' +
-   '<label class="btn ghost" for="imageFile">' + icon('image') + esc(t('Añadir imagen', 'Add image')) + '</label><input id="imageFile" class="sr" type="file" accept="image/*"></div>' +
+   '<label class="btn ghost" for="imageFile">' + icon('image') + esc(t('Añadir imagen', 'Add image')) + '</label><input id="imageFile" class="sr" type="file" accept="image/*"><button type="button" class="btn ghost" data-act="sketch">' + icon('edit') + esc(t('Dibujar el emplatado', 'Sketch the plating')) + '</button></div>' +
    (iaOn() ? '<div class="plate-check"><p class="fine">' + esc(t('¿Ya lo has emplatado? Hazle una foto y ChatGPT la compara con la imagen del plato: qué está bien y qué corregir antes de que salga.', 'Plated it already? Take a photo and ChatGPT compares it with the dish image: what works and what to fix before it goes out.')) + '</p><label class="btn primary" for="plateFile">' + icon('image') + '<span>' + esc(t('Revisar el emplatado con una foto', 'Check the plating with a photo')) + '</span></label><input id="plateFile" class="sr" type="file" accept="image/*" capture="environment"></div>' : '');
  }
  return html;
@@ -730,6 +730,16 @@ export function mount(el, params) {
    const advice = adviceFromReply($('#adviceReply', root).value);
    if (!advice) { toast(t('Pega primero la respuesta.', 'Paste the answer first.'), 'error'); return; }
    cur.advice = advice; touch('advice'); part('adviceSec', adviceHtml()); if (!$('#fichaSec', root)?.contains(document.activeElement)) part('fichaSec', fichaSecHtml()); toast(t('Consejo guardado en el plato.', 'Advice saved in the dish.'));
+  }
+  else if (act === 'sketch') {
+   const {sketchSheet} = await import('../sketch.js');
+   sketchSheet(async blob => {
+    try {
+     if (!cur.id) { dirty.add('name'); await flush(); }
+     const path = await uploadImage(cur.id || 'nuevo', blob);
+     cur.images = [...cur.images, {id: sid(), path, style: 'boceto', at: new Date().toISOString()}].slice(-12); cur.cover_path = path; touch('images', 'cover_path'); redrawImages(); toast(t('Boceto guardado en el plato.', 'Sketch saved to the dish.'));
+    } catch (err) { toast(friendly(err), 'error'); }
+   });
   }
   else if (act === 'image') {
    const done = await copy(imagePrompt(cur, style));
