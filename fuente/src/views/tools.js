@@ -274,11 +274,11 @@ const TOOLS = [
  {id: 'escalar', ic: 'refresh', name: () => t('Escalar una receta', 'Scale a recipe'), sub: () => t('De 4 raciones a 60 sin hacer cuentas', 'From 4 portions to 60 without the maths'), tool: escalar},
  {id: 'produccion', ic: 'book', name: () => t('Producción y pedido', 'Production and order'), sub: () => t('De un menú y unos cubiertos a la lista de pedido', 'From a menu and covers to the order list'), tool: produccion},
  {id: 'briefing', ic: 'user', name: () => t('Briefing del servicio', 'Service briefing'), sub: () => t('Platos del día, lo que no sale, alergias y avisos para el equipo', 'Dishes of the day, what is off, allergies and notes for the team'), tool: briefing},
- {id: 'mise', ic: 'check', name: () => t('Mise en place por partidas', 'Mise en place by section'), sub: () => t('La lista de cada día de cada partida, para marcar', 'A daily list per section, to tick off'), tool: mep},
- {id: 'registros', ic: 'check', name: () => t('Registros APPCC', 'HACCP records'), sub: () => t('Temperaturas de cámaras, aceite de freír y recepción de mercancía', 'Fridge temperatures, frying oil and goods in'), tool: haccp},
- {id: 'etiquetas', ic: 'box', name: () => t('Etiquetas de conservación', 'Storage labels'), sub: () => t('Elaborado, consumir antes de y alérgenos', 'Made, use by and allergens'), tool: etiquetas},
+ {id: 'mise', ic: 'list', name: () => t('Mise en place por partidas', 'Mise en place by section'), sub: () => t('La lista de cada día de cada partida, para marcar', 'A daily list per section, to tick off'), tool: mep},
+ {id: 'registros', ic: 'shield', name: () => t('Registros APPCC', 'HACCP records'), sub: () => t('Temperaturas de cámaras, aceite de freír y recepción de mercancía', 'Fridge temperatures, frying oil and goods in'), tool: haccp},
+ {id: 'etiquetas', ic: 'tag', name: () => t('Etiquetas de conservación', 'Storage labels'), sub: () => t('Elaborado, consumir antes de y alérgenos', 'Made, use by and allergens'), tool: etiquetas},
  {id: 'temporizadores', ic: 'clock', name: () => t('Temporizadores', 'Timers'), sub: () => t('Varios a la vez, con nombre', 'Several at once, with a name'), tool: temporizadores},
- {id: 'rendimiento', ic: 'box', name: () => t('Rendimiento y mermas', 'Yield and losses'), sub: () => t('Cuánto rinde un género y cuánto pedir', 'How much a product yields and how much to order'), tool: rendimiento},
+ {id: 'rendimiento', ic: 'scale', name: () => t('Rendimiento y mermas', 'Yield and losses'), sub: () => t('Cuánto rinde un género y cuánto pedir', 'How much a product yields and how much to order'), tool: rendimiento},
  {id: 'salmuera', ic: 'drop', name: () => t('Salmueras y salazones', 'Brines and dry salting'), sub: () => t('La sal justa para baño, equilibrio o en seco', 'The right salt for a bath, equilibrium or dry'), tool: salmuera},
  {id: 'ligar', ic: 'spark', name: () => t('Espesar y gelificar', 'Thicken and set'), sub: () => t('Roux, almidón, xantana, gelatina y agar', 'Roux, starch, xanthan, gelatine and agar'), tool: ligar},
  {id: 'panadero', ic: 'wheel', name: () => t('Porcentaje de panadero', 'Baker\'s percentage'), sub: () => t('Masas por hidratación y peso de pieza', 'Doughs by hydration and piece weight'), tool: panadero},
@@ -291,7 +291,8 @@ export function render(params) {
  if (!cur) {
   const running = timers().filter(x => !x.done).length;
   return '<header class="page-head"><h1>' + esc(t('Herramientas', 'Tools')) + '</h1><p>' + esc(t('Las cuentas de cada día, hechas: escribe lo que tienes y te digo lo que hay que pesar.', 'The everyday sums, done: type what you have and I tell you what to weigh.')) + '</p></header>' +
-   '<div class="tiles ttiles">' + TOOLS.map(x => '<a class="tile tile-big" href="#/herramientas/' + x.id + '">' + icon(x.ic) + '<strong>' + esc(x.name()) + '</strong><span>' + esc(x.id === 'temporizadores' && running ? (running === 1 ? t('1 en marcha', '1 running') : running + t(' en marcha', ' running')) : x.sub()) + '</span></a>').join('') + '</div>';
+   [[t('Al cocinar', 'While cooking'), ['escalar', 'temporizadores', 'salmuera', 'ligar', 'panadero', 'temperaturas']], [t('Organizar la cocina', 'Running the kitchen'), ['mise', 'produccion', 'rendimiento', 'briefing', 'etiquetas', 'registros']]].map(([title, ids]) =>
+    '<section class="sec"><h2 class="day">' + esc(title) + '</h2><div class="tiles ttiles">' + TOOLS.filter(x => ids.includes(x.id)).map(x => '<a class="tile tile-big" href="#/herramientas/' + x.id + '">' + icon(x.ic) + '<strong>' + esc(x.name()) + '</strong><span>' + esc(x.id === 'temporizadores' && running ? (running === 1 ? t('1 en marcha', '1 running') : running + t(' en marcha', ' running')) : x.sub()) + '</span></a>').join('') + '</div></section>').join('');
  }
  return '<a class="back" href="#/herramientas">' + icon('left') + esc(t('Herramientas', 'Tools')) + '</a><header class="page-head"><h1>' + esc(cur.name()) + '</h1><p>' + esc(cur.sub()) + '.</p></header><div class="tool tool-' + cur.id + '">' + cur.tool.html() + '</div>';
 }

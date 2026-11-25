@@ -55,7 +55,11 @@ const PATHS = {
  library: '<path d="M4 4h4v16H4z"/><path d="M10 4h4v16h-4z"/><path d="m15.5 5.3 3.6-1 3.2 14.5-3.6 1z"/>',
  chat: '<path d="M4 5h16v11H10l-5 4v-4H4z"/><path d="M8 9.5h8M8 12.5h5"/>',
  send: '<path d="M4 12l16-8-6 16-2.5-6.5z"/><path d="M11.5 13.5L20 4"/>',
- bolt: '<path d="M13 3L5 13.500h6L10 21l8-10.500h-6z"/>'
+ bolt: '<path d="M13 3L5 13.500h6L10 21l8-10.500h-6z"/>',
+ tag: '<path d="M3.500 12.500V4h8.500l8.500 8.500-8.500 8.500z"/><circle cx="8" cy="8.500" r="1.400"/>',
+ scale: '<path d="M12 4v16M7 20h10M5 8h14"/><path d="M5 8l-2.500 6a2.500 2.500 0 0 0 5 0zM19 8l-2.500 6a2.500 2.500 0 0 0 5 0z"/>',
+ list: '<path d="M9 6h11M9 12h11M9 18h11"/><path d="M4 6l1 1 2-2M4 12l1 1 2-2M4 18l1 1 2-2"/>',
+ shield: '<path d="M12 3l7.500 3v6c0 4.500-3.200 7.700-7.500 9-4.300-1.300-7.500-4.500-7.500-9V6z"/><path d="M9 12l2 2 4-4"/>'
 };
 export const icon = (name, cls = '') => '<svg class="ic ' + cls + '" viewBox="0 0 24 24" aria-hidden="true" focusable="false">' + (PATHS[name] || '') + '</svg>';
 
