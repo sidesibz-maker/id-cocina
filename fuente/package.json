@@ -5,7 +5,7 @@
   "description": "I+D · Cuaderno de cocina. Código de la app; la app publicada está en la raíz del repositorio.",
   "scripts": {
     "build": "node build.mjs",
-    "test": "node probar.mjs && node probar-ia.mjs && node probar-nuevo.mjs && node probar-mas.mjs && node probar-saber.mjs && node probar-herramientas.mjs && node probar-cocinar.mjs && node probar-oficio.mjs && node probar-buscar.mjs"
+    "test": "node probar.mjs && node probar-ia.mjs && node probar-nuevo.mjs && node probar-mas.mjs && node probar-saber.mjs && node probar-herramientas.mjs && node probar-cocinar.mjs && node probar-oficio.mjs && node probar-buscar.mjs && node probar-entrenar.mjs"
   },
   "devDependencies": {
     "esbuild": "0.25.12",

@@ -21,6 +21,7 @@ import * as tools from './views/tools.js';
 import * as cook from './views/cook.js';
 import * as journal from './views/journal.js';
 import * as career from './views/career.js';
+import * as train from './views/train.js';
 import {startTimers} from './timers.js';
 import {startFinder} from './finder.js';
 import {startVoice} from './voice.js';
@@ -31,7 +32,7 @@ import {iaOn, iaConfig, saveIa, askIa} from './ia.js';
 import {radarPrompt, trendsFromReply} from './ai.js';
 import {addTrends} from './store.js';
 
-const VIEWS = {hoy: home, radar, crear: create, plato: dish, libreta: notebook, sabores: flavors, cocina: kitchenView, preguntar: ask, menus, subreceta: sub, temporada: season, biblioteca: saber, saber, herramientas: tools, cocinar: cook, diario: journal, trayectoria: career};
+const VIEWS = {hoy: home, radar, crear: create, plato: dish, libreta: notebook, sabores: flavors, cocina: kitchenView, preguntar: ask, menus, subreceta: sub, temporada: season, biblioteca: saber, saber, herramientas: tools, cocinar: cook, diario: journal, trayectoria: career, entrenar: train};
 const NAV = [['hoy', 'flame', () => t('Hoy', 'Today')], ['radar', 'radar', () => t('Radar', 'Radar')], ['crear', 'plus', () => t('Crear', 'Create')], ['libreta', 'book', () => t('Libreta', 'Notebook')], ['biblioteca', 'library', () => t('Biblioteca', 'Library')]];
 const app = () => $('#app');
 let current = {name: '', params: [], cleanup: null};
@@ -46,7 +47,7 @@ function shell() {
   '<a class="skip-link" href="#view">' + esc(t('Saltar al contenido', 'Skip to content')) + '</a>' +
   '<aside class="rail"><a class="wordmark" href="#/hoy" aria-label="I+D">I<b>+</b>D</a><div class="rail-rest">' + esc(t('Cuaderno de cocina', 'Kitchen notebook')) + '</div>' +
    '<button type="button" class="rail-find" data-act="finder">' + icon('search') + '<span>' + esc(t('Buscar', 'Search')) + '</span><kbd>Ctrl K</kbd></button>' +
-   '<nav class="rail-nav" aria-label="' + esc(t('Secciones', 'Sections')) + '">' + NAV.map(item).join('') + '<span class="rail-sep" aria-hidden="true"></span><a class="nav-item" href="#/diario" data-nav="diario">' + icon('edit') + '<span>' + esc(t('Diario', 'Journal')) + '</span></a><a class="nav-item" href="#/trayectoria" data-nav="trayectoria">' + icon('star') + '<span>' + esc(t('Trayectoria', 'Career')) + '</span></a><span class="rail-sep" aria-hidden="true"></span><a class="nav-item" href="#/sabores" data-nav="sabores">' + icon('wheel') + '<span>' + esc(t('Sabores', 'Flavours')) + '</span></a><a class="nav-item" href="#/temporada" data-nav="temporada">' + icon('leaf') + '<span>' + esc(t('Temporada', 'Season')) + '</span></a><a class="nav-item" href="#/herramientas" data-nav="herramientas">' + icon('bolt') + '<span>' + esc(t('Herramientas', 'Tools')) + '</span></a><a class="nav-item" href="#/preguntar" data-nav="preguntar">' + icon('chat') + '<span>' + esc(t('Preguntar', 'Ask')) + '</span></a><a class="nav-item" href="#/cocina" data-nav="cocina">' + icon('pan') + '<span>' + esc(t('Mi cocina', 'My kitchen')) + '</span></a></nav>' +
+   '<nav class="rail-nav" aria-label="' + esc(t('Secciones', 'Sections')) + '">' + NAV.map(item).join('') + '<span class="rail-sep" aria-hidden="true"></span><a class="nav-item" href="#/diario" data-nav="diario">' + icon('edit') + '<span>' + esc(t('Diario', 'Journal')) + '</span></a><a class="nav-item" href="#/trayectoria" data-nav="trayectoria">' + icon('star') + '<span>' + esc(t('Trayectoria', 'Career')) + '</span></a><a class="nav-item" href="#/entrenar" data-nav="entrenar">' + icon('brain') + '<span>' + esc(t('Entrenar', 'Train')) + '</span></a><span class="rail-sep" aria-hidden="true"></span><a class="nav-item" href="#/sabores" data-nav="sabores">' + icon('wheel') + '<span>' + esc(t('Sabores', 'Flavours')) + '</span></a><a class="nav-item" href="#/temporada" data-nav="temporada">' + icon('leaf') + '<span>' + esc(t('Temporada', 'Season')) + '</span></a><a class="nav-item" href="#/herramientas" data-nav="herramientas">' + icon('bolt') + '<span>' + esc(t('Herramientas', 'Tools')) + '</span></a><a class="nav-item" href="#/preguntar" data-nav="preguntar">' + icon('chat') + '<span>' + esc(t('Preguntar', 'Ask')) + '</span></a><a class="nav-item" href="#/cocina" data-nav="cocina">' + icon('pan') + '<span>' + esc(t('Mi cocina', 'My kitchen')) + '</span></a></nav>' +
    '<div class="rail-foot"><button type="button" class="rail-link" data-act="menu">' + icon('gear') + '<span>' + esc(t('Ajustes', 'Settings')) + '</span></button></div></aside>' +
   '<header class="top"><a class="wordmark" href="#/hoy" aria-label="I+D">I<b>+</b>D</a><span class="top-rest">' + esc(t('Cuaderno de cocina', 'Kitchen notebook')) + '</span><a class="top-ask" href="#/preguntar" data-nav="preguntar">' + icon('chat') + '<span>' + esc(t('Preguntar', 'Ask')) + '</span></a><button type="button" class="iconbtn" data-act="finder" aria-label="' + esc(t('Buscar en todo', 'Search everything')) + '">' + icon('search') + '</button><button type="button" class="iconbtn" data-act="menu" aria-label="' + esc(t('Más y ajustes', 'More and settings')) + '">' + icon('menu') + '</button></header>' +
   '<div id="notices"></div><main id="view" tabindex="-1"></main><nav class="tabs" aria-label="' + esc(t('Secciones', 'Sections')) + '">' + NAV.map(item).join('') + '</nav></div>';
@@ -123,6 +124,7 @@ function menu({nav = false} = {}) {
    rowItem('a', 'href="#/preguntar" data-go', 'chat', t('Preguntar', 'Ask'), esc(on ? t('ChatGPT contesta aquí mismo', 'ChatGPT answers right here') : t('Pregunta lo que quieras de cocina', 'Ask anything about cooking'))) +
    rowItem('a', 'href="#/diario" data-go', 'edit', t('Diario de cocina', 'Kitchen journal'), esc(t('Qué salió bien, qué falló y qué has aprendido', 'What went well, what went wrong and what you learned'))) +
    rowItem('a', 'href="#/trayectoria" data-go', 'star', t('Mi trayectoria', 'My career'), esc(t('Experiencia, técnicas, objetivos y tu dossier', 'Experience, techniques, goals and your dossier'))) +
+   rowItem('a', 'href="#/entrenar" data-go', 'brain', t('Entrenar', 'Train'), esc(t('Tarjetas de repaso: proporciones, fallos, recetas base', 'Review cards: ratios, faults, base recipes'))) +
    rowItem('a', 'href="#/herramientas" data-go', 'bolt', t('Herramientas', 'Tools'), esc(t('Escalar recetas, temporizadores, mermas, salmueras', 'Scale recipes, timers, yields, brines'))) +
    rowItem('a', 'href="#/sabores" data-go', 'wheel', t('Sabores', 'Flavours'), esc(t('Qué combina con qué y por qué', 'What goes with what and why'))) +
    rowItem('a', 'href="#/temporada" data-go', 'leaf', t('Temporada', 'Season'), esc(t('Qué entra, qué está en su punto y qué se va', 'What comes in, what is at its best and what is leaving'))) +
