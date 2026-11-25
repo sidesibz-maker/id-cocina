@@ -140,6 +140,8 @@ export function sheet({title = '', body = '', wide = false, onClose = null, labe
  });
  return api;
 }
+// Escape también cierra la ventana de arriba cuando el foco se ha quedado fuera (por ejemplo, tras un botón que se desactiva).
+if (typeof document !== 'undefined') document.addEventListener('keydown', e => { const top = openSheets.at(-1); if (e.key === 'Escape' && top && !top.el.contains(document.activeElement) && !e.isComposing) { e.preventDefault(); top.close(); } });
 export const closeSheets = () => [...openSheets].reverse().forEach(s => s.close({restoreFocus: false}));
 
 // Pregunta de sí o no. Devuelve una promesa con true o false.

@@ -773,3 +773,83 @@ input:disabled,select:disabled,textarea:disabled{opacity:.55;cursor:not-allowed;
 @media (prefers-reduced-motion:no-preference){.timer-chip.is-done{animation:tpulse 1.2s ease-in-out infinite}}
 @keyframes tpulse{50%{transform:translateY(-3px)}}
 @media print{.timer-chip{display:none!important}}
+
+/* ---------- Modo cocina: letra grande, un paso cada vez ---------- */
+.cook-head h1{font-family:var(--serif);font-weight:400;font-size:clamp(34px,5vw,52px);line-height:1.04;margin:4px 0 16px;overflow-wrap:anywhere}
+.cook-scale{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px}.cook-scale label{font-weight:600;color:var(--ink2)}.cook-scale .tinput{width:220px}.cook-scale small{color:var(--mut);font-size:14px}
+.cook-body{display:grid;gap:24px;margin-top:24px}
+@media (min-width:960px){.cook-body{grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);align-items:start}.cook-ings{position:sticky;top:24px;max-height:calc(100vh - 48px);overflow:auto}}
+.cook-ings,.cook-steps{background:var(--card);border:1px solid var(--ink);box-shadow:var(--shadow-s);padding:16px 20px}
+.cook-ings h2{font-family:var(--serif);font-weight:400;font-size:25px;margin-bottom:8px}.cook-ings h3{font-family:var(--narrow);font-weight:600;color:var(--mut);margin:16px 0 4px}
+.cook-list li{border-bottom:1px solid var(--line)}
+.cook-tick{display:flex;gap:12px;align-items:flex-start;min-height:48px;padding:12px 0;font-size:18px;line-height:1.35;cursor:pointer}
+.cook-tick input{width:22px!important;height:22px!important;min-height:0!important;padding:0!important;flex:none;margin-top:2px;accent-color:var(--ember)}
+.cook-tick.is-on span{color:var(--mut);text-decoration:line-through;text-decoration-thickness:1px}
+.cook-count{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:baseline;font-family:var(--narrow);font-weight:600;color:var(--mut);font-size:16px}.cook-count span{color:var(--ember-ink)}
+.cook-bar{height:4px;background:var(--track);margin:12px 0 20px}.cook-bar i{display:block;height:100%;background:var(--ember)}
+.cook-text{font-size:clamp(22px,2.6vw,30px);line-height:1.38;min-height:4.2em;color:var(--ink);outline:none}
+.cook-times{margin-top:16px}.cook-times .chip{border-color:var(--ember);font-weight:600}
+.cook-nav{display:grid;grid-template-columns:1fr 1.6fr;gap:12px;margin-top:24px}.cook-nav .btn{min-height:64px;font-size:18px}
+.cook-all{margin-top:24px;border-top:var(--rule-bar) solid var(--ink);counter-reset:cs;display:grid}
+.cook-all li{counter-increment:cs;border-bottom:1px solid var(--line)}
+.cook-all button{display:grid;grid-template-columns:32px minmax(0,1fr);gap:8px;width:100%;min-height:48px;padding:12px 0;border:0;background:none;text-align:left;color:var(--ink2);font-size:15.5px;line-height:1.4}
+.cook-all button::before{content:counter(cs);font-family:var(--narrow);font-weight:600;color:var(--mut)}
+.cook-all .is-past button{color:var(--mut)}.cook-all .is-now button{color:var(--ink);font-weight:700}.cook-all .is-now button::before{color:var(--ember)}
+html.cooking .tabs{display:none}html.cooking .view{padding-bottom:calc(32px + env(safe-area-inset-bottom))}html.cooking .timer-chip{bottom:calc(16px + env(safe-area-inset-bottom))}
+
+/* ---------- Menú lateral con grupos ---------- */
+.rail-sep{display:none}
+@media (min-width:960px){.rail-sep{display:block;height:1px;margin:8px 12px;background:color-mix(in oklab,var(--mut-coal) 35%,transparent)}.rail .nav-item{height:42px}}
+
+/* ---------- Diario de cocina ---------- */
+.jstats{margin-bottom:16px}
+.jcards{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+.jcard{display:grid;gap:8px;align-content:start;padding:16px;border:1px solid var(--ink);background:var(--card);box-shadow:var(--shadow-s);text-decoration:none;color:inherit}
+.jcard:hover{border-color:var(--ember)}
+.jcard-top{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline;font-family:var(--narrow);font-weight:600;color:var(--mut);font-size:14px}.jcard-top strong{font-family:var(--sans);font-size:16px;color:var(--ink)}
+.jcard p{font-size:14.5px;color:var(--ink2);line-height:1.45}.jcard p b{color:var(--ink);font-weight:600}
+.jmood{padding:0 8px;background:var(--soft);color:var(--ink2)}.jmood[data-mood="5"],.jmood[data-mood="4"]{background:var(--ok);color:var(--ok-ink)}.jmood[data-mood="1"],.jmood[data-mood="2"]{background:var(--bad);color:var(--bad-ink)}
+.jform{margin-top:8px}.jmoods{margin-top:16px}.jmoods legend,.jlegend{display:block;font-size:14px;font-weight:600;color:var(--ink2);margin-bottom:8px}
+.jmoods .seg{width:100%;flex-wrap:wrap}.jmoods .seg-btn{cursor:pointer}.jmoods .seg-btn:focus-within{outline:3px solid var(--ember);outline-offset:1px}
+.jdishes .chip{cursor:pointer}.jdishes .chip:focus-within{outline:3px solid var(--ember);outline-offset:1px}
+
+/* ---------- Mi trayectoria ---------- */
+.cstats{margin-bottom:24px}
+.csec-head{display:flex;justify-content:space-between;align-items:center;gap:16px}.csec-head h2{margin:0}
+.cprofile{display:grid;gap:4px;margin-top:8px}.cname{font-family:var(--serif);font-size:32px;line-height:1.1}.crole{font-size:17px;color:var(--ink2)}
+.cphil{margin:12px 0 4px;padding:8px 0 8px 16px;border-left:var(--rule-bar) solid var(--gold);font-family:var(--serif);font-size:20px;line-height:1.35;color:var(--ink)}
+.cgoals{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(320px,1fr))}
+.cgoal{padding:16px;border:1px solid var(--ink);background:var(--card);box-shadow:var(--shadow-s)}
+.cgoal header{display:grid;gap:4px}.cgoal header strong{font-family:var(--serif);font-weight:400;font-size:22px;line-height:1.15}.cgoal header small{font-family:var(--narrow);font-weight:600;color:var(--mut)}.cgoal header small.is-late{color:var(--bad-ink)}
+.cgoal-why{color:var(--ink2);font-size:14.5px;margin-top:8px}
+.cgoal-bar{height:4px;background:var(--track);margin:12px 0 4px}.cgoal-bar i{display:block;height:100%;background:var(--ember)}
+.cgoal-steps li{border-bottom:1px solid var(--line)}.cgoal-steps .cook-tick{font-size:15.5px;min-height:44px;padding:8px 0}
+.cskills{display:grid;gap:8px;grid-template-columns:repeat(auto-fill,minmax(170px,1fr))}
+.cskill{display:grid;gap:4px;justify-items:start;text-align:left;min-height:88px;padding:12px;border:1px solid var(--line2);background:var(--card);color:var(--ink)}
+.cskill:hover{border-color:var(--ink)}.cskill-name{font-weight:700;font-size:15px}.cskill-lv{font-family:var(--narrow);font-weight:600;font-size:13.5px;color:var(--mut)}.cskill small{font-size:12.5px;color:var(--mut)}
+.cskill-bar{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;width:100%;margin-top:auto}.cskill-bar b{height:4px;background:var(--track)}
+.cskill[data-level="1"] .cskill-bar b:nth-child(-n+1),.cskill[data-level="2"] .cskill-bar b:nth-child(-n+2),.cskill[data-level="3"] .cskill-bar b{background:var(--gold)}
+.cskill[data-level="3"]{border-color:var(--ink);box-shadow:var(--shadow-s)}.cskill[data-level="3"] .cskill-lv{color:var(--ember-ink)}
+.csig{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(180px,1fr))}
+.csig-card{display:grid;gap:4px;text-decoration:none;color:inherit}.csig-media{display:grid;place-items:center;aspect-ratio:4/3;background:var(--soft);border:1px solid var(--line);overflow:hidden}.csig-media img{width:100%;height:100%;object-fit:cover}
+.csig-card strong{font-size:15.5px}.csig-card small{color:var(--mut);font-size:13px}
+.cduo{display:grid;gap:0 32px}@media (min-width:960px){.cduo{grid-template-columns:1fr 1fr}}
+.ctime{display:grid;border-left:var(--rule-bar) solid var(--gold);padding-left:0}
+.ctime-item{display:grid;gap:2px;width:100%;padding:12px 0 12px 16px;border:0;background:none;text-align:left;color:inherit;position:relative}
+.ctime-item::before{content:'';position:absolute;left:-6px;top:18px;width:10px;height:10px;background:var(--paper);border:2px solid var(--gold);border-radius:50%}
+.ctime-item small{font-family:var(--narrow);font-weight:600;color:var(--mut)}.ctime-item strong{font-size:16px}.ctime-item span{color:var(--ink2);font-size:14px}.ctime-item p{font-size:14.5px;color:var(--ink2);margin-top:4px}
+.ctime-item:hover strong{text-decoration:underline;text-underline-offset:3px}
+.cwins{display:grid;gap:0}.cwins li{display:grid;grid-template-columns:24px minmax(0,1fr) auto;gap:12px;align-items:start;padding:12px 0;border-bottom:1px solid var(--line)}
+.cwins li>.ic{color:var(--gold);margin-top:2px}.cwins strong{display:block}.cwins small{color:var(--mut);font-size:13px}.cwins p{font-size:14.5px;color:var(--ink2)}
+@media print{
+ .dossier-head{border-bottom:2px solid var(--ink);padding-bottom:8px;margin-bottom:8px}.dossier-head h1{font-family:var(--serif,serif);font-size:28pt;font-weight:400;margin:0}.dossier-role{font-size:13pt;color:var(--ink2)}
+ .dossier-row{display:grid;grid-template-columns:32mm 1fr;gap:4mm;padding:4px 0}.dossier-row small{color:var(--mut);font-size:9pt}.dossier-row p{margin:2px 0 0;font-size:10pt;color:var(--ink2)}
+ .dossier-dishes{display:grid;grid-template-columns:repeat(3,1fr);gap:4mm}.dossier-dishes figure{margin:0;break-inside:avoid}.dossier-dishes img{width:100%;aspect-ratio:4/3;object-fit:cover}.dossier-dishes figcaption{font-size:9.5pt;margin-top:2px}.dossier-dishes figcaption span{display:block;color:var(--mut)}
+ .dossier ul{margin:0;padding-left:16px;list-style:disc}
+}
+
+/* ---------- Tu oficio, en la portada ---------- */
+.craft{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.craft-card{display:grid;gap:4px;align-content:start;padding:16px;border:1px solid var(--line);background:var(--card);text-decoration:none;color:inherit}
+.craft-card:hover{border-color:var(--ink)}.craft-card>.ic{color:var(--ember)}.craft-card strong{font-size:16.5px}.craft-card span{font-size:14px;color:var(--mut)}
+.craft-card.is-due{border-color:var(--ember);background:var(--ember-soft)}

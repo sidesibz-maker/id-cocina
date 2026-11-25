@@ -4,7 +4,8 @@ import {presetSaber} from './saber.js';
 import {go} from '../nav.js';
 import {t, en, longDate, greeting, dayKey, relDay, monthName} from '../i18n.js';
 import {esc, icon, $, metaRow} from '../ui.js';
-import {state, liveTrends, liveDishes, userName} from '../store.js';
+import {state, liveTrends, liveDishes, userName, liveDocs} from '../store.js';
+import {timers} from '../timers.js';
 import {trendCard, dishCard, hydrateImages, trText, trIdeas, kindLabel, heatMark, sourceLine, sectionHead, moreLink, emptyState, skeleton, adoptIdea} from './shared.js';
 
 export const title = () => t('Hoy', 'Today');
@@ -35,6 +36,19 @@ function seasonal() {
  const entering = kb.list.filter(i => fresh.includes(i.family) && i.months.size > 0 && i.months.size < 12 && inSeason(i, m) && !i.months.has(((m + 10) % 12) + 1)).map(i => (en() ? i.en : i.es));
  return '<section class="sec">' + sectionHead(t('De temporada en ', 'In season in ') + monthName(m), moreLink('#/temporada', t('Ver la temporada', 'See the season')), entering.length ? t('Entra ahora: ', 'Coming in now: ') + entering.slice(0, 6).join(', ') + '.' : t('Toca un producto para ver con qué combina.', 'Tap a product to see what it pairs with.')) +
   '<div class="chips">' + rows.map(({i, have, local}) => '<a class="chip' + (have ? ' chip-have' : '') + '" href="#/sabores/' + esc(i.id) + '">' + esc(en() ? i.en : i.es) + (local ? '<small>' + esc(t('de aquí', 'local')) + '</small>' : have ? '<small>' + esc(t('de tus básicos', 'one of your staples')) + '</small>' : '') + '</a>').join('') + '</div></section>';
+}
+
+// Tu oficio: el diario de hoy, el objetivo más cercano y lo que tienes en el fuego.
+function craft() {
+ const today = dayKey(), wrote = liveDocs('diario').some(e => e.day === today), hour = new Date().getHours();
+ const goal = liveDocs('objetivo').filter(g => !g.done_at).sort((a, b) => String(a.due || '9').localeCompare(String(b.due || '9')))[0];
+ const running = timers().filter(x => !x.done);
+ const cards = [];
+ cards.push('<a class="craft-card' + (!wrote && hour >= 15 ? ' is-due' : '') + '" href="#/diario' + (wrote ? '' : '/nuevo') + '">' + icon('edit') + '<strong>' + esc(wrote ? t('Diario de hoy escrito', 'Today\'s journal written') : t('¿Cómo ha ido hoy?', 'How did today go?')) + '</strong><span>' + esc(wrote ? t('Mira lo que llevas apuntado', 'See what you have written') : t('Dos minutos: qué salió bien, qué falló y qué has aprendido', 'Two minutes: what went well, what went wrong and what you learned')) + '</span></a>');
+ if (goal) { const steps = goal.steps || [], done = steps.filter(x => x.done).length, next = steps.find(x => !x.done); cards.push('<a class="craft-card" href="#/trayectoria">' + icon('star') + '<strong>' + esc(goal.title) + '</strong><span>' + esc(next ? t('Siguiente paso: ', 'Next step: ') + next.text : steps.length ? t('Todos los pasos hechos: ¿lo das por conseguido?', 'All steps done: shall we call it achieved?') : t('Tu objetivo en marcha', 'Your goal in progress')) + (steps.length ? ' (' + done + '/' + steps.length + ')' : '') + '</span></a>'); }
+ else cards.push('<a class="craft-card" href="#/trayectoria">' + icon('star') + '<strong>' + esc(t('Ponte un objetivo', 'Set yourself a goal')) + '</strong><span>' + esc(t('Una técnica, un stage, una partida: lo partes en pasos y lo sigues aquí', 'A technique, a stage, a section: break it into steps and follow it here')) + '</span></a>');
+ cards.push('<a class="craft-card" href="#/herramientas' + (running.length ? '/temporizadores' : '') + '">' + icon(running.length ? 'clock' : 'bolt') + '<strong>' + esc(running.length ? (running.length === 1 ? t('1 temporizador en marcha', '1 timer running') : running.length + t(' temporizadores en marcha', ' timers running')) : t('Herramientas', 'Tools')) + '</strong><span>' + esc(t('Escalar recetas, mermas, salmueras, espesantes y temporizadores', 'Scale recipes, yields, brines, thickeners and timers')) + '</span></a>');
+ return '<section class="sec">' + sectionHead(t('Tu oficio', 'Your craft')) + '<div class="craft">' + cards.join('') + '</div></section>';
 }
 
 export function render() {
@@ -72,6 +86,7 @@ export function render() {
  else html += emptyState('book', t('Tu libreta está vacía', 'Your notebook is empty'), t('Empieza por un producto que tengas en casa o pide ideas. Cada plato guarda sus pruebas y cómo va cambiando.', 'Start from a product you have in the kitchen or ask for ideas. Each dish keeps its tests and how it evolves.'), state.canEdit ? '<a class="btn primary" href="#/crear">' + icon('plus') + esc(t('Crear un plato', 'Create a dish')) + '</a>' : '');
  html += '</section>';
 
+ html += craft();
  html += '<section class="sec">' + sectionHead(t('Empieza por aquí', 'Start here')) + '<div class="tiles">' +
   '<a class="tile tile-big" href="#/crear">' + icon('plus') + '<strong>' + esc(t('Crear un plato', 'Create a dish')) + '</strong><span>' + esc(t('Monta componentes y mira qué sabores dominan', 'Build components and see which flavours lead')) + '</span></a>' +
   '<a class="tile tile-big" href="#/crear/ideas">' + icon('spark') + '<strong>' + esc(t('Dame ideas', 'Give me ideas')) + '</strong><span>' + esc(t('Tres propuestas a partir de lo que buscas', 'Three proposals from what you are after')) + '</span></a>' +

@@ -140,8 +140,8 @@ function recipeTable(base) {
   base.items.map(([ingredient, quantity], i) => '<tr><th scope="row">' + linked(ingredient) + '</th><td class="q" data-quantity="' + esc(quantity || '') + '">' + esc(quantity || '') +
   '</td><td class="kprep-cell" hidden><label class="kprep-check"><input type="checkbox" data-kprep aria-labelledby="kprep-label-' + i + '"><span id="kprep-label-' + i + '">' + esc(t('Listo', 'Ready')) + '<span class="sr"> ' + flat(ingredient) + '</span></span></label></td></tr>').join('') + '</tbody></table><p id="kPrepStatus" class="fine" role="status"></p>';
 }
-function recipeActions(hasSteps) {
- return '<div class="krecipe-actions"><button type="button" class="btn ghost" data-act="copy-recipe">' + esc(t('Copiar receta', 'Copy recipe')) + '</button>' +
+function recipeActions(hasSteps, id = '') {
+ return '<div class="krecipe-actions">' + (id ? '<a class="btn primary" href="#/cocinar/biblioteca/' + esc(id) + '">' + esc(t('Cocinar paso a paso', 'Cook step by step')) + '</a>' : '') + '<button type="button" class="btn ghost" data-act="copy-recipe">' + esc(t('Copiar receta', 'Copy recipe')) + '</button>' +
   '<button type="button" class="btn ghost" data-act="cook-mode" aria-pressed="false" aria-controls="kRecipeIngredients' + (hasSteps ? ' kRecipeSteps' : '') + '">' + esc(t('Modo cocina', 'Cooking mode')) + '</button></div>';
 }
 function recipeSteps(steps) {
@@ -151,7 +151,7 @@ function recipeSteps(steps) {
 }
 function panels(e) {
  const out = [['que', t('Qué es', 'What it is'), '<h2 class="sr">' + esc(t('Qué es', 'What it is')) + '</h2>' + para(e.what)]];
- if (e.base && (e.base.items || []).length) out.push(['receta', t('Receta', 'Recipe'), '<h2 class="sr">' + esc(t('Receta base', 'Base recipe')) + '</h2>' + recipeActions(e.base.steps?.length) + recipeTable(e.base) + recipeSteps(e.base.steps || [])]);
+ if (e.base && (e.base.items || []).length) out.push(['receta', t('Receta', 'Recipe'), '<h2 class="sr">' + esc(t('Receta base', 'Base recipe')) + '</h2>' + recipeActions(e.base.steps?.length, e.id) + recipeTable(e.base) + recipeSteps(e.base.steps || [])]);
  if (e.method?.length) out.push(['metodo', t('Cómo hacerlo', 'Method'), '<h2 class="sr">' + esc(t('Cómo hacerlo', 'Method')) + '</h2><ol class="ksteps">' + e.method.map(step => '<li>' + linked(step) + '</li>').join('') + '</ol>']);
  if ((e.ratios || []).length) out.push(['uso', t('Según el uso', 'By use'), '<h2 class="sr">' + esc(t('Cómo cambia según para qué', 'How it changes by use')) + '</h2><table class="ktable kratios"><thead><tr><th>' + esc(t('Para', 'For')) + '</th><th>' + esc(t('Cómo cambia', 'How it changes')) + '</th></tr></thead><tbody>' + e.ratios.map(r => '<tr><td><strong>' + linked(r.use) + '</strong></td><td>' + linked(r.ratio) + (r.note ? '<small>' + linked(r.note) + '</small>' : '') + '</td></tr>').join('') + '</tbody></table>']);
  if ((e.variants || []).length) out.push(['variantes', t('Variantes', 'Variants'), '<h2 class="sr">' + esc(t('Variantes y derivadas', 'Variants and derivatives')) + '</h2><ul class="kvariants">' + e.variants.map(v => '<li>' + (v.id && entryById(v.id) ? '<a class="kref" href="' + href(v.id) + '">' + esc(v.name) + '</a>' : '<strong>' + esc(v.name) + '</strong>') + (v.note ? ' ' + linked(v.note) : '') + '</li>').join('') + '</ul>']);
