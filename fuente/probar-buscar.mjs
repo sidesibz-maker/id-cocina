@@ -36,7 +36,7 @@ ok(!(await page.isVisible('#finderQ')), 'el buscador no se cierra al abrir');
 await page.click('.rail [data-act=finder]'); await page.waitForSelector('#finderQ'); await page.keyboard.press('Escape'); await wait(300);
 ok(!(await page.isVisible('#finderQ')), 'Esc no cierra el buscador');
 // Producción
-await go('#/herramientas'); ok(await page.locator('.ttiles .tile').count() === 11, 'no salen las 11 herramientas');
+await go('#/herramientas'); ok(await page.locator('.ttiles .tile').count() === 12, 'no salen las 12 herramientas');
 await go('#/herramientas/produccion'); await page.fill('#prCovers', '40'); await page.dispatchEvent('#prCovers', 'input'); await wait(200);
 const pr = await page.textContent('#prOut');
 // Calamar: 150 g × 40 + 50 g × 40 = 8 kg limpio; con rendimiento del 75 % → 10,7 kg en bruto

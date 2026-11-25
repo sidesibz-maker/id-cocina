@@ -37,6 +37,18 @@ await page.click('[data-rk=temp]'); await page.evaluate(() => { window.print = (
 await page.click('[data-act=rg-print]'); await wait(400);
 const sheetText = await page.evaluate(() => window.__rg || '');
 ok(sheetText.includes('Temperaturas') && sheetText.includes('Firma'), 'la hoja del mes no sale');
+// Mise en place por partidas
+await go('#/herramientas/mise'); await page.waitForSelector('.mepst');
+ok(await page.locator('.mepst').count() === 3, 'no salen las partidas de ejemplo');
+await page.check('[data-mk="Brasa|0"]'); await wait(300);
+ok((await page.textContent('.mepcount')).includes('1 / 8'), 'no cuenta lo hecho: ' + await page.textContent('.mepcount'));
+await page.fill('.mepadd[data-st="Frío"] input', 'Ostras abiertas'); await page.press('.mepadd[data-st="Frío"] input', 'Enter'); await wait(300);
+ok((await page.textContent('.mepgrid')).includes('Ostras abiertas') && (await page.textContent('.mepcount')).includes('1 / 9'), 'no añade una tarea de hoy');
+await page.click('[data-act=mep-edit]'); await page.waitForSelector('#mepTpl'); await page.fill('#mepTpl', ['# Pescados', 'Limpiar lubinas', 'Racionar atún', '', '# Arroces', 'Sofrito en porciones'].join('\n')); await page.click('.sheet [data-ok]'); await wait(400);
+ok(await page.locator('.mepst').count() === 2 && (await page.textContent('.mepgrid')).includes('Racionar atún'), 'no cambia las partidas');
+const tomorrow = await page.evaluate(() => { const d = new Date(); d.setDate(d.getDate() + 1); return d.toISOString().slice(0, 10); });
+await page.fill('#mepDay', tomorrow); await page.dispatchEvent('#mepDay', 'change'); await wait(300);
+ok((await page.textContent('.mepcount')).includes('0 / 3'), 'el día siguiente no empieza limpio');
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();
 if (fails.length) { console.error('FALLOS en registros APPCC:\n - ' + fails.join('\n - ')); process.exit(1); }

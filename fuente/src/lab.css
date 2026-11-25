@@ -960,3 +960,13 @@ html.cooking .tabs{display:none}html.cooking .view{padding-bottom:calc(32px + en
 .rglist{display:grid}.rglist li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 12px;padding:8px 0;border-bottom:1px solid var(--line)}.rglist li>span{grid-column:1;color:var(--ink2);font-size:14.5px}.rglist li>.iconbtn{grid-column:2;grid-row:1/span 2}
 .rglist li.is-alert strong{color:var(--bad-ink)}
 .tool-registros .seg .seg-btn{cursor:pointer}
+
+/* ---------- Mise en place por partidas ---------- */
+.mephead{display:flex;flex-wrap:wrap;align-items:flex-end;gap:8px 24px}.mephead .tfield{margin-top:0}.mephead .row-actions{margin:0 0 0 auto}
+.mepcount{font-size:15px;color:var(--mut);padding-bottom:12px}.mepcount strong{font-family:var(--serif);font-weight:400;font-size:28px;color:var(--ink)}
+.mepgrid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));margin-top:8px}
+.mepst{padding:16px;border:1px solid var(--ink);background:var(--card);box-shadow:var(--shadow-s)}.mepst.is-done{border-color:var(--gold);box-shadow:none}
+.mepst header{display:flex;justify-content:space-between;align-items:baseline;border-bottom:var(--rule-bar) solid var(--ink);padding-bottom:8px}.mepst h2{font-family:var(--serif);font-weight:400;font-size:24px}
+.mepst li{border-bottom:1px solid var(--line)}.mepst .cook-tick{font-size:16px;min-height:44px;padding:8px 0}
+.mepadd{display:flex;gap:4px;margin-top:8px}.mepadd input{min-height:40px!important;padding:6px 8px!important;font-size:15px}
+@media print{.mepprint{list-style:none;padding:0;columns:2}.mepprint li{padding:3px 0}}

@@ -125,5 +125,11 @@ LO NUEVO PARA TU OFICIO (NOVIEMBRE 2026)
  - Libreta → «Mi recetario en PDF»: todas tus fichas con portada e índice.
  - Pruebas de cata: cómo va la nota del plato y, arriba, lo que te apuntaste para la próxima vez.
  - Biblioteca: estantes nuevos de técnicas de cocción, pastelería y masas, y producto (arroces, marisco, pescado y carne).
+ - Proveedores (Mi cocina o menú «Más»): quién te trae cada cosa, teléfono, reparto y notas. El pedido de Producción sale
+   agrupado por proveedor y cada bloque se manda por WhatsApp.
+ - En cada plato: «Dibujar el emplatado» (boceto con el dedo o el ratón) y los 14 alérgenos para confirmarlos tú.
+   Cartas y menús → «Tabla de alérgenos» para tener en sala.
+ - Herramientas → Registros APPCC (temperaturas de cámaras, aceite, recepción) con hoja mensual para firmar, y
+   Mise en place por partidas: la lista de cada día de cada partida, para marcar.
  - Pendiente: el diario, la trayectoria y lo demás nuevo todavía no pasan al móvil por la sincronización (falta un cambio
    en el servidor que tienes que autorizar). Están en este aparato y en la copia de seguridad.
