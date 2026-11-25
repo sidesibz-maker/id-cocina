@@ -20,6 +20,7 @@ const SHELF = {
  salsas: ['drop', t('Madres y derivadas, emulsiones, salsas españolas y del mundo.', 'Mother sauces and derivatives, emulsions, Spanish and world sauces.')],
  tecnicas: ['flame', t('Punto de la carne, sellado, baja temperatura, confitado, fritura, curado, fermentación y ahumado.', 'Meat doneness, searing, low temperature, confit, frying, curing, fermentation and smoking.')],
  dulce: ['star', t('Cremas, merengues, caramelo, ganache, masas quebradas y masa madre.', 'Creams, meringues, caramel, ganache, shortcrust and sourdough.')],
+ producto: ['box', t('Arroces, cocción de marisco, limpiar pescado, cortes de vacuno y maduración.', 'Rice dishes, cooking shellfish, cleaning fish, beef cuts and dry-ageing.')],
  fondos: ['pan', t('Fondos claros y oscuros, fumets, jugos, glasas y consomés.', 'Light and dark stocks, fish stocks, jus, glazes and consommés.')],
  bases: ['leaf', t('Sofritos, picadas, aromáticos, salmueras, marinadas y aliños.', 'Sofritos, picadas, aromatics, brines, marinades and dressings.')],
  conceptos: ['spark', t('Roux, ligazones y emulsiones: el porqué de las cosas.', 'Roux, thickeners and emulsions: why things work.')],
