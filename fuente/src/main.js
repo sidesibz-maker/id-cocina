@@ -22,6 +22,7 @@ import * as cook from './views/cook.js';
 import * as journal from './views/journal.js';
 import * as career from './views/career.js';
 import {startTimers} from './timers.js';
+import {startFinder} from './finder.js';
 import {startVoice} from './voice.js';
 import {iaSheet} from './views/ia-sheet.js';
 import {syncSheet, syncLine} from './views/sync-sheet.js';
@@ -44,9 +45,10 @@ function shell() {
  app().innerHTML = '<div class="lab">' +
   '<a class="skip-link" href="#view">' + esc(t('Saltar al contenido', 'Skip to content')) + '</a>' +
   '<aside class="rail"><a class="wordmark" href="#/hoy" aria-label="I+D">I<b>+</b>D</a><div class="rail-rest">' + esc(t('Cuaderno de cocina', 'Kitchen notebook')) + '</div>' +
+   '<button type="button" class="rail-find" data-act="finder">' + icon('search') + '<span>' + esc(t('Buscar', 'Search')) + '</span><kbd>Ctrl K</kbd></button>' +
    '<nav class="rail-nav" aria-label="' + esc(t('Secciones', 'Sections')) + '">' + NAV.map(item).join('') + '<span class="rail-sep" aria-hidden="true"></span><a class="nav-item" href="#/diario" data-nav="diario">' + icon('edit') + '<span>' + esc(t('Diario', 'Journal')) + '</span></a><a class="nav-item" href="#/trayectoria" data-nav="trayectoria">' + icon('star') + '<span>' + esc(t('Trayectoria', 'Career')) + '</span></a><span class="rail-sep" aria-hidden="true"></span><a class="nav-item" href="#/sabores" data-nav="sabores">' + icon('wheel') + '<span>' + esc(t('Sabores', 'Flavours')) + '</span></a><a class="nav-item" href="#/temporada" data-nav="temporada">' + icon('leaf') + '<span>' + esc(t('Temporada', 'Season')) + '</span></a><a class="nav-item" href="#/herramientas" data-nav="herramientas">' + icon('bolt') + '<span>' + esc(t('Herramientas', 'Tools')) + '</span></a><a class="nav-item" href="#/preguntar" data-nav="preguntar">' + icon('chat') + '<span>' + esc(t('Preguntar', 'Ask')) + '</span></a><a class="nav-item" href="#/cocina" data-nav="cocina">' + icon('pan') + '<span>' + esc(t('Mi cocina', 'My kitchen')) + '</span></a></nav>' +
    '<div class="rail-foot"><button type="button" class="rail-link" data-act="menu">' + icon('gear') + '<span>' + esc(t('Ajustes', 'Settings')) + '</span></button></div></aside>' +
-  '<header class="top"><a class="wordmark" href="#/hoy" aria-label="I+D">I<b>+</b>D</a><span class="top-rest">' + esc(t('Cuaderno de cocina', 'Kitchen notebook')) + '</span><a class="top-ask" href="#/preguntar" data-nav="preguntar">' + icon('chat') + '<span>' + esc(t('Preguntar', 'Ask')) + '</span></a><button type="button" class="iconbtn" data-act="menu" aria-label="' + esc(t('Más y ajustes', 'More and settings')) + '">' + icon('menu') + '</button></header>' +
+  '<header class="top"><a class="wordmark" href="#/hoy" aria-label="I+D">I<b>+</b>D</a><span class="top-rest">' + esc(t('Cuaderno de cocina', 'Kitchen notebook')) + '</span><a class="top-ask" href="#/preguntar" data-nav="preguntar">' + icon('chat') + '<span>' + esc(t('Preguntar', 'Ask')) + '</span></a><button type="button" class="iconbtn" data-act="finder" aria-label="' + esc(t('Buscar en todo', 'Search everything')) + '">' + icon('search') + '</button><button type="button" class="iconbtn" data-act="menu" aria-label="' + esc(t('Más y ajustes', 'More and settings')) + '">' + icon('menu') + '</button></header>' +
   '<div id="notices"></div><main id="view" tabindex="-1"></main><nav class="tabs" aria-label="' + esc(t('Secciones', 'Sections')) + '">' + NAV.map(item).join('') + '</nav></div>';
  $('.skip-link', app()).onclick = e => {
   e.preventDefault();
@@ -186,6 +188,7 @@ async function start() {
  if (['title', 'text', 'url'].some(k => shared.get(k))) { const keys = shared.get('text') ? ['text', 'url'] : ['title', 'url']; presetRecipe([...new Set(keys.map(k => (shared.get(k) || '').trim()).filter(Boolean))].join('\n')); history.replaceState(null, '', location.pathname + '#/crear/importar'); }
  applyPrefs();
  startTimers();
+ startFinder();
  shell();
  route();
  onChange(refresh);

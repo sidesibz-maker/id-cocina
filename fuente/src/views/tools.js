@@ -6,6 +6,7 @@ import {esc, icon, $, $$, toast} from '../ui.js';
 import {state, liveSubs, liveDishes, liveDocs, saveDoc, trashDoc} from '../store.js';
 import {copy} from '../ai.js';
 import {timers, onTimers, addTimer, pauseTimer, restartTimer, removeTimer, left, clock} from '../timers.js';
+import {produccion, etiquetas} from './tools-more.js';
 
 export const title = p => (TOOLS.find(x => x.id === p?.[0])?.name() || t('Herramientas', 'Tools'));
 
@@ -269,6 +270,8 @@ const temporizadores = {
 
 const TOOLS = [
  {id: 'escalar', ic: 'refresh', name: () => t('Escalar una receta', 'Scale a recipe'), sub: () => t('De 4 raciones a 60 sin hacer cuentas', 'From 4 portions to 60 without the maths'), tool: escalar},
+ {id: 'produccion', ic: 'book', name: () => t('Producción y pedido', 'Production and order'), sub: () => t('De un menú y unos cubiertos a la lista de pedido', 'From a menu and covers to the order list'), tool: produccion},
+ {id: 'etiquetas', ic: 'box', name: () => t('Etiquetas de conservación', 'Storage labels'), sub: () => t('Elaborado, consumir antes de y alérgenos', 'Made, use by and allergens'), tool: etiquetas},
  {id: 'temporizadores', ic: 'clock', name: () => t('Temporizadores', 'Timers'), sub: () => t('Varios a la vez, con nombre', 'Several at once, with a name'), tool: temporizadores},
  {id: 'rendimiento', ic: 'box', name: () => t('Rendimiento y mermas', 'Yield and losses'), sub: () => t('Cuánto rinde un género y cuánto pedir', 'How much a product yields and how much to order'), tool: rendimiento},
  {id: 'salmuera', ic: 'drop', name: () => t('Salmueras y salazones', 'Brines and dry salting'), sub: () => t('La sal justa para baño, equilibrio o en seco', 'The right salt for a bath, equilibrium or dry'), tool: salmuera},
