@@ -127,6 +127,11 @@ LO NUEVO PARA TU OFICIO (NOVIEMBRE 2026)
  - En cada plato: «Dibujar el emplatado» (boceto con el dedo o el ratón) y los 14 alérgenos para confirmarlos tú.
  - Laboratorio creativo: una chispa (producto de temporada, pareja, puente y mecanismo de creación), los mecanismos
    explicados con ejemplos y tu cuaderno de chispas para apuntar ideas al vuelo y convertirlas en plato.
+ - Biblioteca: más de 100 fichas, con estantes de creatividad y método, técnicas (fuego y brasa, espumas, crujientes…),
+   pastelería y masas, y producto. «Rutas de aprendizaje»: recorridos en orden que marcan solos lo que has leído.
+ - Hoy: «La ficha del día» y, en «Tu oficio», la siguiente ficha de tu ruta.
+ - Libreta → «Catálogo general»: toda tu obra numerada y por temporadas, para imprimir.
+ - Ajustes → Pantalla → Tamaño de letra (normal, grande o muy grande).
  - Esta app es para crear, aprender y tu carrera. La gestión del restaurante (pedidos, APPCC, equipo, sala) va en tu
    otra app: aquí no se duplica.
  - Pendiente: el diario, la trayectoria y lo demás nuevo todavía no pasan al móvil por la sincronización (falta un cambio
