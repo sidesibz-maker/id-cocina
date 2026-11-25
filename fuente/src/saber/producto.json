@@ -500,5 +500,289 @@
    "punto-de-la-carne",
    "aceites-aromatizados"
   ]
+ },
+ {
+  "id": "especias",
+  "name": "Especias: tostar, moler y mezclar",
+  "name_en": "Spices: toasting, grinding and blending",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "especias",
+   "comino",
+   "pimenton",
+   "mezcla de especias",
+   "tostar especias",
+   "ras el hanout",
+   "garam masala"
+  ],
+  "summary": "Cómo sacar todo el aroma a las especias: comprarlas enteras, tostarlas, molerlas al momento y hacer mezclas propias.",
+  "what": "El aroma de las especias está en aceites que se evaporan en cuanto se muelen. Por eso se compran enteras, se tuestan justo antes de usar para despertar ese aroma y se muelen al momento. Una mezcla propia de especias es una firma de cocina: se pesa, se apunta y se repite igual.",
+  "method": [
+   "Compra las especias enteras y en poca cantidad, y guárdalas en botes opacos y cerrados.",
+   "Tuesta en sartén seca a fuego medio, moviendo, hasta que suelten aroma y cambien un poco de color (30 segundos a 2 minutos según el tamaño).",
+   "Pasa enseguida a un plato frío para cortar el tostado.",
+   "Muele en molinillo o mortero y tamiza si quieres un polvo fino.",
+   "Para mezclas, pesa cada especia, apunta la proporción y guarda en bote pequeño con fecha."
+  ],
+  "ratios": [
+   {
+    "use": "Aliñar carnes a la brasa",
+    "ratio": "5-10 g de mezcla de especias por kilo",
+    "note": "Junto con la sal."
+   },
+   {
+    "use": "Aceite especiado",
+    "ratio": "10-20 g de especias tostadas por 250 ml de aceite templado",
+    "note": "Infusionar y colar."
+   },
+   {
+    "use": "Pimentón en un sofrito",
+    "ratio": "Fuera del fuego y con grasa, unos segundos",
+    "note": "Se quema enseguida."
+   }
+  ],
+  "variants": [
+   {
+    "id": "adobo",
+    "name": "Adobo",
+    "note": "La mezcla de especias española por excelencia."
+   },
+   {
+    "id": "aceites-aromatizados",
+    "name": "Aceites aromatizados",
+    "note": "Para llevar las especias a un plato."
+   }
+  ],
+  "keys": [
+   "Enteras, tostadas y molidas al momento.",
+   "El pimentón no se tuesta: se quema y amarga.",
+   "Las especias se abren en grasa: añádelas al aceite caliente o al final con un aceite.",
+   "Fecha en cada bote: pasados unos meses pierden casi todo.",
+   "Tu mezcla propia, pesada y apuntada en la libreta como subreceta."
+  ],
+  "errors": [
+   {
+    "p": "Sabor amargo o a quemado",
+    "fix": "Tostado de más o pimentón al fuego. Tuesta menos y añade el pimentón fuera del fuego."
+   },
+   {
+    "p": "No saben a nada",
+    "fix": "Especias viejas o molidas hace tiempo. Compra enteras y muele al momento."
+   },
+   {
+    "p": "Textura arenosa",
+    "fix": "Molido grueso en un plato fino. Tamiza o infusiona en grasa y cuela."
+   }
+  ],
+  "history": "El comercio de especias marcó la historia de la cocina mediterránea; en España el pimentón, el comino, el azafrán y la canela están en muchas recetas tradicionales.",
+  "uses": [
+   "Adobos y marinadas",
+   "Brasa",
+   "Guisos y arroces",
+   "Aceites y sales especiadas",
+   "Postres"
+  ],
+  "keep": "Enteras, en botes opacos y cerrados, lejos de la luz y del calor; molidas, poco tiempo.",
+  "pro": "Muele cada mañana lo del día. Tus mezclas, como subreceta en Mi cocina, para que el equipo las haga igual.",
+  "related": [
+   "adobo",
+   "aceites-aromatizados",
+   "marinada"
+  ]
+ },
+ {
+  "id": "hierbas-frescas",
+  "name": "Hierbas frescas",
+  "name_en": "Fresh herbs",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "hierbas aromaticas",
+   "perejil",
+   "cilantro",
+   "albahaca",
+   "romero",
+   "tomillo",
+   "hinojo silvestre",
+   "brotes"
+  ],
+  "summary": "Hierbas tiernas y leñosas: cuándo se cuecen y cuándo se ponen al final, cómo cortarlas sin que se oscurezcan y cómo conservarlas.",
+  "what": "Hay dos familias. Las leñosas (romero, tomillo, laurel, salvia) aguantan el calor y dan su aroma durante la cocción. Las tiernas (perejil, cilantro, albahaca, eneldo, cebollino, menta) pierden aroma y color con el calor: van al final o en crudo. Cortadas con cuchillo bien afilado no se magullan ni se oscurecen.",
+  "method": [
+   "Lava las hierbas en agua fría y sécalas muy bien con centrifugadora o papel.",
+   "Las leñosas, en rama durante la cocción, y se retiran al final.",
+   "Las tiernas, cortadas con cuchillo muy afilado y en un solo pase, justo antes de servir.",
+   "Para un aceite verde, escalda unos segundos las hojas tiernas, enfría en hielo, tritura con aceite y cuela.",
+   "Guarda las tiernas envueltas en papel húmedo dentro de un recipiente en frío; la albahaca, fuera del frío fuerte."
+  ],
+  "ratios": [
+   {
+    "use": "Aceite verde",
+    "ratio": "100 g de hojas escaldadas por 200 ml de aceite",
+    "note": "Triturar, colar y guardar en frío."
+   },
+   {
+    "use": "Hierba en un aliño",
+    "ratio": "Un puñado picado por cada 100 ml",
+    "note": "Al momento."
+   },
+   {
+    "use": "Ramillete para un fondo",
+    "ratio": "Unas ramas de tomillo, laurel y perejil por cada 5 litros",
+    "note": "Ver el bouquet garni."
+   }
+  ],
+  "variants": [
+   {
+    "id": "bouquet-garni",
+    "name": "Bouquet garni",
+    "note": "Hierbas leñosas para fondos."
+   },
+   {
+    "id": "salsa-verde",
+    "name": "Salsa verde",
+    "note": "La hierba como protagonista."
+   },
+   {
+    "id": "gremolata",
+    "name": "Gremolata",
+    "note": "Perejil, cítrico y ajo para terminar."
+   }
+  ],
+  "keys": [
+   "Tiernas al final, leñosas en la cocción.",
+   "Cuchillo muy afilado y un solo corte: picar mucho las oscurece.",
+   "Secas del todo antes de cortar.",
+   "La albahaca no quiere frío fuerte.",
+   "Los tallos tiernos (perejil, cilantro) tienen mucho sabor: al fondo o al aceite."
+  ],
+  "errors": [
+   {
+    "p": "Se oscurecen al cortarlas",
+    "fix": "Cuchillo sin filo o se picaron de más. Afila y corta una vez."
+   },
+   {
+    "p": "Aceite verde que se vuelve marrón",
+    "fix": "No se escaldó ni se enfrió rápido. Escalda unos segundos y corta en hielo."
+   },
+   {
+    "p": "No huelen a nada en el plato",
+    "fix": "Se cocieron. Añádelas al final."
+   }
+  ],
+  "history": "Las hierbas silvestres y de huerto han perfumado la cocina mediterránea desde siempre; en Ibiza el romero, el tomillo, el hinojo y la hierbabuena son parte del paisaje y de la cocina.",
+  "uses": [
+   "Acabado de platos",
+   "Aliños y salsas verdes",
+   "Fondos y guisos",
+   "Aceites de hierbas",
+   "Infusiones y postres"
+  ],
+  "keep": "Tiernas en frío, envueltas en papel húmedo; leñosas en lugar fresco o secas.",
+  "pro": "Corta las hierbas para el pase en pequeñas cantidades a lo largo del servicio. Aceites verdes en biberón, en frío.",
+  "related": [
+   "bouquet-garni",
+   "salsa-verde",
+   "gremolata",
+   "aceites-aromatizados"
+  ]
+ },
+ {
+  "id": "aceite-de-oliva",
+  "name": "Aceite de oliva",
+  "name_en": "Olive oil",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "aove",
+   "aceite de oliva virgen extra",
+   "variedades de aceituna",
+   "arbequina",
+   "picual",
+   "hojiblanca",
+   "cata de aceite"
+  ],
+  "summary": "Qué distingue a cada aceite, cuál usar en crudo, para cocinar y para freír, y cómo catarlo para elegir el de cada plato.",
+  "what": "El aceite de oliva virgen extra es un zumo de aceituna: su sabor depende de la variedad, del momento de la cosecha y de cómo se ha elaborado. Los aceites de cosecha temprana son más verdes, amargos y picantes; los de aceituna madura, más suaves y dulces. Elegir el aceite de cada plato es tan importante como elegir la sal.",
+  "method": [
+   "Cata en vaso pequeño, templado en la mano y tapado unos segundos.",
+   "Huele: fruta verde (hierba, tomatera, alcachofa) o madura (manzana, plátano, fruto seco).",
+   "Prueba un sorbo y nota el amargor en la lengua y el picor en la garganta: son señales de calidad, no defectos.",
+   "Apunta en la libreta qué aceite va con qué plato.",
+   "Para cocinar, un virgen extra más suave; para terminar en crudo, el de más personalidad."
+  ],
+  "ratios": [
+   {
+    "use": "Terminar un plato en crudo",
+    "ratio": "Unas gotas o un hilo al final",
+    "note": "El aceite más aromático."
+   },
+   {
+    "use": "Freír",
+    "ratio": "Aceite de oliva a 170-180 °C",
+    "note": "Ver la fritura."
+   },
+   {
+    "use": "Confitar",
+    "ratio": "Aceite suave a 60-90 °C según el producto",
+    "note": "Ver el confitado."
+   }
+  ],
+  "variants": [
+   {
+    "id": "fritura",
+    "name": "Fritura",
+    "note": "El aceite de oliva aguanta muy bien la fritura."
+   },
+   {
+    "id": "confitado",
+    "name": "Confitado",
+    "note": "Cocinar despacio en aceite."
+   },
+   {
+    "id": "aceites-aromatizados",
+    "name": "Aceites aromatizados",
+    "note": "El aceite como vehículo de aromas."
+   }
+  ],
+  "keys": [
+   "Amargo y picante son virtudes en un virgen extra.",
+   "Un aceite por uso: el de terminar no es el de freír.",
+   "Luz y calor lo estropean: botella oscura y lejos del fogón.",
+   "El aceite nuevo de la cosecha tiene su momento: aprovéchalo en crudo.",
+   "Cata en vaso, nunca solo en pan."
+  ],
+  "errors": [
+   {
+    "p": "Sabe a rancio o a moho",
+    "fix": "Aceite viejo o mal guardado. Cambia la botella y guárdala lejos de la luz y del calor."
+   },
+   {
+    "p": "Tapa el sabor del plato",
+    "fix": "Aceite muy intenso en un producto delicado. Elige uno más suave para ese plato."
+   },
+   {
+    "p": "Amarga la mayonesa",
+    "fix": "Virgen extra muy amargo batido a máquina. Mezcla con un aceite suave."
+   }
+  ],
+  "history": "El aceite de oliva es la grasa de la cocina mediterránea desde la antigüedad; España es uno de los grandes productores, con muchas variedades de aceituna distintas.",
+  "uses": [
+   "Aliños",
+   "Terminar platos",
+   "Fritura y confitado",
+   "Emulsiones",
+   "Repostería"
+  ],
+  "keep": "En recipiente opaco y cerrado, lejos de la luz y del calor; mejor consumir dentro del año de la cosecha.",
+  "pro": "Ten dos o tres aceites con su ficha (variedad y uso) y en el pase el de terminar en biberón. Apunta en cada plato cuál lleva.",
+  "related": [
+   "vinagreta",
+   "mayonesa",
+   "fritura",
+   "confitado",
+   "aceites-aromatizados"
+  ]
  }
 ]
