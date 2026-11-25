@@ -72,7 +72,7 @@ export async function adoptIdea(idea, source) {
  } catch (e) { toast(friendly(e, t('No se pudo crear el plato. Inténtalo de nuevo.', 'The dish could not be created. Please try again.')), 'error'); return null; }
 }
 
-export const emptyState = (ic, title, text, action = '') => '<div class="empty">' + icon(ic) + '<h3>' + esc(title) + '</h3><p>' + esc(text) + '</p>' + action + '</div>';
+export const emptyState = (ic, title, text, action = '') => '<div class="empty">' + icon(ic) + '<h2>' + esc(title) + '</h2><p>' + esc(text) + '</p>' + action + '</div>';
 export const sectionHead = (title, link = '', sub = '') => '<header class="sec-head"><div><h2>' + esc(title) + '</h2>' + (sub ? '<p>' + esc(sub) + '</p>' : '') + '</div>' + link + '</header>';
 export const moreLink = (href, label) => '<a class="more" href="' + href + '">' + esc(label) + icon('right') + '</a>';
 export const skeleton = (n = 3) => '<div class="sk-list" aria-hidden="true">' + '<div class="sk"></div>'.repeat(n) + '</div>';

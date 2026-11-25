@@ -51,7 +51,7 @@ export function render() {
 }
 function cardHtml() {
  const s = session;
- if (!s.list.length) return '<div class="empty">' + icon('check') + '<h3>' + esc(t('Nada que repasar en este tema', 'Nothing to review in this topic')) + '</h3><p>' + esc(t('Vuelve mañana o elige otro tema.', 'Come back tomorrow or choose another topic.')) + '</p></div>';
+ if (!s.list.length) return '<div class="empty">' + icon('check') + '<h2>' + esc(t('Nada que repasar en este tema', 'Nothing to review in this topic')) + '</h2><p>' + esc(t('Vuelve mañana o elige otro tema.', 'Come back tomorrow or choose another topic.')) + '</p></div>';
  if (s.at >= s.list.length) return '<div class="trdone"><h2>' + esc(t('Tanda terminada', 'Round finished')) + '</h2><p>' + esc(t('Sabías ', 'You knew ') + s.right + t(' de ', ' of ') + s.list.length + '.') + (s.wrong ? ' ' + esc(t('Las que has fallado vuelven mañana.', 'The ones you missed come back tomorrow.')) : '') + '</p><div class="row-actions row-left"><button type="button" class="btn primary" data-tr="more">' + icon('refresh') + esc(t('Otra tanda', 'Another round')) + '</button><a class="btn ghost" href="#/hoy">' + esc(t('Hecho por hoy', 'Done for today')) + '</a></div></div>';
  const c = s.list[s.at];
  const label = (CATS.find(x => x[0] === c.cat) || CATS[0]);

@@ -50,7 +50,7 @@ const escalar = {
  html() {
   const subs = liveSubs().filter(x => x.items.length), dishes = liveDishes().filter(d => d.components.some(c => c.items.some(i => i.q)));
   return '<div class="tgrid"><section class="card"><h2>' + esc(t('La receta', 'The recipe')) + '</h2>' +
-   (subs.length || dishes.length ? '<div class="tfield"><label for="scFrom">' + esc(t('Traer de tu libreta', 'Bring from your notebook')) + '</label><select id="scSource"><option value="">' + esc(t('Escribirla o pegarla aquí', 'Type or paste it here')) + '</option>' +
+   (subs.length || dishes.length ? '<div class="tfield"><label for="scSource">' + esc(t('Traer de tu libreta', 'Bring from your notebook')) + '</label><select id="scSource"><option value="">' + esc(t('Escribirla o pegarla aquí', 'Type or paste it here')) + '</option>' +
     (subs.length ? '<optgroup label="' + esc(t('Subrecetas', 'Sub-recipes')) + '">' + subs.map(x => '<option value="s:' + esc(x.id) + '">' + esc(x.name) + '</option>').join('') + '</optgroup>' : '') +
     (dishes.length ? '<optgroup label="' + esc(t('Platos (cantidades por ración)', 'Dishes (quantities per portion)')) + '">' + dishes.map(d => '<option value="d:' + esc(d.id) + '">' + esc(d.name) + '</option>').join('') + '</optgroup>' : '') + '</select></div>' : '') +
    '<div class="tfield"><label for="scText">' + esc(t('Ingredientes, uno por línea', 'Ingredients, one per line')) + '</label><textarea id="scText" rows="9" placeholder="' + esc(t('1 l de leche\n60 g de mantequilla\n60 g de harina\nSal, c/s', '1 l milk\n60 g butter\n60 g flour\nSalt, to taste')) + '"></textarea></div>' +

@@ -257,7 +257,7 @@ function pairingHtml() {
 }
 
 // ---------- Pruebas de cata ----------
-const stars = n => '<span class="stars" aria-label="' + n + ' ' + esc(t('de 5', 'out of 5')) + '">' + [1, 2, 3, 4, 5].map(k => '<i class="' + (k <= n ? 'on' : '') + '">' + icon('star') + '</i>').join('') + '</span>';
+const stars = n => '<span class="stars" role="img" aria-label="' + n + ' ' + esc(t('de 5', 'out of 5')) + '">' + [1, 2, 3, 4, 5].map(k => '<i class="' + (k <= n ? 'on' : '') + '">' + icon('star') + '</i>').join('') + '</span>';
 // Cómo ha ido evolucionando la nota del plato, prueba a prueba.
 function testTrend(list) {
  if (list.length < 2) return '';
@@ -439,7 +439,7 @@ export function render(params) {
   '<nav class="jump dish-jump" aria-label="' + esc(t('Partes del plato', 'Parts of the dish')) + '">' +
   (editable() ? '<button type="button" class="jump-add" data-act="catalog">' + icon('plus') + esc(t('Añadir al plato', 'Add to dish')) + '</button>' : '') +
   [['compSec', t('Mesa', 'Workbench')], ['analysis', t('Sabores', 'Flavours')], ['fichaSec', t('Ficha', 'Sheet')], ['imgSec', t('Imagen', 'Image')], ['adviceSec', t('Consejo', 'Advice')], ['pairSec', t('Maridaje', 'Pairing')], ['testsSec', t('Catas', 'Tastings')], ['notesSec', t('Notas', 'Notes')]].map(([id, label]) => '<button type="button" data-jump="' + id + '">' + esc(label) + '</button>').join('') + '</nav><div class="bench dish-bench">' +
-  '<header class="bench-head card" id="benchHead">' + headHtml() + '</header>' +
+  '<h1 class="sr">' + esc(cur.name || t('Plato nuevo', 'New dish')) + '</h1><header class="bench-head card" id="benchHead">' + headHtml() + '</header>' +
   '<section class="card dish-compose" id="compSec"><div class="compose-head"><div><h2>' + esc(t('Mesa de trabajo', 'Workbench')) + '</h2>' +
   (editable() ? '<p>' + esc(t('Añade ingredientes, elaboraciones y técnicas al plato.', 'Add ingredients, preparations and techniques to the dish.')) + '</p>' : '') + '</div>' +
   (editable() ? '<button type="button" class="btn primary compose-add" data-act="catalog">' + icon('plus') + esc(t('Añadir al plato', 'Add to dish')) + '</button>' : '') +
