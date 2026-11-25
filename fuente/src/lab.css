@@ -927,3 +927,14 @@ html.cooking .tabs{display:none}html.cooking .view{padding-bottom:calc(32px + en
 .craft-acts{display:flex;flex-wrap:wrap;gap:0 16px;margin-top:4px}.craft-acts .linkbtn{min-height:40px;padding:0}
 /* Móvil: el título de página ocupa todo el ancho y los botones bajan debajo. */
 @media (max-width:640px){.page-head-row{flex-direction:column;align-items:stretch}.page-head-row>.btn,.page-head-row>.row-actions{align-self:flex-start}.page-head-row .row-actions{justify-content:flex-start;margin-top:0}.sec-head{flex-wrap:wrap}.sec-head>.linkbtn,.sec-head>.btn{margin-left:auto}}
+
+/* ---------- Proveedores ---------- */
+.spcards{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+.spcard{display:grid;gap:8px;align-content:start;padding:16px;border:1px solid var(--ink);background:var(--card);box-shadow:var(--shadow-s)}
+.spcard header{display:flex;justify-content:space-between;align-items:baseline;gap:12px}.spcard header strong{font-family:var(--serif);font-weight:400;font-size:21px;line-height:1.15}
+.sprating{color:var(--gold);letter-spacing:0;white-space:nowrap}.sprating i{font-style:normal;color:var(--line2)}
+.spprod{color:var(--ink2);font-size:14.5px}.spnotes{font-size:14.5px;color:var(--ink2);border-left:var(--rule-bar) solid var(--gold-2);padding-left:12px}
+.spcard .row-actions{margin-top:4px}.spcard .btn{min-height:40px}
+.sprate{flex-wrap:wrap}.sprate .seg-btn{cursor:pointer}.sprate .seg-btn:focus-within{outline:3px solid var(--ember);outline-offset:1px}
+.prsup th{padding-top:16px;font-family:var(--sans);font-weight:700;color:var(--ink);font-size:15px}.prsup .linkbtn{min-height:32px;margin-left:8px;font-weight:600}
+.kv-suppliers{margin:16px 0}

@@ -22,6 +22,7 @@ import * as cook from './views/cook.js';
 import * as journal from './views/journal.js';
 import * as career from './views/career.js';
 import * as train from './views/train.js';
+import * as suppliers from './views/suppliers.js';
 import {startTimers} from './timers.js';
 import {startFinder} from './finder.js';
 import {startVoice} from './voice.js';
@@ -32,7 +33,7 @@ import {iaOn, iaConfig, saveIa, askIa} from './ia.js';
 import {radarPrompt, trendsFromReply} from './ai.js';
 import {addTrends} from './store.js';
 
-const VIEWS = {hoy: home, radar, crear: create, plato: dish, libreta: notebook, sabores: flavors, cocina: kitchenView, preguntar: ask, menus, subreceta: sub, temporada: season, biblioteca: saber, saber, herramientas: tools, cocinar: cook, diario: journal, trayectoria: career, entrenar: train};
+const VIEWS = {hoy: home, radar, crear: create, plato: dish, libreta: notebook, sabores: flavors, cocina: kitchenView, preguntar: ask, menus, subreceta: sub, temporada: season, biblioteca: saber, saber, herramientas: tools, cocinar: cook, diario: journal, trayectoria: career, entrenar: train, proveedores: suppliers};
 const NAV = [['hoy', 'flame', () => t('Hoy', 'Today')], ['radar', 'radar', () => t('Radar', 'Radar')], ['crear', 'plus', () => t('Crear', 'Create')], ['libreta', 'book', () => t('Libreta', 'Notebook')], ['biblioteca', 'library', () => t('Biblioteca', 'Library')]];
 const app = () => $('#app');
 let current = {name: '', params: [], cleanup: null};
@@ -72,7 +73,7 @@ function badges() {
  $$('[data-badge=radar]').forEach(b => { b.hidden = !n; b.textContent = n > 9 ? '9+' : String(n); b.setAttribute('aria-label', n + ' ' + t('avisos nuevos', 'new alerts')); });
 }
 function markNav() {
- const active = ['plato', 'menus', 'cocinar'].includes(current.name) ? 'libreta' : current.name === 'subreceta' ? 'cocina' : current.name === 'saber' ? 'biblioteca' : current.name;
+ const active = ['plato', 'menus', 'cocinar'].includes(current.name) ? 'libreta' : ['subreceta', 'proveedores'].includes(current.name) ? 'cocina' : current.name === 'saber' ? 'biblioteca' : current.name;
  $$('[data-nav]').forEach(a => { const on = a.dataset.nav === active; a.classList.toggle('active', on); if (on) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
 }
 function route({keepScroll = false} = {}) {
@@ -128,6 +129,7 @@ function menu({nav = false} = {}) {
    rowItem('a', 'href="#/herramientas" data-go', 'bolt', t('Herramientas', 'Tools'), esc(t('Escalar recetas, temporizadores, mermas, salmueras', 'Scale recipes, timers, yields, brines'))) +
    rowItem('a', 'href="#/sabores" data-go', 'wheel', t('Sabores', 'Flavours'), esc(t('Qué combina con qué y por qué', 'What goes with what and why'))) +
    rowItem('a', 'href="#/temporada" data-go', 'leaf', t('Temporada', 'Season'), esc(t('Qué entra, qué está en su punto y qué se va', 'What comes in, what is at its best and what is leaving'))) +
+   rowItem('a', 'href="#/proveedores" data-go', 'box', t('Proveedores', 'Suppliers'), esc(t('Quién te trae cada cosa y cómo localizarle', 'Who brings you what and how to reach them'))) +
    rowItem('a', 'href="#/cocina" data-go', 'pan', t('Mi cocina', 'My kitchen'), esc(t('Tus básicos, tu equipo y lo que no quieres', 'Your staples, equipment and what you avoid'))) + '</div>' : '') +
   '<div class="set-group"><p class="set-label">ChatGPT</p>' +
   rowItem('button', 'type="button" data-act="ia"', 'chat', on ? t('ChatGPT en la app', 'ChatGPT in the app') : t('Conectar ChatGPT a la app', 'Connect ChatGPT to the app'),

@@ -5,13 +5,14 @@ import {esc, icon, $, $$, sheet} from './ui.js';
 import {state, liveDishes, liveSubs, liveDocs} from './store.js';
 import {search as saberSearch} from './saber/index.js';
 import {toolList} from './views/tools.js';
+import {suppliers} from './views/suppliers.js';
 
 const norm = v => String(v || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/\s+/g, ' ').trim();
 const SECTIONS = () => [
  ['#/hoy', 'flame', t('Hoy', 'Today')], ['#/radar', 'radar', t('Radar', 'Radar')], ['#/crear', 'plus', t('Crear un plato', 'Create a dish')], ['#/crear/ideas', 'spark', t('Dame ideas', 'Give me ideas')],
  ['#/crear/importar', 'down', t('Importar receta', 'Import recipe')], ['#/libreta', 'book', t('Libreta', 'Notebook')], ['#/menus', 'book', t('Cartas y menús', 'Menus')], ['#/biblioteca', 'library', t('Biblioteca', 'Library')],
  ['#/diario', 'edit', t('Diario de cocina', 'Kitchen journal')], ['#/diario/nuevo', 'edit', t('Escribir el diario de hoy', 'Write today\'s journal')], ['#/trayectoria', 'star', t('Mi trayectoria', 'My career')], ['#/hoy', 'flame', t('Reto de la semana', 'Challenge of the week')], ['#/entrenar', 'brain', t('Entrenar: tarjetas de repaso', 'Train: review cards')],
- ['#/herramientas', 'bolt', t('Herramientas', 'Tools')], ['#/sabores', 'wheel', t('Sabores', 'Flavours')], ['#/temporada', 'leaf', t('Temporada', 'Season')], ['#/preguntar', 'chat', t('Preguntar', 'Ask')], ['#/cocina', 'pan', t('Mi cocina', 'My kitchen')]
+ ['#/herramientas', 'bolt', t('Herramientas', 'Tools')], ['#/sabores', 'wheel', t('Sabores', 'Flavours')], ['#/temporada', 'leaf', t('Temporada', 'Season')], ['#/preguntar', 'chat', t('Preguntar', 'Ask')], ['#/cocina', 'pan', t('Mi cocina', 'My kitchen')], ['#/proveedores', 'box', t('Proveedores', 'Suppliers')]
 ];
 // Puntuación sencilla: todas las palabras tienen que estar; vale más si están en el nombre y al principio.
 function score(q, name, extra = '') {
@@ -30,6 +31,7 @@ export function find(q) {
  if (lib.length) groups.push({label: t('Biblioteca', 'Library'), rows: lib.map((e, k) => ({href: '#/biblioteca/' + e.id, ic: 'library', title: e.name, sub: e.summary || '', s: 100 - k}))});
  add(t('Diario', 'Journal'), liveDocs('diario').map(e => ({href: '#/diario/' + encodeURIComponent(e.id), ic: 'edit', title: new Date(e.day + 'T12:00:00').toLocaleDateString(en() ? 'en-GB' : 'es-ES', {weekday: 'long', day: 'numeric', month: 'long'}), sub: [e.learned, e.good, e.bad].filter(Boolean)[0] || '', s: score(q, '', [e.good, e.bad, e.learned, e.ideas, (e.dishNames || []).join(' ')].join(' '))})));
  if (state.kb) add(t('Productos', 'Products'), state.kb.list.map(i => ({href: '#/sabores/' + i.id, ic: 'wheel', title: en() ? i.en : i.es, sub: t('Con qué combina', 'What it pairs with'), s: score(q, en() ? i.en : i.es, (i.aka || []).join(' '))})));
+ add(t('Proveedores', 'Suppliers'), suppliers().map(s => ({href: '#/proveedores', ic: 'box', title: s.name, sub: s.products || '', s: score(q, s.name, [s.products, s.notes].join(' '))})));
  add(t('Herramientas', 'Tools'), toolList().map(x => ({href: '#/herramientas/' + x.id, ic: x.ic, title: x.name, sub: x.sub, s: score(q, x.name, x.sub)})));
  add(t('Ir a', 'Go to'), SECTIONS().map(([href, ic, title]) => ({href, ic, title, sub: '', s: score(q, title)})));
  return groups;

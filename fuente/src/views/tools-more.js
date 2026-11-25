@@ -4,6 +4,7 @@ import {esc, icon, $, $$, toast} from '../ui.js';
 import {liveMenus, liveDishes, liveDocs, subById, dishById, docById as docByIdSafe, saveDoc as saveDocSafe} from '../store.js';
 import {ALLERGENS} from '../ai-core.js';
 import {copy} from '../ai.js';
+import {supplierFor} from './suppliers.js';
 
 const parseNum = v => { const s = String(v ?? '').trim().replace(',', '.'); const n = Number(s); return Number.isFinite(n) ? n : NaN; };
 const nice = n => { const a = Math.abs(n), r = a >= 1000 ? Math.round(n / 10) * 10 : a >= 100 ? Math.round(n) : a >= 10 ? Math.round(n * 10) / 10 : Math.round(n * 100) / 100; return r.toLocaleString(locale(), {maximumFractionDigits: 2, useGrouping: false}); };
@@ -68,13 +69,17 @@ export const produccion = {
   for (const s of subs.values()) { const y = qtyOf(s.sub?.yield); s.batches = y && y.unit === s.unit && y.n > 0 ? Math.ceil(s.total / y.n * 10) / 10 : null; }
   // Pedido en bruto con tus rendimientos guardados (si el nombre coincide).
   const withYield = o => { const k = norm(o.n), y = yields.find(r => norm(r.name).includes(k) || k.includes(norm(r.name).split(' ')[0])); return y && o.unit !== 'ud' && y.pct > 0 ? {...o, gross: o.total / (y.pct / 100), yield: y} : o; };
-  const ord = [...order.values()].map(withYield).sort((a, b) => a.n.localeCompare(b.n, 'es'));
+  const ord = [...order.values()].map(withYield).map(o => ({...o, sup: supplierFor(o.n)})).sort((a, b) => String(a.sup?.name || '\uffff').localeCompare(String(b.sup?.name || '\uffff'), 'es') || a.n.localeCompare(b.n, 'es'));
+  const bySup = new Map();
+  for (const o of ord) { const k = o.sup?.id || ''; if (!bySup.has(k)) bySup.set(k, {sup: o.sup, rows: []}); bySup.get(k).rows.push(o); }
+  const supText = g => g.rows.map(o => '  ' + show({n: o.gross || o.total, unit: o.unit}) + '  ' + o.n + (o.gross ? t(' (en bruto)', ' (gross)') : '')).join('\n');
   const text = [t('PRODUCCIÓN para ', 'PRODUCTION for ') + covers + t(' cubiertos', ' covers'), ...prep.flatMap(p => ['', p.d.name + ' (' + p.portions + t(' raciones)', ' portions)'), ...p.rows.map(r => '  ' + r.q + '  ' + r.n)]),
    ...(subs.size ? ['', t('SUBRECETAS', 'SUB-RECIPES'), ...[...subs.values()].map(s => '  ' + show({n: s.total, unit: s.unit}) + '  ' + s.n + (s.batches ? ' (' + nice(s.batches) + t(' tandas)', ' batches)') : ''))] : []),
-   '', t('PEDIDO', 'ORDER'), ...ord.map(o => '  ' + show({n: o.gross || o.total, unit: o.unit}) + '  ' + o.n + (o.gross ? t(' (en bruto)', ' (gross)') : '')), ...[...loose.values()].map(l => '  c/s  ' + l.n)].join('\n');
+   '', t('PEDIDO', 'ORDER'), ...[...bySup.values()].flatMap(g => [(g.sup ? g.sup.name : t('Sin proveedor', 'No supplier')) + ':', supText(g)]), ...[...loose.values()].map(l => '  c/s  ' + l.n)].join('\n');
+  out.dataset.sups = JSON.stringify([...bySup.values()].filter(g => g.sup?.phone).map(g => ({phone: String(g.sup.phone).replace(/[^\d]/g, ''), text: t('Pedido para ', 'Order for ') + covers + t(' cubiertos:\n', ' covers:\n') + supText(g)})));
   out.dataset.text = text;
   out.innerHTML = '<div class="row-actions row-left"><button type="button" class="btn ghost" data-act="pr-copy">' + icon('copy') + esc(t('Copiar todo', 'Copy all')) + '</button><button type="button" class="btn ghost" data-act="pr-print">' + icon('down') + esc(t('Imprimir', 'Print')) + '</button></div>' +
-   '<h3>' + esc(t('Pedido', 'Order')) + '</h3><table class="ktable"><tbody>' + ord.map(o => '<tr><td>' + esc(o.n) + (o.yield ? '<small class="prsmall">' + esc(t('Con tu rendimiento del ', 'With your yield of ') + nice(o.yield.pct) + ' %: ' + show({n: o.total, unit: o.unit}) + t(' limpio', ' trimmed')) + '</small>' : '') + '</td><td class="q">' + esc(show({n: o.gross || o.total, unit: o.unit})) + '</td></tr>').join('') +
+   '<h3>' + esc(t('Pedido', 'Order')) + '</h3><table class="ktable"><tbody>' + [...bySup.values()].map((g, gi) => '<tr class="prsup"><th colspan="2">' + esc(g.sup ? g.sup.name : t('Sin proveedor apuntado', 'No supplier noted')) + (g.sup?.phone ? ' <button type="button" class="linkbtn" data-wa="' + gi + '">' + esc(t('Mandar por WhatsApp', 'Send on WhatsApp')) + '</button>' : '') + '</th></tr>' + g.rows.map(o => '<tr><td>' + esc(o.n) + (o.yield ? '<small class="prsmall">' + esc(t('Con tu rendimiento del ', 'With your yield of ') + nice(o.yield.pct) + ' %: ' + show({n: o.total, unit: o.unit}) + t(' limpio', ' trimmed')) + '</small>' : '') + '</td><td class="q">' + esc(show({n: o.gross || o.total, unit: o.unit})) + '</td></tr>').join('')).join('') +
    [...loose.values()].map(l => '<tr><td>' + esc(l.n) + '<small class="prsmall">' + esc(t('Sin cantidad en la ficha de ', 'No quantity in the sheet of ') + [...l.dishes].join(', ')) + '</small></td><td class="q">c/s</td></tr>').join('') + '</tbody></table>' +
    (subs.size ? '<h3>' + esc(t('Subrecetas a preparar', 'Sub-recipes to prepare')) + '</h3><table class="ktable"><tbody>' + [...subs.values()].map(s => '<tr><td><a href="#/subreceta/' + esc(s.sub.id) + '">' + esc(s.n) + '</a>' + (s.batches ? '<small class="prsmall">' + esc(nice(s.batches) + t(' tandas de ', ' batches of ') + s.sub.yield) + '</small>' : '') + '</td><td class="q">' + esc(show({n: s.total, unit: s.unit})) + '</td></tr>').join('') + '</tbody></table>' : '') +
    '<h3>' + esc(t('Producción por plato', 'Production per dish')) + '</h3>' + prep.map(p => '<details class="fold"><summary>' + esc(p.d.name) + ' <span class="count">' + p.portions + t(' raciones', ' portions') + '</span></summary><table class="ktable"><tbody>' + p.rows.map(r => '<tr><td>' + esc(r.n) + '</td><td class="q">' + esc(r.q) + '</td></tr>').join('') + '</tbody></table></details>').join('');
@@ -84,6 +89,8 @@ export const produccion = {
   root.addEventListener('change', e => { if (e.target.id === 'prMenu') { prodMenu = e.target.value; redo(); } });
   root.addEventListener('click', async e => {
    if (e.target.closest('[data-act=pr-copy]')) { const ok = await copy($('#prOut', root).dataset.text || ''); toast(ok ? t('Copiado.', 'Copied.') : t('No se pudo copiar.', 'It could not be copied.'), ok ? 'info' : 'error'); }
+   const wa = e.target.closest('[data-wa]');
+   if (wa) { const all = [...JSON.parse($('#prOut', root).dataset.sups || '[]')], groups = [...$('#prOut', root).querySelectorAll('[data-wa]')].map(b => b.dataset.wa), k = groups.indexOf(wa.dataset.wa), g = all[k]; if (g) window.open('https://wa.me/' + g.phone + '?text=' + encodeURIComponent(g.text), '_blank', 'noopener'); }
    if (e.target.closest('[data-act=pr-print]')) printText('<pre class="prprint">' + esc($('#prOut', root).dataset.text || '') + '</pre>');
   });
   $('#prDishes', root).innerHTML = produccion.dishes(root);

@@ -51,6 +51,17 @@ ok(lb.includes('Romesco') && lb.includes('30/11/26') && lb.includes('Frutos de c
 await page.evaluate(() => { window.print = () => { window.__n = document.querySelectorAll('#printFicha .lbl').length; }; });
 await page.fill('#lbCount', '9'); await page.click('[data-act=lb-print]'); await wait(300);
 ok(await page.evaluate(() => window.__n) === 9, 'no imprime las etiquetas pedidas');
+// Proveedores: alta, búsqueda y pedido agrupado por proveedor
+await go('#/cocina'); ok(await page.locator('a[href="#/proveedores"]').count() >= 1, 'Mi cocina no lleva a los proveedores');
+await go('#/proveedores'); await page.click('[data-act=new]'); await page.waitForSelector('#spform');
+await page.fill('#sp-name', 'Pescados Juan'); await page.selectOption('#sp-kind', 'pescado'); await page.fill('#sp-products', 'calamar, gamba roja'); await page.fill('#sp-phone', '+34 600 111 222');
+await page.click('.sprate label:nth-child(5)'); await page.click('#spform button[type=submit]'); await wait(500);
+ok((await page.textContent('.spcards')).includes('Pescados Juan') && await page.locator('a[href^="tel:"]').count() === 1, 'no guarda el proveedor');
+await page.fill('#spq', 'gamba'); await wait(100); ok(await page.locator('.spcard:not([hidden])').count() === 1, 'no busca por producto');
+await go('#/herramientas/produccion'); await page.fill('#prCovers', '40'); await page.dispatchEvent('#prCovers', 'input'); await wait(200);
+const grouped = await page.textContent('#prOut');
+ok(grouped.includes('Pescados Juan') && grouped.includes('Mandar por WhatsApp'), 'el pedido no se agrupa por proveedor: ' + grouped.slice(0, 200));
+await page.keyboard.press('Control+k'); await page.fill('#finderQ', 'pescados juan'); await wait(150); ok((await page.textContent('#finderRes')).includes('Proveedores'), 'el buscador no encuentra proveedores'); await page.keyboard.press('Escape');
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();
 if (fails.length) { console.error('FALLOS en buscador, producción y etiquetas:\n - ' + fails.join('\n - ')); process.exit(1); }
