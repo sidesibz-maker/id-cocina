@@ -828,5 +828,98 @@
    "masa-quebrada",
    "puntos-del-huevo"
   ]
+ },
+ {
+  "id": "helados-y-sorbetes",
+  "name": "Helados y sorbetes",
+  "name_en": "Ice creams and sorbets",
+  "cat": "dulce",
+  "group": "Frío",
+  "aka": [
+   "helado",
+   "sorbete",
+   "granizado",
+   "mantecado",
+   "equilibrio de azucar",
+   "helado salado"
+  ],
+  "summary": "Equilibrar azúcar, grasa y sólidos para que un helado o un sorbete quede cremoso y no se haga hielo; también salados.",
+  "what": "Un helado cremoso depende del equilibrio: el azúcar baja el punto de congelación y evita el hielo duro; la grasa y los sólidos dan cuerpo; el aire que entra al mantecar da ligereza. Un sorbete es fruta, agua y azúcar sin grasa. Un granizado se raspa mientras congela y tiene cristales grandes a propósito.",
+  "method": [
+   "Prepara la base: para helado, una [[crema-inglesa]] o una base de leche y nata; para sorbete, fruta triturada con almíbar.",
+   "Ajusta el dulzor: la base fría tiene que saber algo más dulce de lo que quieres, porque el frío apaga el sabor.",
+   "Deja madurar la base en frío unas horas para que se hidrate y gane cuerpo.",
+   "Mantécala en la heladora y pasa a congelar.",
+   "Para granizado, congela en bandeja y rasca con un tenedor cada 30-45 minutos."
+  ],
+  "ratios": [
+   {
+    "use": "Sorbete de fruta",
+    "ratio": "Unos 25-30 % de azúcar sobre el total",
+    "note": "Según el dulzor de la fruta."
+   },
+   {
+    "use": "Helado de crema",
+    "ratio": "Unos 16-20 % de azúcar y 8-12 % de grasa",
+    "note": "Base de crema inglesa."
+   },
+   {
+    "use": "Granizado",
+    "ratio": "Menos azúcar, 15-20 %",
+    "note": "Cristales grandes."
+   },
+   {
+    "use": "Helado salado",
+    "ratio": "Menos azúcar y algo de glucosa o dextrosa para la textura",
+    "note": "Aceite, queso, tomate, hierbas."
+   }
+  ],
+  "variants": [
+   {
+    "id": "crema-inglesa",
+    "name": "Crema inglesa",
+    "note": "La base clásica del helado de crema."
+   },
+   {
+    "id": "caramelo",
+    "name": "Caramelo y almíbares",
+    "note": "El almíbar del sorbete."
+   }
+  ],
+  "keys": [
+   "La base fría tiene que saber un poco más dulce de lo que buscas.",
+   "Madurar la base en frío mejora la textura.",
+   "Poco azúcar da hielo duro; mucho, un helado que no aguanta.",
+   "Atempera unos minutos antes de bolear.",
+   "En salado, el azúcar también hace falta para la textura."
+  ],
+  "errors": [
+   {
+    "p": "Duro y con cristales",
+    "fix": "Poco azúcar o sólidos. Sube azúcar o añade algo de glucosa o dextrosa."
+   },
+   {
+    "p": "Blando, no se sostiene",
+    "fix": "Demasiado azúcar o alcohol. Reduce."
+   },
+   {
+    "p": "Sabe a poco",
+    "fix": "El frío apaga el sabor. Concentra la base y sazona más."
+   }
+  ],
+  "history": "Los sorbetes y granizados de fruta y nieve tienen una larga tradición mediterránea; los helados de crema llegaron después y hoy conviven con helados salados en muchas cartas.",
+  "uses": [
+   "Postres",
+   "Prepostres",
+   "Acompañamientos fríos de platos salados",
+   "Granizados de verano"
+  ],
+  "keep": "Congelado y tapado; mejor en pocos días, porque pierde textura.",
+  "pro": "Mantecar el mismo día o la víspera del servicio. Apunta la receta con los porcentajes para repetirla igual con otra fruta.",
+  "related": [
+   "crema-inglesa",
+   "caramelo",
+   "contraste-y-equilibrio"
+  ]
  }
 ]

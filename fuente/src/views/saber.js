@@ -18,8 +18,8 @@ export const presetSaber = q => { query = String(q || ''); category = ''; fixes 
 const norm = v => String(v || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
 const SHELF = {
  salsas: ['drop', t('Madres y derivadas, emulsiones, salsas españolas y del mundo.', 'Mother sauces and derivatives, emulsions, Spanish and world sauces.')],
- tecnicas: ['flame', t('Punto de la carne, sellado, baja temperatura, confitado, fritura, curado, fermentación y ahumado.', 'Meat doneness, searing, low temperature, confit, frying, curing, fermentation and smoking.')],
- dulce: ['star', t('Cremas, merengues, caramelo, ganache, masas quebradas y masa madre.', 'Creams, meringues, caramel, ganache, shortcrust and sourdough.')],
+ tecnicas: ['flame', t('Fuego y brasa, punto de la carne, baja temperatura, confitado, fritura, curado, fermentación, ahumado, espumas y crujientes.', 'Fire and embers, meat doneness, low temperature, confit, frying, curing, fermentation, smoking, foams and crisps.')],
+ dulce: ['star', t('Cremas, merengues, caramelo, ganache, helados, masas quebradas, pasta fresca y masa madre.', 'Creams, meringues, caramel, ganache, ice cream, shortcrust, fresh pasta and sourdough.')],
  producto: ['box', t('Arroces, cocción de marisco, limpiar pescado, cortes de vacuno y maduración.', 'Rice dishes, cooking shellfish, cleaning fish, beef cuts and dry-ageing.')],
  creatividad: ['spark', t('Construir un plato, contraste, acidez, umami, ritmo de un menú y cómo contar un plato.', 'Building a dish, contrast, acidity, umami, pacing a menu and describing a dish.')],
  fondos: ['pan', t('Fondos claros y oscuros, fumets, jugos, glasas y consomés.', 'Light and dark stocks, fish stocks, jus, glazes and consommés.')],

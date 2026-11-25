@@ -914,5 +914,292 @@
    "holandesa",
    "mayonesa"
   ]
+ },
+ {
+  "id": "fuego-y-brasa",
+  "name": "Dominar el fuego y la brasa",
+  "name_en": "Mastering fire and embers",
+  "cat": "tecnicas",
+  "group": "Calor y punto",
+  "technique": "brasa",
+  "aka": [
+   "parrilla",
+   "josper",
+   "horno de brasa",
+   "carbon",
+   "lena",
+   "zonas de calor",
+   "ceniza",
+   "rescoldo"
+  ],
+  "summary": "Encender, leer y repartir la brasa: maderas y carbón, zonas de calor, horno de brasa cerrado y cocinar en el rescoldo.",
+  "what": "Cocinar con brasa es gestionar un calor que cambia todo el rato. La brasa buena no tiene llama: es carbón o madera convertida en ascuas, con calor radiante estable. Se trabaja con zonas (fuerte, media y de reposo) y se mueve el producto, no el fuego. En un horno de brasa cerrado el calor es más intenso y envolvente, y el humo se queda dentro.",
+  "method": [
+   "Enciende con tiempo: el carbón vegetal necesita 30-45 minutos hasta cubrirse de ceniza blanca; la leña, más.",
+   "Reparte la brasa en tres zonas: montón alto para marcar, capa fina para cocinar y un rincón sin brasa para reposar o mantener.",
+   "Comprueba el calor con la mano a unos 10 cm de la parrilla: 2 segundos es fuego fuerte, 4-5 medio, 7-8 suave.",
+   "Limpia y engrasa la parrilla caliente antes de cada tanda.",
+   "Con llamas por la grasa, aparta el producto a la zona sin brasa hasta que pasen; no las apagues con agua.",
+   "En horno de brasa, trabaja con la puerta cerrada y piezas más cortas de tiempo: cocina mucho más rápido que una parrilla abierta."
+  ],
+  "ratios": [
+   {
+    "use": "Marcar carnes y pescados",
+    "ratio": "Zona fuerte, 2 segundos de mano",
+    "note": "Costra rápida."
+   },
+   {
+    "use": "Verduras enteras y piezas gruesas",
+    "ratio": "Zona media, 4-5 segundos de mano",
+    "note": "Tiempo para que el calor entre."
+   },
+   {
+    "use": "En el rescoldo (cebollas, patatas, berenjenas)",
+    "ratio": "Enterradas en ceniza caliente, 30-60 minutos",
+    "note": "Se pelan y queda el interior ahumado."
+   },
+   {
+    "use": "Horno de brasa cerrado",
+    "ratio": "250-350 °C de ambiente",
+    "note": "Cuenta la mitad o un tercio del tiempo de una parrilla."
+   }
+  ],
+  "variants": [
+   {
+    "id": "verduras-a-la-brasa",
+    "name": "Verduras a la brasa",
+    "note": "Dos zonas de calor para verdura."
+   },
+   {
+    "id": "cortes-de-vacuno",
+    "name": "Cortes de vacuno para brasa",
+    "note": "Qué corte va al fuego."
+   },
+   {
+    "id": "ahumado",
+    "name": "Ahumado",
+    "note": "El humo como ingrediente."
+   }
+  ],
+  "keys": [
+   "Se mueve el producto, no la brasa.",
+   "Sin llama: la llama ennegrece y amarga.",
+   "Maderas duras y secas (encina, olivo, sarmiento, frutales); nunca resinosas ni tratadas.",
+   "La parrilla limpia y caliente evita que se pegue.",
+   "Anota en la ficha la zona y el tiempo de cada producto."
+  ],
+  "errors": [
+   {
+    "p": "Sabor a humo amargo o tizne",
+    "fix": "Brasa todavía con llama o grasa ardiendo. Espera a la ceniza blanca y aparta el producto de las llamas."
+   },
+   {
+    "p": "Se pega a la parrilla",
+    "fix": "Parrilla fría o sucia, o producto húmedo. Calienta, cepilla, engrasa y seca el producto."
+   },
+   {
+    "p": "Cocción desigual en servicio",
+    "fix": "La brasa se ha agotado en una zona. Repón carbón encendido aparte y redistribuye entre tandas."
+   }
+  ],
+  "history": "Cocinar sobre brasa es la forma más antigua de cocinar y una de las señas de la cocina mediterránea y del norte de España; los hornos de brasa cerrados la han llevado a muchas cocinas profesionales.",
+  "uses": [
+   "Carnes y pescados",
+   "Verduras enteras",
+   "Pan y tostas",
+   "Salsas tatemadas",
+   "Ahumados"
+  ],
+  "keep": "La ceniza fría se retira a diario; el carbón, seco y cerrado.",
+  "pro": "Enciende con margen antes del servicio y ten un segundo foco de carbón para reponer. Un plano del reparto de zonas por producto ayuda a todo el equipo.",
+  "related": [
+   "verduras-a-la-brasa",
+   "punto-de-la-carne",
+   "sellado-y-reposo",
+   "ahumado",
+   "cortes-de-vacuno"
+  ]
+ },
+ {
+  "id": "espumas-con-sifon",
+  "name": "Espumas con sifón",
+  "name_en": "Siphon foams",
+  "cat": "tecnicas",
+  "group": "Texturas",
+  "technique": "emulsion",
+  "aka": [
+   "sifon",
+   "espuma",
+   "nata montada en sifon",
+   "espuma caliente",
+   "espuma fria",
+   "cargas de gas"
+  ],
+  "summary": "Espumas frías y calientes con sifón: qué base sirve, con qué se estabiliza, cuántas cargas y cómo mantenerlas en servicio.",
+  "what": "El sifón disuelve gas en una base líquida y, al salir, el gas se expande y forma una espuma ligera. La base necesita algo que sostenga las burbujas: grasa (nata), clara, gelatina o almidón. Bien hecha, la espuma lleva mucho sabor con muy poca materia, y se sirve fría o caliente según la base.",
+  "method": [
+   "Prepara una base con mucho sabor y bien colada por chino fino: cualquier grumo atasca la boquilla.",
+   "Añade lo que la estabiliza según sea fría o caliente (ver proporciones).",
+   "Llena el sifón sin pasar de la marca (normalmente tres cuartos) y ciérralo bien.",
+   "Carga el gas, agita con fuerza y deja reposar en frío o en un baño caliente según la espuma.",
+   "Prueba un poco antes de servir y agita entre usos."
+  ],
+  "ratios": [
+   {
+    "use": "Espuma fría con nata",
+    "ratio": "Base y nata 35 % a partes iguales, 1 carga por medio litro",
+    "note": "Reposo en frío 2 horas."
+   },
+   {
+    "use": "Espuma fría con gelatina",
+    "ratio": "2-3 g de gelatina por cada 500 ml de base",
+    "note": "Para bases sin grasa, como zumos."
+   },
+   {
+    "use": "Espuma caliente",
+    "ratio": "Base con 2-3 yemas o 100 g de nata por cada 500 ml",
+    "note": "Mantener al baño maría a 60-65 °C."
+   },
+   {
+    "use": "Cargas",
+    "ratio": "1 carga para 0,5 l; 2 cargas para 1 l",
+    "note": "Según el sifón."
+   }
+  ],
+  "variants": [
+   {
+    "id": "emulsiones",
+    "name": "Emulsiones",
+    "note": "La física que hay detrás."
+   },
+   {
+    "id": "crema-inglesa",
+    "name": "Crema inglesa",
+    "note": "Buena base para espumas dulces."
+   }
+  ],
+  "keys": [
+   "Base muy sabrosa: el aire diluye el sabor.",
+   "Colar siempre por chino fino.",
+   "No llenar de más: la espuma sale líquida.",
+   "Las calientes, al baño maría y nunca a fuego directo.",
+   "Usa solo cargas para alimentos del tipo que pida tu sifón."
+  ],
+  "errors": [
+   {
+    "p": "Sale líquida",
+    "fix": "Poco estabilizante, sifón demasiado lleno o sin reposo. Ajusta la base y deja enfriar más."
+   },
+   {
+    "p": "Sale cortada o a borbotones",
+    "fix": "Grumos o base demasiado espesa. Cuela y aligera."
+   },
+   {
+    "p": "Sabe a poco",
+    "fix": "Base sosa. Concentra y sazona más fuerte que si fuera una salsa."
+   }
+  ],
+  "history": "Los sifones de nata se usaban en pastelería desde hace décadas; la alta cocina española de finales del siglo XX popularizó las espumas saladas y calientes.",
+  "uses": [
+   "Acabado de cremas y sopas",
+   "Postres",
+   "Aperitivos",
+   "Cócteles sin alcohol"
+  ],
+  "keep": "Las bases en frío según tu plan APPCC; el sifón cargado, en frío o en baño durante el servicio.",
+  "pro": "Prepara la base el día antes y carga el sifón a la hora del servicio. Lava y desmonta las juntas cada día.",
+  "related": [
+   "emulsiones",
+   "crema-inglesa",
+   "contraste-y-equilibrio"
+  ]
+ },
+ {
+  "id": "deshidratados-y-crujientes",
+  "name": "Deshidratados y crujientes",
+  "name_en": "Dehydrated crisps and powders",
+  "cat": "tecnicas",
+  "group": "Texturas",
+  "technique": "tostado",
+  "aka": [
+   "tejas",
+   "chips de verdura",
+   "polvos",
+   "pieles crujientes",
+   "deshidratadora",
+   "crujientes"
+  ],
+  "summary": "Chips de verdura y fruta, tejas, pieles y polvos: secar a baja temperatura para dar crujiente y concentrar sabor.",
+  "what": "Al quitar el agua a baja temperatura, el sabor se concentra y la textura se vuelve crujiente. Es la forma más sencilla de añadir un crujiente a un plato aprovechando el propio producto o sus pieles y recortes. Lo crujiente pierde la textura con la humedad, así que la conservación lo es todo.",
+  "method": [
+   "Corta muy fino y regular (mandolina) o extiende una capa fina de puré o masa sobre tapete de silicona.",
+   "Si es verdura o fruta, un baño rápido en almíbar ligero o salmuera da brillo y sabor.",
+   "Seca a baja temperatura hasta que esté completamente crujiente al enfriar.",
+   "Deja enfriar sobre rejilla y guarda enseguida en recipiente hermético con un deshumidificador alimentario si tienes.",
+   "Para polvos, tritura el deshidratado muy seco y tamiza."
+  ],
+  "ratios": [
+   {
+    "use": "Chips de verdura o fruta",
+    "ratio": "60-70 °C, 6-12 horas",
+    "note": "En deshidratadora u horno con la puerta entreabierta."
+   },
+   {
+    "use": "Tejas de puré",
+    "ratio": "Capa de 1-2 mm a 70-90 °C, 4-8 horas",
+    "note": "Se despegan en frío."
+   },
+   {
+    "use": "Pieles de pescado o pollo",
+    "ratio": "Secas al horno a 150-170 °C entre dos placas",
+    "note": "Raspadas de grasa antes."
+   },
+   {
+    "use": "Polvo",
+    "ratio": "Deshidratado muy seco, triturado y tamizado",
+    "note": "Para terminar platos."
+   }
+  ],
+  "variants": [
+   {
+    "id": "contraste-y-equilibrio",
+    "name": "Contraste y equilibrio",
+    "note": "El crujiente como contraste."
+   }
+  ],
+  "keys": [
+   "Lámina fina y regular: si no, se seca a trozos.",
+   "Temperatura baja: si sube, se dora y amarga.",
+   "Se comprueba en frío: en caliente casi todo parece blando.",
+   "Hermético y seco, o se ablanda en horas.",
+   "Aprovecha pieles y recortes."
+  ],
+  "errors": [
+   {
+    "p": "Se ablanda enseguida",
+    "fix": "Humedad ambiente o no estaba seco del todo. Seca más y guarda hermético."
+   },
+   {
+    "p": "Oscuro y amargo",
+    "fix": "Temperatura alta. Baja y alarga."
+   },
+   {
+    "p": "Se rompe al despegar",
+    "fix": "Capa irregular o despegado en caliente. Extiende más igual y despega en frío."
+   }
+  ],
+  "history": "Secar frutas y verduras es una técnica de conservación antigua; en la cocina actual se usa sobre todo para texturas y para aprovechar el producto entero.",
+  "uses": [
+   "Crujientes para cremas",
+   "Decoración comestible",
+   "Polvos para terminar",
+   "Aperitivos"
+  ],
+  "keep": "Herméticos, en lugar seco y fresco; días o semanas según el producto.",
+  "pro": "Deja la deshidratadora trabajando por la noche con pieles y recortes del día. Etiqueta los botes con fecha.",
+  "related": [
+   "contraste-y-equilibrio",
+   "construir-un-plato"
+  ]
  }
 ]
