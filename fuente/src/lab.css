@@ -1298,3 +1298,13 @@ h1,h2,h3,.cover-title,.trend-title,.dish-name,.kpath h3,.labmech h3,.idea h3,.em
 @media (min-width:960px){.rail-find{border-color:var(--coal-line)}.rail-sep{background:var(--coal-line)}.rail-create{border-color:var(--coal-line2)}}
 
 .catcard .xsec-mini,.csig-media .xsec-mini{width:100%;height:100%;min-height:96px}
+/* Al imprimir, siempre tinta oscura sobre papel blanco, se use carbón o lámina blanca en pantalla. */
+@media print{
+ :root,:root[data-theme=dark],:root[data-contrast=alto],:root[data-contrast=alto][data-theme=dark]{
+  --bg:#ffffff;--paper:#ffffff;--paper-2:#ffffff;--paper-3:#f2f2ef;--card:#ffffff;--soft:#f2f2ef;
+  --ink:#111111;--ink2:#2b2b2b;--mut:#555555;--line:#d4d4cf;--line2:#9a9a95;
+  --ember:#c9361f;--ember-ink:#a42c18;--ember-soft:#fbe4dd;--on-accent:#ffffff;
+  --mark:#0f7f6e;--mark-soft:#d6efe9;--track:#e2e3df;color-scheme:light}
+ html,body{background:#ffffff!important;color:#111111!important}
+}
+@media print{.kbook-entry ol,.book-index ol{list-style:decimal}.kbook-entry ul{list-style:disc}.kbook-entry li::marker{color:#555}}
