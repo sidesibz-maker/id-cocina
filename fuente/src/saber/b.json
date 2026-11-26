@@ -2454,5 +2454,119 @@
       "acidez-en-cocina",
       "especias"
     ]
+  },
+  {
+    "id": "ponzu-y-salsas-citricas",
+    "name": "Ponzu y salsas cítricas",
+    "name_en": "Ponzu and citrus sauces",
+    "cat": "salsas",
+    "group": "Asia",
+    "aka": [
+      "ponzu",
+      "tentsuyu",
+      "nuoc cham",
+      "salsa de soja cítrica"
+    ],
+    "summary": "Soja, cítrico y dashi: salsas frías que dan sal, acidez y umami a la vez.",
+    "what": "El ponzu une un cítrico (yuzu, lima, limón, naranja amarga), salsa de soja, un toque dulce (mirin) y la profundidad del dashi o del kombu. Es ligero, ácido y salino a la vez, y sirve para aliñar crudos, mojar tempura o terminar un pescado a la brasa.\n\nEn la misma familia están el tentsuyu (dashi, soja y mirin, sin cítrico) y el nuoc cham vietnamita (lima, salsa de pescado, azúcar, ajo y chile).",
+    "base": {
+      "for": "unos 300 ml",
+      "items": [
+        [
+          "Zumo de cítricos (lima y naranja, o yuzu)",
+          "100 ml"
+        ],
+        [
+          "Salsa de soja",
+          "100 ml"
+        ],
+        [
+          "Mirin",
+          "40 ml"
+        ],
+        [
+          "Vinagre de arroz",
+          "20 ml"
+        ],
+        [
+          "Alga kombu",
+          "5 g"
+        ],
+        [
+          "Copos de bonito seco",
+          "5 g"
+        ]
+      ],
+      "steps": [
+        "Mezcla todo en un tarro, con el kombu y el bonito.",
+        "Deja infusionar en frío al menos 12 horas (mejor 24).",
+        "Cuela apretando el bonito y guarda en frío."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Ponzu clásico",
+        "ratio": "1 parte de cítrico, 1 de soja, 0,4 de mirin",
+        "note": "Con kombu y bonito en infusión."
+      },
+      {
+        "use": "Tentsuyu para tempura",
+        "ratio": "4 partes de dashi, 1 de soja, 1 de mirin",
+        "note": "Llevar a hervor y enfriar."
+      },
+      {
+        "use": "Nuoc cham",
+        "ratio": "1 de lima, 1 de salsa de pescado, 1 de azúcar, 4 de agua",
+        "note": "Con ajo y chile picados."
+      }
+    ],
+    "variants": [
+      {
+        "id": "dashi",
+        "name": "Dashi",
+        "note": "El fondo que da profundidad."
+      },
+      {
+        "id": "vinagreta",
+        "name": "Vinagreta",
+        "note": "La versión con aceite."
+      }
+    ],
+    "keys": [
+      "El cítrico, recién exprimido: el ponzu vive de su perfume.",
+      "La infusión en frío da umami sin cocción.",
+      "Mezclar cítricos da más complejidad que uno solo.",
+      "Para crudos, un hilo; para mojar, en cuenco aparte."
+    ],
+    "errors": [
+      {
+        "p": "Demasiado salado",
+        "fix": "Baja la soja o alarga con dashi o agua."
+      },
+      {
+        "p": "Plano",
+        "fix": "Falta umami o perfume: más tiempo con el kombu y ralladura del cítrico al final."
+      },
+      {
+        "p": "Amargo",
+        "fix": "Se ha exprimido la piel blanca o se ha dejado mucho la cáscara. Cuela antes."
+      }
+    ],
+    "history": "El nombre viene del neerlandés pons (ponche), de los comerciantes que llegaban a Japón. Hoy es una de las salsas básicas de la cocina japonesa.",
+    "uses": [
+      "Crudos y tiraditos",
+      "Mojar tempura",
+      "Pescado y verdura a la brasa",
+      "Aliño de ensaladas"
+    ],
+    "keep": "En frío, colado, hasta 2 semanas; pierde perfume con los días.",
+    "pro": "Haz la base sin cítrico en cantidad y añade el zumo fresco cada dos o tres días.",
+    "related": [
+      "dashi",
+      "tempura",
+      "acidez-en-cocina",
+      "ceviche-y-crudos",
+      "umami-y-fondo"
+    ]
   }
 ]

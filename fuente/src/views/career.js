@@ -41,7 +41,7 @@ export function render() {
  const p = profile(), jobs = liveDocs('puesto').sort(byDate), courses = liveDocs('formacion').sort(byDate), goals = liveDocs('objetivo').sort((a, b) => (!!a.done_at - !!b.done_at) || String(a.due || '9').localeCompare(String(b.due || '9'))), wins = [...liveDocs('logro'), ...goals.filter(g => g.done_at).map(g => ({...g, when: g.done_at.slice(0, 10), fromGoal: true}))].sort(byDate);
  const sig = signature(), used = techUse(), sk = skills(), firstYear = Number(p.since) || null;
  return '<header class="page-head page-head-row"><div><h1>' + esc(t('Mi trayectoria', 'My career')) + '</h1><p>' + esc(t('Tu carrera en un sitio: de dónde vienes, qué dominas y a dónde vas. Con un toque, tu dossier para una entrevista o un stage.', 'Your career in one place: where you come from, what you master and where you are going. One tap gives you a dossier for an interview or a stage.')) + '</p></div>' +
-  '<div class="row-actions"><a class="btn ghost" href="#/estilo">' + icon('wheel') + esc(t('Tu estilo', 'Your style')) + '</a><button type="button" class="btn primary" data-act="dossier">' + icon('down') + esc(t('Ver mi dossier', 'See my dossier')) + '</button></div></header>' +
+  '<div class="row-actions"><button type="button" class="btn ghost" data-act="year">' + icon('star') + esc(t('Mi año en cocina', 'My year in the kitchen')) + '</button><a class="btn ghost" href="#/estilo">' + icon('wheel') + esc(t('Tu estilo', 'Your style')) + '</a><button type="button" class="btn primary" data-act="dossier">' + icon('down') + esc(t('Ver mi dossier', 'See my dossier')) + '</button></div></header>' +
   '<div class="stats cstats">' + numbers().map(([n, l]) => '<div class="stat"><strong>' + n + '</strong><span>' + esc(l) + '</span></div>').join('') + '</div>' +
   // Perfil
   '<section class="card csec"><div class="csec-head"><h2>' + esc(t('Quién eres en cocina', 'Who you are in the kitchen')) + '</h2><button type="button" class="linkbtn" data-act="profile">' + icon('edit') + esc(t('Editar', 'Edit')) + '</button></div>' +
@@ -144,6 +144,7 @@ export function mount(root) {
   if (a === 'profile') form('perfil');
   if (a === 'job') form('puesto'); if (a === 'course') form('formacion'); if (a === 'goal') form('objetivo'); if (a === 'win') form('logro');
   if (a === 'signature') pickSignature();
+  if (a === 'year') { import('./year.js').then(m => m.yearSheet()); return; }
   if (a === 'dossier') { if (!profile().name && !liveDocs('puesto').length) toast(t('Rellena primero «Quién eres en cocina» y tu experiencia.', 'Fill in “Who you are in the kitchen” and your experience first.')); dossier(); }
   if (edit) { const d = docById(edit.dataset.edit); if (d) form(d.type, d.id); }
   if (sk) { const id = sk.dataset.skill, next = ((Number(skills()[id]) || 0) + 1) % 4; await saveDoc('carrera', PERFIL, {...profile(), skills: {...skills(), [id]: next}}); }

@@ -6,10 +6,11 @@ import {t, en, longDate, greeting, dayKey, relDay, monthName} from '../i18n.js';
 import {esc, icon, $, metaRow} from '../ui.js';
 import {state, liveTrends, liveDishes, userName, liveDocs, docById} from '../store.js';
 import {timers} from '../timers.js';
-import {dueToday} from './train.js';
+import {dueToday, cards as trainCards} from './train.js';
 import {challenge, completeChallenge, challengeText} from '../challenge.js';
 import {entries} from '../saber/index.js';
 import {currentPath} from './paths.js';
+import {onThisDay} from './journal.js';
 import {iaOn} from '../ia.js';
 import {syncOn} from '../sync.js';
 import {prefs, setPref} from '../i18n.js';
@@ -72,6 +73,16 @@ function dailyEntry() {
  return '<section class="sec"><a class="daily" href="#/biblioteca/' + esc(e.id) + '"><span class="daily-k">' + esc(t('La ficha del día', 'Entry of the day')) + '</span><strong>' + esc(e.name) + '</strong><span class="daily-s">' + esc(e.summary) + '</span>' + (tip ? '<span class="daily-tip"><em>' + esc(t('Un truco: ', 'A tip: ')) + '</em>' + esc(tip.replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, '$2').replace(/\[\[([^\]]+)\]\]/g, '$1')) + '</span>' : '') + '<span class="more">' + esc(t('Leer la ficha', 'Read the entry')) + icon('right') + '</span></a></section>';
 }
 
+// La pregunta del día: una tarjeta de Entrenar que cambia cada día; se le da la vuelta aquí mismo.
+function questionOfDay() {
+ const all = trainCards().filter(c => c.cat !== 'mias');
+ if (!all.length) return '';
+ const d = new Date(), n = Math.floor((d - new Date(d.getFullYear(), 0, 0)) / 86400000) * 7 + d.getFullYear();
+ const c = all[n % all.length];
+ return '<section class="sec"><div class="qday"><span class="daily-k">' + esc(t('La pregunta del día', 'Question of the day')) + '</span><p class="qday-q">' + esc(c.q) + '</p>' +
+  '<details class="qday-a"><summary>' + esc(t('Ver la respuesta', 'Show the answer')) + '</summary>' + esc(c.a).split('\n').map(l => '<p>' + l + '</p>').join('') + (c.from ? '<a class="more" href="#/biblioteca/' + esc(c.from) + '">' + esc(t('Leer la ficha', 'Read the entry')) + icon('right') + '</a>' : '') + '</details>' +
+  '<a class="linkbtn" href="#/entrenar">' + esc(t('Entrenar cinco minutos más', 'Train five more minutes')) + '</a></div></section>';
+}
 // Tu oficio: el diario de hoy, el objetivo más cercano y lo que tienes en el fuego.
 function craft() {
  const today = dayKey(), wrote = liveDocs('diario').some(e => e.day === today), hour = new Date().getHours();
@@ -85,6 +96,8 @@ function craft() {
  if (ch) cards.push('<div class="craft-card craft-challenge' + (ch.done ? ' is-done' : '') + '">' + icon('flame') + '<strong>' + esc(t('Reto de la semana: ', 'Challenge of the week: ') + ch.entry.name) + '</strong><span>' + esc(ch.done ? t('Hecho. Tu nivel en ', 'Done. Your level in ') + ch.techName.toLowerCase() + t(' ha subido.', ' went up.') : challengeText(ch)) + '</span>' + (ch.done ? '' : '<span class="craft-acts"><a class="linkbtn" href="#/biblioteca/' + esc(ch.entry.id) + '">' + esc(t('Leer la ficha', 'Read the entry')) + '</a><button type="button" class="linkbtn" data-act="challenge-done">' + icon('check') + esc(t('Hecho', 'Done')) + '</button></span>') + '</div>');
  const cp = currentPath();
  if (cp) { const nx = entries().find(e => e.id === cp.next); if (nx) cards.push('<a class="craft-card" href="#/biblioteca/' + esc(nx.id) + '">' + icon('library') + '<strong>' + esc(t('Tu ruta: ', 'Your path: ') + (en() ? cp.p[2] : cp.p[1])) + '</strong><span>' + esc(t('Siguiente ficha: ', 'Next entry: ') + nx.name + ' (' + cp.done + '/' + cp.ids.length + ')') + '</span></a>'); }
+ const od = onThisDay();
+ if (od) cards.push('<a class="craft-card" href="#/diario/' + encodeURIComponent(od.e.id) + '">' + icon('clock') + '<strong>' + esc(t('Tal día como hoy: ', 'On this day: ') + od.label.toLowerCase()) + '</strong><span>' + esc(String(od.e.learned || od.e.good || od.e.bad || od.e.ideas || '').slice(0, 140)) + '</span></a>');
  const due = dueToday();
  cards.push('<a class="craft-card" href="#/entrenar">' + icon('brain') + '<strong>' + esc(due ? (due === 1 ? t('1 tarjeta para repasar', '1 card to review') : due + t(' tarjetas para repasar', ' cards to review')) : t('Entrenar cinco minutos', 'Train for five minutes')) + '</strong><span>' + esc(t('Proporciones, fallos y recetas base hasta que te los sepas de memoria', 'Ratios, faults and base recipes until you know them by heart')) + '</span></a>');
  cards.push('<a class="craft-card" href="#/herramientas' + (running.length ? '/temporizadores' : '') + '">' + icon(running.length ? 'clock' : 'bolt') + '<strong>' + esc(running.length ? (running.length === 1 ? t('1 temporizador en marcha', '1 timer running') : running.length + t(' temporizadores en marcha', ' timers running')) : t('Herramientas', 'Tools')) + '</strong><span>' + esc(t('Escalar recetas, salmueras, espesantes, panadero y temporizadores', 'Scale recipes, brines, thickeners, baking and timers')) + '</span></a>');
@@ -109,6 +122,7 @@ export function render() {
  html += firstSteps();
  html += craft();
  html += dailyEntry();
+ html += questionOfDay();
  if (top) html += lead(top, day);
  else html += '<div class="cover cover-empty"><span class="kicker">' + esc(t('Radar', 'Radar')) + '</span><span class="cover-title">' + esc(state.loaded ? t('El radar está vacío', 'The radar is empty') : t('Abriendo el radar…', 'Opening the radar…')) + '</span>' +
   '<span class="cover-sum">' + esc(t('Aquí sale lo que se mueve en las mejores cocinas y revistas, llevado a tu cocina. Entra en el Radar y pulsa «Buscar tendencias de hoy».', 'What is moving in the best kitchens and magazines, brought to your kitchen, shows up here. Open the Radar and press “Find today\'s trends”.')) + '</span></div>';

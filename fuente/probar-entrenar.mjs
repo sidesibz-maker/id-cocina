@@ -44,6 +44,10 @@ ok((await page.textContent('.craft-challenge')).includes('Hecho'), 'el reto no q
 await page.evaluate(() => { const v = JSON.parse(localStorage.getItem('id-cocina-v1')); v.subs = [{id: 's1', name: 'Romesco', items: [{n: 'Ñora', q: '6'}, {n: 'Almendra', q: '80 g'}], yield: '700 g', method: 'Asar y majar.', version: 1, updated_at: '2026-11-20T10:00:00Z'}]; v.dishes = [{id: 'd9', name: 'Calamar', status: 'carta', course: 'principal', plating: 'Romesco debajo, calamar encima.', components: [{id: 'c', role: 'principal', name: 'Calamar', techniques: [], items: [{n: 'Calamar', q: '150 g'}]}], tests: [], images: [], version: 1, updated_at: '2026-11-20T10:00:00Z'}]; localStorage.setItem('id-cocina-v1', JSON.stringify(v)); });
 await page.reload(); await wait(500); await go('#/entrenar'); await page.click('[data-cat=mias]'); await wait(200);
 ok((await page.textContent('.trmeta')).includes('Tus recetas') && (await page.textContent('.trmeta')).includes('de 3'), 'no hay tarjetas de tus recetas: ' + await page.textContent('.trcard'));
+// Examen de una ruta
+await go('#/entrenar/ruta/salsas'); await page.waitForSelector('.tronly');
+ok((await page.textContent('.tronly')).includes('Examen de la ruta'), 'el examen de la ruta no sale');
+ok(await page.locator('.trq').count() === 1, 'el examen de la ruta no trae tarjetas');
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();
 if (fails.length) { console.error('FALLOS en entrenar:\n - ' + fails.join('\n - ')); process.exit(1); }

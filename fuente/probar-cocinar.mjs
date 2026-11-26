@@ -49,6 +49,13 @@ await page.click('[data-ink="--ember"]'); await page.mouse.click(box.x + box.wid
 await page.click('[data-sk=undo]'); await page.click('[data-sk=save]'); await wait(1500);
 const imgs = await page.evaluate(() => JSON.parse(localStorage.getItem('id-cocina-v1')).dishes.find(d => d.id === 'd1').images);
 ok(imgs.length === 1 && imgs[0].style === 'boceto', 'el boceto no se guarda en el plato: ' + JSON.stringify(imgs));
+// Leer los pasos en voz alta (se simula la voz)
+await page.evaluate(() => { window.__said = []; speechSynthesis.speak = u => window.__said.push(u.text); });
+await go('#/cocinar/biblioteca/bechamel'); await page.waitForSelector('[data-read]');
+await page.click('[data-read]'); await wait(150);
+ok((await page.getAttribute('[data-read]', 'aria-pressed')) === 'true' && (await page.evaluate(() => window.__said.length)) === 1, 'leer en voz alta no lee el paso');
+await page.click('[data-go="1"]'); await wait(150);
+ok((await page.evaluate(() => window.__said.at(-1) || '')).startsWith('Paso 2'), 'al pasar de paso no lo lee');
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();
 if (fails.length) { console.error('FALLOS en el modo cocina:\n - ' + fails.join('\n - ')); process.exit(1); }

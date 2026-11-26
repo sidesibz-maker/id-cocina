@@ -80,7 +80,14 @@ function step(r) {
   '<p class="cook-text" aria-live="polite">' + esc(s.text) + '</p>' +
   (times.length ? '<div class="chips cook-times">' + times.map(x => '<button type="button" class="chip" data-timer="' + x.secs + '">' + icon('clock') + esc(t('Temporizador ', 'Timer ') + x.label) + '</button>').join('') + '</div>' : '') +
   '<div class="cook-nav"><button type="button" class="btn ghost" data-go="-1"' + (k === 0 ? ' disabled' : '') + '>' + icon('left') + esc(t('Anterior', 'Back')) + '</button><button type="button" class="btn primary" data-go="1"' + (k === n - 1 ? ' disabled' : '') + '>' + esc(k === n - 1 ? t('Último paso', 'Last step') : t('Siguiente', 'Next')) + icon('right') + '</button></div>' +
+  (canSpeak() ? '<button type="button" class="linkbtn cook-read" data-read aria-pressed="' + !!state.read + '">' + icon('chat') + esc(state.read ? t('Dejar de leer en voz alta', 'Stop reading aloud') : t('Leer los pasos en voz alta', 'Read the steps aloud')) + '</button>' : '') +
   '<ol class="cook-all">' + r.steps.map((x, i) => '<li' + (i === k ? ' class="is-now"' : i < k ? ' class="is-past"' : '') + '><button type="button" data-step="' + i + '">' + esc(x.text) + '</button></li>').join('') + '</ol>';
+}
+// Leer en voz alta: con las manos ocupadas, cada paso se oye al llegar a él.
+const canSpeak = () => typeof speechSynthesis !== 'undefined' && typeof SpeechSynthesisUtterance !== 'undefined';
+function say(text) {
+ if (!canSpeak()) return;
+ try { speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(text); u.lang = en() ? 'en-GB' : 'es-ES'; u.rate = 0.95; speechSynthesis.speak(u); } catch {}
 }
 // La pantalla no se apaga mientras se cocina (si el aparato lo permite).
 async function keepAwake() { try { if ('wakeLock' in navigator && !document.hidden) state.lock = await navigator.wakeLock.request('screen'); } catch {} }
@@ -90,11 +97,12 @@ export function mount(root, params) {
  keepAwake();
  const vis = () => { if (!document.hidden) keepAwake(); };
  document.addEventListener('visibilitychange', vis);
- const paintStep = () => { $('#cookStep', root).innerHTML = step(r); };
+ const paintStep = () => { $('#cookStep', root).innerHTML = step(r); if (state.read && r.steps[state.step]) say(t('Paso ', 'Step ') + (state.step + 1) + '. ' + r.steps[state.step].text); };
  root.addEventListener('click', e => {
   const g = e.target.closest('[data-go]'), s = e.target.closest('[data-step]'), tm = e.target.closest('[data-timer]');
   if (g) { state.step += Number(g.dataset.go); paintStep(); $('.cook-text', root)?.focus?.(); }
   if (s) { state.step = Number(s.dataset.step); paintStep(); }
+  if (e.target.closest('[data-read]')) { state.read = !state.read; if (!state.read && canSpeak()) speechSynthesis.cancel(); paintStep(); $('[data-read]', root)?.focus(); return; }
   if (tm) addTimer(r.name + ': ' + (r.steps[state.step]?.text || '').slice(0, 30), Number(tm.dataset.timer));
  });
  root.addEventListener('change', e => { const c = e.target.closest('[data-ing]'); if (!c) return; if (c.checked) state.done.add(c.dataset.ing); else state.done.delete(c.dataset.ing); c.closest('.cook-tick').classList.toggle('is-on', c.checked); });
@@ -103,7 +111,7 @@ export function mount(root, params) {
  const keys = e => { if (/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName)) return; if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); state.step = Math.min(r.steps.length - 1, state.step + 1); paintStep(); } if (e.key === 'ArrowLeft') { state.step = Math.max(0, state.step - 1); paintStep(); } };
  document.addEventListener('keydown', keys);
  document.documentElement.classList.add('cooking');
- return () => { document.removeEventListener('visibilitychange', vis); document.removeEventListener('keydown', keys); document.documentElement.classList.remove('cooking'); try { state.lock?.release(); } catch {} state.lock = null; };
+ return () => { document.removeEventListener('visibilitychange', vis); document.removeEventListener('keydown', keys); document.documentElement.classList.remove('cooking'); try { state.lock?.release(); } catch {} try { if (canSpeak()) speechSynthesis.cancel(); } catch {} state.lock = null; };
 }
 export const cookLink = (kind, id) => '#/cocinar/' + kind + '/' + encodeURIComponent(id);
 export {$$, en};

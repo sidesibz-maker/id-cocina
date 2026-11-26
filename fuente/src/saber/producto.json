@@ -1534,5 +1534,280 @@
    "cocina-ibicenca",
    "almendra"
   ]
+ },
+ {
+  "id": "ceviche-y-crudos",
+  "name": "Ceviche y crudos",
+  "name_en": "Ceviche and raw preparations",
+  "cat": "producto",
+  "group": "Pescado",
+  "aka": [
+   "ceviche",
+   "tiradito",
+   "tartar de pescado",
+   "carpaccio",
+   "leche de tigre",
+   "crudo"
+  ],
+  "summary": "Pescado crudo bien tratado: producto impecable, frío, corte limpio y un aliño que acompaña sin cocer de más.",
+  "what": "Un crudo es un plato de producto: no hay donde esconderse. El ceviche cuaja ligeramente el pescado con el ácido de la lima; el tiradito lo corta en láminas finas y lo aliña al momento; el tartar lo pica a cuchillo y lo liga con un aliño graso o ácido.\n\nLa seguridad manda: el pescado que se sirve crudo tiene que haber sido congelado antes (para eliminar parásitos como el anisakis) o venir ya tratado así del proveedor.",
+  "method": [
+   "Congela el pescado (si no viene ya tratado) a -20 °C al menos 5 días, o según la norma vigente, y descongela en frío.",
+   "Trabaja todo en frío: tabla, cuchillo y cuenco.",
+   "Corta con un solo gesto, sin sierra: dados para ceviche y tartar, láminas para tiradito.",
+   "Para el ceviche, prepara la leche de tigre (lima, sal, ajo, jengibre, chile, cebolla y un poco del pescado triturado), cuela y aliña justo antes de servir.",
+   "Sala el pescado primero, añade el ácido después y sirve en 2-5 minutos."
+  ],
+  "ratios": [
+   {
+    "use": "Leche de tigre",
+    "ratio": "100 ml de lima, 50 g de recortes de pescado, 50 ml de caldo frío o agua, sal, ajo, jengibre y chile",
+    "note": "Triturar y colar."
+   },
+   {
+    "use": "Ceviche",
+    "ratio": "Unos 40-60 ml de leche de tigre por 150 g de pescado",
+    "note": "Servir al momento."
+   },
+   {
+    "use": "Tartar",
+    "ratio": "120-150 g de pescado por ración, aliño al 10-15 %",
+    "note": "Mezclar justo antes."
+   }
+  ],
+  "variants": [
+   {
+    "id": "curado-de-pescado",
+    "name": "Curado de pescado",
+    "note": "Sal y azúcar antes de servir en crudo."
+   },
+   {
+    "id": "ponzu-y-salsas-citricas",
+    "name": "Ponzu",
+    "note": "Un aliño cítrico para tiraditos."
+   },
+   {
+    "id": "cebolla-encurtida",
+    "name": "Cebolla encurtida",
+    "note": "El acompañamiento clásico."
+   }
+  ],
+  "keys": [
+   "Pescado congelado o tratado antes de servirlo crudo.",
+   "Frío en todo momento.",
+   "El ácido al último minuto: cuanto más tiempo, más se cuece.",
+   "Sal primero, ácido después.",
+   "Un crujiente (maíz tostado, cebolla, migas) da el contraste."
+  ],
+  "errors": [
+   {
+    "p": "Pescado blanco y gomoso",
+    "fix": "Demasiado tiempo en el ácido. Aliña en el último momento."
+   },
+   {
+    "p": "Sabe solo a lima",
+    "fix": "Falta sal o fondo. Más sal y recortes de pescado en la leche de tigre."
+   },
+   {
+    "p": "Textura aguada",
+    "fix": "Pescado mal descongelado o cortado con sierra. Descongela en frío y corta de un tajo."
+   }
+  ],
+  "history": "El ceviche es el plato nacional de Perú, con raíces muy antiguas en la costa del Pacífico. El tiradito mezcla la técnica japonesa del sashimi con el aliño peruano.",
+  "uses": [
+   "Entrantes",
+   "Aperitivos",
+   "Menú degustación",
+   "Pescado de roca y azul de la isla"
+  ],
+  "keep": "No se guarda aliñado. El pescado limpio y porcionado, en frío y tapado, del día.",
+  "pro": "Porciona en frío y guarda cada ración envuelta. La leche de tigre, hecha del día y colada. Aliña al pedido.",
+  "related": [
+   "curado-de-pescado",
+   "pescado-de-roca",
+   "acidez-en-cocina",
+   "ponzu-y-salsas-citricas",
+   "pescado-entero"
+  ]
+ },
+ {
+  "id": "pato",
+  "name": "Pato",
+  "name_en": "Duck",
+  "cat": "producto",
+  "group": "Aves",
+  "aka": [
+   "magret",
+   "confit de pato",
+   "pato asado",
+   "muslo de pato",
+   "foie"
+  ],
+  "summary": "Pechuga rosada con la grasa bien fundida y muslos confitados: dos cocciones para un mismo animal.",
+  "what": "El pato tiene dos partes que piden cosas opuestas. La pechuga (magret) es carne roja, que se sirve rosada: se cocina por la piel, despacio, para fundir la grasa y dejarla crujiente. Los muslos son duros y fibrosos: piden cocción larga, en confit o guiso.\n\nLa grasa que suelta es oro: sirve para confitar, freír patatas o dar sabor a verduras.",
+  "method": [
+   "Saca el magret de la cámara 20 minutos antes. Haz cortes en rombo en la piel sin llegar a la carne.",
+   "Pon la pechuga por la piel en sartén fría y sube a fuego medio-bajo; ve retirando la grasa.",
+   "Cuando la piel esté dorada y fina (8-12 minutos), dale la vuelta 1-2 minutos.",
+   "Reposa 5-8 minutos y corta en lonchas; el punto ideal está en 54-57 °C en el centro.",
+   "Para los muslos, sala 12 horas, lava, seca y confita en su grasa a 85-90 °C, 3-4 horas, hasta que se separen del hueso."
+  ],
+  "ratios": [
+   {
+    "use": "Magret rosado",
+    "ratio": "54-57 °C en el centro",
+    "note": "Tras el reposo sube 2-3 °C."
+   },
+   {
+    "use": "Sal para confitar muslos",
+    "ratio": "20-25 g de sal por kg, con hierbas y pimienta",
+    "note": "12 horas en frío."
+   },
+   {
+    "use": "Confit",
+    "ratio": "85-90 °C, 3-4 horas, cubierto de grasa",
+    "note": "Hasta que el hueso salga solo."
+   }
+  ],
+  "variants": [
+   {
+    "id": "confitado",
+    "name": "Confitado",
+    "note": "La técnica para los muslos."
+   },
+   {
+    "id": "sellado-y-reposo",
+    "name": "Sellado y reposo",
+    "note": "Clave en el magret."
+   }
+  ],
+  "keys": [
+   "Magret en sartén fría, por la piel: así se funde la grasa antes de que se queme.",
+   "Retira la grasa mientras se hace y guárdala.",
+   "Reposo siempre antes de cortar.",
+   "Los cítricos, las frutas (higo, cereza, naranja) y las especias dulces equilibran su grasa.",
+   "Los muslos confitados aguantan días en su grasa."
+  ],
+  "errors": [
+   {
+    "p": "Piel gomosa",
+    "fix": "Fuego alto desde el principio. Empieza en frío y ve despacio."
+   },
+   {
+    "p": "Carne gris y dura",
+    "fix": "Pasada de punto. Saca antes y deja reposar."
+   },
+   {
+    "p": "Confit seco",
+    "fix": "Temperatura alta: la grasa debe apenas temblar."
+   }
+  ],
+  "history": "El pato es central en la cocina del suroeste de Francia (magret, confit, foie gras) y en la china (pato laqueado). Cada tradición aprovecha el animal entero.",
+  "uses": [
+   "Principales",
+   "Arroces y guisos",
+   "Ensaladas templadas con confit",
+   "Grasa para freír y confitar"
+  ],
+  "keep": "El magret crudo, 3-4 días en frío. El confit, cubierto de grasa en frío, varias semanas.",
+  "pro": "Marca los magrets por la piel en mise en place y termina al pedido en horno. El confit, porcionado en su grasa y regenerado en sartén por la piel.",
+  "related": [
+   "confitado",
+   "punto-de-la-carne",
+   "sellado-y-reposo",
+   "higos-y-algarroba",
+   "cordero"
+  ]
+ },
+ {
+  "id": "cordero",
+  "name": "Cordero",
+  "name_en": "Lamb",
+  "cat": "producto",
+  "group": "Carne",
+  "aka": [
+   "cordero lechal",
+   "paletilla",
+   "costillar",
+   "pierna de cordero",
+   "cordero asado",
+   "carré"
+  ],
+  "summary": "Del costillar al punto a la paletilla que se deshace: cada pieza del cordero pide su cocción.",
+  "what": "El cordero lechal (que solo ha tomado leche) es tierno y de sabor suave; el recental y el pascual tienen más carne y más sabor. Las piezas nobles (costillar, lomo, pierna) se cocinan al punto; las de trabajo (paletilla, cuello, falda) piden horas, a horno suave, guisadas o en baja temperatura.\n\nEn una cocina de brasa es una de las carnes que mejor agradece el fuego, con hierbas mediterráneas, ajo y algo ácido.",
+  "method": [
+   "Sala con tiempo: las piezas grandes, la víspera; las chuletas, justo antes.",
+   "Para costillar o chuletas: brasa o sartén fuerte, por la grasa primero, hasta 56-58 °C en el centro y reposo.",
+   "Para paletilla asada: horno a 150-160 °C con un fondo de agua, vino y ajos, 2-3 horas, regando; sube a 200 °C al final para dorar.",
+   "Para cuello y falda: guiso o baja temperatura (70-80 °C, 12-24 horas) y terminar en brasa o sartén.",
+   "Usa los huesos y recortes para un jugo que acompañe."
+  ],
+  "ratios": [
+   {
+    "use": "Costillar rosado",
+    "ratio": "56-58 °C en el centro",
+    "note": "Reposo 5-10 minutos."
+   },
+   {
+    "use": "Paletilla de lechal asada",
+    "ratio": "150-160 °C, 2-2,5 horas",
+    "note": "Más tiempo si es pascual."
+   },
+   {
+    "use": "Cuello en baja temperatura",
+    "ratio": "75 °C, 18-24 horas",
+    "note": "Prensar en frío y porcionar."
+   }
+  ],
+  "variants": [
+   {
+    "id": "jugo-de-carne",
+    "name": "Jugo de cordero",
+    "note": "Con huesos tostados."
+   },
+   {
+    "id": "baja-temperatura",
+    "name": "Baja temperatura",
+    "note": "Para las piezas de trabajo."
+   }
+  ],
+  "keys": [
+   "Cada pieza, su cocción: noble al punto, de trabajo larga.",
+   "La grasa del cordero se dora primero, a fuego vivo.",
+   "Romero, tomillo, ajo, comino y ácidos (limón, yogur) le van muy bien.",
+   "El reposo es parte de la cocción.",
+   "El lechal es delicado: no lo tapes con salsas fuertes."
+  ],
+  "errors": [
+   {
+    "p": "Sabor muy fuerte",
+    "fix": "Cordero mayor o grasa quemada. Elige lechal o recental y retira parte de la grasa."
+   },
+   {
+    "p": "Paletilla seca",
+    "fix": "Horno fuerte o sin líquido. Baja la temperatura y riega."
+   },
+   {
+    "p": "Chuletas duras",
+    "fix": "Pasadas de punto o sin reposo. Saca a 56 °C y deja reposar."
+   }
+  ],
+  "history": "El cordero asado es una tradición de las dos Castillas, de Aragón y de todo el Mediterráneo, de Grecia al Magreb, con hornos de leña y hierbas del monte.",
+  "uses": [
+   "Principales",
+   "Brasa",
+   "Guisos",
+   "Bocados con las piezas de trabajo"
+  ],
+  "keep": "Crudo, 3-4 días en frío. Asado y deshuesado, prensado en frío 3 días.",
+  "pro": "Paletillas asadas por la mañana y terminadas al pedido. Cuello en baja temperatura, prensado y porcionado en bloques que se doran en minutos.",
+  "related": [
+   "punto-de-la-carne",
+   "sellado-y-reposo",
+   "baja-temperatura",
+   "fuego-y-brasa",
+   "jugo-de-carne",
+   "pato"
+  ]
  }
 ]

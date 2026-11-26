@@ -90,6 +90,12 @@ const book = await page.evaluate(() => window.__printed || '');
 ok(book.includes('Greixonera') && book.includes('Flaó') && book.includes('Índice'), 'el libro no lleva las fichas elegidas');
 ok(book.includes('Bechamel') && book.includes('Mi versión'), 'el libro no lleva tus versiones');
 await page.evaluate(() => document.documentElement.classList.remove('printing'));
+// Comparar dos fichas
+await go('#/biblioteca/bechamel'); await page.waitForSelector('[data-act=compare-entry]'); await page.click('[data-act=compare-entry]'); await page.waitForSelector('#kcmpRows tr');
+await page.selectOption('#kcmpB', 'veloute'); await wait(150);
+ok((await page.textContent('#kcmpName')) === 'Velouté' || (await page.textContent('#kcmpName')).toLowerCase().includes('velout'), 'comparar no cambia a la segunda ficha');
+ok(await page.locator('#kcmpRows .kcmp-part').count() >= 5, 'la comparación tiene pocas partes');
+await page.keyboard.press('Escape'); await wait(200);
 ok(!errors.length, 'errores: ' + errors.join(' | '));
 await browser.close();
 console.log(fails.length ? 'FALLOS:\n - ' + fails.join('\n - ') : 'la Biblioteca: todo correcto');

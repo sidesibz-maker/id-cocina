@@ -93,7 +93,7 @@ export function render(params = []) {
   '<div class="row-actions row-left"><button type="button" class="btn primary" data-act="lab-new">' + icon('spark') + esc(t('Otra chispa', 'Another spark')) + '</button><button type="button" class="btn ghost" data-act="lab-keep">' + icon('star') + esc(t('Guardar en el cuaderno', 'Save to the notebook')) + '</button><button type="button" class="btn ghost" data-act="lab-dish">' + icon('book') + esc(t('Llevar a la libreta', 'Take to the notebook')) + '</button><button type="button" class="btn ghost" data-act="lab-ideas">' + icon('chat') + esc(t('Tres platos con ChatGPT', 'Three dishes with ChatGPT')) + '</button></div></section>' +
   '<section class="card labrule"><div class="csec-head"><h2>' + esc(t('Un reto con restricción', 'A constrained challenge')) + '</h2><span class="fine">' + esc(t('Un límite te saca de tus caminos de siempre', 'A limit takes you off your usual paths')) + '</span></div><div id="labRule" aria-live="polite">' + ruleHtml() + '</div>' +
   '<div class="row-actions row-left"><button type="button" class="btn ghost" data-act="lab-rule">' + icon('refresh') + esc(t('Otro reto', 'Another challenge')) + '</button><button type="button" class="btn ghost" data-act="lab-rule-keep">' + icon('star') + esc(t('Apuntarlo con la chispa', 'Note it with the spark')) + '</button></div></section>' +
-  '<section class="sec"><header class="sec-head"><div><h2>' + esc(t('Cuaderno de chispas', 'Spark notebook')) + '</h2><p>' + esc(t('Apunta cualquier idea en cuanto te venga, aunque sea a medias. Las mejores salen de releer las viejas.', 'Write down any idea as soon as it comes, even half-formed. The best ones come from rereading old ones.')) + '</p></div></header>' +
+  '<section class="sec"><header class="sec-head"><div><h2>' + esc(t('Cuaderno de chispas', 'Spark notebook')) + '</h2><p>' + esc(t('Apunta cualquier idea en cuanto te venga, aunque sea a medias. Las mejores salen de releer las viejas.', 'Write down any idea as soon as it comes, even half-formed. The best ones come from rereading old ones.')) + '</p></div>' + (sparks.length >= 2 ? '<button type="button" class="btn ghost" data-act="lab-cross">' + icon('spark') + esc(t('Cruzar dos chispas', 'Cross two sparks')) + '</button>' : '') + '</header>' +
   '<form id="labNote" class="card labnote"><label class="sr" for="labText">' + esc(t('Nueva chispa', 'New spark')) + '</label><textarea id="labText" rows="3" maxlength="2000" data-voice placeholder="' + esc(t('Un sabor, un recuerdo, una técnica, algo que has visto o comido…', 'A flavour, a memory, a technique, something you saw or ate…')) + '"></textarea><div class="row-actions"><label class="btn ghost" for="labPhoto">' + icon('image') + esc(t('Con foto', 'With a photo')) + '</label><input id="labPhoto" class="sr" type="file" accept="image/*" capture="environment"><button type="submit" class="btn primary">' + icon('plus') + esc(t('Apuntar', 'Note it')) + '</button></div><p class="fine" id="labPhotoState" hidden></p></form>' +
   (sparks.length ? '<ul class="labsparks">' + sparks.map(s => '<li class="labsp' + (s.dish_id ? ' is-dish' : '') + '">' + (s.image ? '<img class="labsp-img" data-img="' + esc(s.image) + '" alt="' + esc(t('Foto de la chispa', 'Spark photo')) + '">' : '') + '<p>' + esc(s.text) + '</p><div class="labsp-foot"><small>' + esc(relDay(s.created_at || new Date())) + (s.dish_id ? t(', ya es un plato', ', now a dish') : '') + '</small>' + (s.dish_id ? '<a class="linkbtn" href="#/plato/' + esc(s.dish_id) + '">' + esc(t('Ver el plato', 'See the dish')) + '</a>' : '<button type="button" class="linkbtn" data-to-dish="' + esc(s.id) + '">' + esc(t('Convertir en plato', 'Turn into a dish')) + '</button><button type="button" class="linkbtn" data-sp-ideas="' + esc(s.id) + '">' + esc(t('Tres platos', 'Three dishes')) + '</button>') + '<button type="button" class="iconbtn" data-sp-del="' + esc(s.id) + '" aria-label="' + esc(t('A la papelera', 'To the bin')) + '">' + icon('trash') + '</button></div></li>').join('') + '</ul>' : '<p class="hint">' + esc(t('Aún no hay chispas. La primera puede ser la de arriba.', 'No sparks yet. The first one can be the one above.')) + '</p>') + '</section>' +
   '<section class="sec"><header class="sec-head"><div><h2>' + esc(t('Mecanismos de creación', 'Creative mechanisms')) + '</h2><p>' + esc(t('Maneras de mirar un producto o un plato para sacar algo nuevo. Elige uno y oblígate a usarlo.', 'Ways of looking at produce or a dish to get something new. Pick one and force yourself to use it.')) + '</p></div></header>' +
@@ -132,6 +132,23 @@ async function proposals(text, source, sparkId, btn) {
  } catch (err) { toast(err?.kind ? iaMessage(err) : friendly(err), 'error', 7000); }
  btn.disabled = false; btn.classList.remove('is-busy');
 }
+// Cruzar dos chispas: dos ideas viejas juntas suelen dar una nueva. Se guarda como chispa o se pide a ChatGPT.
+function crossSheet() {
+ const list = liveDocs('chispa').sort((a, b) => String(b.created_at).localeCompare(String(a.created_at)));
+ if (list.length < 2) return;
+ const pick = Math.floor(Math.random() * list.length); let other = Math.floor(Math.random() * (list.length - 1)); if (other >= pick) other++;
+ const sel = (id, on) => '<select id="' + id + '">' + list.map((x, k) => '<option value="' + esc(x.id) + '"' + (k === on ? ' selected' : '') + '>' + esc(x.text.slice(0, 90)) + '</option>').join('') + '</select>';
+ const s = sheet({title: t('Cruzar dos chispas', 'Cross two sparks'), body: '<p class="lead">' + esc(t('Dos ideas que no tenían nada que ver, en el mismo plato. Elige o deja las que han salido al azar.', 'Two ideas that had nothing to do with each other, on the same plate. Choose, or keep the random ones.')) + '</p>' +
+  '<div class="tfield"><label for="crossA">' + esc(t('Primera chispa', 'First spark')) + '</label>' + sel('crossA', pick) + '</div><div class="tfield"><label for="crossB">' + esc(t('Segunda chispa', 'Second spark')) + '</label>' + sel('crossB', other) + '</div>' +
+  '<div class="row-actions"><button type="button" class="btn ghost" data-x="ideas">' + icon('chat') + esc(t('Tres platos con ChatGPT', 'Three dishes with ChatGPT')) + '</button><button type="button" class="btn primary" data-x="save">' + icon('plus') + esc(t('Guardar el cruce', 'Save the cross')) + '</button></div>'});
+ const text = () => { const A = docById($('#crossA', s.el).value), B = docById($('#crossB', s.el).value); return A && B && A.id !== B.id ? t('Cruce: ', 'Cross: ') + A.text.slice(0, 900) + ' × ' + B.text.slice(0, 900) : ''; };
+ s.el.addEventListener('click', async e => {
+  const b = e.target.closest('[data-x]'); if (!b) return;
+  const v = text(); if (!v) { toast(t('Elige dos chispas distintas.', 'Choose two different sparks.'), 'error'); return; }
+  if (b.dataset.x === 'save') { await saveDoc('chispa', null, {text: v.slice(0, 2000)}); s.close(); toast(t('Cruce apuntado en tu cuaderno.', 'Cross noted in your notebook.')); }
+  else { s.close(); proposals(v, {kind: 'laboratorio'}, null, b); }
+ });
+}
 export function mount(root) {
  const paintSpark = () => { const box = $('#labCur', root); if (box) box.innerHTML = sparkHtml(); };
  root.addEventListener('change', e => {
@@ -164,6 +181,7 @@ export function mount(root) {
   if (a === 'lab-ideas' && current) { proposals(sparkText(current), {kind: 'laboratorio'}, null, e.target.closest('button')); return; }
   const spi = e.target.closest('[data-sp-ideas]');
   if (spi) { const s = docById(spi.dataset.spIdeas); if (s) proposals(s.text, {kind: 'chispa', id: s.id}, s.id, spi); return; }
+  if (a === 'lab-cross') { crossSheet(); return; }
   if (a === 'lab-rule') { newRule(); $('#labRule', root).innerHTML = ruleHtml(); return; }
   if (a === 'lab-rule-keep') { const r = RULES[rule]; await saveDoc('chispa', null, {text: (t('Reto: ', 'Challenge: ') + (en() ? r[1] : r[0]) + (current ? ' ' + sparkText(current) : '')).slice(0, 2000)}); toast(t('Reto apuntado en tu cuaderno de chispas.', 'Challenge noted in your spark notebook.')); return; }
   if (a === 'lab-new') { current = spark(fixedId); paintSpark(); }

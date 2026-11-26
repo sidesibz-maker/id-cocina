@@ -1482,5 +1482,204 @@
    "acidez-en-cocina",
    "salmuera"
   ]
+ },
+ {
+  "id": "tempura",
+  "name": "Tempura",
+  "name_en": "Tempura",
+  "cat": "tecnicas",
+  "group": "Asia",
+  "aka": [
+   "rebozado japonés",
+   "tempura de verduras",
+   "tempura de gamba",
+   "kakiage"
+  ],
+  "summary": "Un rebozado finísimo y crujiente: masa fría, poco trabajada y aceite limpio y caliente.",
+  "what": "La tempura no busca una costra gruesa, sino una capa fina, irregular y quebradiza que deja ver el producto. El secreto es evitar que la harina desarrolle gluten: agua helada, harina floja, mezclar lo justo (con grumos) y freír enseguida.\n\nFunciona con gambas, pescado blanco, verduras tiernas, hojas y flores. El kakiage es la versión en buñuelo: tiras de verdura unidas con poca masa.",
+  "base": {
+   "for": "unos 400 g de producto",
+   "items": [
+    [
+     "Harina floja (o mitad harina, mitad almidón de maíz)",
+     "100 g"
+    ],
+    [
+     "Yema de huevo",
+     "1"
+    ],
+    [
+     "Agua helada o con gas, muy fría",
+     "160-180 ml"
+    ],
+    [
+     "Aceite de girasol o de cacahuete",
+     "c. s."
+    ],
+    [
+     "Harina para enharinar el producto",
+     "c. s."
+    ]
+   ],
+   "steps": [
+    "Calienta el aceite a 170-180 °C y ten el producto seco y frío.",
+    "Bate la yema con el agua helada.",
+    "Añade la harina de golpe y mezcla con palillos, pocos movimientos: deben quedar grumos.",
+    "Pasa el producto por harina, sacude, mójalo en la masa y fríelo enseguida, pocas piezas cada vez.",
+    "Saca cuando la masa esté crujiente y apenas dorada; escurre en rejilla y sirve en el momento."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Gamba y pescado",
+    "ratio": "Masa algo más espesa (160 ml de agua por 100 g)",
+    "note": "175-180 °C."
+   },
+   {
+    "use": "Hojas y flores",
+    "ratio": "Masa más ligera (200 ml por 100 g)",
+    "note": "Solo por una cara, 170 °C."
+   },
+   {
+    "use": "Kakiage",
+    "ratio": "Unos 40 g de masa por 100 g de verdura en juliana",
+    "note": "Se fríe en cucharadas que se aplanan en el aceite."
+   }
+  ],
+  "variants": [
+   {
+    "id": "fritura",
+    "name": "Fritura",
+    "note": "Temperaturas, aceites y escurrido."
+   },
+   {
+    "id": "ponzu-y-salsas-citricas",
+    "name": "Para mojar",
+    "note": "Tentsuyu, ponzu o sal con cítricos."
+   }
+  ],
+  "keys": [
+   "Todo frío: agua, harina e incluso el cuenco.",
+   "Mezclar lo mínimo: los grumos son buena señal.",
+   "Masa hecha al momento, en tandas pequeñas.",
+   "El producto, seco y enharinado, para que la masa se agarre.",
+   "Servir enseguida: la tempura no espera."
+  ],
+  "errors": [
+   {
+    "p": "Pesada y aceitosa",
+    "fix": "Aceite frío o masa trabajada de más. Sube a 175 °C y mezcla menos."
+   },
+   {
+    "p": "La masa se cae",
+    "fix": "Producto húmedo. Sécalo y pásalo antes por harina."
+   },
+   {
+    "p": "Blanda a los dos minutos",
+    "fix": "Masa espesa o escurrido en papel. Aligera la masa y escurre en rejilla."
+   }
+  ],
+  "history": "La tempura llegó a Japón con los portugueses en el siglo XVI y los japoneses la refinaron hasta convertirla en un arte propio, con cocineros dedicados solo a ella.",
+  "uses": [
+   "Aperitivos",
+   "Verduras de temporada",
+   "Gambas y pescado",
+   "Crujientes para un plato"
+  ],
+  "keep": "No se guarda: se fríe al momento. La masa, como mucho, 10 minutos en frío.",
+  "pro": "Prepara la masa en tandas pequeñas sobre hielo. Producto ya cortado, seco y enharinado en el pase.",
+  "related": [
+   "fritura",
+   "ponzu-y-salsas-citricas",
+   "dashi",
+   "deshidratados-y-crujientes"
+  ]
+ },
+ {
+  "id": "miso-y-koji",
+  "name": "Miso y koji",
+  "name_en": "Miso and koji",
+  "cat": "tecnicas",
+  "group": "Asia",
+  "aka": [
+   "koji",
+   "miso",
+   "shio koji",
+   "aspergillus oryzae"
+  ],
+  "summary": "El hongo que transforma: del koji salen el miso, la soja y el sake, y en cocina sirve para madurar, marinar y dar umami.",
+  "what": "El koji es arroz (o cebada, o soja) inoculado con un hongo que produce enzimas capaces de romper almidones en azúcares y proteínas en aminoácidos. De ahí sale el umami de la salsa de soja, el miso o el sake.\n\nEn una cocina de autor se usa sobre todo de tres maneras: miso (pasta fermentada de soja y koji) para salsas, glaseados y marinadas; shio koji (koji, sal y agua) para marinar carnes y pescados y hacerlos más tiernos y sabrosos; y miso propio con legumbres locales.",
+  "method": [
+   "Para shio koji: mezcla 100 g de koji de arroz, 30 g de sal y 150 ml de agua.",
+   "Deja a temperatura ambiente en un tarro tapado, removiendo una vez al día, 7-10 días, hasta que huela dulce y afrutado.",
+   "Tritúralo y guárdalo en frío.",
+   "Para marinar, unta el producto con un 10 % de su peso en shio koji: pescado 2-12 horas, carne 12-48 horas.",
+   "Para un glaseado de miso, mezcla miso blanco, mirin y un poco de azúcar, unta y gratina o pasa por la brasa."
+  ],
+  "ratios": [
+   {
+    "use": "Shio koji",
+    "ratio": "100 g de koji, 30 g de sal, 150 ml de agua",
+    "note": "7-10 días a temperatura ambiente."
+   },
+   {
+    "use": "Marinada de shio koji",
+    "ratio": "10 % del peso del producto",
+    "note": "Retira el exceso antes de cocinar: se quema fácil."
+   },
+   {
+    "use": "Glaseado de miso",
+    "ratio": "4 partes de miso blanco, 2 de mirin, 1 de azúcar",
+    "note": "Para pescado azul o berenjena."
+   }
+  ],
+  "variants": [
+   {
+    "id": "fermentacion-lactica",
+    "name": "Fermentación láctica",
+    "note": "Otra fermentación, hecha por bacterias."
+   },
+   {
+    "id": "maduracion-de-carne",
+    "name": "Maduración",
+    "note": "El koji acelera parte de ese trabajo."
+   }
+  ],
+  "keys": [
+   "El koji se compra seco o fresco; conserva el fresco en frío.",
+   "Lo que se marina con koji se dora antes: baja el fuego.",
+   "El miso blanco es suave y dulce; el rojo, más largo e intenso.",
+   "El miso no hierve: se añade al final para no perder aroma."
+  ],
+  "errors": [
+   {
+    "p": "Se quema al cocinar",
+    "fix": "Los azúcares del koji caramelizan rápido. Limpia el exceso y baja el fuego."
+   },
+   {
+    "p": "Textura pastosa en el pescado",
+    "fix": "Demasiado tiempo de marinada. Acorta a pocas horas."
+   },
+   {
+    "p": "Huele mal el shio koji",
+    "fix": "Si huele a podrido o tiene moho de color, se tira y se empieza de nuevo con más sal y limpieza."
+   }
+  ],
+  "history": "El koji es la base de la cocina fermentada japonesa desde hace más de mil años. En las últimas décadas lo han adoptado cocinas de todo el mundo para madurar y dar profundidad.",
+  "uses": [
+   "Marinar carnes y pescados",
+   "Glaseados",
+   "Salsas y aliños",
+   "Dar umami a verduras"
+  ],
+  "keep": "El miso, en frío, meses. El shio koji, en frío, unos 6 meses.",
+  "pro": "Ten siempre shio koji hecho: mejora en horas un pescado o una pieza de carne. Etiqueta con fecha.",
+  "related": [
+   "umami-y-fondo",
+   "fermentacion-lactica",
+   "dashi",
+   "maduracion-de-carne",
+   "ponzu-y-salsas-citricas"
+  ]
  }
 ]

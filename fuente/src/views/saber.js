@@ -13,13 +13,14 @@ import {technique} from '../flavor-core.js';
 import {pathsHtml} from './paths.js';
 import {cardsFor} from './train.js';
 import {bookSheet, printBook} from './kbook.js';
+import {compareSheet} from './kcompare.js';
 // «Para ti»: fichas que casan con los intereses de Mi cocina (brasa, marisco, México, fermentos…).
-const INTEREST_WORDS = {'brasa': 'brasa', 'verdura a la brasa': 'verduras brasa', 'pescado y marisco': 'pescado marisco', 'postres': 'crema merengue helado flao', 'asia': 'dashi', 'mexico': 'chiles', 'méxico': 'chiles', 'casqueria': 'casqueria', 'casquería': 'casqueria', 'encurtidos y fermentos': 'fermentacion encurtida', 'sin alcohol': 'maridaje sin alcohol', 'cocina ibicenca': 'ibicenca isla', 'para compartir': 'picada'};
+const INTEREST_WORDS = {'brasa': 'brasa', 'verdura a la brasa': 'verduras brasa', 'pescado y marisco': 'pescado marisco', 'postres': 'crema|merengue|helado|flao', 'asia': 'dashi|tempura|miso|ponzu', 'mexico': 'chiles', 'méxico': 'chiles', 'casqueria': 'casqueria', 'casquería': 'casqueria', 'encurtidos y fermentos': 'fermentacion|encurtidos', 'sin alcohol': 'maridaje sin alcohol', 'cocina ibicenca': 'ibicenca|flao|almendra', 'para compartir': 'picada'};
 function forYouHtml() {
  const ints = (state.settings?.interests || []).map(x => String(x).toLowerCase());
  if (!ints.length) return '';
  const seen = new Set(), out = [];
- for (const i of ints) for (const e of search(INTEREST_WORDS[i] || i, 3)) if (!seen.has(e.id)) { seen.add(e.id); out.push([i, e]); }
+ for (const i of ints) for (const e of (INTEREST_WORDS[i] || i).split('|').flatMap(q => search(q, 3))) if (!seen.has(e.id)) { seen.add(e.id); out.push([i, e]); }
  return out.length ? '<section class="sec"><h2 class="day">' + esc(t('Para ti, según tus intereses', 'For you, from your interests')) + '</h2><div class="chips kforyou">' + out.slice(0, 18).map(([, e]) => '<a class="chip" href="' + href(e.id) + '">' + esc(e.name) + '</a>').join('') + '</div><p class="fine">' + esc(t('Cambia tus intereses en Mi cocina.', 'Change your interests in My kitchen.')) + '</p></section>' : '';
 }
 
@@ -191,7 +192,7 @@ function entryHtml(id, tab) {
  const list = panels(e), on = list.some(p => p[0] === tab) ? tab : list[0][0];
  const {dishes, subs} = inDishes(e), rel = [...new Set([...(e.related || []), ...backlinks(e.id).map(x => x.id)])].map(entryById).filter(x => x && x.id !== e.id);
  return '<div class="kentry-back">' + (hasSearch() ? back : '') + '<a class="back" href="#/biblioteca/estante/' + esc(e.cat || 'conceptos') + '">' + icon('left') + esc(shelfName(e.cat || 'conceptos')) + '</a></div><article class="kentry">' +
-  '<header class="page-head"><h1>' + esc(e.name) + '</h1>' + (e.aka?.length ? '<p class="kaka">' + esc(t('También: ', 'Also: ') + e.aka.join(', ')) + '</p>' : '') + '<button type="button" class="btn ghost" data-act="favorite" aria-pressed="' + saved + '">' + esc(saved ? t('Quitar de favoritas', 'Remove from favourites') : t('Guardar en favoritas', 'Save to favourites')) + '</button>' + (cardsFor(e.id) ? '<a class="btn ghost" href="#/entrenar/ficha/' + esc(e.id) + '">' + icon('brain') + esc(t('Repasar esta ficha', 'Review this entry')) + '</a>' : '') + '<button type="button" class="btn ghost" data-act="print-entry">' + icon('down') + esc(t('Imprimir', 'Print')) + '</button>' + ((e.base?.items?.length || technique(e.technique)) && state.canEdit && !state.setupPending ? '<button type="button" class="btn primary k-use" data-act="use-recipe">' + icon('plus') + esc(technique(e.technique) ? t('Aplicar técnica a un plato', 'Apply technique to a dish') : t('Usar en un plato', 'Use in a dish')) + '</button>' : '') + '</header>' +
+  '<header class="page-head"><h1>' + esc(e.name) + '</h1>' + (e.aka?.length ? '<p class="kaka">' + esc(t('También: ', 'Also: ') + e.aka.join(', ')) + '</p>' : '') + '<button type="button" class="btn ghost" data-act="favorite" aria-pressed="' + saved + '">' + esc(saved ? t('Quitar de favoritas', 'Remove from favourites') : t('Guardar en favoritas', 'Save to favourites')) + '</button>' + (cardsFor(e.id) ? '<a class="btn ghost" href="#/entrenar/ficha/' + esc(e.id) + '">' + icon('brain') + esc(t('Repasar esta ficha', 'Review this entry')) + '</a>' : '') + '<button type="button" class="btn ghost" data-act="compare-entry">' + esc(t('Comparar', 'Compare')) + '</button><button type="button" class="btn ghost" data-act="print-entry">' + icon('down') + esc(t('Imprimir', 'Print')) + '</button>' + ((e.base?.items?.length || technique(e.technique)) && state.canEdit && !state.setupPending ? '<button type="button" class="btn primary k-use" data-act="use-recipe">' + icon('plus') + esc(technique(e.technique) ? t('Aplicar técnica a un plato', 'Apply technique to a dish') : t('Usar en un plato', 'Use in a dish')) + '</button>' : '') + '</header>' +
   (e.summary ? '<div class="kbody"><p class="lead">' + linked(e.summary) + '</p></div>' : '') +
   '<div class="ktabs" role="tablist" aria-label="' + esc(t('Partes de la entrada', 'Parts of the entry')) + '">' + list.map(([pid, label]) => '<button type="button" role="tab" id="kt-' + pid + '" aria-controls="kp-' + pid + '" aria-selected="' + (pid === on) + '" tabindex="' + (pid === on ? 0 : -1) + '" class="ktab' + (pid === on ? ' active' : '') + '" data-ktab="' + pid + '">' + esc(label) + '</button>').join('') + '</div>' +
   list.map(([pid, , body]) => '<section class="kpanel" role="tabpanel" tabindex="0" id="kp-' + pid + '" aria-labelledby="kt-' + pid + '"' + (pid === on ? '' : ' hidden') + '>' + body + '</section>').join('') +
@@ -335,6 +336,7 @@ export function mount(root, params) {
   if (b.dataset.ktab) { showTab(b.dataset.ktab); return; }
   const act = b.dataset.act, id = params[0];
   if (act === 'kbook') { bookSheet(favorites()); return; }
+  if (act === 'compare-entry' && entryById(id)) { compareSheet(id); return; }
   if (act === 'print-entry' && entryById(id)) { printBook(entryById(id).name, [entryById(id)]); return; }
   if (act === 'cook-mode') {
    const on = b.getAttribute('aria-pressed') === 'false';

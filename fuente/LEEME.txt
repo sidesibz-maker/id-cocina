@@ -144,3 +144,11 @@ LO NUEVO PARA TU OFICIO (NOVIEMBRE 2026)
  - Laboratorio: «Un reto con restricción» (16 retos, como «solo tres ingredientes» o «sin fuego») para apuntar con la chispa.
  - Diario → «Lo aprendido»: lo aprendido y las ideas, mes a mes, para imprimir; las ideas pasan a chispas con un toque.
  - Atajos en el PC: «?» enseña la ayuda, «/» o Ctrl+K busca, y «g» + letra cambia de sección (g b, Biblioteca).
+ - Biblioteca: 125 fichas. Nuevas: tempura, ponzu y salsas cítricas, miso y koji, ceviche y crudos, pato y cordero.
+   Rutas nuevas: «Asia en tu cocina» y «Carnes y aves». En cada ruta, «Repasar lo leído» o «Examen de la ruta».
+ - En cada ficha, «Comparar»: dos fichas lado a lado (base, proporciones, claves y errores).
+ - Laboratorio: «Cruzar dos chispas» de tu cuaderno, para guardar el cruce o pedir tres platos a ChatGPT.
+ - Diario y portada: «Tal día como hoy» (lo que escribiste hace un año o hace un mes).
+ - Portada: «La pregunta del día», una tarjeta de Entrenar que se gira ahí mismo.
+ - Modo cocina: «Leer los pasos en voz alta».
+ - Trayectoria → «Mi año en cocina»: el resumen del año, para imprimir.

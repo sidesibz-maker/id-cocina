@@ -95,6 +95,14 @@ await page.evaluate(() => { location.hash = '#/diario/aprendido'; }); await page
 ok((await page.textContent('#jlearned')).includes('aguanta tres días'), 'lo aprendido no sale en su página');
 await page.click('[data-spark]'); await wait(400);
 ok(await page.evaluate(() => Object.values(JSON.parse(localStorage.getItem('id-cocina-v1')).docs).some(d => d.type === 'chispa' && d.text === 'Alcachofa confitada con yema curada')), 'la idea del diario no pasa a chispas');
+// Tal día como hoy (hace un año) y Mi año en cocina
+const lastYear = await page.evaluate(() => { const d = new Date(); d.setFullYear(d.getFullYear() - 1); return d.toISOString().slice(0, 10); });
+await page.evaluate(day => { const v = JSON.parse(localStorage.getItem('id-cocina-v1')); v.docs['diario:antiguo'] = {id: 'diario:antiguo', type: 'diario', day, service: 'cena', learned: 'El primer pil-pil que ligué bien', created_at: day + 'T22:00:00Z', updated_at: day + 'T22:00:00Z', version: 1}; localStorage.setItem('id-cocina-v1', JSON.stringify(v)); }, lastYear);
+await page.reload(); await wait(800); await go('#/diario'); await page.waitForSelector('.jonday').catch(() => {});
+ok((await page.textContent('.jonday').catch(() => '')).includes('Hace 1 año'), 'el diario no enseña lo de tal día como hoy');
+await go('#/trayectoria'); await page.click('[data-act=year]'); await page.waitForSelector('#yrBody .stats');
+ok((await page.textContent('#yrBody')).includes('días en el diario'), 'Mi año en cocina no sale');
+await page.keyboard.press('Escape'); await wait(200);
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();
 if (fails.length) { console.error('FALLOS en diario y trayectoria:\n - ' + fails.join('\n - ')); process.exit(1); }

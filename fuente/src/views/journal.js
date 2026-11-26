@@ -23,6 +23,16 @@ const norm = v => String(v || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ
 // Lunes de la semana de un día (para agrupar).
 const monday = d => { const x = new Date(d + 'T12:00:00'), w = (x.getDay() + 6) % 7; x.setDate(x.getDate() - w); return dayKey(x); };
 
+// Tal día como hoy: lo que escribiste hace un año (o, si no, hace un mes), para ver cuánto has avanzado.
+export function onThisDay() {
+ const today = dayKey(), list = liveDocs('diario');
+ const year = list.filter(e => e.day && e.day.slice(5) === today.slice(5) && e.day < today).sort((a, b) => b.day.localeCompare(a.day))[0];
+ if (year) return {e: year, label: t('Hace ', '') + (Number(today.slice(0, 4)) - Number(year.day.slice(0, 4))) + (Number(today.slice(0, 4)) - Number(year.day.slice(0, 4)) === 1 ? t(' año', ' year ago') : t(' años', ' years ago'))};
+ const m = new Date(today + 'T12:00:00'); m.setMonth(m.getMonth() - 1);
+ const month = list.find(e => e.day === dayKey(m));
+ return month ? {e: month, label: t('Hace un mes', 'A month ago')} : null;
+}
+const gist = e => e.learned || e.good || e.bad || e.ideas || '';
 // Lo aprendido, mes a mes: todo lo que has apuntado como aprendido y las ideas del servicio, para releerlo, imprimirlo
 // y pasar las ideas al cuaderno de chispas del Laboratorio.
 function learnedHtml() {
@@ -48,6 +58,7 @@ export function render(params) {
  return '<header class="page-head page-head-row"><div><h1>' + esc(t('Diario de cocina', 'Kitchen journal')) + '</h1><p>' + esc(t('Dos minutos al acabar el servicio. Lo que apuntas hoy es lo que sabrás mañana.', 'Two minutes after service. What you write today is what you will know tomorrow.')) + '</p></div>' +
   '<div class="row-actions"><a class="btn ghost" href="#/diario/aprendido">' + icon('brain') + esc(t('Lo aprendido', 'What I learned')) + '</a><a class="btn primary" href="#/diario/nuevo">' + icon('plus') + esc(done ? t('Otra entrada de hoy', 'Another entry for today') : t('Escribir el de hoy', 'Write today\'s')) + '</a></div></header>' +
   (list.length ? '<div class="stats jstats"><div class="stat"><strong>' + week.length + '</strong><span>' + esc(t('entradas esta semana', 'entries this week')) + '</span></div><div class="stat"><strong>' + (covers || '—') + '</strong><span>' + esc(t('cubiertos esta semana', 'covers this week')) + '</span></div><div class="stat"><strong>' + streak + '</strong><span>' + esc(streak === 1 ? t('día seguido escribiendo', 'day in a row') : t('días seguidos escribiendo', 'days in a row')) + '</span></div><div class="stat"><strong>' + list.filter(e => String(e.learned || '').trim()).length + '</strong><span>' + esc(t('cosas aprendidas en total', 'things learned in total')) + '</span></div></div>' +
+   (() => { const o = onThisDay(); return o ? '<a class="jonday" href="#/diario/' + encodeURIComponent(o.e.id) + '"><strong>' + esc(t('Tal día como hoy. ', 'On this day. ') + o.label) + '</strong><span>' + esc(short(gist(o.e), 220)) + '</span></a>' : ''; })() +
    '<div class="searchbox"><label class="sr" for="jq">' + esc(t('Buscar en el diario', 'Search the journal')) + '</label>' + icon('search') + '<input id="jq" type="search" autocomplete="off" placeholder="' + esc(t('Busca en tu diario: un plato, un producto, un problema…', 'Search your journal: a dish, a product, a problem…')) + '"></div>' +
    '<div id="jlist">' + [...weeks].map(([w, es]) => weekBlock(w, es)).join('') + '</div>'
   : '<div class="empty">' + icon('edit') + '<h2>' + esc(t('Tu diario está en blanco', 'Your journal is blank')) + '</h2><p>' + esc(t('Los grandes cocineros apuntan. Al acabar hoy, escribe tres líneas: qué salió bien, qué falló y qué has aprendido. En un mes tendrás un mapa de cómo trabajas.', 'Great cooks take notes. After today, write three lines: what went well, what went wrong and what you learned. In a month you will have a map of how you work.')) + '</p><a class="btn primary" href="#/diario/nuevo">' + icon('plus') + esc(t('Escribir el de hoy', 'Write today\'s')) + '</a></div>');

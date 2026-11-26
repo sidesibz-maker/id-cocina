@@ -80,6 +80,13 @@ const r1 = await page.textContent('.labrule-text'); await page.click('[data-act=
 ok((await page.textContent('.labrule-text')) !== r1, 'otro reto no cambia el reto');
 const nsp = await page.locator('.labsp').count(); await page.click('[data-act=lab-rule-keep]'); await wait(500);
 ok(await page.locator('.labsp').count() === nsp + 1 && (await page.textContent('.labsparks')).includes('Reto: '), 'el reto no se apunta en el cuaderno');
+// Cruzar dos chispas y la pregunta del día en la portada
+await go('#/laboratorio'); await page.waitForSelector('[data-act=lab-cross]');
+const nx = await page.locator('.labsp').count(); await page.click('[data-act=lab-cross]'); await page.waitForSelector('#crossA');
+await page.click('.sheet [data-x=save]'); await wait(500);
+ok(await page.locator('.labsp').count() === nx + 1 && (await page.textContent('.labsparks')).includes('Cruce: '), 'cruzar dos chispas no apunta el cruce');
+await go('#/hoy'); ok(await page.locator('.qday .qday-q').count() === 1, 'la portada no trae la pregunta del día');
+await page.click('.qday summary'); ok(await page.locator('.qday-a[open]').count() === 1, 'la pregunta del día no se gira');
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();
 if (fails.length) { console.error('FALLOS en el laboratorio:\n - ' + fails.join('\n - ')); process.exit(1); }
