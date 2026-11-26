@@ -39,7 +39,7 @@ function seasonal() {
  const fresh = ['verdura', 'fruta', 'seta', 'pescado', 'marisco', 'hierba'];
  const rows = kb.list.filter(i => fresh.includes(i.family) && i.months.size > 0 && i.months.size <= 7 && inSeason(i, m))
   .map(i => ({i, have: pantry.has(i.id), fresh: !i.months.has(((m + 10) % 12) + 1), local: i.tags.includes('ibiza')}))
-  .sort((a, b) => (b.local - a.local) || (b.fresh - a.fresh) || (b.have - a.have) || a.i.es.localeCompare(b.i.es)).slice(0, 14);
+  .sort((a, b) => (b.local - a.local) || (b.fresh - a.fresh) || (b.have - a.have) || a.i.es.localeCompare(b.i.es)).slice(0, 10);
  if (!rows.length) return '';
  const entering = kb.list.filter(i => fresh.includes(i.family) && i.months.size > 0 && i.months.size < 12 && inSeason(i, m) && !i.months.has(((m + 10) % 12) + 1)).map(i => (en() ? i.en : i.es));
  return '<section class="sec">' + sectionHead(t('De temporada en ', 'In season in ') + monthName(m), moreLink('#/temporada', t('Ver la temporada', 'See the season')), entering.length ? t('Entra ahora: ', 'Coming in now: ') + entering.slice(0, 6).join(', ') + '.' : t('Toca un producto para ver con qué combina.', 'Tap a product to see what it pairs with.')) +
@@ -143,7 +143,8 @@ export function render() {
  else html += emptyState('book', t('Tu libreta está vacía', 'Your notebook is empty'), t('Empieza por un producto que tengas en casa o pide ideas. Cada plato guarda sus pruebas y cómo va cambiando.', 'Start from a product you have in the kitchen or ask for ideas. Each dish keeps its tests and how it evolves.'), state.canEdit ? '<a class="btn primary" href="#/crear">' + icon('plus') + esc(t('Crear un plato', 'Create a dish')) + '</a>' : '');
  html += '</section>';
 
- html += '<section class="sec">' + sectionHead(t('Empieza por aquí', 'Start here')) + '<div class="tiles">' +
+ // Accesos para empezar: solo mientras la libreta tiene pocos platos; después ya están en el menú.
+ if (liveDishes().length < 3) html += '<section class="sec">' + sectionHead(t('Empieza por aquí', 'Start here')) + '<div class="tiles">' +
   '<a class="tile tile-big" href="#/crear">' + icon('plus') + '<strong>' + esc(t('Crear un plato', 'Create a dish')) + '</strong><span>' + esc(t('Monta componentes y mira qué sabores dominan', 'Build components and see which flavours lead')) + '</span></a>' +
   '<a class="tile tile-big" href="#/laboratorio">' + icon('spark') + '<strong>' + esc(t('Laboratorio creativo', 'Creative lab')) + '</strong><span>' + esc(t('Una chispa: producto, pareja, puente y mecanismo', 'A spark: produce, partner, bridge and mechanism')) + '</span></a>' +
   '<a class="tile tile-big" href="#/crear/ideas">' + icon('spark') + '<strong>' + esc(t('Dame ideas', 'Give me ideas')) + '</strong><span>' + esc(t('Tres propuestas a partir de lo que buscas', 'Three proposals from what you are after')) + '</span></a>' +

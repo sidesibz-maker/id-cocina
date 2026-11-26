@@ -1052,3 +1052,23 @@ button.kchip{font:inherit;cursor:pointer}
 .jm-good{fill:var(--ok-ink)}.jm-mid{fill:var(--gold)}.jm-bad{fill:var(--ember)}.jm-none{fill:var(--line)}
 .cook-full{margin-left:auto}
 .kentry-tools{display:inline-flex;gap:16px;flex-wrap:wrap;align-items:center}.kentry .page-head .linkbtn{min-height:44px}
+
+/* ---------- Pulido: pantallas largas en el móvil ---------- */
+.kpath-more summary{cursor:pointer;font-family:var(--narrow);font-weight:600;color:var(--ink2);min-height:44px;display:flex;align-items:center}
+.kpath-more[open] summary{margin-bottom:4px}
+.csec-head{flex-wrap:wrap;gap:4px 16px}
+@media (max-width:640px){
+ .kpaths,.labmechs{display:grid;grid-auto-flow:column;grid-auto-columns:min(82vw,300px);grid-template-columns:none;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0 16px;margin:0 -16px;padding:4px 16px 16px;scrollbar-width:thin}
+ .kpaths>*,.labmechs>*{scroll-snap-align:start}
+ .cskills{grid-template-columns:repeat(2,minmax(0,1fr))}.cskill{min-height:72px;padding:8px 12px}
+ .craft-card{padding:12px 16px}
+}
+.trnew-wrap>summary{cursor:pointer;font-weight:600;min-height:44px;display:flex;align-items:center;margin-bottom:8px}
+.kpath-more>summary,.trnew-wrap>summary,.tmastery>summary,.labboard-wrap>summary,.qday-a>summary,.trmine>summary{list-style:none;gap:8px}
+.kpath-more>summary::-webkit-details-marker,.trnew-wrap>summary::-webkit-details-marker,.tmastery>summary::-webkit-details-marker,.labboard-wrap>summary::-webkit-details-marker,.qday-a>summary::-webkit-details-marker,.trmine>summary::-webkit-details-marker{display:none}
+.kpath-more>summary::before,.trnew-wrap>summary::before,.tmastery>summary::before,.labboard-wrap>summary::before,.qday-a>summary::before,.trmine>summary::before{content:'+';display:inline-grid;place-items:center;width:20px;height:20px;border:1px solid currentColor;font:600 14px/1 var(--sans);flex:none}
+.kpath-more[open]>summary::before,.trnew-wrap[open]>summary::before,.tmastery[open]>summary::before,.labboard-wrap[open]>summary::before,.qday-a[open]>summary::before,.trmine[open]>summary::before{content:'−'}
+.kentry-acts{display:flex;flex-wrap:wrap;align-items:center;gap:4px 20px;margin-top:12px}.kentry-acts .linkbtn{min-height:44px;display:inline-flex;align-items:center;gap:6px}
+.kentry-acts .kentry-tools{gap:4px 20px}.kentry-acts .k-use{margin:0 0 0 auto}
+.kentry-acts [data-act=favorite][aria-pressed=true] .ic{fill:currentColor}
+@media (max-width:640px){.kentry-acts .k-use{margin:4px 0 0}}
