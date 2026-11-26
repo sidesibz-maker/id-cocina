@@ -309,7 +309,7 @@
    "Fumet",
    "Tartares con recortes"
   ],
-  "keep": "Lomos limpios en frío, bien tapados y sin agua; el tiempo que marque tu plan APPCC.",
+  "keep": "Lomos limpios en frío, bien tapados y sin agua, 1–2 días.",
   "pro": "Limpia y raciona al recibir el género, anota el rendimiento y guarda las espinas para el fumet. Una ficha por pescado con su peso de ración.",
   "related": [
    "fumet",
@@ -414,7 +414,7 @@
    "Tartar y carpaccio (solomillo)",
    "Cocciones largas (cortes con colágeno)"
   ],
-  "keep": "En cámara, sobre rejilla y sin envolver si se va a usar pronto, o al vacío; lo que marque tu plan APPCC.",
+  "keep": "En cámara, sobre rejilla y sin envolver si se va a usar pronto, o al vacío; 3–4 días las piezas, 1–2 días la carne fileteada o picada.",
   "pro": "Racionar en el momento de la recepción, al peso de la carta, y etiquetar. Una sonda por cada parrilla y la tabla de puntos en el pase.",
   "related": [
    "punto-de-la-carne",
@@ -1160,7 +1160,7 @@
    "Frituras",
    "Tapas y raciones"
   ],
-  "keep": "Muy poco tiempo en frío; las piezas cocidas, en su caldo o prensadas y envueltas, en frío y según tu plan APPCC.",
+  "keep": "Muy poco tiempo en frío; las piezas cocidas, en su caldo o prensadas y envueltas, en frío, 2–3 días.",
   "pro": "Cuece y prensa en lote las piezas de colágeno; en el servicio solo se cortan y se doran.",
   "related": [
    "baja-temperatura",
@@ -1232,7 +1232,7 @@
    "Sal fina para cocinar, flor de sal para terminar.",
    "La sal realza: un plato soso no se arregla con más de todo lo demás.",
    "La acidez puede sustituir parte de la sal.",
-   "Las sales aromatizadas son una firma barata y muy vistosa."
+   "Las sales aromatizadas son una firma sencilla y muy vistosa."
   ],
   "errors": [
    {
@@ -3798,7 +3798,7 @@
    "pescado graso"
   ],
   "summary": "Pescados pequeños y grasos de sabor intenso: brasa viva, curados y escabeches, siempre muy frescos y muy fríos.",
-  "what": "Se llama pescado azul al que tiene más grasa repartida por la carne: sardina, caballa, jurel, boquerón, estornino. Son pescados de sabor intenso, baratos de producir y de temporada: la sardina está mejor en los meses cálidos, cuando ha engordado. Su grasa los hace jugosos en la brasa y perfectos para curar, marinar y escabechar, pero también los hace delicados: se oxidan y se estropean antes que el pescado blanco.\n\nPiden contraste: ácido, sal, hierbas, algo amargo o picante. En crudo o marinados, siempre congelados antes según la norma, por el anisakis.",
+  "what": "Se llama pescado azul al que tiene más grasa repartida por la carne: sardina, caballa, jurel, boquerón, estornino. Son pescados humildes, de sabor intenso y de temporada: la sardina está mejor en los meses cálidos, cuando ha engordado. Su grasa los hace jugosos en la brasa y perfectos para curar, marinar y escabechar, pero también los hace delicados: se oxidan y se estropean antes que el pescado blanco.\n\nPiden contraste: ácido, sal, hierbas, algo amargo o picante. En crudo o marinados, siempre congelados antes según la norma, por el anisakis.",
   "method": [
    "Compra por el aspecto: ojo vivo, carne firme, vientre entero y brillo metálico. Sin frío constante, no lo compres.",
    "Sardinas a la brasa: enteras, con escama y sin vísceras, saladas 10 minutos antes; brasa viva, 2–3 minutos por lado.",
@@ -6976,7 +6976,7 @@
    "huevos trufados"
   ],
   "summary": "Un hongo subterráneo cuyo valor es el aroma: en crudo, sobre algo caliente y graso, y transmitido a huevos y grasas.",
-  "what": "La trufa es un hongo que crece bajo tierra, junto a las raíces de encinas, robles y avellanos. La trufa negra de invierno tiene un aroma intenso y profundo; la de verano es más suave y barata de conseguir; la blanca, de otoño, es la más perfumada. España es uno de los grandes productores de trufa negra, sobre todo de plantaciones del interior.\n\nSu sabor está casi todo en el aroma, que es volátil: se pierde con el calor fuerte y se transmite con facilidad a la grasa y al huevo. Por eso se usa rallada o laminada en el último momento sobre algo caliente y graso, o se deja junto a huevos, mantequilla o nata para que les pase su aroma.",
+  "what": "La trufa es un hongo que crece bajo tierra, junto a las raíces de encinas, robles y avellanos. La trufa negra de invierno tiene un aroma intenso y profundo; la de verano es más suave y más fácil de conseguir; la blanca, de otoño, es la más perfumada. España es uno de los grandes productores de trufa negra, sobre todo de plantaciones del interior.\n\nSu sabor está casi todo en el aroma, que es volátil: se pierde con el calor fuerte y se transmite con facilidad a la grasa y al huevo. Por eso se usa rallada o laminada en el último momento sobre algo caliente y graso, o se deja junto a huevos, mantequilla o nata para que les pase su aroma.",
   "method": [
    "Limpia la trufa con un cepillo suave y apenas un poco de agua; sécala enseguida.",
    "Guárdala envuelta en papel absorbente, en recipiente cerrado en frío, cambiando el papel cada día.",

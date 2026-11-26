@@ -51,7 +51,7 @@
    {
     "use": "Cerdo jugoso",
     "ratio": "62–65 °C a corazón",
-    "note": "Cerdo de calidad y bien conservado; manda tu plan APPCC."
+    "note": "Cerdo de calidad y bien conservado."
    },
    {
     "use": "Aves",
@@ -296,7 +296,7 @@
    "Huevos",
    "Verduras"
   ],
-  "keep": "Abatido y bien etiquetado, en frío y el tiempo que marque tu plan APPCC para cada producto. Las combinaciones de tiempo y temperatura para pasteurizar deben estar validadas en ese plan.",
+  "keep": "Abatido en agua con hielo, bien etiquetado y en frío (0–3 °C): pescado, 1–2 días; carnes y verduras, 3–5 días. Las combinaciones de tiempo y temperatura para pasteurizar tienen que estar comprobadas para cada producto.",
   "pro": "Es la técnica de producción por excelencia: se cocina en la tarde tranquila, se abate y en servicio solo se regenera y se marca. Documenta cada producto en su ficha con temperatura, tiempo y grosor.",
   "related": [
    "punto-de-la-carne",
@@ -397,7 +397,7 @@
    "Tomates y pimientos",
    "Ajos y chalotas"
   ],
-  "keep": "Las carnes confitadas, cubiertas de grasa y en frío, aguantan días; sigue lo que marque tu plan APPCC. Los ajos u hortalizas en aceite son un riesgo de botulismo: siempre en frío, bien etiquetados y como mucho 4 días; nunca a temperatura ambiente.",
+  "keep": "Las carnes confitadas, cubiertas de grasa y en frío, aguantan días. Los ajos u hortalizas en aceite son un riesgo de botulismo: siempre en frío, bien etiquetados y como mucho 4 días; nunca a temperatura ambiente.",
   "pro": "Se confita en grandes tandas en horas tranquilas, con baño o horno a temperatura fija. En servicio solo se dora. La grasa se cuela y se etiqueta por producto para reutilizarla.",
   "related": [
    "pil-pil",
@@ -545,7 +545,7 @@
     ]
    ],
    "steps": [
-    "Congela el pescado limpio a −20 °C o menos durante al menos 24 horas (o el tiempo que indique tu plan APPCC) y descongela en frío.",
+    "Congela el pescado limpio a −20 °C o menos durante al menos 24 horas en toda la pieza y descongela en frío.",
     "Mezcla la sal, el azúcar, la ralladura y las especias.",
     "Cubre el lomo por completo con la mezcla, en una bandeja, y tapa.",
     "Deja en frío el tiempo de la tabla según el grosor.",
@@ -614,7 +614,7 @@
    "Atún y corvina",
    "Huevas"
   ],
-  "keep": "En frío, bien envuelto y etiquetado, unos pocos días; lo que marque tu plan APPCC.",
+  "keep": "En frío, bien envuelto y etiquetado, 3–4 días.",
   "pro": "Cura en lotes, etiqueta con fecha de congelación y de curado, y corta al pase. Guarda el registro de la congelación por si te lo piden.",
   "related": [
    "escabeche",
@@ -817,7 +817,7 @@
    "Sal y pimentón",
    "Aves y cerdo"
   ],
-  "keep": "Lo ahumado en frío sigue siendo un producto crudo curado: en frío y el tiempo que marque tu plan APPCC.",
+  "keep": "Lo ahumado en frío sigue siendo un producto crudo curado: en frío y bien envuelto, 3–4 días; congelado, hasta 2 meses.",
   "pro": "Ahúma en lotes en horas tranquilas y etiqueta. Para el pase, una campana o pistola de humo da el efecto en sala sin cargar el producto.",
   "related": [
    "curado-de-pescado",
@@ -880,7 +880,7 @@
    {
     "use": "Yema curada",
     "ratio": "Enterrada en sal y azúcar a partes iguales, 4-7 días en frío",
-    "note": "Se ralla como un queso; huevo pasteurizado o según tu plan APPCC."
+    "note": "Se ralla como un queso; con huevo pasteurizado."
    }
   ],
   "variants": [
@@ -1127,7 +1127,7 @@
    "Aperitivos",
    "Cócteles sin alcohol"
   ],
-  "keep": "Las bases en frío según tu plan APPCC; el sifón cargado, en frío o en baño durante el servicio.",
+  "keep": "Las bases en frío y bien tapadas, 2 días como mucho (24 horas si llevan huevo); el sifón cargado, en frío o en baño durante el servicio.",
   "pro": "Prepara la base el día antes y carga el sifón a la hora del servicio. Lava y desmonta las juntas cada día.",
   "related": [
    "emulsiones",
@@ -4820,7 +4820,7 @@
     "fix": "Sin desgrasar. Enfría, retira la grasa y regenera."
    }
   ],
-  "history": "Los guisos de cuchara están en el centro de la cocina tradicional de toda la península y de las islas: se hacían con piezas baratas, fuego lento y lo que hubiera en la huerta. Cada zona tiene los suyos.",
+  "history": "Los guisos de cuchara están en el centro de la cocina tradicional de toda la península y de las islas: se hacían con piezas humildes, fuego lento y lo que hubiera en la huerta. Cada zona tiene los suyos.",
   "uses": [
    "Platos de cuchara",
    "Rellenos con la carne deshilachada",
