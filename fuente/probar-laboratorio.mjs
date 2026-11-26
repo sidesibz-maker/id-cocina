@@ -6,7 +6,9 @@ const {chromium} = require('playwright');
 const url = new URL('./salida/ID Cocina/ID Cocina.html', import.meta.url).href;
 const fails = [], ok = (c, m) => { if (!c) fails.push(m); }, wait = ms => new Promise(r => setTimeout(r, ms));
 const browser = await chromium.launch();
-const page = await (await browser.newContext({viewport: {width: 1280, height: 900}})).newPage(), errors = [];
+const ctx = await browser.newContext({viewport: {width: 1280, height: 900}});
+await ctx.route('https://api.openai.com/v1/responses', r => r.fulfill({status: 200, contentType: 'application/json', body: JSON.stringify({output: [{type: 'message', content: [{type: 'output_text', text: JSON.stringify({ideas: [1, 2, 3].map(k => ({name: 'Higo a la brasa ' + k, line: 'Higo, ceniza y queso', course: 'postre', why: 'Dulce y ahumado', twist: 'Ceniza de sarmiento', components: [{role: 'principal', name: 'Higo', techniques: ['brasa'], items: ['higo']}, {role: 'cremoso', name: 'Crema de queso', techniques: [], items: ['queso fresco']}]})), issues: []})}]}]})}));
+const page = await ctx.newPage(), errors = [];
 page.on('pageerror', e => errors.push(String(e)));
 const go = async h => { await page.evaluate(x => { location.hash = x; }, h); await wait(400); };
 await page.goto(url); await page.waitForSelector('.hello h1');
@@ -65,6 +67,12 @@ await page.fill('#labText', 'Puesto de setas del mercado'); await page.click('#l
 const withImg = await page.evaluate(() => Object.values(JSON.parse(localStorage.getItem('id-cocina-v1')).docs).find(d => d.type === 'chispa' && d.image));
 ok(withImg && withImg.image.startsWith('img/chispas/'), 'la chispa no guarda la foto');
 ok(await page.locator('.labsp-img').count() === 1, 'la chispa no enseña la foto');
+// Tres platos con ChatGPT a partir de la chispa
+await page.evaluate(() => localStorage.setItem('id-cocina-ia', JSON.stringify({key: 'sk-prueba-1234567890abcdefghij'})));
+await go('#/laboratorio'); await page.click('[data-act=lab-ideas]'); await page.waitForSelector('.labideas .idea-card');
+ok(await page.locator('.labideas .idea-card').count() === 3, 'no salen las tres propuestas');
+await page.click('[data-take="1"]'); await wait(800);
+ok((await page.evaluate(() => location.hash)).startsWith('#/plato/') && (await page.inputValue('#dishName')).includes('Higo a la brasa 2'), 'llevar la propuesta no crea el plato');
 await go('#/laboratorio/higo'); ok((await page.textContent('.labtrio .labing')).toLowerCase().includes('higo'), 'el Laboratorio no parte del producto de la dirección');
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();

@@ -6,7 +6,11 @@ import {pairings, bridge, inSeason, norm} from '../flavor-core.js';
 import {t, en, dayKey, relDay} from '../i18n.js';
 import {esc, icon, $, $$, toast, ask, friendly} from '../ui.js';
 import {state, liveDocs, saveDoc, trashDoc, createDish, docById, uploadImage, imageUrl} from '../store.js';
-import {shrinkImage} from '../ai.js';
+import {shrinkImage, ideasPrompt, ideasFromReply, copy} from '../ai.js';
+import {iaOn, askIa, iaMessage} from '../ia.js';
+import {adoptIdea} from './shared.js';
+import {role, technique} from '../flavor-core.js';
+import {sheet} from '../ui.js';
 import {go} from '../nav.js';
 
 export const title = () => t('Laboratorio creativo', 'Creative lab');
@@ -60,10 +64,10 @@ export function render(params = []) {
  return '<header class="page-head"><h1>' + esc(t('Laboratorio creativo', 'Creative lab')) + '</h1><p>' + esc(t('Crear es un método: mirar un producto de otra manera, juntar lo que nadie ha juntado y apuntar todas las ideas, también las malas. Aquí tienes con qué.', 'Creating is a method: look at produce differently, pair what nobody has paired and write down every idea, bad ones too. Here is how.')) + '</p></header>' +
   '<section class="card labspark" aria-live="polite"><div class="csec-head"><h2>' + esc(t('Una chispa', 'A spark')) + '</h2><span class="fine">' + esc(t('Producto de temporada, una pareja, un puente y un mecanismo', 'Seasonal produce, a partner, a bridge and a mechanism')) + '</span></div><div id="labCur">' + sparkHtml() + '</div>' +
   '<div class="labfix"><label for="labFix">' + esc(t('Partir de un producto concreto', 'Start from a given product')) + '</label><input id="labFix" list="labKb" autocomplete="off" placeholder="' + esc(t('Escribe un producto: gamba roja, higo, sobrasada…', 'Type a product: red prawn, fig, sobrasada…')) + '"><datalist id="labKb">' + (state.kb ? state.kb.list.map(i => '<option value="' + esc(en() ? i.en : i.es) + '">').join('') : '') + '</datalist></div>' +
-  '<div class="row-actions row-left"><button type="button" class="btn primary" data-act="lab-new">' + icon('spark') + esc(t('Otra chispa', 'Another spark')) + '</button><button type="button" class="btn ghost" data-act="lab-keep">' + icon('star') + esc(t('Guardar en el cuaderno', 'Save to the notebook')) + '</button><button type="button" class="btn ghost" data-act="lab-dish">' + icon('book') + esc(t('Llevar a la libreta', 'Take to the notebook')) + '</button></div></section>' +
+  '<div class="row-actions row-left"><button type="button" class="btn primary" data-act="lab-new">' + icon('spark') + esc(t('Otra chispa', 'Another spark')) + '</button><button type="button" class="btn ghost" data-act="lab-keep">' + icon('star') + esc(t('Guardar en el cuaderno', 'Save to the notebook')) + '</button><button type="button" class="btn ghost" data-act="lab-dish">' + icon('book') + esc(t('Llevar a la libreta', 'Take to the notebook')) + '</button><button type="button" class="btn ghost" data-act="lab-ideas">' + icon('chat') + esc(t('Tres platos con ChatGPT', 'Three dishes with ChatGPT')) + '</button></div></section>' +
   '<section class="sec"><header class="sec-head"><div><h2>' + esc(t('Cuaderno de chispas', 'Spark notebook')) + '</h2><p>' + esc(t('Apunta cualquier idea en cuanto te venga, aunque sea a medias. Las mejores salen de releer las viejas.', 'Write down any idea as soon as it comes, even half-formed. The best ones come from rereading old ones.')) + '</p></div></header>' +
   '<form id="labNote" class="card labnote"><label class="sr" for="labText">' + esc(t('Nueva chispa', 'New spark')) + '</label><textarea id="labText" rows="3" maxlength="2000" data-voice placeholder="' + esc(t('Un sabor, un recuerdo, una técnica, algo que has visto o comido…', 'A flavour, a memory, a technique, something you saw or ate…')) + '"></textarea><div class="row-actions"><label class="btn ghost" for="labPhoto">' + icon('image') + esc(t('Con foto', 'With a photo')) + '</label><input id="labPhoto" class="sr" type="file" accept="image/*" capture="environment"><button type="submit" class="btn primary">' + icon('plus') + esc(t('Apuntar', 'Note it')) + '</button></div><p class="fine" id="labPhotoState" hidden></p></form>' +
-  (sparks.length ? '<ul class="labsparks">' + sparks.map(s => '<li class="labsp' + (s.dish_id ? ' is-dish' : '') + '">' + (s.image ? '<img class="labsp-img" data-img="' + esc(s.image) + '" alt="' + esc(t('Foto de la chispa', 'Spark photo')) + '">' : '') + '<p>' + esc(s.text) + '</p><div class="labsp-foot"><small>' + esc(relDay(s.created_at || new Date())) + (s.dish_id ? t(', ya es un plato', ', now a dish') : '') + '</small>' + (s.dish_id ? '<a class="linkbtn" href="#/plato/' + esc(s.dish_id) + '">' + esc(t('Ver el plato', 'See the dish')) + '</a>' : '<button type="button" class="linkbtn" data-to-dish="' + esc(s.id) + '">' + esc(t('Convertir en plato', 'Turn into a dish')) + '</button>') + '<button type="button" class="iconbtn" data-sp-del="' + esc(s.id) + '" aria-label="' + esc(t('A la papelera', 'To the bin')) + '">' + icon('trash') + '</button></div></li>').join('') + '</ul>' : '<p class="hint">' + esc(t('Aún no hay chispas. La primera puede ser la de arriba.', 'No sparks yet. The first one can be the one above.')) + '</p>') + '</section>' +
+  (sparks.length ? '<ul class="labsparks">' + sparks.map(s => '<li class="labsp' + (s.dish_id ? ' is-dish' : '') + '">' + (s.image ? '<img class="labsp-img" data-img="' + esc(s.image) + '" alt="' + esc(t('Foto de la chispa', 'Spark photo')) + '">' : '') + '<p>' + esc(s.text) + '</p><div class="labsp-foot"><small>' + esc(relDay(s.created_at || new Date())) + (s.dish_id ? t(', ya es un plato', ', now a dish') : '') + '</small>' + (s.dish_id ? '<a class="linkbtn" href="#/plato/' + esc(s.dish_id) + '">' + esc(t('Ver el plato', 'See the dish')) + '</a>' : '<button type="button" class="linkbtn" data-to-dish="' + esc(s.id) + '">' + esc(t('Convertir en plato', 'Turn into a dish')) + '</button><button type="button" class="linkbtn" data-sp-ideas="' + esc(s.id) + '">' + esc(t('Tres platos', 'Three dishes')) + '</button>') + '<button type="button" class="iconbtn" data-sp-del="' + esc(s.id) + '" aria-label="' + esc(t('A la papelera', 'To the bin')) + '">' + icon('trash') + '</button></div></li>').join('') + '</ul>' : '<p class="hint">' + esc(t('Aún no hay chispas. La primera puede ser la de arriba.', 'No sparks yet. The first one can be the one above.')) + '</p>') + '</section>' +
   '<section class="sec"><header class="sec-head"><div><h2>' + esc(t('Mecanismos de creación', 'Creative mechanisms')) + '</h2><p>' + esc(t('Maneras de mirar un producto o un plato para sacar algo nuevo. Elige uno y oblígate a usarlo.', 'Ways of looking at produce or a dish to get something new. Pick one and force yourself to use it.')) + '</p></div></header>' +
   '<div class="labmechs">' + mechanisms().map(m => '<article class="labmech"><h3>' + esc(mechName(m)) + '</h3><p>' + esc(en() ? m[4] : m[3]) + '</p><p class="labex"><em>' + esc(t('Por ejemplo: ', 'For example: ')) + '</em>' + esc(en() ? m[6] : m[5]) + '</p><button type="button" class="linkbtn" data-mech="' + m[0] + '">' + icon('spark') + esc(t('Chispa con este', 'Spark with this')) + '</button></article>').join('') + '</div></section>';
 }
@@ -79,6 +83,26 @@ async function toDish(text, items, source) {
   const d = await createDish({name: t('Idea: ', 'Idea: ') + text.split(/[.\n]/)[0].slice(0, 80), concept: text.slice(0, 600), status: 'idea', components: items.length ? [{id: 'c' + Date.now().toString(36), role: 'principal', name: '', techniques: [], items}] : [], source});
   toast(t('En tu libreta: ', 'In your notebook: ') + d.name); return d;
  } catch (e) { toast(friendly(e), 'error'); return null; }
+}
+// Tres propuestas de plato a partir de una chispa. Con ChatGPT conectado, aquí mismo; si no, se copia la petición.
+async function proposals(text, source, sparkId, btn) {
+ const prompt = ideasPrompt({brief: t('Desarrolla esta chispa del cuaderno de I+D en tres platos distintos: ', 'Develop this spark from the R&D notebook into three different dishes: ') + text});
+ if (!iaOn()) { const ok = await copy(prompt); toast(ok ? t('Petición copiada: pégala en ChatGPT y lleva la respuesta a Crear → Dame ideas. Para hacerlo aquí, conecta ChatGPT en Ajustes.', 'Request copied: paste it into ChatGPT and bring the answer to Create → Give me ideas. To do it here, connect ChatGPT in Settings.') : t('No se pudo copiar.', 'It could not be copied.'), ok ? 'info' : 'error', 8000); return; }
+ btn.disabled = true; btn.classList.add('is-busy');
+ try {
+  const res = ideasFromReply(await askIa({text: prompt, json: true}));
+  if (!res.ideas.length) throw Object.assign(Error('empty'), {kind: 'empty'});
+  const s = sheet({title: t('Tres platos para esta chispa', 'Three dishes for this spark'), wide: true, body: '<p class="lead">' + esc(text) + '</p><div class="labideas">' + res.ideas.map((idea, k) => '<article class="idea-card"><h3>' + esc(idea.name) + '</h3>' + (idea.line ? '<p>' + esc(idea.line) + '</p>' : '') + (idea.twist ? '<p class="fine"><strong>' + esc(t('Lo propio: ', 'The twist: ')) + '</strong>' + esc(idea.twist) + '</p>' : '') +
+   '<ul class="comp-list">' + (idea.components || []).map(c => { const r = role(c.role), techs = (c.techniques || []).map(technique).filter(Boolean).map(x => (en() ? x.en : x.es)); return '<li><span class="comp-role">' + esc(en() ? r.en : r.es) + '</span><span><strong>' + esc(c.name || '') + '</strong>' + (techs.length ? ', ' + esc(techs.join(', ')) : '') + ((c.items || []).length ? '<br><small>' + esc(c.items.map(x => (typeof x === 'string' ? x : x?.name || x?.n)).filter(Boolean).join(', ')) + '</small>' : '') + '</span></li>'; }).join('') + '</ul>' +
+   '<button type="button" class="btn primary" data-take="' + k + '">' + icon('book') + esc(t('Llevar a la libreta', 'Add to notebook')) + '</button></article>').join('') + '</div>'});
+  s.el.addEventListener('click', async e2 => {
+   const b = e2.target.closest('[data-take]'); if (!b) return;
+   b.disabled = true; s.close();
+   const d = await adoptIdea(res.ideas[Number(b.dataset.take)], source);
+   if (d && sparkId) await saveDoc('chispa', sparkId, {dish_id: d.id});
+  });
+ } catch (err) { toast(err?.kind ? iaMessage(err) : friendly(err), 'error', 7000); }
+ btn.disabled = false; btn.classList.remove('is-busy');
 }
 export function mount(root) {
  const paintSpark = () => { const box = $('#labCur', root); if (box) box.innerHTML = sparkHtml(); };
@@ -109,6 +133,9 @@ export function mount(root) {
  hydrate(); new MutationObserver(hydrate).observe(root, {childList: true});
  root.addEventListener('click', async e => {
   const a = e.target.closest('[data-act]')?.dataset.act, mech = e.target.closest('[data-mech]'), td = e.target.closest('[data-to-dish]'), del = e.target.closest('[data-sp-del]');
+  if (a === 'lab-ideas' && current) { proposals(sparkText(current), {kind: 'laboratorio'}, null, e.target.closest('button')); return; }
+  const spi = e.target.closest('[data-sp-ideas]');
+  if (spi) { const s = docById(spi.dataset.spIdeas); if (s) proposals(s.text, {kind: 'chispa', id: s.id}, s.id, spi); return; }
   if (a === 'lab-new') { current = spark(fixedId); paintSpark(); }
   if (mech) { current = spark(fixedId) || current; if (current) current.mech = mech.dataset.mech; paintSpark(); $('.labspark', root).scrollIntoView({block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'}); }
   if (a === 'lab-keep' && current) { await saveDoc('chispa', null, {text: sparkText(current), spark: current}); toast(t('Guardada en el cuaderno.', 'Saved to the notebook.')); }

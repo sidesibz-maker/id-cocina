@@ -995,3 +995,5 @@ html.cooking .tabs{display:none}html.cooking .view{padding-bottom:calc(32px + en
 .stb-t{height:8px;background:var(--track)}.stb-t i{display:block;height:100%;background:var(--gold)}.stb-n{text-align:right;font-variant-numeric:tabular-nums;font-weight:700}
 .stnever{display:grid;gap:16px}.stnever h3{font-family:var(--narrow);font-weight:600;color:var(--mut);font-size:15px;margin-bottom:8px}
 .labsp-img{width:100%;aspect-ratio:4/3;object-fit:cover;border:1px solid var(--line)}
+.labideas{display:grid;gap:16px}.labideas .idea-card .btn{margin-top:12px}
+.labsp-foot{flex-wrap:wrap}
