@@ -6417,5 +6417,2050 @@
    "pollo-y-aves",
    "casqueria"
   ]
+ },
+ {
+  "id": "bullit-de-peix",
+  "name": "Bullit de peix y arroz a banda",
+  "name_en": "Ibizan fish stew and arroz a banda",
+  "cat": "tecnicas",
+  "group": "Cocina de la isla",
+  "technique": "guiso",
+  "aka": [
+   "bullit de peix",
+   "bullit",
+   "arròs a banda",
+   "arroz a banda ibicenco",
+   "pescado hervido con patatas"
+  ],
+  "summary": "Pescado de roca y patatas cocidos en un caldo con sofrito y azafrán, servidos con alioli; y con ese caldo, el arroz que viene después.",
+  "what": "El bullit de peix es uno de los platos más conocidos de Ibiza: un guiso marinero en dos tiempos. Primero se cuecen el pescado de roca en rodajas y las patatas en un caldo con sofrito, azafrán y perejil, y se sirven juntos con [[alioli]]. Después, con el caldo colado, se hace un arroz a banda que se sirve como segundo plato.\n\nEs una cocina de aprovechamiento de pescadores: varios pescados de roca del día, cada uno entra según su grosor. Cada casa y cada restaurante tienen su versión del sofrito, de los pescados y del punto del arroz; aquí va la más extendida. La técnica del caldo está en [[caldo-de-roca]] y la del arroz, en [[arroces]].",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Pescado de roca variado en rodajas con espina (cap roig, mero, gallo, rape, raya)",
+     "2 kg"
+    ],
+    [
+     "Patatas en trozos grandes",
+     "1 kg"
+    ],
+    [
+     "Cebolla, tomate y pimiento para el sofrito",
+     "1, 2 y 1"
+    ],
+    [
+     "Ajos",
+     "4 dientes"
+    ],
+    [
+     "Azafrán",
+     "0,1–0,15 g"
+    ],
+    [
+     "Perejil",
+     "1 manojo pequeño"
+    ],
+    [
+     "Aceite de oliva",
+     "150 ml"
+    ],
+    [
+     "Agua o caldo ligero de morralla",
+     "3 l"
+    ],
+    [
+     "Arroz para el arroz a banda",
+     "80 g por ración"
+    ],
+    [
+     "Alioli para servir",
+     "200 g"
+    ]
+   ],
+   "steps": [
+    "Haz un sofrito con el aceite, la cebolla, el pimiento, el ajo y el tomate hasta que esté concentrado.",
+    "Añade el agua o el caldo, el azafrán infusionado y el perejil; lleva a hervor y cuece 15 minutos.",
+    "Añade las patatas y cuece 15 minutos más; incorpora el pescado salado empezando por las piezas más gruesas y cuece a fuego suave 8–12 minutos.",
+    "Sirve el pescado y las patatas con un poco de caldo y alioli aparte. Cuela el resto del caldo.",
+    "Arroz a banda: sofríe ajo y tomate en la paella, añade el arroz, nácaralo, moja con el caldo caliente y cuece 17–18 minutos; reposa 2–3 minutos y sirve con alioli."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Pescado por ración",
+    "ratio": "300–350 g con espina",
+    "note": "Mezcla de especies."
+   },
+   {
+    "use": "Cocción del pescado",
+    "ratio": "8–12 minutos a fuego suave",
+    "note": "Rodajas de 3–4 cm."
+   },
+   {
+    "use": "Arroz a banda",
+    "ratio": "1 parte de arroz por 3–3,5 de caldo",
+    "note": "En peso; seco."
+   },
+   {
+    "use": "Patata",
+    "ratio": "150–170 g por ración",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "caldo-de-roca",
+    "name": "Caldo de roca",
+    "note": "La base de sabor."
+   },
+   {
+    "id": "arroces",
+    "name": "Arroces secos",
+    "note": "Punto, fuego y socarrat."
+   },
+   {
+    "id": "alioli",
+    "name": "Alioli",
+    "note": "El acompañante obligado."
+   },
+   {
+    "id": "all-i-pebre",
+    "name": "Otros guisos marineros",
+    "note": "Suquet y all i pebre."
+   }
+  ],
+  "keys": [
+   "Pescado de roca del día y variado.",
+   "Cada pescado entra según su grosor.",
+   "Fuego suave para que el pescado no se rompa.",
+   "El caldo es el segundo plato: cuélalo y guárdalo caliente.",
+   "Cada casa tiene su receta: respeta la del lugar y la del cliente."
+  ],
+  "errors": [
+   {
+    "p": "Pescado deshecho",
+    "fix": "Hervor fuerte o removido. Cuece suave y mueve la cazuela."
+   },
+   {
+    "p": "Caldo sin fuerza",
+    "fix": "Poco pescado o sin cabezas. Refuerza con un caldo de roca."
+   },
+   {
+    "p": "Arroz pasado",
+    "fix": "Demasiado caldo o tiempo. Ajusta la proporción y el fuego."
+   }
+  ],
+  "history": "El bullit de peix es un plato tradicional de la cocina marinera de Ibiza, ligado al pescado de roca de la costa. Servir primero el pescado y luego el arroz con el caldo es una costumbre compartida con otras cocinas del Mediterráneo español.",
+  "uses": [
+   "Menús de la isla",
+   "Comidas para compartir",
+   "Platos de identidad en carta"
+  ],
+  "keep": "El caldo, 2 días en frío o congelado. El pescado, al momento.",
+  "pro": "Ten el caldo listo y caliente; cuece el pescado por mesa en cazuela y arranca el arroz cuando la mesa empieza el bullit.",
+  "related": [
+   "caldo-de-roca",
+   "pescado-de-roca",
+   "arroces",
+   "alioli",
+   "cocina-ibicenca",
+   "azafran",
+   "all-i-pebre"
+  ]
+ },
+ {
+  "id": "sofrit-pages",
+  "name": "Sofrit pagès",
+  "name_en": "Ibizan meat and sausage stew",
+  "cat": "tecnicas",
+  "group": "Cocina de la isla",
+  "technique": "guiso",
+  "aka": [
+   "sofrit pagès",
+   "sofrit pages",
+   "sofrito payés",
+   "guiso de fiesta ibicenco",
+   "carnes con sobrasada y butifarra"
+  ],
+  "summary": "Carnes cocidas y luego sofritas con patata, sobrasada y butifarra, ajo, perejil y especias: el plato de fiesta de las casas de la isla.",
+  "what": "El sofrit pagès es un guiso de fiesta de la cocina payesa de Ibiza. Su nombre explica la técnica: varias carnes (cordero, pollo, cerdo) se cuecen primero hasta estar tiernas y luego se sofríen en cazuela con patatas fritas, embutidos de matanza ([[sobrasada-y-embutidos|sobrasada y botifarra]]), ajo y perejil, con azafrán y especias. Queda un plato contundente, con poco caldo y mucho sabor.\n\nEs un plato de casa y de celebración, sobre todo en invierno y en fiestas, y cada familia tiene su versión: unos ponen más especias, otros más caldo, otros añaden ave o conejo. Aquí va la versión más común.",
+  "base": {
+   "for": "8 raciones",
+   "items": [
+    [
+     "Cordero en trozos (costilla o pierna)",
+     "1 kg"
+    ],
+    [
+     "Pollo troceado",
+     "1 (1,5 kg)"
+    ],
+    [
+     "Costilla o magro de cerdo",
+     "500 g"
+    ],
+    [
+     "Sobrasada",
+     "200 g"
+    ],
+    [
+     "Botifarra o butifarrón",
+     "200 g"
+    ],
+    [
+     "Patatas",
+     "1 kg"
+    ],
+    [
+     "Ajos",
+     "1 cabeza"
+    ],
+    [
+     "Perejil picado",
+     "1 manojo"
+    ],
+    [
+     "Azafrán y especias (clavo, canela o pimienta, según la casa)",
+     "0,1 g y al gusto"
+    ],
+    [
+     "Aceite de oliva",
+     "150 ml"
+    ],
+    [
+     "Sal",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Cuece las carnes en agua con sal hasta que estén tiernas, 1–1,5 horas; guarda el caldo.",
+    "Corta las patatas en trozos y fríelas en aceite hasta que estén doradas; reserva.",
+    "En una cazuela de barro con aceite, sofríe las carnes escurridas hasta que tomen color.",
+    "Añade los embutidos en rodajas, las patatas, el ajo y el perejil majados, el azafrán y las especias, y un poco del caldo.",
+    "Cocina a fuego suave 10–15 minutos, moviendo la cazuela, hasta que todo se ligue y quede casi sin caldo."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Cocción de las carnes",
+    "ratio": "1–1,5 horas en agua con sal",
+    "note": "Tiernas, no deshechas."
+   },
+   {
+    "use": "Carne por ración",
+    "ratio": "300–350 g con hueso",
+    "note": "Mezcla de carnes."
+   },
+   {
+    "use": "Embutidos",
+    "ratio": "40–50 g por ración",
+    "note": "Dan grasa y sabor."
+   },
+   {
+    "use": "Sofrito final",
+    "ratio": "10–15 minutos a fuego suave",
+    "note": "Casi sin caldo."
+   }
+  ],
+  "variants": [
+   {
+    "id": "sobrasada-y-embutidos",
+    "name": "Embutidos de la isla",
+    "note": "Sobrasada y botifarra."
+   },
+   {
+    "id": "guisos-largos",
+    "name": "Guisos largos",
+    "note": "La lógica de las carnes guisadas."
+   },
+   {
+    "id": "cocina-ibicenca",
+    "name": "Cocina ibicenca",
+    "note": "El contexto del plato."
+   },
+   {
+    "id": "caldo-de-cocido-y-jamon",
+    "name": "El caldo de las carnes",
+    "note": "Aprovechable para sopas y arroces."
+   }
+  ],
+  "keys": [
+   "Dos tiempos: cocer y luego sofreír.",
+   "Embutidos al final para que no se deshagan.",
+   "Cazuela de barro y fuego suave.",
+   "Poco caldo: es un sofrito, no una sopa.",
+   "Guarda el caldo de cocer las carnes."
+  ],
+  "errors": [
+   {
+    "p": "Carnes secas",
+    "fix": "Cocidas de más o sofritas demasiado tiempo. Saca a punto y sofríe solo para dar color."
+   },
+   {
+    "p": "Sobrasada quemada",
+    "fix": "Añadida pronto o fuego fuerte. Al final y a fuego suave."
+   },
+   {
+    "p": "Plato grasiento",
+    "fix": "Exceso de embutido o aceite. Ajusta la cantidad y retira grasa."
+   }
+  ],
+  "history": "El sofrit pagès es uno de los platos más representativos de la cocina tradicional ibicenca, ligado a la matanza y a las fiestas de invierno. Las recetas varían de una casa a otra.",
+  "uses": [
+   "Menús de fiesta e invierno",
+   "Platos de identidad en carta",
+   "Comidas para compartir"
+  ],
+  "keep": "Las carnes cocidas, 3–4 días en frío en su caldo. El plato terminado, mejor al momento; se puede regenerar con un poco de caldo.",
+  "pro": "Cuece las carnes la víspera y guárdalas en su caldo; fríe las patatas antes del servicio y monta el sofrito por cazuela.",
+  "related": [
+   "sobrasada-y-embutidos",
+   "cocina-ibicenca",
+   "guisos-largos",
+   "cordero",
+   "pollo-y-aves",
+   "azafran"
+  ]
+ },
+ {
+  "id": "frita-de-pulpo-y-de-porc",
+  "name": "Frita de pulpo y frita de cerdo",
+  "name_en": "Ibizan fried octopus and pork with potatoes",
+  "cat": "tecnicas",
+  "group": "Cocina de la isla",
+  "technique": "salteado",
+  "aka": [
+   "frita de pulpo",
+   "frita de pop",
+   "frita de porc",
+   "frita de matanza",
+   "frit",
+   "pulpo frito con patatas"
+  ],
+  "summary": "Pulpo cocido o carne de cerdo salteados con patata frita, pimientos, ajo y especias: un plato de sartén de la cocina payesa.",
+  "what": "La frita es un salteado de la cocina de las Baleares que se hace con lo que hay: patata frita en dados, pimientos, ajo y un ingrediente principal. En Ibiza son muy conocidas la frita de pulpo, con pulpo cocido en trozos, y la frita de cerdo de los días de matanza, con carne, hígado y otras partes del animal recién sacrificado.\n\nLa técnica es sencilla: cada ingrediente se fríe por separado hasta su punto y al final todo se junta en la sartén con ajo, especias y un toque de pimentón o guindilla. Cada casa tiene su frita; la que se describe aquí es la base común.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Pulpo cocido en trozos, o carne e hígado de cerdo en dados",
+     "800 g"
+    ],
+    [
+     "Patatas en dados",
+     "600 g"
+    ],
+    [
+     "Pimiento rojo y verde en tiras",
+     "1 y 1"
+    ],
+    [
+     "Ajos laminados",
+     "4–6 dientes"
+    ],
+    [
+     "Pimentón dulce y guindilla",
+     "5 g y 1"
+    ],
+    [
+     "Hinojo silvestre o laurel (opcional)",
+     "1 rama / 1 hoja"
+    ],
+    [
+     "Aceite de oliva",
+     "200 ml"
+    ],
+    [
+     "Sal y pimienta",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Fríe las patatas en aceite hasta que estén doradas y tiernas; escurre.",
+    "En el mismo aceite, fríe los pimientos hasta que estén tiernos; reserva.",
+    "Saltea el pulpo o la carne a fuego fuerte hasta dorar; el hígado, al final y poco tiempo.",
+    "Junta todo con los ajos laminados; aparta, añade el pimentón y la guindilla y mezcla.",
+    "Rectifica de sal y sirve caliente."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Pulpo cocido",
+    "ratio": "Pulpo de 2 kg, 40–50 minutos en agua hirviendo",
+    "note": "Ver cefalópodos."
+   },
+   {
+    "use": "Patata",
+    "ratio": "150 g por ración",
+    "note": "Dados de 2 cm."
+   },
+   {
+    "use": "Hígado de cerdo",
+    "ratio": "1–2 minutos a fuego fuerte",
+    "note": "Rosado dentro."
+   },
+   {
+    "use": "Pimentón",
+    "ratio": "5 g por 4 raciones",
+    "note": "Fuera del fuego."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cefalopodos",
+    "name": "Cocer el pulpo",
+    "note": "Tiempos y punto."
+   },
+   {
+    "id": "casqueria",
+    "name": "Casquería de cerdo",
+    "note": "Hígado y otras partes."
+   },
+   {
+    "id": "salteado-y-wok",
+    "name": "Salteado",
+    "note": "Por tandas y a fuego fuerte."
+   },
+   {
+    "id": "guarniciones-de-patata",
+    "name": "Patata frita",
+    "note": "En dos tiempos."
+   }
+  ],
+  "keys": [
+   "Cada ingrediente frito por separado.",
+   "Pimentón fuera del fuego.",
+   "Hígado poco hecho y al final.",
+   "Patata dorada pero tierna.",
+   "Plato de casa: cada familia tiene su versión."
+  ],
+  "errors": [
+   {
+    "p": "Pulpo duro",
+    "fix": "Cocido de menos. Cuécelo bien antes de saltear."
+   },
+   {
+    "p": "Todo blando y aceitoso",
+    "fix": "Sartén llena o aceite frío. Fríe por tandas."
+   },
+   {
+    "p": "Pimentón amargo",
+    "fix": "Quemado. Añádelo con el fuego apagado."
+   }
+  ],
+  "history": "La frita es un plato popular de las Baleares; en Ibiza, la frita de pulpo y la de matanza forman parte del recetario de casa.",
+  "uses": [
+   "Platos de mediodía",
+   "Raciones para compartir",
+   "Menús de la isla"
+  ],
+  "keep": "Mejor al momento. El pulpo cocido, 3 días en frío.",
+  "pro": "Ten el pulpo cocido y troceado y las patatas en primer baño; termina en sartén por ración.",
+  "related": [
+   "cefalopodos",
+   "casqueria",
+   "salteado-y-wok",
+   "guarniciones-de-patata",
+   "pimenton-y-noras",
+   "cocina-ibicenca"
+  ]
+ },
+ {
+  "id": "arroz-de-matanzas",
+  "name": "Arroz de matanzas",
+  "name_en": "Ibizan pork and mushroom rice",
+  "cat": "tecnicas",
+  "group": "Cocina de la isla",
+  "technique": "guiso",
+  "aka": [
+   "arròs de matances",
+   "arroz de matanza",
+   "arroz payés",
+   "arroz con setas y sobrasada"
+  ],
+  "summary": "Arroz meloso de invierno con carnes de cerdo y de ave, embutidos de matanza y setas: el arroz de las casas de campo.",
+  "what": "El arroz de matanzas es un arroz meloso de la cocina payesa ibicenca, ligado a los días de matanza y a la temporada de setas. Lleva carnes de cerdo (costilla, magro) y a menudo de pollo o conejo, sobrasada, botifarra, setas del monte, un sofrito de tomate y ajo, pimentón y azafrán. Queda un arroz con caldo, intenso y untuoso.\n\nComo todos los platos de casa, cada familia lo hace a su manera: más o menos caldoso, con más o menos carnes, con unas setas u otras. La técnica del arroz meloso está en [[arroces]].",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Costilla y magro de cerdo en trozos",
+     "600 g"
+    ],
+    [
+     "Pollo o conejo troceado",
+     "600 g"
+    ],
+    [
+     "Setas del monte limpias",
+     "300–400 g"
+    ],
+    [
+     "Sobrasada y botifarra",
+     "100 g y 150 g"
+    ],
+    [
+     "Tomate rallado y ajos",
+     "200 g y 4 dientes"
+    ],
+    [
+     "Pimentón dulce y azafrán",
+     "5 g y 0,1 g"
+    ],
+    [
+     "Arroz redondo",
+     "480 g"
+    ],
+    [
+     "Caldo de carne o agua",
+     "2–2,4 l"
+    ],
+    [
+     "Aceite de oliva",
+     "100 ml"
+    ]
+   ],
+   "steps": [
+    "Dora las carnes saladas en el aceite; añade las setas y saltéalas.",
+    "Añade el ajo y el tomate y sofríe hasta que el tomate esté concentrado; aparta y añade el pimentón.",
+    "Moja con el caldo caliente y cuece 20–30 minutos para que las carnes se ablanden y el caldo tome sabor.",
+    "Añade el arroz, el azafrán y la botifarra en rodajas; cuece 16–18 minutos a fuego medio, removiendo de vez en cuando.",
+    "En los últimos minutos, añade la sobrasada en trocitos; reposa 2 minutos y sirve meloso."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Arroz meloso",
+    "ratio": "1 parte de arroz por 4–5 de caldo",
+    "note": "En peso."
+   },
+   {
+    "use": "Arroz por ración",
+    "ratio": "80 g",
+    "note": ""
+   },
+   {
+    "use": "Cocción del arroz",
+    "ratio": "16–18 minutos",
+    "note": "Más reposo breve."
+   },
+   {
+    "use": "Sobrasada",
+    "ratio": "15–20 g por ración",
+    "note": "Al final."
+   }
+  ],
+  "variants": [
+   {
+    "id": "arroces",
+    "name": "Arroces melosos",
+    "note": "Proporciones y punto."
+   },
+   {
+    "id": "setas",
+    "name": "Setas",
+    "note": "Limpieza y temporada."
+   },
+   {
+    "id": "sobrasada-y-embutidos",
+    "name": "Embutidos",
+    "note": "Al final para que no se quemen."
+   },
+   {
+    "id": "risotto-y-arroces-cremosos",
+    "name": "Arroces cremosos",
+    "note": "Otra forma de arroz con caldo."
+   }
+  ],
+  "keys": [
+   "Caldo con sabor antes del arroz.",
+   "Setas bien salteadas antes de mojar.",
+   "Sobrasada al final.",
+   "Servir enseguida: el arroz meloso sigue bebiendo caldo.",
+   "Arroz de temporada: invierno y setas."
+  ],
+  "errors": [
+   {
+    "p": "Arroz seco en el plato",
+    "fix": "Poco caldo o espera. Más caldo y servir enseguida."
+   },
+   {
+    "p": "Setas aguadas",
+    "fix": "Sin saltear antes. Saltéalas a fuego fuerte."
+   },
+   {
+    "p": "Sabor plano",
+    "fix": "Caldo flojo o carnes poco doradas. Dora bien y deja cocer el caldo."
+   }
+  ],
+  "history": "El arroz de matanzas pertenece a la cocina tradicional de Ibiza, asociada a la matanza del cerdo en invierno, cuando también es temporada de setas.",
+  "uses": [
+   "Menús de invierno",
+   "Platos de la isla",
+   "Arroces para compartir"
+  ],
+  "keep": "Al momento. La base con carnes y caldo, 2–3 días en frío.",
+  "pro": "Prepara la base de carnes, setas y caldo y arranca el arroz al pedido; 18 minutos.",
+  "related": [
+   "arroces",
+   "setas",
+   "sobrasada-y-embutidos",
+   "cocina-ibicenca",
+   "cerdo-iberico",
+   "conejo"
+  ]
+ },
+ {
+  "id": "borrida-de-ratjada",
+  "name": "Borrida de ratjada",
+  "name_en": "Ibizan skate and potato stew",
+  "cat": "tecnicas",
+  "group": "Cocina de la isla",
+  "technique": "guiso",
+  "aka": [
+   "borrida",
+   "borrida de raya",
+   "raya con patatas",
+   "guiso de raya ibicenco"
+  ],
+  "summary": "Raya y patatas guisadas en un caldo ligado con una picada de almendra, ajo y perejil.",
+  "what": "La borrida de ratjada es un guiso tradicional de Ibiza hecho con raya (ratjada) y patatas. Las patatas se cuecen en agua con aceite, ajo y azafrán; la raya entra al final, y el caldo se liga con una [[picada]] de almendra tostada, ajo y perejil, a veces con pan frito o yema de huevo duro. El resultado es un guiso suave, de caldo espeso y aromático.\n\nComo pasa con muchos platos de la isla, las recetas cambian de casa en casa: hay quien añade huevo, quien usa más o menos picada o quien la hace con otros pescados. La de aquí es la base más habitual.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Raya limpia en trozos",
+     "1,2 kg"
+    ],
+    [
+     "Patatas en rodajas gruesas",
+     "800 g"
+    ],
+    [
+     "Ajos",
+     "4 dientes"
+    ],
+    [
+     "Almendra tostada",
+     "60 g"
+    ],
+    [
+     "Perejil",
+     "1 manojo pequeño"
+    ],
+    [
+     "Pan frito o yema de huevo cocido (opcional)",
+     "1 rebanada / 2"
+    ],
+    [
+     "Azafrán",
+     "0,1 g"
+    ],
+    [
+     "Aceite de oliva",
+     "100 ml"
+    ],
+    [
+     "Agua o fumet",
+     "1,5 l"
+    ],
+    [
+     "Sal",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Cuece las patatas en el agua o el fumet con el aceite, dos ajos, el azafrán y sal, 15 minutos.",
+    "Maja la almendra, el resto del ajo, el perejil y el pan o la yema hasta una pasta; desleída con un poco de caldo.",
+    "Añade la raya salada y cuece a fuego suave 8–10 minutos.",
+    "Incorpora la picada moviendo la cazuela y deja 2–3 minutos para que ligue.",
+    "Sirve caliente con el caldo."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Raya por ración",
+    "ratio": "300 g con cartílago",
+    "note": ""
+   },
+   {
+    "use": "Cocción de la raya",
+    "ratio": "8–10 minutos",
+    "note": "Hasta que la carne se separe del cartílago."
+   },
+   {
+    "use": "Picada",
+    "ratio": "60 g de almendra por litro de caldo",
+    "note": "Liga y espesa."
+   },
+   {
+    "use": "Patata",
+    "ratio": "200 g por ración",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "raya-y-pescados-de-fondo",
+    "name": "Raya",
+    "note": "Frescura y limpieza."
+   },
+   {
+    "id": "picada",
+    "name": "Picada",
+    "note": "La ligazón del guiso."
+   },
+   {
+    "id": "all-i-pebre",
+    "name": "Guisos de pescado",
+    "note": "La misma familia."
+   },
+   {
+    "id": "almendra",
+    "name": "Almendra",
+    "note": "Tostada para la picada."
+   }
+  ],
+  "keys": [
+   "Raya muy fresca: si huele a amoniaco, no sirve.",
+   "La picada al final, moviendo la cazuela.",
+   "Fuego suave para que la raya no se deshaga.",
+   "Almendra bien tostada.",
+   "Cada casa, su borrida."
+  ],
+  "errors": [
+   {
+    "p": "Caldo aguado",
+    "fix": "Poca picada. Añade más y deja que ligue."
+   },
+   {
+    "p": "Raya deshecha",
+    "fix": "Cocción fuerte o larga. Fuego suave y 8–10 minutos."
+   },
+   {
+    "p": "Olor fuerte",
+    "fix": "Raya pasada. Solo raya del día."
+   }
+  ],
+  "history": "La borrida de ratjada forma parte de la cocina marinera tradicional de Ibiza. Comparte la ligazón con picada con muchos guisos de pescado del Mediterráneo español.",
+  "uses": [
+   "Platos de cuchara de pescado",
+   "Menús de la isla",
+   "Comidas de invierno"
+  ],
+  "keep": "Al momento. La picada, 1–2 días en frío.",
+  "pro": "Patatas precocidas en el caldo; la raya y la picada al pedido, en cazuela individual.",
+  "related": [
+   "raya-y-pescados-de-fondo",
+   "picada",
+   "all-i-pebre",
+   "almendra",
+   "cocina-ibicenca",
+   "azafran"
+  ]
+ },
+ {
+  "id": "ensalada-payesa",
+  "name": "Ensalada payesa y peix sec",
+  "name_en": "Ibizan country salad with dried fish",
+  "cat": "tecnicas",
+  "group": "Cocina de la isla",
+  "aka": [
+   "ensalada payesa",
+   "ensalada pagesa",
+   "peix sec",
+   "pescado seco",
+   "ensalada de peix sec"
+  ],
+  "summary": "Patata cocida, pimiento asado, tomate y cebolla con pescado seco desmigado y aceite: la ensalada de las Pitiusas.",
+  "what": "La ensalada payesa es una ensalada de patata cocida, pimiento rojo asado, tomate, cebolla y aceitunas, aliñada con aceite de oliva y, en su versión más característica, con peix sec: pescado seco al sol, desmigado. El peix sec se hace tradicionalmente con raya o con pequeños escualos, abiertos, salados y secados al aire, y tiene una larga tradición sobre todo en Formentera.\n\nAntes de usarlo, el pescado seco se suele tostar o asar un poco y se desmiga a mano. Cada casa decide la proporción de pescado, si lleva huevo o no, y cómo se aliña.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Patatas cocidas con piel",
+     "600 g"
+    ],
+    [
+     "Pimiento rojo asado y pelado",
+     "2"
+    ],
+    [
+     "Tomate maduro",
+     "2"
+    ],
+    [
+     "Cebolla dulce en juliana",
+     "½"
+    ],
+    [
+     "Peix sec tostado y desmigado",
+     "60–100 g"
+    ],
+    [
+     "Aceitunas",
+     "60 g"
+    ],
+    [
+     "Aceite de oliva virgen extra",
+     "80–100 ml"
+    ],
+    [
+     "Ajo y perejil (opcional)",
+     "1 diente y unas hojas"
+    ],
+    [
+     "Sal",
+     "con cuidado"
+    ]
+   ],
+   "steps": [
+    "Cuece las patatas con piel, pélalas templadas y córtalas en trozos.",
+    "Asa y pela los pimientos y córtalos en tiras, guardando su jugo.",
+    "Tuesta el peix sec unos minutos en brasa o plancha y desmígalo a mano, quitando espinas y piel; si está muy duro, remójalo brevemente en aceite.",
+    "Mezcla patata, pimiento, tomate, cebolla y aceitunas con el aceite y el jugo de los pimientos.",
+    "Añade el pescado desmigado, prueba antes de salar y deja reposar 15–30 minutos."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Peix sec",
+    "ratio": "15–25 g por ración",
+    "note": "Es muy salado e intenso."
+   },
+   {
+    "use": "Patata",
+    "ratio": "150 g por ración",
+    "note": ""
+   },
+   {
+    "use": "Aceite",
+    "ratio": "20–25 ml por ración",
+    "note": "Con el jugo del pimiento."
+   },
+   {
+    "use": "Reposo",
+    "ratio": "15–30 minutos",
+    "note": "Templada, no fría de cámara."
+   }
+  ],
+  "variants": [
+   {
+    "id": "pimientos-asados-alinados",
+    "name": "Pimientos asados",
+    "note": "Con su jugo."
+   },
+   {
+    "id": "salazones-y-huevas",
+    "name": "Salazones",
+    "note": "Otros pescados salados y secos."
+   },
+   {
+    "id": "ensaladas-templadas",
+    "name": "Ensaladas templadas",
+    "note": "Patata y verdura tibias."
+   },
+   {
+    "id": "producto-de-la-isla",
+    "name": "Producto de la isla",
+    "note": "Buscar peix sec de productores locales."
+   }
+  ],
+  "keys": [
+   "El peix sec es sal y umami: con medida.",
+   "Patata templada: absorbe mejor el aliño.",
+   "El jugo de los pimientos asados es parte del aliño.",
+   "Probar antes de salar.",
+   "Servir templada o a temperatura ambiente."
+  ],
+  "errors": [
+   {
+    "p": "Ensalada salada",
+    "fix": "Mucho peix sec o sal añadida. Reduce el pescado y no sales hasta probar."
+   },
+   {
+    "p": "Pescado duro y correoso",
+    "fix": "Sin tostar ni hidratar. Tuéstalo y deja en aceite unos minutos."
+   },
+   {
+    "p": "Patata deshecha",
+    "fix": "Pasada de cocción. Cuécela con piel y sácala justa."
+   }
+  ],
+  "history": "La ensalada payesa y el peix sec son parte de la cocina tradicional de Ibiza y Formentera, donde secar pescado al sol era una forma de conservarlo para todo el año.",
+  "uses": [
+   "Entrantes de la isla",
+   "Comidas de verano",
+   "Platos para compartir"
+  ],
+  "keep": "Peix sec, meses en lugar seco y ventilado. La ensalada montada, el mismo día.",
+  "pro": "Cuece patatas y asa pimientos por la mañana; desmiga el peix sec en tanda y monta al pedido.",
+  "related": [
+   "pimientos-asados-alinados",
+   "salazones-y-huevas",
+   "ensaladas-templadas",
+   "producto-de-la-isla",
+   "cocina-ibicenca",
+   "patata-y-boniato"
+  ]
+ },
+ {
+  "id": "cuinat",
+  "name": "Cuinat de Semana Santa",
+  "name_en": "Ibizan Lenten chard and pulse stew",
+  "cat": "tecnicas",
+  "group": "Cocina de la isla",
+  "technique": "guiso",
+  "aka": [
+   "cuinat",
+   "potaje de Semana Santa ibicenco",
+   "guiso de acelgas y legumbres",
+   "cuinat de vigilia"
+  ],
+  "summary": "Guiso sin carne de acelgas y legumbres, con ajo y aceite: el plato de vigilia de la Semana Santa en Ibiza.",
+  "what": "El cuinat es un guiso tradicional ibicenco de los días de vigilia de Semana Santa, cuando no se comía carne. Su base son las acelgas, acompañadas de legumbres (garbanzos, alubias o habas), ajo, cebolla y buen aceite, cocinados hasta que quedan melosos y con poco caldo.\n\nNo hay una receta única: unas casas añaden otras verduras de temporada, otras lo perfuman con hierbas o especias, y la proporción de verdura y legumbre cambia mucho. Lo que se describe aquí es la idea común; si trabajas con la versión de una familia o de un productor, respétala.",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Acelgas (hojas y pencas)",
+     "1 kg"
+    ],
+    [
+     "Garbanzos cocidos",
+     "300 g"
+    ],
+    [
+     "Alubias o habas secas cocidas",
+     "300 g"
+    ],
+    [
+     "Cebolla",
+     "1"
+    ],
+    [
+     "Ajos",
+     "4 dientes"
+    ],
+    [
+     "Aceite de oliva virgen extra",
+     "100 ml"
+    ],
+    [
+     "Hierbas o especias según la casa",
+     "al gusto"
+    ],
+    [
+     "Caldo de las legumbres o agua",
+     "500 ml"
+    ],
+    [
+     "Sal",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Separa las pencas de las hojas de acelga; corta las pencas en trozos y las hojas en tiras.",
+    "Pocha la cebolla y el ajo en el aceite sin que tomen color.",
+    "Añade las pencas y cuece 8–10 minutos con un poco de caldo.",
+    "Incorpora las hojas, las legumbres cocidas y el resto del caldo; cocina a fuego suave 15–20 minutos.",
+    "Ajusta de sal, añade las hierbas o especias y termina con un hilo de aceite crudo."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Acelga por ración",
+    "ratio": "150–170 g",
+    "note": "Pierde mucho volumen."
+   },
+   {
+    "use": "Legumbre cocida",
+    "ratio": "100 g por ración",
+    "note": "Mezcla de dos legumbres."
+   },
+   {
+    "use": "Pencas",
+    "ratio": "8–10 minutos antes que las hojas",
+    "note": "Más duras."
+   },
+   {
+    "use": "Caldo",
+    "ratio": "Poco: guiso meloso",
+    "note": "No es una sopa."
+   }
+  ],
+  "variants": [
+   {
+    "id": "legumbres",
+    "name": "Legumbres",
+    "note": "Remojo y cocción."
+   },
+   {
+    "id": "hojas-y-brotes",
+    "name": "Acelgas",
+    "note": "Pencas y hojas por separado."
+   },
+   {
+    "id": "fabada-y-potajes",
+    "name": "Potajes de legumbre",
+    "note": "Otros guisos de cuchara."
+   },
+   {
+    "id": "cocina-ibicenca",
+    "name": "Cocina ibicenca",
+    "note": "El contexto del plato."
+   }
+  ],
+  "keys": [
+   "Pencas antes que hojas.",
+   "Aceite bueno: es la grasa del plato.",
+   "Meloso, con poco caldo.",
+   "Cada casa tiene su cuinat.",
+   "Legumbres bien cocidas antes."
+  ],
+  "errors": [
+   {
+    "p": "Guiso aguado",
+    "fix": "Demasiado caldo. Reduce destapado o aplasta unas legumbres."
+   },
+   {
+    "p": "Pencas duras",
+    "fix": "Añadidas con las hojas. Cuécelas antes."
+   },
+   {
+    "p": "Sabor plano",
+    "fix": "Poco sofrito o aceite. Pocha bien y termina con aceite crudo."
+   }
+  ],
+  "history": "El cuinat se asocia en Ibiza a la Semana Santa y a la cocina de vigilia, sin carne. Es un plato de casa cuya receta cambia de una familia a otra.",
+  "uses": [
+   "Menú de Semana Santa",
+   "Platos de cuchara vegetales",
+   "Cocina de la isla"
+  ],
+  "keep": "3–4 días en frío; mejora al día siguiente.",
+  "pro": "Cuece las legumbres la víspera y termina el guiso por la mañana; regenera suave con un poco de caldo.",
+  "related": [
+   "legumbres",
+   "hojas-y-brotes",
+   "cocina-ibicenca",
+   "guisos-largos",
+   "aceite-de-oliva",
+   "fabada-y-potajes"
+  ]
+ },
+ {
+  "id": "guisat-de-peix",
+  "name": "Guisat de peix",
+  "name_en": "Ibizan fish stew",
+  "cat": "tecnicas",
+  "group": "Cocina de la isla",
+  "technique": "guiso",
+  "aka": [
+   "guisat de peix",
+   "guisado de pescado ibicenco",
+   "guiso de pescado con patatas",
+   "caldereta de pescado"
+  ],
+  "summary": "Pescado de roca y patatas guisados en una salsa de sofrito, azafrán y picada de almendra, servidos juntos en la cazuela.",
+  "what": "El guisat de peix es un guiso de pescado de la cocina ibicenca. A diferencia del [[bullit-de-peix]], donde el pescado se cuece en caldo y luego se hace un arroz, aquí todo se sirve junto: rodajas de pescado de roca y patatas en una salsa espesa hecha con sofrito, azafrán y una [[picada]] de almendra, ajo y perejil.\n\nLos pescados, la proporción de salsa y la picada cambian de una casa a otra, y en algunas se añade marisco. La versión que se describe aquí es la más extendida.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Pescado de roca en rodajas con espina",
+     "1,2 kg"
+    ],
+    [
+     "Patatas en rodajas gruesas",
+     "600 g"
+    ],
+    [
+     "Cebolla, tomate y pimiento",
+     "1, 2 y ½"
+    ],
+    [
+     "Ajos",
+     "3 dientes"
+    ],
+    [
+     "Azafrán",
+     "0,1 g"
+    ],
+    [
+     "Picada: almendra tostada, ajo, perejil y pan frito",
+     "50 g, 1 diente, 1 puñado y 20 g"
+    ],
+    [
+     "Caldo de roca o fumet",
+     "1 l"
+    ],
+    [
+     "Aceite de oliva",
+     "100 ml"
+    ],
+    [
+     "Sal",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Haz un sofrito con la cebolla, el pimiento, el ajo y el tomate hasta que esté concentrado.",
+    "Añade el caldo y el azafrán y las patatas; cuece 15 minutos.",
+    "Incorpora el pescado salado y cuece a fuego suave 8–10 minutos.",
+    "Añade la picada desleída en un poco de caldo, moviendo la cazuela, y deja 2–3 minutos.",
+    "Reposa 5 minutos y sirve en la misma cazuela."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Pescado por ración",
+    "ratio": "300 g con espina",
+    "note": ""
+   },
+   {
+    "use": "Picada",
+    "ratio": "50–60 g de almendra por litro",
+    "note": "Espesa y perfuma."
+   },
+   {
+    "use": "Cocción del pescado",
+    "ratio": "8–10 minutos",
+    "note": "A fuego suave."
+   },
+   {
+    "use": "Salsa",
+    "ratio": "Que cubra a medias",
+    "note": "Guiso, no sopa."
+   }
+  ],
+  "variants": [
+   {
+    "id": "bullit-de-peix",
+    "name": "Bullit de peix",
+    "note": "El pescado cocido y el arroz aparte."
+   },
+   {
+    "id": "caldo-de-roca",
+    "name": "Caldo de roca",
+    "note": "Base de sabor."
+   },
+   {
+    "id": "picada",
+    "name": "Picada",
+    "note": "La ligazón."
+   },
+   {
+    "id": "all-i-pebre",
+    "name": "Suquet y all i pebre",
+    "note": "La misma familia."
+   }
+  ],
+  "keys": [
+   "Sofrito concentrado: es el fondo de la salsa.",
+   "Pescado al final y fuego suave.",
+   "Picada para ligar.",
+   "Mover la cazuela, no remover.",
+   "Cada casa, su guisat."
+  ],
+  "errors": [
+   {
+    "p": "Pescado roto",
+    "fix": "Removido o hervor fuerte. Mueve la cazuela."
+   },
+   {
+    "p": "Salsa aguada",
+    "fix": "Poca picada o mucho caldo. Más picada y reducir antes del pescado."
+   },
+   {
+    "p": "Azafrán dominante",
+    "fix": "Exceso. Pesa la dosis."
+   }
+  ],
+  "history": "El guisado de pescado con patatas es un plato de la cocina marinera de Ibiza y de buena parte del Mediterráneo español, con variaciones en cada puerto y en cada casa.",
+  "uses": [
+   "Platos de cuchara de pescado",
+   "Menús de la isla",
+   "Cazuelas para compartir"
+  ],
+  "keep": "Mejor al momento. La base de sofrito y caldo, 2 días en frío.",
+  "pro": "Base con patatas preparada; pescado y picada al pedido en cazuela individual.",
+  "related": [
+   "bullit-de-peix",
+   "caldo-de-roca",
+   "picada",
+   "pescado-de-roca",
+   "all-i-pebre",
+   "cocina-ibicenca"
+  ]
+ },
+ {
+  "id": "marmitako",
+  "name": "Marmitako y guisos marineros del norte",
+  "name_en": "Marmitako and northern fish stews",
+  "cat": "tecnicas",
+  "group": "Clásicos españoles",
+  "technique": "guiso",
+  "aka": [
+   "marmitako",
+   "marmita de bonito",
+   "bonito con patatas",
+   "guiso de bonito",
+   "sukalki de bonito"
+  ],
+  "summary": "Patata cascada guisada en un caldo de pimiento choricero y bonito, que entra al final y se hace con el calor residual.",
+  "what": "El marmitako es el guiso de bonito con patatas de la costa cantábrica, nacido como comida de barco durante la costera del bonito. La patata se casca para que suelte almidón y espese el caldo, que lleva cebolla, pimiento verde, tomate y la carne de pimiento choricero. El [[atun-rojo-y-bonito|bonito]], en dados, se añade al final con el fuego apagado: se hace con el calor del guiso y queda jugoso.\n\nCada pueblo y cada casa tienen su marmitako: con más o menos tomate, con guindilla o sin ella. La misma lógica sirve para otros guisos marineros del norte con patata y pescado azul.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Bonito limpio en dados de 3 cm",
+     "700 g"
+    ],
+    [
+     "Patatas cascadas",
+     "800 g"
+    ],
+    [
+     "Cebolla y pimiento verde picados",
+     "1 y 1"
+    ],
+    [
+     "Tomate rallado",
+     "150 g"
+    ],
+    [
+     "Carne de pimiento choricero",
+     "2 cucharadas"
+    ],
+    [
+     "Ajos",
+     "2 dientes"
+    ],
+    [
+     "Guindilla (opcional)",
+     "1"
+    ],
+    [
+     "Fumet de bonito o agua",
+     "1,2 l"
+    ],
+    [
+     "Aceite de oliva",
+     "80 ml"
+    ]
+   ],
+   "steps": [
+    "Pocha la cebolla, el pimiento y el ajo en el aceite 15 minutos.",
+    "Añade el tomate y la carne de choricero y sofríe hasta concentrar.",
+    "Incorpora las patatas cascadas, rehógalas un momento y moja con el fumet; cuece 20–25 minutos.",
+    "Comprueba que las patatas están tiernas y el caldo ligado; corrige de sal.",
+    "Apaga el fuego, añade el bonito salado, tapa y deja reposar 5–8 minutos."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Bonito",
+    "ratio": "Fuera del fuego, 5–8 minutos tapado",
+    "note": "Jugoso por dentro."
+   },
+   {
+    "use": "Patata",
+    "ratio": "200 g por ración",
+    "note": "Cascada."
+   },
+   {
+    "use": "Caldo",
+    "ratio": "300 ml por ración",
+    "note": "Que cubra justo."
+   },
+   {
+    "use": "Choricero",
+    "ratio": "2 cucharadas por 4 raciones",
+    "note": "Color y sabor."
+   }
+  ],
+  "variants": [
+   {
+    "id": "atun-rojo-y-bonito",
+    "name": "Bonito",
+    "note": "Producto y temporada."
+   },
+   {
+    "id": "salsa-vizcaina",
+    "name": "Salsa vizcaína",
+    "note": "Con choricero."
+   },
+   {
+    "id": "guisos-largos",
+    "name": "Guisos",
+    "note": "La lógica del guiso."
+   },
+   {
+    "id": "pimientos",
+    "name": "Pimiento choricero",
+    "note": "Hidratar y raspar."
+   }
+  ],
+  "keys": [
+   "Patata cascada: liga el caldo.",
+   "Bonito al final y fuera del fuego.",
+   "Choricero para el color y el fondo.",
+   "Reposo tapado.",
+   "Cada casa tiene su marmitako."
+  ],
+  "errors": [
+   {
+    "p": "Bonito seco",
+    "fix": "Hervido con las patatas. Añádelo al final, fuera del fuego."
+   },
+   {
+    "p": "Caldo aguado",
+    "fix": "Patata cortada a cuchillo. Cáscala."
+   },
+   {
+    "p": "Sabor plano",
+    "fix": "Sofrito corto. Pocha más y añade choricero."
+   }
+  ],
+  "history": "El marmitako es un plato de la costa vasca y cantábrica, ligado a los pescadores de bonito, que lo cocinaban a bordo con patata y pimiento.",
+  "uses": [
+   "Platos de cuchara de verano",
+   "Cazuelas para compartir",
+   "Menús de temporada de bonito"
+  ],
+  "keep": "La base sin bonito, 2–3 días en frío; el bonito, al regenerar.",
+  "pro": "Base de patata y caldo hecha; al pedido, calienta, añade el bonito y reposa tapado.",
+  "related": [
+   "atun-rojo-y-bonito",
+   "salsa-vizcaina",
+   "guisos-largos",
+   "pimientos",
+   "fumet",
+   "patata-y-boniato"
+  ]
+ },
+ {
+  "id": "callos",
+  "name": "Callos y guisos de casquería",
+  "name_en": "Tripe and offal stews",
+  "cat": "tecnicas",
+  "group": "Clásicos españoles",
+  "technique": "guiso",
+  "aka": [
+   "callos",
+   "callos a la madrileña",
+   "guiso de callos",
+   "morro y pata",
+   "guisos de casquería"
+  ],
+  "summary": "Tripa, pata y morro limpios y cocidos hasta melosos, en un guiso de chorizo, morcilla y pimentón que liga solo con su gelatina.",
+  "what": "Los callos son un guiso de tripa de ternera con pata y morro, ricos en [[colageno-y-gelatina|colágeno]]: tras horas de cocción, la gelatina liga la salsa y le da su textura pegajosa. En la versión madrileña, la más extendida, se terminan con chorizo, morcilla, jamón, un sofrito con pimentón y guindilla. Otras zonas los hacen con garbanzos o con salsas distintas.\n\nLa clave está en la limpieza (lavar, frotar con sal y vinagre, blanquear) y en la paciencia: varias horas de cocción y, mejor aún, un día de reposo. La misma técnica sirve para otros guisos de [[casqueria]] como manitas o morros.",
+  "base": {
+   "for": "8 raciones",
+   "items": [
+    [
+     "Callos de ternera limpios",
+     "1,5 kg"
+    ],
+    [
+     "Pata y morro de ternera",
+     "500 g"
+    ],
+    [
+     "Chorizo y morcilla",
+     "200 g y 150 g"
+    ],
+    [
+     "Jamón en dados",
+     "100 g"
+    ],
+    [
+     "Cebolla, ajo, laurel, pimienta y clavo para la cocción",
+     "1, 1 cabeza, 2 hojas, granos y 2"
+    ],
+    [
+     "Sofrito: cebolla, ajo y tomate",
+     "1, 3 dientes y 200 g"
+    ],
+    [
+     "Pimentón dulce y picante, guindilla",
+     "10 g, 5 g y 1"
+    ],
+    [
+     "Aceite de oliva",
+     "80 ml"
+    ],
+    [
+     "Vinagre y sal gruesa para limpiar",
+     "cantidad necesaria"
+    ]
+   ],
+   "steps": [
+    "Lava los callos, la pata y el morro frotando con sal gruesa y vinagre; aclara bien y córtalos en trozos.",
+    "Blanquea: cubre con agua fría, lleva a hervor 5 minutos, escurre y aclara.",
+    "Cuece en agua nueva con la cebolla, el ajo, el laurel y las especias a fuego suave 3–4 horas, hasta que estén tiernos. Deshuesa la pata.",
+    "Haz un sofrito con cebolla, ajo y tomate; añade el jamón y, fuera del fuego, el pimentón y la guindilla.",
+    "Junta callos, parte del caldo, sofrito, chorizo y morcilla en rodajas; cuece 30 minutos más a fuego suave y deja reposar un día."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Cocción de los callos",
+    "ratio": "3–4 horas a fuego suave",
+    "note": "En olla a presión, 60–75 minutos."
+   },
+   {
+    "use": "Blanqueado",
+    "ratio": "5 minutos de hervor",
+    "note": "Agua nueva después."
+   },
+   {
+    "use": "Pimentón",
+    "ratio": "15 g por cada 1,5 kg de callos",
+    "note": "Fuera del fuego."
+   },
+   {
+    "use": "Reposo",
+    "ratio": "24 horas en frío",
+    "note": "Mejoran y ligan."
+   }
+  ],
+  "variants": [
+   {
+    "id": "casqueria",
+    "name": "Casquería",
+    "note": "Limpieza y cocción de cada pieza."
+   },
+   {
+    "id": "colageno-y-gelatina",
+    "name": "Colágeno",
+    "note": "Por qué ligan solos."
+   },
+   {
+    "id": "guisos-largos",
+    "name": "Guisos largos",
+    "note": "Fuego suave y tiempo."
+   },
+   {
+    "id": "sobrasada-y-embutidos",
+    "name": "Embutidos",
+    "note": "Para dar grasa y sabor."
+   }
+  ],
+  "keys": [
+   "Limpieza exhaustiva y blanqueado.",
+   "Horas de fuego suave.",
+   "Pimentón fuera del fuego.",
+   "Un día de reposo.",
+   "Se pegan: remueve con cuidado y vigila el fondo."
+  ],
+  "errors": [
+   {
+    "p": "Olor fuerte",
+    "fix": "Limpieza insuficiente. Frota con sal y vinagre y blanquea."
+   },
+   {
+    "p": "Callos duros",
+    "fix": "Poco tiempo. Sigue cociendo hasta que estén tiernos."
+   },
+   {
+    "p": "Se pegan al fondo",
+    "fix": "Fuego alto o poco caldo. Fuego suave y remover a menudo."
+   }
+  ],
+  "history": "Los callos son un guiso popular en muchas zonas de España; la versión madrileña, con chorizo, morcilla y pimentón, es la más conocida, y cada región tiene la suya.",
+  "uses": [
+   "Platos de cuchara de invierno",
+   "Tapas y raciones",
+   "Menús de cocina tradicional"
+  ],
+  "keep": "4–5 días en frío; se congelan muy bien.",
+  "pro": "Cocina en tanda grande la víspera; racione en frío y regenera en cazuela con un poco de caldo.",
+  "related": [
+   "casqueria",
+   "colageno-y-gelatina",
+   "guisos-largos",
+   "pimenton-y-noras",
+   "sobrasada-y-embutidos",
+   "legumbres"
+  ]
+ },
+ {
+  "id": "cocido",
+  "name": "Cocido y sus tres vuelcos",
+  "name_en": "Spanish cocido and its three courses",
+  "cat": "tecnicas",
+  "group": "Clásicos españoles",
+  "technique": "guiso",
+  "aka": [
+   "cocido",
+   "cocido madrileño",
+   "tres vuelcos",
+   "puchero",
+   "olla",
+   "sopa de cocido",
+   "pringá"
+  ],
+  "summary": "Garbanzos, carnes, embutidos y verduras cocidos juntos a fuego lento, servidos en tres tiempos: sopa, garbanzos con verdura y carnes.",
+  "what": "El cocido es un guiso de garbanzos con carnes (morcillo, gallina, tocino, huesos de caña y de jamón), embutidos y verduras, cocidos lentamente en mucha agua. El caldo que resulta es de los más sabrosos de la cocina española. En la versión madrileña, la más extendida, se sirve en tres vuelcos: primero la sopa con fideos finos; después los garbanzos con las verduras y el repollo; al final, las carnes y los embutidos.\n\nCasi cada región tiene su cocido, su olla o su puchero, con otras legumbres, otras carnes o un relleno de pan y huevo. Lo que comparten es la técnica: espumar, fuego suave y cada ingrediente a su tiempo. El caldo está en [[caldo-de-cocido-y-jamon]].",
+  "base": {
+   "for": "8 raciones",
+   "items": [
+    [
+     "Garbanzos remojados 12 horas",
+     "500 g en seco"
+    ],
+    [
+     "Morcillo o jarrete de vaca",
+     "600 g"
+    ],
+    [
+     "Gallina o pollo (medio)",
+     "1"
+    ],
+    [
+     "Tocino y punta de jamón",
+     "200 g y 200 g"
+    ],
+    [
+     "Huesos de caña y de jamón",
+     "2 y 1"
+    ],
+    [
+     "Chorizo y morcilla",
+     "2 y 2"
+    ],
+    [
+     "Zanahorias y patatas",
+     "3 y 4"
+    ],
+    [
+     "Repollo",
+     "1 pequeño"
+    ],
+    [
+     "Fideos finos para la sopa",
+     "100 g"
+    ],
+    [
+     "Agua",
+     "5–6 l"
+    ],
+    [
+     "Sal",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Pon las carnes y los huesos en agua fría, lleva a hervor y espuma bien.",
+    "Añade los garbanzos en una red cuando el agua hierva; cuece a fuego suave 2,5–3 horas, espumando y sin cortar el hervor.",
+    "Cuece aparte el chorizo y la morcilla con el repollo para que no tiñan el caldo; rehoga el repollo con ajo al final.",
+    "Añade las zanahorias en la última hora y las patatas en los últimos 30 minutos.",
+    "Cuela parte del caldo y cuece en él los fideos para la sopa; sirve sopa, luego garbanzos con verduras y, al final, carnes y embutidos."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Garbanzos",
+    "ratio": "60–70 g en seco por ración",
+    "note": "Remojados 12 horas."
+   },
+   {
+    "use": "Cocción",
+    "ratio": "2,5–3 horas a fuego suave",
+    "note": "Sin cortar el hervor al echar los garbanzos."
+   },
+   {
+    "use": "Carnes",
+    "ratio": "200–250 g por ración en total",
+    "note": "Con huesos aparte."
+   },
+   {
+    "use": "Sopa",
+    "ratio": "12–15 g de fideo por ración",
+    "note": "En el caldo colado."
+   }
+  ],
+  "variants": [
+   {
+    "id": "caldo-de-cocido-y-jamon",
+    "name": "Caldo de cocido",
+    "note": "Base para sopas y arroces."
+   },
+   {
+    "id": "legumbres",
+    "name": "Garbanzos",
+    "note": "Remojo y cocción."
+   },
+   {
+    "id": "fabada-y-potajes",
+    "name": "Fabada y potajes",
+    "note": "Otros guisos de legumbre."
+   },
+   {
+    "id": "cocina-de-aprovechamiento",
+    "name": "Ropa vieja y croquetas",
+    "note": "Las sobras del cocido."
+   }
+  ],
+  "keys": [
+   "Espumar al principio.",
+   "Garbanzos en agua hirviendo y sin cortar el hervor.",
+   "Embutidos y repollo aparte.",
+   "Fuego suave y largo.",
+   "Cada región tiene su cocido."
+  ],
+  "errors": [
+   {
+    "p": "Garbanzos duros",
+    "fix": "Cortado el hervor o agua muy dura. Mantén el hervor y usa garbanzos de calidad."
+   },
+   {
+    "p": "Caldo turbio y graso",
+    "fix": "Sin espumar o hervor fuerte. Espuma y cuece suave."
+   },
+   {
+    "p": "Caldo rojo y pesado",
+    "fix": "Embutidos cocidos con todo. Cuécelos aparte."
+   }
+  ],
+  "history": "El cocido es un plato tradicional de casi toda España, con antepasados en las ollas de legumbre y carne de la Edad Media. El madrileño, servido en tres vuelcos, es uno de los más conocidos.",
+  "uses": [
+   "Platos de invierno",
+   "Menús de cocina tradicional",
+   "Caldo para sopas, arroces y croquetas"
+  ],
+  "keep": "Caldo, 4–5 días en frío o congelado. Carnes y garbanzos, 3–4 días en frío.",
+  "pro": "Cocido la víspera; regenera garbanzos y carnes en su caldo. Las sobras, a croquetas y ropa vieja.",
+  "related": [
+   "caldo-de-cocido-y-jamon",
+   "legumbres",
+   "fabada-y-potajes",
+   "croquetas",
+   "cocina-de-aprovechamiento",
+   "guisos-largos"
+  ]
+ },
+ {
+  "id": "fabada-y-potajes",
+  "name": "Fabada y potajes de legumbre",
+  "name_en": "Fabada and pulse stews",
+  "cat": "tecnicas",
+  "group": "Clásicos españoles",
+  "technique": "guiso",
+  "aka": [
+   "fabada",
+   "fabada asturiana",
+   "fabes",
+   "compango",
+   "potaje",
+   "lentejas guisadas",
+   "potaje de garbanzos",
+   "asustar las legumbres"
+  ],
+  "summary": "Legumbres cocidas a fuego mínimo con su compango, sin remover y cortando el hervor, hasta que quedan enteras y cremosas.",
+  "what": "La fabada asturiana es el potaje de alubia más conocido: fabes (una alubia grande y mantecosa) cocidas lentamente con el compango (chorizo, morcilla asturiana y panceta o lacón). Su secreto es el cuidado: fuego muy suave, nada de remover con cuchara (se mueve la cazuela) y añadir agua fría dos o tres veces durante la cocción para que la piel no se rompa y el interior quede cremoso.\n\nLa misma técnica sirve para otros potajes: lentejas guisadas, garbanzos con espinacas o los potajes de vigilia. La elección de la [[legumbres|legumbre]] y su remojo son la mitad del resultado.",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Fabes remojadas 12 horas",
+     "500 g en seco"
+    ],
+    [
+     "Chorizo asturiano",
+     "2"
+    ],
+    [
+     "Morcilla asturiana",
+     "2"
+    ],
+    [
+     "Panceta o lacón",
+     "200 g"
+    ],
+    [
+     "Azafrán (opcional)",
+     "0,05 g"
+    ],
+    [
+     "Agua fría",
+     "lo justo para cubrir dos dedos"
+    ],
+    [
+     "Sal",
+     "al final"
+    ]
+   ],
+   "steps": [
+    "Escalda el compango 2 minutos en agua aparte para quitar parte de la grasa.",
+    "Pon las fabes escurridas en la cazuela, cubre con agua fría dos dedos y lleva a hervor suave; espuma.",
+    "Añade el compango y cuece a fuego mínimo 2,5–3 horas, moviendo la cazuela sin remover.",
+    "Cuando dejen de hervir por la superficie, añade un poco de agua fría (asustar) 2–3 veces durante la cocción.",
+    "Sala al final, deja reposar 30 minutos y sirve las fabes con el compango troceado."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Fabes",
+    "ratio": "80 g en seco por ración",
+    "note": "Remojo de 12 horas."
+   },
+   {
+    "use": "Cocción",
+    "ratio": "2,5–3 horas a fuego mínimo",
+    "note": "Sin remover."
+   },
+   {
+    "use": "Lentejas guisadas",
+    "ratio": "60–70 g por ración, 35–45 minutos",
+    "note": "Sin remojo."
+   },
+   {
+    "use": "Reposo",
+    "ratio": "30 minutos",
+    "note": "Mejor aún de un día para otro."
+   }
+  ],
+  "variants": [
+   {
+    "id": "legumbres",
+    "name": "Legumbres",
+    "note": "Variedades y remojo."
+   },
+   {
+    "id": "desalado-y-remojo",
+    "name": "Remojo",
+    "note": "Tiempos por legumbre."
+   },
+   {
+    "id": "cocido",
+    "name": "Cocido",
+    "note": "Garbanzos con carnes."
+   },
+   {
+    "id": "cuinat",
+    "name": "Potaje de vigilia",
+    "note": "Sin carne, con acelgas."
+   }
+  ],
+  "keys": [
+   "Fuego mínimo y sin remover.",
+   "Asustar con agua fría para que no se rompan.",
+   "Sal al final.",
+   "Legumbre de la última cosecha.",
+   "Reposo antes de servir."
+  ],
+  "errors": [
+   {
+    "p": "Fabes rotas y peladas",
+    "fix": "Hervor fuerte o removidas. Fuego mínimo y mover la cazuela."
+   },
+   {
+    "p": "Fabes duras",
+    "fix": "Legumbre vieja o agua dura. Cambia de partida."
+   },
+   {
+    "p": "Caldo grasiento",
+    "fix": "Compango sin escaldar. Escáldalo antes."
+   }
+  ],
+  "history": "La fabada es el plato más conocido de Asturias. Los potajes de legumbre son parte de la cocina popular de toda España, con versiones de carne y de vigilia.",
+  "uses": [
+   "Platos de cuchara",
+   "Menús de invierno",
+   "Cocina tradicional"
+  ],
+  "keep": "4–5 días en frío; mejoran de un día para otro. Se congelan peor: las legumbres se ablandan.",
+  "pro": "Cocina la víspera; regenera a fuego suave sin remover, con un poco de agua o caldo.",
+  "related": [
+   "legumbres",
+   "desalado-y-remojo",
+   "cocido",
+   "cuinat",
+   "guisos-largos",
+   "sobrasada-y-embutidos"
+  ]
+ },
+ {
+  "id": "croquetas",
+  "name": "Croquetas",
+  "name_en": "Croquetas",
+  "cat": "tecnicas",
+  "group": "Clásicos españoles",
+  "technique": "fritura",
+  "aka": [
+   "croqueta",
+   "croquetas de jamón",
+   "croquetas de cocido",
+   "croquetas de bacalao",
+   "masa de croquetas",
+   "bechamel para croquetas"
+  ],
+  "summary": "Bechamel espesa y bien cocida con un relleno sabroso, enfriada, formada, empanada y frita: crujiente fuera, cremosa dentro.",
+  "what": "La croqueta española es una [[bechamel]] muy espesa con un relleno picado (jamón, carne de cocido, pollo, bacalao, setas, marisco), que se enfría hasta poder formarse, se empana y se fríe. El objetivo es una costra fina y crujiente y un interior casi fluido.\n\nTodo depende del equilibrio de la masa: con poco roux no se puede formar; con mucho, queda pastosa. La harina debe cocinarse bien para que no sepa a crudo, y el relleno debe tener sabor propio: muchas casas usan el caldo o la grasa del propio relleno para hacer la bechamel. Es un plato de aprovechamiento por excelencia.",
+  "base": {
+   "for": "unas 40 croquetas de 30 g",
+   "items": [
+    [
+     "Leche entera caliente (o parte de caldo)",
+     "1 l"
+    ],
+    [
+     "Mantequilla o aceite de oliva",
+     "100 g"
+    ],
+    [
+     "Harina de trigo",
+     "110–120 g"
+    ],
+    [
+     "Relleno picado (jamón, carne de cocido, bacalao, setas)",
+     "200–300 g"
+    ],
+    [
+     "Cebolla picada fina (opcional)",
+     "½"
+    ],
+    [
+     "Sal, pimienta y nuez moscada",
+     "al gusto"
+    ],
+    [
+     "Para empanar: harina, huevo y pan rallado",
+     "cantidad necesaria"
+    ]
+   ],
+   "steps": [
+    "Pocha la cebolla en la grasa, añade el relleno y rehógalo; incorpora la harina y cocínala 3–5 minutos removiendo.",
+    "Añade la leche caliente poco a poco, batiendo, y cocina a fuego suave 15–20 minutos sin dejar de remover, hasta que la masa se despegue de las paredes.",
+    "Sazona, extiende en bandeja, cubre con film en contacto y enfría en la cámara al menos 12 horas.",
+    "Forma piezas de 25–35 g, pásalas por harina, huevo y pan rallado, y deja reposar en frío.",
+    "Fríe en aceite abundante a 180 °C, pocas a la vez, hasta que estén doradas; escurre en rejilla."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Roux por litro",
+    "ratio": "90–110 g de grasa y 110–120 g de harina",
+    "note": "Masa que se forma en frío."
+   },
+   {
+    "use": "Fritura",
+    "ratio": "180 °C, 1,5–2 minutos",
+    "note": "Pieza de 30 g."
+   },
+   {
+    "use": "Reposo de la masa",
+    "ratio": "12 horas en frío",
+    "note": "Mínimo 4–6."
+   },
+   {
+    "use": "Relleno",
+    "ratio": "20–30 % del peso de la bechamel",
+    "note": "Bien picado."
+   }
+  ],
+  "variants": [
+   {
+    "id": "bechamel",
+    "name": "Bechamel",
+    "note": "Proporciones según el espesor."
+   },
+   {
+    "id": "rebozados-y-empanados",
+    "name": "Empanado",
+    "note": "Harina, huevo y pan."
+   },
+   {
+    "id": "cocido",
+    "name": "Croquetas de cocido",
+    "note": "Con las carnes y el caldo."
+   },
+   {
+    "id": "cocina-de-aprovechamiento",
+    "name": "Aprovechamiento",
+    "note": "Lo que sobra, en croqueta."
+   }
+  ],
+  "keys": [
+   "Harina bien cocida: no debe saber a crudo.",
+   "Cocción larga de la masa, removiendo.",
+   "Reposo en frío de un día para otro.",
+   "Empanado fino y uniforme.",
+   "Aceite a 180 °C y pocas a la vez."
+  ],
+  "errors": [
+   {
+    "p": "Revientan al freír",
+    "fix": "Empanado con huecos o aceite frío. Empana dos veces y fríe a 180 °C."
+   },
+   {
+    "p": "Masa pastosa",
+    "fix": "Demasiada harina o poca cocción. Ajusta el roux y cuece más."
+   },
+   {
+    "p": "Imposibles de formar",
+    "fix": "Poca harina o poco frío. Más reposo o un poco más de roux."
+   }
+  ],
+  "history": "Las croquetas llegaron a España desde la cocina francesa y se convirtieron en un plato de aprovechamiento muy popular, hecho con bechamel y restos del cocido o del asado.",
+  "uses": [
+   "Tapas y raciones",
+   "Aperitivos",
+   "Menús infantiles y de mediodía"
+  ],
+  "keep": "Masa, 2–3 días en frío. Croquetas empanadas, congeladas en bandeja y luego en bolsa, 2–3 meses; se fríen sin descongelar.",
+  "pro": "Produce en tanda grande, congela empanadas y fríe al pedido. Báscula para que todas pesen igual.",
+  "related": [
+   "bechamel",
+   "rebozados-y-empanados",
+   "fritura",
+   "cocido",
+   "cocina-de-aprovechamiento",
+   "roux"
+  ]
+ },
+ {
+  "id": "tacos-y-antojitos",
+  "name": "Tacos y antojitos",
+  "name_en": "Tacos and antojitos",
+  "cat": "tecnicas",
+  "group": "Masas",
+  "aka": [
+   "tacos",
+   "taco",
+   "quesadillas",
+   "tostadas",
+   "sopes",
+   "antojitos",
+   "tacos de pescado"
+  ],
+  "summary": "Tortilla de maíz caliente, un relleno sabroso, salsa, cebolla, cilantro y lima: la lógica de los tacos y sus parientes de masa de maíz.",
+  "what": "Un taco es una tortilla de maíz recién calentada con un relleno: carnes guisadas o a la brasa, pescados fritos, verduras o legumbres. Se termina con una [[chiles-y-salsas-mexicanas|salsa]], cebolla blanca picada, cilantro y unas gotas de lima. Los antojitos son una familia más amplia de bocados de masa de maíz: quesadillas (tortilla doblada con queso u otros rellenos), tostadas (tortilla frita y crujiente con ingredientes encima) o sopes (discos gruesos de masa con un borde pellizcado).\n\nLa base de todo es una buena [[tortillas-de-maiz-y-nixtamal|tortilla de maíz]], caliente y flexible, y un equilibrio entre grasa, ácido, picante y frescor.",
+  "base": {
+   "for": "12 tacos",
+   "items": [
+    [
+     "Tortillas de maíz de 12–14 cm",
+     "12–24 (simples o dobles)"
+    ],
+    [
+     "Relleno guisado o a la brasa",
+     "600 g"
+    ],
+    [
+     "Salsa roja o verde",
+     "150 ml"
+    ],
+    [
+     "Cebolla blanca picada fina",
+     "1"
+    ],
+    [
+     "Cilantro picado",
+     "1 manojo"
+    ],
+    [
+     "Lima en cuartos",
+     "2"
+    ],
+    [
+     "Sal",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Calienta las tortillas en comal o plancha muy caliente, 20–30 segundos por cara, y guárdalas tapadas en un paño.",
+    "Calienta el relleno; si es de brasa, córtalo en trozos pequeños justo al servir.",
+    "Pon el relleno en el centro de la tortilla, sin cargar demasiado.",
+    "Termina con salsa, cebolla y cilantro.",
+    "Sirve enseguida con lima aparte."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Relleno por taco",
+    "ratio": "40–50 g",
+    "note": "Que se pueda doblar."
+   },
+   {
+    "use": "Tortilla",
+    "ratio": "Comal muy caliente, 20–30 segundos por cara",
+    "note": "Flexible y con puntos tostados."
+   },
+   {
+    "use": "Quesadilla",
+    "ratio": "30–40 g de queso por tortilla",
+    "note": "Hasta que funda."
+   },
+   {
+    "use": "Tostada",
+    "ratio": "Fritura a 180 °C, 1 minuto",
+    "note": "O al horno hasta crujir."
+   }
+  ],
+  "variants": [
+   {
+    "id": "tortillas-de-maiz-y-nixtamal",
+    "name": "Tortillas",
+    "note": "Masa y comal."
+   },
+   {
+    "id": "chiles-y-salsas-mexicanas",
+    "name": "Salsas",
+    "note": "Tatemadas, crudas y cocidas."
+   },
+   {
+    "id": "mole",
+    "name": "Moles",
+    "note": "Para enchiladas y rellenos."
+   },
+   {
+    "id": "aguacate-y-frutas-tropicales",
+    "name": "Guacamole",
+    "note": "Grasa y frescor."
+   }
+  ],
+  "keys": [
+   "Tortilla caliente y flexible.",
+   "Relleno sabroso y jugoso, sin encharcar.",
+   "Ácido, picante y frescor al final.",
+   "Pocas cosas, bien elegidas.",
+   "Se come al momento."
+  ],
+  "errors": [
+   {
+    "p": "Tortilla que se rompe",
+    "fix": "Fría o seca. Caliéntala bien y guárdala tapada."
+   },
+   {
+    "p": "Taco empapado",
+    "fix": "Relleno con mucho caldo. Escúrrelo."
+   },
+   {
+    "p": "Sabor plano",
+    "fix": "Falta ácido o sal. Lima, salsa y sal al final."
+   }
+  ],
+  "history": "Los tacos y los antojitos de masa de maíz son la base de la comida popular de México, con muchísimas variantes regionales.",
+  "uses": [
+   "Comida para compartir",
+   "Aperitivos y bocados",
+   "Brasa de carnes y pescados",
+   "Platos de mediodía"
+  ],
+  "keep": "Rellenos guisados, 3–4 días en frío. Tortillas, al momento o recalentadas en comal.",
+  "pro": "Rellenos listos y calientes, tortillas en tortillero, guarniciones en recipientes pequeños; monta al pedido.",
+  "related": [
+   "tortillas-de-maiz-y-nixtamal",
+   "chiles-y-salsas-mexicanas",
+   "mole",
+   "maiz",
+   "aguacate-y-frutas-tropicales",
+   "fuego-y-brasa"
+  ]
  }
 ]

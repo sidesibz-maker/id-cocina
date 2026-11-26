@@ -3893,5 +3893,546 @@
       "reposos-y-regeneracion",
       "construir-un-plato"
     ]
+  },
+  {
+    "id": "cadena-de-frio",
+    "name": "Cadena de frío y temperaturas de riesgo",
+    "name_en": "Cold chain and danger temperatures",
+    "aka": [
+      "zona de peligro",
+      "temperaturas de riesgo",
+      "seguridad alimentaria en cocina",
+      "enfriar rápido",
+      "descongelar",
+      "bacterias y temperatura"
+    ],
+    "cat": "conceptos",
+    "group": "Fundamentos",
+    "summary": "Por qué el frío y el calor protegen, qué temperaturas son peligrosas y qué no arregla la cocción: lo que un cocinero creativo debe tener claro.",
+    "what": "Las bacterias que estropean la comida o enferman crecen sobre todo entre unos 5 y 65 °C, y más deprisa a temperatura de ambiente y de cuerpo. El frío de la cámara frena su crecimiento, pero no las mata: algunas, como la Listeria, crecen despacio incluso en frío. La congelación las detiene, tampoco las mata. El calor de cocción mata la mayoría de las bacterias activas, pero no destruye algunas toxinas que ya se han formado ni las esporas de ciertas bacterias, que despiertan si el alimento se enfría despacio (arroces y guisos grandes).\n\nPor eso la regla es pasar poco tiempo en la zona templada: enfriar rápido, mantener en caliente por encima de 65 °C, descongelar en la cámara. La cocina creativa añade riesgos propios: crudos, curados, baja temperatura, fermentos, conservas en aceite o al vacío. Cada uno tiene su norma de seguridad, recogida en su ficha.",
+    "base": {
+      "for": "Temperaturas de referencia",
+      "items": [
+        [
+          "Cámara de refrigeración",
+          "0–4 °C"
+        ],
+        [
+          "Congelación",
+          "-18 °C o menos"
+        ],
+        [
+          "Zona de riesgo",
+          "entre 5 y 65 °C"
+        ],
+        [
+          "Mantener en caliente",
+          "65 °C o más"
+        ],
+        [
+          "Cocinado seguro de la mayoría de alimentos",
+          "70 °C en el centro"
+        ],
+        [
+          "Pescado para crudo o marinado",
+          "congelado a -20 °C al menos 24 horas"
+        ]
+      ],
+      "steps": [
+        "Reduce al mínimo el tiempo de los alimentos entre 5 y 65 °C.",
+        "Enfría en recipientes poco hondos y con abatidor o baño de hielo.",
+        "Descongela en la cámara, nunca a temperatura ambiente.",
+        "En baja temperatura, combina temperatura y tiempo suficientes y consume pronto.",
+        "En conservas, fermentos y aceites aromatizados, controla acidez, sal y frío."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Enfriado rápido",
+        "ratio": "De 60 °C a menos de 10 °C en 2 horas",
+        "note": "Recipientes poco hondos."
+      },
+      {
+        "use": "Arroz cocido",
+        "ratio": "Enfriar rápido y consumir en 1–2 días",
+        "note": "Riesgo de esporas."
+      },
+      {
+        "use": "Huevo crudo en salsas",
+        "ratio": "Huevo pasteurizado",
+        "note": "En restauración."
+      },
+      {
+        "use": "Ajo o hierbas en aceite",
+        "ratio": "En frío y pocos días",
+        "note": "Riesgo de botulismo."
+      }
+    ],
+    "variants": [
+      {
+        "id": "reposos-y-regeneracion",
+        "name": "Enfriado y regeneración",
+        "note": "En la práctica diaria."
+      },
+      {
+        "id": "ph-y-acidez",
+        "name": "Acidez y conservación",
+        "note": "pH por debajo de 4,6."
+      },
+      {
+        "id": "baja-temperatura",
+        "name": "Baja temperatura",
+        "note": "Tiempo y temperatura."
+      },
+      {
+        "id": "curado-de-pescado",
+        "name": "Crudos y curados",
+        "note": "Congelación previa."
+      }
+    ],
+    "keys": [
+      "El frío frena, no mata.",
+      "La cocción no destruye algunas toxinas ni esporas.",
+      "Poco tiempo en la zona templada.",
+      "Descongelar en cámara.",
+      "Cada técnica creativa tiene su regla de seguridad."
+    ],
+    "errors": [
+      {
+        "p": "Guiso agrio al día siguiente",
+        "fix": "Enfriado lento en olla honda. Reparte y abate."
+      },
+      {
+        "p": "Producto descongelado en la mesa",
+        "fix": "Descongela en la cámara con tiempo."
+      },
+      {
+        "p": "Conserva casera en aceite a temperatura ambiente",
+        "fix": "Siempre en frío y pocos días, o acidificada."
+      }
+    ],
+    "history": "La conservación por frío se generalizó con la refrigeración industrial del siglo XX, que cambió por completo la cocina profesional. La microbiología explicó entonces por qué funcionaban prácticas antiguas como salar, secar o acidificar.",
+    "uses": [
+      "Producción por adelantado",
+      "Crudos y curados",
+      "Baja temperatura",
+      "Fermentos y conservas"
+    ],
+    "keep": "No aplica: es un principio.",
+    "pro": "Termómetro de sonda en cada partida y recipientes poco hondos para enfriar. Las reglas de cada técnica, escritas en su ficha.",
+    "related": [
+      "reposos-y-regeneracion",
+      "ph-y-acidez",
+      "baja-temperatura",
+      "curado-de-pescado",
+      "conservas-en-aceite",
+      "agua-y-evaporacion"
+    ]
+  },
+  {
+    "id": "gluten-y-reposo-de-masas",
+    "name": "Gluten y reposo de las masas",
+    "name_en": "Gluten and resting doughs",
+    "aka": [
+      "gluten",
+      "red de gluten",
+      "amasado",
+      "autólisis",
+      "reposo de la masa",
+      "masa que encoge",
+      "fuerza de la harina"
+    ],
+    "cat": "conceptos",
+    "group": "Fundamentos",
+    "summary": "Por qué una masa se vuelve elástica al amasar, por qué encoge si no reposa y cómo trabajar menos o más según se quiera pan o masa tierna.",
+    "what": "Al mojar la harina de trigo, dos de sus proteínas se unen y forman el gluten, una red elástica y extensible. El amasado la ordena y la fortalece: por eso el pan necesita trabajo, porque esa red retiene el gas de la fermentación. En cambio, en masas quebradas, bizcochos o tempuras se busca lo contrario: poco gluten, poco trabajo, ingredientes fríos, grasa y azúcar que se interponen.\n\nEl reposo relaja la red: una masa recién trabajada es tensa y encoge al estirarla; tras 20–60 minutos se deja estirar sin volver atrás. La autólisis (harina y agua en reposo antes de amasar) adelanta parte del trabajo. La sal refuerza la red; la grasa y el azúcar la debilitan.",
+    "base": {
+      "for": "Principios",
+      "items": [
+        [
+          "Harina de fuerza",
+          "más gluten: panes, masas elásticas"
+        ],
+        [
+          "Harina floja",
+          "menos gluten: bizcochos, quebradas"
+        ],
+        [
+          "Amasado",
+          "desarrolla la red"
+        ],
+        [
+          "Reposo",
+          "relaja la red y facilita el estirado"
+        ],
+        [
+          "Sal",
+          "refuerza"
+        ],
+        [
+          "Grasa, azúcar y frío",
+          "acortan y debilitan la red"
+        ]
+      ],
+      "steps": [
+        "Decide si quieres una masa elástica (pan, pasta) o tierna (quebrada, bizcocho, tempura).",
+        "Elástica: amasa hasta que esté lisa y se estire en lámina fina; deja reposar antes de formar.",
+        "Tierna: mezcla lo justo, en frío y con la grasa bien repartida.",
+        "Reposa las masas antes de estirar y otra vez antes de hornear si encogen.",
+        "Ajusta la hidratación: más agua, red más extensible y miga más abierta."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Autólisis",
+        "ratio": "20–60 minutos de harina y agua",
+        "note": "Antes de añadir sal y levadura."
+      },
+      {
+        "use": "Reposo de masa quebrada",
+        "ratio": "1 hora en frío como mínimo",
+        "note": "Evita que encoja."
+      },
+      {
+        "use": "Reposo de pasta fresca",
+        "ratio": "30 minutos tapada",
+        "note": "Se estira mejor."
+      },
+      {
+        "use": "Hidratación de pan",
+        "ratio": "60–75 % del peso de la harina",
+        "note": "Según el pan."
+      }
+    ],
+    "variants": [
+      {
+        "id": "harinas-y-almidones",
+        "name": "Harinas",
+        "note": "Fuerza y usos."
+      },
+      {
+        "id": "pan-y-focaccia",
+        "name": "Pan",
+        "note": "Gluten desarrollado."
+      },
+      {
+        "id": "masa-quebrada",
+        "name": "Masa quebrada",
+        "note": "Gluten mínimo."
+      },
+      {
+        "id": "pasta-fresca",
+        "name": "Pasta fresca",
+        "note": "Elástica y reposada."
+      }
+    ],
+    "keys": [
+      "Trabajo = gluten; reposo = relajación.",
+      "Masa tierna: poco trabajo y frío.",
+      "Masa que encoge: más reposo.",
+      "La sal fortalece, la grasa acorta.",
+      "La fuerza de la harina decide el punto de partida."
+    ],
+    "errors": [
+      {
+        "p": "Masa que encoge en el molde",
+        "fix": "Sin reposo. Reposa en frío antes de estirar y de hornear."
+      },
+      {
+        "p": "Quebrada dura",
+        "fix": "Amasada de más. Mezcla lo justo."
+      },
+      {
+        "p": "Pan denso",
+        "fix": "Poco amasado o harina floja. Amasa más o usa harina de fuerza."
+      }
+    ],
+    "history": "La panadería ha trabajado el gluten durante milenios sin conocerlo. Su estudio científico y técnicas como la autólisis se difundieron en la panadería moderna del siglo XX.",
+    "uses": [
+      "Pan y masas fermentadas",
+      "Pasta fresca",
+      "Masas quebradas y hojaldres",
+      "Rebozados y tempuras"
+    ],
+    "keep": "No aplica: es un principio. Las masas reposan tapadas para que no formen costra.",
+    "pro": "Reposos escritos en cada ficha de masa y cronometrados; masas quebradas siempre con reposo en frío.",
+    "related": [
+      "harinas-y-almidones",
+      "pan-y-focaccia",
+      "masa-quebrada",
+      "pasta-fresca",
+      "tempura",
+      "hojaldre"
+    ]
+  },
+  {
+    "id": "umami-glutamato-y-sinergia",
+    "name": "Umami en la práctica: glutamato y sinergia",
+    "name_en": "Umami in practice: glutamate and synergy",
+    "aka": [
+      "glutamato",
+      "inosinato",
+      "guanilato",
+      "sinergia del umami",
+      "combinar umami",
+      "potenciar el sabor"
+    ],
+    "cat": "conceptos",
+    "group": "Fundamentos",
+    "summary": "De dónde sale el umami y por qué dos ingredientes juntos saben mucho más que por separado.",
+    "what": "El umami es el gusto que producen sobre todo el glutamato y dos compuestos llamados nucleótidos (inosinato y guanilato). El glutamato está en el tomate maduro, los quesos curados, el alga kombu, la salsa de soja, el miso y las anchoas curadas. El inosinato abunda en carnes, pescados y el bonito seco; el guanilato, en setas secas.\n\nCuando se combinan glutamato y nucleótido, la sensación de umami se multiplica, mucho más que la suma de los dos: es la base del [[dashi]] (kombu y bonito seco) y de combinaciones clásicas como tomate y anchoa, queso curado y jamón, setas y carne. Un poco de sal la refuerza. La parte creativa está en [[umami-y-fondo]].",
+    "base": {
+      "for": "Fuentes de umami",
+      "items": [
+        [
+          "Glutamato",
+          "tomate maduro, queso curado, kombu, soja, miso, anchoa curada"
+        ],
+        [
+          "Inosinato",
+          "carnes, pescados, bonito seco, anchoas"
+        ],
+        [
+          "Guanilato",
+          "setas secas, sobre todo shiitake"
+        ],
+        [
+          "Sinergia",
+          "glutamato + nucleótido"
+        ],
+        [
+          "Madurar, curar, fermentar y secar",
+          "aumentan el glutamato libre"
+        ],
+        [
+          "Sal",
+          "refuerza la percepción del umami"
+        ]
+      ],
+      "steps": [
+        "Identifica qué fuente de umami tiene ya el plato.",
+        "Añade una fuente complementaria: si tiene glutamato, un nucleótido, y al revés.",
+        "Usa poca cantidad: el objetivo es profundidad, no que se reconozca.",
+        "Prueba con y sin sal: el umami necesita algo de sal.",
+        "Equilibra con ácido o amargo para que no quede pesado."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Dashi",
+        "ratio": "10 g de kombu y 15–20 g de bonito seco por litro",
+        "note": "Sinergia clásica."
+      },
+      {
+        "use": "Tomate y anchoa",
+        "ratio": "1 anchoa por 250 ml de salsa",
+        "note": "No se nota a pescado."
+      },
+      {
+        "use": "Corteza de queso en caldo",
+        "ratio": "50–100 g por litro",
+        "note": "Retirar al colar."
+      },
+      {
+        "use": "Setas secas en un jugo",
+        "ratio": "10 g por litro",
+        "note": "Con carne: sinergia."
+      }
+    ],
+    "variants": [
+      {
+        "id": "umami-y-fondo",
+        "name": "Umami y fondo",
+        "note": "Uso creativo."
+      },
+      {
+        "id": "dashi",
+        "name": "Dashi",
+        "note": "La sinergia hecha caldo."
+      },
+      {
+        "id": "miso-y-koji",
+        "name": "Fermentados",
+        "note": "Más glutamato libre."
+      },
+      {
+        "id": "garum-y-salsas-de-pescado",
+        "name": "Salsas de pescado",
+        "note": "Umami concentrado."
+      }
+    ],
+    "keys": [
+      "Glutamato + nucleótido = mucho más umami.",
+      "Curar, madurar, secar y fermentar lo aumentan.",
+      "Poco y bien combinado.",
+      "Necesita sal, pero no demasiada.",
+      "Ácido y amargo para equilibrar."
+    ],
+    "errors": [
+      {
+        "p": "Plato pesado y monótono",
+        "fix": "Exceso de umami. Reduce y añade ácido o frescor."
+      },
+      {
+        "p": "Sabor a pescado en una salsa de carne",
+        "fix": "Demasiada anchoa o salsa de pescado. Usa menos."
+      },
+      {
+        "p": "Caldo plano",
+        "fix": "Una sola fuente de umami. Añade una complementaria."
+      }
+    ],
+    "history": "El umami fue descrito a principios del siglo XX por un químico japonés a partir del caldo de kombu. Las combinaciones que lo aprovechan son mucho más antiguas en todas las cocinas.",
+    "uses": [
+      "Caldos y salsas",
+      "Platos vegetales con profundidad",
+      "Aliños",
+      "Guisos"
+    ],
+    "keep": "No aplica: es un principio.",
+    "pro": "Ten a mano pocas fuentes de umami de calidad (kombu, setas secas, anchoas, quesos curados, miso) y anota las combinaciones que funcionan.",
+    "related": [
+      "umami-y-fondo",
+      "dashi",
+      "miso-y-koji",
+      "garum-y-salsas-de-pescado",
+      "algas",
+      "quesos-en-cocina"
+    ]
+  },
+  {
+    "id": "aromas-y-volatiles",
+    "name": "Aromas: volátiles, grasa y alcohol como vehículo",
+    "name_en": "Aromas: volatiles, fat and alcohol as carriers",
+    "aka": [
+      "aroma",
+      "compuestos volátiles",
+      "retronasal",
+      "aroma en la grasa",
+      "extraer aromas",
+      "perder aroma al cocinar"
+    ],
+    "cat": "conceptos",
+    "group": "Fundamentos",
+    "summary": "Casi todo lo que llamamos sabor es aroma: moléculas volátiles que se van con el calor y que la grasa y el alcohol capturan y transportan.",
+    "what": "La lengua percibe pocos gustos (dulce, salado, ácido, amargo, umami); lo demás, lo que distingue una fresa de una frambuesa, es aroma, que llega a la nariz desde la boca al masticar. Los aromas son moléculas volátiles: se evaporan con facilidad, sobre todo con calor. Por eso una hierba añadida al principio de un guiso largo pierde su perfume, y por eso un plato demasiado frío huele poco.\n\nMuchos aromas se disuelven mejor en grasa que en agua, y otros en alcohol: por eso infusionar en mantequilla o aceite, o macerar en un licor, extrae y conserva aromas que el agua no captura. La grasa además los libera despacio en la boca.",
+    "base": {
+      "for": "Principios para manejar aromas",
+      "items": [
+        [
+          "Calor largo",
+          "evapora los aromas delicados"
+        ],
+        [
+          "Calor corto o tostado",
+          "libera y crea aromas"
+        ],
+        [
+          "Grasa",
+          "captura aromas liposolubles (cítricos, especias, vainilla, hierbas)"
+        ],
+        [
+          "Alcohol",
+          "disuelve aromas que el agua no capta"
+        ],
+        [
+          "Frío",
+          "reduce la liberación de aroma"
+        ],
+        [
+          "Moler, rallar o cortar al momento",
+          "libera aroma justo cuando se usa"
+        ]
+      ],
+      "steps": [
+        "Aromas delicados (hierbas tiernas, ralladuras, flores) al final y fuera del fuego.",
+        "Aromas leñosos (especias enteras, hierbas duras) al principio o infusionados en grasa.",
+        "Tapa los recipientes al infusionar para no perder aroma.",
+        "Muele y ralla en el momento.",
+        "Sirve a una temperatura que deje oler el plato."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Infusión en mantequilla",
+        "ratio": "60–80 °C, tapada, 15–30 minutos",
+        "note": "Hierbas, cítricos, especias."
+      },
+      {
+        "use": "Macerado en alcohol",
+        "ratio": "Días o semanas",
+        "note": "Extractos de vainilla o cítricos."
+      },
+      {
+        "use": "Hierbas tiernas",
+        "ratio": "En los últimos 30 segundos",
+        "note": "O en crudo."
+      },
+      {
+        "use": "Especias enteras",
+        "ratio": "Tostadas 1–2 minutos en seco o en grasa",
+        "note": "Al principio."
+      }
+    ],
+    "variants": [
+      {
+        "id": "infusiones",
+        "name": "Infusiones",
+        "note": "En frío y en caliente."
+      },
+      {
+        "id": "grasas-infusionadas",
+        "name": "Grasas aromatizadas",
+        "note": "Aroma capturado en grasa."
+      },
+      {
+        "id": "especias",
+        "name": "Especias",
+        "note": "Tostar y moler."
+      },
+      {
+        "id": "temperatura-de-servicio",
+        "name": "Temperatura de servicio",
+        "note": "Cuánto aroma llega."
+      }
+    ],
+    "keys": [
+      "Sabor es sobre todo aroma.",
+      "Lo delicado, al final; lo leñoso, al principio.",
+      "La grasa y el alcohol guardan aromas.",
+      "Tapa al infusionar.",
+      "Moler y rallar al momento."
+    ],
+    "errors": [
+      {
+        "p": "Hierbas sin aroma en el plato",
+        "fix": "Añadidas al principio. Ponlas al final o en crudo."
+      },
+      {
+        "p": "Especias planas",
+        "fix": "Molidas hace tiempo o sin tostar. Tuesta y muele al momento."
+      },
+      {
+        "p": "Infusión débil",
+        "fix": "Recipiente destapado o medio acuoso para un aroma graso. Tapa y usa grasa."
+      }
+    ],
+    "history": "Perfumar aceites, vinos y grasas con hierbas y especias es una práctica muy antigua. La explicación de los compuestos volátiles y del olfato retronasal es de la ciencia del siglo XX.",
+    "uses": [
+      "Infusiones y aceites",
+      "Acabados con hierbas y ralladuras",
+      "Postres perfumados",
+      "Salsas"
+    ],
+    "keep": "No aplica: es un principio. Especias y hierbas secas, cerradas, a oscuras y por poco tiempo.",
+    "pro": "Ralladores y molinillos en el pase para aromatizar al último momento.",
+    "related": [
+      "infusiones",
+      "grasas-infusionadas",
+      "especias",
+      "temperatura-de-servicio",
+      "hierbas-frescas",
+      "aceites-aromatizados"
+    ]
   }
 ]

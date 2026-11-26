@@ -4263,5 +4263,558 @@
       "frutos-secos",
       "rouille"
     ]
+  },
+  {
+    "id": "salsas-agridulces-y-gastriques",
+    "name": "Salsas agridulces y gastriques",
+    "name_en": "Sweet and sour sauces and gastriques",
+    "aka": [
+      "gastrique",
+      "agridulce",
+      "salsa agridulce",
+      "agrodolce",
+      "pato a la naranja",
+      "caramelo y vinagre"
+    ],
+    "cat": "salsas",
+    "group": "Salsas clásicas",
+    "summary": "Azúcar caramelizado y ácido, unidos a un jugo o a fruta: el contrapunto para carnes grasas, caza y verduras.",
+    "what": "Una gastrique es un caramelo desglasado con vinagre que se usa para dar a una salsa un equilibrio de dulce y ácido; unido a un [[jugo-de-carne|jugo]] y a cítrico, es la base de salsas clásicas como la del pato a la naranja. El agridulce italiano (agrodolce) cocina cebolla con vinagre, azúcar, pasas y piñones para acompañar pescados, verduras o caza. En la cocina china, el agridulce une vinagre de arroz, azúcar, tomate y soja, ligado con almidón.\n\nTodas comparten la misma regla: el dulce y el ácido deben equilibrarse para cortar la grasa sin empalagar. La técnica del azúcar está en [[caramelizacion-de-azucares]].",
+    "base": {
+      "for": "unos 300 ml de salsa con gastrique",
+      "items": [
+        [
+          "Azúcar",
+          "80–100 g"
+        ],
+        [
+          "Vinagre de vino o de Jerez",
+          "80–100 ml"
+        ],
+        [
+          "Zumo de naranja (opcional)",
+          "150 ml"
+        ],
+        [
+          "Jugo de carne o de pato",
+          "300 ml"
+        ],
+        [
+          "Ralladura de cítrico",
+          "1 cucharadita"
+        ],
+        [
+          "Mantequilla fría",
+          "20 g"
+        ],
+        [
+          "Sal",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Carameliza el azúcar en seco o con un poco de agua hasta ámbar claro.",
+        "Aparta y desglasa con el vinagre con cuidado de los vapores; vuelve al fuego hasta disolver el caramelo.",
+        "Añade el zumo y reduce a la mitad.",
+        "Incorpora el jugo y reduce hasta que nape; cuela.",
+        "Termina con la ralladura y la mantequilla fría fuera del fuego; ajusta de sal."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Gastrique",
+        "ratio": "Azúcar y vinagre 1:1",
+        "note": "Caramelo ámbar claro."
+      },
+      {
+        "use": "Agrodolce",
+        "ratio": "500 g de cebolla, 100 ml de vinagre, 40 g de azúcar, 30 g de pasas y 30 g de piñones",
+        "note": "Pochado lento."
+      },
+      {
+        "use": "Agridulce chino",
+        "ratio": "Vinagre de arroz, azúcar y tomate a partes iguales, con soja",
+        "note": "Ligado con almidón."
+      },
+      {
+        "use": "Ración",
+        "ratio": "30–40 ml por plato",
+        "note": ""
+      }
+    ],
+    "variants": [
+      {
+        "id": "reducciones",
+        "name": "Reducciones",
+        "note": "La técnica de concentrar."
+      },
+      {
+        "id": "chutneys-y-compotas-saladas",
+        "name": "Chutneys",
+        "note": "Agridulces de fruta."
+      },
+      {
+        "id": "pato",
+        "name": "Pato a la naranja",
+        "note": "El uso clásico."
+      },
+      {
+        "id": "uva-y-pasas",
+        "name": "Agrodolce con pasas",
+        "note": "Para pescado y verdura."
+      }
+    ],
+    "keys": [
+      "Caramelo claro: oscuro amarga.",
+      "Desglasar apartado y con cuidado del vapor.",
+      "Equilibrio: prueba y ajusta dulce, ácido y sal.",
+      "Para carnes grasas y caza.",
+      "Montar con mantequilla da brillo."
+    ],
+    "errors": [
+      {
+        "p": "Salsa empalagosa",
+        "fix": "Demasiado azúcar. Añade vinagre o cítrico."
+      },
+      {
+        "p": "Salsa amarga",
+        "fix": "Caramelo oscuro. Empieza de nuevo con caramelo claro."
+      },
+      {
+        "p": "Caramelo endurecido al desglasar",
+        "fix": "Vinagre frío. Sigue calentando hasta disolverlo."
+      }
+    ],
+    "history": "Las salsas agridulces son muy antiguas: la cocina europea medieval combinaba vinagre y miel o azúcar, y el agrodolce sigue vivo en Italia. La gastrique es un recurso de la cocina clásica francesa.",
+    "uses": [
+      "Pato y caza",
+      "Cerdo",
+      "Pescados grasos",
+      "Verduras asadas"
+    ],
+    "keep": "La gastrique sola, semanas en frío. La salsa con jugo, 4–5 días.",
+    "pro": "Ten la gastrique hecha en bote y ajusta cada salsa al pedido con unas gotas.",
+    "related": [
+      "reducciones",
+      "chutneys-y-compotas-saladas",
+      "pato",
+      "caramelizacion-de-azucares",
+      "vinagres",
+      "acidez-en-cocina"
+    ]
+  },
+  {
+    "id": "salsa-de-setas",
+    "name": "Salsa de setas",
+    "name_en": "Mushroom sauce",
+    "aka": [
+      "salsa de setas",
+      "salsa de champiñones",
+      "salsa de boletus",
+      "salsa de hongos",
+      "crema de setas"
+    ],
+    "cat": "salsas",
+    "group": "Salsas clásicas",
+    "summary": "Setas bien doradas, chalota, un vino o licor, caldo y, a veces, nata: una salsa profunda y terrosa para carnes, aves y pastas.",
+    "what": "La salsa de setas empieza con un buen salteado: las [[setas]] se doran a fuego fuerte hasta que pierden el agua y toman color, porque de ahí viene casi todo el sabor. Luego se añade chalota, se desglasa con un vino blanco, un generoso seco o un brandy, se moja con caldo y se reduce. Puede terminarse con nata, con mantequilla o dejarse como un jugo ligero.\n\nLas setas secas, hidratadas, dan mucha más profundidad, y su agua de remojo colada es un caldo excelente. Con boletus o setas silvestres la salsa sabe a bosque; con champiñón, es más suave.",
+    "base": {
+      "for": "4 raciones (unos 350 ml)",
+      "items": [
+        [
+          "Setas frescas laminadas",
+          "300 g"
+        ],
+        [
+          "Setas secas hidratadas y su agua colada",
+          "15–20 g y 150 ml"
+        ],
+        [
+          "Chalota picada",
+          "1"
+        ],
+        [
+          "Vino blanco, generoso seco o brandy",
+          "50 ml"
+        ],
+        [
+          "Caldo de ave o de setas",
+          "200 ml"
+        ],
+        [
+          "Nata (opcional)",
+          "100 ml"
+        ],
+        [
+          "Mantequilla",
+          "30 g"
+        ],
+        [
+          "Tomillo, sal y pimienta",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Saltea las setas frescas a fuego fuerte con poca grasa, por tandas, hasta que estén doradas; sala al final.",
+        "Añade la chalota, las setas secas picadas y el tomillo y rehoga un minuto.",
+        "Desglasa con el vino o el licor y reduce casi a seco.",
+        "Moja con el caldo y el agua de las setas y reduce a la mitad; añade la nata si la usas y reduce hasta que nape.",
+        "Termina con la mantequilla fría y ajusta de sal; tritura parte si la quieres más ligada."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Setas por ración",
+        "ratio": "75 g frescas",
+        "note": ""
+      },
+      {
+        "use": "Setas secas",
+        "ratio": "15–20 g por 4 raciones",
+        "note": "Para profundidad."
+      },
+      {
+        "use": "Reducción",
+        "ratio": "Caldo a la mitad",
+        "note": "Antes de la nata."
+      },
+      {
+        "use": "Ración",
+        "ratio": "60–80 ml por plato",
+        "note": ""
+      }
+    ],
+    "variants": [
+      {
+        "id": "setas",
+        "name": "Setas",
+        "note": "Limpieza y temporada."
+      },
+      {
+        "id": "caldo-de-setas",
+        "name": "Caldo de setas",
+        "note": "La base líquida."
+      },
+      {
+        "id": "jugo-de-carne",
+        "name": "Con jugo de carne",
+        "note": "Más oscura y profunda."
+      },
+      {
+        "id": "emulsiones-al-momento",
+        "name": "Montada con mantequilla",
+        "note": "Brillo final."
+      }
+    ],
+    "keys": [
+      "Setas doradas, no cocidas en su agua.",
+      "Por tandas y a fuego fuerte.",
+      "Setas secas para profundidad.",
+      "Sal al final del salteado.",
+      "Mantequilla fría para terminar."
+    ],
+    "errors": [
+      {
+        "p": "Salsa gris y aguada",
+        "fix": "Setas amontonadas. Saltéalas por tandas a fuego fuerte."
+      },
+      {
+        "p": "Arena en la salsa",
+        "fix": "Agua de remojo sin colar. Cuélala por paño."
+      },
+      {
+        "p": "Salsa sosa",
+        "fix": "Poco reducida. Reduce más y añade setas secas."
+      }
+    ],
+    "history": "Las salsas de setas forman parte de la cocina clásica europea y de las cocinas de bosque de toda la península, sobre todo en otoño.",
+    "uses": [
+      "Carnes rojas",
+      "Aves y conejo",
+      "Pastas y arroces",
+      "Huevos",
+      "Patatas"
+    ],
+    "keep": "3–4 días en frío; se regenera suave.",
+    "pro": "Base de setas reducida hecha; al pedido, calienta, termina con nata o mantequilla.",
+    "related": [
+      "setas",
+      "caldo-de-setas",
+      "jugo-de-carne",
+      "emulsiones-al-momento",
+      "desalado-y-remojo",
+      "trufa"
+    ]
+  },
+  {
+    "id": "bagna-cauda-y-salsas-de-anchoa",
+    "name": "Bagna cauda y salsas de anchoa",
+    "name_en": "Bagna cauda and anchovy sauces",
+    "aka": [
+      "bagna cauda",
+      "bagna càuda",
+      "anchoïade",
+      "salsa de anchoas",
+      "mantequilla de anchoa",
+      "aliño de anchoa"
+    ],
+    "cat": "salsas",
+    "group": "Salsas del mundo",
+    "summary": "Anchoa y ajo fundidos en aceite y mantequilla, templados o crudos: umami y sal para verduras, carnes y pescados.",
+    "what": "La bagna cauda es una salsa caliente del Piamonte: ajo muy suave y anchoas fundidos lentamente en aceite de oliva y mantequilla, que se sirve templada en un recipiente al calor para mojar verduras crudas y cocidas. La anchoïade provenzal es su pariente frío: anchoas majadas con ajo, aceite y un poco de vinagre, para untar o aliñar.\n\nLa anchoa en salazón se deshace con el calor suave y desaparece como tal, dejando un fondo de [[umami-y-fondo|umami]] y sal que no sabe a pescado. Por eso también funciona en mantequillas para carnes, aliños para verduras amargas o salsas para cordero.",
+    "base": {
+      "for": "unos 300 ml de bagna cauda",
+      "items": [
+        [
+          "Anchoas en salazón o en aceite",
+          "100 g"
+        ],
+        [
+          "Ajos pelados y sin germen",
+          "8–10 dientes"
+        ],
+        [
+          "Leche para suavizar el ajo (opcional)",
+          "200 ml"
+        ],
+        [
+          "Aceite de oliva virgen extra",
+          "200 ml"
+        ],
+        [
+          "Mantequilla",
+          "50 g"
+        ]
+      ],
+      "steps": [
+        "Si quieres el ajo más suave, cuécelo en leche 10–15 minutos y escúrrelo.",
+        "Maja o pica muy fino el ajo y ponlo en un cazo con el aceite a fuego muy suave, sin que se dore.",
+        "Añade las anchoas picadas y deja que se deshagan, removiendo, 10–15 minutos.",
+        "Incorpora la mantequilla y mezcla hasta que la salsa quede unida.",
+        "Sirve templada, en un recipiente al calor, con verduras para mojar."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Bagna cauda",
+        "ratio": "Fuego muy suave, sin freír el ajo",
+        "note": "Templada al servir."
+      },
+      {
+        "use": "Anchoïade",
+        "ratio": "100 g de anchoas, 2 ajos, 100 ml de aceite, 10 ml de vinagre",
+        "note": "En crudo."
+      },
+      {
+        "use": "Mantequilla de anchoa",
+        "ratio": "1 parte de anchoa por 4 de mantequilla",
+        "note": "Para carnes y pescados."
+      },
+      {
+        "use": "Ración",
+        "ratio": "40–50 ml por persona",
+        "note": "Para mojar."
+      }
+    ],
+    "variants": [
+      {
+        "id": "salazones-y-huevas",
+        "name": "Anchoas",
+        "note": "Producto y elección."
+      },
+      {
+        "id": "mantequillas-compuestas",
+        "name": "Mantequilla de anchoa",
+        "note": "Para terminar platos."
+      },
+      {
+        "id": "garum-y-salsas-de-pescado",
+        "name": "Salsas de pescado",
+        "note": "Otra forma de umami marino."
+      },
+      {
+        "id": "crudites-y-cortes",
+        "name": "Verduras para mojar",
+        "note": "Cortes y presentación."
+      }
+    ],
+    "keys": [
+      "Ajo suave: nunca dorado.",
+      "La anchoa se funde a fuego suave.",
+      "Umami y sal: prueba antes de salar nada.",
+      "Templada, no caliente, para mojar.",
+      "Con verduras amargas y dulces de temporada."
+    ],
+    "errors": [
+      {
+        "p": "Ajo amargo",
+        "fix": "Ajo dorado o frito. Fuego mínimo o ajo cocido en leche antes."
+      },
+      {
+        "p": "Salsa separada",
+        "fix": "Demasiado caliente. Bájala y bate con la mantequilla."
+      },
+      {
+        "p": "Demasiado salada",
+        "fix": "Anchoas muy saladas. Desálalas un poco o sirve con verduras sin sal."
+      }
+    ],
+    "history": "La bagna cauda es una salsa tradicional del Piamonte, ligada al otoño y a la vendimia. Las salsas de anchoa y ajo son comunes en toda la costa mediterránea.",
+    "uses": [
+      "Verduras crudas y cocidas",
+      "Cordero",
+      "Pescados a la brasa",
+      "Aliños de hojas amargas",
+      "Pastas"
+    ],
+    "keep": "3–4 días en frío; se regenera a fuego muy suave.",
+    "pro": "Haz la base en tanda y caliéntala por ración en cazo pequeño o en termo templado.",
+    "related": [
+      "salazones-y-huevas",
+      "mantequillas-compuestas",
+      "garum-y-salsas-de-pescado",
+      "crudites-y-cortes",
+      "umami-y-fondo",
+      "cebolla-y-ajo"
+    ]
+  },
+  {
+    "id": "salsas-citricas-para-pescado",
+    "name": "Salsas de cítricos para pescado",
+    "name_en": "Citrus sauces for fish",
+    "aka": [
+      "salsa de naranja",
+      "beurre blanc de cítricos",
+      "salsa maltesa",
+      "salmoriglio",
+      "emulsión de limón",
+      "salsa de limón"
+    ],
+    "cat": "salsas",
+    "group": "Salsas clásicas",
+    "summary": "Zumos de cítrico reducidos y montados con mantequilla, emulsionados con aceite o con yema: acidez luminosa para el pescado.",
+    "what": "Los cítricos son el ácido natural del pescado, y con ellos se hacen salsas de varios tipos. La más versátil es una [[beurre-blanc]] de cítricos: zumo de naranja, limón o pomelo reducido con chalota y montado con mantequilla fría. La salsa maltesa es una [[holandesa]] con zumo y ralladura de naranja sanguina. El salmoriglio del sur de Italia es una emulsión cruda de aceite, limón, orégano y ajo para pescados a la brasa.\n\nLa clave es reducir el zumo para concentrarlo sin que pierda frescor, y añadir siempre algo de ralladura y unas gotas de zumo fresco al final. Las versiones asiáticas con soja están en [[ponzu-y-salsas-citricas]].",
+    "base": {
+      "for": "4 raciones (unos 200 ml)",
+      "items": [
+        [
+          "Zumo de naranja",
+          "200 ml"
+        ],
+        [
+          "Zumo de limón",
+          "20 ml"
+        ],
+        [
+          "Chalota picada",
+          "1"
+        ],
+        [
+          "Vino blanco seco",
+          "50 ml"
+        ],
+        [
+          "Mantequilla fría en dados",
+          "150 g"
+        ],
+        [
+          "Ralladura de naranja y limón",
+          "1 cucharadita"
+        ],
+        [
+          "Sal",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Reduce el zumo de naranja con la chalota y el vino hasta que queden unos 50 ml.",
+        "Baja el fuego al mínimo y monta con la mantequilla fría, dado a dado, sin dejar de mover.",
+        "Cuela si quieres una textura fina.",
+        "Añade el zumo de limón, la ralladura y la sal.",
+        "Mantén templada, sin hervir, hasta servir."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Reducción de zumo",
+        "ratio": "200 ml a 50 ml",
+        "note": "Concentra sin quemar."
+      },
+      {
+        "use": "Temperatura",
+        "ratio": "55–65 °C",
+        "note": "Por encima se corta."
+      },
+      {
+        "use": "Salmoriglio",
+        "ratio": "100 ml de aceite, 30 ml de limón, orégano, 1 ajo",
+        "note": "Batido en crudo."
+      },
+      {
+        "use": "Ración",
+        "ratio": "30–40 ml por plato",
+        "note": ""
+      }
+    ],
+    "variants": [
+      {
+        "id": "beurre-blanc",
+        "name": "Beurre blanc",
+        "note": "La base montada."
+      },
+      {
+        "id": "holandesa",
+        "name": "Maltesa",
+        "note": "Holandesa con naranja sanguina."
+      },
+      {
+        "id": "ponzu-y-salsas-citricas",
+        "name": "Ponzu",
+        "note": "Cítrico con soja y dashi."
+      },
+      {
+        "id": "curds-y-cremas-de-citricos",
+        "name": "Cremas de cítricos",
+        "note": "La versión dulce."
+      }
+    ],
+    "keys": [
+      "Reducir el zumo para concentrar.",
+      "Ralladura y zumo fresco al final.",
+      "Mantequilla fría y fuego mínimo.",
+      "Templada, nunca hirviendo.",
+      "Equilibrio con sal: el cítrico la necesita."
+    ],
+    "errors": [
+      {
+        "p": "Salsa amarga",
+        "fix": "Zumo reducido de más o con parte blanca de la piel. Reduce menos y usa solo ralladura."
+      },
+      {
+        "p": "Salsa cortada",
+        "fix": "Demasiado caliente. Bájala y bate con un dado de mantequilla fría."
+      },
+      {
+        "p": "Sabor apagado",
+        "fix": "Zumo cocido sin zumo fresco final. Añade unas gotas al servir."
+      }
+    ],
+    "history": "Las salsas de cítricos para pescado tienen tradición en las cocinas del Mediterráneo y en la cocina clásica francesa, donde la maltesa toma el nombre de la naranja de Malta.",
+    "uses": [
+      "Pescados blancos",
+      "Mariscos",
+      "Espárragos y verduras",
+      "Pescados a la brasa"
+    ],
+    "keep": "Al momento. La reducción de zumo, 2–3 días en frío.",
+    "pro": "Reducción hecha y en frío; monta por tandas pequeñas y mantén en termo templado.",
+    "related": [
+      "beurre-blanc",
+      "holandesa",
+      "ponzu-y-salsas-citricas",
+      "citricos",
+      "dorada-y-lubina",
+      "emulsiones-al-momento"
+    ]
   }
 ]

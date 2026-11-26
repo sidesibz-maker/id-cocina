@@ -27,7 +27,8 @@ function forYouHtml() {
  return out.length ? '<section class="sec"><h2 class="day">' + esc(t('Para ti, según tus intereses', 'For you, from your interests')) + '</h2><div class="chips kforyou">' + out.slice(0, 18).map(([, e]) => '<a class="chip" href="' + href(e.id) + '">' + esc(e.name) + '</a>').join('') + '</div><p class="fine">' + esc(t('Cambia tus intereses en Mi cocina.', 'Change your interests in My kitchen.')) + '</p></section>' : '';
 }
 
-let query = '', category = '', fixes = false, activeTab = null, tabFor = '';
+let query = '', category = '', fixes = false, activeTab = null, tabFor = '', showAll = false;
+const MAX_ROWS = 30; // filas que se pintan de entrada; el resto, con un botón
 const SEEN = 'id-cocina-biblioteca-vistas';
 const FAVORITES = 'id-cocina-biblioteca-favoritas';
 export const title = params => (params[0] === 'diccionario' ? t('Diccionario de cocina', 'Kitchen dictionary') : params[0] === 'estante' ? shelfName(params[1]) : params[0] ? entryById(params[0])?.name || t('Biblioteca', 'Library') : t('Biblioteca', 'Library'));
@@ -106,9 +107,10 @@ function results() {
  const list = q ? info.list :
   entries().filter(e => (!category || e.cat === category) && (!fixes || e.errors?.length)).sort((a, b) => a.name.localeCompare(b.name, 'es'));
  const status = list.length === 1 ? t('1 entrada', '1 entry') : list.length + t(' entradas', ' entries');
- if (list.length) { const rows = list.map(e => row(e, fixes ? 'trucos' : undefined)), offer = q.length >= 3 && !category && !fixes && !info?.guessed && !exactEntry(q) ? createBlock(q, false) : '', cut = Math.min(5, rows.length);
+ if (list.length) { const total = list.length, shown = showAll ? list : list.slice(0, MAX_ROWS), more = total > shown.length ? '<p class="kmore"><button type="button" class="btn ghost" data-act="more-results">' + esc(t('Ver las ', 'Show the ') + (total - shown.length) + t(' restantes', ' remaining')) + '</button></p>' : '';
+  const rows = shown.map(e => row(e, fixes ? 'trucos' : undefined)), offer = q.length >= 3 && !category && !fixes && !info?.guessed && !exactEntry(q) ? createBlock(q, false) : '', cut = Math.min(5, rows.length);
   const dym = info?.guessed ? '<p class="kdym">' + esc(t('No hay nada escrito como «', 'Nothing is written as “') + q + t('». Quizá buscas ', '”. Maybe you mean ')) + '<a href="' + href(list[0].id) + '">' + esc(list[0].name) + '</a>' + esc(list.length > 1 ? t(' o alguna de estas:', ' or one of these:') : '.') + '</p>' : '';
-  return {status, html: dym + '<ul class="krows">' + rows.slice(0, cut).join('') + '</ul>' + offer + (rows.length > cut ? '<ul class="krows">' + rows.slice(cut).join('') + '</ul>' : '')}; }
+  return {status, html: dym + '<ul class="krows">' + rows.slice(0, cut).join('') + '</ul>' + offer + (rows.length > cut ? '<ul class="krows">' + rows.slice(cut).join('') + '</ul>' : '') + more}; }
  if (category || fixes) return {status: t('No hay coincidencias con estos filtros.', 'No matches with these filters.'), html: ''};
  return {status, html: createBlock(q, true)};
 }
@@ -361,7 +363,7 @@ export function mount(root, params) {
  root.addEventListener('input', e => {
   if (e.target.id === 'kBatchCustom') { changeBatch(false); return; }
   if (e.target.id !== 'saberQ') return;
-  query = e.target.value;
+  query = e.target.value; showAll = false;
   refreshResults();
  });
  root.addEventListener('keydown', e => {
@@ -412,6 +414,7 @@ export function mount(root, params) {
    } catch (err) { toast(err?.detail === 'verify' ? t('OpenAI pide verificar tu organización para crear imágenes: entra en platform.openai.com → Settings → Organization → Verify.', 'OpenAI asks you to verify your organisation to create images.') : iaMessage(err), 'error', 9000); if (b.isConnected) { b.disabled = false; b.classList.remove('is-busy'); if (label) label.textContent = t('Crear imagen guía', 'Create guide image'); } }
    return;
   }
+  if (act === 'more-results') { showAll = true; refreshResults(); $('#saberRes .krow:nth-of-type(' + (MAX_ROWS + 1) + ') ', root)?.focus?.(); return; }
   if (act === 'kbook') { bookSheet(favorites()); return; }
   if (act === 'random-entry') { const e2 = randomEntry(); if (e2) location.hash = href(e2.id); return; }
   if (act === 'seen-new') { try { localStorage.setItem(KNOWN, JSON.stringify(entries().map(e => e.id))); } catch {} b.closest('.knew')?.remove(); return; }
@@ -493,6 +496,7 @@ export function mount(root, params) {
    } catch (err) { toast(iaMessage(err), 'error', 7000); if (b.isConnected) { b.disabled = false; b.classList.remove('is-busy'); b.lastChild.textContent = t('Escribir la ficha de «', 'Write the entry for “') + topic + t('»', '”'); } if (st) st.textContent = ''; }
   }
  });
+ if (!params[0]) (window.requestIdleCallback || (f => setTimeout(f, 300)))(() => { try { search('preparar', 1); } catch {} });
  if (!params[0] && matchMedia('(min-width: 960px)').matches) setTimeout(() => $('#saberQ', root)?.focus(), 50);
  return null;
 }

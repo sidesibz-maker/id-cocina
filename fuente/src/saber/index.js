@@ -15,9 +15,10 @@ export const CATS = [['salsas', 'Salsas', 'Sauces'], ['fondos', 'Fondos, jugos y
 const norm = v => String(v || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9ñ ]+/g, ' ').replace(/\s+/g, ' ').trim();
 const plain = v => String(v || '').replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, '$2').replace(/\[\[([^\]]+)\]\]/g, '$1');
 
+const MINE = new WeakMap();
 // Todas las entradas: las de la app y las tuyas (que pueden añadir temas nuevos).
 export function entries() {
- const mine = Object.values(state.saber || {}).filter(x => x?.custom && !x.deleted_at).map(x => ({...x.custom, cat: 'mias', mine: true}));
+ const mine = Object.values(state.saber || {}).filter(x => x?.custom && !x.deleted_at).map(x => { let m = MINE.get(x.custom); if (!m) { m = {...x.custom, cat: 'mias', mine: true}; MINE.set(x.custom, m); } return m; });
  const ids = new Set(mine.map(e => e.id));
  return [...BUILT.filter(e => !ids.has(e.id)), ...mine];
 }
@@ -51,18 +52,27 @@ function lev(a, b, max = 2) {
  }
  return prev[b.length];
 }
-// ¿Esta palabra escrita se parece a esta otra? Admite la palabra a medio escribir (se compara con el principio).
-function like(typed, word) {
- if (typed.length < 3) return false;
- const a = soundKey(typed), w = soundKey(word);
- if (!a || !w) return false;
+// ¿Lo escrito se parece a esta palabra? Las dos llegan ya pasadas a «cómo suenan». Admite la palabra a medio escribir;
+// con pocas letras solo vale si suena igual desde el principio, y con más se admite alguna letra cambiada.
+function likeKey(a, w) {
+ if (a.length < 3 || !w) return false;
  if (w.startsWith(a) || a === w) return true;
- const tol = a.length >= 7 ? 2 : a.length >= 4 ? 1 : 0;
- // Con pocas letras solo vale si suena igual desde el principio; con más, se admite alguna letra cambiada.
  if (a.length < 5) return false;
+ const tol = a.length >= 7 ? 2 : 1;
  return lev(a, w, tol) <= tol || (w.length > a.length && lev(a, w.slice(0, a.length), tol) <= tol);
 }
-
+// Cada ficha se prepara para buscar una sola vez (nombre, otros nombres, fallos, resumen, texto y cómo suenan sus palabras).
+const IX = new WeakMap();
+function ix(e) {
+ let v = IX.get(e);
+ if (!v) {
+  const name = wordList(e.name).join(' '), aliases = (e.aka || []).map(a => wordList(a).join(' '));
+  v = {name, aliases, names: [name, ...aliases].join(' '), problems: norm(plain((e.errors || []).map(x => x.p).join(' '))), summary: norm(plain(e.summary)), body: fullText(e), fixBody: norm(plain((e.errors || []).flatMap(x => [x.p, x.fix]).join(' '))),
+   own: wordList(e.name).map(w => [w, soundKey(w)]), aka: (e.aka || []).flatMap(x => wordList(x)).map(w => [w, soundKey(w)]), starts: [e.name, ...(e.aka || [])].map(norm)};
+  IX.set(e, v);
+ }
+ return v;
+}
 // Las preguntas pueden combinar el nombre con un síntoma de la ficha.
 export function searchInfo(q, limit = 40, {category = '', fixes = false} = {}) {
  const words = wordList(q);
@@ -72,16 +82,12 @@ export function searchInfo(q, limit = 40, {category = '', fixes = false} = {}) {
  for (const e of entries()) {
   if (category && e.cat !== category) continue;
   if (fixes && !e.errors?.length) continue;
-  const name = wordList(e.name).join(' '), aliases = (e.aka || []).map(a => wordList(a).join(' '));
-  const names = [name, ...aliases].join(' ');
-  const problems = norm(plain((e.errors || []).map(x => x.p).join(' ')));
-  const summary = norm(plain(e.summary)), body = fixes ? norm(plain((e.errors || []).flatMap(x => [x.p, x.fix]).join(' '))) : fullText(e);
+  const {name, aliases, names, problems, summary, own, aka} = ix(e), body = fixes ? ix(e).fixBody : ix(e).body;
   const scores = words.map(w => startsWord(names, w) ? 40 : startsWord(problems, w) ? 24 : startsWord(summary, w) ? 12 : startsWord(body, w) ? 5 : 0);
   if (scores.every(Boolean)) { exact.push({e, score: scores.reduce((a, b) => a + b, 0) + ([name, ...aliases].includes(phrase) ? 100 : 0) + (name.startsWith(phrase) ? 30 : 0)}); continue; }
   if (fixes) continue;
   // Si alguna palabra no está tal cual, se mira si se parece a una palabra del nombre (faltas, b/v, c/z, ch/x…).
-  const own = wordList(e.name), aka = (e.aka || []).flatMap(x => wordList(x));
-  const fit = w => { const k = soundKey(w); const inName = own.find(x => like(w, x)), inAka = inName ? null : aka.find(x => like(w, x)); const hit = inName || inAka; return hit ? (inName ? 12 : 8) + (soundKey(hit) === k ? 4 : 0) : 0; };
+  const fit = w => { const k = soundKey(w); const inName = own.find(x => likeKey(k, x[1])), inAka = inName ? null : aka.find(x => likeKey(k, x[1])); const hit = inName || inAka; return hit ? (inName ? 12 : 8) + (hit[1] === k ? 4 : 0) : 0; };
   const fuzzy = words.map((w, i) => scores[i] || fit(w));
   if (fuzzy.every(Boolean)) guess.push({e, score: fuzzy.reduce((a, b) => a + b, 0)});
  }
@@ -94,7 +100,7 @@ export const search = (q, limit = 40, opts = {}) => searchInfo(q, limit, opts).l
 export function suggest(q, limit = 7) {
  const n = norm(q);
  if (n.length < 2) return [];
- const starts = entries().filter(e => [e.name, ...(e.aka || [])].some(x => norm(x).startsWith(n))).sort((a, b) => a.name.length - b.name.length || a.name.localeCompare(b.name, 'es'));
+ const starts = entries().filter(e => ix(e).starts.some(x => x.startsWith(n))).sort((a, b) => a.name.length - b.name.length || a.name.localeCompare(b.name, 'es'));
  const seen = new Set(starts.map(e => e.id));
  const rest = searchInfo(q, limit * 2).list.filter(e => !seen.has(e.id));
  return [...starts, ...rest].slice(0, limit);
