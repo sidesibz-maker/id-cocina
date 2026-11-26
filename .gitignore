@@ -1,0 +1,7 @@
+
+# Impeccable: capturas, bocetos y registros de trabajo
+.impeccable/review/
+.impeccable/mocks/
+.impeccable/*.log
+.impeccable/decision-*.json
+.impeccable/icon-prompt.txt

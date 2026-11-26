@@ -8,7 +8,7 @@ import {esc, icon, $, $$, uid, toast, friendly, sheet, ask, flavorMeters, flavor
 import {state, dishById, fetchDish, createDish, saveDish, trashDish, restoreDish, imageUrl, uploadImage, userName, subById, createSub, dishVersions, snapshotDish} from '../store.js';
 import {advicePrompt, imagePrompt, adviceFromReply, copy, shrinkImage, pairingPrompt} from '../ai.js';
 import {iaOn, askIa, iaMessage, imageData} from '../ia.js';
-import {STATUSES, emptyState, skeleton, dishAllergens} from './shared.js';
+import {STATUSES, emptyState, skeleton, dishAllergens, xsec} from './shared.js';
 import {go} from '../nav.js';
 import {rich} from './ask.js';
 import {entryById, entryForName} from '../saber/index.js';
@@ -151,8 +151,9 @@ function analysisHtml() {
  const kb = state.kb;
  if (!kb) return '<h2>' + esc(t('Sabores que dominan', 'Leading flavours')) + '</h2>' + skeleton(3);
  const profile = dishProfile(kb, cur), advice = dishAdvice(kb, cur, profile), ctx = flavorContext(state.kitchen);
- let html = '<h2>' + esc(t('Sabores que dominan', 'Leading flavours')) + '</h2><p class="verdict">' + esc(verdictText(advice.verdict, profile)) + '</p>';
- if (profile.empty) return html + '<div class="analysis-empty">' + flavorPrint(null, {size: 150, labels: true}) + '</div>';
+ const lead = xsec(cur) ? '<h2>' + esc(t('El plato en corte', 'The dish in section')) + '</h2>' + xsec(cur) : '';
+ let html = lead + '<h2' + (lead ? ' class="an-next"' : '') + '>' + esc(t('Sabores que dominan', 'Leading flavours')) + '</h2><p class="verdict">' + esc(verdictText(advice.verdict, profile)) + '</p>';
+ if (profile.empty) return html;
  html += '<div class="analysis-chart">' + flavorPrint(profile.axes, {size: 150, labels: true, title: t('Huella de sabor del plato', 'Flavour print of the dish')}) + flavorMeters(profile, {lacking: advice.verdict.lacking}) + '</div>';
  if (profile.unknown) html += '<p class="fine">' + esc(profile.unknown === 1 ? t('1 ingrediente sin perfil no cuenta en el cálculo: tócalo para decir a qué se parece.', '1 ingredient with no profile is not counted: tap it to say what it resembles.') : profile.unknown + t(' ingredientes sin perfil no cuentan en el cálculo: tócalos para decir a qué se parecen.', ' ingredients with no profile are not counted: tap them to say what they resemble.')) + '</p>';
  const notes = advice.notes;
@@ -237,7 +238,7 @@ function adviceHtml() {
   const s = a.service || {};
   if (s.mise?.length || s.pass || s.risks?.length) html += '<h3>' + esc(t('Para el servicio', 'For service')) + '</h3>' + (s.mise?.length ? '<p class="mini">' + esc(t('Mise en place', 'Mise en place')) + '</p><ul class="plain">' + s.mise.map(m => '<li>' + esc(m) + '</li>').join('') + '</ul>' : '') + (s.pass ? '<p class="mini">' + esc(t('En el pase', 'At the pass')) + '</p><p>' + esc(s.pass) + '</p>' : '') + (s.risks?.length ? '<p class="mini">' + esc(t('Ojo con', 'Watch out for')) + '</p><ul class="plain">' + s.risks.map(m => '<li>' + esc(m) + '</li>').join('') + '</ul>' : '');
   if (a.plating) html += '<h3>' + esc(t('Emplatado', 'Plating')) + '</h3><p>' + esc(a.plating) + '</p>';
-  if (a.variants?.length) html += '<h3>' + esc(t('Variantes', 'Variants')) + '</h3><div class="variants">' + a.variants.map((v, k) => '<article class="variant">' + (v.label ? '<span class="kicker">' + esc(v.label) + '</span>' : '') + '<p>' + esc(v.idea) + '</p>' + (can ? '<button type="button" class="linkbtn" data-variant="' + k + '">' + esc(t('Abrir como plato nuevo', 'Open as a new dish')) + '</button>' : '') + '</article>').join('') + '</div>';
+  if (a.variants?.length) html += '<h3>' + esc(t('Variantes', 'Variants')) + '</h3><div class="variants">' + a.variants.map((v, k) => '<article class="variant">' + (v.label ? '<strong class="variant-label">' + esc(v.label) + '</strong>' : '') + '<p>' + esc(v.idea) + '</p>' + (can ? '<button type="button" class="linkbtn" data-variant="' + k + '">' + esc(t('Abrir como plato nuevo', 'Open as a new dish')) + '</button>' : '') + '</article>').join('') + '</div>';
   if (a.names?.length) html += '<h3>' + esc(t('Nombres para la carta', 'Names for the menu')) + '</h3><div class="chips">' + a.names.map((n, k) => '<button type="button" class="chip' + (can ? ' chip-add' : '') + '" data-name="' + k + '"' + (can ? '' : ' disabled') + '>' + esc(en() && n.en ? n.en : n.es) + '</button>').join('') + '</div>' + (can ? '<p class="fine">' + esc(t('Toca un nombre para ponérselo al plato.', 'Tap a name to use it for the dish.')) + '</p>' : '');
   if (a.allergens?.length) html += '<h3>' + esc(t('Alérgenos probables', 'Likely allergens')) + '</h3><div class="chips">' + a.allergens.map(id => { const row = ALLERGENS.find(x => x[0] === id); return row ? '<span class="chip chip-static">' + esc(lbl(row)) + '</span>' : ''; }).join('') + '</div><p class="fine">' + esc(t('Es solo una pista: compruébalo siempre con las fichas de cada producto.', 'This is only a hint: always check it against each product\'s data sheet.')) + '</p>';
   if (a.issues?.length) html += '<p class="fine">' + esc(a.issues.join(' ')) + '</p>';
@@ -344,7 +345,7 @@ async function fichaPrintHtml() {
  const comps = cur.components.filter(c => c.items.length || c.name || c.method);
  const alg = dishAllergens(cur), allergens = alg.names;
  const last = [...(cur.tests || [])].filter(Boolean).pop();
- return '<article class="ficha"><header class="ficha-head"><div><p class="ficha-kicker">' + esc(t('Ficha técnica', 'Recipe sheet')) + '</p><h1>' + esc(cur.name || t('Plato sin nombre', 'Untitled dish')) + '</h1>' + (cur.concept ? '<p class="ficha-concept">' + esc(cur.concept) + '</p>' : '') + (meta.length ? '<p class="ficha-meta">' + esc(meta.join(', ')) + '</p>' : '') + '</div>' +
+ return '<article class="ficha"><header class="ficha-head"><div><h1>' + esc(cur.name || t('Plato sin nombre', 'Untitled dish')) + '</h1><p class="ficha-kicker is-after">' + esc(t('Ficha técnica', 'Recipe sheet')) + '</p>' + (cur.concept ? '<p class="ficha-concept">' + esc(cur.concept) + '</p>' : '') + (meta.length ? '<p class="ficha-meta">' + esc(meta.join(', ')) + '</p>' : '') + '</div>' +
   (url ? '<img src="' + esc(url) + '" alt="">' : !profile.empty ? flavorPrint(profile.axes, {size: 110, labels: true}) : '') + '</header>' +
   (comps.length ? comps.map(c => '<section class="ficha-comp"><h2>' + esc(roleName(c)) + (c.name ? ': ' + esc(c.name) : '') + (c.techniques.length ? '<small>' + esc(c.techniques.filter(technique).map(techName).join(', ')) + '</small>' : '') + '</h2>' +
    (c.items.length ? '<table><tbody>' + c.items.map(i => '<tr><td>' + esc(i.n) + '</td><td class="ficha-q">' + esc(i.q || '') + '</td></tr>').join('') + '</tbody></table>' : '') +
@@ -436,8 +437,8 @@ function headHtml() {
 }
 export function render(params) {
  open(params);
- if (!ready) return '<a class="back" href="#/libreta">' + icon('left') + esc(t('Libreta', 'Notebook')) + '</a>' + skeleton(4);
- return '<a class="back" href="#/libreta">' + icon('left') + esc(t('Libreta', 'Notebook')) + '</a>' +
+ if (!ready) return '<a class="back" href="#/libreta">' + icon('left') + esc(t('Platos', 'Dishes')) + '</a>' + skeleton(4);
+ return '<a class="back" href="#/libreta">' + icon('left') + esc(t('Platos', 'Dishes')) + '</a>' +
   '<nav class="jump dish-jump" aria-label="' + esc(t('Partes del plato', 'Parts of the dish')) + '">' +
   (editable() ? '<button type="button" class="jump-add" data-act="catalog">' + icon('plus') + esc(t('Añadir al plato', 'Add to dish')) + '</button>' : '') +
   [['compSec', t('Mesa', 'Workbench')], ['analysis', t('Sabores', 'Flavours')], ['fichaSec', t('Ficha', 'Sheet')], ['imgSec', t('Imagen', 'Image')], ['adviceSec', t('Consejo', 'Advice')], ['pairSec', t('Maridaje', 'Pairing')], ['testsSec', t('Catas', 'Tastings')], ['notesSec', t('Notas', 'Notes')]].map(([id, label]) => '<button type="button" data-jump="' + id + '">' + esc(label) + '</button>').join('') + '</nav><div class="bench dish-bench">' +
@@ -455,7 +456,7 @@ export function render(params) {
   '<section class="card" id="notesSec"><h2>' + esc(t('Notas', 'Notes')) + '</h2><label class="sr" for="dishNotes">' + esc(t('Notas del plato', 'Dish notes')) + '</label><textarea id="dishNotes" data-voice rows="4" maxlength="6000" placeholder="' + esc(t('Proveedor, cantidades que te han funcionado, de dónde vino la idea…', 'Supplier, quantities that worked, where the idea came from…')) + '"' + (editable() ? '' : ' disabled') + '>' + esc(cur.notes) + '</textarea></section></div>';
 }
 function paint() { if (!root?.isConnected) return; root.innerHTML = render([cur?.id || 'nuevo']); bind(); }
-function paintMissing() { if (root?.isConnected) root.innerHTML = '<a class="back" href="#/libreta">' + icon('left') + esc(t('Libreta', 'Notebook')) + '</a>' + emptyState('book', t('Este plato no está', 'This dish is not here'), t('Puede que se haya movido o que no tengas conexión.', 'It may have moved, or you may be offline.'), '<a class="btn primary" href="#/libreta">' + esc(t('Ir a la libreta', 'Go to the notebook')) + '</a>'); }
+function paintMissing() { if (root?.isConnected) root.innerHTML = '<a class="back" href="#/libreta">' + icon('left') + esc(t('Platos', 'Dishes')) + '</a>' + emptyState('book', t('Este plato no está', 'This dish is not here'), t('Puede que se haya movido o que no tengas conexión.', 'It may have moved, or you may be offline.'), '<a class="btn primary" href="#/libreta">' + esc(t('Ir a la libreta', 'Go to the notebook')) + '</a>'); }
 
 const part = (id, html) => { const el = root && $('#' + id, root); if (el) el.innerHTML = html; };
 function shots() { if (!root) return; $$('img[data-shot]', root).forEach(async img => { const url = await imageUrl(img.dataset.shot); if (img.isConnected && url) { img.src = url; const a = img.closest('.shot') && $('[data-open-shot]', root); if (a) a.href = url; } }); }

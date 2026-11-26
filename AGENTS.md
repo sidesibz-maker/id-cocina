@@ -13,7 +13,7 @@ App personal de I+D de un jefe de cocina (restaurante mediterráneo de brasa en 
     `src/ia.js`: ChatGPT con la clave del propio dueño (Responses API). `src/share.js` + `ficha.html`: fichas de solo
     lectura para el equipo. `src/views/*`: pantallas. `src/saber/`: la «Biblioteca» (cerebro de cocina; ruta `#/biblioteca`, pantalla `views/saber.js`): `index.js`, contenido
     en `a.json`, `b.json`, `c.json`, `preparaciones.json`, `tecnicas.json`, `dulce.json` y `producto.json` con el formato de
-    `saber/FORMATO.md`. `src/lab.css`: diseño (Hallmark, tema Solstice).
+    `saber/FORMATO.md`. `src/lab.css`: diseño «Lámina de laboratorio» (ver `DESIGN.md` y `PRODUCT.md`).
   - **Esta app no gestiona el restaurante** (eso lo lleva el dueño en otra app): nada de pedidos, stock, APPCC, equipo ni
     sala. Es para crear, aprender y su carrera.
   - Oficio (nov 2026): `views/tools.js` (Herramientas de cocina: escalar, temporizadores, salmueras, espesantes, panadero,
@@ -36,7 +36,7 @@ cd fuente
 npm install
 npm run build        # genera salida/web (móvil, GitHub Pages) y salida/ID Cocina (PC)
 npx playwright install chromium   # solo la primera vez, si no hay navegador
-npm test             # 12 baterías en navegador: tienen que pasar TODAS
+npm test             # 13 baterías en navegador: tienen que pasar TODAS
 ```
 
 Publicar: con las pruebas en verde, copia `fuente/salida/web/*` a la raíz del repositorio, haz commit (`[codex] …`) y
@@ -44,7 +44,8 @@ Publicar: con las pruebas en verde, copia `fuente/salida/web/*` a la raíz del r
 `fuente/salida/ID Cocina/ID Cocina.html` y `radar.js` encima de los de la carpeta donde tiene la app (sus datos están en el
 navegador, no en esos archivos, así que no se pierden). En este PC el programa de Windows está en
 `Documentos\ID Cocina\programa`: copia también esos dos archivos a `programa\ID Cocina-win32-x64\resources\app\app\` y a
-`Documentos\ID Cocina\app\` (el programa sirve la app en http://127.0.0.1:4781; no cambiar el puerto).
+`Documentos\ID Cocina\app\` (el programa sirve la app en http://127.0.0.1:4781; no cambiar el puerto). **Ojo:** el programa instalado lee su
+   propia copia en `programa\ID Cocina-win32-x64\resources\app\app\`: si no la actualizas, el dueño no ve los cambios en el PC.
 
 ## Normas que no se saltan
 
@@ -59,10 +60,14 @@ navegador, no en esos archivos, así que no se pierden). En este PC el programa 
 5. **La Biblioteca (antes «Saber») se escribe con palabras propias.** No se copian ni se parafrasean de cerca libros ni webs (derechos de autor).
    Proporciones métricas reales, sin inventar datos históricos. Enlaces internos `[[id]]` o `[[id|texto]]` solo a ids que
    existan.
-6. **Diseño (Hallmark, Solstice):** todo color y letra por tokens de `:root`; nada de etiquetas en mayúsculas espaciadas,
-   rótulos encima de los títulos ni datos unidos con «·»; un solo acento bermellón; espaciados de 4 en 4 px; foco visible
-   y `prefers-reduced-motion`. Si tienes el skill (`npx skills add nutlope/hallmark -g`), pasa
-   `node ~/.agents/skills/hallmark/scripts/sloplint.mjs salida/web/index.html --scope app --genre editorial` y deja 0 FAIL.
+6. **Diseño «Lámina de laboratorio» (rediseño del 26 nov 2026, pedido por el dueño):** fondo carbón por defecto y versión
+   clara «lámina blanca» en Ajustes; todo color y letra por tokens de `:root` (Barlow y Barlow Condensed, incrustadas desde
+   `fuente/fonts/`); líneas de un píxel, esquinas rectas, sin sombras de adorno ni barras de color gruesas; cifras tabulares;
+   el rojo fuego para la acción principal y lo que cambia; la escala térmica (frío, templado, caliente, fuego) para
+   temperaturas y estados. Firmas: el plato en corte (`xsec` en `views/shared.js`) y la escala térmica (`thermScale`).
+   Nada de rótulos encima de los títulos, etiquetas en mayúsculas espaciadas ni datos unidos con «·»; foco visible;
+   `prefers-reduced-motion`; la revisión de accesibilidad (carbón, lámina blanca y alto contraste) sin fallos graves.
+   Menú: Hoy, Platos, Biblioteca y Laboratorio primero (por este orden de prioridad del dueño).
 7. **No hacer crecer la app sin que el dueño lo pida.** Mejoras, arreglos y contenido de la Biblioteca sí.
 8. **Trabajo compartido con Claude:** `git pull` antes de empezar, commits pequeños, no reescribir historia, no deshacer
    cambios ajenos. Si tocáis lo mismo, junta las dos intenciones y vuelve a pasar todas las pruebas.

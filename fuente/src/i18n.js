@@ -14,18 +14,19 @@ export const prefs = {
 };
 
 export const systemDark = () => typeof matchMedia === 'function' && matchMedia('(prefers-color-scheme: dark)').matches;
-export const isDark = () => prefs.theme ? prefs.theme === 'dark' : systemDark();
+// El aspecto de la app es el carbón: la versión clara («lámina blanca») se elige en Ajustes.
+export const isDark = () => prefs.theme !== 'light';
 
 export function applyPrefs() {
  const root = document.documentElement;
  root.lang = prefs.lang;
- if (prefs.theme) root.dataset.theme = prefs.theme; else delete root.dataset.theme;
+ root.dataset.theme = isDark() ? 'dark' : 'light';
  // Tamaño de letra: toda la app crece a la vez (texto, botones y huecos), para leer de lejos o con poca vista.
  if (prefs.size && prefs.size !== 'normal') root.dataset.size = prefs.size; else delete root.dataset.size;
  // Alto contraste: tinta más oscura, líneas marcadas y textos secundarios más legibles (de día y de noche).
  if (prefs.contrast === 'alto') root.dataset.contrast = 'alto'; else delete root.dataset.contrast;
  document.querySelectorAll('meta[name=theme-color]').forEach(meta => {
-  if (prefs.theme) meta.content = prefs.theme === 'dark' ? '#141311' : '#ECE7DE';
+  meta.content = isDark() ? '#111214' : '#f4f4f1';
  });
 }
 // Guarda solo lo que cambia.

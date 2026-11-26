@@ -22,7 +22,7 @@ function groups(favs) {
 
 export function pageFor(e) {
  const m = saberMine(e.id), last = (m?.versions || []).at(-1);
- const out = ['<article class="kbook-entry"><p class="ficha-kicker">' + esc((CATS.find(c => c[0] === (e.cat || 'conceptos')) || [, ''])[en() ? 2 : 1] || '') + '</p><h2>' + esc(e.name) + '</h2>'];
+ const out = ['<article class="kbook-entry"><h2>' + esc(e.name) + '</h2><p class="ficha-kicker is-after">' + esc((CATS.find(c => c[0] === (e.cat || 'conceptos')) || [, ''])[en() ? 2 : 1] || '') + '</p>'];
  if (e.summary) out.push('<p class="kbook-lead">' + txt(e.summary) + '</p>');
  if (e.what) out.push(paras(e.what));
  if (e.base?.items?.length) out.push('<h3>' + esc(t('Receta base', 'Base recipe') + (e.base.for ? t(' para ', ' for ') + e.base.for : '')) + '</h3><table class="kbook-table"><tbody>' + e.base.items.map(([n, q]) => '<tr><th scope="row">' + txt(n) + '</th><td>' + esc(q || '') + '</td></tr>').join('') + '</tbody></table>' + (e.base.steps?.length ? '<ol>' + e.base.steps.map(s => '<li>' + txt(s) + '</li>').join('') + '</ol>' : ''));
@@ -63,7 +63,7 @@ export function printBook(title, list) {
  const who = docById('carrera:perfil') || {}, name = who.name || state.settings?.name || '';
  let host = document.getElementById('printFicha');
  if (!host) { host = document.createElement('div'); host.id = 'printFicha'; document.body.append(host); }
- host.innerHTML = list.length === 1 ? '<div class="book-page">' + pageFor(list[0]) + '</div>' : '<section class="book-cover"><p class="ficha-kicker">I+D</p><h1>' + esc(title) + '</h1>' + (name ? '<p class="book-who">' + esc(name) + (who.place ? ', ' + esc(who.place) : '') + '</p>' : '') + '<p class="ficha-meta">' + esc(list.length + (list.length === 1 ? t(' ficha', ' entry') : t(' fichas', ' entries'))) + '</p></section>' +
+ host.innerHTML = list.length === 1 ? '<div class="book-page">' + pageFor(list[0]) + '</div>' : '<section class="book-cover"><h1>' + esc(title) + '</h1><p class="ficha-kicker is-after">I+D</p>' + (name ? '<p class="book-who">' + esc(name) + (who.place ? ', ' + esc(who.place) : '') + '</p>' : '') + '<p class="ficha-meta">' + esc(list.length + (list.length === 1 ? t(' ficha', ' entry') : t(' fichas', ' entries'))) + '</p></section>' +
   '<section class="book-index"><h2>' + esc(t('Índice', 'Contents')) + '</h2><ol>' + list.map(e => '<li>' + esc(e.name) + '</li>').join('') + '</ol></section>' +
   list.map(e => '<div class="book-page">' + pageFor(e) + '</div>').join('');
  document.documentElement.classList.add('printing');

@@ -17,7 +17,7 @@ css = css.replace(/url\(["']?\/fonts\/([^"')]+)["']?\)/g, (_, f) => 'url(data:fo
 const js = readFileSync(tmp + 'app.js', 'utf8').replace(/<\/script/gi, '<\\/script');
 const icon = readFileSync(new URL('./origen/public/lab-192.png', import.meta.url)).toString('base64');
 const html = `<!doctype html>
-<html lang="es">
+<html lang="es" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -41,13 +41,13 @@ copyFileSync(new URL('./radar.js', import.meta.url), out + 'ID Cocina/radar.js')
 copyFileSync(new URL('./LEEME.txt', import.meta.url), out + 'ID Cocina/LEEME.txt');
 // Versión para el móvil: la misma app servida en una dirección web, instalable («Añadir a pantalla de inicio») y que funciona sin conexión.
 const web = out + 'web/'; rmSync(web, {recursive: true, force: true}); mkdirSync(web, {recursive: true});
-const head = '<meta name="theme-color" content="#ECE7DE">\n<link rel="manifest" href="manifest.webmanifest">\n<link rel="apple-touch-icon" href="icon-180.png">\n<meta name="apple-mobile-web-app-capable" content="yes">\n<meta name="apple-mobile-web-app-title" content="I+D">\n<meta name="robots" content="noindex">\n';
+const head = '<meta name="theme-color" content="#111214">\n<link rel="manifest" href="manifest.webmanifest">\n<link rel="apple-touch-icon" href="icon-180.png">\n<meta name="apple-mobile-web-app-capable" content="yes">\n<meta name="apple-mobile-web-app-title" content="I+D">\n<meta name="robots" content="noindex">\n';
 const sw = "<script>if('serviceWorker' in navigator&&location.protocol==='https:')navigator.serviceWorker.register('sw.js')</script>\n";
 writeFileSync(web + 'index.html', html.replace('<link rel="icon"', head + '<link rel="icon"').replace('</body>', sw + '</body>'));
 for (const [from, to] of [['lab-192.png', 'icon-192.png'], ['lab-512.png', 'icon-512.png'], ['lab-maskable-512.png', 'icon-maskable-512.png'], ['lab-touch-180.png', 'icon-180.png']]) copyFileSync(new URL('./origen/public/' + from, import.meta.url), web + to);
 copyFileSync(out + 'ID Cocina/radar.js', web + 'radar.js');
 copyFileSync(new URL('./ficha.html', import.meta.url), web + 'ficha.html');
-writeFileSync(web + 'manifest.webmanifest', JSON.stringify({name: 'I+D · Cuaderno de cocina', short_name: 'I+D', start_url: './', scope: './', display: 'standalone', background_color: '#ECE7DE', theme_color: '#ECE7DE', lang: 'es', share_target: {action: './', method: 'GET', params: {title: 'title', text: 'text', url: 'url'}}, shortcuts: [{name: 'Importar receta', url: './#/crear/importar'}, {name: 'Crear un plato', url: './#/crear'}, {name: 'Radar', url: './#/radar'}], icons: [{src: 'icon-192.png', sizes: '192x192', type: 'image/png'}, {src: 'icon-512.png', sizes: '512x512', type: 'image/png'}, {src: 'icon-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable'}]}, null, 1));
+writeFileSync(web + 'manifest.webmanifest', JSON.stringify({name: 'I+D · Cuaderno de cocina', short_name: 'I+D', start_url: './', scope: './', display: 'standalone', background_color: '#111214', theme_color: '#111214', lang: 'es', share_target: {action: './', method: 'GET', params: {title: 'title', text: 'text', url: 'url'}}, shortcuts: [{name: 'Importar receta', url: './#/crear/importar'}, {name: 'Crear un plato', url: './#/crear'}, {name: 'Radar', url: './#/radar'}], icons: [{src: 'icon-192.png', sizes: '192x192', type: 'image/png'}, {src: 'icon-512.png', sizes: '512x512', type: 'image/png'}, {src: 'icon-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable'}]}, null, 1));
 // La app y el radar se piden primero a la red (para tener siempre lo último) y, sin conexión, salen de la copia guardada.
 writeFileSync(web + 'sw.js', `const C = 'id-cocina-${Date.now().toString(36)}', FILES = ['./', 'index.html', 'radar.js', 'manifest.webmanifest', 'icon-192.png', 'icon-180.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(C).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });

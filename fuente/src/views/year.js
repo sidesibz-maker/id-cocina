@@ -47,7 +47,7 @@ export function yearSheet() {
  $('[data-yr-print]', s.el).onclick = () => {
   let host = document.getElementById('printFicha');
   if (!host) { host = document.createElement('div'); host.id = 'printFicha'; document.body.append(host); }
-  host.innerHTML = '<article class="kbook-entry"><p class="ficha-kicker">I+D</p><h2>' + esc(t('Mi año en cocina, ', 'My year in the kitchen, ') + $('#yrY', s.el).value) + '</h2>' + $('#yrBody', s.el).innerHTML + '</article>';
+  host.innerHTML = '<article class="kbook-entry"><h2>' + esc(t('Mi año en cocina, ', 'My year in the kitchen, ') + $('#yrY', s.el).value) + '</h2><p class="ficha-kicker is-after">I+D</p>' + $('#yrBody', s.el).innerHTML + '</article>';
   document.documentElement.classList.add('printing');
   const done = () => { document.documentElement.classList.remove('printing'); host.innerHTML = ''; removeEventListener('afterprint', done); };
   addEventListener('afterprint', done); setTimeout(() => print(), 60);

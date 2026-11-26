@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-26T00:00:00Z",
+  "title": "Design System: I+D · Cuaderno de cocina",
+  "extensions": {
+    "colorMeta": {
+      "fire-red-carbon": { "role": "primary", "displayName": "Rojo fuego (carbón)", "canonical": "#ef5a3f", "tonalRamp": ["#3a1d17", "#5e2519", "#8a2f1d", "#b83c24", "#ef5a3f", "#ff8f73", "#ffb3a1", "#fbe4dd"] },
+      "fire-red-sheet": { "role": "primary", "displayName": "Rojo fuego (lámina blanca)", "canonical": "#c9361f", "tonalRamp": ["#3a1d17", "#5e2519", "#8a2212", "#a42c18", "#c9361f", "#e0654c", "#f2a594", "#fbe4dd"] },
+      "mark-teal-carbon": { "role": "secondary", "displayName": "Verde marca (posesión y selección)", "canonical": "#35c2ac", "tonalRamp": ["#0d211d", "#16352f", "#0f5c51", "#0f7f6e", "#16a08c", "#35c2ac", "#8fdccf", "#d6efe9"] },
+      "therm-cold-carbon": { "role": "tertiary", "displayName": "Escala térmica: frío", "canonical": "#4b8cf0" },
+      "therm-cool-carbon": { "role": "tertiary", "displayName": "Escala térmica: templado", "canonical": "#35c2ac" },
+      "therm-warm-carbon": { "role": "tertiary", "displayName": "Escala térmica: caliente", "canonical": "#f2b32e" },
+      "therm-hot-carbon": { "role": "tertiary", "displayName": "Escala térmica: fuego", "canonical": "#ef5a3f" },
+      "role-principal": { "role": "tertiary", "displayName": "Papel: protagonista (terracota)", "canonical": "#c4683f" },
+      "role-salsa": { "role": "tertiary", "displayName": "Papel: salsa o jugo (tostado)", "canonical": "#7a4a2e" },
+      "role-guarnicion": { "role": "tertiary", "displayName": "Papel: guarnición (salvia)", "canonical": "#9aa77a" },
+      "role-cremoso": { "role": "tertiary", "displayName": "Papel: cremoso (crema)", "canonical": "#e3d6b8" },
+      "role-fresco": { "role": "tertiary", "displayName": "Papel: fresco o ácido (hoja)", "canonical": "#7fb35a" },
+      "role-crujiente": { "role": "tertiary", "displayName": "Papel: crujiente (dorado)", "canonical": "#d6b25e" },
+      "role-toque": { "role": "tertiary", "displayName": "Papel: toque final (remolacha)", "canonical": "#a8436a" },
+      "carbon-ground": { "role": "neutral", "displayName": "Carbón", "canonical": "#111214", "tonalRamp": ["#0b0c0d", "#111214", "#16181a", "#191b1e", "#22252a", "#2c2f34", "#4a4f56", "#959aa1"] },
+      "chalk-ink": { "role": "neutral", "displayName": "Tinta tiza", "canonical": "#ecebe6", "tonalRamp": ["#4a4f56", "#66737a", "#959aa1", "#a3a8ae", "#c3c5c8", "#d8d9d4", "#ecebe6", "#fafaf8"] },
+      "sheet-ground": { "role": "neutral", "displayName": "Lámina blanca", "canonical": "#f4f4f1", "tonalRamp": ["#5b6068", "#a9ada9", "#d8d9d4", "#e2e3df", "#e6e6e1", "#ebebe6", "#f4f4f1", "#ffffff"] },
+      "graphite-ink": { "role": "neutral", "displayName": "Tinta grafito", "canonical": "#141516", "tonalRamp": ["#000000", "#141516", "#2b2e32", "#33363b", "#5b6068", "#8c979b", "#a9ada9", "#d8d9d4"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Título de pantalla", "purpose": "Uno por pantalla; Barlow Condensed 600." },
+      "headline": { "displayName": "Título de sección", "purpose": "En marcha, Para hoy, Lo último del radar." },
+      "title": { "displayName": "Título menor", "purpose": "Primer nivel del menú lateral y cabeceras desplegables." },
+      "figure": { "displayName": "Cifra", "purpose": "Progreso y recuentos a la derecha de listas con regla; tabular." },
+      "body": { "displayName": "Texto", "purpose": "Lectura y campos, Barlow 16px." },
+      "label": { "displayName": "Rótulo de dato", "purpose": "Fechas, estados, gramos y metadatos; sin mayúsculas espaciadas." },
+      "button": { "displayName": "Botón", "purpose": "Barlow 600 a 15.5px." }
+    },
+    "shadows": [],
+    "motion": [
+      { "name": "dur-micro", "value": "120ms", "purpose": "Cambios de color y borde de botones." },
+      { "name": "dur-short", "value": "220ms", "purpose": "Entrada de hojas." },
+      { "name": "ease-out", "value": "cubic-bezier(.16,1,.3,1)", "purpose": "Curva de salida estándar." },
+      { "name": "reduced-motion", "value": "@media (prefers-reduced-motion: reduce)", "purpose": "Anula animaciones y transiciones." }
+    ],
+    "breakpoints": [
+      { "name": "phone", "value": "640px" },
+      { "name": "sheet-centered", "value": "720px" },
+      { "name": "rail", "value": "960px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Botón principal",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "La única acción en rojo fuego relleno de la pantalla.",
+      "html": "<button class=\"ds-btn-primary\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\"><path d=\"M12 5v14M5 12h14\"/></svg>Crear un plato</button>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;gap:8px;min-height:46px;padding:0 16px;border:1px solid var(--ember,#ef5a3f);border-radius:0;background:var(--ember,#ef5a3f);color:var(--on-accent,#111214);font:600 15.5px/1 'Barlow',system-ui,sans-serif;letter-spacing:.005em;cursor:pointer;transition:filter 120ms}.ds-btn-primary:hover{filter:brightness(1.08)}.ds-btn-primary:active{filter:brightness(.92)}.ds-btn-primary:focus-visible{outline:2px solid var(--ember,#ef5a3f);outline-offset:2px}"
+    },
+    {
+      "name": "Botón en contorno",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Acciones secundarias; sustituye al rojo cuando ya hay una acción principal.",
+      "html": "<button class=\"ds-btn-ghost\">Imprimir ficha</button>",
+      "css": ".ds-btn-ghost{display:inline-flex;align-items:center;gap:8px;min-height:46px;padding:0 16px;border:1px solid var(--line2,#4a4f56);border-radius:0;background:transparent;color:var(--ink,#ecebe6);font:600 15.5px/1 'Barlow',system-ui,sans-serif;cursor:pointer;transition:border-color 120ms}.ds-btn-ghost:hover{border-color:var(--ink,#ecebe6)}.ds-btn-ghost:focus-visible{outline:2px solid var(--ember,#ef5a3f);outline-offset:2px}"
+    },
+    {
+      "name": "Enlace de acción",
+      "kind": "button",
+      "refersTo": "linkbtn",
+      "description": "Acción de texto subrayada en rojo fuego.",
+      "html": "<a class=\"ds-link\" href=\"#\">Leer la ficha</a>",
+      "css": ".ds-link{display:inline-flex;align-items:center;min-height:44px;color:var(--ink,#ecebe6);font:600 15px 'Barlow',system-ui,sans-serif;text-decoration:underline;text-decoration-color:var(--ember,#ef5a3f);text-decoration-thickness:1px;text-underline-offset:4px}.ds-link:hover{color:var(--ember-ink,#ff8f73)}.ds-link:focus-visible{outline:2px solid var(--ember,#ef5a3f);outline-offset:2px}"
+    },
+    {
+      "name": "Campo de texto",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Campo recto a 16px con foco en rojo fuego.",
+      "html": "<input class=\"ds-input\" placeholder=\"¿Qué quieres saber? Bechamel, fumet…\">",
+      "css": ".ds-input{width:100%;min-height:46px;padding:12px;border:1px solid var(--line2,#4a4f56);border-radius:0;background:var(--paper-2,#16181a);color:var(--ink,#ecebe6);font:400 16px 'Barlow',system-ui,sans-serif;caret-color:var(--ember,#ef5a3f)}.ds-input:focus{outline:none;border-color:var(--ember,#ef5a3f);box-shadow:inset 0 0 0 1px var(--ember,#ef5a3f)}"
+    },
+    {
+      "name": "Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Producto o filtro; verde marca cuando es de tus básicos.",
+      "html": "<span class=\"ds-chip\">Gerret <small>de aquí</small></span><span class=\"ds-chip ds-chip-have\">Alcachofa <small>de tus básicos</small></span>",
+      "css": ".ds-chip{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 12px;margin:0 8px 8px 0;border:1px solid var(--line2,#4a4f56);border-radius:0;background:transparent;color:var(--ink,#ecebe6);font:400 14.5px/1.2 'Barlow',system-ui,sans-serif}.ds-chip small{font:600 12px 'Barlow Condensed',sans-serif;color:var(--mut,#959aa1)}.ds-chip:hover{border-color:var(--ink,#ecebe6);background:var(--soft,#22252a)}.ds-chip-have{border-color:var(--mark,#35c2ac);background:var(--mark-soft,#16352f)}"
+    },
+    {
+      "name": "Navegación lateral",
+      "kind": "nav",
+      "refersTo": "rail-nav-main",
+      "description": "Menú lateral de PC en niveles, siempre en carbón.",
+      "html": "<nav class=\"ds-rail\"><a class=\"ds-rail-item\" href=\"#\">Hoy</a><a class=\"ds-rail-item ds-main is-active\" href=\"#\">Platos</a><a class=\"ds-rail-item ds-main\" href=\"#\">Biblioteca</a><a class=\"ds-rail-item ds-main\" href=\"#\">Laboratorio</a><span class=\"ds-rail-sep\"></span><a class=\"ds-rail-item\" href=\"#\">Entrenar</a><a class=\"ds-rail-item\" href=\"#\">Diario</a><span class=\"ds-rail-sep\"></span><a class=\"ds-rail-item ds-small\" href=\"#\">Sabores</a><a class=\"ds-rail-item ds-small\" href=\"#\">Radar</a></nav>",
+      "css": ".ds-rail{display:flex;flex-direction:column;width:240px;padding:16px;background:#141516}.ds-rail-item{position:relative;display:flex;align-items:center;height:42px;padding:0 12px;color:#a3a8ae;font:500 15px 'Barlow',system-ui,sans-serif;text-decoration:none}.ds-main{height:48px;color:#ecebe6;font:600 22px 'Barlow Condensed',sans-serif}.ds-small{height:36px;font-size:14px}.ds-rail-item:hover{background:#1e2023;color:#ecebe6}.ds-rail-item.is-active{background:#2a2d31;color:#ecebe6}.ds-rail-item.is-active::after{content:'';position:absolute;right:12px;top:50%;width:6px;height:6px;margin-top:-3px;background:#ef5a3f}.ds-rail-item:focus-visible{outline:2px solid #ef5a3f;outline-offset:2px}.ds-rail-sep{height:1px;background:#2c2f34;margin:10px 12px}"
+    },
+    {
+      "name": "Plato en corte",
+      "kind": "custom",
+      "refersTo": "xsec",
+      "description": "Firma: componentes en capas por papel, grosor según peso, gramos a la derecha.",
+      "html": "<figure class=\"ds-xsec\" role=\"img\" aria-label=\"Corte del plato\"><div class=\"ds-xrow\"><span>Aceite de hinojo</span><i style=\"--c:#a8436a;--h:9px\"></i><b>5 g</b></div><div class=\"ds-xrow\"><span>Migas de limón</span><i style=\"--c:#d6b25e;--h:14px\"></i><b>20 g</b></div><div class=\"ds-xrow\"><span>Calamar</span><i style=\"--c:#c4683f;--h:48px\"></i><b>120 g</b></div><div class=\"ds-xrow\"><span>Ajoblanco</span><i style=\"--c:#7a4a2e;--h:35px\"></i><b>80 g</b></div><div class=\"ds-xrow\"><span>Hinojo a la brasa</span><i style=\"--c:#9aa77a;--h:21px\"></i><b>40 g</b></div></figure>",
+      "css": ".ds-xsec{display:grid;gap:2px;margin:12px 0}.ds-xrow{display:grid;grid-template-columns:minmax(72px,104px) 1fr auto;align-items:center;gap:12px;font:400 13.5px 'Barlow',system-ui,sans-serif}.ds-xrow span{color:var(--ink2,#c3c5c8);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ds-xrow i{display:block;height:var(--h);background:var(--c);border:1px solid color-mix(in srgb,var(--c) 70%,#000)}.ds-xrow b{min-width:48px;text-align:right;font-weight:600;font-variant-numeric:tabular-nums;color:var(--ink,#ecebe6)}"
+    },
+    {
+      "name": "Escala térmica",
+      "kind": "custom",
+      "refersTo": "therm",
+      "description": "Firma: temperaturas situadas en una escala de −20 a 260 °C.",
+      "html": "<figure class=\"ds-therm\" role=\"img\" aria-label=\"Escala de temperaturas: tomate seco 70-80 °C\"><div class=\"ds-therm-bar\"></div><div class=\"ds-therm-mark\" style=\"left:32%\"><b>70-80 °C</b>Tomate seco</div><span class=\"ds-therm-tick\" style=\"left:7.1%\">0</span><span class=\"ds-therm-tick\" style=\"left:42.9%\">100</span><span class=\"ds-therm-tick\" style=\"left:78.6%\">200 °C</span></figure>",
+      "css": ".ds-therm{position:relative;height:80px;margin:8px 0}.ds-therm-bar{position:absolute;left:0;right:0;top:40px;height:8px;background:linear-gradient(90deg,var(--t-cold,#4b8cf0),var(--t-cool,#35c2ac) 28%,var(--t-warm,#f2b32e) 58%,var(--t-hot,#ef5a3f))}.ds-therm-mark{position:absolute;top:0;height:40px;padding-left:6px;border-left:1px solid var(--ink,#ecebe6);font:400 12.5px/1.25 'Barlow',system-ui,sans-serif;color:var(--ink2,#c3c5c8);white-space:nowrap}.ds-therm-mark b{display:block;font-weight:600;color:var(--ink,#ecebe6);font-variant-numeric:tabular-nums}.ds-therm-tick{position:absolute;top:54px;transform:translateX(-50%);font:400 11.5px 'Barlow',system-ui,sans-serif;color:var(--mut,#959aa1);font-variant-numeric:tabular-nums}"
+    },
+    {
+      "name": "Lista con reglas (Para hoy)",
+      "kind": "custom",
+      "refersTo": "today-list",
+      "description": "Lo que hay que hacer: filas con regla y cifra a la derecha.",
+      "html": "<div class=\"ds-rlist\"><a class=\"ds-rrow is-due\" href=\"#\"><strong>¿Cómo ha ido hoy?</strong><span>Dos minutos: qué salió bien y qué falló</span></a><a class=\"ds-rrow\" href=\"#\"><strong>Dominar la masa madre</strong><span>Siguiente paso: un pan a la semana</span><em>1/3</em></a></div>",
+      "css": ".ds-rlist{border-top:1px solid var(--line2,#4a4f56)}.ds-rrow{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 14px;padding:14px 4px;border-bottom:1px solid var(--line,#2c2f34);color:var(--ink,#ecebe6);text-decoration:none;font:400 14px 'Barlow',system-ui,sans-serif}.ds-rrow strong{grid-column:1;font-size:16px;line-height:1.3}.ds-rrow span{grid-column:1;color:var(--mut,#959aa1)}.ds-rrow em{grid-column:2;grid-row:1/span 2;align-self:center;font:600 24px/1 'Barlow Condensed',sans-serif;font-style:normal;font-variant-numeric:tabular-nums;text-align:right}.ds-rrow:hover{background:var(--soft,#22252a)}.ds-rrow.is-due{background:var(--ember-soft,#3a1d17)}.ds-rrow:focus-visible{outline:2px solid var(--ember,#ef5a3f);outline-offset:2px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Lámina de laboratorio",
+    "overview": "La cocina del dueño vista como las láminas de la cocina científica moderna. Cada plato se dibuja en corte, por capas y con sus gramos; cada temperatura cae en una escala térmica medida; cada cifra (gramos, grados, minutos, progreso) se lee como dato de laboratorio, en condensada y con cifras tabulares. El suelo es carbón, la tinta es tiza, las divisiones son reglas de un píxel y las esquinas son rectas. No hay sombras de adorno: la profundidad la dan el tono del panel y la regla.\n\nLa densidad es de cuaderno de trabajo, no de revista: listas con reglas, cifras alineadas a la derecha, títulos cortos en Barlow Condensed seminegra. El color no decora, trabaja: el rojo fuego marca la acción principal y lo que ha cambiado; la escala térmica (frío, templado, caliente, fuego) solo habla de temperatura; los tintes de papel del corte solo hablan de qué papel tiene cada componente. Hay una variante clara, «lámina blanca», para cocinas con mucha luz, que conserva el mismo sistema y mantiene el menú lateral en carbón. El aspecto sigue el ajuste del aparato; ambos se publican, con un modo de alto contraste encima de cada uno.\n\nRechazos confirmados: el cuaderno de recetas de papel crema con serifa y la app de recetas a base de tarjetas con foto.",
+    "keyCharacteristics": [
+      "Carbón por defecto (#111214), lámina blanca (#f4f4f1) como alternativa, alto contraste sobre ambas.",
+      "Líneas de un píxel, esquinas a 0, ninguna sombra.",
+      "Barlow para leer, Barlow Condensed para títulos, cifras y rótulos de dato; cifras tabulares siempre.",
+      "Un solo rojo fuego por pantalla: la acción principal o lo que cambia.",
+      "Dos firmas: el plato en corte y la escala térmica.",
+      "Todo lo que se toca mide 44 px o más; foco visible en rojo fuego."
+    ],
+    "rules": [
+      { "name": "The One Fire Rule", "body": "El rojo fuego relleno aparece una vez por pantalla: la acción principal o lo que ha cambiado. Si hay una segunda acción importante, va en contorno de tinta. En la ficha del plato, los demás botones «primary» se vuelven contorno para que solo «Cocinar paso a paso» quede en rojo.", "section": "colors" },
+      { "name": "The Thermal-Only Rule", "body": "Los colores de la escala térmica solo dicen temperatura. Ni estados, ni progreso, ni papeles del plato, ni decoración.", "section": "colors" },
+      { "name": "The Food-Tint Rule", "body": "Los tintes de papel solo aparecen en las capas del corte y nunca toman un tono de la escala térmica.", "section": "colors" },
+      { "name": "The Tabular Figures Rule", "body": "Toda cifra que se compara (gramos, grados, minutos, progreso, contadores) va con `font-variant-numeric: tabular-nums` y alineada a la derecha cuando forma columna.", "section": "typography" },
+      { "name": "The Plain Label Rule", "body": "Los rótulos van en minúscula natural y sin espaciado de letra: nada de mayúsculas espaciadas.", "section": "typography" },
+      { "name": "The Ruled List Rule", "body": "Lo que hay que hacer se presenta como lista con reglas: regla fuerte arriba, regla fina bajo cada fila, sin fondo de tarjeta, la cifra a la derecha. Lo pendiente se tiñe de fuego suave, no se encierra en una caja.", "section": "layout" },
+      { "name": "The No-Shadow Rule", "body": "Ninguna sombra, ni de adorno ni desplazada. Si algo tiene que destacar, cambia de tono o de regla.", "section": "elevation" },
+      { "name": "The One-Pixel Rule", "body": "Toda división es una regla de un píxel. No hay barras laterales gruesas de color ni bordes dobles.", "section": "shapes" },
+      { "name": "The Section Rule", "body": "Un plato sin foto se representa por su corte, nunca por una ilustración o un icono. El corte usa solo tintes de papel y gramos reales.", "section": "components" },
+      { "name": "The Measured Scale Rule", "body": "Una temperatura se muestra en su posición sobre la escala, no como insignia de color. La escala no se usa para nada que no sean grados.", "section": "components" }
+    ],
+    "dos": [
+      "**Do** aplicar todo color y tipografía por los tokens de `:root` en `lab.css`, y comprobar cada pantalla en carbón, lámina blanca y alto contraste.",
+      "**Do** dejar un único relleno rojo fuego por pantalla, para la acción principal o lo que ha cambiado; las otras acciones en contorno o como enlace subrayado.",
+      "**Do** usar la escala térmica solo para temperaturas y los tintes de papel solo en el corte.",
+      "**Do** usar reglas de un píxel, esquinas rectas (0) y tono en lugar de sombra.",
+      "**Do** escribir títulos en Barlow Condensed 600 y cifras con `tabular-nums`, alineadas a la derecha en columnas.",
+      "**Do** presentar lo que hay que hacer como lista con reglas y la cifra a la derecha.",
+      "**Do** dar 44 px o más a todo lo que se toca, foco visible en rojo fuego de 2 px (3 px en alto contraste) y respetar `prefers-reduced-motion`.",
+      "**Do** mantener la revisión de accesibilidad (axe) sin fallos en carbón, lámina blanca y alto contraste.",
+      "**Do** mantener el orden de menú Hoy, Platos, Biblioteca, Laboratorio, y en el móvil la barra Hoy, Platos, Crear, Biblioteca, Laboratorio con el resto en «Más»."
+    ],
+    "donts": [
+      "**Don't** poner rótulos o antetítulos encima de los títulos; la categoría o la fecha van debajo del título.",
+      "**Don't** usar mayúsculas espaciadas ni unir datos con «·»; los datos se separan con comas o en columnas.",
+      "**Don't** usar sombras de ningún tipo, ni barras laterales gruesas de color, ni esquinas redondeadas.",
+      "**Don't** usar colores de la escala térmica para estados, progreso, selección o decoración.",
+      "**Don't** poner un segundo relleno rojo fuego en la misma pantalla.",
+      "**Don't** volver al papel crema con serifa ni a las tarjetas de receta con foto.",
+      "**Don't** usar fuentes del sistema para títulos ni sintetizar negritas."
+    ]
+  }
+}

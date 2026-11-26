@@ -7,7 +7,7 @@ import {STATUSES, statusLabel, dishCard, hydrateImages, emptyState, skeleton} fr
 import {tabs} from './menus.js';
 
 let status = 'todos', query = '', tagf = '';
-export const title = params => (params[0] === 'papelera' ? t('Papelera', 'Bin') : t('Libreta', 'Notebook'));
+export const title = params => (params[0] === 'papelera' ? t('Papelera', 'Bin') : t('Platos', 'Dishes'));
 
 const matches = d => { if (tagf && !(d.tags || []).includes(tagf)) return false; const q = norm(query); if (!q) return true; const text = norm([d.name, d.concept, ...(d.tags || []), ...(d.components || []).flatMap(c => [c?.name, ...(c?.items || []).map(i => i?.n)])].join(' ')); return q.split(' ').every(w => text.includes(w)); };
 function grid() {
@@ -19,7 +19,7 @@ function grid() {
 function list() {
  const live = state.dishes.filter(d => !d.deleted_at), trashed = state.dishes.filter(d => d.deleted_at).length;
  const count = id => (id === 'todos' ? live.length : live.filter(d => d.status === id).length);
- return '<header class="page-head page-head-row"><div><h1>' + esc(t('Libreta', 'Notebook')) + '</h1><p>' + esc(t('Tus platos de I+D, de la idea a la carta.', 'Your R&D dishes, from idea to menu.')) + '</p></div>' + '<div class="row-actions">' + (liveDishes().length ? '<a class="btn ghost" href="#/catalogo">' + icon('book') + esc(t('Catálogo general', 'General catalogue')) + '</a>' : '') + (liveDishes().length ? '<button type="button" class="btn ghost" data-act="book">' + icon('down') + esc(t('Mi recetario en PDF', 'My recipe book as PDF')) + '</button>' : '') + (state.canEdit ? '<a class="btn primary" href="#/crear">' + icon('plus') + esc(t('Crear', 'Create')) + '</a>' : '') + '</div></header>' + tabs('platos') +
+ return '<header class="page-head page-head-row"><div><h1>' + esc(t('Platos', 'Dishes')) + '</h1><p>' + esc(t('Tu libreta de I+D: cada plato, de la idea a la carta.', 'Your R&D notebook: every dish, from idea to menu.')) + '</p></div>' + '<div class="row-actions">' + (liveDishes().length ? '<a class="btn ghost" href="#/catalogo">' + icon('book') + esc(t('Catálogo general', 'General catalogue')) + '</a>' : '') + (liveDishes().length ? '<button type="button" class="btn ghost" data-act="book">' + icon('down') + esc(t('Mi recetario en PDF', 'My recipe book as PDF')) + '</button>' : '') + (state.canEdit ? '<a class="btn primary" href="#/crear">' + icon('plus') + esc(t('Crear', 'Create')) + '</a>' : '') + '</div></header>' + tabs('platos') +
   '<div class="filters" role="group" aria-label="' + esc(t('Filtrar por estado', 'Filter by status')) + '">' + [['todos', t('Todos', 'All')], ...STATUSES.map(s => [s[0], statusLabel(s[0])])].filter(([id]) => id === 'todos' || count(id) || id === status).map(([id, label]) => '<button type="button" class="pill' + (status === id ? ' active' : '') + '" data-status="' + id + '" aria-pressed="' + (status === id) + '">' + esc(label) + '<span class="count">' + count(id) + '</span></button>').join('') + '</div>' +
   (() => { const tags = [...new Set(live.flatMap(d => d.tags || []))].sort((a, b) => a.localeCompare(b, 'es')); return tags.length ? '<div class="filters tag-filters" role="group" aria-label="' + esc(t('Filtrar por etiqueta', 'Filter by tag')) + '">' + tags.map(x => '<button type="button" class="pill pill-tag' + (tagf === x ? ' active' : '') + '" data-tagf="' + esc(x) + '" aria-pressed="' + (tagf === x) + '">#' + esc(x) + '</button>').join('') + '</div>' : ''; })() +
   (live.length > 5 ? '<label class="sr" for="bookSearch">' + esc(t('Buscar en la libreta', 'Search the notebook')) + '</label><div class="searchbox">' + icon('search') + '<input id="bookSearch" type="search" value="' + esc(query) + '" placeholder="' + esc(t('Buscar por nombre o ingrediente', 'Search by name or ingredient')) + '" autocomplete="off" enterkeyhint="search"></div>' : '') +
@@ -28,7 +28,7 @@ function list() {
 }
 function bin() {
  const trashed = state.dishes.filter(d => d.deleted_at);
- return '<a class="back" href="#/libreta">' + icon('left') + esc(t('Libreta', 'Notebook')) + '</a><header class="page-head"><h1>' + esc(t('Papelera', 'Bin')) + '</h1><p>' + esc(t('Aquí no se borra nada: recupera lo que quieras.', 'Nothing is deleted here: restore whatever you want.')) + '</p></header>' +
+ return '<a class="back" href="#/libreta">' + icon('left') + esc(t('Platos', 'Dishes')) + '</a><header class="page-head"><h1>' + esc(t('Papelera', 'Bin')) + '</h1><p>' + esc(t('Aquí no se borra nada: recupera lo que quieras.', 'Nothing is deleted here: restore whatever you want.')) + '</p></header>' +
   (trashed.length ? '<ul class="bin">' + trashed.map(d => '<li><div><strong>' + esc(d.name) + '</strong><small>' + esc(t('En la papelera desde ', 'In the bin since ') + relDay(d.deleted_at).toLowerCase()) + '</small></div>' + (state.canEdit ? '<button type="button" class="btn ghost" data-restore="' + esc(d.id) + '">' + icon('undo') + esc(t('Recuperar', 'Restore')) + '</button>' : '') + '</li>').join('') + '</ul>' : emptyState('trash', t('La papelera está vacía', 'The bin is empty'), t('Lo que mandes a la papelera aparecerá aquí.', 'Whatever you move to the bin will show up here.')));
 }
 export const render = params => (params[0] === 'papelera' ? bin() : list());
@@ -69,7 +69,7 @@ function bookSheet() {
   for (const d of list) pages.push(await fichaFor(d));
   let host = document.getElementById('printFicha');
   if (!host) { host = document.createElement('div'); host.id = 'printFicha'; document.body.append(host); }
-  host.innerHTML = '<section class="book-cover"><p class="ficha-kicker">I+D</p><h1>' + esc(title) + '</h1>' + (name ? '<p class="book-who">' + esc(name) + (who.place ? ', ' + esc(who.place) : '') + '</p>' : '') + '<p class="ficha-meta">' + esc(list.length + (list.length === 1 ? t(' plato', ' dish') : t(' platos', ' dishes'))) + '</p></section>' +
+  host.innerHTML = '<section class="book-cover"><h1>' + esc(title) + '</h1><p class="ficha-kicker is-after">I+D</p>' + (name ? '<p class="book-who">' + esc(name) + (who.place ? ', ' + esc(who.place) : '') + '</p>' : '') + '<p class="ficha-meta">' + esc(list.length + (list.length === 1 ? t(' plato', ' dish') : t(' platos', ' dishes'))) + '</p></section>' +
    '<section class="book-index"><h2>' + esc(t('Índice', 'Contents')) + '</h2><ol>' + list.map(d => '<li>' + esc(d.name) + '</li>').join('') + '</ol></section>' +
    pages.map(p => '<div class="book-page">' + p + '</div>').join('');
   const imgs = [...host.querySelectorAll('img')];

@@ -58,7 +58,7 @@ export function timesIn(text) {
 let state = {key: '', step: 0, people: 0, lock: null, done: new Set()};
 export function render(params) {
  const r = load(params);
- if (!r) return '<a class="back" href="#/libreta">' + icon('left') + esc(t('Libreta', 'Notebook')) + '</a><div class="empty">' + icon('book') + '<h3>' + esc(t('No encuentro esta receta', 'I cannot find this recipe')) + '</h3><p>' + esc(t('Puede que se haya movido o que no tenga ingredientes ni pasos.', 'It may have moved, or it has no ingredients or steps.')) + '</p></div>';
+ if (!r) return '<a class="back" href="#/libreta">' + icon('left') + esc(t('Platos', 'Dishes')) + '</a><div class="empty">' + icon('book') + '<h3>' + esc(t('No encuentro esta receta', 'I cannot find this recipe')) + '</h3><p>' + esc(t('Puede que se haya movido o que no tenga ingredientes ni pasos.', 'It may have moved, or it has no ingredients or steps.')) + '</p></div>';
  const key = params.join('/');
  if (state.key !== key) state = {key, step: 0, people: r.base, lock: state.lock, done: new Set()};
  return '<div class="cook"><header class="cook-head"><a class="back" href="' + esc(r.back) + '">' + icon('left') + esc(t('Salir del modo cocina', 'Leave cook mode')) + '</a><h1>' + esc(r.name) + '</h1>' + (document.fullscreenEnabled ? '<button type="button" class="linkbtn cook-full" data-full aria-pressed="' + !!document.fullscreenElement + '">' + esc(document.fullscreenElement ? t('Salir de pantalla completa', 'Exit full screen') : t('Pantalla completa', 'Full screen')) + '</button>' : '') +

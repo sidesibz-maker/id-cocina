@@ -4,8 +4,8 @@
  "start_url": "./",
  "scope": "./",
  "display": "standalone",
- "background_color": "#ECE7DE",
- "theme_color": "#ECE7DE",
+ "background_color": "#111214",
+ "theme_color": "#111214",
  "lang": "es",
  "share_target": {
   "action": "./",

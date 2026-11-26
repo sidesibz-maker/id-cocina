@@ -167,3 +167,13 @@ LO NUEVO PARA TU OFICIO (NOVIEMBRE 2026)
  - Entrenar: «Cuánto dominas de cada tema».
  - Diario: cómo han ido tus servicios los últimos 30 días, con un gráfico de barras.
  - Modo cocina: «Pantalla completa».
+
+Rediseño «Lámina de laboratorio» (26 nov 2026):
+ - Aspecto nuevo de arriba abajo: fondo carbón, letra condensada para los títulos, líneas finas y cifras alineadas.
+   Si en la cocina hay mucha luz, en Ajustes desactiva «Fondo carbón» y sale la «lámina blanca».
+ - Menú nuevo por tus prioridades: Hoy, Platos, Biblioteca y Laboratorio arriba (en el móvil, abajo, con Crear en
+   el centro). El Radar, Sabores, Temporada, Herramientas, Preguntar y Mi cocina van en el segundo nivel (en el
+   móvil, en el botón de menú de arriba, que lleva un punto rojo cuando hay avisos nuevos del radar).
+ - Cada plato se dibuja en corte: sus componentes en capas, del toque final a la base, con sus gramos.
+ - Las temperaturas de las fichas se ven en una escala de frío a fuego.
+ - Icono nuevo de la app y ficha para el equipo con el mismo estilo.

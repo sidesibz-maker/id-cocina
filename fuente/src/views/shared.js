@@ -1,5 +1,5 @@
 // I+D · piezas que comparten las pantallas: etiquetas, tarjetas de aviso y de plato, imágenes y «llevar a la libreta».
-import {COURSES} from '../flavor-core.js';
+import {COURSES, role as roleOf} from '../flavor-core.js';
 import {ideaToDish} from '../ai-core.js';
 import {t, en, pick, relDay, seasonOf} from '../i18n.js';
 import {metaRow, short, esc, icon, flavorPrint, toast, friendly, safeUrl, hostOf, uid} from '../ui.js';
@@ -40,9 +40,26 @@ export function trendCard(tr, {lead = false} = {}) {
   (tr.saved_at ? '<span class="saved-mark">' + icon('star') + esc(t('Guardado', 'Saved')) + '</span>' : '') + '</span></a>';
 }
 
+// La firma del cuaderno: el plato en corte, sus componentes en capas de arriba (el toque) abajo (la base),
+// cada capa con el color de su papel y un grosor según lo que pesa (gramos o mililitros apuntados; si no hay, su papel).
+const LAYER_ORDER = ['toque', 'crujiente', 'fresco', 'principal', 'salsa', 'cremoso', 'guarnicion'];
+const qtyOf = q => { const m = String(q || '').replace(',', '.').match(/(\d+(?:\.\d+)?)\s*(kg|g|gr|ml|cl|dl|l)\b/i); if (!m) return 0; const n = Number(m[1]), u = m[2].toLowerCase(); return n * ({kg: 1000, l: 1000, dl: 100, cl: 10}[u] || 1); };
+export function dishLayers(d) {
+ const comps = (Array.isArray(d?.components) ? d.components : []).filter(c => c && (c.items || []).some(i => i && i.n));
+ const rows = comps.map(c => { const g = (c.items || []).reduce((a, i) => a + qtyOf(i?.q), 0), r = roleOf(c.role); return {role: r.id, label: c.name || (en() ? r.en : r.es), roleName: en() ? r.en : r.es, grams: g, weight: g || r.weight * 60}; });
+ return rows.sort((a, b) => LAYER_ORDER.indexOf(a.role) - LAYER_ORDER.indexOf(b.role));
+}
+export function xsec(d, {mini = false} = {}) {
+ const rows = dishLayers(d);
+ if (!rows.length) return '';
+ const max = Math.max(...rows.map(r => r.weight));
+ if (mini) return '<span class="xsec-mini" aria-hidden="true">' + rows.map(r => '<i class="role-' + r.role + '" style="--f:' + (0.25 + r.weight / max).toFixed(2) + '"></i>').join('') + '</span>';
+ const sum = rows.map(r => r.label + (r.grams ? ' ' + Math.round(r.grams) + ' g' : '')).join(', ');
+ return '<figure class="xsec" role="img" aria-label="' + esc(t('Corte del plato, de arriba abajo: ', 'The dish in section, top to bottom: ') + sum) + '">' + rows.map(r => '<div class="xsec-row" aria-hidden="true"><span title="' + esc(r.roleName) + '">' + esc(r.label) + '</span><i class="role-' + r.role + '" style="--h:' + Math.round(8 + 40 * r.weight / max) + 'px"></i><b>' + (r.grams ? Math.round(r.grams) + ' g' : '') + '</b></div>').join('') + '</figure>';
+}
 export function dishCard(d) {
  const tests = Array.isArray(d.tests) ? d.tests.length : Number(d.tests) || 0;
- const media = d.cover_path ? '<img class="dish-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" width="1" height="1" data-img="' + esc(d.cover_path) + '" alt="" loading="lazy">' : flavorPrint(d.flavor?.axes, {size: 64, title: t('Huella de sabor de ', 'Flavour print of ') + d.name});
+ const media = d.cover_path ? '<img class="dish-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" width="1" height="1" data-img="' + esc(d.cover_path) + '" alt="" loading="lazy">' : dishLayers(d).length > 1 ? xsec(d, {mini: true}) : !d.cover_path ? '<span class="xsec-mini is-empty" aria-hidden="true"><i></i><i></i><i></i></span>' : flavorPrint(d.flavor?.axes, {size: 64, title: t('Huella de sabor de ', 'Flavour print of ') + d.name});
  return '<a class="dish" href="#/plato/' + esc(d.id) + '"><span class="dish-media' + (d.cover_path ? '' : ' dish-print') + '">' + media + '</span>' +
   '<span class="dish-main"><span class="dish-name">' + esc(d.name) + '</span>' +
   '<span class="dish-meta"><span class="status status-' + esc(d.status) + '">' + esc(statusLabel(d.status)) + '</span><span>' + esc(courseLabel(d.course)) + '</span></span>' +
@@ -84,4 +101,21 @@ export function dishAllergens(d) {
  const confirmed = Array.isArray(d?.allergens), ids = confirmed ? d.allergens : (d?.advice?.allergens || []);
  const list = ids.map(id => ALG.find(a => a[0] === id)).filter(Boolean);
  return {confirmed, ids: list.map(a => a[0]), names: list.map(a => (en() ? a[2] : a[1]))};
+}
+
+// La otra firma: la escala térmica, de frío a fuego (de -20 a 260 °C). Cada marca es un uso con su temperatura.
+const T_MIN = -20, T_MAX = 260;
+const tPos = v => Math.max(0, Math.min(100, (v - T_MIN) / (T_MAX - T_MIN) * 100));
+export function tempMarks(entry, limit = 4) {
+ const out = [], seen = new Set(), re = /(-?\d{1,3})(?:\s*[–-]\s*(-?\d{1,3}))?\s*°\s*C/;
+ const plain = v => String(v || '').replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, '$2').replace(/\[\[([^\]]+)\]\]/g, '$1');
+ for (const r of entry?.ratios || []) { const m = plain(r.ratio).match(re) || plain(r.note).match(re); if (!m) continue; const a = Number(m[1]), b = m[2] != null ? Number(m[2]) : a; const key = a + '-' + b; if (seen.has(key)) continue; seen.add(key); out.push({label: plain(r.use), from: a, to: b, text: m[0].replace(/\s+/g, ' ')}); }
+ return out.filter(x => x.from >= T_MIN && x.to <= T_MAX).sort((a, b) => a.from - b.from).slice(0, limit);
+}
+export function thermScale(marks, {label = ''} = {}) {
+ if (!marks.length) return '';
+ const desc = marks.map(m => m.label + ': ' + m.text).join(', ');
+ return '<figure class="therm" role="img" aria-label="' + esc((label || t('Escala de temperaturas', 'Temperature scale')) + ': ' + desc) + '"><div class="therm-bar" aria-hidden="true"></div>' +
+  marks.map((m, i) => { const p = tPos((m.from + m.to) / 2); return '<div class="therm-mark' + (p > 70 ? ' is-flip' : '') + '" aria-hidden="true" style="left:' + p.toFixed(1) + '%"' + (i % 2 ? ' data-below' : '') + '><b>' + esc(m.text) + '</b>' + esc(m.label) + '</div>'; }).join('') +
+  '<span class="therm-grad" aria-hidden="true">' + Array.from({length: 15}, (_, k) => -20 + k * 20).map(v => '<i style="left:' + tPos(v).toFixed(2) + '%"' + ([0, 100, 200].includes(v) ? ' class="is-major"' : '') + '></i>').join('') + '</span>' + [0, 100, 200].map(v => '<span class="therm-tick" aria-hidden="true" style="left:' + tPos(v).toFixed(2) + '%">' + v + (v === 200 ? ' °C' : '') + '</span>').join('') + '</figure>';
 }
