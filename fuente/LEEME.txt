@@ -134,5 +134,4 @@ LO NUEVO PARA TU OFICIO (NOVIEMBRE 2026)
  - Ajustes → Pantalla → Tamaño de letra (normal, grande o muy grande).
  - Esta app es para crear, aprender y tu carrera. La gestión del restaurante (pedidos, APPCC, equipo, sala) va en tu
    otra app: aquí no se duplica.
- - Pendiente: el diario, la trayectoria y lo demás nuevo todavía no pasan al móvil por la sincronización (falta un cambio
-   en el servidor que tienes que autorizar). Están en este aparato y en la copia de seguridad.
+ - El diario, la trayectoria, las chispas, las rutas y el entrenamiento se sincronizan entre PC y móvil como los platos.

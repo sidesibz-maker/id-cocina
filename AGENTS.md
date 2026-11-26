@@ -24,8 +24,7 @@ App personal de I+D de un jefe de cocina (restaurante mediterráneo de brasa en 
     semana), `finder.js` (buscador Ctrl+K).
   - Documentos: `state.docs` en `store.js` (`saveDoc`, `liveDocs`, `trashDoc`), con id `tipo:…` (diario, carrera:perfil,
     puesto, formacion, objetivo, logro, chispa, repaso:estado; y otros de pantallas ya retiradas que se conservan). Van en la copia y se sincronizan como tipo
-    `doc`. **Pendiente**: el servidor aún no acepta `doc`; la migración probada está en `fuente/migracion-doc.sql` y la tiene
-    que autorizar el dueño. Mientras, `sync.js` los deja en cola (marca `pushedDoc`) sin perder nada.
+    `doc` (migración `fuente/migracion-doc.sql`, aplicada el 26 nov 2026 con permiso del dueño).
   - `radar.js`: avisos del radar que trae la app. `LEEME.txt`: instrucciones para el dueño.
 - La versión del PC es un solo archivo, `ID Cocina.html`, que se abre con doble clic (desde `file://`), con `radar.js` y
   `LEEME.txt` al lado.
