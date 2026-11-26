@@ -61,7 +61,7 @@
    {
     "use": "Pescado nacarado",
     "ratio": "45–50 °C a corazón",
-    "note": "Lascas que se separan pero aún brillantes."
+    "note": "Lascas que se separan pero aún brillantes. Por debajo de 60 °C, pescado congelado antes (-20 °C al menos 24 horas en toda la pieza) o ya tratado, por el anisakis."
    }
   ],
   "variants": [
@@ -232,7 +232,7 @@
    {
     "use": "Pescado blanco o salmón",
     "ratio": "45–52 °C, 15-25 minutos (2-3 cm)",
-    "note": "Nacarado; servir al momento."
+    "note": "Nacarado; servir al momento. Pescado congelado antes (-20 °C al menos 24 horas en toda la pieza) o ya tratado, por el anisakis."
    },
    {
     "use": "Pechuga de ave",
@@ -338,7 +338,7 @@
    {
     "use": "Bacalao o pescado blanco",
     "ratio": "60–65 °C, 10-20 minutos",
-    "note": "Lascas jugosas; la gelatina suelta liga el pil-pil."
+    "note": "Lascas jugosas; la gelatina suelta liga el pil-pil. Si el centro no llega a 60 °C, pescado congelado antes (-20 °C al menos 24 horas en toda la pieza) o ya tratado."
    },
    {
     "use": "Tomate o pimiento",
@@ -397,7 +397,7 @@
    "Tomates y pimientos",
    "Ajos y chalotas"
   ],
-  "keep": "Las carnes confitadas, cubiertas de grasa y en frío, aguantan días; sigue lo que marque tu plan APPCC. Los ajos u hortalizas en aceite son un riesgo de botulismo: siempre en frío, bien etiquetados y para pocos días.",
+  "keep": "Las carnes confitadas, cubiertas de grasa y en frío, aguantan días; sigue lo que marque tu plan APPCC. Los ajos u hortalizas en aceite son un riesgo de botulismo: siempre en frío, bien etiquetados y como mucho 4 días; nunca a temperatura ambiente.",
   "pro": "Se confita en grandes tandas en horas tranquilas, con baño o horno a temperatura fija. En servicio solo se dora. La grasa se cuela y se etiqueta por producto para reutilizarla.",
   "related": [
    "pil-pil",
@@ -763,7 +763,7 @@
    {
     "use": "Ahumado en frío (salmón, mantequilla, aceite)",
     "ratio": "Menos de 30 °C, de 20 minutos a varias horas",
-    "note": "Siempre sobre producto curado y frío."
+    "note": "Siempre sobre producto curado y frío; el pescado, congelado antes (-20 °C al menos 24 horas en toda la pieza) o ya tratado."
    },
    {
     "use": "Ahumado en caliente (pescado, aves)",
@@ -1732,23 +1732,33 @@
   ],
   "ratios": [
    {
-    "use": "Gelatina, gel tierno",
-    "ratio": "1-1,5 % (10-15 g por litro)",
-    "note": "Más alta si se desmolda."
+    "use": "Gelatina, gel muy tierno para cuchara",
+    "ratio": "1–1,2 % (10–12 g por litro)",
+    "note": "Una hoja pesa unos 2 g. Con nata montada o merengue (bavaroise) basta con 8–10 g por litro."
+   },
+   {
+    "use": "Gelatina, gel que se desmolda",
+    "ratio": "1,6–2 % (16–20 g por litro)",
+    "note": "Para flanes fríos, terrinas dulces y gelatinas de fruta."
+   },
+   {
+    "use": "Gelatina, gel firme para cortar",
+    "ratio": "2,4–3 % (24–30 g por litro)",
+    "note": "Para láminas y dados que se manipulan."
    },
    {
     "use": "Agar, gel firme",
-    "ratio": "0,5-1 % (5-10 g por litro)",
+    "ratio": "0,5–1 % (5–10 g por litro)",
     "note": "Menos para fluidos triturados (gel fluido)."
    },
    {
     "use": "Xantana, salsa ligada",
-    "ratio": "0,1-0,3 %",
+    "ratio": "0,1–0,3 %",
     "note": "Más de 0,5 % queda viscosa."
    },
    {
     "use": "Gel fluido de agar",
-    "ratio": "0,3-0,5 %, cuajado y triturado",
+    "ratio": "0,2–0,5 % (2–5 g por litro), cuajado y triturado",
     "note": "Textura de crema que no gotea."
    }
   ],
@@ -1952,7 +1962,8 @@
    "Piezas de grosor parecido en el mismo sobre.",
    "El vapor puede aromatizar: algas, hierbas, cítricos.",
    "Termómetro para el punto.",
-   "Abrir en la mesa es parte del plato."
+   "Abrir en la mesa es parte del plato.",
+   "Pescado que queda por debajo de 60 °C en el centro: congelado antes (-20 °C al menos 24 horas en toda la pieza) o ya tratado, por el anisakis."
   ],
   "errors": [
    {
@@ -2058,7 +2069,8 @@
    "Sal y sabor en el líquido: lo que tenga, lo tendrá la pieza.",
    "Termómetro en el líquido y en la pieza.",
    "Cubre del todo la pieza o se cocinará desigual.",
-   "El líquido es una salsa en potencia: no lo tires."
+   "El líquido es una salsa en potencia: no lo tires.",
+   "Pescado que queda por debajo de 60 °C en el centro: congelado antes (-20 °C al menos 24 horas en toda la pieza) o ya tratado, por el anisakis."
   ],
   "errors": [
    {
@@ -2387,7 +2399,8 @@
    "Calor antes de poner el producto, y no amontonar.",
    "No mover: la costra suelta la pieza.",
    "Una plancha con zonas permite marcar, terminar y mantener a la vez.",
-   "Limpia en caliente entre producto y producto: los restos quemados amargan."
+   "Limpia en caliente entre producto y producto: los restos quemados amargan.",
+   "Pescado que queda por debajo de 60 °C en el centro: congelado antes (-20 °C al menos 24 horas en toda la pieza) o ya tratado, por el anisakis."
   ],
   "errors": [
    {
@@ -2495,7 +2508,8 @@
    "Costra cerrada, sin huecos: es la olla.",
    "El punto se mide con sonda a través de la sal.",
    "La sal se puede aromatizar con hierbas, piel de cítrico o especias.",
-   "Romper la costra en la mesa es parte del plato."
+   "Romper la costra en la mesa es parte del plato.",
+   "Pescado que queda por debajo de 60 °C en el centro: congelado antes (-20 °C al menos 24 horas en toda la pieza) o ya tratado, por el anisakis."
   ],
   "errors": [
    {
@@ -2846,7 +2860,7 @@
    "Bebidas sin alcohol",
    "Almíbares y vinagres"
   ],
-  "keep": "Lácteos infusionados, 2–3 días en frío. Infusiones de agua, 2–3 días. Aceites con producto fresco, pocos días en frío; con producto seco y colados, semanas.",
+  "keep": "Lácteos infusionados, 2–3 días en frío. Infusiones de agua, 2–3 días. Aceites con producto fresco (ajo, chalota, hierbas), como mucho 4 días en frío y nunca a temperatura ambiente; con producto seco y colados, semanas.",
   "pro": "Infusiona la víspera en frío y cuela por la mañana. Etiqueta con producto, fecha y hora: la intensidad cambia con el tiempo. Ten fichas con gramos y minutos para que salga igual siempre.",
   "related": [
    "aceites-aromatizados",
@@ -3039,7 +3053,8 @@
    "Hojas sin tratar y lavadas; nada de carbón con aditivos para enterrar comida.",
    "Varias capas de hoja: la de fuera se sacrifica.",
    "Abrir en la mesa libera el aroma.",
-   "Aprovecha el final de la brasa del servicio para cocinar en ceniza."
+   "Aprovecha el final de la brasa del servicio para cocinar en ceniza.",
+   "Pescado que queda por debajo de 60 °C en el centro: congelado antes (-20 °C al menos 24 horas en toda la pieza) o ya tratado, por el anisakis."
   ],
   "errors": [
    {
@@ -3475,7 +3490,8 @@
    "Temperatura del escabeche según el producto: templado para pescado, caliente para carne.",
    "Reposo de al menos un día.",
    "Servir templado: el aceite frío se endurece y el sabor se apaga.",
-   "Cubierto siempre, sin piezas al aire."
+   "Cubierto siempre, sin piezas al aire.",
+   "Pescado casi hecho y terminado en escabeche templado: congelado antes (-20 °C al menos 24 horas en toda la pieza) o ya tratado, por el anisakis."
   ],
   "errors": [
    {
@@ -4023,7 +4039,7 @@
    "Frío estable y aire que circule.",
    "Higiene total: rejillas, ganchos y cámara limpios y dedicados.",
    "Prueba cocinando un trozo cada día para encontrar el punto de cada especie.",
-   "Si una pieza madurada se sirve cruda, congelación previa como en cualquier crudo."
+   "Si una pieza madurada se sirve cruda o queda por debajo de 60 °C en el centro, congelación previa (-20 °C al menos 24 horas en toda la pieza) o pescado ya tratado."
   ],
   "errors": [
    {
@@ -4566,7 +4582,8 @@
    "Una capa entre la pieza y la masa absorbe jugos y evita la base cruda.",
    "Sonda a través de la masa: no hay otra forma de ver el punto.",
    "Reposo antes de cortar para que no se escapen los jugos.",
-   "Romper la costra en la mesa es parte del plato."
+   "Romper la costra en la mesa es parte del plato.",
+   "Pescado que queda por debajo de 60 °C en el centro: congelado antes (-20 °C al menos 24 horas en toda la pieza) o ya tratado, por el anisakis."
   ],
   "errors": [
    {
@@ -7737,7 +7754,8 @@
    "Bonito al final y fuera del fuego.",
    "Choricero para el color y el fondo.",
    "Reposo tapado.",
-   "Cada casa tiene su marmitako."
+   "Cada casa tiene su marmitako.",
+   "El bonito hecho con el calor residual puede quedar por debajo de 60 °C: congelado antes (-20 °C al menos 24 horas en toda la pieza) o ya tratado."
   ],
   "errors": [
    {

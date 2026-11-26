@@ -684,7 +684,7 @@
    "Infusiones y postres"
   ],
   "keep": "Tiernas en frío, envueltas en papel húmedo; leñosas en lugar fresco o secas.",
-  "pro": "Corta las hierbas para el pase en pequeñas cantidades a lo largo del servicio. Aceites verdes en biberón, en frío.",
+  "pro": "Corta las hierbas para el pase en pequeñas cantidades a lo largo del servicio. Aceites verdes en biberón, en frío y como mucho 4 días.",
   "related": [
    "bouquet-garni",
    "salsa-verde",
@@ -2458,7 +2458,8 @@
    "La espina protege: el pescado entero queda más jugoso que el lomo.",
    "Termómetro siempre: pasa de jugoso a seco en un minuto.",
    "En la brasa, no muevas la pieza hasta que se despegue.",
-   "Acompáñalo de algo ácido y graso: [[citricos|cítrico]], buen [[aceite-de-oliva|aceite]], una [[salsa-verde]] ligera."
+   "Acompáñalo de algo ácido y graso: [[citricos|cítrico]], buen [[aceite-de-oliva|aceite]], una [[salsa-verde]] ligera.",
+   "Pescado que queda por debajo de 60 °C en el centro: congelado antes (-20 °C al menos 24 horas en toda la pieza) o ya tratado, por el anisakis."
   ],
   "errors": [
    {
@@ -2565,7 +2566,8 @@
    "La gelatina es el tesoro: no la pierdas lavando de más ni cociendo a borbotones.",
    "Aletas, cabezas y espinas de los dos, al fumet o a una salsa.",
    "El gallo se cocina poco y suave; con fuego fuerte se seca y se rompe.",
-   "Las zonas junto a las aletas del rodaballo son las más gelatinosas: sírvelas, no las tires."
+   "Las zonas junto a las aletas del rodaballo son las más gelatinosas: sírvelas, no las tires.",
+   "Pescado que queda por debajo de 60 °C en el centro: congelado antes (-20 °C al menos 24 horas en toda la pieza) o ya tratado, por el anisakis."
   ],
   "errors": [
    {
@@ -3694,7 +3696,7 @@
    {
     "use": "Atún marcado",
     "ratio": "38–42 °C en el centro",
-    "note": "Por fuera dorado, dentro rojo y templado."
+    "note": "Por fuera dorado, dentro rojo y templado. Atún congelado antes (-20 °C al menos 24 horas en toda la pieza) o ya tratado."
    },
    {
     "use": "Morrillo a la brasa",
@@ -3933,7 +3935,7 @@
    {
     "use": "Bacalao fresco",
     "ratio": "45–50 °C en el centro",
-    "note": "Lascas jugosas y nacaradas."
+    "note": "Lascas jugosas y nacaradas. Pescado congelado antes (-20 °C al menos 24 horas en toda la pieza) o ya tratado."
    }
   ],
   "variants": [
@@ -4722,7 +4724,7 @@
    "El corte cambia el sabor: más roto, más intenso.",
    "Ajo quemado es ajo amargo: añádelo después de la cebolla.",
    "La cebolla necesita tiempo: con prisa se quema antes de endulzarse.",
-   "Ajo o hierbas frescas en aceite: siempre en frío y pocos días, por seguridad.",
+   "Ajo o hierbas frescas en aceite: siempre en frío y como mucho 4 días, por el riesgo de botulismo.",
    "Usa también la parte verde de cebolletas, puerros y ajos tiernos."
   ],
   "errors": [
@@ -4747,7 +4749,7 @@
    "Salsas y emulsiones",
    "Cremas y purés"
   ],
-  "keep": "Cebollas y ajos secos, semanas en lugar fresco, seco y ventilado, nunca en frío húmedo. Cebolletas y puerros, en frío. Ajo confitado, en frío y cubierto de aceite, como mucho 1 semana.",
+  "keep": "Cebollas y ajos secos, semanas en lugar fresco, seco y ventilado, nunca en frío húmedo. Cebolletas y puerros, en frío. Ajo confitado, en frío y cubierto de aceite, como mucho 4 días; nunca a temperatura ambiente.",
   "pro": "Pocha cebolla en tanda para toda la semana y congela en porciones. Ten ajo pelado del día, nunca de varios días en agua o aceite. Etiqueta el ajo confitado con la fecha.",
   "related": [
    "sofrito",
@@ -6334,7 +6336,7 @@
    {
     "use": "Lomo de rape",
     "ratio": "50–55 °C en el centro",
-    "note": "Algo más que otros pescados: su carne lo agradece."
+    "note": "Algo más que otros pescados: su carne lo agradece. Por debajo de 60 °C, congelado antes (-20 °C al menos 24 horas en toda la pieza) o ya tratado."
    },
    {
     "use": "Alas de raya escalfadas",
