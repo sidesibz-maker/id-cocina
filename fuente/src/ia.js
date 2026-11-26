@@ -74,3 +74,29 @@ export async function askIa({instructions = '', turns = [], text = '', images = 
  if (!out.trim()) throw new IaError('empty');
  return out;
 }
+
+// Imagen guía: la crea el modelo de imágenes de OpenAI con la clave del propio cocinero. Devuelve un Blob PNG.
+const URL_IMAGES = 'https://api.openai.com/v1/images/generations';
+export async function makeImage(prompt, {size = '1536x1024', quality = 'medium', signal} = {}) {
+ const cfg = iaConfig();
+ if (!iaOn()) throw new IaError('key');
+ let res;
+ try { res = await fetch(URL_IMAGES, {method: 'POST', headers: {'Content-Type': 'application/json', Authorization: 'Bearer ' + cfg.key}, body: JSON.stringify({model: 'gpt-image-1', prompt, size, quality, n: 1}), signal}); }
+ catch (e) { if (e?.name === 'AbortError') throw e; throw new IaError(navigator.onLine === false ? 'offline' : 'net'); }
+ let data = null;
+ try { data = await res.json(); } catch {}
+ if (!res.ok) {
+  const code = data?.error?.code || '', msg = String(data?.error?.message || '');
+  if (res.status === 401) throw new IaError('key');
+  if (code === 'insufficient_quota' || /quota|billing/i.test(msg)) throw new IaError('quota');
+  if (res.status === 429 || res.status >= 500) throw new IaError('busy');
+  if (/verif|organization must be verified/i.test(msg)) throw new IaError('other', 'verify');
+  if (code === 'model_not_found' || res.status === 404) throw new IaError('model');
+  throw new IaError('other', String(res.status));
+ }
+ const b64 = data?.data?.[0]?.b64_json;
+ if (!b64) throw new IaError('empty');
+ const bin = atob(b64), bytes = new Uint8Array(bin.length);
+ for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+ return new Blob([bytes], {type: 'image/png'});
+}

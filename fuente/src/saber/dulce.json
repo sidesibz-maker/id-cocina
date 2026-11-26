@@ -1604,5 +1604,1346 @@
    "espumas-con-sifon",
    "ganache"
   ]
+ },
+ {
+  "id": "tarta-de-queso",
+  "name": "Tarta de queso",
+  "name_en": "Cheesecake",
+  "cat": "dulce",
+  "group": "Cremas",
+  "aka": [
+   "tarta de queso al horno",
+   "tarta de queso quemada",
+   "cheesecake",
+   "tarta de queso cremosa"
+  ],
+  "summary": "Crema de queso, huevo, azúcar y nata cuajada en el horno: de centro fluido con fuego fuerte o lisa y firme con calor suave.",
+  "what": "Es una crema cuajada en la que el queso pone la grasa y la acidez, el huevo cuaja y un poco de harina o almidón da estructura. Todo el estilo depende del calor: con horno muy fuerte se tuesta por fuera y queda temblorosa por dentro; con horno suave y baño maría queda lisa, densa y uniforme. Con queso fresco de cabra y hierbabuena se acerca al [[flao]] de la isla.",
+  "base": {
+   "for": "un molde de 22–24 cm (unas 12 raciones)",
+   "items": [
+    [
+     "Queso crema a temperatura ambiente",
+     "1 kg"
+    ],
+    [
+     "Azúcar",
+     "300 g"
+    ],
+    [
+     "Huevos",
+     "300 g (unos 6)"
+    ],
+    [
+     "Nata 35 % de grasa",
+     "400 g"
+    ],
+    [
+     "Harina floja",
+     "25 g"
+    ],
+    [
+     "Sal",
+     "2 g"
+    ],
+    [
+     "Ralladura de limón",
+     "opcional"
+    ]
+   ],
+   "steps": [
+    "Forra el molde con dos hojas de papel de horno cruzadas que sobresalgan 4–5 cm del borde.",
+    "Mezcla el queso con el azúcar y la sal a velocidad baja, sin batir aire, hasta que quede liso.",
+    "Añade los huevos de uno en uno; después la nata y por último la harina tamizada. Pasa por colador si ves grumos.",
+    "Versión de centro fluido: hornea a 210–220 °C, calor arriba y abajo, 28–35 minutos, hasta que la superficie esté muy tostada y el centro tiemble como una gelatina.",
+    "Versión lisa: hornea a 150 °C al baño maría hasta que el corazón marque 65–68 °C; apaga y deja 30 minutos dentro con la puerta entreabierta.",
+    "Enfría a temperatura ambiente y después en cámara al menos 6 horas antes de cortar."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Centro fluido, superficie tostada",
+    "ratio": "210–220 °C, 28–35 min",
+    "note": "El centro sale sin cuajar; termina de asentarse al enfriar."
+   },
+   {
+    "use": "Lisa y densa",
+    "ratio": "150 °C al baño maría, corazón a 65–68 °C",
+    "note": "Sin grietas ni bordes secos."
+   },
+   {
+    "use": "Más firme para cortar en porciones limpias",
+    "ratio": "40 g de harina por kilo de queso",
+    "note": "Aguanta mejor el transporte y el emplatado en frío."
+   },
+   {
+    "use": "Sin horno, para vaso",
+    "ratio": "8 g de gelatina por kilo de mezcla de queso y nata semimontada",
+    "note": "Textura de mousse; no es la misma tarta."
+   }
+  ],
+  "variants": [
+   {
+    "id": "flao",
+    "name": "Flaó",
+    "note": "Queso fresco, huevo y hierbabuena sobre masa; la versión ibicenca."
+   },
+   {
+    "id": null,
+    "name": "Tarta de queso de cabra",
+    "note": "Mitad queso crema y mitad queso fresco o semicurado de cabra; más ácida y con más carácter."
+   },
+   {
+    "id": null,
+    "name": "Tarta de queso con base de galleta",
+    "note": "Base de galleta triturada y mantequilla fundida, horneada antes 10 minutos."
+   }
+  ],
+  "keys": [
+   "Todo a temperatura ambiente: el queso frío deja grumos y obliga a batir de más.",
+   "Mezcla, no batas: el aire hace que suba en el horno, se agriete al bajar y quede esponjosa.",
+   "El punto se mira por el temblor del centro, no por el tiempo.",
+   "Necesita reposo largo en frío; recién hecha se ve cruda aunque esté en su punto.",
+   "Para cortar limpio usa cuchillo caliente y limpio en cada corte."
+  ],
+  "errors": [
+   {
+    "p": "Se agrieta",
+    "fix": "Demasiado aire o calor alto en la versión lisa. Mezcla a velocidad baja y usa baño maría."
+   },
+   {
+    "p": "Textura granulosa o con agua",
+    "fix": "Se ha pasado de cocción y el huevo se ha cortado. Saca antes y fíate del corazón, no del color."
+   },
+   {
+    "p": "Superficie pálida en la versión quemada",
+    "fix": "Horno poco potente o molde muy bajo. Sube la bandeja y sube 10 °C."
+   },
+   {
+    "p": "Se hunde en el centro",
+    "fix": "Ha subido por aire batido. Mezcla con pala y sin velocidad."
+   }
+  ],
+  "history": "Las tartas de queso cuajado existen en muchas tradiciones europeas, y en Baleares el flaó es un dulce antiguo de queso fresco. La versión de horno muy fuerte y centro fluido se hizo popular en bares españoles en las últimas décadas y hoy está en muchas cartas.",
+  "uses": [
+   "Postre de carta",
+   "Porción con fruta asada",
+   "Bocado de final de menú",
+   "Base de vaso con fruta y crujiente"
+  ],
+  "keep": "En cámara, tapada, 3–4 días. Mejor al día siguiente. Saca 20–30 minutos antes de servir para que el centro recupere la crema; no se congela bien la versión fluida.",
+  "pro": "Hornea a última hora de la tarde anterior. Porciona en frío con cuchillo caliente y guarda las porciones separadas con papel. Acompaña con algo ácido o tostado: fruta asada, un [[caramelo]] salado o una teja.",
+  "related": [
+   "flao",
+   "quesos-en-cocina",
+   "caramelo",
+   "crema-pastelera"
+  ]
+ },
+ {
+  "id": "crema-catalana-y-flan",
+  "name": "Crema catalana y flan",
+  "name_en": "Crema catalana and flan",
+  "cat": "dulce",
+  "group": "Cremas",
+  "aka": [
+   "crema catalana",
+   "flan de huevo",
+   "creme brulee",
+   "crema quemada",
+   "flan",
+   "tocino de cielo"
+  ],
+  "summary": "Dos cremas de huevo de la tradición: la catalana se cuece en cazo con un poco de almidón y se quema con azúcar; el flan se cuaja al baño maría sobre caramelo.",
+  "what": "Las dos son leche, huevo y azúcar, pero se cocinan distinto. La crema catalana se espesa en el fuego como una [[crema-pastelera]] ligera, con poco almidón, y se termina con una capa de azúcar quemado que cruje. El flan se cuaja en el horno: el huevo, sin almidón, forma un gel que se desmolda y se sirve con su propio [[caramelo]]. La crème brûlée francesa está entre las dos: nata y yemas cuajadas al horno y quemadas por encima.",
+  "base": {
+   "for": "1 litro de leche (crema catalana) o 1 litro de leche (flan)",
+   "items": [
+    [
+     "Crema catalana: leche entera",
+     "1 l"
+    ],
+    [
+     "Crema catalana: yemas",
+     "160 g (unas 8)"
+    ],
+    [
+     "Crema catalana: azúcar",
+     "180 g"
+    ],
+    [
+     "Crema catalana: almidón de maíz",
+     "35 g"
+    ],
+    [
+     "Crema catalana: piel de limón y rama de canela",
+     "1 y 1"
+    ],
+    [
+     "Flan: leche entera",
+     "1 l"
+    ],
+    [
+     "Flan: huevos enteros",
+     "400 g (unos 8)"
+    ],
+    [
+     "Flan: azúcar",
+     "200 g"
+    ],
+    [
+     "Flan: azúcar para el caramelo",
+     "200 g"
+    ]
+   ],
+   "steps": [
+    "Crema catalana: infusiona la leche con la piel y la canela 15 minutos fuera del fuego y cuela.",
+    "Mezcla las yemas, el azúcar y el almidón; añade la leche caliente, devuelve al cazo y cuece removiendo hasta que espese y dé los primeros hervores.",
+    "Reparte en cazuelitas planas, film a piel y enfría 4 horas. Al servir, espolvorea 8–10 g de azúcar por ración y quema con hierro o soplete.",
+    "Flan: haz un caramelo seco con 200 g de azúcar y cubre el fondo de los moldes.",
+    "Mezcla los huevos con el azúcar sin batir, añade la leche templada, cuela y deja reposar 30 minutos para que suba la espuma; retírala.",
+    "Cuece al baño maría a 150–160 °C con el agua sin hervir hasta que el centro marque 80–82 °C (unos 40–50 minutos en moldes de 100 ml). Enfría 12 horas antes de desmoldar."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Crema catalana de cuchara",
+    "ratio": "30–40 g de almidón por litro",
+    "note": "Más suave que una pastelera; no tiene que sostenerse sola."
+   },
+   {
+    "use": "Flan firme para desmoldar",
+    "ratio": "8 huevos por litro, o 6 huevos y 4 yemas",
+    "note": "Centro a 80–82 °C."
+   },
+   {
+    "use": "Flan más cremoso",
+    "ratio": "4 huevos y 6 yemas por litro, mitad leche y mitad nata",
+    "note": "Pide más reposo y molde pequeño."
+   },
+   {
+    "use": "Crème brûlée",
+    "ratio": "1 l de nata, 200 g de yemas, 150 g de azúcar; horno a 100–110 °C",
+    "note": "Cuaja en ramequín y se quema al servir."
+   }
+  ],
+  "variants": [
+   {
+    "id": "crema-inglesa",
+    "name": "Crema inglesa",
+    "note": "La misma base sin almidón y sin cuajar: queda líquida, como salsa."
+   },
+   {
+    "id": null,
+    "name": "Tocino de cielo",
+    "note": "Solo yemas y almíbar a punto de hebra, cuajado al baño maría; mucho más denso y dulce."
+   },
+   {
+    "id": null,
+    "name": "Flan de queso o de café",
+    "note": "Se sustituye parte de la leche por queso crema o por café infusionado."
+   }
+  ],
+  "keys": [
+   "Flan: horno suave y agua que no hierva; si hierve, salen burbujas y textura de esponja.",
+   "Deja reposar la mezcla del flan y quita la espuma: así sale liso y sin agujeros.",
+   "Catalana: quema justo antes de servir, con capa fina y pareja; el azúcar quemado se ablanda en minutos.",
+   "Mezcla el huevo con el azúcar sin batir: el aire es el enemigo de las cremas cuajadas.",
+   "Un caramelo del flan oscuro pero no quemado: aporta el amargor que equilibra la crema."
+  ],
+  "errors": [
+   {
+    "p": "Flan con agujeros y textura de esponja",
+    "fix": "Demasiado calor o agua hirviendo. Baja el horno y pon un paño en el fondo del baño maría."
+   },
+   {
+    "p": "Flan que se rompe al desmoldar",
+    "fix": "Poco huevo o poco reposo. Respeta las 12 horas en frío."
+   },
+   {
+    "p": "Crema catalana cortada",
+    "fix": "Ha cocido sin remover o sin almidón suficiente. Tritura en caliente con túrmix y cuela."
+   },
+   {
+    "p": "Azúcar quemado que no cruje",
+    "fix": "Capa gruesa o crema caliente. Usa azúcar fino en capa fina sobre crema bien fría."
+   }
+  ],
+  "history": "La crema catalana es un postre tradicional de Cataluña que se asocia a las fiestas de primavera, y el flan es uno de los postres caseros más extendidos en España y Latinoamérica. Cremas de huevo cuajadas y quemadas aparecen en recetarios europeos desde hace siglos con muchos nombres.",
+  "uses": [
+   "Postre clásico de carta",
+   "Cremas infusionadas con hierbas de la isla",
+   "Base de postre con fruta asada",
+   "Petit four en cuchara"
+  ],
+  "keep": "Crema catalana en frío con film a piel, 2 días, sin quemar. Flan en el molde, tapado, 3 días; desmolda al servir.",
+  "pro": "Infusiona con lo que tengas de temporada: hinojo silvestre, piel de naranja, romero. Para el pase, cazuelitas planas y anchas: más superficie quemada y menos tiempo de soplete por ración.",
+  "related": [
+   "crema-pastelera",
+   "crema-inglesa",
+   "caramelo",
+   "puntos-del-huevo"
+  ]
+ },
+ {
+  "id": "mousses-y-cremosos",
+  "name": "Mousses y cremosos",
+  "name_en": "Mousses and cremeux",
+  "cat": "dulce",
+  "group": "Cremas",
+  "aka": [
+   "mousse",
+   "mousse de chocolate",
+   "mousse de fruta",
+   "cremoso",
+   "cremeux",
+   "bavaroise"
+  ],
+  "summary": "Una base con sabor (chocolate, fruta, crema) aligerada con nata o merengue para la mousse, o espesada con chocolate y gelatina para el cremoso, denso y liso.",
+  "what": "La mousse es una base de sabor a la que se le mete aire con nata semimontada, merengue o claras, y que se sostiene por el chocolate, la gelatina o la grasa al enfriar. El cremoso no lleva aire: es una [[crema-inglesa]] espesada con chocolate o con gelatina, más densa y fundente. Las dos se escudillan, se moldean o se sirven en quenelle y son la pieza central de muchos postres de emplatado.",
+  "base": {
+   "for": "unas 12 raciones de mousse de chocolate",
+   "items": [
+    [
+     "Chocolate negro 64–70 %",
+     "250 g"
+    ],
+    [
+     "Leche entera",
+     "150 g"
+    ],
+    [
+     "Nata 35 % para semimontar",
+     "450 g"
+    ],
+    [
+     "Yemas (opcional, más cremosa)",
+     "40 g"
+    ],
+    [
+     "Sal",
+     "1 g"
+    ]
+   ],
+   "steps": [
+    "Semimonta la nata, hasta que marque surcos pero aún caiga de la varilla, y guárdala en frío.",
+    "Hierve la leche, viértela en tres veces sobre el chocolate troceado y emulsiona como una [[ganache]]. Si usas yemas, añádelas aquí.",
+    "Deja la base a 40–45 °C: más caliente funde la nata, más fría se endurece y hace grumos.",
+    "Incorpora un tercio de la nata con varilla para aligerar y el resto con lengua, con movimientos envolventes.",
+    "Escudilla en moldes o vasos y deja cuajar al menos 4 horas en frío."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Mousse de chocolate",
+    "ratio": "1 parte de chocolate por 1,8–2 de nata semimontada",
+    "note": "Base a 40–45 °C al mezclar."
+   },
+   {
+    "use": "Mousse de fruta",
+    "ratio": "500 g de puré, 80–120 g de azúcar, 8–10 g de gelatina y 400 g de nata semimontada",
+    "note": "Funde la gelatina en parte del puré y mezcla con la nata con la base a 25–30 °C."
+   },
+   {
+    "use": "Cremoso de chocolate",
+    "ratio": "1 kg de crema inglesa cocida a 82–84 °C y 350–400 g de chocolate 64–70 %",
+    "note": "Se emulsiona con túrmix sin meter aire."
+   },
+   {
+    "use": "Cremoso de fruta o cítrico",
+    "ratio": "1 kg de crema de fruta y huevo y 5–6 g de gelatina",
+    "note": "Más firme si se va a desmoldar."
+   }
+  ],
+  "variants": [
+   {
+    "id": "merengues",
+    "name": "Mousse con merengue italiano",
+    "note": "Más ligera y estable; buena para frutas ácidas."
+   },
+   {
+    "id": null,
+    "name": "Bavaroise",
+    "note": "Crema inglesa con gelatina y nata montada; la mousse clásica de molde."
+   },
+   {
+    "id": null,
+    "name": "Mousse de aceite de oliva",
+    "note": "Base de yema, azúcar y aceite emulsionados, aligerada con nata; muy mediterránea."
+   }
+  ],
+  "keys": [
+   "La nata semimontada, nunca firme: la firme da textura de mantequilla y se corta al mezclar.",
+   "La temperatura de la base decide el resultado; usa termómetro.",
+   "Primero aligera con un poco de nata, luego envuelve el resto.",
+   "En el cremoso, túrmix al fondo y sin aire: la textura lisa es lo que lo define.",
+   "La gelatina se pesa: cada hoja pesa unos 2 g, pero cambia según la marca."
+  ],
+  "errors": [
+   {
+    "p": "Mousse con grumos de chocolate",
+    "fix": "La base estaba fría o la nata muy fría. Mezcla con la base a 40–45 °C."
+   },
+   {
+    "p": "Mousse que se baja",
+    "fix": "Nata sin montar o mezclada con demasiada fuerza. Envuelve con lengua y para cuando no veas vetas."
+   },
+   {
+    "p": "Cremoso granuloso",
+    "fix": "La crema inglesa pasó de 85 °C. Tritura en caliente y cuela."
+   },
+   {
+    "p": "Mousse de fruta que no cuaja",
+    "fix": "Fruta cruda con enzimas (piña, kiwi, papaya) o poca gelatina. Cuece el puré o usa agar."
+   }
+  ],
+  "history": "Las mousses dulces son una preparación clásica de la pastelería francesa que se extendió por todo el mundo. El cremoso como capa densa y lisa se hizo habitual en la pastelería de restaurante en las últimas décadas, con el uso preciso del termómetro.",
+  "uses": [
+   "Capa de tarta o entremet",
+   "Quenelle en postre de emplatado",
+   "Vaso con fruta y crujiente",
+   "Petit four en molde de silicona"
+  ],
+  "keep": "En frío, tapadas, 2–3 días. Las mousses con gelatina se congelan bien en molde y se desmoldan congeladas.",
+  "pro": "Escudilla en manga con boquilla lisa y guarda en frío; el cremoso aguanta mejor el pase que la mousse. Para quenelles, deja el cremoso 12 horas en frío y usa cuchara caliente.",
+  "related": [
+   "ganache",
+   "crema-inglesa",
+   "merengues",
+   "gelificantes-y-espesantes",
+   "chocolate-y-templado"
+  ]
+ },
+ {
+  "id": "sable-y-galletas",
+  "name": "Sablé y galletas",
+  "name_en": "Sablé and biscuits",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "sable",
+   "sable breton",
+   "galletas",
+   "pastas de te",
+   "cookies",
+   "galletas de mantequilla"
+  ],
+  "summary": "Masas cortas de mantequilla, azúcar y harina horneadas hasta quedar arenosas o crujientes: galletas, bases de postre y crujientes de emplatado.",
+  "what": "Una galleta es una masa con mucha grasa y poca agua que se hornea hasta secar. El método cambia la textura: frotar la harina con la mantequilla fría (arenado) da una miga que se deshace; cremar mantequilla y azúcar da galletas más tiernas. El sablé lleva mucha mantequilla y yema; con levadura química y horneado en aro queda grueso y quebradizo. Es pariente de la [[masa-quebrada]], pero pensada para comerse sola.",
+  "base": {
+   "for": "unos 700 g de masa (unas 40 galletas de 15 g)",
+   "items": [
+    [
+     "Mantequilla fría en dados",
+     "200 g"
+    ],
+    [
+     "Azúcar glas",
+     "100 g"
+    ],
+    [
+     "Harina floja",
+     "300 g"
+    ],
+    [
+     "Almendra molida",
+     "40 g"
+    ],
+    [
+     "Yemas",
+     "40 g (2)"
+    ],
+    [
+     "Sal fina",
+     "3 g"
+    ],
+    [
+     "Vainilla o ralladura de cítrico",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Frota la mantequilla fría con la harina, la almendra, el azúcar y la sal hasta que parezca arena gruesa.",
+    "Añade las yemas y mezcla lo justo para que se una; no amases.",
+    "Aplana entre dos papeles a 4–5 mm y enfría al menos 1 hora.",
+    "Corta en frío y hornea a 160–170 °C, 12–15 minutos, hasta que el borde esté dorado y el centro pálido.",
+    "Deja enfriar en la bandeja: recién salidas están blandas y se rompen."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Sablé clásico de corte",
+    "ratio": "1 de azúcar, 2 de mantequilla, 3 de harina",
+    "note": "Horno a 160–170 °C."
+   },
+   {
+    "use": "Sablé grueso en aro",
+    "ratio": "4 yemas, 150 g de azúcar, 200 g de mantequilla, 250 g de harina y 8 g de levadura química",
+    "note": "Masa blanda; se hornea dentro del aro a 165 °C."
+   },
+   {
+    "use": "Galleta tierna de chocolate",
+    "ratio": "Mantequilla cremada con azúcar moreno, 1 huevo por 250 g de harina",
+    "note": "Saca a 175 °C con el centro aún blando."
+   },
+   {
+    "use": "Tierra o crumble para emplatar",
+    "ratio": "Mantequilla, azúcar, harina y almendra a partes iguales",
+    "note": "Desmenuzado y horneado suelto a 160 °C."
+   }
+  ],
+  "variants": [
+   {
+    "id": "masa-quebrada",
+    "name": "Masa sablée para tarta",
+    "note": "La misma idea para forrar moldes."
+   },
+   {
+    "id": "almendra",
+    "name": "Galletas de almendra",
+    "note": "Con más almendra que harina; más tiernas y aromáticas."
+   },
+   {
+    "id": null,
+    "name": "Sablé salado",
+    "note": "Sin azúcar, con queso curado o hierbas; para aperitivos."
+   }
+  ],
+  "keys": [
+   "Mantequilla fría para el arenado; blanda solo si vas a cremar.",
+   "Cuanto menos trabajes la masa, más se deshace; el gluten la endurece.",
+   "Reposo en frío antes de cortar y antes de hornear: no se deforma.",
+   "Azúcar glas para galletas finas y lisas; azúcar moreno para galletas tiernas y con sabor a caramelo.",
+   "Una pizca de sal y mantequilla tostada ([[mantequilla-noisette]]) cambian por completo el sabor."
+  ],
+  "errors": [
+   {
+    "p": "Galletas duras",
+    "fix": "Masa amasada de más o con demasiada agua. Mezcla lo justo y usa yema en vez de huevo entero."
+   },
+   {
+    "p": "Se abren y pierden la forma",
+    "fix": "Mantequilla caliente o masa sin reposar. Enfría la masa cortada 20 minutos antes de hornear."
+   },
+   {
+    "p": "Doradas por fuera y crudas por dentro",
+    "fix": "Horno muy fuerte o masa gruesa. Baja a 160 °C y estira más fino."
+   }
+  ],
+  "history": "Las galletas de mantequilla tienen una larga tradición en las zonas lecheras del norte de Europa, y el sablé es una de sus formas más conocidas. En España las pastas de té y las galletas de almendra son parte de la repostería de obrador de siempre.",
+  "uses": [
+   "Base de postre",
+   "Tierra o crumble de emplatado",
+   "Petit four",
+   "Sándwich con cremoso o helado"
+  ],
+  "keep": "Horneadas, en lata cerrada con papel secante, 1–2 semanas. La masa cruda, 5 días en frío o 2 meses congelada en rollos.",
+  "pro": "Congela la masa en rollos o en láminas ya estiradas y hornea cada día lo que vayas a usar. Para piezas idénticas, hornea entre dos tapetes o en aros perforados.",
+  "related": [
+   "masa-quebrada",
+   "almendra",
+   "mantequilla-noisette",
+   "hojaldre"
+  ]
+ },
+ {
+  "id": "brioche",
+  "name": "Brioche",
+  "name_en": "Brioche",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "bollo",
+   "pan de leche",
+   "masa enriquecida",
+   "bolleria",
+   "pan brioche"
+  ],
+  "summary": "Masa de pan con mucho huevo y mantequilla, de miga tierna y dorada: para bollos, tostadas, torrijas y panes de hamburguesa.",
+  "what": "Es una masa de levadura enriquecida: el huevo da color y estructura, y la mantequilla, añadida al final del amasado, da la miga tierna. Necesita harina de fuerza y un amasado largo para desarrollar el gluten antes de que entre la grasa. La fermentación lenta en frío le da sabor y hace la masa fácil de formar. Comparte familia con el pan de leche y con la ensaimada, que lleva manteca de cerdo.",
+  "base": {
+   "for": "unos 2,3 kg de masa",
+   "items": [
+    [
+     "Harina de fuerza",
+     "1 kg"
+    ],
+    [
+     "Huevos fríos",
+     "600 g"
+    ],
+    [
+     "Mantequilla fría en dados",
+     "500 g"
+    ],
+    [
+     "Azúcar",
+     "120 g"
+    ],
+    [
+     "Sal",
+     "20 g"
+    ],
+    [
+     "Levadura fresca",
+     "30 g"
+    ],
+    [
+     "Leche fría",
+     "60 g"
+    ]
+   ],
+   "steps": [
+    "Amasa la harina, los huevos, la leche, el azúcar, la sal y la levadura a velocidad media 10–12 minutos, hasta que la masa se despegue de la cuba.",
+    "Añade la mantequilla en dados poco a poco, sin dejar de amasar, hasta que la masa vuelva a quedar lisa y elástica. La masa no debe pasar de 24–26 °C.",
+    "Fermenta 1 hora a temperatura ambiente, desgasifica y guarda tapada en cámara a 4 °C 12–16 horas.",
+    "Divide y forma en frío. Fermenta a 26–28 °C con humedad hasta que doble, 1,5–2 horas.",
+    "Pinta con huevo y hornea a 170–180 °C hasta que el corazón marque 92–95 °C: unos 12 minutos los bollos de 50 g y 30–35 minutos un molde de 500 g."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Brioche rico (bollos, tostada)",
+    "ratio": "50 % de mantequilla y 60 % de huevo sobre la harina",
+    "note": "Masa a 24–26 °C al terminar."
+   },
+   {
+    "use": "Pan de hamburguesa o de molde tierno",
+    "ratio": "20–25 % de mantequilla y 20 % de huevo, el resto leche",
+    "note": "Más fácil de formar y menos graso."
+   },
+   {
+    "use": "Para torrijas",
+    "ratio": "Brioche de un día, en rebanadas de 3 cm",
+    "note": "Absorbe sin romperse."
+   },
+   {
+    "use": "Fermentación final",
+    "ratio": "26–28 °C, 1,5–2 horas",
+    "note": "Por encima de 30 °C la mantequilla se funde y la masa suda."
+   }
+  ],
+  "variants": [
+   {
+    "id": null,
+    "name": "Pan de leche",
+    "note": "Menos huevo y mantequilla, más leche; miga blanca y esponjosa."
+   },
+   {
+    "id": null,
+    "name": "Brioche de masa madre",
+    "note": "Parte de la levadura se sustituye por masa madre dulce; más sabor y conservación."
+   },
+   {
+    "id": null,
+    "name": "Brioche salado",
+    "note": "Sin azúcar, con hierbas o queso, para servicio de pan."
+   }
+  ],
+  "keys": [
+   "Huevos y leche fríos: el amasado largo calienta la masa y la mantequilla no debe fundirse.",
+   "Primero gluten, después grasa: si la mantequilla entra antes, la masa nunca se hace.",
+   "Prueba de la membrana: un trozo estirado debe dejar pasar la luz sin romperse.",
+   "Forma siempre en frío; la masa caliente se pega y pierde la forma.",
+   "El punto lo da el termómetro en el corazón, no el color."
+  ],
+  "errors": [
+   {
+    "p": "Masa grasienta que no se une",
+    "fix": "Se ha calentado. Métela 20 minutos en cámara y vuelve a amasar."
+   },
+   {
+    "p": "Miga apretada",
+    "fix": "Poco amasado antes de la mantequilla o poca fermentación. Amasa hasta membrana y deja doblar."
+   },
+   {
+    "p": "Bollos que se abren en el horno",
+    "fix": "Falta de fermentación final o pliegue flojo al formar."
+   },
+   {
+    "p": "Corteza muy oscura y centro crudo",
+    "fix": "Horno fuerte por el azúcar. Baja a 165–170 °C y alarga."
+   }
+  ],
+  "history": "El brioche es un pan enriquecido de la tradición francesa que se extendió como base de la bollería. En España la familia de masas enriquecidas tiene su propia rama, de la ensaimada al pan de leche.",
+  "uses": [
+   "Torrijas",
+   "Pan de servicio con mantequilla",
+   "Panes de hamburguesa y bocadillos de brasa",
+   "Tostadas dulces y saladas",
+   "Pudin de pan"
+  ],
+  "keep": "Horneado, tapado a temperatura ambiente 2 días; congelado, 1 mes. La masa cruda, hasta 24 horas en frío; formada y congelada sin fermentar, 2 semanas.",
+  "pro": "Amasa por la tarde y forma por la mañana. Congela bollos formados sin fermentar y sácalos la noche anterior a cámara para fermentarlos al día siguiente.",
+  "related": [
+   "masa-madre",
+   "masas-laminadas-fermentadas",
+   "hojaldre",
+   "crema-pastelera"
+  ]
+ },
+ {
+  "id": "masas-laminadas-fermentadas",
+  "name": "Masas laminadas fermentadas",
+  "name_en": "Laminated yeasted doughs",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "croissant",
+   "cruasan",
+   "masa de croissant",
+   "masa danesa",
+   "napolitana",
+   "hojaldre fermentado",
+   "viennoiserie"
+  ],
+  "summary": "Masa de levadura doblada con capas de mantequilla: hojaldra como el hojaldre y además sube por la fermentación. Croissants, napolitanas y caracolas.",
+  "what": "Se envuelve una placa de mantequilla en una masa fermentada y se estira y dobla varias veces para multiplicar las capas. En el horno, el agua de la masa y de la mantequilla se hace vapor y separa las láminas, y la levadura da una miga ligera y alveolada. Es un [[hojaldre]] con levadura: más tierno y menos crujiente, y mucho más sensible a la temperatura. Con más azúcar y huevo es la masa danesa.",
+  "base": {
+   "for": "unos 2,2 kg de masa (unos 30 croissants de 70 g)",
+   "items": [
+    [
+     "Harina de fuerza media",
+     "1 kg"
+    ],
+    [
+     "Agua fría",
+     "250 g"
+    ],
+    [
+     "Leche fría",
+     "250 g"
+    ],
+    [
+     "Azúcar",
+     "120 g"
+    ],
+    [
+     "Sal",
+     "20 g"
+    ],
+    [
+     "Levadura fresca",
+     "40 g"
+    ],
+    [
+     "Mantequilla blanda para la masa",
+     "80 g"
+    ],
+    [
+     "Mantequilla de laminar (82 % de grasa)",
+     "500 g"
+    ]
+   ],
+   "steps": [
+    "Amasa todo salvo la mantequilla de laminar solo 5–6 minutos: la masa no necesita mucho gluten, que luego se trabaja al estirar. Aplana en rectángulo y deja en cámara 12 horas a 4 °C.",
+    "Haz una placa cuadrada con la mantequilla de laminar entre dos papeles y déjala a 12–14 °C: tiene que doblarse sin romperse y sin estar blanda.",
+    "Envuelve la mantequilla en la masa y da un pliegue doble (cuatro) y un pliegue sencillo (tres), con 30 minutos de cámara entre uno y otro.",
+    "Estira a 4 mm, corta triángulos de 9 × 25 cm, enrolla sin apretar y coloca en bandeja.",
+    "Fermenta a 25–27 °C con humedad, 2–2,5 horas, hasta que tiemblen al mover la bandeja y se vean las capas.",
+    "Pinta con huevo y hornea a 170–175 °C en convección, 16–18 minutos."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Mantequilla de laminar",
+    "ratio": "25 % sobre el peso de la masa",
+    "note": "Placa a 12–14 °C; masa a 2–4 °C."
+   },
+   {
+    "use": "Fermentación final",
+    "ratio": "25–27 °C, 2–2,5 horas",
+    "note": "Nunca por encima de 28 °C: la mantequilla se funde y sale del croissant."
+   },
+   {
+    "use": "Masa danesa",
+    "ratio": "15 % de azúcar, 10 % de huevo y 30 % de mantequilla de laminar",
+    "note": "Para piezas con crema y fruta."
+   },
+   {
+    "use": "Horneado",
+    "ratio": "170–175 °C en convección, 16–18 min",
+    "note": "Color muy dorado; pálidos quedan pastosos."
+   }
+  ],
+  "variants": [
+   {
+    "id": "hojaldre",
+    "name": "Hojaldre",
+    "note": "Sin levadura; sube solo por las capas, más crujiente."
+   },
+   {
+    "id": null,
+    "name": "Napolitana",
+    "note": "Rectángulo de masa enrollado con chocolate o crema."
+   },
+   {
+    "id": null,
+    "name": "Caracola",
+    "note": "Lámina untada con crema o canela, enrollada y cortada en rodajas."
+   }
+  ],
+  "keys": [
+   "Masa y mantequilla con la misma consistencia: si una está más dura, se rompen las capas.",
+   "Trabaja en sala fresca y con la masa siempre fría; si se calienta, a cámara.",
+   "Pocos pliegues bien hechos dan mejor miga que muchos: con demasiados las capas se juntan.",
+   "Corta con cuchillo o rueda muy afilados: aplastar el borde sella las capas.",
+   "La fermentación final se mira por el temblor y el volumen, no por el reloj."
+  ],
+  "errors": [
+   {
+    "p": "Mantequilla en el fondo de la bandeja",
+    "fix": "Fermentación demasiado caliente o poca fermentación. Baja a 25 °C y espera a que tiemblen."
+   },
+   {
+    "p": "Miga apretada, como pan",
+    "fix": "Mantequilla rota en el laminado o masa con demasiado gluten. Amasa menos y vigila temperaturas."
+   },
+   {
+    "p": "Capas que se ven en crudo y no en cocido",
+    "fix": "Mantequilla demasiado blanda al laminar. Enfría entre pliegues."
+   },
+   {
+    "p": "Se abren al hornear",
+    "fix": "Enrollado flojo o punta debajo mal colocada. Deja la punta debajo y no estires al enrollar."
+   }
+  ],
+  "history": "La bollería de masa laminada fermentada se desarrolló en las panaderías de Viena y París y desde allí se extendió por toda Europa. En España forma parte del desayuno de cafetería desde hace generaciones.",
+  "uses": [
+   "Desayuno y brunch",
+   "Croissant salado relleno",
+   "Base de pudin o torrija de croissant",
+   "Petit four de bollería mini"
+  ],
+  "keep": "Horneados, mejor el mismo día. Formados y sin fermentar, congelados 3–4 semanas: fermenta directamente desde congelado alargando 1–2 horas.",
+  "pro": "Lamina un día, forma y congela en bandeja. Saca la noche anterior a cámara y fermenta por la mañana: tendrás bollería recién hecha sin madrugar más.",
+  "related": [
+   "hojaldre",
+   "brioche",
+   "crema-pastelera",
+   "chocolate-y-templado"
+  ]
+ },
+ {
+  "id": "tejas-y-crujientes-dulces",
+  "name": "Tejas y crujientes dulces",
+  "name_en": "Tuiles and sweet crisps",
+  "cat": "dulce",
+  "group": "Espumas y azúcar",
+  "aka": [
+   "tejas",
+   "teja de almendra",
+   "tuile",
+   "crocante",
+   "crumble",
+   "praline",
+   "nougatine",
+   "galleta de encaje"
+  ],
+  "summary": "Láminas y trozos finos de masa, azúcar o frutos secos horneados o caramelizados para dar el crujiente a un postre.",
+  "what": "Un postre de cremas y fruta necesita algo que cruja. Las tejas son masas muy finas de mantequilla, azúcar, clara y harina que se hornean hasta dorar y se moldean en caliente. Las de encaje llevan más azúcar y mantequilla y se abren en el horno en una red. El crocante es [[caramelo]] con frutos secos, extendido y roto o triturado. El crumble es masa de [[sable-y-galletas|galleta]] desmenuzada. Para láminas de fruta o verdura secas a baja temperatura, mira [[deshidratados-y-crujientes]].",
+  "base": {
+   "for": "unas 40 tejas de almendra",
+   "items": [
+    [
+     "Mantequilla fundida, templada",
+     "100 g"
+    ],
+    [
+     "Azúcar glas",
+     "100 g"
+    ],
+    [
+     "Claras",
+     "100 g"
+    ],
+    [
+     "Harina floja",
+     "100 g"
+    ],
+    [
+     "Almendra laminada",
+     "80 g"
+    ],
+    [
+     "Sal",
+     "1 g"
+    ]
+   ],
+   "steps": [
+    "Mezcla el azúcar, la harina y la sal; añade las claras y después la mantequilla fundida. Deja la masa 1 hora en frío.",
+    "Extiende cucharaditas muy finas sobre tapete de silicona, o con plantilla, y reparte la almendra por encima.",
+    "Hornea a 160–170 °C, 6–8 minutos, hasta que estén doradas en el borde y en el centro.",
+    "Despega en caliente y dales forma en el momento sobre un rodillo, un vaso o dentro de un molde: en 20 segundos se endurecen."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Teja clásica",
+    "ratio": "Mantequilla, azúcar glas, clara y harina a partes iguales",
+    "note": "Horno a 160–170 °C."
+   },
+   {
+    "use": "Teja de encaje",
+    "ratio": "100 g de mantequilla, 100 g de azúcar, 40 g de glucosa o miel, 30 g de harina y 60 g de almendra picada",
+    "note": "Se abre en red a 170–180 °C; separa mucho las porciones."
+   },
+   {
+    "use": "Crocante de frutos secos",
+    "ratio": "1 parte de frutos secos tostados por 1 de azúcar en caramelo rubio",
+    "note": "Caramelo a 160–170 °C; extiende en tapete y rompe en frío."
+   },
+   {
+    "use": "Teja de cacao o de sésamo",
+    "ratio": "Sustituye 15 g de harina por cacao, o la almendra por sésamo",
+    "note": "El cacao oscurece: controla el punto por el olor."
+   }
+  ],
+  "variants": [
+   {
+    "id": "merengues",
+    "name": "Merengue seco",
+    "note": "Merengue francés extendido fino y secado a 80–90 °C; crujiente y muy ligero."
+   },
+   {
+    "id": "sable-y-galletas",
+    "name": "Crumble",
+    "note": "Mantequilla, azúcar, harina y almendra desmenuzados y horneados sueltos."
+   },
+   {
+    "id": null,
+    "name": "Praliné",
+    "note": "Crocante triturado hasta pasta; sirve para cremas y rellenos."
+   }
+  ],
+  "keys": [
+   "Cuanto más fina la teja, más elegante y más crujiente; usa plantilla.",
+   "Moldea en caliente, de pocas en pocas; si se endurecen, mete la bandeja 30 segundos al horno.",
+   "La humedad es su enemiga: guarda en lata con gel de sílice o con papel secante.",
+   "Monta el crujiente en el último momento; sobre una crema se ablanda en minutos.",
+   "Un toque de sal o de especia en el crocante lo saca de lo empalagoso."
+  ],
+  "errors": [
+   {
+    "p": "Tejas blandas al enfriar",
+    "fix": "Poco horno o mucha humedad en la sala. Hornea hasta dorado parejo y guarda en seco."
+   },
+   {
+    "p": "Tejas gruesas e irregulares",
+    "fix": "Masa muy fría o extendida a mano. Usa plantilla y masa a temperatura de sala."
+   },
+   {
+    "p": "Crocante pegajoso",
+    "fix": "Caramelo poco hecho o expuesto al aire. Llévalo a rubio oscuro y guarda en cerrado."
+   },
+   {
+    "p": "Teja de encaje que no se abre",
+    "fix": "Masa fría o poca mantequilla. Hornea desde masa a 20–22 °C y separa mucho las porciones."
+   }
+  ],
+  "history": "Las tejas son parte de la pastelería de obrador europea, y los crocantes de almendra y azúcar tienen una larga tradición en la repostería mediterránea. En el postre de restaurante se volvieron la forma habitual de dar crujiente y altura al plato.",
+  "uses": [
+   "Crujiente de postre de emplatado",
+   "Petit four",
+   "Acompañar helados y sorbetes",
+   "Teja salada de queso o de pan para aperitivos"
+  ],
+  "keep": "Horneadas, en lata cerrada con gel de sílice, 4–5 días. La masa de teja, 5 días en frío. El crocante triturado, 2 semanas en seco.",
+  "pro": "Hornea a primera hora y guarda en lata. Ten la masa en manga en frío para reponer en el servicio. Monta la teja sobre el postre en el pase, nunca antes.",
+  "related": [
+   "deshidratados-y-crujientes",
+   "caramelo",
+   "almendra",
+   "sable-y-galletas",
+   "merengues"
+  ]
+ },
+ {
+  "id": "frutas-en-almibar",
+  "name": "Frutas en almíbar y escalfadas",
+  "name_en": "Poached fruit and fruit in syrup",
+  "cat": "dulce",
+  "group": "Fruta",
+  "aka": [
+   "fruta en almibar",
+   "peras al vino",
+   "fruta escalfada",
+   "compota",
+   "fruta confitada",
+   "piel confitada",
+   "almibar"
+  ],
+  "summary": "Cocer fruta en un almíbar sin que hierva para que quede tierna, entera y perfumada; si se sube el azúcar poco a poco, se confita.",
+  "what": "El almíbar es agua con azúcar y aromas. Con poco azúcar la fruta se escalfa y queda tierna y jugosa; con más azúcar y tiempo, el azúcar entra en la fruta y la conserva, que es el confitado. La temperatura importa: un hervor fuerte rompe la fruta antes de que se haga por dentro. El líquido de cocción, reducido, se convierte en la salsa del postre. Para los puntos del azúcar en sí, mira [[caramelo]].",
+  "base": {
+   "for": "1 kg de fruta (peras, membrillo, melocotón, higo)",
+   "items": [
+    [
+     "Agua o vino",
+     "1 l"
+    ],
+    [
+     "Azúcar",
+     "300 g"
+    ],
+    [
+     "Zumo de limón",
+     "30 g"
+    ],
+    [
+     "Piel de cítrico",
+     "2 tiras"
+    ],
+    [
+     "Especias o hierbas (vainilla, canela, anís estrellado, laurel, romero)",
+     "al gusto"
+    ],
+    [
+     "Fruta pelada y sin pepitas",
+     "1 kg"
+    ]
+   ],
+   "steps": [
+    "Hierve el agua con el azúcar y los aromas; baja el fuego.",
+    "Mete la fruta y tápala con un disco de papel para que quede sumergida.",
+    "Escalfa a 80–90 °C, sin hervor, hasta que la punta de un cuchillo entre sin resistencia: 15–40 minutos según la fruta y su madurez.",
+    "Enfría la fruta dentro del almíbar: así sigue tomando sabor y no se seca.",
+    "Para salsa, reduce parte del líquido colado hasta que napee la cuchara."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Almíbar ligero para fruta delicada",
+    "ratio": "250–300 g de azúcar por litro de agua",
+    "note": "Melocotón, albaricoque, higo; escalfar a 80 °C."
+   },
+   {
+    "use": "Almíbar medio para fruta firme",
+    "ratio": "400–500 g de azúcar por litro",
+    "note": "Pera y membrillo; escalfar a 85–90 °C."
+   },
+   {
+    "use": "Peras al vino",
+    "ratio": "1 l de vino tinto, 250 g de azúcar y especias",
+    "note": "Reposo de una noche en el vino para que tomen color."
+   },
+   {
+    "use": "Piel de cítrico confitada",
+    "ratio": "Blanquear 3 veces y cocer en almíbar 1:1 a 100–105 °C hasta translúcida",
+    "note": "Después se seca o se guarda en su almíbar."
+   }
+  ],
+  "variants": [
+   {
+    "id": "citricos",
+    "name": "Piel de cítricos confitada",
+    "note": "Para decorar, picar en masas o bañar en chocolate."
+   },
+   {
+    "id": "higos-y-algarroba",
+    "name": "Higos en almíbar",
+    "note": "Higos de final de verano, enteros, en almíbar con piel de naranja."
+   },
+   {
+    "id": null,
+    "name": "Compota",
+    "note": "Fruta en trozos cocida con poco azúcar hasta deshacerse en parte."
+   }
+  ],
+  "keys": [
+   "Fruta madura pero firme: la muy madura se deshace.",
+   "Nunca hervir la fruta: escalfa y deja enfriar en el líquido.",
+   "El disco de papel encima mantiene la fruta sumergida y cocida por igual.",
+   "Pela y unta con limón al momento; la pera y el membrillo se oxidan enseguida.",
+   "Para confitar, sube el azúcar poco a poco en varios días; de golpe, la fruta se arruga."
+  ],
+  "errors": [
+   {
+    "p": "Fruta rota o deshecha",
+    "fix": "Hirvió o la fruta estaba muy madura. Escalfa a 80–90 °C y elige fruta firme."
+   },
+   {
+    "p": "Fruta dura por dentro",
+    "fix": "Almíbar muy concentrado al empezar: el azúcar endurece la superficie. Empieza ligero."
+   },
+   {
+    "p": "Piel confitada amarga",
+    "fix": "Poco blanqueado. Blanquea tres veces desde agua fría."
+   },
+   {
+    "p": "Fruta confitada arrugada",
+    "fix": "Azúcar subido demasiado deprisa. Aumenta poco a poco en varios días."
+   }
+  ],
+  "history": "Conservar fruta en almíbar y confitar pieles es una práctica antigua en todo el Mediterráneo, ligada a aprovechar las cosechas. Las peras al vino y la fruta en almíbar son postres de casa y de obrador de siempre en España.",
+  "uses": [
+   "Postre de fruta con crema o helado",
+   "Acompañar quesos",
+   "Relleno de tartas",
+   "Decoración de pastelería",
+   "Salsa de su propio almíbar"
+  ],
+  "keep": "Fruta escalfada, cubierta de su almíbar y en frío, 4–5 días. En tarros esterilizados y bien cerrados dura mucho más; sigue el procedimiento seguro de conserva. Piel confitada seca, en tarro, varias semanas.",
+  "pro": "Escalfa por lotes y guarda en gastronorm cubierto de almíbar. Reutiliza el almíbar colado para la siguiente tanda o para bañar bizcochos.",
+  "related": [
+   "caramelo",
+   "citricos",
+   "higos-y-algarroba",
+   "fruta-asada",
+   "helados-y-sorbetes"
+  ]
+ },
+ {
+  "id": "fruta-asada",
+  "name": "Fruta asada y a la brasa",
+  "name_en": "Roasted and grilled fruit",
+  "cat": "dulce",
+  "group": "Fruta",
+  "aka": [
+   "fruta a la brasa",
+   "manzana asada",
+   "melocoton a la brasa",
+   "pina asada",
+   "higos asados",
+   "postre de fruta asada"
+  ],
+  "summary": "Fruta cocinada a calor seco, en horno o sobre la brasa, para concentrar su azúcar, caramelizar la superficie y sumar notas tostadas o ahumadas.",
+  "what": "Al asar, la fruta pierde agua, concentra el azúcar y se carameliza por fuera; sobre la brasa además toma humo. Es el postre más natural de una cocina de [[fuego-y-brasa|fuego]]: aprovecha la brasa de final de servicio y da contraste a cremas frías y helados. Funciona mejor con fruta firme y algo ácida, que aguanta el calor y no queda empalagosa.",
+  "base": {
+   "for": "10 raciones de fruta de hueso a la brasa",
+   "items": [
+    [
+     "Melocotones, nectarinas o albaricoques firmes",
+     "10 piezas"
+    ],
+    [
+     "Mantequilla",
+     "60 g"
+    ],
+    [
+     "Azúcar moreno o miel",
+     "60 g"
+    ],
+    [
+     "Zumo y piel de limón",
+     "1"
+    ],
+    [
+     "Romero, tomillo o vainilla",
+     "al gusto"
+    ],
+    [
+     "Sal en escamas",
+     "una pizca"
+    ]
+   ],
+   "steps": [
+    "Parte la fruta por la mitad y quita el hueso. Seca bien la cara cortada.",
+    "Funde la mantequilla con el azúcar, el limón y la hierba; pinta solo la cara cortada.",
+    "Coloca la fruta por el corte sobre parrilla limpia y caliente, a brasa media, 3–4 minutos sin moverla, hasta que marque.",
+    "Gira, pinta otra vez y termina por el lado de la piel 2–4 minutos, o en el borde de la brasa hasta que esté tierna.",
+    "Sirve templada con su jugo y una pizca de sal en escamas."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Fruta de hueso a la brasa",
+    "ratio": "Brasa media, 6–8 minutos en total",
+    "note": "Cara cortada seca y untada."
+   },
+   {
+    "use": "Manzana o pera asada entera",
+    "ratio": "Horno a 180 °C, 35–50 minutos",
+    "note": "Con mantequilla, azúcar y un poco de vino dulce en la bandeja."
+   },
+   {
+    "use": "Higos asados",
+    "ratio": "Horno a 220 °C, 6–8 minutos",
+    "note": "Abiertos en cruz, con miel o algarroba."
+   },
+   {
+    "use": "Piña o caqui en rodajas",
+    "ratio": "Rodajas de 2 cm a la plancha o brasa fuerte, 2–3 minutos por lado",
+    "note": "Glasea al final con caramelo o ron."
+   }
+  ],
+  "variants": [
+   {
+    "id": "higos-y-algarroba",
+    "name": "Higos asados con algarroba",
+    "note": "Higo de la isla, miel o sirope de algarroba y queso fresco."
+   },
+   {
+    "id": "citricos",
+    "name": "Cítricos a la brasa",
+    "note": "Medios limones o naranjas marcados para zumo con humo o para emplatar."
+   },
+   {
+    "id": null,
+    "name": "Fruta asada en papillote",
+    "note": "Fruta con mantequilla, azúcar y especias cerrada en papel; tierna y con su propio jugo."
+   }
+  ],
+  "keys": [
+   "Fruta firme y no demasiado madura: la blanda se deshace y suelta agua.",
+   "Parrilla muy limpia y aceitada: los restos de carne o pescado pasan sabor.",
+   "Deja marcar sin mover; la fruta se despega sola cuando se ha caramelizado.",
+   "La sal en escamas y un ácido al final la sacan de lo empalagoso.",
+   "Recoge el jugo de la bandeja: con un poco de mantequilla es la salsa."
+  ],
+  "errors": [
+   {
+    "p": "Se pega y se rompe en la parrilla",
+    "fix": "Parrilla fría o sucia, o se movió antes de tiempo. Calienta bien, limpia y aceita."
+   },
+   {
+    "p": "Sabor a quemado amargo",
+    "fix": "Llama directa sobre el azúcar. Usa brasa sin llama y pinta el azúcar al final."
+   },
+   {
+    "p": "Fruta aguada y sin color",
+    "fix": "Fruta muy madura o calor bajo. Elige fruta firme y brasa más viva."
+   }
+  ],
+  "history": "Asar fruta en las brasas del hogar o en el horno del pan es una costumbre antigua en el campo mediterráneo, y la manzana asada es un postre casero de siempre en España. Las cocinas de brasa actuales han recuperado la fruta como cierre del servicio.",
+  "uses": [
+   "Postre con helado o crema fría",
+   "Con tarta de queso o yogur",
+   "Acompañar carnes y aves",
+   "Base de compota tostada para helado"
+  ],
+  "keep": "Mejor al momento. Asada, en frío y tapada, 2 días; regenera unos minutos en horno a 160 °C o úsala en compota.",
+  "pro": "Prepara la fruta partida y untada antes del servicio y márcala al pedir. Reserva un rincón de la parrilla limpio solo para dulce.",
+  "related": [
+   "fuego-y-brasa",
+   "caramelo",
+   "higos-y-algarroba",
+   "frutas-en-almibar",
+   "tarta-de-queso"
+  ]
+ },
+ {
+  "id": "coulis-y-geles-de-fruta",
+  "name": "Coulis, salsas y geles de fruta",
+  "name_en": "Fruit coulis, sauces and gels",
+  "cat": "dulce",
+  "group": "Fruta",
+  "aka": [
+   "coulis",
+   "salsa de fruta",
+   "gel de fruta",
+   "gel fluido",
+   "pure de fruta",
+   "sopa de fruta"
+  ],
+  "summary": "Purés y zumos de fruta ajustados de azúcar y textura para salsear, puntear o servir como sopa: el ácido fresco del postre.",
+  "what": "El coulis es fruta triturada y colada con un poco de almíbar y ácido; según la fruta se hace en crudo o con un hervor corto. Para que no se separe y se pueda puntear limpio se convierte en gel fluido: se cuaja con agar y se vuelve a triturar, y queda una crema brillante que no se escurre en el plato. Los zumos clarificados o infusionados sirven como sopa o como líquido para bañar la fruta.",
+  "base": {
+   "for": "1 kg de puré (frutos rojos, mango, albaricoque)",
+   "items": [
+    [
+     "Fruta limpia",
+     "1 kg"
+    ],
+    [
+     "Azúcar o almíbar 1:1",
+     "80–150 g según la fruta"
+    ],
+    [
+     "Zumo de limón",
+     "20–40 g"
+    ],
+    [
+     "Agar en polvo (para gel fluido)",
+     "8–10 g"
+    ],
+    [
+     "Sal",
+     "una pizca"
+    ]
+   ],
+   "steps": [
+    "Coulis: tritura la fruta con el azúcar y el limón, cuela por chino fino y ajusta el dulce en frío.",
+    "Si la fruta oscurece o es fibrosa (albaricoque, ciruela, manzana), cuécela 5 minutos con el azúcar antes de triturar.",
+    "Gel fluido: dispersa el agar en el puré frío, lleva a hervor y mantén 1–2 minutos removiendo.",
+    "Deja cuajar en bandeja en frío, unos 30 minutos.",
+    "Tritura el gel hasta que quede liso y brillante, cuela y quita las burbujas al vacío o dejando reposar. Guarda en biberón."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Coulis para salsear",
+    "ratio": "10–15 % de azúcar sobre la fruta",
+    "note": "Ajusta en frío: el frío apaga el dulce."
+   },
+   {
+    "use": "Gel fluido para puntear",
+    "ratio": "0,8–1 % de agar sobre el puré",
+    "note": "Hervir 1–2 minutos; cuaja por debajo de 40 °C."
+   },
+   {
+    "use": "Sopa de fruta",
+    "ratio": "Zumo colado con 5–8 % de azúcar y hierbas infusionadas en frío 12 horas",
+    "note": "Se sirve muy fría."
+   },
+   {
+    "use": "Salsa caliente de fruta",
+    "ratio": "Puré reducido con mantequilla, 50 g por litro, al final",
+    "note": "Para fruta asada o tortitas."
+   }
+  ],
+  "variants": [
+   {
+    "id": "gelificantes-y-espesantes",
+    "name": "Gel con goma xantana",
+    "note": "En frío, 2–3 g por litro; conserva el sabor a fruta cruda, menos brillo."
+   },
+   {
+    "id": "helados-y-sorbetes",
+    "name": "Sorbete",
+    "note": "El mismo puré con más azúcar, mantecado o congelado."
+   },
+   {
+    "id": null,
+    "name": "Zumo clarificado",
+    "note": "Puré congelado y descongelado en un paño en frío; da un líquido limpio y transparente."
+   }
+  ],
+  "keys": [
+   "Prueba y ajusta en frío, a la temperatura de servicio.",
+   "El ácido manda: una fruta plana se arregla con limón antes que con azúcar.",
+   "Cuela fino; las pepitas y fibras se notan en boca y en el plato.",
+   "La fruta con enzimas (piña, kiwi, papaya) no cuaja con gelatina: usa agar o cuécela.",
+   "El gel fluido aguanta el pase sin sangrar; el coulis se separa en minutos sobre una crema."
+  ],
+  "errors": [
+   {
+    "p": "El coulis suelta agua en el plato",
+    "fix": "Puré poco ligado. Pásalo a gel fluido o liga con xantana."
+   },
+   {
+    "p": "Gel fluido con grumos",
+    "fix": "Agar mal disperso o poco hervido. Dispersa en frío y hierve 1–2 minutos."
+   },
+   {
+    "p": "Color apagado o marrón",
+    "fix": "Fruta oxidada. Añade limón al triturar y enfría rápido."
+   }
+  ],
+  "history": "Las salsas de fruta acompañan los postres desde la pastelería clásica, y los geles fluidos con agar se generalizaron con la cocina de vanguardia de finales del siglo XX. Hoy son una base de cualquier partida de postres.",
+  "uses": [
+   "Salsear o puntear postres",
+   "Sopa fría de fruta",
+   "Capa de vaso con crema y crujiente",
+   "Base de sorbetes y granizados"
+  ],
+  "keep": "Coulis crudo en frío, 2–3 días; congelado, 3 meses. Gel fluido en biberón y en frío, 4–5 días.",
+  "pro": "Haz el puré en temporada y congélalo en bolsas de 500 g. Ten el gel en biberón en la partida de postres; agítalo antes de cada servicio.",
+  "related": [
+   "gelificantes-y-espesantes",
+   "helados-y-sorbetes",
+   "citricos",
+   "frutas-en-almibar"
+  ]
  }
 ]

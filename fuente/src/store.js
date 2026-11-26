@@ -118,6 +118,12 @@ export async function addSaberVersion(id, text, why = '') {
  save('saber');
  return state.saber[id];
 }
+export async function addSaberGuide(id, path) {
+ const at = new Date().toISOString(), cur = state.saber[id] || {id, custom: null, versions: [], created_at: at};
+ state.saber[id] = {...cur, guides: [...arr(cur.guides), {path, at, ai: true}].slice(-20), updated_at: at};
+ save('saber');
+ return state.saber[id];
+}
 export async function saveSaberEntry(entry) {
  const at = new Date().toISOString(), cur = state.saber[entry.id] || {id: entry.id, versions: [], created_at: at};
  state.saber[entry.id] = {...cur, custom: entry, updated_at: at, deleted_at: null};
@@ -252,9 +258,10 @@ export function mergeSaber(a, b) {
  if (!a) return b; if (!b) return a;
  const seen = new Set(), versions = [...arr(a.versions), ...arr(b.versions)].filter(v => { const k = v.at + '|' + v.text; if (seen.has(k)) return false; seen.add(k); return true; }).sort((x, y) => String(x.at).localeCompare(String(y.at)));
  const newer = String(b.updated_at || '') > String(a.updated_at || '') ? b : a;
- return {...a, ...b, versions, custom: newer.custom ?? a.custom ?? b.custom ?? null, deleted_at: newer.deleted_at || null, updated_at: [a.updated_at, b.updated_at].sort().pop()};
+ const gseen = new Set(), guides = [...arr(a.guides), ...arr(b.guides)].filter(g => g?.path && !gseen.has(g.path) && gseen.add(g.path)).sort((x, y) => String(x.at).localeCompare(String(y.at)));
+ return {...a, ...b, versions, guides, custom: newer.custom ?? a.custom ?? b.custom ?? null, deleted_at: newer.deleted_at || null, updated_at: [a.updated_at, b.updated_at].sort().pop()};
 }
-export const imagePaths = () => [...new Set([...state.dishes.flatMap(d => arr(d.images).map(i => i?.path).filter(Boolean)), ...Object.values(state.docs || {}).map(x => x?.image).filter(p => typeof p === 'string' && p.startsWith('img/'))])];
+export const imagePaths = () => [...new Set([...Object.values(state.saber || {}).flatMap(x => arr(x?.guides).map(g => g?.path)).filter(p => typeof p === 'string' && p.startsWith('img/')), ...state.dishes.flatMap(d => arr(d.images).map(i => i?.path).filter(Boolean)), ...Object.values(state.docs || {}).map(x => x?.image).filter(p => typeof p === 'string' && p.startsWith('img/'))])];
 
 // ---------- Versiones anteriores de cada plato (en este aparato) ----------
 // Antes de cambiar un plato se guarda cómo estaba, como mucho una vez cada 15 minutos (o siempre, si se pide), hasta 60 por plato.

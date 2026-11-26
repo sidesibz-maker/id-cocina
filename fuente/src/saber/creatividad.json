@@ -781,5 +781,400 @@
    "contar-un-plato",
    "contraste-y-equilibrio"
   ]
+ },
+ {
+  "id": "menu-de-temporada",
+  "name": "Diseñar un menú de temporada",
+  "name_en": "Designing a seasonal menu",
+  "cat": "creatividad",
+  "group": "Menús",
+  "aka": [
+   "menu degustacion de temporada",
+   "calendario de producto",
+   "menu estacional",
+   "cambiar el menu",
+   "temporada"
+  ],
+  "summary": "Cómo partir del calendario del producto para construir un menú degustación que cambie con el año y que cada pase llegue en su mejor momento.",
+  "what": "Un menú de temporada no se escribe en una mesa: se escribe mirando el mercado. Se empieza por saber qué producto está en su mejor punto en cada semana del año, se eligen los que van a sostener el menú y se construyen los platos alrededor de ellos. Después se ordenan con las reglas de [[ritmo-de-un-menu|ritmo]]. La temporada no es solo verdura y fruta: también pescados, setas, caza y hierbas tienen su momento.",
+  "method": [
+   "Haz un calendario de producto de tu zona, mes a mes: verdura, fruta, pescado, marisco, setas, hierbas y caza. Apunta cuándo empieza, cuándo está mejor y cuándo se acaba cada uno.",
+   "Elige para la temporada tres o cuatro productos ancla: los que están en su mejor momento y tienen fuerza para ser protagonistas.",
+   "Para cada ancla, piensa varias formas de cocinarlo (crudo, a la brasa, en caldo, en conserva) y elige la que mejor lo muestra.",
+   "Construye cada pase con el método de [[construir-un-plato]] y comprueba que los acompañantes también son de temporada.",
+   "Ordena el menú por intensidad y alterna temperaturas y texturas. Busca un hilo: un producto que vuelva en dos formas o un aroma que una el principio y el final.",
+   "Planifica los relevos: qué plato cambia primero cuando su producto se acaba y cuál lo sustituye, para que el menú evolucione sin rehacerse entero."
+  ],
+  "ratios": [
+   {
+    "use": "Productos ancla por menú",
+    "ratio": "3–4",
+    "note": "Más se dispersa; menos se repite."
+   },
+   {
+    "use": "Rotación",
+    "ratio": "Cambiar 1–2 pases cada 3–4 semanas",
+    "note": "El menú sigue al mercado sin perder su forma."
+   },
+   {
+    "use": "Margen de cada producto",
+    "ratio": "Usarlo solo en su pico, no al principio ni al final de la temporada",
+    "note": "Lo de principio de temporada aún no sabe; lo del final ya no."
+   },
+   {
+    "use": "Prueba del menú completo",
+    "ratio": "Una cena de prueba antes de cada cambio grande",
+    "note": "Con el equipo, de seguido y apuntando."
+   }
+  ],
+  "variants": [
+   {
+    "id": "ritmo-de-un-menu",
+    "name": "Ritmo de un menú",
+    "note": "Cómo ordenar los pases una vez elegidos."
+   },
+   {
+    "id": "producto-de-la-isla",
+    "name": "Producto de la isla",
+    "note": "Cuando el hilo del menú es el lugar."
+   },
+   {
+    "id": null,
+    "name": "Menú de un solo producto",
+    "note": "Todo el menú alrededor de un producto en su pico: tomate, gamba, setas."
+   }
+  ],
+  "keys": [
+   "Primero el producto, después la idea: un plato precioso con producto fuera de temporada no se sostiene.",
+   "Conserva en el pico para usar fuera de él: encurtidos, confitados, fermentos y secos alargan la temporada con sentido.",
+   "Un mismo producto en dos formas da hilo al menú sin repetirse.",
+   "Escribe qué platos dependen de qué producto: así sabes cuál cae primero.",
+   "Los relevos se prueban antes de que haga falta."
+  ],
+  "errors": [
+   {
+    "p": "El menú se queda viejo a media temporada",
+    "fix": "Platos atados a un producto que se acabó. Planifica relevos desde el principio."
+   },
+   {
+    "p": "Todo sabe igual en verano",
+    "fix": "Mismos productos en todos los pases. Limita cada ancla a uno o dos pases y alterna técnicas."
+   },
+   {
+    "p": "Platos de temporada con guarnición de todo el año",
+    "fix": "Revisa acompañantes y salsas: también tienen que ser del momento."
+   }
+  ],
+  "history": "Cocinar con la temporada ha sido lo normal durante casi toda la historia; la cocina de autor de las últimas décadas lo convirtió en una forma explícita de diseñar menús y de contar un lugar.",
+  "uses": [
+   "Menú degustación",
+   "Cambio de carta por temporada",
+   "Cenas especiales",
+   "Plan de conservas del año"
+  ],
+  "keep": "Guarda cada versión del menú con fecha y notas de lo que funcionó; al año siguiente es tu mejor punto de partida.",
+  "pro": "Ten el calendario de producto a la vista en cocina. Dedica un rato fijo cada semana a probar el producto que entra y decidir si ya está para el menú.",
+  "related": [
+   "ritmo-de-un-menu",
+   "construir-un-plato",
+   "producto-de-la-isla",
+   "cocina-ibicenca",
+   "contar-un-plato"
+  ]
+ },
+ {
+  "id": "producto-de-la-isla",
+  "name": "Trabajar con producto de la isla",
+  "name_en": "Cooking with island produce",
+  "cat": "creatividad",
+  "group": "Raíces",
+  "aka": [
+   "producto local",
+   "km 0",
+   "productores locales",
+   "producto de proximidad",
+   "despensa de la isla",
+   "territorio"
+  ],
+  "summary": "Cómo conocer, elegir y cocinar el producto de la propia isla para que la cocina tenga lugar: del huerto, la lonja, el monte y la despensa tradicional.",
+  "what": "Una isla tiene una despensa limitada y muy marcada: pescado de roca y de arrastre de su costa, cítricos, almendra, algarroba, higos, aceite, sal, hierbas de monte, cordero y cerdo, verdura de secano y de huerto. Trabajar con ella no es poner la palabra «local» en la carta, sino entender qué tiene cada producto y cuándo, y cocinarlo para que se reconozca. La [[cocina-ibicenca|cocina tradicional]] es la mejor escuela para empezar.",
+  "method": [
+   "Recorre la isla con ojos de cocinero: mercados, lonja, huertos, salinas, almazaras y el monte. Apunta qué hay, quién lo produce y en qué época.",
+   "Prueba cada producto solo, crudo y cocinado de la forma más simple, y anota qué lo distingue de uno de fuera.",
+   "Habla con quien lo produce: qué variedad es, cuándo está mejor y qué partes no se aprovechan normalmente.",
+   "Elige técnicas que lo respeten: la brasa, el crudo, el caldo y la conserva suelen mostrar mejor un producto que una elaboración larga.",
+   "Usa el producto entero: hojas, pieles, flores, espinas y huesos dan caldos, aceites, polvos y encurtidos.",
+   "Cuenta en el plato y en la sala de dónde viene, con datos concretos que sepas que son ciertos."
+  ],
+  "ratios": [
+   {
+    "use": "Producto de la isla en un plato",
+    "ratio": "El protagonista y al menos uno de los acompañantes",
+    "note": "Lo que viene de fuera, que apoye y no tape."
+   },
+   {
+    "use": "Despensa propia",
+    "ratio": "Conservar en el pico: encurtidos, aceites, sales, secos",
+    "note": "La isla también se cocina en invierno."
+   },
+   {
+    "use": "Visitas al productor",
+    "ratio": "Al menos una por temporada a los productores principales",
+    "note": "Se aprende más en el campo que en el catálogo."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cocina-ibicenca",
+    "name": "Cocina ibicenca",
+    "note": "Los platos y técnicas tradicionales de la isla."
+   },
+   {
+    "id": "menu-de-temporada",
+    "name": "Menú de temporada",
+    "note": "Ordenar el producto de la isla a lo largo del año."
+   },
+   {
+    "id": "pescado-de-roca",
+    "name": "Pescado de roca",
+    "note": "Uno de los productos más propios de la costa."
+   }
+  ],
+  "keys": [
+   "Local no significa bueno por sí mismo: prueba y elige lo mejor de lo que hay.",
+   "El producto de la isla se reconoce cuando se cocina poco y bien.",
+   "Lo que la tradición hace con un producto suele tener un motivo; entiéndelo antes de cambiarlo.",
+   "Aprovecha lo que el mercado no valora: pescado pequeño, cortes menos nobles, fruta fea.",
+   "Lo que cuentes del origen tiene que ser verdad y comprobable."
+  ],
+  "errors": [
+   {
+    "p": "«Producto local» que no se nota en el plato",
+    "fix": "Técnica que lo tapa. Simplifica y deja que sea el protagonista."
+   },
+   {
+    "p": "Menú imposible de mantener",
+    "fix": "Platos que dependen de un producto muy escaso. Ten siempre una alternativa de la isla probada."
+   },
+   {
+    "p": "Copiar la tradición sin entenderla",
+    "fix": "Aprende primero la versión de casa y pregunta por qué se hace así."
+   }
+  ],
+  "history": "Las islas mediterráneas han vivido durante siglos de una despensa propia y de lo que llegaba por mar. La cocina de restaurante de las últimas décadas ha vuelto a mirar esa despensa como fuente de identidad.",
+  "uses": [
+   "Carta y menú degustación",
+   "Platos de raíz reinterpretados",
+   "Despensa de conservas propias",
+   "Contar el plato en sala"
+  ],
+  "keep": "Lleva un cuaderno de productores y productos: variedad, época, notas de cata y qué hiciste con él.",
+  "pro": "Cuando entra un producto nuevo de la isla, pruébalo con el equipo antes de decidir nada. Lo que sobra o no se usa en el plato puede ser base de una conserva o de un caldo.",
+  "related": [
+   "cocina-ibicenca",
+   "menu-de-temporada",
+   "pescado-de-roca",
+   "higos-y-algarroba",
+   "almendra",
+   "citricos",
+   "sal-y-flor-de-sal",
+   "contar-un-plato"
+  ]
+ },
+ {
+  "id": "catas-y-notas",
+  "name": "Pruebas de cata y cómo anotarlas",
+  "name_en": "Tasting trials and notes",
+  "cat": "creatividad",
+  "group": "Método",
+  "aka": [
+   "catar",
+   "prueba de plato",
+   "cuaderno de pruebas",
+   "notas de cata",
+   "cata a ciegas",
+   "probar un plato"
+  ],
+  "summary": "Un método para catar con orden, comparar versiones y apuntar lo justo para que la siguiente prueba sea mejor que la anterior.",
+  "what": "Probar es una técnica más de cocina. Una buena prueba cambia una sola cosa cada vez, compara versiones una al lado de otra y deja una nota que se entiende semanas después. Así un plato avanza por decisiones y no por intuiciones sueltas. Las notas sirven también para el equipo: lo que no está apuntado se pierde cuando cambia el turno.",
+  "method": [
+   "Antes de cocinar, escribe qué quieres comprobar en una frase: «¿mejor con más ácido o con más grasa?».",
+   "Cambia una sola variable por prueba (tiempo, temperatura, cantidad, ingrediente) y deja el resto igual. Pesa y mide todo.",
+   "Prepara las versiones a la vez y cátalas una al lado de otra, a la temperatura de servicio, con agua y pan neutro entre bocados.",
+   "Cata en orden: primero mira, luego huele, después el bocado solo y por último el bocado completo con el resto del plato.",
+   "Anota con palabras concretas: «falta ácido al final», «la textura se pierde a los 2 minutos», no «está bien».",
+   "Decide y apunta qué haces en la siguiente prueba. Guarda la versión ganadora con sus cantidades exactas."
+  ],
+  "ratios": [
+   {
+    "use": "Variables por prueba",
+    "ratio": "1",
+    "note": "Si cambias dos a la vez, no sabes cuál ha funcionado."
+   },
+   {
+    "use": "Versiones a comparar",
+    "ratio": "2–3 a la vez",
+    "note": "Más se confunden en boca."
+   },
+   {
+    "use": "Catadores",
+    "ratio": "Al menos 2–3 personas, alguna que no haya cocinado el plato",
+    "note": "Quien cocina se acostumbra a su propio sabor."
+   },
+   {
+    "use": "Temperatura de cata",
+    "ratio": "La de servicio",
+    "note": "El frío apaga el dulce y la sal; el calor sube el aroma."
+   }
+  ],
+  "variants": [
+   {
+    "id": "construir-un-plato",
+    "name": "Construir un plato",
+    "note": "El método completo del que la cata es el último paso."
+   },
+   {
+    "id": null,
+    "name": "Cata a ciegas",
+    "note": "Las versiones se sirven sin decir cuál es cuál; evita que gane la que esperabas."
+   },
+   {
+    "id": null,
+    "name": "Cata de producto",
+    "note": "El mismo producto de varios orígenes o variedades, crudo y cocinado igual."
+   }
+  ],
+  "keys": [
+   "Una variable cada vez; todo lo demás, pesado y fijo.",
+   "Cata a la temperatura y en el formato en que se va a servir.",
+   "Palabras de cocina, no de gusto: qué falta, qué sobra, cuándo se nota.",
+   "Apunta también lo que no ha funcionado: evita repetirlo.",
+   "Limpia la boca entre versiones y no cates con hambre extrema ni recién comido."
+  ],
+  "errors": [
+   {
+    "p": "Pruebas que no llevan a nada",
+    "fix": "Demasiadas cosas cambiadas a la vez. Vuelve a una variable por prueba."
+   },
+   {
+    "p": "Notas que no se entienden después",
+    "fix": "Notas vagas. Usa cantidades, tiempos y frases concretas."
+   },
+   {
+    "p": "Siempre gana la versión del cocinero",
+    "fix": "Cata con otras personas y, si puedes, a ciegas."
+   }
+  ],
+  "history": "Catar con método viene del mundo del vino y del aceite, y la cocina de investigación lo ha adoptado para desarrollar platos con más rigor.",
+  "uses": [
+   "Desarrollo de platos nuevos",
+   "Ajustar un plato de carta",
+   "Comparar productos",
+   "Formar el paladar del equipo"
+  ],
+  "keep": "Guarda cada prueba como versión del plato, con fecha, cantidades, lo que cambiaste y la conclusión. Repasa las notas antes de volver a tocarlo.",
+  "pro": "Fija un momento de cata con el equipo, fuera del servicio. Usa siempre las mismas cucharas, platos y temperatura para que las pruebas sean comparables.",
+  "related": [
+   "construir-un-plato",
+   "contraste-y-equilibrio",
+   "acidez-en-cocina",
+   "de-la-tecnica-al-plato"
+  ]
+ },
+ {
+  "id": "de-la-tecnica-al-plato",
+  "name": "Desarrollar un plato desde una técnica",
+  "name_en": "Building a dish from a technique",
+  "cat": "creatividad",
+  "group": "Método",
+  "aka": [
+   "partir de una tecnica",
+   "idea desde la tecnica",
+   "tecnica como punto de partida",
+   "investigar una tecnica",
+   "i+d"
+  ],
+  "summary": "Cómo tomar una técnica (curar, fermentar, ahumar, confitar, una espuma) y explorarla hasta encontrar el plato donde tiene sentido.",
+  "what": "Hay platos que nacen de un producto y otros que nacen de una técnica: aprendes a [[curado-de-pescado|curar]], a [[fermentacion-lactica|fermentar]] o a cocinar en [[fuego-y-brasa|brasa]] de otra manera y te preguntas qué puede hacer con distintos productos. El riesgo es que el plato sea solo una demostración. El método consiste en explorar la técnica con orden, quedarte con lo que cambia de verdad el producto y construir el plato a partir de ese cambio.",
+  "method": [
+   "Aprende la técnica en su versión clásica y entiende qué hace: qué cambia en textura, sabor, color o conservación, y por qué.",
+   "Aplícala a 5–6 productos distintos con las mismas condiciones y cátalos todos juntos.",
+   "Quédate con el producto en el que la técnica aporta algo que no tenía, no con el más vistoso.",
+   "Cambia una variable cada vez (tiempo, sal, temperatura, humo) hasta encontrar el punto de ese producto.",
+   "Construye el plato alrededor del resultado: qué le falta, qué contraste necesita, qué acabado.",
+   "Pregúntate si el comensal notaría la diferencia sin la técnica. Si no, el plato aún no está."
+  ],
+  "ratios": [
+   {
+    "use": "Productos de prueba",
+    "ratio": "5–6 por técnica",
+    "note": "Con las mismas condiciones para poder comparar."
+   },
+   {
+    "use": "Variables",
+    "ratio": "Una por prueba",
+    "note": "Mira [[catas-y-notas]]."
+   },
+   {
+    "use": "Técnicas por plato",
+    "ratio": "Una protagonista",
+    "note": "Varias técnicas llamativas en un plato compiten entre sí."
+   }
+  ],
+  "variants": [
+   {
+    "id": "construir-un-plato",
+    "name": "Construir un plato",
+    "note": "Cuando el punto de partida es una idea o un producto."
+   },
+   {
+    "id": "catas-y-notas",
+    "name": "Pruebas de cata",
+    "note": "Cómo comparar las pruebas de la técnica."
+   },
+   {
+    "id": null,
+    "name": "Técnica tradicional en producto nuevo",
+    "note": "Una técnica de la cocina de siempre (escabeche, salazón) aplicada a un producto que no la suele llevar."
+   }
+  ],
+  "keys": [
+   "La técnica es un medio: el plato tiene que justificarla.",
+   "Domina la versión clásica antes de cambiarla.",
+   "Prueba en muchos productos; la sorpresa suele estar donde no la esperabas.",
+   "Apunta condiciones exactas: lo que no se puede repetir no sirve para un servicio.",
+   "Piensa pronto en el servicio: tiempo, espacio y cómo aguanta en el pase."
+  ],
+  "errors": [
+   {
+    "p": "Plato que es solo una demostración",
+    "fix": "La técnica no mejora el producto. Vuelve a probar en otros productos o descártala."
+   },
+   {
+    "p": "Resultados que no se repiten",
+    "fix": "Condiciones sin medir. Pesa, mide temperaturas y tiempos y apúntalos."
+   },
+   {
+    "p": "Imposible en servicio",
+    "fix": "Técnica pensada sin el pase. Adapta: adelanta pasos, porciona o simplifica el acabado."
+   }
+  ],
+  "history": "La cocina de investigación de finales del siglo XX popularizó la idea de crear desde la técnica, y hoy muchas cocinas trabajan así en sus talleres y laboratorios.",
+  "uses": [
+   "Sesiones de I+D",
+   "Platos nuevos de carta",
+   "Formación del equipo",
+   "Retos del Laboratorio"
+  ],
+  "keep": "Documenta cada exploración: técnica, productos, condiciones, resultados y descartes. Lo descartado hoy puede ser la base de otro plato.",
+  "pro": "Reserva un tiempo fijo cada semana para una técnica y unos pocos productos. Cuando algo funcione, pásalo a una ficha de método antes de llevarlo a la carta.",
+  "related": [
+   "construir-un-plato",
+   "catas-y-notas",
+   "curado-de-pescado",
+   "fermentacion-lactica",
+   "fuego-y-brasa",
+   "contraste-y-equilibrio"
+  ]
  }
 ]

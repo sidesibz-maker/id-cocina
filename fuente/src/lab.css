@@ -1326,3 +1326,9 @@ h1,h2,h3,.cover-title,.trend-title,.dish-name,.kpath h3,.labmech h3,.idea h3,.em
 .ksug-name{font-weight:500}.ksug-name b{font-weight:700;color:var(--ink)}
 .ksug-meta{font-family:var(--narrow);font-weight:500;font-size:13px;color:var(--mut);white-space:nowrap}
 .kdym{margin:8px 0 4px;color:var(--ink2)}.kdym a{color:var(--ink);font-weight:600;text-decoration-color:var(--ember)}
+
+/* Imagen guía de la Biblioteca. */
+.kguide-img{margin:16px 0 8px;border:1px solid var(--line)}
+.kguide-img img{width:100%;aspect-ratio:3/2;object-fit:cover;background:var(--soft)}
+.kguide-img figcaption{padding:8px 12px;font-size:13px;color:var(--mut);border-top:1px solid var(--line)}
+@media (min-width:960px){.kguide-img{max-width:760px}}

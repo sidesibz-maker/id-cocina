@@ -140,6 +140,18 @@ ok((await page.textContent('.kdym').catch(() => '')).includes('Bechamel'), 'no d
 ok(await page.locator('#saberRes .kcreate').count() === 0, 'con una falta ofrece escribir una ficha nueva');
 await page.keyboard.press('ArrowDown'); await page.keyboard.press('Enter'); await wait(400);
 ok((await page.evaluate(() => location.hash)) === '#/biblioteca/bechamel', 'elegir la sugerencia con el teclado no abre la ficha: ' + await page.evaluate(() => location.hash));
+// Imagen guía con ChatGPT (simulada): se crea, se guarda en la ficha y entra en la copia
+const PNG = 'iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAAFklEQVR4nGP4z8DAwMDAxMDAwMDAAAANHQEDK+mmyAAAAABJRU5ErkJggg==';
+let imgBody = null;
+await ctx.route('https://api.openai.com/v1/images/generations', r => (imgBody = r.request().postDataJSON(), r.fulfill({status: 200, contentType: 'application/json', body: JSON.stringify({data: [{b64_json: PNG}]})})));
+await go('#/biblioteca/hojaldre'); await page.waitForSelector('[data-act=guide-img]');
+await page.click('[data-act=guide-img]'); await page.waitForSelector('.kguide-img img[src^="blob:"]', {timeout: 8000}).catch(() => {});
+ok(await page.locator('.kguide-img img[src^="blob:"]').count() === 1, 'la imagen guía no aparece en la ficha');
+ok(imgBody?.model === 'gpt-image-1' && /Hojaldre/.test(imgBody?.prompt || '') && /Sin texto/.test(imgBody?.prompt || ''), 'la petición de imagen no es la esperada');
+ok((await page.textContent('.kguide-img figcaption')).includes('No es una foto real'), 'la imagen no avisa de que es generada');
+ok((await page.textContent('[data-act=guide-img]')).includes('Otra imagen guía'), 'después no ofrece otra imagen');
+await page.reload(); await wait(800); await go('#/biblioteca/hojaldre'); await page.waitForSelector('.kguide-img img[src^="blob:"]', {timeout: 8000}).catch(() => {});
+ok(await page.locator('.kguide-img img[src^="blob:"]').count() === 1, 'la imagen guía no se conserva al volver a abrir');
 ok(!errors.length, 'errores: ' + errors.join(' | '));
 await browser.close();
 console.log(fails.length ? 'FALLOS:\n - ' + fails.join('\n - ') : 'la Biblioteca: todo correcto');

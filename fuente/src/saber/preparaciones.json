@@ -1299,5 +1299,672 @@
       "verduras-a-la-brasa",
       "patata-chafada-brasa"
     ]
+  },
+  {
+    "id": "tomate-confitado",
+    "name": "Tomate confitado",
+    "name_en": "Confit tomato",
+    "cat": "bases",
+    "group": "Cremas y guarniciones",
+    "aka": [
+      "petalos de tomate",
+      "tomate al horno",
+      "tomate cherry confitado",
+      "tomate en aceite",
+      "tomato confit"
+    ],
+    "role": "guarnicion",
+    "techniques": [
+      "confitado",
+      "horno"
+    ],
+    "summary": "Tomate pelado cocido despacio en aceite con ajo y tomillo hasta concentrar su dulzor sin perder la forma: guarnición, base de salsa y acabado.",
+    "what": "Con calor bajo y largo el [[tomate]] pierde parte del agua, se concentra y se vuelve tierno y brillante, sin llegar a secarse como un tomate deshidratado. Se hace en pétalos (cuartos sin semillas) al horno, o con tomate cherry entero en aceite caliente. El aceite que sobra queda perfumado y sirve para aliñar.",
+    "base": {
+      "for": "1 kg de tomate pera maduro (unos 500 g de pétalos)",
+      "items": [
+        [
+          "Tomate pera maduro",
+          "1 kg"
+        ],
+        [
+          "Aceite de oliva virgen extra",
+          "150 ml"
+        ],
+        [
+          "Ajo laminado",
+          "2 dientes"
+        ],
+        [
+          "Tomillo fresco",
+          "4 ramitas"
+        ],
+        [
+          "Sal fina",
+          "8 g"
+        ],
+        [
+          "Azúcar",
+          "8 g"
+        ],
+        [
+          "Pimienta negra",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Haz un corte en cruz en la base de los tomates, escáldalos 10–15 segundos y enfría en agua con hielo. Pélalos.",
+        "Córtalos en cuartos y quita las semillas para obtener pétalos. Guarda el interior para una salsa o un agua de tomate.",
+        "Coloca los pétalos en bandeja con papel, salpimienta, espolvorea el azúcar, reparte ajo y tomillo y riega con el aceite.",
+        "Hornea a 100–110 °C, 2–2,5 horas, hasta que estén arrugados en los bordes pero aún tiernos y jugosos.",
+        "Deja enfriar en la bandeja y guarda cubiertos con su aceite."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Pétalos para guarnición",
+        "ratio": "Horno a 100–110 °C, 2–2,5 h",
+        "note": "Tiernos, con forma, sabor concentrado."
+      },
+      {
+        "use": "Tomate cherry entero",
+        "ratio": "Cubierto de aceite a 70–80 °C, 30–40 min",
+        "note": "La piel se arruga y se retira fácil."
+      },
+      {
+        "use": "Semiseco para conservar más",
+        "ratio": "Horno a 90 °C, 4–5 h",
+        "note": "Más firme y dulce; se guarda en aceite."
+      },
+      {
+        "use": "Salsa rápida",
+        "ratio": "Pétalos triturados con su aceite y un punto de vinagre",
+        "note": "Para pasta, pan o pescado."
+      }
+    ],
+    "variants": [
+      {
+        "id": "salsa-de-tomate",
+        "name": "Salsa de tomate",
+        "note": "Para una salsa cocinada larga en cazo."
+      },
+      {
+        "id": "deshidratados-y-crujientes",
+        "name": "Tomate deshidratado",
+        "note": "Secado del todo a 60 °C; crujiente o en polvo."
+      },
+      {
+        "id": null,
+        "name": "Tomate confitado con especias",
+        "note": "Con comino, hinojo o pimentón en vez de tomillo."
+      }
+    ],
+    "keys": [
+      "Tomate muy maduro: el confitado concentra lo que ya tiene, no lo crea.",
+      "Calor bajo: por encima de 120 °C se tuesta y se seca.",
+      "El azúcar solo si el tomate está ácido; prueba antes.",
+      "Guarda el aceite: con el ajo y el tomillo es un aliño excelente para usar en pocos días."
+    ],
+    "errors": [
+      {
+        "p": "Tomate seco y correoso",
+        "fix": "Horno fuerte o demasiado tiempo. Baja la temperatura y saca cuando aún esté jugoso."
+      },
+      {
+        "p": "Sin sabor",
+        "fix": "Tomate verde o de invierno. Usa tomate en temporada o sube el tiempo para concentrar."
+      },
+      {
+        "p": "Se deshace al moverlo",
+        "fix": "Tomate muy maduro o pétalos muy finos. Corta en cuartos enteros y mueve con espátula fina."
+      }
+    ],
+    "history": "Cocer verduras despacio en grasa es una técnica antigua de conserva, y el tomate cocido lento en aceite con hierbas es habitual en la cocina mediterránea de casa y de restaurante.",
+    "uses": [
+      "Guarnición de pescado a la brasa",
+      "Tostas y pan con tomate",
+      "Ensaladas templadas",
+      "Pastas y arroces",
+      "Base de salsa rápida"
+    ],
+    "keep": "En frío, cubierto de aceite, 4–5 días. El ajo y las hierbas frescas en aceite deben estar siempre en frío. Congelado sin aceite, 2 meses.",
+    "pro": "Confita en temporada alta, cuando el tomate está en su punto, y congela en placas. Para el pase, pétalos escurridos en bandeja pequeña, a temperatura ambiente durante el servicio y de vuelta a frío al acabar.",
+    "related": [
+      "tomate",
+      "confitado",
+      "aceites-aromatizados",
+      "salsa-de-tomate",
+      "deshidratados-y-crujientes"
+    ]
+  },
+  {
+    "id": "salsa-tahina-limon",
+    "name": "Salsa de tahina y limón",
+    "name_en": "Tahini lemon sauce",
+    "cat": "salsas",
+    "group": "Aliños de pase",
+    "aka": [
+      "tahina",
+      "tahini",
+      "salsa de sesamo",
+      "tarator",
+      "crema de sesamo"
+    ],
+    "role": "salsa",
+    "techniques": [
+      "emulsion"
+    ],
+    "summary": "Pasta de sésamo emulsionada con limón y agua helada: salsa fría, cremosa y ácida para verduras asadas, cordero, pescado y legumbres.",
+    "what": "La tahina es pasta de sésamo molido. Al mezclarla con limón se espesa y parece cortarse; con agua helada añadida poco a poco se vuelve una crema lisa, pálida y fluida. Es una [[emulsiones|emulsión]] sin huevo que aguanta bien el pase y da un fondo tostado y ácido que va muy bien con la brasa.",
+    "base": {
+      "for": "unos 450 g de salsa",
+      "items": [
+        [
+          "Tahina",
+          "200 g"
+        ],
+        [
+          "Zumo de limón",
+          "80 g"
+        ],
+        [
+          "Agua helada",
+          "120–160 g"
+        ],
+        [
+          "Ajo rallado",
+          "3 g"
+        ],
+        [
+          "Sal fina",
+          "4 g"
+        ],
+        [
+          "Comino tostado y molido",
+          "una pizca (opcional)"
+        ]
+      ],
+      "steps": [
+        "Remueve bien el bote de tahina: el aceite se separa arriba.",
+        "Mezcla el ajo con el limón y la sal y deja 10 minutos para suavizar el ajo; cuela si quieres una salsa más limpia.",
+        "Bate la tahina con el limón: se espesará y parecerá cortada.",
+        "Añade el agua helada en hilo, batiendo, hasta que quede lisa, brillante y con la textura que quieras.",
+        "Prueba y ajusta de sal y limón. Si espesa en frío, aligera con un poco de agua."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Salsa para napar o en biberón",
+        "ratio": "1 parte de tahina, 0,4 de limón y 0,7–0,8 de agua",
+        "note": "Como una nata líquida."
+      },
+      {
+        "use": "Crema para base de plato",
+        "ratio": "1 parte de tahina, 0,4 de limón y 0,4–0,5 de agua",
+        "note": "Se extiende con cuchara y sostiene la verdura encima."
+      },
+      {
+        "use": "Con yogur",
+        "ratio": "1 parte de tahina por 1 de yogur griego",
+        "note": "Más suave y fresca; menos limón."
+      },
+      {
+        "use": "Con hierbas",
+        "ratio": "20–30 g de perejil o cilantro por cada 100 g de tahina, triturado",
+        "note": "Salsa verde para pescado."
+      }
+    ],
+    "variants": [
+      {
+        "id": "salsa-yogur-limon",
+        "name": "Salsa de yogur y limón",
+        "note": "Sin sésamo; más láctea y fresca."
+      },
+      {
+        "id": "crema-garbanzos-comino",
+        "name": "Crema de garbanzos",
+        "note": "La tahina es parte de muchas cremas de legumbre."
+      },
+      {
+        "id": null,
+        "name": "Tahina con miel o melaza",
+        "note": "Para postres o para cordero y zanahoria asada."
+      }
+    ],
+    "keys": [
+      "Que no te asuste el corte: es normal; el agua fría lo arregla.",
+      "Agua helada: da una salsa más clara y más lisa.",
+      "Tahina de buena calidad, sin amargor; pruébala antes.",
+      "El ajo se suaviza macerado en el limón.",
+      "Espesa en frío: ajusta la textura justo antes del servicio."
+    ],
+    "errors": [
+      {
+        "p": "Salsa amarga",
+        "fix": "Tahina vieja o muy tostada. Cambia de tahina y compensa con limón y una pizca de miel."
+      },
+      {
+        "p": "Granulosa o cortada",
+        "fix": "Falta agua. Añade agua helada poco a poco batiendo hasta que se alise."
+      },
+      {
+        "p": "Demasiado espesa en el pase",
+        "fix": "Ha enfriado. Aligera con agua y vuelve a salar."
+      }
+    ],
+    "history": "Las salsas de sésamo con limón son parte de las cocinas de Oriente Medio y del Mediterráneo oriental, y se han extendido por los restaurantes de cocina mediterránea en las últimas décadas.",
+    "uses": [
+      "Verduras a la brasa (berenjena, coliflor, zanahoria)",
+      "Cordero asado o en brocheta",
+      "Pescado a la brasa",
+      "Legumbres y falafel",
+      "Base de plato de verduras"
+    ],
+    "keep": "En frío y tapada, 4–5 días. Bate antes de usar y ajusta con agua.",
+    "pro": "Prepárala en tanda para varios días sin hierbas y añade las hierbas a la cantidad del servicio. Guárdala en biberón; si espesa, un chorrito de agua fría y agitar.",
+    "related": [
+      "emulsiones",
+      "salsa-yogur-limon",
+      "crema-garbanzos-comino",
+      "verduras-a-la-brasa",
+      "cordero"
+    ]
+  },
+  {
+    "id": "ensalada-de-hierbas",
+    "name": "Ensalada de hierbas",
+    "name_en": "Herb salad",
+    "cat": "bases",
+    "group": "Cremas y guarniciones",
+    "aka": [
+      "hierbas aliñadas",
+      "ensalada de hojas tiernas",
+      "brotes aliñados",
+      "hierbas frescas al plato",
+      "herb salad"
+    ],
+    "role": "fresco",
+    "techniques": [
+      "crudo"
+    ],
+    "summary": "Hojas enteras de hierbas tiernas y brotes aliñadas al último segundo: el punto fresco, verde y ácido que levanta un plato de brasa o de guiso.",
+    "what": "No es una ensalada de lechuga con hierbas, sino hierbas como protagonistas: hojas de perejil, cilantro, eneldo, menta, hinojo, cebollino en trozos, brotes y alguna flor. Aliñada con ácido y aceite justo antes de servir, corta la grasa de una carne o un pescado a la brasa y aporta [[contraste-y-equilibrio|contraste]] de temperatura y textura. Su fuerza es que cada hoja se reconoce.",
+    "base": {
+      "for": "10 raciones de acabado (unos 80 g de hojas)",
+      "items": [
+        [
+          "Perejil en hojas",
+          "20 g"
+        ],
+        [
+          "Cilantro o eneldo en hojas",
+          "15 g"
+        ],
+        [
+          "Menta o albahaca, hojas pequeñas",
+          "10 g"
+        ],
+        [
+          "Hinojo en hebras o cebollino en bastones de 2 cm",
+          "15 g"
+        ],
+        [
+          "Brotes o rúcula pequeña",
+          "20 g"
+        ],
+        [
+          "Chalota en aros muy finos",
+          "20 g"
+        ],
+        [
+          "Zumo de limón",
+          "15 g"
+        ],
+        [
+          "Aceite de oliva virgen extra",
+          "40 g"
+        ],
+        [
+          "Sal en escamas",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Deshoja las hierbas a mano, dejando las hojas enteras y sin tallos duros.",
+        "Lávalas en agua muy fría, 5 minutos, para que se pongan tersas. Escurre y seca muy bien en centrifugadora o sobre papel.",
+        "Lava la chalota cortada en agua fría 10 minutos para quitarle fuerza; escurre y seca.",
+        "Guarda las hierbas mezcladas en caja con papel ligeramente húmedo, en frío.",
+        "Al servir, aliña en un bol la porción con limón, aceite y sal, remueve con los dedos y coloca enseguida con altura."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Aliño",
+        "ratio": "1 parte de ácido por 3 de aceite",
+        "note": "Lo justo para dar brillo; no debe quedar líquido en el bol."
+      },
+      {
+        "use": "Ración de acabado",
+        "ratio": "6–10 g de hojas por plato",
+        "note": "Encima o al lado de la proteína."
+      },
+      {
+        "use": "Como guarnición",
+        "ratio": "25–35 g de hojas por plato",
+        "note": "Con algo crujiente: [[migas-limon|migas]], frutos secos o encurtidos."
+      },
+      {
+        "use": "Lavado",
+        "ratio": "Agua a 2–4 °C, 5 minutos",
+        "note": "La hoja se hidrata y aguanta más en el plato."
+      }
+    ],
+    "variants": [
+      {
+        "id": "gremolata",
+        "name": "Gremolata",
+        "note": "Las hierbas picadas con ralladura y ajo, en vez de enteras."
+      },
+      {
+        "id": "cebolla-encurtida",
+        "name": "Con cebolla encurtida",
+        "note": "Más ácido y más color; ideal para carnes grasas."
+      },
+      {
+        "id": null,
+        "name": "Con cítricos",
+        "note": "Gajos de pomelo o naranja y su zumo en el aliño."
+      }
+    ],
+    "keys": [
+      "Aliña en el último segundo: el ácido y la sal marchitan la hoja en un par de minutos.",
+      "Seca bien; el agua diluye el aliño y empapa la hoja.",
+      "Hojas enteras, no picadas: se reconoce cada sabor.",
+      "Equilibra hierbas suaves (perejil) con potentes (cilantro, menta) en poca cantidad.",
+      "Ponla lejos de la salsa caliente o al final, encima, con altura."
+    ],
+    "errors": [
+      {
+        "p": "Hojas marchitas al llegar a la mesa",
+        "fix": "Aliñada antes de tiempo o sobre salsa caliente. Aliña al momento y colócala en una zona seca del plato."
+      },
+      {
+        "p": "Sabe solo a una hierba",
+        "fix": "Demasiado cilantro o menta. Reduce la potente y sube el perejil."
+      },
+      {
+        "p": "Hierbas negras en la caja",
+        "fix": "Humedad o golpe de frío. Sécalas mejor y no las pongas pegadas a la pared de la cámara."
+      }
+    ],
+    "history": "El uso de hierbas frescas enteras como ensalada es común en muchas cocinas, del Mediterráneo oriental al sudeste asiático, y se ha extendido en la cocina de restaurante como acabado fresco.",
+    "uses": [
+      "Cordero, cerdo o pato a la brasa",
+      "Pescado graso a la brasa",
+      "Guisos de legumbre",
+      "Crudos y tartares",
+      "Tostas y bocadillos"
+    ],
+    "keep": "Hojas lavadas y secas, en caja con papel ligeramente húmedo, en frío a 2–4 °C, 2–3 días según la hierba. Aliñada, no se guarda.",
+    "pro": "Haz la mezcla de hierbas por la mañana y tenla en caja en el pase. Un bol pequeño frío, el aliño en biberón y la sal al lado: se aliña ración a ración.",
+    "related": [
+      "hierbas-frescas",
+      "vinagreta",
+      "cebolla-encurtida",
+      "alino-alcaparras-limon",
+      "gremolata",
+      "contraste-y-equilibrio"
+    ]
+  },
+  {
+    "id": "labneh",
+    "name": "Yogur colado (labneh)",
+    "name_en": "Strained yogurt (labneh)",
+    "cat": "bases",
+    "group": "Cremas y guarniciones",
+    "aka": [
+      "labneh",
+      "labne",
+      "yogur colado",
+      "queso de yogur",
+      "yogur escurrido"
+    ],
+    "role": "cremoso",
+    "techniques": [
+      "crudo"
+    ],
+    "summary": "Yogur salado y escurrido en paño hasta quedar denso como un queso fresco: base fría y ácida para verduras asadas, cordero y pescado.",
+    "what": "Al escurrir el yogur se va el suero y queda una crema espesa, ácida y lisa. Según las horas de escurrido va de una crema untable a una pasta que se puede bolear y guardar en aceite. En el plato hace de base fría que contrasta con lo caliente de la brasa, y aguanta bien aceites, especias y hierbas por encima.",
+    "base": {
+      "for": "1 kg de yogur (unos 450–550 g de labneh)",
+      "items": [
+        [
+          "Yogur natural entero o griego",
+          "1 kg"
+        ],
+        [
+          "Sal fina",
+          "8–10 g"
+        ],
+        [
+          "Ralladura de limón",
+          "opcional"
+        ]
+      ],
+      "steps": [
+        "Mezcla el yogur con la sal.",
+        "Forra un colador con un paño de algodón fino o estameña limpia y ponlo sobre un recipiente.",
+        "Vierte el yogur, cierra el paño por encima y deja escurrir en cámara a 2–4 °C.",
+        "Para crema untable, 12 horas; para bolear, 24–36 horas, con un peso ligero encima las últimas horas.",
+        "Pasa a un recipiente, bate un momento para alisar y ajusta de sal y limón."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Crema para base de plato",
+        "ratio": "12 horas de escurrido, rinde un 50–55 %",
+        "note": "Se extiende con cuchara."
+      },
+      {
+        "use": "Bolitas en aceite",
+        "ratio": "24–36 horas, rinde un 40–45 %",
+        "note": "Bolea con las manos aceitadas y cubre con aceite y hierbas secas."
+      },
+      {
+        "use": "Sal",
+        "ratio": "8–10 g por kilo de yogur",
+        "note": "La sal ayuda a soltar el suero."
+      },
+      {
+        "use": "Labneh ahumado",
+        "ratio": "Ahumado en frío por debajo de 25 °C, 15–20 minutos",
+        "note": "Sobre hielo para que no se caliente."
+      }
+    ],
+    "variants": [
+      {
+        "id": "salsa-yogur-limon",
+        "name": "Salsa de yogur y limón",
+        "note": "El yogur sin escurrir, aligerado y aliñado."
+      },
+      {
+        "id": "salsa-tahina-limon",
+        "name": "Labneh con tahina",
+        "note": "Una parte de tahina por cuatro de labneh; más tostado."
+      },
+      {
+        "id": null,
+        "name": "Labneh de cabra u oveja",
+        "note": "Con yogur de leche de cabra u oveja; más carácter."
+      }
+    ],
+    "keys": [
+      "Yogur entero: el desnatado da una pasta seca y granulosa.",
+      "Escurre siempre en frío, nunca a temperatura ambiente.",
+      "El suero sirve para marinar carnes, para fermentos o para masas.",
+      "Termínalo en el plato con aceite bueno, una especia (za'atar, comino, pimentón) y algo crujiente.",
+      "Sírvelo frío bajo algo caliente: el contraste es la gracia."
+    ],
+    "errors": [
+      {
+        "p": "Demasiado seco y cortado",
+        "fix": "Escurrido de más. Bátelo con un poco de suero o de yogur hasta alisar."
+      },
+      {
+        "p": "Sabor muy ácido",
+        "fix": "Yogur muy ácido o muy viejo. Usa yogur fresco y equilibra con aceite y una pizca de miel."
+      },
+      {
+        "p": "Textura granulosa",
+        "fix": "Yogur desnatado o batido de más. Usa yogur entero y bate solo lo justo."
+      }
+    ],
+    "history": "El yogur colado es un alimento cotidiano en Oriente Medio y el Mediterráneo oriental desde hace mucho tiempo, y se ha hecho habitual en la cocina mediterránea de restaurante.",
+    "uses": [
+      "Base para verduras asadas o a la brasa",
+      "Cordero y brochetas",
+      "Pescado a la brasa con especias",
+      "Desayunos y brunch",
+      "Aperitivo con pan y aceite"
+    ],
+    "keep": "Crema en frío y tapada, 5–6 días. Bolitas cubiertas de aceite, en frío, 2 semanas.",
+    "pro": "Pon a escurrir por la tarde para usar al día siguiente. En el pase, en manga o en bol frío; se sirve con cuchara caliente haciendo un surco para el aceite.",
+    "related": [
+      "salsa-yogur-limon",
+      "salsa-tahina-limon",
+      "verduras-a-la-brasa",
+      "cordero",
+      "quesos-en-cocina"
+    ]
+  },
+  {
+    "id": "crema-ajo-asado",
+    "name": "Ajo asado y crema de ajo",
+    "name_en": "Roasted garlic and garlic cream",
+    "cat": "bases",
+    "group": "Cremas y guarniciones",
+    "aka": [
+      "ajo asado",
+      "ajo confitado",
+      "crema de ajo",
+      "pure de ajo",
+      "ajo negro casero"
+    ],
+    "role": "cremoso",
+    "techniques": [
+      "horno",
+      "confitado",
+      "pure"
+    ],
+    "summary": "Ajo cocinado despacio hasta que pierde el picor y se vuelve dulce y untable: entero como guarnición o en crema para acompañar carnes y verduras.",
+    "what": "El calor suave y largo transforma el ajo: desaparece el picor, se vuelve cremoso y aparecen notas dulces y tostadas. Se hace asado entero en el horno o en las brasas, o pelado y confitado en aceite. Triturado con un poco de líquido y grasa da una crema concentrada que se usa en poca cantidad, como acompañamiento o para dar fondo a salsas y purés.",
+    "base": {
+      "for": "unos 250 g de crema",
+      "items": [
+        [
+          "Ajo, dientes pelados",
+          "300 g"
+        ],
+        [
+          "Aceite de oliva suave",
+          "para cubrir (unos 400 ml)"
+        ],
+        [
+          "Leche o nata",
+          "60–100 g"
+        ],
+        [
+          "Zumo de limón",
+          "10 g"
+        ],
+        [
+          "Sal",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Blanquea los dientes de ajo: cúbrelos con agua fría, lleva a hervor y escurre. Repite dos veces si quieres un sabor más suave.",
+        "Cúbrelos con aceite en un cazo pequeño y confita a 85–95 °C, 40–50 minutos, hasta que se aplasten con una cuchara sin resistencia y tomen un color dorado claro.",
+        "Escurre el ajo y guarda el aceite.",
+        "Tritura el ajo con la leche caliente, el limón, sal y 30–50 g de su aceite hasta obtener una crema lisa. Pasa por colador fino."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Ajo confitado entero",
+        "ratio": "Aceite a 85–95 °C, 40–50 min",
+        "note": "Dorado claro; si se tuesta, amarga."
+      },
+      {
+        "use": "Cabeza asada entera",
+        "ratio": "Horno a 180 °C, 45–60 min, envuelta en papel con aceite",
+        "note": "O en el borde de la brasa con ceniza, girando."
+      },
+      {
+        "use": "Crema de ajo",
+        "ratio": "300 g de ajo por 60–100 g de lácteo y 30–50 g de aceite",
+        "note": "Más lácteo da una crema más suave."
+      },
+      {
+        "use": "Ajo para salsas y purés",
+        "ratio": "1–2 dientes confitados por ración",
+        "note": "Da fondo sin picor."
+      }
+    ],
+    "variants": [
+      {
+        "id": "alioli",
+        "name": "Alioli de ajo asado",
+        "note": "Montado con ajo confitado en vez de crudo; más suave y dulce."
+      },
+      {
+        "id": "aceites-aromatizados",
+        "name": "Aceite de ajo confitado",
+        "note": "El aceite del confitado, colado; muy aromático."
+      },
+      {
+        "id": null,
+        "name": "Ajo negro",
+        "note": "Cabezas enteras a 60–70 °C con humedad durante 2–4 semanas; dulce, oscuro y blando."
+      }
+    ],
+    "keys": [
+      "Fuego bajo: el ajo dorado oscuro amarga.",
+      "Blanquear antes suaviza el sabor para cremas de base.",
+      "Ajo en aceite: siempre en frío y pocos días por el riesgo de botulismo.",
+      "Úsala como condimento, en poca cantidad: es muy concentrada.",
+      "Un punto ácido al final la hace menos pesada."
+    ],
+    "errors": [
+      {
+        "p": "Amarga",
+        "fix": "Se ha dorado de más. Baja la temperatura del aceite y saca al color dorado claro."
+      },
+      {
+        "p": "Crema con grumos",
+        "fix": "Ajo poco hecho. Confítalo hasta que se deshaga y pasa por colador fino."
+      },
+      {
+        "p": "Sabor demasiado fuerte",
+        "fix": "Sin blanquear o mucha cantidad. Blanquea y aligera con más lácteo."
+      }
+    ],
+    "history": "Asar o confitar el ajo para suavizarlo es habitual en muchas cocinas mediterráneas, donde el ajo es básico y se cocina de muchas maneras.",
+    "uses": [
+      "Carnes y aves a la brasa",
+      "Verduras asadas",
+      "Base de purés y salsas",
+      "Tostas y pan",
+      "Alioli suave"
+    ],
+    "keep": "Ajo y aceite de confitado, en frío y tapados, 4–5 días; congelado en cubiteras, 2 meses. La crema, en frío, 4 días.",
+    "pro": "Confita en tanda una vez por semana y congela en cubiteras. Guarda la crema en biberón; un punto por plato basta.",
+    "related": [
+      "alioli",
+      "aceites-aromatizados",
+      "confitado",
+      "grasas-infusionadas",
+      "patata-chafada-brasa"
+    ]
   }
 ]

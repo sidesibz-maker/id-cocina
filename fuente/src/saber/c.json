@@ -2429,5 +2429,709 @@
       "vinagreta",
       "ligazones"
     ]
+  },
+  {
+    "id": "caldo-de-roca",
+    "name": "Caldo de roca y suquet",
+    "aka": [
+      "caldo de morralla",
+      "caldo de pescado de roca",
+      "sopa de roca",
+      "suquet",
+      "fondo de roca",
+      "caldo de pescado tostado"
+    ],
+    "cat": "fondos",
+    "group": "Fondos de mar",
+    "summary": "Caldo intenso de pescado de roca entero, tostado con sofrito y ñora, base del suquet, de los arroces de pescado y de la sopa de roca.",
+    "what": "A diferencia del [[fumet]], que busca un caldo limpio de espinas de pescado blanco, el caldo de roca usa [[pescado-de-roca|pescado de roca]] entero y pequeño, se rehoga en aceite con [[sofrito]] y ñora y se cuece con más fuerza para sacar sabor, color y gelatina. El suquet es el guiso que sale de ahí: patata cocida en ese caldo, [[picada]] para ligar y el pescado bueno al final. Para arroces se cuela fino; para sopa se tritura y se pasa por chino apretando.",
+    "base": {
+      "for": "4 l aprox.",
+      "items": [
+        [
+          "Pescado de roca pequeño y entero, limpio de vísceras y agallas",
+          "2,5 kg"
+        ],
+        [
+          "Cabezas y espinas de pescado blanco o de roca",
+          "1 kg"
+        ],
+        [
+          "Aceite de oliva virgen extra",
+          "150 ml"
+        ],
+        [
+          "Cebolla",
+          "300 g"
+        ],
+        [
+          "Puerro",
+          "200 g"
+        ],
+        [
+          "Ajo",
+          "1 cabeza"
+        ],
+        [
+          "Ñoras remojadas, solo la carne",
+          "4"
+        ],
+        [
+          "Tomate maduro rallado",
+          "400 g"
+        ],
+        [
+          "Pimentón dulce",
+          "5 g"
+        ],
+        [
+          "Hinojo o tallos de hinojo silvestre",
+          "100 g"
+        ],
+        [
+          "Agua fría",
+          "6 l"
+        ]
+      ],
+      "steps": [
+        "Rehoga en el aceite la cebolla, el puerro, el ajo y el hinojo a fuego medio 15 minutos, hasta que estén dorados.",
+        "Sube el fuego, añade el pescado y las cabezas y tuéstalos 8–10 minutos, removiendo de vez en cuando, hasta que se peguen un poco al fondo.",
+        "Añade la carne de ñora, el pimentón (sin quemarlo) y el tomate; sofríe hasta que el tomate pierda el agua.",
+        "Moja con el agua fría, lleva a hervor y desespuma. Cuece a hervor suave 30–35 minutos.",
+        "Para arroces, cuela por chino sin apretar y luego por estameña. Para sopa, tritura con las espinas grandes retiradas y pasa por chino apretando bien."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Arroz a banda y arroces de pescado",
+        "ratio": "1 kg de pescado por 1,5 l de agua, colado fino",
+        "note": "Hervor suave, 30 minutos; más tiempo amarga la espina."
+      },
+      {
+        "use": "Sopa de roca",
+        "ratio": "Caldo triturado con el pescado y pasado por chino",
+        "note": "Espesa sola por la carne y la gelatina."
+      },
+      {
+        "use": "Suquet",
+        "ratio": "1 l de caldo por 500 g de patata y 1 kg de pescado en rodajas",
+        "note": "Patata a 90–95 °C hasta casi hecha; pescado los últimos 5–8 minutos."
+      },
+      {
+        "use": "Fondo para salsa de pescado",
+        "ratio": "Caldo colado reducido a la mitad",
+        "note": "Para ligar con mantequilla o con un [[pil-pil]]."
+      }
+    ],
+    "variants": [
+      {
+        "id": "fumet",
+        "name": "Fumet",
+        "note": "Espinas de pescado blanco sin tostar; más limpio y neutro."
+      },
+      {
+        "id": "fondo-de-marisco",
+        "name": "Fondo de marisco",
+        "note": "Cabezas de crustáceo tostadas; más dulce y yodado."
+      },
+      {
+        "id": null,
+        "name": "Bullit",
+        "note": "Pescado y patata cocidos en caldo con alioli; con el caldo se hace después un arroz."
+      }
+    ],
+    "keys": [
+      "Pescado muy fresco y bien limpio de vísceras y agallas: es lo que más amarga.",
+      "El tostado del pescado y del sofrito es el sabor; sin dorar, sale un caldo plano.",
+      "La ñora se rasca de la piel: la piel amarga y no se tritura bien.",
+      "Cuidado con las espinas venenosas de araña, escórpora y cabracho al limpiar: guantes y tijera.",
+      "Sin sal: se sala el arroz o el guiso final."
+    ],
+    "errors": [
+      {
+        "p": "Caldo amargo",
+        "fix": "Vísceras o agallas sin quitar, o cocción larga. Limpia bien y no pases de 35 minutos."
+      },
+      {
+        "p": "Sin color ni sabor",
+        "fix": "Poco tostado o poco pescado. Dora más y sube la proporción de pescado."
+      },
+      {
+        "p": "Sabor a quemado",
+        "fix": "Pimentón o ajo quemados. Añade el pimentón con el fuego bajo y moja enseguida."
+      },
+      {
+        "p": "Turbio y graso para arroz",
+        "fix": "Hervor fuerte y prensado. Para arroz, hervor suave y sin apretar."
+      }
+    ],
+    "history": "Los caldos de pescado de roca y los guisos de pescadores con patata son comunes en toda la costa mediterránea, de Cataluña y Baleares a Valencia y Provenza. Nacieron para aprovechar el pescado pequeño o con muchas espinas que no se vendía.",
+    "uses": [
+      "Arroz a banda y arroces de pescado",
+      "Suquet y guisos de pescado",
+      "Fideuá",
+      "Sopa de roca",
+      "Bullit de peix"
+    ],
+    "keep": "Abatir de 60 °C a menos de 10 °C en menos de 2 horas. En cámara a 0–4 °C, 2 días; congelado, 2 meses. Llevar a hervor antes de usar.",
+    "pro": "Hazlo con el pescado pequeño de la lonja y con los recortes del día. Porciona en bolsas de 1–2 l según el arroz más pedido. Prueba cada tanda: el sabor cambia mucho según el pescado.",
+    "related": [
+      "fumet",
+      "pescado-de-roca",
+      "arroces",
+      "sofrito",
+      "picada",
+      "fondo-de-marisco",
+      "alioli"
+    ]
+  },
+  {
+    "id": "caldo-de-verduras-tostadas",
+    "name": "Caldo de verduras tostadas",
+    "aka": [
+      "caldo oscuro de verduras",
+      "fondo vegetal tostado",
+      "jugo de verduras",
+      "caldo vegetal oscuro",
+      "demi vegetal"
+    ],
+    "cat": "fondos",
+    "group": "Fondos claros",
+    "summary": "Caldo de verduras asadas hasta muy doradas, con setas y algas para dar fondo: reducido, hace de jugo oscuro en platos sin carne.",
+    "what": "El [[caldo-de-verduras]] claro es ligero y fresco; este busca lo contrario. Las verduras se asan hasta caramelizarse, se desglasa la bandeja y se cuece el caldo con setas secas y alga kombu, que aportan el sabor profundo que en un fondo de carne dan los huesos. Reducido y montado con mantequilla o aceite, sustituye al [[jugo-de-carne]] en platos vegetales y acompaña muy bien las verduras de brasa.",
+    "base": {
+      "for": "3 l aprox. (o 500 ml de jugo reducido)",
+      "items": [
+        [
+          "Cebolla en cuartos, con piel",
+          "1 kg"
+        ],
+        [
+          "Zanahoria",
+          "500 g"
+        ],
+        [
+          "Puerro",
+          "300 g"
+        ],
+        [
+          "Apio",
+          "200 g"
+        ],
+        [
+          "Champiñón o recortes de setas",
+          "500 g"
+        ],
+        [
+          "Tomate concentrado",
+          "60 g"
+        ],
+        [
+          "Ajo",
+          "1 cabeza"
+        ],
+        [
+          "Aceite de oliva",
+          "80 ml"
+        ],
+        [
+          "Vino blanco o tinto",
+          "250 ml"
+        ],
+        [
+          "Setas secas",
+          "20 g"
+        ],
+        [
+          "Alga kombu",
+          "10 g"
+        ],
+        [
+          "Agua fría",
+          "5 l"
+        ],
+        [
+          "Tomillo, laurel y pimienta en grano",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Asa las verduras con el aceite en bandeja a 200–220 °C, 40–50 minutos, girándolas una vez, hasta que estén muy doradas en los bordes. Añade el tomate concentrado los últimos 10 minutos.",
+        "Pasa las verduras a la olla y desglasa la bandeja con el vino, raspando bien el fondo.",
+        "Añade el agua fría, las setas secas y las hierbas. Lleva a 90–95 °C y cuece 1 hora sin hervor fuerte.",
+        "Fuera del fuego, mete la kombu y deja infusionar 20 minutos; retírala.",
+        "Cuela sin apretar. Para jugo, reduce a fuego vivo hasta que napee la cuchara."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Caldo para risotto y arroces de verduras",
+        "ratio": "1 kg de verdura por 1,5 l de agua",
+        "note": "1 hora a 90–95 °C."
+      },
+      {
+        "use": "Jugo vegetal para salsear",
+        "ratio": "Caldo reducido a 1/6",
+        "note": "Monta al final con 50 g de mantequilla o aceite por litro de jugo."
+      },
+      {
+        "use": "Jugo ligado sin reducir tanto",
+        "ratio": "3–5 g de almidón de maíz o de patata por litro, desleído en frío",
+        "note": "Hervor de 1 minuto; brillo sin pasarse de sal."
+      },
+      {
+        "use": "Más fondo",
+        "ratio": "20–30 g de miso o de salsa de soja por litro de jugo",
+        "note": "Al final y fuera del fuego."
+      }
+    ],
+    "variants": [
+      {
+        "id": "caldo-de-verduras",
+        "name": "Caldo de verduras claro",
+        "note": "Sin tostar; más ligero y fresco."
+      },
+      {
+        "id": "dashi",
+        "name": "Dashi",
+        "note": "Kombu y bonito seco; si se quiere vegetal, kombu y setas."
+      },
+      {
+        "id": null,
+        "name": "Caldo de brasa",
+        "note": "Las verduras se marcan en la parrilla en vez de en el horno; toma humo."
+      }
+    ],
+    "keys": [
+      "Tuesta de verdad: el color de la bandeja es el color del caldo. Pero sin quemar, que amarga.",
+      "La piel de cebolla da color dorado; quítala si quieres un caldo más claro.",
+      "Setas y kombu dan el sabor de fondo; sin ellos el caldo se queda dulce y plano.",
+      "Poca zanahoria si vas a reducir mucho: concentra azúcar.",
+      "Sin sal: la reducción lo concentra todo."
+    ],
+    "errors": [
+      {
+        "p": "Caldo amargo",
+        "fix": "Verdura quemada en la bandeja o kombu hervida. Tuesta hasta dorado oscuro, no negro, y la kombu fuera del fuego."
+      },
+      {
+        "p": "Jugo dulce y empalagoso",
+        "fix": "Mucha zanahoria y cebolla. Reduce su peso y añade un punto ácido (vinagre o vino) al final."
+      },
+      {
+        "p": "Jugo sin cuerpo",
+        "fix": "Las verduras no tienen gelatina. Monta con mantequilla o liga con un poco de almidón."
+      }
+    ],
+    "history": "Los caldos de verduras asadas se han extendido con el crecimiento de la cocina vegetal en restaurantes, como respuesta a la falta de un fondo oscuro sin carne. Combinan técnicas clásicas de tostado con el uso de algas y setas tomado de otras cocinas.",
+    "uses": [
+      "Jugo para verduras a la brasa",
+      "Risotto y arroces de verduras",
+      "Glasear verduras",
+      "Guisos de legumbre",
+      "Salsas de platos vegetales"
+    ],
+    "keep": "Abatir de 60 °C a menos de 10 °C en menos de 2 horas. En cámara a 0–4 °C, 4–5 días; congelado, 3 meses. El jugo reducido, en cubiteras congelado.",
+    "pro": "Guarda en el congelador los recortes limpios de verdura y setas de la semana y haz el caldo con ellos. Congela el jugo reducido en cubos de 30 g: uno o dos por ración.",
+    "related": [
+      "caldo-de-verduras",
+      "reducciones",
+      "asado-de-verduras",
+      "glaseado-de-verduras",
+      "umami-y-fondo",
+      "miso-y-koji",
+      "dashi"
+    ]
+  },
+  {
+    "id": "fondo-oscuro-de-ave",
+    "name": "Fondo oscuro de ave",
+    "aka": [
+      "fondo tostado de ave",
+      "caldo de pollo asado",
+      "jugo de ave",
+      "jus de volaille",
+      "fondo oscuro de pollo",
+      "fondo de pato"
+    ],
+    "cat": "fondos",
+    "group": "Fondos oscuros",
+    "summary": "Fondo de carcasas y alitas de ave tostadas con verduras, más rápido y ligero que el de ternera; reducido da el jugo de ave de los platos de brasa.",
+    "what": "Es el hermano corto del [[fondo-oscuro]]: en vez de huesos de ternera, carcasas, cuellos y alitas de pollo, gallina o pato bien tostados. Necesita la mitad de tiempo, sabe a asado y tiene gelatina de sobra por la piel y las articulaciones. Reducido y montado se convierte en un [[jugo-de-carne|jugo]] de ave brillante que acompaña aves, verduras asadas y arroces de carne sin tapar el producto.",
+    "base": {
+      "for": "4 l aprox.",
+      "items": [
+        [
+          "Carcasas, cuellos y alitas de ave troceados",
+          "5 kg"
+        ],
+        [
+          "Patas de pollo limpias",
+          "500 g"
+        ],
+        [
+          "Cebolla",
+          "500 g"
+        ],
+        [
+          "Zanahoria",
+          "250 g"
+        ],
+        [
+          "Apio",
+          "150 g"
+        ],
+        [
+          "Ajo",
+          "1 cabeza"
+        ],
+        [
+          "Tomate concentrado",
+          "60 g"
+        ],
+        [
+          "Vino blanco seco",
+          "500 ml"
+        ],
+        [
+          "Agua fría",
+          "6 l"
+        ],
+        [
+          "Tomillo, laurel y pimienta negra en grano",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Tuesta las carcasas, alitas y patas en bandeja a 200–220 °C, 40–50 minutos, girando a media cocción, hasta un dorado oscuro y parejo. Quita la grasa que suelten y guárdala.",
+        "En la marmita, dora las verduras en un poco de esa grasa. Añade el tomate concentrado y tuéstalo 3–4 minutos sin quemarlo.",
+        "Desglasa las bandejas con el vino, raspando los jugos pegados, y vierte todo en la marmita con los huesos.",
+        "Cubre con el agua fría, lleva a 90–95 °C y desespuma. Cuece 3–4 horas con temblor suave, sin hervor fuerte.",
+        "Cuela sin apretar, abate y desgrasa en frío."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Fondo para mojar guisos y arroces",
+        "ratio": "1 kg de carcasa por 1,2 l de agua, 3–4 h a 90–95 °C",
+        "note": "Sin reducir."
+      },
+      {
+        "use": "Jugo de ave para salsear",
+        "ratio": "Reducido a 1/5–1/6",
+        "note": "Monta con 40–60 g de mantequilla fría por litro de jugo."
+      },
+      {
+        "use": "Jugo rápido de servicio",
+        "ratio": "Recortes de ave dorados en sauté, mojados con fondo y reducidos 30 minutos",
+        "note": "Más fresco y con sabor a asado reciente."
+      },
+      {
+        "use": "Fondo de pato",
+        "ratio": "Igual que el de pollo, 3 h; desgrasar a fondo",
+        "note": "Con naranja, enebro o miel para acompañar el pato."
+      }
+    ],
+    "variants": [
+      {
+        "id": "fondo-oscuro",
+        "name": "Fondo oscuro de ternera",
+        "note": "Huesos de vacuno; cocción más larga y sabor más profundo."
+      },
+      {
+        "id": "glace",
+        "name": "Glace de ave",
+        "note": "El fondo reducido hasta que cubre la cuchara y cuaja muy firme."
+      },
+      {
+        "id": "fondo-blanco",
+        "name": "Fondo blanco de ave",
+        "note": "Sin tostar; para velouté, consomé y arroces claros."
+      }
+    ],
+    "keys": [
+      "El color del fondo sale del tostado: dorado oscuro, nunca negro.",
+      "Desgrasa la bandeja antes de desglasar; la grasa de ave quemada amarga.",
+      "Las patas dan la gelatina que luego hace brillar el jugo.",
+      "No lo hiervas fuerte: emulsiona la grasa y queda turbio y pesado.",
+      "Guarda la grasa de ave: para confitar, saltear patatas o freír pan."
+    ],
+    "errors": [
+      {
+        "p": "Sabor a quemado",
+        "fix": "Huesos o tomate quemados. Tuesta a 200 °C y vigila; el tomate solo unos minutos."
+      },
+      {
+        "p": "Turbio y graso",
+        "fix": "Hervor fuerte. Mantén temblor y desgrasa en frío."
+      },
+      {
+        "p": "Jugo sin brillo",
+        "fix": "Poca gelatina. Añade patas o alitas, o reduce más."
+      },
+      {
+        "p": "Jugo salado al reducir",
+        "fix": "Fondo con sal. Nunca sales el fondo; sala la salsa al final."
+      }
+    ],
+    "history": "Los fondos tostados de ave forman parte de la cocina clásica, junto a los de ternera. En la cocina actual se usan cada vez más por ser más rápidos, más ligeros y por el sabor a asado que acompaña bien a la cocina de brasa.",
+    "uses": [
+      "Jugo de pollo, pato o pichón",
+      "Arroces de carne y de ave",
+      "Glasear verduras asadas",
+      "Guisos de ave",
+      "Base de glace de ave"
+    ],
+    "keep": "Abatir de 60 °C a menos de 10 °C en menos de 2 horas. En cámara a 0–4 °C, 3–4 días con la grasa encima; congelado, 3 meses. Jugo reducido en cubiteras, congelado.",
+    "pro": "Guarda las carcasas y recortes de ave del despiece congelados hasta tener una tanda. Ponlo al terminar el servicio a fuego mínimo y cuela por la mañana.",
+    "related": [
+      "fondo-oscuro",
+      "fondo-blanco",
+      "jugo-de-carne",
+      "glace",
+      "reducciones",
+      "mirepoix",
+      "pollo-y-aves",
+      "pato"
+    ]
+  },
+  {
+    "id": "grasas-infusionadas",
+    "name": "Mantequillas y grasas infusionadas",
+    "aka": [
+      "mantequilla clarificada",
+      "ghee",
+      "mantequilla infusionada",
+      "mantequilla ahumada",
+      "grasa de pato",
+      "sebo",
+      "manteca",
+      "grasas aromatizadas"
+    ],
+    "cat": "bases",
+    "group": "Bases",
+    "summary": "Mantequilla clarificada, ghee y grasas animales derretidas, aromatizadas con hierbas, especias, humo o marisco para cocinar y terminar platos.",
+    "what": "La mantequilla clarificada es grasa de mantequilla sin agua ni sólidos de leche: aguanta más calor y no se quema. El ghee es lo mismo con los sólidos tostados antes de colar, con sabor a avellana. Las grasas animales (pato, ave, vacuno, cerdo) se derriten a fuego suave y se cuelan. Todas toman aroma por infusión: se calientan con el aromático a temperatura moderada y se cuelan. Son el primo graso de los [[aceites-aromatizados]] y la base de muchos [[confitado|confitados]].",
+    "base": {
+      "for": "800 g de mantequilla clarificada aprox.",
+      "items": [
+        [
+          "Mantequilla sin sal",
+          "1 kg"
+        ],
+        [
+          "Aromático para infusionar (hierbas, especias, cáscaras de marisco tostadas)",
+          "según la tabla"
+        ]
+      ],
+      "steps": [
+        "Funde la mantequilla a fuego muy suave, sin remover, hasta que se separen las tres capas: espuma arriba, grasa clara en medio y suero abajo.",
+        "Retira la espuma con cuchara y vierte con cuidado la grasa clara, dejando el suero en el fondo. Cuela por estameña.",
+        "Para ghee, cuece la mantequilla entera a fuego suave hasta que el suero se evapore y los sólidos del fondo estén dorados; cuela.",
+        "Para infusionar, calienta la grasa clarificada con el aromático a la temperatura de la tabla, mantén el tiempo indicado, deja reposar y cuela fino.",
+        "Abate y guarda tapada en frío."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Hierbas frescas (tomillo, romero, salvia)",
+        "ratio": "30–50 g por kilo de grasa, 60–70 °C, 20–30 min",
+        "note": "Más calor da sabor a hierba cocida."
+      },
+      {
+        "use": "Especias secas",
+        "ratio": "10–20 g por kilo, tostadas antes, 80 °C, 30 min",
+        "note": "Pimentón al final y fuera del fuego: se quema enseguida."
+      },
+      {
+        "use": "Mantequilla de marisco",
+        "ratio": "1 kg de cáscaras tostadas por kilo de mantequilla, 85–90 °C, 1 h",
+        "note": "Se cuela y se enfría con agua para separar la grasa."
+      },
+      {
+        "use": "Grasa de pato, ave o vacuno",
+        "ratio": "Grasa troceada con un poco de agua, 100–110 °C, 1–2 h",
+        "note": "Cuando los chicharrones floten dorados y el agua se haya ido, colar."
+      }
+    ],
+    "variants": [
+      {
+        "id": "mantequilla-noisette",
+        "name": "Mantequilla noisette",
+        "note": "Mantequilla entera tostada hasta avellana; para terminar, no para guardar."
+      },
+      {
+        "id": "mantequillas-compuestas",
+        "name": "Mantequillas compuestas",
+        "note": "Mantequilla pomada mezclada en frío con aromáticos."
+      },
+      {
+        "id": null,
+        "name": "Mantequilla ahumada",
+        "note": "Mantequilla fría ahumada en frío, o fundida con una brasa encendida dentro de un recipiente metálico tapado unos minutos."
+      }
+    ],
+    "keys": [
+      "La clarificada aguanta el salteado fuerte; la mantequilla entera se quema por encima de unos 150 °C.",
+      "Rinde un 80 % del peso de la mantequilla: el resto es agua y sólidos.",
+      "Infusiona con calor suave y tiempo, no con fuego fuerte.",
+      "Ajo y hierbas frescas en grasa: siempre en frío y pocos días, por el riesgo de botulismo.",
+      "El suero que queda abajo sirve para purés o masas; no lo tires."
+    ],
+    "errors": [
+      {
+        "p": "Clarificada turbia",
+        "fix": "Se removió o quedó suero. Vuelve a fundir, deja reposar y decanta con más cuidado."
+      },
+      {
+        "p": "Sabor a quemado",
+        "fix": "Sólidos quemados en el ghee o especias quemadas. Fuego más bajo y especias fuera del fuego."
+      },
+      {
+        "p": "Grasa animal con olor fuerte o rancio",
+        "fix": "Grasa vieja o derretida a demasiada temperatura. Usa grasa fresca y no pases de 110 °C."
+      },
+      {
+        "p": "Infusión sin sabor",
+        "fix": "Poco aromático o tiempo corto. Sube la cantidad y deja reposar tapado antes de colar."
+      }
+    ],
+    "history": "Clarificar la mantequilla es una técnica antigua para conservarla y cocinar a más temperatura; el ghee lleva siglos en las cocinas del sur de Asia. Las grasas animales derretidas fueron la grasa de cocina habitual en gran parte de Europa antes de que se extendiera el aceite en muchas zonas.",
+    "uses": [
+      "Saltear y marcar sin que se queme",
+      "Holandesa y emulsiones calientes",
+      "Confitar carnes y verduras",
+      "Pintar pescado y carne a la brasa",
+      "Patatas fritas o asadas en grasa de vacuno o pato"
+    ],
+    "keep": "Clarificada y ghee, sin aromáticos, en frío y tapada, 2–3 meses. Infusionadas con producto fresco, en frío, 4–5 días; congeladas, 2 meses. Grasas animales coladas, en frío, 1–2 meses.",
+    "pro": "Clarifica en tanda grande una vez por semana y guarda en bote junto a los fuegos. Infusiona la cantidad del día. En la brasa, una lata con mantequilla de hierbas templada y una brocha de cerdas naturales.",
+    "related": [
+      "mantequilla-noisette",
+      "mantequillas-compuestas",
+      "aceites-aromatizados",
+      "holandesa",
+      "confitado",
+      "ahumado",
+      "pato"
+    ]
+  },
+  {
+    "id": "sales-aromaticas",
+    "name": "Sales aromáticas",
+    "aka": [
+      "sal de hierbas",
+      "sal de citricos",
+      "sal ahumada",
+      "sal de algas",
+      "sal aromatizada",
+      "sal de romero",
+      "sal de vino"
+    ],
+    "cat": "bases",
+    "group": "Bases",
+    "summary": "Sal en escamas o gruesa mezclada con hierbas, cítricos, especias, humo o algas, secada para terminar platos con sal y aroma a la vez.",
+    "what": "Una sal aromática sala y perfuma en el mismo gesto, al final y en crudo, que es donde mejor se nota. Se hace mezclando la sal con el aromático fresco o seco y, si lleva humedad, secándola a baja temperatura para que no se apelmace. La base suele ser [[sal-y-flor-de-sal|flor de sal o sal en escamas]], que cruje; la sal gruesa se tritura después si se quiere más fina.",
+    "base": {
+      "for": "250 g de sal de hierbas",
+      "items": [
+        [
+          "Sal en escamas o sal gruesa marina",
+          "200 g"
+        ],
+        [
+          "Hierbas frescas (romero, tomillo, hinojo, ajedrea) solo hojas",
+          "50 g"
+        ],
+        [
+          "Ralladura de limón",
+          "de 1 limón (opcional)"
+        ]
+      ],
+      "steps": [
+        "Tritura las hierbas con la mitad de la sal hasta obtener una pasta verde húmeda.",
+        "Mezcla con el resto de la sal y la ralladura.",
+        "Extiende en capa fina sobre bandeja con papel y seca a 50–60 °C en horno o deshidratador, 2–3 horas, removiendo de vez en cuando, hasta que esté suelta y seca.",
+        "Deja enfriar, desmenuza con los dedos y guarda en bote cerrado."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Sal de hierbas",
+        "ratio": "1 parte de hierba fresca por 4 de sal",
+        "note": "Secar a 50–60 °C: más calor oscurece y quita aroma."
+      },
+      {
+        "use": "Sal de cítricos",
+        "ratio": "Ralladura de 2 limones o naranjas por 100 g de sal",
+        "note": "Secar a 50 °C, 1–2 horas."
+      },
+      {
+        "use": "Sal de especias",
+        "ratio": "1 parte de especia tostada y molida por 5–10 de sal",
+        "note": "Sin secado: ya es seca."
+      },
+      {
+        "use": "Sal de vino o de reducción",
+        "ratio": "100 ml de vino reducido a jarabe por 200 g de sal",
+        "note": "Secar a 60 °C hasta que cruja."
+      }
+    ],
+    "variants": [
+      {
+        "id": "ahumado",
+        "name": "Sal ahumada",
+        "note": "Sal gruesa extendida y ahumada en frío; o mezclada con pimentón ahumado."
+      },
+      {
+        "id": null,
+        "name": "Sal de algas",
+        "note": "Alga seca molida con sal; refuerza el sabor a mar en pescados y crudos."
+      },
+      {
+        "id": null,
+        "name": "Sal de setas",
+        "note": "Setas secas molidas con sal; para carnes, huevos y patatas."
+      }
+    ],
+    "keys": [
+      "Siempre en el último momento: la humedad del plato la disuelve y pierde el crujiente.",
+      "Seca a baja temperatura: el aroma de la hierba se va con el calor.",
+      "La sal aromática no sustituye al sazonado de cocina; es el toque final.",
+      "Hierbas bien secas antes de triturar; el agua apelmaza.",
+      "Una sal por plato: dos sales con aromas distintos se pisan."
+    ],
+    "errors": [
+      {
+        "p": "Se apelmaza en el bote",
+        "fix": "Secado corto o bote abierto. Sécala más y guarda con un sobre de gel de sílice o unos granos de arroz."
+      },
+      {
+        "p": "Color marrón y sabor a heno",
+        "fix": "Demasiado calor al secar. Baja a 50 °C."
+      },
+      {
+        "p": "Sala demasiado",
+        "fix": "Se ha usado como sazonado general. Sazona antes con sal normal y termina con poca aromática."
+      }
+    ],
+    "history": "Mezclar sal con hierbas o especias para conservar y aromatizar es una práctica antigua en muchas cocinas. En las islas, con salinas propias, la sal marina forma parte de la despensa de siempre.",
+    "uses": [
+      "Carnes y pescados a la brasa",
+      "Tomate y verduras crudas",
+      "Huevos y patatas",
+      "Borde de cócteles y bebidas",
+      "Postres de chocolate o caramelo con sal de cítricos"
+    ],
+    "keep": "Secas y en bote hermético, a temperatura ambiente y sin luz, 2–3 meses; el aroma va bajando con el tiempo.",
+    "pro": "Haz pequeñas tandas al mes con las hierbas de la temporada. Ten en el pase dos o tres sales en botes pequeños con cuchara y etiqueta.",
+    "related": [
+      "sal-y-flor-de-sal",
+      "hierbas-frescas",
+      "citricos",
+      "especias",
+      "deshidratados-y-crujientes",
+      "ahumado"
+    ]
   }
 ]

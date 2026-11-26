@@ -3,10 +3,11 @@
 import {t, en, relDay, shortDate} from '../i18n.js';
 import {esc, icon, $, $$, toast, clip, sheet, shareText} from '../ui.js';
 import {docById, saveDoc} from '../store.js';
-import {state, saberMine, addSaberVersion, saveSaberEntry, trashSaberEntry, liveSubs, liveDishes} from '../store.js';
+import {state, saberMine, addSaberVersion, saveSaberEntry, trashSaberEntry, liveSubs, liveDishes, addSaberGuide, uploadImage, imageUrl} from '../store.js';
 import {entries, entryById, search, searchInfo, backlinks, CATS, slug, builtIds} from '../saber/index.js';
 import {attachSuggest} from './ksuggest.js';
-import {iaOn, askIa, iaMessage} from '../ia.js';
+import {iaOn, askIa, iaMessage, makeImage} from '../ia.js';
+import {shrinkImage} from '../ai.js';
 import {copy, parseReply} from '../ai.js';
 import {emptyState, thermScale, tempMarks} from './shared.js';
 import {go} from '../nav.js';
@@ -212,6 +213,21 @@ function panels(e) {
  out.push(['tuya', t('Tu versión', 'Your version') + (n ? ' (' + n + ')' : ''), mineHtml(e)]);
  return out;
 }
+// Imagen guía: una ilustración por ficha, creada con ChatGPT y guardada con la ficha (las anteriores se conservan).
+function guidePrompt(e) {
+ const plain = v => String(v || '').replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, '$2').replace(/\[\[([^\]]+)\]\]/g, (m, x) => entryById(x)?.name || x);
+ const items = (e.base?.items || []).slice(0, 8).map(x => plain(x[0])).join(', ');
+ const step = (e.method || e.base?.steps || [])[Math.min(1, (e.method || e.base?.steps || []).length - 1)] || '';
+ const isTech = !e.base?.items?.length && (e.method || []).length;
+ return 'Fotografía realista de cocina profesional para una guía técnica de cocineros: ' + e.name + '. ' + plain(e.summary) + ' ' +
+  (isTech ? 'Muestra el momento clave de la técnica: ' + plain(step) + ' ' : 'Muestra la elaboración terminada, bien hecha, en un recipiente de cocina profesional' + (items ? ' (lleva ' + items + ')' : '') + '. ') +
+  'Encuadre cenital o a 45 grados, luz natural lateral, fondo de piedra o acero oscuro, textura y punto de cocción muy visibles. Sin texto, sin letras, sin logotipos, sin personas ni caras; como mucho unas manos con guantes si la técnica lo pide.';
+}
+function guideHtml(e) {
+ const g = (saberMine(e.id)?.guides || []).at(-1);
+ if (!g) return '';
+ return '<figure class="kguide-img"><img data-img="' + esc(g.path) + '" alt="' + esc(t('Imagen guía de ', 'Guide image of ') + e.name) + '"><figcaption>' + esc(t('Ilustración generada con ChatGPT el ', 'Illustration generated with ChatGPT on ') + shortDate(g.at) + t('. No es una foto real: úsala como guía.', '. Not a real photo: use it as a guide.')) + '</figcaption></figure>';
+}
 function entryHtml(id, tab) {
  const e = entryById(id);
  const back = '<a class="back" href="#/biblioteca">' + icon('left') + esc(hasSearch() ? t('Volver a la búsqueda', 'Back to search') : t('Biblioteca', 'Library')) + '</a>';
@@ -220,7 +236,8 @@ function entryHtml(id, tab) {
  const list = panels(e), on = list.some(p => p[0] === tab) ? tab : list[0][0];
  const {dishes, subs} = inDishes(e), rel = [...new Set([...(e.related || []), ...backlinks(e.id).map(x => x.id)])].map(entryById).filter(x => x && x.id !== e.id);
  return '<div class="kentry-back">' + (hasSearch() ? back : '') + '<a class="back" href="#/biblioteca/estante/' + esc(e.cat || 'conceptos') + '">' + icon('left') + esc(shelfName(e.cat || 'conceptos')) + '</a></div><article class="kentry">' +
-  '<header class="page-head"><h1>' + esc(e.name) + '</h1>' + (e.aka?.length ? '<p class="kaka">' + esc(t('También: ', 'Also: ') + e.aka.join(', ')) + '</p>' : '') + '<div class="kentry-acts"><button type="button" class="linkbtn" data-act="favorite" aria-pressed="' + saved + '">' + icon('star') + esc(saved ? t('Quitar de favoritas', 'Remove from favourites') : t('Guardar en favoritas', 'Save to favourites')) + '</button>' + (cardsFor(e.id) ? '<a class="linkbtn" href="#/entrenar/ficha/' + esc(e.id) + '">' + icon('brain') + esc(t('Repasar esta ficha', 'Review this entry')) + '</a>' : '') + '<span class="kentry-tools"><button type="button" class="linkbtn" data-act="share-entry">' + esc(t('Compartir', 'Share')) + '</button><button type="button" class="linkbtn" data-act="compare-entry">' + esc(t('Comparar', 'Compare')) + '</button><button type="button" class="linkbtn" data-act="print-entry">' + icon('down') + esc(t('Imprimir', 'Print')) + '</button>' + '</span>' + ((e.base?.items?.length || technique(e.technique)) && state.canEdit && !state.setupPending ? '<button type="button" class="btn primary k-use" data-act="use-recipe">' + icon('plus') + esc(technique(e.technique) ? t('Aplicar técnica a un plato', 'Apply technique to a dish') : t('Usar en un plato', 'Use in a dish')) + '</button>' : '') + '</div></header>' +
+  '<header class="page-head"><h1>' + esc(e.name) + '</h1>' + (e.aka?.length ? '<p class="kaka">' + esc(t('También: ', 'Also: ') + e.aka.join(', ')) + '</p>' : '') + '<div class="kentry-acts"><button type="button" class="linkbtn" data-act="favorite" aria-pressed="' + saved + '">' + icon('star') + esc(saved ? t('Quitar de favoritas', 'Remove from favourites') : t('Guardar en favoritas', 'Save to favourites')) + '</button>' + (cardsFor(e.id) ? '<a class="linkbtn" href="#/entrenar/ficha/' + esc(e.id) + '">' + icon('brain') + esc(t('Repasar esta ficha', 'Review this entry')) + '</a>' : '') + (iaOn() ? '<button type="button" class="linkbtn" data-act="guide-img">' + icon('image') + '<span>' + esc((saberMine(e.id)?.guides || []).length ? t('Otra imagen guía', 'Another guide image') : t('Crear imagen guía', 'Create guide image')) + '</span></button>' : '') + '<span class="kentry-tools"><button type="button" class="linkbtn" data-act="share-entry">' + esc(t('Compartir', 'Share')) + '</button><button type="button" class="linkbtn" data-act="compare-entry">' + esc(t('Comparar', 'Compare')) + '</button><button type="button" class="linkbtn" data-act="print-entry">' + icon('down') + esc(t('Imprimir', 'Print')) + '</button>' + '</span>' + ((e.base?.items?.length || technique(e.technique)) && state.canEdit && !state.setupPending ? '<button type="button" class="btn primary k-use" data-act="use-recipe">' + icon('plus') + esc(technique(e.technique) ? t('Aplicar técnica a un plato', 'Apply technique to a dish') : t('Usar en un plato', 'Use in a dish')) + '</button>' : '') + '</div></header>' +
+  guideHtml(e) +
   (e.source === 'chatgpt' ? '<p class="fine kgen">' + icon('spark') + esc(t('Ficha escrita con ChatGPT', 'Entry written with ChatGPT') + (e.created_at ? t(' el ', ' on ') + shortDate(e.created_at) : '') + t('. Revísala y, si algo no te cuadra, escribe tu versión.', '. Check it and, if something is off, write your version.')) + '</p>' : '') +
   (e.summary ? '<div class="kbody"><p class="lead">' + linked(e.summary) + '</p></div>' : '') +
   '<div class="ktabs" role="tablist" aria-label="' + esc(t('Partes de la entrada', 'Parts of the entry')) + '">' + list.map(([pid, label]) => '<button type="button" role="tab" id="kt-' + pid + '" aria-controls="kp-' + pid + '" aria-selected="' + (pid === on) + '" tabindex="' + (pid === on ? 0 : -1) + '" class="ktab' + (pid === on ? ' active' : '') + '" data-ktab="' + pid + '">' + esc(label) + '</button>').join('') + '</div>' +
@@ -338,6 +355,8 @@ export function mount(root, params) {
   }
   if (e.target.id === 'kBatch' || e.target.id === 'kBatchCustom') changeBatch();
  });
+ const hydrate = () => $$('img[data-img]', root).forEach(async img => { const u = await imageUrl(img.dataset.img); if (u && img.isConnected) { img.src = u; img.removeAttribute('data-img'); } });
+ hydrate(); new MutationObserver(hydrate).observe(root, {childList: true, subtree: true});
  root.addEventListener('focusin', e => { if (e.target.id === 'saberQ') attachSuggest(e.target, {onPick: en2 => { query = ''; go('biblioteca/' + en2.id); }}); });
  root.addEventListener('input', e => {
   if (e.target.id === 'kBatchCustom') { changeBatch(false); return; }
@@ -383,6 +402,16 @@ export function mount(root, params) {
   }
   if (b.dataset.ktab) { showTab(b.dataset.ktab); return; }
   const act = b.dataset.act, id = params[0];
+  if (act === 'guide-img' && entryById(id)) {
+   const e2 = entryById(id), label = b.querySelector('span');
+   b.disabled = true; b.classList.add('is-busy'); if (label) label.textContent = t('Creando la imagen… (hasta un minuto)', 'Creating the image… (up to a minute)');
+   try {
+    const blob = await shrinkImage(await makeImage(guidePrompt(e2)));
+    const path = await uploadImage('saber', blob);
+    await addSaberGuide(id, path); repaint(); toast(t('Imagen guía guardada en la ficha.', 'Guide image saved in the entry.'));
+   } catch (err) { toast(err?.detail === 'verify' ? t('OpenAI pide verificar tu organización para crear imágenes: entra en platform.openai.com → Settings → Organization → Verify.', 'OpenAI asks you to verify your organisation to create images.') : iaMessage(err), 'error', 9000); if (b.isConnected) { b.disabled = false; b.classList.remove('is-busy'); if (label) label.textContent = t('Crear imagen guía', 'Create guide image'); } }
+   return;
+  }
   if (act === 'kbook') { bookSheet(favorites()); return; }
   if (act === 'random-entry') { const e2 = randomEntry(); if (e2) location.hash = href(e2.id); return; }
   if (act === 'seen-new') { try { localStorage.setItem(KNOWN, JSON.stringify(entries().map(e => e.id))); } catch {} b.closest('.knew')?.remove(); return; }
@@ -467,4 +496,5 @@ export function mount(root, params) {
  if (!params[0] && matchMedia('(min-width: 960px)').matches) setTimeout(() => $('#saberQ', root)?.focus(), 50);
  return null;
 }
-export function onData(what, el, params) { if (['saber', 'remote', 'load'].includes(what) && el && !el.contains(document.activeElement)) el.innerHTML = render(params); }
+// Se repinta al llegar datos, salvo si estás escribiendo en un campo de esta pantalla (para no quitarte el foco).
+export function onData(what, el, params) { const a = document.activeElement, typing = el?.contains(a) && /^(INPUT|TEXTAREA|SELECT)$/.test(a?.tagName || ''); if (['saber', 'remote', 'load'].includes(what) && el && !typing) el.innerHTML = render(params); }

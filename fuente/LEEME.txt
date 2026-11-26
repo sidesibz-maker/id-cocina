@@ -189,3 +189,7 @@ Biblioteca infinita (26 nov 2026):
  - Buscador de la Biblioteca: mientras escribes salen sugerencias (flechas para moverte, Intro para abrir). Entiende
    faltas y cómo suena: «bexamel» encuentra Bechamel, «binagreta» Vinagreta, «olandesa» Holandesa, «salsa biscaina»
    Salsa vizcaína. Si no hay nada escrito así, te dice «Quizá buscas…». También en el buscador de Hoy y en Ctrl+K.
+ - Imagen guía en cada ficha de la Biblioteca: con ChatGPT conectado, «Crear imagen guía» crea una ilustración del plato
+   terminado o del momento clave de la técnica (usa tu clave de OpenAI; cuesta unos céntimos cada una). Queda guardada
+   en la ficha, pasa al móvil y va en la copia. Las anteriores no se borran: «Otra imagen guía» añade una nueva.
+   Si OpenAI pide «verificar la organización» para crear imágenes, se hace una vez en platform.openai.com.
