@@ -2362,5 +2362,1281 @@
    "cocina-ibicenca",
    "deshidratados-y-crujientes"
   ]
+ },
+ {
+  "id": "dorada-y-lubina",
+  "name": "Dorada y lubina",
+  "name_en": "Gilthead bream and sea bass",
+  "cat": "producto",
+  "group": "Pescado y marisco",
+  "aka": [
+   "dorada",
+   "lubina",
+   "llobarro",
+   "róbalo",
+   "dorada salvaje",
+   "lubina de estero"
+  ],
+  "summary": "Los dos pescados blancos más agradecidos de la carta: enteros a la brasa, en lomo con la piel crujiente o en crudo.",
+  "what": "Dorada y lubina son pescados blancos de carne firme y grasa moderada, fáciles de racionar y que aguantan bien el fuego. La lubina tiene la carne más fina y laminada; la dorada, más prieta y con un punto dulce. Las dos se encuentran salvajes y de acuicultura: la salvaje tiene la carne más firme, la grasa más limpia y un tamaño irregular; la de cultivo es constante en tamaño y en grasa, y su calidad depende mucho de cómo se ha criado (en estero, la carne suele ser mejor que en jaula de mar abierto).\n\nEnteras piden [[fuego-y-brasa|brasa]] o horno y aguantan la espina, que les da jugosidad; en lomo, plancha por la piel. Las piezas salvajes muy frescas sirven para [[ceviche-y-crudos|crudos]] y [[curado-de-pescado|curados]].",
+  "method": [
+   "Elige por el ojo brillante, agallas rojas, carne que recupera al apretar y olor a mar limpio. Escama con cuidado de no romper la piel si vas a servirla.",
+   "Entera a la brasa (piezas de 400–800 g): limpia, seca muy bien por dentro y por fuera, sala 10 minutos antes y unta la piel con aceite. Rejilla de pescado engrasada, brasa media, sin moverla hasta que se despegue sola.",
+   "Saca cuando junto a la espina, en la parte más gruesa, marque 48–52 °C; reposa 2–3 minutos.",
+   "En lomo: haz cortes superficiales en la piel si es gruesa, seca, sala y pon por la piel en plancha o sartén a fuego medio-fuerte con poco aceite. Presiona los primeros 20 segundos para que no se curve.",
+   "Cocina el 80 % del tiempo por la piel y da solo un toque por la carne, o termina con el calor residual."
+  ],
+  "ratios": [
+   {
+    "use": "Pieza entera de ración (500–600 g)",
+    "ratio": "Brasa media, 6–8 minutos por lado",
+    "note": "Hasta 50 °C junto a la espina."
+   },
+   {
+    "use": "Pieza para dos (1–1,5 kg)",
+    "ratio": "Horno a 200 °C, 18–25 minutos",
+    "note": "O brasa más alejada y más tiempo."
+   },
+   {
+    "use": "Lomo con piel",
+    "ratio": "3–4 minutos por la piel, 30 segundos por la carne",
+    "note": "Para un lomo de 2 cm."
+   },
+   {
+    "use": "Rendimiento",
+    "ratio": "Alrededor del 40–45 % de lomo limpio",
+    "note": "Sobre pieza entera sin limpiar."
+   }
+  ],
+  "variants": [
+   {
+    "id": "pescado-entero",
+    "name": "Pescado entero",
+    "note": "Cómo limpiar, racionar y presentar piezas enteras."
+   },
+   {
+    "id": "curado-de-pescado",
+    "name": "Lubina curada",
+    "note": "Lomos salvajes curados en sal y azúcar."
+   },
+   {
+    "id": "ceviche-y-crudos",
+    "name": "En crudo",
+    "note": "Solo pieza salvaje muy fresca o congelada según la norma."
+   },
+   {
+    "id": null,
+    "name": "Dorada a la sal",
+    "note": "Entera, sin escamar, cubierta de sal gruesa humedecida."
+   }
+  ],
+  "keys": [
+   "Piel seca y sartén caliente: si la piel está húmeda, se pega y se cuece en vez de dorarse.",
+   "La espina protege: el pescado entero queda más jugoso que el lomo.",
+   "Termómetro siempre: pasa de jugoso a seco en un minuto.",
+   "En la brasa, no muevas la pieza hasta que se despegue.",
+   "Acompáñalo de algo ácido y graso: [[citricos|cítrico]], buen [[aceite-de-oliva|aceite]], una [[salsa-verde]] ligera."
+  ],
+  "errors": [
+   {
+    "p": "La piel se pega a la rejilla",
+    "fix": "Rejilla fría o sucia, o pescado húmedo. Calienta y engrasa la rejilla, seca el pescado y no lo muevas antes de tiempo."
+   },
+   {
+    "p": "El lomo se curva en la sartén",
+    "fix": "La piel se encoge. Haz cortes finos en la piel y presiona con una espátula al principio."
+   },
+   {
+    "p": "Carne seca y que se deshace en lascas",
+    "fix": "Pasado de punto. Saca a 48–50 °C y deja que suba en el reposo."
+   },
+   {
+    "p": "Sabor a barro o a pienso",
+    "fix": "Pieza de cultivo de poca calidad. Cambia de proveedor y prueba siempre una muestra cocinada sin nada."
+   }
+  ],
+  "history": "Las dos son pescados de siempre en todo el Mediterráneo, presentes en las lonjas y en la cocina de puerto desde muy antiguo. Desde finales del siglo XX la acuicultura las ha convertido en los pescados blancos más habituales en restaurantes y mercados.",
+  "uses": [
+   "Pescado entero a la brasa",
+   "Lomo con piel crujiente",
+   "Crudos y curados",
+   "Horno con patata y verdura",
+   "Fumet suave con las espinas"
+  ],
+  "keep": "Entera y eviscerada, 2–3 días a 0–2 °C sobre hielo escamado y sin que toque el agua del deshielo. En lomos, mejor el mismo día o el siguiente, envasados o tapados con papel.",
+  "pro": "Racionar al recibir: piezas enteras pesadas y etiquetadas, lomos porcionados y secos en bandeja con papel. Espinas y cabezas para un [[fumet]] del día. En el pase, piezas enteras abiertas en mesa o desespinadas delante del cliente.",
+  "related": [
+   "pescado-entero",
+   "pescado-de-roca",
+   "fuego-y-brasa",
+   "curado-de-pescado",
+   "ceviche-y-crudos",
+   "fumet",
+   "citricos"
+  ]
+ },
+ {
+  "id": "gallo-y-rodaballo",
+  "name": "Gallo de San Pedro y rodaballo",
+  "name_en": "John Dory and turbot",
+  "cat": "producto",
+  "group": "Pescado y marisco",
+  "aka": [
+   "gallo de San Pedro",
+   "pez de San Pedro",
+   "rodaballo",
+   "turbot",
+   "pescado gelatinoso",
+   "pez plano"
+  ],
+  "summary": "Dos pescados de lujo, gelatinosos y de carne blanca y fina: el rodaballo entero a la brasa y el gallo en lomos delicados.",
+  "what": "El rodaballo es un pez plano de piel gruesa y gelatinosa, carne blanca, firme y en láminas grandes; la gelatina de su piel y espinas le da jugosidad y sirve para ligar salsas. El gallo de San Pedro es un pescado aplanado de lado, de cabeza enorme y rendimiento bajo, con una carne muy blanca, fina y delicada.\n\nEl rodaballo grande se luce entero a la brasa o en grandes trozos con espina; el gallo pide cocciones cortas y suaves, en lomo. Las espinas de los dos dan un [[fumet]] muy gelatinoso, ideal para salsas emulsionadas como un [[pil-pil]] o una [[beurre-blanc]].",
+  "method": [
+   "Rodaballo entero: retira las vísceras, corta las aletas largas con tijera, lava y seca muy bien. Hazle un corte a lo largo de la espina central por el lado oscuro para que entre el calor de forma pareja.",
+   "Sala 15 minutos antes y cocina en parrilla cerrada o rejilla de pescado, a brasa media y alta, primero por el lado oscuro.",
+   "Riega durante la cocción con un aliño de aceite, ajo y un poco de vinagre o el propio jugo que suelta, que se emulsiona con la gelatina.",
+   "Gallo: saca los lomos (cada lado se separa en piezas siguiendo la línea central), quita la piel fina si se rompe con facilidad y racione.",
+   "Cocina el gallo en plancha suave, al vapor o en mantequilla espumosa regando, solo hasta 45–48 °C en el centro."
+  ],
+  "ratios": [
+   {
+    "use": "Rodaballo entero de 1,5–2 kg",
+    "ratio": "Brasa, 10–12 minutos por lado",
+    "note": "Hasta 50–52 °C junto a la espina; reposa 5 minutos."
+   },
+   {
+    "use": "Rodaballo en rodajas con espina",
+    "ratio": "Plancha o brasa, 4–5 minutos por lado",
+    "note": "Rodajas de 3 cm."
+   },
+   {
+    "use": "Lomo de gallo",
+    "ratio": "45–48 °C en el centro",
+    "note": "Carne muy fina: se pasa enseguida."
+   },
+   {
+    "use": "Rendimiento",
+    "ratio": "Rodaballo 45–50 %; gallo 30–35 %",
+    "note": "Carne limpia sobre pieza entera."
+   }
+  ],
+  "variants": [
+   {
+    "id": "pil-pil",
+    "name": "Pil-pil con la gelatina",
+    "note": "El jugo del rodaballo liga con aceite como el del bacalao."
+   },
+   {
+    "id": "pescado-entero",
+    "name": "Pescado entero",
+    "note": "Cómo trinchar y servir en sala."
+   },
+   {
+    "id": "papillote-y-vapor",
+    "name": "Gallo al vapor",
+    "note": "La cocción más respetuosa para su carne."
+   }
+  ],
+  "keys": [
+   "El rodaballo pide tamaño: por debajo de 1 kg tiene poca carne y se seca.",
+   "La gelatina es el tesoro: no la pierdas lavando de más ni cociendo a borbotones.",
+   "Aletas, cabezas y espinas de los dos, al fumet o a una salsa.",
+   "El gallo se cocina poco y suave; con fuego fuerte se seca y se rompe.",
+   "Las zonas junto a las aletas del rodaballo son las más gelatinosas: sírvelas, no las tires."
+  ],
+  "errors": [
+   {
+    "p": "Rodaballo crudo junto a la espina y seco en los bordes",
+    "fix": "Fuego demasiado fuerte o pieza fría de nevera. Atempera 20 minutos y aleja de la brasa."
+   },
+   {
+    "p": "Lomo de gallo que se deshace",
+    "fix": "Carne muy fina pasada de punto o manipulada en caliente. Cocina menos y mueve con espátula ancha."
+   },
+   {
+    "p": "Salsa que no liga",
+    "fix": "Poca gelatina o jugo muy caliente. Añade un poco de fumet reducido de espinas y emulsiona a 50–60 °C."
+   }
+  ],
+  "history": "El rodaballo asado entero en parrilla es un plato muy ligado a los asadores de la costa cantábrica, y hoy se cría con éxito en acuicultura. El gallo de San Pedro es un pescado de lonja apreciado en todo el Mediterráneo y el Atlántico; el nombre y la mancha oscura de su costado han dado lugar a leyendas populares.",
+  "uses": [
+   "Rodaballo entero a la brasa para compartir",
+   "Lomos de gallo con salsas finas",
+   "Fumet gelatinoso",
+   "Salsas emulsionadas con el jugo"
+  ],
+  "keep": "Enteros, 2–3 días a 0–2 °C sobre hielo. El rodaballo aguanta algo más que el gallo, que pierde firmeza antes. Lomos de gallo, mejor el mismo día.",
+  "pro": "El rodaballo grande se vende por peso y para dos o más: tenlo pesado y marcado por raciones. Prepara el aliño de riego en un cazo al lado de la brasa. Trincha en sala o en el pase, separando lomos y zonas gelatinosas en cada plato.",
+  "related": [
+   "pescado-entero",
+   "dorada-y-lubina",
+   "fuego-y-brasa",
+   "fumet",
+   "pil-pil",
+   "beurre-blanc"
+  ]
+ },
+ {
+  "id": "gamba-roja",
+  "name": "Gamba roja",
+  "name_en": "Red prawn",
+  "cat": "producto",
+  "group": "Pescado y marisco",
+  "aka": [
+   "gamba",
+   "carabinero",
+   "gamba de Ibiza",
+   "quisquilla",
+   "gamba a la plancha",
+   "cabezas de gamba"
+  ],
+  "summary": "Marisco de fondo del Mediterráneo, dulce y yodado: se cocina lo justo y la cabeza es la mitad del plato.",
+  "what": "La gamba roja vive en fondos profundos del Mediterráneo y se pesca con arrastre en las costas de Baleares, Cataluña y Levante. Tiene la carne dulce y firme y una cabeza llena de jugo intenso. El carabinero es un pariente más grande y de color más oscuro, con un sabor aún más potente.\n\nPide muy poco calor: a la plancha o a la brasa con sal gruesa, en crudo o apenas marcada. Las cabezas y cáscaras son la base de [[fondo-de-marisco|fondos]], [[salsa-americana|salsas]], aceites y [[arroces]].",
+  "method": [
+   "Revisa el producto: cabeza bien pegada y sin manchas negras, color vivo, olor a mar. Si viene congelada en barco, descongela en frío sobre rejilla, 12–24 horas.",
+   "Plancha: muy caliente, una capa fina de sal gruesa, la gamba encima sin aceite. 1 minuto por lado si es mediana; aprieta la cabeza para que suelte el jugo sobre la plancha.",
+   "Brasa: en rejilla, a fuego vivo, con un pincel de aceite; el mismo tiempo.",
+   "Para crudos: pela en frío, retira el intestino y sirve a 4–6 °C con buen aceite y un poco de sal.",
+   "Guarda cabezas y cáscaras: tuéstalas en aceite y cubre con agua o fumet para un fondo, o infusiona aceite."
+  ],
+  "ratios": [
+   {
+    "use": "Plancha o brasa",
+    "ratio": "1–2 minutos por lado",
+    "note": "Centro translúcido; la cola debe quedar jugosa."
+   },
+   {
+    "use": "Aceite de cabezas",
+    "ratio": "500 g de cabezas por 1 l de aceite",
+    "note": "Tostadas y a 60–70 °C, 1 hora; colado fino."
+   },
+   {
+    "use": "Fondo de cabezas",
+    "ratio": "1 kg de cabezas y cáscaras por 2 l de agua",
+    "note": "35–40 minutos, sin pasar de ahí."
+   },
+   {
+    "use": "Crudo",
+    "ratio": "4–5 gambas medianas por ración de entrante",
+    "note": "Peladas al momento."
+   }
+  ],
+  "variants": [
+   {
+    "id": "aceites-aromatizados",
+    "name": "Aceite de gamba",
+    "note": "Con las cabezas tostadas."
+   },
+   {
+    "id": "salsa-americana",
+    "name": "Salsa americana",
+    "note": "Con cáscaras y cabezas."
+   },
+   {
+    "id": "ceviche-y-crudos",
+    "name": "Gamba en crudo",
+    "note": "Carpaccio o tartar de gamba."
+   },
+   {
+    "id": "coccion-de-marisco",
+    "name": "Gamba cocida",
+    "note": "En agua de mar o salmuera, 1–2 minutos y a hielo."
+   }
+  ],
+  "keys": [
+   "Calor fuerte y muy corto: se pasa en segundos y la carne se vuelve harinosa.",
+   "La cabeza tiene el sabor: invita a chuparla o aprovéchala en salsa.",
+   "Sin aceite en la plancha: con la sal y su propio jugo basta.",
+   "Las manchas negras en la cabeza indican oxidación; no es peligroso, pero indica que ya no está en su mejor punto.",
+   "Nunca tires una cáscara: es sabor para arroces y fondos."
+  ],
+  "errors": [
+   {
+    "p": "Carne pastosa o harinosa",
+    "fix": "Demasiado cocinada o mal descongelada. Menos tiempo y descongelación lenta en frío."
+   },
+   {
+    "p": "Cabezas negras",
+    "fix": "Producto con días o mal conservado. Exige gamba del día o congelada en barco y guarda en frío seco."
+   },
+   {
+    "p": "Fondo amargo",
+    "fix": "Cabezas quemadas o cocción demasiado larga. Tuesta sin quemar y no pases de 40 minutos."
+   }
+  ],
+  "history": "La gamba roja ha sido durante mucho tiempo uno de los productos más apreciados de las lonjas del Mediterráneo español, y varios puertos de Baleares, Cataluña y Levante la tienen como emblema. Su pesca está regulada para proteger el recurso.",
+  "uses": [
+   "Plancha o brasa con sal gruesa",
+   "Crudos y tartares",
+   "Arroces y fideos",
+   "Aceites y fondos de marisco",
+   "Salsas de marisco"
+  ],
+  "keep": "Fresca, 24–48 horas a 0–2 °C, en seco y tapada; mejor el mismo día. Congelada en barco, a -18 °C o menos; una vez descongelada, no se vuelve a congelar. Las cabezas se congelan para fondos.",
+  "pro": "Pesa y ordena por tamaños al recibir; descongela la tanda del día la víspera. En el pase, las gambas en bandeja fría junto a la plancha y la sal ya preparada. Cabezas a una caja propia para el fondo o el aceite de la semana.",
+  "related": [
+   "coccion-de-marisco",
+   "fondo-de-marisco",
+   "salsa-americana",
+   "arroces",
+   "aceites-aromatizados",
+   "ceviche-y-crudos",
+   "cigala-y-langosta"
+  ]
+ },
+ {
+  "id": "cigala-y-langosta",
+  "name": "Cigala y langosta",
+  "name_en": "Langoustine and spiny lobster",
+  "cat": "producto",
+  "group": "Pescado y marisco",
+  "aka": [
+   "cigala",
+   "langosta",
+   "bogavante",
+   "caldereta de langosta",
+   "langosta a la brasa",
+   "coral"
+  ],
+  "summary": "Los grandes crustáceos de la isla: puntos exactos, cocción corta y todo el sabor de cabezas y coral para la salsa.",
+  "what": "La cigala tiene una carne blanca, dulce y muy delicada que se pasa enseguida. La langosta mediterránea es más grande, de carne firme y sabor profundo; el bogavante, con pinzas, tiene la carne algo más dulce y blanda. En las tres, la cabeza, las huevas y el coral (la parte cremosa de la cabeza) concentran el sabor.\n\nEn las islas, la langosta va en caldereta, arroz o a la brasa. La regla es la misma que en todo [[coccion-de-marisco|marisco]]: cocinar poco, con el producto vivo o recién muerto, y aprovechar todo lo demás para la salsa.",
+  "method": [
+   "Trabaja con el marisco vivo y en frío. Para la langosta o el bogavante, adormécelos en el congelador 20–30 minutos y córtalos con un golpe seco y firme del cuchillo en la cabeza antes de cocinar.",
+   "Para cocer: agua con 30–35 g de sal por litro en ebullición fuerte; mete la pieza y cuenta el tiempo desde que vuelve a hervir. Al sacar, a agua con hielo si se va a servir fría.",
+   "Para la brasa: abre la langosta a lo largo, retira el intestino y guarda el coral. Pinta la carne con mantequilla o aceite y pon primero por el caparazón, que actúa de cazuela; termina 1 minuto por la carne.",
+   "Cigala a la plancha: abierta o entera, por la carne 1 minuto a fuego fuerte y 1 por el caparazón.",
+   "Con cabezas, patas y coral, haz el fondo o la salsa del plato: tuesta, flamea si quieres, moja y reduce; liga al final con el coral crudo, sin hervir."
+  ],
+  "ratios": [
+   {
+    "use": "Langosta cocida",
+    "ratio": "8 minutos para 600 g; 12 minutos para 1 kg",
+    "note": "Centro de la cola a 55–60 °C."
+   },
+   {
+    "use": "Cigala cocida",
+    "ratio": "1–2 minutos según tamaño",
+    "note": "A hielo enseguida."
+   },
+   {
+    "use": "Langosta a la brasa",
+    "ratio": "6–8 minutos por el caparazón y 1 por la carne",
+    "note": "Media pieza de 500–600 g."
+   },
+   {
+    "use": "Caldereta",
+    "ratio": "350–400 g de langosta por persona",
+    "note": "Pieza entera troceada con su cabeza."
+   }
+  ],
+  "variants": [
+   {
+    "id": "salsa-americana",
+    "name": "Salsa americana",
+    "note": "Con cabezas de langosta o bogavante."
+   },
+   {
+    "id": "arroces",
+    "name": "Arroz de langosta",
+    "note": "Caldoso o meloso con el fondo de cabezas."
+   },
+   {
+    "id": "mantequillas-compuestas",
+    "name": "Mantequilla de coral",
+    "note": "Coral crudo con mantequilla para terminar salsas o la brasa."
+   },
+   {
+    "id": null,
+    "name": "Caldereta",
+    "note": "Guiso de langosta con sofrito y su caldo, servido con pan."
+   }
+  ],
+  "keys": [
+   "Producto vivo, muy fresco y bien tratado: es el 90 % del plato.",
+   "Cuenta los minutos desde que el agua vuelve a hervir.",
+   "El coral liga y da color: añádelo al final y sin hervir, o se corta.",
+   "La carne sigue cocinándose fuera del fuego: saca un poco antes.",
+   "Las cabezas son la salsa: tostadas, nunca quemadas."
+  ],
+  "errors": [
+   {
+    "p": "Carne pegada al caparazón",
+    "fix": "Pieza muerta hace tiempo o cocción demasiado lenta. Cocina en vivo o recién sacrificada y con agua en ebullición fuerte."
+   },
+   {
+    "p": "Carne dura y fibrosa",
+    "fix": "Demasiado tiempo. Ajusta al peso y usa termómetro en la cola."
+   },
+   {
+    "p": "Cigala blanda y harinosa",
+    "fix": "Cigala de días o mal descongelada. Cómprala viva o congelada en barco y cocina lo justo."
+   },
+   {
+    "p": "Salsa cortada con el coral",
+    "fix": "Ha hervido. Liga fuera del fuego, a 70–75 °C como mucho."
+   }
+  ],
+  "history": "La caldereta de langosta es uno de los platos más conocidos de la cocina de las Baleares, sobre todo de Menorca, y la langosta forma parte de la cocina marinera de todas las islas. La pesca de langosta está regulada con vedas y tallas mínimas.",
+  "uses": [
+   "Calderetas y arroces",
+   "Brasa para compartir",
+   "Cocidas y frías con mayonesa",
+   "Salsas y fondos de marisco"
+  ],
+  "keep": "Vivas, 24–48 horas en frío (4–6 °C) tapadas con un paño húmedo, nunca en agua dulce. Cocidas, 2 días en frío. Cabezas y cáscaras se congelan para fondos.",
+  "pro": "Pesa y marca cada pieza al recibir. Para servicio, langostas sacrificadas y abiertas justo antes de cocinar; el fondo de cabezas, listo de antemano. En caldereta, la langosta entra en los últimos minutos.",
+  "related": [
+   "coccion-de-marisco",
+   "gamba-roja",
+   "salsa-americana",
+   "fondo-de-marisco",
+   "arroces",
+   "mantequillas-compuestas",
+   "fuego-y-brasa"
+  ]
+ },
+ {
+  "id": "erizo-de-mar",
+  "name": "Erizo de mar",
+  "name_en": "Sea urchin",
+  "cat": "producto",
+  "group": "Pescado y marisco",
+  "aka": [
+   "erizo",
+   "garotas",
+   "lenguas de erizo",
+   "corales de erizo",
+   "uni"
+  ],
+  "summary": "Lenguas naranjas, yodadas y cremosas que se comen crudas o apenas templadas: el sabor del mar en una cucharada.",
+  "what": "Del erizo de mar se aprovechan las gónadas, las lenguas naranjas que hay pegadas por dentro del caparazón. Tienen una textura cremosa y un sabor muy intenso a yodo y algo dulce. Están llenas en los meses fríos y casi vacías en verano. Su recogida está regulada por temporadas, tallas y cupos según cada comunidad: compra siempre con trazabilidad.\n\nSe comen crudas, con pan o una gota de cítrico, y en cocina funcionan como un condimento potente: en revueltos, [[mantequillas-compuestas|mantequillas]], [[holandesa|salsas emulsionadas]], arroces o sobre un pescado. El calor fuerte las cuaja y las vuelve granulosas.",
+  "method": [
+   "Trabaja con guantes gruesos. Corta con tijera alrededor de la boca, en la parte plana y más blanda, y levanta esa tapa.",
+   "Vacía con cuidado el agua y las partes oscuras; deja las lenguas pegadas al caparazón.",
+   "Saca las lenguas con una cucharilla y pásalas a un baño de agua de mar o salmuera fría (30 g de sal por litro) para limpiar restos; escurre sobre papel.",
+   "Para servir en crudo: en su caparazón limpio o sobre hielo, a 4–6 °C.",
+   "Para cocinar: añade el erizo al final, fuera del fuego o a menos de 60 °C, para que se funda sin cuajar."
+  ],
+  "ratios": [
+   {
+    "use": "Mantequilla de erizo",
+    "ratio": "1 parte de erizo por 1–2 de mantequilla pomada",
+    "note": "Triturada y pasada por colador; se congela en rulos."
+   },
+   {
+    "use": "Holandesa de erizo",
+    "ratio": "50 g de lenguas por 250 g de salsa",
+    "note": "Al final, a 55–60 °C."
+   },
+   {
+    "use": "Revuelto",
+    "ratio": "20–30 g de erizo por huevo",
+    "note": "Cuajar a fuego muy suave, hasta 65 °C."
+   },
+   {
+    "use": "Rendimiento",
+    "ratio": "Unos 8–12 g de lenguas por erizo en temporada",
+    "note": "Varía mucho con la época."
+   }
+  ],
+  "variants": [
+   {
+    "id": "mantequillas-compuestas",
+    "name": "Mantequilla de erizo",
+    "note": "Para terminar salsas, arroces y pescados."
+   },
+   {
+    "id": "holandesa",
+    "name": "Salsa de erizo",
+    "note": "Holandesa o sabayón con lenguas trituradas."
+   },
+   {
+    "id": "ceviche-y-crudos",
+    "name": "Erizo en crudo",
+    "note": "Con crudos de pescado o marisco."
+   }
+  ],
+  "keys": [
+   "Temporada: en los meses fríos, lenguas llenas y firmes; en verano, casi vacío.",
+   "Erizo vivo: púas que se mueven al tocarlas y boca cerrada.",
+   "Poco calor: se añade al final y fuera del fuego.",
+   "Es un condimento: pocas lenguas dan sabor a toda una salsa.",
+   "Lenguas firmes y de color vivo; si se deshacen o huelen fuerte, fuera."
+  ],
+  "errors": [
+   {
+    "p": "Textura granulosa en la salsa",
+    "fix": "El erizo ha cuajado. Añádelo a menos de 60 °C y fuera del fuego."
+   },
+   {
+    "p": "Sabor amargo o metálico",
+    "fix": "Restos de vísceras o erizo de días. Limpia bien en salmuera fría y trabaja el mismo día."
+   },
+   {
+    "p": "Lenguas deshechas",
+    "fix": "Manipulación brusca. Sácalas con cucharilla de una vez y escurre sin apretar."
+   }
+  ],
+  "history": "El erizo se ha comido crudo en las costas del Mediterráneo y del Atlántico desde hace mucho, como bocado de pescadores y mariscadores. Su valor en cocina ha crecido en las últimas décadas, y en Asia es un producto muy apreciado.",
+  "uses": [
+   "Crudo con pan y cítrico",
+   "Revueltos y huevos",
+   "Mantequillas y salsas de mar",
+   "Arroces y pastas",
+   "Acabado de crudos y pescados"
+  ],
+  "keep": "Vivo, 1–2 días a 4–6 °C, boca abajo y tapado con un paño húmedo. Las lenguas limpias, el mismo día. La mantequilla de erizo se congela bien hasta 2 meses.",
+  "pro": "Abre los erizos justo antes del servicio y guarda las lenguas en una bandeja fría sobre papel. Para salsas, ten una base lista y añade el erizo a cada pedido. Los caparazones limpios sirven de recipiente.",
+  "related": [
+   "coccion-de-marisco",
+   "ceviche-y-crudos",
+   "mantequillas-compuestas",
+   "holandesa",
+   "salazones-y-huevas",
+   "arroces"
+  ]
+ },
+ {
+  "id": "cerdo-iberico",
+  "name": "Cerdo ibérico: presa, secreto y pluma",
+  "name_en": "Iberian pork: presa, secreto and pluma",
+  "cat": "producto",
+  "group": "Carne",
+  "aka": [
+   "ibérico",
+   "presa ibérica",
+   "secreto ibérico",
+   "pluma ibérica",
+   "abanico",
+   "carrillera ibérica",
+   "lagarto"
+  ],
+  "summary": "Cortes de cerdo ibérico con grasa infiltrada que se cocinan como un buen vacuno: brasa fuerte y punto jugoso.",
+  "what": "El cerdo ibérico tiene una grasa que se infiltra en el músculo y se funde a baja temperatura, lo que da jugosidad y un sabor profundo; la alimentación (bellota, cebo de campo o cebo) cambia mucho la grasa y el sabor. Por eso sus cortes frescos se cocinan al punto, rosados, como una carne roja.\n\nLa presa es un músculo grueso de la parte delantera, junto a la paleta y la cabeza de lomo: jugosa y muy veteada. El secreto es una lámina fina y grasa escondida entre la paleta y el tocino. La pluma es una pieza triangular del extremo del lomo. Hay más: abanico, lagarto, carrillera para guisar.",
+  "method": [
+   "Atempera la pieza 20–30 minutos fuera de la cámara y seca la superficie.",
+   "Sala justo antes de cocinar; los cortes finos como el secreto, en el último momento.",
+   "Presa y pluma: brasa o plancha fuerte para dorar bien por todos los lados y termina a fuego más suave hasta el punto. Reposo de 5 minutos.",
+   "Secreto: brasa muy viva, poco tiempo, hasta que la grasa esté dorada y crujiente; corta en tiras finas contra la fibra.",
+   "Carrillera y piezas de trabajo: guiso o [[baja-temperatura]], y terminar glaseadas o en la brasa."
+  ],
+  "ratios": [
+   {
+    "use": "Presa",
+    "ratio": "58–62 °C en el centro",
+    "note": "Rosada y jugosa; reposo de 5–8 minutos."
+   },
+   {
+    "use": "Pluma",
+    "ratio": "60–62 °C en el centro",
+    "note": "Pieza fina: pocos minutos por lado."
+   },
+   {
+    "use": "Secreto",
+    "ratio": "Brasa viva, 2–3 minutos por lado",
+    "note": "Grasa dorada, interior jugoso."
+   },
+   {
+    "use": "Carrillera en baja temperatura",
+    "ratio": "68–72 °C, 24 horas",
+    "note": "O guisada 2–2,5 horas a fuego suave."
+   }
+  ],
+  "variants": [
+   {
+    "id": "baja-temperatura",
+    "name": "Carrillera y piezas de trabajo",
+    "note": "Largas y suaves, luego doradas."
+   },
+   {
+    "id": "adobo",
+    "name": "Adobado",
+    "note": "Pimentón, ajo, orégano y vinagre, tradición del cerdo."
+   },
+   {
+    "id": "jugo-de-carne",
+    "name": "Jugo de ibérico",
+    "note": "Con huesos y recortes tostados."
+   }
+  ],
+  "keys": [
+   "Trátalo como una carne roja: dorado fuerte y punto jugoso.",
+   "El origen y la alimentación mandan: pide trazabilidad y prueba la grasa.",
+   "Corta contra la fibra, sobre todo el secreto y la presa.",
+   "El reposo es parte de la cocción.",
+   "Le van muy bien ácidos y frescos para cortar la grasa: [[encurtidos-rapidos|encurtidos]], [[chimichurri]], [[mojo-verde]]."
+  ],
+  "errors": [
+   {
+    "p": "Carne seca y gris",
+    "fix": "Pasada de punto. Saca 2–3 °C antes del punto final y reposa."
+   },
+   {
+    "p": "Grasa blanda y sin dorar",
+    "fix": "Fuego flojo. Empieza con brasa o plancha muy calientes."
+   },
+   {
+    "p": "Secreto duro al morder",
+    "fix": "Cortado a favor de la fibra. Corta en tiras finas contra la fibra."
+   }
+  ],
+  "history": "El cerdo ibérico es una raza criada sobre todo en la dehesa del suroeste de la península. Durante siglos se destinó casi entero a la matanza y la chacina; servir sus cortes frescos a la brasa y al punto se popularizó en los restaurantes en las últimas décadas.",
+  "uses": [
+   "Brasa para compartir",
+   "Principales con guarnición fresca",
+   "Bocados y tapas",
+   "Guisos con las piezas de trabajo"
+  ],
+  "keep": "Crudo, 3–4 días a 0–4 °C, envasado o tapado; al vacío, algo más según el proveedor. Se congela bien, envasado y bien plano. La carrillera cocinada, 4–5 días en su jugo.",
+  "pro": "Porciona al recibir por peso de ración y envasa. En el pase, piezas atemperadas y la brasa preparada para cortes rápidos. La carrillera, cocinada de antemano, regenerada en su jugo y glaseada al pedido.",
+  "related": [
+   "punto-de-la-carne",
+   "sellado-y-reposo",
+   "fuego-y-brasa",
+   "baja-temperatura",
+   "adobo",
+   "cortes-de-vacuno",
+   "casqueria"
+  ]
+ },
+ {
+  "id": "conejo",
+  "name": "Conejo",
+  "name_en": "Rabbit",
+  "cat": "producto",
+  "group": "Carne",
+  "aka": [
+   "conejo de granja",
+   "conejo de monte",
+   "lomo de conejo",
+   "conejo al ajillo",
+   "arroz con conejo",
+   "conejo a la brasa"
+  ],
+  "summary": "Carne magra y fina que se seca enseguida: cada parte, su cocción, y el lomo nunca pasado.",
+  "what": "El conejo es una carne blanca, magra y de sabor suave; el de monte es más oscuro, más duro y con más sabor que el de granja. Al tener tan poca grasa, se seca con facilidad: el lomo pide un punto justo, las patas traseras aguantan cocciones largas y las delanteras, con poca carne, van mejor a guisos, arroces y fondos.\n\nEn la cocina mediterránea va al ajillo, en arroz, guisado con tomate y hierbas o abierto a la brasa. El hígado y los riñones son un bocado muy fino, salteados o en una [[picada]].",
+  "method": [
+   "Despieza: separa las patas delanteras, las traseras y el lomo; corta el costillar y guarda el hígado y los riñones aparte.",
+   "Si lo vas a asar o hacer a la brasa, ponlo en una [[salmuera]] suave para que no se seque.",
+   "Brasa: ábrelo en mariposa cortando a lo largo del espinazo, aplánalo y ásalo a brasa media primero por el lado del hueso, regando con aceite, ajo y hierbas.",
+   "Lomo deshuesado: enrollado y bridado, dorado en sartén y terminado en horno o en [[baja-temperatura]] hasta 60–62 °C en el centro.",
+   "Patas traseras: confitadas o guisadas hasta que la carne se separe del hueso; luego se doran o se deshilachan."
+  ],
+  "ratios": [
+   {
+    "use": "Salmuera antes de asar",
+    "ratio": "50–60 g de sal por litro, 1–2 horas",
+    "note": "Lavar y secar antes de cocinar."
+   },
+   {
+    "use": "Lomo",
+    "ratio": "60–62 °C en el centro",
+    "note": "Reposo corto; a 68 °C ya está seco."
+   },
+   {
+    "use": "Patas traseras confitadas",
+    "ratio": "Aceite a 80–85 °C, 3–4 horas",
+    "note": "Hasta que la carne ceda."
+   },
+   {
+    "use": "Conejo entero a la brasa",
+    "ratio": "Brasa media, 25–35 minutos",
+    "note": "Pieza de 1,2–1,5 kg abierta en mariposa."
+   }
+  ],
+  "variants": [
+   {
+    "id": "arroces",
+    "name": "Arroz con conejo",
+    "note": "Con el conejo bien dorado y un fondo de sus huesos."
+   },
+   {
+    "id": "confitado",
+    "name": "Patas confitadas",
+    "note": "Para deshilachar o dorar al pedido."
+   },
+   {
+    "id": "alioli",
+    "name": "Conejo a la brasa con alioli",
+    "note": "Un clásico de la cocina de brasa mediterránea."
+   },
+   {
+    "id": null,
+    "name": "Conejo al ajillo",
+    "note": "Troceado pequeño, frito con ajos, hierbas y un golpe de vino blanco."
+   }
+  ],
+  "keys": [
+   "Es magro: salmuera, grasa añadida (aceite, panceta) o cocción corta.",
+   "Separa las partes: el lomo y las patas no se cocinan igual.",
+   "Dorado intenso: el sabor del conejo está en la costra.",
+   "Hígado y riñones, salteados al final o majados en la picada.",
+   "Romero, tomillo, ajo, vino blanco y tomate le van de forma natural."
+  ],
+  "errors": [
+   {
+    "p": "Carne seca y fibrosa",
+    "fix": "Lomo pasado o cocción fuerte y larga. Separa el lomo y sácalo a 60–62 °C."
+   },
+   {
+    "p": "Guiso sin sabor",
+    "fix": "Poco dorado o sin fondo. Dora bien las piezas y moja con un fondo de sus huesos tostados."
+   },
+   {
+    "p": "Astillas de hueso",
+    "fix": "Troceado con golpes que astillan. Corta por las articulaciones y usa cuchilla limpia."
+   }
+  ],
+  "history": "El conejo se ha criado y cazado en toda la península desde antiguo y es una de las carnes más presentes en la cocina popular mediterránea, en arroces, guisos y a la brasa.",
+  "uses": [
+   "Arroces",
+   "Brasa con alioli",
+   "Guisos con tomate y hierbas",
+   "Lomo como principal fino",
+   "Rillettes y terrinas con las patas"
+  ],
+  "keep": "Crudo y despiezado, 2–3 días a 0–4 °C. En salmuera, no más de las horas indicadas. Las patas confitadas, 1–2 semanas cubiertas de su grasa en frío.",
+  "pro": "Despieza al recibir: lomos limpios y porcionados, patas confitadas por tandas, delanteras y huesos al fondo. Al pase llegan piezas listas para dorar y terminar.",
+  "related": [
+   "pollo-y-aves",
+   "salmuera",
+   "confitado",
+   "baja-temperatura",
+   "arroces",
+   "fuego-y-brasa",
+   "alioli"
+  ]
+ },
+ {
+  "id": "cabrito",
+  "name": "Cabrito",
+  "name_en": "Kid goat",
+  "cat": "producto",
+  "group": "Carne",
+  "aka": [
+   "cabrito lechal",
+   "chivo",
+   "choto",
+   "paletilla de cabrito",
+   "cabrito asado",
+   "chuletillas de cabrito"
+  ],
+  "summary": "Carne joven, magra y delicada, más fina que el cordero: asados suaves y chuletillas a la brasa.",
+  "what": "El cabrito es la cría de la cabra, sacrificada joven. Tiene la carne más pálida, más magra y de sabor más suave que el [[cordero]], con poca grasa de cobertura. Eso lo hace muy fino pero también fácil de secar.\n\nSus piezas se tratan como las del cordero lechal: paletillas y piernas asadas despacio, chuletillas a la [[fuego-y-brasa|brasa]] y el resto en guiso o frito con ajos. Como tiene poca grasa propia, agradece el riego constante y algo de grasa añadida.",
+  "method": [
+   "Sala las piezas grandes con antelación (la víspera o unas horas antes) y las chuletillas justo antes de cocinar.",
+   "Paletilla o pierna: horno a 150–160 °C sobre un fondo de agua, vino blanco, ajos y hierbas, tapado los primeros tres cuartos del tiempo y regando.",
+   "Destapa al final y sube a 200–210 °C para dorar la piel, regando con el jugo.",
+   "Chuletillas: brasa viva, poco tiempo, hasta 58–60 °C; reposo breve.",
+   "Con los huesos y recortes, tostados, haz un [[jugo-de-carne|jugo]] para terminar."
+  ],
+  "ratios": [
+   {
+    "use": "Paletilla asada",
+    "ratio": "150–160 °C, 1 h 45 min–2 h 15 min",
+    "note": "Pieza de 0,8–1 kg; 10 minutos finales a 200 °C."
+   },
+   {
+    "use": "Chuletillas",
+    "ratio": "58–60 °C en el centro",
+    "note": "Brasa viva, 1–2 minutos por lado."
+   },
+   {
+    "use": "Ración de asado",
+    "ratio": "400–500 g con hueso por persona",
+    "note": "Pieza tierna, sobra poco."
+   },
+   {
+    "use": "Pierna en baja temperatura",
+    "ratio": "64–66 °C, 10–12 horas",
+    "note": "Luego dorar fuerte."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cordero",
+    "name": "Cordero lechal",
+    "note": "Mismos cortes, más grasa y sabor."
+   },
+   {
+    "id": "baja-temperatura",
+    "name": "Baja temperatura",
+    "note": "Para piernas y paletillas jugosas."
+   },
+   {
+    "id": null,
+    "name": "Cabrito frito con ajos",
+    "note": "Troceado pequeño, frito en aceite con ajos, hierbas y un golpe de vino."
+   }
+  ],
+  "keys": [
+   "Más suave y más magro que el cordero: menos fuego y más riego.",
+   "Tapar al principio para no secar; dorar solo al final.",
+   "Las chuletillas son pequeñas: se pasan en segundos.",
+   "Hierbas del monte, ajo y vino blanco, sin tapar su sabor."
+  ],
+  "errors": [
+   {
+    "p": "Asado seco",
+    "fix": "Horno fuerte o sin tapar. Baja a 150 °C, tapa y riega."
+   },
+   {
+    "p": "Piel blanda",
+    "fix": "No se ha destapado ni subido el horno al final. Seca y dora 10–15 minutos a 200–210 °C."
+   },
+   {
+    "p": "Sabor fuerte",
+    "fix": "Animal mayor de lo que se pidió. Exige cabrito lechal y revisa el tamaño de la canal."
+   }
+  ],
+  "history": "El cabrito asado o guisado forma parte de la cocina de zonas de monte y pastoreo de toda la península y de las islas, donde la cabra ha sido un animal doméstico de siempre.",
+  "uses": [
+   "Asados de horno",
+   "Chuletillas a la brasa",
+   "Guisos y fritos con ajo",
+   "Principales de temporada"
+  ],
+  "keep": "Crudo, 2–3 días a 0–4 °C. Asado y deshuesado, prensado y en frío, 3 días; se regenera en su jugo.",
+  "pro": "Asa por la mañana, deshuesa las paletillas en caliente y prénsalas; al pedido, dora la piel en sartén o salamandra. Las chuletillas, porcionadas y atemperadas cerca de la brasa.",
+  "related": [
+   "cordero",
+   "punto-de-la-carne",
+   "sellado-y-reposo",
+   "baja-temperatura",
+   "jugo-de-carne",
+   "fuego-y-brasa"
+  ]
+ },
+ {
+  "id": "ternera-lechal",
+  "name": "Ternera lechal",
+  "name_en": "Milk-fed veal",
+  "cat": "producto",
+  "group": "Carne",
+  "aka": [
+   "ternera blanca",
+   "ternera de leche",
+   "carne de ternera",
+   "osobuco",
+   "morcillo",
+   "fricandó",
+   "chuleta de ternera"
+  ],
+  "summary": "Carne joven, pálida y tierna: cortes nobles al punto, morcillo y carrillera guisados y huesos para los mejores fondos.",
+  "what": "La ternera lechal es un animal muy joven, criado sobre todo con leche: su carne es clara, fina, tierna y con muy poca grasa, de sabor suave. Es lo contrario del [[maduracion-de-carne|vacuno madurado]]: aquí se busca delicadeza, no potencia.\n\nLos cortes nobles (lomo, solomillo, tapa) se cocinan rápido y al punto rosado. Las piezas con colágeno (morcillo, carrillera, rabo) dan guisos melosos. Sus huesos, ricos en gelatina, son la base clásica del [[fondo-blanco]] y del [[fondo-oscuro]]. Las mollejas son la joya de la [[casqueria]].",
+  "method": [
+   "Cortes nobles: sala justo antes, dora en sartén o plancha a fuego medio-fuerte con aceite y una nuez de mantequilla al final, regando.",
+   "Saca a 58–62 °C en el centro y reposa; la carne es tan magra que más allá se seca.",
+   "Escalopes: filetes finos, golpeados entre dos papeles; empanados o salteados muy rápido.",
+   "Morcillo y osobuco: dora, añade aromáticos, vino y fondo hasta media altura y cocina tapado a fuego suave o al horno a 150–160 °C hasta que esté meloso.",
+   "Reduce el líquido del guiso hasta que napee."
+  ],
+  "ratios": [
+   {
+    "use": "Lomo o solomillo",
+    "ratio": "58–62 °C en el centro",
+    "note": "Reposo de 5 minutos."
+   },
+   {
+    "use": "Morcillo u osobuco braseado",
+    "ratio": "150–160 °C, 2,5–3 horas",
+    "note": "Rodajas de 3–4 cm con su hueso."
+   },
+   {
+    "use": "Carrillera en baja temperatura",
+    "ratio": "75–80 °C, 18–24 horas",
+    "note": "Luego glasear en su jugo."
+   },
+   {
+    "use": "Escalope",
+    "ratio": "5–6 mm de grosor",
+    "note": "1 minuto por lado."
+   }
+  ],
+  "variants": [
+   {
+    "id": "fondo-blanco",
+    "name": "Fondo blanco de ternera",
+    "note": "Huesos blanqueados, sin tostar."
+   },
+   {
+    "id": "casqueria",
+    "name": "Mollejas",
+    "note": "Blanqueadas, prensadas y doradas."
+   },
+   {
+    "id": "setas",
+    "name": "Fricandó",
+    "note": "Guiso catalán de ternera en finas láminas con setas."
+   },
+   {
+    "id": null,
+    "name": "Osobuco",
+    "note": "Morcillo en rodajas con su hueso, braseado con verduras y vino."
+   }
+  ],
+  "keys": [
+   "Muy magra: punto rosado y reposo, nunca bien hecha en los cortes nobles.",
+   "Mantequilla al final y riego para dar la grasa que no tiene.",
+   "Las piezas con colágeno son las de más sabor: cocción larga.",
+   "Guarda los huesos: son la mejor gelatina para fondos y salsas."
+  ],
+  "errors": [
+   {
+    "p": "Filete seco y duro",
+    "fix": "Pasado o cocinado demasiado lento. Sartén caliente y saca a 60 °C."
+   },
+   {
+    "p": "Escalope que se encoge",
+    "fix": "Nervios sin quitar. Limpia la telilla y haz pequeños cortes en el borde."
+   },
+   {
+    "p": "Guiso fibroso",
+    "fix": "Le falta tiempo o ha hervido fuerte. Más horas a fuego suave, sin borbotones."
+   }
+  ],
+  "history": "La ternera de leche ha sido carne de celebración en buena parte de Europa. Platos como el osobuco, con su hueso con tuétano, o el fricandó catalán, guisado con setas, nacieron en cocinas domésticas y hoy son clásicos.",
+  "uses": [
+   "Principales de corte fino",
+   "Guisos melosos",
+   "Fondos y salsas",
+   "Empanados y escalopes",
+   "Mollejas"
+  ],
+  "keep": "Crudo, 3–4 días a 0–4 °C. Los guisos, 4–5 días en frío en su salsa; mejoran de un día para otro. Los huesos se congelan para fondos.",
+  "pro": "Porciona los cortes nobles al recibir y guarda los recortes y huesos para el fondo. Los braseados se hacen la víspera, se enfrían en su jugo y se regeneran al pedido.",
+  "related": [
+   "cortes-de-vacuno",
+   "punto-de-la-carne",
+   "sellado-y-reposo",
+   "fondo-blanco",
+   "fondo-oscuro",
+   "casqueria",
+   "jugo-de-carne"
+  ]
+ },
+ {
+  "id": "calabaza",
+  "name": "Calabaza",
+  "name_en": "Squash and pumpkin",
+  "cat": "producto",
+  "group": "Huerta",
+  "aka": [
+   "calabaza cacahuete",
+   "calabaza violín",
+   "potimarrón",
+   "calabaza de invierno",
+   "crema de calabaza",
+   "pipas de calabaza"
+  ],
+  "summary": "Dulce, carnosa y de larga guarda: asada, a la brasa, en crema, en crudo encurtida y con sus pipas tostadas.",
+  "what": "Las calabazas de invierno tienen la carne densa, anaranjada y dulce, con mucho almidón cuando están maduras. La de cacahuete es fina y sin hebras; las redondas de piel roja tienen una carne más seca y castaña; las grandes de piel verde o naranja son más aguadas y van mejor a cremas y dulces.\n\nSu dulzor pide contraste: algo ácido, salado o amargo. Asada o a la brasa se carameliza y se concentra; en crema se vuelve sedosa; cruda en láminas finas admite un [[encurtidos-rapidos|encurtido]] rápido. Las pipas tostadas dan crujiente al plato.",
+  "method": [
+   "Pela con cuchillo o pelador fuerte, retira las pipas y las hebras; guarda las pipas.",
+   "Asada: en dados o gajos con aceite y sal, horno a 200–220 °C hasta que los bordes se doren y la carne ceda.",
+   "A la brasa: en rodajas de 2 cm, primero cocidas al vapor o asadas hasta que estén casi tiernas, y luego marcadas en la brasa para darles color y humo.",
+   "Crema: asa la calabaza en vez de hervirla, tritura con caldo caliente y mantequilla o aceite, y pasa por colador fino.",
+   "Pipas: lávalas, sécalas, sálalas y tuéstalas a 160–170 °C hasta que crujan."
+  ],
+  "ratios": [
+   {
+    "use": "Crema",
+    "ratio": "1 kg de calabaza asada, 300–400 ml de caldo, 50 g de mantequilla",
+    "note": "Ajusta el caldo según la humedad de la calabaza."
+   },
+   {
+    "use": "Asado en dados",
+    "ratio": "200–220 °C, 25–35 minutos",
+    "note": "Dados de 2–3 cm sin amontonar."
+   },
+   {
+    "use": "Pipas tostadas",
+    "ratio": "160–170 °C, 15–20 minutos",
+    "note": "Removiendo a mitad."
+   },
+   {
+    "use": "Encurtido de láminas crudas",
+    "ratio": "Vinagre, agua y azúcar 1:1:0,5",
+    "note": "Láminas de 1–2 mm, 30 minutos."
+   }
+  ],
+  "variants": [
+   {
+    "id": "asado-de-verduras",
+    "name": "Calabaza asada",
+    "note": "Horno fuerte, bordes caramelizados."
+   },
+   {
+    "id": "glaseado-de-verduras",
+    "name": "Glaseada",
+    "note": "Con mantequilla, su propio jugo y un toque ácido."
+   },
+   {
+    "id": "encurtidos-rapidos",
+    "name": "Encurtida",
+    "note": "En láminas crudas, para dar acidez y crujiente."
+   },
+   {
+    "id": null,
+    "name": "Calabaza a la brasa",
+    "note": "Casi cocida de antemano y marcada al pedido."
+   }
+  ],
+  "keys": [
+   "Asar antes que hervir: concentra el sabor en vez de diluirlo.",
+   "Contraste para su dulzor: queso salado, vinagre, salvia, miso, cítrico.",
+   "Cada variedad tiene su humedad: ajusta el líquido de la crema probando.",
+   "Pipas, piel asada y hebras: casi todo se aprovecha."
+  ],
+  "errors": [
+   {
+    "p": "Crema aguada y sosa",
+    "fix": "Calabaza hervida o muy aguada. Ásala, reduce el líquido y corrige con sal y un ácido."
+   },
+   {
+    "p": "Asado blando y sin color",
+    "fix": "Bandeja llena o horno flojo. Separa las piezas y sube la temperatura."
+   },
+   {
+    "p": "Se quema por fuera y queda cruda",
+    "fix": "Piezas gruesas en brasa directa. Precocina y marca solo al final."
+   }
+  ],
+  "history": "Las calabazas de invierno llegaron a Europa desde América y se integraron en la cocina popular mediterránea como hortaliza de guarda, en guisos, potajes, dulces y buñuelos.",
+  "uses": [
+   "Cremas y purés",
+   "Guarniciones asadas",
+   "Brasa con salsas frescas",
+   "Rellenos de pasta",
+   "Encurtidos y crudos",
+   "Dulces"
+  ],
+  "keep": "Entera y sana, varias semanas o meses en lugar fresco (10–15 °C), seco y ventilado. Abierta, 4–5 días en frío tapada con film. La crema, 3–4 días en frío; se congela bien.",
+  "pro": "Asa por bandejas el día anterior para cremas y rellenos. Ten rodajas precocinadas y frías para marcar al pedido. Las pipas se tuestan en tanda grande y se guardan en bote cerrado.",
+  "related": [
+   "asado-de-verduras",
+   "glaseado-de-verduras",
+   "encurtidos-rapidos",
+   "verduras-a-la-brasa",
+   "pure-coliflor-tostada",
+   "quesos-en-cocina"
+  ]
+ },
+ {
+  "id": "berenjena",
+  "name": "Berenjena",
+  "name_en": "Aubergine",
+  "cat": "producto",
+  "group": "Huerta",
+  "aka": [
+   "albergínia",
+   "berenjena a la brasa",
+   "berenjena frita",
+   "berenjena rellena",
+   "escalivada",
+   "tumbet"
+  ],
+  "summary": "Una esponja que absorbe aceite y humo: a la brasa entera, frita, asada o glaseada, siempre bien hecha.",
+  "what": "La berenjena tiene una carne esponjosa, llena de aire y agua, que absorbe aceite con facilidad y que solo es agradable cuando está bien cocinada: cruda o a medio hacer es correosa y amarga. Bien hecha se vuelve cremosa y toma todo el sabor de lo que la rodea.\n\nEn la brasa, entera y quemada por fuera, da una carne ahumada y sedosa (base de la [[crema-berenjena-brasa]]). Frita, se dora y queda cremosa. Asada en mitades, con cortes en la carne, admite glaseados de [[miso-y-koji|miso]], tomate o especias.",
+  "method": [
+   "Elige piezas pesadas para su tamaño, con piel tersa y brillante y pedúnculo verde.",
+   "Brasa entera: directamente sobre las brasas o la llama, girando, hasta que la piel esté negra y la pieza se hunda al tocarla. Deja reposar tapada y saca la carne con cuchara.",
+   "Asada en mitades: haz cortes en rejilla sin llegar a la piel, unta de aceite y sal y hornea a 200–220 °C boca arriba hasta que esté muy tierna; glasea al final.",
+   "Frita: en rodajas o bastones, sala 30 minutos si quieres que absorba menos aceite, seca bien y fríe a 170–180 °C.",
+   "Para rellenar: vacía en crudo o tras asar, saltea la carne con el relleno y gratina."
+  ],
+  "ratios": [
+   {
+    "use": "Brasa o llama directa",
+    "ratio": "15–25 minutos según tamaño",
+    "note": "Hasta que se hunda por completo."
+   },
+   {
+    "use": "Asada en mitades",
+    "ratio": "200–220 °C, 30–40 minutos",
+    "note": "Carne muy tierna antes de glasear."
+   },
+   {
+    "use": "Salado antes de freír",
+    "ratio": "10–15 g de sal por kg, 30 minutos",
+    "note": "Lavar o secar muy bien."
+   },
+   {
+    "use": "Fritura",
+    "ratio": "170–180 °C",
+    "note": "Pocas piezas a la vez para no bajar el aceite."
+   }
+  ],
+  "variants": [
+   {
+    "id": "crema-berenjena-brasa",
+    "name": "Crema de berenjena a la brasa",
+    "note": "Carne ahumada con aceite, ajo y limón."
+   },
+   {
+    "id": "miso-y-koji",
+    "name": "Berenjena glaseada con miso",
+    "note": "Asada y lacada con miso, azúcar y vinagre de arroz."
+   },
+   {
+    "id": "fritura",
+    "name": "Berenjena frita",
+    "note": "En bastones, rebozada ligera o con miel de caña."
+   },
+   {
+    "id": null,
+    "name": "Tumbet",
+    "note": "Plato mallorquín de capas de patata, berenjena y pimiento fritos con salsa de tomate."
+   }
+  ],
+  "keys": [
+   "Bien hecha o nada: cruda o a medias es correosa.",
+   "Absorbe aceite como una esponja: cocina con medida y escurre.",
+   "Ahumada en brasa es uno de los mejores sabores de la huerta.",
+   "Las variedades actuales amargan poco; salar sirve sobre todo para quitar agua y que chupe menos aceite.",
+   "Le van el ajo, el comino, el yogur, el tomate, el miso y las hierbas frescas."
+  ],
+  "errors": [
+   {
+    "p": "Berenjena aceitosa",
+    "fix": "Aceite frío o piezas húmedas. Sala y seca, fríe a 175–180 °C y escurre sobre papel."
+   },
+   {
+    "p": "Carne gomosa",
+    "fix": "Falta de cocción. Sigue hasta que esté completamente tierna."
+   },
+   {
+    "p": "Crema amarga o con restos negros",
+    "fix": "Trozos de piel quemada. Saca la carne con cuchara sin raspar la piel."
+   }
+  ],
+  "history": "La berenjena llegó al Mediterráneo desde Asia y se asentó en la cocina de la península a través de la cocina andalusí. Hoy está en platos de toda la costa, como la escalivada catalana, el tumbet o las berenjenas rellenas de Baleares.",
+  "uses": [
+   "Cremas y purés ahumados",
+   "Guarniciones de brasa",
+   "Fritos y bocados",
+   "Rellenos gratinados",
+   "Pistos, tumbet y escalivada"
+  ],
+  "keep": "Entera, 4–6 días en lugar fresco o en la parte menos fría de la cámara (por debajo de 8 °C se daña). Asada y pelada, 3 días en frío cubierta de aceite.",
+  "pro": "Quema las berenjenas por tandas al encender la brasa, cuando el fuego es más vivo. Guarda la carne en su aceite para cremas y bases. Las mitades asadas se glasean y gratinan al pedido.",
+  "related": [
+   "crema-berenjena-brasa",
+   "verduras-a-la-brasa",
+   "asado-de-verduras",
+   "miso-y-koji",
+   "fritura",
+   "salsa-yogur-limon"
+  ]
+ },
+ {
+  "id": "pimientos",
+  "name": "Pimientos",
+  "name_en": "Peppers",
+  "cat": "producto",
+  "group": "Huerta",
+  "aka": [
+   "pimiento rojo",
+   "pimiento verde",
+   "pimiento de Padrón",
+   "piquillo",
+   "ñora",
+   "choricero",
+   "pimientos asados",
+   "escalivada"
+  ],
+  "summary": "Familia enorme: los carnosos para asar, los finos para freír, los pequeños para la plancha y los secos para salsas.",
+  "what": "Hay pimientos para cada uso. Los rojos grandes y carnosos son para asar: la piel se quema, la carne se vuelve dulce y suelta un jugo valioso. Los verdes finos, tipo italiano, se fríen o confitan. Los pequeños de piel fina se hacen enteros a la plancha con sal gruesa. Los piquillos, asados y pelados, son para rellenar o salsear.\n\nLos secos, como la ñora y el choricero, se hidratan y su carne se raspa para salsas como el [[romesco]] o la [[salsa-vizcaina|vizcaína]]. Las guindillas encurtidas, como las [[vinagreta-piparras|piparras]], aportan picor suave y acidez.",
+  "method": [
+   "Asados: pimientos rojos enteros, untados de aceite, en horno a 200 °C o directamente en la brasa, girándolos hasta que la piel esté arrugada y tostada.",
+   "Sudar: ciérralos en un recipiente tapado 15–20 minutos para que la piel se suelte.",
+   "Pela sin pasarlos por agua, retira pepitas y guarda todo el jugo colado para el aliño.",
+   "Fritos: los verdes finos, enteros o en tiras, en aceite a fuego medio hasta que estén tiernos y con ampollas.",
+   "Secos: abre, quita pepitas, hidrata en agua caliente 30–40 minutos y raspa la carne con una cuchara."
+  ],
+  "ratios": [
+   {
+    "use": "Rojos asados en horno",
+    "ratio": "200 °C, 40–50 minutos",
+    "note": "Girando a mitad."
+   },
+   {
+    "use": "Rojos en la brasa",
+    "ratio": "Brasa viva, 12–20 minutos",
+    "note": "Hasta que la piel se ennegrezca por igual."
+   },
+   {
+    "use": "Pequeños a la plancha",
+    "ratio": "Plancha muy caliente, 2–3 minutos",
+    "note": "Sal gruesa al final."
+   },
+   {
+    "use": "Carne de ñora",
+    "ratio": "4–6 ñoras por cada litro de salsa",
+    "note": "Según intensidad buscada."
+   }
+  ],
+  "variants": [
+   {
+    "id": "pimientos-asados-alinados",
+    "name": "Pimientos asados aliñados",
+    "note": "En su jugo con aceite, ajo y vinagre."
+   },
+   {
+    "id": "romesco",
+    "name": "Romesco",
+    "note": "Con ñora, frutos secos y tomate."
+   },
+   {
+    "id": "salsa-vizcaina",
+    "name": "Salsa vizcaína",
+    "note": "Con pimiento choricero y cebolla."
+   },
+   {
+    "id": "vinagreta-piparras",
+    "name": "Vinagreta de piparras",
+    "note": "Guindilla encurtida, picante suave."
+   }
+  ],
+  "keys": [
+   "No laves los asados para pelarlos: el agua se lleva el sabor.",
+   "El jugo que sueltan al asarlos es la mejor base de su aliño.",
+   "Los rojos, bien maduros: más dulces y más carne.",
+   "Las pepitas y la piel quemada amargan: fuera.",
+   "Los secos dan color, dulzor y profundidad a salsas y arroces."
+  ],
+  "errors": [
+   {
+    "p": "Piel que no se suelta",
+    "fix": "Poco asados o sin sudar. Asa más y tapa al sacarlos."
+   },
+   {
+    "p": "Pimientos asados aguados y sosos",
+    "fix": "Lavados al pelar o asados a poca temperatura. Pela en seco y asa más fuerte."
+   },
+   {
+    "p": "Ñora amarga",
+    "fix": "Pepitas o carne quemada al freírla. Retira pepitas y fríela solo unos segundos o úsala hidratada."
+   }
+  ],
+  "history": "Los pimientos llegaron de América y en pocos siglos se convirtieron en un pilar de la cocina española, frescos y secos. El pimentón, que se hace con pimientos secos y molidos, es uno de los condimentos más característicos de la cocina del país.",
+  "uses": [
+   "Guarniciones de brasa",
+   "Ensaladas de asados",
+   "Salsas y sofritos",
+   "Rellenos",
+   "Tapas a la plancha"
+  ],
+  "keep": "Frescos, 1 semana en frío. Asados y pelados, 4–5 días en frío cubiertos de su jugo y aceite; se congelan bien. Secos, meses en lugar seco y oscuro.",
+  "pro": "Asa por bandejas el día antes y guárdalos en su jugo. La carne de ñora, en tanda y congelada en porciones. En el pase, los asados templados en su aceite junto a la brasa.",
+  "related": [
+   "pimientos-asados-alinados",
+   "romesco",
+   "salsa-vizcaina",
+   "sofrito",
+   "verduras-a-la-brasa",
+   "especias",
+   "vinagreta-piparras"
+  ]
  }
 ]

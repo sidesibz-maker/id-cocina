@@ -57,7 +57,7 @@ const rd = await page.evaluate(() => JSON.parse(localStorage.getItem('id-cocina-
 ok(rd && rd.read['construir-un-plato'], 'abrir una ficha no la marca como leída');
 await go('#/biblioteca'); ok(await page.locator('.kpath').count() >= 7, 'faltan rutas de aprendizaje');
 const crear = page.locator('.kpath', {hasText: 'Crear platos'});
-ok((await crear.textContent()).includes('1 de 10') && (await crear.locator('.btn').textContent()).includes('Contraste y equilibrio'), 'la ruta no avanza: ' + await crear.textContent());
+ok((await crear.textContent()).includes('1 de 14') && (await crear.locator('.btn').textContent()).includes('Contraste y equilibrio'), 'la ruta no avanza: ' + await crear.textContent());
 await go('#/hoy'); ok((await page.textContent('.craft')).includes('Tu ruta: Crear platos'), 'la portada no dice la siguiente ficha de la ruta');
 // Chispa con foto: se guarda la imagen y va en la copia de seguridad
 await go('#/laboratorio');

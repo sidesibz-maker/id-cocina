@@ -1957,5 +1957,1314 @@
    "pescado-entero",
    "hierbas-frescas"
   ]
+ },
+ {
+  "id": "escalfado",
+  "name": "Escalfado",
+  "name_en": "Poaching",
+  "cat": "tecnicas",
+  "group": "Cocciones suaves",
+  "technique": "hervido",
+  "aka": [
+   "escalfar",
+   "pochar",
+   "pochado",
+   "court-bouillon",
+   "huevo escalfado",
+   "pescado escalfado",
+   "cocción en líquido"
+  ],
+  "summary": "Cocinar sumergido en un líquido caliente que no llega a hervir: la manera más suave de dar el punto a pescados, aves, huevos y fruta.",
+  "what": "Escalfar es cocinar dentro de un líquido a 70–90 °C, sin borbotones. El movimiento suave del líquido no rompe las piezas y el calor llega de forma pareja, así que la carne queda jugosa y tierna. El líquido puede ser agua salada, un caldo corto con vino y aromáticos, un [[fumet]], leche, un almíbar o una grasa.\n\nSirve para pescados delicados, aves y piezas magras, [[puntos-del-huevo|huevos]], marisco en mantequilla y frutas. Cuanto más delicada la pieza, más bajo el líquido. Y el líquido, si está bien hecho, se convierte en la salsa.",
+  "method": [
+   "Prepara el líquido con sal y aromáticos y llévalo a la temperatura indicada; comprueba con termómetro.",
+   "Mete la pieza a temperatura ambiente o apenas fría, totalmente cubierta.",
+   "Mantén el líquido sin hervir: debe temblar, no burbujear. Ajusta el fuego o aparta el cazo.",
+   "Saca por punto, no por tiempo: pescado a 45–50 °C en el centro, ave magra a 62–65 °C.",
+   "Escurre bien, y si el líquido tiene sabor, redúcelo y móntalo con mantequilla o aceite para la salsa."
+  ],
+  "ratios": [
+   {
+    "use": "Caldo corto para pescado",
+    "ratio": "1 l de agua, 150 ml de vino blanco, 30 ml de vinagre, 10 g de sal",
+    "note": "Con cebolla, zanahoria, laurel y pimienta; 20 minutos de hervor antes de usarlo."
+   },
+   {
+    "use": "Pescado escalfado",
+    "ratio": "75–80 °C",
+    "note": "Lomo de 2–3 cm, 6–10 minutos."
+   },
+   {
+    "use": "Huevo escalfado",
+    "ratio": "85–90 °C, 3–4 minutos",
+    "note": "Huevo muy fresco, un chorrito de vinagre."
+   },
+   {
+    "use": "Marisco en mantequilla",
+    "ratio": "60–65 °C",
+    "note": "Mantequilla montada con un poco de agua para que no se separe."
+   }
+  ],
+  "variants": [
+   {
+    "id": "puntos-del-huevo",
+    "name": "Huevo escalfado",
+    "note": "Tiempos y trucos para que no se abra."
+   },
+   {
+    "id": "confitado",
+    "name": "Escalfado en grasa",
+    "note": "En aceite o grasa a baja temperatura."
+   },
+   {
+    "id": "baja-temperatura",
+    "name": "Al vacío",
+    "note": "El mismo principio con control exacto."
+   },
+   {
+    "id": null,
+    "name": "Fruta escalfada",
+    "note": "Pera o melocotón en almíbar ligero con especias, a 85–90 °C."
+   }
+  ],
+  "keys": [
+   "El líquido tiembla pero no hierve: el borbotón endurece y rompe.",
+   "Sal y sabor en el líquido: lo que tenga, lo tendrá la pieza.",
+   "Termómetro en el líquido y en la pieza.",
+   "Cubre del todo la pieza o se cocinará desigual.",
+   "El líquido es una salsa en potencia: no lo tires."
+  ],
+  "errors": [
+   {
+    "p": "Pescado deshecho",
+    "fix": "Líquido hirviendo o manipulación brusca. Baja a 75–80 °C y saca con espumadera ancha."
+   },
+   {
+    "p": "Pieza sosa",
+    "fix": "Líquido sin sal ni aromáticos. Sazónalo como si fuera un caldo para beber."
+   },
+   {
+    "p": "Huevo con hebras de clara",
+    "fix": "Huevo poco fresco o agua hirviendo. Usa huevos del día, cuela la clara líquida y baja el fuego."
+   }
+  ],
+  "history": "Escalfar en caldo corto es una técnica básica de la cocina clásica francesa, y en todas las cocinas hay platos de pescado o carne cocidos con suavidad en un caldo aromático.",
+  "uses": [
+   "Pescados delicados",
+   "Pechugas y aves magras",
+   "Huevos para platos de verdura o arroz",
+   "Marisco en mantequilla",
+   "Frutas para postres"
+  ],
+  "keep": "Lo escalfado se sirve al momento o se enfría en su propio líquido para que no se seque; así aguanta 2 días en frío. El caldo corto se puede guardar 3 días o congelar.",
+  "pro": "Ten el líquido listo y a temperatura en un baño o cazo grande; escalfa al pedido. Los huevos se escalfan por tandas, se cortan en agua con hielo y se regeneran 1 minuto a 60–65 °C.",
+  "related": [
+   "puntos-del-huevo",
+   "baja-temperatura",
+   "confitado",
+   "fumet",
+   "beurre-blanc",
+   "papillote-y-vapor"
+  ]
+ },
+ {
+  "id": "braseado",
+  "name": "Braseado",
+  "name_en": "Braising",
+  "cat": "tecnicas",
+  "group": "Calor y punto",
+  "technique": "guiso",
+  "aka": [
+   "brasear",
+   "estofado",
+   "cocción mixta",
+   "carne braseada",
+   "rabo braseado",
+   "verdura braseada"
+  ],
+  "summary": "Dorar primero y cocer después, tapado y con poco líquido, hasta que la pieza esté melosa y el fondo se haya convertido en salsa.",
+  "what": "El braseado es una cocción mixta: primero se dora la pieza en seco para crear costra y sabor, y después se cuece tapada, con líquido hasta media altura, a fuego muy suave o en horno. Esa cocción larga y húmeda transforma el colágeno de las piezas de trabajo en gelatina, y la carne pasa de dura a melosa.\n\nSe diferencia del guiso en que la pieza suele ser más grande y el líquido no la cubre. Sirve para carrilleras, rabo, morcillo, paletillas, aves de caza y también para verduras firmes como hinojo, endivia, puerro o lechuga.",
+  "method": [
+   "Seca y sala la pieza. Dórala por todos los lados en una cazuela pesada con poca grasa, sin prisa; sácala.",
+   "En la misma grasa, rehoga los aromáticos ([[mirepoix]], ajo, tomate) hasta que tomen color.",
+   "Desglasa con vino y reduce a la mitad; añade [[fondo-oscuro]] o agua hasta un tercio o la mitad de la altura de la pieza.",
+   "Devuelve la carne, tapa y cocina al horno a 140–160 °C o a fuego mínimo, dándole la vuelta cada hora, hasta que una aguja entre sin resistencia.",
+   "Saca la pieza, cuela el líquido, desgrasa y redúcelo hasta que napee; glasea la carne con él."
+  ],
+  "ratios": [
+   {
+    "use": "Carrillera de cerdo o ternera",
+    "ratio": "150 °C, 2,5–3,5 horas",
+    "note": "Hasta que se corte con cuchara."
+   },
+   {
+    "use": "Rabo de vaca",
+    "ratio": "150 °C, 4–5 horas",
+    "note": "Desgrasar el fondo en frío."
+   },
+   {
+    "use": "Líquido",
+    "ratio": "Un tercio o la mitad de la altura de la pieza",
+    "note": "Si cubre, es un guiso."
+   },
+   {
+    "use": "Hinojo o endivia",
+    "ratio": "180 °C, 30–45 minutos",
+    "note": "Con mantequilla, un poco de fondo y tapados."
+   }
+  ],
+  "variants": [
+   {
+    "id": "jugo-de-carne",
+    "name": "Jugo del braseado",
+    "note": "El líquido colado y reducido."
+   },
+   {
+    "id": "baja-temperatura",
+    "name": "Braseado al vacío",
+    "note": "La pieza en bolsa con su fondo, 18–36 horas."
+   },
+   {
+    "id": "glaseado-de-verduras",
+    "name": "Verduras glaseadas",
+    "note": "Verduras pequeñas cocidas en poco líquido hasta lacarse."
+   },
+   {
+    "id": "hinojo-brasa-limon",
+    "name": "Hinojo",
+    "note": "Braseado y luego marcado en la brasa."
+   }
+  ],
+  "keys": [
+   "El dorado inicial es la mitad del sabor: sin prisa y sin amontonar.",
+   "Poco líquido y tapa: la pieza se cuece en su vapor.",
+   "Fuego suave: el hervor fuerte reseca las fibras aunque estén mojadas.",
+   "Se hace la víspera: enfriar en su jugo mejora la textura y permite desgrasar.",
+   "La salsa sale del propio braseado: cuélala y redúcela."
+  ],
+  "errors": [
+   {
+    "p": "Carne seca aunque esté en líquido",
+    "fix": "Cocción demasiado fuerte. Baja a 140–150 °C y no dejes que hierva."
+   },
+   {
+    "p": "Salsa grasa",
+    "fix": "No se ha desgrasado. Enfría, retira la grasa sólida y reduce después."
+   },
+   {
+    "p": "Sabor plano",
+    "fix": "Dorado escaso o fondo pobre. Dora mejor la pieza y los aromáticos y usa un fondo oscuro."
+   }
+  ],
+  "history": "Cocinar piezas duras tapadas, al calor suave de las brasas o del horno, es una de las formas más antiguas de cocina en casi todas las culturas. La cocina clásica la ordenó como técnica con el dorado inicial y la reducción final del jugo.",
+  "uses": [
+   "Carrilleras, rabo y morcillo",
+   "Paletillas y cuellos",
+   "Aves de caza",
+   "Verduras firmes",
+   "Rellenos de pasta o bocados con la carne deshilachada"
+  ],
+  "keep": "En su jugo, 4–5 días a 0–4 °C. Se congela muy bien con el jugo. Regenerar tapado, a fuego suave o en horno a 120 °C, y glasear al final.",
+  "pro": "Brasea la víspera en tandas grandes. Enfría rápido en su jugo, porciona en frío y guarda las raciones con su salsa. Al pedido, regenera y glasea en sartén o salamandra.",
+  "related": [
+   "sellado-y-reposo",
+   "fondo-oscuro",
+   "jugo-de-carne",
+   "reducciones",
+   "mirepoix",
+   "baja-temperatura",
+   "glace"
+  ]
+ },
+ {
+  "id": "salteado-y-wok",
+  "name": "Salteado y wok",
+  "name_en": "Sautéing and stir-frying",
+  "cat": "tecnicas",
+  "group": "Calor y punto",
+  "technique": "salteado",
+  "aka": [
+   "saltear",
+   "sauté",
+   "wok",
+   "salteado al wok",
+   "stir-fry",
+   "verduras salteadas"
+  ],
+  "summary": "Piezas pequeñas, poca grasa, fuego muy fuerte y movimiento: color por fuera y punto crujiente por dentro en pocos minutos.",
+  "what": "Saltear es cocinar piezas pequeñas en poca grasa muy caliente, moviéndolas para que se doren por todas partes sin cocerse en su agua. El wok lleva la idea al extremo: su forma concentra un calor muy alto en el fondo y deja las paredes para apartar lo que ya está hecho; la llama alcanza a veces la grasa y da un aroma ahumado característico.\n\nLa clave está en la preparación: todo cortado del mismo tamaño, seco y listo junto al fuego, porque la cocción dura minutos y no hay tiempo para cortar.",
+  "method": [
+   "Corta todo en piezas del mismo tamaño y seca muy bien verduras, carnes y mariscos.",
+   "Calienta la sartén o el wok vacío hasta que humee; añade un aceite que aguante el calor.",
+   "Cocina por tandas pequeñas: una capa, sin amontonar. Empieza por lo que más tarda y aparta lo hecho.",
+   "Mueve con el salto o la espátula solo lo necesario: deja que cada cara tome color.",
+   "Junta todo al final, añade aromáticos (ajo, jengibre, hierbas) unos segundos y termina con la salsa o el aliño, que debe napear y no encharcar."
+  ],
+  "ratios": [
+   {
+    "use": "Carga de la sartén",
+    "ratio": "Una sola capa, como mucho 250–300 g en sartén de 28 cm",
+    "note": "Más carga baja la temperatura y cuece."
+   },
+   {
+    "use": "Verduras crujientes",
+    "ratio": "2–4 minutos a fuego máximo",
+    "note": "Cortes finos y del mismo grosor."
+   },
+   {
+    "use": "Tiras de carne",
+    "ratio": "1–2 minutos",
+    "note": "Marinadas con un poco de almidón para protegerlas."
+   },
+   {
+    "use": "Salsa final",
+    "ratio": "20–30 ml por ración",
+    "note": "Ligada con 1–2 g de almidón disuelto en frío si hace falta."
+   }
+  ],
+  "variants": [
+   {
+    "id": "sellado-y-reposo",
+    "name": "Sellado",
+    "note": "Piezas grandes doradas antes de terminar."
+   },
+   {
+    "id": "glaseado-de-verduras",
+    "name": "Glaseado",
+    "note": "Para verduras que piden más cocción."
+   },
+   {
+    "id": "ponzu-y-salsas-citricas",
+    "name": "Salteado con salsa cítrica",
+    "note": "Para terminar con un golpe ácido."
+   },
+   {
+    "id": "setas",
+    "name": "Setas salteadas",
+    "note": "Fuego fuerte y sal al final."
+   }
+  ],
+  "keys": [
+   "Todo cortado y a mano antes de encender: no hay tiempo durante la cocción.",
+   "Producto seco y fuego máximo: la humedad hace que se cueza.",
+   "Tandas pequeñas: el error más común es llenar la sartén.",
+   "Ajo y hierbas al final, que se queman enseguida.",
+   "La sal y la salsa al final, para no sacar agua antes de dorar."
+  ],
+  "errors": [
+   {
+    "p": "Verdura cocida y aguada",
+    "fix": "Sartén llena o poco caliente. Saltea por tandas a fuego máximo."
+   },
+   {
+    "p": "Carne dura y gris",
+    "fix": "Tiras gruesas o demasiado tiempo. Corta fino contra la fibra y saltea 1–2 minutos."
+   },
+   {
+    "p": "Ajo amargo",
+    "fix": "Añadido al principio. Échalo en los últimos segundos."
+   },
+   {
+    "p": "Salsa que encharca el plato",
+    "fix": "Demasiado líquido. Usa menos y redúcelo en la sartén o liga con un poco de almidón."
+   }
+  ],
+  "history": "El salteado forma parte de la cocina clásica europea y el wok es el utensilio central de la cocina china desde hace siglos. Hoy las dos técnicas conviven en cualquier cocina profesional.",
+  "uses": [
+   "Verduras de guarnición",
+   "Setas",
+   "Marisco y calamares",
+   "Tiras de carne",
+   "Arroces y fideos salteados"
+  ],
+  "keep": "Se cocina al momento; no se guarda ni se recalienta bien. Lo que sí se adelanta es el corte, en frío y bien seco.",
+  "pro": "Mise en place por raciones en recipientes pequeños, ordenados por tiempo de cocción. Un fuego exclusivo para saltear y la sartén siempre caliente. Las salsas, listas y medidas en biberón.",
+  "related": [
+   "sellado-y-reposo",
+   "setas",
+   "cefalopodos",
+   "glaseado-de-verduras",
+   "tempura",
+   "miso-y-koji"
+  ]
+ },
+ {
+  "id": "plancha-y-sarten",
+  "name": "Plancha y sartén",
+  "name_en": "Griddle and pan-frying",
+  "cat": "tecnicas",
+  "group": "Calor y punto",
+  "technique": "plancha",
+  "aka": [
+   "a la plancha",
+   "plancha",
+   "sartén",
+   "planxa",
+   "marcado",
+   "pescado a la plancha"
+  ],
+  "summary": "Calor por contacto: zonas de temperatura, producto seco, poca grasa y no tocar hasta que se despegue.",
+  "what": "La plancha y la sartén cocinan por contacto directo con el metal caliente. Ese calor intenso dora la superficie con rapidez (la reacción de Maillard) y da costra y sabor, mientras el interior se hace por conducción. Es la cocción más habitual de un pase: pescados, mariscos, carnes finas, verduras y huevos.\n\nUna buena plancha tiene zonas: una muy caliente para marcar, otra media para terminar y otra templada para mantener. La sartén permite además regar con grasa y hacer una salsa rápida con lo que queda pegado en el fondo.",
+  "method": [
+   "Calienta la plancha o la sartén antes de empezar: para marcar, 200–250 °C en la superficie.",
+   "Seca el producto con papel y sala justo antes; unta con aceite el producto, no la plancha, o pon una capa fina.",
+   "Coloca y no muevas: la pieza se despega sola cuando ha hecho costra.",
+   "Da la vuelta una sola vez si es fina; si es gruesa, pásala a la zona media o al horno para terminar.",
+   "En sartén, en los últimos minutos añade mantequilla, ajo y hierbas y riega la pieza con la espuma."
+  ],
+  "ratios": [
+   {
+    "use": "Marcar carne o pescado",
+    "ratio": "200–250 °C en la superficie",
+    "note": "Zona más caliente."
+   },
+   {
+    "use": "Pescado con piel",
+    "ratio": "180–200 °C",
+    "note": "Por la piel el 80 % del tiempo."
+   },
+   {
+    "use": "Verduras y huevos",
+    "ratio": "160–180 °C",
+    "note": "Zona media."
+   },
+   {
+    "use": "Marisco con sal gruesa",
+    "ratio": "230–250 °C, 1–2 minutos por lado",
+    "note": "Sin aceite."
+   }
+  ],
+  "variants": [
+   {
+    "id": "sellado-y-reposo",
+    "name": "Sellado y reposo",
+    "note": "Para piezas gruesas de carne."
+   },
+   {
+    "id": "mantequilla-noisette",
+    "name": "Regado con mantequilla",
+    "note": "Mantequilla espumosa con ajo y tomillo."
+   },
+   {
+    "id": "gamba-roja",
+    "name": "Gamba a la plancha",
+    "note": "Sal gruesa y cabeza apretada."
+   },
+   {
+    "id": "dorada-y-lubina",
+    "name": "Lomo con piel crujiente",
+    "note": "Piel seca y presión al principio."
+   }
+  ],
+  "keys": [
+   "Producto seco: el agua impide el dorado.",
+   "Calor antes de poner el producto, y no amontonar.",
+   "No mover: la costra suelta la pieza.",
+   "Una plancha con zonas permite marcar, terminar y mantener a la vez.",
+   "Limpia en caliente entre producto y producto: los restos quemados amargan."
+  ],
+  "errors": [
+   {
+    "p": "Se pega",
+    "fix": "Plancha fría, producto húmedo o movido antes de tiempo. Calienta más, seca y espera a que se despegue."
+   },
+   {
+    "p": "Quemado por fuera y crudo por dentro",
+    "fix": "Pieza gruesa a fuego máximo todo el tiempo. Marca fuerte y termina en zona media u horno."
+   },
+   {
+    "p": "Humo y sabor amargo",
+    "fix": "Grasa quemada o restos. Limpia con rasqueta y usa grasa que aguante el calor."
+   }
+  ],
+  "history": "Cocinar sobre una piedra o una plancha de metal caliente es tan antiguo como el fuego. En España, la plancha es la base de la cocina de bar y de marisquería, y «a la plancha» se ha convertido en sinónimo de producto sencillo y de calidad.",
+  "uses": [
+   "Pescados y mariscos",
+   "Carnes finas",
+   "Verduras",
+   "Huevos",
+   "Panes y bocados"
+  ],
+  "keep": "Lo que sale de la plancha se sirve al momento. Lo que se adelanta es la mise en place: piezas porcionadas, secas y atemperadas.",
+  "pro": "Ordena la plancha por zonas al empezar el servicio y mantén una rasqueta, aceite en biberón y sal a mano. Limpia entre tandas. Los platos de plancha van de los últimos a salir de cada mesa.",
+  "related": [
+   "sellado-y-reposo",
+   "punto-de-la-carne",
+   "mantequilla-noisette",
+   "fuego-y-brasa",
+   "dorada-y-lubina",
+   "gamba-roja"
+  ]
+ },
+ {
+  "id": "coccion-a-la-sal",
+  "name": "Cocción a la sal",
+  "name_en": "Salt-crust baking",
+  "cat": "tecnicas",
+  "group": "Cocciones suaves",
+  "technique": "horno",
+  "aka": [
+   "a la sal",
+   "costra de sal",
+   "pescado a la sal",
+   "dorada a la sal",
+   "lubina a la sal",
+   "masa de sal"
+  ],
+  "summary": "Una costra de sal que encierra la pieza en su propio vapor: carne jugosa, sazón justa y un plato que se abre en la mesa.",
+  "what": "En la cocción a la sal la pieza se cubre por completo con sal gruesa humedecida, que al hornearse forma una costra dura. Dentro, la pieza se cuece en su propio vapor, sin perder jugos, y la sal apenas penetra si la piel está intacta. El resultado es una carne muy jugosa y un sabor limpio.\n\nSe usa sobre todo con pescados enteros (dorada, lubina, besugo, pargo), pero también con verduras de raíz como remolacha, apionabo o patata, y con piezas de carne envueltas en una masa de sal y harina.",
+  "method": [
+   "Pescado entero, eviscerado y sin escamar: las escamas protegen la carne de la sal. Rellena la tripa con hierbas o cítrico.",
+   "Mezcla la sal gruesa con agua (o con clara de huevo) hasta que tenga la textura de arena mojada.",
+   "Pon una capa de 1 cm en la bandeja, la pieza encima y cúbrela del todo, apretando, sin huecos.",
+   "Hornea a 200–220 °C. Comprueba el punto clavando la sonda a través de la costra: 50–52 °C junto a la espina.",
+   "Deja reposar 3–5 minutos, rompe la costra con el dorso de un cuchillo, retira la sal y la piel y saca los lomos."
+  ],
+  "ratios": [
+   {
+    "use": "Sal por kilo de pescado",
+    "ratio": "1,5–2 kg de sal gruesa",
+    "note": "Con 1 clara o 100 ml de agua por kilo de sal."
+   },
+   {
+    "use": "Pescado de 600–800 g",
+    "ratio": "200 °C, 20–25 minutos",
+    "note": "Hasta 50 °C junto a la espina."
+   },
+   {
+    "use": "Pescado de 1,5–2 kg",
+    "ratio": "200 °C, 35–45 minutos",
+    "note": "Sonda obligatoria."
+   },
+   {
+    "use": "Remolacha o apionabo",
+    "ratio": "180–190 °C, 1–1,5 horas",
+    "note": "Según tamaño; pinchar para comprobar."
+   }
+  ],
+  "variants": [
+   {
+    "id": "dorada-y-lubina",
+    "name": "Dorada o lubina a la sal",
+    "note": "El clásico de pieza de ración o para dos."
+   },
+   {
+    "id": "pescado-entero",
+    "name": "Pescado entero",
+    "note": "Cómo servir y desespinar en sala."
+   },
+   {
+    "id": "sal-y-flor-de-sal",
+    "name": "Sales",
+    "note": "Tipos de sal y su uso."
+   },
+   {
+    "id": null,
+    "name": "Masa de sal y harina",
+    "note": "Para carnes o verduras: sal, harina y agua, en masa que se envuelve."
+   }
+  ],
+  "keys": [
+   "Sin escamar y con la piel entera: si la sal toca la carne, la sala de más.",
+   "Costra cerrada, sin huecos: es la olla.",
+   "El punto se mide con sonda a través de la sal.",
+   "La sal se puede aromatizar con hierbas, piel de cítrico o especias.",
+   "Romper la costra en la mesa es parte del plato."
+  ],
+  "errors": [
+   {
+    "p": "Pescado salado",
+    "fix": "Piel rota o tripa abierta en contacto con la sal. Usa piezas con la piel intacta y tapa la abertura con hierbas."
+   },
+   {
+    "p": "Pescado pasado",
+    "fix": "Horno por tiempo sin sonda. Mide en la parte más gruesa y saca a 50 °C."
+   },
+   {
+    "p": "Costra que se desmorona",
+    "fix": "Sal demasiado seca. Humedécela más o añade clara."
+   }
+  ],
+  "history": "Cocinar alimentos dentro de una costra de sal es una práctica antigua en las zonas salineras del Mediterráneo. En la costa española, el pescado a la sal es un clásico de restaurante de puerto.",
+  "uses": [
+   "Pescado entero para dos",
+   "Verduras de raíz",
+   "Carnes en masa de sal",
+   "Platos que se abren en sala"
+  ],
+  "keep": "Se cocina al pedido. La sal usada no se reutiliza para comer. Las verduras cocidas a la sal, peladas, aguantan 3–4 días en frío.",
+  "pro": "Ten la mezcla de sal preparada en un cubo tapado y las bandejas listas. Calcula el tiempo con la mesa: el pescado a la sal tarda 20–40 minutos, avisa en sala al tomar la comanda.",
+  "related": [
+   "pescado-entero",
+   "dorada-y-lubina",
+   "sal-y-flor-de-sal",
+   "papillote-y-vapor",
+   "asado-de-verduras"
+  ]
+ },
+ {
+  "id": "gratinado",
+  "name": "Gratinado",
+  "name_en": "Gratinating",
+  "cat": "tecnicas",
+  "group": "Calor y punto",
+  "technique": "gratinado",
+  "aka": [
+   "gratinar",
+   "gratén",
+   "gratin",
+   "salamandra",
+   "costra dorada",
+   "gratin de patata",
+   "gratinado de salsa"
+  ],
+  "summary": "Calor fuerte desde arriba para dorar una superficie: queso, pan, salsa o azúcar que se convierten en costra.",
+  "what": "Gratinar es dorar la superficie de un plato con calor intenso desde arriba: salamandra, grill del horno o soplete. Lo que se dora es una capa preparada para ello: queso, pan rallado con grasa, una salsa con huevo o grasa (como la [[mornay]] o la [[holandesa]]), un sabayón o azúcar.\n\nHay dos usos distintos. En el gratinado de acabado, el plato ya está cocinado y solo se dora por encima, en segundos o minutos. En el gratén de horno, como el de patata con nata, la cocción y el dorado se hacen a la vez, despacio, durante más tiempo.",
+  "method": [
+   "Calienta la salamandra o el grill al máximo antes de meter el plato.",
+   "Prepara la capa: salsa con yema o queso, pan rallado con mantequilla o aceite, o azúcar en capa fina y uniforme.",
+   "El plato debe estar caliente por dentro antes de gratinar: el gratinado dora, no cocina.",
+   "Coloca a 8–12 cm del calor y gira el plato para dorar por igual; vigila, se pasa en segundos.",
+   "Para el gratén de horno: capas finas de patata o verdura cruda con nata o leche, horno a 160–170 °C hasta que estén tiernas, y subir al final para dorar."
+  ],
+  "ratios": [
+   {
+    "use": "Salsa de acabado (holandesa, sabayón)",
+    "ratio": "30–60 segundos de salamandra",
+    "note": "Capa fina; el huevo se dora muy deprisa."
+   },
+   {
+    "use": "Pan rallado con grasa",
+    "ratio": "30 g de mantequilla o aceite por 100 g de pan",
+    "note": "Con hierbas o ralladura de cítrico."
+   },
+   {
+    "use": "Gratin de patata",
+    "ratio": "1 kg de patata en láminas de 2–3 mm por 400–500 ml de nata y leche",
+    "note": "160–170 °C, 60–75 minutos."
+   },
+   {
+    "use": "Queso para gratinar",
+    "ratio": "20–30 g por ración",
+    "note": "Rallado fino y repartido."
+   }
+  ],
+  "variants": [
+   {
+    "id": "mornay",
+    "name": "Mornay",
+    "note": "La salsa de gratinar clásica."
+   },
+   {
+    "id": "holandesa",
+    "name": "Holandesa o sabayón gratinado",
+    "note": "Sobre pescados, mariscos o espárragos."
+   },
+   {
+    "id": "quesos-en-cocina",
+    "name": "Quesos para gratinar",
+    "note": "Cuáles funden, cuáles doran y cuáles se separan."
+   },
+   {
+    "id": "migas-limon",
+    "name": "Costra de migas",
+    "note": "Pan con limón y hierbas para gratinar."
+   }
+  ],
+  "keys": [
+   "Dora, no cocina: el interior tiene que llegar caliente.",
+   "Capa fina y uniforme: dora por igual y sin quemarse.",
+   "Las salsas con huevo doran muy rápido; los quesos grasos, más despacio.",
+   "Nunca te alejes de la salamandra.",
+   "En el gratén de horno, primero la cocción suave y al final el dorado."
+  ],
+  "errors": [
+   {
+    "p": "Costra quemada y centro frío",
+    "fix": "Plato frío o demasiado cerca del calor. Calienta antes y aleja un poco."
+   },
+   {
+    "p": "Queso que suelta grasa",
+    "fix": "Queso muy curado o demasiado tiempo. Usa un queso que funda bien y gratina menos."
+   },
+   {
+    "p": "Gratin de patata cortado o aguado",
+    "fix": "Horno fuerte o leche sola. Usa más nata y baja a 160 °C."
+   },
+   {
+    "p": "Salsa holandesa cortada al gratinar",
+    "fix": "Demasiado tiempo bajo el calor. Capa fina y unos segundos."
+   }
+  ],
+  "history": "El gratinado es una técnica de la cocina clásica francesa, donde el gratin designaba la costra que se formaba en el fondo y en la superficie del recipiente. En España se ha usado mucho para canelones, pescados y verduras con bechamel.",
+  "uses": [
+   "Canelones y pastas al horno",
+   "Pescados y mariscos con salsa",
+   "Verduras gratinadas",
+   "Gratin de patata",
+   "Postres con azúcar quemado"
+  ],
+  "keep": "El gratén de horno se puede hacer la víspera, enfriar prensado y porcionar; se regenera en horno a 160 °C y se dora al momento. Los gratinados de acabado se hacen siempre al pedido.",
+  "pro": "Salamandra encendida durante todo el servicio. Las salsas de gratinar en baño a 60 °C, listas para napar. Gratén en bandeja, porcionado en frío y dorado por ración.",
+  "related": [
+   "mornay",
+   "bechamel",
+   "holandesa",
+   "quesos-en-cocina",
+   "migas-limon",
+   "caramelo"
+  ]
+ },
+ {
+  "id": "clarificacion",
+  "name": "Clarificación de grasas y caldos",
+  "name_en": "Clarifying fats and stocks",
+  "cat": "tecnicas",
+  "group": "Conservar y transformar",
+  "aka": [
+   "clarificar",
+   "mantequilla clarificada",
+   "ghee",
+   "desgrasar",
+   "clarificación con agar",
+   "caldo transparente",
+   "colar con estameña"
+  ],
+  "summary": "Quitar lo que enturbia o se quema: mantequilla clarificada, caldos desgrasados y transparentes y grasas limpias.",
+  "what": "Clarificar es separar de una grasa o de un caldo las partículas, proteínas y agua que lo enturbian, lo hacen quemarse antes o le dan sabores sucios. En las grasas, como la mantequilla, se retiran el agua y los sólidos de la leche: queda una grasa limpia que aguanta mucho más calor. En los caldos se busca transparencia y un sabor limpio.\n\nHay varias maneras: por decantación y colado, por frío (la grasa sube y se solidifica), con una red de proteína que atrapa la turbidez (el método del [[consome]]) o con un gel que retiene las partículas y deja escurrir el líquido limpio (con agar o gelatina).",
+  "method": [
+   "Mantequilla clarificada: funde a fuego muy suave sin remover; retira la espuma de arriba y vierte la grasa dorada dejando en el fondo el suero blanco.",
+   "Para un ghee, sigue cocinando hasta que los sólidos del fondo se doren y huela a avellana; cuela por estameña.",
+   "Desgrasar un caldo: enfríalo en cámara toda la noche y retira la grasa solidificada de la superficie.",
+   "Clarificar con agar: disuelve el agar en una parte del caldo hirviendo, mezcla con el resto, deja gelificar, rompe el gel y déjalo escurrir en frío sobre un paño fino.",
+   "Clarificar por congelación: caldo con gelatina, congelado en bloque y descongelado en la cámara sobre un paño; lo que cae es transparente."
+  ],
+  "ratios": [
+   {
+    "use": "Rendimiento de la mantequilla",
+    "ratio": "1 kg da unos 800 g clarificada",
+    "note": "El resto es agua y sólidos."
+   },
+   {
+    "use": "Clarificación con agar",
+    "ratio": "1–2 g de agar por litro",
+    "note": "Gel blando; escurrido 2–4 horas en frío."
+   },
+   {
+    "use": "Por congelación",
+    "ratio": "5–7 g de gelatina por litro",
+    "note": "Descongelar 24–48 horas a 2–4 °C."
+   },
+   {
+    "use": "Clarificación con claras",
+    "ratio": "2–3 claras por litro",
+    "note": "Más carne y verdura picada; caldo frío y calor muy suave."
+   }
+  ],
+  "variants": [
+   {
+    "id": "consome",
+    "name": "Consomé",
+    "note": "La clarificación clásica con claras y carne picada."
+   },
+   {
+    "id": "mantequilla-noisette",
+    "name": "Mantequilla noisette",
+    "note": "Los sólidos dorados a propósito."
+   },
+   {
+    "id": "gelificantes-y-espesantes",
+    "name": "Agar y gelatina",
+    "note": "Dosis y comportamiento."
+   },
+   {
+    "id": "aceites-aromatizados",
+    "name": "Aceites colados",
+    "note": "Filtrar para que no se enturbien ni se pongan rancios."
+   }
+  ],
+  "keys": [
+   "Fuego suave: la mantequilla que hierve fuerte se emulsiona y no se separa.",
+   "El frío es el mejor desgrasador: deja el caldo de un día para otro.",
+   "Colar sin apretar: si estrujas el paño, pasa la turbidez.",
+   "La mantequilla clarificada aguanta el calor de un sellado; la entera se quema.",
+   "Guarda los sólidos de la mantequilla: dan sabor a purés y masas."
+  ],
+  "errors": [
+   {
+    "p": "Mantequilla clarificada turbia",
+    "fix": "Ha hervido o se ha removido. Vuelve a fundir suave y cuela por estameña."
+   },
+   {
+    "p": "Caldo turbio tras clarificar con claras",
+    "fix": "Ha hervido o se ha removido la costra. Calor mínimo y no toques la costra."
+   },
+   {
+    "p": "Caldo clarificado con agar sin sabor",
+    "fix": "El caldo de partida era flojo. Clarifica un caldo bien reducido y sazona al final."
+   }
+  ],
+  "history": "La mantequilla clarificada se usa desde hace siglos en las cocinas de la India y Oriente Medio, y la cocina clásica europea la adoptó para salsas y salteados. Clarificar con agar o por congelación es una técnica más reciente, difundida por la cocina de vanguardia.",
+  "uses": [
+   "Sellados y salteados con sabor a mantequilla",
+   "Holandesa y bearnesa",
+   "Consomés y caldos para servir solos",
+   "Gelatinas transparentes",
+   "Aguas de tomate o de verdura"
+  ],
+  "keep": "Mantequilla clarificada, 1–2 meses en frío y bien tapada; el ghee, más. Caldos clarificados, 3–4 días en frío o congelados.",
+  "pro": "Clarifica la mantequilla en tanda grande y guárdala en biberón o bote cerca de los fuegos. Los caldos para clarificar se hacen la víspera y se desgrasan en frío antes de empezar.",
+  "related": [
+   "consome",
+   "mantequilla-noisette",
+   "holandesa",
+   "gelificantes-y-espesantes",
+   "fondo-blanco",
+   "aceites-aromatizados"
+  ]
+ },
+ {
+  "id": "infusiones",
+  "name": "Infusiones en frío y en caliente",
+  "name_en": "Hot and cold infusions",
+  "cat": "tecnicas",
+  "group": "Conservar y transformar",
+  "aka": [
+   "infusionar",
+   "infusión en frío",
+   "infusión en caliente",
+   "maceración",
+   "nata infusionada",
+   "agua de tomate",
+   "cold brew"
+  ],
+  "summary": "Pasar el aroma de un producto a un líquido o una grasa: el calor extrae rápido y fuerte; el frío, despacio y fresco.",
+  "what": "Infusionar es dejar un producto aromático (hierbas, especias, cáscaras, tostados, té, café) en contacto con un líquido o una grasa para que le pase su sabor, y después colarlo. La temperatura decide qué se extrae: el calor saca mucho y deprisa, pero puede dar notas cocidas o amargas; el frío trabaja lento y da aromas más frescos y limpios.\n\nSe infusionan leches y natas para postres y salsas, caldos y [[dashi]], [[aceites-aromatizados|aceites]] y mantequillas, almíbares, vinagres y aguas para bebidas sin alcohol.",
+  "method": [
+   "Elige el medio según el aroma: las grasas y el alcohol captan bien los aromas que no se disuelven en agua (vainilla, cítricos, especias).",
+   "En caliente: lleva el líquido a la temperatura indicada, añade el aromático, aparta del fuego, tapa y deja reposar el tiempo justo.",
+   "En frío: mezcla el aromático con el líquido frío, tapa y deja en la cámara las horas necesarias, removiendo alguna vez.",
+   "Prueba durante la infusión: cuando tenga el sabor buscado, cuela; más tiempo no siempre es mejor.",
+   "Cuela por colador fino o estameña sin apretar, y enfría rápido si es caliente."
+  ],
+  "ratios": [
+   {
+    "use": "Nata o leche",
+    "ratio": "80–85 °C, tapada, 15–30 minutos",
+    "note": "Vainilla, hierbas, café tostado o piel de cítrico."
+   },
+   {
+    "use": "Hierbas tiernas en frío",
+    "ratio": "10–20 g por litro, 12–24 horas a 4 °C",
+    "note": "Hierbabuena, albahaca, hinojo."
+   },
+   {
+    "use": "Té verde",
+    "ratio": "70–80 °C, 2–3 minutos",
+    "note": "Más caliente o más tiempo amarga."
+   },
+   {
+    "use": "Café en frío",
+    "ratio": "1 parte de café molido por 8–10 de agua, 12–18 horas",
+    "note": "En la cámara; colar dos veces."
+   }
+  ],
+  "variants": [
+   {
+    "id": "aceites-aromatizados",
+    "name": "Aceites infusionados",
+    "note": "Temperaturas, tiempos y seguridad."
+   },
+   {
+    "id": "dashi",
+    "name": "Dashi",
+    "note": "Infusión de alga y bonito, muy controlada."
+   },
+   {
+    "id": "crema-inglesa",
+    "name": "Crema inglesa infusionada",
+    "note": "La leche se infusiona antes de ligar."
+   },
+   {
+    "id": "maridaje-sin-alcohol",
+    "name": "Bebidas sin alcohol",
+    "note": "Infusiones en frío como base."
+   }
+  ],
+  "keys": [
+   "Caliente para lo leñoso y duro (especias, tostados); frío para lo verde y delicado.",
+   "Tapa siempre: el aroma se va con el vapor.",
+   "Prueba y cuela a tiempo: la infusión larga extrae amargor.",
+   "Las grasas guardan aromas que el agua no capta.",
+   "Ajo y hierbas frescas en aceite, siempre en frío y por poco tiempo, por seguridad."
+  ],
+  "errors": [
+   {
+    "p": "Sabor a hierba cocida",
+    "fix": "Hierba tierna en líquido muy caliente. Infusiona en frío o por debajo de 70 °C."
+   },
+   {
+    "p": "Amargor",
+    "fix": "Demasiado tiempo o temperatura. Acorta y baja el calor; con té y café, mide."
+   },
+   {
+    "p": "Infusión floja",
+    "fix": "Poco producto o producto entero. Aumenta la cantidad y rompe, ralla o tuesta el aromático."
+   }
+  ],
+  "history": "Infusionar plantas en agua, vino o aceite es una práctica antigua en todas las cocinas y en la medicina popular. La infusión en frío se ha extendido en las últimas décadas, sobre todo en café, té y bebidas sin alcohol.",
+  "uses": [
+   "Postres con lácteos",
+   "Salsas y caldos aromáticos",
+   "Aceites y mantequillas",
+   "Bebidas sin alcohol",
+   "Almíbares y vinagres"
+  ],
+  "keep": "Lácteos infusionados, 2–3 días en frío. Infusiones de agua, 2–3 días. Aceites con producto fresco, pocos días en frío; con producto seco y colados, semanas.",
+  "pro": "Infusiona la víspera en frío y cuela por la mañana. Etiqueta con producto, fecha y hora: la intensidad cambia con el tiempo. Ten fichas con gramos y minutos para que salga igual siempre.",
+  "related": [
+   "aceites-aromatizados",
+   "dashi",
+   "crema-inglesa",
+   "hierbas-frescas",
+   "especias",
+   "maridaje-sin-alcohol"
+  ]
+ },
+ {
+  "id": "caramelizacion-de-verduras",
+  "name": "Caramelización de verduras",
+  "name_en": "Caramelising vegetables",
+  "cat": "tecnicas",
+  "group": "Verduras",
+  "technique": "caramelizado",
+  "aka": [
+   "cebolla caramelizada",
+   "caramelizar",
+   "pochar hasta dorar",
+   "reacción de Maillard",
+   "tostado de verduras",
+   "dorado lento"
+  ],
+  "summary": "Dorar despacio los azúcares de la verdura hasta que se vuelva dulce, profunda y tostada, sin quemarla.",
+  "what": "Al calentar una verdura más allá del punto de cocción, sus azúcares y proteínas se transforman: aparecen colores dorados y pardos y aromas tostados, dulces y profundos. Parte es caramelización de los azúcares y parte la reacción de Maillard, que también ocurre en carnes y panes. El resultado es mucho más que dulzor: es fondo de sabor.\n\nLa cebolla es el ejemplo clásico, pero funciona con chalota, puerro, zanahoria, hinojo, col, coliflor o coles de Bruselas. Puede ser lenta, en cazuela durante una hora, o rápida, con [[asado-de-verduras|horno fuerte]] o sartén.",
+  "method": [
+   "Corta en piezas regulares: en juliana fina para cebolla, en gajos o mitades para hortalizas.",
+   "Cazuela ancha, grasa suficiente para cubrir el fondo y una pizca de sal al principio para que suelte agua.",
+   "Cebolla lenta: fuego medio-bajo, removiendo de vez en cuando; cuando se pegue en el fondo, desglasa con un chorrito de agua y raspa.",
+   "Repite el desglasado hasta llegar al color buscado: rubio, dorado o marrón oscuro.",
+   "Hortalizas en sartén u horno: piezas secas, sin amontonar, cara cortada abajo y sin mover hasta que estén bien tostadas."
+  ],
+  "ratios": [
+   {
+    "use": "Cebolla caramelizada",
+    "ratio": "45–60 minutos a fuego medio-bajo",
+    "note": "1 kg de cebolla da 250–300 g."
+   },
+   {
+    "use": "Bicarbonato para acelerar",
+    "ratio": "1 g por kg de cebolla",
+    "note": "Más rápido pero más blanda; no te pases."
+   },
+   {
+    "use": "Hortalizas al horno",
+    "ratio": "220–230 °C, 20–35 minutos",
+    "note": "Bandeja caliente y sin amontonar."
+   },
+   {
+    "use": "Coles en sartén",
+    "ratio": "Por la cara cortada, 5–7 minutos",
+    "note": "Luego terminar con tapa o al horno."
+   }
+  ],
+  "variants": [
+   {
+    "id": "sofrito",
+    "name": "Sofrito",
+    "note": "Cebolla y tomate pochados hasta concentrar."
+   },
+   {
+    "id": "glaseado-de-verduras",
+    "name": "Glaseado",
+    "note": "Verdura cocida en poco líquido hasta lacarse."
+   },
+   {
+    "id": "pure-coliflor-tostada",
+    "name": "Coliflor tostada",
+    "note": "Caramelizada antes de triturar."
+   },
+   {
+    "id": "soubise",
+    "name": "Soubise",
+    "note": "Salsa de cebolla, aquí sin color."
+   }
+  ],
+  "keys": [
+   "Paciencia: el fuego fuerte quema por fuera antes de transformar el azúcar.",
+   "Desglasar con agua recupera lo pegado, que es sabor.",
+   "Sin amontonar en sartén u horno: si se cuece en su vapor, no se dora.",
+   "Termina con un ácido (vinagre, vino, cítrico) para equilibrar el dulzor.",
+   "Haz cebolla caramelizada en cantidad: se congela muy bien."
+  ],
+  "errors": [
+   {
+    "p": "Cebolla quemada por fuera y cruda",
+    "fix": "Fuego demasiado alto. Baja el fuego y desglasa cuando se pegue."
+   },
+   {
+    "p": "Verdura cocida y sin color",
+    "fix": "Bandeja llena o verdura húmeda. Separa, seca y sube la temperatura."
+   },
+   {
+    "p": "Sabor amargo",
+    "fix": "Se ha pasado de tostado. Para en marrón, no en negro."
+   }
+  ],
+  "history": "Dorar lentamente cebolla y hortalizas como base de guisos, salsas y sopas es una práctica de casi todas las cocinas. La explicación química de la reacción de Maillard es del siglo XX; la técnica es mucho más antigua.",
+  "uses": [
+   "Bases de salsas, sopas y guisos",
+   "Guarniciones de verduras",
+   "Rellenos y tostas",
+   "Purés con sabor tostado",
+   "Mermeladas saladas"
+  ],
+  "keep": "Cebolla caramelizada, 1 semana en frío o 3 meses congelada en porciones planas. Hortalizas caramelizadas, 2–3 días en frío; se regeneran en horno fuerte.",
+  "pro": "Carameliza cebolla en marmita o cazuela grande una vez por semana y congélala en bolsas planas. Hortalizas por bandejas al empezar el día, terminadas al pedido.",
+  "related": [
+   "glaseado-de-verduras",
+   "asado-de-verduras",
+   "sofrito",
+   "pure-coliflor-tostada",
+   "caramelo",
+   "verduras-a-la-brasa"
+  ]
+ },
+ {
+  "id": "coccion-en-hoja-y-ceniza",
+  "name": "Cocción en hoja y en ceniza",
+  "name_en": "Cooking in leaves and embers",
+  "cat": "tecnicas",
+  "group": "Calor y punto",
+  "technique": "brasa",
+  "aka": [
+   "en hoja de higuera",
+   "en hoja de parra",
+   "en ceniza",
+   "en las brasas",
+   "patata en ceniza",
+   "rescoldo",
+   "ceniza vegetal"
+  ],
+  "summary": "Envolver en hojas o enterrar en la ceniza caliente: el fuego cocina despacio, la hoja protege y perfuma, la ceniza da un asado profundo.",
+  "what": "Son dos cocciones de brasa que protegen el alimento del fuego directo. En hoja, la pieza se envuelve en hojas de higuera, parra, col, acelga o plátano y se cocina sobre la brasa o junto a ella: la hoja retiene el vapor, se tuesta y deja su aroma (la de higuera recuerda al coco y a la nuez). En ceniza, verduras con piel gruesa se entierran en el rescoldo, donde se asan despacio por todos los lados.\n\nEn una cocina de brasa son una forma de aprovechar el final del fuego. Las pieles quemadas, trituradas, dan además una ceniza vegetal para condimentar.",
+  "method": [
+   "Hojas limpias y sin tratar; las duras (parra, col), escaldadas 30 segundos para que se doblen sin romperse.",
+   "Envuelve la pieza sazonada, con grasa y aromáticos, en dos o tres capas de hoja y ata o sujeta con palillos.",
+   "Cocina sobre brasa media o junto a ella, girando; la hoja exterior puede quemarse, la interior protege.",
+   "Ceniza: entierra patatas, boniatos, cebollas o remolachas enteras, con piel, en el rescoldo y la ceniza caliente, lejos de las llamas.",
+   "Saca, limpia la ceniza con un paño o pincel, abre y saca la carne; o sirve en su hoja para abrir en la mesa."
+  ],
+  "ratios": [
+   {
+    "use": "Pescado en hoja de higuera",
+    "ratio": "Brasa media, 6–10 minutos",
+    "note": "Lomo de 2–3 cm; hasta 48–50 °C."
+   },
+   {
+    "use": "Patata o boniato en ceniza",
+    "ratio": "45–75 minutos",
+    "note": "Según tamaño; pinchar para comprobar."
+   },
+   {
+    "use": "Cebolla o remolacha en ceniza",
+    "ratio": "60–90 minutos",
+    "note": "Hasta que esté blanda al apretar."
+   },
+   {
+    "use": "Ceniza vegetal",
+    "ratio": "Pieles o puerro quemados del todo y triturados",
+    "note": "Una pizca, como condimento."
+   }
+  ],
+  "variants": [
+   {
+    "id": "papillote-y-vapor",
+    "name": "Papillote",
+    "note": "El mismo principio con papel en el horno."
+   },
+   {
+    "id": "verduras-a-la-brasa",
+    "name": "Verduras a la brasa",
+    "note": "Directas sobre la parrilla."
+   },
+   {
+    "id": "patata-chafada-brasa",
+    "name": "Patata chafada",
+    "note": "Cocida y terminada en la brasa."
+   },
+   {
+    "id": "higos-y-algarroba",
+    "name": "Hoja de higuera",
+    "note": "El árbol de la isla, también por sus hojas."
+   }
+  ],
+  "keys": [
+   "Rescoldo, no llama: la llama quema la hoja y no cocina dentro.",
+   "Hojas sin tratar y lavadas; nada de carbón con aditivos para enterrar comida.",
+   "Varias capas de hoja: la de fuera se sacrifica.",
+   "Abrir en la mesa libera el aroma.",
+   "Aprovecha el final de la brasa del servicio para cocinar en ceniza."
+  ],
+  "errors": [
+   {
+    "p": "Hoja quemada y pieza cruda",
+    "fix": "Fuego demasiado vivo. Aleja de la brasa o pon más capas."
+   },
+   {
+    "p": "Verdura en ceniza dura en el centro",
+    "fix": "Rescoldo frío o pieza grande. Entierra mejor, renueva brasa y dale tiempo."
+   },
+   {
+    "p": "Sabor a ceniza sucia",
+    "fix": "Combustible malo o mal limpiado. Usa leña o carbón vegetal sin aditivos y limpia bien la piel."
+   }
+  ],
+  "history": "Cocinar en las brasas y en la ceniza es una de las formas más antiguas de cocina. Envolver alimentos en hojas antes de ponerlos al fuego se hace en muchas culturas del mundo, cada una con las hojas que tiene a mano.",
+  "uses": [
+   "Pescados envueltos",
+   "Verduras de raíz en ceniza",
+   "Quesos templados en hoja",
+   "Bocados que se abren en la mesa",
+   "Ceniza vegetal para condimentar"
+  ],
+  "keep": "Las verduras en ceniza, peladas, aguantan 3 días en frío. Las hojas escaldadas, 2 días en frío. La ceniza vegetal, seca, meses en bote cerrado.",
+  "pro": "Mete las verduras en el rescoldo al terminar el servicio para el día siguiente. Envuelve las piezas en hoja antes del servicio y guárdalas en frío por raciones.",
+  "related": [
+   "fuego-y-brasa",
+   "papillote-y-vapor",
+   "verduras-a-la-brasa",
+   "higos-y-algarroba",
+   "patata-chafada-brasa",
+   "ahumado"
+  ]
+ },
+ {
+  "id": "lacado-de-carnes",
+  "name": "Lacado y glaseado de carnes",
+  "name_en": "Glazing meats",
+  "cat": "tecnicas",
+  "group": "Calor y punto",
+  "technique": "caramelizado",
+  "aka": [
+   "lacar",
+   "glasear carne",
+   "laca",
+   "costilla glaseada",
+   "pato lacado",
+   "pincelar en la brasa"
+  ],
+  "summary": "Capas finas de un jugo reducido o una laca dulce y salada que se secan y brillan sobre la carne, sin quemarse.",
+  "what": "Lacar es cubrir una carne con capas finas de un líquido con cuerpo que, al calor, se seca, se concentra y brilla. Puede ser un [[jugo-de-carne|jugo]] reducido o una [[glace]], que dan un glaseado salado y profundo, o una laca con azúcar (miel, melaza, azúcar moreno) y sal (soja, miso, salsa de pescado), con un ácido que la equilibre.\n\nSirve para costillas, carrilleras, panceta, pato, aves y piezas braseadas. El riesgo es siempre el mismo: el azúcar se quema antes de que la carne esté hecha, así que la laca va al final.",
+  "method": [
+   "Cocina la carne casi del todo antes de lacar: braseada, asada, en baja temperatura o a la brasa.",
+   "Prepara la laca: reduce el jugo hasta que napee, o mezcla azúcar, sal, ácido y aromáticos y redúcela a punto de jarabe ligero.",
+   "Pinta una capa fina y deja que se seque al calor; repite 3–5 veces con 1–2 minutos entre capas.",
+   "En la brasa, a fuego medio y lejos de la llama, girando la pieza; en horno, a 200–220 °C; en salamandra, vigilando.",
+   "Termina con una capa final en el pase para que brille, y unas escamas de sal o semillas."
+  ],
+  "ratios": [
+   {
+    "use": "Laca de miel y soja",
+    "ratio": "100 g de miel, 100 ml de soja, 50 ml de vinagre",
+    "note": "Reducir a 2/3 con jengibre y ajo."
+   },
+   {
+    "use": "Glaseado de jugo",
+    "ratio": "Jugo reducido hasta napar una cuchara",
+    "note": "Una nuez de mantequilla al final."
+   },
+   {
+    "use": "Horno para lacar",
+    "ratio": "200–220 °C, capas cada 2 minutos",
+    "note": "10–12 minutos en total."
+   },
+   {
+    "use": "Costilla confitada y lacada",
+    "ratio": "4–5 capas",
+    "note": "Brasa media, lejos de la llama."
+   }
+  ],
+  "variants": [
+   {
+    "id": "glace",
+    "name": "Glasa de carne",
+    "note": "La base salada más concentrada."
+   },
+   {
+    "id": "braseado",
+    "name": "Braseado",
+    "note": "La pieza se glasea con su propio jugo reducido."
+   },
+   {
+    "id": "pato",
+    "name": "Pato lacado",
+    "note": "Piel seca y laca dulce y especiada."
+   },
+   {
+    "id": "miso-y-koji",
+    "name": "Laca de miso",
+    "note": "Miso, azúcar y vinagre de arroz."
+   }
+  ],
+  "keys": [
+   "La carne casi hecha antes de lacar: la laca solo da el acabado.",
+   "Capas finas y secas: una capa gruesa gotea y se quema.",
+   "Azúcar con equilibrio: sal y ácido para que no empalague.",
+   "Fuego medio: por encima de 180 °C el azúcar se quema enseguida.",
+   "La superficie seca agarra mejor la laca."
+  ],
+  "errors": [
+   {
+    "p": "Laca quemada y amarga",
+    "fix": "Fuego demasiado fuerte o laca puesta al principio. Lacar al final y a fuego medio."
+   },
+   {
+    "p": "Laca que no se pega",
+    "fix": "Superficie húmeda o grasienta, o laca muy líquida. Seca la pieza y reduce más la laca."
+   },
+   {
+    "p": "Demasiado dulce",
+    "fix": "Mucha miel o azúcar. Añade ácido y sal, o usa un jugo reducido."
+   }
+  ],
+  "history": "Las carnes lacadas son tradicionales en la cocina china, con el pato y el cerdo asados como ejemplos conocidos. En la cocina europea, glasear las piezas braseadas con su propio jugo reducido es una técnica clásica.",
+  "uses": [
+   "Costillas y panceta",
+   "Carrilleras braseadas",
+   "Pato y aves",
+   "Bocados de brasa",
+   "Piezas de baja temperatura terminadas"
+  ],
+  "keep": "La laca, 2–3 semanas en frío en bote cerrado. Las piezas se lacan al momento; cocinadas y sin lacar, se guardan en su jugo 3–4 días.",
+  "pro": "Ten las piezas cocinadas y porcionadas, y la laca templada en un cazo con pincel junto a la brasa o la salamandra. Laca en el último paso de cada ración.",
+  "related": [
+   "glace",
+   "jugo-de-carne",
+   "reducciones",
+   "pato",
+   "miso-y-koji",
+   "fuego-y-brasa",
+   "braseado"
+  ]
+ },
+ {
+  "id": "asado-al-horno",
+  "name": "Asado al horno",
+  "name_en": "Oven roasting",
+  "cat": "tecnicas",
+  "group": "Calor y punto",
+  "technique": "horno",
+  "aka": [
+   "asar",
+   "asado",
+   "horno",
+   "pollo asado",
+   "rosbif",
+   "pierna asada",
+   "asado inverso"
+  ],
+  "summary": "Piezas grandes de carne y aves cocinadas con aire caliente: dorado fuera, punto parejo dentro y reposo antes de trinchar.",
+  "what": "Asar al horno es cocinar con aire caliente seco, sin tapar y sin líquido que cubra la pieza. Es la cocción de las piezas grandes: aves enteras, piernas, paletillas, lomos, costillares, solomillos enteros y rosbif. Fuera se forma una costra dorada; dentro, la temperatura sube despacio y de forma más pareja que en la plancha.\n\nHay dos estrategias. Fuerte primero y suave después: dorado inicial y luego bajar el horno. O el asado inverso: horno suave hasta casi el punto y dorado final muy fuerte, en horno a tope, sartén o brasa. La segunda da un punto más uniforme de borde a borde. En los dos casos, la sonda y el reposo mandan.",
+  "method": [
+   "Sala con antelación las piezas grandes (la víspera si puedes) y atempera 30–60 minutos.",
+   "Seca bien la superficie; en aves, deja la piel secar al aire en la cámara unas horas.",
+   "Asado clásico: dora a 220–240 °C 10–15 minutos y baja a 160–180 °C hasta el punto. Riega con la grasa si hace falta.",
+   "Asado inverso: horno a 110–130 °C hasta 5–8 °C por debajo del punto final, y dora fuerte al final.",
+   "Reposa fuera del horno, tapado sin apretar, y trincha contra la fibra. Haz la salsa con el fondo de la bandeja."
+  ],
+  "ratios": [
+   {
+    "use": "Pollo entero",
+    "ratio": "75–80 °C en el muslo",
+    "note": "190–200 °C, 60–75 minutos para 1,5 kg."
+   },
+   {
+    "use": "Rosbif (asado inverso)",
+    "ratio": "120 °C hasta 50–52 °C",
+    "note": "Dorado final y reposo hasta 54–56 °C."
+   },
+   {
+    "use": "Pierna de cordero",
+    "ratio": "160 °C hasta 58–60 °C",
+    "note": "Reposo de 15 minutos."
+   },
+   {
+    "use": "Reposo",
+    "ratio": "1 minuto por cada 100 g de pieza",
+    "note": "Como mínimo 10 minutos en piezas grandes."
+   }
+  ],
+  "variants": [
+   {
+    "id": "sellado-y-reposo",
+    "name": "Sellado y reposo",
+    "note": "Para piezas medianas."
+   },
+   {
+    "id": "pollo-y-aves",
+    "name": "Aves asadas",
+    "note": "Pechuga y muslo, puntos distintos."
+   },
+   {
+    "id": "cordero",
+    "name": "Cordero asado",
+    "note": "Paletillas y piernas."
+   },
+   {
+    "id": "jugo-de-carne",
+    "name": "Jugo del asado",
+    "note": "Desglasar la bandeja."
+   }
+  ],
+  "keys": [
+   "Sonda en la parte más gruesa, sin tocar hueso.",
+   "La pieza sigue subiendo en el reposo: sácala antes.",
+   "Superficie seca para dorar; piel de ave secada al aire, más crujiente.",
+   "Bandeja de tamaño justo: si sobra mucha, el fondo se quema; si falta, se cuece.",
+   "El fondo de la bandeja es la salsa: desglasa con vino o fondo."
+  ],
+  "errors": [
+   {
+    "p": "Borde gris y centro crudo",
+    "fix": "Horno demasiado fuerte todo el tiempo. Usa el asado inverso o baja tras dorar."
+   },
+   {
+    "p": "Piel de ave blanda",
+    "fix": "Piel húmeda o horno bajo al final. Seca en cámara y sube a 220 °C los últimos minutos."
+   },
+   {
+    "p": "Carne que suelta mucho jugo al cortar",
+    "fix": "Sin reposo. Deja reposar antes de trinchar."
+   }
+  ],
+  "history": "Asar en horno de leña o de pan es una tradición de toda la península, con los asadores de cordero y cochinillo como ejemplo conocido. El horno moderno, con control de temperatura y sondas, ha permitido técnicas más precisas como el asado inverso.",
+  "uses": [
+   "Aves enteras",
+   "Piezas grandes para compartir",
+   "Rosbif y lomos enteros",
+   "Paletillas y piernas",
+   "Verduras asadas en el fondo de la bandeja"
+  ],
+  "keep": "Asado y enfriado rápido, 3–4 días en frío. Mejor en pieza entera que fileteado. Regenerar en horno suave, tapado con su jugo.",
+  "pro": "Calcula los tiempos hacia atrás desde la hora de servicio, con el reposo incluido. Las piezas para trinchar en sala salen del horno 15–20 minutos antes y se doran al final si hace falta.",
+  "related": [
+   "punto-de-la-carne",
+   "sellado-y-reposo",
+   "pollo-y-aves",
+   "cordero",
+   "jugo-de-carne",
+   "asado-de-verduras",
+   "cortes-de-vacuno"
+  ]
  }
 ]
