@@ -104,7 +104,7 @@ ok(await page.locator('.kdict-row').count() >= 50, 'el diccionario tiene pocos t
 await page.fill('#dictQ', 'napar'); await wait(150);
 ok(await page.locator('.kdict-row:not([hidden])').count() === 1, 'buscar en el diccionario no filtra');
 await go('#/biblioteca'); await page.waitForSelector('[data-act=random-entry]');
-ok((await page.textContent('.knew').catch(() => '')).includes('Hojaldre'), 'no avisa de las fichas nuevas');
+ok(await page.locator('.knew .chip').count() === 24 && /Y \d+ más/.test(await page.textContent('.knew').catch(() => '')), 'no avisa de las fichas nuevas (24 y cuántas más)');
 await page.click('[data-act=seen-new]'); await wait(150); ok(await page.locator('.knew').count() === 0, 'marcar como vistas no quita el aviso');
 await page.click('[data-act=random-entry]'); await wait(400);
 ok(/^#\/biblioteca\/[a-z0-9-]+$/.test(await page.evaluate(() => location.hash)), 'la ficha al azar no abre una ficha');

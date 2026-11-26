@@ -1515,7 +1515,7 @@
       {
         "use": "En sifón",
         "ratio": "Holandesa más fluida, 1 carga de N2O por 500 ml",
-        "note": "Mantener al baño a 60–65 °C."
+        "note": "Mantener al baño a 55–60 °C, como mucho 2 horas."
       }
     ],
     "variants": [
@@ -1573,7 +1573,7 @@
       "Verduras al vapor",
       "Gratinados rápidos de salamandra"
     ],
-    "keep": "Se mantiene al baño maría a 60–65 °C un máximo de 2 horas y lo sobrante se desecha. No se abate ni se guarda. En sifón y en baño termostático a 62–64 °C aguanta todo el servicio con buena textura.",
+    "keep": "Se mantiene al baño maría a 55–60 °C un máximo de 2 horas y lo sobrante se desecha. No se abate ni se guarda. En sifón, en baño termostático a 58–60 °C, mantiene mejor la textura durante esas 2 horas.",
     "pro": "Para servicio largo, hazla en sifón y mantenla al baño a temperatura controlada. Tener la mantequilla clarificada ya en mise en place y las yemas pasteurizadas acelera el pase. Haz pequeños lotes por turno.",
     "related": [
       "emulsiones",
@@ -1716,7 +1716,7 @@
       "Huevos escalfados",
       "Cordero (paloise)"
     ],
-    "keep": "Al baño maría a 60–65 °C un máximo de 2 horas; lo sobrante se desecha. La reducción aromática sí se guarda: 1 semana en cámara o congelada en cubiteras.",
+    "keep": "Al baño maría a 55–60 °C un máximo de 2 horas; lo sobrante se desecha. La reducción aromática sí se guarda: 1 semana en cámara o congelada en cubiteras.",
     "pro": "Ten la reducción ya hecha y colada en mise en place (en cubiteras congeladas dura semanas). Monta en sifón o en bol al baño maría por turno. Hierbas picadas al momento.",
     "related": [
       "holandesa",
@@ -3917,7 +3917,7 @@
     "cat": "conceptos",
     "group": "Fundamentos",
     "summary": "Por qué el frío y el calor protegen, qué temperaturas son peligrosas y qué no arregla la cocción: lo que un cocinero creativo debe tener claro.",
-    "what": "Las bacterias que estropean la comida o enferman crecen sobre todo entre unos 5 y 65 °C, y más deprisa a temperatura de ambiente y de cuerpo. El frío de la cámara frena su crecimiento, pero no las mata: algunas, como la Listeria, crecen despacio incluso en frío. La congelación las detiene, tampoco las mata. El calor de cocción mata la mayoría de las bacterias activas, pero no destruye algunas toxinas que ya se han formado ni las esporas de ciertas bacterias, que despiertan si el alimento se enfría despacio (arroces y guisos grandes).\n\nPor eso la regla es pasar poco tiempo en la zona templada: enfriar rápido, mantener en caliente por encima de 65 °C, descongelar en la cámara. La cocina creativa añade riesgos propios: crudos, curados, baja temperatura, fermentos, conservas en aceite o al vacío. Cada uno tiene su norma de seguridad, recogida en su ficha.",
+    "what": "Las bacterias que estropean la comida o enferman crecen sobre todo entre unos 5 y 65 °C, y más deprisa a temperatura de ambiente y de cuerpo. El frío de la cámara frena su crecimiento, pero no las mata: algunas, como la Listeria, crecen despacio incluso en frío. La congelación las detiene, tampoco las mata. El calor de cocción mata la mayoría de las bacterias activas, pero no destruye algunas toxinas que ya se han formado ni las esporas de ciertas bacterias, que despiertan si el alimento se enfría despacio (arroces y guisos grandes).\n\nPor eso la regla es pasar poco tiempo en la zona templada: enfriar rápido, mantener en caliente por encima de 65 °C, descongelar en la cámara. La excepción son las salsas de yema y mantequilla (holandesa, bearnesa): se cortan a esa temperatura, así que se mantienen a 55–60 °C como mucho 2 horas y lo que sobra se tira. La cocina creativa añade riesgos propios: crudos, curados, baja temperatura, fermentos, conservas en aceite o al vacío. Cada uno tiene su norma de seguridad, recogida en su ficha.",
     "base": {
       "for": "Temperaturas de referencia",
       "items": [

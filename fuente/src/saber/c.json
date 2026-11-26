@@ -60,18 +60,18 @@
       ],
       "steps": [
         "Quitar grasa, restos de vísceras y coágulos. Lavar con agua fría. La ternera se blanquea: cubrir con agua fría, llevar a hervor, escurrir y refrescar.",
-        "Cubrir con el agua fría y subir despacio hasta 85-90 °C, sin llegar a hervir.",
-        "Desespumar a menudo durante los primeros 20-30 minutos.",
-        "Añadir las verduras en trozos de 2-3 cm, el bouquet y la pimienta.",
-        "Mantener a 85-90 °C, con un temblor apenas visible: ave 3-4 h, ternera 6-8 h. Rellenar con agua fría si los huesos quedan al aire.",
+        "Cubrir con el agua fría y subir despacio hasta 85–90 °C, sin llegar a hervir.",
+        "Desespumar a menudo durante los primeros 20–30 minutos.",
+        "Añadir las verduras en trozos de 2–3 cm, el bouquet y la pimienta.",
+        "Mantener a 85–90 °C, con un temblor apenas visible: ave 3–4 h, ternera 6–8 h. Rellenar con agua fría si los huesos quedan al aire.",
         "Colar con cazo, sin volcar ni apretar, por chino y estameña. Abatir, guardar en cámara y quitar la grasa ya cuajada."
       ]
     },
     "ratios": [
       {
         "use": "Velouté y suprema",
-        "ratio": "1 kg de carcasa por 1,3-1,5 l de agua, 4 h",
-        "note": "Tiene que cuajar en frío; si no, reducir un 20-30 %."
+        "ratio": "1 kg de carcasa por 1,3–1,5 l de agua, 4 h",
+        "note": "Tiene que cuajar en frío; si no, reducir un 20–30 %."
       },
       {
         "use": "Consomé",
@@ -85,7 +85,7 @@
       },
       {
         "use": "Fondo blanco de ternera",
-        "ratio": "1 kg de hueso por 1,5-2 l de agua, 6-8 h",
+        "ratio": "1 kg de hueso por 1,5–2 l de agua, 6–8 h",
         "note": "Blanquear siempre para que no salga gris."
       }
     ],
@@ -136,7 +136,7 @@
       "Consomé",
       "Glace de ave"
     ],
-    "keep": "Abatir de 60 °C a menos de 10 °C en menos de 2 horas. En cámara a 0-4 °C, 3-4 días con la capa de grasa encima; congelado, 3 meses. Antes de usar, llevar a hervor.",
+    "keep": "Abatir de 60 °C a menos de 10 °C en menos de 2 horas. En cámara a 0–4 °C, 3–4 días con la capa de grasa encima; congelado, 3 meses. Antes de usar, llevar a hervor.",
     "pro": "Ponerlo a fuego mínimo o en marmita con control de temperatura al acabar el servicio y colar por la mañana. Porcionar en bolsas planas de 1 l o en cubiteras y etiquetar con tipo y fecha.",
     "related": [
       "veloute",
@@ -146,7 +146,9 @@
       "mirepoix",
       "bouquet-garni",
       "fondo-oscuro",
-      "alemana"
+      "alemana",
+      "caldo-de-cocido-y-jamon",
+      "fondo-oscuro-de-ave"
     ]
   },
   {
@@ -216,12 +218,12 @@
         ]
       ],
       "steps": [
-        "Tostar los huesos en una sola capa a 200-220 °C, 45-60 minutos, dándoles la vuelta, hasta marrón dorado. Negro es amargo.",
-        "Añadir las verduras en trozos de 4-5 cm los últimos 20-30 minutos y dorarlas.",
-        "Untar el tomate concentrado por encima y tostarlo 5-10 minutos, hasta que pierda el rojo vivo.",
+        "Tostar los huesos en una sola capa a 200–220 °C, 45–60 minutos, dándoles la vuelta, hasta marrón dorado. Negro es amargo.",
+        "Añadir las verduras en trozos de 4–5 cm los últimos 20–30 minutos y dorarlas.",
+        "Untar el tomate concentrado por encima y tostarlo 5–10 minutos, hasta que pierda el rojo vivo.",
         "Pasar todo a la marmita sin la grasa. Desglasar la bandeja con el vino o agua, raspando, y añadirlo.",
-        "Cubrir con el agua fría, subir a 85-90 °C, desespumar y poner el bouquet y el tomate fresco.",
-        "Cocer 6-8 horas sin hervir, desespumando y desgrasando. Colar sin apretar, abatir y desgrasar en frío."
+        "Cubrir con el agua fría, subir a 85–90 °C, desespumar y poner el bouquet y el tomate fresco.",
+        "Cocer 6–8 horas sin hervir, desespumando y desgrasando. Colar sin apretar, abatir y desgrasar en frío."
       ]
     },
     "ratios": [
@@ -247,23 +249,23 @@
       },
       {
         "use": "Fondo oscuro de ave (rápido)",
-        "ratio": "Alitas tostadas, 1 kg por 1,2 l, 3-4 h",
+        "ratio": "Alitas tostadas, 1 kg por 1,2 l, 3–4 h",
         "note": "Para jugos de ave y salsas de carne blanca."
       }
     ],
     "variants": [
       {
-        "id": null,
+        "id": "fondo-oscuro-de-ave",
         "name": "Fondo oscuro de ave",
         "note": "Carcasas y alitas tostadas; más corto y ligero."
       },
       {
-        "id": null,
+        "id": "fondo-de-cordero",
         "name": "Fondo de cordero",
-        "note": "Huesos de cordero tostados, 4-5 h; ajo y romero."
+        "note": "Huesos de cordero tostados, 4–5 h; ajo y romero."
       },
       {
-        "id": null,
+        "id": "fondo-de-caza",
         "name": "Fondo de caza",
         "note": "Huesos de caza, enebro y vino tinto; para salsas de venado o jabalí."
       },
@@ -311,8 +313,8 @@
       "Guisos de rabo y carrillera",
       "Arroces de carne"
     ],
-    "keep": "Abatir rápido y guardar en cámara a 0-4 °C, 4-5 días con la grasa encima. Congelado, 3 meses. Hervir antes de usar.",
-    "pro": "Tostar en varias bandejas para no amontonar: amontonado se cuece en vez de tostarse. Lo ideal es dejarlo toda la noche a fuego mínimo o en horno a 90-95 °C con la marmita tapada a medias. Porcionar parte sin reducir en bolsas de 1 l y parte reducido en cubiteras.",
+    "keep": "Abatir rápido y guardar en cámara a 0–4 °C, 4–5 días con la grasa encima. Congelado, 3 meses. Hervir antes de usar.",
+    "pro": "Tostar en varias bandejas para no amontonar: amontonado se cuece en vez de tostarse. Lo ideal es dejarlo toda la noche a fuego mínimo o en horno a 90–95 °C con la marmita tapada a medias. Porcionar parte sin reducir en bolsas de 1 l y parte reducido en cubiteras.",
     "related": [
       "espanola",
       "demi-glace",
@@ -321,7 +323,10 @@
       "mirepoix",
       "bouquet-garni",
       "reducciones",
-      "fondo-blanco"
+      "fondo-blanco",
+      "fondo-oscuro-de-ave",
+      "fondo-de-cordero",
+      "fondo-de-caza"
     ]
   },
   {
@@ -336,7 +341,7 @@
     "cat": "fondos",
     "group": "Fondos de mar",
     "summary": "Fondo rápido de espinas y cabezas de pescado blanco, base de arroces, suquets, sopas y salsas de pescado.",
-    "what": "Fondo corto hecho con espinas y cabezas de pescado blanco, limpias de agallas y sangre, sudadas con verdura en lámina fina, con vino blanco y agua, y cocidas solo 20-30 minutos. Ligado da la [[veloute]] de pescado; es el mojado de arroces, fideuás y guisos marineros, y de salsas como la [[salsa-verde]].",
+    "what": "Fondo corto hecho con espinas y cabezas de pescado blanco, limpias de agallas y sangre, sudadas con verdura en lámina fina, con vino blanco y agua, y cocidas solo 20–30 minutos. Ligado da la [[veloute]] de pescado; es el mojado de arroces, fideuás y guisos marineros, y de salsas como la [[salsa-verde]].",
     "base": {
       "for": "4 l aprox.",
       "items": [
@@ -382,11 +387,11 @@
         ]
       ],
       "steps": [
-        "Quitar agallas y la sangre del espinazo. Desangrar las espinas en agua con hielo 30-60 minutos, cambiando el agua.",
-        "Sudar la verdura en el aceite 5 minutos sin color. Añadir las espinas escurridas y sudar 3-4 minutos más.",
+        "Quitar agallas y la sangre del espinazo. Desangrar las espinas en agua con hielo 30–60 minutos, cambiando el agua.",
+        "Sudar la verdura en el aceite 5 minutos sin color. Añadir las espinas escurridas y sudar 3–4 minutos más.",
         "Mojar con el vino y reducir a la mitad.",
         "Añadir el agua fría, llevar a un hervor muy suave y desespumar. Poner perejil, laurel y pimienta.",
-        "Cocer 20-30 minutos a fuego mínimo, no más.",
+        "Cocer 20–30 minutos a fuego mínimo, no más.",
         "Apartar, reposar 10 minutos y colar con cazo por estameña sin aplastar. Abatir enseguida."
       ]
     },
@@ -413,13 +418,13 @@
       },
       {
         "use": "Caldo de roca o morralla",
-        "ratio": "Pescado de roca entero dorado con sofrito, 30-40 minutos",
+        "ratio": "Pescado de roca entero dorado con sofrito, 30–40 minutos",
         "note": "Más intenso y coloreado; triturar y colar."
       }
     ],
     "variants": [
       {
-        "id": null,
+        "id": "caldo-de-roca",
         "name": "Caldo de roca o de morralla",
         "note": "Pescado pequeño de roca tostado con tomate, ajo y ñora; para arroces."
       },
@@ -473,8 +478,8 @@
       "Sopas de pescado",
       "Escalfados"
     ],
-    "keep": "Abatir enseguida. En cámara a 0-4 °C, 2 días como máximo. Congelado, 2-3 meses. Hervir antes de usar.",
-    "pro": "Hacerlo cada mañana con las espinas del despiece del día; las que no se usen se congelan limpias y desangradas. Porcionar en bolsas de 1-2 l para arroces y en cubiteras para salsas.",
+    "keep": "Abatir enseguida. En cámara a 0–4 °C, 2 días como máximo. Congelado, 2–3 meses. Hervir antes de usar.",
+    "pro": "Hacerlo cada mañana con las espinas del despiece del día; las que no se usen se congelan limpias y desangradas. Porcionar en bolsas de 1–2 l para arroces y en cubiteras para salsas.",
     "related": [
       "fondo-de-marisco",
       "veloute",
@@ -483,7 +488,9 @@
       "picada",
       "mirepoix",
       "bouquet-garni",
-      "pil-pil"
+      "pil-pil",
+      "caldo-de-roca",
+      "caldo-corto"
     ]
   },
   {
@@ -499,7 +506,7 @@
     "cat": "fondos",
     "group": "Fondos de mar",
     "summary": "Fondo de cabezas y caparazones de crustáceos tostados con sofrito y brandy, para arroces, bisques y salsa americana.",
-    "what": "Se tuestan en aceite cabezas y caparazones de gamba, carabinero, cigala o cangrejo, se añaden verduras, tomate y ñora, se flambea y se moja con agua o [[fumet]]. Cuece poco, 30-40 minutos. Es la base de los arroces de marisco, de la [[salsa-americana]] y de las bisques, y con las mismas cabezas se hace aceite de marisco ([[aceites-aromatizados]]).",
+    "what": "Se tuestan en aceite cabezas y caparazones de gamba, carabinero, cigala o cangrejo, se añaden verduras, tomate y ñora, se flambea y se moja con agua o [[fumet]]. Cuece poco, 30–40 minutos. Es la base de los arroces de marisco, de la [[salsa-americana]] y de las bisques, y con las mismas cabezas se hace aceite de marisco ([[aceites-aromatizados]]).",
     "base": {
       "for": "3 l aprox.",
       "items": [
@@ -561,11 +568,11 @@
         ]
       ],
       "steps": [
-        "Saltear las cabezas en el aceite muy caliente 8-10 minutos, aplastándolas para soltar el jugo, hasta rojo intenso con puntos tostados.",
-        "Añadir la verdura en dados de 1 cm y rehogar 8-10 minutos.",
+        "Saltear las cabezas en el aceite muy caliente 8–10 minutos, aplastándolas para soltar el jugo, hasta rojo intenso con puntos tostados.",
+        "Añadir la verdura en dados de 1 cm y rehogar 8–10 minutos.",
         "Añadir el concentrado, el tomate y la ñora, y cocinar 5 minutos.",
         "Flambear con el brandy, mojar con el vino y reducir casi a seco.",
-        "Cubrir con el agua o fumet frío, hervor suave, desespumar y cocer 30-40 minutos.",
+        "Cubrir con el agua o fumet frío, hervor suave, desespumar y cocer 30–40 minutos.",
         "Pasar por pasapurés o triturar a golpes cortos para sacar el jugo de las cabezas, y colar por chino y estameña."
       ]
     },
@@ -603,14 +610,14 @@
         "note": "Salsa de crustáceos con tomate, brandy y estragón."
       },
       {
-        "id": null,
+        "id": "bisque",
         "name": "Bisque",
         "note": "Crema de crustáceo triturado y colado, ligada."
       },
       {
         "id": null,
         "name": "Caldo de galeras o cangrejo",
-        "note": "Crustáceo pequeño triturado en crudo; muy sabroso y barato."
+        "note": "Crustáceo pequeño triturado en crudo; muy sabroso."
       },
       {
         "id": "aceites-aromatizados",
@@ -620,7 +627,7 @@
     ],
     "keys": [
       "El sabor está en el tostado de las cabezas y en el jugo que sueltan al aplastarlas.",
-      "No cocer más de 40-45 minutos: el caparazón da amargor y sabor terroso.",
+      "No cocer más de 40–45 minutos: el caparazón da amargor y sabor terroso.",
       "Mojar con fumet en vez de agua da un caldo mucho más redondo.",
       "Congelar las cabezas crudas el mismo día que se pela el marisco y juntarlas hasta tener una tanda.",
       "Colar dos veces: chino y luego estameña."
@@ -652,7 +659,7 @@
       "Guisos de pescado",
       "Aceite de marisco"
     ],
-    "keep": "Las cabezas se estropean muy rápido: usarlas o congelarlas el mismo día. El caldo, abatido, aguanta 2 días a 0-4 °C y 3 meses congelado. Hervir antes de usar.",
+    "keep": "Las cabezas se estropean muy rápido: usarlas o congelarlas el mismo día. El caldo, abatido, aguanta 2 días a 0–4 °C y 3 meses congelado. Hervir antes de usar.",
     "pro": "Hacer tandas grandes con las cabezas congeladas de la semana y porcionar en bolsas por número de raciones de arroz. Usar sartenes anchas o la propia paella para tostar sin amontonar.",
     "related": [
       "fumet",
@@ -660,7 +667,9 @@
       "sofrito",
       "picada",
       "aceites-aromatizados",
-      "reducciones"
+      "reducciones",
+      "bisque",
+      "caldo-de-marisco-expres"
     ]
   },
   {
@@ -721,10 +730,10 @@
         ]
       ],
       "steps": [
-        "Lavar y cortar en dados de 1-2 cm o en lámina gruesa.",
+        "Lavar y cortar en dados de 1–2 cm o en lámina gruesa.",
         "Opcional: sudar en un poco de aceite 10 minutos sin color para más sabor.",
         "Cubrir con el agua fría, llevar a hervor suave y cocer 40 minutos, sin pasar de una hora.",
-        "Apartar del fuego, añadir las hierbas tiernas y dejar infusionar 10-15 minutos.",
+        "Apartar del fuego, añadir las hierbas tiernas y dejar infusionar 10–15 minutos.",
         "Colar sin aplastar y abatir."
       ]
     },
@@ -736,13 +745,13 @@
       },
       {
         "use": "Caldo oscuro de verduras",
-        "ratio": "Verduras tostadas a 200 °C 30-40 minutos antes de mojar",
+        "ratio": "Verduras tostadas a 200 °C 30–40 minutos antes de mojar",
         "note": "Para jugos vegetales y guisos de legumbre."
       },
       {
         "use": "Court-bouillon para pescado y marisco",
-        "ratio": "Caldo + 10 % de vino blanco o 3-5 % de vinagre, sal 10-15 g por litro",
-        "note": "Cocer 20-30 minutos antes de meter el pescado."
+        "ratio": "Caldo + 10 % de vino blanco o 3–5 % de vinagre, sal 10–15 g por litro",
+        "note": "Cocer 20–30 minutos antes de meter el pescado."
       },
       {
         "use": "Cremas de verdura",
@@ -752,17 +761,17 @@
     ],
     "variants": [
       {
-        "id": null,
+        "id": "caldo-corto",
         "name": "Court-bouillon",
         "note": "Caldo corto ácido y salado para escalfar."
       },
       {
-        "id": null,
+        "id": "caldo-de-verduras-tostadas",
         "name": "Caldo de verduras tostadas",
         "note": "Más color y sabor; sustituye a un fondo oscuro en cocina vegetal."
       },
       {
-        "id": null,
+        "id": "caldo-de-setas",
         "name": "Caldo de setas",
         "note": "Setas frescas y secas; muy sabroso para arroces y risottos."
       },
@@ -806,14 +815,17 @@
       "Escalfar pescado y marisco",
       "Platos veganos"
     ],
-    "keep": "Abatir y guardar a 0-4 °C, 3 días. Congelado, 3 meses.",
+    "keep": "Abatir y guardar a 0–4 °C, 3 días. Congelado, 3 meses.",
     "pro": "Juntar durante el día los recortes limpios en un gastronorm en cámara y hacer el caldo por la tarde. Porcionar en bolsas de 1 l.",
     "related": [
       "mirepoix",
       "bouquet-garni",
       "dashi",
       "fondo-blanco",
-      "fumet"
+      "fumet",
+      "caldo-de-verduras-tostadas",
+      "fondo-de-raices",
+      "caldo-corto"
     ]
   },
   {
@@ -838,35 +850,35 @@
         ],
         [
           "Alga kombu",
-          "15-20 g"
+          "15–20 g"
         ],
         [
           "Katsuobushi (bonito seco en virutas)",
-          "20-30 g"
+          "20–30 g"
         ]
       ],
       "steps": [
         "Limpiar la kombu con un paño húmedo sin lavarla: el polvo blanco es sabor.",
         "Remojarla en el agua fría, de 30 minutos a toda la noche en cámara.",
         "Calentar despacio y retirar la kombu justo antes de que hierva, hacia 80 °C. Otra opción: mantenerla a 60 °C durante 1 hora y retirarla.",
-        "Llevar el agua a unos 85 °C, apartar, echar el bonito y dejarlo 2-3 minutos, hasta que se hunda.",
+        "Llevar el agua a unos 85 °C, apartar, echar el bonito y dejarlo 2–3 minutos, hasta que se hunda.",
         "Colar por estameña sin apretar."
       ]
     },
     "ratios": [
       {
         "use": "Sopa de miso",
-        "ratio": "Primer dashi, 60-80 g de miso por litro",
+        "ratio": "Primer dashi, 60–80 g de miso por litro",
         "note": "Desleír el miso fuera del fuego; si hierve pierde aroma."
       },
       {
         "use": "Guisos y cocciones",
-        "ratio": "Segundo dashi: restos + 500 ml de agua, 10-15 minutos de hervor suave",
+        "ratio": "Segundo dashi: restos + 500 ml de agua, 10–15 minutos de hervor suave",
         "note": "Más fuerte y menos fino."
       },
       {
         "use": "Cocina vegetal",
-        "ratio": "Solo kombu y 2-3 setas shiitake secas por litro, en frío 8-12 h",
+        "ratio": "Solo kombu y 2–3 setas shiitake secas por litro, en frío 8–12 h",
         "note": "Sin pescado."
       },
       {
@@ -931,14 +943,15 @@
       "Salsas con soja y cítrico",
       "Arroces de pescado"
     ],
-    "keep": "En cámara a 0-4 °C, 2-3 días, pero lo mejor es el mismo día. Se puede congelar, aunque pierde aroma.",
+    "keep": "En cámara a 0–4 °C, 2–3 días, pero lo mejor es el mismo día. Se puede congelar, aunque pierde aroma.",
     "pro": "Dejar la kombu en remojo en frío la noche anterior en la cubeta del día y terminar el bonito al empezar el servicio. Los restos se aprovechan para el segundo dashi del personal o de cocciones.",
     "related": [
       "fumet",
       "caldo-de-verduras",
       "consome",
       "marinada",
-      "fondo-de-marisco"
+      "fondo-de-marisco",
+      "caldo-de-setas"
     ]
   },
   {
@@ -957,10 +970,10 @@
     "summary": "Salsa corta de los recortes tostados del mismo animal, mojados con fondo y reducidos, sin harina; el acompañamiento natural de la brasa.",
     "what": "Se tuestan huesos y recortes de la pieza que se va a servir, se desglasa y se moja con [[fondo-oscuro]] o fondo de ave en varias veces, reduciendo cada vez, hasta tener una salsa brillante que napa ligeramente. Es más directo y ligero que la [[demi-glace]]. La brasa no deja fondo de sartén: el jugo se hace aparte, y la parrilla sirve para tostar los recortes y dar el jugo del reposo.",
     "base": {
-      "for": "500 ml (12-15 raciones de 30-40 ml)",
+      "for": "500 ml (12–15 raciones de 30–40 ml)",
       "items": [
         [
-          "Huesos y recortes del animal troceados a 3-4 cm (cordero, pichón, ave, ternera)",
+          "Huesos y recortes del animal troceados a 3–4 cm (cordero, pichón, ave, ternera)",
           "1,5 kg"
         ],
         [
@@ -993,7 +1006,7 @@
         ],
         [
           "Mantequilla fría para terminar",
-          "30-50 g"
+          "30–50 g"
         ],
         [
           "Sal y unas gotas de vinagre de jerez",
@@ -1001,10 +1014,10 @@
         ]
       ],
       "steps": [
-        "Tostar los recortes con el aceite en una cocotte ancha a fuego fuerte 15-20 minutos, removiendo poco, hasta dorado intenso. También se pueden tostar en la parrilla o en el horno a 200 °C.",
+        "Tostar los recortes con el aceite en una cocotte ancha a fuego fuerte 15–20 minutos, removiendo poco, hasta dorado intenso. También se pueden tostar en la parrilla o en el horno a 200 °C.",
         "Quitar el exceso de grasa, añadir la mantequilla, la chalota, el ajo y las hierbas y rehogar 5 minutos.",
         "Desglasar con el vino, raspando, y reducir hasta que glasee.",
-        "Mojar con un vaso de fondo y reducir a glaseado; repetir dos o tres veces y añadir el resto. Cocer suave 45-60 minutos (pichón y ave, 30-40).",
+        "Mojar con un vaso de fondo y reducir a glaseado; repetir dos o tres veces y añadir el resto. Cocer suave 45–60 minutos (pichón y ave, 30–40).",
         "Colar por chino apretando poco, desgrasar y reducir a punto de napa ligera.",
         "Al pase: añadir el jugo del reposo de la pieza, montar con mantequilla fría y ajustar sal y acidez."
       ]
@@ -1027,13 +1040,13 @@
       },
       {
         "use": "Ligado rápido",
-        "ratio": "5-10 g de fécula por litro, desleída en frío",
+        "ratio": "5–10 g de fécula por litro, desleída en frío",
         "note": "Solo si no hay tiempo de reducir; ver [[ligazones]]."
       }
     ],
     "variants": [
       {
-        "id": null,
+        "id": "fondo-de-cordero",
         "name": "Jugo de cordero",
         "note": "Con romero, ajo y a veces anchoa."
       },
@@ -1080,8 +1093,8 @@
       "Pollo asado",
       "Carnes rojas"
     ],
-    "keep": "Abatir y guardar a 0-4 °C, 4-5 días; congelado, 3 meses. Regenerar a fuego suave y montar de nuevo.",
-    "pro": "Tener el jugo reducido en cazo pequeño al baño maría a 70-80 °C, tapado, y montar solo lo que se sirve. Guardar congelados los recortes de cada despiece, por especie, para el jugo de esa carne.",
+    "keep": "Abatir y guardar a 0–4 °C, 4–5 días; congelado, 3 meses. Regenerar a fuego suave y montar de nuevo.",
+    "pro": "Tener el jugo reducido en cazo pequeño al baño maría a 70–80 °C, tapado, y montar solo lo que se sirve. Guardar congelados los recortes de cada despiece, por especie, para el jugo de esa carne.",
     "related": [
       "fondo-oscuro",
       "glace",
@@ -1089,7 +1102,9 @@
       "reducciones",
       "ligazones",
       "mantequillas-compuestas",
-      "mantequilla-noisette"
+      "mantequilla-noisette",
+      "fondo-de-cordero",
+      "fondo-oscuro-de-ave"
     ]
   },
   {
@@ -1131,22 +1146,22 @@
       },
       {
         "use": "Glace de ave",
-        "ratio": "Fondo de ave a 1/8-1/10",
+        "ratio": "Fondo de ave a 1/8–1/10",
         "note": "Más clara y suave."
       },
       {
         "use": "Glace de pescado",
-        "ratio": "Fumet muy limpio a 1/5-1/8",
+        "ratio": "Fumet muy limpio a 1/5–1/8",
         "note": "Delicada; se amarga si se pasa."
       },
       {
         "use": "Media glasa",
-        "ratio": "Fondo oscuro a 1/2-1/3",
+        "ratio": "Fondo oscuro a 1/2–1/3",
         "note": "Base lista para salsas al momento."
       },
       {
         "use": "Reforzar un jugo o salsa",
-        "ratio": "10-20 g de glace por cada 100 ml",
+        "ratio": "10–20 g de glace por cada 100 ml",
         "note": "Disolver en caliente y probar."
       },
       {
@@ -1215,8 +1230,8 @@
       "Dar cuerpo a vinagretas calientes",
       "Mantequillas compuestas para carne"
     ],
-    "keep": "En cámara a 0-4 °C, bien tapada, 2-3 semanas. Congelada en porciones, 6 meses.",
-    "pro": "Congelar en cubiteras o moldes de silicona de 20-30 g y guardar en bolsa. En el pase basta un dado para corregir un jugo flojo. Reducir en la cocina cuando hay fuego libre, por la tarde.",
+    "keep": "En cámara a 0–4 °C, bien tapada, 2–3 semanas. Congelada en porciones, 6 meses.",
+    "pro": "Congelar en cubiteras o moldes de silicona de 20–30 g y guardar en bolsa. En el pase basta un dado para corregir un jugo flojo. Reducir en la cocina cuando hay fuego libre, por la tarde.",
     "related": [
       "fondo-oscuro",
       "fondo-blanco",
@@ -1224,7 +1239,8 @@
       "jugo-de-carne",
       "reducciones",
       "espanola",
-      "mantequillas-compuestas"
+      "mantequillas-compuestas",
+      "gelatinas-saladas"
     ]
   },
   {
@@ -1254,7 +1270,7 @@
         ],
         [
           "Claras",
-          "250 g (6-8)"
+          "250 g (6–8)"
         ],
         [
           "Mirepoix picado fino (cebolla, puerro, zanahoria, apio)",
@@ -1276,9 +1292,9 @@
       "steps": [
         "Mezclar carne, claras, verdura y tomate con un poco de fondo frío. Reposar 30 minutos en cámara.",
         "Añadir el resto del fondo frío y mezclar bien.",
-        "Calentar despacio removiendo con espátula desde el fondo hasta 50-60 °C, para que no se pegue.",
+        "Calentar despacio removiendo con espátula desde el fondo hasta 50–60 °C, para que no se pegue.",
         "Dejar de remover: las claras cuajan y suben formando la balsa.",
-        "Abrir un agujero en la balsa y mantener a 85-90 °C, sin hervir, 60-90 minutos (pescado, 30-40), regando la balsa por el agujero.",
+        "Abrir un agujero en la balsa y mantener a 85–90 °C, sin hervir, 60–90 minutos (pescado, 30–40), regando la balsa por el agujero.",
         "Sacar el caldo con cazo por el agujero y colar por estameña húmeda, sin romper la balsa. Quitar la grasa con papel y salar."
       ]
     },
@@ -1290,12 +1306,12 @@
       },
       {
         "use": "Consomé de pescado",
-        "ratio": "Fumet + 600 g de pescado blanco picado + claras, 30-40 minutos",
+        "ratio": "Fumet + 600 g de pescado blanco picado + claras, 30–40 minutos",
         "note": "Sin tomate en exceso; hinojo y perejil."
       },
       {
         "use": "Consomé frío gelatinoso",
-        "ratio": "Fondo rico en colágeno o 8-10 g de gelatina por litro",
+        "ratio": "Fondo rico en colágeno o 8–10 g de gelatina por litro",
         "note": "Cuajado tembloroso; servir muy frío."
       },
       {
@@ -1331,7 +1347,7 @@
         "note": "Gelatinoso, como entrante de verano."
       },
       {
-        "id": null,
+        "id": "aguas-clarificadas",
         "name": "Agua de tomate clarificada",
         "note": "Clarificada con agar o por goteo en frío."
       }
@@ -1369,7 +1385,7 @@
       "Caldos de arroz de lujo",
       "Pequeñas tazas de bienvenida"
     ],
-    "keep": "Abatir. En cámara a 0-4 °C, 3-4 días; congelado, 3 meses. Recalentar suave sin hervir fuerte.",
+    "keep": "Abatir. En cámara a 0–4 °C, 3–4 días; congelado, 3 meses. Recalentar suave sin hervir fuerte.",
     "pro": "Hacerlo la víspera. Al pase, servir a unos 80 °C en taza o plato caliente, con la guarnición cortada fina y escaldada aparte para no enturbiarlo.",
     "related": [
       "fondo-blanco",
@@ -1377,7 +1393,9 @@
       "mirepoix",
       "bouquet-garni",
       "dashi",
-      "caldo-de-verduras"
+      "caldo-de-verduras",
+      "gelatinas-saladas",
+      "aguas-clarificadas"
     ]
   },
   {
@@ -1424,23 +1442,23 @@
     },
     "ratios": [
       {
-        "use": "Fumet y caldos de 20-45 minutos",
-        "ratio": "Lámina fina o dados de 3-5 mm",
+        "use": "Fumet y caldos de 20–45 minutos",
+        "ratio": "Lámina fina o dados de 3–5 mm",
         "note": "Tiene que soltar sabor rápido."
       },
       {
-        "use": "Jugos y salsas al momento (30-60 minutos)",
+        "use": "Jugos y salsas al momento (30–60 minutos)",
         "ratio": "Dados de 1 cm",
         "note": "Se cuela al final."
       },
       {
-        "use": "Fondo blanco de ave (3-4 h) y braseados",
-        "ratio": "Dados de 2-3 cm",
+        "use": "Fondo blanco de ave (3–4 h) y braseados",
+        "ratio": "Dados de 2–3 cm",
         "note": "Aguanta sin deshacerse."
       },
       {
-        "use": "Fondo oscuro (6-8 h)",
-        "ratio": "Trozos de 4-5 cm o mitades",
+        "use": "Fondo oscuro (6–8 h)",
+        "ratio": "Trozos de 4–5 cm o mitades",
         "note": "Cortado fino se deshace y enturbia."
       },
       {
@@ -1450,7 +1468,7 @@
       },
       {
         "use": "Guarnición que se come (matignon)",
-        "ratio": "Brunoise de 2-3 mm con jamón o panceta, rehogada",
+        "ratio": "Brunoise de 2–3 mm con jamón o panceta, rehogada",
         "note": "Para braseados y salsas que no se cuelan."
       }
     ],
@@ -1514,7 +1532,7 @@
       "Braseados y guisos",
       "Consomé"
     ],
-    "keep": "Cortado en crudo, 2-3 días a 0-4 °C en gastronorm con papel húmedo y tapado. Se puede congelar para fondos, no para guarnición.",
+    "keep": "Cortado en crudo, 2–3 días a 0–4 °C en gastronorm con papel húmedo y tapado. Se puede congelar para fondos, no para guarnición.",
     "pro": "Cortar mirepoix en lote al principio de la semana, separado por tamaños y etiquetado. Para fondos grandes, el robot cortador ahorra tiempo en los cortes de 1 cm.",
     "related": [
       "sofrito",
@@ -1523,7 +1541,8 @@
       "fondo-oscuro",
       "fumet",
       "caldo-de-verduras",
-      "consome"
+      "consome",
+      "bases-para-arroces"
     ]
   },
   {
@@ -1548,15 +1567,15 @@
         ],
         [
           "Tallos de perejil",
-          "8-10"
+          "8–10"
         ],
         [
           "Tomillo fresco",
-          "3-4 ramas"
+          "3–4 ramas"
         ],
         [
           "Laurel",
-          "1-2 hojas"
+          "1–2 hojas"
         ],
         [
           "Apio, una rama (opcional)",
@@ -1572,7 +1591,7 @@
         "Poner perejil, tomillo, laurel y apio en el centro de una hoja de puerro y cerrar con la otra.",
         "Atar fuerte con bramante en varias vueltas y dejar un cabo largo.",
         "Atar el cabo al asa de la marmita y meter el bouquet tras desespumar.",
-        "Retirarlo al final o antes si el sabor ya está; en cocciones de 6-8 h las hierbas tiernas se cambian a mitad."
+        "Retirarlo al final o antes si el sabor ya está; en cocciones de 6–8 h las hierbas tiernas se cambian a mitad."
       ]
     },
     "ratios": [
@@ -1584,11 +1603,11 @@
       {
         "use": "Fumet",
         "ratio": "Perejil, hinojo y poco laurel, sin tomillo fuerte",
-        "note": "Solo 20-30 minutos de cocción."
+        "note": "Solo 20–30 minutos de cocción."
       },
       {
         "use": "Fondo oscuro y caza",
-        "ratio": "Bouquet clásico + muñequilla con 4-6 bayas de enebro y 1 clavo",
+        "ratio": "Bouquet clásico + muñequilla con 4–6 bayas de enebro y 1 clavo",
         "note": "Retirar el clavo a las 2 h."
       },
       {
@@ -1644,8 +1663,8 @@
       "Escabeches",
       "Court-bouillon"
     ],
-    "keep": "Prepararlo el día de uso. Las hierbas, a 0-4 °C en caja con papel húmedo, 4-5 días.",
-    "pro": "Hacer bouquets en lote en la mise en place, uno por marmita o por cada 5-10 l, y guardarlos tapados en cámara. Para marmitas grandes, varios bouquets mejor que uno enorme.",
+    "keep": "Prepararlo el día de uso. Las hierbas, a 0–4 °C en caja con papel húmedo, 4–5 días.",
+    "pro": "Hacer bouquets en lote en la mise en place, uno por marmita o por cada 5–10 l, y guardarlos tapados en cámara. Para marmitas grandes, varios bouquets mejor que uno enorme.",
     "related": [
       "mirepoix",
       "fondo-blanco",
@@ -1693,7 +1712,7 @@
       "steps": [
         "Calentar 1 l de agua con la sal, el azúcar y los aromáticos hasta disolver; infusionar 10 minutos.",
         "Completar con 4 l de agua fría y hielo. Usar solo por debajo de 4 °C.",
-        "Sumergir la pieza del todo, con peso encima, en cámara a 0-4 °C.",
+        "Sumergir la pieza del todo, con peso encima, en cámara a 0–4 °C.",
         "Respetar el tiempo según pieza (ver cambios).",
         "Sacar, enjuagar si hace falta y secar muy bien; mejor en rejilla destapada en cámara unas horas para que la piel dore.",
         "Desechar la salmuera usada: nunca se reutiliza."
@@ -1702,28 +1721,28 @@
     "ratios": [
       {
         "use": "Lomos y filetes de pescado",
-        "ratio": "5 % 15-30 minutos o 10 % 5-10 minutos",
+        "ratio": "5 % 15–30 minutos o 10 % 5–10 minutos",
         "note": "Reafirma la carne y ayuda a que no se pegue en la parrilla."
       },
       {
         "use": "Pollo en piezas o pechugas",
-        "ratio": "5-6 %, 1-2 h",
+        "ratio": "5–6 %, 1–2 h",
         "note": "Secar bien antes de la brasa."
       },
       {
         "use": "Cerdo (chuleta, presa, costilla)",
-        "ratio": "5-6 %, 4-12 h según grosor",
+        "ratio": "5–6 %, 4–12 h según grosor",
         "note": "Muy útil en cortes magros."
       },
       {
         "use": "Salmuera de equilibrio",
-        "ratio": "Sal = 1-1,5 % del peso de agua más pieza",
-        "note": "No se pasa de sal aunque se alargue; 24-72 h."
+        "ratio": "Sal = 1–1,5 % del peso de agua más pieza",
+        "note": "No se pasa de sal aunque se alargue; 24–72 h."
       },
       {
         "use": "En seco: carne y ave",
-        "ratio": "1-1,5 % del peso de la pieza",
-        "note": "Salar justo antes de la brasa o con 1-24 h de antelación; entre medias, el jugo queda en la superficie y cuesta dorar."
+        "ratio": "1–1,5 % del peso de la pieza",
+        "note": "Salar justo antes de la brasa o con 1–24 h de antelación; entre medias, el jugo queda en la superficie y cuesta dorar."
       }
     ],
     "variants": [
@@ -1740,7 +1759,7 @@
       {
         "id": null,
         "name": "Cura de sal y azúcar",
-        "note": "Para pescado: lomos finos 1-3 h, un lomo de salmón entero 24-48 h; luego lavar y secar."
+        "note": "Para pescado: lomos finos 1–3 h, un lomo de salmón entero 24–48 h; luego lavar y secar."
       },
       {
         "id": "adobo",
@@ -1758,7 +1777,7 @@
     "errors": [
       {
         "p": "Demasiado salado",
-        "fix": "Tiempo largo o porcentaje alto. Remojar en agua fría 20-30 minutos y apuntar el tiempo correcto."
+        "fix": "Tiempo largo o porcentaje alto. Remojar en agua fría 20–30 minutos y apuntar el tiempo correcto."
       },
       {
         "p": "Textura de jamón",
@@ -1777,14 +1796,15 @@
       "Piezas grandes asadas",
       "Curado de pescado"
     ],
-    "keep": "La salmuera preparada y sin usar, 1 semana a 0-4 °C. La pieza ya salmuerada, cocinarla en 24-48 h.",
+    "keep": "La salmuera preparada y sin usar, 1 semana a 0–4 °C. La pieza ya salmuerada, cocinarla en 24–48 h.",
     "pro": "Gastronorms con tapa, etiquetados con pieza, porcentaje y horas de entrada y salida. Enfriar el concentrado caliente con hielo pesado como parte del agua. En bolsa de vacío se gasta mucha menos salmuera.",
     "related": [
       "adobo",
       "marinada",
       "escabeche",
       "jugo-de-carne",
-      "aceites-aromatizados"
+      "aceites-aromatizados",
+      "rubs-y-mezclas-secas"
     ]
   },
   {
@@ -1814,7 +1834,7 @@
         ],
         [
           "Ajo",
-          "6-8 dientes"
+          "6–8 dientes"
         ],
         [
           "Orégano seco",
@@ -1854,29 +1874,29 @@
         "Añadir los pimentones, el orégano, el comino y la pimienta.",
         "Desleír con el vinagre y el agua, y añadir el aceite y el laurel.",
         "Cubrir bien la pieza, en recipiente de acero, vidrio o plástico alimentario (nunca aluminio), o en bolsa de vacío.",
-        "Dejar en cámara a 0-4 °C el tiempo que pida la pieza.",
+        "Dejar en cámara a 0–4 °C el tiempo que pida la pieza.",
         "Escurrir y secar antes de cocinar. En la brasa, fuego medio: el pimentón se quema y amarga."
       ]
     },
     "ratios": [
       {
         "use": "Cazón y pescado blanco para freír",
-        "ratio": "Más vinagre y agua, 8-12 h",
+        "ratio": "Más vinagre y agua, 8–12 h",
         "note": "Escurrir y enharinar justo antes de freír."
       },
       {
         "use": "Lomo, presa o costilla de cerdo",
-        "ratio": "Adobo base, 12-24 h",
+        "ratio": "Adobo base, 12–24 h",
         "note": "En brasa, terminar lejos del fuego vivo."
       },
       {
         "use": "Pinchos morunos",
-        "ratio": "Adobo base con más comino, cilantro molido y un toque de cúrcuma, 4-12 h",
+        "ratio": "Adobo base con más comino, cilantro molido y un toque de cúrcuma, 4–12 h",
         "note": "Dados de 3 cm para que se haga por igual."
       },
       {
         "use": "Pollo",
-        "ratio": "Adobo base, 6-12 h",
+        "ratio": "Adobo base, 6–12 h",
         "note": "Con piel, secar bien antes de asar."
       },
       {
@@ -1945,7 +1965,7 @@
       "Pollo a la brasa",
       "Costilla"
     ],
-    "keep": "El adobo preparado, 1 semana a 0-4 °C. La pieza adobada, 2-3 días como máximo en cámara: el vinagre no basta para conservar.",
+    "keep": "El adobo preparado, 1 semana a 0–4 °C. La pieza adobada, 2–3 días como máximo en cámara: el vinagre no basta para conservar.",
     "pro": "Adobar en bolsas de vacío: se usa la mitad de adobo y penetra parejo. Etiquetar con hora de inicio. Sacar las piezas a rejilla 30 minutos antes del servicio.",
     "related": [
       "marinada",
@@ -1953,7 +1973,9 @@
       "escabeche",
       "mojo-picon",
       "chimichurri",
-      "aceites-aromatizados"
+      "aceites-aromatizados",
+      "pastas-de-especias",
+      "rubs-y-mezclas-secas"
     ]
   },
   {
@@ -1970,7 +1992,7 @@
     "summary": "Líquido aromático con ácido, grasa y aromáticos para perfumar carnes y pescados y, en superficie, ablandarlos.",
     "what": "Mezcla de un ácido (vino, vinagre, cítrico, yogur), una grasa y aromáticos. Perfuma la superficie; dentro de la pieza solo entra unos milímetros, salvo la sal. Puede ser cruda o cocida; las de vino para caza se cuecen. Las cítricas cortas, tipo ceviche, coagulan la proteína del pescado. Se distingue del [[adobo]], más espeso y con pimentón, y de la [[salmuera]], cuyo fin es la jugosidad.",
     "base": {
-      "for": "1 l (para 3-4 kg de carne)",
+      "for": "1 l (para 3–4 kg de carne)",
       "items": [
         [
           "Vino tinto o blanco",
@@ -2008,7 +2030,7 @@
       "steps": [
         "Cruda: mezclar todo y cubrir la pieza.",
         "Cocida: rehogar las verduras, mojar con el vino y el vinagre, hervir 10 minutos, añadir el aceite y enfriar del todo antes de usar.",
-        "Marinar en cámara a 0-4 °C, en recipiente no reactivo o bolsa de vacío, dando la vuelta a la pieza.",
+        "Marinar en cámara a 0–4 °C, en recipiente no reactivo o bolsa de vacío, dando la vuelta a la pieza.",
         "Escurrir y secar muy bien antes de dorar o de la brasa.",
         "La marinada que ha estado con carne cruda solo se aprovecha si se hierve, por ejemplo para la salsa del guiso."
       ]
@@ -2016,27 +2038,27 @@
     "ratios": [
       {
         "use": "Caza y carnes para guisar (venado, jabalí)",
-        "ratio": "Marinada de vino cocida, 12-48 h",
+        "ratio": "Marinada de vino cocida, 12–48 h",
         "note": "Luego se reduce para la salsa."
       },
       {
         "use": "Cordero y cabrito a la brasa",
-        "ratio": "Aceite, ajo, romero y ralladura de limón, 4-12 h",
+        "ratio": "Aceite, ajo, romero y ralladura de limón, 4–12 h",
         "note": "El zumo, al final: ácido largo endurece la superficie."
       },
       {
         "use": "Pollo",
-        "ratio": "Yogur o suero con especias, 4-12 h",
+        "ratio": "Yogur o suero con especias, 4–12 h",
         "note": "El lácteo ablanda suave y dora bien."
       },
       {
         "use": "Pescado para la brasa",
-        "ratio": "Aceite, hierbas y ralladura, 15-30 minutos",
+        "ratio": "Aceite, hierbas y ralladura, 15–30 minutos",
         "note": "El cítrico en zumo, justo al servir."
       },
       {
         "use": "Ceviche y marinadas cítricas",
-        "ratio": "Lima o limón y sal, 5-15 minutos",
+        "ratio": "Lima o limón y sal, 5–15 minutos",
         "note": "Pescado previamente congelado según norma, por el anisakis."
       },
       {
@@ -2106,7 +2128,7 @@
       "Ceviches",
       "Verduras a la parrilla"
     ],
-    "keep": "La marinada cocida, 1 semana a 0-4 °C. La pieza marinada, 1-3 días según el producto; el pescado, el mismo día.",
+    "keep": "La marinada cocida, 1 semana a 0–4 °C. La pieza marinada, 1–3 días según el producto; el pescado, el mismo día.",
     "pro": "Marinar en bolsas de vacío, etiquetadas con la hora. Para piezas grandes, inyectar una salmuera aromatizada y marinar fuera. Preparar la marinada base en lote y añadir el cítrico en el momento.",
     "related": [
       "adobo",
@@ -2114,7 +2136,8 @@
       "escabeche",
       "chimichurri",
       "aceites-aromatizados",
-      "reducciones"
+      "reducciones",
+      "verduras-marinadas"
     ]
   },
   {
@@ -2149,37 +2172,37 @@
         ]
       ],
       "steps": [
-        "Escaldar las hojas 10-15 segundos y cortar la cocción en agua con hielo. Escurrir y secar a fondo: el agua lo enturbia y da más riesgo.",
-        "Triturar con el aceite en vaso de alta potencia 4-6 minutos, hasta 60-70 °C como máximo.",
+        "Escaldar las hojas 10–15 segundos y cortar la cocción en agua con hielo. Escurrir y secar a fondo: el agua lo enturbia y da más riesgo.",
+        "Triturar con el aceite en vaso de alta potencia 4–6 minutos, hasta 60–70 °C como máximo.",
         "Enfriar el vaso en hielo enseguida.",
         "Colar por estameña o filtro de papel en cámara, sin apretar, varias horas.",
-        "Envasar en biberón opaco, etiquetar con la fecha y guardar a 0-4 °C."
+        "Envasar en biberón opaco, etiquetar con la fecha y guardar a 0–4 °C."
       ]
     },
     "ratios": [
       {
         "use": "Aceite de ajo",
-        "ratio": "Ajo laminado o entero en aceite a 80-90 °C, 30-40 minutos",
+        "ratio": "Ajo laminado o entero en aceite a 80–90 °C, 30–40 minutos",
         "note": "Frío siempre y máximo 4 días, o congelar. Nunca en el pase todo el día."
       },
       {
         "use": "Aceite de guindilla o especias secas",
-        "ratio": "Infusionar a 80-100 °C, 10 minutos",
+        "ratio": "Infusionar a 80–100 °C, 10 minutos",
         "note": "Menos riesgo que lo fresco; aun así, guardar en frío."
       },
       {
         "use": "Aceite de cítricos",
-        "ratio": "Piel sin la parte blanca a 60-70 °C, 20 minutos",
+        "ratio": "Piel sin la parte blanca a 60–70 °C, 20 minutos",
         "note": "Colar y enfriar enseguida."
       },
       {
         "use": "Aceite de gamba o marisco",
-        "ratio": "Cabezas tostadas, cubiertas de aceite, a 85-90 °C 30-45 minutos",
+        "ratio": "Cabezas tostadas, cubiertas de aceite, a 85–90 °C 30–45 minutos",
         "note": "Colar fino; ver [[fondo-de-marisco]]."
       },
       {
         "use": "Aceite de romero o tomillo para brasa",
-        "ratio": "Hierba leñosa en aceite a 70-80 °C, 15 minutos",
+        "ratio": "Hierba leñosa en aceite a 70–80 °C, 15 minutos",
         "note": "Para pincelar carnes al servir."
       },
       {
@@ -2216,7 +2239,7 @@
       }
     ],
     "keys": [
-      "Ajo, hierbas frescas o verduras en aceite: siempre a 0-4 °C, máximo 4 días, o congelados.",
+      "Ajo, hierbas frescas o verduras en aceite: siempre a 0–4 °C, máximo 4 días, o congelados.",
       "Calentar no basta para eliminar las esporas; lo que protege es el frío y el tiempo corto.",
       "En el pase, poca cantidad y sobre hielo; lo que sobra no vuelve al biberón grande.",
       "El aceite de oliva virgen extra amarga si se tritura mucho; para aceite verde, neutro o suave.",
@@ -2249,8 +2272,8 @@
       "Emulsiones y mayonesas",
       "Cremas frías"
     ],
-    "keep": "Con producto fresco (ajo, hierbas, marisco): 0-4 °C, máximo 4 días; congelados en porciones, 2-3 meses. Con especias secas: en frío, 2-3 semanas. Desechar si hay burbujas, turbidez o envase hinchado.",
-    "pro": "Producir para 2-3 días. Congelar el aceite verde en cubiteras o bolsitas y descongelar en cámara. En el pase, biberones pequeños sobre hielo, rotulados con fecha.",
+    "keep": "Con producto fresco (ajo, hierbas, marisco): 0–4 °C, máximo 4 días; congelados en porciones, 2–3 meses. Con especias secas: en frío, 2–3 semanas. Desechar si hay burbujas, turbidez o envase hinchado.",
+    "pro": "Producir para 2–3 días. Congelar el aceite verde en cubiteras o bolsitas y descongelar en cámara. En el pase, biberones pequeños sobre hielo, rotulados con fecha.",
     "related": [
       "emulsiones",
       "vinagreta",
@@ -2258,7 +2281,9 @@
       "fondo-de-marisco",
       "chimichurri",
       "mayonesa",
-      "alioli"
+      "alioli",
+      "grasas-infusionadas",
+      "conservas-en-aceite"
     ]
   },
   {
@@ -2309,7 +2334,7 @@
         ]
       ],
       "steps": [
-        "Sudar la chalota y el ajo en un poco de mantequilla 3-4 minutos.",
+        "Sudar la chalota y el ajo en un poco de mantequilla 3–4 minutos.",
         "Añadir el vino y las hierbas y reducir a fuego vivo en cazo ancho hasta casi seco, con textura de jarabe.",
         "Mojar con el fondo y reducir a fuego medio, desespumando, hasta que nape la cuchara.",
         "Colar por chino fino.",
@@ -2319,12 +2344,12 @@
     "ratios": [
       {
         "use": "Bearnesa y holandesa",
-        "ratio": "100 ml de vinagre de vino blanco + 100 ml de vino blanco + 50 g de chalota + estragón, reducido a 30-40 ml",
-        "note": "Para 4-5 yemas; colar o no según la salsa."
+        "ratio": "100 ml de vinagre de vino blanco + 100 ml de vino blanco + 50 g de chalota + estragón, reducido a 30–40 ml",
+        "note": "Para 4–5 yemas; colar o no según la salsa."
       },
       {
         "use": "Beurre blanc",
-        "ratio": "100 ml de vino blanco + 100 ml de vinagre + chalota, reducido a 2-3 cucharadas",
+        "ratio": "100 ml de vino blanco + 100 ml de vinagre + chalota, reducido a 2–3 cucharadas",
         "note": "Montar con unos 250 g de mantequilla fría."
       },
       {
@@ -2349,7 +2374,7 @@
       },
       {
         "use": "Fondos",
-        "ratio": "Demi-glace a 1/2-1/3, glace a 1/10",
+        "ratio": "Demi-glace a 1/2–1/3, glace a 1/10",
         "note": "Ver [[demi-glace]] y [[glace]]."
       }
     ],
@@ -2417,7 +2442,7 @@
       "Vinagretas calientes",
       "Salsas agridulces"
     ],
-    "keep": "Reducciones de vino o vinagre sin lácteo: 1-2 semanas a 0-4 °C; con chalota, 5-7 días. Jarabes de PX o balsámico: varias semanas en frío. Las de nata, 2-3 días.",
+    "keep": "Reducciones de vino o vinagre sin lácteo: 1–2 semanas a 0–4 °C; con chalota, 5–7 días. Jarabes de PX o balsámico: varias semanas en frío. Las de nata, 2–3 días.",
     "pro": "Hacer al principio de la semana la reducción base de bearnesa y la de vino tinto, y guardarlas en botes rotulados. Al pase se calienta la cantidad justa con jugo o fondo y se monta al momento. Al baño maría, tapadas.",
     "related": [
       "glace",
@@ -2427,7 +2452,8 @@
       "holandesa",
       "jugo-de-carne",
       "vinagreta",
-      "ligazones"
+      "ligazones",
+      "jugos-de-verdura"
     ]
   },
   {
@@ -2535,7 +2561,7 @@
         "note": "Cabezas de crustáceo tostadas; más dulce y yodado."
       },
       {
-        "id": null,
+        "id": "bullit-de-peix",
         "name": "Bullit",
         "note": "Pescado y patata cocidos en caldo con alioli; con el caldo se hace después un arroz."
       }
@@ -2806,14 +2832,14 @@
         "Tuesta las carcasas, alitas y patas en bandeja a 200–220 °C, 40–50 minutos, girando a media cocción, hasta un dorado oscuro y parejo. Quita la grasa que suelten y guárdala.",
         "En la marmita, dora las verduras en un poco de esa grasa. Añade el tomate concentrado y tuéstalo 3–4 minutos sin quemarlo.",
         "Desglasa las bandejas con el vino, raspando los jugos pegados, y vierte todo en la marmita con los huesos.",
-        "Cubre con el agua fría, lleva a 90–95 °C y desespuma. Cuece 3–4 horas con temblor suave, sin hervor fuerte.",
+        "Cubre con el agua fría, lleva a 85–90 °C y desespuma. Cuece 3–4 horas con temblor suave, sin hervor fuerte.",
         "Cuela sin apretar, abate y desgrasa en frío."
       ]
     },
     "ratios": [
       {
         "use": "Fondo para mojar guisos y arroces",
-        "ratio": "1 kg de carcasa por 1,2 l de agua, 3–4 h a 90–95 °C",
+        "ratio": "1 kg de carcasa por 1,2 l de agua, 3–4 h a 85–90 °C",
         "note": "Sin reducir."
       },
       {
@@ -3004,7 +3030,7 @@
       "Pintar pescado y carne a la brasa",
       "Patatas fritas o asadas en grasa de vacuno o pato"
     ],
-    "keep": "Clarificada y ghee, sin aromáticos, en frío y tapada, 2–3 meses. Infusionadas con producto fresco, en frío, 4–5 días; congeladas, 2 meses. Grasas animales coladas, en frío, 1–2 meses.",
+    "keep": "Clarificada y ghee, sin aromáticos, en frío y tapada, 2–3 meses. Infusionadas con producto fresco, en frío a 0–4 °C, como máximo 4 días; congeladas, 2 meses. Grasas animales coladas, en frío, 1–2 meses.",
     "pro": "Clarifica en tanda grande una vez por semana y guarda en bote junto a los fuegos. Infusiona la cantidad del día. En la brasa, una lata con mantequilla de hierbas templada y una brocha de cerdas naturales.",
     "related": [
       "mantequilla-noisette",
@@ -3084,7 +3110,7 @@
         "note": "Sal gruesa extendida y ahumada en frío; o mezclada con pimentón ahumado."
       },
       {
-        "id": null,
+        "id": "algas",
         "name": "Sal de algas",
         "note": "Alga seca molida con sal; refuerza el sabor a mar en pescados y crudos."
       },
@@ -3714,7 +3740,7 @@
       {
         "use": "Bonito o atún confitado en aceite",
         "ratio": "Lomo salado 30 minutos en salmuera, confitado en aceite a 60–65 °C hasta 50–55 °C al corazón",
-        "note": "En frío y cubierto, 5–7 días."
+        "note": "Pescado congelado antes por el anisakis (mira [[salmuera]]); en frío y cubierto, como máximo 4 días."
       },
       {
         "use": "Limón en sal",
@@ -3777,7 +3803,7 @@
       "Limón en sal para guisos, aliños y pescados",
       "Despensa de temporada"
     ],
-    "keep": "Verduras acidificadas en aceite, en frío, 2–3 semanas. Pescado confitado en aceite, en frío, 5–7 días. Limón en sal, en frío después de curado, varios meses. Nada de esto se guarda a temperatura ambiente.",
+    "keep": "Verduras acidificadas en aceite, en frío, 2–3 semanas. Pescado confitado en aceite, en frío, como máximo 4 días. Limón en sal, en frío después de curado, varios meses. Nada de esto se guarda a temperatura ambiente.",
     "pro": "Haz pequeñas tandas que se consuman en días y etiqueta cada tarro. Saca con utensilio limpio y vuelve a cubrir el producto con aceite cada vez.",
     "related": [
       "confitado",
@@ -3930,7 +3956,7 @@
       "Aliños de verduras asadas",
       "Arroces y caldos"
     ],
-    "keep": "En tarro, cubierta de aceite y en frío, 2–3 semanas. Congelada en cubiteras, 3 meses. Las que llevan ajo y aromáticos frescos, siempre en frío.",
+    "keep": "En tarro, cubierta de aceite y en frío, 1 semana; las que llevan ajo o hierbas frescas sin ácido, como máximo 4 días. Congelada en cubiteras, 3 meses. Las que llevan ajo y aromáticos frescos, siempre en frío.",
     "pro": "Haz tandas pequeñas y frecuentes: el aroma se va con los días. Congela en cubos de 20–30 g para usar en el momento.",
     "related": [
       "especias",
@@ -4003,14 +4029,14 @@
         "Tuesta huesos y recortes en bandeja a 200–220 °C, 45–60 minutos, hasta un dorado oscuro. Retira toda la grasa que suelten.",
         "Dora las verduras y el ajo en la marmita con un poco de aceite; añade el tomate concentrado y tuéstalo 3 minutos.",
         "Desglasa las bandejas con el vino y pásalo todo a la marmita con los huesos.",
-        "Cubre con el agua fría, lleva a 90–95 °C y desespuma. Cuece 4–5 horas; añade las hierbas la última hora.",
+        "Cubre con el agua fría, lleva a 85–90 °C y desespuma. Cuece 4–5 horas; añade las hierbas la última hora.",
         "Cuela, abate y retira en frío toda la grasa cuajada."
       ]
     },
     "ratios": [
       {
         "use": "Fondo para guisos y arroces de cordero",
-        "ratio": "1 kg de hueso por 1,2 l de agua, 4–5 h a 90–95 °C",
+        "ratio": "1 kg de hueso por 1,2 l de agua, 4–5 h a 85–90 °C",
         "note": "Sin reducir."
       },
       {
@@ -4143,14 +4169,14 @@
         "Tuesta los huesos y recortes a 200–220 °C, 45–60 minutos, hasta un dorado oscuro; retira la grasa.",
         "Dora las verduras con el ajo y tuesta el tomate concentrado.",
         "Desglasa con el vino tinto y reduce a la mitad para quitar el alcohol y concentrar.",
-        "Añade los huesos, el agua fría y los aromáticos. Lleva a 90–95 °C, desespuma y cuece: 3–4 horas si es caza de pluma o conejo, 5–6 horas si es caza mayor.",
+        "Añade los huesos, el agua fría y los aromáticos. Lleva a 85–90 °C, desespuma y cuece: 3–4 horas si es caza de pluma o conejo, 5–6 horas si es caza mayor.",
         "Cuela, abate y desgrasa en frío."
       ]
     },
     "ratios": [
       {
         "use": "Caza de pluma y conejo",
-        "ratio": "1 kg de carcasa por 1,2 l de agua, 3–4 h a 90–95 °C",
+        "ratio": "1 kg de carcasa por 1,2 l de agua, 3–4 h a 85–90 °C",
         "note": "Más corto: se amarga con cocciones largas."
       },
       {
@@ -4459,7 +4485,7 @@
       },
       {
         "use": "Marisco",
-        "ratio": "30–35 g de sal por litro",
+        "ratio": "35–40 g de sal por litro",
         "note": "Mira la cocción de cada marisco."
       },
       {
@@ -4873,7 +4899,7 @@
       },
       {
         "use": "Caldo de jamón",
-        "ratio": "1 kg de huesos de jamón blanqueados por 4 l de agua, 2–3 h a 90–95 °C",
+        "ratio": "1 kg de huesos de jamón blanqueados por 4 l de agua, 2–3 h a 85–90 °C",
         "note": "Más tiempo y la grasa da sabor a rancio."
       },
       {

@@ -72,7 +72,7 @@
     "fix": "Se ha pensado con los ojos. Revisa la huella de sabor y busca lo que falta."
    }
   ],
-  "history": "Los grandes cocineros han insistido en que crear no es inspiración suelta sino trabajo con método: probar, apuntar, corregir y archivar lo que se aprende.",
+  "history": "Crear con método (probar, apuntar, corregir y archivar) es una práctica extendida en las cocinas que investigan; los cuadernos de cocina existen desde hace siglos.",
   "uses": [
    "Platos nuevos de carta",
    "Platos del día",
@@ -84,7 +84,10 @@
   "related": [
    "contraste-y-equilibrio",
    "contar-un-plato",
-   "acidez-en-cocina"
+   "acidez-en-cocina",
+   "corregir-un-plato",
+   "catas-y-notas",
+   "maridaje-de-sabores"
   ]
  },
  {
@@ -169,7 +172,9 @@
   "related": [
    "construir-un-plato",
    "acidez-en-cocina",
-   "umami-y-fondo"
+   "umami-y-fondo",
+   "maridaje-de-sabores",
+   "corregir-un-plato"
   ]
  },
  {
@@ -197,7 +202,7 @@
   "ratios": [
    {
     "use": "Vinagreta clásica",
-    "ratio": "1 parte de ácido por 3-4 de aceite",
+    "ratio": "1 parte de ácido por 3–4 de aceite",
     "note": "Ver la vinagreta en la Biblioteca."
    },
    {
@@ -207,7 +212,7 @@
    },
    {
     "use": "Encurtido rápido",
-    "ratio": "Vinagre y agua a partes iguales con 2-3 % de sal y algo de azúcar",
+    "ratio": "Vinagre y agua a partes iguales con 2–3 % de sal y algo de azúcar",
     "note": "Para dar acidez con textura."
    }
   ],
@@ -263,7 +268,10 @@
    "contraste-y-equilibrio",
    "vinagreta",
    "escabeche",
-   "fermentacion-lactica"
+   "fermentacion-lactica",
+   "corregir-un-plato",
+   "vinagres-aromatizados",
+   "pickles-de-servicio"
   ]
  },
  {
@@ -297,7 +305,7 @@
    },
    {
     "use": "Glace en una salsa",
-    "ratio": "1-2 cucharadas por ración",
+    "ratio": "1–2 cucharadas por ración",
     "note": "Da cuerpo y brillo."
    },
    {
@@ -352,7 +360,10 @@
    "dashi",
    "glace",
    "contraste-y-equilibrio",
-   "maduracion-de-carne"
+   "maduracion-de-carne",
+   "caldo-de-setas",
+   "garum-y-salsas-de-pescado",
+   "miso-y-koji"
   ]
  },
  {
@@ -380,18 +391,18 @@
   "ratios": [
    {
     "use": "Menú corto",
-    "ratio": "5-7 pases",
+    "ratio": "5–7 pases",
     "note": "Incluye aperitivos y postre."
    },
    {
     "use": "Menú largo",
-    "ratio": "10-14 pases",
+    "ratio": "10–14 pases",
     "note": "Raciones pequeñas y muy medidas."
    },
    {
     "use": "Cantidad total",
     "ratio": "Que el comensal termine con hambre de postre",
-    "note": "Raciones de 3-4 bocados en los centrales."
+    "note": "Raciones de 3–4 bocados en los centrales."
    }
   ],
   "variants": [
@@ -434,7 +445,11 @@
   "related": [
    "construir-un-plato",
    "contraste-y-equilibrio",
-   "contar-un-plato"
+   "contar-un-plato",
+   "aperitivos-y-snacks",
+   "final-del-menu",
+   "del-plato-al-menu",
+   "menu-de-temporada"
   ]
  },
  {
@@ -467,7 +482,7 @@
    },
    {
     "use": "Descripción",
-    "ratio": "Una línea, 10-20 palabras",
+    "ratio": "Una línea, 10–20 palabras",
     "note": "Lo justo para elegir."
    },
    {
@@ -515,7 +530,9 @@
   "pro": "Antes de cada cambio de carta, lee la carta entera en voz alta con el equipo de sala.",
   "related": [
    "construir-un-plato",
-   "ritmo-de-un-menu"
+   "ritmo-de-un-menu",
+   "nombrar-un-plato",
+   "escribir-una-carta"
   ]
  },
  {
@@ -602,7 +619,11 @@
    "construir-un-plato",
    "arroces",
    "hierbas-frescas",
-   "contar-un-plato"
+   "contar-un-plato",
+   "producto-de-la-isla",
+   "cocina-de-verano-e-invierno",
+   "memoria-del-sabor",
+   "sofrit-pages"
   ]
  },
  {
@@ -632,17 +653,17 @@
   "ratios": [
    {
     "use": "Infusión fría",
-    "ratio": "8-10 g de té o hierbas por litro, 8-12 horas en frío",
+    "ratio": "8–10 g de té o hierbas por litro, 8–12 horas en frío",
     "note": "Colar y ajustar acidez."
    },
    {
     "use": "Cordial",
-    "ratio": "Zumo o infusión con 30-50 % de azúcar y ácido cítrico",
+    "ratio": "Zumo o infusión con 30–50 % de azúcar y ácido cítrico",
     "note": "Se diluye en agua con gas."
    },
    {
     "use": "Ración de maridaje",
-    "ratio": "60-80 ml por pase",
+    "ratio": "60–80 ml por pase",
     "note": "Como una copa de vino de menú."
    }
   ],
@@ -691,7 +712,11 @@
   "related": [
    "acidez-en-cocina",
    "fermentacion-lactica",
-   "ritmo-de-un-menu"
+   "ritmo-de-un-menu",
+   "aguas-clarificadas",
+   "shrubs-y-cordiales",
+   "kombucha-y-fermentados-de-bebida",
+   "maridaje-de-sabores"
   ]
  },
  {
@@ -779,7 +804,10 @@
   "related": [
    "construir-un-plato",
    "contar-un-plato",
-   "contraste-y-equilibrio"
+   "contraste-y-equilibrio",
+   "decoraciones-de-azucar-y-chocolate",
+   "cocina-y-paisaje",
+   "del-plato-al-menu"
   ]
  },
  {
@@ -1294,7 +1322,7 @@
    "Define la idea de la carta en una frase: qué cocina es, de dónde y de qué temporada.",
    "Haz la lista de platos posibles y agrúpalos por secciones claras (para picar, entrantes, principales, postres, o por producto).",
    "Revisa el equilibrio: productos del mar y de la tierra, opciones vegetales, técnicas distintas, platos fríos y calientes, ligeros e intensos.",
-   "Repasa la carga de cada partida: si demasiados platos dependen de la brasa o del mismo cocinero, cambia alguno.",
+   "Comprueba que la carta se puede cocinar bien: si demasiados platos dependen de la brasa o del mismo puesto, cambia alguno.",
    "Escribe cada plato: producto principal primero, después lo que lo acompaña, con las palabras justas. Sin adjetivos vacíos.",
    "Léela en voz alta, dásela a alguien de fuera y pregúntale qué pediría y qué no entiende."
   ],
@@ -1336,7 +1364,7 @@
    "Corta y clara mejor que larga y completa.",
    "Nombra el producto: el comensal quiere saber qué va a comer.",
    "Cada plato tiene que tener su sitio; si dos se parecen, sobra uno.",
-   "Piensa la carta desde el pase: cualquier combinación de pedidos debe poder salir.",
+   "Piensa la carta desde el pase: cualquier combinación de platos que pida una mesa debe poder salir bien.",
    "La información de alérgenos tiene que estar disponible para el comensal."
   ],
   "errors": [
@@ -3420,7 +3448,7 @@
    "firma personal"
   ],
   "summary": "Un estilo propio no se inventa en un día: se construye con lo que se aprende, lo que se recuerda, el lugar donde se cocina y muchas decisiones repetidas. Cómo reconocerlo y cultivarlo.",
-  "what": "El estilo de un cocinero es lo que hace que un plato se reconozca como suyo: unos productos, unas técnicas, unos contrastes, una forma de emplatar, un tono. Se forma con el tiempo a partir de las cocinas donde se ha trabajado, los recuerdos de sabor, el paisaje y el producto del lugar, y las decisiones que se repiten porque convencen. No se trata de ser original a cualquier precio, sino de ser coherente: que los platos tengan algo en común que no esté en los de otros. El [[plato-firma]] es su expresión más concentrada.",
+  "what": "El estilo de un cocinero es lo que hace que un plato se reconozca como suyo: unos productos, unas técnicas, unos contrastes, una forma de emplatar, un tono. Se forma con el tiempo a partir de las cocinas donde se ha trabajado, los recuerdos de sabor, el paisaje y el producto del lugar, y las decisiones que se repiten porque convencen. No se trata de ser original a toda costa, sino de ser coherente: que los platos tengan algo en común que no esté en los de otros. El [[plato-firma]] es su expresión más concentrada.",
   "method": [
    "Repasa tu archivo y busca lo que se repite: productos, técnicas, combinaciones, colores, formas.",
    "Pregúntate de dónde viene cada cosa: un maestro, un viaje, un recuerdo, el lugar.",

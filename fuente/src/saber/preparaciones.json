@@ -51,7 +51,8 @@
     "keys": [
       "Deja algo de mordida para contrastar con la alcachofa tierna.",
       "Prueba la cebolla junto a un bocado del plato completo antes de ajustar la acidez.",
-      "Para cambiar la acidez en el plato, empieza por variar la cantidad que sirves."
+      "Para cambiar la acidez en el plato, empieza por variar la cantidad que sirves.",
+      "Lamina justo antes de encurtir: la cebolla cortada con antelación se oxida y pierde crujiente."
     ],
     "errors": [
       {
@@ -71,8 +72,37 @@
     "related": [
       "salmuera",
       "vinagreta",
-      "escabeche"
-    ]
+      "escabeche",
+      "pickles-de-servicio",
+      "encurtidos-rapidos"
+    ],
+    "variants": [
+      {
+        "id": "pickles-de-servicio",
+        "name": "Pickles de servicio",
+        "note": "Otros encurtidos rápidos con el mismo líquido."
+      },
+      {
+        "id": "encurtidos-rapidos",
+        "name": "Encurtido rápido",
+        "note": "La técnica y sus proporciones."
+      }
+    ],
+    "ratios": [
+      {
+        "use": "Cebolla fina para el plato",
+        "ratio": "20–60 minutos en el líquido frío",
+        "note": "Ácida pero aún con mordida."
+      },
+      {
+        "use": "Cebolla más suave y rosa",
+        "ratio": "12–24 horas en frío",
+        "note": "Más blanda y de color intenso."
+      }
+    ],
+    "history": "Encurtir cebolla en vinagre es una práctica antigua y común a muchas cocinas; en la cocina de restaurante actual se usa como contrapunto ácido y de color.",
+    "keep": "En frío y cubierta de su líquido, 1–2 semanas; con los días se ablanda. Saca con pinza limpia.",
+    "pro": "Ten una tanda nueva cada pocos días para que siempre haya cebolla en su punto. En el pase, en bote pequeño con pinza y bien escurrida."
   },
   {
     "id": "crema-berenjena-brasa",
@@ -135,7 +165,8 @@
     "keys": [
       "Pesa la pulpa después de escurrir. Dos berenjenas de tamaño parecido pueden soltar cantidades distintas de agua.",
       "Prueba la crema junto al plato. Si el conjunto ya lleva [[cebolla-encurtida|cebolla encurtida]], ajusta el limón al final para evitar duplicar intensidad.",
-      "Para un acabado fino, quita las fibras duras al sacar la pulpa en lugar de intentar romperlas triturando más."
+      "Para un acabado fino, quita las fibras duras al sacar la pulpa en lugar de intentar romperlas triturando más.",
+      "Deja escurrir la pulpa asada en un colador 15–20 minutos: el agua amarga y diluye la crema."
     ],
     "errors": [
       {
@@ -155,8 +186,24 @@
     "pro": "En el pase, extiéndela con el dorso de una cuchara y monta encima el producto escurrido. Prueba el primer plato completo para decidir si hace falta limón en la crema o un punto ácido aparte.",
     "related": [
       "cebolla-encurtida",
-      "emulsiones"
-    ]
+      "emulsiones",
+      "untables-de-legumbre",
+      "berenjena"
+    ],
+    "variants": [
+      {
+        "id": "untables-de-legumbre",
+        "name": "Con tahina o legumbre",
+        "note": "Más cuerpo y sabor tostado."
+      },
+      {
+        "id": "pures-de-verdura",
+        "name": "Purés de verdura",
+        "note": "La técnica general de triturar y montar."
+      }
+    ],
+    "history": "Las cremas de berenjena asada al fuego son tradicionales en las cocinas del Mediterráneo oriental y encajan de forma natural en una cocina de brasa.",
+    "keep": "En frío y tapada a piel, 3 días. Si lleva ajo crudo, mejor en el día."
   },
   {
     "id": "migas-limon",
@@ -223,7 +270,8 @@
     "keys": [
       "Reparte las migas en una capa fina. Si hay mucha cantidad, usa dos bandejas en lugar de acumular una capa gruesa.",
       "Añade la ralladura al enfriar para que conserve su aroma. Usa solo la parte coloreada.",
-      "Acaba una tanda pequeña con perejil justo antes del pase. El resto del pan tostado puede esperar separado."
+      "Acaba una tanda pequeña con perejil justo antes del pase. El resto del pan tostado puede esperar separado.",
+      "Pan de uno o dos días: el muy fresco absorbe aceite y no cruje."
     ],
     "errors": [
       {
@@ -243,8 +291,24 @@
     "pro": "Pon el pan tostado en un recipiente aparte de la salsa. Mezcla los aromáticos en pequeñas tandas y usa una cuchara seca para conservar la textura durante el servicio.",
     "related": [
       "crema-berenjena-brasa",
-      "aceites-aromatizados"
-    ]
+      "aceites-aromatizados",
+      "tierras-saladas",
+      "crujientes-salados"
+    ],
+    "variants": [
+      {
+        "id": "tierras-saladas",
+        "name": "Tierras saladas",
+        "note": "Crujientes en grano fino de aceituna, setas o queso."
+      },
+      {
+        "id": "crujientes-salados",
+        "name": "Crujientes salados",
+        "note": "Hilos y láminas fritos o tostados."
+      }
+    ],
+    "history": "Aprovechar el pan duro en migas tostadas es una costumbre de las cocinas de casa de toda España; como acabado crujiente, se ha extendido en la cocina de restaurante.",
+    "keep": "El pan tostado sin aromáticos, en recipiente hermético 3–4 días. Con perejil, el mismo día."
   },
   {
     "id": "pimientos-asados-alinados",
@@ -310,7 +374,8 @@
     "keys": [
       "Guarda el líquido del asado antes de pelar. Es lo que une la guarnición y el aliño.",
       "Si el pimiento ya tiene un tostado intenso, compensa en el plato con un componente fresco, como [[cebolla-encurtida|cebolla encurtida]] en poca cantidad.",
-      "Corta las tiras de tamaño parecido para repartir el aliño y emplatar sin tener que recortar cada porción."
+      "Corta las tiras de tamaño parecido para repartir el aliño y emplatar sin tener que recortar cada porción.",
+      "Deja sudar los pimientos tapados 15–20 minutos tras asarlos: la piel sale sola."
     ],
     "errors": [
       {
@@ -331,8 +396,24 @@
     "related": [
       "vinagreta",
       "cebolla-encurtida",
-      "crema-berenjena-brasa"
-    ]
+      "crema-berenjena-brasa",
+      "verduras-marinadas",
+      "pimientos"
+    ],
+    "variants": [
+      {
+        "id": "verduras-marinadas",
+        "name": "Verduras marinadas",
+        "note": "Otras verduras asadas aliñadas en caliente."
+      },
+      {
+        "id": "coca-y-masas-saladas",
+        "name": "Coca de pimiento",
+        "note": "Las mismas tiras sobre masa fina."
+      }
+    ],
+    "history": "Los pimientos asados y aliñados son un plato tradicional de muchas zonas de España, de la escalivada catalana a las ensaladas de pimientos asados del interior.",
+    "keep": "Cubiertos de su jugo y aceite, en frío, 3–4 días. Si llevan ajo crudo, como máximo 4 días y siempre en frío."
   },
   {
     "id": "vinagreta-piparras",
@@ -396,7 +477,8 @@
     "keys": [
       "Prueba la piparra antes de salar el aliño. Las partidas cambian de intensidad y una receta fija de sal puede pasarse.",
       "Pica a cuchillo: los trozos definen el efecto de esta vinagreta. Si necesitas textura lisa, consulta la [[vinagreta|vinagreta base]].",
-      "En un plato con dos encurtidos, usa uno como aliño y el otro en una cantidad pequeña para conservar contraste."
+      "En un plato con dos encurtidos, usa uno como aliño y el otro en una cantidad pequeña para conservar contraste.",
+      "Mézclala poco antes del servicio: la piparra picada suelta líquido y el aliño se aclara."
     ],
     "errors": [
       {
@@ -418,7 +500,21 @@
     "related": [
       "vinagreta",
       "cebolla-encurtida"
-    ]
+    ],
+    "variants": [
+      {
+        "id": "vinagreta",
+        "name": "Vinagreta base",
+        "note": "La proporción y la emulsión de partida."
+      },
+      {
+        "id": "pickles-de-servicio",
+        "name": "Otros encurtidos",
+        "note": "Para cambiar la piparra por otro encurtido."
+      }
+    ],
+    "history": "La piparra es una guindilla encurtida tradicional del País Vasco y Navarra; usarla en aliños es una forma actual de aprovechar su acidez y su picor suave.",
+    "keep": "En frío y tapada, 3–4 días. Remueve antes de usar."
   },
   {
     "id": "pure-coliflor-tostada",
@@ -485,7 +581,8 @@
     "keys": [
       "El tostado aporta sabor, pero la coliflor debe quedar tierna. Retira las puntas demasiado negras antes de triturar.",
       "Prueba el puré con el jugo o la salsa que irá en el plato. Un caldo fuerte puede tapar el sabor de una pieza delicada.",
-      "Para dar contraste, termina con [[migas-limon|migas crujientes de limón]] sobre la pieza en vez de mezclarlas en el puré."
+      "Para dar contraste, termina con [[migas-limon|migas crujientes de limón]] sobre la pieza en vez de mezclarlas en el puré.",
+      "Tritura en caliente y cuela fino: el puré frío nunca queda liso."
     ],
     "errors": [
       {
@@ -506,8 +603,23 @@
     "related": [
       "caldo-de-verduras",
       "migas-limon",
-      "crema-berenjena-brasa"
-    ]
+      "crema-berenjena-brasa",
+      "pures-de-verdura"
+    ],
+    "variants": [
+      {
+        "id": "pures-de-verdura",
+        "name": "Purés de verdura",
+        "note": "La técnica general y otras verduras."
+      },
+      {
+        "id": "asado-de-verduras",
+        "name": "Verduras asadas",
+        "note": "Cómo dar el tostado al horno."
+      }
+    ],
+    "history": "Asar la verdura antes de hacer el puré es un recurso habitual en la cocina actual para dar profundidad a cremas sencillas.",
+    "keep": "En frío, tapado a piel, 2–3 días. Congelado en bolsa plana, 1 mes."
   },
   {
     "id": "salsa-yogur-limon",
@@ -575,7 +687,8 @@
     "keys": [
       "Escurre las hierbas antes de picarlas para añadir aroma con menos agua.",
       "Usa yogur natural sin endulzar. Si una tanda tiene más acidez que otra, ajusta por sabor en lugar de añadir el limón entero.",
-      "Sirve la salsa junto a la pieza en platos muy calientes si quieres conservar el contraste de temperatura."
+      "Sirve la salsa junto a la pieza en platos muy calientes si quieres conservar el contraste de temperatura.",
+      "Sala un rato antes de servir y vuelve a probar: la sal suelta agua del yogur y de las hierbas."
     ],
     "errors": [
       {
@@ -597,8 +710,24 @@
     "related": [
       "vinagreta",
       "pimientos-asados-alinados",
-      "vinagreta-piparras"
-    ]
+      "vinagreta-piparras",
+      "lacteos-fermentados",
+      "labneh"
+    ],
+    "variants": [
+      {
+        "id": "lacteos-fermentados",
+        "name": "Salsas de lácteos fermentados",
+        "note": "Con kéfir, nata fermentada o pepino."
+      },
+      {
+        "id": "labneh",
+        "name": "Labneh",
+        "note": "Yogur escurrido, más denso."
+      }
+    ],
+    "history": "Las salsas de yogur con hierbas y limón son habituales en las cocinas del Mediterráneo oriental, los Balcanes y Oriente Medio.",
+    "keep": "En frío y tapada, 2–3 días; con hierbas, mejor del día. No la dejes fuera de la cámara durante el servicio: en el pase, en recipiente pequeño sobre frío."
   },
   {
     "id": "verduras-a-la-brasa",
@@ -636,7 +765,8 @@
     "keys": [
       "Distingue una marca tostada de un sabor a hollín. Si hay llamas continuas, cambia la pieza de zona antes de que la superficie se queme.",
       "Separa las tandas por tipo y grosor. Una lámina fina no necesita la misma espera que un gajo de hinojo.",
-      "Para una aplicación concreta, prueba la [[crema-berenjena-brasa|crema de berenjena]] y compara su tostado con la verdura del plato."
+      "Para una aplicación concreta, prueba la [[crema-berenjena-brasa|crema de berenjena]] y compara su tostado con la verdura del plato.",
+      "Sala y aceita la verdura justo antes de ponerla en la parrilla; con antelación suelta agua."
     ],
     "errors": [
       {
@@ -658,8 +788,24 @@
     "related": [
       "crema-berenjena-brasa",
       "verduras-al-vapor",
-      "hinojo-brasa-limon"
-    ]
+      "hinojo-brasa-limon",
+      "fuego-y-brasa",
+      "ensaladas-templadas"
+    ],
+    "variants": [
+      {
+        "id": "fuego-y-brasa",
+        "name": "Fuego y brasa",
+        "note": "Zonas, temperaturas y control del fuego."
+      },
+      {
+        "id": "ensaladas-templadas",
+        "name": "Ensaladas templadas",
+        "note": "Qué hacer con la verdura de la brasa en caliente."
+      }
+    ],
+    "history": "Asar verdura sobre las brasas es una de las formas más antiguas de cocinar en el Mediterráneo, de la escalivada a las verduras de los asadores.",
+    "keep": "Asada y enfriada, en frío 2–3 días. Se regenera unos minutos en la brasa o se usa en ensaladas templadas."
   },
   {
     "id": "verduras-al-vapor",
@@ -697,7 +843,8 @@
     "keys": [
       "Para que el vapor circule, elige una cesta ancha y evita presionar la verdura con la tapa.",
       "Elimina el exceso de humedad superficial antes de tostar. Una verdura mojada tarda más en marcarse.",
-      "Compara con [[verduras-a-la-brasa|verduras a la brasa]] si quieres usar vapor para el interior y fuego directo para el acabado."
+      "Compara con [[verduras-a-la-brasa|verduras a la brasa]] si quieres usar vapor para el interior y fuego directo para el acabado.",
+      "Sala la verdura al salir del vapor, cuando aún está caliente: así se reparte la sal."
     ],
     "errors": [
       {
@@ -719,7 +866,21 @@
       "verduras-a-la-brasa",
       "pure-coliflor-tostada",
       "hinojo-brasa-limon"
-    ]
+    ],
+    "variants": [
+      {
+        "id": "papillote-y-vapor",
+        "name": "Papillote y vapor",
+        "note": "Cocciones al vapor de pescado y verdura."
+      },
+      {
+        "id": "escaldado-de-verduras",
+        "name": "Escaldado",
+        "note": "Cocción breve en agua."
+      }
+    ],
+    "history": "El vapor es una técnica muy antigua, central en las cocinas de Asia, y se usa en la cocina actual para conservar el sabor y la textura de la verdura.",
+    "keep": "Cocida y abatida, en frío 2 días. Se termina en sartén, brasa o vapor corto."
   },
   {
     "id": "hinojo-brasa-limon",
@@ -781,7 +942,8 @@
     "keys": [
       "Mientras cortes, deja una parte de la base en cada gajo. Así no se escapan las capas al girar con pinzas.",
       "El tostado debe ir con un centro tierno. Consulta [[verduras-a-la-brasa|las dos zonas de calor]] si la primera tanda se dora demasiado deprisa.",
-      "Acaba con una cucharada pequeña de aliño. Prueba el hinojo junto a la pieza para decidir si hace falta más acidez."
+      "Acaba con una cucharada pequeña de aliño. Prueba el hinojo junto a la pieza para decidir si hace falta más acidez.",
+      "Escalda o cuece al vapor los gajos gruesos antes de la brasa si quieres el centro muy tierno."
     ],
     "errors": [
       {
@@ -803,7 +965,21 @@
       "verduras-a-la-brasa",
       "verduras-al-vapor",
       "gremolata"
-    ]
+    ],
+    "variants": [
+      {
+        "id": "hinojo-y-apio",
+        "name": "Hinojo crudo",
+        "note": "En láminas finas, aliñado con cítrico."
+      },
+      {
+        "id": "verduras-a-la-brasa",
+        "name": "Otras verduras a la brasa",
+        "note": "La misma técnica con otras verduras."
+      }
+    ],
+    "history": "El hinojo, cultivado y silvestre, es muy mediterráneo; asado o a la brasa con cítrico es una preparación habitual en la cocina de costa actual.",
+    "keep": "Asado, en frío 2 días; se regenera en la brasa. Aliña siempre al emplatar."
   },
   {
     "id": "gremolata",
@@ -859,7 +1035,8 @@
     "keys": [
       "Pica con cuchillo afilado para no machacar el perejil ni hacerlo sudar en la tabla.",
       "Añádela al final con una cuchara seca. Si la hierves en el jugo, perderás parte del contraste fresco.",
-      "Si el plato también necesita crujiente, usa [[migas-limon|migas de limón]] en lugar de sumar dos acabados con el mismo aroma."
+      "Si el plato también necesita crujiente, usa [[migas-limon|migas de limón]] en lugar de sumar dos acabados con el mismo aroma.",
+      "Haz poca cantidad y a menudo: en una hora el perejil picado se oscurece."
     ],
     "errors": [
       {
@@ -881,8 +1058,23 @@
     "related": [
       "hinojo-brasa-limon",
       "migas-limon",
-      "aceites-aromatizados"
-    ]
+      "aceites-aromatizados",
+      "majados-de-temporada"
+    ],
+    "variants": [
+      {
+        "id": "majados-de-temporada",
+        "name": "Majados de temporada",
+        "note": "La misma idea con aceite y frutos secos."
+      },
+      {
+        "id": "picada",
+        "name": "Picada",
+        "note": "Majado para ligar guisos."
+      }
+    ],
+    "history": "La gremolata es un acabado tradicional de la cocina del norte de Italia, asociado al ossobuco.",
+    "keep": "Picada, en frío y tapada, unas horas; mejor hacerla al inicio de cada servicio."
   },
   {
     "id": "ajoblanco",
@@ -956,7 +1148,8 @@
     "keys": [
       "Mide el agua antes de empezar y reserva parte. Así puedes aligerar sin perder de vista la proporción de la tanda.",
       "Tritura bien la almendra antes de añadir todo el aceite. Si buscas un acabado fino, usa un colador después.",
-      "Prueba con la guarnición final. Un acompañamiento ácido como [[cebolla-encurtida|cebolla encurtida]] puede hacer innecesario añadir el resto del vinagre."
+      "Prueba con la guarnición final. Un acompañamiento ácido como [[cebolla-encurtida|cebolla encurtida]] puede hacer innecesario añadir el resto del vinagre.",
+      "Remoja el pan en parte del agua antes de triturar: liga mejor y la crema no se corta."
     ],
     "errors": [
       {
@@ -978,8 +1171,25 @@
     "related": [
       "emulsiones",
       "pimientos-asados-alinados",
-      "cebolla-encurtida"
-    ]
+      "cebolla-encurtida",
+      "leches-vegetales",
+      "gazpacho-y-salmorejo",
+      "almendra"
+    ],
+    "variants": [
+      {
+        "id": "leches-vegetales",
+        "name": "Leche de almendra",
+        "note": "La base del ajoblanco, sin ajo ni pan."
+      },
+      {
+        "id": "gazpacho-y-salmorejo",
+        "name": "Gazpacho y salmorejo",
+        "note": "Otras sopas frías majadas."
+      }
+    ],
+    "history": "El ajoblanco es una sopa fría tradicional de Andalucía, sobre todo de Málaga y Granada, con raíces en los majados antiguos de almendra, pan, ajo y aceite.",
+    "keep": "En frío y tapado, 2 días. Lleva ajo crudo: siempre en frío y sírvelo muy frío."
   },
   {
     "id": "patata-chafada-brasa",
@@ -1038,7 +1248,8 @@
     "keys": [
       "Cuece hasta que el centro ceda. Si aún está duro, la patata se partirá en vez de aplastarse.",
       "Usa una espátula amplia para girar cada pieza de una vez. Mantén la parrilla limpia para facilitar el despegado.",
-      "Para tandas grandes, dora solo lo que puedas emplatar sin apilar. Una fuente honda retiene vapor y ablanda las costras."
+      "Para tandas grandes, dora solo lo que puedas emplatar sin apilar. Una fuente honda retiene vapor y ablanda las costras.",
+      "Deja que las patatas cocidas se sequen al aire unos minutos antes de aplastarlas: doran mejor."
     ],
     "errors": [
       {
@@ -1059,8 +1270,23 @@
     "related": [
       "verduras-a-la-brasa",
       "gremolata",
-      "jugo-de-carne"
-    ]
+      "jugo-de-carne",
+      "guarniciones-de-patata"
+    ],
+    "variants": [
+      {
+        "id": "guarniciones-de-patata",
+        "name": "Guarniciones de patata",
+        "note": "Fritas, panadera, confitadas y milhojas."
+      },
+      {
+        "id": "grasas-infusionadas",
+        "name": "Con grasa de pato o de ave",
+        "note": "Más sabor y mejor costra."
+      }
+    ],
+    "history": "Aplastar patatas cocidas y dorarlas en grasa o en la brasa es una preparación casera de muchas cocinas que se ha hecho habitual en la cocina de restaurante.",
+    "keep": "Cocidas y aplastadas, en frío 2 días. Se doran al pedir."
   },
   {
     "id": "crema-garbanzos-comino",
@@ -1130,7 +1356,8 @@
     "keys": [
       "El centro del garbanzo tiene que estar tierno antes de triturar. Añadir más aceite no arregla un garbanzo duro.",
       "El comino acompaña al plato. Mezcla y prueba antes de decidir si la base necesita más.",
-      "Un encurtido como la [[cebolla-encurtida|cebolla morada]] puede aportar el contraste ácido y dejar el limón de la crema en segundo plano."
+      "Un encurtido como la [[cebolla-encurtida|cebolla morada]] puede aportar el contraste ácido y dejar el limón de la crema en segundo plano.",
+      "Tritura en caliente con parte del agua de cocción: la crema queda más lisa y ligera."
     ],
     "errors": [
       {
@@ -1151,8 +1378,24 @@
     "related": [
       "hinojo-brasa-limon",
       "cebolla-encurtida",
-      "vinagreta-piparras"
-    ]
+      "vinagreta-piparras",
+      "untables-de-legumbre",
+      "salsa-tahina-limon"
+    ],
+    "variants": [
+      {
+        "id": "untables-de-legumbre",
+        "name": "Untables de legumbre",
+        "note": "Habas, alubias o lentejas con la misma técnica."
+      },
+      {
+        "id": "salsa-tahina-limon",
+        "name": "Con tahina",
+        "note": "La versión con pasta de sésamo."
+      }
+    ],
+    "history": "Las cremas de garbanzo con aceite, limón y especias son tradicionales en el Levante mediterráneo y se han extendido por todo el mundo.",
+    "keep": "En frío y tapada, 3–4 días. Congelada, 1 mes. Ajusta el espesor con agua al servir: espesa en frío."
   },
   {
     "id": "alino-alcaparras-limon",
@@ -1216,7 +1459,8 @@
     "keys": [
       "No sales por costumbre. Prueba primero las alcaparras y después el aliño con el producto principal.",
       "El perejil va al final para mantener su aroma. Si quieres un toque seco sin más líquido, prueba la [[gremolata|gremolata]].",
-      "Remueve con una cuchara que llegue al fondo. La alcaparra picada se asienta al reposar."
+      "Remueve con una cuchara que llegue al fondo. La alcaparra picada se asienta al reposar.",
+      "Si las alcaparras vienen en sal, desálalas 10–15 minutos en agua y sécalas antes de picar."
     ],
     "errors": [
       {
@@ -1238,7 +1482,21 @@
       "vinagreta",
       "gremolata",
       "patata-chafada-brasa"
-    ]
+    ],
+    "variants": [
+      {
+        "id": "vinagreta",
+        "name": "Vinagreta base",
+        "note": "La proporción de ácido y aceite."
+      },
+      {
+        "id": "aceitunas-y-alcaparras",
+        "name": "Alcaparras",
+        "note": "Tipos de alcaparra y alcaparrón."
+      }
+    ],
+    "history": "Las alcaparras se cultivan y recogen en todo el Mediterráneo, también en las islas, y aliñar con ellas pescados y verduras es habitual en la cocina mediterránea.",
+    "keep": "En frío y tapado, 3–4 días; el perejil, añadido al servir."
   },
   {
     "id": "escaldado-de-verduras",
@@ -1276,7 +1534,8 @@
     "keys": [
       "Mide el tiempo de la primera tanda que funcione y anota el grosor. Así puedes repetir una tanda comparable.",
       "Prepara el escurrido antes de empezar. El agua que queda entre las piezas sigue calentándolas.",
-      "Si buscas una cocción inicial con menos agua en contacto con el producto, compara con [[verduras-al-vapor|verduras al vapor]]."
+      "Si buscas una cocción inicial con menos agua en contacto con el producto, compara con [[verduras-al-vapor|verduras al vapor]].",
+      "Agua abundante y con sal, en hervor fuerte: si echas mucha verdura de golpe, deja de hervir y la cocción se alarga."
     ],
     "errors": [
       {
@@ -1297,8 +1556,24 @@
     "related": [
       "verduras-al-vapor",
       "verduras-a-la-brasa",
-      "patata-chafada-brasa"
-    ]
+      "patata-chafada-brasa",
+      "crudites-y-cortes",
+      "punto-de-las-verduras"
+    ],
+    "variants": [
+      {
+        "id": "verduras-al-vapor",
+        "name": "Verduras al vapor",
+        "note": "Menos agua en contacto con la verdura."
+      },
+      {
+        "id": "punto-de-las-verduras",
+        "name": "Punto de las verduras",
+        "note": "Cómo saber cuándo está cada verdura."
+      }
+    ],
+    "history": "Blanquear y enfriar la verdura en agua con hielo es una técnica clásica de la cocina profesional para fijar el color y adelantar trabajo.",
+    "keep": "Escaldada, enfriada y bien seca, en frío 1–2 días en caja con papel."
   },
   {
     "id": "tomate-confitado",
@@ -1427,7 +1702,7 @@
       "Pastas y arroces",
       "Base de salsa rápida"
     ],
-    "keep": "En frío, cubierto de aceite, 4–5 días. El ajo y las hierbas frescas en aceite deben estar siempre en frío. Congelado sin aceite, 2 meses.",
+    "keep": "En frío, cubierto de aceite, como máximo 4 días. El ajo y las hierbas frescas en aceite deben estar siempre en frío. Congelado sin aceite, 2 meses.",
     "pro": "Confita en temporada alta, cuando el tomate está en su punto, y congela en placas. Para el pase, pétalos escurridos en bandeja pequeña, a temperatura ambiente durante el servicio y de vuelta a frío al acabar.",
     "related": [
       "tomate",
@@ -1923,7 +2198,7 @@
         "note": "El aceite del confitado, colado; muy aromático."
       },
       {
-        "id": null,
+        "id": "cebolla-y-ajo",
         "name": "Ajo negro",
         "note": "Cabezas enteras a 60–70 °C con humedad durante 2–4 semanas; dulce, oscuro y blando."
       }
@@ -1957,7 +2232,7 @@
       "Tostas y pan",
       "Alioli suave"
     ],
-    "keep": "Ajo y aceite de confitado, en frío y tapados, 4–5 días; congelado en cubiteras, 2 meses. La crema, en frío, 4 días.",
+    "keep": "Ajo y aceite de confitado, en frío y tapados, como máximo 4 días; congelado en cubiteras, 2 meses. La crema, en frío, 4 días.",
     "pro": "Confita en tanda una vez por semana y congela en cubiteras. Guarda la crema en biberón; un punto por plato basta.",
     "related": [
       "alioli",
@@ -3968,7 +4243,8 @@
       "Yemas enteras: separa con cuidado.",
       "Lava bien la yema curada para quitar el exceso de sal.",
       "La yema rallada sustituye a un queso curado como acabado.",
-      "Huevo a baja temperatura: controla el agua con termómetro o roner."
+      "Huevo a baja temperatura: controla el agua con termómetro o roner.",
+      "Huevo crudo o poco cuajado: en frío hasta el último momento y nunca recalentado varias veces."
     ],
     "errors": [
       {
@@ -3992,7 +4268,7 @@
       "Yema rallada sobre ensaladas y platos",
       "Huevo de codorniz en aperitivos"
     ],
-    "keep": "Yemas curadas cremosas, en frío y en aceite, 2–3 días. Yemas secas para rallar, en frío y cerradas, 2–3 semanas. Huevos a baja temperatura, enfriados en hielo, 2 días; regenerar a 60 °C.",
+    "keep": "Las yemas curadas cremosas siguen siendo huevo crudo: en frío a 0–4 °C y consumirlas en el día. Yemas secas para rallar, en frío y cerradas, 2 semanas. Huevos a baja temperatura, enfriados en hielo, 2 días; regenerar a 60 °C.",
     "pro": "Cocina los huevos a baja temperatura en tanda, enfríalos en hielo y regenéralos 10 minutos a 60 °C en el pase. Ten yemas curadas para todo el servicio.",
     "related": [
       "puntos-del-huevo",

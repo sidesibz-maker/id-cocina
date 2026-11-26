@@ -41,24 +41,24 @@
     "Calienta la leche y la nata con la vainilla abierta hasta que hierva; tapa y deja infusionar 10 minutos.",
     "Blanquea las yemas con el azúcar sin montarlas.",
     "Vierte un tercio del líquido caliente sobre las yemas removiendo, y devuelve todo al cazo.",
-    "Cuece a fuego suave sin dejar de remover con espátula hasta 82-84 °C, cuando nape.",
+    "Cuece a fuego suave sin dejar de remover con espátula hasta 82–84 °C, cuando nape.",
     "Cuela enseguida sobre un recipiente frío y abate removiendo de vez en cuando."
    ]
   },
   "ratios": [
    {
     "use": "Salsa de postre",
-    "ratio": "160-200 g de yema por litro",
+    "ratio": "160–200 g de yema por litro",
     "note": "Fluida, napa la cuchara."
    },
    {
     "use": "Base de helado",
-    "ratio": "200-240 g de yema por litro",
+    "ratio": "200–240 g de yema por litro",
     "note": "Con más nata para cremosidad."
    },
    {
     "use": "Bavaroise",
-    "ratio": "Crema inglesa más 8-10 g de gelatina por litro y nata semimontada a partes iguales",
+    "ratio": "Crema inglesa más 8–10 g de gelatina por litro y nata semimontada a partes iguales",
     "note": "Se cuaja en frío."
    }
   ],
@@ -98,12 +98,15 @@
    "Torrijas",
    "Islas flotantes"
   ],
-  "keep": "Abatida y en frío, uno o dos días como mucho; sigue tu plan APPCC. No se congela como salsa: se corta.",
+  "keep": "Abatida y en frío a 0–4 °C, uno o dos días como mucho. No se congela como salsa: se corta.",
   "pro": "Hazla con yema pasteurizada en producción. Una tanda al día, abatida y en biberón para el pase.",
   "related": [
    "crema-pastelera",
    "ligazones",
-   "emulsiones"
+   "emulsiones",
+   "arroz-con-leche-y-natillas",
+   "helados-de-autor",
+   "zabaione"
   ]
  },
  {
@@ -151,19 +154,19 @@
     "Calienta la leche con el aroma.",
     "Mezcla las yemas, el azúcar y el almidón hasta que no queden grumos.",
     "Vierte parte de la leche caliente sobre la mezcla, remueve y devuelve al cazo.",
-    "Cuece con varilla sin parar hasta que hierva y mantén el hervor 1-2 minutos.",
+    "Cuece con varilla sin parar hasta que hierva y mantén el hervor 1–2 minutos.",
     "Fuera del fuego añade la mantequilla, pasa a bandeja, film a piel y abate."
    ]
   },
   "ratios": [
    {
     "use": "Relleno firme (milhojas, lionesas)",
-    "ratio": "80-90 g de almidón por litro",
+    "ratio": "80–90 g de almidón por litro",
     "note": "Se sostiene al cortar."
    },
    {
     "use": "Crema más suave (tartas de fruta)",
-    "ratio": "60-70 g de almidón por litro",
+    "ratio": "60–70 g de almidón por litro",
     "note": "Se extiende fácil."
    },
    {
@@ -193,7 +196,7 @@
    },
    {
     "p": "Se licúa en la nevera",
-    "fix": "No hirvió lo suficiente. Hiérvela 1-2 minutos la próxima vez."
+    "fix": "No hirvió lo suficiente. Hiérvela 1–2 minutos la próxima vez."
    },
    {
     "p": "Sabor a harina",
@@ -208,12 +211,15 @@
    "Bambas y ensaimadas",
    "Suflés"
   ],
-  "keep": "En frío, film a piel, uno o dos días; lo que marque tu plan APPCC.",
+  "keep": "Abatida, en frío a 0–4 °C y con film a piel, uno o dos días como mucho.",
   "pro": "Haz la cantidad del día. Guárdala en manga en frío y bátela antes del servicio.",
   "related": [
    "crema-inglesa",
    "ligazones",
-   "masa-quebrada"
+   "masa-quebrada",
+   "pasta-choux",
+   "curds-y-cremas-de-citricos",
+   "postres-clasicos-espanoles"
   ]
  },
  {
@@ -229,7 +235,7 @@
    "claras montadas"
   ],
   "summary": "Clara y azúcar montados: francés para hornear, suizo más firme y estable, italiano con almíbar para mousses y para quemar.",
-  "what": "La clara batida atrapa aire y el azúcar la estabiliza. Según cómo entra el azúcar cambia todo: en crudo (francés) es ligero y se hornea; calentado al baño maría (suizo) queda denso y brillante; con almíbar a 118-121 °C (italiano) queda cocido, muy estable y se puede quemar con soplete.",
+  "what": "La clara batida atrapa aire y el azúcar la estabiliza. Según cómo entra el azúcar cambia todo: en crudo (francés) es ligero y se hornea; calentado al baño maría (suizo) queda denso y brillante; con almíbar a 118–121 °C (italiano) queda cocido, muy estable y se puede quemar con soplete.",
   "base": {
    "for": "Unos 400 g de merengue italiano",
    "items": [
@@ -253,7 +259,7 @@
    "steps": [
     "Cuece el agua con el azúcar del almíbar sin remover.",
     "Cuando el almíbar llegue a unos 114 °C, empieza a montar las claras con el resto del azúcar.",
-    "Al llegar a 118-121 °C, vierte el almíbar en hilo fino sobre las claras, sin tocar las varillas.",
+    "Al llegar a 118–121 °C, vierte el almíbar en hilo fino sobre las claras, sin tocar las varillas.",
     "Sigue batiendo a velocidad media hasta que el merengue esté tibio y brillante."
    ]
   },
@@ -261,16 +267,16 @@
    {
     "use": "Merengue francés (secar al horno)",
     "ratio": "2 partes de azúcar por 1 de clara",
-    "note": "Hornear a 90-100 °C hasta que esté seco."
+    "note": "Hornear a 90–100 °C hasta que esté seco."
    },
    {
     "use": "Merengue suizo",
-    "ratio": "2 partes de azúcar por 1 de clara, calentado a 60-70 °C",
+    "ratio": "2 partes de azúcar por 1 de clara, calentado a 60–70 °C",
     "note": "Para decorar y crema de mantequilla."
    },
    {
     "use": "Merengue italiano",
-    "ratio": "2 partes de azúcar por 1 de clara, almíbar a 118-121 °C",
+    "ratio": "2 partes de azúcar por 1 de clara, almíbar a 118–121 °C",
     "note": "Mousses, tartas de limón, quemar con soplete."
    }
   ],
@@ -299,7 +305,7 @@
    },
    {
     "p": "Se agrieta o se dora en el horno",
-    "fix": "Horno demasiado fuerte. Baja a 90-100 °C y alarga."
+    "fix": "Horno demasiado fuerte. Baja a 90–100 °C y alarga."
    }
   ],
   "history": "El merengue aparece en los recetarios europeos desde hace siglos; las tres formas clásicas se fijaron en la pastelería francesa y suiza.",
@@ -314,7 +320,10 @@
   "pro": "Prepara el italiano justo antes de montar mousses o decorar. El francés seco aguanta y se puede hacer en tandas.",
   "related": [
    "caramelo",
-   "crema-inglesa"
+   "crema-inglesa",
+   "pavlova-y-postres-de-merengue",
+   "macarons",
+   "souffle"
   ]
  },
  {
@@ -349,11 +358,11 @@
     ],
     [
      "Sal en escamas",
-     "3-5 g"
+     "3–5 g"
     ]
    ],
    "steps": [
-    "Carameliza el azúcar en seco a fuego medio, añadiéndolo por tandas, hasta color ámbar (unos 170-175 °C).",
+    "Carameliza el azúcar en seco a fuego medio, añadiéndolo por tandas, hasta color ámbar (unos 170–175 °C).",
     "Retira del fuego y añade la nata caliente poco a poco, con cuidado porque salta.",
     "Vuelve al fuego y deja que hierva un minuto hasta que todo esté disuelto.",
     "Fuera del fuego, añade la mantequilla y la sal."
@@ -367,17 +376,17 @@
    },
    {
     "use": "Punto de bola blanda (fondant, merengue italiano)",
-    "ratio": "115-121 °C",
+    "ratio": "115–121 °C",
     "note": "Al enfriar queda blando y maleable."
    },
    {
     "use": "Punto de caramelo duro",
-    "ratio": "145-155 °C",
+    "ratio": "145–155 °C",
     "note": "Quebradizo y transparente."
    },
    {
     "use": "Caramelo rubio a oscuro",
-    "ratio": "160-180 °C",
+    "ratio": "160–180 °C",
     "note": "Cuanto más oscuro, más amargo."
    }
   ],
@@ -385,7 +394,7 @@
    {
     "id": "merengues",
     "name": "Merengue italiano",
-    "note": "Con almíbar a 118-121 °C."
+    "note": "Con almíbar a 118–121 °C."
    }
   ],
   "keys": [
@@ -421,7 +430,10 @@
   "pro": "Termómetro de azúcar en el cazo y caramelo de nata en biberón para el pase.",
   "related": [
    "merengues",
-   "crema-inglesa"
+   "crema-inglesa",
+   "salsas-dulces",
+   "decoraciones-de-azucar-y-chocolate",
+   "turrones-y-pralines"
   ]
  },
  {
@@ -441,7 +453,7 @@
    "for": "Unos 500 g de ganache para rellenar",
    "items": [
     [
-     "Chocolate negro 60-70 %",
+     "Chocolate negro 60–70 %",
      "250 g"
     ],
     [
@@ -469,7 +481,7 @@
    {
     "use": "Glaseado brillante",
     "ratio": "1 parte de chocolate negro por 1 de nata",
-    "note": "Usar a 30-35 °C."
+    "note": "Usar a 30–35 °C."
    },
    {
     "use": "Relleno firme o trufa",
@@ -478,12 +490,12 @@
    },
    {
     "use": "Ganache montada",
-    "ratio": "1 de chocolate por 2-3 de nata, reposada en frío y montada",
+    "ratio": "1 de chocolate por 2–3 de nata, reposada en frío y montada",
     "note": "Ligera, para manga."
    },
    {
     "use": "Con chocolate con leche o blanco",
-    "ratio": "Aumenta el chocolate un 30-50 %",
+    "ratio": "Aumenta el chocolate un 30–50 %",
     "note": "Tienen menos cacao y cuajan menos."
    }
   ],
@@ -527,7 +539,10 @@
   "pro": "Pesa siempre y anota el chocolate exacto: cada marca y porcentaje cambia la textura.",
   "related": [
    "emulsiones",
-   "crema-inglesa"
+   "crema-inglesa",
+   "bombones-y-trufas",
+   "postres-de-chocolate",
+   "macarons"
   ]
  },
  {
@@ -579,7 +594,7 @@
     "Añade el huevo y une sin amasar más de lo necesario.",
     "Aplana, envuelve y reposa en frío al menos 1 hora.",
     "Estira entre papeles a 3 mm, forra el molde y vuelve a enfriar 20 minutos.",
-    "Hornea a 160-170 °C, con peso si va en blanco, hasta que esté dorada."
+    "Hornea a 160–170 °C, con peso si va en blanco, hasta que esté dorada."
    ]
   },
   "ratios": [
@@ -590,12 +605,12 @@
    },
    {
     "use": "Sablée dulce",
-    "ratio": "Harina 100, mantequilla 60, azúcar 35-40, huevo 20 (en peso)",
+    "ratio": "Harina 100, mantequilla 60, azúcar 35–40, huevo 20 (en peso)",
     "note": "Arenosa y fina."
    },
    {
     "use": "Horneado en blanco",
-    "ratio": "160-170 °C, 15-20 min con peso y 5-10 sin peso",
+    "ratio": "160–170 °C, 15–20 min con peso y 5–10 sin peso",
     "note": "Hasta dorar el fondo."
    }
   ],
@@ -638,7 +653,10 @@
   "pro": "Haz bloques grandes y congela en porciones. Forra tartaletas por cientos y hornéalas en blanco con antelación.",
   "related": [
    "crema-pastelera",
-   "ganache"
+   "ganache",
+   "tartas-de-fruta",
+   "tartas-de-frutos-secos",
+   "sable-y-galletas"
   ]
  },
  {
@@ -658,8 +676,8 @@
   "what": "La masa madre es un cultivo de levaduras y bacterias lácticas que viven en la harina. Alimentada con regularidad, hace subir el pan y le da acidez y aroma. Se lleva por hidratación (agua respecto a la harina): una madre líquida al 100 % es la más fácil de controlar en cocina.",
   "method": [
    "Mezcla 50 g de harina integral de centeno o trigo con 50 g de agua templada y tapa sin cerrar del todo.",
-   "Cada 24 horas, tira la mitad y alimenta con 50 g de harina y 50 g de agua. A los 5-10 días debe doblar su volumen de forma regular.",
-   "Cuando dobla en 4-8 horas a 24-26 °C y huele a yogur y fruta, está lista.",
+   "Cada 24 horas, tira la mitad y alimenta con 50 g de harina y 50 g de agua. A los 5–10 días debe doblar su volumen de forma regular.",
+   "Cuando dobla en 4–8 horas a 24–26 °C y huele a yogur y fruta, está lista.",
    "Para el pan, alimenta la víspera o unas horas antes y úsala en su pico, cuando está más alta.",
    "Guárdala en frío entre usos y aliméntala al menos una vez por semana."
   ],
@@ -667,16 +685,16 @@
    {
     "use": "Refresco habitual",
     "ratio": "1 de madre, 1 de harina, 1 de agua (en peso)",
-    "note": "Pico en 4-6 horas a 25 °C."
+    "note": "Pico en 4–6 horas a 25 °C."
    },
    {
     "use": "Refresco lento (para la noche)",
     "ratio": "1 de madre, 5 de harina, 5 de agua",
-    "note": "Pico en 10-12 horas."
+    "note": "Pico en 10–12 horas."
    },
    {
     "use": "Pan de masa madre",
-    "ratio": "15-25 % de madre sobre la harina, hidratación 68-78 %, 2 % de sal",
+    "ratio": "15–25 % de madre sobre la harina, hidratación 68–78 %, 2 % de sal",
     "note": "Ver la calculadora de panadero."
    }
   ],
@@ -697,7 +715,7 @@
   "errors": [
    {
     "p": "No sube",
-    "fix": "Frío o harina muy refinada. Lleva a 24-26 °C y usa integral unos días."
+    "fix": "Frío o harina muy refinada. Lleva a 24–26 °C y usa integral unos días."
    },
    {
     "p": "Huele a acetona",
@@ -719,7 +737,10 @@
   "pro": "Ten dos madres por si una falla y un horario fijo de refrescos. El descarte sirve para crackers y masas fritas.",
   "related": [
    "fermentacion-lactica",
-   "masa-quebrada"
+   "masa-quebrada",
+   "pan-y-focaccia",
+   "panettone",
+   "ensaimada"
   ]
  },
  {
@@ -738,7 +759,7 @@
   "summary": "Harina, huevo y amasado: proporciones según el uso, cómo estirarla y cocerla, y cómo trabajar la pasta rellena.",
   "what": "La pasta fresca es una masa firme de harina y huevo que se amasa hasta que está lisa y elástica, se deja reposar para que el gluten se relaje y se estira fina. Cuanta más yema, más color, sabor y ternura. Se cuece en muy poco tiempo en agua con sal abundante.",
   "base": {
-   "for": "Unos 500 g de masa (5-6 raciones)",
+   "for": "Unos 500 g de masa (5–6 raciones)",
    "items": [
     [
      "Harina de trigo duro o 00",
@@ -759,10 +780,10 @@
    ],
    "steps": [
     "Haz un volcán con la harina, pon los huevos en el centro y bátelos con un tenedor incorporando la harina poco a poco.",
-    "Amasa 8-10 minutos hasta que la masa esté lisa y elástica.",
+    "Amasa 8–10 minutos hasta que la masa esté lisa y elástica.",
     "Envuelve en film y deja reposar al menos 30 minutos a temperatura ambiente.",
     "Estira con rodillo o máquina, pasando de más grueso a más fino, enharinando lo justo.",
-    "Corta o rellena, y cuece en agua hirviendo con sal (10 g por litro) 1-3 minutos."
+    "Corta o rellena, y cuece en agua hirviendo con sal (10 g por litro) 1–3 minutos."
    ]
   },
   "ratios": [
@@ -773,12 +794,12 @@
    },
    {
     "use": "Pasta muy amarilla y tierna",
-    "ratio": "100 g de harina por 4-5 yemas (unos 70-80 g)",
+    "ratio": "100 g de harina por 4–5 yemas (unos 70–80 g)",
     "note": "Para cintas finas."
    },
    {
     "use": "Ración",
-    "ratio": "100-120 g de pasta fresca por persona",
+    "ratio": "100–120 g de pasta fresca por persona",
     "note": "80 g si es entrante."
    },
    {
@@ -826,7 +847,9 @@
   "pro": "Estira y corta por raciones pesadas antes del servicio; congela la pasta rellena en bandeja y cuécela sin descongelar.",
   "related": [
    "masa-quebrada",
-   "puntos-del-huevo"
+   "puntos-del-huevo",
+   "harinas-y-almidones",
+   "coccion-de-pasta-y-noquis"
   ]
  },
  {
@@ -850,22 +873,22 @@
    "Ajusta el dulzor: la base fría tiene que saber algo más dulce de lo que quieres, porque el frío apaga el sabor.",
    "Deja madurar la base en frío unas horas para que se hidrate y gane cuerpo.",
    "Mantécala en la heladora y pasa a congelar.",
-   "Para granizado, congela en bandeja y rasca con un tenedor cada 30-45 minutos."
+   "Para granizado, congela en bandeja y rasca con un tenedor cada 30–45 minutos."
   ],
   "ratios": [
    {
     "use": "Sorbete de fruta",
-    "ratio": "Unos 25-30 % de azúcar sobre el total",
+    "ratio": "Unos 25–30 % de azúcar sobre el total",
     "note": "Según el dulzor de la fruta."
    },
    {
     "use": "Helado de crema",
-    "ratio": "Unos 16-20 % de azúcar y 8-12 % de grasa",
+    "ratio": "Unos 16–20 % de azúcar y 8–12 % de grasa",
     "note": "Base de crema inglesa."
    },
    {
     "use": "Granizado",
-    "ratio": "Menos azúcar, 15-20 %",
+    "ratio": "Menos azúcar, 15–20 %",
     "note": "Cristales grandes."
    },
    {
@@ -914,12 +937,15 @@
    "Acompañamientos fríos de platos salados",
    "Granizados de verano"
   ],
-  "keep": "Congelado y tapado; mejor en pocos días, porque pierde textura.",
+  "keep": "A −18 °C, tapado con film a piel; mejor en pocos días, porque pierde textura. Si se ha descongelado, no se vuelve a congelar.",
   "pro": "Mantecar el mismo día o la víspera del servicio. Apunta la receta con los porcentajes para repetirla igual con otra fruta.",
   "related": [
    "crema-inglesa",
    "caramelo",
-   "contraste-y-equilibrio"
+   "contraste-y-equilibrio",
+   "helados-sin-maquina",
+   "helados-de-autor",
+   "coulis-y-geles-de-fruta"
   ]
  },
  {
@@ -936,7 +962,7 @@
   "summary": "La tarta de queso fresco y hierbabuena de la isla, sobre una masa fina perfumada con anís.",
   "what": "Una masa quebrada fina, con anís, que se rellena con queso fresco de cabra u oveja, huevo, azúcar y hojas de hierbabuena. El horno suave la deja cuajada pero temblorosa por dentro, con la superficie dorada. Es un postre de primavera y de Pascua: el queso tierno y la menta fresca son lo que la hace distinta de cualquier tarta de queso.\n\nEn una cocina de autor da mucho juego: el contraste entre lácteo, hierba fresca y anís se puede llevar a un helado, una espuma o una galleta.",
   "base": {
-   "for": "un molde de 24 cm (10-12 raciones)",
+   "for": "un molde de 24 cm (10–12 raciones)",
    "items": [
     [
      "Harina floja",
@@ -972,7 +998,7 @@
     ],
     [
      "Hojas de hierbabuena",
-     "12-15"
+     "12–15"
     ],
     [
      "Ralladura de limón",
@@ -984,7 +1010,7 @@
     "Estira fina (3 mm) y forra el molde, dejando el borde algo alto.",
     "Desmiga el queso con el azúcar, añade los huevos uno a uno y la ralladura, sin batir de más.",
     "Pica la hierbabuena justo antes y mézclala con el relleno; reserva unas hojas enteras para la superficie.",
-    "Rellena, pon las hojas enteras encima y hornea a 170 °C unos 40-50 minutos, hasta que el centro tiemble apenas.",
+    "Rellena, pon las hojas enteras encima y hornea a 170 °C unos 40–50 minutos, hasta que el centro tiemble apenas.",
     "Enfría en el molde y espolvorea azúcar glas al servir."
    ]
   },
@@ -1050,7 +1076,9 @@
    "cocina-ibicenca",
    "masa-quebrada",
    "hierbas-frescas",
-   "crema-pastelera"
+   "crema-pastelera",
+   "tarta-de-queso",
+   "quesos-de-las-islas"
   ]
  },
  {
@@ -1102,7 +1130,7 @@
     "Trocea la ensaimada en la fuente.",
     "Bate los huevos con el azúcar sin espumar y añade la leche colada, templada.",
     "Vierte sobre la ensaimada y deja que empape 15 minutos, apretando con una espátula.",
-    "Hornea al baño maría a 160 °C unos 45-55 minutos, hasta que cuaje.",
+    "Hornea al baño maría a 160 °C unos 45–55 minutos, hasta que cuaje.",
     "Espolvorea el azúcar y quémalo con soplete o en el gratinador justo antes de servir."
    ]
   },
@@ -1115,7 +1143,7 @@
    {
     "use": "Raciones individuales",
     "ratio": "Misma mezcla en moldes de 8 cm",
-    "note": "20-25 minutos de horno."
+    "note": "20–25 minutos de horno."
    },
    {
     "use": "Sin ensaimada",
@@ -1167,7 +1195,9 @@
    "cocina-ibicenca",
    "crema-inglesa",
    "caramelo",
-   "flao"
+   "flao",
+   "ensaimada",
+   "torrijas-y-postres-de-pan"
   ]
  },
  {
@@ -1260,7 +1290,7 @@
   ],
   "keys": [
    "Para orelletes, la masa muy fina: si queda gruesa, salen duras en vez de crujientes.",
-   "Aceite estable a 170-175 °C: si baja, absorben grasa.",
+   "Aceite estable a 170–175 °C: si baja, absorben grasa.",
    "Azúcar en caliente, para que se pegue.",
    "Los buñuelos, con la masa bien fermentada: es lo que los deja huecos."
   ],
@@ -1290,7 +1320,9 @@
    "fritura",
    "cocina-ibicenca",
    "deshidratados-y-crujientes",
-   "flao"
+   "flao",
+   "galletas-de-aceite",
+   "pasta-choux"
   ]
  },
  {
@@ -1309,26 +1341,26 @@
   "summary": "Fundir, enfriar y volver a calentar a la temperatura exacta para que el chocolate quede brillante y cruja.",
   "what": "La manteca de cacao puede cristalizar de varias formas, y solo una da un chocolate brillante, firme y que cruje al partirlo. Templar es llevar el chocolate a esa forma: se funde del todo, se enfría para que empiecen los cristales buenos y se sube un poco para quitar los malos.\n\nSe trabaja con cobertura (chocolate con más manteca de cacao), que es más fluida y se templa mejor.",
   "method": [
-   "Funde la cobertura troceada a 45-50 °C, al baño maría o en microondas a ratos cortos.",
-   "Método de siembra: añade un 25-30 % de cobertura sin fundir, en callets, y remueve hasta que baje a la temperatura de trabajo.",
+   "Funde la cobertura troceada a 45–50 °C, al baño maría o en microondas a ratos cortos.",
+   "Método de siembra: añade un 25–30 % de cobertura sin fundir, en callets, y remueve hasta que baje a la temperatura de trabajo.",
    "Método de mármol: vuelca dos tercios en mármol, extiende y recoge hasta que espese, y mezcla con el resto.",
-   "Comprueba: una tira de papel mojada en chocolate debe endurecer brillante en 3-5 minutos a temperatura ambiente.",
+   "Comprueba: una tira de papel mojada en chocolate debe endurecer brillante en 3–5 minutos a temperatura ambiente.",
    "Trabaja manteniendo la temperatura: si baja, unos segundos de calor suave."
   ],
   "ratios": [
    {
     "use": "Chocolate negro",
-    "ratio": "Fundir a 45-50 °C, trabajar a 31-32 °C",
+    "ratio": "Fundir a 45–50 °C, trabajar a 31–32 °C",
     "note": "Según el fabricante."
    },
    {
     "use": "Chocolate con leche",
-    "ratio": "Fundir a 40-45 °C, trabajar a 29-30 °C",
+    "ratio": "Fundir a 40–45 °C, trabajar a 29–30 °C",
     "note": ""
    },
    {
     "use": "Chocolate blanco",
-    "ratio": "Fundir a 40 °C, trabajar a 28-29 °C",
+    "ratio": "Fundir a 40 °C, trabajar a 28–29 °C",
     "note": "Muy sensible al calor."
    }
   ],
@@ -1372,13 +1404,16 @@
    "Bañados",
    "Crujientes de chocolate"
   ],
-  "keep": "Cobertura en lugar fresco y seco, a 15-18 °C, lejos de olores.",
+  "keep": "Cobertura en lugar fresco y seco, a 15–18 °C, lejos de olores.",
   "pro": "Templa por la mañana en un baño de mantenimiento; ten siempre callets para corregir la temperatura.",
   "related": [
    "ganache",
    "caramelo",
    "almendra",
-   "helados-y-sorbetes"
+   "helados-y-sorbetes",
+   "bombones-y-trufas",
+   "postres-de-chocolate",
+   "decoraciones-de-azucar-y-chocolate"
   ]
  },
  {
@@ -1426,7 +1461,7 @@
     "Envuelve la mantequilla con la masa y séllala.",
     "Estira en rectángulo (tres veces más largo que ancho) y dobla en tres: es una vuelta sencilla. Gira 90°.",
     "Haz dos vueltas, reposa 30 minutos en frío, y repite hasta seis vueltas.",
-    "Estira, corta y hornea a 200-210 °C hasta que esté dorado y ligero por dentro."
+    "Estira, corta y hornea a 200–210 °C hasta que esté dorado y ligero por dentro."
    ]
   },
   "ratios": [
@@ -1488,7 +1523,9 @@
    "masa-quebrada",
    "crema-pastelera",
    "caramelo",
-   "masa-madre"
+   "masa-madre",
+   "tartas-de-fruta",
+   "masas-laminadas-fermentadas"
   ]
  },
  {
@@ -1531,11 +1568,11 @@
     ]
    ],
    "steps": [
-    "Bate los huevos y el azúcar al baño maría hasta 40-45 °C.",
+    "Bate los huevos y el azúcar al baño maría hasta 40–45 °C.",
     "Fuera del fuego, monta a velocidad alta hasta que triplique y haga cinta al caer.",
     "Tamiza la harina en dos o tres veces e incorpórala con espátula, con movimientos envolventes.",
     "Si lleva mantequilla, mézclala antes con un poco de la masa y vuelve a incorporar.",
-    "Hornea a 175-180 °C unos 25-30 minutos, sin abrir el horno los primeros 15.",
+    "Hornea a 175–180 °C unos 25–30 minutos, sin abrir el horno los primeros 15.",
     "Desmolda templado y enfría en rejilla."
    ]
   },
@@ -1547,7 +1584,7 @@
    },
    {
     "use": "Plancha para enrollar",
-    "ratio": "La misma masa, 1 cm de grosor, 210-220 °C 7-9 minutos",
+    "ratio": "La misma masa, 1 cm de grosor, 210–220 °C 7–9 minutos",
     "note": "Enrollar en caliente."
    },
    {
@@ -1602,7 +1639,9 @@
    "merengues",
    "crema-pastelera",
    "espumas-con-sifon",
-   "ganache"
+   "ganache",
+   "bizcochos-humedos",
+   "tiramisu-y-mascarpone"
   ]
  },
  {
@@ -1834,7 +1873,7 @@
     "note": "La misma base sin almidón y sin cuajar: queda líquida, como salsa."
    },
    {
-    "id": null,
+    "id": "postres-clasicos-espanoles",
     "name": "Tocino de cielo",
     "note": "Solo yemas y almíbar a punto de hebra, cuajado al baño maría; mucho más denso y dulce."
    },
@@ -1917,7 +1956,7 @@
      "450 g"
     ],
     [
-     "Yemas (opcional, más cremosa)",
+     "Yemas pasteurizadas (opcional, más cremosa)",
      "40 g"
     ],
     [
@@ -1977,7 +2016,8 @@
    "La temperatura de la base decide el resultado; usa termómetro.",
    "Primero aligera con un poco de nata, luego envuelve el resto.",
    "En el cremoso, túrmix al fondo y sin aire: la textura lisa es lo que lo define.",
-   "La gelatina se pesa: cada hoja pesa unos 2 g, pero cambia según la marca."
+   "La gelatina se pesa: cada hoja pesa unos 2 g, pero cambia según la marca.",
+   "Si añades yema a una mousse que no se cuece, usa yema pasteurizada."
   ],
   "errors": [
    {
@@ -2503,7 +2543,7 @@
    {
     "id": "merengues",
     "name": "Merengue seco",
-    "note": "Merengue francés extendido fino y secado a 80–90 °C; crujiente y muy ligero."
+    "note": "Merengue francés extendido fino y secado a 90–100 °C; crujiente y muy ligero."
    },
    {
     "id": "sable-y-galletas",
@@ -2511,7 +2551,7 @@
     "note": "Mantequilla, azúcar, harina y almendra desmenuzados y horneados sueltos."
    },
    {
-    "id": null,
+    "id": "turrones-y-pralines",
     "name": "Praliné",
     "note": "Crocante triturado hasta pasta; sirve para cremas y rellenos."
    }
@@ -2855,7 +2895,7 @@
     ],
     [
      "Agar en polvo (para gel fluido)",
-     "8–10 g"
+     "3–5 g"
     ],
     [
      "Sal",
@@ -2878,7 +2918,7 @@
    },
    {
     "use": "Gel fluido para puntear",
-    "ratio": "0,8–1 % de agar sobre el puré",
+    "ratio": "0,3–0,5 % de agar sobre el puré",
     "note": "Hervir 1–2 minutos; cuaja por debajo de 40 °C."
    },
    {
@@ -6732,7 +6772,7 @@
     ]
    ],
    "steps": [
-    "Haz un caramelo en seco con el azúcar (y la glucosa) a fuego medio, hasta color ámbar oscuro, a 175–180 °C.",
+    "Haz un caramelo en seco con el azúcar (y la glucosa) a fuego medio, hasta color ámbar oscuro, a 170–175 °C.",
     "Fuera del fuego, añade la nata caliente en tres veces, con cuidado porque salpica.",
     "Vuelve al fuego y cuece 1–2 minutos hasta que todo esté disuelto y llegue a 105–108 °C si la quieres más espesa.",
     "Añade la mantequilla y la sal fuera del fuego.",
@@ -6743,7 +6783,7 @@
    {
     "use": "Caramelo salado",
     "ratio": "Azúcar y nata a partes iguales, 25 % de mantequilla y 1–2 % de sal",
-    "note": "Caramelo a 175–180 °C."
+    "note": "Caramelo a 170–175 °C."
    },
    {
     "use": "Toffee",
