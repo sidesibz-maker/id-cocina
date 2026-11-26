@@ -68,6 +68,7 @@ export function render(params = []) {
  return '<header class="page-head"><h1>' + esc(t('Entrenar', 'Train')) + '</h1><p>' + esc(t('Cinco minutos al día con lo que un buen cocinero sabe de memoria: proporciones, fallos y arreglos, recetas base y temperaturas. Lo que fallas vuelve mañana; lo que sabes, cada vez más tarde.', 'Five minutes a day with what a good cook knows by heart: ratios, faults and fixes, base recipes and temperatures. What you miss comes back tomorrow; what you know, later and later.')) + '</p></header>' +
   '<div class="stats"><div class="stat"><strong>' + s.known + '</strong><span>' + esc(t('tarjetas que ya dominas', 'cards you master')) + '</span></div><div class="stat"><strong>' + s.seen + ' / ' + s.total + '</strong><span>' + esc(t('vistas alguna vez', 'seen at least once')) + '</span></div><div class="stat"><strong>' + s.due + '</strong><span>' + esc(t('para repasar hoy', 'to review today')) + '</span></div><div class="stat"><strong>' + (d?.streak || 0) + '</strong><span>' + esc(t('días seguidos entrenando', 'days in a row')) + '</span></div></div>' +
   (path ? '<p class="tronly">' + esc(t('Examen de la ruta «', 'Test on the path “') + (en() ? path[2] : path[1]) + t('»: tarjetas de todas sus fichas. ', '”: cards from all its entries. ')) + '<a href="#/entrenar">' + esc(t('Volver a todos los temas', 'Back to all topics')) + '</a></p>' : focus ? '<p class="tronly">' + esc(t('Repasando solo la ficha ', 'Reviewing only the entry ')) + '<a href="#/biblioteca/' + esc(focus.id) + '">' + esc(focus.name) + '</a>. <a href="#/entrenar">' + esc(t('Volver a todos los temas', 'Back to all topics')) + '</a></p>' :
+  masteryHtml() +
   '<div class="seg tcats" role="group" aria-label="' + esc(t('Tema', 'Topic')) + '">' + CATS.map(c => '<button type="button" class="seg-btn' + (c[0] === cat ? ' active' : '') + '" data-cat="' + c[0] + '" aria-pressed="' + (c[0] === cat) + '">' + esc(en() ? c[2] : c[1]) + '</button>').join('') + '</div>') +
   '<div id="trCard" aria-live="polite">' + cardHtml() + '</div>' + mineHtml();
 }
@@ -78,6 +79,12 @@ function mineHtml() {
   '<form id="trNew" class="card trnew"><div class="tfield"><label for="trQ">' + esc(t('Pregunta', 'Question')) + '</label><input id="trQ" maxlength="300" autocomplete="off" placeholder="' + esc(t('p. ej. ¿A cuántos grados saco el cordero lechal?', 'e.g. At what temperature do I take out the suckling lamb?')) + '"></div>' +
   '<div class="tfield"><label for="trA">' + esc(t('Respuesta', 'Answer')) + '</label><textarea id="trA" rows="3" maxlength="2000" data-voice></textarea></div><div class="row-actions"><button type="submit" class="btn primary">' + icon('plus') + esc(t('Añadir tarjeta', 'Add card')) + '</button></div></form>' +
   (list.length ? '<details class="trmine"><summary>' + esc(list.length === 1 ? t('1 tarjeta tuya', '1 card of yours') : list.length + t(' tarjetas tuyas', ' cards of yours')) + '</summary><ul class="plain">' + list.map(c => '<li><strong>' + esc(c.q) + '</strong><br>' + esc(c.a) + ' <button type="button" class="linkbtn" data-trash-card="' + esc(c.id) + '">' + esc(t('A la papelera', 'To the bin')) + '</button></li>').join('') + '</ul></details>' : '') + '</section>';
+}
+// Cuánto dominas de cada tema: tarjetas en la caja 4 o más, sobre el total del tema.
+function masteryHtml() {
+ const p = progress(), all = cards(), rows = CATS.filter(c => c[0] !== 'todo').map(c => { const list = all.filter(x => x.cat === c[0]), known = list.filter(x => (p[x.id]?.box || 0) >= 4).length; return [c, list.length, known]; }).filter(r => r[1]);
+ if (!Object.keys(p).length) return '';
+ return '<details class="tmastery"><summary>' + esc(t('Cuánto dominas de cada tema', 'How much of each topic you master')) + '</summary><ul>' + rows.map(([c, n, k]) => '<li><span>' + esc(en() ? c[2] : c[1]) + '</span><span class="cook-bar" aria-hidden="true"><i style="width:' + (k / n * 100).toFixed(0) + '%"></i></span><span>' + esc(k + t(' de ', ' of ') + n) + '</span></li>').join('') + '</ul></details>';
 }
 function cardHtml() {
  const s = session;

@@ -61,7 +61,7 @@ export function render(params) {
  if (!r) return '<a class="back" href="#/libreta">' + icon('left') + esc(t('Libreta', 'Notebook')) + '</a><div class="empty">' + icon('book') + '<h3>' + esc(t('No encuentro esta receta', 'I cannot find this recipe')) + '</h3><p>' + esc(t('Puede que se haya movido o que no tenga ingredientes ni pasos.', 'It may have moved, or it has no ingredients or steps.')) + '</p></div>';
  const key = params.join('/');
  if (state.key !== key) state = {key, step: 0, people: r.base, lock: state.lock, done: new Set()};
- return '<div class="cook"><header class="cook-head"><a class="back" href="' + esc(r.back) + '">' + icon('left') + esc(t('Salir del modo cocina', 'Leave cook mode')) + '</a><h1>' + esc(r.name) + '</h1>' +
+ return '<div class="cook"><header class="cook-head"><a class="back" href="' + esc(r.back) + '">' + icon('left') + esc(t('Salir del modo cocina', 'Leave cook mode')) + '</a><h1>' + esc(r.name) + '</h1>' + (document.fullscreenEnabled ? '<button type="button" class="linkbtn cook-full" data-full aria-pressed="' + !!document.fullscreenElement + '">' + esc(document.fullscreenElement ? t('Salir de pantalla completa', 'Exit full screen') : t('Pantalla completa', 'Full screen')) + '</button>' : '') +
   '<div class="cook-scale"><label for="cookN">' + esc(t('Voy a hacer', 'I am making')) + '</label><div class="tinput"><input id="cookN" inputmode="decimal" value="' + esc(nice(state.people)) + '" autocomplete="off"><span>' + esc(r.unit) + '</span></div>' + (r.base !== 1 || r.unit ? '<small>' + esc(t('La receta es para ', 'The recipe is for ') + nice(r.base) + ' ' + r.unit) + '</small>' : '') + '</div>' + (r.note ? '<p class="fine">' + esc(r.note) + '</p>' : '') + '</header>' +
   '<div class="cook-body"><section class="cook-ings" aria-label="' + esc(t('Ingredientes', 'Ingredients')) + '"><h2>' + esc(t('Ingredientes', 'Ingredients')) + '</h2><div id="cookIngs">' + ings(r) + '</div></section>' +
   '<section class="cook-steps" aria-label="' + esc(t('Pasos', 'Steps')) + '"><div id="cookStep">' + step(r) + '</div></section></div></div>';
@@ -102,6 +102,8 @@ export function mount(root, params) {
   const g = e.target.closest('[data-go]'), s = e.target.closest('[data-step]'), tm = e.target.closest('[data-timer]');
   if (g) { state.step += Number(g.dataset.go); paintStep(); $('.cook-text', root)?.focus?.(); }
   if (s) { state.step = Number(s.dataset.step); paintStep(); }
+  const fb = e.target.closest('[data-full]');
+  if (fb) { (document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen()).catch(() => {}).finally(() => setTimeout(() => { if (!fb.isConnected) return; const on = !!document.fullscreenElement; fb.setAttribute('aria-pressed', on); fb.textContent = on ? t('Salir de pantalla completa', 'Exit full screen') : t('Pantalla completa', 'Full screen'); }, 150)); return; }
   if (e.target.closest('[data-read]')) { state.read = !state.read; if (!state.read && canSpeak()) speechSynthesis.cancel(); paintStep(); $('[data-read]', root)?.focus(); return; }
   if (tm) addTimer(r.name + ': ' + (r.steps[state.step]?.text || '').slice(0, 30), Number(tm.dataset.timer));
  });
@@ -111,7 +113,7 @@ export function mount(root, params) {
  const keys = e => { if (/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName)) return; if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); state.step = Math.min(r.steps.length - 1, state.step + 1); paintStep(); } if (e.key === 'ArrowLeft') { state.step = Math.max(0, state.step - 1); paintStep(); } };
  document.addEventListener('keydown', keys);
  document.documentElement.classList.add('cooking');
- return () => { document.removeEventListener('visibilitychange', vis); document.removeEventListener('keydown', keys); document.documentElement.classList.remove('cooking'); try { state.lock?.release(); } catch {} try { if (canSpeak()) speechSynthesis.cancel(); } catch {} state.lock = null; };
+ return () => { document.removeEventListener('visibilitychange', vis); document.removeEventListener('keydown', keys); document.documentElement.classList.remove('cooking'); try { state.lock?.release(); } catch {} try { if (canSpeak()) speechSynthesis.cancel(); } catch {} try { if (document.fullscreenElement) document.exitFullscreen(); } catch {} state.lock = null; };
 }
 export const cookLink = (kind, id) => '#/cocinar/' + kind + '/' + encodeURIComponent(id);
 export {$$, en};

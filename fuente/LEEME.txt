@@ -160,3 +160,10 @@ LO NUEVO PARA TU OFICIO (NOVIEMBRE 2026)
  - Laboratorio: buscar en el cuaderno de chispas y filtrar por «Por desarrollar» o «Ya son plato».
  - Trayectoria → «Por descubrir»: libros, restaurantes, cocineros, stages y viajes; al hacerlos, apuntas qué te llevas.
  - Ajustes → Contraste: «Alto», de día y de noche.
+ - Biblioteca: 137 fichas. Nuevas: quesos en cocina, cítricos, tomate, gelificantes y espesantes, esferificación,
+   y papillote y vapor. Rutas nuevas: «Técnicas de vanguardia» y «Huerta y fruta». El diccionario tiene 90 términos.
+ - En cada estante, cuántas fichas has leído. En cada ficha, «Compartir» (menú del móvil o copiar).
+ - Laboratorio: «Tablero de inspiración» con las chispas que tienen foto, y «Compartir» en cada chispa.
+ - Entrenar: «Cuánto dominas de cada tema».
+ - Diario: cómo han ido tus servicios los últimos 30 días, con un gráfico de barras.
+ - Modo cocina: «Pantalla completa».

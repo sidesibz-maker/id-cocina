@@ -94,6 +94,13 @@ const vis = await page.locator('.labsp:not([hidden])').count();
 ok(vis >= 1 && vis < await page.locator('.labsp').count(), 'buscar en las chispas no filtra');
 await page.fill('#spQ', ''); await page.click('[data-spf=dish]'); await wait(150);
 ok(await page.locator('.labsp:not([hidden]):not(.is-dish)').count() === 0, 'el filtro «ya son plato» enseña otras');
+// Tablero de inspiración y compartir una chispa
+await page.evaluate(() => { const v = JSON.parse(localStorage.getItem('id-cocina-v1')); v.docs['chispa:foto'] = {id: 'chispa:foto', type: 'chispa', text: 'Hoja de higuera al sol', image: 'img/chispas/prueba.jpg', created_at: '2026-11-01T10:00:00Z', updated_at: '2026-11-01T10:00:00Z', version: 1}; localStorage.setItem('id-cocina-v1', JSON.stringify(v)); });
+await page.reload(); await wait(800); await go('#/laboratorio'); await page.waitForSelector('.labboard-wrap');
+ok(await page.locator('.labboard figure').count() >= 1, 'el tablero de inspiración no enseña las chispas con foto');
+await page.evaluate(() => { window.__shared = null; navigator.share = async d => { window.__shared = d; }; });
+await page.click('[data-sp-share="chispa:foto"]'); await wait(200);
+ok((await page.evaluate(() => window.__shared?.text || '')) === 'Hoja de higuera al sol', 'compartir una chispa no manda su texto');
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();
 if (fails.length) { console.error('FALLOS en el laboratorio:\n - ' + fails.join('\n - ')); process.exit(1); }

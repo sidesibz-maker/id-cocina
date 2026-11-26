@@ -2088,5 +2088,279 @@
    "pato",
    "escabeche"
   ]
+ },
+ {
+  "id": "quesos-en-cocina",
+  "name": "Quesos en cocina",
+  "name_en": "Cooking with cheese",
+  "cat": "producto",
+  "group": "Lácteos",
+  "aka": [
+   "queso",
+   "fundir queso",
+   "queso curado",
+   "queso fresco",
+   "costra de queso",
+   "fondue"
+  ],
+  "summary": "Fresco, curado o azul: cómo funde cada queso, cómo se usa su sal y su umami y qué hacer con las cortezas.",
+  "what": "El queso cambia mucho con la curación. El fresco tiene agua y acidez: aporta frescor y cremosidad, pero no funde bien. El semicurado funde y se estira. El muy curado (parmesano, manchego viejo, mahonés añejo) casi no funde: se ralla y aporta sal y umami. Los azules aportan potencia y se usan en poca cantidad.\n\nLas cortezas de los quesos curados (sin cera) dan un caldo con mucho sabor para risottos, sopas o salsas.",
+  "method": [
+   "Para fundir, ralla o corta fino y añade fuera del hervor, a fuego suave: el calor fuerte separa la grasa.",
+   "Para una salsa lisa, liga con un almidón (bechamel, maicena) o con citrato sódico (unos 3 g por 100 g de queso).",
+   "Para gratinar, mezcla un queso que funde con uno curado que da sabor y dorado.",
+   "Las cortezas, en el caldo o la salsa 30-60 minutos y fuera.",
+   "Sirve los quesos de tabla atemperados, sacados 30-60 minutos antes."
+  ],
+  "ratios": [
+   {
+    "use": "Salsa de queso lisa",
+    "ratio": "100 g de queso, 100 ml de líquido, 3 g de citrato sódico",
+    "note": "Fundir a fuego suave y triturar."
+   },
+   {
+    "use": "Caldo de cortezas",
+    "ratio": "100 g de cortezas por litro",
+    "note": "30-60 minutos a fuego suave."
+   },
+   {
+    "use": "Crujiente de queso",
+    "ratio": "Queso curado rallado en capas finas, horno a 180 °C 6-8 minutos",
+    "note": "Enfriar plano."
+   }
+  ],
+  "variants": [
+   {
+    "id": "mornay",
+    "name": "Salsa Mornay",
+    "note": "La bechamel con queso."
+   },
+   {
+    "id": "flao",
+    "name": "Flaó",
+    "note": "El queso fresco en un postre de la isla."
+   }
+  ],
+  "keys": [
+   "Calor suave para fundir.",
+   "El queso curado sala: ajusta la sal al final.",
+   "Las cortezas son sabor: guárdalas en el congelador.",
+   "Un queso de tabla frío no huele ni sabe: atempéralo.",
+   "Alérgeno: leche."
+  ],
+  "errors": [
+   {
+    "p": "Salsa granulada o con grasa separada",
+    "fix": "Demasiado calor. Baja el fuego, añade un chorro de líquido frío y tritura; para la próxima, citrato o almidón."
+   },
+   {
+    "p": "No funde",
+    "fix": "Queso muy curado o muy fresco. Mézclalo con uno semicurado."
+   },
+   {
+    "p": "Gratinado gomoso",
+    "fix": "Demasiado queso que estira. Añade uno curado y menos cantidad."
+   }
+  ],
+  "history": "Cada región mediterránea tiene sus quesos y sus usos en cocina; en Menorca, el mahonés se ralla como en Italia el parmesano.",
+  "uses": [
+   "Salsas",
+   "Gratinados",
+   "Crujientes",
+   "Caldos de corteza",
+   "Postres"
+  ],
+  "keep": "Envuelto en papel encerado, no en film, en la parte menos fría de la cámara.",
+  "pro": "Cortezas congeladas para caldos; crujientes de queso hechos en tanda y guardados en hermético.",
+  "related": [
+   "mornay",
+   "bechamel",
+   "umami-y-fondo",
+   "flao"
+  ]
+ },
+ {
+  "id": "citricos",
+  "name": "Cítricos",
+  "name_en": "Citrus fruit",
+  "cat": "producto",
+  "group": "Fruta",
+  "aka": [
+   "limón",
+   "naranja",
+   "lima",
+   "pomelo",
+   "yuzu",
+   "naranja amarga",
+   "piel de cítrico",
+   "limón encurtido"
+  ],
+  "summary": "Zumo, piel y pulpa: tres sabores distintos en una misma fruta, y el limón encurtido en sal.",
+  "what": "Un cítrico tiene tres partes que aportan cosas distintas. El zumo da acidez y algo de dulzor. La piel (la parte de color, sin lo blanco) guarda los aceites esenciales: es puro aroma, sin acidez. La parte blanca es amarga. La pulpa, en gajos limpios (a vivo), da frescor y textura.\n\nEl invierno es su temporada en la isla, y los limones, naranjas y mandarinas de huerto son una despensa de aroma.",
+  "method": [
+   "Para ralladura, ralla solo la parte de color con un rallador fino, justo antes de usar.",
+   "Para gajos a vivo, corta las dos tapas, quita la piel y lo blanco con cuchillo y saca cada gajo entre las membranas.",
+   "Para piel confitada, blanquea la piel en tiras 2-3 veces y cuécela en almíbar suave hasta que esté traslúcida.",
+   "Para limón encurtido en sal, corta en cruz, rellena de sal (un 10 % del peso), aprieta en un tarro y cubre con su zumo: 3-4 semanas.",
+   "Añade el zumo al final de la cocción: el calor apaga su frescor."
+  ],
+  "ratios": [
+   {
+    "use": "Limón encurtido en sal",
+    "ratio": "10 % de sal sobre el peso del limón",
+    "note": "3-4 semanas a temperatura ambiente, después en frío."
+   },
+   {
+    "use": "Piel confitada",
+    "ratio": "Almíbar de 1 parte de azúcar por 1 de agua",
+    "note": "Tras blanquear la piel 2-3 veces."
+   },
+   {
+    "use": "Aliño cítrico",
+    "ratio": "1 parte de zumo por 3 de aceite",
+    "note": "Con ralladura y sal."
+   }
+  ],
+  "variants": [
+   {
+    "id": "ponzu-y-salsas-citricas",
+    "name": "Ponzu",
+    "note": "El cítrico con soja y dashi."
+   },
+   {
+    "id": "acidez-en-cocina",
+    "name": "La acidez",
+    "note": "Cómo usar el ácido en un plato."
+   }
+  ],
+  "keys": [
+   "La ralladura es aroma; el zumo, acidez.",
+   "Nunca lo blanco: amarga.",
+   "El zumo, al final.",
+   "Mezclar cítricos da complejidad.",
+   "El limón encurtido es sal, ácido y perfume a la vez."
+  ],
+  "errors": [
+   {
+    "p": "Amargo",
+    "fix": "Se ha rallado o usado parte blanca. Ralla solo la capa de color."
+   },
+   {
+    "p": "Pierde el aroma",
+    "fix": "Ralladura hecha con antelación o zumo cocido. Hazlo al momento y añádelo al final."
+   },
+   {
+    "p": "Leche o nata cortada",
+    "fix": "El ácido corta los lácteos calientes. Añádelo fuera del fuego y poco a poco."
+   }
+  ],
+  "history": "Los cítricos llegaron de Asia al Mediterráneo en distintas épocas; la naranja amarga entró con los árabes y la dulce, siglos después. Hoy son parte del paisaje de la isla.",
+  "uses": [
+   "Aliños",
+   "Curados y crudos",
+   "Postres",
+   "Confitados",
+   "Encurtidos"
+  ],
+  "keep": "Enteros, en frío una a dos semanas. Ralladura congelada en aceite.",
+  "pro": "Exprime y ralla del día; congela el zumo sobrante en cubitos para salsas.",
+  "related": [
+   "acidez-en-cocina",
+   "ponzu-y-salsas-citricas",
+   "encurtidos-rapidos",
+   "ceviche-y-crudos",
+   "cocina-ibicenca"
+  ]
+ },
+ {
+  "id": "tomate",
+  "name": "Tomate",
+  "name_en": "Tomatoes",
+  "cat": "producto",
+  "group": "Huerta",
+  "aka": [
+   "tomate de colgar",
+   "tomate de ramellet",
+   "agua de tomate",
+   "tomate seco",
+   "tomate confitado",
+   "tomate en crudo"
+  ],
+  "summary": "Del tomate de colgar al agua de tomate: cómo sacar todo su sabor, crudo, asado, confitado o seco.",
+  "what": "Un buen tomate maduro tiene azúcar, acidez y mucho umami, sobre todo en la parte gelatinosa de las semillas. En crudo pide sal un rato antes y buen aceite. Asado o confitado concentra el dulzor; seco, se vuelve casi un condimento. El agua de tomate, que se saca colando la pulpa triturada sin apretar, es transparente y con todo su sabor.\n\nEn la isla, el tomate de colgar (de ramellet) se conserva colgado todo el invierno y es la base del pa amb oli.",
+  "method": [
+   "En crudo: corta, sala 10 minutos antes de servir y termina con aceite.",
+   "Para pelar, haz un corte en cruz, escalda 10-15 segundos y pasa a agua con hielo.",
+   "Agua de tomate: tritura con sal, cuelga en un paño en frío 12 horas sin apretar y recoge el líquido claro.",
+   "Confitado: mitades con ajo y tomillo, aceite y sal, horno a 100-110 °C 2-3 horas.",
+   "Seco: mitades saladas a 70-80 °C con ventilador 6-10 horas, o al sol con cuidado."
+  ],
+  "ratios": [
+   {
+    "use": "Agua de tomate",
+    "ratio": "1 kg de tomate maduro da 400-600 ml",
+    "note": "Con 1 % de sal antes de colgar."
+   },
+   {
+    "use": "Tomate confitado",
+    "ratio": "100-110 °C, 2-3 horas",
+    "note": "Cubierto a medias de aceite."
+   },
+   {
+    "use": "Tomate seco",
+    "ratio": "70-80 °C, 6-10 horas",
+    "note": "Según grosor; flexible, no crujiente."
+   }
+  ],
+  "variants": [
+   {
+    "id": "salsa-de-tomate",
+    "name": "Salsa de tomate",
+    "note": "La salsa madre."
+   },
+   {
+    "id": "sofrito",
+    "name": "Sofrito",
+    "note": "El tomate como base."
+   }
+  ],
+  "keys": [
+   "Nunca en la nevera si está entero y maduro: pierde aroma.",
+   "Sal un rato antes en crudo.",
+   "La gelatina de las semillas es la parte con más sabor.",
+   "Mezclar variedades da un plato más interesante.",
+   "El agua de tomate es una base de caldos fríos y aliños."
+  ],
+  "errors": [
+   {
+    "p": "Insípido",
+    "fix": "Tomate fuera de temporada o de nevera. Cámbialo por confitado o asado, que concentra."
+   },
+   {
+    "p": "Agua de tomate turbia",
+    "fix": "Se ha apretado el paño. Deja que gotee solo."
+   },
+   {
+    "p": "Confitado deshecho",
+    "fix": "Horno fuerte. Baja a 100 °C."
+   }
+  ],
+  "history": "El tomate llegó de América en el siglo XVI y hoy es inseparable de la cocina mediterránea. En las islas, el tomate de colgar es una forma tradicional de tenerlo todo el año.",
+  "uses": [
+   "Ensaladas",
+   "Pa amb oli",
+   "Caldos fríos",
+   "Salsas",
+   "Confitados y secos"
+  ],
+  "keep": "Maduro, a temperatura ambiente; cortado, en frío y del día.",
+  "pro": "En temporada, confita y seca en tanda para el invierno. Agua de tomate congelada en porciones.",
+  "related": [
+   "salsa-de-tomate",
+   "sofrito",
+   "umami-y-fondo",
+   "cocina-ibicenca",
+   "deshidratados-y-crujientes"
+  ]
  }
 ]

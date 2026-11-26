@@ -1681,5 +1681,281 @@
    "maduracion-de-carne",
    "ponzu-y-salsas-citricas"
   ]
+ },
+ {
+  "id": "gelificantes-y-espesantes",
+  "name": "Gelificantes y espesantes",
+  "name_en": "Gelling agents and thickeners",
+  "cat": "tecnicas",
+  "group": "Vanguardia",
+  "aka": [
+   "agar",
+   "gelatina",
+   "goma xantana",
+   "pectina",
+   "gellan",
+   "kuzu",
+   "texturizantes"
+  ],
+  "summary": "Gelatina, agar, xantana, pectina: qué hace cada uno, a qué temperatura y en qué proporción.",
+  "what": "Cada texturizante tiene su carácter. La gelatina da geles tiernos que se funden en boca (por debajo de 35 °C), pero no aguanta el calor. El agar da geles firmes y quebradizos que aguantan hasta unos 80 °C: sirven para platos calientes. La goma xantana espesa en frío y en caliente sin cocción, con muy poca cantidad. La pectina gelifica con azúcar y ácido (mermeladas) o con calcio.\n\nLa herramienta de ligar en la sección Herramientas calcula las cantidades.",
+  "method": [
+   "Gelatina en hojas: hidrata en agua fría 5 minutos, escurre y disuelve en el líquido caliente (sin hervir). Cuaja en frío en unas horas.",
+   "Agar: dispersa en el líquido frío, lleva a hervor 1-2 minutos y cuaja al bajar de unos 40 °C, en minutos.",
+   "Xantana: espolvorea sobre el líquido mientras trituras; espesa al momento.",
+   "Pectina: mézclala antes con parte del azúcar para que no haga grumos y cuece con la fruta.",
+   "Pesa siempre con báscula de precisión: un gramo cambia el resultado."
+  ],
+  "ratios": [
+   {
+    "use": "Gelatina, gel tierno",
+    "ratio": "1-1,5 % (10-15 g por litro)",
+    "note": "Más alta si se desmolda."
+   },
+   {
+    "use": "Agar, gel firme",
+    "ratio": "0,5-1 % (5-10 g por litro)",
+    "note": "Menos para fluidos triturados (gel fluido)."
+   },
+   {
+    "use": "Xantana, salsa ligada",
+    "ratio": "0,1-0,3 %",
+    "note": "Más de 0,5 % queda viscosa."
+   },
+   {
+    "use": "Gel fluido de agar",
+    "ratio": "0,3-0,5 %, cuajado y triturado",
+    "note": "Textura de crema que no gotea."
+   }
+  ],
+  "variants": [
+   {
+    "id": "ligazones",
+    "name": "Ligazones",
+    "note": "Las formas clásicas de espesar."
+   },
+   {
+    "id": "esferificacion",
+    "name": "Esferificación",
+    "note": "Gelificar con alginato y calcio."
+   }
+  ],
+  "keys": [
+   "La gelatina no hierve y no aguanta calor.",
+   "El agar sí hierve y aguanta calor.",
+   "El ácido y algunas frutas crudas (piña, kiwi, papaya) impiden cuajar la gelatina.",
+   "Xantana en cantidades mínimas.",
+   "Báscula de 0,1 g."
+  ],
+  "errors": [
+   {
+    "p": "La gelatina no cuaja",
+    "fix": "Líquido hervido, demasiado ácido o fruta cruda con enzimas. Cuece la fruta antes y sube un poco la dosis."
+   },
+   {
+    "p": "Grumos de agar o xantana",
+    "fix": "Se ha echado de golpe. Dispersa en frío y tritura mientras espolvoreas."
+   },
+   {
+    "p": "Gel que suelta agua",
+    "fix": "Agar escaso o gel viejo. Sube la dosis y consume en el día."
+   }
+  ],
+  "history": "La gelatina se usa desde hace siglos; el agar viene de las algas y de la cocina japonesa; la xantana y otros hidrocoloides entraron en la cocina de restaurante con la vanguardia de finales del siglo XX.",
+  "uses": [
+   "Gelatinas y láminas",
+   "Geles fluidos",
+   "Salsas ligadas sin harina",
+   "Mermeladas",
+   "Platos calientes gelificados"
+  ],
+  "keep": "Los polvos, en hermético y lejos de la humedad.",
+  "pro": "Ten una tabla de dosis colgada y una báscula de precisión. Prueba siempre una pequeña cantidad.",
+  "related": [
+   "ligazones",
+   "esferificacion",
+   "espumas-con-sifon",
+   "deshidratados-y-crujientes"
+  ]
+ },
+ {
+  "id": "esferificacion",
+  "name": "Esferificación",
+  "name_en": "Spherification",
+  "cat": "tecnicas",
+  "group": "Vanguardia",
+  "aka": [
+   "esferas",
+   "alginato",
+   "cloruro cálcico",
+   "esferificación inversa",
+   "caviar de fruta"
+  ],
+  "summary": "Una piel finísima de gel que encierra un líquido: alginato y calcio, directa o inversa.",
+  "what": "El alginato de sodio, que viene de las algas, gelifica al contacto con el calcio. Si dejas caer gotas de un líquido con alginato en un baño de calcio, se forma una piel fina alrededor y el interior queda líquido: es la esferificación directa, buena para caviares pequeños que se sirven al momento.\n\nEn la inversa, el calcio va en el líquido (o ya lo tiene, como los lácteos) y el baño es de alginato. La piel deja de crecer al sacarlas, así que aguantan y permiten esferas grandes y productos ácidos o con alcohol.",
+  "method": [
+   "Directa: tritura el líquido con 0,5 % de alginato, deja reposar en frío hasta que no tenga burbujas.",
+   "Prepara un baño de agua con 0,5-1 % de cloruro cálcico.",
+   "Deja caer gotas con una jeringa o un dosificador; 1 minuto en el baño.",
+   "Saca con una espumadera, enjuaga en agua limpia y sirve enseguida.",
+   "Inversa: añade al líquido 2 % de gluconolactato cálcico (o usa un lácteo), viértelo con una cuchara semiesférica en un baño de agua con 0,5 % de alginato 2-3 minutos, enjuaga y guarda en aceite o en su propio líquido."
+  ],
+  "ratios": [
+   {
+    "use": "Directa: líquido",
+    "ratio": "0,5 % de alginato",
+    "note": "Sin calcio ni mucha acidez."
+   },
+   {
+    "use": "Directa: baño",
+    "ratio": "0,5-1 % de cloruro cálcico en agua",
+    "note": "1 minuto."
+   },
+   {
+    "use": "Inversa: líquido",
+    "ratio": "2 % de gluconolactato cálcico",
+    "note": "O un lácteo, que ya lleva calcio."
+   },
+   {
+    "use": "Inversa: baño",
+    "ratio": "0,5 % de alginato en agua sin calcio",
+    "note": "2-3 minutos."
+   }
+  ],
+  "variants": [
+   {
+    "id": "gelificantes-y-espesantes",
+    "name": "Gelificantes",
+    "note": "Otras formas de dar forma a un líquido."
+   },
+   {
+    "id": "espumas-con-sifon",
+    "name": "Espumas con sifón",
+    "note": "Otra técnica de textura."
+   }
+  ],
+  "keys": [
+   "Agua mineral baja en calcio para el baño de alginato.",
+   "El líquido sin burbujas: reposo en frío.",
+   "Las directas se gelifican hasta el centro con el tiempo: sirve al momento.",
+   "Las inversas aguantan: puedes prepararlas antes.",
+   "Enjuaga siempre: el calcio deja sabor amargo."
+  ],
+  "errors": [
+   {
+    "p": "No forman esfera, se deshacen",
+    "fix": "Poco alginato o líquido muy ácido. Ajusta el pH con citrato sódico o pasa a la inversa."
+   },
+   {
+    "p": "Esferas con cola",
+    "fix": "Gotas desde muy alto o líquido espeso. Acércate al baño."
+   },
+   {
+    "p": "Sabor amargo",
+    "fix": "Falta de enjuague o mucho cloruro. Enjuaga bien o usa gluconolactato."
+   }
+  ],
+  "history": "La técnica venía de la industria alimentaria y la llevó a la alta cocina el equipo de elBulli a principios de los 2000, con las primeras esferas de guisante y el caviar de melón.",
+  "uses": [
+   "Caviares de fruta o de aceite",
+   "Yemas falsas",
+   "Esferas de aceituna o de queso",
+   "Bocados de aperitivo"
+  ],
+  "keep": "Las directas, al momento. Las inversas, en su líquido o en aceite, en frío unas horas.",
+  "pro": "Para un servicio, la inversa es más práctica: se hacen antes y aguantan. Ten los baños listos y etiquetados.",
+  "related": [
+   "gelificantes-y-espesantes",
+   "espumas-con-sifon",
+   "construir-un-plato"
+  ]
+ },
+ {
+  "id": "papillote-y-vapor",
+  "name": "Papillote y vapor",
+  "name_en": "En papillote and steaming",
+  "cat": "tecnicas",
+  "group": "Cocciones suaves",
+  "aka": [
+   "papillote",
+   "al vapor",
+   "cocción en sobre",
+   "en hoja",
+   "al vapor de algas"
+  ],
+  "summary": "Cocinar en el vapor del propio alimento o de un caldo: delicado, jugoso y con todo el aroma.",
+  "what": "En papillote el alimento se cierra en un sobre (papel, hoja de higuera, de plátano o de col) con aromáticos y un poco de líquido; en el horno, el vapor interior lo cocina y se queda con todo el aroma, que se libera al abrirlo en la mesa. Al vapor, el alimento se cocina sobre un líquido en ebullición sin tocarlo.\n\nSon cocciones ideales para pescados delicados, mariscos y verduras tiernas. El vapor puede llevar sabor: algas, hierbas, té, sarmientos.",
+  "method": [
+   "Papillote: corta un rectángulo de papel de horno, pon el pescado con sal, aromáticos y un chorro de vino o caldo, cierra doblando los bordes sin dejar escape.",
+   "Hornea a 190-200 °C: un lomo de 2-3 cm, 8-12 minutos; el sobre se hincha cuando hay vapor.",
+   "Abre delante del comensal para que llegue el aroma.",
+   "Vapor: agua o caldo aromatizado en ebullición, el alimento en una cesta tapada sin tocar el líquido.",
+   "Controla el punto con termómetro: el pescado, a 45-50 °C en el centro."
+  ],
+  "ratios": [
+   {
+    "use": "Lomo de pescado en papillote",
+    "ratio": "190-200 °C, 8-12 minutos para 2-3 cm",
+    "note": "Hasta 48 °C en el centro."
+   },
+   {
+    "use": "Mejillones o almejas al vapor",
+    "ratio": "Tapados, fuego fuerte, 2-4 minutos",
+    "note": "Hasta que se abran."
+   },
+   {
+    "use": "Verdura al vapor",
+    "ratio": "Judía verde 5-6 minutos, espárrago 3-5",
+    "note": "Enfriar si no se sirve al momento."
+   }
+  ],
+  "variants": [
+   {
+    "id": "verduras-al-vapor",
+    "name": "Verduras al vapor",
+    "note": "Tiempos para la huerta."
+   },
+   {
+    "id": "coccion-de-marisco",
+    "name": "Cocción de marisco",
+    "note": "Puntos del marisco."
+   }
+  ],
+  "keys": [
+   "El sobre bien cerrado: si escapa el vapor, se seca.",
+   "Piezas de grosor parecido en el mismo sobre.",
+   "El vapor puede aromatizar: algas, hierbas, cítricos.",
+   "Termómetro para el punto.",
+   "Abrir en la mesa es parte del plato."
+  ],
+  "errors": [
+   {
+    "p": "Pescado seco",
+    "fix": "Demasiado tiempo o sobre abierto. Saca antes y cierra bien."
+   },
+   {
+    "p": "No se hincha el papillote",
+    "fix": "Horno frío o poco líquido. Precalienta y añade una cucharada de caldo."
+   },
+   {
+    "p": "Verdura aguada al vapor",
+    "fix": "Tapa que gotea. Pon un paño bajo la tapa."
+   }
+  ],
+  "history": "Envolver alimentos para cocinarlos en su vapor es una técnica antigua en muchas culturas, de las hojas de plátano a las de parra; el papillote de papel es un clásico de la cocina francesa.",
+  "uses": [
+   "Pescados delicados",
+   "Mariscos",
+   "Verduras tiernas",
+   "Platos que se abren en la mesa"
+  ],
+  "keep": "Se cocina al momento; los sobres se pueden montar unas horas antes y guardar en frío.",
+  "pro": "Monta los papillotes antes del servicio y hornea al pedido. Etiqueta cada sobre con la mesa.",
+  "related": [
+   "verduras-al-vapor",
+   "coccion-de-marisco",
+   "pescado-entero",
+   "hierbas-frescas"
+  ]
  }
 ]

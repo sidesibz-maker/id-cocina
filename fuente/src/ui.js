@@ -212,3 +212,9 @@ export function verdictText(verdict, profile) {
  return first + second;
 }
 export {joinList};
+
+// Compartir texto: el menú de compartir del aparato si lo hay; si no, se copia.
+export async function shareText(title, text) {
+ try { if (navigator.share) { await navigator.share({title, text}); return 'shared'; } } catch (e) { if (e?.name === 'AbortError') return 'cancel'; }
+ try { await navigator.clipboard.writeText(title + '\n\n' + text); toast(t('Copiado: pégalo donde quieras.', 'Copied: paste it wherever you like.')); return 'copied'; } catch { toast(t('No se pudo compartir.', 'Could not share.'), 'error'); return 'fail'; }
+}

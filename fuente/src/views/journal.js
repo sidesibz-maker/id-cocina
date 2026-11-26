@@ -33,6 +33,17 @@ export function onThisDay() {
  return month ? {e: month, label: t('Hace un mes', 'A month ago')} : null;
 }
 const gist = e => e.learned || e.good || e.bad || e.ideas || '';
+// Cómo han ido los servicios los últimos 30 días: una barra por día con nota (1 durísimo, 5 redondo).
+function moodHtml(list) {
+ const days = [], today = new Date();
+ for (let k = 29; k >= 0; k--) { const d = new Date(today); d.setDate(d.getDate() - k); const key = dayKey(d), ms = list.filter(e => e.day === key && Number(e.mood)).map(e => Number(e.mood)); days.push([key, ms.length ? ms.reduce((a, b) => a + b, 0) / ms.length : 0]); }
+ const rated = days.filter(d => d[1]);
+ if (rated.length < 3) return '';
+ const avg = rated.reduce((a, d) => a + d[1], 0) / rated.length, w = 300, h = 60, bw = w / 30;
+ const word = avg >= 4.3 ? t('redondo', 'spot on') : avg >= 3.5 ? t('bien', 'good') : avg >= 2.7 ? t('normal', 'normal') : avg >= 1.8 ? t('flojo', 'weak') : t('durísimo', 'brutal');
+ return '<figure class="jmood"><figcaption><strong>' + esc(t('Tus servicios, los últimos 30 días', 'Your services, the last 30 days')) + '</strong> ' + esc(t('Media ', 'Average ') + avg.toLocaleString(en() ? 'en' : 'es', {maximumFractionDigits: 1}) + t(' de 5 (', ' out of 5 (') + word + t('), con ', '), with ') + rated.length + t(' días con nota.', ' rated days.')) + '</figcaption>' +
+  '<svg viewBox="0 0 ' + w + ' ' + h + '" role="img" aria-label="' + esc(t('Nota de cada servicio en los últimos 30 días', 'Rating of each service over the last 30 days')) + '">' + days.map(([key, v], i) => v ? '<rect x="' + (i * bw + 1).toFixed(1) + '" y="' + (h - v / 5 * h).toFixed(1) + '" width="' + (bw - 2).toFixed(1) + '" height="' + (v / 5 * h).toFixed(1) + '" class="' + (v >= 4 ? 'jm-good' : v <= 2 ? 'jm-bad' : 'jm-mid') + '"><title>' + esc(key + ': ' + v.toFixed(1)) + '</title></rect>' : '<rect x="' + (i * bw + 1).toFixed(1) + '" y="' + (h - 2) + '" width="' + (bw - 2).toFixed(1) + '" height="2" class="jm-none"></rect>').join('') + '</svg></figure>';
+}
 // Lo aprendido, mes a mes: todo lo que has apuntado como aprendido y las ideas del servicio, para releerlo, imprimirlo
 // y pasar las ideas al cuaderno de chispas del Laboratorio.
 function learnedHtml() {
@@ -58,6 +69,7 @@ export function render(params) {
  return '<header class="page-head page-head-row"><div><h1>' + esc(t('Diario de cocina', 'Kitchen journal')) + '</h1><p>' + esc(t('Dos minutos al acabar el servicio. Lo que apuntas hoy es lo que sabrás mañana.', 'Two minutes after service. What you write today is what you will know tomorrow.')) + '</p></div>' +
   '<div class="row-actions"><a class="btn ghost" href="#/diario/aprendido">' + icon('brain') + esc(t('Lo aprendido', 'What I learned')) + '</a><a class="btn primary" href="#/diario/nuevo">' + icon('plus') + esc(done ? t('Otra entrada de hoy', 'Another entry for today') : t('Escribir el de hoy', 'Write today\'s')) + '</a></div></header>' +
   (list.length ? '<div class="stats jstats"><div class="stat"><strong>' + week.length + '</strong><span>' + esc(t('entradas esta semana', 'entries this week')) + '</span></div><div class="stat"><strong>' + (covers || '—') + '</strong><span>' + esc(t('cubiertos esta semana', 'covers this week')) + '</span></div><div class="stat"><strong>' + streak + '</strong><span>' + esc(streak === 1 ? t('día seguido escribiendo', 'day in a row') : t('días seguidos escribiendo', 'days in a row')) + '</span></div><div class="stat"><strong>' + list.filter(e => String(e.learned || '').trim()).length + '</strong><span>' + esc(t('cosas aprendidas en total', 'things learned in total')) + '</span></div></div>' +
+   moodHtml(list) +
    (() => { const o = onThisDay(); return o ? '<a class="jonday" href="#/diario/' + encodeURIComponent(o.e.id) + '"><strong>' + esc(t('Tal día como hoy. ', 'On this day. ') + o.label) + '</strong><span>' + esc(short(gist(o.e), 220)) + '</span></a>' : ''; })() +
    '<div class="searchbox"><label class="sr" for="jq">' + esc(t('Buscar en el diario', 'Search the journal')) + '</label>' + icon('search') + '<input id="jq" type="search" autocomplete="off" placeholder="' + esc(t('Busca en tu diario: un plato, un producto, un problema…', 'Search your journal: a dish, a product, a problem…')) + '"></div>' +
    '<div id="jlist">' + [...weeks].map(([w, es]) => weekBlock(w, es)).join('') + '</div>'

@@ -106,6 +106,15 @@ ok((await page.textContent('.knew').catch(() => '')).includes('Hojaldre'), 'no a
 await page.click('[data-act=seen-new]'); await wait(150); ok(await page.locator('.knew').count() === 0, 'marcar como vistas no quita el aviso');
 await page.click('[data-act=random-entry]'); await wait(400);
 ok(/^#\/biblioteca\/[a-z0-9-]+$/.test(await page.evaluate(() => location.hash)), 'la ficha al azar no abre una ficha');
+// Compartir una ficha y fichas leídas por estante
+await go('#/biblioteca/tomate'); await page.waitForSelector('[data-act=share-entry]');
+await page.evaluate(() => { window.__shared = null; navigator.share = async d => { window.__shared = d; }; });
+await page.click('[data-act=share-entry]'); await wait(200);
+const sh = await page.evaluate(() => window.__shared);
+ok(sh?.title === 'Tomate' && sh.text.includes('agua de tomate'), 'compartir la ficha no manda el resumen');
+await page.evaluate(() => { const v = JSON.parse(localStorage.getItem('id-cocina-v1')); v.docs = v.docs || {}; v.docs['lectura:estado'] = {id: 'lectura:estado', type: 'lectura', read: {bechamel: '2026-11-20', mayonesa: '2026-11-21'}, version: 1}; localStorage.setItem('id-cocina-v1', JSON.stringify(v)); });
+await page.reload(); await wait(800); await go('#/biblioteca'); await page.waitForSelector('.kshelf');
+ok((await page.textContent('.kshelf[href="#/biblioteca/estante/salsas"]')).includes('2 leídas'), 'el estante no dice cuántas has leído: ' + await page.textContent('.kshelf[href="#/biblioteca/estante/salsas"]'));
 ok(!errors.length, 'errores: ' + errors.join(' | '));
 await browser.close();
 console.log(fails.length ? 'FALLOS:\n - ' + fails.join('\n - ') : 'la Biblioteca: todo correcto');

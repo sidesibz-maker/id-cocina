@@ -55,6 +55,8 @@ ok((await page.textContent('.trmine')).includes('mi tempura'), 'la tarjeta propi
 await page.click('[data-cat=mias]'); await wait(200);
 let mine = false; for (let k = 0; k < 20 && !mine; k++) { mine = (await page.textContent('#trCard')).includes('mi tempura'); if (!mine && await page.locator('[data-tr=flip]').count()) { await page.click('[data-tr=flip]'); await page.click('[data-tr="2"]'); await wait(100); } else if (!mine) break; }
 ok(mine, 'la tarjeta propia no sale en el repaso');
+// Dominio por tema
+await go('#/entrenar'); ok(await page.locator('.tmastery li').count() >= 4, 'no sale cuánto dominas de cada tema');
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();
 if (fails.length) { console.error('FALLOS en entrenar:\n - ' + fails.join('\n - ')); process.exit(1); }

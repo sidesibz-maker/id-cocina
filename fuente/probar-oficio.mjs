@@ -109,6 +109,10 @@ await page.selectOption('#discKind', 'libro'); await page.fill('#discTitle', 'Un
 ok((await page.textContent('.cdisc')).includes('Un libro sobre fermentación'), 'Por descubrir no guarda');
 await page.click('[data-disc-done]'); await page.waitForSelector('#discTake'); await page.fill('#discTake', 'El koji en casa'); await page.click('.sheet [data-ok]'); await wait(500);
 ok((await page.textContent('.cdisc')).includes('Me llevo: El koji en casa'), 'marcar como hecho no guarda lo que te llevas');
+// Ánimo de los servicios del último mes
+await page.evaluate(() => { const v = JSON.parse(localStorage.getItem('id-cocina-v1')); for (let k = 1; k <= 4; k++) { const d = new Date(); d.setDate(d.getDate() - k); const day = d.toISOString().slice(0, 10); v.docs['diario:m' + k] = {id: 'diario:m' + k, type: 'diario', day, service: 'cena', mood: k % 2 ? 5 : 3, good: 'Servicio ' + k, created_at: day + 'T23:00:00Z', updated_at: day + 'T23:00:00Z', version: 1}; } localStorage.setItem('id-cocina-v1', JSON.stringify(v)); });
+await page.reload(); await wait(800); await go('#/diario'); await page.waitForSelector('.jmood').catch(() => {});
+ok((await page.locator('.jmood rect.jm-good').count()) >= 2 && (await page.textContent('.jmood figcaption')).includes('Media'), 'el diario no enseña cómo han ido los servicios');
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();
 if (fails.length) { console.error('FALLOS en diario y trayectoria:\n - ' + fails.join('\n - ')); process.exit(1); }

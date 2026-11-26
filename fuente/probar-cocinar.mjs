@@ -56,6 +56,9 @@ await page.click('[data-read]'); await wait(150);
 ok((await page.getAttribute('[data-read]', 'aria-pressed')) === 'true' && (await page.evaluate(() => window.__said.length)) === 1, 'leer en voz alta no lee el paso');
 await page.click('[data-go="1"]'); await wait(150);
 ok((await page.evaluate(() => window.__said.at(-1) || '')).startsWith('Paso 2'), 'al pasar de paso no lo lee');
+// Pantalla completa (si el navegador la permite)
+await go('#/cocinar/biblioteca/bechamel'); await page.waitForSelector('.cook-head');
+if (await page.evaluate(() => document.fullscreenEnabled)) ok(await page.locator('[data-full]').count() === 1, 'no hay botón de pantalla completa');
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();
 if (fails.length) { console.error('FALLOS en el modo cocina:\n - ' + fails.join('\n - ')); process.exit(1); }
