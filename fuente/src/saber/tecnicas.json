@@ -11855,5 +11855,2683 @@
    "colageno-y-gelatina",
    "cerdo-iberico"
   ]
+ },
+ {
+  "id": "kebab-y-pinchos",
+  "name": "Kebab y pinchos especiados",
+  "name_en": "Kebabs and spiced skewers",
+  "cat": "tecnicas",
+  "group": "Cocina del mundo",
+  "technique": "brasa",
+  "aka": [
+   "kebab",
+   "shish kebab",
+   "kofta",
+   "köfte",
+   "pincho moruno",
+   "pinchos morunos",
+   "brochetas especiadas"
+  ],
+  "summary": "Carne en dados marinada o picada con especias y hierbas, ensartada y asada a la brasa: de Oriente Medio a los pinchos morunos.",
+  "what": "Bajo la palabra kebab caben muchas carnes asadas de Oriente Medio, Turquía y Asia central. Dos formas son muy útiles en una cocina de brasa: los dados de carne marinados en yogur, aceite y especias, ensartados y asados; y la kofta, carne picada con cebolla, hierbas y especias moldeada alrededor de una brocheta. En España, los pinchos morunos son dados de cerdo o cordero marinados con una mezcla de especias (comino, pimentón, cilantro, cúrcuma) y asados a la brasa.\n\nCada país, cada región y cada asador tienen sus mezclas; lo que comparten es la marinada con especias y el fuego vivo.",
+  "base": {
+   "for": "12 brochetas",
+   "items": [
+    [
+     "Cordero o cerdo en dados de 3 cm (o cordero picado con 20 % de grasa para kofta)",
+     "1 kg"
+    ],
+    [
+     "Yogur o aceite de oliva para la marinada",
+     "150 g / 80 ml"
+    ],
+    [
+     "Ajo y cebolla rallada escurrida",
+     "3 dientes y 1"
+    ],
+    [
+     "Comino, pimentón, cilantro molido y pimienta",
+     "6 g, 6 g, 4 g y 2 g"
+    ],
+    [
+     "Canela o cúrcuma (según la receta)",
+     "2 g"
+    ],
+    [
+     "Perejil y menta (para kofta)",
+     "1 manojo"
+    ],
+    [
+     "Sal",
+     "15 g"
+    ],
+    [
+     "Limón",
+     "1"
+    ]
+   ],
+   "steps": [
+    "Dados: mezcla la carne con la marinada y las especias y deja en frío 4–24 horas.",
+    "Kofta: amasa la carne picada con la cebolla escurrida, las hierbas, las especias y la sal hasta que ligue; reposa 30 minutos en frío.",
+    "Ensarta los dados apretados o moldea la carne picada alrededor de brochetas planas.",
+    "Asa a la brasa media-fuerte, girando, hasta que estén dorados: dados 8–10 minutos, kofta 6–8 minutos.",
+    "Sirve con limón, pan plano, salsa de yogur y cebolla con zumaque o perejil."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Marinada de dados",
+    "ratio": "4–24 horas en frío",
+    "note": "Con yogur, menos de 24."
+   },
+   {
+    "use": "Kofta",
+    "ratio": "15 g de sal por kg de carne",
+    "note": "Amasada para que ligue."
+   },
+   {
+    "use": "Cordero en kofta",
+    "ratio": "65–70 °C en el centro",
+    "note": "Jugosa."
+   },
+   {
+    "use": "Ración",
+    "ratio": "2 brochetas de 80 g",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "rubs-y-mezclas-secas",
+    "name": "Mezclas de especias",
+    "note": "Para pinchos morunos."
+   },
+   {
+    "id": "salsa-yogur-limon",
+    "name": "Salsa de yogur",
+    "note": "El acompañante habitual."
+   },
+   {
+    "id": "panes-planos",
+    "name": "Panes planos",
+    "note": "Para envolver."
+   },
+   {
+    "id": "robata-y-parrilla-japonesa",
+    "name": "Brochetas japonesas",
+    "note": "Otra tradición de brocheta."
+   }
+  ],
+  "keys": [
+   "Marinar con especias tostadas y molidas.",
+   "Kofta amasada para que no se rompa.",
+   "Dados del mismo tamaño y apretados.",
+   "Brasa viva y giro constante.",
+   "Cada país tiene sus mezclas."
+  ],
+  "errors": [
+   {
+    "p": "Kofta que se cae de la brocheta",
+    "fix": "Poca sal o poco amasado, o cebolla húmeda. Amasa más y escurre la cebolla."
+   },
+   {
+    "p": "Carne seca",
+    "fix": "Dados pequeños o fuego largo. Dados de 3 cm y menos tiempo."
+   },
+   {
+    "p": "Especias quemadas",
+    "fix": "Brasa demasiado viva. Sube la parrilla."
+   }
+  ],
+  "history": "Las carnes asadas en brocheta son tradicionales en Turquía, Oriente Medio, el Cáucaso y Asia central. Los pinchos morunos son una adaptación española de esa tradición.",
+  "uses": [
+   "Brasa",
+   "Bocados y tapas",
+   "Platos para compartir con pan"
+  ],
+  "keep": "Carne marinada, 1 día en frío; kofta formada, 1 día o congelada.",
+  "pro": "Marina la víspera y ensarta por la mañana; brasa al pedido.",
+  "related": [
+   "rubs-y-mezclas-secas",
+   "salsa-yogur-limon",
+   "panes-planos",
+   "fuego-y-brasa",
+   "cordero",
+   "especias"
+  ]
+ },
+ {
+  "id": "arepas",
+  "name": "Arepas y masas de maíz precocido",
+  "name_en": "Arepas",
+  "cat": "tecnicas",
+  "group": "Cocina del mundo",
+  "aka": [
+   "arepa",
+   "arepas",
+   "harina de maíz precocida",
+   "reina pepiada",
+   "arepa rellena",
+   "masa de arepa"
+  ],
+  "summary": "Masa de harina de maíz precocida, agua y sal, formada en discos y dorada en plancha: se abre y se rellena.",
+  "what": "La arepa es el pan de maíz de Venezuela y Colombia. Se hace con harina de maíz precocida, distinta de la masa de [[tortillas-de-maiz-y-nixtamal|nixtamal]]: el maíz se ha cocido y secado sin cal, y la harina se hidrata con agua tibia y sal en pocos minutos. Se forman discos gruesos que se doran en plancha o budare y se terminan en horno hasta que suenan huecos al golpearlos.\n\nSe abren y se rellenan: pollo con aguacate y mayonesa, carne mechada, queso, alubias negras. En Colombia son más finas y se comen a menudo solas o con queso. Cada casa tiene su punto de masa.",
+  "base": {
+   "for": "8 arepas",
+   "items": [
+    [
+     "Harina de maíz precocida blanca",
+     "500 g"
+    ],
+    [
+     "Agua tibia",
+     "600–650 ml"
+    ],
+    [
+     "Sal",
+     "10 g"
+    ],
+    [
+     "Aceite o mantequilla (opcional)",
+     "15 g"
+    ],
+    [
+     "Rellenos al gusto",
+     "600–800 g"
+    ]
+   ],
+   "steps": [
+    "Disuelve la sal en el agua tibia, añade la harina poco a poco y amasa hasta una masa suave que no se agriete.",
+    "Deja reposar 5 minutos; ajusta con agua o harina.",
+    "Forma bolas de 110–120 g y aplánalas en discos de 1,5 cm, alisando los bordes.",
+    "Dóralas en plancha engrasada a fuego medio 5–6 minutos por lado, hasta formar costra.",
+    "Termina en horno a 180 °C 10–15 minutos, hasta que suenen huecas; ábrelas y rellena."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Hidratación",
+    "ratio": "1 parte de harina por 1,2–1,3 de agua",
+    "note": "En peso."
+   },
+   {
+    "use": "Pieza",
+    "ratio": "110–120 g, 1,5 cm de grosor",
+    "note": ""
+   },
+   {
+    "use": "Plancha",
+    "ratio": "Fuego medio, 5–6 minutos por lado",
+    "note": "Costra dorada."
+   },
+   {
+    "use": "Horno",
+    "ratio": "180 °C, 10–15 minutos",
+    "note": "Suenan huecas."
+   }
+  ],
+  "variants": [
+   {
+    "id": "tortillas-de-maiz-y-nixtamal",
+    "name": "Tortillas de maíz",
+    "note": "Otra masa de maíz, con cal."
+   },
+   {
+    "id": "maiz",
+    "name": "Maíz",
+    "note": "El producto."
+   },
+   {
+    "id": "aguacate-y-frutas-tropicales",
+    "name": "Reina pepiada",
+    "note": "Pollo, aguacate y mayonesa."
+   },
+   {
+    "id": "panes-planos",
+    "name": "Panes planos",
+    "note": "Otras masas de plancha."
+   }
+  ],
+  "keys": [
+   "Harina precocida, no harina de maíz cruda ni de nixtamal.",
+   "Masa suave que no se agriete.",
+   "Bordes alisados para que no se abran.",
+   "Costra en plancha y terminado en horno.",
+   "Rellenar en caliente."
+  ],
+  "errors": [
+   {
+    "p": "Arepa agrietada",
+    "fix": "Masa seca. Añade agua y amasa."
+   },
+   {
+    "p": "Cruda por dentro",
+    "fix": "Gruesa o sin horno. Termínala en horno."
+   },
+   {
+    "p": "Masa pegajosa",
+    "fix": "Demasiada agua. Añade harina."
+   }
+  ],
+  "history": "La arepa es un alimento básico de Venezuela y Colombia desde tiempos precolombinos; la harina precocida industrial la hizo mucho más rápida de preparar en el siglo XX.",
+  "uses": [
+   "Desayunos y bocados",
+   "Bocadillos rellenos",
+   "Acompañamiento de guisos"
+  ],
+  "keep": "Masa, 1 día en frío tapada; arepas cocidas, 2 días en frío, regeneradas en plancha u horno.",
+  "pro": "Forma los discos antes del servicio; dora y hornea por tandas.",
+  "related": [
+   "tortillas-de-maiz-y-nixtamal",
+   "maiz",
+   "aguacate-y-frutas-tropicales",
+   "panes-planos",
+   "harinas-y-almidones",
+   "plancha-y-sarten"
+  ]
+ },
+ {
+  "id": "anticuchos",
+  "name": "Anticuchos",
+  "name_en": "Anticuchos",
+  "cat": "tecnicas",
+  "group": "Cocina del mundo",
+  "technique": "brasa",
+  "aka": [
+   "anticucho",
+   "anticuchos de corazón",
+   "brochetas de corazón",
+   "ají panca",
+   "brocheta peruana"
+  ],
+  "summary": "Corazón de vacuno limpio, marinado en ají, vinagre y especias, ensartado y asado a la brasa muy viva.",
+  "what": "Los anticuchos son brochetas peruanas, tradicionalmente de corazón de vacuno, marinadas en una mezcla de ají panca (un chile seco rojo y afrutado), vinagre, ajo, comino y orégano, y asadas a la brasa fuerte mientras se pintan con la misma marinada. Se sirven con patata cocida o asada, maíz y una salsa picante.\n\nEl corazón es un músculo magro y firme: limpio de grasa y membranas y cocinado deprisa, queda tierno y sabroso. La misma marinada funciona con otras carnes, pulpo o setas. Cada anticuchera tiene su mezcla.",
+  "base": {
+   "for": "10 brochetas",
+   "items": [
+    [
+     "Corazón de vacuno limpio",
+     "1 kg"
+    ],
+    [
+     "Pasta de ají panca",
+     "80–100 g"
+    ],
+    [
+     "Vinagre de vino tinto",
+     "80 ml"
+    ],
+    [
+     "Ajo",
+     "4 dientes"
+    ],
+    [
+     "Comino y orégano seco",
+     "4 g y 2 g"
+    ],
+    [
+     "Sal y pimienta",
+     "12 g y al gusto"
+    ],
+    [
+     "Aceite",
+     "40 ml"
+    ]
+   ],
+   "steps": [
+    "Limpia el corazón de grasa, venas y membranas y córtalo en láminas o dados de 3 × 4 cm y 1 cm de grosor.",
+    "Tritura el ají, el vinagre, el ajo, las especias, la sal y el aceite.",
+    "Marina la carne 3–12 horas en frío.",
+    "Ensarta 3–4 piezas por brocheta.",
+    "Asa a brasa muy viva 2–3 minutos por lado, pintando con la marinada; sirve con patata, maíz y salsa picante."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Marinada",
+    "ratio": "3–12 horas",
+    "note": "El vinagre afirma la carne."
+   },
+   {
+    "use": "Brasa",
+    "ratio": "Muy viva, 2–3 minutos por lado",
+    "note": "Jugoso por dentro."
+   },
+   {
+    "use": "Pieza",
+    "ratio": "1 cm de grosor",
+    "note": "Cocción rápida."
+   },
+   {
+    "use": "Ración",
+    "ratio": "2 brochetas",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "casqueria",
+    "name": "Casquería",
+    "note": "Limpiar el corazón."
+   },
+   {
+    "id": "marinada",
+    "name": "Marinadas ácidas",
+    "note": "Tiempos y efectos."
+   },
+   {
+    "id": "fuego-y-brasa",
+    "name": "Brasa",
+    "note": "Fuego vivo."
+   },
+   {
+    "id": "chiles-y-salsas-mexicanas",
+    "name": "Chiles secos",
+    "note": "Hidratar y triturar."
+   }
+  ],
+  "keys": [
+   "Corazón muy bien limpio.",
+   "Piezas finas para cocción rápida.",
+   "Brasa muy viva.",
+   "Pintar con la marinada al asar.",
+   "Cada anticuchera, su mezcla."
+  ],
+  "errors": [
+   {
+    "p": "Carne dura",
+    "fix": "Cocida de más o mal limpia. Quita membranas y asa poco."
+   },
+   {
+    "p": "Sabor metálico fuerte",
+    "fix": "Corazón sin limpiar de venas. Límpialo bien."
+   },
+   {
+    "p": "Marinada quemada",
+    "fix": "Brasa con llama. Asa sobre brasa sin llama."
+   }
+  ],
+  "history": "Los anticuchos son una comida popular de Perú, muy presente en la calle y en las fiestas; se preparan también en Bolivia y Chile.",
+  "uses": [
+   "Brasa",
+   "Bocados y tapas",
+   "Casquería para compartir"
+  ],
+  "keep": "Marinado, 1 día en frío. Asado, al momento.",
+  "pro": "Corazón limpio y marinado la víspera; brochetas montadas y brasa al pedido.",
+  "related": [
+   "casqueria",
+   "marinada",
+   "fuego-y-brasa",
+   "chiles-y-salsas-mexicanas",
+   "patata-y-boniato",
+   "maiz"
+  ]
+ },
+ {
+  "id": "tumbet",
+  "name": "Tumbet",
+  "name_en": "Mallorcan tumbet",
+  "cat": "tecnicas",
+  "group": "Cocina de Baleares",
+  "technique": "fritura",
+  "aka": [
+   "tumbet",
+   "tombet",
+   "tumbet mallorquín",
+   "capas de verdura frita con tomate"
+  ],
+  "summary": "Capas de patata, berenjena y pimiento rojo fritos, cubiertas de salsa de tomate con ajo: la guarnición más conocida de Mallorca.",
+  "what": "El tumbet es un plato de verano de Mallorca: patatas en rodajas, berenjenas y pimientos rojos fritos por separado en aceite de oliva, montados en capas en una cazuela de barro y cubiertos con una [[salsa-de-tomate]] con ajo y perejil. Se sirve caliente o templado, solo o como guarnición de carnes, pescados o huevos fritos.\n\nAlgunas casas lo hornean unos minutos para que se asiente; otras lo sirven recién montado. Es pariente del pisto y de otras verduras fritas con tomate del Mediterráneo, y cada casa tiene su manera de montarlo.",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Patatas en rodajas de 5 mm",
+     "800 g"
+    ],
+    [
+     "Berenjenas en rodajas de 1 cm",
+     "800 g"
+    ],
+    [
+     "Pimientos rojos en tiras",
+     "3"
+    ],
+    [
+     "Tomate maduro triturado",
+     "800 g"
+    ],
+    [
+     "Ajo y perejil",
+     "3 dientes y 1 puñado"
+    ],
+    [
+     "Aceite de oliva para freír",
+     "cantidad necesaria"
+    ],
+    [
+     "Sal y azúcar (si el tomate es ácido)",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Sala las berenjenas 30 minutos y sécalas.",
+    "Fríe por separado las patatas, las berenjenas y los pimientos hasta que estén tiernos y dorados; escurre y sala.",
+    "Haz la salsa: dora el ajo en un poco de aceite, añade el tomate y cuece 20–30 minutos hasta que espese; termina con perejil.",
+    "Monta en cazuela de barro: patata, berenjena, pimiento y salsa por encima.",
+    "Opcional: hornea a 180 °C 10–15 minutos; sirve caliente o templado."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Fritura de patata",
+    "ratio": "160–170 °C hasta tierna",
+    "note": "Con algo de color."
+   },
+   {
+    "use": "Fritura de berenjena",
+    "ratio": "170–180 °C",
+    "note": "Escurrir bien."
+   },
+   {
+    "use": "Salsa",
+    "ratio": "130 g por ración",
+    "note": "Espesa."
+   },
+   {
+    "use": "Ración",
+    "ratio": "250–300 g",
+    "note": "Como plato; menos como guarnición."
+   }
+  ],
+  "variants": [
+   {
+    "id": "berenjena",
+    "name": "Berenjena",
+    "note": "Salar y freír."
+   },
+   {
+    "id": "salsa-de-tomate",
+    "name": "Salsa de tomate",
+    "note": "La capa final."
+   },
+   {
+    "id": "parmigiana",
+    "name": "Parmigiana",
+    "note": "Otra berenjena en capas."
+   },
+   {
+    "id": "pimientos",
+    "name": "Pimientos",
+    "note": "Fritos o asados."
+   }
+  ],
+  "keys": [
+   "Cada verdura frita por separado.",
+   "Escurrir bien el aceite.",
+   "Salsa de tomate espesa.",
+   "Mejor templado que muy caliente.",
+   "Cada casa monta el suyo."
+  ],
+  "errors": [
+   {
+    "p": "Tumbet aceitoso",
+    "fix": "Verduras sin escurrir o fritas en aceite frío. Fríe a temperatura y escurre."
+   },
+   {
+    "p": "Aguado",
+    "fix": "Salsa poco reducida. Redúcela más."
+   },
+   {
+    "p": "Patata cruda",
+    "fix": "Rodajas gruesas o aceite muy caliente. Más finas y 160–170 °C."
+   }
+  ],
+  "history": "El tumbet es un plato tradicional de la cocina mallorquina, muy ligado a las verduras de verano.",
+  "uses": [
+   "Guarnición de carnes y pescados",
+   "Plato vegetal",
+   "Con huevos fritos"
+  ],
+  "keep": "2–3 días en frío; mejor templado que recalentado mucho.",
+  "pro": "Fríe las verduras por tandas por la mañana; monta y templa por ración.",
+  "related": [
+   "berenjena",
+   "salsa-de-tomate",
+   "parmigiana",
+   "pimientos",
+   "fritura",
+   "patata-y-boniato"
+  ]
+ },
+ {
+  "id": "arros-brut",
+  "name": "Arròs brut",
+  "name_en": "Mallorcan spiced rice",
+  "cat": "tecnicas",
+  "group": "Cocina de Baleares",
+  "technique": "guiso",
+  "aka": [
+   "arròs brut",
+   "arroz brut",
+   "arroz sucio",
+   "arroz mallorquín de carnes y especias"
+  ],
+  "summary": "Arroz caldoso con carnes, verduras, setas y especias, que toma color oscuro del sofrito y de una picada.",
+  "what": "El arròs brut es un arroz caldoso de la cocina de Mallorca. Lleva carnes (pollo, conejo, cerdo y, en temporada, caza), verduras de temporada (judías, guisantes, alcachofas, setas), un sofrito de tomate y especias como canela, clavo y pimienta. Su nombre (arroz sucio) viene de su color oscuro, que le dan las especias y, en muchas casas, una picada de hígado, ajo y perejil.\n\nEs un plato de casa con muchas versiones según la temporada y lo que haya; aquí va la base más común. El punto del arroz caldoso está en [[arroces]].",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Pollo y conejo troceados",
+     "600 g y 600 g"
+    ],
+    [
+     "Costilla o magro de cerdo",
+     "300 g"
+    ],
+    [
+     "Verduras de temporada (judías, guisantes, alcachofas)",
+     "500 g"
+    ],
+    [
+     "Setas",
+     "200 g"
+    ],
+    [
+     "Cebolla, tomate y ajo",
+     "1, 300 g y 3 dientes"
+    ],
+    [
+     "Especias: pimentón, canela, clavo y pimienta",
+     "5 g y una pizca de cada"
+    ],
+    [
+     "Picada: hígado de pollo, ajo y perejil",
+     "2 hígados, 2 dientes y 1 puñado"
+    ],
+    [
+     "Arroz redondo",
+     "400 g"
+    ],
+    [
+     "Caldo de carne o agua",
+     "2,5–3 l"
+    ],
+    [
+     "Aceite de oliva",
+     "100 ml"
+    ]
+   ],
+   "steps": [
+    "Dora las carnes saladas en el aceite; añade la cebolla, el ajo y el tomate y sofríe hasta concentrar.",
+    "Añade las especias, las verduras y las setas y rehoga unos minutos.",
+    "Moja con el caldo y cuece 30–40 minutos para que las carnes se ablanden.",
+    "Añade el arroz y cuece 16–18 minutos a fuego medio.",
+    "A mitad de cocción, añade la picada desleída en caldo; sirve caldoso, recién hecho."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Arroz caldoso",
+    "ratio": "1 parte de arroz por 6–7 de caldo",
+    "note": "En peso."
+   },
+   {
+    "use": "Arroz por ración",
+    "ratio": "65–70 g",
+    "note": ""
+   },
+   {
+    "use": "Cocción del arroz",
+    "ratio": "16–18 minutos",
+    "note": ""
+   },
+   {
+    "use": "Especias",
+    "ratio": "Con medida",
+    "note": "Canela y clavo en pizcas."
+   }
+  ],
+  "variants": [
+   {
+    "id": "arroces",
+    "name": "Arroces caldosos",
+    "note": "Proporción y punto."
+   },
+   {
+    "id": "arroz-de-matanzas",
+    "name": "Arroz de matanzas",
+    "note": "Pariente ibicenco."
+   },
+   {
+    "id": "picada",
+    "name": "Picada",
+    "note": "Liga y oscurece."
+   },
+   {
+    "id": "caza-de-pluma",
+    "name": "Con caza",
+    "note": "En temporada."
+   }
+  ],
+  "keys": [
+   "Caldo con sabor antes del arroz.",
+   "Especias con medida.",
+   "Picada a mitad de cocción.",
+   "Servir enseguida: es caldoso.",
+   "Cada casa, sus carnes y verduras."
+  ],
+  "errors": [
+   {
+    "p": "Arroz pasado y sin caldo",
+    "fix": "Espera o poco caldo. Sirve al momento."
+   },
+   {
+    "p": "Especias dominantes",
+    "fix": "Exceso de clavo o canela. Pizcas."
+   },
+   {
+    "p": "Carnes duras",
+    "fix": "Poco tiempo antes del arroz. Cuécelas más."
+   }
+  ],
+  "history": "El arròs brut es un plato tradicional de Mallorca, con variantes según la zona y la temporada.",
+  "uses": [
+   "Platos de invierno",
+   "Menús de cocina balear",
+   "Arroces para compartir"
+  ],
+  "keep": "La base sin arroz, 2–3 días en frío.",
+  "pro": "Base de carnes y caldo hecha; arroz al pedido en cazuela.",
+  "related": [
+   "arroces",
+   "arroz-de-matanzas",
+   "picada",
+   "caza-de-pluma",
+   "conejo",
+   "especias"
+  ]
+ },
+ {
+  "id": "sopas-mallorquinas",
+  "name": "Sopas mallorquinas",
+  "name_en": "Mallorcan bread and vegetable soup",
+  "cat": "tecnicas",
+  "group": "Cocina de Baleares",
+  "technique": "guiso",
+  "aka": [
+   "sopes mallorquines",
+   "sopas mallorquinas",
+   "sopas de pan y col",
+   "pa de sopes",
+   "sopas secas"
+  ],
+  "summary": "Verduras de temporada guisadas en su caldo y vertidas sobre láminas finas de pan moreno, que lo absorben hasta quedar casi secas.",
+  "what": "Las sopas mallorquinas no son una sopa líquida: son un guiso de verduras (col, coliflor, acelga, cebolla, ajo, tomate, pimiento, a veces setas o alcachofas) cuyo caldo se vierte sobre láminas muy finas de pan moreno seco, que lo absorben. El plato queda húmedo y casi sin caldo, servido en cazuela de barro.\n\nEl pan es especial: un pan moreno cortado en láminas finísimas y secado para este uso. Es un plato de aprovechamiento de la cocina campesina, con versiones de invierno, de primavera y con o sin carne. Cada casa las hace a su manera.",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Col o repollo en tiras",
+     "600 g"
+    ],
+    [
+     "Coliflor y acelgas",
+     "300 g y 300 g"
+    ],
+    [
+     "Cebolla, cebolleta y ajo",
+     "1, 2 y 3 dientes"
+    ],
+    [
+     "Tomate rallado y pimiento",
+     "200 g y 1"
+    ],
+    [
+     "Pimentón dulce",
+     "5 g"
+    ],
+    [
+     "Pan moreno seco en láminas muy finas",
+     "250–300 g"
+    ],
+    [
+     "Agua o caldo de verduras",
+     "1,5 l"
+    ],
+    [
+     "Aceite de oliva",
+     "100 ml"
+    ],
+    [
+     "Sal",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Sofríe la cebolla, el ajo, el pimiento y el tomate en el aceite hasta que estén pochados.",
+    "Añade el pimentón y, enseguida, la col, la coliflor y las pencas de acelga; rehoga.",
+    "Moja con el agua o caldo y cuece 25–30 minutos; añade las hojas de acelga al final.",
+    "Coloca las láminas de pan en una cazuela de barro.",
+    "Vierte el caldo y las verduras por encima, deja reposar unos minutos hasta que el pan lo absorba y sirve casi secas."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Pan por ración",
+    "ratio": "40–50 g",
+    "note": "Láminas finísimas y secas."
+   },
+   {
+    "use": "Verdura por ración",
+    "ratio": "200 g",
+    "note": "De temporada."
+   },
+   {
+    "use": "Caldo",
+    "ratio": "Lo que el pan absorba",
+    "note": "Debe quedar casi seco."
+   },
+   {
+    "use": "Reposo",
+    "ratio": "5 minutos",
+    "note": "Antes de servir."
+   }
+  ],
+  "variants": [
+   {
+    "id": "pan-del-dia-y-pan-viejo",
+    "name": "Pan viejo",
+    "note": "Base del plato."
+   },
+   {
+    "id": "caldo-de-verduras",
+    "name": "Caldo de verduras",
+    "note": "Para mojar."
+   },
+   {
+    "id": "cocina-de-aprovechamiento",
+    "name": "Aprovechamiento",
+    "note": "Cocina campesina."
+   },
+   {
+    "id": "minestrone",
+    "name": "Sopas de verdura",
+    "note": "Primas del Mediterráneo."
+   }
+  ],
+  "keys": [
+   "Pan moreno en láminas muy finas y seco.",
+   "Casi secas, no caldosas.",
+   "Verduras de temporada.",
+   "Cazuela de barro.",
+   "Cada casa tiene las suyas."
+  ],
+  "errors": [
+   {
+    "p": "Pan deshecho en papilla",
+    "fix": "Pan tierno o láminas gruesas. Usa pan seco en láminas finas."
+   },
+   {
+    "p": "Demasiado caldo",
+    "fix": "Más pan o reduce el caldo."
+   },
+   {
+    "p": "Sabor plano",
+    "fix": "Sofrito corto. Pocha bien la base."
+   }
+  ],
+  "history": "Las sopas mallorquinas son un plato tradicional de la cocina campesina de Mallorca, hecho con verdura de huerta y pan.",
+  "uses": [
+   "Platos de cuchara",
+   "Menús de cocina balear",
+   "Cocina de aprovechamiento"
+  ],
+  "keep": "Las verduras con su caldo, 2–3 días en frío; el pan se moja al servir.",
+  "pro": "Verduras guisadas por la mañana; montaje en cazuela por ración.",
+  "related": [
+   "pan-del-dia-y-pan-viejo",
+   "caldo-de-verduras",
+   "cocina-de-aprovechamiento",
+   "minestrone",
+   "hojas-y-brotes",
+   "pimenton-y-noras"
+  ]
+ },
+ {
+  "id": "calcots-y-salvitxada",
+  "name": "Calçots y salvitxada",
+  "name_en": "Calçots and salvitxada",
+  "cat": "tecnicas",
+  "group": "Cocina catalana",
+  "technique": "brasa",
+  "aka": [
+   "calçots",
+   "calçotada",
+   "salvitxada",
+   "salsa de calçots",
+   "cebollas tiernas a la brasa"
+  ],
+  "summary": "Cebollas tiernas quemadas a llama viva, sudadas envueltas y peladas a mano para mojar en una salsa de ñora, frutos secos y tomate asado.",
+  "what": "El calçot es una cebolla tierna y alargada que se cultiva aporcándola con tierra para que el tallo quede blanco. Se asa sobre llama viva de sarmientos hasta que la capa exterior se carboniza, se envuelve para que termine de hacerse con su propio vapor y se come tirando de la parte verde para sacar el corazón, que se moja en salvitxada.\n\nLa salvitxada es una salsa de la familia del [[romesco]]: tomate y ajo asados, ñora, almendra y avellana tostadas, pan frito, vinagre y aceite. Su temporada es el final del invierno y la primavera, y la calçotada es una comida de grupo. Cada casa tiene su salsa.",
+  "base": {
+   "for": "6 personas",
+   "items": [
+    [
+     "Calçots",
+     "60–90 (10–15 por persona)"
+    ],
+    [
+     "Sarmientos o leña fina para llama",
+     "cantidad necesaria"
+    ],
+    [
+     "Tomates y cabeza de ajo asados",
+     "4 y 1"
+    ],
+    [
+     "Ñoras hidratadas",
+     "4"
+    ],
+    [
+     "Almendras y avellanas tostadas",
+     "60 g y 40 g"
+    ],
+    [
+     "Pan frito",
+     "30 g"
+    ],
+    [
+     "Vinagre de vino",
+     "30 ml"
+    ],
+    [
+     "Aceite de oliva",
+     "250 ml"
+    ],
+    [
+     "Sal",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Limpia los calçots de raíces y tierra y recórtales las puntas verdes.",
+    "Ásalos sobre llama viva, girando, hasta que la capa exterior esté negra, 8–12 minutos.",
+    "Envuélvelos en manojos con papel y déjalos sudar 10–15 minutos.",
+    "Salvitxada: maja o tritura el ajo, los frutos secos y el pan, añade la carne de ñora y el tomate y emulsiona con el aceite y el vinagre.",
+    "Sirve los calçots envueltos; se pelan tirando de la parte verde y se mojan en la salsa."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Calçots por persona",
+    "ratio": "10–15",
+    "note": "Como plato principal de la calçotada."
+   },
+   {
+    "use": "Asado",
+    "ratio": "Llama viva, 8–12 minutos",
+    "note": "Exterior negro."
+   },
+   {
+    "use": "Sudado",
+    "ratio": "10–15 minutos envueltos",
+    "note": "Termina la cocción."
+   },
+   {
+    "use": "Salsa por persona",
+    "ratio": "60–80 g",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "romesco",
+    "name": "Romesco",
+    "note": "La salsa hermana."
+   },
+   {
+    "id": "cebolla-y-ajo",
+    "name": "Cebolla",
+    "note": "La familia del calçot."
+   },
+   {
+    "id": "ahumado-con-hierbas",
+    "name": "Sarmientos",
+    "note": "La llama tradicional."
+   },
+   {
+    "id": "verduras-a-la-brasa",
+    "name": "Verduras a la brasa",
+    "note": "Otras verduras quemadas."
+   }
+  ],
+  "keys": [
+   "Llama viva, no brasa suave.",
+   "Exterior quemado: se tira.",
+   "Sudar envueltos.",
+   "Salsa con grano, no lisa del todo.",
+   "Cada casa defiende su salsa."
+  ],
+  "errors": [
+   {
+    "p": "Calçot duro por dentro",
+    "fix": "Poco asado o sin sudar. Más llama y envuelve."
+   },
+   {
+    "p": "Salsa amarga",
+    "fix": "Ñora quemada o con pepitas. Hidrátala y limpia."
+   },
+   {
+    "p": "Salsa separada",
+    "fix": "Aceite de golpe. Emulsiona poco a poco."
+   }
+  ],
+  "history": "La calçotada es una tradición del sur de Cataluña, sobre todo de la comarca de Valls, que se ha extendido a toda la región.",
+  "uses": [
+   "Comidas de grupo",
+   "Menús de temporada de invierno y primavera",
+   "Brasa de verduras"
+  ],
+  "keep": "Salvitxada, 3–4 días en frío. Calçots, asados al momento.",
+  "pro": "Salsa hecha de antemano; calçots asados por tandas y servidos en sus tejas o envueltos.",
+  "related": [
+   "romesco",
+   "cebolla-y-ajo",
+   "ahumado-con-hierbas",
+   "verduras-a-la-brasa",
+   "pimenton-y-noras",
+   "frutos-secos"
+  ]
+ },
+ {
+  "id": "mar-i-muntanya",
+  "name": "Mar i muntanya",
+  "name_en": "Catalan surf and turf",
+  "cat": "tecnicas",
+  "group": "Cocina catalana",
+  "technique": "guiso",
+  "aka": [
+   "mar i muntanya",
+   "mar y montaña",
+   "pollo con langostinos",
+   "albóndigas con sepia",
+   "mandonguilles amb sípia"
+  ],
+  "summary": "Guisos catalanes que juntan carne y marisco en una misma salsa de sofrito y picada: pollo con gambas, albóndigas con sepia.",
+  "what": "El mar i muntanya es una manera catalana de guisar que combina un ingrediente de tierra y otro de mar en la misma cazuela. Los ejemplos más conocidos son el pollo con langostinos o cigalas y las albóndigas con sepia. Se construyen con un [[sofrito]] lento, un desglasado con vino o brandy, caldo, y se ligan al final con una [[picada]] de frutos secos, ajo, perejil y pan frito; algunas casas añaden un poco de chocolate.\n\nLa clave es cocinar cada ingrediente a su tiempo: la carne más, el marisco solo unos minutos al final. Las combinaciones y las proporciones varían de una casa a otra.",
+  "base": {
+   "for": "6 raciones (pollo con gambas)",
+   "items": [
+    [
+     "Pollo troceado",
+     "1,5 kg"
+    ],
+    [
+     "Gambas o langostinos",
+     "12–18"
+    ],
+    [
+     "Cebolla y tomate rallado",
+     "2 y 300 g"
+    ],
+    [
+     "Ajo",
+     "3 dientes"
+    ],
+    [
+     "Brandy o vino rancio",
+     "80 ml"
+    ],
+    [
+     "Caldo de ave o de marisco",
+     "500 ml"
+    ],
+    [
+     "Picada: almendras y avellanas tostadas, ajo, perejil y pan frito",
+     "40 g, 1 diente, 1 puñado y 20 g"
+    ],
+    [
+     "Chocolate negro (opcional)",
+     "10 g"
+    ],
+    [
+     "Aceite de oliva",
+     "80 ml"
+    ]
+   ],
+   "steps": [
+    "Marca las gambas en el aceite unos segundos y resérvalas; dora el pollo salado en el mismo aceite.",
+    "Añade la cebolla y pócala lentamente; luego el tomate hasta que se concentre.",
+    "Desglasa con el brandy, moja con el caldo y cuece 30–40 minutos a fuego suave.",
+    "Añade la picada desleída en caldo (y el chocolate) y cuece 5 minutos.",
+    "Incorpora las gambas los últimos 2–3 minutos y sirve."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Pollo",
+    "ratio": "30–40 minutos guisado",
+    "note": ""
+   },
+   {
+    "use": "Marisco",
+    "ratio": "2–3 minutos al final",
+    "note": "Que no se pase."
+   },
+   {
+    "use": "Picada",
+    "ratio": "40–60 g por litro de salsa",
+    "note": ""
+   },
+   {
+    "use": "Albóndigas con sepia",
+    "ratio": "Sepia 30–40 minutos, albóndigas 15",
+    "note": "La sepia necesita más."
+   }
+  ],
+  "variants": [
+   {
+    "id": "picada",
+    "name": "Picada",
+    "note": "La ligazón catalana."
+   },
+   {
+    "id": "sofrito",
+    "name": "Sofrito",
+    "note": "La base lenta."
+   },
+   {
+    "id": "cefalopodos",
+    "name": "Sepia",
+    "note": "Para las albóndigas con sepia."
+   },
+   {
+    "id": "coccion-de-marisco",
+    "name": "Marisco",
+    "note": "Puntos."
+   }
+  ],
+  "keys": [
+   "Sofrito lento.",
+   "Marisco marcado al principio y añadido al final.",
+   "Picada para ligar.",
+   "Cada ingrediente a su tiempo.",
+   "Cada casa tiene su combinación."
+  ],
+  "errors": [
+   {
+    "p": "Marisco duro",
+    "fix": "Guisado todo el tiempo. Al final."
+   },
+   {
+    "p": "Salsa aguada",
+    "fix": "Poca picada o reducción. Más picada."
+   },
+   {
+    "p": "Sabor plano",
+    "fix": "Sofrito corto. Pocha más."
+   }
+  ],
+  "history": "El mar i muntanya es una tradición de la cocina catalana, sobre todo de las comarcas de Girona y la costa, de juntar productos del mar y de la tierra.",
+  "uses": [
+   "Guisos para compartir",
+   "Menús de cocina catalana"
+  ],
+  "keep": "La base sin marisco, 3 días en frío; el marisco, al regenerar.",
+  "pro": "Guiso de carne hecho; marisco y picada al pedido.",
+  "related": [
+   "picada",
+   "sofrito",
+   "cefalopodos",
+   "coccion-de-marisco",
+   "pollo-y-aves",
+   "gamba-roja"
+  ]
+ },
+ {
+  "id": "canelones-de-asado",
+  "name": "Canelones de asado",
+  "name_en": "Catalan roast meat cannelloni",
+  "cat": "tecnicas",
+  "group": "Cocina catalana",
+  "technique": "gratinado",
+  "aka": [
+   "canelones",
+   "canelons",
+   "canelones de Sant Esteve",
+   "canelones de carne",
+   "canelones gratinados"
+  ],
+  "summary": "Placas de pasta rellenas con las carnes del asado o del caldo, picadas con su jugo, cubiertas de bechamel y gratinadas.",
+  "what": "Los canelones de asado son un plato catalán de aprovechamiento: las carnes asadas o cocidas en el caldo (ternera, cerdo, pollo, a veces hígado) se pican con su jugo y un sofrito, se ligan con un poco de [[bechamel]] o pan mojado en leche, y rellenan placas de pasta cocidas. Se cubren con bechamel y queso y se gratinan.\n\nEn muchas casas de Cataluña se hacen el día de Sant Esteve, con las sobras de la comida de Navidad. Cada familia tiene su relleno y sus proporciones.",
+  "base": {
+   "for": "24 canelones (6 raciones)",
+   "items": [
+    [
+     "Carnes asadas o cocidas (ternera, cerdo, pollo)",
+     "800 g"
+    ],
+    [
+     "Hígados de pollo (opcional)",
+     "100 g"
+    ],
+    [
+     "Cebolla y tomate",
+     "2 y 150 g"
+    ],
+    [
+     "Jugo del asado",
+     "100 ml"
+    ],
+    [
+     "Vino rancio o brandy (opcional)",
+     "50 ml"
+    ],
+    [
+     "Placas de canelón",
+     "24"
+    ],
+    [
+     "Bechamel",
+     "1 l"
+    ],
+    [
+     "Queso rallado y mantequilla",
+     "80 g y 30 g"
+    ]
+   ],
+   "steps": [
+    "Pocha la cebolla lentamente, añade el tomate y concentra; incorpora los hígados y el vino.",
+    "Añade las carnes desmigadas y el jugo, rehoga y pica todo fino.",
+    "Liga con 3–4 cucharadas de bechamel y ajusta de sal; deja enfriar.",
+    "Cuece las placas, enfríalas, rellénalas y enróllalas; colócalas en una fuente con un poco de bechamel en la base.",
+    "Cubre con bechamel, queso y unos dados de mantequilla; hornea a 200 °C 15–20 minutos hasta gratinar."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Relleno por canelón",
+    "ratio": "35–40 g",
+    "note": ""
+   },
+   {
+    "use": "Bechamel",
+    "ratio": "60–70 g de roux por litro",
+    "note": "Fluida para cubrir."
+   },
+   {
+    "use": "Gratinado",
+    "ratio": "200 °C, 15–20 minutos",
+    "note": ""
+   },
+   {
+    "use": "Ración",
+    "ratio": "4 canelones",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "bechamel",
+    "name": "Bechamel",
+    "note": "Para ligar y cubrir."
+   },
+   {
+    "id": "gratinado",
+    "name": "Gratinado",
+    "note": "Costra dorada."
+   },
+   {
+    "id": "cocina-de-aprovechamiento",
+    "name": "Aprovechamiento",
+    "note": "Las sobras del asado."
+   },
+   {
+    "id": "croquetas",
+    "name": "Croquetas",
+    "note": "Otro destino del mismo relleno."
+   }
+  ],
+  "keys": [
+   "Relleno con jugo, no seco.",
+   "Sofrito lento de base.",
+   "Placas cocidas al dente y enfriadas.",
+   "Bechamel fluida para cubrir.",
+   "Cada familia, su relleno."
+  ],
+  "errors": [
+   {
+    "p": "Relleno seco",
+    "fix": "Sin jugo ni ligazón. Añade jugo y bechamel."
+   },
+   {
+    "p": "Placas rotas",
+    "fix": "Cocidas de más. Al dente y enfriadas."
+   },
+   {
+    "p": "Gratinado pálido",
+    "fix": "Horno flojo. Sube a 200–220 °C."
+   }
+  ],
+  "history": "Los canelones se adoptaron en Cataluña desde la cocina italiana y se convirtieron en un plato familiar de fiesta, ligado al día de Sant Esteve.",
+  "uses": [
+   "Platos de fiesta",
+   "Cocina de aprovechamiento",
+   "Menús de cocina catalana"
+  ],
+  "keep": "Montados sin gratinar, 2–3 días en frío; se congelan bien.",
+  "pro": "Monta en bandejas o raciones y gratina al pedido.",
+  "related": [
+   "bechamel",
+   "gratinado",
+   "cocina-de-aprovechamiento",
+   "croquetas",
+   "pasta-fresca",
+   "jugo-de-carne"
+  ]
+ },
+ {
+  "id": "esqueixada-y-empedrat",
+  "name": "Esqueixada y empedrat",
+  "name_en": "Esqueixada and empedrat",
+  "cat": "tecnicas",
+  "group": "Cocina catalana",
+  "technique": "crudo",
+  "aka": [
+   "esqueixada",
+   "empedrat",
+   "ensalada de bacalao",
+   "bacalao desmigado crudo",
+   "ensalada de judías y bacalao"
+  ],
+  "summary": "Ensaladas catalanas de bacalao desalado y desmigado en crudo, con tomate, pimiento, cebolla y aceitunas; el empedrat añade judías blancas.",
+  "what": "La esqueixada es una ensalada de [[bacalao]] desalado y desmigado a mano (esqueixat, desgarrado), sin cocinar, con tomate, pimiento, cebolla, aceitunas negras, aceite y un poco de vinagre. El empedrat es su pariente con judías blancas cocidas, que le dan cuerpo.\n\nSon platos de verano, frescos y salados. La calidad depende del bacalao: bien desalado, firme y desmigado a mano en lascas. Cada casa ajusta las verduras y el aliño.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Bacalao desalado (lomo o tiras)",
+     "300 g"
+    ],
+    [
+     "Tomate maduro en dados",
+     "2"
+    ],
+    [
+     "Pimiento rojo y verde en dados pequeños",
+     "½ y ½"
+    ],
+    [
+     "Cebolla dulce picada",
+     "½"
+    ],
+    [
+     "Aceitunas negras",
+     "60 g"
+    ],
+    [
+     "Judías blancas cocidas (para el empedrat)",
+     "300 g"
+    ],
+    [
+     "Aceite de oliva virgen extra y vinagre",
+     "60 ml y 10–15 ml"
+    ]
+   ],
+   "steps": [
+    "Desmiga el bacalao desalado con las manos en lascas finas, quitando piel y espinas; escúrrelo apretando un poco.",
+    "Corta el tomate, los pimientos y la cebolla en dados pequeños.",
+    "Mezcla todo con las aceitunas; para el empedrat, añade las judías.",
+    "Aliña con aceite y vinagre; prueba antes de salar.",
+    "Deja reposar 15–20 minutos en frío y sirve."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Bacalao por ración",
+    "ratio": "70–80 g desalado",
+    "note": ""
+   },
+   {
+    "use": "Judías en el empedrat",
+    "ratio": "75 g cocidas por ración",
+    "note": ""
+   },
+   {
+    "use": "Aliño",
+    "ratio": "4–5 partes de aceite por 1 de vinagre",
+    "note": ""
+   },
+   {
+    "use": "Reposo",
+    "ratio": "15–20 minutos",
+    "note": "En frío."
+   }
+  ],
+  "variants": [
+   {
+    "id": "bacalao",
+    "name": "Bacalao",
+    "note": "Desalado y elección."
+   },
+   {
+    "id": "desalado-y-remojo",
+    "name": "Desalado",
+    "note": "Tiempos."
+   },
+   {
+    "id": "legumbres",
+    "name": "Judías",
+    "note": "Para el empedrat."
+   },
+   {
+    "id": "ensalada-payesa",
+    "name": "Ensalada payesa",
+    "note": "Prima ibicenca con pescado seco."
+   }
+  ],
+  "keys": [
+   "Bacalao bien desalado y desmigado a mano.",
+   "Escurrir el bacalao para que no agüe.",
+   "Probar antes de salar.",
+   "Verdura en dados pequeños.",
+   "Fresca, pero no helada."
+  ],
+  "errors": [
+   {
+    "p": "Demasiado salada",
+    "fix": "Bacalao poco desalado. Desala más."
+   },
+   {
+    "p": "Aguada",
+    "fix": "Bacalao o tomate sin escurrir. Escurre."
+   },
+   {
+    "p": "Bacalao en tiras duras",
+    "fix": "Desmigado con cuchillo. Hazlo a mano en lascas."
+   }
+  ],
+  "history": "La esqueixada y el empedrat son ensaladas tradicionales de la cocina catalana de verano, hechas con bacalao en salazón.",
+  "uses": [
+   "Entrantes fríos",
+   "Menús de verano",
+   "Tapas"
+  ],
+  "keep": "Montadas, 1 día en frío; el bacalao desalado y desmigado, 2 días.",
+  "pro": "Bacalao desmigado y verduras cortadas por separado; aliñar por ración.",
+  "related": [
+   "bacalao",
+   "desalado-y-remojo",
+   "legumbres",
+   "ensalada-payesa",
+   "tomate",
+   "aceitunas-y-alcaparras"
+  ]
+ },
+ {
+  "id": "txipirones-en-su-tinta",
+  "name": "Txipirones en su tinta",
+  "name_en": "Baby squid in their ink",
+  "cat": "tecnicas",
+  "group": "Cocina vasca",
+  "technique": "guiso",
+  "aka": [
+   "txipirones en su tinta",
+   "chipirones en su tinta",
+   "calamares en su tinta",
+   "salsa de tinta",
+   "chipirones rellenos"
+  ],
+  "summary": "Chipirones rellenos de sus tentáculos y guisados en una salsa negra de cebolla pochada, vino y su tinta, triturada y colada.",
+  "what": "Los txipirones en su tinta son un clásico de la cocina vasca: chipirones (calamares pequeños) limpios, rellenos con sus propios tentáculos picados y guisados lentamente en una salsa hecha con mucha cebolla pochada, pimiento verde, a veces tomate, vino blanco y la tinta del propio animal o de bolsitas. La salsa se tritura y se cuela hasta quedar negra, brillante y lisa.\n\nComo todos los [[cefalopodos]], o se cocinan muy poco o el tiempo suficiente para que se ablanden; aquí se guisan hasta estar tiernos. Se sirven con arroz blanco. Cada casa tiene su proporción de cebolla y tomate.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Chipirones medianos",
+     "1 kg"
+    ],
+    [
+     "Cebolla",
+     "500 g"
+    ],
+    [
+     "Pimiento verde",
+     "1"
+    ],
+    [
+     "Ajo",
+     "2 dientes"
+    ],
+    [
+     "Tomate maduro (opcional)",
+     "1"
+    ],
+    [
+     "Vino blanco",
+     "100 ml"
+    ],
+    [
+     "Tinta (bolsas del chipirón o sobres)",
+     "8–10 g"
+    ],
+    [
+     "Fumet o agua",
+     "200 ml"
+    ],
+    [
+     "Aceite de oliva",
+     "80 ml"
+    ]
+   ],
+   "steps": [
+    "Limpia los chipirones, separa los tentáculos y las aletas, guarda las bolsas de tinta y pica los tentáculos.",
+    "Pocha la cebolla, el pimiento y el ajo a fuego suave 30–40 minutos, hasta que estén muy blandos; añade el tomate.",
+    "Saltea los tentáculos, rellena los cuerpos con ellos y ciérralos con un palillo; márcalos en una sartén y añádelos a la cebolla.",
+    "Moja con el vino, la tinta desleída en el fumet y cuece tapado a fuego suave 30–40 minutos.",
+    "Saca los chipirones, tritura y cuela la salsa, ajusta su espesor y vuelve a juntar 5 minutos."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Cebolla",
+    "ratio": "Mitad del peso de los chipirones",
+    "note": "Da cuerpo y dulzor."
+   },
+   {
+    "use": "Guisado",
+    "ratio": "30–40 minutos a fuego suave",
+    "note": "Hasta que estén tiernos."
+   },
+   {
+    "use": "Tinta",
+    "ratio": "8–10 g por kg",
+    "note": "Color y sabor."
+   },
+   {
+    "use": "Ración",
+    "ratio": "250 g",
+    "note": "Con arroz blanco."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cefalopodos",
+    "name": "Cefalópodos",
+    "note": "Limpieza y puntos."
+   },
+   {
+    "id": "sofrito",
+    "name": "Pochado de cebolla",
+    "note": "La base de la salsa."
+   },
+   {
+    "id": "arroces",
+    "name": "Arroz negro",
+    "note": "La tinta en el arroz."
+   },
+   {
+    "id": "fumet",
+    "name": "Fumet",
+    "note": "Para mojar."
+   }
+  ],
+  "keys": [
+   "Mucha cebolla bien pochada.",
+   "Guisado suave hasta que estén tiernos.",
+   "Salsa triturada y colada.",
+   "Tinta desleída antes.",
+   "Cada casa tiene su receta."
+  ],
+  "errors": [
+   {
+    "p": "Chipirones duros",
+    "fix": "Poco tiempo. Guisa hasta que estén tiernos."
+   },
+   {
+    "p": "Salsa amarga",
+    "fix": "Cebolla quemada. Pocha a fuego suave."
+   },
+   {
+    "p": "Salsa grisácea",
+    "fix": "Poca tinta. Añade más."
+   }
+  ],
+  "history": "Los chipirones en su tinta son un plato tradicional de la cocina vasca y del Cantábrico.",
+  "uses": [
+   "Platos de cuchara de pescado",
+   "Raciones",
+   "Menús de cocina vasca"
+  ],
+  "keep": "3 días en frío; se congela muy bien.",
+  "pro": "Guisa en tanda grande; regenera en cazuela con un poco de fumet.",
+  "related": [
+   "cefalopodos",
+   "sofrito",
+   "arroces",
+   "fumet",
+   "guisos-largos",
+   "cebolla-y-ajo"
+  ]
+ },
+ {
+  "id": "pescaito-frito",
+  "name": "Pescaíto frito",
+  "name_en": "Andalusian fried fish",
+  "cat": "tecnicas",
+  "group": "Cocina andaluza",
+  "technique": "fritura",
+  "aka": [
+   "pescaíto frito",
+   "fritura de pescado",
+   "boquerones fritos",
+   "cazón en adobo",
+   "adobo",
+   "harina para freír"
+  ],
+  "summary": "Pescado pequeño o en trozos pasado solo por harina gruesa y frito en mucho aceite de oliva caliente: crujiente, seco y al momento.",
+  "what": "El pescaíto frito andaluz es pescado (boquerones, salmonetes, acedías, chopitos, calamares, cazón) pasado solo por harina, sin huevo, y frito en abundante aceite de oliva muy caliente. Se usa una harina de trigo duro, más gruesa, que da una costra fina, crujiente y que no absorbe aceite. El cazón y otros pescados se maceran antes en adobo de vinagre, ajo, comino, pimentón y orégano.\n\nSe come al momento, con sal y limón. Las freidurías y cada casa tienen sus trucos de harina y aceite. La técnica de fritura está en [[fritura]].",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Pescado variado limpio (boquerones, salmonetes, chopitos, cazón)",
+     "1 kg"
+    ],
+    [
+     "Harina de trigo para freír (gruesa)",
+     "200 g"
+    ],
+    [
+     "Adobo para cazón: vinagre, agua, ajo, comino, pimentón, orégano y sal",
+     "150 ml, 50 ml, 4 dientes y al gusto"
+    ],
+    [
+     "Aceite de oliva para freír",
+     "abundante"
+    ],
+    [
+     "Sal y limón",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Para el cazón: córtalo en dados y macéralo en el adobo 6–12 horas en frío; escurre.",
+    "Sala el pescado, pásalo por la harina y sacúdelo en un colador para quitar el exceso.",
+    "Fríe en aceite abundante a 180–190 °C, en tandas pequeñas, hasta que esté dorado.",
+    "Escurre sobre rejilla o papel, sin amontonar.",
+    "Sirve al momento con sal en escamas y limón."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Aceite",
+    "ratio": "180–190 °C",
+    "note": "Pocas piezas a la vez."
+   },
+   {
+    "use": "Boquerones",
+    "ratio": "1–2 minutos",
+    "note": "Abiertos o enteros."
+   },
+   {
+    "use": "Adobo de cazón",
+    "ratio": "6–12 horas",
+    "note": "En frío."
+   },
+   {
+    "use": "Ración",
+    "ratio": "250 g",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "fritura",
+    "name": "Fritura",
+    "note": "Aceite y temperaturas."
+   },
+   {
+    "id": "adobo",
+    "name": "Adobo",
+    "note": "Para el cazón."
+   },
+   {
+    "id": "pescado-azul",
+    "name": "Boquerones",
+    "note": "Producto."
+   },
+   {
+    "id": "cefalopodos",
+    "name": "Chopitos y calamares",
+    "note": "Limpieza."
+   }
+  ],
+  "keys": [
+   "Solo harina, gruesa y sacudida.",
+   "Aceite de oliva abundante y muy caliente.",
+   "Tandas pequeñas.",
+   "Al momento.",
+   "Cada freiduría tiene sus trucos."
+  ],
+  "errors": [
+   {
+    "p": "Pescado aceitoso",
+    "fix": "Aceite frío o tandas grandes. Más temperatura y menos piezas."
+   },
+   {
+    "p": "Costra que se cae",
+    "fix": "Pescado húmedo. Sécalo antes de enharinar."
+   },
+   {
+    "p": "Harina quemada en el aceite",
+    "fix": "Exceso de harina. Sacude bien y filtra el aceite."
+   }
+  ],
+  "history": "El pescaíto frito es una tradición de la costa andaluza, ligada a las freidurías de Cádiz, Málaga y Sevilla.",
+  "uses": [
+   "Raciones y tapas",
+   "Menús de verano",
+   "Platos para compartir"
+  ],
+  "keep": "Al momento. Pescado limpio y adobado, 1 día en frío.",
+  "pro": "Pescado limpio y separado por tipos; freidora a temperatura y fritura por pedido.",
+  "related": [
+   "fritura",
+   "adobo",
+   "pescado-azul",
+   "cefalopodos",
+   "rebozados-y-empanados",
+   "grasas-punto-de-humo-y-oxidacion"
+  ]
+ },
+ {
+  "id": "rabo-de-toro",
+  "name": "Rabo de toro",
+  "name_en": "Oxtail stew",
+  "cat": "tecnicas",
+  "group": "Cocina andaluza",
+  "technique": "guiso",
+  "aka": [
+   "rabo de toro",
+   "rabo de vaca",
+   "rabo estofado",
+   "guiso de rabo",
+   "rabo al vino tinto"
+  ],
+  "summary": "Rabo troceado, dorado y guisado horas con verduras y vino tinto hasta que la carne se despega y la salsa queda espesa y brillante.",
+  "what": "El rabo de toro es un guiso andaluz de rabo de vacuno (hoy, casi siempre de vaca o buey) cortado por las vértebras. Es una pieza con mucho [[colageno-y-gelatina|colágeno]]: tras horas de cocción la carne se despega del hueso y la salsa liga sola, espesa y brillante. Se enharina, se dora, se guisa con cebolla, zanahoria, pimiento, ajo, tomate, vino tinto y caldo, y la salsa se tritura o se cuela.\n\nEs un plato muy popular en toda Andalucía, especialmente en Córdoba. Cada casa varía las verduras y el vino. Funciona muy bien deshuesado, en croquetas, canelones o rellenos.",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Rabo de vacuno troceado",
+     "2,5 kg"
+    ],
+    [
+     "Harina",
+     "40 g"
+    ],
+    [
+     "Cebolla, zanahoria y pimiento rojo",
+     "2, 2 y 1"
+    ],
+    [
+     "Ajo",
+     "1 cabeza"
+    ],
+    [
+     "Tomate",
+     "2"
+    ],
+    [
+     "Vino tinto",
+     "500 ml"
+    ],
+    [
+     "Caldo de carne",
+     "1 l"
+    ],
+    [
+     "Laurel, tomillo y pimienta",
+     "2 hojas, 1 rama y al gusto"
+    ],
+    [
+     "Aceite de oliva",
+     "100 ml"
+    ]
+   ],
+   "steps": [
+    "Sala, enharina y dora el rabo por tandas; reserva.",
+    "Rehoga las verduras en la misma grasa hasta que tomen color; añade el tomate.",
+    "Moja con el vino y redúcelo a la mitad; devuelve el rabo, añade caldo hasta cubrir y las hierbas.",
+    "Guisa a fuego suave o en horno a 150 °C 3–4 horas, hasta que la carne se separe del hueso.",
+    "Saca el rabo, tritura o cuela la salsa, redúcela si hace falta y vuelve a juntar; mejor al día siguiente."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Guisado",
+    "ratio": "150 °C, 3–4 horas",
+    "note": "En olla a presión, 60–75 minutos."
+   },
+   {
+    "use": "Rabo por ración",
+    "ratio": "400 g con hueso",
+    "note": ""
+   },
+   {
+    "use": "Vino",
+    "ratio": "200 ml por kg",
+    "note": "Reducido."
+   },
+   {
+    "use": "Reposo",
+    "ratio": "24 horas",
+    "note": "Desgrasar en frío."
+   }
+  ],
+  "variants": [
+   {
+    "id": "braseado",
+    "name": "Braseado",
+    "note": "Con menos líquido."
+   },
+   {
+    "id": "colageno-y-gelatina",
+    "name": "Colágeno",
+    "note": "Por qué liga solo."
+   },
+   {
+    "id": "estofados-al-vino",
+    "name": "Estofados al vino",
+    "note": "Los primos franceses."
+   },
+   {
+    "id": "croquetas",
+    "name": "Croquetas de rabo",
+    "note": "Con la carne deshuesada."
+   }
+  ],
+  "keys": [
+   "Dorar bien el rabo.",
+   "Fuego suave y horas.",
+   "Desgrasar en frío.",
+   "Salsa triturada o colada y reducida.",
+   "Cada casa, sus verduras."
+  ],
+  "errors": [
+   {
+    "p": "Salsa grasa",
+    "fix": "Sin desgrasar. Enfría y retira la grasa."
+   },
+   {
+    "p": "Carne dura",
+    "fix": "Poco tiempo. Sigue hasta que se despegue."
+   },
+   {
+    "p": "Salsa ácida",
+    "fix": "Vino sin reducir. Redúcelo antes."
+   }
+  ],
+  "history": "El rabo de toro es un guiso tradicional andaluz, muy ligado a Córdoba, que se ha extendido por toda España.",
+  "uses": [
+   "Principales de invierno",
+   "Rellenos de croquetas y canelones",
+   "Tapas"
+  ],
+  "keep": "4–5 días en frío; se congela muy bien.",
+  "pro": "Guisa la víspera, desgrasa en frío y deshuesa parte para otros usos.",
+  "related": [
+   "braseado",
+   "colageno-y-gelatina",
+   "estofados-al-vino",
+   "croquetas",
+   "guisos-largos",
+   "vinos-y-licores"
+  ]
+ },
+ {
+  "id": "espinacas-con-garbanzos",
+  "name": "Espinacas con garbanzos",
+  "name_en": "Spinach with chickpeas",
+  "cat": "tecnicas",
+  "group": "Cocina andaluza",
+  "technique": "guiso",
+  "aka": [
+   "espinacas con garbanzos",
+   "potaje de espinacas",
+   "espinacas a la sevillana",
+   "garbanzos con espinacas"
+  ],
+  "summary": "Espinacas y garbanzos ligados con un majado de pan frito, ajo, comino, pimentón y vinagre: plato de tapa y de cuchara.",
+  "what": "Las espinacas con garbanzos son un plato sevillano muy extendido por Andalucía: espinacas salteadas o cocidas, garbanzos cocidos y un majado de pan frito, ajo frito, comino, pimentón y un toque de vinagre que liga y da sabor. Queda un guiso espeso, más o menos caldoso según la casa, que se sirve como tapa o como plato.\n\nComparte raíces con otros platos de garbanzos y verdura de la cocina andalusí y de vigilia. Cada casa ajusta el comino, el vinagre y el caldo.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Espinacas frescas",
+     "800 g"
+    ],
+    [
+     "Garbanzos cocidos",
+     "400 g"
+    ],
+    [
+     "Pan del día anterior en rebanadas",
+     "50 g"
+    ],
+    [
+     "Ajo",
+     "4 dientes"
+    ],
+    [
+     "Comino molido y pimentón",
+     "3 g y 5 g"
+    ],
+    [
+     "Vinagre de Jerez",
+     "15 ml"
+    ],
+    [
+     "Aceite de oliva",
+     "80 ml"
+    ],
+    [
+     "Caldo de los garbanzos o agua",
+     "150–250 ml"
+    ],
+    [
+     "Sal",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Fríe en el aceite el pan y los ajos hasta dorar; resérvalos.",
+    "Maja o tritura el pan y los ajos con el comino, el vinagre y un poco de caldo.",
+    "En el mismo aceite, saltea las espinacas hasta que se reduzcan; aparta y añade el pimentón.",
+    "Añade el majado, los garbanzos y el caldo; cuece 10 minutos a fuego suave.",
+    "Ajusta de sal y espesor y sirve caliente."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Espinaca por ración",
+    "ratio": "200 g frescas",
+    "note": "Pierde mucho volumen."
+   },
+   {
+    "use": "Garbanzos",
+    "ratio": "100 g cocidos por ración",
+    "note": ""
+   },
+   {
+    "use": "Majado",
+    "ratio": "50 g de pan por 4 raciones",
+    "note": "Liga."
+   },
+   {
+    "use": "Comino",
+    "ratio": "3 g por 4 raciones",
+    "note": "Con medida."
+   }
+  ],
+  "variants": [
+   {
+    "id": "legumbres",
+    "name": "Garbanzos",
+    "note": "Remojo y cocción."
+   },
+   {
+    "id": "hojas-y-brotes",
+    "name": "Espinacas",
+    "note": "Salteado rápido."
+   },
+   {
+    "id": "picada",
+    "name": "Majados",
+    "note": "Pan y ajo para ligar."
+   },
+   {
+    "id": "cuinat",
+    "name": "Potaje de vigilia",
+    "note": "Otro guiso de verdura y legumbre."
+   }
+  ],
+  "keys": [
+   "Pan y ajo fritos para el majado.",
+   "Pimentón fuera del fuego.",
+   "Vinagre con medida.",
+   "Espinacas salteadas, no hervidas en exceso.",
+   "Cada casa, su punto de caldo."
+  ],
+  "errors": [
+   {
+    "p": "Aguado",
+    "fix": "Espinacas con mucha agua. Saltéalas y escurre."
+   },
+   {
+    "p": "Amargo",
+    "fix": "Pimentón o ajo quemados. Fuego suave."
+   },
+   {
+    "p": "Comino que domina",
+    "fix": "Demasiado. Reduce la cantidad."
+   }
+  ],
+  "history": "Las espinacas con garbanzos son un plato tradicional de Sevilla y de Andalucía, habitual en Cuaresma y en las barras de tapas.",
+  "uses": [
+   "Tapas",
+   "Platos de cuchara vegetales",
+   "Menús de Cuaresma"
+  ],
+  "keep": "3 días en frío; se regenera con un poco de caldo.",
+  "pro": "Majado y garbanzos preparados; espinaca salteada y terminado por tandas.",
+  "related": [
+   "legumbres",
+   "hojas-y-brotes",
+   "picada",
+   "cuinat",
+   "pimenton-y-noras",
+   "pan-del-dia-y-pan-viejo"
+  ]
+ },
+ {
+  "id": "sopas-de-ajo",
+  "name": "Sopas de ajo y sopas de pan",
+  "name_en": "Garlic and bread soups",
+  "cat": "tecnicas",
+  "group": "Cocina castellana",
+  "technique": "guiso",
+  "aka": [
+   "sopa de ajo",
+   "sopa castellana",
+   "sopas de ajo",
+   "sopa de pan",
+   "ajo caliente",
+   "sopa con huevo"
+  ],
+  "summary": "Ajo laminado y pan duro rehogados en aceite con pimentón, mojados con caldo y terminados con huevo: la sopa de pan del interior.",
+  "what": "La sopa de ajo castellana es una sopa de aprovechamiento: ajo laminado frito en aceite, pan duro en rebanadas finas, pimentón, caldo o agua y, al final, huevo escalfado en la sopa o batido. Algunas casas añaden jamón o chorizo. Se sirve muy caliente, a menudo en cazuela de barro.\n\nEn otras zonas de España hay sopas y gachas parecidas de pan, ajo y aceite, a veces con tomate o pimiento, con nombres propios. Todas parten del mismo principio: dar una segunda vida al pan duro con mucho sabor.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Ajo laminado",
+     "6–8 dientes"
+    ],
+    [
+     "Pan del día anterior en rebanadas finas",
+     "150 g"
+    ],
+    [
+     "Pimentón dulce (y picante, opcional)",
+     "8 g"
+    ],
+    [
+     "Caldo de carne o agua",
+     "1,2 l"
+    ],
+    [
+     "Jamón en taquitos (opcional)",
+     "60 g"
+    ],
+    [
+     "Huevos",
+     "4"
+    ],
+    [
+     "Aceite de oliva",
+     "80 ml"
+    ],
+    [
+     "Sal",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Dora el ajo a fuego medio en el aceite sin que se queme; añade el jamón si lo usas.",
+    "Añade el pan y rehógalo hasta que absorba el aceite y se tueste un poco.",
+    "Aparta, añade el pimentón y moja enseguida con el caldo caliente.",
+    "Cuece a fuego suave 10–15 minutos, hasta que el pan se deshaga en parte.",
+    "Casca los huevos en la sopa y deja que cuajen 3–4 minutos, o bátelos y añádelos en hilo; sirve muy caliente."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Pan",
+    "ratio": "35–40 g por ración",
+    "note": "Seco y fino."
+   },
+   {
+    "use": "Caldo",
+    "ratio": "300 ml por ración",
+    "note": ""
+   },
+   {
+    "use": "Huevo escalfado en la sopa",
+    "ratio": "3–4 minutos",
+    "note": "Yema líquida."
+   },
+   {
+    "use": "Pimentón",
+    "ratio": "2 g por ración",
+    "note": "Fuera del fuego."
+   }
+  ],
+  "variants": [
+   {
+    "id": "pan-del-dia-y-pan-viejo",
+    "name": "Pan viejo",
+    "note": "La base."
+   },
+   {
+    "id": "escalfado",
+    "name": "Huevo escalfado",
+    "note": "Punto de la yema."
+   },
+   {
+    "id": "caldo-de-cocido-y-jamon",
+    "name": "Caldo de cocido",
+    "note": "Para mojar."
+   },
+   {
+    "id": "sopas-mallorquinas",
+    "name": "Sopas mallorquinas",
+    "note": "Otra sopa de pan."
+   }
+  ],
+  "keys": [
+   "Ajo dorado, nunca quemado.",
+   "Pimentón fuera del fuego.",
+   "Pan seco y fino.",
+   "Huevo al final.",
+   "Muy caliente al servir."
+  ],
+  "errors": [
+   {
+    "p": "Sopa amarga",
+    "fix": "Ajo o pimentón quemados. Fuego medio y aparta antes del pimentón."
+   },
+   {
+    "p": "Pan en papilla",
+    "fix": "Pan tierno o cocción larga. Pan seco y 10–15 minutos."
+   },
+   {
+    "p": "Sopa sosa",
+    "fix": "Agua sin sabor. Usa caldo."
+   }
+  ],
+  "history": "Las sopas de ajo son un plato tradicional de Castilla y de buena parte del interior de España, ligado al aprovechamiento del pan y al invierno.",
+  "uses": [
+   "Platos de cuchara de invierno",
+   "Cocina de aprovechamiento",
+   "Entrantes calientes"
+  ],
+  "keep": "Base sin huevo, 2 días en frío; el huevo, al servir.",
+  "pro": "Base hecha; regenera por cazuela y escalfa el huevo al pedido.",
+  "related": [
+   "pan-del-dia-y-pan-viejo",
+   "escalfado",
+   "caldo-de-cocido-y-jamon",
+   "sopas-mallorquinas",
+   "cebolla-y-ajo",
+   "pimenton-y-noras"
+  ]
+ },
+ {
+  "id": "caldero",
+  "name": "Caldero",
+  "name_en": "Caldero fish and rice",
+  "cat": "tecnicas",
+  "group": "Cocina levantina",
+  "technique": "guiso",
+  "aka": [
+   "caldero",
+   "arroz caldero",
+   "caldero del Mar Menor",
+   "arroz con ñora y pescado",
+   "caldero murciano"
+  ],
+  "summary": "Pescado de roca cocido en un caldo de ñora y ajo, y con ese caldo un arroz intenso; el pescado se sirve aparte con alioli.",
+  "what": "El caldero es un plato marinero de la costa de Murcia y del sur de Alicante, que toma el nombre de la olla de hierro donde se cocina. Primero se fríen ñoras y ajos, que se majan con tomate; se hace un caldo con ese majado y pescado de roca; el pescado se cuece en él y se reserva. Con el caldo se hace un arroz de color rojizo y sabor muy intenso, más o menos meloso según la casa. El pescado se sirve después o al lado, con [[alioli]].\n\nEs de la misma familia que el [[bullit-de-peix]] ibicenco o el arroz a banda: pescado y arroz del mismo caldo. Cada pueblo de la costa tiene su caldero.",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Pescado de roca variado en rodajas (mújol, dorada, gallineta)",
+     "1,5–2 kg"
+    ],
+    [
+     "Morralla para el caldo",
+     "1 kg"
+    ],
+    [
+     "Ñoras",
+     "4–5"
+    ],
+    [
+     "Ajo",
+     "1 cabeza"
+    ],
+    [
+     "Tomate maduro",
+     "2"
+    ],
+    [
+     "Arroz redondo",
+     "480 g"
+    ],
+    [
+     "Agua",
+     "3 l"
+    ],
+    [
+     "Aceite de oliva",
+     "150 ml"
+    ],
+    [
+     "Azafrán y sal",
+     "0,1 g y al gusto"
+    ],
+    [
+     "Alioli",
+     "200 g"
+    ]
+   ],
+   "steps": [
+    "Fríe en el aceite las ñoras sin pepitas unos segundos y los ajos hasta dorar; resérvalos. Fríe el tomate en el mismo aceite.",
+    "Maja o tritura ñoras, ajos y tomate; ponlos en la olla con el agua y la morralla y cuece 30 minutos; cuela.",
+    "Cuece el pescado en ese caldo 8–10 minutos y resérvalo caliente.",
+    "Con parte del caldo y el aceite de freír, cuece el arroz con el azafrán 16–18 minutos.",
+    "Sirve el arroz con alioli y el pescado aparte, con un poco de caldo."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Ñora",
+    "ratio": "4–5 para 6 raciones",
+    "note": "Frita unos segundos."
+   },
+   {
+    "use": "Arroz",
+    "ratio": "1 parte por 3,5–4 de caldo",
+    "note": "Meloso o seco según la casa."
+   },
+   {
+    "use": "Pescado por ración",
+    "ratio": "250–300 g con espina",
+    "note": ""
+   },
+   {
+    "use": "Cocción del arroz",
+    "ratio": "16–18 minutos",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "bullit-de-peix",
+    "name": "Bullit de peix",
+    "note": "El pariente ibicenco."
+   },
+   {
+    "id": "pimenton-y-noras",
+    "name": "Ñoras",
+    "note": "Freír sin quemar."
+   },
+   {
+    "id": "arroces",
+    "name": "Arroces",
+    "note": "Punto y proporciones."
+   },
+   {
+    "id": "caldo-de-roca",
+    "name": "Caldo de roca",
+    "note": "La base del sabor."
+   }
+  ],
+  "keys": [
+   "Ñora frita unos segundos: quemada amarga.",
+   "Caldo intenso antes del arroz.",
+   "Pescado aparte, con alioli.",
+   "Olla de hierro o cazuela gruesa.",
+   "Cada pueblo tiene su caldero."
+  ],
+  "errors": [
+   {
+    "p": "Arroz amargo",
+    "fix": "Ñora o ajo quemados. Fríe poco."
+   },
+   {
+    "p": "Pescado deshecho",
+    "fix": "Hervor fuerte. Cuece suave."
+   },
+   {
+    "p": "Arroz sin sabor",
+    "fix": "Caldo flojo. Más morralla y reduce."
+   }
+  ],
+  "history": "El caldero es un plato tradicional de pescadores del Mar Menor y del litoral del sur de Alicante, cocinado en una olla de hierro.",
+  "uses": [
+   "Arroces para compartir",
+   "Menús de cocina levantina",
+   "Platos de pescado"
+  ],
+  "keep": "Caldo, 2 días en frío o congelado. Arroz y pescado, al momento.",
+  "pro": "Caldo y pescado preparados; arroz al pedido.",
+  "related": [
+   "bullit-de-peix",
+   "pimenton-y-noras",
+   "arroces",
+   "caldo-de-roca",
+   "alioli",
+   "pescado-de-roca"
+  ]
+ },
+ {
+  "id": "pulpo-a-feira",
+  "name": "Pulpo á feira",
+  "name_en": "Galician octopus",
+  "cat": "tecnicas",
+  "group": "Cocina gallega",
+  "technique": "hervido",
+  "aka": [
+   "pulpo á feira",
+   "pulpo a la gallega",
+   "polbo á feira",
+   "pulpo con cachelos",
+   "asustar el pulpo"
+  ],
+  "summary": "Pulpo cocido en su punto, cortado con tijera en rodajas sobre madera, con sal gruesa, pimentón y aceite, y patatas cocidas.",
+  "what": "El pulpo á feira es la forma gallega de servir el pulpo en ferias y fiestas: cocido en grandes calderos, cortado con tijera en rodajas sobre un plato de madera y aliñado solo con sal gruesa, pimentón (dulce, picante o mezcla) y aceite de oliva. Se acompaña de cachelos, patatas cocidas con piel, a menudo en la misma agua del pulpo.\n\nLa clave es el punto: tierno pero con algo de resistencia, la piel entera. Por eso el pulpo se congela antes (o se golpea, como se hacía antes) y se asusta tres veces en el agua hirviendo para que la piel no se rompa. La técnica general está en [[cefalopodos]]. Cada pulpeira tiene su tiempo y su mezcla de pimentón.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Pulpo congelado y descongelado",
+     "2–2,5 kg"
+    ],
+    [
+     "Agua",
+     "8–10 l"
+    ],
+    [
+     "Patatas medianas con piel (cachelos)",
+     "800 g"
+    ],
+    [
+     "Sal gruesa",
+     "al gusto"
+    ],
+    [
+     "Pimentón dulce y picante",
+     "al gusto"
+    ],
+    [
+     "Aceite de oliva virgen extra",
+     "80 ml"
+    ]
+   ],
+   "steps": [
+    "Lleva el agua a hervor fuerte sin sal.",
+    "Sujeta el pulpo por la cabeza y sumérgelo tres veces unos segundos, sacándolo entre cada vez; luego déjalo dentro.",
+    "Cuece a hervor suave 35–45 minutos según el tamaño; comprueba pinchando la parte gruesa de la pata.",
+    "Apaga y deja reposar 10–15 minutos en el agua; cuece las patatas en esa agua con sal.",
+    "Corta las patas con tijera en rodajas sobre plato de madera, sobre los cachelos en rodajas; sal gruesa, pimentón y aceite."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Pulpo de 2–2,5 kg",
+    "ratio": "35–45 minutos",
+    "note": "Más reposo de 10–15."
+   },
+   {
+    "use": "Agua",
+    "ratio": "4 l por kg de pulpo",
+    "note": "Abundante."
+   },
+   {
+    "use": "Ración",
+    "ratio": "250 g de pulpo cocido",
+    "note": "Con cachelos."
+   },
+   {
+    "use": "Aceite",
+    "ratio": "20 ml por ración",
+    "note": "Al final."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cefalopodos",
+    "name": "Cefalópodos",
+    "note": "Congelado previo y puntos."
+   },
+   {
+    "id": "pimenton-y-noras",
+    "name": "Pimentón",
+    "note": "Dulce y picante."
+   },
+   {
+    "id": "patata-y-boniato",
+    "name": "Cachelos",
+    "note": "Patatas cocidas con piel."
+   },
+   {
+    "id": "frita-de-pulpo-y-de-porc",
+    "name": "Frita de pulpo",
+    "note": "La versión ibicenca."
+   }
+  ],
+  "keys": [
+   "Congelar antes para ablandar.",
+   "Asustar tres veces.",
+   "Probar el punto en la pata gruesa.",
+   "Reposo en el agua.",
+   "Tijera, madera, sal gruesa, pimentón y aceite."
+  ],
+  "errors": [
+   {
+    "p": "Pulpo duro",
+    "fix": "Poco tiempo o sin congelar. Congela y alarga la cocción."
+   },
+   {
+    "p": "Pulpo pelado y blando",
+    "fix": "Cocción excesiva o sin asustar. Asústalo y controla el tiempo."
+   },
+   {
+    "p": "Pimentón amargo",
+    "fix": "Pimentón viejo. Usa uno fresco."
+   }
+  ],
+  "history": "El pulpo á feira es un plato emblemático de Galicia, ligado a las ferias del interior, donde las pulpeiras lo cocían en calderos de cobre.",
+  "uses": [
+   "Raciones y tapas",
+   "Menús de cocina gallega",
+   "Entrantes"
+  ],
+  "keep": "Pulpo cocido, 3 días en frío; se templa en agua caliente antes de servir.",
+  "pro": "Cuece el pulpo antes del servicio y mantenlo en su agua caliente; corta y aliña por ración.",
+  "related": [
+   "cefalopodos",
+   "pimenton-y-noras",
+   "patata-y-boniato",
+   "frita-de-pulpo-y-de-porc",
+   "aceite-de-oliva",
+   "sal-y-flor-de-sal"
+  ]
+ },
+ {
+  "id": "caldo-gallego",
+  "name": "Caldo gallego",
+  "name_en": "Galician broth",
+  "cat": "tecnicas",
+  "group": "Cocina gallega",
+  "technique": "guiso",
+  "aka": [
+   "caldo gallego",
+   "caldo de grelos",
+   "caldo de berzas",
+   "unto",
+   "caldo de nabizas"
+  ],
+  "summary": "Caldo de verdura de hoja, alubias y patata cocidos con hueso de cerdo y unto: el plato de cuchara cotidiano de Galicia.",
+  "what": "El caldo gallego es una sopa espesa de verduras de hoja (grelos, nabizas o berza según la temporada), alubias blancas y patata, cocida con huesos o carne de cerdo curada y unto, una grasa de cerdo curada y añeja que da un sabor muy característico. Se sirve muy caliente y, como todo plato de diario, cambia en cada casa y con la estación.\n\nEs una de las formas de [[cocina-de-aprovechamiento|aprovechar]] la matanza y la huerta, y su caldo sirve de base para otros platos.",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Grelos, nabizas o berza en tiras",
+     "800 g"
+    ],
+    [
+     "Alubias blancas remojadas 12 horas",
+     "200 g en seco"
+    ],
+    [
+     "Patatas cascadas",
+     "600 g"
+    ],
+    [
+     "Hueso de jamón o de espinazo salado (desalado)",
+     "300 g"
+    ],
+    [
+     "Unto",
+     "30–50 g"
+    ],
+    [
+     "Agua",
+     "3 l"
+    ],
+    [
+     "Sal",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Pon el agua fría con el hueso y las alubias; lleva a hervor suave, espuma y cuece 1 hora.",
+    "Añade el unto y las patatas cascadas y cuece 20 minutos.",
+    "Incorpora la verdura y cuece 15–20 minutos más.",
+    "Retira el hueso, ajusta de sal y deja reposar unos minutos.",
+    "Sirve muy caliente, con su caldo espeso por la patata."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Alubias",
+    "ratio": "35 g en seco por ración",
+    "note": ""
+   },
+   {
+    "use": "Verdura",
+    "ratio": "130 g por ración",
+    "note": "De temporada."
+   },
+   {
+    "use": "Unto",
+    "ratio": "30–50 g para 3 l",
+    "note": "Muy sabroso: con medida."
+   },
+   {
+    "use": "Cocción total",
+    "ratio": "1,5–2 horas",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "fabada-y-potajes",
+    "name": "Potajes",
+    "note": "Otros guisos de alubia."
+   },
+   {
+    "id": "lacon-con-grelos",
+    "name": "Lacón con grelos",
+    "note": "Los mismos grelos, con carne."
+   },
+   {
+    "id": "legumbres",
+    "name": "Alubias",
+    "note": "Remojo y cocción."
+   },
+   {
+    "id": "hojas-y-brotes",
+    "name": "Verduras de hoja",
+    "note": "Grelos, nabizas y berzas."
+   }
+  ],
+  "keys": [
+   "Alubias primero, verdura al final.",
+   "Patata cascada para espesar.",
+   "Unto con medida.",
+   "Verdura de temporada.",
+   "Cada casa, su caldo."
+  ],
+  "errors": [
+   {
+    "p": "Caldo aguado",
+    "fix": "Patata cortada a cuchillo. Cáscala."
+   },
+   {
+    "p": "Verdura deshecha",
+    "fix": "Añadida pronto. Al final."
+   },
+   {
+    "p": "Caldo salado",
+    "fix": "Hueso sin desalar. Desálalo antes."
+   }
+  ],
+  "history": "El caldo gallego es el plato de cuchara más cotidiano de Galicia, ligado a la huerta y a la matanza.",
+  "uses": [
+   "Platos de cuchara",
+   "Menús de invierno",
+   "Entrantes calientes"
+  ],
+  "keep": "3–4 días en frío; mejora al día siguiente.",
+  "pro": "Haz el caldo en tanda; la verdura se puede añadir al regenerar para que quede verde.",
+  "related": [
+   "fabada-y-potajes",
+   "lacon-con-grelos",
+   "legumbres",
+   "hojas-y-brotes",
+   "cocina-de-aprovechamiento",
+   "desalado-y-remojo"
+  ]
+ },
+ {
+  "id": "lacon-con-grelos",
+  "name": "Lacón con grelos",
+  "name_en": "Lacón with turnip greens",
+  "cat": "tecnicas",
+  "group": "Cocina gallega",
+  "technique": "hervido",
+  "aka": [
+   "lacón con grelos",
+   "lacón cocido",
+   "lacón",
+   "grelos",
+   "cachelos"
+  ],
+  "summary": "Lacón curado desalado y cocido con chorizo, patatas y grelos en la misma agua: un plato gallego de invierno.",
+  "what": "El lacón es la pata delantera del cerdo, salada y curada. Se desala en agua fría y se cuece lentamente; en la misma agua se cuecen después los chorizos, las patatas (cachelos) y los grelos, los brotes tiernos del nabo, de sabor amargo y verde. Se sirve todo junto, con aceite de oliva y pimentón.\n\nEs un plato muy ligado al invierno y al carnaval en Galicia. Cada casa decide cuánto desalar el lacón y si añade otras carnes de cerdo.",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Lacón curado",
+     "1,5–2 kg"
+    ],
+    [
+     "Chorizos gallegos",
+     "4"
+    ],
+    [
+     "Patatas medianas",
+     "1 kg"
+    ],
+    [
+     "Grelos",
+     "1,5 kg"
+    ],
+    [
+     "Aceite de oliva y pimentón",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Desala el lacón en agua fría 24–48 horas en la cámara, cambiando el agua.",
+    "Cuécelo en agua nueva desde frío, a fuego suave, unos 50 minutos por kilo, hasta que esté tierno.",
+    "Retira el lacón y mantenlo caliente; cuece en su agua los chorizos y las patatas con piel 20–25 minutos.",
+    "Añade los grelos limpios los últimos 10–15 minutos.",
+    "Sirve el lacón en lonchas con los chorizos, las patatas y los grelos, con aceite y pimentón."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Desalado",
+    "ratio": "24–48 horas",
+    "note": "Según tamaño y curación."
+   },
+   {
+    "use": "Cocción del lacón",
+    "ratio": "50 minutos por kg",
+    "note": "A fuego suave."
+   },
+   {
+    "use": "Grelos",
+    "ratio": "10–15 minutos",
+    "note": "Verdes y tiernos."
+   },
+   {
+    "use": "Lacón por ración",
+    "ratio": "200–250 g cocido",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "desalado-y-remojo",
+    "name": "Desalado",
+    "note": "Tiempos y cambios de agua."
+   },
+   {
+    "id": "caldo-gallego",
+    "name": "Caldo gallego",
+    "note": "Con la misma verdura."
+   },
+   {
+    "id": "cocido",
+    "name": "Cocido",
+    "note": "Otro hervido de carnes."
+   },
+   {
+    "id": "hojas-y-brotes",
+    "name": "Grelos",
+    "note": "Verdura de hoja amarga."
+   }
+  ],
+  "keys": [
+   "Desalar bien y probar.",
+   "Cocción suave.",
+   "Todo en la misma agua, por orden.",
+   "Grelos al final.",
+   "Aceite y pimentón al servir."
+  ],
+  "errors": [
+   {
+    "p": "Lacón salado",
+    "fix": "Poco desalado. Más tiempo y cambios de agua."
+   },
+   {
+    "p": "Lacón duro",
+    "fix": "Poca cocción. Sigue hasta que esté tierno."
+   },
+   {
+    "p": "Grelos muy amargos o pasados",
+    "fix": "Demasiado tiempo. 10–15 minutos."
+   }
+  ],
+  "history": "El lacón con grelos es un plato tradicional gallego de invierno, muy presente en las comidas de carnaval.",
+  "uses": [
+   "Platos de invierno",
+   "Menús de cocina gallega",
+   "Comidas para compartir"
+  ],
+  "keep": "Lacón cocido, 4–5 días en frío; se regenera en su agua.",
+  "pro": "Cuece el lacón la víspera; patatas y grelos al servicio en su caldo.",
+  "related": [
+   "desalado-y-remojo",
+   "caldo-gallego",
+   "cocido",
+   "hojas-y-brotes",
+   "sobrasada-y-embutidos",
+   "patata-y-boniato"
+  ]
  }
 ]

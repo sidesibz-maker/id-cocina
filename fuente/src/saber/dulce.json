@@ -6924,5 +6924,1136 @@
    "gelificantes-y-espesantes",
    "coco"
   ]
+ },
+ {
+  "id": "postres-clasicos-espanoles",
+  "name": "Postres clásicos españoles: leche frita y compañía",
+  "name_en": "Classic Spanish desserts",
+  "cat": "dulce",
+  "group": "Cremas",
+  "aka": [
+   "leche frita",
+   "tocino de cielo",
+   "tarta de santiago",
+   "filloas",
+   "postres de la abuela",
+   "postres tradicionales"
+  ],
+  "summary": "La leche frita como receta base y un mapa de los otros clásicos de la cocina española y dónde están en la Biblioteca: tocino de cielo, tarta de almendra, filloas, torrijas, arroz con leche.",
+  "what": "La repostería española de casa y de convento se apoya en pocos ingredientes: leche, huevo, azúcar, almendra, canela y cítricos. La leche frita es una crema espesa de leche y almidón, enfriada, cortada en dados, rebozada y frita: crujiente por fuera y fundente por dentro. Los demás clásicos tienen su ficha: el tocino de cielo y el flan en [[crema-catalana-y-flan]], la tarta de almendra en [[tartas-de-frutos-secos]], las filloas en [[crepes-y-gofres]], las torrijas en [[torrijas-y-postres-de-pan]] y el arroz con leche y las natillas en [[arroz-con-leche-y-natillas]].",
+  "base": {
+   "for": "unos 30 dados de leche frita",
+   "items": [
+    [
+     "Leche entera",
+     "1 l"
+    ],
+    [
+     "Azúcar",
+     "150 g"
+    ],
+    [
+     "Almidón de maíz",
+     "90 g"
+    ],
+    [
+     "Harina",
+     "20 g"
+    ],
+    [
+     "Yemas (opcional, más color y sabor)",
+     "60 g (3)"
+    ],
+    [
+     "Piel de limón y canela en rama",
+     "1 y 1"
+    ],
+    [
+     "Harina y huevo para rebozar",
+     "c. s."
+    ],
+    [
+     "Aceite de oliva suave para freír",
+     "c. s."
+    ],
+    [
+     "Azúcar y canela molida para terminar",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Infusiona 800 ml de la leche con la piel de limón y la canela; cuela.",
+    "Disuelve el almidón, la harina, el azúcar y las yemas en los 200 ml de leche fría restantes.",
+    "Añade la mezcla a la leche caliente y cuece removiendo sin parar hasta que hierva y espese mucho, 3–4 minutos más.",
+    "Vierte en una bandeja untada de aceite, a 2 cm de grosor, cubre a piel y enfría al menos 6 horas.",
+    "Corta en dados, pásalos por harina y huevo y fríe en aceite a 180 °C hasta dorar. Reboza en azúcar y canela."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Leche frita",
+    "ratio": "100–110 g de almidón y harina por litro",
+    "note": "Tiene que sostenerse en frío para cortar."
+   },
+   {
+    "use": "Fritura",
+    "ratio": "Aceite a 180 °C, 1–2 minutos",
+    "note": "Rápido: si tarda, el centro se derrite y se abre."
+   },
+   {
+    "use": "Tocino de cielo",
+    "ratio": "12 yemas y almíbar de 250 g de azúcar y 125 g de agua a punto de hebra",
+    "note": "Almíbar a 105–110 °C; cuajar al baño maría."
+   },
+   {
+    "use": "Leche frita de restaurante",
+    "ratio": "Dados pequeños de 3 cm, fritos al pedir",
+    "note": "Con helado de canela o fruta ácida."
+   }
+  ],
+  "variants": [
+   {
+    "id": "crema-catalana-y-flan",
+    "name": "Tocino de cielo y flan",
+    "note": "Cremas cuajadas de yema."
+   },
+   {
+    "id": "tartas-de-frutos-secos",
+    "name": "Tarta de almendra",
+    "note": "Almendra, huevo y azúcar, sin harina."
+   },
+   {
+    "id": "crepes-y-gofres",
+    "name": "Filloas",
+    "note": "Las crêpes gallegas."
+   }
+  ],
+  "keys": [
+   "La crema bien cocida y espesa: si no, se abre al freír.",
+   "Reposo largo en frío antes de cortar.",
+   "Rebozo completo y aceite caliente.",
+   "Infusiona la leche con calma: el aroma es todo el postre.",
+   "Los clásicos piden ingredientes de primera: huevos, leche y almendra."
+  ],
+  "errors": [
+   {
+    "p": "Se abre y se derrite al freír",
+    "fix": "Crema poco espesa o aceite frío. Más almidón, más reposo y aceite a 180 °C."
+   },
+   {
+    "p": "Sabor a harina",
+    "fix": "Poca cocción. Hierve 3–4 minutos removiendo."
+   },
+   {
+    "p": "Rebozo grueso y aceitoso",
+    "fix": "Demasiada harina o huevo. Sacude bien cada dado."
+   }
+  ],
+  "history": "La repostería tradicional española tiene raíces en la cocina de casa y en los dulces de convento, muchos basados en yemas y almendra. La leche frita es un postre casero muy extendido en el norte de España y en muchas otras zonas.",
+  "uses": [
+   "Postre de carta clásico",
+   "Menú de raíz",
+   "Petit four en dados pequeños",
+   "Postre con helado"
+  ],
+  "keep": "Crema cortada sin freír, en frío y tapada, 3 días. Frita, al momento.",
+  "pro": "Ten la crema cortada en dados en bandeja y rebózalos y fríelos al pedir. Termina con azúcar y canela recién mezclados.",
+  "related": [
+   "crema-catalana-y-flan",
+   "tartas-de-frutos-secos",
+   "crepes-y-gofres",
+   "torrijas-y-postres-de-pan",
+   "arroz-con-leche-y-natillas",
+   "fritura"
+  ]
+ },
+ {
+  "id": "clafoutis",
+  "name": "Clafoutis y postres de fruta en masa líquida",
+  "name_en": "Clafoutis",
+  "cat": "dulce",
+  "group": "Fruta",
+  "aka": [
+   "clafoutis",
+   "clafouti",
+   "flan de cerezas",
+   "fruta horneada en crema",
+   "far"
+  ],
+  "summary": "Fruta cubierta con una masa líquida de huevo, leche y poca harina y horneada: a medio camino entre un flan y una crêpe gruesa.",
+  "what": "El clafoutis clásico se hace con cerezas, a menudo con su hueso, que da un leve aroma de almendra. La masa es como la de una [[crepes-y-gofres|crêpe]] más rica en huevo, que al hornearse cuaja alrededor de la fruta y queda tierna y algo esponjosa, con los bordes dorados. Funciona con cualquier fruta firme de temporada: albaricoque, ciruela, higo, pera, uva o frutos rojos. Es un postre rápido, de horno y para compartir.",
+  "base": {
+   "for": "una fuente de 24 cm (8 raciones)",
+   "items": [
+    [
+     "Cerezas o fruta de temporada",
+     "500 g"
+    ],
+    [
+     "Huevos",
+     "3"
+    ],
+    [
+     "Azúcar",
+     "90 g"
+    ],
+    [
+     "Harina",
+     "60 g"
+    ],
+    [
+     "Leche entera",
+     "250 g"
+    ],
+    [
+     "Nata",
+     "100 g"
+    ],
+    [
+     "Mantequilla para la fuente",
+     "20 g"
+    ],
+    [
+     "Vainilla o ralladura de limón",
+     "al gusto"
+    ],
+    [
+     "Sal",
+     "una pizca"
+    ]
+   ],
+   "steps": [
+    "Unta la fuente con mantequilla y espolvorea con un poco de azúcar.",
+    "Reparte la fruta en el fondo (las cerezas, enteras o deshuesadas).",
+    "Bate los huevos con el azúcar y la sal, añade la harina y después la leche, la nata y el aroma, hasta una masa lisa.",
+    "Vierte sobre la fruta y hornea a 180 °C, 35–40 minutos, hasta que esté dorada y cuajada en el centro.",
+    "Sirve templado, espolvoreado con azúcar glas."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Masa",
+    "ratio": "3 huevos, 60 g de harina y 350 g de lácteos",
+    "note": "Más harina, más parecido a un bizcocho."
+   },
+   {
+    "use": "Fruta",
+    "ratio": "500 g por fuente de 24 cm",
+    "note": "Fruta muy jugosa, salteada antes o con un poco de almidón."
+   },
+   {
+    "use": "Horneado",
+    "ratio": "180 °C, 35–40 minutos",
+    "note": "Individual, 15–20 minutos."
+   }
+  ],
+  "variants": [
+   {
+    "id": "crema-catalana-y-flan",
+    "name": "Flan",
+    "note": "Sin harina; más liso y cremoso."
+   },
+   {
+    "id": "crumbles-de-fruta",
+    "name": "Crumble",
+    "note": "La fruta bajo migas en vez de en crema."
+   },
+   {
+    "id": "higos-y-algarroba",
+    "name": "Clafoutis de higos",
+    "note": "Higos de la isla, miel y tomillo."
+   }
+  ],
+  "keys": [
+   "Masa sin grumos: añade los líquidos poco a poco a la harina.",
+   "Fruta firme; la muy madura suelta agua.",
+   "Sírvelo templado: recién hecho está muy hinchado y se baja enseguida.",
+   "Azúcar en la fuente: forma una costra caramelizada en los bordes.",
+   "Menos azúcar si la fruta es muy dulce."
+  ],
+  "errors": [
+   {
+    "p": "Centro crudo",
+    "fix": "Horno corto o fruta muy jugosa. Alarga y retira el exceso de jugo de la fruta."
+   },
+   {
+    "p": "Gomoso",
+    "fix": "Demasiada harina o masa batida de más. Ajusta la proporción y mezcla lo justo."
+   },
+   {
+    "p": "Aguado",
+    "fix": "Fruta que suelta mucho jugo. Saltéala antes o añade un poco de almidón."
+   }
+  ],
+  "history": "El clafoutis es un postre casero del centro de Francia, tradicionalmente de cerezas. Las masas de huevo y leche horneadas con fruta existen en muchas cocinas europeas.",
+  "uses": [
+   "Postre de fruta de temporada",
+   "Postre para compartir",
+   "Merienda y brunch",
+   "Postre caliente de carta en raciones individuales"
+  ],
+  "keep": "Mejor del día; en frío 2 días y templado antes de servir.",
+  "pro": "Ten la masa hecha en frío y la fruta preparada, y hornea en cazuelitas individuales al pedir: 15–20 minutos.",
+  "related": [
+   "crepes-y-gofres",
+   "crema-catalana-y-flan",
+   "frutos-rojos-y-fruta-de-hueso",
+   "crumbles-de-fruta",
+   "fruta-asada"
+  ]
+ },
+ {
+  "id": "panettone",
+  "name": "Panettone y masas de fermentación larga",
+  "name_en": "Panettone and long-fermented enriched doughs",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "panettone",
+   "pandoro",
+   "colomba",
+   "panetone",
+   "masa madre dulce",
+   "lievito madre"
+  ],
+  "summary": "Masas muy enriquecidas con yema, mantequilla y azúcar que fermentan durante horas con masa madre dulce: las más exigentes y aromáticas de la bollería.",
+  "what": "El panettone es una masa con mucha más grasa y azúcar que un [[brioche]], levada con una [[masa-madre]] dulce y firme que se refresca varias veces antes de usarla. Se hace en dos amasados: el primero fermenta toda la noche hasta triplicar, el segundo añade el resto de yema, azúcar, mantequilla, aromas y fruta confitada. Después de una última fermentación larga en su molde, se hornea y se enfría colgado boca abajo para que no se hunda. Es un proceso de dos o tres días donde mandan la fuerza de la masa madre y la temperatura.",
+  "base": {
+   "for": "unos 4 panettones de 1 kg (orientativo)",
+   "items": [
+    [
+     "Primer amasado: harina de gran fuerza",
+     "1 kg"
+    ],
+    [
+     "Primer amasado: masa madre dulce refrescada",
+     "250–300 g"
+    ],
+    [
+     "Primer amasado: agua",
+     "350 g"
+    ],
+    [
+     "Primer amasado: azúcar",
+     "250 g"
+    ],
+    [
+     "Primer amasado: yemas",
+     "200 g"
+    ],
+    [
+     "Primer amasado: mantequilla",
+     "300 g"
+    ],
+    [
+     "Segundo amasado: harina",
+     "250 g"
+    ],
+    [
+     "Segundo amasado: azúcar, yemas y mantequilla",
+     "150 g, 250 g y 300 g"
+    ],
+    [
+     "Segundo amasado: miel, sal y vainilla",
+     "50 g, 12 g y al gusto"
+    ],
+    [
+     "Fruta confitada de naranja y pasas",
+     "600–800 g"
+    ]
+   ],
+   "steps": [
+    "Refresca la masa madre dulce 3 veces cada 4 horas a 28 °C hasta que triplique en cada refresco.",
+    "Primer amasado: harina, agua, masa madre y azúcar hasta desarrollar el gluten; añade las yemas en tandas y la mantequilla pomada al final. Fermenta a 26–28 °C hasta triplicar, 10–14 horas.",
+    "Segundo amasado: añade la harina al primer amasado, después el azúcar y las yemas en tandas, la miel, la sal, la mantequilla y por último la fruta.",
+    "Divide, bolea, pon en los moldes de papel y fermenta a 28 °C hasta que la masa llegue casi al borde, 6–8 horas.",
+    "Corta una cruz, pon un poco de mantequilla y hornea a 165–170 °C hasta que el corazón marque 92–94 °C.",
+    "Pincha la base con agujas y cuélgalo boca abajo hasta que se enfríe por completo, 8–12 horas."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Primera fermentación",
+    "ratio": "26–28 °C, 10–14 horas, hasta triplicar",
+    "note": "Si no triplica, la masa madre no tenía fuerza."
+   },
+   {
+    "use": "Fermentación en molde",
+    "ratio": "28 °C, 6–8 horas",
+    "note": "Hasta casi el borde."
+   },
+   {
+    "use": "Horneado",
+    "ratio": "165–170 °C hasta 92–94 °C al corazón",
+    "note": "Unos 50 minutos para 1 kg."
+   },
+   {
+    "use": "Enfriado",
+    "ratio": "Colgado boca abajo 8–12 horas",
+    "note": "Imprescindible para que no se hunda."
+   }
+  ],
+  "variants": [
+   {
+    "id": "brioche",
+    "name": "Brioche",
+    "note": "Masa enriquecida más sencilla y rápida, con levadura."
+   },
+   {
+    "id": "roscon-y-panes-dulces",
+    "name": "Roscón",
+    "note": "Pan dulce de fiesta más sencillo."
+   },
+   {
+    "id": null,
+    "name": "Colomba y pandoro",
+    "note": "La misma familia: con forma de paloma y glaseado de almendra, o sin fruta y en molde de estrella."
+   }
+  ],
+  "keys": [
+   "Todo depende de la fuerza de la masa madre: sin varios refrescos previos, no sube.",
+   "Harina de gran fuerza: la masa tiene que sostener mucha grasa y azúcar.",
+   "Añade yemas y mantequilla en tandas, sin perder la elasticidad.",
+   "Temperatura constante en cada fermentación.",
+   "Enfriar colgado es parte de la receta."
+  ],
+  "errors": [
+   {
+    "p": "No triplica en la primera fermentación",
+    "fix": "Masa madre débil o temperatura baja. Refresca más veces y fermenta a 26–28 °C."
+   },
+   {
+    "p": "Se hunde al enfriar",
+    "fix": "No se colgó boca abajo o poco horneado. Cuelga en cuanto salga y hornea hasta 92–94 °C."
+   },
+   {
+    "p": "Masa que se rompe y suelta grasa",
+    "fix": "Mantequilla añadida demasiado rápido o masa caliente. Añade en tandas y enfría si hace falta."
+   },
+   {
+    "p": "Sabor ácido",
+    "fix": "Masa madre demasiado ácida. Refresca más y a más temperatura antes de usarla."
+   }
+  ],
+  "history": "El panettone es el pan dulce navideño de Milán y la colomba el de Pascua; ambos se han extendido por todo el mundo. Su elaboración artesanal con masa madre es una de las pruebas más exigentes de la panadería.",
+  "uses": [
+   "Dulce de Navidad",
+   "Desayuno y brunch",
+   "Torrija o pudin de panettone",
+   "Postre con crema de mascarpone o zabaione"
+  ],
+  "keep": "En su bolsa cerrada, a temperatura ambiente, 2–4 semanas gracias a la masa madre y al azúcar.",
+  "pro": "Organízalo como un proyecto de tres días con horario de refrescos y fermentaciones apuntado. Haz pruebas pequeñas antes de la tanda grande.",
+  "related": [
+   "masa-madre",
+   "brioche",
+   "frutas-en-almibar",
+   "masas-laminadas-fermentadas",
+   "roscon-y-panes-dulces"
+  ]
+ },
+ {
+  "id": "zabaione",
+  "name": "Zabaione",
+  "name_en": "Zabaione",
+  "cat": "dulce",
+  "group": "Cremas",
+  "aka": [
+   "zabaglione",
+   "sabayon dulce",
+   "crema de yema y vino",
+   "sabayon de vino dulce"
+  ],
+  "summary": "Yemas, azúcar y vino dulce batidos al baño maría hasta formar una crema espumosa y templada, para servir sola, con fruta o gratinada.",
+  "what": "Es el sabayón en su forma dulce y original: yema y azúcar con un vino dulce o generoso, batidos sobre el calor hasta que triplican su volumen y quedan como una espuma densa. Se sirve recién hecho y templado, con fruta, galletas o un bizcocho, o se extiende sobre fruta y se dora en la salamandra. Frío y aligerado con nata, se convierte en una crema estable para vasos y rellenos. La versión salada está en [[sabayones-salados]].",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Yemas",
+     "120 g (6)"
+    ],
+    [
+     "Azúcar",
+     "80 g"
+    ],
+    [
+     "Vino dulce o generoso (moscatel, Pedro Ximénez, Marsala)",
+     "120 ml"
+    ],
+    [
+     "Ralladura de limón (opcional)",
+     "una pizca"
+    ]
+   ],
+   "steps": [
+    "Pon las yemas y el azúcar en un bol de acero y bátelos hasta que blanqueen.",
+    "Añade el vino y coloca el bol sobre un baño maría que no hierva, sin que toque el agua.",
+    "Bate sin parar, levantando la varilla, hasta que la mezcla triplique su volumen y marque un rastro espeso (75–80 °C), unos 6–8 minutos.",
+    "Sirve enseguida, templado, en copa o sobre fruta.",
+    "Para gratinar, extiende sobre fruta en un plato y dora en salamandra unos segundos."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Zabaione clásico",
+    "ratio": "1 yema, 1 cucharada de azúcar y 2 de vino",
+    "note": "Batido a 75–80 °C."
+   },
+   {
+    "use": "Crema fría de zabaione",
+    "ratio": "Zabaione enfriado batiendo sobre hielo y mezclado con su mismo peso de nata semimontada",
+    "note": "Estable en frío 1–2 días."
+   },
+   {
+    "use": "Gratinado de fruta",
+    "ratio": "40–50 g de zabaione por ración sobre fruta",
+    "note": "Salamandra fuerte, 20–30 segundos."
+   }
+  ],
+  "variants": [
+   {
+    "id": "sabayones-salados",
+    "name": "Sabayón salado",
+    "note": "Con cava, fumet o jugo para pescados y verduras."
+   },
+   {
+    "id": "crema-inglesa",
+    "name": "Crema inglesa",
+    "note": "Yema y lácteo cocidos sin aire."
+   },
+   {
+    "id": "tiramisu-y-mascarpone",
+    "name": "Crema de mascarpone",
+    "note": "Pariente frío con queso."
+   }
+  ],
+  "keys": [
+   "Bol de acero y baño maría sin hervor.",
+   "Batir sin parar y apartar del calor si cuaja en los bordes.",
+   "Vino con sabor: es casi el único aroma.",
+   "Servir al momento: se baja en pocos minutos.",
+   "Para frío, enfriar batiendo y estabilizar con nata."
+  ],
+  "errors": [
+   {
+    "p": "Grumos de yema cocida",
+    "fix": "Demasiado calor. Retira del baño maría a tiempo y cuela."
+   },
+   {
+    "p": "No monta",
+    "fix": "Poco calor o poco batido. Sigue sobre el baño maría hasta 75–80 °C."
+   },
+   {
+    "p": "Se separa el líquido",
+    "fix": "Poco cocido o reposado. Sírvelo recién hecho o estabilízalo con nata."
+   }
+  ],
+  "history": "El zabaione es un postre clásico de la cocina italiana, tradicionalmente con Marsala. La cocina francesa lo adoptó como sabayón y lo llevó también a las salsas saladas.",
+  "uses": [
+   "Postre de cuchara templado",
+   "Gratinado de frutos rojos o higos",
+   "Acompañar bizcochos y panettone",
+   "Crema fría para vasos"
+  ],
+  "keep": "Caliente, al momento. La crema fría con nata, 1–2 días en frío.",
+  "pro": "Ten las yemas, el azúcar y el vino pesados por raciones y bate al pedir: en 6–8 minutos está listo.",
+  "related": [
+   "sabayones-salados",
+   "crema-inglesa",
+   "fruta-asada",
+   "vinos-y-licores",
+   "gratinado"
+  ]
+ },
+ {
+  "id": "helados-de-autor",
+  "name": "Helados de autor",
+  "name_en": "Signature ice creams",
+  "cat": "dulce",
+  "group": "Frío",
+  "aka": [
+   "helado infusionado",
+   "helado de hierbas",
+   "helado salado",
+   "helado de queso",
+   "helado ahumado",
+   "helado de aceituna"
+  ],
+  "summary": "Cómo crear helados con sabores propios: infusionar hierbas, especias, tostados o humo en la base, y llevar al helado productos salados como queso, aceituna o verdura.",
+  "what": "Una vez dominado el equilibrio de [[helados-y-sorbetes]], el sabor se puede llevar a cualquier sitio. Hay tres caminos. Infusionar: hierbas, especias, cáscaras, café, pan tostado, frutos secos o humo en la leche o la nata, y colar antes de hacer la base. Incorporar un producto: queso, aceite, aceituna, verdura asada o fruta cocinada, ajustando azúcar y grasa porque cambian el equilibrio. Y terminar: sal en escamas, aceite o un crujiente. Un buen helado de autor sabe claramente a lo que dice y acompaña al resto del postre.",
+  "method": [
+   "Elige el sabor y decide si va infusionado (aroma) o incorporado (producto).",
+   "Para infusionar, calienta la leche o la nata, añade el aromático, tapa y deja el tiempo justo; para hierbas delicadas, mejor en frío 12–24 horas. Cuela y repón el líquido perdido.",
+   "Haz la base de crema o de sorbete con el líquido infusionado.",
+   "Si incorporas un producto, pésalo y ajusta: el queso aporta grasa y sal; la fruta, agua y azúcar; el aceite, grasa.",
+   "Prueba en frío y madura la base 4–12 horas antes de mantecar.",
+   "Termina en el plato con un elemento que recuerde el sabor: la hierba fresca, un crujiente del mismo fruto seco, aceite."
+  ],
+  "ratios": [
+   {
+    "use": "Hierbas frescas",
+    "ratio": "15–25 g por litro de leche",
+    "note": "En frío 12–24 h, o a 70–80 °C tapado 10–15 min."
+   },
+   {
+    "use": "Tostados (pan, frutos secos, café en grano)",
+    "ratio": "80–120 g por litro, infusionados en caliente 30 minutos",
+    "note": "Colar apretando; repón la leche perdida."
+   },
+   {
+    "use": "Helado de queso",
+    "ratio": "150–250 g de queso por kilo de base, con un 10–20 % menos de azúcar",
+    "note": "Fundir el queso en la base caliente."
+   },
+   {
+    "use": "Sal en un helado dulce",
+    "ratio": "1–2 g por kilo de base",
+    "note": "Realza sin que se note salado."
+   }
+  ],
+  "variants": [
+   {
+    "id": "postres-de-aceite-y-hierbas",
+    "name": "Helado de aceite de oliva",
+    "note": "Aceite emulsionado en la base de crema."
+   },
+   {
+    "id": "helados-sin-maquina",
+    "name": "Semifrío de autor",
+    "note": "Los mismos sabores en una base sin mantecar."
+   },
+   {
+    "id": "quesos-de-las-islas",
+    "name": "Helado de queso de la isla",
+    "note": "Queso fresco o curado de cabra u oveja."
+   }
+  ],
+  "keys": [
+   "Infusiona tapado y con el tiempo justo.",
+   "Repón el líquido que se queda en el aromático.",
+   "Ajusta el equilibrio cuando incorporas un producto con grasa, sal o agua.",
+   "Madura la base antes de mantecar: el sabor se asienta.",
+   "Prueba siempre en frío: el frío apaga el aroma y el dulce."
+  ],
+  "errors": [
+   {
+    "p": "Sabor débil",
+    "fix": "Infusión corta o probado en caliente. Sube la dosis o el tiempo y prueba en frío."
+   },
+   {
+    "p": "Sabor a hierba cocida o amargo",
+    "fix": "Infusión larga o caliente. Usa infusión en frío para hierbas delicadas."
+   },
+   {
+    "p": "Textura dura o arenosa",
+    "fix": "El producto añadido rompió el equilibrio. Recalcula azúcar y sólidos."
+   }
+  ],
+  "history": "Los helados de sabores salados, de hierbas o de productos inesperados se extendieron en la alta cocina de finales del siglo XX, apoyados en un control más preciso del equilibrio de las bases.",
+  "uses": [
+   "Postres de autor",
+   "Acompañar quesos o entrantes fríos",
+   "Prepostre",
+   "Helado salado con crudos o verduras"
+  ],
+  "keep": "A −18 °C, tapado con film a piel, 1 semana para conservar el aroma. Sacar a −12 °C para servir.",
+  "pro": "Infusiona la leche el día anterior en frío y mantecar por la mañana. Etiqueta cada helado con su dosis de infusión: así se repite igual.",
+  "related": [
+   "helados-y-sorbetes",
+   "infusiones",
+   "postres-de-aceite-y-hierbas",
+   "crema-inglesa",
+   "hierbas-frescas",
+   "quesos-en-cocina"
+  ]
+ },
+ {
+  "id": "decoraciones-de-azucar-y-chocolate",
+  "name": "Decoraciones de azúcar y chocolate",
+  "name_en": "Sugar and chocolate decorations",
+  "cat": "dulce",
+  "group": "Espumas y azúcar",
+  "aka": [
+   "isomalt",
+   "caramelo hilado",
+   "azucar soplado",
+   "laminas de chocolate",
+   "virutas de chocolate",
+   "decoracion de postres",
+   "chocolate en spray"
+  ],
+  "summary": "Láminas, hilos, burbujas y formas de azúcar o de chocolate que dan altura, brillo y crujiente al postre, siempre comestibles y con sentido.",
+  "what": "Una decoración de azúcar o chocolate debe sumar textura y sabor, no solo forma. Con azúcar: caramelo hilado en nidos finos, láminas de caramelo o de isomalt (un azúcar que no se oscurece ni absorbe tanta humedad), y piezas transparentes o de color. Con [[chocolate-y-templado|chocolate templado]]: láminas finas sobre acetato, virutas, aros, formas cortadas, o un pulverizado con manteca de cacao que deja un acabado aterciopelado. La humedad es el enemigo del azúcar y el calor el del chocolate: se montan al final.",
+  "method": [
+   "Decide qué aporta la decoración: crujiente, altura, brillo o un sabor (caramelo tostado, chocolate amargo).",
+   "Para caramelo hilado, cuece azúcar con un poco de glucosa hasta 155–160 °C, enfría unos segundos y deja caer hilos con un tenedor sobre dos varillas aceitadas.",
+   "Para láminas de isomalt, funde a 160–170 °C, extiende fino entre dos tapetes o en moldes y deja enfriar.",
+   "Para láminas de chocolate, extiende chocolate templado muy fino sobre acetato, deja que empiece a cristalizar y corta la forma; enfría bajo peso para que no se curve.",
+   "Para el pulverizado, mezcla chocolate y manteca de cacao 60:40 a 45–50 °C y pulveriza sobre piezas congeladas.",
+   "Guarda cada decoración en recipiente hermético con gel de sílice y móntala en el último momento."
+  ],
+  "ratios": [
+   {
+    "use": "Caramelo hilado",
+    "ratio": "200 g de azúcar, 50 g de glucosa y 60 g de agua, a 155–160 °C",
+    "note": "Hilar en ambiente seco."
+   },
+   {
+    "use": "Isomalt",
+    "ratio": "Fundido a 160–170 °C, solo o con colorante",
+    "note": "Más estable que el azúcar frente a la humedad."
+   },
+   {
+    "use": "Pulverizado de chocolate",
+    "ratio": "60 % de chocolate y 40 % de manteca de cacao, a 45–50 °C",
+    "note": "Sobre piezas congeladas da efecto terciopelo."
+   },
+   {
+    "use": "Láminas de chocolate",
+    "ratio": "Chocolate templado a 1–2 mm sobre acetato",
+    "note": "Cortar cuando empiece a cristalizar."
+   }
+  ],
+  "variants": [
+   {
+    "id": "tejas-y-crujientes-dulces",
+    "name": "Tejas",
+    "note": "Crujientes de masa que también decoran."
+   },
+   {
+    "id": "caramelo",
+    "name": "Caramelo",
+    "note": "Los puntos del azúcar."
+   },
+   {
+    "id": "merengues",
+    "name": "Merengue seco",
+    "note": "Decoración ligera y crujiente."
+   }
+  ],
+  "keys": [
+   "Comestible y con sentido: nada que no se pueda o no se quiera comer.",
+   "Ambiente seco para el azúcar y fresco para el chocolate.",
+   "Guarda con gel de sílice en recipiente hermético.",
+   "Monta en el último momento.",
+   "Menos es más: una pieza bien hecha mejor que varias."
+  ],
+  "errors": [
+   {
+    "p": "El azúcar se pega y se ablanda",
+    "fix": "Humedad. Usa isomalt o glucosa, guarda en seco y monta al final."
+   },
+   {
+    "p": "Láminas de chocolate sin brillo o curvadas",
+    "fix": "Chocolate mal templado o enfriado sin peso. Templa bien y enfría bajo peso."
+   },
+   {
+    "p": "Caramelo amargo",
+    "fix": "Demasiado oscuro. Para a 155–160 °C para hilos y láminas claras."
+   }
+  ],
+  "history": "Las piezas de azúcar y chocolate han sido parte de la pastelería de exhibición desde hace siglos. En el postre de restaurante se han vuelto más pequeñas y funcionales, pensadas para comerse.",
+  "uses": [
+   "Postres de emplatado",
+   "Tartas y entremets",
+   "Petit fours",
+   "Helados y sorbetes"
+  ],
+  "keep": "Azúcar e isomalt, en hermético con gel de sílice, varios días. Chocolate templado, en lugar fresco (15–18 °C), semanas.",
+  "pro": "Haz las decoraciones en un momento tranquilo y guárdalas en cajas herméticas con gel de sílice, cerca del pase de postres pero lejos del calor y el vapor.",
+  "related": [
+   "caramelo",
+   "chocolate-y-templado",
+   "tejas-y-crujientes-dulces",
+   "merengues",
+   "emplatado"
+  ]
+ },
+ {
+  "id": "roscon-y-panes-dulces",
+  "name": "Roscón y panes dulces de fiesta",
+  "name_en": "Roscón and festive sweet breads",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "roscon de reyes",
+   "roscon",
+   "mona de pascua",
+   "pan dulce",
+   "pan de azahar",
+   "fogaseta",
+   "pan de fiesta"
+  ],
+  "summary": "Masas dulces fermentadas, perfumadas con azahar y cítricos, para las fiestas: el roscón de Reyes, las monas de Pascua y otros panes dulces de la tradición.",
+  "what": "El roscón es una masa enriquecida, menos grasa que un [[brioche]], aromatizada con agua de azahar y ralladura de cítricos, formada en anillo y decorada con fruta confitada, almendra y azúcar. Gana mucho con un prefermento o con [[masa-madre]], que le da sabor y lo mantiene tierno más días. Las monas de Pascua y otros panes dulces de fiesta de Levante y las islas usan masas parecidas, a veces con aceite en lugar de mantequilla. Se puede rellenar de nata, trufa o crema.",
+  "base": {
+   "for": "2 roscones medianos (unos 900 g cada uno)",
+   "items": [
+    [
+     "Harina de fuerza",
+     "1 kg"
+    ],
+    [
+     "Leche templada",
+     "250 g"
+    ],
+    [
+     "Huevos",
+     "200 g (4)"
+    ],
+    [
+     "Azúcar",
+     "200 g"
+    ],
+    [
+     "Mantequilla pomada",
+     "150 g"
+    ],
+    [
+     "Levadura fresca",
+     "30 g"
+    ],
+    [
+     "Sal",
+     "10 g"
+    ],
+    [
+     "Agua de azahar",
+     "30 g"
+    ],
+    [
+     "Ralladura de naranja y de limón",
+     "1 de cada"
+    ],
+    [
+     "Para decorar: huevo, fruta confitada, almendra laminada y azúcar humedecido",
+     "c. s."
+    ]
+   ],
+   "steps": [
+    "Disuelve la levadura en la leche y mezcla con un cuarto de la harina; deja fermentar 30 minutos como prefermento.",
+    "Añade el resto de la harina, los huevos, el azúcar, la sal, el azahar y las ralladuras; amasa hasta que la masa esté elástica, 10 minutos. Añade la mantequilla y amasa hasta integrarla.",
+    "Fermenta tapada 1,5–2 horas, o toda la noche en frío para más sabor.",
+    "Divide, bolea, haz un agujero en el centro y estira en anillo. Fermenta en la bandeja a 26–28 °C hasta que doble, 1,5–2 horas.",
+    "Pinta con huevo, decora con fruta, almendra y azúcar humedecido con unas gotas de agua.",
+    "Hornea a 180 °C, 20–25 minutos, hasta un dorado intenso. Enfría en rejilla y rellena si quieres."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Masa de roscón",
+    "ratio": "20 % de azúcar, 20 % de huevo y 15 % de mantequilla sobre la harina",
+    "note": "Con 3 % de agua de azahar."
+   },
+   {
+    "use": "Fermentación en frío",
+    "ratio": "12–16 horas a 4 °C",
+    "note": "Más sabor y mejor conservación."
+   },
+   {
+    "use": "Horneado",
+    "ratio": "180 °C, 20–25 minutos",
+    "note": "Corazón a 92–94 °C."
+   },
+   {
+    "use": "Relleno de nata",
+    "ratio": "500 g de nata montada con 50 g de azúcar por roscón",
+    "note": "Rellenar en frío y servir el mismo día."
+   }
+  ],
+  "variants": [
+   {
+    "id": "panettone",
+    "name": "Panettone",
+    "note": "Pan dulce de fermentación larga, más rico y complejo."
+   },
+   {
+    "id": "brioche",
+    "name": "Brioche",
+    "note": "Masa enriquecida más mantecosa."
+   },
+   {
+    "id": null,
+    "name": "Mona de Pascua",
+    "note": "Pan dulce de Pascua de Cataluña y Valencia, a veces con huevo duro encima."
+   }
+  ],
+  "keys": [
+   "Prefermento o masa madre: el roscón de un día mejora mucho.",
+   "Agua de azahar con medida: en exceso amarga.",
+   "Fermentación completa antes del horno: si no, queda denso.",
+   "Azúcar humedecido para que no se queme y quede en grano.",
+   "Rellena en frío y el mismo día."
+  ],
+  "errors": [
+   {
+    "p": "Miga seca al día siguiente",
+    "fix": "Fermentación corta o horno largo. Usa prefermento y saca a 92–94 °C."
+   },
+   {
+    "p": "Sabor amargo",
+    "fix": "Exceso de agua de azahar. Mide la dosis."
+   },
+   {
+    "p": "Agujero central cerrado",
+    "fix": "Anillo estrecho. Haz el hueco grande: se cierra al fermentar."
+   }
+  ],
+  "history": "El roscón de Reyes es el dulce de la fiesta de Reyes en España, con la costumbre de esconder una figura y un haba en la masa. Las monas y otros panes dulces de Pascua son tradicionales en el Levante y las islas.",
+  "uses": [
+   "Dulce de Reyes",
+   "Desayuno y merienda",
+   "Relleno de nata o trufa",
+   "Torrijas de roscón"
+  ],
+  "keep": "Sin rellenar, tapado, 2–3 días; congelado, 1 mes. Relleno de nata, en frío y el mismo día.",
+  "pro": "Amasa por la tarde, fermenta en frío y forma y hornea por la mañana. Los roscones del día anterior se convierten en torrijas.",
+  "related": [
+   "brioche",
+   "panettone",
+   "masa-madre",
+   "frutas-en-almibar",
+   "citricos",
+   "torrijas-y-postres-de-pan"
+  ]
+ },
+ {
+  "id": "postres-de-fruta-por-temporada",
+  "name": "Postres de fruta por temporada",
+  "name_en": "Seasonal fruit desserts",
+  "cat": "dulce",
+  "group": "Fruta",
+  "aka": [
+   "postre de temporada",
+   "fruta de temporada",
+   "postres de verano",
+   "postres de invierno",
+   "calendario de postres"
+  ],
+  "summary": "Qué fruta usar en cada época del año en el Mediterráneo y qué postres le sientan mejor: crudo, asado, en almíbar, en helado o en tarta.",
+  "what": "La fruta en su pico casi no necesita ayuda: un buen postre de temporada la muestra con pocas técnicas. Cada estación tiene sus frutas y sus formas: los cítricos y la fruta de invierno piden cremas ácidas, granizados y asados; la primavera trae fresas, nísperos y cerezas, buenas en crudo y en masas; el verano, fruta de hueso, melón, sandía e higos, para comer casi tal cual, asados o en sorbete; y el otoño, uva, granada, membrillo, caqui y castañas, para almíbares, confituras y horno. El calendario general está en [[temporada-mes-a-mes]].",
+  "method": [
+   "Prueba la fruta tal cual antes de decidir: dulzor, acidez, textura y aroma.",
+   "Si está perfecta, intervén poco: crudo con un ácido, una hierba y un crujiente.",
+   "Si está firme o ácida, el calor la mejora: asada, a la brasa o escalfada.",
+   "Si sobra o se acaba la temporada, consérvala: almíbar, confitura, pasta de fruta o congelada en puré.",
+   "Combina dos texturas de la misma fruta (cruda y asada, sorbete y gel) y un contraste: lácteo, crujiente o hierba.",
+   "Ajusta el azúcar a cada partida: la misma fruta cambia de una semana a otra."
+  ],
+  "ratios": [
+   {
+    "use": "Invierno (diciembre a febrero)",
+    "ratio": "Naranja, mandarina, limón, pomelo, manzana, pera, caqui al principio",
+    "note": "Curds, granizados de cítrico, ensaladas de cítricos con aceite, peras al vino."
+   },
+   {
+    "use": "Primavera (marzo a mayo)",
+    "ratio": "Fresas, nísperos, cerezas al final, primeros albaricoques",
+    "note": "Fresas con vinagre y pimienta, nísperos en almíbar, clafoutis de cereza."
+   },
+   {
+    "use": "Verano (junio a agosto)",
+    "ratio": "Albaricoque, melocotón, nectarina, ciruela, melón, sandía, frutos rojos, higos desde julio",
+    "note": "Fruta a la brasa, sorbetes, sopas frías de fruta, tartas finas."
+   },
+   {
+    "use": "Otoño (septiembre a noviembre)",
+    "ratio": "Higos, uva, granada, membrillo, caqui, manzana y pera nuevas",
+    "note": "Membrillo, tatin, higos asados con algarroba, granizado de granada."
+   }
+  ],
+  "variants": [
+   {
+    "id": "fruta-asada",
+    "name": "Fruta asada y a la brasa",
+    "note": "Para fruta firme o algo ácida."
+   },
+   {
+    "id": "frutas-en-almibar",
+    "name": "Frutas en almíbar",
+    "note": "Para conservar y para fruta dura."
+   },
+   {
+    "id": "coulis-y-geles-de-fruta",
+    "name": "Coulis y geles",
+    "note": "Para llevar la fruta a la salsa."
+   }
+  ],
+  "keys": [
+   "Prueba primero; decide después.",
+   "Fruta en su pico, poca intervención.",
+   "Dos texturas de la misma fruta y un contraste.",
+   "Conserva en el final de temporada.",
+   "Ajusta azúcar y ácido a cada partida."
+  ],
+  "errors": [
+   {
+    "p": "Postre de fruta sin sabor",
+    "fix": "Fruta fuera de temporada o verde. Cambia de fruta o cocínala para concentrar."
+   },
+   {
+    "p": "Postre empalagoso",
+    "fix": "Fruta dulce con más azúcar. Añade ácido y quita azúcar."
+   },
+   {
+    "p": "Carta con la misma fruta todo el año",
+    "fix": "Falta de calendario. Revisa los postres cada temporada."
+   }
+  ],
+  "history": "Terminar la comida con fruta del tiempo es una costumbre muy arraigada en las casas mediterráneas. La pastelería de restaurante actual ha vuelto a mirar la fruta de temporada como protagonista.",
+  "uses": [
+   "Postres de carta que cambian con la estación",
+   "Prepostres",
+   "Menú de temporada",
+   "Conservas para todo el año"
+  ],
+  "keep": "Fruta madura, en frío y separada de la que madura (manzana, plátano). Purés y almíbares según su ficha.",
+  "pro": "Cada semana, prueba la fruta que entra y decide con ella el postre del momento. Congela purés en el pico para tener sorbetes fuera de temporada.",
+  "related": [
+   "temporada-mes-a-mes",
+   "fruta-asada",
+   "frutas-en-almibar",
+   "coulis-y-geles-de-fruta",
+   "frutos-rojos-y-fruta-de-hueso",
+   "citricos"
+  ]
+ },
+ {
+  "id": "galletas-de-aceite",
+  "name": "Galletas, tortas y rosquillas de aceite",
+  "name_en": "Olive oil biscuits and twists",
+  "cat": "dulce",
+  "group": "Dulces de la isla",
+  "aka": [
+   "galletas de aceite",
+   "tortas de aceite",
+   "rosquillas",
+   "rosquillas de anis",
+   "pastas de aceite",
+   "galletas de vino"
+  ],
+  "summary": "Pastas de casa hechas con aceite de oliva en vez de mantequilla, a menudo con vino, anís y cítricos: galletas crujientes, tortas finas y rosquillas.",
+  "what": "En la repostería de casa del Mediterráneo, la grasa de siempre ha sido el aceite de oliva. Las galletas de aceite son masas de harina, aceite, azúcar y un líquido aromático (vino blanco, anís o zumo de naranja) que quedan crujientes y ligeras. Las tortas de aceite son láminas finas de masa de pan con aceite, anís y azúcar horneadas hasta quedar quebradizas. Las rosquillas pueden hornearse o freírse. Son parientes de las [[orelletes-y-bunyols|orelletes]] de la isla y una alternativa sin lácteos a las [[sable-y-galletas|galletas de mantequilla]].",
+  "base": {
+   "for": "unas 50 galletas",
+   "items": [
+    [
+     "Harina floja",
+     "500 g"
+    ],
+    [
+     "Aceite de oliva suave",
+     "125 g"
+    ],
+    [
+     "Azúcar",
+     "150 g"
+    ],
+    [
+     "Vino blanco o licor de anís",
+     "60 g"
+    ],
+    [
+     "Huevo",
+     "1"
+    ],
+    [
+     "Matalahúva (anís en grano) ligeramente tostada",
+     "3 g"
+    ],
+    [
+     "Ralladura de limón o naranja",
+     "1"
+    ],
+    [
+     "Levadura química (opcional)",
+     "4 g"
+    ],
+    [
+     "Sal",
+     "2 g"
+    ]
+   ],
+   "steps": [
+    "Calienta el aceite con la piel de limón (sin la parte blanca) hasta que se dore la piel; retírala y deja templar el aceite. Añade la matalahúva.",
+    "Mezcla el azúcar, el huevo, el vino y el aceite templado.",
+    "Añade la harina con la levadura y la sal y mezcla hasta tener una masa que no se pegue; no amases de más.",
+    "Estira a 4–5 mm y corta, o forma rosquillas finas.",
+    "Hornea a 180 °C, 12–15 minutos, hasta que estén doradas por los bordes. Pasa por azúcar en caliente si quieres."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Galleta de aceite",
+    "ratio": "4 partes de harina, 1 de aceite, 1,2 de azúcar y 0,5 de vino o anís",
+    "note": "Horno a 180 °C."
+   },
+   {
+    "use": "Torta de aceite fina",
+    "ratio": "Masa de pan con 15 % de aceite y anís, estirada a 1–2 mm y espolvoreada de azúcar",
+    "note": "Horno a 200 °C, 8–10 minutos."
+   },
+   {
+    "use": "Rosquillas fritas",
+    "ratio": "Masa más blanda con huevo y levadura, frita en aceite a 170 °C",
+    "note": "Rebozar en azúcar en caliente."
+   }
+  ],
+  "variants": [
+   {
+    "id": "orelletes-y-bunyols",
+    "name": "Orelletes",
+    "note": "Masa fina frita de la isla."
+   },
+   {
+    "id": "sable-y-galletas",
+    "name": "Galletas de mantequilla",
+    "note": "La familia del sablé."
+   },
+   {
+    "id": "postres-de-aceite-y-hierbas",
+    "name": "Postres de aceite",
+    "note": "El aceite de oliva en otros postres."
+   }
+  ],
+  "keys": [
+   "Aceite suave o afrutado, sin amargor.",
+   "Aceite aromatizado con la piel del cítrico: es el truco de casa.",
+   "Masa mezclada lo justo para que quede crujiente.",
+   "Grosor regular para un horneado parejo.",
+   "Matalahúva tostada un instante: más aroma."
+  ],
+  "errors": [
+   {
+    "p": "Galletas duras",
+    "fix": "Masa trabajada de más o muy gruesa. Mezcla lo justo y estira más fino."
+   },
+   {
+    "p": "Sabor fuerte a aceite",
+    "fix": "Aceite muy intenso o viejo. Usa uno suave y fresco."
+   },
+   {
+    "p": "Blandas al enfriar",
+    "fix": "Poco horno o humedad. Hornea hasta dorar y guarda en lata."
+   }
+  ],
+  "history": "Las pastas, tortas y rosquillas de aceite de oliva son tradicionales en la repostería casera de muchas zonas de España y del Mediterráneo, a menudo ligadas a fiestas religiosas.",
+  "uses": [
+   "Petit four",
+   "Acompañar café o vino dulce",
+   "Crujiente para helados y cremas",
+   "Postre sin lácteos"
+  ],
+  "keep": "En lata cerrada, 2–3 semanas.",
+  "pro": "Hornea en tanda y guarda en lata: aguantan mucho. Sírvelas con el café o como crujiente en un postre de cuchara.",
+  "related": [
+   "orelletes-y-bunyols",
+   "sable-y-galletas",
+   "aceite-de-oliva",
+   "postres-de-aceite-y-hierbas",
+   "cocina-ibicenca",
+   "petit-fours"
+  ]
  }
 ]

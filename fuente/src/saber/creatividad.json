@@ -3115,5 +3115,580 @@
    "construir-un-plato",
    "emplatado"
   ]
+ },
+ {
+  "id": "cocina-de-verano-e-invierno",
+  "name": "Cocina de verano y cocina de invierno en la isla",
+  "name_en": "Summer and winter cooking on the island",
+  "cat": "creatividad",
+  "group": "Raíces",
+  "aka": [
+   "cocina de verano",
+   "cocina de invierno",
+   "estaciones en la isla",
+   "cocina estacional",
+   "temporada alta y baja"
+  ],
+  "summary": "Cómo cambia la cocina de la isla entre el verano de calor, mar y crudos y el invierno de guisos, matanza, cítricos y cocina de casa, y cómo aprovechar cada uno para crear.",
+  "what": "En la isla las estaciones se notan en el mercado y también en el ánimo. El verano trae calor, días largos y producto de mar y de huerta en su pico: tomate, pimiento, fruta de hueso, pescado azul, higos. Pide crudos, frío, ácido y brasa rápida. El invierno es más tranquilo: es la época de la matanza, de los guisos de olla, de las coles, las raíces y los cítricos, del almendro en flor; una cocina más profunda y más cercana a la de casa. Para el cocinero, el invierno es también el tiempo de investigar, probar y preparar la despensa del año siguiente.",
+  "method": [
+   "Haz dos listas: qué producto y qué técnicas definen tu verano y tu invierno.",
+   "En verano, prioriza el producto crudo y la brasa rápida, platos fríos o templados, ácido y hierbas frescas.",
+   "En invierno, da espacio a guisos, jugos, fondos, legumbres y a la cocina de raíz de la isla.",
+   "Usa el invierno para investigar: pruebas, fermentos, conservas y platos nuevos para la temporada siguiente.",
+   "Usa el final del verano para conservar lo que sobra en su pico: tomate, pimiento, higo.",
+   "Mantén un hilo de identidad que se reconozca en las dos estaciones."
+  ],
+  "ratios": [
+   {
+    "use": "Platos fríos o crudos en verano",
+    "ratio": "Un tercio o más de la carta",
+    "note": "Frescor con calor."
+   },
+   {
+    "use": "Guisos y jugos en invierno",
+    "ratio": "Al menos un plato de olla en carta",
+    "note": "Lo que pide el frío."
+   },
+   {
+    "use": "Tiempo de investigación",
+    "ratio": "Más horas en invierno",
+    "note": "Para preparar la temporada siguiente."
+   }
+  ],
+  "variants": [
+   {
+    "id": "temporada-mes-a-mes",
+    "name": "La temporada mes a mes",
+    "note": "El calendario de producto detallado."
+   },
+   {
+    "id": "menu-mediodia-y-noche",
+    "name": "Mediodía y noche",
+    "note": "El mismo cambio, a escala de un día."
+   },
+   {
+    "id": "sofrit-pages",
+    "name": "Sofrit pagès",
+    "note": "Un guiso de invierno de la cocina de la isla."
+   }
+  ],
+  "keys": [
+   "Cada estación tiene su producto y su ánimo.",
+   "Verano: crudo, frío, ácido, brasa rápida.",
+   "Invierno: olla, fondo, raíz, casa.",
+   "El invierno es para investigar y preparar.",
+   "Un hilo que se reconozca todo el año."
+  ],
+  "errors": [
+   {
+    "p": "Platos pesados en pleno verano",
+    "fix": "La carta no cambió. Aligera y refresca al llegar el calor."
+   },
+   {
+    "p": "Invierno sin identidad",
+    "fix": "Se copia la carta de verano. Busca la cocina de casa y los productos de invierno de la isla."
+   },
+   {
+    "p": "Llegar a la temporada sin platos nuevos",
+    "fix": "Falta de investigación en invierno. Reserva tiempo fijo para probar."
+   }
+  ],
+  "history": "La cocina de la isla ha sido siempre muy estacional: cosecha y pesca en verano, matanza y guisos en invierno. El turismo ha marcado un contraste aún mayor entre las dos temporadas.",
+  "uses": [
+   "Planificar la carta del año",
+   "Diseñar menús de cada estación",
+   "Calendario de investigación y conservas",
+   "Formación del equipo"
+  ],
+  "keep": "Guarda la carta y las notas de cada verano y cada invierno: son tu mejor punto de partida para el año siguiente.",
+  "pro": "Al cerrar cada temporada, haz una revisión con el equipo de qué funcionó y qué se puede preparar en la temporada tranquila.",
+  "related": [
+   "temporada-mes-a-mes",
+   "cocina-ibicenca",
+   "producto-de-la-isla",
+   "menu-mediodia-y-noche",
+   "sofrit-pages",
+   "menu-de-temporada"
+  ]
+ },
+ {
+  "id": "fuego-como-lenguaje",
+  "name": "El fuego como lenguaje",
+  "name_en": "Fire as a language",
+  "cat": "creatividad",
+  "group": "Método",
+  "aka": [
+   "cocina de fuego",
+   "lenguaje del fuego",
+   "cocinar con fuego",
+   "brasa como identidad",
+   "leña",
+   "humo"
+  ],
+  "summary": "Cómo pensar el fuego no solo como fuente de calor sino como el idioma de una cocina de brasa: llama, brasa viva, rescoldo, ceniza, humo y leña, cada uno con algo que decir.",
+  "what": "En una cocina de brasa el fuego es la técnica principal y también la firma. Cada estado del fuego cocina y sabe distinto: la llama tuesta y marca; la brasa viva sella y carameliza; el rescoldo cocina despacio y ahúma suave; la ceniza envuelve y cocina enterrado; el humo perfuma. La leña también habla: encina, olivo, almendro o sarmiento dan brasas y aromas diferentes. Pensar el fuego como lenguaje es elegir conscientemente qué estado y qué leña usar en cada plato, y hacer que ese fuego se note en el sabor. La técnica está en [[fuego-y-brasa]].",
+  "method": [
+   "Aprende a leer el fuego: cuánto dura cada fase de la leña que usas y qué temperatura da en cada zona de la parrilla.",
+   "Para cada producto, elige el estado del fuego que mejor lo muestra: brasa viva para sellar, rescoldo para asar lento, ceniza para enterrar, humo para perfumar.",
+   "Prueba distintas leñas con el mismo producto y apunta las diferencias.",
+   "Lleva el fuego a todo el plato, no solo a la proteína: verduras, frutas, aceites, salsas y postres también pueden pasar por la brasa.",
+   "Cuida el equilibrio: el humo y el tostado son potentes, necesitan ácido y frescor al lado.",
+   "Haz que el fuego se cuente: en el nombre, en la sala, en la vista de la cocina si la hay."
+  ],
+  "ratios": [
+   {
+    "use": "Estados del fuego en un menú",
+    "ratio": "Al menos 2–3 distintos",
+    "note": "Para que no todo sepa igual."
+   },
+   {
+    "use": "Elementos con humo por plato",
+    "ratio": "1, como mucho 2",
+    "note": "El humo acumulado cansa."
+   },
+   {
+    "use": "Pruebas de leña",
+    "ratio": "El mismo producto con 2–3 leñas",
+    "note": "Para conocer tu fuego."
+   }
+  ],
+  "variants": [
+   {
+    "id": "fuego-y-brasa",
+    "name": "Fuego y brasa",
+    "note": "La técnica: zonas, temperaturas y control."
+   },
+   {
+    "id": "coccion-en-hoja-y-ceniza",
+    "name": "Cocción en hoja y ceniza",
+    "note": "El fuego más lento y enterrado."
+   },
+   {
+    "id": "ahumado-con-hierbas",
+    "name": "Ahumado con hierbas",
+    "note": "El humo como aroma."
+   }
+  ],
+  "keys": [
+   "Cada estado del fuego cocina y sabe distinto.",
+   "La leña es un ingrediente.",
+   "El fuego puede tocar todo el plato, también el postre.",
+   "Equilibra humo y tostado con ácido y frescor.",
+   "Que el fuego se note y se cuente."
+  ],
+  "errors": [
+   {
+    "p": "Todo sabe a humo",
+    "fix": "Humo en cada elemento. Limita a uno o dos y añade frescor."
+   },
+   {
+    "p": "Fuego que no se nota",
+    "fix": "Brasa tímida o producto apenas marcado. Busca el tostado y el aroma de la leña."
+   },
+   {
+    "p": "Resultados irregulares",
+    "fix": "Fuego sin controlar. Aprende las fases de tu leña y organiza el servicio según ellas."
+   }
+  ],
+  "history": "Cocinar con fuego de leña es la forma más antigua de cocina. En las últimas décadas, muchos restaurantes han hecho de la brasa y la leña su identidad y su objeto de investigación.",
+  "uses": [
+   "Identidad de una cocina de brasa",
+   "Diseño de platos y menús",
+   "Formación del equipo en la parrilla",
+   "Contar la cocina en sala"
+  ],
+  "keep": "Apunta en las fichas qué estado del fuego y qué leña usa cada plato, con tiempos y distancias.",
+  "pro": "Organiza el servicio según las fases del fuego: lo que pide llama al principio, lo que pide rescoldo al final. Forma a todo el equipo en leer la brasa.",
+  "related": [
+   "fuego-y-brasa",
+   "horno-de-lena",
+   "coccion-en-hoja-y-ceniza",
+   "ahumado-con-hierbas",
+   "cocina-y-paisaje",
+   "robata-y-parrilla-japonesa"
+  ]
+ },
+ {
+  "id": "cocinar-con-restricciones",
+  "name": "Cocinar con restricciones",
+  "name_en": "Cooking within restrictions",
+  "cat": "creatividad",
+  "group": "Método",
+  "aka": [
+   "alergias",
+   "intolerancias",
+   "cocina sin gluten",
+   "cocina vegetal",
+   "vegano",
+   "adaptar un plato",
+   "menu adaptado"
+  ],
+  "summary": "Cómo adaptar platos y menús a alergias, intolerancias o dietas vegetales sin que la versión adaptada sea peor, y cómo usar la restricción para crear.",
+  "what": "Una restricción (sin gluten, sin lácteos, sin frutos secos, sin marisco, vegetal) puede ser un problema o un motor creativo. El camino fácil es quitar el ingrediente y dejar un hueco; el bueno es entender qué aportaba (grasa, estructura, umami, crujiente, acidez) y encontrar otra forma de dárselo. Con alergias, además, la seguridad es lo primero: hay que conocer exactamente qué lleva cada elaboración y evitar la contaminación cruzada. Los postres están en [[postres-sin-gluten-y-lacteos]].",
+  "method": [
+   "Ten cada ficha de plato con todos sus ingredientes, incluidos los de las bases (caldos, salsas, masas): sin eso no se puede adaptar con seguridad.",
+   "Para cada ingrediente que se retira, escribe qué aportaba: grasa, estructura, umami, sal, acidez, textura.",
+   "Busca un sustituto que aporte lo mismo: aceite por mantequilla, almidón o legumbre por harina, setas o algas por fondo de carne, semillas por frutos secos.",
+   "Prueba la versión adaptada al lado de la original y ajústala hasta que esté a la misma altura.",
+   "Para alergias, separa utensilios, superficies, aceites de fritura y zonas de trabajo; marca las preparaciones adaptadas.",
+   "Usa la restricción como reto creativo: a veces el plato adaptado acaba siendo mejor que el original."
+  ],
+  "ratios": [
+   {
+    "use": "Platos adaptables en carta",
+    "ratio": "La mayoría, con alternativas probadas",
+    "note": "Mejor platos que ya son así por naturaleza."
+   },
+   {
+    "use": "Sustituir umami de carne",
+    "ratio": "Caldo de setas o kombu, miso, tomate seco",
+    "note": "Mira [[umami-y-fondo]]."
+   },
+   {
+    "use": "Sustituir mantequilla en una salsa",
+    "ratio": "Aceite de oliva emulsionado en igual o menor peso",
+    "note": "Montar con túrmix."
+   }
+  ],
+  "variants": [
+   {
+    "id": "postres-sin-gluten-y-lacteos",
+    "name": "Postres sin gluten y sin lácteos",
+    "note": "Las adaptaciones del lado dulce."
+   },
+   {
+    "id": "umami-y-fondo",
+    "name": "Umami vegetal",
+    "note": "Cómo dar profundidad sin carne."
+   },
+   {
+    "id": "caldo-de-setas",
+    "name": "Fondos vegetales",
+    "note": "La base de una cocina vegetal con sabor."
+   }
+  ],
+  "keys": [
+   "Seguridad primero con las alergias.",
+   "Sustituye la función, no solo el ingrediente.",
+   "La versión adaptada se cata como cualquier otra.",
+   "Las fichas completas son imprescindibles.",
+   "La restricción puede ser una fuente de ideas."
+  ],
+  "errors": [
+   {
+    "p": "Plato adaptado con un hueco",
+    "fix": "Se quitó sin sustituir. Busca qué aportaba y reemplázalo."
+   },
+   {
+    "p": "Alérgeno escondido en una base",
+    "fix": "Ficha incompleta. Revisa caldos, salsas, rebozados y aceites de fritura."
+   },
+   {
+    "p": "Contaminación cruzada",
+    "fix": "Utensilios o aceite compartidos. Separa y marca."
+   }
+  ],
+  "history": "Las alergias e intolerancias y las dietas vegetales son hoy una parte habitual del trabajo en cocina, y muchas cocinas las han convertido en una oportunidad para crear.",
+  "uses": [
+   "Adaptar platos de carta",
+   "Menús vegetales",
+   "Comensales con alergias",
+   "Retos del Laboratorio"
+  ],
+  "keep": "Guarda en cada ficha de plato sus alérgenos y sus adaptaciones probadas.",
+  "pro": "Ten en el pase una lista clara de qué lleva cada plato y qué adaptaciones existen. Haz una prueba de cada adaptación con el equipo antes de ofrecerla.",
+  "related": [
+   "postres-sin-gluten-y-lacteos",
+   "umami-y-fondo",
+   "caldo-de-setas",
+   "construir-un-plato",
+   "corregir-un-plato"
+  ]
+ },
+ {
+  "id": "estilo-propio",
+  "name": "Cómo se construye un estilo propio",
+  "name_en": "Building your own style",
+  "cat": "creatividad",
+  "group": "Oficio",
+  "aka": [
+   "estilo de cocina",
+   "identidad",
+   "voz propia",
+   "cocina de autor",
+   "firma personal"
+  ],
+  "summary": "Un estilo propio no se inventa en un día: se construye con lo que se aprende, lo que se recuerda, el lugar donde se cocina y muchas decisiones repetidas. Cómo reconocerlo y cultivarlo.",
+  "what": "El estilo de un cocinero es lo que hace que un plato se reconozca como suyo: unos productos, unas técnicas, unos contrastes, una forma de emplatar, un tono. Se forma con el tiempo a partir de las cocinas donde se ha trabajado, los recuerdos de sabor, el paisaje y el producto del lugar, y las decisiones que se repiten porque convencen. No se trata de ser original a cualquier precio, sino de ser coherente: que los platos tengan algo en común que no esté en los de otros. El [[plato-firma]] es su expresión más concentrada.",
+  "method": [
+   "Repasa tu archivo y busca lo que se repite: productos, técnicas, combinaciones, colores, formas.",
+   "Pregúntate de dónde viene cada cosa: un maestro, un viaje, un recuerdo, el lugar.",
+   "Escribe en pocas líneas qué define tu cocina y qué no harías nunca.",
+   "Usa esa descripción como filtro al crear: si un plato no encaja, pregúntate por qué lo haces.",
+   "Sigue aprendiendo fuera de tu estilo (stages, viajes, libros) y quédate solo con lo que encaja contigo.",
+   "Revísalo cada año: un estilo vivo cambia despacio."
+  ],
+  "ratios": [
+   {
+    "use": "Rasgos que definen un estilo",
+    "ratio": "3–5 claros",
+    "note": "Más ya no define."
+   },
+   {
+    "use": "Revisión",
+    "ratio": "Una vez al año",
+    "note": "Con el archivo de platos delante."
+   },
+   {
+    "use": "Influencias",
+    "ratio": "Muchas al aprender, pocas al cocinar",
+    "note": "Filtrar es parte del estilo."
+   }
+  ],
+  "variants": [
+   {
+    "id": "plato-firma",
+    "name": "El plato firma",
+    "note": "El estilo concentrado en un plato."
+   },
+   {
+    "id": "documentar-tu-obra",
+    "name": "Documentar tu obra",
+    "note": "El archivo que permite ver tu estilo."
+   },
+   {
+    "id": "cocina-y-paisaje",
+    "name": "Cocina y paisaje",
+    "note": "El lugar como raíz del estilo."
+   }
+  ],
+  "keys": [
+   "Se construye con el tiempo, no se decide.",
+   "Coherencia antes que originalidad.",
+   "El lugar y la memoria son raíces fuertes.",
+   "Saber qué no harías también define.",
+   "Aprender mucho, filtrar mucho."
+  ],
+  "errors": [
+   {
+    "p": "Copiar el estilo de otro",
+    "fix": "Demasiada influencia de un referente. Busca en tu lugar y tu memoria."
+   },
+   {
+    "p": "Platos sin relación entre sí",
+    "fix": "No hay filtro. Escribe qué define tu cocina y revisa la carta con eso."
+   },
+   {
+    "p": "Estilo congelado",
+    "fix": "Miedo a cambiar. Deja que evolucione despacio con lo que aprendes."
+   }
+  ],
+  "history": "La idea de la cocina de autor, con estilo personal, se consolidó en la segunda mitad del siglo XX. Antes, el estilo de un cocinero se notaba sobre todo en su forma de interpretar el recetario de su tradición.",
+  "uses": [
+   "Reflexión sobre la propia cocina",
+   "Dossier y presentación profesional",
+   "Coherencia de la carta",
+   "Formación del equipo en la identidad de la casa"
+  ],
+  "keep": "Guarda la descripción de tu estilo con fecha y revísala cada año: verás cómo cambia.",
+  "pro": "Comparte con el equipo en pocas palabras qué define la cocina de la casa: ayuda a que todos cocinen en la misma dirección.",
+  "related": [
+   "plato-firma",
+   "documentar-tu-obra",
+   "cocina-y-paisaje",
+   "memoria-del-sabor",
+   "inspiracion-fuera-de-la-cocina"
+  ]
+ },
+ {
+  "id": "aprender-de-un-stage",
+  "name": "Aprender de un stage",
+  "name_en": "Learning from a stage",
+  "cat": "creatividad",
+  "group": "Oficio",
+  "aka": [
+   "stage",
+   "estancia en otra cocina",
+   "practicas",
+   "aprender en otra cocina",
+   "formacion"
+  ],
+  "summary": "Cómo preparar, vivir y aprovechar una estancia en otra cocina: qué observar, qué apuntar y cómo traer lo aprendido sin copiarlo.",
+  "what": "Un stage es una de las mejores formas de aprender: se ve de cerca cómo trabaja otra cocina, su organización de la partida, sus técnicas, su forma de probar y su producto. Se aprovecha mucho más si se va con preguntas, se observa con atención, se apunta cada día y se vuelve con ideas concretas. Lo aprendido no se copia tal cual: se filtra y se adapta al producto y al estilo propios. Y se respeta lo que la otra cocina considera suyo.",
+  "method": [
+   "Antes de ir, estudia esa cocina: su producto, sus técnicas, sus platos, y escribe qué quieres aprender.",
+   "Durante la estancia, observa cómo se organiza la partida, cómo se prueba y cómo se habla en el pase.",
+   "Apunta cada día: técnicas, proporciones que puedas compartir, detalles de mise en place, y sobre todo ideas y preguntas.",
+   "Pregunta en el momento adecuado, fuera del servicio.",
+   "Al volver, elige dos o tres cosas que puedas aplicar en tu cocina y pruébalas con tu producto.",
+   "Respeta la autoría: no reproduzcas platos de esa casa como propios."
+  ],
+  "ratios": [
+   {
+    "use": "Objetivos para un stage",
+    "ratio": "3–5 preguntas concretas",
+    "note": "Escritas antes de ir."
+   },
+   {
+    "use": "Notas",
+    "ratio": "Cada día, al terminar",
+    "note": "Lo que no se apunta se olvida."
+   },
+   {
+    "use": "Aplicación al volver",
+    "ratio": "2–3 ideas probadas en tu cocina",
+    "note": "Adaptadas, no copiadas."
+   }
+  ],
+  "variants": [
+   {
+    "id": "inspiracion-fuera-de-la-cocina",
+    "name": "Inspiración fuera de la cocina",
+    "note": "Otras fuentes de aprendizaje."
+   },
+   {
+    "id": "documentar-tu-obra",
+    "name": "Documentar tu trayectoria",
+    "note": "El stage en tu archivo y tu dossier."
+   },
+   {
+    "id": "estilo-propio",
+    "name": "Estilo propio",
+    "note": "Filtrar lo aprendido según tu cocina."
+   }
+  ],
+  "keys": [
+   "Ir con preguntas concretas.",
+   "Observar más allá de las recetas: organización, cata, ritmo.",
+   "Apuntar cada día.",
+   "Adaptar, no copiar.",
+   "Respetar la autoría de la otra casa."
+  ],
+  "errors": [
+   {
+    "p": "Volver sin nada concreto",
+    "fix": "Sin objetivos ni notas. Prepara preguntas y apunta cada día."
+   },
+   {
+    "p": "Copiar platos",
+    "fix": "Se reproduce lo visto. Quédate con la idea de fondo y llévala a tu producto."
+   },
+   {
+    "p": "No aplicar nada",
+    "fix": "Las notas se quedan en el cajón. Prueba dos ideas en el primer mes."
+   }
+  ],
+  "history": "El aprendizaje en otras cocinas es una tradición del oficio desde hace siglos, y el stage en restaurantes de referencia se ha convertido en una etapa habitual de la formación de los cocineros.",
+  "uses": [
+   "Formación propia",
+   "Formación del equipo",
+   "Ideas para la carta",
+   "Trayectoria y dossier"
+  ],
+  "keep": "Guarda las notas del stage con fecha y casa en tu archivo, y anótalo en tu trayectoria.",
+  "pro": "Si alguien del equipo hace un stage, pídele que al volver cuente en una sesión qué ha aprendido y qué propone probar.",
+  "related": [
+   "inspiracion-fuera-de-la-cocina",
+   "documentar-tu-obra",
+   "estilo-propio",
+   "catas-y-notas",
+   "leer-un-libro-de-cocina"
+  ]
+ },
+ {
+  "id": "leer-un-libro-de-cocina",
+  "name": "Cómo leer un libro de cocina",
+  "name_en": "How to read a cookbook",
+  "cat": "creatividad",
+  "group": "Oficio",
+  "aka": [
+   "libros de cocina",
+   "recetarios",
+   "estudiar cocina",
+   "biblioteca de cocina",
+   "leer recetas"
+  ],
+  "summary": "Cómo sacar partido a un libro de cocina como profesional: leerlo para entender ideas y técnicas, no para copiar recetas, y llevar lo aprendido a tu propia cocina.",
+  "what": "Un libro de cocina es una forma de conocer el pensamiento de otro cocinero o de una tradición. Leído como un catálogo de recetas da poco; leído con atención enseña por qué se hacen las cosas: la lógica de una proporción, un orden de pasos, una forma de combinar o de presentar. La mejor lectura es activa: se apunta, se compara con lo que ya se sabe, se prueba en la cocina y se adapta al producto propio. Esta Biblioteca está escrita con palabras propias por la misma razón: lo que se aprende se reelabora.",
+  "method": [
+   "Lee la introducción y los textos, no solo las recetas: ahí está el pensamiento del autor.",
+   "Busca lo que se repite en el libro: técnicas, proporciones, productos, combinaciones.",
+   "Compara cada técnica con lo que ya sabes: ¿qué hace distinto y por qué?",
+   "Apunta ideas y preguntas en tu cuaderno con tus palabras, no copiando el texto.",
+   "Prueba en la cocina una o dos técnicas o ideas con tu producto.",
+   "Guarda la referencia: qué libro, qué idea y qué hiciste con ella."
+  ],
+  "ratios": [
+   {
+    "use": "Ideas apuntadas por libro",
+    "ratio": "5–10",
+    "note": "Con tus palabras."
+   },
+   {
+    "use": "Pruebas en la cocina",
+    "ratio": "1–3 por libro",
+    "note": "Adaptadas a tu producto."
+   },
+   {
+    "use": "Lectura",
+    "ratio": "Un rato fijo cada semana",
+    "note": "El hábito pesa más que la cantidad."
+   }
+  ],
+  "variants": [
+   {
+    "id": "aprender-de-un-stage",
+    "name": "Aprender de un stage",
+    "note": "Aprender de otra cocina en persona."
+   },
+   {
+    "id": "inspiracion-fuera-de-la-cocina",
+    "name": "Inspiración fuera de la cocina",
+    "note": "Otros libros y otras artes."
+   },
+   {
+    "id": "catas-y-notas",
+    "name": "Pruebas de cata",
+    "note": "Cómo comprobar en la cocina lo que has leído."
+   }
+  ],
+  "keys": [
+   "Leer para entender, no para copiar.",
+   "Los textos enseñan más que las recetas.",
+   "Apuntar con tus palabras.",
+   "Probar y adaptar a tu producto.",
+   "Respetar la autoría: lo que publicas es tuyo, reelaborado."
+  ],
+  "errors": [
+   {
+    "p": "Copiar recetas sin entenderlas",
+    "fix": "Lectura pasiva. Pregúntate por qué cada paso y cada proporción."
+   },
+   {
+    "p": "Libros que no se usan",
+    "fix": "Leídos sin probar nada. Elige una idea por libro y llévala a la cocina."
+   },
+   {
+    "p": "Platos que son de otro",
+    "fix": "Reproducción literal. Toma la idea y hazla tuya con tu producto y tu estilo."
+   }
+  ],
+  "history": "Los recetarios han transmitido la cocina durante siglos, de los manuscritos medievales a los libros de autor actuales. Para un cocinero, su biblioteca es una herramienta de trabajo.",
+  "uses": [
+   "Formación propia",
+   "Sesiones de estudio con el equipo",
+   "Buscar ideas para la carta",
+   "Entender la tradición de una cocina"
+  ],
+  "keep": "Lleva un registro de lecturas con las ideas apuntadas y lo que probaste de cada libro.",
+  "pro": "Haz un club de lectura con el equipo: cada uno presenta una idea de un libro y la prueba en la cocina.",
+  "related": [
+   "aprender-de-un-stage",
+   "inspiracion-fuera-de-la-cocina",
+   "catas-y-notas",
+   "documentar-tu-obra",
+   "estilo-propio"
+  ]
  }
 ]

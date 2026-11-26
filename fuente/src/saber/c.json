@@ -5446,5 +5446,393 @@
       "glace",
       "aguas-clarificadas"
     ]
+  },
+  {
+    "id": "caldo-de-marisco-expres",
+    "name": "Caldo de marisco exprés",
+    "aka": [
+      "caldo rapido de marisco",
+      "caldo de gambas",
+      "caldo de cabezas",
+      "fumet de marisco rapido",
+      "caldo de marisco en olla rapida"
+    ],
+    "cat": "fondos",
+    "group": "Fondos de mar",
+    "summary": "Caldo intenso de cabezas y cáscaras de marisco hecho en 20 minutos, triturado y colado: para arroces, fideos y salsas del día cuando no hay fondo hecho.",
+    "what": "El [[fondo-de-marisco]] completo lleva tiempo; este es su versión de servicio. Se tuestan bien las cabezas y cáscaras en aceite con ajo y tomate, se mojan con agua caliente o [[fumet]] y se cuecen poco tiempo; después se tritura todo y se cuela apretando, de modo que el sabor sale en minutos. Con olla a presión se concentra aún más. Es ideal para aprovechar las cabezas del marisco que se ha limpiado ese mismo día.",
+    "base": {
+      "for": "1,2 l aprox.",
+      "items": [
+        [
+          "Cabezas y cáscaras de gamba, cigala o cangrejo",
+          "1 kg"
+        ],
+        [
+          "Aceite de oliva",
+          "60 ml"
+        ],
+        [
+          "Ajo",
+          "3 dientes"
+        ],
+        [
+          "Tomate rallado",
+          "150 g"
+        ],
+        [
+          "Tomate concentrado",
+          "20 g"
+        ],
+        [
+          "Pimentón dulce",
+          "3 g"
+        ],
+        [
+          "Brandy o vino blanco",
+          "50 ml"
+        ],
+        [
+          "Agua caliente o fumet",
+          "1,5 l"
+        ]
+      ],
+      "steps": [
+        "Tuesta las cabezas y cáscaras en el aceite a fuego fuerte, aplastándolas con una espátula, 5–6 minutos.",
+        "Añade el ajo, el tomate concentrado y el tomate rallado y sofríe 3–4 minutos; añade el pimentón y moja enseguida con el brandy.",
+        "Añade el agua caliente o el fumet y cuece a fuego medio 15–20 minutos (o 8–10 minutos en olla a presión).",
+        "Tritura todo con túrmix o en vaso y cuela por chino apretando bien; después por colador fino.",
+        "Prueba y úsalo enseguida o abate."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Caldo para arroz o fideos",
+        "ratio": "1 kg de cáscaras y cabezas por 1,5 l de líquido, 15–20 minutos",
+        "note": "Triturado y colado."
+      },
+      {
+        "use": "En olla a presión",
+        "ratio": "La misma proporción, 8–10 minutos",
+        "note": "Más concentrado."
+      },
+      {
+        "use": "Base para salsa",
+        "ratio": "Caldo reducido a la mitad y montado con mantequilla",
+        "note": "Para pasta, arroz o pescado."
+      }
+    ],
+    "variants": [
+      {
+        "id": "fondo-de-marisco",
+        "name": "Fondo de marisco",
+        "note": "La versión larga y más profunda."
+      },
+      {
+        "id": "bisque",
+        "name": "Bisque",
+        "note": "Ligada y terminada con nata."
+      },
+      {
+        "id": "caldo-de-roca",
+        "name": "Caldo de roca",
+        "note": "Con pescado de roca en vez de marisco."
+      }
+    ],
+    "keys": [
+      "Tostado fuerte: es todo el sabor del caldo rápido.",
+      "Moja con líquido caliente para no cortar la cocción.",
+      "Triturar con las cáscaras saca el máximo de sabor en poco tiempo.",
+      "Cuela dos veces para quitar cualquier resto de cáscara.",
+      "Pimentón con el fuego bajo y mojar enseguida."
+    ],
+    "errors": [
+      {
+        "p": "Caldo flojo",
+        "fix": "Poco tostado o mucho líquido. Tuesta más y ajusta la proporción."
+      },
+      {
+        "p": "Amargo",
+        "fix": "Pimentón o ajo quemados, o cocción larga. Moja a tiempo y no pases de 20 minutos."
+      },
+      {
+        "p": "Arenoso",
+        "fix": "Colado poco fino. Pasa por colador fino o estameña."
+      }
+    ],
+    "history": "Los caldos rápidos de cabezas de marisco son una práctica habitual en las cocinas de costa para aprovechar el marisco del día y mojar arroces y fideos.",
+    "uses": [
+      "Arroces de marisco",
+      "Fideuá",
+      "Salsas de marisco para pasta",
+      "Guisos rápidos de pescado"
+    ],
+    "keep": "Abatir de 60 °C a menos de 10 °C en menos de 2 horas. En frío, 2 días; congelado, 2 meses.",
+    "pro": "Guarda las cabezas del marisco limpio del día en frío y haz el caldo al final del servicio para el día siguiente, o congélalas hasta tener tanda.",
+    "related": [
+      "fondo-de-marisco",
+      "bisque",
+      "fumet",
+      "gamba-roja",
+      "arroces",
+      "cocina-de-aprovechamiento"
+    ]
+  },
+  {
+    "id": "bases-para-arroces",
+    "name": "Bases para arroces: sofrito y caldo",
+    "aka": [
+      "sofrito para arroz",
+      "sofregit",
+      "base de paella",
+      "caldo para arroz",
+      "fondo de arroz",
+      "sofrito de nora"
+    ],
+    "cat": "bases",
+    "group": "Aromáticos",
+    "summary": "Cómo preparar por adelantado el sofrito y el caldo de un arroz para que, en el servicio, solo quede añadir el arroz y cocinarlo con precisión.",
+    "what": "La técnica de cocción está en [[arroces]]; aquí, las dos bases que deciden el sabor. El sofrito para arroz suele llevar ajo, tomate, ñora o pimentón y, según la casa y la zona, pimiento o cebolla, cocinados despacio en aceite hasta que el tomate se confita y la grasa se separa. El caldo tiene que tener más sabor y un punto más de sal que una sopa, porque el arroz lo absorbe y lo diluye. Preparando ambos en tanda, el arroz sale igual en cada servicio.",
+    "base": {
+      "for": "sofrito para unos 2 kg de arroz",
+      "items": [
+        [
+          "Aceite de oliva",
+          "200 ml"
+        ],
+        [
+          "Ajo picado",
+          "60 g"
+        ],
+        [
+          "Ñoras remojadas, solo la carne",
+          "6"
+        ],
+        [
+          "Pimiento rojo en brunoise (opcional)",
+          "200 g"
+        ],
+        [
+          "Cebolla en brunoise (opcional, según la casa)",
+          "200 g"
+        ],
+        [
+          "Tomate maduro rallado",
+          "1 kg"
+        ],
+        [
+          "Pimentón dulce",
+          "15 g"
+        ],
+        [
+          "Sal",
+          "8 g"
+        ]
+      ],
+      "steps": [
+        "Calienta el aceite a fuego medio y sofríe el ajo hasta que empiece a dorar.",
+        "Añade el pimiento y la cebolla si los usas y póchalos 15 minutos.",
+        "Añade la carne de ñora y, fuera del fuego, el pimentón; mezcla y añade enseguida el tomate.",
+        "Cuece a fuego suave 1–1,5 horas, removiendo, hasta que el tomate se oscurezca, pierda el agua y el aceite se separe.",
+        "Enfría y porciona por raciones de arroz."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Sofrito por arroz",
+        "ratio": "60–80 g de sofrito por cada 100 g de arroz",
+        "note": "Según la intensidad buscada."
+      },
+      {
+        "use": "Caldo para arroz seco",
+        "ratio": "Entre 2,5 y 3 veces el peso del arroz",
+        "note": "Mira [[arroces]] para cada tipo y recipiente."
+      },
+      {
+        "use": "Punto de sal del caldo",
+        "ratio": "Algo más salado de lo que tomarías en sopa",
+        "note": "Prueba el caldo antes de añadir el arroz."
+      },
+      {
+        "use": "Azafrán",
+        "ratio": "0,1–0,2 g por cada 100 g de arroz",
+        "note": "Tostado y machacado o infusionado en el caldo caliente."
+      }
+    ],
+    "variants": [
+      {
+        "id": "sofrito",
+        "name": "Sofrito",
+        "note": "La base general de guisos."
+      },
+      {
+        "id": "caldo-de-roca",
+        "name": "Caldo de roca",
+        "note": "El caldo más habitual para arroces de pescado."
+      },
+      {
+        "id": "caldo-de-marisco-expres",
+        "name": "Caldo de marisco exprés",
+        "note": "Para arroces de marisco al momento."
+      }
+    ],
+    "keys": [
+      "Sofrito largo y bien confitado: es la base del color y el sabor.",
+      "Pimentón fuera del fuego y tomate enseguida, o se quema.",
+      "Caldo con sabor y algo de sal: el arroz lo diluye.",
+      "Porciona sofrito y caldo por raciones: el arroz sale igual cada vez.",
+      "Respeta la tradición de cada arroz: no todos llevan cebolla ni pimiento."
+    ],
+    "errors": [
+      {
+        "p": "Arroz soso",
+        "fix": "Caldo flojo o sin sal. Prueba y corrige el caldo antes de echar el arroz."
+      },
+      {
+        "p": "Sabor a quemado",
+        "fix": "Pimentón o ajo quemados en el sofrito. Fuego medio y pimentón fuera del fuego."
+      },
+      {
+        "p": "Sofrito ácido",
+        "fix": "Tomate poco cocido. Cuece hasta que pierda el agua y el aceite se separe."
+      }
+    ],
+    "history": "Los arroces de la costa mediterránea española se construyen sobre un sofrito y un caldo, con variaciones de cada zona y de cada casa sobre qué lleva el sofrito.",
+    "uses": [
+      "Arroces secos, melosos y caldosos",
+      "Fideuá",
+      "Arroces de la isla",
+      "Guisos de pescado"
+    ],
+    "keep": "Sofrito cubierto de su aceite, en frío 1 semana; congelado en porciones, 3 meses. Caldo según su ficha.",
+    "pro": "Haz el sofrito en tanda grande y congélalo en porciones por número de raciones. Ten el caldo caliente en el pase, ya probado de sal.",
+    "related": [
+      "arroces",
+      "sofrito",
+      "caldo-de-roca",
+      "pimenton-y-noras",
+      "azafran",
+      "fondo-de-marisco"
+    ]
+  },
+  {
+    "id": "condimentos-secos-de-la-isla",
+    "name": "Condimentos secos de la isla",
+    "aka": [
+      "hierbas secas",
+      "despensa seca",
+      "polvo de algarroba",
+      "polvo de higo",
+      "hinojo seco",
+      "piel de citrico seca",
+      "condimentos de monte"
+    ],
+    "cat": "bases",
+    "group": "Bases",
+    "summary": "La despensa seca hecha en casa con el producto de la isla: hierbas de monte, semillas de hinojo, pieles de cítrico, algarroba, higo, alcaparras y sal, secos y molidos.",
+    "what": "Secar es la forma más sencilla de guardar el aroma de una temporada. Con lo que da la isla se puede tener una despensa propia: romero, tomillo y ajedrea del monte; semillas y flores de hinojo silvestre; pieles de naranja y limón; algarroba y higos secos molidos; alcaparras deshidratadas; sal de las salinas. Se usan como las [[especias]]: en rubs, en sales aromáticas, en masas, en postres o espolvoreados al final. Para mezclas con sal mira [[sales-aromaticas]]; para mezclas para frotar, [[rubs-y-mezclas-secas]].",
+    "base": {
+      "for": "unos 50 g de hierbas de monte secas",
+      "items": [
+        [
+          "Ramas de romero, tomillo y ajedrea recién cortadas",
+          "250 g"
+        ],
+        [
+          "Semillas o flores de hinojo silvestre (opcional)",
+          "30 g"
+        ],
+        [
+          "Pieles de naranja o limón sin parte blanca (opcional)",
+          "2 frutas"
+        ]
+      ],
+      "steps": [
+        "Recoge las hierbas en tiempo seco, a ser posible antes de que florezcan del todo, y sacúdelas sin lavarlas si están limpias.",
+        "Sécalas en ramilletes colgados a la sombra en un lugar ventilado, 1–2 semanas, o en deshidratador a 35–40 °C, 4–8 horas.",
+        "Seca las pieles de cítrico a 45–50 °C hasta que se rompan al doblarlas.",
+        "Desgrana las hojas y guárdalas enteras; muele solo lo que vayas a usar.",
+        "Guarda cada condimento en bote de vidrio cerrado, etiquetado con fecha, lejos de la luz y el calor."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Hierbas de monte",
+        "ratio": "Secado a la sombra 1–2 semanas o a 35–40 °C",
+        "note": "Más calor les quita aroma."
+      },
+      {
+        "use": "Pieles de cítrico",
+        "ratio": "A 45–50 °C, 3–6 horas",
+        "note": "Molidas, para masas, sales y postres."
+      },
+      {
+        "use": "Algarroba o higo seco en polvo",
+        "ratio": "Tostado suave a 120–140 °C y molido",
+        "note": "Para postres, rubs y panes."
+      },
+      {
+        "use": "Alcaparras deshidratadas",
+        "ratio": "Desaladas, secas y deshidratadas a 50–60 °C hasta crujientes",
+        "note": "Molidas, como sal de alcaparra."
+      }
+    ],
+    "variants": [
+      {
+        "id": "sales-aromaticas",
+        "name": "Sales aromáticas",
+        "note": "Los condimentos mezclados con sal."
+      },
+      {
+        "id": "rubs-y-mezclas-secas",
+        "name": "Rubs",
+        "note": "Mezclas para frotar carnes y pescados."
+      },
+      {
+        "id": "higos-y-algarroba",
+        "name": "Higo y algarroba",
+        "note": "Dos productos de la isla que secos dan polvos muy útiles."
+      }
+    ],
+    "keys": [
+      "Secado suave y a la sombra: el sol y el calor se llevan el aroma.",
+      "Guarda entero y muele al momento.",
+      "Vidrio cerrado, oscuro y fresco.",
+      "Etiqueta con fecha: la mayoría pierde aroma en meses.",
+      "Recoge solo lo que identificas con seguridad y donde está permitido."
+    ],
+    "errors": [
+      {
+        "p": "Hierbas sin aroma",
+        "fix": "Secado al sol o con calor, o muy viejas. Seca a la sombra y renueva cada año."
+      },
+      {
+        "p": "Moho en el bote",
+        "fix": "Secado incompleto. Seca hasta que se rompan y guarda bien cerrado."
+      },
+      {
+        "p": "Polvo apelmazado",
+        "fix": "Humedad. Guarda con gel de sílice y en lugar seco."
+      }
+    ],
+    "history": "Secar hierbas, frutas e higos ha sido siempre parte de la despensa de las casas de campo de las islas y del Mediterráneo, para tener sabor durante todo el año.",
+    "uses": [
+      "Rubs y adobos para la brasa",
+      "Sales aromáticas",
+      "Panes, cocas y galletas",
+      "Postres y helados",
+      "Acabado de platos"
+    ],
+    "keep": "En bote de vidrio cerrado, oscuro y fresco: hierbas y pieles, 6–12 meses; polvos de fruta, 3–6 meses.",
+    "pro": "Organiza una jornada de secado al final de cada temporada con el producto que sobra. Ten en el pase los tres o cuatro condimentos de la casa en botes pequeños.",
+    "related": [
+      "sales-aromaticas",
+      "rubs-y-mezclas-secas",
+      "hierbas-frescas",
+      "higos-y-algarroba",
+      "sal-y-flor-de-sal",
+      "cocina-ibicenca",
+      "aceitunas-y-alcaparras"
+    ]
   }
 ]

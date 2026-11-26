@@ -4267,5 +4267,574 @@
       "setas",
       "quesos-en-cocina"
     ]
+  },
+  {
+    "id": "tartares-y-carpaccios-vegetales",
+    "name": "Tartares y carpaccios de verdura",
+    "name_en": "Vegetable tartares and carpaccios",
+    "cat": "bases",
+    "group": "Cremas y guarniciones",
+    "aka": [
+      "tartar de tomate",
+      "tartar de remolacha",
+      "carpaccio de calabacin",
+      "carpaccio de tomate",
+      "tartar de setas",
+      "tartar vegetal"
+    ],
+    "role": "fresco",
+    "techniques": [
+      "crudo"
+    ],
+    "summary": "Las formas del tartar y el carpaccio llevadas a la verdura: dados aliñados de tomate, remolacha o setas, y láminas finísimas aliñadas al momento.",
+    "what": "El tartar y el carpaccio nacieron con la carne y el pescado ([[ceviche-y-crudos]]), pero funcionan muy bien con verduras de buena textura. El tartar es un picado a cuchillo en dados pequeños, ligado con un aliño potente (alcaparra, chalota, mostaza, aceite, ácido). El carpaccio, láminas casi transparentes con aceite, sal, un ácido y algo crujiente o salado por encima. Algunas verduras se usan crudas (tomate, calabacín, champiñón, hinojo) y otras asadas antes (remolacha, pimiento, berenjena) para ganar sabor y ternura.",
+    "base": {
+      "for": "6 raciones de tartar de tomate",
+      "items": [
+        [
+          "Tomate maduro y carnoso",
+          "1,2 kg"
+        ],
+        [
+          "Chalota picada fina",
+          "30 g"
+        ],
+        [
+          "Alcaparras picadas",
+          "20 g"
+        ],
+        [
+          "Pepinillo o piparra picados",
+          "20 g"
+        ],
+        [
+          "Mostaza",
+          "8 g"
+        ],
+        [
+          "Aceite de oliva virgen extra",
+          "40 g"
+        ],
+        [
+          "Vinagre de jerez",
+          "10 g"
+        ],
+        [
+          "Sal en escamas, pimienta y cebollino",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Escalda los tomates 10–15 segundos, enfría en hielo, pela y quita las semillas.",
+        "Corta la pulpa en dados de 5 mm y déjala escurrir 20 minutos en un colador con una pizca de sal.",
+        "Mezcla la mostaza, el vinagre y el aceite; añade la chalota, las alcaparras y el pepinillo.",
+        "Mezcla con los dados de tomate escurridos justo antes de servir y ajusta de sal y pimienta.",
+        "Emplata con aro o cuchara y termina con cebollino, aceite y sal en escamas."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Tartar de verdura",
+        "ratio": "Dados de 5 mm con un 8–10 % de aliño sobre el peso",
+        "note": "Mezclar al momento."
+      },
+      {
+        "use": "Carpaccio de verdura cruda",
+        "ratio": "Láminas de 1 mm a mandolina",
+        "note": "Aceite, sal y ácido en el último minuto."
+      },
+      {
+        "use": "Tartar de remolacha",
+        "ratio": "Remolacha asada a 190 °C, 60–75 minutos, en dados",
+        "note": "Con rábano picante, encurtido y yogur."
+      },
+      {
+        "use": "Tartar de setas",
+        "ratio": "Champiñón o boletus muy frescos en dados, aliñados 5 minutos antes",
+        "note": "Con limón y aceite de avellana."
+      }
+    ],
+    "variants": [
+      {
+        "id": "verduras-marinadas",
+        "name": "Verduras marinadas",
+        "note": "Láminas marinadas más tiempo."
+      },
+      {
+        "id": "ceviche-y-crudos",
+        "name": "Tartares de pescado y carne",
+        "note": "La técnica original."
+      },
+      {
+        "id": "tartara",
+        "name": "Aliño tipo tártara",
+        "note": "Alcaparra, pepinillo y mostaza ligados con mayonesa."
+      }
+    ],
+    "keys": [
+      "Verdura en su mejor momento: cruda no hay dónde esconderse.",
+      "Escurre las verduras acuosas antes de aliñar.",
+      "Corte a cuchillo, regular y limpio.",
+      "Aliño potente y en el último momento.",
+      "Algo crujiente y algo graso por encima."
+    ],
+    "errors": [
+      {
+        "p": "Tartar aguado",
+        "fix": "Tomate sin escurrir o aliñado con antelación. Escurre con sal y aliña al servir."
+      },
+      {
+        "p": "Carpaccio que se rompe",
+        "fix": "Láminas demasiado finas o verdura blanda. Ajusta la mandolina y usa verdura firme."
+      },
+      {
+        "p": "Sabor plano",
+        "fix": "Aliño tímido. Sube ácido, sal y el elemento salado (alcaparra, anchoa)."
+      }
+    ],
+    "history": "Los tartares y carpaccios de verdura se han extendido en la cocina de restaurante de los últimos años como versión vegetal de los clásicos de carne y pescado.",
+    "uses": [
+      "Entrante vegetal",
+      "Aperitivo en cuchara",
+      "Acompañar pescados y carnes a la brasa",
+      "Plato del menú vegetal"
+    ],
+    "keep": "Verdura cortada sin aliñar, en frío, unas horas. Aliñado, al momento.",
+    "pro": "Ten la verdura cortada y escurrida en frío y el aliño hecho; mezcla al pedir y emplata con aro.",
+    "related": [
+      "ceviche-y-crudos",
+      "verduras-marinadas",
+      "crudites-y-cortes",
+      "tomate",
+      "tartara",
+      "aceitunas-y-alcaparras"
+    ]
+  },
+  {
+    "id": "ensaladas-de-legumbre-y-cereal",
+    "name": "Ensaladas de legumbre y cereal",
+    "name_en": "Legume and grain salads",
+    "cat": "bases",
+    "group": "Cremas y guarniciones",
+    "aka": [
+      "ensalada de lentejas",
+      "ensalada de garbanzos",
+      "empedrat",
+      "tabule",
+      "ensalada de trigo",
+      "ensalada de farro",
+      "ensalada de quinoa"
+    ],
+    "role": "guarnicion",
+    "techniques": [
+      "hervido",
+      "crudo"
+    ],
+    "summary": "Legumbres o cereales cocidos en su punto y aliñados en tibio, con verdura cruda, hierbas, algo crujiente y algo salado: guarnición o plato fresco completo.",
+    "what": "La [[legumbres|legumbre]] o el cereal cocidos son una base neutra que absorbe muy bien el aliño, sobre todo si se aliñan aún tibios. El grano debe estar entero y tierno, sin deshacerse. Después se suman verduras crudas o asadas, muchas hierbas, un ácido claro y un elemento salado (aceitunas, alcaparras, salazón, queso) y otro crujiente. Funcionan como guarnición fría de la brasa, como entrante o como plato completo de verano. El empedrat catalán o el tabulé son ejemplos clásicos.",
+    "base": {
+      "for": "8 raciones de ensalada de lentejas",
+      "items": [
+        [
+          "Lenteja pardina o beluga",
+          "400 g"
+        ],
+        [
+          "Laurel, ajo y media cebolla para la cocción",
+          "1, 1 y 1"
+        ],
+        [
+          "Pimiento rojo y verde en brunoise",
+          "150 g"
+        ],
+        [
+          "Cebolleta en brunoise",
+          "80 g"
+        ],
+        [
+          "Tomate en dados",
+          "200 g"
+        ],
+        [
+          "Perejil y menta picados",
+          "20 g"
+        ],
+        [
+          "Vinagre de jerez",
+          "40 g"
+        ],
+        [
+          "Aceite de oliva virgen extra",
+          "120 g"
+        ],
+        [
+          "Mostaza",
+          "10 g"
+        ],
+        [
+          "Sal y comino tostado",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Cuece las lentejas desde agua fría con el laurel, el ajo y la cebolla, a fuego suave, 20–30 minutos, hasta que estén tiernas pero enteras. Sala al final de la cocción.",
+        "Escurre y aliña en tibio con la mitad de la vinagreta (mostaza, vinagre, aceite, sal, comino).",
+        "Deja templar y añade las verduras en brunoise, el tomate escurrido y las hierbas.",
+        "Ajusta con el resto de la vinagreta antes de servir.",
+        "Termina con algo crujiente (frutos secos, migas) y algo salado (queso, aceitunas)."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Proporción en el plato",
+        "ratio": "2 partes de legumbre o cereal por 1 de verdura y hierbas",
+        "note": "Más verdura, más fresca."
+      },
+      {
+        "use": "Aliño",
+        "ratio": "1 parte de ácido por 3 de aceite, unos 15 % sobre el grano cocido",
+        "note": "Mitad en tibio, mitad al servir."
+      },
+      {
+        "use": "Lenteja pardina o beluga",
+        "ratio": "Sin remojo, 20–30 minutos",
+        "note": "Fuego suave para que no se rompa."
+      },
+      {
+        "use": "Bulgur para tabulé",
+        "ratio": "Remojado en su volumen de agua hirviendo, tapado 15 minutos",
+        "note": "Mucho perejil, menta, tomate y limón."
+      }
+    ],
+    "variants": [
+      {
+        "id": "ensaladas-templadas",
+        "name": "Ensaladas templadas",
+        "note": "Con verdura asada caliente."
+      },
+      {
+        "id": "guarniciones-de-arroz-y-cereal",
+        "name": "Guarniciones de cereal",
+        "note": "Los cereales cocidos para servir en caliente."
+      },
+      {
+        "id": "bacalao",
+        "name": "Empedrat",
+        "note": "Alubia blanca con bacalao desmigado, tomate, pimiento y aceitunas."
+      }
+    ],
+    "keys": [
+      "Grano en su punto: entero y tierno.",
+      "Aliña en tibio para que absorba.",
+      "Muchas hierbas y un ácido claro: la legumbre pide frescura.",
+      "Un elemento salado y uno crujiente.",
+      "Prueba a temperatura de servicio y vuelve a aliñar."
+    ],
+    "errors": [
+      {
+        "p": "Ensalada sosa",
+        "fix": "Aliñada en frío o con poco ácido. Aliña en tibio y corrige al servir."
+      },
+      {
+        "p": "Grano deshecho",
+        "fix": "Cocción fuerte o larga. Cuece suave y vigila el punto."
+      },
+      {
+        "p": "Aguada",
+        "fix": "Verdura sin escurrir. Escurre tomate y pepino antes."
+      }
+    ],
+    "history": "Las ensaladas de legumbre y cereal son tradicionales en muchas cocinas mediterráneas, del empedrat catalán al tabulé del Levante, y son parte de la cocina de verano.",
+    "uses": [
+      "Guarnición fría de carne o pescado a la brasa",
+      "Entrante de verano",
+      "Plato vegetal completo",
+      "Menú de mediodía"
+    ],
+    "keep": "Legumbre o cereal cocido y aliñado, en frío 3–4 días. La verdura y las hierbas, añadidas al servir.",
+    "pro": "Cuece el grano en tanda y aliña en tibio; ten las verduras y hierbas cortadas aparte y monta por raciones.",
+    "related": [
+      "legumbres",
+      "ensaladas-templadas",
+      "vinagreta",
+      "ensalada-de-hierbas",
+      "guarniciones-de-arroz-y-cereal",
+      "cuscus"
+    ]
+  },
+  {
+    "id": "rillettes-y-pates-de-pescado",
+    "name": "Rillettes y patés de pescado",
+    "name_en": "Fish rillettes and pâtés",
+    "cat": "bases",
+    "group": "Cremas y guarniciones",
+    "aka": [
+      "rillettes de pescado",
+      "pate de pescado",
+      "pastel de cabracho",
+      "crema de caballa",
+      "untable de pescado",
+      "rillettes de salmon"
+    ],
+    "role": "cremoso",
+    "techniques": [
+      "hervido",
+      "horno"
+    ],
+    "summary": "Pescado cocido y desmigado ligado con grasa y aromáticos para untar, o triturado y cuajado al horno: untables de aperitivo y de aprovechamiento.",
+    "what": "Las rillettes de pescado son pescado escalfado o asado, desmigado a mano y ligado con mantequilla, nata fermentada o aceite, con chalota, cítrico y hierbas: quedan con hebras y se untan en pan. Los patés son más finos: pescado triturado con huevo, nata o tomate y cuajado al baño maría, como el pastel de cabracho. Son una forma excelente de aprovechar recortes de [[pescado-azul]], [[pescado-de-roca]] o salazones, y de tener un aperitivo listo.",
+    "base": {
+      "for": "unos 700 g de rillettes de caballa",
+      "items": [
+        [
+          "Lomos de caballa o sardina",
+          "500 g limpios"
+        ],
+        [
+          "Mantequilla pomada",
+          "100 g"
+        ],
+        [
+          "Nata fermentada o queso fresco",
+          "100 g"
+        ],
+        [
+          "Chalota picada fina",
+          "30 g"
+        ],
+        [
+          "Zumo y ralladura de limón",
+          "1"
+        ],
+        [
+          "Alcaparras picadas",
+          "15 g"
+        ],
+        [
+          "Eneldo o cebollino",
+          "10 g"
+        ],
+        [
+          "Sal, pimienta y pimentón ahumado",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Sala ligeramente los lomos y ásalos al horno a 180 °C, 6–8 minutos, o escálfalos en caldo corto, hasta que se separen en lascas.",
+        "Deja templar, quita piel y espinas y desmiga con un tenedor.",
+        "Bate la mantequilla con la nata fermentada; añade la chalota, el limón, las alcaparras y las hierbas.",
+        "Mezcla con el pescado sin hacerlo pasta: tienen que quedar hebras.",
+        "Ajusta de sal y ácido, pon en tarros y cubre con una capa fina de mantequilla fundida o aceite. Enfría."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Rillettes",
+        "ratio": "500 g de pescado cocido por 150–200 g de grasa (mantequilla, nata fermentada o aceite)",
+        "note": "Más grasa, más untuosa."
+      },
+      {
+        "use": "Pastel de cabracho o de pescado de roca",
+        "ratio": "500 g de pescado cocido, 4 huevos, 200 g de nata y 150 g de tomate frito",
+        "note": "Al baño maría a 160 °C, 45–60 minutos."
+      },
+      {
+        "use": "Rillettes de pescado ahumado",
+        "ratio": "Mitad de pescado cocido y mitad ahumado",
+        "note": "Más sabor, menos sal añadida."
+      }
+    ],
+    "variants": [
+      {
+        "id": "salazones-y-huevas",
+        "name": "Untable de salazones",
+        "note": "Con mojama o bacalao desalado."
+      },
+      {
+        "id": "lacteos-fermentados",
+        "name": "Con nata fermentada",
+        "note": "Más ligera y ácida que la mantequilla."
+      },
+      {
+        "id": "prensados-y-terrinas",
+        "name": "Terrinas de pescado",
+        "note": "Más compactas, para cortar."
+      }
+    ],
+    "keys": [
+      "Pescado en su punto justo: pasado queda seco y fibroso.",
+      "Desmiga a mano: la textura de hebras es la gracia.",
+      "Mucho ácido y aromáticos para aligerar.",
+      "Sella con grasa para que no se oxide.",
+      "Sácalas del frío 15 minutos antes de servir."
+    ],
+    "errors": [
+      {
+        "p": "Seca",
+        "fix": "Pescado sobrecocido o poca grasa. Cuece menos y añade grasa."
+      },
+      {
+        "p": "Pasta sin textura",
+        "fix": "Triturada en vez de desmigada. Mezcla con tenedor."
+      },
+      {
+        "p": "Sabor fuerte a pescado",
+        "fix": "Pescado poco fresco o sin ácido. Usa pescado del día y sube el cítrico."
+      }
+    ],
+    "history": "Las rillettes son una preparación clásica francesa de carne confitada que se ha extendido al pescado. Los pasteles de pescado cuajados son tradicionales en la cocina del norte de España.",
+    "uses": [
+      "Aperitivo con pan tostado",
+      "Bocadillos y tostas",
+      "Relleno de pimientos o huevos",
+      "Aprovechamiento de recortes de pescado"
+    ],
+    "keep": "Rillettes selladas con grasa, en frío 3–4 días. Pastel de pescado, en frío 3 días.",
+    "pro": "Aprovecha los recortes de pescado del despiece del día. Sirve en tarro pequeño con pan tostado y un encurtido.",
+    "related": [
+      "pescado-azul",
+      "pescado-de-roca",
+      "salazones-y-huevas",
+      "caldo-corto",
+      "lacteos-fermentados",
+      "cocina-de-aprovechamiento"
+    ]
+  },
+  {
+    "id": "guarniciones-de-arroz-y-cereal",
+    "name": "Guarniciones de arroz y cereal",
+    "name_en": "Rice and grain sides",
+    "cat": "bases",
+    "group": "Cremas y guarniciones",
+    "aka": [
+      "arroz pilaf",
+      "arroz blanco",
+      "bulgur",
+      "quinoa",
+      "trigo en grano",
+      "farro",
+      "espelta",
+      "arroz de guarnicion",
+      "cereales"
+    ],
+    "role": "guarnicion",
+    "techniques": [
+      "hervido"
+    ],
+    "summary": "Arroz pilaf, arroz blanco, bulgur, trigo, farro o quinoa cocidos sueltos y sabrosos para acompañar carnes, pescados y verduras.",
+    "what": "Una guarnición de cereal debe quedar con el grano suelto, tierno y con sabor propio. El arroz pilaf se nacara en grasa con aromáticos y se cuece tapado con una cantidad exacta de caldo, sin remover. Los cereales en grano (trigo, farro, espelta, cebada) se cuecen en mucha agua con sal, como la pasta, y se escurren. El bulgur y el cuscús solo se hidratan. La quinoa se cuece con su medida de agua. Terminados con grasa, hierbas, frutos secos o una salsa, acompañan muy bien la brasa. Los arroces protagonistas están en [[arroces]] y los cremosos en [[risotto-y-arroces-cremosos]].",
+    "base": {
+      "for": "8 raciones de arroz pilaf",
+      "items": [
+        [
+          "Arroz largo",
+          "400 g"
+        ],
+        [
+          "Caldo de ave o de verduras caliente",
+          "600 ml"
+        ],
+        [
+          "Mantequilla o aceite",
+          "40 g"
+        ],
+        [
+          "Cebolla o chalota picada",
+          "80 g"
+        ],
+        [
+          "Laurel",
+          "1 hoja"
+        ],
+        [
+          "Sal",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Rehoga la cebolla en la grasa sin dorar.",
+        "Añade el arroz y nacara 2–3 minutos, removiendo, hasta que esté brillante.",
+        "Añade el caldo caliente, la sal y el laurel; lleva a hervor.",
+        "Tapa y cuece a fuego mínimo o en horno a 180 °C, 17–18 minutos, sin remover.",
+        "Deja reposar tapado 10 minutos y suelta el grano con un tenedor."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Arroz pilaf (largo)",
+        "ratio": "1 parte de arroz por 1,5 de caldo, 17–18 min tapado y 10 de reposo",
+        "note": "Sin remover."
+      },
+      {
+        "use": "Trigo, farro o espelta en grano",
+        "ratio": "En mucha agua con 1 % de sal, 30–60 minutos según el grano",
+        "note": "Remojo previo de 8–12 horas acorta la cocción."
+      },
+      {
+        "use": "Quinoa",
+        "ratio": "1 parte por 1,75 de agua, 15 minutos y 5 de reposo",
+        "note": "Lavada antes para quitar el amargor."
+      },
+      {
+        "use": "Bulgur",
+        "ratio": "1 parte por 1–1,2 de agua o caldo hirviendo, tapado 15 minutos",
+        "note": "Sin cocción."
+      }
+    ],
+    "variants": [
+      {
+        "id": "cuscus",
+        "name": "Cuscús",
+        "note": "Sémola de trigo hidratada y cocida al vapor."
+      },
+      {
+        "id": "arroz-japones-y-al-vapor",
+        "name": "Arroz al vapor",
+        "note": "Arroz japonés o jazmín cocido al estilo asiático."
+      },
+      {
+        "id": "ensaladas-de-legumbre-y-cereal",
+        "name": "Ensaladas de cereal",
+        "note": "Los mismos granos aliñados en frío."
+      }
+    ],
+    "keys": [
+      "Pilaf: nacarar el grano y no remover durante la cocción.",
+      "Reposo tapado: termina la cocción y suelta el grano.",
+      "Cereales en grano: como la pasta, en mucha agua con sal.",
+      "Usa caldo con sabor y sala con medida.",
+      "Termina con grasa, hierbas o frutos secos tostados."
+    ],
+    "errors": [
+      {
+        "p": "Arroz pegado o pastoso",
+        "fix": "Removido o con exceso de caldo. No remuevas y mide el caldo."
+      },
+      {
+        "p": "Grano duro",
+        "fix": "Poco caldo o fuego alto. Ajusta la proporción y cuece a fuego mínimo."
+      },
+      {
+        "p": "Quinoa amarga",
+        "fix": "Sin lavar. Lávala bien antes de cocerla."
+      }
+    ],
+    "history": "El arroz pilaf viene de una larga tradición de Oriente Medio, Asia central y el Mediterráneo oriental. Los cereales en grano, como el trigo o la espelta, se han recuperado en la cocina actual como guarnición.",
+    "uses": [
+      "Guarnición de carnes y pescados",
+      "Base de verduras asadas",
+      "Ensaladas de grano",
+      "Platos especiados y curris"
+    ],
+    "keep": "Abatido y en frío, 2–3 días. Regenerar al vapor o en sartén con un poco de grasa.",
+    "pro": "Cuece el grano en tanda, abátelo extendido y saltéalo por raciones con grasa y aromáticos al pedir.",
+    "related": [
+      "arroces",
+      "risotto-y-arroces-cremosos",
+      "cuscus",
+      "arroz-japones-y-al-vapor",
+      "ensaladas-de-legumbre-y-cereal",
+      "harinas-y-almidones"
+    ]
   }
 ]
