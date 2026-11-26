@@ -46,14 +46,15 @@ export function iaMessage(e) {
 }
 
 // Pregunta a ChatGPT. turns: [{role: 'user'|'assistant', text, images?: [dataUrl]}]. Devuelve el texto de la respuesta.
-export async function askIa({instructions = '', turns = [], text = '', images = [], json = false, web = false, signal} = {}) {
+// smart: usa el modelo más listo aunque el elegido sea el rápido (para lo que se guarda para siempre, como las fichas).
+export async function askIa({instructions = '', turns = [], text = '', images = [], json = false, web = false, signal, smart = false, effort = 'low'} = {}) {
  const cfg = iaConfig();
  if (!iaOn()) throw new IaError('key');
  const all = turns.length ? turns : [{role: 'user', text, images}];
  const input = all.map(m => m.role === 'assistant'
   ? {role: 'assistant', content: m.text}
   : {role: 'user', content: [{type: 'input_text', text: m.text || ' '}, ...(m.images || []).map(url => ({type: 'input_image', image_url: url, detail: 'high'}))]});
- const body = {model: iaModel(), input, ...(instructions ? {instructions} : {}), reasoning: {effort: 'low'}, store: false,
+ const body = {model: smart ? {...FALLBACK, ...(cfg.models || {})}.smart : iaModel(), input, ...(instructions ? {instructions} : {}), reasoning: {effort}, store: false,
   ...(web ? {tools: [{type: 'web_search'}]} : {}), ...(json && !web ? {text: {format: {type: 'json_object'}}} : {})};
  let res;
  try { res = await fetch(URL_API, {method: 'POST', headers: {'Content-Type': 'application/json', Authorization: 'Bearer ' + cfg.key}, body: JSON.stringify(body), signal}); }

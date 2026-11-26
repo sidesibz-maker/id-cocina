@@ -7,7 +7,8 @@ const url = new URL('./salida/ID Cocina/ID Cocina.html', import.meta.url).href;
 const fails = [], ok = (c, m) => { if (!c) fails.push(m); }, wait = ms => new Promise(r => setTimeout(r, ms));
 const browser = await chromium.launch();
 const ctx = await browser.newContext({viewport: {width: 1280, height: 900}, acceptDownloads: true, permissions: ['clipboard-read', 'clipboard-write']});
-await ctx.route('https://api.openai.com/v1/responses', r => r.fulfill({status: 200, contentType: 'application/json', body: JSON.stringify({output: [{type: 'message', content: [{type: 'output_text', text: JSON.stringify({name: 'Salsa de ostras casera', aka: ['oyster sauce'], cat: 'salsas', group: 'Salsas del mundo', summary: 'Salsa espesa y salada.', what: 'Se reduce el jugo de ostras; liga como una [[reducciones|reducción]].', base: {for: '250 ml', items: [['Ostras', '500 g']], steps: ['Abrir', 'Reducir']}, ratios: [], variants: [], keys: ['No salar al principio'], errors: [], history: 'Cocina cantonesa.', uses: ['Salteados'], keep: '1 semana en frío.', pro: '', related: ['reducciones']})}]}]})}));
+let lastBody = null;
+await ctx.route('https://api.openai.com/v1/responses', r => (lastBody = r.request().postDataJSON(), r.fulfill({status: 200, contentType: 'application/json', body: JSON.stringify({output: [{type: 'message', content: [{type: 'output_text', text: JSON.stringify({name: 'Salsa de ostras casera', aka: ['oyster sauce'], cat: 'salsas', group: 'Salsas del mundo', summary: 'Salsa espesa y salada.', what: 'Se reduce el jugo de ostras; liga como una [[reducciones|reducción]].', base: {for: '250 ml', items: [['Ostras', '500 g']], steps: ['Abrir', 'Reducir']}, ratios: [], variants: [], keys: ['No salar al principio'], errors: [], history: 'Cocina cantonesa.', uses: ['Salteados'], keep: '1 semana en frío.', pro: '', related: ['reducciones']})}]}]})})));
 const page = await ctx.newPage(), errors = [];
 page.on('pageerror', e => errors.push(String(e)));
 const go = async h => { await page.evaluate(x => { location.hash = x; }, h); await wait(300); };
@@ -56,6 +57,7 @@ await page.fill('#saberQ', 'salsa de ostras'); await wait(150);
 await page.evaluate(() => localStorage.setItem('id-cocina-ia', JSON.stringify({key: 'sk-proj-prueba0123456789abcdefghijklmnop', daily: false})));
 await page.reload(); await page.waitForSelector('#saberQ'); await page.fill('#saberQ', 'salsa de ostras'); await wait(200);
 await page.click('[data-act=create-ia]'); await page.waitForSelector('.kentry h1');
+ok(lastBody?.model === 'gpt-5.5' && lastBody?.reasoning?.effort === 'medium', 'la ficha no se pide al modelo más listo: ' + JSON.stringify([lastBody?.model, lastBody?.reasoning]));
 ok((await page.textContent('.kentry h1')) === 'Salsa de ostras casera' && (await page.textContent('.kentry')).includes('reducción'), 'no se crea la entrada con ChatGPT');
 await go('#/biblioteca'); await page.waitForSelector('.kshelf'); ok((await page.textContent('.kshelves')).includes('Tus entradas'), 'la entrada nueva no sale en «Tus entradas»');
 // Desde un plato

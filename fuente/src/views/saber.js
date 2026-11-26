@@ -451,10 +451,10 @@ export function mount(root, params) {
   if (act === 'create-ia') {
    const topic = query.trim(), have = exactEntry(topic);
    if (have) { query = ''; go('biblioteca/' + have.id); return; }
-   const st = $('#kcreateStatus', root); if (st) st.textContent = t('Escribiendo la ficha. Suele tardar entre 20 y 60 segundos; puedes seguir mirando otras cosas.', 'Writing the entry. It usually takes 20 to 60 seconds.');
+   const st = $('#kcreateStatus', root); if (st) st.textContent = t('Escribiendo la ficha con el modelo más listo de ChatGPT. Puede tardar un minuto o dos; no cierres esta pantalla.', 'Writing the entry with the smartest ChatGPT model. It can take a minute or two; keep this screen open.');
    b.disabled = true; b.classList.add('is-busy'); b.lastChild.textContent = t('ChatGPT está escribiendo la ficha…', 'ChatGPT is writing the entry…');
    try {
-    const entry = entryFromReply(await askIa({text: createPrompt(topic), json: true}), topic);
+    const entry = entryFromReply(await askIa({text: createPrompt(topic), json: true, smart: true, effort: 'medium'}), topic);
     if (!entry) throw Object.assign(Error('empty'), {kind: 'empty'});
     await saveSaberEntry(entry); query = ''; go('biblioteca/' + entry.id); toast(t('Entrada escrita por ChatGPT. Revísala y añade tu versión.', 'Entry written by ChatGPT. Check it and add your version.'));
    } catch (err) { toast(iaMessage(err), 'error', 7000); if (b.isConnected) { b.disabled = false; b.classList.remove('is-busy'); b.lastChild.textContent = t('Escribir la ficha de «', 'Write the entry for “') + topic + t('»', '”'); } if (st) st.textContent = ''; }
