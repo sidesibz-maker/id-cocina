@@ -115,6 +115,16 @@ ok(sh?.title === 'Tomate' && sh.text.includes('agua de tomate'), 'compartir la f
 await page.evaluate(() => { const v = JSON.parse(localStorage.getItem('id-cocina-v1')); v.docs = v.docs || {}; v.docs['lectura:estado'] = {id: 'lectura:estado', type: 'lectura', read: {bechamel: '2026-11-20', mayonesa: '2026-11-21'}, version: 1}; localStorage.setItem('id-cocina-v1', JSON.stringify(v)); });
 await page.reload(); await wait(800); await go('#/biblioteca'); await page.waitForSelector('.kshelf');
 ok((await page.textContent('.kshelf[href="#/biblioteca/estante/salsas"]')).includes('2 leídas'), 'el estante no dice cuántas has leído: ' + await page.textContent('.kshelf[href="#/biblioteca/estante/salsas"]'));
+// Biblioteca infinita: ofrece escribir la ficha aunque haya resultados parecidos, no cuando ya está tal cual, y desde Ctrl+K
+await go('#/biblioteca'); await page.waitForSelector('#saberQ');
+await page.fill('#saberQ', 'salsa de tomate asado'); await wait(250);
+ok(await page.locator('#saberRes .krow').count() > 0 && await page.locator('#saberRes .kcreate [data-act=create-ia]').count() === 1, 'con resultados parecidos no ofrece escribir la ficha');
+await page.fill('#saberQ', 'Bechamel'); await wait(250);
+ok(await page.locator('#saberRes .kcreate').count() === 0, 'ofrece escribir una ficha que ya existe');
+await page.keyboard.press('Control+k'); await page.waitForSelector('#finderQ'); await page.fill('#finderQ', 'pil pil de bacalao al pimentón'); await wait(300);
+ok((await page.textContent('#finderRes')).includes('Biblioteca infinita'), 'el buscador no ofrece escribir la ficha');
+await page.click('#finderRes a[href^="#/biblioteca/buscar/"]'); await wait(500);
+ok((await page.inputValue('#saberQ').catch(() => '')) === 'pil pil de bacalao al pimentón', 'el buscador no abre la Biblioteca con la búsqueda');
 ok(!errors.length, 'errores: ' + errors.join(' | '));
 await browser.close();
 console.log(fails.length ? 'FALLOS:\n - ' + fails.join('\n - ') : 'la Biblioteca: todo correcto');

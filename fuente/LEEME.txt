@@ -177,3 +177,12 @@ Rediseño «Lámina de laboratorio» (26 nov 2026):
  - Cada plato se dibuja en corte: sus componentes en capas, del toque final a la base, con sus gramos.
  - Las temperaturas de las fichas se ven en una escala de frío a fuego.
  - Icono nuevo de la app y ficha para el equipo con el mismo estilo.
+
+Biblioteca infinita (26 nov 2026):
+ - Escribe cualquier elaboración, técnica o producto en la Biblioteca (o en el buscador Ctrl+K, o en el buscador de Hoy).
+   Si no está escrita tal cual, aparece «Escribir la ficha de …»: con ChatGPT conectado, la escribe en unos segundos con
+   el mismo formato que las demás (receta o método, proporciones según el uso, temperaturas, claves, errores,
+   conservación y servicio) y se queda guardada en tu Biblioteca y en el móvil. Sin ChatGPT conectado, se hace en
+   cuatro pasos: copiar la petición, abrir ChatGPT, pegar su respuesta y guardar.
+ - Si ya existe, se abre la que hay en vez de repetirla. Las fichas escritas así lo dicen debajo del título, para que las
+   revises; puedes escribir tu versión encima.

@@ -86,17 +86,27 @@ function row(e, tab) {
  return '<li><a class="krow" href="' + href(e.id, tab) + '"><span class="krow-name">' + esc(e.name) + (saberMine(e.id)?.versions?.length ? '<span class="kmine">' + esc(t('tu versión', 'your version')) + '</span>' : '') + '</span><span class="krow-sum">' + flat(clip(e.summary || '', 160)) + '</span></a></li>';
 }
 const hasSearch = () => !!(query.trim() || category || fixes);
+// La Biblioteca no se acaba: lo que no está escrito tal cual, se escribe ahora con el mismo formato que las demás.
+const exactEntry = q => { const n = norm(q).replace(/[^a-z0-9ñ ]+/g, ' ').trim(); return entries().find(e => [e.name, ...(e.aka || [])].some(x => norm(x).replace(/[^a-z0-9ñ ]+/g, ' ').trim() === n)) || null; };
+function createBlock(q, alone) {
+ const title = alone ? t('«', '“') + q + t('» aún no está en tu Biblioteca', '” is not in your library yet') : t('¿Buscas «', 'Looking for “') + q + t('» tal cual?', '” exactly?');
+ const sub = iaOn() ? t('ChatGPT escribe ahora su ficha completa, con el mismo formato que las demás: receta base o método, proporciones según el uso, temperaturas, claves, errores, conservación y servicio. Se queda guardada en tu Biblioteca y en el móvil.', 'ChatGPT writes its full entry now, in the same format as the rest. It stays in your library and on your phone.')
+  : t('Copia la petición, pégala en ChatGPT y pega aquí su respuesta: la ficha queda guardada en tu Biblioteca. Para hacerlo en un paso, conecta ChatGPT en Ajustes.', 'Copy the request, paste it into ChatGPT and paste its answer here. To do it in one step, connect ChatGPT in Settings.');
+ return '<section class="kcreate' + (alone ? ' is-alone' : '') + '" aria-labelledby="kcreateT"><h2 id="kcreateT">' + esc(title) + '</h2><p>' + esc(sub) + '</p>' +
+  (iaOn() ? '<div class="row-actions row-left"><button type="button" class="btn primary" data-act="create-ia">' + icon('spark') + '<span>' + esc(t('Escribir la ficha de «', 'Write the entry for “') + q + t('»', '”')) + '</span></button></div><p class="fine" id="kcreateStatus" role="status"></p>'
+   : '<div class="row-actions row-left"><button type="button" class="btn primary" data-act="create-copy">' + icon('copy') + esc(t('1. Copiar la petición', '1. Copy the request')) + '</button><a class="btn ghost" href="https://chatgpt.com/" target="_blank" rel="noopener">' + icon('out') + esc(t('2. Abrir ChatGPT', '2. Open ChatGPT')) + '</a></div>' +
+     '<label class="mini" for="kReply">' + esc(t('3. Pega aquí la respuesta de ChatGPT', '3. Paste the ChatGPT answer here')) + '</label><textarea id="kReply" rows="5"></textarea><div class="row-actions row-left"><button type="button" class="btn ghost" data-act="create-save">' + icon('check') + esc(t('4. Guardar la ficha', '4. Save the entry')) + '</button></div>') + '</section>';
+}
 function results() {
  const q = query.trim();
  if (!hasSearch()) return {status: '', html: ''};
  const list = q ? search(q, Infinity, {category, fixes}) :
   entries().filter(e => (!category || e.cat === category) && (!fixes || e.errors?.length)).sort((a, b) => a.name.localeCompare(b.name, 'es'));
  const status = list.length === 1 ? t('1 entrada', '1 entry') : list.length + t(' entradas', ' entries');
- if (list.length) return {status, html: '<ul class="krows">' + list.map(e => row(e, fixes ? 'trucos' : undefined)).join('') + '</ul>'};
+ if (list.length) { const rows = list.map(e => row(e, fixes ? 'trucos' : undefined)), offer = q.length >= 3 && !category && !fixes && !exactEntry(q) ? createBlock(q, false) : '', cut = Math.min(5, rows.length);
+  return {status, html: '<ul class="krows">' + rows.slice(0, cut).join('') + '</ul>' + offer + (rows.length > cut ? '<ul class="krows">' + rows.slice(cut).join('') + '</ul>' : '')}; }
  if (category || fixes) return {status: t('No hay coincidencias con estos filtros.', 'No matches with these filters.'), html: ''};
- return {status, html: emptyState('search', t('«', '“') + q + t('» no está todavía', '” is not here yet'), iaOn() ? t('Puedes pedir a ChatGPT que la escriba con el mismo formato. Luego la revisas y le añades tu versión.', 'Ask ChatGPT to write it in the same format. Then check it and add your version.') : t('Puedes pedirla a ChatGPT: copia la petición, pégala allí y trae aquí la respuesta.', 'Ask ChatGPT for it: copy the request, paste it there and bring back the answer.'),
-  iaOn() ? '<button type="button" class="btn primary" data-act="create-ia">' + icon('spark') + esc(t('Escribir «', 'Write “') + q + t('» con ChatGPT', '” with ChatGPT')) + '</button>'
-   : '<div class="row-actions"><button type="button" class="btn primary" data-act="create-copy">' + icon('copy') + esc(t('Copiar la petición', 'Copy the request')) + '</button><a class="btn ghost" href="https://chatgpt.com/" data-chat target="_blank" rel="noopener noreferrer">' + esc(t('Preguntar a ChatGPT', 'Ask ChatGPT')) + '</a></div><label class="mini" for="kReply">' + esc(t('Pega aquí la respuesta', 'Paste the answer here')) + '</label><textarea id="kReply" rows="3"></textarea><div class="row-actions"><button type="button" class="btn ghost" data-paste="kReply" data-then="[data-act=create-save]">' + icon('copy') + esc(t('Pegar y leer', 'Paste and read')) + '</button><button type="button" class="btn primary" data-act="create-save">' + icon('check') + esc(t('Guardar la entrada', 'Save the entry')) + '</button></div>')};
+ return {status, html: createBlock(q, true)};
 }
 const STARTERS = ['bechamel', 'mayonesa', 'fumet', 'holandesa', 'romesco', 'jugo-de-carne'];
 const GUIDES = [
@@ -113,7 +123,7 @@ function homeHtml() {
  const saved = favorites().map(entryById).filter(Boolean);
  const trash = Object.values(state.saber || {}).filter(x => x?.custom && x.deleted_at);
  const shelves = CATS.map(([id]) => [id, all.filter(e => (e.cat || 'conceptos') === id).length]).filter(([, n]) => n);
- return '<section class="kwelcome"><h1>' + esc(t('¿Qué quieres saber?', 'What do you want to know?')) + '</h1><p>' + esc(t('Una salsa, un fondo, una base o el porqué de algo. Escríbelo y te lo encuentro.', 'A sauce, a stock, a base or the why of something. Type it and I will find it.')) + '</p>' +
+ return '<section class="kwelcome"><h1>' + esc(t('¿Qué quieres saber?', 'What do you want to know?')) + '</h1><p>' + esc(t('Cualquier elaboración, técnica o producto. Si aún no está escrita, se escribe al momento con el mismo formato que las demás.', 'Any preparation, technique or product. If it is not written yet, it gets written right away in the same format.')) + '</p>' +
   '<label class="sr" for="saberQ">' + esc(t('Buscar en la Biblioteca', 'Search the library')) + '</label><div class="searchbox searchbox-big kask">' + icon('search') + '<input id="saberQ" type="search" aria-controls="saberRes" value="' + esc(query) + '" placeholder="' + esc(t('Migas crujientes, coliflor, grumos…', 'Crunchy crumbs, cauliflower, lumps…')) + '" autocomplete="off" enterkeyhint="search"></div>' +
   '<div class="ksearch-filters"><label for="saberCategory">' + esc(t('Estante', 'Shelf')) + '</label><select id="saberCategory"><option value="">' + esc(t('Todos los estantes', 'All shelves')) + '</option>' + shelves.map(([id]) => '<option value="' + esc(id) + '"' + (category === id ? ' selected' : '') + '>' + esc(shelfName(id)) + '</option>').join('') + '</select><label class="kfix-filter"><input id="saberFixes" type="checkbox"' + (fixes ? ' checked' : '') + '> ' + esc(t('Buscar errores y soluciones', 'Search mistakes and fixes')) + '</label></div>' +
   '<div class="kstart"' + (filtering ? ' hidden' : '') + '><span class="kstart-label">' + esc(t('Para empezar', 'To start')) + '</span>' + STARTERS.map(entryById).filter(Boolean).map(e => '<a class="kchip" href="' + href(e.id) + '">' + esc(e.name) + '</a>').join('') + '<button type="button" class="kchip" data-act="random-entry">' + esc(t('Una ficha al azar', 'A random entry')) + '</button></div></section>' +
@@ -208,6 +218,7 @@ function entryHtml(id, tab) {
  const {dishes, subs} = inDishes(e), rel = [...new Set([...(e.related || []), ...backlinks(e.id).map(x => x.id)])].map(entryById).filter(x => x && x.id !== e.id);
  return '<div class="kentry-back">' + (hasSearch() ? back : '') + '<a class="back" href="#/biblioteca/estante/' + esc(e.cat || 'conceptos') + '">' + icon('left') + esc(shelfName(e.cat || 'conceptos')) + '</a></div><article class="kentry">' +
   '<header class="page-head"><h1>' + esc(e.name) + '</h1>' + (e.aka?.length ? '<p class="kaka">' + esc(t('También: ', 'Also: ') + e.aka.join(', ')) + '</p>' : '') + '<div class="kentry-acts"><button type="button" class="linkbtn" data-act="favorite" aria-pressed="' + saved + '">' + icon('star') + esc(saved ? t('Quitar de favoritas', 'Remove from favourites') : t('Guardar en favoritas', 'Save to favourites')) + '</button>' + (cardsFor(e.id) ? '<a class="linkbtn" href="#/entrenar/ficha/' + esc(e.id) + '">' + icon('brain') + esc(t('Repasar esta ficha', 'Review this entry')) + '</a>' : '') + '<span class="kentry-tools"><button type="button" class="linkbtn" data-act="share-entry">' + esc(t('Compartir', 'Share')) + '</button><button type="button" class="linkbtn" data-act="compare-entry">' + esc(t('Comparar', 'Compare')) + '</button><button type="button" class="linkbtn" data-act="print-entry">' + icon('down') + esc(t('Imprimir', 'Print')) + '</button>' + '</span>' + ((e.base?.items?.length || technique(e.technique)) && state.canEdit && !state.setupPending ? '<button type="button" class="btn primary k-use" data-act="use-recipe">' + icon('plus') + esc(technique(e.technique) ? t('Aplicar técnica a un plato', 'Apply technique to a dish') : t('Usar en un plato', 'Use in a dish')) + '</button>' : '') + '</div></header>' +
+  (e.source === 'chatgpt' ? '<p class="fine kgen">' + icon('spark') + esc(t('Ficha escrita con ChatGPT', 'Entry written with ChatGPT') + (e.created_at ? t(' el ', ' on ') + shortDate(e.created_at) : '') + t('. Revísala y, si algo no te cuadra, escribe tu versión.', '. Check it and, if something is off, write your version.')) + '</p>' : '') +
   (e.summary ? '<div class="kbody"><p class="lead">' + linked(e.summary) + '</p></div>' : '') +
   '<div class="ktabs" role="tablist" aria-label="' + esc(t('Partes de la entrada', 'Parts of the entry')) + '">' + list.map(([pid, label]) => '<button type="button" role="tab" id="kt-' + pid + '" aria-controls="kp-' + pid + '" aria-selected="' + (pid === on) + '" tabindex="' + (pid === on ? 0 : -1) + '" class="ktab' + (pid === on ? ' active' : '') + '" data-ktab="' + pid + '">' + esc(label) + '</button>').join('') + '</div>' +
   list.map(([pid, , body]) => '<section class="kpanel" role="tabpanel" tabindex="0" id="kp-' + pid + '" aria-labelledby="kt-' + pid + '"' + (pid === on ? '' : ' hidden') + '>' + body + '</section>').join('') +
@@ -224,6 +235,7 @@ function dictHtml(focus) {
   '<p class="fine" id="dictStatus" role="status"></p><dl class="kdict">' + list.map(([w, d, id]) => '<div class="kdict-row' + (norm(w) === norm(focus) ? ' is-focus' : '') + '" id="dict-' + esc(slug(w)) + '" data-w="' + esc(norm(w + ' ' + d)) + '"><dt>' + esc(w) + '</dt><dd>' + esc(d) + (id && entryById(id) ? ' <a class="kref" href="' + href(id) + '">' + esc(t('Ficha: ', 'Entry: ') + entryById(id).name) + '</a>' : '') + '</dd></div>').join('') + '</dl>';
 }
 export const render = params => {
+ if (params[0] === 'buscar') { presetSaber(params[1] ? decodeURIComponent(params[1]) : ''); params.length = 0; }
  if (params[0] === 'diccionario') return dictHtml(params[1] ? decodeURIComponent(params[1]) : '');
  if (params[0] === 'estante') return shelfHtml(params[1]);
  if (params[0]) { if (tabFor !== params[0]) { tabFor = params[0]; activeTab = null; } return entryHtml(params[0], params[1] || activeTab); }
@@ -233,10 +245,12 @@ export const render = params => {
 // ---------- Crear una entrada que falta (con ChatGPT) ----------
 function createPrompt(topic) {
  const ids = entries().map(e => e.id).join(', ');
- return 'Escribe una entrada de enciclopedia de cocina profesional sobre «' + topic + '», en español de España, para un jefe de cocina de un restaurante mediterráneo de brasa. Texto original con tus palabras (no copies libros ni webs), medidas métricas, proporciones reales, sin inventar datos históricos dudosos. Responde SOLO con un bloque JSON válido con estas claves: ' +
-  '{"name","aka":[otros nombres],"cat": "salsas"|"fondos"|"bases"|"conceptos"|"cortes","group","summary": una frase,"what": 2-4 frases,"base":{"for","items":[["ingrediente","cantidad"]],"steps":["..."]} o null,"ratios":[{"use","ratio","note"}] (cómo cambia según para qué se usa),"variants":[{"id": null o un id de la lista,"name","note"}],"keys":[3-6 claves],"errors":[{"p","fix"}],"history": 2-4 frases,"uses":[...],"keep","pro","related":[ids de la lista]}. ' +
-  'En los textos puedes enlazar otras entradas como [[id]] o [[id|texto]], solo con estos ids: ' + ids + '.';
+ return 'Escribe la ficha de cocina profesional de «' + topic + '» para la Biblioteca de un jefe de cocina de un restaurante mediterráneo de brasa en Ibiza. Español de España, tono de cocinero a cocinero: claro, práctico, sin adornos. Texto ORIGINAL con tus palabras (no copies ni parafrasees libros ni webs). Medidas métricas (g, ml, l, °C, minutos) y proporciones reales de cocina profesional. Escribe siempre las temperaturas como «NN °C» o «NN–NN °C». No inventes historia, nombres ni fechas dudosas: si no es seguro, generaliza. Entre 400 y 700 palabras en total. ' +
+  'Si «' + topic + '» es una elaboración con ingredientes, rellena "base" (receta base con cantidades y pasos); si es una técnica o un producto, deja "base" en null y rellena "method" con los pasos. ' +
+  'Responde SOLO con un objeto JSON válido con estas claves: {"name": nombre correcto con mayúscula inicial,"aka":[otros nombres con los que se busca],"cat": uno de "salsas"|"fondos"|"bases"|"conceptos"|"tecnicas"|"dulce"|"producto"|"creatividad"|"cortes","group": subgrupo corto,"summary": una frase,"what": 2-4 frases,"base":{"for":"para cuánto","items":[["ingrediente","cantidad"]],"steps":["paso con tiempos y temperaturas"]} o null,"method":["paso"] o [],"ratios":[{"use":"para qué","ratio":"cómo cambia (con °C si aplica)","note":"nota"}],"variants":[{"id": null o un id de la lista,"name","note"}],"keys":[4-6 claves],"errors":[{"p":"problema","fix":"cómo se arregla"}],"history": 2-3 frases,"uses":[...],"keep":"conservación y regeneración","pro":"en producción y en el pase","related":[ids de la lista]}. ' +
+  'En los textos puedes enlazar otras fichas como [[id]] o [[id|texto]], SOLO con estos ids: ' + ids + '.';
 }
+
 function entryFromReply(text, topic) {
  const v = parseReply(text);
  if (!v || typeof v !== 'object' || Array.isArray(v) || !String(v.name || topic).trim()) return null;
@@ -245,12 +259,13 @@ function entryFromReply(text, topic) {
  while (taken.has(id)) id = slug(name) + '-' + n++;
  const s = x => (typeof x === 'string' ? x.slice(0, 3000) : '');
  const arr = x => (Array.isArray(x) ? x : []);
- return {id, name, aka: arr(v.aka).map(String).slice(0, 8), cat: ['salsas', 'fondos', 'bases', 'conceptos', 'cortes'].includes(v.cat) ? v.cat : 'conceptos', group: s(v.group).slice(0, 60), summary: s(v.summary), what: s(v.what),
-  base: v.base && typeof v.base === 'object' ? {for: s(v.base.for), items: arr(v.base.items).filter(Array.isArray).map(x => [String(x[0] || ''), String(x[1] || '')]).slice(0, 30), steps: arr(v.base.steps).map(String).slice(0, 20)} : null,
+ return {id, name, aka: arr(v.aka).map(String).slice(0, 8), cat: ['salsas', 'fondos', 'bases', 'conceptos', 'cortes', 'tecnicas', 'dulce', 'producto', 'creatividad'].includes(v.cat) ? v.cat : 'conceptos', group: s(v.group).slice(0, 60), summary: s(v.summary), what: s(v.what),
+  base: v.base && typeof v.base === 'object' && Array.isArray(v.base.items) && v.base.items.length ? {for: s(v.base.for), items: arr(v.base.items).filter(Array.isArray).map(x => [String(x[0] || ''), String(x[1] || '')]).slice(0, 30), steps: arr(v.base.steps).map(String).slice(0, 20)} : null,
+  method: arr(v.method).map(String).filter(Boolean).slice(0, 20),
   ratios: arr(v.ratios).filter(x => x && x.use).map(x => ({use: String(x.use), ratio: String(x.ratio || ''), note: String(x.note || '')})).slice(0, 12),
-  variants: arr(v.variants).filter(x => x && x.name).map(x => ({id: x.id || null, name: String(x.name), note: String(x.note || '')})).slice(0, 12),
+  variants: arr(v.variants).filter(x => x && x.name).map(x => ({id: x.id && entryById(String(x.id)) ? String(x.id) : null, name: String(x.name), note: String(x.note || '')})).slice(0, 12),
   keys: arr(v.keys).map(String).slice(0, 8), errors: arr(v.errors).filter(x => x && x.p).map(x => ({p: String(x.p), fix: String(x.fix || '')})).slice(0, 8),
-  history: s(v.history), uses: arr(v.uses).map(String).slice(0, 12), keep: s(v.keep), pro: s(v.pro), related: arr(v.related).map(String).slice(0, 12), source: 'chatgpt', created_at: new Date().toISOString()};
+  history: s(v.history), uses: arr(v.uses).map(String).slice(0, 12), keep: s(v.keep), pro: s(v.pro), related: arr(v.related).map(String).filter(x => entryById(x)).slice(0, 12), source: 'chatgpt', created_at: new Date().toISOString()};
 }
 
 export function mount(root, params) {
@@ -434,13 +449,15 @@ export function mount(root, params) {
    await saveSaberEntry(entry); query = ''; go('biblioteca/' + entry.id); toast(t('Entrada guardada en tu Biblioteca.', 'Entry saved in your library.'));
   }
   if (act === 'create-ia') {
-   const topic = query.trim();
-   b.disabled = true; b.classList.add('is-busy'); b.lastChild.textContent = t('ChatGPT está escribiendo la entrada…', 'ChatGPT is writing the entry…');
+   const topic = query.trim(), have = exactEntry(topic);
+   if (have) { query = ''; go('biblioteca/' + have.id); return; }
+   const st = $('#kcreateStatus', root); if (st) st.textContent = t('Escribiendo la ficha. Suele tardar entre 20 y 60 segundos; puedes seguir mirando otras cosas.', 'Writing the entry. It usually takes 20 to 60 seconds.');
+   b.disabled = true; b.classList.add('is-busy'); b.lastChild.textContent = t('ChatGPT está escribiendo la ficha…', 'ChatGPT is writing the entry…');
    try {
     const entry = entryFromReply(await askIa({text: createPrompt(topic), json: true}), topic);
     if (!entry) throw Object.assign(Error('empty'), {kind: 'empty'});
     await saveSaberEntry(entry); query = ''; go('biblioteca/' + entry.id); toast(t('Entrada escrita por ChatGPT. Revísala y añade tu versión.', 'Entry written by ChatGPT. Check it and add your version.'));
-   } catch (err) { toast(iaMessage(err), 'error', 7000); if (b.isConnected) { b.disabled = false; b.classList.remove('is-busy'); b.lastChild.textContent = t('Escribir con ChatGPT', 'Write with ChatGPT'); } }
+   } catch (err) { toast(iaMessage(err), 'error', 7000); if (b.isConnected) { b.disabled = false; b.classList.remove('is-busy'); b.lastChild.textContent = t('Escribir la ficha de «', 'Write the entry for “') + topic + t('»', '”'); } if (st) st.textContent = ''; }
   }
  });
  if (!params[0] && matchMedia('(min-width: 960px)').matches) setTimeout(() => $('#saberQ', root)?.focus(), 50);
