@@ -4572,5 +4572,767 @@
    "masa-quebrada",
    "papillote-y-vapor"
   ]
+ },
+ {
+  "id": "coccion-de-pasta-y-noquis",
+  "name": "Cocción de pasta y ñoquis",
+  "name_en": "Cooking pasta and gnocchi",
+  "cat": "tecnicas",
+  "group": "Cocciones suaves",
+  "technique": "hervido",
+  "aka": [
+   "cocer pasta",
+   "al dente",
+   "agua de la pasta",
+   "mantecar la pasta",
+   "ñoquis",
+   "gnocchi",
+   "ñoquis de patata"
+  ],
+  "summary": "Agua con sal, punto al dente y la pasta terminada en la salsa con su agua; y ñoquis ligeros de patata seca y poca harina.",
+  "what": "Cocer pasta parece sencillo, pero el resultado depende de tres cosas: agua bien salada, porque es la única oportunidad de sazonar la pasta por dentro; sacarla un poco antes de su punto; y terminarla en la sartén con la salsa y un poco de su agua de cocción, cuyo almidón liga grasa y líquido y deja una salsa cremosa que se pega a la pasta.\n\nLos ñoquis de patata son pequeñas masas de patata y harina que se cuecen en agua. Para que salgan ligeros, la patata debe estar seca y harinosa y la harina debe ser la mínima: cuanto más harina y más amasado, más duros quedan.",
+  "method": [
+   "Pasta: agua abundante en ebullición fuerte, con sal; echa la pasta y remueve los primeros minutos para que no se pegue.",
+   "Prueba 2 minutos antes del tiempo del envase; saca al dente, firme en el centro.",
+   "Pasa la pasta a la sartén con la salsa caliente y un cazo de su agua; saltea moviendo hasta que la salsa se ligue y brille.",
+   "Ñoquis: asa o cuece las patatas con piel, pélalas en caliente, pásalas por pasapurés y deja que suelten vapor.",
+   "Mezcla con la harina y la sal (y yema si quieres), amasa lo justo, haz cilindros, corta y cuece hasta que suban a la superficie; termina dorados en mantequilla o en la salsa."
+  ],
+  "ratios": [
+   {
+    "use": "Agua para pasta",
+    "ratio": "1 l por cada 100 g; 10 g de sal por litro",
+    "note": "Con menos agua, más almidón para ligar."
+   },
+   {
+    "use": "Pasta fresca",
+    "ratio": "2–4 minutos",
+    "note": "Según grosor."
+   },
+   {
+    "use": "Ñoquis de patata",
+    "ratio": "1 kg de patata cocida, 200–250 g de harina, 1 yema",
+    "note": "Sal al gusto."
+   },
+   {
+    "use": "Ñoquis cocidos",
+    "ratio": "Hasta que suben y 30 segundos más",
+    "note": "Sacar con espumadera."
+   }
+  ],
+  "variants": [
+   {
+    "id": "pasta-seca",
+    "name": "Pasta seca y fideos",
+    "note": "Elegir la pasta y su forma."
+   },
+   {
+    "id": "pasta-fresca",
+    "name": "Pasta fresca",
+    "note": "Al huevo, estirada y rellena."
+   },
+   {
+    "id": "patata-y-boniato",
+    "name": "Patata para ñoquis",
+    "note": "Siempre harinosa y seca."
+   },
+   {
+    "id": "emulsiones-al-momento",
+    "name": "Salsas montadas",
+    "note": "La misma lógica que mantecar la pasta."
+   }
+  ],
+  "keys": [
+   "Sal en el agua: después ya no entra.",
+   "Al dente y terminar en la salsa.",
+   "El agua de cocción liga: guarda siempre un cazo.",
+   "Ñoquis con patata seca y poca harina.",
+   "No laves la pasta: pierdes el almidón que liga."
+  ],
+  "errors": [
+   {
+    "p": "Pasta sosa",
+    "fix": "Agua sin sal suficiente. Sala el agua como un caldo ligero."
+   },
+   {
+    "p": "Salsa aguada que no se pega",
+    "fix": "Pasta escurrida y servida sin saltear. Termina en la sartén con agua de cocción."
+   },
+   {
+    "p": "Ñoquis duros o gomosos",
+    "fix": "Demasiada harina o amasado. Usa patata seca y mezcla lo justo."
+   },
+   {
+    "p": "Ñoquis que se deshacen al cocer",
+    "fix": "Poca harina o patata húmeda. Haz una prueba con uno antes de formar todos."
+   }
+  ],
+  "history": "La pasta y los ñoquis son pilares de la cocina italiana, de donde viene la idea del punto al dente y de terminar la pasta en la salsa. Los ñoquis de patata se hicieron comunes cuando la patata se extendió por Europa.",
+  "uses": [
+   "Pastas con salsa",
+   "Ñoquis dorados o en salsa",
+   "Pastas al horno",
+   "Sopas"
+  ],
+  "keep": "Pasta seca precocida y enfriada con un poco de aceite, 2–3 días en frío. Ñoquis crudos, congelados en bandeja y luego en bolsa; se cuecen sin descongelar.",
+  "pro": "Precuece la pasta 2–3 minutos menos, enfría y racione; al pedido, 1 minuto en agua y a la sartén. Ñoquis formados y congelados por raciones. Agua de cocción siempre a mano en la partida.",
+  "related": [
+   "pasta-seca",
+   "pasta-fresca",
+   "patata-y-boniato",
+   "emulsiones-al-momento",
+   "harinas-y-almidones",
+   "pesto"
+  ]
+ },
+ {
+  "id": "guisos-largos",
+  "name": "Guisos y estofados largos",
+  "name_en": "Long stews",
+  "cat": "tecnicas",
+  "group": "Calor y punto",
+  "technique": "guiso",
+  "aka": [
+   "guiso",
+   "estofado",
+   "guisar",
+   "chup chup",
+   "guiso de carne",
+   "sofrit pagès",
+   "cocina de cuchara",
+   "fricandó"
+  ],
+  "summary": "Piezas troceadas, cubiertas de líquido y a fuego mínimo durante horas: la carne melosa y la salsa ligada sola.",
+  "what": "El guiso se diferencia del [[braseado]] en que las piezas son más pequeñas y el líquido las cubre. Se construye por capas: dorar la carne, hacer un [[sofrito]] en la misma grasa, desglasar con vino, mojar con fondo o agua y cocinar a fuego mínimo durante horas. El colágeno de las piezas de trabajo se convierte en gelatina, la carne queda melosa y la salsa se espesa sola, ayudada a veces por una [[picada]] o por el almidón de la patata.\n\nLos guisos mejoran de un día para otro: el reposo en frío asienta los sabores y permite desgrasar. Las cocinas de las islas tienen guisos propios de carne, como el sofrit pagès, y de pescado.",
+  "method": [
+   "Corta la carne en trozos grandes y regulares, sécala, sálala y dórala por tandas en la cazuela; resérvala.",
+   "En la misma grasa, haz un sofrito lento de cebolla, ajo y tomate hasta que esté concentrado.",
+   "Desglasa con vino, reduce, devuelve la carne y moja con fondo hasta cubrir apenas.",
+   "Cocina tapado a fuego mínimo, con un hervor apenas visible, o en horno, hasta que la carne esté tierna; añade patatas o verduras según su tiempo.",
+   "Al final, liga si hace falta con una picada, corrige de sal y deja reposar; mejor al día siguiente."
+  ],
+  "ratios": [
+   {
+    "use": "Hervor del guiso",
+    "ratio": "90–95 °C",
+    "note": "Burbujas pequeñas y lentas."
+   },
+   {
+    "use": "Guiso en horno",
+    "ratio": "150 °C tapado, 2–3 horas",
+    "note": "Calor más regular que el fuego."
+   },
+   {
+    "use": "Líquido",
+    "ratio": "Unos 700–900 ml por kg de carne",
+    "note": "Lo justo para cubrir."
+   },
+   {
+    "use": "Patata en el guiso",
+    "ratio": "30–40 minutos al final",
+    "note": "Cascada, para que suelte almidón."
+   }
+  ],
+  "variants": [
+   {
+    "id": "braseado",
+    "name": "Braseado",
+    "note": "Pieza grande con poco líquido."
+   },
+   {
+    "id": "picada",
+    "name": "Picada",
+    "note": "Para ligar y perfumar al final."
+   },
+   {
+    "id": "cocina-ibicenca",
+    "name": "Guisos de la isla",
+    "note": "Sofrit pagès y guisos de pescado."
+   },
+   {
+    "id": "ternera-lechal",
+    "name": "Fricandó",
+    "note": "Ternera guisada con setas."
+   }
+  ],
+  "keys": [
+   "Dorar bien la carne: el guiso hereda su sabor.",
+   "Sofrito paciente: es la base de la salsa.",
+   "Fuego mínimo: el hervor fuerte reseca la carne aunque esté en líquido.",
+   "Cada ingrediente, a su tiempo: las patatas no aguantan tres horas.",
+   "Mejor al día siguiente: reposa, desgrasa y regenera."
+  ],
+  "errors": [
+   {
+    "p": "Carne seca y fibrosa en el guiso",
+    "fix": "Hervor fuerte o pieza magra. Fuego mínimo y piezas con colágeno."
+   },
+   {
+    "p": "Salsa aguada",
+    "fix": "Demasiado líquido o poco tiempo. Reduce destapado al final o liga con picada."
+   },
+   {
+    "p": "Guiso graso",
+    "fix": "Sin desgrasar. Enfría, retira la grasa y regenera."
+   }
+  ],
+  "history": "Los guisos de cuchara están en el centro de la cocina tradicional de toda la península y de las islas: se hacían con piezas baratas, fuego lento y lo que hubiera en la huerta. Cada zona tiene los suyos.",
+  "uses": [
+   "Platos de cuchara",
+   "Rellenos con la carne deshilachada",
+   "Arroces y pastas con su salsa",
+   "Menús de invierno"
+  ],
+  "keep": "En frío, 4–5 días en su salsa; se congela muy bien sin las patatas. Regenera tapado a fuego suave con un poco de fondo.",
+  "pro": "Guisa la víspera en tanda grande, abate y racione con su salsa. Las patatas o verduras delicadas se cuecen aparte y se juntan al regenerar.",
+  "related": [
+   "braseado",
+   "sofrito",
+   "picada",
+   "fondo-oscuro",
+   "reposos-y-regeneracion",
+   "cocina-ibicenca",
+   "legumbres"
+  ]
+ },
+ {
+  "id": "desalado-y-remojo",
+  "name": "Desalado y remojo",
+  "name_en": "Desalting and soaking",
+  "cat": "tecnicas",
+  "group": "Conservar y transformar",
+  "aka": [
+   "desalar",
+   "remojar",
+   "poner en remojo",
+   "remojo de legumbres",
+   "rehidratar",
+   "setas secas",
+   "rehidratar setas"
+  ],
+  "summary": "Devolver el agua a lo seco o sacar la sal a lo salado, en frío y con el tiempo justo.",
+  "what": "Muchos productos de despensa necesitan pasar por agua antes de cocinarse. Las legumbres secas se remojan para que se hidraten y cuezan de forma pareja. Las setas y frutas secas se rehidratan para recuperar textura, y su agua se aprovecha. El [[bacalao]], las anchoas o las alcaparras en sal se desalan para dejarlos en su punto.\n\nEl principio es el mismo: el agua entra o la sal sale despacio, de fuera hacia dentro, así que el tiempo depende del grosor. Los remojos largos se hacen en frío, en la cámara, para que el producto no fermente ni se estropee.",
+  "method": [
+   "Lava el producto para quitar polvo o sal de la superficie.",
+   "Cubre con agua fría abundante, en recipiente amplio, porque el producto crece.",
+   "Remojos y desalados largos, siempre en la cámara; cambia el agua cuando toque.",
+   "Prueba: el bacalao, con un trocito crudo; las legumbres, cuando se partan con facilidad entre los dedos.",
+   "Cuela y guarda el agua de setas o frutas secas, dejando el poso del fondo."
+  ],
+  "ratios": [
+   {
+    "use": "Garbanzos",
+    "ratio": "12 horas en 3 veces su volumen de agua",
+    "note": "Con una pizca de sal."
+   },
+   {
+    "use": "Alubias",
+    "ratio": "8–12 horas",
+    "note": "Lentejas, sin remojo o 1–2 horas."
+   },
+   {
+    "use": "Setas secas",
+    "ratio": "Agua a 40 °C, 20–30 minutos",
+    "note": "Colar el agua por paño."
+   },
+   {
+    "use": "Bacalao en lomos",
+    "ratio": "36–48 horas, cambiando el agua cada 8–12",
+    "note": "A 4 °C."
+   }
+  ],
+  "variants": [
+   {
+    "id": "legumbres",
+    "name": "Legumbres",
+    "note": "Remojo y cocción de cada una."
+   },
+   {
+    "id": "bacalao",
+    "name": "Bacalao",
+    "note": "Desalado por grosores."
+   },
+   {
+    "id": "setas",
+    "name": "Setas secas",
+    "note": "Rehidratadas y con su agua."
+   },
+   {
+    "id": "salazones-y-huevas",
+    "name": "Salazones",
+    "note": "Anchoas y otros productos en sal."
+   }
+  ],
+  "keys": [
+   "En frío y con agua abundante.",
+   "El grosor manda el tiempo.",
+   "Prueba antes de dar por terminado.",
+   "El agua de las setas es un caldo: cuélala y úsala.",
+   "Cambiar el agua acelera el desalado."
+  ],
+  "errors": [
+   {
+    "p": "Legumbres que no se ablandan",
+    "fix": "Legumbre vieja o agua muy dura. Compra de la cosecha y remoja bien."
+   },
+   {
+    "p": "Remojo con olor agrio y espuma",
+    "fix": "Ha fermentado a temperatura ambiente. Remoja en la cámara."
+   },
+   {
+    "p": "Agua de setas con arena",
+    "fix": "Colada sin cuidado. Cuela por paño y deja el poso."
+   }
+  ],
+  "history": "Remojar legumbres y desalar pescados y carnes en salazón son prácticas de siempre en una cocina que dependía de los productos secos y salados para todo el año.",
+  "uses": [
+   "Legumbres",
+   "Bacalao y salazones",
+   "Setas secas",
+   "Frutas secas",
+   "Alcaparras y anchoas"
+  ],
+  "keep": "Lo remojado se cocina en el día o al siguiente, siempre en frío. El bacalao desalado aguanta 2–3 días o se congela.",
+  "pro": "Pon los remojos al terminar el servicio para el día siguiente y anota la hora y los cambios de agua en la etiqueta.",
+  "related": [
+   "legumbres",
+   "bacalao",
+   "setas",
+   "salazones-y-huevas",
+   "aceitunas-y-alcaparras",
+   "cocina-de-aprovechamiento"
+  ]
+ },
+ {
+  "id": "fileteado-de-pescado",
+  "name": "Fileteado y limpieza de pescado",
+  "name_en": "Cleaning and filleting fish",
+  "cat": "tecnicas",
+  "group": "Conservar y transformar",
+  "aka": [
+   "filetear",
+   "limpiar pescado",
+   "escamar",
+   "eviscerar",
+   "sacar lomos",
+   "desespinar",
+   "quitar la piel",
+   "pez plano"
+  ],
+  "summary": "Escamar, eviscerar, sacar los lomos y desespinar sin perder carne: la base de toda la partida de pescado.",
+  "what": "Limpiar y filetear bien el pescado es la diferencia entre un buen rendimiento y medio pescado en la basura. Un pescado redondo (lubina, dorada, merluza) da dos lomos, uno por lado, separados de la espina central. Un pez plano (rodaballo, lenguado) da cuatro filetes, dos por cara. Las espinas finas que quedan en el lomo se retiran con pinzas, y la piel se quita o se deja según la cocción.\n\nTodo lo que sobra tiene uso: las espinas y cabezas sin agallas van al [[fumet]], las ventrescas y los recortes a tartares, rellenos o buñuelos.",
+  "method": [
+   "Escama a contracorriente, de la cola a la cabeza, dentro de una bolsa o bajo agua fría para que no salten.",
+   "Eviscera con un corte en el vientre, retira las vísceras y limpia la sangre pegada a la espina; quita las agallas.",
+   "Lomo de pescado redondo: corte detrás de la cabeza hasta la espina, gira el cuchillo y corre a lo largo del lomo pegado a la espina, en pasadas largas.",
+   "Pez plano: corte por la línea central, saca cada filete desde el centro hacia el borde, pegado a las espinas; repite por la otra cara.",
+   "Quita las espinas finas con pinzas en su dirección y, si hace falta, la piel: cuchillo inclinado contra la piel mientras tiras de ella."
+  ],
+  "ratios": [
+   {
+    "use": "Rendimiento de pescado redondo",
+    "ratio": "40–50 % de lomo limpio",
+    "note": "Según especie y tamaño."
+   },
+   {
+    "use": "Rendimiento de pez plano",
+    "ratio": "35–50 %",
+    "note": "El rodaballo, de los más altos."
+   },
+   {
+    "use": "Espinas para fumet",
+    "ratio": "1 kg de espinas y cabezas por 1,5–2 l de agua",
+    "note": "Sin agallas ni sangre."
+   },
+   {
+    "use": "Temperatura de trabajo",
+    "ratio": "Pescado a 0–2 °C",
+    "note": "Sacar de la cámara solo lo que se va a limpiar."
+   }
+  ],
+  "variants": [
+   {
+    "id": "pescado-entero",
+    "name": "Pescado entero",
+    "note": "Cuándo no filetear."
+   },
+   {
+    "id": "fumet",
+    "name": "Fumet",
+    "note": "Con las espinas y cabezas."
+   },
+   {
+    "id": "dorada-y-lubina",
+    "name": "Lomos de dorada y lubina",
+    "note": "El fileteado más habitual."
+   },
+   {
+    "id": "gallo-y-rodaballo",
+    "name": "Pez plano",
+    "note": "Cuatro filetes por pieza."
+   }
+  ],
+  "keys": [
+   "Cuchillo de filetear flexible y muy afilado.",
+   "Pasadas largas pegadas a la espina: menos carne perdida.",
+   "Frío durante todo el proceso.",
+   "Agallas y sangre fuera antes del fumet.",
+   "Todo recorte tiene un uso."
+  ],
+  "errors": [
+   {
+    "p": "Mucha carne pegada a la espina",
+    "fix": "Cuchillo romo o cortes cortos. Afila y corta en pasadas largas apoyadas en la espina."
+   },
+   {
+    "p": "Lomo roto o desgarrado",
+    "fix": "Pescado caliente o demasiado fresco y rígido. Trabaja en frío y con suavidad."
+   },
+   {
+    "p": "Fumet amargo o turbio",
+    "fix": "Agallas o sangre en las espinas. Límpialas bien antes."
+   }
+  ],
+  "history": "Limpiar y filetear pescado es un oficio básico de puertos, mercados y cocinas de todo el mundo. Las técnicas japonesas de corte son famosas por su precisión.",
+  "uses": [
+   "Lomos para plancha, horno o crudo",
+   "Ventrescas y recortes para tartares",
+   "Espinas para fumets",
+   "Pescado para curar"
+  ],
+  "keep": "Lomos limpios, secos y tapados con papel, 1–2 días a 0–2 °C. Espinas para fumet, el mismo día o congeladas.",
+  "pro": "Limpia en cuanto llega el pescado, en tabla y cuchillos dedicados, y porciona por raciones. Etiqueta lomos, recortes y espinas por separado.",
+  "related": [
+   "pescado-entero",
+   "fumet",
+   "dorada-y-lubina",
+   "gallo-y-rodaballo",
+   "curado-de-pescado",
+   "porcionado-y-racionado"
+  ]
+ },
+ {
+  "id": "despiece-de-aves",
+  "name": "Despiece de aves",
+  "name_en": "Butchering poultry",
+  "cat": "tecnicas",
+  "group": "Conservar y transformar",
+  "aka": [
+   "despiezar pollo",
+   "trocear pollo",
+   "suprema",
+   "deshuesar muslo",
+   "abrir en mariposa",
+   "bridar",
+   "pollo en octavos"
+  ],
+  "summary": "Separar patas, pechugas, alas y carcasa siguiendo las articulaciones: cada parte a su cocción y nada al cubo.",
+  "what": "Despiezar un ave entera permite dar a cada parte la cocción que necesita: la pechuga, magra, rápida y al punto; los muslos, con más tejido, más tiempo; las alas, en fritos o glaseados; y la carcasa, al fondo. Se corta siempre por las articulaciones, no por el hueso: el cuchillo busca el hueco entre dos huesos y la pieza se separa sola.\n\nLos mismos pasos sirven para pollo, pato, pintada o pichón. Para asar entero, el ave se brida (se ata) para que tenga una forma compacta, o se abre en mariposa por el espinazo para que se haga antes y más parejo.",
+  "method": [
+   "Patas: corta la piel entre el muslo y la pechuga, dobla la pata hacia fuera hasta que salte la articulación y corta por ella, llevándote la carne del lomo junto al muslo.",
+   "Pechugas: corta a lo largo del esternón y baja pegado a las costillas; para una suprema, deja el primer hueso del ala.",
+   "Alas: sepáralas por la articulación del hombro; corta la punta para el fondo.",
+   "Muslo deshuesado: corte a lo largo del hueso por la cara interna, separa la carne raspando y corta en las articulaciones.",
+   "Mariposa: corta a ambos lados del espinazo con tijera, abre el ave y aplánala presionando el esternón."
+  ],
+  "ratios": [
+   {
+    "use": "Pollo en octavos",
+    "ratio": "2 contramuslos, 2 muslos, 2 pechugas en dos",
+    "note": "Alas aparte."
+   },
+   {
+    "use": "Pechuga",
+    "ratio": "62–65 °C en el centro",
+    "note": "Jugosa; reposo de 5 minutos."
+   },
+   {
+    "use": "Muslo",
+    "ratio": "75–80 °C en el centro",
+    "note": "Más tiempo para que ceda el tejido."
+   },
+   {
+    "use": "Carcasas para fondo",
+    "ratio": "2 kg por 3 l de agua",
+    "note": "Tostadas para fondo oscuro."
+   }
+  ],
+  "variants": [
+   {
+    "id": "pollo-y-aves",
+    "name": "Pollo y aves",
+    "note": "Producto y cocciones."
+   },
+   {
+    "id": "fondo-oscuro-de-ave",
+    "name": "Fondo oscuro de ave",
+    "note": "Con las carcasas tostadas."
+   },
+   {
+    "id": "pato",
+    "name": "Despiece de pato",
+    "note": "Magret, muslos y grasa."
+   },
+   {
+    "id": "caza-de-pluma",
+    "name": "Aves pequeñas",
+    "note": "Codorniz y pichón."
+   }
+  ],
+  "keys": [
+   "Por la articulación, nunca por el hueso.",
+   "Cuchillo corto y firme, o tijeras para el espinazo.",
+   "Pechuga y muslo, cocciones separadas.",
+   "La carcasa es el fondo.",
+   "Superficie y utensilios limpios después: el ave crudo contamina."
+  ],
+  "errors": [
+   {
+    "p": "Astillas de hueso en la carne",
+    "fix": "Cortado a golpe por el hueso. Busca la articulación con la punta del cuchillo."
+   },
+   {
+    "p": "Pechuga con mucha carne pegada a la carcasa",
+    "fix": "Corte separado del hueso. Baja pegado a las costillas en pasadas cortas."
+   },
+   {
+    "p": "Pechuga seca con muslo crudo",
+    "fix": "Ave cocinada entera sin ajustar. Despieza o saca antes la pechuga."
+   }
+  ],
+  "history": "Despiezar el ave entera era lo normal en todas las cocinas antes de que se vendieran las piezas por separado. En la cocina profesional sigue siendo la forma de aprovechar todo el animal.",
+  "uses": [
+   "Pechugas y supremas al punto",
+   "Muslos confitados o guisados",
+   "Alas glaseadas",
+   "Fondos con las carcasas",
+   "Aves enteras asadas"
+  ],
+  "keep": "Piezas crudas, 2–3 días a 0–4 °C, separadas por tipo. Carcasas al fondo el mismo día o congeladas.",
+  "pro": "Despieza al recibir, separa piezas en bandejas etiquetadas y limpia la zona de trabajo antes de seguir con otro producto. Carcasas a una caja propia para el fondo.",
+  "related": [
+   "pollo-y-aves",
+   "fondo-oscuro-de-ave",
+   "fondo-blanco",
+   "pato",
+   "caza-de-pluma",
+   "porcionado-y-racionado"
+  ]
+ },
+ {
+  "id": "porcionado-y-racionado",
+  "name": "Porcionado y racionado",
+  "name_en": "Portioning",
+  "cat": "tecnicas",
+  "group": "Conservar y transformar",
+  "aka": [
+   "porcionar",
+   "racionar",
+   "gramaje",
+   "peso por ración",
+   "rendimiento",
+   "merma",
+   "cortar raciones"
+  ],
+  "summary": "Cortar y pesar cada ración igual: el plato sale idéntico cada vez y la cocción es predecible.",
+  "what": "Porcionar es cortar el producto en raciones de peso y forma iguales; racionar, decidir cuánto lleva cada componente del plato. Las dos cosas hacen que el plato sea siempre el mismo, que los tiempos de cocción no cambien de una ración a otra y que el comensal reciba lo mismo cada día.\n\nEl rendimiento es lo que queda de un producto después de limpiarlo, sobre su peso en bruto: saberlo permite pedir y producir la cantidad justa y aprovechar los recortes. Un buen porcionado también tiene en cuenta la forma: piezas del mismo grosor se cocinan igual.",
+  "method": [
+   "Limpia el producto por completo antes de porcionar: nervios, piel, grasa sobrante.",
+   "Porciona en frío, con cuchillo afilado y en cortes limpios; en piezas irregulares, busca el mismo grosor más que la misma forma.",
+   "Pesa cada ración y ajusta; anota el peso en la ficha del plato.",
+   "Calcula el rendimiento: peso limpio dividido entre peso en bruto, y guárdalo para la próxima vez.",
+   "Envasa o guarda por raciones, etiquetadas, y destina los recortes a otras elaboraciones."
+  ],
+  "ratios": [
+   {
+    "use": "Carne de principal",
+    "ratio": "160–200 g limpia",
+    "note": "Más con hueso."
+   },
+   {
+    "use": "Pescado de principal",
+    "ratio": "150–180 g de lomo",
+    "note": "Entrante, 80–100 g."
+   },
+   {
+    "use": "Guarnición",
+    "ratio": "80–120 g",
+    "note": "Según el plato."
+   },
+   {
+    "use": "Salsa",
+    "ratio": "30–50 ml por ración",
+    "note": "Napar, no inundar."
+   }
+  ],
+  "variants": [
+   {
+    "id": "fileteado-de-pescado",
+    "name": "Fileteado",
+    "note": "Antes de porcionar el pescado."
+   },
+   {
+    "id": "despiece-de-aves",
+    "name": "Despiece de aves",
+    "note": "Piezas para cada cocción."
+   },
+   {
+    "id": "cortes-de-vacuno",
+    "name": "Cortes de vacuno",
+    "note": "Qué sale de cada pieza."
+   },
+   {
+    "id": "cocina-de-aprovechamiento",
+    "name": "Aprovechar recortes",
+    "note": "Caldos, rellenos y bocados."
+   }
+  ],
+  "keys": [
+   "Pesar siempre: el ojo engaña.",
+   "Mismo grosor, misma cocción.",
+   "Porcionar en frío y con buen filo.",
+   "Anotar pesos y rendimientos en la ficha del plato.",
+   "Los recortes no son desperdicio."
+  ],
+  "errors": [
+   {
+    "p": "Raciones que se cocinan a distinto punto",
+    "fix": "Grosores distintos. Porciona por grosor y aplana si hace falta."
+   },
+   {
+    "p": "Platos que cambian de un día a otro",
+    "fix": "Raciones a ojo. Pesa y fija los gramos en la ficha."
+   },
+   {
+    "p": "Cortes desgarrados",
+    "fix": "Producto templado o cuchillo romo. Trabaja en frío y afila."
+   }
+  ],
+  "history": "Fijar el peso de cada ración y apuntar los rendimientos es una práctica de las cocinas profesionales para que un plato sea igual en cada servicio.",
+  "uses": [
+   "Carnes y pescados",
+   "Guarniciones y salsas",
+   "Producción por adelantado",
+   "Fichas técnicas de platos"
+  ],
+  "keep": "Raciones porcionadas, en frío y etiquetadas, según el producto; envasadas al vacío duran más. Recortes, el mismo día a su destino.",
+  "pro": "Báscula en cada partida y pesos escritos en la ficha de cada plato. Porciona al recibir el producto y guarda por raciones.",
+  "related": [
+   "fileteado-de-pescado",
+   "despiece-de-aves",
+   "cortes-de-vacuno",
+   "cocina-de-aprovechamiento",
+   "documentar-tu-obra",
+   "emplatado"
+  ]
+ },
+ {
+  "id": "horno-de-lena",
+  "name": "Cocción en horno de leña",
+  "name_en": "Wood-fired oven cooking",
+  "cat": "tecnicas",
+  "group": "Calor y punto",
+  "technique": "horno",
+  "aka": [
+   "horno de leña",
+   "horno moruno",
+   "horno de piedra",
+   "calor residual",
+   "asado de leña",
+   "cocina en la curva del horno"
+  ],
+  "summary": "Un horno que se calienta una vez y se va enfriando: cada cocción se coloca en el momento de la curva que le corresponde.",
+  "what": "El horno de leña acumula calor en su bóveda y su solera de piedra o barro y lo devuelve durante horas. Cocina por tres vías a la vez: la radiación de la bóveda, el contacto con la solera caliente y el aire caliente, con un ligero aroma a humo. Se calienta con fuego vivo y después se trabaja con brasas a un lado o con el calor que queda.\n\nLa forma de trabajar es seguir su curva de temperatura: primero, con el horno muy caliente, panes planos y cocciones rápidas; luego, asados de carne y pescado; después, arroces, verduras y guisos; y al final, con el calor residual, cocciones largas y suaves y secados.",
+  "method": [
+   "Enciende con leña seca y dura en el centro del horno y mantén fuego vivo hasta que la bóveda pase de negra a blanca.",
+   "Empuja las brasas a un lado o retíralas, según la cocción; limpia la solera con un trapo húmedo si vas a poner pan directo.",
+   "Mide: termómetro de infrarrojos en la solera o una prueba con un puñado de harina que se dore sin quemarse.",
+   "Coloca las cocciones según el calor del momento, girando las piezas para que se hagan parejas.",
+   "Aprovecha el calor que queda al final para guisos tapados, confitados, verduras enteras o secados."
+  ],
+  "ratios": [
+   {
+    "use": "Horno muy caliente",
+    "ratio": "350–450 °C en la solera",
+    "note": "Panes planos y cocciones de minutos."
+   },
+   {
+    "use": "Asados",
+    "ratio": "200–250 °C",
+    "note": "Cordero, cochinillo, pescados enteros."
+   },
+   {
+    "use": "Arroces y guisos al horno",
+    "ratio": "160–200 °C",
+    "note": "En cazuela de barro."
+   },
+   {
+    "use": "Calor residual",
+    "ratio": "100–140 °C",
+    "note": "Cocciones largas tapadas y secados."
+   }
+  ],
+  "variants": [
+   {
+    "id": "asado-al-horno",
+    "name": "Asado al horno",
+    "note": "Sondas y reposos, también aquí."
+   },
+   {
+    "id": "fuego-y-brasa",
+    "name": "Fuego y brasa",
+    "note": "Leñas y manejo del fuego."
+   },
+   {
+    "id": "pan-y-focaccia",
+    "name": "Pan",
+    "note": "Panes de leña y cocas."
+   },
+   {
+    "id": "coca-y-masas-saladas",
+    "name": "Cocas",
+    "note": "Masas planas con verduras."
+   }
+  ],
+  "keys": [
+   "Leña seca y dura: menos humo y más calor.",
+   "Sigue la curva: cada cocción, su temperatura.",
+   "Bóveda blanca: el horno está cargado de calor.",
+   "Gira las piezas: el lado de las brasas cocina más.",
+   "Cazuela de barro: guarda el calor y no rompe con los cambios suaves."
+  ],
+  "errors": [
+   {
+    "p": "Base del pan quemada y arriba pálida",
+    "fix": "Solera demasiado caliente y bóveda fría. Deja que el calor se reparta y limpia la solera con trapo húmedo."
+   },
+   {
+    "p": "Asado ahumado en exceso",
+    "fix": "Leña húmeda o resinosa. Usa leña seca de encina, olivo o frutales."
+   },
+   {
+    "p": "El horno se enfría antes de tiempo",
+    "fix": "Poco tiempo de carga. Calienta más tiempo para que la piedra acumule calor."
+   }
+  ],
+  "history": "Los hornos de leña de piedra o barro han existido en todo el Mediterráneo desde la antigüedad, en las casas y en hornos comunales donde se cocía el pan y se asaban las carnes de las fiestas. En las casas payesas de las islas también se encuentran hornos de este tipo.",
+  "uses": [
+   "Panes y cocas",
+   "Asados de carne y pescado",
+   "Arroces y guisos al horno",
+   "Verduras enteras",
+   "Secados con el calor final"
+  ],
+  "keep": "Lo cocinado se guarda como cualquier asado o guiso. La leña, cubierta y seca, separada del suelo.",
+  "pro": "Planifica el día por la curva del horno: anota a qué hora y a qué temperatura entra cada cosa. Usa el calor residual de la noche para la producción del día siguiente.",
+  "related": [
+   "asado-al-horno",
+   "fuego-y-brasa",
+   "pan-y-focaccia",
+   "coca-y-masas-saladas",
+   "cochinillo",
+   "cordero",
+   "arroces"
+  ]
  }
 ]

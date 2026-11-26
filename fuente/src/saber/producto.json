@@ -4950,5 +4950,1876 @@
    "pures-de-verdura",
    "hierbas-frescas"
   ]
+ },
+ {
+  "id": "hojas-y-brotes",
+  "name": "Hojas y brotes",
+  "name_en": "Leaves and shoots",
+  "cat": "producto",
+  "group": "Huerta",
+  "aka": [
+   "lechuga",
+   "cogollo",
+   "escarola",
+   "endivia",
+   "achicoria",
+   "rúcula",
+   "berros",
+   "espinaca",
+   "acelga",
+   "brotes",
+   "verdolaga",
+   "hojas amargas"
+  ],
+  "summary": "Dulces, amargas o picantes: hojas que se aliñan crudas, se marcan en la brasa o se saltean en segundos.",
+  "what": "Las hojas se pueden agrupar por sabor. Las dulces y crujientes (romana, cogollo, hoja de roble) son frescas y suaves. Las amargas (endivia, escarola, achicoria roja) dan contraste a platos grasos y aguantan la brasa. Las picantes (rúcula, berros, mostaza) despiertan un plato. Las de cocinar (espinaca, acelga, col rizada) se saltean, se escaldan o se guisan. Los brotes y microbrotes son plantas recién nacidas, de sabor concentrado. La verdolaga, silvestre en huertos y márgenes, es carnosa y algo ácida.\n\nCasi todas piden lo mismo: frescura, agua fría, buen secado y aliño en el último momento.",
+  "method": [
+   "Lava las hojas en agua fría abundante, sacándolas por arriba para que la tierra quede en el fondo.",
+   "Si están algo lacias, déjalas 10 minutos en agua con hielo: recuperan turgencia.",
+   "Seca muy bien con centrifugadora o paño: el agua diluye el aliño y lo hace resbalar.",
+   "Aliña en un bol amplio con las manos, justo antes de emplatar, con poco aliño.",
+   "Amargas a la brasa: cogollos o endivias abiertos por la mitad, untados de aceite, marcados por la cara cortada a fuego vivo 1–2 minutos."
+  ],
+  "ratios": [
+   {
+    "use": "Aliño",
+    "ratio": "1 parte de ácido por 3–4 de aceite",
+    "note": "Más ácido para hojas amargas y platos grasos."
+   },
+   {
+    "use": "Ensalada de entrante",
+    "ratio": "50–70 g de hojas por ración",
+    "note": "Como guarnición, 20–30 g."
+   },
+   {
+    "use": "Espinaca salteada",
+    "ratio": "Fuego fuerte, 30–60 segundos",
+    "note": "Pierde el 80–90 % de su volumen."
+   },
+   {
+    "use": "Acelga",
+    "ratio": "Pencas 6–8 minutos, hojas 1–2",
+    "note": "Se cuecen por separado."
+   }
+  ],
+  "variants": [
+   {
+    "id": "ensalada-de-hierbas",
+    "name": "Ensalada de hierbas y brotes",
+    "note": "Hojas enteras aliñadas al último segundo."
+   },
+   {
+    "id": "ensaladas-templadas",
+    "name": "Ensaladas templadas",
+    "note": "Hojas con algo caliente encima."
+   },
+   {
+    "id": "vinagreta",
+    "name": "Vinagreta",
+    "note": "El aliño básico."
+   },
+   {
+    "id": "verduras-a-la-brasa",
+    "name": "Cogollos y endivias a la brasa",
+    "note": "Marcados por la cara cortada."
+   }
+  ],
+  "keys": [
+   "Hojas secas antes de aliñar.",
+   "Aliñar en el último momento: el ácido y la sal las marchitan.",
+   "Amargas para lo graso, dulces para lo delicado.",
+   "Agua con hielo para devolver la frescura.",
+   "Brotes y hojas finas, al final y sin manosear."
+  ],
+  "errors": [
+   {
+    "p": "Ensalada aguada",
+    "fix": "Hojas mal escurridas. Centrifuga y seca con paño."
+   },
+   {
+    "p": "Hojas marchitas en el plato",
+    "fix": "Aliñadas antes de tiempo. Aliña al emplatar."
+   },
+   {
+    "p": "Tierra en el plato",
+    "fix": "Lavado con poca agua o volcando el bol. Saca las hojas por arriba y repite el lavado."
+   }
+  ],
+  "history": "Las ensaladas de hojas forman parte de la cocina mediterránea desde siempre, con mucha tradición de hierbas y hojas silvestres recogidas en el campo. Algunas, como la escarola, tienen platos propios de temporada en distintas zonas de la península.",
+  "uses": [
+   "Ensaladas",
+   "Guarniciones frescas para la brasa",
+   "Hojas amargas a la brasa",
+   "Salteados y rellenos",
+   "Acabados con brotes"
+  ],
+  "keep": "2–5 días a 2–4 °C, en caja con un paño húmedo, sin aliñar y bien secas. Las delicadas y los brotes duran menos.",
+  "pro": "Lava y seca por la mañana y guarda por tipos en cajas con paño. Aliña por mesa en bol, nunca en tanda.",
+  "related": [
+   "ensalada-de-hierbas",
+   "ensaladas-templadas",
+   "vinagreta",
+   "hierbas-frescas",
+   "verduras-a-la-brasa",
+   "acidez-en-cocina"
+  ]
+ },
+ {
+  "id": "frutos-rojos-y-fruta-de-hueso",
+  "name": "Frutos rojos y fruta de hueso",
+  "name_en": "Berries and stone fruit",
+  "cat": "producto",
+  "group": "Fruta",
+  "aka": [
+   "fresa",
+   "frambuesa",
+   "mora",
+   "arándano",
+   "cereza",
+   "melocotón",
+   "albaricoque",
+   "ciruela",
+   "nectarina",
+   "fruta de verano"
+  ],
+  "summary": "Fruta de verano delicada: madura a su punto, manipulada poco y usada tanto en postres como en platos salados.",
+  "what": "Los frutos rojos (fresa, frambuesa, mora, arándano, grosella) son pequeños, ácidos y aromáticos, y se estropean enseguida. La fruta de hueso (melocotón, albaricoque, cereza, ciruela, nectarina) tiene la carne jugosa y perfumada si se recoge y se guarda bien; el frío excesivo puede volver harinosos a melocotones y nectarinas.\n\nEn la cocina salada aportan dulzor, acidez y color: cerezas encurtidas con carnes grasas, albaricoques a la brasa con queso, melocotón con crudos o embutidos, frambuesa en vinagretas. En postres, crudas, asadas, en almíbar, en sorbete o en [[coulis-y-geles-de-fruta|coulis]].",
+  "method": [
+   "Compra fruta madura por el olor y el tacto; la de hueso termina de madurar a temperatura ambiente, no en la cámara.",
+   "Frutos rojos: no los laves hasta el momento de usarlos; si hace falta, un baño rápido en agua fría y secado sobre papel.",
+   "Pelar melocotón o ciruela: corte en cruz en la base, 20–30 segundos en agua hirviendo y a agua con hielo.",
+   "Macerar: fruta cortada con un poco de azúcar y un ácido o licor; suelta su jugo en minutos.",
+   "Asar o marcar: mitades de fruta de hueso, cara cortada a la brasa o en sartén caliente, hasta caramelizar."
+  ],
+  "ratios": [
+   {
+    "use": "Fresas maceradas",
+    "ratio": "10 % de azúcar sobre el peso, 30 minutos",
+    "note": "Con zumo de cítrico o vinagre suave."
+   },
+   {
+    "use": "Pelado por escaldado",
+    "ratio": "20–30 segundos y agua con hielo",
+    "note": "Fruta madura; si está verde, no pela."
+   },
+   {
+    "use": "Albaricoque a la brasa",
+    "ratio": "Brasa viva, 2–3 minutos por la cara cortada",
+    "note": "Que no se deshaga."
+   },
+   {
+    "use": "Cerezas encurtidas",
+    "ratio": "Vinagre, agua y azúcar 1:1:0,5",
+    "note": "Deshuesadas; 24 horas antes de usar."
+   }
+  ],
+  "variants": [
+   {
+    "id": "coulis-y-geles-de-fruta",
+    "name": "Coulis y geles",
+    "note": "Fruta triturada y colada."
+   },
+   {
+    "id": "fruta-asada",
+    "name": "Fruta asada",
+    "note": "Al horno o a la brasa."
+   },
+   {
+    "id": "confituras-y-mermeladas",
+    "name": "Confituras",
+    "note": "Para alargar la temporada."
+   },
+   {
+    "id": "encurtidos-rapidos",
+    "name": "Fruta encurtida",
+    "note": "Cerezas o ciruelas para platos salados."
+   }
+  ],
+  "keys": [
+   "Temporada y madurez: no hay técnica que salve una fruta verde.",
+   "Lavar justo antes de usar y con suavidad.",
+   "La fruta de hueso, a temperatura ambiente hasta madurar.",
+   "Azúcar, ácido y sal realzan el sabor de la fruta.",
+   "En salado, la fruta pide grasa y algo salado: queso, embutido, carne de brasa."
+  ],
+  "errors": [
+   {
+    "p": "Fresas aguadas y sosas",
+    "fix": "Lavadas mucho antes o fruta fuera de temporada. Lava al momento y compra de cercanía."
+   },
+   {
+    "p": "Melocotón harinoso",
+    "fix": "Guardado en frío antes de madurar. Madura a temperatura ambiente y enfría solo al final."
+   },
+   {
+    "p": "Frambuesas aplastadas",
+    "fix": "Amontonadas o manipuladas. Guárdalas en una sola capa en bandeja."
+   }
+  ],
+  "history": "Cerezas, melocotones, albaricoques y ciruelas se cultivan en el Mediterráneo desde la antigüedad, llegados en distintos momentos desde Asia. Las fresas de cultivo actuales son fruto de cruces más recientes entre especies de Europa y América.",
+  "uses": [
+   "Postres frescos y asados",
+   "Sorbetes y helados",
+   "Ensaladas y crudos",
+   "Guarniciones de carnes grasas",
+   "Confituras y encurtidos"
+  ],
+  "keep": "Frutos rojos, 1–3 días en frío en una sola capa, sin lavar. Fruta de hueso madura, 2–4 días en frío; antes, a temperatura ambiente. Se congelan bien para coulis y sorbetes.",
+  "pro": "Compra poca cantidad y a menudo. Revisa cada caja al recibir y separa las piezas tocadas para coulis. Corta al momento.",
+  "related": [
+   "coulis-y-geles-de-fruta",
+   "fruta-asada",
+   "confituras-y-mermeladas",
+   "helados-y-sorbetes",
+   "encurtidos-rapidos",
+   "tartas-de-fruta"
+  ]
+ },
+ {
+  "id": "miel-y-azucares",
+  "name": "Miel y azúcares",
+  "name_en": "Honey and sugars",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "azúcar",
+   "azúcar moreno",
+   "mascabado",
+   "glucosa",
+   "dextrosa",
+   "azúcar invertido",
+   "isomalt",
+   "miel",
+   "melaza",
+   "miel de caña"
+  ],
+  "summary": "Cada azúcar endulza, dora, conserva y da textura de forma distinta: elegir el adecuado cambia el resultado.",
+  "what": "El azúcar no solo endulza: dora, retiene agua, conserva, evita que se formen cristales grandes y da cuerpo. El azúcar blanco es la referencia. El moreno y el mascabado conservan parte de la melaza y aportan humedad y sabor a caramelo. La glucosa en jarabe y el azúcar invertido endulzan menos o más que el blanco, retienen humedad y evitan cristalizaciones en helados, ganaches y caramelos. La dextrosa endulza menos y baja el punto de congelación. El isomalt resiste la humedad y se usa para piezas de azúcar.\n\nLa miel es sobre todo una mezcla de azúcares y agua, con un aroma que depende de la flor: romero, azahar, tomillo, brezo. Su aroma es delicado y se pierde con el calor fuerte.",
+  "method": [
+   "Elige el azúcar por su función: dulzor, dorado, humedad, textura o conservación.",
+   "Pesa siempre: las cucharadas de azúcares densos o pegajosos son muy irregulares.",
+   "Para jarabes, disuelve el azúcar en el agua antes de que hierva y limpia las paredes con un pincel mojado para evitar cristales.",
+   "Usa la miel al final o en preparaciones suaves para conservar su aroma; en masas y lacas, ten en cuenta que dora antes.",
+   "Si la miel cristaliza, caliéntala al baño maría suave hasta que vuelva a ser líquida."
+  ],
+  "ratios": [
+   {
+    "use": "Almíbar básico",
+    "ratio": "1 parte de azúcar por 1 de agua",
+    "note": "Para empapar y conservar fruta."
+   },
+   {
+    "use": "Poder edulcorante",
+    "ratio": "Blanco 100; invertido y miel 120–130; dextrosa 70",
+    "note": "La glucosa en jarabe, bastante menos."
+   },
+   {
+    "use": "Miel cristalizada",
+    "ratio": "Baño maría a 40–45 °C",
+    "note": "Sin hervir para no perder aroma."
+   },
+   {
+    "use": "Glucosa en caramelos",
+    "ratio": "10–20 % del azúcar total",
+    "note": "Evita que cristalicen."
+   }
+  ],
+  "variants": [
+   {
+    "id": "caramelo",
+    "name": "Caramelo",
+    "note": "Puntos del azúcar cocido."
+   },
+   {
+    "id": "helados-y-sorbetes",
+    "name": "Azúcares en helados",
+    "note": "Mezclas para la textura justa."
+   },
+   {
+    "id": "lacado-de-carnes",
+    "name": "Lacas con miel",
+    "note": "Dulce, salado y ácido sobre la carne."
+   },
+   {
+    "id": "higos-y-algarroba",
+    "name": "Melaza de algarroba",
+    "note": "Endulzante tradicional de la isla."
+   }
+  ],
+  "keys": [
+   "Cada azúcar, una función: no son intercambiables uno a uno.",
+   "Pesa y anota: el dulzor se ajusta en gramos.",
+   "La miel dora y se quema antes que el azúcar blanco.",
+   "Un poco de glucosa o invertido evita cristales en caramelos y helados.",
+   "En salado, el azúcar equilibra el ácido y el amargo: úsalo con medida."
+  ],
+  "errors": [
+   {
+    "p": "Almíbar que cristaliza",
+    "fix": "Cristales en las paredes o agitación. Limpia las paredes con pincel y añade un poco de glucosa."
+   },
+   {
+    "p": "Masa que se dora demasiado",
+    "fix": "Miel o azúcar moreno en exceso. Baja la temperatura o cambia parte por azúcar blanco."
+   },
+   {
+    "p": "Miel sin aroma en el plato",
+    "fix": "Calentada en exceso. Añádela al final o en frío."
+   }
+  ],
+  "history": "La miel fue el gran endulzante del Mediterráneo durante siglos. El azúcar de caña llegó a la península con la cocina andalusí y se convirtió en un producto de uso común mucho más tarde. Los azúcares técnicos, como la glucosa o el isomalt, son propios de la pastelería moderna.",
+  "uses": [
+   "Pastelería y helados",
+   "Lacas y glaseados",
+   "Aliños y salsas agridulces",
+   "Conservas de fruta",
+   "Encurtidos"
+  ],
+  "keep": "Azúcares secos, indefinidamente en lugar seco y cerrado; el moreno, bien cerrado para que no se endurezca. Miel, a temperatura ambiente y cerrada.",
+  "pro": "Ten cada azúcar en su recipiente etiquetado y las fichas con gramos exactos. La miel de la isla, para usos donde se note su aroma.",
+  "related": [
+   "caramelo",
+   "helados-y-sorbetes",
+   "confituras-y-mermeladas",
+   "lacado-de-carnes",
+   "higos-y-algarroba",
+   "contraste-y-equilibrio"
+  ]
+ },
+ {
+  "id": "vinagres",
+  "name": "Vinagres",
+  "name_en": "Vinegars",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "vinagre",
+   "vinagre de Jerez",
+   "vinagre de vino",
+   "vinagre de Módena",
+   "balsámico",
+   "vinagre de sidra",
+   "vinagre de arroz",
+   "vinagre de Moscatel"
+  ],
+  "summary": "La acidez con más matices de la despensa: cada vinagre tiene su intensidad, su dulzor y su momento.",
+  "what": "El vinagre nace cuando unas bacterias transforman el alcohol de un vino, una sidra o un fermento de arroz en ácido acético. El resultado depende del líquido de partida y de la crianza. Los de vino blanco y tinto son limpios y directos; el de Jerez, criado en barricas, es profundo, con notas de madera y frutos secos; los de Moscatel o de vinos dulces tienen dulzor y aroma; el balsámico de Módena es dulce y espeso; el de sidra es afrutado; el de arroz, suave y algo dulce.\n\nEn cocina se usa para aliñar, desglasar, encurtir, escabechar, equilibrar guisos grasos y terminar salsas. Unas gotas al final levantan un plato apagado.",
+  "method": [
+   "Prueba los vinagres solos y anota su intensidad: no todos tienen la misma acidez.",
+   "En crudo (vinagretas, aliños), usa los de más aroma y calidad.",
+   "Para desglasar o reducir, el calor suaviza la acidez y concentra el sabor: añade al principio si quieres suavidad, al final si quieres viveza.",
+   "En encurtidos y escabeches, usa vinagres de acidez conocida para que la conserva sea segura.",
+   "Termina guisos y braseados con unas gotas de un buen vinagre justo antes de servir."
+  ],
+  "ratios": [
+   {
+    "use": "Acidez de un vinagre de vino",
+    "ratio": "En torno al 6–8 %",
+    "note": "Los suaves de arroz o frutas, menos."
+   },
+   {
+    "use": "Vinagreta",
+    "ratio": "1 parte de vinagre por 3–4 de aceite",
+    "note": "Menos aceite con vinagres suaves."
+   },
+   {
+    "use": "Reducción de Jerez o Módena",
+    "ratio": "Reducir a un tercio",
+    "note": "Para glasear o terminar salsas."
+   },
+   {
+    "use": "Final de un guiso",
+    "ratio": "5–10 ml por litro",
+    "note": "Justo antes de servir."
+   }
+  ],
+  "variants": [
+   {
+    "id": "vinagres-aromatizados",
+    "name": "Vinagres aromatizados",
+    "note": "Con hierbas, frutas o especias."
+   },
+   {
+    "id": "vinagreta",
+    "name": "Vinagreta",
+    "note": "El uso más directo."
+   },
+   {
+    "id": "escabeche",
+    "name": "Escabeche",
+    "note": "Vinagre, aceite y especias."
+   },
+   {
+    "id": "encurtidos-rapidos",
+    "name": "Encurtidos",
+    "note": "Vinagre, agua, sal y azúcar."
+   }
+  ],
+  "keys": [
+   "Prueba y conoce tu vinagre antes de medir.",
+   "Los buenos, en crudo; los sencillos, para cocinar y encurtir.",
+   "El calor suaviza: decide cuándo lo añades.",
+   "Unas gotas al final despiertan un plato graso o plano.",
+   "Recipiente de vidrio o acero: el vinagre ataca algunos metales."
+  ],
+  "errors": [
+   {
+    "p": "Plato agresivo y punzante",
+    "fix": "Demasiado vinagre o añadido en crudo al final. Compensa con grasa, un toque dulce o reduce."
+   },
+   {
+    "p": "Salsa apagada tras reducir",
+    "fix": "El vinagre perdió viveza con el calor. Añade unas gotas frescas al final."
+   },
+   {
+    "p": "Encurtido blando o que fermenta",
+    "fix": "Vinagre poco ácido o rebajado de más. Respeta la proporción y usa vinagre de acidez conocida."
+   }
+  ],
+  "history": "El vinagre se conoce desde la antigüedad en todo el Mediterráneo como condimento y conservante. En España tienen mucha tradición los vinagres de Jerez, criados en soleras, y en Italia el de Módena.",
+  "uses": [
+   "Vinagretas y aliños",
+   "Encurtidos y escabeches",
+   "Desglasados y salsas",
+   "Terminar guisos",
+   "Marinados"
+  ],
+  "keep": "Cerrado, en lugar fresco y oscuro, durante años. Una vez abierto, meses; a veces forma una película (la madre del vinagre), que se puede colar.",
+  "pro": "Ten tres o cuatro vinagres de usos claros y etiquetados en la partida: uno de cocinar, uno de crianza para crudos y uno dulce para reducir.",
+  "related": [
+   "vinagres-aromatizados",
+   "vinagreta",
+   "escabeche",
+   "encurtidos-rapidos",
+   "acidez-en-cocina",
+   "reducciones"
+  ]
+ },
+ {
+  "id": "vinos-y-licores",
+  "name": "Vinos y licores en cocina",
+  "name_en": "Wine and spirits in cooking",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "vino blanco",
+   "vino tinto",
+   "fino",
+   "manzanilla",
+   "oloroso",
+   "Pedro Ximénez",
+   "vermut",
+   "coñac",
+   "brandy",
+   "flambear",
+   "hierbas ibicencas",
+   "anís"
+  ],
+  "summary": "El vino aporta acidez, fruta y profundidad; los generosos y licores, aroma y dulzor. Siempre reducidos y con medida.",
+  "what": "En cocina, el vino se usa por su acidez, su fruta y sus taninos. El blanco seco aporta frescor a fondos de pescado, salsas y guisos de ave; el tinto, color y profundidad a guisos de carne y reducciones; los generosos secos (fino, manzanilla, amontillado, oloroso) dan notas salinas, de frutos secos y de crianza; los dulces, como el Pedro Ximénez o el moscatel, sirven para glasear y en postres.\n\nLos licores y destilados (brandy, coñac, ron, anís, licores de hierbas como las hierbas ibicencas) se usan en pequeñas cantidades para perfumar, flambear o macerar. El calor no elimina todo el alcohol: una parte se queda incluso tras cocciones largas.",
+  "method": [
+   "Cocina con un vino que beberías: los defectos del vino se concentran al reducir.",
+   "Añade el vino después de dorar y rehogar, y redúcelo antes de mojar con fondo, para que pierda el alcohol más crudo y se concentre.",
+   "Para salsas de reducción, reduce el vino con los aromáticos hasta casi glasa y luego añade el fondo.",
+   "Flambear: calienta el licor aparte, apaga el fuego o aparta la sartén, vierte y prende con cuidado, lejos de la campana y con la tapa a mano.",
+   "Para perfumar, añade generosos y licores al final, en pequeñas cantidades, y deja hervir apenas un momento."
+  ],
+  "ratios": [
+   {
+    "use": "Reducción de tinto para salsa",
+    "ratio": "750 ml reducidos a 150 ml",
+    "note": "Con chalota y tomillo, antes del fondo."
+   },
+   {
+    "use": "Vino en un guiso",
+    "ratio": "100–200 ml por kg de carne",
+    "note": "Reducido a la mitad antes de mojar."
+   },
+   {
+    "use": "Glaseado de Pedro Ximénez",
+    "ratio": "Reducir a un tercio",
+    "note": "Para carnes, quesos y postres."
+   },
+   {
+    "use": "Licor para perfumar",
+    "ratio": "10–20 ml por ración de salsa",
+    "note": "Al final."
+   }
+  ],
+  "variants": [
+   {
+    "id": "reducciones",
+    "name": "Reducciones",
+    "note": "Vino y aromáticos concentrados."
+   },
+   {
+    "id": "beurre-blanc",
+    "name": "Beurre blanc",
+    "note": "Reducción de vino blanco montada."
+   },
+   {
+    "id": "marinada",
+    "name": "Marinadas de vino",
+    "note": "Para caza y guisos."
+   },
+   {
+    "id": "maridaje-sin-alcohol",
+    "name": "Sin alcohol",
+    "note": "Alternativas con infusiones, zumos y vinagres."
+   }
+  ],
+  "keys": [
+   "Vino de calidad: lo malo se concentra.",
+   "Reducir antes de mojar para quitar el alcohol crudo.",
+   "Los generosos y licores, al final y con medida.",
+   "Flambear fuera del fuego y con la tapa a mano.",
+   "Quedan restos de alcohol aunque se cocine: tenlo en cuenta al explicar el plato."
+  ],
+  "errors": [
+   {
+    "p": "Salsa ácida y alcohólica",
+    "fix": "Vino sin reducir. Redúcelo antes de añadir el fondo."
+   },
+   {
+    "p": "Salsa amarga o astringente",
+    "fix": "Vino muy tánico o con mucha madera reducido en exceso. Usa uno más afrutado y menos reducido."
+   },
+   {
+    "p": "Llamarada peligrosa al flambear",
+    "fix": "Licor vertido sobre el fuego o desde la botella. Calienta aparte, aparta del fuego y vierte desde un cazo."
+   }
+  ],
+  "history": "El vino forma parte de la cocina mediterránea desde la antigüedad, en guisos, marinadas y salsas. Los vinos generosos andaluces y los licores de hierbas, como los de Ibiza y Mallorca, han tenido su lugar en la cocina regional.",
+  "uses": [
+   "Guisos y braseados",
+   "Salsas de reducción",
+   "Fondos de pescado",
+   "Marinadas",
+   "Postres y macerados"
+  ],
+  "keep": "Vino abierto para cocinar, 3–5 días cerrado en frío. Generosos secos abiertos, pocos días en frío; olorosos y dulces, semanas. Destilados, indefinidamente.",
+  "pro": "Ten vino de cocina abierto y etiquetado con la fecha. Prepara las reducciones de vino en tanda; aguantan días en frío.",
+  "related": [
+   "reducciones",
+   "beurre-blanc",
+   "marinada",
+   "braseado",
+   "jugo-de-carne",
+   "maridaje-sin-alcohol"
+  ]
+ },
+ {
+  "id": "leche-nata-y-mantequilla",
+  "name": "Leche, nata y mantequilla",
+  "name_en": "Milk, cream and butter",
+  "cat": "producto",
+  "group": "Lácteos",
+  "aka": [
+   "leche",
+   "nata",
+   "nata para montar",
+   "nata para cocinar",
+   "mantequilla",
+   "mantequilla salada",
+   "mantequilla pomada",
+   "lácteos"
+  ],
+  "summary": "La grasa de la leche en tres formas: cuánta tiene cada una cambia cómo monta, cómo liga y cómo aguanta el calor.",
+  "what": "Leche, nata y mantequilla son la misma grasa en proporciones distintas. La leche entera tiene alrededor de un 3,5 % de grasa; la nata para montar, en torno al 35 %; la nata para cocinar, menos; la mantequilla, sobre un 80 %, con algo de agua y sólidos lácteos. Cuanta más grasa, más estable frente al calor y al ácido: la nata grasa hierve y reduce sin cortarse, mientras que la leche se corta con facilidad.\n\nLa mantequilla da sabor, brillo y untuosidad; la cultivada, fermentada antes de batir, tiene un punto ácido. Sus sólidos se tuestan y dan la [[mantequilla-noisette|noisette]]; sin ellos, queda la [[clarificacion|clarificada]].",
+  "method": [
+   "Nata montada: nata del 35 % muy fría, en bol frío, batida hasta que forme picos suaves o firmes según el uso.",
+   "Para salsas, reduce la nata a fuego medio removiendo; liga sola si tiene grasa suficiente.",
+   "Leche: caliéntala a fuego medio y no la dejes sola; la proteína se pega y se quema en el fondo.",
+   "Mantequilla pomada: sácala de la cámara con tiempo hasta que ceda al apretar; no la fundas.",
+   "Para montar salsas, mantequilla fría en dados; para dorar y regar, mantequilla espumosa en la sartén."
+  ],
+  "ratios": [
+   {
+    "use": "Nata para montar",
+    "ratio": "35 % de grasa, a 4–6 °C",
+    "note": "Por debajo del 30 % no monta bien."
+   },
+   {
+    "use": "Nata montada dulce",
+    "ratio": "8–10 % de azúcar glas",
+    "note": "Añadido al final."
+   },
+   {
+    "use": "Mantequilla pomada",
+    "ratio": "18–20 °C",
+    "note": "Para cremas y masas."
+   },
+   {
+    "use": "Rendimiento de la nata",
+    "ratio": "1 l de nata montada da 1,8–2 l",
+    "note": "Según el punto."
+   }
+  ],
+  "variants": [
+   {
+    "id": "mantequilla-noisette",
+    "name": "Mantequilla noisette",
+    "note": "Sólidos tostados."
+   },
+   {
+    "id": "mantequillas-compuestas",
+    "name": "Mantequillas compuestas",
+    "note": "Con hierbas, especias o marisco."
+   },
+   {
+    "id": "clarificacion",
+    "name": "Mantequilla clarificada",
+    "note": "Sin agua ni sólidos."
+   },
+   {
+    "id": "lacteos-fermentados",
+    "name": "Lácteos fermentados",
+    "note": "Nata agria, kéfir y suero."
+   }
+  ],
+  "keys": [
+   "Más grasa, más estabilidad frente al calor y al ácido.",
+   "Todo frío para montar nata.",
+   "Leche al fuego, siempre vigilada.",
+   "Mantequilla fría para emulsionar; pomada para batir; espumosa para regar.",
+   "La mantequilla absorbe olores: bien envuelta."
+  ],
+  "errors": [
+   {
+    "p": "Nata cortada en grumos de mantequilla",
+    "fix": "Batida de más o templada. Añade un poco de nata líquida fría y mezcla a mano."
+   },
+   {
+    "p": "Salsa de leche cortada",
+    "fix": "Ácido o sal con la leche hirviendo. Liga con almidón o usa nata más grasa."
+   },
+   {
+    "p": "Mantequilla que se quema al dorar",
+    "fix": "Fuego alto mucho tiempo. Usa mitad aceite o mantequilla clarificada."
+   }
+  ],
+  "history": "La mantequilla ha sido la grasa de las cocinas del norte de Europa, mientras que en el Mediterráneo dominaba el aceite. La cocina clásica francesa la convirtió en base de salsas, y hoy se usa en todas las cocinas profesionales.",
+  "uses": [
+   "Salsas y emulsiones",
+   "Purés",
+   "Pastelería y masas",
+   "Regado de carnes y pescados",
+   "Nata montada y cremas"
+  ],
+  "keep": "Leche y nata, en frío y según su fecha; abiertas, 3–4 días. Mantequilla, 3–4 semanas en frío bien envuelta; se congela bien.",
+  "pro": "Mantequilla en dados fríos junto a los fuegos y pomada en pastelería. La nata montada, en manga y en frío, montada por tandas pequeñas.",
+  "related": [
+   "mantequilla-noisette",
+   "mantequillas-compuestas",
+   "clarificacion",
+   "lacteos-fermentados",
+   "emulsiones-al-momento",
+   "quesos-en-cocina"
+  ]
+ },
+ {
+  "id": "harinas-y-almidones",
+  "name": "Harinas y almidones",
+  "name_en": "Flours and starches",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "harina",
+   "harina de fuerza",
+   "harina floja",
+   "harina integral",
+   "maicena",
+   "fécula de patata",
+   "tapioca",
+   "kuzu",
+   "harina de arroz",
+   "harina de garbanzo"
+  ],
+  "summary": "Harinas con más o menos gluten para masas distintas, y almidones puros para espesar, ligar y dar crujiente.",
+  "what": "Las harinas de trigo se distinguen por su fuerza, es decir, por la cantidad y calidad del gluten que forman: las flojas dan bizcochos y masas quebradas tiernas; las de fuerza, panes y masas que deben estirarse y retener gas. La integral lleva el salvado y el germen: más sabor y menos volumen. Hay harinas de otros cereales y legumbres, como la de arroz, maíz o garbanzo, sin gluten y con sabores propios.\n\nLos almidones puros (maíz, patata, tapioca, kuzu, arrurruz) no forman gluten: sirven para espesar salsas y cremas, ligar jugos y dar crujiente a rebozados. Cada uno espesa a una temperatura y con una transparencia distintas.",
+  "method": [
+   "Elige la harina por el resultado: floja para tierno, de fuerza para elástico, mezcla para usos medios.",
+   "Tamiza las harinas para pastelería y en rebozados finos.",
+   "Para espesar con almidón, disuélvelo antes en un poco de líquido frío y añádelo al caliente removiendo.",
+   "Lleva a hervor suave 1–2 minutos para que espese del todo y pierda el sabor crudo; la fécula de patata y el kuzu, sin hervir mucho.",
+   "En rebozados, una parte de almidón o de harina de arroz da una costra más fina y crujiente."
+  ],
+  "ratios": [
+   {
+    "use": "Salsa que napa",
+    "ratio": "15–25 g de almidón de maíz por litro",
+    "note": "Disuelto en frío."
+   },
+   {
+    "use": "Crema pastelera",
+    "ratio": "40–50 g de almidón por litro de leche",
+    "note": "Con yemas y azúcar."
+   },
+   {
+    "use": "Mezcla para rebozado crujiente",
+    "ratio": "Harina y almidón 2:1",
+    "note": "O harina de arroz sola."
+   },
+   {
+    "use": "Fuerza para pan",
+    "ratio": "Harina de fuerza media o alta",
+    "note": "Repostería con harina floja."
+   }
+  ],
+  "variants": [
+   {
+    "id": "roux",
+    "name": "Roux",
+    "note": "Harina cocida en grasa para ligar."
+   },
+   {
+    "id": "ligazones",
+    "name": "Ligazones",
+    "note": "Todas las formas de espesar."
+   },
+   {
+    "id": "gelificantes-y-espesantes",
+    "name": "Espesantes modernos",
+    "note": "Goma xantana y otros."
+   },
+   {
+    "id": "rebozados-y-empanados",
+    "name": "Rebozados",
+    "note": "Mezclas de harina y almidón."
+   }
+  ],
+  "keys": [
+   "La fuerza de la harina decide la textura de la masa.",
+   "Almidones siempre disueltos en frío.",
+   "Cada almidón espesa distinto: maíz opaco y firme, patata y tapioca más claros y elásticos.",
+   "No remover en exceso una salsa ligada con almidón una vez espesa: puede perder cuerpo.",
+   "Guarda las harinas cerradas y lejos del calor: se enrancian y cogen bichos."
+  ],
+  "errors": [
+   {
+    "p": "Grumos al espesar",
+    "fix": "Almidón echado en seco. Disuélvelo antes en líquido frío."
+   },
+   {
+    "p": "Salsa que se aclara tras espesar",
+    "fix": "Hervida mucho tiempo o batida en exceso. Hierve lo justo y remueve con suavidad."
+   },
+   {
+    "p": "Masa dura o gomosa",
+    "fix": "Harina demasiado fuerte o amasado excesivo. Usa harina más floja y mezcla lo justo."
+   }
+  ],
+  "history": "El trigo y su harina son la base de la alimentación mediterránea desde la antigüedad. Los almidones refinados para espesar, como el de maíz, se generalizaron en la cocina mucho más tarde, con la industria alimentaria.",
+  "uses": [
+   "Panes y masas",
+   "Pastelería",
+   "Salsas y cremas",
+   "Rebozados",
+   "Ligazones de jugos"
+  ],
+  "keep": "En lugar fresco, seco y oscuro, bien cerrada: la blanca, varios meses; la integral, menos, mejor en frío. Almidones, mucho tiempo en seco.",
+  "pro": "Ten las harinas etiquetadas por tipo y fuerza. Para ligar jugos en el pase, almidón disuelto en agua fría en un biberón, listo para usar.",
+  "related": [
+   "roux",
+   "ligazones",
+   "gelificantes-y-espesantes",
+   "rebozados-y-empanados",
+   "pan-y-focaccia",
+   "masa-quebrada"
+  ]
+ },
+ {
+  "id": "pan-del-dia-y-pan-viejo",
+  "name": "Pan del día y pan viejo",
+  "name_en": "Fresh and stale bread",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "pan",
+   "pan duro",
+   "pan viejo",
+   "pan rallado casero",
+   "picatostes",
+   "migas",
+   "salmorejo",
+   "torrijas",
+   "pan con tomate",
+   "pa amb oli"
+  ],
+  "summary": "El pan del servicio bien regenerado, y el de ayer convertido en migas, picadas, sopas, salsas y crujientes.",
+  "what": "El pan es una pieza más del menú: el del servicio debe llegar crujiente y templado, y el que sobra es un ingrediente con mucho juego. Al envejecer, el almidón del pan se reorganiza y lo vuelve duro y seco, aunque no haya perdido agua; un calor corto lo revierte en parte, por eso un pan algo duro mejora al hornearlo unos minutos.\n\nEl pan viejo es la base de muchas recetas de aprovechamiento del Mediterráneo: [[picada]], [[ajoblanco]], salmorejo, sopas de pan, migas, torrijas, pan rallado y picatostes. Las [[migas-limon|migas con limón]] o tostadas con aceite dan crujiente a cualquier plato.",
+  "method": [
+   "Pan del servicio: si viene del día anterior, rocíalo con un poco de agua y hornéalo 3–5 minutos; sírvelo enseguida.",
+   "Pan rallado casero: corta el pan viejo, sécalo en horno suave hasta que esté duro del todo y tritúralo; tamiza si lo quieres fino.",
+   "Picatostes y crujientes: dados o láminas con aceite y sal, horneados hasta dorar.",
+   "Para sopas frías y salsas, remoja el pan en agua o en el propio tomate antes de triturar; da cuerpo y liga la emulsión.",
+   "Congela el pan del día rebanado si no se va a usar: se regenera mejor que el que se ha dejado endurecer."
+  ],
+  "ratios": [
+   {
+    "use": "Regenerar pan",
+    "ratio": "180–200 °C, 3–5 minutos",
+    "note": "Con un poco de agua por encima."
+   },
+   {
+    "use": "Pan rallado",
+    "ratio": "100–110 °C, 1 hora",
+    "note": "Hasta que esté seco del todo."
+   },
+   {
+    "use": "Picatostes",
+    "ratio": "170 °C, 8–12 minutos",
+    "note": "Con 10–15 % de su peso en aceite."
+   },
+   {
+    "use": "Salmorejo",
+    "ratio": "1 kg de tomate, 150–200 g de pan, 100–150 ml de aceite",
+    "note": "Con ajo y sal."
+   }
+  ],
+  "variants": [
+   {
+    "id": "migas-limon",
+    "name": "Migas con limón",
+    "note": "Crujiente de pan con ralladura."
+   },
+   {
+    "id": "picada",
+    "name": "Picada",
+    "note": "Pan frito majado con frutos secos y ajo."
+   },
+   {
+    "id": "ajoblanco",
+    "name": "Ajoblanco",
+    "note": "Pan, almendra, ajo, aceite y agua."
+   },
+   {
+    "id": "crujientes-salados",
+    "name": "Crujientes",
+    "note": "Láminas de pan secas y aliñadas."
+   }
+  ],
+  "keys": [
+   "Pan de servicio templado y crujiente.",
+   "El pan endurecido mejora con calor corto; el congelado rebanado, mejor.",
+   "Pan viejo sí, pan mohoso nunca.",
+   "El pan da cuerpo y liga sopas frías y salsas.",
+   "Seca bien el pan rallado o se enmohece en el bote."
+  ],
+  "errors": [
+   {
+    "p": "Pan regenerado duro como una piedra",
+    "fix": "Demasiado tiempo de horno. Pocos minutos y servir al momento."
+   },
+   {
+    "p": "Picatostes aceitosos",
+    "fix": "Demasiado aceite o fritura fría. Hornéalos con poco aceite."
+   },
+   {
+    "p": "Pan rallado con moho",
+    "fix": "No estaba seco del todo. Sécalo más tiempo y guárdalo cerrado."
+   }
+  ],
+  "history": "En la cocina mediterránea el pan nunca se tiraba: el de días se convertía en sopas, migas, salsas espesadas y dulces como las torrijas. El pan con tomate o con aceite es una costumbre de muchas zonas de la costa y de las islas.",
+  "uses": [
+   "Pan de servicio",
+   "Salsas y sopas frías",
+   "Picadas y espesantes",
+   "Crujientes y empanados",
+   "Dulces de aprovechamiento"
+  ],
+  "keep": "Pan del día, en bolsa de papel, 1 día; congelado y rebanado, semanas. Pan rallado y picatostes secos, 2–3 semanas en bote cerrado.",
+  "pro": "Calcula el pan por reservas y congela el sobrante rebanado. Guarda el pan viejo en un recipiente propio para la producción de rallado, picadas y crujientes de la semana.",
+  "related": [
+   "pan-y-focaccia",
+   "picada",
+   "ajoblanco",
+   "migas-limon",
+   "crujientes-salados",
+   "cocina-de-aprovechamiento"
+  ]
+ },
+ {
+  "id": "pasta-seca",
+  "name": "Pasta seca y fideos",
+  "name_en": "Dried pasta and noodles",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "pasta seca",
+   "espaguetis",
+   "macarrones",
+   "fideos",
+   "fideos finos",
+   "pasta de bronce",
+   "sémola de trigo duro",
+   "fideuá",
+   "fideos tostados"
+  ],
+  "summary": "Sémola de trigo duro y agua, secada despacio: la calidad se ve en la superficie rugosa y se nota en cómo agarra la salsa.",
+  "what": "La pasta seca se hace con sémola de trigo duro y agua, se moldea a presión y se seca. Su calidad depende de la sémola, de la boquilla y del secado. La moldeada con boquilla de bronce tiene la superficie rugosa y opaca, que suelta más almidón y agarra mejor la salsa; la de boquillas lisas es brillante y resbaladiza. Un secado lento a baja temperatura conserva mejor el sabor del trigo.\n\nCada forma tiene su salsa: las largas y finas, salsas de aceite o ligeras; las cortas y con huecos, salsas con trozos o carnosas. En el Mediterráneo español, los fideos se tuestan y se guisan en caldo como un arroz, en fideuá o en cazuela.",
+  "method": [
+   "Elige la pasta por su superficie y por la salsa: rugosa para salsas ligadas, forma corta con hueco para salsas con trozos.",
+   "Mira el tiempo de cocción del envase y prueba antes: la pasta se termina en la salsa.",
+   "Fideos para guisar: tuéstalos en aceite o en horno hasta dorado uniforme antes de añadir el caldo.",
+   "Moja los fideos tostados con caldo caliente y cocina como un arroz seco, sin remover al final.",
+   "Guarda un poco de agua de cocción: su almidón liga la salsa con la pasta."
+  ],
+  "ratios": [
+   {
+    "use": "Ración de pasta seca",
+    "ratio": "80–100 g de principal; 50–60 g de entrante",
+    "note": "Peso en seco."
+   },
+   {
+    "use": "Fideos tostados",
+    "ratio": "160–170 °C, 8–12 minutos en horno",
+    "note": "Con un poco de aceite, removiendo."
+   },
+   {
+    "use": "Fideuá",
+    "ratio": "1 parte de fideo por 2–2,5 de caldo",
+    "note": "En peso; ajusta según el grosor."
+   },
+   {
+    "use": "Absorción",
+    "ratio": "La pasta seca casi duplica su peso al cocer",
+    "note": "100 g dan unos 200–220 g."
+   }
+  ],
+  "variants": [
+   {
+    "id": "pasta-fresca",
+    "name": "Pasta fresca",
+    "note": "Al huevo, para estirar y rellenar."
+   },
+   {
+    "id": "arroces",
+    "name": "Fideos como un arroz",
+    "note": "La misma lógica de caldo y fuego."
+   },
+   {
+    "id": "coccion-de-pasta-y-noquis",
+    "name": "Cocción de pasta",
+    "note": "Agua, sal, punto y terminado en salsa."
+   },
+   {
+    "id": "alioli",
+    "name": "Fideuá con alioli",
+    "note": "Su compañero clásico."
+   }
+  ],
+  "keys": [
+   "Superficie rugosa: mejor pasta y mejor salsa.",
+   "La forma manda en la salsa.",
+   "Los fideos para guisar, siempre tostados antes.",
+   "El agua de cocción es un ingrediente.",
+   "Pasta y salsa se encuentran en la sartén, no en el plato."
+  ],
+  "errors": [
+   {
+    "p": "Salsa que resbala",
+    "fix": "Pasta lisa o lavada. Usa pasta de bronce y termina en la salsa con agua de cocción."
+   },
+   {
+    "p": "Fideuá pastosa",
+    "fix": "Fideos sin tostar o demasiado caldo. Tuesta y ajusta la proporción."
+   },
+   {
+    "p": "Pasta pasada en el plato",
+    "fix": "Cocida el tiempo entero antes de saltear. Sácala 1–2 minutos antes."
+   }
+  ],
+  "history": "La pasta seca tiene una larga tradición en Italia y llegó pronto a la cocina de la costa mediterránea española, donde los fideos se integraron en guisos, cazuelas y en platos de pescadores como la fideuá.",
+  "uses": [
+   "Pastas con salsa",
+   "Fideos guisados y fideuá",
+   "Sopas",
+   "Gratinados",
+   "Ensaladas de pasta"
+  ],
+  "keep": "Cerrada, en lugar seco, durante meses. Cocida y enfriada con un poco de aceite, 2–3 días en frío. Fideos tostados, semanas en bote cerrado.",
+  "pro": "Tuesta los fideos en tanda en horno y guárdalos cerrados. Para pastas al pedido, precuece 2–3 minutos menos, enfría y termina en sartén con la salsa.",
+  "related": [
+   "pasta-fresca",
+   "arroces",
+   "coccion-de-pasta-y-noquis",
+   "harinas-y-almidones",
+   "fondo-de-marisco",
+   "alioli"
+  ]
+ },
+ {
+  "id": "aceitunas-y-alcaparras",
+  "name": "Aceitunas y alcaparras",
+  "name_en": "Olives and capers",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "aceituna",
+   "olivas",
+   "aceitunas aliñadas",
+   "gordal",
+   "manzanilla",
+   "arbequina",
+   "alcaparra",
+   "alcaparrón",
+   "tapenade",
+   "salmuera de aceituna"
+  ],
+  "summary": "Dos condimentos salados y ácidos de la despensa mediterránea: dan contraste, sal y fondo a platos grasos y verduras.",
+  "what": "La aceituna cruda es amarga y no se come: hay que curarla. Se hace en salmuera durante meses, con fermentación natural, o con un tratamiento previo en lejía alimentaria seguido de lavado y salmuera, que da aceitunas verdes más suaves. Las verdes se recogen antes; las negras, maduras. Hay muchas variedades de mesa, de la gordal grande y carnosa a la manzanilla o la pequeña arbequina.\n\nLa alcaparra es el botón de la flor de la alcaparrera, una planta que crece en muros y tierras secas del Mediterráneo; el alcaparrón es su fruto. Se conservan en salmuera, en vinagre o en sal, y dan un golpe salado, ácido y floral.",
+  "method": [
+   "Prueba las aceitunas antes de usarlas: cambian mucho de sal y de acidez.",
+   "Aceitunas aliñadas: escúrrelas y alíñalas con ajo, hierbas, piel de cítrico, guindilla y aceite; reposan un día.",
+   "Alcaparras en sal: desálalas en agua fría 20–30 minutos, cambiando el agua una vez.",
+   "Alcaparras fritas: secas del todo, en aceite a 170–180 °C hasta que se abran como flores y crujan.",
+   "Guarda la salmuera de las aceitunas: sirve para aliños, encurtidos y para dar sal a una salsa."
+  ],
+  "ratios": [
+   {
+    "use": "Aceitunas aliñadas",
+    "ratio": "1 kg de aceitunas, 100 ml de aceite, 2–3 ajos, hierbas y cítrico",
+    "note": "Reposo de 24 horas."
+   },
+   {
+    "use": "Tapenade",
+    "ratio": "200 g de aceitunas negras, 30 g de alcaparras, 2–3 anchoas",
+    "note": "Con aceite y ajo."
+   },
+   {
+    "use": "Alcaparras fritas",
+    "ratio": "170–180 °C, 30–60 segundos",
+    "note": "Muy secas antes de freír."
+   },
+   {
+    "use": "Desalado de alcaparras en sal",
+    "ratio": "20–30 minutos en agua fría",
+    "note": "Probar."
+   }
+  ],
+  "variants": [
+   {
+    "id": "alino-alcaparras-limon",
+    "name": "Aliño de alcaparras y limón",
+    "note": "Para pescados y verduras."
+   },
+   {
+    "id": "tartara",
+    "name": "Salsa tártara",
+    "note": "Con alcaparras y pepinillos."
+   },
+   {
+    "id": "vinagreta-piparras",
+    "name": "Vinagreta de piparras",
+    "note": "Otro encurtido para aliñar."
+   },
+   {
+    "id": null,
+    "name": "Tapenade",
+    "note": "Pasta de aceitunas, alcaparras y anchoas."
+   }
+  ],
+  "keys": [
+   "Prueba antes de salar: aceitunas y alcaparras ya traen sal.",
+   "Contraste para lo graso: cordero, pescado azul, verduras asadas.",
+   "La salmuera también es un ingrediente.",
+   "Alcaparras fritas: un crujiente salado para terminar.",
+   "Aceitunas sin hueso de calidad: mejor deshuesarlas tú."
+  ],
+  "errors": [
+   {
+    "p": "Plato demasiado salado",
+    "fix": "Aceitunas o alcaparras añadidas a un plato ya sazonado. Sazona al final y prueba."
+   },
+   {
+    "p": "Alcaparras fritas que salpican y no crujen",
+    "fix": "Húmedas. Sécalas bien sobre papel antes de freír."
+   },
+   {
+    "p": "Aceitunas blandas",
+    "fix": "Mal conservadas o fuera de su líquido. Guárdalas siempre cubiertas."
+   }
+  ],
+  "history": "El olivo es el árbol del Mediterráneo y las aceitunas curadas se comen desde la antigüedad. La alcaparra se recoge silvestre o cultivada en muchas zonas secas de la costa y de las islas, y forma parte de la despensa mediterránea de siempre.",
+  "uses": [
+   "Aperitivos aliñados",
+   "Salsas y aliños",
+   "Guisos de carne y pescado",
+   "Ensaladas",
+   "Crujientes y acabados"
+  ],
+  "keep": "Cerradas y en su líquido, meses; abiertas, semanas en frío y siempre cubiertas. Las alcaparras en sal, meses en lugar fresco.",
+  "pro": "Aliña aceitunas en tanda para la semana. Ten alcaparras desaladas o en vinagre a mano en la partida de pescados y crudos.",
+  "related": [
+   "alino-alcaparras-limon",
+   "tartara",
+   "aceite-de-oliva",
+   "salazones-y-huevas",
+   "encurtidos-rapidos",
+   "acidez-en-cocina"
+  ]
+ },
+ {
+  "id": "frutos-secos",
+  "name": "Frutos secos: nuez, avellana, pistacho y piñón",
+  "name_en": "Nuts: walnut, hazelnut, pistachio and pine nut",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "frutos secos",
+   "nuez",
+   "avellana",
+   "pistacho",
+   "piñón",
+   "anacardo",
+   "pasta de pistacho",
+   "avellana tostada",
+   "praliné"
+  ],
+  "summary": "Grasa, crujiente y aroma tostado: se tuestan justo, se guardan en frío y se usan en picadas, pestos, salsas y postres.",
+  "what": "Los frutos secos tienen mucha grasa, por eso aportan cuerpo, crujiente y aroma, pero también se enrancian si se guardan mal. El tostado transforma su sabor: la avellana gana notas de cacao y caramelo, la nuez pierde parte de su amargor, el piñón se vuelve dulce y el pistacho conserva mejor su color verde si se tuesta poco.\n\nSe usan enteros, picados, en pasta, en aceite o en leche. En la cocina mediterránea están en [[picada|picadas]], [[romesco]], [[pesto]], rellenos y dulces. Son alérgenos frecuentes: hay que tenerlo presente en cada plato y en la limpieza de los utensilios. La [[almendra]] tiene su propia ficha.",
+  "method": [
+   "Tuesta en horno en una sola capa, removiendo a mitad; sácalos un poco antes de lo que crees, porque siguen tostándose fuera.",
+   "Avellana: tras tostar, frótala en un paño para quitar la piel.",
+   "Piñón: tuesta en sartén a fuego medio sin dejar de mover o en horno vigilando; se quema en segundos.",
+   "Pasta de frutos secos: tritura tostados y aún templados hasta que suelten su grasa y queden lisos.",
+   "Para que no se enrancien, guarda en frío y en recipiente cerrado, mejor enteros que picados."
+  ],
+  "ratios": [
+   {
+    "use": "Avellana tostada",
+    "ratio": "160–170 °C, 10–14 minutos",
+    "note": "Hasta que la piel se agriete."
+   },
+   {
+    "use": "Nuez tostada",
+    "ratio": "160 °C, 8–10 minutos",
+    "note": "Más tiempo amarga."
+   },
+   {
+    "use": "Pistacho verde",
+    "ratio": "140–150 °C, 6–8 minutos",
+    "note": "Tostado ligero para conservar el color."
+   },
+   {
+    "use": "Piñón",
+    "ratio": "150–160 °C, 5–8 minutos",
+    "note": "Vigilando sin parar."
+   }
+  ],
+  "variants": [
+   {
+    "id": "almendra",
+    "name": "Almendra",
+    "note": "El fruto seco de la isla."
+   },
+   {
+    "id": "picada",
+    "name": "Picada",
+    "note": "Frutos secos majados con pan y ajo."
+   },
+   {
+    "id": "pesto",
+    "name": "Pesto",
+    "note": "Con piñones o con otros frutos secos."
+   },
+   {
+    "id": "turrones-y-pralines",
+    "name": "Pralinés",
+    "note": "Frutos secos caramelizados y triturados."
+   }
+  ],
+  "keys": [
+   "Tostar justo: un minuto de más y amargan.",
+   "Frío y cerrado: la grasa se enrancia con calor, luz y aire.",
+   "Alérgenos: utensilios limpios y avisos claros en la ficha.",
+   "Tostados aún templados se trituran mejor en pasta.",
+   "Prueba cada partida: un fruto seco rancio estropea un plato entero."
+  ],
+  "errors": [
+   {
+    "p": "Sabor rancio",
+    "fix": "Frutos secos viejos o guardados en calor. Pruébalos y guárdalos en frío."
+   },
+   {
+    "p": "Piñones quemados",
+    "fix": "Sartén sin vigilancia. Fuego medio, movimiento constante y fuera a tiempo."
+   },
+   {
+    "p": "Pasta granulosa",
+    "fix": "Frutos secos fríos o poco triturados. Tritúralos templados y más tiempo."
+   }
+  ],
+  "history": "Avellanas, nueces, piñones y pistachos se recogen y se comen en el Mediterráneo desde muy antiguo. El pistacho llegó desde Oriente Medio, y los piñones de los pinares de la península han sido siempre un ingrediente de la cocina tradicional.",
+  "uses": [
+   "Picadas, pestos y salsas",
+   "Crujientes y acabados",
+   "Rellenos",
+   "Pastelería y pralinés",
+   "Leches y aceites"
+  ],
+  "keep": "En frío, cerrados y a oscuras: enteros, varios meses; picados o tostados, semanas. Se pueden congelar.",
+  "pro": "Tuesta por tandas pequeñas y etiqueta con la fecha. Guarda los frutos secos lejos del resto y señala los platos que los llevan.",
+  "related": [
+   "almendra",
+   "picada",
+   "pesto",
+   "romesco",
+   "turrones-y-pralines",
+   "crujientes-salados"
+  ]
+ },
+ {
+  "id": "algas",
+  "name": "Algas",
+  "name_en": "Seaweed",
+  "cat": "producto",
+  "group": "Pescado y marisco",
+  "aka": [
+   "alga kombu",
+   "kombu",
+   "nori",
+   "wakame",
+   "dulse",
+   "lechuga de mar",
+   "espagueti de mar",
+   "algas frescas",
+   "sal de algas"
+  ],
+  "summary": "El sabor del mar sin pescado: umami, yodo y sal para caldos, mantequillas, ensaladas, tempuras y aliños.",
+  "what": "Las algas comestibles se compran secas, frescas o en salazón. La kombu, gruesa y rica en compuestos que dan umami, es la base del [[dashi]] y de caldos vegetales. La nori, en láminas finas tostadas, aporta un sabor marino intenso. La wakame se rehidrata rápido y se usa en ensaladas y caldos. La dulse, roja y algo ahumada, y la lechuga de mar, verde y fina, funcionan en crudo, salteadas o en mantequillas. El espagueti de mar tiene tiras largas y carnosas.\n\nAportan sal, yodo y umami. Algunas, como la kombu, tienen mucho yodo: se usan con medida.",
+  "method": [
+   "Algas secas: rehidrátalas en agua fría el tiempo justo; las finas, minutos; las gruesas, más.",
+   "Algas en sal: lávalas bien en agua fría para quitar el exceso de sal y escúrrelas.",
+   "Kombu para caldo: en agua fría y calor suave, sin llegar a hervir, y retírala antes de que suelte viscosidad.",
+   "Crujientes: tempura de algas o nori tostada en seco unos segundos sobre la llama.",
+   "Molidas en seco, mezcladas con sal o mantequilla, dan un condimento marino para pescados, verduras y arroces."
+  ],
+  "ratios": [
+   {
+    "use": "Kombu en caldo",
+    "ratio": "10–15 g por litro, a 60 °C, 1 hora",
+    "note": "Retirar antes de subir el fuego."
+   },
+   {
+    "use": "Wakame seca",
+    "ratio": "5–10 minutos en agua fría",
+    "note": "Multiplica su volumen por 6–10."
+   },
+   {
+    "use": "Mantequilla de algas",
+    "ratio": "20–30 g de alga fina picada por 250 g de mantequilla",
+    "note": "Con un toque de cítrico."
+   },
+   {
+    "use": "Sal de algas",
+    "ratio": "1 parte de alga seca molida por 3–4 de sal",
+    "note": "Para terminar platos."
+   }
+  ],
+  "variants": [
+   {
+    "id": "dashi",
+    "name": "Dashi",
+    "note": "Kombu y bonito seco."
+   },
+   {
+    "id": "sales-aromaticas",
+    "name": "Sal de algas",
+    "note": "Alga seca molida con sal."
+   },
+   {
+    "id": "mantequillas-compuestas",
+    "name": "Mantequilla de algas",
+    "note": "Para pescados y arroces."
+   },
+   {
+    "id": "tempura",
+    "name": "Tempura de algas",
+    "note": "Hojas finas rebozadas."
+   }
+  ],
+  "keys": [
+   "Kombu sin hervir: el hervor da amargor y viscosidad.",
+   "Lava las algas en sal; prueba las secas antes de salar el plato.",
+   "Con medida: tienen mucho yodo y sal.",
+   "Umami vegetal: refuerzan caldos y salsas sin pescado.",
+   "Rehidratación corta: pasadas, se vuelven blandas y viscosas."
+  ],
+  "errors": [
+   {
+    "p": "Caldo viscoso o amargo",
+    "fix": "Kombu hervida o demasiado tiempo. Retírala antes de hervir."
+   },
+   {
+    "p": "Plato demasiado salado",
+    "fix": "Algas en sal mal lavadas o sin contar su sal. Lávalas bien y sazona al final."
+   },
+   {
+    "p": "Algas blandas y sin textura",
+    "fix": "Rehidratadas de más. Acorta el remojo y escurre enseguida."
+   }
+  ],
+  "history": "Las algas son parte esencial de la cocina japonesa y coreana desde hace siglos. En las costas de Europa se recogieron sobre todo como abono y en épocas de escasez, y en las últimas décadas han entrado en la cocina profesional con productores locales.",
+  "uses": [
+   "Caldos y dashis",
+   "Ensaladas",
+   "Mantequillas y sales",
+   "Tempuras y crujientes",
+   "Acabados de pescados y arroces"
+  ],
+  "keep": "Secas, meses en lugar seco y cerrado. En sal, meses en frío. Frescas, 2–3 días en frío y húmedas. Rehidratadas, el mismo día.",
+  "pro": "Ten kombu y una alga fina seca siempre en la despensa. Prepara sal y mantequilla de algas en tanda; aguantan bien y dan sabor al instante.",
+  "related": [
+   "dashi",
+   "umami-y-fondo",
+   "sales-aromaticas",
+   "mantequillas-compuestas",
+   "tempura",
+   "gelificantes-y-espesantes"
+  ]
+ },
+ {
+  "id": "raya-y-pescados-de-fondo",
+  "name": "Raya, rape y pescados de fondo",
+  "name_en": "Skate, monkfish and bottom fish",
+  "cat": "producto",
+  "group": "Pescado y marisco",
+  "aka": [
+   "raya",
+   "alas de raya",
+   "rape",
+   "hígado de rape",
+   "congrio",
+   "pescado de fondo",
+   "cola de rape"
+  ],
+  "summary": "Pescados de carne firme o gelatinosa, sin espinas finas: aguantan guisos, brasa y salsas potentes.",
+  "what": "Los pescados de fondo tienen carnes muy distintas a las del pescado blanco de lomo. El rape tiene una carne firme y sin espinas, casi como una carne, que no se deshace en guisos ni en la brasa; su hígado es un bocado graso y fino. La raya se come por las alas: una carne en fibras largas sobre un esqueleto de cartílago blando. El congrio es gelatinoso y sabroso, ideal para caldos y guisos; su zona junto a la cabeza tiene menos espinas que la cola.\n\nTodos piden frescura absoluta: la raya, en particular, desarrolla olor a amoniaco en cuanto pasa de punto.",
+  "method": [
+   "Rape: quita la piel y las telillas que lo cubren, que encogen al cocinar; separa los lomos de la espina central.",
+   "Raya: cuece o escalfa las alas con piel en caldo corto unos minutos, quita la piel y separa la carne del cartílago; o dóralas en sartén.",
+   "Hígado de rape: limpia de venas, sala ligeramente, envuélvelo en film en forma de cilindro y cuécelo al vapor o en agua suave hasta que esté firme.",
+   "Congrio: en rodajas de la zona de la cabeza para guisos, o la cola entera para caldos.",
+   "Aprovecha cabezas y espinas para caldos muy gelatinosos."
+  ],
+  "ratios": [
+   {
+    "use": "Lomo de rape",
+    "ratio": "50–55 °C en el centro",
+    "note": "Algo más que otros pescados: su carne lo agradece."
+   },
+   {
+    "use": "Alas de raya escalfadas",
+    "ratio": "8–12 minutos en caldo corto",
+    "note": "Según grosor."
+   },
+   {
+    "use": "Hígado de rape al vapor",
+    "ratio": "65 °C en el centro",
+    "note": "Enfriar y cortar en rodajas."
+   },
+   {
+    "use": "Rendimiento del rape",
+    "ratio": "Cola: 50–60 % de lomo",
+    "note": "Sin piel ni espina."
+   }
+  ],
+  "variants": [
+   {
+    "id": "pescado-de-roca",
+    "name": "Pescado de roca",
+    "note": "Para caldos y suquets."
+   },
+   {
+    "id": "caldo-corto",
+    "name": "Caldo corto",
+    "note": "Para escalfar la raya."
+   },
+   {
+    "id": "mantequilla-noisette",
+    "name": "Raya con mantequilla tostada",
+    "note": "Con alcaparras y un toque ácido."
+   },
+   {
+    "id": "arroces",
+    "name": "Arroz de rape",
+    "note": "Su carne firme aguanta la cocción."
+   }
+  ],
+  "keys": [
+   "Frescura: la raya huele a amoniaco si no está perfecta.",
+   "Rape sin telillas o encoge y se endurece.",
+   "Congrio de la zona de la cabeza para comer; la cola, al caldo.",
+   "Carnes firmes: aguantan guisos y brasa.",
+   "Espinas y cabezas gelatinosas, al caldo."
+  ],
+  "errors": [
+   {
+    "p": "Rape que encoge y suelta agua",
+    "fix": "Telillas sin quitar o fuego flojo. Limpia bien y dora a fuego vivo."
+   },
+   {
+    "p": "Raya con olor fuerte",
+    "fix": "Pieza pasada. Compra del día y cocina pronto; no se arregla lavándola."
+   },
+   {
+    "p": "Guiso de congrio lleno de espinas",
+    "fix": "Rodajas de la cola. Usa la zona de la cabeza."
+   }
+  ],
+  "history": "El rape, la raya y el congrio han sido pescados de la cocina marinera de la península, sobre todo en guisos, calderetas y caldos. La raya con mantequilla tostada y alcaparras es un clásico de la cocina francesa.",
+  "uses": [
+   "Guisos y suquets",
+   "Arroces",
+   "Brasa y plancha",
+   "Caldos gelatinosos",
+   "Bocados con el hígado de rape"
+  ],
+  "keep": "Rape y congrio, 2 días a 0–2 °C. Raya, mejor el mismo día. Hígado de rape cocido, 2–3 días en frío.",
+  "pro": "Limpia el rape al recibir y porciona por raciones. Cuece el hígado en tanda y racione en frío. Cabezas y espinas, a caldo del día.",
+  "related": [
+   "pescado-de-roca",
+   "caldo-corto",
+   "fumet",
+   "arroces",
+   "mantequilla-noisette",
+   "fileteado-de-pescado"
+  ]
+ },
+ {
+  "id": "sobrasada-y-embutidos",
+  "name": "Sobrasada y embutidos de la isla",
+  "name_en": "Sobrasada and island charcuterie",
+  "cat": "producto",
+  "group": "Carne",
+  "aka": [
+   "sobrasada",
+   "sobrassada",
+   "botifarra",
+   "butifarrón",
+   "embutido de matanza",
+   "matanza",
+   "sobrasada con miel"
+  ],
+  "summary": "Embutidos de la matanza tradicional de las islas: la sobrasada se funde y perfuma; la botifarra aporta especia y fondo.",
+  "what": "La sobrasada es un embutido crudo y curado de carne y tocino de cerdo picados con pimentón y sal, típico de las Baleares. Tiene una textura untuosa que se funde con el calor y un sabor intenso a pimentón y curación; hay versiones más tiernas y otras más curadas. La botifarra de las islas es un embutido con sangre, carne, grasa y especias, cocido.\n\nLos dos vienen de la tradición de la matanza del cerdo en las casas payesas, que en Ibiza sigue viva en muchos hogares. En cocina se usan como condimento: un poco de sobrasada da grasa, color y sabor a guisos como el sofrit pagès, a arroces, a salsas y a carnes y pescados de brasa.",
+  "method": [
+   "Sobrasada: quita la tripa y úsala en crudo untada, o fúndela a fuego suave; con fuego fuerte el pimentón se quema y amarga.",
+   "Para salsas, emulsiona sobrasada fundida con un jugo o caldo caliente y túrmix, o mézclala con mantequilla.",
+   "Botifarra: en rodajas, marcada en plancha o brasa, o añadida a guisos en los últimos minutos para que no se deshaga.",
+   "Combina con dulce y ácido: miel, higos, fruta asada, encurtidos.",
+   "Úsala con medida: es un condimento potente y salado."
+  ],
+  "ratios": [
+   {
+    "use": "Sobrasada como condimento",
+    "ratio": "20–30 g por ración",
+    "note": "En guisos, arroces o salsas."
+   },
+   {
+    "use": "Mantequilla de sobrasada",
+    "ratio": "1 parte de sobrasada por 2 de mantequilla",
+    "note": "Para terminar carnes, pescados o arroces."
+   },
+   {
+    "use": "Sobrasada fundida",
+    "ratio": "Fuego suave, por debajo de 100 °C",
+    "note": "El pimentón se quema enseguida."
+   },
+   {
+    "use": "Botifarra en guiso",
+    "ratio": "Últimos 10–15 minutos",
+    "note": "Que no se deshaga."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cocina-ibicenca",
+    "name": "Sofrit pagès",
+    "note": "El guiso de la isla con embutidos."
+   },
+   {
+    "id": "mantequillas-compuestas",
+    "name": "Mantequilla de sobrasada",
+    "note": "Untuosa y especiada."
+   },
+   {
+    "id": "higos-y-algarroba",
+    "name": "Con higos",
+    "note": "Dulce de la isla con embutido."
+   },
+   {
+    "id": "miel-y-azucares",
+    "name": "Sobrasada con miel",
+    "note": "Pareja clásica de las islas."
+   }
+  ],
+  "keys": [
+   "Fuego suave: el pimentón quemado amarga.",
+   "Es un condimento: poca cantidad da mucho.",
+   "Dulce y ácido para su grasa: miel, fruta, encurtidos.",
+   "Busca productores de la isla y matanzas tradicionales.",
+   "Prueba la sal antes de sazonar el plato."
+  ],
+  "errors": [
+   {
+    "p": "Salsa amarga",
+    "fix": "Sobrasada fundida a fuego fuerte. Fúndela suave o añádela fuera del fuego."
+   },
+   {
+    "p": "Plato grasiento",
+    "fix": "Demasiada sobrasada o grasa sin emulsionar. Usa menos y emulsiónala con un jugo."
+   },
+   {
+    "p": "Botifarra deshecha en el guiso",
+    "fix": "Añadida al principio. Ponla al final."
+   }
+  ],
+  "history": "La sobrasada es uno de los embutidos más característicos de las Baleares, con una larga tradición ligada a la matanza del cerdo en las casas de campo. En Ibiza, la matanza familiar de invierno y sus embutidos siguen siendo parte de la cultura de la isla.",
+  "uses": [
+   "Guisos de la isla",
+   "Arroces",
+   "Untables y tostas",
+   "Salsas y mantequillas",
+   "Brasa y bocados"
+  ],
+  "keep": "Sobrasada curada, semanas en lugar fresco o en frío, envuelta en papel; abierta, en frío y tapada por el corte. Botifarra, en frío, según el productor.",
+  "pro": "Ten mantequilla de sobrasada en rulos congelados para terminar platos. Corta la botifarra en frío para rodajas limpias.",
+  "related": [
+   "cocina-ibicenca",
+   "producto-de-la-isla",
+   "cerdo-iberico",
+   "mantequillas-compuestas",
+   "higos-y-algarroba",
+   "guisos-largos"
+  ]
+ },
+ {
+  "id": "flores-comestibles",
+  "name": "Flores comestibles",
+  "name_en": "Edible flowers",
+  "cat": "producto",
+  "group": "Huerta",
+  "aka": [
+   "flores",
+   "capuchina",
+   "borraja",
+   "caléndula",
+   "violeta",
+   "pensamiento",
+   "flor de calabacín",
+   "flores de hierbas",
+   "azahar"
+  ],
+  "summary": "Flores que aportan sabor además de color: solo de cultivo para comer, en el momento justo y con medida.",
+  "what": "Algunas flores tienen sabor propio y se usan como un ingrediente más. La capuchina es picante; la borraja sabe a pepino; las flores de las hierbas (romero, tomillo, cebollino, hinojo, rúcula) tienen el sabor de la planta pero más suave; el azahar y la rosa son muy perfumados; la flor de calabacín se rellena y se fríe; violetas, pensamientos o caléndulas son suaves y dan color.\n\nMuchas flores de jardín son tóxicas o han sido tratadas con productos que no son para comer. Solo se usan las de productores que las cultivan para consumo o las de un huerto propio sin tratamientos, bien identificadas.",
+  "method": [
+   "Compra a un productor de flores comestibles o recoge de tu huerto, sin tratar y bien identificadas.",
+   "Recoge o recibe por la mañana, con la flor recién abierta; guarda en caja con papel húmedo en frío.",
+   "No las laves bajo el grifo: si hace falta, sumérgelas un instante en agua fría y sécalas sobre papel.",
+   "Pon las flores en el último momento, sin aliño o con muy poco, para que no se marchiten.",
+   "Flor de calabacín: retira el pistilo, rellena con cuidado, cierra los pétalos y fríe en tempura ligera."
+  ],
+  "ratios": [
+   {
+    "use": "Flores cristalizadas",
+    "ratio": "Pincel de clara y azúcar fino",
+    "note": "Secar a temperatura ambiente 12–24 horas."
+   },
+   {
+    "use": "Secado de pétalos",
+    "ratio": "40–50 °C, 2–4 horas",
+    "note": "Deshidratador u horno con la puerta entreabierta."
+   },
+   {
+    "use": "Infusión de azahar o rosa",
+    "ratio": "10–20 g de pétalos por litro, en frío",
+    "note": "12 horas en la cámara."
+   },
+   {
+    "use": "Flor de calabacín frita",
+    "ratio": "175–180 °C, 1–2 minutos",
+    "note": "Rebozado muy fino."
+   }
+  ],
+  "variants": [
+   {
+    "id": "hierbas-frescas",
+    "name": "Flores de hierbas",
+    "note": "Romero, tomillo, cebollino."
+   },
+   {
+    "id": "tempura",
+    "name": "Flor de calabacín en tempura",
+    "note": "Rellena o sola."
+   },
+   {
+    "id": "infusiones",
+    "name": "Infusiones de flores",
+    "note": "Para cremas, almíbares y bebidas."
+   },
+   {
+    "id": "emplatado",
+    "name": "En el emplatado",
+    "note": "Con sentido, no como adorno."
+   }
+  ],
+  "keys": [
+   "Solo flores para comer, de origen conocido.",
+   "Cada flor con sabor y razón en el plato; si solo decora, sobra.",
+   "Al final y sin manosear.",
+   "Pocas: una flor bien puesta dice más que diez.",
+   "Frío y humedad para guardarlas, pero sin mojarlas."
+  ],
+  "errors": [
+   {
+    "p": "Flores marchitas en el plato",
+    "fix": "Puestas antes de tiempo o aliñadas. Colócalas justo al salir."
+   },
+   {
+    "p": "Sabor amargo",
+    "fix": "Partes verdes o pistilos. Usa solo los pétalos o la flor limpia."
+   },
+   {
+    "p": "Flores mojadas y rotas",
+    "fix": "Lavadas bajo el grifo. Sumérgelas un instante y seca sobre papel."
+   }
+  ],
+  "history": "Flores como el azahar, la rosa o la violeta se usan desde hace siglos en la cocina mediterránea y de Oriente Medio, en dulces, aguas y jarabes. La flor de calabacín rellena y frita es un plato tradicional en Italia.",
+  "uses": [
+   "Ensaladas y crudos",
+   "Acabados de platos",
+   "Postres e infusiones",
+   "Fritos",
+   "Bebidas sin alcohol"
+  ],
+  "keep": "2–5 días a 2–4 °C en caja cerrada con papel húmedo, sin mojar. Secas o cristalizadas, semanas en bote cerrado.",
+  "pro": "Pide poca cantidad y a menudo. Guarda cada flor en su caja etiquetada y colócalas con pinzas al terminar el plato.",
+  "related": [
+   "hierbas-frescas",
+   "ensalada-de-hierbas",
+   "tempura",
+   "infusiones",
+   "emplatado",
+   "producto-de-la-isla"
+  ]
+ },
+ {
+  "id": "melon-y-sandia",
+  "name": "Melón y sandía",
+  "name_en": "Melon and watermelon",
+  "cat": "producto",
+  "group": "Fruta",
+  "aka": [
+   "melón",
+   "sandía",
+   "melón piel de sapo",
+   "cantalupo",
+   "sandía a la brasa",
+   "sandía comprimida",
+   "gazpacho de sandía"
+  ],
+  "summary": "Frutas de verano muy jugosas que funcionan en salado: con sal, ácido, grasa o una pasada de brasa.",
+  "what": "El melón y la sandía son frutas de verano con mucha agua y azúcar. El melón de piel de sapo es dulce y crujiente; los de pulpa naranja, como el cantalupo, son más aromáticos y blandos. La sandía es muy refrescante, crujiente y menos dulce.\n\nEn cocina salada brillan con contrastes: el melón con jamón o embutidos curados, la sandía con queso salado, hierbas y aceite, en gazpachos de fruta, en crudos con pescado o marcada en la brasa, donde se concentra y toma un punto ahumado. Comprimidas al vacío, su textura se vuelve densa y translúcida. La corteza de la sandía, sin la parte verde, se puede encurtir.",
+  "method": [
+   "Elige por el peso, el olor en la base del melón y, en la sandía, por el sonido hueco y la mancha amarilla donde ha estado apoyada.",
+   "Corta en frío, retira la corteza y las pepitas, y racione al momento.",
+   "Sandía a la brasa o plancha: gajos o dados gruesos y secos, marcados a fuego muy vivo, sin moverlos, hasta que tomen color.",
+   "Comprimida: en bolsa al vacío, sola o con un líquido aromático, uno o varios ciclos en máquina de campana.",
+   "Gazpacho de fruta: tritura con tomate o pepino, aceite, vinagre y sal; cuela y enfría."
+  ],
+  "ratios": [
+   {
+    "use": "Sandía marcada",
+    "ratio": "Fuego muy vivo, 1–2 minutos por cara",
+    "note": "Dados de 3–4 cm muy secos."
+   },
+   {
+    "use": "Gazpacho de sandía",
+    "ratio": "1 kg de sandía, 300 g de tomate, 60–80 ml de aceite",
+    "note": "Vinagre y sal al gusto."
+   },
+   {
+    "use": "Corteza encurtida",
+    "ratio": "Vinagre, agua y azúcar 1:1:0,5",
+    "note": "Hervida 5 minutos y en frío 24 horas."
+   },
+   {
+    "use": "Ración de fruta en salado",
+    "ratio": "60–100 g por plato",
+    "note": "Como base fresca."
+   }
+  ],
+  "variants": [
+   {
+    "id": "vacio-de-verduras-y-frutas",
+    "name": "Sandía comprimida",
+    "note": "Densa y translúcida."
+   },
+   {
+    "id": "encurtidos-rapidos",
+    "name": "Corteza encurtida",
+    "note": "Aprovechamiento crujiente."
+   },
+   {
+    "id": "helados-y-sorbetes",
+    "name": "Sorbetes",
+    "note": "Granizados de melón o sandía."
+   },
+   {
+    "id": "ceviche-y-crudos",
+    "name": "Con crudos",
+    "note": "Fruta fría con pescado crudo y cítrico."
+   }
+  ],
+  "keys": [
+   "Madura y de temporada: fuera de verano no merece la pena.",
+   "Sal, ácido y grasa la convierten en plato salado.",
+   "Muy fría, salvo cuando va a la brasa.",
+   "Corta al momento: suelta agua enseguida.",
+   "La corteza también se aprovecha."
+  ],
+  "errors": [
+   {
+    "p": "Fruta sosa",
+    "fix": "Verde o fuera de temporada. Prueba antes de usar y realza con sal y ácido."
+   },
+   {
+    "p": "Sandía a la brasa aguada",
+    "fix": "Superficie mojada o fuego flojo. Seca bien y usa fuego muy vivo."
+   },
+   {
+    "p": "Plato encharcado",
+    "fix": "Fruta cortada con antelación. Corta al momento y escurre."
+   }
+  ],
+  "history": "Melones y sandías se cultivan en el Mediterráneo desde hace siglos y son la fruta de verano por excelencia en la península. El melón con jamón es una combinación clásica de la cocina española e italiana.",
+  "uses": [
+   "Entrantes fríos",
+   "Gazpachos de fruta",
+   "Crudos y ensaladas",
+   "Sorbetes",
+   "Brasa"
+  ],
+  "keep": "Enteros, varios días en lugar fresco; abiertos, 2–3 días en frío tapados con film. Cortados en dados, el mismo día.",
+  "pro": "Corta por la mañana en frío lo justo del servicio y guarda en bandejas tapadas sobre rejilla. Comprime o encurte en tanda.",
+  "related": [
+   "vacio-de-verduras-y-frutas",
+   "encurtidos-rapidos",
+   "helados-y-sorbetes",
+   "ceviche-y-crudos",
+   "quesos-en-cocina",
+   "frutos-rojos-y-fruta-de-hueso"
+  ]
+ },
+ {
+  "id": "granada-y-membrillo",
+  "name": "Granada y membrillo",
+  "name_en": "Pomegranate and quince",
+  "cat": "producto",
+  "group": "Fruta",
+  "aka": [
+   "granada",
+   "zumo de granada",
+   "melaza de granada",
+   "membrillo",
+   "dulce de membrillo",
+   "carne de membrillo",
+   "membrillo asado"
+  ],
+  "summary": "Dos frutas de otoño ácidas y astringentes que brillan en salado: granos que estallan y membrillo cocinado hasta volverse rojo.",
+  "what": "La granada tiene granos llenos de un zumo ácido y dulce que estallan en la boca. Se usan enteros para dar frescor y color, en zumo para aliños y marinadas, o reducidos en una melaza ácida y espesa, muy usada en la cocina de Oriente Medio.\n\nEl membrillo crudo es duro, ácido y astringente: hay que cocinarlo. Al hacerlo se ablanda, se vuelve dulce y aromático y toma un color rosado o rojo. Es muy rico en pectina, por eso su carne cocida con azúcar cuaja sola en el dulce de membrillo. Asado o confitado acompaña muy bien carnes de caza, cerdo, pato y quesos.",
+  "method": [
+   "Desgranar la granada: córtala por la mitad y golpea la piel con una cuchara, boca abajo sobre un bol; retira las membranas blancas, que amargan.",
+   "Zumo: tritura los granos poco tiempo y cuela, o exprímelos a mano sobre un colador.",
+   "Melaza de granada: reduce el zumo a fuego suave hasta que napee la cuchara.",
+   "Membrillo asado: en cuartos, sin pepitas, con un poco de azúcar o miel, mantequilla y agua, tapado al horno hasta que esté tierno y rosado.",
+   "Dulce de membrillo: cuece la fruta, tritúrala, añade el azúcar y cocina removiendo hasta que la pasta se despegue del fondo y oscurezca; vierte en molde y deja cuajar."
+  ],
+  "ratios": [
+   {
+    "use": "Melaza de granada",
+    "ratio": "1 l de zumo reducido a 200–250 ml",
+    "note": "Un poco de azúcar o limón opcional."
+   },
+   {
+    "use": "Dulce de membrillo",
+    "ratio": "1 kg de pulpa por 800 g–1 kg de azúcar",
+    "note": "Con zumo de limón."
+   },
+   {
+    "use": "Membrillo asado",
+    "ratio": "160–170 °C, 1–1,5 horas tapado",
+    "note": "Destapar al final para glasear."
+   },
+   {
+    "use": "Granos de granada",
+    "ratio": "Una granada da 200–300 g de granos",
+    "note": "Según tamaño."
+   }
+  ],
+  "variants": [
+   {
+    "id": "confituras-y-mermeladas",
+    "name": "Dulce de membrillo",
+    "note": "Pasta cuajada por su pectina."
+   },
+   {
+    "id": "fruta-asada",
+    "name": "Membrillo asado",
+    "note": "Con miel y especias."
+   },
+   {
+    "id": "reducciones",
+    "name": "Melaza de granada",
+    "note": "Reducción ácida para aliñar y lacar."
+   },
+   {
+    "id": "caza-de-pluma",
+    "name": "Con caza",
+    "note": "Pareja de otoño para perdiz y pichón."
+   }
+  ],
+  "keys": [
+   "Sin membranas blancas: amargan.",
+   "El membrillo, siempre cocinado.",
+   "Su pectina hace cuajar el dulce sin añadir nada.",
+   "Ácido y fruta para platos grasos y de caza.",
+   "La melaza de granada es un ácido con cuerpo: úsala como un vinagre."
+  ],
+  "errors": [
+   {
+    "p": "Zumo de granada amargo",
+    "fix": "Triturado de más o con membranas. Tritura poco y desgrana limpio."
+   },
+   {
+    "p": "Dulce de membrillo que no cuaja",
+    "fix": "Poca cocción. Sigue reduciendo hasta que se despegue del fondo."
+   },
+   {
+    "p": "Membrillo asado duro",
+    "fix": "Poco tiempo o sin tapar. Tápalo y alarga la cocción."
+   }
+  ],
+  "history": "La granada llegó al Mediterráneo desde Oriente y tiene una presencia antigua en la península. El dulce de membrillo es tradicional en España y se sirve a menudo con queso.",
+  "uses": [
+   "Ensaladas y crudos",
+   "Aliños y lacas",
+   "Guarniciones de caza y cerdo",
+   "Quesos",
+   "Postres de otoño"
+  ],
+  "keep": "Granada entera, semanas en lugar fresco; granos, 3–4 días en frío; se congelan. Membrillo crudo, semanas en lugar fresco. Dulce de membrillo, meses en frío bien envuelto.",
+  "pro": "Desgrana en tanda y guarda los granos en frío. Prepara la melaza y el membrillo asado de temporada en cantidad.",
+  "related": [
+   "confituras-y-mermeladas",
+   "fruta-asada",
+   "reducciones",
+   "caza-de-pluma",
+   "quesos-en-cocina",
+   "acidez-en-cocina"
+  ]
  }
 ]
