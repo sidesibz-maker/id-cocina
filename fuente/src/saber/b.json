@@ -33,7 +33,7 @@
         ],
         [
           "Gelatina del bacalao o de la merluza",
-          "la que suelta la piel al confitar a 60-70 °C"
+          "la que suelta la piel al confitar a 60–70 °C"
         ],
         [
           "Lecitina de soja en polvo",
@@ -41,7 +41,7 @@
         ]
       ],
       "steps": [
-        "Igualar temperaturas: en frío, todo a 18-22 °C; en caliente, la grasa a 50-65 °C según la salsa y la yema sin pasar de 65 °C.",
+        "Igualar temperaturas: en frío, todo a 18–22 °C; en caliente, la grasa a 50–65 °C según la salsa y la yema sin pasar de 65 °C.",
         "Fase acuosa y emulsionante primero; la grasa después, sin dejar de batir: gota a gota al principio, en hilo cuando la salsa espesa y se vuelve opaca.",
         "Si espesa demasiado, unas gotas de agua, ácido o fondo permiten seguir añadiendo grasa sin que se corte.",
         "Sazonar al final. Si suelta grasa por los bordes, está al límite."
@@ -66,7 +66,7 @@
       {
         "use": "Beurre blanc",
         "ratio": "unos 250 g de mantequilla fría sobre una reducción de chalota, vino y vinagre",
-        "note": "sin yema; mantener a 50-60 °C"
+        "note": "sin yema; mantener a 50–60 °C"
       },
       {
         "use": "Aire o espuma",
@@ -92,7 +92,7 @@
       }
     ],
     "keys": [
-      "La temperatura manda: en frío el aceite engorda y cuesta integrarlo; en caliente, la yema cuaja hacia 65-70 °C.",
+      "La temperatura manda: en frío el aceite engorda y cuesta integrarlo; en caliente, la yema cuaja hacia 65–70 °C.",
       "Gota más fina, salsa más estable: el túrmix da emulsiones más firmes que las varillas.",
       "La grasa entra a la velocidad a la que la salsa la absorbe.",
       "Una salsa demasiado espesa está a punto de cortarse: aclarar antes de seguir.",
@@ -120,8 +120,8 @@
       "Aires",
       "Ligar jugos al pase"
     ],
-    "keep": "Frías con huevo: huevo pasteurizado en restauración, a 4 °C o menos y 24 horas. Calientes de mantequilla: tibias a 55-60 °C, como máximo un par de horas, y se desechan. Vinagretas simples: varios días en frío.",
-    "pro": "Montar en volumen con robot o túrmix y tener a mano una yema pasteurizada o agua tibia para recuperar. En el pase, las calientes en termo a 55-60 °C; las frías en biberón sobre hielo.",
+    "keep": "Frías con huevo: huevo pasteurizado en restauración, a 4 °C o menos y 24 horas. Calientes de mantequilla: tibias a 55–60 °C, como máximo un par de horas, y se desechan. Vinagretas simples: varios días en frío.",
+    "pro": "Montar en volumen con robot o túrmix y tener a mano una yema pasteurizada o agua tibia para recuperar. En el pase, las calientes en termo a 55–60 °C; las frías en biberón sobre hielo.",
     "related": [
       "mayonesa",
       "holandesa",
@@ -129,7 +129,8 @@
       "pil-pil",
       "beurre-blanc",
       "ligazones",
-      "alioli"
+      "alioli",
+      "emulsiones-al-momento"
     ]
   },
   {
@@ -176,7 +177,7 @@
         ]
       ],
       "steps": [
-        "Atemperar yemas, ácido y aceites a 18-22 °C; la yema pasteurizada, fuera de cámara solo unos 20 minutos.",
+        "Atemperar yemas, ácido y aceites a 18–22 °C; la yema pasteurizada, fuera de cámara solo unos 20 minutos.",
         "Batir las yemas con la mostaza, la sal y la mitad del ácido en un bol sobre paño húmedo.",
         "Añadir el aceite gota a gota los primeros 50-60 ml, hasta que espese y se vuelva opaca; después, en hilo fino.",
         "Cuando esté muy espesa, aclarar con el resto del ácido y unas gotas de agua y terminar el aceite. Rectificar: brillante y con pico blando.",
@@ -269,7 +270,8 @@
       "tartara",
       "salsa-brava",
       "vinagreta",
-      "holandesa"
+      "holandesa",
+      "cadena-de-frio"
     ]
   },
   {
@@ -740,8 +742,8 @@
       ],
       "steps": [
         "Quitar rabo y pepitas a las ñoras, hidratarlas en agua caliente 30 minutos y raspar la carne.",
-        "Asar tomates y la cabeza de ajo entera a 180-200 °C, 25-35 minutos. Pelar.",
-        "Tostar almendras y avellanas a 160-170 °C, 10-12 minutos; pelar las avellanas en un paño. Freír el pan.",
+        "Asar tomates y la cabeza de ajo entera a 180–200 °C, 25-35 minutos. Pelar.",
+        "Tostar almendras y avellanas a 160–170 °C, 10-12 minutos; pelar las avellanas en un paño. Freír el pan.",
         "Majar o triturar ajos, frutos secos y pan; añadir ñora y tomate sin pepitas.",
         "Emulsionar con el aceite en hilo y el vinagre, dejando grano. Salar y reposar al menos una hora."
       ]
@@ -821,7 +823,9 @@
       "salsa-de-tomate",
       "mojo-picon",
       "salsa-vizcaina",
-      "chimichurri"
+      "chimichurri",
+      "calcots-y-salvitxada",
+      "tarator-y-salsas-de-frutos-secos"
     ]
   },
   {
@@ -995,7 +999,7 @@
         ]
       ],
       "steps": [
-        "Secar bien el bacalao. Dorar suavemente el ajo y la guindilla en el aceite y retirarlos. Dejar bajar el aceite a 60-70 °C.",
+        "Secar bien el bacalao. Dorar suavemente el ajo y la guindilla en el aceite y retirarlos. Dejar bajar el aceite a 60–70 °C.",
         "Confitar el bacalao con la piel hacia abajo, sin que el aceite borbotee, 5-6 minutos; darle la vuelta y otros 3-4 minutos según grosor. Retirarlo a una bandeja y recoger el jugo que suelte.",
         "Dejar templar el aceite hasta unos 40 °C: en el fondo debe quedar un jugo blanquecino de gelatina.",
         "Montar: mover la cazuela en vaivén o trabajar el fondo en círculos con un colador de malla, incorporando el aceite al jugo hasta lograr una salsa espesa, amarillenta y brillante.",
@@ -1071,13 +1075,14 @@
       "Patatas confitadas"
     ],
     "keep": "Mejor recién hecho. El bacalao confitado y la gelatina se guardan en frío 2 días. La salsa montada se corta al enfriarse: se vuelve a montar en tibio. El aceite de confitar, colado, se guarda en frío unos días y sirve para el siguiente pil-pil.",
-    "pro": "Confitar los lomos en bandeja al horno a 60-65 °C y montar la salsa en una sola tanda. Mantenerla en baño tibio, 45-50 °C, como máximo un par de horas; regenerar cada ración un minuto a fuego suave.",
+    "pro": "Confitar los lomos en bandeja al horno a 60–65 °C y montar la salsa en una sola tanda. Mantenerla en baño tibio, 45–50 °C, como máximo un par de horas; regenerar cada ración un minuto a fuego suave.",
     "related": [
       "emulsiones",
       "salsa-verde",
       "salsa-vizcaina",
       "aceites-aromatizados",
-      "alioli"
+      "alioli",
+      "bacalao"
     ]
   },
   {
@@ -1485,14 +1490,15 @@
       "Pimientos rellenos"
     ],
     "keep": "En frío 5 días; congela muy bien en bolsas o cubetas porcionadas. Regenerar a fuego suave con un poco de fondo.",
-    "pro": "Pochar en marmita o en horno a 140-150 °C tapado para no estar pendiente; producir 5-10 litros de una vez y congelar en porciones. En el pase, en baño maría a 65 °C o más, removiendo, o regenerar por raciones.",
+    "pro": "Pochar en marmita o en horno a 140–150 °C tapado para no estar pendiente; producir 5-10 litros de una vez y congelar en porciones. En el pase, en baño maría a 65 °C o más, removiendo, o regenerar por raciones.",
     "related": [
       "sofrito",
       "pil-pil",
       "salsa-verde",
       "salsa-de-tomate",
       "fumet",
-      "romesco"
+      "romesco",
+      "marmitako"
     ]
   },
   {
@@ -1629,7 +1635,7 @@
       "Rellenos"
     ],
     "keep": "En frío 5-7 días cubierto con una capa de aceite. Congela perfectamente en porciones; se puede usar directamente congelado en el guiso.",
-    "pro": "Lotes de 5-10 kg en marmita o en horno a 150-160 °C, tapado al principio y destapado al final, removiendo cada 20 minutos. Porcionar en bolsas por receta (por ejemplo, la cantidad de una paella) y congelar. Etiquetar con el tipo: sofrito de arroz y sofrito de guiso no son intercambiables.",
+    "pro": "Lotes de 5-10 kg en marmita o en horno a 150–160 °C, tapado al principio y destapado al final, removiendo cada 20 minutos. Porcionar en bolsas por receta (por ejemplo, la cantidad de una paella) y congelar. Etiquetar con el tipo: sofrito de arroz y sofrito de guiso no son intercambiables.",
     "related": [
       "picada",
       "salsa-de-tomate",
@@ -1687,7 +1693,7 @@
         ]
       ],
       "steps": [
-        "Tostar almendras y avellanas a 160-170 °C, 10-12 minutos, y pelar las avellanas frotándolas en un paño.",
+        "Tostar almendras y avellanas a 160–170 °C, 10-12 minutos, y pelar las avellanas frotándolas en un paño.",
         "Freír el pan en aceite hasta dorar y escurrir.",
         "Majar el ajo con la sal; añadir los frutos secos, el pan, el perejil y el azafrán tostado, y majar hasta pasta con algo de grano.",
         "Aflojar con caldo del propio guiso.",
@@ -1775,7 +1781,9 @@
       "ligazones",
       "pesto",
       "salsa-verde",
-      "fumet"
+      "fumet",
+      "mar-i-muntanya",
+      "all-i-pebre"
     ]
   },
   {
@@ -2165,7 +2173,7 @@
     "keys": [
       "El pimentón fuera del fuego: quemado amarga sin remedio.",
       "La calidad del pimentón es la salsa; un poco de pimentón ahumado le da carácter.",
-      "Patata frita en dos tiempos: confitada a 130-140 °C y terminada a 180 °C justo antes de servir.",
+      "Patata frita en dos tiempos: confitada a 130–140 °C y terminada a 180 °C justo antes de servir.",
       "Salsa templada sobre patata recién frita y en el último momento, para que no se ablande.",
       "Ajustar el picante en dos niveles: suave para la sala y aceite picante aparte."
     ],
@@ -2361,7 +2369,8 @@
       "vinagreta",
       "salmuera",
       "fumet",
-      "aceites-aromatizados"
+      "aceites-aromatizados",
+      "escabechado"
     ]
   },
   {
@@ -2452,7 +2461,9 @@
       "salsa-brava",
       "fuego-y-brasa",
       "acidez-en-cocina",
-      "especias"
+      "especias",
+      "mole",
+      "tacos-y-antojitos"
     ]
   },
   {
@@ -2566,7 +2577,8 @@
       "tempura",
       "acidez-en-cocina",
       "ceviche-y-crudos",
-      "umami-y-fondo"
+      "umami-y-fondo",
+      "salsas-citricas-para-pescado"
     ]
   },
   {
@@ -3100,7 +3112,8 @@
       "Ajo majado con sal para una pasta fina.",
       "Aceite en hilo, como una mayonesa.",
       "Ajusta la textura con caldo.",
-      "Sirve aparte con tostadas para mojar."
+      "Sirve aparte con tostadas para mojar.",
+      "Si lleva yema cruda, huevo pasteurizado y en frío, como la mayonesa."
     ],
     "errors": [
       {
@@ -3961,7 +3974,7 @@
       "Dumplings",
       "Huevos"
     ],
-    "keep": "Aceite de chile, semanas en lugar fresco y oscuro, o en frío. Salsa XO, 2–3 semanas en frío cubierta de aceite.",
+    "keep": "Aceite de chile colado y sin aromáticos frescos, semanas en frío. Si lleva ajo, chalota o jengibre frescos, siempre en frío y pocos días, por el riesgo de botulismo. Salsa XO, en frío y cubierta de aceite, 1–2 semanas.",
     "pro": "Elabora en tanda y guarda en botes pequeños; usa siempre cuchara limpia.",
     "related": [
       "aceites-aromatizados",

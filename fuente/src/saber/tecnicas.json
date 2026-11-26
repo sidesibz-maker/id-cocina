@@ -40,27 +40,27 @@
   "ratios": [
    {
     "use": "Vacuno y cordero, poco hecho",
-    "ratio": "50-52 °C a corazón al servir",
-    "note": "Sacar a unos 47-48 °C en piezas gruesas."
+    "ratio": "50–52 °C a corazón al servir",
+    "note": "Sacar a unos 47–48 °C en piezas gruesas."
    },
    {
     "use": "Vacuno y cordero, al punto",
-    "ratio": "54-57 °C a corazón",
-    "note": "El punto más pedido; sacar a 51-53 °C."
+    "ratio": "54–57 °C a corazón",
+    "note": "El punto más pedido; sacar a 51–53 °C."
    },
    {
     "use": "Cerdo jugoso",
-    "ratio": "62-65 °C a corazón",
+    "ratio": "62–65 °C a corazón",
     "note": "Cerdo de calidad y bien conservado; manda tu plan APPCC."
    },
    {
     "use": "Aves",
-    "ratio": "72-74 °C a corazón",
+    "ratio": "72–74 °C a corazón",
     "note": "Muslo más hecho que pechuga: mejor separarlos."
    },
    {
     "use": "Pescado nacarado",
-    "ratio": "45-50 °C a corazón",
+    "ratio": "45–50 °C a corazón",
     "note": "Lascas que se separan pero aún brillantes."
    }
   ],
@@ -109,7 +109,9 @@
   "related": [
    "sellado-y-reposo",
    "baja-temperatura",
-   "jugo-de-carne"
+   "jugo-de-carne",
+   "coagulacion-de-proteinas",
+   "reposos-y-regeneracion"
   ]
  },
  {
@@ -198,7 +200,9 @@
   "related": [
    "punto-de-la-carne",
    "mantequilla-noisette",
-   "jugo-de-carne"
+   "jugo-de-carne",
+   "reaccion-de-maillard",
+   "plancha-y-sarten"
   ]
  },
  {
@@ -227,27 +231,27 @@
   "ratios": [
    {
     "use": "Pescado blanco o salmón",
-    "ratio": "45-52 °C, 15-25 minutos (2-3 cm)",
+    "ratio": "45–52 °C, 15-25 minutos (2-3 cm)",
     "note": "Nacarado; servir al momento."
    },
    {
     "use": "Pechuga de ave",
-    "ratio": "62-65 °C, 1 a 2 horas",
+    "ratio": "62–65 °C, 1 a 2 horas",
     "note": "Jugosa; el tiempo depende del grosor."
    },
    {
     "use": "Lomo de vacuno o cordero",
-    "ratio": "54-57 °C, 1 a 3 horas",
+    "ratio": "54–57 °C, 1 a 3 horas",
     "note": "Marcar después."
    },
    {
     "use": "Carrillera, falda o pluma",
-    "ratio": "62-70 °C, 12 a 48 horas",
+    "ratio": "62–70 °C, 12 a 48 horas",
     "note": "Piezas con colágeno que se ablandan con el tiempo."
    },
    {
     "use": "Huevo a baja temperatura",
-    "ratio": "63-64 °C, 45-60 minutos",
+    "ratio": "63–64 °C, 45-60 minutos",
     "note": "Clara cremosa y yema fluida."
    }
   ],
@@ -297,7 +301,9 @@
   "related": [
    "punto-de-la-carne",
    "sellado-y-reposo",
-   "confitado"
+   "confitado",
+   "cadena-de-frio",
+   "coagulacion-de-proteinas"
   ]
  },
  {
@@ -326,27 +332,27 @@
   "ratios": [
    {
     "use": "Muslo de pato o carne con colágeno",
-    "ratio": "80-90 °C, 4 a 8 horas",
+    "ratio": "80–90 °C, 4 a 8 horas",
     "note": "Hasta que se separe del hueso."
    },
    {
     "use": "Bacalao o pescado blanco",
-    "ratio": "60-65 °C, 10-20 minutos",
+    "ratio": "60–65 °C, 10-20 minutos",
     "note": "Lascas jugosas; la gelatina suelta liga el pil-pil."
    },
    {
     "use": "Tomate o pimiento",
-    "ratio": "90-100 °C en horno, 1 a 2 horas",
+    "ratio": "90–100 °C en horno, 1 a 2 horas",
     "note": "Con aceite, ajo y tomillo."
    },
    {
     "use": "Ajos",
-    "ratio": "80-90 °C, 30-40 minutos",
+    "ratio": "80–90 °C, 30-40 minutos",
     "note": "Hasta que estén tiernos; ver conservación."
    },
    {
     "use": "Patata",
-    "ratio": "90-100 °C hasta que esté tierna",
+    "ratio": "90–100 °C hasta que esté tierna",
     "note": "Después se puede dorar o chafar."
    }
   ],
@@ -396,7 +402,8 @@
   "related": [
    "pil-pil",
    "aceites-aromatizados",
-   "baja-temperatura"
+   "baja-temperatura",
+   "cassoulet-y-confit"
   ]
  },
  {
@@ -426,27 +433,27 @@
   "ratios": [
    {
     "use": "Tempura y rebozados ligeros",
-    "ratio": "170-180 °C",
+    "ratio": "170–180 °C",
     "note": "Masa muy fría y poco batida."
    },
    {
     "use": "Patatas, primera fritura",
-    "ratio": "130-150 °C hasta que estén tiernas",
+    "ratio": "130–150 °C hasta que estén tiernas",
     "note": "Sin color."
    },
    {
     "use": "Patatas, segunda fritura",
-    "ratio": "180-190 °C hasta dorar",
+    "ratio": "180–190 °C hasta dorar",
     "note": "Crujientes por fuera."
    },
    {
     "use": "Croquetas y empanados",
-    "ratio": "175-185 °C",
+    "ratio": "175–185 °C",
     "note": "Pocas a la vez, que no bajen la temperatura."
    },
    {
     "use": "Pescado enharinado",
-    "ratio": "180-190 °C",
+    "ratio": "180–190 °C",
     "note": "Piezas pequeñas, fritura corta."
    }
   ],
@@ -494,7 +501,10 @@
   "pro": "Una freidora por tipo de producto si se puede (pescado, carne, dulce, sin gluten). Anota la temperatura de cada producto en la ficha y el cambio de aceite en el registro.",
   "related": [
    "bechamel",
-   "punto-de-la-carne"
+   "punto-de-la-carne",
+   "grasas-punto-de-humo-y-oxidacion",
+   "pescaito-frito",
+   "croquetas"
   ]
  },
  {
@@ -609,7 +619,9 @@
   "related": [
    "escabeche",
    "ahumado",
-   "salmuera"
+   "salmuera",
+   "cadena-de-frio",
+   "maduracion-de-pescado"
   ]
  },
  {
@@ -704,7 +716,7 @@
    },
    {
     "p": "No coge acidez",
-    "fix": "Demasiado frío o demasiada sal. Lleva a 18-22 °C y revisa el cálculo."
+    "fix": "Demasiado frío o demasiada sal. Lleva a 18–22 °C y revisa el cálculo."
    }
   ],
   "history": "Fermentar verduras con sal es una técnica de conservación presente en casi todas las cocinas del mundo, del chucrut centroeuropeo al kimchi coreano.",
@@ -719,7 +731,9 @@
   "related": [
    "salmuera",
    "cebolla-encurtida",
-   "curado-de-pescado"
+   "curado-de-pescado",
+   "kombucha-y-fermentados-de-bebida",
+   "ph-y-acidez"
   ]
  },
  {
@@ -753,7 +767,7 @@
    },
    {
     "use": "Ahumado en caliente (pescado, aves)",
-    "ratio": "Cámara a 60-85 °C hasta el punto a corazón",
+    "ratio": "Cámara a 60–85 °C hasta el punto a corazón",
     "note": "Cocina y ahúma a la vez."
    },
    {
@@ -808,7 +822,10 @@
   "related": [
    "curado-de-pescado",
    "aceites-aromatizados",
-   "salmuera"
+   "salmuera",
+   "ahumado-con-hierbas",
+   "barbacoa-lenta",
+   "cadena-de-frio"
   ]
  },
  {
@@ -826,12 +843,12 @@
    "yema curada"
   ],
   "summary": "Tiempos y temperaturas para cada punto del huevo, de la yema líquida a la dura, y cómo escalfar sin que se deshaga.",
-  "what": "La clara y la yema cuajan a temperaturas distintas: la clara empieza a cuajar hacia los 62 °C y la yema algo más arriba, hacia los 65-70 °C. Con agua hirviendo se controla por tiempo; con [[baja-temperatura]], por temperatura exacta. El tamaño del huevo y si sale de la nevera cambian el resultado.",
+  "what": "La clara y la yema cuajan a temperaturas distintas: la clara empieza a cuajar hacia los 62 °C y la yema algo más arriba, hacia los 65–70 °C. Con agua hirviendo se controla por tiempo; con [[baja-temperatura]], por temperatura exacta. El tamaño del huevo y si sale de la nevera cambian el resultado.",
   "method": [
    "Para cocidos, saca los huevos de la nevera con tiempo o suma 30-60 segundos si van fríos.",
    "Échalos en agua hirviendo con cuidado y cuenta desde que vuelve a hervir.",
    "Al cumplir el tiempo, pásalos a agua con hielo para cortar la cocción y pelarlos mejor.",
-   "Para escalfar, agua a 85-90 °C sin borbotones, un chorrito de vinagre opcional, y el huevo muy fresco cascado antes en un cuenco.",
+   "Para escalfar, agua a 85–90 °C sin borbotones, un chorrito de vinagre opcional, y el huevo muy fresco cascado antes en un cuenco.",
    "Escurre el escalfado sobre papel y recorta los hilos de clara."
   ],
   "ratios": [
@@ -852,12 +869,12 @@
    },
    {
     "use": "Escalfado (poché)",
-    "ratio": "3-4 minutos en agua a 85-90 °C",
+    "ratio": "3-4 minutos en agua a 85–90 °C",
     "note": "Huevo muy fresco."
    },
    {
     "use": "Huevo a baja temperatura",
-    "ratio": "63-64 °C, 45-60 minutos",
+    "ratio": "63–64 °C, 45-60 minutos",
     "note": "Clara cremosa, yema fluida."
    },
    {
@@ -870,7 +887,7 @@
    {
     "id": "baja-temperatura",
     "name": "Baja temperatura",
-    "note": "El huevo a 63-64 °C."
+    "note": "El huevo a 63–64 °C."
    },
    {
     "id": "holandesa",
@@ -896,7 +913,7 @@
    },
    {
     "p": "El escalfado se deshace",
-    "fix": "Agua hirviendo fuerte o huevo viejo. Baja a 85-90 °C y usa huevo fresco."
+    "fix": "Agua hirviendo fuerte o huevo viejo. Baja a 85–90 °C y usa huevo fresco."
    }
   ],
   "history": "Los puntos del huevo son uno de los ejercicios básicos de cualquier cocina, y la cocción a temperatura controlada ha añadido el huevo a baja temperatura a muchas cartas.",
@@ -912,7 +929,9 @@
   "related": [
    "baja-temperatura",
    "holandesa",
-   "mayonesa"
+   "mayonesa",
+   "coagulacion-de-proteinas",
+   "tortilla-y-huevos-de-brunch"
   ]
  },
  {
@@ -960,7 +979,7 @@
    },
    {
     "use": "Horno de brasa cerrado",
-    "ratio": "250-350 °C de ambiente",
+    "ratio": "250–350 °C de ambiente",
     "note": "Cuenta la mitad o un tercio del tiempo de una parrilla."
    }
   ],
@@ -1017,7 +1036,9 @@
    "punto-de-la-carne",
    "sellado-y-reposo",
    "ahumado",
-   "cortes-de-vacuno"
+   "cortes-de-vacuno",
+   "horno-de-lena",
+   "barbacoa-lenta"
   ]
  },
  {
@@ -1058,7 +1079,7 @@
    {
     "use": "Espuma caliente",
     "ratio": "Base con 2-3 yemas o 100 g de nata por cada 500 ml",
-    "note": "Mantener al baño maría a 60-65 °C."
+    "note": "Mantener al baño maría a 60–65 °C."
    },
    {
     "use": "Cargas",
@@ -1141,17 +1162,17 @@
   "ratios": [
    {
     "use": "Chips de verdura o fruta",
-    "ratio": "60-70 °C, 6-12 horas",
+    "ratio": "60–70 °C, 6-12 horas",
     "note": "En deshidratadora u horno con la puerta entreabierta."
    },
    {
     "use": "Tejas de puré",
-    "ratio": "Capa de 1-2 mm a 70-90 °C, 4-8 horas",
+    "ratio": "Capa de 1-2 mm a 70–90 °C, 4-8 horas",
     "note": "Se despegan en frío."
    },
    {
     "use": "Pieles de pescado o pollo",
-    "ratio": "Secas al horno a 150-170 °C entre dos placas",
+    "ratio": "Secas al horno a 150–170 °C entre dos placas",
     "note": "Raspadas de grasa antes."
    },
    {
@@ -1310,23 +1331,23 @@
    "Corta en piezas iguales, seca bien y aliña con aceite y sal justo antes de hornear.",
    "Reparte en una sola capa con espacio entre piezas, con la cara cortada hacia abajo.",
    "Asa sin tocar hasta que la base esté dorada, dale la vuelta y termina.",
-   "Para piezas enteras (pimiento, berenjena, cebolla, remolacha), horno a 180-200 °C hasta que estén blandas; deja reposar tapadas y pela.",
+   "Para piezas enteras (pimiento, berenjena, cebolla, remolacha), horno a 180–200 °C hasta que estén blandas; deja reposar tapadas y pela.",
    "Termina con un ácido, una hierba o un crujiente."
   ],
   "ratios": [
    {
     "use": "Raíces (zanahoria, chirivía, boniato)",
-    "ratio": "200-220 °C, 25-40 minutos",
+    "ratio": "200–220 °C, 25-40 minutos",
     "note": "Trozos de 2-3 cm."
    },
    {
     "use": "Coles (coliflor, brócoli, coles de Bruselas)",
-    "ratio": "220-230 °C, 20-30 minutos",
+    "ratio": "220–230 °C, 20-30 minutos",
     "note": "La cara cortada abajo, para tostar."
    },
    {
     "use": "Enteras (pimiento, berenjena, cebolla)",
-    "ratio": "180-200 °C, 40-60 minutos",
+    "ratio": "180–200 °C, 40-60 minutos",
     "note": "Reposo tapado 15 minutos antes de pelar."
    },
    {
@@ -1387,7 +1408,8 @@
    "glaseado-de-verduras",
    "pure-coliflor-tostada",
    "crema-berenjena-brasa",
-   "pimientos-asados-alinados"
+   "pimientos-asados-alinados",
+   "caramelizacion-de-verduras"
   ]
  },
  {
@@ -1480,7 +1502,8 @@
    "escabeche",
    "fermentacion-lactica",
    "acidez-en-cocina",
-   "salmuera"
+   "salmuera",
+   "ph-y-acidez"
   ]
  },
  {
@@ -1522,7 +1545,7 @@
     ]
    ],
    "steps": [
-    "Calienta el aceite a 170-180 °C y ten el producto seco y frío.",
+    "Calienta el aceite a 170–180 °C y ten el producto seco y frío.",
     "Bate la yema con el agua helada.",
     "Añade la harina de golpe y mezcla con palillos, pocos movimientos: deben quedar grumos.",
     "Pasa el producto por harina, sacude, mójalo en la masa y fríelo enseguida, pocas piezas cada vez.",
@@ -1533,7 +1556,7 @@
    {
     "use": "Gamba y pescado",
     "ratio": "Masa algo más espesa (160 ml de agua por 100 g)",
-    "note": "175-180 °C."
+    "note": "175–180 °C."
    },
    {
     "use": "Hojas y flores",
@@ -1592,7 +1615,8 @@
    "fritura",
    "ponzu-y-salsas-citricas",
    "dashi",
-   "deshidratados-y-crujientes"
+   "deshidratados-y-crujientes",
+   "rebozados-y-empanados"
   ]
  },
  {
@@ -1775,7 +1799,9 @@
    "ligazones",
    "esferificacion",
    "espumas-con-sifon",
-   "deshidratados-y-crujientes"
+   "deshidratados-y-crujientes",
+   "colageno-y-gelatina",
+   "gelatinizacion-de-almidones"
   ]
  },
  {
@@ -1887,15 +1913,15 @@
   "what": "En papillote el alimento se cierra en un sobre (papel, hoja de higuera, de plátano o de col) con aromáticos y un poco de líquido; en el horno, el vapor interior lo cocina y se queda con todo el aroma, que se libera al abrirlo en la mesa. Al vapor, el alimento se cocina sobre un líquido en ebullición sin tocarlo.\n\nSon cocciones ideales para pescados delicados, mariscos y verduras tiernas. El vapor puede llevar sabor: algas, hierbas, té, sarmientos.",
   "method": [
    "Papillote: corta un rectángulo de papel de horno, pon el pescado con sal, aromáticos y un chorro de vino o caldo, cierra doblando los bordes sin dejar escape.",
-   "Hornea a 190-200 °C: un lomo de 2-3 cm, 8-12 minutos; el sobre se hincha cuando hay vapor.",
+   "Hornea a 190–200 °C: un lomo de 2-3 cm, 8-12 minutos; el sobre se hincha cuando hay vapor.",
    "Abre delante del comensal para que llegue el aroma.",
    "Vapor: agua o caldo aromatizado en ebullición, el alimento en una cesta tapada sin tocar el líquido.",
-   "Controla el punto con termómetro: el pescado, a 45-50 °C en el centro."
+   "Controla el punto con termómetro: el pescado, a 45–50 °C en el centro."
   ],
   "ratios": [
    {
     "use": "Lomo de pescado en papillote",
-    "ratio": "190-200 °C, 8-12 minutos para 2-3 cm",
+    "ratio": "190–200 °C, 8-12 minutos para 2-3 cm",
     "note": "Hasta 48 °C en el centro."
    },
    {
@@ -1980,7 +2006,7 @@
    "Prepara el líquido con sal y aromáticos y llévalo a la temperatura indicada; comprueba con termómetro.",
    "Mete la pieza a temperatura ambiente o apenas fría, totalmente cubierta.",
    "Mantén el líquido sin hervir: debe temblar, no burbujear. Ajusta el fuego o aparta el cazo.",
-   "Saca por punto, no por tiempo: pescado a 45–50 °C en el centro, ave magra a 62–65 °C.",
+   "Saca por punto, no por tiempo: pescado a 45–50 °C en el centro, ave a 72–74 °C (62–65 °C solo en [[baja-temperatura]], con el tiempo de esa ficha).",
    "Escurre bien, y si el líquido tiene sabor, redúcelo y móntalo con mantequilla o aceite para la salsa."
   ],
   "ratios": [
@@ -3996,7 +4022,8 @@
    "Seco por dentro y por fuera: el agua es la enemiga.",
    "Frío estable y aire que circule.",
    "Higiene total: rejillas, ganchos y cámara limpios y dedicados.",
-   "Prueba cocinando un trozo cada día para encontrar el punto de cada especie."
+   "Prueba cocinando un trozo cada día para encontrar el punto de cada especie.",
+   "Si una pieza madurada se sirve cruda, congelación previa como en cualquier crudo."
   ],
   "errors": [
    {
@@ -5043,8 +5070,8 @@
    },
    {
     "use": "Pechuga",
-    "ratio": "62–65 °C en el centro",
-    "note": "Jugosa; reposo de 5 minutos."
+    "ratio": "72–74 °C en el centro",
+    "note": "En baja temperatura, 62–65 °C con el tiempo suficiente."
    },
    {
     "use": "Muslo",
@@ -5518,7 +5545,8 @@
    "Medir agua y arroz, no a ojo.",
    "Tapado y sin abrir hasta el reposo.",
    "Aliño en caliente, mezcla con cortes y abanico.",
-   "Enfriar rápido lo que no se sirve."
+   "Enfriar rápido lo que no se sirve.",
+   "El pescado crudo que lo acompaña, siempre congelado antes (ver crudos)."
   ],
   "errors": [
    {
@@ -5733,7 +5761,8 @@
    "Reposo de la patata en el huevo.",
    "Fuego suave para revueltos, y fuera antes de tiempo.",
    "Huevos frescos para escalfar.",
-   "Sal en el huevo justo antes de cuajar."
+   "Sal en el huevo justo antes de cuajar.",
+   "Tortillas muy jugosas y revueltos poco hechos: huevo pasteurizado cuando se sirven en volumen."
   ],
   "errors": [
    {
@@ -9220,7 +9249,7 @@
     ]
    ],
    "steps": [
-    "Confit: sala los muslos con ajo y tomillo 12–24 horas en frío; lava, seca y cúbrelos con la grasa; cuece a 85–90 °C 2,5–3 horas, hasta que la carne ceda.",
+    "Confit: sala los muslos con ajo y tomillo 12–24 horas en frío; lava, seca y cúbrelos con la grasa; cuece a 80–90 °C 4–6 horas, hasta que la carne ceda.",
     "Cuece las alubias en agua sin sal con la corteza, la panceta y los aromáticos 1–1,5 horas, hasta que estén tiernas; sala al final.",
     "Dora la salchicha y los muslos confitados.",
     "Monta en cazuela de barro capas de alubias, carnes y caldo de las alubias hasta cubrir.",
@@ -9235,7 +9264,7 @@
    },
    {
     "use": "Grasa del confit",
-    "ratio": "85–90 °C, 2,5–3 horas",
+    "ratio": "80–90 °C, 4–6 horas",
     "note": "Cubierto del todo."
    },
    {
@@ -9559,7 +9588,8 @@
    "Agua de cocción para emulsionar.",
    "Queso rallado muy fino.",
    "Poca sal en el agua.",
-   "Sin nata en las versiones clásicas."
+   "Sin nata en las versiones clásicas.",
+   "En restaurante, valora huevo pasteurizado: la salsa no pasa de 70 °C."
   ],
   "errors": [
    {
@@ -11691,7 +11721,8 @@
    "Líquido al momento de servir.",
    "Picante y ácido equilibrados con sal.",
    "Servir enseguida.",
-   "Cada cocinero, sus chiles."
+   "Cada cocinero, sus chiles.",
+   "Marisco muy fresco y de proveedor de confianza; si lo haces con pescado, congelación previa como en cualquier crudo."
   ],
   "errors": [
    {
@@ -11931,8 +11962,8 @@
    },
    {
     "use": "Cordero en kofta",
-    "ratio": "65–70 °C en el centro",
-    "note": "Jugosa."
+    "ratio": "70–72 °C en el centro",
+    "note": "Carne picada: siempre hecha por dentro."
    },
    {
     "use": "Ración",
@@ -13238,7 +13269,8 @@
    "Escurrir el bacalao para que no agüe.",
    "Probar antes de salar.",
    "Verdura en dados pequeños.",
-   "Fresca, pero no helada."
+   "Fresca, pero no helada.",
+   "Bacalao de salazón tradicional bien curado; si es un salado ligero o tienes dudas, congélalo antes por el anisakis."
   ],
   "errors": [
    {

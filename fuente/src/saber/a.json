@@ -106,14 +106,15 @@
       "Guisos y estofados"
     ],
     "keep": "Cocinado, enfriado y tapado aguanta 1-2 semanas en cámara y se congela bien en porciones. Se usa directamente desde frío sobre líquido caliente.",
-    "pro": "Para cantidad, hazlo en el horno: bandeja con grasa y harina a 170-180 °C, removiendo cada 10 minutos, hasta el color buscado. Porciónalo frío en bloques de 60-100 g etiquetados: ligazón inmediata en el pase, añadido a trozos al líquido hirviendo.",
+    "pro": "Para cantidad, hazlo en el horno: bandeja con grasa y harina a 170–180 °C, removiendo cada 10 minutos, hasta el color buscado. Porciónalo frío en bloques de 60-100 g etiquetados: ligazón inmediata en el pase, añadido a trozos al líquido hirviendo.",
     "related": [
       "ligazones",
       "bechamel",
       "veloute",
       "espanola",
       "fondo-blanco",
-      "fondo-oscuro"
+      "fondo-oscuro",
+      "gelatinizacion-de-almidones"
     ]
   },
   {
@@ -171,7 +172,7 @@
       {
         "use": "Yema y nata",
         "ratio": "2-3 yemas + 100-200 ml de nata por litro",
-        "note": "Templar antes; no pasar de 80-85 °C y no volver a hervir."
+        "note": "Templar antes; no pasar de 80–85 °C y no volver a hervir."
       },
       {
         "use": "Gelatina",
@@ -181,7 +182,7 @@
       {
         "use": "Agar",
         "ratio": "1-2 g/l gel blando; 3-5 g/l firme",
-        "note": "Hervir 1-2 minutos; cuaja hacia 35-40 °C y aguanta templado."
+        "note": "Hervir 1-2 minutos; cuaja hacia 35–40 °C y aguanta templado."
       },
       {
         "use": "Goma xantana",
@@ -239,7 +240,7 @@
       "Glaseados",
       "Gelatinas y fondos fríos"
     ],
-    "keep": "Lo ligado con harina regenera bien a fuego suave con un poco de líquido; con maicena o fécula puede soltar agua al día siguiente o al congelar. Con yema o mantequilla, nunca a hervor: baño maría a 60-70 °C.",
+    "keep": "Lo ligado con harina regenera bien a fuego suave con un poco de líquido; con maicena o fécula puede soltar agua al día siguiente o al congelar. Con yema o mantequilla, nunca a hervor: baño maría a 60–70 °C.",
     "pro": "Ten en el pase roux en bloque, maicena pesada y mantequilla fría en dados: con eso corriges cualquier salsa en un minuto. Deja el último punto (mantequilla, yema) para el momento de servir.",
     "related": [
       "roux",
@@ -248,7 +249,8 @@
       "picada",
       "glace",
       "alemana",
-      "beurre-blanc"
+      "beurre-blanc",
+      "gelatinizacion-de-almidones"
     ]
   },
   {
@@ -372,13 +374,15 @@
       "Base de soufflé"
     ],
     "keep": "Abatir rápido (por debajo de 10 °C en menos de 2 horas) con film en contacto; 3-4 días en cámara. Regenerar a fuego suave con un chorrito de leche, batiendo. Se congela, aunque puede quedar algo granulosa: tritúrala al regenerar. La masa de croquetas formada y empanada congela muy bien.",
-    "pro": "En lotes grandes, cazo ancho de fondo grueso y leche caliente; para croquetas, extiende la masa en bandeja GN con film en contacto y abate. En el pase, baño maría a 65-70 °C tapada, corrigiendo con leche caliente.",
+    "pro": "En lotes grandes, cazo ancho de fondo grueso y leche caliente; para croquetas, extiende la masa en bandeja GN con film en contacto y abate. En el pase, baño maría a 65–70 °C tapada, corrigiendo con leche caliente.",
     "related": [
       "roux",
       "mornay",
       "soubise",
       "ligazones",
-      "veloute"
+      "veloute",
+      "croquetas",
+      "canelones-de-asado"
     ]
   },
   {
@@ -422,7 +426,7 @@
         "Fuera del fuego, añade el queso rallado y remueve hasta que se funda; si hace falta, devuelve al fuego muy bajo sin que hierva.",
         "Si lleva yemas, témplalas con un cazo de salsa y luego incorpóralas al conjunto; ya no debe hervir.",
         "Termina con la mantequilla en dados, ajusta sal al final (el queso ya sala) y un punto de cayena.",
-        "Napa el género y gratina con el grill fuerte o el horno a 220-250 °C hasta dorar."
+        "Napa el género y gratina con el grill fuerte o el horno a 220–250 °C hasta dorar."
       ]
     },
     "ratios": [
@@ -503,7 +507,7 @@
       "Sándwich caliente de jamón y queso"
     ],
     "keep": "Abatir con film en contacto; 2-3 días en cámara (con yemas, mejor consumir en 48 horas). Regenerar a fuego muy suave o al baño maría con un poco de leche, sin hervir. No conviene congelarla con yemas.",
-    "pro": "Ten bechamel base en lote y termina la mornay en la cantidad del servicio. Mantenla al baño maría a 60-65 °C tapada; si va con yemas, prepara solo lo del turno. Para gratinar en cantidad, napa en frío y pasa a horno muy caliente.",
+    "pro": "Ten bechamel base en lote y termina la mornay en la cantidad del servicio. Mantenla al baño maría a 60–65 °C tapada; si va con yemas, prepara solo lo del turno. Para gratinar en cantidad, napa en frío y pasa a horno muy caliente.",
     "related": [
       "bechamel",
       "roux",
@@ -628,7 +632,7 @@
       "Puré de guarnición"
     ],
     "keep": "3-4 días en cámara, abatida y con film en contacto. Regenerar a fuego suave con un poco de nata o leche. Congela razonablemente bien; tritura al regenerar.",
-    "pro": "El pochado lento de la cebolla se puede hacer en lote en horno a 140-150 °C, tapado, en bandeja GN. Guarda la base de cebolla pochada y termina con bechamel y nata según el servicio. Baño maría a 65 °C tapada.",
+    "pro": "El pochado lento de la cebolla se puede hacer en lote en horno a 140–150 °C, tapado, en bandeja GN. Guarda la base de cebolla pochada y termina con bechamel y nata según el servicio. Baño maría a 65 °C tapada.",
     "related": [
       "bechamel",
       "roux",
@@ -762,7 +766,7 @@
       "Base de cremas"
     ],
     "keep": "Abatida y con film en contacto, 3-4 días en cámara; la de pescado, 2 días. Congela bien en porciones. Regenera a fuego suave con un poco de fondo.",
-    "pro": "Prepara la velouté base en lote y termina cada derivada al pase. Mantén al baño maría a 65-70 °C tapada. Para servicio de banquete, ten preparado fondo reducido caliente para corregir la textura en el último momento.",
+    "pro": "Prepara la velouté base en lote y termina cada derivada al pase. Mantén al baño maría a 65–70 °C tapada. Para servicio de banquete, ten preparado fondo reducido caliente para corregir la textura en el último momento.",
     "related": [
       "fondo-blanco",
       "fumet",
@@ -893,7 +897,7 @@
       "Mollejas"
     ],
     "keep": "2-3 días en cámara, abatida. Regenerar a fuego suave con un poco de fondo y volver a montar con mantequilla. No se recomienda congelar ya terminada; mejor congelar la base sin mantequilla.",
-    "pro": "Ten la base reducida con nata en lote y monta con mantequilla solo lo de cada servicio. Mantén en baño maría a 60-65 °C tapada. Para banquetes, hazla un poco más fluida: en el baño maría espesa.",
+    "pro": "Ten la base reducida con nata en lote y monta con mantequilla solo lo de cada servicio. Mantén en baño maría a 60–65 °C tapada. Para banquetes, hazla un poco más fluida: en el baño maría espesa.",
     "related": [
       "veloute",
       "fondo-blanco",
@@ -946,7 +950,7 @@
         "Reduce el velouté con el jugo de champiñón hasta que nape ligeramente.",
         "Mezcla las yemas con la nata en un bol.",
         "Tempera las yemas con un cazo de salsa caliente, batiendo.",
-        "Vierte la mezcla en el cazo y calienta a fuego suave removiendo, sin que hierva, hasta que espese (unos 80-85 °C).",
+        "Vierte la mezcla en el cazo y calienta a fuego suave removiendo, sin que hierva, hasta que espese (unos 80–85 °C).",
         "Cuela, termina con la mantequilla, el limón y una pizca de nuez moscada, y ajusta de sal."
       ]
     },
@@ -1018,7 +1022,7 @@
       "Volovanes"
     ],
     "keep": "Por llevar yema, consumir en 24-48 horas en cámara. Regenerar al baño maría sin pasar de 70 °C, batiendo. No se recomienda congelar.",
-    "pro": "Prepara el velouté reducido en lote y liga con yemas solo la cantidad del servicio. Mantén al baño maría a 60-65 °C tapada y desecha lo sobrante al final del turno.",
+    "pro": "Prepara el velouté reducido en lote y liga con yemas solo la cantidad del servicio. Mantén al baño maría a 60–65 °C tapada y desecha lo sobrante al final del turno.",
     "related": [
       "veloute",
       "suprema",
@@ -1155,7 +1159,8 @@
       "roux",
       "mirepoix",
       "bouquet-garni",
-      "salsa-de-tomate"
+      "salsa-de-tomate",
+      "salsas-de-vino"
     ]
   },
   {
@@ -1282,13 +1287,14 @@
       "Glasear piezas"
     ],
     "keep": "Abatida, 1 semana en cámara. Congela muy bien en cubiteras o bolsas pequeñas durante meses. Regenerar a fuego suave.",
-    "pro": "Es mise en place básica: tenla congelada en porciones de 100-250 ml. Para servicio, hazla en un cazo pequeño al baño maría a 70-80 °C y monta cada salsa al momento con mantequilla. Etiqueta con fecha y lote.",
+    "pro": "Es mise en place básica: tenla congelada en porciones de 100-250 ml. Para servicio, hazla en un cazo pequeño al baño maría a 70–80 °C y monta cada salsa al momento con mantequilla. Etiqueta con fecha y lote.",
     "related": [
       "espanola",
       "fondo-oscuro",
       "glace",
       "jugo-de-carne",
-      "reducciones"
+      "reducciones",
+      "salsas-de-vino"
     ]
   },
   {
@@ -1433,7 +1439,7 @@
       "Base de salsas y arroces"
     ],
     "keep": "Abatida, 5 días en cámara. Congela muy bien. En conserva, en tarros esterilizados y con tratamiento térmico adecuado. Regenerar a fuego suave.",
-    "pro": "Se hace en grandes lotes en marmita o en horno a 160-170 °C en bandeja GN destapada, removiendo cada 20 minutos: reduce sin pegarse. Porciona y congela. Etiqueta con fecha.",
+    "pro": "Se hace en grandes lotes en marmita o en horno a 160–170 °C en bandeja GN destapada, removiendo cada 20 minutos: reduce sin pegarse. Porciona y congela. Etiqueta con fecha.",
     "related": [
       "sofrito",
       "salsa-vizcaina",
@@ -1452,7 +1458,7 @@
     "cat": "salsas",
     "group": "Emulsiones calientes",
     "summary": "Emulsión caliente de yemas y mantequilla, acidulada con limón; para huevos, espárragos y pescado.",
-    "what": "Es una de las grandes [[emulsiones]] calientes: yemas cocinadas hasta formar un sabayón y montadas con mantequilla clarificada o fundida, con limón o una reducción ácida. Se mantiene estable solo en una franja de temperatura estrecha, en torno a 60-65 °C. De ella derivan la muselina y la maltesa, y es hermana de la [[bearnesa]].",
+    "what": "Es una de las grandes [[emulsiones]] calientes: yemas cocinadas hasta formar un sabayón y montadas con mantequilla clarificada o fundida, con limón o una reducción ácida. Se mantiene estable solo en una franja de temperatura estrecha, en torno a 60–65 °C. De ella derivan la muselina y la maltesa, y es hermana de la [[bearnesa]].",
     "base": {
       "for": "400 g aproximado (8-10 raciones)",
       "items": [
@@ -1465,7 +1471,7 @@
           "40 ml"
         ],
         [
-          "Mantequilla clarificada templada (50-60 °C)",
+          "Mantequilla clarificada templada (50–60 °C)",
           "250 g"
         ],
         [
@@ -1480,7 +1486,7 @@
       "steps": [
         "Si usas reducción, reduce el vinagre con agua y pimienta machacada a 2-3 cucharadas, cuélala y enfríala.",
         "En un bol al baño maría (el agua sin hervir), bate las yemas con el agua o la reducción.",
-        "Cocina batiendo hasta que espesen, hagan cordón y lleguen a 60-65 °C. Retira del baño si se calientan demasiado.",
+        "Cocina batiendo hasta que espesen, hagan cordón y lleguen a 60–65 °C. Retira del baño si se calientan demasiado.",
         "Fuera del fuego, añade la mantequilla templada en hilo fino, batiendo sin parar, hasta emulsionar.",
         "Ajusta con limón, sal y cayena. Si queda muy espesa, aligera con unas gotas de agua templada."
       ]
@@ -1509,7 +1515,7 @@
       {
         "use": "En sifón",
         "ratio": "Holandesa más fluida, 1 carga de N2O por 500 ml",
-        "note": "Mantener al baño a 60-65 °C."
+        "note": "Mantener al baño a 60–65 °C."
       }
     ],
     "variants": [
@@ -1535,7 +1541,7 @@
       }
     ],
     "keys": [
-      "La temperatura lo es todo: yemas a 60-65 °C; por encima de 70 °C cuajan y se granula.",
+      "La temperatura lo es todo: yemas a 60–65 °C; por encima de 70 °C cuajan y se granula.",
       "Mantequilla clarificada da una salsa más espesa y estable; fundida entera, más sabor y más fluida.",
       "Añade la mantequilla al principio gota a gota; cuando la emulsión arranca, ya en hilo.",
       "Usa yemas pasteurizadas en servicio a colectividades o banquetes.",
@@ -1567,14 +1573,15 @@
       "Verduras al vapor",
       "Gratinados rápidos de salamandra"
     ],
-    "keep": "Se mantiene al baño maría a 60-65 °C un máximo de 2 horas y lo sobrante se desecha. No se abate ni se guarda. En sifón y en baño termostático a 62-64 °C aguanta todo el servicio con buena textura.",
+    "keep": "Se mantiene al baño maría a 60–65 °C un máximo de 2 horas y lo sobrante se desecha. No se abate ni se guarda. En sifón y en baño termostático a 62–64 °C aguanta todo el servicio con buena textura.",
     "pro": "Para servicio largo, hazla en sifón y mantenla al baño a temperatura controlada. Tener la mantequilla clarificada ya en mise en place y las yemas pasteurizadas acelera el pase. Haz pequeños lotes por turno.",
     "related": [
       "emulsiones",
       "bearnesa",
       "beurre-blanc",
       "mayonesa",
-      "alemana"
+      "alemana",
+      "emulsiones-al-momento"
     ]
   },
   {
@@ -1616,7 +1623,7 @@
           "4"
         ],
         [
-          "Mantequilla clarificada templada (50-60 °C)",
+          "Mantequilla clarificada templada (50–60 °C)",
           "250 g"
         ],
         [
@@ -1627,7 +1634,7 @@
       "steps": [
         "Reduce el vinagre, el vino, la chalota, los tallos de estragón y la pimienta hasta que queden 2-3 cucharadas de líquido.",
         "Cuela apretando bien o, si la prefieres rústica, deja la chalota; deja templar.",
-        "Bate las yemas con la reducción al baño maría hasta que espesen y lleguen a 60-65 °C.",
+        "Bate las yemas con la reducción al baño maría hasta que espesen y lleguen a 60–65 °C.",
         "Fuera del fuego, añade la mantequilla templada en hilo, batiendo sin parar.",
         "Termina con el estragón y el perifollo picados, sal y cayena."
       ]
@@ -1709,7 +1716,7 @@
       "Huevos escalfados",
       "Cordero (paloise)"
     ],
-    "keep": "Al baño maría a 60-65 °C un máximo de 2 horas; lo sobrante se desecha. La reducción aromática sí se guarda: 1 semana en cámara o congelada en cubiteras.",
+    "keep": "Al baño maría a 60–65 °C un máximo de 2 horas; lo sobrante se desecha. La reducción aromática sí se guarda: 1 semana en cámara o congelada en cubiteras.",
     "pro": "Ten la reducción ya hecha y colada en mise en place (en cubiteras congeladas dura semanas). Monta en sifón o en bol al baño maría por turno. Hierbas picadas al momento.",
     "related": [
       "holandesa",
@@ -1763,7 +1770,7 @@
         "Reduce la chalota con el vino y el vinagre hasta que queden unas 2 cucharadas de líquido, casi a seco.",
         "Si usas nata, añádela y reduce 1 minuto.",
         "A fuego muy suave, incorpora la mantequilla fría en dados, poco a poco, batiendo sin parar. Cada dado debe deshacerse antes de añadir el siguiente.",
-        "La salsa nunca debe hervir; mantenla alrededor de 55-60 °C.",
+        "La salsa nunca debe hervir; mantenla alrededor de 55–60 °C.",
         "Sala, cuela si la quieres fina y sirve enseguida."
       ]
     },
@@ -1813,7 +1820,7 @@
     ],
     "keys": [
       "La mantequilla debe estar fría: si está blanda, se funde sin emulsionar.",
-      "Temperatura de servicio 55-60 °C. Por encima de 65 °C se separa; por debajo de 35 °C cuaja.",
+      "Temperatura de servicio 55–60 °C. Por encima de 65 °C se separa; por debajo de 35 °C cuaja.",
       "La reducción tiene que estar casi a seco; con mucho líquido no emulsiona bien.",
       "Una cucharada de nata en la reducción da margen de error.",
       "Sírvela recién hecha o mantenla al baño maría tibio, nunca en fuego directo."
@@ -1840,14 +1847,15 @@
       "Espárragos y verduras",
       "Ravioli de pescado"
     ],
-    "keep": "Al baño maría a 55-60 °C durante el servicio. No se guarda de un día para otro: si se enfría, cuaja y al recalentar se separa. La reducción sí se puede preparar y guardar 2-3 días.",
+    "keep": "Al baño maría a 55–60 °C durante el servicio. No se guarda de un día para otro: si se enfría, cuaja y al recalentar se separa. La reducción sí se puede preparar y guardar 2-3 días.",
     "pro": "Prepara la reducción de antemano y monta la mantequilla por turno. Para servicio largo, añade nata y mantenla en termo o baño maría a temperatura controlada. Ten mantequilla fría a mano para corregir.",
     "related": [
       "emulsiones",
       "holandesa",
       "reducciones",
       "fumet",
-      "mantequillas-compuestas"
+      "mantequillas-compuestas",
+      "salsas-citricas-para-pescado"
     ]
   },
   {
@@ -2733,8 +2741,8 @@
       },
       {
         "use": "Pechuga de ave",
-        "ratio": "62–65 °C con reposo",
-        "note": "Jugosa."
+        "ratio": "72–74 °C",
+        "note": "62–65 °C solo en baja temperatura, con tiempo suficiente."
       },
       {
         "use": "Pescado blanco",

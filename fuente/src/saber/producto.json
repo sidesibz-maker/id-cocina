@@ -125,7 +125,10 @@
    "sofrito",
    "fumet",
    "fondo-de-marisco",
-   "alioli"
+   "alioli",
+   "bullit-de-peix",
+   "risotto-y-arroces-cremosos",
+   "caldero"
   ]
  },
  {
@@ -438,7 +441,7 @@
   "method": [
    "Elige piezas grandes, con hueso y buena cobertura de grasa (lomo alto o lomo bajo enteros).",
    "Colócalas en rejilla, con aire alrededor, en cámara propia o en una zona que no se abra continuamente.",
-   "Mantén unos 1-3 °C, humedad del 75-85 % y ventilación constante.",
+   "Mantén unos 1–3 °C, humedad del 75-85 % y ventilación constante.",
    "Revisa y anota el peso y el aspecto cada semana.",
    "Al usarla, recorta la costra seca y raciona al momento."
   ],
@@ -588,7 +591,8 @@
   "related": [
    "adobo",
    "aceites-aromatizados",
-   "marinada"
+   "marinada",
+   "curry-y-guisos-especiados"
   ]
  },
  {
@@ -720,12 +724,12 @@
    },
    {
     "use": "Freír",
-    "ratio": "Aceite de oliva a 170-180 °C",
+    "ratio": "Aceite de oliva a 170–180 °C",
     "note": "Ver la fritura."
    },
    {
     "use": "Confitar",
-    "ratio": "Aceite suave a 60-90 °C según el producto",
+    "ratio": "Aceite suave a 60–90 °C según el producto",
     "note": "Ver el confitado."
    }
   ],
@@ -782,7 +786,8 @@
    "mayonesa",
    "fritura",
    "confitado",
-   "aceites-aromatizados"
+   "aceites-aromatizados",
+   "grasas-punto-de-humo-y-oxidacion"
   ]
  },
  {
@@ -873,7 +878,8 @@
   "related": [
    "umami-y-fondo",
    "deshidratados-y-crujientes",
-   "hierbas-frescas"
+   "hierbas-frescas",
+   "salsa-de-setas"
   ]
  },
  {
@@ -896,12 +902,12 @@
    "Quita las hojas exteriores hasta que salgan pálidas y tiernas; corta la punta.",
    "Pela el tallo con puntilla y redondea la base.",
    "Abre por la mitad y retira la pelusa con una cucharilla si la tiene; al agua acidulada enseguida.",
-   "Cocina según el uso: confitada en aceite a 85-90 °C, a la brasa tras un escaldado corto, o frita en láminas."
+   "Cocina según el uso: confitada en aceite a 85–90 °C, a la brasa tras un escaldado corto, o frita en láminas."
   ],
   "ratios": [
    {
     "use": "Confitada",
-    "ratio": "Aceite a 85-90 °C, 20-30 minutos",
+    "ratio": "Aceite a 85–90 °C, 20-30 minutos",
     "note": "Hasta que entre la puntilla sin esfuerzo."
    },
    {
@@ -911,7 +917,7 @@
    },
    {
     "use": "Frita en láminas",
-    "ratio": "Láminas de 2 mm, secas, a 160-170 °C",
+    "ratio": "Láminas de 2 mm, secas, a 160–170 °C",
     "note": "Escurrir y salar al momento."
    },
    {
@@ -1001,7 +1007,7 @@
    },
    {
     "use": "Pulpo a baja temperatura",
-    "ratio": "77-80 °C, 4-6 horas al vacío",
+    "ratio": "77–80 °C, 4-6 horas al vacío",
     "note": "Muy tierno y entero."
    },
    {
@@ -1061,7 +1067,9 @@
    "coccion-de-marisco",
    "fuego-y-brasa",
    "baja-temperatura",
-   "arroces"
+   "arroces",
+   "pulpo-a-feira",
+   "txipirones-en-su-tinta"
   ]
  },
  {
@@ -1157,7 +1165,8 @@
   "related": [
    "baja-temperatura",
    "fuego-y-brasa",
-   "acidez-en-cocina"
+   "acidez-en-cocina",
+   "callos"
   ]
  },
  {
@@ -1252,7 +1261,8 @@
    "salmuera",
    "curado-de-pescado",
    "acidez-en-cocina",
-   "especias"
+   "especias",
+   "sal-y-osmosis"
   ]
  },
  {
@@ -1273,7 +1283,7 @@
   "what": "La almendra da cuerpo, grasa y un sabor dulce y tostado. Cruda aporta frescor lácteo (ajoblanco, leches); tostada, profundidad (picada, romesco, pralinés). La almendra verde, en primavera, se come tierna. Es un producto del campo mediterráneo y de la isla, con mucha presencia en la repostería tradicional.",
   "method": [
    "Escalda en agua hirviendo un minuto para pelarlas fácilmente si las necesitas sin piel.",
-   "Tuesta al horno a 160-170 °C, 8-12 minutos, moviendo a mitad, hasta que huelan y se doren por dentro.",
+   "Tuesta al horno a 160–170 °C, 8-12 minutos, moviendo a mitad, hasta que huelan y se doren por dentro.",
    "Para leche de almendra, remoja la cruda 8-12 horas, tritura con agua y cuela.",
    "Para praliné, carameliza azúcar, mezcla con almendra tostada, enfría y tritura hasta pasta.",
    "Para picada, maja la almendra tostada con ajo, pan frito y perejil."
@@ -1442,7 +1452,9 @@
    "fumet",
    "arroces",
    "pescado-entero",
-   "sofrito"
+   "sofrito",
+   "bullit-de-peix",
+   "bullabesa"
   ]
  },
  {
@@ -1627,7 +1639,9 @@
    "pescado-de-roca",
    "acidez-en-cocina",
    "ponzu-y-salsas-citricas",
-   "pescado-entero"
+   "pescado-entero",
+   "aguachile",
+   "cadena-de-frio"
   ]
  },
  {
@@ -1649,14 +1663,14 @@
    "Saca el magret de la cámara 20 minutos antes. Haz cortes en rombo en la piel sin llegar a la carne.",
    "Pon la pechuga por la piel en sartén fría y sube a fuego medio-bajo; ve retirando la grasa.",
    "Cuando la piel esté dorada y fina (8-12 minutos), dale la vuelta 1-2 minutos.",
-   "Reposa 5-8 minutos y corta en lonchas; el punto ideal está en 54-57 °C en el centro.",
-   "Para los muslos, sala 12 horas, lava, seca y confita en su grasa a 85-90 °C, 3-4 horas, hasta que se separen del hueso."
+   "Reposa 5-8 minutos y corta en lonchas; el punto ideal está en 54–57 °C en el centro.",
+   "Para los muslos, sala 12 horas, lava, seca y confita en su grasa a 80–90 °C, 4–6 horas, hasta que se separen del hueso."
   ],
   "ratios": [
    {
     "use": "Magret rosado",
-    "ratio": "54-57 °C en el centro",
-    "note": "Tras el reposo sube 2-3 °C."
+    "ratio": "54–57 °C en el centro",
+    "note": "Tras el reposo sube 2–3 °C."
    },
    {
     "use": "Sal para confitar muslos",
@@ -1665,7 +1679,7 @@
    },
    {
     "use": "Confit",
-    "ratio": "85-90 °C, 3-4 horas, cubierto de grasa",
+    "ratio": "80–90 °C, 4–6 horas, cubierto de grasa",
     "note": "Hasta que el hueso salga solo."
    }
   ],
@@ -1716,7 +1730,8 @@
    "punto-de-la-carne",
    "sellado-y-reposo",
    "higos-y-algarroba",
-   "cordero"
+   "cordero",
+   "cassoulet-y-confit"
   ]
  },
  {
@@ -1737,20 +1752,20 @@
   "what": "El cordero lechal (que solo ha tomado leche) es tierno y de sabor suave; el recental y el pascual tienen más carne y más sabor. Las piezas nobles (costillar, lomo, pierna) se cocinan al punto; las de trabajo (paletilla, cuello, falda) piden horas, a horno suave, guisadas o en baja temperatura.\n\nEn una cocina de brasa es una de las carnes que mejor agradece el fuego, con hierbas mediterráneas, ajo y algo ácido.",
   "method": [
    "Sala con tiempo: las piezas grandes, la víspera; las chuletas, justo antes.",
-   "Para costillar o chuletas: brasa o sartén fuerte, por la grasa primero, hasta 56-58 °C en el centro y reposo.",
-   "Para paletilla asada: horno a 150-160 °C con un fondo de agua, vino y ajos, 2-3 horas, regando; sube a 200 °C al final para dorar.",
-   "Para cuello y falda: guiso o baja temperatura (70-80 °C, 12-24 horas) y terminar en brasa o sartén.",
+   "Para costillar o chuletas: brasa o sartén fuerte, por la grasa primero, hasta 56–58 °C en el centro y reposo.",
+   "Para paletilla asada: horno a 150–160 °C con un fondo de agua, vino y ajos, 2-3 horas, regando; sube a 200 °C al final para dorar.",
+   "Para cuello y falda: guiso o baja temperatura (70–80 °C, 12-24 horas) y terminar en brasa o sartén.",
    "Usa los huesos y recortes para un jugo que acompañe."
   ],
   "ratios": [
    {
     "use": "Costillar rosado",
-    "ratio": "56-58 °C en el centro",
+    "ratio": "56–58 °C en el centro",
     "note": "Reposo 5-10 minutos."
    },
    {
     "use": "Paletilla de lechal asada",
-    "ratio": "150-160 °C, 2-2,5 horas",
+    "ratio": "150–160 °C, 2-2,5 horas",
     "note": "Más tiempo si es pascual."
    },
    {
@@ -1807,7 +1822,8 @@
    "baja-temperatura",
    "fuego-y-brasa",
    "jugo-de-carne",
-   "pato"
+   "pato",
+   "kebab-y-pinchos"
   ]
  },
  {
@@ -1903,7 +1919,9 @@
    "caldo-de-verduras",
    "sofrito",
    "especias",
-   "miso-y-koji"
+   "miso-y-koji",
+   "fabada-y-potajes",
+   "cocido"
   ]
  },
  {
@@ -1976,7 +1994,7 @@
    },
    {
     "p": "Bacalao fibroso",
-    "fix": "Cocción fuerte. Confítalo o cuécelo a 60-65 °C."
+    "fix": "Cocción fuerte. Confítalo o cuécelo a 60–65 °C."
    }
   ],
   "history": "Salar el pescado es una de las formas de conservar más antiguas del Mediterráneo: fenicios y romanos ya comerciaban con salazones del sur peninsular, de donde vienen la mojama y la botarga.",
@@ -1993,7 +2011,8 @@
    "sal-y-flor-de-sal",
    "almendra",
    "umami-y-fondo",
-   "pescado-entero"
+   "pescado-entero",
+   "bagna-cauda-y-salsas-de-anchoa"
   ]
  },
  {
@@ -2016,7 +2035,7 @@
   "method": [
    "Pon el ave en salmuera al 5-6 % (en frío) de 4 a 12 horas según tamaño, o sálala en seco la víspera y déjala destapada en la cámara para secar la piel.",
    "Para asar entera, ábrela en mariposa (quita el espinazo) y aplánala.",
-   "Horno a 200-220 °C hasta que la pechuga llegue a 63-65 °C y el muslo a 75-80 °C.",
+   "Horno a 200–220 °C hasta que la pechuga llegue a 72–74 °C y el muslo a 75–80 °C.",
    "Reposa 10-15 minutos antes de trinchar.",
    "Con los huesos y la carcasa, haz un fondo o un jugo."
   ],
@@ -2028,12 +2047,12 @@
    },
    {
     "use": "Pechuga jugosa",
-    "ratio": "63-65 °C en el centro",
-    "note": "Con producto de confianza; para mantener o regenerar, 70 °C a corazón."
+    "ratio": "72–74 °C en el centro",
+    "note": "62–65 °C solo en baja temperatura, con el tiempo de su ficha; para mantener o regenerar, 70 °C a corazón."
    },
    {
     "use": "Muslo",
-    "ratio": "75-80 °C a corazón",
+    "ratio": "75–80 °C a corazón",
     "note": "Aguanta más: el colágeno necesita calor."
    }
   ],
@@ -2059,7 +2078,7 @@
   "errors": [
    {
     "p": "Pechuga seca",
-    "fix": "Pasada de temperatura. Saca a 63-65 °C y usa salmuera."
+    "fix": "Pasada de temperatura. Saca a 72–74 °C y usa salmuera, o cocínala en baja temperatura."
    },
    {
     "p": "Muslo rosado junto al hueso",
@@ -2086,7 +2105,8 @@
    "sellado-y-reposo",
    "fondo-blanco",
    "pato",
-   "escabeche"
+   "escabeche",
+   "despiece-de-aves"
   ]
  },
  {
@@ -2176,7 +2196,8 @@
    "mornay",
    "bechamel",
    "umami-y-fondo",
-   "flao"
+   "flao",
+   "quesos-de-las-islas"
   ]
  },
  {
@@ -2292,8 +2313,8 @@
    "En crudo: corta, sala 10 minutos antes de servir y termina con aceite.",
    "Para pelar, haz un corte en cruz, escalda 10-15 segundos y pasa a agua con hielo.",
    "Agua de tomate: tritura con sal, cuelga en un paño en frío 12 horas sin apretar y recoge el líquido claro.",
-   "Confitado: mitades con ajo y tomillo, aceite y sal, horno a 100-110 °C 2-3 horas.",
-   "Seco: mitades saladas a 70-80 °C con ventilador 6-10 horas, o al sol con cuidado."
+   "Confitado: mitades con ajo y tomillo, aceite y sal, horno a 100–110 °C 2-3 horas.",
+   "Seco: mitades saladas a 70–80 °C con ventilador 6-10 horas, o al sol con cuidado."
   ],
   "ratios": [
    {
@@ -2303,12 +2324,12 @@
    },
    {
     "use": "Tomate confitado",
-    "ratio": "100-110 °C, 2-3 horas",
+    "ratio": "100–110 °C, 2-3 horas",
     "note": "Cubierto a medias de aceite."
    },
    {
     "use": "Tomate seco",
-    "ratio": "70-80 °C, 6-10 horas",
+    "ratio": "70–80 °C, 6-10 horas",
     "note": "Según grosor; flexible, no crujiente."
    }
   ],
@@ -2360,7 +2381,9 @@
    "sofrito",
    "umami-y-fondo",
    "cocina-ibicenca",
-   "deshidratados-y-crujientes"
+   "deshidratados-y-crujientes",
+   "gazpacho-y-salmorejo",
+   "salsa-vierge"
   ]
  },
  {
@@ -2923,12 +2946,12 @@
   "ratios": [
    {
     "use": "Presa",
-    "ratio": "58–62 °C en el centro",
+    "ratio": "62–65 °C en el centro",
     "note": "Rosada y jugosa; reposo de 5–8 minutos."
    },
    {
     "use": "Pluma",
-    "ratio": "60–62 °C en el centro",
+    "ratio": "62–65 °C en el centro",
     "note": "Pieza fina: pocos minutos por lado."
    },
    {
@@ -3127,7 +3150,7 @@
    "Sala las piezas grandes con antelación (la víspera o unas horas antes) y las chuletillas justo antes de cocinar.",
    "Paletilla o pierna: horno a 150–160 °C sobre un fondo de agua, vino blanco, ajos y hierbas, tapado los primeros tres cuartos del tiempo y regando.",
    "Destapa al final y sube a 200–210 °C para dorar la piel, regando con el jugo.",
-   "Chuletillas: brasa viva, poco tiempo, hasta 58–60 °C; reposo breve.",
+   "Chuletillas: brasa viva, poco tiempo, hasta 56–58 °C; reposo breve.",
    "Con los huesos y recortes, tostados, haz un [[jugo-de-carne|jugo]] para terminar."
   ],
   "ratios": [
@@ -3138,7 +3161,7 @@
    },
    {
     "use": "Chuletillas",
-    "ratio": "58–60 °C en el centro",
+    "ratio": "56–58 °C en el centro",
     "note": "Brasa viva, 1–2 minutos por lado."
    },
    {
@@ -3526,7 +3549,9 @@
    "asado-de-verduras",
    "miso-y-koji",
    "fritura",
-   "salsa-yogur-limon"
+   "salsa-yogur-limon",
+   "tumbet",
+   "parmigiana"
   ]
  },
  {
@@ -3970,7 +3995,8 @@
    "salazones-y-huevas",
    "curado-de-pescado",
    "pescado-entero",
-   "alioli"
+   "alioli",
+   "esqueixada-y-empedrat"
   ]
  },
  {
@@ -4110,7 +4136,7 @@
   "ratios": [
    {
     "use": "Chuleta de 4–5 cm",
-    "ratio": "48–52 °C en el centro",
+    "ratio": "50–52 °C en el centro",
     "note": "Al estilo de asador: rojo y templado."
    },
    {
@@ -4656,7 +4682,7 @@
    },
    {
     "use": "Ajo confitado",
-    "ratio": "Aceite a 90–100 °C, 40–60 minutos",
+    "ratio": "Aceite a 80–90 °C, 30–40 minutos",
     "note": "Burbujeo muy suave; guardar en frío."
    },
    {
