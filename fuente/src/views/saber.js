@@ -22,7 +22,7 @@ const SHELF = {
  tecnicas: ['flame', t('Fuego y brasa, punto de la carne, baja temperatura, confitado, fritura, curado, fermentación, ahumado, espumas y crujientes.', 'Fire and embers, meat doneness, low temperature, confit, frying, curing, fermentation, smoking, foams and crisps.')],
  dulce: ['star', t('Cremas, merengues, caramelo, ganache, helados, masas quebradas, pasta fresca y masa madre.', 'Creams, meringues, caramel, ganache, ice cream, shortcrust, fresh pasta and sourdough.')],
  producto: ['box', t('Arroces, marisco, pescado, cortes de vacuno, maduración, especias, hierbas y aceite de oliva.', 'Rice, shellfish, fish, beef cuts, dry-ageing, spices, herbs and olive oil.')],
- creatividad: ['spark', t('Construir un plato, contraste, acidez, umami, ritmo de un menú y cómo contar un plato.', 'Building a dish, contrast, acidity, umami, pacing a menu and describing a dish.')],
+ creatividad: ['spark', t('Construir un plato, contraste, acidez, umami, ritmo de un menú, contar un plato, maridaje sin alcohol y cocina ibicenca.', 'Building a dish, contrast, acidity, umami, pacing a menu, describing a dish, non-alcoholic pairing and Ibizan cooking.')],
  fondos: ['pan', t('Fondos claros y oscuros, fumets, jugos, glasas y consomés.', 'Light and dark stocks, fish stocks, jus, glazes and consommés.')],
  bases: ['leaf', t('Sofritos, picadas, aromáticos, salmueras, marinadas y aliños.', 'Sofritos, picadas, aromatics, brines, marinades and dressings.')],
  conceptos: ['spark', t('Roux, ligazones y emulsiones: el porqué de las cosas.', 'Roux, thickeners and emulsions: why things work.')],

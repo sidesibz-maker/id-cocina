@@ -1063,5 +1063,101 @@
    "baja-temperatura",
    "arroces"
   ]
+ },
+ {
+  "id": "casqueria",
+  "name": "Casquería",
+  "name_en": "Offal",
+  "cat": "producto",
+  "group": "Carne",
+  "aka": [
+   "despojos",
+   "callos",
+   "mollejas",
+   "riñones",
+   "higado",
+   "lengua",
+   "manitas",
+   "oreja",
+   "carrillera"
+  ],
+  "summary": "Limpiar, blanquear y cocinar las piezas de casquería: cuáles van rápido a la brasa y cuáles piden cocción larga.",
+  "what": "La casquería se divide en dos grupos. Las piezas tiernas (mollejas, riñones, hígado, corazón) se cocinan rápido y poco hechas. Las de colágeno (callos, manitas, oreja, morro, lengua) necesitan cocción larga hasta ablandarse y después se terminan a la brasa, fritas o en salsa. En todas, la frescura y una buena limpieza son lo que marca la diferencia.",
+  "method": [
+   "Compra a un proveedor de confianza y usa la casquería el mismo día o al siguiente.",
+   "Limpia: quita grasa, nervios y membranas; desangra en agua fría con hielo las que lo necesiten (mollejas, sesos).",
+   "Blanquea las piezas de colágeno: empieza en agua fría, lleva a hervor, tira el agua y enjuaga.",
+   "Cuece las de colágeno largo, con aromáticos, hasta que estén muy tiernas; deja enfriar en su caldo.",
+   "Termina: brasa o plancha fuerte para las tiernas, prensado y fritura o brasa para las cocidas."
+  ],
+  "ratios": [
+   {
+    "use": "Mollejas",
+    "ratio": "Desangrar en frío, escaldar 2-3 minutos, pelar y dorar",
+    "note": "Crujientes por fuera, tiernas dentro."
+   },
+   {
+    "use": "Lengua de ternera",
+    "ratio": "2 a 3 horas de cocción suave, pelar en caliente",
+    "note": "O baja temperatura."
+   },
+   {
+    "use": "Manitas y oreja",
+    "ratio": "3 a 4 horas de cocción, deshuesar y prensar en frío",
+    "note": "Luego cortar y dorar."
+   },
+   {
+    "use": "Riñones e hígado",
+    "ratio": "Fuego fuerte y poco tiempo, rosados",
+    "note": "Pasados quedan duros y amargos."
+   }
+  ],
+  "variants": [
+   {
+    "id": "baja-temperatura",
+    "name": "Baja temperatura",
+    "note": "Ideal para lengua y piezas de colágeno."
+   },
+   {
+    "id": "fuego-y-brasa",
+    "name": "Fuego y brasa",
+    "note": "Acabado de mollejas y piezas prensadas."
+   }
+  ],
+  "keys": [
+   "Frescura absoluta y proveedor de confianza.",
+   "Blanquear las piezas de colágeno limpia sabores y espuma.",
+   "Lo tierno, rápido; lo duro, largo y luego crujiente.",
+   "Prensar en frío las piezas cocidas da cortes limpios.",
+   "La acidez y las hierbas equilibran su intensidad."
+  ],
+  "errors": [
+   {
+    "p": "Sabor fuerte o a sangre",
+    "fix": "Falta desangrado o blanqueado. Agua fría con hielo y blanquea antes de cocer."
+   },
+   {
+    "p": "Hígado o riñón duro",
+    "fix": "Pasado de punto. Fuego vivo y sacarlo rosado."
+   },
+   {
+    "p": "Piezas que se deshacen al dorar",
+    "fix": "No se prensaron en frío. Prensa, enfría bien y corta en frío."
+   }
+  ],
+  "history": "La casquería tiene una larga tradición en la cocina popular española (callos, zarajos, manitas) y ha vuelto a muchas cartas de autor.",
+  "uses": [
+   "Brasa y plancha",
+   "Guisos",
+   "Frituras",
+   "Tapas y raciones"
+  ],
+  "keep": "Muy poco tiempo en frío; las piezas cocidas, en su caldo o prensadas y envueltas, en frío y según tu plan APPCC.",
+  "pro": "Cuece y prensa en lote las piezas de colágeno; en el servicio solo se cortan y se doran.",
+  "related": [
+   "baja-temperatura",
+   "fuego-y-brasa",
+   "acidez-en-cocina"
+  ]
  }
 ]

@@ -2363,5 +2363,96 @@
       "fumet",
       "aceites-aromatizados"
     ]
+  },
+  {
+    "id": "chiles-y-salsas-mexicanas",
+    "name": "Chiles y salsas mexicanas",
+    "name_en": "Chillies and Mexican salsas",
+    "cat": "salsas",
+    "group": "Salsas del mundo",
+    "aka": [
+      "salsa tatemada",
+      "chile ancho",
+      "chile guajillo",
+      "chipotle",
+      "salsa verde mexicana",
+      "salsa roja",
+      "molcajete",
+      "tatemar"
+    ],
+    "summary": "Tostar e hidratar chiles secos, tatemar verduras a fuego directo y hacer salsas crudas y cocidas al estilo mexicano.",
+    "what": "Muchas salsas mexicanas se basan en tatemar (asar a fuego directo hasta tostar la piel) tomate, tomatillo, cebolla, ajo y chiles, y triturarlos con sal y algo ácido. Los chiles secos se tuestan brevemente y se hidratan; cada uno aporta algo distinto: fruta, humo, picor o dulzor. Encaja muy bien con una cocina de brasa.",
+    "method": [
+      "Tatema en la brasa o en comal tomates, tomatillos, cebolla, ajo y chiles frescos hasta tener manchas negras y estar blandos.",
+      "Chiles secos: quita rabo y semillas, tuesta unos segundos por lado sin quemar e hidrata en agua caliente 15-20 minutos.",
+      "Tritura en molcajete o túrmix con sal y algo de agua de hidratación; textura rústica.",
+      "Para salsa cocida, fríe el puré en poca grasa unos minutos hasta que cambie de color.",
+      "Ajusta con lima, sal y cilantro al final."
+    ],
+    "ratios": [
+      {
+        "use": "Salsa tatemada de tomate",
+        "ratio": "4 tomates, 1/4 de cebolla, 1 diente de ajo y 1-2 chiles",
+        "note": "Sal y lima al gusto."
+      },
+      {
+        "use": "Chile seco en una salsa",
+        "ratio": "2-4 chiles secos por cada 500 g de tomate",
+        "note": "Según el picor."
+      },
+      {
+        "use": "Salsa verde de tomatillo",
+        "ratio": "500 g de tomatillo, chile fresco, cebolla, ajo y cilantro",
+        "note": "Cruda o tatemada."
+      }
+    ],
+    "variants": [
+      {
+        "id": "salsa-brava",
+        "name": "Salsa brava",
+        "note": "Otra salsa picante, de aquí."
+      },
+      {
+        "id": "fuego-y-brasa",
+        "name": "Fuego y brasa",
+        "note": "Para tatemar en la brasa."
+      }
+    ],
+    "keys": [
+      "Tatemar da sabor ahumado y dulzor; no lo confundas con quemar del todo.",
+      "Chiles secos tostados segundos: si se queman, amargan.",
+      "Prueba el picor de cada chile antes de echarlo entero.",
+      "Lima y sal al final.",
+      "Guarda el agua de hidratación para ajustar la textura."
+    ],
+    "errors": [
+      {
+        "p": "Amarga",
+        "fix": "Chile seco quemado al tostar. Tuesta menos y retira semillas."
+      },
+      {
+        "p": "Demasiado picante",
+        "fix": "Más tomate o tomatillo, algo graso (aguacate) o un punto dulce."
+      },
+      {
+        "p": "Aguada",
+        "fix": "Demasiada agua o tomate muy jugoso. Reduce en sartén o escurre antes."
+      }
+    ],
+    "history": "Las salsas de chile son parte esencial de la cocina mexicana, con una variedad enorme de chiles frescos y secos y de técnicas como el tatemado y el molcajete.",
+    "uses": [
+      "Brasa de carnes y pescados",
+      "Tacos y tostadas",
+      "Huevos",
+      "Aliños"
+    ],
+    "keep": "Las crudas en frío pocos días; las cocidas, algo más; los chiles secos en bote cerrado.",
+    "pro": "Tatema verduras al final de la brasa del servicio y haz las salsas del día siguiente. Una ficha por chile con su picor y su uso.",
+    "related": [
+      "salsa-brava",
+      "fuego-y-brasa",
+      "acidez-en-cocina",
+      "especias"
+    ]
   }
 ]
