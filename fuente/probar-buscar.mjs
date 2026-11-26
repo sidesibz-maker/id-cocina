@@ -45,6 +45,10 @@ ok((await page.textContent('.sheet').catch(() => '')).includes('Atajos de teclad
 await page.keyboard.press('Escape'); await wait(200); await page.evaluate(() => document.activeElement?.blur());
 await page.keyboard.press('g'); await page.keyboard.press('b'); await wait(400);
 ok((await page.evaluate(() => location.hash)) === '#/biblioteca', 'g y b no llevan a la Biblioteca: ' + await page.evaluate(() => location.hash));
+// El diccionario sale en el buscador
+await page.keyboard.press('Control+k'); await page.waitForSelector('#finderQ'); await page.fill('#finderQ', 'desglasar'); await wait(300);
+ok((await page.textContent('#finderRes')).includes('Diccionario'), 'el buscador no encuentra términos del diccionario');
+await page.keyboard.press('Escape'); await wait(200);
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();
 if (fails.length) { console.error('FALLOS en el buscador:\n - ' + fails.join('\n - ')); process.exit(1); }

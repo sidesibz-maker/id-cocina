@@ -1292,5 +1292,317 @@
    "deshidratados-y-crujientes",
    "flao"
   ]
+ },
+ {
+  "id": "chocolate-y-templado",
+  "name": "Chocolate y templado",
+  "name_en": "Chocolate and tempering",
+  "cat": "dulce",
+  "group": "Chocolate",
+  "aka": [
+   "templar chocolate",
+   "atemperar chocolate",
+   "cobertura",
+   "bombones",
+   "chocolate brillante"
+  ],
+  "summary": "Fundir, enfriar y volver a calentar a la temperatura exacta para que el chocolate quede brillante y cruja.",
+  "what": "La manteca de cacao puede cristalizar de varias formas, y solo una da un chocolate brillante, firme y que cruje al partirlo. Templar es llevar el chocolate a esa forma: se funde del todo, se enfría para que empiecen los cristales buenos y se sube un poco para quitar los malos.\n\nSe trabaja con cobertura (chocolate con más manteca de cacao), que es más fluida y se templa mejor.",
+  "method": [
+   "Funde la cobertura troceada a 45-50 °C, al baño maría o en microondas a ratos cortos.",
+   "Método de siembra: añade un 25-30 % de cobertura sin fundir, en callets, y remueve hasta que baje a la temperatura de trabajo.",
+   "Método de mármol: vuelca dos tercios en mármol, extiende y recoge hasta que espese, y mezcla con el resto.",
+   "Comprueba: una tira de papel mojada en chocolate debe endurecer brillante en 3-5 minutos a temperatura ambiente.",
+   "Trabaja manteniendo la temperatura: si baja, unos segundos de calor suave."
+  ],
+  "ratios": [
+   {
+    "use": "Chocolate negro",
+    "ratio": "Fundir a 45-50 °C, trabajar a 31-32 °C",
+    "note": "Según el fabricante."
+   },
+   {
+    "use": "Chocolate con leche",
+    "ratio": "Fundir a 40-45 °C, trabajar a 29-30 °C",
+    "note": ""
+   },
+   {
+    "use": "Chocolate blanco",
+    "ratio": "Fundir a 40 °C, trabajar a 28-29 °C",
+    "note": "Muy sensible al calor."
+   }
+  ],
+  "variants": [
+   {
+    "id": "ganache",
+    "name": "Ganache",
+    "note": "Chocolate y nata, sin templar."
+   },
+   {
+    "id": "caramelo",
+    "name": "Caramelo",
+    "note": "Para rellenos y pralinés."
+   }
+  ],
+  "keys": [
+   "Ni una gota de agua: el chocolate se espesa y se vuelve grumoso.",
+   "Las temperaturas del fabricante mandan.",
+   "Moldes limpios, secos y a temperatura ambiente.",
+   "La prueba de la tira antes de ponerse a trabajar.",
+   "El frío, suave: la nevera brusca deja manchas."
+  ],
+  "errors": [
+   {
+    "p": "Manchas blancas o grises",
+    "fix": "Mal templado o cambios de temperatura. Vuelve a templar."
+   },
+   {
+    "p": "Se espesa de golpe",
+    "fix": "Ha entrado agua o vapor. Ese chocolate sirve para ganache, no para templar."
+   },
+   {
+    "p": "No se despega del molde",
+    "fix": "No estaba templado o falta frío. Templa bien y enfría 15 minutos."
+   }
+  ],
+  "history": "El chocolate llegó de Mesoamérica a Europa en el siglo XVI como bebida. La tableta y el bombón son del siglo XIX, cuando se aprendió a separar la manteca de cacao y a templarla.",
+  "uses": [
+   "Bombones y tabletas",
+   "Decoraciones",
+   "Bañados",
+   "Crujientes de chocolate"
+  ],
+  "keep": "Cobertura en lugar fresco y seco, a 15-18 °C, lejos de olores.",
+  "pro": "Templa por la mañana en un baño de mantenimiento; ten siempre callets para corregir la temperatura.",
+  "related": [
+   "ganache",
+   "caramelo",
+   "almendra",
+   "helados-y-sorbetes"
+  ]
+ },
+ {
+  "id": "hojaldre",
+  "name": "Hojaldre",
+  "name_en": "Puff pastry",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "masa de hojaldre",
+   "pâte feuilletée",
+   "hojaldre invertido",
+   "hojaldre rápido",
+   "pliegues"
+  ],
+  "summary": "Capas de masa y mantequilla que el vapor separa en el horno: pliegues, frío y paciencia.",
+  "what": "El hojaldre es una masa (harina, agua, sal, algo de mantequilla) que envuelve un bloque de mantequilla. Al estirar y doblar varias veces se crean cientos de capas alternas. En el horno, el agua de la masa y la mantequilla se convierte en vapor y levanta las capas.\n\nEl clásico lleva seis vueltas sencillas; el rápido mezcla la mantequilla en dados y se hace en una mañana; el invertido pone la mantequilla por fuera y sube más y más regular.",
+  "base": {
+   "for": "unos 1,2 kg de hojaldre",
+   "items": [
+    [
+     "Harina de fuerza media",
+     "500 g"
+    ],
+    [
+     "Agua fría",
+     "250 ml"
+    ],
+    [
+     "Sal",
+     "10 g"
+    ],
+    [
+     "Mantequilla para la masa, fundida",
+     "50 g"
+    ],
+    [
+     "Mantequilla para el bloque, fría y plástica",
+     "400 g"
+    ]
+   ],
+   "steps": [
+    "Amasa la harina, el agua, la sal y la mantequilla fundida lo justo; forma un cuadrado, envuelve y enfría 1 hora.",
+    "Golpea la mantequilla fría entre dos papeles hasta tener un cuadrado plástico, a la misma textura que la masa.",
+    "Envuelve la mantequilla con la masa y séllala.",
+    "Estira en rectángulo (tres veces más largo que ancho) y dobla en tres: es una vuelta sencilla. Gira 90°.",
+    "Haz dos vueltas, reposa 30 minutos en frío, y repite hasta seis vueltas.",
+    "Estira, corta y hornea a 200-210 °C hasta que esté dorado y ligero por dentro."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Hojaldre clásico",
+    "ratio": "80 % de mantequilla sobre el peso de harina, 6 vueltas sencillas",
+    "note": "Reposos de 30 minutos cada dos vueltas."
+   },
+   {
+    "use": "Hojaldre rápido",
+    "ratio": "Mantequilla en dados de 1 cm mezclada con la harina, 4 vueltas",
+    "note": "Sube menos, ideal para bases."
+   },
+   {
+    "use": "Para que no suba (bases planas)",
+    "ratio": "Pinchar y hornear con peso encima",
+    "note": "Entre dos bandejas."
+   }
+  ],
+  "variants": [
+   {
+    "id": "masa-quebrada",
+    "name": "Masa quebrada",
+    "note": "La otra masa básica, sin capas."
+   }
+  ],
+  "keys": [
+   "Masa y mantequilla a la misma textura: si la mantequilla está dura se rompe, si está blanda se mezcla.",
+   "Frío entre vueltas.",
+   "Cortar con cuchillo afilado, de arriba abajo, sin arrastrar: si se aplastan los bordes, no sube.",
+   "Horno fuerte al principio para que el vapor levante.",
+   "La masa se recorta, no se reamasa: los recortes valen para bases."
+  ],
+  "errors": [
+   {
+    "p": "No sube",
+    "fix": "Mantequilla mezclada con la masa (calor) o bordes aplastados. Trabaja en frío y corta limpio."
+   },
+   {
+    "p": "Se encoge en el horno",
+    "fix": "Gluten tenso. Reposa en frío 30 minutos tras estirar y cortar."
+   },
+   {
+    "p": "Crudo por dentro",
+    "fix": "Horno flojo o sacado pronto. Termina a 180 °C hasta que esté seco por dentro."
+   }
+  ],
+  "history": "Las masas en capas existían en la repostería árabe y mediterránea; el hojaldre con mantequilla que conocemos se fijó en la pastelería francesa de los siglos XVII y XVIII.",
+  "uses": [
+   "Milhojas",
+   "Bases de tartas",
+   "Palmeras",
+   "Empanadas y volovanes",
+   "Hojaldres salados"
+  ],
+  "keep": "Crudo, en frío 3 días o congelado 3 meses. Horneado, del día.",
+  "pro": "Haz hojaldre en tanda, porciona en planchas y congela. Hornea entre bandejas para milhojas perfectos.",
+  "related": [
+   "masa-quebrada",
+   "crema-pastelera",
+   "caramelo",
+   "masa-madre"
+  ]
+ },
+ {
+  "id": "bizcochos",
+  "name": "Bizcochos",
+  "name_en": "Sponge cakes",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "genovesa",
+   "bizcocho genovés",
+   "plancha de bizcocho",
+   "bizcocho de soletilla",
+   "bizcocho al microondas"
+  ],
+  "summary": "Huevo montado y aire: la genovesa, la plancha y el bizcocho rápido al sifón, y cómo no perder volumen.",
+  "what": "Un bizcocho ligero se levanta con el aire que se mete al batir los huevos, no con levadura. La genovesa monta huevos enteros con azúcar; la soletilla monta claras y yemas por separado; la plancha es una genovesa fina para enrollar o montar capas.\n\nEn cocina de autor, el bizcocho al sifón cocido en microondas en segundos da una miga muy aireada, útil como elemento de emplatado.",
+  "base": {
+   "for": "un molde de 22 cm (genovesa)",
+   "items": [
+    [
+     "Huevos",
+     "4 (200 g)"
+    ],
+    [
+     "Azúcar",
+     "120 g"
+    ],
+    [
+     "Harina floja",
+     "120 g"
+    ],
+    [
+     "Mantequilla fundida (opcional)",
+     "30 g"
+    ],
+    [
+     "Ralladura de limón o vainilla",
+     "c. s."
+    ]
+   ],
+   "steps": [
+    "Bate los huevos y el azúcar al baño maría hasta 40-45 °C.",
+    "Fuera del fuego, monta a velocidad alta hasta que triplique y haga cinta al caer.",
+    "Tamiza la harina en dos o tres veces e incorpórala con espátula, con movimientos envolventes.",
+    "Si lleva mantequilla, mézclala antes con un poco de la masa y vuelve a incorporar.",
+    "Hornea a 175-180 °C unos 25-30 minutos, sin abrir el horno los primeros 15.",
+    "Desmolda templado y enfría en rejilla."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Genovesa",
+    "ratio": "Huevo, azúcar y harina en proporción 2 : 1,2 : 1,2",
+    "note": "En peso."
+   },
+   {
+    "use": "Plancha para enrollar",
+    "ratio": "La misma masa, 1 cm de grosor, 210-220 °C 7-9 minutos",
+    "note": "Enrollar en caliente."
+   },
+   {
+    "use": "Bizcocho al sifón",
+    "ratio": "Masa fluida en sifón con 2 cargas, 40 s de microondas en vaso de plástico pinchado",
+    "note": "Para emplatados."
+   }
+  ],
+  "variants": [
+   {
+    "id": "espumas-con-sifon",
+    "name": "Espumas con sifón",
+    "note": "La técnica del bizcocho al microondas."
+   },
+   {
+    "id": "merengues",
+    "name": "Merengues",
+    "note": "El otro gran aire montado."
+   }
+  ],
+  "keys": [
+   "Huevos templados montan más.",
+   "Punto de cinta antes de añadir la harina.",
+   "Harina tamizada e incorporada con suavidad.",
+   "No abrir el horno al principio.",
+   "Para emborrachar, almíbar templado sobre bizcocho frío."
+  ],
+  "errors": [
+   {
+    "p": "Bajo y apelmazado",
+    "fix": "Poco montado o harina mezclada con fuerza. Monta hasta cinta y envuelve con espátula."
+   },
+   {
+    "p": "Se hunde al sacar",
+    "fix": "Poco tiempo o horno abierto pronto. Hornea hasta que el centro vuelva al presionar."
+   },
+   {
+    "p": "Seco",
+    "fix": "Pasado de horno. Saca antes o emborracha con almíbar."
+   }
+  ],
+  "history": "El bizcocho de huevo montado tiene siglos de historia en la repostería europea; la genovesa, como su nombre indica, se asocia a Génova y pasó a la pastelería francesa como base de tartas.",
+  "uses": [
+   "Tartas por capas",
+   "Brazos de gitano",
+   "Bases emborrachadas",
+   "Esponjas para emplatar"
+  ],
+  "keep": "Envuelto, 2 días a temperatura ambiente o congelado 1 mes.",
+  "pro": "Planchas horneadas y congeladas entre papeles: se cortan en frío para montar postres.",
+  "related": [
+   "merengues",
+   "crema-pastelera",
+   "espumas-con-sifon",
+   "ganache"
+  ]
  }
 ]

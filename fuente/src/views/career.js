@@ -3,6 +3,7 @@
 // y logros. Con todo eso, un dossier listo para imprimir o guardar en PDF y llevarlo a una entrevista o un stage.
 // Todo son documentos «carrera:…», «puesto:…», «formacion:…», «objetivo:…» y «logro:…»: van en la copia y se sincronizan.
 import {TECHNIQUES} from '../flavor-core.js';
+import {discoverHtml, bindDiscover} from './discover.js';
 import {t, en, locale, dayKey} from '../i18n.js';
 import {esc, icon, $, $$, toast, sheet, ask, friendly, flavorPrint} from '../ui.js';
 import {state, liveDocs, docById, saveDoc, trashDoc, liveDishes, imageUrl} from '../store.js';
@@ -59,6 +60,7 @@ export function render() {
   // Experiencia y formación
   '<div class="cduo"><section class="sec"><header class="sec-head"><div><h2>' + esc(t('Experiencia', 'Experience')) + '</h2></div><button type="button" class="btn ghost" data-act="job">' + icon('plus') + esc(t('Añadir', 'Add')) + '</button></header>' + (jobs.length ? '<ol class="ctime">' + jobs.map(j => '<li><button type="button" class="ctime-item" data-edit="' + esc(j.id) + '"><small>' + esc(period(j)) + '</small><strong>' + esc(j.role || '') + (j.place ? t(' en ', ' at ') + j.place : '') + '</strong>' + (j.city ? '<span>' + esc(j.city) + '</span>' : '') + (j.learned ? '<p>' + esc(j.learned) + '</p>' : '') + '</button></li>').join('') + '</ol>' : '<p class="hint">' + esc(t('Cada cocina por la que has pasado y lo que te llevaste de ella.', 'Every kitchen you have been through and what you took from it.')) + '</p>') + '</section>' +
   '<section class="sec"><header class="sec-head"><div><h2>' + esc(t('Formación y cursos', 'Training and courses')) + '</h2></div><button type="button" class="btn ghost" data-act="course">' + icon('plus') + esc(t('Añadir', 'Add')) + '</button></header>' + (courses.length ? '<ol class="ctime">' + courses.map(c => '<li><button type="button" class="ctime-item" data-edit="' + esc(c.id) + '"><small>' + esc(period(c)) + '</small><strong>' + esc(c.title || '') + '</strong>' + (c.place ? '<span>' + esc(c.place) + '</span>' : '') + (c.learned ? '<p>' + esc(c.learned) + '</p>' : '') + '</button></li>').join('') + '</ol>' : '<p class="hint">' + esc(t('Escuela, cursos, masterclass, stages cortos, certificados (manipulador, alérgenos…).', 'School, courses, masterclasses, short stages, certificates (food handling, allergens…).')) + '</p>') + '</section></div>' +
+  discoverHtml() +
   // Logros
   '<section class="sec"><header class="sec-head"><div><h2>' + esc(t('Logros', 'Achievements')) + '</h2></div><button type="button" class="btn ghost" data-act="win">' + icon('plus') + esc(t('Añadir', 'Add')) + '</button></header>' +
   (wins.length ? '<ul class="cwins">' + wins.map(w => '<li>' + icon(w.fromGoal ? 'check' : 'star') + '<div><strong>' + esc(w.title) + '</strong><small>' + esc(w.when ? new Date(w.when + 'T12:00:00').toLocaleDateString(locale(), {day: 'numeric', month: 'long', year: 'numeric'}) : '') + (w.fromGoal ? t(', objetivo cumplido', ', goal achieved') : '') + '</small>' + (w.note ? '<p>' + esc(w.note) + '</p>' : '') + '</div>' + (w.fromGoal ? '' : '<button type="button" class="iconbtn" data-edit="' + esc(w.id) + '" aria-label="' + esc(t('Editar', 'Edit')) + '">' + icon('edit') + '</button>') + '</li>').join('') + '</ul>' : '<p class="hint">' + esc(t('Un ascenso, un premio, una buena crítica, tu primer plato en carta, un stage terminado.', 'A promotion, an award, a good review, your first dish on the menu, a finished stage.')) + '</p>') + '</section>';
@@ -138,6 +140,7 @@ async function dossier() {
 }
 
 export function mount(root) {
+ bindDiscover(root);
  root.querySelectorAll('img[data-img]').forEach(async img => { const u = await imageUrl(img.dataset.img); if (u && img.isConnected) img.src = u; });
  root.addEventListener('click', async e => {
   const a = e.target.closest('[data-act]')?.dataset.act, edit = e.target.closest('[data-edit]'), sk = e.target.closest('[data-skill]'), dn = e.target.closest('[data-done]');

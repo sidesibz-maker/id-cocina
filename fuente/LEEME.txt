@@ -152,3 +152,11 @@ LO NUEVO PARA TU OFICIO (NOVIEMBRE 2026)
  - Portada: «La pregunta del día», una tarjeta de Entrenar que se gira ahí mismo.
  - Modo cocina: «Leer los pasos en voz alta».
  - Trayectoria → «Mi año en cocina»: el resumen del año, para imprimir.
+ - Biblioteca: 131 fichas. Nuevas: legumbres, salazones y huevas, pollo y aves, chocolate y templado, hojaldre y bizcochos.
+   Rutas nuevas: «Masas y pastelería de base» y «La despensa mediterránea».
+ - Biblioteca → «Diccionario de cocina»: 60 términos del oficio (también salen en el buscador Ctrl+K).
+ - Biblioteca: «Una ficha al azar» (mejor una sin leer) y «Nuevo en la Biblioteca» con las fichas que aún no has visto.
+ - Entrenar → «Tus tarjetas»: escribe tus propias preguntas y respuestas; entran en el repaso.
+ - Laboratorio: buscar en el cuaderno de chispas y filtrar por «Por desarrollar» o «Ya son plato».
+ - Trayectoria → «Por descubrir»: libros, restaurantes, cocineros, stages y viajes; al hacerlos, apuntas qué te llevas.
+ - Ajustes → Contraste: «Alto», de día y de noche.

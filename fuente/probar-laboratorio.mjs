@@ -87,6 +87,13 @@ await page.click('.sheet [data-x=save]'); await wait(500);
 ok(await page.locator('.labsp').count() === nx + 1 && (await page.textContent('.labsparks')).includes('Cruce: '), 'cruzar dos chispas no apunta el cruce');
 await go('#/hoy'); ok(await page.locator('.qday .qday-q').count() === 1, 'la portada no trae la pregunta del día');
 await page.click('.qday summary'); ok(await page.locator('.qday-a[open]').count() === 1, 'la pregunta del día no se gira');
+// Buscar y filtrar el cuaderno de chispas
+await go('#/laboratorio'); await page.waitForSelector('#spQ');
+await page.fill('#spQ', 'reto'); await wait(150);
+const vis = await page.locator('.labsp:not([hidden])').count();
+ok(vis >= 1 && vis < await page.locator('.labsp').count(), 'buscar en las chispas no filtra');
+await page.fill('#spQ', ''); await page.click('[data-spf=dish]'); await wait(150);
+ok(await page.locator('.labsp:not([hidden]):not(.is-dish)').count() === 0, 'el filtro «ya son plato» enseña otras');
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();
 if (fails.length) { console.error('FALLOS en el laboratorio:\n - ' + fails.join('\n - ')); process.exit(1); }

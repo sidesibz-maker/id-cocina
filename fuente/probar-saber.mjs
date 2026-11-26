@@ -96,6 +96,16 @@ await page.selectOption('#kcmpB', 'veloute'); await wait(150);
 ok((await page.textContent('#kcmpName')) === 'Velouté' || (await page.textContent('#kcmpName')).toLowerCase().includes('velout'), 'comparar no cambia a la segunda ficha');
 ok(await page.locator('#kcmpRows .kcmp-part').count() >= 5, 'la comparación tiene pocas partes');
 await page.keyboard.press('Escape'); await wait(200);
+// Diccionario, ficha al azar y «Nuevo en la Biblioteca»
+await go('#/biblioteca/diccionario'); await page.waitForSelector('.kdict-row');
+ok(await page.locator('.kdict-row').count() >= 50, 'el diccionario tiene pocos términos');
+await page.fill('#dictQ', 'napar'); await wait(150);
+ok(await page.locator('.kdict-row:not([hidden])').count() === 1, 'buscar en el diccionario no filtra');
+await go('#/biblioteca'); await page.waitForSelector('[data-act=random-entry]');
+ok((await page.textContent('.knew').catch(() => '')).includes('Hojaldre'), 'no avisa de las fichas nuevas');
+await page.click('[data-act=seen-new]'); await wait(150); ok(await page.locator('.knew').count() === 0, 'marcar como vistas no quita el aviso');
+await page.click('[data-act=random-entry]'); await wait(400);
+ok(/^#\/biblioteca\/[a-z0-9-]+$/.test(await page.evaluate(() => location.hash)), 'la ficha al azar no abre una ficha');
 ok(!errors.length, 'errores: ' + errors.join(' | '));
 await browser.close();
 console.log(fails.length ? 'FALLOS:\n - ' + fails.join('\n - ') : 'la Biblioteca: todo correcto');

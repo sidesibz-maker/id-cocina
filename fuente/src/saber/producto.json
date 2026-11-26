@@ -1809,5 +1809,284 @@
    "jugo-de-carne",
    "pato"
   ]
+ },
+ {
+  "id": "legumbres",
+  "name": "Legumbres",
+  "name_en": "Pulses",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "garbanzos",
+   "lentejas",
+   "judías",
+   "alubias",
+   "habas secas",
+   "remojo de legumbres"
+  ],
+  "summary": "Remojo, cocción suave y sal a tiempo: legumbres enteras, cremosas por dentro y con la piel intacta.",
+  "what": "Las legumbres secas necesitan agua y tiempo. El remojo acorta la cocción y la hace más pareja; la cocción lenta, sin hervor fuerte, evita que se rompan. El agua de cocción es un caldo con cuerpo que liga guisos y salsas.\n\nEn una cocina de autor dan mucho más que guisos: cremas, falafel, garbanzos fritos crujientes, hummus, brotes, misos de legumbre propia o la aquafaba (el agua de cocción del garbanzo) como espumante.",
+  "method": [
+   "Remoja en agua fría abundante (3 veces su volumen): garbanzos y judías 12 horas; las lentejas no lo necesitan.",
+   "Escurre y pon en agua nueva; para garbanzos, empieza con el agua ya caliente.",
+   "Añade aromáticos (laurel, cebolla, ajo, kombu) y cuece a fuego suave, sin que hierva a borbotones.",
+   "Si hace falta añadir agua, que sea caliente para no cortar la cocción.",
+   "Sala en la segunda mitad de la cocción y deja reposar en su caldo."
+  ],
+  "ratios": [
+   {
+    "use": "Garbanzos",
+    "ratio": "12 h de remojo, 1,5-2,5 h de cocción suave",
+    "note": "En olla a presión, 20-30 minutos."
+   },
+   {
+    "use": "Judías blancas",
+    "ratio": "12 h de remojo, 1,5-2 h",
+    "note": "Asustar con agua fría 2-3 veces si se quiere la piel fina."
+   },
+   {
+    "use": "Lentejas",
+    "ratio": "Sin remojo, 25-40 minutos",
+    "note": "Pardina y beluga mantienen la forma; la roja se deshace."
+   },
+   {
+    "use": "Aquafaba",
+    "ratio": "Agua de cocción reducida hasta la textura de clara",
+    "note": "Monta como un merengue."
+   }
+  ],
+  "variants": [
+   {
+    "id": "crema-garbanzos-comino",
+    "name": "Crema de garbanzos",
+    "note": "Una aplicación directa."
+   },
+   {
+    "id": "caldo-de-verduras",
+    "name": "Caldo de verduras",
+    "note": "Para guisar."
+   }
+  ],
+  "keys": [
+   "Agua blanda: el agua muy dura endurece la piel.",
+   "Hervor suave: el borboteo rompe la legumbre.",
+   "El caldo de cocción no se tira: es sabor y textura.",
+   "Mejor de un día para otro: el guiso se asienta.",
+   "Legumbre nueva (de la última cosecha) se cuece antes."
+  ],
+  "errors": [
+   {
+    "p": "Duras aunque lleven horas",
+    "fix": "Legumbre vieja o agua dura. Usa agua mineral blanda o una pizca de bicarbonato en el remojo."
+   },
+   {
+    "p": "Se pelan y se rompen",
+    "fix": "Hervor fuerte. Baja el fuego al mínimo."
+   },
+   {
+    "p": "Guiso aguado",
+    "fix": "Aplasta unas cuantas contra el fondo o tritura un cazo y devuélvelo."
+   }
+  ],
+  "history": "Las legumbres son la base de la cocina popular de todo el Mediterráneo, de los potajes a los hummus. Hoy vuelven a la alta cocina como proteína vegetal y como producto con origen.",
+  "uses": [
+   "Guisos y potajes",
+   "Cremas y untables",
+   "Crujientes",
+   "Ensaladas templadas",
+   "Aquafaba"
+  ],
+  "keep": "Cocidas, en su caldo y en frío, 4-5 días. Se congelan bien.",
+  "pro": "Cuece en cantidad, enfría en su caldo y porciona. Guarda el caldo aparte para ligar.",
+  "related": [
+   "crema-garbanzos-comino",
+   "caldo-de-verduras",
+   "sofrito",
+   "especias",
+   "miso-y-koji"
+  ]
+ },
+ {
+  "id": "salazones-y-huevas",
+  "name": "Salazones y huevas",
+  "name_en": "Salted fish and roe",
+  "cat": "producto",
+  "group": "Pescado",
+  "aka": [
+   "mojama",
+   "botarga",
+   "huevas de mújol",
+   "bacalao salado",
+   "anchoas",
+   "salazón"
+  ],
+  "summary": "Sal, presión y aire: la mojama, la botarga y las anchoas, y cómo usar su sal y su umami en un plato.",
+  "what": "Salar un pescado le quita agua, lo conserva y concentra su sabor. La mojama es lomo de atún salado y secado; la botarga, la bolsa de huevas de mújol o de atún salada, prensada y curada; las anchoas, boquerón salado y madurado meses. Son productos intensos: se usan finos, rallados o en pequeñas cantidades.\n\nEn cocina funcionan como sal con sabor: una lámina de botarga o unas gotas de aceite de anchoa sustituyen a la sal y dan profundidad.",
+  "method": [
+   "Para huevas caseras: limpia la bolsa sin romperla y quita la sangre con agua fría y sal.",
+   "Cúbrela de sal gruesa (o de sal y azúcar) 1 día por cada 100-150 g de peso, en frío y con un poco de presión.",
+   "Lava, seca y deja secar en frío y con aire, girándola, 2-4 semanas hasta que esté firme.",
+   "Para servir, corta muy fina o ralla; con aceite de oliva y almendra tostada es un clásico.",
+   "Para desalar bacalao, agua fría cambiada cada 8 horas, 24-48 horas según grosor."
+  ],
+  "ratios": [
+   {
+    "use": "Salado de huevas",
+    "ratio": "1 día por cada 100-150 g",
+    "note": "Después, secado en frío 2-4 semanas."
+   },
+   {
+    "use": "Desalado de bacalao",
+    "ratio": "24 h para lomos finos, 36-48 h para gruesos",
+    "note": "Agua fría, cambiada 3 veces al día."
+   },
+   {
+    "use": "Botarga como condimento",
+    "ratio": "3-5 g rallados por ración",
+    "note": "En lugar de la sal final."
+   }
+  ],
+  "variants": [
+   {
+    "id": "curado-de-pescado",
+    "name": "Curado de pescado",
+    "note": "El curado corto, para servir en crudo."
+   },
+   {
+    "id": "sal-y-flor-de-sal",
+    "name": "Sal y flor de sal",
+    "note": "La sal que lo hace posible."
+   }
+  ],
+  "keys": [
+   "Intensos: se usan como condimento, no como protagonista.",
+   "Cortar fino o rallar en el último momento.",
+   "La sal del plato se ajusta después de añadirlos.",
+   "Con grasa (aceite, mantequilla, yema) y algo ácido funcionan mejor.",
+   "Ojo al alérgeno: pescado."
+  ],
+  "errors": [
+   {
+    "p": "Plato demasiado salado",
+    "fix": "Se ha salado antes de añadir la salazón. Sala al final, después de probar."
+   },
+   {
+    "p": "Botarga casera blanda por dentro",
+    "fix": "Poco secado. Deja más tiempo con aire y frío."
+   },
+   {
+    "p": "Bacalao fibroso",
+    "fix": "Cocción fuerte. Confítalo o cuécelo a 60-65 °C."
+   }
+  ],
+  "history": "Salar el pescado es una de las formas de conservar más antiguas del Mediterráneo: fenicios y romanos ya comerciaban con salazones del sur peninsular, de donde vienen la mojama y la botarga.",
+  "uses": [
+   "Condimento rallado",
+   "Aperitivo con aceite y almendra",
+   "Pastas y arroces",
+   "Ensaladas"
+  ],
+  "keep": "Envasadas o envueltas, en frío, meses. Las anchoas, en aceite y en frío.",
+  "pro": "Ten una botarga empezada en la cámara para rallar al pase: transforma un arroz o una verdura en segundos.",
+  "related": [
+   "curado-de-pescado",
+   "sal-y-flor-de-sal",
+   "almendra",
+   "umami-y-fondo",
+   "pescado-entero"
+  ]
+ },
+ {
+  "id": "pollo-y-aves",
+  "name": "Pollo y aves de corral",
+  "name_en": "Chicken and poultry",
+  "cat": "producto",
+  "group": "Aves",
+  "aka": [
+   "pollo asado",
+   "pularda",
+   "capón",
+   "gallina",
+   "pintada",
+   "pechuga jugosa",
+   "muslo de pollo"
+  ],
+  "summary": "Pechuga jugosa y muslo bien hecho: salmuera, temperatura a corazón y piel crujiente.",
+  "what": "Un ave tiene el mismo problema que el pato: la pechuga se seca antes de que el muslo esté hecho. Hay tres soluciones: salmuera (que retiene agua), cocinar las partes por separado o asar el ave entera abierta en mariposa para que se haga pareja.\n\nLa calidad manda: un pollo de corral o una pularda tienen carne más firme y sabrosa que uno de crianza rápida. La gallina, más dura, es para caldo.",
+  "method": [
+   "Pon el ave en salmuera al 5-6 % (en frío) de 4 a 12 horas según tamaño, o sálala en seco la víspera y déjala destapada en la cámara para secar la piel.",
+   "Para asar entera, ábrela en mariposa (quita el espinazo) y aplánala.",
+   "Horno a 200-220 °C hasta que la pechuga llegue a 63-65 °C y el muslo a 75-80 °C.",
+   "Reposa 10-15 minutos antes de trinchar.",
+   "Con los huesos y la carcasa, haz un fondo o un jugo."
+  ],
+  "ratios": [
+   {
+    "use": "Salmuera para aves",
+    "ratio": "50-60 g de sal por litro, opcional 20-30 g de azúcar",
+    "note": "Pechugas 1-2 h; ave entera 6-12 h."
+   },
+   {
+    "use": "Pechuga jugosa",
+    "ratio": "63-65 °C en el centro",
+    "note": "Con producto de confianza; para mantener o regenerar, 70 °C a corazón."
+   },
+   {
+    "use": "Muslo",
+    "ratio": "75-80 °C a corazón",
+    "note": "Aguanta más: el colágeno necesita calor."
+   }
+  ],
+  "variants": [
+   {
+    "id": "salmuera",
+    "name": "Salmuera",
+    "note": "La base de un ave jugosa."
+   },
+   {
+    "id": "fondo-blanco",
+    "name": "Fondo blanco",
+    "note": "Con la carcasa."
+   }
+  ],
+  "keys": [
+   "Piel seca antes de asar: es lo que la hace crujiente.",
+   "Termómetro siempre: el punto es una temperatura, no un tiempo.",
+   "Pechuga y muslo, cada uno a su temperatura.",
+   "Reposo antes de trinchar.",
+   "La carcasa es un fondo."
+  ],
+  "errors": [
+   {
+    "p": "Pechuga seca",
+    "fix": "Pasada de temperatura. Saca a 63-65 °C y usa salmuera."
+   },
+   {
+    "p": "Muslo rosado junto al hueso",
+    "fix": "Poco tiempo o pieza fría. Termina el muslo aparte hasta 78 °C."
+   },
+   {
+    "p": "Piel blanda",
+    "fix": "Piel húmeda o horno flojo. Seca en cámara destapada y sube el horno al final."
+   }
+  ],
+  "history": "El pollo asado es un plato universal; las razas de corral y las pulardas de Francia o del Prat han hecho del ave un producto de lujo cuando se cría bien.",
+  "uses": [
+   "Asados",
+   "Arroces",
+   "Fondos y caldos",
+   "Escabeches",
+   "Brasa"
+  ],
+  "keep": "Crudo, 2-3 días en frío. Asado, enfriado rápido y en frío 3 días.",
+  "pro": "Salmuera la víspera y piel secándose en cámara. Muslos confitados o en baja temperatura y pechugas al pedido.",
+  "related": [
+   "salmuera",
+   "punto-de-la-carne",
+   "sellado-y-reposo",
+   "fondo-blanco",
+   "pato",
+   "escabeche"
+  ]
  }
 ]

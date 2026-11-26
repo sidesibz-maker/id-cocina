@@ -48,6 +48,13 @@ ok((await page.textContent('.trmeta')).includes('Tus recetas') && (await page.te
 await go('#/entrenar/ruta/salsas'); await page.waitForSelector('.tronly');
 ok((await page.textContent('.tronly')).includes('Examen de la ruta'), 'el examen de la ruta no sale');
 ok(await page.locator('.trq').count() === 1, 'el examen de la ruta no trae tarjetas');
+// Tarjetas propias
+await go('#/entrenar'); await page.waitForSelector('#trNew');
+await page.fill('#trQ', '¿Temperatura del aceite para mi tempura?'); await page.fill('#trA', '175 °C'); await page.click('#trNew button[type=submit]'); await wait(400);
+ok((await page.textContent('.trmine')).includes('mi tempura'), 'la tarjeta propia no se guarda');
+await page.click('[data-cat=mias]'); await wait(200);
+let mine = false; for (let k = 0; k < 20 && !mine; k++) { mine = (await page.textContent('#trCard')).includes('mi tempura'); if (!mine && await page.locator('[data-tr=flip]').count()) { await page.click('[data-tr=flip]'); await page.click('[data-tr="2"]'); await wait(100); } else if (!mine) break; }
+ok(mine, 'la tarjeta propia no sale en el repaso');
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();
 if (fails.length) { console.error('FALLOS en entrenar:\n - ' + fails.join('\n - ')); process.exit(1); }

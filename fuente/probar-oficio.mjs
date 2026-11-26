@@ -103,6 +103,12 @@ ok((await page.textContent('.jonday').catch(() => '')).includes('Hace 1 año'), 
 await go('#/trayectoria'); await page.click('[data-act=year]'); await page.waitForSelector('#yrBody .stats');
 ok((await page.textContent('#yrBody')).includes('días en el diario'), 'Mi año en cocina no sale');
 await page.keyboard.press('Escape'); await wait(200);
+// Por descubrir
+await go('#/trayectoria'); await page.waitForSelector('#discNew');
+await page.selectOption('#discKind', 'libro'); await page.fill('#discTitle', 'Un libro sobre fermentación'); await page.click('#discNew button[type=submit]'); await wait(500);
+ok((await page.textContent('.cdisc')).includes('Un libro sobre fermentación'), 'Por descubrir no guarda');
+await page.click('[data-disc-done]'); await page.waitForSelector('#discTake'); await page.fill('#discTake', 'El koji en casa'); await page.click('.sheet [data-ok]'); await wait(500);
+ok((await page.textContent('.cdisc')).includes('Me llevo: El koji en casa'), 'marcar como hecho no guarda lo que te llevas');
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();
 if (fails.length) { console.error('FALLOS en diario y trayectoria:\n - ' + fails.join('\n - ')); process.exit(1); }

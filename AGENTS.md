@@ -17,7 +17,7 @@ App personal de I+D de un jefe de cocina (restaurante mediterráneo de brasa en 
   - **Esta app no gestiona el restaurante** (eso lo lleva el dueño en otra app): nada de pedidos, stock, APPCC, equipo ni
     sala. Es para crear, aprender y su carrera.
   - Oficio (nov 2026): `views/tools.js` (Herramientas de cocina: escalar, temporizadores, salmueras, espesantes, panadero,
-    temperaturas), `views/lab.js` (Laboratorio creativo, `#/laboratorio`: chispas, retos con restricción, mecanismos, cuaderno de chispas), `views/kbook.js` (libro de la Biblioteca para imprimir), `views/kcompare.js` (comparar dos fichas), `views/year.js` (Mi año en cocina), `sketch.js`
+    temperaturas), `views/lab.js` (Laboratorio creativo, `#/laboratorio`: chispas, retos con restricción, mecanismos, cuaderno de chispas), `views/kbook.js` (libro de la Biblioteca para imprimir), `views/kcompare.js` (comparar dos fichas), `views/year.js` (Mi año en cocina), `views/discover.js` (Por descubrir, documentos «descubrir:…»), `saber/glosario.js` (diccionario de cocina); tarjetas propias de Entrenar en documentos «tarjeta:…», `sketch.js`
     (boceto de emplatado), `timers.js`, `views/cook.js` (modo cocina,
     `#/cocinar/plato|sub|biblioteca/<id>`), `views/journal.js` (Diario, `#/diario`), `views/career.js` (Mi trayectoria y
     dossier, `#/trayectoria`), `views/train.js` (Entrenar, tarjetas con repetición espaciada), `challenge.js` (reto de la

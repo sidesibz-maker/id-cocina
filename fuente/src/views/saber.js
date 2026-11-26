@@ -14,6 +14,7 @@ import {pathsHtml} from './paths.js';
 import {cardsFor} from './train.js';
 import {bookSheet, printBook} from './kbook.js';
 import {compareSheet} from './kcompare.js';
+import {GLOSSARY} from '../saber/glosario.js';
 // «Para ti»: fichas que casan con los intereses de Mi cocina (brasa, marisco, México, fermentos…).
 const INTEREST_WORDS = {'brasa': 'brasa', 'verdura a la brasa': 'verduras brasa', 'pescado y marisco': 'pescado marisco', 'postres': 'crema|merengue|helado|flao', 'asia': 'dashi|tempura|miso|ponzu', 'mexico': 'chiles', 'méxico': 'chiles', 'casqueria': 'casqueria', 'casquería': 'casqueria', 'encurtidos y fermentos': 'fermentacion|encurtidos', 'sin alcohol': 'maridaje sin alcohol', 'cocina ibicenca': 'ibicenca|flao|almendra', 'para compartir': 'picada'};
 function forYouHtml() {
@@ -27,7 +28,7 @@ function forYouHtml() {
 let query = '', category = '', fixes = false, activeTab = null, tabFor = '';
 const SEEN = 'id-cocina-biblioteca-vistas';
 const FAVORITES = 'id-cocina-biblioteca-favoritas';
-export const title = params => (params[0] === 'estante' ? shelfName(params[1]) : params[0] ? entryById(params[0])?.name || t('Biblioteca', 'Library') : t('Biblioteca', 'Library'));
+export const title = params => (params[0] === 'diccionario' ? t('Diccionario de cocina', 'Kitchen dictionary') : params[0] === 'estante' ? shelfName(params[1]) : params[0] ? entryById(params[0])?.name || t('Biblioteca', 'Library') : t('Biblioteca', 'Library'));
 export const presetSaber = q => { query = String(q || ''); category = ''; fixes = false; };
 const norm = v => String(v || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
 const SHELF = {
@@ -66,6 +67,18 @@ const seen = () => storedIds(SEEN);
 // Las favoritas viajan entre el PC y el móvil (documento «favoritas:lista»); las antiguas de este aparato se conservan.
 const FAV_DOC = 'favoritas:lista';
 const favorites = () => { const d = docById(FAV_DOC); return Array.isArray(d?.ids) ? d.ids : storedIds(FAVORITES); };
+// Nuevo en la Biblioteca: fichas que aún no has visto en la lista (por aparato). La primera vez cuentan como nuevas
+// las últimas que se han añadido.
+const KNOWN = 'id-cocina-biblioteca-conocidas';
+const RECENT = ['flao', 'greixonera', 'orelletes-y-bunyols', 'glaseado-de-verduras', 'asado-de-verduras', 'encurtidos-rapidos', 'tempura', 'ponzu-y-salsas-citricas', 'miso-y-koji', 'ceviche-y-crudos', 'pato', 'cordero', 'legumbres', 'salazones-y-huevas', 'pollo-y-aves', 'chocolate-y-templado', 'hojaldre', 'bizcochos'];
+const known = () => { try { const v = localStorage.getItem(KNOWN); if (v) return new Set(JSON.parse(v)); } catch {} return new Set(entries().map(e => e.id).filter(id => !RECENT.includes(id))); };
+const fresh = () => { const k = known(); return entries().filter(e => !e.mine && !k.has(e.id)); };
+// Una ficha al azar, mejor una que aún no hayas leído.
+function randomEntry() {
+ const read = docById('lectura:estado')?.read || {}, all = entries().filter(e => !e.mine), unread = all.filter(e => !read[e.id]);
+ const pool = unread.length ? unread : all;
+ return pool[Math.floor(Math.random() * pool.length)];
+}
 const markSeen = id => { try { localStorage.setItem(SEEN, JSON.stringify([id, ...seen().filter(x => x !== id)].slice(0, 8))); } catch {} };
 
 // ---------- Inicio: «¿Qué quieres saber?» ----------
@@ -103,14 +116,16 @@ function homeHtml() {
  return '<section class="kwelcome"><h1>' + esc(t('¿Qué quieres saber?', 'What do you want to know?')) + '</h1><p>' + esc(t('Una salsa, un fondo, una base o el porqué de algo. Escríbelo y te lo encuentro.', 'A sauce, a stock, a base or the why of something. Type it and I will find it.')) + '</p>' +
   '<label class="sr" for="saberQ">' + esc(t('Buscar en la Biblioteca', 'Search the library')) + '</label><div class="searchbox searchbox-big kask">' + icon('search') + '<input id="saberQ" type="search" aria-controls="saberRes" value="' + esc(query) + '" placeholder="' + esc(t('Migas crujientes, coliflor, grumos…', 'Crunchy crumbs, cauliflower, lumps…')) + '" autocomplete="off" enterkeyhint="search"></div>' +
   '<div class="ksearch-filters"><label for="saberCategory">' + esc(t('Estante', 'Shelf')) + '</label><select id="saberCategory"><option value="">' + esc(t('Todos los estantes', 'All shelves')) + '</option>' + shelves.map(([id]) => '<option value="' + esc(id) + '"' + (category === id ? ' selected' : '') + '>' + esc(shelfName(id)) + '</option>').join('') + '</select><label class="kfix-filter"><input id="saberFixes" type="checkbox"' + (fixes ? ' checked' : '') + '> ' + esc(t('Buscar errores y soluciones', 'Search mistakes and fixes')) + '</label></div>' +
-  '<div class="kstart"' + (filtering ? ' hidden' : '') + '><span class="kstart-label">' + esc(t('Para empezar', 'To start')) + '</span>' + STARTERS.map(entryById).filter(Boolean).map(e => '<a class="kchip" href="' + href(e.id) + '">' + esc(e.name) + '</a>').join('') + '</div></section>' +
+  '<div class="kstart"' + (filtering ? ' hidden' : '') + '><span class="kstart-label">' + esc(t('Para empezar', 'To start')) + '</span>' + STARTERS.map(entryById).filter(Boolean).map(e => '<a class="kchip" href="' + href(e.id) + '">' + esc(e.name) + '</a>').join('') + '<button type="button" class="kchip" data-act="random-entry">' + esc(t('Una ficha al azar', 'A random entry')) + '</button></div></section>' +
   '<p class="fine kresult-status" id="saberStatus" role="status">' + esc(result.status) + '</p><div id="saberRes">' + result.html + '</div>' +
   '<div class="khome"' + (filtering ? ' hidden' : '') + '>' +
+  (() => { const nw = fresh(); return nw.length ? '<section class="sec knew"><header class="sec-head"><div><h2>' + esc(t('Nuevo en la Biblioteca', 'New in the library')) + '</h2><p>' + esc(nw.length === 1 ? t('1 ficha que aún no has visto.', '1 entry you have not seen yet.') : nw.length + t(' fichas que aún no has visto.', ' entries you have not seen yet.')) + '</p></div><button type="button" class="linkbtn" data-act="seen-new">' + esc(t('Marcar como vistas', 'Mark as seen')) + '</button></header><div class="chips">' + nw.map(e => '<a class="chip" href="' + href(e.id) + '">' + esc(e.name) + '</a>').join('') + '</div></section>' : ''; })() +
   (saved.length ? '<section class="sec"><h2 class="day">' + esc(t('Favoritas', 'Favourites')) + '</h2><ul class="krows">' + saved.map(e => row(e)).join('') + '</ul></section>' : '') +
   forYouHtml() + pathsHtml() +
   '<section class="sec"><h2 class="day">' + esc(t('Consultas de cocina', 'Kitchen reference')) + '</h2><div class="kguides">' + GUIDES.map(([es, english, hint, ids, tab]) => '<section class="kguide"><h3>' + esc(t(es, english)) + '</h3><p>' + esc(hint) + '</p><div class="chips">' + ids.map(entryById).filter(Boolean).map(e => '<a class="chip" href="' + href(e.id, tab) + '">' + esc(e.name) + '</a>').join('') + '</div></section>').join('') + '</div></section>' +
   (last.length ? '<section class="sec"><h2 class="day">' + esc(t('Lo último que has consultado', 'Recently opened')) + '</h2><ul class="krows">' + last.map(e => row(e)).join('') + '</ul></section>' : '') +
   '<section class="sec"><h2 class="day">' + esc(t('Los estantes', 'The shelves')) + '</h2><div class="kshelves">' + shelves.map(([id, n]) => '<a class="kshelf" href="#/biblioteca/estante/' + id + '">' + icon((SHELF[id] || SHELF.conceptos)[0]) + '<strong>' + esc(shelfName(id)) + '</strong><span>' + esc((SHELF[id] || SHELF.conceptos)[1]) + '</span><small>' + esc(n === 1 ? t('1 entrada', '1 entry') : n + t(' entradas', ' entries')) + '</small></a>').join('') + '</div></section>' +
+  '<section class="sec kbook-cta"><div><h2 class="day">' + esc(t('Diccionario de cocina', 'Kitchen dictionary')) + '</h2><p>' + esc(GLOSSARY.length + t(' términos del oficio, de abatir a umami.', ' trade terms, from blast-chill to umami.')) + '</p></div><a class="btn ghost" href="#/biblioteca/diccionario">' + icon('library') + esc(t('Abrir el diccionario', 'Open the dictionary')) + '</a></section>' +
   '<section class="sec kbook-cta"><div><h2 class="day">' + esc(t('Tu libro de cocina', 'Your cookbook')) + '</h2><p>' + esc(t('Tus favoritas, tus versiones, una ruta o un estante, en un documento para imprimir o guardar en PDF.', 'Your favourites, your versions, a path or a shelf, in one document to print or save as PDF.')) + '</p></div><button type="button" class="btn ghost" data-act="kbook">' + icon('down') + esc(t('Preparar mi libro', 'Prepare my book')) + '</button></section>' +
   (mineList.length ? '<section class="sec"><h2 class="day">' + esc(t('Con tu versión', 'With your version')) + '</h2><ul class="krows">' + mineList.map(e => row(e)).join('') + '</ul></section>' : '') +
   (trash.length ? '<details class="sec kbin"><summary>' + esc(t('Papelera de la Biblioteca', 'Library bin')) + ' (' + trash.length + ')</summary><ul>' + trash.map(x => '<li><span>' + esc(x.custom.name) + '</span><button type="button" class="btn ghost" data-restore-entry="' + esc(x.id) + '">' + esc(t('Recuperar', 'Restore')) + '</button></li>').join('') + '</ul></details>' : '') +
@@ -201,7 +216,15 @@ function entryHtml(id, tab) {
   (e.mine ? '<p class="fine center"><button type="button" class="linkbtn" data-act="trash-entry">' + esc(t('Enviar esta entrada a la papelera', 'Move this entry to the bin')) + '</button></p>' : '') + '</article>';
 }
 
+// ---------- Diccionario de cocina: términos del oficio, de la A a la Z ----------
+function dictHtml(focus) {
+ const list = GLOSSARY.slice().sort((a, b) => a[0].localeCompare(b[0], 'es'));
+ return '<a class="back" href="#/biblioteca">' + icon('left') + esc(t('Biblioteca', 'Library')) + '</a><header class="page-head"><h1>' + esc(t('Diccionario de cocina', 'Kitchen dictionary')) + '</h1><p>' + esc(t('Las palabras del oficio en una o dos frases. Cuando hay ficha, enlaza para saber más.', 'The words of the trade in a sentence or two. Where there is an entry, it links to learn more.')) + '</p></header>' +
+  '<div class="searchbox"><label class="sr" for="dictQ">' + esc(t('Buscar un término', 'Find a term')) + '</label>' + icon('search') + '<input id="dictQ" type="search" autocomplete="off" placeholder="' + esc(t('Napar, desglasar, brunoise…', 'Napar, deglaze, brunoise…')) + '"></div>' +
+  '<p class="fine" id="dictStatus" role="status"></p><dl class="kdict">' + list.map(([w, d, id]) => '<div class="kdict-row' + (norm(w) === norm(focus) ? ' is-focus' : '') + '" id="dict-' + esc(slug(w)) + '" data-w="' + esc(norm(w + ' ' + d)) + '"><dt>' + esc(w) + '</dt><dd>' + esc(d) + (id && entryById(id) ? ' <a class="kref" href="' + href(id) + '">' + esc(t('Ficha: ', 'Entry: ') + entryById(id).name) + '</a>' : '') + '</dd></div>').join('') + '</dl>';
+}
 export const render = params => {
+ if (params[0] === 'diccionario') return dictHtml(params[1] ? decodeURIComponent(params[1]) : '');
  if (params[0] === 'estante') return shelfHtml(params[1]);
  if (params[0]) { if (tabFor !== params[0]) { tabFor = params[0]; activeTab = null; } return entryHtml(params[0], params[1] || activeTab); }
  return homeHtml();
@@ -232,6 +255,12 @@ function entryFromReply(text, topic) {
 
 export function mount(root, params) {
  const repaint = () => { if (root.isConnected) root.innerHTML = render(params); };
+ if (params[0] === 'diccionario') {
+  const dq = $('#dictQ', root);
+  dq?.addEventListener('input', () => { const q = norm(dq.value).trim(); let n = 0; $$('.kdict-row', root).forEach(row => { row.hidden = !!q && !row.dataset.w.includes(q); if (!row.hidden) n++; }); $('#dictStatus', root).textContent = q ? (n === 1 ? t('1 término', '1 term') : n + t(' términos', ' terms')) : ''; });
+  if (params[1]) setTimeout(() => $('.kdict-row.is-focus', root)?.scrollIntoView({block: 'center'}), 50);
+  return null;
+ }
  if (params[0] && params[0] !== 'estante' && entryById(params[0])) markSeen(params[0]);
  const showTab = id => {
   activeTab = id; params[1] = id;
@@ -336,6 +365,8 @@ export function mount(root, params) {
   if (b.dataset.ktab) { showTab(b.dataset.ktab); return; }
   const act = b.dataset.act, id = params[0];
   if (act === 'kbook') { bookSheet(favorites()); return; }
+  if (act === 'random-entry') { const e2 = randomEntry(); if (e2) location.hash = href(e2.id); return; }
+  if (act === 'seen-new') { try { localStorage.setItem(KNOWN, JSON.stringify(entries().map(e => e.id))); } catch {} b.closest('.knew')?.remove(); return; }
   if (act === 'compare-entry' && entryById(id)) { compareSheet(id); return; }
   if (act === 'print-entry' && entryById(id)) { printBook(entryById(id).name, [entryById(id)]); return; }
   if (act === 'cook-mode') {

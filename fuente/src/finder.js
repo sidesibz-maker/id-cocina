@@ -5,6 +5,7 @@ import {esc, icon, $, $$, sheet} from './ui.js';
 import {state, liveDishes, liveSubs, liveDocs} from './store.js';
 import {search as saberSearch} from './saber/index.js';
 import {toolList} from './views/tools.js';
+import {GLOSSARY} from './saber/glosario.js';
 
 const norm = v => String(v || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/\s+/g, ' ').trim();
 const SECTIONS = () => [
@@ -28,6 +29,7 @@ export function find(q) {
  add(t('Subrecetas', 'Sub-recipes'), liveSubs().map(x => ({href: '#/subreceta/' + x.id, ic: 'pan', title: x.name, sub: x.yield ? t('Rinde ', 'Yields ') + x.yield : '', s: score(q, x.name, x.items.map(i => i.n).join(' ') + ' ' + x.method)})));
  const lib = q.trim().length >= 2 ? saberSearch(q, 6) : [];
  if (lib.length) groups.push({label: t('Biblioteca', 'Library'), rows: lib.map((e, k) => ({href: '#/biblioteca/' + e.id, ic: 'library', title: e.name, sub: e.summary || '', s: 100 - k}))});
+ add(t('Diccionario', 'Dictionary'), GLOSSARY.map(([w, d]) => ({href: '#/biblioteca/diccionario/' + encodeURIComponent(w), ic: 'library', title: w, sub: d, s: score(q, w)})));
  add(t('Diario', 'Journal'), liveDocs('diario').map(e => ({href: '#/diario/' + encodeURIComponent(e.id), ic: 'edit', title: new Date(e.day + 'T12:00:00').toLocaleDateString(en() ? 'en-GB' : 'es-ES', {weekday: 'long', day: 'numeric', month: 'long'}), sub: [e.learned, e.good, e.bad].filter(Boolean)[0] || '', s: score(q, '', [e.good, e.bad, e.learned, e.ideas, (e.dishNames || []).join(' ')].join(' '))})));
  if (state.kb) add(t('Productos', 'Products'), state.kb.list.map(i => ({href: '#/sabores/' + i.id, ic: 'wheel', title: en() ? i.en : i.es, sub: t('Con qué combina', 'What it pairs with'), s: score(q, en() ? i.en : i.es, (i.aka || []).join(' '))})));
  add(t('Chispas', 'Sparks'), liveDocs('chispa').map(s => ({href: '#/laboratorio', ic: 'spark', title: s.text.slice(0, 70), sub: '', s: score(q, s.text)})));

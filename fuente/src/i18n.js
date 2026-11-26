@@ -9,7 +9,8 @@ export const prefs = {
  lang: saved.lang === 'en' ? 'en' : 'es',
  theme: saved.theme === 'dark' || saved.theme === 'light' ? saved.theme : null,
  stepsHidden: !!saved.stepsHidden,
- size: ['grande', 'enorme'].includes(saved.size) ? saved.size : 'normal'
+ size: ['grande', 'enorme'].includes(saved.size) ? saved.size : 'normal',
+ contrast: saved.contrast === 'alto' ? 'alto' : 'normal'
 };
 
 export const systemDark = () => typeof matchMedia === 'function' && matchMedia('(prefers-color-scheme: dark)').matches;
@@ -21,6 +22,8 @@ export function applyPrefs() {
  if (prefs.theme) root.dataset.theme = prefs.theme; else delete root.dataset.theme;
  // Tamaño de letra: toda la app crece a la vez (texto, botones y huecos), para leer de lejos o con poca vista.
  if (prefs.size && prefs.size !== 'normal') root.dataset.size = prefs.size; else delete root.dataset.size;
+ // Alto contraste: tinta más oscura, líneas marcadas y textos secundarios más legibles (de día y de noche).
+ if (prefs.contrast === 'alto') root.dataset.contrast = 'alto'; else delete root.dataset.contrast;
  document.querySelectorAll('meta[name=theme-color]').forEach(meta => {
   if (prefs.theme) meta.content = prefs.theme === 'dark' ? '#141311' : '#ECE7DE';
  });

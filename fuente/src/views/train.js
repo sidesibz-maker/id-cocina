@@ -4,7 +4,7 @@
 // El estado va en un documento «repaso:estado» (copia y sincronización).
 import {t, en, dayKey} from '../i18n.js';
 import {esc, icon, $, toast} from '../ui.js';
-import {docById, saveDoc, liveSubs, liveDishes, liveDocs} from '../store.js';
+import {docById, saveDoc, liveSubs, liveDishes, liveDocs, trashDoc} from '../store.js';
 import {entries, entryById} from '../saber/index.js';
 import {PATHS} from './paths.js';
 
@@ -35,6 +35,8 @@ export function cards() {
  }
  // Lo que apuntaste como aprendido en el diario vuelve en tarjetas, para que no se olvide.
  for (const e of liveDocs('diario').filter(e => String(e.learned || '').trim().length > 10)) out.push({id: 'mj|' + e.id, cat: 'mias', q: t('¿Qué aprendiste el ', 'What did you learn on ') + new Date(e.day + 'T12:00:00').toLocaleDateString(en() ? 'en-GB' : 'es-ES', {day: 'numeric', month: 'long'}) + ((e.dishNames || []).length ? ' (' + e.dishNames.join(', ') + ')' : '') + '?', a: e.learned});
+ // Las tarjetas que escribes tú (documentos «tarjeta:…»).
+ for (const c of liveDocs('tarjeta')) if (c.q && c.a) out.push({id: 'mc|' + c.id, cat: 'mias', q: c.q, a: c.a});
  for (const [k, v] of TEMPS) out.push({id: 't|' + k, cat: 'temperaturas', q: k + (k.endsWith('de') || k.endsWith(', a') ? '…?' : t(': ¿temperatura?', ': temperature?')), a: v});
  return out;
 }
@@ -67,7 +69,15 @@ export function render(params = []) {
   '<div class="stats"><div class="stat"><strong>' + s.known + '</strong><span>' + esc(t('tarjetas que ya dominas', 'cards you master')) + '</span></div><div class="stat"><strong>' + s.seen + ' / ' + s.total + '</strong><span>' + esc(t('vistas alguna vez', 'seen at least once')) + '</span></div><div class="stat"><strong>' + s.due + '</strong><span>' + esc(t('para repasar hoy', 'to review today')) + '</span></div><div class="stat"><strong>' + (d?.streak || 0) + '</strong><span>' + esc(t('días seguidos entrenando', 'days in a row')) + '</span></div></div>' +
   (path ? '<p class="tronly">' + esc(t('Examen de la ruta «', 'Test on the path “') + (en() ? path[2] : path[1]) + t('»: tarjetas de todas sus fichas. ', '”: cards from all its entries. ')) + '<a href="#/entrenar">' + esc(t('Volver a todos los temas', 'Back to all topics')) + '</a></p>' : focus ? '<p class="tronly">' + esc(t('Repasando solo la ficha ', 'Reviewing only the entry ')) + '<a href="#/biblioteca/' + esc(focus.id) + '">' + esc(focus.name) + '</a>. <a href="#/entrenar">' + esc(t('Volver a todos los temas', 'Back to all topics')) + '</a></p>' :
   '<div class="seg tcats" role="group" aria-label="' + esc(t('Tema', 'Topic')) + '">' + CATS.map(c => '<button type="button" class="seg-btn' + (c[0] === cat ? ' active' : '') + '" data-cat="' + c[0] + '" aria-pressed="' + (c[0] === cat) + '">' + esc(en() ? c[2] : c[1]) + '</button>').join('') + '</div>') +
-  '<div id="trCard" aria-live="polite">' + cardHtml() + '</div>';
+  '<div id="trCard" aria-live="polite">' + cardHtml() + '</div>' + mineHtml();
+}
+// Tus tarjetas: lo que quieres saberte de memoria y no está en ningún sitio (tus puntos, tus proporciones, nombres…).
+function mineHtml() {
+ const list = liveDocs('tarjeta').sort((a, b) => String(b.created_at).localeCompare(String(a.created_at)));
+ return '<section class="sec"><header class="sec-head"><div><h2>' + esc(t('Tus tarjetas', 'Your cards')) + '</h2><p>' + esc(t('Escribe una pregunta y su respuesta: entra en el repaso con las demás, en «Tus recetas».', 'Write a question and its answer: it joins the review with the rest, under “Your recipes”.')) + '</p></div></header>' +
+  '<form id="trNew" class="card trnew"><div class="tfield"><label for="trQ">' + esc(t('Pregunta', 'Question')) + '</label><input id="trQ" maxlength="300" autocomplete="off" placeholder="' + esc(t('p. ej. ¿A cuántos grados saco el cordero lechal?', 'e.g. At what temperature do I take out the suckling lamb?')) + '"></div>' +
+  '<div class="tfield"><label for="trA">' + esc(t('Respuesta', 'Answer')) + '</label><textarea id="trA" rows="3" maxlength="2000" data-voice></textarea></div><div class="row-actions"><button type="submit" class="btn primary">' + icon('plus') + esc(t('Añadir tarjeta', 'Add card')) + '</button></div></form>' +
+  (list.length ? '<details class="trmine"><summary>' + esc(list.length === 1 ? t('1 tarjeta tuya', '1 card of yours') : list.length + t(' tarjetas tuyas', ' cards of yours')) + '</summary><ul class="plain">' + list.map(c => '<li><strong>' + esc(c.q) + '</strong><br>' + esc(c.a) + ' <button type="button" class="linkbtn" data-trash-card="' + esc(c.id) + '">' + esc(t('A la papelera', 'To the bin')) + '</button></li>').join('') + '</ul></details>' : '') + '</section>';
 }
 function cardHtml() {
  const s = session;
@@ -104,6 +114,16 @@ export function mount(root, params = []) {
   if (b.dataset.tr === 'more') { newSession(); root.innerHTML = render(params); return; }
   await answer(Number(b.dataset.tr)); paint();
  });
+ root.addEventListener('submit', async e => {
+  if (e.target.id !== 'trNew') return;
+  e.preventDefault();
+  const q = $('#trQ', root).value.trim(), a = $('#trA', root).value.trim();
+  if (!q || !a) { toast(t('Escribe la pregunta y la respuesta.', 'Write the question and the answer.'), 'error'); return; }
+  await saveDoc('tarjeta', null, {q, a}); toast(t('Tarjeta añadida.', 'Card added.'));
+  if (only || cat === 'mias' || cat === 'todo') newSession();
+  root.innerHTML = render(params);
+ });
+ root.addEventListener('click', async e => { const b = e.target.closest('[data-trash-card]'); if (!b) return; await trashDoc(b.dataset.trashCard); toast(t('En la papelera.', 'Moved to the bin.')); root.innerHTML = render(params); });
  // Teclado: espacio para dar la vuelta; 1, 2, 3 para responder.
  const keys = e => { if (/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName) || document.documentElement.classList.contains('has-sheet')) return; if (e.key === ' ' && session && !session.shown && session.at < session.list.length) { e.preventDefault(); session.shown = true; paint(); } else if (session?.shown && ['1', '2', '3'].includes(e.key)) { answer(Number(e.key) - 1).then(paint); } };
  document.addEventListener('keydown', keys);
