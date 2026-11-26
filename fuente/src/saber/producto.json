@@ -784,5 +784,284 @@
    "confitado",
    "aceites-aromatizados"
   ]
+ },
+ {
+  "id": "setas",
+  "name": "Setas",
+  "name_en": "Mushrooms",
+  "cat": "producto",
+  "group": "Huerta y monte",
+  "aka": [
+   "hongos",
+   "boletus",
+   "rebozuelo",
+   "niscalo",
+   "seta de cardo",
+   "shiitake",
+   "champinon",
+   "setas secas"
+  ],
+  "summary": "Limpiar, cocinar y conservar setas frescas y secas para que doren y concentren sabor en vez de soltar agua.",
+  "what": "Las setas tienen mucha agua y mucho umami. Si se amontonan en la sartén sueltan el agua y se cuecen; si se cocinan en tandas, a fuego vivo y secas, doran y su sabor se concentra. Las secas son un condimento potente: su agua de remojo es un caldo.",
+  "method": [
+   "Limpia con brocha o paño húmedo; lava solo si traen mucha tierra y sécalas enseguida.",
+   "Corta según la seta: láminas para las grandes, enteras o en mitades las pequeñas.",
+   "Sartén muy caliente con poca grasa y tandas pequeñas; no sales hasta que estén doradas.",
+   "Termina con mantequilla, ajo y perejil, o con un punto de vinagre o jerez.",
+   "Las secas, rehidrata en agua templada 20-30 minutos y cuela el agua por papel para usarla."
+  ],
+  "ratios": [
+   {
+    "use": "Setas secas",
+    "ratio": "10 g de seta seca equivalen a unos 100 g de fresca",
+    "note": "Remojo de 20-30 minutos."
+   },
+   {
+    "use": "Ración de guarnición",
+    "ratio": "80-120 g de seta fresca limpia",
+    "note": "Pierde mucho peso al cocinar."
+   },
+   {
+    "use": "Polvo de seta",
+    "ratio": "Seta seca triturada y tamizada",
+    "note": "Condimento de umami."
+   }
+  ],
+  "variants": [
+   {
+    "id": "umami-y-fondo",
+    "name": "Umami y fondo",
+    "note": "Las setas son una de las grandes fuentes."
+   },
+   {
+    "id": "deshidratados-y-crujientes",
+    "name": "Deshidratados",
+    "note": "Para hacer polvos de seta."
+   }
+  ],
+  "keys": [
+   "Secas y en tandas pequeñas: si no, se cuecen.",
+   "La sal al final del dorado.",
+   "El agua de remojo de las secas es oro: cuélala y úsala.",
+   "Un toque ácido al final las levanta.",
+   "Las silvestres, solo de proveedores que garanticen la identificación."
+  ],
+  "errors": [
+   {
+    "p": "Sueltan agua y quedan gomosas",
+    "fix": "Sartén poco caliente o demasiadas a la vez. Tandas pequeñas y fuego vivo."
+   },
+   {
+    "p": "Arena en el plato",
+    "fix": "Limpieza insuficiente. Cepilla bien y revisa los pies."
+   },
+   {
+    "p": "Sabor plano",
+    "fix": "Falta dorado o acidez. Dora más y termina con unas gotas de vinagre."
+   }
+  ],
+  "history": "Las setas de otoño son tradición en muchas zonas de España, con recetas populares de níscalos, boletus o setas de cardo.",
+  "uses": [
+   "Guarniciones",
+   "Arroces y guisos",
+   "Salsas y jugos",
+   "Rellenos",
+   "Polvos y caldos"
+  ],
+  "keep": "Frescas en frío, en papel o caja ventilada, pocos días; secas en bote hermético.",
+  "pro": "Limpia y corta al recibir, y saltea por tandas pequeñas a la hora del servicio. Guarda las secas y su agua para fondos.",
+  "related": [
+   "umami-y-fondo",
+   "deshidratados-y-crujientes",
+   "hierbas-frescas"
+  ]
+ },
+ {
+  "id": "alcachofas",
+  "name": "Alcachofas",
+  "name_en": "Artichokes",
+  "cat": "producto",
+  "group": "Huerta y monte",
+  "aka": [
+   "alcachofa",
+   "tornear alcachofas",
+   "corazones de alcachofa",
+   "alcachofa a la brasa",
+   "alcachofa confitada"
+  ],
+  "summary": "Tornear sin que se oxiden y elegir cocción: confitada, a la brasa, frita o cruda en láminas.",
+  "what": "La alcachofa se oxida en cuanto se corta, así que se trabaja con agua acidulada al lado. Se quitan las hojas duras hasta llegar a las tiernas, se pela el tallo y se retira la pelusa si la tiene. Según la cocción cambia mucho: confitada queda melosa, a la brasa ahumada, frita crujiente y cruda en láminas finísimas, fresca y algo amarga.",
+  "method": [
+   "Prepara un bol con agua fría y zumo de limón o perejil.",
+   "Quita las hojas exteriores hasta que salgan pálidas y tiernas; corta la punta.",
+   "Pela el tallo con puntilla y redondea la base.",
+   "Abre por la mitad y retira la pelusa con una cucharilla si la tiene; al agua acidulada enseguida.",
+   "Cocina según el uso: confitada en aceite a 85-90 °C, a la brasa tras un escaldado corto, o frita en láminas."
+  ],
+  "ratios": [
+   {
+    "use": "Confitada",
+    "ratio": "Aceite a 85-90 °C, 20-30 minutos",
+    "note": "Hasta que entre la puntilla sin esfuerzo."
+   },
+   {
+    "use": "A la brasa",
+    "ratio": "Escaldar 5-8 minutos y marcar en la brasa",
+    "note": "O entera en el rescoldo."
+   },
+   {
+    "use": "Frita en láminas",
+    "ratio": "Láminas de 2 mm, secas, a 160-170 °C",
+    "note": "Escurrir y salar al momento."
+   },
+   {
+    "use": "Rendimiento",
+    "ratio": "Del 30 al 40 % de la pieza entera",
+    "note": "Muchas hojas fuera."
+   }
+  ],
+  "variants": [
+   {
+    "id": "confitado",
+    "name": "Confitado",
+    "note": "La alcachofa confitada es un clásico."
+   },
+   {
+    "id": "fuego-y-brasa",
+    "name": "Fuego y brasa",
+    "note": "Para hacerlas en el rescoldo."
+   }
+  ],
+  "keys": [
+   "Agua acidulada siempre al lado.",
+   "Cuchillo de acero inoxidable: el carbono las ennegrece.",
+   "Las hojas tiernas también se comen; las duras, al caldo.",
+   "Su amargor pide grasa y algo salado (jamón, anchoa).",
+   "Con el vino cuesta maridar: en el plato, mejor ácido y grasa."
+  ],
+  "errors": [
+   {
+    "p": "Se ponen negras",
+    "fix": "Tardaron en ir al agua acidulada. Trabaja de una en una y sumerge enseguida."
+   },
+   {
+    "p": "Duras o fibrosas",
+    "fix": "Quedaron hojas duras. Quita más capas hasta las pálidas."
+   },
+   {
+    "p": "Amargas en exceso",
+    "fix": "Pieza pasada o mal limpia. Elige alcachofas cerradas y pesadas."
+   }
+  ],
+  "history": "La alcachofa es una verdura de invierno muy de la huerta mediterránea, con muchas recetas tradicionales en España e Italia.",
+  "uses": [
+   "Brasa",
+   "Guarniciones",
+   "Arroces",
+   "Crudas en ensalada",
+   "Fritas como aperitivo"
+  ],
+  "keep": "Enteras, en frío y en bolsa unos días; torneadas, en su aceite de confitar o en agua acidulada en frío y poco tiempo.",
+  "pro": "Tornea por tandas y guarda en agua acidulada; confítalas en lote y termina en la brasa en el pase.",
+  "related": [
+   "confitado",
+   "fuego-y-brasa",
+   "acidez-en-cocina"
+  ]
+ },
+ {
+  "id": "cefalopodos",
+  "name": "Pulpo, calamar y sepia",
+  "name_en": "Octopus, squid and cuttlefish",
+  "cat": "producto",
+  "group": "Pescado y marisco",
+  "aka": [
+   "pulpo",
+   "calamar",
+   "sepia",
+   "chipiron",
+   "pulpo a la brasa",
+   "cocer pulpo",
+   "calamar a la brasa"
+  ],
+  "summary": "La regla de estos tres: o muy poco tiempo o mucho. Cómo limpiar, cocer el pulpo y marcar calamar y sepia sin que se pongan duros.",
+  "what": "Calamar, sepia y chipirón quedan tiernos con fuego muy fuerte y muy poco tiempo; si se pasan, se endurecen y luego hace falta una cocción larga para volver a ablandarlos. El pulpo, en cambio, necesita una cocción larga para ablandar su colágeno, y después se termina a la brasa o a la plancha.",
+  "method": [
+   "Calamar y sepia: limpia, quita la piel y la pluma o el hueso, y seca muy bien.",
+   "Marca a fuego máximo en plancha o brasa: 1-2 minutos por cara según el grosor, y sala al final.",
+   "Pulpo: congélalo antes si es fresco (ablanda la fibra), o cómpralo ya congelado.",
+   "Cuece el pulpo en agua hirviendo sin sal, asustándolo tres veces, y cuenta el tiempo según el peso.",
+   "Deja reposar en el agua unos minutos, escurre y termina a la brasa o plancha para dorar."
+  ],
+  "ratios": [
+   {
+    "use": "Pulpo de 2 kg",
+    "ratio": "40-50 minutos de cocción",
+    "note": "Pinchar en la parte gruesa: debe entrar fácil."
+   },
+   {
+    "use": "Pulpo a baja temperatura",
+    "ratio": "77-80 °C, 4-6 horas al vacío",
+    "note": "Muy tierno y entero."
+   },
+   {
+    "use": "Calamar en tiras o anillas",
+    "ratio": "30-60 segundos a fuego máximo",
+    "note": "Blanco y tierno."
+   },
+   {
+    "use": "Sepia en dados",
+    "ratio": "1-2 minutos a fuego máximo",
+    "note": "Con su punto de dorado."
+   }
+  ],
+  "variants": [
+   {
+    "id": "coccion-de-marisco",
+    "name": "Cocción de marisco",
+    "note": "Los tiempos del resto del marisco."
+   },
+   {
+    "id": "fuego-y-brasa",
+    "name": "Fuego y brasa",
+    "note": "Para el acabado."
+   }
+  ],
+  "keys": [
+   "O muy poco tiempo o mucho; nunca un término medio.",
+   "Secos antes de marcar, o se cuecen.",
+   "La tinta de la sepia y del calamar se guarda para arroces y salsas.",
+   "El pulpo, congelado antes: más tierno.",
+   "Sal al final, a la plancha."
+  ],
+  "errors": [
+   {
+    "p": "Calamar duro y gomoso",
+    "fix": "Se pasó del poco tiempo. Fuego más fuerte y más corto, o guísalo largo."
+   },
+   {
+    "p": "Pulpo duro",
+    "fix": "Falta cocción. Sigue cociendo y prueba cada 5 minutos."
+   },
+   {
+    "p": "Pulpo que pierde la piel",
+    "fix": "Cocción excesiva o hervor muy fuerte. Hervor suave y reposo en el agua."
+   }
+  ],
+  "history": "El pulpo cocido y los chipirones y calamares a la plancha o en su tinta son recetas muy populares en toda la costa española.",
+  "uses": [
+   "Brasa y plancha",
+   "Arroces negros y con tinta",
+   "Ensaladas y salpicones",
+   "Guisos"
+  ],
+  "keep": "Frescos en frío y pocos días; el pulpo cocido, en frío o congelado en su agua.",
+  "pro": "Cuece el pulpo en lotes, racionado y al vacío; en el pase solo se marca. Calamares limpios y secos en bandeja con papel.",
+  "related": [
+   "coccion-de-marisco",
+   "fuego-y-brasa",
+   "baja-temperatura",
+   "arroces"
+  ]
  }
 ]
