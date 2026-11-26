@@ -997,3 +997,9 @@ html.cooking .tabs{display:none}html.cooking .view{padding-bottom:calc(32px + en
 .labsp-img{width:100%;aspect-ratio:4/3;object-fit:cover;border:1px solid var(--line)}
 .labideas{display:grid;gap:16px}.labideas .idea-card .btn{margin-top:12px}
 .labsp-foot{flex-wrap:wrap}
+
+/* Móvil: cifras compactas para que lo importante quede a la vista. */
+@media (max-width:640px){
+ .stats{grid-template-columns:repeat(auto-fit,minmax(72px,1fr));gap:4px}.stat{padding:8px 8px}.stat strong{font-size:20px;white-space:nowrap}.stat span{font-size:11.5px;line-height:1.25;display:block}
+ .view-entrenar .page-head p,.view-trayectoria .page-head p,.view-estilo .page-head p{font-size:15px}
+}

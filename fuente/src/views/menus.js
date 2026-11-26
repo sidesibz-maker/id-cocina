@@ -30,7 +30,7 @@ function intensity(p) { if (!p || p.empty) return null; const v = Object.values(
 function rhythmHtml(rows) {
  const pts = rows.map((r, k) => ({k, d: r.d, v: intensity(r.p), dom: (r.p?.dominant || []).map(id => axisName(id).toLowerCase())})).filter(x => x.v != null);
  if (pts.length < 3) return '';
- const w = 640, h = 180, px = 40, py = 24, n = pts.length, x = i => px + i * (w - px * 2) / (n - 1), y = v => h - py - v / 10 * (h - py * 2);
+ const narrow = typeof innerWidth === 'number' && innerWidth < 640, w = narrow ? 360 : 640, h = narrow ? 200 : 180, px = narrow ? 32 : 40, py = 24, n = pts.length, x = i => px + i * (w - px * 2) / (n - 1), y = v => h - py - v / 10 * (h - py * 2);
  const line = pts.map((p, i) => x(i).toFixed(1) + ',' + y(p.v).toFixed(1)).join(' ');
  // Avisos de ritmo: tres pases seguidos subiendo sin descanso, o el final más intenso que el centro.
  const notes = [];
