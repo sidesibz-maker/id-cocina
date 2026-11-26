@@ -26,7 +26,7 @@ export function seasonOfMonth(kb, m) {
 }
 const chips = list => {
  const pantry = state.kitchen?.pantry || new Set();
- return '<div class="chips">' + list.sort((a, b) => (en() ? a.en.localeCompare(b.en) : a.es.localeCompare(b.es, 'es'))).map(i => '<a class="chip' + (pantry.has(i.id) ? ' chip-have' : '') + '" href="#/sabores/' + esc(i.id) + '">' + esc(en() ? i.en : i.es) + '<small>' + esc((FAMILY[i.family] ? (en() ? FAMILY[i.family][1] : FAMILY[i.family][0]) : '').toLowerCase()) + '</small></a>').join('') + '</div>';
+ return '<div class="chips">' + list.sort((a, b) => (en() ? a.en.localeCompare(b.en) : a.es.localeCompare(b.es, 'es'))).map(i => '<a class="chip' + (pantry.has(i.id) ? ' chip-have' : '') + '" href="#/laboratorio/' + esc(i.id) + '">' + esc(en() ? i.en : i.es) + '<small>' + esc((FAMILY[i.family] ? (en() ? FAMILY[i.family][1] : FAMILY[i.family][0]) : '').toLowerCase()) + '</small></a>').join('') + '</div>';
 };
 export function render(params) {
  const kb = state.kb, now = new Date().getMonth() + 1, m = Math.min(12, Math.max(1, Number(params[0]) || now));

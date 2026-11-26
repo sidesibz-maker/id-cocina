@@ -4,7 +4,7 @@
 // El estado va en un documento «repaso:estado» (copia y sincronización).
 import {t, en, dayKey} from '../i18n.js';
 import {esc, icon, $, toast} from '../ui.js';
-import {docById, saveDoc, liveSubs, liveDishes} from '../store.js';
+import {docById, saveDoc, liveSubs, liveDishes, liveDocs} from '../store.js';
 import {entries} from '../saber/index.js';
 
 export const title = () => t('Entrenar', 'Train');
@@ -32,6 +32,8 @@ export function cards() {
   if (comps.length) out.push({id: 'md|' + d.id, cat: 'mias', q: d.name + t(': ¿qué componentes lleva y con qué?', ': which components and with what?'), a: comps.map(c => (c.name || t('Componente', 'Component')) + ': ' + c.items.map(i => i.n + (i.q ? ' (' + i.q + ')' : '')).join(', ')).join('\n')});
   if (d.plating) out.push({id: 'mp|' + d.id, cat: 'mias', q: d.name + t(': ¿cómo se emplata?', ': how is it plated?'), a: d.plating});
  }
+ // Lo que apuntaste como aprendido en el diario vuelve en tarjetas, para que no se olvide.
+ for (const e of liveDocs('diario').filter(e => String(e.learned || '').trim().length > 10)) out.push({id: 'mj|' + e.id, cat: 'mias', q: t('¿Qué aprendiste el ', 'What did you learn on ') + new Date(e.day + 'T12:00:00').toLocaleDateString(en() ? 'en-GB' : 'es-ES', {day: 'numeric', month: 'long'}) + ((e.dishNames || []).length ? ' (' + e.dishNames.join(', ') + ')' : '') + '?', a: e.learned});
  for (const [k, v] of TEMPS) out.push({id: 't|' + k, cat: 'temperaturas', q: k + (k.endsWith('de') || k.endsWith(', a') ? '…?' : t(': ¿temperatura?', ': temperature?')), a: v});
  return out;
 }

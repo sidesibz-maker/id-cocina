@@ -11,7 +11,7 @@ import {trendCard, KINDS, kindLabel, heatMark, trText, trIdeas, trSources, trPla
 import {go} from '../nav.js';
 import {iaOn, askIa, iaMessage} from '../ia.js';
 import {cleanProfile} from '../ai-core.js';
-import {saveSettings} from '../store.js';
+import {saveSettings, saveDoc} from '../store.js';
 import {INTERESTS} from './kitchen-view.js';
 
 // El radar se ve por tema (lo más útil arriba y cada tema con sus avisos), por fecha o solo lo guardado.
@@ -146,7 +146,7 @@ function detail(id) {
  if (ideas.length) html += '<section class="story-sec"><h2>' + esc(ideas.length === 1 ? t('Una idea de plato', 'A dish idea') : t('Ideas de plato', 'Dish ideas')) + '</h2><div class="idea-list">' + ideas.map(ideaCard).join('') + '</div></section>';
  if (sources.length) html += '<section class="story-sec"><h2>' + esc(t('Fuentes', 'Sources')) + '</h2><ul class="sources">' + sources.map(s => '<li><a href="' + esc(s.url) + '" target="_blank" rel="noopener noreferrer">' + esc(s.name) + icon('out') + '</a><small>' + esc(hostOf(s.url)) + (/^\d{4}-\d{2}-\d{2}$/.test(s.date) ? ', ' + esc(shortDate(s.date)) : '') + '</small></li>').join('') + '</ul></section>';
  if (state.canEdit) {
-  html += '<div class="story-actions"><button type="button" class="btn ' + (tr.saved_at ? 'primary' : 'ghost') + '" data-act="save" aria-pressed="' + !!tr.saved_at + '">' + icon('star') + esc(tr.saved_at ? t('Guardado', 'Saved') : t('Guardar', 'Save')) + '</button>' +
+  html += '<div class="story-actions"><button type="button" class="btn ' + (tr.saved_at ? 'primary' : 'ghost') + '" data-act="save" aria-pressed="' + !!tr.saved_at + '">' + icon('star') + esc(tr.saved_at ? t('Guardado', 'Saved') : t('Guardar', 'Save')) + '</button><button type="button" class="btn ghost" data-act="spark">' + icon('spark') + esc(t('A mi cuaderno de chispas', 'To my spark notebook')) + '</button>' +
    '<a class="btn ghost" href="#/crear/ideas/' + esc(tr.id) + '">' + icon('spark') + esc(t('Más ideas con esto', 'More ideas from this')) + '</a>' +
    '<button type="button" class="btn ghost" data-act="dismiss">' + icon(tr.dismissed_at ? 'undo' : 'x') + esc(tr.dismissed_at ? t('Recuperar', 'Restore') : t('No me interesa', 'Not for me')) + '</button></div>';
  }
@@ -206,6 +206,7 @@ export function mount(root, params) {
   if (!act) return;
   const button = e.target.closest('[data-act]');
   try {
+   if (act === 'spark') { await saveDoc('chispa', null, {text: trText(tr, 'title') + '. ' + (trText(tr, 'adapt') || trText(tr, 'summary')), from: {kind: 'radar', id: tr.id}}); toast(t('Guardada en tu cuaderno de chispas (Laboratorio).', 'Saved to your spark notebook (Lab).')); return; }
    if (act === 'save') { await markTrend(tr.id, {saved_at: tr.saved_at ? null : new Date().toISOString()}); toast(tr.saved_at ? t('Guardado en tu radar.', 'Saved to your radar.') : t('Quitado de guardados.', 'Removed from saved.')); }
    if (act === 'dismiss') {
     const undo = !!tr.dismissed_at;
