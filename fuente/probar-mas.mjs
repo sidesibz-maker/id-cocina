@@ -70,6 +70,10 @@ await page.fill('#dishName', 'Pulpo cambiado'); await page.waitForSelector('.sav
 await page.click('[data-act=more]'); await page.click('.sheet [data-act=versions]'); await page.waitForSelector('.versions li');
 const vText = await page.textContent('.sheet:has(.versions)');
 ok(/se llamaba «Pulpo a la brasa»/.test(vText), 'las versiones no dicen qué cambió: ' + vText.slice(0, 160));
+await page.locator('.versions [data-cmp]').first().click(); await page.waitForSelector('.cmp');
+const cmpText = await page.textContent('.sheet:has(.cmp)');
+ok(cmpText.includes('Pulpo a la brasa') && cmpText.includes('Pulpo cambiado'), 'comparar no enseña el antes y el ahora: ' + cmpText.slice(0, 200));
+await page.click('.sheet:has(.cmp) .sheet-head [data-close]'); await wait(300);
 await page.locator('.versions [data-v]').first().click(); await page.click('.sheet .btn.primary:has-text("Recuperar")'); await wait(500);
 ok(await page.inputValue('#dishName') === 'Pulpo a la brasa', 'no se recupera la versión');
 // Deshacer: lo de antes de recuperar quedó como versión (con la salsa); se vuelve a ella.

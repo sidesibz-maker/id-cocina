@@ -972,3 +972,18 @@ html.cooking .tabs{display:none}html.cooking .view{padding-bottom:calc(32px + en
 .catcard strong{font-family:var(--serif);font-weight:400;font-size:19px;line-height:1.15;margin-top:4px}.catcard small{color:var(--mut);font-size:13px}
 .catconcept{font-size:13.5px;color:var(--ink2)}
 .catcard:hover strong{text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+
+/* ---------- Antes y ahora ---------- */
+.vacts{display:flex;gap:8px;flex-wrap:wrap}
+.cmp td{width:42%}.cmp td small{color:var(--mut)}.cmp .cmp-st{width:16%;font-family:var(--narrow);font-weight:600;text-align:right}
+.cmp-add td:nth-child(2){color:var(--ok-ink);font-weight:600}.cmp-add .cmp-st{color:var(--ok-ink)}
+.cmp-del td:first-child{color:var(--bad-ink);text-decoration:line-through;text-decoration-thickness:1px}.cmp-del .cmp-st{color:var(--bad-ink)}
+.cmp-chg .cmp-st{color:var(--ember-ink)}.cmp-same td{color:var(--mut)}
+.cmp-two{display:grid;gap:12px;grid-template-columns:1fr 1fr}.cmp-two>div{padding:12px;background:var(--soft);white-space:pre-wrap;font-size:15px}.cmp-two .mini{margin:0 0 4px}
+@media (max-width:640px){.cmp-two{grid-template-columns:1fr}}
+
+/* ---------- El ritmo del menú ---------- */
+.mrsvg{display:block;width:100%;height:auto;margin:8px 0}
+.mr-grid{stroke:var(--line);stroke-width:1}.mr-ax,.mr-n{fill:var(--mut);font:600 17px var(--narrow)}
+.mr-line{fill:none;stroke:var(--ember);stroke-width:2.5;stroke-linejoin:round}.mr-dot{fill:var(--card);stroke:var(--ember);stroke-width:2.5}
+.mrlist{list-style:decimal;padding-left:24px;display:grid;gap:4px;font-size:15px}.mrlist span{color:var(--mut);margin-left:8px;font-size:14px}

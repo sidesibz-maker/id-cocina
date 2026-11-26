@@ -602,14 +602,31 @@ function diffText(old, now) {
  if (!out.length) out.push(t('cambios en notas, estado o emplatado', 'changes in notes, status or plating'));
  return out.join('; ');
 }
+// Comparar una versión anterior con el plato de ahora, lado a lado: qué entró, qué salió y qué cambió de cantidad.
+function compareSheet(v, now) {
+ const old = v.data || {}, key = i => String(i.n || '').toLowerCase().trim();
+ const items = d => new Map((d.components || []).flatMap(c => (c.items || []).map(i => [key(i), {n: i.n, q: i.q || '', comp: c.name || ''}])));
+ const a = items(old), b = items(now), names = [...new Set([...a.keys(), ...b.keys()])];
+ const row = k => { const x = a.get(k), y = b.get(k), st = !x ? 'add' : !y ? 'del' : x.q !== y.q ? 'chg' : 'same';
+  return '<tr class="cmp-' + st + '"><td>' + (x ? esc(x.n) + (x.q ? ' <small>' + esc(x.q) + '</small>' : '') : '') + '</td><td>' + (y ? esc(y.n) + (y.q ? ' <small>' + esc(y.q) + '</small>' : '') : '') + '</td><td class="cmp-st">' + esc({add: t('Entra', 'Added'), del: t('Sale', 'Removed'), chg: t('Cambia', 'Changed'), same: ''}[st]) + '</td></tr>'; };
+ const order = {add: 0, del: 1, chg: 2, same: 3}, st = k => (!a.has(k) ? 'add' : !b.has(k) ? 'del' : a.get(k).q !== b.get(k).q ? 'chg' : 'same');
+ const text = (label, x, y) => (String(x || '') === String(y || '') ? '' : '<h3>' + esc(label) + '</h3><div class="cmp-two"><div><p class="mini">' + esc(t('Antes', 'Before')) + '</p><p>' + esc(x || '—') + '</p></div><div><p class="mini">' + esc(t('Ahora', 'Now')) + '</p><p>' + esc(y || '—') + '</p></div></div>');
+ const methods = d => (d.components || []).filter(c => c.method).map(c => (c.name ? c.name + ': ' : '') + c.method).join('\n');
+ sheet({title: t('Antes y ahora', 'Before and now'), wide: true, body: '<p class="lead">' + esc(relDay(v.at) + ', ' + new Date(v.at).toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'}) + t(' frente a lo de ahora.', ' compared with now.')) + '</p>' +
+  text(t('Nombre', 'Name'), old.name, now.name) + text(t('La idea', 'The idea'), old.concept, now.concept) +
+  '<h3>' + esc(t('Ingredientes', 'Ingredients')) + '</h3><table class="ktable cmp"><thead><tr><th>' + esc(t('Antes', 'Before')) + '</th><th>' + esc(t('Ahora', 'Now')) + '</th><th></th></tr></thead><tbody>' + names.sort((x, y) => order[st(x)] - order[st(y)]).map(row).join('') + '</tbody></table>' +
+  text(t('Elaboración', 'Method'), methods(old), methods(now)) + text(t('Emplatado', 'Plating'), old.plating, now.plating) + text(t('Notas', 'Notes'), old.notes, now.notes)});
+}
 async function versionsSheet() {
  await flush();
  const list = await dishVersions(cur.id), dish = cur;
  const s = sheet({title: t('Versiones anteriores', 'Earlier versions'), wide: true, body: list.length
   ? '<p class="lead">' + esc(t('Cómo estaba el plato antes de cada tanda de cambios. Al recuperar una, las pruebas de cata y las fotos se quedan como están, y lo de ahora también se guarda como versión.', 'How the dish was before each round of changes. Restoring keeps tasting tests and photos as they are, and the current state is saved as a version too.')) + '</p><ol class="versions">' +
-    list.map((v, k) => '<li><div><strong>' + esc(relDay(v.at) + ', ' + new Date(v.at).toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})) + '</strong><small>' + esc(diffText(v.data, dish)) + '</small></div><button type="button" class="btn ghost" data-v="' + k + '">' + icon('undo') + esc(t('Recuperar', 'Restore')) + '</button></li>').join('') + '</ol>'
+    list.map((v, k) => '<li><div><strong>' + esc(relDay(v.at) + ', ' + new Date(v.at).toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})) + '</strong><small>' + esc(diffText(v.data, dish)) + '</small></div><span class="vacts"><button type="button" class="btn ghost" data-cmp="' + k + '">' + esc(t('Comparar', 'Compare')) + '</button><button type="button" class="btn ghost" data-v="' + k + '">' + icon('undo') + esc(t('Recuperar', 'Restore')) + '</button></span></li>').join('') + '</ol>'
   : '<p class="hint">' + esc(t('Aún no hay versiones anteriores. Se guardan solas mientras trabajas el plato (una cada 15 minutos como mucho).', 'No earlier versions yet. They are saved automatically while you work on the dish (at most one every 15 minutes).')) + '</p>'});
  s.el.addEventListener('click', async e => {
+  const c = e.target.closest('[data-cmp]');
+  if (c) { compareSheet(list[Number(c.dataset.cmp)], dish); return; }
   const b = e.target.closest('[data-v]');
   if (!b || cur !== dish) return;
   const v = list[Number(b.dataset.v)];

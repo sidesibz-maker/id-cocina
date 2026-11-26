@@ -24,6 +24,28 @@ const GRILL = new Set(['brasa', 'josper', 'ofyr']);
 
 export const tabs = active => '<div class="seg book-tabs" role="tablist"><a class="seg-btn' + (active === 'platos' ? ' active' : '') + '" href="#/libreta" role="tab" aria-selected="' + (active === 'platos') + '">' + esc(t('Platos', 'Dishes')) + '</a><a class="seg-btn' + (active === 'menus' ? ' active' : '') + '" href="#/menus" role="tab" aria-selected="' + (active === 'menus') + '">' + esc(t('Cartas y menús', 'Menus')) + (liveMenus().length ? '<span class="count">' + liveMenus().length + '</span>' : '') + '</a></div>';
 
+// ---------- El ritmo del menú: intensidad de cada pase, dibujada ----------
+// Intensidad = media de los tres sabores más fuertes del plato (0 a 10). Un buen menú sube, descansa y termina limpio.
+function intensity(p) { if (!p || p.empty) return null; const v = Object.values(p.axes || {}).map(Number).filter(Number.isFinite).sort((x, y) => y - x).slice(0, 3); return v.length ? v.reduce((s, x) => s + x, 0) / v.length : null; }
+function rhythmHtml(rows) {
+ const pts = rows.map((r, k) => ({k, d: r.d, v: intensity(r.p), dom: (r.p?.dominant || []).map(id => axisName(id).toLowerCase())})).filter(x => x.v != null);
+ if (pts.length < 3) return '';
+ const w = 640, h = 180, px = 40, py = 24, n = pts.length, x = i => px + i * (w - px * 2) / (n - 1), y = v => h - py - v / 10 * (h - py * 2);
+ const line = pts.map((p, i) => x(i).toFixed(1) + ',' + y(p.v).toFixed(1)).join(' ');
+ // Avisos de ritmo: tres pases seguidos subiendo sin descanso, o el final más intenso que el centro.
+ const notes = [];
+ for (let i = 2; i < n; i++) if (pts[i].v > pts[i - 1].v && pts[i - 1].v > pts[i - 2].v && pts[i].v >= 6.5) { notes.push(t('Del pase ', 'From course ') + (i - 1) + t(' al ', ' to ') + (i + 1) + t(' la intensidad sube sin descanso: mete algo fresco o ácido en medio.', ' intensity climbs without a break: put something fresh or sour in between.')); break; }
+ const peak = pts.reduce((m, p) => (p.v > m.v ? p : m), pts[0]);
+ if (peak.k === pts[n - 1].k && n > 3) notes.push(t('El pase más intenso es el último: el final suele funcionar mejor si limpia.', 'The most intense course is the last: menus usually end better on something cleansing.'));
+ if (pts[0].v >= 7) notes.push(t('Empieza muy fuerte: el primer bocado suele ir mejor ligero, para abrir el apetito.', 'It starts very strong: a light first bite usually opens the appetite better.'));
+ return '<section class="card mrhythm"><h2>' + esc(t('El ritmo del menú', 'The rhythm of the menu')) + '</h2><p class="hint">' + esc(t('Intensidad de cada pase según su perfil de sabor. Lo ideal: subir poco a poco, con descansos, y terminar limpio.', 'Intensity of each course from its flavour profile. Ideally: build up gradually, with breaks, and end clean.')) + '</p>' +
+  '<svg viewBox="0 0 ' + w + ' ' + h + '" class="mrsvg" role="img" aria-label="' + esc(t('Intensidad por pase: ', 'Intensity per course: ') + pts.map((p, i) => (i + 1) + ' ' + p.d.name + ' ' + p.v.toFixed(1)).join(', ')) + '">' +
+  [0, 5, 10].map(v => '<line class="mr-grid" x1="' + px + '" x2="' + (w - px) + '" y1="' + y(v) + '" y2="' + y(v) + '"/><text class="mr-ax" x="' + (px - 8) + '" y="' + (y(v) + 4) + '" text-anchor="end">' + v + '</text>').join('') +
+  '<polyline class="mr-line" points="' + line + '"/>' + pts.map((p, i) => '<circle class="mr-dot" cx="' + x(i).toFixed(1) + '" cy="' + y(p.v).toFixed(1) + '" r="5"/><text class="mr-n" x="' + x(i).toFixed(1) + '" y="' + (h - 4) + '" text-anchor="middle">' + (i + 1) + '</text>').join('') + '</svg>' +
+  '<ol class="mrlist">' + pts.map(p => '<li><strong>' + esc(p.d.name) + '</strong><span>' + esc(p.dom.length ? t('domina ', 'led by ') + p.dom.join(', ') : t('suave', 'gentle')) + '</span></li>').join('') + '</ol>' +
+  (notes.length ? '<ul class="notes">' + notes.map(x => '<li class="note note-tip">' + icon('info') + '<p>' + esc(x) + '</p></li>').join('') + '</ul>' : '<p class="fine">' + icon('check') + esc(t('El ritmo está bien llevado.', 'The pacing works.')) + '</p>') + '</section>';
+}
+
 // ---------- Análisis del conjunto ----------
 function analyse(menu) {
  const kb = state.kb, rows = menu.items.flatMap(({dish_id}, itemIndex) => {
@@ -101,6 +123,7 @@ function editPage(id) {
    '<dt><strong>' + esc(t('El menú se hace pesado', 'The menu feels heavy')) + '</strong></dt><dd>' + esc(t('Varios bocados grasos seguidos pierden contraste. Prueba una guarnición fresca o un encurtido entre los pases más intensos.', 'Several rich bites in a row lose contrast. Try a fresh garnish or a pickle between the richest courses.')) + '</dd>' +
    '<dt><strong>' + esc(t('Las texturas se parecen', 'Textures feel too similar')) + '</strong></dt><dd>' + esc(t('Si todo es blando, cada bocado se parece al anterior. Prueba un crujiente y añádelo al pase si se ablanda con la salsa.', 'If everything is soft, each bite feels like the previous one. Try a crisp element and add it at service if the sauce softens it.')) + '</dd>' +
    '</dl></details></aside>' +
+  rhythmHtml(a.rows) +
   (others.length ? '<section class="card"><h2>' + esc(t('Comparar menús', 'Compare menus')) + '</h2><label for="menuCompare">' + esc(t('Comparar con', 'Compare with')) + '</label><select id="menuCompare"><option value="">' + esc(t('Elige un menú', 'Choose a menu')) + '</option>' + others.map(x => '<option value="' + esc(x.id) + '">' + esc(x.name) + '</option>').join('') + '</select><div id="menuComparison" class="menu-comparison" aria-live="polite"></div></section>' : '') +
   '<section class="card" id="menuAdvice"><h2>' + esc(t('Opinión de ChatGPT', 'ChatGPT\'s view')) + '</h2>' + (m.advice?.text ? '<div class="msg-body">' + rich(m.advice.text) + '</div><p class="fine">' + esc(t('Del ', 'From ') + shortDate(m.advice.at)) + '</p>' : '<p class="hint">' + esc(t('Una segunda opinión sobre el conjunto: ritmo, repeticiones y qué cambiaría.', 'A second opinion on the whole: rhythm, repetitions and what to change.')) + '</p>') +
    (a.rows.length >= 2 ? (on ? '<div class="row-actions row-left"><button type="button" class="btn ' + (m.advice ? 'ghost' : 'primary') + '" data-act="advice">' + icon('spark') + esc(m.advice ? t('Pedir otra opinión', 'Ask again') : t('Pedir opinión a ChatGPT', 'Ask ChatGPT')) + '</button></div>' : '<div class="row-actions row-left"><button type="button" class="btn ghost" data-act="copy">' + icon('copy') + esc(t('Copiar la consulta', 'Copy the request')) + '</button><a class="btn ghost" href="https://chatgpt.com/" data-chat target="_blank" rel="noopener noreferrer">' + esc(t('Preguntar a ChatGPT', 'Ask ChatGPT')) + icon('out') + '</a></div>') : '') + '</section>' +

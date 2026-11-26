@@ -51,6 +51,13 @@ await page.click('[data-mode=lista]'); await wait(200); ok(await page.locator('.
 await page.evaluate(() => { window.print = () => { window.__cat = document.getElementById('printFicha').innerText; }; }); await page.click('[data-act=cat-print]'); await wait(300);
 ok((await page.evaluate(() => window.__cat || '')).includes('Catálogo general'), 'no imprime el catálogo');
 await page.selectOption('#catFilter', 'todos');
+// El ritmo del menú: un menú que sube sin descanso y termina fuerte lo dice
+await page.evaluate(() => { const v = JSON.parse(localStorage.getItem('id-cocina-v1')); const dish = (id, name, items) => ({id, name, status: 'lista', course: 'principal', components: [{id: 'c', role: 'principal', name: '', techniques: [], items: items.map(([k, w]) => ({n: k, k, w, src: 'kb'}))}], tests: [], images: [], version: 1, updated_at: '2026-11-21T10:00:00Z'});
+ v.dishes.push(dish('r1', 'Ostra y limón', [['ostra', 3], ['limon', 1]]), dish('r2', 'Tomate', [['tomate', 3]]), dish('r3', 'Cordero', [['cordero', 3], ['ajo', 2]]), dish('r4', 'Chocolate', [['chocolate-negro', 3]]));
+ v.menus = [{id: 'm2', name: 'Menú de prueba', kind: 'degustacion', items: ['r1', 'r2', 'r3', 'r4'].map(dish_id => ({dish_id})), version: 1, updated_at: '2026-11-21T10:00:00Z'}]; localStorage.setItem('id-cocina-v1', JSON.stringify(v)); });
+await page.reload(); await wait(600); await go('#/menus/m2'); await wait(400);
+ok(await page.locator('.mrhythm .mr-dot').count() === 4, 'no dibuja el ritmo del menú');
+ok((await page.textContent('.mrlist')).includes('Ostra y limón'), 'el ritmo no dice qué plato es cada pase');
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();
 if (fails.length) { console.error('FALLOS en primeros pasos y fichas:\n - ' + fails.join('\n - ')); process.exit(1); }
