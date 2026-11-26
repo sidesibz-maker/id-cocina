@@ -1176,5 +1176,600 @@
    "fuego-y-brasa",
    "contraste-y-equilibrio"
   ]
+ },
+ {
+  "id": "maridaje-de-sabores",
+  "name": "Maridaje de sabores: afinidad y contraste",
+  "name_en": "Flavour pairing: affinity and contrast",
+  "cat": "creatividad",
+  "group": "Sabor",
+  "aka": [
+   "combinar sabores",
+   "que va con que",
+   "afinidad de sabores",
+   "parejas de sabor",
+   "pairing",
+   "combinaciones"
+  ],
+  "summary": "Dos formas de juntar sabores: por afinidad, cuando se parecen o comparten origen, y por contraste, cuando uno equilibra al otro. Cómo usar cada una.",
+  "what": "Hay sabores que van juntos porque se parecen o se completan (tomate y albahaca, cordero y romero, fresa y vinagre de vino) y otros porque se oponen y se equilibran (grasa y ácido, dulce y salado, amargo y dulce). La afinidad crea armonía; el [[contraste-y-equilibrio|contraste]] crea interés. Un plato redondo suele tener las dos: una base afín que lo une y un contraste que lo despierta. La tradición y el territorio son la mejor guía de afinidades: lo que crece y se cocina junto suele ir bien junto.",
+  "method": [
+   "Parte del protagonista y escribe sus rasgos: dulce, ácido, graso, amargo, salado, umami, aromas dominantes, textura.",
+   "Busca afinidades: qué se cocina con él en su tierra y en su temporada, y qué comparte aromas con él (hierbas, frutas, tostados).",
+   "Busca un contraste: lo que le falta. A una grasa, ácido; a un dulce, sal o amargor; a un plato suave, algo picante o tostado.",
+   "Prueba las parejas de dos en dos, en un solo bocado, antes de construir el plato entero.",
+   "Decide las proporciones: la afinidad puede ir en cantidad; el contraste, en poca.",
+   "Apunta las parejas que funcionan y las que no, con el producto concreto y la temporada."
+  ],
+  "ratios": [
+   {
+    "use": "Contraste en el plato",
+    "ratio": "Un 10–20 % del bocado",
+    "note": "Si pasa de ahí, compite con el protagonista."
+   },
+   {
+    "use": "Sabores principales por plato",
+    "ratio": "2–3 reconocibles",
+    "note": "Más se confunden."
+   },
+   {
+    "use": "Prueba de pareja",
+    "ratio": "Bocado con 3 partes de protagonista por 1 de acompañante",
+    "note": "Ajusta a partir de ahí."
+   }
+  ],
+  "variants": [
+   {
+    "id": "contraste-y-equilibrio",
+    "name": "Contraste y equilibrio",
+    "note": "Los contrastes de sabor, textura y temperatura en detalle."
+   },
+   {
+    "id": "maridaje-sin-alcohol",
+    "name": "Maridaje de bebidas",
+    "note": "Las mismas reglas aplicadas a lo que se bebe con el plato."
+   },
+   {
+    "id": null,
+    "name": "Puente aromático",
+    "note": "Un tercer ingrediente que comparte aroma con los dos que quieres unir (una hierba, un cítrico)."
+   }
+  ],
+  "keys": [
+   "Lo que crece junto suele ir junto: empieza por el territorio y la temporada.",
+   "Afinidad para la base, contraste para la chispa.",
+   "Prueba parejas en bocados pequeños antes de construir.",
+   "Compartir aromas puede ayudar a una combinación, pero no garantiza que funcione: manda la boca.",
+   "Cuando dos sabores no se entienden, un tercero que los una puede arreglarlo."
+  ],
+  "errors": [
+   {
+    "p": "Plato plano",
+    "fix": "Todo afín y nada contrasta. Añade ácido, amargor o crujiente en poca cantidad."
+   },
+   {
+    "p": "Plato que pelea",
+    "fix": "Demasiados contrastes o contrastes grandes. Quita uno y reduce el otro."
+   },
+   {
+    "p": "Combinación ingeniosa que no gusta",
+    "fix": "Se eligió por la idea y no por el sabor. Vuelve a la prueba en boca."
+   }
+  ],
+  "history": "Las combinaciones clásicas de cada cocina son fruto de siglos de prueba. En las últimas décadas la cocina de investigación ha estudiado también los aromas compartidos entre ingredientes como una fuente más de ideas.",
+  "uses": [
+   "Crear un plato nuevo",
+   "Arreglar un plato que no termina de funcionar",
+   "Diseñar un menú con hilo",
+   "Formar el paladar del equipo"
+  ],
+  "keep": "Lleva una lista propia de parejas probadas, con producto, temporada y resultado. Con los años es una de tus herramientas más valiosas.",
+  "pro": "En las sesiones de creación, prueba parejas en cuchara antes de cocinar platos enteros: ahorra tiempo y producto.",
+  "related": [
+   "contraste-y-equilibrio",
+   "acidez-en-cocina",
+   "umami-y-fondo",
+   "construir-un-plato",
+   "maridaje-sin-alcohol",
+   "hierbas-frescas"
+  ]
+ },
+ {
+  "id": "escribir-una-carta",
+  "name": "Cómo escribir una carta",
+  "name_en": "Writing a menu",
+  "cat": "creatividad",
+  "group": "Menús",
+  "aka": [
+   "carta",
+   "disenar una carta",
+   "redactar la carta",
+   "nombres de platos",
+   "estructura de carta",
+   "menu a la carta"
+  ],
+  "summary": "Cómo construir y redactar una carta que se entienda, refleje tu cocina y pueda salir bien del pase: equilibrio de la oferta, orden y nombres de los platos.",
+  "what": "La carta es el primer plato que lee el comensal: le cuenta qué cocina vas a hacer y le ayuda a elegir. Una buena carta es corta, equilibrada entre productos, técnicas y temperaturas, y está escrita con palabras claras que nombran el producto. También tiene que ser posible: que la cocina pueda sacar cualquier combinación de pedidos sin que una partida se ahogue. La forma de [[contar-un-plato]] empieza en cómo se escribe.",
+  "method": [
+   "Define la idea de la carta en una frase: qué cocina es, de dónde y de qué temporada.",
+   "Haz la lista de platos posibles y agrúpalos por secciones claras (para picar, entrantes, principales, postres, o por producto).",
+   "Revisa el equilibrio: productos del mar y de la tierra, opciones vegetales, técnicas distintas, platos fríos y calientes, ligeros e intensos.",
+   "Repasa la carga de cada partida: si demasiados platos dependen de la brasa o del mismo cocinero, cambia alguno.",
+   "Escribe cada plato: producto principal primero, después lo que lo acompaña, con las palabras justas. Sin adjetivos vacíos.",
+   "Léela en voz alta, dásela a alguien de fuera y pregúntale qué pediría y qué no entiende."
+  ],
+  "ratios": [
+   {
+    "use": "Carta corta",
+    "ratio": "12–20 platos en total",
+    "note": "Más platos, menos frescura y más dificultad en el pase."
+   },
+   {
+    "use": "Por sección",
+    "ratio": "4–7 platos",
+    "note": "Con al menos una opción vegetal."
+   },
+   {
+    "use": "Nombre del plato",
+    "ratio": "3–8 palabras",
+    "note": "Producto, técnica o acompañante principal."
+   }
+  ],
+  "variants": [
+   {
+    "id": "ritmo-de-un-menu",
+    "name": "Menú degustación",
+    "note": "Cuando la secuencia la decides tú y no el comensal."
+   },
+   {
+    "id": "menu-de-temporada",
+    "name": "Carta de temporada",
+    "note": "Cómo hacer que la carta siga al mercado."
+   },
+   {
+    "id": null,
+    "name": "Carta de producto",
+    "note": "Organizada por producto (del mar, de la huerta, de la brasa) en vez de por momento."
+   }
+  ],
+  "keys": [
+   "Corta y clara mejor que larga y completa.",
+   "Nombra el producto: el comensal quiere saber qué va a comer.",
+   "Cada plato tiene que tener su sitio; si dos se parecen, sobra uno.",
+   "Piensa la carta desde el pase: cualquier combinación de pedidos debe poder salir.",
+   "La información de alérgenos tiene que estar disponible para el comensal."
+  ],
+  "errors": [
+   {
+    "p": "Carta larga y confusa",
+    "fix": "Demasiados platos parecidos. Agrupa, elige el mejor de cada grupo y quita el resto."
+   },
+   {
+    "p": "Nombres que no se entienden",
+    "fix": "Palabras técnicas o poéticas. Pon el producto primero y explica la técnica solo si importa."
+   },
+   {
+    "p": "Una partida desbordada en servicio",
+    "fix": "Carta desequilibrada. Reparte técnicas y adelanta elaboraciones."
+   }
+  ],
+  "history": "La carta con platos a elegir se extendió con los restaurantes europeos de los siglos XVIII y XIX. Hoy conviven cartas largas tradicionales con cartas cortas y cambiantes centradas en el producto.",
+  "uses": [
+   "Abrir o cambiar la carta",
+   "Revisar el equilibrio de la oferta",
+   "Redactar nombres de platos",
+   "Presentar la cocina al equipo de sala"
+  ],
+  "keep": "Guarda cada carta con su fecha y notas de qué platos funcionaron y cuáles no. Es tu historia como cocinero.",
+  "pro": "Antes de imprimir, haz un servicio de prueba con la carta completa. Explícasela a sala plato por plato: si tú no puedes contarlo en dos frases, el comensal tampoco lo entenderá.",
+  "related": [
+   "contar-un-plato",
+   "ritmo-de-un-menu",
+   "menu-de-temporada",
+   "construir-un-plato",
+   "cocina-ibicenca"
+  ]
+ },
+ {
+  "id": "cocina-de-aprovechamiento",
+  "name": "Cocina de aprovechamiento",
+  "name_en": "Whole-product cooking",
+  "cat": "creatividad",
+  "group": "Método",
+  "aka": [
+   "aprovechamiento",
+   "residuo cero",
+   "producto entero",
+   "recortes",
+   "zero waste",
+   "reaprovechar"
+  ],
+  "summary": "Usar el producto entero (pieles, tallos, espinas, recortes, pan duro) para hacer caldos, aceites, polvos, fermentos y platos nuevos, sin bajar el nivel ni la seguridad.",
+  "what": "Cada producto tiene partes que normalmente se tiran y que tienen sabor: espinas y cabezas, pieles de cítrico, tallos de hierbas, hojas de verduras, pan del día anterior, suero, recortes de carne. Aprovecharlas es cocina de siempre y también una fuente de ideas: muchas bases de la Biblioteca nacen de ahí. La regla es que se aprovecha lo que está en buen estado: aprovechar no es usar producto pasado.",
+  "method": [
+   "Durante una semana, apunta qué se tira en cada partida y en qué cantidad.",
+   "Para cada resto, pregúntate qué sabor tiene y qué técnica lo convierte en algo útil: caldo, aceite, sal, polvo, encurtido, fermento, crujiente.",
+   "Haz pruebas pequeñas y cátalas como cualquier otra elaboración.",
+   "Organiza la recogida: recipientes etiquetados y en frío para cada tipo de resto aprovechable, con fecha.",
+   "Lleva lo que funcione a una elaboración fija de la partida y a la ficha del plato.",
+   "Cuéntalo si tiene sentido para el plato, sin convertirlo en el mensaje principal."
+  ],
+  "ratios": [
+   {
+    "use": "Espinas y cabezas de pescado",
+    "ratio": "Caldo o salsa fermentada",
+    "note": "Mira [[caldo-de-roca]] y [[garum-y-salsas-de-pescado]]."
+   },
+   {
+    "use": "Pan duro",
+    "ratio": "Migas, picada, ajoblanco, crujientes",
+    "note": "Mira [[migas-limon]], [[picada]] y [[ajoblanco]]."
+   },
+   {
+    "use": "Pieles de cítrico",
+    "ratio": "Sal, confitado, aceite, vinagre",
+    "note": "Mira [[sales-aromaticas]] y [[frutas-en-almibar]]."
+   },
+   {
+    "use": "Tallos de hierbas y hojas de verdura",
+    "ratio": "Aceite verde, caldo, pesto de hojas",
+    "note": "Mira [[emulsiones-de-hierbas]]."
+   },
+   {
+    "use": "Recortes de setas y verduras",
+    "ratio": "Caldo",
+    "note": "Congelados hasta tener una tanda."
+   }
+  ],
+  "variants": [
+   {
+    "id": "producto-de-la-isla",
+    "name": "Producto de la isla",
+    "note": "Usar el producto entero es parte de respetar a quien lo produce."
+   },
+   {
+    "id": "fermentacion-lactica",
+    "name": "Fermentar restos de verdura",
+    "note": "Tallos, pieles y hojas en salmuera."
+   },
+   {
+    "id": null,
+    "name": "Plato de aprovechamiento",
+    "note": "Un plato pensado desde un resto (pieles crujientes, cabezas a la brasa) como protagonista."
+   }
+  ],
+  "keys": [
+   "Aprovechar no es usar producto en mal estado: la seguridad va primero.",
+   "Recoge los restos limpios, en frío, separados y etiquetados.",
+   "El nivel no baja: una base de aprovechamiento se cata y se exige igual.",
+   "Congela restos hasta tener cantidad suficiente para una tanda.",
+   "Empieza por lo que más se tira; ahí está el mayor efecto."
+  ],
+  "errors": [
+   {
+    "p": "Restos que nadie usa en la cámara",
+    "fix": "Sin plan. Decide qué elaboración sale de cada resto y quién la hace."
+   },
+   {
+    "p": "Sabores sucios o amargos",
+    "fix": "Restos viejos o mal guardados. Recoge solo lo fresco y úsalo en días."
+   },
+   {
+    "p": "Platos que se notan de aprovechamiento",
+    "fix": "Se ha bajado el listón. Trata la base como cualquier otra y descarta lo que no esté a la altura."
+   }
+  ],
+  "history": "Aprovecharlo todo ha sido lo normal en la cocina de casa durante siglos, sobre todo en tiempos de escasez. En los últimos años los restaurantes lo han recuperado como parte de una cocina más responsable y creativa.",
+  "uses": [
+   "Bases y condimentos propios",
+   "Platos nuevos desde un resto",
+   "Formación del equipo",
+   "Menús con hilo de producto entero"
+  ],
+  "keep": "Anota cada aprovechamiento que funcione con su resto de origen, la técnica y cuánto dura. Así no depende de quien lo inventó.",
+  "pro": "Pon en cada partida un recipiente para restos aprovechables y una persona responsable de transformarlos cada semana.",
+  "related": [
+   "caldo-de-roca",
+   "garum-y-salsas-de-pescado",
+   "sales-aromaticas",
+   "migas-limon",
+   "picada",
+   "ajoblanco",
+   "emulsiones-de-hierbas",
+   "caldo-de-setas"
+  ]
+ },
+ {
+  "id": "temporada-mes-a-mes",
+  "name": "La temporada mes a mes",
+  "name_en": "The season month by month",
+  "cat": "creatividad",
+  "group": "Raíces",
+  "aka": [
+   "calendario de temporada",
+   "que hay en cada mes",
+   "producto de temporada",
+   "calendario de producto",
+   "estacionalidad"
+  ],
+  "summary": "Un calendario orientativo del producto mediterráneo a lo largo del año, para planificar platos, conservas y menús con la temporada como guía.",
+  "what": "Saber qué está en su mejor momento cada mes es la base de un [[menu-de-temporada]]. Este calendario es orientativo para el Mediterráneo y las islas: cada año, cada zona y cada productor adelantan o retrasan semanas, así que se contrasta siempre con el mercado. Lo útil es pensar en tres momentos de cada producto: cuando entra (aún sin todo su sabor), su pico y cuando se va, que es el momento de conservarlo.",
+  "method": [
+   "Toma este calendario como punto de partida y corrígelo con lo que veas en tu mercado y lonja durante un año entero.",
+   "Marca para cada producto su pico: es cuando lo pones de protagonista.",
+   "Marca su final: es cuando haces conservas, encurtidos, confituras o secos para el resto del año.",
+   "Cruza productos que coinciden en el tiempo: lo que está a la vez en temporada suele combinar bien.",
+   "Revisa el calendario cada mes con el equipo y decide qué entra y qué sale de la carta."
+  ],
+  "ratios": [
+   {
+    "use": "Invierno (diciembre a febrero)",
+    "ratio": "Cítricos, alcachofa, coles, coliflor, hinojo, puerro, acelga, calabaza, caqui al principio",
+    "note": "Aceite nuevo de la cosecha de otoño; en enero y febrero florece el almendro en la isla."
+   },
+   {
+    "use": "Primavera (marzo a mayo)",
+    "ratio": "Habas, guisantes, espárrago triguero, alcachofa hasta abril, fresas, nísperos, cerezas al final; hierbas tiernas e hinojo silvestre",
+    "note": "Cordero en las fiestas de primavera."
+   },
+   {
+    "use": "Verano (junio a agosto)",
+    "ratio": "Tomate, pimiento, berenjena, calabacín, pepino, judía verde, albaricoque, melocotón, melón, sandía; higos desde julio",
+    "note": "Momento de conservas de tomate y pimiento."
+   },
+   {
+    "use": "Otoño (septiembre a noviembre)",
+    "ratio": "Uva, higos hasta septiembre, algarroba, granada, membrillo, caqui, calabaza, setas tras las lluvias, aceituna para aceite",
+    "note": "Membrillo y confituras; caza en temporada."
+   }
+  ],
+  "variants": [
+   {
+    "id": "menu-de-temporada",
+    "name": "Menú de temporada",
+    "note": "Cómo convertir el calendario en un menú."
+   },
+   {
+    "id": "producto-de-la-isla",
+    "name": "Producto de la isla",
+    "note": "El calendario concreto de tus productores."
+   },
+   {
+    "id": null,
+    "name": "Calendario del mar",
+    "note": "Los pescados y mariscos también tienen épocas y vedas; consúltalas con la lonja y la normativa de cada año."
+   }
+  ],
+  "keys": [
+   "Es orientativo: el mercado manda.",
+   "El pico es para el plato; el final, para la conserva.",
+   "Lo que coincide en el tiempo suele combinar bien.",
+   "Corrige el calendario con tus notas de cada año.",
+   "Pregunta a tus productores: saben cuándo está mejor cada variedad."
+  ],
+  "errors": [
+   {
+    "p": "Producto en carta antes de tiempo",
+    "fix": "Se siguió el calendario y no el sabor. Cata antes de poner un producto como protagonista."
+   },
+   {
+    "p": "Carta que no cambia",
+    "fix": "No hay revisión mensual. Fija un día al mes para repasar la temporada con el equipo."
+   },
+   {
+    "p": "Sin producto fuera de temporada",
+    "fix": "No se conservó en el pico. Planifica conservas al final de cada temporada."
+   }
+  ],
+  "history": "Cocinar según la temporada fue lo normal hasta que el transporte y los invernaderos hicieron que casi todo esté disponible todo el año. La cocina actual vuelve al calendario por sabor, por cercanía y por identidad.",
+  "uses": [
+   "Planificar la carta y el menú",
+   "Plan de conservas del año",
+   "Formación del equipo",
+   "Sesiones de creación con producto de temporada"
+  ],
+  "keep": "Lleva tu propio calendario anotado año a año: cuándo entró cada producto, cuándo estuvo mejor y qué hiciste con él.",
+  "pro": "Cuelga el calendario en cocina y márcale encima lo que ves cada semana. En un par de años tendrás uno exacto de tu zona.",
+  "related": [
+   "menu-de-temporada",
+   "producto-de-la-isla",
+   "cocina-ibicenca",
+   "higos-y-algarroba",
+   "citricos",
+   "alcachofas",
+   "setas",
+   "tomate"
+  ]
+ },
+ {
+  "id": "del-plato-al-menu",
+  "name": "Del plato de carta al menú degustación",
+  "name_en": "From à la carte dish to tasting course",
+  "cat": "creatividad",
+  "group": "Menús",
+  "aka": [
+   "adaptar un plato",
+   "plato de menu degustacion",
+   "reducir un plato",
+   "pase de menu",
+   "raciones de degustacion"
+  ],
+  "summary": "Cómo convertir un plato de carta en un pase de menú degustación: reducir la ración, concentrar la idea, ajustar la intensidad a su lugar y hacer que salga rápido.",
+  "what": "Un plato de carta se come solo y tiene que llenar; un pase de menú es uno de muchos y tiene que dejar ganas del siguiente. Por eso no basta con servir menos cantidad: hay que quedarse con la idea central del plato, quitar lo que solo estaba para dar volumen y ajustar su intensidad al momento del menú en que va. También cambia el servicio: muchos platos iguales a la vez y en tiempos cortos.",
+  "method": [
+   "Escribe la idea del plato en una frase y señala qué elementos la sostienen y cuáles son relleno.",
+   "Quita lo que no sea esencial: en un pase caben el protagonista, uno o dos acompañantes y el acabado.",
+   "Reduce la ración a 3–4 bocados y comprueba que cada bocado tiene todos los sabores.",
+   "Ajusta la intensidad a su lugar en el menú: más ligero si va al principio, más concentrado si va en el centro.",
+   "Revisa si choca con los pases de al lado en producto, técnica, salsa o temperatura.",
+   "Piensa el montaje para muchas raciones a la vez: elementos que se preparan antes, pocos gestos en el pase y vajilla adecuada."
+  ],
+  "ratios": [
+   {
+    "use": "Proteína en un pase principal",
+    "ratio": "40–60 g",
+    "note": "En carta serían 150–180 g."
+   },
+   {
+    "use": "Salsa",
+    "ratio": "10–20 ml por pase",
+    "note": "Más concentrada que en carta."
+   },
+   {
+    "use": "Tiempo de montaje",
+    "ratio": "Menos de 1 minuto por plato en el pase",
+    "note": "Con todo preparado antes."
+   }
+  ],
+  "variants": [
+   {
+    "id": "ritmo-de-un-menu",
+    "name": "Ritmo de un menú",
+    "note": "El lugar del pase en la secuencia completa."
+   },
+   {
+    "id": "emplatado",
+    "name": "Emplatado",
+    "note": "Cómo montarlo en pequeño sin que pierda claridad."
+   },
+   {
+    "id": null,
+    "name": "Del menú a la carta",
+    "note": "El camino contrario: un pase que funciona se amplía con guarnición y ración para la carta."
+   }
+  ],
+  "keys": [
+   "Menos elementos, más claros.",
+   "Cada bocado tiene que tener el plato entero.",
+   "La intensidad depende del lugar en el menú.",
+   "Lo que no se puede montar rápido en serie no está listo para el menú.",
+   "Prueba el pase dentro del menú, no aislado."
+  ],
+  "errors": [
+   {
+    "p": "Pase que es un plato de carta en miniatura",
+    "fix": "Se redujo sin concentrar. Quita elementos y deja la idea central."
+   },
+   {
+    "p": "Bocados desiguales",
+    "fix": "Elementos repartidos sin pensar. Monta para que cada bocado tenga protagonista, acompañante y acabado."
+   },
+   {
+    "p": "Retrasa el servicio",
+    "fix": "Montaje largo. Adelanta elaboraciones y simplifica el acabado."
+   }
+  ],
+  "history": "Con la extensión del menú degustación en la alta cocina de finales del siglo XX, muchos platos empezaron a vivir en dos formatos: ración de carta y pase de menú.",
+  "uses": [
+   "Llevar un plato de éxito al menú",
+   "Preparar menús de eventos",
+   "Cenas de prueba",
+   "Revisar pases que no funcionan"
+  ],
+  "keep": "Guarda las dos versiones del plato, carta y menú, con sus cantidades y su montaje, como versiones del mismo plato.",
+  "pro": "Haz la prueba con el número real de cubiertos: montar 2 platos no es montar 40. Cronometra y ajusta la mise en place hasta que el pase sea fluido.",
+  "related": [
+   "ritmo-de-un-menu",
+   "construir-un-plato",
+   "emplatado",
+   "contar-un-plato",
+   "menu-de-temporada"
+  ]
+ },
+ {
+  "id": "documentar-tu-obra",
+  "name": "Cómo documentar tu obra",
+  "name_en": "Documenting your work",
+  "cat": "creatividad",
+  "group": "Oficio",
+  "aka": [
+   "documentar platos",
+   "portfolio de cocinero",
+   "dossier",
+   "archivo de platos",
+   "fotografiar platos",
+   "registro de creaciones"
+  ],
+  "summary": "Cómo guardar tu trabajo de cocina de forma que sirva: fichas precisas, versiones, fotos útiles, notas de proceso y una cronología que cuente tu trayectoria.",
+  "what": "Lo que un cocinero crea se pierde si no se apunta: el plato cambia, el equipo rota y la memoria falla. Documentar bien sirve para tres cosas: repetir un plato exactamente, ver cómo ha evolucionado tu cocina y mostrar tu trabajo a otros. No hace falta escribir mucho, sino lo justo y siempre del mismo modo: receta pesada, montaje, fotos comparables, fecha y lo que aprendiste. Esta app guarda versiones de los platos, el diario y la trayectoria con el dossier.",
+  "method": [
+   "Para cada plato, haz una ficha con cantidades pesadas, temperaturas, tiempos y el montaje paso a paso.",
+   "Cada vez que lo cambies, guarda una versión nueva con la fecha y qué cambiaste y por qué; no sobrescribas la anterior.",
+   "Fotografía siempre igual: luz natural lateral, mismo ángulo, fondo neutro, desde arriba y de lado.",
+   "Lleva un diario breve: ideas, pruebas, lo que salió mal y lo que aprendiste. Unas líneas al día bastan.",
+   "Una vez al año, repasa todo y elige los platos que mejor cuentan tu cocina para tu dossier.",
+   "Ordena tu trayectoria: dónde has cocinado, qué hacías, qué platos y menús creaste en cada etapa."
+  ],
+  "ratios": [
+   {
+    "use": "Fotos por plato",
+    "ratio": "2–3: cenital, lateral y un detalle",
+    "note": "Siempre con la misma luz."
+   },
+   {
+    "use": "Diario",
+    "ratio": "5 minutos al terminar el día",
+    "note": "Lo que no se apunta ese día se pierde."
+   },
+   {
+    "use": "Repaso del archivo",
+    "ratio": "Una vez al año",
+    "note": "Para el dossier y para ver tu evolución."
+   }
+  ],
+  "variants": [
+   {
+    "id": "catas-y-notas",
+    "name": "Notas de cata",
+    "note": "Cómo apuntar las pruebas de un plato en desarrollo."
+   },
+   {
+    "id": "contar-un-plato",
+    "name": "Contar un plato",
+    "note": "De la documentación al texto para sala o para la prensa."
+   },
+   {
+    "id": null,
+    "name": "Dossier profesional",
+    "note": "Selección de platos, menús y trayectoria para presentarte a un concurso, un proyecto o un puesto."
+   }
+  ],
+  "keys": [
+   "Pesa y mide: una receta sin cantidades no se puede repetir.",
+   "Versiones, no sobrescribir: la historia del plato es parte de la obra.",
+   "Fotos comparables valen más que fotos bonitas.",
+   "Fecha en todo: te ayuda a demostrar cuándo creaste algo.",
+   "Haz copia de seguridad de tu archivo con regularidad."
+  ],
+  "errors": [
+   {
+    "p": "Recetas que nadie puede repetir",
+    "fix": "Faltan cantidades o pasos. Escribe la ficha mientras cocinas, no de memoria."
+   },
+   {
+    "p": "Fotos que no sirven",
+    "fix": "Luz y ángulo distintos cada vez. Fija un sitio, una luz y unos ángulos."
+   },
+   {
+    "p": "Todo en la cabeza",
+    "fix": "Sin hábito de anotar. Cinco minutos de diario al día, siempre a la misma hora."
+   }
+  ],
+  "history": "Los cuadernos de cocina han existido siempre, de los recetarios manuscritos a las libretas de los jefes. Con la fotografía digital y las herramientas actuales, documentar el trabajo creativo se ha vuelto parte del oficio.",
+  "uses": [
+   "Repetir platos con exactitud",
+   "Formar al equipo",
+   "Preparar un dossier o un concurso",
+   "Ver tu evolución como cocinero"
+  ],
+  "keep": "Guarda todo en un solo sitio, ordenado por plato y fecha, y haz copia de seguridad.",
+  "pro": "Haz de la documentación parte de la rutina: la ficha se cierra el mismo día que el plato entra en carta, y las fotos se hacen en la cena de prueba.",
+  "related": [
+   "catas-y-notas",
+   "contar-un-plato",
+   "de-la-tecnica-al-plato",
+   "construir-un-plato",
+   "emplatado"
+  ]
  }
 ]

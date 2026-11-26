@@ -1966,5 +1966,697 @@
       "grasas-infusionadas",
       "patata-chafada-brasa"
     ]
+  },
+  {
+    "id": "pures-de-verdura",
+    "name": "Purés y cremas de verdura de servicio",
+    "name_en": "Vegetable purées for service",
+    "cat": "bases",
+    "group": "Cremas y guarniciones",
+    "aka": [
+      "pure de verdura",
+      "crema de verdura",
+      "pure fino",
+      "pure de patata",
+      "pure de zanahoria",
+      "pure de guisante",
+      "pure de apionabo"
+    ],
+    "role": "cremoso",
+    "techniques": [
+      "pure",
+      "hervido"
+    ],
+    "summary": "Cómo hacer un puré de verdura liso, brillante y estable para el pase: elegir la cocción, triturar en caliente, montar con grasa y colar fino.",
+    "what": "Un puré de restaurante es una emulsión: la verdura cocida, triturada con su líquido y montada con mantequilla o aceite hasta que queda lisa y brillante. Cambia según la verdura. Las raíces (zanahoria, chirivía, apionabo) se cocinan con poca agua y grasa para que no se aguen. Las verdes (guisante, espinaca, brócoli) se blanquean y enfrían rápido para conservar el color. La patata pide otro trato, porque si se tritura con cuchilla se vuelve elástica. Para versiones tostadas, mira [[pure-coliflor-tostada]] o [[crema-berenjena-brasa]].",
+    "base": {
+      "for": "unos 800 g de puré de raíz (zanahoria, chirivía o apionabo)",
+      "items": [
+        [
+          "Verdura pelada en trozos regulares",
+          "1 kg"
+        ],
+        [
+          "Mantequilla",
+          "80 g"
+        ],
+        [
+          "Agua, leche o caldo",
+          "250–300 ml"
+        ],
+        [
+          "Sal",
+          "8–10 g"
+        ],
+        [
+          "Zumo de limón o vinagre suave",
+          "unas gotas"
+        ]
+      ],
+      "steps": [
+        "Pon la verdura con la mitad de la mantequilla, la sal y el líquido justo para cubrir a medias. Tapa con papel.",
+        "Cuece a fuego suave hasta que esté muy tierna y casi sin líquido, 25–35 minutos.",
+        "Tritura en caliente en vaso potente, añadiendo el líquido de cocción poco a poco, hasta que esté completamente liso (2–3 minutos).",
+        "Añade el resto de la mantequilla fría en dados con el vaso en marcha para montarlo y darle brillo.",
+        "Cuela por tamiz fino, ajusta sal y ácido y guarda tapado a piel."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Puré de raíz",
+        "ratio": "80–100 g de mantequilla por kilo de verdura",
+        "note": "Cocción con poco líquido; triturar en caliente."
+      },
+      {
+        "use": "Puré verde",
+        "ratio": "Blanqueado en agua con 1 % de sal y enfriado en hielo",
+        "note": "Triturar en frío con hielo o agua helada; calentar a última hora hasta 65–70 °C."
+      },
+      {
+        "use": "Puré de patata",
+        "ratio": "1 kg de patata, 200–300 g de mantequilla y 200–300 ml de leche caliente",
+        "note": "Pasar por pasapurés o tamiz, nunca por túrmix."
+      },
+      {
+        "use": "Puré estable para biberón",
+        "ratio": "0,5–1 g de goma xantana por litro",
+        "note": "No se separa en el pase."
+      }
+    ],
+    "variants": [
+      {
+        "id": "pure-coliflor-tostada",
+        "name": "Puré de coliflor tostada",
+        "note": "Con la verdura asada; más profundo."
+      },
+      {
+        "id": "crema-garbanzos-comino",
+        "name": "Crema de legumbre",
+        "note": "Más densa, con tahina o aceite."
+      },
+      {
+        "id": "patata-chafada-brasa",
+        "name": "Patata chafada",
+        "note": "Cuando se busca textura rústica en lugar de puré fino."
+      }
+    ],
+    "keys": [
+      "Tritura en caliente y en vaso potente: el puré frío nunca queda liso.",
+      "Poco líquido al principio; se añade, pero no se quita.",
+      "Cuela siempre por tamiz fino: es lo que separa un puré casero de uno de restaurante.",
+      "La patata, siempre a mano o con pasapurés: la cuchilla la vuelve gomosa.",
+      "Un punto de ácido al final despierta el sabor de la verdura."
+    ],
+    "errors": [
+      {
+        "p": "Puré aguado",
+        "fix": "Demasiado líquido. Reduce en cazo a fuego suave removiendo, o añade más verdura cocida."
+      },
+      {
+        "p": "Puré verde marrón",
+        "fix": "Cocción larga o mantenido caliente. Blanquea corto, enfría en hielo y calienta al momento."
+      },
+      {
+        "p": "Puré de patata elástico",
+        "fix": "Triturado con túrmix. Usa pasapurés y no lo batas."
+      },
+      {
+        "p": "Se separa en el plato",
+        "fix": "Emulsión floja. Monta con grasa fría o estabiliza con un poco de xantana."
+      }
+    ],
+    "history": "Los purés finos montados con mantequilla son parte de la cocina clásica, y con los vasos trituradores potentes se han convertido en una base de la cocina de restaurante actual.",
+    "uses": [
+      "Base de plato para carne o pescado",
+      "Punto de color en emplatado",
+      "Guarnición de brasa",
+      "Cremas y sopas aligeradas con caldo"
+    ],
+    "keep": "En frío, tapado a piel, 2–3 días; los verdes, mejor el mismo día. Congelados en bolsa plana, 1 mes (no la patata).",
+    "pro": "Guárdalos en manga o biberón en baño maría a 60–65 °C durante el servicio, o en frío y calentados por ración. Los verdes, en frío y calentados al momento.",
+    "related": [
+      "pure-coliflor-tostada",
+      "crema-berenjena-brasa",
+      "crema-garbanzos-comino",
+      "escaldado-de-verduras",
+      "gelificantes-y-espesantes",
+      "emulsiones"
+    ]
+  },
+  {
+    "id": "ensaladas-templadas",
+    "name": "Ensaladas templadas y aliños calientes",
+    "name_en": "Warm salads and warm dressings",
+    "cat": "bases",
+    "group": "Cremas y guarniciones",
+    "aka": [
+      "ensalada templada",
+      "ensalada tibia",
+      "vinagreta caliente",
+      "alino templado",
+      "verduras templadas aliñadas"
+    ],
+    "role": "guarnicion",
+    "techniques": [
+      "brasa",
+      "horno"
+    ],
+    "summary": "Verdura asada o a la brasa todavía tibia con hojas, crujiente y un aliño templado: guarnición o plato entero que vive del contraste de temperaturas.",
+    "what": "La verdura caliente absorbe el aliño mucho mejor que la fría, y las hojas, al tocarla, se ablandan apenas. El truco está en las temperaturas: verdura tibia, no ardiendo, para no cocer las hojas; aliño templado, con grasa y ácido, a veces con el jugo de la propia cocción; y algo crujiente y algo fresco al final. Funciona con calabaza, coles, puerros, patata, legumbre o setas, y es un buen plato de aprovechamiento de [[verduras-a-la-brasa]].",
+    "base": {
+      "for": "6 raciones",
+      "items": [
+        [
+          "Verdura asada o a la brasa en trozos (calabaza, puerro, coles, setas)",
+          "900 g"
+        ],
+        [
+          "Hojas tiernas (rúcula, escarola, endivia, berros)",
+          "150 g"
+        ],
+        [
+          "Aceite de oliva virgen extra",
+          "90 g"
+        ],
+        [
+          "Vinagre de jerez o de vino",
+          "30 g"
+        ],
+        [
+          "Chalota picada fina",
+          "30 g"
+        ],
+        [
+          "Mostaza",
+          "5 g"
+        ],
+        [
+          "Frutos secos tostados o migas",
+          "60 g"
+        ],
+        [
+          "Queso curado o fresco (opcional)",
+          "80 g"
+        ],
+        [
+          "Sal y pimienta",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Asa o marca la verdura con sal y aceite hasta que esté tierna y con color; déjala templar hasta unos 40–50 °C.",
+        "Calienta el aceite con la chalota a fuego suave 2 minutos, sin dorar. Fuera del fuego añade la mostaza, el vinagre, sal y pimienta; bate.",
+        "En un bol, aliña la verdura templada con dos tercios del aliño.",
+        "Añade las hojas, mezcla una sola vez con las manos y coloca enseguida.",
+        "Termina con el crujiente, el queso y el resto del aliño por encima."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Aliño templado",
+        "ratio": "3 partes de aceite por 1 de vinagre, calentado a 50–60 °C",
+        "note": "Con chalota, mostaza o miel."
+      },
+      {
+        "use": "Aliño con jugo de asado",
+        "ratio": "1 parte del jugo de la bandeja por 2 de aceite y 1 de vinagre",
+        "note": "Más sabroso; desgrasa el jugo antes."
+      },
+      {
+        "use": "Proporción en el plato",
+        "ratio": "150 g de verdura y 20–25 g de hojas por ración",
+        "note": "La verdura protagonista, las hojas de acompañamiento."
+      },
+      {
+        "use": "Temperatura de la verdura",
+        "ratio": "40–50 °C",
+        "note": "Más caliente marchita las hojas; fría no absorbe el aliño."
+      }
+    ],
+    "variants": [
+      {
+        "id": "vinagreta",
+        "name": "Vinagreta",
+        "note": "El aliño base, en frío."
+      },
+      {
+        "id": "legumbres",
+        "name": "Ensalada templada de legumbre",
+        "note": "Lentejas o garbanzos recién cocidos aliñados en caliente."
+      },
+      {
+        "id": null,
+        "name": "Patata templada aliñada",
+        "note": "Patata cocida, aliñada aún caliente con vinagre, aceite y cebolleta."
+      }
+    ],
+    "keys": [
+      "Aliña la verdura mientras está tibia: absorbe más sabor.",
+      "Hojas al final y una sola mezcla: si se manosean, se marchitan.",
+      "El aliño templado no debe hervir: la chalota se pone amarga.",
+      "Pon siempre un crujiente y un fresco: frutos secos, migas, hierbas o encurtido.",
+      "Sazona cada parte por separado: la verdura asada, las hojas y el aliño."
+    ],
+    "errors": [
+      {
+        "p": "Hojas cocidas y lacias",
+        "fix": "Verdura demasiado caliente o mezclada de antemano. Templa la verdura y mezcla al servir."
+      },
+      {
+        "p": "Sosa",
+        "fix": "Verdura sin sazonar al asarla. Sala antes de asar y prueba el aliño con la verdura."
+      },
+      {
+        "p": "Aceitosa",
+        "fix": "Demasiado aliño. Usa menos y añade ácido."
+      }
+    ],
+    "history": "Las ensaladas templadas se hicieron populares en la cocina de restaurante de finales del siglo XX, aunque aliñar verdura y legumbre en caliente es una costumbre antigua de la cocina de casa.",
+    "uses": [
+      "Guarnición de carne a la brasa",
+      "Entrante de temporada",
+      "Plato vegetal principal",
+      "Aprovechamiento de verdura asada"
+    ],
+    "keep": "Verdura asada en frío, 2–3 días; se templa en el horno. Aliño en frío, 4–5 días; calentar antes de usar. Montada, no se guarda.",
+    "pro": "Ten la verdura asada en bandeja y templa por ración en el horno o la brasa. Aliño en cazo pequeño al baño maría. Monta en bol en el pase y sirve.",
+    "related": [
+      "vinagreta",
+      "verduras-a-la-brasa",
+      "asado-de-verduras",
+      "ensalada-de-hierbas",
+      "migas-limon",
+      "legumbres"
+    ]
+  },
+  {
+    "id": "crujientes-salados",
+    "name": "Crujientes salados de guarnición",
+    "name_en": "Savoury crisps and crunchy garnishes",
+    "cat": "bases",
+    "group": "Crujientes y acabados",
+    "aka": [
+      "chips",
+      "puerro frito",
+      "ajo frito",
+      "garbanzos crujientes",
+      "teja de queso",
+      "frutos secos tostados",
+      "semillas tostadas",
+      "crujiente"
+    ],
+    "role": "crujiente",
+    "techniques": [
+      "fritura",
+      "tostado"
+    ],
+    "summary": "Láminas, hilos y granos fritos o tostados (chips, puerro, ajo, legumbre, semillas, queso) que ponen el crujiente y el punto tostado en el plato.",
+    "what": "Casi todo plato mejora con algo que cruja, y casi todo se puede volver crujiente si se le quita el agua: friendo, tostando en horno o secando. Cada producto tiene su temperatura: los que llevan azúcar (boniato, puerro, ajo) se queman antes y piden aceite más suave; los almidonados (patata, legumbre) aguantan más. Para pan, mira [[migas-limon]]; para láminas secas a baja temperatura, [[deshidratados-y-crujientes]].",
+    "base": {
+      "for": "unos 60 g de puerro frito (10–12 raciones de acabado)",
+      "items": [
+        [
+          "Puerro, parte blanca y verde clara",
+          "300 g"
+        ],
+        [
+          "Aceite de girasol o de oliva suave para freír",
+          "1 l"
+        ],
+        [
+          "Harina o almidón (opcional)",
+          "10 g"
+        ],
+        [
+          "Sal fina",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Corta el puerro en juliana muy fina, de 1 mm, y sepáralo en hilos.",
+        "Lávalo y sécalo muy bien en centrifugadora y sobre papel. Si quieres más crujiente, espolvorea con una pizca de harina o almidón.",
+        "Fríe en tandas pequeñas en aceite a 150–160 °C, removiendo, hasta que deje de burbujear y empiece a dorar.",
+        "Saca un momento antes del color final: sigue dorándose fuera del aceite.",
+        "Escurre sobre papel, sala en caliente y deja enfriar extendido."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Puerro, chalota o cebolla en hilos",
+        "ratio": "Aceite a 150–160 °C",
+        "note": "Sacar en rubio: se oscurece al enfriar."
+      },
+      {
+        "use": "Ajo laminado",
+        "ratio": "Desde aceite templado a 130–140 °C",
+        "note": "Retirar en dorado claro; amarga enseguida."
+      },
+      {
+        "use": "Chips de patata, alcachofa o tubérculo",
+        "ratio": "Láminas de 1–1,5 mm lavadas y secas, aceite a 160–170 °C",
+        "note": "Las de boniato, a 150 °C."
+      },
+      {
+        "use": "Garbanzos o habas crujientes",
+        "ratio": "Legumbre cocida y muy seca, horno a 200 °C 30–40 min o fritura a 180 °C",
+        "note": "Con aceite y especias al salir."
+      },
+      {
+        "use": "Teja de queso curado",
+        "ratio": "Queso rallado fino en discos finos, horno a 180 °C 6–8 min",
+        "note": "Moldear en caliente."
+      }
+    ],
+    "variants": [
+      {
+        "id": "migas-limon",
+        "name": "Migas de pan",
+        "note": "El crujiente de pan tostado con aromáticos."
+      },
+      {
+        "id": "deshidratados-y-crujientes",
+        "name": "Chips deshidratados",
+        "note": "Secados a baja temperatura, sin freír; más color y sabor puro."
+      },
+      {
+        "id": "tempura",
+        "name": "Tempura",
+        "note": "Un rebozado ligero que cruje alrededor del producto."
+      }
+    ],
+    "keys": [
+      "Seca muy bien antes de freír: el agua es lo que impide crujir y hace saltar el aceite.",
+      "Tandas pequeñas: si echas demasiado, el aceite baja de temperatura y el producto se empapa.",
+      "Saca antes del color final; el calor residual termina de dorar.",
+      "Sala en caliente, recién escurrido: luego no se pega.",
+      "Ponlo en el último momento, lejos de la salsa."
+    ],
+    "errors": [
+      {
+        "p": "Crujiente blando a la hora",
+        "fix": "Humedad del ambiente o poco frito. Fríe hasta que no burbujee y guarda en lata con papel."
+      },
+      {
+        "p": "Amargo",
+        "fix": "Ajo, puerro o especias quemados. Baja la temperatura del aceite y saca antes."
+      },
+      {
+        "p": "Aceitoso",
+        "fix": "Aceite frío o tandas grandes. Respeta la temperatura y escurre bien."
+      }
+    ],
+    "history": "Freír o tostar pequeños trozos de pan, verdura o legumbre para acompañar es una costumbre de muchas cocinas; en la de restaurante se ha convertido en una partida en sí misma.",
+    "uses": [
+      "Acabado de cremas y purés",
+      "Contraste en carnes y pescados con salsa",
+      "Ensaladas templadas",
+      "Aperitivo",
+      "Arroces y guisos"
+    ],
+    "keep": "En lata o recipiente hermético con papel secante o gel de sílice, 2–4 días según el producto. El ajo frito, mejor del día.",
+    "pro": "Fríe una vez antes del servicio y guarda en lata en el pase. Ten el aceite de freír puerro y ajo aparte: queda aromático y sirve para aliñar.",
+    "related": [
+      "migas-limon",
+      "deshidratados-y-crujientes",
+      "fritura",
+      "tempura",
+      "legumbres",
+      "quesos-en-cocina"
+    ]
+  },
+  {
+    "id": "emulsiones-de-hierbas",
+    "name": "Emulsiones frías de hierbas",
+    "name_en": "Cold herb emulsions",
+    "cat": "salsas",
+    "group": "Aliños de pase",
+    "aka": [
+      "mayonesa verde",
+      "mayonesa de hierbas",
+      "salsa verde emulsionada",
+      "emulsion de perejil",
+      "lactonesa de hierbas",
+      "aceite verde emulsionado"
+    ],
+    "role": "salsa",
+    "techniques": [
+      "emulsion"
+    ],
+    "summary": "Salsas frías verdes y brillantes que unen el aroma de las hierbas con la textura de una mayonesa: con aceite verde, yema o leche.",
+    "what": "Primero se hace un aceite verde: hierbas blanqueadas un instante, enfriadas y trituradas con aceite hasta que el aceite toma el color. Después ese aceite se emulsiona con yema, como una [[mayonesa]], o con leche, como una lactonesa sin huevo, o con agua y un estabilizante. El resultado es una salsa de color intenso, sabor fresco y textura que se sostiene en el plato. Las hierbas crudas trituradas directamente oscurecen enseguida; blanquearlas fija el color.",
+    "base": {
+      "for": "unos 350 g de mayonesa de hierbas",
+      "items": [
+        [
+          "Perejil, cebollino, estragón o albahaca (solo hojas)",
+          "80 g"
+        ],
+        [
+          "Aceite de girasol o de oliva suave",
+          "300 g"
+        ],
+        [
+          "Yema pasteurizada",
+          "40 g (2)"
+        ],
+        [
+          "Zumo de limón",
+          "15 g"
+        ],
+        [
+          "Mostaza",
+          "5 g"
+        ],
+        [
+          "Sal",
+          "4 g"
+        ]
+      ],
+      "steps": [
+        "Blanquea las hojas en agua hirviendo con sal 10–15 segundos y enfría en agua con hielo. Escurre y seca muy bien apretando en un paño.",
+        "Tritura las hojas con el aceite en vaso potente 2–3 minutos, sin pasar de 60 °C.",
+        "Cuela por estameña sin apretar y enfría el aceite verde sobre hielo.",
+        "Monta la yema con la mostaza, el limón y la sal añadiendo el aceite verde frío en hilo, como una mayonesa.",
+        "Ajusta de textura con unas gotas de agua fría y de sabor con limón y sal."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Aceite verde",
+        "ratio": "1 parte de hierba blanqueada y seca por 3–4 de aceite",
+        "note": "Triturar sin pasar de 60 °C; enfriar sobre hielo."
+      },
+      {
+        "use": "Mayonesa de hierbas",
+        "ratio": "1 yema por 150–200 g de aceite verde",
+        "note": "Más yema, más firme."
+      },
+      {
+        "use": "Lactonesa de hierbas (sin huevo)",
+        "ratio": "1 parte de leche fría por 2,5–3 de aceite verde",
+        "note": "Se monta con túrmix de abajo arriba."
+      },
+      {
+        "use": "Emulsión ligera estabilizada",
+        "ratio": "Agua de hierbas y aceite verde 1:1 con 1–1,5 g de xantana por 500 g",
+        "note": "Fluida, para puntear."
+      }
+    ],
+    "variants": [
+      {
+        "id": "mayonesa",
+        "name": "Mayonesa",
+        "note": "La emulsión base, sin hierba."
+      },
+      {
+        "id": "alioli",
+        "name": "Alioli verde",
+        "note": "Con ajo y perejil; para arroces y pescados."
+      },
+      {
+        "id": "pesto",
+        "name": "Pesto",
+        "note": "Hierba cruda, queso y frutos secos, sin emulsionar."
+      }
+    ],
+    "keys": [
+      "Blanquea solo unos segundos: fija el color sin cocer el sabor.",
+      "Seca la hierba a conciencia; el agua corta el aceite.",
+      "Aceite verde frío antes de montar: si está caliente, la mayonesa se corta.",
+      "Hierbas delicadas (albahaca, estragón) con aceite neutro; el de oliva fuerte las tapa.",
+      "Prepárala el día que la vas a usar: el verde se apaga con el tiempo."
+    ],
+    "errors": [
+      {
+        "p": "Color oscuro o pardo",
+        "fix": "Hierba sin blanquear o aceite calentado de más. Blanquea y tritura sin pasar de 60 °C."
+      },
+      {
+        "p": "Se corta",
+        "fix": "Aceite caliente o añadido de golpe. Empieza otra yema y añade la salsa cortada poco a poco."
+      },
+      {
+        "p": "Sabor a hierba cocida",
+        "fix": "Blanqueado largo. Reduce a 10 segundos y enfría al instante."
+      }
+    ],
+    "history": "Las mayonesas con hierbas son un clásico de la cocina europea, y los aceites verdes extraídos con trituradora potente se generalizaron en la cocina de restaurante de las últimas décadas.",
+    "uses": [
+      "Pescado y marisco a la brasa",
+      "Verduras asadas y crudités",
+      "Patatas y fritos",
+      "Bocadillos y aperitivos",
+      "Punteado de color en emplatado"
+    ],
+    "keep": "Aceite verde, en frío 3–4 días o congelado 1 mes. Mayonesa de hierbas, en frío y tapada, 1–2 días.",
+    "pro": "Haz el aceite verde en tanda y congélalo en porciones. Monta la emulsión cada día en la cantidad del servicio y guárdala en biberón en frío.",
+    "related": [
+      "mayonesa",
+      "aceites-aromatizados",
+      "emulsiones",
+      "hierbas-frescas",
+      "salsa-verde",
+      "alioli"
+    ]
+  },
+  {
+    "id": "pickles-de-servicio",
+    "name": "Pickles de servicio",
+    "name_en": "Pickles for service",
+    "cat": "bases",
+    "group": "Encurtidos y marinadas",
+    "aka": [
+      "pickles",
+      "encurtidos de servicio",
+      "verduras encurtidas",
+      "mostaza encurtida",
+      "fruta encurtida",
+      "surtido de encurtidos"
+    ],
+    "role": "fresco",
+    "techniques": [
+      "encurtido"
+    ],
+    "summary": "Un surtido de encurtidos rápidos pensados para el plato: qué corte, qué líquido y cuánto tiempo necesita cada verdura o fruta para estar en su punto en el pase.",
+    "what": "Con un solo líquido de [[encurtidos-rapidos|encurtido rápido]] se pueden tener a punto muchos pickles distintos, si se ajusta el corte y el tiempo. Una lámina fina de chalota está en 20 minutos; un bastón de zanahoria, al día siguiente; un pepino pequeño entero, a los 3 días. Las verduras duras piden el líquido caliente; las delicadas y la fruta, frío, para que conserven el crujiente. Los pickles dan al plato el ácido, el color y el crujiente que corta la grasa de la brasa.",
+    "base": {
+      "for": "1 l de líquido de encurtir, para unos 800 g de verdura",
+      "items": [
+        [
+          "Vinagre de vino blanco o de manzana (6 %)",
+          "400 ml"
+        ],
+        [
+          "Agua",
+          "600 ml"
+        ],
+        [
+          "Azúcar",
+          "60 g"
+        ],
+        [
+          "Sal",
+          "20 g"
+        ],
+        [
+          "Aromáticos (mostaza en grano, pimienta, eneldo, laurel, cilantro en grano)",
+          "al gusto"
+        ],
+        [
+          "Verduras o frutas cortadas",
+          "800 g"
+        ]
+      ],
+      "steps": [
+        "Hierve el agua con el vinagre, el azúcar, la sal y los aromáticos hasta disolver.",
+        "Corta cada verdura según el tiempo que quieras esperar: cuanto más fino, más rápido.",
+        "Verduras duras (zanahoria, remolacha, coliflor, hinojo): cubre con el líquido caliente.",
+        "Verduras delicadas y fruta (pepino, chalota, rabanito, melocotón, uva): cubre con el líquido frío.",
+        "Tapa, enfría y guarda en cámara cada pickle en su recipiente, etiquetado con fecha y hora."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Líquido suave para el plato",
+        "ratio": "40 % de vinagre, 60 % de agua, 6 % de azúcar y 2 % de sal",
+        "note": "Para comer en cantidad sin que pique."
+      },
+      {
+        "use": "Líquido intenso para acompañar grasas",
+        "ratio": "Vinagre y agua a partes iguales",
+        "note": "Menos azúcar si es para carnes."
+      },
+      {
+        "use": "Láminas finas y aros",
+        "ratio": "20–60 minutos en líquido frío",
+        "note": "Chalota, rabanito, pepino."
+      },
+      {
+        "use": "Bastones y floretes",
+        "ratio": "12–24 horas en líquido caliente a 80–90 °C",
+        "note": "Zanahoria, coliflor, hinojo."
+      },
+      {
+        "use": "Mostaza en grano encurtida",
+        "ratio": "1 parte de grano por 3 de líquido, cocido a fuego suave 30–40 min",
+        "note": "Queda tierna y como caviar; repone líquido si hace falta."
+      }
+    ],
+    "variants": [
+      {
+        "id": "cebolla-encurtida",
+        "name": "Cebolla encurtida",
+        "note": "El pickle más usado del pase."
+      },
+      {
+        "id": "fermentacion-lactica",
+        "name": "Pickles fermentados",
+        "note": "Sin vinagre: la acidez la hacen las bacterias en salmuera."
+      },
+      {
+        "id": "vinagreta-piparras",
+        "name": "Piparras",
+        "note": "Guindillas encurtidas, picantes y ácidas."
+      }
+    ],
+    "keys": [
+      "El corte decide el tiempo: planifica el pickle según el servicio.",
+      "Líquido caliente para lo duro, frío para lo delicado.",
+      "Un recipiente por pickle: los sabores y colores se mezclan, sobre todo la remolacha.",
+      "Prueba cada día; un pickle de 3 horas y uno de 3 días son cosas distintas.",
+      "Reutiliza el líquido colado una vez para aliños; no para nuevos pickles de larga duración."
+    ],
+    "errors": [
+      {
+        "p": "Blando, sin crujiente",
+        "fix": "Líquido caliente sobre verdura delicada o demasiado tiempo. Usa líquido frío y corte más grueso."
+      },
+      {
+        "p": "Demasiado ácido para el plato",
+        "fix": "Líquido intenso. Escurre y aliña con aceite, o rebaja el vinagre en la siguiente."
+      },
+      {
+        "p": "Turbio o con espuma",
+        "fix": "Recipiente mal limpio o verdura mal lavada. Desecha y empieza con todo limpio."
+      }
+    ],
+    "history": "Encurtir en vinagre es una forma de conservar muy antigua y común a muchas cocinas. En la cocina de restaurante actual los encurtidos rápidos se usan sobre todo como contrapunto ácido en el plato.",
+    "uses": [
+      "Carnes y pescados grasos a la brasa",
+      "Ensaladas y ensaladas templadas",
+      "Tostas y bocadillos",
+      "Crudos y tartares",
+      "Aperitivo de la casa"
+    ],
+    "keep": "En frío y cubiertos, la mayoría 2–3 semanas; las láminas muy finas, 1 semana porque se ablandan. La fruta encurtida, 1 semana.",
+    "pro": "Ten tres o cuatro pickles en rotación con fechas distintas, para que siempre haya uno en su punto. En el pase, en botes pequeños con pinza y un poco de su líquido.",
+    "related": [
+      "encurtidos-rapidos",
+      "cebolla-encurtida",
+      "fermentacion-lactica",
+      "vinagres-aromatizados",
+      "vinagreta-piparras",
+      "acidez-en-cocina"
+    ]
   }
 ]

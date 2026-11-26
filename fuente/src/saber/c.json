@@ -3133,5 +3133,812 @@
       "deshidratados-y-crujientes",
       "ahumado"
     ]
+  },
+  {
+    "id": "caldo-de-setas",
+    "name": "Caldo de setas y dashi vegetal",
+    "aka": [
+      "caldo de setas",
+      "caldo de champiñon",
+      "fondo de setas",
+      "dashi vegetal",
+      "caldo de boletus",
+      "caldo umami vegetal"
+    ],
+    "cat": "fondos",
+    "group": "Fondos claros",
+    "summary": "Caldo de setas tostadas y secas, con o sin kombu, para arroces, risottos, salsas y platos vegetales con profundidad.",
+    "what": "Las [[setas]] tienen mucho sabor de fondo y, secas, todavía más. Este caldo dora champiñones o recortes de setas hasta que pierden el agua y toman color, se moja con agua y se refuerza con setas secas y su agua de remojo. Con kombu infusionada se acerca a un [[dashi]] vegetal. Es una base para cocina sin carne que no se queda corta, y en arroces de monte acompaña muy bien a la carne de ave o de conejo.",
+    "base": {
+      "for": "2,5 l aprox.",
+      "items": [
+        [
+          "Champiñón o recortes de setas",
+          "1,5 kg"
+        ],
+        [
+          "Setas secas (boletus, shiitake o una mezcla)",
+          "40 g"
+        ],
+        [
+          "Agua templada para el remojo",
+          "500 ml"
+        ],
+        [
+          "Cebolla",
+          "300 g"
+        ],
+        [
+          "Ajo",
+          "4 dientes"
+        ],
+        [
+          "Aceite de oliva",
+          "50 ml"
+        ],
+        [
+          "Vino blanco seco o jerez seco",
+          "150 ml"
+        ],
+        [
+          "Agua fría",
+          "3 l"
+        ],
+        [
+          "Tomillo y laurel",
+          "al gusto"
+        ],
+        [
+          "Alga kombu (opcional)",
+          "15 g"
+        ]
+      ],
+      "steps": [
+        "Remoja las setas secas en el agua templada 30 minutos. Cuela el agua por papel o estameña para quitar la arena y guárdala.",
+        "Dora los champiñones troceados en el aceite a fuego fuerte, por tandas, hasta que suelten el agua, se evapore y tomen color.",
+        "Añade la cebolla y el ajo y dora 10 minutos. Desglasa con el vino.",
+        "Moja con el agua fría y el agua de remojo, añade las setas secas y las hierbas. Cuece a 90–95 °C, 45–60 minutos.",
+        "Si usas kombu, añádela fuera del fuego, infusiona 20 minutos y retírala. Cuela apretando ligeramente."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Arroces y risottos",
+        "ratio": "1 kg de setas frescas y 25 g de secas por 2 l de agua",
+        "note": "45–60 minutos a 90–95 °C."
+      },
+      {
+        "use": "Dashi vegetal",
+        "ratio": "10 g de kombu y 15–20 g de shiitake seco por litro, en frío 12 h",
+        "note": "Después calentar a 60 °C 30 minutos, sin hervir."
+      },
+      {
+        "use": "Salsa o jugo de setas",
+        "ratio": "Caldo reducido a 1/5 y montado con 50 g de mantequilla por litro",
+        "note": "Para carnes, huevos y verduras."
+      },
+      {
+        "use": "Consomé de setas",
+        "ratio": "Caldo colado por papel y clarificado en frío",
+        "note": "Limpio y muy aromático."
+      }
+    ],
+    "variants": [
+      {
+        "id": "dashi",
+        "name": "Dashi",
+        "note": "Con kombu y bonito seco; el original japonés."
+      },
+      {
+        "id": "caldo-de-verduras-tostadas",
+        "name": "Caldo de verduras tostadas",
+        "note": "Más dulce y vegetal; las setas van como refuerzo."
+      },
+      {
+        "id": null,
+        "name": "Caldo de setas de temporada",
+        "note": "Con los recortes de níscalos, rebozuelos o boletus del otoño."
+      }
+    ],
+    "keys": [
+      "Dora de verdad las setas: el sabor está en el tostado, no en el hervor.",
+      "Cuela siempre el agua de remojo de las setas secas: lleva arena.",
+      "La kombu nunca hierve: suelta sabores amargos y viscosidad.",
+      "Sin sal: las setas secas y la reducción lo concentran.",
+      "Guarda los pies y recortes de setas congelados para este caldo."
+    ],
+    "errors": [
+      {
+        "p": "Caldo gris y sin sabor",
+        "fix": "Setas cocidas sin dorar. Dora en tandas pequeñas a fuego fuerte."
+      },
+      {
+        "p": "Arena en el fondo",
+        "fix": "Agua de remojo sin colar. Cuela por papel y lava bien las setas."
+      },
+      {
+        "p": "Amargo",
+        "fix": "Kombu hervida o setas secas viejas. Kombu fuera del fuego y setas de buena calidad."
+      }
+    ],
+    "history": "Los caldos de setas son habituales en las cocinas de monte del Mediterráneo y de Europa central, y el dashi de kombu y shiitake es una base de la cocina vegetal japonesa. La cocina actual combina las dos ideas.",
+    "uses": [
+      "Arroces de setas y de monte",
+      "Risottos",
+      "Salsas para carne y huevos",
+      "Sopas y cremas",
+      "Platos vegetales"
+    ],
+    "keep": "Abatir de 60 °C a menos de 10 °C en menos de 2 horas. En cámara a 0–4 °C, 3–4 días; congelado, 3 meses.",
+    "pro": "Congela los recortes de setas de la semana en una bolsa y haz el caldo cuando tengas 1,5 kg. En otoño haz tanda grande y congela en bolsas de 1 l.",
+    "related": [
+      "setas",
+      "dashi",
+      "caldo-de-verduras",
+      "caldo-de-verduras-tostadas",
+      "umami-y-fondo",
+      "arroces"
+    ]
+  },
+  {
+    "id": "garum-y-salsas-de-pescado",
+    "name": "Garum y salsas de pescado caseras",
+    "aka": [
+      "garum",
+      "salsa de pescado",
+      "colatura",
+      "liquido de anchoa",
+      "fish sauce",
+      "salsa de pescado fermentada"
+    ],
+    "cat": "bases",
+    "group": "Curas y marinados",
+    "summary": "Líquidos salados y muy concentrados que salen de fermentar o salar pescado: unas gotas dan profundidad a salsas, aliños, caldos y verduras.",
+    "what": "Cuando el pescado se cubre de mucha sal, sus propias enzimas lo deshacen poco a poco y queda un líquido ámbar, salado y lleno de [[umami-y-fondo|umami]]. Así se hacían las salsas de pescado antiguas, y así siguen haciéndose en el sudeste asiático. En cocina hay tres caminos: el tradicional, lento, de pescado azul y sal; el rápido, con koji y temperatura controlada; y el más sencillo, aprovechar el líquido que sueltan las [[salazones-y-huevas|anchoas en salazón]]. Se usa como la sal, pero gota a gota.",
+    "base": {
+      "for": "unos 600 ml de salsa (método rápido con koji)",
+      "items": [
+        [
+          "Recortes, espinas y cabezas de pescado azul muy fresco, sin agallas",
+          "1 kg"
+        ],
+        [
+          "Koji de arroz",
+          "250 g"
+        ],
+        [
+          "Sal",
+          "150 g"
+        ],
+        [
+          "Agua",
+          "500 g"
+        ]
+      ],
+      "steps": [
+        "Tritura el pescado en trozos y mezcla con el koji, la sal y el agua.",
+        "Pon en un recipiente de vidrio o de acero, tapado, en un baño o cámara a 55–60 °C, 1–3 semanas. Remueve cada día los primeros días.",
+        "Cuando huela a salsa de pescado y a fruto seco, no a podrido, cuela por estameña apretando.",
+        "Filtra por papel, lleva a hervor 1 minuto si quieres estabilizarla y guarda en botella cerrada en frío."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Salsa tradicional",
+        "ratio": "3 partes de pescado azul entero por 1 de sal",
+        "note": "Meses a temperatura de sala, tapado y prensado; el líquido se saca del fondo."
+      },
+      {
+        "use": "Método rápido con koji",
+        "ratio": "10–15 % de sal sobre el total y 55–60 °C",
+        "note": "1–3 semanas; la temperatura evita que crezcan bacterias no deseadas."
+      },
+      {
+        "use": "Líquido de anchoas en salazón",
+        "ratio": "El jugo que sueltan las anchoas en sal, filtrado y reducido a la mitad",
+        "note": "Muy salado; se usa en gotas."
+      },
+      {
+        "use": "En una vinagreta o salsa",
+        "ratio": "3–5 ml por cada 100 ml",
+        "note": "Que dé fondo sin que se reconozca."
+      }
+    ],
+    "variants": [
+      {
+        "id": "miso-y-koji",
+        "name": "Miso y salsas de koji",
+        "note": "El mismo principio con legumbre o cereal en vez de pescado."
+      },
+      {
+        "id": "salazones-y-huevas",
+        "name": "Anchoas en salazón",
+        "note": "De su proceso sale el líquido más fácil de aprovechar."
+      },
+      {
+        "id": null,
+        "name": "Salsa de marisco fermentada",
+        "note": "Con cabezas de gamba o carabinero; más dulce y roja."
+      }
+    ],
+    "keys": [
+      "Pescado muy fresco y limpio: la sal conserva, pero no arregla un pescado pasado.",
+      "Sal suficiente: por debajo de la proporción, el pescado se pudre en vez de fermentar.",
+      "Recipientes de vidrio, acero o plástico alimentario, nunca metal que se oxide.",
+      "Dosifica en gotas y prueba: sustituye parte de la sal del plato, no se suma.",
+      "Etiqueta con fecha, pescado y método; anota cómo evoluciona."
+    ],
+    "errors": [
+      {
+        "p": "Olor a podrido",
+        "fix": "Poca sal, pescado poco fresco o temperatura baja en el método rápido. Desecha y repite con la proporción correcta."
+      },
+      {
+        "p": "Salsa turbia",
+        "fix": "Mal filtrada. Deja decantar en frío y filtra por papel."
+      },
+      {
+        "p": "Domina el plato",
+        "fix": "Demasiada cantidad. Úsala en gotas y equilibra con ácido."
+      }
+    ],
+    "history": "Las salsas de pescado fermentado fueron un condimento muy extendido en el mundo romano, y en las costas de la Hispania romana hubo factorías de salazón y salsas de pescado. Hoy siguen vivas en el sudeste asiático y la cocina de investigación las ha recuperado con métodos más rápidos.",
+    "uses": [
+      "Aliños y vinagretas",
+      "Salsas de pescado y mantequillas",
+      "Verduras a la brasa",
+      "Caldos y arroces",
+      "Marinadas"
+    ],
+    "keep": "Filtrada y en botella cerrada, en frío, varios meses. Si cambia de olor o aparece moho, se desecha.",
+    "pro": "Aprovecha recortes y espinas de pescado azul del día. Ten la salsa en un gotero en el pase: unas gotas sobre una verdura a la brasa o en un aliño.",
+    "related": [
+      "salazones-y-huevas",
+      "miso-y-koji",
+      "umami-y-fondo",
+      "fermentacion-lactica",
+      "salmuera",
+      "pescado-de-roca"
+    ]
+  },
+  {
+    "id": "jugos-de-verdura",
+    "name": "Jugos y aguas de verdura",
+    "aka": [
+      "jugo de verdura",
+      "agua de tomate",
+      "jugo de pimiento asado",
+      "licuado reducido",
+      "salsa de zumo de verdura",
+      "jugo de zanahoria"
+    ],
+    "cat": "bases",
+    "group": "Jugos y glasas",
+    "summary": "Zumos de verdura cruda o asada, colados y reducidos o montados, que hacen de salsa ligera con el sabor puro del producto.",
+    "what": "En lugar de un caldo, se extrae el jugo de la propia verdura: licuada en crudo, prensada después de asarla o dejada gotear tras triturarla con sal. Reducido y montado con grasa, el zumo de zanahoria, de pimiento asado o de remolacha se vuelve una salsa brillante que sabe solo a eso. El agua de tomate, transparente y muy aromática, sirve para aliñar crudos, como base de un gel o como caldo frío. Es el complemento ligero del [[caldo-de-verduras-tostadas]].",
+    "base": {
+      "for": "200 ml de jugo de zanahoria montado",
+      "items": [
+        [
+          "Zanahorias limpias",
+          "1,2 kg"
+        ],
+        [
+          "Mantequilla fría en dados (o aceite de oliva suave)",
+          "40 g"
+        ],
+        [
+          "Sal",
+          "al gusto"
+        ],
+        [
+          "Zumo de limón o vinagre suave",
+          "unas gotas"
+        ],
+        [
+          "Especia (comino, cilantro en grano, jengibre)",
+          "opcional"
+        ]
+      ],
+      "steps": [
+        "Licúa las zanahorias: salen unos 500 ml de zumo.",
+        "Lleva el zumo a hervor suave: la parte sólida flota y se separa. Cuela por papel o estameña.",
+        "Reduce a fuego vivo hasta unos 200 ml, con la especia si la usas.",
+        "Fuera del fuego, monta con la mantequilla fría o el aceite, batiendo, hasta que brille.",
+        "Ajusta de sal y con unas gotas de ácido para que no quede dulzón."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Jugo de raíz reducido",
+        "ratio": "Zumo reducido a 2/5 y montado con 150–200 g de mantequilla por litro de jugo",
+        "note": "Mantener a 60–65 °C, sin hervir, en el pase."
+      },
+      {
+        "use": "Agua de tomate",
+        "ratio": "1 kg de tomate maduro triturado con 8–10 g de sal, goteando en paño 12 h a 4 °C",
+        "note": "Sale unos 500 ml de líquido claro."
+      },
+      {
+        "use": "Jugo de pimiento asado",
+        "ratio": "El jugo de pimientos asados y pelados, colado y reducido a la mitad",
+        "note": "Con un hilo de aceite y vinagre de jerez."
+      },
+      {
+        "use": "Jugos verdes",
+        "ratio": "Licuado de hierba o verdura verde calentado como mucho a 70 °C",
+        "note": "Más calor lo vuelve marrón; se añade al final."
+      }
+    ],
+    "variants": [
+      {
+        "id": "caldo-de-verduras-tostadas",
+        "name": "Jugo de verduras tostadas",
+        "note": "Más profundo y oscuro; a partir de caldo."
+      },
+      {
+        "id": "pimientos-asados-alinados",
+        "name": "Pimientos asados",
+        "note": "Su jugo de asado es uno de los mejores aliños."
+      },
+      {
+        "id": null,
+        "name": "Gel de agua de tomate",
+        "note": "Agua de tomate cuajada con agar o gelatina para crudos y aperitivos."
+      }
+    ],
+    "keys": [
+      "Verdura en su mejor momento: aquí no hay nada que la esconda.",
+      "Cuela después del primer hervor: la pulpa flocula y el jugo queda limpio.",
+      "Reduce deprisa y en recipiente ancho para conservar color.",
+      "El ácido final quita el dulzor plano de las raíces.",
+      "Monta con la grasa fuera del fuego y no lo vuelvas a hervir."
+    ],
+    "errors": [
+      {
+        "p": "Jugo turbio y granulado",
+        "fix": "No se coló tras flocular. Hierve, deja que suba la pulpa y cuela por papel."
+      },
+      {
+        "p": "Color apagado",
+        "fix": "Reducción lenta o recipiente pequeño. Reduce rápido en sauté ancho."
+      },
+      {
+        "p": "Salsa empalagosa",
+        "fix": "Demasiado reducida o sin ácido. Aligera con agua y añade unas gotas de vinagre."
+      },
+      {
+        "p": "Se corta la mantequilla",
+        "fix": "Jugo hirviendo al montar. Monta fuera del fuego y mantén por debajo de 65 °C."
+      }
+    ],
+    "history": "Los zumos de verdura como salsa se popularizaron en la cocina de restaurante de finales del siglo XX, como alternativa ligera a las salsas ligadas. El agua de tomate se ha hecho habitual en la cocina mediterránea actual.",
+    "uses": [
+      "Salsa de verduras glaseadas",
+      "Base para pescado y marisco",
+      "Agua de tomate para crudos y aperitivos",
+      "Gel o granizado salado",
+      "Glasear verduras"
+    ],
+    "keep": "Zumos crudos, en frío, 1–2 días. Reducidos sin montar, en frío 3–4 días o congelados en cubitos. Agua de tomate, en frío 3 días; congelada, 2 meses.",
+    "pro": "Reduce por la mañana y monta en el pase en pequeñas cantidades. Para el agua de tomate, aprovecha los tomates más maduros del día y cuélgala por la noche.",
+    "related": [
+      "caldo-de-verduras-tostadas",
+      "reducciones",
+      "tomate",
+      "pimientos-asados-alinados",
+      "glaseado-de-verduras",
+      "emulsiones"
+    ]
+  },
+  {
+    "id": "vinagres-aromatizados",
+    "name": "Vinagres aromatizados",
+    "aka": [
+      "vinagre de hierbas",
+      "vinagre de frutas",
+      "vinagre de frambuesa",
+      "vinagre de estragon",
+      "vinagre casero",
+      "vinagre infusionado"
+    ],
+    "cat": "bases",
+    "group": "Bases",
+    "summary": "Vinagre de vino infusionado con hierbas, frutas, cítricos o especias para aliñar con una acidez que ya trae aroma.",
+    "what": "El vinagre es un disolvente excelente: extrae aroma y color de hierbas, frutas y especias y, por su acidez, se conserva bien. Se usa como el vinagre normal, pero aporta un segundo sabor: estragón en una salsa de huevo, higo en un aliño de queso, cítrico sobre un crudo. Se hace en frío, con paciencia, o en templado si hace falta rápido. Hacer el propio vinagre a partir de vino es otra cosa, una fermentación, y se cuenta como variante.",
+    "base": {
+      "for": "1 l de vinagre de hierbas",
+      "items": [
+        [
+          "Vinagre de vino blanco o de cava, de al menos 6 % de acidez",
+          "1 l"
+        ],
+        [
+          "Hierbas frescas (estragón, romero, hinojo, tomillo) limpias y bien secas",
+          "60–80 g"
+        ],
+        [
+          "Piel de limón sin parte blanca (opcional)",
+          "1 tira"
+        ],
+        [
+          "Pimienta en grano (opcional)",
+          "5 g"
+        ]
+      ],
+      "steps": [
+        "Lava y seca muy bien las hierbas; magúllalas un poco con la mano.",
+        "Ponlas en un tarro de vidrio limpio y cubre con el vinagre.",
+        "Cierra y deja en un lugar oscuro y fresco 2–3 semanas, agitando de vez en cuando.",
+        "Prueba a partir de la primera semana. Cuando tenga el aroma buscado, cuela por papel y embotella.",
+        "Para hacerlo rápido, calienta el vinagre a 60–70 °C, viértelo sobre las hierbas y deja 48 horas antes de colar."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Vinagre de hierbas",
+        "ratio": "60–80 g de hierba fresca por litro",
+        "note": "2–3 semanas en frío y oscuro, o vinagre a 60–70 °C para 48 h."
+      },
+      {
+        "use": "Vinagre de fruta (frambuesa, higo, cereza)",
+        "ratio": "400–500 g de fruta por litro",
+        "note": "1–2 semanas; colar sin apretar para que quede limpio."
+      },
+      {
+        "use": "Vinagre de especias",
+        "ratio": "15–25 g de especias tostadas por litro",
+        "note": "Chile seco, pimienta, cilantro o hinojo en grano."
+      },
+      {
+        "use": "Vinagre casero de vino",
+        "ratio": "Vino con madre de vinagre, en recipiente abierto tapado con tela, a 25–30 °C",
+        "note": "4–8 semanas, hasta que no quede alcohol."
+      }
+    ],
+    "variants": [
+      {
+        "id": "vinagreta",
+        "name": "Vinagreta",
+        "note": "El destino más habitual de un vinagre aromatizado."
+      },
+      {
+        "id": "encurtidos-rapidos",
+        "name": "Encurtidos rápidos",
+        "note": "Un vinagre aromatizado es un buen líquido de encurtir."
+      },
+      {
+        "id": null,
+        "name": "Vinagre de piel de cítrico",
+        "note": "Pieles de naranja o limón sin la parte blanca, 2 semanas."
+      }
+    ],
+    "keys": [
+      "Vinagre con acidez de al menos un 6 %: diluido no conserva.",
+      "Hierbas bien secas: el agua diluye y puede enturbiar.",
+      "Prueba cada pocos días; las hierbas fuertes amargan si se dejan demasiado.",
+      "Cuela y retira los sólidos: si quedan dentro, el sabor sigue cambiando.",
+      "Etiqueta con fecha y lo que lleva."
+    ],
+    "errors": [
+      {
+        "p": "Turbio o con película",
+        "fix": "Hierbas húmedas o vinagre de poca acidez. Desecha si hay moho; usa vinagre más fuerte y hierbas secas."
+      },
+      {
+        "p": "Sabor amargo o a hierba cocida",
+        "fix": "Demasiado tiempo o vinagre demasiado caliente. Acorta la infusión y no pases de 70 °C."
+      },
+      {
+        "p": "Sin aroma",
+        "fix": "Poca hierba o hierba vieja. Sube la cantidad y usa hierba fresca y aromática."
+      }
+    ],
+    "history": "Aromatizar el vinagre con hierbas y frutas es una práctica antigua en las cocinas europeas y mediterráneas, tanto para conservar como para dar sabor. Los vinagres de fruta se pusieron de moda en la cocina de restaurante de finales del siglo XX.",
+    "uses": [
+      "Vinagretas y aliños",
+      "Salsas emulsionadas (estragón en bearnesa)",
+      "Encurtidos",
+      "Desglasar",
+      "Crudos y marinados"
+    ],
+    "keep": "Colado y en botella cerrada, lejos de la luz, varios meses. El vinagre casero, igual, una vez terminada la fermentación.",
+    "pro": "Haz pequeñas tandas en temporada con las hierbas y frutas que te sobran. Ten dos o tres vinagres propios en el pase para aliños y para corregir salsas en el último momento.",
+    "related": [
+      "vinagreta",
+      "acidez-en-cocina",
+      "encurtidos-rapidos",
+      "hierbas-frescas",
+      "citricos",
+      "bearnesa"
+    ]
+  },
+  {
+    "id": "conservas-en-aceite",
+    "name": "Conservas en aceite y cítricos encurtidos",
+    "aka": [
+      "verduras en aceite",
+      "conserva en aceite",
+      "bonito en aceite",
+      "limon en sal",
+      "limon encurtido",
+      "sott olio",
+      "pimientos en aceite"
+    ],
+    "cat": "bases",
+    "group": "Curas y marinados",
+    "summary": "Verduras, pescados y cítricos guardados en aceite o en sal: cómo prepararlos para que aguanten con seguridad y qué no se puede hacer en casa.",
+    "what": "El aceite no conserva por sí mismo: solo aísla del aire, y sin aire y sin acidez pueden crecer bacterias muy peligrosas, como la que causa el botulismo. Por eso una conserva en aceite segura exige o acidificar el producto antes (escaldarlo en vinagre), o cocinarlo y guardarlo siempre en frío pocos días. Las conservas que duran meses a temperatura ambiente necesitan esterilización a más de 100 °C, en autoclave, algo que una cocina sin ese equipo no puede hacer. Los cítricos en sal son otra técnica: la sal y el ácido del propio limón lo conservan y lo transforman.",
+    "base": {
+      "for": "1 kg de verdura acidificada en aceite (berenjena, pimiento, alcachofa)",
+      "items": [
+        [
+          "Verdura limpia y cortada",
+          "1 kg"
+        ],
+        [
+          "Vinagre de vino (6 %)",
+          "500 ml"
+        ],
+        [
+          "Agua",
+          "500 ml"
+        ],
+        [
+          "Sal",
+          "20 g"
+        ],
+        [
+          "Aceite de oliva para cubrir",
+          "500–700 ml"
+        ],
+        [
+          "Hierbas secas, guindilla, pimienta",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Hierve el vinagre con el agua y la sal.",
+        "Escalda la verdura en ese líquido 2–4 minutos según el corte: tiene que quedar tierna pero firme.",
+        "Escurre y extiende sobre rejilla o paño limpio hasta que esté completamente seca, 1–2 horas en frío.",
+        "Coloca en tarros limpios con las hierbas secas (no frescas) y cubre con aceite, sin burbujas.",
+        "Cierra y guarda en cámara a 0–4 °C."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Verdura acidificada en aceite",
+        "ratio": "Escaldado en vinagre y agua 1:1 con 2 % de sal",
+        "note": "En frío, hasta 2–3 semanas."
+      },
+      {
+        "use": "Bonito o atún confitado en aceite",
+        "ratio": "Lomo salado 30 minutos en salmuera, confitado en aceite a 60–65 °C hasta 50–55 °C al corazón",
+        "note": "En frío y cubierto, 5–7 días."
+      },
+      {
+        "use": "Limón en sal",
+        "ratio": "1 kg de limones en cuartos sin separar y 100–120 g de sal gruesa, cubiertos con su zumo",
+        "note": "3–4 semanas a temperatura de sala; luego en frío meses."
+      },
+      {
+        "use": "Conserva estable a temperatura ambiente",
+        "ratio": "Autoclave a 116–121 °C",
+        "note": "El baño maría a 100 °C no basta para producto poco ácido."
+      }
+    ],
+    "variants": [
+      {
+        "id": "citricos",
+        "name": "Limón encurtido en sal",
+        "note": "Se usa la piel picada, que pierde el amargor."
+      },
+      {
+        "id": "tomate-confitado",
+        "name": "Tomate confitado en aceite",
+        "note": "Cocinado y guardado en frío pocos días."
+      },
+      {
+        "id": "encurtidos-rapidos",
+        "name": "Encurtido en vinagre",
+        "note": "La acidez del líquido conserva; más sencillo y seguro."
+      }
+    ],
+    "keys": [
+      "Aceite no es conserva: o acidificas, o frío y pocos días.",
+      "Ajo, hierbas frescas y verduras crudas en aceite son el caso de más riesgo: siempre en frío y en días.",
+      "Producto bien seco antes de cubrir de aceite.",
+      "Tarros limpios y escaldados, y utensilios limpios cada vez que sacas.",
+      "Etiqueta con fecha y no alargues: si dudas, se tira."
+    ],
+    "errors": [
+      {
+        "p": "Tarro con burbujas, tapa abombada u olor extraño",
+        "fix": "Puede haber contaminación grave. No lo pruebes: desecha el tarro entero sin abrirlo más."
+      },
+      {
+        "p": "Aceite turbio",
+        "fix": "Agua en el producto o frío (el aceite se enturbia en cámara). Si es por frío, se aclara a temperatura de sala; si no, desecha."
+      },
+      {
+        "p": "Verdura blanda y deshecha",
+        "fix": "Escaldado largo. Acorta el tiempo y corta más grueso."
+      },
+      {
+        "p": "Limón en sal con moho",
+        "fix": "Limón no cubierto por el líquido. Cubre siempre con zumo y presiona con peso."
+      }
+    ],
+    "history": "Guardar verduras, pescados y frutas en aceite, vinagre o sal es una práctica antigua del Mediterráneo, y los limones en sal son tradicionales en el norte de África. La industria conservera moderna se basa en la esterilización a alta temperatura.",
+    "uses": [
+      "Antipasto y aperitivos",
+      "Ensaladas y tostas",
+      "Bonito en aceite para ensaladas y bocados",
+      "Limón en sal para guisos, aliños y pescados",
+      "Despensa de temporada"
+    ],
+    "keep": "Verduras acidificadas en aceite, en frío, 2–3 semanas. Pescado confitado en aceite, en frío, 5–7 días. Limón en sal, en frío después de curado, varios meses. Nada de esto se guarda a temperatura ambiente.",
+    "pro": "Haz pequeñas tandas que se consuman en días y etiqueta cada tarro. Saca con utensilio limpio y vuelve a cubrir el producto con aceite cada vez.",
+    "related": [
+      "confitado",
+      "aceites-aromatizados",
+      "encurtidos-rapidos",
+      "citricos",
+      "tomate-confitado",
+      "pimientos-asados-alinados",
+      "salmuera"
+    ]
+  },
+  {
+    "id": "pastas-de-especias",
+    "name": "Pastas de especias",
+    "aka": [
+      "harissa",
+      "pasta de curry",
+      "recado",
+      "recado rojo",
+      "pasta de chile",
+      "pasta de ñora",
+      "curry casero",
+      "mezcla de especias"
+    ],
+    "cat": "bases",
+    "group": "Curas y marinados",
+    "summary": "Especias tostadas y molidas con chiles, aromáticos y aceite o ácido hasta una pasta: harissa, pastas de curry, recados y la pasta de ñora.",
+    "what": "Una pasta de especias concentra en una cucharada el sabor de un plato: se tuestan las [[especias]] enteras, se muelen y se trituran con chiles remojados, ajo, chalota o hierbas y una parte grasa o ácida. Muchas cocinas tienen la suya: la harissa del norte de África, con chiles y alcaravea; las pastas de curry del sudeste asiático, con hierba limón y galanga; los recados de Yucatán, con achiote y cítrico; y en casa, la pasta de ñora y ajo de los arroces. Se usan para adobar, para empezar un guiso o como condimento final.",
+    "base": {
+      "for": "unos 350 g de harissa",
+      "items": [
+        [
+          "Guindillas secas medianas, sin pedúnculo ni pepitas",
+          "60 g"
+        ],
+        [
+          "Pimiento rojo asado y pelado",
+          "150 g"
+        ],
+        [
+          "Ajo",
+          "20 g"
+        ],
+        [
+          "Comino en grano",
+          "6 g"
+        ],
+        [
+          "Cilantro en grano",
+          "6 g"
+        ],
+        [
+          "Alcaravea",
+          "4 g"
+        ],
+        [
+          "Pimentón dulce",
+          "5 g"
+        ],
+        [
+          "Zumo de limón",
+          "20 g"
+        ],
+        [
+          "Sal",
+          "8 g"
+        ],
+        [
+          "Aceite de oliva",
+          "80 g y más para cubrir"
+        ]
+      ],
+      "steps": [
+        "Remoja las guindillas en agua caliente 30 minutos y escurre.",
+        "Tuesta el comino, el cilantro y la alcaravea en sartén seca a fuego medio 1–2 minutos, hasta que huelan; muele.",
+        "Tritura las guindillas, el pimiento asado, el ajo, las especias, el pimentón, la sal y el limón hasta una pasta fina, añadiendo el aceite en hilo.",
+        "Opcional: cocina la pasta en una sartén con un poco de aceite a fuego suave 5 minutos para redondear el ajo.",
+        "Guarda en tarro, cubre con una capa de aceite y en frío."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Harissa",
+        "ratio": "60 g de chile seco por 150 g de pimiento asado y 16 g de especias",
+        "note": "Picor medio; más chile para más fuerza."
+      },
+      {
+        "use": "Pasta de curry tipo tailandés",
+        "ratio": "Chiles, chalota, ajo, hierba limón, galanga y pasta de gamba en partes parecidas, con especias tostadas",
+        "note": "Se fríe en grasa o en leche de coco antes de mojar."
+      },
+      {
+        "use": "Recado rojo",
+        "ratio": "Achiote molido con especias, ajo y zumo de naranja amarga o mezcla de naranja y lima",
+        "note": "Para adobar carnes y pescados antes de la brasa."
+      },
+      {
+        "use": "Pasta de ñora",
+        "ratio": "6 ñoras remojadas (solo la carne), 4 ajos fritos y aceite",
+        "note": "Para arroces y caldos de pescado."
+      }
+    ],
+    "variants": [
+      {
+        "id": "adobo",
+        "name": "Adobo",
+        "note": "Pimentón, ajo, vinagre y especias para marinar."
+      },
+      {
+        "id": "chiles-y-salsas-mexicanas",
+        "name": "Salsas de chile",
+        "note": "Chiles secos tostados y remojados en salsa."
+      },
+      {
+        "id": "romesco",
+        "name": "Romesco",
+        "note": "Ñora, frutos secos y pan; salsa más que pasta."
+      }
+    ],
+    "keys": [
+      "Tuesta las especias enteras justo antes de moler: el aroma está en sus aceites.",
+      "Quita pepitas y venas de los chiles si quieres más sabor y menos picor.",
+      "Una pasta cruda sabe áspera; fríela un momento antes de usarla en un guiso.",
+      "Cubre siempre con aceite al guardar: se oxida y pierde color.",
+      "Prueba el picor de cada tanda de chile: cambia mucho de un lote a otro."
+    ],
+    "errors": [
+      {
+        "p": "Amarga",
+        "fix": "Especias o chiles quemados al tostar. Fuego medio y retira en cuanto huelan."
+      },
+      {
+        "p": "Granulosa",
+        "fix": "Especias mal molidas o poco triturado. Muele fino antes y tritura más tiempo."
+      },
+      {
+        "p": "Picor que tapa todo",
+        "fix": "Chile muy fuerte. Rebaja con pimiento asado o tomate y ajusta en la siguiente."
+      },
+      {
+        "p": "Moho en la superficie",
+        "fix": "Sin capa de aceite o utensilios sucios. Cubre de aceite y saca siempre con cuchara limpia."
+      }
+    ],
+    "history": "Las pastas y mezclas de especias son la base de muchas cocinas: del norte de África al sudeste asiático y México. En España, la ñora y el pimentón cumplen un papel parecido en los arroces y guisos de Levante.",
+    "uses": [
+      "Adobar carnes y pescados para la brasa",
+      "Empezar un guiso o un curry",
+      "Mezclar con yogur o mayonesa",
+      "Aliños de verduras asadas",
+      "Arroces y caldos"
+    ],
+    "keep": "En tarro, cubierta de aceite y en frío, 2–3 semanas. Congelada en cubiteras, 3 meses. Las que llevan ajo y aromáticos frescos, siempre en frío.",
+    "pro": "Haz tandas pequeñas y frecuentes: el aroma se va con los días. Congela en cubos de 20–30 g para usar en el momento.",
+    "related": [
+      "especias",
+      "adobo",
+      "chiles-y-salsas-mexicanas",
+      "romesco",
+      "aceites-aromatizados",
+      "fuego-y-brasa"
+    ]
   }
 ]

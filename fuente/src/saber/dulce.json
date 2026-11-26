@@ -2945,5 +2945,1350 @@
    "citricos",
    "frutas-en-almibar"
   ]
+ },
+ {
+  "id": "panna-cotta-y-cuajadas",
+  "name": "Panna cotta y cuajadas",
+  "name_en": "Panna cotta and junkets",
+  "cat": "dulce",
+  "group": "Cremas",
+  "aka": [
+   "panna cotta",
+   "pannacotta",
+   "cuajada",
+   "leche cuajada",
+   "yogur casero",
+   "crema cuajada"
+  ],
+  "summary": "Lácteos que se cuajan en frío con gelatina o agar, o con cuajo o fermento: postres temblorosos, limpios de sabor y muy fáciles de servir.",
+  "what": "La panna cotta es nata (o nata y leche) endulzada e infusionada, cuajada con muy poca gelatina para que tiemble. La cuajada tradicional es leche de oveja cuajada con cuajo, sin cocer, de sabor muy fresco. El yogur se cuaja por fermentación a temperatura templada. Las tres viven del mismo equilibrio: cuajar lo justo para sostenerse sin perder la textura de crema. Son el lienzo perfecto para una fruta, un [[caramelo]] o un [[coulis-y-geles-de-fruta|gel de fruta]].",
+  "base": {
+   "for": "10 raciones de 100 g (panna cotta)",
+   "items": [
+    [
+     "Nata 35 %",
+     "700 g"
+    ],
+    [
+     "Leche entera",
+     "300 g"
+    ],
+    [
+     "Azúcar",
+     "100 g"
+    ],
+    [
+     "Gelatina en hojas",
+     "7 g (unas 3–4 hojas)"
+    ],
+    [
+     "Vaina de vainilla o aroma (hierba, cítrico, café)",
+     "1"
+    ],
+    [
+     "Sal",
+     "una pizca"
+    ]
+   ],
+   "steps": [
+    "Hidrata la gelatina en agua fría 5 minutos.",
+    "Calienta la nata, la leche, el azúcar y el aroma hasta 80 °C, sin hervir; deja infusionar tapado 15–20 minutos y cuela.",
+    "Escurre la gelatina y disuélvela en la mezcla a 60–70 °C.",
+    "Enfría sobre hielo removiendo hasta 25–30 °C para que la vainilla no se vaya al fondo, y reparte en vasos o moldes.",
+    "Deja cuajar en cámara al menos 4 horas."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Panna cotta en vaso, muy temblorosa",
+    "ratio": "4–5 g de gelatina por litro",
+    "note": "No se desmolda."
+   },
+   {
+    "use": "Panna cotta para desmoldar",
+    "ratio": "7–8 g de gelatina por litro",
+    "note": "Moldes untados con un poco de aceite neutro."
+   },
+   {
+    "use": "Con agar",
+    "ratio": "1,5–2 g por litro, hervido 1 minuto",
+    "note": "Más firme y quebradiza; aguanta el calor de la sala."
+   },
+   {
+    "use": "Yogur casero",
+    "ratio": "1 l de leche y 2 cucharadas de yogur, fermentado a 42–43 °C",
+    "note": "5–8 horas, hasta que cuaje; luego a frío."
+   },
+   {
+    "use": "Cuajada de oveja",
+    "ratio": "Leche de oveja a 35–38 °C con cuajo según indique el fabricante",
+    "note": "Cuaja en 20–40 minutos sin mover."
+   }
+  ],
+  "variants": [
+   {
+    "id": "labneh",
+    "name": "Labneh",
+    "note": "Yogur escurrido hasta textura de queso fresco."
+   },
+   {
+    "id": "crema-catalana-y-flan",
+    "name": "Flan",
+    "note": "Cuajado por el huevo y el calor del horno, no en frío."
+   },
+   {
+    "id": null,
+    "name": "Panna cotta salada",
+    "note": "Sin azúcar, con queso, hierbas o marisco infusionados; para entrantes fríos."
+   }
+  ],
+  "keys": [
+   "Cuanto menos gelatina, mejor textura: busca el mínimo que la sostenga.",
+   "No hiervas la gelatina: pierde fuerza.",
+   "Infusiona en caliente y tapado: hierbas, pieles de cítrico, café, hojas de higuera.",
+   "Para la cuajada, leche sin remover mientras cuaja; un movimiento la rompe.",
+   "Sirve fría pero no helada: a 6–8 °C se nota más la crema."
+  ],
+  "errors": [
+   {
+    "p": "Gomosa",
+    "fix": "Demasiada gelatina. Baja a 4–5 g por litro y sirve en vaso."
+   },
+   {
+    "p": "No cuaja",
+    "fix": "Gelatina hervida o fruta cruda con enzimas encima. Disuelve a 60–70 °C y cuece la fruta."
+   },
+   {
+    "p": "Capa separada en el fondo",
+    "fix": "Se repartió caliente y la grasa o las semillas bajaron. Enfría sobre hielo removiendo antes de repartir."
+   },
+   {
+    "p": "Cuajada con suero y cortada",
+    "fix": "Leche demasiado caliente o movida. Respeta 35–38 °C y no la toques."
+   }
+  ],
+  "history": "La panna cotta es un postre del norte de Italia que se hizo internacional en las últimas décadas. La cuajada de leche de oveja es tradicional en el norte de España, y los lácteos fermentados o cuajados se hacen en casi todas las culturas pastoras.",
+  "uses": [
+   "Postre de vaso con fruta y crujiente",
+   "Base fría bajo un granizado",
+   "Pre-postre ligero en el menú",
+   "Entrante frío salado"
+  ],
+  "keep": "En cámara, tapada, 3–4 días. La cuajada y el yogur, 4–5 días. No se congelan bien.",
+  "pro": "Reparte en vasos la víspera; al servir, solo hay que poner encima la fruta y el crujiente. Las salsas o geles van aparte hasta el pase.",
+  "related": [
+   "gelificantes-y-espesantes",
+   "crema-inglesa",
+   "coulis-y-geles-de-fruta",
+   "labneh",
+   "quesos-en-cocina"
+  ]
+ },
+ {
+  "id": "souffle",
+  "name": "Suflé",
+  "name_en": "Soufflé",
+  "cat": "dulce",
+  "group": "Espumas y azúcar",
+  "aka": [
+   "souffle",
+   "suffle",
+   "souflé",
+   "suflé dulce",
+   "suflé de queso"
+  ],
+  "summary": "Una base espesa con sabor aligerada con claras montadas que sube en el horno y se sirve en el momento: dulce de fruta o chocolate, o salado de queso.",
+  "what": "La base da el sabor y la estructura; el [[merengues|merengue]] da el aire. En el horno el aire y el vapor se dilatan y empujan hacia arriba, y la clara cuaja lo justo para sostener la forma unos minutos. La base puede ser una [[crema-pastelera]], un puré de fruta espesado o, en salado, una [[bechamel]] con queso. Todo se juega en tres cosas: un molde bien preparado, una mezcla cuidadosa y servir en cuanto sale.",
+  "base": {
+   "for": "8 suflés en ramequines de 8–9 cm",
+   "items": [
+    [
+     "Crema pastelera fría (o puré de fruta espesado)",
+     "400 g"
+    ],
+    [
+     "Claras",
+     "240 g (unas 8)"
+    ],
+    [
+     "Azúcar para las claras",
+     "80 g"
+    ],
+    [
+     "Zumo de limón",
+     "unas gotas"
+    ],
+    [
+     "Mantequilla pomada y azúcar para los moldes",
+     "c. s."
+    ]
+   ],
+   "steps": [
+    "Unta los moldes con mantequilla pomada con trazos de abajo arriba, enfríalos, vuelve a untar y cubre con azúcar; quita el sobrante.",
+    "Bate la base hasta que esté lisa y a temperatura de sala.",
+    "Monta las claras con el limón y añade el azúcar poco a poco hasta un merengue brillante con picos blandos, no seco.",
+    "Mezcla un cuarto del merengue con la base para aligerarla y envuelve el resto con lengua, sin batir.",
+    "Llena los moldes hasta el borde, enrasa con espátula y pasa el pulgar por el borde interior para hacer un surco.",
+    "Hornea a 190–200 °C, calor abajo y arriba, 9–12 minutos, hasta que suba 3–4 cm y el centro tiemble. Sirve al momento."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Suflé de crema o fruta",
+    "ratio": "1 parte de base por 0,8–1 de merengue",
+    "note": "190–200 °C, 9–12 minutos."
+   },
+   {
+    "use": "Suflé de chocolate",
+    "ratio": "250 g de pastelera y 100 g de chocolate fundido por 8 claras",
+    "note": "El chocolate da estructura: algo menos de azúcar en las claras."
+   },
+   {
+    "use": "Suflé de queso",
+    "ratio": "400 g de bechamel espesa, 4 yemas y 120 g de queso curado por 6 claras",
+    "note": "200 °C, 12–15 minutos."
+   },
+   {
+    "use": "Suflé congelado (helado)",
+    "ratio": "Mousse de base, merengue italiano y nata, congelada en molde con collar",
+    "note": "No sube: imita la forma."
+   }
+  ],
+  "variants": [
+   {
+    "id": "mornay",
+    "name": "Suflé de queso",
+    "note": "Base de bechamel con queso y yemas."
+   },
+   {
+    "id": "mousses-y-cremosos",
+    "name": "Suflé helado",
+    "note": "Una mousse congelada en molde con collar que sobresale."
+   },
+   {
+    "id": null,
+    "name": "Suflé de cítrico en su piel",
+    "note": "Servido dentro de una naranja o limón vaciado."
+   }
+  ],
+  "keys": [
+   "Molde con mantequilla en trazos verticales: guía la subida recta.",
+   "Claras con picos blandos: si están secas, se cortan al mezclar y el suflé se agrieta.",
+   "Enrasa y haz el surco con el pulgar: sube recto, como un sombrero.",
+   "No abras el horno los primeros 7 minutos.",
+   "La sala espera al suflé, nunca al revés."
+  ],
+  "errors": [
+   {
+    "p": "No sube",
+    "fix": "Claras poco montadas o mezcla batida. Envuelve con lengua y hornea enseguida."
+   },
+   {
+    "p": "Sube torcido",
+    "fix": "Molde mal untado o horno desigual. Unta en vertical y gira la bandeja si tu horno calienta más por un lado."
+   },
+   {
+    "p": "Se hunde en la mesa",
+    "fix": "Poco cocido. Alarga 1–2 minutos; el centro debe temblar, no ser líquido."
+   },
+   {
+    "p": "Sabe a huevo",
+    "fix": "Demasiada clara o base sosa. Refuerza la base con más sabor y ácido."
+   }
+  ],
+  "history": "El suflé es un clásico de la cocina francesa, dulce y salado, que se convirtió en símbolo del postre de restaurante hecho al momento.",
+  "uses": [
+   "Postre al momento",
+   "Entrante de queso",
+   "Postre para compartir en molde grande",
+   "Suflé helado en menú"
+  ],
+  "keep": "No se guarda: se hornea y se sirve. La base, en frío 2 días. Los moldes preparados, en frío el día del servicio.",
+  "pro": "Ten la base lista y los moldes preparados en frío. Monta las claras por tandas de 4–6 raciones al pedir. Avisa en carta del tiempo de espera: 15 minutos.",
+  "related": [
+   "merengues",
+   "crema-pastelera",
+   "bechamel",
+   "mornay",
+   "chocolate-y-templado"
+  ]
+ },
+ {
+  "id": "tartas-de-fruta",
+  "name": "Tartas de fruta",
+  "name_en": "Fruit tarts",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "tarta tatin",
+   "tarta fina de manzana",
+   "tarta de frangipane",
+   "tarta de almendra y fruta",
+   "tarta de manzana",
+   "tartaleta de fruta"
+  ],
+  "summary": "Fruta sobre masa: la tatin, caramelizada y volteada; la tarta fina de hojaldre crujiente; y la de crema de almendra horneada con fruta.",
+  "what": "La fruta y la masa tienen que hacerse a la vez, y la fruta suelta agua: cada tarta resuelve eso de un modo. La tatin cocina la fruta en [[caramelo]] y pone la masa encima, y se voltea al servir. La tarta fina usa [[hojaldre]] muy fino y láminas de fruta que se secan y doran en horno fuerte. La de crema de almendra protege la [[masa-quebrada]] con una capa que absorbe el jugo y se hornea con la fruta encima.",
+  "base": {
+   "for": "una tatin de 24 cm (8 raciones)",
+   "items": [
+    [
+     "Manzanas firmes y ácidas",
+     "1,5 kg (8–9 piezas)"
+    ],
+    [
+     "Azúcar",
+     "200 g"
+    ],
+    [
+     "Mantequilla",
+     "100 g"
+    ],
+    [
+     "Hojaldre",
+     "300 g estirado a 3 mm"
+    ],
+    [
+     "Sal en escamas",
+     "una pizca"
+    ]
+   ],
+   "steps": [
+    "Pela las manzanas, quita el corazón y córtalas en cuartos o mitades.",
+    "Haz un caramelo rubio con el azúcar en una sartén apta para horno, añade la mantequilla y la sal fuera del fuego.",
+    "Coloca las manzanas de pie, muy apretadas. Cuece a fuego medio 10–15 minutos para que suelten jugo y tomen caramelo.",
+    "Cubre con el hojaldre pinchado, mete los bordes hacia dentro y hornea a 180 °C, 40–45 minutos.",
+    "Reposa 10 minutos y voltea en caliente sobre una fuente."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Tatin",
+    "ratio": "1,5 kg de manzana, 200 g de azúcar, 100 g de mantequilla",
+    "note": "Horno a 180 °C, 40–45 minutos."
+   },
+   {
+    "use": "Tarta fina",
+    "ratio": "Hojaldre a 2 mm y fruta en láminas de 2 mm",
+    "note": "Horno a 200–210 °C, 15–20 minutos; pinta al salir con almíbar o mantequilla."
+   },
+   {
+    "use": "Crema de almendra",
+    "ratio": "Mantequilla, azúcar, almendra molida y huevo a partes iguales",
+    "note": "Capa de 1 cm; horno a 170 °C, 35–40 minutos con la fruta encima."
+   },
+   {
+    "use": "Tartaleta de fruta fresca",
+    "ratio": "Masa cocida en blanco, crema pastelera y fruta cruda",
+    "note": "Se monta al momento; glasear la fruta."
+   }
+  ],
+  "variants": [
+   {
+    "id": "crema-pastelera",
+    "name": "Tartaleta de crema y fruta fresca",
+    "note": "Masa cocida, crema y fruta cruda sin hornear."
+   },
+   {
+    "id": "fruta-asada",
+    "name": "Tatin de fruta de hueso o higos",
+    "note": "Melocotón, albaricoque o higo: menos tiempo de sartén."
+   },
+   {
+    "id": null,
+    "name": "Tarta fina de tomate o cebolla",
+    "note": "La misma idea en salado, con queso o anchoa."
+   }
+  ],
+  "keys": [
+   "Fruta firme y ácida; la blanda se convierte en compota.",
+   "En la tatin, la fruta muy apretada: encoge mucho.",
+   "La tarta fina, con hojaldre muy frío y pinchado, entre dos bandejas los primeros minutos si quieres que no suba.",
+   "La crema de almendra sirve de esponja: la base no se moja.",
+   "Glasea al salir: brillo y protección."
+  ],
+  "errors": [
+   {
+    "p": "Tatin aguada",
+    "fix": "Poca cocción en sartén o fruta acuosa. Reduce el jugo en la sartén antes de poner la masa."
+   },
+   {
+    "p": "Tatin que se queda pegada",
+    "fix": "Volteada fría. Voltea en caliente; si se pega, calienta la base unos segundos en el fuego."
+   },
+   {
+    "p": "Base cruda en la tarta de fruta",
+    "fix": "Masa sin cocer en blanco o sin capa protectora. Hornea antes la base o usa crema de almendra."
+   },
+   {
+    "p": "Fruta seca y quemada en la tarta fina",
+    "fix": "Láminas muy finas o sin grasa. Pinta con mantequilla y vigila los últimos minutos."
+   }
+  ],
+  "history": "Las tartas de fruta sobre masa son parte de la pastelería de toda Europa. La tatin se asocia a la pastelería francesa y se ha extendido por todo el mundo; la crema de almendra es una base clásica de obrador.",
+  "uses": [
+   "Postre de carta caliente con helado",
+   "Tarta para compartir",
+   "Tartaleta individual",
+   "Tarta salada de verdura"
+  ],
+  "keep": "Mejor del día. Tatin a temperatura ambiente unas horas; recalentar en horno a 160 °C. Tartas de crema de almendra, 2 días tapadas.",
+  "pro": "Tarta fina: estira y corta el hojaldre por la mañana, guárdalo plano en frío y monta la fruta al pedir: 15 minutos de horno. Tatin individual en moldes de 10 cm para cocinar por pase.",
+  "related": [
+   "hojaldre",
+   "masa-quebrada",
+   "caramelo",
+   "almendra",
+   "crema-pastelera",
+   "fruta-asada"
+  ]
+ },
+ {
+  "id": "bizcochos-humedos",
+  "name": "Bizcochos húmedos y financieros",
+  "name_en": "Moist cakes and financiers",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "financier",
+   "financieros",
+   "magdalenas",
+   "bizcocho de aceite",
+   "cake",
+   "bizcocho de yogur",
+   "borracho"
+  ],
+  "summary": "Bizcochos con grasa y azúcar que quedan tiernos y jugosos días: financieros de mantequilla tostada, magdalenas, bizcochos de aceite y borrachos.",
+  "what": "A diferencia de los [[bizcochos]] de huevo montado, aquí la ternura viene de la grasa, el azúcar y, a veces, la almendra; suben con levadura química o con el poco aire del batido. Los financieros llevan clara, almendra y [[mantequilla-noisette]]; las magdalenas, huevo entero y un reposo en frío que les da la joroba; los bizcochos de aceite de oliva son la versión mediterránea, muy jugosa. Bañados en almíbar se convierten en borrachos.",
+  "base": {
+   "for": "unos 40 financieros pequeños (moldes de 15 g)",
+   "items": [
+    [
+     "Mantequilla (para tostar)",
+     "150 g"
+    ],
+    [
+     "Claras",
+     "150 g"
+    ],
+    [
+     "Azúcar glas",
+     "170 g"
+    ],
+    [
+     "Almendra molida",
+     "60 g"
+    ],
+    [
+     "Harina floja",
+     "60 g"
+    ],
+    [
+     "Miel",
+     "15 g"
+    ],
+    [
+     "Sal",
+     "1 g"
+    ]
+   ],
+   "steps": [
+    "Tuesta la mantequilla hasta color avellana y cuela; deja templar a 40–45 °C.",
+    "Mezcla el azúcar glas, la almendra, la harina y la sal. Añade las claras sin montar y la miel, y mezcla hasta que quede liso.",
+    "Incorpora la mantequilla tostada templada en hilo.",
+    "Deja reposar la masa en frío al menos 2 horas (mejor 12).",
+    "Llena moldes untados y hornea a 190 °C, 9–11 minutos, hasta que los bordes estén dorados y el centro elástico."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Financieros",
+    "ratio": "Claras, mantequilla y azúcar en peso parecido; almendra y harina a medias",
+    "note": "190 °C, 9–11 minutos en molde pequeño."
+   },
+   {
+    "use": "Magdalenas",
+    "ratio": "200 g de huevo, 200 g de azúcar, 200 g de aceite o mantequilla, 250 g de harina y 8 g de levadura química",
+    "note": "Reposo en frío 12 h; horno a 220 °C y bajar a 190 °C al meter."
+   },
+   {
+    "use": "Bizcocho de aceite de oliva y cítricos",
+    "ratio": "4 huevos, 220 g de azúcar, 200 g de aceite, 150 g de yogur, 250 g de harina, 10 g de levadura",
+    "note": "170 °C, 35–45 minutos en molde."
+   },
+   {
+    "use": "Borracho",
+    "ratio": "Almíbar 1:1 con cítrico o licor, 30–40 % del peso del bizcocho",
+    "note": "Almíbar templado sobre bizcocho frío."
+   }
+  ],
+  "variants": [
+   {
+    "id": "bizcochos",
+    "name": "Bizcochos de huevo montado",
+    "note": "Genovesa y plancha: aire en vez de grasa."
+   },
+   {
+    "id": "frutas-en-almibar",
+    "name": "Borracho",
+    "note": "Bizcocho empapado en almíbar aromatizado."
+   },
+   {
+    "id": null,
+    "name": "Financiero de avellana o pistacho",
+    "note": "Se cambia la almendra por otro fruto seco molido."
+   }
+  ],
+  "keys": [
+   "El reposo en frío de la masa mejora la textura y da la joroba a las magdalenas.",
+   "Mantequilla tostada templada, no caliente: si está caliente cocina la clara.",
+   "Mezcla lo justo tras añadir la harina; batir de más los endurece.",
+   "Aceite de oliva suave o de variedad afrutada: se nota en el sabor.",
+   "Saca cuando el centro vuelva al presionarlo; el palillo limpio ya es un poco tarde para estos bizcochos."
+  ],
+  "errors": [
+   {
+    "p": "Secos",
+    "fix": "Horno largo o poca grasa. Acorta el horneado y respeta la proporción de grasa."
+   },
+   {
+    "p": "Magdalenas sin joroba",
+    "fix": "Masa sin reposo o horno flojo. Reposo en frío y golpe de calor fuerte al principio."
+   },
+   {
+    "p": "Financieros grasientos",
+    "fix": "Mantequilla demasiado caliente o masa sin reposo. Templa la mantequilla y deja reposar."
+   },
+   {
+    "p": "Bizcocho hundido en el centro",
+    "fix": "Demasiada levadura o horno abierto pronto. Pesa la levadura y no abras antes de dos tercios del tiempo."
+   }
+  ],
+  "history": "Los pequeños bizcochos de almendra y mantequilla son un clásico de la pastelería francesa, y las magdalenas y los bizcochos de aceite forman parte de la repostería de casa y de obrador en España desde hace mucho.",
+  "uses": [
+   "Petit four",
+   "Base de postre emplatado",
+   "Desayuno y brunch",
+   "Borrachos con crema y fruta"
+  ],
+  "keep": "Horneados, en recipiente cerrado, 3–4 días. La masa de financiero, 5 días en frío; congelada, 1 mes.",
+  "pro": "Ten la masa en manga en frío y hornea al momento para el café: 10 minutos. Recién salidos y templados marcan la diferencia.",
+  "related": [
+   "bizcochos",
+   "mantequilla-noisette",
+   "almendra",
+   "aceite-de-oliva",
+   "frutas-en-almibar",
+   "citricos"
+  ]
+ },
+ {
+  "id": "pasta-choux",
+  "name": "Pasta choux",
+  "name_en": "Choux pastry",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "petisu",
+   "petisús",
+   "lionesas",
+   "relampagos",
+   "eclair",
+   "masa de buñuelo de viento",
+   "gougeres",
+   "pate a choux"
+  ],
+  "summary": "Masa cocida de agua, mantequilla, harina y huevo que se hincha en el horno y queda hueca: lionesas, relámpagos, buñuelos de viento y gougères.",
+  "what": "Primero se cuece una panada de harina en agua con mantequilla, y después se le añaden huevos hasta una textura concreta. En el horno el agua se hace vapor, la masa se hincha y el huevo cuaja una cáscara hueca y seca, que luego se rellena. Frita, la misma masa da los buñuelos de viento. Con queso son las gougères saladas.",
+  "base": {
+   "for": "unos 60 petisús de 4 cm",
+   "items": [
+    [
+     "Agua",
+     "125 g"
+    ],
+    [
+     "Leche",
+     "125 g"
+    ],
+    [
+     "Mantequilla",
+     "110 g"
+    ],
+    [
+     "Sal",
+     "4 g"
+    ],
+    [
+     "Azúcar",
+     "5 g"
+    ],
+    [
+     "Harina floja tamizada",
+     "150 g"
+    ],
+    [
+     "Huevos batidos",
+     "250–280 g"
+    ]
+   ],
+   "steps": [
+    "Hierve el agua, la leche, la mantequilla, la sal y el azúcar.",
+    "Fuera del fuego, echa la harina de golpe y remueve con espátula. Vuelve al fuego y seca la panada 2–3 minutos hasta que se despegue y deje una película fina en el fondo.",
+    "Pasa a la amasadora con pala y deja salir el vapor 1–2 minutos.",
+    "Añade el huevo en 4–5 veces. Para cuando la masa, al levantar la pala, caiga formando una punta en V que se sostiene.",
+    "Escudilla en bandeja con boquilla lisa, aplana las puntas con un dedo húmedo y, si quieres, pon un disco de craquelin encima.",
+    "Hornea a 170–180 °C en convección, 25–35 minutos según el tamaño, sin abrir los primeros 20. Deben quedar dorados y ligeros."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Petisús y lionesas",
+    "ratio": "Bolas de 3–4 cm; 170–180 °C, 25–30 min",
+    "note": "Huecos y secos por dentro."
+   },
+   {
+    "use": "Relámpagos",
+    "ratio": "Tiras de 12 cm con boquilla rizada; 170 °C, 30–35 min",
+    "note": "La boquilla rizada evita que se agrieten."
+   },
+   {
+    "use": "Craquelin",
+    "ratio": "Mantequilla, azúcar moreno y harina a partes iguales",
+    "note": "Estirado a 1–2 mm, congelado y cortado en discos."
+   },
+   {
+    "use": "Buñuelos de viento",
+    "ratio": "La misma masa frita en aceite a 160–170 °C",
+    "note": "Se giran solos al hincharse."
+   }
+  ],
+  "variants": [
+   {
+    "id": "orelletes-y-bunyols",
+    "name": "Buñuelos",
+    "note": "Masas dulces fritas; los de viento son pasta choux."
+   },
+   {
+    "id": "quesos-en-cocina",
+    "name": "Gougères",
+    "note": "Pasta choux con queso curado rallado, sin azúcar."
+   },
+   {
+    "id": null,
+    "name": "Paris-brest",
+    "note": "Corona de choux rellena de crema de praliné."
+   }
+  ],
+  "keys": [
+   "Seca bien la panada: si queda húmeda, la masa acepta menos huevo y se abre.",
+   "El huevo es orientativo: manda la textura en V, no el peso.",
+   "Horno sin abrir hasta que la cáscara esté firme; si entra aire, se hunden.",
+   "Pincha la base al salir y déjalos secar en el horno apagado con la puerta entreabierta.",
+   "Rellena lo más cerca posible del servicio."
+  ],
+  "errors": [
+   {
+    "p": "Se hunden al sacarlos",
+    "fix": "Poco horneados. Alarga hasta que estén dorados y secos; sécalos con el horno apagado."
+   },
+   {
+    "p": "Masa muy líquida que se extiende",
+    "fix": "Demasiado huevo. Añádelo poco a poco y para en la V."
+   },
+   {
+    "p": "Formas agrietadas e irregulares",
+    "fix": "Masa seca o boquilla lisa en relámpagos. Usa craquelin o boquilla rizada."
+   },
+   {
+    "p": "Huecos húmedos por dentro",
+    "fix": "Horno flojo o tamaño grande. Pincha y seca más tiempo."
+   }
+  ],
+  "history": "La pasta choux es una base clásica de la pastelería francesa. En España los buñuelos de viento, fritos con esta masa, son tradicionales en algunas fiestas, y las lionesas y relámpagos son de pastelería de siempre.",
+  "uses": [
+   "Petisús de crema o nata",
+   "Relámpagos",
+   "Buñuelos de viento",
+   "Gougères de aperitivo",
+   "Profiteroles con helado"
+  ],
+  "keep": "Horneados y vacíos, en lata 1 día; congelados, 1 mes: regenera 5 minutos en horno a 160 °C. La masa cruda escudillada se congela bien en bandeja.",
+  "pro": "Escudilla y congela en crudo; hornea desde congelado alargando unos minutos. Rellena con manga y boquilla fina por la base al pedir.",
+  "related": [
+   "crema-pastelera",
+   "orelletes-y-bunyols",
+   "chocolate-y-templado",
+   "caramelo",
+   "quesos-en-cocina"
+  ]
+ },
+ {
+  "id": "turrones-y-pralines",
+  "name": "Turrones y pralinés",
+  "name_en": "Nougats and pralines",
+  "cat": "dulce",
+  "group": "Espumas y azúcar",
+  "aka": [
+   "turron",
+   "turron de almendra",
+   "turron duro",
+   "turron blando",
+   "praline",
+   "gianduja",
+   "garrapinadas",
+   "nougat"
+  ],
+  "summary": "Frutos secos con miel, azúcar y clara (turrones) o con caramelo triturado hasta pasta (pralinés): dulces de Navidad y bases de rellenos y cremas.",
+  "what": "El turrón duro es miel y azúcar cocidos, aireados con clara montada y cargados de almendra tostada, que se cuaja entre obleas. El blando se hace moliendo una base de almendra y miel hasta pasta y calentándola. El praliné es [[caramelo]] con frutos secos tostados, triturado hasta una pasta fluida; con chocolate se convierte en gianduja. Todos dependen de dos cosas: tostar bien el fruto seco y controlar el punto del azúcar.",
+  "base": {
+   "for": "unos 1,2 kg de turrón duro",
+   "items": [
+    [
+     "Almendra marcona pelada, tostada y caliente",
+     "600 g"
+    ],
+    [
+     "Miel",
+     "250 g"
+    ],
+    [
+     "Azúcar",
+     "250 g"
+    ],
+    [
+     "Agua",
+     "70 g"
+    ],
+    [
+     "Clara",
+     "35 g (1)"
+    ],
+    [
+     "Obleas",
+     "2 láminas"
+    ]
+   ],
+   "steps": [
+    "Tuesta la almendra a 160 °C, 12–15 minutos, y mantenla caliente.",
+    "Calienta la miel a 120–125 °C. A la vez, cuece el azúcar con el agua hasta 145–150 °C.",
+    "Monta la clara a punto de nieve y vierte la miel caliente en hilo sin dejar de batir.",
+    "Añade el almíbar en hilo y sigue batiendo; cambia a pala y cuece la masa al baño maría o con soplete en la cuba hasta que una bolita se rompa en frío.",
+    "Incorpora la almendra caliente, extiende entre obleas en un marco, presiona y deja enfriar. Corta con cuchillo de sierra."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Turrón duro",
+    "ratio": "60 % de almendra sobre el total",
+    "note": "Miel a 120–125 °C y almíbar a 145–150 °C."
+   },
+   {
+    "use": "Praliné",
+    "ratio": "1 parte de frutos secos tostados por 1 de azúcar en caramelo",
+    "note": "Caramelo rubio a 165–175 °C; triturar en frío hasta pasta."
+   },
+   {
+    "use": "Gianduja",
+    "ratio": "2 partes de praliné de avellana por 1 de chocolate",
+    "note": "Templado como el chocolate; para bombones y rellenos."
+   },
+   {
+    "use": "Garrapiñadas",
+    "ratio": "1 de almendra, 1 de azúcar y 0,3 de agua",
+    "note": "Se cuece hasta que el azúcar arena y luego se carameliza."
+   }
+  ],
+  "variants": [
+   {
+    "id": "tejas-y-crujientes-dulces",
+    "name": "Crocante",
+    "note": "Caramelo con frutos secos, roto en trozos, sin triturar."
+   },
+   {
+    "id": "chocolate-y-templado",
+    "name": "Turrón de chocolate",
+    "note": "Chocolate templado con praliné y crujientes."
+   },
+   {
+    "id": null,
+    "name": "Turrón blando",
+    "note": "Base de almendra y miel molida hasta pasta y calentada para que suelte el aceite."
+   }
+  ],
+  "keys": [
+   "Fruto seco bien tostado y caliente al mezclar: si entra frío, la masa se endurece de golpe.",
+   "Termómetro para la miel y el azúcar: unos grados cambian la textura.",
+   "Para el praliné, tritura con paciencia: primero arena, luego pasta, después líquido.",
+   "Guarda todo lejos de la humedad: el azúcar la absorbe y se ablanda.",
+   "Una pizca de sal en el praliné despierta el sabor del fruto seco."
+  ],
+  "errors": [
+   {
+    "p": "Turrón blando que no corta",
+    "fix": "Miel o azúcar poco cocidos. Cuece más la masa hasta que una bolita cruja en frío."
+   },
+   {
+    "p": "Praliné amargo",
+    "fix": "Caramelo demasiado oscuro o fruto seco quemado. Para en rubio y tuesta a 160 °C."
+   },
+   {
+    "p": "Praliné que no se licúa",
+    "fix": "Poco triturado o máquina que se calienta. Tritura en tandas y deja enfriar entre una y otra."
+   },
+   {
+    "p": "Turrón pegajoso al día siguiente",
+    "fix": "Humedad en el ambiente. Guarda en papel y caja cerrada."
+   }
+  ],
+  "history": "Los turrones de almendra y miel son un dulce tradicional de la Navidad en España, con especial arraigo en Levante, y tienen parientes en todo el Mediterráneo. El praliné y la gianduja vienen de la confitería y la chocolatería europea.",
+  "uses": [
+   "Petit four y dulces de Navidad",
+   "Praliné para cremas, mousses y helados",
+   "Relleno de bombones",
+   "Crujiente de postre"
+  ],
+  "keep": "Turrón en papel y caja cerrada, en lugar seco y fresco, 1–2 meses. Praliné en bote cerrado, 1 mes; remover antes de usar porque se separa el aceite.",
+  "pro": "Haz praliné en tanda grande con frutos secos de la temporada y guárdalo en botes. El turrón para petit four, en marco y cortado en dados el día de servicio.",
+  "related": [
+   "caramelo",
+   "almendra",
+   "merengues",
+   "chocolate-y-templado",
+   "tejas-y-crujientes-dulces"
+  ]
+ },
+ {
+  "id": "confituras-y-mermeladas",
+  "name": "Confituras, mermeladas y dulce de membrillo",
+  "name_en": "Jams, marmalades and quince paste",
+  "cat": "dulce",
+  "group": "Fruta",
+  "aka": [
+   "mermelada",
+   "confitura",
+   "jalea",
+   "membrillo",
+   "dulce de membrillo",
+   "compota espesa",
+   "marmalade"
+  ],
+  "summary": "Fruta cocida con azúcar hasta que la pectina la cuaja: mermeladas para untar y acompañar quesos, jaleas limpias y pastas firmes como el membrillo.",
+  "what": "La fruta tiene pectina, que con suficiente azúcar y acidez forma un gel al enfriar. Por eso hay frutas que cuajan solas (membrillo, manzana, cítricos, grosella) y otras que necesitan ayuda (fresa, higo, melocotón). La mermelada lleva la fruta en trozos o triturada; la jalea solo el zumo; la pasta de membrillo se cuece hasta que se sostiene y se corta. Con menos azúcar sabe más a fruta, pero cuaja peor y dura menos.",
+  "base": {
+   "for": "unos 1,3 kg de mermelada",
+   "items": [
+    [
+     "Fruta limpia y troceada",
+     "1 kg"
+    ],
+    [
+     "Azúcar",
+     "600 g"
+    ],
+    [
+     "Zumo de limón",
+     "40 g"
+    ],
+    [
+     "Pectina (solo en frutas pobres en pectina)",
+     "5–8 g mezclada con parte del azúcar"
+    ]
+   ],
+   "steps": [
+    "Mezcla la fruta con el azúcar y el limón y deja macerar 2–12 horas en frío: suelta jugo y el azúcar se disuelve.",
+    "Lleva a hervor fuerte y espuma. Cuece a fuego vivo, removiendo, para que evapore rápido y conserve color.",
+    "Si usas pectina, añádela con el azúcar reservado cuando hierva.",
+    "Está lista a 104–105 °C, o cuando una gota en un plato frío forma una piel que se arruga al empujarla.",
+    "Envasa en caliente en tarros limpios y escaldados, llenos hasta 1 cm del borde, cierra y voltea o esteriliza al baño maría."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Mermelada clásica de conserva",
+    "ratio": "600–700 g de azúcar por kilo de fruta",
+    "note": "Punto a 104–105 °C."
+   },
+   {
+    "use": "Mermelada de restaurante, poco dulce",
+    "ratio": "300–400 g de azúcar por kilo, con pectina",
+    "note": "Guardar siempre en frío, 2–3 semanas."
+   },
+   {
+    "use": "Dulce de membrillo",
+    "ratio": "800 g–1 kg de azúcar por kilo de pulpa cocida",
+    "note": "Cocer removiendo hasta que se despegue del fondo; 1–1,5 horas."
+   },
+   {
+    "use": "Esterilizar los tarros llenos",
+    "ratio": "Baño maría a 100 °C, 10–15 minutos",
+    "note": "Agua que cubra los tarros 2–3 cm."
+   }
+  ],
+  "variants": [
+   {
+    "id": "frutas-en-almibar",
+    "name": "Fruta confitada",
+    "note": "La fruta entera absorbe el azúcar poco a poco y conserva la forma."
+   },
+   {
+    "id": "citricos",
+    "name": "Mermelada de cítricos amarga",
+    "note": "Con la piel en tiras, blanqueada; la pectina sale de las pepitas y la piel blanca."
+   },
+   {
+    "id": "higos-y-algarroba",
+    "name": "Mermelada de higo",
+    "note": "Con limón y pectina, o con manzana rallada para que cuaje."
+   }
+  ],
+  "keys": [
+   "Cocción rápida y en recipiente ancho: más color y sabor a fruta fresca.",
+   "El ácido ayuda a cuajar y despierta el sabor; prueba y ajusta con limón.",
+   "La prueba del plato frío no falla: haz la de la gota antes de apagar.",
+   "Menos azúcar significa menos conservación: guárdala en frío.",
+   "Hierbas y especias al final o en infusión: romero en higo, vainilla en melocotón, pimienta en fresa."
+  ],
+  "errors": [
+   {
+    "p": "No cuaja",
+    "fix": "Poca cocción, poco ácido o fruta pobre en pectina. Vuelve a hervir con limón y pectina."
+   },
+   {
+    "p": "Dura y oscura",
+    "fix": "Cocción excesiva y el azúcar se ha caramelizado. Saca antes de 105 °C."
+   },
+   {
+    "p": "Moho en la superficie",
+    "fix": "Tarro mal limpio, poco azúcar o mal cerrado. Desecha el tarro entero y esteriliza bien."
+   },
+   {
+    "p": "Cristales de azúcar",
+    "fix": "Demasiado azúcar o sin ácido. Ajusta la proporción y añade limón."
+   }
+  ],
+  "history": "Cocer fruta con miel o azúcar para guardarla es una práctica antigua en todo el Mediterráneo, y el dulce de membrillo es parte de la tradición española, sobre todo con queso. Las mermeladas de cítricos amargos se popularizaron en el norte de Europa con fruta del sur.",
+  "uses": [
+   "Acompañar quesos",
+   "Rellenos de tartas y bizcochos",
+   "Glaseado de tartas de fruta",
+   "Salsas de caza y pato",
+   "Desayuno y brunch"
+  ],
+  "keep": "Bien envasada y esterilizada, cerrada, en lugar fresco y oscuro, varios meses; abierta, en frío 3–4 semanas. Las de poco azúcar, siempre en frío.",
+  "pro": "Haz conserva cuando la fruta sobra y está en su punto. Para el plato, mejor en biberón y en pequeñas cantidades: una mermelada aguanta bien junto a un queso o un foie.",
+  "related": [
+   "frutas-en-almibar",
+   "citricos",
+   "higos-y-algarroba",
+   "quesos-en-cocina",
+   "caramelo"
+  ]
+ },
+ {
+  "id": "helados-sin-maquina",
+  "name": "Granizados y helados sin máquina",
+  "name_en": "Granitas and no-churn ices",
+  "cat": "dulce",
+  "group": "Frío",
+  "aka": [
+   "granizado",
+   "granita",
+   "semifrio",
+   "parfait",
+   "helado sin heladora",
+   "semifreddo",
+   "helado de nata"
+  ],
+  "summary": "Frío sin heladora: granizados raspados a mano, semifríos con base aireada y helados rápidos de fruta congelada triturada.",
+  "what": "Una heladora mueve la mezcla mientras congela para que los cristales sean pequeños. Sin ella hay tres caminos. El granizado busca justo lo contrario: cristales grandes, raspados con tenedor. El semifrío o parfait mete el aire antes de congelar, con una base de yema cocida con almíbar y nata semimontada, así que no necesita mantecarse. Y la fruta ya congelada, triturada con un poco de almíbar, da un sorbete al momento. El equilibrio de azúcar sigue las mismas reglas que en [[helados-y-sorbetes]].",
+  "base": {
+   "for": "1 litro de granizado de cítrico o café",
+   "items": [
+    [
+     "Zumo de limón o café recién hecho",
+     "400 g"
+    ],
+    [
+     "Agua",
+     "450 g"
+    ],
+    [
+     "Azúcar",
+     "180 g"
+    ],
+    [
+     "Piel de limón o hierbas (opcional)",
+     "al gusto"
+    ],
+    [
+     "Sal",
+     "una pizca"
+    ]
+   ],
+   "steps": [
+    "Disuelve el azúcar en el agua caliente con la piel o la hierba e infusiona 10 minutos; cuela y enfría.",
+    "Mezcla con el zumo o el café y vierte en una bandeja metálica baja, de 2–3 cm de altura.",
+    "Congela y rasca con tenedor cada 30–40 minutos, de los bordes al centro, durante 3–4 horas.",
+    "Cuando todo sean cristales sueltos, guarda tapado y rasca otra vez antes de servir."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Granizado",
+    "ratio": "150–200 g de azúcar por litro de mezcla final",
+    "note": "Con menos azúcar es un bloque; con más no cristaliza."
+   },
+   {
+    "use": "Semifrío (parfait)",
+    "ratio": "100 g de yemas, almíbar de 120 g de azúcar a 118–121 °C, 500 g de nata semimontada, 150–200 g de puré o sabor",
+    "note": "Congelar en molde 6 horas; sacar 10 minutos antes de servir."
+   },
+   {
+    "use": "Sorbete instantáneo",
+    "ratio": "1 kg de fruta congelada en trozos y 100–150 g de almíbar 1:1",
+    "note": "Triturar en procesador potente y servir al momento."
+   },
+   {
+    "use": "Congelador",
+    "ratio": "−18 °C para guardar, −12 °C para servir el semifrío",
+    "note": "Atempera antes de cortar."
+   }
+  ],
+  "variants": [
+   {
+    "id": "helados-y-sorbetes",
+    "name": "Helados y sorbetes con máquina",
+    "note": "Cómo equilibrar una base para mantecar."
+   },
+   {
+    "id": "mousses-y-cremosos",
+    "name": "Mousse helada",
+    "note": "Una mousse con merengue italiano congelada en molde."
+   },
+   {
+    "id": null,
+    "name": "Granizado salado",
+    "note": "De tomate, pepino o agua de mar filtrada; para crudos y ostras."
+   }
+  ],
+  "keys": [
+   "Bandeja metálica y baja: congela rápido y parejo.",
+   "Rasca con regularidad: si dejas pasar mucho tiempo, se forma un bloque.",
+   "El alcohol baja el punto de congelación: más de un 5 % y no cuaja.",
+   "Semifrío con nata semimontada, no firme: firme da textura de mantequilla helada.",
+   "El frío apaga el dulce: prueba la mezcla y que esté algo más dulce de lo que quieres."
+  ],
+  "errors": [
+   {
+    "p": "Granizado en bloque duro",
+    "fix": "Poco azúcar o rascado tardío. Sube el azúcar o deja ablandar y rasca más a menudo."
+   },
+   {
+    "p": "Granizado que no congela",
+    "fix": "Exceso de azúcar o de alcohol. Diluye con agua o zumo."
+   },
+   {
+    "p": "Semifrío con cristales de hielo",
+    "fix": "Base poco aireada o mucho líquido. Monta bien la base y limita el puré."
+   },
+   {
+    "p": "Sorbete instantáneo que se derrite enseguida",
+    "fix": "Fruta poco congelada o mucho almíbar. Congela bien la fruta y sirve en recipiente frío."
+   }
+  ],
+  "history": "Los granizados de hielo, zumo y azúcar son tradicionales en el sur de Italia y en el Mediterráneo español, y el semifrío es un postre clásico de la repostería italiana y francesa. Antes de las heladoras eléctricas, estas eran las formas habituales de hacer postres helados.",
+  "uses": [
+   "Pre-postre en el menú",
+   "Granizado sobre panna cotta o fruta",
+   "Semifrío de turrón o praliné",
+   "Granizado salado con ostras o crudos"
+  ],
+  "keep": "Granizado, tapado a −18 °C, 1 semana; rascar antes de servir. Semifrío envuelto en film, 2–3 semanas.",
+  "pro": "Ten el granizado en bandeja en el abatidor o congelador del pase y rasca a cada ración. Porciona el semifrío en congelado con cuchillo caliente y deja atemperar en cámara positiva unos minutos.",
+  "related": [
+   "helados-y-sorbetes",
+   "mousses-y-cremosos",
+   "merengues",
+   "coulis-y-geles-de-fruta",
+   "citricos"
+  ]
+ },
+ {
+  "id": "pan-y-focaccia",
+  "name": "Pan de masa directa y focaccia",
+  "name_en": "Straight-dough bread and focaccia",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "pan",
+   "pan de levadura",
+   "focaccia",
+   "fogassa",
+   "pan de servicio",
+   "masa directa",
+   "poolish",
+   "pan de molde"
+  ],
+  "summary": "Pan con levadura: harina, agua, sal y tiempo. La masa directa para el pan del día y la focaccia de mucha agua y aceite, cocida en bandeja.",
+  "what": "En una masa directa todos los ingredientes se mezclan de una vez con levadura. El sabor no lo da la levadura, sino el tiempo: con poca levadura y fermentación lenta en frío el pan gana aroma, corteza y conservación. La focaccia es una masa muy hidratada, que se trabaja con pliegues en vez de amasado, se fermenta en la bandeja con abundante [[aceite-de-oliva|aceite]] y se hornea fuerte para que quede crujiente por fuera y alveolada por dentro. Para panes de [[masa-madre]], mira su ficha.",
+  "base": {
+   "for": "una bandeja de 40 × 60 cm de focaccia (unos 2,2 kg)",
+   "items": [
+    [
+     "Harina panificable de fuerza media",
+     "1,2 kg"
+    ],
+    [
+     "Agua fría",
+     "960 g (80 %)"
+    ],
+    [
+     "Sal",
+     "26 g"
+    ],
+    [
+     "Levadura fresca",
+     "8 g"
+    ],
+    [
+     "Aceite de oliva virgen extra para la masa",
+     "40 g"
+    ],
+    [
+     "Aceite para la bandeja y encima",
+     "120 g"
+    ],
+    [
+     "Sal en escamas y romero",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Mezcla la harina con 900 g de agua y deja reposar 30 minutos. Añade la levadura, la sal y el resto del agua y amasa hasta que se integre.",
+    "Añade el aceite de la masa y da 4 tandas de pliegues cada 30 minutos: estira un lado hacia arriba y dóblalo sobre la masa, girando el recipiente.",
+    "Tapa y fermenta en cámara a 4 °C 12–24 horas.",
+    "Pasa a la bandeja aceitada y deja que se extienda sola 2–3 horas a temperatura de sala, hasta que tenga burbujas y haya casi doblado.",
+    "Riega con aceite, hunde los dedos hasta el fondo para hacer hoyuelos, pon el romero y la sal.",
+    "Hornea a 230 °C, 20–25 minutos, hasta que esté dorada y crujiente por debajo."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Pan de masa directa",
+    "ratio": "65–70 % de agua, 2 % de sal y 1–2 % de levadura fresca sobre la harina",
+    "note": "Masa a 24–25 °C; horno a 230–250 °C con vapor."
+   },
+   {
+    "use": "Focaccia",
+    "ratio": "75–80 % de agua y 3–4 % de aceite en la masa",
+    "note": "Horno a 220–230 °C."
+   },
+   {
+    "use": "Fermentación lenta",
+    "ratio": "0,5–0,7 % de levadura fresca y 12–24 h a 4 °C",
+    "note": "Más sabor y mejor corteza."
+   },
+   {
+    "use": "Punto de cocción",
+    "ratio": "Corazón a 96–98 °C",
+    "note": "Suena hueco al golpear la base."
+   }
+  ],
+  "variants": [
+   {
+    "id": "masa-madre",
+    "name": "Pan de masa madre",
+    "note": "Fermentado con cultivo propio en vez de levadura."
+   },
+   {
+    "id": "coca-y-masas-saladas",
+    "name": "Coca",
+    "note": "Masa fina con aceite cubierta de verdura, de la tradición de las islas y el Levante."
+   },
+   {
+    "id": null,
+    "name": "Poolish",
+    "note": "Prefermento de harina y agua a partes iguales con muy poca levadura, 12 horas; da al pan directo sabor de fermentación larga."
+   }
+  ],
+  "keys": [
+   "El porcentaje del panadero: todo se calcula sobre el peso de la harina.",
+   "Poca levadura y mucho tiempo: más sabor que mucha levadura y poco tiempo.",
+   "Controla la temperatura de la masa con el agua: fría en verano, templada en invierno.",
+   "Focaccia: pliegues en vez de amasado y manos mojadas para manejarla.",
+   "Vapor en los primeros minutos del pan: corteza fina y buen volumen."
+  ],
+  "errors": [
+   {
+    "p": "Pan denso y sin alveolos",
+    "fix": "Poco amasado, poca fermentación o masa fría. Amasa hasta desarrollar el gluten y deja doblar."
+   },
+   {
+    "p": "Sabor a levadura",
+    "fix": "Demasiada levadura y fermentación corta. Baja la levadura y alarga en frío."
+   },
+   {
+    "p": "Focaccia pálida por debajo",
+    "fix": "Bandeja fina o horno flojo. Hornea en la parte baja y sube la temperatura."
+   },
+   {
+    "p": "Corteza blanda al enfriar",
+    "fix": "Poca cocción. Saca cuando el corazón esté a 96–98 °C y enfría en rejilla."
+   }
+  ],
+  "history": "El pan de levadura es la base de la alimentación mediterránea desde hace milenios. Las masas planas con aceite y hierbas, como la focaccia italiana o las cocas de la costa española, comparten una misma lógica: masa sencilla, horno fuerte y aceite.",
+  "uses": [
+   "Pan de servicio",
+   "Focaccia de aperitivo",
+   "Panes para bocadillos de brasa",
+   "Pan para migas y crujientes",
+   "Picada y sopas"
+  ],
+  "keep": "Pan a temperatura ambiente en bolsa de tela, 1–2 días; congelado, 1 mes. La focaccia se regenera 5 minutos en horno a 200 °C.",
+  "pro": "Amasa por la tarde y deja la fermentación en frío para hornear antes del servicio. Si haces pan para el servicio, calcula cada día con el porcentaje del panadero y apunta temperatura de agua y de masa.",
+  "related": [
+   "masa-madre",
+   "brioche",
+   "aceite-de-oliva",
+   "coca-y-masas-saladas",
+   "migas-limon"
+  ]
+ },
+ {
+  "id": "coca-y-masas-saladas",
+  "name": "Coca y masas saladas de la isla",
+  "name_en": "Coca and savoury island doughs",
+  "cat": "dulce",
+  "group": "Dulces de la isla",
+  "aka": [
+   "coca",
+   "coca de verduras",
+   "coca de pimiento",
+   "coca de pebrera",
+   "empanada",
+   "panades",
+   "empanadillas",
+   "masa de aceite"
+  ],
+  "summary": "Masas finas de harina, aceite y agua cubiertas de verdura asada o rellenas de carne o pescado: la coca de verdura y las empanadas de la tradición balear.",
+  "what": "La coca es una masa plana, fina y con aceite, que se cubre con verdura (pimiento asado, cebolla, tomate, acelga) y se hornea fuerte. En las islas la de pimiento es de las más conocidas. Las empanadas cerradas de carne o de pescado son un clásico de las fiestas de primavera en Baleares. Las dos usan masas sencillas con aceite o manteca, más cercanas al pan que a la [[masa-quebrada]], y llevan el sabor del producto de temporada.",
+  "base": {
+   "for": "una coca de 40 × 30 cm (8–10 raciones)",
+   "items": [
+    [
+     "Harina panificable",
+     "500 g"
+    ],
+    [
+     "Agua templada",
+     "250 g"
+    ],
+    [
+     "Aceite de oliva",
+     "75 g"
+    ],
+    [
+     "Sal",
+     "10 g"
+    ],
+    [
+     "Levadura fresca",
+     "10 g"
+    ],
+    [
+     "Pimientos rojos asados y pelados, en tiras",
+     "600 g"
+    ],
+    [
+     "Ajo, perejil y aceite para aliñar",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Amasa la harina con el agua, la levadura, la sal y el aceite hasta obtener una masa lisa y blanda. Deja reposar tapada 45–60 minutos.",
+    "Estira sobre la bandeja con las manos aceitadas hasta 4–5 mm, dejando el borde algo más grueso.",
+    "Cubre con las tiras de pimiento aliñadas con ajo, perejil y aceite, sin cargar demasiado.",
+    "Deja levar 20–30 minutos y hornea a 220–230 °C, 20–25 minutos, hasta que la base esté dorada y crujiente.",
+    "Riega con un hilo de aceite al salir."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Masa de coca",
+    "ratio": "50 % de agua, 15 % de aceite, 2 % de sal y 2 % de levadura sobre la harina",
+    "note": "Horno a 220–230 °C."
+   },
+   {
+    "use": "Masa de empanada o empanadilla de aceite",
+    "ratio": "500 g de harina, 125 g de aceite, 125 g de vino blanco o agua y 8 g de sal",
+    "note": "Sin levadura; hornear a 180–190 °C, 30–40 minutos."
+   },
+   {
+    "use": "Cobertura de verdura",
+    "ratio": "1–1,2 kg de verdura asada o pochada por kilo de masa",
+    "note": "Escurrida: el agua empapa la base."
+   },
+   {
+    "use": "Coca fina y crujiente",
+    "ratio": "Masa a 2–3 mm, sin levar tras cubrir",
+    "note": "Horno a 240 °C, 12–15 minutos."
+   }
+  ],
+  "variants": [
+   {
+    "id": "pimientos-asados-alinados",
+    "name": "Coca de pimiento",
+    "note": "Pimientos asados en tiras con ajo y aceite, la más conocida de la isla."
+   },
+   {
+    "id": "pan-y-focaccia",
+    "name": "Focaccia",
+    "note": "Masa más hidratada y gruesa, con aceite y hierbas."
+   },
+   {
+    "id": null,
+    "name": "Empanadas de cordero o de pescado",
+    "note": "Masa de aceite o manteca cerrada en forma de cazuelita, rellena de carne o pescado en dados con sobrasada o especias."
+   }
+  ],
+  "keys": [
+   "Verdura bien escurrida: el agua es lo que deja la base cruda.",
+   "Masa fina y horno fuerte, en la parte baja: la base tiene que crujir.",
+   "La masa de empanada no se amasa mucho: quebradiza, no elástica.",
+   "Relleno de empanada crudo y bien sazonado, marinado de la víspera.",
+   "Aceite bueno al salir del horno: es el acabado."
+  ],
+  "errors": [
+   {
+    "p": "Base cruda o blanda",
+    "fix": "Verdura con agua o horno flojo. Escurre bien y hornea abajo, a 220–230 °C."
+   },
+   {
+    "p": "Masa dura",
+    "fix": "Poco aceite o mucho amasado. Respeta la grasa y amasa lo justo."
+   },
+   {
+    "p": "Empanada que se abre en el horno",
+    "fix": "Cierre poco pellizcado o relleno húmedo. Cierra bien y deja un agujero arriba para el vapor."
+   }
+  ],
+  "history": "Las cocas son masas tradicionales de Cataluña, Valencia y Baleares, con versiones dulces y saladas. En las islas, las cocas de verdura y las empanadas de carne o pescado forman parte de la cocina de fiesta y de casa desde hace generaciones.",
+  "uses": [
+   "Aperitivo de la isla",
+   "Entrante para compartir",
+   "Menú de raíz",
+   "Bocado de picoteo con verdura de temporada"
+  ],
+  "keep": "Coca, mejor del día; recalentar 5 minutos a 200 °C. Empanadas horneadas, en frío 2–3 días; crudas, congeladas 1 mes.",
+  "pro": "Hornea la coca en plancha grande y corta en raciones al pedir; regenera en horno fuerte unos minutos. Para un bocado de menú, cocas individuales finas cubiertas al momento.",
+  "related": [
+   "cocina-ibicenca",
+   "pan-y-focaccia",
+   "pimientos-asados-alinados",
+   "verduras-a-la-brasa",
+   "aceite-de-oliva",
+   "flao"
+  ]
  }
 ]
