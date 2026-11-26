@@ -38,7 +38,7 @@ export function render() {
   '<h3>' + esc(t('Tipos de plato', 'Dish types')) + '</h3>' + bars([...course].sort((a, b) => b[1] - a[1]).map(([id, n]) => [pick((COURSES.find(x => x[0] === id) || [id, id, id]).slice(1, 3)), n]), Math.max(...course.values())) + '</section></div>' +
   '<section class="sec"><header class="sec-head"><div><h2>' + esc(t('Lo que nunca has tocado', 'What you have never touched')) + '</h2><p>' + esc(t('Aquí está tu próximo plato. Toca uno y llévalo al Laboratorio.', 'Your next dish is here. Tap one and take it to the Lab.')) + '</p></div></header>' +
   '<div class="stnever">' +
-  (seasonal.length ? '<div><h3>' + esc(t('De temporada en ', 'In season in ') + monthName(m)) + '</h3><div class="chips">' + seasonal.map(i => '<a class="chip" href="#/sabores/' + esc(i.id) + '">' + esc(en() ? i.en : i.es) + '</a>').join('') + '</div></div>' : '') +
+  (seasonal.length ? '<div><h3>' + esc(t('De temporada en ', 'In season in ') + monthName(m)) + '</h3><div class="chips">' + seasonal.map(i => '<a class="chip" href="#/laboratorio/' + esc(i.id) + '">' + esc(en() ? i.en : i.es) + '</a>').join('') + '</div></div>' : '') +
   (neverFam.length ? '<div><h3>' + esc(t('Familias', 'Families')) + '</h3><div class="chips">' + neverFam.map(f => '<span class="chip chip-static">' + esc(pick(FAMILIES[f])) + '</span>').join('') + '</div></div>' : '') +
   (neverTech.length ? '<div><h3>' + esc(t('Técnicas', 'Techniques')) + '</h3><div class="chips">' + neverTech.map(x => '<span class="chip chip-static">' + esc(pick(x.slice(1, 3))) + '</span>').join('') + '</div></div>' : '') +
   '</div><div class="row-actions row-left"><a class="btn primary" href="#/laboratorio">' + icon('spark') + esc(t('Ir al Laboratorio', 'Go to the Lab')) + '</a></div></section>';

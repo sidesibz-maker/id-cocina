@@ -57,6 +57,7 @@ await go('#/biblioteca'); ok(await page.locator('.kpath').count() >= 7, 'faltan 
 const crear = page.locator('.kpath', {hasText: 'Crear platos'});
 ok((await crear.textContent()).includes('1 de 6') && (await crear.locator('.btn').textContent()).includes('Contraste y equilibrio'), 'la ruta no avanza: ' + await crear.textContent());
 await go('#/hoy'); ok((await page.textContent('.craft')).includes('Tu ruta: Crear platos'), 'la portada no dice la siguiente ficha de la ruta');
+await go('#/laboratorio/higo'); ok((await page.textContent('.labtrio .labing')).toLowerCase().includes('higo'), 'el Laboratorio no parte del producto de la dirección');
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();
 if (fails.length) { console.error('FALLOS en el laboratorio:\n - ' + fails.join('\n - ')); process.exit(1); }

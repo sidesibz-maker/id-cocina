@@ -51,7 +51,9 @@ export function sparkText(s) {
 }
 
 let current = null, fixedId = '';
-export function render() {
+export function render(params = []) {
+ // #/laboratorio/<producto>: la chispa parte de ese producto (por ejemplo, desde «Tu estilo» o desde Sabores).
+ if (params[0] && state.kb?.byId[params[0]] && fixedId !== params[0]) { fixedId = params[0]; current = spark(fixedId); }
  if (state.kb && !current) current = spark();
  const sparks = liveDocs('chispa').sort((a, b) => String(b.created_at).localeCompare(String(a.created_at)));
  return '<header class="page-head"><h1>' + esc(t('Laboratorio creativo', 'Creative lab')) + '</h1><p>' + esc(t('Crear es un método: mirar un producto de otra manera, juntar lo que nadie ha juntado y apuntar todas las ideas, también las malas. Aquí tienes con qué.', 'Creating is a method: look at produce differently, pair what nobody has paired and write down every idea, bad ones too. Here is how.')) + '</p></header>' +
@@ -102,5 +104,5 @@ export function mount(root) {
  });
  return null;
 }
-export function onData(what, root) { if (['docs', 'remote', 'load'].includes(what)) { if (what === 'load' && !current) current = spark(fixedId); const keep = document.activeElement?.id === 'labText' ? $('#labText', root).value : null; root.innerHTML = render(); if (keep !== null) { const t2 = $('#labText', root); t2.value = keep; t2.focus(); } } }
+export function onData(what, root, params) { if (['docs', 'remote', 'load'].includes(what)) { if (what === 'load' && !current) current = spark(fixedId); const keep = document.activeElement?.id === 'labText' ? $('#labText', root).value : null; root.innerHTML = render(params); if (keep !== null) { const t2 = $('#labText', root); t2.value = keep; t2.focus(); } } }
 export {dayKey};
