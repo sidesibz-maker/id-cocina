@@ -3940,5 +3940,866 @@
       "aceites-aromatizados",
       "fuego-y-brasa"
     ]
+  },
+  {
+    "id": "fondo-de-cordero",
+    "name": "Fondo de cordero",
+    "aka": [
+      "jugo de cordero",
+      "fondo oscuro de cordero",
+      "caldo de cordero",
+      "jus de cordero",
+      "fondo de cabrito"
+    ],
+    "cat": "fondos",
+    "group": "Fondos oscuros",
+    "summary": "Fondo de huesos y recortes de cordero tostados con ajo y romero: reducido, es el jugo que acompaña al cordero asado o a la brasa.",
+    "what": "Sigue el método del [[fondo-oscuro]], pero con huesos y recortes de [[cordero]], que tienen un sabor más marcado y una grasa de olor intenso que hay que retirar bien. Se tuesta a fondo, se cuece menos tiempo que la ternera y se reduce hasta un [[jugo-de-carne|jugo]] corto y brillante. Ajo, romero, tomillo y algo de tomate lo acompañan sin taparlo. Es la salsa natural de cualquier pieza de cordero o [[cabrito]].",
+    "base": {
+      "for": "3 l aprox. (o 500 ml de jugo)",
+      "items": [
+        [
+          "Huesos de cordero (cuello, costillar, espinazo) troceados",
+          "4 kg"
+        ],
+        [
+          "Recortes de carne de cordero",
+          "1 kg"
+        ],
+        [
+          "Cebolla",
+          "400 g"
+        ],
+        [
+          "Zanahoria",
+          "200 g"
+        ],
+        [
+          "Apio",
+          "150 g"
+        ],
+        [
+          "Ajo, cabeza partida",
+          "1"
+        ],
+        [
+          "Tomate concentrado",
+          "50 g"
+        ],
+        [
+          "Vino blanco seco o tinto",
+          "400 ml"
+        ],
+        [
+          "Agua fría",
+          "5 l"
+        ],
+        [
+          "Romero, tomillo, laurel y pimienta",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Tuesta huesos y recortes en bandeja a 200–220 °C, 45–60 minutos, hasta un dorado oscuro. Retira toda la grasa que suelten.",
+        "Dora las verduras y el ajo en la marmita con un poco de aceite; añade el tomate concentrado y tuéstalo 3 minutos.",
+        "Desglasa las bandejas con el vino y pásalo todo a la marmita con los huesos.",
+        "Cubre con el agua fría, lleva a 90–95 °C y desespuma. Cuece 4–5 horas; añade las hierbas la última hora.",
+        "Cuela, abate y retira en frío toda la grasa cuajada."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Fondo para guisos y arroces de cordero",
+        "ratio": "1 kg de hueso por 1,2 l de agua, 4–5 h a 90–95 °C",
+        "note": "Sin reducir."
+      },
+      {
+        "use": "Jugo de cordero",
+        "ratio": "Fondo reducido a 1/6",
+        "note": "Monta con 40 g de mantequilla por litro o termina con aceite y romero."
+      },
+      {
+        "use": "Jugo rápido de servicio",
+        "ratio": "Recortes dorados en sauté, mojados con fondo y reducidos 30 minutos",
+        "note": "Con ajo y romero al final."
+      }
+    ],
+    "variants": [
+      {
+        "id": "fondo-oscuro",
+        "name": "Fondo oscuro de ternera",
+        "note": "Más neutro y de cocción más larga."
+      },
+      {
+        "id": "fondo-de-caza",
+        "name": "Fondo de caza",
+        "note": "Huesos de caza, enebro y vino tinto."
+      },
+      {
+        "id": null,
+        "name": "Fondo de cabrito",
+        "note": "Más suave y gelatinoso; cocción algo más corta."
+      }
+    ],
+    "keys": [
+      "Desgrasa a conciencia: la grasa de cordero da un sabor fuerte y rancio al reducir.",
+      "Tuesta bien huesos y recortes: el sabor del jugo está ahí.",
+      "Romero y tomillo al final: con horas de cocción amargan.",
+      "Cocción de 4–5 horas basta; más tiempo no mejora el cordero.",
+      "Sin sal: el jugo se concentra mucho."
+    ],
+    "errors": [
+      {
+        "p": "Sabor a grasa rancia",
+        "fix": "Grasa sin retirar al tostar o al enfriar. Desgrasa en cada paso."
+      },
+      {
+        "p": "Jugo amargo",
+        "fix": "Hierbas leñosas muchas horas o huesos quemados. Hierbas al final y tostado sin negro."
+      },
+      {
+        "p": "Jugo turbio",
+        "fix": "Hervor fuerte. Mantén temblor y cuela sin apretar."
+      }
+    ],
+    "history": "Los fondos de cordero y cabrito acompañan desde siempre las cocinas de pastoreo del Mediterráneo, en guisos y asados. La cocina de restaurante los reduce a jugos cortos para acompañar piezas a la brasa.",
+    "uses": [
+      "Jugo para cordero asado o a la brasa",
+      "Arroces y guisos de cordero",
+      "Glasear verduras de acompañamiento",
+      "Legumbres con cordero"
+    ],
+    "keep": "Abatir de 60 °C a menos de 10 °C en menos de 2 horas. En cámara a 0–4 °C, 3–4 días; congelado, 3 meses. Jugo reducido en cubiteras.",
+    "pro": "Guarda los huesos y recortes del despiece de cordero congelados hasta tener tanda. Ten el jugo reducido en cubos y móntalo por ración.",
+    "related": [
+      "cordero",
+      "cabrito",
+      "fondo-oscuro",
+      "jugo-de-carne",
+      "glace",
+      "reducciones"
+    ]
+  },
+  {
+    "id": "fondo-de-caza",
+    "name": "Fondo de caza",
+    "aka": [
+      "fondo de venado",
+      "fondo de jabali",
+      "fondo de perdiz",
+      "caldo de caza",
+      "jugo de caza",
+      "fondo de conejo de monte"
+    ],
+    "cat": "fondos",
+    "group": "Fondos oscuros",
+    "summary": "Fondo oscuro de huesos y recortes de caza tostados con vino tinto, enebro y especias, base de salsas de caza intensas y ligeramente dulces y ácidas.",
+    "what": "Las piezas de caza (perdiz, codorniz, conejo de monte, liebre, jabalí, venado) tienen poca grasa y un sabor potente. Su fondo se hace como un [[fondo-oscuro]], con más vino tinto y aromas de monte: enebro, pimienta, laurel, tomillo y a veces piel de naranja. Reducido, da salsas que se terminan con un punto dulce (fruta, chocolate, vino dulce) y uno ácido (vinagre, frutos rojos) para equilibrar el sabor de la carne. La caza debe venir con su control sanitario.",
+    "base": {
+      "for": "3 l aprox.",
+      "items": [
+        [
+          "Huesos y recortes de caza troceados",
+          "4 kg"
+        ],
+        [
+          "Cebolla",
+          "400 g"
+        ],
+        [
+          "Zanahoria",
+          "250 g"
+        ],
+        [
+          "Apio",
+          "150 g"
+        ],
+        [
+          "Ajo",
+          "1 cabeza"
+        ],
+        [
+          "Tomate concentrado",
+          "50 g"
+        ],
+        [
+          "Vino tinto",
+          "750 ml"
+        ],
+        [
+          "Agua fría",
+          "5 l"
+        ],
+        [
+          "Bayas de enebro machacadas",
+          "8"
+        ],
+        [
+          "Pimienta negra, laurel, tomillo y piel de naranja",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Tuesta los huesos y recortes a 200–220 °C, 45–60 minutos, hasta un dorado oscuro; retira la grasa.",
+        "Dora las verduras con el ajo y tuesta el tomate concentrado.",
+        "Desglasa con el vino tinto y reduce a la mitad para quitar el alcohol y concentrar.",
+        "Añade los huesos, el agua fría y los aromáticos. Lleva a 90–95 °C, desespuma y cuece: 3–4 horas si es caza de pluma o conejo, 5–6 horas si es caza mayor.",
+        "Cuela, abate y desgrasa en frío."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Caza de pluma y conejo",
+        "ratio": "1 kg de carcasa por 1,2 l de agua, 3–4 h a 90–95 °C",
+        "note": "Más corto: se amarga con cocciones largas."
+      },
+      {
+        "use": "Caza mayor (jabalí, venado)",
+        "ratio": "1 kg de hueso por 1,5 l de agua, 5–6 h",
+        "note": "Huesos más grandes y gelatinosos."
+      },
+      {
+        "use": "Salsa de caza",
+        "ratio": "Fondo reducido a 1/5 y terminado con un toque dulce y uno ácido",
+        "note": "Chocolate negro, frutos rojos, vino dulce o vinagre."
+      }
+    ],
+    "variants": [
+      {
+        "id": "fondo-de-cordero",
+        "name": "Fondo de cordero",
+        "note": "El mismo método con cordero; más suave."
+      },
+      {
+        "id": "escabeche",
+        "name": "Escabeche de caza",
+        "note": "La caza de pluma conservada en un adobo de vinagre y aceite."
+      },
+      {
+        "id": null,
+        "name": "Fondo de conejo",
+        "note": "Conejo de granja o de monte; más ligero, para arroces de montaña."
+      }
+    ],
+    "keys": [
+      "Reduce el vino antes de mojar: si no, el fondo queda ácido y con alcohol.",
+      "La caza de pluma amarga si cuece de más: no pases de 4 horas.",
+      "Enebro y pimienta son los aromas clásicos; con poca cantidad basta.",
+      "Equilibra la salsa final con dulce y ácido, no solo con sal.",
+      "Caza siempre de origen controlado y con su inspección sanitaria."
+    ],
+    "errors": [
+      {
+        "p": "Sabor demasiado fuerte o a hígado",
+        "fix": "Vísceras o sangre en los huesos. Limpia bien y blanquea si hace falta."
+      },
+      {
+        "p": "Amargo",
+        "fix": "Cocción larga de huesos pequeños o hierbas leñosas. Acorta el tiempo y añade hierbas al final."
+      },
+      {
+        "p": "Salsa plana",
+        "fix": "Falta dulce y ácido. Termina con una fruta, chocolate o vinagre de vino."
+      }
+    ],
+    "history": "Los guisos y salsas de caza son parte de las cocinas de monte de toda Europa, en España sobre todo en otoño e invierno. La cocina clásica francesa codificó sus fondos y salsas, y en las cocinas regionales españolas abundan los guisos de perdiz, conejo y jabalí.",
+    "uses": [
+      "Salsas para venado, jabalí o pato",
+      "Guisos de caza",
+      "Arroces de montaña",
+      "Perdiz o conejo estofados"
+    ],
+    "keep": "Abatir de 60 °C a menos de 10 °C en menos de 2 horas. En cámara a 0–4 °C, 3–4 días; congelado, 3 meses.",
+    "pro": "Haz el fondo en temporada de caza con los recortes del despiece y congélalo reducido en cubos. Prepara la salsa por ración en el pase.",
+    "related": [
+      "fondo-oscuro",
+      "fondo-de-cordero",
+      "conejo",
+      "escabeche",
+      "marinada",
+      "reducciones",
+      "glace"
+    ]
+  },
+  {
+    "id": "bisque",
+    "name": "Bisque y cremas de marisco",
+    "aka": [
+      "bisque",
+      "crema de marisco",
+      "sopa de marisco",
+      "bisque de bogavante",
+      "crema de cigalas",
+      "crema de gambas"
+    ],
+    "cat": "fondos",
+    "group": "Fondos de mar",
+    "summary": "Sopa cremosa de crustáceos: cabezas y cáscaras tostadas, trituradas y coladas con su caldo, ligadas y terminadas con nata o mantequilla.",
+    "what": "La bisque nace del [[fondo-de-marisco]], pero va más lejos: las cáscaras se tuestan, se flambean, se cuecen con el caldo y después se trituran con él y se cuelan apretando, de modo que pasa todo el sabor y algo de cuerpo. Se liga con arroz cocido en la propia sopa, con pan o con un poco de almidón, y se termina con nata o mantequilla. La [[salsa-americana]] es su pariente salsa. Es la mejor manera de aprovechar las cabezas de [[gamba-roja]], cigala o bogavante.",
+    "base": {
+      "for": "2 l aprox. (8–10 raciones)",
+      "items": [
+        [
+          "Cabezas y caparazones de crustáceo (gamba, cigala, bogavante, cangrejo)",
+          "2 kg"
+        ],
+        [
+          "Aceite de oliva",
+          "80 ml"
+        ],
+        [
+          "Cebolla, zanahoria y puerro en dados pequeños",
+          "400 g en total"
+        ],
+        [
+          "Ajo",
+          "3 dientes"
+        ],
+        [
+          "Tomate concentrado",
+          "60 g"
+        ],
+        [
+          "Tomate maduro",
+          "300 g"
+        ],
+        [
+          "Brandy",
+          "80 ml"
+        ],
+        [
+          "Vino blanco seco",
+          "200 ml"
+        ],
+        [
+          "Fumet o agua",
+          "3 l"
+        ],
+        [
+          "Arroz",
+          "80 g"
+        ],
+        [
+          "Nata 35 %",
+          "200 ml"
+        ],
+        [
+          "Mantequilla",
+          "50 g"
+        ],
+        [
+          "Estragón, laurel, cayena y sal",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Tuesta las cabezas y caparazones en el aceite a fuego fuerte, aplastándolos, 8–10 minutos, hasta que se peguen un poco y huelan a tostado.",
+        "Añade las verduras y el ajo y rehoga 10 minutos. Añade el tomate concentrado y el tomate y sofríe.",
+        "Flambea con el brandy, añade el vino y reduce.",
+        "Moja con el fumet, añade el arroz y las hierbas y cuece a fuego suave 35–40 minutos.",
+        "Tritura todo, con las cáscaras, en vaso potente por tandas, y pasa por chino apretando bien; después, por colador fino.",
+        "Lleva a hervor, añade la nata y reduce hasta que napee. Termina fuera del fuego con la mantequilla y ajusta de sal y cayena."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Bisque clásica",
+        "ratio": "1 kg de cáscaras por 1,5 l de líquido y 40 g de arroz",
+        "note": "Cocer 35–40 minutos a fuego suave."
+      },
+      {
+        "use": "Crema más ligera",
+        "ratio": "Sin arroz, ligada con 15–20 g de almidón por litro",
+        "note": "Más limpia y brillante."
+      },
+      {
+        "use": "Salsa de marisco desde la bisque",
+        "ratio": "Bisque reducida a la mitad y montada con 50 g de mantequilla por litro",
+        "note": "Para arroces, pastas y pescados."
+      },
+      {
+        "use": "Servicio",
+        "ratio": "A 75–80 °C, nunca hirviendo tras la nata",
+        "note": "Con la carne del marisco al momento."
+      }
+    ],
+    "variants": [
+      {
+        "id": "salsa-americana",
+        "name": "Salsa americana",
+        "note": "La misma base reducida como salsa."
+      },
+      {
+        "id": "fondo-de-marisco",
+        "name": "Fondo de marisco",
+        "note": "Sin triturar las cáscaras ni ligar; para arroces."
+      },
+      {
+        "id": null,
+        "name": "Bisque fría",
+        "note": "Ligada con menos nata y servida fría con un aceite de marisco."
+      }
+    ],
+    "keys": [
+      "Tuesta bien las cáscaras: es todo el sabor y el color.",
+      "Triturar con las cáscaras y colar apretando saca el máximo de sabor.",
+      "Cuela dos veces: primero chino, luego colador fino, para quitar cualquier resto de caparazón.",
+      "Las cabezas tienen mucho sabor; las patas y cáscaras finas, más color.",
+      "Sazona al final: el marisco ya aporta sal."
+    ],
+    "errors": [
+      {
+        "p": "Arena o trozos de cáscara",
+        "fix": "Colado poco fino. Pasa por colador fino o estameña."
+      },
+      {
+        "p": "Sabor a quemado",
+        "fix": "Tomate concentrado o cáscaras quemados. Tuesta a fuego fuerte pero sin negro."
+      },
+      {
+        "p": "Bisque aguada",
+        "fix": "Pocas cáscaras o mucho líquido. Reduce o sube la proporción de marisco."
+      },
+      {
+        "p": "Se corta la nata",
+        "fix": "Ha hervido con mucho ácido. Añade la nata al final y no la hiervas fuerte."
+      }
+    ],
+    "history": "La bisque es una sopa de crustáceos de la cocina clásica francesa. En España las cremas de marisco son habituales en la cocina de costa y de celebración.",
+    "uses": [
+      "Sopa o crema de marisco",
+      "Salsa para arroces y pastas",
+      "Base de arroz meloso de marisco",
+      "Fondo de plato para pescado y marisco"
+    ],
+    "keep": "Sin nata, abatida y en frío, 2 días; congelada, 2 meses. Añade la nata al regenerar.",
+    "pro": "Congela las cabezas de marisco del servicio hasta tener tanda. Ten la base sin nata en frío y termina por raciones en el pase.",
+    "related": [
+      "fondo-de-marisco",
+      "salsa-americana",
+      "gamba-roja",
+      "cigala-y-langosta",
+      "coccion-de-marisco",
+      "fumet"
+    ]
+  },
+  {
+    "id": "caldo-corto",
+    "name": "Caldo corto (court-bouillon)",
+    "aka": [
+      "court-bouillon",
+      "court bouillon",
+      "caldo corto",
+      "caldo de escalfar",
+      "caldo para cocer pescado",
+      "caldo aromatico"
+    ],
+    "cat": "fondos",
+    "group": "Fondos claros",
+    "summary": "Caldo rápido de agua, vino o vinagre, verduras y hierbas, hecho para escalfar pescado, marisco y verduras dándoles aroma sin tapar su sabor.",
+    "what": "No es un caldo para beber ni para salsas, sino un líquido de cocción. Se cuece poco tiempo, lleva ácido (vino, vinagre o limón) que afirma la carne del pescado y aromas suaves de verdura y hierba. El pescado se [[escalfado|escalfa]] en él sin hervor, y a veces se deja enfriar dentro. Es la variante ácida del [[caldo-de-verduras]], y tras usarlo puede servir de base para un [[fumet]] o una salsa.",
+    "base": {
+      "for": "4 l aprox.",
+      "items": [
+        [
+          "Agua",
+          "3,5 l"
+        ],
+        [
+          "Vino blanco seco",
+          "500 ml"
+        ],
+        [
+          "Vinagre de vino blanco (o zumo de 1 limón)",
+          "80 ml"
+        ],
+        [
+          "Cebolla en láminas",
+          "250 g"
+        ],
+        [
+          "Zanahoria en rodajas finas",
+          "150 g"
+        ],
+        [
+          "Apio e hinojo en láminas",
+          "150 g"
+        ],
+        [
+          "Perejil (tallos), tomillo y laurel",
+          "1 manojo"
+        ],
+        [
+          "Pimienta en grano",
+          "10 g"
+        ],
+        [
+          "Sal",
+          "40–50 g"
+        ]
+      ],
+      "steps": [
+        "Pon el agua, el vino, el vinagre, la sal y las verduras cortadas finas en la olla.",
+        "Lleva a hervor y cuece a fuego suave 20 minutos.",
+        "Añade las hierbas y la pimienta y cuece 10 minutos más: la pimienta larga amarga.",
+        "Cuela o úsalo con las verduras si van a acompañar al pescado.",
+        "Para piezas grandes, deja enfriar antes de meter el pescado; para lomos y raciones, úsalo a 80–85 °C."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Pescado entero grande (salmón, lubina, rodaballo)",
+        "ratio": "Empezar en caldo frío y subir hasta 80–85 °C",
+        "note": "Cocción pareja de fuera a dentro."
+      },
+      {
+        "use": "Lomos y raciones",
+        "ratio": "Caldo a 80–85 °C, 6–10 minutos según grosor",
+        "note": "Sin hervor."
+      },
+      {
+        "use": "Marisco",
+        "ratio": "30–35 g de sal por litro",
+        "note": "Mira la cocción de cada marisco."
+      },
+      {
+        "use": "Pulpo y cefalópodos",
+        "ratio": "Caldo con poco ácido y sal moderada, hervor suave",
+        "note": "El ácido fuerte endurece la piel."
+      }
+    ],
+    "variants": [
+      {
+        "id": "caldo-de-verduras",
+        "name": "Caldo de verduras",
+        "note": "Sin ácido; para beber, arroces y cremas."
+      },
+      {
+        "id": "fumet",
+        "name": "Fumet",
+        "note": "Con espinas; para salsas y arroces."
+      },
+      {
+        "id": null,
+        "name": "Caldo corto de leche",
+        "note": "Agua y leche con laurel; para escalfar pescado blanco o bacalao y dejarlo muy blanco."
+      }
+    ],
+    "keys": [
+      "Verduras finas: el caldo cuece poco y tienen que soltar su aroma rápido.",
+      "Pimienta y hierbas al final.",
+      "Escalfa sin hervor: el hervor rompe la carne del pescado.",
+      "Para piezas grandes, desde frío; para pequeñas, en caliente.",
+      "Prueba de sal: el pescado toma la sal del caldo."
+    ],
+    "errors": [
+      {
+        "p": "Pescado roto o seco",
+        "fix": "Hervor fuerte o tiempo largo. Escalfa a 80–85 °C y controla el corazón."
+      },
+      {
+        "p": "Pescado soso",
+        "fix": "Caldo sin sal o con poco aroma. Sala el caldo y cuece las verduras antes."
+      },
+      {
+        "p": "Sabor amargo",
+        "fix": "Pimienta o hierbas cocidas mucho tiempo. Añádelas al final."
+      }
+    ],
+    "history": "El court-bouillon es la versión clásica francesa de un caldo de cocción aromático. En España se cuecen pescados y mariscos en caldos de agua, sal, laurel y otras hierbas desde siempre.",
+    "uses": [
+      "Escalfar pescado entero o en lomos",
+      "Cocer marisco",
+      "Cocer pulpo",
+      "Escalfar verduras para ensaladas",
+      "Base de un caldo de pescado al reutilizarlo"
+    ],
+    "keep": "Colado, en frío, 2–3 días. El caldo usado para escalfar, colado y en frío, 1 día como base de un caldo o salsa.",
+    "pro": "Prepáralo en el turno de mañana y mantenlo a 80–85 °C en el pase si escalfas al momento. Cambia el caldo cuando se enturbie o tome demasiado sabor a pescado.",
+    "related": [
+      "escalfado",
+      "caldo-de-verduras",
+      "fumet",
+      "coccion-de-marisco",
+      "pescado-entero",
+      "cefalopodos"
+    ]
+  },
+  {
+    "id": "rubs-y-mezclas-secas",
+    "name": "Rubs y mezclas de especias secas",
+    "aka": [
+      "rub",
+      "mezcla de especias",
+      "aliño seco",
+      "dry rub",
+      "zaatar",
+      "dukkah",
+      "ras el hanout",
+      "salazon seca"
+    ],
+    "cat": "bases",
+    "group": "Curas y marinados",
+    "summary": "Mezclas secas de sal, azúcar, especias y hierbas para frotar la carne o el pescado antes de la brasa, o para espolvorear al final.",
+    "what": "Un rub es un [[adobo]] sin líquido: sal, a veces azúcar, y especias y hierbas secas que se frotan en la pieza antes de cocinarla. La sal penetra y sazona por dentro si se deja tiempo; el azúcar ayuda a dorar; las especias forman una costra aromática. Muchas cocinas tienen mezclas secas de acabado que se espolvorean al servir, como el za'atar (tomillo, zumaque y sésamo) o el dukkah (frutos secos y especias). Para mezclas en pasta, mira [[pastas-de-especias]].",
+    "base": {
+      "for": "unos 200 g de rub para cerdo o pollo a la brasa",
+      "items": [
+        [
+          "Sal fina",
+          "60 g"
+        ],
+        [
+          "Azúcar moreno",
+          "40 g"
+        ],
+        [
+          "Pimentón dulce",
+          "30 g"
+        ],
+        [
+          "Pimentón picante o ahumado",
+          "10 g"
+        ],
+        [
+          "Ajo en polvo",
+          "15 g"
+        ],
+        [
+          "Comino tostado y molido",
+          "10 g"
+        ],
+        [
+          "Pimienta negra recién molida",
+          "10 g"
+        ],
+        [
+          "Orégano o tomillo seco",
+          "10 g"
+        ],
+        [
+          "Piel de naranja seca molida",
+          "5 g"
+        ]
+      ],
+      "steps": [
+        "Tuesta las especias enteras en sartén seca hasta que huelan y muélelas.",
+        "Mezcla con el resto de ingredientes y pasa por colador grueso para deshacer grumos.",
+        "Seca bien la pieza y frota el rub por toda la superficie: unos 20–30 g por kilo de carne.",
+        "Deja reposar en frío, sin tapar o sobre rejilla, de 2 a 24 horas según el tamaño.",
+        "Cocina a brasa media o indirecta: el azúcar y el pimentón se queman con fuego muy vivo."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Rub con sal para la víspera",
+        "ratio": "1–1,5 % de sal sobre el peso de la pieza",
+        "note": "Calcula la sal del rub sobre la carne, no al ojo."
+      },
+      {
+        "use": "Piezas grandes (paletilla, costilla)",
+        "ratio": "20–30 g de rub por kilo, 12–24 h en frío",
+        "note": "Cocción lenta e indirecta."
+      },
+      {
+        "use": "Pescado",
+        "ratio": "Rub sin azúcar, solo 15–30 minutos antes",
+        "note": "La sal cura el pescado si se deja mucho."
+      },
+      {
+        "use": "Za'atar de acabado",
+        "ratio": "2 partes de tomillo seco, 1 de zumaque, 1 de sésamo tostado y sal al gusto",
+        "note": "Sobre pan, labneh, verduras o carnes."
+      }
+    ],
+    "variants": [
+      {
+        "id": "adobo",
+        "name": "Adobo",
+        "note": "La versión húmeda, con vinagre y aceite."
+      },
+      {
+        "id": "sales-aromaticas",
+        "name": "Sales aromáticas",
+        "note": "Para terminar, no para frotar antes."
+      },
+      {
+        "id": null,
+        "name": "Dukkah",
+        "note": "Avellana o almendra tostada, sésamo, cilantro y comino en grano, triturados gruesos con sal."
+      }
+    ],
+    "keys": [
+      "Pesa la sal según el peso de la pieza: es la parte que más importa.",
+      "Seca la pieza antes: el rub se pega mejor y la costra se forma.",
+      "Especias tostadas y molidas al momento, en tandas pequeñas.",
+      "Fuego moderado si lleva azúcar o pimentón.",
+      "Guarda la mezcla en seco y oscuro: el pimentón pierde color con la luz."
+    ],
+    "errors": [
+      {
+        "p": "Costra quemada y amarga",
+        "fix": "Azúcar o pimentón a fuego muy vivo. Brasa media o indirecta y fuego fuerte solo al final."
+      },
+      {
+        "p": "Pieza salada",
+        "fix": "Rub aplicado sin pesar o con mucha antelación. Calcula 1–1,5 % de sal y ajusta el tiempo."
+      },
+      {
+        "p": "Sabor a especia rancia",
+        "fix": "Mezcla vieja. Haz tandas pequeñas y muele al momento."
+      }
+    ],
+    "history": "Frotar la carne con sal y especias antes de asarla es una práctica universal. Las mezclas secas con nombre propio, como el za'atar o el ras el hanout, son parte de las cocinas de Oriente Medio y el norte de África.",
+    "uses": [
+      "Cerdo, pollo y cordero a la brasa",
+      "Costillas y piezas de cocción lenta",
+      "Verduras asadas",
+      "Acabado de pan, labneh y legumbres"
+    ],
+    "keep": "En bote hermético, seco y oscuro, 1–2 meses; después pierde aroma.",
+    "pro": "Ten cada rub en bote etiquetado con su proporción de sal por kilo. Aplica la víspera a las piezas grandes y a primera hora a las pequeñas.",
+    "related": [
+      "especias",
+      "adobo",
+      "pastas-de-especias",
+      "sales-aromaticas",
+      "fuego-y-brasa",
+      "salmuera",
+      "labneh"
+    ]
+  },
+  {
+    "id": "sabayones-salados",
+    "name": "Sabayones salados y salsas de yema",
+    "aka": [
+      "sabayon",
+      "sabayon salado",
+      "sabayon de cava",
+      "gratinado de sabayon",
+      "espuma de yema",
+      "salsa de yema"
+    ],
+    "cat": "salsas",
+    "group": "Emulsiones calientes",
+    "summary": "Yemas batidas al baño maría con un líquido sabroso (vino, cava, fumet, jugo) hasta formar una espuma ligera para napar y gratinar pescados, mariscos y verduras.",
+    "what": "Un sabayón es yema y líquido batidos sobre calor suave: la yema atrapa aire y cuaja ligeramente, y queda una crema espumosa. En dulce se hace con vino y azúcar; en salado, con cava, vino blanco, fumet, jugo de marisco o de verdura. Montado además con mantequilla se convierte en una [[holandesa]]. Sobre un pescado o unas verduras se dora en salamandra en segundos y forma una capa ligera y brillante.",
+    "base": {
+      "for": "6–8 raciones para gratinar",
+      "items": [
+        [
+          "Yemas pasteurizadas",
+          "120 g (6)"
+        ],
+        [
+          "Cava o vino blanco seco",
+          "80 g"
+        ],
+        [
+          "Fumet o caldo reducido",
+          "80 g"
+        ],
+        [
+          "Mantequilla fundida o clarificada (opcional)",
+          "50 g"
+        ],
+        [
+          "Sal y unas gotas de limón",
+          "al gusto"
+        ],
+        [
+          "Cebollino o estragón picado",
+          "opcional"
+        ]
+      ],
+      "steps": [
+        "Reduce el cava a la mitad si quieres menos alcohol y deja templar.",
+        "Pon las yemas con el cava y el fumet en un bol de acero sobre un baño maría que no hierva.",
+        "Bate sin parar, levantando la varilla, hasta que la mezcla triplique su volumen y deje un rastro que tarde en desaparecer (70–80 °C).",
+        "Si lleva mantequilla, añádela en hilo fuera del fuego, batiendo.",
+        "Sazona con sal y limón. Napa sobre el producto y gratina en salamandra muy caliente unos segundos, hasta dorar."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Sabayón para gratinar",
+        "ratio": "1 yema por 25–30 g de líquido",
+        "note": "Batir a 70–80 °C hasta que triplique."
+      },
+      {
+        "use": "Sabayón más estable",
+        "ratio": "La base con 40–60 g de mantequilla por cada 6 yemas",
+        "note": "Aguanta más tiempo en el pase."
+      },
+      {
+        "use": "Sabayón al sifón",
+        "ratio": "Yemas y líquido a partes iguales, cocidos a 62–65 °C",
+        "note": "Sifón con una carga, en baño a 60 °C."
+      },
+      {
+        "use": "Gratinado",
+        "ratio": "Salamandra muy fuerte, 20–40 segundos",
+        "note": "Que dore sin cuajar de más la yema."
+      }
+    ],
+    "variants": [
+      {
+        "id": "holandesa",
+        "name": "Holandesa",
+        "note": "El sabayón montado con mucha mantequilla."
+      },
+      {
+        "id": "bearnesa",
+        "name": "Bearnesa",
+        "note": "Holandesa con reducción de estragón y chalota."
+      },
+      {
+        "id": "espumas-con-sifon",
+        "name": "Espuma de sabayón",
+        "note": "La misma base en sifón, más ligera y estable."
+      }
+    ],
+    "keys": [
+      "Baño maría sin hervor y bol que no toque el agua.",
+      "Batir sin parar y retirar del calor si empieza a cuajar en los bordes.",
+      "Yemas pasteurizadas: el sabayón no llega a una temperatura alta mucho rato.",
+      "Líquido sabroso y reducido: el sabayón diluye el sabor.",
+      "Gratina al momento; reposado, el sabayón pierde volumen."
+    ],
+    "errors": [
+      {
+        "p": "Se cuaja y hace grumos",
+        "fix": "Demasiado calor. Retira del fuego, añade una cucharada de líquido frío y bate fuerte; cuela."
+      },
+      {
+        "p": "No monta",
+        "fix": "Poco calor o poco batido. Sigue batiendo sobre el baño maría hasta 70–80 °C."
+      },
+      {
+        "p": "Sabe a huevo",
+        "fix": "Líquido poco sabroso. Reduce el vino o el caldo antes y ajusta con limón."
+      },
+      {
+        "p": "Se baja en el pase",
+        "fix": "Sin grasa que lo estabilice. Monta con mantequilla o pásalo a sifón."
+      }
+    ],
+    "history": "El sabayón dulce tiene raíz italiana, y la cocina clásica francesa lo usó como base de salsas emulsionadas como la holandesa. Los gratinados de pescado con sabayón de cava son habituales en la cocina de restaurante española.",
+    "uses": [
+      "Gratinar pescado blanco o marisco",
+      "Napar espárragos y verduras",
+      "Base de holandesa y bearnesa",
+      "Espuma de yema para huevos y patatas"
+    ],
+    "keep": "No se guarda: se hace al momento. En sifón y baño maría a 60 °C, durante el servicio, con yemas pasteurizadas.",
+    "pro": "Ten el líquido reducido y las yemas pesadas en mise en place. Para servicio largo, sabayón en sifón al baño maría a 60 °C y salamandra caliente.",
+    "related": [
+      "holandesa",
+      "bearnesa",
+      "puntos-del-huevo",
+      "gratinado",
+      "espumas-con-sifon",
+      "emulsiones"
+    ]
   }
 ]

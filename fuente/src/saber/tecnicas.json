@@ -3266,5 +3266,1311 @@
    "asado-de-verduras",
    "cortes-de-vacuno"
   ]
+ },
+ {
+  "id": "marinados-en-seco",
+  "name": "Marinados y adobos en seco",
+  "name_en": "Dry brines and rubs",
+  "cat": "tecnicas",
+  "group": "Conservar y transformar",
+  "technique": "curado",
+  "aka": [
+   "salado en seco",
+   "salmuera seca",
+   "dry brine",
+   "rub",
+   "aliño seco",
+   "mezcla de especias para carne",
+   "adobo seco"
+  ],
+  "summary": "Sal y especias sobre la pieza, sin líquido: sazona por dentro, seca la piel y deja una superficie lista para dorar.",
+  "what": "El marinado en seco consiste en cubrir la pieza con sal, a veces azúcar, y especias o hierbas secas, y dejarla en la cámara sin tapar. La sal primero saca jugo a la superficie, luego se disuelve en él y vuelve a entrar en la carne, sazonándola hacia dentro. Mientras, el aire de la cámara seca la piel. El resultado es una carne mejor sazonada y jugosa y una superficie seca que dora y cruje mucho mejor.\n\nA diferencia de la [[salmuera]], no añade agua ni ocupa espacio; a diferencia del [[adobo]], no lleva pasta húmeda. Sirve para aves, cerdo, cordero, piezas de vacuno y también pescados grasos, con tiempos más cortos.",
+  "method": [
+   "Pesa la pieza y calcula la sal por kilo; mezcla con azúcar, especias molidas o hierbas secas.",
+   "Seca la superficie con papel y reparte la mezcla de forma uniforme, más en las zonas gruesas.",
+   "Coloca sobre rejilla en bandeja, sin tapar, en la cámara.",
+   "Deja el tiempo según el grosor; las piezas grandes, de un día para otro o más.",
+   "No laves antes de cocinar: seca con papel si hay humedad y cocina. Si la mezcla lleva azúcar, cuidado con el fuego directo."
+  ],
+  "ratios": [
+   {
+    "use": "Ave entera",
+    "ratio": "10–12 g de sal por kg, 24–48 horas",
+    "note": "Sin tapar, para piel crujiente."
+   },
+   {
+    "use": "Piezas de cerdo o cordero",
+    "ratio": "12–15 g de sal por kg, 12–24 horas",
+    "note": "Especias al gusto."
+   },
+   {
+    "use": "Pescado graso en lomo",
+    "ratio": "8–10 g de sal por kg, 30–60 minutos",
+    "note": "Para afirmar antes de la brasa."
+   },
+   {
+    "use": "Mezcla con azúcar",
+    "ratio": "Sal y azúcar moreno 2:1",
+    "note": "Más especias; fuego indirecto para no quemar."
+   }
+  ],
+  "variants": [
+   {
+    "id": "salmuera",
+    "name": "Salmuera húmeda",
+    "note": "Para piezas magras que piden más jugosidad."
+   },
+   {
+    "id": "adobo",
+    "name": "Adobo",
+    "note": "Pasta húmeda con pimentón y vinagre."
+   },
+   {
+    "id": "sales-aromaticas",
+    "name": "Sales aromáticas",
+    "note": "Sal con hierbas, cítricos o especias."
+   },
+   {
+    "id": "pastas-de-especias",
+    "name": "Pastas de especias",
+    "note": "Cuando se quiere una capa húmeda e intensa."
+   }
+  ],
+  "keys": [
+   "Pesa: la sal por kilo da resultados iguales cada vez.",
+   "Rejilla y sin tapar: la piel seca es piel crujiente.",
+   "Tiempo suficiente: tras sacar jugo, la sal necesita horas para volver a entrar.",
+   "Azúcar en la mezcla, fuego más suave.",
+   "Especias tostadas y recién molidas dan más aroma."
+  ],
+  "errors": [
+   {
+    "p": "Carne salada en exceso",
+    "fix": "Demasiada sal o tiempo. Pesa la sal y acorta el reposo en piezas finas."
+   },
+   {
+    "p": "Superficie quemada en la brasa",
+    "fix": "Azúcar o especias finas a fuego directo. Cocina en indirecto y dora al final."
+   },
+   {
+    "p": "Piel blanda",
+    "fix": "Pieza tapada o húmeda. Déjala sin tapar en la cámara y seca antes de cocinar."
+   }
+  ],
+  "history": "Salar la carne antes de cocinarla es una costumbre antigua de muchas cocinas. Las mezclas secas de especias para la brasa tienen tradición en el Magreb, en Oriente Medio y en las cocinas de barbacoa de América.",
+  "uses": [
+   "Aves asadas",
+   "Carnes de brasa",
+   "Piezas grandes de horno",
+   "Pescado graso antes de marcar"
+  ],
+  "keep": "La mezcla seca, semanas en bote cerrado. Las piezas marinadas, hasta 2 días en frío sobre rejilla.",
+  "pro": "Ten las mezclas preparadas y etiquetadas, con gramos por kilo escritos. Marina la víspera según las reservas y anota la hora en la bandeja.",
+  "related": [
+   "salmuera",
+   "adobo",
+   "sales-aromaticas",
+   "especias",
+   "pollo-y-aves",
+   "asado-al-horno",
+   "fuego-y-brasa"
+  ]
+ },
+ {
+  "id": "escabechado",
+  "name": "Escabechado",
+  "name_en": "Making escabeche",
+  "cat": "tecnicas",
+  "group": "Conservar y transformar",
+  "technique": "escabeche",
+  "aka": [
+   "escabechar",
+   "en escabeche",
+   "técnica del escabeche",
+   "escabeche templado",
+   "escabeche de caza",
+   "escabeche de pescado"
+  ],
+  "summary": "Cocinar el producto, cubrirlo con el escabeche a la temperatura justa y dejar que repose hasta que se equilibre.",
+  "what": "El [[escabeche]] es la preparación (aceite, vinagre, aromáticos y especias); escabechar es el proceso. Se cocina primero el producto, casi siempre marcado, frito o confitado, y se cubre con el escabeche caliente o templado. Con el reposo, el vinagre y el aceite entran en la pieza, la sazonan, la afirman y alargan su vida en frío.\n\nLa clave está en tres decisiones: cuánto se cocina el producto antes, a qué temperatura entra el escabeche y cuánto tiempo reposa. Un pescado delicado se cubre con escabeche templado y casi crudo; una perdiz se cocina en él. Funciona con pescado azul, aves, caza, mejillones, setas y verduras.",
+  "method": [
+   "Prepara el escabeche: aceite con ajos, cebolla y especias, pochado a fuego suave; añade vinagre y agua o vino, y hierve 5 minutos.",
+   "Pescado: sala, enharina si quieres, y fríe o marca solo hasta que esté casi hecho; colócalo en un recipiente.",
+   "Cubre el pescado con el escabeche templado; las carnes y la caza se terminan de cocinar dentro del escabeche a fuego suave.",
+   "Deja reposar en frío al menos 24 horas para que se equilibre.",
+   "Sirve templado o a temperatura ambiente: el frío de la cámara apaga el sabor y endurece el aceite."
+  ],
+  "ratios": [
+   {
+    "use": "Pescado en lomos",
+    "ratio": "Escabeche a 60–70 °C",
+    "note": "Pescado casi hecho; terminará con el calor."
+   },
+   {
+    "use": "Aves y caza",
+    "ratio": "Cocción en el escabeche, 30–60 minutos",
+    "note": "Según tamaño; fuego suave."
+   },
+   {
+    "use": "Mejillones",
+    "ratio": "Abiertos al vapor y cubiertos en caliente",
+    "note": "Sin concha."
+   },
+   {
+    "use": "Reposo",
+    "ratio": "24 horas mínimo en frío",
+    "note": "Mejor a los 2–3 días."
+   }
+  ],
+  "variants": [
+   {
+    "id": "escabeche",
+    "name": "La preparación",
+    "note": "Proporciones de aceite, vinagre y aromáticos."
+   },
+   {
+    "id": "pescado-azul",
+    "name": "Caballa o sardina en escabeche",
+    "note": "El escabeche más clásico de pescado."
+   },
+   {
+    "id": "caza-de-pluma",
+    "name": "Perdiz o codorniz en escabeche",
+    "note": "Cocinadas dentro."
+   },
+   {
+    "id": "mejillon-y-almeja",
+    "name": "Mejillones en escabeche",
+    "note": "Abiertos al vapor."
+   }
+  ],
+  "keys": [
+   "Producto casi hecho: el escabeche termina la cocción.",
+   "Temperatura del escabeche según el producto: templado para pescado, caliente para carne.",
+   "Reposo de al menos un día.",
+   "Servir templado: el aceite frío se endurece y el sabor se apaga.",
+   "Cubierto siempre, sin piezas al aire."
+  ],
+  "errors": [
+   {
+    "p": "Pescado seco y deshecho",
+    "fix": "Demasiado cocinado antes o escabeche hirviendo. Cocina menos y cubre templado."
+   },
+   {
+    "p": "Demasiado ácido",
+    "fix": "Mucho vinagre o poco reposo. Equilibra con agua o vino y espera un día más."
+   },
+   {
+    "p": "Sabor plano",
+    "fix": "Aromáticos poco pochados o especias sin tostar. Pocha despacio y tuesta las especias."
+   }
+  ],
+  "history": "El escabeche es una técnica antigua de conservación en el Mediterráneo, presente en la cocina de la península desde la Edad Media, y viajó a América, donde dio lugar a muchas variantes.",
+  "uses": [
+   "Pescado azul",
+   "Aves y caza",
+   "Mejillones",
+   "Setas y verduras",
+   "Entrantes templados"
+  ],
+  "keep": "Cubierto y en frío, 1–2 semanas según el producto. Siempre con utensilios limpios al sacar raciones.",
+  "pro": "Escabecha en tandas dos o tres días antes de usar. Saca las raciones a templar antes del servicio. Etiqueta con fecha de elaboración.",
+  "related": [
+   "escabeche",
+   "pescado-azul",
+   "caza-de-pluma",
+   "mejillon-y-almeja",
+   "encurtidos-rapidos",
+   "conservas-en-aceite",
+   "acidez-en-cocina"
+  ]
+ },
+ {
+  "id": "vacio-de-verduras-y-frutas",
+  "name": "Cocción al vacío de verduras y frutas",
+  "name_en": "Sous vide vegetables and fruit",
+  "cat": "tecnicas",
+  "group": "Verduras",
+  "technique": "bajatemp",
+  "aka": [
+   "verduras al vacío",
+   "sous vide de verduras",
+   "fruta comprimida",
+   "impregnación al vacío",
+   "sandía comprimida",
+   "zanahoria al vacío"
+  ],
+  "summary": "Verduras cocidas en bolsa a temperatura exacta, con todo su sabor; y frutas comprimidas o impregnadas en frío.",
+  "what": "Las verduras se ablandan cuando la pectina que une sus células se rompe, algo que empieza a pasar hacia 83–85 °C. Por eso, al contrario que la carne, al vacío se cocinan a esa temperatura o algo más. En la bolsa no pierden sabor ni color en el agua, se cocinan igual de borde a borde y se pueden cocinar con grasa, sal y aromáticos.\n\nCon las frutas se usa sobre todo el vacío en frío: en una máquina de campana, el aire de dentro de la fruta sale y se colapsa, la textura se vuelve más densa y translúcida (fruta comprimida) y, si se añade un líquido, entra en la fruta (impregnación).",
+  "method": [
+   "Corta la verdura en piezas de tamaño igual; añade sal, un poco de grasa y aromáticos secos o enteros.",
+   "Envasa en una sola capa, al vacío completo, y cocina en baño a la temperatura indicada.",
+   "Comprueba el punto apretando la bolsa o abriendo una de prueba.",
+   "Enfría en agua con hielo si no se sirve al momento; al pedido, abre y marca, glasea o asa.",
+   "Frutas: córtalas, ponlas en bolsa (con líquido si quieres impregnar) y pásalas por la máquina de campana una o varias veces, sin calor."
+  ],
+  "ratios": [
+   {
+    "use": "Zanahoria",
+    "ratio": "85 °C, 45–60 minutos",
+    "note": "En bastones o enteras pequeñas."
+   },
+   {
+    "use": "Remolacha",
+    "ratio": "85 °C, 1,5–2 horas",
+    "note": "En gajos, sin pelar o pelada."
+   },
+   {
+    "use": "Puerro y cebolla",
+    "ratio": "85 °C, 30–45 minutos",
+    "note": "Melosos y enteros."
+   },
+   {
+    "use": "Fruta comprimida",
+    "ratio": "1–3 ciclos de vacío en frío",
+    "note": "Sandía, melón, piña, manzana."
+   }
+  ],
+  "variants": [
+   {
+    "id": "baja-temperatura",
+    "name": "Baja temperatura",
+    "note": "El mismo equipo para carnes y pescados."
+   },
+   {
+    "id": "glaseado-de-verduras",
+    "name": "Glaseado final",
+    "note": "Verdura de bolsa glaseada al pedido."
+   },
+   {
+    "id": "verduras-a-la-brasa",
+    "name": "Terminada en brasa",
+    "note": "Precocida en bolsa y marcada."
+   },
+   {
+    "id": "frutas-en-almibar",
+    "name": "Fruta impregnada",
+    "note": "Con almíbar o zumo en la bolsa."
+   }
+  ],
+  "keys": [
+   "Las verduras piden 83–85 °C: más bajo no se ablandan.",
+   "Piezas iguales y una sola capa.",
+   "Poca grasa y sal en la bolsa; nada de líquido abundante.",
+   "Ajo, hierbas frescas o cebolla cruda al vacío y en frío: usar pronto, por seguridad.",
+   "La fruta comprimida se sirve el mismo día."
+  ],
+  "errors": [
+   {
+    "p": "Verdura dura tras horas",
+    "fix": "Baño por debajo de 83 °C. Sube a 85 °C."
+   },
+   {
+    "p": "Bolsa que flota y cocción desigual",
+    "fix": "Gases de la verdura o aire. Envasa bien y sujeta con peso."
+   },
+   {
+    "p": "Fruta comprimida aguada",
+    "fix": "Demasiados ciclos o fruta muy madura. Usa fruta firme y menos ciclos."
+   }
+  ],
+  "history": "La cocción al vacío se extendió en la cocina profesional desde finales del siglo XX. La compresión de frutas con máquina de campana es una técnica de la cocina moderna de las últimas décadas.",
+  "uses": [
+   "Guarniciones regulares en servicio",
+   "Verduras para marcar en brasa",
+   "Frutas comprimidas para crudos y postres",
+   "Impregnaciones con almíbares o zumos"
+  ],
+  "keep": "Verduras cocidas y enfriadas en su bolsa cerrada, 3–5 días a 0–3 °C. Fruta comprimida, el mismo día.",
+  "pro": "Cocina las verduras por tandas, enfría en hielo y etiqueta. Al pedido, solo abrir y terminar. Mantén los baños con temperaturas fijas para no reajustar en servicio.",
+  "related": [
+   "baja-temperatura",
+   "glaseado-de-verduras",
+   "verduras-a-la-brasa",
+   "asado-de-verduras",
+   "frutas-en-almibar",
+   "escaldado-de-verduras"
+  ]
+ },
+ {
+  "id": "reposos-y-regeneracion",
+  "name": "Reposos, enfriado y regeneración",
+  "name_en": "Resting, chilling and reheating",
+  "cat": "tecnicas",
+  "group": "Calor y punto",
+  "aka": [
+   "reposar",
+   "reposo de la carne",
+   "abatir",
+   "abatidor",
+   "enfriado rápido",
+   "regenerar",
+   "recalentar",
+   "mantener en caliente"
+  ],
+  "summary": "Lo que pasa después del fuego: reposar para que la carne retenga el jugo, enfriar rápido y regenerar sin perder lo conseguido.",
+  "what": "La cocina no termina al apagar el fuego. Una pieza que sale del calor sigue subiendo de temperatura por dentro unos grados y, con el reposo, sus jugos se reparten y se pierde menos al cortarla. Lo que no se sirve al momento hay que enfriarlo deprisa para que pase poco tiempo en temperaturas templadas, donde crecen las bacterias, y regenerarlo después sin pasarlo de punto.\n\nRegenerar bien es devolver el plato a su temperatura de servicio sin cocinarlo más: los guisos, en su jugo y tapados; las piezas en bolsa, en un baño a su temperatura de servicio; los purés, en baño maría. Lo frito y lo crujiente, en cambio, casi siempre se hace al momento.",
+  "method": [
+   "Carne: saca unos grados antes del punto final y reposa sobre rejilla, en sitio templado, sin tapar del todo.",
+   "Enfriado: reparte en recipientes poco hondos y abate; sin abatidor, en baño de agua con hielo removiendo.",
+   "Tapa y etiqueta solo cuando esté frío.",
+   "Regenera según el producto: guisos y braseados tapados en su salsa a fuego suave o en horno; bolsas en baño; purés en baño maría con película.",
+   "Lleva lo regenerado a una temperatura segura en el centro y no lo regeneres más de una vez."
+  ],
+  "ratios": [
+   {
+    "use": "Reposo de carne",
+    "ratio": "Sube 2–5 °C tras sacar",
+    "note": "Más en piezas grandes y horno fuerte."
+   },
+   {
+    "use": "Enfriado rápido",
+    "ratio": "De 60 °C a menos de 10 °C en 2 horas",
+    "note": "Recipientes poco hondos."
+   },
+   {
+    "use": "Mantener en caliente",
+    "ratio": "65 °C o más",
+    "note": "Guisos, salsas, purés."
+   },
+   {
+    "use": "Regenerar en bolsa",
+    "ratio": "Baño a la temperatura de servicio",
+    "note": "Pieza fina 15–20 minutos; gruesa, más."
+   }
+  ],
+  "variants": [
+   {
+    "id": "sellado-y-reposo",
+    "name": "Sellado y reposo",
+    "note": "El reposo de las piezas medianas."
+   },
+   {
+    "id": "baja-temperatura",
+    "name": "Baja temperatura",
+    "note": "Producción por adelantado en bolsa."
+   },
+   {
+    "id": "braseado",
+    "name": "Braseados",
+    "note": "Se hacen la víspera y mejoran al regenerar."
+   },
+   {
+    "id": "lacado-de-carnes",
+    "name": "Lacado al regenerar",
+    "note": "Para dar brillo y costra al final."
+   }
+  ],
+  "keys": [
+   "El reposo es parte de la cocción: cuéntalo en el tiempo.",
+   "Rejilla para reposar: la costra no se ablanda.",
+   "Enfriar rápido y en poca altura.",
+   "Regenerar no es cocinar otra vez: calienta hasta servicio, no más.",
+   "Una sola regeneración por producto."
+  ],
+  "errors": [
+   {
+    "p": "Carne pasada tras el reposo",
+    "fix": "Se sacó en el punto final. Saca 3–5 °C antes."
+   },
+   {
+    "p": "Guiso agrio o con burbujas tras unos días",
+    "fix": "Enfriado lento en olla honda. Reparte en bandejas y abate."
+   },
+   {
+    "p": "Pieza regenerada seca",
+    "fix": "Recalentada sin jugo o demasiado fuerte. Tapa, añade su jugo y baja el calor."
+   }
+  ],
+  "history": "Dejar reposar el asado antes de trinchar es una práctica clásica. El abatidor de temperatura y la producción por adelantado en frío se generalizaron en la cocina profesional en las últimas décadas.",
+  "uses": [
+   "Piezas asadas y a la brasa",
+   "Guisos y braseados",
+   "Producción en bolsa",
+   "Purés y salsas",
+   "Banquetes y servicios grandes"
+  ],
+  "keep": "Lo abatido y etiquetado, 3–5 días en frío según el producto; congelado, más. Lo regenerado que sobra no se vuelve a guardar.",
+  "pro": "Planifica la producción hacia atrás: cocinar, abatir, etiquetar, regenerar. Ten baños de regeneración a temperatura fija durante el servicio.",
+  "related": [
+   "sellado-y-reposo",
+   "punto-de-la-carne",
+   "baja-temperatura",
+   "braseado",
+   "asado-al-horno",
+   "jugo-de-carne"
+  ]
+ },
+ {
+  "id": "rebozados-y-empanados",
+  "name": "Rebozados y empanados",
+  "name_en": "Batters and breadcrumb coatings",
+  "cat": "tecnicas",
+  "group": "Calor y punto",
+  "technique": "tempura",
+  "aka": [
+   "rebozar",
+   "empanar",
+   "a la romana",
+   "empanado",
+   "pan rallado",
+   "panko",
+   "masa de cerveza",
+   "orly",
+   "harina, huevo y pan"
+  ],
+  "summary": "Una capa que protege el producto en la fritura y se vuelve crujiente: harina, huevo, pan o una masa ligera.",
+  "what": "Rebozar es cubrir un producto con una capa que, al freírse, forma una costra y protege el interior, que se cocina en su propio vapor. Hay dos familias. En el empanado, la capa se monta por pasos: harina para secar, huevo para pegar y pan rallado para el crujiente. En el rebozado, el producto se pasa por harina y huevo (a la romana) o se baña en una masa líquida, como la de cerveza o la [[tempura]].\n\nEl pan rallado fino da una costra compacta; el panko, en escamas, una costra más aireada y crujiente. Las masas con gas o muy frías quedan más ligeras.",
+  "method": [
+   "Seca muy bien el producto y sálalo justo antes.",
+   "Empanado: pasa por harina y sacude el exceso, luego por huevo batido con un poco de agua o leche, y por último por pan, apretando ligeramente.",
+   "Deja reposar el empanado 10–15 minutos en frío para que se asiente y no se despegue.",
+   "Masa de cerveza: mezcla la harina con la cerveza muy fría justo antes de usar, sin batir de más; deja algún grumo.",
+   "Fríe en aceite abundante a la temperatura justa, en tandas pequeñas, y escurre sobre rejilla, no sobre papel amontonado."
+  ],
+  "ratios": [
+   {
+    "use": "Fritura de empanados",
+    "ratio": "170–180 °C",
+    "note": "Piezas finas; las gruesas, terminar en horno."
+   },
+   {
+    "use": "Masa de cerveza",
+    "ratio": "100 g de harina por 150 ml de cerveza fría",
+    "note": "Sal y una pizca de levadura química opcional."
+   },
+   {
+    "use": "Huevo para empanar",
+    "ratio": "4 huevos con 50 ml de agua o leche",
+    "note": "Más fluido, capa más fina."
+   },
+   {
+    "use": "A la romana",
+    "ratio": "175–180 °C, 1–2 minutos",
+    "note": "Calamares, pescado, verduras."
+   }
+  ],
+  "variants": [
+   {
+    "id": "tempura",
+    "name": "Tempura",
+    "note": "Masa muy fría y ligera, apenas mezclada."
+   },
+   {
+    "id": "fritura",
+    "name": "Fritura",
+    "note": "Aceites y temperaturas."
+   },
+   {
+    "id": "cefalopodos",
+    "name": "Calamares a la romana",
+    "note": "Anillas rebozadas en harina y huevo."
+   },
+   {
+    "id": "bechamel",
+    "name": "Croquetas",
+    "note": "Masa de bechamel empanada."
+   }
+  ],
+  "keys": [
+   "Producto seco: la humedad despega la costra.",
+   "Sacude la harina: una capa fina y uniforme.",
+   "Masas frías y poco batidas: más crujientes.",
+   "Aceite a temperatura y tandas pequeñas.",
+   "Escurrir en rejilla para que no se ablande la base."
+  ],
+  "errors": [
+   {
+    "p": "Empanado que se despega",
+    "fix": "Producto húmedo o sin reposo. Seca, enharina bien y deja reposar en frío."
+   },
+   {
+    "p": "Rebozado aceitoso",
+    "fix": "Aceite frío o tandas grandes. Sube a 175–180 °C y fríe menos piezas."
+   },
+   {
+    "p": "Costra dorada y centro crudo",
+    "fix": "Pieza gruesa o aceite muy caliente. Baja un poco la temperatura o termina en horno."
+   },
+   {
+    "p": "Masa pesada",
+    "fix": "Batida de más o templada. Mezcla poco y con líquido muy frío."
+   }
+  ],
+  "history": "Rebozar y empanar son técnicas presentes en muchas cocinas europeas. En España, la fritura de pescado, los calamares a la romana, los empanados y las croquetas forman parte de la cocina de bar y de casa.",
+  "uses": [
+   "Pescados y mariscos",
+   "Verduras",
+   "Carnes finas",
+   "Croquetas y bocados",
+   "Calamares"
+  ],
+  "keep": "Los empanados crudos se pueden congelar en bandeja y freír sin descongelar si son finos. Las masas, al momento. Lo frito, al momento.",
+  "pro": "Monta una línea de empanado en orden: harina, huevo, pan, bandeja. Empana antes del servicio y guarda en frío. Fríe al pedido en freidora con la temperatura comprobada.",
+  "related": [
+   "fritura",
+   "tempura",
+   "cefalopodos",
+   "bechamel",
+   "crujientes-salados",
+   "pescado-azul"
+  ]
+ },
+ {
+  "id": "prensados-y-terrinas",
+  "name": "Prensados y terrinas",
+  "name_en": "Pressings and terrines",
+  "cat": "tecnicas",
+  "group": "Conservar y transformar",
+  "aka": [
+   "terrina",
+   "prensado",
+   "paté de campaña",
+   "terrina de campaña",
+   "patata prensada",
+   "milhojas de patata",
+   "carne prensada"
+  ],
+  "summary": "Dar forma con molde, peso y frío: bloques regulares de carne, verdura o patata que se porcionan limpios y se terminan al pedido.",
+  "what": "Prensar es poner un producto cocinado en un molde y cargarlo con peso mientras se enfría, para que quede compacto y se pueda cortar en bloques regulares. Se usa con carnes guisadas o en [[baja-temperatura]] (cochinillo, cuello de cordero, rabo, carrillera), con capas de verduras unidas con gelatina y con láminas de patata.\n\nUna terrina es una preparación cocinada en molde, a menudo una farsa de carne picada con grasa, especias y a veces hígado, que se cuece al baño maría en horno y se prensa después. Las dos técnicas sirven para producir por adelantado con un resultado muy regular.",
+  "method": [
+   "Forra el molde con film o papel, dejando que sobresalga para tapar y desmoldar.",
+   "Coloca el producto en capas, presionando para que no queden huecos; si es carne cocinada, añade un poco de su jugo reducido, que hace de pegamento.",
+   "Terrina de farsa: mezcla la carne picada, la grasa, la sal y las especias en frío, rellena el molde y hornea al baño maría hasta la temperatura del centro.",
+   "Tapa, pon encima una tabla o un molde igual con peso y deja en la cámara al menos 12 horas.",
+   "Desmolda, porciona con cuchillo caliente y limpio, y termina cada ración dorándola, glaseándola o sirviéndola fría."
+  ],
+  "ratios": [
+   {
+    "use": "Terrina de campaña",
+    "ratio": "2 partes de magro por 1 de grasa; 15–18 g de sal por kg",
+    "note": "Pimienta y especias al gusto."
+   },
+   {
+    "use": "Horneado de terrina",
+    "ratio": "150 °C al baño maría hasta 68–70 °C",
+    "note": "Sonda en el centro."
+   },
+   {
+    "use": "Peso para prensar",
+    "ratio": "1–2 kg por molde de 1 litro",
+    "note": "Repartido sobre una tabla."
+   },
+   {
+    "use": "Patata prensada",
+    "ratio": "160 °C, 1,5–2 horas",
+    "note": "Láminas de 1–2 mm con mantequilla clarificada."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cochinillo",
+    "name": "Cochinillo prensado",
+    "note": "Bloques con la piel para dorar."
+   },
+   {
+    "id": "casqueria",
+    "name": "Terrinas de casquería",
+    "note": "Manitas, morro, oreja."
+   },
+   {
+    "id": "gelificantes-y-espesantes",
+    "name": "Terrinas de verdura",
+    "note": "Capas unidas con gelatina o agar."
+   },
+   {
+    "id": "pato",
+    "name": "Terrina de pato",
+    "note": "Con su grasa y su hígado."
+   }
+  ],
+  "keys": [
+   "Prensar en frío y con peso repartido: bloques compactos y sin huecos.",
+   "El jugo reducido o la gelatina son el pegamento.",
+   "Sonda en las terrinas: el centro manda, no el tiempo.",
+   "Cuchillo caliente y limpio para cortes perfectos.",
+   "Sal un poco más alta en lo que se va a servir frío: el frío apaga el sabor."
+  ],
+  "errors": [
+   {
+    "p": "Bloque que se deshace al cortar",
+    "fix": "Poco peso o poco frío. Prensa más y al menos 12 horas."
+   },
+   {
+    "p": "Terrina seca y granulosa",
+    "fix": "Poca grasa o temperatura excesiva. Respeta la proporción y saca a 68–70 °C."
+   },
+   {
+    "p": "Terrina sosa en frío",
+    "fix": "Sal calculada para caliente. Prueba un poco de farsa cocinada y fría antes de llenar el molde."
+   }
+  ],
+  "history": "Las terrinas y patés son parte de la charcutería tradicional europea, sobre todo francesa. El prensado de carnes cocinadas para dorarlas en porciones se ha extendido en la cocina de restaurante de las últimas décadas.",
+  "uses": [
+   "Bloques de carne para el pase",
+   "Terrinas frías de entrante",
+   "Patata prensada de guarnición",
+   "Terrinas de verdura"
+  ],
+  "keep": "Prensados de carne, 4–5 días en frío bien envueltos; se congelan. Terrinas de farsa, 5–7 días en frío sin cortar; una vez abiertas, 2–3 días.",
+  "pro": "Prensa la víspera y porciona en frío por raciones pesadas. Guarda los bloques separados con papel. En el pase, sartén y horno para terminarlos.",
+  "related": [
+   "cochinillo",
+   "baja-temperatura",
+   "casqueria",
+   "gelificantes-y-espesantes",
+   "pato",
+   "braseado",
+   "reposos-y-regeneracion"
+  ]
+ },
+ {
+  "id": "maduracion-de-pescado",
+  "name": "Secado y maduración de pescado",
+  "name_en": "Dry-ageing fish",
+  "cat": "tecnicas",
+  "group": "Conservar y transformar",
+  "aka": [
+   "pescado madurado",
+   "maduración en seco de pescado",
+   "dry aged fish",
+   "secado de pescado",
+   "pescado colgado",
+   "piel seca"
+  ],
+  "summary": "Días en cámara fría y seca para que el pescado pierda agua, concentre el sabor y su piel quede lista para crujir.",
+  "what": "Madurar pescado es guardarlo, entero o en grandes piezas, en una cámara muy fría, seca y ventilada durante unos días antes de cocinarlo. Pierde agua de la superficie, la carne se vuelve más firme y a la vez más tierna, y el sabor se concentra y gana notas profundas. La piel, ya seca, queda muy crujiente en la brasa o la plancha.\n\nNo todo pescado sirve. Funciona mejor con piezas grandes y muy frescas, de carne firme: rodaballo, lubina, dorada grande, pescados de roca grandes, atún. Los pescados pequeños o muy delicados se estropean antes de mejorar. Es una técnica que exige limpieza absoluta y control del frío.",
+  "method": [
+   "Empieza con pescado del día, sin golpes, eviscerado con cuidado y sin restos de sangre.",
+   "Límpialo en seco: retira la sangre con papel y, si hace falta lavar, hazlo muy rápido y seca a fondo, también por dentro.",
+   "Colócalo colgado o sobre rejilla, sin tocar nada, en cámara dedicada o en una zona sin otros alimentos, con aire que circule.",
+   "Revisa cada día: olor limpio, superficie seca y firme. Si aparece olor fuerte o viscosidad, se descarta.",
+   "Antes de cocinar, recorta la capa exterior más seca de los lomos si hace falta y cocina la piel a fuego vivo."
+  ],
+  "ratios": [
+   {
+    "use": "Condiciones de cámara",
+    "ratio": "0–2 °C, aire seco y en movimiento",
+    "note": "Termómetro e higrómetro en la cámara."
+   },
+   {
+    "use": "Pescado blanco grande",
+    "ratio": "3–7 días",
+    "note": "Algunas piezas aguantan más; prueba día a día."
+   },
+   {
+    "use": "Pescado graso",
+    "ratio": "2–4 días",
+    "note": "Su grasa se oxida antes."
+   },
+   {
+    "use": "Pérdida de peso",
+    "ratio": "5–10 %",
+    "note": "Según tamaño y días."
+   }
+  ],
+  "variants": [
+   {
+    "id": "maduracion-de-carne",
+    "name": "Maduración de carne",
+    "note": "El mismo principio, con otros tiempos."
+   },
+   {
+    "id": "curado-de-pescado",
+    "name": "Curado",
+    "note": "Sal y azúcar en lugar de aire."
+   },
+   {
+    "id": "salazones-y-huevas",
+    "name": "Salazones y secados",
+    "note": "Mojama y botarga, la versión salada y larga."
+   },
+   {
+    "id": "gallo-y-rodaballo",
+    "name": "Rodaballo madurado",
+    "note": "Uno de los que más mejora."
+   }
+  ],
+  "keys": [
+   "Solo pescado excelente: la maduración no arregla un producto mediocre.",
+   "Seco por dentro y por fuera: el agua es la enemiga.",
+   "Frío estable y aire que circule.",
+   "Higiene total: rejillas, ganchos y cámara limpios y dedicados.",
+   "Prueba cocinando un trozo cada día para encontrar el punto de cada especie."
+  ],
+  "errors": [
+   {
+    "p": "Olor fuerte o superficie pegajosa",
+    "fix": "Humedad, temperatura alta o pescado no fresco. Descarta y revisa cámara y origen."
+   },
+   {
+    "p": "Piel que se pega y no cruje",
+    "fix": "Superficie aún húmeda. Más días de secado o cámara más ventilada."
+   },
+   {
+    "p": "Carne demasiado seca por fuera",
+    "fix": "Aire muy fuerte o demasiados días. Recorta la capa exterior y acorta el tiempo."
+   }
+  ],
+  "history": "Dejar reposar el pescado antes de comerlo tiene tradición en Japón, donde muchos pescados para crudo se sirven tras unos días. La maduración en seco en cámaras, a la manera de la carne, se ha difundido en restaurantes de todo el mundo en los últimos años.",
+  "uses": [
+   "Pescado entero a la brasa",
+   "Lomos con piel crujiente",
+   "Crudos de piezas grandes",
+   "Platos de producto"
+  ],
+  "keep": "Durante la maduración, a 0–2 °C. Una vez porcionado, 1–2 días en frío; la piel se cocina siempre al momento.",
+  "pro": "Etiqueta cada pieza con fecha de entrada y peso, y anota los días y el resultado de cada especie. No mezcles en la misma cámara con productos húmedos o de olor fuerte.",
+  "related": [
+   "maduracion-de-carne",
+   "pescado-entero",
+   "curado-de-pescado",
+   "gallo-y-rodaballo",
+   "dorada-y-lubina",
+   "fuego-y-brasa"
+  ]
+ },
+ {
+  "id": "ahumado-con-hierbas",
+  "name": "Ahumado con hierbas y sarmientos",
+  "name_en": "Smoking with herbs and vine cuttings",
+  "cat": "tecnicas",
+  "group": "Conservar y transformar",
+  "technique": "ahumado",
+  "aka": [
+   "sarmientos",
+   "ahumar con romero",
+   "humo de hierbas",
+   "llamarada",
+   "ahumado al momento",
+   "campana de humo",
+   "ahumado con paja"
+  ],
+  "summary": "Humo corto y aromático de sarmientos, hierbas secas, hojas o paja: perfume al final de la cocción, no un ahumado largo.",
+  "what": "Además de la madera, se puede ahumar con materiales que arden rápido y dan un humo muy aromático: sarmientos de vid, ramas secas de romero, tomillo o hinojo, hojas de higuera o parra secas, paja o heno. Su humo dura poco, así que no sirve para ahumados largos como los del [[ahumado]] clásico, sino para perfumar en el último momento.\n\nSe usa de varias formas: una llamarada de sarmientos bajo la parrilla para terminar chuletas o pescados; un puñado de hierbas sobre la brasa con la pieza tapada; un recipiente cerrado lleno de humo para servir en la mesa; o una pistola de humo para crudos, salsas y aceites.",
+  "method": [
+   "Usa material seco, sin tratar y de origen conocido; nada de maderas resinosas, pintadas o tratadas.",
+   "Sarmientos: prende un manojo seco bajo la parrilla; cuando la llama baje y quede brasa viva, cocina encima chuletas, pescado o verduras.",
+   "Hierbas sobre brasa: pon la pieza casi hecha, echa las ramas secas sobre las brasas y tapa 1–3 minutos.",
+   "En frío: llena de humo de hierbas un recipiente o campana con la pieza dentro y deja 2–5 minutos.",
+   "Abre el recipiente delante del comensal para que el humo forme parte del servicio."
+  ],
+  "ratios": [
+   {
+    "use": "Hierbas sobre brasa",
+    "ratio": "Un puñado, 1–3 minutos tapado",
+    "note": "Al final de la cocción."
+   },
+   {
+    "use": "Campana de humo",
+    "ratio": "2–5 minutos",
+    "note": "Crudos, quesos, mantequillas, cócteles."
+   },
+   {
+    "use": "Sarmientos",
+    "ratio": "1 manojo seco por parrilla de raciones",
+    "note": "Cocinar cuando ceda la llama."
+   },
+   {
+    "use": "Ahumado de aceite o mantequilla",
+    "ratio": "5–10 minutos en recipiente cerrado",
+    "note": "Remover a mitad."
+   }
+  ],
+  "variants": [
+   {
+    "id": "ahumado",
+    "name": "Ahumado en frío y en caliente",
+    "note": "Con madera, para ahumados largos."
+   },
+   {
+    "id": "fuego-y-brasa",
+    "name": "Brasa",
+    "note": "Combustibles y zonas de calor."
+   },
+   {
+    "id": "grasas-infusionadas",
+    "name": "Grasas ahumadas",
+    "note": "Aceite o mantequilla con humo de hierbas."
+   },
+   {
+    "id": "coccion-en-hoja-y-ceniza",
+    "name": "Hoja y ceniza",
+    "note": "Otra forma de aromatizar con el fuego."
+   }
+  ],
+  "keys": [
+   "Humo corto y al final: estos materiales amargan si se insiste.",
+   "Material seco, sin tratar y limpio.",
+   "Humo blanco y ligero, nunca negro y espeso.",
+   "Tapar concentra el aroma; abrir en la mesa lo regala.",
+   "Combina el humo con el plato: romero con cordero, hinojo con pescado, higuera con queso o postre."
+  ],
+  "errors": [
+   {
+    "p": "Sabor amargo o a quemado",
+    "fix": "Demasiado tiempo o humo negro. Acorta y deja que el material prenda bien antes de tapar."
+   },
+   {
+    "p": "Apenas sabe a humo",
+    "fix": "Material húmedo o tiempo muy corto. Sécalo bien y tapa la pieza."
+   },
+   {
+    "p": "Hollín sobre la pieza",
+    "fix": "Llama directa con la pieza encima. Cocina cuando la llama baje."
+   }
+  ],
+  "history": "Asar chuletas sobre sarmientos es una costumbre de las zonas de viñedo de la península. Perfumar la brasa con ramas de hierbas del monte es una práctica popular en todo el Mediterráneo.",
+  "uses": [
+   "Chuletas y carnes a la brasa",
+   "Pescados y mariscos",
+   "Crudos y quesos",
+   "Mantequillas y aceites",
+   "Servicio en sala con campana"
+  ],
+  "keep": "Sarmientos y hierbas secas, meses en lugar seco y ventilado. Las grasas ahumadas, 1–2 semanas en frío.",
+  "pro": "Ten manojos de sarmiento y ramas secas preparados y en seco junto a la brasa. En sala, campanas limpias y listas.",
+  "related": [
+   "ahumado",
+   "fuego-y-brasa",
+   "hierbas-frescas",
+   "grasas-infusionadas",
+   "coccion-en-hoja-y-ceniza",
+   "cordero"
+  ]
+ },
+ {
+  "id": "punto-de-las-verduras",
+  "name": "Punto de las verduras",
+  "name_en": "Cooking vegetables to the right point",
+  "cat": "tecnicas",
+  "group": "Verduras",
+  "technique": "hervido",
+  "aka": [
+   "punto de cocción de verduras",
+   "al dente",
+   "verduras crujientes",
+   "cocer verduras",
+   "verdura tierna",
+   "color verde"
+  ],
+  "summary": "Del crujiente al meloso: elegir la textura que pide el plato y controlar agua, sal, ácido y tiempo para conseguirla.",
+  "what": "Una verdura puede servirse cruda, crujiente, al dente, tierna, melosa o en puré, y cada punto pide una cocción distinta. Lo que cambia es la pectina que une las células: el calor la rompe y la verdura se ablanda. El ácido frena ese ablandamiento (por eso las verduras con tomate o vinagre tardan más) y un medio alcalino lo acelera.\n\nEl color también cuenta. Las verdes conservan su color en agua abundante, con sal y destapadas, y cortando la cocción en agua con hielo; con ácido o cocción larga se vuelven verde oliva. Las raíces se cuecen mejor desde agua fría para que se hagan por igual de fuera a dentro.",
+  "method": [
+   "Decide la textura según el plato: crujiente para frescor, tierna para guarnición, melosa para dar cuerpo.",
+   "Verduras verdes: agua abundante hirviendo con sal, destapadas y por tandas para que no pare el hervor.",
+   "Raíces y tubérculos: desde agua fría con sal, a fuego medio, para que el centro y el borde se hagan a la vez.",
+   "Comprueba con la punta de un cuchillo y probando: no por tiempo.",
+   "Si no se sirve enseguida, corta la cocción en agua con hielo y escurre bien."
+  ],
+  "ratios": [
+   {
+    "use": "Agua para verdes",
+    "ratio": "10 g de sal por litro, 10 litros por kg",
+    "note": "Mucha agua para que no pare el hervor."
+   },
+   {
+    "use": "Judía verde al dente",
+    "ratio": "4–6 minutos",
+    "note": "Según grosor."
+   },
+   {
+    "use": "Zanahoria en bastones tierna",
+    "ratio": "8–10 minutos desde agua fría",
+    "note": "Bastones de 1 cm."
+   },
+   {
+    "use": "Brócoli en ramilletes",
+    "ratio": "2–3 minutos",
+    "note": "Crujiente; 4–5 para tierno."
+   }
+  ],
+  "variants": [
+   {
+    "id": "escaldado-de-verduras",
+    "name": "Escaldado",
+    "note": "Cocción breve para preparar la verdura."
+   },
+   {
+    "id": "verduras-al-vapor",
+    "name": "Al vapor",
+    "note": "Menos pérdida de sabor."
+   },
+   {
+    "id": "glaseado-de-verduras",
+    "name": "Glaseado",
+    "note": "Punto y brillo a la vez."
+   },
+   {
+    "id": "vacio-de-verduras-y-frutas",
+    "name": "Al vacío",
+    "note": "Punto exacto y regular."
+   }
+  ],
+  "keys": [
+   "Cada plato su textura: decídela antes de cocinar.",
+   "Corte regular, punto regular.",
+   "Verdes en agua abundante, destapadas y cortadas en hielo.",
+   "El ácido endurece: añade el tomate o el vinagre cuando la verdura ya esté tierna.",
+   "Prueba siempre: el tiempo es orientativo."
+  ],
+  "errors": [
+   {
+    "p": "Verde apagado o marrón",
+    "fix": "Tapadas, poca agua, ácido o demasiado tiempo. Agua abundante, destapadas y corte en hielo."
+   },
+   {
+    "p": "Blandas por fuera y duras por dentro",
+    "fix": "Raíces echadas en agua hirviendo o piezas desiguales. Desde agua fría y corte regular."
+   },
+   {
+    "p": "Verdura que no se ablanda en el guiso",
+    "fix": "El ácido la frena. Cuécela antes de añadir tomate o vinagre."
+   }
+  ],
+  "history": "La preferencia por verduras crujientes o muy cocidas ha cambiado con las épocas y las cocinas. La cocina moderna tiende a puntos más cortos y precisos, pero los guisos tradicionales siguen buscando verduras melosas.",
+  "uses": [
+   "Guarniciones",
+   "Ensaladas de verdura cocida",
+   "Bases de guisos",
+   "Purés y cremas",
+   "Verdura para marcar después"
+  ],
+  "keep": "Escaldadas y frías, 2–3 días en frío, bien escurridas y tapadas con papel. Regenerar en mantequilla o aceite, sin volver a cocer.",
+  "pro": "Escalda por tandas antes del servicio, enfría en hielo y guarda por raciones. Al pedido, solo calentar y aliñar. Fichas de tiempos por corte y verdura en la partida.",
+  "related": [
+   "escaldado-de-verduras",
+   "verduras-al-vapor",
+   "glaseado-de-verduras",
+   "vacio-de-verduras-y-frutas",
+   "pures-de-verdura",
+   "cortes-de-cuchillo"
+  ]
+ },
+ {
+  "id": "cortes-de-cuchillo",
+  "name": "Cortes de cuchillo básicos",
+  "name_en": "Basic knife cuts",
+  "cat": "tecnicas",
+  "group": "Verduras",
+  "aka": [
+   "juliana",
+   "brunoise",
+   "macedonia",
+   "paisana",
+   "chiffonade",
+   "concassé",
+   "bastón",
+   "torneado",
+   "cortes de verdura"
+  ],
+  "summary": "Los cortes clásicos y sus medidas: un corte regular hace una cocción regular y un plato limpio.",
+  "what": "Cortar bien no es solo una cuestión de aspecto: piezas del mismo tamaño se cocinan al mismo tiempo, y el tamaño del corte decide cuánto tarda y qué textura tiene la verdura. Por eso la cocina clásica tiene nombres y medidas para los cortes más usados.\n\nLa juliana son tiras finas; la brunoise, dados muy pequeños; la macedonia, dados medianos; la paisana, láminas finas de forma irregular; el bastón, tiras gruesas; la chiffonade, hojas enrolladas y cortadas en hilos; el concassé, tomate pelado y sin semillas en dados. Antes de todos ellos está la técnica: cuchillo afilado, tabla estable y la mano que sujeta en forma de garra.",
+  "method": [
+   "Afila y asienta el cuchillo antes de empezar; pon un paño húmedo bajo la tabla para que no se mueva.",
+   "Sujeta con la mano en garra: las yemas hacia dentro y los nudillos guían la hoja.",
+   "Haz la pieza estable: corta una cara plana y apóyala sobre ella.",
+   "Corta primero en láminas del grosor buscado, luego en tiras (juliana o bastón) y, cruzando, en dados (brunoise o macedonia).",
+   "Guarda los recortes para caldos, purés o sofritos."
+  ],
+  "ratios": [
+   {
+    "use": "Juliana",
+    "ratio": "1–2 mm de grosor, 4–5 cm de largo",
+    "note": "Cebolla, puerro, pimiento, zanahoria."
+   },
+   {
+    "use": "Brunoise",
+    "ratio": "Dados de 1–3 mm",
+    "note": "Para salsas, sofritos finos y acabados."
+   },
+   {
+    "use": "Macedonia",
+    "ratio": "Dados de 5–6 mm",
+    "note": "Guarniciones y ensaladillas."
+   },
+   {
+    "use": "Bastón",
+    "ratio": "1 cm de sección, 5–6 cm de largo",
+    "note": "Patatas, crudités."
+   }
+  ],
+  "variants": [
+   {
+    "id": "mirepoix",
+    "name": "Mirepoix",
+    "note": "Corte grueso de aromáticos para fondos."
+   },
+   {
+    "id": "sofrito",
+    "name": "Brunoise para sofrito",
+    "note": "Cuanto más fino, más rápido y más fundido."
+   },
+   {
+    "id": "hierbas-frescas",
+    "name": "Chiffonade",
+    "note": "Hierbas de hoja grande sin machacarlas."
+   },
+   {
+    "id": "tomate",
+    "name": "Concassé",
+    "note": "Tomate escaldado, pelado y en dados."
+   }
+  ],
+  "keys": [
+   "Cuchillo afilado: corta mejor y es más seguro que uno romo.",
+   "Mano en garra siempre.",
+   "Una cara plana antes de empezar: la pieza no rueda.",
+   "Corte regular, cocción regular.",
+   "Los recortes no se tiran."
+  ],
+  "errors": [
+   {
+    "p": "Cebolla que llora y se aplasta",
+    "fix": "Cuchillo sin filo. Afila: el corte limpio rompe menos células."
+   },
+   {
+    "p": "Piezas que se hacen a destiempo",
+    "fix": "Corte irregular. Ajusta el grosor de las láminas antes de cortar tiras y dados."
+   },
+   {
+    "p": "Hierbas negras tras cortarlas",
+    "fix": "Machacadas con un cuchillo romo o cortadas mucho antes. Corta al momento y con filo."
+   }
+  ],
+  "history": "Los nombres de los cortes clásicos vienen en buena parte de la cocina francesa, que los ordenó y les puso medidas. Muchas cocinas tienen sus propios cortes; la japonesa, por ejemplo, tiene una tradición de corte muy precisa.",
+  "uses": [
+   "Sofritos y bases",
+   "Guarniciones",
+   "Fondos y caldos",
+   "Acabados y decoraciones",
+   "Ensaladas"
+  ],
+  "keep": "Las verduras cortadas, tapadas con papel húmedo en frío, del día. Patatas y apionabo cortados, en agua fría unas horas. Hierbas, cortadas al momento.",
+  "pro": "Corta por tandas al principio de la jornada y guarda por cortes en recipientes etiquetados. Revisa el filo cada día y ten una chaira a mano.",
+  "related": [
+   "mirepoix",
+   "sofrito",
+   "hierbas-frescas",
+   "tomate",
+   "punto-de-las-verduras",
+   "cebolla-y-ajo"
+  ]
+ },
+ {
+  "id": "emulsiones-al-momento",
+  "name": "Emulsiones calientes montadas al momento",
+  "name_en": "Pan sauces mounted to order",
+  "cat": "tecnicas",
+  "group": "Calor y punto",
+  "technique": "emulsion",
+  "aka": [
+   "montar con mantequilla",
+   "beurre monté",
+   "salsa de sartén",
+   "ligar al momento",
+   "emulsionar en sartén",
+   "monter au beurre"
+  ],
+  "summary": "Salsas que se hacen en el último minuto: un jugo o una reducción que se liga con mantequilla fría o aceite y se sirve enseguida.",
+  "what": "Muchas salsas de restaurante se terminan al pedido: en la sartén donde se ha cocinado la pieza, o en un cazo, se reduce un líquido con sabor (vino, [[jugo-de-carne|jugo]], [[fumet]], el agua de unas almejas) y se liga al final con mantequilla fría o aceite, removiendo. La grasa se dispersa en gotas muy pequeñas en el líquido y la salsa gana brillo, cuerpo y redondez.\n\nSon emulsiones frágiles: se rompen si hierven o si se enfrían demasiado. Por eso se hacen al momento y se sirven enseguida. La [[beurre-blanc]] y el [[pil-pil]] son los ejemplos clásicos; la mantequilla montada (mantequilla emulsionada en un poco de agua) es la base para mantener o escalfar marisco y verduras.",
+  "method": [
+   "Desglasa la sartén o el cazo con el líquido y reduce hasta que tenga sabor intenso y empiece a tener cuerpo.",
+   "Baja el fuego o aparta: la salsa debe estar caliente pero sin hervir.",
+   "Añade la mantequilla fría en dados, poco a poco, moviendo la sartén o batiendo, hasta que se integre y brille.",
+   "Con aceite, añádelo en hilo moviendo en círculos, como un pil-pil, si hay gelatina o almidón que ayude.",
+   "Corrige de sal y ácido, añade hierbas al final y sirve enseguida."
+  ],
+  "ratios": [
+   {
+    "use": "Salsa montada",
+    "ratio": "30–50 g de mantequilla por 100 ml de reducción",
+    "note": "Según el cuerpo buscado."
+   },
+   {
+    "use": "Temperatura de la salsa",
+    "ratio": "60–80 °C",
+    "note": "Por encima de 85 °C se separa."
+   },
+   {
+    "use": "Mantequilla montada",
+    "ratio": "250 g de mantequilla en 50 ml de agua",
+    "note": "Mantener entre 60–70 °C."
+   },
+   {
+    "use": "Ración",
+    "ratio": "30–40 ml de salsa por plato",
+    "note": "Napa, no encharca."
+   }
+  ],
+  "variants": [
+   {
+    "id": "beurre-blanc",
+    "name": "Beurre blanc",
+    "note": "Reducción de vino y chalota montada con mantequilla."
+   },
+   {
+    "id": "pil-pil",
+    "name": "Pil-pil",
+    "note": "Aceite ligado con la gelatina del pescado."
+   },
+   {
+    "id": "mantequilla-noisette",
+    "name": "Noisette",
+    "note": "Mantequilla tostada, sin emulsionar."
+   },
+   {
+    "id": "emulsiones",
+    "name": "Emulsiones",
+    "note": "Cómo y por qué ligan."
+   }
+  ],
+  "keys": [
+   "Reducción con sabor antes de montar: la mantequilla suaviza, no da sabor.",
+   "Mantequilla fría y en dados.",
+   "Calor suave: caliente sin hervir.",
+   "Al momento y al plato: no espera.",
+   "Un toque ácido final la equilibra."
+  ],
+  "errors": [
+   {
+    "p": "Salsa cortada y grasienta",
+    "fix": "Ha hervido o la mantequilla entró de golpe. Añade un chorrito de líquido frío y bate fuera del fuego."
+   },
+   {
+    "p": "Salsa sin cuerpo",
+    "fix": "Reducción insuficiente o poca mantequilla. Reduce más antes de montar."
+   },
+   {
+    "p": "Salsa que cuaja al enfriarse en el plato",
+    "fix": "Demasiada mantequilla. Usa menos o sirve en plato caliente."
+   }
+  ],
+  "history": "Terminar las salsas con mantequilla al último momento es una práctica de la cocina clásica francesa que la cocina moderna convirtió en norma para salsas más ligeras y hechas al pedido.",
+  "uses": [
+   "Salsas de sartén para carnes",
+   "Pescados y mariscos",
+   "Verduras glaseadas",
+   "Pastas y arroces"
+  ],
+  "keep": "No se guardan: se hacen al momento. Lo que se adelanta es la reducción, que aguanta 3–5 días en frío.",
+  "pro": "Ten las reducciones listas en biberón y la mantequilla fría en dados junto al fuego. Monta cada salsa por mesa en un cazo pequeño.",
+  "related": [
+   "beurre-blanc",
+   "pil-pil",
+   "emulsiones",
+   "reducciones",
+   "jugo-de-carne",
+   "mantequilla-noisette",
+   "holandesa"
+  ]
+ },
+ {
+  "id": "coccion-en-costra-de-masa",
+  "name": "Cocción en costra de masa",
+  "name_en": "Cooking in a pastry or dough crust",
+  "cat": "tecnicas",
+  "group": "Cocciones suaves",
+  "technique": "horno",
+  "aka": [
+   "en costra",
+   "en hojaldre",
+   "masa de sal y harina",
+   "en masa de pan",
+   "olla sellada",
+   "en croûte",
+   "solomillo en hojaldre"
+  ],
+  "summary": "Envolver en masa para cocinar al vapor protegido: unas costras se comen y otras se rompen y se tiran.",
+  "what": "La pieza se envuelve en una masa que, al hornearse, forma una cáscara cerrada. Dentro, se cocina en su propio vapor y se mantiene jugosa, como en la [[coccion-a-la-sal|cocción a la sal]]. Hay dos tipos. Las costras que no se comen, como la masa de sal y harina o la masa de pan que sella una olla, solo protegen y concentran el aroma. Las que se comen, como el [[hojaldre]] o la masa quebrada, son parte del plato y tienen que quedar doradas y crujientes a la vez que el relleno llega a su punto.\n\nSirve para piezas de carne, pescados, verduras de raíz y guisos que se hornean en olla sellada con masa.",
+  "method": [
+   "Masa de sal: mezcla harina, sal, claras y agua hasta una masa firme; estírala a 1 cm y envuelve la pieza ya sazonada y, si es carne, dorada y fría.",
+   "Hojaldre: dora la pieza, enfríala del todo, cúbrela con una capa que absorba jugos (setas picadas, crepe, jamón), envuelve, pinta con huevo y enfría 20 minutos antes de hornear.",
+   "Olla sellada: tapa la olla y sella el borde con un cordón de masa de harina y agua.",
+   "Hornea según la pieza y controla con sonda a través de la masa.",
+   "Reposa 5–10 minutos y rompe la costra o corta con cuchillo de sierra."
+  ],
+  "ratios": [
+   {
+    "use": "Masa de sal y harina",
+    "ratio": "500 g de harina, 300 g de sal, 2 claras, 200 ml de agua",
+    "note": "Ajusta el agua hasta que no se pegue."
+   },
+   {
+    "use": "Solomillo en hojaldre",
+    "ratio": "200–210 °C hasta 50–52 °C",
+    "note": "20–30 minutos según grosor."
+   },
+   {
+    "use": "Pescado en masa de sal",
+    "ratio": "200 °C hasta 50 °C junto a la espina",
+    "note": "Pieza de 1 kg, 25–30 minutos."
+   },
+   {
+    "use": "Olla sellada",
+    "ratio": "160–180 °C",
+    "note": "Guisos y arroces al horno."
+   }
+  ],
+  "variants": [
+   {
+    "id": "coccion-a-la-sal",
+    "name": "Cocción a la sal",
+    "note": "Solo sal humedecida, sin harina."
+   },
+   {
+    "id": "hojaldre",
+    "name": "Hojaldre",
+    "note": "La masa comestible más clásica."
+   },
+   {
+    "id": "setas",
+    "name": "Capa de setas",
+    "note": "Picadas y secas, para proteger el hojaldre."
+   },
+   {
+    "id": "masa-quebrada",
+    "name": "Pastel en masa quebrada",
+    "note": "Rellenos cocinados en molde."
+   }
+  ],
+  "keys": [
+   "La pieza fría antes de envolver en hojaldre: si está caliente, la masa se funde.",
+   "Una capa entre la pieza y la masa absorbe jugos y evita la base cruda.",
+   "Sonda a través de la masa: no hay otra forma de ver el punto.",
+   "Reposo antes de cortar para que no se escapen los jugos.",
+   "Romper la costra en la mesa es parte del plato."
+  ],
+  "errors": [
+   {
+    "p": "Hojaldre crudo por debajo",
+    "fix": "Pieza húmeda o caliente. Enfría, seca y añade una capa que absorba."
+   },
+   {
+    "p": "Carne pasada con masa dorada",
+    "fix": "Pieza fina u horno bajo. Usa piezas gruesas y horno fuerte."
+   },
+   {
+    "p": "Costra de sal que se agrieta",
+    "fix": "Masa seca o fina. Más agua o clara y estira a 1 cm."
+   }
+  ],
+  "history": "Envolver carnes y pescados en masa para hornearlos es una tradición de la cocina europea antigua, cuando la masa servía de recipiente. Los pasteles de carne y las piezas en hojaldre son su versión comestible.",
+  "uses": [
+   "Carnes nobles para compartir",
+   "Pescados enteros",
+   "Verduras de raíz",
+   "Guisos al horno en olla sellada"
+  ],
+  "keep": "Las piezas se envuelven el mismo día y se guardan en frío hasta hornear, como mucho unas horas. Cocinadas, se sirven al momento.",
+  "pro": "Envuelve las piezas por la mañana y guárdalas en frío en bandeja. Calcula el tiempo de horno y reposo con la mesa y avisa en sala de la espera.",
+  "related": [
+   "coccion-a-la-sal",
+   "hojaldre",
+   "asado-al-horno",
+   "setas",
+   "masa-quebrada",
+   "papillote-y-vapor"
+  ]
  }
 ]

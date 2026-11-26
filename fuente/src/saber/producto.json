@@ -3638,5 +3638,1317 @@
    "especias",
    "vinagreta-piparras"
   ]
+ },
+ {
+  "id": "atun-rojo-y-bonito",
+  "name": "Atún rojo y bonito",
+  "name_en": "Bluefin tuna and albacore",
+  "cat": "producto",
+  "group": "Pescado y marisco",
+  "aka": [
+   "atún",
+   "atún rojo",
+   "bonito",
+   "bonito del norte",
+   "ventresca",
+   "morrillo",
+   "parpatana",
+   "tataki",
+   "marmitako"
+  ],
+  "summary": "El atún se despieza como una res: cada zona tiene su grasa y su cocción, del crudo de ventresca al morrillo a la brasa.",
+  "what": "El atún rojo es un pescado enorme, de carne roja y grasa infiltrada, que se despieza casi como una carne. La ventresca (la parte baja del vientre) es la más grasa; el lomo, más magro; el morrillo (zona alta junto a la cabeza) y la parpatana (entre la cabeza y el lomo, junto a las agallas) tienen grasa, nervio y gelatina y aguantan la brasa. El bonito del norte es más pequeño, de carne más clara y suave; en el Mediterráneo se llama también bonito a otra especie, menor y de carne más oscura.\n\nLa regla es la misma que con un buen vacuno: el lomo y la ventresca, crudos o apenas marcados; las piezas con colágeno, más fuego o más tiempo. Pasado de punto, el atún se vuelve seco y fibroso enseguida.",
+  "method": [
+   "Pide trazabilidad y, para crudo, pieza congelada según la norma o ultracongelada en origen, que conserva mejor el color.",
+   "Recorta la piel, las partes oscuras (la sangacha, de sabor fuerte) y los nervios gruesos; racione en bloques regulares.",
+   "Crudo: corta en frío con cuchillo largo y afilado, de un solo trazo, contra la veta, y sirve a 6–8 °C.",
+   "Marcado: sala, unta de aceite y marca a fuego muy fuerte por todas las caras, 20–30 segundos cada una; el centro debe quedar crudo y templado.",
+   "Bonito: confitado en aceite suave, en guiso corto con patata al final, o marcado como el atún."
+  ],
+  "ratios": [
+   {
+    "use": "Atún marcado",
+    "ratio": "38–42 °C en el centro",
+    "note": "Por fuera dorado, dentro rojo y templado."
+   },
+   {
+    "use": "Morrillo a la brasa",
+    "ratio": "45–50 °C en el centro",
+    "note": "Su grasa y gelatina aguantan más."
+   },
+   {
+    "use": "Bonito confitado",
+    "ratio": "Aceite a 60–65 °C, 15–20 minutos",
+    "note": "Lomo de 3 cm; reposar en el aceite."
+   },
+   {
+    "use": "Ración de crudo",
+    "ratio": "60–80 g por persona como entrante",
+    "note": "Cortado al momento."
+   }
+  ],
+  "variants": [
+   {
+    "id": "ceviche-y-crudos",
+    "name": "Tartar y crudos",
+    "note": "Lomo o ventresca cortados al momento."
+   },
+   {
+    "id": "salazones-y-huevas",
+    "name": "Mojama",
+    "note": "Lomo de atún salado y secado."
+   },
+   {
+    "id": "conservas-en-aceite",
+    "name": "Bonito en aceite",
+    "note": "Confitado y guardado en su grasa."
+   },
+   {
+    "id": null,
+    "name": "Marmitako",
+    "note": "Guiso de bonito y patata; el pescado entra al final, fuera del fuego."
+   }
+  ],
+  "keys": [
+   "Cada zona su uso: ventresca y lomo en crudo o marcados; morrillo y parpatana con más fuego.",
+   "Fuera la sangacha: amarga y oxida el resto.",
+   "Atún pasado es atún seco: el centro nunca por encima de 50 °C.",
+   "El color se oxida con el aire: corta justo antes de servir y guarda en bloque tapado.",
+   "Frío constante, siempre: en el pescado azul, el calor favorece la histamina."
+  ],
+  "errors": [
+   {
+    "p": "Carne marrón en superficie",
+    "fix": "Oxidación por aire. Guarda en bloque envuelto en film y corta al momento."
+   },
+   {
+    "p": "Atún seco y fibroso",
+    "fix": "Pasado de punto. Marca más fuerte y menos tiempo; saca a 40 °C."
+   },
+   {
+    "p": "Sabor metálico o fuerte",
+    "fix": "Restos de sangacha o pieza con días. Limpia bien y exige producto fresco."
+   },
+   {
+    "p": "Bonito del guiso deshecho",
+    "fix": "Ha hervido con la patata. Añádelo al final y deja que se haga con el calor residual."
+   }
+  ],
+  "history": "La pesca del atún rojo con almadraba en el sur de la península tiene una larga tradición, igual que las salazones de atún en todo el Mediterráneo. El bonito del norte es la base de una cocina marinera cantábrica de temporada, con guisos y conservas muy conocidos.",
+  "uses": [
+   "Crudos, tartares y tatakis",
+   "Brasa de morrillo y parpatana",
+   "Guisos de bonito",
+   "Conservas propias",
+   "Mojama y salazones"
+  ],
+  "keep": "Fresco, 2–3 días a 0–2 °C en bloque envuelto y sin contacto con el hielo. Para crudo, congelado según la norma. El bonito en aceite, 2–3 semanas en frío cubierto.",
+  "pro": "Despieza al recibir y separa por usos: crudo, marcado, guiso y recortes. Guarda los bloques porcionados por servicio para no abrir de más. Tabla y cuchillo dedicados al crudo.",
+  "related": [
+   "ceviche-y-crudos",
+   "salazones-y-huevas",
+   "conservas-en-aceite",
+   "curado-de-pescado",
+   "pescado-azul",
+   "fuego-y-brasa",
+   "confitado"
+  ]
+ },
+ {
+  "id": "pescado-azul",
+  "name": "Sardina, caballa y pescado azul",
+  "name_en": "Sardines, mackerel and oily fish",
+  "cat": "producto",
+  "group": "Pescado y marisco",
+  "aka": [
+   "sardina",
+   "caballa",
+   "jurel",
+   "boquerón",
+   "anchoa fresca",
+   "espeto",
+   "boquerones en vinagre",
+   "pescado graso"
+  ],
+  "summary": "Pescados pequeños y grasos de sabor intenso: brasa viva, curados y escabeches, siempre muy frescos y muy fríos.",
+  "what": "Se llama pescado azul al que tiene más grasa repartida por la carne: sardina, caballa, jurel, boquerón, estornino. Son pescados de sabor intenso, baratos de producir y de temporada: la sardina está mejor en los meses cálidos, cuando ha engordado. Su grasa los hace jugosos en la brasa y perfectos para curar, marinar y escabechar, pero también los hace delicados: se oxidan y se estropean antes que el pescado blanco.\n\nPiden contraste: ácido, sal, hierbas, algo amargo o picante. En crudo o marinados, siempre congelados antes según la norma, por el anisakis.",
+  "method": [
+   "Compra por el aspecto: ojo vivo, carne firme, vientre entero y brillo metálico. Sin frío constante, no lo compres.",
+   "Sardinas a la brasa: enteras, con escama y sin vísceras, saladas 10 minutos antes; brasa viva, 2–3 minutos por lado.",
+   "Caballa: en lomos con piel, piel marcada a fuego vivo o con soplete; o curada y luego marcada.",
+   "Boquerones en vinagre: lomos limpios y congelados según la norma, en vinagre rebajado con agua y sal hasta que blanqueen; escurrir y cubrir de aceite.",
+   "Limpia en frío y trabaja rápido: saca de la cámara solo lo que vas a preparar."
+  ],
+  "ratios": [
+   {
+    "use": "Boquerones en vinagre",
+    "ratio": "3 partes de vinagre, 1 de agua, 25 g de sal por litro",
+    "note": "4–8 horas en frío, según el grosor."
+   },
+   {
+    "use": "Caballa curada",
+    "ratio": "Sal y azúcar 1:1, 20–30 minutos",
+    "note": "Lavar, secar y marcar la piel."
+   },
+   {
+    "use": "Congelación previa",
+    "ratio": "-20 °C o menos, 24 horas como mínimo",
+    "note": "Para crudos y marinados, por el anisakis."
+   },
+   {
+    "use": "Ración de sardinas",
+    "ratio": "6–8 piezas medianas",
+    "note": "Como principal a la brasa."
+   }
+  ],
+  "variants": [
+   {
+    "id": "escabeche",
+    "name": "Escabeche de caballa o sardina",
+    "note": "Frita o marcada y cubierta de escabeche."
+   },
+   {
+    "id": "curado-de-pescado",
+    "name": "Curados",
+    "note": "Sal y azúcar para afirmar."
+   },
+   {
+    "id": "salazones-y-huevas",
+    "name": "Anchoas",
+    "note": "Boquerón en salazón y madurado."
+   },
+   {
+    "id": "ahumado",
+    "name": "Caballa ahumada",
+    "note": "En caliente, tras una salmuera corta."
+   }
+  ],
+  "keys": [
+   "Frío de la lonja al plato: el pescado azul no perdona ni una hora caliente.",
+   "Anisakis: congelación previa para todo lo crudo, marinado o en vinagre.",
+   "Ácido y frescor para su grasa: cítrico, vinagre, hierbas, cebolla encurtida.",
+   "En la brasa, fuego vivo y poco tiempo: la piel se tuesta y la carne queda jugosa.",
+   "Su temporada manda: una sardina flaca no se arregla en la cocina."
+  ],
+  "errors": [
+   {
+    "p": "Olor fuerte y sabor rancio",
+    "fix": "Pescado con días o roto en frío. Compra del día y guarda a 0–2 °C."
+   },
+   {
+    "p": "Boquerones blandos",
+    "fix": "Demasiado tiempo en vinagre o pescado poco firme. Acorta y saca cuando estén blancos."
+   },
+   {
+    "p": "Sardinas que se rompen en la parrilla",
+    "fix": "Rejilla fría o pescado sin escama. Calienta y engrasa la rejilla y no las muevas."
+   }
+  ],
+  "history": "El pescado azul ha sido el pescado popular del Mediterráneo: sardinas asadas en la playa, boquerones fritos o en vinagre y escabeches para guardar. La sardina en espeto, ensartada y asada junto a la arena, es un clásico de la costa andaluza.",
+  "uses": [
+   "Brasa y espetos",
+   "Curados y marinados",
+   "Escabeches",
+   "Tostas y bocados",
+   "Frituras"
+  ],
+  "keep": "Entero, 1–2 días a 0–2 °C; mejor el mismo día. En vinagre y cubierto de aceite, 1 semana en frío. Curado, 3–4 días.",
+  "pro": "Limpia y porciona al recibir y congela según la norma lo que vaya a crudo o a marinar. Etiqueta con la fecha de congelación. En el pase, bandejas pequeñas sobre hielo.",
+  "related": [
+   "curado-de-pescado",
+   "escabeche",
+   "salazones-y-huevas",
+   "ceviche-y-crudos",
+   "fuego-y-brasa",
+   "encurtidos-rapidos",
+   "atun-rojo-y-bonito"
+  ]
+ },
+ {
+  "id": "bacalao",
+  "name": "Bacalao fresco y en salazón",
+  "name_en": "Fresh and salt cod",
+  "cat": "producto",
+  "group": "Pescado y marisco",
+  "aka": [
+   "bacalao",
+   "bacalao desalado",
+   "bacalao salado",
+   "kokotxas",
+   "cocochas",
+   "brandada",
+   "esqueixada",
+   "skrei"
+  ],
+  "summary": "El fresco, en lascas jugosas a punto justo; el salado, desalado con paciencia y con su gelatina para ligar salsas.",
+  "what": "El bacalao es un pescado de aguas frías de carne blanca que se separa en lascas grandes. Fresco, es suave y muy jugoso si no se pasa. En salazón, curado en sal y a veces secado, gana firmeza y un sabor más profundo; hay que desalarlo antes de usarlo. Las distintas partes tienen usos distintos: el lomo, grueso, para confitar o asar; las colas y las tiras, para guisos, buñuelos y brandadas; las migas, para rellenos.\n\nSu piel y sus kokotxas (la parte baja de la mandíbula) sueltan una gelatina que, emulsionada con aceite, forma el [[pil-pil]].",
+  "method": [
+   "Desalar: lava la sal de la superficie y deja en agua fría abundante en la cámara, con la piel hacia arriba, cambiando el agua cada 8–12 horas.",
+   "Prueba un trocito crudo al final: debe quedar con un punto de sal agradable.",
+   "Confitar el lomo desalado en aceite suave hasta que las lascas empiecen a separarse; guarda el aceite y la gelatina para la salsa.",
+   "Bacalao fresco: sala 15–20 minutos antes, seca y marca por la piel, o hornea o confita a punto justo.",
+   "Desmigado crudo y desalado para ensaladas como la esqueixada, con tomate, pimiento, cebolla y aceitunas."
+  ],
+  "ratios": [
+   {
+    "use": "Desalado de lomo grueso",
+    "ratio": "36–48 horas, 3–4 cambios de agua",
+    "note": "Agua 3–4 veces el volumen del pescado, a 4 °C."
+   },
+   {
+    "use": "Desalado de tiras o migas",
+    "ratio": "12–24 horas",
+    "note": "Más cambios de agua."
+   },
+   {
+    "use": "Lomo confitado",
+    "ratio": "60–65 °C en el aceite",
+    "note": "15–20 minutos, hasta que se abran las lascas."
+   },
+   {
+    "use": "Bacalao fresco",
+    "ratio": "45–50 °C en el centro",
+    "note": "Lascas jugosas y nacaradas."
+   }
+  ],
+  "variants": [
+   {
+    "id": "pil-pil",
+    "name": "Pil-pil",
+    "note": "La gelatina del bacalao emulsionada con su aceite."
+   },
+   {
+    "id": "confitado",
+    "name": "Bacalao confitado",
+    "note": "La cocción más jugosa para el lomo."
+   },
+   {
+    "id": "salazones-y-huevas",
+    "name": "Otras salazones",
+    "note": "Mojama, anchoas y botarga."
+   },
+   {
+    "id": null,
+    "name": "Brandada",
+    "note": "Bacalao desalado y emulsionado con aceite, ajo y, a veces, patata o nata."
+   }
+  ],
+  "keys": [
+   "Desalar en frío y con tiempo: deprisa y templado se estropea.",
+   "Piel hacia arriba al desalar, para que la sal salga por la carne.",
+   "Calor suave: el bacalao duro y fibroso es bacalao pasado.",
+   "La gelatina es oro: no laves la piel ni tires el aceite de confitar.",
+   "Cada parte, su uso: lomo para lucir, tiras y migas para guisos y rellenos."
+  ],
+  "errors": [
+   {
+    "p": "Demasiado salado",
+    "fix": "Le falta desalado. Vuelve a agua fría unas horas y prueba de nuevo."
+   },
+   {
+    "p": "Soso y sin textura",
+    "fix": "Desalado de más. Corrige con sal al final y acorta el tiempo la próxima vez."
+   },
+   {
+    "p": "Pil-pil que no liga",
+    "fix": "Poca gelatina o aceite muy caliente. Confita con piel, deja templar el aceite a 40–50 °C y emulsiona poco a poco."
+   }
+  ],
+  "history": "El bacalao salado y seco ha sido durante siglos uno de los pescados más consumidos en la península, por lo bien que se conservaba y se transportaba tierra adentro. De esa tradición vienen platos como el pil-pil, el ajoarriero, la esqueixada o los buñuelos.",
+  "uses": [
+   "Lomos confitados o al horno",
+   "Pil-pil y salsas emulsionadas",
+   "Buñuelos y croquetas",
+   "Ensaladas de bacalao crudo",
+   "Brandadas y rellenos"
+  ],
+  "keep": "Salado, semanas en frío seco. Desalado, 2–3 días en frío, o congelado. Fresco, 2 días a 0–2 °C.",
+  "pro": "Desala por tandas con cambios de agua apuntados en la etiqueta. Porciona tras desalar y congela lo que no vayas a usar. Guarda el aceite de confitar para el pil-pil del día.",
+  "related": [
+   "pil-pil",
+   "confitado",
+   "salazones-y-huevas",
+   "curado-de-pescado",
+   "pescado-entero",
+   "alioli"
+  ]
+ },
+ {
+  "id": "mejillon-y-almeja",
+  "name": "Mejillón, almeja y berberecho",
+  "name_en": "Mussels, clams and cockles",
+  "cat": "producto",
+  "group": "Pescado y marisco",
+  "aka": [
+   "mejillón",
+   "almeja",
+   "almeja fina",
+   "chirla",
+   "berberecho",
+   "navaja",
+   "moluscos bivalvos",
+   "almejas a la marinera"
+  ],
+  "summary": "Bivalvos vivos, depurados y cocinados lo justo para que se abran: el jugo que sueltan es la mitad del plato.",
+  "what": "Mejillones, almejas, berberechos y navajas son moluscos de dos conchas que se compran vivos. Por ley deben venir de una depuradora, etiquetados y con su fecha. El mejillón, criado en bateas, es carnoso y de sabor marino intenso. Las almejas van de la fina, la más apreciada, a la chirla, pequeña y sabrosa. El berberecho tiene una carne pequeña y muy yodada.\n\nTodos sueltan un agua de mar que concentra su sabor y se convierte en la base de la salsa. Se cocinan lo justo para que se abran: más tiempo los encoge y los endurece.",
+  "method": [
+   "Revisa la etiqueta de la depuradora y que estén vivos: conchas cerradas o que se cierran al golpearlas. Descarta las rotas.",
+   "Almejas y berberechos con arena: ponlos 1–2 horas en agua fría con sal, en la cámara, para que la suelten.",
+   "Mejillones: limpia la concha y arranca la barba justo antes de cocinar, tirando hacia la parte estrecha.",
+   "Cocina en recipiente tapado a fuego fuerte con un poco de líquido y aromáticos; saca cada pieza en cuanto se abra.",
+   "Cuela el jugo por un paño fino para quitar arena y úsalo para la salsa, el arroz o el caldo."
+  ],
+  "ratios": [
+   {
+    "use": "Purgado de arena",
+    "ratio": "30–35 g de sal por litro, 1–2 horas",
+    "note": "Agua fría, en la cámara."
+   },
+   {
+    "use": "Mejillón al vapor",
+    "ratio": "Tapado, fuego fuerte, 3–4 minutos",
+    "note": "Con 100 ml de vino o agua por kilo."
+   },
+   {
+    "use": "Almejas a la marinera",
+    "ratio": "2–3 minutos en la salsa",
+    "note": "Tapadas, hasta que se abran."
+   },
+   {
+    "use": "Rendimiento del mejillón",
+    "ratio": "25–30 % de carne cocida",
+    "note": "Sobre peso con concha."
+   }
+  ],
+  "variants": [
+   {
+    "id": "salsa-verde",
+    "name": "Almejas en salsa verde",
+    "note": "Con su jugo, ajo, perejil y un toque de harina."
+   },
+   {
+    "id": "escabeche",
+    "name": "Mejillones en escabeche",
+    "note": "Abiertos al vapor y cubiertos de escabeche."
+   },
+   {
+    "id": "coccion-de-marisco",
+    "name": "Cocción de marisco",
+    "note": "Puntos y tiempos generales."
+   },
+   {
+    "id": null,
+    "name": "Almejas a la marinera",
+    "note": "Sofrito suave, vino blanco, pimentón y su jugo."
+   }
+  ],
+  "keys": [
+   "Vivos y depurados: no hay segunda oportunidad con un bivalvo malo.",
+   "Saca cada pieza al abrirse; las que tardan no deben esperar a las demás.",
+   "El jugo es sabor: cuélalo y úsalo.",
+   "Sin sal hasta probar: el jugo ya es salado.",
+   "La barba del mejillón se quita al momento: arrancada, el mejillón muere pronto."
+  ],
+  "errors": [
+   {
+    "p": "Arena en el plato",
+    "fix": "Sin purgar o jugo sin colar. Purga en agua salada y cuela por paño."
+   },
+   {
+    "p": "Carne encogida y dura",
+    "fix": "Demasiado tiempo. Retira cada pieza al abrirse."
+   },
+   {
+    "p": "Salsa demasiado salada",
+    "fix": "Se ha sazonado antes de que soltaran el jugo. Sazona solo al final y rebaja con agua o caldo sin sal."
+   }
+  ],
+  "history": "Los bivalvos se han recolectado en las costas de la península desde la prehistoria, como muestran los concheros. Hoy buena parte del mejillón que se consume se cría en bateas en las rías gallegas y en otros puntos de la costa.",
+  "uses": [
+   "Al vapor y a la marinera",
+   "Arroces y fideos",
+   "Escabeches y conservas propias",
+   "Salsas con su jugo",
+   "Crudos con cítrico (almeja fina)"
+  ],
+  "keep": "Vivos, 2–3 días a 2–6 °C, tapados con un paño húmedo y nunca en agua dulce ni en bolsa cerrada. Cocidos y sin concha, 2 días en frío en su jugo.",
+  "pro": "Guarda la etiqueta de la depuradora el tiempo que marque la norma. Abre los mejillones para arroces y escabeches por tandas y guarda la carne en su jugo. Las almejas, al pedido.",
+  "related": [
+   "coccion-de-marisco",
+   "salsa-verde",
+   "escabeche",
+   "arroces",
+   "fondo-de-marisco",
+   "papillote-y-vapor"
+  ]
+ },
+ {
+  "id": "vaca-vieja-y-buey",
+  "name": "Vaca vieja y buey",
+  "name_en": "Aged cow and ox",
+  "cat": "producto",
+  "group": "Carne",
+  "aka": [
+   "vaca vieja",
+   "vaca de desvieje",
+   "buey",
+   "chuletón",
+   "chuleta de vaca",
+   "txuleta",
+   "grasa amarilla",
+   "vaca madurada"
+  ],
+  "summary": "Carne de animal adulto, con grasa amarilla y sabor profundo: chuleta gruesa, brasa fuerte y centro rojo.",
+  "what": "La carne de vaca adulta y de buey (macho castrado criado varios años) es más oscura, con más grasa infiltrada y de cobertura y un sabor mucho más intenso que la de ternera. Su grasa suele ser amarilla cuando el animal ha comido pasto, porque guarda los pigmentos de la hierba. Es la carne que más agradece la [[maduracion-de-carne|maduración]] en seco.\n\nSu corte estrella es la chuleta gruesa con hueso, a la brasa. Pero el animal entero da mucho más: lomo bajo y alto, solomillo, cadera, falda para guisar o picar y una grasa que se funde para cocinar.",
+  "method": [
+   "Saca la chuleta de la cámara 1–2 horas antes; seca la superficie con papel.",
+   "Recorta parte de la grasa de cobertura si es muy gruesa y guárdala: fundida, sirve para pintar la carne o freír patatas.",
+   "Sala con sal gruesa justo antes de ponerla al fuego, generosa.",
+   "Brasa muy fuerte, la parrilla caliente: marca 4–6 minutos por lado sin mover; luego pon la chuleta de pie sobre la grasa para dorarla.",
+   "Reposa sobre rejilla 5–10 minutos, separa el hueso, corta en tiras gruesas contra la fibra y sirve en plato o hierro caliente."
+  ],
+  "ratios": [
+   {
+    "use": "Chuleta de 4–5 cm",
+    "ratio": "48–52 °C en el centro",
+    "note": "Al estilo de asador: rojo y templado."
+   },
+   {
+    "use": "Ración",
+    "ratio": "400–500 g con hueso por persona",
+    "note": "Chuleta de 1–1,2 kg para dos."
+   },
+   {
+    "use": "Atemperado",
+    "ratio": "1–2 horas fuera de cámara",
+    "note": "Centro a 12–15 °C antes de la brasa."
+   },
+   {
+    "use": "Grasa fundida",
+    "ratio": "Recortes a fuego suave, 1–2 horas",
+    "note": "Colada; para pintar y freír."
+   }
+  ],
+  "variants": [
+   {
+    "id": "maduracion-de-carne",
+    "name": "Maduración en seco",
+    "note": "Semanas en cámara para concentrar sabor."
+   },
+   {
+    "id": "cortes-de-vacuno",
+    "name": "Cortes del vacuno",
+    "note": "Qué pieza para qué cocción."
+   },
+   {
+    "id": "grasas-infusionadas",
+    "name": "Grasa de vaca aromatizada",
+    "note": "Con los recortes fundidos."
+   },
+   {
+    "id": "jugo-de-carne",
+    "name": "Jugo de vaca",
+    "note": "Con huesos y recortes tostados."
+   }
+  ],
+  "keys": [
+   "Grosor: una chuleta fina se hace entera antes de tener costra.",
+   "Sal gruesa y fuego fuerte: costra por fuera, rojo por dentro.",
+   "Dora la grasa de canto: es la mitad del sabor.",
+   "Reposo sobre rejilla para que la costra no se ablande.",
+   "Aprovecha el animal: falda, recortes y grasa para guisos, picados y frituras."
+  ],
+  "errors": [
+   {
+    "p": "Centro frío y crudo",
+    "fix": "Carne recién sacada de la cámara. Atempera más tiempo o termina lejos del fuego."
+   },
+   {
+    "p": "Costra gris y sin sabor",
+    "fix": "Superficie húmeda o brasa floja. Seca la carne y aviva el fuego."
+   },
+   {
+    "p": "Grasa blanda y sin dorar",
+    "fix": "No se ha puesto de canto. Dora la tira de grasa directamente sobre la parrilla."
+   }
+  ],
+  "history": "Los asadores del norte de la península popularizaron la chuleta de vaca adulta a la brasa, servida casi cruda en el centro. En las últimas décadas, la vaca vieja madurada se ha convertido en un producto muy buscado en toda la restauración.",
+  "uses": [
+   "Chuleta a la brasa",
+   "Lomos y solomillo",
+   "Tartares de vaca madurada",
+   "Guisos con la falda",
+   "Grasa para frituras"
+  ],
+  "keep": "Fresca, 4–6 días a 0–2 °C en pieza. Madurada, según su proceso; una vez porcionada, 3–4 días. Envasada al vacío aguanta más, pero la superficie se oscurece y vuelve al abrir.",
+  "pro": "Porciona las chuletas al grosor fijo y pesa cada una. Sácalas a atemperar según las reservas. Prepara la grasa fundida en tanda para pintar la carne en la brasa.",
+  "related": [
+   "cortes-de-vacuno",
+   "maduracion-de-carne",
+   "punto-de-la-carne",
+   "sellado-y-reposo",
+   "fuego-y-brasa",
+   "sal-y-flor-de-sal",
+   "ternera-lechal"
+  ]
+ },
+ {
+  "id": "cochinillo",
+  "name": "Cochinillo",
+  "name_en": "Suckling pig",
+  "cat": "producto",
+  "group": "Carne",
+  "aka": [
+   "cochinillo asado",
+   "lechón",
+   "tostón",
+   "piel crujiente",
+   "cochinillo confitado"
+  ],
+  "summary": "Cerdo de leche con carne melosa y piel fina: cocción lenta para la carne y calor fuerte y seco para que la piel cruja.",
+  "what": "El cochinillo es un cerdo muy joven, alimentado solo con leche de la madre, con una carne tierna, gelatinosa y suave y una piel fina que, bien tratada, queda crujiente como el cristal. Todo el plato depende de conseguir las dos cosas a la vez: carne melosa y jugosa y piel crujiente, sin que se queme ni se ablande.\n\nSe hace entero o en cuartos en horno, a la manera tradicional, o deshuesado en [[baja-temperatura]] y prensado, para terminar al pedido con la piel crujiente en sartén, horno fuerte o salamandra.",
+  "method": [
+   "Asado tradicional: abierto por el espinazo, salado por la carne, piel hacia abajo en la bandeja con un dedo de agua, unas horas a horno medio.",
+   "Dale la vuelta con la piel hacia arriba, sécala, píntala con grasa o aceite y sube el horno para que se infle y cruja; pincha alguna burbuja si se forma.",
+   "Al estilo moderno: deshuesa, cocina en bolsa en baja temperatura, prensa en frío con peso y porciona en bloques.",
+   "Al pedido, dora el bloque por la piel en sartén con poca grasa a fuego medio, presionando, hasta que cruja; calienta la carne en horno.",
+   "Usa el jugo de la bandeja o de la bolsa, desgrasado y reducido, como salsa."
+  ],
+  "ratios": [
+   {
+    "use": "Asado (fase lenta)",
+    "ratio": "160–170 °C, 2 horas",
+    "note": "Piel abajo, con agua en la bandeja."
+   },
+   {
+    "use": "Asado (piel)",
+    "ratio": "210–230 °C, 20–30 minutos",
+    "note": "Piel arriba, seca y untada."
+   },
+   {
+    "use": "Baja temperatura",
+    "ratio": "68–70 °C, 12–16 horas",
+    "note": "Deshuesado y en bolsa; prensado después."
+   },
+   {
+    "use": "Ración",
+    "ratio": "Un cuarto por persona en pieza pequeña",
+    "note": "O bloques de 180–220 g deshuesados."
+   }
+  ],
+  "variants": [
+   {
+    "id": "baja-temperatura",
+    "name": "Cochinillo confitado y prensado",
+    "note": "Bloques regulares para el pase."
+   },
+   {
+    "id": "confitado",
+    "name": "Paletillas confitadas",
+    "note": "En su grasa, a 85–90 °C."
+   },
+   {
+    "id": "jugo-de-carne",
+    "name": "Jugo de cochinillo",
+    "note": "Con los huesos del deshuesado."
+   }
+  ],
+  "keys": [
+   "Piel seca: la humedad es la enemiga del crujiente.",
+   "Dos fases: lenta para la carne, fuerte y seca para la piel.",
+   "Prensar en frío da bloques regulares y una piel lisa que se dora por igual.",
+   "Ácido y frescor para acompañar: manzana, encurtidos, hojas amargas.",
+   "Nada se tira: huesos al jugo y grasa para freír."
+  ],
+  "errors": [
+   {
+    "p": "Piel blanda o correosa",
+    "fix": "Piel húmeda o calor final escaso. Seca bien y sube el horno al final."
+   },
+   {
+    "p": "Piel quemada a trozos",
+    "fix": "Horno desigual o grasa en exceso. Gira la bandeja y pinta con una capa fina."
+   },
+   {
+    "p": "Bloque que se deshace al dorar",
+    "fix": "No se ha prensado ni enfriado bien. Prensa con peso toda la noche."
+   }
+  ],
+  "history": "El cochinillo asado en horno de leña es un plato emblemático de Castilla, sobre todo de Segovia, y en otras zonas de la península y de las islas hay tradiciones parecidas de cochinillo o lechón asado para las fiestas.",
+  "uses": [
+   "Asado entero para compartir",
+   "Bloques prensados de pase",
+   "Bocados con piel crujiente",
+   "Rellenos y croquetas con la carne"
+  ],
+  "keep": "Crudo, 3–4 días en frío. Cocinado y prensado, 4–5 días en frío bien envuelto; se congela en bloques. La piel se dora siempre al momento.",
+  "pro": "Prepara los bloques prensados la víspera y porciónalos en frío con cuchillo caliente. En el pase, sartén solo para la piel y horno para el centro. Así sale igual en cada plato.",
+  "related": [
+   "baja-temperatura",
+   "confitado",
+   "cerdo-iberico",
+   "asado-al-horno",
+   "jugo-de-carne",
+   "encurtidos-rapidos"
+  ]
+ },
+ {
+  "id": "caza-de-pluma",
+  "name": "Codorniz y caza de pluma",
+  "name_en": "Quail and game birds",
+  "cat": "producto",
+  "group": "Aves",
+  "aka": [
+   "codorniz",
+   "perdiz",
+   "pichón",
+   "paloma torcaz",
+   "faisán",
+   "becada",
+   "perdiz en escabeche",
+   "caza menor"
+  ],
+  "summary": "Aves pequeñas de carne oscura y sabrosa: pechuga rosada a fuego vivo y muslos largos y suaves.",
+  "what": "La codorniz, la perdiz, el pichón, la paloma o el faisán tienen una carne más oscura, magra y sabrosa que el pollo. La codorniz y el pichón que se compran suelen ser de granja, con calidad estable todo el año; la caza silvestre es de temporada, de otoño e invierno, y está regulada.\n\nLa regla es separar: la pechuga, magra y fina, se hace rosada y deprisa; los muslos tienen más tejido y piden más tiempo. Las carcasas, tostadas, dan un [[jugo-de-carne|jugo]] intenso. La perdiz se guisa o se hace en [[escabeche]]; la codorniz y el pichón, en la brasa o en sartén.",
+  "method": [
+   "Revisa la pieza: piel entera, sin olor fuerte; en caza, busca perdigones y retíralos.",
+   "Codorniz: ábrela por el espinazo y aplánala, o deshuésala dejando muslos; sala y marca a la brasa o en sartén muy caliente, 2–3 minutos por lado.",
+   "Pichón: separa pechugas y muslos. Pechugas sobre el hueso, doradas y terminadas en horno hasta el punto; muslos confitados.",
+   "Perdiz: dorada entera y guisada a fuego suave con verduras, vino y hierbas, o cocinada y cubierta de escabeche.",
+   "Tuesta las carcasas en horno y haz un jugo corto para el plato."
+  ],
+  "ratios": [
+   {
+    "use": "Pechuga de pichón",
+    "ratio": "54–56 °C en el centro",
+    "note": "Rosada; reposo de 5 minutos."
+   },
+   {
+    "use": "Codorniz a la brasa",
+    "ratio": "2–3 minutos por lado",
+    "note": "Abierta y aplanada."
+   },
+   {
+    "use": "Muslos confitados",
+    "ratio": "Grasa a 85 °C, 2–3 horas",
+    "note": "Hasta que la carne ceda."
+   },
+   {
+    "use": "Perdiz guisada",
+    "ratio": "1–1,5 horas a fuego suave",
+    "note": "Más si es silvestre y adulta."
+   }
+  ],
+  "variants": [
+   {
+    "id": "escabeche",
+    "name": "Perdiz o codorniz en escabeche",
+    "note": "Clásico de la caza menor."
+   },
+   {
+    "id": "confitado",
+    "name": "Muslos confitados",
+    "note": "Para dorar al pedido."
+   },
+   {
+    "id": "pato",
+    "name": "Pato",
+    "note": "Otra ave de carne roja, con más grasa."
+   },
+   {
+    "id": "jugo-de-carne",
+    "name": "Jugo de caza",
+    "note": "Con las carcasas tostadas."
+   }
+  ],
+  "keys": [
+   "Pechuga rosada, muslo hecho: dos cocciones en un mismo animal.",
+   "Son magras: fuego vivo y poco tiempo, o cocción suave y larga.",
+   "Ácidos, frutas y frutos secos les van bien: uva, higo, granada, almendra.",
+   "Las carcasas son la salsa.",
+   "La caza silvestre varía mucho en edad y tamaño: prueba y ajusta tiempos."
+  ],
+  "errors": [
+   {
+    "p": "Pechuga gris y seca",
+    "fix": "Pasada de punto. Sácala a 55–58 °C y reposa."
+   },
+   {
+    "p": "Muslos duros",
+    "fix": "Cocinados como la pechuga. Confítalos o guísalos aparte."
+   },
+   {
+    "p": "Sabor demasiado fuerte",
+    "fix": "Pieza mal conservada o colgada de más. Compra a proveedor de confianza y cocina pronto."
+   }
+  ],
+  "history": "La caza de pluma ha sido parte de la cocina de campo de toda la península, con platos como la perdiz estofada o en escabeche. La cría de codornices y pichones ha hecho que hoy estén en carta todo el año.",
+  "uses": [
+   "Principales de brasa",
+   "Escabeches templados",
+   "Guisos de temporada",
+   "Bocados con la pechuga o los muslos",
+   "Jugos y salsas de caza"
+  ],
+  "keep": "Crudas, 2–3 días a 0–4 °C. En escabeche, 1–2 semanas en frío. Muslos confitados, 1–2 semanas cubiertos de grasa.",
+  "pro": "Despieza al recibir: pechugas porcionadas, muslos al confitado, carcasas al jugo. En el pase, solo marcar pechugas y regenerar muslos.",
+  "related": [
+   "pollo-y-aves",
+   "pato",
+   "escabeche",
+   "confitado",
+   "jugo-de-carne",
+   "punto-de-la-carne",
+   "higos-y-algarroba"
+  ]
+ },
+ {
+  "id": "huevos",
+  "name": "Huevos: tipos y frescura",
+  "name_en": "Eggs: types and freshness",
+  "cat": "producto",
+  "group": "Aves",
+  "aka": [
+   "huevo",
+   "huevo de gallina",
+   "huevo de codorniz",
+   "huevo de pato",
+   "huevo pasteurizado",
+   "código del huevo",
+   "frescura del huevo",
+   "yema",
+   "clara"
+  ],
+  "summary": "Cómo leer un huevo: código, tamaño, frescura y qué huevo usar en cada elaboración.",
+  "what": "El huevo de gallina se vende por categorías y tamaños, y lleva impreso un código: el primer número indica la forma de cría (0 ecológica, 1 campera, 2 en suelo, 3 en jaula), seguido del país y la granja. Por tamaño, va de S (menos de 53 g) a XL (73 g o más); el M, entre 53 y 63 g, es el que se usa como medida en las recetas.\n\nLa frescura cambia la cocina: el huevo fresco tiene la clara espesa y la yema abombada, ideal para escalfar o freír; con los días la clara se vuelve líquida, la cámara de aire crece y pelarlo cocido es más fácil. En restauración, la norma obliga a usar huevo pasteurizado en elaboraciones que no alcanzan una cocción suficiente, como mayonesas o cremas crudas. Los tiempos de cada punto están en [[puntos-del-huevo]].",
+  "method": [
+   "Al recibir, revisa cáscaras limpias y sin grietas y la fecha; guarda en frío constante, sin lavar.",
+   "Para saber si es fresco, rómpelo en un plato: clara densa en dos capas y yema alta y firme.",
+   "Escalfados y fritos, con los huevos más frescos; cocidos para pelar, con huevos de una o dos semanas.",
+   "Para mayonesas, alioli con huevo, cremas sin cocción o mousses, usa huevo pasteurizado.",
+   "Pesa en las recetas de precisión: yemas y claras por gramos, no por unidades."
+  ],
+  "ratios": [
+   {
+    "use": "Huevo M sin cáscara",
+    "ratio": "Unos 50 g: 30–33 g de clara y 17–19 g de yema",
+    "note": "Referencia para convertir recetas."
+   },
+   {
+    "use": "Cuajado de la clara",
+    "ratio": "62–65 °C",
+    "note": "Empieza a cuajar; firme hacia 80 °C."
+   },
+   {
+    "use": "Cuajado de la yema",
+    "ratio": "65–70 °C",
+    "note": "Por encima se vuelve pastosa."
+   },
+   {
+    "use": "Huevo de codorniz",
+    "ratio": "Unos 10–12 g",
+    "note": "1 huevo de gallina equivale a 4–5."
+   }
+  ],
+  "variants": [
+   {
+    "id": "puntos-del-huevo",
+    "name": "Puntos del huevo",
+    "note": "Tiempos y temperaturas para cada textura."
+   },
+   {
+    "id": "mayonesa",
+    "name": "Mayonesa",
+    "note": "Con huevo pasteurizado en restaurante."
+   },
+   {
+    "id": "merengues",
+    "name": "Claras y merengues",
+    "note": "Mejor con claras de unos días y sin restos de yema."
+   },
+   {
+    "id": "crema-inglesa",
+    "name": "Yemas en cremas",
+    "note": "Ligazón por calor, hasta 82–84 °C."
+   }
+  ],
+  "keys": [
+   "Huevo fresco para escalfar y freír; con unos días, para cocer y pelar.",
+   "Pasteurizado en todo lo que no se cuece bien: es norma, no opción.",
+   "Frío constante: los cambios de temperatura hacen sudar la cáscara.",
+   "No laves los huevos: quitas la protección natural de la cáscara.",
+   "Pesa yemas y claras en pastelería y salsas."
+  ],
+  "errors": [
+   {
+    "p": "Clara que se esparce al freír o escalfar",
+    "fix": "Huevo poco fresco. Usa huevos del día o cuela la clara más líquida."
+   },
+   {
+    "p": "Huevo cocido imposible de pelar",
+    "fix": "Huevo demasiado fresco. Usa huevos con unos días y enfría en agua con hielo."
+   },
+   {
+    "p": "Anillo verde alrededor de la yema",
+    "fix": "Cocción excesiva. Ajusta el tiempo y enfría rápido."
+   }
+  ],
+  "history": "El huevo es uno de los alimentos más universales de la cocina. El sistema de códigos impresos y categorías por tamaño se estableció en Europa para dar trazabilidad y garantizar la forma de cría.",
+  "uses": [
+   "Desayunos y platos de huevo",
+   "Salsas emulsionadas",
+   "Ligazones y cremas",
+   "Masas y pastelería",
+   "Rebozados y empanados"
+  ],
+  "keep": "En frío constante, sin lavar, en su envase y lejos de olores fuertes; hasta la fecha de consumo preferente. Yemas y claras separadas, 1–2 días tapadas en frío; las claras se congelan bien.",
+  "pro": "Rota el stock por fechas y guarda los huevos frescos para el pase de escalfados. Ten huevo pasteurizado líquido para salsas frías. Etiqueta claras y yemas sueltas con la hora.",
+  "related": [
+   "puntos-del-huevo",
+   "mayonesa",
+   "merengues",
+   "crema-inglesa",
+   "escalfado",
+   "emulsiones"
+  ]
+ },
+ {
+  "id": "patata-y-boniato",
+  "name": "Patata y boniato",
+  "name_en": "Potato and sweet potato",
+  "cat": "producto",
+  "group": "Huerta",
+  "aka": [
+   "patata",
+   "boniato",
+   "batata",
+   "patata harinosa",
+   "patata firme",
+   "patata nueva",
+   "patatas fritas",
+   "puré de patata"
+  ],
+  "summary": "Cada patata tiene su uso según su almidón: harinosas para puré y fritura, firmes para cocer y guisar; el boniato, dulce y asado.",
+  "what": "La patata se clasifica en la cocina por su textura. Las harinosas, con más almidón y menos agua, se deshacen al cocer y dan purés esponjosos y fritos crujientes. Las firmes o céreas aguantan la forma al cocer y son para ensaladas, guisos y patatas cocidas o confitadas. La patata nueva, de piel fina, es pequeña y tierna, para asar entera o cocer con piel.\n\nEl boniato es otra planta, de carne dulce y anaranjada o blanca, que se asa entero, se hace en [[coccion-en-hoja-y-ceniza|ceniza]], se fríe o se tritura. Su azúcar lo hace caramelizar antes que la patata.",
+  "method": [
+   "Elige la variedad según el uso: pregunta al proveedor si es harinosa o firme y prueba una cocida.",
+   "Cocer: con piel, desde agua fría con sal, hasta que el cuchillo entre sin resistencia; así no se encharca.",
+   "Fritas: corta, lava el almidón de la superficie, seca bien y fríe dos veces: primero suave para cocer, luego fuerte para dorar.",
+   "Puré: patata harinosa cocida con piel, pelada en caliente y pasada por pasapurés, nunca por batidora; añade la mantequilla y la leche caliente.",
+   "Boniato: asado entero con piel hasta que suelte almíbar y se hunda al apretar."
+  ],
+  "ratios": [
+   {
+    "use": "Fritura (primer baño)",
+    "ratio": "140–150 °C, 5–8 minutos",
+    "note": "Hasta que estén tiernas sin color."
+   },
+   {
+    "use": "Fritura (segundo baño)",
+    "ratio": "180–185 °C, 2–3 minutos",
+    "note": "Doradas y crujientes."
+   },
+   {
+    "use": "Puré",
+    "ratio": "1 kg de patata, 200–250 g de mantequilla, 200–300 ml de leche",
+    "note": "Según lo rico que se quiera."
+   },
+   {
+    "use": "Boniato asado",
+    "ratio": "190–200 °C, 45–60 minutos",
+    "note": "Según tamaño."
+   }
+  ],
+  "variants": [
+   {
+    "id": "patata-chafada-brasa",
+    "name": "Patata chafada a la brasa",
+    "note": "Cocida, aplastada y dorada."
+   },
+   {
+    "id": "fritura",
+    "name": "Fritura",
+    "note": "Aceites y temperaturas."
+   },
+   {
+    "id": "pures-de-verdura",
+    "name": "Purés",
+    "note": "Texturas y proporciones."
+   },
+   {
+    "id": "confitado",
+    "name": "Patata confitada",
+    "note": "En aceite suave, para guarnición melosa."
+   }
+  ],
+  "keys": [
+   "La variedad manda: no hay patata buena para todo.",
+   "Guarda en lugar fresco y oscuro, nunca en la cámara fría: el frío convierte el almidón en azúcar y la patata se oscurece al freír.",
+   "Las partes verdes y los brotes se quitan siempre.",
+   "La batidora vuelve el puré pegajoso: pasapurés.",
+   "Doble fritura para patatas crujientes por fuera y tiernas por dentro."
+  ],
+  "errors": [
+   {
+    "p": "Fritas oscuras y blandas",
+    "fix": "Patata guardada en frío o aceite poco caliente. Guarda a 8–12 °C y respeta los dos baños."
+   },
+   {
+    "p": "Puré pegajoso",
+    "fix": "Batidora o patata firme. Usa harinosa y pasapurés."
+   },
+   {
+    "p": "Patatas deshechas en el guiso",
+    "fix": "Patata harinosa o cortada a cuchillo limpio. Usa firme o «cháscala» para que suelte almidón sin romperse."
+   }
+  ],
+  "history": "La patata y el boniato llegaron de América. El boniato se asentó antes en la cocina popular de la península; la patata tardó más en aceptarse, pero acabó siendo un alimento básico de toda Europa.",
+  "uses": [
+   "Guarniciones",
+   "Purés y cremas",
+   "Frituras",
+   "Guisos y arroces",
+   "Ensaladas templadas",
+   "Asados en ceniza"
+  ],
+  "keep": "En lugar fresco (8–12 °C), seco y oscuro, varias semanas. Peladas, en agua fría unas horas como mucho. Cocidas, 2–3 días en frío. El boniato no se guarda en cámara: se estropea con el frío.",
+  "pro": "Primer baño de las patatas fritas por la mañana, escurridas y en bandeja; segundo baño al pedido. Puré en baño maría, con película para que no forme costra.",
+  "related": [
+   "patata-chafada-brasa",
+   "fritura",
+   "pures-de-verdura",
+   "confitado",
+   "coccion-en-hoja-y-ceniza",
+   "asado-de-verduras"
+  ]
+ },
+ {
+  "id": "cebolla-y-ajo",
+  "name": "Cebolla y ajo",
+  "name_en": "Onion and garlic",
+  "cat": "producto",
+  "group": "Huerta",
+  "aka": [
+   "cebolla",
+   "ajo",
+   "chalota",
+   "cebolleta",
+   "puerro",
+   "calçot",
+   "ajo tierno",
+   "ajo negro",
+   "cebolla morada"
+  ],
+  "summary": "La base de casi todo: cada cebolla y cada forma de cortar y cocinar el ajo dan un sabor distinto.",
+  "what": "La familia de la cebolla da el fondo a sofritos, guisos y salsas, y también puede ser protagonista. La cebolla blanca o amarilla es la de cocinar; la dulce, para crudo y pochados largos; la morada, para crudo y encurtidos; la chalota, fina y aromática, para salsas; la cebolleta y el puerro, más suaves y vegetales; el calçot, una cebolla tierna que se asa a la brasa.\n\nEl ajo cambia por completo según cómo se trate: crudo y machacado pica y es intenso; laminado y frito, tostado y dulce; confitado o asado entero, suave y cremoso. Cuanto más se rompe, más fuerte sabe. El ajo tierno y el ajo negro (madurado con calor y humedad) son otros dos productos distintos.",
+  "method": [
+   "Cebolla para pochar: juliana o brunoise regular, fuego medio-bajo y una pizca de sal hasta que esté transparente y dulce, sin color.",
+   "Para caramelizar, sigue mucho más tiempo, desglasando cuando se pegue.",
+   "Cebolla en crudo: córtala fina y pásala unos minutos por agua con hielo o un ácido para suavizarla.",
+   "Ajo: quita el germen verde si está grande; lamina para freír, pica para sofreír y machaca para crudo.",
+   "Ajo confitado: dientes pelados cubiertos de aceite a fuego muy suave hasta que estén tiernos y dorados por los bordes."
+  ],
+  "ratios": [
+   {
+    "use": "Cebolla pochada",
+    "ratio": "20–30 minutos a fuego medio-bajo",
+    "note": "Transparente y sin color."
+   },
+   {
+    "use": "Ajo confitado",
+    "ratio": "Aceite a 90–100 °C, 40–60 minutos",
+    "note": "Burbujeo muy suave; guardar en frío."
+   },
+   {
+    "use": "Ajo laminado frito",
+    "ratio": "Aceite de partida frío, a fuego medio",
+    "note": "Sacar en dorado pálido: sigue tostándose."
+   },
+   {
+    "use": "Calçots o cebolletas a la brasa",
+    "ratio": "Llama viva, 8–12 minutos",
+    "note": "Hasta quemar la piel exterior."
+   }
+  ],
+  "variants": [
+   {
+    "id": "sofrito",
+    "name": "Sofrito",
+    "note": "Cebolla y tomate pochados."
+   },
+   {
+    "id": "caramelizacion-de-verduras",
+    "name": "Cebolla caramelizada",
+    "note": "Lenta y desglasada."
+   },
+   {
+    "id": "cebolla-encurtida",
+    "name": "Cebolla encurtida",
+    "note": "Morada, para dar acidez y color."
+   },
+   {
+    "id": "crema-ajo-asado",
+    "name": "Crema de ajo asado",
+    "note": "Ajo entero asado y triturado."
+   }
+  ],
+  "keys": [
+   "El corte cambia el sabor: más roto, más intenso.",
+   "Ajo quemado es ajo amargo: añádelo después de la cebolla.",
+   "La cebolla necesita tiempo: con prisa se quema antes de endulzarse.",
+   "Ajo o hierbas frescas en aceite: siempre en frío y pocos días, por seguridad.",
+   "Usa también la parte verde de cebolletas, puerros y ajos tiernos."
+  ],
+  "errors": [
+   {
+    "p": "Sofrito amargo",
+    "fix": "Ajo quemado. Échalo más tarde y a fuego más bajo."
+   },
+   {
+    "p": "Cebolla cruda que repite y pica",
+    "fix": "Corte grueso o cebolla fuerte. Corta fino y suaviza en agua fría o ácido."
+   },
+   {
+    "p": "Cebolla pochada con color",
+    "fix": "Fuego alto. Baja el fuego, tapa al principio y añade una pizca de sal."
+   }
+  ],
+  "history": "Cebolla y ajo se cultivan desde la antigüedad en el Mediterráneo y en Asia, y son la base aromática de muchas cocinas. Los calçots asados con salsa son una tradición de Cataluña, y el alioli muestra el peso del ajo en la cocina mediterránea.",
+  "uses": [
+   "Sofritos y bases",
+   "Guarniciones asadas o a la brasa",
+   "Encurtidos y crudos",
+   "Salsas y emulsiones",
+   "Cremas y purés"
+  ],
+  "keep": "Cebollas y ajos secos, semanas en lugar fresco, seco y ventilado, nunca en frío húmedo. Cebolletas y puerros, en frío. Ajo confitado, en frío y cubierto de aceite, como mucho 1 semana.",
+  "pro": "Pocha cebolla en tanda para toda la semana y congela en porciones. Ten ajo pelado del día, nunca de varios días en agua o aceite. Etiqueta el ajo confitado con la fecha.",
+  "related": [
+   "sofrito",
+   "caramelizacion-de-verduras",
+   "cebolla-encurtida",
+   "crema-ajo-asado",
+   "alioli",
+   "soubise",
+   "mirepoix"
+  ]
+ },
+ {
+  "id": "esparrago-y-guisante",
+  "name": "Espárrago y guisante",
+  "name_en": "Asparagus and peas",
+  "cat": "producto",
+  "group": "Huerta",
+  "aka": [
+   "espárrago verde",
+   "espárrago blanco",
+   "espárrago triguero",
+   "guisante",
+   "guisante lágrima",
+   "tirabeque",
+   "verdura de primavera"
+  ],
+  "summary": "Verduras de primavera que pierden dulzor cada hora que pasan desde la cosecha: muy frescas y cocinadas lo justo.",
+  "what": "El espárrago verde crece al sol y tiene un sabor vegetal y algo amargo; el triguero, silvestre y fino, es más intenso. El espárrago blanco crece bajo tierra, sin luz, y es más suave, dulce y fibroso por fuera: hay que pelarlo entero. El guisante es una semilla dulce que, tras la cosecha, convierte rápido su azúcar en almidón: el guisante lágrima, muy pequeño, se come casi crudo; los grandes piden algo más de cocción. El tirabeque se come con vaina.\n\nTodos son de primavera, y su calidad depende sobre todo del tiempo que ha pasado desde que se cogieron.",
+  "method": [
+   "Espárrago verde: dóblalo por la base y se romperá donde empieza la parte tierna; pela el tercio inferior si es grueso.",
+   "Verde a la brasa o plancha: aceite, sal y fuego vivo, sin cocer antes si es fino.",
+   "Espárrago blanco: pela desde debajo de la yema hacia abajo, ata en manojos y cuece en agua con sal y una pizca de azúcar; deja templar en su agua.",
+   "Guisante: desgrana al momento; escalda 30 segundos–2 minutos según tamaño y enfría en agua con hielo si no se sirve al momento.",
+   "Guarda pieles y vainas: dan un caldo vegetal muy dulce para cremas y arroces."
+  ],
+  "ratios": [
+   {
+    "use": "Espárrago blanco grueso",
+    "ratio": "12–18 minutos en agua salada",
+    "note": "Hasta que la punta del cuchillo entre en la base."
+   },
+   {
+    "use": "Espárrago verde a la plancha",
+    "ratio": "3–5 minutos",
+    "note": "Según grosor; firmes al morder."
+   },
+   {
+    "use": "Guisante lágrima",
+    "ratio": "20–30 segundos de escaldado o crudo",
+    "note": "Sal en escamas y buen aceite."
+   },
+   {
+    "use": "Caldo de vainas",
+    "ratio": "500 g de vainas por litro de agua, 20 minutos",
+    "note": "Colado y enfriado rápido."
+   }
+  ],
+  "variants": [
+   {
+    "id": "escaldado-de-verduras",
+    "name": "Escaldado",
+    "note": "Para fijar color y punto."
+   },
+   {
+    "id": "holandesa",
+    "name": "Espárragos con holandesa",
+    "note": "Clásico con salsa emulsionada."
+   },
+   {
+    "id": "verduras-a-la-brasa",
+    "name": "A la brasa",
+    "note": "Trigueros y verdes gruesos."
+   },
+   {
+    "id": "jugos-de-verdura",
+    "name": "Jugo de guisante",
+    "note": "Para salsas verdes y vivas."
+   }
+  ],
+  "keys": [
+   "Frescura sobre todo: el dulzor se pierde en horas.",
+   "Pelar el blanco entero; si no, queda fibroso.",
+   "Cocción corta en verdes y guisantes, y corte en frío para fijar el color.",
+   "Guarda los espárragos de pie con la base en agua, como flores.",
+   "Pieles y vainas al caldo."
+  ],
+  "errors": [
+   {
+    "p": "Espárrago blanco fibroso",
+    "fix": "Mal pelado o poco cocido. Pela más hondo y cuece hasta que la base esté tierna."
+   },
+   {
+    "p": "Guisantes harinosos",
+    "fix": "Guisantes viejos o pasados de cocción. Compra del día o congelados de calidad y cuece lo justo."
+   },
+   {
+    "p": "Verde apagado",
+    "fix": "Cocción larga o sin cortar. Escalda poco y enfría en agua con hielo."
+   }
+  ],
+  "history": "Los espárragos se cultivan en el Mediterráneo desde la antigüedad, y el blanco tiene una larga tradición en varias zonas de la península. Los guisantes frescos, con habas y alcachofas, son la base de muchos guisos de primavera.",
+  "uses": [
+   "Entrantes de temporada",
+   "Guarniciones",
+   "Arroces y guisos de primavera",
+   "Cremas y jugos verdes",
+   "Crudos y ensaladas"
+  ],
+  "keep": "Espárragos, 2–3 días en frío, de pie con la base en agua o envuelta en un paño húmedo. Guisantes con vaina, 1–2 días; desgranados, el mismo día o escaldados y congelados.",
+  "pro": "Compra en pequeñas cantidades varias veces por semana. Pela y ata los blancos por la mañana; cuece en tanda y guarda en su agua. Guisantes escaldados y fríos, listos para saltear.",
+  "related": [
+   "escaldado-de-verduras",
+   "verduras-al-vapor",
+   "verduras-a-la-brasa",
+   "holandesa",
+   "jugos-de-verdura",
+   "alcachofas",
+   "temporada-mes-a-mes"
+  ]
+ },
+ {
+  "id": "hinojo-y-apio",
+  "name": "Hinojo y apio",
+  "name_en": "Fennel and celery",
+  "cat": "producto",
+  "group": "Huerta",
+  "aka": [
+   "hinojo",
+   "bulbo de hinojo",
+   "hinojo silvestre",
+   "apio",
+   "apio en rama",
+   "apionabo",
+   "raíz de apio"
+  ],
+  "summary": "Dos verduras anisadas y frescas que valen crudas, asadas o braseadas; el apionabo, su raíz, da purés sedosos.",
+  "what": "El hinojo de huerta es un bulbo blanco, crujiente y anisado; crudo en láminas finas es fresco y dulce; asado, braseado o a la brasa se vuelve meloso y pierde intensidad. El hinojo silvestre crece en los márgenes de caminos de todo el Mediterráneo: sus tallos, hojas, flores y semillas perfuman caldos, escabeches y pescados.\n\nEl apio en rama aporta frescor y es parte del [[mirepoix]]; sus hojas son una hierba más. El apionabo es la raíz de una variedad de apio: carne blanca de sabor a apio y nuez, para purés, asado entero o [[coccion-a-la-sal|a la sal]].",
+  "method": [
+   "Hinojo crudo: quita las capas exteriores duras, corta en láminas de 1–2 mm con mandolina y guarda en agua con hielo para que rice y cruja; aliña al momento con cítrico y aceite.",
+   "Hinojo asado o a la brasa: en cuartos con la base para que no se deshaga; precocido o braseado y luego marcado.",
+   "Apio: quita las hebras de la parte exterior con un pelador; usa las hojas como hierba.",
+   "Apionabo: pela grueso con cuchillo, córtalo y ponlo en agua con limón para que no se oscurezca.",
+   "Puré de apionabo: cuécelo en leche y agua con sal hasta que esté muy tierno y tritura con mantequilla."
+  ],
+  "ratios": [
+   {
+    "use": "Hinojo braseado",
+    "ratio": "180 °C, 30–40 minutos",
+    "note": "En cuartos, con mantequilla y un poco de caldo."
+   },
+   {
+    "use": "Láminas crudas",
+    "ratio": "1–2 mm, 10 minutos en agua con hielo",
+    "note": "Escurrir y secar antes de aliñar."
+   },
+   {
+    "use": "Puré de apionabo",
+    "ratio": "1 kg de apionabo, 300 ml de leche, 60 g de mantequilla",
+    "note": "Ajustar con el líquido de cocción."
+   },
+   {
+    "use": "Apionabo a la sal",
+    "ratio": "180–190 °C, 1–1,5 horas",
+    "note": "Entero, en costra de sal."
+   }
+  ],
+  "variants": [
+   {
+    "id": "hinojo-brasa-limon",
+    "name": "Hinojo a la brasa con limón",
+    "note": "Braseado y marcado."
+   },
+   {
+    "id": "braseado",
+    "name": "Braseado",
+    "note": "Hinojo, apio o endivia en poco líquido."
+   },
+   {
+    "id": "coccion-a-la-sal",
+    "name": "Apionabo a la sal",
+    "note": "Entero y en costra."
+   },
+   {
+    "id": "pures-de-verdura",
+    "name": "Puré de apionabo",
+    "note": "Fino y sedoso."
+   }
+  ],
+  "keys": [
+   "Crudo, en láminas muy finas y en agua con hielo: crujiente y dulce.",
+   "Cocinado, pierde el anís y gana dulzor.",
+   "Corta el hinojo con su base para que los cuartos no se deshagan.",
+   "Hojas de hinojo y de apio: hierbas gratis para terminar platos.",
+   "El apionabo se oxida: limón o cocción inmediata."
+  ],
+  "errors": [
+   {
+    "p": "Hinojo crudo duro y fibroso",
+    "fix": "Capas exteriores o láminas gruesas. Retira lo exterior y usa mandolina."
+   },
+   {
+    "p": "Hinojo asado seco por fuera y duro dentro",
+    "fix": "Sin cocción previa. Brasea o cuece antes de marcar."
+   },
+   {
+    "p": "Puré de apionabo granuloso o gris",
+    "fix": "Poco cocido u oxidado. Cuece más y mantén en agua con limón al pelar."
+   }
+  ],
+  "history": "El hinojo silvestre forma parte de la cocina popular de todo el Mediterráneo, y el de bulbo se cultiva sobre todo en Italia y en el sur de Europa. El apio y el apionabo son verduras clásicas de las cocinas del centro y norte de Europa.",
+  "uses": [
+   "Ensaladas crudas",
+   "Guarniciones asadas y braseadas",
+   "Purés",
+   "Caldos y fumets",
+   "Escabeches y pescados con hinojo silvestre"
+  ],
+  "keep": "Hinojo y apio, 1 semana en frío envueltos en un paño húmedo. Apionabo entero, 2–3 semanas en frío. Láminas crudas, unas horas en agua con hielo.",
+  "pro": "Corta el hinojo crudo en mandolina antes del servicio y guárdalo en agua con hielo. Brasea por bandejas y marca al pedido. Los recortes, a caldos y fumets.",
+  "related": [
+   "hinojo-brasa-limon",
+   "braseado",
+   "mirepoix",
+   "caldo-de-verduras",
+   "coccion-a-la-sal",
+   "pures-de-verdura",
+   "hierbas-frescas"
+  ]
  }
 ]

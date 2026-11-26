@@ -1771,5 +1771,766 @@
    "construir-un-plato",
    "emplatado"
   ]
+ },
+ {
+  "id": "nombrar-un-plato",
+  "name": "Cómo nombrar un plato",
+  "name_en": "Naming a dish",
+  "cat": "creatividad",
+  "group": "Menús",
+  "aka": [
+   "nombre del plato",
+   "titulo del plato",
+   "como llamar a un plato",
+   "nombres de carta",
+   "bautizar un plato"
+  ],
+  "summary": "Cómo dar a un plato un nombre que diga qué es, despierte ganas y se recuerde, sin palabras vacías ni promesas que el plato no cumple.",
+  "what": "El nombre es lo primero que el comensal sabe de un plato, y a veces lo único que recuerda. Un buen nombre informa (qué producto y cómo), sugiere (una pista del sabor, el lugar o la idea) y se puede decir en voz alta en la sala sin explicaciones largas. Se escribe al final, cuando el plato ya está terminado, y debe ser honesto: si el nombre promete algo que no está en el plato, decepciona. Encaja con la forma de [[escribir-una-carta]] y con lo que se cuenta en [[contar-un-plato]].",
+  "method": [
+   "Escribe la lista de lo que hay en el plato por orden de importancia: protagonista, acompañante principal, acabado.",
+   "Elige qué es imprescindible nombrar: casi siempre el producto principal, y a veces la técnica si cambia mucho el plato (a la brasa, curado, en ceniza).",
+   "Decide si añades una pista: el lugar (de la isla, de la lonja), la temporada o un recuerdo. Solo si es verdad y suma.",
+   "Escribe tres o cuatro versiones y léelas en voz alta en el mismo tono que lo diría alguien de sala.",
+   "Quita adjetivos vacíos (delicioso, exquisito, sobre lecho de) y palabras que el comensal no entiende.",
+   "Comprueba que el nombre suena distinto al de los demás platos de la carta."
+  ],
+  "ratios": [
+   {
+    "use": "Longitud",
+    "ratio": "2–6 palabras",
+    "note": "Más largo, mejor como descripción debajo del nombre."
+   },
+   {
+    "use": "Elementos nombrados",
+    "ratio": "1–3",
+    "note": "El resto lo descubre el comensal en el plato."
+   },
+   {
+    "use": "Descripción opcional",
+    "ratio": "Una línea con 3–5 ingredientes",
+    "note": "Útil también para la información de alérgenos."
+   }
+  ],
+  "variants": [
+   {
+    "id": "escribir-una-carta",
+    "name": "Escribir una carta",
+    "note": "Cómo encajan los nombres en el conjunto."
+   },
+   {
+    "id": "contar-un-plato",
+    "name": "Contar un plato",
+    "note": "Lo que se dice en sala además del nombre."
+   },
+   {
+    "id": null,
+    "name": "Nombre evocador",
+    "note": "Una palabra o imagen en vez de ingredientes; funciona en menús degustación si sala lo explica."
+   }
+  ],
+  "keys": [
+   "Producto primero.",
+   "Honesto: el nombre no promete más de lo que hay.",
+   "Fácil de decir en voz alta.",
+   "Sin adjetivos de relleno.",
+   "Que se distinga de los demás platos de la carta."
+  ],
+  "errors": [
+   {
+    "p": "Nombre que no dice qué es",
+    "fix": "Demasiado poético. Añade el producto o una descripción breve debajo."
+   },
+   {
+    "p": "Nombre larguísimo",
+    "fix": "Se listan todos los ingredientes. Quédate con lo esencial y pasa el resto a la descripción."
+   },
+   {
+    "p": "Nombre que decepciona",
+    "fix": "Promete un producto que apenas está. Nombra solo lo que se nota."
+   }
+  ],
+  "history": "Durante mucho tiempo los platos se nombraron con fórmulas clásicas o dedicatorias. La cocina de las últimas décadas ha tendido a nombres más directos, centrados en el producto, o a títulos más personales en los menús degustación.",
+  "uses": [
+   "Carta y menú",
+   "Fichas del plato",
+   "Explicación en sala",
+   "Dossier y publicaciones"
+  ],
+  "keep": "Guarda los nombres descartados en la ficha del plato: a veces sirven para la siguiente versión.",
+  "pro": "Prueba el nombre con el equipo de sala antes de imprimir: si dudan al decirlo, cámbialo.",
+  "related": [
+   "escribir-una-carta",
+   "contar-un-plato",
+   "construir-un-plato",
+   "plato-firma"
+  ]
+ },
+ {
+  "id": "plato-firma",
+  "name": "El plato firma",
+  "name_en": "The signature dish",
+  "cat": "creatividad",
+  "group": "Oficio",
+  "aka": [
+   "plato insignia",
+   "plato estrella",
+   "plato emblema",
+   "signature",
+   "plato de la casa"
+  ],
+  "summary": "Qué convierte un plato en la firma de un cocinero o de una casa, cómo reconocerlo cuando aparece y cómo cuidarlo sin congelarlo.",
+  "what": "Un plato firma resume una cocina en un bocado: un producto, una técnica o una idea que solo tiene sentido en ese lugar y con esa persona. No se decide de antemano; se reconoce cuando un plato aguanta en la carta, el equipo lo hace con orgullo, los comensales vuelven por él y dice algo claro de quién lo cocina. Cuidarlo no significa dejarlo igual para siempre: puede ajustarse con la temporada o con el oficio, siempre que no pierda lo que lo hace reconocible.",
+  "method": [
+   "Repasa tu archivo: qué platos se han quedado más tiempo, cuáles piden los comensales y cuáles te representan mejor.",
+   "Para cada candidato, escribe en una frase qué lo hace único: un producto, una técnica, un recuerdo, una forma.",
+   "Comprueba que esa frase habla de tu cocina y de tu lugar, y no solo de una moda.",
+   "Define lo que no se puede tocar (el corazón del plato) y lo que puede cambiar (guarnición, temporada, montaje).",
+   "Documenta cada versión con fecha, fotos y cantidades.",
+   "Revísalo una vez al año: si ya no te representa, déjalo descansar sin miedo."
+  ],
+  "ratios": [
+   {
+    "use": "Elemento inamovible",
+    "ratio": "1–2 por plato",
+    "note": "Lo que lo hace reconocible."
+   },
+   {
+    "use": "Revisión",
+    "ratio": "Una vez al año, o cuando cambie la temporada de su producto",
+    "note": "Ajustar sin perder la esencia."
+   },
+   {
+    "use": "Platos firma por casa",
+    "ratio": "1–3",
+    "note": "Más ya no es firma, es carta."
+   }
+  ],
+  "variants": [
+   {
+    "id": "documentar-tu-obra",
+    "name": "Documentar tu obra",
+    "note": "El archivo es lo que permite ver qué plato es tu firma."
+   },
+   {
+    "id": "cocina-ibicenca",
+    "name": "Firma de raíz",
+    "note": "Un plato tradicional de la isla reinterpretado como emblema."
+   },
+   {
+    "id": null,
+    "name": "Firma de técnica",
+    "note": "Una forma propia de usar la brasa, un curado o un fermento que se repite en varios platos."
+   }
+  ],
+  "keys": [
+   "Se reconoce, no se fabrica.",
+   "Dice algo concreto de ti y de tu lugar.",
+   "Protege el corazón; deja respirar el resto.",
+   "Debe salir igual de bien en cada servicio.",
+   "Una firma que ya no te representa puede retirarse."
+  ],
+  "errors": [
+   {
+    "p": "Plato firma que es una moda",
+    "fix": "Se eligió por lo que se lleva. Busca lo que solo tú y tu lugar podéis hacer."
+   },
+   {
+    "p": "Plato congelado en el tiempo",
+    "fix": "Miedo a tocarlo. Ajusta lo accesorio con cada temporada."
+   },
+   {
+    "p": "Plato que pierde su esencia",
+    "fix": "Cambios acumulados. Vuelve a la frase que lo definía y quita lo que sobra."
+   }
+  ],
+  "history": "Muchos cocineros y casas se han identificado durante décadas con uno o pocos platos que resumían su cocina. Es una idea tan antigua como los restaurantes y las casas de comidas.",
+  "uses": [
+   "Identidad de la carta",
+   "Dossier y presentación profesional",
+   "Formación del equipo",
+   "Comunicación de la casa"
+  ],
+  "keep": "Su ficha, con todas sus versiones y fotos, es una de las piezas más importantes de tu archivo.",
+  "pro": "Que todo el equipo sepa hacerlo y contarlo. Prueba el plato firma con más frecuencia que el resto.",
+  "related": [
+   "documentar-tu-obra",
+   "construir-un-plato",
+   "contar-un-plato",
+   "nombrar-un-plato",
+   "cocina-ibicenca"
+  ]
+ },
+ {
+  "id": "cocina-y-paisaje",
+  "name": "Cocina y paisaje",
+  "name_en": "Cooking and landscape",
+  "cat": "creatividad",
+  "group": "Raíces",
+  "aka": [
+   "paisaje en el plato",
+   "territorio",
+   "cocina de paisaje",
+   "plato de lugar",
+   "monte y mar",
+   "entorno"
+  ],
+  "summary": "Cómo partir de un paisaje concreto (el monte, la costa, el campo de secano, las salinas) para construir platos que lo evoquen con sus productos y sin decorados.",
+  "what": "Un paisaje es un conjunto de productos que conviven: en el monte de la isla, pino, romero, tomillo, algarroba y caza; en la costa, pescado de roca, algas, sal e hinojo marino; en el secano, almendra, higo, olivo y cereal. Cocinar el paisaje es juntar en un plato lo que crece y vive junto, en su temporada, y cocinarlo con técnicas que recuerden ese lugar (la brasa de leña, el humo, la sal). La trampa es convertirlo en decorado: piedras, musgo o arena en el plato no son paisaje si el sabor no lo cuenta.",
+  "method": [
+   "Elige un paisaje concreto que conozcas bien y ve allí en distintas épocas del año.",
+   "Haz la lista de lo comestible: plantas, frutos, animales, pesca, y lo que se cultiva o se recoge.",
+   "Fíjate en aromas, texturas y colores: el olor del pinar, la sal seca en la roca, la tierra tras la lluvia.",
+   "Elige un protagonista de ese paisaje y acompáñalo solo con productos del mismo entorno.",
+   "Busca una técnica que también sea del lugar: brasa de leña de la zona, humo de hierbas, salazón, secado al sol.",
+   "Prueba el plato con los ojos cerrados: si sabe al lugar, el montaje puede ser sencillo."
+  ],
+  "ratios": [
+   {
+    "use": "Productos del mismo entorno",
+    "ratio": "Todos los esenciales del plato",
+    "note": "Lo de fuera, solo como apoyo técnico (sal, grasa, ácido)."
+   },
+   {
+    "use": "Elementos decorativos no comestibles",
+    "ratio": "Ninguno, o solo la vajilla",
+    "note": "El paisaje está en el sabor."
+   },
+   {
+    "use": "Visitas al lugar",
+    "ratio": "Una por estación",
+    "note": "El paisaje cambia con el año."
+   }
+  ],
+  "variants": [
+   {
+    "id": "producto-de-la-isla",
+    "name": "Producto de la isla",
+    "note": "Conocer la despensa del territorio."
+   },
+   {
+    "id": "temporada-mes-a-mes",
+    "name": "La temporada mes a mes",
+    "note": "Cuándo está cada parte del paisaje en su punto."
+   },
+   {
+    "id": null,
+    "name": "Menú de paisajes",
+    "note": "Un menú degustación que recorre mar, costa, campo y monte."
+   }
+  ],
+  "keys": [
+   "Lo que vive junto suele ir bien junto.",
+   "El paisaje se cuenta con el sabor, no con el decorado.",
+   "Recoge solo lo que sabes identificar con seguridad y donde está permitido.",
+   "Respeta el lugar: coge poco y de donde abunda.",
+   "Las técnicas del lugar (leña, humo, sal, sol) son parte del paisaje."
+  ],
+  "errors": [
+   {
+    "p": "Plato decorado, no paisaje",
+    "fix": "Piedras o musgo de adorno. Quítalos y busca el paisaje en los productos."
+   },
+   {
+    "p": "Mezcla de paisajes",
+    "fix": "Productos de entornos distintos sin relación. Elige uno y sé fiel."
+   },
+   {
+    "p": "Recolección insegura",
+    "fix": "Plantas o setas sin identificar bien. Recoge solo con certeza total y con quien conozca el terreno."
+   }
+  ],
+  "history": "Cocinar con lo que da el entorno ha sido lo normal en las cocinas rurales. En las últimas décadas muchos cocineros han hecho del paisaje propio el eje de su cocina de autor.",
+  "uses": [
+   "Platos de autor",
+   "Menú degustación con hilo",
+   "Formación del equipo en el territorio",
+   "Contar el lugar en sala"
+  ],
+  "keep": "Lleva un cuaderno de cada paisaje: qué hay en cada estación, dónde y con quién.",
+  "pro": "Sal con el equipo al monte, a la costa o al campo una vez por estación. Lo que se ve y se huele allí da más ideas que cualquier libro.",
+  "related": [
+   "producto-de-la-isla",
+   "cocina-ibicenca",
+   "temporada-mes-a-mes",
+   "hierbas-frescas",
+   "fuego-y-brasa",
+   "emplatado"
+  ]
+ },
+ {
+  "id": "memoria-del-sabor",
+  "name": "La memoria del sabor",
+  "name_en": "Flavour memory",
+  "cat": "creatividad",
+  "group": "Raíces",
+  "aka": [
+   "recuerdo",
+   "sabor de infancia",
+   "cocina de la memoria",
+   "recetas familiares",
+   "nostalgia en el plato"
+  ],
+  "summary": "Cómo usar un recuerdo de sabor (un plato de casa, un olor, una merienda) como punto de partida para un plato nuevo sin perder lo que lo hacía reconocible.",
+  "what": "Muchos de los platos que más emocionan nacen de un recuerdo: el guiso de una abuela, la fruta comida en el árbol, el pan con aceite de la merienda. El recuerdo no es una receta exacta sino un conjunto de sensaciones: un aroma, una textura, una temperatura, un momento. Trabajar con la memoria es identificar qué parte de ese recuerdo es la esencial y reconstruirla con la técnica de hoy, de forma que quien lo coma reconozca algo aunque el plato sea distinto. Para la cocina de raíz de la isla, mira [[cocina-ibicenca]].",
+  "method": [
+   "Escribe el recuerdo con todo el detalle que puedas: quién cocinaba, dónde, qué olía, qué temperatura tenía, con qué se comía.",
+   "Si puedes, recupera la receta original: pregunta a quien la hacía y cocínala con esa persona.",
+   "Señala la sensación esencial: lo que, si falta, ya no es ese recuerdo.",
+   "Decide qué cambias: la forma, la textura, el formato o el producto, nunca la sensación esencial.",
+   "Cocina versiones y dáselas a probar a alguien que comparta el recuerdo: si lo reconoce, vas bien.",
+   "Cuenta la historia en la sala solo si suma; el plato tiene que funcionar también sin ella."
+  ],
+  "ratios": [
+   {
+    "use": "Sensaciones esenciales",
+    "ratio": "1–2 por recuerdo",
+    "note": "Las que no pueden faltar."
+   },
+   {
+    "use": "Fidelidad",
+    "ratio": "Sabor reconocible en el primer bocado",
+    "note": "La forma puede ser nueva."
+   },
+   {
+    "use": "Pruebas con quien comparte el recuerdo",
+    "ratio": "Al menos una por versión",
+    "note": "Su reacción es la medida."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cocina-ibicenca",
+    "name": "Cocina de raíz",
+    "note": "La memoria colectiva de la isla."
+   },
+   {
+    "id": "contar-un-plato",
+    "name": "Contar un plato",
+    "note": "Cómo compartir la historia sin que pese más que el sabor."
+   },
+   {
+    "id": null,
+    "name": "Recuerdo deconstruido",
+    "note": "Los elementos de un plato clásico presentados por separado; funciona solo si el sabor se reconoce."
+   }
+  ],
+  "keys": [
+   "El recuerdo es una sensación, no una receta.",
+   "Aprende la versión original antes de cambiarla.",
+   "Protege la sensación esencial.",
+   "El plato tiene que gustar a quien no comparte el recuerdo.",
+   "Apunta las recetas familiares antes de que se pierdan."
+  ],
+  "errors": [
+   {
+    "p": "Nadie reconoce el recuerdo",
+    "fix": "Se cambió la sensación esencial. Vuelve a la versión original y cambia solo la forma."
+   },
+   {
+    "p": "Plato que solo funciona con la historia",
+    "fix": "Sin la explicación no gusta. Trabaja el sabor hasta que se sostenga solo."
+   },
+   {
+    "p": "Copia exacta sin aportar nada",
+    "fix": "No hay mirada propia. Decide qué puedes mejorar sin traicionarlo."
+   }
+  ],
+  "history": "La cocina de casa y la memoria familiar han sido siempre la base de las cocinas regionales. En la cocina de autor de las últimas décadas, el recuerdo se ha convertido en una fuente explícita de creación.",
+  "uses": [
+   "Platos de autor",
+   "Menú con hilo personal",
+   "Recuperar recetas familiares",
+   "Contar tu historia como cocinero"
+  ],
+  "keep": "Guarda en el diario los recuerdos de sabor que te vengan, con fecha y detalle; son ideas para años.",
+  "pro": "Haz una sesión con el equipo en la que cada uno traiga un recuerdo de sabor y su receta. Salen ideas y se conoce mejor al equipo.",
+  "related": [
+   "cocina-ibicenca",
+   "contar-un-plato",
+   "construir-un-plato",
+   "documentar-tu-obra",
+   "cocina-y-paisaje"
+  ]
+ },
+ {
+  "id": "un-solo-producto",
+  "name": "Trabajar con un solo producto",
+  "name_en": "Working with a single product",
+  "cat": "creatividad",
+  "group": "Método",
+  "aka": [
+   "producto unico",
+   "variaciones de un producto",
+   "un producto varias texturas",
+   "monografico",
+   "estudio de producto"
+  ],
+  "summary": "Explorar un único producto a fondo (todas sus partes, cocciones y texturas) para entenderlo y sacar de él uno o varios platos.",
+  "what": "Antes de combinar un producto con otros, conviene conocerlo solo. Un tomate, una gamba o una alcachofa tienen partes distintas (piel, pulpa, semillas, hojas, cabeza), cambian según la variedad y el punto de madurez, y responden de forma diferente al crudo, la brasa, el caldo, el secado o la conserva. Hacer un estudio de producto es cocinarlo de muchas maneras, una al lado de otra, y quedarse con lo que mejor lo muestra. De ahí salen platos de un solo producto en varias formas, o simplemente un mejor uso de ese producto en todos los demás.",
+  "method": [
+   "Elige un producto en su mejor momento y consigue varias piezas, a ser posible de variedades u orígenes distintos.",
+   "Pruébalo crudo, entero y por partes, con un poco de sal.",
+   "Cocínalo de 6–10 formas distintas con las mismas condiciones: brasa, asado, vapor, confitado, caldo, encurtido, secado, fermentado, frito.",
+   "Cata todo a la vez y apunta qué cambia en sabor, textura y aroma.",
+   "Elige las dos o tres formas que mejor lo muestran y que contrastan entre sí.",
+   "Construye un plato con esas formas y, como mucho, un apoyo de sal, grasa y ácido."
+  ],
+  "ratios": [
+   {
+    "use": "Cocciones de prueba",
+    "ratio": "6–10",
+    "note": "Con las mismas condiciones para comparar."
+   },
+   {
+    "use": "Formas en el plato final",
+    "ratio": "2–4",
+    "note": "Más se vuelve un catálogo."
+   },
+   {
+    "use": "Ingredientes de apoyo",
+    "ratio": "Sal, una grasa y un ácido",
+    "note": "Que no compitan con el producto."
+   }
+  ],
+  "variants": [
+   {
+    "id": "de-la-tecnica-al-plato",
+    "name": "De la técnica al plato",
+    "note": "El camino inverso: una técnica probada en muchos productos."
+   },
+   {
+    "id": "cocina-de-aprovechamiento",
+    "name": "Cocina de aprovechamiento",
+    "note": "Las partes que no se usan del producto también se exploran."
+   },
+   {
+    "id": "menu-de-temporada",
+    "name": "Menú de un producto",
+    "note": "Un menú entero alrededor de un producto en su pico."
+   }
+  ],
+  "keys": [
+   "Estudia el producto solo antes de acompañarlo.",
+   "Usa todas sus partes: muchas veces la sorpresa está en la que se tira.",
+   "Cata todas las pruebas a la vez.",
+   "En el plato, pocas formas y bien distintas.",
+   "Apunta variedad, origen y punto de madurez: cambian el resultado."
+  ],
+  "errors": [
+   {
+    "p": "Plato catálogo",
+    "fix": "Demasiadas formas del producto. Quédate con las que más contrastan."
+   },
+   {
+    "p": "Todas las formas saben igual",
+    "fix": "Técnicas parecidas. Combina crudo, calor seco, calor húmedo y conserva."
+   },
+   {
+    "p": "Producto tapado",
+    "fix": "Acompañantes fuertes. Reduce el apoyo a sal, grasa y ácido."
+   }
+  ],
+  "history": "Los platos y menús dedicados a un solo producto en varias formas se popularizaron en la cocina de autor de finales del siglo XX, aunque la cocina popular siempre ha aprovechado un producto en muchas preparaciones.",
+  "uses": [
+   "Sesiones de I+D",
+   "Platos de un producto",
+   "Formación del paladar",
+   "Menús de temporada"
+  ],
+  "keep": "Guarda el estudio completo con fotos de cada prueba: te servirá cada vez que vuelva ese producto.",
+  "pro": "Dedica una sesión de I+D al mes a un producto de temporada con el equipo. Repártete las cocciones y catad todo junto.",
+  "related": [
+   "de-la-tecnica-al-plato",
+   "cocina-de-aprovechamiento",
+   "catas-y-notas",
+   "menu-de-temporada",
+   "producto-de-la-isla"
+  ]
+ },
+ {
+  "id": "del-error-al-plato",
+  "name": "Del error al plato",
+  "name_en": "From mistake to dish",
+  "cat": "creatividad",
+  "group": "Método",
+  "aka": [
+   "error creativo",
+   "accidente en cocina",
+   "aprender del error",
+   "serendipia",
+   "fallo que funciona"
+  ],
+  "summary": "Cómo aprovechar lo que sale mal (un quemado, un corte, una textura inesperada) para descubrir algo nuevo, entenderlo y convertirlo en una técnica repetible.",
+  "what": "En una cocina de I+D muchas ideas nacen de un error: una salsa que se corta y resulta agradable, una verdura olvidada en la brasa que sabe mejor así, un fermento que fue más lejos de lo previsto. El error solo es útil si se mira con atención: se prueba en vez de tirarlo, se entiende qué ha pasado y se aprende a provocarlo a propósito. Lo que no se puede repetir es una anécdota; lo que se repite, una técnica.",
+  "method": [
+   "Antes de tirar algo que ha salido mal, pruébalo con atención: ¿tiene algo interesante?",
+   "Si lo tiene, apunta exactamente qué pasó: tiempo, temperatura, cantidades, orden.",
+   "Busca la causa: qué cambió respecto a lo previsto y por qué ha dado ese resultado.",
+   "Intenta reproducirlo a propósito, controlando la variable que lo causó.",
+   "Cuando lo consigas dos o tres veces seguidas, piensa con qué producto o plato encaja.",
+   "Si el error tiene un riesgo para la seguridad (un fermento descontrolado, un producto alterado), no se aprovecha: se tira."
+  ],
+  "ratios": [
+   {
+    "use": "Repeticiones para darlo por técnica",
+    "ratio": "3 seguidas con el mismo resultado",
+    "note": "Si no, aún es casualidad."
+   },
+   {
+    "use": "Variable a controlar",
+    "ratio": "Una cada vez",
+    "note": "Mira [[catas-y-notas]]."
+   },
+   {
+    "use": "Errores aprovechables",
+    "ratio": "Solo los seguros",
+    "note": "Con la seguridad alimentaria no se experimenta."
+   }
+  ],
+  "variants": [
+   {
+    "id": "catas-y-notas",
+    "name": "Pruebas de cata",
+    "note": "El método para reproducir y comparar."
+   },
+   {
+    "id": "de-la-tecnica-al-plato",
+    "name": "De la técnica al plato",
+    "note": "Cuando el error se convierte en técnica, se explora en otros productos."
+   },
+   {
+    "id": null,
+    "name": "Error del comensal",
+    "note": "Lo que el comensal deja o combina de forma inesperada también da pistas."
+   }
+  ],
+  "keys": [
+   "Prueba antes de tirar.",
+   "Apunta enseguida: el detalle se olvida en minutos.",
+   "Entiende la causa antes de intentar repetirlo.",
+   "Lo que no se repite no entra en carta.",
+   "La seguridad no se negocia."
+  ],
+  "errors": [
+   {
+    "p": "No se puede repetir",
+    "fix": "No se apuntó lo que pasó. Lleva siempre una libreta a mano en las pruebas."
+   },
+   {
+    "p": "Error convertido en plato sin sentido",
+    "fix": "Se usa porque es curioso, no porque mejore. Llévalo solo donde aporte."
+   },
+   {
+    "p": "Producto inseguro aprovechado",
+    "fix": "Fermento o conserva alterados. Tíralo sin dudar."
+   }
+  ],
+  "history": "Muchas elaboraciones clásicas tienen leyendas de accidentes en su origen, y aunque pocas se pueden comprobar, la experiencia de cualquier cocina confirma que los errores bien mirados enseñan mucho.",
+  "uses": [
+   "Sesiones de I+D",
+   "Nuevas técnicas propias",
+   "Formación del equipo",
+   "Revisión de fallos de servicio"
+  ],
+  "keep": "Apunta los errores interesantes en el diario o en el cuaderno de chispas del Laboratorio, aunque no sepas aún qué hacer con ellos.",
+  "pro": "Crea en el equipo la costumbre de enseñar lo que sale raro antes de tirarlo. Un minuto de cata puede ahorrar meses de búsqueda.",
+  "related": [
+   "catas-y-notas",
+   "de-la-tecnica-al-plato",
+   "documentar-tu-obra",
+   "construir-un-plato"
+  ]
+ },
+ {
+  "id": "prueba-con-el-equipo",
+  "name": "Cómo preparar una prueba con el equipo",
+  "name_en": "Running a tasting session with the team",
+  "cat": "creatividad",
+  "group": "Método",
+  "aka": [
+   "cata con el equipo",
+   "sesion de prueba",
+   "cena de prueba",
+   "prueba de platos",
+   "degustacion interna"
+  ],
+  "summary": "Cómo organizar una sesión de prueba de platos nuevos con el equipo para recoger opiniones útiles, decidir rápido y salir con los cambios claros.",
+  "what": "Probar un plato solo con el cocinero que lo creó no basta: hace falta el paladar de otros, incluido el de sala, que lo explicará y verá la reacción del comensal. Una buena prueba tiene un objetivo claro, platos servidos como en el servicio, una forma ordenada de opinar y una decisión al final. Sin estructura, se convierte en una charla donde gana quien más habla. Es la versión en grupo de las [[catas-y-notas]].",
+  "method": [
+   "Define el objetivo: qué platos se prueban y qué hay que decidir (entra o no, qué cambiar, cómo se cuenta).",
+   "Prepara los platos exactamente como en el servicio: ración, temperatura, vajilla y montaje.",
+   "Reparte una hoja sencilla por plato: qué funciona, qué falta, qué sobra, una nota del 1 al 5.",
+   "Cata en silencio primero y apunta; después, ronda de opiniones empezando por quien tenga menos experiencia.",
+   "Quien creó el plato escucha y pregunta, no defiende.",
+   "Termina con una decisión por plato y una lista de cambios con responsable y fecha de la siguiente prueba."
+  ],
+  "ratios": [
+   {
+    "use": "Platos por sesión",
+    "ratio": "3–6",
+    "note": "Más cansa el paladar."
+   },
+   {
+    "use": "Personas",
+    "ratio": "4–8, cocina y sala",
+    "note": "Con al menos una persona que no haya cocinado los platos."
+   },
+   {
+    "use": "Duración",
+    "ratio": "45–90 minutos",
+    "note": "Fuera del servicio."
+   }
+  ],
+  "variants": [
+   {
+    "id": "catas-y-notas",
+    "name": "Pruebas de cata",
+    "note": "El método individual de cata y anotación."
+   },
+   {
+    "id": "del-plato-al-menu",
+    "name": "Cena de prueba de menú",
+    "note": "El menú entero, de seguido, con tiempos reales."
+   },
+   {
+    "id": "contar-un-plato",
+    "name": "Prueba de sala",
+    "note": "Sala explica el plato y cocina comprueba que se entiende."
+   }
+  ],
+  "keys": [
+   "Objetivo claro antes de empezar.",
+   "Platos como en servicio, no versiones de cocina.",
+   "Cata en silencio y anota antes de hablar.",
+   "Habla primero quien tiene menos experiencia: así opina con libertad.",
+   "Sal siempre con decisiones y cambios concretos."
+  ],
+  "errors": [
+   {
+    "p": "Todo el mundo dice que está bien",
+    "fix": "No hay confianza o no hay estructura. Usa la hoja y pide siempre una cosa que cambiarías."
+   },
+   {
+    "p": "Sesión sin decisiones",
+    "fix": "Falta de objetivo. Defínelo antes y cierra con una decisión por plato."
+   },
+   {
+    "p": "Opiniones que no sirven",
+    "fix": "Opiniones de gusto general. Pide detalles: qué, cuánto, cuándo se nota."
+   }
+  ],
+  "history": "Las pruebas internas de platos y menús son una práctica habitual en las cocinas profesionales antes de un cambio de carta, y se han vuelto más estructuradas con la cocina de I+D.",
+  "uses": [
+   "Cambio de carta",
+   "Menú nuevo",
+   "Formación del equipo",
+   "Preparar a sala para explicar los platos"
+  ],
+  "keep": "Guarda las hojas de la prueba con la ficha de cada plato y la fecha.",
+  "pro": "Fija un día y una hora para las pruebas y respétalo. Rota quién cocina y quién opina para que todo el equipo aprenda a probar.",
+  "related": [
+   "catas-y-notas",
+   "del-plato-al-menu",
+   "contar-un-plato",
+   "construir-un-plato",
+   "documentar-tu-obra"
+  ]
+ },
+ {
+  "id": "inspiracion-fuera-de-la-cocina",
+  "name": "Inspiración fuera de la cocina",
+  "name_en": "Inspiration beyond the kitchen",
+  "cat": "creatividad",
+  "group": "Método",
+  "aka": [
+   "buscar ideas",
+   "fuentes de inspiracion",
+   "creatividad",
+   "arte y cocina",
+   "viajes",
+   "cuaderno de ideas"
+  ],
+  "summary": "Cómo buscar ideas para la cocina en el arte, la naturaleza, los viajes, los mercados, la artesanía o la música, y traducirlas en platos sin copiar.",
+  "what": "Las ideas que más sorprenden suelen venir de fuera de la cocina: un color en un cuadro, la forma de una concha, la textura de una pared de piedra seca, el ritmo de una canción, un mercado en otro país, el trabajo de un ceramista. La inspiración no es copiar la forma de algo en un plato, sino entender qué te ha llamado la atención (un contraste, una proporción, una sensación) y buscar cómo se traduce en sabor, textura o montaje. Funciona mejor con un hábito: mirar con atención, apuntar enseguida y volver a las notas con calma.",
+  "method": [
+   "Lleva siempre un cuaderno o usa el cuaderno de chispas del Laboratorio, y apunta lo que te llame la atención en cuanto lo veas.",
+   "Apunta no solo qué viste, sino qué te provocó: un contraste, una calma, una sorpresa, un color.",
+   "Una vez a la semana, repasa las notas y elige una para trabajar.",
+   "Tradúcela a cocina: ¿qué sabor, textura, temperatura o montaje produciría esa misma sensación?",
+   "Haz pruebas y quédate con lo que funcione como plato, aunque se aleje de la idea original.",
+   "No copies la obra de otro cocinero: si te inspira un plato ajeno, busca la idea de fondo y llévala a tu producto y tu lugar."
+  ],
+  "ratios": [
+   {
+    "use": "Notas en el cuaderno",
+    "ratio": "Varias por semana",
+    "note": "La cantidad trae la calidad."
+   },
+   {
+    "use": "Ideas trabajadas",
+    "ratio": "1 por semana",
+    "note": "Del cuaderno a la prueba."
+   },
+   {
+    "use": "Salidas fuera de la cocina",
+    "ratio": "Al menos una al mes",
+    "note": "Museo, mercado, monte, taller de un artesano."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cocina-y-paisaje",
+    "name": "Cocina y paisaje",
+    "note": "La naturaleza del propio lugar como fuente."
+   },
+   {
+    "id": "memoria-del-sabor",
+    "name": "La memoria del sabor",
+    "note": "Los recuerdos como fuente."
+   },
+   {
+    "id": "emplatado",
+    "name": "Emplatado",
+    "note": "Donde más se nota la influencia del arte y la artesanía."
+   }
+  ],
+  "keys": [
+   "Mira con atención y apunta enseguida.",
+   "Busca la sensación, no la forma.",
+   "Traduce la idea al sabor antes que al montaje.",
+   "Inspirarse no es copiar: la idea pasa por tu producto y tu lugar.",
+   "El hábito pesa más que el talento."
+  ],
+  "errors": [
+   {
+    "p": "Plato que imita una forma y no sabe a nada",
+    "fix": "Se copió el aspecto. Vuelve a la sensación y trabaja el sabor."
+   },
+   {
+    "p": "Ideas que se pierden",
+    "fix": "No se apuntan. Cuaderno siempre a mano."
+   },
+   {
+    "p": "Todo se parece a lo que hace otro",
+    "fix": "Se mira demasiado a otros cocineros. Busca fuera de la cocina y en tu entorno."
+   }
+  ],
+  "history": "Los cocineros siempre se han inspirado en su entorno, en los viajes y en otras artes, y muchos de los cambios en la cocina de autor de las últimas décadas vinieron del diálogo con el arte y el diseño.",
+  "uses": [
+   "Sesiones de creación",
+   "Nuevos platos y emplatados",
+   "Formación del equipo",
+   "Salir de un bloqueo creativo"
+  ],
+  "keep": "Guarda el cuaderno de ideas como parte de tu archivo, con fechas: con el tiempo verás de dónde salió cada plato.",
+  "pro": "Organiza salidas con el equipo a mercados, talleres o museos, y pide a cada uno que vuelva con una idea apuntada.",
+  "related": [
+   "cocina-y-paisaje",
+   "memoria-del-sabor",
+   "emplatado",
+   "construir-un-plato",
+   "documentar-tu-obra"
+  ]
  }
 ]

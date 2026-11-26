@@ -2658,5 +2658,817 @@
       "vinagreta-piparras",
       "acidez-en-cocina"
     ]
+  },
+  {
+    "id": "chutneys-y-compotas-saladas",
+    "name": "Chutneys y compotas saladas",
+    "name_en": "Chutneys and savoury compotes",
+    "cat": "salsas",
+    "group": "Aliños de pase",
+    "aka": [
+      "chutney",
+      "compota salada",
+      "compota de manzana",
+      "mermelada de cebolla",
+      "agridulce de fruta",
+      "relish"
+    ],
+    "role": "toque",
+    "techniques": [
+      "caramelizado"
+    ],
+    "summary": "Fruta o verdura cocida lentamente con vinagre, azúcar y especias hasta quedar espesa y agridulce: el contrapunto de carnes, quesos y foie.",
+    "what": "El chutney es una conserva agridulce: fruta (o verdura) con cebolla, vinagre, azúcar y especias, cocida despacio hasta que espesa. Tiene más ácido y especia que una [[confituras-y-mermeladas|mermelada]] y se usa como condimento. Las compotas saladas son más sencillas: manzana, membrillo, ciruela o cebolla cocidas con poco azúcar y algo de ácido para acompañar carnes grasas. Con carnes a la brasa, cerdo, pato, caza y quesos curados cumplen el mismo papel que un encurtido, pero con dulzor.",
+    "base": {
+      "for": "unos 900 g de chutney (higo, ciruela, mango o manzana)",
+      "items": [
+        [
+          "Fruta pelada en dados",
+          "1 kg"
+        ],
+        [
+          "Cebolla o chalota en brunoise",
+          "250 g"
+        ],
+        [
+          "Vinagre de vino o de manzana",
+          "250 ml"
+        ],
+        [
+          "Azúcar moreno",
+          "200 g"
+        ],
+        [
+          "Jengibre fresco rallado",
+          "15 g"
+        ],
+        [
+          "Mostaza en grano, cilantro, pimienta y una guindilla",
+          "al gusto"
+        ],
+        [
+          "Sal",
+          "8 g"
+        ],
+        [
+          "Pasas o fruta seca (opcional)",
+          "60 g"
+        ]
+      ],
+      "steps": [
+        "Pon la cebolla con el vinagre, el azúcar, la sal y las especias y lleva a hervor.",
+        "Añade la fruta y cuece a fuego suave, removiendo de vez en cuando, 60–90 minutos.",
+        "Está listo cuando al pasar una cuchara por el fondo la raya tarda en cerrarse y el líquido se ha vuelto un almíbar espeso.",
+        "Ajusta de sal, ácido y picante.",
+        "Envasa en caliente en tarros limpios y escaldados, o guarda en frío."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Chutney de fruta",
+        "ratio": "1 kg de fruta, 250 g de cebolla, 250 ml de vinagre y 200–250 g de azúcar",
+        "note": "60–90 minutos a fuego suave."
+      },
+      {
+        "use": "Compota de manzana para cerdo",
+        "ratio": "1 kg de manzana, 40–60 g de azúcar, 30 g de mantequilla y unas gotas de vinagre",
+        "note": "15–20 minutos; triturada o en trozos."
+      },
+      {
+        "use": "Cebolla agridulce",
+        "ratio": "1 kg de cebolla pochada, 100 g de azúcar y 100 ml de vinagre de vino tinto",
+        "note": "Reducida hasta glasear."
+      },
+      {
+        "use": "Por ración",
+        "ratio": "15–25 g",
+        "note": "Es un condimento, no una guarnición."
+      }
+    ],
+    "variants": [
+      {
+        "id": "confituras-y-mermeladas",
+        "name": "Mermelada",
+        "note": "Más dulce y sin especia; para postres y quesos."
+      },
+      {
+        "id": "pickles-de-servicio",
+        "name": "Encurtidos",
+        "note": "El contrapunto ácido sin dulzor."
+      },
+      {
+        "id": "higos-y-algarroba",
+        "name": "Chutney de higo",
+        "note": "Higos de final de verano con vinagre de vino y pimienta; para quesos y foie."
+      }
+    ],
+    "keys": [
+      "Equilibrio entre dulce, ácido y picante: prueba al final y corrige.",
+      "Fuego suave y largo: la fruta se confita sin quemarse.",
+      "Corta la fruta en dados parejos para que quede con textura.",
+      "La especia, tostada antes y en grano o recién molida.",
+      "Gana con unos días de reposo en frío."
+    ],
+    "errors": [
+      {
+        "p": "Muy líquido",
+        "fix": "Poca reducción. Cuece más a fuego suave removiendo."
+      },
+      {
+        "p": "Sabor a vinagre crudo",
+        "fix": "Cocción corta. Cuece hasta que el ácido se integre."
+      },
+      {
+        "p": "Pegado o quemado en el fondo",
+        "fix": "Fuego alto o sin remover. Cazo de fondo grueso y fuego suave."
+      }
+    ],
+    "history": "El chutney viene de las cocinas del sur de Asia y se extendió por Europa en la época colonial británica. Las salsas agridulces de fruta para carnes son antiguas en muchas cocinas europeas.",
+    "uses": [
+      "Cerdo, pato y caza a la brasa",
+      "Tabla de quesos",
+      "Foie y patés",
+      "Bocadillos de carne",
+      "Curry y platos especiados"
+    ],
+    "keep": "En tarro escaldado y en frío, 1 mes; esterilizado y cerrado, varios meses. Abierto, 2–3 semanas en frío.",
+    "pro": "Haz chutney con la fruta de temporada que madura demasiado rápido. Sírvelo en el pase a temperatura de sala, en cuchara o quenelle pequeña.",
+    "related": [
+      "confituras-y-mermeladas",
+      "especias",
+      "quesos-en-cocina",
+      "pato",
+      "cerdo-iberico",
+      "vinagres-aromatizados"
+    ]
+  },
+  {
+    "id": "cebolla-confitada",
+    "name": "Cebolla confitada, caramelizada y asada",
+    "name_en": "Confit, caramelised and roasted onion",
+    "cat": "bases",
+    "group": "Cremas y guarniciones",
+    "aka": [
+      "cebolla caramelizada",
+      "cebolla pochada",
+      "cebolla confitada",
+      "cebolla asada",
+      "cebolleta glaseada",
+      "cebolla a la brasa",
+      "cebolla en ceniza"
+    ],
+    "role": "guarnicion",
+    "techniques": [
+      "confitado",
+      "caramelizado",
+      "brasa"
+    ],
+    "summary": "Tres formas de cocinar la cebolla despacio para que se vuelva dulce y melosa: pochada hasta caramelizar, entera asada o en ceniza, y cebolletas glaseadas.",
+    "what": "La cebolla tiene mucho azúcar y mucho agua: con calor lento pierde el picor y gana dulzor, y si se deja más, se carameliza y toma color y sabor tostado. Pochada en grasa hasta oscurecer es base de salsas, rellenos y guisos. Entera, asada en el horno o enterrada en las brasas, queda tierna y ahumada por dentro y se sirve en pétalos. Las cebolletas y chalotas pequeñas se glasean enteras con mantequilla, azúcar y caldo. Para el ajo, mira [[crema-ajo-asado]].",
+    "base": {
+      "for": "unos 400 g de cebolla caramelizada",
+      "items": [
+        [
+          "Cebolla en juliana fina",
+          "2 kg"
+        ],
+        [
+          "Aceite de oliva o mantequilla",
+          "80 g"
+        ],
+        [
+          "Sal",
+          "10 g"
+        ],
+        [
+          "Agua",
+          "unas cucharadas"
+        ],
+        [
+          "Vinagre de jerez o vino (opcional)",
+          "20 ml"
+        ]
+      ],
+      "steps": [
+        "Calienta la grasa en una cazuela ancha y añade la cebolla con la sal.",
+        "Cuece a fuego medio, removiendo, 15 minutos, hasta que suelte el agua y se ablande.",
+        "Baja el fuego y sigue 60–90 minutos, removiendo cada pocos minutos. Cuando se pegue al fondo, añade unas cucharadas de agua y raspa.",
+        "Para cuando esté color avellana oscuro, blanda y brillante.",
+        "Si quieres, termina con el vinagre para equilibrar el dulzor."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Cebolla caramelizada",
+        "ratio": "2 kg de cebolla rinden unos 400 g",
+        "note": "75–105 minutos en total, fuego medio-bajo."
+      },
+      {
+        "use": "Cebolla entera al horno",
+        "ratio": "Con piel, envuelta en papel, a 180 °C, 60–75 minutos",
+        "note": "Se abre y se separa en pétalos."
+      },
+      {
+        "use": "Cebolla en brasa o ceniza",
+        "ratio": "Entera con piel entre las brasas, 40–60 minutos, girando",
+        "note": "Se pela la piel quemada; dentro, tierna y ahumada."
+      },
+      {
+        "use": "Cebolletas glaseadas",
+        "ratio": "Mantequilla, una pizca de azúcar y caldo hasta media altura, tapadas con papel",
+        "note": "Reducir hasta que el líquido las cubra brillante."
+      }
+    ],
+    "variants": [
+      {
+        "id": "sofrito",
+        "name": "Sofrito",
+        "note": "Cebolla pochada con tomate y ajo, base de guisos."
+      },
+      {
+        "id": "chutneys-y-compotas-saladas",
+        "name": "Cebolla agridulce",
+        "note": "La caramelizada con azúcar y vinagre reducidos."
+      },
+      {
+        "id": "soubise",
+        "name": "Soubise",
+        "note": "Cebolla pochada sin color en una salsa o puré."
+      }
+    ],
+    "keys": [
+      "Cazuela ancha: la cebolla amontonada cuece en su agua y no carameliza.",
+      "Paciencia y fuego medio-bajo: el fuego fuerte quema por fuera y deja cruda por dentro.",
+      "Desglasa con agua cuando se pegue: ese fondo es sabor.",
+      "Sal al principio para que suelte el agua.",
+      "Un punto ácido al final quita el empalago."
+    ],
+    "errors": [
+      {
+        "p": "Quemada y amarga",
+        "fix": "Fuego alto. Baja el fuego y desglasa con agua a menudo."
+      },
+      {
+        "p": "Pálida tras una hora",
+        "fix": "Demasiada cebolla para el recipiente o fuego muy bajo. Reparte en dos cazuelas y sube un poco."
+      },
+      {
+        "p": "Cebolla en ceniza cruda por dentro",
+        "fix": "Brasa débil o poco tiempo. Déjala más y gírala."
+      }
+    ],
+    "history": "La cebolla cocida despacio es la base de innumerables guisos mediterráneos. Asar cebollas enteras en las brasas es una costumbre de campo que la cocina de brasa actual ha recuperado.",
+    "uses": [
+      "Base de salsas y guisos",
+      "Relleno de cocas, tortillas y tostas",
+      "Guarnición de carnes a la brasa",
+      "Pétalos de cebolla asada en emplatado"
+    ],
+    "keep": "Caramelizada, en frío 5–6 días o congelada en porciones 2 meses. Asada entera, en frío 2–3 días.",
+    "pro": "Haz la cebolla caramelizada en tanda grande en un horno mixto o en marmita y congela en placas. Cebollas para la brasa, siempre en la zona de las ascuas del final del servicio para el día siguiente.",
+    "related": [
+      "caramelizacion-de-verduras",
+      "coccion-en-hoja-y-ceniza",
+      "crema-ajo-asado",
+      "sofrito",
+      "glaseado-de-verduras",
+      "fuego-y-brasa"
+    ]
+  },
+  {
+    "id": "guarniciones-de-patata",
+    "name": "Guarniciones de patata",
+    "name_en": "Potato garnishes",
+    "cat": "bases",
+    "group": "Cremas y guarniciones",
+    "aka": [
+      "patatas fritas",
+      "patata panadera",
+      "patatas confitadas",
+      "patatas asadas",
+      "milhojas de patata",
+      "patatas a lo pobre",
+      "patatas fondant"
+    ],
+    "role": "guarnicion",
+    "techniques": [
+      "fritura",
+      "horno",
+      "confitado"
+    ],
+    "summary": "Las formas de patata que más se usan en una cocina de brasa: fritas en dos tiempos, panadera, confitadas, asadas crujientes y milhojas en capas.",
+    "what": "Cada guarnición pide una patata y un trato. Las harinosas (mucho almidón) dan fritas y asadas crujientes por fuera y esponjosas por dentro; las de carne firme aguantan mejor la panadera, la milhojas y las cocciones en caldo. La regla común: cocer primero a temperatura moderada para hacerla por dentro y terminar con calor fuerte para dorar. Para puré, mira [[pures-de-verdura]]; para chafada a la brasa, [[patata-chafada-brasa]].",
+    "base": {
+      "for": "10 raciones de patatas fritas",
+      "items": [
+        [
+          "Patata harinosa",
+          "2 kg"
+        ],
+        [
+          "Aceite de girasol alto oleico o de oliva suave",
+          "4 l"
+        ],
+        [
+          "Sal fina",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Pela y corta en bastones de 1 cm. Lava en agua fría hasta que salga limpia y seca muy bien.",
+        "Primera fritura a 140–150 °C, 6–8 minutos, hasta que estén tiernas pero sin color. Escurre y deja enfriar extendidas (mejor en frío).",
+        "Segunda fritura al momento a 180 °C, 2–3 minutos, hasta que estén doradas y crujientes.",
+        "Escurre, sala enseguida y sirve."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Fritas en dos tiempos",
+        "ratio": "140–150 °C y luego 180 °C",
+        "note": "Patata harinosa, bien seca."
+      },
+      {
+        "use": "Panadera",
+        "ratio": "Patata en láminas de 3 mm con cebolla pochada y caldo hasta media altura, horno a 180 °C, 40–50 min",
+        "note": "Para asados y pescados al horno."
+      },
+      {
+        "use": "Confitadas",
+        "ratio": "Patatas pequeñas enteras cubiertas de aceite o grasa de pato a 90–100 °C, 40–60 min",
+        "note": "Después se doran en sartén o brasa."
+      },
+      {
+        "use": "Asadas crujientes",
+        "ratio": "Cocidas 10 min en agua con sal, escurridas, removidas para rasgar la superficie y asadas a 220 °C con grasa caliente, 40–50 min",
+        "note": "Girar a mitad de cocción."
+      },
+      {
+        "use": "Milhojas de patata",
+        "ratio": "Láminas de 1–2 mm en capas con mantequilla clarificada y sal, prensadas y horneadas a 160 °C, 1,5–2 h",
+        "note": "Se enfría prensada, se corta y se dora al pedir."
+      }
+    ],
+    "variants": [
+      {
+        "id": "patata-chafada-brasa",
+        "name": "Patata chafada a la brasa",
+        "note": "Cocida, aplastada y dorada en la brasa."
+      },
+      {
+        "id": "pures-de-verdura",
+        "name": "Puré de patata",
+        "note": "Pasada por pasapurés, con mantequilla y leche."
+      },
+      {
+        "id": null,
+        "name": "Patatas a lo pobre",
+        "note": "En láminas, confitadas en aceite con cebolla y pimiento, sin dorar del todo."
+      }
+    ],
+    "keys": [
+      "Elige la patata según la guarnición: harinosa para freír y asar, firme para láminas y guisos.",
+      "Lava el almidón de la superficie para freír; no para asar crujiente, donde ayuda.",
+      "Seca muy bien antes de freír o asar.",
+      "Dos tiempos: primero hacer por dentro, después dorar por fuera.",
+      "Sala siempre en caliente."
+    ],
+    "errors": [
+      {
+        "p": "Fritas blandas",
+        "fix": "Patata húmeda o una sola fritura. Seca y fríe en dos tiempos."
+      },
+      {
+        "p": "Fritas oscuras y dulces",
+        "fix": "Patata con mucho azúcar (vieja o guardada en frío). Cambia de patata o lávala más."
+      },
+      {
+        "p": "Panadera cruda o seca",
+        "fix": "Láminas gruesas o poco caldo. Lámina de 3 mm y caldo a media altura, tapado la primera mitad."
+      },
+      {
+        "p": "Milhojas que se separa",
+        "fix": "Poco prensada. Prénsala en frío con peso toda la noche."
+      }
+    ],
+    "history": "La patata llegó a Europa desde América y en pocos siglos se convirtió en base de muchas cocinas. Las patatas fritas, la panadera o las patatas a lo pobre son guarniciones de siempre en España.",
+    "uses": [
+      "Carnes a la brasa",
+      "Pescado al horno",
+      "Huevos",
+      "Aperitivo",
+      "Guarnición de menú"
+    ],
+    "keep": "Primera fritura hecha, en frío 1–2 días. Confitadas, en su grasa y en frío, 3 días. Milhojas cocida y prensada, 3–4 días en frío.",
+    "pro": "Haz la primera fritura o la confitura antes del servicio y termina al pedir. La milhojas se corta en raciones y se dora en sartén o brasa: queda crujiente fuera y tierna dentro.",
+    "related": [
+      "patata-chafada-brasa",
+      "pures-de-verdura",
+      "fritura",
+      "grasas-infusionadas",
+      "asado-al-horno",
+      "confitado"
+    ]
+  },
+  {
+    "id": "crudites-y-cortes",
+    "name": "Crudités y cortes de aperitivo",
+    "name_en": "Crudités and raw-vegetable cuts",
+    "cat": "bases",
+    "group": "Cremas y guarniciones",
+    "aka": [
+      "crudites",
+      "verdura cruda",
+      "bastones de verdura",
+      "laminas a mandolina",
+      "aperitivo de verduras",
+      "verduras crudas aliñadas"
+    ],
+    "role": "fresco",
+    "techniques": [
+      "crudo"
+    ],
+    "summary": "Verdura cruda bien elegida, cortada y conservada crujiente en agua helada, para mojar en untables o aliñar al momento como aperitivo.",
+    "what": "Un plato de verdura cruda solo funciona si la verdura es muy fresca, está bien cortada y cruje. El corte cambia el bocado: bastones para mojar, láminas finas a mandolina para aliñar, rizos que se forman en agua helada, cuartos de rabanito con su hoja. El agua muy fría hidrata y da tersura. Algunas verduras piden un escaldado muy corto para perder el sabor a crudo sin perder el crujiente (espárrago, brócoli, judía); otras se oxidan y piden ácido al cortarlas (alcachofa).",
+    "base": {
+      "for": "10 raciones de aperitivo",
+      "items": [
+        [
+          "Rabanitos con hoja",
+          "200 g"
+        ],
+        [
+          "Zanahorias pequeñas de colores",
+          "300 g"
+        ],
+        [
+          "Hinojo",
+          "1 bulbo"
+        ],
+        [
+          "Pepino pequeño",
+          "2"
+        ],
+        [
+          "Apio",
+          "3 ramas"
+        ],
+        [
+          "Endivia o cogollos",
+          "2"
+        ],
+        [
+          "Hielo y agua",
+          "c. s."
+        ],
+        [
+          "Sal en escamas, aceite de oliva y limón",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Lava todas las verduras y pela solo las que lo necesiten.",
+        "Corta según la verdura: rabanitos en cuartos con hoja, zanahorias en bastones o a lo largo, hinojo en láminas finas, pepino en bastones sin semillas, apio en bastones, endivia en hojas.",
+        "Sumerge las verduras cortadas en agua con hielo a 2–4 °C, 15–30 minutos.",
+        "Escurre y seca muy bien justo antes de servir.",
+        "Sirve sobre hielo picado o en plato frío, con sal en escamas, aceite y limón aparte, o con un untable."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Agua helada",
+        "ratio": "2–4 °C, 15–30 minutos",
+        "note": "Más tiempo empapa y quita sabor."
+      },
+      {
+        "use": "Láminas a mandolina para aliñar",
+        "ratio": "1–2 mm",
+        "note": "Aliñar en el último momento."
+      },
+      {
+        "use": "Escaldado corto (espárrago, judía, brócoli)",
+        "ratio": "20–40 segundos en agua hirviendo con sal y enfriar en hielo",
+        "note": "Pierde el sabor a crudo, conserva el crujiente."
+      },
+      {
+        "use": "Alcachofa cruda",
+        "ratio": "Corazón en láminas de 1 mm en agua con limón",
+        "note": "Aliñar enseguida con aceite y sal."
+      }
+    ],
+    "variants": [
+      {
+        "id": "ensalada-de-hierbas",
+        "name": "Ensalada de hierbas",
+        "note": "Hojas de hierbas aliñadas como acompañamiento."
+      },
+      {
+        "id": "pickles-de-servicio",
+        "name": "Pickles",
+        "note": "La misma verdura con un toque ácido."
+      },
+      {
+        "id": "untables-de-legumbre",
+        "name": "Con untables",
+        "note": "Legumbre, tahina o labneh para mojar."
+      }
+    ],
+    "keys": [
+      "Verdura del día y de temporada: cruda no hay nada que la disimule.",
+      "Corte limpio con cuchillo afilado o mandolina: el corte aplastado se oxida y se ablanda.",
+      "Agua helada, no tibia, y secado completo antes de servir.",
+      "Sal en escamas y buen aceite al momento, no antes.",
+      "Mezcla colores, formas y sabores: dulces, amargos, anisados, picantes."
+    ],
+    "errors": [
+      {
+        "p": "Verdura blanda",
+        "fix": "Verdura poco fresca o fuera del agua helada demasiado tiempo. Hidrata y sirve al momento."
+      },
+      {
+        "p": "Aguada y sin sabor",
+        "fix": "Demasiado tiempo en agua o mal secada. 15–30 minutos y seca a conciencia."
+      },
+      {
+        "p": "Bordes oscuros",
+        "fix": "Oxidación. Corta al momento o usa agua con limón para alcachofa, manzana o hinojo."
+      }
+    ],
+    "history": "Servir verdura cruda con salsas o aceite para mojar es costumbre en muchas cocinas mediterráneas, como el pinzimonio italiano o los crudités franceses, y es un aperitivo cada vez más habitual en la cocina de huerta.",
+    "uses": [
+      "Aperitivo de bienvenida",
+      "Acompañar untables y salsas",
+      "Ensaladas de láminas",
+      "Elemento crudo en platos de brasa"
+    ],
+    "keep": "Cortada y en agua en frío, hasta 1 día (zanahoria, apio, rabanito); el pepino y la endivia, mejor al momento. Sin cortar, en caja con papel húmedo.",
+    "pro": "Corta por la mañana las verduras firmes y guárdalas en agua en cámara; las delicadas, al pase. Monta sobre hielo picado para que aguanten crujientes en la mesa.",
+    "related": [
+      "ensalada-de-hierbas",
+      "escaldado-de-verduras",
+      "alcachofas",
+      "salsa-tahina-limon",
+      "labneh",
+      "pickles-de-servicio"
+    ]
+  },
+  {
+    "id": "untables-de-legumbre",
+    "name": "Untables de legumbre",
+    "name_en": "Legume spreads",
+    "cat": "bases",
+    "group": "Cremas y guarniciones",
+    "aka": [
+      "hummus de habas",
+      "crema de alubias",
+      "pure de habas",
+      "fava",
+      "paté de lentejas",
+      "untable de legumbre",
+      "crema de judion"
+    ],
+    "role": "cremoso",
+    "techniques": [
+      "pure",
+      "hervido"
+    ],
+    "summary": "Legumbre cocida triturada con aceite, ácido y aromáticos hasta una crema untable: habas, alubias, lentejas o garbanzos para aperitivo y base de plato.",
+    "what": "El hummus de garbanzo ([[crema-garbanzos-comino]]) es el más conocido, pero cualquier [[legumbres|legumbre]] bien cocida da un untable: las habas secas peladas dan una crema amarilla y fina; las alubias blancas, una crema suave que combina con ajo asado y romero; las lentejas rojas, una pasta especiada que no necesita remojo. La técnica es la misma: legumbre muy tierna, triturada en caliente con parte de su agua de cocción, aceite y ácido, y colada si se busca finura.",
+    "base": {
+      "for": "unos 700 g de crema de alubia blanca",
+      "items": [
+        [
+          "Alubia blanca cocida y escurrida",
+          "500 g"
+        ],
+        [
+          "Agua de cocción de la alubia",
+          "100–150 g"
+        ],
+        [
+          "Aceite de oliva virgen extra",
+          "80 g"
+        ],
+        [
+          "Ajo asado o confitado",
+          "4 dientes"
+        ],
+        [
+          "Zumo de limón",
+          "25 g"
+        ],
+        [
+          "Romero picado muy fino",
+          "2 g"
+        ],
+        [
+          "Sal",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Cuece la alubia hasta que esté muy tierna, casi deshaciéndose. Guarda el agua de cocción.",
+        "Tritura en caliente la alubia con el ajo, el limón, la sal y la mitad del agua.",
+        "Añade el aceite en hilo con el vaso en marcha y ajusta la textura con más agua.",
+        "Pasa por tamiz si quieres una crema muy fina.",
+        "Sirve templada o a temperatura de sala con aceite, romero y algo crujiente."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Untable de alubia o garbanzo",
+        "ratio": "500 g de legumbre cocida, 80 g de aceite, 25 g de limón y 100–150 g de agua de cocción",
+        "note": "Triturar en caliente."
+      },
+      {
+        "use": "Fava de habas secas",
+        "ratio": "500 g de haba seca pelada cocida con cebolla, triturada con 100 g de aceite",
+        "note": "Cocida hasta deshacerse, 40–50 minutos."
+      },
+      {
+        "use": "Lenteja roja especiada",
+        "ratio": "250 g de lenteja roja, 600 ml de agua, comino, cúrcuma y ajo; 15–20 minutos",
+        "note": "Se deshace sola; terminar con aceite y limón."
+      },
+      {
+        "use": "Para base de plato",
+        "ratio": "Algo más fluida, con 20 % más de agua de cocción",
+        "note": "Se extiende con cuchara."
+      }
+    ],
+    "variants": [
+      {
+        "id": "crema-garbanzos-comino",
+        "name": "Hummus de garbanzo",
+        "note": "Con tahina y comino."
+      },
+      {
+        "id": "salsa-tahina-limon",
+        "name": "Con tahina",
+        "note": "Una parte de tahina por cuatro de legumbre da más cuerpo y tostado."
+      },
+      {
+        "id": "pures-de-verdura",
+        "name": "Purés de verdura",
+        "note": "La misma técnica de triturar y montar."
+      }
+    ],
+    "keys": [
+      "Legumbre muy cocida: si está al dente, la crema queda granulosa.",
+      "Tritura en caliente; en frío espesa y no queda lisa.",
+      "Usa el agua de cocción: tiene sabor y almidón que ayuda a ligar.",
+      "Un buen ácido y un buen aceite levantan el sabor plano de la legumbre.",
+      "Termina siempre con algo crujiente y algo fresco."
+    ],
+    "errors": [
+      {
+        "p": "Granulosa",
+        "fix": "Legumbre poco cocida o triturada en frío. Cuécela más y tritura en caliente; cuela."
+      },
+      {
+        "p": "Espesa demasiado en frío",
+        "fix": "Es normal. Ajusta con agua de cocción antes de servir."
+      },
+      {
+        "p": "Sosa",
+        "fix": "Falta sal, ácido o aceite. Ajusta los tres y prueba a temperatura de servicio."
+      }
+    ],
+    "history": "Las cremas de legumbre son tradicionales en todo el Mediterráneo, del hummus del Levante a la fava de habas de Grecia y del sur de Italia. En España las legumbres han sido base de la dieta y se prestan a la misma técnica.",
+    "uses": [
+      "Aperitivo con pan o crudités",
+      "Base de plato para verdura o cordero a la brasa",
+      "Relleno de bocadillos",
+      "Acompañar pescados en aceite"
+    ],
+    "keep": "En frío y tapado, 3–4 días. Congelado, 1 mes.",
+    "pro": "Cuece la legumbre en tanda y tritura cada día lo necesario. En el pase, en manga a temperatura de sala, y aliño de aceite y crujiente al servir.",
+    "related": [
+      "crema-garbanzos-comino",
+      "legumbres",
+      "salsa-tahina-limon",
+      "crema-ajo-asado",
+      "pures-de-verdura",
+      "crudites-y-cortes"
+    ]
+  },
+  {
+    "id": "lacteos-fermentados",
+    "name": "Salsas de lácteos fermentados",
+    "name_en": "Cultured dairy sauces",
+    "cat": "salsas",
+    "group": "Aliños de pase",
+    "aka": [
+      "creme fraiche",
+      "nata agria",
+      "nata fermentada",
+      "kefir",
+      "suero de mantequilla",
+      "buttermilk",
+      "salsa de kefir",
+      "tzatziki"
+    ],
+    "role": "salsa",
+    "techniques": [
+      "fermentado"
+    ],
+    "summary": "Nata fermentada, kéfir, suero de mantequilla y yogur como base de salsas frías ácidas y cremosas, y cómo fermentar la nata en casa.",
+    "what": "Los lácteos fermentados tienen ácido, grasa y un sabor ligeramente láctico que los hace perfectos para salsas frías: la nata fermentada (crème fraîche o nata agria) es espesa y suave y aguanta el calor sin cortarse; el kéfir y el suero de mantequilla son fluidos y ácidos, buenos para aliños; el yogur está entre los dos. Se aliñan con hierbas, ajo, cítrico o pepino, y acompañan bien la brasa, el pescado ahumado o las verduras asadas. Para yogur escurrido, mira [[labneh]].",
+    "base": {
+      "for": "500 g de nata fermentada casera",
+      "items": [
+        [
+          "Nata 35 % pasteurizada (no UHT si puedes)",
+          "500 g"
+        ],
+        [
+          "Suero de mantequilla, kéfir o yogur natural con cultivos vivos",
+          "40 g"
+        ]
+      ],
+      "steps": [
+        "Mezcla la nata con el cultivo en un recipiente de vidrio muy limpio.",
+        "Tapa con un paño o tapa sin cerrar y deja a 20–24 °C, 18–24 horas, hasta que espese y huela ácido y limpio.",
+        "Remueve, tapa bien y guarda en frío: espesa más en 12 horas.",
+        "Para salsa, mezcla con hierbas picadas, sal, ralladura de limón o ajo al gusto."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Nata fermentada",
+        "ratio": "8 % de cultivo sobre la nata, 18–24 h a 20–24 °C",
+        "note": "Reserva una parte para la siguiente tanda."
+      },
+      {
+        "use": "Aliño de kéfir o suero",
+        "ratio": "200 g de kéfir, 30 g de aceite, 10 g de limón, hierbas y sal",
+        "note": "Fluido, para ensaladas y verduras."
+      },
+      {
+        "use": "Salsa de yogur y pepino",
+        "ratio": "500 g de yogur griego, 200 g de pepino rallado y escurrido, 1 diente de ajo, eneldo o menta",
+        "note": "Escurre bien el pepino con sal."
+      },
+      {
+        "use": "Nata fermentada en salsa caliente",
+        "ratio": "Añadir al final, sin hervir fuerte",
+        "note": "Aguanta mejor que el yogur."
+      }
+    ],
+    "variants": [
+      {
+        "id": "salsa-yogur-limon",
+        "name": "Salsa de yogur y limón",
+        "note": "La más sencilla y fresca."
+      },
+      {
+        "id": "labneh",
+        "name": "Labneh",
+        "note": "Yogur escurrido, denso como un queso fresco."
+      },
+      {
+        "id": "emulsiones-de-hierbas",
+        "name": "Con aceite verde",
+        "note": "Un hilo de aceite de hierbas sobre la salsa."
+      }
+    ],
+    "keys": [
+      "Lácteos pasteurizados y recipientes muy limpios.",
+      "Cultivo con fermentos vivos: el yogur o kéfir comprado debe indicarlo.",
+      "Huele siempre: ácido y limpio está bien; olor raro, color rosado o moho, se tira.",
+      "Escurre bien lo acuoso (pepino, hierbas) antes de mezclar.",
+      "Sala la salsa un rato antes y vuelve a probar: la sal suelta agua."
+    ],
+    "errors": [
+      {
+        "p": "La nata no espesa",
+        "fix": "Temperatura baja o cultivo sin fermentos vivos. Déjala más tiempo en lugar templado o cambia de cultivo."
+      },
+      {
+        "p": "Salsa aguada",
+        "fix": "Pepino o hierbas sin escurrir. Sala, escurre y añádelos secos."
+      },
+      {
+        "p": "Se corta en caliente",
+        "fix": "Yogur o kéfir hervidos. Usa nata fermentada para salsas calientes y añádela al final."
+      }
+    ],
+    "history": "Los lácteos fermentados existen en todas las culturas ganaderas: la nata agria en Europa del Este, la crème fraîche en Francia, el kéfir en el Cáucaso y el yogur en el Mediterráneo oriental y los Balcanes.",
+    "uses": [
+      "Salsas frías para brasa y pescado ahumado",
+      "Aliños de ensalada",
+      "Patatas asadas o fritas",
+      "Terminar sopas y cremas",
+      "Base de postres ácidos"
+    ],
+    "keep": "Nata fermentada en frío, 1–2 semanas. Salsas con hierbas y ajo, 2–3 días.",
+    "pro": "Fermenta la nata en tandas semanales guardando siempre una parte como cultivo. Monta las salsas con hierbas el día de servicio.",
+    "related": [
+      "salsa-yogur-limon",
+      "labneh",
+      "panna-cotta-y-cuajadas",
+      "fermentacion-lactica",
+      "emulsiones-de-hierbas",
+      "quesos-en-cocina"
+    ]
   }
 ]

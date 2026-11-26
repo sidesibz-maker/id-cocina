@@ -4290,5 +4290,1156 @@
    "aceite-de-oliva",
    "flao"
   ]
+ },
+ {
+  "id": "curds-y-cremas-de-citricos",
+  "name": "Curds y cremas de cítricos",
+  "name_en": "Citrus curds and creams",
+  "cat": "dulce",
+  "group": "Cremas",
+  "aka": [
+   "lemon curd",
+   "curd",
+   "crema de limon",
+   "crema de maracuya",
+   "tarta de limon",
+   "crema de citricos"
+  ],
+  "summary": "Zumo de cítrico, azúcar, huevo y mantequilla cocidos hasta espesar: cremas ácidas y brillantes para tartas, rellenos y postres de cuchara.",
+  "what": "Es una crema cocida en la que el huevo espesa el zumo y la mantequilla da cuerpo y brillo. En la versión de casa la mantequilla se cuece con todo; en la de pastelería se añade al final, ya templada la crema, y se emulsiona con túrmix, lo que da una textura más fina y estable. Funciona con limón, lima, naranja sanguina, pomelo, mandarina o maracuyá. Es el relleno clásico de la tarta de limón con [[merengues|merengue]].",
+  "base": {
+   "for": "unos 800 g de crema",
+   "items": [
+    [
+     "Zumo de limón recién exprimido",
+     "200 g"
+    ],
+    [
+     "Ralladura de limón",
+     "de 2 limones"
+    ],
+    [
+     "Azúcar",
+     "200 g"
+    ],
+    [
+     "Huevos",
+     "200 g (4)"
+    ],
+    [
+     "Mantequilla fría en dados",
+     "200 g"
+    ],
+    [
+     "Gelatina en hojas (solo para cortar)",
+     "2–4 g"
+    ]
+   ],
+   "steps": [
+    "Frota la ralladura con el azúcar para soltar los aceites de la piel.",
+    "Mezcla con los huevos y el zumo en un cazo de fondo grueso.",
+    "Cuece a fuego suave sin parar de remover hasta 82–85 °C, cuando espese y napee la cuchara. No dejes que hierva.",
+    "Cuela. Si usas gelatina, hidrátala antes y añádela ahora.",
+    "Deja templar a 40–45 °C y emulsiona la mantequilla en dados con túrmix hasta que quede lisa y brillante. Film a piel y frío 4 horas."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Curd para untar o rellenar",
+    "ratio": "Zumo, azúcar y huevo a partes iguales y 75–100 % de mantequilla",
+    "note": "Cocer a 82–85 °C."
+   },
+   {
+    "use": "Crema para tarta que se corta",
+    "ratio": "La base anterior con 3–4 g de gelatina por kilo",
+    "note": "Rellenar la masa cocida con la crema a 35 °C."
+   },
+   {
+    "use": "Crema más ligera",
+    "ratio": "Curd frío mezclado con un tercio de su peso de nata semimontada",
+    "note": "Para vasos y postres de cuchara."
+   },
+   {
+    "use": "Frutas muy ácidas (lima, maracuyá)",
+    "ratio": "Sube el azúcar un 10–20 %",
+    "note": "Prueba en frío: el frío apaga el dulce."
+   }
+  ],
+  "variants": [
+   {
+    "id": "merengues",
+    "name": "Tarta de limón con merengue",
+    "note": "Masa sablée, curd y merengue italiano quemado."
+   },
+   {
+    "id": "citricos",
+    "name": "Curd de naranja sanguina o mandarina",
+    "note": "Menos ácidas: algo menos de azúcar y un poco de limón."
+   },
+   {
+    "id": null,
+    "name": "Curd sin lactosa",
+    "note": "Con aceite de oliva suave en vez de mantequilla, emulsionado igual."
+   }
+  ],
+  "keys": [
+   "Cazo de acero o vidrio: el aluminio da sabor metálico con el ácido.",
+   "No hiervas: a más de 85 °C el huevo se corta.",
+   "La mantequilla al final y con la crema templada da la mejor textura.",
+   "Frota la ralladura con el azúcar: casi todo el aroma está en la piel.",
+   "Cuela siempre: retira la piel y cualquier resto de huevo cuajado."
+  ],
+  "errors": [
+   {
+    "p": "Granulosa o cortada",
+    "fix": "Se pasó de temperatura. Tritura en caliente con túrmix y cuela; la próxima, termómetro."
+   },
+   {
+    "p": "Sabor metálico",
+    "fix": "Cazo de aluminio o batidor oxidado. Usa acero inoxidable."
+   },
+   {
+    "p": "Demasiado líquida",
+    "fix": "Poca cocción o poca mantequilla. Cuece hasta 82–85 °C y respeta la proporción."
+   },
+   {
+    "p": "Se separa la grasa",
+    "fix": "Mantequilla añadida con la crema muy caliente. Templa a 40–45 °C antes."
+   }
+  ],
+  "history": "Las cremas de limón con huevo y mantequilla tienen larga tradición en la repostería británica y la tarta de limón es un clásico de la pastelería europea. En el Mediterráneo, con cítricos de sobra, encajan de forma natural.",
+  "uses": [
+   "Tarta de limón",
+   "Relleno de tartaletas y bizcochos",
+   "Vaso con merengue y crujiente",
+   "Untar en brioche o tostadas",
+   "Acompañar fruta asada"
+  ],
+  "keep": "En frío, film a piel, 5–7 días. Se congela bien, 2 meses, sin gelatina.",
+  "pro": "Hazla en tanda y guárdala en manga en frío. Para tartaletas al momento: masa cocida en lata, curd en manga y merengue en el pase.",
+  "related": [
+   "citricos",
+   "merengues",
+   "masa-quebrada",
+   "crema-pastelera",
+   "sable-y-galletas"
+  ]
+ },
+ {
+  "id": "baba-y-savarin",
+  "name": "Babá y savarin",
+  "name_en": "Baba and savarin",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "baba",
+   "baba al ron",
+   "savarin",
+   "bizcocho borracho de levadura",
+   "masa de baba"
+  ],
+  "summary": "Masa de levadura blanda y muy elástica, horneada y seca, que se empapa en almíbar aromatizado: tierna, jugosa y perfumada.",
+  "what": "Es una masa de levadura con mucho huevo y algo de mantequilla, más líquida que un [[brioche]], que se hornea en moldes hasta quedar bien seca y alveolada. Seca, absorbe una gran cantidad de almíbar caliente, normalmente con ron o cítricos, y se vuelve jugosa sin deshacerse. El babá es individual; el savarin, en corona, se rellena en el centro con crema o fruta. Son primos de los borrachos de bizcocho.",
+  "base": {
+   "for": "unos 20 babás individuales",
+   "items": [
+    [
+     "Harina de fuerza",
+     "500 g"
+    ],
+    [
+     "Huevos",
+     "350 g"
+    ],
+    [
+     "Leche",
+     "60 g"
+    ],
+    [
+     "Levadura fresca",
+     "20 g"
+    ],
+    [
+     "Azúcar",
+     "30 g"
+    ],
+    [
+     "Sal",
+     "10 g"
+    ],
+    [
+     "Mantequilla pomada",
+     "150 g"
+    ],
+    [
+     "Almíbar: agua",
+     "1 l"
+    ],
+    [
+     "Almíbar: azúcar",
+     "500 g"
+    ],
+    [
+     "Almíbar: piel de naranja y limón, vainilla y ron",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Amasa la harina, la levadura disuelta en la leche, el azúcar, la sal y dos tercios de los huevos hasta que la masa tenga cuerpo; añade el resto del huevo poco a poco.",
+    "Amasa hasta que la masa sea muy elástica y se despegue del bol; añade la mantequilla pomada y amasa hasta integrarla.",
+    "Llena los moldes untados hasta un tercio con manga y fermenta a 26–28 °C hasta que la masa llegue al borde, 45–60 minutos.",
+    "Hornea a 180 °C, 20–25 minutos, hasta que estén muy dorados. Desmolda y seca 10 minutos más en el horno: tienen que quedar ligeros y secos.",
+    "Hierve el almíbar con los aromas y deja templar a 50–60 °C. Sumerge los babás (mejor de un día) hasta que dejen de soltar burbujas, escurre sobre rejilla y termina con ron al servir."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Masa",
+    "ratio": "70 % de huevo y 30 % de mantequilla sobre la harina",
+    "note": "Muy blanda: se escudilla con manga."
+   },
+   {
+    "use": "Almíbar",
+    "ratio": "500 g de azúcar por litro de agua",
+    "note": "Templado a 50–60 °C sobre babá frío y seco."
+   },
+   {
+    "use": "Absorción",
+    "ratio": "Unas 3 veces su peso en almíbar",
+    "note": "Cuanto más seco, más absorbe sin romperse."
+   },
+   {
+    "use": "Alcohol",
+    "ratio": "50–100 ml de ron por litro de almíbar, o al final en cada ración",
+    "note": "Sin alcohol: cítricos, té o hierbas."
+   }
+  ],
+  "variants": [
+   {
+    "id": "bizcochos-humedos",
+    "name": "Borracho de bizcocho",
+    "note": "Bizcocho de huevo empapado en almíbar; miga más fina."
+   },
+   {
+    "id": "citricos",
+    "name": "Babá de cítricos sin alcohol",
+    "note": "Almíbar con zumo y piel de naranja y limón."
+   },
+   {
+    "id": null,
+    "name": "Savarin",
+    "note": "La misma masa en corona, con nata o crema y fruta en el centro."
+   }
+  ],
+  "keys": [
+   "Masa muy amasada: necesita gluten fuerte para no deshacerse en el almíbar.",
+   "Hornea hasta muy dorado y seca después: un babá pálido se rompe al empaparlo.",
+   "Babá frío y almíbar templado, o babá templado y almíbar frío; nunca los dos calientes.",
+   "Mejor del día anterior: está más seco y absorbe mejor.",
+   "El alcohol, al final: si se hierve, se va."
+  ],
+  "errors": [
+   {
+    "p": "Se deshace en el almíbar",
+    "fix": "Masa poco amasada o poco horneada. Amasa más y seca bien en el horno."
+   },
+   {
+    "p": "Centro seco tras empapar",
+    "fix": "Almíbar frío o poco tiempo. Templa el almíbar y deja hasta que no suelte burbujas."
+   },
+   {
+    "p": "Miga apretada",
+    "fix": "Fermentación corta. Deja que la masa llegue al borde del molde."
+   }
+  ],
+  "history": "El babá se popularizó en la pastelería francesa y es también un dulce muy típico de Nápoles. Comparte familia con muchos dulces borrachos de la repostería europea y española.",
+  "uses": [
+   "Postre de carta con nata o crema",
+   "Babá con fruta asada",
+   "Petit four en miniatura",
+   "Postre de mesa para compartir"
+  ],
+  "keep": "Horneados y sin empapar, en lata 2–3 días o congelados 1 mes. Empapados, en frío, 1–2 días.",
+  "pro": "Hornea en tanda, congela secos y empapa el día de servicio. Termina en sala con ron o almíbar al pie de mesa si encaja con el estilo.",
+  "related": [
+   "brioche",
+   "bizcochos-humedos",
+   "frutas-en-almibar",
+   "citricos",
+   "crema-pastelera"
+  ]
+ },
+ {
+  "id": "macarons",
+  "name": "Macarons",
+  "name_en": "Macarons",
+  "cat": "dulce",
+  "group": "Espumas y azúcar",
+  "aka": [
+   "macaron",
+   "macarrones de almendra",
+   "galleta de merengue y almendra",
+   "macaronage"
+  ],
+  "summary": "Galletas de almendra y merengue de superficie lisa, pie rizado y centro tierno, unidas de dos en dos con un relleno.",
+  "what": "Es una mezcla de almendra molida y azúcar glas con [[merengues|merengue]], trabajada hasta un punto exacto de fluidez (el macaronage), escudillada en discos, dejada secar para que forme costra y horneada suave. La costra hace que la masa suba por debajo y forme el pie. Con relleno de [[ganache]], crema de mantequilla o curd, madura un día en frío y se vuelve tierna por dentro. El método con merengue italiano es el más estable en cocina profesional.",
+  "base": {
+   "for": "unos 80 macarons rellenos (160 tapas de 3,5 cm)",
+   "items": [
+    [
+     "Almendra molida fina",
+     "300 g"
+    ],
+    [
+     "Azúcar glas",
+     "300 g"
+    ],
+    [
+     "Claras para la pasta",
+     "110 g"
+    ],
+    [
+     "Azúcar para el almíbar",
+     "300 g"
+    ],
+    [
+     "Agua",
+     "75 g"
+    ],
+    [
+     "Claras para el merengue",
+     "110 g"
+    ],
+    [
+     "Colorante en polvo",
+     "opcional"
+    ]
+   ],
+   "steps": [
+    "Tamiza la almendra con el azúcar glas y mezcla con las primeras claras hasta formar una pasta.",
+    "Cuece el agua con el azúcar hasta 118 °C. Cuando llegue a 110 °C, empieza a montar las segundas claras.",
+    "Vierte el almíbar en hilo sobre las claras y bate hasta que el merengue baje a unos 50 °C.",
+    "Mezcla un tercio del merengue con la pasta para aflojarla y añade el resto. Trabaja con lengua hasta que la masa caiga en cinta continua y la marca desaparezca en 20–30 segundos.",
+    "Escudilla discos de 3,5 cm, golpea la bandeja y deja secar 20–40 minutos hasta que no se peguen al tocarlos.",
+    "Hornea a 145–150 °C en convección, 12–14 minutos. Deja enfriar antes de despegar, rellena y madura 24 horas en frío."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Tant pour tant",
+    "ratio": "Almendra y azúcar glas a partes iguales",
+    "note": "La base seca."
+   },
+   {
+    "use": "Merengue italiano",
+    "ratio": "Almíbar a 118 °C con 1 parte de agua por 4 de azúcar",
+    "note": "Montar hasta 50 °C."
+   },
+   {
+    "use": "Horneado",
+    "ratio": "145–150 °C, 12–14 minutos",
+    "note": "Más calor agrieta y dora."
+   },
+   {
+    "use": "Relleno",
+    "ratio": "8–10 g por macaron",
+    "note": "Ganache firme, crema de mantequilla o curd espesado."
+   }
+  ],
+  "variants": [
+   {
+    "id": "ganache",
+    "name": "Relleno de ganache",
+    "note": "Chocolate y nata; el más estable."
+   },
+   {
+    "id": "curds-y-cremas-de-citricos",
+    "name": "Relleno de curd",
+    "note": "Ácido; necesita un poco de gelatina o mantequilla extra."
+   },
+   {
+    "id": null,
+    "name": "Macaron salado",
+    "note": "Sin colorante dulce, con rellenos de queso, foie o aceitunas para aperitivo."
+   }
+  ],
+  "keys": [
+   "Pesa todo: la diferencia de unos gramos se nota.",
+   "El macaronage es el punto crítico: poco, salen con picos; mucho, se extienden.",
+   "La costra antes de hornear es la que forma el pie.",
+   "Horno estable y bajo; un horno que sube y baja los agrieta.",
+   "La maduración de 24 horas con el relleno les da la textura tierna."
+  ],
+  "errors": [
+   {
+    "p": "Sin pie",
+    "fix": "No se formó costra o la masa estaba muy líquida. Deja secar más y no te pases con el macaronage."
+   },
+   {
+    "p": "Agrietados",
+    "fix": "Horno fuerte o sin costra. Baja la temperatura y espera a la costra."
+   },
+   {
+    "p": "Huecos por dentro",
+    "fix": "Merengue demasiado montado o poco horneados. Bate menos y alarga 1–2 minutos."
+   },
+   {
+    "p": "Con pico",
+    "fix": "Masa poco trabajada. Sigue el macaronage hasta la cinta."
+   }
+  ],
+  "history": "Las galletas de almendra y clara existen desde hace siglos en muchas reposterías europeas, incluidas las españolas. El macaron relleno de colores se convirtió en un símbolo de la pastelería francesa en el siglo XX.",
+  "uses": [
+   "Petit four",
+   "Aperitivo salado",
+   "Acompañar café",
+   "Elemento crujiente-tierno de un postre"
+  ],
+  "keep": "Tapas sin rellenar, en lata 3–4 días o congeladas 1 mes. Rellenos, en frío y cerrados, 3–5 días. Sacar 20 minutos antes de servir.",
+  "pro": "Hornea tapas en tanda y congela. Rellena dos días antes de usar para que maduren. Sirve a temperatura de sala.",
+  "related": [
+   "merengues",
+   "almendra",
+   "ganache",
+   "curds-y-cremas-de-citricos",
+   "petit-fours"
+  ]
+ },
+ {
+  "id": "bombones-y-trufas",
+  "name": "Bombones y trufas",
+  "name_en": "Chocolates and truffles",
+  "cat": "dulce",
+  "group": "Chocolate",
+  "aka": [
+   "bombon",
+   "trufa de chocolate",
+   "trufas",
+   "bombones moldeados",
+   "chocolates rellenos",
+   "praline de chocolate"
+  ],
+  "summary": "Piezas pequeñas de chocolate: trufas de ganache boleadas y rebozadas, y bombones de chocolate templado moldeados o bañados con un relleno.",
+  "what": "La trufa es una [[ganache]] firme que se bolea y se reboza en cacao, azúcar o frutos secos: sencilla y tierna. El bombón necesita [[chocolate-y-templado|chocolate templado]]: se hace una cáscara en molde, se rellena, se deja cristalizar el relleno y se cierra; o se corta un relleno en placa y se baña. El templado da brillo, crujido y desmoldado limpio. Los rellenos pueden ser ganaches, [[turrones-y-pralines|pralinés]], caramelos o geles firmes.",
+  "base": {
+   "for": "unas 60 trufas de 12 g",
+   "items": [
+    [
+     "Chocolate negro 64–70 %",
+     "450 g"
+    ],
+    [
+     "Nata 35 %",
+     "250 g"
+    ],
+    [
+     "Glucosa o miel",
+     "30 g"
+    ],
+    [
+     "Mantequilla",
+     "40 g"
+    ],
+    [
+     "Licor, café o infusión (opcional)",
+     "20 g"
+    ],
+    [
+     "Cacao en polvo para rebozar",
+     "100 g"
+    ]
+   ],
+   "steps": [
+    "Hierve la nata con la glucosa (e infusiona el aroma si lo hay, y cuela).",
+    "Vierte sobre el chocolate troceado en tres veces y emulsiona; a 35–40 °C añade la mantequilla y el licor.",
+    "Deja cristalizar la ganache tapada a 16–18 °C, 12 horas, o en frío 2–3 horas.",
+    "Escudilla o porciona en bolas de 12 g, bolea con las manos frías y reboza en cacao.",
+    "Para un acabado más fino, baña antes las trufas en chocolate templado y rebózalas cuando el chocolate aún esté húmedo."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Ganache de trufa para bolear",
+    "ratio": "2 partes de chocolate negro por 1 de nata",
+    "note": "Con chocolate con leche, 2,5:1; con blanco, 3:1."
+   },
+   {
+    "use": "Ganache de relleno de bombón",
+    "ratio": "1,5 partes de chocolate por 1 de nata",
+    "note": "Más fluida; se escudilla en la cáscara a 28–30 °C."
+   },
+   {
+    "use": "Temperatura de trabajo del chocolate templado",
+    "ratio": "Negro 31–32 °C, con leche 29–30 °C, blanco 28–29 °C",
+    "note": "Comprobar con una prueba en papel."
+   },
+   {
+    "use": "Cristalización del relleno",
+    "ratio": "16–18 °C, 12–24 horas",
+    "note": "Antes de cerrar el bombón."
+   }
+  ],
+  "variants": [
+   {
+    "id": "ganache",
+    "name": "Ganache",
+    "note": "La base de casi todos los rellenos."
+   },
+   {
+    "id": "turrones-y-pralines",
+    "name": "Bombón de praliné o gianduja",
+    "note": "Relleno de frutos secos, más estable y duradero."
+   },
+   {
+    "id": null,
+    "name": "Bombón de fruta o caramelo",
+    "note": "Gel de fruta o caramelo blando bajo una capa de ganache."
+   }
+  ],
+  "keys": [
+   "El templado se comprueba siempre con una prueba antes de llenar moldes.",
+   "Moldes limpios, secos y pulidos con algodón: el brillo sale del molde.",
+   "Rellenos a menos de 30 °C antes de meterlos en la cáscara.",
+   "Sala de trabajo a 18–20 °C y sin humedad.",
+   "Las ganaches con agua (nata, puré) duran poco; las de praliné, mucho más."
+  ],
+  "errors": [
+   {
+    "p": "Bombón sin brillo o con vetas blancas",
+    "fix": "Chocolate mal templado o molde sucio. Templa otra vez y pule los moldes."
+   },
+   {
+    "p": "No desmolda",
+    "fix": "Templado incorrecto o poco frío. Templa bien y deja 15–20 minutos en frío antes de desmoldar."
+   },
+   {
+    "p": "Ganache cortada y grasienta",
+    "fix": "Temperatura o mezcla brusca. Emulsiona con túrmix con un poco de nata templada."
+   },
+   {
+    "p": "Trufas que se deforman",
+    "fix": "Ganache blanda. Sube la proporción de chocolate o deja cristalizar más."
+   }
+  ],
+  "history": "Los bombones rellenos nacieron en la chocolatería europea de los siglos XIX y XX, con Bélgica, Suiza y Francia como referentes. La trufa de chocolate es una de las formas más sencillas y extendidas.",
+  "uses": [
+   "Petit four",
+   "Final de menú con el café",
+   "Regalo de la casa",
+   "Elemento de postre (trufa caliente o helada)"
+  ],
+  "keep": "Trufas en frío y tapadas, 1–2 semanas; sacar 20 minutos antes. Bombones a 15–18 °C en caja cerrada, 2–3 semanas según el relleno.",
+  "pro": "Haz cáscaras en un día y rellena y cierra al siguiente. Etiqueta cada tanda con fecha y relleno.",
+  "related": [
+   "ganache",
+   "chocolate-y-templado",
+   "turrones-y-pralines",
+   "petit-fours",
+   "caramelo"
+  ]
+ },
+ {
+  "id": "gelatinas-de-fruta",
+  "name": "Gelatinas y gominolas de fruta",
+  "name_en": "Fruit jellies and gummies",
+  "cat": "dulce",
+  "group": "Fruta",
+  "aka": [
+   "pate de fruit",
+   "pasta de fruta",
+   "gominolas",
+   "gominola casera",
+   "caramelo de fruta",
+   "gelatina de fruta"
+  ],
+  "summary": "Puré de fruta cocido con azúcar y pectina hasta cuajar en un bocado firme y brillante, rebozado en azúcar; o con gelatina para gominolas elásticas.",
+  "what": "La pasta de fruta es fruta en su forma más concentrada: puré, azúcar y pectina cocidos hasta un punto muy alto de azúcar, cuajados con un poco de ácido al final y cortados en cubos. Queda tierna, se corta limpia y dura semanas. Las gominolas se hacen con gelatina o con agar y quedan elásticas. Son petit fours clásicos y una forma de guardar la fruta de temporada en un bocado.",
+  "base": {
+   "for": "un marco de 20 × 20 cm (unos 80 cubos de 2 cm)",
+   "items": [
+    [
+     "Puré de fruta colado (albaricoque, frambuesa, membrillo, mango)",
+     "500 g"
+    ],
+    [
+     "Azúcar",
+     "500 g"
+    ],
+    [
+     "Glucosa",
+     "100 g"
+    ],
+    [
+     "Pectina amarilla",
+     "12 g"
+    ],
+    [
+     "Azúcar para mezclar con la pectina",
+     "50 g"
+    ],
+    [
+     "Ácido cítrico disuelto en el mismo peso de agua",
+     "8 g de solución"
+    ],
+    [
+     "Azúcar para rebozar",
+     "c. s."
+    ]
+   ],
+   "steps": [
+    "Mezcla la pectina con los 50 g de azúcar para que no haga grumos.",
+    "Calienta el puré a 40–50 °C y añade la pectina en lluvia batiendo. Lleva a hervor.",
+    "Añade el azúcar y la glucosa en tres veces, sin que deje de hervir.",
+    "Cuece removiendo hasta 106–107 °C.",
+    "Fuera del fuego, añade el ácido, mezcla rápido y vierte enseguida en el marco sobre papel: cuaja en segundos.",
+    "Deja reposar 12 horas a temperatura ambiente, corta con cuchillo aceitado o guitarra y reboza en azúcar."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Pasta de fruta",
+    "ratio": "Puré y azúcar a partes iguales, 20 % de glucosa y 2–2,5 % de pectina sobre el puré",
+    "note": "Cocer a 106–107 °C."
+   },
+   {
+    "use": "Frutas muy pécticas (membrillo, manzana)",
+    "ratio": "Menos pectina: 1–1,5 %",
+    "note": "Cuajan solas en parte."
+   },
+   {
+    "use": "Gominola con gelatina",
+    "ratio": "500 g de zumo, 200 g de azúcar, 100 g de glucosa y 35–40 g de gelatina",
+    "note": "Gelatina disuelta a 60–70 °C; moldes de silicona, 12 horas en frío."
+   },
+   {
+    "use": "Gominola vegetal",
+    "ratio": "500 g de zumo, 200 g de azúcar y 6–8 g de agar, hervido 1 minuto",
+    "note": "Más quebradiza; aguanta temperatura."
+   }
+  ],
+  "variants": [
+   {
+    "id": "confituras-y-mermeladas",
+    "name": "Dulce de membrillo",
+    "note": "Pasta de fruta tradicional, sin pectina añadida."
+   },
+   {
+    "id": "gelificantes-y-espesantes",
+    "name": "Geles y gelificantes",
+    "note": "Cómo elegir entre pectina, gelatina y agar."
+   },
+   {
+    "id": null,
+    "name": "Pasta de fruta con especias o hierbas",
+    "note": "Pimienta en frambuesa, romero en albaricoque, hinojo en membrillo."
+   }
+  ],
+  "keys": [
+   "Pectina siempre mezclada con azúcar: sola hace grumos.",
+   "Termómetro: 2 °C de menos y no corta; de más, queda dura.",
+   "El ácido al final y rápido: con él cuaja casi al instante.",
+   "Purés colados y bien ácidos dan más brillo y sabor.",
+   "Reboza justo antes de servir si el ambiente es húmedo."
+  ],
+  "errors": [
+   {
+    "p": "No cuaja",
+    "fix": "Poca cocción o pectina vieja. Vuelve a cocer hasta 106–107 °C."
+   },
+   {
+    "p": "Cuaja en el cazo",
+    "fix": "Ácido añadido demasiado pronto o lento al verter. Prepara el marco antes y añade el ácido al final."
+   },
+   {
+    "p": "Suda y se moja el azúcar",
+    "fix": "Humedad o punto bajo. Sube 1 °C y guarda en caja cerrada."
+   }
+  ],
+  "history": "Las pastas de fruta cocida con azúcar son antiguas en la confitería europea y mediterránea, y el dulce de membrillo es su pariente más conocido en España. Las gominolas de gelatina son un dulce del siglo XX.",
+  "uses": [
+   "Petit four",
+   "Acompañar quesos",
+   "Elemento de color en postres",
+   "Bocado de final de menú"
+  ],
+  "keep": "Pasta de fruta rebozada, en caja cerrada a temperatura de sala, 3–4 semanas. Gominolas de gelatina en frío, 1 semana.",
+  "pro": "Haz pastas con la fruta de temporada y guárdalas en marco entero, cortando y rebozando cada día lo necesario.",
+  "related": [
+   "confituras-y-mermeladas",
+   "gelificantes-y-espesantes",
+   "coulis-y-geles-de-fruta",
+   "petit-fours",
+   "caramelo"
+  ]
+ },
+ {
+  "id": "menjar-blanc",
+  "name": "Menjar blanc y cremas de almendra",
+  "name_en": "Menjar blanc and almond puddings",
+  "cat": "dulce",
+  "group": "Dulces de la isla",
+  "aka": [
+   "menjar blanc",
+   "manjar blanco",
+   "crema de almendra",
+   "leche de almendra",
+   "pudin de almendra",
+   "postre de almendra"
+  ],
+  "summary": "Leche de almendra espesada con almidón y perfumada con cítrico y canela: el postre de cuchara de raíz medieval que se conserva en Cataluña y Baleares.",
+  "what": "Se hace leche de [[almendra]] triturando almendra cruda con agua y colándola, y se espesa con almidón como una crema, sin huevo ni leche de vaca. Queda blanca, fina y con sabor limpio a almendra, y se sirve fría con canela. Es una base muy útil: mismo método para una panna cotta de almendra con gelatina, para un helado de almendra o como salsa fría para fruta.",
+  "base": {
+   "for": "8 raciones",
+   "items": [
+    [
+     "Almendra cruda pelada",
+     "250 g"
+    ],
+    [
+     "Agua",
+     "1 l"
+    ],
+    [
+     "Azúcar",
+     "120 g"
+    ],
+    [
+     "Almidón de maíz o de arroz",
+     "70 g"
+    ],
+    [
+     "Piel de limón",
+     "1 tira"
+    ],
+    [
+     "Canela en rama",
+     "1"
+    ],
+    [
+     "Sal",
+     "una pizca"
+    ],
+    [
+     "Canela molida para servir",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Remoja la almendra en el agua 8–12 horas en frío.",
+    "Tritura almendra y agua 2–3 minutos y cuela por estameña apretando bien. Sale cerca de 1 l de leche de almendra.",
+    "Disuelve el almidón en un poco de esa leche fría.",
+    "Calienta el resto con el azúcar, la piel de limón, la canela y la sal; retira la piel y la canela al hervir.",
+    "Añade el almidón disuelto y cuece removiendo hasta que espese y dé un par de hervores.",
+    "Reparte en cuencos, deja enfriar y guarda en frío. Sirve con canela molida."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Menjar blanc de cuchara",
+    "ratio": "70 g de almidón por litro de leche de almendra",
+    "note": "Firme pero cremoso."
+   },
+   {
+    "use": "Para desmoldar",
+    "ratio": "90 g de almidón o 6–8 g de gelatina por litro",
+    "note": "Moldes untados con aceite neutro."
+   },
+   {
+    "use": "Leche de almendra",
+    "ratio": "250 g de almendra por litro de agua",
+    "note": "Más almendra, más sabor y cuerpo."
+   },
+   {
+    "use": "Salsa de almendra para fruta",
+    "ratio": "Leche de almendra con 30–40 g de almidón por litro",
+    "note": "Fluida, como una crema inglesa ligera."
+   }
+  ],
+  "variants": [
+   {
+    "id": "ajoblanco",
+    "name": "Ajoblanco",
+    "note": "La misma almendra en salado, con ajo, pan y vinagre."
+   },
+   {
+    "id": "panna-cotta-y-cuajadas",
+    "name": "Panna cotta de almendra",
+    "note": "Leche de almendra y nata cuajadas con gelatina."
+   },
+   {
+    "id": "helados-y-sorbetes",
+    "name": "Helado de almendra",
+    "note": "Leche de almendra equilibrada y mantecada."
+   }
+  ],
+  "keys": [
+   "Almendra cruda y pelada para un sabor limpio; tostada da otro postre.",
+   "Exprime bien la pulpa: ahí está la grasa y el sabor.",
+   "Que hierva con el almidón para que no sepa a crudo.",
+   "La pulpa que queda sirve para galletas, crumbles o masas.",
+   "Sírvelo frío pero no helado."
+  ],
+  "errors": [
+   {
+    "p": "Sabe a almidón",
+    "fix": "Poca cocción. Deja hervir 1–2 minutos removiendo."
+   },
+   {
+    "p": "Granuloso",
+    "fix": "Leche mal colada. Cuela por estameña fina."
+   },
+   {
+    "p": "Sin sabor a almendra",
+    "fix": "Poca almendra o mal exprimida. Sube la proporción y aprieta bien al colar."
+   }
+  ],
+  "history": "El manjar blanco es un plato de origen medieval que aparece en recetarios antiguos de la Corona de Aragón y de otras cocinas europeas, primero con ave y almendra. La versión dulce de leche de almendra se conserva en Cataluña y en las Baleares.",
+  "uses": [
+   "Postre de cuchara",
+   "Base fría para fruta de temporada",
+   "Panna cotta de almendra",
+   "Salsa de almendra para fruta asada"
+  ],
+  "keep": "En frío y tapado, 3 días. La leche de almendra cruda, en frío, 2 días.",
+  "pro": "Haz la leche de almendra la víspera y cuaja en cuencos. Acompaña con fruta de temporada, un crujiente de almendra y piel de cítrico rallada al momento.",
+  "related": [
+   "almendra",
+   "ajoblanco",
+   "panna-cotta-y-cuajadas",
+   "cocina-ibicenca",
+   "flao"
+  ]
+ },
+ {
+  "id": "petit-fours",
+  "name": "Petit fours",
+  "name_en": "Petit fours",
+  "cat": "dulce",
+  "group": "Espumas y azúcar",
+  "aka": [
+   "petit four",
+   "mignardises",
+   "dulces del cafe",
+   "bocados dulces",
+   "friandises"
+  ],
+  "summary": "Los bocados dulces del final del menú: cómo elegirlos, equilibrarlos y producirlos para que lleguen perfectos con el café.",
+  "what": "Los petit fours son el último recuerdo de la comida: tres a cinco bocados pequeños, de un mordisco, que se sirven con el café. Funcionan como un pequeño menú: contrastes de textura (crujiente, tierno, fundente), de sabor (chocolate, fruta, frutos secos, algo ácido) y de temperatura. Casi todo sale de bases que ya existen en la partida: [[bombones-y-trufas|trufas]], [[gelatinas-de-fruta|pasta de fruta]], [[macarons]], [[bizcochos-humedos|financieros]], [[tejas-y-crujientes-dulces|tejas]] o [[turrones-y-pralines|turrón]].",
+  "method": [
+   "Elige 3–5 piezas que no se repitan en textura ni en sabor principal: una de chocolate, una de fruta, una crujiente, una tierna y, si quieres, una caliente.",
+   "Relaciónalas con el menú: que recojan un producto o un aroma del postre o de la temporada sin repetirlo igual.",
+   "Ajusta el tamaño: un bocado, de 8 a 15 g.",
+   "Organiza la producción por duración: lo que dura semanas (pasta de fruta, turrón, praliné) se hace en tanda; lo que dura días (macarons, trufas) dos veces por semana; lo recién hecho (financieros, tejas), en el día.",
+   "Monta en el último momento y sirve a la temperatura de cada pieza: el chocolate, a temperatura de sala; lo helado, al momento."
+  ],
+  "ratios": [
+   {
+    "use": "Número de piezas",
+    "ratio": "3–5 por persona",
+    "note": "Más cansa después de un menú largo."
+   },
+   {
+    "use": "Peso por pieza",
+    "ratio": "8–15 g",
+    "note": "Un solo bocado."
+   },
+   {
+    "use": "Pieza recién horneada",
+    "ratio": "Financiero o magdalena a 190 °C, 8–10 minutos",
+    "note": "Se hornea al pedir el café."
+   }
+  ],
+  "variants": [
+   {
+    "id": "bombones-y-trufas",
+    "name": "Trufas y bombones",
+    "note": "La pieza de chocolate."
+   },
+   {
+    "id": "gelatinas-de-fruta",
+    "name": "Pasta de fruta",
+    "note": "La pieza ácida y de color."
+   },
+   {
+    "id": "bizcochos-humedos",
+    "name": "Financieros",
+    "note": "La pieza tierna y caliente."
+   }
+  ],
+  "keys": [
+   "Pequeño de verdad: un bocado, sin migas ni cuchillo.",
+   "Una pieza ácida limpia la boca después del chocolate.",
+   "Algo recién hecho y templado marca la diferencia.",
+   "Producción ordenada por duración: no todo se hace cada día.",
+   "Que hablen de la casa: almendra, higo, algarroba o cítricos de la isla."
+  ],
+  "errors": [
+   {
+    "p": "Todo dulce y pesado",
+    "fix": "Sin contraste. Añade una pieza ácida o con sal."
+   },
+   {
+    "p": "Piezas blandas o húmedas",
+    "fix": "Montadas antes de tiempo o guardadas mal. Monta al momento y guarda en seco."
+   },
+   {
+    "p": "Demasiado grandes",
+    "fix": "Pesa y porciona: el comensal llega lleno."
+   }
+  ],
+  "history": "Los pequeños dulces servidos al final de la comida son una tradición de la pastelería francesa y de la alta cocina, y en España se han ido mezclando con dulces de obrador de cada zona.",
+  "uses": [
+   "Final del menú degustación",
+   "Café de sobremesa",
+   "Regalo de la casa",
+   "Eventos"
+  ],
+  "keep": "Cada pieza según su ficha. En general: caja cerrada, seca y a temperatura de sala para lo crujiente y el chocolate; frío para lo que lleva crema.",
+  "pro": "Ten una lista de petit fours con su producción y duración, y prepara las bandejas por la tarde salvo la pieza caliente.",
+  "related": [
+   "bombones-y-trufas",
+   "gelatinas-de-fruta",
+   "macarons",
+   "bizcochos-humedos",
+   "tejas-y-crujientes-dulces",
+   "turrones-y-pralines"
+  ]
+ },
+ {
+  "id": "postres-de-aceite-y-hierbas",
+  "name": "Postres con aceite de oliva, hierbas y especias",
+  "name_en": "Desserts with olive oil, herbs and spices",
+  "cat": "dulce",
+  "group": "Cremas",
+  "aka": [
+   "postre de aceite de oliva",
+   "helado de aceite",
+   "hierbas en postres",
+   "especias en postres",
+   "postre de romero",
+   "postre de hinojo"
+  ],
+  "summary": "Cómo llevar el aceite de oliva, las hierbas y las especias a los postres: infusiones, emulsiones y acabados que dan un dulce mediterráneo y menos empalagoso.",
+  "what": "El [[aceite-de-oliva]] aporta grasa, amargor y notas verdes que equilibran el azúcar, y sustituye a la mantequilla en bizcochos, helados, ganaches y mousses. Las [[hierbas-frescas]] (romero, tomillo, hinojo, albahaca, menta, hierbaluisa) y las [[especias]] (pimienta, anís, canela, cardamomo, azafrán) se extraen por [[infusiones|infusión]] en la leche, la nata, el almíbar o el aceite. La clave es la dosis: deben aparecer como un aroma que acompaña, no como el sabor principal.",
+  "method": [
+   "Elige un vehículo: leche o nata para cremas y helados, almíbar para frutas y borrachos, aceite o mantequilla para masas y ganaches.",
+   "Infusiona: hierbas tiernas en frío 12 horas o en caliente a 70–80 °C, tapado, 10–15 minutos; hierbas leñosas y especias, en caliente 15–20 minutos.",
+   "Cuela, pesa lo que queda y repón el líquido perdido.",
+   "Prueba en frío: el frío apaga el aroma; ajusta la dosis antes de terminar el postre.",
+   "Para el aceite, emulsiónalo al final de la elaboración (ganache, helado, crema) o úsalo en el acabado, en crudo, con sal en escamas."
+  ],
+  "ratios": [
+   {
+    "use": "Hierbas frescas en leche o nata",
+    "ratio": "10–20 g por litro",
+    "note": "En caliente a 70–80 °C, 10–15 minutos, tapado."
+   },
+   {
+    "use": "Especias enteras",
+    "ratio": "3–8 g por litro, tostadas antes",
+    "note": "Azafrán: 0,1–0,2 g por litro."
+   },
+   {
+    "use": "Helado de aceite de oliva",
+    "ratio": "100–150 g de aceite por kilo de base de crema inglesa",
+    "note": "Emulsionado con túrmix con la base a 40 °C."
+   },
+   {
+    "use": "Ganache de aceite",
+    "ratio": "Sustituye la mantequilla por el mismo peso de aceite suave",
+    "note": "Más fluida; ajusta con un poco más de chocolate."
+   }
+  ],
+  "variants": [
+   {
+    "id": "bizcochos-humedos",
+    "name": "Bizcocho de aceite y cítricos",
+    "note": "El postre de aceite más sencillo."
+   },
+   {
+    "id": "mousses-y-cremosos",
+    "name": "Mousse de aceite de oliva",
+    "note": "Yema, azúcar y aceite emulsionados, aligerados con nata."
+   },
+   {
+    "id": null,
+    "name": "Chocolate, aceite y sal",
+    "note": "Chocolate fundido o ganache con un hilo de aceite y sal en escamas sobre pan tostado."
+   }
+  ],
+  "keys": [
+   "Aceite de variedad suave o afrutado, nunca uno muy amargo o picante para cremas.",
+   "Infusiona tapado: el aroma se va con el vapor.",
+   "Hierbas tiernas, poco tiempo; si se pasan, saben a hierba cocida.",
+   "Un aroma por postre: dos hierbas fuertes se tapan.",
+   "Apunta la dosis exacta que funcionó: cada lote de hierba es distinto."
+  ],
+  "errors": [
+   {
+    "p": "Sabor a hierba cocida o a jabón",
+    "fix": "Infusión larga o demasiado caliente. Acorta el tiempo y baja a 70 °C."
+   },
+   {
+    "p": "Aceite que amarga el postre",
+    "fix": "Aceite muy verde o picante. Usa uno más suave o mézclalo con aceite neutro."
+   },
+   {
+    "p": "No se nota el aroma",
+    "fix": "Poca dosis o probado en caliente. Sube la cantidad y prueba en frío."
+   }
+  ],
+  "history": "En la repostería tradicional del Mediterráneo el aceite de oliva ha sido la grasa de muchos dulces de casa, y hierbas y especias como el anís, la canela o la matalahúva son habituales. La pastelería de restaurante actual las usa de forma más precisa.",
+  "uses": [
+   "Helados y sorbetes de hierba",
+   "Bizcochos y masas de aceite",
+   "Cremas infusionadas",
+   "Fruta en almíbar especiado",
+   "Acabado de aceite y sal en postres de chocolate"
+  ],
+  "keep": "Infusiones en frío, 2–3 días. Los postres, según su ficha.",
+  "pro": "Infusiona la leche o la nata la víspera y cuela por la mañana. Ten un aceite de oliva solo para postres, elegido por su suavidad.",
+  "related": [
+   "aceite-de-oliva",
+   "hierbas-frescas",
+   "especias",
+   "infusiones",
+   "helados-y-sorbetes",
+   "bizcochos-humedos"
+  ]
+ },
+ {
+  "id": "crepes-y-gofres",
+  "name": "Crêpes, tortitas y gofres",
+  "name_en": "Crêpes, pancakes and waffles",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "crepes",
+   "crepe",
+   "filloas",
+   "tortitas",
+   "pancakes",
+   "gofres",
+   "waffles",
+   "blinis"
+  ],
+  "summary": "Masas líquidas de harina, huevo y leche cuajadas en sartén o en plancha: crêpes finas, tortitas esponjosas y gofres crujientes, dulces o salados.",
+  "what": "Son la misma familia con distinta proporción. La crêpe es una masa muy líquida y sin levadura que se extiende fina en la sartén; en Galicia, con su tradición propia, son las filloas. La tortita lleva levadura química o claras montadas y queda gruesa y esponjosa. El gofre se cuece en molde de hierro, con más grasa y azúcar para que se dore y cruja; con levadura de panadería queda más ligero. Todas mejoran con un reposo de la masa.",
+  "base": {
+   "for": "unas 20 crêpes de 22 cm",
+   "items": [
+    [
+     "Harina floja",
+     "250 g"
+    ],
+    [
+     "Huevos",
+     "200 g (4)"
+    ],
+    [
+     "Leche entera",
+     "550 g"
+    ],
+    [
+     "Mantequilla tostada o fundida",
+     "50 g"
+    ],
+    [
+     "Azúcar (solo dulces)",
+     "20 g"
+    ],
+    [
+     "Sal",
+     "3 g"
+    ]
+   ],
+   "steps": [
+    "Mezcla la harina, el azúcar y la sal; añade los huevos y la mitad de la leche y bate hasta que quede liso.",
+    "Añade el resto de la leche y la mantequilla tostada. Cuela.",
+    "Deja reposar la masa en frío al menos 1 hora, mejor 12.",
+    "Calienta una sartén antiadherente a fuego medio-alto y úntala apenas con mantequilla.",
+    "Vierte un cucharón pequeño, gira la sartén para cubrir el fondo, cuece 40–60 segundos hasta que el borde se dore, da la vuelta y cuece 20 segundos más."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Crêpe",
+    "ratio": "1 parte de harina, 0,8 de huevo y 2,2 de leche",
+    "note": "Masa muy líquida, reposada."
+   },
+   {
+    "use": "Tortita esponjosa",
+    "ratio": "250 g de harina, 2 huevos, 300 g de leche o suero, 10 g de levadura química y 30 g de mantequilla",
+    "note": "Plancha a 180–190 °C."
+   },
+   {
+    "use": "Gofre crujiente",
+    "ratio": "250 g de harina, 2 huevos, 350 g de leche, 100 g de mantequilla fundida, 30 g de azúcar y 8 g de levadura química",
+    "note": "Hierro bien caliente, unos 200 °C, 3–4 minutos."
+   },
+   {
+    "use": "Blini salado",
+    "ratio": "Masa de tortita con parte de harina de trigo sarraceno y levadura fresca",
+    "note": "Pequeños, para aperitivo."
+   }
+  ],
+  "variants": [
+   {
+    "id": "orelletes-y-bunyols",
+    "name": "Masas fritas",
+    "note": "Buñuelos: la masa se fríe en vez de cuajarse en plancha."
+   },
+   {
+    "id": null,
+    "name": "Crêpes Suzette",
+    "note": "Crêpes con salsa de mantequilla, azúcar y naranja flambeada."
+   },
+   {
+    "id": null,
+    "name": "Crêpe salada",
+    "note": "Con harina de trigo sarraceno y relleno de jamón, queso o setas."
+   }
+  ],
+  "keys": [
+   "Reposo de la masa: hidrata la harina y da crêpes más finas y elásticas.",
+   "Mantequilla tostada en la masa: más sabor y la sartén necesita menos grasa.",
+   "La primera crêpe sirve para ajustar fuego y cantidad.",
+   "Tortitas: no batas de más tras añadir la harina, o quedan duras.",
+   "Gofres: hierro muy caliente y no abrir antes de tiempo."
+  ],
+  "errors": [
+   {
+    "p": "Crêpes gruesas o rotas",
+    "fix": "Masa espesa o sin reposo. Aligera con leche y deja reposar."
+   },
+   {
+    "p": "Tortitas planas",
+    "fix": "Levadura vieja o masa batida de más. Mezcla lo justo y usa levadura fresca."
+   },
+   {
+    "p": "Gofre blando",
+    "fix": "Poca grasa o hierro frío. Calienta bien el hierro y respeta la mantequilla."
+   },
+   {
+    "p": "Se pegan",
+    "fix": "Sartén poco caliente o mal untada. Calienta más y unta con papel."
+   }
+  ],
+  "history": "Las masas líquidas cuajadas en plancha son comunes a muchas cocinas: las crêpes bretonas, las filloas gallegas, las tortitas del norte de Europa y América, o los gofres belgas.",
+  "uses": [
+   "Desayuno y brunch",
+   "Postre con fruta asada o curd",
+   "Crêpes saladas rellenas",
+   "Blinis de aperitivo con salazones"
+  ],
+  "keep": "Masa en frío, 2 días. Crêpes hechas, apiladas con papel y en frío 3 días o congeladas 1 mes. Gofres, mejor al momento; se regeneran en horno a 180 °C.",
+  "pro": "Haz las crêpes por la mañana y apílalas; caliéntalas en sartén al pedir. Para el brunch, masa de gofres en biberón y hierro precalentado.",
+  "related": [
+   "orelletes-y-bunyols",
+   "curds-y-cremas-de-citricos",
+   "fruta-asada",
+   "mantequilla-noisette",
+   "salazones-y-huevas"
+  ]
  }
 ]
