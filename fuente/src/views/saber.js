@@ -10,6 +10,15 @@ import {emptyState} from './shared.js';
 import {go} from '../nav.js';
 import {technique} from '../flavor-core.js';
 import {pathsHtml} from './paths.js';
+// «Para ti»: fichas que casan con los intereses de Mi cocina (brasa, marisco, México, fermentos…).
+const INTEREST_WORDS = {'brasa': 'brasa', 'verdura a la brasa': 'verduras brasa', 'pescado y marisco': 'pescado marisco', 'postres': 'crema merengue helado', 'asia': 'dashi', 'mexico': 'chiles', 'méxico': 'chiles', 'casqueria': 'casqueria', 'casquería': 'casqueria', 'encurtidos y fermentos': 'fermentacion encurtida', 'sin alcohol': 'maridaje sin alcohol', 'cocina ibicenca': 'ibicenca', 'para compartir': 'picada'};
+function forYouHtml() {
+ const ints = (state.settings?.interests || []).map(x => String(x).toLowerCase());
+ if (!ints.length) return '';
+ const seen = new Set(), out = [];
+ for (const i of ints) for (const e of search(INTEREST_WORDS[i] || i, 3)) if (!seen.has(e.id)) { seen.add(e.id); out.push([i, e]); }
+ return out.length ? '<section class="sec"><h2 class="day">' + esc(t('Para ti, según tus intereses', 'For you, from your interests')) + '</h2><div class="chips kforyou">' + out.slice(0, 18).map(([, e]) => '<a class="chip" href="' + href(e.id) + '">' + esc(e.name) + '</a>').join('') + '</div><p class="fine">' + esc(t('Cambia tus intereses en Mi cocina.', 'Change your interests in My kitchen.')) + '</p></section>' : '';
+}
 
 let query = '', category = '', fixes = false, activeTab = null, tabFor = '';
 const SEEN = 'id-cocina-biblioteca-vistas';
@@ -92,7 +101,7 @@ function homeHtml() {
   '<p class="fine kresult-status" id="saberStatus" role="status">' + esc(result.status) + '</p><div id="saberRes">' + result.html + '</div>' +
   '<div class="khome"' + (filtering ? ' hidden' : '') + '>' +
   (saved.length ? '<section class="sec"><h2 class="day">' + esc(t('Favoritas', 'Favourites')) + '</h2><ul class="krows">' + saved.map(e => row(e)).join('') + '</ul></section>' : '') +
-  pathsHtml() +
+  forYouHtml() + pathsHtml() +
   '<section class="sec"><h2 class="day">' + esc(t('Consultas de cocina', 'Kitchen reference')) + '</h2><div class="kguides">' + GUIDES.map(([es, english, hint, ids, tab]) => '<section class="kguide"><h3>' + esc(t(es, english)) + '</h3><p>' + esc(hint) + '</p><div class="chips">' + ids.map(entryById).filter(Boolean).map(e => '<a class="chip" href="' + href(e.id, tab) + '">' + esc(e.name) + '</a>').join('') + '</div></section>').join('') + '</div></section>' +
   (last.length ? '<section class="sec"><h2 class="day">' + esc(t('Lo último que has consultado', 'Recently opened')) + '</h2><ul class="krows">' + last.map(e => row(e)).join('') + '</ul></section>' : '') +
   '<section class="sec"><h2 class="day">' + esc(t('Los estantes', 'The shelves')) + '</h2><div class="kshelves">' + shelves.map(([id, n]) => '<a class="kshelf" href="#/biblioteca/estante/' + id + '">' + icon((SHELF[id] || SHELF.conceptos)[0]) + '<strong>' + esc(shelfName(id)) + '</strong><span>' + esc((SHELF[id] || SHELF.conceptos)[1]) + '</span><small>' + esc(n === 1 ? t('1 entrada', '1 entry') : n + t(' entradas', ' entries')) + '</small></a>').join('') + '</div></section>' +

@@ -72,6 +72,10 @@ ok(await mp.evaluate(() => document.documentElement.scrollWidth <= innerWidth), 
 await mp.evaluate(() => { location.hash = '#/biblioteca/mayonesa'; }); await mp.waitForSelector('.kentry'); await wait(300);
 ok(await mp.evaluate(() => document.documentElement.scrollWidth <= innerWidth), 'la entrada se sale en el móvil');
 ok(await mp.locator('.ktabs button').count() >= 4, 'en el móvil no hay pestañas en la entrada');
+await page.evaluate(() => { const v = JSON.parse(localStorage.getItem('id-cocina-v1')); v.settings = {interests: ['brasa', 'casquería', 'México'], _at: '2026-11-20T10:00:00Z'}; localStorage.setItem('id-cocina-v1', JSON.stringify(v)); });
+await page.reload(); await wait(800); await go('#/biblioteca'); await wait(300);
+const fy = await page.textContent('.kforyou').catch(() => '');
+ok(fy.includes('Casquería') && fy.includes('Chiles'), 'la Biblioteca no propone fichas según tus intereses: ' + fy);
 ok(!errors.length, 'errores: ' + errors.join(' | '));
 await browser.close();
 console.log(fails.length ? 'FALLOS:\n - ' + fails.join('\n - ') : 'la Biblioteca: todo correcto');
