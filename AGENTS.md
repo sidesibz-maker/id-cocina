@@ -20,7 +20,7 @@ App personal de I+D de un jefe de cocina (restaurante mediterráneo de brasa en 
     temperaturas), `views/lab.js` (Laboratorio creativo, `#/laboratorio`: chispas, retos con restricción, mecanismos, cuaderno de chispas), `views/kbook.js` (libro de la Biblioteca para imprimir), `views/kcompare.js` (comparar dos fichas), `views/year.js` (Mi año en cocina), `views/discover.js` (Por descubrir, documentos «descubrir:…»), `saber/glosario.js` (diccionario de cocina); tarjetas propias de Entrenar en documentos «tarjeta:…», `sketch.js`
     (boceto de emplatado), `timers.js`, `views/cook.js` (modo cocina,
     `#/cocinar/plato|sub|biblioteca/<id>`), `views/journal.js` (Diario, `#/diario`), `views/career.js` (Mi trayectoria y
-    dossier, `#/trayectoria`), `views/train.js` (Entrenar, tarjetas con repetición espaciada), `challenge.js` (reto de la
+    dossier, `#/trayectoria`), `views/train.js` (Entrenar: «Examen» con corrección que enseña, en `views/exam.js`, y «Repaso rápido» de tarjetas; repetición espaciada; exámenes guardados como documentos «examen:…»), `challenge.js` (reto de la
     semana), `finder.js` (buscador Ctrl+K).
   - Documentos: `state.docs` en `store.js` (`saveDoc`, `liveDocs`, `trashDoc`), con id `tipo:…` (diario, carrera:perfil,
     puesto, formacion, objetivo, logro, chispa, repaso:estado, lectura:estado, favoritas:lista; y otros de pantallas ya retiradas que se conservan). Van en la copia y se sincronizan como tipo

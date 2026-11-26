@@ -13,6 +13,8 @@ const day = (n = 0) => { const d = new Date(); d.setDate(d.getDate() + n); retur
 await page.goto(url); await page.waitForSelector('.hello h1');
 ok((await page.textContent('.rail')).includes('Entrenar'), 'el menú no tiene Entrenar');
 await page.click('.rail a[href="#/entrenar"]'); await page.waitForSelector('.trcard');
+ok(await page.locator('[data-mode=examen].active').count() === 1 && await page.locator('.trexam').count() === 1, 'Entrenar no empieza en modo examen');
+await page.click('[data-mode=rapido]'); await page.waitForSelector('[data-tr=flip]');
 ok(Number((await page.textContent('.stats .stat:nth-child(2) strong')).split('/')[1]) > 300, 'hay pocas tarjetas');
 ok(!(await page.isVisible('.tra')), 'la respuesta sale antes de darle la vuelta');
 await page.click('[data-tr=flip]'); ok(await page.isVisible('.tra'), 'no da la vuelta a la tarjeta');
@@ -42,7 +44,7 @@ ok(perfil && Object.values(perfil.skills || {}).some(v => v === 1) && Object.key
 ok((await page.textContent('.craft-challenge')).includes('Hecho'), 'el reto no queda como hecho');
 // Tus recetas: tarjetas de tus subrecetas y tus platos listos
 await page.evaluate(() => { const v = JSON.parse(localStorage.getItem('id-cocina-v1')); v.subs = [{id: 's1', name: 'Romesco', items: [{n: 'Ñora', q: '6'}, {n: 'Almendra', q: '80 g'}], yield: '700 g', method: 'Asar y majar.', version: 1, updated_at: '2026-11-20T10:00:00Z'}]; v.dishes = [{id: 'd9', name: 'Calamar', status: 'carta', course: 'principal', plating: 'Romesco debajo, calamar encima.', components: [{id: 'c', role: 'principal', name: 'Calamar', techniques: [], items: [{n: 'Calamar', q: '150 g'}]}], tests: [], images: [], version: 1, updated_at: '2026-11-20T10:00:00Z'}]; localStorage.setItem('id-cocina-v1', JSON.stringify(v)); });
-await page.reload(); await wait(500); await go('#/entrenar'); await page.click('[data-cat=mias]'); await wait(200);
+await page.reload(); await wait(500); await go('#/entrenar'); await page.click('[data-mode=rapido]'); await wait(150); await page.click('[data-cat=mias]'); await wait(200);
 ok((await page.textContent('.trmeta')).includes('Tus recetas') && (await page.textContent('.trmeta')).includes('de 3'), 'no hay tarjetas de tus recetas: ' + await page.textContent('.trcard'));
 // Examen de una ruta
 await go('#/entrenar/ruta/salsas'); await page.waitForSelector('.tronly');
@@ -57,6 +59,51 @@ let mine = false; for (let k = 0; k < 20 && !mine; k++) { mine = (await page.tex
 ok(mine, 'la tarjeta propia no sale en el repaso');
 // Dominio por tema
 await go('#/entrenar'); ok(await page.locator('.tmastery li').count() >= 4, 'no sale cuánto dominas de cada tema');
+// ---------- Examen ----------
+const TEMPS = {'Vacuno y cordero, poco hecho': '51 °C', 'Vacuno y cordero, al punto': '55 °C', 'Cerdo jugoso': '63 °C', 'Aves, a corazón': '73 °C', 'Pescado jugoso, nacarado': '48 °C', 'Crema inglesa': '83 °C', 'Fritura': '175 °C', 'Mantener en caliente': '65 °C o más', 'Mantener en frío': '4 °C o menos', 'Abatir': 'de 60 a 10 °C en menos de 2 horas', 'Regenerar, a corazón': '72 °C', 'Agar: cuaja al bajar de': '40 °C y aguanta hasta 80 °C', 'Gelatina: fundir sin hervir, a': '65 °C'};
+await page.reload(); await wait(500); await go('#/entrenar'); await page.waitForSelector('.trexam');
+await page.click('[data-cat=temperaturas]'); await page.waitForSelector('.trexam .trq');
+let opened = 0, tested = 0, rightOpen = 0;
+for (let k = 0; k < 10; k++) {
+ const q = await page.textContent('.trexam .trq');
+ if (await page.locator('#exA').count()) {
+  const key = Object.keys(TEMPS).find(x => q.startsWith(x));
+  await page.fill('#exA', key ? TEMPS[key] : '60 °C'); await page.click('#exForm button[type=submit]'); await page.waitForSelector('.exfb');
+  opened++;
+  if ((await page.textContent('.exverdict')).includes('Bien')) rightOpen++;
+  ok((await page.textContent('.exfb')).includes('La respuesta') && (await page.textContent('.exfb')).includes('Por qué'), 'la corrección no enseña la respuesta y el porqué');
+ } else {
+  await page.click('button.exopt[data-opt="0"]'); await page.waitForSelector('.exfb');
+  tested++;
+  ok(await page.locator('.exopt.is-right').count() === 1, 'la pregunta de elegir no marca la correcta');
+ }
+ await page.click('[data-ex=next]'); await wait(120);
+}
+ok(opened > 0 && tested >= 0, 'el examen no trae preguntas a desarrollar');
+ok(rightOpen === opened, 'una respuesta correcta no sale como «Bien»: ' + rightOpen + ' de ' + opened);
+await page.waitForSelector('.exres');
+ok(/\d/.test(await page.textContent('.exres .exbig')), 'el examen no da nota final');
+const exams = await page.evaluate(() => Object.values(JSON.parse(localStorage.getItem('id-cocina-v1')).docs).filter(d => d.type === 'examen'));
+ok(exams.length === 1 && exams[0].n === 10, 'el examen no se guarda: ' + JSON.stringify(exams));
+await page.click('[data-ex=new]'); await page.waitForSelector('.trexam .trq');
+ok((await page.textContent('.exlast')).includes('Tus últimos exámenes'), 'no enseña los últimos exámenes');
+// Una respuesta en blanco («No lo sé») se corrige como mal y enseña la respuesta
+for (let k = 0; k < 10 && !(await page.locator('#exA').count()); k++) { await page.click('button.exopt[data-opt="0"]'); await page.click('[data-ex=next]'); await wait(80); }
+if (await page.locator('#exA').count()) { await page.click('[data-ex=skip]'); await page.waitForSelector('.exfb'); ok((await page.textContent('.exverdict')).includes('Mal'), '«No lo sé» no sale como mal'); }
+// Con ChatGPT: corrige el «jefe examinador»
+const ctx2 = await browser.newContext({viewport: {width: 390, height: 844}}); const p2 = await ctx2.newPage();
+let asked = null;
+await ctx2.route('https://api.openai.com/v1/responses', r => (asked = r.request().postDataJSON(), r.fulfill({status: 200, contentType: 'application/json', body: JSON.stringify({output: [{type: 'message', content: [{type: 'output_text', text: JSON.stringify({nota: 7, veredicto: 'casi', aciertos: ['La temperatura'], falta: ['El reposo'], explicacion: 'Explicación del jefe examinador.', truco: 'Truco para recordarlo.'})}]}]})})));
+await p2.goto(url); await p2.waitForSelector('.hello h1');
+await p2.evaluate(() => localStorage.setItem('id-cocina-ia', JSON.stringify({key: 'sk-proj-prueba0123456789abcdefghijklmnop', daily: false})));
+await p2.reload(); await p2.waitForSelector('.hello h1'); await p2.evaluate(() => { location.hash = '#/entrenar'; }); await p2.waitForSelector('.trexam');
+await p2.click('[data-cat=fallos]'); await p2.waitForSelector('#exA');
+await p2.fill('#exA', 'Bajo el fuego y lo dejo reposar.'); await p2.click('#exForm button[type=submit]'); await p2.waitForSelector('.exfb');
+const fb = await p2.textContent('.exfb');
+ok(fb.includes('Casi') && fb.includes('7') && fb.includes('Explicación del jefe examinador') && fb.includes('Truco para recordarlo') && fb.includes('El reposo'), 'la corrección con ChatGPT no sale: ' + fb.slice(0, 200));
+ok(/Respuesta del cocinero: Bajo el fuego/.test(JSON.stringify(asked || {})), 'no manda tu respuesta a ChatGPT');
+ok(await p2.evaluate(() => document.documentElement.scrollWidth <= innerWidth), 'el examen se sale en el móvil');
+await ctx2.close();
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();
 if (fails.length) { console.error('FALLOS en entrenar:\n - ' + fails.join('\n - ')); process.exit(1); }

@@ -86,7 +86,7 @@ await page.setViewportSize({width: 390, height: 800}); await go('#/hoy'); await 
 ok(await page.locator('.sheet a[href="#/diario"]').count() === 1 && await page.locator('.sheet a[href="#/trayectoria"]').count() === 1, 'en el móvil no hay acceso al diario y a la trayectoria');
 // Lo aprendido en el diario vuelve en Entrenar (la entrada está en la papelera, así que no debe salir) y el radar manda chispas
 await page.goto(url + '#/diario/nuevo'); await page.waitForSelector('#jform'); await page.fill('#j-learned', 'La alcachofa confitada aguanta tres días en su aceite'); await page.click('#jform button[type=submit]'); await wait(400);
-await page.evaluate(() => { location.hash = '#/entrenar'; }); await wait(400); await page.click('[data-cat=mias]'); await wait(200);
+await page.evaluate(() => { location.hash = '#/entrenar'; }); await wait(400); await page.click('[data-mode=rapido]'); await wait(150); await page.click('[data-cat=mias]'); await wait(200);
 let foundLearn = false; for (let k = 0; k < 6 && !foundLearn; k++) { foundLearn = (await page.textContent('#trCard')).includes('Qué aprendiste'); if (!foundLearn && await page.locator('[data-tr=flip]').count()) { await page.click('[data-tr=flip]'); await page.click('[data-tr="2"]'); await wait(200); } }
 ok(foundLearn, 'lo aprendido en el diario no sale en Entrenar');
 // Lo aprendido, mes a mes, y las ideas del servicio pasan a chispas

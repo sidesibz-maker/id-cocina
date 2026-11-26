@@ -7,6 +7,8 @@ import {esc, icon, $, toast} from '../ui.js';
 import {docById, saveDoc, liveSubs, liveDishes, liveDocs, trashDoc} from '../store.js';
 import {entries, entryById} from '../saber/index.js';
 import {PATHS} from './paths.js';
+import {makeQuestions, localGrade, iaGrade, canAskIa, questionHtml, feedbackHtml, resultHtml} from './exam.js';
+import {relDay} from '../i18n.js';
 
 export const title = () => t('Entrenar', 'Train');
 const ID = 'repaso:estado', GAP = [0, 1, 3, 7, 16, 35, 80]; // días hasta volver a verla, según la caja
@@ -19,7 +21,7 @@ export function cards() {
  const out = [];
  for (const e of entries()) {
   if (e.mine) continue;
-  for (const r of e.ratios || []) if (r.use && r.ratio) out.push({id: 'r|' + e.id + '|' + r.use, cat: 'proporciones', from: e.id, q: e.name + ': ' + t('¿qué proporción para «', 'what ratio for “') + r.use + t('»?', '”?'), a: plain(r.ratio) + (r.note ? '. ' + plain(r.note) : '')});
+  for (const r of e.ratios || []) if (r.use && r.ratio) out.push({id: 'r|' + e.id + '|' + r.use, cat: 'proporciones', from: e.id, short: plain(r.ratio), q: e.name + ': ' + t('¿qué proporción para «', 'what ratio for “') + r.use + t('»?', '”?'), a: plain(r.ratio) + (r.note ? '. ' + plain(r.note) : '')});
   for (const x of e.errors || []) if (x.p && x.fix) out.push({id: 'e|' + e.id + '|' + x.p, cat: 'fallos', from: e.id, q: e.name + ': ' + x.p.charAt(0).toLowerCase() + x.p.slice(1) + t('. ¿Por qué pasa y qué haces?', '. Why does it happen and what do you do?'), a: plain(x.fix)});
   if (e.base?.items?.length >= 2 && e.base.for) out.push({id: 'b|' + e.id, cat: 'recetas', from: e.id, q: e.name + t(' para ', ' for ') + e.base.for + t(': ¿qué lleva y cuánto?', ': what goes in and how much?'), a: e.base.items.map(([n, q]) => n + (q ? ': ' + q : '')).join('\n')});
  }
@@ -37,12 +39,28 @@ export function cards() {
  for (const e of liveDocs('diario').filter(e => String(e.learned || '').trim().length > 10)) out.push({id: 'mj|' + e.id, cat: 'mias', q: t('¿Qué aprendiste el ', 'What did you learn on ') + new Date(e.day + 'T12:00:00').toLocaleDateString(en() ? 'en-GB' : 'es-ES', {day: 'numeric', month: 'long'}) + ((e.dishNames || []).length ? ' (' + e.dishNames.join(', ') + ')' : '') + '?', a: e.learned});
  // Las tarjetas que escribes tú (documentos «tarjeta:…»).
  for (const c of liveDocs('tarjeta')) if (c.q && c.a) out.push({id: 'mc|' + c.id, cat: 'mias', q: c.q, a: c.a});
- for (const [k, v] of TEMPS) out.push({id: 't|' + k, cat: 'temperaturas', q: k + (k.endsWith('de') || k.endsWith(', a') ? '…?' : t(': ¿temperatura?', ': temperature?')), a: v});
+ for (const [k, v] of TEMPS) out.push({id: 't|' + k, cat: 'temperaturas', key: k, short: v, q: k + (k.endsWith('de') || k.endsWith(', a') ? '…?' : t(': ¿temperatura?', ': temperature?')), a: v});
  return out;
 }
 const progress = () => docById(ID)?.cards || {};
 const isDue = (c, p) => !p[c.id] || p[c.id].due <= dayKey();
-let session = null, cat = 'todo', only = '', onlyIds = new Set();
+let session = null, cat = 'todo', only = '', onlyIds = new Set(), mode = 'examen', ex = null;
+const catLabel = id => { const c = CATS.find(x => x[0] === id) || CATS[0]; return en() ? c[2] : c[1]; };
+// Un examen: 10 preguntas (primero lo que toca repasar y lo fallado, luego lo nuevo), o solo las que se piden.
+function newExam(ids) {
+ const p = progress(), pool = cards(), all = ids ? pool.filter(c => ids.includes(c.id)) : pool.filter(c => (only ? onlyIds.has(c.from) : cat === 'todo' || c.cat === cat));
+ let list;
+ if (ids || only) list = shuffle(all).slice(0, 10);
+ else { const due = all.filter(c => p[c.id] && p[c.id].due <= dayKey()).sort((a, b) => p[a.id].box - p[b.id].box); const fresh = shuffle(all.filter(c => !p[c.id])); list = shuffle([...due.slice(0, 6), ...fresh].slice(0, 10)); if (list.length < 10) list = [...list, ...shuffle(all.filter(c => !list.includes(c))).slice(0, 10 - list.length)]; }
+ ex = {list: makeQuestions(list, pool), at: 0, phase: 'q', results: [], current: null};
+}
+const shuffle = list => { const a = [...list]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+function examHtml() {
+ if (!ex) newExam();
+ if (!ex.list.length) return '<div class="empty">' + icon('check') + '<h2>' + esc(t('No hay preguntas en este tema', 'No questions in this topic')) + '</h2><p>' + esc(t('Elige otro tema.', 'Choose another topic.')) + '</p></div>';
+ if (ex.phase === 'done') return resultHtml(ex);
+ return ex.phase === 'fb' ? feedbackHtml(ex, catLabel) : questionHtml(ex, catLabel);
+}
 // Cuántas tarjetas salen de una ficha (para el botón «Repasar esta ficha»).
 export const cardsFor = id => cards().filter(c => c.from === id).length;
 function newSession() {
@@ -62,15 +80,24 @@ export const dueToday = () => { const p = progress(); return Object.values(p).fi
 export function render(params = []) {
  const s = stats(), d = docById(ID), path = params[0] === 'ruta' ? PATHS.find(p => p[0] === params[1]) : null;
  const want = params[0] === 'ficha' && entryById(params[1]) ? 'ficha:' + params[1] : path ? 'ruta:' + path[0] : '';
- if (want !== only) { only = want; onlyIds = new Set(path ? path[5] : want ? [params[1]] : []); session = null; }
+ if (want !== only) { only = want; onlyIds = new Set(path ? path[5] : want ? [params[1]] : []); session = null; ex = null; }
  if (!session) newSession();
  const focus = only.startsWith('ficha:') ? entryById(params[1]) : null;
- return '<header class="page-head"><h1>' + esc(t('Entrenar', 'Train')) + '</h1><p>' + esc(t('Cinco minutos al día con lo que un buen cocinero sabe de memoria: proporciones, fallos y arreglos, recetas base y temperaturas. Lo que fallas vuelve mañana; lo que sabes, cada vez más tarde.', 'Five minutes a day with what a good cook knows by heart: ratios, faults and fixes, base recipes and temperatures. What you miss comes back tomorrow; what you know, later and later.')) + '</p></header>' +
+ return '<header class="page-head"><h1>' + esc(t('Entrenar', 'Train')) + '</h1><p>' + esc(t('Exámenes de 10 preguntas sobre lo que un buen cocinero sabe de memoria: proporciones, fallos y arreglos, recetas base y temperaturas. Respondes con tus palabras, y la corrección te dice lo que has acertado, lo que te falta y por qué. Lo que fallas vuelve mañana; lo que sabes, cada vez más tarde.', 'Ten-question exams on what a good cook knows by heart: ratios, faults and fixes, base recipes and temperatures. You answer in your own words, and the correction tells you what you got right, what is missing and why. What you miss comes back tomorrow; what you know, later and later.')) + '</p></header>' +
   '<div class="stats"><div class="stat"><strong>' + s.known + '</strong><span>' + esc(t('tarjetas que ya dominas', 'cards you master')) + '</span></div><div class="stat"><strong>' + s.seen + ' / ' + s.total + '</strong><span>' + esc(t('vistas alguna vez', 'seen at least once')) + '</span></div><div class="stat"><strong>' + s.due + '</strong><span>' + esc(t('para repasar hoy', 'to review today')) + '</span></div><div class="stat"><strong>' + (d?.streak || 0) + '</strong><span>' + esc(t('días seguidos entrenando', 'days in a row')) + '</span></div></div>' +
   (path ? '<p class="tronly">' + esc(t('Examen de la ruta «', 'Test on the path “') + (en() ? path[2] : path[1]) + t('»: tarjetas de todas sus fichas. ', '”: cards from all its entries. ')) + '<a href="#/entrenar">' + esc(t('Volver a todos los temas', 'Back to all topics')) + '</a></p>' : focus ? '<p class="tronly">' + esc(t('Repasando solo la ficha ', 'Reviewing only the entry ')) + '<a href="#/biblioteca/' + esc(focus.id) + '">' + esc(focus.name) + '</a>. <a href="#/entrenar">' + esc(t('Volver a todos los temas', 'Back to all topics')) + '</a></p>' :
   masteryHtml() +
   '<div class="seg tcats" role="group" aria-label="' + esc(t('Tema', 'Topic')) + '">' + CATS.map(c => '<button type="button" class="seg-btn' + (c[0] === cat ? ' active' : '') + '" data-cat="' + c[0] + '" aria-pressed="' + (c[0] === cat) + '">' + esc(en() ? c[2] : c[1]) + '</button>').join('') + '</div>') +
-  '<div id="trCard" aria-live="polite">' + cardHtml() + '</div>' + mineHtml();
+  '<div class="seg tmode" role="group" aria-label="' + esc(t('Cómo entrenar', 'How to train')) + '"><button type="button" class="seg-btn' + (mode === 'examen' ? ' active' : '') + '" data-mode="examen" aria-pressed="' + (mode === 'examen') + '">' + esc(t('Examen', 'Exam')) + '</button><button type="button" class="seg-btn' + (mode === 'rapido' ? ' active' : '') + '" data-mode="rapido" aria-pressed="' + (mode === 'rapido') + '">' + esc(t('Repaso rápido', 'Quick review')) + '</button></div>' +
+  lastExamHtml() +
+  '<div id="trCard" aria-live="polite">' + (mode === 'examen' ? examHtml() : cardHtml()) + '</div>' + mineHtml();
+}
+// El último examen, para ver cómo vas.
+function lastExamHtml() {
+ const list = liveDocs('examen').sort((a, b) => String(b.at).localeCompare(String(a.at))).slice(0, 5);
+ if (!list.length) return '';
+ const f = n => Number(n).toLocaleString(en() ? 'en' : 'es', {maximumFractionDigits: 1});
+ return '<p class="fine exlast">' + esc(t('Tus últimos exámenes: ', 'Your last exams: ') + list.map(x => f(x.nota) + t(' (', ' (') + relDay(x.at).toLowerCase() + ')').join(', ') + '.') + '</p>';
 }
 // Tus tarjetas: lo que quieres saberte de memoria y no está en ningún sitio (tus puntos, tus proporciones, nombres…).
 function mineHtml() {
@@ -100,26 +127,74 @@ function cardHtml() {
    : '<p class="fine">' + esc(t('Piénsalo (o dilo en voz alta) antes de darle la vuelta.', 'Think it through (or say it out loud) before turning it over.')) + '</p><button type="button" class="btn primary trflip" data-tr="flip">' + esc(t('Ver la respuesta', 'Show the answer')) + '</button>') + '</article>';
 }
 async function answer(grade) {
- const c = session.list[session.at], d = docById(ID) || {}, p = {...(d.cards || {})}, cur = p[c.id] || {box: 0};
+ const c = session.list[session.at];
+ await record(c, grade);
+ if (grade === 2) session.right++; else session.wrong++;
+ session.at++; session.shown = false;
+}
+// Lo aprendido se guarda igual en el examen y en el repaso rápido (cajas de repetición espaciada y racha).
+async function record(c, grade, before) {
+ const d = docById(ID) || {}, p = {...(d.cards || {})}, cur = before !== undefined ? (before || {box: 0}) : p[c.id] || {box: 0};
  const box = grade === 2 ? Math.min(GAP.length - 1, cur.box + 1) : grade === 1 ? Math.max(1, cur.box) : 0;
  const due = new Date(); due.setDate(due.getDate() + (grade === 0 ? 1 : GAP[box] || 1));
  p[c.id] = {box, due: dayKey(due), n: (cur.n || 0) + 1};
- if (grade === 2) session.right++; else session.wrong++;
  // Racha: días seguidos con al menos una tarjeta.
  const today = dayKey(), y = new Date(); y.setDate(y.getDate() - 1);
  const streak = d.last === today ? d.streak || 1 : d.last === dayKey(y) ? (d.streak || 0) + 1 : 1;
- session.at++; session.shown = false;
  await saveDoc('repaso', ID, {cards: p, last: today, streak});
 }
 export function mount(root, params = []) {
  const paint = () => { $('#trCard', root).innerHTML = cardHtml(); $('#trCard [data-tr]', root)?.focus({preventScroll: true}); };
  root.addEventListener('click', async e => {
   const b = e.target.closest('[data-tr]'), c = e.target.closest('[data-cat]');
-  if (c) { cat = c.dataset.cat; newSession(); root.innerHTML = render(params); return; }
+  if (c) { cat = c.dataset.cat; newSession(); ex = null; root.innerHTML = render(params); return; }
   if (!b) return;
   if (b.dataset.tr === 'flip') { session.shown = true; paint(); return; }
   if (b.dataset.tr === 'more') { newSession(); root.innerHTML = render(params); return; }
   await answer(Number(b.dataset.tr)); paint();
+ });
+ const paintEx = (focus = true) => { $('#trCard', root).innerHTML = examHtml(); if (focus) ($('#trCard #exA', root) || $('#trCard [data-ex], #trCard .exopt', root))?.focus({preventScroll: true}); $('#trCard', root).scrollIntoView({block: 'nearest'}); };
+ const grade = nota => (nota >= 8 ? 2 : nota >= 5 ? 1 : 0);
+ const finishQuestion = async (res) => {
+  const it = ex.list[ex.at], snap = (docById(ID)?.cards || {})[it.card.id] || null;
+  ex.current = {...res, snap}; ex.phase = 'fb';
+  await record(it.card, grade(res.nota), snap);
+  paintEx();
+ };
+ const correct = async user => {
+  const it = ex.list[ex.at], btn = $('#exForm button[type=submit]', root);
+  if (btn) { btn.disabled = true; btn.classList.add('is-busy'); btn.lastChild.textContent = canAskIa() ? t('Corrigiendo…', 'Marking…') : t('Corrigiendo', 'Marking'); }
+  let res;
+  if (canAskIa() && user.trim()) { try { res = await iaGrade(it.card, user); } catch { res = {...localGrade(it.card, user), note: t('ChatGPT no ha respondido: corrección de la app.', 'ChatGPT did not answer: app correction.')}; toast(t('ChatGPT no ha respondido; te corrige la app.', 'ChatGPT did not answer; the app marks it.'), 'info'); } }
+  else res = localGrade(it.card, user);
+  await finishQuestion({...res, user});
+ };
+ root.addEventListener('submit', async e => {
+  if (e.target.id !== 'exForm') return;
+  e.preventDefault();
+  const user = $('#exA', root).value;
+  if (!user.trim()) { toast(t('Escribe o dicta tu respuesta, o pulsa «No lo sé».', 'Write or dictate your answer, or press “I do not know”.'), 'error'); $('#exA', root).focus(); return; }
+  await correct(user);
+ });
+ root.addEventListener('click', async e => {
+  const m = e.target.closest('[data-mode]');
+  if (m) { mode = m.dataset.mode; root.innerHTML = render(params); return; }
+  const o = e.target.closest('button.exopt[data-opt]');
+  if (o && ex?.phase === 'q') { const it = ex.list[ex.at], i = Number(o.dataset.opt), ok = !!it.options[i]?.correct; await finishQuestion({nota: ok ? 10 : 0, verdict: ok ? 'bien' : 'mal', hits: [], missing: [], picked: i, user: it.options[i]?.text || ''}); return; }
+  const g = e.target.closest('[data-ex-grade]');
+  if (g && ex?.phase === 'fb') { const it = ex.list[ex.at], v = Number(g.dataset.exGrade); ex.current = {...ex.current, nota: v === 2 ? 10 : v === 1 ? 6 : 2, verdict: v === 2 ? 'bien' : v === 1 ? 'casi' : 'mal'}; await record(it.card, v, ex.current.snap); paintEx(); toast(t('Nota corregida.', 'Mark fixed.')); return; }
+  const a = e.target.closest('[data-ex]')?.dataset.ex;
+  if (!a || !ex) return;
+  if (a === 'skip') { await correct(''); return; }
+  if (a === 'next') {
+   const it = ex.list[ex.at];
+   ex.results.push({id: it.card.id, nota: ex.current.nota, verdict: ex.current.verdict});
+   ex.at++; ex.current = null; ex.phase = ex.at >= ex.list.length ? 'done' : 'q';
+   if (ex.phase === 'done') { const n = ex.results.length, nota = ex.results.reduce((s2, r2) => s2 + r2.nota, 0) / n; await saveDoc('examen', null, {at: new Date().toISOString(), nota: Math.round(nota * 10) / 10, n, tema: only || cat, fallos: ex.results.filter(r2 => r2.verdict !== 'bien').map(r2 => r2.id)}); }
+   paintEx(); return;
+  }
+  if (a === 'retry') { newExam(ex.results.filter(r2 => r2.verdict !== 'bien').map(r2 => r2.id)); root.innerHTML = render(params); $('#trCard', root).scrollIntoView({block: 'nearest'}); return; }
+  if (a === 'new') { newExam(); root.innerHTML = render(params); $('#trCard', root).scrollIntoView({block: 'nearest'}); return; }
  });
  root.addEventListener('submit', async e => {
   if (e.target.id !== 'trNew') return;
@@ -132,7 +207,7 @@ export function mount(root, params = []) {
  });
  root.addEventListener('click', async e => { const b = e.target.closest('[data-trash-card]'); if (!b) return; await trashDoc(b.dataset.trashCard); toast(t('En la papelera.', 'Moved to the bin.')); root.innerHTML = render(params); });
  // Teclado: espacio para dar la vuelta; 1, 2, 3 para responder.
- const keys = e => { if (/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName) || document.documentElement.classList.contains('has-sheet')) return; if (e.key === ' ' && session && !session.shown && session.at < session.list.length) { e.preventDefault(); session.shown = true; paint(); } else if (session?.shown && ['1', '2', '3'].includes(e.key)) { answer(Number(e.key) - 1).then(paint); } };
+ const keys = e => { if (mode === 'examen') { if ((e.ctrlKey || e.metaKey) && e.key === 'Enter' && document.activeElement?.id === 'exA') { e.preventDefault(); $('#exForm', root)?.requestSubmit(); } return; } if (/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName) || document.documentElement.classList.contains('has-sheet')) return; if (e.key === ' ' && session && !session.shown && session.at < session.list.length) { e.preventDefault(); session.shown = true; paint(); } else if (session?.shown && ['1', '2', '3'].includes(e.key)) { answer(Number(e.key) - 1).then(paint); } };
  document.addEventListener('keydown', keys);
  return () => document.removeEventListener('keydown', keys);
 }

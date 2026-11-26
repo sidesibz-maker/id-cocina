@@ -193,3 +193,13 @@ Biblioteca infinita (26 nov 2026):
    terminado o del momento clave de la técnica (usa tu clave de OpenAI; cuesta unos céntimos cada una). Queda guardada
    en la ficha, pasa al móvil y va en la copia. Las anteriores no se borran: «Otra imagen guía» añade una nueva.
    Si OpenAI pide «verificar la organización» para crear imágenes, se hace una vez en platform.openai.com.
+
+Entrenar como un examen (26 nov 2026):
+ - Entrenar empieza en «Examen»: 10 preguntas del tema que elijas. Escribes o dictas tu respuesta (o eliges entre cuatro
+   en proporciones y temperaturas) y pulsas «Corregir». La corrección enseña: tu nota, lo que has acertado, lo que te ha
+   faltado, la respuesta buena, por qué es así y, con ChatGPT, un truco para recordarlo. Con ChatGPT conectado te corrige
+   un «jefe examinador» que entiende lo que dices con tus palabras; sin él, la app comprueba cifras y palabras clave
+   (si la nota no te parece justa, la corriges tú).
+ - Al acabar: tu nota sobre 10, lo que has fallado con su ficha, y «Repetir las falladas». Lo fallado vuelve mañana al
+   repaso; lo que sabías, más adelante. Los últimos exámenes salen arriba.
+ - «Repaso rápido» son las tarjetas de antes (darles la vuelta y decir si lo sabías).
