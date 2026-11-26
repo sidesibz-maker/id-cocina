@@ -8462,5 +8462,3398 @@
    "aguacate-y-frutas-tropicales",
    "fuego-y-brasa"
   ]
+ },
+ {
+  "id": "blanqueta",
+  "name": "Blanqueta de ternera",
+  "name_en": "Blanquette de veau",
+  "cat": "tecnicas",
+  "group": "Cocina francesa",
+  "technique": "guiso",
+  "aka": [
+   "blanqueta",
+   "blanquette",
+   "blanquette de veau",
+   "guiso blanco",
+   "ternera en salsa blanca"
+  ],
+  "summary": "Ternera cocida sin dorar en un caldo aromático, cuyo caldo se convierte en una salsa blanca ligada con yema y nata.",
+  "what": "La blanqueta es el guiso blanco por excelencia de la cocina francesa: la carne no se dora, se cuece en agua o [[fondo-blanco]] con aromáticos hasta que está tierna, y con ese caldo se hace un [[veloute|velouté]] que se termina con yema y nata. Se acompaña de champiñones y cebollitas glaseados sin color, y se sirve con arroz blanco.\n\nEl resultado es suave y sedoso, de color marfil. Se hace con piezas de ternera con algo de colágeno (espaldilla, pecho, falda), que dan cuerpo al caldo. Cada casa tiene su manera de ligar la salsa; esta es la clásica.",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Espaldilla y pecho de ternera en trozos de 4–5 cm",
+     "1,5 kg"
+    ],
+    [
+     "Zanahoria, cebolla con un clavo, puerro y bouquet garni",
+     "1, 1, 1 y 1"
+    ],
+    [
+     "Agua o fondo blanco",
+     "lo justo para cubrir"
+    ],
+    [
+     "Mantequilla y harina para el roux",
+     "50 g y 50 g"
+    ],
+    [
+     "Yemas",
+     "2"
+    ],
+    [
+     "Nata",
+     "200 ml"
+    ],
+    [
+     "Champiñones pequeños y cebollitas",
+     "250 g y 250 g"
+    ],
+    [
+     "Zumo de limón, sal y pimienta blanca",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Blanquea la carne: cúbrela con agua fría, lleva a hervor, escurre y aclara.",
+    "Cúbrela con agua o fondo nuevo, añade las verduras y el bouquet garni y cuece a fuego suave 1,5–2 horas, espumando.",
+    "Glasea las cebollitas y los champiñones a blanco con mantequilla y un poco del caldo.",
+    "Haz un roux blanco, moja con 1 litro del caldo colado y cuece 15 minutos hasta que nape.",
+    "Fuera del fuego, liga con las yemas batidas con la nata, sin hervir; añade la carne, la guarnición y unas gotas de limón."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Cocción de la carne",
+    "ratio": "1,5–2 horas a fuego suave",
+    "note": "Tierna, sin deshacerse."
+   },
+   {
+    "use": "Velouté",
+    "ratio": "50 g de roux por litro de caldo",
+    "note": "Que nape."
+   },
+   {
+    "use": "Ligazón final",
+    "ratio": "2 yemas y 200 ml de nata por litro",
+    "note": "Sin pasar de 80 °C."
+   },
+   {
+    "use": "Carne por ración",
+    "ratio": "250 g en crudo",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "veloute",
+    "name": "Velouté",
+    "note": "La salsa base."
+   },
+   {
+    "id": "fondo-blanco",
+    "name": "Fondo blanco",
+    "note": "Para cocer la carne."
+   },
+   {
+    "id": "ternera-lechal",
+    "name": "Ternera",
+    "note": "Piezas y cocciones."
+   },
+   {
+    "id": "glaseado-de-verduras",
+    "name": "Guarnición glaseada",
+    "note": "Cebollitas y champiñones a blanco."
+   }
+  ],
+  "keys": [
+   "Sin dorar: es un guiso blanco.",
+   "Blanquear primero para un caldo limpio.",
+   "Ligazón con yema fuera del fuego.",
+   "Limón al final para levantar.",
+   "Cada casa liga a su manera."
+  ],
+  "errors": [
+   {
+    "p": "Salsa grisácea",
+    "fix": "Carne sin blanquear o caldo sin espumar. Blanquea y espuma."
+   },
+   {
+    "p": "Salsa cortada",
+    "fix": "Ha hervido tras la yema. Liga fuera del fuego."
+   },
+   {
+    "p": "Carne seca",
+    "fix": "Hervor fuerte. Cuece suave."
+   }
+  ],
+  "history": "La blanqueta de ternera es un clásico de la cocina burguesa francesa y uno de los guisos más representativos de su cocina doméstica.",
+  "uses": [
+   "Platos de cuchara de invierno",
+   "Menús de cocina clásica"
+  ],
+  "keep": "3 días en frío sin la ligazón de yema; liga al regenerar.",
+  "pro": "Cuece la carne la víspera; haz el velouté y liga por tandas al servicio.",
+  "related": [
+   "veloute",
+   "fondo-blanco",
+   "ternera-lechal",
+   "glaseado-de-verduras",
+   "ligazones",
+   "guisos-largos"
+  ]
+ },
+ {
+  "id": "estofados-al-vino",
+  "name": "Boeuf bourguignon, coq au vin y estofados al vino",
+  "name_en": "Boeuf bourguignon, coq au vin and wine stews",
+  "cat": "tecnicas",
+  "group": "Cocina francesa",
+  "technique": "guiso",
+  "aka": [
+   "boeuf bourguignon",
+   "buey a la borgoñona",
+   "coq au vin",
+   "gallo al vino",
+   "estofado al vino tinto",
+   "guarnición borgoñona"
+  ],
+  "summary": "Carne dorada y guisada en vino tinto con fondo, y terminada con panceta, champiñones y cebollitas: los estofados de Borgoña.",
+  "what": "El boeuf bourguignon y el coq au vin siguen el mismo esquema: la carne (vacuno de guisar o un gallo o pollo grande) se marina a veces en vino tinto, se dora, se espolvorea con harina, se moja con el vino y un fondo y se guisa a fuego lento con un bouquet garni. Al final se añade la guarnición borgoñona: taquitos de panceta, champiñones y cebollitas glaseados por separado.\n\nLa salsa debe quedar oscura, brillante y ligada. La calidad del vino se nota: uno tinto seco y afrutado, sin mucha madera. Como todo plato de casa, tiene muchas versiones; esta es la base común.",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Morcillo, aguja o carrillera de vacuno (o 1 gallo o pollo grande troceado)",
+     "1,5 kg"
+    ],
+    [
+     "Vino tinto seco",
+     "750 ml"
+    ],
+    [
+     "Fondo oscuro",
+     "300–500 ml"
+    ],
+    [
+     "Zanahoria, cebolla y ajo",
+     "1, 1 y 2 dientes"
+    ],
+    [
+     "Harina",
+     "30 g"
+    ],
+    [
+     "Bouquet garni",
+     "1"
+    ],
+    [
+     "Panceta en taquitos",
+     "150 g"
+    ],
+    [
+     "Champiñones y cebollitas",
+     "250 g y 250 g"
+    ],
+    [
+     "Aceite, mantequilla, sal y pimienta",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Opcional: marina la carne en el vino con las verduras 12–24 horas; escurre y seca, guardando el vino.",
+    "Dora la carne por tandas; dora las verduras, espolvorea la harina y tuéstala un minuto.",
+    "Moja con el vino y el fondo hasta casi cubrir, añade el bouquet garni y guisa tapado a fuego suave o en horno a 150 °C: 2,5–3 horas el vacuno, 1,5–2 horas el gallo o pollo.",
+    "Dora la panceta, saltea los champiñones y glasea las cebollitas por separado.",
+    "Saca la carne, cuela y reduce la salsa hasta que nape; junta carne, salsa y guarnición."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Vino por kg de carne",
+    "ratio": "500 ml",
+    "note": "Más fondo para completar."
+   },
+   {
+    "use": "Vacuno guisado",
+    "ratio": "150 °C, 2,5–3 horas",
+    "note": "Hasta que se corte con cuchara."
+   },
+   {
+    "use": "Gallo o pollo grande",
+    "ratio": "1,5–2 horas",
+    "note": "El pollo, menos."
+   },
+   {
+    "use": "Guarnición",
+    "ratio": "60–80 g por ración",
+    "note": "Panceta, champiñón y cebollita."
+   }
+  ],
+  "variants": [
+   {
+    "id": "braseado",
+    "name": "Braseado",
+    "note": "Con menos líquido."
+   },
+   {
+    "id": "salsas-de-vino",
+    "name": "Salsas de vino",
+    "note": "Reducciones de tinto."
+   },
+   {
+    "id": "marinada",
+    "name": "Marinada de vino",
+    "note": "Antes de guisar."
+   },
+   {
+    "id": "guisos-largos",
+    "name": "Guisos largos",
+    "note": "Fuego suave y tiempo."
+   }
+  ],
+  "keys": [
+   "Dorar bien la carne y tostar la harina.",
+   "Vino tinto seco y afrutado.",
+   "Guarnición cocinada aparte.",
+   "Reducir la salsa al final.",
+   "Mejor al día siguiente."
+  ],
+  "errors": [
+   {
+    "p": "Salsa ácida",
+    "fix": "Vino poco cocido. Redúcelo antes o alarga la cocción."
+   },
+   {
+    "p": "Carne seca",
+    "fix": "Hervor fuerte. Horno a 150 °C o fuego mínimo."
+   },
+   {
+    "p": "Salsa aguada",
+    "fix": "Poca reducción. Cuela y reduce."
+   }
+  ],
+  "history": "Los dos son platos de la región de Borgoña que la cocina francesa convirtió en clásicos de restaurante y de casa.",
+  "uses": [
+   "Platos de invierno",
+   "Menús de cocina clásica",
+   "Guisos para compartir"
+  ],
+  "keep": "4–5 días en frío; se congela bien.",
+  "pro": "Guisa la víspera y abate en su salsa; la guarnición se prepara el día del servicio.",
+  "related": [
+   "braseado",
+   "salsas-de-vino",
+   "marinada",
+   "guisos-largos",
+   "fondo-oscuro",
+   "vinos-y-licores"
+  ]
+ },
+ {
+  "id": "pot-au-feu",
+  "name": "Pot-au-feu",
+  "name_en": "Pot-au-feu",
+  "cat": "tecnicas",
+  "group": "Cocina francesa",
+  "technique": "hervido",
+  "aka": [
+   "pot-au-feu",
+   "potofeu",
+   "cocido francés",
+   "carnes hervidas",
+   "hervido de vacuno"
+  ],
+  "summary": "Varias piezas de vacuno y un hueso con tuétano cocidos lentamente con verduras: caldo claro primero, carnes con mostaza después.",
+  "what": "El pot-au-feu es el gran hervido francés de vacuno: piezas con mucho tejido (morcillo, falda, rabo, carrillera) y huesos con tuétano cocidos en agua a fuego muy suave, con zanahoria, puerro, nabo, apio y cebolla. Se sirve en dos tiempos: el caldo, claro y sabroso, y después las carnes y verduras con sal gruesa, mostaza y pepinillos. El tuétano se unta en pan tostado.\n\nEs pariente del [[cocido]] español: misma lógica de agua fría, espumado y fuego lento, pero sin legumbres ni embutidos. Cada región y cada casa varía las piezas.",
+  "base": {
+   "for": "8 raciones",
+   "items": [
+    [
+     "Morcillo, falda y rabo de vacuno",
+     "2,5 kg en total"
+    ],
+    [
+     "Huesos con tuétano",
+     "4 trozos"
+    ],
+    [
+     "Zanahorias, puerros, nabos y apio",
+     "4, 3, 3 y 2 ramas"
+    ],
+    [
+     "Cebolla con dos clavos",
+     "1"
+    ],
+    [
+     "Bouquet garni y pimienta en grano",
+     "1 y 10 granos"
+    ],
+    [
+     "Agua fría",
+     "5–6 l"
+    ],
+    [
+     "Sal gruesa, mostaza y pepinillos para servir",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Pon las carnes en agua fría, lleva a hervor y espuma con cuidado durante los primeros 20 minutos.",
+    "Añade la cebolla, el bouquet garni y la pimienta y cuece a fuego muy suave 3–4 horas.",
+    "En la última hora, añade las verduras atadas en manojos; los huesos con tuétano envueltos en gasa, los últimos 30 minutos.",
+    "Cuela parte del caldo, desgrásalo y sazónalo para servirlo primero.",
+    "Corta las carnes y sírvelas con las verduras, el tuétano, sal gruesa, mostaza y pepinillos."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Cocción",
+    "ratio": "3–4 horas a fuego muy suave",
+    "note": "Burbuja apenas visible."
+   },
+   {
+    "use": "Carne por ración",
+    "ratio": "300 g en crudo",
+    "note": "Mezcla de piezas."
+   },
+   {
+    "use": "Verduras",
+    "ratio": "Última hora",
+    "note": "Que no se deshagan."
+   },
+   {
+    "use": "Tuétano",
+    "ratio": "30 minutos envuelto",
+    "note": "Para que no se salga."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cocido",
+    "name": "Cocido",
+    "note": "El pariente español."
+   },
+   {
+    "id": "fondo-blanco",
+    "name": "Fondo blanco",
+    "note": "Caldo de vacuno."
+   },
+   {
+    "id": "consome",
+    "name": "Consomé",
+    "note": "El caldo clarificado."
+   },
+   {
+    "id": "salsa-de-pimienta-y-mostaza",
+    "name": "Mostaza",
+    "note": "El acompañante clásico."
+   }
+  ],
+  "keys": [
+   "Agua fría y espumar al principio.",
+   "Fuego muy suave: caldo claro.",
+   "Verduras al final.",
+   "Mezcla de piezas para textura y gelatina.",
+   "Sal gruesa y mostaza en la mesa."
+  ],
+  "errors": [
+   {
+    "p": "Caldo turbio",
+    "fix": "Hervor fuerte o sin espumar. Fuego suave y espuma."
+   },
+   {
+    "p": "Verduras deshechas",
+    "fix": "Añadidas pronto. Al final y en manojos."
+   },
+   {
+    "p": "Carne fibrosa",
+    "fix": "Poca cocción o piezas magras. Piezas con colágeno y más tiempo."
+   }
+  ],
+  "history": "El pot-au-feu es uno de los platos más tradicionales de la cocina doméstica francesa, con muchas variantes regionales.",
+  "uses": [
+   "Platos de invierno",
+   "Caldo para consomés y sopas",
+   "Carnes para rellenos y ensaladas"
+  ],
+  "keep": "Caldo, 4–5 días en frío; carnes en su caldo, 3–4 días.",
+  "pro": "Cuece la víspera; desgrasa en frío y regenera las carnes en el caldo.",
+  "related": [
+   "cocido",
+   "fondo-blanco",
+   "consome",
+   "colageno-y-gelatina",
+   "vaca-vieja-y-buey",
+   "salsa-de-pimienta-y-mostaza"
+  ]
+ },
+ {
+  "id": "bullabesa",
+  "name": "Bullabesa",
+  "name_en": "Bouillabaisse",
+  "cat": "tecnicas",
+  "group": "Cocina francesa",
+  "technique": "guiso",
+  "aka": [
+   "bullabesa",
+   "bouillabaisse",
+   "sopa de pescado marsellesa",
+   "caldo de pescado con azafrán"
+  ],
+  "summary": "Pescados de roca cocidos en un caldo de tomate, hinojo, naranja y azafrán que hierve fuerte para ligar el aceite; con rouille y pan.",
+  "what": "La bullabesa es el guiso de pescado de Marsella. Se parte de un [[caldo-de-roca]] intenso con aceite de oliva, cebolla, puerro, tomate, ajo, hinojo, piel de naranja, azafrán y hierbas; en él se cuecen varios pescados de roca enteros o en trozos, primero los de carne firme y después los más tiernos. El caldo hierve con fuerza para que el aceite se emulsione y lo ligue.\n\nSe sirve en dos tiempos: el caldo con pan tostado untado de [[rouille]], y los pescados aparte. Hay muchas versiones y discusiones sobre qué pescados son los correctos; lo que se describe aquí es la base común.",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Pescado de roca variado (rascacio, congrio, rape, gallo, salmonete)",
+     "2,5 kg"
+    ],
+    [
+     "Morralla o espinas para el caldo",
+     "1 kg"
+    ],
+    [
+     "Cebolla, puerro, ajo y tomate",
+     "1, 1, 4 dientes y 400 g"
+    ],
+    [
+     "Bulbo de hinojo o rama de hinojo silvestre",
+     "1"
+    ],
+    [
+     "Piel de naranja",
+     "1 tira"
+    ],
+    [
+     "Azafrán, tomillo y laurel",
+     "0,2 g, 1 rama y 1 hoja"
+    ],
+    [
+     "Aceite de oliva",
+     "150 ml"
+    ],
+    [
+     "Agua",
+     "3 l"
+    ],
+    [
+     "Pan tostado y rouille para servir",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Rehoga en el aceite la cebolla, el puerro, el hinojo y el ajo; añade el tomate y la morralla y rehoga más.",
+    "Moja con el agua, añade la naranja, las hierbas y el azafrán y cuece 30–40 minutos; tritura, cuela apretando y sazona.",
+    "Lleva el caldo a hervor fuerte y añade los pescados de carne firme; 5 minutos después, los más tiernos.",
+    "Mantén el hervor vivo 5–8 minutos más para que el aceite se emulsione.",
+    "Sirve el caldo con pan tostado y rouille, y los pescados aparte en una fuente."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Pescado por ración",
+    "ratio": "400 g con espina",
+    "note": "Varias especies."
+   },
+   {
+    "use": "Cocción del pescado",
+    "ratio": "10–15 minutos en total",
+    "note": "Por grosor y firmeza."
+   },
+   {
+    "use": "Azafrán",
+    "ratio": "0,2 g para 6 raciones",
+    "note": "Color y aroma."
+   },
+   {
+    "use": "Hervor",
+    "ratio": "Fuerte al final",
+    "note": "Liga el aceite."
+   }
+  ],
+  "variants": [
+   {
+    "id": "rouille",
+    "name": "Rouille",
+    "note": "Para las tostadas."
+   },
+   {
+    "id": "caldo-de-roca",
+    "name": "Caldo de roca",
+    "note": "La base."
+   },
+   {
+    "id": "bullit-de-peix",
+    "name": "Bullit de peix",
+    "note": "El primo ibicenco."
+   },
+   {
+    "id": "pescado-de-roca",
+    "name": "Pescado de roca",
+    "note": "Limpieza y espinas."
+   }
+  ],
+  "keys": [
+   "Caldo de morralla intenso antes del pescado.",
+   "Firmes primero, tiernos después.",
+   "Hervor fuerte al final para ligar.",
+   "Rouille y pan en la mesa.",
+   "Cada puerto y cada casa tienen su bullabesa."
+  ],
+  "errors": [
+   {
+    "p": "Pescado deshecho",
+    "fix": "Pescado tierno desde el principio. Por orden de firmeza."
+   },
+   {
+    "p": "Caldo separado y graso",
+    "fix": "Hervor flojo. Hierve fuerte unos minutos."
+   },
+   {
+    "p": "Caldo amargo",
+    "fix": "Azafrán o piel de naranja en exceso. Mide."
+   }
+  ],
+  "history": "La bullabesa es el plato emblemático de Marsella, nacido como guiso de pescadores con el pescado que no se vendía.",
+  "uses": [
+   "Platos de pescado para compartir",
+   "Menús de cocina mediterránea"
+  ],
+  "keep": "El caldo, 2 días en frío o congelado; el pescado, al momento.",
+  "pro": "Caldo hecho y caliente; pescado por mesa al pedido, en cazuela.",
+  "related": [
+   "rouille",
+   "caldo-de-roca",
+   "pescado-de-roca",
+   "bullit-de-peix",
+   "azafran",
+   "hinojo-y-apio"
+  ]
+ },
+ {
+  "id": "quiche-y-tartas-saladas",
+  "name": "Quiche y tartas saladas",
+  "name_en": "Quiche and savoury tarts",
+  "cat": "tecnicas",
+  "group": "Cocina francesa",
+  "aka": [
+   "quiche",
+   "quiche lorraine",
+   "tarta salada",
+   "aparejo de quiche",
+   "pissaladière",
+   "tarta de verduras"
+  ],
+  "summary": "Masa quebrada horneada en blanco y rellena de un flan salado de huevo y lácteo: tembloroso en el centro y crujiente en la base.",
+  "what": "La quiche es una tarta de masa quebrada rellena de un aparejo de huevos, nata y leche con ingredientes salados: la lorraine lleva panceta; otras, verduras, quesos, setas o pescado. La clave es doble: una base horneada antes (en blanco) para que no quede cruda, y un relleno cocido a temperatura moderada para que quede cremoso, como un flan.\n\nLa misma masa sirve para otras tartas saladas, como la pissaladière provenzal de cebolla pochada, anchoas y aceitunas, o tartas de verdura de temporada.",
+  "base": {
+   "for": "1 tarta de 24–26 cm (6–8 raciones)",
+   "items": [
+    [
+     "Masa quebrada salada",
+     "300 g"
+    ],
+    [
+     "Huevos",
+     "3"
+    ],
+    [
+     "Nata",
+     "250 ml"
+    ],
+    [
+     "Leche",
+     "150 ml"
+    ],
+    [
+     "Relleno (panceta dorada, verduras salteadas, queso)",
+     "200–250 g"
+    ],
+    [
+     "Sal, pimienta y nuez moscada",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Forra el molde con la masa estirada a 3 mm, pínchala y enfríala 30 minutos.",
+    "Hornea en blanco con papel y peso a 180 °C 15 minutos; retira el peso y hornea 5–10 minutos más hasta que esté seca.",
+    "Bate huevos, nata, leche y sazona sin incorporar aire.",
+    "Reparte el relleno escurrido sobre la base y vierte el aparejo.",
+    "Hornea a 160–170 °C hasta que el centro tiemble ligeramente; reposa 15 minutos antes de cortar."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Aparejo",
+    "ratio": "1 huevo por 130–150 ml de lácteo",
+    "note": "Cremoso y estable."
+   },
+   {
+    "use": "Horneado en blanco",
+    "ratio": "180 °C, 20–25 minutos",
+    "note": "Base seca."
+   },
+   {
+    "use": "Horneado del relleno",
+    "ratio": "160–170 °C, 30–40 minutos",
+    "note": "Centro tembloroso."
+   },
+   {
+    "use": "Ración",
+    "ratio": "1/6 u 1/8 de tarta",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "masa-quebrada",
+    "name": "Masa quebrada",
+    "note": "Base y horneado en blanco."
+   },
+   {
+    "id": "coagulacion-de-proteinas",
+    "name": "Cuajado del huevo",
+    "note": "Por qué temperatura moderada."
+   },
+   {
+    "id": "cebolla-confitada",
+    "name": "Pissaladière",
+    "note": "Cebolla pochada, anchoas y aceitunas."
+   },
+   {
+    "id": "coca-y-masas-saladas",
+    "name": "Cocas",
+    "note": "Masas saladas mediterráneas."
+   }
+  ],
+  "keys": [
+   "Base horneada en blanco: nunca cruda.",
+   "Relleno escurrido: sin agua.",
+   "Horno moderado para un centro cremoso.",
+   "Reposo antes de cortar.",
+   "Aparejo batido sin aire."
+  ],
+  "errors": [
+   {
+    "p": "Base cruda o blanda",
+    "fix": "Sin hornear en blanco. Hornéala antes."
+   },
+   {
+    "p": "Relleno con agujeros y agua",
+    "fix": "Horno fuerte. Baja a 160 °C."
+   },
+   {
+    "p": "Relleno aguado",
+    "fix": "Verduras sin escurrir. Saltéalas y escúrrelas."
+   }
+  ],
+  "history": "La quiche es una tarta tradicional del noreste de Francia que se extendió por todo el mundo. Las tartas saladas son comunes en muchas cocinas mediterráneas.",
+  "uses": [
+   "Entrantes y platos de mediodía",
+   "Aperitivos en porciones pequeñas",
+   "Brunch"
+  ],
+  "keep": "2–3 días en frío; se regenera en horno suave. La base horneada, 2 días en seco.",
+  "pro": "Bases horneadas en blanco por tandas; rellena y hornea según el servicio.",
+  "related": [
+   "masa-quebrada",
+   "coagulacion-de-proteinas",
+   "cebolla-confitada",
+   "coca-y-masas-saladas",
+   "huevos",
+   "quesos-en-cocina"
+  ]
+ },
+ {
+  "id": "cassoulet-y-confit",
+  "name": "Confit y cassoulet",
+  "name_en": "Confit and cassoulet",
+  "cat": "tecnicas",
+  "group": "Cocina francesa",
+  "technique": "confitado",
+  "aka": [
+   "cassoulet",
+   "confit de pato",
+   "muslo de pato confitado",
+   "alubias con pato",
+   "cazuela de alubias del suroeste"
+  ],
+  "summary": "Muslos de pato salados y cocidos lentamente en su grasa, y la cazuela de alubias con confit, salchicha y cerdo que se gratina en el horno.",
+  "what": "El confit de pato consiste en salar los muslos con hierbas, lavarlos y cocerlos lentamente sumergidos en grasa de pato hasta que la carne se separa del hueso. Guardado en su grasa, se conserva y se dora al pedido hasta que la piel cruje. La técnica general está en [[confitado]].\n\nEl cassoulet es una cazuela del suroeste de Francia de alubias blancas cocidas con corteza de cerdo y aromáticos, montadas en capas con confit de pato, salchicha, panceta y a veces cordero o cerdo, y horneadas lentamente hasta que se forma una costra que se rompe y se hunde varias veces. Las ciudades de la zona discuten sus versiones; esta es la base común.",
+  "base": {
+   "for": "8 raciones",
+   "items": [
+    [
+     "Muslos de pato",
+     "8"
+    ],
+    [
+     "Sal gruesa, ajo y tomillo para salar",
+     "30 g por kg, 4 dientes y 2 ramas"
+    ],
+    [
+     "Grasa de pato",
+     "1,5 l"
+    ],
+    [
+     "Alubias blancas remojadas 12 horas",
+     "800 g en seco"
+    ],
+    [
+     "Corteza y panceta de cerdo",
+     "200 g y 300 g"
+    ],
+    [
+     "Salchicha de cerdo",
+     "600 g"
+    ],
+    [
+     "Zanahoria, cebolla, ajo y bouquet garni",
+     "1, 1, 1 cabeza y 1"
+    ],
+    [
+     "Pan rallado (opcional)",
+     "50 g"
+    ]
+   ],
+   "steps": [
+    "Confit: sala los muslos con ajo y tomillo 12–24 horas en frío; lava, seca y cúbrelos con la grasa; cuece a 85–90 °C 2,5–3 horas, hasta que la carne ceda.",
+    "Cuece las alubias en agua sin sal con la corteza, la panceta y los aromáticos 1–1,5 horas, hasta que estén tiernas; sala al final.",
+    "Dora la salchicha y los muslos confitados.",
+    "Monta en cazuela de barro capas de alubias, carnes y caldo de las alubias hasta cubrir.",
+    "Hornea a 150–160 °C 2–3 horas; cuando se forme costra, húndela con una cuchara y añade caldo si hace falta; repite varias veces."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Salado del confit",
+    "ratio": "30 g de sal por kg, 12–24 horas",
+    "note": "Lavar antes de cocer."
+   },
+   {
+    "use": "Grasa del confit",
+    "ratio": "85–90 °C, 2,5–3 horas",
+    "note": "Cubierto del todo."
+   },
+   {
+    "use": "Cassoulet al horno",
+    "ratio": "150–160 °C, 2–3 horas",
+    "note": "Hundir la costra varias veces."
+   },
+   {
+    "use": "Alubias",
+    "ratio": "100 g en seco por ración",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "confitado",
+    "name": "Confitado",
+    "note": "La técnica."
+   },
+   {
+    "id": "pato",
+    "name": "Pato",
+    "note": "Producto y despiece."
+   },
+   {
+    "id": "fabada-y-potajes",
+    "name": "Fabada",
+    "note": "La prima asturiana."
+   },
+   {
+    "id": "legumbres",
+    "name": "Alubias",
+    "note": "Remojo y cocción."
+   }
+  ],
+  "keys": [
+   "Confit: salar, lavar y cocer suave en grasa.",
+   "Guarda el confit cubierto de grasa.",
+   "Alubias tiernas y enteras antes de hornear.",
+   "Hundir la costra varias veces.",
+   "Cada ciudad tiene su cassoulet."
+  ],
+  "errors": [
+   {
+    "p": "Confit salado",
+    "fix": "Demasiado tiempo en sal o sin lavar. Respeta tiempo y lava."
+   },
+   {
+    "p": "Cassoulet seco",
+    "fix": "Poco caldo. Añade caldo al hundir la costra."
+   },
+   {
+    "p": "Alubias duras",
+    "fix": "Sal desde el principio o legumbre vieja. Sala al final."
+   }
+  ],
+  "history": "El confit es una técnica de conservación del suroeste de Francia, y el cassoulet un plato de esa misma región, con versiones de distintas ciudades.",
+  "uses": [
+   "Platos de invierno",
+   "Cazuelas para compartir",
+   "Muslos de pato al pedido"
+  ],
+  "keep": "Confit cubierto de grasa, semanas en frío. Cassoulet, 3–4 días en frío; mejora recalentado.",
+  "pro": "Confita en tanda; monta el cassoulet en cazuelas individuales y hornea por tandas.",
+  "related": [
+   "confitado",
+   "pato",
+   "fabada-y-potajes",
+   "legumbres",
+   "sobrasada-y-embutidos",
+   "horno-de-lena"
+  ]
+ },
+ {
+  "id": "ragu",
+  "name": "Ragú y salsas de carne largas",
+  "name_en": "Ragù and slow meat sauces",
+  "cat": "tecnicas",
+  "group": "Cocina italiana",
+  "technique": "guiso",
+  "aka": [
+   "ragú",
+   "ragù",
+   "boloñesa",
+   "ragú alla bolognese",
+   "ragú napolitano",
+   "salsa de carne"
+  ],
+  "summary": "Carne picada o en piezas guisada horas con soffritto, vino y poco tomate hasta una salsa densa y profunda para pasta.",
+  "what": "El ragú es una salsa de carne de cocción larga. El de Bolonia, el más conocido, se hace con un soffritto de cebolla, zanahoria y apio, carne picada de vacuno y cerdo bien dorada, panceta, vino, poco tomate y, en muchas recetas, algo de leche; se cocina a fuego mínimo durante horas hasta que la carne está tierna y la salsa, densa. Se sirve con pastas anchas al huevo como tagliatelle o en lasaña. El napolitano, en cambio, cuece piezas enteras de carne en mucho tomate y la salsa se usa para la pasta.\n\nEn Italia cada familia defiende su ragú; lo que se describe es la versión más extendida de Bolonia.",
+  "base": {
+   "for": "unos 1,5 kg (10 raciones de pasta)",
+   "items": [
+    [
+     "Cebolla, zanahoria y apio picados finos",
+     "150 g, 100 g y 100 g"
+    ],
+    [
+     "Panceta picada",
+     "150 g"
+    ],
+    [
+     "Carne picada de vacuno",
+     "600 g"
+    ],
+    [
+     "Carne picada de cerdo",
+     "300 g"
+    ],
+    [
+     "Vino blanco o tinto seco",
+     "200 ml"
+    ],
+    [
+     "Tomate triturado o concentrado",
+     "300 g / 2 cucharadas"
+    ],
+    [
+     "Leche entera (opcional)",
+     "200 ml"
+    ],
+    [
+     "Caldo de carne",
+     "500 ml"
+    ],
+    [
+     "Aceite, mantequilla, sal y pimienta",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Funde la panceta, añade el soffritto y pócalo 15 minutos sin color.",
+    "Sube el fuego y dora bien la carne picada por tandas, deshaciéndola, hasta que suelte todo el agua y se tueste.",
+    "Moja con el vino y redúcelo; añade el tomate y la leche si la usas.",
+    "Cubre con caldo y cocina a fuego mínimo, apenas burbujeando, 2,5–3 horas, añadiendo caldo cuando haga falta.",
+    "Ajusta de sal y deja reposar; mejor al día siguiente."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Cocción",
+    "ratio": "2,5–3 horas a fuego mínimo",
+    "note": "Más, mejor."
+   },
+   {
+    "use": "Salsa por ración de pasta",
+    "ratio": "120–150 g",
+    "note": "Para 100 g de pasta fresca."
+   },
+   {
+    "use": "Tomate",
+    "ratio": "Poco: acompaña, no domina",
+    "note": "En la versión de Bolonia."
+   },
+   {
+    "use": "Carne",
+    "ratio": "2 partes de vacuno por 1 de cerdo",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "pasta-fresca",
+    "name": "Pasta fresca al huevo",
+    "note": "Tagliatelle y lasaña."
+   },
+   {
+    "id": "guisos-largos",
+    "name": "Guisos largos",
+    "note": "Fuego mínimo y tiempo."
+   },
+   {
+    "id": "sofrito",
+    "name": "Soffritto",
+    "note": "Base de verduras pochadas."
+   },
+   {
+    "id": "salsa-de-tomate",
+    "name": "Salsa de tomate",
+    "note": "Para el ragú napolitano."
+   }
+  ],
+  "keys": [
+   "Dorar la carne hasta que se tueste.",
+   "Fuego mínimo y horas.",
+   "Poco tomate.",
+   "Reposo de un día.",
+   "Pasta ancha al huevo para recogerlo."
+  ],
+  "errors": [
+   {
+    "p": "Salsa granulosa y seca",
+    "fix": "Carne hervida o poco tiempo. Dora bien y cuece más con caldo."
+   },
+   {
+    "p": "Sabor ácido",
+    "fix": "Demasiado tomate o vino sin reducir. Reduce y equilibra."
+   },
+   {
+    "p": "Grasa en la superficie",
+    "fix": "Normal en un ragú largo; retira parte o emulsiona con la pasta."
+   }
+  ],
+  "history": "El ragú es una salsa tradicional de la cocina italiana con muchas versiones regionales; el de Bolonia se asocia a las tagliatelle y la lasaña.",
+  "uses": [
+   "Tagliatelle y pastas anchas",
+   "Lasaña",
+   "Rellenos",
+   "Polenta"
+  ],
+  "keep": "4–5 días en frío; se congela muy bien.",
+  "pro": "Haz el ragú en tanda grande y congélalo en porciones; la pasta se termina en la sartén con la salsa.",
+  "related": [
+   "pasta-fresca",
+   "guisos-largos",
+   "sofrito",
+   "salsa-de-tomate",
+   "coccion-de-pasta-y-noquis",
+   "vinos-y-licores"
+  ]
+ },
+ {
+  "id": "pastas-romanas",
+  "name": "Pastas romanas: carbonara, cacio e pepe y amatriciana",
+  "name_en": "Roman pastas",
+  "cat": "tecnicas",
+  "group": "Cocina italiana",
+  "aka": [
+   "carbonara",
+   "cacio e pepe",
+   "amatriciana",
+   "gricia",
+   "guanciale",
+   "pecorino romano",
+   "pasta carbonara"
+  ],
+  "summary": "Cuatro pastas con pocos ingredientes (guanciale, pecorino, pimienta, huevo o tomate) que dependen de emulsionar bien con el agua de cocción.",
+  "what": "Las pastas romanas clásicas comparten ingredientes: guanciale (papada curada de cerdo), pecorino romano (queso de oveja curado), pimienta negra y el agua de cocción de la pasta. La gricia es la base: guanciale, pecorino y pimienta. La carbonara añade yema de huevo; la amatriciana, tomate; la cacio e pepe prescinde del guanciale y se queda en queso y pimienta.\n\nLa dificultad está en la [[emulsiones|emulsión]]: el queso y el huevo deben fundirse con el agua de cocción y la grasa del guanciale en una crema, sin grumos ni huevo cuajado. Por eso se trabaja fuera del fuego, por debajo de unos 70 °C. Las recetas canónicas no llevan nata. Cada romano tiene su versión de las proporciones.",
+  "base": {
+   "for": "4 raciones de carbonara",
+   "items": [
+    [
+     "Espaguetis o rigatoni",
+     "360 g"
+    ],
+    [
+     "Guanciale en tiras",
+     "150 g"
+    ],
+    [
+     "Yemas y 1 huevo entero",
+     "4 y 1"
+    ],
+    [
+     "Pecorino romano rallado fino",
+     "80–100 g"
+    ],
+    [
+     "Pimienta negra recién molida",
+     "abundante"
+    ],
+    [
+     "Agua de cocción de la pasta",
+     "100–150 ml"
+    ]
+   ],
+   "steps": [
+    "Dora el guanciale a fuego medio sin aceite hasta que suelte su grasa y esté crujiente por fuera.",
+    "Bate las yemas, el huevo, casi todo el pecorino y la pimienta hasta una crema espesa.",
+    "Cuece la pasta en agua con poca sal (el queso y el guanciale ya salan) y sácala al dente.",
+    "Pasa la pasta a la sartén con el guanciale, fuera del fuego, y mezcla para que se enfríe un poco.",
+    "Añade la crema de huevo y agua de cocción poco a poco, moviendo sin parar, hasta que quede cremosa; sirve con pecorino y pimienta."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Temperatura de la emulsión",
+    "ratio": "Por debajo de 70 °C",
+    "note": "Si no, el huevo cuaja."
+   },
+   {
+    "use": "Cacio e pepe",
+    "ratio": "100 g de pecorino por 320 g de pasta",
+    "note": "Queso mezclado antes con agua tibia."
+   },
+   {
+    "use": "Amatriciana",
+    "ratio": "150 g de guanciale y 400 g de tomate por 4 raciones",
+    "note": "Con guindilla y pecorino."
+   },
+   {
+    "use": "Sal del agua",
+    "ratio": "5–7 g por litro",
+    "note": "Menos de lo habitual."
+   }
+  ],
+  "variants": [
+   {
+    "id": "coccion-de-pasta-y-noquis",
+    "name": "Cocción de pasta",
+    "note": "Agua de cocción y mantecado."
+   },
+   {
+    "id": "emulsiones",
+    "name": "Emulsión",
+    "note": "Por qué liga."
+   },
+   {
+    "id": "coagulacion-de-proteinas",
+    "name": "Cuajado del huevo",
+    "note": "Controlar la temperatura."
+   },
+   {
+    "id": "quesos-en-cocina",
+    "name": "Quesos curados",
+    "note": "Cómo funden."
+   }
+  ],
+  "keys": [
+   "Fuera del fuego para el huevo y el queso.",
+   "Agua de cocción para emulsionar.",
+   "Queso rallado muy fino.",
+   "Poca sal en el agua.",
+   "Sin nata en las versiones clásicas."
+  ],
+  "errors": [
+   {
+    "p": "Huevo cuajado en grumos",
+    "fix": "Demasiado calor. Fuera del fuego y añade agua para templar."
+   },
+   {
+    "p": "Queso en hebras pegajosas",
+    "fix": "Agua muy caliente o queso grueso. Ralla fino y mezcla con agua tibia antes."
+   },
+   {
+    "p": "Pasta salada",
+    "fix": "Agua muy salada. Menos sal: el queso y el guanciale salan."
+   }
+  ],
+  "history": "Estas pastas forman parte de la cocina tradicional de Roma y del Lacio. Sus orígenes y proporciones se discuten mucho; la carbonara es la más reciente de las cuatro.",
+  "uses": [
+   "Platos de pasta",
+   "Menús de mediodía",
+   "Cocina italiana"
+  ],
+  "keep": "Al momento. El guanciale dorado, 1–2 días en frío.",
+  "pro": "Guanciale dorado y mezcla de huevo y queso preparados; pasta al pedido y emulsión en sartén por ración.",
+  "related": [
+   "coccion-de-pasta-y-noquis",
+   "emulsiones",
+   "coagulacion-de-proteinas",
+   "quesos-en-cocina",
+   "pasta-seca",
+   "huevos"
+  ]
+ },
+ {
+  "id": "ossobuco",
+  "name": "Ossobuco y guisos lombardos",
+  "name_en": "Ossobuco and Lombard braises",
+  "cat": "tecnicas",
+  "group": "Cocina italiana",
+  "technique": "guiso",
+  "aka": [
+   "ossobuco",
+   "osobuco",
+   "ossobuco alla milanese",
+   "morcillo con tuétano",
+   "gremolata y ossobuco"
+  ],
+  "summary": "Rodajas de morcillo de ternera con su hueso y tuétano, braseadas con vino blanco y caldo y terminadas con gremolata.",
+  "what": "El ossobuco es una rodaja gruesa de morcillo de ternera cortada con el hueso, que guarda el tuétano en el centro. Se enharina, se dora y se brasea lentamente con un soffritto, vino blanco y caldo hasta que la carne está melosa y el tuétano, fundente. En Milán se termina con [[gremolata]] (ralladura de limón, ajo y perejil) y se sirve con risotto de azafrán; en otras versiones lleva tomate.\n\nComo todo guiso de casa, admite variaciones; la versión en blanco con gremolata es la más reconocida.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Ossobuco de ternera (rodajas de 3–4 cm)",
+     "4 (unos 1,4 kg)"
+    ],
+    [
+     "Harina para enharinar",
+     "30 g"
+    ],
+    [
+     "Cebolla, zanahoria y apio picados",
+     "1, 1 y 1 rama"
+    ],
+    [
+     "Vino blanco seco",
+     "200 ml"
+    ],
+    [
+     "Caldo de carne",
+     "500 ml"
+    ],
+    [
+     "Tomate triturado (opcional)",
+     "200 g"
+    ],
+    [
+     "Mantequilla y aceite",
+     "40 g y 30 ml"
+    ],
+    [
+     "Gremolata: ralladura de 1 limón, 1 ajo y perejil",
+     "1 cantidad"
+    ]
+   ],
+   "steps": [
+    "Corta la membrana exterior de cada rodaja en dos o tres puntos para que no se curve; sala y enharina.",
+    "Dora las rodajas en la mantequilla y el aceite por ambas caras; reserva.",
+    "Pocha el soffritto en la misma grasa, moja con el vino y reduce.",
+    "Devuelve la carne en una sola capa, añade el caldo hasta media altura (y el tomate si lo usas), tapa y brasea a fuego suave o en horno a 150 °C 1,5–2 horas.",
+    "Reduce la salsa si hace falta y termina con la gremolata justo antes de servir."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Braseado",
+    "ratio": "150 °C, 1,5–2 horas",
+    "note": "Hasta que la carne se separe del hueso."
+   },
+   {
+    "use": "Líquido",
+    "ratio": "Hasta media altura",
+    "note": "Es un braseado."
+   },
+   {
+    "use": "Ración",
+    "ratio": "1 rodaja de 300–350 g",
+    "note": ""
+   },
+   {
+    "use": "Gremolata",
+    "ratio": "Al final, en crudo",
+    "note": "Frescor."
+   }
+  ],
+  "variants": [
+   {
+    "id": "gremolata",
+    "name": "Gremolata",
+    "note": "El acabado milanés."
+   },
+   {
+    "id": "braseado",
+    "name": "Braseado",
+    "note": "La técnica."
+   },
+   {
+    "id": "ternera-lechal",
+    "name": "Ternera",
+    "note": "El morcillo y sus usos."
+   },
+   {
+    "id": "risotto-y-arroces-cremosos",
+    "name": "Risotto de azafrán",
+    "note": "El acompañante clásico."
+   }
+  ],
+  "keys": [
+   "Cortar la membrana para que no se curve.",
+   "Dorar bien antes de brasear.",
+   "Fuego suave para conservar el tuétano.",
+   "Gremolata en crudo al final.",
+   "Una sola capa en la cazuela."
+  ],
+  "errors": [
+   {
+    "p": "Rodajas curvadas",
+    "fix": "Membrana sin cortar. Haz cortes en el borde."
+   },
+   {
+    "p": "Tuétano perdido en la salsa",
+    "fix": "Hervor fuerte o rodajas movidas. Fuego suave y sin mover."
+   },
+   {
+    "p": "Salsa aguada",
+    "fix": "Demasiado líquido. Reduce al final."
+   }
+  ],
+  "history": "El ossobuco es un plato tradicional de Milán y de Lombardía; la versión con tomate es posterior a la versión en blanco con gremolata.",
+  "uses": [
+   "Principales de invierno",
+   "Menús de cocina italiana"
+  ],
+  "keep": "4 días en frío en su salsa; se congela bien.",
+  "pro": "Brasea la víspera, enfría en su salsa y regenera al pedido; gremolata recién hecha.",
+  "related": [
+   "gremolata",
+   "braseado",
+   "ternera-lechal",
+   "risotto-y-arroces-cremosos",
+   "azafran",
+   "colageno-y-gelatina"
+  ]
+ },
+ {
+  "id": "vitello-tonnato",
+  "name": "Vitello tonnato",
+  "name_en": "Vitello tonnato",
+  "cat": "tecnicas",
+  "group": "Cocina italiana",
+  "technique": "hervido",
+  "aka": [
+   "vitello tonnato",
+   "ternera con salsa de atún",
+   "salsa tonnata",
+   "vitel toné"
+  ],
+  "summary": "Ternera cocida a punto rosado, fría y laminada fina, napada con una salsa cremosa de atún, anchoa y alcaparras.",
+  "what": "El vitello tonnato es un plato frío del Piamonte: una pieza magra de ternera (redondo o tapa) cocida suave en caldo aromático o asada hasta un punto rosado, enfriada y cortada en láminas muy finas, cubierta con una salsa de atún en aceite, anchoas y alcaparras. La salsa se liga con mayonesa en las versiones más extendidas, o con yemas de huevo cocido y el caldo de la carne en otras.\n\nEs un plato ideal para preparar con antelación. Cada casa tiene su salsa, más o menos espesa, con más o menos alcaparras.",
+  "base": {
+   "for": "8 raciones",
+   "items": [
+    [
+     "Redondo o tapa de ternera bridado",
+     "1 kg"
+    ],
+    [
+     "Zanahoria, cebolla, apio, laurel y vino blanco para el caldo",
+     "1, 1, 1, 2 hojas y 200 ml"
+    ],
+    [
+     "Atún en aceite escurrido",
+     "200 g"
+    ],
+    [
+     "Anchoas",
+     "4–6"
+    ],
+    [
+     "Alcaparras",
+     "20 g y unas para decorar"
+    ],
+    [
+     "Mayonesa (o 3 yemas cocidas)",
+     "200 g"
+    ],
+    [
+     "Caldo de la cocción",
+     "50–100 ml"
+    ],
+    [
+     "Zumo de limón",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Cuece la ternera en el caldo aromático a fuego muy suave hasta 58–60 °C en el centro, o ásala a horno suave.",
+    "Deja enfriar la pieza en su caldo y luego en la cámara, envuelta, varias horas.",
+    "Tritura el atún, las anchoas y las alcaparras con la mayonesa y un poco de caldo hasta una salsa fina; ajusta con limón.",
+    "Corta la carne fría en láminas muy finas.",
+    "Cubre las láminas con la salsa, decora con alcaparras y deja reposar 1–2 horas en frío antes de servir."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Punto de la carne",
+    "ratio": "58–60 °C en el centro",
+    "note": "Rosada."
+   },
+   {
+    "use": "Grosor de las láminas",
+    "ratio": "2–3 mm",
+    "note": "Con cortafiambres o cuchillo largo."
+   },
+   {
+    "use": "Salsa por ración",
+    "ratio": "40–50 g",
+    "note": "Que cubra."
+   },
+   {
+    "use": "Reposo",
+    "ratio": "1–2 horas en frío",
+    "note": "Para que se impregne."
+   }
+  ],
+  "variants": [
+   {
+    "id": "mayonesa",
+    "name": "Mayonesa",
+    "note": "Base de la salsa."
+   },
+   {
+    "id": "atun-rojo-y-bonito",
+    "name": "Atún",
+    "note": "Conservas de calidad."
+   },
+   {
+    "id": "escalfado",
+    "name": "Escalfado",
+    "note": "Cocer la carne en caldo."
+   },
+   {
+    "id": "ternera-lechal",
+    "name": "Ternera",
+    "note": "Piezas magras."
+   }
+  ],
+  "keys": [
+   "Carne rosada y fría antes de cortar.",
+   "Láminas muy finas.",
+   "Salsa fina y equilibrada.",
+   "Reposo para que se impregne.",
+   "Cada casa tiene su salsa."
+  ],
+  "errors": [
+   {
+    "p": "Carne seca y gris",
+    "fix": "Cocida de más. Saca a 58–60 °C."
+   },
+   {
+    "p": "Salsa demasiado salada",
+    "fix": "Muchas anchoas o alcaparras. Ajusta y aligera con caldo."
+   },
+   {
+    "p": "Láminas rotas",
+    "fix": "Carne templada al cortar. Córtala muy fría."
+   }
+  ],
+  "history": "El vitello tonnato es un plato tradicional del Piamonte que se sirve frío, sobre todo en verano y en fiestas.",
+  "uses": [
+   "Entrantes fríos",
+   "Menús de verano",
+   "Platos para compartir"
+  ],
+  "keep": "Carne cocida, 3–4 días en frío; salsa con huevo, 2 días.",
+  "pro": "Cuece y enfría la carne la víspera; lamina y salsea por tandas.",
+  "related": [
+   "mayonesa",
+   "atun-rojo-y-bonito",
+   "escalfado",
+   "ternera-lechal",
+   "aceitunas-y-alcaparras",
+   "salazones-y-huevas"
+  ]
+ },
+ {
+  "id": "minestrone",
+  "name": "Minestrone y sopas de verdura",
+  "name_en": "Minestrone and vegetable soups",
+  "cat": "tecnicas",
+  "group": "Cocina italiana",
+  "technique": "guiso",
+  "aka": [
+   "minestrone",
+   "sopa de verduras",
+   "minestra",
+   "sopa de verduras con pasta",
+   "ribollita"
+  ],
+  "summary": "Verduras de temporada, legumbre y pasta o arroz cocidos sobre un soffritto, con corteza de parmesano y buen aceite.",
+  "what": "El minestrone es la gran sopa de verduras italiana: cambia con la estación y con la región. Se construye sobre un soffritto, se añaden las verduras según su tiempo de cocción, una legumbre (a menudo judías), caldo o agua y, al final, una pasta corta o arroz. Una corteza de parmesano en la cocción da profundidad, y en Liguria se termina con pesto.\n\nLa ribollita toscana usa la misma idea con col negra, judías y pan duro, recocida al día siguiente. No hay una receta fija: es un plato para usar la huerta del momento.",
+  "base": {
+   "for": "8 raciones",
+   "items": [
+    [
+     "Cebolla, zanahoria y apio picados",
+     "1, 1 y 1 rama"
+    ],
+    [
+     "Verduras de temporada en dados (calabacín, judía verde, patata, col, tomate)",
+     "1,2 kg"
+    ],
+    [
+     "Judías cocidas",
+     "300 g"
+    ],
+    [
+     "Pasta corta o arroz",
+     "150 g"
+    ],
+    [
+     "Corteza de parmesano",
+     "1 trozo"
+    ],
+    [
+     "Caldo de verduras o agua",
+     "2 l"
+    ],
+    [
+     "Aceite de oliva",
+     "60 ml y más para servir"
+    ],
+    [
+     "Pesto o parmesano para terminar (opcional)",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Pocha el soffritto en el aceite 10–15 minutos.",
+    "Añade las verduras más duras (patata, zanahoria, col) y rehoga; luego el tomate.",
+    "Moja con el caldo, añade la corteza de parmesano y cuece 30 minutos a fuego suave.",
+    "Incorpora las verduras tiernas y las judías; cuece 10 minutos más.",
+    "Añade la pasta o el arroz y cuece hasta que esté al dente; sirve con aceite crudo y pesto o parmesano."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Verdura por ración",
+    "ratio": "150 g",
+    "note": "Variada."
+   },
+   {
+    "use": "Pasta o arroz",
+    "ratio": "15–20 g por ración",
+    "note": "Al final."
+   },
+   {
+    "use": "Cocción total",
+    "ratio": "45–60 minutos",
+    "note": "Por orden de dureza."
+   },
+   {
+    "use": "Corteza de queso",
+    "ratio": "50–100 g para 2 l",
+    "note": "Retirar al servir."
+   }
+  ],
+  "variants": [
+   {
+    "id": "pesto",
+    "name": "Pesto",
+    "note": "Para terminar al estilo ligur."
+   },
+   {
+    "id": "caldo-de-verduras",
+    "name": "Caldo de verduras",
+    "note": "La base líquida."
+   },
+   {
+    "id": "legumbres",
+    "name": "Judías",
+    "note": "Remojo y cocción."
+   },
+   {
+    "id": "cocina-de-aprovechamiento",
+    "name": "Ribollita",
+    "note": "Con pan duro."
+   }
+  ],
+  "keys": [
+   "Verduras por orden de dureza.",
+   "Soffritto paciente.",
+   "Corteza de parmesano para fondo.",
+   "Pasta al final y al dente.",
+   "Aceite crudo al servir."
+  ],
+  "errors": [
+   {
+    "p": "Verduras deshechas",
+    "fix": "Todas a la vez. Por orden de cocción."
+   },
+   {
+    "p": "Pasta pasada al día siguiente",
+    "fix": "Cocida en la sopa que se guarda. Cuécela aparte si se va a guardar."
+   },
+   {
+    "p": "Sopa sosa",
+    "fix": "Poco soffritto o sin fondo. Corteza de queso y buen aceite."
+   }
+  ],
+  "history": "El minestrone es una sopa tradicional italiana con infinitas versiones regionales y de temporada.",
+  "uses": [
+   "Platos de cuchara de verduras",
+   "Menús de mediodía",
+   "Cocina de aprovechamiento"
+  ],
+  "keep": "3–4 días en frío sin la pasta; la pasta, aparte.",
+  "pro": "Base de verduras en tanda; pasta cocida aparte y añadida por ración.",
+  "related": [
+   "pesto",
+   "caldo-de-verduras",
+   "legumbres",
+   "cocina-de-aprovechamiento",
+   "quesos-en-cocina",
+   "menu-de-temporada"
+  ]
+ },
+ {
+  "id": "parmigiana",
+  "name": "Parmigiana de berenjena",
+  "name_en": "Aubergine parmigiana",
+  "cat": "tecnicas",
+  "group": "Cocina italiana",
+  "technique": "gratinado",
+  "aka": [
+   "parmigiana",
+   "melanzane alla parmigiana",
+   "berenjenas a la parmesana",
+   "gratinado de berenjena"
+  ],
+  "summary": "Capas de berenjena frita, salsa de tomate, queso fresco que funde y parmesano, horneadas y reposadas hasta poder cortarse.",
+  "what": "La parmigiana de berenjena es un plato del sur de Italia, con versiones en muchas regiones: rodajas de [[berenjena]] fritas (o asadas, en versiones más ligeras) montadas en capas con [[salsa-de-tomate]], albahaca, un queso que funde (mozzarella o similar) y parmesano rallado, y horneadas hasta que burbujean y se gratinan.\n\nEl reposo es imprescindible: recién salida del horno se desmorona; tras un rato, se corta en porciones limpias. Cada casa decide si fríe la berenjena con o sin rebozar.",
+  "base": {
+   "for": "1 fuente de 25 × 30 cm (8 raciones)",
+   "items": [
+    [
+     "Berenjenas en rodajas de 1 cm",
+     "1,5 kg"
+    ],
+    [
+     "Sal para la berenjena",
+     "15 g"
+    ],
+    [
+     "Salsa de tomate con albahaca",
+     "800 g"
+    ],
+    [
+     "Mozzarella o queso que funda, escurrido",
+     "400 g"
+    ],
+    [
+     "Parmesano rallado",
+     "120 g"
+    ],
+    [
+     "Albahaca",
+     "1 manojo"
+    ],
+    [
+     "Aceite para freír",
+     "cantidad necesaria"
+    ]
+   ],
+   "steps": [
+    "Sala las rodajas 30 minutos, sécalas bien y fríelas a 170–180 °C hasta doradas; escurre sobre papel.",
+    "Pon una capa fina de salsa en la fuente y una capa de berenjena.",
+    "Cubre con salsa, queso en trozos, parmesano y albahaca; repite las capas.",
+    "Termina con salsa y parmesano; hornea a 180 °C 35–45 minutos, hasta que burbujee y se dore.",
+    "Deja reposar al menos 30 minutos antes de cortar."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Horneado",
+    "ratio": "180 °C, 35–45 minutos",
+    "note": "Hasta que burbujee."
+   },
+   {
+    "use": "Reposo",
+    "ratio": "30 minutos mínimo",
+    "note": "Mejor de un día para otro."
+   },
+   {
+    "use": "Fritura de berenjena",
+    "ratio": "170–180 °C",
+    "note": "Escurrir bien."
+   },
+   {
+    "use": "Ración",
+    "ratio": "250–300 g",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "berenjena",
+    "name": "Berenjena",
+    "note": "Elegir, salar y freír."
+   },
+   {
+    "id": "salsa-de-tomate",
+    "name": "Salsa de tomate",
+    "note": "La base."
+   },
+   {
+    "id": "gratinado",
+    "name": "Gratinado",
+    "note": "Costra dorada."
+   },
+   {
+    "id": "quesos-en-cocina",
+    "name": "Quesos que funden",
+    "note": "Escurridos para no aguar."
+   }
+  ],
+  "keys": [
+   "Berenjena salada, seca y bien frita.",
+   "Queso escurrido para que no suelte agua.",
+   "Capas finas y regulares.",
+   "Reposo antes de cortar.",
+   "Mejor al día siguiente."
+  ],
+  "errors": [
+   {
+    "p": "Parmigiana aguada",
+    "fix": "Berenjena o queso húmedos. Seca y escurre bien."
+   },
+   {
+    "p": "Demasiado aceitosa",
+    "fix": "Berenjena frita en aceite frío. Fríe a 175–180 °C y escurre."
+   },
+   {
+    "p": "Se desmorona al cortar",
+    "fix": "Sin reposo. Espera al menos 30 minutos."
+   }
+  ],
+  "history": "La parmigiana de berenjena es un plato tradicional del sur de Italia, presente en la cocina de varias regiones con pequeñas diferencias.",
+  "uses": [
+   "Principales vegetarianos",
+   "Entrantes para compartir",
+   "Menús de verano"
+  ],
+  "keep": "3–4 días en frío; se regenera en horno a 160 °C. Se congela en porciones.",
+  "pro": "Hornea en bandeja la víspera, corta en frío y regenera por ración.",
+  "related": [
+   "berenjena",
+   "salsa-de-tomate",
+   "gratinado",
+   "quesos-en-cocina",
+   "fritura",
+   "hierbas-frescas"
+  ]
+ },
+ {
+  "id": "pizza",
+  "name": "Pizza y masas de larga fermentación",
+  "name_en": "Pizza and long-fermented doughs",
+  "cat": "tecnicas",
+  "group": "Cocina italiana",
+  "aka": [
+   "pizza",
+   "pizza napolitana",
+   "masa de pizza",
+   "fermentación en frío",
+   "bolas de pizza",
+   "pizza en pala"
+  ],
+  "summary": "Harina, agua, sal y muy poca levadura, fermentadas despacio en frío y horneadas a temperatura muy alta: borde aireado y base fina.",
+  "what": "Una buena masa de pizza tiene muy poca levadura y mucho tiempo: la fermentación lenta en frío desarrolla aroma, hace la masa más digestiva y permite estirarla fina sin que se rompa, gracias al [[gluten-y-reposo-de-masas|gluten]] relajado. La napolitana se hornea a temperaturas muy altas durante poco más de un minuto, y queda con un borde hinchado y una base tierna; en hornos convencionales se compensa con piedra o acero muy calientes y algo más de tiempo.\n\nLa misma lógica de masa lenta sirve para panes planos y focaccias ([[pan-y-focaccia]]), y se puede usar masa madre ([[masa-madre]]) en lugar de levadura. Cada pizzero tiene sus proporciones; aquí van unas de referencia.",
+  "base": {
+   "for": "6 bolas de 250 g",
+   "items": [
+    [
+     "Harina de fuerza media",
+     "900 g"
+    ],
+    [
+     "Agua fría",
+     "560–600 ml (62–67 %)"
+    ],
+    [
+     "Sal",
+     "25 g"
+    ],
+    [
+     "Levadura fresca",
+     "1–2 g"
+    ],
+    [
+     "Tomate triturado con sal (para cubrir)",
+     "400 g"
+    ],
+    [
+     "Mozzarella escurrida",
+     "500 g"
+    ],
+    [
+     "Albahaca y aceite de oliva",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Disuelve la levadura en el agua, añade la harina y mezcla; deja reposar 20–30 minutos y añade la sal.",
+    "Amasa hasta que la masa esté lisa y elástica; deja fermentar en bloque 2 horas a temperatura ambiente.",
+    "Divide en bolas, ponlas en recipientes tapados y fermenta en frío 24–72 horas.",
+    "Saca las bolas 2–3 horas antes; estira con las manos desde el centro hacia fuera, sin aplastar el borde.",
+    "Cubre con poco tomate, queso y aceite, y hornea en el horno más caliente posible; la albahaca, al salir."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Hidratación",
+    "ratio": "62–67 % del peso de la harina",
+    "note": "Más si la harina lo admite."
+   },
+   {
+    "use": "Horno de leña",
+    "ratio": "430–480 °C, 60–90 segundos",
+    "note": "Estilo napolitano."
+   },
+   {
+    "use": "Horno convencional",
+    "ratio": "260–300 °C con piedra, 6–8 minutos",
+    "note": "Piedra precalentada 45 minutos."
+   },
+   {
+    "use": "Fermentación en frío",
+    "ratio": "4 °C, 24–72 horas",
+    "note": "Más aroma y extensibilidad."
+   }
+  ],
+  "variants": [
+   {
+    "id": "pan-y-focaccia",
+    "name": "Focaccia y panes",
+    "note": "Masas de mucha agua en bandeja."
+   },
+   {
+    "id": "masa-madre",
+    "name": "Masa madre",
+    "note": "Fermentación natural."
+   },
+   {
+    "id": "horno-de-lena",
+    "name": "Horno de leña",
+    "note": "Calor de solera y bóveda."
+   },
+   {
+    "id": "panes-planos",
+    "name": "Panes planos",
+    "note": "Otras masas a fuego fuerte."
+   }
+  ],
+  "keys": [
+   "Poca levadura y mucho tiempo.",
+   "Fermentación en frío para aroma y extensibilidad.",
+   "No aplastar el borde al estirar.",
+   "Poca cobertura y escurrida.",
+   "Horno lo más caliente posible."
+  ],
+  "errors": [
+   {
+    "p": "Masa que encoge al estirar",
+    "fix": "Gluten tenso. Deja la bola más tiempo a temperatura ambiente."
+   },
+   {
+    "p": "Base blanda y mojada",
+    "fix": "Demasiada cobertura o queso húmedo. Menos y escurrido."
+   },
+   {
+    "p": "Borde plano",
+    "fix": "Aplastado al estirar o masa pasada de fermentación. Estira desde el centro."
+   }
+  ],
+  "history": "La pizza nació como comida popular en Nápoles y se convirtió en uno de los platos más extendidos del mundo, con estilos muy distintos según el país.",
+  "uses": [
+   "Pizzas",
+   "Panes planos",
+   "Bases para compartir",
+   "Aperitivos"
+  ],
+  "keep": "Bolas en frío hasta 72 horas; se pueden congelar tras 24 horas de fermentación.",
+  "pro": "Prepara las bolas según las reservas con 1–3 días de antelación; atempéralas por tandas antes del servicio.",
+  "related": [
+   "pan-y-focaccia",
+   "masa-madre",
+   "horno-de-lena",
+   "gluten-y-reposo-de-masas",
+   "harinas-y-almidones",
+   "panes-planos"
+  ]
+ },
+ {
+  "id": "tajin",
+  "name": "Tajín",
+  "name_en": "Tagine",
+  "cat": "tecnicas",
+  "group": "Mediterráneo oriental y Magreb",
+  "technique": "guiso",
+  "aka": [
+   "tajín",
+   "tagine",
+   "tajine",
+   "tajín de cordero",
+   "tajín de pollo con limón",
+   "guiso marroquí"
+  ],
+  "summary": "Carne o verdura guisada despacio con poco líquido, especias, cebolla y aceite en una cazuela de tapa cónica que devuelve el vapor.",
+  "what": "El tajín es a la vez un recipiente de barro con tapa cónica y el guiso que se cocina en él. La tapa hace que el vapor se condense y vuelva a caer, de modo que la carne o las verduras se cocinan casi en su propio jugo, con muy poco líquido. La base es cebolla rallada, aceite, especias (jengibre, cúrcuma, pimienta, azafrán, canela o mezclas como el ras el hanout) y hierbas frescas.\n\nCombinaciones clásicas son el pollo con limón confitado y aceitunas, el cordero con ciruelas y almendras, o el de verduras. Se puede hacer en una cazuela de fondo grueso tapada. Cada casa del Magreb tiene sus mezclas.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Pollo troceado o cordero (paletilla o cuello) en trozos",
+     "1,2 kg"
+    ],
+    [
+     "Cebolla rallada",
+     "2"
+    ],
+    [
+     "Ajo",
+     "3 dientes"
+    ],
+    [
+     "Jengibre molido, cúrcuma, pimienta y canela",
+     "5 g, 3 g, 2 g y 1 rama"
+    ],
+    [
+     "Azafrán",
+     "0,05 g"
+    ],
+    [
+     "Aceite de oliva",
+     "60 ml"
+    ],
+    [
+     "Cilantro y perejil",
+     "1 manojo"
+    ],
+    [
+     "Limón confitado y aceitunas (pollo) o ciruelas y almendras (cordero)",
+     "1 y 100 g / 150 g y 60 g"
+    ],
+    [
+     "Agua",
+     "200–300 ml"
+    ]
+   ],
+   "steps": [
+    "Mezcla la carne con la cebolla, el ajo, las especias, el aceite y las hierbas; deja marinar 1 hora si es posible.",
+    "Pon todo en el tajín o la cazuela, añade el agua justa para que no se pegue y tapa.",
+    "Cocina a fuego muy suave (con difusor si es de barro): pollo 45–60 minutos, cordero 1,5–2 horas.",
+    "Añade el limón confitado y las aceitunas, o las ciruelas, en los últimos 15–20 minutos.",
+    "Reduce la salsa destapado si hace falta, termina con las almendras tostadas o las hierbas y sirve en el mismo recipiente."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Líquido",
+    "ratio": "200–300 ml para 1,2 kg",
+    "note": "La tapa devuelve el vapor."
+   },
+   {
+    "use": "Pollo",
+    "ratio": "45–60 minutos a fuego suave",
+    "note": ""
+   },
+   {
+    "use": "Cordero",
+    "ratio": "1,5–2 horas",
+    "note": "Hasta que se deshaga."
+   },
+   {
+    "use": "Ración",
+    "ratio": "300 g de carne con hueso",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "especias",
+    "name": "Mezclas de especias",
+    "note": "Ras el hanout y otras."
+   },
+   {
+    "id": "citricos",
+    "name": "Limón confitado",
+    "note": "Limones en sal."
+   },
+   {
+    "id": "cuscus",
+    "name": "Cuscús",
+    "note": "Acompañamiento habitual."
+   },
+   {
+    "id": "curry-y-guisos-especiados",
+    "name": "Guisos especiados",
+    "note": "La misma lógica de especias."
+   }
+  ],
+  "keys": [
+   "Poco líquido: el vapor hace el trabajo.",
+   "Fuego muy suave, con difusor.",
+   "Especias con la cebolla y el aceite desde el principio.",
+   "Fruta y aceitunas al final.",
+   "Cada casa tiene sus especias."
+  ],
+  "errors": [
+   {
+    "p": "Se pega al fondo",
+    "fix": "Fuego alto o sin líquido. Difusor y un poco de agua."
+   },
+   {
+    "p": "Barro agrietado",
+    "fix": "Cambio brusco de temperatura. Calienta poco a poco y nunca vacío."
+   },
+   {
+    "p": "Salsa aguada",
+    "fix": "Demasiada agua. Reduce destapado al final."
+   }
+  ],
+  "history": "El tajín es un plato y un recipiente tradicionales de Marruecos y del resto del Magreb.",
+  "uses": [
+   "Principales para compartir",
+   "Guisos de carne y verdura",
+   "Menús de cocina del Magreb"
+  ],
+  "keep": "3–4 días en frío; se regenera tapado a fuego suave.",
+  "pro": "Prepara la base en tanda y termina en tajines individuales calientes.",
+  "related": [
+   "especias",
+   "citricos",
+   "cuscus",
+   "curry-y-guisos-especiados",
+   "cordero",
+   "pollo-y-aves"
+  ]
+ },
+ {
+  "id": "cuscus",
+  "name": "Cuscús",
+  "name_en": "Couscous",
+  "cat": "tecnicas",
+  "group": "Mediterráneo oriental y Magreb",
+  "technique": "vapor",
+  "aka": [
+   "cuscús",
+   "couscous",
+   "sémola al vapor",
+   "cuscusera",
+   "cuscús de verduras",
+   "tfaya"
+  ],
+  "summary": "Sémola de trigo duro hidratada y cocida al vapor sobre un caldo de carne y verduras hasta quedar suelta y esponjosa.",
+  "what": "El cuscús es sémola de trigo duro en pequeños granos. En la forma tradicional del Magreb se humedece, se trabaja con las manos para separar los granos y se cuece al vapor en una cuscusera, encima del caldo donde se guisan la carne y las verduras, dos o tres veces, aflojándolo entre cocciones. Queda muy suelto, ligero y perfumado.\n\nEl cuscús precocido que se vende hoy se hidrata con líquido hirviendo y se suelta con grasa: es más rápido, aunque menos esponjoso. Se acompaña de un caldo de verduras y carne, de garbanzos, a veces de cebolla caramelizada con pasas (tfaya) y de una salsa picante. Cada familia y cada país del Magreb tiene su manera.",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Sémola de cuscús",
+     "500 g"
+    ],
+    [
+     "Agua salada para humedecer",
+     "250 ml"
+    ],
+    [
+     "Aceite o mantequilla",
+     "40 g"
+    ],
+    [
+     "Cordero o pollo en trozos",
+     "1 kg"
+    ],
+    [
+     "Verduras (zanahoria, nabo, calabacín, calabaza, col)",
+     "1,5 kg"
+    ],
+    [
+     "Garbanzos remojados o cocidos",
+     "200 g"
+    ],
+    [
+     "Cebolla, tomate y especias (jengibre, cúrcuma, pimienta, ras el hanout)",
+     "2, 2 y al gusto"
+    ],
+    [
+     "Agua para el caldo",
+     "3 l"
+    ]
+   ],
+   "steps": [
+    "Guisa la carne con la cebolla, el tomate, las especias y los garbanzos en la base de la cuscusera, cubierta de agua; añade las verduras según su dureza.",
+    "Humedece la sémola con parte del agua salada y frótala entre las manos para separar los granos; deja reposar 10 minutos.",
+    "Ponla en la parte de arriba de la cuscusera y cuece al vapor 15–20 minutos desde que sale el vapor.",
+    "Vuélcala, añade más agua salada y la grasa, afloja con las manos y repite el vapor una o dos veces.",
+    "Sirve la sémola en una fuente con la carne y las verduras encima y el caldo aparte."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Cuscús precocido",
+    "ratio": "1 parte de sémola por 1–1,2 de líquido hirviendo",
+    "note": "Tapado 5–10 minutos y soltar con grasa."
+   },
+   {
+    "use": "Vapor tradicional",
+    "ratio": "2–3 pasadas de 15–20 minutos",
+    "note": "Aflojando entre cada una."
+   },
+   {
+    "use": "Sémola por ración",
+    "ratio": "80 g en seco",
+    "note": ""
+   },
+   {
+    "use": "Tfaya",
+    "ratio": "500 g de cebolla, 100 g de pasas, miel y canela",
+    "note": "Caramelizada lentamente."
+   }
+  ],
+  "variants": [
+   {
+    "id": "tajin",
+    "name": "Tajín",
+    "note": "Otro guiso para acompañar."
+   },
+   {
+    "id": "papillote-y-vapor",
+    "name": "Vapor",
+    "note": "Principios."
+   },
+   {
+    "id": "legumbres",
+    "name": "Garbanzos",
+    "note": "Remojo y cocción."
+   },
+   {
+    "id": "pastas-de-especias",
+    "name": "Harissa",
+    "note": "Salsa picante para acompañar."
+   }
+  ],
+  "keys": [
+   "Separar los granos con las manos.",
+   "Varias pasadas por el vapor para que sea esponjoso.",
+   "Caldo sabroso debajo: perfuma la sémola.",
+   "Grasa para soltar los granos.",
+   "Cada casa tiene su cuscús."
+  ],
+  "errors": [
+   {
+    "p": "Cuscús apelmazado",
+    "fix": "Mucha agua de golpe o sin aflojar. Humedece poco a poco y afloja."
+   },
+   {
+    "p": "Grano duro",
+    "fix": "Poco vapor o poca agua. Una pasada más."
+   },
+   {
+    "p": "Precocido pastoso",
+    "fix": "Exceso de líquido. Mide la proporción."
+   }
+  ],
+  "history": "El cuscús es un plato tradicional del Magreb, de Marruecos a Túnez, y forma parte de la cocina de fiesta y de diario de la región.",
+  "uses": [
+   "Principales con caldo",
+   "Guarniciones",
+   "Ensaladas frías de sémola"
+  ],
+  "keep": "Sémola cocida, 2–3 días en frío; se regenera al vapor. Caldo y verduras, 3–4 días.",
+  "pro": "Guiso hecho de antemano; sémola al vapor por tandas durante el servicio.",
+  "related": [
+   "tajin",
+   "papillote-y-vapor",
+   "legumbres",
+   "pastas-de-especias",
+   "especias",
+   "cordero"
+  ]
+ },
+ {
+  "id": "falafel-y-fritos-de-legumbre",
+  "name": "Falafel y fritos de legumbre",
+  "name_en": "Falafel and pulse fritters",
+  "cat": "tecnicas",
+  "group": "Mediterráneo oriental y Magreb",
+  "technique": "fritura",
+  "aka": [
+   "falafel",
+   "buñuelos de garbanzo",
+   "ta'amia",
+   "panelle",
+   "fritos de garbanzo",
+   "croquetas de garbanzo"
+  ],
+  "summary": "Garbanzos remojados (no cocidos) triturados con hierbas y especias y fritos: crujientes fuera, verdes y tiernos dentro.",
+  "what": "El falafel se hace con garbanzos secos solo remojados, sin cocer, triturados con cebolla, ajo, perejil, cilantro y especias. El almidón crudo del garbanzo es lo que mantiene la bola unida al freír; si se usan garbanzos cocidos, se deshace. En Egipto se hace con habas secas o con mezcla de habas y garbanzos.\n\nEn la misma familia hay otros fritos de legumbre: las panelle sicilianas, láminas de harina de garbanzo cocida con agua, enfriadas y fritas, o los buñuelos de verduras con harina de garbanzo de la India. Se sirven con [[salsa-tahina-limon|salsa de tahina]], encurtidos y pan.",
+  "base": {
+   "for": "unas 30 piezas de 25 g",
+   "items": [
+    [
+     "Garbanzos secos remojados 12–24 horas",
+     "500 g en seco"
+    ],
+    [
+     "Cebolla",
+     "1"
+    ],
+    [
+     "Ajo",
+     "3 dientes"
+    ],
+    [
+     "Perejil y cilantro",
+     "1 manojo de cada"
+    ],
+    [
+     "Comino y cilantro molidos",
+     "8 g y 5 g"
+    ],
+    [
+     "Sal",
+     "12 g"
+    ],
+    [
+     "Bicarbonato (opcional)",
+     "2 g"
+    ],
+    [
+     "Aceite para freír",
+     "cantidad necesaria"
+    ]
+   ],
+   "steps": [
+    "Escurre muy bien los garbanzos remojados y sécalos.",
+    "Tritúralos con la cebolla, el ajo y las hierbas hasta una textura de arena gruesa, no de puré.",
+    "Añade especias, sal y bicarbonato; deja reposar en frío 30–60 minutos.",
+    "Forma bolas o discos de 25 g sin apretar demasiado.",
+    "Fríe a 175–180 °C 3–4 minutos hasta que estén dorados y crujientes; escurre sobre rejilla."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Fritura",
+    "ratio": "175–180 °C, 3–4 minutos",
+    "note": "Piezas de 25 g."
+   },
+   {
+    "use": "Remojo",
+    "ratio": "12–24 horas",
+    "note": "Sin cocer."
+   },
+   {
+    "use": "Panelle",
+    "ratio": "250 g de harina de garbanzo por 750 ml de agua",
+    "note": "Cocer 10 minutos, enfriar, cortar y freír."
+   },
+   {
+    "use": "Ración",
+    "ratio": "5–6 piezas",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "legumbres",
+    "name": "Legumbres",
+    "note": "Remojo y elección."
+   },
+   {
+    "id": "salsa-tahina-limon",
+    "name": "Salsa de tahina",
+    "note": "El acompañante clásico."
+   },
+   {
+    "id": "fritura",
+    "name": "Fritura",
+    "note": "Temperaturas y aceite."
+   },
+   {
+    "id": "pickles-de-servicio",
+    "name": "Encurtidos",
+    "note": "Acidez para el bocado."
+   }
+  ],
+  "keys": [
+   "Garbanzo remojado, nunca cocido.",
+   "Textura de arena, no de puré.",
+   "Reposo en frío antes de formar.",
+   "Aceite a 175–180 °C.",
+   "Muchas hierbas: verde por dentro."
+  ],
+  "errors": [
+   {
+    "p": "Se deshacen en el aceite",
+    "fix": "Garbanzos cocidos o masa húmeda. Usa remojados y escurre bien."
+   },
+   {
+    "p": "Duros y secos",
+    "fix": "Triturados muy finos o apretados. Textura gruesa y sin apretar."
+   },
+   {
+    "p": "Crudos por dentro",
+    "fix": "Piezas grandes o aceite muy caliente. Más pequeñas y 175 °C."
+   }
+  ],
+  "history": "El falafel es una comida popular de Oriente Medio y Egipto, donde se hace con habas o garbanzos. Las panelle son un frito callejero tradicional de Palermo.",
+  "uses": [
+   "Bocados y aperitivos",
+   "Panes rellenos",
+   "Platos vegetales",
+   "Ensaladas"
+  ],
+  "keep": "Masa cruda, 1 día en frío; formados y congelados crudos, semanas. Fritos, al momento.",
+  "pro": "Masa hecha y formada por tandas; fríe al pedido.",
+  "related": [
+   "legumbres",
+   "salsa-tahina-limon",
+   "fritura",
+   "pickles-de-servicio",
+   "hierbas-frescas",
+   "especias"
+  ]
+ },
+ {
+  "id": "shakshuka",
+  "name": "Shakshuka",
+  "name_en": "Shakshuka",
+  "cat": "tecnicas",
+  "group": "Mediterráneo oriental y Magreb",
+  "technique": "guiso",
+  "aka": [
+   "shakshuka",
+   "chakchouka",
+   "huevos en salsa de tomate",
+   "huevos al plato con pimiento",
+   "huevos a la flamenca"
+  ],
+  "summary": "Huevos cocidos en una salsa especiada de tomate y pimiento, en la misma sartén, con la clara cuajada y la yema líquida.",
+  "what": "La shakshuka es un plato del Magreb, muy popular también en Oriente Medio: una salsa de cebolla, pimiento, ajo y tomate con comino, pimentón y algo picante, en la que se cascan huevos que se cuecen tapados hasta que la clara cuaja y la yema sigue líquida. Se sirve en la sartén con pan, y a menudo con queso feta, yogur o hierbas.\n\nComparte idea con los huevos a la flamenca españoles o con otras salsas de tomate con huevo del Mediterráneo. Cada casa decide el picante, las especias y los añadidos.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Cebolla y pimientos rojo y verde en tiras",
+     "1, 1 y 1"
+    ],
+    [
+     "Ajo",
+     "3 dientes"
+    ],
+    [
+     "Tomate triturado o maduro picado",
+     "800 g"
+    ],
+    [
+     "Comino, pimentón y harissa o guindilla",
+     "5 g, 5 g y al gusto"
+    ],
+    [
+     "Huevos",
+     "8"
+    ],
+    [
+     "Aceite de oliva",
+     "60 ml"
+    ],
+    [
+     "Feta o yogur, cilantro o perejil",
+     "al gusto"
+    ],
+    [
+     "Sal",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Pocha la cebolla y los pimientos en el aceite 15 minutos.",
+    "Añade el ajo y las especias unos segundos y luego el tomate; cuece 15–20 minutos hasta que la salsa esté espesa.",
+    "Haz huecos en la salsa y casca un huevo en cada uno; sala la clara.",
+    "Tapa y cuece a fuego suave 5–8 minutos, hasta que la clara esté cuajada y la yema líquida.",
+    "Termina con queso, hierbas y aceite, y sirve en la sartén con pan."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Huevos",
+    "ratio": "2 por ración",
+    "note": ""
+   },
+   {
+    "use": "Cocción de los huevos",
+    "ratio": "5–8 minutos tapado",
+    "note": "Clara cuajada, yema líquida."
+   },
+   {
+    "use": "Salsa",
+    "ratio": "200 g por ración",
+    "note": "Espesa para sostener el huevo."
+   },
+   {
+    "use": "Especias",
+    "ratio": "5 g de comino y 5 g de pimentón por 4 raciones",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "puntos-del-huevo",
+    "name": "Puntos del huevo",
+    "note": "Clara y yema."
+   },
+   {
+    "id": "salsa-de-tomate",
+    "name": "Salsa de tomate",
+    "note": "La base."
+   },
+   {
+    "id": "pimientos",
+    "name": "Pimientos",
+    "note": "Pochados y dulces."
+   },
+   {
+    "id": "tortilla-y-huevos-de-brunch",
+    "name": "Huevos de brunch",
+    "note": "Otros platos de huevo."
+   }
+  ],
+  "keys": [
+   "Salsa espesa antes de los huevos.",
+   "Tapar para cuajar la clara sin pasar la yema.",
+   "Fuego suave.",
+   "Servir en la sartén.",
+   "Cada casa, su picante."
+  ],
+  "errors": [
+   {
+    "p": "Clara cruda y yema dura",
+    "fix": "Sin tapar. Tapa para que el vapor cuaje la clara."
+   },
+   {
+    "p": "Salsa aguada",
+    "fix": "Poco reducida. Cuécela más antes de los huevos."
+   },
+   {
+    "p": "Fondo quemado",
+    "fix": "Fuego alto. Baja el fuego."
+   }
+  ],
+  "history": "La shakshuka es un plato tradicional del Magreb, sobre todo de Túnez, que se extendió por Oriente Medio y hoy es habitual en desayunos y brunch.",
+  "uses": [
+   "Brunch",
+   "Platos de mediodía",
+   "Cocina para compartir"
+  ],
+  "keep": "La salsa, 4 días en frío; los huevos, al momento.",
+  "pro": "Salsa hecha en tanda; huevos al pedido en sartenes individuales.",
+  "related": [
+   "puntos-del-huevo",
+   "salsa-de-tomate",
+   "pimientos",
+   "tortilla-y-huevos-de-brunch",
+   "especias",
+   "huevos"
+  ]
+ },
+ {
+  "id": "musaka",
+  "name": "Musaka",
+  "name_en": "Moussaka",
+  "cat": "tecnicas",
+  "group": "Mediterráneo oriental y Magreb",
+  "technique": "gratinado",
+  "aka": [
+   "musaka",
+   "moussaka",
+   "musaca",
+   "berenjena con carne y bechamel",
+   "pastel de berenjena"
+  ],
+  "summary": "Capas de berenjena, carne picada guisada con tomate y canela y una bechamel espesa con huevo, gratinadas al horno.",
+  "what": "La musaka griega, la versión más extendida, se monta en capas: rodajas de [[berenjena]] fritas o asadas (a veces también patata), una carne picada de cordero o vacuno guisada con cebolla, tomate, vino y canela, y una [[bechamel]] espesa enriquecida con huevo y queso que se gratina en la superficie. Se hornea y se deja reposar para cortarla en porciones.\n\nEn Turquía y en los Balcanes hay musakas distintas, a menudo sin bechamel. Cada casa tiene su versión de especias y proporciones.",
+  "base": {
+   "for": "1 fuente de 25 × 30 cm (8 raciones)",
+   "items": [
+    [
+     "Berenjenas en rodajas de 1 cm",
+     "1,5 kg"
+    ],
+    [
+     "Patatas en rodajas (opcional)",
+     "500 g"
+    ],
+    [
+     "Carne picada de cordero o vacuno",
+     "800 g"
+    ],
+    [
+     "Cebolla, ajo y tomate triturado",
+     "2, 2 dientes y 400 g"
+    ],
+    [
+     "Vino tinto",
+     "150 ml"
+    ],
+    [
+     "Canela, pimienta de Jamaica u orégano",
+     "1 rama o 2 g"
+    ],
+    [
+     "Bechamel espesa (80 g de roux por litro)",
+     "1 l"
+    ],
+    [
+     "Huevos y queso curado rallado para la bechamel",
+     "2 y 80 g"
+    ],
+    [
+     "Aceite de oliva",
+     "cantidad necesaria"
+    ]
+   ],
+   "steps": [
+    "Sala, seca y fríe o asa las berenjenas (y las patatas) hasta tiernas; escurre.",
+    "Dora la carne con la cebolla y el ajo, moja con el vino, añade el tomate y la canela y cuece 30–40 minutos hasta que esté espesa.",
+    "Haz la bechamel, retírala del fuego y añade los huevos batidos y el queso.",
+    "Monta en la fuente: patata, berenjena, carne, berenjena y la bechamel por encima.",
+    "Hornea a 180 °C 45–50 minutos, hasta que la superficie esté dorada; reposa al menos 30 minutos antes de cortar."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Horneado",
+    "ratio": "180 °C, 45–50 minutos",
+    "note": "Superficie dorada."
+   },
+   {
+    "use": "Bechamel",
+    "ratio": "80 g de roux por litro, más 2 huevos",
+    "note": "Firme al cortar."
+   },
+   {
+    "use": "Reposo",
+    "ratio": "30 minutos mínimo",
+    "note": "Para porciones limpias."
+   },
+   {
+    "use": "Ración",
+    "ratio": "300 g",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "bechamel",
+    "name": "Bechamel",
+    "note": "Espesa y con huevo."
+   },
+   {
+    "id": "berenjena",
+    "name": "Berenjena",
+    "note": "Salar y freír."
+   },
+   {
+    "id": "parmigiana",
+    "name": "Parmigiana",
+    "note": "La prima italiana."
+   },
+   {
+    "id": "cordero",
+    "name": "Cordero",
+    "note": "La carne más habitual."
+   }
+  ],
+  "keys": [
+   "Berenjena bien escurrida.",
+   "Carne espesa, sin caldo suelto.",
+   "Bechamel con huevo para que cuaje.",
+   "Reposo antes de cortar.",
+   "Canela con medida."
+  ],
+  "errors": [
+   {
+    "p": "Musaka aguada",
+    "fix": "Carne con caldo o berenjena húmeda. Reduce y escurre."
+   },
+   {
+    "p": "Bechamel que se hunde",
+    "fix": "Muy fluida. Más roux y huevo."
+   },
+   {
+    "p": "Se desmorona",
+    "fix": "Sin reposo. Espera al menos 30 minutos."
+   }
+  ],
+  "history": "La musaka con bechamel se popularizó en la cocina griega del siglo XX; en Turquía y los Balcanes existen otras musakas más antiguas sin bechamel.",
+  "uses": [
+   "Principales al horno",
+   "Platos para compartir",
+   "Menús de cocina mediterránea"
+  ],
+  "keep": "3–4 días en frío; se congela en porciones; regenera en horno a 160 °C.",
+  "pro": "Hornea la víspera, corta en frío y regenera por ración.",
+  "related": [
+   "bechamel",
+   "berenjena",
+   "parmigiana",
+   "cordero",
+   "gratinado",
+   "especias"
+  ]
+ },
+ {
+  "id": "ramen",
+  "name": "Caldo de ramen y montaje del bol",
+  "name_en": "Ramen broth and bowl assembly",
+  "cat": "tecnicas",
+  "group": "Cocina de Asia",
+  "technique": "hervido",
+  "aka": [
+   "ramen",
+   "caldo de ramen",
+   "tonkotsu",
+   "shoyu ramen",
+   "tare",
+   "chashu",
+   "huevo marinado"
+  ],
+  "summary": "Un caldo largo, una tare salada que da el carácter, un aceite aromático, fideos alcalinos y toppings: el ramen se construye por piezas.",
+  "what": "Un bol de ramen tiene cinco partes que se preparan por separado. El caldo: claro, de pollo o cerdo a fuego suave, o blanco y denso (tonkotsu), de huesos de cerdo hervidos con fuerza durante muchas horas para emulsionar grasa y gelatina. La tare: un concentrado salado (de soja, de sal o de miso) que se pone en el fondo del bol y define el estilo. Un aceite o grasa aromática. Los fideos, de trigo con agua alcalina, firmes y elásticos. Y los toppings: panceta braseada (chashu), huevo marinado, cebolleta, alga nori, brotes.\n\nCada tienda de ramen tiene sus recetas y sus proporciones; aquí va una base de caldo claro y de montaje.",
+  "base": {
+   "for": "6 boles",
+   "items": [
+    [
+     "Huesos y carcasas de pollo (y manitas de cerdo para gelatina)",
+     "2 kg y 2"
+    ],
+    [
+     "Cebolleta, jengibre y ajo",
+     "2, 30 g y 1 cabeza"
+    ],
+    [
+     "Agua fría",
+     "5 l"
+    ],
+    [
+     "Tare de soja: salsa de soja, mirin y sake",
+     "200 ml, 50 ml y 50 ml"
+    ],
+    [
+     "Aceite aromático (cebolleta o ajo frito en grasa)",
+     "60 ml"
+    ],
+    [
+     "Fideos de ramen",
+     "6 raciones de 120–150 g"
+    ],
+    [
+     "Chashu, huevos marinados, cebolleta y nori",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Blanquea huesos y carcasas, aclara y cúbrelos de agua fría; lleva a hervor suave, espuma y cuece 4–6 horas con los aromáticos para un caldo claro.",
+    "Cuela, desgrasa en parte y guarda caliente; sazona solo con la tare en el bol.",
+    "Prepara la tare reduciendo soja, mirin y sake unos minutos; el huevo, cocido 6,5 minutos, enfriado y marinado en soja y mirin 12 horas.",
+    "Calienta los boles; pon en cada uno 30 ml de tare y 10 ml de aceite aromático.",
+    "Cuece los fideos según su grosor, añade 350 ml de caldo hirviendo al bol, los fideos escurridos y los toppings; sirve enseguida."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Bol",
+    "ratio": "30 ml de tare, 350 ml de caldo, 120–150 g de fideos",
+    "note": "Ajustar la tare al gusto."
+   },
+   {
+    "use": "Caldo claro",
+    "ratio": "4–6 horas a fuego suave",
+    "note": "Sin hervor fuerte."
+   },
+   {
+    "use": "Caldo blanco (tonkotsu)",
+    "ratio": "10–12 horas a hervor fuerte",
+    "note": "Reponer agua."
+   },
+   {
+    "use": "Huevo marinado",
+    "ratio": "6,5 minutos y 12 horas en marinada",
+    "note": "Yema melosa."
+   }
+  ],
+  "variants": [
+   {
+    "id": "dashi",
+    "name": "Dashi",
+    "note": "Base o refuerzo del caldo."
+   },
+   {
+    "id": "colageno-y-gelatina",
+    "name": "Gelatina",
+    "note": "Cuerpo del caldo."
+   },
+   {
+    "id": "lacado-de-carnes",
+    "name": "Chashu",
+    "note": "Panceta braseada y glaseada."
+   },
+   {
+    "id": "puntos-del-huevo",
+    "name": "Huevo marinado",
+    "note": "Punto de la yema."
+   }
+  ],
+  "keys": [
+   "Cada pieza por separado.",
+   "La tare da la sal y el carácter.",
+   "Bol y caldo muy calientes.",
+   "Fideos al punto y servir enseguida.",
+   "Cada tienda tiene su receta."
+  ],
+  "errors": [
+   {
+    "p": "Caldo plano",
+    "fix": "Tare escasa. Ajusta la tare, no el caldo."
+   },
+   {
+    "p": "Fideos blandos",
+    "fix": "Cocción larga o espera. Cuece al momento y sirve."
+   },
+   {
+    "p": "Caldo turbio sin querer",
+    "fix": "Hervor fuerte en un caldo claro. Fuego suave."
+   }
+  ],
+  "history": "El ramen tiene su origen en fideos llegados de China y se convirtió en Japón, durante el siglo XX, en un plato popular con muchos estilos regionales.",
+  "uses": [
+   "Platos únicos",
+   "Menús de cocina asiática",
+   "Caldos para otros platos"
+  ],
+  "keep": "Caldo, 3–4 días en frío o congelado. Tare, semanas en frío. Huevos marinados, 3 días.",
+  "pro": "Todo preparado por piezas; el montaje por bol tarda un minuto.",
+  "related": [
+   "dashi",
+   "colageno-y-gelatina",
+   "lacado-de-carnes",
+   "puntos-del-huevo",
+   "soja-y-derivados",
+   "fondo-blanco"
+  ]
+ },
+ {
+  "id": "pho",
+  "name": "Pho",
+  "name_en": "Pho",
+  "cat": "tecnicas",
+  "group": "Cocina de Asia",
+  "technique": "hervido",
+  "aka": [
+   "pho",
+   "phở",
+   "pho bo",
+   "pho ga",
+   "sopa vietnamita",
+   "caldo de vacuno especiado"
+  ],
+  "summary": "Caldo claro de vacuno con cebolla y jengibre tostados y especias, fideos de arroz, carne cruda en láminas y hierbas frescas.",
+  "what": "El pho es la sopa de fideos más conocida de Vietnam. Su caldo se hace con huesos de vacuno blanqueados, cebolla y jengibre tostados a la llama hasta ennegrecer la piel, y especias tostadas (anís estrellado, canela, clavo, semillas de cilantro), sazonado con salsa de pescado y un poco de azúcar, y cocido muchas horas a fuego suave para que quede limpio.\n\nSe monta en el bol con fideos planos de arroz, láminas finas de carne cruda que se cocinan con el caldo hirviendo, carne cocida, cebolla y hierbas, y se acompaña de brotes de soja, albahaca, lima y chile. El pho de pollo sigue la misma idea. Cada familia ajusta las especias.",
+  "base": {
+   "for": "6 boles",
+   "items": [
+    [
+     "Huesos de vacuno con tuétano y morcillo o pecho",
+     "3 kg y 800 g"
+    ],
+    [
+     "Cebollas y jengibre",
+     "2 y 100 g"
+    ],
+    [
+     "Anís estrellado, canela, clavo y semillas de cilantro",
+     "4, 1 rama, 4 y 1 cucharada"
+    ],
+    [
+     "Salsa de pescado",
+     "60–80 ml"
+    ],
+    [
+     "Azúcar",
+     "20 g"
+    ],
+    [
+     "Agua",
+     "6 l"
+    ],
+    [
+     "Fideos planos de arroz",
+     "600 g"
+    ],
+    [
+     "Solomillo o tapa en láminas muy finas",
+     "300 g"
+    ],
+    [
+     "Brotes de soja, albahaca, cilantro, lima y chile",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Blanquea los huesos y la carne 10 minutos, escurre y lava.",
+    "Tuesta la cebolla y el jengibre a la llama o en plancha hasta ennegrecer la piel; tuesta las especias en seco.",
+    "Pon todo en agua fría, lleva a hervor suave, espuma y cuece 6–8 horas; saca la carne cuando esté tierna.",
+    "Cuela, desgrasa y sazona con salsa de pescado y azúcar.",
+    "Remoja y escalda los fideos; en cada bol pon fideos, carne cocida en láminas y carne cruda, y cubre con el caldo hirviendo; sirve con las hierbas y la lima aparte."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Cocción del caldo",
+    "ratio": "6–8 horas a fuego suave",
+    "note": "Claro."
+   },
+   {
+    "use": "Bol",
+    "ratio": "100 g de fideos, 50 g de carne cruda, 400 ml de caldo",
+    "note": "Caldo hirviendo."
+   },
+   {
+    "use": "Carne cruda",
+    "ratio": "Láminas de 1–2 mm",
+    "note": "Semicongelada para cortar."
+   },
+   {
+    "use": "Salsa de pescado",
+    "ratio": "10–15 ml por litro",
+    "note": "Ajustar."
+   }
+  ],
+  "variants": [
+   {
+    "id": "fondo-blanco",
+    "name": "Fondo de vacuno",
+    "note": "Principios del caldo claro."
+   },
+   {
+    "id": "garum-y-salsas-de-pescado",
+    "name": "Salsa de pescado",
+    "note": "Sal y umami."
+   },
+   {
+    "id": "especias",
+    "name": "Especias tostadas",
+    "note": "Aroma del caldo."
+   },
+   {
+    "id": "aromaticos-de-asia",
+    "name": "Hierbas y aromáticos",
+    "note": "Para servir."
+   }
+  ],
+  "keys": [
+   "Blanquear los huesos para un caldo limpio.",
+   "Cebolla y jengibre tostados.",
+   "Especias tostadas, en bolsita.",
+   "Caldo hirviendo para cocinar la carne cruda.",
+   "Hierbas y lima en la mesa."
+  ],
+  "errors": [
+   {
+    "p": "Caldo turbio",
+    "fix": "Sin blanquear o hervor fuerte. Blanquea y cuece suave."
+   },
+   {
+    "p": "Especias que dominan",
+    "fix": "Demasiado tiempo. Retíralas a las 2 horas."
+   },
+   {
+    "p": "Carne cruda que no se hace",
+    "fix": "Láminas gruesas o caldo templado. Más finas y caldo hirviendo."
+   }
+  ],
+  "history": "El pho es una sopa del norte de Vietnam que se popularizó en el siglo XX y se extendió por todo el país y por el mundo.",
+  "uses": [
+   "Platos únicos",
+   "Menús de cocina asiática",
+   "Caldos especiados"
+  ],
+  "keep": "Caldo, 3–4 días en frío o congelado.",
+  "pro": "Caldo caliente en marmita; fideos escaldados y carne laminada por raciones.",
+  "related": [
+   "fondo-blanco",
+   "garum-y-salsas-de-pescado",
+   "especias",
+   "aromaticos-de-asia",
+   "ramen",
+   "vaca-vieja-y-buey"
+  ]
+ },
+ {
+  "id": "pad-thai",
+  "name": "Pad thai y salteados de fideo",
+  "name_en": "Pad thai and stir-fried noodles",
+  "cat": "tecnicas",
+  "group": "Cocina de Asia",
+  "technique": "salteado",
+  "aka": [
+   "pad thai",
+   "fideos salteados",
+   "fideos de arroz salteados",
+   "char kway teow",
+   "chow mein",
+   "salteado de fideos"
+  ],
+  "summary": "Fideos de arroz remojados y salteados en el wok con una salsa de tamarindo, salsa de pescado y azúcar, huevo, brotes y cacahuete.",
+  "what": "El pad thai es un salteado de fideos planos de arroz al estilo tailandés. Los fideos no se cuecen: se remojan en agua tibia hasta que están flexibles y terminan de hacerse en el wok con la salsa. La salsa equilibra ácido (tamarindo), salado (salsa de pescado) y dulce (azúcar de palma). Se saltea con ajo, chalota, gambas o tofu, huevo, brotes de soja y cebollino, y se termina con cacahuete tostado, lima y chile.\n\nOtros salteados de fideo, como los de fideos de arroz anchos o los de trigo, siguen la misma técnica de [[salteado-y-wok|wok]]: todo preparado antes, fuego máximo y raciones pequeñas. Cada puesto y cada cocinero ajustan la salsa.",
+  "base": {
+   "for": "2 raciones",
+   "items": [
+    [
+     "Fideos planos de arroz secos",
+     "160 g"
+    ],
+    [
+     "Salsa: pulpa de tamarindo, salsa de pescado y azúcar de palma",
+     "45 ml, 30 ml y 30 g"
+    ],
+    [
+     "Gambas peladas o tofu firme",
+     "150 g"
+    ],
+    [
+     "Huevos",
+     "2"
+    ],
+    [
+     "Ajo y chalota picados",
+     "2 dientes y 1"
+    ],
+    [
+     "Brotes de soja y cebollino o cebolleta",
+     "100 g y 1 puñado"
+    ],
+    [
+     "Cacahuete tostado picado",
+     "30 g"
+    ],
+    [
+     "Lima, chile en copos y aceite",
+     "1, al gusto y 30 ml"
+    ]
+   ],
+   "steps": [
+    "Remoja los fideos en agua tibia 30–45 minutos, hasta que estén flexibles pero firmes; escurre.",
+    "Calienta la salsa hasta disolver el azúcar.",
+    "Wok muy caliente con aceite: saltea ajo y chalota unos segundos, luego las gambas o el tofu.",
+    "Aparta a un lado, cuaja el huevo revolviéndolo, añade los fideos y la salsa y saltea hasta que la absorban.",
+    "Añade brotes y cebollino, saltea 30 segundos y sirve con cacahuete, lima y chile."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Remojo de fideos",
+    "ratio": "Agua tibia, 30–45 minutos",
+    "note": "Flexibles, no blandos."
+   },
+   {
+    "use": "Salsa",
+    "ratio": "Tamarindo, salsa de pescado y azúcar 3:2:2",
+    "note": "Ajustar a gusto."
+   },
+   {
+    "use": "Carga del wok",
+    "ratio": "1–2 raciones por tanda",
+    "note": "Para que no se cueza."
+   },
+   {
+    "use": "Fideos por ración",
+    "ratio": "80 g en seco",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "salteado-y-wok",
+    "name": "Salteado y wok",
+    "note": "Técnica de base."
+   },
+   {
+    "id": "garum-y-salsas-de-pescado",
+    "name": "Salsa de pescado",
+    "note": "Sal y umami."
+   },
+   {
+    "id": "salsas-agridulces-y-gastriques",
+    "name": "Agridulces",
+    "note": "Equilibrio dulce y ácido."
+   },
+   {
+    "id": "frutos-secos",
+    "name": "Cacahuete",
+    "note": "Alérgeno a señalar."
+   }
+  ],
+  "keys": [
+   "Fideos remojados, no hervidos.",
+   "Salsa equilibrada de ácido, salado y dulce.",
+   "Wok muy caliente y raciones pequeñas.",
+   "Todo preparado antes de encender.",
+   "Cacahuete: alérgeno, señálalo."
+  ],
+  "errors": [
+   {
+    "p": "Fideos pastosos y pegados",
+    "fix": "Hervidos o demasiado remojo. Solo agua tibia y al punto."
+   },
+   {
+    "p": "Fideos duros",
+    "fix": "Poco remojo o poca salsa. Añade un poco de agua al wok."
+   },
+   {
+    "p": "Sabor dulzón",
+    "fix": "Mucho azúcar. Más tamarindo y salsa de pescado."
+   }
+  ],
+  "history": "El pad thai se popularizó en Tailandia a mediados del siglo XX y se ha convertido en uno de los platos tailandeses más conocidos fuera del país.",
+  "uses": [
+   "Platos únicos",
+   "Menús de cocina asiática",
+   "Comida para compartir"
+  ],
+  "keep": "Al momento. Salsa, 2 semanas en frío; fideos remojados, unas horas.",
+  "pro": "Salsa en biberón y ingredientes por ración; wok exclusivo y salteado al pedido.",
+  "related": [
+   "salteado-y-wok",
+   "garum-y-salsas-de-pescado",
+   "salsas-agridulces-y-gastriques",
+   "frutos-secos",
+   "aromaticos-de-asia",
+   "huevos"
+  ]
+ },
+ {
+  "id": "bibimbap",
+  "name": "Bibimbap y arroces compuestos",
+  "name_en": "Bibimbap and rice bowls",
+  "cat": "tecnicas",
+  "group": "Cocina de Asia",
+  "aka": [
+   "bibimbap",
+   "dolsot bibimbap",
+   "namul",
+   "bol de arroz",
+   "donburi",
+   "arroz con toppings"
+  ],
+  "summary": "Arroz con verduras aliñadas por separado, carne marinada, huevo y una salsa de pasta de chile, todo mezclado en la mesa.",
+  "what": "El bibimbap coreano es un bol de arroz cubierto con varias verduras preparadas cada una por separado (namul: escaldadas o salteadas y aliñadas con sésamo, ajo y sal), carne de vacuno marinada y salteada, un huevo frito o una yema y una salsa a base de pasta fermentada de chile. Se mezcla todo al comer. En su versión en olla de piedra muy caliente, el arroz forma una costra crujiente en el fondo.\n\nOtros arroces compuestos, como los donburi japoneses, siguen la idea: buen [[arroz-japones-y-al-vapor|arroz]] y encima elementos con sabor y textura propios. Cada casa elige sus verduras según la temporada.",
+  "base": {
+   "for": "4 boles",
+   "items": [
+    [
+     "Arroz de grano corto cocido",
+     "800 g"
+    ],
+    [
+     "Espinacas, brotes de soja, zanahoria, setas y calabacín",
+     "150 g de cada"
+    ],
+    [
+     "Aliño de namul: aceite de sésamo, ajo, sal y sésamo tostado",
+     "al gusto"
+    ],
+    [
+     "Vacuno en tiras finas",
+     "300 g"
+    ],
+    [
+     "Marinada: soja, azúcar, ajo y aceite de sésamo",
+     "30 ml, 15 g, 2 dientes y 10 ml"
+    ],
+    [
+     "Huevos",
+     "4"
+    ],
+    [
+     "Salsa: pasta de chile fermentada, aceite de sésamo, azúcar y vinagre",
+     "60 g, 15 ml, 10 g y 10 ml"
+    ]
+   ],
+   "steps": [
+    "Marina la carne 30 minutos y saltéala a fuego fuerte.",
+    "Prepara cada verdura por separado: escalda espinacas y brotes, saltea zanahoria, setas y calabacín; aliña cada una.",
+    "Mezcla los ingredientes de la salsa.",
+    "Pon el arroz caliente en el bol (o en olla de piedra untada de aceite, al fuego hasta que cruja el fondo) y coloca encima las verduras y la carne en secciones.",
+    "Corona con el huevo frito y sirve con la salsa aparte para mezclar en la mesa."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Arroz por bol",
+    "ratio": "200 g cocido",
+    "note": ""
+   },
+   {
+    "use": "Verduras por bol",
+    "ratio": "150–200 g en total",
+    "note": "4–5 tipos."
+   },
+   {
+    "use": "Salsa",
+    "ratio": "20–30 g por bol",
+    "note": "Al gusto en la mesa."
+   },
+   {
+    "use": "Costra en olla de piedra",
+    "ratio": "5–8 minutos a fuego medio",
+    "note": "Con aceite de sésamo."
+   }
+  ],
+  "variants": [
+   {
+    "id": "arroz-japones-y-al-vapor",
+    "name": "Arroz",
+    "note": "Grano corto bien cocido."
+   },
+   {
+    "id": "escaldado-de-verduras",
+    "name": "Namul",
+    "note": "Escaldar y aliñar."
+   },
+   {
+    "id": "sesamo",
+    "name": "Sésamo",
+    "note": "Aceite tostado y semillas."
+   },
+   {
+    "id": "fermentacion-lactica",
+    "name": "Fermentados",
+    "note": "Para acompañar."
+   }
+  ],
+  "keys": [
+   "Cada verdura, su cocción y su aliño.",
+   "Arroz caliente; costra en olla de piedra.",
+   "Contraste de colores y texturas.",
+   "La salsa en la mesa.",
+   "Cada casa elige sus verduras."
+  ],
+  "errors": [
+   {
+    "p": "Bol aguado",
+    "fix": "Verduras mal escurridas. Escúrrelas y sécalas."
+   },
+   {
+    "p": "Todo sabe igual",
+    "fix": "Verduras aliñadas juntas. Aliña cada una aparte."
+   },
+   {
+    "p": "Sin costra",
+    "fix": "Olla poco caliente o sin aceite. Calienta más."
+   }
+  ],
+  "history": "El bibimbap es un plato tradicional de Corea, con versiones regionales; la de olla de piedra es muy popular.",
+  "uses": [
+   "Platos únicos",
+   "Menús de mediodía",
+   "Cocina de aprovechamiento de verduras"
+  ],
+  "keep": "Verduras aliñadas, 2–3 días en frío. Carne marinada, 1 día. Montaje al momento.",
+  "pro": "Verduras preparadas por la mañana; arroz caliente y montaje por bol.",
+  "related": [
+   "arroz-japones-y-al-vapor",
+   "escaldado-de-verduras",
+   "sesamo",
+   "fermentacion-lactica",
+   "soja-y-derivados",
+   "puntos-del-huevo"
+  ]
+ },
+ {
+  "id": "aguachile",
+  "name": "Aguachile",
+  "name_en": "Aguachile",
+  "cat": "tecnicas",
+  "group": "Cocina de América",
+  "technique": "crudo",
+  "aka": [
+   "aguachile",
+   "aguachile verde",
+   "aguachile rojo",
+   "gambas en lima y chile",
+   "camarón en aguachile"
+  ],
+  "summary": "Gambas crudas abiertas, bañadas en una mezcla triturada de lima, chile y cilantro, con pepino y cebolla morada: picante, ácido y fresco.",
+  "what": "El aguachile es un crudo mexicano, tradicional de la costa del Pacífico: gambas crudas abiertas en mariposa, cubiertas con un líquido muy ácido y picante hecho triturando zumo de lima, chiles frescos, cilantro, sal y a veces pepino. Se sirve enseguida, con el marisco apenas cuajado por el ácido, acompañado de pepino, cebolla morada y aguacate.\n\nSe diferencia del [[ceviche-y-crudos|ceviche]] en que el marisco pasa muy poco tiempo en el ácido y en que el líquido es la protagonista. Hay versiones verdes, rojas (con chiles secos) y negras. Cada cocinero tiene su mezcla de chiles.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Gambas o langostinos muy frescos, pelados y abiertos",
+     "400 g"
+    ],
+    [
+     "Zumo de lima",
+     "150 ml"
+    ],
+    [
+     "Chiles verdes frescos",
+     "2–4 (al gusto)"
+    ],
+    [
+     "Cilantro",
+     "1 manojo"
+    ],
+    [
+     "Pepino",
+     "1"
+    ],
+    [
+     "Cebolla morada en juliana fina",
+     "½"
+    ],
+    [
+     "Sal",
+     "al gusto"
+    ],
+    [
+     "Aguacate (opcional)",
+     "1"
+    ]
+   ],
+   "steps": [
+    "Limpia las gambas, retira el intestino y ábrelas en mariposa; sálalas y guárdalas muy frías.",
+    "Tritura el zumo de lima con los chiles, el cilantro, la sal y un trozo de pepino; cuela si lo quieres fino.",
+    "Coloca las gambas en un plato frío con el pepino en láminas y la cebolla.",
+    "Cubre con el aguachile justo antes de servir.",
+    "Sirve en 5–10 minutos, con aguacate y totopos si quieres."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Tiempo en el ácido",
+    "ratio": "5–10 minutos",
+    "note": "Apenas cuajado."
+   },
+   {
+    "use": "Líquido por ración",
+    "ratio": "40–50 ml",
+    "note": "Que cubra."
+   },
+   {
+    "use": "Gambas por ración",
+    "ratio": "100 g",
+    "note": "Entrante."
+   },
+   {
+    "use": "Temperatura de servicio",
+    "ratio": "4–6 °C",
+    "note": "Plato frío."
+   }
+  ],
+  "variants": [
+   {
+    "id": "ceviche-y-crudos",
+    "name": "Ceviche",
+    "note": "Más tiempo en el ácido."
+   },
+   {
+    "id": "chiles-y-salsas-mexicanas",
+    "name": "Chiles",
+    "note": "Frescos y secos."
+   },
+   {
+    "id": "gamba-roja",
+    "name": "Gamba roja",
+    "note": "Versión de la isla."
+   },
+   {
+    "id": "citricos",
+    "name": "Lima",
+    "note": "El ácido."
+   }
+  ],
+  "keys": [
+   "Marisco muy fresco y muy frío.",
+   "Líquido al momento de servir.",
+   "Picante y ácido equilibrados con sal.",
+   "Servir enseguida.",
+   "Cada cocinero, sus chiles."
+  ],
+  "errors": [
+   {
+    "p": "Gamba blanca y gomosa",
+    "fix": "Demasiado tiempo en el ácido. Sirve enseguida."
+   },
+   {
+    "p": "Pica demasiado",
+    "fix": "Muchos chiles. Ajusta y quita semillas."
+   },
+   {
+    "p": "Líquido amargo",
+    "fix": "Lima exprimida de más o triturada con piel. Exprime suave."
+   }
+  ],
+  "history": "El aguachile es un plato tradicional de la costa del Pacífico mexicano, sobre todo de Sinaloa.",
+  "uses": [
+   "Entrantes fríos",
+   "Barra de crudos",
+   "Menús de verano"
+  ],
+  "keep": "Al momento. El líquido, unas horas en frío; el marisco limpio, el mismo día.",
+  "pro": "Gambas limpias y frías por ración; líquido en biberón y montaje al pedido.",
+  "related": [
+   "ceviche-y-crudos",
+   "chiles-y-salsas-mexicanas",
+   "gamba-roja",
+   "citricos",
+   "coccion-de-marisco",
+   "aguacate-y-frutas-tropicales"
+  ]
+ },
+ {
+  "id": "barbacoa-lenta",
+  "name": "Barbacoa lenta y ahumados americanos",
+  "name_en": "Low and slow barbecue",
+  "cat": "tecnicas",
+  "group": "Cocina de América",
+  "technique": "ahumado",
+  "aka": [
+   "barbacoa lenta",
+   "low and slow",
+   "brisket",
+   "pulled pork",
+   "costillas ahumadas",
+   "ahumador",
+   "pecho de vacuno ahumado"
+  ],
+  "summary": "Piezas grandes con colágeno cocinadas durante horas a baja temperatura con humo de madera, hasta que se deshacen.",
+  "what": "La barbacoa lenta de tradición estadounidense cocina piezas grandes y duras (pecho de vacuno, paletilla de cerdo, costillas) en un ahumador, a temperaturas bajas y con humo de madera durante muchas horas. El [[colageno-y-gelatina|colágeno]] se convierte en gelatina, la grasa se funde y el humo y una mezcla de especias forman una costra oscura.\n\nA mitad de cocción la temperatura interna suele estancarse durante horas, porque la superficie se enfría al evaporar agua; muchos cocineros envuelven la pieza en papel o aluminio para superarlo. Se termina por temperatura y por textura (la sonda entra como en mantequilla) y se deja reposar mucho tiempo. Cada región y cada ahumador tienen su estilo.",
+  "base": {
+   "for": "1 paletilla de cerdo de 4–5 kg (12–14 raciones)",
+   "items": [
+    [
+     "Paletilla de cerdo con hueso (o pecho de vacuno)",
+     "4–5 kg"
+    ],
+    [
+     "Mezcla seca: sal, azúcar moreno, pimentón, pimienta, ajo y cebolla en polvo",
+     "2:1:1:1 y al gusto"
+    ],
+    [
+     "Mostaza o aceite para que se pegue",
+     "2 cucharadas"
+    ],
+    [
+     "Madera para ahumar (roble, frutales)",
+     "cantidad necesaria"
+    ],
+    [
+     "Vinagre de sidra para pulverizar (opcional)",
+     "200 ml"
+    ]
+   ],
+   "steps": [
+    "Unta la pieza con mostaza o aceite y cúbrela con la mezcla seca; mejor la víspera.",
+    "Estabiliza el ahumador a la temperatura de trabajo con humo limpio.",
+    "Ahuma con la grasa arriba, pulverizando de vez en cuando, hasta que la costra esté oscura y firme.",
+    "Si la temperatura interna se estanca, envuelve la pieza en papel o aluminio y sigue hasta el punto final.",
+    "Reposa envuelta 1–2 horas; deshilacha la paletilla o corta el pecho contra la fibra."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Temperatura del ahumador",
+    "ratio": "110–135 °C",
+    "note": "Estable y con humo limpio."
+   },
+   {
+    "use": "Punto final de la paletilla",
+    "ratio": "90–95 °C en el centro",
+    "note": "Se deshilacha."
+   },
+   {
+    "use": "Punto final del pecho",
+    "ratio": "92–96 °C en el centro",
+    "note": "La sonda entra sin resistencia."
+   },
+   {
+    "use": "Tiempo orientativo",
+    "ratio": "1–1,5 horas por kg",
+    "note": "Manda la temperatura, no el reloj."
+   }
+  ],
+  "variants": [
+   {
+    "id": "ahumado",
+    "name": "Ahumado",
+    "note": "Maderas y humo limpio."
+   },
+   {
+    "id": "rubs-y-mezclas-secas",
+    "name": "Mezclas secas",
+    "note": "La costra."
+   },
+   {
+    "id": "fuego-y-brasa",
+    "name": "Fuego y brasa",
+    "note": "Control del fuego."
+   },
+   {
+    "id": "baja-temperatura",
+    "name": "Baja temperatura",
+    "note": "Colágeno con tiempo."
+   }
+  ],
+  "keys": [
+   "Temperatura baja y estable.",
+   "Humo limpio, azulado, no blanco y espeso.",
+   "El estancamiento es normal: paciencia o envolver.",
+   "Punto por temperatura y textura.",
+   "Reposo largo antes de cortar."
+  ],
+  "errors": [
+   {
+    "p": "Carne amarga",
+    "fix": "Humo sucio o madera húmeda. Fuego limpio y madera seca."
+   },
+   {
+    "p": "Pecho seco",
+    "fix": "Sacado antes de tiempo o sin reposo. Espera a que esté tierno y reposa."
+   },
+   {
+    "p": "Costra blanda",
+    "fix": "Envuelta demasiado pronto. Espera a que la costra se fije."
+   }
+  ],
+  "history": "La barbacoa lenta es una tradición del sur de Estados Unidos, con estilos regionales muy marcados según la carne, la madera y la salsa.",
+  "uses": [
+   "Carnes para compartir",
+   "Bocadillos de carne deshilachada",
+   "Menús de brasa"
+  ],
+  "keep": "Carne cocinada, 3–4 días en frío; se congela bien en su jugo y se regenera tapada.",
+  "pro": "Cocina la víspera o de noche; regenera tapado con un poco de jugo y termina en brasa si quieres costra.",
+  "related": [
+   "ahumado",
+   "rubs-y-mezclas-secas",
+   "fuego-y-brasa",
+   "baja-temperatura",
+   "colageno-y-gelatina",
+   "cerdo-iberico"
+  ]
  }
 ]
