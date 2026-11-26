@@ -6,7 +6,7 @@ const require = createRequire(import.meta.url);
 const {chromium} = require('playwright');
 const AXE = readFileSync(require.resolve('axe-core/axe.min.js'), 'utf8');
 const url = new URL('./salida/ID Cocina/ID Cocina.html', import.meta.url).href;
-const SCREENS = ['#/hoy', '#/radar', '#/crear', '#/libreta', '#/biblioteca', '#/biblioteca/bechamel', '#/laboratorio', '#/diario', '#/diario/nuevo', '#/trayectoria', '#/entrenar', '#/herramientas', '#/herramientas/escalar', '#/herramientas/temporizadores', '#/sabores', '#/temporada', '#/preguntar', '#/cocina', '#/plato/d1', '#/cocinar/plato/d1', '#/menus', '#/catalogo'];
+const SCREENS = ['#/hoy', '#/radar', '#/crear', '#/libreta', '#/biblioteca', '#/biblioteca/bechamel', '#/laboratorio', '#/diario', '#/diario/nuevo', '#/trayectoria', '#/entrenar', '#/herramientas', '#/herramientas/escalar', '#/herramientas/temporizadores', '#/sabores', '#/temporada', '#/preguntar', '#/cocina', '#/plato/d1', '#/cocinar/plato/d1', '#/menus', '#/catalogo', '#/estilo'];
 const seed = {dishes: [{id: 'd1', name: 'Calamar a la brasa', concept: 'Mar y huerto', course: 'principal', status: 'carta', portions: '4', components: [{id: 'c1', role: 'principal', name: 'Calamar', techniques: ['brasa'], items: [{n: 'Calamar', q: '150 g', k: null, w: 3}], method: '1. Marcar 2 min.\n2. Reposar.'}], tests: [{id: 't1', at: '2026-11-01', rating: 3, text: 'Bien', next: 'Más ácido'}, {id: 't2', at: '2026-11-10', rating: 4, text: 'Mejor', next: ''}], images: [], version: 1, updated_at: '2026-11-20T10:00:00Z'}]};
 const browser = await chromium.launch(), serious = [], all = [];
 for (const [w, h, dark] of [[1280, 900, false], [390, 800, false], [1280, 900, true]]) {

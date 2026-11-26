@@ -58,6 +58,11 @@ await page.evaluate(() => { const v = JSON.parse(localStorage.getItem('id-cocina
 await page.reload(); await wait(600); await go('#/menus/m2'); await wait(400);
 ok(await page.locator('.mrhythm .mr-dot').count() === 4, 'no dibuja el ritmo del menú');
 ok((await page.textContent('.mrlist')).includes('Ostra y limón'), 'el ritmo no dice qué plato es cada pase');
+// Tu estilo: retrato del repertorio
+await go('#/estilo'); await wait(300);
+ok(await page.locator('.stbars li').count() >= 3 && (await page.textContent('#view')).includes('Lo que nunca has tocado'), 'Tu estilo no sale');
+ok((await page.textContent('.stbars')).includes('Ostra'), 'Tu estilo no cuenta los productos que usas');
+ok(!(await page.textContent('#view')).includes(' 0 platos con perfil'), 'Tu estilo no calcula la huella de los platos');
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();
 if (fails.length) { console.error('FALLOS en primeros pasos y fichas:\n - ' + fails.join('\n - ')); process.exit(1); }

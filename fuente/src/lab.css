@@ -987,3 +987,10 @@ html.cooking .tabs{display:none}html.cooking .view{padding-bottom:calc(32px + en
 .mr-grid{stroke:var(--line);stroke-width:1}.mr-ax,.mr-n{fill:var(--mut);font:600 17px var(--narrow)}
 .mr-line{fill:none;stroke:var(--ember);stroke-width:2.5;stroke-linejoin:round}.mr-dot{fill:var(--card);stroke:var(--ember);stroke-width:2.5}
 .mrlist{list-style:decimal;padding-left:24px;display:grid;gap:4px;font-size:15px}.mrlist span{color:var(--mut);margin-left:8px;font-size:14px}
+
+/* ---------- Tu estilo ---------- */
+.stgrid{display:grid;gap:24px;align-items:start}@media (min-width:960px){.stgrid{grid-template-columns:1fr 1fr}}
+.stbars{display:grid;gap:4px}.stbars li{display:grid;grid-template-columns:minmax(0,10em) minmax(0,1fr) 2.5em;gap:12px;align-items:center;min-height:32px}
+.stb-l{overflow-wrap:anywhere;font-size:15px}.stb-l a{color:var(--ink);text-decoration:none}.stb-l a:hover{text-decoration:underline}
+.stb-t{height:8px;background:var(--track)}.stb-t i{display:block;height:100%;background:var(--gold)}.stb-n{text-align:right;font-variant-numeric:tabular-nums;font-weight:700}
+.stnever{display:grid;gap:16px}.stnever h3{font-family:var(--narrow);font-weight:600;color:var(--mut);font-size:15px;margin-bottom:8px}

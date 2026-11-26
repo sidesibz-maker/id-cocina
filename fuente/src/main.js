@@ -24,6 +24,7 @@ import * as career from './views/career.js';
 import * as train from './views/train.js';
 import * as lab from './views/lab.js';
 import * as catalog from './views/catalog.js';
+import * as styleView from './views/style.js';
 import {startTimers} from './timers.js';
 import {startFinder} from './finder.js';
 import {markRead} from './views/paths.js';
@@ -35,7 +36,7 @@ import {iaOn, iaConfig, saveIa, askIa} from './ia.js';
 import {radarPrompt, trendsFromReply} from './ai.js';
 import {addTrends} from './store.js';
 
-const VIEWS = {hoy: home, radar, crear: create, plato: dish, libreta: notebook, sabores: flavors, cocina: kitchenView, preguntar: ask, menus, subreceta: sub, temporada: season, biblioteca: saber, saber, herramientas: tools, cocinar: cook, diario: journal, trayectoria: career, entrenar: train, laboratorio: lab, catalogo: catalog};
+const VIEWS = {hoy: home, radar, crear: create, plato: dish, libreta: notebook, sabores: flavors, cocina: kitchenView, preguntar: ask, menus, subreceta: sub, temporada: season, biblioteca: saber, saber, herramientas: tools, cocinar: cook, diario: journal, trayectoria: career, entrenar: train, laboratorio: lab, catalogo: catalog, estilo: styleView};
 const NAV = [['hoy', 'flame', () => t('Hoy', 'Today')], ['radar', 'radar', () => t('Radar', 'Radar')], ['crear', 'plus', () => t('Crear', 'Create')], ['libreta', 'book', () => t('Libreta', 'Notebook')], ['biblioteca', 'library', () => t('Biblioteca', 'Library')]];
 const app = () => $('#app');
 let current = {name: '', params: [], cleanup: null};
@@ -75,7 +76,7 @@ function badges() {
  $$('[data-badge=radar]').forEach(b => { b.hidden = !n; b.textContent = n > 9 ? '9+' : String(n); b.setAttribute('aria-label', n + ' ' + t('avisos nuevos', 'new alerts')); });
 }
 function markNav() {
- const active = ['plato', 'menus', 'cocinar', 'catalogo'].includes(current.name) ? 'libreta' : current.name === 'subreceta' ? 'cocina' : current.name === 'saber' ? 'biblioteca' : current.name;
+ const active = ['plato', 'menus', 'cocinar', 'catalogo'].includes(current.name) ? 'libreta' : current.name === 'subreceta' ? 'cocina' : current.name === 'saber' ? 'biblioteca' : current.name === 'estilo' ? 'trayectoria' : current.name;
  $$('[data-nav]').forEach(a => { const on = a.dataset.nav === active; a.classList.toggle('active', on); if (on) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
 }
 function route({keepScroll = false} = {}) {
