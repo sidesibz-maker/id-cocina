@@ -57,6 +57,14 @@ await go('#/biblioteca'); ok(await page.locator('.kpath').count() >= 7, 'faltan 
 const crear = page.locator('.kpath', {hasText: 'Crear platos'});
 ok((await crear.textContent()).includes('1 de 6') && (await crear.locator('.btn').textContent()).includes('Contraste y equilibrio'), 'la ruta no avanza: ' + await crear.textContent());
 await go('#/hoy'); ok((await page.textContent('.craft')).includes('Tu ruta: Crear platos'), 'la portada no dice la siguiente ficha de la ruta');
+// Chispa con foto: se guarda la imagen y va en la copia de seguridad
+await go('#/laboratorio');
+const png = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAAFklEQVR4nGP8z8DAwMDAxMDAwMDAAAANHQEDK+mmyAAAAABJRU5ErkJggg==', 'base64');
+await page.setInputFiles('#labPhoto', {name: 'mercado.png', mimeType: 'image/png', buffer: png}); await wait(600);
+await page.fill('#labText', 'Puesto de setas del mercado'); await page.click('#labNote button[type=submit]'); await wait(800);
+const withImg = await page.evaluate(() => Object.values(JSON.parse(localStorage.getItem('id-cocina-v1')).docs).find(d => d.type === 'chispa' && d.image));
+ok(withImg && withImg.image.startsWith('img/chispas/'), 'la chispa no guarda la foto');
+ok(await page.locator('.labsp-img').count() === 1, 'la chispa no enseña la foto');
 await go('#/laboratorio/higo'); ok((await page.textContent('.labtrio .labing')).toLowerCase().includes('higo'), 'el Laboratorio no parte del producto de la dirección');
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();

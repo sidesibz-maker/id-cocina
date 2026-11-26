@@ -254,7 +254,7 @@ export function mergeSaber(a, b) {
  const newer = String(b.updated_at || '') > String(a.updated_at || '') ? b : a;
  return {...a, ...b, versions, custom: newer.custom ?? a.custom ?? b.custom ?? null, deleted_at: newer.deleted_at || null, updated_at: [a.updated_at, b.updated_at].sort().pop()};
 }
-export const imagePaths = () => [...new Set(state.dishes.flatMap(d => arr(d.images).map(i => i?.path).filter(Boolean)))];
+export const imagePaths = () => [...new Set([...state.dishes.flatMap(d => arr(d.images).map(i => i?.path).filter(Boolean)), ...Object.values(state.docs || {}).map(x => x?.image).filter(p => typeof p === 'string' && p.startsWith('img/'))])];
 
 // ---------- Versiones anteriores de cada plato (en este aparato) ----------
 // Antes de cambiar un plato se guarda cómo estaba, como mucho una vez cada 15 minutos (o siempre, si se pide), hasta 60 por plato.
@@ -280,7 +280,7 @@ export async function dishVersions(id) {
 const toData = blob => new Promise((resolve, reject) => { const r = new FileReader(); r.onload = () => resolve(r.result); r.onerror = () => reject(r.error); r.readAsDataURL(blob); });
 export async function exportBackup() {
  const images = {};
- for (const d of state.dishes) for (const i of d.images) { if (!i?.path || images[i.path]) continue; try { const blob = await tx('readonly', s => s.get(i.path)); if (blob) images[i.path] = await toData(blob); } catch {} }
+ for (const p of imagePaths()) { if (images[p]) continue; try { const blob = await tx('readonly', s => s.get(p)); if (blob) images[p] = await toData(blob); } catch {} }
  state.lastBackup = new Date().toISOString(); persist();
  return new Blob([JSON.stringify({app: 'id-cocina', version: 1, exported_at: state.lastBackup, dishes: state.dishes, menus: state.menus, subs: state.subs, saber: state.saber, docs: state.docs, settings: state.settings, marks: state.marks, pasted: state.pasted, images})], {type: 'application/json'});
 }
