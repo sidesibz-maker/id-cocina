@@ -4,7 +4,7 @@
 import {t, en, seasonOf, seasonLabel} from '../i18n.js';
 import {esc, icon, $, $$, flavorPrint, short} from '../ui.js';
 import {state, imageUrl} from '../store.js';
-import {statusLabel, courseLabel, STATUSES} from './shared.js';
+import {statusLabel, courseLabel, STATUSES, dishThumb} from './shared.js';
 
 export const title = () => t('Catálogo general', 'General catalogue');
 // Número de cada plato por orden de creación (los de la papelera también cuentan, para que nadie cambie de número).
@@ -30,7 +30,7 @@ export function render() {
   '<div class="catbar"><div class="seg" role="group" aria-label="' + esc(t('Vista', 'View')) + '">' + [['temporadas', t('Por temporadas', 'By season')], ['lista', t('Lista completa', 'Full list')]].map(([id, l]) => '<button type="button" class="seg-btn' + (mode === id ? ' active' : '') + '" data-mode="' + id + '" aria-pressed="' + (mode === id) + '">' + esc(l) + '</button>').join('') + '</div>' +
   '<label class="sr" for="catFilter">' + esc(t('Estado', 'Status')) + '</label><select id="catFilter" class="catfilter"><option value="todos">' + esc(t('Todos los estados', 'All statuses')) + '</option>' + STATUSES.map(s => '<option value="' + s[0] + '"' + (filter === s[0] ? ' selected' : '') + '>' + esc(en() ? s[2] : s[1]) + '</option>').join('') + '</select></div>' +
   (list.length ? keys.map(k => '<section class="sec catsec">' + (mode === 'temporadas' ? '<h2 class="catseason">' + esc(seasonLabel(k).replace(/^(\d{4})$/, t('Todo el año ', 'All year ') + '$1')) + '<span class="count">' + groups.get(k).length + '</span></h2>' : '') +
-   '<div class="catgrid">' + groups.get(k).sort((a, b) => nums.get(a.id) - nums.get(b.id)).map(d => '<a class="catcard" href="#/plato/' + esc(d.id) + '"><span class="catnum">' + pad(nums.get(d.id)) + '</span><span class="catmedia">' + (d.cover_path ? '<img data-img="' + esc(d.cover_path) + '" alt="">' : flavorPrint(d.flavor?.axes, {size: 72, title: t('Huella de sabor de ', 'Flavour print of ') + d.name})) + '</span><strong>' + esc(d.name) + '</strong><small>' + esc(courseLabel(d.course) + ', ' + statusLabel(d.status).toLowerCase()) + '</small>' + (d.concept ? '<span class="catconcept">' + esc(short(d.concept, 110)) + '</span>' : '') + '</a>').join('') + '</div></section>').join('')
+   '<div class="catgrid">' + groups.get(k).sort((a, b) => nums.get(a.id) - nums.get(b.id)).map(d => '<a class="catcard" href="#/plato/' + esc(d.id) + '"><span class="catnum">' + pad(nums.get(d.id)) + '</span><span class="catmedia">' + (d.cover_path ? '<img data-img="' + esc(d.cover_path) + '" alt="">' : dishThumb(d)) + '</span><strong>' + esc(d.name) + '</strong><small>' + esc(courseLabel(d.course) + ', ' + statusLabel(d.status).toLowerCase()) + '</small>' + (d.concept ? '<span class="catconcept">' + esc(short(d.concept, 110)) + '</span>' : '') + '</a>').join('') + '</div></section>').join('')
    : '<div class="empty">' + icon('book') + '<h2>' + esc(t('Aún no hay platos aquí', 'No dishes here yet')) + '</h2><p>' + esc(t('Cada plato que crees tendrá su número en tu catálogo.', 'Every dish you create will get its number in your catalogue.')) + '</p><a class="btn primary" href="#/crear">' + icon('plus') + esc(t('Crear un plato', 'Create a dish')) + '</a></div>');
 }
 export function mount(root) {

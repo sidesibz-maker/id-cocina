@@ -119,3 +119,6 @@ export function thermScale(marks, {label = ''} = {}) {
   marks.map((m, i) => { const p = tPos((m.from + m.to) / 2); return '<div class="therm-mark' + (p > 70 ? ' is-flip' : '') + '" aria-hidden="true" style="left:' + p.toFixed(1) + '%"' + (i % 2 ? ' data-below' : '') + '><b>' + esc(m.text) + '</b>' + esc(m.label) + '</div>'; }).join('') +
   '<span class="therm-grad" aria-hidden="true">' + Array.from({length: 15}, (_, k) => -20 + k * 20).map(v => '<i style="left:' + tPos(v).toFixed(2) + '%"' + ([0, 100, 200].includes(v) ? ' class="is-major"' : '') + '></i>').join('') + '</span>' + [0, 100, 200].map(v => '<span class="therm-tick" aria-hidden="true" style="left:' + tPos(v).toFixed(2) + '%">' + v + (v === 200 ? ' °C' : '') + '</span>').join('') + '</figure>';
 }
+
+// Miniatura de un plato sin foto: su corte si tiene capas; si no, el corte vacío (nunca la silueta de un plato).
+export const dishThumb = d => (dishLayers(d).length > 1 ? xsec(d, {mini: true}) : '<span class="xsec-mini is-empty" aria-hidden="true"><i></i><i></i><i></i></span>');

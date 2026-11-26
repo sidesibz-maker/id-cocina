@@ -1296,3 +1296,5 @@ h1,h2,h3,.cover-title,.trend-title,.dish-name,.kpath h3,.labmech h3,.idea h3,.em
 .cook-bar i{background:var(--mark)}
 :root{--coal-line:#2c2f34;--coal-line2:#4a4f56}
 @media (min-width:960px){.rail-find{border-color:var(--coal-line)}.rail-sep{background:var(--coal-line)}.rail-create{border-color:var(--coal-line2)}}
+
+.catcard .xsec-mini,.csig-media .xsec-mini{width:100%;height:100%;min-height:96px}
