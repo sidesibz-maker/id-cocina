@@ -40,6 +40,10 @@ await page.click('[data-act=challenge-done]'); await wait(600);
 const perfil = await page.evaluate(() => JSON.parse(localStorage.getItem('id-cocina-v1')).docs['carrera:perfil']);
 ok(perfil && Object.values(perfil.skills || {}).some(v => v === 1) && Object.keys(perfil.challenges || {}).length === 1, 'cumplir el reto no sube el nivel: ' + JSON.stringify(perfil));
 ok((await page.textContent('.craft-challenge')).includes('Hecho'), 'el reto no queda como hecho');
+// Tus recetas: tarjetas de tus subrecetas y tus platos listos
+await page.evaluate(() => { const v = JSON.parse(localStorage.getItem('id-cocina-v1')); v.subs = [{id: 's1', name: 'Romesco', items: [{n: 'Ñora', q: '6'}, {n: 'Almendra', q: '80 g'}], yield: '700 g', method: 'Asar y majar.', version: 1, updated_at: '2026-11-20T10:00:00Z'}]; v.dishes = [{id: 'd9', name: 'Calamar', status: 'carta', course: 'principal', plating: 'Romesco debajo, calamar encima.', components: [{id: 'c', role: 'principal', name: 'Calamar', techniques: [], items: [{n: 'Calamar', q: '150 g'}]}], tests: [], images: [], version: 1, updated_at: '2026-11-20T10:00:00Z'}]; localStorage.setItem('id-cocina-v1', JSON.stringify(v)); });
+await page.reload(); await wait(500); await go('#/entrenar'); await page.click('[data-cat=mias]'); await wait(200);
+ok((await page.textContent('.trmeta')).includes('Tus recetas') && (await page.textContent('.trmeta')).includes('de 3'), 'no hay tarjetas de tus recetas: ' + await page.textContent('.trcard'));
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();
 if (fails.length) { console.error('FALLOS en entrenar:\n - ' + fails.join('\n - ')); process.exit(1); }

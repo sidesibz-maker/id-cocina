@@ -4,13 +4,13 @@
 // El estado va en un documento «repaso:estado» (copia y sincronización).
 import {t, en, dayKey} from '../i18n.js';
 import {esc, icon, $, toast} from '../ui.js';
-import {docById, saveDoc} from '../store.js';
+import {docById, saveDoc, liveSubs, liveDishes} from '../store.js';
 import {entries} from '../saber/index.js';
 
 export const title = () => t('Entrenar', 'Train');
 const ID = 'repaso:estado', GAP = [0, 1, 3, 7, 16, 35, 80]; // días hasta volver a verla, según la caja
 const plain = v => String(v || '').replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, '$2').replace(/\[\[([^\]]+)\]\]/g, '$1');
-const CATS = [['todo', 'Todo', 'Everything'], ['proporciones', 'Proporciones', 'Ratios'], ['fallos', 'Fallos y arreglos', 'Faults and fixes'], ['recetas', 'Recetas base', 'Base recipes'], ['temperaturas', 'Temperaturas', 'Temperatures']];
+const CATS = [['todo', 'Todo', 'Everything'], ['proporciones', 'Proporciones', 'Ratios'], ['fallos', 'Fallos y arreglos', 'Faults and fixes'], ['recetas', 'Recetas base', 'Base recipes'], ['temperaturas', 'Temperaturas', 'Temperatures'], ['mias', 'Tus recetas', 'Your recipes']];
 const TEMPS = [['Vacuno y cordero, poco hecho', '50–52 °C'], ['Vacuno y cordero, al punto', '54–57 °C'], ['Cerdo jugoso', '62–65 °C'], ['Aves, a corazón', '72–74 °C'], ['Pescado jugoso, nacarado', '45–50 °C'], ['Crema inglesa', '82–84 °C'], ['Fritura', '170–180 °C'], ['Mantener en caliente', '65 °C o más'], ['Mantener en frío', '4 °C o menos'], ['Abatir', 'De 60 a 10 °C en menos de 2 horas'], ['Regenerar, a corazón', '70–75 °C'], ['Agar: cuaja al bajar de', 'unos 40 °C (aguanta hasta unos 80 °C)'], ['Gelatina: fundir sin hervir, a', '60–70 °C']];
 
 // Todas las tarjetas posibles. El id es estable para guardar cómo vas con cada una.
@@ -21,6 +21,16 @@ export function cards() {
   for (const r of e.ratios || []) if (r.use && r.ratio) out.push({id: 'r|' + e.id + '|' + r.use, cat: 'proporciones', from: e.id, q: e.name + ': ' + t('¿qué proporción para «', 'what ratio for “') + r.use + t('»?', '”?'), a: plain(r.ratio) + (r.note ? '. ' + plain(r.note) : '')});
   for (const x of e.errors || []) if (x.p && x.fix) out.push({id: 'e|' + e.id + '|' + x.p, cat: 'fallos', from: e.id, q: e.name + ': ' + x.p.charAt(0).toLowerCase() + x.p.slice(1) + t('. ¿Por qué pasa y qué haces?', '. Why does it happen and what do you do?'), a: plain(x.fix)});
   if (e.base?.items?.length >= 2 && e.base.for) out.push({id: 'b|' + e.id, cat: 'recetas', from: e.id, q: e.name + t(' para ', ' for ') + e.base.for + t(': ¿qué lleva y cuánto?', ': what goes in and how much?'), a: e.base.items.map(([n, q]) => n + (q ? ': ' + q : '')).join('\n')});
+ }
+ // Tus recetas: tus subrecetas con cantidades y los componentes y el emplatado de tus platos listos o en carta.
+ for (const x of liveSubs()) {
+  const items = x.items.filter(i => i.n);
+  if (items.length >= 2) out.push({id: 'ms|' + x.id, cat: 'mias', q: t('Tu ', 'Your ') + x.name + (x.yield ? t(' (rinde ', ' (yields ') + x.yield + ')' : '') + t(': ¿qué lleva y cuánto?', ': what goes in and how much?'), a: items.map(i => i.n + (i.q ? ': ' + i.q : '')).join('\n') + (x.method ? '\n\n' + x.method : '')});
+ }
+ for (const d of liveDishes().filter(d => ['lista', 'carta'].includes(d.status))) {
+  const comps = d.components.filter(c => c.items.length);
+  if (comps.length) out.push({id: 'md|' + d.id, cat: 'mias', q: d.name + t(': ¿qué componentes lleva y con qué?', ': which components and with what?'), a: comps.map(c => (c.name || t('Componente', 'Component')) + ': ' + c.items.map(i => i.n + (i.q ? ' (' + i.q + ')' : '')).join(', ')).join('\n')});
+  if (d.plating) out.push({id: 'mp|' + d.id, cat: 'mias', q: d.name + t(': ¿cómo se emplata?', ': how is it plated?'), a: d.plating});
  }
  for (const [k, v] of TEMPS) out.push({id: 't|' + k, cat: 'temperaturas', q: k + (k.endsWith('de') || k.endsWith(', a') ? '…?' : t(': ¿temperatura?', ': temperature?')), a: v});
  return out;
