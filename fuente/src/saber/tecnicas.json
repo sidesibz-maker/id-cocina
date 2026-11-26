@@ -5334,5 +5334,1088 @@
    "cordero",
    "arroces"
   ]
+ },
+ {
+  "id": "risotto-y-arroces-cremosos",
+  "name": "Risotto y arroces cremosos",
+  "name_en": "Risotto and creamy rice",
+  "cat": "tecnicas",
+  "group": "Cocciones suaves",
+  "technique": "guiso",
+  "aka": [
+   "risotto",
+   "arroz cremoso",
+   "mantecar",
+   "carnaroli",
+   "arborio",
+   "risotto de setas",
+   "arroz meloso italiano"
+  ],
+  "summary": "Arroz tostado, mojado poco a poco y removido para que suelte almidón, y mantecado fuera del fuego hasta quedar en ola.",
+  "what": "El risotto es la forma italiana del arroz cremoso. Se diferencia del arroz meloso español de los [[arroces]] en el método: el arroz se tuesta en grasa, se moja con caldo caliente poco a poco y se remueve a menudo, para que el roce suelte el almidón de la superficie y ligue el caldo. Al final se manteca fuera del fuego con mantequilla fría y queso rallado, y queda cremoso y suelto a la vez: al mover el plato, el arroz se ondula.\n\nSe usan arroces de grano medio o redondo que absorben mucho y aguantan sin romperse. Las variedades italianas para risotto son las más habituales, pero algunos arroces españoles también funcionan.",
+  "method": [
+   "Ten el caldo caliente a un lado, en un cazo al fuego mínimo.",
+   "Rehoga una chalota o cebolla picada fina en mantequilla o aceite; añade el arroz y tuéstalo 2–3 minutos, hasta que el grano esté brillante y algo traslúcido en los bordes.",
+   "Desglasa con vino blanco y deja que se evapore.",
+   "Moja con caldo caliente, un cazo cada vez, removiendo a menudo; añade más cuando casi se haya absorbido. Añade los ingredientes según su tiempo.",
+   "Cuando el grano esté hecho pero con un punto firme, aparta del fuego, añade mantequilla fría y queso, remueve con energía, deja reposar 1–2 minutos y sirve."
+  ],
+  "ratios": [
+   {
+    "use": "Arroz por ración",
+    "ratio": "70–80 g",
+    "note": "Principal; entrante, 50–60 g."
+   },
+   {
+    "use": "Caldo",
+    "ratio": "3–3,5 veces el peso del arroz",
+    "note": "Caliente y sin pasar de sal."
+   },
+   {
+    "use": "Tiempo",
+    "ratio": "16–18 minutos desde el primer caldo",
+    "note": "Según el arroz."
+   },
+   {
+    "use": "Mantecado",
+    "ratio": "15–20 g de mantequilla y 15–20 g de queso por ración",
+    "note": "Fuera del fuego."
+   }
+  ],
+  "variants": [
+   {
+    "id": "arroces",
+    "name": "Arroces melosos españoles",
+    "note": "Otra lógica de caldo y fuego."
+   },
+   {
+    "id": "setas",
+    "name": "Risotto de setas",
+    "note": "Con caldo de setas y su agua."
+   },
+   {
+    "id": "quesos-en-cocina",
+    "name": "Queso para mantecar",
+    "note": "Curado y rallado fino."
+   },
+   {
+    "id": "emulsiones-al-momento",
+    "name": "Mantecar",
+    "note": "La misma idea que montar una salsa."
+   }
+  ],
+  "keys": [
+   "Caldo caliente: el frío corta la cocción.",
+   "Tostar el grano antes de mojar.",
+   "Remover suelta el almidón que liga.",
+   "Mantecar fuera del fuego, con mantequilla fría.",
+   "Al plato enseguida: sigue cocinándose."
+  ],
+  "errors": [
+   {
+    "p": "Arroz pastoso",
+    "fix": "Arroz pasado o removido sin parar con fuego fuerte. Saca al dente y controla el fuego."
+   },
+   {
+    "p": "Grano duro con caldo líquido",
+    "fix": "Caldo añadido de golpe o frío. Moja poco a poco y caliente."
+   },
+   {
+    "p": "Risotto seco en el plato",
+    "fix": "Poco caldo al final. Debe quedar fluido; añade un último cazo antes de mantecar."
+   }
+  ],
+  "history": "El risotto es un plato del norte de Italia, donde se cultivan los arroces de grano medio que mejor se prestan a esta cocción. Comparte con los arroces melosos del Mediterráneo español la búsqueda de un arroz con caldo ligado.",
+  "uses": [
+   "Arroces de setas y verduras",
+   "Arroces de marisco",
+   "Entrantes",
+   "Bases para pescados y carnes"
+  ],
+  "keep": "Se sirve al momento. Para servicio, se precocina hasta media cocción, se extiende en bandeja fina y se enfría rápido; aguanta 1–2 días.",
+  "pro": "Precocina el arroz 10–12 minutos, enfríalo extendido y racione. Al pedido, termina 6–8 minutos con caldo caliente y manteca.",
+  "related": [
+   "arroces",
+   "setas",
+   "quesos-en-cocina",
+   "emulsiones-al-momento",
+   "fondo-blanco",
+   "caldo-de-setas"
+  ]
+ },
+ {
+  "id": "arroz-japones-y-al-vapor",
+  "name": "Arroz japonés y arroz al vapor",
+  "name_en": "Japanese rice and steamed rice",
+  "cat": "tecnicas",
+  "group": "Asia",
+  "technique": "vapor",
+  "aka": [
+   "arroz de sushi",
+   "shari",
+   "arroz japonés",
+   "arroz al vapor",
+   "arroz blanco",
+   "arroz jazmín",
+   "basmati",
+   "aliño de arroz"
+  ],
+  "summary": "Lavar, medir, cocer tapado y reposar: arroz suelto y brillante, y aliñado con vinagre para sushi.",
+  "what": "El arroz japonés es de grano corto y algo pegajoso: se lava hasta quitar el almidón de la superficie, se cuece con la cantidad justa de agua, tapado, y reposa antes de abrirlo. Para sushi se aliña en caliente con vinagre de arroz, azúcar y sal, y se enfría abanicándolo hasta quedar brillante, suelto y a temperatura de la mano.\n\nLos arroces aromáticos de grano largo, como el jazmín o el basmati, se hacen de forma parecida, por absorción o al vapor, y quedan sueltos y perfumados. Como cualquier arroz cocido, se enfría rápido si no se sirve: a temperatura templada durante horas pueden crecer bacterias.",
+  "method": [
+   "Lava el arroz en agua fría, frotando suavemente y cambiando el agua hasta que salga casi clara.",
+   "Escurre 15–30 minutos; el basmati puede remojarse 20–30 minutos antes.",
+   "Mide el agua, lleva a hervor, tapa y cocina a fuego mínimo sin destapar.",
+   "Apaga y deja reposar tapado 10–15 minutos.",
+   "Para sushi, pásalo a un recipiente ancho, riega con el aliño y mezcla con cortes de pala, sin aplastar, abanicando a la vez."
+  ],
+  "ratios": [
+   {
+    "use": "Arroz japonés",
+    "ratio": "1 parte de arroz por 1,1–1,2 de agua en peso",
+    "note": "12–15 minutos y reposo."
+   },
+   {
+    "use": "Aliño de sushi",
+    "ratio": "100 ml de vinagre de arroz, 40 g de azúcar, 15 g de sal por kg de arroz cocido",
+    "note": "Disuelto en frío o templado."
+   },
+   {
+    "use": "Basmati o jazmín",
+    "ratio": "1 parte de arroz por 1,5 de agua en volumen",
+    "note": "10–12 minutos tapado."
+   },
+   {
+    "use": "Arroz para nigiri",
+    "ratio": "36–37 °C",
+    "note": "Temperatura de la mano."
+   }
+  ],
+  "variants": [
+   {
+    "id": "ceviche-y-crudos",
+    "name": "Crudos de pescado",
+    "note": "Lo que acompaña al arroz de sushi."
+   },
+   {
+    "id": "arroces",
+    "name": "Arroces mediterráneos",
+    "note": "Otra cocción, otro arroz."
+   },
+   {
+    "id": "papillote-y-vapor",
+    "name": "Vapor",
+    "note": "Cocciones al vapor."
+   },
+   {
+    "id": "vinagres",
+    "name": "Vinagre de arroz",
+    "note": "Suave y algo dulce."
+   }
+  ],
+  "keys": [
+   "Lavar hasta agua casi clara.",
+   "Medir agua y arroz, no a ojo.",
+   "Tapado y sin abrir hasta el reposo.",
+   "Aliño en caliente, mezcla con cortes y abanico.",
+   "Enfriar rápido lo que no se sirve."
+  ],
+  "errors": [
+   {
+    "p": "Arroz pegajoso y pastoso",
+    "fix": "Sin lavar o mucha agua. Lava bien y ajusta la proporción."
+   },
+   {
+    "p": "Arroz duro",
+    "fix": "Poca agua o tapa abierta. Mide y no destapes."
+   },
+   {
+    "p": "Arroz de sushi aplastado",
+    "fix": "Mezclado removiendo. Usa cortes de pala, sin presionar."
+   }
+  ],
+  "history": "El arroz es el centro de la comida en Japón, y el arroz aliñado con vinagre es la base del sushi. El arroz jazmín es propio del sudeste asiático y el basmati, del subcontinente indio.",
+  "uses": [
+   "Sushi y nigiris",
+   "Cuencos de arroz",
+   "Guarnición de curries y salteados",
+   "Onigiris y bocados"
+  ],
+  "keep": "El arroz de sushi se usa el mismo día, tapado con un paño húmedo, sin cámara. El arroz cocido que se guarda, enfriado rápido y en frío, 1–2 días.",
+  "pro": "Lava y escurre por la mañana; cuece por tandas según las reservas. El arroz de sushi, en recipiente de madera tapado con paño húmedo.",
+  "related": [
+   "ceviche-y-crudos",
+   "arroces",
+   "papillote-y-vapor",
+   "vinagres",
+   "soja-y-derivados",
+   "reposos-y-regeneracion"
+  ]
+ },
+ {
+  "id": "tortillas-de-maiz-y-nixtamal",
+  "name": "Tortillas de maíz y nixtamal",
+  "name_en": "Corn tortillas and nixtamal",
+  "cat": "tecnicas",
+  "group": "Masas",
+  "aka": [
+   "nixtamal",
+   "nixtamalización",
+   "masa de maíz",
+   "tortilla de maíz",
+   "comal",
+   "masa harina",
+   "tostadas de maíz"
+  ],
+  "summary": "Maíz cocido con cal, molido en masa y cocido en comal: tortillas que se inflan, flexibles y con sabor a maíz.",
+  "what": "Nixtamalizar es cocer el maíz seco con agua y cal (hidróxido de calcio) y dejarlo reposar. La cal ablanda la piel del grano, que se puede quitar, cambia la estructura del maíz para que forme una masa que se pueda moldear y le da su sabor característico. El maíz nixtamalizado se lava, se muele húmedo y da la masa de las tortillas, los tamales y los antojitos.\n\nTambién hay harina de maíz nixtamalizado seca, que se hidrata con agua y da una masa más rápida. La tortilla se cuece en un comal o plancha muy caliente: si la masa tiene su punto de humedad y el comal su calor, la tortilla se infla.",
+  "method": [
+   "Nixtamal: cuece el maíz seco con agua y cal hasta que la piel se suelte al frotar; deja reposar toda la noche en el agua.",
+   "Lava el maíz frotando para quitar la piel y la cal, y muélelo con un poco de agua hasta una masa fina.",
+   "Con harina nixtamalizada: mezcla con agua tibia y sal, amasa y deja reposar tapada 15–20 minutos; debe estar suave y no agrietarse.",
+   "Forma bolas, prénsalas entre dos plásticos y pásalas al comal muy caliente.",
+   "Cocina 30–45 segundos, da la vuelta, 45–60 segundos, y otra vuelta: presiona suave y se inflará. Guarda tapadas en un paño."
+  ],
+  "ratios": [
+   {
+    "use": "Cal para nixtamal",
+    "ratio": "10 g de cal por kg de maíz seco",
+    "note": "En 2–3 l de agua."
+   },
+   {
+    "use": "Cocción del nixtamal",
+    "ratio": "30–60 minutos y reposo de 8–12 horas",
+    "note": "Según el maíz."
+   },
+   {
+    "use": "Masa con harina nixtamalizada",
+    "ratio": "250 g de harina, 320–360 ml de agua tibia",
+    "note": "Con sal."
+   },
+   {
+    "use": "Bola por tortilla",
+    "ratio": "30–35 g",
+    "note": "Tortilla de 12–14 cm."
+   }
+  ],
+  "variants": [
+   {
+    "id": "chiles-y-salsas-mexicanas",
+    "name": "Salsas mexicanas",
+    "note": "Para tacos y tostadas."
+   },
+   {
+    "id": "maiz",
+    "name": "Maíz",
+    "note": "El producto y sus formas."
+   },
+   {
+    "id": "fritura",
+    "name": "Tostadas y totopos",
+    "note": "Tortillas fritas u horneadas."
+   },
+   {
+    "id": "plancha-y-sarten",
+    "name": "Comal o plancha",
+    "note": "Calor por contacto."
+   }
+  ],
+  "keys": [
+   "La cal es lo que convierte el maíz en masa.",
+   "Masa suave y húmeda: si se agrieta, falta agua.",
+   "Comal muy caliente y tres vueltas.",
+   "Tortillas tapadas en paño: se mantienen flexibles.",
+   "Usa cal alimentaria."
+  ],
+  "errors": [
+   {
+    "p": "Tortilla que se agrieta al prensar",
+    "fix": "Masa seca. Añade agua poco a poco y deja reposar."
+   },
+   {
+    "p": "Tortilla que no se infla",
+    "fix": "Comal frío o masa seca. Calienta más y ajusta la humedad."
+   },
+   {
+    "p": "Tortillas duras",
+    "fix": "Demasiado tiempo en el comal o sin tapar. Cocina menos y guarda en paño."
+   }
+  ],
+  "history": "La nixtamalización es una técnica de los pueblos de Mesoamérica, de miles de años de antigüedad, y es la base de la cocina mexicana y centroamericana. Además de dar la masa, mejora el valor nutritivo del maíz.",
+  "uses": [
+   "Tacos",
+   "Tostadas y totopos",
+   "Quesadillas y antojitos",
+   "Tamales",
+   "Acompañar guisos"
+  ],
+  "keep": "Masa fresca, 1–2 días en frío tapada. Tortillas cocidas, 2–3 días en frío envueltas; se recalientan en comal.",
+  "pro": "Prepara la masa y las bolas antes del servicio, tapadas con paño húmedo. Prensa y cuece al pedido o en tandas cortas, guardadas en tortillero.",
+  "related": [
+   "maiz",
+   "chiles-y-salsas-mexicanas",
+   "fritura",
+   "plancha-y-sarten",
+   "harinas-y-almidones",
+   "fermentacion-lactica"
+  ]
+ },
+ {
+  "id": "tortilla-y-huevos-de-brunch",
+  "name": "Tortilla de patata y huevos de brunch",
+  "name_en": "Spanish omelette and brunch eggs",
+  "cat": "tecnicas",
+  "group": "Calor y punto",
+  "aka": [
+   "tortilla de patata",
+   "tortilla española",
+   "huevos revueltos",
+   "revuelto",
+   "huevos benedictinos",
+   "tortilla francesa",
+   "huevos rotos"
+  ],
+  "summary": "Tortilla de patata jugosa, revueltos cremosos y huevos benedictinos: el huevo en su punto con calor suave.",
+  "what": "El huevo es el centro de muchos platos de mediodía y de brunch, y todos dependen del calor. La tortilla de patata se hace con patata pochada en aceite hasta que esté tierna, mezclada con huevo batido y cuajada en sartén, más o menos jugosa por dentro. Los revueltos se hacen a fuego suave y removiendo, para que el huevo cuaje en grumos cremosos. Los huevos benedictinos son huevos [[escalfado|escalfados]] sobre pan tostado con jamón o pescado y napados con [[holandesa]].\n\nLos tiempos y temperaturas de cada punto del huevo están en [[puntos-del-huevo]].",
+  "method": [
+   "Tortilla: pela y corta las patatas en láminas finas; pocha en aceite abundante a fuego medio, sin que tomen color, hasta que estén tiernas. Escurre.",
+   "Mezcla las patatas templadas con el huevo batido y sal, y deja reposar 10–15 minutos para que se empapen.",
+   "Cuaja en sartén caliente con poco aceite, moviendo, dale la vuelta con un plato y termina al punto deseado.",
+   "Revuelto: huevo batido con sal en sartén con mantequilla a fuego bajo, removiendo sin parar; retíralo cuando aún esté algo líquido.",
+   "Benedictinos: tuesta el pan, pon el jamón o el pescado, el huevo escalfado escurrido y la holandesa templada por encima."
+  ],
+  "ratios": [
+   {
+    "use": "Tortilla de patata",
+    "ratio": "1 kg de patata por 8–10 huevos",
+    "note": "Cebolla opcional, 150–200 g."
+   },
+   {
+    "use": "Pochado de la patata",
+    "ratio": "Aceite a 120–130 °C, 15–20 minutos",
+    "note": "Tierna y sin color."
+   },
+   {
+    "use": "Revuelto",
+    "ratio": "Fuego bajo, retirar a 65–70 °C",
+    "note": "Sigue cuajando en el plato."
+   },
+   {
+    "use": "Huevo escalfado",
+    "ratio": "85–90 °C, 3–4 minutos",
+    "note": "Para benedictinos."
+   }
+  ],
+  "variants": [
+   {
+    "id": "puntos-del-huevo",
+    "name": "Puntos del huevo",
+    "note": "Tiempos para cada textura."
+   },
+   {
+    "id": "holandesa",
+    "name": "Holandesa",
+    "note": "La salsa de los benedictinos."
+   },
+   {
+    "id": "escalfado",
+    "name": "Escalfado",
+    "note": "Huevo en agua sin hervir."
+   },
+   {
+    "id": "patata-y-boniato",
+    "name": "Patata",
+    "note": "Mejor firme para la tortilla."
+   }
+  ],
+  "keys": [
+   "Patata pochada, no frita: tierna y sin color.",
+   "Reposo de la patata en el huevo.",
+   "Fuego suave para revueltos, y fuera antes de tiempo.",
+   "Huevos frescos para escalfar.",
+   "Sal en el huevo justo antes de cuajar."
+  ],
+  "errors": [
+   {
+    "p": "Tortilla seca",
+    "fix": "Demasiado tiempo en la sartén. Cuaja menos y deja que termine con el calor residual."
+   },
+   {
+    "p": "Revuelto gomoso y aguado",
+    "fix": "Fuego alto. Bájalo y retira antes."
+   },
+   {
+    "p": "Tortilla que se rompe al dar la vuelta",
+    "fix": "Poco cuajada abajo o sartén fría. Cuaja un poco más y usa plato plano y firme."
+   }
+  ],
+  "history": "La tortilla de patata es uno de los platos más populares de la cocina española. Los huevos benedictinos son un plato del desayuno y el brunch de Estados Unidos que se ha extendido por todo el mundo.",
+  "uses": [
+   "Tapas y raciones",
+   "Desayunos y brunch",
+   "Platos de mediodía",
+   "Bocadillos"
+  ],
+  "keep": "Tortilla, mejor del día; en frío, 1–2 días. Revueltos y benedictinos, al momento. Patata pochada, 2 días en frío.",
+  "pro": "Pocha la patata por tandas y guárdala escurrida; cuaja las tortillas a lo largo del servicio. Huevos escalfados por tanda, en agua con hielo, y regenerados al pedido.",
+  "related": [
+   "puntos-del-huevo",
+   "holandesa",
+   "escalfado",
+   "huevos",
+   "patata-y-boniato",
+   "confitado"
+  ]
+ },
+ {
+  "id": "tostadas-y-montaditos",
+  "name": "Tostadas, bocadillos y montaditos",
+  "name_en": "Toasts, sandwiches and montaditos",
+  "cat": "tecnicas",
+  "group": "Masas",
+  "technique": "tostado",
+  "aka": [
+   "tostada",
+   "tosta",
+   "montadito",
+   "bocadillo",
+   "bocata",
+   "pan con tomate",
+   "pintxo",
+   "sándwich"
+  ],
+  "summary": "Pan bien elegido y tostado, una barrera de grasa contra la humedad y capas pensadas para comerse de un bocado.",
+  "what": "Una tostada o un montadito se construye como un plato pequeño: el pan es la base y su elección cambia todo. Un pan de miga abierta y corteza firme aguanta mejor los ingredientes húmedos; uno de miga densa se corta fino y crujiente. Tostado en brasa o plancha gana sabor y resistencia.\n\nEl problema de siempre es la humedad, que ablanda el pan. Se evita con una capa de grasa (aceite, mantequilla, alioli, un queso untable) entre el pan y lo húmedo, y montando en el último momento. Las capas siguen una lógica de contraste: algo graso, algo ácido, algo crujiente y sal al final.",
+  "method": [
+   "Elige el pan según el relleno y córtalo del grosor justo: 1–1,5 cm para tostas, más para bocadillos.",
+   "Tuesta con aceite en brasa o plancha hasta que esté crujiente por fuera y aún tierno dentro.",
+   "Unta una barrera de grasa en la cara que recibirá lo húmedo.",
+   "Monta las capas: base untuosa, ingrediente principal, algo ácido o fresco, y un acabado crujiente o salado.",
+   "Monta al momento y sirve enseguida; corta los bocadillos con cuchillo de sierra."
+  ],
+  "ratios": [
+   {
+    "use": "Montadito",
+    "ratio": "30–40 g de pan y 30–40 g de relleno",
+    "note": "Uno o dos bocados."
+   },
+   {
+    "use": "Bocadillo",
+    "ratio": "120–150 g de pan y 80–120 g de relleno",
+    "note": "Equilibrio pan y relleno."
+   },
+   {
+    "use": "Pan con tomate",
+    "ratio": "Tomate maduro rallado o restregado, aceite y sal",
+    "note": "Sobre pan tostado."
+   },
+   {
+    "use": "Tostado en plancha",
+    "ratio": "180–200 °C, 1–2 minutos por cara",
+    "note": "Con un hilo de aceite."
+   }
+  ],
+  "variants": [
+   {
+    "id": "pan-del-dia-y-pan-viejo",
+    "name": "Pan",
+    "note": "Elegirlo y regenerarlo."
+   },
+   {
+    "id": "pan-y-focaccia",
+    "name": "Focaccia",
+    "note": "Una base esponjosa para bocadillos."
+   },
+   {
+    "id": "alioli",
+    "name": "Barrera de alioli",
+    "note": "Grasa y sabor a la vez."
+   },
+   {
+    "id": "pickles-de-servicio",
+    "name": "Encurtidos",
+    "note": "El ácido que equilibra."
+   }
+  ],
+  "keys": [
+   "El pan es la mitad del bocado.",
+   "Grasa entre el pan y lo húmedo.",
+   "Montar al momento.",
+   "Contraste: graso, ácido, crujiente y sal.",
+   "Tamaño de un bocado en los montaditos."
+  ],
+  "errors": [
+   {
+    "p": "Pan empapado",
+    "fix": "Sin barrera de grasa o montado antes. Unta grasa y monta al momento."
+   },
+   {
+    "p": "Todo se desmonta al morder",
+    "fix": "Capas muy altas o resbaladizas. Baja la altura y pon algo que pegue."
+   },
+   {
+    "p": "Bocadillo seco",
+    "fix": "Poca salsa o pan grueso. Equilibra pan y relleno y añade algo jugoso."
+   }
+  ],
+  "history": "Las tostas, los montaditos y los pintxos son parte de la cultura de barra en toda España, y el pan con tomate es una costumbre muy extendida en Cataluña y en las islas.",
+  "uses": [
+   "Tapas y aperitivos",
+   "Desayunos y brunch",
+   "Comida de mediodía",
+   "Bocados de cóctel"
+  ],
+  "keep": "Se montan al momento. Los componentes, por separado: panes cortados, untables y rellenos en frío.",
+  "pro": "Prepara todos los componentes en recipientes ordenados por capa. Tuesta los panes por tandas cortas y monta al pedido.",
+  "related": [
+   "pan-del-dia-y-pan-viejo",
+   "pan-y-focaccia",
+   "alioli",
+   "pickles-de-servicio",
+   "untables-de-legumbre",
+   "tomate"
+  ]
+ },
+ {
+  "id": "kombucha-y-fermentados-de-bebida",
+  "name": "Kombucha y fermentados de bebida",
+  "name_en": "Kombucha and fermented drinks",
+  "cat": "tecnicas",
+  "group": "Conservar y transformar",
+  "technique": "fermentado",
+  "aka": [
+   "kombucha",
+   "scoby",
+   "madre de kombucha",
+   "tepache",
+   "ginger bug",
+   "cerveza de jengibre",
+   "segunda fermentación",
+   "bebidas fermentadas"
+  ],
+  "summary": "Té dulce, fruta o jengibre fermentados por levaduras y bacterias: bebidas ácidas, con burbuja natural y sin apenas alcohol.",
+  "what": "La kombucha es té endulzado fermentado por una colonia de levaduras y bacterias que forma una capa gelatinosa en la superficie (la madre). Las levaduras convierten parte del azúcar en alcohol y gas, y las bacterias, el alcohol en ácidos: el resultado es una bebida ácida, algo dulce y con burbuja suave. Una segunda fermentación en botella cerrada, con fruta o especias, añade sabor y gas.\n\nOtros fermentados de bebida siguen la misma idea: el tepache, con cáscaras de piña y azúcar; las bebidas de jengibre, a partir de un cultivo de jengibre y azúcar. En todos, la clave es la higiene, la temperatura y que la bebida esté suficientemente ácida para ser segura.",
+  "method": [
+   "Prepara el té, disuelve el azúcar y deja enfriar del todo a temperatura ambiente.",
+   "Pásalo a un recipiente de vidrio limpio, añade la madre y una parte de kombucha ya hecha para acidificar desde el principio.",
+   "Tapa con un paño transpirable, deja en un lugar templado y sin sol y prueba a partir del séptimo día.",
+   "Cuando el equilibrio entre dulce y ácido te guste, guarda madre y parte del líquido para la siguiente tanda y embotella el resto con fruta o especias.",
+   "Deja 2–4 días a temperatura ambiente en botella cerrada, abre una para comprobar el gas y pasa todas al frío."
+  ],
+  "ratios": [
+   {
+    "use": "Té para kombucha",
+    "ratio": "5–8 g de té y 60–80 g de azúcar por litro",
+    "note": "Té negro o verde."
+   },
+   {
+    "use": "Arranque",
+    "ratio": "10–20 % de kombucha anterior",
+    "note": "Baja la acidez desde el inicio."
+   },
+   {
+    "use": "Primera fermentación",
+    "ratio": "20–26 °C, 7–14 días",
+    "note": "Probar cada día desde el séptimo."
+   },
+   {
+    "use": "Tepache",
+    "ratio": "Cáscaras de 1 piña, 150–200 g de azúcar, 2 l de agua",
+    "note": "2–3 días a temperatura ambiente."
+   }
+  ],
+  "variants": [
+   {
+    "id": "fermentacion-lactica",
+    "name": "Fermentación láctica",
+    "note": "Otra forma de fermentar."
+   },
+   {
+    "id": "maridaje-sin-alcohol",
+    "name": "Maridaje sin alcohol",
+    "note": "Cómo usarlas en la mesa."
+   },
+   {
+    "id": "shrubs-y-cordiales",
+    "name": "Shrubs y cordiales",
+    "note": "Bebidas ácidas sin fermentar."
+   },
+   {
+    "id": "aromaticos-de-asia",
+    "name": "Bebida de jengibre",
+    "note": "Cultivo de jengibre y azúcar."
+   }
+  ],
+  "keys": [
+   "Higiene: recipientes de vidrio y utensilios limpios.",
+   "Acidificar desde el principio con kombucha anterior.",
+   "Probar a diario: el punto cambia rápido.",
+   "La segunda fermentación genera presión: abre una botella de prueba y enfría.",
+   "Moho en la superficie: se tira todo."
+  ],
+  "errors": [
+   {
+    "p": "Moho peludo en la superficie",
+    "fix": "Poca acidez al inicio o contaminación. Descarta todo y empieza con más arranque."
+   },
+   {
+    "p": "Demasiado avinagrada",
+    "fix": "Fermentación larga o caliente. Acorta el tiempo o rebaja con té dulce."
+   },
+   {
+    "p": "Botellas que estallan o rebosan",
+    "fix": "Demasiado azúcar o tiempo en la segunda fermentación. Menos fruta, menos días y al frío."
+   }
+  ],
+  "history": "La kombucha se bebe desde hace tiempo en Asia oriental y en Europa del Este, y se ha extendido en la última década. El tepache es una bebida tradicional de México; las bebidas de jengibre fermentado tienen tradición en el mundo anglosajón.",
+  "uses": [
+   "Maridaje sin alcohol",
+   "Aperitivos",
+   "Bases para cócteles sin alcohol",
+   "Aliños y vinagres suaves"
+  ],
+  "keep": "Embotellada, en frío, 2–4 semanas. La madre, en su líquido, en un bote tapado a temperatura ambiente.",
+  "pro": "Etiqueta cada tanda con fecha, té y días de fermentación. Ten siempre una tanda en marcha y otra en frío.",
+  "related": [
+   "fermentacion-lactica",
+   "maridaje-sin-alcohol",
+   "infusiones",
+   "aromaticos-de-asia",
+   "acidez-en-cocina",
+   "shrubs-y-cordiales"
+  ]
+ },
+ {
+  "id": "shrubs-y-cordiales",
+  "name": "Shrubs y cordiales sin alcohol",
+  "name_en": "Shrubs and cordials",
+  "cat": "tecnicas",
+  "group": "Conservar y transformar",
+  "aka": [
+   "shrub",
+   "cordial",
+   "jarabe de fruta",
+   "oleo saccharum",
+   "sirope de vinagre",
+   "bebidas sin alcohol",
+   "refresco casero"
+  ],
+  "summary": "Jarabes concentrados de fruta, azúcar y ácido que se rebajan con agua o soda: bebidas sin alcohol con cuerpo y acidez.",
+  "what": "Un shrub es un jarabe de fruta, azúcar y vinagre. La fruta macera con el azúcar y suelta su jugo; el vinagre aporta acidez y conserva. Rebajado con agua con gas, da una bebida ácida y refrescante que acompaña la comida como un vino. Un cordial es un jarabe de fruta, hierbas o flores con azúcar y un ácido (cítrico o ácido cítrico), sin vinagre.\n\nEl oleo saccharum es otra base: pieles de cítrico con azúcar, que extrae sus aceites aromáticos y forma un jarabe muy perfumado. Todas estas bases se preparan con antelación y se guardan en frío, lo que las hace muy útiles para una oferta sin alcohol de nivel.",
+  "method": [
+   "Shrub en frío: corta la fruta, mézclala con el azúcar y deja macerar en frío hasta que suelte su jugo.",
+   "Cuela apretando suave, añade el vinagre, remueve hasta disolver el azúcar y guarda en frío unos días para que se asiente.",
+   "Cordial: haz un jarabe con agua y azúcar, infusiona la fruta, hierbas o flores fuera del fuego, cuela y añade el ácido.",
+   "Oleo saccharum: pieles de cítrico sin parte blanca con su peso en azúcar, aplastadas y en reposo hasta que el azúcar se disuelva.",
+   "Para servir, rebaja con agua con gas o sin ella, prueba y ajusta."
+  ],
+  "ratios": [
+   {
+    "use": "Shrub",
+    "ratio": "Fruta, azúcar y vinagre 1:1:1 en peso",
+    "note": "Maceración de 1–3 días en frío."
+   },
+   {
+    "use": "Cordial",
+    "ratio": "500 ml de agua, 500 g de azúcar, 15–20 g de ácido cítrico",
+    "note": "Más el aromático."
+   },
+   {
+    "use": "Oleo saccharum",
+    "ratio": "Pieles y azúcar 1:1 en peso, 2–12 horas",
+    "note": "Removiendo."
+   },
+   {
+    "use": "Dilución",
+    "ratio": "1 parte de base por 4–8 de agua o soda",
+    "note": "Según intensidad."
+   }
+  ],
+  "variants": [
+   {
+    "id": "maridaje-sin-alcohol",
+    "name": "Maridaje sin alcohol",
+    "note": "Cómo construir la oferta."
+   },
+   {
+    "id": "vinagres",
+    "name": "Vinagres",
+    "note": "Qué vinagre elegir para el shrub."
+   },
+   {
+    "id": "frutos-rojos-y-fruta-de-hueso",
+    "name": "Fruta de temporada",
+    "note": "La mejor base."
+   },
+   {
+    "id": "citricos",
+    "name": "Cítricos",
+    "note": "Pieles y zumos para cordiales."
+   }
+  ],
+  "keys": [
+   "Fruta madura y de temporada.",
+   "Vinagre de calidad y suave: se nota mucho.",
+   "Equilibrio dulce y ácido: prueba rebajado, no puro.",
+   "Hierbas y flores en frío para no cocerlas.",
+   "Todo en frío y etiquetado."
+  ],
+  "errors": [
+   {
+    "p": "Bebida empalagosa",
+    "fix": "Poco ácido o poca dilución. Añade ácido o más agua."
+   },
+   {
+    "p": "Vinagre que domina",
+    "fix": "Vinagre fuerte o poco reposo. Usa uno más suave y deja reposar unos días."
+   },
+   {
+    "p": "Cordial turbio y fermentando",
+    "fix": "Poco azúcar o ácido, o guardado templado. Respeta la proporción y guárdalo en frío."
+   }
+  ],
+  "history": "Los jarabes de fruta con vinagre se usaban para conservar fruta antes de la refrigeración y se recuperaron en la coctelería moderna. Los cordiales de fruta y flores tienen tradición en muchos países europeos.",
+  "uses": [
+   "Maridaje sin alcohol",
+   "Refrescos caseros",
+   "Aliños y glaseados",
+   "Postres y sorbetes"
+  ],
+  "keep": "Shrubs, 1–2 meses en frío. Cordiales, 2–4 semanas en frío. Oleo saccharum, 1–2 semanas en frío.",
+  "pro": "Elabora por temporadas y guarda en botellas etiquetadas con la dilución recomendada. Así se sirve igual cada vez.",
+  "related": [
+   "maridaje-sin-alcohol",
+   "vinagres",
+   "citricos",
+   "frutos-rojos-y-fruta-de-hueso",
+   "kombucha-y-fermentados-de-bebida",
+   "infusiones"
+  ]
+ },
+ {
+  "id": "dumplings-y-masas-al-vapor",
+  "name": "Dumplings y masas al vapor",
+  "name_en": "Dumplings and steamed doughs",
+  "cat": "tecnicas",
+  "group": "Asia",
+  "technique": "vapor",
+  "aka": [
+   "dumplings",
+   "gyozas",
+   "jiaozi",
+   "empanadillas al vapor",
+   "bao",
+   "pan al vapor",
+   "masa de agua caliente",
+   "potstickers"
+  ],
+  "summary": "Masas finas rellenas y cocidas al vapor, hervidas o a la plancha, y panecillos esponjosos de masa levada al vapor.",
+  "what": "Los dumplings son pequeñas masas rellenas que se cuecen al vapor, en agua o en sartén. La masa más común es de harina de trigo con agua: con agua caliente queda más tierna y fácil de estirar fina; con agua fría, más firme y elástica. Hay también masas translúcidas a base de almidón de trigo. Las gyozas se doran por la base y se terminan al vapor en la misma sartén.\n\nLos bao son panecillos de masa con levadura cocidos al vapor: quedan blancos, esponjosos y suaves. El relleno de carne pide grasa y se trabaja en una dirección para que ligue y quede jugoso.",
+  "method": [
+   "Masa de agua caliente: vierte el agua caliente sobre la harina, mezcla, amasa hasta que esté lisa y deja reposar tapada 30 minutos.",
+   "Relleno: carne picada con grasa, sal y aromáticos; mezcla en una dirección hasta que se vuelva pegajosa; añade verdura picada y escurrida.",
+   "Estira discos finos, más delgados en el borde, pon el relleno en el centro y cierra con pliegues presionando bien.",
+   "Al vapor: sobre papel o una hoja de col en la vaporera, sin que se toquen. Gyozas: dora la base en sartén con aceite, añade un chorro de agua, tapa y deja que se evapore.",
+   "Bao: masa con levadura, azúcar y grasa; fermenta, forma, deja levar de nuevo y cuece al vapor sin abrir la tapa al principio."
+  ],
+  "ratios": [
+   {
+    "use": "Masa de agua caliente",
+    "ratio": "300 g de harina, 150–170 ml de agua caliente",
+    "note": "Una pizca de sal."
+   },
+   {
+    "use": "Dumplings al vapor",
+    "ratio": "8–10 minutos",
+    "note": "Relleno de carne a 72–75 °C."
+   },
+   {
+    "use": "Masa de bao",
+    "ratio": "500 g de harina, 260 ml de leche o agua, 6 g de levadura, 40 g de azúcar, 15 g de grasa",
+    "note": "Vapor 10–12 minutos."
+   },
+   {
+    "use": "Grasa del relleno",
+    "ratio": "20–30 % de la carne",
+    "note": "Para que quede jugoso."
+   }
+  ],
+  "variants": [
+   {
+    "id": "papillote-y-vapor",
+    "name": "Vapor",
+    "note": "Principios del vapor."
+   },
+   {
+    "id": "aromaticos-de-asia",
+    "name": "Aromáticos",
+    "note": "Jengibre, cebolleta y ajo para el relleno."
+   },
+   {
+    "id": "ponzu-y-salsas-citricas",
+    "name": "Salsas para mojar",
+    "note": "Soja, vinagre y chile."
+   },
+   {
+    "id": "pasta-fresca",
+    "name": "Pasta rellena",
+    "note": "La versión italiana."
+   }
+  ],
+  "keys": [
+   "Masa reposada: se estira mejor.",
+   "Relleno con grasa y trabajado en una dirección.",
+   "Cierre bien sellado, sin aire dentro.",
+   "Vapor fuerte y sin que se toquen.",
+   "Congélalos crudos en bandeja y cuécelos sin descongelar."
+  ],
+  "errors": [
+   {
+    "p": "Dumplings que se abren",
+    "fix": "Bordes con harina o mal sellados. Humedece el borde y presiona."
+   },
+   {
+    "p": "Relleno seco",
+    "fix": "Carne magra. Añade grasa o un poco de caldo gelatinoso frío."
+   },
+   {
+    "p": "Bao arrugado al sacarlo",
+    "fix": "Cambio brusco de temperatura. Deja reposar 2–3 minutos con la tapa entreabierta."
+   }
+  ],
+  "history": "Las masas rellenas al vapor y hervidas tienen una larga historia en la cocina china, y se extendieron a Japón, Corea y el resto de Asia. Hoy forman parte de la oferta de muchos restaurantes de todo el mundo.",
+  "uses": [
+   "Entrantes y bocados",
+   "Comida para compartir",
+   "Sopas con dumplings",
+   "Bao rellenos de carnes glaseadas"
+  ],
+  "keep": "Crudos, congelados en bandeja y luego en bolsa, 1–2 meses. La masa, 1 día en frío envuelta. Bao cocidos, congelados y regenerados al vapor.",
+  "pro": "Forma los dumplings en tanda y congélalos por raciones. Al pedido, vapor o sartén directamente.",
+  "related": [
+   "papillote-y-vapor",
+   "aromaticos-de-asia",
+   "ponzu-y-salsas-citricas",
+   "pasta-fresca",
+   "soja-y-derivados",
+   "harinas-y-almidones"
+  ]
+ },
+ {
+  "id": "curry-y-guisos-especiados",
+  "name": "Curry y guisos especiados",
+  "name_en": "Curries and spiced stews",
+  "cat": "tecnicas",
+  "group": "Asia",
+  "technique": "guiso",
+  "aka": [
+   "curry",
+   "guiso especiado",
+   "templar especias",
+   "tadka",
+   "garam masala",
+   "curry de coco",
+   "masala"
+  ],
+  "summary": "Especias tostadas en grasa, una base aromática frita, el líquido y el producto, y frescor al final: así se construye un curry.",
+  "what": "Curry es una palabra amplia que en Europa designa muchos guisos especiados del sur y el sudeste de Asia. Comparten un método: las especias enteras se templan en grasa caliente para liberar su aroma; se fríe una base de cebolla, ajo, jengibre y chile, o una [[pastas-de-especias|pasta de especias]]; se añaden las especias molidas unos segundos; luego el producto y el líquido (tomate, leche de coco, yogur, caldo) y se cocina a fuego suave.\n\nAl final se equilibra con ácido, sal y frescor: lima, tamarindo, yogur, hierbas frescas. Las mezclas aromáticas como el garam masala se añaden al final para que no pierdan el perfume.",
+  "method": [
+   "Templa las especias enteras en aceite o mantequilla clarificada caliente hasta que crepiten y huelan.",
+   "Añade cebolla, ajo, jengibre y chile, y fríe hasta que estén dorados; o fríe la pasta de especias en la crema de coco o en aceite.",
+   "Añade las especias molidas unos segundos, moviendo, y moja enseguida con tomate o líquido para que no se quemen.",
+   "Incorpora el producto y el líquido y cocina suave hasta que esté tierno; el yogur, templado antes y sin hervir fuerte.",
+   "Termina con la mezcla aromática, un ácido, sal y hierbas frescas."
+  ],
+  "ratios": [
+   {
+    "use": "Especias en total",
+    "ratio": "10–20 g por kg de producto",
+    "note": "Según intensidad."
+   },
+   {
+    "use": "Pasta de curry",
+    "ratio": "60–100 g para 4 raciones",
+    "note": "Frita antes de mojar."
+   },
+   {
+    "use": "Garam masala o mezcla final",
+    "ratio": "3–5 g por 4 raciones",
+    "note": "En los últimos minutos."
+   },
+   {
+    "use": "Cocción",
+    "ratio": "Pollo 20–30 minutos; cordero 1,5–2 horas",
+    "note": "A fuego suave."
+   }
+  ],
+  "variants": [
+   {
+    "id": "pastas-de-especias",
+    "name": "Pastas de curry",
+    "note": "Base majada de aromáticos."
+   },
+   {
+    "id": "coco",
+    "name": "Curry de coco",
+    "note": "Con leche y crema de coco."
+   },
+   {
+    "id": "especias",
+    "name": "Especias",
+    "note": "Comprar, tostar y moler."
+   },
+   {
+    "id": "guisos-largos",
+    "name": "Guisos largos",
+    "note": "La lógica del guiso mediterráneo."
+   }
+  ],
+  "keys": [
+   "Especias enteras en grasa al principio; molidas, unos segundos.",
+   "Mojar enseguida tras las especias molidas: se queman rápido.",
+   "Base aromática bien frita.",
+   "Ácido y frescor al final.",
+   "Mezclas perfumadas al final."
+  ],
+  "errors": [
+   {
+    "p": "Curry amargo",
+    "fix": "Especias molidas quemadas. Añádelas con el fuego bajo y moja enseguida."
+   },
+   {
+    "p": "Sabor crudo a especia",
+    "fix": "Especias sin freír. Fríelas en la grasa antes del líquido."
+   },
+   {
+    "p": "Salsa cortada con yogur",
+    "fix": "Yogur frío en salsa hirviendo. Témplalo antes y no hiervas fuerte."
+   }
+  ],
+  "history": "Los guisos especiados son la base de las cocinas de India, Sri Lanka, Tailandia, Malasia y otras zonas de Asia. La palabra curry se extendió con el comercio y la cocina colonial británica y hoy agrupa platos muy distintos.",
+  "uses": [
+   "Guisos de carne, pescado y verdura",
+   "Legumbres especiadas",
+   "Arroces",
+   "Platos de mediodía"
+  ],
+  "keep": "4–5 días en frío; mejoran al día siguiente. Se congelan bien sin las hierbas frescas.",
+  "pro": "Haz la base aromática y las pastas en tanda y congélalas. Cocina la proteína y termina al pedido con hierbas y ácido.",
+  "related": [
+   "pastas-de-especias",
+   "especias",
+   "coco",
+   "aromaticos-de-asia",
+   "guisos-largos",
+   "arroz-japones-y-al-vapor"
+  ]
+ },
+ {
+  "id": "robata-y-parrilla-japonesa",
+  "name": "Robata y parrilla japonesa",
+  "name_en": "Robata and Japanese grilling",
+  "cat": "tecnicas",
+  "group": "Asia",
+  "technique": "brasa",
+  "aka": [
+   "robata",
+   "yakitori",
+   "binchotan",
+   "konro",
+   "tare",
+   "brochetas japonesas",
+   "kushiyaki",
+   "tsukune"
+  ],
+  "summary": "Brochetas pequeñas sobre carbón muy caliente y limpio, a poca distancia, con sal o pintadas con tare.",
+  "what": "La parrilla japonesa cocina piezas pequeñas ensartadas en brochetas sobre un carbón vegetal muy denso que da un calor intenso y estable con poco humo. La parrilla es estrecha y las brochetas se apoyan en los bordes, sin rejilla, a pocos centímetros de las brasas, y se giran a menudo. El yakitori es la versión con pollo, en la que se aprovecha todo el animal: muslo, piel, alitas, corazones, albóndigas de carne picada.\n\nSe sazonan de dos formas: con sal, o pintadas con tare, una salsa de soja, vino dulce de arroz y azúcar reducida, que se enriquece con el jugo de las piezas que se mojan en ella.",
+  "method": [
+   "Corta las piezas del mismo tamaño y ensártalas apretadas, sin dejar huecos; las brochetas de madera, remojadas antes.",
+   "Enciende el carbón con tiempo hasta que esté cubierto de ceniza blanca; distribúyelo en zonas de más y menos calor.",
+   "Apoya las brochetas en los bordes de la parrilla, sin que la carne toque el metal; gira a menudo.",
+   "Con sal: sala antes de poner al fuego. Con tare: cocina casi del todo, pinta o sumerge en la tare y vuelve al fuego 2–3 veces hasta glasear.",
+   "Abanica las brasas para avivar el calor cuando haga falta."
+  ],
+  "ratios": [
+   {
+    "use": "Tare",
+    "ratio": "Soja, mirin y sake 1:1:1, con 10–15 % de azúcar",
+    "note": "Reducir a dos tercios."
+   },
+   {
+    "use": "Piezas de brocheta",
+    "ratio": "2–3 cm, 4–5 piezas por brocheta",
+    "note": "Del mismo tamaño."
+   },
+   {
+    "use": "Muslo de pollo",
+    "ratio": "75 °C en el centro",
+    "note": "6–8 minutos girando."
+   },
+   {
+    "use": "Distancia a la brasa",
+    "ratio": "5–8 cm",
+    "note": "Más lejos para la tare, que se quema."
+   }
+  ],
+  "variants": [
+   {
+    "id": "fuego-y-brasa",
+    "name": "Fuego y brasa",
+    "note": "Carbón y zonas de calor."
+   },
+   {
+    "id": "lacado-de-carnes",
+    "name": "Lacado",
+    "note": "Capas de tare sobre la pieza."
+   },
+   {
+    "id": "despiece-de-aves",
+    "name": "Despiece de aves",
+    "note": "Todas las partes del pollo."
+   },
+   {
+    "id": "soja-y-derivados",
+    "name": "Salsa de soja",
+    "note": "Base de la tare."
+   }
+  ],
+  "keys": [
+   "Piezas iguales y apretadas.",
+   "Carbón limpio y bien encendido, sin llama.",
+   "La carne no toca la parrilla.",
+   "Tare al final y en capas.",
+   "Gira a menudo y abanica."
+  ],
+  "errors": [
+   {
+    "p": "Brochetas quemadas por fuera y crudas dentro",
+    "fix": "Piezas grandes o brasa demasiado cerca. Corta más pequeño y sube la parrilla."
+   },
+   {
+    "p": "Tare amarga",
+    "fix": "Pintada desde el principio. Aplícala al final, lejos de la brasa más viva."
+   },
+   {
+    "p": "Palillos quemados",
+    "fix": "Sin remojar o expuestos. Remójalos y protege los extremos fuera del calor."
+   }
+  ],
+  "history": "Asar brochetas sobre carbón es una tradición de la comida popular japonesa, y el yakitori es uno de sus ejemplos más conocidos. La parrilla estrecha y el carbón denso de alta calidad son sus herramientas.",
+  "uses": [
+   "Brochetas de pollo y casquería",
+   "Verduras y setas",
+   "Pescados y mariscos",
+   "Bocados para compartir"
+  ],
+  "keep": "Brochetas montadas, 1 día en frío. La tare, semanas en frío; se va enriqueciendo con el uso.",
+  "pro": "Monta las brochetas antes del servicio y ordénalas por tiempos. Ten la tare en un recipiente alto junto a la parrilla.",
+  "related": [
+   "fuego-y-brasa",
+   "lacado-de-carnes",
+   "despiece-de-aves",
+   "soja-y-derivados",
+   "pollo-y-aves",
+   "casqueria"
+  ]
  }
 ]

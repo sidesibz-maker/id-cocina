@@ -6821,5 +6821,1527 @@
    "quesos-en-cocina",
    "acidez-en-cocina"
   ]
+ },
+ {
+  "id": "uva-y-pasas",
+  "name": "Uva y pasas",
+  "name_en": "Grapes and raisins",
+  "cat": "producto",
+  "group": "Fruta",
+  "aka": [
+   "uva",
+   "uvas",
+   "moscatel",
+   "pasas",
+   "pasas de moscatel",
+   "agraz",
+   "verjus",
+   "mosto",
+   "uvas asadas"
+  ],
+  "summary": "Fruta dulce y ácida de final de verano: fresca, asada con carnes, en agraz para aliñar y seca en pasas para guisos y rellenos.",
+  "what": "La uva de mesa es dulce, jugosa y de piel fina; la moscatel tiene un aroma floral muy reconocible. En cocina salada, las uvas asadas o salteadas acompañan muy bien carnes de caza, pato, cerdo y quesos, y crudas aportan frescor a ensaladas y crudos. El agraz es el zumo de la uva verde: un ácido suave y afrutado que se usa como un vinagre amable.\n\nLas pasas son uvas secas: concentran azúcar y aroma y se usan rehidratadas en guisos, rellenos, espinacas salteadas con piñones, cuscús o panes. El mosto (zumo de uva sin fermentar) y sus reducciones dan dulzor a salsas y postres.",
+  "method": [
+   "Uva fresca: lava justo antes de usar; pélala escaldándola 10–15 segundos si la piel es gruesa.",
+   "Uvas asadas: enteras o en racimos pequeños, con aceite, sal y una hierba, en horno fuerte hasta que se arruguen y suelten jugo.",
+   "En salsa: saltea uvas en la grasa de la carne al final y desglasa con un poco de vino o agraz.",
+   "Pasas: hidrátalas en agua tibia, vino o licor hasta que se hinchen; escúrrelas y guarda el líquido.",
+   "Agraz casero: tritura uva verde, cuela por paño y guarda en frío o congela en cubitos."
+  ],
+  "ratios": [
+   {
+    "use": "Uvas asadas",
+    "ratio": "200 °C, 15–20 minutos",
+    "note": "Hasta que revienten."
+   },
+   {
+    "use": "Pasas hidratadas",
+    "ratio": "20–30 minutos en líquido tibio",
+    "note": "Doblan casi su peso."
+   },
+   {
+    "use": "Espinacas con pasas y piñones",
+    "ratio": "30 g de pasas y 20 g de piñones por 500 g de espinaca",
+    "note": "Salteado rápido."
+   },
+   {
+    "use": "Agraz en aliño",
+    "ratio": "1 parte de agraz por 3 de aceite",
+    "note": "Más suave que el vinagre."
+   }
+  ],
+  "variants": [
+   {
+    "id": "fruta-asada",
+    "name": "Fruta asada",
+    "note": "Uvas y otras frutas al horno."
+   },
+   {
+    "id": "vinos-y-licores",
+    "name": "Vino y mosto",
+    "note": "Lo que sale de la uva fermentada."
+   },
+   {
+    "id": "caza-de-pluma",
+    "name": "Con caza",
+    "note": "Perdiz o codorniz con uvas."
+   },
+   {
+    "id": "chutneys-y-compotas-saladas",
+    "name": "Chutney de uva",
+    "note": "Para quesos y carnes."
+   }
+  ],
+  "keys": [
+   "La uva en salado pide grasa, sal y algo amargo.",
+   "Asada se concentra y se vuelve más golosa.",
+   "Agraz: un ácido suave cuando el vinagre es demasiado.",
+   "Hidrata las pasas en un líquido con sabor.",
+   "Moscatel para perfume; uva de mesa sin semilla para comodidad."
+  ],
+  "errors": [
+   {
+    "p": "Pasas duras en el guiso",
+    "fix": "Sin hidratar. Remójalas antes."
+   },
+   {
+    "p": "Uvas que se deshacen en la sartén",
+    "fix": "Demasiado tiempo. Añádelas al final, solo para calentar."
+   },
+   {
+    "p": "Plato empalagoso",
+    "fix": "Demasiada uva o pasas sin contraste. Añade ácido, sal o una hoja amarga."
+   }
+  ],
+  "history": "La vid se cultiva en el Mediterráneo desde la antigüedad, y las pasas fueron durante siglos una forma de guardar la uva todo el año. Las pasas de moscatel tienen larga tradición en el sur de la península.",
+  "uses": [
+   "Guarniciones de caza y cerdo",
+   "Ensaladas y quesos",
+   "Guisos y rellenos con pasas",
+   "Aliños con agraz",
+   "Postres"
+  ],
+  "keep": "Uva fresca, 1 semana en frío sin lavar. Pasas, meses en lugar seco y cerrado. Agraz, 1 semana en frío o congelado.",
+  "pro": "Ten pasas hidratadas en su líquido en frío para la semana. Asa uvas al pedido o en tanda pequeña.",
+  "related": [
+   "fruta-asada",
+   "vinos-y-licores",
+   "caza-de-pluma",
+   "chutneys-y-compotas-saladas",
+   "frutos-secos",
+   "acidez-en-cocina"
+  ]
+ },
+ {
+  "id": "trufa",
+  "name": "Trufa",
+  "name_en": "Truffle",
+  "cat": "producto",
+  "group": "Huerta y monte",
+  "aka": [
+   "trufa negra",
+   "trufa de invierno",
+   "trufa de verano",
+   "trufa blanca",
+   "melanosporum",
+   "mantequilla trufada",
+   "huevos trufados"
+  ],
+  "summary": "Un hongo subterráneo cuyo valor es el aroma: en crudo, sobre algo caliente y graso, y transmitido a huevos y grasas.",
+  "what": "La trufa es un hongo que crece bajo tierra, junto a las raíces de encinas, robles y avellanos. La trufa negra de invierno tiene un aroma intenso y profundo; la de verano es más suave y barata de conseguir; la blanca, de otoño, es la más perfumada. España es uno de los grandes productores de trufa negra, sobre todo de plantaciones del interior.\n\nSu sabor está casi todo en el aroma, que es volátil: se pierde con el calor fuerte y se transmite con facilidad a la grasa y al huevo. Por eso se usa rallada o laminada en el último momento sobre algo caliente y graso, o se deja junto a huevos, mantequilla o nata para que les pase su aroma.",
+  "method": [
+   "Limpia la trufa con un cepillo suave y apenas un poco de agua; sécala enseguida.",
+   "Guárdala envuelta en papel absorbente, en recipiente cerrado en frío, cambiando el papel cada día.",
+   "Pon huevos enteros en el mismo recipiente 1–2 días: la cáscara deja pasar el aroma.",
+   "Para servir, rállala o lamínala sobre el plato caliente justo al salir del pase.",
+   "Para cocinar, añádela en preparaciones suaves y grasas (mantequilla, nata, yema) sin hervir."
+  ],
+  "ratios": [
+   {
+    "use": "Trufa negra sobre un plato",
+    "ratio": "5–10 g por ración",
+    "note": "Laminada o rallada."
+   },
+   {
+    "use": "Mantequilla trufada",
+    "ratio": "30–40 g de trufa rallada por 250 g de mantequilla",
+    "note": "Reposo de 24 horas en frío."
+   },
+   {
+    "use": "Huevos trufados",
+    "ratio": "1–2 días junto a la trufa",
+    "note": "En recipiente cerrado."
+   },
+   {
+    "use": "Calor máximo",
+    "ratio": "Por debajo de 70 °C",
+    "note": "Más calor dispersa el aroma."
+   }
+  ],
+  "variants": [
+   {
+    "id": "setas",
+    "name": "Setas",
+    "note": "Otros hongos del monte."
+   },
+   {
+    "id": "mantequillas-compuestas",
+    "name": "Mantequilla trufada",
+    "note": "Para terminar platos."
+   },
+   {
+    "id": "puntos-del-huevo",
+    "name": "Huevo con trufa",
+    "note": "La pareja más clásica."
+   },
+   {
+    "id": "grasas-infusionadas",
+    "name": "Grasas trufadas",
+    "note": "Aroma pasado a la grasa."
+   }
+  ],
+  "keys": [
+   "Aroma volátil: calor suave y al final.",
+   "Grasa y huevo la transmiten mejor que nada.",
+   "Seca y en frío, con papel cambiado a diario.",
+   "Huevos y trufa en la misma caja: dos productos en uno.",
+   "Desconfía de aceites y salsas de trufa con aroma añadido: no saben a trufa fresca."
+  ],
+  "errors": [
+   {
+    "p": "No sabe a nada",
+    "fix": "Trufa vieja o cocinada en exceso. Úsala fresca y en crudo al final."
+   },
+   {
+    "p": "Trufa blanda o con moho",
+    "fix": "Humedad en el envase. Cambia el papel cada día y úsala pronto."
+   },
+   {
+    "p": "Sabor químico",
+    "fix": "Productos con aroma artificial. Usa trufa fresca o conservas de calidad."
+   }
+  ],
+  "history": "La trufa se aprecia en la cocina europea desde hace siglos, con Francia e Italia como referencias. En las últimas décadas, las plantaciones de encinas truferas han convertido a España en un gran productor de trufa negra.",
+  "uses": [
+   "Huevos",
+   "Pastas y arroces",
+   "Purés y cremas",
+   "Carnes y aves",
+   "Mantequillas y quesos"
+  ],
+  "keep": "Fresca, 7–10 días a 2–4 °C envuelta en papel cambiado a diario. Se puede congelar entera, aunque pierde algo de textura. La mantequilla trufada, congelada.",
+  "pro": "Compra en temporada en cantidades pequeñas y frecuentes. Ten huevos y mantequilla junto a la trufa para que trabajen. Pesa la ración en sala o en el pase.",
+  "related": [
+   "setas",
+   "mantequillas-compuestas",
+   "puntos-del-huevo",
+   "grasas-infusionadas",
+   "pures-de-verdura",
+   "huevos"
+  ]
+ },
+ {
+  "id": "azafran",
+  "name": "Azafrán",
+  "name_en": "Saffron",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "azafrán en hebra",
+   "hebras de azafrán",
+   "azafrán de La Mancha",
+   "azafrán molido",
+   "infusión de azafrán"
+  ],
+  "summary": "Los estigmas de una flor: color, aroma y un amargor elegante en dosis de décimas de gramo.",
+  "what": "El azafrán son los estigmas secos de la flor de un tipo de crocus, recogidos a mano uno a uno: por eso es tan valioso. Aporta un color amarillo anaranjado intenso, un aroma floral y un ligero amargor. En la península tiene una larga tradición, sobre todo en La Mancha.\n\nSe compra mejor en hebra, de origen conocido, porque el molido es más fácil de adulterar. Su color y su aroma se extraen en líquido caliente, así que lo habitual es tostarlo apenas e infusionarlo antes de añadirlo. Es esencial en arroces, guisos de pescado, sopas y en algunos dulces. Un exceso da un sabor medicinal y amargo.",
+  "method": [
+   "Pesa: las dosis son muy pequeñas y un exceso estropea el plato.",
+   "Tuesta las hebras unos segundos en sartén seca o sobre papel junto al fuego, sin que se oscurezcan.",
+   "Desmenúzalas y ponlas en un poco de caldo o agua caliente 10–15 minutos.",
+   "Añade la infusión al plato con el líquido, para que se reparta por igual.",
+   "Guarda el azafrán en recipiente hermético, a oscuras y en seco."
+  ],
+  "ratios": [
+   {
+    "use": "Arroz para 4–6 raciones",
+    "ratio": "0,1–0,2 g de hebras",
+    "note": "Una pizca generosa."
+   },
+   {
+    "use": "Infusión",
+    "ratio": "Líquido caliente, 10–15 minutos",
+    "note": "Sin hervir."
+   },
+   {
+    "use": "Guiso de pescado",
+    "ratio": "0,05 g por litro",
+    "note": "Ajustar probando."
+   },
+   {
+    "use": "Alioli o mayonesa de azafrán",
+    "ratio": "0,05 g infusionado en 10 ml de agua por 250 g",
+    "note": "Color y aroma."
+   }
+  ],
+  "variants": [
+   {
+    "id": "arroces",
+    "name": "Arroces",
+    "note": "Su uso más conocido."
+   },
+   {
+    "id": "caldo-de-roca",
+    "name": "Caldos de pescado",
+    "note": "Con azafrán y tomate."
+   },
+   {
+    "id": "alioli",
+    "name": "Alioli de azafrán",
+    "note": "Para pescados y arroces."
+   },
+   {
+    "id": "especias",
+    "name": "Especias",
+    "note": "Cómo tratar el resto."
+   }
+  ],
+  "keys": [
+   "Hebra mejor que molido.",
+   "Tostar apenas e infusionar antes.",
+   "Décimas de gramo: pesa.",
+   "A oscuras y cerrado.",
+   "Mucho no es mejor: amarga."
+  ],
+  "errors": [
+   {
+    "p": "Sabor medicinal o amargo",
+    "fix": "Exceso de azafrán. Pesa la dosis."
+   },
+   {
+    "p": "Color irregular en el arroz",
+    "fix": "Hebras añadidas en seco. Infusiona antes y añade con el caldo."
+   },
+   {
+    "p": "Sin aroma",
+    "fix": "Azafrán viejo o mal guardado. Compra en pequeñas cantidades y guárdalo bien."
+   }
+  ],
+  "history": "El azafrán llegó a la península con la cocina andalusí y se cultivó ampliamente en el interior, con La Mancha como zona de referencia. Es una especia ligada a los arroces y a muchos guisos mediterráneos.",
+  "uses": [
+   "Arroces",
+   "Guisos y caldos de pescado",
+   "Salsas y emulsiones",
+   "Panes y dulces",
+   "Infusiones"
+  ],
+  "keep": "Hermético, en lugar seco, fresco y oscuro, hasta 1–2 años; pierde aroma con el tiempo.",
+  "pro": "Ten el azafrán pesado en dosis para cada arroz o guiso, en pequeños sobres o tarros. La infusión, preparada antes del servicio.",
+  "related": [
+   "arroces",
+   "especias",
+   "caldo-de-roca",
+   "alioli",
+   "pescado-de-roca",
+   "pimenton-y-noras"
+  ]
+ },
+ {
+  "id": "pimenton-y-noras",
+  "name": "Pimentón y ñoras",
+  "name_en": "Paprika and ñora peppers",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "pimentón",
+   "pimentón de la Vera",
+   "pimentón ahumado",
+   "pimentón dulce",
+   "pimentón picante",
+   "ñora",
+   "pimiento seco"
+  ],
+  "summary": "El pimiento seco en polvo o entero: color, dulzor, humo o picante, y un sabor que se quema en segundos.",
+  "what": "El pimentón es pimiento rojo secado y molido. Puede ser dulce, agridulce o picante, según la variedad. El de la Vera se seca con humo de leña y tiene un sabor ahumado muy marcado; el secado al sol da un pimentón sin humo, de sabor más limpio. Es la base de [[adobo|adobos]], embutidos como la [[sobrasada-y-embutidos|sobrasada]], guisos de patata, pulpo y arroces.\n\nLa ñora es un pimiento rojo pequeño y redondo que se seca entero: no pica, es dulce y algo amargo, y se usa hidratada (raspando su carne) o frita y majada en [[romesco]], arroces y salsas. El pimiento choricero, alargado, se usa de la misma manera en el norte.",
+  "method": [
+   "Pimentón: añádelo con el fuego bajo o apartado, sobre la grasa caliente, unos segundos, y moja enseguida con el líquido.",
+   "Para aliñar en crudo (pulpo, patatas, huevos), espolvorea al final con buen aceite.",
+   "Ñora hidratada: abre, quita pepitas, remoja en agua caliente 30–40 minutos y raspa la carne.",
+   "Ñora frita: entera y sin pepitas, unos segundos en aceite caliente hasta que cambie de color; majada en salsas.",
+   "Guarda el pimentón bien cerrado y a oscuras: pierde color y sabor con la luz y el aire."
+  ],
+  "ratios": [
+   {
+    "use": "Pimentón en un sofrito",
+    "ratio": "5–10 g por litro de guiso",
+    "note": "Fuera del fuego y mojar enseguida."
+   },
+   {
+    "use": "Ñoras para un arroz",
+    "ratio": "2–3 ñoras para 4–6 raciones",
+    "note": "Fritas y majadas o hidratadas."
+   },
+   {
+    "use": "Hidratado de ñora",
+    "ratio": "Agua caliente, 30–40 minutos",
+    "note": "Guarda el agua para el caldo."
+   },
+   {
+    "use": "Ñora frita",
+    "ratio": "Aceite a 160 °C, 5–10 segundos",
+    "note": "Más tiempo amarga."
+   }
+  ],
+  "variants": [
+   {
+    "id": "romesco",
+    "name": "Romesco",
+    "note": "Con ñora, frutos secos y tomate."
+   },
+   {
+    "id": "adobo",
+    "name": "Adobo",
+    "note": "Pimentón, ajo, orégano y vinagre."
+   },
+   {
+    "id": "pimientos",
+    "name": "Pimientos",
+    "note": "Frescos y asados."
+   },
+   {
+    "id": "pastas-de-especias",
+    "name": "Pasta de ñora",
+    "note": "Ñora hidratada triturada con aceite."
+   }
+  ],
+  "keys": [
+   "El pimentón se quema en segundos: fuera del fuego y líquido enseguida.",
+   "Ahumado o no ahumado son dos ingredientes distintos.",
+   "Ñora sin pepitas: amargan.",
+   "Pimentón fresco: cómpralo en poca cantidad.",
+   "El agua de hidratar la ñora es sabor: al caldo."
+  ],
+  "errors": [
+   {
+    "p": "Guiso amargo y marrón",
+    "fix": "Pimentón quemado. Añádelo con el fuego apartado y moja rápido."
+   },
+   {
+    "p": "Sabor plano",
+    "fix": "Pimentón viejo. Cámbialo por uno fresco y guárdalo a oscuras."
+   },
+   {
+    "p": "Salsa de ñora amarga",
+    "fix": "Pepitas o ñora frita de más. Limpia bien y fríela solo unos segundos."
+   }
+  ],
+  "history": "El pimiento llegó de América y en la península se secó y se molió muy pronto, dando lugar al pimentón, uno de los condimentos más característicos de la cocina española. La ñora es propia del sureste y del Levante.",
+  "uses": [
+   "Adobos y embutidos",
+   "Guisos y arroces",
+   "Pulpo y patatas",
+   "Salsas como el romesco",
+   "Aceites especiados"
+  ],
+  "keep": "Pimentón, cerrado y a oscuras, unos meses en su mejor punto. Ñoras secas, meses en lugar seco; la carne raspada, congelada.",
+  "pro": "Ten pimentón dulce, picante y ahumado bien etiquetados. Hidrata ñoras en tanda y congela la carne en porciones.",
+  "related": [
+   "pimientos",
+   "romesco",
+   "adobo",
+   "especias",
+   "sobrasada-y-embutidos",
+   "arroces",
+   "azafran"
+  ]
+ },
+ {
+  "id": "vainilla-y-cacao",
+  "name": "Vainilla y cacao",
+  "name_en": "Vanilla and cacao",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "vainilla",
+   "vaina de vainilla",
+   "extracto de vainilla",
+   "cacao",
+   "cacao en polvo",
+   "nibs de cacao",
+   "cacao puro",
+   "chocolate en salado"
+  ],
+  "summary": "Dos aromas de la pastelería que también trabajan en salado: vainilla con marisco y mantequilla, cacao con caza y guisos.",
+  "what": "La vainilla es el fruto curado de una orquídea. Su aroma está en las semillas y en la vaina, que se infusiona en líquidos calientes y grasas. Es mejor la vaina o el extracto natural que los aromas de vainillina, más planos.\n\nEl cacao viene de las semillas fermentadas, secas y tostadas del árbol del cacao. Las semillas troceadas son los nibs: crujientes, amargos y aromáticos. El cacao en polvo puede ser natural, más ácido, o alcalinizado, más oscuro y suave. Con él se hace el [[chocolate-y-templado|chocolate]]. En salado, un poco de cacao o chocolate negro da profundidad a guisos de caza y salsas oscuras.",
+  "method": [
+   "Vainilla: abre la vaina a lo largo, raspa las semillas y pon semillas y vaina en el líquido caliente; tapa e infusiona.",
+   "Lava y seca la vaina usada y guárdala en azúcar: en unas semanas tendrás azúcar de vainilla.",
+   "En salado, infusiona vainilla en mantequilla para pescados blancos y mariscos, con mesura.",
+   "Cacao en salsas: añade cacao puro o chocolate negro al final de un guiso de caza, poco a poco y probando.",
+   "Nibs: tuéstalos ligeramente para despertar el aroma y úsalos como crujiente en salado o dulce."
+  ],
+  "ratios": [
+   {
+    "use": "Vainilla en leche o nata",
+    "ratio": "1 vaina por litro, a 80 °C, 20–30 minutos",
+    "note": "Tapado."
+   },
+   {
+    "use": "Mantequilla de vainilla",
+    "ratio": "½ vaina por 250 g de mantequilla",
+    "note": "Para marisco y pescado."
+   },
+   {
+    "use": "Chocolate en guiso de caza",
+    "ratio": "10–20 g de chocolate negro por litro de salsa",
+    "note": "Al final, probando."
+   },
+   {
+    "use": "Nibs como crujiente",
+    "ratio": "3–5 g por ración",
+    "note": "Tostados un instante."
+   }
+  ],
+  "variants": [
+   {
+    "id": "chocolate-y-templado",
+    "name": "Chocolate",
+    "note": "Templado y usos en pastelería."
+   },
+   {
+    "id": "crema-inglesa",
+    "name": "Crema de vainilla",
+    "note": "Leche infusionada y ligada con yemas."
+   },
+   {
+    "id": "caza-de-pluma",
+    "name": "Caza con cacao",
+    "note": "Salsas oscuras con un punto de chocolate."
+   },
+   {
+    "id": "infusiones",
+    "name": "Infusiones",
+    "note": "Cómo extraer el aroma."
+   }
+  ],
+  "keys": [
+   "Vaina o extracto natural mejor que aroma.",
+   "La vaina usada todavía perfuma.",
+   "En salado, poca cantidad: debe intuirse, no dominar.",
+   "El cacao da amargor y profundidad a lo oscuro y graso.",
+   "Nibs: un crujiente amargo sin azúcar."
+  ],
+  "errors": [
+   {
+    "p": "Plato salado que sabe a postre",
+    "fix": "Demasiada vainilla o chocolate. Reduce la dosis."
+   },
+   {
+    "p": "Vainilla sin aroma",
+    "fix": "Vaina seca y vieja. Guárdala cerrada y úsala flexible."
+   },
+   {
+    "p": "Salsa granulosa con cacao",
+    "fix": "Cacao en polvo añadido en seco. Disuélvelo antes en un poco de líquido caliente."
+   }
+  ],
+  "history": "Vainilla y cacao llegaron de Mesoamérica tras el contacto con América. En España, el chocolate se popularizó pronto como bebida, y en algunas cocinas regionales aparece en guisos de caza.",
+  "uses": [
+   "Cremas, helados y postres",
+   "Mantequillas y salsas para marisco",
+   "Guisos de caza",
+   "Crujientes",
+   "Masas"
+  ],
+  "keep": "Vainas, en tubo o bote hermético, en lugar fresco; nunca en frío, que las seca. Cacao y nibs, cerrados y secos, meses.",
+  "pro": "Guarda las vainas usadas en un bote de azúcar. Ten nibs tostados en bote para acabados.",
+  "related": [
+   "chocolate-y-templado",
+   "crema-inglesa",
+   "infusiones",
+   "caza-de-pluma",
+   "helados-y-sorbetes",
+   "mantequillas-compuestas"
+  ]
+ },
+ {
+  "id": "cafe-y-te-en-cocina",
+  "name": "Café y té en cocina",
+  "name_en": "Coffee and tea in cooking",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "café",
+   "café molido",
+   "rub de café",
+   "té",
+   "té verde",
+   "matcha",
+   "té ahumado",
+   "ahumado con té"
+  ],
+  "summary": "Amargor, tostado y humo para salado y dulce: café molido en carnes y salsas, té para infusionar, curar o ahumar.",
+  "what": "El café aporta amargor, aroma tostado y acidez. Molido fino, se usa en mezclas secas para carnes de brasa; en extracción, en salsas oscuras, reducciones y glaseados, y en postres. El té aporta taninos, aroma y, según el tipo, notas verdes, florales o ahumadas: el té verde y el matcha (té verde molido) son vegetales y algo amargos; los negros, más tánicos; algunos tés se secan con humo y saben a hoguera.\n\nCon té, arroz y azúcar se hace además un ahumado rápido en wok o cazuela, una técnica tradicional de la cocina china para aves, pescados y tofu.",
+  "method": [
+   "Café en mezcla seca: muélelo fino y mézclalo con sal, azúcar y especias; frota la carne antes de la brasa.",
+   "Café en salsa: añade un poco de café recién hecho o extracción en frío a un jugo oscuro y reduce; prueba enseguida, amarga rápido.",
+   "Té en infusión: respeta la temperatura de cada té y cuela a tiempo.",
+   "Matcha: tamiza y bate con agua a 70–80 °C hasta que no queden grumos; añádelo a cremas, masas o aliños.",
+   "Ahumado con té: forra un wok con papel de aluminio, pon arroz, azúcar y té, una rejilla encima con la pieza, tapa y calienta."
+  ],
+  "ratios": [
+   {
+    "use": "Mezcla seca de café",
+    "ratio": "Café molido, sal y azúcar moreno a partes iguales",
+    "note": "Con pimentón o pimienta."
+   },
+   {
+    "use": "Matcha",
+    "ratio": "2 g por 60–80 ml de agua a 70–80 °C",
+    "note": "Batido hasta espumar."
+   },
+   {
+    "use": "Ahumado con té",
+    "ratio": "Arroz, azúcar y té a partes iguales",
+    "note": "10–15 minutos tapado a fuego medio."
+   },
+   {
+    "use": "Café en un jugo",
+    "ratio": "10–20 ml por 200 ml de jugo",
+    "note": "Al final."
+   }
+  ],
+  "variants": [
+   {
+    "id": "rubs-y-mezclas-secas",
+    "name": "Mezclas secas",
+    "note": "Con café para la brasa."
+   },
+   {
+    "id": "infusiones",
+    "name": "Infusiones",
+    "note": "Temperaturas y tiempos de té y café."
+   },
+   {
+    "id": "ahumado",
+    "name": "Ahumado",
+    "note": "Otras formas de dar humo."
+   },
+   {
+    "id": "maridaje-sin-alcohol",
+    "name": "Bebidas sin alcohol",
+    "note": "Tés y cafés fríos para acompañar."
+   }
+  ],
+  "keys": [
+   "Café y té amargan rápido: dosis pequeñas y al final.",
+   "Respeta la temperatura de cada té.",
+   "El café va bien con carnes de brasa, cacao, cítrico y caramelo.",
+   "El matcha, tamizado o hará grumos.",
+   "Ahumado con té: corto y tapado; si humea negro, amarga."
+  ],
+  "errors": [
+   {
+    "p": "Salsa amarga",
+    "fix": "Demasiado café o reducido de más. Añádelo al final y en poca cantidad."
+   },
+   {
+    "p": "Matcha con grumos",
+    "fix": "Sin tamizar o agua fría. Tamiza y bate con agua a 70–80 °C."
+   },
+   {
+    "p": "Ahumado con sabor a quemado",
+    "fix": "Fuego alto o mucho tiempo. Fuego medio y 10–15 minutos."
+   }
+  ],
+  "history": "El café y el té son bebidas con siglos de historia en Oriente Medio y Asia. Su uso como ingrediente de platos salados y postres se ha extendido en la cocina contemporánea; el ahumado con té es una técnica antigua de la cocina china.",
+  "uses": [
+   "Carnes de brasa",
+   "Salsas oscuras y glaseados",
+   "Postres y helados",
+   "Curados y ahumados",
+   "Bebidas sin alcohol"
+  ],
+  "keep": "Café en grano, cerrado y a oscuras, semanas; molido, días. Té, cerrado, lejos de olores y de la luz, meses; el matcha, en frío.",
+  "pro": "Muele el café para cocina en el momento. Prepara la mezcla de ahumado en bote y ten un wok viejo para ahumar.",
+  "related": [
+   "rubs-y-mezclas-secas",
+   "infusiones",
+   "ahumado",
+   "maridaje-sin-alcohol",
+   "vainilla-y-cacao",
+   "lacado-de-carnes"
+  ]
+ },
+ {
+  "id": "maiz",
+  "name": "Maíz",
+  "name_en": "Corn",
+  "cat": "producto",
+  "group": "Huerta",
+  "aka": [
+   "maíz dulce",
+   "mazorca",
+   "elote",
+   "polenta",
+   "harina de maíz",
+   "masa de maíz",
+   "palomitas",
+   "crema de maíz"
+  ],
+  "summary": "Del grano dulce de la mazorca a la sémola de la polenta y la masa de las tortillas: un cereal con muchas caras.",
+  "what": "El maíz dulce se cosecha tierno y se come como verdura: los granos son dulces y jugosos, y la mazorca a la brasa es un clásico de verano. El maíz seco, más duro y con más almidón, se muele para polenta y harinas, o se cuece con cal para hacer la masa de tortillas y tamales. Algunas variedades explotan con el calor (palomitas).\n\nAl cortar los granos de la mazorca fresca, el raspado del corazón suelta una leche dulce y espesa que liga cremas y salsas. Y las mazorcas sin granos dan un caldo dulce y vegetal.",
+  "method": [
+   "Mazorca fresca: elige hojas verdes y granos llenos que sueltan jugo al apretar con la uña.",
+   "A la brasa: sin hojas, untada de aceite o mantequilla, girando a fuego medio hasta que los granos se tuesten en algunos puntos.",
+   "Desgranar: apoya la mazorca de pie en un bol y corta de arriba abajo; raspa luego con el dorso del cuchillo para sacar la leche.",
+   "Crema de maíz: granos y leche con un poco de cebolla pochada, caldo de mazorcas y mantequilla; tritura y cuela.",
+   "Polenta: vierte la sémola en lluvia sobre el líquido hirviendo, batiendo, y cocina a fuego suave removiendo hasta que se separe de las paredes."
+  ],
+  "ratios": [
+   {
+    "use": "Mazorca a la brasa",
+    "ratio": "Brasa media, 8–12 minutos",
+    "note": "Girando a menudo."
+   },
+   {
+    "use": "Mazorca cocida",
+    "ratio": "4–6 minutos en agua hirviendo",
+    "note": "Sin sal: la sal endurece la piel."
+   },
+   {
+    "use": "Polenta",
+    "ratio": "1 parte de sémola por 4–5 de líquido",
+    "note": "30–45 minutos; la instantánea, 5."
+   },
+   {
+    "use": "Caldo de mazorcas",
+    "ratio": "6 mazorcas sin grano por 2 l de agua",
+    "note": "40 minutos."
+   }
+  ],
+  "variants": [
+   {
+    "id": "chiles-y-salsas-mexicanas",
+    "name": "Salsas mexicanas",
+    "note": "Para mazorcas y tortillas."
+   },
+   {
+    "id": "pures-de-verdura",
+    "name": "Crema de maíz",
+    "note": "Lisa y dulce."
+   },
+   {
+    "id": "verduras-a-la-brasa",
+    "name": "Mazorca a la brasa",
+    "note": "Con mantequilla, lima y queso."
+   },
+   {
+    "id": "harinas-y-almidones",
+    "name": "Harinas de maíz",
+    "note": "Sin gluten; para masas y rebozados."
+   }
+  ],
+  "keys": [
+   "El maíz dulce pierde dulzor tras la cosecha: cuanto más fresco, mejor.",
+   "Raspa la mazorca: la leche es la mejor ligazón.",
+   "Las mazorcas peladas, al caldo.",
+   "Polenta: en lluvia, batiendo y con paciencia.",
+   "Lima, chile, queso salado y mantequilla: sus compañeros naturales."
+  ],
+  "errors": [
+   {
+    "p": "Granos duros y harinosos",
+    "fix": "Maíz pasado o cocido de más. Compra fresco y cuece poco."
+   },
+   {
+    "p": "Polenta con grumos",
+    "fix": "Sémola echada de golpe. Viértela en lluvia, batiendo."
+   },
+   {
+    "p": "Mazorca quemada por fuera y fría dentro",
+    "fix": "Fuego demasiado vivo. Brasa media o precocida."
+   }
+  ],
+  "history": "El maíz se domesticó en Mesoamérica hace miles de años y es la base de las cocinas de América. Llegó a Europa tras el contacto con América y en algunas zonas, como el norte de Italia o la cornisa cantábrica, dio lugar a polentas, panes y tortas propias.",
+  "uses": [
+   "Mazorcas a la brasa",
+   "Cremas y salsas",
+   "Polentas",
+   "Tortillas y masas",
+   "Ensaladas y guarniciones"
+  ],
+  "keep": "Mazorcas frescas, 1–2 días en frío con hojas. Granos escaldados, congelados meses. Sémola y harinas, en seco y cerrado.",
+  "pro": "Desgrana en tanda y guarda granos y leche por separado. Haz caldo con las mazorcas el mismo día. La polenta se puede extender en bandeja, enfriar y cortar para dorar.",
+  "related": [
+   "chiles-y-salsas-mexicanas",
+   "pures-de-verdura",
+   "verduras-a-la-brasa",
+   "harinas-y-almidones",
+   "leche-nata-y-mantequilla",
+   "caldo-de-verduras"
+  ]
+ },
+ {
+  "id": "soja-y-derivados",
+  "name": "Soja y derivados",
+  "name_en": "Soy and soy products",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "soja",
+   "salsa de soja",
+   "tamari",
+   "tofu",
+   "tofu sedoso",
+   "edamame",
+   "leche de soja",
+   "yuba"
+  ],
+  "summary": "Una legumbre que da salsa, tofu, leche y vainas verdes: umami, proteína y textura en cocinas de todo el mundo.",
+  "what": "La soja es una legumbre de la que salen muchos productos. El edamame es la vaina verde, cocida y salada. La salsa de soja es un fermentado de soja, trigo y sal, salado y lleno de umami; el tamari se hace con poco o ningún trigo. El [[miso-y-koji|miso]] es una pasta fermentada. La leche de soja, cuajada, da el tofu: firme, que se puede prensar, freír y marinar, o sedoso, como una crema. La piel que se forma al calentar la leche es la yuba.\n\nLa soja es un alérgeno: hay que señalarlo en cada plato.",
+  "method": [
+   "Edamame: cuece las vainas en agua con sal y escurre; sirve con sal en escamas o salteadas con ajo y chile.",
+   "Tofu firme: envuélvelo en un paño y prénsalo con peso para sacar agua; así se dora y absorbe marinadas.",
+   "Corta, seca, enharina ligeramente con almidón y fríe o dora en sartén hasta que esté crujiente.",
+   "Tofu sedoso: sin prensar, con cuchara, frío con aliños o batido como base de cremas.",
+   "Salsa de soja: úsala como sal con umami en marinadas, aliños, glaseados y caldos; añádela poco a poco y prueba."
+  ],
+  "ratios": [
+   {
+    "use": "Edamame",
+    "ratio": "3–5 minutos en agua con 20 g de sal por litro",
+    "note": "Escurrir y salar."
+   },
+   {
+    "use": "Prensado del tofu firme",
+    "ratio": "20–30 minutos con 1–2 kg de peso",
+    "note": "Envuelto en paño."
+   },
+   {
+    "use": "Tofu frito",
+    "ratio": "180 °C, 3–5 minutos",
+    "note": "Pasado por almidón."
+   },
+   {
+    "use": "Marinada de soja",
+    "ratio": "1 parte de soja por 1 de agua o caldo y algo dulce",
+    "note": "30 minutos a 2 horas."
+   }
+  ],
+  "variants": [
+   {
+    "id": "miso-y-koji",
+    "name": "Miso",
+    "note": "Pasta fermentada de soja."
+   },
+   {
+    "id": "ponzu-y-salsas-citricas",
+    "name": "Ponzu",
+    "note": "Soja con cítrico."
+   },
+   {
+    "id": "legumbres",
+    "name": "Otras legumbres",
+    "note": "Remojo y cocción."
+   },
+   {
+    "id": "salteado-y-wok",
+    "name": "Salteados",
+    "note": "Tofu y soja en el wok."
+   }
+  ],
+  "keys": [
+   "Salsa de soja = sal + umami: reduce la sal del plato.",
+   "Tofu firme prensado: dora mejor y absorbe más.",
+   "Tofu sedoso, con cuidado: se rompe.",
+   "Elige salsas de soja fermentadas de forma natural.",
+   "Alérgeno: señálalo siempre."
+  ],
+  "errors": [
+   {
+    "p": "Plato demasiado salado",
+    "fix": "Soja más sal. Usa la soja como sal y prueba antes de añadir más."
+   },
+   {
+    "p": "Tofu que no dora y se rompe",
+    "fix": "Sin prensar ni secar. Prénsalo, sécalo y enharina con almidón."
+   },
+   {
+    "p": "Glaseado de soja quemado",
+    "fix": "Reducido a fuego fuerte con azúcar. Fuego medio y al final."
+   }
+  ],
+  "history": "La soja se cultiva en Asia oriental desde hace milenios; la salsa de soja, el miso y el tofu son pilares de las cocinas china, japonesa y coreana. Se extendieron por el mundo durante el siglo XX.",
+  "uses": [
+   "Aliños y marinadas",
+   "Glaseados",
+   "Salteados",
+   "Platos vegetales con tofu",
+   "Aperitivos con edamame"
+  ],
+  "keep": "Salsa de soja abierta, meses en frío. Tofu abierto, 3–4 días en frío en agua cambiada a diario. Edamame congelado, meses.",
+  "pro": "Prensa el tofu por la mañana y porciónalo. Ten la soja en biberón con la dosis por plato apuntada.",
+  "related": [
+   "miso-y-koji",
+   "ponzu-y-salsas-citricas",
+   "legumbres",
+   "salteado-y-wok",
+   "umami-y-fondo",
+   "sesamo"
+  ]
+ },
+ {
+  "id": "sesamo",
+  "name": "Sésamo y tahina",
+  "name_en": "Sesame and tahini",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "sésamo",
+   "ajonjolí",
+   "sésamo negro",
+   "sésamo tostado",
+   "aceite de sésamo",
+   "tahina",
+   "tahini",
+   "gomasio"
+  ],
+  "summary": "Semilla pequeña de mucho sabor: tostada para crujir, molida en tahina y en aceite tostado para perfumar.",
+  "what": "El sésamo es una semilla pequeña y grasa que gana mucho al tostarse. El blanco es suave; el negro, más intenso y algo amargo. Molido se convierte en tahina, una pasta densa base de salsas de Oriente Medio como la [[salsa-tahina-limon|salsa de tahina]] o el hummus. El aceite de sésamo tostado es oscuro y muy aromático: se usa en gotas para terminar, no para freír. El crudo, claro, es más neutro.\n\nEl gomasio, sésamo tostado molido con sal, es un condimento japonés. El sésamo es un alérgeno que hay que señalar.",
+  "method": [
+   "Tuesta el sésamo en sartén seca a fuego medio, moviendo, o en horno, hasta que huela y empiece a dorar; retíralo enseguida.",
+   "Tahina: tritura sésamo ligeramente tostado y templado hasta que suelte su grasa; añade un poco de aceite neutro si hace falta.",
+   "Remueve bien la tahina antes de usarla: la grasa se separa.",
+   "Para salsas, aligera la tahina con agua fría, limón y sal: primero se espesa y luego se vuelve cremosa.",
+   "El aceite de sésamo tostado, solo unas gotas y al final."
+  ],
+  "ratios": [
+   {
+    "use": "Sésamo tostado",
+    "ratio": "150–160 °C, 5–8 minutos",
+    "note": "O sartén, 2–4 minutos."
+   },
+   {
+    "use": "Gomasio",
+    "ratio": "8–10 partes de sésamo por 1 de sal",
+    "note": "Tostados y molidos juntos."
+   },
+   {
+    "use": "Salsa de tahina",
+    "ratio": "100 g de tahina, 60–80 ml de agua, zumo de ½ limón",
+    "note": "Con ajo y sal."
+   },
+   {
+    "use": "Aceite de sésamo tostado",
+    "ratio": "Unas gotas por ración",
+    "note": "Domina enseguida."
+   }
+  ],
+  "variants": [
+   {
+    "id": "salsa-tahina-limon",
+    "name": "Salsa de tahina y limón",
+    "note": "Para verduras, cordero y pescado."
+   },
+   {
+    "id": "untables-de-legumbre",
+    "name": "Hummus y untables",
+    "note": "Legumbre con tahina."
+   },
+   {
+    "id": "crujientes-salados",
+    "name": "Crujientes de sésamo",
+    "note": "Tejas y láminas."
+   },
+   {
+    "id": "sales-aromaticas",
+    "name": "Sal de sésamo",
+    "note": "El gomasio y otras sales."
+   }
+  ],
+  "keys": [
+   "Tostar justo: se quema en segundos.",
+   "Tahina bien removida.",
+   "El aceite tostado perfuma, no fríe.",
+   "Negro y blanco tienen sabores distintos.",
+   "Alérgeno: señálalo."
+  ],
+  "errors": [
+   {
+    "p": "Sésamo amargo",
+    "fix": "Tostado de más. Retíralo en cuanto dore y huela."
+   },
+   {
+    "p": "Salsa de tahina cortada y espesa",
+    "fix": "Poca agua. Sigue añadiendo agua fría y batiendo hasta que se vuelva cremosa."
+   },
+   {
+    "p": "Plato que solo sabe a sésamo",
+    "fix": "Demasiado aceite tostado. Unas gotas bastan."
+   }
+  ],
+  "history": "El sésamo es uno de los cultivos de semilla oleaginosa más antiguos, presente en la cocina de Oriente Medio, India y Asia oriental. La tahina es base de muchas salsas y dulces del Mediterráneo oriental.",
+  "uses": [
+   "Salsas y untables",
+   "Crujientes y acabados",
+   "Aliños asiáticos",
+   "Panes y masas",
+   "Dulces"
+  ],
+  "keep": "Sésamo crudo, meses en lugar fresco y cerrado; tostado, semanas. Tahina, meses cerrada. Aceite tostado, cerrado y a oscuras.",
+  "pro": "Tuesta por tandas pequeñas. Ten tahina ya aligerada en biberón para el servicio.",
+  "related": [
+   "salsa-tahina-limon",
+   "untables-de-legumbre",
+   "crujientes-salados",
+   "sales-aromaticas",
+   "frutos-secos",
+   "soja-y-derivados"
+  ]
+ },
+ {
+  "id": "aromaticos-de-asia",
+  "name": "Jengibre, hierba limón y aromáticos de Asia",
+  "name_en": "Ginger, lemongrass and Asian aromatics",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "jengibre",
+   "galanga",
+   "hierba limón",
+   "lemongrass",
+   "hojas de lima kaffir",
+   "cúrcuma fresca",
+   "raíz de cilantro",
+   "chile ojo de pájaro"
+  ],
+  "summary": "Raíces, tallos y hojas frescas que perfuman caldos, salteados, curries y aliños con picor, cítrico y frescor.",
+  "what": "Muchas cocinas del sudeste y el este de Asia se apoyan en un grupo de aromáticos frescos. El jengibre es picante y fresco; la galanga, de la misma familia, es más resinosa y cítrica. La hierba limón (lemongrass) es un tallo duro con aroma a limón sin acidez. Las hojas de lima kaffir son muy perfumadas. La cúrcuma fresca colorea y aporta un amargor terroso. La raíz de cilantro, más intensa que la hoja, va machacada en pastas.\n\nSe usan de dos maneras: en trozos grandes que se infusionan y se retiran (caldos, curries), o picados y majados en pastas y aliños que se comen.",
+  "method": [
+   "Jengibre: pélalo raspando con una cuchara; rállalo, pícalo fino o lamínalo según el uso.",
+   "Hierba limón: quita las hojas exteriores duras, usa la parte baja y blanca; golpéala con el lomo del cuchillo para infusionar, o pica muy fino para comer.",
+   "Hojas de lima: rompe o retuerce para infusionar; para comer, quita el nervio y corta en hilos muy finos.",
+   "Pastas aromáticas: maja o tritura los aromáticos con sal, chile y un poco de aceite; fríe la pasta en aceite antes de mojar.",
+   "Infusión en caldo: añade los trozos al caldo caliente sin hervir fuerte y retíralos al colar."
+  ],
+  "ratios": [
+   {
+    "use": "Hierba limón en caldo",
+    "ratio": "2–3 tallos por litro, 20 minutos",
+    "note": "Golpeados."
+   },
+   {
+    "use": "Jengibre en caldo",
+    "ratio": "10–20 g por litro",
+    "note": "En láminas."
+   },
+   {
+    "use": "Hojas de lima",
+    "ratio": "3–4 hojas por litro",
+    "note": "Retirar al servir."
+   },
+   {
+    "use": "Jengibre encurtido",
+    "ratio": "Láminas finas en vinagre de arroz, azúcar y sal",
+    "note": "Escaldadas antes."
+   }
+  ],
+  "variants": [
+   {
+    "id": "pastas-de-especias",
+    "name": "Pastas de curry",
+    "note": "Aromáticos majados."
+   },
+   {
+    "id": "salteado-y-wok",
+    "name": "Salteados",
+    "note": "Ajo, jengibre y chile al final."
+   },
+   {
+    "id": "infusiones",
+    "name": "Infusiones",
+    "note": "En caldos, almíbares y bebidas."
+   },
+   {
+    "id": "encurtidos-rapidos",
+    "name": "Jengibre encurtido",
+    "note": "Rosado y crujiente."
+   }
+  ],
+  "keys": [
+   "Partes duras para infusionar y retirar; partes tiernas, picadas para comer.",
+   "Golpear o machacar libera el aroma.",
+   "Fríe las pastas aromáticas antes de mojar.",
+   "Frescos mejor que secos: el seco pierde casi todo.",
+   "Se congelan muy bien."
+  ],
+  "errors": [
+   {
+    "p": "Hebras duras en la boca",
+    "fix": "Hierba limón o jengibre fibroso picado grueso. Pica muy fino o infusiona y retira."
+   },
+   {
+    "p": "Caldo sin aroma",
+    "fix": "Aromáticos sin golpear o poco tiempo. Machaca y deja infusionar."
+   },
+   {
+    "p": "Pasta cruda y áspera",
+    "fix": "Sin freír antes de mojar. Fríela en aceite hasta que huela."
+   }
+  ],
+  "history": "Jengibre, galanga, hierba limón y lima kaffir son aromáticos de base en las cocinas de Tailandia, Vietnam, Indonesia y del sur de China. El jengibre se conoce en Europa desde la antigüedad por el comercio de especias.",
+  "uses": [
+   "Caldos y sopas",
+   "Curries",
+   "Salteados",
+   "Aliños y salsas",
+   "Almíbares y bebidas"
+  ],
+  "keep": "Jengibre y galanga, 2–3 semanas en frío; congelados, meses y se rallan sin descongelar. Hierba limón y hojas de lima, congeladas.",
+  "pro": "Congela los aromáticos frescos por raciones. Prepara las pastas en tanda y congélalas en cubitos.",
+  "related": [
+   "pastas-de-especias",
+   "salteado-y-wok",
+   "infusiones",
+   "especias",
+   "ponzu-y-salsas-citricas",
+   "coco"
+  ]
+ },
+ {
+  "id": "coco",
+  "name": "Coco",
+  "name_en": "Coconut",
+  "cat": "producto",
+  "group": "Fruta",
+  "aka": [
+   "leche de coco",
+   "crema de coco",
+   "agua de coco",
+   "coco rallado",
+   "aceite de coco",
+   "coco tostado"
+  ],
+  "summary": "Leche, crema, agua, carne y aceite: grasa dulce y aromática para curries, arroces, aliños y postres.",
+  "what": "Del coco se aprovechan varias partes. El agua, dentro del coco joven, es refrescante y algo dulce. La carne madura, rallada y prensada con agua, da la leche de coco; la parte más grasa que sube arriba es la crema. Seca y rallada, se tuesta para dar crujiente y aroma. Su aceite es sólido a temperatura ambiente fresca.\n\nLa leche de coco es la base de muchos curries y sopas del sudeste asiático, de arroces y de postres. Su grasa suaviza el picante y lleva el aroma de los aromáticos. Funciona muy bien con lima, chile, hierba limón, pescados y mariscos.",
+  "method": [
+   "Leche de coco de lata o brik: agítala antes, o sepárala si quieres usar la crema aparte.",
+   "Para un curry, fríe la crema de coco hasta que suelte un poco de aceite y fríe en ella la pasta de especias; luego añade el resto de la leche.",
+   "Cocina la leche de coco a fuego suave: el hervor fuerte la puede separar.",
+   "Coco rallado: tuéstalo en horno o sartén seca, removiendo, hasta dorado; se quema rápido.",
+   "Aliños: leche de coco con lima, sal y chile, para crudos y ensaladas."
+  ],
+  "ratios": [
+   {
+    "use": "Curry",
+    "ratio": "400 ml de leche de coco por 500 g de proteína",
+    "note": "Más caldo si se quiere más ligero."
+   },
+   {
+    "use": "Arroz con coco",
+    "ratio": "Arroz, leche de coco y agua 1:1:0,5",
+    "note": "En volumen; tapado y suave."
+   },
+   {
+    "use": "Coco rallado tostado",
+    "ratio": "150 °C, 5–8 minutos",
+    "note": "Removiendo."
+   },
+   {
+    "use": "Aliño de coco y lima",
+    "ratio": "100 ml de leche de coco, 1 lima, sal y chile",
+    "note": "Para crudos."
+   }
+  ],
+  "variants": [
+   {
+    "id": "aromaticos-de-asia",
+    "name": "Con aromáticos de Asia",
+    "note": "Hierba limón, lima y jengibre."
+   },
+   {
+    "id": "pastas-de-especias",
+    "name": "Curries",
+    "note": "Pasta de especias frita en crema de coco."
+   },
+   {
+    "id": "ceviche-y-crudos",
+    "name": "Crudos con coco",
+    "note": "Leche de coco con cítrico."
+   },
+   {
+    "id": "helados-y-sorbetes",
+    "name": "Helado de coco",
+    "note": "Su grasa da cremosidad."
+   }
+  ],
+  "keys": [
+   "Agita o separa la lata según el uso.",
+   "Fuego suave para la leche de coco.",
+   "La crema frita con la pasta da el sabor de base del curry.",
+   "Lima y sal para equilibrar su dulzor.",
+   "Coco rallado tostado justo."
+  ],
+  "errors": [
+   {
+    "p": "Salsa de coco cortada y grasa",
+    "fix": "Hervor fuerte. Cocina suave y remueve; un poco de almidón ayuda a estabilizar."
+   },
+   {
+    "p": "Plato empalagoso",
+    "fix": "Falta ácido y sal. Añade lima, salsa de pescado o sal."
+   },
+   {
+    "p": "Coco tostado amargo",
+    "fix": "Se ha quemado. Vigila y retira en dorado claro."
+   }
+  ],
+  "history": "El coco es un fruto de las costas tropicales del Índico y del Pacífico, con un papel central en las cocinas del sur de India y del sudeste asiático, así como del Caribe y de África oriental.",
+  "uses": [
+   "Curries y sopas",
+   "Arroces",
+   "Aliños para crudos",
+   "Postres y helados",
+   "Crujientes"
+  ],
+  "keep": "Leche de coco abierta, 3–4 días en frío; se congela. Coco rallado, semanas cerrado; tostado, días.",
+  "pro": "Ten leche de coco a temperatura ambiente para que no se separe al calentarla. Tuesta coco rallado en tanda pequeña.",
+  "related": [
+   "aromaticos-de-asia",
+   "pastas-de-especias",
+   "ceviche-y-crudos",
+   "helados-y-sorbetes",
+   "citricos",
+   "arroces"
+  ]
+ },
+ {
+  "id": "aguacate-y-frutas-tropicales",
+  "name": "Aguacate, plátano y frutas tropicales",
+  "name_en": "Avocado, banana and tropical fruit",
+  "cat": "producto",
+  "group": "Fruta",
+  "aka": [
+   "aguacate",
+   "guacamole",
+   "mango",
+   "piña",
+   "papaya",
+   "maracuyá",
+   "fruta de la pasión",
+   "plátano",
+   "plátano macho",
+   "patacones"
+  ],
+  "summary": "Frutas de climas cálidos, algunas cultivadas ya en la costa mediterránea: grasa del aguacate, ácido del maracuyá, dulzor del mango.",
+  "what": "El aguacate es una fruta grasa y cremosa, que se come casi siempre en salado. Madura fuera del árbol, a temperatura ambiente, y se oxida enseguida al cortarlo. El mango es dulce y aromático; la piña, ácida y dulce; la papaya, suave y perfumada; el maracuyá, muy ácido y aromático. El plátano de postre es dulce; el plátano macho, más almidonado, se cocina y se fríe como una verdura.\n\nPiña, papaya y kiwi tienen enzimas que ablandan las proteínas: impiden que cuaje la gelatina si van crudas y pueden dejar una carne harinosa si se marina de más con ellas. Varias de estas frutas se cultivan hoy en la costa mediterránea española.",
+  "method": [
+   "Aguacate: madura a temperatura ambiente; está listo cuando cede un poco al apretar junto al rabito.",
+   "Córtalo al momento y protégelo con lima o limón y film pegado a la superficie para que no se oxide.",
+   "Mango: corta las dos mejillas junto al hueso, haz una cuadrícula en la carne y dale la vuelta a la piel.",
+   "Maracuyá: corta por la mitad y saca la pulpa con semillas; cuela si quieres solo el zumo.",
+   "Plátano macho: fríelo en rodajas gruesas, aplástalas y vuelve a freír hasta que crujan."
+  ],
+  "ratios": [
+   {
+    "use": "Guacamole",
+    "ratio": "3 aguacates, ½ cebolla, zumo de 1 lima, cilantro y chile",
+    "note": "Machacado, no triturado."
+   },
+   {
+    "use": "Plátano macho, primer baño",
+    "ratio": "160 °C, 3–4 minutos",
+    "note": "Luego aplastar."
+   },
+   {
+    "use": "Plátano macho, segundo baño",
+    "ratio": "180 °C, 1–2 minutos",
+    "note": "Crujiente y dorado."
+   },
+   {
+    "use": "Piña a la brasa",
+    "ratio": "Brasa viva, 2–3 minutos por lado",
+    "note": "Rodajas de 1,5 cm."
+   }
+  ],
+  "variants": [
+   {
+    "id": "chiles-y-salsas-mexicanas",
+    "name": "Guacamole y salsas",
+    "note": "Con chile, lima y cilantro."
+   },
+   {
+    "id": "ceviche-y-crudos",
+    "name": "Con crudos",
+    "note": "Aguacate o mango con pescado."
+   },
+   {
+    "id": "fruta-asada",
+    "name": "Fruta asada",
+    "note": "Piña, plátano o mango al fuego."
+   },
+   {
+    "id": "helados-y-sorbetes",
+    "name": "Sorbetes tropicales",
+    "note": "Mango, maracuyá, piña."
+   }
+  ],
+  "keys": [
+   "Aguacate maduro, cortado al momento y protegido con ácido.",
+   "Maracuyá: el ácido con más aroma.",
+   "Piña, papaya y kiwi crudos no cuajan la gelatina.",
+   "El plátano macho es una verdura: fríe en dos tiempos.",
+   "Busca producción cercana cuando la haya."
+  ],
+  "errors": [
+   {
+    "p": "Aguacate negro en el plato",
+    "fix": "Cortado con antelación. Corta al momento y protege con lima y film."
+   },
+   {
+    "p": "Gelatina de piña que no cuaja",
+    "fix": "Enzimas de la fruta cruda. Calienta antes el zumo o usa otro gelificante."
+   },
+   {
+    "p": "Carne harinosa",
+    "fix": "Marinada larga con piña o papaya. Acorta el tiempo a menos de 1–2 horas."
+   }
+  ],
+  "history": "El aguacate y el maracuyá son originarios de América; el mango, de Asia; el plátano, del sudeste asiático. Desde hace décadas, la costa subtropical del sur de la península y Canarias producen aguacates, mangos y otras frutas tropicales.",
+  "uses": [
+   "Crudos y ensaladas",
+   "Salsas frías",
+   "Frituras de plátano",
+   "Postres y sorbetes",
+   "Brasa"
+  ],
+  "keep": "Aguacate, a temperatura ambiente hasta madurar y luego en frío 2–3 días. Mango y piña maduros, unos días en frío. Pulpa de maracuyá, congelada.",
+  "pro": "Controla la maduración del aguacate por cajas, con días de margen. Congela pulpas de maracuyá y mango en porciones.",
+  "related": [
+   "chiles-y-salsas-mexicanas",
+   "ceviche-y-crudos",
+   "fruta-asada",
+   "helados-y-sorbetes",
+   "gelificantes-y-espesantes",
+   "citricos"
+  ]
+ },
+ {
+  "id": "quesos-de-las-islas",
+  "name": "Quesos de las islas y de pastor",
+  "name_en": "Island and shepherd cheeses",
+  "cat": "producto",
+  "group": "Lácteos",
+  "aka": [
+   "queso de Mahón",
+   "queso payés",
+   "queso de cabra",
+   "queso de oveja",
+   "queso de pastor",
+   "queso majorero",
+   "requesón",
+   "brossat",
+   "queso fresco de la isla"
+  ],
+  "summary": "Quesos de pequeños productores de cabra, oveja y vaca: frescos para el flaó, curados para rallar y para la tabla.",
+  "what": "Las islas y las zonas de pastoreo tienen una tradición de quesos hechos en casa o en pequeñas queserías, con la leche de sus animales. En las Baleares, el queso de Mahón, de vaca, es el más conocido: con su corteza untada de aceite y pimentón, va de tierno a muy curado. En Ibiza y Formentera se hacen quesos payeses de cabra y de oveja, frescos y curados, y el queso fresco es el corazón del [[flao|flaó]]. En otras islas, como Canarias, hay quesos de cabra con mucha personalidad, algunos ahumados.\n\nLos quesos de pastor, de oveja o cabra y a veces de leche cruda, tienen sabores intensos que cambian con la estación y el pasto. Para cocinar con ellos hay que conocer a cada productor y probar cada lote.",
+  "method": [
+   "Prueba cada lote: sal, acidez y curación cambian mucho en el queso artesano.",
+   "Frescos: escúrrelos bien antes de usarlos en masas y rellenos; su humedad varía.",
+   "Curados: rállalos o lamínalos para terminar platos, o úsalos en salsas y gratinados.",
+   "Para servir en tabla, sácalos de la cámara con tiempo y córtalos al momento, respetando la corteza.",
+   "Aprovecha las cortezas de curados limpias para caldos y salsas."
+  ],
+  "ratios": [
+   {
+    "use": "Temperatura de servicio",
+    "ratio": "16–18 °C",
+    "note": "Sacar 1 hora antes."
+   },
+   {
+    "use": "Tabla de quesos",
+    "ratio": "30–40 g por queso y persona",
+    "note": "Tres o cuatro quesos."
+   },
+   {
+    "use": "Queso fresco para flaó",
+    "ratio": "Escurrido 12 horas en paño",
+    "note": "En frío."
+   },
+   {
+    "use": "Curado rallado sobre un plato",
+    "ratio": "10–15 g por ración",
+    "note": "Como condimento salado."
+   }
+  ],
+  "variants": [
+   {
+    "id": "quesos-en-cocina",
+    "name": "Quesos en cocina",
+    "note": "Cómo funde cada queso."
+   },
+   {
+    "id": "flao",
+    "name": "Flaó",
+    "note": "Con queso fresco y hierbabuena."
+   },
+   {
+    "id": "tarta-de-queso",
+    "name": "Tartas de queso",
+    "note": "Con quesos frescos de la isla."
+   },
+   {
+    "id": "producto-de-la-isla",
+    "name": "Producto de la isla",
+    "note": "Conocer a los productores."
+   }
+  ],
+  "keys": [
+   "Conoce al productor y prueba cada lote.",
+   "Temperatura de servicio: el frío apaga el queso.",
+   "El fresco, bien escurrido para cocinar.",
+   "Corta al momento: el corte se seca.",
+   "Las cortezas limpias son caldo."
+  ],
+  "errors": [
+   {
+    "p": "Flaó aguado",
+    "fix": "Queso fresco sin escurrir. Escúrrelo en paño en frío."
+   },
+   {
+    "p": "Queso sin sabor en la tabla",
+    "fix": "Servido frío. Sácalo con tiempo."
+   },
+   {
+    "p": "Salsa demasiado salada",
+    "fix": "Curado muy salado. Pruébalo y reduce la sal del resto."
+   }
+  ],
+  "history": "El queso de Mahón tiene una larga historia ligada al comercio del puerto de Menorca. En Ibiza y Formentera, como en otras islas y zonas de pastoreo, el queso de cabra y de oveja ha sido parte de la economía de las casas payesas.",
+  "uses": [
+   "Tablas de quesos",
+   "Flaó y postres",
+   "Gratinados y salsas",
+   "Ensaladas",
+   "Rellenos"
+  ],
+  "keep": "Frescos, pocos días en frío y tapados. Curados, semanas en frío envueltos en papel, nunca en film directo.",
+  "pro": "Compra a productores de la isla y anota en la ficha de cada queso su origen y curación. Saca la tabla de la cámara antes del servicio.",
+  "related": [
+   "quesos-en-cocina",
+   "flao",
+   "tarta-de-queso",
+   "producto-de-la-isla",
+   "cocina-ibicenca",
+   "leche-nata-y-mantequilla"
+  ]
+ },
+ {
+  "id": "ostras-y-percebes",
+  "name": "Ostras y percebes",
+  "name_en": "Oysters and goose barnacles",
+  "cat": "producto",
+  "group": "Pescado y marisco",
+  "aka": [
+   "ostra",
+   "ostra plana",
+   "ostra rizada",
+   "abrir ostras",
+   "percebe",
+   "percebes cocidos",
+   "ostras gratinadas"
+  ],
+  "summary": "Dos mariscos que se toman casi tal cual: la ostra viva, abierta al momento; el percebe, cocido un minuto en agua muy salada.",
+  "what": "La ostra se come cruda y viva, abierta en el momento, con su agua. La ostra plana, autóctona de Europa, es más yodada y firme, con un final a fruto seco; la rizada o cóncava, más carnosa y dulce. Se compran depuradas y etiquetadas. Cocinadas, piden solo un toque de calor: escalfadas en su agua, templadas en la brasa o gratinadas un instante.\n\nEl percebe es un crustáceo que vive pegado a las rocas batidas por el mar. Su carne, dentro del pedúnculo, sabe intensamente a mar. Se cuece en agua muy salada, muy poco tiempo, y se sirve templado.",
+  "method": [
+   "Ostras: guárdalas con la concha honda hacia abajo, en frío y tapadas con un paño húmedo.",
+   "Para abrir, sujeta la ostra con un paño grueso, mete el cuchillo ostrero por la bisagra, gíralo y corta el músculo pegado a la concha de arriba.",
+   "Retira restos de concha sin perder el agua y sirve sobre hielo picado o algas.",
+   "Percebes: lava en agua fría; lleva agua con mucha sal y una hoja de laurel a ebullición fuerte, echa los percebes y cuenta desde que vuelve a hervir.",
+   "Escurre y sirve templados, tapados con un paño, para comer enseguida."
+  ],
+  "ratios": [
+   {
+    "use": "Ostras crudas",
+    "ratio": "4–6 °C al servir",
+    "note": "Abiertas al momento."
+   },
+   {
+    "use": "Percebes",
+    "ratio": "1 minuto desde que vuelve a hervir",
+    "note": "Agua con 60–70 g de sal por litro."
+   },
+   {
+    "use": "Ostra templada",
+    "ratio": "45–55 °C en el centro",
+    "note": "Escalfada en su agua o en brasa suave."
+   },
+   {
+    "use": "Ración",
+    "ratio": "6 ostras o 150–200 g de percebes",
+    "note": "Como entrante."
+   }
+  ],
+  "variants": [
+   {
+    "id": "mejillon-y-almeja",
+    "name": "Otros bivalvos",
+    "note": "Mejillón, almeja y navaja."
+   },
+   {
+    "id": "coccion-de-marisco",
+    "name": "Cocción de marisco",
+    "note": "Puntos generales."
+   },
+   {
+    "id": "ponzu-y-salsas-citricas",
+    "name": "Ostras con ponzu",
+    "note": "Acidez y umami."
+   },
+   {
+    "id": "sabayones-salados",
+    "name": "Ostras gratinadas",
+    "note": "Con un sabayón de su agua."
+   }
+  ],
+  "keys": [
+   "Vivas y depuradas: no hay alternativa.",
+   "Conserva el agua de la ostra: es el plato.",
+   "Percebes: agua muy salada, hervor fuerte y un minuto.",
+   "Poco aliño: limón, pimienta o una salsa ácida ligera.",
+   "Abrir con paño grueso: es una tarea con riesgo de corte."
+  ],
+  "errors": [
+   {
+    "p": "Restos de concha en la ostra",
+    "fix": "Cuchillo mal metido. Entra por la bisagra y limpia los restos con la punta."
+   },
+   {
+    "p": "Percebes duros o insípidos",
+    "fix": "Demasiado tiempo o agua con poca sal. Un minuto en agua muy salada."
+   },
+   {
+    "p": "Ostra cocinada gomosa",
+    "fix": "Demasiado calor. Solo templarla."
+   }
+  ],
+  "history": "Las ostras se comen en las costas europeas desde la antigüedad, y su cría en parques es una tradición de muchas zonas del Atlántico y el Mediterráneo. El percebe es un producto muy valorado de la costa atlántica, sobre todo gallega, con una pesca regulada.",
+  "uses": [
+   "Crudos en barra o mesa",
+   "Entrantes de marisco",
+   "Ostras templadas o gratinadas",
+   "Salsas con su agua"
+  ],
+  "keep": "Ostras vivas, 5–7 días a 4–6 °C, concha honda abajo y tapadas con paño húmedo. Percebes vivos, 1–2 días en frío; cocidos, el mismo día.",
+  "pro": "Guarda la etiqueta de depuración. Abre las ostras al pedido; los percebes se cuecen por ración y se sirven en el momento.",
+  "related": [
+   "mejillon-y-almeja",
+   "coccion-de-marisco",
+   "ponzu-y-salsas-citricas",
+   "ceviche-y-crudos",
+   "sabayones-salados",
+   "erizo-de-mar"
+  ]
  }
 ]
