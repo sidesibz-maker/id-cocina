@@ -4,7 +4,8 @@ import {t, en, relDay, shortDate} from '../i18n.js';
 import {esc, icon, $, $$, toast, clip, sheet, shareText} from '../ui.js';
 import {docById, saveDoc} from '../store.js';
 import {state, saberMine, addSaberVersion, saveSaberEntry, trashSaberEntry, liveSubs, liveDishes} from '../store.js';
-import {entries, entryById, search, backlinks, CATS, slug, builtIds} from '../saber/index.js';
+import {entries, entryById, search, searchInfo, backlinks, CATS, slug, builtIds} from '../saber/index.js';
+import {attachSuggest} from './ksuggest.js';
 import {iaOn, askIa, iaMessage} from '../ia.js';
 import {copy, parseReply} from '../ai.js';
 import {emptyState, thermScale, tempMarks} from './shared.js';
@@ -100,11 +101,13 @@ function createBlock(q, alone) {
 function results() {
  const q = query.trim();
  if (!hasSearch()) return {status: '', html: ''};
- const list = q ? search(q, Infinity, {category, fixes}) :
+ const info = q ? searchInfo(q, Infinity, {category, fixes}) : null;
+ const list = q ? info.list :
   entries().filter(e => (!category || e.cat === category) && (!fixes || e.errors?.length)).sort((a, b) => a.name.localeCompare(b.name, 'es'));
  const status = list.length === 1 ? t('1 entrada', '1 entry') : list.length + t(' entradas', ' entries');
- if (list.length) { const rows = list.map(e => row(e, fixes ? 'trucos' : undefined)), offer = q.length >= 3 && !category && !fixes && !exactEntry(q) ? createBlock(q, false) : '', cut = Math.min(5, rows.length);
-  return {status, html: '<ul class="krows">' + rows.slice(0, cut).join('') + '</ul>' + offer + (rows.length > cut ? '<ul class="krows">' + rows.slice(cut).join('') + '</ul>' : '')}; }
+ if (list.length) { const rows = list.map(e => row(e, fixes ? 'trucos' : undefined)), offer = q.length >= 3 && !category && !fixes && !info?.guessed && !exactEntry(q) ? createBlock(q, false) : '', cut = Math.min(5, rows.length);
+  const dym = info?.guessed ? '<p class="kdym">' + esc(t('No hay nada escrito como «', 'Nothing is written as “') + q + t('». Quizá buscas ', '”. Maybe you mean ')) + '<a href="' + href(list[0].id) + '">' + esc(list[0].name) + '</a>' + esc(list.length > 1 ? t(' o alguna de estas:', ' or one of these:') : '.') + '</p>' : '';
+  return {status, html: dym + '<ul class="krows">' + rows.slice(0, cut).join('') + '</ul>' + offer + (rows.length > cut ? '<ul class="krows">' + rows.slice(cut).join('') + '</ul>' : '')}; }
  if (category || fixes) return {status: t('No hay coincidencias con estos filtros.', 'No matches with these filters.'), html: ''};
  return {status, html: createBlock(q, true)};
 }
@@ -335,6 +338,7 @@ export function mount(root, params) {
   }
   if (e.target.id === 'kBatch' || e.target.id === 'kBatchCustom') changeBatch();
  });
+ root.addEventListener('focusin', e => { if (e.target.id === 'saberQ') attachSuggest(e.target, {onPick: en2 => { query = ''; go('biblioteca/' + en2.id); }}); });
  root.addEventListener('input', e => {
   if (e.target.id === 'kBatchCustom') { changeBatch(false); return; }
   if (e.target.id !== 'saberQ') return;

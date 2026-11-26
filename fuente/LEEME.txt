@@ -186,3 +186,6 @@ Biblioteca infinita (26 nov 2026):
    cuatro pasos: copiar la petición, abrir ChatGPT, pegar su respuesta y guardar.
  - Si ya existe, se abre la que hay en vez de repetirla. Las fichas escritas así lo dicen debajo del título, para que las
    revises; puedes escribir tu versión encima.
+ - Buscador de la Biblioteca: mientras escribes salen sugerencias (flechas para moverte, Intro para abrir). Entiende
+   faltas y cómo suena: «bexamel» encuentra Bechamel, «binagreta» Vinagreta, «olandesa» Holandesa, «salsa biscaina»
+   Salsa vizcaína. Si no hay nada escrito así, te dice «Quizá buscas…». También en el buscador de Hoy y en Ctrl+K.

@@ -35,25 +35,40 @@ const wordList = value => norm(value).split(' ').filter(w => w.length > 1 && !ST
 // Admite palabras a medio escribir sin confundir «ostras» con «costras».
 const startsWord = (text, word) => (' ' + text).includes(' ' + word);
 
-function near(a, b) {
- if (a === b) return true;
- if (a.length === b.length) {
-  const first = [...a].findIndex((letter, i) => letter !== b[i]);
-  return a.slice(first + 1) === b.slice(first + 1) ||
-   (a[first] === b[first + 1] && a[first + 1] === b[first] && a.slice(first + 2) === b.slice(first + 2));
+// «Suena a»: como se pronuncia en español, para que bexamel encuentre bechamel, binagreta vinagreta o biscaina vizcaína.
+export function soundKey(word) {
+ return norm(word).replace(/ch/g, 'x').replace(/h/g, '').replace(/v/g, 'b').replace(/z/g, 's').replace(/c(?=[ei])/g, 's').replace(/qu/g, 'k').replace(/c/g, 'k').replace(/x/g, 'k').replace(/ll/g, 'y').replace(/w/g, 'u').replace(/(.)\1+/g, '$1').replace(/ /g, '');
+}
+// Cuántas letras hay que cambiar para pasar de una palabra a otra (se corta en cuanto pasa de «max»).
+function lev(a, b, max = 2) {
+ if (Math.abs(a.length - b.length) > max) return max + 1;
+ let prev = Array.from({length: b.length + 1}, (_, i) => i);
+ for (let i = 1; i <= a.length; i++) {
+  const cur = [i]; let best = i;
+  for (let j = 1; j <= b.length; j++) { cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1)); best = Math.min(best, cur[j]); }
+  if (best > max) return max + 1;
+  prev = cur;
  }
- if (Math.abs(a.length - b.length) !== 1) return false;
- const [long, short] = a.length > b.length ? [a, b] : [b, a];
- const first = [...long].findIndex((letter, i) => letter !== short[i]);
- return long.slice(first + 1) === short.slice(first);
+ return prev[b.length];
+}
+// ¿Esta palabra escrita se parece a esta otra? Admite la palabra a medio escribir (se compara con el principio).
+function like(typed, word) {
+ if (typed.length < 3) return false;
+ const a = soundKey(typed), w = soundKey(word);
+ if (!a || !w) return false;
+ if (w.startsWith(a) || a === w) return true;
+ const tol = a.length >= 7 ? 2 : a.length >= 4 ? 1 : 0;
+ // Con pocas letras solo vale si suena igual desde el principio; con más, se admite alguna letra cambiada.
+ if (a.length < 5) return false;
+ return lev(a, w, tol) <= tol || (w.length > a.length && lev(a, w.slice(0, a.length), tol) <= tol);
 }
 
 // Las preguntas pueden combinar el nombre con un síntoma de la ficha.
-export function search(q, limit = 40, {category = '', fixes = false} = {}) {
+export function searchInfo(q, limit = 40, {category = '', fixes = false} = {}) {
  const words = wordList(q);
- if (!words.length) return [];
+ if (!words.length) return {list: [], guessed: false};
  const phrase = words.join(' ');
- const out = [];
+ const exact = [], guess = [];
  for (const e of entries()) {
   if (category && e.cat !== category) continue;
   if (fixes && !e.errors?.length) continue;
@@ -62,10 +77,27 @@ export function search(q, limit = 40, {category = '', fixes = false} = {}) {
   const problems = norm(plain((e.errors || []).map(x => x.p).join(' ')));
   const summary = norm(plain(e.summary)), body = fixes ? norm(plain((e.errors || []).flatMap(x => [x.p, x.fix]).join(' '))) : fullText(e);
   const scores = words.map(w => startsWord(names, w) ? 40 : startsWord(problems, w) ? 24 : startsWord(summary, w) ? 12 : startsWord(body, w) ? 5 : 0);
-  if (scores.every(Boolean)) out.push({e, score: scores.reduce((a, b) => a + b, 0) + ([name, ...aliases].includes(phrase) ? 100 : 0)});
-  else if (!fixes && words.length === 1 && phrase.length >= 5 && names.split(' ').some(w => near(w, phrase))) out.push({e, score: 3});
+  if (scores.every(Boolean)) { exact.push({e, score: scores.reduce((a, b) => a + b, 0) + ([name, ...aliases].includes(phrase) ? 100 : 0) + (name.startsWith(phrase) ? 30 : 0)}); continue; }
+  if (fixes) continue;
+  // Si alguna palabra no está tal cual, se mira si se parece a una palabra del nombre (faltas, b/v, c/z, ch/x…).
+  const own = wordList(e.name), aka = (e.aka || []).flatMap(x => wordList(x));
+  const fit = w => { const k = soundKey(w); const inName = own.find(x => like(w, x)), inAka = inName ? null : aka.find(x => like(w, x)); const hit = inName || inAka; return hit ? (inName ? 12 : 8) + (soundKey(hit) === k ? 4 : 0) : 0; };
+  const fuzzy = words.map((w, i) => scores[i] || fit(w));
+  if (fuzzy.every(Boolean)) guess.push({e, score: fuzzy.reduce((a, b) => a + b, 0)});
  }
- return out.sort((a, b) => b.score - a.score || a.e.name.localeCompare(b.e.name, 'es')).slice(0, limit).map(x => x.e);
+ const sort = l => l.sort((a, b) => b.score - a.score || a.e.name.localeCompare(b.e.name, 'es'));
+ if (exact.length) return {list: sort(exact).slice(0, limit).map(x => x.e), guessed: false};
+ return {list: sort(guess).slice(0, limit).map(x => x.e), guessed: guess.length > 0};
+}
+export const search = (q, limit = 40, opts = {}) => searchInfo(q, limit, opts).list;
+// Sugerencias mientras se escribe: primero los nombres que empiezan así, luego lo demás que encaja o se parece.
+export function suggest(q, limit = 7) {
+ const n = norm(q);
+ if (n.length < 2) return [];
+ const starts = entries().filter(e => [e.name, ...(e.aka || [])].some(x => norm(x).startsWith(n))).sort((a, b) => a.name.length - b.name.length || a.name.localeCompare(b.name, 'es'));
+ const seen = new Set(starts.map(e => e.id));
+ const rest = searchInfo(q, limit * 2).list.filter(e => !seen.has(e.id));
+ return [...starts, ...rest].slice(0, limit);
 }
 // Qué entradas enlazan a esta (para «Aparece en»).
 export function backlinks(id) {

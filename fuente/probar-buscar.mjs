@@ -49,6 +49,9 @@ ok((await page.evaluate(() => location.hash)) === '#/biblioteca', 'g y b no llev
 await page.keyboard.press('Control+k'); await page.waitForSelector('#finderQ'); await page.fill('#finderQ', 'desglasar'); await wait(300);
 ok((await page.textContent('#finderRes')).includes('Diccionario'), 'el buscador no encuentra términos del diccionario');
 await page.keyboard.press('Escape'); await wait(200);
+await page.keyboard.press('Control+k'); await page.waitForSelector('#finderQ'); await page.fill('#finderQ', 'bexamel'); await wait(300);
+ok((await page.textContent('#finderRes')).includes('Bechamel'), 'el buscador general no entiende «bexamel»');
+await page.keyboard.press('Escape'); await wait(200);
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();
 if (fails.length) { console.error('FALLOS en el buscador:\n - ' + fails.join('\n - ')); process.exit(1); }

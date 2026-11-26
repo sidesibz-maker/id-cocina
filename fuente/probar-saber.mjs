@@ -127,6 +127,19 @@ await page.keyboard.press('Control+k'); await page.waitForSelector('#finderQ'); 
 ok((await page.textContent('#finderRes')).includes('Biblioteca infinita'), 'el buscador no ofrece escribir la ficha');
 await page.click('#finderRes a[href^="#/biblioteca/buscar/"]'); await wait(500);
 ok((await page.inputValue('#saberQ').catch(() => '')) === 'pil pil de bacalao al pimentón', 'el buscador no abre la Biblioteca con la búsqueda');
+// Buscador con faltas y sugerencias
+await go('#/biblioteca'); await page.waitForSelector('#saberQ'); await page.click('#saberQ');
+for (const [typed, want] of [['bexamel', 'Bechamel'], ['binagreta', 'Vinagreta'], ['salsa biscaina', 'Salsa vizcaína'], ['olandesa', 'Holandesa'], ['fume', 'Fumet'], ['mayonesa', 'Mayonesa'], ['esferificasion', 'Esferificación']]) {
+ await page.fill('#saberQ', typed); await wait(250);
+ const first = await page.textContent('#saberRes .krow .krow-name').catch(() => '');
+ ok(first.startsWith(want), 'buscar «' + typed + '» no da ' + want + ' primero: ' + first);
+ ok((await page.textContent('#saberQ-sug').catch(() => '')).includes(want), 'las sugerencias de «' + typed + '» no traen ' + want);
+}
+await page.fill('#saberQ', 'bexamel'); await wait(250);
+ok((await page.textContent('.kdym').catch(() => '')).includes('Bechamel'), 'no dice «quizá buscas Bechamel»');
+ok(await page.locator('#saberRes .kcreate').count() === 0, 'con una falta ofrece escribir una ficha nueva');
+await page.keyboard.press('ArrowDown'); await page.keyboard.press('Enter'); await wait(400);
+ok((await page.evaluate(() => location.hash)) === '#/biblioteca/bechamel', 'elegir la sugerencia con el teclado no abre la ficha: ' + await page.evaluate(() => location.hash));
 ok(!errors.length, 'errores: ' + errors.join(' | '));
 await browser.close();
 console.log(fails.length ? 'FALLOS:\n - ' + fails.join('\n - ') : 'la Biblioteca: todo correcto');

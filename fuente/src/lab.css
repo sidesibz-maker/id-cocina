@@ -1317,3 +1317,12 @@ h1,h2,h3,.cover-title,.trend-title,.dish-name,.kpath h3,.labmech h3,.idea h3,.em
 .kcreate textarea{margin-top:4px}
 .kgen{margin:4px 0 0;color:var(--mut)}.kgen .ic{color:var(--ember)}
 .kcreate .btn{white-space:normal;height:auto;min-height:46px;padding:10px 16px;text-align:left;max-width:100%}.kcreate .btn span{overflow-wrap:anywhere}.kcreate:not(.is-alone){margin:16px 0}
+/* Sugerencias mientras escribes. */
+.ksug{list-style:none;margin:-8px 0 12px;padding:0;border:1px solid var(--ink);border-top:0;background:var(--card);max-height:min(50vh,360px);overflow:auto;position:relative;z-index:5}
+.ksug li{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:44px;padding:0 14px;border-top:1px solid var(--line);cursor:pointer}
+.ksug li:first-child{border-top:0}
+.ksug li:hover,.ksug li.is-active{background:var(--soft)}
+.ksug li.is-active .ksug-name{color:var(--ember-ink)}
+.ksug-name{font-weight:500}.ksug-name b{font-weight:700;color:var(--ink)}
+.ksug-meta{font-family:var(--narrow);font-weight:500;font-size:13px;color:var(--mut);white-space:nowrap}
+.kdym{margin:8px 0 4px;color:var(--ink2)}.kdym a{color:var(--ink);font-weight:600;text-decoration-color:var(--ember)}

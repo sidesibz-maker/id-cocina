@@ -11,6 +11,7 @@ import {challenge, completeChallenge, challengeText} from '../challenge.js';
 import {entries} from '../saber/index.js';
 import {currentPath} from './paths.js';
 import {onThisDay} from './journal.js';
+import {attachSuggest} from './ksuggest.js';
 import {iaOn} from '../ia.js';
 import {syncOn} from '../sync.js';
 import {prefs, setPref} from '../i18n.js';
@@ -171,6 +172,7 @@ export function render() {
 
 export function mount(root) {
  hydrateImages(root);
+ root.addEventListener('focusin', e => { if (e.target.id === 'homeSaberQ') attachSuggest(e.target, {onPick: x => go('biblioteca/' + x.id)}); });
  root.addEventListener('submit', e => { if (e.target.id !== 'homeSaber') return; e.preventDefault(); presetSaber(e.target.querySelector('input').value); go('biblioteca'); });
  root.addEventListener('click', e => {
   if (e.target.closest('[data-act=challenge-done]')) { completeChallenge().then(lv => { if (lv != null) import('../ui.js').then(({toast}) => toast(t('¡Reto cumplido! Tu nivel ha subido en Mi trayectoria.', 'Challenge done! Your level went up in My career.'), 'info', 5000)); }); return; }
