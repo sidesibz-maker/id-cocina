@@ -11,7 +11,7 @@ import {go} from '../nav.js';
 import {technique} from '../flavor-core.js';
 import {pathsHtml} from './paths.js';
 // «Para ti»: fichas que casan con los intereses de Mi cocina (brasa, marisco, México, fermentos…).
-const INTEREST_WORDS = {'brasa': 'brasa', 'verdura a la brasa': 'verduras brasa', 'pescado y marisco': 'pescado marisco', 'postres': 'crema merengue helado', 'asia': 'dashi', 'mexico': 'chiles', 'méxico': 'chiles', 'casqueria': 'casqueria', 'casquería': 'casqueria', 'encurtidos y fermentos': 'fermentacion encurtida', 'sin alcohol': 'maridaje sin alcohol', 'cocina ibicenca': 'ibicenca', 'para compartir': 'picada'};
+const INTEREST_WORDS = {'brasa': 'brasa', 'verdura a la brasa': 'verduras brasa', 'pescado y marisco': 'pescado marisco', 'postres': 'crema merengue helado flao', 'asia': 'dashi', 'mexico': 'chiles', 'méxico': 'chiles', 'casqueria': 'casqueria', 'casquería': 'casqueria', 'encurtidos y fermentos': 'fermentacion encurtida', 'sin alcohol': 'maridaje sin alcohol', 'cocina ibicenca': 'ibicenca isla', 'para compartir': 'picada'};
 function forYouHtml() {
  const ints = (state.settings?.interests || []).map(x => String(x).toLowerCase());
  if (!ints.length) return '';
@@ -28,8 +28,8 @@ export const presetSaber = q => { query = String(q || ''); category = ''; fixes 
 const norm = v => String(v || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
 const SHELF = {
  salsas: ['drop', t('Madres y derivadas, emulsiones, salsas españolas y del mundo.', 'Mother sauces and derivatives, emulsions, Spanish and world sauces.')],
- tecnicas: ['flame', t('Fuego y brasa, punto de la carne, baja temperatura, confitado, fritura, curado, fermentación, ahumado, espumas y crujientes.', 'Fire and embers, meat doneness, low temperature, confit, frying, curing, fermentation, smoking, foams and crisps.')],
- dulce: ['star', t('Cremas, merengues, caramelo, ganache, helados, masas quebradas, pasta fresca y masa madre.', 'Creams, meringues, caramel, ganache, ice cream, shortcrust, fresh pasta and sourdough.')],
+ tecnicas: ['flame', t('Fuego y brasa, punto de la carne, baja temperatura, confitado, fritura, curado, fermentación, ahumado, espumas, crujientes y técnicas de verdura.', 'Fire and embers, meat doneness, low temperature, confit, frying, curing, fermentation, smoking, foams, crisps and vegetable techniques.')],
+ dulce: ['star', t('Cremas, merengues, caramelo, ganache, helados, masas quebradas, pasta fresca, masa madre y dulces de la isla.', 'Creams, meringues, caramel, ganache, ice cream, shortcrust, fresh pasta, sourdough and island sweets.')],
  producto: ['box', t('Arroces, marisco, pescado, cortes de vacuno, maduración, especias, hierbas y aceite de oliva.', 'Rice, shellfish, fish, beef cuts, dry-ageing, spices, herbs and olive oil.')],
  creatividad: ['spark', t('Construir un plato, contraste, acidez, umami, ritmo de un menú, contar un plato, maridaje sin alcohol y cocina ibicenca.', 'Building a dish, contrast, acidity, umami, pacing a menu, describing a dish, non-alcoholic pairing and Ibizan cooking.')],
  fondos: ['pan', t('Fondos claros y oscuros, fumets, jugos, glasas y consomés.', 'Light and dark stocks, fish stocks, jus, glazes and consommés.')],

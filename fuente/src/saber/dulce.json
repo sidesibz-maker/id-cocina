@@ -921,5 +921,376 @@
    "caramelo",
    "contraste-y-equilibrio"
   ]
+ },
+ {
+  "id": "flao",
+  "name": "Flaó",
+  "name_en": "Flaó (Ibizan cheese and mint tart)",
+  "cat": "dulce",
+  "group": "Dulces de la isla",
+  "aka": [
+   "flao",
+   "tarta de queso ibicenca",
+   "flaó de Pascua"
+  ],
+  "summary": "La tarta de queso fresco y hierbabuena de la isla, sobre una masa fina perfumada con anís.",
+  "what": "Una masa quebrada fina, con anís, que se rellena con queso fresco de cabra u oveja, huevo, azúcar y hojas de hierbabuena. El horno suave la deja cuajada pero temblorosa por dentro, con la superficie dorada. Es un postre de primavera y de Pascua: el queso tierno y la menta fresca son lo que la hace distinta de cualquier tarta de queso.\n\nEn una cocina de autor da mucho juego: el contraste entre lácteo, hierba fresca y anís se puede llevar a un helado, una espuma o una galleta.",
+  "base": {
+   "for": "un molde de 24 cm (10-12 raciones)",
+   "items": [
+    [
+     "Harina floja",
+     "250 g"
+    ],
+    [
+     "Huevo (masa)",
+     "1"
+    ],
+    [
+     "Aceite de oliva suave o manteca",
+     "60 g"
+    ],
+    [
+     "Anís dulce (licor)",
+     "30 g"
+    ],
+    [
+     "Azúcar (masa)",
+     "50 g"
+    ],
+    [
+     "Queso fresco de cabra u oveja, escurrido",
+     "500 g"
+    ],
+    [
+     "Huevos (relleno)",
+     "4"
+    ],
+    [
+     "Azúcar (relleno)",
+     "150 g"
+    ],
+    [
+     "Hojas de hierbabuena",
+     "12-15"
+    ],
+    [
+     "Ralladura de limón",
+     "1/2"
+    ]
+   ],
+   "steps": [
+    "Mezcla la harina, el azúcar, el huevo, el aceite y el anís hasta tener una masa lisa. Reposa 30 minutos en frío.",
+    "Estira fina (3 mm) y forra el molde, dejando el borde algo alto.",
+    "Desmiga el queso con el azúcar, añade los huevos uno a uno y la ralladura, sin batir de más.",
+    "Pica la hierbabuena justo antes y mézclala con el relleno; reserva unas hojas enteras para la superficie.",
+    "Rellena, pon las hojas enteras encima y hornea a 170 °C unos 40-50 minutos, hasta que el centro tiemble apenas.",
+    "Enfría en el molde y espolvorea azúcar glas al servir."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Relleno más cremoso",
+    "ratio": "Sustituye 100 g de queso por requesón o nata",
+    "note": "Queda menos firme: baja el horno a 160 °C."
+   },
+   {
+    "use": "Versión en vasito",
+    "ratio": "El mismo relleno cuajado al baño maría",
+    "note": "Con la masa horneada aparte en migas, como crujiente."
+   },
+   {
+    "use": "Helado de flaó",
+    "ratio": "Base de crema inglesa con 30 % de queso fresco e infusión de hierbabuena",
+    "note": "El anís, en una teja aparte."
+   }
+  ],
+  "variants": [
+   {
+    "id": "masa-quebrada",
+    "name": "Masa quebrada",
+    "note": "La base de la masa."
+   },
+   {
+    "id": "helados-y-sorbetes",
+    "name": "Helado de flaó",
+    "note": "El mismo sabor en frío."
+   }
+  ],
+  "keys": [
+   "El queso, bien escurrido: el agua de más agrieta y hace la tarta gomosa.",
+   "La hierbabuena, picada en el último momento, que se oscurece enseguida.",
+   "Horno suave: se saca cuando el centro aún tiembla; acaba de cuajar al enfriar.",
+   "La masa fina: es un soporte, el protagonista es el relleno.",
+   "Mejor de un día para otro, cuando el sabor se asienta."
+  ],
+  "errors": [
+   {
+    "p": "Se agrieta por encima",
+    "fix": "Horno fuerte o relleno muy batido. Baja a 160 °C y mezcla sin meter aire."
+   },
+   {
+    "p": "Fondo crudo",
+    "fix": "Hornea la base 10 minutos en blanco antes de rellenar, o usa la rejilla baja."
+   },
+   {
+    "p": "Sabe solo a queso",
+    "fix": "Más hierbabuena fresca y un punto de anís en la masa."
+   }
+  ],
+  "history": "Es uno de los dulces más reconocibles de Ibiza y Formentera, ligado a la Pascua y a los quesos frescos de la isla. Cada casa tiene su proporción de menta y de anís.",
+  "uses": [
+   "Postre de primavera",
+   "Merienda",
+   "Base para un postre de autor"
+  ],
+  "keep": "En frío, tapada, hasta 3 días. Mejor atemperada 20 minutos antes de servir.",
+  "pro": "Hornea el día antes y corta en frío con cuchillo caliente. Para el pase, una ración con hojas de hierbabuena recién puestas.",
+  "related": [
+   "cocina-ibicenca",
+   "masa-quebrada",
+   "hierbas-frescas",
+   "crema-pastelera"
+  ]
+ },
+ {
+  "id": "greixonera",
+  "name": "Greixonera",
+  "name_en": "Greixonera (Ibizan bread pudding)",
+  "cat": "dulce",
+  "group": "Dulces de la isla",
+  "aka": [
+   "greixonera de brossat",
+   "pudin de ensaimada"
+  ],
+  "summary": "El pudin de la isla: ensaimada del día anterior, leche, huevo y canela, cuajado al horno.",
+  "what": "Nace del aprovechamiento: la ensaimada que sobra se empapa en una crema de leche, huevo, azúcar, limón y canela y se hornea hasta cuajar. El nombre viene de la cazuela de barro en la que se hacía. Por dentro es una crema con miga; por fuera, una costra caramelizada.\n\nEs la misma idea que un pudin o una torrija, con el sabor de la manteca y el azúcar de la ensaimada.",
+  "base": {
+   "for": "una fuente de 20 x 25 cm (8 raciones)",
+   "items": [
+    [
+     "Ensaimada del día anterior",
+     "300 g"
+    ],
+    [
+     "Leche entera",
+     "750 ml"
+    ],
+    [
+     "Huevos",
+     "5"
+    ],
+    [
+     "Azúcar",
+     "150 g"
+    ],
+    [
+     "Ralladura de limón",
+     "1"
+    ],
+    [
+     "Canela en rama",
+     "1"
+    ],
+    [
+     "Azúcar para caramelizar",
+     "60 g"
+    ]
+   ],
+   "steps": [
+    "Infusiona la leche con la canela y la piel de limón: que llegue a hervir, apaga y deja 20 minutos tapada.",
+    "Trocea la ensaimada en la fuente.",
+    "Bate los huevos con el azúcar sin espumar y añade la leche colada, templada.",
+    "Vierte sobre la ensaimada y deja que empape 15 minutos, apretando con una espátula.",
+    "Hornea al baño maría a 160 °C unos 45-55 minutos, hasta que cuaje.",
+    "Espolvorea el azúcar y quémalo con soplete o en el gratinador justo antes de servir."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Más cremosa",
+    "ratio": "Cambia 250 ml de leche por nata",
+    "note": "Cuaja más tierna."
+   },
+   {
+    "use": "Raciones individuales",
+    "ratio": "Misma mezcla en moldes de 8 cm",
+    "note": "20-25 minutos de horno."
+   },
+   {
+    "use": "Sin ensaimada",
+    "ratio": "Brioche o pan de leche del día anterior",
+    "note": "Añade 30 g de mantequilla fundida."
+   }
+  ],
+  "variants": [
+   {
+    "id": "crema-inglesa",
+    "name": "Crema inglesa",
+    "note": "La misma mezcla de huevo y leche, sin cuajar."
+   },
+   {
+    "id": "caramelo",
+    "name": "Caramelo",
+    "note": "Para la costra o una salsa."
+   }
+  ],
+  "keys": [
+   "Ensaimada seca: la fresca se deshace y la crema no tiene donde agarrarse.",
+   "Dejar que empape antes de hornear, o quedan zonas secas.",
+   "Baño maría y horno suave: si hierve, sale con agujeros y suelta suero.",
+   "La canela y el limón, en infusión: el sabor queda limpio y sin trozos."
+  ],
+  "errors": [
+   {
+    "p": "Suelta líquido",
+    "fix": "Se ha pasado de horno o de temperatura. Baja a 150 °C y saca antes."
+   },
+   {
+    "p": "Seca por arriba",
+    "fix": "Mal empapada. Aprieta la miga y deja más tiempo de reposo."
+   },
+   {
+    "p": "Demasiado dulce",
+    "fix": "La ensaimada ya lleva azúcar: baja el de la crema a 100 g."
+   }
+  ],
+  "history": "Postre de casa en Ibiza y Mallorca, pensado para no tirar nada. Se hacía en la greixonera, la cazuela de barro que le da nombre.",
+  "uses": [
+   "Postre",
+   "Aprovechamiento de bollería",
+   "Desayuno de domingo"
+  ],
+  "keep": "En frío hasta 3 días. Se regenera bien en horno suave antes de caramelizar.",
+  "pro": "Buen postre de aprovechamiento: la bollería del desayuno pasa a postre del día siguiente. Porciona en frío y carameliza al pase.",
+  "related": [
+   "cocina-ibicenca",
+   "crema-inglesa",
+   "caramelo",
+   "flao"
+  ]
+ },
+ {
+  "id": "orelletes-y-bunyols",
+  "name": "Orelletes y buñuelos",
+  "name_en": "Orelletes and fritters",
+  "cat": "dulce",
+  "group": "Dulces de la isla",
+  "aka": [
+   "orelletes",
+   "bunyols",
+   "buñuelos",
+   "frituras dulces",
+   "orejitas"
+  ],
+  "summary": "Masas dulces fritas de la isla: finas y crujientes (orelletes) o huecas y tiernas (buñuelos).",
+  "what": "Dos formas de freír una masa dulce. Las orelletes son una masa firme de harina, huevo, aceite y anís, estirada muy fina, cortada y frita hasta que se ondula y cruje. Los buñuelos son una masa blanda, a veces con patata o boniato y levadura, que se fríe a cucharadas hasta inflarse y quedar hueca.\n\nLas dos se terminan con azúcar, a veces con miel. Son la base perfecta para pensar en texturas: crujiente quebradizo frente a esponjoso.",
+  "base": {
+   "for": "unas 40 orelletes",
+   "items": [
+    [
+     "Harina floja",
+     "300 g"
+    ],
+    [
+     "Huevos",
+     "2"
+    ],
+    [
+     "Aceite de oliva suave",
+     "50 g"
+    ],
+    [
+     "Anís dulce (licor)",
+     "30 g"
+    ],
+    [
+     "Azúcar",
+     "40 g"
+    ],
+    [
+     "Ralladura de limón o naranja",
+     "1"
+    ],
+    [
+     "Aceite para freír",
+     "c. s."
+    ],
+    [
+     "Azúcar para cubrir",
+     "c. s."
+    ]
+   ],
+   "steps": [
+    "Mezcla los huevos, el azúcar, el aceite, el anís y la ralladura; añade la harina hasta tener una masa lisa que no se pegue.",
+    "Reposa tapada 30 minutos.",
+    "Estira muy fina, casi transparente (1 mm), y corta en rombos o tiras con un corte en el centro.",
+    "Fríe en aceite a 175 °C, pocas cada vez, dándoles la vuelta, hasta que se doren y ondulen.",
+    "Escurre en papel y pásalas por azúcar aún calientes."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Buñuelos de patata",
+    "ratio": "250 g de patata cocida, 250 g de harina, 2 huevos, 15 g de levadura fresca, 50 ml de leche",
+    "note": "Fermentar hasta doblar y freír a cucharadas a 170 °C."
+   },
+   {
+    "use": "Orelletes más tiernas",
+    "ratio": "Añade 1 yema y baja la harina 20 g",
+    "note": "Menos crujientes, más mantecosas."
+   },
+   {
+    "use": "Acabado con miel",
+    "ratio": "Miel templada con unas gotas de agua",
+    "note": "Se pinta al servir, no antes."
+   }
+  ],
+  "variants": [
+   {
+    "id": "fritura",
+    "name": "Fritura",
+    "note": "Temperaturas y aceites."
+   },
+   {
+    "id": "deshidratados-y-crujientes",
+    "name": "Crujientes",
+    "note": "Otras formas de llegar al crujiente."
+   }
+  ],
+  "keys": [
+   "Para orelletes, la masa muy fina: si queda gruesa, salen duras en vez de crujientes.",
+   "Aceite estable a 170-175 °C: si baja, absorben grasa.",
+   "Azúcar en caliente, para que se pegue.",
+   "Los buñuelos, con la masa bien fermentada: es lo que los deja huecos."
+  ],
+  "errors": [
+   {
+    "p": "Aceitosas",
+    "fix": "Aceite frío o demasiadas a la vez. Fríe en tandas pequeñas y deja recuperar."
+   },
+   {
+    "p": "Duras, no crujientes",
+    "fix": "Masa gruesa o trabajada de más. Estira más fina y reposa más."
+   },
+   {
+    "p": "Buñuelos crudos por dentro",
+    "fix": "Aceite muy caliente. Baja a 165 °C para que se hagan por dentro antes de dorarse."
+   }
+  ],
+  "history": "Las masas dulces fritas acompañan las fiestas en toda la cuenca mediterránea. En la isla, las orelletes y los buñuelos son dulces de celebración y de casa.",
+  "uses": [
+   "Postre de fiesta",
+   "Acompañamiento de un café",
+   "Crujiente para un postre de autor"
+  ],
+  "keep": "Las orelletes, en lata hermética hasta una semana. Los buñuelos, del momento.",
+  "pro": "Una orellete fina sirve como teja o crujiente en un postre emplatado. Fríe en el servicio solo si el postre lo pide caliente.",
+  "related": [
+   "fritura",
+   "cocina-ibicenca",
+   "deshidratados-y-crujientes",
+   "flao"
+  ]
  }
 ]

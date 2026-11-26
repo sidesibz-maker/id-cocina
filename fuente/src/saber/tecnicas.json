@@ -1201,5 +1201,286 @@
    "contraste-y-equilibrio",
    "construir-un-plato"
   ]
+ },
+ {
+  "id": "glaseado-de-verduras",
+  "name": "Glaseado de verduras",
+  "name_en": "Glazing vegetables",
+  "cat": "tecnicas",
+  "group": "Verduras",
+  "aka": [
+   "glasear",
+   "glacé à blanc",
+   "glacé à brun",
+   "verduras glaseadas",
+   "zanahorias glaseadas"
+  ],
+  "summary": "Cocer verdura con poca agua, mantequilla y azúcar hasta que el líquido se convierte en una capa brillante.",
+  "what": "La verdura se cuece en un fondo de agua o caldo con mantequilla, sal y un poco de azúcar, tapada con papel. Cuando está tierna, el líquido ya se ha reducido a un almíbar que la envuelve y la deja brillante. Si se deja seguir, el glaseado se carameliza y la verdura toma color: es el glaseado oscuro.\n\nFunciona con verduras de raíz y bulbos: zanahoria, nabo, chalota, cebolleta, rábano, chirivía, castaña.",
+  "method": [
+   "Corta la verdura en piezas iguales o tornéala; las cebolletas y chalotas, enteras y peladas.",
+   "Ponla en una sola capa en un cazo ancho con agua o caldo hasta media altura, mantequilla, sal y una pizca de azúcar.",
+   "Tapa con un disco de papel de horno y cuece a fuego medio.",
+   "Cuando la punta de un cuchillo entre sin resistencia, retira el papel y deja reducir moviendo el cazo.",
+   "Para glaseado claro, para cuando el líquido nape; para glaseado oscuro, deja que tome color y desglasa con unas gotas de agua.",
+   "Termina con hierbas, ralladura o unas gotas de vinagre."
+  ],
+  "ratios": [
+   {
+    "use": "Glaseado claro",
+    "ratio": "Por 500 g de verdura: 20 g de mantequilla, 5 g de azúcar, sal y líquido a media altura",
+    "note": "Sin color."
+   },
+   {
+    "use": "Glaseado oscuro",
+    "ratio": "Por 500 g: 30 g de mantequilla y 10-15 g de azúcar",
+    "note": "Se deja caramelizar al final."
+   },
+   {
+    "use": "Con jugo",
+    "ratio": "Cambia el agua por jugo de carne o caldo",
+    "note": "Queda lacado y sabroso."
+   }
+  ],
+  "variants": [
+   {
+    "id": "jugo-de-carne",
+    "name": "Con jugo de carne",
+    "note": "Para guarniciones de carne."
+   },
+   {
+    "id": "reducciones",
+    "name": "Reducciones",
+    "note": "El mismo principio aplicado a salsas."
+   }
+  ],
+  "keys": [
+   "Piezas del mismo tamaño, para que lleguen todas a la vez.",
+   "Una sola capa: amontonadas se cuecen pero no se glasean.",
+   "El disco de papel cuece por vapor y deja reducir a la vez.",
+   "El líquido justo: tiene que acabarse cuando la verdura está tierna.",
+   "Un punto ácido al final quita el empalago."
+  ],
+  "errors": [
+   {
+    "p": "Verdura cruda y líquido acabado",
+    "fix": "Poco líquido o fuego alto. Añade agua y baja el fuego."
+   },
+   {
+    "p": "Verdura blanda y mucho líquido",
+    "fix": "Demasiado líquido. Saca la verdura, reduce aparte y vuelve a mezclar."
+   },
+   {
+    "p": "Glaseado que se corta y queda grasiento",
+    "fix": "Se ha secado del todo. Añade una cucharada de agua y mueve hasta emulsionar."
+   }
+  ],
+  "history": "Es una técnica clásica de guarnición de la cocina francesa, pensada para que la verdura llegue al plato con brillo y su propio sabor concentrado.",
+  "uses": [
+   "Guarniciones",
+   "Verdura protagonista",
+   "Acompañar carnes asadas"
+  ],
+  "keep": "Mejor al momento. Se puede cocer hasta tierna, enfriar en su líquido y glasear al pase.",
+  "pro": "Deja la verdura cocida y reserva el líquido aparte. En el pase, reduce el líquido con la verdura en un minuto.",
+  "related": [
+   "escaldado-de-verduras",
+   "verduras-al-vapor",
+   "reducciones",
+   "mantequilla-noisette",
+   "asado-de-verduras"
+  ]
+ },
+ {
+  "id": "asado-de-verduras",
+  "name": "Asado de verduras en horno",
+  "name_en": "Roasting vegetables",
+  "cat": "tecnicas",
+  "group": "Verduras",
+  "aka": [
+   "verduras asadas",
+   "verdura al horno",
+   "escalivada al horno",
+   "asar verdura"
+  ],
+  "summary": "Horno fuerte, poca humedad y espacio: así la verdura se dora por fuera y se concentra por dentro.",
+  "what": "Asar es quitar agua y dorar. Con calor alto y seco, la superficie de la verdura se carameliza y el interior se vuelve tierno y dulce. Hay dos maneras: piezas cortadas a horno fuerte, para dorar, y piezas enteras a horno medio, para que se hagan en su propio vapor (pimientos, berenjenas, cebollas, remolachas).\n\nEs la versión de interior de la brasa: menos humo, más control.",
+  "method": [
+   "Precalienta el horno a 220 °C con la bandeja dentro, para que la verdura empiece a dorar al tocarla.",
+   "Corta en piezas iguales, seca bien y aliña con aceite y sal justo antes de hornear.",
+   "Reparte en una sola capa con espacio entre piezas, con la cara cortada hacia abajo.",
+   "Asa sin tocar hasta que la base esté dorada, dale la vuelta y termina.",
+   "Para piezas enteras (pimiento, berenjena, cebolla, remolacha), horno a 180-200 °C hasta que estén blandas; deja reposar tapadas y pela.",
+   "Termina con un ácido, una hierba o un crujiente."
+  ],
+  "ratios": [
+   {
+    "use": "Raíces (zanahoria, chirivía, boniato)",
+    "ratio": "200-220 °C, 25-40 minutos",
+    "note": "Trozos de 2-3 cm."
+   },
+   {
+    "use": "Coles (coliflor, brócoli, coles de Bruselas)",
+    "ratio": "220-230 °C, 20-30 minutos",
+    "note": "La cara cortada abajo, para tostar."
+   },
+   {
+    "use": "Enteras (pimiento, berenjena, cebolla)",
+    "ratio": "180-200 °C, 40-60 minutos",
+    "note": "Reposo tapado 15 minutos antes de pelar."
+   },
+   {
+    "use": "Remolacha en sal o en papel",
+    "ratio": "180 °C, 60-90 minutos",
+    "note": "Según tamaño."
+   }
+  ],
+  "variants": [
+   {
+    "id": "verduras-a-la-brasa",
+    "name": "Verduras a la brasa",
+    "note": "La misma idea con fuego y humo."
+   },
+   {
+    "id": "pimientos-asados-alinados",
+    "name": "Pimientos asados aliñados",
+    "note": "Una aplicación directa."
+   },
+   {
+    "id": "pure-coliflor-tostada",
+    "name": "Puré de coliflor tostada",
+    "note": "Asar antes de triturar."
+   }
+  ],
+  "keys": [
+   "Espacio en la bandeja: amontonada, la verdura se cuece en vez de asarse.",
+   "Seca antes de aceitar: el agua frena el dorado.",
+   "La bandeja caliente desde el principio.",
+   "La sal, justo antes: si se pone pronto, saca agua.",
+   "Termina siempre con algo fresco o ácido."
+  ],
+  "errors": [
+   {
+    "p": "Blanda y sin color",
+    "fix": "Horno frío o bandeja llena. Sube la temperatura y usa dos bandejas."
+   },
+   {
+    "p": "Quemada por fuera y cruda por dentro",
+    "fix": "Piezas grandes a horno muy fuerte. Corta más pequeño o empieza a 190 °C."
+   },
+   {
+    "p": "Grasienta",
+    "fix": "Demasiado aceite. Basta con que brille."
+   }
+  ],
+  "history": "El asado al horno de verduras es tan antiguo como el horno de pan. La escalivada catalana o las verduras de los hornos de leña de los pueblos son la misma técnica.",
+  "uses": [
+   "Guarniciones",
+   "Purés y cremas con fondo tostado",
+   "Platos de verdura protagonista",
+   "Ensaladas templadas"
+  ],
+  "keep": "Asadas, en frío hasta 3 días. Las enteras peladas, en su jugo y aceite.",
+  "pro": "Asa por tandas en mise en place y regenera en horno fuerte 5 minutos. Las enteras (pimientos, berenjenas) aguantan bien preparadas del día.",
+  "related": [
+   "verduras-a-la-brasa",
+   "glaseado-de-verduras",
+   "pure-coliflor-tostada",
+   "crema-berenjena-brasa",
+   "pimientos-asados-alinados"
+  ]
+ },
+ {
+  "id": "encurtidos-rapidos",
+  "name": "Encurtidos rápidos",
+  "name_en": "Quick pickles",
+  "cat": "tecnicas",
+  "group": "Verduras",
+  "aka": [
+   "pickles",
+   "encurtido en vinagre",
+   "encurtido exprés",
+   "quick pickle"
+  ],
+  "summary": "Verdura en un líquido de vinagre, agua, sal y azúcar: acidez y crujiente en horas, no en semanas.",
+  "what": "A diferencia de la fermentación, aquí la acidez la pone el vinagre desde el principio. La verdura se cubre con un líquido caliente o frío de vinagre, agua, sal y azúcar, con especias, y en unas horas ya tiene sabor. Se queda crujiente y viva.\n\nEn un plato, un encurtido es la herramienta más rápida para dar acidez, frescor y contraste a algo graso o asado.",
+  "method": [
+   "Corta la verdura fina o en piezas pequeñas y métela en un tarro limpio con las especias.",
+   "Calienta el vinagre, el agua, la sal y el azúcar hasta que se disuelvan.",
+   "Para verdura que debe quedar crujiente (pepino, rábano, cebolla), vierte el líquido templado o frío; para verdura dura (zanahoria, remolacha, coliflor), caliente.",
+   "Cierra, deja enfriar y guarda en frío.",
+   "Prueba a la hora: la cebolla y el rábano ya están; la verdura dura necesita 1-2 días."
+  ],
+  "ratios": [
+   {
+    "use": "Líquido base",
+    "ratio": "1 parte de vinagre (6 %), 1 de agua, 2-3 % de sal y 3-5 % de azúcar sobre el líquido",
+    "note": "Equilibrado, para casi todo."
+   },
+   {
+    "use": "Encurtido intenso",
+    "ratio": "2 partes de vinagre por 1 de agua",
+    "note": "Para acompañar grasa: brasa, casquería, foie."
+   },
+   {
+    "use": "Encurtido suave para crudos",
+    "ratio": "1 de vinagre de arroz por 2 de agua, 1,5 % de sal",
+    "note": "Para pescados y platos delicados."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cebolla-encurtida",
+    "name": "Cebolla encurtida",
+    "note": "La más rápida y útil."
+   },
+   {
+    "id": "escabeche",
+    "name": "Escabeche",
+    "note": "El encurtido con aceite y cocción."
+   },
+   {
+    "id": "fermentacion-lactica",
+    "name": "Fermentación láctica",
+    "note": "La acidez que hacen las bacterias, más lenta y compleja."
+   }
+  ],
+  "keys": [
+   "El vinagre manda: cambia de vinagre y cambia el encurtido (jerez, arroz, sidra, vino blanco).",
+   "Corte fino para encurtir en horas; grueso para días.",
+   "Líquido frío para conservar el crujiente.",
+   "El líquido sobrante es un aliño: úsalo en vinagretas.",
+   "Siempre en frío: un encurtido rápido no es una conserva."
+  ],
+  "errors": [
+   {
+    "p": "Demasiado ácido",
+    "fix": "Más agua en el líquido o un poco más de azúcar. Escurre antes de servir."
+   },
+   {
+    "p": "Blando",
+    "fix": "Líquido muy caliente o verdura muy fina. Vierte el líquido frío."
+   },
+   {
+    "p": "Sin sabor",
+    "fix": "Poco tiempo o corte grueso. Corta más fino o deja un día más."
+   }
+  ],
+  "history": "Encurtir en vinagre es una forma muy antigua de conservar; la versión rápida, guardada en frío y pensada para el frescor más que para durar, es la que usan hoy las cocinas para dar contraste.",
+  "uses": [
+   "Contraste ácido en platos grasos",
+   "Guarniciones",
+   "Aliños con el líquido",
+   "Bocados de aperitivo"
+  ],
+  "keep": "En frío, en tarro cerrado, 1-3 semanas según la verdura.",
+  "pro": "Ten siempre dos o tres en la cámara (cebolla, pepino, rábano). Etiqueta con la fecha y usa el líquido en vinagretas.",
+  "related": [
+   "cebolla-encurtida",
+   "escabeche",
+   "fermentacion-lactica",
+   "acidez-en-cocina",
+   "salmuera"
+  ]
  }
 ]

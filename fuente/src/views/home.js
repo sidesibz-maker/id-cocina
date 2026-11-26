@@ -88,7 +88,7 @@ function craft() {
  const due = dueToday();
  cards.push('<a class="craft-card" href="#/entrenar">' + icon('brain') + '<strong>' + esc(due ? (due === 1 ? t('1 tarjeta para repasar', '1 card to review') : due + t(' tarjetas para repasar', ' cards to review')) : t('Entrenar cinco minutos', 'Train for five minutes')) + '</strong><span>' + esc(t('Proporciones, fallos y recetas base hasta que te los sepas de memoria', 'Ratios, faults and base recipes until you know them by heart')) + '</span></a>');
  cards.push('<a class="craft-card" href="#/herramientas' + (running.length ? '/temporizadores' : '') + '">' + icon(running.length ? 'clock' : 'bolt') + '<strong>' + esc(running.length ? (running.length === 1 ? t('1 temporizador en marcha', '1 timer running') : running.length + t(' temporizadores en marcha', ' timers running')) : t('Herramientas', 'Tools')) + '</strong><span>' + esc(t('Escalar recetas, salmueras, espesantes, panadero y temporizadores', 'Scale recipes, brines, thickeners, baking and timers')) + '</span></a>');
- return '<section class="sec">' + sectionHead(t('Tu oficio', 'Your craft')) + '<div class="craft">' + cards.join('') + '</div></section>';
+ return '<section class="sec">' + sectionHead(t('Para hoy', 'For today'), '', t('Lo que te toca: aprender, repasar y apuntar.', 'What is up for you: learn, review and note down.')) + '<div class="craft">' + cards.join('') + '</div></section>';
 }
 
 export function render() {
@@ -107,11 +107,11 @@ export function render() {
  html += '<form class="ksearch" id="homeSaber" role="search"><label class="sr" for="homeSaberQ">' + esc(t('Buscar en la Biblioteca', 'Search the library')) + '</label><div class="searchbox">' + icon('search') + '<input id="homeSaberQ" type="search" placeholder="' + esc(t('¿Qué quieres saber? Bechamel, fumet, emulsión…', 'What do you want to know? Béchamel, stock, emulsion…')) + '" autocomplete="off" enterkeyhint="search"></div></form>';
 
  html += firstSteps();
+ html += craft();
+ html += dailyEntry();
  if (top) html += lead(top, day);
  else html += '<div class="cover cover-empty"><span class="kicker">' + esc(t('Radar', 'Radar')) + '</span><span class="cover-title">' + esc(state.loaded ? t('El radar está vacío', 'The radar is empty') : t('Abriendo el radar…', 'Opening the radar…')) + '</span>' +
   '<span class="cover-sum">' + esc(t('Aquí sale lo que se mueve en las mejores cocinas y revistas, llevado a tu cocina. Entra en el Radar y pulsa «Buscar tendencias de hoy».', 'What is moving in the best kitchens and magazines, brought to your kitchen, shows up here. Open the Radar and press “Find today\'s trends”.')) + '</span></div>';
-
- html += dailyEntry();
 
  if (rest.length) html += '<section class="sec">' + sectionHead(day === dayKey() ? t('Hoy en el radar', 'On the radar today') : t('Lo último del radar', 'Latest on the radar'), moreLink('#/radar', t('Todo el radar', 'Full radar'))) + '<div class="strip">' + rest.map(x => trendCard(x)).join('') + '</div></section>';
 
@@ -129,7 +129,6 @@ export function render() {
  else html += emptyState('book', t('Tu libreta está vacía', 'Your notebook is empty'), t('Empieza por un producto que tengas en casa o pide ideas. Cada plato guarda sus pruebas y cómo va cambiando.', 'Start from a product you have in the kitchen or ask for ideas. Each dish keeps its tests and how it evolves.'), state.canEdit ? '<a class="btn primary" href="#/crear">' + icon('plus') + esc(t('Crear un plato', 'Create a dish')) + '</a>' : '');
  html += '</section>';
 
- html += craft();
  html += '<section class="sec">' + sectionHead(t('Empieza por aquí', 'Start here')) + '<div class="tiles">' +
   '<a class="tile tile-big" href="#/crear">' + icon('plus') + '<strong>' + esc(t('Crear un plato', 'Create a dish')) + '</strong><span>' + esc(t('Monta componentes y mira qué sabores dominan', 'Build components and see which flavours lead')) + '</span></a>' +
   '<a class="tile tile-big" href="#/laboratorio">' + icon('spark') + '<strong>' + esc(t('Laboratorio creativo', 'Creative lab')) + '</strong><span>' + esc(t('Una chispa: producto, pareja, puente y mecanismo', 'A spark: produce, partner, bridge and mechanism')) + '</span></a>' +

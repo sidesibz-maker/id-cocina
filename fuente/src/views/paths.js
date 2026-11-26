@@ -13,6 +13,8 @@ export const PATHS = [
  ['fondos', 'Fondos, jugos y caldos', 'Stocks, jus and broths', 'El sabor de fondo de una cocina seria.', 'The backbone flavour of a serious kitchen.', ['fondo-blanco', 'fondo-oscuro', 'fumet', 'fondo-de-marisco', 'jugo-de-carne', 'glace', 'consome', 'dashi']],
  ['emulsiones', 'Emulsiones', 'Emulsions', 'Por qué ligan y cómo salvarlas cuando se cortan.', 'Why they bind and how to save them when they split.', ['emulsiones', 'mayonesa', 'alioli', 'vinagreta', 'holandesa', 'beurre-blanc', 'pil-pil']],
  ['conservar', 'Conservar y transformar', 'Preserve and transform', 'Sal, ácido, tiempo y humo.', 'Salt, acid, time and smoke.', ['salmuera', 'curado-de-pescado', 'escabeche', 'fermentacion-lactica', 'ahumado', 'deshidratados-y-crujientes']],
+ ['isla', 'La cocina de la isla', 'Island cooking', 'Producto, despensa y dulces de Ibiza y Formentera.', 'Produce, pantry and sweets of Ibiza and Formentera.', ['cocina-ibicenca', 'sal-y-flor-de-sal', 'pescado-de-roca', 'almendra', 'higos-y-algarroba', 'flao', 'greixonera', 'orelletes-y-bunyols']],
+ ['verdura', 'La verdura, protagonista', 'Vegetables at the centre', 'Escaldar, glasear, asar, brasa y encurtir.', 'Blanch, glaze, roast, grill and pickle.', ['escaldado-de-verduras', 'verduras-al-vapor', 'glaseado-de-verduras', 'asado-de-verduras', 'verduras-a-la-brasa', 'encurtidos-rapidos', 'alcachofas', 'setas']],
  ['dulce', 'Bases de pastelería', 'Pastry foundations', 'Cremas, azúcar, chocolate, masas y frío.', 'Creams, sugar, chocolate, doughs and cold.', ['crema-inglesa', 'crema-pastelera', 'merengues', 'caramelo', 'ganache', 'masa-quebrada', 'helados-y-sorbetes']]
 ];
 const read = () => docById(ID)?.read || {};
