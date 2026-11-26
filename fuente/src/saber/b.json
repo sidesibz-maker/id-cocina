@@ -2568,5 +2568,1700 @@
       "ceviche-y-crudos",
       "umami-y-fondo"
     ]
+  },
+  {
+    "id": "salsas-de-vino",
+    "name": "Salsas de vino: bordelesa, vino tinto y oporto",
+    "name_en": "Wine sauces: bordelaise, red wine and port",
+    "aka": [
+      "bordelesa",
+      "salsa bordelesa",
+      "salsa de vino tinto",
+      "salsa de oporto",
+      "salsa al oporto",
+      "reducción de vino",
+      "salsa marchand de vin"
+    ],
+    "cat": "salsas",
+    "group": "Salsas clásicas",
+    "summary": "Vino reducido con chalota y hierbas, unido a un jugo o una demi-glace y montado con mantequilla: la salsa clásica de las carnes rojas.",
+    "what": "Las salsas de vino se construyen en dos pasos: primero se reduce el vino con chalota, tomillo, laurel y pimienta hasta concentrarlo y quitarle la acidez cruda; después se añade un [[jugo-de-carne|jugo]] o una [[demi-glace]] y se reduce hasta que nape. Al final se monta con mantequilla fría. La bordelesa clásica usa vino tinto seco y a veces se termina con tuétano escalfado; la de oporto o de otros vinos dulces y generosos es más golosa, ideal para pato, caza o hígado.\n\nLa calidad depende de dos cosas: un buen vino, porque sus defectos se concentran, y un buen fondo, porque es el que da cuerpo.",
+    "base": {
+      "for": "unos 400 ml",
+      "items": [
+        [
+          "Vino tinto seco",
+          "500 ml"
+        ],
+        [
+          "Chalotas picadas",
+          "2 (60 g)"
+        ],
+        [
+          "Tomillo y laurel",
+          "1 rama y 1 hoja"
+        ],
+        [
+          "Pimienta negra en grano machacada",
+          "5–6 granos"
+        ],
+        [
+          "Demi-glace o jugo de carne reducido",
+          "500 ml"
+        ],
+        [
+          "Mantequilla fría en dados",
+          "40 g"
+        ],
+        [
+          "Sal",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Rehoga las chalotas en una nuez de mantequilla sin color.",
+        "Añade el vino, el tomillo, el laurel y la pimienta y reduce a fuego medio hasta que quede una quinta parte.",
+        "Incorpora la demi-glace y reduce de nuevo hasta que nape una cuchara.",
+        "Cuela por colador fino presionando la chalota.",
+        "Fuera del fuego, monta con la mantequilla fría, ajusta de sal y mantén a 60–70 °C sin hervir."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Reducción del vino",
+        "ratio": "Hasta 1/5 de su volumen",
+        "note": "Antes de añadir el fondo."
+      },
+      {
+        "use": "Salsa de oporto",
+        "ratio": "300 ml de oporto por 500 ml de jugo",
+        "note": "Reducir el oporto a la mitad."
+      },
+      {
+        "use": "Mantener en el pase",
+        "ratio": "60–70 °C",
+        "note": "Sin hervir tras montar."
+      },
+      {
+        "use": "Ración",
+        "ratio": "30–40 ml por plato",
+        "note": "Napar."
+      }
+    ],
+    "variants": [
+      {
+        "id": "demi-glace",
+        "name": "Demi-glace",
+        "note": "La base clásica."
+      },
+      {
+        "id": "jugo-de-carne",
+        "name": "Jugo de carne",
+        "note": "Más ligero y moderno."
+      },
+      {
+        "id": "reducciones",
+        "name": "Reducciones",
+        "note": "Cómo concentrar sin amargar."
+      },
+      {
+        "id": "vinos-y-licores",
+        "name": "Vinos para cocinar",
+        "note": "Qué vino elegir."
+      }
+    ],
+    "keys": [
+      "Vino que beberías: lo malo se concentra.",
+      "Reducir el vino antes del fondo.",
+      "Montar con mantequilla fuera del fuego.",
+      "Colar fino para que brille.",
+      "Un toque de vinagre o de sal al final la despierta."
+    ],
+    "errors": [
+      {
+        "p": "Salsa ácida y astringente",
+        "fix": "Vino poco reducido o muy tánico. Reduce más y usa un vino afrutado."
+      },
+      {
+        "p": "Salsa sin cuerpo",
+        "fix": "Fondo flojo. Usa una demi-glace o reduce el jugo antes."
+      },
+      {
+        "p": "Salsa grasienta",
+        "fix": "Ha hervido tras montar. Mantenla por debajo de 70 °C."
+      }
+    ],
+    "history": "La bordelesa toma su nombre de Burdeos y forma parte de las salsas derivadas de la cocina clásica francesa, construidas sobre una salsa oscura. Las salsas de vinos generosos o dulces para caza y pato son también clásicas de esa tradición.",
+    "uses": [
+      "Carnes rojas a la brasa",
+      "Pato y caza",
+      "Hígado y casquería",
+      "Huevos escalfados en vino"
+    ],
+    "keep": "La reducción de vino, 1 semana en frío. La salsa sin montar, 4–5 días en frío; se monta al regenerar.",
+    "pro": "Prepara la base sin mantequilla en tanda. Al servicio, calienta la cantidad necesaria y monta con mantequilla fría por tandas pequeñas.",
+    "related": [
+      "demi-glace",
+      "jugo-de-carne",
+      "reducciones",
+      "vinos-y-licores",
+      "espanola",
+      "emulsiones-al-momento"
+    ]
+  },
+  {
+    "id": "salsa-de-pimienta-y-mostaza",
+    "name": "Salsa de pimienta y salsa de mostaza",
+    "name_en": "Pepper sauce and mustard sauce",
+    "aka": [
+      "salsa de pimienta",
+      "salsa a la pimienta",
+      "pimienta verde",
+      "salsa de mostaza",
+      "salsa Robert",
+      "salsa de mostaza y nata"
+    ],
+    "cat": "salsas",
+    "group": "Salsas clásicas",
+    "summary": "Dos salsas de sartén para carnes: pimienta con un golpe de brandy y nata, y mostaza con jugo, cebolla o nata.",
+    "what": "La salsa de pimienta se hace en la misma sartén donde se ha dorado la carne: pimienta verde o negra machacada, un desglasado con brandy o coñac, un [[jugo-de-carne|jugo]] y, a menudo, nata para suavizar. La pimienta debe notarse sin quemar la boca.\n\nLas salsas de mostaza siguen la misma lógica: una base de chalota o cebolla, vino, jugo o nata, y la mostaza al final, sin hervir, para que conserve su picor y su aroma. Con mostaza de grano queda rústica; con mostaza fina, lisa y más picante. Las dos acompañan carnes de cerdo, ternera, vacuno y aves.",
+    "base": {
+      "for": "4 raciones (unos 300 ml)",
+      "items": [
+        [
+          "Chalota picada",
+          "1 (30 g)"
+        ],
+        [
+          "Pimienta verde en salmuera escurrida o negra machacada",
+          "15 g / 5 g"
+        ],
+        [
+          "Brandy o coñac",
+          "40 ml"
+        ],
+        [
+          "Jugo de carne",
+          "200 ml"
+        ],
+        [
+          "Nata para cocinar",
+          "150 ml"
+        ],
+        [
+          "Mantequilla",
+          "20 g"
+        ],
+        [
+          "Sal",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Dora la carne en la sartén y resérvala caliente; quita el exceso de grasa.",
+        "Rehoga la chalota en la mantequilla, añade la pimienta y deja que suelte aroma unos segundos.",
+        "Aparta la sartén del fuego, añade el brandy y flambea con cuidado o deja que se evapore.",
+        "Moja con el jugo y reduce a la mitad; añade la nata y reduce hasta que nape.",
+        "Prueba de sal y sirve sobre la carne o al lado. Para la de mostaza, cambia la pimienta por 30–40 g de mostaza al final, fuera del fuego."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Pimienta verde",
+        "ratio": "15 g por 300 ml de salsa",
+        "note": "Más si se quiere intensa."
+      },
+      {
+        "use": "Mostaza",
+        "ratio": "30–40 g por 300 ml",
+        "note": "Fuera del fuego."
+      },
+      {
+        "use": "Reducción con nata",
+        "ratio": "Hasta que nape, 3–5 minutos",
+        "note": "Fuego medio."
+      },
+      {
+        "use": "Ración",
+        "ratio": "50–70 ml por pieza de carne",
+        "note": ""
+      }
+    ],
+    "variants": [
+      {
+        "id": "jugo-de-carne",
+        "name": "Base de jugo",
+        "note": "Sin nata, más ligera."
+      },
+      {
+        "id": "vinos-y-licores",
+        "name": "Flambeado",
+        "note": "Cómo hacerlo con seguridad."
+      },
+      {
+        "id": "especias",
+        "name": "Pimientas",
+        "note": "Tipos y tostado."
+      },
+      {
+        "id": null,
+        "name": "Salsa Robert",
+        "note": "Cebolla, vino blanco, salsa oscura y mostaza; para cerdo."
+      }
+    ],
+    "keys": [
+      "En la sartén de la carne: el fondo pegado es sabor.",
+      "Flambear fuera del fuego.",
+      "Mostaza al final y sin hervir.",
+      "Pimienta machacada, no molida fina.",
+      "Nata para suavizar, sin tapar el sabor."
+    ],
+    "errors": [
+      {
+        "p": "Salsa que pica demasiado",
+        "fix": "Exceso de pimienta. Añade más nata o jugo."
+      },
+      {
+        "p": "Mostaza amarga o sin picor",
+        "fix": "Ha hervido. Añádela al final y fuera del fuego."
+      },
+      {
+        "p": "Llamarada peligrosa",
+        "fix": "Licor sobre el fuego. Aparta la sartén y vierte desde un cazo."
+      }
+    ],
+    "history": "El filete a la pimienta y las salsas de mostaza son clásicos de la cocina de bistró francesa, y se extendieron en los restaurantes de toda Europa durante el siglo XX.",
+    "uses": [
+      "Solomillo y entrecot",
+      "Cerdo",
+      "Ternera",
+      "Aves",
+      "Conejo con mostaza"
+    ],
+    "keep": "Se hace al momento. La base de jugo, en frío varios días.",
+    "pro": "Ten jugo reducido y nata medidos por ración; la salsa se hace en la sartén al pedido en 3–4 minutos.",
+    "related": [
+      "jugo-de-carne",
+      "vinos-y-licores",
+      "especias",
+      "punto-de-la-carne",
+      "emulsiones-al-momento",
+      "salsas-de-vino"
+    ]
+  },
+  {
+    "id": "gribiche-y-ravigote",
+    "name": "Gribiche y ravigote",
+    "name_en": "Gribiche and ravigote",
+    "aka": [
+      "salsa gribiche",
+      "salsa ravigote",
+      "vinagreta de huevo",
+      "salsa de huevo duro",
+      "vinagreta de alcaparras"
+    ],
+    "cat": "salsas",
+    "group": "Salsas clásicas",
+    "summary": "Dos salsas frías, ácidas y con tropezones: gribiche de yema cocida emulsionada, y ravigote de vinagreta con alcaparras y hierbas.",
+    "what": "La gribiche es una emulsión fría hecha con yemas de huevo cocido en lugar de crudas: se machacan con mostaza y se montan con aceite y vinagre. Luego se añaden la clara picada, pepinillos, alcaparras y hierbas finas. Es más rústica que una [[mayonesa]] y muy sabrosa.\n\nLa ravigote fría es una [[vinagreta]] cargada de alcaparras, chalota, pepinillo y hierbas; existe también una versión caliente, un velouté con una reducción de vino y vinagre y hierbas. Las dos acompañan carnes cocidas, cabeza de ternera, pescados escalfados, puerros y espárragos.",
+    "base": {
+      "for": "unos 350 ml de gribiche",
+      "items": [
+        [
+          "Huevos cocidos 10 minutos",
+          "3"
+        ],
+        [
+          "Mostaza",
+          "10 g"
+        ],
+        [
+          "Aceite de girasol o de oliva suave",
+          "200 ml"
+        ],
+        [
+          "Vinagre de vino blanco",
+          "20 ml"
+        ],
+        [
+          "Pepinillos picados",
+          "30 g"
+        ],
+        [
+          "Alcaparras picadas",
+          "20 g"
+        ],
+        [
+          "Perejil, estragón y cebollino picados",
+          "2 cucharadas"
+        ],
+        [
+          "Sal y pimienta",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Separa las yemas de las claras; pica las claras finas.",
+        "Machaca las yemas con la mostaza y el vinagre hasta formar una pasta lisa.",
+        "Añade el aceite en hilo, batiendo, como una mayonesa.",
+        "Incorpora clara, pepinillos, alcaparras y hierbas; sazona.",
+        "Deja reposar 30 minutos en frío para que se asienten los sabores."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Ravigote fría",
+        "ratio": "Vinagreta 1:3 con 30 g de alcaparras y 1 chalota por 200 ml",
+        "note": "Hierbas al final."
+      },
+      {
+        "use": "Gribiche",
+        "ratio": "1 yema cocida por 60–70 ml de aceite",
+        "note": "Más rústica que la mayonesa."
+      },
+      {
+        "use": "Ración",
+        "ratio": "30–40 g por plato",
+        "note": "Como acompañamiento."
+      },
+      {
+        "use": "Hierbas",
+        "ratio": "15–20 g por 300 ml de salsa",
+        "note": "Recién picadas."
+      }
+    ],
+    "variants": [
+      {
+        "id": "tartara",
+        "name": "Tártara",
+        "note": "Mayonesa con encurtidos y hierbas."
+      },
+      {
+        "id": "vinagreta",
+        "name": "Vinagreta",
+        "note": "La base de la ravigote fría."
+      },
+      {
+        "id": "alino-alcaparras-limon",
+        "name": "Aliño de alcaparras",
+        "note": "Versión de pase."
+      },
+      {
+        "id": "veloute",
+        "name": "Ravigote caliente",
+        "note": "Sobre un velouté con vino y hierbas."
+      }
+    ],
+    "keys": [
+      "Yema cocida bien machacada antes del aceite.",
+      "Tropezones finos y bien escurridos.",
+      "Hierbas al final para que no se oscurezcan.",
+      "Ácida: es su función con carnes y pescados cocidos.",
+      "Reposo breve para integrar."
+    ],
+    "errors": [
+      {
+        "p": "Gribiche granulosa",
+        "fix": "Yema mal machacada. Pásala por un tamiz antes."
+      },
+      {
+        "p": "Salsa aguada",
+        "fix": "Encurtidos sin escurrir. Escúrrelos y sécalos."
+      },
+      {
+        "p": "Hierbas negras",
+        "fix": "Picadas mucho antes o con ácido. Añádelas al final."
+      }
+    ],
+    "history": "Gribiche y ravigote son salsas de la cocina clásica francesa, ligadas a platos de carnes cocidas y casquería como la cabeza de ternera.",
+    "uses": [
+      "Carnes y lenguas cocidas",
+      "Cabeza y morro de ternera",
+      "Pescados escalfados",
+      "Puerros y espárragos",
+      "Huevos"
+    ],
+    "keep": "Gribiche, 2 días en frío. Ravigote fría, 3 días en frío con las hierbas añadidas al servir.",
+    "pro": "Prepara la base sin hierbas y añádelas por servicio. En biberón o en cuenco sobre hielo.",
+    "related": [
+      "tartara",
+      "vinagreta",
+      "mayonesa",
+      "alino-alcaparras-limon",
+      "casqueria",
+      "aceitunas-y-alcaparras"
+    ]
+  },
+  {
+    "id": "rouille",
+    "name": "Rouille y salsas de pan y ajo",
+    "name_en": "Rouille and bread-and-garlic sauces",
+    "aka": [
+      "rouille",
+      "salsa rouille",
+      "salsa de ajo y pan",
+      "salsa para bullabesa",
+      "salsa de azafrán y ajo"
+    ],
+    "cat": "salsas",
+    "group": "Salsas del mundo",
+    "summary": "Salsa de ajo, pimiento, azafrán y miga de pan mojada en caldo, montada con aceite: el acompañante de las sopas de pescado.",
+    "what": "La rouille es una salsa provenzal que acompaña las sopas y guisos de pescado: se unta en tostadas que se mojan en el caldo. Se hace majando ajo, guindilla o pimiento rojo y azafrán con miga de pan (o patata) empapada en el propio caldo de pescado, y se monta con aceite de oliva. Su color rojizo le da el nombre.\n\nPertenece a una gran familia mediterránea de salsas de pan, ajo y aceite: el [[ajoblanco]], la [[picada]], el [[alioli]] o la skordalia griega. Todas usan el pan o la patata para dar cuerpo y estabilizar la emulsión.",
+    "base": {
+      "for": "unos 300 ml",
+      "items": [
+        [
+          "Ajo",
+          "3 dientes"
+        ],
+        [
+          "Guindilla seca o pimiento rojo asado",
+          "1 / 50 g"
+        ],
+        [
+          "Azafrán en hebra infusionado",
+          "0,1 g"
+        ],
+        [
+          "Miga de pan",
+          "40 g"
+        ],
+        [
+          "Caldo de pescado caliente",
+          "50–60 ml"
+        ],
+        [
+          "Yema (opcional)",
+          "1"
+        ],
+        [
+          "Aceite de oliva",
+          "200 ml"
+        ],
+        [
+          "Sal",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Empapa la miga de pan en el caldo caliente con el azafrán y escúrrela un poco.",
+        "Maja o tritura el ajo con sal y la guindilla o el pimiento hasta una pasta.",
+        "Añade la miga y la yema si la usas, y tritura hasta que esté lisa.",
+        "Monta con el aceite en hilo hasta que tenga la textura de una mayonesa densa.",
+        "Ajusta de sal y, si está espesa, aclara con un poco de caldo."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Pan por salsa",
+        "ratio": "40 g de miga por 200 ml de aceite",
+        "note": "Da cuerpo y estabiliza."
+      },
+      {
+        "use": "Con patata",
+        "ratio": "100 g de patata cocida en lugar del pan",
+        "note": "Más suave."
+      },
+      {
+        "use": "Ración",
+        "ratio": "20–30 g por persona",
+        "note": "Para untar tostadas."
+      },
+      {
+        "use": "Azafrán",
+        "ratio": "0,1 g por 300 ml",
+        "note": "Infusionado en el caldo."
+      }
+    ],
+    "variants": [
+      {
+        "id": "alioli",
+        "name": "Alioli",
+        "note": "Ajo y aceite solos."
+      },
+      {
+        "id": "ajoblanco",
+        "name": "Ajoblanco",
+        "note": "Pan, almendra y ajo en sopa fría."
+      },
+      {
+        "id": "picada",
+        "name": "Picada",
+        "note": "Pan y frutos secos para ligar guisos."
+      },
+      {
+        "id": null,
+        "name": "Skordalia",
+        "note": "Salsa griega de ajo con pan o patata y aceite."
+      }
+    ],
+    "keys": [
+      "La miga empapada en caldo da sabor y cuerpo.",
+      "Ajo majado con sal para una pasta fina.",
+      "Aceite en hilo, como una mayonesa.",
+      "Ajusta la textura con caldo.",
+      "Sirve aparte con tostadas para mojar."
+    ],
+    "errors": [
+      {
+        "p": "Salsa cortada",
+        "fix": "Aceite demasiado rápido. Empieza en un bol nuevo con un poco de miga y añade la cortada poco a poco."
+      },
+      {
+        "p": "Textura pastosa",
+        "fix": "Demasiado pan. Aclara con caldo y aceite."
+      },
+      {
+        "p": "Ajo agresivo",
+        "fix": "Ajo crudo en exceso. Usa menos o escáldalo antes."
+      }
+    ],
+    "history": "La rouille es una salsa tradicional de la Provenza, servida con la bullabesa y otras sopas de pescado. Las salsas de pan, ajo y aceite son muy antiguas en todo el Mediterráneo.",
+    "uses": [
+      "Sopas y guisos de pescado",
+      "Tostadas para mojar",
+      "Pescados a la brasa",
+      "Patatas y verduras"
+    ],
+    "keep": "2 días en frío bien tapada; con yema, mejor el mismo día.",
+    "pro": "Prepara la salsa en tanda corta por servicio. Tostadas listas para servir con cada sopa.",
+    "related": [
+      "alioli",
+      "ajoblanco",
+      "picada",
+      "caldo-de-roca",
+      "azafran",
+      "emulsiones"
+    ]
+  },
+  {
+    "id": "salsa-vierge",
+    "name": "Salsa vierge y aliños de tomate crudo",
+    "name_en": "Sauce vierge and raw tomato dressings",
+    "aka": [
+      "salsa vierge",
+      "salsa virgen",
+      "aliño de tomate",
+      "tomate concassé aliñado",
+      "trempó",
+      "pa amb oli",
+      "tomate rallado"
+    ],
+    "cat": "salsas",
+    "group": "Bases y aliños",
+    "summary": "Aceite de oliva tibio con tomate en dados, hierbas y cítrico: una salsa fresca que se monta en segundos para pescados y verduras.",
+    "what": "La salsa vierge es un aliño templado de aceite de oliva con [[tomate]] pelado y en dados, chalota, albahaca u otras hierbas y un ácido (limón o vinagre suave). No se cocina: solo se templa para que el aceite libere los aromas, sin cocer el tomate. Es una salsa de verano, ligera y brillante, que acompaña pescados a la plancha o a la brasa, mariscos y verduras.\n\nLa misma idea de tomate crudo aliñado está en toda la cocina mediterránea: el tomate rallado con aceite y sal para el pan, o el trempó mallorquín de tomate, pimiento y cebolla. La clave siempre es el tomate maduro y de temporada.",
+    "base": {
+      "for": "4 raciones (unos 300 ml)",
+      "items": [
+        [
+          "Aceite de oliva virgen extra",
+          "150 ml"
+        ],
+        [
+          "Tomate maduro pelado, sin semillas y en dados",
+          "200 g"
+        ],
+        [
+          "Chalota picada fina",
+          "1 (30 g)"
+        ],
+        [
+          "Zumo de limón",
+          "15–20 ml"
+        ],
+        [
+          "Albahaca en tiras",
+          "8–10 hojas"
+        ],
+        [
+          "Semillas de cilantro tostadas y machacadas (opcional)",
+          "1 g"
+        ],
+        [
+          "Sal en escamas",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Escalda los tomates 10–15 segundos, enfría, pela, quita las semillas y corta en dados pequeños.",
+        "Templa el aceite con la chalota y el cilantro a fuego muy suave, sin que frían.",
+        "Aparta del fuego, añade el tomate y el limón.",
+        "Justo antes de servir, añade la albahaca y la sal.",
+        "Sirve tibia sobre el pescado o las verduras."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Temperatura de la salsa",
+        "ratio": "40–50 °C",
+        "note": "Tibia, sin cocer el tomate."
+      },
+      {
+        "use": "Tomate y aceite",
+        "ratio": "Partes parecidas en peso y volumen",
+        "note": "Más tomate si se quiere más fresca."
+      },
+      {
+        "use": "Ración",
+        "ratio": "40–60 ml por plato",
+        "note": ""
+      },
+      {
+        "use": "Pan con tomate",
+        "ratio": "1 tomate maduro rallado por 4 rebanadas",
+        "note": "Aceite y sal al final."
+      }
+    ],
+    "variants": [
+      {
+        "id": "tomate",
+        "name": "Tomate",
+        "note": "Variedades y madurez."
+      },
+      {
+        "id": "vinagreta",
+        "name": "Vinagreta",
+        "note": "El aliño de base."
+      },
+      {
+        "id": "tomate-confitado",
+        "name": "Tomate confitado",
+        "note": "La versión cocinada y concentrada."
+      },
+      {
+        "id": null,
+        "name": "Trempó",
+        "note": "Ensalada mallorquina de tomate, pimiento y cebolla."
+      }
+    ],
+    "keys": [
+      "Tomate maduro de temporada o nada.",
+      "Tibia, no caliente: el tomate no se cuece.",
+      "Hierbas y sal al último momento.",
+      "Buen aceite: es la mitad de la salsa.",
+      "Sin semillas para que no se agüe."
+    ],
+    "errors": [
+      {
+        "p": "Salsa aguada",
+        "fix": "Tomate con semillas o muy acuoso. Quita semillas y escurre."
+      },
+      {
+        "p": "Tomate cocido y apagado",
+        "fix": "Aceite demasiado caliente. Témplalo y aparta antes de añadir el tomate."
+      },
+      {
+        "p": "Albahaca negra",
+        "fix": "Añadida antes. Ponla al servir."
+      }
+    ],
+    "history": "La salsa vierge es una creación de la cocina francesa de finales del siglo XX, en la línea de salsas más ligeras. Los aliños de tomate crudo con aceite y sal son de siempre en el Mediterráneo.",
+    "uses": [
+      "Pescados a la plancha y brasa",
+      "Mariscos",
+      "Verduras asadas",
+      "Pan y tostadas",
+      "Pastas frías"
+    ],
+    "keep": "Se hace al momento; el tomate cortado aguanta unas horas en frío, sin sal.",
+    "pro": "Ten los dados de tomate y la chalota preparados en frío; templa el aceite por tandas y monta al pedido.",
+    "related": [
+      "tomate",
+      "vinagreta",
+      "tomate-confitado",
+      "aceite-de-oliva",
+      "dorada-y-lubina",
+      "hierbas-frescas"
+    ]
+  },
+  {
+    "id": "gazpacho-y-salmorejo",
+    "name": "Gazpacho y salmorejo",
+    "name_en": "Gazpacho and salmorejo",
+    "aka": [
+      "gazpacho",
+      "salmorejo",
+      "sopa fría de tomate",
+      "gazpacho de fresa",
+      "porra",
+      "sopas frías"
+    ],
+    "cat": "salsas",
+    "group": "Salsas españolas",
+    "summary": "Sopas frías de tomate emulsionadas con aceite: plato de verano, y también salsa fría para crudos, verduras y pescados.",
+    "what": "El gazpacho es una sopa fría de tomate, pepino, pimiento, ajo, aceite, vinagre y sal, a veces con pan, triturada y colada hasta quedar fluida. El salmorejo es más denso: tomate, pan, ajo y mucho aceite, emulsionados hasta tener una textura de crema; se sirve con huevo duro y jamón.\n\nLos dos son [[emulsiones]] de aceite en el agua del tomate, ligadas por el pan y la pulpa. Además de servirse como plato, funcionan como salsas frías: un salmorejo espeso bajo un pescado curado, un gazpacho en gelatina o espuma, o como base para un crudo. Forman familia con el [[ajoblanco]].",
+    "base": {
+      "for": "unos 1,2 l de gazpacho",
+      "items": [
+        [
+          "Tomate muy maduro",
+          "1 kg"
+        ],
+        [
+          "Pepino",
+          "150 g"
+        ],
+        [
+          "Pimiento verde",
+          "100 g"
+        ],
+        [
+          "Ajo",
+          "1 diente"
+        ],
+        [
+          "Pan del día anterior (opcional)",
+          "50 g"
+        ],
+        [
+          "Aceite de oliva virgen extra",
+          "80–100 ml"
+        ],
+        [
+          "Vinagre de Jerez",
+          "20–30 ml"
+        ],
+        [
+          "Sal",
+          "10–12 g"
+        ]
+      ],
+      "steps": [
+        "Trocea las verduras y déjalas macerar con la sal, el ajo y el vinagre 1–2 horas en frío.",
+        "Tritura muy bien, añadiendo el aceite en hilo al final para emulsionar.",
+        "Cuela por colador fino; ajusta de sal, vinagre y textura con agua fría si hace falta.",
+        "Enfría al menos 2 horas.",
+        "Para salmorejo: 1 kg de tomate, 150–200 g de pan, 1 ajo, 150 ml de aceite y sal; tritura hasta que quede denso y liso."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Gazpacho",
+        "ratio": "80–100 ml de aceite por kg de tomate",
+        "note": "Fluido para beber."
+      },
+      {
+        "use": "Salmorejo",
+        "ratio": "150–200 g de pan y 150 ml de aceite por kg de tomate",
+        "note": "Denso como una crema."
+      },
+      {
+        "use": "Temperatura de servicio",
+        "ratio": "6–8 °C",
+        "note": "Muy frío, pero no helado."
+      },
+      {
+        "use": "Como salsa",
+        "ratio": "40–60 ml por plato",
+        "note": "Bajo crudos o verduras."
+      }
+    ],
+    "variants": [
+      {
+        "id": "ajoblanco",
+        "name": "Ajoblanco",
+        "note": "Sopa fría de almendra."
+      },
+      {
+        "id": "tomate",
+        "name": "Tomate",
+        "note": "Elegir el más maduro."
+      },
+      {
+        "id": "emulsiones",
+        "name": "Emulsiones",
+        "note": "Por qué liga el aceite."
+      },
+      {
+        "id": "frutos-rojos-y-fruta-de-hueso",
+        "name": "Gazpachos de fruta",
+        "note": "Con fresa, cereza o sandía."
+      }
+    ],
+    "keys": [
+      "Tomate muy maduro: es casi todo el sabor.",
+      "Macerar antes de triturar.",
+      "Aceite al final, en hilo, para emulsionar.",
+      "Colar fino para una textura sedosa.",
+      "Corregir sal y vinagre ya frío: el frío apaga el sabor."
+    ],
+    "errors": [
+      {
+        "p": "Gazpacho soso",
+        "fix": "Tomate poco maduro o probado en caliente. Corrige en frío con sal y vinagre."
+      },
+      {
+        "p": "Salmorejo que se separa",
+        "fix": "Aceite añadido de golpe o poco pan. Tritura más y añade el aceite despacio."
+      },
+      {
+        "p": "Sabor a pepino o pimiento dominante",
+        "fix": "Demasiada cantidad. Respeta la proporción."
+      }
+    ],
+    "history": "El gazpacho y el salmorejo son sopas frías andaluzas de origen humilde, hechas con pan, aceite, ajo y vinagre; el tomate y el pimiento se incorporaron después de llegar de América.",
+    "uses": [
+      "Sopas frías de verano",
+      "Salsas para crudos y curados",
+      "Bases de verduras",
+      "Aperitivos en vaso"
+    ],
+    "keep": "2–3 días en frío; el ajo gana fuerza con los días. No se congela bien.",
+    "pro": "Haz el gazpacho la víspera para que asiente. Sirve en jarras frías o en biberón para salsear.",
+    "related": [
+      "ajoblanco",
+      "tomate",
+      "emulsiones",
+      "pan-del-dia-y-pan-viejo",
+      "aceite-de-oliva",
+      "vinagres"
+    ]
+  },
+  {
+    "id": "all-i-pebre",
+    "name": "All i pebre y salsas de guiso de pescado",
+    "name_en": "All i pebre and fish stew sauces",
+    "aka": [
+      "all i pebre",
+      "allipebre",
+      "suquet",
+      "bullit de peix",
+      "salsa de guiso de pescado",
+      "guiso de anguila"
+    ],
+    "cat": "salsas",
+    "group": "Salsas españolas",
+    "summary": "Ajo, pimentón, aceite y una picada que liga el caldo: la salsa que nace dentro de los guisos marineros de la costa.",
+    "what": "Muchos guisos de pescado del Mediterráneo español se construyen igual: ajo frito en aceite, pimentón añadido fuera del fuego, agua o [[fumet]], patatas que sueltan su almidón y el pescado al final. La salsa se liga con una [[picada]] de ajo, frutos secos y pan frito, o con el propio almidón de la patata. El all i pebre valenciano, tradicional con anguila, es el ejemplo más conocido; el suquet catalán y el bullit de peix ibicenco comparten la misma lógica.\n\nEn el bullit de peix, el pescado se cuece con patatas en un caldo con [[sofrito]], se sirve con [[alioli]] y el caldo sirve luego para un arroz. Es una cocina de pescadores, aprovechando el pescado del día.",
+    "base": {
+      "for": "4 raciones",
+      "items": [
+        [
+          "Aceite de oliva",
+          "100 ml"
+        ],
+        [
+          "Ajos laminados",
+          "6–8 dientes"
+        ],
+        [
+          "Pimentón dulce",
+          "10 g"
+        ],
+        [
+          "Guindilla",
+          "1"
+        ],
+        [
+          "Patata cascada",
+          "600 g"
+        ],
+        [
+          "Agua o fumet",
+          "1 l"
+        ],
+        [
+          "Pescado o anguila en trozos",
+          "1 kg"
+        ],
+        [
+          "Picada: almendra tostada, pan frito y 1 ajo",
+          "40 g, 20 g"
+        ],
+        [
+          "Sal",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Fríe los ajos en el aceite a fuego medio hasta que estén dorados.",
+        "Aparta del fuego, añade el pimentón y la guindilla, remueve unos segundos y moja enseguida con el agua o el fumet.",
+        "Añade las patatas cascadas y cuece 15 minutos.",
+        "Incorpora el pescado salado y la picada desleída en un poco de caldo; cuece a fuego suave 8–10 minutos moviendo la cazuela.",
+        "Deja reposar 5 minutos: la salsa espesa con el almidón y la picada."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Pimentón",
+        "ratio": "10 g por litro de caldo",
+        "note": "Fuera del fuego."
+      },
+      {
+        "use": "Patata",
+        "ratio": "150 g por ración",
+        "note": "Cascada para que suelte almidón."
+      },
+      {
+        "use": "Pescado en la cazuela",
+        "ratio": "8–10 minutos",
+        "note": "Trozos de 4–5 cm."
+      },
+      {
+        "use": "Picada",
+        "ratio": "40–60 g por litro",
+        "note": "Liga y perfuma."
+      }
+    ],
+    "variants": [
+      {
+        "id": "picada",
+        "name": "Picada",
+        "note": "Ajo, frutos secos y pan para ligar."
+      },
+      {
+        "id": "alioli",
+        "name": "Alioli",
+        "note": "El acompañante del bullit."
+      },
+      {
+        "id": "cocina-ibicenca",
+        "name": "Bullit de peix",
+        "note": "Pescado, patata, alioli y luego arroz."
+      },
+      {
+        "id": "pescado-de-roca",
+        "name": "Pescado de roca",
+        "note": "Para suquets y bullits."
+      }
+    ],
+    "keys": [
+      "Pimentón fuera del fuego y mojar enseguida.",
+      "Patata cascada: su almidón liga.",
+      "Pescado al final y moviendo la cazuela, sin remover.",
+      "La picada da cuerpo y aroma.",
+      "Reposo breve antes de servir."
+    ],
+    "errors": [
+      {
+        "p": "Salsa amarga y oscura",
+        "fix": "Pimentón quemado. Apártalo del fuego antes."
+      },
+      {
+        "p": "Pescado deshecho",
+        "fix": "Removido con cuchara o hervor fuerte. Mueve la cazuela y cuece suave."
+      },
+      {
+        "p": "Salsa aguada",
+        "fix": "Patata cortada sin cascar o poca picada. Cáscala y añade más picada."
+      }
+    ],
+    "history": "El all i pebre es un guiso tradicional de la Albufera de Valencia. El suquet de peix catalán y el bullit de peix de Ibiza son guisos de pescadores de la misma familia mediterránea.",
+    "uses": [
+      "Guisos de pescado",
+      "Anguila y rape",
+      "Cazuelas de marisco",
+      "Caldos para arroz"
+    ],
+    "keep": "Mejor al momento. La base sin pescado, 2–3 días en frío; el pescado se añade al regenerar.",
+    "pro": "Ten la base de ajo, pimentón y patata preparada; al pedido, pescado y picada en la cazuela individual.",
+    "related": [
+      "picada",
+      "alioli",
+      "pescado-de-roca",
+      "cocina-ibicenca",
+      "pimenton-y-noras",
+      "guisos-largos",
+      "fumet"
+    ]
+  },
+  {
+    "id": "salsa-de-cacahuete-y-satay",
+    "name": "Salsa de cacahuete y satay",
+    "name_en": "Peanut sauce and satay",
+    "aka": [
+      "salsa satay",
+      "satay",
+      "salsa de cacahuete",
+      "brochetas satay",
+      "salsa de maní"
+    ],
+    "cat": "salsas",
+    "group": "Asia",
+    "summary": "Cacahuete tostado, leche de coco, pasta de especias, tamarindo y azúcar: salsa espesa, dulce, salada y ácida para brochetas.",
+    "what": "La salsa de cacahuete del sudeste asiático acompaña el satay, brochetas de carne marinadas y asadas a la brasa. Se hace con cacahuete tostado y molido grueso, cocinado con leche de coco, una pasta de especias o curry, un ácido (tamarindo o lima), un dulce (azúcar de palma) y algo salado (salsa de pescado o soja). Debe equilibrar dulce, salado, ácido y picante.\n\nTambién sirve como aliño para ensaladas, fideos y verduras. El cacahuete es un alérgeno importante: hay que señalarlo y evitar contaminar otros platos.",
+    "base": {
+      "for": "unos 500 ml",
+      "items": [
+        [
+          "Cacahuete tostado sin sal",
+          "200 g"
+        ],
+        [
+          "Leche de coco",
+          "200 ml"
+        ],
+        [
+          "Agua",
+          "100 ml"
+        ],
+        [
+          "Pasta de curry roja o de chalota, ajo y chile",
+          "30 g"
+        ],
+        [
+          "Azúcar de palma o moreno",
+          "20 g"
+        ],
+        [
+          "Pulpa de tamarindo o zumo de lima",
+          "20 ml"
+        ],
+        [
+          "Salsa de pescado o soja",
+          "15 ml"
+        ]
+      ],
+      "steps": [
+        "Muele el cacahuete grueso; deja algo de grano.",
+        "Fríe la pasta de especias en un poco de crema de coco hasta que huela.",
+        "Añade el resto de la leche de coco, el agua, el azúcar y el cacahuete; cocina a fuego suave 5–10 minutos removiendo.",
+        "Ajusta con tamarindo o lima y salsa de pescado hasta equilibrar.",
+        "Aclara con agua si espesa demasiado al enfriar."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Marinada de satay",
+        "ratio": "Cúrcuma, cilantro, ajo, azúcar y soja",
+        "note": "1–4 horas."
+      },
+      {
+        "use": "Brochetas",
+        "ratio": "Brasa viva, 2–3 minutos por lado",
+        "note": "Tiras finas."
+      },
+      {
+        "use": "Ración de salsa",
+        "ratio": "40–50 ml por plato",
+        "note": "Templada."
+      },
+      {
+        "use": "Equilibrio",
+        "ratio": "Dulce, salado y ácido a partes perceptibles",
+        "note": "Probar y ajustar."
+      }
+    ],
+    "variants": [
+      {
+        "id": "coco",
+        "name": "Leche de coco",
+        "note": "Base cremosa."
+      },
+      {
+        "id": "pastas-de-especias",
+        "name": "Pastas de curry",
+        "note": "Para dar profundidad."
+      },
+      {
+        "id": "robata-y-parrilla-japonesa",
+        "name": "Brochetas a la brasa",
+        "note": "Técnica de brocheta."
+      },
+      {
+        "id": "frutos-secos",
+        "name": "Otros frutos secos",
+        "note": "Anacardo o almendra como alternativa."
+      }
+    ],
+    "keys": [
+      "Cacahuete bien tostado, molido con grano.",
+      "Pasta frita antes de mojar.",
+      "Equilibrar dulce, salado, ácido y picante.",
+      "Espesa al enfriar: aclara antes de servir.",
+      "Alérgeno: utensilios separados y aviso claro."
+    ],
+    "errors": [
+      {
+        "p": "Salsa demasiado espesa",
+        "fix": "Enfriada o reducida de más. Aclara con agua caliente."
+      },
+      {
+        "p": "Salsa plana y dulce",
+        "fix": "Falta ácido y sal. Añade tamarindo o lima y salsa de pescado."
+      },
+      {
+        "p": "Grasa separada",
+        "fix": "Hervida fuerte. Cocina suave y bate."
+      }
+    ],
+    "history": "El satay y su salsa de cacahuete son platos populares de Indonesia, Malasia y Tailandia, muy ligados a la comida callejera a la brasa.",
+    "uses": [
+      "Brochetas a la brasa",
+      "Ensaladas y fideos",
+      "Verduras crudas",
+      "Tofu y pollo"
+    ],
+    "keep": "4–5 días en frío; se espesa y se aclara al regenerar.",
+    "pro": "Haz la salsa en tanda y guárdala en frío; regenera con agua caliente por servicio.",
+    "related": [
+      "coco",
+      "pastas-de-especias",
+      "robata-y-parrilla-japonesa",
+      "frutos-secos",
+      "aromaticos-de-asia",
+      "soja-y-derivados"
+    ]
+  },
+  {
+    "id": "teriyaki-y-glaseados-de-soja",
+    "name": "Teriyaki y glaseados de soja",
+    "name_en": "Teriyaki and soy glazes",
+    "aka": [
+      "teriyaki",
+      "salsa teriyaki",
+      "glaseado de soja",
+      "kabayaki",
+      "salsa de anguila",
+      "glaseado de miso"
+    ],
+    "cat": "salsas",
+    "group": "Asia",
+    "summary": "Soja, vino dulce de arroz, sake y azúcar reducidos hasta jarabe: brillo salado y dulce para carnes, pescados y verduras.",
+    "what": "El teriyaki es una forma japonesa de terminar carnes y pescados: se cocinan y, al final, se glasean con una salsa de soja, mirin (vino dulce de arroz), sake y azúcar reducida hasta que brilla. El nombre se refiere al brillo que deja. La salsa para la anguila asada es parecida, más espesa y dulce, y en la [[robata-y-parrilla-japonesa|parrilla japonesa]] la tare cumple el mismo papel.\n\nFunciona igual que cualquier [[lacado-de-carnes|lacado]]: la pieza casi hecha y la salsa al final, en capas finas, sin dejar que se queme. Se puede espesar con un poco de almidón o reducir más.",
+    "base": {
+      "for": "unos 250 ml",
+      "items": [
+        [
+          "Salsa de soja",
+          "100 ml"
+        ],
+        [
+          "Mirin",
+          "100 ml"
+        ],
+        [
+          "Sake",
+          "100 ml"
+        ],
+        [
+          "Azúcar",
+          "30–50 g"
+        ],
+        [
+          "Jengibre en láminas (opcional)",
+          "10 g"
+        ]
+      ],
+      "steps": [
+        "Lleva el sake y el mirin a hervor 1 minuto para evaporar parte del alcohol.",
+        "Añade la soja, el azúcar y el jengibre y reduce a fuego medio hasta dos tercios.",
+        "Cuela y deja enfriar: espesa un poco más al enfriar.",
+        "Cocina la pieza casi del todo en sartén o brasa.",
+        "Añade la salsa en los últimos minutos y glasea, dando vueltas, hasta que brille."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Proporción básica",
+        "ratio": "Soja, mirin y sake 1:1:1 con 10–15 % de azúcar",
+        "note": "Más azúcar para kabayaki."
+      },
+      {
+        "use": "Reducción",
+        "ratio": "Hasta 2/3 del volumen",
+        "note": "Que nape una cuchara."
+      },
+      {
+        "use": "Glaseado",
+        "ratio": "20–30 ml por ración",
+        "note": "En 2–3 capas."
+      },
+      {
+        "use": "Glaseado de miso",
+        "ratio": "Miso, mirin y azúcar 2:1:1",
+        "note": "Para pescados grasos y berenjena."
+      }
+    ],
+    "variants": [
+      {
+        "id": "lacado-de-carnes",
+        "name": "Lacado",
+        "note": "La técnica de las capas."
+      },
+      {
+        "id": "robata-y-parrilla-japonesa",
+        "name": "Tare",
+        "note": "Salsa de brochetas."
+      },
+      {
+        "id": "miso-y-koji",
+        "name": "Glaseado de miso",
+        "note": "Dulce y salado, para pescado y berenjena."
+      },
+      {
+        "id": "soja-y-derivados",
+        "name": "Salsa de soja",
+        "note": "Tipos y uso."
+      }
+    ],
+    "keys": [
+      "Hervir el alcohol antes de reducir.",
+      "Glasear al final, no marinar en ella.",
+      "Capas finas a fuego medio.",
+      "Espesa al enfriar: no la reduzcas de más.",
+      "Equilibrio entre sal y dulce."
+    ],
+    "errors": [
+      {
+        "p": "Glaseado quemado y amargo",
+        "fix": "Añadido pronto o fuego fuerte. Al final y a fuego medio."
+      },
+      {
+        "p": "Salsa demasiado salada",
+        "fix": "Reducida en exceso o soja muy salada. Rebaja con agua y mirin."
+      },
+      {
+        "p": "No brilla",
+        "fix": "Poco reducida. Redúcela más o añade una pizca de almidón."
+      }
+    ],
+    "history": "El teriyaki es una técnica de la cocina japonesa para pescados y aves que se ha difundido mucho fuera de Japón, a menudo como salsa embotellada más dulce que la original.",
+    "uses": [
+      "Pescados grasos",
+      "Pollo y pato",
+      "Carnes de brasa",
+      "Verduras y tofu",
+      "Brochetas"
+    ],
+    "keep": "3–4 semanas en frío en bote cerrado.",
+    "pro": "Ten la salsa en biberón junto a la plancha o la brasa y glasea en el último paso.",
+    "related": [
+      "lacado-de-carnes",
+      "robata-y-parrilla-japonesa",
+      "miso-y-koji",
+      "soja-y-derivados",
+      "pescado-azul",
+      "pato"
+    ]
+  },
+  {
+    "id": "salsa-xo-y-aceites-de-chile",
+    "name": "Salsa XO y aceites de chile",
+    "name_en": "XO sauce and chili oils",
+    "aka": [
+      "salsa XO",
+      "aceite de chile",
+      "chili crisp",
+      "aceite picante",
+      "aceite de chile crujiente",
+      "la you"
+    ],
+    "cat": "salsas",
+    "group": "Asia",
+    "summary": "Condimentos de aceite cargados de sabor: marisco seco, jamón y chile en la XO; chile, especias y crujientes en los aceites picantes.",
+    "what": "La salsa XO es un condimento de origen cantonés hecho con vieiras y gambas secas, jamón curado, chalota, ajo y chile, cocinados despacio en aceite hasta concentrarse. Es intensa, salada, dulce y muy umami; se usa en cucharadas sobre arroces, fideos, verduras salteadas o mariscos.\n\nLos aceites de chile, de tradición china, se hacen vertiendo aceite caliente aromatizado con especias sobre chile en copos. La versión crujiente añade ajo, chalota y frutos secos fritos. Funcionan como un condimento de acabado: dan picor, aroma, color y textura.",
+    "base": {
+      "for": "unos 500 ml de aceite de chile",
+      "items": [
+        [
+          "Aceite de girasol o cacahuete",
+          "500 ml"
+        ],
+        [
+          "Chile en copos",
+          "60–80 g"
+        ],
+        [
+          "Anís estrellado, canela, laurel y pimienta de Sichuan",
+          "2, 1 trozo, 2 hojas y 5 g"
+        ],
+        [
+          "Jengibre y cebolleta",
+          "20 g y 2"
+        ],
+        [
+          "Sésamo tostado",
+          "15 g"
+        ],
+        [
+          "Sal y azúcar",
+          "5 g y 5 g"
+        ]
+      ],
+      "steps": [
+        "Pon los copos de chile, el sésamo, la sal y el azúcar en un recipiente resistente al calor.",
+        "Calienta el aceite con las especias, el jengibre y la cebolleta a fuego suave 15–20 minutos para aromatizarlo.",
+        "Cuela el aceite y llévalo a la temperatura indicada.",
+        "Viértelo en dos veces sobre el chile, removiendo: chisporrotea pero no debe ennegrecer.",
+        "Deja reposar un día antes de usar."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Aceite sobre el chile",
+        "ratio": "120–140 °C",
+        "note": "Más caliente quema el chile."
+      },
+      {
+        "use": "Chile y aceite",
+        "ratio": "60–80 g por 500 ml",
+        "note": "Según el picor del chile."
+      },
+      {
+        "use": "Salsa XO",
+        "ratio": "Marisco seco y jamón 1:1, con chalota y ajo",
+        "note": "Confitado 45–60 minutos a fuego suave."
+      },
+      {
+        "use": "Ración",
+        "ratio": "1 cucharadita por plato",
+        "note": "Es un condimento."
+      }
+    ],
+    "variants": [
+      {
+        "id": "aceites-aromatizados",
+        "name": "Aceites aromatizados",
+        "note": "Temperaturas y seguridad."
+      },
+      {
+        "id": "salazones-y-huevas",
+        "name": "Productos secos y salados",
+        "note": "Umami concentrado."
+      },
+      {
+        "id": "pastas-de-especias",
+        "name": "Pastas de chile",
+        "note": "Otra forma de concentrar."
+      },
+      {
+        "id": "chiles-y-salsas-mexicanas",
+        "name": "Chiles secos",
+        "note": "Tostar e hidratar."
+      }
+    ],
+    "keys": [
+      "Temperatura del aceite controlada: el chile quemado amarga.",
+      "Aromatiza el aceite antes con especias.",
+      "Los crujientes se fríen aparte y se añaden al final.",
+      "Es un condimento: poco y al final.",
+      "Ingredientes secos y frescos bien fritos para que se conserve."
+    ],
+    "errors": [
+      {
+        "p": "Aceite negro y amargo",
+        "fix": "Aceite demasiado caliente. Bájalo a 120–140 °C."
+      },
+      {
+        "p": "Sin aroma",
+        "fix": "Aceite sin aromatizar o especias viejas. Infusiona antes y usa especias frescas."
+      },
+      {
+        "p": "Crujientes blandos",
+        "fix": "Ajo o chalota poco fritos. Fríelos hasta dorado y sécalos antes."
+      }
+    ],
+    "history": "La salsa XO surgió en la cocina de restaurantes de Hong Kong a finales del siglo XX. Los aceites de chile son condimentos tradicionales de la cocina china, sobre todo de Sichuan.",
+    "uses": [
+      "Arroces y fideos",
+      "Verduras salteadas",
+      "Mariscos y crudos",
+      "Dumplings",
+      "Huevos"
+    ],
+    "keep": "Aceite de chile, semanas en lugar fresco y oscuro, o en frío. Salsa XO, 2–3 semanas en frío cubierta de aceite.",
+    "pro": "Elabora en tanda y guarda en botes pequeños; usa siempre cuchara limpia.",
+    "related": [
+      "aceites-aromatizados",
+      "salazones-y-huevas",
+      "pastas-de-especias",
+      "chiles-y-salsas-mexicanas",
+      "dumplings-y-masas-al-vapor",
+      "umami-y-fondo"
+    ]
+  },
+  {
+    "id": "mole",
+    "name": "Mole y salsas de semillas",
+    "name_en": "Mole and seed sauces",
+    "aka": [
+      "mole",
+      "mole poblano",
+      "mole negro",
+      "pipián",
+      "salsa de semillas",
+      "mole de chiles"
+    ],
+    "cat": "salsas",
+    "group": "Salsas del mundo",
+    "summary": "Chiles secos, semillas, especias, fruta, pan o tortilla y a veces chocolate, molidos y fritos en una salsa espesa y profunda.",
+    "what": "El mole es una familia de salsas mexicanas complejas. Se hacen con varios chiles secos tostados e hidratados, semillas y frutos secos (sésamo, pepitas de calabaza, cacahuete, almendra), especias, fruta seca, tomate, cebolla, ajo, pan o tortilla para espesar y, en algunos, chocolate. Todo se tuesta o se fríe por separado, se muele, y la pasta se fríe en manteca antes de diluirla con caldo y cocinarla despacio.\n\nEl pipián es una salsa de la misma familia, espesada sobre todo con semillas de calabaza. Los moles se sirven con aves, cerdo, enchiladas o verduras.",
+    "base": {
+      "for": "unos 1,2 l",
+      "items": [
+        [
+          "Chiles secos (ancho, mulato, pasilla)",
+          "10–12"
+        ],
+        [
+          "Sésamo",
+          "50 g"
+        ],
+        [
+          "Almendra o cacahuete",
+          "50 g"
+        ],
+        [
+          "Pasas",
+          "30 g"
+        ],
+        [
+          "Tortilla de maíz o pan",
+          "1 tortilla / 30 g"
+        ],
+        [
+          "Tomate, cebolla y ajo asados",
+          "1, ½ y 2 dientes"
+        ],
+        [
+          "Especias: clavo, canela, comino y pimienta",
+          "al gusto"
+        ],
+        [
+          "Chocolate negro",
+          "30 g"
+        ],
+        [
+          "Caldo de ave",
+          "1 l"
+        ],
+        [
+          "Manteca o aceite",
+          "40 g"
+        ]
+      ],
+      "steps": [
+        "Tuesta los chiles sin pepitas unos segundos en comal o sartén e hidrátalos en agua caliente.",
+        "Tuesta o fríe por separado las semillas, los frutos secos, las pasas, la tortilla y las especias.",
+        "Tritura todo con los chiles, los asados y parte del caldo hasta obtener una pasta fina; cuela.",
+        "Fríe la pasta en la manteca caliente, removiendo, hasta que oscurezca y espese.",
+        "Añade el resto del caldo y el chocolate y cocina a fuego suave 45–60 minutos, removiendo; ajusta sal y azúcar."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Cocción",
+        "ratio": "45–60 minutos a fuego suave",
+        "note": "Removiendo para que no se pegue."
+      },
+      {
+        "use": "Chocolate",
+        "ratio": "20–30 g por litro",
+        "note": "En los moles que lo llevan."
+      },
+      {
+        "use": "Pipián",
+        "ratio": "150 g de pepitas de calabaza por litro",
+        "note": "Con chile verde y hierbas."
+      },
+      {
+        "use": "Ración",
+        "ratio": "80–100 ml por plato",
+        "note": "Napar bien."
+      }
+    ],
+    "variants": [
+      {
+        "id": "chiles-y-salsas-mexicanas",
+        "name": "Salsas mexicanas",
+        "note": "Tostar e hidratar chiles."
+      },
+      {
+        "id": "frutos-secos",
+        "name": "Frutos secos",
+        "note": "Tostado y molido."
+      },
+      {
+        "id": "vainilla-y-cacao",
+        "name": "Cacao en salado",
+        "note": "Por qué funciona."
+      },
+      {
+        "id": "tortillas-de-maiz-y-nixtamal",
+        "name": "Tortillas",
+        "note": "Para espesar y acompañar."
+      }
+    ],
+    "keys": [
+      "Cada ingrediente tostado por separado.",
+      "Chiles tostados segundos: quemados amargan.",
+      "Freír la pasta antes del caldo.",
+      "Cocción larga y removiendo.",
+      "Mejora al día siguiente."
+    ],
+    "errors": [
+      {
+        "p": "Mole amargo",
+        "fix": "Chiles o semillas quemados. Tuesta solo hasta que huelan."
+      },
+      {
+        "p": "Textura arenosa",
+        "fix": "Molido grueso o sin colar. Tritura más y cuela."
+      },
+      {
+        "p": "Se pega y se quema",
+        "fix": "Fuego alto o poco removido. Fuego suave y remover a menudo."
+      }
+    ],
+    "history": "Los moles son salsas tradicionales de México, con zonas como Puebla y Oaxaca famosas por sus versiones. Mezclan ingredientes de origen americano, como chiles, cacao y maíz, con otros llegados de Europa y Asia.",
+    "uses": [
+      "Aves y pavo",
+      "Cerdo",
+      "Enchiladas",
+      "Verduras asadas",
+      "Arroces"
+    ],
+    "keep": "1 semana en frío; se congela muy bien. La pasta concentrada, semanas en frío.",
+    "pro": "Prepara la pasta en tanda grande y congélala en porciones; diluye con caldo al regenerar.",
+    "related": [
+      "chiles-y-salsas-mexicanas",
+      "frutos-secos",
+      "vainilla-y-cacao",
+      "tortillas-de-maiz-y-nixtamal",
+      "sesamo",
+      "pastas-de-especias"
+    ]
+  },
+  {
+    "id": "tarator-y-salsas-de-frutos-secos",
+    "name": "Tarator, skordalia y salsas de frutos secos",
+    "name_en": "Tarator, skordalia and nut sauces",
+    "aka": [
+      "tarator",
+      "skordalia",
+      "muhammara",
+      "salsa de nueces",
+      "salsa de avellanas",
+      "salsa de frutos secos"
+    ],
+    "cat": "salsas",
+    "group": "Salsas del mundo",
+    "summary": "Frutos secos, pan, ajo, ácido y aceite majados: salsas densas del Mediterráneo oriental para pescados, verduras y carnes.",
+    "what": "Por todo el Mediterráneo hay salsas que se espesan con frutos secos y pan. El tarator turco se hace con nueces, pan remojado, ajo, vinagre o limón y aceite; en Oriente Medio el mismo nombre designa una salsa de tahina con limón y ajo para pescado. La skordalia griega es una salsa de ajo muy potente con pan o patata y, a veces, almendras o nueces. La muhammara, de Siria, une pimiento asado, nueces, pan y melaza de granada.\n\nSon primas del [[romesco]], la [[picada]] y el [[ajoblanco]]: frutos secos tostados para dar cuerpo y grasa, pan para ligar, ajo y ácido para el carácter.",
+    "base": {
+      "for": "unos 300 ml de tarator de nueces",
+      "items": [
+        [
+          "Nueces",
+          "100 g"
+        ],
+        [
+          "Pan del día anterior sin corteza, remojado y escurrido",
+          "40 g"
+        ],
+        [
+          "Ajo",
+          "2 dientes"
+        ],
+        [
+          "Vinagre de vino o zumo de limón",
+          "20–30 ml"
+        ],
+        [
+          "Aceite de oliva",
+          "100 ml"
+        ],
+        [
+          "Agua fría",
+          "50–100 ml"
+        ],
+        [
+          "Sal",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Tuesta ligeramente las nueces y frótalas para quitar parte de la piel, que amarga.",
+        "Maja o tritura el ajo con sal, añade las nueces y el pan y tritura hasta una pasta.",
+        "Añade el ácido y el aceite en hilo, y aclara con agua hasta la textura de una crema espesa.",
+        "Ajusta de sal y ácido.",
+        "Deja reposar media hora antes de servir."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Tarator de nueces",
+        "ratio": "100 g de nueces, 40 g de pan, 100 ml de aceite",
+        "note": "Aclarar con agua."
+      },
+      {
+        "use": "Tarator de tahina",
+        "ratio": "100 g de tahina, 60 ml de limón, 60–80 ml de agua, 1 ajo",
+        "note": "Para pescado."
+      },
+      {
+        "use": "Muhammara",
+        "ratio": "200 g de pimiento asado, 80 g de nueces, 30 g de pan, 20 ml de melaza de granada",
+        "note": "Con comino y chile."
+      },
+      {
+        "use": "Ración",
+        "ratio": "30–50 g por plato",
+        "note": ""
+      }
+    ],
+    "variants": [
+      {
+        "id": "romesco",
+        "name": "Romesco",
+        "note": "Frutos secos con ñora y tomate."
+      },
+      {
+        "id": "salsa-tahina-limon",
+        "name": "Salsa de tahina",
+        "note": "El tarator de Oriente Medio."
+      },
+      {
+        "id": "rouille",
+        "name": "Skordalia y rouille",
+        "note": "Salsas de ajo y pan."
+      },
+      {
+        "id": "granada-y-membrillo",
+        "name": "Melaza de granada",
+        "note": "Para la muhammara."
+      }
+    ],
+    "keys": [
+      "Frutos secos tostados ligeramente.",
+      "Pan remojado y escurrido para ligar.",
+      "Ajo majado con sal.",
+      "Ajustar textura con agua fría.",
+      "Alérgenos: señalar los frutos secos."
+    ],
+    "errors": [
+      {
+        "p": "Salsa amarga",
+        "fix": "Piel de nuez o tostado excesivo. Tuesta poco y frota la piel."
+      },
+      {
+        "p": "Demasiado espesa o pastosa",
+        "fix": "Mucho pan. Aclara con agua y aceite."
+      },
+      {
+        "p": "Ajo que domina",
+        "fix": "Demasiado ajo crudo. Usa menos o escáldalo."
+      }
+    ],
+    "history": "Las salsas de frutos secos y pan son muy antiguas en el Mediterráneo oriental, de Grecia y Turquía a Siria y Líbano, y tienen parientes en las picadas y el romesco de la costa española.",
+    "uses": [
+      "Pescados a la brasa",
+      "Verduras asadas",
+      "Untables con pan",
+      "Carnes frías",
+      "Legumbres"
+    ],
+    "keep": "3–4 días en frío; se espesa y se aclara con agua.",
+    "pro": "Prepara en tanda y guarda en frío; aclara y ajusta de sal y ácido antes de cada servicio.",
+    "related": [
+      "romesco",
+      "picada",
+      "ajoblanco",
+      "salsa-tahina-limon",
+      "frutos-secos",
+      "rouille"
+    ]
   }
 ]

@@ -3470,5 +3470,802 @@
       "emulsiones-de-hierbas",
       "quesos-en-cocina"
     ]
+  },
+  {
+    "id": "salsas-de-queso",
+    "name": "Salsas de queso de servicio",
+    "name_en": "Cheese sauces for service",
+    "cat": "salsas",
+    "group": "Aliños de pase",
+    "aka": [
+      "salsa de queso",
+      "crema de queso",
+      "fondue",
+      "salsa de queso azul",
+      "queso fundido",
+      "citrato sodico",
+      "salsa de queso curado"
+    ],
+    "role": "salsa",
+    "techniques": [
+      "emulsion"
+    ],
+    "summary": "Cómo fundir queso en una salsa lisa y estable que no se corte ni haga hilos: con nata reducida, con almidón o con sal de fundido.",
+    "what": "Al calentar el queso, su grasa tiende a separarse y la proteína a formar hilos o grumos, sobre todo en quesos curados. Hay tres formas de evitarlo: fundirlo en nata o leche reducidas con un poco de almidón (como en una [[mornay]] sin harina), fundirlo a baja temperatura en una base ya emulsionada, o usar citrato sódico, una sal que hace que cualquier queso funda liso como un queso de fundir. Con [[quesos-de-las-islas|quesos curados de la isla]] da salsas con mucho carácter para patatas, verduras y carnes.",
+    "base": {
+      "for": "unos 700 g de salsa de queso curado",
+      "items": [
+        [
+          "Queso curado rallado (oveja, cabra o vaca)",
+          "400 g"
+        ],
+        [
+          "Agua, leche o vino blanco",
+          "280 g"
+        ],
+        [
+          "Citrato sódico",
+          "10–12 g"
+        ],
+        [
+          "Pimienta, nuez moscada o pimentón",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Disuelve el citrato en el líquido y calienta a 70–80 °C.",
+        "Añade el queso rallado poco a poco, batiendo con varilla o túrmix, hasta que se funda y quede liso.",
+        "Mantén por debajo de 80 °C: no necesita hervir.",
+        "Ajusta la textura con más líquido si la quieres más fluida.",
+        "Sazona: casi nunca necesita sal."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Salsa con citrato sódico",
+        "ratio": "1 kg de queso, 600–700 g de líquido y 25–30 g de citrato",
+        "note": "A 70–80 °C; se puede recalentar sin cortarse."
+      },
+      {
+        "use": "Crema de queso azul",
+        "ratio": "500 ml de nata reducida a la mitad y 100–150 g de queso azul",
+        "note": "Fuera del fuego; colar."
+      },
+      {
+        "use": "Salsa de queso con almidón",
+        "ratio": "500 ml de leche, 15 g de almidón y 150 g de queso rallado",
+        "note": "Espesa la leche, aparta del fuego y funde el queso."
+      },
+      {
+        "use": "Fondue",
+        "ratio": "400 g de queso, 200 ml de vino blanco, 10 g de almidón y un diente de ajo",
+        "note": "Al mínimo de fuego, removiendo."
+      }
+    ],
+    "variants": [
+      {
+        "id": "mornay",
+        "name": "Mornay",
+        "note": "Bechamel con queso y yema, para gratinar."
+      },
+      {
+        "id": "quesos-en-cocina",
+        "name": "Cómo funde cada queso",
+        "note": "Fresco, curado y azul se comportan distinto."
+      },
+      {
+        "id": null,
+        "name": "Lámina de queso fundido",
+        "note": "La salsa con citrato extendida fina y enfriada; se funde sobre carnes o verduras."
+      }
+    ],
+    "keys": [
+      "Queso rallado o en trozos pequeños: funde parejo.",
+      "Temperatura moderada: el queso se corta si hierve.",
+      "El citrato sódico permite usar cualquier queso, incluso muy curado.",
+      "El queso ya sala: prueba antes de añadir sal.",
+      "Un ácido (vino, limón) ayuda a que el queso funda liso."
+    ],
+    "errors": [
+      {
+        "p": "Grasa separada",
+        "fix": "Demasiado calor o queso muy curado sin ayuda. Tritura con un poco de líquido frío y citrato o almidón."
+      },
+      {
+        "p": "Hilos y grumos",
+        "fix": "Queso añadido de golpe o a temperatura alta. Añade poco a poco a 70–80 °C."
+      },
+      {
+        "p": "Demasiado salada",
+        "fix": "Queso muy salado. Diluye con nata, leche o un queso más suave."
+      }
+    ],
+    "history": "Fundir queso con vino o leche es una práctica antigua en las zonas queseras de los Alpes. El uso de sales de fundido como el citrato viene de la industria quesera y se ha extendido en la cocina de restaurante.",
+    "uses": [
+      "Patatas y verduras asadas",
+      "Carnes a la brasa",
+      "Pasta y gratinados",
+      "Bocadillos y aperitivos",
+      "Nachos y salsas para mojar"
+    ],
+    "keep": "En frío, tapada, 4–5 días. La salsa con citrato se recalienta sin problema.",
+    "pro": "Haz la salsa con citrato en tanda, guárdala en biberón en frío y caliéntala al baño maría a 70 °C durante el servicio.",
+    "related": [
+      "mornay",
+      "quesos-en-cocina",
+      "quesos-de-las-islas",
+      "emulsiones",
+      "guarniciones-de-patata"
+    ]
+  },
+  {
+    "id": "majados-de-temporada",
+    "name": "Pestos y majados de temporada",
+    "name_en": "Seasonal pestos and pounded sauces",
+    "cat": "salsas",
+    "group": "Aliños de pase",
+    "aka": [
+      "pesto de temporada",
+      "majado",
+      "pesto de habas",
+      "pesto de hinojo",
+      "pesto de nueces",
+      "pesto de hojas",
+      "salsa de mortero"
+    ],
+    "role": "toque",
+    "techniques": [
+      "crudo"
+    ],
+    "summary": "La lógica del pesto aplicada a cada estación: una hierba u hoja, un fruto seco, un queso o un ácido, ajo y aceite, majados al mortero o triturados.",
+    "what": "El [[pesto]] genovés es solo un ejemplo de una idea muy mediterránea: majar en el mortero un verde, un fruto seco, algo salado y aceite. La [[picada]] catalana es su prima para guisos. Cambiando cada parte según la temporada salen salsas propias: habas y menta en primavera, albahaca y almendra en verano, perejil y nueces con setas en otoño, hojas de nabo o de rábano con avellana en invierno, e hinojo silvestre con almendra en cualquier momento en la isla.",
+    "base": {
+      "for": "unos 300 g de majado de hinojo silvestre y almendra",
+      "items": [
+        [
+          "Hojas tiernas de hinojo silvestre y perejil",
+          "100 g"
+        ],
+        [
+          "Almendra tostada",
+          "50 g"
+        ],
+        [
+          "Queso curado de oveja rallado",
+          "30 g"
+        ],
+        [
+          "Ajo",
+          "1 diente"
+        ],
+        [
+          "Ralladura y zumo de limón",
+          "1/2 limón"
+        ],
+        [
+          "Aceite de oliva virgen extra",
+          "120–150 g"
+        ],
+        [
+          "Sal gruesa",
+          "3 g"
+        ]
+      ],
+      "steps": [
+        "Maja el ajo con la sal gruesa en el mortero hasta hacer una pasta.",
+        "Añade la almendra y maja hasta que quede en grano fino.",
+        "Añade las hojas en tandas y maja con movimiento circular hasta una pasta gruesa.",
+        "Incorpora el queso, la ralladura y el aceite en hilo, removiendo.",
+        "Termina con unas gotas de zumo justo antes de usar; el ácido oscurece el verde si se añade antes."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Proporción base",
+        "ratio": "100 g de hoja, 40–50 g de fruto seco, 30 g de queso, 1 ajo y 120–150 g de aceite",
+        "note": "Más aceite para salsear, menos para untar."
+      },
+      {
+        "use": "Primavera: habas y menta",
+        "ratio": "150 g de habas peladas escaldadas, 15 g de menta, 30 g de queso y almendra",
+        "note": "Triturado grueso."
+      },
+      {
+        "use": "Otoño: nueces y perejil",
+        "ratio": "60 g de nueces, 60 g de perejil y setas secas molidas",
+        "note": "Para pasta, carnes y setas."
+      },
+      {
+        "use": "Invierno: hojas de nabo o col",
+        "ratio": "Hojas escaldadas 30 segundos, avellana tostada y ajo asado",
+        "note": "Aprovecha hojas que se tiran."
+      }
+    ],
+    "variants": [
+      {
+        "id": "pesto",
+        "name": "Pesto genovés",
+        "note": "Albahaca, piñones, queso y aceite."
+      },
+      {
+        "id": "picada",
+        "name": "Picada",
+        "note": "Majado de frutos secos, pan y ajo para ligar guisos."
+      },
+      {
+        "id": "gremolata",
+        "name": "Gremolata",
+        "note": "Picada fresca de perejil, limón y ajo, sin aceite."
+      }
+    ],
+    "keys": [
+      "El mortero da una textura que la batidora no consigue y no calienta las hojas.",
+      "Fruto seco tostado: más sabor.",
+      "Hojas secas: el agua estropea la emulsión y oscurece.",
+      "Ácido al final y al momento.",
+      "Cúbrelo con aceite para guardarlo: el aire lo oscurece."
+    ],
+    "errors": [
+      {
+        "p": "Se oscurece",
+        "fix": "Oxidación o calor. Usa mortero, añade el ácido al final y cubre con aceite."
+      },
+      {
+        "p": "Amargo",
+        "fix": "Hojas viejas o aceite muy picante. Usa hojas tiernas y un aceite más suave."
+      },
+      {
+        "p": "Demasiado ajo",
+        "fix": "Ajo crudo fuerte. Usa medio diente o ajo blanqueado."
+      }
+    ],
+    "history": "Los majados al mortero son una de las técnicas más antiguas de la cocina mediterránea, de las picadas catalanas a los pestos de Liguria y los ajos de muchas zonas de España.",
+    "uses": [
+      "Pasta y arroces",
+      "Verduras a la brasa",
+      "Pescado y carnes",
+      "Tostas y aperitivos",
+      "Legumbres y sopas"
+    ],
+    "keep": "Cubierto de aceite y en frío, 3–4 días. Congelado sin queso, 2 meses.",
+    "pro": "Haz el majado de la temporada cada día en la cantidad del servicio. Guarda una base sin queso congelada para emergencias.",
+    "related": [
+      "pesto",
+      "picada",
+      "gremolata",
+      "emulsiones-de-hierbas",
+      "hierbas-frescas",
+      "frutos-secos"
+    ]
+  },
+  {
+    "id": "verduras-marinadas",
+    "name": "Verduras marinadas",
+    "name_en": "Marinated vegetables",
+    "cat": "bases",
+    "group": "Encurtidos y marinadas",
+    "aka": [
+      "calabacin marinado",
+      "setas marinadas",
+      "verduras aliñadas",
+      "carpaccio de verduras",
+      "marinado de verduras",
+      "zanahoria marinada"
+    ],
+    "role": "fresco",
+    "techniques": [
+      "curado",
+      "crudo"
+    ],
+    "summary": "Verduras crudas o recién cocinadas que se dejan en sal, ácido, aceite y aromáticos de minutos a horas para que se ablanden un poco y tomen sabor.",
+    "what": "Marinar una verdura es un punto intermedio entre el crudo y el [[encurtidos-rapidos|encurtido]]: la sal le saca algo de agua y la ablanda, el ácido la perfuma y el aceite la redondea. Las láminas finas de calabacín, hinojo o champiñón se marinan en minutos y se sirven como carpaccio. Las setas o berenjenas recién salteadas o asadas se dejan en un aliño templado y toman sabor como un escabeche suave. Funciona también con verduras de la brasa, que absorben el aliño en caliente.",
+    "base": {
+      "for": "6 raciones de calabacín marinado",
+      "items": [
+        [
+          "Calabacín pequeño y firme",
+          "600 g"
+        ],
+        [
+          "Sal fina",
+          "6 g"
+        ],
+        [
+          "Zumo y ralladura de limón",
+          "1 limón"
+        ],
+        [
+          "Aceite de oliva virgen extra",
+          "60 g"
+        ],
+        [
+          "Menta o albahaca",
+          "10 hojas"
+        ],
+        [
+          "Guindilla fresca o pimienta",
+          "al gusto"
+        ],
+        [
+          "Almendra tostada o queso curado",
+          "para terminar"
+        ]
+      ],
+      "steps": [
+        "Corta el calabacín en láminas de 1–2 mm con mandolina.",
+        "Sálalas y déjalas 10 minutos en un colador para que suelten agua; sécalas con papel.",
+        "Mezcla el limón, la ralladura, el aceite y la guindilla.",
+        "Aliña las láminas y deja marinar 10–20 minutos en frío.",
+        "Sirve con las hierbas rotas a mano y la almendra o el queso por encima."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Láminas crudas (calabacín, hinojo, champiñón)",
+        "ratio": "1 % de sal y 10–20 minutos en aliño",
+        "note": "Se ablandan sin perder frescor."
+      },
+      {
+        "use": "Setas o berenjena salteadas",
+        "ratio": "Aliño templado de 3 partes de aceite y 1 de vinagre, 2–12 horas",
+        "note": "Como un escabeche suave."
+      },
+      {
+        "use": "Zanahoria o remolacha cruda",
+        "ratio": "Rallada o en tiras con naranja, comino y aceite, 30–60 minutos",
+        "note": "Las raíces necesitan más tiempo."
+      },
+      {
+        "use": "Verduras de la brasa",
+        "ratio": "Aliñadas en caliente, 30 minutos o más",
+        "note": "Absorben mucho sabor."
+      }
+    ],
+    "variants": [
+      {
+        "id": "pimientos-asados-alinados",
+        "name": "Pimientos asados aliñados",
+        "note": "La verdura marinada asada más clásica."
+      },
+      {
+        "id": "escabechado",
+        "name": "Escabechado",
+        "note": "Marinado cocinado y más ácido, que conserva."
+      },
+      {
+        "id": "marinados-en-seco",
+        "name": "Marinados en seco",
+        "note": "Sal, azúcar y especias sin líquido."
+      }
+    ],
+    "keys": [
+      "Corte fino y regular para las crudas.",
+      "Sal y escurre las verduras acuosas antes de aliñar.",
+      "Marinado corto para conservar frescor; largo, para profundidad.",
+      "Aliña las cocinadas en caliente: absorben mejor.",
+      "Hierbas y crujiente al final."
+    ],
+    "errors": [
+      {
+        "p": "Verdura aguada",
+        "fix": "No se escurrió tras salar. Sala, deja soltar agua y seca."
+      },
+      {
+        "p": "Lacia y sin vida",
+        "fix": "Marinado demasiado largo. Para las crudas, 10–20 minutos."
+      },
+      {
+        "p": "Demasiado ácida",
+        "fix": "Mucho ácido o mucho tiempo. Equilibra con aceite y una pizca de miel."
+      }
+    ],
+    "history": "Aliñar y marinar verduras con aceite, vinagre o limón y hierbas es habitual en todo el Mediterráneo, de los escabeches españoles a las verduras sott'olio italianas.",
+    "uses": [
+      "Entrantes frescos",
+      "Guarnición de pescado o carne a la brasa",
+      "Aperitivo",
+      "Ensaladas templadas",
+      "Tostas"
+    ],
+    "keep": "Láminas crudas, mejor al momento. Setas o berenjena marinadas, en frío 3–4 días.",
+    "pro": "Corta las láminas al pedir o con muy poca antelación. Las verduras cocinadas marinadas se preparan la víspera.",
+    "related": [
+      "marinada",
+      "escabechado",
+      "pimientos-asados-alinados",
+      "encurtidos-rapidos",
+      "verduras-a-la-brasa",
+      "setas"
+    ]
+  },
+  {
+    "id": "huevos-de-guarnicion",
+    "name": "Huevos de guarnición: yema curada y huevo a baja temperatura",
+    "name_en": "Eggs as garnish: cured yolk and slow-cooked egg",
+    "cat": "bases",
+    "group": "Crujientes y acabados",
+    "aka": [
+      "yema curada",
+      "huevo a baja temperatura",
+      "huevo a 63",
+      "yema confitada",
+      "huevo poche",
+      "huevo de codorniz",
+      "yema rallada"
+    ],
+    "role": "toque",
+    "techniques": [
+      "curado",
+      "bajatemp"
+    ],
+    "summary": "El huevo como acompañamiento: yemas curadas en sal y azúcar (cremosas o para rallar), huevo a baja temperatura, yema confitada y huevos pequeños fritos.",
+    "what": "La yema da grasa, untuosidad y sabor que ligan un plato. Curada en sal y azúcar pierde agua y se vuelve una yema densa, como un caramelo salado, o, si se deja más y se seca, una yema dura para rallar como un queso. Cocida a baja temperatura, el huevo entero queda con la clara apenas cuajada y la yema líquida y espesa; los puntos exactos están en [[puntos-del-huevo]]. La yema confitada en aceite templado queda como una crema. Y un huevo de codorniz frito es un acabado perfecto para aperitivos.",
+    "base": {
+      "for": "10 yemas curadas",
+      "items": [
+        [
+          "Yemas de huevo frescas",
+          "10"
+        ],
+        [
+          "Sal fina",
+          "300 g"
+        ],
+        [
+          "Azúcar",
+          "300 g"
+        ]
+      ],
+      "steps": [
+        "Mezcla la sal con el azúcar y extiende la mitad en un recipiente, haciendo huecos con el dorso de una cuchara.",
+        "Coloca una yema en cada hueco, sin romperla.",
+        "Cubre con el resto de la mezcla y deja en frío.",
+        "Para yema cremosa, 4–6 horas; para yema firme y untable, 24 horas.",
+        "Saca las yemas, lávalas con cuidado en agua fría y sécalas. Para rallar, sécalas además a 50–60 °C en deshidratador 2–3 horas o en cámara varios días."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Mezcla de curado",
+        "ratio": "Sal y azúcar a partes iguales",
+        "note": "Algunas cocinas usan solo sal; queda más salada."
+      },
+      {
+        "use": "Yema curada cremosa",
+        "ratio": "4–6 horas en frío",
+        "note": "Sobre tartares, arroces o verduras."
+      },
+      {
+        "use": "Huevo a baja temperatura",
+        "ratio": "63–64 °C, 45–60 minutos",
+        "note": "Clara blanda y yema líquida y espesa."
+      },
+      {
+        "use": "Yema confitada",
+        "ratio": "Yema en aceite de oliva a 60–62 °C, 20–30 minutos",
+        "note": "Untuosa, como una crema."
+      }
+    ],
+    "variants": [
+      {
+        "id": "puntos-del-huevo",
+        "name": "Puntos del huevo",
+        "note": "Temperaturas y tiempos para cada textura."
+      },
+      {
+        "id": "salazones-y-huevas",
+        "name": "Huevas curadas",
+        "note": "El mismo principio con huevas de pescado."
+      },
+      {
+        "id": "huevos",
+        "name": "Huevo de codorniz frito",
+        "note": "Frito en aceite muy caliente unos segundos; para aperitivos."
+      }
+    ],
+    "keys": [
+      "Huevos muy frescos y de origen fiable.",
+      "Yemas enteras: separa con cuidado.",
+      "Lava bien la yema curada para quitar el exceso de sal.",
+      "La yema rallada sustituye a un queso curado como acabado.",
+      "Huevo a baja temperatura: controla el agua con termómetro o roner."
+    ],
+    "errors": [
+      {
+        "p": "Yema curada demasiado salada",
+        "fix": "Tiempo largo o mal lavada. Acorta el curado y lava con agua fría."
+      },
+      {
+        "p": "Clara líquida en el huevo a baja temperatura",
+        "fix": "Es normal a 63 °C. Para una clara más firme, sube a 65 °C o termina 1 minuto en agua hirviendo."
+      },
+      {
+        "p": "Yema rota al curar",
+        "fix": "Hueco poco profundo o yema manipulada. Usa cuchara y hueco bien marcado."
+      }
+    ],
+    "history": "Curar yemas en sal es una técnica tradicional en algunas cocinas asiáticas y se ha extendido en la cocina de restaurante actual. Los huevos a baja temperatura se popularizaron con los baños de agua de precisión.",
+    "uses": [
+      "Sobre tartares y crudos",
+      "Arroces y pastas",
+      "Verduras a la brasa",
+      "Yema rallada sobre ensaladas y platos",
+      "Huevo de codorniz en aperitivos"
+    ],
+    "keep": "Yemas curadas cremosas, en frío y en aceite, 2–3 días. Yemas secas para rallar, en frío y cerradas, 2–3 semanas. Huevos a baja temperatura, enfriados en hielo, 2 días; regenerar a 60 °C.",
+    "pro": "Cocina los huevos a baja temperatura en tanda, enfríalos en hielo y regenéralos 10 minutos a 60 °C en el pase. Ten yemas curadas para todo el servicio.",
+    "related": [
+      "puntos-del-huevo",
+      "huevos",
+      "baja-temperatura",
+      "salazones-y-huevas",
+      "ceviche-y-crudos"
+    ]
+  },
+  {
+    "id": "panes-planos",
+    "name": "Panes planos de servicio",
+    "name_en": "Flatbreads for service",
+    "cat": "bases",
+    "group": "Cremas y guarniciones",
+    "aka": [
+      "pan plano",
+      "flatbread",
+      "pita",
+      "pan de pita",
+      "torta a la brasa",
+      "pan de sarten",
+      "naan",
+      "chapati"
+    ],
+    "role": "guarnicion",
+    "techniques": [
+      "brasa",
+      "horno"
+    ],
+    "summary": "Panes finos que se cuecen en minutos sobre la brasa, la plancha o el horno muy caliente: para mojar, envolver o servir con untables y carnes.",
+    "what": "Un pan plano es una masa sencilla (harina, agua, sal, a veces levadura, yogur o aceite) estirada fina y cocida a fuego muy fuerte. Con levadura y horno muy caliente, se hincha y queda hueca como una pita. Sobre la brasa o una plancha muy caliente, toma burbujas tostadas y queda flexible. Sin levadura, en sartén, es una torta rápida. En una cocina de brasa es la forma más sencilla de tener pan recién hecho al momento, para acompañar [[untables-de-legumbre]], [[labneh]] o carnes.",
+    "base": {
+      "for": "12 panes de 80 g",
+      "items": [
+        [
+          "Harina panificable",
+          "550 g"
+        ],
+        [
+          "Agua templada",
+          "280 g"
+        ],
+        [
+          "Yogur natural",
+          "80 g"
+        ],
+        [
+          "Aceite de oliva",
+          "25 g"
+        ],
+        [
+          "Sal",
+          "11 g"
+        ],
+        [
+          "Levadura fresca",
+          "8 g"
+        ],
+        [
+          "Aceite con ajo y hierbas para pintar",
+          "c. s."
+        ]
+      ],
+      "steps": [
+        "Amasa todos los ingredientes 8–10 minutos hasta que la masa esté lisa y blanda.",
+        "Deja fermentar tapada 1–1,5 horas, hasta que doble (o 12–24 horas en frío).",
+        "Divide en bolas de 80 g y deja reposar 20 minutos.",
+        "Estira cada bola a 3–4 mm con las manos o el rodillo.",
+        "Cuece sobre brasa fuerte o plancha muy caliente, 1–2 minutos por lado, hasta que tenga burbujas tostadas.",
+        "Pinta al momento con aceite de ajo y hierbas, sal en escamas, y sirve caliente."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Pan plano a la brasa",
+        "ratio": "50–55 % de agua y 15 % de yogur sobre la harina, con 1,5 % de levadura",
+        "note": "Brasa fuerte, 1–2 minutos por lado."
+      },
+      {
+        "use": "Pita que se infla",
+        "ratio": "Masa de 60 % de agua, estirada a 5 mm",
+        "note": "Horno a 250–280 °C sobre piedra o bandeja muy caliente, 3–5 minutos."
+      },
+      {
+        "use": "Torta sin levadura",
+        "ratio": "500 g de harina, 250–280 g de agua, 30 g de aceite y 8 g de sal",
+        "note": "Sartén seca y caliente, 1 minuto por lado."
+      },
+      {
+        "use": "Porción",
+        "ratio": "60–80 g de masa por pan",
+        "note": "Uno por comensal para compartir."
+      }
+    ],
+    "variants": [
+      {
+        "id": "pan-y-focaccia",
+        "name": "Focaccia",
+        "note": "Masa más hidratada y gruesa en bandeja."
+      },
+      {
+        "id": "coca-y-masas-saladas",
+        "name": "Coca",
+        "note": "Masa fina de aceite cubierta de verdura."
+      },
+      {
+        "id": "tortillas-de-maiz-y-nixtamal",
+        "name": "Tortillas de maíz",
+        "note": "El pan plano de maíz nixtamalizado."
+      }
+    ],
+    "keys": [
+      "Fuego muy fuerte: el pan plano se hace en minutos y con calor débil queda duro.",
+      "Estira fino y parejo.",
+      "Bolas boleadas y reposadas: se estiran sin encoger.",
+      "Pinta con grasa al momento para que quede flexible.",
+      "Sírvelo recién hecho: frío pierde la gracia."
+    ],
+    "errors": [
+      {
+        "p": "Duro y seco",
+        "fix": "Calor bajo y cocción larga. Brasa o plancha más fuerte y menos tiempo."
+      },
+      {
+        "p": "No se infla la pita",
+        "fix": "Horno flojo o masa estirada muy fina o rota. Más calor y estirado parejo de 5 mm."
+      },
+      {
+        "p": "Encoge al estirar",
+        "fix": "Masa sin reposo. Deja reposar las bolas 20 minutos."
+      }
+    ],
+    "history": "Los panes planos son los panes más antiguos y siguen siendo la base de muchas cocinas, de Oriente Medio a la India y Latinoamérica. Las tortas cocidas sobre las brasas o en el hogar existen también en la tradición rural española.",
+    "uses": [
+      "Untables y cremas",
+      "Carnes y verduras a la brasa",
+      "Envolver brochetas",
+      "Aperitivo con aceite y sal",
+      "Base de pizzas o cocas rápidas"
+    ],
+    "keep": "Masa en frío 2–3 días. Panes hechos, envueltos en paño, unas horas; se regeneran 30 segundos en la brasa.",
+    "pro": "Ten las bolas porcionadas en bandeja en frío y estira y cuece al pedir: en tres minutos hay pan caliente.",
+    "related": [
+      "pan-y-focaccia",
+      "coca-y-masas-saladas",
+      "fuego-y-brasa",
+      "horno-de-lena",
+      "untables-de-legumbre",
+      "labneh"
+    ]
+  },
+  {
+    "id": "tierras-saladas",
+    "name": "Crumbles y tierras saladas",
+    "name_en": "Savoury crumbles and soils",
+    "cat": "bases",
+    "group": "Crujientes y acabados",
+    "aka": [
+      "tierra de aceituna",
+      "tierra de setas",
+      "crumble salado",
+      "tierra comestible",
+      "crumble de queso",
+      "polvo de aceituna"
+    ],
+    "role": "crujiente",
+    "techniques": [
+      "tostado"
+    ],
+    "summary": "Migas secas y sabrosas (de aceituna negra, setas, pan y hierbas, queso o frutos secos) que se esparcen para dar crujiente, color y sal al plato.",
+    "what": "Una tierra es un crujiente en grano fino: se seca o se tuesta un ingrediente con sabor y se tritura hasta parecer tierra o arena. La de [[aceitunas-y-alcaparras|aceituna negra]] se hace deshidratando la aceituna; la de setas, con setas secas y pan tostado en mantequilla; el crumble de queso, con una masa arenosa de mantequilla, harina, queso curado y almendra horneada. Aportan textura, color oscuro y un punto salado o umami, y se colocan al final para que no se humedezcan.",
+    "base": {
+      "for": "unos 150 g de tierra de aceituna negra",
+      "items": [
+        [
+          "Aceitunas negras deshuesadas (de buena calidad)",
+          "300 g"
+        ],
+        [
+          "Pan seco o panko (opcional, para volumen)",
+          "40 g"
+        ],
+        [
+          "Aceite de oliva",
+          "10 g"
+        ]
+      ],
+      "steps": [
+        "Escurre bien las aceitunas, sécalas con papel y pícalas groseramente.",
+        "Extiende en bandeja con papel y seca a 60–70 °C en deshidratador u horno con la puerta entreabierta, 8–12 horas, hasta que estén completamente secas y quebradizas.",
+        "Tuesta el pan con el aceite en sartén hasta dorar.",
+        "Tritura las aceitunas secas con el pan a impulsos, sin hacer pasta.",
+        "Guarda en recipiente hermético."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Tierra de aceituna",
+        "ratio": "Aceituna seca a 60–70 °C, 8–12 horas",
+        "note": "Rinde alrededor de un tercio del peso."
+      },
+      {
+        "use": "Crumble de queso",
+        "ratio": "Mantequilla fría, harina y queso curado rallado a partes iguales con la mitad de almendra molida",
+        "note": "Desmenuzado y horneado a 170 °C, 12–15 minutos."
+      },
+      {
+        "use": "Tierra de setas",
+        "ratio": "30 g de setas secas molidas, 100 g de pan rallado tostado en 40 g de mantequilla",
+        "note": "Para carnes, huevos y cremas."
+      },
+      {
+        "use": "Tierra de pan y hierbas",
+        "ratio": "Pan rallado tostado en aceite con hierbas secas y ralladura de limón",
+        "note": "Mira [[migas-limon]]."
+      }
+    ],
+    "variants": [
+      {
+        "id": "migas-limon",
+        "name": "Migas de limón",
+        "note": "El crujiente de pan más sencillo."
+      },
+      {
+        "id": "crujientes-salados",
+        "name": "Crujientes salados",
+        "note": "Láminas e hilos fritos o tostados."
+      },
+      {
+        "id": "crumbles-de-fruta",
+        "name": "Crumble dulce",
+        "note": "La misma idea en el lado dulce."
+      }
+    ],
+    "keys": [
+      "Secado completo: con humedad, la tierra se apelmaza.",
+      "Tritura a impulsos: buscas grano, no pasta.",
+      "Las aceitunas y el queso ya salan: no añadas sal.",
+      "Coloca la tierra al final y sobre una zona seca del plato.",
+      "Guarda con gel de sílice o papel secante."
+    ],
+    "errors": [
+      {
+        "p": "Tierra pastosa",
+        "fix": "Aceituna o setas mal secas, o triturado excesivo. Seca más y tritura a impulsos."
+      },
+      {
+        "p": "Amarga",
+        "fix": "Secado a temperatura alta. Baja a 60–70 °C."
+      },
+      {
+        "p": "Se ablanda en el plato",
+        "fix": "Colocada sobre salsa. Ponla en zona seca y en el último momento."
+      }
+    ],
+    "history": "Las tierras comestibles se pusieron de moda en la cocina de restaurante de principios del siglo XXI como forma de dar textura y evocar paisajes. La idea de migas y crujientes salados es mucho más antigua.",
+    "uses": [
+      "Carnes y pescados",
+      "Cremas y purés",
+      "Ensaladas y verduras",
+      "Aperitivos",
+      "Platos que evocan paisaje"
+    ],
+    "keep": "En recipiente hermético, seco y a temperatura ambiente: tierra de aceituna, 2–3 semanas; crumble de queso, 1 semana.",
+    "pro": "Haz las tierras en tanda y guárdalas en botes con gel de sílice en el pase. Ponlas con cuchara al final de cada plato.",
+    "related": [
+      "crujientes-salados",
+      "migas-limon",
+      "deshidratados-y-crujientes",
+      "aceitunas-y-alcaparras",
+      "setas",
+      "quesos-en-cocina"
+    ]
   }
 ]

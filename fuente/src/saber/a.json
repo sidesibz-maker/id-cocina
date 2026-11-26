@@ -2265,5 +2265,1633 @@
       "salsa-de-tomate",
       "reducciones"
     ]
+  },
+  {
+    "id": "reaccion-de-maillard",
+    "name": "Reacción de Maillard y dorado",
+    "name_en": "Maillard reaction and browning",
+    "aka": [
+      "Maillard",
+      "dorado",
+      "tostado",
+      "costra",
+      "pardeamiento",
+      "sabor a tostado"
+    ],
+    "cat": "conceptos",
+    "group": "Fundamentos",
+    "summary": "Por qué una carne, un pan o una cebolla doradas saben tan distinto de las cocidas: azúcares y proteínas que se transforman con el calor seco.",
+    "what": "La reacción de Maillard es un conjunto de reacciones entre azúcares y aminoácidos (las piezas de las proteínas) que se produce con el calor. Crea cientos de compuestos de aroma y los pigmentos marrones de la costra de la carne, la corteza del pan, el café tostado, la cebolla dorada o la [[glace]]. No es lo mismo que la [[caramelizacion-de-azucares|caramelización]], que solo implica azúcar.\n\nEs rápida por encima de unos 140 °C, por eso necesita una superficie seca: mientras haya agua, la superficie no pasa de 100 °C y el alimento se cuece en vez de dorarse. A temperaturas bajas también ocurre, pero muy despacio, durante horas o días. Un medio algo alcalino la acelera; un medio ácido la frena.",
+    "base": {
+      "for": "Principios para dorar bien",
+      "items": [
+        [
+          "Superficie seca",
+          "secar con papel; en aves, piel secada al aire en cámara"
+        ],
+        [
+          "Temperatura de superficie",
+          "por encima de 140 °C"
+        ],
+        [
+          "Espacio en la sartén o bandeja",
+          "una capa, sin amontonar"
+        ],
+        [
+          "Grasa",
+          "capa fina que reparte el calor"
+        ],
+        [
+          "pH algo alcalino",
+          "una pizca de bicarbonato acelera el dorado de cebollas"
+        ],
+        [
+          "Azúcar presente",
+          "lácteos, miel o glaseados doran antes"
+        ]
+      ],
+      "steps": [
+        "Seca bien la superficie y sala con antelación o justo antes, nunca a medias.",
+        "Calienta el recipiente antes de poner el producto.",
+        "No muevas hasta que se forme la costra.",
+        "Controla el color: dorado y marrón son sabor; negro es amargo.",
+        "Usa lo pegado en el fondo: desglasa para recuperar el sabor."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Dorado rápido",
+        "ratio": "Superficie a 150–180 °C",
+        "note": "Sartén, plancha, horno fuerte."
+      },
+      {
+        "use": "Patata frita",
+        "ratio": "No pasar de 175 °C",
+        "note": "Dorado claro; el oscuro forma más compuestos indeseables."
+      },
+      {
+        "use": "Cebolla con bicarbonato",
+        "ratio": "1 g por kg",
+        "note": "Dora antes, pero ablanda."
+      },
+      {
+        "use": "Maillard lenta",
+        "ratio": "60–90 °C durante horas o días",
+        "note": "Reducciones largas, ajo negro."
+      }
+    ],
+    "variants": [
+      {
+        "id": "sellado-y-reposo",
+        "name": "Sellado",
+        "note": "Aplicado a la carne."
+      },
+      {
+        "id": "caramelizacion-de-verduras",
+        "name": "Verduras doradas",
+        "note": "Maillard y caramelización juntas."
+      },
+      {
+        "id": "plancha-y-sarten",
+        "name": "Plancha y sartén",
+        "note": "Calor por contacto."
+      },
+      {
+        "id": "caramelizacion-de-azucares",
+        "name": "Caramelización",
+        "note": "Solo azúcar, otra reacción."
+      }
+    ],
+    "keys": [
+      "Sin superficie seca no hay dorado.",
+      "El agua frena la temperatura en 100 °C.",
+      "Amontonar es cocer, no dorar.",
+      "Dorado es sabor; quemado es amargor.",
+      "El fondo pegado de la sartén es un concentrado de esta reacción."
+    ],
+    "errors": [
+      {
+        "p": "Carne gris que suelta agua",
+        "fix": "Sartén fría o llena. Calienta y cocina por tandas."
+      },
+      {
+        "p": "Costra amarga",
+        "fix": "Se ha pasado a quemado. Baja el fuego y retira antes."
+      },
+      {
+        "p": "Masa que dora demasiado pronto",
+        "fix": "Mucho azúcar o leche. Baja la temperatura del horno."
+      }
+    ],
+    "history": "La reacción toma el nombre del químico francés que la describió a principios del siglo XX. La cocina la ha aprovechado siempre sin conocer su química: asar, tostar y dorar son de las técnicas más antiguas.",
+    "uses": [
+      "Carnes y pescados dorados",
+      "Panes y masas",
+      "Tostados de especias y frutos secos",
+      "Fondos oscuros",
+      "Cebollas y verduras"
+    ],
+    "keep": "No aplica: es un proceso. Los productos dorados pierden el crujiente con la humedad: se sirven al momento o se regeneran en seco.",
+    "pro": "Organiza el pase para dorar al último momento y sin amontonar. Seca los productos en cámara sobre rejilla antes del servicio.",
+    "related": [
+      "sellado-y-reposo",
+      "caramelizacion-de-verduras",
+      "plancha-y-sarten",
+      "caramelizacion-de-azucares",
+      "fondo-oscuro",
+      "agua-y-evaporacion"
+    ]
+  },
+  {
+    "id": "caramelizacion-de-azucares",
+    "name": "Caramelización de azúcares",
+    "name_en": "Sugar caramelisation",
+    "aka": [
+      "caramelizar",
+      "caramelo",
+      "puntos del azúcar",
+      "azúcar quemado",
+      "inversión del azúcar"
+    ],
+    "cat": "conceptos",
+    "group": "Fundamentos",
+    "summary": "Qué le pasa al azúcar cuando se calienta solo: se funde, se colorea, gana aroma y amargor, y cada temperatura da un resultado.",
+    "what": "Cuando el azúcar se calienta sin proteínas, se descompone y se transforma en cientos de compuestos nuevos: aparecen el color ámbar, los aromas de caramelo y, si se sigue, el amargor. Eso es la caramelización. Cada azúcar empieza a una temperatura distinta: la fructosa, la de la fruta y la miel, carameliza antes que el azúcar común.\n\nA la vez, en un almíbar, el agua se va evaporando y la concentración de azúcar sube, y con ella la temperatura de ebullición: por eso un termómetro dice en qué punto está un jarabe. El ácido y el calor rompen la sacarosa en glucosa y fructosa (azúcar invertido), que cristaliza menos. La técnica práctica está en [[caramelo]].",
+    "base": {
+      "for": "Puntos de referencia del azúcar",
+      "items": [
+        [
+          "Almíbar ligero (jarabe)",
+          "103–105 °C"
+        ],
+        [
+          "Bola blanda",
+          "115–118 °C"
+        ],
+        [
+          "Bola dura",
+          "120–130 °C"
+        ],
+        [
+          "Caramelo claro",
+          "160–170 °C"
+        ],
+        [
+          "Caramelo oscuro",
+          "175–185 °C"
+        ],
+        [
+          "Quemado y amargo",
+          "por encima de 190 °C"
+        ]
+      ],
+      "steps": [
+        "En seco, el azúcar se funde y colorea directamente: más rápido y más riesgo.",
+        "En húmedo, con agua, el jarabe sube de temperatura poco a poco y es más controlable.",
+        "Remover o tener cristales en las paredes provoca cristalización: limpia con pincel mojado.",
+        "Un poco de glucosa o de ácido evita cristales.",
+        "Para detener el color, aparta y añade líquido caliente o enfría la base del cazo."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Caramelo para flan",
+        "ratio": "170–175 °C",
+        "note": "Ámbar medio."
+      },
+      {
+        "use": "Glucosa anticristalizante",
+        "ratio": "10–20 % del azúcar",
+        "note": ""
+      },
+      {
+        "use": "Caramelo salado",
+        "ratio": "Azúcar, nata y mantequilla 2:1:0,5",
+        "note": "Nata caliente."
+      },
+      {
+        "use": "Fructosa",
+        "ratio": "Colorea desde unos 110 °C",
+        "note": "Miel y fruta doran antes."
+      }
+    ],
+    "variants": [
+      {
+        "id": "caramelo",
+        "name": "Caramelo",
+        "note": "La técnica de pastelería."
+      },
+      {
+        "id": "miel-y-azucares",
+        "name": "Tipos de azúcar",
+        "note": "Cada uno se comporta distinto."
+      },
+      {
+        "id": "reaccion-de-maillard",
+        "name": "Maillard",
+        "note": "Azúcar con proteína."
+      },
+      {
+        "id": "lacado-de-carnes",
+        "name": "Lacas",
+        "note": "Azúcar sobre la carne, con riesgo de quemar."
+      }
+    ],
+    "keys": [
+      "El termómetro dice el punto de un jarabe.",
+      "Cuanto más oscuro, menos dulce y más amargo.",
+      "Fructosa y miel colorean antes.",
+      "Cristales en las paredes = caramelo arenoso.",
+      "Para frenar el color, líquido caliente y fuera del fuego."
+    ],
+    "errors": [
+      {
+        "p": "Caramelo arenoso",
+        "fix": "Cristalización. Limpia paredes, no remuevas y añade glucosa."
+      },
+      {
+        "p": "Amargo",
+        "fix": "Pasado de punto. Retira antes y enfría la base."
+      },
+      {
+        "p": "Salpica al añadir líquido",
+        "fix": "Líquido frío. Añádelo caliente, poco a poco y apartado."
+      }
+    ],
+    "history": "Cocer azúcar hasta caramelo es una técnica antigua de la confitería. La comprensión química de lo que ocurre es mucho más reciente y todavía se sigue estudiando.",
+    "uses": [
+      "Caramelos y salsas dulces",
+      "Flanes y cremas",
+      "Lacas y glaseados",
+      "Pralinés",
+      "Salsas agridulces"
+    ],
+    "keep": "No aplica: es un proceso. El caramelo duro absorbe humedad: guárdalo en seco.",
+    "pro": "Trabaja con termómetro y cazo de fondo grueso. Ten nata o agua caliente medida antes de empezar.",
+    "related": [
+      "caramelo",
+      "miel-y-azucares",
+      "reaccion-de-maillard",
+      "lacado-de-carnes",
+      "turrones-y-pralines",
+      "crema-catalana-y-flan"
+    ]
+  },
+  {
+    "id": "gelatinizacion-de-almidones",
+    "name": "Gelatinización de almidones",
+    "name_en": "Starch gelatinisation",
+    "aka": [
+      "almidón",
+      "gelatinización",
+      "retrogradación",
+      "espesar con almidón",
+      "por qué espesa una salsa",
+      "pan duro"
+    ],
+    "cat": "conceptos",
+    "group": "Fundamentos",
+    "summary": "Por qué la harina, la maicena o el arroz espesan al calentarse y por qué el pan se pone duro y las salsas lloran al enfriarse.",
+    "what": "El almidón está en granos diminutos dentro de cereales, tubérculos y legumbres. En frío no se disuelve, pero al calentarse con agua los granos absorben líquido, se hinchan y liberan parte de su contenido: el líquido espesa. Eso es la gelatinización, y ocurre en un rango de temperatura que depende del almidón, entre unos 55 y 80 °C, aunque muchos solo alcanzan todo su poder cerca del hervor.\n\nAl enfriarse, el almidón se reorganiza poco a poco y suelta agua: es la retrogradación. Por eso el pan se endurece, el arroz frío se vuelve duro y algunas salsas ligadas con almidón lloran o se cortan tras congelarse. Un calor corto la revierte en parte. Los almidones ricos en amilopectina (tapioca, arroz glutinoso) son más estables.",
+    "base": {
+      "for": "Principios para trabajar con almidón",
+      "items": [
+        [
+          "Dispersión",
+          "en frío o en grasa (roux) para evitar grumos"
+        ],
+        [
+          "Temperatura de espesado",
+          "la mayoría, cerca de 90–95 °C"
+        ],
+        [
+          "Ácido",
+          "reduce el poder espesante si hierve mucho tiempo"
+        ],
+        [
+          "Azúcar",
+          "retrasa la gelatinización"
+        ],
+        [
+          "Agitación",
+          "excesiva rompe los granos hinchados y aclara"
+        ],
+        [
+          "Frío y congelación",
+          "provocan retrogradación y pérdida de agua"
+        ]
+      ],
+      "steps": [
+        "Separa los granos antes de calentar: en líquido frío o en grasa.",
+        "Lleva a hervor suave el tiempo justo para que espese y pierda sabor a crudo.",
+        "Añade los ácidos fuertes al final si es posible.",
+        "No batas en exceso una crema ya espesa.",
+        "Para congelar, elige almidones estables o liga al regenerar."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Salsa que napa",
+        "ratio": "15–25 g de maicena por litro",
+        "note": "Disuelta en frío."
+      },
+      {
+        "use": "Crema pastelera",
+        "ratio": "40–50 g de almidón por litro",
+        "note": "Hervir 1–2 minutos."
+      },
+      {
+        "use": "Pan duro",
+        "ratio": "Horno a 180–200 °C, 3–5 minutos",
+        "note": "Revierte la retrogradación en parte."
+      },
+      {
+        "use": "Patata en guiso",
+        "ratio": "Cascada para soltar almidón",
+        "note": "Liga el caldo."
+      }
+    ],
+    "variants": [
+      {
+        "id": "harinas-y-almidones",
+        "name": "Harinas y almidones",
+        "note": "Cada uno y su uso."
+      },
+      {
+        "id": "ligazones",
+        "name": "Ligazones",
+        "note": "Formas de espesar."
+      },
+      {
+        "id": "roux",
+        "name": "Roux",
+        "note": "Almidón dispersado en grasa."
+      },
+      {
+        "id": "risotto-y-arroces-cremosos",
+        "name": "Arroces cremosos",
+        "note": "El almidón del grano liga el caldo."
+      }
+    ],
+    "keys": [
+      "Dispersar antes de calentar.",
+      "El almidón espesa del todo cerca del hervor.",
+      "El frío endurece y hace llorar al almidón.",
+      "El ácido y el exceso de batido lo debilitan.",
+      "Un calor corto devuelve parte de la ternura al pan."
+    ],
+    "errors": [
+      {
+        "p": "Grumos",
+        "fix": "Almidón en seco en líquido caliente. Disuélvelo en frío."
+      },
+      {
+        "p": "Salsa que suelta agua tras congelar",
+        "fix": "Retrogradación. Usa un almidón estable o liga al regenerar."
+      },
+      {
+        "p": "Crema que se aclara al día siguiente",
+        "fix": "Poca cocción o ácido. Hierve lo justo y añade el ácido al final."
+      }
+    ],
+    "history": "Espesar con harinas, pan y féculas es tan antiguo como las salsas. La explicación de cómo se comporta el almidón llegó con la ciencia de los alimentos del siglo XX.",
+    "uses": [
+      "Salsas y cremas",
+      "Arroces y pastas",
+      "Panes y masas",
+      "Rellenos y croquetas",
+      "Guisos con patata"
+    ],
+    "keep": "No aplica: es un proceso. Lo ligado con almidón se recalienta suave y removiendo.",
+    "pro": "Ten almidón disuelto en biberón para ligar jugos al pedido. Anota en cada ficha qué almidón se usa y si aguanta la congelación.",
+    "related": [
+      "harinas-y-almidones",
+      "ligazones",
+      "roux",
+      "risotto-y-arroces-cremosos",
+      "pan-del-dia-y-pan-viejo",
+      "crema-pastelera"
+    ]
+  },
+  {
+    "id": "coagulacion-de-proteinas",
+    "name": "Coagulación de proteínas",
+    "name_en": "Protein coagulation",
+    "aka": [
+      "coagulación",
+      "desnaturalización",
+      "cuajado",
+      "punto de cocción",
+      "sinéresis",
+      "por qué se seca la carne"
+    ],
+    "cat": "conceptos",
+    "group": "Fundamentos",
+    "summary": "Por qué el huevo cuaja, la carne se contrae y suelta jugo y el pescado se vuelve opaco: cada proteína cambia a su temperatura.",
+    "what": "Las proteínas son cadenas plegadas. El calor, el ácido, la sal o el batido las despliegan (desnaturalización) y luego se unen entre sí (coagulación): el líquido se vuelve sólido, lo transparente se vuelve opaco. En el huevo, la clara empieza a cuajar hacia 62 °C y la yema hacia 65 °C. En la carne, unas proteínas cambian hacia 50 °C y otras a partir de unos 65 °C; esas segundas contraen las fibras y exprimen el jugo, por eso la carne se seca. El pescado cuaja antes que la carne.\n\nSi se coagula de más, la red de proteína se aprieta y expulsa el agua: la tortilla llora, el flan se llena de agujeros, la carne queda seca. El [[ceviche-y-crudos|ceviche]] o el [[curado-de-pescado|curado]] desnaturalizan con ácido o sal, sin calor.",
+    "base": {
+      "for": "Temperaturas de referencia",
+      "items": [
+        [
+          "Pescado jugoso",
+          "45–52 °C en el centro"
+        ],
+        [
+          "Carne roja al punto",
+          "54–58 °C"
+        ],
+        [
+          "Clara de huevo",
+          "empieza a 62–65 °C, firme hacia 80 °C"
+        ],
+        [
+          "Yema",
+          "espesa a 65–70 °C"
+        ],
+        [
+          "Cremas con huevo (inglesa)",
+          "82–84 °C, diluida en leche y azúcar"
+        ],
+        [
+          "Carne bien hecha",
+          "por encima de 70 °C: fibras contraídas y secas"
+        ]
+      ],
+      "steps": [
+        "Decide la textura y busca la temperatura: el termómetro es la herramienta.",
+        "Saca antes del punto final: el calor residual sigue cuajando.",
+        "Diluir (leche, nata, azúcar) sube la temperatura de cuajado de un huevo.",
+        "Calor suave da texturas más tiernas y regulares.",
+        "Ácido y sal también cuajan: cuenta su efecto en marinados y curados."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Flan o crema de horno",
+        "ratio": "Baño maría, horno a 150–160 °C",
+        "note": "Sacar con el centro tembloroso."
+      },
+      {
+        "use": "Pechuga de ave",
+        "ratio": "62–65 °C con reposo",
+        "note": "Jugosa."
+      },
+      {
+        "use": "Pescado blanco",
+        "ratio": "48–50 °C",
+        "note": "Lascas nacaradas."
+      },
+      {
+        "use": "Revuelto",
+        "ratio": "Retirar a 65–70 °C",
+        "note": "Sigue cuajando en el plato."
+      }
+    ],
+    "variants": [
+      {
+        "id": "puntos-del-huevo",
+        "name": "Puntos del huevo",
+        "note": "Tiempos para cada textura."
+      },
+      {
+        "id": "punto-de-la-carne",
+        "name": "Punto de la carne",
+        "note": "Temperaturas por pieza."
+      },
+      {
+        "id": "baja-temperatura",
+        "name": "Baja temperatura",
+        "note": "Control exacto del cuajado."
+      },
+      {
+        "id": "curado-de-pescado",
+        "name": "Curado",
+        "note": "Coagular con sal."
+      }
+    ],
+    "keys": [
+      "Cada proteína tiene su temperatura.",
+      "Más allá del punto, la proteína exprime el agua.",
+      "Calor suave, textura tierna.",
+      "Diluir el huevo lo protege del cuajado brusco.",
+      "Ácido y sal también cocinan."
+    ],
+    "errors": [
+      {
+        "p": "Flan con agujeros y agua",
+        "fix": "Horno fuerte o sin baño maría. Baja la temperatura y saca antes."
+      },
+      {
+        "p": "Carne seca",
+        "fix": "Pasada de 70 °C. Saca antes y reposa."
+      },
+      {
+        "p": "Crema inglesa cortada",
+        "fix": "Pasada de 85 °C. Cuela y tritura en frío; vigila con termómetro."
+      }
+    ],
+    "history": "Saber cuándo cuaja un huevo o está hecha una carne es oficio de siempre. Los termómetros de sonda y la cocina a baja temperatura han convertido ese saber en números precisos.",
+    "uses": [
+      "Puntos de carne y pescado",
+      "Cremas, flanes y salsas con huevo",
+      "Curados y marinados",
+      "Quesos y cuajadas"
+    ],
+    "keep": "No aplica: es un proceso. Lo cuajado de más no vuelve atrás.",
+    "pro": "Sonda en cada partida y temperaturas de salida apuntadas en la ficha de cada plato.",
+    "related": [
+      "puntos-del-huevo",
+      "punto-de-la-carne",
+      "baja-temperatura",
+      "curado-de-pescado",
+      "crema-inglesa",
+      "colageno-y-gelatina"
+    ]
+  },
+  {
+    "id": "colageno-y-gelatina",
+    "name": "Colágeno y gelatina",
+    "name_en": "Collagen and gelatin",
+    "aka": [
+      "colágeno",
+      "gelatina natural",
+      "tejido conjuntivo",
+      "por qué liga un guiso",
+      "fondo que gelifica",
+      "piezas gelatinosas"
+    ],
+    "cat": "conceptos",
+    "group": "Fundamentos",
+    "summary": "Por qué las piezas duras se vuelven melosas con horas de cocción, y por qué un buen fondo cuaja en frío y liga en caliente.",
+    "what": "El colágeno es la proteína del tejido que une y envuelve los músculos, los tendones, la piel y los huesos. Crudo es duro. Con calor húmedo y tiempo, se deshace y se transforma en gelatina, que se disuelve en el líquido. Por eso un morcillo, una carrillera o un rabo pasan de duros a melosos tras horas de [[braseado]] o [[guisos-largos|guiso]], y su salsa queda ligada y brillante.\n\nLa gelatina disuelta espesa el líquido en caliente y lo cuaja al enfriar: un fondo bueno se convierte en gelatina en la cámara. Las piezas con más colágeno son los pies, el morro, la oreja, la piel, el rabo y, en pescados, las cabezas, las espinas, la piel y las kokotxas, que dan la gelatina del [[pil-pil]].",
+    "base": {
+      "for": "Principios",
+      "items": [
+        [
+          "Conversión del colágeno",
+          "lenta desde unos 60–70 °C; más rápida a 80–95 °C"
+        ],
+        [
+          "Tiempo",
+          "horas en carnes; menos en pescados"
+        ],
+        [
+          "Medio",
+          "calor húmedo o pieza en su jugo"
+        ],
+        [
+          "Gelatina en frío",
+          "cuaja por debajo de unos 15–20 °C"
+        ],
+        [
+          "Gelatina en caliente",
+          "se funde hacia 30–35 °C"
+        ],
+        [
+          "Hervor fuerte y muy largo",
+          "debilita la gelatina y enturbia el caldo"
+        ]
+      ],
+      "steps": [
+        "Elige piezas con colágeno para guisos y fondos.",
+        "Cocina a fuego suave y con tiempo, sin hervor fuerte.",
+        "Comprueba la ternura con una aguja, no por el reloj.",
+        "Reduce el líquido colado para concentrar la gelatina.",
+        "Enfría un poco de fondo para comprobar si cuaja."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Carrillera braseada",
+        "ratio": "2,5–3,5 horas a 150 °C",
+        "note": "Tierna y gelatinosa."
+      },
+      {
+        "use": "Pieza en baja temperatura",
+        "ratio": "68–80 °C, 12–36 horas",
+        "note": "Colágeno convertido sin secar."
+      },
+      {
+        "use": "Fondo que cuaja",
+        "ratio": "Huesos con cartílago y 1–2 manitas por 5 l",
+        "note": "Más gelatina."
+      },
+      {
+        "use": "Gelatina en hoja para un fondo flojo",
+        "ratio": "4–6 g por litro",
+        "note": "Ayuda a napar."
+      }
+    ],
+    "variants": [
+      {
+        "id": "braseado",
+        "name": "Braseado",
+        "note": "La técnica del colágeno."
+      },
+      {
+        "id": "glace",
+        "name": "Glace",
+        "note": "Gelatina concentrada."
+      },
+      {
+        "id": "pil-pil",
+        "name": "Pil-pil",
+        "note": "Gelatina de pescado emulsionada."
+      },
+      {
+        "id": "gelificantes-y-espesantes",
+        "name": "Gelatina y gelificantes",
+        "note": "Dosis de la gelatina comercial."
+      }
+    ],
+    "keys": [
+      "Colágeno necesita calor húmedo y tiempo.",
+      "Fuego suave: el hervor fuerte reseca la carne.",
+      "El fondo que cuaja en frío es el que liga en caliente.",
+      "Pieles, pies, cabezas y espinas: gelatina gratis.",
+      "La gelatina se funde a temperatura de boca: textura untuosa."
+    ],
+    "errors": [
+      {
+        "p": "Guiso aguado",
+        "fix": "Piezas sin colágeno o poco tiempo. Usa piezas de trabajo o reduce más."
+      },
+      {
+        "p": "Carne seca aunque esté en líquido",
+        "fix": "Hervor fuerte. Baja el fuego."
+      },
+      {
+        "p": "Fondo que no cuaja",
+        "fix": "Pocos huesos con cartílago o mucha agua. Añade manitas o reduce."
+      }
+    ],
+    "history": "Las cocinas tradicionales han aprovechado siempre las piezas gelatinosas en guisos y fondos. La gelatina extraída de huesos y pieles fue también el primer gelificante de la pastelería.",
+    "uses": [
+      "Guisos y braseados",
+      "Fondos y glaces",
+      "Salsas emulsionadas de pescado",
+      "Terrinas y prensados",
+      "Gelatinas"
+    ],
+    "keep": "Los fondos gelatinosos, 4–5 días en frío o congelados en cubos.",
+    "pro": "Guarda manitas, pieles y espinas gelatinosas para reforzar fondos. Abate los guisos en su jugo: la gelatina los protege.",
+    "related": [
+      "braseado",
+      "guisos-largos",
+      "glace",
+      "pil-pil",
+      "gelificantes-y-espesantes",
+      "prensados-y-terrinas"
+    ]
+  },
+  {
+    "id": "grasas-punto-de-humo-y-oxidacion",
+    "name": "Grasas: punto de humo y oxidación",
+    "name_en": "Fats: smoke point and oxidation",
+    "aka": [
+      "punto de humo",
+      "aceite quemado",
+      "rancio",
+      "oxidación de grasas",
+      "reutilizar aceite",
+      "compuestos polares"
+    ],
+    "cat": "conceptos",
+    "group": "Fundamentos",
+    "summary": "Hasta dónde aguanta cada grasa el calor, cuándo se degrada en la freidora y por qué se enrancia en la despensa.",
+    "what": "Cada grasa empieza a echar humo a una temperatura: es su punto de humo. A partir de ahí se descompone, da sabores acres y produce compuestos indeseables. Las grasas refinadas y las que no tienen sólidos (mantequilla clarificada) aguantan más que la mantequilla entera, cuyos sólidos se queman pronto. El aceite de oliva virgen extra, aunque su punto de humo no es de los más altos, resiste bien la fritura gracias a sus antioxidantes y a su tipo de grasa.\n\nCon el uso repetido, el aceite de freír se oxida y se descompone: oscurece, hace espuma, humea antes y da mal sabor. En la despensa, la luz, el aire y el calor enrancian las grasas, sobre todo las ricas en grasas poliinsaturadas, como las de muchas semillas y frutos secos.",
+    "base": {
+      "for": "Referencias aproximadas",
+      "items": [
+        [
+          "Mantequilla entera",
+          "humea hacia 150 °C"
+        ],
+        [
+          "Mantequilla clarificada",
+          "aguanta por encima de 200 °C"
+        ],
+        [
+          "Aceite de oliva virgen extra",
+          "en torno a 190–210 °C; muy estable en fritura"
+        ],
+        [
+          "Aceites refinados de oliva, girasol alto oleico o cacahuete",
+          "220–240 °C"
+        ],
+        [
+          "Fritura habitual",
+          "160–180 °C"
+        ],
+        [
+          "Señales de aceite agotado",
+          "color oscuro, espuma, humo a menor temperatura, olor acre"
+        ]
+      ],
+      "steps": [
+        "Elige la grasa por la temperatura que vas a necesitar.",
+        "No calientes el aceite más de lo necesario ni lo tengas caliente sin uso.",
+        "Filtra el aceite de freír tras cada servicio y no lo rellenes sin fin con aceite nuevo.",
+        "Mide su estado con tiras o medidor de compuestos polares y cámbialo antes de su límite.",
+        "Guarda las grasas cerradas, a oscuras y frescas."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Fritura de patata",
+        "ratio": "160–180 °C",
+        "note": "No pasar de 175 °C para el dorado final."
+      },
+      {
+        "use": "Sellado con mantequilla",
+        "ratio": "Mitad aceite, mitad mantequilla",
+        "note": "O mantequilla clarificada."
+      },
+      {
+        "use": "Freidora",
+        "ratio": "Filtrar tras cada servicio",
+        "note": "Tapar en reposo."
+      },
+      {
+        "use": "Frutos secos y aceites de semilla",
+        "ratio": "En frío y a oscuras",
+        "note": "Se enrancian antes."
+      }
+    ],
+    "variants": [
+      {
+        "id": "fritura",
+        "name": "Fritura",
+        "note": "Temperaturas y control del aceite."
+      },
+      {
+        "id": "aceite-de-oliva",
+        "name": "Aceite de oliva",
+        "note": "Tipos y usos."
+      },
+      {
+        "id": "clarificacion",
+        "name": "Mantequilla clarificada",
+        "note": "Sin sólidos que se quemen."
+      },
+      {
+        "id": "frutos-secos",
+        "name": "Frutos secos",
+        "note": "Grasas que se enrancian."
+      }
+    ],
+    "keys": [
+      "Cada grasa, su temperatura.",
+      "Humo es degradación: baja el fuego.",
+      "Los sólidos de la mantequilla se queman antes que su grasa.",
+      "Aceite de freír filtrado y controlado.",
+      "Luz, aire y calor enrancian."
+    ],
+    "errors": [
+      {
+        "p": "Fritos con sabor rancio o acre",
+        "fix": "Aceite agotado. Cámbialo y filtra tras cada uso."
+      },
+      {
+        "p": "Mantequilla negra al sellar",
+        "fix": "Demasiado calor. Usa mitad aceite o clarificada."
+      },
+      {
+        "p": "Frutos secos rancios",
+        "fix": "Guardados en calor y luz. En frío y cerrados."
+      }
+    ],
+    "history": "Las cocinas mediterráneas han frito siempre con aceite de oliva, y las del norte con mantequilla y grasas animales. El estudio del punto de humo y de la degradación del aceite es propio de la ciencia de los alimentos moderna, que también ha llevado a normas sobre el aceite de fritura.",
+    "uses": [
+      "Frituras",
+      "Sellados",
+      "Salteados",
+      "Conservación de grasas y frutos secos"
+    ],
+    "keep": "Aceites cerrados, en lugar fresco y oscuro. Mantequilla, en frío y envuelta. Aceite de freír, tapado y filtrado.",
+    "pro": "Registra el cambio de aceite de cada freidora. Ten mantequilla clarificada a mano para sellados fuertes.",
+    "related": [
+      "fritura",
+      "aceite-de-oliva",
+      "clarificacion",
+      "frutos-secos",
+      "leche-nata-y-mantequilla",
+      "reaccion-de-maillard"
+    ]
+  },
+  {
+    "id": "sal-y-osmosis",
+    "name": "Sal: ósmosis y sazonado en profundidad",
+    "name_en": "Salt: osmosis and deep seasoning",
+    "aka": [
+      "ósmosis",
+      "difusión de la sal",
+      "cuándo salar",
+      "sazonar",
+      "porcentaje de sal",
+      "salar con antelación"
+    ],
+    "cat": "conceptos",
+    "group": "Fundamentos",
+    "summary": "Qué hace la sal dentro del alimento: primero saca agua, luego entra despacio, cambia las proteínas y conserva.",
+    "what": "Al poner sal sobre un alimento, primero atrae el agua del interior hacia la superficie (ósmosis): la superficie se moja. Con el tiempo, la sal se disuelve en ese jugo y vuelve a entrar en el alimento, avanzando despacio hacia dentro (difusión). Por eso salar justo antes o con bastante antelación funciona, y salar a medias, unos minutos antes, deja la superficie húmeda y dora peor.\n\nDentro, la sal cambia algunas proteínas de la carne y el pescado, que retienen mejor el agua: por eso una [[salmuera]] o un [[marinados-en-seco|salado previo]] dan piezas más jugosas. La sal también reduce el agua disponible para los microbios, base de [[salazones-y-huevas|salazones]] y curados, y en el sabor realza, redondea y apaga amargores.",
+    "base": {
+      "for": "Referencias de sal sobre el peso",
+      "items": [
+        [
+          "Sazonado de un plato o una carne",
+          "0,8–1,2 % del peso"
+        ],
+        [
+          "Caldos y sopas",
+          "0,8–1 %"
+        ],
+        [
+          "Agua de cocción de pasta o verdura",
+          "1 % (10 g por litro)"
+        ],
+        [
+          "Salmuera para jugosidad",
+          "5–8 %"
+        ],
+        [
+          "Curado de pescado",
+          "sal y azúcar, de minutos a horas"
+        ],
+        [
+          "Salado previo en seco",
+          "10–15 g por kg, 12–48 horas"
+        ]
+      ],
+      "steps": [
+        "Pesa la sal en función del peso del producto: da resultados iguales cada vez.",
+        "Sala justo antes de cocinar o con antelación suficiente (40 minutos o más); evita el término medio.",
+        "Las piezas gruesas necesitan horas para que la sal llegue al centro.",
+        "Ajusta el final probando a la temperatura de servicio.",
+        "Cuenta la sal de ingredientes salados: soja, anchoas, quesos, embutidos."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Carne o pescado al momento",
+        "ratio": "Sal justo antes",
+        "note": "La superficie no llega a mojarse."
+      },
+      {
+        "use": "Salado previo de carne",
+        "ratio": "Al menos 40–60 minutos; mejor de un día",
+        "note": "La sal vuelve a entrar."
+      },
+      {
+        "use": "Sazonado general",
+        "ratio": "1 % del peso",
+        "note": "Punto de partida."
+      },
+      {
+        "use": "Salmuera de aves",
+        "ratio": "50–60 g por litro, 2–12 horas",
+        "note": "Según tamaño."
+      }
+    ],
+    "variants": [
+      {
+        "id": "salmuera",
+        "name": "Salmuera",
+        "note": "Sal disuelta para jugosidad."
+      },
+      {
+        "id": "marinados-en-seco",
+        "name": "Salado en seco",
+        "note": "Sal y especias sin líquido."
+      },
+      {
+        "id": "curado-de-pescado",
+        "name": "Curado",
+        "note": "Sal y azúcar para afirmar."
+      },
+      {
+        "id": "sal-y-flor-de-sal",
+        "name": "Tipos de sal",
+        "note": "Gruesa, fina, escamas."
+      }
+    ],
+    "keys": [
+      "Primero sale agua, después entra la sal.",
+      "Salar justo antes o con tiempo, no a medias.",
+      "Pesar la sal: porcentajes, no pellizcos.",
+      "La sal hace las proteínas más jugosas.",
+      "Probar a la temperatura de servicio."
+    ],
+    "errors": [
+      {
+        "p": "Carne que no dora y suelta agua",
+        "fix": "Salada unos minutos antes. Sala justo antes o con más antelación y seca."
+      },
+      {
+        "p": "Exterior salado e interior soso",
+        "fix": "Poco tiempo para la difusión. Sala antes las piezas gruesas."
+      },
+      {
+        "p": "Plato salado sin querer",
+        "fix": "Ingredientes salados no contados. Prueba antes de añadir sal."
+      }
+    ],
+    "history": "La sal ha sido el gran conservante de la historia y la base de salazones y curados en todo el Mediterráneo. La explicación de la ósmosis y la difusión llegó con la física y la química modernas.",
+    "uses": [
+      "Sazonado de carnes y pescados",
+      "Salmueras y curados",
+      "Agua de cocción",
+      "Conservación"
+    ],
+    "keep": "No aplica: es un proceso. La sal pura se conserva indefinidamente en seco.",
+    "pro": "Escribe en cada ficha el porcentaje de sal y el momento de salar. Báscula de precisión para sales y curados.",
+    "related": [
+      "salmuera",
+      "marinados-en-seco",
+      "curado-de-pescado",
+      "sal-y-flor-de-sal",
+      "salazones-y-huevas",
+      "agua-y-evaporacion"
+    ]
+  },
+  {
+    "id": "ph-y-acidez",
+    "name": "pH y acidez en cocción y conservación",
+    "name_en": "pH and acidity in cooking and preserving",
+    "aka": [
+      "pH",
+      "acidez",
+      "alcalino",
+      "bicarbonato en cocina",
+      "conservas ácidas",
+      "ácido y color"
+    ],
+    "cat": "conceptos",
+    "group": "Fundamentos",
+    "summary": "Lo ácido o lo alcalino de un medio cambia el color, la textura, el dorado y, sobre todo, la seguridad de una conserva.",
+    "what": "El pH mide lo ácido o alcalino que es un medio, de 0 a 14: el 7 es neutro, por debajo es ácido y por encima, alcalino. El vinagre y el limón están muy abajo; el tomate, algo ácido; la leche, casi neutra; la clara de huevo y el bicarbonato, alcalinos. En cocina cambia muchas cosas: el ácido mantiene firmes las verduras y frena su ablandamiento, vuelve verde oliva la clorofila y enrojece la col lombarda; el medio alcalino ablanda, acelera el dorado y vuelve azulada la lombarda.\n\nEn conservación es decisivo: por debajo de un pH de 4,6 no puede crecer la bacteria del botulismo. Por eso los [[encurtidos-rapidos|encurtidos]], [[escabechado|escabeches]] y conservas de verdura deben estar suficientemente ácidos, y las conservas de baja acidez requieren tratamientos industriales que no se hacen en una cocina.",
+    "base": {
+      "for": "Valores aproximados de pH",
+      "items": [
+        [
+          "Zumo de limón",
+          "2–2,5"
+        ],
+        [
+          "Vinagre de vino",
+          "2,5–3"
+        ],
+        [
+          "Tomate",
+          "4,2–4,6"
+        ],
+        [
+          "Límite de seguridad para conservas",
+          "4,6 (mejor por debajo de 4,2)"
+        ],
+        [
+          "Leche",
+          "6,6–6,8"
+        ],
+        [
+          "Clara de huevo",
+          "7,6 fresca, sube con los días"
+        ],
+        [
+          "Bicarbonato disuelto",
+          "8–8,5"
+        ]
+      ],
+      "steps": [
+        "Añade el ácido después de ablandar la verdura si quieres que se cueza antes.",
+        "Usa el ácido al final de la cocción de verdes para no apagar su color.",
+        "Una pizca de bicarbonato acelera el ablandamiento y el dorado, pero cambia sabor y textura.",
+        "En encurtidos y conservas, respeta las proporciones de ácido y mide con tiras o medidor.",
+        "Equilibra el ácido en el plato con grasa, sal o dulce."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Encurtido seguro",
+        "ratio": "pH por debajo de 4,2",
+        "note": "Vinagre de acidez conocida."
+      },
+      {
+        "use": "Bicarbonato en legumbres",
+        "ratio": "1 g por litro de remojo",
+        "note": "Ablanda; con más, sabor jabonoso."
+      },
+      {
+        "use": "Lombarda roja",
+        "ratio": "Un chorro de vinagre",
+        "note": "Mantiene el color."
+      },
+      {
+        "use": "Agua acidulada",
+        "ratio": "Zumo de 1 limón por litro",
+        "note": "Frena el oscurecimiento de alcachofas y manzanas."
+      }
+    ],
+    "variants": [
+      {
+        "id": "acidez-en-cocina",
+        "name": "Acidez en el sabor",
+        "note": "Cómo usarla para equilibrar."
+      },
+      {
+        "id": "encurtidos-rapidos",
+        "name": "Encurtidos",
+        "note": "Ácido para conservar."
+      },
+      {
+        "id": "conservas-en-aceite",
+        "name": "Conservas en aceite",
+        "note": "Qué no se debe hacer en casa."
+      },
+      {
+        "id": "punto-de-las-verduras",
+        "name": "Punto de las verduras",
+        "note": "El ácido frena el ablandamiento."
+      }
+    ],
+    "keys": [
+      "Ácido endurece y apaga el verde; alcalino ablanda y acelera el dorado.",
+      "pH por debajo de 4,6 es la frontera de seguridad en conservas.",
+      "Mide: las tiras de pH son baratas y rápidas.",
+      "El bicarbonato, en pizcas.",
+      "El ácido se equilibra con grasa, sal y dulce."
+    ],
+    "errors": [
+      {
+        "p": "Verduras que no se ablandan en el guiso",
+        "fix": "Ácido desde el principio. Añade el tomate o el vinagre cuando ya estén tiernas."
+      },
+      {
+        "p": "Judías verdes grisáceas",
+        "fix": "Ácido o cocción larga. Aliña al final y escalda poco."
+      },
+      {
+        "p": "Conserva casera dudosa",
+        "fix": "Poca acidez o producto de baja acidez en aceite. Mide el pH y guarda siempre en frío; ante la duda, se tira."
+      }
+    ],
+    "history": "Conservar en vinagre, en salmuera ácida o en fermentos es una práctica antigua en todas las cocinas. La medida del pH y su relación con la seguridad de las conservas son conocimientos del siglo XX.",
+    "uses": [
+      "Encurtidos y escabeches",
+      "Cocción de verduras y legumbres",
+      "Color de verduras",
+      "Equilibrio de sabor"
+    ],
+    "keep": "No aplica: es un principio. Las conservas ácidas, siempre etiquetadas y en frío salvo tratamiento adecuado.",
+    "pro": "Ten tiras de pH en la partida de conservas y fermentos, y anota el pH de cada tanda.",
+    "related": [
+      "acidez-en-cocina",
+      "encurtidos-rapidos",
+      "conservas-en-aceite",
+      "punto-de-las-verduras",
+      "fermentacion-lactica",
+      "escabechado"
+    ]
+  },
+  {
+    "id": "agua-y-evaporacion",
+    "name": "Agua: evaporación, vapor y actividad de agua",
+    "name_en": "Water: evaporation, steam and water activity",
+    "aka": [
+      "evaporación",
+      "vapor",
+      "punto de ebullición",
+      "actividad de agua",
+      "humedad en el horno",
+      "reducir"
+    ],
+    "cat": "conceptos",
+    "group": "Fundamentos",
+    "summary": "El agua manda en casi todas las cocciones: limita la temperatura a 100 °C, enfría al evaporarse, transmite calor como vapor y decide qué se conserva.",
+    "what": "Mientras un alimento tiene agua en la superficie, esta no pasa de 100 °C (algo menos en altura): por eso no dora hasta que se seca. Al evaporarse, el agua se lleva calor y enfría la superficie: un horno seco y uno con humedad cocinan distinto a la misma temperatura. El vapor, al condensarse sobre el alimento, le cede mucho calor, por eso cocina deprisa y quema más que el aire a la misma temperatura.\n\nReducir es evaporar agua para concentrar sabor, sal, gelatina y azúcar. Y la actividad de agua mide cuánta agua está disponible para los microbios: la sal, el azúcar y el secado la bajan, y por eso conservan jamones, mermeladas, salazones y deshidratados.",
+    "base": {
+      "for": "Referencias",
+      "items": [
+        [
+          "Ebullición del agua a nivel del mar",
+          "100 °C"
+        ],
+        [
+          "Superficie húmeda",
+          "no pasa de 100 °C: no dora"
+        ],
+        [
+          "Horno con humedad",
+          "cocina más parejo y seca menos"
+        ],
+        [
+          "Horno seco",
+          "dora y forma costra"
+        ],
+        [
+          "Actividad de agua para la mayoría de bacterias",
+          "por encima de 0,90"
+        ],
+        [
+          "Mermeladas, curados y secos",
+          "actividad de agua baja: se conservan mejor"
+        ]
+      ],
+      "steps": [
+        "Para dorar, seca la superficie.",
+        "Para jugosidad, controla la evaporación: tapa, humedad en el horno o envuelve.",
+        "Para reducir, recipiente ancho y fuego vivo al principio; vigila al final.",
+        "Prueba la sal después de reducir: se concentra.",
+        "Para crujientes duraderos, baja el agua y guarda en seco."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Horno con vapor para pan",
+        "ratio": "Primeros 10–15 minutos",
+        "note": "Luego seco para la corteza."
+      },
+      {
+        "use": "Reducción de un fondo",
+        "ratio": "A la mitad dobla la intensidad",
+        "note": "Y la sal."
+      },
+      {
+        "use": "Deshidratado",
+        "ratio": "50–70 °C, horas",
+        "note": "Hasta que cruja."
+      },
+      {
+        "use": "Cocción al vapor",
+        "ratio": "100 °C en el vapor",
+        "note": "Rápida y húmeda."
+      }
+    ],
+    "variants": [
+      {
+        "id": "reducciones",
+        "name": "Reducciones",
+        "note": "Concentrar por evaporación."
+      },
+      {
+        "id": "deshidratados-y-crujientes",
+        "name": "Deshidratados",
+        "note": "Quitar agua para conservar y crujir."
+      },
+      {
+        "id": "papillote-y-vapor",
+        "name": "Vapor",
+        "note": "El calor del vapor."
+      },
+      {
+        "id": "reaccion-de-maillard",
+        "name": "Dorado",
+        "note": "Solo con superficie seca."
+      }
+    ],
+    "keys": [
+      "Agua en superficie = 100 °C como máximo.",
+      "El vapor cocina deprisa.",
+      "Reducir concentra todo, también la sal.",
+      "Menos agua disponible, mejor conservación.",
+      "Lo crujiente es enemigo de la humedad."
+    ],
+    "errors": [
+      {
+        "p": "No dora",
+        "fix": "Superficie húmeda o recipiente lleno. Seca y separa."
+      },
+      {
+        "p": "Salsa salada tras reducir",
+        "fix": "Salada antes. Sala al final."
+      },
+      {
+        "p": "Crujiente que se ablanda",
+        "fix": "Humedad ambiente o del plato. Guarda en seco y monta al final."
+      }
+    ],
+    "history": "Cocer, hervir y secar son técnicas antiguas que siempre han dependido del agua. Los hornos mixtos, con control de humedad, y el concepto de actividad de agua son aportaciones de la técnica moderna.",
+    "uses": [
+      "Dorados y costras",
+      "Reducciones",
+      "Cocciones al vapor",
+      "Secados y conservas",
+      "Panadería"
+    ],
+    "keep": "No aplica: es un principio. Los productos secos, en recipiente hermético.",
+    "pro": "Aprovecha la humedad del horno según el producto y anota en la ficha si es seco o con vapor.",
+    "related": [
+      "reducciones",
+      "deshidratados-y-crujientes",
+      "papillote-y-vapor",
+      "reaccion-de-maillard",
+      "sal-y-osmosis",
+      "texturas-y-percepcion"
+    ]
+  },
+  {
+    "id": "oxidacion-y-pardeamiento",
+    "name": "Oxidación y pardeamiento de frutas y verduras",
+    "name_en": "Oxidation and browning of fruit and vegetables",
+    "aka": [
+      "oxidación",
+      "pardeamiento enzimático",
+      "se pone negro",
+      "alcachofa negra",
+      "aguacate oxidado",
+      "manzana oscura"
+    ],
+    "cat": "conceptos",
+    "group": "Fundamentos",
+    "summary": "Por qué la manzana, el aguacate, la alcachofa o la patata oscurecen al cortarlas y cómo evitarlo.",
+    "what": "Muchas frutas y verduras tienen una enzima que, al romper las células con el corte y entrar en contacto con el oxígeno, oscurece sus compuestos: es el pardeamiento enzimático. Pasa en manzanas, peras, plátanos, aguacates, alcachofas, patatas, setas o berenjenas. No es peligroso, pero afea y cambia el sabor.\n\nSe frena actuando sobre la enzima o sobre el oxígeno: el ácido (limón, ácido ascórbico) y el frío ralentizan la enzima; el calor de un escaldado la destruye; el agua, el film en contacto o el vacío impiden que llegue el aire. Es distinto del dorado por calor de la [[reaccion-de-maillard|reacción de Maillard]].",
+    "base": {
+      "for": "Formas de frenar el pardeamiento",
+      "items": [
+        [
+          "Ácido",
+          "zumo de limón o ácido ascórbico en agua"
+        ],
+        [
+          "Frío",
+          "trabajar en frío ralentiza la enzima"
+        ],
+        [
+          "Escaldado",
+          "destruye la enzima"
+        ],
+        [
+          "Sin aire",
+          "agua, film en contacto o vacío"
+        ],
+        [
+          "Sal o azúcar",
+          "en almíbar o salmuera, frenan algo"
+        ],
+        [
+          "Cuchillo afilado",
+          "rompe menos células"
+        ]
+      ],
+      "steps": [
+        "Corta con cuchillo afilado y justo antes de usar.",
+        "Pasa los cortes enseguida a agua fría acidulada.",
+        "Si la verdura se va a cocinar, escáldala para fijar el color.",
+        "Para purés y guacamoles, añade ácido y cubre con film en contacto.",
+        "Envasa al vacío lo que tenga que esperar."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Agua acidulada",
+        "ratio": "Zumo de 1 limón por litro",
+        "note": "Alcachofas, manzanas."
+      },
+      {
+        "use": "Ácido ascórbico",
+        "ratio": "1–2 g por litro",
+        "note": "No cambia el sabor como el limón."
+      },
+      {
+        "use": "Escaldado para fijar",
+        "ratio": "30–60 segundos y agua con hielo",
+        "note": "Según pieza."
+      },
+      {
+        "use": "Guacamole",
+        "ratio": "Zumo de 1 lima por 3 aguacates",
+        "note": "Más film en contacto."
+      }
+    ],
+    "variants": [
+      {
+        "id": "alcachofas",
+        "name": "Alcachofas",
+        "note": "Las que más oscurecen."
+      },
+      {
+        "id": "aguacate-y-frutas-tropicales",
+        "name": "Aguacate",
+        "note": "Corte al momento."
+      },
+      {
+        "id": "escaldado-de-verduras",
+        "name": "Escaldado",
+        "note": "Para fijar color."
+      },
+      {
+        "id": "vacio-de-verduras-y-frutas",
+        "name": "Vacío",
+        "note": "Sin aire, sin oxidación."
+      }
+    ],
+    "keys": [
+      "Corte limpio y al momento.",
+      "Ácido y frío frenan; calor detiene.",
+      "Sin aire no hay oxidación.",
+      "El ascórbico protege sin saber a limón.",
+      "No es peligroso, pero se nota en el plato."
+    ],
+    "errors": [
+      {
+        "p": "Alcachofas negras",
+        "fix": "Sin agua acidulada. Pásalas enseguida a agua con limón o perejil y cuécelas pronto."
+      },
+      {
+        "p": "Fruta cortada oscura en el pase",
+        "fix": "Cortada con antelación. Corta al momento o protege con ácido."
+      },
+      {
+        "p": "Puré de manzana gris",
+        "fix": "Oxidado antes de cocer. Cuécelo rápido o con ácido."
+      }
+    ],
+    "history": "Poner las alcachofas en agua con limón o la manzana en agua con sal son trucos de cocina de siempre. La explicación de la enzima responsable es de la bioquímica del siglo XX.",
+    "uses": [
+      "Frutas cortadas",
+      "Alcachofas y setas",
+      "Patatas peladas",
+      "Purés y cremas",
+      "Guacamoles"
+    ],
+    "keep": "Lo cortado, en agua acidulada fría unas horas, o envasado al vacío.",
+    "pro": "Cubetas de agua acidulada fría en la partida de verduras. Corte al pedido de frutas y aguacates.",
+    "related": [
+      "alcachofas",
+      "aguacate-y-frutas-tropicales",
+      "escaldado-de-verduras",
+      "vacio-de-verduras-y-frutas",
+      "citricos",
+      "reaccion-de-maillard"
+    ]
+  },
+  {
+    "id": "texturas-y-percepcion",
+    "name": "Texturas: crujiente, cremoso y jugoso",
+    "name_en": "Textures: crisp, creamy and juicy",
+    "aka": [
+      "textura",
+      "crujiente",
+      "cremoso",
+      "jugoso",
+      "contraste de texturas",
+      "sensación en boca"
+    ],
+    "cat": "conceptos",
+    "group": "Fundamentos",
+    "summary": "Qué hace que algo cruja, que sea cremoso o que esté jugoso, y cómo mantener esas texturas hasta que llegan a la boca.",
+    "what": "La textura se percibe con la boca y también con el oído. Lo crujiente es una estructura seca y rígida que se rompe con sonido: depende de que tenga muy poca agua, y la pierde en cuanto absorbe humedad del aire o del plato. Lo cremoso es una sensación de suavidad continua: suele venir de una [[emulsiones|emulsión]] o de grasas que se funden a la temperatura de la boca. Lo jugoso es la liberación de líquido al masticar: depende de cuánta agua retiene el alimento y de la grasa, que además hace salivar.\n\nUn plato con una sola textura cansa; el contraste (crujiente sobre cremoso, jugoso con algo seco) mantiene el interés en cada bocado. Ver [[contraste-y-equilibrio]].",
+    "base": {
+      "for": "Cómo conseguir y mantener cada textura",
+      "items": [
+        [
+          "Crujiente",
+          "poca agua; montar al final; separar de lo húmedo"
+        ],
+        [
+          "Cremoso",
+          "emulsión fina, grasa fundida, tamizado"
+        ],
+        [
+          "Jugoso",
+          "punto exacto, reposo, sal o salmuera, grasa"
+        ],
+        [
+          "Fundente",
+          "grasas que se funden a 30–35 °C, como la gelatina y algunas mantequillas"
+        ],
+        [
+          "Firme",
+          "proteínas cuajadas o geles"
+        ],
+        [
+          "Contraste",
+          "al menos dos texturas por plato"
+        ]
+      ],
+      "steps": [
+        "Decide qué textura lleva el protagonismo del plato y cuál contrasta.",
+        "Para lo crujiente, seca bien y coloca en el último momento sobre una base que no lo empape.",
+        "Para lo cremoso, tritura fino, emulsiona y pasa por colador.",
+        "Para lo jugoso, controla el punto y el reposo.",
+        "Prueba el plato entero, en un bocado con todo."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Crujiente en el plato",
+        "ratio": "Colocado al final",
+        "note": "Sobre algo seco o graso."
+      },
+      {
+        "use": "Puré cremoso",
+        "ratio": "15–25 % de grasa sobre el peso",
+        "note": "Según el producto."
+      },
+      {
+        "use": "Carne jugosa",
+        "ratio": "Sacar 3–5 °C antes del punto",
+        "note": "Y reposar."
+      },
+      {
+        "use": "Contraste",
+        "ratio": "1 elemento crujiente por plato blando",
+        "note": ""
+      }
+    ],
+    "variants": [
+      {
+        "id": "deshidratados-y-crujientes",
+        "name": "Crujientes",
+        "note": "Cómo hacerlos."
+      },
+      {
+        "id": "pures-de-verdura",
+        "name": "Purés",
+        "note": "Cremosidad."
+      },
+      {
+        "id": "contraste-y-equilibrio",
+        "name": "Contraste",
+        "note": "Equilibrio en el plato."
+      },
+      {
+        "id": "reposos-y-regeneracion",
+        "name": "Reposo",
+        "note": "Jugosidad."
+      }
+    ],
+    "keys": [
+      "La humedad mata lo crujiente.",
+      "La grasa que se funde en boca da cremosidad.",
+      "La jugosidad se decide en el punto y el reposo.",
+      "Contraste en cada bocado.",
+      "La temperatura cambia la textura."
+    ],
+    "errors": [
+      {
+        "p": "Crujiente blando al llegar a la mesa",
+        "fix": "Colocado antes o sobre algo húmedo. Al final y con barrera."
+      },
+      {
+        "p": "Puré granuloso",
+        "fix": "Mal triturado o sin colar. Tritura en caliente y cuela fino."
+      },
+      {
+        "p": "Plato monótono",
+        "fix": "Una sola textura. Añade un crujiente o un elemento fresco."
+      }
+    ],
+    "history": "La cocina tradicional siempre ha combinado texturas, como la miga y la corteza del pan. La cocina moderna ha hecho de la textura un objeto de estudio y de creación.",
+    "uses": [
+      "Diseño de platos",
+      "Acabados crujientes",
+      "Purés y salsas",
+      "Puntos de carne y pescado"
+    ],
+    "keep": "Crujientes, en recipiente hermético con desecante; cremosos, en frío y con film en contacto.",
+    "pro": "En la ficha de cada plato, anota la textura de cada elemento y en qué momento se monta.",
+    "related": [
+      "deshidratados-y-crujientes",
+      "pures-de-verdura",
+      "contraste-y-equilibrio",
+      "emulsiones",
+      "reposos-y-regeneracion",
+      "construir-un-plato"
+    ]
+  },
+  {
+    "id": "temperatura-de-servicio",
+    "name": "Temperatura de servicio y percepción del sabor",
+    "name_en": "Serving temperature and flavour perception",
+    "aka": [
+      "temperatura del plato",
+      "servir caliente",
+      "servir frío",
+      "plato caliente",
+      "sabor y temperatura"
+    ],
+    "cat": "conceptos",
+    "group": "Fundamentos",
+    "summary": "El mismo plato sabe distinto frío, templado o muy caliente: la temperatura cambia el dulzor, el aroma, la textura y la sal.",
+    "what": "La temperatura a la que llega un plato cambia cómo se percibe. En frío, los aromas se liberan menos y el dulzor se nota menos: por eso un helado necesita más azúcar que la misma crema caliente, y un gazpacho se corrige de sal y vinagre ya frío. Las grasas se endurecen en frío y se funden en caliente, y eso cambia la sensación en boca. Muy caliente, por encima de lo que la boca tolera con comodidad, el sabor se percibe peor.\n\nPor eso un plato se prueba y se corrige a la temperatura a la que se va a servir, y el plato o el recipiente forman parte de la cocción: un plato frío enfría una carne en segundos y uno caliente derrite un helado.",
+    "base": {
+      "for": "Referencias de servicio",
+      "items": [
+        [
+          "Platos calientes al llegar a la mesa",
+          "60–70 °C"
+        ],
+        [
+          "Platos calentados para servir caliente",
+          "50–60 °C"
+        ],
+        [
+          "Platos templados",
+          "40–50 °C"
+        ],
+        [
+          "Crudos y fríos",
+          "6–10 °C"
+        ],
+        [
+          "Quesos y embutidos",
+          "16–18 °C"
+        ],
+        [
+          "Helados",
+          "-12 a -14 °C al servir"
+        ]
+      ],
+      "steps": [
+        "Decide la temperatura de cada elemento del plato.",
+        "Calienta o enfría el plato según lo que lleve.",
+        "Prueba y corrige sal, ácido y dulce a la temperatura de servicio.",
+        "Saca de la cámara con tiempo lo que se sirve atemperado.",
+        "Ordena el emplatado para que lo más sensible al calor vaya al final."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Plato caliente en mesa",
+        "ratio": "60–70 °C",
+        "note": "Plato precalentado."
+      },
+      {
+        "use": "Crudo de pescado",
+        "ratio": "6–8 °C",
+        "note": "Frío, no helado."
+      },
+      {
+        "use": "Queso",
+        "ratio": "16–18 °C",
+        "note": "Sacar 1 hora antes."
+      },
+      {
+        "use": "Helado",
+        "ratio": "-12 a -14 °C",
+        "note": "Atemperar en el congelador de servicio."
+      }
+    ],
+    "variants": [
+      {
+        "id": "emplatado",
+        "name": "Emplatado",
+        "note": "Orden y momento."
+      },
+      {
+        "id": "texturas-y-percepcion",
+        "name": "Texturas",
+        "note": "La temperatura cambia la textura."
+      },
+      {
+        "id": "helados-y-sorbetes",
+        "name": "Helados",
+        "note": "Más azúcar por el frío."
+      },
+      {
+        "id": "quesos-de-las-islas",
+        "name": "Quesos",
+        "note": "Siempre atemperados."
+      }
+    ],
+    "keys": [
+      "Corrige el sazonado a la temperatura de servicio.",
+      "El frío apaga dulzor y aroma.",
+      "El plato es parte de la temperatura.",
+      "Lo muy caliente también apaga el sabor.",
+      "Cada elemento del plato, su temperatura."
+    ],
+    "errors": [
+      {
+        "p": "Plato frío soso",
+        "fix": "Sazonado en caliente. Corrige ya frío."
+      },
+      {
+        "p": "Carne tibia en la mesa",
+        "fix": "Plato frío. Precalienta los platos."
+      },
+      {
+        "p": "Helado duro o derretido",
+        "fix": "Temperatura del congelador de servicio o plato caliente. Atempera y usa plato frío."
+      }
+    ],
+    "history": "La importancia de servir cada cosa a su temperatura es de siempre en la cocina de restaurante. Los estudios sobre cómo la temperatura cambia la percepción del gusto y el aroma son más recientes.",
+    "uses": [
+      "Diseño de platos",
+      "Pase y emplatado",
+      "Postres helados",
+      "Quesos y crudos"
+    ],
+    "keep": "No aplica: es un principio.",
+    "pro": "Calentador de platos y zona de platos fríos en el pase. Termómetro también para comprobar platos fuera.",
+    "related": [
+      "emplatado",
+      "texturas-y-percepcion",
+      "helados-y-sorbetes",
+      "quesos-de-las-islas",
+      "reposos-y-regeneracion",
+      "construir-un-plato"
+    ]
   }
 ]

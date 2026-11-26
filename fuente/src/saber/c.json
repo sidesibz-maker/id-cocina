@@ -4801,5 +4801,650 @@
       "espumas-con-sifon",
       "emulsiones"
     ]
+  },
+  {
+    "id": "caldo-de-cocido-y-jamon",
+    "name": "Caldo de cocido y de jamón",
+    "aka": [
+      "caldo de cocido",
+      "caldo de puchero",
+      "caldo de jamon",
+      "caldo de huesos de jamon",
+      "sopa de cocido",
+      "caldo de olla"
+    ],
+    "cat": "fondos",
+    "group": "Fondos claros",
+    "summary": "Caldos de olla tradicionales: el del cocido, con carnes, huesos, garbanzo y verdura, y el de huesos de jamón, salado y profundo, para sopas, arroces y legumbres.",
+    "what": "El caldo de cocido sale de cocer juntos, despacio, carnes de guiso (morcillo, gallina), huesos con tuétano, un hueso de jamón, tocino, garbanzos y verdura. Es más sabroso y graso que un [[fondo-blanco]] y se toma como sopa con fideos o se usa para arroces y guisos. El caldo de jamón se hace solo con huesos y recortes de jamón curado: da un fondo salado y muy aromático que en poca cantidad refuerza consomés, legumbres o arroces. En las islas, los guisos de olla con carnes y embutidos de la matanza dan caldos parecidos.",
+    "base": {
+      "for": "4 l aprox. de caldo de cocido",
+      "items": [
+        [
+          "Morcillo o jarrete de vacuno",
+          "1 kg"
+        ],
+        [
+          "Gallina o muslos de pollo",
+          "1 kg"
+        ],
+        [
+          "Hueso de rodilla o caña con tuétano",
+          "500 g"
+        ],
+        [
+          "Hueso o punta de jamón",
+          "300 g"
+        ],
+        [
+          "Tocino fresco o panceta",
+          "150 g"
+        ],
+        [
+          "Garbanzos remojados 12 horas",
+          "300 g"
+        ],
+        [
+          "Zanahoria, puerro y apio",
+          "400 g en total"
+        ],
+        [
+          "Cebolla con un clavo",
+          "1"
+        ],
+        [
+          "Agua fría",
+          "6 l"
+        ]
+      ],
+      "steps": [
+        "Blanquea los huesos y el hueso de jamón: cúbrelos con agua fría, lleva a hervor, escurre y lava.",
+        "Pon las carnes y los huesos en la olla con el agua fría y lleva a hervor suave, desespumando.",
+        "Añade los garbanzos en una red cuando el agua esté caliente.",
+        "Cuece a fuego muy suave 2,5–3 horas; añade la verdura la última hora.",
+        "Cuela el caldo, prueba de sal (el jamón ya sala) y desgrasa en frío si lo quieres más limpio."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Caldo de cocido para sopa",
+        "ratio": "2,5 kg de carnes y huesos por 6 l de agua, 2,5–3 h",
+        "note": "Hervor muy suave."
+      },
+      {
+        "use": "Caldo de jamón",
+        "ratio": "1 kg de huesos de jamón blanqueados por 4 l de agua, 2–3 h a 90–95 °C",
+        "note": "Más tiempo y la grasa da sabor a rancio."
+      },
+      {
+        "use": "Refuerzo de un consomé o legumbre",
+        "ratio": "10–20 % de caldo de jamón sobre el total",
+        "note": "Ojo con la sal."
+      },
+      {
+        "use": "Arroz caldoso o meloso de carne",
+        "ratio": "Caldo de cocido desgrasado y algo reducido",
+        "note": "Más sabor que un fondo blanco."
+      }
+    ],
+    "variants": [
+      {
+        "id": "fondo-blanco",
+        "name": "Fondo blanco de ave",
+        "note": "Más limpio y neutro; base de salsas."
+      },
+      {
+        "id": "consome",
+        "name": "Consomé",
+        "note": "El caldo clarificado; el de jamón le da un fondo muy aromático."
+      },
+      {
+        "id": "legumbres",
+        "name": "Potajes y legumbres",
+        "note": "Donde el caldo de cocido y el de jamón brillan."
+      }
+    ],
+    "keys": [
+      "Blanquea los huesos y el jamón: caldo más limpio y menos salado.",
+      "Hervor muy suave: si hierve fuerte, se enturbia y la carne se seca.",
+      "Prueba de sal al final; con jamón casi no hace falta.",
+      "La verdura, la última hora, para que no se deshaga.",
+      "Aprovecha la carne del cocido: croquetas, ropa vieja, rellenos."
+    ],
+    "errors": [
+      {
+        "p": "Caldo salado",
+        "fix": "Jamón sin blanquear o demasiado. Diluye con agua o fondo blanco."
+      },
+      {
+        "p": "Sabor rancio",
+        "fix": "Grasa de jamón vieja o cocción muy larga. Quita la grasa amarilla y no pases de 3 horas."
+      },
+      {
+        "p": "Turbio",
+        "fix": "Hervor fuerte. Cuece al mínimo y cuela sin apretar."
+      }
+    ],
+    "history": "Los cocidos y potes de olla, con sus caldos, existen en casi todas las regiones de España. Los huesos de jamón se han usado siempre para dar sabor a caldos, legumbres y sopas.",
+    "uses": [
+      "Sopa de fideos o de pan",
+      "Arroces de carne",
+      "Potajes y legumbres",
+      "Consomés",
+      "Croquetas y rellenos con la carne del cocido"
+    ],
+    "keep": "Abatir de 60 °C a menos de 10 °C en menos de 2 horas. En cámara a 0–4 °C, 3 días; congelado, 3 meses.",
+    "pro": "Guarda los huesos y puntas de jamón congelados para hacer caldo de jamón en tanda. Porciona en bolsas de 1 l y etiqueta si está desgrasado o no.",
+    "related": [
+      "fondo-blanco",
+      "consome",
+      "legumbres",
+      "guisos-largos",
+      "sobrasada-y-embutidos",
+      "desalado-y-remojo"
+    ]
+  },
+  {
+    "id": "fondo-de-raices",
+    "name": "Caldo de verduras de raíz",
+    "aka": [
+      "caldo de raices",
+      "fondo de raices",
+      "caldo de chirivia",
+      "caldo de apionabo",
+      "caldo de invierno"
+    ],
+    "cat": "fondos",
+    "group": "Fondos claros",
+    "summary": "Caldo dulce y terroso de chirivía, apionabo, nabo, zanahoria y tupinambo, para cremas, risottos y platos de raíz en invierno.",
+    "what": "Las raíces tienen más azúcar y almidón que las verduras de hoja y dan un caldo con más cuerpo y un dulzor terroso. Se puede hacer con las pieles y recortes limpios de la partida. Asar la mitad de las raíces le da profundidad sin oscurecerlo tanto como el [[caldo-de-verduras-tostadas]]. Es la base natural de cremas y purés de raíz, risottos de invierno y glaseados de verduras.",
+    "base": {
+      "for": "3 l aprox.",
+      "items": [
+        [
+          "Chirivía, apionabo, nabo y tupinambo (y sus pieles limpias)",
+          "1,5 kg"
+        ],
+        [
+          "Zanahoria",
+          "300 g"
+        ],
+        [
+          "Cebolla",
+          "300 g"
+        ],
+        [
+          "Puerro",
+          "200 g"
+        ],
+        [
+          "Ajo",
+          "3 dientes"
+        ],
+        [
+          "Aceite de oliva",
+          "40 ml"
+        ],
+        [
+          "Agua fría",
+          "4 l"
+        ],
+        [
+          "Tomillo, laurel y pimienta en grano",
+          "al gusto"
+        ],
+        [
+          "Piel de naranja (opcional)",
+          "1 tira"
+        ]
+      ],
+      "steps": [
+        "Asa la mitad de las raíces en trozos con el aceite a 200 °C, 30–35 minutos, hasta que estén doradas.",
+        "Pon el resto de las verduras en la olla con el agua fría y las raíces asadas; desglasa la bandeja con un poco de agua y añádela.",
+        "Lleva a hervor y cuece a 90–95 °C, 45–60 minutos.",
+        "Añade las hierbas y la piel de naranja los últimos 10 minutos.",
+        "Cuela sin apretar."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Caldo para cremas y risottos",
+        "ratio": "1 kg de raíces por 2 l de agua",
+        "note": "45–60 minutos a 90–95 °C."
+      },
+      {
+        "use": "Jugo de raíces para glasear",
+        "ratio": "Caldo reducido a 1/5 y montado con mantequilla",
+        "note": "Brillante y dulce; compensar con un punto ácido."
+      },
+      {
+        "use": "Caldo ligero",
+        "ratio": "Sin asar, solo con pieles y recortes",
+        "note": "Más claro y suave."
+      }
+    ],
+    "variants": [
+      {
+        "id": "caldo-de-verduras",
+        "name": "Caldo de verduras",
+        "note": "Más aromático y ligero, de verduras de hoja y tallo."
+      },
+      {
+        "id": "caldo-de-verduras-tostadas",
+        "name": "Caldo de verduras tostadas",
+        "note": "Más oscuro y profundo."
+      },
+      {
+        "id": "caldo-de-setas",
+        "name": "Caldo de setas",
+        "note": "Combina muy bien con las raíces en invierno."
+      }
+    ],
+    "keys": [
+      "Mezcla raíces: cada una aporta un matiz (anís en la chirivía, apio en el apionabo).",
+      "Las pieles bien lavadas dan mucho sabor.",
+      "Remolacha solo si quieres el caldo rojo: tiñe todo.",
+      "Un punto ácido al usarlo equilibra el dulzor.",
+      "Sin sal: se reduce y se usa en otras elaboraciones."
+    ],
+    "errors": [
+      {
+        "p": "Caldo dulce y plano",
+        "fix": "Demasiada zanahoria o sin aromáticos. Equilibra con cebolla, apio, hierbas y un ácido al final."
+      },
+      {
+        "p": "Turbio y espeso",
+        "fix": "Raíces deshechas por hervor fuerte. Cuece suave y cuela sin apretar."
+      },
+      {
+        "p": "Sabor a tierra",
+        "fix": "Pieles mal lavadas. Cepilla bien antes de usarlas."
+      }
+    ],
+    "history": "Los caldos de verduras de invierno, con nabos y raíces, son tradicionales en las cocinas del norte de Europa y de las zonas frías de España. La cocina vegetal actual los ha recuperado.",
+    "uses": [
+      "Cremas y purés de raíz",
+      "Risottos y arroces de invierno",
+      "Glasear verduras",
+      "Guisos de legumbre"
+    ],
+    "keep": "Abatir de 60 °C a menos de 10 °C en menos de 2 horas. En cámara a 0–4 °C, 4–5 días; congelado, 3 meses.",
+    "pro": "Guarda pieles y recortes de raíces limpios congelados en una bolsa durante la semana y haz el caldo con ellos.",
+    "related": [
+      "caldo-de-verduras",
+      "caldo-de-verduras-tostadas",
+      "pures-de-verdura",
+      "glaseado-de-verduras",
+      "cocina-de-aprovechamiento"
+    ]
+  },
+  {
+    "id": "aguas-clarificadas",
+    "name": "Aguas de vegetación clarificadas",
+    "aka": [
+      "agua de pepino",
+      "agua de apio",
+      "agua de tomate clarificada",
+      "agua de melon",
+      "aguas vegetales",
+      "clarificacion por congelacion"
+    ],
+    "cat": "bases",
+    "group": "Jugos y glasas",
+    "summary": "Licuados de pepino, apio, tomate o melón clarificados hasta quedar transparentes: líquidos limpios y aromáticos para caldos fríos, aliños, geles y bebidas.",
+    "what": "Al licuar o triturar una verdura o fruta acuosa se obtiene un líquido turbio con mucho sabor. Clarificándolo se separa la pulpa y queda un agua casi transparente con todo el aroma. Hay tres métodos: dejarlo gotear en un paño en frío (lento y suave), cuajarlo con un poco de gelatina, congelarlo y dejarlo descongelar sobre un paño (el gel retiene la pulpa y deja pasar el agua limpia), o cuajarlo con agar, romperlo y colarlo (rápido). La [[clarificacion]] tiene los fundamentos; el agua de tomate por goteo está en [[jugos-de-verdura]].",
+    "base": {
+      "for": "unos 600 ml de agua de pepino clarificada",
+      "items": [
+        [
+          "Pepino lavado, con piel",
+          "1,2 kg"
+        ],
+        [
+          "Sal",
+          "4 g"
+        ],
+        [
+          "Gelatina en hojas (método de congelación)",
+          "5 g"
+        ],
+        [
+          "Zumo de lima o limón",
+          "unas gotas"
+        ]
+      ],
+      "steps": [
+        "Tritura el pepino con la sal y cuela por un colador fino.",
+        "Calienta una pequeña parte del líquido a 60 °C, disuelve la gelatina hidratada y mezcla con el resto.",
+        "Deja cuajar en frío en una bandeja y congela por completo.",
+        "Pon el bloque congelado sobre un paño fino o estameña dentro de un colador, sobre un recipiente, y deja descongelar en cámara a 2–4 °C, 24 horas.",
+        "El líquido que cae es transparente. Ajusta con sal y unas gotas de ácido."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Clarificación por gelatina y congelación",
+        "ratio": "5 g de gelatina por litro",
+        "note": "Descongelar en frío 24 h sobre paño."
+      },
+      {
+        "use": "Clarificación rápida con agar",
+        "ratio": "1–2 g de agar por litro, hervido, cuajado y colado tras romperlo",
+        "note": "En 1–2 horas; algo menos transparente."
+      },
+      {
+        "use": "Goteo en paño",
+        "ratio": "Licuado colgado en paño fino 12 h a 2–4 °C",
+        "note": "El más suave; turbio si se aprieta."
+      },
+      {
+        "use": "Rendimiento",
+        "ratio": "50–60 % del licuado",
+        "note": "Según la verdura y el método."
+      }
+    ],
+    "variants": [
+      {
+        "id": "jugos-de-verdura",
+        "name": "Agua de tomate por goteo",
+        "note": "Tomate triturado con sal y colgado en paño."
+      },
+      {
+        "id": "consome",
+        "name": "Consomé",
+        "note": "La clarificación clásica de un caldo, con claras."
+      },
+      {
+        "id": "maridaje-sin-alcohol",
+        "name": "Aguas para bebidas",
+        "note": "Base de cócteles y maridajes sin alcohol."
+      }
+    ],
+    "keys": [
+      "Nunca aprietes el paño: la pulpa pasa y se enturbia.",
+      "Todo en frío para conservar aroma y color.",
+      "Sazona después de clarificar: la sal se concentra en el líquido.",
+      "El método de congelación es el más limpio pero necesita un día.",
+      "La pulpa que queda sirve para sopas frías o aliños."
+    ],
+    "errors": [
+      {
+        "p": "Agua turbia",
+        "fix": "Paño apretado o roto. Deja gotear sin tocar y usa paño más fino."
+      },
+      {
+        "p": "Sabor plano",
+        "fix": "Verdura poco madura o sin sal. Usa producto en su punto y sazona al final."
+      },
+      {
+        "p": "Se oxida y cambia de color",
+        "fix": "Demasiado tiempo a temperatura ambiente. Trabaja en frío y añade unas gotas de ácido."
+      }
+    ],
+    "history": "La clarificación de caldos es antigua en la cocina clásica; la clarificación de aguas vegetales con gelatina y congelación se popularizó en la cocina de investigación de las últimas décadas.",
+    "uses": [
+      "Caldos fríos y sopas transparentes",
+      "Aliños para crudos y ostras",
+      "Geles y granizados salados",
+      "Bebidas y maridaje sin alcohol",
+      "Escarchados y helados de verdura"
+    ],
+    "keep": "En frío y cerrado, 2–3 días. Congelada, 2 meses.",
+    "pro": "Clarifica en tanda en temporada alta de tomate, pepino o melón y congela en porciones. Sirve muy frío.",
+    "related": [
+      "clarificacion",
+      "jugos-de-verdura",
+      "gelificantes-y-espesantes",
+      "maridaje-sin-alcohol",
+      "tomate",
+      "melon-y-sandia"
+    ]
+  },
+  {
+    "id": "leches-vegetales",
+    "name": "Leches vegetales caseras",
+    "aka": [
+      "leche de almendra",
+      "leche de avena",
+      "bebida vegetal",
+      "leche de coco casera",
+      "leche de soja casera",
+      "horchata",
+      "leche de avellana"
+    ],
+    "cat": "bases",
+    "group": "Bases",
+    "summary": "Leches de frutos secos, cereales, semillas y coco hechas en cocina: cómo triturar, colar y cocinar cada una para usarlas en cremas, salsas, postres y bebidas.",
+    "what": "Una leche vegetal es una emulsión de agua con la grasa y la proteína de un fruto seco, un cereal o una semilla, triturados y colados. Las de frutos secos (almendra, avellana, anacardo) son las más grasas y sabrosas, y la base del [[menjar-blanc]] y del ajoblanco. La de avena es más ligera y se vuelve viscosa si se calienta o se tritura demasiado. La de soja se tiene que cocer. La de coco se hace con la pulpa rallada y agua caliente. Lo que queda en el paño se aprovecha.",
+    "base": {
+      "for": "1 l de leche de almendra",
+      "items": [
+        [
+          "Almendra cruda pelada",
+          "200–250 g"
+        ],
+        [
+          "Agua fría (más la del remojo, que se tira)",
+          "1 l"
+        ],
+        [
+          "Sal",
+          "una pizca"
+        ],
+        [
+          "Azúcar, miel o dátiles (opcional)",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Remoja la almendra en agua 8–12 horas en frío y escurre.",
+        "Tritura con el litro de agua fría en vaso potente 2–3 minutos.",
+        "Cuela por estameña o bolsa de tela, exprimiendo bien.",
+        "Añade la sal y el endulzante si lo quieres.",
+        "Guarda en frío y agita antes de usar: se separa."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Leche de frutos secos",
+        "ratio": "200–250 g por litro",
+        "note": "Más fruto seco, más cremosa."
+      },
+      {
+        "use": "Leche de avena",
+        "ratio": "80–100 g de copos por litro de agua muy fría, triturar 20–30 segundos",
+        "note": "Sin remojo ni calor: si no, queda viscosa."
+      },
+      {
+        "use": "Leche de soja",
+        "ratio": "150 g de soja seca remojada por litro, triturada, colada y hervida 15–20 minutos",
+        "note": "La cocción es necesaria."
+      },
+      {
+        "use": "Leche de coco",
+        "ratio": "1 coco rallado (unos 300 g de pulpa) con 500 ml de agua a 70–80 °C",
+        "note": "Exprimir; la primera presión es la más grasa."
+      }
+    ],
+    "variants": [
+      {
+        "id": "menjar-blanc",
+        "name": "Menjar blanc",
+        "note": "Leche de almendra espesada; el postre tradicional."
+      },
+      {
+        "id": "ajoblanco",
+        "name": "Ajoblanco",
+        "note": "Leche de almendra salada con ajo, pan y vinagre."
+      },
+      {
+        "id": null,
+        "name": "Horchata de chufa",
+        "note": "Chufa remojada, triturada con agua y azúcar y colada; se sirve muy fría."
+      }
+    ],
+    "keys": [
+      "Remojo de frutos secos: más rendimiento y textura más fina.",
+      "Exprime bien el paño: la grasa está en la pulpa.",
+      "Avena en frío y poco triturada.",
+      "Soja siempre cocida.",
+      "La pulpa sobrante sirve para galletas, crumbles o masas."
+    ],
+    "errors": [
+      {
+        "p": "Leche aguada",
+        "fix": "Poco fruto seco o mal exprimida. Sube la proporción y aprieta al colar."
+      },
+      {
+        "p": "Avena viscosa",
+        "fix": "Triturada demasiado o con agua caliente. Agua helada y 20–30 segundos."
+      },
+      {
+        "p": "Se corta al calentar",
+        "fix": "Ácido en la receta o calor brusco. Calienta suave y añade el ácido al final."
+      }
+    ],
+    "history": "La leche de almendra se usaba en la cocina medieval europea en días de abstinencia, y la horchata de chufa es una bebida tradicional valenciana. Hoy las leches vegetales se usan mucho en cocina sin lácteos.",
+    "uses": [
+      "Postres sin lácteos",
+      "Cremas y salsas frías",
+      "Bebidas y horchatas",
+      "Panna cotta y helados vegetales",
+      "Ajoblanco y sopas frías"
+    ],
+    "keep": "En frío y cerrada, 2–3 días. La de soja cocida, 4 días. Congelada, 1 mes (puede separarse al descongelar).",
+    "pro": "Hazla el día antes de usarla. Para cocinar, mejor sin endulzar: se endulza en cada receta.",
+    "related": [
+      "menjar-blanc",
+      "ajoblanco",
+      "almendra",
+      "frutos-secos",
+      "soja-y-derivados",
+      "coco",
+      "postres-sin-gluten-y-lacteos"
+    ]
+  },
+  {
+    "id": "gelatinas-saladas",
+    "name": "Gelatinas saladas y aspic",
+    "aka": [
+      "aspic",
+      "gelatina de consome",
+      "gelee",
+      "gelatina de jamon",
+      "gelatina de tomate",
+      "gel caliente",
+      "glaseado de gelatina"
+    ],
+    "cat": "bases",
+    "group": "Bases",
+    "summary": "Caldos, consomés y jugos cuajados con gelatina o agar: para cubrir y unir terrinas, cortar en dados, glasear piezas frías o servir como gel caliente.",
+    "what": "Un caldo bien hecho y clarificado cuajado con gelatina da un aspic: brillante, transparente y con todo el sabor. Se usa para unir y sellar [[prensados-y-terrinas|terrinas]], para glasear piezas frías, en dados como acompañamiento o como capa de un aperitivo. La gelatina se funde en boca y da una textura agradable; el agar aguanta el calor y permite servir geles templados. El sabor del líquido debe estar algo más marcado que en caliente, porque el frío lo apaga.",
+    "base": {
+      "for": "1 l de aspic de consomé",
+      "items": [
+        [
+          "Consomé de ave, de pescado o de verdura bien clarificado",
+          "1 l"
+        ],
+        [
+          "Gelatina en hojas",
+          "15–25 g según el uso"
+        ],
+        [
+          "Vino de Jerez o de Oporto (opcional)",
+          "30 ml"
+        ],
+        [
+          "Sal",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Hidrata la gelatina en agua fría 5 minutos.",
+        "Calienta el consomé a 60–70 °C, sin hervir, sazona algo más de lo normal y añade el vino.",
+        "Escurre la gelatina y disuélvela en el consomé caliente.",
+        "Enfría sobre hielo removiendo con suavidad hasta que empiece a espesar (unos 25 °C) si vas a glasear o cubrir.",
+        "Viértelo en el molde, sobre la terrina o sobre la pieza fría, y deja cuajar en cámara."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Glasear piezas frías",
+        "ratio": "12–15 g de gelatina por litro",
+        "note": "Capas finas a 25 °C sobre producto muy frío."
+      },
+      {
+        "use": "Aspic para unir terrinas",
+        "ratio": "20–25 g de gelatina por litro",
+        "note": "Se sostiene al cortar."
+      },
+      {
+        "use": "Dados de gelatina para guarnición",
+        "ratio": "25–30 g de gelatina por litro",
+        "note": "Cortar en frío con cuchillo húmedo."
+      },
+      {
+        "use": "Gel caliente con agar",
+        "ratio": "5–8 g de agar por litro, hervido 1 minuto",
+        "note": "Aguanta hasta unos 80 °C; se sirve templado."
+      }
+    ],
+    "variants": [
+      {
+        "id": "consome",
+        "name": "Consomé",
+        "note": "El líquido base más habitual."
+      },
+      {
+        "id": "gelificantes-y-espesantes",
+        "name": "Gelificantes",
+        "note": "Cómo elegir y dosificar gelatina, agar y otros."
+      },
+      {
+        "id": "aguas-clarificadas",
+        "name": "Gelatina de agua de tomate o pepino",
+        "note": "Aspic vegetal fresco para crudos y aperitivos."
+      }
+    ],
+    "keys": [
+      "Líquido muy limpio: un aspic turbio no luce.",
+      "Sazona un punto más: el frío apaga sal y aroma.",
+      "Gelatina disuelta a 60–70 °C, nunca hervida.",
+      "Para glasear, aspic a punto de cuajar sobre producto muy frío.",
+      "Agar si el gel va a estar templado o en la sala mucho rato."
+    ],
+    "errors": [
+      {
+        "p": "Aspic gomoso",
+        "fix": "Demasiada gelatina. Baja la dosis al mínimo que sostenga."
+      },
+      {
+        "p": "No cuaja",
+        "fix": "Gelatina hervida o insuficiente, o ingredientes con enzimas (piña, kiwi). Rehaz con la dosis correcta."
+      },
+      {
+        "p": "Turbio",
+        "fix": "Caldo mal clarificado o removido con fuerza al enfriar. Clarifica y enfría con suavidad."
+      }
+    ],
+    "history": "Los aspics fueron una pieza central de la cocina clásica europea, sobre todo en los buffets fríos. La cocina actual los usa con menos gelatina y más ligeros, y ha incorporado el agar para geles calientes.",
+    "uses": [
+      "Terrinas y prensados",
+      "Aperitivos de gelatina de consomé o tomate",
+      "Glaseado de piezas frías",
+      "Dados de gelatina para acompañar patés",
+      "Geles templados de caldo"
+    ],
+    "keep": "En frío y tapado, 3–4 días. No se congela bien la gelatina (pierde agua al descongelar).",
+    "pro": "Ten el consomé clarificado congelado y prepara el aspic el día antes. Corta los dados o láminas en frío y guárdalos en bandeja con papel.",
+    "related": [
+      "consome",
+      "gelificantes-y-espesantes",
+      "prensados-y-terrinas",
+      "clarificacion",
+      "glace",
+      "aguas-clarificadas"
+    ]
   }
 ]

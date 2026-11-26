@@ -5441,5 +5441,1488 @@
    "mantequilla-noisette",
    "salazones-y-huevas"
   ]
+ },
+ {
+  "id": "tiramisu-y-mascarpone",
+  "name": "Tiramisú y postres de mascarpone",
+  "name_en": "Tiramisu and mascarpone desserts",
+  "cat": "dulce",
+  "group": "Cremas",
+  "aka": [
+   "tiramisu",
+   "crema de mascarpone",
+   "mascarpone",
+   "postre de cafe",
+   "crema de queso y cafe"
+  ],
+  "summary": "Crema de mascarpone, yema y azúcar con bizcocho empapado en café: un postre de capas sin horno, y la crema como base de otros postres de cuchara.",
+  "what": "El tiramisú alterna bizcochos de soletilla mojados en café con una crema de mascarpone aligerada con yema batida y, según la casa, nata semimontada o claras montadas. Se monta en frío y gana con unas horas de reposo, cuando el bizcocho se ablanda y la crema asienta. La crema de mascarpone sirve también sola: con fruta, con cítricos o con chocolate. Para no usar yema cruda en restaurante, se hace una base de yema cocida con almíbar.",
+  "base": {
+   "for": "una bandeja de 25 × 30 cm (12 raciones)",
+   "items": [
+    [
+     "Mascarpone frío",
+     "500 g"
+    ],
+    [
+     "Yemas pasteurizadas",
+     "100 g (5)"
+    ],
+    [
+     "Azúcar",
+     "100 g"
+    ],
+    [
+     "Agua (para el almíbar)",
+     "30 g"
+    ],
+    [
+     "Nata 35 % semimontada",
+     "250 g"
+    ],
+    [
+     "Bizcochos de soletilla",
+     "300 g"
+    ],
+    [
+     "Café espresso frío",
+     "400 ml"
+    ],
+    [
+     "Licor (opcional)",
+     "40 ml"
+    ],
+    [
+     "Cacao en polvo",
+     "para cubrir"
+    ]
+   ],
+   "steps": [
+    "Cuece el azúcar con el agua hasta 118–121 °C y viértelo en hilo sobre las yemas mientras las bates; sigue batiendo hasta que la mezcla esté fría, blanca y espesa.",
+    "Afloja el mascarpone con una varilla y mézclalo con la yema batida sin batir de más.",
+    "Incorpora la nata semimontada con lengua.",
+    "Moja los bizcochos en el café con el licor, solo un segundo por cada lado, y cubre el fondo de la bandeja.",
+    "Cubre con la mitad de la crema, otra capa de bizcochos y el resto de crema. Alisa.",
+    "Deja reposar en frío al menos 6 horas y cubre con cacao tamizado al servir."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Crema de mascarpone",
+    "ratio": "500 g de mascarpone, 100 g de yema y 100 g de azúcar, con 200–250 g de nata",
+    "note": "Almíbar a 118–121 °C sobre la yema."
+   },
+   {
+    "use": "Mojado del bizcocho",
+    "ratio": "1–2 segundos por lado",
+    "note": "Más tiempo y la base se convierte en papilla."
+   },
+   {
+    "use": "Reposo",
+    "ratio": "6–12 horas en frío",
+    "note": "Mejor del día anterior."
+   },
+   {
+    "use": "En vaso",
+    "ratio": "60 g de crema y 25 g de bizcocho por ración",
+    "note": "Se monta en vaso y se sirve al día siguiente."
+   }
+  ],
+  "variants": [
+   {
+    "id": "mousses-y-cremosos",
+    "name": "Mousse de mascarpone",
+    "note": "Con gelatina, para desmoldar en capas."
+   },
+   {
+    "id": "frutos-rojos-y-fruta-de-hueso",
+    "name": "Tiramisú de fruta",
+    "note": "Con frutos rojos o melocotón y su jugo en vez de café."
+   },
+   {
+    "id": "cafe-y-te-en-cocina",
+    "name": "Tiramisú de té o de infusión",
+    "note": "El bizcocho se moja en té frío, café de algarroba o infusión."
+   }
+  ],
+  "keys": [
+   "Mascarpone frío y sin batir de más: se corta y queda granuloso.",
+   "Yemas cocidas con almíbar: más estable y seguro en cocina profesional.",
+   "Mojado rápido del bizcocho; se termina de empapar con la crema.",
+   "Reposo largo antes de servir.",
+   "Cacao al final, tamizado: si se pone antes, se humedece."
+  ],
+  "errors": [
+   {
+    "p": "Crema cortada o con grumos",
+    "fix": "Mascarpone batido de más o caliente. Mezcla en frío con varilla suave."
+   },
+   {
+    "p": "Base aguada",
+    "fix": "Bizcochos empapados de más. Moja solo un segundo por lado."
+   },
+   {
+    "p": "Crema líquida",
+    "fix": "Nata sin montar o yema poco batida. Bate la yema hasta que esté espesa y la nata a punto de surco."
+   }
+  ],
+  "history": "El tiramisú es un postre italiano que se hizo muy popular en todo el mundo en la segunda mitad del siglo XX. El mascarpone es un queso fresco de nata del norte de Italia.",
+  "uses": [
+   "Postre de bandeja o de vaso",
+   "Crema de mascarpone con fruta asada",
+   "Relleno de tartas y bizcochos",
+   "Postre de cuchara de menú"
+  ],
+  "keep": "En frío y tapado, 2–3 días. Se congela bien en bandeja, 1 mes, sin el cacao.",
+  "pro": "Monta en bandejas o vasos la víspera. Porciona en frío con cuchillo caliente y pon el cacao en el pase.",
+  "related": [
+   "mousses-y-cremosos",
+   "bizcochos",
+   "quesos-en-cocina",
+   "cafe-y-te-en-cocina",
+   "merengues"
+  ]
+ },
+ {
+  "id": "arroz-con-leche-y-natillas",
+  "name": "Arroz con leche y natillas",
+  "name_en": "Rice pudding and custard",
+  "cat": "dulce",
+  "group": "Cremas",
+  "aka": [
+   "arroz con leche",
+   "natillas",
+   "arroz con leche requemado",
+   "natillas de canela",
+   "postre de leche"
+  ],
+  "summary": "Los dos postres de leche más caseros: arroz cocido despacio en leche con cítrico y canela, y crema de yema ligera y fluida.",
+  "what": "El arroz con leche es arroz redondo cocido lentamente en mucha leche, que suelta su almidón y la espesa hasta quedar meloso. Las natillas son una [[crema-inglesa]] algo más espesa, a veces con un poco de almidón, perfumada con canela y limón y servida en cuenco con galleta o canela. Los dos se juegan en lo mismo: fuego suave, paciencia y la textura justa en frío, que espesan mucho al enfriar.",
+  "base": {
+   "for": "8 raciones de arroz con leche",
+   "items": [
+    [
+     "Leche entera",
+     "1,5 l"
+    ],
+    [
+     "Arroz redondo",
+     "150 g"
+    ],
+    [
+     "Azúcar",
+     "140 g"
+    ],
+    [
+     "Piel de limón y de naranja",
+     "1 tira de cada"
+    ],
+    [
+     "Canela en rama",
+     "1"
+    ],
+    [
+     "Mantequilla (opcional)",
+     "30 g"
+    ],
+    [
+     "Sal",
+     "una pizca"
+    ],
+    [
+     "Canela molida para servir",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Hierve la leche con las pieles, la canela y la sal.",
+    "Añade el arroz sin lavar y cuece a fuego muy suave, removiendo a menudo, 45–60 minutos, hasta que el grano esté muy tierno y la leche cremosa.",
+    "Añade el azúcar los últimos 10 minutos (si entra antes, el grano se endurece) y la mantequilla al final.",
+    "Retira pieles y canela. Debe quedar más líquido de lo que quieres: espesa mucho al enfriar.",
+    "Reparte, cubre a piel y enfría. Sirve con canela o con azúcar quemado por encima."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Arroz con leche meloso",
+    "ratio": "100 g de arroz por litro de leche",
+    "note": "Cocción lenta, 45–60 minutos."
+   },
+   {
+    "use": "Natillas",
+    "ratio": "1 l de leche, 160 g de yemas, 150 g de azúcar y 15–20 g de almidón",
+    "note": "Cocer a 82–84 °C sin hervir si no lleva almidón."
+   },
+   {
+    "use": "Arroz con leche requemado",
+    "ratio": "10 g de azúcar por ración, quemado con hierro o soplete",
+    "note": "Capa fina y en el momento."
+   },
+   {
+    "use": "Arroz con leche de almendra o de coco",
+    "ratio": "Sustituye la mitad de la leche",
+    "note": "Más ligero o más exótico."
+   }
+  ],
+  "variants": [
+   {
+    "id": "crema-inglesa",
+    "name": "Crema inglesa",
+    "note": "La base fluida de las natillas, sin almidón."
+   },
+   {
+    "id": "crema-catalana-y-flan",
+    "name": "Crema catalana",
+    "note": "Cuchara más espesa con azúcar quemado."
+   },
+   {
+    "id": "menjar-blanc",
+    "name": "Menjar blanc",
+    "note": "Leche de almendra espesada; sin huevo ni leche de vaca."
+   }
+  ],
+  "keys": [
+   "Arroz redondo y sin lavar: su almidón es el que da la cremosidad.",
+   "Azúcar al final: si entra pronto, el grano no se ablanda bien.",
+   "Fuego muy suave y remover a menudo: la leche se pega enseguida.",
+   "Retira antes de tiempo: en frío espesa mucho.",
+   "Natillas: no hiervas si no llevan almidón."
+  ],
+  "errors": [
+   {
+    "p": "Arroz con leche seco y compacto",
+    "fix": "Poca leche o cocido de más. Aligera con leche caliente antes de enfriar."
+   },
+   {
+    "p": "Sabor a leche quemada",
+    "fix": "Fuego alto o sin remover. Cazo de fondo grueso, fuego suave y remover."
+   },
+   {
+    "p": "Natillas cortadas",
+    "fix": "Se pasaron de temperatura. Tritura en caliente y cuela."
+   },
+   {
+    "p": "Grano duro",
+    "fix": "Azúcar añadido demasiado pronto. Añádelo al final."
+   }
+  ],
+  "history": "El arroz con leche y las natillas son postres caseros de toda España, con versiones regionales como el arroz con leche requemado del norte. Postres de arroz y leche existen en muchas cocinas del mundo.",
+  "uses": [
+   "Postre de cuchara clásico",
+   "Base de postre con fruta o crujiente",
+   "Helado de arroz con leche",
+   "Menú de raíz"
+  ],
+  "keep": "En frío, tapado a piel, 3–4 días.",
+  "pro": "Haz el arroz con leche en tanda y aligéralo con leche fría antes de servir si ha espesado. Quema el azúcar en el pase.",
+  "related": [
+   "crema-inglesa",
+   "crema-catalana-y-flan",
+   "menjar-blanc",
+   "leche-nata-y-mantequilla",
+   "arroces"
+  ]
+ },
+ {
+  "id": "torrijas-y-postres-de-pan",
+  "name": "Torrijas y postres de pan",
+  "name_en": "Torrijas and bread desserts",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "torrijas",
+   "torrija",
+   "pudin de pan",
+   "pan perdido",
+   "french toast",
+   "postre de pan duro"
+  ],
+  "summary": "Pan del día anterior empapado en leche aromatizada y frito o caramelizado: torrijas, pudin de pan y otros postres de aprovechamiento.",
+  "what": "El pan algo seco absorbe líquido sin deshacerse. En la torrija se empapa en leche infusionada con canela y cítrico, se pasa por huevo y se fríe o se dora en mantequilla, y se termina con azúcar, miel o almíbar. Con brioche y caramelizada en sartén queda más fina y tierna. Con trozos de pan en una crema de huevo horneada se obtiene el pudin de pan, pariente de la [[greixonera]] de la isla.",
+  "base": {
+   "for": "10 torrijas",
+   "items": [
+    [
+     "Pan de torrijas o brioche del día anterior, en rebanadas de 3 cm",
+     "10"
+    ],
+    [
+     "Leche entera",
+     "1 l"
+    ],
+    [
+     "Nata (opcional)",
+     "200 ml"
+    ],
+    [
+     "Azúcar",
+     "120 g"
+    ],
+    [
+     "Canela en rama y piel de limón y naranja",
+     "al gusto"
+    ],
+    [
+     "Huevos batidos",
+     "3–4"
+    ],
+    [
+     "Aceite de oliva suave o mantequilla para freír",
+     "c. s."
+    ],
+    [
+     "Azúcar y canela para rebozar, o miel",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Infusiona la leche (y la nata) con el azúcar, la canela y las pieles: lleva a hervor, tapa y deja 30 minutos. Cuela y templa.",
+    "Empapa las rebanadas en la leche, por los dos lados, hasta que estén jugosas sin romperse: 1–2 minutos o más si el pan es muy seco.",
+    "Escúrrelas sobre rejilla 10 minutos.",
+    "Pásalas por huevo batido y fríe en aceite a 170–175 °C, o dóralas en sartén con mantequilla a fuego medio, 2–3 minutos por lado.",
+    "Escurre y reboza en azúcar con canela, o baña en miel o almíbar."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Torrija clásica",
+    "ratio": "Rebanada de 3 cm de pan de un día, leche infusionada y huevo",
+    "note": "Fritura a 170–175 °C."
+   },
+   {
+    "use": "Torrija de brioche caramelizada",
+    "ratio": "Brioche empapado en leche y nata, sin huevo, dorado en mantequilla y azúcar",
+    "note": "Se carameliza en sartén o con soplete."
+   },
+   {
+    "use": "Pudin de pan",
+    "ratio": "500 g de pan en trozos, 1 l de leche, 6 huevos y 150 g de azúcar",
+    "note": "Horno al baño maría a 160 °C, 40–50 minutos."
+   },
+   {
+    "use": "Almíbar para bañar",
+    "ratio": "Agua, azúcar y vino dulce o miel a partes iguales",
+    "note": "Reducido con canela y piel de cítrico."
+   }
+  ],
+  "variants": [
+   {
+    "id": "greixonera",
+    "name": "Greixonera",
+    "note": "Pudin de ensaimada del día anterior, de la isla."
+   },
+   {
+    "id": "brioche",
+    "name": "Torrija de brioche",
+    "note": "Más tierna y rica; la más habitual en restaurante."
+   },
+   {
+    "id": null,
+    "name": "Torrija de vino",
+    "note": "Empapada en vino tinto o dulce con azúcar en vez de leche."
+   }
+  ],
+  "keys": [
+   "Pan de un día: el pan fresco se deshace y el muy duro no se empapa.",
+   "Leche bien infusionada y dulce: es todo el sabor.",
+   "Escurre antes de freír para que no salte el aceite ni quede aceitosa.",
+   "Fríe a temperatura media: si está muy caliente, se quema fuera y queda fría dentro.",
+   "En restaurante, la versión caramelizada se termina al pedir."
+  ],
+  "errors": [
+   {
+    "p": "Se rompe al freír",
+    "fix": "Pan fresco o empapado de más. Usa pan de un día y escurre en rejilla."
+   },
+   {
+    "p": "Aceitosa",
+    "fix": "Aceite frío o sin escurrir. Fríe a 170–175 °C y escurre sobre papel."
+   },
+   {
+    "p": "Seca por dentro",
+    "fix": "Remojo corto. Deja más tiempo en la leche."
+   }
+  ],
+  "history": "Las torrijas son un dulce tradicional de Cuaresma y Semana Santa en España, y el pan empapado y frito existe en muchas cocinas europeas. Los pudines de pan nacieron para aprovechar el pan duro.",
+  "uses": [
+   "Postre de Semana Santa",
+   "Postre de carta con helado",
+   "Brunch",
+   "Aprovechamiento de pan y brioche"
+  ],
+  "keep": "Torrijas fritas, mejor del día; en frío 2 días. El pan empapado sin freír, en frío unas horas.",
+  "pro": "Deja el pan empapado y escurrido en bandeja en frío y dóralo al pedir en sartén con mantequilla y azúcar. Sirve con helado o una crema fría para el contraste.",
+  "related": [
+   "brioche",
+   "greixonera",
+   "pan-del-dia-y-pan-viejo",
+   "caramelo",
+   "crema-inglesa"
+  ]
+ },
+ {
+  "id": "crumbles-de-fruta",
+  "name": "Crumbles y streusel",
+  "name_en": "Fruit crumbles and streusel",
+  "cat": "dulce",
+  "group": "Fruta",
+  "aka": [
+   "crumble",
+   "crumble de manzana",
+   "streusel",
+   "migas dulces",
+   "cobbler",
+   "fruta horneada con crujiente"
+  ],
+  "summary": "Fruta horneada bajo una capa de migas de mantequilla, azúcar y harina: el postre de fruta más rápido, y el streusel para cubrir bizcochos.",
+  "what": "Un crumble es fruta de temporada, algo endulzada y con un poco de almidón, cubierta con una masa arenosa que se hornea hasta que la fruta burbujea y la cubierta queda dorada y crujiente. El streusel es la misma masa, a menudo con canela, que se esparce sobre bizcochos y tartas antes de hornear. Las migas se pueden hornear sueltas y guardar, para usarlas como crujiente en otros postres, como en [[sable-y-galletas]].",
+  "base": {
+   "for": "una fuente de 25 × 20 cm (8 raciones)",
+   "items": [
+    [
+     "Fruta (manzana, pera, ciruela, frutos rojos, ruibarbo)",
+     "1 kg limpia"
+    ],
+    [
+     "Azúcar para la fruta",
+     "60–100 g"
+    ],
+    [
+     "Zumo de limón",
+     "20 g"
+    ],
+    [
+     "Almidón de maíz",
+     "15 g"
+    ],
+    [
+     "Mantequilla fría en dados",
+     "120 g"
+    ],
+    [
+     "Azúcar moreno",
+     "120 g"
+    ],
+    [
+     "Harina",
+     "120 g"
+    ],
+    [
+     "Almendra molida o copos de avena",
+     "60 g"
+    ],
+    [
+     "Sal",
+     "2 g"
+    ]
+   ],
+   "steps": [
+    "Corta la fruta en trozos de 2–3 cm y mézclala con el azúcar, el limón y el almidón. Reparte en la fuente.",
+    "Frota la mantequilla fría con el azúcar, la harina, la almendra y la sal hasta que haya migas de distintos tamaños. Enfría 15 minutos.",
+    "Esparce las migas sobre la fruta sin apretar.",
+    "Hornea a 180 °C, 35–45 minutos, hasta que la fruta burbujee por los bordes y la cubierta esté dorada.",
+    "Deja reposar 10 minutos y sirve templado con helado, nata o crema."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Masa de crumble",
+    "ratio": "Mantequilla, azúcar y harina a partes iguales",
+    "note": "Con almendra o avena, más crujiente."
+   },
+   {
+    "use": "Fruta",
+    "ratio": "1 kg con 60–100 g de azúcar y 15 g de almidón",
+    "note": "Más almidón con frutos rojos, que sueltan mucho jugo."
+   },
+   {
+    "use": "Horneado",
+    "ratio": "180 °C, 35–45 minutos",
+    "note": "Individual, 20–25 minutos."
+   },
+   {
+    "use": "Migas sueltas para emplatar",
+    "ratio": "La misma masa horneada extendida a 170 °C, 15–20 minutos",
+    "note": "Remover a mitad de cocción."
+   }
+  ],
+  "variants": [
+   {
+    "id": "sable-y-galletas",
+    "name": "Tierra o crumble de emplatado",
+    "note": "Las migas horneadas solas como crujiente."
+   },
+   {
+    "id": "tartas-de-fruta",
+    "name": "Tartas de fruta",
+    "note": "Fruta sobre masa en vez de bajo migas."
+   },
+   {
+    "id": null,
+    "name": "Cobbler",
+    "note": "Fruta cubierta con una masa blanda tipo galleta con levadura en pequeños montones."
+   }
+  ],
+  "keys": [
+   "Mantequilla fría y migas desiguales: dan más textura.",
+   "Almidón en la fruta jugosa para que no quede sopa.",
+   "No aprietes la cubierta: se pone dura.",
+   "Fruta ácida mejor que muy dulce: equilibra la cubierta.",
+   "Sírvelo templado con algo frío."
+  ],
+  "errors": [
+   {
+    "p": "Cubierta blanda",
+    "fix": "Fruta muy jugosa o mantequilla caliente. Añade almidón a la fruta y enfría la masa."
+   },
+   {
+    "p": "Fruta cruda",
+    "fix": "Trozos grandes o poco horno. Corta más pequeño y espera a que burbujee."
+   },
+   {
+    "p": "Demasiado dulce",
+    "fix": "Fruta dulce y cubierta dulce. Usa fruta más ácida y añade limón y sal."
+   }
+  ],
+  "history": "El crumble es un postre británico que se popularizó en el siglo XX, y el streusel una cobertura de la repostería de Centroeuropa. Hoy son un recurso habitual para la fruta de temporada.",
+  "uses": [
+   "Postre de fruta de temporada",
+   "Cobertura de bizcochos y magdalenas",
+   "Crujiente de postres de vaso",
+   "Desayuno con yogur"
+  ],
+  "keep": "Horneado, en frío 2–3 días; regenera a 160 °C. Masa cruda en frío 1 semana o congelada 2 meses. Migas horneadas, en lata 1 semana.",
+  "pro": "Ten la masa cruda congelada en bolsa y fruta preparada: se montan raciones individuales en cazuelitas y se hornean al pedir.",
+  "related": [
+   "sable-y-galletas",
+   "tartas-de-fruta",
+   "fruta-asada",
+   "frutos-rojos-y-fruta-de-hueso",
+   "almendra"
+  ]
+ },
+ {
+  "id": "pavlova-y-postres-de-merengue",
+  "name": "Pavlova y postres de merengue",
+  "name_en": "Pavlova and meringue desserts",
+  "cat": "dulce",
+  "group": "Espumas y azúcar",
+  "aka": [
+   "pavlova",
+   "isla flotante",
+   "merengue con nata",
+   "eton mess",
+   "vacherin",
+   "merengue quemado"
+  ],
+  "summary": "Postres donde el merengue es protagonista: la pavlova crujiente por fuera y tierna por dentro, las islas flotantes escalfadas y los merengues rotos con nata y fruta.",
+  "what": "La técnica del [[merengues|merengue]] está en su ficha; aquí, cómo se convierte en postre. La pavlova lleva un poco de almidón y vinagre y se seca a baja temperatura para que la costra sea crujiente y el centro quede como un malvavisco; se cubre con nata y fruta ácida. Las islas flotantes son merengue escalfado sobre [[crema-inglesa]]. Los merengues secos rotos con nata y frutos rojos forman un postre informal. Y el merengue italiano, quemado, cubre tartas de limón y helados.",
+  "base": {
+   "for": "una pavlova de 22 cm o 10 individuales",
+   "items": [
+    [
+     "Claras a temperatura ambiente",
+     "150 g (5)"
+    ],
+    [
+     "Azúcar",
+     "300 g"
+    ],
+    [
+     "Almidón de maíz",
+     "10 g"
+    ],
+    [
+     "Vinagre de vino blanco",
+     "5 g"
+    ],
+    [
+     "Nata 35 % para montar",
+     "400 g"
+    ],
+    [
+     "Fruta ácida (frutos rojos, maracuyá, cítricos)",
+     "400 g"
+    ]
+   ],
+   "steps": [
+    "Monta las claras a punto de espuma y añade el azúcar poco a poco, batiendo hasta que esté brillante y no se noten granos entre los dedos.",
+    "Añade el almidón tamizado y el vinagre con lengua.",
+    "Forma un disco de 22 cm sobre papel, más alto en los bordes, o discos individuales de 8 cm.",
+    "Hornea a 110–120 °C, 75–90 minutos (40–50 minutos los individuales). Apaga y deja enfriar dentro con la puerta entreabierta.",
+    "Al servir, cubre con nata semimontada sin azúcar o poco dulce y la fruta."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Pavlova",
+    "ratio": "2 partes de azúcar por 1 de clara, con almidón y vinagre",
+    "note": "Horno a 110–120 °C."
+   },
+   {
+    "use": "Isla flotante",
+    "ratio": "Merengue francés en quenelles escalfadas en leche a 80–85 °C, 1 minuto por lado",
+    "note": "Sobre crema inglesa fría."
+   },
+   {
+    "use": "Merengue seco para romper",
+    "ratio": "Merengue francés secado a 90 °C, 2 horas",
+    "note": "Se guarda en lata."
+   },
+   {
+    "use": "Merengue quemado",
+    "ratio": "Merengue italiano a 118 °C, quemado con soplete al servir",
+    "note": "Sobre curd, helado o tarta."
+   }
+  ],
+  "variants": [
+   {
+    "id": "curds-y-cremas-de-citricos",
+    "name": "Tarta de limón con merengue",
+    "note": "El merengue italiano quemado sobre curd."
+   },
+   {
+    "id": "helados-sin-maquina",
+    "name": "Merengue helado",
+    "note": "Capas de merengue seco con semifrío."
+   },
+   {
+    "id": null,
+    "name": "Merengues rotos con nata y fruta",
+    "note": "Postre informal en vaso; se monta al momento."
+   }
+  ],
+  "keys": [
+   "Azúcar bien disuelto: si quedan granos, el merengue llora almíbar.",
+   "Horno bajo y enfriar dentro: evita grietas y deja el centro tierno.",
+   "Monta con nata y fruta en el último momento: la humedad ablanda la costra.",
+   "Fruta ácida para equilibrar el dulce del merengue.",
+   "Bol y varillas sin restos de grasa ni yema."
+  ],
+  "errors": [
+   {
+    "p": "Pavlova que llora almíbar",
+    "fix": "Azúcar sin disolver o humedad. Bate hasta que no haya granos y guarda en seco."
+   },
+   {
+    "p": "Grietas grandes y hundida",
+    "fix": "Horno fuerte o enfriado brusco. Baja la temperatura y enfría dentro del horno."
+   },
+   {
+    "p": "Islas que se desinflan",
+    "fix": "Leche hirviendo. Escalfa a 80–85 °C."
+   }
+  ],
+  "history": "La pavlova es un postre de merengue asociado a Australia y Nueva Zelanda, y las islas flotantes son un clásico de la cocina francesa. Los merengues forman parte de la repostería española de obrador.",
+  "uses": [
+   "Postre para compartir",
+   "Postre individual con fruta de temporada",
+   "Isla flotante de menú",
+   "Merengue quemado sobre tartas y helados"
+  ],
+  "keep": "Base de pavlova sin montar, en lata o caja cerrada en seco, 3–4 días. Montada, se sirve al momento.",
+  "pro": "Hornea bases individuales en tanda y guárdalas en lata con gel de sílice. Ten nata semimontada y fruta preparadas y monta al pedir.",
+  "related": [
+   "merengues",
+   "crema-inglesa",
+   "curds-y-cremas-de-citricos",
+   "frutos-rojos-y-fruta-de-hueso",
+   "helados-sin-maquina"
+  ]
+ },
+ {
+  "id": "ensaimada",
+  "name": "Ensaimada y bollería de las islas",
+  "name_en": "Ensaimada and island pastries",
+  "cat": "dulce",
+  "group": "Dulces de la isla",
+  "aka": [
+   "ensaimada",
+   "ensaimadas",
+   "saim",
+   "bolleria balear",
+   "ensaimada de crema",
+   "ensaimada lisa"
+  ],
+  "summary": "Masa fermentada muy estirada, untada con manteca de cerdo y enrollada en espiral: la bollería más característica de Baleares y base de la greixonera.",
+  "what": "Es una masa de harina de fuerza, azúcar, huevo y levadura (a veces con masa madre) que se estira hasta quedar casi transparente, se unta con manteca de cerdo, se enrolla en un cordón y se enrosca en espiral. Fermenta muy despacio hasta triplicar y se hornea poco tiempo, para que quede tierna, ligera y con capas finas. Se sirve con azúcar glas, lisa o rellena (cabello de ángel, crema). La del día anterior es la base de la [[greixonera]].",
+  "base": {
+   "for": "unas 16 ensaimadas individuales de 60 g",
+   "items": [
+    [
+     "Harina de fuerza",
+     "500 g"
+    ],
+    [
+     "Azúcar",
+     "100 g"
+    ],
+    [
+     "Huevos",
+     "100 g (2)"
+    ],
+    [
+     "Agua o leche templada",
+     "180–200 g"
+    ],
+    [
+     "Levadura fresca",
+     "15 g"
+    ],
+    [
+     "Sal",
+     "6 g"
+    ],
+    [
+     "Manteca de cerdo blanda",
+     "120–150 g"
+    ],
+    [
+     "Azúcar glas",
+     "para terminar"
+    ]
+   ],
+   "steps": [
+    "Amasa la harina, el azúcar, los huevos, el agua con la levadura y la sal hasta que la masa sea lisa, fina y muy elástica, 12–15 minutos. Divide en bolas y deja reposar tapadas 1 hora.",
+    "Unta la mesa con manteca. Estira cada bola con un rodillo y luego con las manos untadas de manteca, hasta que quede muy fina, casi transparente.",
+    "Unta toda la lámina con manteca y enróllala sobre sí misma en un cordón fino.",
+    "Deja reposar el cordón 15 minutos y enróscalo en espiral sin apretar, dejando espacio entre las vueltas.",
+    "Fermenta tapadas en lugar templado (22–26 °C) hasta que tripliquen, 8–12 horas.",
+    "Pulveriza con agua y hornea a 180 °C, 12–15 minutos, hasta un dorado claro. Espolvorea azúcar glas en frío."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Masa",
+    "ratio": "20 % de azúcar, 20 % de huevo y 36–40 % de agua sobre la harina",
+    "note": "Muy elástica para poder estirarla fina."
+   },
+   {
+    "use": "Manteca",
+    "ratio": "25–30 % sobre la harina, a temperatura de sala",
+    "note": "Untable, no fundida."
+   },
+   {
+    "use": "Fermentación",
+    "ratio": "22–26 °C, 8–12 horas",
+    "note": "Hasta triplicar; con frío, más horas."
+   },
+   {
+    "use": "Horneado",
+    "ratio": "180 °C, 12–15 minutos las individuales",
+    "note": "Una grande de 30 cm, 20–25 minutos."
+   }
+  ],
+  "variants": [
+   {
+    "id": "greixonera",
+    "name": "Greixonera",
+    "note": "El pudin de la isla hecho con ensaimada del día anterior."
+   },
+   {
+    "id": "masas-laminadas-fermentadas",
+    "name": "Masas laminadas",
+    "note": "Capas de grasa y masa por pliegues en vez de por estirado."
+   },
+   {
+    "id": "sobrasada-y-embutidos",
+    "name": "Ensaimada salada",
+    "note": "Rellena o cubierta con sobrasada; existe en la tradición de las islas."
+   }
+  ],
+  "keys": [
+   "Masa muy amasada y elástica: sin gluten fuerte no se puede estirar fina.",
+   "Estira con manteca, no con harina.",
+   "Enrosca sin apretar: necesita espacio para crecer.",
+   "Fermentación lenta y completa: la ensaimada pequeña y apretada es falta de tiempo.",
+   "Horno corto y color claro: se seca enseguida."
+  ],
+  "errors": [
+   {
+    "p": "Masa que se rompe al estirar",
+    "fix": "Poco amasado o sin reposo. Amasa más y deja reposar la bola 1 hora."
+   },
+   {
+    "p": "Ensaimada apretada",
+    "fix": "Fermentación corta o enroscada apretada. Deja triplicar y separa las vueltas."
+   },
+   {
+    "p": "Seca",
+    "fix": "Horno largo. Saca en dorado claro."
+   }
+  ],
+  "history": "La ensaimada es el dulce más conocido de Mallorca y está protegida con una indicación geográfica; también se elabora en el resto de Baleares. La manteca de cerdo, el saïm, le da nombre y carácter.",
+  "uses": [
+   "Desayuno y merienda",
+   "Greixonera",
+   "Postre con crema o helado",
+   "Versión salada con sobrasada"
+  ],
+  "keep": "Mejor del día. Tapada, a temperatura ambiente 1–2 días; congelada, 1 mes. La del día anterior, para greixonera o torrija.",
+  "pro": "Forma por la tarde y deja fermentar toda la noche para hornear por la mañana. Las sobrantes van a la greixonera.",
+  "related": [
+   "greixonera",
+   "brioche",
+   "masa-madre",
+   "cocina-ibicenca",
+   "sobrasada-y-embutidos"
+  ]
+ },
+ {
+  "id": "tartas-de-frutos-secos",
+  "name": "Tartas de frutos secos",
+  "name_en": "Nut cakes and tarts",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "tarta de almendra",
+   "gato de almendra",
+   "tarta de nueces",
+   "tarta de pinones",
+   "bizcocho de almendra",
+   "tarta sin harina"
+  ],
+  "summary": "Tartas y bizcochos en los que el fruto seco es la masa o el relleno: bizcochos de almendra sin harina, tartas de nueces caramelizadas y tartas de piñones.",
+  "what": "Hay dos familias. En la primera el fruto seco molido sustituye a la harina: [[almendra]], huevo y azúcar dan bizcochos densos, húmedos y aromáticos, como el gató de almendra de Mallorca o las tartas de almendra del norte de España. En la segunda, el fruto seco entero o troceado se hornea sobre una [[masa-quebrada]] con un relleno de azúcar, mantequilla y huevo que se carameliza, como en las tartas de nueces o de piñones. Las dos piden tostar el fruto seco con cuidado: es casi todo el sabor.",
+  "base": {
+   "for": "un bizcocho de almendra de 24 cm (10 raciones)",
+   "items": [
+    [
+     "Almendra cruda molida",
+     "250 g"
+    ],
+    [
+     "Azúcar",
+     "250 g"
+    ],
+    [
+     "Huevos",
+     "250 g (5)"
+    ],
+    [
+     "Ralladura de limón",
+     "de 1 limón"
+    ],
+    [
+     "Canela molida",
+     "1 g"
+    ],
+    [
+     "Sal",
+     "una pizca"
+    ],
+    [
+     "Azúcar glas",
+     "para terminar"
+    ]
+   ],
+   "steps": [
+    "Bate los huevos con el azúcar hasta que blanqueen y doblen el volumen.",
+    "Añade la almendra, la ralladura, la canela y la sal, y mezcla con lengua sin perder el aire.",
+    "Vierte en un molde untado y forrado con papel.",
+    "Hornea a 175–180 °C, 35–40 minutos, hasta que esté dorado y al pinchar salga limpio.",
+    "Deja enfriar en el molde y espolvorea con azúcar glas al servir."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Bizcocho de almendra sin harina",
+    "ratio": "Almendra, azúcar y huevo a partes iguales",
+    "note": "Horno a 175–180 °C."
+   },
+   {
+    "use": "Gató de almendra más esponjoso",
+    "ratio": "Yemas batidas con azúcar, almendra y claras montadas aparte",
+    "note": "Se sirve con helado de almendra."
+   },
+   {
+    "use": "Relleno de tarta de nueces o pecanas",
+    "ratio": "200 g de frutos secos, 150 g de azúcar moreno, 100 g de miel o sirope, 80 g de mantequilla y 3 huevos",
+    "note": "Sobre masa cocida en blanco, 170 °C, 35–40 min."
+   },
+   {
+    "use": "Tostado del fruto seco",
+    "ratio": "150–160 °C, 8–15 minutos según el fruto seco",
+    "note": "Piñones, menos tiempo."
+   }
+  ],
+  "variants": [
+   {
+    "id": "tartas-de-fruta",
+    "name": "Tarta de crema de almendra",
+    "note": "Crema de almendra horneada con fruta."
+   },
+   {
+    "id": "turrones-y-pralines",
+    "name": "Praliné",
+    "note": "El fruto seco caramelizado y triturado."
+   },
+   {
+    "id": "frutos-secos",
+    "name": "Tarta de piñones",
+    "note": "Piñones sobre crema de almendra o miel; de la repostería mediterránea."
+   }
+  ],
+  "keys": [
+   "Fruto seco fresco: el rancio estropea toda la tarta.",
+   "Tuesta con atención: de dorado a quemado hay un minuto.",
+   "En el bizcocho sin harina, el aire del huevo batido es la única levadura.",
+   "Una pizca de sal y ralladura de cítrico levantan el sabor del fruto seco.",
+   "Sírvelos con algo ácido o frío."
+  ],
+  "errors": [
+   {
+    "p": "Bizcocho denso y aceitoso",
+    "fix": "Huevo poco batido o almendra muy grasa. Bate más y mezcla con suavidad."
+   },
+   {
+    "p": "Relleno que no cuaja",
+    "fix": "Poco horno. Hornea hasta que el centro apenas tiemble."
+   },
+   {
+    "p": "Sabor rancio",
+    "fix": "Fruto seco viejo. Prueba siempre antes de usarlo."
+   }
+  ],
+  "history": "Los bizcochos y tartas de almendra son tradicionales en muchas zonas de España, del norte peninsular a Baleares, y las tartas de nueces tienen larga tradición en la repostería americana. Son una repostería antigua, previa a la difusión de las harinas finas.",
+  "uses": [
+   "Postre de carta con helado",
+   "Merienda y desayuno",
+   "Postre sin gluten (bizcocho de almendra)",
+   "Petit four en pequeño"
+  ],
+  "keep": "Bizcocho de almendra, tapado a temperatura ambiente 4–5 días; mejora al segundo día. Tartas de relleno caramelizado, 4 días.",
+  "pro": "Hornea en molde grande y porciona en frío. Calienta la ración unos segundos antes de servir con un helado.",
+  "related": [
+   "almendra",
+   "frutos-secos",
+   "masa-quebrada",
+   "turrones-y-pralines",
+   "tartas-de-fruta",
+   "miel-y-azucares"
+  ]
+ },
+ {
+  "id": "postres-de-chocolate",
+  "name": "Postres de chocolate y cacao",
+  "name_en": "Chocolate desserts",
+  "cat": "dulce",
+  "group": "Chocolate",
+  "aka": [
+   "coulant",
+   "volcan de chocolate",
+   "brownie",
+   "tarta de chocolate",
+   "sopa de chocolate",
+   "chocolate caliente",
+   "postre de cacao"
+  ],
+  "summary": "Los postres de chocolate de horno y de cuchara más útiles en restaurante: coulant de centro líquido, brownie, tarta de chocolate fundente y sopa o chocolate caliente.",
+  "what": "Las bases de chocolate están en [[ganache]], [[mousses-y-cremosos]] y [[chocolate-y-templado]]; aquí, los postres que se construyen con ellas. El coulant es un bizcocho de chocolate que se saca del horno con el centro todavía líquido. El brownie es una masa densa con poco harina. La tarta de chocolate fundente se hornea a baja temperatura como una crema. Y la sopa o el chocolate caliente son chocolate diluido en leche o agua y ligado. Un chocolate de buena calidad y una pizca de sal mandan en todos.",
+  "base": {
+   "for": "10 coulants en moldes de 7 cm",
+   "items": [
+    [
+     "Chocolate negro 64–70 %",
+     "200 g"
+    ],
+    [
+     "Mantequilla",
+     "200 g"
+    ],
+    [
+     "Huevos",
+     "200 g (4)"
+    ],
+    [
+     "Yemas",
+     "60 g (3)"
+    ],
+    [
+     "Azúcar",
+     "100 g"
+    ],
+    [
+     "Harina floja",
+     "50 g"
+    ],
+    [
+     "Sal",
+     "una pizca"
+    ],
+    [
+     "Mantequilla y cacao para los moldes",
+     "c. s."
+    ]
+   ],
+   "steps": [
+    "Unta los moldes con mantequilla y cúbrelos de cacao.",
+    "Funde el chocolate con la mantequilla al baño maría o en microondas a menos de 50 °C.",
+    "Bate los huevos, las yemas y el azúcar hasta que blanqueen, sin montar del todo.",
+    "Mezcla con el chocolate y añade la harina tamizada y la sal.",
+    "Llena los moldes y congela o deja en frío al menos 2 horas.",
+    "Hornea a 210–220 °C: 8–9 minutos desde frío, 10–12 desde congelado. Reposa 1 minuto y desmolda."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Coulant",
+    "ratio": "Chocolate y mantequilla a partes iguales, el mismo peso de huevo y un cuarto de harina",
+    "note": "210–220 °C; el centro sale líquido."
+   },
+   {
+    "use": "Brownie",
+    "ratio": "250 g de chocolate, 200 g de mantequilla, 300 g de azúcar, 4 huevos y 100 g de harina",
+    "note": "170 °C, 22–28 minutos; centro aún húmedo."
+   },
+   {
+    "use": "Tarta de chocolate fundente",
+    "ratio": "Ganache de 1:1 con 2 huevos por cada 500 g, sobre masa cocida",
+    "note": "Horno a 100–110 °C hasta que cuaje y tiemble, 25–35 min."
+   },
+   {
+    "use": "Chocolate caliente espeso",
+    "ratio": "1 l de leche, 150 g de chocolate, 20 g de cacao y 15–20 g de almidón",
+    "note": "Hervir 1 minuto removiendo."
+   }
+  ],
+  "variants": [
+   {
+    "id": "mousses-y-cremosos",
+    "name": "Mousse y cremoso de chocolate",
+    "note": "Postres de chocolate fríos y de cuchara."
+   },
+   {
+    "id": "bombones-y-trufas",
+    "name": "Trufas",
+    "note": "El chocolate en bocado."
+   },
+   {
+    "id": "postres-de-aceite-y-hierbas",
+    "name": "Chocolate, aceite y sal",
+    "note": "Chocolate con aceite de oliva y sal en escamas."
+   }
+  ],
+  "keys": [
+   "Chocolate fundido a menos de 50 °C: si se quema, amarga y se vuelve granuloso.",
+   "Una pizca de sal y algo ácido (fruta, cítrico) evitan que empalague.",
+   "Coulant: prueba el tiempo exacto con tu horno y tus moldes.",
+   "Brownie: sácalo cuando el centro aún esté húmedo; termina de hacerse fuera.",
+   "Combina el chocolate con algo frío y algo crujiente en el plato."
+  ],
+  "errors": [
+   {
+    "p": "Coulant cocido entero",
+    "fix": "Horno largo. Baja 1–2 minutos y vuelve a probar."
+   },
+   {
+    "p": "Coulant que se rompe al desmoldar",
+    "fix": "Poco horno o molde mal preparado. Unta bien y espera 1 minuto antes."
+   },
+   {
+    "p": "Brownie seco",
+    "fix": "Horno largo. Saca antes y deja enfriar en el molde."
+   },
+   {
+    "p": "Chocolate granuloso al fundir",
+    "fix": "Agua o calor excesivo. Funde en seco y a temperatura moderada."
+   }
+  ],
+  "history": "El chocolate llegó a Europa desde América a través de España, primero como bebida. Los postres de horno con centro líquido y los brownies se popularizaron en la segunda mitad del siglo XX.",
+  "uses": [
+   "Postre caliente de carta",
+   "Postre para compartir",
+   "Merienda y desayuno",
+   "Final de menú con helado"
+  ],
+  "keep": "Coulants crudos, en frío 2 días o congelados 1 mes. Brownie, tapado 4–5 días. Tarta de chocolate, en frío 3 días.",
+  "pro": "Ten los coulants crudos congelados en sus moldes y hornea al pedir con temporizador. Acompaña con helado y un elemento ácido.",
+  "related": [
+   "ganache",
+   "mousses-y-cremosos",
+   "chocolate-y-templado",
+   "vainilla-y-cacao",
+   "bombones-y-trufas"
+  ]
+ },
+ {
+  "id": "postres-con-verdura",
+  "name": "Postres con verdura",
+  "name_en": "Vegetable desserts",
+  "cat": "dulce",
+  "group": "Fruta",
+  "aka": [
+   "tarta de zanahoria",
+   "pastel de calabaza",
+   "bizcocho de remolacha",
+   "postre de boniato",
+   "carrot cake",
+   "helado de calabaza"
+  ],
+  "summary": "Zanahoria, calabaza, boniato o remolacha en postres: aportan dulzor natural, humedad, color y un sabor terroso que sale bien con especias, cítricos y chocolate.",
+  "what": "Muchas verduras de raíz y de huerta tienen azúcar y textura de sobra para un postre. Ralladas en crudo, dan humedad a los bizcochos (tarta de zanahoria). Asadas y en puré, se comportan como una fruta en cremas, flanes y helados (calabaza, boniato). La remolacha da color y un fondo terroso que combina con chocolate y frutos rojos. La clave es asarlas para concentrar el sabor y acompañarlas con especias, cítrico o algo tostado.",
+  "base": {
+   "for": "una tarta de zanahoria de 24 cm (12 raciones)",
+   "items": [
+    [
+     "Zanahoria rallada fina",
+     "300 g"
+    ],
+    [
+     "Huevos",
+     "4"
+    ],
+    [
+     "Azúcar moreno",
+     "250 g"
+    ],
+    [
+     "Aceite de oliva suave o de girasol",
+     "200 g"
+    ],
+    [
+     "Harina",
+     "280 g"
+    ],
+    [
+     "Levadura química",
+     "10 g"
+    ],
+    [
+     "Canela, jengibre y nuez moscada",
+     "5 g en total"
+    ],
+    [
+     "Nueces picadas",
+     "80 g"
+    ],
+    [
+     "Sal",
+     "2 g"
+    ],
+    [
+     "Crema: queso crema, mantequilla y azúcar glas",
+     "300 g, 80 g y 100 g"
+    ]
+   ],
+   "steps": [
+    "Bate los huevos con el azúcar y añade el aceite en hilo.",
+    "Mezcla la harina, la levadura, las especias y la sal, e incorpóralas sin batir de más.",
+    "Añade la zanahoria y las nueces.",
+    "Hornea en molde forrado a 170 °C, 45–55 minutos, hasta que al pinchar salga limpio. Enfría.",
+    "Bate la mantequilla con el azúcar glas, añade el queso crema frío sin batir de más y cubre la tarta fría."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Bizcocho de verdura rallada",
+    "ratio": "1 parte de verdura por 1 de harina",
+    "note": "Horno a 170 °C."
+   },
+   {
+    "use": "Crema o flan de calabaza o boniato",
+    "ratio": "500 g de puré asado, 3 huevos, 250 g de nata y 100 g de azúcar con especias",
+    "note": "Al baño maría a 150 °C hasta que cuaje."
+   },
+   {
+    "use": "Asado de la verdura",
+    "ratio": "Horno a 190–200 °C hasta muy tierna",
+    "note": "Mejor que hervida: menos agua y más sabor."
+   },
+   {
+    "use": "Bizcocho de chocolate y remolacha",
+    "ratio": "250 g de remolacha asada en puré por cada 200 g de chocolate",
+    "note": "Húmedo y muy oscuro."
+   }
+  ],
+  "variants": [
+   {
+    "id": "calabaza",
+    "name": "Postres de calabaza",
+    "note": "Flan, helado, buñuelos o crema especiada."
+   },
+   {
+    "id": "patata-y-boniato",
+    "name": "Boniato asado",
+    "note": "Asado entero con miel y especias; postre de otoño."
+   },
+   {
+    "id": "tarta-de-queso",
+    "name": "Tarta de queso de calabaza",
+    "note": "Parte del queso sustituida por puré de calabaza asada."
+   }
+  ],
+  "keys": [
+   "Asa la verdura en vez de hervirla: concentra el dulzor y quita agua.",
+   "Ralla fino para los bizcochos: se integra y da humedad.",
+   "Especias, cítrico y frutos secos son sus mejores compañeros.",
+   "Ajusta el azúcar: cada verdura y cada temporada es distinta.",
+   "Escurre bien el puré si suelta agua."
+  ],
+  "errors": [
+   {
+    "p": "Bizcocho aguado",
+    "fix": "Verdura con mucha agua o puré sin escurrir. Escurre y asa en vez de hervir."
+   },
+   {
+    "p": "Sabor a verdura cruda",
+    "fix": "Verdura poco cocinada. Ásala hasta que esté muy tierna y caramelizada."
+   },
+   {
+    "p": "Crema de queso líquida",
+    "fix": "Queso batido de más o caliente. Mézclalo frío y poco."
+   }
+  ],
+  "history": "La repostería de muchas zonas ha usado verduras dulces cuando el azúcar escaseaba: tartas de zanahoria, pasteles de calabaza o dulces de boniato. La pastelería actual las ha recuperado por su sabor y su humedad.",
+  "uses": [
+   "Merienda y desayuno",
+   "Postre de otoño e invierno",
+   "Helados de verdura",
+   "Postres con menos azúcar añadido"
+  ],
+  "keep": "Tarta de zanahoria cubierta, en frío 4–5 días. Cremas y flanes, 3 días.",
+  "pro": "Asa la verdura en tanda y congela el puré en porciones para usarlo en cremas y helados durante la temporada.",
+  "related": [
+   "calabaza",
+   "patata-y-boniato",
+   "bizcochos-humedos",
+   "especias",
+   "tarta-de-queso",
+   "helados-y-sorbetes"
+  ]
+ },
+ {
+  "id": "salsas-dulces",
+  "name": "Salsas dulces: caramelo, toffee y chocolate",
+  "name_en": "Dessert sauces: caramel, toffee and chocolate",
+  "cat": "dulce",
+  "group": "Espumas y azúcar",
+  "aka": [
+   "caramelo salado",
+   "salsa toffee",
+   "salsa de chocolate",
+   "dulce de leche",
+   "salsa de caramelo",
+   "butterscotch"
+  ],
+  "summary": "Las salsas calientes o templadas que acompañan postres: caramelo de nata salado, toffee de azúcar moreno, salsa de chocolate brillante y dulce de leche.",
+  "what": "Son salsas de azúcar y grasa que se sirven templadas o a temperatura de sala. El caramelo de nata parte de un [[caramelo]] oscuro detenido con nata caliente y mantequilla. El toffee usa azúcar moreno y mantequilla cocidos juntos con nata. La salsa de chocolate es chocolate diluido con agua o leche y un poco de cacao y glucosa para que brille. El dulce de leche es leche y azúcar reducidos muy despacio hasta caramelizar. Todas deben quedar fluidas a la temperatura de servicio.",
+  "base": {
+   "for": "unos 450 g de caramelo salado",
+   "items": [
+    [
+     "Azúcar",
+     "200 g"
+    ],
+    [
+     "Nata 35 % caliente",
+     "200 g"
+    ],
+    [
+     "Mantequilla",
+     "50 g"
+    ],
+    [
+     "Sal en escamas",
+     "3–5 g"
+    ],
+    [
+     "Glucosa (opcional, evita que cristalice)",
+     "30 g"
+    ]
+   ],
+   "steps": [
+    "Haz un caramelo en seco con el azúcar (y la glucosa) a fuego medio, hasta color ámbar oscuro, a 175–180 °C.",
+    "Fuera del fuego, añade la nata caliente en tres veces, con cuidado porque salpica.",
+    "Vuelve al fuego y cuece 1–2 minutos hasta que todo esté disuelto y llegue a 105–108 °C si la quieres más espesa.",
+    "Añade la mantequilla y la sal fuera del fuego.",
+    "Cuela y guarda. Se sirve templada."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Caramelo salado",
+    "ratio": "Azúcar y nata a partes iguales, 25 % de mantequilla y 1–2 % de sal",
+    "note": "Caramelo a 175–180 °C."
+   },
+   {
+    "use": "Toffee",
+    "ratio": "200 g de azúcar moreno, 100 g de mantequilla y 200 g de nata",
+    "note": "Hervir 3–4 minutos."
+   },
+   {
+    "use": "Salsa de chocolate",
+    "ratio": "200 g de chocolate, 200 g de agua o leche, 50 g de azúcar, 20 g de cacao y 30 g de glucosa",
+    "note": "Hervir el líquido y emulsionar con el chocolate."
+   },
+   {
+    "use": "Dulce de leche",
+    "ratio": "1 l de leche, 300 g de azúcar y 1 g de bicarbonato",
+    "note": "A fuego suave, removiendo, 1,5–2,5 horas, hasta color tostado."
+   }
+  ],
+  "variants": [
+   {
+    "id": "caramelo",
+    "name": "Puntos del azúcar",
+    "note": "Cómo hacer el caramelo base."
+   },
+   {
+    "id": "ganache",
+    "name": "Ganache fluida",
+    "note": "Chocolate y nata 1:1 o más nata para napar."
+   },
+   {
+    "id": "coulis-y-geles-de-fruta",
+    "name": "Salsas de fruta",
+    "note": "El contrapunto ácido a estas salsas."
+   }
+  ],
+  "keys": [
+   "Nata caliente al detener el caramelo: si está fría, se cuaja el azúcar y salpica más.",
+   "El color del caramelo es el sabor: oscuro pero sin oler a quemado.",
+   "Sal en escamas al final para notar los cristales.",
+   "La glucosa evita que el caramelo cristalice al enfriar.",
+   "Sirve a la temperatura a la que fluye: templadas casi todas."
+  ],
+  "errors": [
+   {
+    "p": "Caramelo que se endurece en frío",
+    "fix": "Demasiado reducido. Añade un poco de nata caliente y vuelve a hervir."
+   },
+   {
+    "p": "Cristaliza",
+    "fix": "Azúcar removido en seco o sin glucosa. Añade glucosa o unas gotas de limón."
+   },
+   {
+    "p": "Salsa de chocolate mate",
+    "fix": "Sin glucosa o hervida de más. Añade glucosa y no la hiervas tras el chocolate."
+   },
+   {
+    "p": "Dulce de leche cortado",
+    "fix": "Fuego fuerte o leche muy ácida. Fuego suave y una pizca de bicarbonato."
+   }
+  ],
+  "history": "Las salsas de caramelo, toffee y chocolate son clásicos de la repostería europea y americana, y el dulce de leche es muy popular en Latinoamérica. El caramelo con sal se ha extendido mucho en las últimas décadas.",
+  "uses": [
+   "Helados y semifríos",
+   "Tartas de queso y bizcochos",
+   "Fruta asada",
+   "Crêpes y gofres",
+   "Petit fours y bombones"
+  ],
+  "keep": "En frío y en bote cerrado, 2–3 semanas el caramelo y el toffee; 1 semana la de chocolate. Calentar al baño maría.",
+  "pro": "Ten las salsas en biberón al baño maría templado durante el servicio. Haz el caramelo en tanda: se conserva bien.",
+  "related": [
+   "caramelo",
+   "ganache",
+   "crema-inglesa",
+   "coulis-y-geles-de-fruta",
+   "miel-y-azucares",
+   "leche-nata-y-mantequilla"
+  ]
+ },
+ {
+  "id": "postres-sin-gluten-y-lacteos",
+  "name": "Postres sin gluten y sin lácteos",
+  "name_en": "Gluten-free and dairy-free desserts",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "sin gluten",
+   "sin lactosa",
+   "postre vegano",
+   "sin leche",
+   "aquafaba",
+   "harinas sin gluten",
+   "postre sin huevo"
+  ],
+  "summary": "Cómo adaptar masas, cremas y helados para que no lleven gluten, lácteos o huevo, sin que el postre parezca una versión de segunda.",
+  "what": "El gluten da elasticidad y estructura a las masas; la leche, la nata y la mantequilla dan grasa, cremosidad y sabor; el huevo, estructura y aire. Para cada función hay sustitutos: harinas de arroz, maíz, almendra o trigo sarraceno con un poco de almidón y goma para las masas; aceite de oliva, de coco o leches vegetales para la grasa y la crema; aquafaba (el agua de cocción de los garbanzos) para montar como una clara. Lo mejor es partir de postres que ya son así por naturaleza: sorbetes, fruta asada, bizcochos de almendra, [[menjar-blanc]] o cremas de leche de coco.",
+  "method": [
+   "Empieza por postres que ya no llevan lo que quieres evitar: sorbetes, fruta asada o en almíbar, bizcochos de almendra, cremas de almendra o coco, chocolate negro.",
+   "Para masas sin gluten, mezcla harinas: una base (arroz o maíz), un fruto seco molido para sabor y un almidón para ligereza, más 0,5–1 % de goma xantana o psyllium para dar cohesión.",
+   "Para quitar lácteos, sustituye la mantequilla por aceite de oliva suave o de coco y la leche por leche vegetal con algo de grasa (almendra, avena, coco).",
+   "Para quitar huevo de un merengue o mousse, usa aquafaba reducida: se monta con azúcar como la clara.",
+   "Prueba cada versión al lado de la original y ajusta azúcar, grasa y sal: suelen pedir más sabor.",
+   "Si es por alergia o celiaquía, usa utensilios, superficies y aceites limpios y separados para evitar la contaminación cruzada."
+  ],
+  "ratios": [
+   {
+    "use": "Mezcla de harinas sin gluten",
+    "ratio": "60 % de harina de arroz, 25 % de almidón (maíz o patata) y 15 % de almendra molida",
+    "note": "Con 0,5–1 % de xantana sobre la harina."
+   },
+   {
+    "use": "Merengue de aquafaba",
+    "ratio": "100 g de aquafaba reducida a 70 g y 100–120 g de azúcar",
+    "note": "Se seca a 90–100 °C como un merengue."
+   },
+   {
+    "use": "Crema de coco",
+    "ratio": "1 l de leche de coco, 100 g de azúcar y 70 g de almidón",
+    "note": "Como una pastelera sin huevo."
+   },
+   {
+    "use": "Ganache sin lácteos",
+    "ratio": "1 parte de chocolate negro por 0,8–1 de agua o leche vegetal caliente",
+    "note": "Emulsionada con túrmix; muy limpia de sabor."
+   }
+  ],
+  "variants": [
+   {
+    "id": "menjar-blanc",
+    "name": "Menjar blanc",
+    "note": "Postre tradicional sin lácteos ni huevo."
+   },
+   {
+    "id": "tartas-de-frutos-secos",
+    "name": "Bizcocho de almendra sin harina",
+    "note": "Sin gluten por naturaleza."
+   },
+   {
+    "id": "helados-y-sorbetes",
+    "name": "Sorbetes",
+    "note": "Sin lácteos ni huevo."
+   }
+  ],
+  "keys": [
+   "Parte de lo que ya es así: el mejor postre sin gluten no imita a uno con gluten.",
+   "Mezcla de harinas, nunca una sola.",
+   "Las masas sin gluten piden más hidratación y reposo.",
+   "Sabor primero: grasas y leches vegetales con buen sabor propio.",
+   "Separación estricta si es por alergia o celiaquía."
+  ],
+  "errors": [
+   {
+    "p": "Masa que se desmorona",
+    "fix": "Falta ligante. Añade xantana o psyllium y un poco más de agua."
+   },
+   {
+    "p": "Bizcocho arenoso",
+    "fix": "Harina de arroz sola o poca hidratación. Mezcla harinas y deja reposar la masa 30 minutos."
+   },
+   {
+    "p": "Crema sin cuerpo",
+    "fix": "Leche vegetal poco grasa. Usa leche de coco o de almendra concentrada."
+   }
+  ],
+  "history": "Muchos postres tradicionales del Mediterráneo no llevan gluten ni lácteos, como los de almendra, los sorbetes o la fruta en almíbar. La demanda actual de postres sin alérgenos ha impulsado nuevas técnicas, como el uso de la aquafaba.",
+  "uses": [
+   "Postre alternativo en carta",
+   "Menús adaptados a alergias",
+   "Postres veganos",
+   "Base de postres de fruta y almendra"
+  ],
+  "keep": "Masas sin gluten se secan antes: tapadas, 2–3 días. Cremas vegetales en frío, 3 días.",
+  "pro": "Ten siempre en carta al menos un postre que sea sin gluten y sin lácteos por naturaleza, y su ficha con los ingredientes exactos para informar al comensal.",
+  "related": [
+   "menjar-blanc",
+   "tartas-de-frutos-secos",
+   "helados-y-sorbetes",
+   "harinas-y-almidones",
+   "gelificantes-y-espesantes",
+   "coco"
+  ]
  }
 ]

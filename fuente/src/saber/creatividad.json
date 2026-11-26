@@ -2532,5 +2532,588 @@
    "construir-un-plato",
    "documentar-tu-obra"
   ]
+ },
+ {
+  "id": "menu-mediodia-y-noche",
+  "name": "El menú de mediodía frente al de noche",
+  "name_en": "Lunch menu versus dinner menu",
+  "cat": "creatividad",
+  "group": "Menús",
+  "aka": [
+   "menu de mediodia",
+   "menu de noche",
+   "comida y cena",
+   "menu de verano",
+   "menu ligero",
+   "menu de cena"
+  ],
+  "summary": "Cómo cambia la forma de pensar un menú según el momento del día: luz, calor, tiempo disponible, apetito y ánimo del comensal.",
+  "what": "El mismo comensal no come igual a mediodía que por la noche. Al mediodía, sobre todo en verano y en una isla, busca frescor, platos más ligeros y un ritmo más ágil; tiene luz natural, a menudo calor y quizá algo que hacer después. Por la noche hay más tiempo, la luz es cálida y baja, el cuerpo pide platos más profundos, más brasa y más salsa, y el menú puede ser más largo y contar más. Pensarlo bien no es hacer dos cocinas, sino ajustar la misma cocina al momento: el [[ritmo-de-un-menu]] y la intensidad cambian.",
+  "method": [
+   "Piensa en el comensal de cada momento: cuánto tiempo tiene, qué tiempo hace, qué ha comido o comerá después.",
+   "Al mediodía, sube la proporción de crudos, frío, ácido y verdura; acorta el número de pases y baja la grasa.",
+   "Por la noche, da más espacio a la brasa, los jugos, los guisos y un postre más elaborado.",
+   "Revisa cómo se ve cada plato con luz natural y con la luz de la sala por la noche: colores y brillos cambian.",
+   "Mantén un hilo común para que se reconozca tu cocina en los dos momentos.",
+   "Prueba los dos menús en su hora real."
+  ],
+  "ratios": [
+   {
+    "use": "Pases a mediodía",
+    "ratio": "3–6",
+    "note": "Ritmo más ágil."
+   },
+   {
+    "use": "Pases por la noche",
+    "ratio": "6–12",
+    "note": "Más tiempo para contar."
+   },
+   {
+    "use": "Platos fríos o crudos a mediodía en verano",
+    "ratio": "Un tercio o más del menú",
+    "note": "Frescor con calor."
+   }
+  ],
+  "variants": [
+   {
+    "id": "ritmo-de-un-menu",
+    "name": "Ritmo de un menú",
+    "note": "Cómo ordenar los pases."
+   },
+   {
+    "id": "menu-de-temporada",
+    "name": "Menú de temporada",
+    "note": "La estación también cambia el peso del menú."
+   },
+   {
+    "id": null,
+    "name": "Menú de mesa larga",
+    "note": "Comida de fin de semana para compartir, entre los dos formatos."
+   }
+  ],
+  "keys": [
+   "Mismo cocinero, distinto momento.",
+   "Mediodía: frescor, agilidad y ligereza.",
+   "Noche: profundidad, calor y tiempo.",
+   "La luz cambia cómo se ve el plato.",
+   "Un hilo común en los dos menús."
+  ],
+  "errors": [
+   {
+    "p": "Menú de noche servido a mediodía",
+    "fix": "Demasiado largo y pesado. Acorta y aligera para el mediodía."
+   },
+   {
+    "p": "Cena sin profundidad",
+    "fix": "Menú ligero sin un plato central potente. Da protagonismo a la brasa y los jugos."
+   },
+   {
+    "p": "Dos cocinas que no se reconocen",
+    "fix": "Platos sin relación. Mantén productos o técnicas comunes."
+   }
+  ],
+  "history": "La diferencia entre la comida principal del mediodía y una cena más ligera o más festiva ha cambiado mucho con las costumbres. En las zonas de veraneo mediterráneas, el calor ha marcado siempre comidas frescas y cenas tardías.",
+  "uses": [
+   "Diseñar menús de mediodía y de noche",
+   "Adaptar un menú a verano o invierno",
+   "Eventos a distintas horas",
+   "Revisar el equilibrio de la carta"
+  ],
+  "keep": "Guarda los dos menús de cada temporada con notas de lo que mejor funcionó en cada momento.",
+  "pro": "Haz una prueba de cada menú a su hora real, con la luz real de la sala, antes de cambiarlo.",
+  "related": [
+   "ritmo-de-un-menu",
+   "menu-de-temporada",
+   "del-plato-al-menu",
+   "acidez-en-cocina",
+   "emplatado"
+  ]
+ },
+ {
+  "id": "producto-o-tecnica",
+  "name": "Cocina de producto frente a cocina de técnica",
+  "name_en": "Product-led versus technique-led cooking",
+  "cat": "creatividad",
+  "group": "Método",
+  "aka": [
+   "cocina de producto",
+   "cocina tecnica",
+   "producto o tecnica",
+   "cocinar poco",
+   "intervencion",
+   "estilo de cocina"
+  ],
+  "summary": "Dos formas de entender un plato: dejar que el producto hable con la mínima intervención, o transformarlo con técnica. Cómo elegir y cómo combinar las dos.",
+  "what": "En una cocina de producto, el trabajo está en elegir lo mejor, cocinarlo en su punto y no estorbar: una gamba roja a la brasa con sal. En una cocina de técnica, el producto se transforma para mostrar algo que no se ve a simple vista: una textura, una concentración, una forma nueva. No son opuestas: la técnica precisa es lo que permite que un producto brille sin más, y una técnica sin buen producto no sostiene un plato. La pregunta útil para cada plato es: ¿qué necesita este producto para estar mejor que crudo o que hecho de la forma más simple?",
+  "method": [
+   "Prueba el producto de la forma más sencilla posible (crudo, a la brasa, al vapor con sal).",
+   "Pregúntate qué le falta o qué se puede mostrar que la forma simple no enseña.",
+   "Si nada, la mejor cocina es poca: un punto exacto, sal, buen aceite y quizá un ácido.",
+   "Si hay algo que mostrar (una textura escondida, un sabor que se concentra), elige la técnica que lo hace y nada más.",
+   "Compara la versión simple y la técnica al lado: quédate con la que mejor muestre el producto.",
+   "Revisa el plato final quitando elementos: si no lo echas de menos, sobraba."
+  ],
+  "ratios": [
+   {
+    "use": "Técnicas principales por plato",
+    "ratio": "1",
+    "note": "Más compiten entre sí."
+   },
+   {
+    "use": "Elementos en un plato de producto",
+    "ratio": "1–3",
+    "note": "Producto, aliño y acabado."
+   },
+   {
+    "use": "Prueba comparada",
+    "ratio": "Versión simple y versión técnica, a la vez",
+    "note": "Gana la que más muestra el producto."
+   }
+  ],
+  "variants": [
+   {
+    "id": "de-la-tecnica-al-plato",
+    "name": "De la técnica al plato",
+    "note": "Cuando el punto de partida es la técnica."
+   },
+   {
+    "id": "un-solo-producto",
+    "name": "Trabajar con un solo producto",
+    "note": "Explorar un producto en muchas formas."
+   },
+   {
+    "id": "producto-de-la-isla",
+    "name": "Producto de la isla",
+    "note": "Un producto excelente pide poca intervención."
+   }
+  ],
+  "keys": [
+   "El buen producto es la base de las dos cocinas.",
+   "La técnica precisa también es cocina de producto.",
+   "Intervenir solo cuando mejora.",
+   "Compara siempre con la versión simple.",
+   "Quita lo que no se echa de menos."
+  ],
+  "errors": [
+   {
+    "p": "Técnica que tapa un gran producto",
+    "fix": "Demasiada intervención. Vuelve a la forma simple y añade solo lo que mejore."
+   },
+   {
+    "p": "Plato de producto que no aporta nada",
+    "fix": "Producto mediocre servido sin más. Mejora el producto o el punto."
+   },
+   {
+    "p": "Demostración técnica sin sabor",
+    "fix": "La técnica es el fin. Pregúntate si el comensal lo disfrutaría sin saber cómo se hizo."
+   }
+  ],
+  "history": "La cocina española de las últimas décadas ha vivido a la vez una gran etapa de innovación técnica y una revalorización de la cocina de producto, sobre todo en asadores y restaurantes de brasa y de mar.",
+  "uses": [
+   "Definir el estilo de una cocina",
+   "Decidir cómo tratar un producto nuevo",
+   "Revisar platos recargados",
+   "Formación del equipo"
+  ],
+  "keep": "Apunta en la ficha de cada plato qué técnica usa y por qué; ayuda a no acumular intervenciones con las versiones.",
+  "pro": "En las pruebas, sirve siempre una versión simple del producto al lado del plato elaborado. El equipo aprende a ver qué aporta la técnica.",
+  "related": [
+   "de-la-tecnica-al-plato",
+   "un-solo-producto",
+   "producto-de-la-isla",
+   "construir-un-plato",
+   "fuego-y-brasa"
+  ]
+ },
+ {
+  "id": "corregir-un-plato",
+  "name": "Cómo probar y corregir un plato",
+  "name_en": "Tasting and adjusting a dish",
+  "cat": "creatividad",
+  "group": "Sabor",
+  "aka": [
+   "rectificar",
+   "corregir de sal",
+   "ajustar un plato",
+   "arreglar un plato",
+   "sazonar",
+   "probar en el pase"
+  ],
+  "summary": "Un orden para probar un plato y corregirlo: sal, ácido, grasa, dulzor, amargor y picante, textura y temperatura, y qué hacer cuando algo se ha pasado.",
+  "what": "Probar es preguntarse qué le falta y qué le sobra al bocado completo. Casi siempre lo que falta es sal o ácido; a menudo, algo crujiente o un contraste de temperatura. Hay un orden que ayuda: primero sal, porque cambia la percepción de todo lo demás; después ácido, que da viveza; luego grasa, que redondea; y al final dulzor, amargor y picante en pequeñas dosis. Cuando algo se pasa, rara vez se arregla quitando: se compensa con su contrario o se diluye. Es el trabajo diario del pase y el último paso de [[construir-un-plato]].",
+  "method": [
+   "Prueba el bocado completo, a la temperatura de servicio, con todos los elementos del plato.",
+   "Sal: ¿el sabor se nota plano? Ajusta con sal en pequeñas cantidades y vuelve a probar.",
+   "Ácido: ¿pesa o cansa? Añade limón, vinagre o un encurtido.",
+   "Grasa: ¿está seco o áspero? Un aceite, una mantequilla o una emulsión.",
+   "Dulzor, amargor y picante: ¿falta profundidad o contraste? Ajusta en poca cantidad.",
+   "Textura y temperatura: ¿todo es blando o tibio? Añade un crujiente o un elemento frío o caliente."
+  ],
+  "ratios": [
+   {
+    "use": "Ajuste de sal",
+    "ratio": "En pasos de 0,1–0,2 % del peso",
+    "note": "Pequeños pasos y volver a probar."
+   },
+   {
+    "use": "Plato salado de más",
+    "ratio": "Diluir con más base sin sal, o compensar con ácido y grasa",
+    "note": "El azúcar enmascara poco y empeora."
+   },
+   {
+    "use": "Plato ácido de más",
+    "ratio": "Grasa, algo dulce o más base",
+    "note": "Nunca bicarbonato en un plato terminado."
+   },
+   {
+    "use": "Plato amargo de más",
+    "ratio": "Sal, grasa y un punto dulce",
+    "note": "La sal reduce la percepción del amargor."
+   }
+  ],
+  "variants": [
+   {
+    "id": "acidez-en-cocina",
+    "name": "La acidez",
+    "note": "La corrección que más veces falta."
+   },
+   {
+    "id": "contraste-y-equilibrio",
+    "name": "Contraste y equilibrio",
+    "note": "Cuando lo que falta es un contraste."
+   },
+   {
+    "id": "catas-y-notas",
+    "name": "Pruebas de cata",
+    "note": "Probar con método en el desarrollo de un plato."
+   }
+  ],
+  "keys": [
+   "Prueba el bocado completo, no cada elemento suelto.",
+   "Primero sal, luego ácido, luego grasa.",
+   "Ajusta poco y vuelve a probar.",
+   "Lo que se pasa se compensa con su contrario o se diluye.",
+   "Prueba a la temperatura de servicio."
+  ],
+  "errors": [
+   {
+    "p": "Plato que sabe a poco",
+    "fix": "Falta sal o ácido. Ajusta los dos antes de añadir más ingredientes."
+   },
+   {
+    "p": "Corregir con más y más cosas",
+    "fix": "Se tapan problemas sumando sabores. Vuelve a la base y corrige lo esencial."
+   },
+   {
+    "p": "Probar con el paladar cansado",
+    "fix": "Demasiadas pruebas seguidas. Agua, pan neutro y descanso entre catas."
+   }
+  ],
+  "history": "Probar y rectificar es la habilidad más básica y más difícil del oficio, y se ha transmitido siempre en las cocinas de cocinero a cocinero.",
+  "uses": [
+   "Pase de cada servicio",
+   "Desarrollo de platos nuevos",
+   "Formación del paladar del equipo",
+   "Revisión de platos de carta"
+  ],
+  "keep": "Cuando una corrección se repite, cambia la receta en la ficha: si siempre le falta limón, el limón va en la receta.",
+  "pro": "Ten en el pase cucharas limpias, sal, limón, aceite y un ácido de la casa para corregir al momento. Prueba el primer plato de cada elaboración en cada servicio.",
+  "related": [
+   "acidez-en-cocina",
+   "contraste-y-equilibrio",
+   "catas-y-notas",
+   "construir-un-plato",
+   "sal-y-flor-de-sal"
+  ]
+ },
+ {
+  "id": "aperitivos-y-snacks",
+  "name": "El aperitivo y los snacks",
+  "name_en": "Appetisers and snacks",
+  "cat": "creatividad",
+  "group": "Menús",
+  "aka": [
+   "aperitivo",
+   "snacks",
+   "bocados",
+   "amuse-bouche",
+   "aperitivos de bienvenida",
+   "canapes",
+   "bocados de bienvenida"
+  ],
+  "summary": "Cómo pensar los primeros bocados de una comida: de un solo mordisco, intensos, con la mano, que abran el apetito y presenten la cocina.",
+  "what": "El aperitivo es la primera impresión: el comensal acaba de sentarse, tiene hambre y curiosidad. Funciona mejor si se come de un bocado, con la mano o con un solo cubierto, si es intenso pero pequeño y si abre el apetito en vez de saciar: salado, ácido, crujiente, a menudo frío. Una serie de aperitivos es un pequeño menú: puede presentar el producto de la casa, la técnica de la cocina o el lugar. En una cocina de brasa, un bocado recién salido del fuego al principio marca el tono.",
+  "method": [
+   "Decide qué quieres presentar: el producto de la isla, la brasa, la temporada, una técnica de la casa.",
+   "Diseña bocados de un mordisco (8–20 g), que se coman sin cortar.",
+   "Equilibra la serie: crujiente, cremoso, frío, caliente, ácido, salado. Evita repetir base (no tres bocados sobre pan).",
+   "Prioriza el sabor intenso en poca cantidad: salazones, encurtidos, cítricos, brasa, umami.",
+   "Piensa el servicio: que se pueda montar en serie y rápido, y que aguante el viaje a la mesa.",
+   "Prueba la serie entera en orden, como la tomará el comensal."
+  ],
+  "ratios": [
+   {
+    "use": "Peso por bocado",
+    "ratio": "8–20 g",
+    "note": "Un mordisco."
+   },
+   {
+    "use": "Bocados por serie",
+    "ratio": "3–6",
+    "note": "Antes de un menú largo, menos."
+   },
+   {
+    "use": "Bocado caliente",
+    "ratio": "Al menos uno, recién hecho",
+    "note": "Marca el tono de la cocina."
+   }
+  ],
+  "variants": [
+   {
+    "id": "ritmo-de-un-menu",
+    "name": "Ritmo de un menú",
+    "note": "El aperitivo es el primer movimiento."
+   },
+   {
+    "id": "crudites-y-cortes",
+    "name": "Crudités",
+    "note": "Verdura cruda con untables para empezar."
+   },
+   {
+    "id": "tostadas-y-montaditos",
+    "name": "Tostadas y montaditos",
+    "note": "Bocados sobre pan."
+   }
+  ],
+  "keys": [
+   "Un bocado, con la mano.",
+   "Abrir el apetito, no llenar.",
+   "Sal, ácido y crujiente son los mejores aliados.",
+   "Variedad de textura y temperatura.",
+   "Que presente la casa."
+  ],
+  "errors": [
+   {
+    "p": "Bocados que se deshacen en la mano",
+    "fix": "Base blanda o demasiada salsa. Cambia la base o monta al momento."
+   },
+   {
+    "p": "El comensal se llena antes de empezar",
+    "fix": "Bocados grandes o grasos. Reduce tamaño y grasa."
+   },
+   {
+    "p": "Todos se parecen",
+    "fix": "Misma base o mismo sabor. Varía soportes, temperaturas y sabores."
+   }
+  ],
+  "history": "Picar algo antes de comer es una costumbre muy arraigada en España, de las tapas al vermut. La alta cocina convirtió los bocados de bienvenida en una parte más del menú.",
+  "uses": [
+   "Inicio del menú degustación",
+   "Bienvenida en eventos",
+   "Carta de picoteo",
+   "Barra"
+  ],
+  "keep": "Guarda en la ficha de cada aperitivo su montaje exacto y su tiempo de vida antes de servirse.",
+  "pro": "Prepara bases y rellenos antes del servicio y monta al momento. Ten una pieza caliente que salga directamente de la brasa.",
+  "related": [
+   "ritmo-de-un-menu",
+   "tostadas-y-montaditos",
+   "crudites-y-cortes",
+   "salazones-y-huevas",
+   "pickles-de-servicio",
+   "crujientes-salados"
+  ]
+ },
+ {
+  "id": "final-del-menu",
+  "name": "El prepostre y los petit fours como relato",
+  "name_en": "Pre-dessert and petit fours as a story",
+  "cat": "creatividad",
+  "group": "Menús",
+  "aka": [
+   "prepostre",
+   "pre-postre",
+   "final del menu",
+   "cierre del menu",
+   "secuencia dulce",
+   "sobremesa"
+  ],
+  "summary": "Cómo pensar el final dulce de un menú como una secuencia: un prepostre que limpia, un postre que concluye y unos petit fours que dejan el último recuerdo.",
+  "what": "Después de los platos salados, el comensal necesita una transición. El prepostre la hace: algo frío, ácido y ligero (un granizado, un sorbete, una fruta con hierbas) que limpia la boca y cambia de registro. El postre principal cierra la historia, a menudo recogiendo un producto o un aroma del menú. Los [[petit-fours]] llegan con el café y son el último recuerdo: pequeños, variados y con algo de la casa. Pensados juntos, los tres cuentan un final en lugar de ser tres dulces sueltos.",
+  "method": [
+   "Repasa el menú salado y decide qué hilo puede continuar en el dulce: un producto, un aroma, la temporada.",
+   "Diseña un prepostre frío, ácido y ligero que limpie: granizado, sorbete, fruta cruda con hierbas, panna cotta muy ligera.",
+   "El postre principal: más completo, con contraste de temperatura y textura, y con el hilo del menú.",
+   "Los petit fours: 3–5 bocados con algo del lugar (almendra, higo, algarroba, cítricos).",
+   "Gradúa el dulzor: de menos a más, sin empalagar.",
+   "Prueba la secuencia completa, con el café, después de un menú real."
+  ],
+  "ratios": [
+   {
+    "use": "Prepostre",
+    "ratio": "20–40 g, frío y ácido",
+    "note": "Dos o tres cucharadas."
+   },
+   {
+    "use": "Postre principal",
+    "ratio": "80–120 g en total",
+    "note": "Después de un menú largo, mejor menos."
+   },
+   {
+    "use": "Petit fours",
+    "ratio": "3–5 piezas de 8–15 g",
+    "note": "Con el café."
+   }
+  ],
+  "variants": [
+   {
+    "id": "petit-fours",
+    "name": "Petit fours",
+    "note": "Cómo elegir y producir los bocados dulces."
+   },
+   {
+    "id": "helados-sin-maquina",
+    "name": "Granizados",
+    "note": "El prepostre más habitual."
+   },
+   {
+    "id": "ritmo-de-un-menu",
+    "name": "Ritmo de un menú",
+    "note": "El final dentro de la secuencia completa."
+   }
+  ],
+  "keys": [
+   "El prepostre limpia: frío, ácido y ligero.",
+   "Un hilo que una el final con el resto del menú.",
+   "Dulzor creciente pero contenido.",
+   "Los petit fours son el último recuerdo: que hablen de la casa.",
+   "Menos cantidad cuanto más largo el menú."
+  ],
+  "errors": [
+   {
+    "p": "Final empalagoso",
+    "fix": "Demasiado dulce acumulado. Añade acidez y quita una pieza."
+   },
+   {
+    "p": "Prepostre que es otro postre",
+    "fix": "Demasiado elaborado o dulce. Simplifica: frío y ácido."
+   },
+   {
+    "p": "Final sin relación con el menú",
+    "fix": "Dulces sueltos. Recoge un producto o aroma del menú salado."
+   }
+  ],
+  "history": "La secuencia de prepostre, postre y petit fours se ha generalizado en los menús degustación de la alta cocina de las últimas décadas, como cierre en varios tiempos.",
+  "uses": [
+   "Menú degustación",
+   "Cenas especiales",
+   "Eventos",
+   "Revisión del final del menú"
+  ],
+  "keep": "Guarda la secuencia dulce de cada menú con fechas y notas de cómo se recibió.",
+  "pro": "Coordina con la partida de postres el tiempo entre el último salado y el prepostre: es el momento en que más se nota una espera.",
+  "related": [
+   "petit-fours",
+   "ritmo-de-un-menu",
+   "helados-sin-maquina",
+   "contar-un-plato",
+   "del-plato-al-menu"
+  ]
+ },
+ {
+  "id": "cocinar-para-compartir",
+  "name": "Cocinar para compartir",
+  "name_en": "Cooking for sharing",
+  "cat": "creatividad",
+  "group": "Menús",
+  "aka": [
+   "platos para compartir",
+   "cocina de centro de mesa",
+   "raciones para compartir",
+   "comida en familia",
+   "family style",
+   "platos al centro"
+  ],
+  "summary": "Cómo diseñar platos que se ponen en el centro de la mesa y se reparten: tamaño, forma, servicio, equilibrio entre platos y el placer de comer juntos.",
+  "what": "Un plato para compartir no es un plato individual más grande. Se tiene que poder repartir sin destrozarlo, aguantar unos minutos en la mesa, tener suficientes partes para todos y combinar con los otros platos que llegan a la vez. Las piezas enteras a la brasa, los arroces, las ensaladas grandes, las verduras asadas y las cremas para mojar funcionan bien. Es una forma de comer muy mediterránea: la mesa llena, el comensal elige y se sirve.",
+  "method": [
+   "Piensa la mesa entera, no el plato: qué combinaciones de platos llegarán juntos.",
+   "Diseña platos que se puedan repartir fácilmente: piezas que se cortan en la mesa, elementos que no se mezclan si no se quiere.",
+   "Asegura que cada comensal pueda llevarse todos los sabores en su ración.",
+   "Elige recipientes y temperaturas que aguanten: fuentes calientes, cazuelas de barro, platos fríos.",
+   "Equilibra la mesa: algo fresco, algo crujiente, algo cremoso, una pieza principal y verdura.",
+   "Decide el orden de salida: primero lo frío y para picar, después lo caliente, y la pieza principal en el centro."
+  ],
+  "ratios": [
+   {
+    "use": "Platos para una mesa de 4",
+    "ratio": "4–6 platos para compartir más un postre",
+    "note": "Según el tamaño de cada uno."
+   },
+   {
+    "use": "Pieza principal",
+    "ratio": "200–250 g de proteína por persona",
+    "note": "Con guarniciones aparte."
+   },
+   {
+    "use": "Elementos por plato",
+    "ratio": "2–4",
+    "note": "Claros y fáciles de repartir."
+   }
+  ],
+  "variants": [
+   {
+    "id": "menu-mediodia-y-noche",
+    "name": "Menú de mesa larga",
+    "note": "Comidas de fin de semana para compartir."
+   },
+   {
+    "id": "arroces",
+    "name": "Arroces al centro",
+    "note": "El plato de compartir por excelencia."
+   },
+   {
+    "id": "pescado-entero",
+    "name": "Pescado entero a la brasa",
+    "note": "Pieza entera que se sirve y se reparte en la mesa."
+   }
+  ],
+  "keys": [
+   "Fácil de repartir.",
+   "Cada ración debe tener todos los sabores.",
+   "Que aguante en la mesa unos minutos.",
+   "Piensa la mesa completa, no platos sueltos.",
+   "Generosidad: la mesa llena es parte del placer."
+  ],
+  "errors": [
+   {
+    "p": "Plato que se destroza al servir",
+    "fix": "Montaje individual en grande. Diseña piezas que se separen limpias."
+   },
+   {
+    "p": "Mesa desequilibrada",
+    "fix": "Todos los platos fritos o grasos. Añade frescos y verdura."
+   },
+   {
+    "p": "Platos que llegan fríos",
+    "fix": "Recipientes finos o tiempos largos. Usa fuentes calientes y saca en el orden previsto."
+   }
+  ],
+  "history": "Comer de platos comunes al centro de la mesa es tradición en muchas cocinas mediterráneas y de todo el mundo, de las tapas y raciones españolas a las mesas familiares. Muchos restaurantes actuales han vuelto a este formato.",
+  "uses": [
+   "Carta de raciones",
+   "Menús de grupo",
+   "Comidas familiares de fin de semana",
+   "Eventos informales"
+  ],
+  "keep": "Apunta en la ficha de cada plato para compartir su número de raciones y cómo se reparte.",
+  "pro": "Explica a sala cómo se sirve cada plato en la mesa y si se corta delante del comensal. Prueba las raciones con el equipo comiendo como lo haría un grupo.",
+  "related": [
+   "arroces",
+   "pescado-entero",
+   "menu-mediodia-y-noche",
+   "construir-un-plato",
+   "emplatado"
+  ]
  }
 ]
