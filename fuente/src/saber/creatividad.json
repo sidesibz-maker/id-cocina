@@ -693,5 +693,93 @@
    "fermentacion-lactica",
    "ritmo-de-un-menu"
   ]
+ },
+ {
+  "id": "emplatado",
+  "name": "Emplatado",
+  "name_en": "Plating",
+  "cat": "creatividad",
+  "group": "Método",
+  "aka": [
+   "presentacion",
+   "composicion del plato",
+   "montaje",
+   "emplatar",
+   "plato bonito",
+   "colores en el plato"
+  ],
+  "summary": "Componer un plato que se entienda a la primera, se coma bien y se repita igual en el pase: plato, altura, color, espacio y orden de montaje.",
+  "what": "Un buen emplatado sirve al sabor: muestra el protagonista, deja ver de qué está hecho el plato y permite que cada bocado lleve de todo. La belleza viene del orden: espacio libre, pocos colores, una altura o un punto de atención y bordes limpios. Además tiene que poderse repetir igual cien veces en el pase.",
+  "method": [
+   "Elige el plato pensando en el tamaño y el color de la comida: que la enmarque, no que la llene.",
+   "Coloca primero el protagonista y después lo que lo acompaña, pensando en cómo se va a comer.",
+   "Deja espacio libre: el vacío hace que se vea lo importante.",
+   "Juega con alturas y una sola dirección, no con mil puntos de salsa.",
+   "Escribe el orden de montaje y haz una foto de referencia en la ficha del plato (o dibújalo en el boceto)."
+  ],
+  "ratios": [
+   {
+    "use": "Ocupación del plato",
+    "ratio": "Entre la mitad y dos tercios de la superficie",
+    "note": "Lo demás, aire."
+   },
+   {
+    "use": "Colores",
+    "ratio": "Dos o tres dominantes",
+    "note": "Uno de contraste."
+   },
+   {
+    "use": "Elementos visibles",
+    "ratio": "De 3 a 5",
+    "note": "Lo mismo que en el sabor."
+   }
+  ],
+  "variants": [
+   {
+    "id": "construir-un-plato",
+    "name": "Construir un plato",
+    "note": "El sabor manda; el emplatado lo cuenta."
+   },
+   {
+    "id": "contar-un-plato",
+    "name": "Contar un plato",
+    "note": "Lo que se ve y lo que se dice."
+   }
+  ],
+  "keys": [
+   "Que se coma bien: cada bocado con todo.",
+   "Bordes limpios siempre.",
+   "Foto de referencia en la ficha.",
+   "Mismo plato, misma loza, mismo orden.",
+   "La temperatura del plato importa tanto como la de la comida."
+  ],
+  "errors": [
+   {
+    "p": "Se ve recargado",
+    "fix": "Demasiados elementos o colores. Quita hasta que se lea el protagonista."
+   },
+   {
+    "p": "Bonito pero incómodo de comer",
+    "fix": "Montado para la foto. Piensa el plato desde el cubierto."
+   },
+   {
+    "p": "Cada cocinero lo monta distinto",
+    "fix": "Falta referencia. Foto y orden de montaje en la ficha."
+   }
+  ],
+  "history": "El emplatado individual en cocina, en lugar de servir en fuente, se generalizó en la alta cocina de finales del siglo XX y hoy es parte del lenguaje de cada restaurante.",
+  "uses": [
+   "Platos de carta",
+   "Menús degustación",
+   "Concursos",
+   "Fotos para redes"
+  ],
+  "keep": "La foto de referencia y el orden de montaje, en la ficha del plato.",
+  "pro": "Antes de abrir un plato nuevo, monta diez seguidos con el equipo y quédate con el que mejor se repite. Usa la revisión del emplatado con foto de la app.",
+  "related": [
+   "construir-un-plato",
+   "contar-un-plato",
+   "contraste-y-equilibrio"
+  ]
  }
 ]

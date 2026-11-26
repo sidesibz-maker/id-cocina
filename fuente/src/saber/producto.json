@@ -1159,5 +1159,380 @@
    "fuego-y-brasa",
    "acidez-en-cocina"
   ]
+ },
+ {
+  "id": "sal-y-flor-de-sal",
+  "name": "Sal y flor de sal",
+  "name_en": "Salt and fleur de sel",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "sal marina",
+   "flor de sal",
+   "sal en escamas",
+   "salinas",
+   "salar",
+   "sal ahumada",
+   "sales aromatizadas"
+  ],
+  "summary": "Cuándo salar, con qué sal y cuánto: sal fina para cocinar, gruesa para costras y salazones, y flor de sal o escamas para terminar.",
+  "what": "La sal es el condimento que más cambia un plato. La fina se disuelve rápido y es la de cocinar; la gruesa sirve para costras, salmueras y salazones; la flor de sal y las escamas se ponen al final porque crujen y dan pequeños golpes de sabor. Las salinas de la isla dan una sal marina con identidad propia, buena para contar en la carta.",
+  "method": [
+   "Sala en capas: un poco en cada fase en lugar de todo al final.",
+   "Las carnes, saladas con tiempo (más de 40 minutos) o justo antes, nunca a medias.",
+   "Las verduras de hoja y los pescados delicados, al final o en el momento.",
+   "Termina con flor de sal o escamas justo antes de servir para que crujan.",
+   "Para sales aromatizadas, mezcla la sal con hierbas, cítricos o especias secas y deja secar."
+  ],
+  "ratios": [
+   {
+    "use": "Agua de cocción de pasta o verduras",
+    "ratio": "10 g de sal por litro",
+    "note": "Sabe ligeramente salada."
+   },
+   {
+    "use": "Sazonado de carnes",
+    "ratio": "1 a 1,5 % del peso",
+    "note": "10-15 g por kilo."
+   },
+   {
+    "use": "Costra de sal para pescado",
+    "ratio": "2 kg de sal gruesa con 2-3 claras por pieza de 1,5 kg",
+    "note": "Horno fuerte."
+   },
+   {
+    "use": "Sal aromatizada",
+    "ratio": "100 g de sal con 10-20 g de aromas secos",
+    "note": "Ralladuras, hierbas, pimentón."
+   }
+  ],
+  "variants": [
+   {
+    "id": "salmuera",
+    "name": "Salmuera",
+    "note": "Sal disuelta en agua."
+   },
+   {
+    "id": "curado-de-pescado",
+    "name": "Curado de pescado",
+    "note": "Sal y azúcar sobre el pescado."
+   }
+  ],
+  "keys": [
+   "Prueba siempre antes de servir.",
+   "Sal fina para cocinar, flor de sal para terminar.",
+   "La sal realza: un plato soso no se arregla con más de todo lo demás.",
+   "La acidez puede sustituir parte de la sal.",
+   "Las sales aromatizadas son una firma barata y muy vistosa."
+  ],
+  "errors": [
+   {
+    "p": "Salado",
+    "fix": "Amplía con más producto sin sal, añade grasa o acidez; un plato pasado de sal casi nunca se salva del todo."
+   },
+   {
+    "p": "Soso por dentro y salado por fuera",
+    "fix": "Sal solo al final. Sala en capas o con antelación."
+   },
+   {
+    "p": "La flor de sal desaparece",
+    "fix": "Se puso sobre algo húmedo o demasiado pronto. Al último segundo."
+   }
+  ],
+  "history": "La sal de las salinas ha sido una riqueza histórica de la isla de Ibiza y del Mediterráneo, base de la conservación de pescados y carnes.",
+  "uses": [
+   "Todo",
+   "Costras",
+   "Salazones y salmueras",
+   "Acabado de platos"
+  ],
+  "keep": "En recipiente cerrado y seco; la flor de sal, lejos de la humedad.",
+  "pro": "Ten en el pase un salero de sal fina y otro de flor de sal, siempre en el mismo sitio, para que todo el equipo sale igual.",
+  "related": [
+   "salmuera",
+   "curado-de-pescado",
+   "acidez-en-cocina",
+   "especias"
+  ]
+ },
+ {
+  "id": "almendra",
+  "name": "Almendra",
+  "name_en": "Almonds",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "almendra marcona",
+   "almendra tostada",
+   "leche de almendra",
+   "harina de almendra",
+   "praline",
+   "almendra verde"
+  ],
+  "summary": "Tostar, moler y aprovechar la almendra: picadas, sopas frías, leches, crujientes y pralinés.",
+  "what": "La almendra da cuerpo, grasa y un sabor dulce y tostado. Cruda aporta frescor lácteo (ajoblanco, leches); tostada, profundidad (picada, romesco, pralinés). La almendra verde, en primavera, se come tierna. Es un producto del campo mediterráneo y de la isla, con mucha presencia en la repostería tradicional.",
+  "method": [
+   "Escalda en agua hirviendo un minuto para pelarlas fácilmente si las necesitas sin piel.",
+   "Tuesta al horno a 160-170 °C, 8-12 minutos, moviendo a mitad, hasta que huelan y se doren por dentro.",
+   "Para leche de almendra, remoja la cruda 8-12 horas, tritura con agua y cuela.",
+   "Para praliné, carameliza azúcar, mezcla con almendra tostada, enfría y tritura hasta pasta.",
+   "Para picada, maja la almendra tostada con ajo, pan frito y perejil."
+  ],
+  "ratios": [
+   {
+    "use": "Leche de almendra",
+    "ratio": "1 parte de almendra remojada por 3-4 de agua",
+    "note": "Colar por tela."
+   },
+   {
+    "use": "Praliné",
+    "ratio": "Partes iguales de almendra tostada y azúcar caramelizado",
+    "note": "Triturar hasta pasta."
+   },
+   {
+    "use": "Picada para un guiso",
+    "ratio": "20-30 g de almendra tostada por litro de salsa",
+    "note": "Al final de la cocción."
+   }
+  ],
+  "variants": [
+   {
+    "id": "picada",
+    "name": "Picada",
+    "note": "La almendra como ligazón y sabor."
+   },
+   {
+    "id": "ajoblanco",
+    "name": "Ajoblanco",
+    "note": "La sopa fría de almendra."
+   },
+   {
+    "id": "romesco",
+    "name": "Romesco",
+    "note": "Almendra tostada con ñora."
+   }
+  ],
+  "keys": [
+   "Tostar despacio: por dentro tiene que estar dorada, no solo por fuera.",
+   "La almendra tostada pierde aroma en días: tuesta lo que vayas a usar.",
+   "Cruda para frescor, tostada para profundidad.",
+   "El praliné hecho en casa no tiene comparación.",
+   "Ojo al alérgeno: frutos de cáscara."
+  ],
+  "errors": [
+   {
+    "p": "Amarga",
+    "fix": "Tostado de más. Baja la temperatura y vigila."
+   },
+   {
+    "p": "Leche de almendra arenosa",
+    "fix": "Poco remojo o mal colada. Remoja más y cuela por tela."
+   },
+   {
+    "p": "Praliné que no se hace pasta",
+    "fix": "Poca molienda o almendra fría. Tritura más tiempo, con paciencia."
+   }
+  ],
+  "history": "El almendro es parte del paisaje mediterráneo y de la isla, y la almendra está en muchas recetas tradicionales, de las picadas a los dulces.",
+  "uses": [
+   "Picadas y salsas",
+   "Sopas frías",
+   "Postres y pralinés",
+   "Crujientes"
+  ],
+  "keep": "En frío y hermética: su grasa se enrancia con calor y luz.",
+  "pro": "Tuesta cada mañana lo del día y guarda el resto cruda en frío. Praliné en tandas, en bote cerrado.",
+  "related": [
+   "picada",
+   "ajoblanco",
+   "romesco",
+   "caramelo"
+  ]
+ },
+ {
+  "id": "pescado-de-roca",
+  "name": "Pescado de roca",
+  "name_en": "Rockfish",
+  "cat": "producto",
+  "group": "Pescado y marisco",
+  "aka": [
+   "cap roig",
+   "rascacio",
+   "gallo de san pedro",
+   "serrano",
+   "araña",
+   "morena",
+   "caldo de pescado de roca",
+   "bullit"
+  ],
+  "summary": "Los peces de roca del Mediterráneo: para caldos, arroces y guisos, cómo limpiarlos con seguridad y cómo sacarles todo el sabor.",
+  "what": "Los peces de roca (cap roig, rascacio, araña, serrano, gallo de San Pedro) tienen carne firme y muchísimo sabor, y sus espinas y cabezas dan los mejores caldos para arroces y guisos marineros. Algunos tienen espinas venenosas en las aletas: se cortan con tijera antes de limpiarlos.",
+  "method": [
+   "Con guantes, corta con tijera las aletas con espinas (sobre todo en araña y rascacio).",
+   "Descama, vacía y lava bien las agallas.",
+   "Separa lomos o deja en piezas para guisar; reserva cabezas y espinas.",
+   "Para caldo, sofríe las cabezas y espinas con un sofrito, moja con agua fría y cuece 25-30 minutos sin pasarte.",
+   "Cuela por chino aplastando para sacar todo el sabor."
+  ],
+  "ratios": [
+   {
+    "use": "Caldo de roca para arroz",
+    "ratio": "1 kg de pescado de roca y espinas por 2,5 l de agua",
+    "note": "25-30 minutos de cocción."
+   },
+   {
+    "use": "Guiso con patata",
+    "ratio": "250-300 g de pescado limpio por persona",
+    "note": "El pescado entra al final."
+   },
+   {
+    "use": "Lomo a la plancha",
+    "ratio": "Con piel, fuego vivo, 3-4 minutos",
+    "note": "Carne firme y sabrosa."
+   }
+  ],
+  "variants": [
+   {
+    "id": "fumet",
+    "name": "Fumet",
+    "note": "La base de pescado blanco."
+   },
+   {
+    "id": "arroces",
+    "name": "Arroces",
+    "note": "El caldo de roca es la base de muchos arroces."
+   },
+   {
+    "id": "pescado-entero",
+    "name": "Limpiar y racionar pescado",
+    "note": "Técnica de limpieza."
+   }
+  ],
+  "keys": [
+   "Guantes y tijera para las espinas venenosas.",
+   "Caldo corto: el pescado pasado da amargor.",
+   "Las cabezas tostadas dan color y sabor.",
+   "Cuela aplastando bien en el chino.",
+   "El pescado del guiso, al final y poco tiempo."
+  ],
+  "errors": [
+   {
+    "p": "Caldo turbio y amargo",
+    "fix": "Hervor fuerte o cocción larga. Hervor suave y 25-30 minutos."
+   },
+   {
+    "p": "Pinchazo al limpiar",
+    "fix": "Espinas sin cortar. Corta siempre las aletas con tijera primero."
+   },
+   {
+    "p": "Pescado deshecho en el guiso",
+    "fix": "Entró pronto. Añádelo los últimos minutos."
+   }
+  ],
+  "history": "Los guisos de pescado de roca con su arroz aparte son tradición en las islas y en toda la costa mediterránea.",
+  "uses": [
+   "Caldos y fumets",
+   "Arroces a banda",
+   "Guisos marineros",
+   "Plancha y brasa"
+  ],
+  "keep": "Fresco en frío y del día; el caldo, en frío o congelado.",
+  "pro": "Haz el caldo de roca en tandas y congélalo racionado por paella; es la base de los arroces del servicio.",
+  "related": [
+   "fumet",
+   "arroces",
+   "pescado-entero",
+   "sofrito"
+  ]
+ },
+ {
+  "id": "higos-y-algarroba",
+  "name": "Higos y algarroba",
+  "name_en": "Figs and carob",
+  "cat": "producto",
+  "group": "Huerta y monte",
+  "aka": [
+   "higo",
+   "higo seco",
+   "brevas",
+   "algarroba",
+   "harina de algarroba",
+   "hoja de higuera",
+   "higos pasos"
+  ],
+  "summary": "Dos productos del campo de la isla: el higo fresco y seco, la hoja de higuera como aroma, y la algarroba como sustituto del cacao y sabor propio.",
+  "what": "El higo fresco es dulce y delicado; seco, concentra azúcar y sabor y se conserva todo el año. La hoja de higuera tiene un aroma a coco y nuez que se infusiona en natas, aceites y almíbares. La algarroba, con su harina tostada, da un dulzor terroso y achocolatado y se usa en panes, postres y bebidas.",
+  "method": [
+   "Higo fresco: sin lavar mucho, abierto en cruz o asado brevemente en la brasa o al horno.",
+   "Higo seco: hidrata en agua templada, vino dulce o té si lo necesitas tierno.",
+   "Hoja de higuera: infusiona en nata o leche caliente 20 minutos, o en aceite templado, y cuela.",
+   "Algarroba: usa la harina tostada en masas y cremas como parte del cacao o la harina.",
+   "Combina con quesos, frutos secos, carnes de caza y cerdo."
+  ],
+  "ratios": [
+   {
+    "use": "Infusión de hoja de higuera",
+    "ratio": "2-3 hojas por 500 ml de nata o leche",
+    "note": "20 minutos tapado."
+   },
+   {
+    "use": "Harina de algarroba en masas",
+    "ratio": "Sustituye hasta un 20-30 % de la harina",
+    "note": "Aporta dulzor y color."
+   },
+   {
+    "use": "Higo asado",
+    "ratio": "Brasa fuerte, 2-3 minutos",
+    "note": "Con un punto de sal."
+   }
+  ],
+  "variants": [
+   {
+    "id": "helados-y-sorbetes",
+    "name": "Helados",
+    "note": "El helado de hoja de higuera es un clásico de autor."
+   },
+   {
+    "id": "cocina-ibicenca",
+    "name": "Cocina ibicenca",
+    "note": "Productos de la isla."
+   }
+  ],
+  "keys": [
+   "El higo fresco no aguanta: compra lo del día.",
+   "La hoja de higuera, siempre infusionada y colada.",
+   "La algarroba combina con almendra, naranja y canela.",
+   "Un toque de sal y de ácido equilibra su dulzor.",
+   "Son productos con identidad de isla: cuéntalos en la carta."
+  ],
+  "errors": [
+   {
+    "p": "Higo fresco aguado",
+    "fix": "Fruta poco madura o lavada en exceso. Elige higos tiernos y limpia con paño."
+   },
+   {
+    "p": "Infusión de hoja amarga",
+    "fix": "Hervida o demasiado tiempo. Calor suave y tapada."
+   },
+   {
+    "p": "Masa de algarroba seca",
+    "fix": "Mucha proporción de harina de algarroba. Baja el porcentaje."
+   }
+  ],
+  "history": "Higueras y algarrobos son árboles característicos del campo ibicenco; sus frutos se secaban para el invierno y la algarroba se usaba también como alimento de animales.",
+  "uses": [
+   "Postres",
+   "Helados",
+   "Panes",
+   "Quesos y aperitivos",
+   "Carnes de caza y cerdo"
+  ],
+  "keep": "Higo fresco en frío y del día; seco y algarroba, en lugar seco y cerrado.",
+  "pro": "Infusiona las natas el día antes. Seca higos de temporada para tener todo el año.",
+  "related": [
+   "helados-y-sorbetes",
+   "cocina-ibicenca",
+   "almendra"
+  ]
  }
 ]
