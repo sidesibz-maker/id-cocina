@@ -5,7 +5,7 @@
 import {t, en, dayKey} from '../i18n.js';
 import {esc, icon, $, toast} from '../ui.js';
 import {docById, saveDoc, liveSubs, liveDishes, liveDocs} from '../store.js';
-import {entries} from '../saber/index.js';
+import {entries, entryById} from '../saber/index.js';
 
 export const title = () => t('Entrenar', 'Train');
 const ID = 'repaso:estado', GAP = [0, 1, 3, 7, 16, 35, 80]; // días hasta volver a verla, según la caja
@@ -39,9 +39,12 @@ export function cards() {
 }
 const progress = () => docById(ID)?.cards || {};
 const isDue = (c, p) => !p[c.id] || p[c.id].due <= dayKey();
-let session = null, cat = 'todo';
+let session = null, cat = 'todo', only = '';
+// Cuántas tarjetas salen de una ficha (para el botón «Repasar esta ficha»).
+export const cardsFor = id => cards().filter(c => c.from === id).length;
 function newSession() {
- const p = progress(), all = cards().filter(c => cat === 'todo' || c.cat === cat);
+ const p = progress(), all = cards().filter(c => (only ? c.from === only : cat === 'todo' || c.cat === cat));
+ if (only) { session = {list: all.sort(() => Math.random() - .5), at: 0, shown: false, right: 0, wrong: 0}; return; }
  // Primero las que tocan hoy (las falladas antes), luego algunas nuevas: 15 por tanda.
  const due = all.filter(c => p[c.id] && p[c.id].due <= dayKey()).sort((a, b) => p[a.id].box - p[b.id].box);
  const fresh = all.filter(c => !p[c.id]).sort(() => Math.random() - .5);
@@ -53,12 +56,15 @@ function stats() {
 }
 export const dueToday = () => { const p = progress(); return Object.values(p).filter(x => x.due <= dayKey()).length; };
 
-export function render() {
- const s = stats(), d = docById(ID);
+export function render(params = []) {
+ const s = stats(), d = docById(ID), want = params[0] === 'ficha' && entryById(params[1]) ? params[1] : '';
+ if (want !== only) { only = want; session = null; }
  if (!session) newSession();
+ const focus = only ? entryById(only) : null;
  return '<header class="page-head"><h1>' + esc(t('Entrenar', 'Train')) + '</h1><p>' + esc(t('Cinco minutos al día con lo que un buen cocinero sabe de memoria: proporciones, fallos y arreglos, recetas base y temperaturas. Lo que fallas vuelve mañana; lo que sabes, cada vez más tarde.', 'Five minutes a day with what a good cook knows by heart: ratios, faults and fixes, base recipes and temperatures. What you miss comes back tomorrow; what you know, later and later.')) + '</p></header>' +
   '<div class="stats"><div class="stat"><strong>' + s.known + '</strong><span>' + esc(t('tarjetas que ya dominas', 'cards you master')) + '</span></div><div class="stat"><strong>' + s.seen + ' / ' + s.total + '</strong><span>' + esc(t('vistas alguna vez', 'seen at least once')) + '</span></div><div class="stat"><strong>' + s.due + '</strong><span>' + esc(t('para repasar hoy', 'to review today')) + '</span></div><div class="stat"><strong>' + (d?.streak || 0) + '</strong><span>' + esc(t('días seguidos entrenando', 'days in a row')) + '</span></div></div>' +
-  '<div class="seg tcats" role="group" aria-label="' + esc(t('Tema', 'Topic')) + '">' + CATS.map(c => '<button type="button" class="seg-btn' + (c[0] === cat ? ' active' : '') + '" data-cat="' + c[0] + '" aria-pressed="' + (c[0] === cat) + '">' + esc(en() ? c[2] : c[1]) + '</button>').join('') + '</div>' +
+  (focus ? '<p class="tronly">' + esc(t('Repasando solo la ficha ', 'Reviewing only the entry ')) + '<a href="#/biblioteca/' + esc(focus.id) + '">' + esc(focus.name) + '</a>. <a href="#/entrenar">' + esc(t('Volver a todos los temas', 'Back to all topics')) + '</a></p>' :
+  '<div class="seg tcats" role="group" aria-label="' + esc(t('Tema', 'Topic')) + '">' + CATS.map(c => '<button type="button" class="seg-btn' + (c[0] === cat ? ' active' : '') + '" data-cat="' + c[0] + '" aria-pressed="' + (c[0] === cat) + '">' + esc(en() ? c[2] : c[1]) + '</button>').join('') + '</div>') +
   '<div id="trCard" aria-live="polite">' + cardHtml() + '</div>';
 }
 function cardHtml() {
@@ -86,14 +92,14 @@ async function answer(grade) {
  session.at++; session.shown = false;
  await saveDoc('repaso', ID, {cards: p, last: today, streak});
 }
-export function mount(root) {
+export function mount(root, params = []) {
  const paint = () => { $('#trCard', root).innerHTML = cardHtml(); $('#trCard [data-tr]', root)?.focus({preventScroll: true}); };
  root.addEventListener('click', async e => {
   const b = e.target.closest('[data-tr]'), c = e.target.closest('[data-cat]');
-  if (c) { cat = c.dataset.cat; newSession(); root.innerHTML = render(); return; }
+  if (c) { cat = c.dataset.cat; newSession(); root.innerHTML = render(params); return; }
   if (!b) return;
   if (b.dataset.tr === 'flip') { session.shown = true; paint(); return; }
-  if (b.dataset.tr === 'more') { newSession(); root.innerHTML = render(); return; }
+  if (b.dataset.tr === 'more') { newSession(); root.innerHTML = render(params); return; }
   await answer(Number(b.dataset.tr)); paint();
  });
  // Teclado: espacio para dar la vuelta; 1, 2, 3 para responder.

@@ -76,6 +76,20 @@ await page.evaluate(() => { const v = JSON.parse(localStorage.getItem('id-cocina
 await page.reload(); await wait(800); await go('#/biblioteca'); await wait(300);
 const fy = await page.textContent('.kforyou').catch(() => '');
 ok(fy.includes('Casquería') && fy.includes('Chiles'), 'la Biblioteca no propone fichas según tus intereses: ' + fy);
+// Favoritas que viajan (documento), repasar una ficha y libro de cocina para imprimir
+await go('#/biblioteca/flao'); await page.waitForSelector('.kentry');
+await page.click('[data-act=favorite]'); await wait(200);
+ok(await page.evaluate(() => JSON.parse(localStorage.getItem('id-cocina-v1')).docs?.['favoritas:lista']?.ids?.includes('flao')), 'la favorita no se guarda para sincronizar');
+await page.click('a[href="#/entrenar/ficha/flao"]'); await page.waitForSelector('.tronly');
+ok((await page.textContent('.trq')).includes('Flaó'), 'repasar esta ficha no enseña tarjetas de la ficha: ' + await page.textContent('.trq'));
+await go('#/biblioteca'); await page.waitForSelector('[data-act=kbook]');
+await page.evaluate(() => { window.print = () => { window.__printed = document.getElementById('printFicha').innerHTML; }; });
+await page.click('[data-act=kbook]'); await page.waitForSelector('#kbkPath');
+await page.selectOption('#kbkPath', 'isla'); await page.click('.sheet [data-ok]'); await wait(400);
+const book = await page.evaluate(() => window.__printed || '');
+ok(book.includes('Greixonera') && book.includes('Flaó') && book.includes('Índice'), 'el libro no lleva las fichas elegidas');
+ok(book.includes('Bechamel') && book.includes('Mi versión'), 'el libro no lleva tus versiones');
+await page.evaluate(() => document.documentElement.classList.remove('printing'));
 ok(!errors.length, 'errores: ' + errors.join(' | '));
 await browser.close();
 console.log(fails.length ? 'FALLOS:\n - ' + fails.join('\n - ') : 'la Biblioteca: todo correcto');

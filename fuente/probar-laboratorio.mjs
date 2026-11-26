@@ -74,6 +74,12 @@ ok(await page.locator('.labideas .idea-card').count() === 3, 'no salen las tres 
 await page.click('[data-take="1"]'); await wait(800);
 ok((await page.evaluate(() => location.hash)).startsWith('#/plato/') && (await page.inputValue('#dishName')).includes('Higo a la brasa 2'), 'llevar la propuesta no crea el plato');
 await go('#/laboratorio/higo'); ok((await page.textContent('.labtrio .labing')).toLowerCase().includes('higo'), 'el Laboratorio no parte del producto de la dirección');
+// Reto con restricción: cambia y se apunta en el cuaderno
+await go('#/laboratorio'); await page.waitForSelector('.labrule-text');
+const r1 = await page.textContent('.labrule-text'); await page.click('[data-act=lab-rule]'); await wait(100);
+ok((await page.textContent('.labrule-text')) !== r1, 'otro reto no cambia el reto');
+const nsp = await page.locator('.labsp').count(); await page.click('[data-act=lab-rule-keep]'); await wait(500);
+ok(await page.locator('.labsp').count() === nsp + 1 && (await page.textContent('.labsparks')).includes('Reto: '), 'el reto no se apunta en el cuaderno');
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();
 if (fails.length) { console.error('FALLOS en el laboratorio:\n - ' + fails.join('\n - ')); process.exit(1); }

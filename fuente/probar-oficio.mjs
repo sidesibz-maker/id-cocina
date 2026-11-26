@@ -89,6 +89,12 @@ await page.goto(url + '#/diario/nuevo'); await page.waitForSelector('#jform'); a
 await page.evaluate(() => { location.hash = '#/entrenar'; }); await wait(400); await page.click('[data-cat=mias]'); await wait(200);
 let foundLearn = false; for (let k = 0; k < 6 && !foundLearn; k++) { foundLearn = (await page.textContent('#trCard')).includes('Qué aprendiste'); if (!foundLearn && await page.locator('[data-tr=flip]').count()) { await page.click('[data-tr=flip]'); await page.click('[data-tr="2"]'); await wait(200); } }
 ok(foundLearn, 'lo aprendido en el diario no sale en Entrenar');
+// Lo aprendido, mes a mes, y las ideas del servicio pasan a chispas
+await page.goto(url + '#/diario/nuevo'); await page.waitForSelector('#jform'); await page.fill('#j-ideas', 'Alcachofa confitada con yema curada'); await page.click('#jform button[type=submit]'); await wait(400);
+await page.evaluate(() => { location.hash = '#/diario/aprendido'; }); await page.waitForSelector('#jlearned');
+ok((await page.textContent('#jlearned')).includes('aguanta tres días'), 'lo aprendido no sale en su página');
+await page.click('[data-spark]'); await wait(400);
+ok(await page.evaluate(() => Object.values(JSON.parse(localStorage.getItem('id-cocina-v1')).docs).some(d => d.type === 'chispa' && d.text === 'Alcachofa confitada con yema curada')), 'la idea del diario no pasa a chispas');
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();
 if (fails.length) { console.error('FALLOS en diario y trayectoria:\n - ' + fails.join('\n - ')); process.exit(1); }

@@ -41,7 +41,7 @@ export function openFinder(initial = '') {
  if (open) { $('#finderQ', open.el)?.focus(); return; }
  const s = sheet({title: t('Buscar en todo', 'Search everything'), wide: true, onClose: () => { open = null; }, body:
   '<div class="searchbox searchbox-big"><label class="sr" for="finderQ">' + esc(t('Buscar', 'Search')) + '</label>' + icon('search') + '<input id="finderQ" type="search" autocomplete="off" enterkeyhint="go" placeholder="' + esc(t('Platos, subrecetas, bechamel, diario, herramientas…', 'Dishes, sub-recipes, béchamel, journal, tools…')) + '" value="' + esc(initial) + '" role="combobox" aria-expanded="true" aria-controls="finderRes" aria-autocomplete="list"></div>' +
-  '<div id="finderRes" class="finder" role="listbox" aria-label="' + esc(t('Resultados', 'Results')) + '"></div><p class="fine finder-keys">' + esc(t('Flechas para moverte, Intro para abrir, Esc para cerrar. Ctrl+K desde cualquier sitio.', 'Arrows to move, Enter to open, Esc to close. Ctrl+K from anywhere.')) + '</p>'});
+  '<div id="finderRes" class="finder" role="listbox" aria-label="' + esc(t('Resultados', 'Results')) + '"></div><p class="fine finder-keys">' + esc(t('Flechas para moverte, Intro para abrir, Esc para cerrar. Ctrl+K desde cualquier sitio.', 'Arrows to move, Enter to open, Esc to close. Ctrl+K from anywhere.')) + ' <button type="button" class="linkbtn" data-act="keys">' + esc(t('Todos los atajos', 'All shortcuts')) + '</button></p>'});
  open = s;
  const input = $('#finderQ', s.el), res = $('#finderRes', s.el);
  let at = 0;
@@ -71,6 +71,27 @@ export function startFinder() {
   const typing = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName) || document.activeElement?.isContentEditable;
   if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); openFinder(); }
   else if (e.key === '/' && !typing && !document.documentElement.classList.contains('has-sheet')) { e.preventDefault(); openFinder(); }
+  else if (!typing && !e.ctrlKey && !e.metaKey && !e.altKey && !document.documentElement.classList.contains('has-sheet')) shortcut(e);
  });
- document.addEventListener('click', e => { if (e.target.closest('[data-act=finder]')) { e.preventDefault(); openFinder(); } });
+ document.addEventListener('click', e => { if (e.target.closest('[data-act=finder]')) { e.preventDefault(); openFinder(); } else if (e.target.closest('[data-act=keys]')) { e.preventDefault(); keysHelp(); } });
+}
+
+// Atajos de teclado para el PC: «?» enseña la ayuda; «g» y una letra lleva a una sección (como en el correo).
+export const GO_KEYS = [['h', 'hoy', 'Hoy', 'Today'], ['b', 'biblioteca', 'Biblioteca', 'Library'], ['l', 'libreta', 'Libreta', 'Notebook'], ['c', 'crear', 'Crear un plato', 'Create a dish'], ['x', 'laboratorio', 'Laboratorio', 'Lab'], ['e', 'entrenar', 'Entrenar', 'Train'], ['d', 'diario', 'Diario', 'Journal'], ['t', 'trayectoria', 'Trayectoria', 'Career'], ['s', 'sabores', 'Sabores', 'Flavours'], ['m', 'menus', 'Menús', 'Menus'], ['r', 'radar', 'Radar', 'Radar'], ['k', 'herramientas', 'Herramientas', 'Tools']];
+let gAt = 0;
+function shortcut(e) {
+ if (e.key === '?') { e.preventDefault(); keysHelp(); return; }
+ if (e.key === 'g') { gAt = Date.now(); return; }
+ if (gAt && Date.now() - gAt < 1200) {
+  gAt = 0;
+  const k = GO_KEYS.find(x => x[0] === e.key.toLowerCase());
+  if (k) { e.preventDefault(); location.hash = '#/' + k[1]; }
+ }
+}
+export function keysHelp() {
+ const row = (keys, what) => '<tr><th scope="row">' + keys.map(k => '<kbd>' + esc(k) + '</kbd>').join(' ') + '</th><td>' + esc(what) + '</td></tr>';
+ sheet({title: t('Atajos de teclado', 'Keyboard shortcuts'), body: '<p class="lead">' + esc(t('Para ir más rápido en el PC. No funcionan mientras escribes en un campo.', 'To move faster on the PC. They do not work while you are typing in a field.')) + '</p>' +
+  '<table class="ktable keys-table"><tbody>' + row(['Ctrl', 'K'], t('Buscar en toda la app', 'Search the whole app')) + row(['/'], t('Buscar en toda la app', 'Search the whole app')) + row(['?'], t('Esta ayuda', 'This help')) + row(['Esc'], t('Cerrar una ventana', 'Close a window')) + '</tbody></table>' +
+  '<h3 class="kh3">' + esc(t('Ir a una sección: g y una letra', 'Go to a section: g then a letter')) + '</h3><table class="ktable keys-table"><tbody>' + GO_KEYS.map(k => row(['g', k[0]], en() ? k[3] : k[2])).join('') + '</tbody></table>' +
+  '<h3 class="kh3">' + esc(t('En Entrenar', 'In Train')) + '</h3><table class="ktable keys-table"><tbody>' + row([t('Espacio', 'Space')], t('Dar la vuelta a la tarjeta', 'Turn the card over')) + row(['1', '2', '3'], t('No, más o menos, sí lo sabía', 'No, roughly, yes I knew it')) + '</tbody></table>'});
 }

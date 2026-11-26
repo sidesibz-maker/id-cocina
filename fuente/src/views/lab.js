@@ -56,6 +56,32 @@ export function sparkText(s) {
 }
 
 let current = null, fixedId = '';
+// Retos con restricción: un límite obliga a buscar caminos que no tomarías. [es, en, por qué funciona (es), (en)]
+export const RULES = [
+ ['Solo tres ingredientes, sin contar sal ni aceite.', 'Only three ingredients, not counting salt or oil.', 'Sin nada donde esconderse, cada producto tiene que estar en su mejor punto.', 'With nowhere to hide, every product must be at its best.'],
+ ['Un solo producto en cuatro texturas.', 'One product in four textures.', 'Obliga a conocer el producto a fondo: crudo, cocido, seco, líquido.', 'Forces you to know the product inside out: raw, cooked, dried, liquid.'],
+ ['Sin fuego: ni brasa, ni horno, ni hervir.', 'No heat: no embers, oven or boiling.', 'Curar, marinar, fermentar, cortar y emulsionar también son cocinar.', 'Curing, marinating, fermenting, cutting and emulsifying are cooking too.'],
+ ['Todo de la isla, a menos de 50 km.', 'Everything from the island, within 50 km.', 'El paisaje como despensa: lo que hay decide el plato.', 'The landscape as a pantry: what there is decides the dish.'],
+ ['Un postre con una verdura como protagonista.', 'A dessert led by a vegetable.', 'El dulce de la zanahoria, la remolacha o el hinojo, mirado con otros ojos.', 'The sweetness of carrot, beetroot or fennel, seen differently.'],
+ ['Un plato hecho solo con lo que sobra de otros.', 'A dish made only from what other dishes leave over.', 'Pieles, recortes, espinas y tallos: el sabor que se tira.', 'Skins, trimmings, bones and stalks: the flavour that gets thrown away.'],
+ ['Que parezca una cosa y sepa a otra.', 'It should look like one thing and taste of another.', 'La sorpresa hace que el comensal preste atención.', 'Surprise makes the guest pay attention.'],
+ ['Un solo color en el plato.', 'One single colour on the plate.', 'Sin el color para distinguir, mandan la textura y el sabor.', 'Without colour to tell things apart, texture and flavour lead.'],
+ ['En un solo bocado.', 'In a single bite.', 'Todo el plato tiene que caber en un momento: equilibrio exacto.', 'The whole dish must fit in one moment: exact balance.'],
+ ['El mismo producto en caliente y en frío, a la vez.', 'The same product hot and cold, at once.', 'El contraste de temperatura cambia cómo se percibe el sabor.', 'Temperature contrast changes how flavour is perceived.'],
+ ['Sin sal añadida: la sal viene de otro producto.', 'No added salt: salt comes from another product.', 'Anchoa, alga, queso curado, salicornia, encurtido: la sal con sabor.', 'Anchovy, seaweed, aged cheese, samphire, pickle: salt with flavour.'],
+ ['Un plato tradicional de la isla, contado al revés.', 'A traditional island dish, told backwards.', 'Lo que era guarnición pasa a protagonista, y al revés.', 'What was the garnish becomes the lead, and vice versa.'],
+ ['Una sola técnica para todos los componentes.', 'One single technique for every component.', 'La técnica como hilo: todo a la brasa, todo curado, todo en crudo.', 'Technique as the thread: all grilled, all cured, all raw.'],
+ ['Sin plato: el soporte también se come.', 'No plate: the support is edible too.', 'Una hoja, una teja, una piel crujiente: el recipiente es parte del sabor.', 'A leaf, a tuile, a crisp skin: the vessel is part of the flavour.'],
+ ['Con un producto que no te gusta.', 'With a product you do not like.', 'Si consigues que te guste a ti, gustará a cualquiera.', 'If you can make yourself like it, anyone will.'],
+ ['Que se termine en la mesa, delante del comensal.', 'Finished at the table, in front of the guest.', 'Un caldo vertido, un rallado, un humo: el último gesto cuenta.', 'A poured broth, a grating, a smoke: the last gesture counts.']
+];
+let rule = null;
+const newRule = () => { let r; do { r = Math.floor(Math.random() * RULES.length); } while (RULES.length > 1 && r === rule); rule = r; };
+function ruleHtml() {
+ if (rule == null) newRule();
+ const r = RULES[rule];
+ return '<p class="labrule-text">' + esc(en() ? r[1] : r[0]) + '</p><p class="fine">' + esc(en() ? r[3] : r[2]) + '</p>';
+}
 export function render(params = []) {
  // #/laboratorio/<producto>: la chispa parte de ese producto (por ejemplo, desde «Tu estilo» o desde Sabores).
  if (params[0] && state.kb?.byId[params[0]] && fixedId !== params[0]) { fixedId = params[0]; current = spark(fixedId); }
@@ -65,6 +91,8 @@ export function render(params = []) {
   '<section class="card labspark" aria-live="polite"><div class="csec-head"><h2>' + esc(t('Una chispa', 'A spark')) + '</h2><span class="fine">' + esc(t('Producto de temporada, una pareja, un puente y un mecanismo', 'Seasonal produce, a partner, a bridge and a mechanism')) + '</span></div><div id="labCur">' + sparkHtml() + '</div>' +
   '<div class="labfix"><label for="labFix">' + esc(t('Partir de un producto concreto', 'Start from a given product')) + '</label><input id="labFix" list="labKb" autocomplete="off" placeholder="' + esc(t('Escribe un producto: gamba roja, higo, sobrasada…', 'Type a product: red prawn, fig, sobrasada…')) + '"><datalist id="labKb">' + (state.kb ? state.kb.list.map(i => '<option value="' + esc(en() ? i.en : i.es) + '">').join('') : '') + '</datalist></div>' +
   '<div class="row-actions row-left"><button type="button" class="btn primary" data-act="lab-new">' + icon('spark') + esc(t('Otra chispa', 'Another spark')) + '</button><button type="button" class="btn ghost" data-act="lab-keep">' + icon('star') + esc(t('Guardar en el cuaderno', 'Save to the notebook')) + '</button><button type="button" class="btn ghost" data-act="lab-dish">' + icon('book') + esc(t('Llevar a la libreta', 'Take to the notebook')) + '</button><button type="button" class="btn ghost" data-act="lab-ideas">' + icon('chat') + esc(t('Tres platos con ChatGPT', 'Three dishes with ChatGPT')) + '</button></div></section>' +
+  '<section class="card labrule"><div class="csec-head"><h2>' + esc(t('Un reto con restricción', 'A constrained challenge')) + '</h2><span class="fine">' + esc(t('Un límite te saca de tus caminos de siempre', 'A limit takes you off your usual paths')) + '</span></div><div id="labRule" aria-live="polite">' + ruleHtml() + '</div>' +
+  '<div class="row-actions row-left"><button type="button" class="btn ghost" data-act="lab-rule">' + icon('refresh') + esc(t('Otro reto', 'Another challenge')) + '</button><button type="button" class="btn ghost" data-act="lab-rule-keep">' + icon('star') + esc(t('Apuntarlo con la chispa', 'Note it with the spark')) + '</button></div></section>' +
   '<section class="sec"><header class="sec-head"><div><h2>' + esc(t('Cuaderno de chispas', 'Spark notebook')) + '</h2><p>' + esc(t('Apunta cualquier idea en cuanto te venga, aunque sea a medias. Las mejores salen de releer las viejas.', 'Write down any idea as soon as it comes, even half-formed. The best ones come from rereading old ones.')) + '</p></div></header>' +
   '<form id="labNote" class="card labnote"><label class="sr" for="labText">' + esc(t('Nueva chispa', 'New spark')) + '</label><textarea id="labText" rows="3" maxlength="2000" data-voice placeholder="' + esc(t('Un sabor, un recuerdo, una técnica, algo que has visto o comido…', 'A flavour, a memory, a technique, something you saw or ate…')) + '"></textarea><div class="row-actions"><label class="btn ghost" for="labPhoto">' + icon('image') + esc(t('Con foto', 'With a photo')) + '</label><input id="labPhoto" class="sr" type="file" accept="image/*" capture="environment"><button type="submit" class="btn primary">' + icon('plus') + esc(t('Apuntar', 'Note it')) + '</button></div><p class="fine" id="labPhotoState" hidden></p></form>' +
   (sparks.length ? '<ul class="labsparks">' + sparks.map(s => '<li class="labsp' + (s.dish_id ? ' is-dish' : '') + '">' + (s.image ? '<img class="labsp-img" data-img="' + esc(s.image) + '" alt="' + esc(t('Foto de la chispa', 'Spark photo')) + '">' : '') + '<p>' + esc(s.text) + '</p><div class="labsp-foot"><small>' + esc(relDay(s.created_at || new Date())) + (s.dish_id ? t(', ya es un plato', ', now a dish') : '') + '</small>' + (s.dish_id ? '<a class="linkbtn" href="#/plato/' + esc(s.dish_id) + '">' + esc(t('Ver el plato', 'See the dish')) + '</a>' : '<button type="button" class="linkbtn" data-to-dish="' + esc(s.id) + '">' + esc(t('Convertir en plato', 'Turn into a dish')) + '</button><button type="button" class="linkbtn" data-sp-ideas="' + esc(s.id) + '">' + esc(t('Tres platos', 'Three dishes')) + '</button>') + '<button type="button" class="iconbtn" data-sp-del="' + esc(s.id) + '" aria-label="' + esc(t('A la papelera', 'To the bin')) + '">' + icon('trash') + '</button></div></li>').join('') + '</ul>' : '<p class="hint">' + esc(t('Aún no hay chispas. La primera puede ser la de arriba.', 'No sparks yet. The first one can be the one above.')) + '</p>') + '</section>' +
@@ -136,6 +164,8 @@ export function mount(root) {
   if (a === 'lab-ideas' && current) { proposals(sparkText(current), {kind: 'laboratorio'}, null, e.target.closest('button')); return; }
   const spi = e.target.closest('[data-sp-ideas]');
   if (spi) { const s = docById(spi.dataset.spIdeas); if (s) proposals(s.text, {kind: 'chispa', id: s.id}, s.id, spi); return; }
+  if (a === 'lab-rule') { newRule(); $('#labRule', root).innerHTML = ruleHtml(); return; }
+  if (a === 'lab-rule-keep') { const r = RULES[rule]; await saveDoc('chispa', null, {text: (t('Reto: ', 'Challenge: ') + (en() ? r[1] : r[0]) + (current ? ' ' + sparkText(current) : '')).slice(0, 2000)}); toast(t('Reto apuntado en tu cuaderno de chispas.', 'Challenge noted in your spark notebook.')); return; }
   if (a === 'lab-new') { current = spark(fixedId); paintSpark(); }
   if (mech) { current = spark(fixedId) || current; if (current) current.mech = mech.dataset.mech; paintSpark(); $('.labspark', root).scrollIntoView({block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'}); }
   if (a === 'lab-keep' && current) { await saveDoc('chispa', null, {text: sparkText(current), spark: current}); toast(t('Guardada en el cuaderno.', 'Saved to the notebook.')); }

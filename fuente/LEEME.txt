@@ -135,3 +135,12 @@ LO NUEVO PARA TU OFICIO (NOVIEMBRE 2026)
  - Esta app es para crear, aprender y tu carrera. La gestión del restaurante (pedidos, APPCC, equipo, sala) va en tu
    otra app: aquí no se duplica.
  - El diario, la trayectoria, las chispas, las rutas y el entrenamiento se sincronizan entre PC y móvil como los platos.
+ - Hoy empieza por «Para hoy» (diario, objetivo, reto, ruta, repaso y la ficha del día); el radar va después.
+ - Biblioteca: 119 fichas. Nuevas: flaó, greixonera, orelletes y buñuelos; glaseado de verduras, asado de verduras
+   en horno y encurtidos rápidos. Rutas nuevas: «La cocina de la isla» y «La verdura, protagonista».
+ - Las favoritas de la Biblioteca pasan entre el PC y el móvil.
+ - En cada ficha: «Repasar esta ficha» (sus tarjetas en Entrenar) e «Imprimir».
+ - Biblioteca → «Tu libro de cocina»: favoritas, tus versiones, tus entradas, una ruta o un estante en un PDF.
+ - Laboratorio: «Un reto con restricción» (16 retos, como «solo tres ingredientes» o «sin fuego») para apuntar con la chispa.
+ - Diario → «Lo aprendido»: lo aprendido y las ideas, mes a mes, para imprimir; las ideas pasan a chispas con un toque.
+ - Atajos en el PC: «?» enseña la ayuda, «/» o Ctrl+K busca, y «g» + letra cambia de sección (g b, Biblioteca).

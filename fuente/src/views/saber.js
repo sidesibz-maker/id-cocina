@@ -2,6 +2,7 @@
 // y cada entrada se lee por partes (pestañas), sin soltar toda la información de golpe. Las versiones propias nunca se borran.
 import {t, en, relDay, shortDate} from '../i18n.js';
 import {esc, icon, $, $$, toast, clip, sheet} from '../ui.js';
+import {docById, saveDoc} from '../store.js';
 import {state, saberMine, addSaberVersion, saveSaberEntry, trashSaberEntry, liveSubs, liveDishes} from '../store.js';
 import {entries, entryById, search, backlinks, CATS, slug, builtIds} from '../saber/index.js';
 import {iaOn, askIa, iaMessage} from '../ia.js';
@@ -10,6 +11,8 @@ import {emptyState} from './shared.js';
 import {go} from '../nav.js';
 import {technique} from '../flavor-core.js';
 import {pathsHtml} from './paths.js';
+import {cardsFor} from './train.js';
+import {bookSheet, printBook} from './kbook.js';
 // «Para ti»: fichas que casan con los intereses de Mi cocina (brasa, marisco, México, fermentos…).
 const INTEREST_WORDS = {'brasa': 'brasa', 'verdura a la brasa': 'verduras brasa', 'pescado y marisco': 'pescado marisco', 'postres': 'crema merengue helado flao', 'asia': 'dashi', 'mexico': 'chiles', 'méxico': 'chiles', 'casqueria': 'casqueria', 'casquería': 'casqueria', 'encurtidos y fermentos': 'fermentacion encurtida', 'sin alcohol': 'maridaje sin alcohol', 'cocina ibicenca': 'ibicenca isla', 'para compartir': 'picada'};
 function forYouHtml() {
@@ -59,7 +62,9 @@ const flat = text => linked(text).replace(/<a[^>]*>|<\/a>/g, '');
 // Lo último que has abierto (solo en este aparato).
 const storedIds = key => { try { const v = JSON.parse(localStorage.getItem(key) || '[]'); return Array.isArray(v) ? v : []; } catch { return []; } };
 const seen = () => storedIds(SEEN);
-const favorites = () => storedIds(FAVORITES);
+// Las favoritas viajan entre el PC y el móvil (documento «favoritas:lista»); las antiguas de este aparato se conservan.
+const FAV_DOC = 'favoritas:lista';
+const favorites = () => { const d = docById(FAV_DOC); return Array.isArray(d?.ids) ? d.ids : storedIds(FAVORITES); };
 const markSeen = id => { try { localStorage.setItem(SEEN, JSON.stringify([id, ...seen().filter(x => x !== id)].slice(0, 8))); } catch {} };
 
 // ---------- Inicio: «¿Qué quieres saber?» ----------
@@ -105,6 +110,7 @@ function homeHtml() {
   '<section class="sec"><h2 class="day">' + esc(t('Consultas de cocina', 'Kitchen reference')) + '</h2><div class="kguides">' + GUIDES.map(([es, english, hint, ids, tab]) => '<section class="kguide"><h3>' + esc(t(es, english)) + '</h3><p>' + esc(hint) + '</p><div class="chips">' + ids.map(entryById).filter(Boolean).map(e => '<a class="chip" href="' + href(e.id, tab) + '">' + esc(e.name) + '</a>').join('') + '</div></section>').join('') + '</div></section>' +
   (last.length ? '<section class="sec"><h2 class="day">' + esc(t('Lo último que has consultado', 'Recently opened')) + '</h2><ul class="krows">' + last.map(e => row(e)).join('') + '</ul></section>' : '') +
   '<section class="sec"><h2 class="day">' + esc(t('Los estantes', 'The shelves')) + '</h2><div class="kshelves">' + shelves.map(([id, n]) => '<a class="kshelf" href="#/biblioteca/estante/' + id + '">' + icon((SHELF[id] || SHELF.conceptos)[0]) + '<strong>' + esc(shelfName(id)) + '</strong><span>' + esc((SHELF[id] || SHELF.conceptos)[1]) + '</span><small>' + esc(n === 1 ? t('1 entrada', '1 entry') : n + t(' entradas', ' entries')) + '</small></a>').join('') + '</div></section>' +
+  '<section class="sec kbook-cta"><div><h2 class="day">' + esc(t('Tu libro de cocina', 'Your cookbook')) + '</h2><p>' + esc(t('Tus favoritas, tus versiones, una ruta o un estante, en un documento para imprimir o guardar en PDF.', 'Your favourites, your versions, a path or a shelf, in one document to print or save as PDF.')) + '</p></div><button type="button" class="btn ghost" data-act="kbook">' + icon('down') + esc(t('Preparar mi libro', 'Prepare my book')) + '</button></section>' +
   (mineList.length ? '<section class="sec"><h2 class="day">' + esc(t('Con tu versión', 'With your version')) + '</h2><ul class="krows">' + mineList.map(e => row(e)).join('') + '</ul></section>' : '') +
   (trash.length ? '<details class="sec kbin"><summary>' + esc(t('Papelera de la Biblioteca', 'Library bin')) + ' (' + trash.length + ')</summary><ul>' + trash.map(x => '<li><span>' + esc(x.custom.name) + '</span><button type="button" class="btn ghost" data-restore-entry="' + esc(x.id) + '">' + esc(t('Recuperar', 'Restore')) + '</button></li>').join('') + '</ul></details>' : '') +
   '<p class="fine">' + esc(t(all.length + ' entradas, escritas para esta app con palabras propias. Lo que añades tú lleva tu nombre y su historia.', all.length + ' entries, written for this app in its own words. What you add keeps your name and its history.')) + '</p></div>';
@@ -185,7 +191,7 @@ function entryHtml(id, tab) {
  const list = panels(e), on = list.some(p => p[0] === tab) ? tab : list[0][0];
  const {dishes, subs} = inDishes(e), rel = [...new Set([...(e.related || []), ...backlinks(e.id).map(x => x.id)])].map(entryById).filter(x => x && x.id !== e.id);
  return '<div class="kentry-back">' + (hasSearch() ? back : '') + '<a class="back" href="#/biblioteca/estante/' + esc(e.cat || 'conceptos') + '">' + icon('left') + esc(shelfName(e.cat || 'conceptos')) + '</a></div><article class="kentry">' +
-  '<header class="page-head"><h1>' + esc(e.name) + '</h1>' + (e.aka?.length ? '<p class="kaka">' + esc(t('También: ', 'Also: ') + e.aka.join(', ')) + '</p>' : '') + '<button type="button" class="btn ghost" data-act="favorite" aria-pressed="' + saved + '">' + esc(saved ? t('Quitar de favoritas', 'Remove from favourites') : t('Guardar en favoritas', 'Save to favourites')) + '</button>' + ((e.base?.items?.length || technique(e.technique)) && state.canEdit && !state.setupPending ? '<button type="button" class="btn primary k-use" data-act="use-recipe">' + icon('plus') + esc(technique(e.technique) ? t('Aplicar técnica a un plato', 'Apply technique to a dish') : t('Usar en un plato', 'Use in a dish')) + '</button>' : '') + '</header>' +
+  '<header class="page-head"><h1>' + esc(e.name) + '</h1>' + (e.aka?.length ? '<p class="kaka">' + esc(t('También: ', 'Also: ') + e.aka.join(', ')) + '</p>' : '') + '<button type="button" class="btn ghost" data-act="favorite" aria-pressed="' + saved + '">' + esc(saved ? t('Quitar de favoritas', 'Remove from favourites') : t('Guardar en favoritas', 'Save to favourites')) + '</button>' + (cardsFor(e.id) ? '<a class="btn ghost" href="#/entrenar/ficha/' + esc(e.id) + '">' + icon('brain') + esc(t('Repasar esta ficha', 'Review this entry')) + '</a>' : '') + '<button type="button" class="btn ghost" data-act="print-entry">' + icon('down') + esc(t('Imprimir', 'Print')) + '</button>' + ((e.base?.items?.length || technique(e.technique)) && state.canEdit && !state.setupPending ? '<button type="button" class="btn primary k-use" data-act="use-recipe">' + icon('plus') + esc(technique(e.technique) ? t('Aplicar técnica a un plato', 'Apply technique to a dish') : t('Usar en un plato', 'Use in a dish')) + '</button>' : '') + '</header>' +
   (e.summary ? '<div class="kbody"><p class="lead">' + linked(e.summary) + '</p></div>' : '') +
   '<div class="ktabs" role="tablist" aria-label="' + esc(t('Partes de la entrada', 'Parts of the entry')) + '">' + list.map(([pid, label]) => '<button type="button" role="tab" id="kt-' + pid + '" aria-controls="kp-' + pid + '" aria-selected="' + (pid === on) + '" tabindex="' + (pid === on ? 0 : -1) + '" class="ktab' + (pid === on ? ' active' : '') + '" data-ktab="' + pid + '">' + esc(label) + '</button>').join('') + '</div>' +
   list.map(([pid, , body]) => '<section class="kpanel" role="tabpanel" tabindex="0" id="kp-' + pid + '" aria-labelledby="kt-' + pid + '"' + (pid === on ? '' : ' hidden') + '>' + body + '</section>').join('') +
@@ -328,6 +334,8 @@ export function mount(root, params) {
   }
   if (b.dataset.ktab) { showTab(b.dataset.ktab); return; }
   const act = b.dataset.act, id = params[0];
+  if (act === 'kbook') { bookSheet(favorites()); return; }
+  if (act === 'print-entry' && entryById(id)) { printBook(entryById(id).name, [entryById(id)]); return; }
   if (act === 'cook-mode') {
    const on = b.getAttribute('aria-pressed') === 'false';
    b.setAttribute('aria-pressed', on);
@@ -368,7 +376,9 @@ export function mount(root, params) {
   if (act === 'favorite' && id) {
    const saved = favorites(), on = !saved.includes(id);
    try {
-    localStorage.setItem(FAVORITES, JSON.stringify(on ? [id, ...saved] : saved.filter(x => x !== id)));
+    const ids = on ? [id, ...saved] : saved.filter(x => x !== id);
+    saveDoc('favoritas', FAV_DOC, {ids});
+    try { localStorage.setItem(FAVORITES, JSON.stringify(ids)); } catch {}
     b.setAttribute('aria-pressed', on);
     b.textContent = on ? t('Quitar de favoritas', 'Remove from favourites') : t('Guardar en favoritas', 'Save to favourites');
    } catch { toast(t('No se pudo guardar la selección.', 'Could not save this selection.'), 'error'); }
