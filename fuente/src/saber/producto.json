@@ -8371,5 +8371,656 @@
    "sabayones-salados",
    "erizo-de-mar"
   ]
+ },
+ {
+  "id": "cereales-y-pseudocereales",
+  "name": "Cereales y pseudocereales",
+  "name_en": "Grains and pseudocereals",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "quinoa",
+   "trigo sarraceno",
+   "alforfón",
+   "mijo",
+   "cebada perlada",
+   "espelta",
+   "bulgur",
+   "amaranto",
+   "cereales en grano"
+  ],
+  "summary": "Granos enteros más allá del arroz y el trigo: cómo se lavan, cuánto agua piden, cuánto tardan y cuáles llevan gluten.",
+  "what": "Los cereales en grano (cebada, espelta, trigo duro en bulgur, mijo) y los pseudocereales, semillas de plantas que no son gramíneas pero se cocinan igual (quinoa, trigo sarraceno, amaranto), dan guarniciones, ensaladas, rellenos y platos de cuchara con textura y sabor propios. Cada uno pide un lavado, una proporción de agua y un tiempo distintos.\n\nPara alérgenos: la cebada y la espelta llevan gluten; la quinoa, el trigo sarraceno, el mijo y el amaranto no, aunque pueden haberse contaminado en el envasado si no se indica lo contrario. Como el arroz, el grano cocido se enfría rápido si no se sirve.",
+  "method": [
+   "Lava la quinoa frotando en agua fría hasta que no haga espuma: quita su amargor natural.",
+   "Tuesta en seco el trigo sarraceno, el mijo o la quinoa unos minutos para darles sabor a fruto seco.",
+   "Cuece por absorción con la proporción de agua indicada, tapado y a fuego suave, o en agua abundante y escurre (cebada, espelta).",
+   "Deja reposar tapado 5–10 minutos y suelta el grano con un tenedor.",
+   "Si no se sirve enseguida, extiende en bandeja, enfría rápido y guarda en frío."
+  ],
+  "ratios": [
+   {
+    "use": "Quinoa",
+    "ratio": "1 parte por 1,5–2 de agua, 12–15 minutos",
+    "note": "Lavada antes."
+   },
+   {
+    "use": "Trigo sarraceno tostado",
+    "ratio": "1 parte por 2 de agua, 12–15 minutos",
+    "note": "Sin gluten."
+   },
+   {
+    "use": "Cebada perlada",
+    "ratio": "Agua abundante, 30–40 minutos",
+    "note": "Para ensaladas o guisada como un risotto."
+   },
+   {
+    "use": "Bulgur",
+    "ratio": "1 parte por 1,5 de agua hirviendo, 15 minutos tapado",
+    "note": "Sin cocer."
+   }
+  ],
+  "variants": [
+   {
+    "id": "arroz-por-variedades",
+    "name": "Arroz",
+    "note": "El cereal más usado."
+   },
+   {
+    "id": "harinas-y-almidones",
+    "name": "Harinas",
+    "note": "Molidos en harina."
+   },
+   {
+    "id": "risotto-y-arroces-cremosos",
+    "name": "Cebada como un risotto",
+    "note": "Mismo método."
+   },
+   {
+    "id": "ensaladas-templadas",
+    "name": "Ensaladas templadas",
+    "note": "Grano tibio aliñado."
+   }
+  ],
+  "keys": [
+   "Cada grano, su agua y su tiempo: apúntalos.",
+   "Tostar antes da sabor.",
+   "Quinoa siempre lavada.",
+   "Cebada y espelta llevan gluten.",
+   "Enfriar rápido el grano cocido."
+  ],
+  "errors": [
+   {
+    "p": "Quinoa amarga",
+    "fix": "Sin lavar. Lávala frotando."
+   },
+   {
+    "p": "Grano pastoso",
+    "fix": "Mucha agua o cocción larga. Mide y reposa tapado."
+   },
+   {
+    "p": "Grano duro",
+    "fix": "Poca agua o poco tiempo. Añade un poco de agua caliente y sigue."
+   }
+  ],
+  "history": "La cebada, la espelta y el mijo se cultivan en Europa y Oriente Medio desde la antigüedad; la quinoa y el amaranto vienen de los Andes y Mesoamérica, y el trigo sarraceno se cultiva sobre todo en Europa del Este y Asia.",
+  "uses": [
+   "Guarniciones",
+   "Ensaladas",
+   "Rellenos",
+   "Platos de cuchara",
+   "Crujientes"
+  ],
+  "keep": "Crudos, meses en lugar seco y cerrado. Cocidos y enfriados rápido, 2–3 días en frío.",
+  "pro": "Cuece por tandas, enfría en bandeja y racione; regenera en sartén o al vapor.",
+  "related": [
+   "arroz-por-variedades",
+   "harinas-y-almidones",
+   "risotto-y-arroces-cremosos",
+   "ensaladas-templadas",
+   "legumbres",
+   "cadena-de-frio"
+  ]
+ },
+ {
+  "id": "arroz-por-variedades",
+  "name": "Arroz por variedades",
+  "name_en": "Rice varieties",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "arroz bomba",
+   "arroz senia",
+   "arroz bahía",
+   "carnaroli",
+   "arborio",
+   "basmati",
+   "jazmín",
+   "arroz japonés",
+   "arroz integral"
+  ],
+  "summary": "Qué arroz elegir para cada plato: absorción, almidón y resistencia de cada variedad.",
+  "what": "Las variedades de arroz se distinguen por la forma del grano y por su almidón. Los redondos o medios absorben mucho caldo y sueltan almidón: los de la familia valenciana, como el senia o el bahía, son muy sabrosos y melosos pero delicados; el bomba absorbe aún más y aguanta sin pasarse, por eso es seguro para arroces secos. El carnaroli y el arborio son los de risotto. El japonés, de grano corto, es pegajoso y se usa para sushi. Los largos aromáticos, basmati y jazmín, quedan sueltos. El integral conserva el salvado y tarda más.\n\nLas técnicas de cocción están en [[arroces]], [[risotto-y-arroces-cremosos]] y [[arroz-japones-y-al-vapor]]; aquí se trata de elegir.",
+  "method": [
+   "Elige por el plato: seco en paella, meloso, caldoso, cremoso, suelto o pegajoso.",
+   "Pide la variedad concreta al proveedor, no solo «redondo» o «largo».",
+   "Haz una prueba de cocción de cada partida nueva: la absorción cambia.",
+   "Ajusta la proporción de caldo a la variedad y apúntala en la ficha del plato.",
+   "Guarda el arroz cerrado, seco y lejos de olores."
+  ],
+  "ratios": [
+   {
+    "use": "Bomba en arroz seco",
+    "ratio": "1 parte por 3–3,5 de caldo, 18–20 minutos",
+    "note": "Aguanta sin pasarse."
+   },
+   {
+    "use": "Senia o bahía",
+    "ratio": "1 parte por 2,5–3 de caldo, 16–18 minutos",
+    "note": "Más meloso, se pasa antes."
+   },
+   {
+    "use": "Basmati",
+    "ratio": "1 parte por 1,5 de agua en volumen, 10–12 minutos",
+    "note": "Remojado antes."
+   },
+   {
+    "use": "Integral",
+    "ratio": "1 parte por 2,5–3 de agua, 35–45 minutos",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "arroces",
+    "name": "Arroces mediterráneos",
+    "note": "Seco, meloso y caldoso."
+   },
+   {
+    "id": "risotto-y-arroces-cremosos",
+    "name": "Risotto",
+    "note": "Carnaroli y arborio."
+   },
+   {
+    "id": "arroz-japones-y-al-vapor",
+    "name": "Arroz japonés y aromáticos",
+    "note": "Sushi, basmati y jazmín."
+   },
+   {
+    "id": "biryani",
+    "name": "Biryani",
+    "note": "Basmati en capas."
+   }
+  ],
+  "keys": [
+   "Bomba: el más seguro para arroces secos.",
+   "Senia y bahía: sabor y melosidad, menos margen.",
+   "Probar cada partida nueva.",
+   "Apuntar la proporción de caldo por variedad.",
+   "Arroz cocido: enfriar rápido si no se sirve."
+  ],
+  "errors": [
+   {
+    "p": "Arroz pasado en paella",
+    "fix": "Variedad delicada o mucho caldo. Usa bomba o ajusta."
+   },
+   {
+    "p": "Risotto que no liga",
+    "fix": "Arroz largo. Usa carnaroli o arborio."
+   },
+   {
+    "p": "Basmati pegado",
+    "fix": "Sin lavar ni remojar. Lava y remoja."
+   }
+  ],
+  "history": "El cultivo de arroz llegó a la península con la cocina andalusí y se asentó en Valencia y otras zonas húmedas; hoy hay variedades adaptadas a cada uso, de la Albufera al delta del Ebro.",
+  "uses": [
+   "Arroces secos y melosos",
+   "Risottos",
+   "Sushi",
+   "Guarniciones de arroz suelto",
+   "Postres"
+  ],
+  "keep": "Crudo, meses en lugar seco y cerrado. Cocido, enfriado rápido y 1–2 días en frío.",
+  "pro": "Ten dos o tres variedades con su ficha de caldo y tiempo, y no las mezcles en el mismo bote.",
+  "related": [
+   "arroces",
+   "risotto-y-arroces-cremosos",
+   "arroz-japones-y-al-vapor",
+   "biryani",
+   "cereales-y-pseudocereales",
+   "cadena-de-frio"
+  ]
+ },
+ {
+  "id": "tempeh-y-seitan",
+  "name": "Tempeh y seitán",
+  "name_en": "Tempeh and seitan",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "tempeh",
+   "seitán",
+   "gluten de trigo",
+   "proteína vegetal",
+   "tempe"
+  ],
+  "summary": "Dos proteínas vegetales con textura: soja fermentada en bloque firme, y gluten de trigo cocido de textura carnosa.",
+  "what": "El tempeh es un bloque de soja cocida y fermentada por un hongo que une los granos en una pieza firme, de sabor a fruto seco y algo de champiñón. Se corta, se marina y se dora, se fríe o se guisa. El seitán es gluten de trigo amasado con agua o caldo y cocido lentamente; tiene una textura fibrosa y carnosa que absorbe bien las marinadas. El tofu, la otra gran proteína vegetal, está en [[soja-y-derivados]].\n\nPara alérgenos: el tempeh es soja; el seitán es gluten puro, nada apto para quien no tolera el gluten.",
+  "method": [
+   "Tempeh: córtalo en láminas o dados y cuécelo al vapor 10 minutos para suavizar su amargor y que absorba mejor.",
+   "Marina el tempeh 30 minutos o más en soja, ajo, jengibre y un ácido, y dóralo en sartén o plancha.",
+   "Seitán casero: mezcla gluten de trigo con caldo y especias, amasa 2–3 minutos y forma un rollo.",
+   "Cuece el seitán en caldo aromático a fuego muy suave 45–60 minutos, sin hervor fuerte, y deja enfriar en el caldo.",
+   "Corta el seitán en lonchas o tiras y dóralo, guísalo o rebózalo."
+  ],
+  "ratios": [
+   {
+    "use": "Seitán casero",
+    "ratio": "250 g de gluten por 180–200 ml de caldo",
+    "note": "Amasado breve."
+   },
+   {
+    "use": "Cocción del seitán",
+    "ratio": "Caldo a fuego muy suave, 45–60 minutos",
+    "note": "Sin hervor fuerte: se vuelve esponjoso."
+   },
+   {
+    "use": "Tempeh al vapor",
+    "ratio": "10 minutos",
+    "note": "Antes de marinar."
+   },
+   {
+    "use": "Ración",
+    "ratio": "120–150 g",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "soja-y-derivados",
+    "name": "Tofu",
+    "note": "La otra proteína de soja."
+   },
+   {
+    "id": "fermentacion-lactica",
+    "name": "Fermentados",
+    "note": "Otra forma de fermentar."
+   },
+   {
+    "id": "marinada",
+    "name": "Marinadas",
+    "note": "Para dar sabor."
+   },
+   {
+    "id": "salteado-y-wok",
+    "name": "Salteados",
+    "note": "Uso habitual."
+   }
+  ],
+  "keys": [
+   "Tempeh al vapor antes de marinar.",
+   "Seitán a fuego muy suave.",
+   "Marinadas con sabor: tienen poco sabor propio.",
+   "Dorar bien para dar textura.",
+   "Alérgenos: soja y gluten."
+  ],
+  "errors": [
+   {
+    "p": "Tempeh amargo",
+    "fix": "Sin vapor previo. Cuécelo 10 minutos."
+   },
+   {
+    "p": "Seitán esponjoso",
+    "fix": "Hervor fuerte. Fuego muy suave."
+   },
+   {
+    "p": "Seitán gomoso",
+    "fix": "Amasado de más. Amasa solo 2–3 minutos."
+   }
+  ],
+  "history": "El tempeh es tradicional de Indonesia; el seitán tiene raíces en la cocina vegetariana de monasterios budistas de Asia oriental y se difundió en Occidente en el siglo XX.",
+  "uses": [
+   "Platos vegetales",
+   "Salteados",
+   "Guisos y curries",
+   "Bocadillos"
+  ],
+  "keep": "Tempeh, en frío según su fecha; abierto, 3–4 días. Seitán cocido en su caldo, 4–5 días en frío; se congela bien.",
+  "pro": "Seitán en tanda, cocido y porcionado; tempeh marinado la víspera.",
+  "related": [
+   "soja-y-derivados",
+   "fermentacion-lactica",
+   "marinada",
+   "salteado-y-wok",
+   "harinas-y-almidones",
+   "curry-y-guisos-especiados"
+  ]
+ },
+ {
+  "id": "caracoles",
+  "name": "Caracoles",
+  "name_en": "Snails",
+  "cat": "producto",
+  "group": "Huerta y monte",
+  "aka": [
+   "caracoles",
+   "cargols",
+   "caracoles en salsa",
+   "cargols a la llauna",
+   "caracoles con conejo",
+   "bovers"
+  ],
+  "summary": "Caracoles de tierra de criadero, purgados y limpios de baba, cocidos despacio y terminados en salsa, en brasa o en arroz.",
+  "what": "Los caracoles de tierra son un producto tradicional en muchas zonas de la península y de las islas: guisados en salsa de tomate y picante, asados a la brasa en bandeja con sal y servidos con alioli, o en arroces con conejo. Se compran vivos y ya purgados en criadero controlado: los de recogida silvestre pueden haber comido plantas que no conviene y su limpieza es más larga.\n\nEl trabajo está en la limpieza: quitar la baba con sal y vinagre y muchos lavados, y en cocerlos empezando en agua fría a fuego muy suave, para que salgan del caparazón y no se escondan. Cada zona tiene su manera de guisarlos.",
+  "method": [
+   "Compra caracoles vivos de criadero, ya purgados; descarta los que no se muevan o huelan mal.",
+   "Lávalos en agua fría; cúbrelos con sal gruesa y un chorro de vinagre, remueve y deja 30 minutos para que suelten la baba.",
+   "Lava muchas veces en agua fría hasta que no salga espuma.",
+   "Ponlos en agua fría y calienta muy despacio, para que saquen el cuerpo; cuando estén fuera, sube a hervor 5 minutos y escurre.",
+   "Cuécelos en un caldo aromático (hinojo, laurel, tomillo, guindilla) 1–1,5 horas y termínalos en salsa, en brasa o en arroz."
+  ],
+  "ratios": [
+   {
+    "use": "Limpieza",
+    "ratio": "Sal gruesa y vinagre, 30 minutos, y 5–6 lavados",
+    "note": "Hasta que no salga baba."
+   },
+   {
+    "use": "Cocción en caldo",
+    "ratio": "1–1,5 horas a fuego suave",
+    "note": "Tiernos."
+   },
+   {
+    "use": "Ración",
+    "ratio": "250–300 g con concha",
+    "note": "Como plato; menos en arroz."
+   },
+   {
+    "use": "A la brasa",
+    "ratio": "Brasa viva, 8–10 minutos",
+    "note": "Ya limpios; con sal y pimienta."
+   }
+  ],
+  "variants": [
+   {
+    "id": "conejo",
+    "name": "Arroz de conejo y caracoles",
+    "note": "Clásico de interior."
+   },
+   {
+    "id": "alioli",
+    "name": "Alioli",
+    "note": "Para los caracoles a la brasa."
+   },
+   {
+    "id": "salsa-de-tomate",
+    "name": "En salsa",
+    "note": "Con tomate y picante."
+   },
+   {
+    "id": "fuego-y-brasa",
+    "name": "Brasa",
+    "note": "En bandeja sobre las brasas."
+   }
+  ],
+  "keys": [
+   "Solo de criadero controlado.",
+   "Limpieza paciente de la baba.",
+   "Empezar en agua fría y muy despacio.",
+   "Cocción suave y larga.",
+   "Cada zona tiene su receta."
+  ],
+  "errors": [
+   {
+    "p": "Caracoles escondidos en la concha",
+    "fix": "Agua caliente desde el principio. Empieza en frío y calienta despacio."
+   },
+   {
+    "p": "Baba en el guiso",
+    "fix": "Limpieza corta. Más sal, vinagre y lavados."
+   },
+   {
+    "p": "Duros",
+    "fix": "Poca cocción. Alarga a fuego suave."
+   }
+  ],
+  "history": "Comer caracoles es una tradición antigua del Mediterráneo; en Cataluña, Baleares, Levante y Andalucía tienen recetas propias.",
+  "uses": [
+   "Guisos y tapas",
+   "Arroces",
+   "Brasa",
+   "Platos de temporada"
+  ],
+  "keep": "Vivos, unos días en lugar fresco y ventilado, en caja con orificios. Cocidos y limpios, 2–3 días en frío; se congelan bien.",
+  "pro": "Limpia y cuece en tanda; guarda cocidos en su caldo y termina al pedido.",
+  "related": [
+   "conejo",
+   "alioli",
+   "salsa-de-tomate",
+   "fuego-y-brasa",
+   "arroces",
+   "casqueria"
+  ]
+ },
+ {
+  "id": "lenteja-y-garbanzo-por-variedades",
+  "name": "Lentejas y garbanzos por variedades",
+  "name_en": "Lentil and chickpea varieties",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "lenteja pardina",
+   "lenteja castellana",
+   "lenteja beluga",
+   "lenteja roja",
+   "garbanzo castellano",
+   "garbanzo pedrosillano",
+   "garbanzo blanco lechoso"
+  ],
+  "summary": "Qué lenteja y qué garbanzo para cada plato: tamaño, piel, tiempo de cocción y si se deshacen o aguantan.",
+  "what": "Las [[legumbres]] cambian mucho de una variedad a otra. Entre las lentejas, la pardina es pequeña y oscura, no se deshace y no necesita remojo; la castellana o rubia es grande y más harinosa; la beluga, negra y diminuta, aguanta muy firme para ensaladas; la roja o coral está pelada y partida, y se deshace en pocos minutos, ideal para cremas y [[dal-y-curries-de-legumbre|dal]]. Entre los garbanzos, los grandes y mantecosos van bien en cocidos; los pequeños y compactos, en potajes; los de piel fina, en cremas como el hummus.\n\nLa cosecha también importa: una legumbre del año se cuece antes y queda más tierna.",
+  "method": [
+   "Elige la variedad según el plato: entera y firme, melosa o deshecha.",
+   "Remoja los garbanzos 12 horas; las lentejas, salvo las grandes y viejas, no lo necesitan.",
+   "Cuece los garbanzos poniéndolos en agua ya caliente; las lentejas, desde frío.",
+   "Sala al final de la cocción.",
+   "Prueba cada partida nueva y apunta su tiempo."
+  ],
+  "ratios": [
+   {
+    "use": "Lenteja pardina",
+    "ratio": "25–35 minutos sin remojo",
+    "note": "Entera."
+   },
+   {
+    "use": "Lenteja roja",
+    "ratio": "10–15 minutos",
+    "note": "Se deshace."
+   },
+   {
+    "use": "Lenteja beluga",
+    "ratio": "20–25 minutos",
+    "note": "Firme, para ensaladas."
+   },
+   {
+    "use": "Garbanzo grande remojado",
+    "ratio": "1,5–2,5 horas",
+    "note": "Según variedad y cosecha."
+   }
+  ],
+  "variants": [
+   {
+    "id": "legumbres",
+    "name": "Legumbres",
+    "note": "Técnica general."
+   },
+   {
+    "id": "fabada-y-potajes",
+    "name": "Potajes",
+    "note": "Guisos de cuchara."
+   },
+   {
+    "id": "dal-y-curries-de-legumbre",
+    "name": "Dal",
+    "note": "Con lenteja roja."
+   },
+   {
+    "id": "untables-de-legumbre",
+    "name": "Hummus y untables",
+    "note": "Con garbanzo de piel fina."
+   }
+  ],
+  "keys": [
+   "Cada variedad, su plato.",
+   "Legumbre del año: más tierna y rápida.",
+   "Sal al final.",
+   "Lenteja roja para cremas, pardina para guisos.",
+   "Apunta el tiempo de cada partida."
+  ],
+  "errors": [
+   {
+    "p": "Lentejas deshechas en el guiso",
+    "fix": "Variedad harinosa o mucho tiempo. Usa pardina."
+   },
+   {
+    "p": "Garbanzos duros",
+    "fix": "Legumbre vieja o agua dura. Cambia de partida."
+   },
+   {
+    "p": "Ensalada de lentejas pastosa",
+    "fix": "Lenteja blanda. Usa beluga o pardina y cuece justo."
+   }
+  ],
+  "history": "Lentejas y garbanzos están entre los cultivos más antiguos del Mediterráneo y de Oriente Medio y son la base de la cocina de cuchara de toda la península.",
+  "uses": [
+   "Potajes y guisos",
+   "Ensaladas",
+   "Cremas y untables",
+   "Curries y dal",
+   "Crujientes"
+  ],
+  "keep": "En seco, en lugar fresco y cerrado, mejor dentro del año. Cocidas, 3–4 días en frío; se congelan bien.",
+  "pro": "Ten dos lentejas y dos garbanzos de uso claro, con su tiempo apuntado.",
+  "related": [
+   "legumbres",
+   "fabada-y-potajes",
+   "dal-y-curries-de-legumbre",
+   "untables-de-legumbre",
+   "desalado-y-remojo",
+   "espinacas-con-garbanzos"
+  ]
+ },
+ {
+  "id": "chiles-secos-y-frescos",
+  "name": "Chiles secos y frescos",
+  "name_en": "Fresh and dried chillies",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "chile",
+   "guindilla",
+   "jalapeño",
+   "habanero",
+   "serrano",
+   "chipotle",
+   "ancho",
+   "guajillo",
+   "cayena",
+   "ají",
+   "picante"
+  ],
+  "summary": "Cada chile tiene su picor y su sabor: frescos para frescor y picante vivo, secos para profundidad, dulzor y humo.",
+  "what": "Los chiles frescos (jalapeño, serrano, habanero, ojo de pájaro, guindilla verde) aportan un picante vivo y notas vegetales o frutales. Los secos (ancho, guajillo, pasilla, chipotle, que es un jalapeño ahumado, cayena, ñora o choricero) concentran el sabor: dulzor, notas de fruta pasa, cacao o humo. El picor se debe a la capsaicina, que se concentra sobre todo en las venas blancas y las semillas, y se disuelve en grasa y alcohol, no en agua.\n\nEl mismo chile cambia mucho de una planta a otra: hay que probar cada partida. Para tostar, hidratar y hacer salsas, ver [[chiles-y-salsas-mexicanas]]; para el pimentón y la ñora, [[pimenton-y-noras]].",
+  "method": [
+   "Manipula los chiles picantes con guantes y no te toques la cara.",
+   "Para reducir el picor, quita venas y semillas.",
+   "Frescos: pícalos, encúrtelos o ásalos para salsas y aliños.",
+   "Secos: quita rabo y semillas, tuéstalos unos segundos sin quemar e hidrátalos en agua caliente 15–30 minutos.",
+   "Si un plato pica de más, añade grasa, lácteo, dulce o más volumen; el agua no lo calma."
+  ],
+  "ratios": [
+   {
+    "use": "Hidratación de chiles secos",
+    "ratio": "Agua caliente, 15–30 minutos",
+    "note": "Guardar el agua si no amarga."
+   },
+   {
+    "use": "Tostado",
+    "ratio": "Sartén seca, 10–20 segundos por lado",
+    "note": "Quemado amarga."
+   },
+   {
+    "use": "Aceite de chile",
+    "ratio": "Aceite a 120–140 °C sobre los copos",
+    "note": "Ver salsas de chile."
+   },
+   {
+    "use": "Habanero en una salsa",
+    "ratio": "1 por cada 500 ml",
+    "note": "Muy picante."
+   }
+  ],
+  "variants": [
+   {
+    "id": "chiles-y-salsas-mexicanas",
+    "name": "Salsas mexicanas",
+    "note": "Tostar, hidratar y salsear."
+   },
+   {
+    "id": "pimenton-y-noras",
+    "name": "Pimentón y ñoras",
+    "note": "Pimientos secos dulces."
+   },
+   {
+    "id": "salsa-xo-y-aceites-de-chile",
+    "name": "Aceites de chile",
+    "note": "Chile en grasa."
+   },
+   {
+    "id": "kimchi",
+    "name": "Chile coreano",
+    "note": "En copos para fermentados."
+   }
+  ],
+  "keys": [
+   "Prueba cada partida: el picor varía mucho.",
+   "Venas y semillas: ahí está el picante.",
+   "Guantes con los más picantes.",
+   "Grasa y lácteo calman; el agua no.",
+   "Secos para profundidad, frescos para viveza."
+  ],
+  "errors": [
+   {
+    "p": "Plato demasiado picante",
+    "fix": "Chile muy picante o con semillas. Añade grasa, lácteo o más volumen."
+   },
+   {
+    "p": "Salsa amarga",
+    "fix": "Chile seco quemado al tostar. Tuesta segundos."
+   },
+   {
+    "p": "Picor en las manos o los ojos",
+    "fix": "Sin guantes. Lava con jabón y aceite, no solo con agua."
+   }
+  ],
+  "history": "Los chiles proceden de América y se extendieron por todo el mundo tras el contacto con Europa, hasta formar parte de cocinas tan distintas como la mexicana, la india, la tailandesa o la coreana.",
+  "uses": [
+   "Salsas y aliños",
+   "Encurtidos",
+   "Guisos y curries",
+   "Aceites picantes",
+   "Marinadas"
+  ],
+  "keep": "Frescos, 1–2 semanas en frío. Secos, meses en lugar seco y oscuro, bien cerrados. Hidratados, 2–3 días en frío.",
+  "pro": "Etiqueta los chiles por picor y uso; ten una salsa picante de la casa para ajustar al pedido.",
+  "related": [
+   "chiles-y-salsas-mexicanas",
+   "pimenton-y-noras",
+   "salsa-xo-y-aceites-de-chile",
+   "kimchi",
+   "especias",
+   "aromaticos-de-asia"
+  ]
  }
 ]

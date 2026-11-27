@@ -110,3 +110,11 @@ export async function shrinkImage(file) {
  if (!out || out.type !== 'image/webp') out = await make('image/jpeg', .86);
  return out && out.size < file.size ? out : file;
 }
+
+// Crear un plato: una explosión de ideas creativas para lo que el cocinero tiene en el plato (o para su idea de partida).
+export function bangPrompt({brief = '', dish = null} = {}) {
+ return RULES + '\n\nEstamos creando un plato y quiero una lluvia de ideas creativas, como un big bang: cosas que podrían irle muy bien, algunas evidentes y otras sorprendentes pero con sentido. ' +
+  'Dame 10 ideas concretas y variadas: sabores y productos, una salsa o base, una técnica, un contraste de textura, un toque final, un giro inesperado y alguna referencia de otra cocina. No repitas lo que ya lleva el plato. ' + ONLY_JSON + ' Formato:\n' +
+  '{"ideas": [{"texto": "la idea en 2 a 5 palabras (lo que se añade al plato)", "por": "por qué funciona, en pocas palabras", "papel": uno de salsa, fresco, crujiente, cremoso, toque, guarnicion}]}\n' + lang() +
+  '\n\nSU COCINA:\n' + JSON.stringify(kitchen()) + '\n\nLA IDEA DE PARTIDA:\n' + JSON.stringify(brief.slice(0, 600)) + '\n\nLO QUE YA LLEVA EL PLATO:\n' + JSON.stringify(dish);
+}

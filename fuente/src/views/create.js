@@ -1,39 +1,196 @@
-// I+D · Crear: tres formas de empezar un plato (desde cero, con un producto de casa o pidiendo ideas a la IA).
+// I+D · Crear: un plato se crea conversando (idea, sabores, plato); además, importar una receta, género recién llegado o plato en blanco.
 // Las ideas de la IA son borradores: solo entran en la libreta cuando el cocinero abre una.
 import {COURSES, dishProfile} from '../flavor-core.js';
 import {ideaToDish, recipeToDish} from '../ai-core.js';
-import {searchIngredients} from '../kitchen.js';
-import {role, technique} from '../flavor-core.js';
+import {role, technique, matchName, inSeason} from '../flavor-core.js';
+import {search, CATS} from '../saber/index.js';
+import {AI_TECHS} from '../ai-core.js';
 import {t, en, seasonOf} from '../i18n.js';
 import {esc, icon, $, toast, flavorPrint, uid, friendly} from '../ui.js';
 import {state, createDish} from '../store.js';
-import {ideasPrompt, ideasFromReply, importPrompt, recipeFromReply, copy} from '../ai.js';
+import {ideasPrompt, ideasFromReply, importPrompt, recipeFromReply, copy, bangPrompt, parseReply, chatInstructions} from '../ai.js';
 import {go} from '../nav.js';
 import {iaOn, askIa, iaMessage, imageData} from '../ia.js';
 import {trText, adoptIdea, sectionHead} from './shared.js';
 
 let form = {brief: '', course: '', lead: '', wants: []}, result = null, lastTrend = '', recipe = null, recipeText = '';
-export const title = params => (params[0] === 'llegado' ? t('Ha llegado género', 'New produce in') : params[0] === 'ideas' ? t('Dame ideas', 'Give me ideas') : params[0] === 'importar' ? t('Importar receta', 'Import a recipe') : t('Crear', 'Create'));
+export const title = params => (params[0] === 'llegado' ? t('Ha llegado género', 'New produce in') : params[0] === 'ideas' ? t('Dame ideas', 'Give me ideas') : params[0] === 'importar' ? t('Importar receta', 'Import a recipe') : t('Crear un plato', 'Create a dish'));
 const lbl = row => (en() ? row[2] : row[1]);
 const WANTS = () => [
  ['brasa', t('Con la brasa', 'Over charcoal')], ['compartir', t('Para compartir', 'To share')], ['vegetal', t('Vegetal', 'Plant-based')], ['temporada', t('De temporada', 'Seasonal')],
  ['aprovechamiento', t('De aprovechamiento', 'Zero waste')], ['rapido', t('Rápido en el pase', 'Fast at the pass')], ['atrevido', t('Algo atrevido', 'Something bold')]
 ];
 
-function launcher() {
- const kb = state.kb, pantry = state.kitchen?.pantry || new Set();
- const leads = kb ? kb.list.filter(i => pantry.has(i.id) && ['carne', 'ave', 'pescado', 'marisco', 'verdura', 'seta', 'queso'].includes(i.family)).slice(0, 60).sort((a, b) => (en() ? a.en.localeCompare(b.en) : a.es.localeCompare(b.es, 'es'))).slice(0, 24) : [];
- return '<header class="page-head"><h1>' + esc(t('Crear', 'Create')) + '</h1><p>' + esc(t('Empieza como quieras. Todo acaba en la mesa de trabajo, donde ves qué sabores dominan y qué le falta al plato.', 'Start however you like. Everything ends at the workbench, where you see which flavours lead and what the dish lacks.')) + '</p></header>' +
-  '<div class="tiles tiles-3 tiles-6">' +
-  '<a class="tile tile-big" href="#/plato/nuevo">' + icon('plus') + '<strong>' + esc(t('Desde cero', 'From scratch')) + '</strong><span>' + esc(t('Un plato en blanco para montarlo por componentes', 'A blank dish to build from components')) + '</span></a>' +
-  '<a class="tile tile-big tile-ember" href="#/crear/ideas">' + icon('spark') + '<strong>' + esc(t('Dame ideas', 'Give me ideas')) + '</strong><span>' + esc(t('Di qué buscas y saca tres propuestas para tu cocina', 'Say what you want and get three proposals for your kitchen')) + '</span></a>' +
-  '<a class="tile tile-big" href="#/sabores">' + icon('wheel') + '<strong>' + esc(t('Desde una combinación', 'From a pairing')) + '</strong><span>' + esc(t('Explora qué va con qué y tira del hilo', 'Explore what goes with what and follow the thread')) + '</span></a>' +
-  '<a class="tile tile-big" href="#/crear/importar">' + icon('copy') + '<strong>' + esc(t('Importar receta', 'Import a recipe')) + '</strong><span>' + esc(t('De una captura de TikTok, Instagram, una web o un libro', 'From a TikTok or Instagram screenshot, a website or a book')) + '</span></a>' +
-  '<a class="tile tile-big" href="#/crear/llegado">' + icon('box') + '<strong>' + esc(t('Ha llegado género', 'New produce in')) + '</strong><span>' + esc(t('Una foto de lo que ha entrado y tres platos para sacarle partido', 'A photo of what came in and three dishes to make the most of it')) + '</span></a>' +
-  '<a class="tile tile-big" href="#/menus">' + icon('book') + '<strong>' + esc(t('Montar una carta o menú', 'Build a menu')) + '</strong><span>' + esc(t('Junta platos y mira si el conjunto está equilibrado', 'Put dishes together and check the whole is balanced')) + '</span></a></div>' +
-  '<section class="sec">' + sectionHead(t('Con un producto', 'From a product'), '', t('Elige quién manda en el plato y empieza por ahí.', 'Choose what leads the dish and start there.')) +
-  '<label class="sr" for="leadSearch">' + esc(t('Buscar producto', 'Search product')) + '</label><div class="searchbox">' + icon('search') + '<input id="leadSearch" type="search" placeholder="' + esc(t('Pulpo, alcachofa, carrillera…', 'Octopus, artichoke, pork cheek…')) + '" autocomplete="off" enterkeyhint="search"></div><div id="leadResults" class="chips"></div>' +
-  (leads.length ? '<p class="mini">' + esc(t('Tus básicos', 'Your staples')) + '</p><div class="chips">' + leads.map(i => '<a class="chip chip-have" href="#/plato/nuevo/' + esc(i.id) + '">' + esc(en() ? i.en : i.es) + '</a>').join('') + '</div>' : '') + '</section>';
+// ---------- Crear: la mesa de ideas («big bang») ----------
+// En el centro, el plato. Alrededor estallan ideas: lo que le va, algo fresco o ácido, crujiente, cremoso, cómo cocinarlo,
+// recetas de la Biblioteca, algo atrevido y, con ChatGPT, giros creativos. Se arrastran al plato (o se tocan en el móvil)
+// y cada vez que entra algo, las ideas se recalculan. Nada se guarda en la libreta hasta que el cocinero lo pide.
+const BKEY = 'id-cocina-crear';
+const fresh0 = () => ({brief: '', items: [], name: '', named: false, ai: null, qa: null});
+let board = (() => { try { const v = JSON.parse(localStorage.getItem(BKEY) || 'null'); return v && Array.isArray(v.items) ? {...fresh0(), ...v} : null; } catch { return null; } })() || fresh0();
+let past = (() => { try { const v = JSON.parse(localStorage.getItem(BKEY) || 'null'); return Array.isArray(v?.past) ? v.past : []; } catch { return []; } })();
+let busy = '', cards = [];
+const keep = () => { try { localStorage.setItem(BKEY, JSON.stringify({...board, past: past.slice(0, 10)})); } catch {} };
+const ingName = id => { const i = state.kb?.byId[id]; return i ? (en() ? i.en : i.es) : id; };
+const cap = s => s.charAt(0).toUpperCase() + s.slice(1), lo = id => ingName(id).toLowerCase();
+const day = () => new Date().toISOString().slice(0, 10), hash = v => [...String(v)].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7);
+const month = () => new Date().getMonth() + 1;
+const ROLE_OF = {fresh: 'fresco', crunch: 'crujiente', creamy: 'cremoso', recipes: 'salsa'};
+// Productos de temporada para empezar (cambian cada día; primero los que tienes en tus básicos).
+function seasonal(n = 8) {
+ const kb = state.kb; if (!kb) return [];
+ const pantry = state.kitchen?.pantry || new Set();
+ return kb.list.filter(i => ['verdura', 'fruta', 'pescado', 'marisco', 'seta', 'carne', 'ave'].includes(i.family) && inSeason(i, month())).map(i => ({i, k: (pantry.has(i.id) ? 0 : 1) + (hash(i.id + day()) % 1000) / 1000})).sort((a, b) => a.k - b.k).slice(0, n).map(x => x.i.id);
+}
+// Productos que se reconocen en lo que escribe el cocinero.
+function found(text) {
+ const kb = state.kb, out = [];
+ if (!kb) return out;
+ for (const chunk of String(text).split(/[,.;:\n]|\s+(?:y|e|con|o|más|mas|and|with)\s+/i)) {
+  const words = chunk.trim().split(/\s+/).filter(Boolean);
+  for (let i = 0; i < words.length; i++) for (let n = Math.min(3, words.length - i); n >= 1; n--) { const id = matchName(kb, words.slice(i, i + n).join(' ')); if (id) { if (!out.includes(id)) out.push(id); i += n - 1; break; } }
+ }
+ return out;
+}
+const ings = () => board.items.filter(x => x.k === 'ing').map(x => x.id);
+// Las ideas que estallan alrededor del plato, por grupos. Cada tarjeta: {k, id, label, why, role, items}.
+function burst() {
+ const kb = state.kb;
+ if (!kb) return [];
+ const have = ings(), pantry = state.kitchen?.pantry || new Set();
+ const ing = (id, why, role = 'guarnicion') => ({k: 'ing', id, label: cap(ingName(id)), why, role});
+ if (!have.length) {
+  const out = [['start', t('Empieza por', 'Start with'), seasonal(8).map(id => ing(id, t('de temporada', 'in season'), 'principal'))]];
+  const basics = kb.list.filter(i => pantry.has(i.id) && ['carne', 'ave', 'pescado', 'marisco', 'verdura', 'seta'].includes(i.family)).map(i => ({i, k: hash(i.id + day())})).sort((a, b) => a.k - b.k).slice(0, 8).map(x => ing(x.i.id, t('de tus básicos', 'one of your staples'), 'principal'));
+  if (basics.length) out.push(['basics', t('Tus básicos', 'Your staples'), basics]);
+  if (board.ai?.length) out.unshift(['ai', t('Ideas de ChatGPT', 'Ideas from ChatGPT'), board.ai]);
+  return out;
+ }
+ const inPlate = new Set(have), score = new Map(), bold = new Set(), links = new Map();
+ have.forEach((id, n) => { for (const [pid, l] of kb.links[id] || []) { if (inPlate.has(pid)) continue; score.set(pid, (score.get(pid) || 0) + l.score * (n ? 1 : 1.5)); links.set(pid, (links.get(pid) || 0) + 1); if (l.bold) bold.add(pid); } });
+ const all = [...score].map(([id, s]) => ({id, i: kb.byId[id], s: s + (links.get(id) > 1 ? links.get(id) : 0) + (pantry.has(id) ? .4 : 0) + (inSeason(kb.byId[id], month()) ? .4 : 0)})).filter(x => x.i).sort((a, b) => b.s - a.s || a.id.localeCompare(b.id));
+ const used = new Set(), plain = ['condimento', 'grasa'];
+ const why = x => links.get(x.id) > 1 ? t('une lo que ya llevas', 'ties together what you have') : pantry.has(x.id) ? t('lo tienes en tus básicos', 'one of your staples') : inSeason(x.i, month()) ? t('de temporada', 'in season') : t('con ' + lo(have.find(h => kb.links[h]?.has(x.id)) || have[0]), 'with ' + lo(have.find(h => kb.links[h]?.has(x.id)) || have[0]));
+ const take = (fn, n, role) => { const out = []; for (const x of all) { if (out.length >= n) break; if (used.has(x.id) || !fn(x.i, x)) continue; used.add(x.id); out.push(ing(x.id, why(x), role)); } return out; };
+ const out = [];
+ if (board.ai?.length) out.push(['ai', t('Ideas de ChatGPT', 'Ideas from ChatGPT'), board.ai]);
+ out.push(['fresh', t('Frescor y ácido', 'Freshness and acidity'), take(i => i.taste[2] >= 3 || ['encurtido', 'hierba'].includes(i.family), 5, 'fresco')]);
+ out.push(['crunch', t('Crujiente', 'Crunch'), take(i => i.textures.includes('crujiente') || i.family === 'fruto-seco', 5, 'crujiente')]);
+ out.push(['creamy', t('Cremoso', 'Creamy'), take(i => i.textures.includes('cremoso') || ['lacteo', 'queso'].includes(i.family), 5, 'cremoso')]);
+ out.push(['bold', t('Algo atrevido', 'Something bold'), take((i, x) => bold.has(x.id) && !plain.includes(i.family), 5)]);
+ out.push(['goes', t('Le va muy bien', 'Goes really well'), take(i => !plain.includes(i.family), 6)]);
+ // Cómo cocinarlo: las técnicas que encajan con el protagonista.
+ const main = kb.byId[have[0]], done = new Set(board.items.filter(x => x.k === 'tech').map(x => x.id));
+ const techs = [...new Set([...(main?.tech || []), 'brasa', 'crudo', 'confitado', 'encurtido', 'ahumado', 'tostado'])].filter(id => technique(id) && !done.has(id)).slice(0, 6);
+ out.push(['tech', t('Cómo cocinarlo', 'How to cook it'), techs.map(id => ({k: 'tech', id, label: en() ? technique(id).en : technique(id).es, why: t('para ' + lo(have[0]), 'for ' + lo(have[0]))}))]);
+ // Recetas de la Biblioteca que se pueden arrastrar al plato (salsas, bases, fondos, guarniciones…).
+ const inRec = new Set(board.items.filter(x => x.k === 'rec').map(x => x.id)), recs = [];
+ const plateWords = have.map(id => ingName(id).toLowerCase()), isDish = e => plateWords.some(w => e.name.toLowerCase().includes(w));
+ for (const name of [...all.slice(0, 10).map(x => x.id), ...have].map(ingName)) {
+  for (const e of search(name, 6)) { if (recs.length >= 6) break; if (inRec.has(e.id) || recs.some(r => r.id === e.id) || !e.base?.items?.length || !['salsas', 'fondos', 'bases', 'dulce'].includes(e.cat) || isDish(e)) continue; recs.push({k: 'rec', id: e.id, label: e.name, why: (CATS.find(c => c[0] === e.cat) || [, ''])[en() ? 2 : 1].toLowerCase(), role: e.cat === 'salsas' ? 'salsa' : e.cat === 'dulce' ? 'cremoso' : 'guarnicion', items: e.base.items.slice(0, 6).map(x => String(x[0]).replace(/\s*\(.*\)$/, ''))}); }
+  if (recs.length >= 6) break;
+ }
+ out.push(['recipes', t('Recetas de la Biblioteca', 'Library recipes'), recs]);
+ return out.filter(c => c[2].length);
+}
+function autoName() {
+ if (board.named && board.name) return board.name;
+ const main = board.items[0], rest = board.items.slice(1).filter(x => x.k !== 'tech' && !x.label.toLowerCase().includes(main?.label.toLowerCase())).map(x => x.label.toLowerCase());
+ const tech = board.items.find(x => x.k === 'tech');
+ if (!main) return '';
+ return main.label + (tech ? ' ' + tech.label.toLowerCase().replace(/^(brasa|plancha)$/, 'a la $1') : '') + (rest.length ? t(' con ', ' with ') + rest.slice(0, 2).join(t(' y ', ' and ')) : '');
+}
+function toIdea() {
+ const techs = board.items.filter(x => x.k === 'tech').map(x => x.id), parts = board.items.filter(x => x.k !== 'tech');
+ return {name: autoName() || t('Plato nuevo', 'New dish'), line: board.brief.slice(0, 240), course: 'otro', why: '', twist: '',
+  components: parts.map((x, k) => ({role: k ? (x.role || 'guarnicion') : 'principal', name: x.label, techniques: k ? [] : techs.filter(id => AI_TECHS.includes(id)), items: x.items?.length ? x.items : [x.label]}))};
+}
+function add(card) {
+ if (!card) return;
+ if (board.items.some(x => x.k === card.k && x.id === card.id && x.label === card.label)) return;
+ const item = {k: card.k === 'idea' ? 'idea' : card.k, id: card.id || card.label, label: card.label, role: board.items.length ? (card.role || 'guarnicion') : 'principal', ...(card.items ? {items: card.items} : {})};
+ board.items.push(item);
+ if (card.k === 'idea') board.ai = (board.ai || []).filter(x => x.label !== card.label);
+ keep();
+}
+function cardHtml(c, key, k) {
+ return '<button type="button" class="bcard bcard-' + c.k + '" draggable="true" data-add="' + key + ':' + k + '" style="--i:' + k + '">' + icon(c.k === 'tech' ? 'flame' : c.k === 'rec' ? 'book' : c.k === 'idea' ? 'spark' : 'plus') + '<span><strong>' + esc(c.label) + '</strong>' + (c.why ? '<small>' + esc(c.why) + '</small>' : '') + '</span></button>';
+}
+function plateHtml() {
+ const on = iaOn(), can = state.canEdit && !state.setupPending, name = autoName();
+ return '<section class="bplate" id="bPlate" aria-labelledby="bPlateH">' +
+  '<form id="bStart" class="bstart"><label for="bBrief" id="bPlateH">' + esc(board.items.length ? t('Añade o cuenta algo más', 'Add or tell me more') : t('Empieza por algo', 'Start with something')) + '</label><div class="bstart-row"><input id="bBrief" autocomplete="off" maxlength="300" placeholder="' + esc(t('Pulpo, un postre con higos, el arroz de mi abuela…', 'Octopus, a fig dessert, my grandmother\'s rice…')) + '"' + (busy ? ' disabled' : '') + '><button type="submit" class="btn' + (board.items.length ? '' : ' primary') + '"' + (busy ? ' disabled' : '') + '>' + icon('spark') + '<span>' + esc(t('Ideas', 'Ideas')) + '</span></button></div></form>' +
+  '<div class="bdish' + (board.items.length ? '' : ' is-empty') + '" id="bDish" aria-live="polite">' +
+  (board.items.length ? '<label class="sr" for="bName">' + esc(t('Nombre del plato', 'Dish name')) + '</label><input id="bName" class="bname" value="' + esc(name) + '" maxlength="120">' +
+   '<ul class="bitems">' + board.items.map((x, k) => '<li class="bitem bitem-' + x.k + '"><span>' + (k === 0 ? '<small>' + esc(t('manda', 'leads')) + '</small>' : '') + esc(x.label) + (x.items?.length && x.k === 'rec' ? '<small>' + esc(x.items.slice(0, 4).join(', ')) + '</small>' : '') + '</span><button type="button" class="iconbtn" data-drop="' + k + '" aria-label="' + esc(t('Quitar ', 'Remove ') + x.label) + '">' + icon('x') + '</button></li>').join('') + '</ul>'
+   : '<p>' + esc(t('Arrastra aquí lo que te guste, o tócalo.', 'Drag here what you like, or tap it.')) + '</p>') + '</div>' +
+  (board.items.length ? '<div class="bacts">' + (can ? '<button type="button" class="btn primary" data-act="b-save">' + icon('book') + esc(t('Guardar en mis platos', 'Save to my dishes')) + '</button>' : '') + (on ? '<button type="button" class="btn ghost" data-act="b-ai">' + icon('spark') + esc(t('Más ideas con ChatGPT', 'More ideas from ChatGPT')) + '</button>' : '') + '<button type="button" class="linkbtn" data-act="b-new">' + esc(t('Empezar otro', 'Start another')) + '</button></div>' : '') +
+  (busy ? '<p class="fine bbusy">' + esc(busy) + '</p>' : '') +
+  (on ? '<form id="bAsk" class="bask"><label for="bQ">' + esc(t('Pregúntame algo de este plato', 'Ask me something about this dish')) + '</label><div class="bstart-row"><input id="bQ" autocomplete="off" maxlength="400" placeholder="' + esc(t('¿Qué vino? ¿Cómo lo emplato? ¿Le falta algo?', 'Which wine? How do I plate it? Is it missing something?')) + '"><button type="submit" class="btn ghost">' + icon('send') + '<span>' + esc(t('Preguntar', 'Ask')) + '</span></button></div>' + (board.qa ? '<div class="banswer"><p class="fine"><strong>' + esc(board.qa.q) + '</strong></p>' + board.qa.a.split(/\n+/).filter(Boolean).map(p => '<p>' + esc(p.replace(/\*\*/g, '')) + '</p>').join('') + '</div>' : '') + '</form>'
+   : '<p class="fine">' + esc(t('Con ChatGPT conectado (Ajustes) te propone giros creativos y le puedes preguntar.', 'With ChatGPT connected (Settings) you get creative twists and can ask it questions.')) + '</p>') +
+  '</section>';
+}
+function studio() {
+ cards = burst();
+ const groups = cards.map(([key, label, list]) => '<section class="bgroup bgroup-' + key + '" aria-label="' + esc(label) + '"><h2>' + esc(label) + '</h2><div class="bcards">' + list.map((c, k) => cardHtml(c, key, k)).join('') + '</div></section>').join('');
+ return '<header class="page-head"><h1>' + esc(t('Crear un plato', 'Create a dish')) + '</h1><p>' + esc(t('Pon algo en el plato y deja que salten las ideas: arrastra o toca lo que te guste y vuelven a salir otras.', 'Put something on the plate and let the ideas fly: drag or tap what you like and new ones appear.')) + '</p></header>' +
+  '<div class="bang' + (board.items.length ? ' has-dish' : '') + '">' + plateHtml() + groups + '</div>' +
+  '<nav class="cother" aria-label="' + esc(t('Otras formas de empezar', 'Other ways to start')) + '"><span>' + esc(t('También:', 'Also:')) + '</span><a href="#/crear/importar">' + esc(t('Importar una receta', 'Import a recipe')) + '</a><a href="#/crear/llegado">' + esc(t('Ha llegado género', 'New produce in')) + '</a><a href="#/plato/nuevo">' + esc(t('Plato en blanco', 'Blank dish')) + '</a></nav>';
+}
+async function bigBang() {
+ const reply = parseReply(await askIa({text: bangPrompt({brief: board.brief, dish: board.items.length ? toIdea() : null}), json: true}));
+ const list = (Array.isArray(reply?.ideas) ? reply.ideas : []).map(x => ({k: 'idea', label: String(x?.texto || '').trim().slice(0, 60), why: String(x?.por || '').trim().slice(0, 120), role: ['salsa', 'fresco', 'crujiente', 'cremoso', 'toque', 'guarnicion'].includes(x?.papel) ? x.papel : 'guarnicion'})).filter(x => x.label).slice(0, 12);
+ if (!list.length) throw Object.assign(Error('empty'), {kind: 'empty'});
+ board.ai = list;
+ if (reply.nombre && !board.named && !board.items.length) board.name = '';
+ keep();
+}
+function mountStudio(root) {
+ const paint = () => { if (root.isConnected) root.innerHTML = studio(); };
+ const cardOf = v => { const [key, k] = String(v || '').split(':'); return (cards.find(c => c[0] === key)?.[2] || [])[Number(k)] || null; };
+ const run = async (label, fn) => { busy = label; paint(); try { await fn(); } catch (err) { toast(err?.kind === 'empty' ? t('ChatGPT no ha devuelto ideas. Prueba otra vez.', 'ChatGPT returned no ideas. Try again.') : iaMessage(err), 'error', 7000); } finally { busy = ''; paint(); } };
+ root.addEventListener('submit', async e => {
+  if (e.target.id === 'bStart') {
+   e.preventDefault();
+   const text = $('#bBrief', root).value.trim();
+   if (!text) { $('#bBrief', root).focus(); return; }
+   if (!board.brief) board.brief = text;
+   const ids = found(text);
+   for (const id of ids) add({k: 'ing', id, label: cap(ingName(id)), role: 'guarnicion'});
+   keep();
+   if (iaOn()) { board.brief = board.items.length && board.brief !== text ? board.brief + '. ' + text : text; await run(t('ChatGPT está soltando ideas…', 'ChatGPT is throwing ideas…'), bigBang); }
+   else { if (!ids.length) toast(t('No reconozco ningún producto ahí. Prueba con uno concreto (pulpo, calabaza, cordero…) o toca uno de abajo.', 'I do not recognise a product there. Try a specific one (octopus, pumpkin, lamb…) or tap one below.'), 'info', 6000); paint(); }
+   $('#bBrief', root)?.focus();
+   return;
+  }
+  if (e.target.id === 'bAsk') {
+   e.preventDefault();
+   const q = $('#bQ', root).value.trim();
+   if (!q) return;
+   await run(t('ChatGPT está pensando…', 'ChatGPT is thinking…'), async () => { const a = await askIa({instructions: chatInstructions(null), text: (board.items.length ? t('Estoy creando este plato: ', 'I am creating this dish: ') + JSON.stringify(toIdea()) + '\n\n' : '') + q}); board.qa = {q, a: String(a || '').slice(0, 3000)}; keep(); });
+  }
+ });
+ root.addEventListener('click', async e => {
+  const c = e.target.closest('[data-add]'), d = e.target.closest('[data-drop]'), act = e.target.closest('[data-act]')?.dataset.act;
+  if (c) { add(cardOf(c.dataset.add)); paint(); $('#bDish', root)?.classList.add('is-hit'); return; }
+  if (d) { board.items.splice(Number(d.dataset.drop), 1); if (board.items[0]) board.items[0].role = 'principal'; keep(); paint(); return; }
+  if (act === 'b-ai') { await run(t('ChatGPT está soltando ideas…', 'ChatGPT is throwing ideas…'), bigBang); return; }
+  if (act === 'b-save' && board.items.length) {
+   const b = e.target.closest('button'); b.disabled = true;
+   const idea = toIdea(), dish = await adoptIdea(idea, {kind: 'crear', title: (board.brief || idea.name).slice(0, 140)});
+   if (dish) { past = [{at: new Date().toISOString(), ...board, dish: dish.id}, ...past]; board = fresh0(); keep(); }
+   else if (b.isConnected) b.disabled = false;
+   return;
+  }
+  if (act === 'b-new') { if (board.items.length || board.ai) past = [{at: new Date().toISOString(), ...board}, ...past]; board = fresh0(); keep(); paint(); return; }
+ });
+ root.addEventListener('input', e => { if (e.target.id === 'bName') { board.name = e.target.value; board.named = !!e.target.value.trim(); keep(); } });
+ // Arrastrar ideas al plato (en el móvil se tocan).
+ root.addEventListener('dragstart', e => { const c = e.target.closest?.('[data-add]'); if (!c) return; e.dataTransfer.setData('text/plain', c.dataset.add); e.dataTransfer.effectAllowed = 'copy'; root.classList.add('is-dragging'); });
+ root.addEventListener('dragend', () => { root.classList.remove('is-dragging'); $('#bPlate', root)?.classList.remove('is-over'); });
+ root.addEventListener('dragover', e => { const p = e.target.closest?.('#bPlate'); if (!p) return; e.preventDefault(); e.dataTransfer.dropEffect = 'copy'; p.classList.add('is-over'); });
+ root.addEventListener('dragleave', e => { const p = e.target.closest?.('#bPlate'); if (p && !p.contains(e.relatedTarget)) p.classList.remove('is-over'); });
+ root.addEventListener('drop', e => { const p = e.target.closest?.('#bPlate'); if (!p) return; e.preventDefault(); add(cardOf(e.dataTransfer.getData('text/plain'))); paint(); $('#bDish', root)?.classList.add('is-hit'); });
 }
 
 function ideaResult(idea, k) {
@@ -182,19 +339,12 @@ function mountArrived(root) {
  });
 }
 
-export const render = params => (params[0] === 'llegado' ? arrivedPage() : params[0] === 'ideas' ? ideasPage(params[1]) : params[0] === 'importar' ? importPage() : launcher());
+export const render = params => (params[0] === 'llegado' ? arrivedPage() : params[0] === 'ideas' ? ideasPage(params[1]) : params[0] === 'importar' ? importPage() : studio());
 
 export function mount(root, params) {
  if (params[0] === 'importar') { mountImport(root); return null; }
  if (params[0] === 'llegado') { mountArrived(root); return null; }
- if (params[0] !== 'ideas') {
-  const input = $('#leadSearch', root), box = $('#leadResults', root);
-  if (input) input.oninput = () => {
-   const q = input.value.trim();
-   box.innerHTML = q.length < 2 || !state.kb ? '' : searchIngredients(state.kb, state.kitchen, q, {limit: 12, english: en()}).filter(r => r.item.k).map(r => '<a class="chip' + (r.have ? ' chip-have' : '') + '" href="#/plato/nuevo/' + esc(r.item.k) + '">' + esc(r.label) + (r.type === 'recipe' ? '<small>' + esc(t('subreceta tuya', 'your sub-recipe')) + '</small>' : r.have ? '<small>' + esc(t('de tus básicos', 'one of your staples')) + '</small>' : '') + '</a>').join('') || '<p class="hint">' + esc(t('No lo encuentro en la tabla. Empieza desde cero y escríbelo tal cual.', 'I cannot find it in the table. Start from scratch and type it as it is.')) + '</p>';
-  };
-  return null;
- }
+ if (params[0] !== 'ideas') { mountStudio(root); return null; }
  const trend = params[1] ? state.trends.find(x => x.id === params[1]) : null;
  const repaint = () => { if (root.isConnected) { root.innerHTML = ideasPage(params[1]); } };
  root.addEventListener('input', e => { if (e.target.id === 'brief') form.brief = e.target.value; if (e.target.id === 'ideaLead') form.lead = e.target.value; });
@@ -235,5 +385,10 @@ export function mount(root, params) {
  });
  return null;
 }
-// Mientras se escribe la petición no se repinta la pantalla.
-export function onData() {}
+// Mientras se escribe no se repinta la pantalla. Al empezar, cuando llega la tabla de sabores, salen las ideas.
+export function onData(what, root, params = []) {
+ if (['importar', 'llegado', 'ideas'].includes(params[0]) || !root || busy) return;
+ const a = document.activeElement;
+ if (a && root.contains(a) && /^(INPUT|TEXTAREA)$/.test(a.tagName)) return;
+ if (root.querySelector('#bPlate')) root.innerHTML = studio();
+}

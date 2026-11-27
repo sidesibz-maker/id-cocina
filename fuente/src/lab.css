@@ -1369,3 +1369,49 @@ button.exopt:hover{border-color:var(--ink);background:var(--soft)}
 .exres .exbig{font-family:var(--serif);font-weight:600;font-size:clamp(56px,8vw,88px);line-height:1;font-variant-numeric:tabular-nums}.exres .exbig small{font-size:.35em;color:var(--mut)}
 .exsum{list-style:none;padding:0;display:flex;gap:24px;margin:12px 0 20px}.exsum strong{font-family:var(--serif);font-weight:600;font-size:22px;font-variant-numeric:tabular-nums}
 .exfails{padding-left:20px;display:grid;gap:12px;margin:8px 0}.exfails li span{display:block;color:var(--ink2)}
+/* Ficha: primero qué es (el resumen), luego los botones. */
+.kentry > .page-head + .kbody{margin:4px 0 8px}
+.kentry > .kentry-acts{margin:0 0 20px}
+/* Crear: la mesa de ideas. El plato en el centro y las ideas estallando alrededor (en el móvil, el plato arriba y las ideas en filas). */
+.bang{display:grid;grid-template-columns:minmax(0,1fr);gap:20px;margin-top:8px}
+.bplate{border:1px solid var(--ink);background:var(--card);padding:16px;display:flex;flex-direction:column;gap:12px}
+.bplate.is-over{border-color:var(--ember);outline:2px dashed var(--ember);outline-offset:4px}
+.is-dragging .bplate{border-style:dashed}
+.bstart label,.bask label{display:block;font-family:var(--narrow);font-weight:600;color:var(--mut);margin-bottom:6px}
+.bstart-row{display:flex;gap:8px}.bstart-row input{flex:1;min-width:0}
+.bdish{border-top:1px solid var(--line);padding-top:12px}
+.bdish.is-empty{min-height:120px;display:grid;place-items:center;border:1px dashed var(--line);padding:16px;text-align:center;color:var(--mut)}
+.bdish.is-empty p{margin:0}
+.bdish.is-hit{animation:bhit .4s var(--ease-out)}
+@keyframes bhit{from{background:var(--ember-soft)}to{background:transparent}}
+.bname{width:100%;font-family:var(--serif);font-size:28px;line-height:1.1;font-weight:700;border:0;border-bottom:1px solid var(--line);background:transparent;color:var(--ink);padding:4px 0}
+.bitems{list-style:none;margin:8px 0 0;padding:0}
+.bitem{display:flex;align-items:center;justify-content:space-between;gap:8px;border-bottom:1px solid var(--line);min-height:44px}
+.bitem>span{display:flex;flex-direction:column;padding:6px 0}.bitem small{color:var(--mut);font-size:13px}
+.bitem:first-child>span{font-weight:700}.bitem:first-child small{color:var(--ember-ink);font-weight:600}
+.bacts{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center}
+.bbusy{margin:0;color:var(--ember-ink)}
+.bask{border-top:1px solid var(--line);padding-top:12px}
+.banswer{margin-top:10px}.banswer p{margin:6px 0 0;line-height:1.55}
+.bgroup h2{font-family:var(--narrow);font-size:15px;font-weight:600;color:var(--mut);margin:0 0 8px}
+.bgroup-ai h2{color:var(--ember-ink)}
+.bcards{display:flex;flex-wrap:wrap;gap:8px}
+.bcard{display:inline-flex;align-items:flex-start;gap:8px;min-height:44px;padding:8px 12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit;text-align:left;cursor:grab;animation:bpop .36s var(--ease-out) both;animation-delay:calc(var(--i,0) * 35ms)}
+.bcard:hover{border-color:var(--ink)}.bcard:active{cursor:grabbing}
+.bcard .ic{width:16px;height:16px;margin-top:3px;flex:none;color:var(--ember-ink)}
+.bcard span{display:flex;flex-direction:column}.bcard small{color:var(--mut);font-size:13px}
+.bcard-idea{border-color:var(--ember)}.bcard-rec .ic,.bcard-tech .ic{color:var(--mut)}
+@keyframes bpop{from{opacity:0;transform:scale(.7) translateY(6px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.bcard,.bdish.is-hit{animation:none}}
+@media (max-width:959px){.bcards{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px;scroll-snap-type:x proximity}.bcard{flex:none;max-width:240px;scroll-snap-align:start}}
+@media (min-width:960px){
+ .bang.has-dish{grid-template-columns:minmax(0,1fr) minmax(320px,1.1fr) minmax(0,1fr);align-items:start}
+ .bang.has-dish .bplate{grid-column:2;grid-row:1 / span 3;position:sticky;top:16px}
+ .bang.has-dish .bgroup{grid-column:auto}
+ .bang:not(.has-dish){grid-template-columns:minmax(320px,420px) minmax(0,1fr);align-items:start}
+ .bang:not(.has-dish) .bplate{grid-row:1 / span 3}
+}
+.cother{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;margin-top:28px;padding-top:16px;border-top:1px solid var(--line);color:var(--mut)}
+.cother a{min-height:44px;display:inline-flex;align-items:center}
+.bplate .bname{border:0;border-bottom:1px solid var(--line);background:transparent;padding:4px 0;min-height:44px}
+@media (max-width:959px){.bplate{padding:12px;gap:10px}.bplate .bname{font-size:24px}}

@@ -14583,5 +14583,1979 @@
    "sobrasada-y-embutidos",
    "patata-y-boniato"
   ]
+ },
+ {
+  "id": "sushi-y-sashimi",
+  "name": "Sushi y sashimi",
+  "name_en": "Sushi and sashimi",
+  "cat": "tecnicas",
+  "group": "Cocina de Asia",
+  "technique": "crudo",
+  "aka": [
+   "sushi",
+   "sashimi",
+   "nigiri",
+   "maki",
+   "hosomaki",
+   "uramaki",
+   "corte de sashimi"
+  ],
+  "summary": "Pescado crudo de primera, congelado antes, cortado de un solo trazo y servido solo (sashimi) o sobre arroz aliñado (sushi).",
+  "what": "El sashimi es pescado o marisco crudo cortado en piezas limpias y servido solo, con soja, wasabi y jengibre encurtido. El sushi une ese pescado al [[arroz-japones-y-al-vapor|arroz aliñado con vinagre]]: el nigiri es una pequeña bola de arroz con una lámina encima; el maki, un rollo de arroz y relleno envuelto en alga nori.\n\nTodo depende de tres cosas: un pescado excelente y seguro, un arroz bien hecho a temperatura de la mano y un corte de un solo trazo con cuchillo muy afilado, que no aplaste la carne. El pescado que se sirve crudo tiene que haberse congelado antes (-20 °C al menos 24 horas en toda la pieza) o venir ya tratado, por el anisakis.",
+  "base": {
+   "for": "4 raciones (24 nigiris o 8 rollos)",
+   "items": [
+    [
+     "Lomo de atún, salmón, lubina o dorada congelado antes y descongelado en frío",
+     "500 g"
+    ],
+    [
+     "Arroz de sushi aliñado",
+     "600 g cocido"
+    ],
+    [
+     "Alga nori",
+     "4 hojas"
+    ],
+    [
+     "Wasabi",
+     "al gusto"
+    ],
+    [
+     "Salsa de soja y jengibre encurtido",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Descongela el pescado en la cámara, sécalo y retira piel, espinas y partes oscuras; mantenlo a 2–4 °C.",
+    "Sashimi: corta el lomo contra la fibra en piezas de 1 cm de un solo trazo largo, tirando del cuchillo hacia ti.",
+    "Nigiri: corta láminas de 5 mm; forma bolas de arroz de 15–20 g con las manos húmedas, pon un punto de wasabi y la lámina encima, y presiona suave.",
+    "Maki: extiende 100–120 g de arroz sobre media hoja de nori, pon el relleno en una línea y enrolla con esterilla, apretando; corta en 6–8 piezas con cuchillo húmedo.",
+    "Sirve enseguida, con el pescado frío y el arroz templado."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Nigiri",
+    "ratio": "15–20 g de arroz y 8–12 g de pescado",
+    "note": "Un bocado."
+   },
+   {
+    "use": "Congelación previa",
+    "ratio": "-20 °C al menos 24 horas en toda la pieza",
+    "note": "Por el anisakis; o pescado ya tratado."
+   },
+   {
+    "use": "Pescado al servir",
+    "ratio": "2–6 °C",
+    "note": "Frío pero no helado."
+   },
+   {
+    "use": "Ración de sashimi",
+    "ratio": "80–100 g",
+    "note": "Entrante."
+   }
+  ],
+  "variants": [
+   {
+    "id": "arroz-japones-y-al-vapor",
+    "name": "Arroz de sushi",
+    "note": "Lavado, cocción y aliño."
+   },
+   {
+    "id": "ceviche-y-crudos",
+    "name": "Crudos",
+    "note": "Seguridad y cortes."
+   },
+   {
+    "id": "atun-rojo-y-bonito",
+    "name": "Atún",
+    "note": "Zonas y uso en crudo."
+   },
+   {
+    "id": "curado-de-pescado",
+    "name": "Pescado curado",
+    "note": "Para caballa o pescados que lo agradecen."
+   }
+  ],
+  "keys": [
+   "Pescado congelado antes o ya tratado: siempre.",
+   "Un solo trazo, cuchillo largo y muy afilado.",
+   "Pescado frío, arroz templado.",
+   "Manos y cuchillo húmedos para que el arroz no se pegue.",
+   "Poca soja: moja el pescado, no el arroz."
+  ],
+  "errors": [
+   {
+    "p": "Corte rasgado",
+    "fix": "Cuchillo sin filo o corte en sierra. Afila y corta de un trazo."
+   },
+   {
+    "p": "Nigiri que se deshace",
+    "fix": "Arroz poco presionado o frío. Forma con presión suave y arroz templado."
+   },
+   {
+    "p": "Pescado blando y sin brillo",
+    "fix": "Descongelado mal o templado. Descongela en cámara y trabaja en frío."
+   }
+  ],
+  "history": "El sushi actual, con el pescado crudo sobre arroz aliñado, se desarrolló en Japón en los últimos siglos a partir de antiguas técnicas de conservar pescado en arroz fermentado.",
+  "uses": [
+   "Barra de crudos",
+   "Entrantes",
+   "Menús de cocina japonesa"
+  ],
+  "keep": "Se sirve al momento. El pescado limpio y descongelado, el mismo día; el arroz de sushi, sin cámara y del día.",
+  "pro": "Pescado porcionado en bloques y en frío; arroz en recipiente tapado con paño húmedo; montaje al pedido.",
+  "related": [
+   "arroz-japones-y-al-vapor",
+   "ceviche-y-crudos",
+   "atun-rojo-y-bonito",
+   "curado-de-pescado",
+   "cadena-de-frio",
+   "cortes-de-cuchillo"
+  ]
+ },
+ {
+  "id": "tonkatsu-y-karaage",
+  "name": "Tonkatsu y karaage",
+  "name_en": "Tonkatsu and karaage",
+  "cat": "tecnicas",
+  "group": "Cocina de Asia",
+  "technique": "fritura",
+  "aka": [
+   "tonkatsu",
+   "katsu",
+   "karaage",
+   "pollo frito japonés",
+   "cerdo empanado con panko",
+   "salsa tonkatsu"
+  ],
+  "summary": "Dos fritos japoneses: lomo de cerdo empanado con panko y muslo de pollo marinado y frito dos veces con fécula.",
+  "what": "El tonkatsu es un filete grueso de lomo o cinta de cerdo pasado por harina, huevo y panko (pan rallado japonés en escamas) y frito hasta quedar dorado y muy crujiente. Se corta en tiras y se sirve con col en juliana muy fina, arroz y una salsa espesa, dulce y ácida.\n\nEl karaage es pollo, casi siempre muslo deshuesado, marinado en soja, jengibre, ajo y sake, rebozado en fécula de patata y frito en dos tiempos: una primera fritura suave, un reposo y una segunda más fuerte para que la costra quede crujiente y el interior jugoso. Cada casa ajusta su marinada.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Lomo de cerdo en filetes de 2 cm (tonkatsu)",
+     "4 × 150 g"
+    ],
+    [
+     "Harina, huevo batido y panko",
+     "cantidad necesaria"
+    ],
+    [
+     "Muslo de pollo deshuesado en trozos de 4 cm (karaage)",
+     "600 g"
+    ],
+    [
+     "Marinada: soja, sake, jengibre y ajo rallados",
+     "40 ml, 20 ml, 10 g y 2 dientes"
+    ],
+    [
+     "Fécula de patata",
+     "80 g"
+    ],
+    [
+     "Aceite para freír",
+     "abundante"
+    ],
+    [
+     "Col en juliana muy fina y limón",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Tonkatsu: haz pequeños cortes en la grasa del filete para que no se curve, sala, enharina, pasa por huevo y por panko presionando.",
+    "Fríe a 170 °C 4–6 minutos, dándole la vuelta, hasta que esté dorado; reposa 2 minutos sobre rejilla y corta en tiras.",
+    "Karaage: marina el pollo 30 minutos a 2 horas; escurre y reboza en fécula.",
+    "Primera fritura a 160 °C 3–4 minutos; reposa 3 minutos fuera del aceite.",
+    "Segunda fritura a 180 °C 1 minuto, hasta que esté crujiente; sirve con limón y col."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Tonkatsu",
+    "ratio": "170 °C, 4–6 minutos",
+    "note": "Centro del cerdo a 65 °C."
+   },
+   {
+    "use": "Karaage, primera fritura",
+    "ratio": "160 °C, 3–4 minutos",
+    "note": "Reposo de 3 minutos."
+   },
+   {
+    "use": "Karaage, segunda fritura",
+    "ratio": "180 °C, 1 minuto",
+    "note": "Muslo a 75 °C o más."
+   },
+   {
+    "use": "Ración",
+    "ratio": "150 g de carne",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "rebozados-y-empanados",
+    "name": "Empanados",
+    "note": "Harina, huevo y pan."
+   },
+   {
+    "id": "fritura",
+    "name": "Fritura",
+    "note": "Aceite y temperaturas."
+   },
+   {
+    "id": "tempura",
+    "name": "Tempura",
+    "note": "Otro frito japonés."
+   },
+   {
+    "id": "despiece-de-aves",
+    "name": "Muslo deshuesado",
+    "note": "Para el karaage."
+   }
+  ],
+  "keys": [
+   "Panko presionado para una costra gruesa.",
+   "Cortes en la grasa: el filete no se curva.",
+   "Doble fritura con reposo para el karaage.",
+   "Fécula de patata: costra fina y crujiente.",
+   "Reposo en rejilla antes de cortar."
+  ],
+  "errors": [
+   {
+    "p": "Costra que se despega",
+    "fix": "Carne húmeda. Sécala y enharina bien."
+   },
+   {
+    "p": "Karaage blando",
+    "fix": "Sin segunda fritura. Fríe dos veces."
+   },
+   {
+    "p": "Cerdo seco",
+    "fix": "Filete fino o mucho tiempo. 2 cm de grosor y sonda."
+   }
+  ],
+  "history": "El tonkatsu nació en Japón a finales del siglo XIX, inspirado en los empanados occidentales; el karaage es uno de los fritos más populares de la cocina japonesa de casa y de bar.",
+  "uses": [
+   "Platos de mediodía",
+   "Bocados y aperitivos",
+   "Bocadillos de pan de molde"
+  ],
+  "keep": "Al momento. Carne empanada cruda, 1 día en frío; pollo marinado, 1 día.",
+  "pro": "Empana y marina antes del servicio; primera fritura del karaage por tandas y segunda al pedido.",
+  "related": [
+   "rebozados-y-empanados",
+   "fritura",
+   "tempura",
+   "despiece-de-aves",
+   "soja-y-derivados",
+   "cerdo-iberico"
+  ]
+ },
+ {
+  "id": "kimchi",
+  "name": "Kimchi",
+  "name_en": "Kimchi",
+  "cat": "tecnicas",
+  "group": "Cocina de Asia",
+  "technique": "fermentado",
+  "aka": [
+   "kimchi",
+   "col fermentada coreana",
+   "baechu kimchi",
+   "gochugaru",
+   "fermentado picante"
+  ],
+  "summary": "Col china salada y untada con una pasta de chile, ajo, jengibre y salsa de pescado, fermentada hasta quedar ácida, picante y crujiente.",
+  "what": "El kimchi es el fermentado más conocido de Corea: hojas de col china saladas hasta que se ablandan, lavadas y untadas con una pasta de chile coreano en copos, ajo, jengibre, salsa de pescado, algo dulce y una papilla de harina de arroz que ayuda a repartirla; a menudo lleva también rábano y cebolleta. Se aprieta en un recipiente, fermenta unos días a temperatura ambiente y sigue despacio en frío.\n\nEs una [[fermentacion-lactica|fermentación láctica]]: la sal deja trabajar a las bacterias buenas, que acidifican y conservan. Hay cientos de kimchis según la verdura y la zona, y cada familia tiene su receta.",
+  "base": {
+   "for": "1 col china (unos 2 kg de kimchi)",
+   "items": [
+    [
+     "Col china",
+     "1 (1,5–2 kg)"
+    ],
+    [
+     "Sal gruesa sin yodo",
+     "100–120 g"
+    ],
+    [
+     "Chile coreano en copos",
+     "40–60 g"
+    ],
+    [
+     "Ajo y jengibre rallados",
+     "1 cabeza y 30 g"
+    ],
+    [
+     "Salsa de pescado",
+     "40 ml"
+    ],
+    [
+     "Azúcar o pera rallada",
+     "15 g / ½ pera"
+    ],
+    [
+     "Papilla: harina de arroz y agua cocidas",
+     "20 g y 200 ml"
+    ],
+    [
+     "Rábano en tiras y cebolleta",
+     "200 g y 1 manojo"
+    ]
+   ],
+   "steps": [
+    "Corta la col en cuartos, sala entre las hojas y deja 2–3 horas, dando la vuelta, hasta que las pencas se doblen sin romperse.",
+    "Lava la col tres veces en agua fría y escúrrela bien 30 minutos.",
+    "Cuece la harina de arroz con el agua hasta espesar, enfría y mezcla con el chile, el ajo, el jengibre, la salsa de pescado y el azúcar; añade rábano y cebolleta.",
+    "Unta cada hoja con la pasta, dobla los cuartos y apriétalos en un recipiente de vidrio limpio, sin aire y con su líquido por encima.",
+    "Deja 1–2 días a temperatura ambiente fresca, hasta que burbujee y huela ácido, y pasa al frío."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Salado de la col",
+    "ratio": "100–120 g de sal por col de 2 kg, 2–3 horas",
+    "note": "Luego lavar bien."
+   },
+   {
+    "use": "Fermentación inicial",
+    "ratio": "18–20 °C, 1–2 días",
+    "note": "Hasta que esté ácido."
+   },
+   {
+    "use": "Maduración en frío",
+    "ratio": "2–4 °C",
+    "note": "Más ácido con las semanas."
+   },
+   {
+    "use": "Chile",
+    "ratio": "40–60 g por col",
+    "note": "Según el picante."
+   }
+  ],
+  "variants": [
+   {
+    "id": "fermentacion-lactica",
+    "name": "Fermentación láctica",
+    "note": "Principios y seguridad."
+   },
+   {
+    "id": "encurtidos-rapidos",
+    "name": "Encurtidos rápidos",
+    "note": "Ácido de vinagre, no de fermento."
+   },
+   {
+    "id": "bibimbap",
+    "name": "Bibimbap",
+    "note": "El kimchi acompaña."
+   },
+   {
+    "id": "chiles-secos-y-frescos",
+    "name": "Chiles",
+    "note": "El chile coreano en copos."
+   }
+  ],
+  "keys": [
+   "Sal sin yodo y col bien salada y lavada.",
+   "Todo apretado y cubierto de su líquido.",
+   "Vidrio limpio y utensilios limpios.",
+   "Si huele a podrido o tiene moho de colores, se tira.",
+   "Cada familia tiene su kimchi."
+  ],
+  "errors": [
+   {
+    "p": "Kimchi blando",
+    "fix": "Col salada de más o fermentación caliente. Menos tiempo de sal y temperatura fresca."
+   },
+   {
+    "p": "No fermenta",
+    "fix": "Demasiada sal o frío desde el principio. Deja 1–2 días a temperatura ambiente."
+   },
+   {
+    "p": "Moho en la superficie",
+    "fix": "Verdura al aire. Aprieta bien y mantén cubierto; si es de colores, se tira entero."
+   }
+  ],
+  "history": "El kimchi es un pilar de la cocina coreana desde hace siglos; la versión con chile rojo se extendió después de la llegada del chile desde América.",
+  "uses": [
+   "Guarnición",
+   "Arroces y salteados",
+   "Sopas y guisos",
+   "Bocados con cerdo"
+  ],
+  "keep": "En frío, bien cubierto y en recipiente cerrado, varias semanas; se vuelve más ácido con el tiempo.",
+  "pro": "Haz kimchi en tanda y etiqueta con fecha de inicio y de paso al frío; usa el más ácido para cocinar.",
+  "related": [
+   "fermentacion-lactica",
+   "encurtidos-rapidos",
+   "bibimbap",
+   "chiles-secos-y-frescos",
+   "aromaticos-de-asia",
+   "ph-y-acidez"
+  ]
+ },
+ {
+  "id": "dal-y-curries-de-legumbre",
+  "name": "Dal y curries de legumbre",
+  "name_en": "Dal and pulse curries",
+  "cat": "tecnicas",
+  "group": "Cocina de la India",
+  "technique": "guiso",
+  "aka": [
+   "dal",
+   "dhal",
+   "chana masala",
+   "tadka",
+   "tarka",
+   "lentejas indias",
+   "rajma"
+  ],
+  "summary": "Legumbres cocidas hasta melosas y terminadas con especias templadas en grasa caliente: el plato diario de la India.",
+  "what": "El dal es a la vez la legumbre partida (lentejas, guisantes, judías mungo) y el plato que se hace con ella: legumbre cocida con cúrcuma hasta deshacerse en parte, y terminada con un tadka, especias enteras, ajo y chile fritos en ghee o aceite que se vierten por encima al final. Los curries de legumbre entera, como los garbanzos con tomate y especias o las alubias rojas, siguen la lógica del [[curry-y-guisos-especiados|curry]].\n\nCada región y cada casa tienen su legumbre, su textura y su tadka. Con arroz o pan plano es un plato completo.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Lenteja roja o amarilla partida, lavada",
+     "250 g"
+    ],
+    [
+     "Agua",
+     "900 ml–1 l"
+    ],
+    [
+     "Cúrcuma y sal",
+     "3 g y 8 g"
+    ],
+    [
+     "Tadka: ghee o aceite",
+     "40 g"
+    ],
+    [
+     "Comino y semillas de mostaza",
+     "4 g y 3 g"
+    ],
+    [
+     "Ajo laminado y chile seco",
+     "3 dientes y 1–2"
+    ],
+    [
+     "Cebolla y tomate (opcional)",
+     "1 y 1"
+    ],
+    [
+     "Cilantro y lima",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Cuece la lenteja con el agua y la cúrcuma, espumando, 20–30 minutos hasta que esté melosa; sala al final.",
+    "Bate un poco para que quede cremosa y ajusta con agua caliente.",
+    "Opcional: sofríe cebolla y tomate y añádelos al dal.",
+    "Tadka: calienta el ghee, añade comino y mostaza hasta que crepiten, luego ajo y chile hasta dorar.",
+    "Vierte el tadka sobre el dal caliente, tapa un minuto y termina con cilantro y lima."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Lenteja partida",
+    "ratio": "1 parte por 3,5–4 de agua",
+    "note": "20–30 minutos."
+   },
+   {
+    "use": "Garbanzos para curry",
+    "ratio": "Cocidos antes, 20 minutos en la salsa",
+    "note": "Con tomate y especias."
+   },
+   {
+    "use": "Tadka",
+    "ratio": "40 g de grasa para 4 raciones",
+    "note": "Al final."
+   },
+   {
+    "use": "Ración",
+    "ratio": "60 g de legumbre en seco",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "curry-y-guisos-especiados",
+    "name": "Curry",
+    "note": "Especias en grasa."
+   },
+   {
+    "id": "legumbres",
+    "name": "Legumbres",
+    "note": "Remojo y cocción."
+   },
+   {
+    "id": "lenteja-y-garbanzo-por-variedades",
+    "name": "Variedades",
+    "note": "Qué lenteja para qué."
+   },
+   {
+    "id": "clarificacion",
+    "name": "Ghee",
+    "note": "Mantequilla clarificada y tostada."
+   }
+  ],
+  "keys": [
+   "Lavar la legumbre hasta que el agua salga clara.",
+   "Sal al final.",
+   "El tadka, al final y caliente.",
+   "Especias enteras hasta que crepiten, no hasta quemar.",
+   "Cada casa, su dal."
+  ],
+  "errors": [
+   {
+    "p": "Dal plano",
+    "fix": "Sin tadka o especias crudas. Fríelas en grasa caliente."
+   },
+   {
+    "p": "Demasiado espeso",
+    "fix": "Ha reposado. Aclara con agua caliente."
+   },
+   {
+    "p": "Especias amargas",
+    "fix": "Tadka quemado. Fuego medio y retira a tiempo."
+   }
+  ],
+  "history": "El dal es la base de la alimentación diaria en buena parte de la India y de los países vecinos, con infinitas variantes regionales.",
+  "uses": [
+   "Platos de cuchara vegetales",
+   "Acompañamiento de arroz y panes",
+   "Menús de cocina india"
+  ],
+  "keep": "3–4 días en frío; se congela bien. El tadka, siempre recién hecho.",
+  "pro": "Dal cocido en tanda; tadka por ración en sartén pequeña.",
+  "related": [
+   "curry-y-guisos-especiados",
+   "legumbres",
+   "lenteja-y-garbanzo-por-variedades",
+   "especias",
+   "clarificacion",
+   "biryani"
+  ]
+ },
+ {
+  "id": "biryani",
+  "name": "Biryani",
+  "name_en": "Biryani",
+  "cat": "tecnicas",
+  "group": "Cocina de la India",
+  "technique": "vapor",
+  "aka": [
+   "biryani",
+   "biriani",
+   "arroz biryani",
+   "dum biryani",
+   "arroz en capas con especias"
+  ],
+  "summary": "Arroz basmati a medio cocer en capas con carne especiada, cebolla frita, hierbas y azafrán, terminado tapado al vapor.",
+  "what": "El biryani es un arroz de fiesta del sur de Asia. El arroz basmati, remojado, se cuece a medias en agua con especias enteras; la carne (pollo, cordero) se marina en yogur y especias y se cocina. Luego se montan capas de carne y arroz con cebolla frita, menta, cilantro, azafrán en leche y ghee, se tapa y se termina a fuego muy bajo o en horno: el arroz acaba de hacerse con el vapor de la carne y queda suelto y perfumado.\n\nHay muchos estilos: en algunos la carne se cuece cruda bajo el arroz; en otros, como aquí, se cocina antes. Cada región y cada casa tienen su biryani.",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Arroz basmati",
+     "500 g"
+    ],
+    [
+     "Pollo o cordero en trozos",
+     "1 kg"
+    ],
+    [
+     "Yogur natural",
+     "250 g"
+    ],
+    [
+     "Ajo y jengibre en pasta, chile y garam masala",
+     "30 g, al gusto y 8 g"
+    ],
+    [
+     "Especias enteras para el arroz: cardamomo, clavo, canela, laurel",
+     "4, 4, 1 rama y 2"
+    ],
+    [
+     "Cebolla en juliana frita hasta dorar",
+     "3"
+    ],
+    [
+     "Menta y cilantro",
+     "1 manojo de cada"
+    ],
+    [
+     "Azafrán en 50 ml de leche caliente",
+     "0,2 g"
+    ],
+    [
+     "Ghee",
+     "60 g"
+    ]
+   ],
+   "steps": [
+    "Marina la carne con yogur, ajo, jengibre, chile, garam masala, sal y parte de la cebolla frita, 2–12 horas en frío; cocínala tapada hasta que esté casi tierna.",
+    "Remoja el arroz 30 minutos; cuécelo en agua abundante con sal y las especias enteras 5–6 minutos, hasta que esté hecho a un 70 %; escurre.",
+    "En una olla gruesa, pon la carne con su salsa, encima el arroz, la cebolla frita, las hierbas, el azafrán y el ghee.",
+    "Tapa bien (con papel de aluminio o sellando la tapa con masa) y cocina a fuego muy bajo o en horno a 160 °C 25–35 minutos.",
+    "Reposa 10 minutos y sirve mezclando con cuidado, sin romper el grano."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Arroz a medio cocer",
+    "ratio": "5–6 minutos en agua abundante con sal",
+    "note": "Al 70 %."
+   },
+   {
+    "use": "Cocción final",
+    "ratio": "160 °C, 25–35 minutos tapado",
+    "note": "O fuego muy bajo."
+   },
+   {
+    "use": "Arroz por ración",
+    "ratio": "80 g en seco",
+    "note": ""
+   },
+   {
+    "use": "Carne",
+    "ratio": "Pollo a 75 °C en el muslo",
+    "note": "Cordero, tierno."
+   }
+  ],
+  "variants": [
+   {
+    "id": "arroz-por-variedades",
+    "name": "Basmati",
+    "note": "El arroz que se usa."
+   },
+   {
+    "id": "curry-y-guisos-especiados",
+    "name": "Curry",
+    "note": "La lógica de las especias."
+   },
+   {
+    "id": "azafran",
+    "name": "Azafrán",
+    "note": "Infusionado en leche."
+   },
+   {
+    "id": "clarificacion",
+    "name": "Ghee",
+    "note": "Grasa del biryani."
+   }
+  ],
+  "keys": [
+   "Arroz remojado y a medio cocer.",
+   "Capas y tapa bien sellada.",
+   "Fuego muy bajo al final.",
+   "Mezclar sin romper el grano.",
+   "Cada casa tiene su biryani."
+  ],
+  "errors": [
+   {
+    "p": "Arroz pasado",
+    "fix": "Cocido de más antes del montaje. Al 70 %."
+   },
+   {
+    "p": "Fondo quemado",
+    "fix": "Fuego alto. Fuego muy bajo o horno."
+   },
+   {
+    "p": "Arroz duro arriba",
+    "fix": "Tapa que deja escapar el vapor. Sella mejor."
+   }
+  ],
+  "history": "El biryani se asocia a las cocinas de corte del norte de la India y se extendió con muchos estilos regionales por todo el subcontinente.",
+  "uses": [
+   "Platos de fiesta",
+   "Arroces para compartir",
+   "Menús de cocina india"
+  ],
+  "keep": "2 días en frío, enfriado rápido; se regenera tapado con unas gotas de agua.",
+  "pro": "Carne marinada y cocinada antes; montaje y vapor por olla durante el servicio.",
+  "related": [
+   "arroz-por-variedades",
+   "curry-y-guisos-especiados",
+   "azafran",
+   "especias",
+   "clarificacion",
+   "dal-y-curries-de-legumbre"
+  ]
+ },
+ {
+  "id": "tandoor-y-asados-especiados",
+  "name": "Tandoor y asados especiados",
+  "name_en": "Tandoor and spiced roasts",
+  "cat": "tecnicas",
+  "group": "Cocina de la India",
+  "technique": "horno",
+  "aka": [
+   "tandoor",
+   "tandoori",
+   "pollo tandoori",
+   "tikka",
+   "marinada de yogur",
+   "naan"
+  ],
+  "summary": "Carnes marinadas en yogur y especias asadas a calor muy fuerte, en horno de barro o, en su defecto, en brasa o horno a tope.",
+  "what": "El tandoor es un horno de barro cilíndrico, calentado con carbón o leña hasta temperaturas muy altas. Las carnes se ensartan en largas varillas y se asan dentro en pocos minutos; los panes como el naan se pegan a sus paredes. Las carnes llevan dos marinadas: una primera de ácido, sal, ajo y jengibre, y una segunda de yogur espeso con especias, que se tuesta y forma una costra.\n\nSin tandoor, el resultado se acerca con [[fuego-y-brasa|brasa]] muy viva, una salamandra o el horno lo más fuerte posible. Cada cocina tiene su mezcla de especias.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Muslos de pollo con hueso, sin piel, con cortes profundos",
+     "1,2 kg"
+    ],
+    [
+     "Primera marinada: zumo de limón, sal, ajo y jengibre",
+     "30 ml, 10 g y 30 g de pasta"
+    ],
+    [
+     "Yogur griego o colado",
+     "200 g"
+    ],
+    [
+     "Garam masala, comino, chile suave en polvo y cúrcuma",
+     "8 g, 4 g, 8 g y 2 g"
+    ],
+    [
+     "Aceite o mostaza en aceite",
+     "30 ml"
+    ],
+    [
+     "Mantequilla para pintar",
+     "30 g"
+    ],
+    [
+     "Cebolla roja, lima y cilantro",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Haz cortes hasta el hueso, frota con la primera marinada y deja 30 minutos.",
+    "Mezcla el yogur con las especias y el aceite, cubre el pollo y marina 4–24 horas en frío.",
+    "Asa en tandoor, brasa muy viva o horno a 240–250 °C en rejilla alta, hasta que se tueste por fuera.",
+    "Pinta con mantequilla al final y deja que se dore 2 minutos más.",
+    "Comprueba el punto en la parte gruesa y sirve con cebolla, lima y cilantro."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Segunda marinada",
+    "ratio": "4–24 horas en frío",
+    "note": "Yogur espeso."
+   },
+   {
+    "use": "Horno doméstico",
+    "ratio": "240–250 °C, 20–30 minutos",
+    "note": "Rejilla alta."
+   },
+   {
+    "use": "Punto del muslo",
+    "ratio": "75 °C o más",
+    "note": "Junto al hueso."
+   },
+   {
+    "use": "Ración",
+    "ratio": "300 g con hueso",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "kebab-y-pinchos",
+    "name": "Pinchos especiados",
+    "note": "La misma familia de asados."
+   },
+   {
+    "id": "marinada",
+    "name": "Marinadas",
+    "note": "Ácido y lácteo."
+   },
+   {
+    "id": "horno-de-lena",
+    "name": "Horno de leña",
+    "note": "Calor de solera y bóveda."
+   },
+   {
+    "id": "panes-planos",
+    "name": "Panes planos",
+    "note": "Naan y similares."
+   }
+  ],
+  "keys": [
+   "Dos marinadas: ácido primero, yogur después.",
+   "Yogur espeso para que se pegue.",
+   "Calor lo más fuerte posible.",
+   "Cortes hasta el hueso para que entre el sabor y el calor.",
+   "Cada cocina, su mezcla."
+  ],
+  "errors": [
+   {
+    "p": "Carne sin costra",
+    "fix": "Yogur líquido u horno flojo. Escúrrelo y sube el calor."
+   },
+   {
+    "p": "Especias quemadas",
+    "fix": "Demasiado cerca de la llama. Ajusta la distancia."
+   },
+   {
+    "p": "Crudo junto al hueso",
+    "fix": "Pieza gruesa sin cortes. Corta hasta el hueso y usa sonda."
+   }
+  ],
+  "history": "El horno tandoor se usa desde hace siglos en el norte de la India, Pakistán y Asia central; el pollo tandoori se popularizó en restaurantes en el siglo XX.",
+  "uses": [
+   "Brasa",
+   "Platos para compartir",
+   "Rellenos de pan plano"
+  ],
+  "keep": "Carne marinada, 1 día en frío. Asada, 2 días en frío.",
+  "pro": "Marina la víspera; asa por tandas a fuego máximo al pedido.",
+  "related": [
+   "kebab-y-pinchos",
+   "marinada",
+   "horno-de-lena",
+   "panes-planos",
+   "fuego-y-brasa",
+   "especias"
+  ]
+ },
+ {
+  "id": "causa-y-ajies-peruanos",
+  "name": "Causa, ají de gallina y lomo saltado",
+  "name_en": "Causa, ají de gallina and lomo saltado",
+  "cat": "tecnicas",
+  "group": "Cocina de América",
+  "aka": [
+   "causa limeña",
+   "causa",
+   "ají de gallina",
+   "lomo saltado",
+   "ají amarillo",
+   "cocina peruana"
+  ],
+  "summary": "Tres clásicos peruanos con ají amarillo: puré frío de patata relleno, gallina deshilachada en salsa cremosa y solomillo salteado al wok.",
+  "what": "La cocina peruana se apoya en sus ajíes, sobre todo el ají amarillo, afrutado y de picor medio, que se usa en pasta. La causa es un puré frío de patata amarilla aliñado con ají amarillo, lima, aceite y sal, montado en capas con un relleno (pollo con mayonesa, atún, aguacate, marisco). El ají de gallina es gallina o pollo deshilachado en una salsa espesa de ají amarillo, cebolla, pan remojado en leche, frutos secos y queso. El lomo saltado es solomillo salteado en wok a fuego muy alto con cebolla morada, tomate, ají, soja y vinagre, servido con patatas fritas y arroz: un ejemplo de la cocina chino-peruana.\n\nCada casa y cada cocinero tienen sus proporciones.",
+  "base": {
+   "for": "4 raciones de causa",
+   "items": [
+    [
+     "Patata amarilla o harinosa cocida con piel",
+     "800 g"
+    ],
+    [
+     "Pasta de ají amarillo",
+     "40–60 g"
+    ],
+    [
+     "Zumo de lima",
+     "40 ml"
+    ],
+    [
+     "Aceite de girasol",
+     "60 ml"
+    ],
+    [
+     "Relleno: pollo cocido desmigado con mayonesa, aguacate",
+     "250 g y 1"
+    ],
+    [
+     "Sal",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Pela las patatas en caliente y pásalas por pasapurés; deja templar.",
+    "Amasa con el ají, la lima, el aceite y la sal hasta un puré liso y firme; prueba y ajusta.",
+    "En un aro, pon una capa de puré, el relleno y otra capa de puré; presiona y enfría 30 minutos.",
+    "Ají de gallina: sofríe cebolla y ají, añade pan remojado en leche y triturado, caldo, frutos secos molidos y queso; incorpora la gallina deshilachada.",
+    "Lomo saltado: saltea el solomillo en tiras a fuego máximo, añade cebolla morada y tomate en gajos, soja y vinagre; mezcla con patatas fritas y sirve con arroz."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Causa",
+    "ratio": "50–75 g de pasta de ají por kg de patata",
+    "note": "Según el picante."
+   },
+   {
+    "use": "Lomo saltado",
+    "ratio": "Wok a fuego máximo, 2–3 minutos por tanda",
+    "note": "Raciones pequeñas."
+   },
+   {
+    "use": "Ají de gallina",
+    "ratio": "1 rebanada de pan por 100 ml de leche",
+    "note": "Liga la salsa."
+   },
+   {
+    "use": "Ración de causa",
+    "ratio": "200 g de puré",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "chiles-secos-y-frescos",
+    "name": "Ajíes y chiles",
+    "note": "Amarillo, panca y rocoto."
+   },
+   {
+    "id": "anticuchos",
+    "name": "Anticuchos",
+    "note": "Otro clásico peruano."
+   },
+   {
+    "id": "ceviche-y-crudos",
+    "name": "Ceviche",
+    "note": "El plato peruano más conocido."
+   },
+   {
+    "id": "salteado-y-wok",
+    "name": "Salteado al wok",
+    "note": "Técnica del lomo saltado."
+   }
+  ],
+  "keys": [
+   "Ají amarillo: el sabor de base.",
+   "Puré de causa liso, firme y bien aliñado.",
+   "Lomo saltado por tandas pequeñas y fuego máximo.",
+   "Probar y ajustar ácido, sal y picante.",
+   "Cada casa tiene sus proporciones."
+  ],
+  "errors": [
+   {
+    "p": "Causa pegajosa",
+    "fix": "Patata cerosa o batida. Usa harinosa y pasapurés."
+   },
+   {
+    "p": "Lomo saltado cocido y aguado",
+    "fix": "Wok lleno o poco caliente. Tandas pequeñas."
+   },
+   {
+    "p": "Salsa de ají grumosa",
+    "fix": "Pan mal triturado. Tritura con la leche antes."
+   }
+  ],
+  "history": "La causa y el ají de gallina son platos criollos de la costa peruana; el lomo saltado nace del encuentro de la cocina peruana con la de los inmigrantes chinos.",
+  "uses": [
+   "Entrantes fríos",
+   "Platos de mediodía",
+   "Menús de cocina peruana"
+  ],
+  "keep": "Causa montada, 1 día en frío. Ají de gallina, 3 días. Lomo saltado, al momento.",
+  "pro": "Puré de causa y salsa de ají hechos de antemano; lomo saltado al pedido.",
+  "related": [
+   "chiles-secos-y-frescos",
+   "anticuchos",
+   "ceviche-y-crudos",
+   "salteado-y-wok",
+   "patata-y-boniato",
+   "mayonesa"
+  ]
+ },
+ {
+  "id": "cochinita-pibil",
+  "name": "Cochinita pibil",
+  "name_en": "Cochinita pibil",
+  "cat": "tecnicas",
+  "group": "Cocina de América",
+  "technique": "guiso",
+  "aka": [
+   "cochinita pibil",
+   "cochinita",
+   "recado rojo",
+   "achiote",
+   "cerdo en hoja de plátano",
+   "cebolla morada con naranja agria"
+  ],
+  "summary": "Cerdo marinado en achiote y cítrico ácido, envuelto en hoja de plátano y cocinado lentamente hasta deshilacharse.",
+  "what": "La cochinita pibil es un plato de la península de Yucatán: carne de cerdo marinada en recado rojo (pasta de achiote, especias y ajo) desleído en zumo de naranja agria, envuelta en hojas de plátano y cocinada lentamente, tradicionalmente en un horno bajo tierra. El resultado es una carne roja, ácida y muy tierna que se deshilacha y se sirve en tacos o tortas con cebolla morada encurtida en cítrico y chile habanero.\n\nFuera de Yucatán, la naranja agria se sustituye por una mezcla de naranja y lima, y el horno de tierra por un horno convencional. Cada casa tiene su recado.",
+  "base": {
+   "for": "8 raciones",
+   "items": [
+    [
+     "Paletilla o aguja de cerdo en trozos grandes",
+     "2 kg"
+    ],
+    [
+     "Pasta de achiote",
+     "100 g"
+    ],
+    [
+     "Zumo de naranja agria (o 3 partes de naranja y 1 de lima)",
+     "250 ml"
+    ],
+    [
+     "Ajo, comino, orégano, pimienta y clavo",
+     "4 dientes y al gusto"
+    ],
+    [
+     "Sal",
+     "25 g"
+    ],
+    [
+     "Hojas de plátano",
+     "2–3"
+    ],
+    [
+     "Cebolla morada en juliana con zumo de cítrico, sal y habanero",
+     "2"
+    ]
+   ],
+   "steps": [
+    "Deslíe el achiote en el zumo con el ajo, las especias y la sal hasta una pasta fluida.",
+    "Marina la carne 12–24 horas en frío.",
+    "Pasa las hojas de plátano por la llama para que se ablanden, forra una bandeja, pon la carne con la marinada y cierra bien.",
+    "Hornea tapado a 150–160 °C 3–4 horas, hasta que la carne se deshaga.",
+    "Deshilacha la carne en su jugo y sirve con la cebolla encurtida y tortillas."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Marinada",
+    "ratio": "12–24 horas en frío",
+    "note": "Con el cítrico ácido."
+   },
+   {
+    "use": "Horno",
+    "ratio": "150–160 °C, 3–4 horas tapado",
+    "note": "Hasta deshilachar."
+   },
+   {
+    "use": "Cebolla encurtida",
+    "ratio": "2 cebollas por 150 ml de cítrico",
+    "note": "1 hora antes."
+   },
+   {
+    "use": "Ración",
+    "ratio": "150 g de carne cocinada",
+    "note": "En tacos."
+   }
+  ],
+  "variants": [
+   {
+    "id": "tacos-y-antojitos",
+    "name": "Tacos",
+    "note": "Donde se sirve."
+   },
+   {
+    "id": "coccion-en-hoja-y-ceniza",
+    "name": "Cocción en hoja",
+    "note": "La hoja protege y perfuma."
+   },
+   {
+    "id": "cebolla-encurtida",
+    "name": "Cebolla encurtida",
+    "note": "El contrapunto ácido."
+   },
+   {
+    "id": "barbacoa-lenta",
+    "name": "Barbacoa lenta",
+    "note": "Otra carne deshilachada."
+   }
+  ],
+  "keys": [
+   "Marinada larga con cítrico ácido.",
+   "Hoja bien cerrada para que no se seque.",
+   "Cocción lenta hasta deshilachar.",
+   "Cebolla morada encurtida para equilibrar.",
+   "Cada casa tiene su recado."
+  ],
+  "errors": [
+   {
+    "p": "Carne seca",
+    "fix": "Paquete abierto o horno fuerte. Cierra bien y baja a 150 °C."
+   },
+   {
+    "p": "Sabor plano",
+    "fix": "Poca marinada o achiote viejo. Más tiempo y achiote fresco."
+   },
+   {
+    "p": "Demasiado ácido",
+    "fix": "Mucha lima. Equilibra con naranja dulce."
+   }
+  ],
+  "history": "La cochinita pibil es un plato tradicional de Yucatán, donde se cocinaba en un horno excavado en la tierra.",
+  "uses": [
+   "Tacos y tortas",
+   "Platos para compartir",
+   "Brasa y horno lento"
+  ],
+  "keep": "3–4 días en frío en su jugo; se congela bien.",
+  "pro": "Cocina en tanda la víspera; regenera en su jugo y deshilacha al pedido.",
+  "related": [
+   "tacos-y-antojitos",
+   "coccion-en-hoja-y-ceniza",
+   "cebolla-encurtida",
+   "barbacoa-lenta",
+   "citricos",
+   "chiles-secos-y-frescos"
+  ]
+ },
+ {
+  "id": "arroz-con-costra",
+  "name": "Arroz con costra",
+  "name_en": "Rice with an egg crust",
+  "cat": "tecnicas",
+  "group": "Cocina levantina",
+  "technique": "horno",
+  "aka": [
+   "arroz con costra",
+   "arròs amb crosta",
+   "arroz al horno con huevo",
+   "arroz de Elche"
+  ],
+  "summary": "Arroz al horno con carnes, embutidos y garbanzos, cubierto al final con huevo batido que se gratina hasta formar una costra.",
+  "what": "El arroz con costra es un arroz del sur de la Comunidad Valenciana, sobre todo de Elche y su entorno. Se cuece en cazuela de barro con un caldo de carnes, pollo o conejo, costilla, embutidos y a veces garbanzos, y cuando el arroz está casi hecho se cubre con huevo batido y se mete al horno hasta que el huevo cuaja en una costra dorada.\n\nLa técnica del arroz está en [[arroces]]; lo propio de este plato es la costra. Cada pueblo y cada casa tienen sus carnes y sus embutidos.",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Pollo o conejo troceado",
+     "800 g"
+    ],
+    [
+     "Costilla de cerdo",
+     "300 g"
+    ],
+    [
+     "Embutidos (longaniza, morcilla, blanco)",
+     "300 g"
+    ],
+    [
+     "Garbanzos cocidos (opcional)",
+     "200 g"
+    ],
+    [
+     "Tomate rallado y ajo",
+     "150 g y 3 dientes"
+    ],
+    [
+     "Arroz redondo",
+     "480 g"
+    ],
+    [
+     "Caldo de carne",
+     "1,4–1,6 l"
+    ],
+    [
+     "Azafrán",
+     "0,1 g"
+    ],
+    [
+     "Huevos",
+     "6–8"
+    ],
+    [
+     "Aceite de oliva",
+     "80 ml"
+    ]
+   ],
+   "steps": [
+    "Dora las carnes y los embutidos en la cazuela de barro; añade el tomate y el ajo y sofríe.",
+    "Incorpora el arroz, nacáralo, moja con el caldo caliente, el azafrán y los garbanzos, y cuece 10 minutos al fuego.",
+    "Pasa la cazuela al horno a 200 °C 8–10 minutos, hasta que el arroz esté casi seco.",
+    "Bate los huevos con sal y cubre toda la superficie.",
+    "Vuelve al horno 5–8 minutos, hasta que la costra esté cuajada y dorada; reposa 5 minutos."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Arroz",
+    "ratio": "1 parte por 3–3,3 de caldo",
+    "note": "En peso; arroz seco."
+   },
+   {
+    "use": "Huevos",
+    "ratio": "1 por ración",
+    "note": "Batidos con sal."
+   },
+   {
+    "use": "Costra",
+    "ratio": "200 °C, 5–8 minutos",
+    "note": "Cuajada y dorada."
+   },
+   {
+    "use": "Arroz por ración",
+    "ratio": "80 g",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "arroces",
+    "name": "Arroces",
+    "note": "Punto y fuego."
+   },
+   {
+    "id": "arroz-por-variedades",
+    "name": "Variedades de arroz",
+    "note": "Qué arroz usar."
+   },
+   {
+    "id": "gratinado",
+    "name": "Gratinado",
+    "note": "La costra al horno."
+   },
+   {
+    "id": "cocido",
+    "name": "Caldo de carnes",
+    "note": "Para mojar."
+   }
+  ],
+  "keys": [
+   "Cazuela de barro que pase del fuego al horno.",
+   "Arroz casi seco antes del huevo.",
+   "Huevo cubriendo toda la superficie.",
+   "Reposo antes de servir.",
+   "Cada pueblo tiene su arroz con costra."
+  ],
+  "errors": [
+   {
+    "p": "Costra que no cuaja",
+    "fix": "Arroz con mucho caldo. Sécalo más antes del huevo."
+   },
+   {
+    "p": "Arroz pasado",
+    "fix": "Demasiado tiempo antes del huevo. Ajusta caldo y tiempos."
+   },
+   {
+    "p": "Costra seca y oscura",
+    "fix": "Horno fuerte mucho tiempo. Saca en cuanto dore."
+   }
+  ],
+  "history": "El arroz con costra es un plato tradicional de Elche y de la comarca del Bajo Vinalopó, con versiones en Orihuela y otras zonas cercanas.",
+  "uses": [
+   "Arroces para compartir",
+   "Menús de cocina levantina"
+  ],
+  "keep": "Al momento. La base de carnes y caldo, 2–3 días en frío.",
+  "pro": "Carnes y caldo preparados; arroz y costra por cazuela al pedido.",
+  "related": [
+   "arroces",
+   "arroz-por-variedades",
+   "gratinado",
+   "cocido",
+   "sobrasada-y-embutidos",
+   "azafran"
+  ]
+ },
+ {
+  "id": "fideos-a-la-cazuela",
+  "name": "Fideos a la cazuela",
+  "name_en": "Noodles cooked in a casserole",
+  "cat": "tecnicas",
+  "group": "Clásicos españoles",
+  "technique": "guiso",
+  "aka": [
+   "fideos a la cazuela",
+   "fideus a la cassola",
+   "fideos con costilla",
+   "cazuela de fideos",
+   "fideos caldosos"
+  ],
+  "summary": "Fideos gruesos guisados en cazuela con sofrito y caldo, con costilla, marisco o pescado, y ligados con picada: más caldosos que una fideuá.",
+  "what": "Los fideos a la cazuela son un guiso de fideos gruesos que se cuecen en la misma cazuela con un sofrito lento, caldo y un ingrediente principal: costilla y salchicha en la versión catalana, pescado y marisco en la costa, a veces con patata. Se ligan al final con una [[picada]] y quedan melosos o caldosos, a diferencia de la fideuá, que es seca y se trata en [[pasta-seca]].\n\nComo todo plato de casa, cada familia lo hace a su manera.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Costilla de cerdo troceada (o pescado y marisco)",
+     "500 g"
+    ],
+    [
+     "Salchicha o butifarra (opcional)",
+     "200 g"
+    ],
+    [
+     "Cebolla y tomate rallado",
+     "2 y 200 g"
+    ],
+    [
+     "Fideo grueso",
+     "320 g"
+    ],
+    [
+     "Caldo de carne o de pescado",
+     "1,2–1,5 l"
+    ],
+    [
+     "Picada: almendra, avellana, ajo, perejil y pan frito",
+     "40 g, 1 diente, 1 puñado y 20 g"
+    ],
+    [
+     "Pimentón y azafrán",
+     "5 g y 0,1 g"
+    ],
+    [
+     "Aceite de oliva",
+     "60 ml"
+    ]
+   ],
+   "steps": [
+    "Dora la costilla y la salchicha en la cazuela; resérvalas.",
+    "Pocha la cebolla lentamente y añade el tomate hasta que se concentre; aparta y añade el pimentón.",
+    "Devuelve la carne, moja con el caldo y cuece 20–30 minutos.",
+    "Añade los fideos y el azafrán y cuece 8–10 minutos.",
+    "Incorpora la picada desleída en caldo, cuece 2 minutos y sirve meloso."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Fideo por ración",
+    "ratio": "80 g",
+    "note": "Grueso."
+   },
+   {
+    "use": "Caldo",
+    "ratio": "4–5 partes por 1 de fideo",
+    "note": "Meloso o caldoso."
+   },
+   {
+    "use": "Cocción del fideo",
+    "ratio": "8–10 minutos",
+    "note": "Según grosor."
+   },
+   {
+    "use": "Picada",
+    "ratio": "40–60 g por litro",
+    "note": "Liga."
+   }
+  ],
+  "variants": [
+   {
+    "id": "pasta-seca",
+    "name": "Fideuá",
+    "note": "Fideos secos al estilo de un arroz."
+   },
+   {
+    "id": "picada",
+    "name": "Picada",
+    "note": "La ligazón."
+   },
+   {
+    "id": "sofrito",
+    "name": "Sofrito",
+    "note": "La base lenta."
+   },
+   {
+    "id": "mar-i-muntanya",
+    "name": "Mar y montaña",
+    "note": "Carne y marisco juntos."
+   }
+  ],
+  "keys": [
+   "Sofrito lento como base.",
+   "Caldo con sabor antes de los fideos.",
+   "Picada al final.",
+   "Servir enseguida: los fideos siguen bebiendo.",
+   "Cada familia, su cazuela."
+  ],
+  "errors": [
+   {
+    "p": "Fideos pasados",
+    "fix": "Espera o mucho tiempo. Sirve al momento."
+   },
+   {
+    "p": "Caldo sin sabor",
+    "fix": "Poco tiempo antes de los fideos. Deja cocer la carne en el caldo."
+   },
+   {
+    "p": "Demasiado seco",
+    "fix": "Poco caldo. Añade caldo caliente."
+   }
+  ],
+  "history": "Los fideos guisados en cazuela forman parte de la cocina popular de Cataluña, Levante y Andalucía, con versiones de carne y de mar.",
+  "uses": [
+   "Platos de cuchara",
+   "Menús de mediodía",
+   "Cocina tradicional"
+  ],
+  "keep": "La base sin fideos, 2–3 días en frío; los fideos, al momento.",
+  "pro": "Base de carne y caldo hecha; fideos y picada al pedido en cazuela.",
+  "related": [
+   "pasta-seca",
+   "picada",
+   "sofrito",
+   "mar-i-muntanya",
+   "guisos-largos",
+   "arroces"
+  ]
+ },
+ {
+  "id": "pisto-y-sanfaina",
+  "name": "Pisto y sanfaina",
+  "name_en": "Pisto and samfaina",
+  "cat": "tecnicas",
+  "group": "Clásicos españoles",
+  "technique": "guiso",
+  "aka": [
+   "pisto",
+   "pisto manchego",
+   "sanfaina",
+   "samfaina",
+   "fritada",
+   "verduras pochadas con tomate"
+  ],
+  "summary": "Verduras de verano pochadas lentamente en aceite con tomate hasta quedar melosas: plato, guarnición y base de otros guisos.",
+  "what": "El pisto es un guiso de verduras de verano (cebolla, pimiento verde y rojo, calabacín y tomate) pochadas lentamente en aceite de oliva hasta quedar melosas y concentradas; en La Mancha se sirve con huevo frito. La sanfaina catalana es muy parecida, con berenjena, y se usa como guarnición y base para bacalao, pollo o conejo. Hay fritadas y pistos en muchas zonas, como el [[tumbet]] mallorquín, que se monta en capas.\n\nLa clave es el tiempo: cada verdura entra según lo que tarda y todo se pocha despacio. Cada casa decide si las fríe por separado o juntas.",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Cebolla",
+     "2"
+    ],
+    [
+     "Pimiento verde y rojo",
+     "2 y 1"
+    ],
+    [
+     "Calabacín",
+     "2"
+    ],
+    [
+     "Berenjena (para sanfaina)",
+     "1"
+    ],
+    [
+     "Tomate maduro rallado o pelado",
+     "800 g"
+    ],
+    [
+     "Ajo",
+     "2 dientes"
+    ],
+    [
+     "Aceite de oliva",
+     "100 ml"
+    ],
+    [
+     "Sal y una pizca de azúcar si el tomate es ácido",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Corta todas las verduras en dados regulares de 1 cm.",
+    "Pocha la cebolla y el ajo en el aceite a fuego suave 15 minutos.",
+    "Añade los pimientos y cocina 15 minutos más; luego la berenjena, si la usas, y el calabacín, 10 minutos.",
+    "Incorpora el tomate y cocina a fuego suave 30–40 minutos, removiendo, hasta que esté concentrado.",
+    "Ajusta de sal y sirve caliente o templado, con huevo frito si quieres."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Cocción total",
+    "ratio": "1–1,5 horas a fuego suave",
+    "note": "Concentrado y meloso."
+   },
+   {
+    "use": "Verdura por ración",
+    "ratio": "250 g en crudo",
+    "note": ""
+   },
+   {
+    "use": "Aceite",
+    "ratio": "15–20 ml por ración",
+    "note": "Es parte del sabor."
+   },
+   {
+    "use": "Corte",
+    "ratio": "Dados de 1 cm",
+    "note": "Regulares."
+   }
+  ],
+  "variants": [
+   {
+    "id": "tumbet",
+    "name": "Tumbet",
+    "note": "Verduras fritas en capas."
+   },
+   {
+    "id": "sofrito",
+    "name": "Sofrito",
+    "note": "La misma lógica de pochado."
+   },
+   {
+    "id": "bacalao",
+    "name": "Bacalao con sanfaina",
+    "note": "Uso clásico catalán."
+   },
+   {
+    "id": "puntos-del-huevo",
+    "name": "Con huevo",
+    "note": "Pisto con huevo frito."
+   }
+  ],
+  "keys": [
+   "Corte regular.",
+   "Cada verdura a su tiempo.",
+   "Fuego suave y paciencia.",
+   "Tomate al final y bien concentrado.",
+   "Cada casa tiene el suyo."
+  ],
+  "errors": [
+   {
+    "p": "Pisto aguado",
+    "fix": "Tomate poco reducido o fuego alto con tapa. Destapa y reduce."
+   },
+   {
+    "p": "Verduras deshechas",
+    "fix": "Todas a la vez. Por orden."
+   },
+   {
+    "p": "Sabor ácido",
+    "fix": "Tomate poco maduro. Una pizca de azúcar y más cocción."
+   }
+  ],
+  "history": "El pisto se asocia a La Mancha y la sanfaina a Cataluña, pero los guisos de verdura de verano con tomate son comunes en toda la cocina mediterránea.",
+  "uses": [
+   "Platos vegetales",
+   "Guarnición de carnes y pescados",
+   "Rellenos y bases"
+  ],
+  "keep": "4–5 días en frío; se congela bien.",
+  "pro": "Haz pisto en tanda y úsalo como guarnición, relleno o base de huevos.",
+  "related": [
+   "tumbet",
+   "sofrito",
+   "bacalao",
+   "puntos-del-huevo",
+   "berenjena",
+   "pimientos"
+  ]
+ },
+ {
+  "id": "lasana-y-pasta-al-horno",
+  "name": "Lasaña y pasta al horno",
+  "name_en": "Lasagne and baked pasta",
+  "cat": "tecnicas",
+  "group": "Cocina italiana",
+  "technique": "gratinado",
+  "aka": [
+   "lasaña",
+   "lasagna",
+   "pasta al horno",
+   "macarrones gratinados",
+   "pasta al forno",
+   "timbal de pasta"
+  ],
+  "summary": "Capas de pasta, salsa de carne o verdura, bechamel y queso, horneadas hasta gratinar y reposadas antes de cortar.",
+  "what": "La lasaña clásica de Bolonia alterna placas de pasta al huevo, [[ragu|ragú]], [[bechamel]] y parmesano, y se hornea hasta que burbujea y se dora. La pasta al horno, en general, cuece la pasta al dente, la mezcla con una salsa y queso y la gratina. Con verduras, pescado o setas se hacen versiones igual de buenas.\n\nLa clave es el equilibrio de humedad: la pasta termina de hacerse en el horno absorbiendo salsa, así que la salsa debe ser generosa pero no aguada. Y el reposo: recién salida se desmonta. Cada casa tiene sus capas.",
+  "base": {
+   "for": "1 fuente de 25 × 30 cm (8 raciones)",
+   "items": [
+    [
+     "Placas de lasaña (frescas o secas)",
+     "400 g"
+    ],
+    [
+     "Ragú",
+     "1,2 kg"
+    ],
+    [
+     "Bechamel fluida",
+     "1 l"
+    ],
+    [
+     "Parmesano rallado",
+     "150 g"
+    ],
+    [
+     "Mantequilla",
+     "30 g"
+    ]
+   ],
+   "steps": [
+    "Si las placas son secas, escáldalas 1–2 minutos y enfríalas en agua; las frescas, sin cocer.",
+    "Unta la fuente con un poco de bechamel.",
+    "Monta capas: pasta, ragú, bechamel y parmesano; repite 5–6 veces.",
+    "Termina con bechamel, parmesano y unos dados de mantequilla.",
+    "Hornea a 180 °C 40–50 minutos, hasta que burbujee y se dore; reposa 20–30 minutos antes de cortar."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Horneado",
+    "ratio": "180 °C, 40–50 minutos",
+    "note": "Tapada la primera mitad si dora pronto."
+   },
+   {
+    "use": "Reposo",
+    "ratio": "20–30 minutos",
+    "note": "Mejor de un día para otro."
+   },
+   {
+    "use": "Bechamel",
+    "ratio": "50–60 g de roux por litro",
+    "note": "Fluida."
+   },
+   {
+    "use": "Ración",
+    "ratio": "300–350 g",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "ragu",
+    "name": "Ragú",
+    "note": "La salsa de carne."
+   },
+   {
+    "id": "bechamel",
+    "name": "Bechamel",
+    "note": "La capa cremosa."
+   },
+   {
+    "id": "canelones-de-asado",
+    "name": "Canelones",
+    "note": "Pasta rellena y gratinada."
+   },
+   {
+    "id": "pasta-fresca",
+    "name": "Pasta fresca",
+    "note": "Placas al huevo."
+   }
+  ],
+  "keys": [
+   "Salsa generosa pero no aguada.",
+   "Capas finas y regulares.",
+   "Reposo antes de cortar.",
+   "Mejor de un día para otro.",
+   "Cada casa tiene sus capas."
+  ],
+  "errors": [
+   {
+    "p": "Lasaña seca",
+    "fix": "Poca salsa o placas secas sin escaldar. Más salsa y escalda."
+   },
+   {
+    "p": "Aguada",
+    "fix": "Salsa líquida. Redúcela antes."
+   },
+   {
+    "p": "Se desmonta al cortar",
+    "fix": "Sin reposo. Espera 20–30 minutos."
+   }
+  ],
+  "history": "La lasaña es un plato tradicional de la cocina italiana, con la versión de Bolonia como la más conocida; las pastas al horno son comunes en toda Italia.",
+  "uses": [
+   "Platos de pasta",
+   "Platos para compartir",
+   "Menús de cocina italiana"
+  ],
+  "keep": "3–4 días en frío; se congela en porciones; regenera a 160 °C tapada.",
+  "pro": "Hornea en bandeja la víspera, corta en frío y regenera por ración.",
+  "related": [
+   "ragu",
+   "bechamel",
+   "canelones-de-asado",
+   "pasta-fresca",
+   "gratinado",
+   "quesos-en-cocina"
+  ]
+ },
+ {
+  "id": "pepitoria-y-guisos-de-ave",
+  "name": "Pepitoria y guisos de ave",
+  "name_en": "Pepitoria and poultry stews",
+  "cat": "tecnicas",
+  "group": "Clásicos españoles",
+  "technique": "guiso",
+  "aka": [
+   "pepitoria",
+   "gallina en pepitoria",
+   "pollo en pepitoria",
+   "pollo al chilindrón",
+   "pollo en salsa",
+   "guiso de pollo"
+  ],
+  "summary": "Gallina o pollo guisado en vino y caldo y ligado con un majado de almendra, yema cocida, ajo y azafrán; y otros guisos de ave de casa.",
+  "what": "La pepitoria es un guiso clásico de la cocina española: gallina o pollo troceado, dorado y guisado con cebolla, vino blanco o fino y caldo, y ligado al final con un majado de almendras, yemas de huevo cocido, ajo y azafrán, que le da una salsa amarilla y espesa. Se termina con la clara picada y perejil.\n\nOtros guisos de ave de casa siguen la misma lógica de dorar, sofreír, mojar y ligar: el pollo al chilindrón con pimientos y tomate, o el pollo en salsa con vino y cebolla. La gallina pide más tiempo que el pollo. Cada casa tiene su manera.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Gallina o pollo troceado",
+     "1,5 kg"
+    ],
+    [
+     "Cebolla",
+     "2"
+    ],
+    [
+     "Ajo",
+     "3 dientes"
+    ],
+    [
+     "Vino blanco seco o fino",
+     "150 ml"
+    ],
+    [
+     "Caldo de ave",
+     "500 ml"
+    ],
+    [
+     "Almendras tostadas",
+     "40 g"
+    ],
+    [
+     "Huevos cocidos",
+     "2"
+    ],
+    [
+     "Azafrán y perejil",
+     "0,1 g y 1 puñado"
+    ],
+    [
+     "Aceite de oliva y harina para enharinar",
+     "60 ml y 30 g"
+    ]
+   ],
+   "steps": [
+    "Sala, enharina y dora el ave; resérvala.",
+    "Pocha la cebolla y un ajo; moja con el vino y reduce a la mitad.",
+    "Devuelve el ave, cubre con caldo y guisa a fuego suave: pollo 35–45 minutos, gallina 1,5–2 horas.",
+    "Maja las almendras, las yemas cocidas, el resto del ajo y el azafrán con un poco de caldo.",
+    "Añade el majado, cuece 5 minutos y termina con la clara picada y perejil."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Pollo",
+    "ratio": "35–45 minutos guisado",
+    "note": "Muslo a 75 °C o más."
+   },
+   {
+    "use": "Gallina",
+    "ratio": "1,5–2 horas",
+    "note": "Hasta que esté tierna."
+   },
+   {
+    "use": "Majado",
+    "ratio": "40 g de almendra y 2 yemas por 500 ml",
+    "note": "Liga y colorea."
+   },
+   {
+    "use": "Ración",
+    "ratio": "350 g con hueso",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "pollo-y-aves",
+    "name": "Pollo y aves",
+    "note": "Producto y puntos."
+   },
+   {
+    "id": "picada",
+    "name": "Majados",
+    "note": "Almendra para ligar."
+   },
+   {
+    "id": "estofados-al-vino",
+    "name": "Coq au vin",
+    "note": "El guiso de ave francés."
+   },
+   {
+    "id": "pimientos",
+    "name": "Chilindrón",
+    "note": "Con pimientos y tomate."
+   }
+  ],
+  "keys": [
+   "Dorar bien el ave.",
+   "Vino reducido antes del caldo.",
+   "Majado al final.",
+   "Gallina con más tiempo que el pollo.",
+   "Cada casa, su guiso."
+  ],
+  "errors": [
+   {
+    "p": "Pollo seco",
+    "fix": "Guiso largo o hervor fuerte. Fuego suave y tiempo justo."
+   },
+   {
+    "p": "Salsa sin cuerpo",
+    "fix": "Poco majado. Añade más almendra o yema."
+   },
+   {
+    "p": "Gallina dura",
+    "fix": "Poco tiempo. Sigue hasta que esté tierna."
+   }
+  ],
+  "history": "La pepitoria es un guiso tradicional de la cocina española, con recetas antiguas y muchas versiones regionales.",
+  "uses": [
+   "Platos de cuchara",
+   "Menús de cocina tradicional",
+   "Comidas para compartir"
+  ],
+  "keep": "3 días en frío; se regenera suave con un poco de caldo.",
+  "pro": "Guisa en tanda; el majado se puede añadir al regenerar.",
+  "related": [
+   "pollo-y-aves",
+   "picada",
+   "estofados-al-vino",
+   "pimientos",
+   "almendra",
+   "guisos-largos"
+  ]
+ },
+ {
+  "id": "pastela-y-pasteles-de-carne",
+  "name": "Pastela y pasteles de carne",
+  "name_en": "Pastilla and meat pies",
+  "cat": "tecnicas",
+  "group": "Mediterráneo oriental y Magreb",
+  "technique": "horno",
+  "aka": [
+   "pastela",
+   "pastilla",
+   "bastilla",
+   "pastel de carne",
+   "pastel de pichón",
+   "empanada de hojaldre"
+  ],
+  "summary": "Masa fina u hojaldrada rellena de carne guisada y especiada, horneada hasta dorar: la pastela marroquí y los pasteles de carne.",
+  "what": "La pastela marroquí es un pastel de capas de masa muy fina relleno de pichón o pollo guisado con cebolla, especias (canela, jengibre, azafrán) y huevo cuajado en la salsa, con almendras tostadas con azúcar y canela; se hornea hasta dorar y se termina con azúcar glas y canela. Combina dulce y salado. En España hay pasteles de carne de hojaldre, como el murciano, rellenos de carne picada guisada con huevo duro y embutido.\n\nLa técnica común es la misma: un relleno bien guisado, sabroso y frío, una masa que se dore y crujiente, y un horneado hasta que la masa esté hecha. Ver también [[coccion-en-costra-de-masa]]. Cada casa y cada pastelería tienen su receta.",
+  "base": {
+   "for": "1 pastela de 26 cm (8 raciones)",
+   "items": [
+    [
+     "Pollo o pichón",
+     "1,2 kg"
+    ],
+    [
+     "Cebolla rallada",
+     "500 g"
+    ],
+    [
+     "Canela, jengibre, azafrán y pimienta",
+     "5 g, 5 g, 0,1 g y al gusto"
+    ],
+    [
+     "Perejil y cilantro picados",
+     "1 manojo"
+    ],
+    [
+     "Huevos",
+     "6"
+    ],
+    [
+     "Almendras tostadas y picadas con azúcar y canela",
+     "150 g, 40 g y 3 g"
+    ],
+    [
+     "Masa filo o similar",
+     "10–12 hojas"
+    ],
+    [
+     "Mantequilla fundida",
+     "100 g"
+    ],
+    [
+     "Azúcar glas y canela para terminar",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Guisa el ave con la cebolla, las especias, las hierbas y un poco de agua hasta que esté tierna; deshuesa y desmenuza.",
+    "Reduce la salsa, añade los huevos batidos y cuájalos removiendo como un revuelto blando; enfría.",
+    "Forra un molde con hojas de masa pintadas de mantequilla, dejándolas sobresalir.",
+    "Pon capas de almendra, carne y huevo; cierra con las hojas sobrantes y más hojas pintadas.",
+    "Hornea a 180 °C 25–35 minutos, hasta dorar; termina con azúcar glas y canela en dibujo."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Horneado",
+    "ratio": "180 °C, 25–35 minutos",
+    "note": "Masa dorada."
+   },
+   {
+    "use": "Relleno",
+    "ratio": "Frío antes de montar",
+    "note": "Para no ablandar la masa."
+   },
+   {
+    "use": "Huevos",
+    "ratio": "6 por 1,2 kg de ave",
+    "note": "Cuajados en la salsa."
+   },
+   {
+    "use": "Ración",
+    "ratio": "1/8 de pastela",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "coccion-en-costra-de-masa",
+    "name": "En costra",
+    "note": "Otras piezas en masa."
+   },
+   {
+    "id": "hojaldre",
+    "name": "Hojaldre",
+    "note": "Para pasteles de carne."
+   },
+   {
+    "id": "caza-de-pluma",
+    "name": "Pichón",
+    "note": "El relleno tradicional."
+   },
+   {
+    "id": "especias",
+    "name": "Especias",
+    "note": "Canela y jengibre en salado."
+   }
+  ],
+  "keys": [
+   "Relleno frío y bien escurrido.",
+   "Hojas pintadas con mantequilla una a una.",
+   "Dulce y salado en equilibrio.",
+   "Horno hasta que la base también esté dorada.",
+   "Cada casa tiene su receta."
+  ],
+  "errors": [
+   {
+    "p": "Masa blanda por dentro",
+    "fix": "Relleno caliente o húmedo. Enfría y reduce la salsa."
+   },
+   {
+    "p": "Demasiado dulce",
+    "fix": "Mucho azúcar en la almendra o al final. Reduce."
+   },
+   {
+    "p": "Masa quemada arriba y cruda abajo",
+    "fix": "Horno con calor solo arriba. Hornea en la parte baja."
+   }
+  ],
+  "history": "La pastela es un plato de fiesta de la cocina marroquí; los pasteles de carne en hojaldre son tradicionales en varias zonas de España, como Murcia.",
+  "uses": [
+   "Platos de fiesta",
+   "Entrantes para compartir",
+   "Bocados en porciones pequeñas"
+  ],
+  "keep": "Relleno, 2 días en frío. Pastela montada cruda, 1 día en frío o congelada; horneada, al momento o regenerada en horno.",
+  "pro": "Relleno hecho la víspera; montaje por la mañana y horneado según el servicio.",
+  "related": [
+   "coccion-en-costra-de-masa",
+   "hojaldre",
+   "caza-de-pluma",
+   "especias",
+   "almendra",
+   "pollo-y-aves"
+  ]
  }
 ]

@@ -8095,5 +8095,1224 @@
    "cocina-ibicenca",
    "petit-fours"
   ]
+ },
+ {
+  "id": "mazapanes-y-pastas-de-almendra",
+  "name": "Mazapanes y pastas de almendra",
+  "name_en": "Marzipan and almond pastes",
+  "cat": "dulce",
+  "group": "Espumas y azúcar",
+  "aka": [
+   "mazapan",
+   "panellets",
+   "pasta de almendra",
+   "figuritas de mazapan",
+   "huesos de santo",
+   "marzipan"
+  ],
+  "summary": "Almendra molida y azúcar trabajados hasta una pasta moldeable: mazapanes, panellets y rellenos, crudos o cocidos y dorados al horno.",
+  "what": "La pasta de [[almendra]] es almendra muy molida con azúcar y un poco de líquido (clara, agua o almíbar) que se amasa hasta poder modelarla. Cruda queda tierna; cocida con almíbar es más fina y aguanta mejor. Moldeada y dorada al horno da el mazapán clásico y, mezclada con patata o boniato y rebozada en piñones, los panellets de Todos los Santos. También sirve para rellenos, cubiertas de tartas y petit fours.",
+  "base": {
+   "for": "unos 1 kg de pasta de almendra",
+   "items": [
+    [
+     "Almendra cruda pelada y molida muy fina",
+     "500 g"
+    ],
+    [
+     "Azúcar glas",
+     "400 g"
+    ],
+    [
+     "Clara de huevo pasteurizada o agua",
+     "60–80 g"
+    ],
+    [
+     "Ralladura de limón",
+     "1"
+    ],
+    [
+     "Yema para pintar (opcional)",
+     "1"
+    ]
+   ],
+   "steps": [
+    "Mezcla la almendra molida con el azúcar glas y la ralladura.",
+    "Añade la clara o el agua poco a poco y amasa hasta una pasta lisa que no se pegue; si suelta aceite, has amasado de más o con las manos calientes.",
+    "Envuelve en film y deja reposar en frío al menos 12 horas.",
+    "Forma piezas de 15–20 g, pinta con yema si quieres y dora en el gratinador o en horno a 220 °C, 3–5 minutos, vigilando.",
+    "Deja enfriar antes de guardar."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Mazapán crudo",
+    "ratio": "Almendra y azúcar a partes iguales o con algo menos de azúcar",
+    "note": "Con 12–16 % de clara o agua."
+   },
+   {
+    "use": "Mazapán cocido",
+    "ratio": "500 g de almendra por almíbar de 400 g de azúcar y 120 g de agua a 115–118 °C",
+    "note": "Más fino y estable."
+   },
+   {
+    "use": "Panellets",
+    "ratio": "500 g de pasta de almendra con 150–200 g de patata o boniato cocido",
+    "note": "Rebozados en piñones y dorados a 220 °C, 8–10 minutos."
+   },
+   {
+    "use": "Dorado",
+    "ratio": "Gratinador o 220 °C, 3–5 minutos",
+    "note": "Solo la superficie; el interior queda tierno."
+   }
+  ],
+  "variants": [
+   {
+    "id": "turrones-y-pralines",
+    "name": "Turrón blando",
+    "note": "Almendra y miel molidas hasta pasta."
+   },
+   {
+    "id": "tartas-de-frutos-secos",
+    "name": "Tartas de almendra",
+    "note": "La almendra como masa horneada."
+   },
+   {
+    "id": "petit-fours",
+    "name": "Petit fours de mazapán",
+    "note": "Figuritas, bocados y frutas de mazapán."
+   }
+  ],
+  "keys": [
+   "Almendra muy molida y fresca: la granulosa da un mazapán basto.",
+   "Amasa con las manos frías y poco: la almendra suelta aceite si se calienta.",
+   "Reposo en frío antes de modelar.",
+   "Dora solo la superficie, con calor fuerte y poco tiempo.",
+   "La clara cruda, pasteurizada: el mazapán crudo no se cuece por dentro."
+  ],
+  "errors": [
+   {
+    "p": "Pasta grasienta",
+    "fix": "Amasada de más o caliente. Enfría y añade un poco de azúcar glas."
+   },
+   {
+    "p": "Se agrieta al modelar",
+    "fix": "Pasta seca. Añade unas gotas de agua o clara."
+   },
+   {
+    "p": "Quemado por fuera",
+    "fix": "Horno o gratinador demasiado tiempo. Vigila y saca en cuanto dore."
+   }
+  ],
+  "history": "El mazapán es un dulce tradicional de Toledo y de otras zonas de España y Europa, y los panellets son el dulce de Todos los Santos en Cataluña. Ambos forman parte de la repostería de almendra del Mediterráneo.",
+  "uses": [
+   "Petit four",
+   "Dulce de Navidad o de Todos los Santos",
+   "Relleno de tartas y bombones",
+   "Cubierta de pasteles"
+  ],
+  "keep": "En recipiente cerrado, en lugar fresco y seco, 2–3 semanas; los panellets, 1 semana.",
+  "pro": "Haz la pasta en tanda y guárdala envuelta en frío; forma y dora las piezas del día.",
+  "related": [
+   "almendra",
+   "turrones-y-pralines",
+   "petit-fours",
+   "tartas-de-frutos-secos",
+   "frutos-secos"
+  ]
+ },
+ {
+  "id": "strudel-y-masas-estiradas",
+  "name": "Strudel y masas estiradas",
+  "name_en": "Strudel and stretched doughs",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "strudel",
+   "pasta filo",
+   "masa estirada",
+   "masa de strudel",
+   "filo",
+   "pastela"
+  ],
+  "summary": "Masa sin levadura estirada a mano hasta quedar transparente, enrollada sobre un relleno y horneada: strudel de manzana y otras masas finísimas.",
+  "what": "Es una masa de harina de fuerza, agua tibia, aceite y sal, muy amasada y reposada, que se estira sobre un paño enharinado con el dorso de las manos hasta que se puede leer a través de ella. Se pinta con mantequilla, se cubre con el relleno y se enrolla con ayuda del paño. Al hornear, las capas finísimas quedan crujientes. Es pariente de la pasta filo, que se compra hecha y se usa en capas para pasteles dulces y salados. Distinta del [[hojaldre]], que hojaldra por las capas de grasa.",
+  "base": {
+   "for": "un strudel de unos 40 cm (8–10 raciones)",
+   "items": [
+    [
+     "Harina de fuerza",
+     "250 g"
+    ],
+    [
+     "Agua tibia",
+     "130 g"
+    ],
+    [
+     "Aceite suave",
+     "30 g"
+    ],
+    [
+     "Sal",
+     "3 g"
+    ],
+    [
+     "Vinagre",
+     "unas gotas"
+    ],
+    [
+     "Relleno: manzana ácida en láminas",
+     "1 kg"
+    ],
+    [
+     "Relleno: pan rallado tostado en 60 g de mantequilla",
+     "80 g"
+    ],
+    [
+     "Relleno: azúcar, canela, pasas y ralladura de limón",
+     "80 g y al gusto"
+    ],
+    [
+     "Mantequilla fundida para pintar",
+     "80 g"
+    ]
+   ],
+   "steps": [
+    "Amasa la harina, el agua, el aceite, la sal y el vinagre 8–10 minutos hasta una masa lisa y muy elástica. Unta con aceite, tapa y deja reposar 1 hora a temperatura ambiente.",
+    "Mezcla la manzana con el azúcar, la canela, las pasas y la ralladura.",
+    "Estira la masa con rodillo sobre un paño enharinado y después, con el dorso de las manos, desde el centro hacia fuera, hasta que sea transparente. Corta los bordes gruesos.",
+    "Pinta con mantequilla, reparte el pan tostado y la manzana en una franja a lo largo de un lado, dejando 5 cm libres.",
+    "Enrolla levantando el paño, cierra los extremos y pasa a la bandeja con la unión debajo. Pinta con mantequilla.",
+    "Hornea a 190 °C, 30–40 minutos, pintando a mitad, hasta que esté dorado y crujiente."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Masa",
+    "ratio": "50–55 % de agua y 10–12 % de aceite sobre la harina",
+    "note": "Muy elástica para estirar fina."
+   },
+   {
+    "use": "Relleno de manzana",
+    "ratio": "1 kg de manzana, 80 g de azúcar y 80 g de pan tostado",
+    "note": "El pan absorbe el jugo."
+   },
+   {
+    "use": "Horneado",
+    "ratio": "190 °C, 30–40 minutos",
+    "note": "Con pasta filo comprada, 180–190 °C, 20–30 minutos."
+   }
+  ],
+  "variants": [
+   {
+    "id": "hojaldre",
+    "name": "Hojaldre",
+    "note": "Capas por grasa laminada, no por estirado."
+   },
+   {
+    "id": "tartas-de-fruta",
+    "name": "Tartas de fruta",
+    "note": "La fruta sobre masa en vez de enrollada."
+   },
+   {
+    "id": null,
+    "name": "Pastela y pasteles de filo",
+    "note": "Capas de filo con rellenos dulces o salados de frutos secos o carne."
+   }
+  ],
+  "keys": [
+   "Harina de fuerza y amasado largo: la masa tiene que estirar sin romperse.",
+   "Reposo aceitado de una hora como mínimo.",
+   "Estira con el dorso de las manos, no con las yemas de los dedos.",
+   "Pan tostado bajo la fruta para que no se moje la masa.",
+   "Pinta con mantequilla en cada paso: es lo que da el crujiente."
+  ],
+  "errors": [
+   {
+    "p": "Se rompe al estirar",
+    "fix": "Poco amasado o poco reposo. Amasa más, reposa y estira con cuidado; los agujeros pequeños quedan tapados al enrollar."
+   },
+   {
+    "p": "Base mojada",
+    "fix": "Fruta muy jugosa sin pan tostado. Añade pan o escurre la fruta."
+   },
+   {
+    "p": "Masa dura y pálida",
+    "fix": "Poca mantequilla o masa gruesa. Estira más y pinta bien."
+   }
+  ],
+  "history": "Las masas estiradas finísimas son tradicionales en Oriente Medio y los Balcanes, y el strudel es su versión centroeuropea, muy ligada a la repostería austriaca.",
+  "uses": [
+   "Postre caliente con crema o helado",
+   "Strudel salado de verdura o queso",
+   "Pasteles de filo",
+   "Merienda"
+  ],
+  "keep": "Mejor el mismo día. Horneado, a temperatura ambiente unas horas; regenera a 180 °C, 8–10 minutos. Crudo y enrollado, congelado 1 mes.",
+  "pro": "Enrolla y congela crudo; hornea desde congelado alargando 10 minutos. Corta en caliente con cuchillo de sierra.",
+  "related": [
+   "hojaldre",
+   "tartas-de-fruta",
+   "fruta-asada",
+   "crema-inglesa",
+   "harinas-y-almidones"
+  ]
+ },
+ {
+  "id": "pastel-vasco-y-tartas-rellenas",
+  "name": "Pastel vasco y tartas rellenas",
+  "name_en": "Gâteau basque and filled tarts",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "pastel vasco",
+   "gateau basque",
+   "tarta rellena de crema",
+   "tarta de crema y cerezas",
+   "tarta cubierta"
+  ],
+  "summary": "Tarta de masa sablée blanda, cerrada por arriba y rellena de crema pastelera o confitura de cereza, horneada hasta dorar.",
+  "what": "Es una tarta cerrada: una masa tierna de mantequilla, azúcar, huevo, harina y algo de almendra forra el molde y cubre el relleno. El relleno clásico es una [[crema-pastelera]] espesa y perfumada, o una confitura de cereza negra. Al hornear, la masa queda entre galleta y bizcocho, dorada y tierna, y el relleno se mantiene húmedo. La misma idea sirve para otras tartas rellenas de crema de almendra, de fruta o de crema de cítrico.",
+  "base": {
+   "for": "una tarta de 24 cm (10 raciones)",
+   "items": [
+    [
+     "Mantequilla pomada",
+     "200 g"
+    ],
+    [
+     "Azúcar",
+     "180 g"
+    ],
+    [
+     "Huevo y yema",
+     "1 y 2"
+    ],
+    [
+     "Harina floja",
+     "320 g"
+    ],
+    [
+     "Almendra molida",
+     "80 g"
+    ],
+    [
+     "Levadura química",
+     "5 g"
+    ],
+    [
+     "Sal",
+     "2 g"
+    ],
+    [
+     "Crema pastelera espesa (90 g de almidón por litro) o confitura de cereza",
+     "500 g"
+    ],
+    [
+     "Ron o anís para perfumar la crema (opcional)",
+     "15 g"
+    ]
+   ],
+   "steps": [
+    "Crema la mantequilla con el azúcar; añade el huevo y las yemas, y después la harina, la almendra, la levadura y la sal. Mezcla lo justo.",
+    "Divide en dos partes (60 % y 40 %), envuelve y enfría 2 horas.",
+    "Estira la parte grande a 5 mm y forra el molde untado; o extiéndela con manga si está muy blanda.",
+    "Rellena con la crema fría o la confitura, dejando 1 cm del borde libre.",
+    "Cubre con la otra parte estirada, sella los bordes, pinta con yema y marca con un tenedor.",
+    "Hornea a 170 °C, 45–50 minutos, hasta que esté dorado. Deja enfriar en el molde antes de desmoldar."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Masa",
+    "ratio": "2 partes de harina y almendra, 1 de mantequilla, algo menos de 1 de azúcar",
+    "note": "Masa blanda; trabaja en frío."
+   },
+   {
+    "use": "Crema de relleno",
+    "ratio": "Crema pastelera con 90 g de almidón por litro",
+    "note": "Más firme que la normal para que no se escape."
+   },
+   {
+    "use": "Horneado",
+    "ratio": "170 °C, 45–50 minutos",
+    "note": "Individuales, 25–30 minutos."
+   }
+  ],
+  "variants": [
+   {
+    "id": "crema-pastelera",
+    "name": "Relleno de crema",
+    "note": "La crema perfumada con ron, anís o cítrico."
+   },
+   {
+    "id": "confituras-y-mermeladas",
+    "name": "Relleno de cereza",
+    "note": "Confitura espesa de cereza negra."
+   },
+   {
+    "id": "tartas-de-fruta",
+    "name": "Tartas de fruta abiertas",
+    "note": "La fruta a la vista."
+   }
+  ],
+  "keys": [
+   "Masa fría para estirarla; si está muy blanda, extiéndela con manga.",
+   "Crema espesa y fría: si está caliente, la masa se ablanda.",
+   "Sella bien los bordes para que no se salga el relleno.",
+   "Deja enfriar en el molde: caliente se rompe.",
+   "Mejor al día siguiente: la masa toma humedad del relleno y se asienta."
+  ],
+  "errors": [
+   {
+    "p": "El relleno se sale",
+    "fix": "Bordes mal sellados o crema poco espesa. Sella y usa crema firme."
+   },
+   {
+    "p": "Base cruda",
+    "fix": "Horno bajo o molde muy alto. Hornea en la parte baja y alarga."
+   },
+   {
+    "p": "Masa dura",
+    "fix": "Trabajada de más. Mezcla lo justo tras añadir la harina."
+   }
+  ],
+  "history": "El pastel vasco es un postre tradicional del País Vasco, sobre todo del lado francés, con relleno de crema o de cereza negra. Las tartas cerradas rellenas son comunes en muchas reposterías europeas.",
+  "uses": [
+   "Postre de carta en porciones",
+   "Merienda",
+   "Postre para compartir",
+   "Tartaletas individuales"
+  ],
+  "keep": "Con crema, en frío y tapado, 3 días; sácalo 20 minutos antes. Con confitura, a temperatura ambiente 3–4 días.",
+  "pro": "Hornea la víspera y porciona en frío. Acompaña con una fruta ácida o un helado de leche.",
+  "related": [
+   "crema-pastelera",
+   "masa-quebrada",
+   "confituras-y-mermeladas",
+   "sable-y-galletas",
+   "almendra"
+  ]
+ },
+ {
+  "id": "churros-y-masas-fritas",
+  "name": "Churros y masas fritas",
+  "name_en": "Churros and fried doughs",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "churros",
+   "porras",
+   "churros con chocolate",
+   "masa de churro",
+   "buñuelos",
+   "masa frita"
+  ],
+  "summary": "Masa escaldada de harina y agua, empujada por una boquilla de estrella y frita: churros finos y crujientes, porras más gruesas y esponjosas.",
+  "what": "El churro es una masa muy sencilla: harina escaldada con agua hirviendo y sal, sin huevo ni levadura, que se empuja por una churrera de boquilla estriada y se fríe en aceite caliente. La boquilla de estrella no es solo estética: las estrías dejan salir el vapor y evitan que el churro reviente en el aceite. Las porras llevan una masa más líquida y gasificada, que queda gruesa y tierna por dentro. Se sirven calientes con azúcar o con chocolate espeso. Otras masas fritas de la isla están en [[orelletes-y-bunyols]].",
+  "base": {
+   "for": "unos 30 churros",
+   "items": [
+    [
+     "Agua",
+     "500 g"
+    ],
+    [
+     "Sal",
+     "6 g"
+    ],
+    [
+     "Harina floja",
+     "450 g"
+    ],
+    [
+     "Aceite de oliva suave o de girasol para freír",
+     "c. s."
+    ],
+    [
+     "Azúcar para rebozar (opcional)",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Hierve el agua con la sal.",
+    "Viértela de golpe sobre la harina y mezcla con espátula hasta que no queden grumos; debe quedar una masa firme y lisa.",
+    "Deja templar 5–10 minutos y llena la churrera o una manga resistente con boquilla de estrella.",
+    "Fríe en aceite a 180–190 °C, haciendo espirales o tiras, hasta que estén dorados, 2–3 minutos.",
+    "Escurre sobre papel, corta y sirve enseguida, con azúcar o con chocolate."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Masa de churro",
+    "ratio": "Agua y harina a partes casi iguales, con 1 % de sal",
+    "note": "Sin huevo ni levadura."
+   },
+   {
+    "use": "Porras",
+    "ratio": "Masa más líquida con 1–1,5 % de levadura química o bicarbonato",
+    "note": "Más gruesa y esponjosa."
+   },
+   {
+    "use": "Fritura",
+    "ratio": "180–190 °C",
+    "note": "Más frío absorben aceite; más caliente, crudos dentro."
+   },
+   {
+    "use": "Chocolate para mojar",
+    "ratio": "1 l de leche, 150 g de chocolate y 15–20 g de almidón",
+    "note": "Mira [[postres-de-chocolate]]."
+   }
+  ],
+  "variants": [
+   {
+    "id": "pasta-choux",
+    "name": "Buñuelos de viento",
+    "note": "Masa escaldada con huevo, frita en bolas."
+   },
+   {
+    "id": "orelletes-y-bunyols",
+    "name": "Orelletes y buñuelos",
+    "note": "Masas fritas de la isla."
+   },
+   {
+    "id": "postres-de-chocolate",
+    "name": "Chocolate a la taza",
+    "note": "El acompañamiento clásico."
+   }
+  ],
+  "keys": [
+   "Boquilla de estrella siempre: la lisa hace que el churro reviente.",
+   "Agua hirviendo de golpe sobre la harina y mezclar rápido.",
+   "Aceite limpio y a 180–190 °C.",
+   "Fríe poca cantidad a la vez para que el aceite no se enfríe.",
+   "Sírvelos al momento: en minutos pierden el crujiente."
+  ],
+  "errors": [
+   {
+    "p": "Revientan en el aceite",
+    "fix": "Boquilla lisa o masa con aire. Usa boquilla estriada y masa bien compacta."
+   },
+   {
+    "p": "Aceitosos",
+    "fix": "Aceite frío. Sube a 180–190 °C y fríe en tandas pequeñas."
+   },
+   {
+    "p": "Duros",
+    "fix": "Demasiada harina. Ajusta la proporción para que la masa sea firme pero manejable."
+   }
+  ],
+  "history": "Los churros son una masa frita muy popular en España y en Latinoamérica, de origen incierto. Se toman tradicionalmente en el desayuno o la merienda, a menudo con chocolate espeso.",
+  "uses": [
+   "Desayuno y merienda",
+   "Postre con chocolate",
+   "Petit four en churros pequeños",
+   "Postre de fiesta"
+  ],
+  "keep": "Al momento. La masa no se guarda: se hace y se fríe.",
+  "pro": "Haz masa para cada tanda de servicio y fríe al pedir. Para un postre de restaurante, churros finos y cortos con chocolate espeso y un toque de sal o cítrico.",
+  "related": [
+   "orelletes-y-bunyols",
+   "pasta-choux",
+   "postres-de-chocolate",
+   "fritura",
+   "harinas-y-almidones"
+  ]
+ },
+ {
+  "id": "postres-helados-montados",
+  "name": "Postres helados montados",
+  "name_en": "Assembled frozen desserts",
+  "cat": "dulce",
+  "group": "Frío",
+  "aka": [
+   "tarta helada",
+   "bombe",
+   "vacherin",
+   "helado en capas",
+   "pastel helado",
+   "postre helado"
+  ],
+  "summary": "Tartas y piezas heladas en capas: helados, sorbetes, semifríos, bizcochos y crujientes montados en molde, congelados y desmoldados para servir.",
+  "what": "Un postre helado montado combina varias elaboraciones frías en capas: un helado o un semifrío que da cuerpo, un sorbete que da color y acidez, un bizcocho, merengue o crujiente que da textura. Se monta en molde (aro, semiesfera o molde de tarta) congelando cada capa antes de la siguiente, se desmolda con un golpe de calor y se termina con decoración. Las bases están en [[helados-y-sorbetes]] y [[helados-sin-maquina]]; aquí, cómo montarlas.",
+  "method": [
+   "Enfría el molde en el congelador y fórralo con acetato si es un aro.",
+   "Extiende la primera capa (helado recién mantecado o semifrío) de 1,5–2 cm y congela 30–45 minutos hasta que esté firme.",
+   "Añade la siguiente capa y congela de nuevo; repite. Pon el bizcocho o el crujiente en la base o entre capas, protegidos con una fina capa de chocolate para que no se ablanden.",
+   "Congela la pieza entera al menos 6 horas a −18 °C.",
+   "Desmolda calentando el molde un instante con soplete o un paño caliente y decora en congelado.",
+   "Antes de servir, atempera 10–15 minutos en cámara positiva para que se pueda cortar y comer."
+  ],
+  "ratios": [
+   {
+    "use": "Grosor de capa",
+    "ratio": "1,5–2 cm",
+    "note": "Capas finas se mezclan; gruesas, se comen desiguales."
+   },
+   {
+    "use": "Congelado entre capas",
+    "ratio": "30–45 minutos a −18 °C",
+    "note": "Hasta que la superficie esté firme."
+   },
+   {
+    "use": "Temperatura de servicio",
+    "ratio": "−12 a −10 °C",
+    "note": "Tras atemperar 10–15 minutos."
+   },
+   {
+    "use": "Base crujiente",
+    "ratio": "Crujiente o praliné con un 20–30 % de chocolate fundido",
+    "note": "Se mantiene crujiente en congelado."
+   }
+  ],
+  "variants": [
+   {
+    "id": "pavlova-y-postres-de-merengue",
+    "name": "Vacherin helado",
+    "note": "Discos de merengue seco con helado y nata."
+   },
+   {
+    "id": "helados-sin-maquina",
+    "name": "Semifrío",
+    "note": "La capa cremosa que no necesita heladora."
+   },
+   {
+    "id": "decoraciones-de-azucar-y-chocolate",
+    "name": "Decoraciones",
+    "note": "Pulverizado y láminas para el acabado."
+   }
+  ],
+  "keys": [
+   "Cada capa firme antes de la siguiente.",
+   "Crujientes protegidos con chocolate o grasa: la humedad los ablanda.",
+   "Desmoldado con calor breve, nunca a temperatura ambiente.",
+   "Atemperar antes de servir: a −18 °C está duro y sin sabor.",
+   "Equilibra cremoso y ácido: una capa de sorbete aligera el conjunto."
+  ],
+  "errors": [
+   {
+    "p": "Capas mezcladas",
+    "fix": "Capa anterior poco congelada. Espera a que esté firme."
+   },
+   {
+    "p": "Bizcocho o crujiente húmedo",
+    "fix": "Sin protección. Píntalo con chocolate o usa un crujiente graso."
+   },
+   {
+    "p": "Cristales de hielo",
+    "fix": "Ciclos de descongelación. Mantén la pieza a temperatura constante y tapada."
+   }
+  ],
+  "history": "Las bombas y tartas heladas fueron un clásico de la pastelería europea de los siglos XIX y XX, sobre todo en celebraciones.",
+  "uses": [
+   "Tarta helada de celebración",
+   "Postre helado individual",
+   "Postre de verano para compartir",
+   "Petit four helado"
+  ],
+  "keep": "Tapado y a −18 °C, 1–2 semanas. No recongelar si se ha ablandado.",
+  "pro": "Monta en tandas en moldes individuales y guarda en el congelador. Saca a la cámara positiva al principio del servicio de postres para tenerlos a punto.",
+  "related": [
+   "helados-y-sorbetes",
+   "helados-sin-maquina",
+   "pavlova-y-postres-de-merengue",
+   "decoraciones-de-azucar-y-chocolate",
+   "tejas-y-crujientes-dulces"
+  ]
+ },
+ {
+  "id": "postres-asiaticos",
+  "name": "Postres asiáticos: mochi, matcha y sésamo negro",
+  "name_en": "Asian desserts: mochi, matcha and black sesame",
+  "cat": "dulce",
+  "group": "Cremas",
+  "aka": [
+   "mochi",
+   "matcha",
+   "sesamo negro",
+   "dango",
+   "anko",
+   "pasta de judia roja",
+   "postre japones"
+  ],
+  "summary": "Tres recursos de la repostería del este de Asia: la masa elástica de arroz glutinoso, el té matcha y la pasta de sésamo negro tostado.",
+  "what": "El mochi es una masa de arroz glutinoso cocida y amasada hasta quedar elástica y tierna, que se rellena con pasta dulce de judía roja (anko), fruta o helado. El matcha, té verde en polvo, da color y un amargor vegetal que va muy bien con chocolate blanco, leche y cítricos; se añade sin hervir, porque amarga. La pasta de [[sesamo]] negro tostado tiene un sabor profundo y tostado que funciona en helados, cremas y masas. Son buenos aliados de una pastelería de autor si se usan con medida.",
+  "base": {
+   "for": "12 mochis",
+   "items": [
+    [
+     "Harina de arroz glutinoso",
+     "150 g"
+    ],
+    [
+     "Azúcar",
+     "40 g"
+    ],
+    [
+     "Agua",
+     "220 g"
+    ],
+    [
+     "Almidón de maíz o de patata para trabajar",
+     "c. s."
+    ],
+    [
+     "Relleno: pasta de judía roja, fruta o bolas de helado",
+     "12 porciones de 20–25 g"
+    ]
+   ],
+   "steps": [
+    "Mezcla la harina, el azúcar y el agua hasta que no queden grumos.",
+    "Cuece al vapor en un bol tapado 20 minutos, removiendo a mitad, hasta que la masa sea translúcida y elástica.",
+    "Pásala a una superficie con almidón y amásala en caliente con una espátula untada.",
+    "Divide en 12 porciones, aplana cada una, pon el relleno en el centro y cierra pellizcando.",
+    "Quita el exceso de almidón con un pincel y sirve el mismo día."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Masa de mochi",
+    "ratio": "1 parte de harina de arroz glutinoso por 1,4–1,5 de agua",
+    "note": "Vapor 20 minutos."
+   },
+   {
+    "use": "Matcha en cremas y helados",
+    "ratio": "1,5–3 % sobre la base",
+    "note": "Tamizado y disuelto en un poco de líquido templado, nunca hirviendo."
+   },
+   {
+    "use": "Sésamo negro en helado",
+    "ratio": "80–120 g de pasta por kilo de base",
+    "note": "Tostado suave a 150–160 °C antes de moler."
+   },
+   {
+    "use": "Pasta de judía roja",
+    "ratio": "250 g de azuki cocido y 150–200 g de azúcar, reducido hasta pasta",
+    "note": "Lisa o con grano."
+   }
+  ],
+  "variants": [
+   {
+    "id": "helados-de-autor",
+    "name": "Helado de matcha o sésamo negro",
+    "note": "Infusión e incorporación en la base."
+   },
+   {
+    "id": "cafe-y-te-en-cocina",
+    "name": "Matcha",
+    "note": "El té en polvo en la cocina."
+   },
+   {
+    "id": null,
+    "name": "Dango",
+    "note": "Bolitas de masa de arroz cocidas y glaseadas con salsa dulce de soja."
+   }
+  ],
+  "keys": [
+   "Harina de arroz glutinoso, no la normal: sin ella no hay elasticidad.",
+   "Mochi del día: en frío se endurece.",
+   "Matcha sin hervir y tamizado.",
+   "Sésamo tostado al momento y molido hasta pasta.",
+   "Equilibrio: el amargor del matcha pide dulzor y grasa."
+  ],
+  "errors": [
+   {
+    "p": "Mochi duro",
+    "fix": "Guardado en frío o poca agua. Sírvelo el día que se hace."
+   },
+   {
+    "p": "Matcha amargo y apagado",
+    "fix": "Calor excesivo o matcha viejo. Disuélvelo templado y usa matcha fresco."
+   },
+   {
+    "p": "Masa pegajosa",
+    "fix": "Falta almidón al trabajar. Espolvorea más y unta la espátula."
+   }
+  ],
+  "history": "El mochi y la pasta de judía roja son tradicionales de la repostería japonesa y de otras zonas del este de Asia; el matcha se usa desde hace siglos en la ceremonia del té.",
+  "uses": [
+   "Petit four",
+   "Postre de autor",
+   "Helados y cremas",
+   "Mochi helado"
+  ],
+  "keep": "Mochi, a temperatura ambiente tapado y el mismo día; los rellenos de helado, congelados. Matcha, cerrado y en frío. Pasta de sésamo, cerrada y en frío, 1 mes.",
+  "pro": "Rellena los mochis de helado y guárdalos en el congelador; sácalos 5 minutos antes de servir. El matcha se pesa en báscula de precisión.",
+  "related": [
+   "sesamo",
+   "cafe-y-te-en-cocina",
+   "helados-de-autor",
+   "arroz-japones-y-al-vapor",
+   "legumbres"
+  ]
+ },
+ {
+  "id": "polos-y-helados-de-palo",
+  "name": "Polos y helados de palo",
+  "name_en": "Ice lollies and stick ice creams",
+  "cat": "dulce",
+  "group": "Frío",
+  "aka": [
+   "polos",
+   "helado de palo",
+   "paletas",
+   "polo de fruta",
+   "polo de yogur",
+   "helado bañado"
+  ],
+  "summary": "Bases de fruta, yogur o crema congeladas en molde con palo, y cómo equilibrarlas para que no queden como un bloque de hielo.",
+  "what": "Un polo se congela sin mover, así que sus cristales son grandes y la mezcla tiene que estar bien equilibrada de azúcar para que se pueda morder. Los de fruta son un sorbete sin mantecar; los cremosos llevan yogur, leche o nata, que les dan suavidad. Se pueden hacer en capas, con trozos de fruta o hierbas, y bañados en chocolate. Las bases de partida están en [[helados-y-sorbetes]].",
+  "base": {
+   "for": "10 polos de 80 ml",
+   "items": [
+    [
+     "Puré de fruta colado (fresa, mango, melocotón, sandía)",
+     "600 g"
+    ],
+    [
+     "Almíbar 1:1",
+     "150–200 g según la fruta"
+    ],
+    [
+     "Zumo de limón",
+     "20 g"
+    ],
+    [
+     "Sal",
+     "una pizca"
+    ]
+   ],
+   "steps": [
+    "Mezcla el puré con el almíbar, el limón y la sal; prueba: tiene que estar algo más dulce de lo que quieres.",
+    "Llena los moldes dejando 5 mm libres (la mezcla crece al congelar).",
+    "Congela 45–60 minutos, pon los palos cuando la mezcla esté semicongelada y sigue congelando al menos 6 horas.",
+    "Desmolda pasando el molde un momento por agua tibia.",
+    "Para bañarlos, sumérgelos congelados en chocolate fundido a 35–40 °C con un 20–30 % de manteca de cacao."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Polo de fruta",
+    "ratio": "18–22 % de azúcar total",
+    "note": "Contando el de la fruta."
+   },
+   {
+    "use": "Polo cremoso de yogur",
+    "ratio": "500 g de yogur griego, 200 g de puré de fruta y 100–120 g de azúcar",
+    "note": "Más suave y menos duro."
+   },
+   {
+    "use": "Congelación",
+    "ratio": "−18 °C o menos, al menos 6 horas",
+    "note": "Palo a los 45–60 minutos."
+   },
+   {
+    "use": "Baño de chocolate",
+    "ratio": "Chocolate con 20–30 % de manteca de cacao a 35–40 °C",
+    "note": "Fino y crujiente."
+   }
+  ],
+  "variants": [
+   {
+    "id": "helados-sin-maquina",
+    "name": "Granizados",
+    "note": "La misma base raspada en bandeja."
+   },
+   {
+    "id": "coulis-y-geles-de-fruta",
+    "name": "Purés de fruta",
+    "note": "Cómo hacer la base."
+   },
+   {
+    "id": "chocolate-y-templado",
+    "name": "Polo bañado",
+    "note": "Baño de chocolate crujiente."
+   }
+  ],
+  "keys": [
+   "Azúcar suficiente: sin él, un bloque de hielo.",
+   "Prueba la mezcla algo más dulce: el frío apaga el sabor.",
+   "Deja espacio en el molde: se expande.",
+   "Palo cuando esté semicongelado, para que quede recto.",
+   "Desmolda con agua tibia, no caliente."
+  ],
+  "errors": [
+   {
+    "p": "Polo duro como el hielo",
+    "fix": "Poco azúcar o mucha agua. Sube el azúcar o añade yogur."
+   },
+   {
+    "p": "Palo torcido o suelto",
+    "fix": "Puesto demasiado pronto o tarde. Ponlo con la mezcla semicongelada."
+   },
+   {
+    "p": "Se derrite enseguida",
+    "fix": "Demasiado azúcar o alcohol. Ajusta la proporción."
+   }
+  ],
+  "history": "Los helados de palo se popularizaron en el siglo XX con la refrigeración doméstica e industrial, y hoy se han recuperado como postre artesano de fruta.",
+  "uses": [
+   "Postre de verano",
+   "Prepostre",
+   "Postre para niños",
+   "Polos de fruta de temporada"
+  ],
+  "keep": "Tapados y a −18 °C, 2–3 semanas. No recongelar.",
+  "pro": "Haz polos con la fruta madura de la temporada. Desmolda y guarda en bolsas en el congelador listos para servir.",
+  "related": [
+   "helados-y-sorbetes",
+   "helados-sin-maquina",
+   "coulis-y-geles-de-fruta",
+   "frutos-rojos-y-fruta-de-hueso",
+   "chocolate-y-templado"
+  ]
+ },
+ {
+  "id": "sorbetes-de-vino-y-cava",
+  "name": "Sorbetes de vino y cava",
+  "name_en": "Wine and sparkling wine sorbets",
+  "cat": "dulce",
+  "group": "Frío",
+  "aka": [
+   "sorbete de cava",
+   "sorbete de vino",
+   "granizado de vino",
+   "sorbete con alcohol",
+   "sorbete de vermut"
+  ],
+  "summary": "Sorbetes con vino, cava o vermut: cuánto alcohol admite una mezcla para congelar bien y cómo equilibrar el azúcar cuando hay alcohol.",
+  "what": "El alcohol baja el punto de congelación de una mezcla, igual que el azúcar pero con más fuerza. Un sorbete con demasiado alcohol no endurece nunca, se queda como una papilla y se funde en segundos; con poco, sabe a poco. Por eso el vino o el cava se rebajan con agua o zumo y se reduce algo el azúcar respecto a un sorbete normal de [[helados-y-sorbetes]]. Hervir el vino quita parte del alcohol, pero no todo, y cambia el sabor. El cava pierde la burbuja al congelar: se puede servir con un chorrito de cava frío por encima.",
+  "base": {
+   "for": "unos 1,1 kg de sorbete de cava",
+   "items": [
+    [
+     "Cava o vino espumoso frío",
+     "400 ml"
+    ],
+    [
+     "Agua",
+     "400 ml"
+    ],
+    [
+     "Azúcar",
+     "200 g"
+    ],
+    [
+     "Glucosa o azúcar invertido (opcional, más cremoso)",
+     "40 g"
+    ],
+    [
+     "Zumo de limón",
+     "30 g"
+    ],
+    [
+     "Piel de limón",
+     "1 tira"
+    ]
+   ],
+   "steps": [
+    "Calienta el agua con el azúcar, la glucosa y la piel de limón hasta disolver; deja enfriar y cuela.",
+    "Mezcla el almíbar frío con el zumo de limón y el cava frío, sin batir para no perder más gas del necesario.",
+    "Deja madurar en frío 2–4 horas.",
+    "Mantécalo en la heladora; quedará algo más blando que un sorbete sin alcohol.",
+    "Guarda a −18 °C y sirve en copa fría, con un poco de cava por encima si quieres."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Alcohol en la mezcla final",
+    "ratio": "Alrededor del 4–5 % en volumen",
+    "note": "Por encima del 6 % cuesta que endurezca."
+   },
+   {
+    "use": "Vino o cava (11–12 %)",
+    "ratio": "40 % del total, el resto almíbar y agua",
+    "note": "Da un 4,5–5 % de alcohol en la mezcla."
+   },
+   {
+    "use": "Azúcar",
+    "ratio": "18–22 % sobre el total",
+    "note": "Algo menos que un sorbete sin alcohol."
+   },
+   {
+    "use": "Vino tinto reducido",
+    "ratio": "Vino hervido 5 minutos con especias, enfriado",
+    "note": "Pierde parte del alcohol y gana sabor a vino cocido."
+   }
+  ],
+  "variants": [
+   {
+    "id": "helados-sin-maquina",
+    "name": "Granizado de vino",
+    "note": "La misma mezcla raspada en bandeja; admite algo más de alcohol."
+   },
+   {
+    "id": "vinos-y-licores",
+    "name": "Vinos y licores en cocina",
+    "note": "Qué aporta cada uno."
+   },
+   {
+    "id": null,
+    "name": "Sorbete de vermut o de vino dulce",
+    "note": "Con cítrico y hierbas; los dulces piden menos azúcar añadido."
+   }
+  ],
+  "keys": [
+   "Calcula el alcohol de la mezcla final, no solo el del vino.",
+   "Reduce el azúcar: el alcohol también ablanda.",
+   "Mezcla el cava frío y al final.",
+   "Sirve en recipiente muy frío: se funde antes que un sorbete normal.",
+   "Avisa en carta: lleva alcohol aunque esté congelado."
+  ],
+  "errors": [
+   {
+    "p": "No endurece",
+    "fix": "Demasiado alcohol o azúcar. Diluye con agua o zumo."
+   },
+   {
+    "p": "Sabe solo a azúcar",
+    "fix": "Poco vino o vino plano. Sube la proporción dentro del límite y añade ácido."
+   },
+   {
+    "p": "Cristales grandes",
+    "fix": "Poco azúcar total. Equilibra con glucosa."
+   }
+  ],
+  "history": "Los sorbetes con vino o licor se servían en los banquetes europeos como pausa entre platos. El sorbete de cava o de champán se popularizó en las celebraciones del siglo XX.",
+  "uses": [
+   "Prepostre",
+   "Pausa en un menú largo",
+   "Postre de fruta con sorbete de vino",
+   "Copa de celebración"
+  ],
+  "keep": "Tapado y a −18 °C, 1 semana; con alcohol se ablanda antes al sacarlo.",
+  "pro": "Sírvelo en quenelle sobre copa congelada y termina con cava frío en la mesa si encaja con el estilo.",
+  "related": [
+   "helados-y-sorbetes",
+   "helados-sin-maquina",
+   "vinos-y-licores",
+   "final-del-menu",
+   "citricos"
+  ]
+ },
+ {
+  "id": "mignardises-de-fruta",
+  "name": "Mignardises de fruta",
+  "name_en": "Fruit mignardises",
+  "cat": "dulce",
+  "group": "Fruta",
+  "aka": [
+   "fruta bañada en chocolate",
+   "fruta en caramelo",
+   "fresas con chocolate",
+   "naranjitas",
+   "fruta glaseada",
+   "physalis bañado"
+  ],
+  "summary": "Bocados de fruta para el final del menú: fruta fresca bañada en chocolate o caramelo, pieles confitadas bañadas y fruta seca crujiente.",
+  "what": "Son los [[petit-fours]] más frescos: una fresa, un physalis, una uva o un gajo de mandarina bañados en chocolate templado o en caramelo duro; tiras de piel de naranja confitada bañadas en chocolate; o láminas de fruta secas y crujientes. Funcionan como contrapunto ácido de los petit fours de chocolate o de almendra. La fruta tiene que estar perfectamente seca para que el baño se adhiera, y casi todos se hacen poco antes de servir.",
+  "method": [
+   "Elige fruta pequeña, firme y en su punto; lávala con tiempo y sécala completamente.",
+   "Para chocolate: templa el chocolate (negro, 31–32 °C de trabajo), baña la mitad de cada fruta y deja cristalizar sobre papel en lugar fresco.",
+   "Para caramelo: cuece azúcar con un poco de glucosa hasta 150–155 °C, detén la cocción, baña la fruta pinchada en un palillo y deja escurrir colgada o sobre tapete.",
+   "Para pieles: corta tiras de [[frutas-en-almibar|piel confitada]], sécalas unas horas y báñalas en chocolate templado.",
+   "Sirve los bañados en caramelo en la primera hora: la humedad de la fruta lo disuelve.",
+   "Combina dos o tres piezas de fruta con el resto de petit fours."
+  ],
+  "ratios": [
+   {
+    "use": "Caramelo para bañar",
+    "ratio": "200 g de azúcar, 40 g de glucosa y 60 g de agua a 150–155 °C",
+    "note": "Claro y crujiente."
+   },
+   {
+    "use": "Chocolate para bañar",
+    "ratio": "Templado, negro a 31–32 °C de trabajo",
+    "note": "Mira [[chocolate-y-templado]]."
+   },
+   {
+    "use": "Vida de la pieza",
+    "ratio": "Caramelo: 1 hora; chocolate: 4–6 horas en fresco",
+    "note": "Fruta fresca, siempre del día."
+   }
+  ],
+  "variants": [
+   {
+    "id": "gelatinas-de-fruta",
+    "name": "Pasta de fruta",
+    "note": "La fruta concentrada en un bocado firme."
+   },
+   {
+    "id": "frutas-en-almibar",
+    "name": "Pieles confitadas",
+    "note": "La base de las naranjitas de chocolate."
+   },
+   {
+    "id": "deshidratados-y-crujientes",
+    "name": "Chips de fruta",
+    "note": "Láminas de fruta secas y crujientes."
+   }
+  ],
+  "keys": [
+   "Fruta completamente seca: con una gota de agua el baño resbala.",
+   "Chocolate templado para que brille y cruja.",
+   "El caramelo, en el último momento.",
+   "Fruta del día y en su punto.",
+   "Úsala como contrapunto ácido entre petit fours más dulces."
+  ],
+  "errors": [
+   {
+    "p": "El chocolate no se pega",
+    "fix": "Fruta húmeda o fría de cámara (condensa). Sécala y atempérala."
+   },
+   {
+    "p": "Caramelo pegajoso",
+    "fix": "Poco cocido o humedad. Llega a 150–155 °C y sirve enseguida."
+   },
+   {
+    "p": "Fruta que suelta jugo",
+    "fix": "Fruta muy madura o cortada. Usa fruta firme y entera."
+   }
+  ],
+  "history": "La fruta bañada en chocolate o caramelo es parte clásica de la confitería europea, y las pieles de naranja confitadas bañadas en chocolate son muy populares en España.",
+  "uses": [
+   "Petit four",
+   "Final de menú",
+   "Acompañar café",
+   "Decoración de postres"
+  ],
+  "keep": "Fruta bañada en chocolate, en lugar fresco (15–18 °C), unas horas. En caramelo, al momento. Pieles bañadas, en caja cerrada, 2 semanas.",
+  "pro": "Baña la fruta fresca justo antes del servicio de postres y ten las pieles bañadas hechas con antelación.",
+  "related": [
+   "petit-fours",
+   "gelatinas-de-fruta",
+   "chocolate-y-templado",
+   "caramelo",
+   "frutas-en-almibar",
+   "citricos"
+  ]
+ },
+ {
+  "id": "requeson-y-postres-de-queso-fresco",
+  "name": "Requesón y postres de queso fresco",
+  "name_en": "Fresh cheese desserts",
+  "cat": "dulce",
+  "group": "Cremas",
+  "aka": [
+   "requeson",
+   "mato",
+   "mel i mato",
+   "queso fresco con miel",
+   "ricotta",
+   "queso fresco casero",
+   "postre de requeson"
+  ],
+  "summary": "Queso fresco, requesón o mató con miel, fruta o frutos secos: postres sencillos y lácteos, y cómo hacer en cocina un queso fresco de leche cortada.",
+  "what": "Los quesos frescos y suaves son un postre en sí mismos: con miel y nueces (como el mel i mató catalán), con membrillo, con fruta asada o batidos con azúcar y cítrico. El requesón tradicional se hace calentando el suero que sobra al hacer queso; en cocina se puede hacer un queso fresco parecido calentando leche entera con un ácido hasta que corta, y escurriéndolo. Los quesos de la isla, frescos de cabra u oveja, son la base del [[flao]].",
+  "base": {
+   "for": "unos 400 g de queso fresco casero",
+   "items": [
+    [
+     "Leche entera pasteurizada",
+     "2 l"
+    ],
+    [
+     "Nata 35 % (opcional, más cremoso)",
+     "200 g"
+    ],
+    [
+     "Zumo de limón o vinagre de vino blanco",
+     "60–80 g"
+    ],
+    [
+     "Sal",
+     "3 g"
+    ]
+   ],
+   "steps": [
+    "Calienta la leche (y la nata) con la sal a 85–90 °C, removiendo para que no se pegue.",
+    "Fuera del fuego, añade el ácido, remueve una vez con suavidad y deja reposar 10 minutos: se forman grumos y el suero se aclara.",
+    "Pasa con espumadera a un colador con paño fino y deja escurrir 15–60 minutos según la textura que quieras.",
+    "Enfría enseguida en cámara.",
+    "Sirve con miel, frutos secos tostados, fruta o membrillo."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Queso fresco casero",
+    "ratio": "30–40 g de ácido por litro de leche a 85–90 °C",
+    "note": "Rinde unos 180–200 g por litro."
+   },
+   {
+    "use": "Escurrido",
+    "ratio": "15 minutos para cremoso, 1 hora para firme",
+    "note": "Sin apretar."
+   },
+   {
+    "use": "Crema de requesón dulce",
+    "ratio": "500 g de requesón, 60–80 g de azúcar glas, ralladura y una pizca de sal",
+    "note": "Batido suave; para rellenos o vasos."
+   },
+   {
+    "use": "Mel i mató",
+    "ratio": "100 g de queso fresco, 20 g de miel y nueces por ración",
+    "note": "Muy frío."
+   }
+  ],
+  "variants": [
+   {
+    "id": "flao",
+    "name": "Flaó",
+    "note": "Queso fresco y hierbabuena en tarta, de la isla."
+   },
+   {
+    "id": "tarta-de-queso",
+    "name": "Tarta de queso",
+    "note": "El queso cuajado al horno."
+   },
+   {
+    "id": "panna-cotta-y-cuajadas",
+    "name": "Cuajada",
+    "note": "Leche cuajada con cuajo, sin escurrir."
+   }
+  ],
+  "keys": [
+   "Leche pasteurizada y entera.",
+   "Remueve poco tras añadir el ácido: si no, los grumos quedan pequeños.",
+   "Escurre sin apretar para que quede tierno.",
+   "Enfría rápido y consume pronto: es un queso fresco.",
+   "Buena miel y frutos secos tostados: es casi todo el postre."
+  ],
+  "errors": [
+   {
+    "p": "No corta",
+    "fix": "Leche poco caliente o poco ácido. Sube a 85–90 °C y añade algo más de ácido."
+   },
+   {
+    "p": "Granuloso y seco",
+    "fix": "Escurrido de más o leche hervida fuerte. Escurre menos y calienta con cuidado."
+   },
+   {
+    "p": "Sabor a limón",
+    "fix": "Demasiado ácido. Usa la cantidad justa o vinagre suave."
+   }
+  ],
+  "history": "El requesón y los quesos frescos con miel son postres tradicionales de muchas zonas de España y del Mediterráneo; el mel i mató es un clásico de la cocina catalana.",
+  "uses": [
+   "Postre de cuchara con miel y frutos secos",
+   "Relleno de tartas y cannoli",
+   "Con fruta asada",
+   "Base de flaó"
+  ],
+  "keep": "Queso fresco casero, en frío a 0–4 °C y tapado, 2–3 días.",
+  "pro": "Haz el queso fresco la víspera o por la mañana y sírvelo muy frío. El suero sobrante sirve para masas o para marinar.",
+  "related": [
+   "flao",
+   "quesos-de-las-islas",
+   "tarta-de-queso",
+   "miel-y-azucares",
+   "labneh",
+   "panna-cotta-y-cuajadas"
+  ]
  }
 ]

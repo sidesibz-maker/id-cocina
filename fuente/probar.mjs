@@ -81,6 +81,28 @@ ok((await page.evaluate(() => navigator.clipboard.readText())).includes('Entrant
 await page.fill('#ideasReply', '{"ideas":[{"name":"Coliflor asada y miso","line":"Entera a la brasa","course":"entrante","why":"Dulce y umami","twist":"Tu toque","components":[{"role":"principal","name":"Coliflor","techniques":["brasa"],"items":["Coliflor"]},{"role":"salsa","name":"Miso","techniques":[],"items":["Miso"]}]}],"issues":[]}');
 await page.click('[data-act=read-ideas]'); await page.waitForSelector('.idea-result'); await page.locator('.idea-result [data-open]').first().click(); await page.waitForSelector('#dishName');
 ok(await page.inputValue('#dishName') === 'Coliflor asada y miso', 'la idea no abre la mesa de trabajo');
+// Crear: la mesa de ideas sin ChatGPT. Se empieza por un producto, estallan ideas por grupos, se añaden tocando o arrastrando, se quitan y se guarda
+await go('#/crear'); await page.waitForSelector('#bPlate');
+ok(await page.locator('.bgroup-start [data-add]').count() >= 4, 'Crear no propone por dónde empezar');
+await page.fill('#bBrief', 'Pulpo'); await page.click('#bStart button[type=submit]'); await page.waitForSelector('.bgroup-fresh [data-add]');
+ok((await page.inputValue('#bName')).startsWith('Pulpo'), 'el plato no empieza por el pulpo');
+for (const g of ['fresh', 'crunch', 'creamy', 'goes', 'tech', 'recipes']) ok(await page.locator('.bgroup-' + g + ' [data-add]').count() > 0, 'no salen ideas del grupo ' + g);
+const fr = (await page.locator('.bgroup-fresh [data-add] strong').first().textContent()).trim();
+await page.locator('.bgroup-fresh [data-add]').first().click(); await page.waitForFunction(n => document.querySelector('#bDish')?.innerText.includes(n), fr);
+const rec = (await page.locator('.bgroup-recipes [data-add] strong').first().textContent()).trim();
+await page.locator('.bgroup-recipes [data-add]').first().dragTo(page.locator('#bPlate')); await page.waitForFunction(n => document.querySelector('#bDish')?.innerText.includes(n), rec);
+await page.locator('.bgroup-tech [data-add]').first().click(); await wait(200);
+ok(await page.locator('.bitem').count() === 4, 'no entran en el plato lo tocado y lo arrastrado: ' + await page.locator('.bitem').count());
+await page.locator('.bitem [data-drop]').nth(1).click(); await wait(200);
+ok(!(await page.textContent('#bDish')).includes(fr), 'quitar del plato no quita');
+await page.fill('#bName', 'Pulpo de la mesa de ideas');
+await page.reload(); await page.waitForSelector('.hello h1, #bPlate'); await go('#/crear'); await page.waitForSelector('#bName');
+ok(await page.inputValue('#bName') === 'Pulpo de la mesa de ideas' && await page.locator('.bitem').count() === 3, 'la mesa de ideas se pierde al recargar');
+await page.click('[data-act=b-save]'); await page.waitForSelector('#dishName');
+ok(await page.inputValue('#dishName') === 'Pulpo de la mesa de ideas', 'el plato de la mesa de ideas no se guarda');
+const saved = await page.evaluate(() => JSON.parse(localStorage.getItem('id-cocina-v1')).dishes.find(d => d.name === 'Pulpo de la mesa de ideas'));
+ok(saved && saved.components.length === 2 && JSON.stringify(saved.components).includes(rec.split(' ')[0]), 'el plato guardado no lleva lo de la mesa');
+await go('#/crear'); await page.waitForSelector('.bgroup-start [data-add]');
 // Importar receta: texto pegado tal cual y respuesta de la IA
 await go('#/crear'); await page.click('a[href="#/crear/importar"]'); await page.waitForSelector('#recipeReply');
 await page.click('[data-act=copy-import]'); await wait(200); ok((await page.evaluate(() => navigator.clipboard.readText())).includes('captura'), 'la instrucción para leer capturas no se copia');
@@ -108,7 +130,7 @@ await page.locator('.trend-grid .trend').first().click(); await page.waitForSele
 await go('#/hoy'); await page.waitForSelector('.cover-title'); ok((await page.textContent('.cover-title')).trim().length > 5, 'la portada no enseña ningún aviso');
 await page.screenshot({path: shots + 'hoy-con-radar.png', fullPage: true});
 // Libreta, papelera, sabores, cocina
-await go('#/libreta'); await page.waitForSelector('#bookGrid .dish'); ok(await page.locator('#bookGrid .dish').count() === 5, 'la libreta no tiene los dos platos');
+await go('#/libreta'); await page.waitForSelector('#bookGrid .dish'); ok(await page.locator('#bookGrid .dish').count() === 6, 'la libreta no tiene los dos platos');
 await go('#/sabores/alcachofa'); await page.waitForSelector('.ing-page'); await page.screenshot({path: shots + 'sabores.png', fullPage: true});
 await go('#/sabores/pulpo/calabaza'); await page.waitForSelector('.page-head h1');
 await go('#/cocina'); await page.waitForSelector('#kitchenForm'); await page.click('[data-equip=josper]'); await page.fill('#kName', 'Manu'); await page.click('#kSave'); await wait(300);
@@ -118,14 +140,14 @@ await page.click('.rail [data-act=menu]');
 const [download] = await Promise.all([page.waitForEvent('download'), page.click('.sheet [data-act=backup]')]);
 const file = shots + 'copia.json'; await download.saveAs(file);
 const copia = JSON.parse(readFileSync(file, 'utf8'));
-ok(copia.app === 'id-cocina' && copia.dishes.length === 5 && Object.keys(copia.images).length === 1 && copia.settings.name === 'Manu', 'la copia no lleva todo');
+ok(copia.app === 'id-cocina' && copia.dishes.length === 6 && Object.keys(copia.images).length === 1 && copia.settings.name === 'Manu', 'la copia no lleva todo');
 const ctx2 = await browser.newContext({viewport: {width: 390, height: 844}, deviceScaleFactor: 2, isMobile: true, hasTouch: true}), p2 = await ctx2.newPage(), e2 = [];
 p2.on('pageerror', e => e2.push(String(e)));
 await p2.goto(url); await p2.waitForSelector('.hello h1'); await p2.waitForSelector('.chips .chip');
-await p2.click('.top [data-act=menu]'); await p2.setInputFiles('#restoreFile', file); await p2.waitForFunction(() => JSON.parse(localStorage.getItem('id-cocina-v1') || '{}').dishes?.length === 5);
+await p2.click('.top [data-act=menu]'); await p2.setInputFiles('#restoreFile', file); await p2.waitForFunction(() => JSON.parse(localStorage.getItem('id-cocina-v1') || '{}').dishes?.length === 6);
 await p2.evaluate(() => { location.hash = '#/libreta'; }); await p2.waitForSelector('#bookGrid .dish');
-ok(await p2.locator('#bookGrid .dish').count() === 5, 'recuperar la copia no trae los platos');
-for (const h of ['#/hoy', '#/radar', '#/crear', '#/sabores', '#/cocina', '#/libreta']) { await p2.evaluate(x => { location.hash = x; }, h); await wait(300); const o = await p2.evaluate(() => Math.max(document.documentElement.scrollWidth, ...[...document.querySelectorAll('#app *')].filter(el => !el.closest('.strip,.filters,.thumbs,.results,.sr')).map(el => el.getBoundingClientRect().right)) - innerWidth); ok(o <= 1, 'móvil: se sale de la pantalla en ' + h); }
+ok(await p2.locator('#bookGrid .dish').count() === 6, 'recuperar la copia no trae los platos');
+for (const h of ['#/hoy', '#/radar', '#/crear', '#/sabores', '#/cocina', '#/libreta']) { await p2.evaluate(x => { location.hash = x; }, h); await wait(300); const o = await p2.evaluate(() => Math.max(document.documentElement.scrollWidth, ...[...document.querySelectorAll('#app *')].filter(el => !el.closest('.strip,.filters,.thumbs,.results,.sr,.bcards')).map(el => el.getBoundingClientRect().right)) - innerWidth); ok(o <= 1, 'móvil: se sale de la pantalla en ' + h); }
 await p2.evaluate(() => { location.hash = '#/hoy'; }); await wait(300); await p2.screenshot({path: shots + 'movil-hoy.png', fullPage: true});
 ok((await over()) <= 1, 'ordenador: se sale de la pantalla');
 const real = errors.filter(e => !/radar\.js|ERR_FILE_NOT_FOUND/.test(e));
