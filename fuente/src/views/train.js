@@ -2,9 +2,9 @@
 // recetas base) y de las temperaturas de oficio. Repetición espaciada: lo que sabes vuelve cada vez más tarde, lo que
 // fallas vuelve mañana. Cinco minutos al día y en unos meses lo tienes en la cabeza, no en el móvil.
 // El estado va en un documento «repaso:estado» (copia y sincronización).
-import {t, en, dayKey} from '../i18n.js';
+import {t, en, dayKey, shortDate} from '../i18n.js';
 import {esc, icon, $, toast} from '../ui.js';
-import {docById, saveDoc, liveSubs, liveDishes, liveDocs, trashDoc} from '../store.js';
+import {docById, saveDoc, liveSubs, liveDishes, liveDocs, trashDoc, state} from '../store.js';
 import {entries, entryById} from '../saber/index.js';
 import {PATHS} from './paths.js';
 import {makeQuestions, localGrade, iaGrade, canAskIa, questionHtml, feedbackHtml, resultHtml} from './exam.js';
@@ -190,11 +190,13 @@ export function mount(root, params = []) {
    const it = ex.list[ex.at];
    ex.results.push({id: it.card.id, nota: ex.current.nota, verdict: ex.current.verdict});
    ex.at++; ex.current = null; ex.phase = ex.at >= ex.list.length ? 'done' : 'q';
+   if (ex.phase === 'done') { await routeCert(); }
    if (ex.phase === 'done') { const n = ex.results.length, nota = ex.results.reduce((s2, r2) => s2 + r2.nota, 0) / n; await saveDoc('examen', null, {at: new Date().toISOString(), nota: Math.round(nota * 10) / 10, n, tema: only || cat, fallos: ex.results.filter(r2 => r2.verdict !== 'bien').map(r2 => r2.id)}); }
    paintEx(); return;
   }
   if (a === 'retry') { newExam(ex.results.filter(r2 => r2.verdict !== 'bien').map(r2 => r2.id)); root.innerHTML = render(params); $('#trCard', root).scrollIntoView({block: 'nearest'}); return; }
   if (a === 'new') { newExam(); root.innerHTML = render(params); $('#trCard', root).scrollIntoView({block: 'nearest'}); return; }
+  if (a === 'cert' && ex.cert) { printCert(ex.cert); return; }
  });
  root.addEventListener('submit', async e => {
   if (e.target.id !== 'trNew') return;
@@ -214,3 +216,28 @@ export function mount(root, params = []) {
 // Lo que llega de otro aparato no interrumpe una tanda a medias.
 export function onData() {}
 export {toast};
+
+// 10. Examen de una ruta de la Biblioteca: con un 7 o más queda como logro en «Mi trayectoria» y se puede imprimir el certificado.
+async function routeCert() {
+ if (!only.startsWith('ruta:') || !ex?.results.length) return;
+ const path = PATHS.find(p => p[0] === only.slice(5)); if (!path) return;
+ const nota = Math.round(ex.results.reduce((a, r) => a + r.nota, 0) / ex.results.length * 10) / 10, route = en() ? path[2] : path[1];
+ ex.route = {route, nota};
+ if (nota < 7) return;
+ const today = new Date().toISOString().slice(0, 10), old = liveDocs('logro').find(x => x.route === path[0]);
+ const f = String(nota).replace('.', ',');
+ if (!old || Number(old.nota || 0) < nota) await saveDoc('logro', old?.id || null, {title: t('Ruta «', 'Path “') + route + t('» de la Biblioteca superada con un ', '” of the Library passed with ') + f, when: today, note: t('Examen de ', 'Exam of ') + ex.results.length + t(' preguntas en I+D.', ' questions in I+D.'), route: path[0], nota});
+ ex.cert = {route, nota, at: today, ids: path[5].filter(id => entryById(id))};
+}
+function printCert(c) {
+ const who = docById('carrera:perfil')?.name || state.settings?.name || '';
+ let host = document.getElementById('printFicha');
+ if (!host) { host = document.createElement('div'); host.id = 'printFicha'; document.body.append(host); }
+ host.innerHTML = '<article class="cert"><p class="cert-k">' + esc(t('Certificado de aprendizaje', 'Learning certificate')) + '</p>' + (who ? '<h1>' + esc(who) + '</h1><p>' + esc(t('ha completado la ruta', 'has completed the path')) + '</p>' : '<p>' + esc(t('Ruta completada', 'Path completed')) + '</p>') +
+  '<h2>«' + esc(c.route) + '»</h2><p>' + esc(t('de la Biblioteca de I+D, con un examen final de 10 preguntas y una nota de ', 'of the I+D Library, with a final 10-question exam and a mark of ')) + '<strong>' + esc(String(c.nota).replace('.', ',')) + '</strong>' + esc(t(' sobre 10.', ' out of 10.')) + '</p>' +
+  '<p class="cert-list"><strong>' + esc(t('Contenido: ', 'Content: ')) + '</strong>' + esc(c.ids.map(id => entryById(id)?.name).filter(Boolean).join(', ')) + '.</p><footer>' + esc(shortDate(c.at) + ', ' + new Date(c.at).getFullYear()) + '</footer></article>';
+ document.documentElement.classList.add('printing');
+ const done = () => { document.documentElement.classList.remove('printing'); host.innerHTML = ''; removeEventListener('afterprint', done); };
+ addEventListener('afterprint', done);
+ setTimeout(() => print(), 50);
+}

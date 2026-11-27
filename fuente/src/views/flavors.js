@@ -5,7 +5,7 @@ import {searchIngredients, flavorContext} from '../kitchen.js';
 import {t, en, pick, monthName} from '../i18n.js';
 import {esc, icon, $, flavorMeters, joinList} from '../ui.js';
 import {state} from '../store.js';
-import {emptyState, skeleton, sectionHead} from './shared.js';
+import {emptyState, skeleton, sectionHead, seasonStrip} from './shared.js';
 
 export const title = params => { const ing = state.kb?.byId[params[0]]; return ing ? (en() ? ing.en : ing.es) : t('Sabores', 'Flavours'); };
 const name = id => { const i = state.kb.byId[id]; return i ? (en() ? i.en : i.es) : id; };
@@ -49,7 +49,7 @@ function page(id) {
  const meters = flavorMeters({axes, dominant}).replace(/<li class="fm-row[^"]*"><span class="fm-name">[^<]*<\/span><span class="fm-track"[^>]*><span class="fm-fill" style="width:0\.0%"><\/span><\/span><span class="fm-val">0<\/span><span class="fm-tag"><\/span><\/li>/g, '');
  const techs = ing.tech.map(technique).filter(Boolean).map(x => (en() ? x.en : x.es));
  let html = '<a class="back" href="#/sabores">' + icon('left') + esc(t('Sabores', 'Flavours')) + '</a><article class="ing-page"><header class="page-head"><h1>' + esc(name(id)) + '</h1><p class="kicker is-after">' + esc(pick(FAMILIES[ing.family])) + (ing.tags.includes('ibiza') ? ', ' + esc(t('de aquí', 'local')) : '') + (have ? ', ' + esc(t('de tus básicos', 'one of your staples')) : '') + '</p>' +
-  '<p>' + icon('leaf') + esc(seasonText(ing)) + (ing.months.size && inSeason(ing, m) ? ', <strong>' + esc(t('ahora en temporada', 'in season now')) + '</strong>' : '') + '</p></header>' +
+  '<p>' + icon('leaf') + esc(seasonText(ing)) + (ing.months.size && inSeason(ing, m) ? ', <strong>' + esc(t('ahora en temporada', 'in season now')) + '</strong>' : '') + '</p>' + seasonStrip(ing.months) + '</header>' +
   '<div class="row-actions row-left"><a class="btn ghost" href="#/laboratorio/' + esc(id) + '">' + icon('spark') + esc(t('Una chispa con esto', 'A spark with this')) + '</a>' + (state.canEdit && !state.setupPending ? '<a class="btn primary" href="#/plato/nuevo/' + esc(id) + '">' + icon('plus') + esc(t('Crear un plato con esto', 'Create a dish with this')) + '</a>' : '') + '<a class="btn ghost" href="#/sabores/' + esc(id) + '/con">' + icon('link') + esc(t('Buscar un puente con otro producto', 'Find a bridge to another product')) + '</a></div>' +
   '<div class="ing-cols"><section class="card"><h2>' + esc(t('A qué sabe', 'What it tastes like')) + '</h2>' + meters +
   '<p class="fine">' + esc(t('Aromas: ', 'Aromas: ')) + esc(ing.aromas.map(a => pick(AROMAS[a])).join(', ')) + '. ' + esc(t('Textura: ', 'Texture: ')) + esc(ing.textures.map(x => pick(TEXTURES[x])).join(', ')) + '.' + (techs.length ? ' ' + esc(t('Le va: ', 'Suits: ')) + esc(techs.join(', ').toLowerCase()) + '.' : '') + '</p></section>' +

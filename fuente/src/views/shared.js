@@ -1,8 +1,8 @@
 // I+D · piezas que comparten las pantallas: etiquetas, tarjetas de aviso y de plato, imágenes y «llevar a la libreta».
 import {COURSES, role as roleOf} from '../flavor-core.js';
 import {ideaToDish} from '../ai-core.js';
-import {t, en, pick, relDay, seasonOf} from '../i18n.js';
-import {metaRow, short, esc, icon, flavorPrint, toast, friendly, safeUrl, hostOf, uid} from '../ui.js';
+import {t, en, pick, relDay, seasonOf, monthName} from '../i18n.js';
+import {metaRow, short, esc, icon, flavorPrint, toast, friendly, safeUrl, hostOf, uid, joinList} from '../ui.js';
 import {state, imageUrl, createDish} from '../store.js';
 import {go} from '../nav.js';
 
@@ -123,3 +123,17 @@ export function thermScale(marks, {label = ''} = {}) {
 
 // Miniatura de un plato sin foto: su corte si tiene capas; si no, el corte vacío (nunca la silueta de un plato).
 export const dishThumb = d => (dishLayers(d).length > 1 ? xsec(d, {mini: true}) : '<span class="xsec-mini is-empty" aria-hidden="true"><i></i><i></i><i></i></span>');
+
+// Temporada de un producto: en texto («de noviembre a marzo») y en una tira de 12 meses con el mes de hoy marcado.
+export function seasonText(months) {
+ if (!months?.size) return t('Todo el año', 'All year');
+ const list = [...months].sort((a, b) => a - b), runs = [];
+ for (const m of list) { const last = runs[runs.length - 1]; if (last && last[1] === m - 1) last[1] = m; else runs.push([m, m]); }
+ if (runs.length > 1 && runs[0][0] === 1 && runs[runs.length - 1][1] === 12) runs[0][0] = runs.pop()[0];
+ return joinList(runs.map(([a, b]) => (a === b ? monthName(a) : t('de ', 'from ') + monthName(a) + t(' a ', ' to ') + monthName(b))));
+}
+export function seasonStrip(months) {
+ if (!months?.size) return '';
+ const now = new Date().getMonth() + 1, L = en() ? 'JFMAMJJASOND' : 'EFMAMJJASOND';
+ return '<div class="mstrip" role="img" aria-label="' + esc(t('Temporada: ', 'Season: ') + seasonText(months) + (months.has(now) ? t(', ahora en temporada', ', in season now') : '')) + '">' + [...L].map((c, k) => '<span class="' + (months.has(k + 1) ? 'is-on' : '') + (k + 1 === now ? ' is-now' : '') + '">' + c + '</span>').join('') + '</div>';
+}

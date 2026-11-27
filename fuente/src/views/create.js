@@ -2,17 +2,17 @@
 // Las ideas de la IA son borradores: solo entran en la libreta cuando el cocinero abre una.
 import {COURSES, dishProfile} from '../flavor-core.js';
 import {ideaToDish, recipeToDish} from '../ai-core.js';
-import {role, technique, matchName, inSeason, AROMAS, AXES, dishAdvice, suggest, norm} from '../flavor-core.js';
+import {role, technique, matchName, inSeason, AROMAS, AXES, FAMILIES, TEXTURES, dishAdvice, suggest, pairings, norm} from '../flavor-core.js';
 import {flavorContext} from '../kitchen.js';
 import {search, entries, entryById} from '../saber/index.js';
 import {AI_TECHS} from '../ai-core.js';
 import {t, en, seasonOf} from '../i18n.js';
-import {esc, icon, $, toast, flavorPrint, uid, friendly} from '../ui.js';
+import {esc, icon, $, toast, flavorPrint, uid, friendly, sheet} from '../ui.js';
 import {state, createDish} from '../store.js';
 import {ideasPrompt, ideasFromReply, importPrompt, recipeFromReply, copy} from '../ai.js';
 import {go} from '../nav.js';
 import {iaOn, askIa, iaMessage, imageData} from '../ia.js';
-import {trText, adoptIdea, sectionHead} from './shared.js';
+import {trText, adoptIdea, sectionHead, seasonStrip, seasonText} from './shared.js';
 
 let form = {brief: '', course: '', lead: '', wants: []}, result = null, lastTrend = '', recipe = null, recipeText = '';
 export const title = params => (params[0] === 'llegado' ? t('Ha llegado género', 'New produce in') : params[0] === 'ideas' ? t('Dame ideas', 'Give me ideas') : params[0] === 'importar' ? t('Importar receta', 'Import a recipe') : t('Crear un plato', 'Create a dish'));
@@ -148,7 +148,36 @@ function add(card) {
  keep();
 }
 function cardHtml(c, key, k) {
- return '<button type="button" class="bcard bcard-' + c.k + '" draggable="true" data-add="' + key + ':' + k + '" style="--i:' + k + '">' + icon(c.k === 'tech' ? 'flame' : c.k === 'rec' ? 'book' : 'plus') + '<span><strong>' + esc(c.label) + '</strong>' + (c.why ? '<small>' + esc(c.why) + '</small>' : '') + '</span></button>';
+ return '<span class="bcard-wrap" style="--i:' + k + '"><button type="button" class="bcard bcard-' + c.k + '" draggable="true" data-add="' + key + ':' + k + '">' + icon(c.k === 'tech' ? 'flame' : c.k === 'rec' ? 'book' : 'plus') + '<span><strong>' + esc(c.label) + '</strong>' + (c.why ? '<small>' + esc(c.why) + '</small>' : '') + '</span></button><button type="button" class="binfo" data-info="' + key + ':' + k + '" aria-label="' + esc(t('Ver en grande: ', 'Look closer: ') + c.label) + '">' + icon('info') + '</button></span>';
+}
+// 6. Una idea en grande, sin salir de la mesa: temporada, sabor, aromas, con qué combina y dónde sale en la Biblioteca.
+function infoSheet(card, onAdd) {
+ const kb = state.kb, links = list => list.map(e => '<a class="chip" href="#/biblioteca/' + esc(e.id) + '">' + esc(e.name) + '</a>').join('');
+ let body = '';
+ if (card.k === 'ing' && kb?.byId[card.id]) {
+  const i = kb.byId[card.id], fam = FAMILIES[i.family], p = pairings(kb, i.id, flavorContext(state.kitchen));
+  const prof = dishProfile(kb, {components: [{role: 'principal', techniques: [], items: [{n: i.es, k: i.id, w: 2}]}]});
+  const rel = search(en() ? i.en : i.es, 4).filter(e => e.cat !== 'creatividad');
+  body = '<p class="lead">' + esc(card.why || '') + '</p><div class="binfo-top">' + flavorPrint(prof.axes, {size: 96, labels: true}) + '<div>' +
+   (fam ? '<p><strong>' + esc(fam[en() ? 1 : 0]) + '</strong></p>' : '') +
+   '<p class="mini">' + esc(t('Temporada: ', 'Season: ') + seasonText(i.months)) + (inSeason(i, new Date().getMonth() + 1) ? esc(t(', ahora en temporada', ', in season now')) : '') + '</p>' + seasonStrip(i.months) +
+   (i.aromas.length ? '<p class="fine">' + esc(t('Aromas: ', 'Aromas: ') + i.aromas.map(a => (AROMAS[a] ? AROMAS[a][en() ? 1 : 0] : a)).join(', ')) + '</p>' : '') +
+   (i.textures.length ? '<p class="fine">' + esc(t('Texturas: ', 'Textures: ') + i.textures.map(x => (TEXTURES[x] ? TEXTURES[x][en() ? 1 : 0] : x)).join(', ')) + '</p>' : '') + '</div></div>' +
+   (p.classic.length ? '<h3>' + esc(t('Combina con', 'Pairs with')) + '</h3><div class="chips">' + p.classic.slice(0, 12).map(x => '<span class="chip chip-static">' + esc(ingName(x.id)) + '</span>').join('') + '</div>' : '') +
+   (p.bold.length ? '<h3>' + esc(t('Atrevido', 'Bold')) + '</h3><div class="chips">' + p.bold.slice(0, 6).map(x => '<span class="chip chip-static">' + esc(ingName(x.id)) + '</span>').join('') + '</div>' : '') +
+   (rel.length ? '<h3>' + esc(t('En la Biblioteca', 'In the library')) + '</h3><div class="chips">' + links(rel) + '</div>' : '') +
+   '<p class="fine"><a href="#/sabores/' + esc(i.id) + '">' + esc(t('Abrir en Sabores', 'Open in Flavours')) + '</a></p>';
+ } else if (card.k === 'rec' && entryById(card.id)) {
+  const e = entryById(card.id);
+  body = '<p class="lead">' + esc(String(e.summary || '').replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, '$2').replace(/\[\[([^\]]+)\]\]/g, (m, x) => entryById(x)?.name || x)) + '</p>' + (card.why ? '<p class="fine">' + esc(card.why) + '</p>' : '') +
+   (e.base?.items?.length ? '<h3>' + esc(t('Lleva', 'Contains')) + (e.base.for ? ' <small>(' + esc(e.base.for) + ')</small>' : '') + '</h3><table class="ktable"><tbody>' + e.base.items.map(x => '<tr><td>' + esc(x[0]) + '</td><td>' + esc(x[1] || '') + '</td></tr>').join('') + '</tbody></table>' : '') +
+   '<p class="fine"><a href="#/biblioteca/' + esc(e.id) + '">' + esc(t('Abrir la receta entera', 'Open the full recipe')) + '</a></p>';
+ } else if (card.k === 'tech' && technique(card.id)) {
+  const rel = search((en() ? technique(card.id).en : technique(card.id).es), 4);
+  body = '<p class="lead">' + esc(card.why || '') + '</p>' + (rel.length ? '<h3>' + esc(t('En la Biblioteca', 'In the library')) + '</h3><div class="chips">' + links(rel) + '</div>' : '');
+ } else return;
+ const s = sheet({title: card.label, wide: true, body: body + '<div class="row-actions row-left"><button type="button" class="btn primary" data-info-add>' + icon('plus') + esc(t('Poner en el plato', 'Put on the plate')) + '</button></div>'});
+ s.el.addEventListener('click', e => { if (e.target.closest('[data-info-add]')) { s.close(); onAdd(); } else if (e.target.closest('a[href^="#/"]')) s.close(); });
 }
 // Cómo va el plato: su huella de sabor, qué manda y las notas de equilibrio de la tabla.
 function readingHtml() {
@@ -200,6 +229,8 @@ function mountStudio(root) {
   paint(); $('#bBrief', root)?.focus();
  });
  root.addEventListener('click', async e => {
+  const inf = e.target.closest('[data-info]');
+  if (inf) { const card = cardOf(inf.dataset.info); if (card) infoSheet(card, () => { add(card); paint(); $('#bDish', root)?.classList.add('is-hit'); }); return; }
   const c = e.target.closest('[data-add]'), d = e.target.closest('[data-drop]'), act = e.target.closest('[data-act]')?.dataset.act;
   if (c) { add(cardOf(c.dataset.add)); paint(); $('#bDish', root)?.classList.add('is-hit'); return; }
   if (d) { board.items.splice(Number(d.dataset.drop), 1); const first = board.items.find(x => x.k !== 'tech'); if (first) first.role = 'principal'; keep(); paint(); return; }

@@ -1444,3 +1444,29 @@ button.exopt:hover{border-color:var(--ink);background:var(--soft)}
  .ficha-steps{margin:4px 0 0 1.4em;padding:0;list-style:decimal}.ficha-steps li{margin:2px 0;display:list-item}.ficha-steps li::marker{font-weight:600;color:var(--ink)}
  .ficha-plating-in{display:flex;gap:12px;align-items:flex-start}.ficha-plating-in .ficha-method{flex:1}.ficha-plating-in img{width:55mm;height:55mm;object-fit:contain;border:1px solid var(--line)}
 }
+/* Temporada en 12 meses (Sabores, Biblioteca de producto y Crear). */
+.mstrip{display:grid;grid-template-columns:repeat(12,1fr);gap:2px;max-width:420px;margin:6px 0}
+.mstrip span{text-align:center;font:600 12px/1 var(--narrow);padding:6px 0;border:1px solid var(--line);color:var(--mut)}
+.mstrip span.is-on{background:var(--ok-ink);border-color:var(--ok-ink);color:var(--bg)}
+.mstrip span.is-now{outline:2px solid var(--ink);outline-offset:1px}
+.kseason{margin:4px 0 12px}
+/* Crear: ver una idea en grande. */
+.bcard-wrap{display:inline-flex;align-items:stretch;animation:bpop .36s var(--ease-out) both;animation-delay:calc(var(--i,0) * 35ms)}
+.bcard-wrap .bcard{animation:none}
+.binfo{min-width:36px;border:1px solid var(--line);border-left:0;background:var(--bg);color:var(--mut);cursor:pointer;display:grid;place-items:center}
+.binfo:hover{color:var(--ink);border-color:var(--ink)}.binfo .ic{width:16px;height:16px}
+.binfo-top{display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap}.binfo-top>div{flex:1;min-width:200px}
+@media (prefers-reduced-motion:reduce){.bcard-wrap{animation:none}}
+@media (max-width:959px){.bcard-wrap{flex:none;scroll-snap-align:start}}
+/* Biblioteca: tus fotos y las imágenes guía. */
+.kguide-more{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;margin:0 0 8px}
+.kguide-img.is-thumb{margin:0}.kguide-img.is-thumb figcaption{font-size:12px;padding:6px 8px}
+.kbatch{margin:0 0 16px}
+/* Entrenar: certificado de la ruta. */
+.excert{display:flex;gap:12px;align-items:flex-start;border:1px solid var(--ok-ink);padding:12px 16px;margin:16px 0}.excert>.ic{color:var(--ok-ink);width:22px;height:22px;flex:none}.excert p{margin:0 0 6px}
+@media print{
+ .cert{text-align:center;padding:30mm 16mm;border:2px solid var(--ink);min-height:200mm;display:flex;flex-direction:column;justify-content:center;gap:6mm}
+ .cert-k{font:600 11pt var(--narrow);color:var(--mut);margin:0}.cert h1{font-family:var(--serif);font-size:34pt;margin:0}.cert h2{font-family:var(--serif);font-size:24pt;margin:0}
+ .cert p{font-size:13pt;margin:0}.cert-list{font-size:10pt!important;color:var(--mut);max-width:150mm;margin:0 auto!important}.cert footer{margin-top:8mm;font-size:11pt}
+ .mstrip span.is-on{background:#333;color:#fff}
+}

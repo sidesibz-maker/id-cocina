@@ -104,6 +104,34 @@ ok(fb.includes('Casi') && fb.includes('7') && fb.includes('Explicación del jefe
 ok(/Respuesta del cocinero: Bajo el fuego/.test(JSON.stringify(asked || {})), 'no manda tu respuesta a ChatGPT');
 ok(await p2.evaluate(() => document.documentElement.scrollWidth <= innerWidth), 'el examen se sale en el móvil');
 await ctx2.close();
+// ---------- Examen de una ruta: logro y certificado ----------
+const ctx3 = await browser.newContext({viewport: {width: 1280, height: 900}}); const p3 = await ctx3.newPage();
+await ctx3.route('https://api.openai.com/v1/responses', r => r.fulfill({status: 200, contentType: 'application/json', body: JSON.stringify({output: [{type: 'message', content: [{type: 'output_text', text: JSON.stringify({nota: 10, veredicto: 'bien', aciertos: ['Todo'], falta: [], explicacion: 'Bien.', truco: 'Sigue así.'})}]}]})}));
+await p3.goto(url); await p3.waitForSelector('.hello h1');
+await p3.evaluate(() => localStorage.setItem('id-cocina-ia', JSON.stringify({key: 'sk-proj-prueba0123456789abcdefghijklmnop', daily: false})));
+await p3.reload(); await p3.waitForSelector('.hello h1');
+let gotCert = false, sawHint = false;
+for (let round = 0; round < 4 && !gotCert; round++) {
+ await p3.evaluate(() => { location.hash = '#/hoy'; }); await wait(150); await p3.evaluate(() => { location.hash = '#/entrenar/ruta/salsas'; }); await p3.waitForSelector('.trexam .trq');
+ for (let k = 0; k < 10; k++) {
+  if (await p3.locator('#exA').count()) { await p3.fill('#exA', 'Respuesta completa.'); await p3.click('#exForm button[type=submit]'); }
+  else { const n = await p3.locator('button.exopt').count(); await p3.locator('button.exopt').nth(k % Math.max(1, n)).click(); }
+  await p3.waitForSelector('.exfb'); await p3.click('[data-ex=next]'); await wait(80);
+  if (await p3.locator('.exres').count()) break;
+ }
+ await p3.waitForSelector('.exres');
+ gotCert = await p3.locator('.excert').count() > 0; sawHint = sawHint || (await p3.textContent('.exres')).includes('Con un 7 o más');
+}
+console.log('examen de ruta: ' + (gotCert ? 'certificado' : 'sin certificado (nota baja)'));
+ok(gotCert || sawHint, 'el examen de la ruta no habla del certificado');
+if (gotCert) {
+ const wins = await p3.evaluate(() => Object.values(JSON.parse(localStorage.getItem('id-cocina-v1')).docs).filter(d => d.type === 'logro'));
+ ok(wins.length === 1 && wins[0].route === 'salsas' && wins[0].title.includes('Ruta'), 'la ruta superada no queda en los logros: ' + JSON.stringify(wins));
+ await p3.evaluate(() => { window.print = () => { window.__cert = document.getElementById('printFicha').innerText; }; });
+ await p3.click('[data-ex=cert]'); await p3.waitForFunction(() => window.__cert);
+ ok((await p3.evaluate(() => window.__cert)).includes('Certificado de aprendizaje'), 'el certificado no se imprime');
+}
+await ctx3.close();
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();
 if (fails.length) { console.error('FALLOS en entrenar:\n - ' + fails.join('\n - ')); process.exit(1); }

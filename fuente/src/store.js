@@ -118,9 +118,9 @@ export async function addSaberVersion(id, text, why = '') {
  save('saber');
  return state.saber[id];
 }
-export async function addSaberGuide(id, path) {
+export async function addSaberGuide(id, path, {ai = true} = {}) {
  const at = new Date().toISOString(), cur = state.saber[id] || {id, custom: null, versions: [], created_at: at};
- state.saber[id] = {...cur, guides: [...arr(cur.guides), {path, at, ai: true}].slice(-20), updated_at: at};
+ state.saber[id] = {...cur, guides: [...arr(cur.guides), {path, at, ai}].slice(-20), updated_at: at};
  save('saber');
  return state.saber[id];
 }
@@ -258,7 +258,8 @@ export function mergeSaber(a, b) {
  if (!a) return b; if (!b) return a;
  const seen = new Set(), versions = [...arr(a.versions), ...arr(b.versions)].filter(v => { const k = v.at + '|' + v.text; if (seen.has(k)) return false; seen.add(k); return true; }).sort((x, y) => String(x.at).localeCompare(String(y.at)));
  const newer = String(b.updated_at || '') > String(a.updated_at || '') ? b : a;
- const gseen = new Set(), guides = [...arr(a.guides), ...arr(b.guides)].filter(g => g?.path && !gseen.has(g.path) && gseen.add(g.path)).sort((x, y) => String(x.at).localeCompare(String(y.at)));
+ const gmap = new Map(); for (const g of [...arr(a.guides), ...arr(b.guides)]) { if (!g?.path) continue; const o = gmap.get(g.path); gmap.set(g.path, o ? {...o, ...g, deleted_at: o.deleted_at || g.deleted_at || null} : g); }
+ const guides = [...gmap.values()].sort((x, y) => String(x.at).localeCompare(String(y.at)));
  return {...a, ...b, versions, guides, custom: newer.custom ?? a.custom ?? b.custom ?? null, deleted_at: newer.deleted_at || null, updated_at: [a.updated_at, b.updated_at].sort().pop()};
 }
 export const imagePaths = () => [...new Set([...Object.values(state.saber || {}).flatMap(x => arr(x?.guides).map(g => g?.path)).filter(p => typeof p === 'string' && p.startsWith('img/')), ...state.dishes.flatMap(d => arr(d.images).map(i => i?.path).filter(Boolean)), ...Object.values(state.docs || {}).map(x => x?.image).filter(p => typeof p === 'string' && p.startsWith('img/'))])];
@@ -332,4 +333,12 @@ export async function importBackup(text) {
  state.dishes.sort((a, b) => String(b.updated_at || '').localeCompare(String(a.updated_at || '')));
  mergeTrends(); save('load');
  return {added, updated};
+}
+
+// Quitar una imagen de una ficha: no se borra, se marca como quitada (se puede recuperar desde la copia).
+export async function hideSaberGuide(id, path) {
+ const cur = state.saber[id]; if (!cur) return;
+ const at = new Date().toISOString();
+ state.saber[id] = {...cur, guides: arr(cur.guides).map(g => (g.path === path ? {...g, deleted_at: at} : g)), updated_at: at};
+ save('saber');
 }
