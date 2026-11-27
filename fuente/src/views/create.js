@@ -82,6 +82,8 @@ function burst() {
  all0.forEach(id => { const w = id === main ? 1.6 : have.includes(id) ? 1 : .5; for (const [pid, l] of kb.links[id] || []) { if (inPlate.has(pid)) continue; score.set(pid, (score.get(pid) || 0) + l.score * w); links.set(pid, (links.get(pid) || 0) + 1); if (l.bold) bold.add(pid); } });
  const all = [...score].map(([id, s]) => ({id, i: kb.byId[id], s: s + (links.get(id) > 1 ? links.get(id) * .8 : 0) + (pantry.has(id) ? .4 : 0) + (inSeason(kb.byId[id], month()) ? .4 : 0)})).filter(x => x.i).sort((a, b) => b.s - a.s || a.id.localeCompare(b.id));
  const used = new Set(), plain = ['condimento', 'grasa'], tasty = id => !plain.includes(kb.byId[id]?.family);
+ const sweet = board.course === 'postre', SAVORY = ['carne', 'ave', 'pescado', 'marisco', 'embutido', 'alga', 'salsa', 'encurtido'];
+ const fits = i => !sweet || (!SAVORY.includes(i.family) && i.taste[4] < 4);
  // Por qué combina: aromas que comparte con el protagonista, lo que une, o el contraste que aporta.
  const why = x => {
   const common = M ? x.i.aromas.filter(a => M.aromas.includes(a)).slice(0, 2).map(aroma) : [];
@@ -91,14 +93,15 @@ function burst() {
   if (M && x.i.textures.includes('crujiente') && !M.textures.includes('crujiente')) return t('contraste crujiente con ' + lo(main), 'a crunchy contrast to ' + lo(main));
   return pantry.has(x.id) ? t('lo tienes en tus básicos', 'one of your staples') : inSeason(x.i, month()) ? t('de temporada', 'in season') : t('combinación clásica con ' + lo(main), 'a classic match for ' + lo(main));
  };
- const take = (fn, n, role) => { const out = []; for (const x of all) { if (out.length >= n) break; if (used.has(x.id) || !fn(x.i, x)) continue; used.add(x.id); out.push(ing(x.id, why(x), role)); } return out; };
+ const take = (fn, n, role) => { const out = []; for (const x of all) { if (out.length >= n) break; if (used.has(x.id) || !fits(x.i) || !fn(x.i, x)) continue; used.add(x.id); out.push(ing(x.id, why(x), role)); } return out; };
  const out = [];
  // Lo que le falta al plato según su equilibrio (tabla de sabores) y qué lo arregla, mirando también lo que combina.
  const dish = draftDish(), adv = dish ? dishAdvice(kb, dish) : {notes: []};
  for (const n of adv.notes.filter(n => n.level !== 'ok' && n.fix).slice(0, 2)) {
-  const list = suggest(kb, dish, n.fix, ctx, 8).filter(s => !inPlate.has(s.id) && !used.has(s.id)).slice(0, 5);
+  const cand = suggest(kb, dish, n.fix, ctx, 14).filter(s => !inPlate.has(s.id) && !used.has(s.id) && fits(kb.byId[s.id]) && (!sweet || s.affinity > 0 || ['fruta', 'lacteo', 'fruto-seco', 'dulce', 'hierba', 'especia', 'bebida'].includes(kb.byId[s.id].family)));
+  const linked = cand.filter(s => s.affinity > 0), list = (linked.length >= 3 ? linked : [...linked, ...cand.filter(s => !s.affinity)]).slice(0, 5);
   list.forEach(s => used.add(s.id));
-  if (list.length) out.push(['need-' + n.fix, n.title[en() ? 1 : 0], list.map(s => ing(s.id, s.affinity ? t('arregla eso y combina con ' + lo(main), 'fixes it and goes with ' + lo(main)) : s.have ? t('lo arregla; lo tienes', 'fixes it; you have it') : t('lo arregla', 'fixes it'), FIX_ROLE[n.fix] || 'toque'))]);
+  if (list.length) out.push(['need-' + n.fix, n.title[en() ? 1 : 0], list.map(s => ing(s.id, s.affinity ? t('lo arregla y va con ' + and([...inPlate].filter(h => tasty(h) && kb.links[h]?.has(s.id)).slice(0, 2).map(lo)), 'fixes it and goes with ' + and([...inPlate].filter(h => tasty(h) && kb.links[h]?.has(s.id)).slice(0, 2).map(lo))) : s.have ? t('lo arregla; lo tienes', 'fixes it; you have it') : t('lo arregla', 'fixes it'), FIX_ROLE[n.fix] || 'toque'))]);
  }
  out.push(['goes', t('Le va muy bien', 'Goes really well'), take(i => !plain.includes(i.family), 6)]);
  out.push(['fresh', t('Frescor y ácido', 'Freshness and acidity'), take(i => i.taste[2] >= 3 || ['encurtido', 'hierba'].includes(i.family), 4, 'fresco')]);
@@ -108,7 +111,7 @@ function burst() {
  // Cómo cocinarlo: técnicas que la tabla asocia al protagonista y lo que aporta cada una.
  const done = new Set(board.items.filter(x => x.k === 'tech').map(x => x.id));
  const gives = tech => { const r = technique(tech), parts = []; const top = r.mods.map((v, k) => [v, k]).filter(([v]) => v >= .7).sort((a, b) => b[0] - a[0]).slice(0, 2).map(([, k]) => AXES[k][en() ? 2 : 1].toLowerCase()); if (top.length) parts.push(t('aporta ', 'adds ') + and(top)); if (r.textures.length) parts.push(t('deja ', 'makes it ') + and(r.textures.slice(0, 2))); if (r.fresh >= 1) parts.push(t('mantiene el frescor', 'keeps it fresh')); return parts.join(t('; ', '; ')) || t('para ' + lo(main), 'for ' + lo(main)); };
- const techs = [...new Set([...(M?.tech || []), 'brasa', 'crudo', 'confitado', 'encurtido', 'ahumado', 'tostado'])].filter(id => technique(id) && !done.has(id)).slice(0, 6);
+ const techs = [...new Set([...(M?.tech || []), ...(sweet ? ['caramelizado', 'horno', 'helado', 'crudo', 'tostado', 'brasa', 'pure'] : ['brasa', 'crudo', 'confitado', 'encurtido', 'ahumado', 'tostado'])])].filter(id => !sweet || !['curado', 'encurtido', 'escabeche', 'guiso', 'ahumado', 'fermentado'].includes(id)).filter(id => technique(id) && !done.has(id)).slice(0, 6);
  out.push(['tech', t('Cómo cocinarlo', 'How to cook it'), techs.map(id => ({k: 'tech', id, label: en() ? technique(id).en : technique(id).es, why: gives(id)}))]);
  // Recetas de la Biblioteca que encajan: las que llevan lo que ya tienes o lo que combina con ello.
  const inRec = new Set(board.items.filter(x => x.k === 'rec').map(x => x.id)), plateWords = have.map(id => ingName(id).toLowerCase());

@@ -1406,8 +1406,10 @@ button.exopt:hover{border-color:var(--ink);background:var(--soft)}
 @media (max-width:959px){.bcards{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px;scroll-snap-type:x proximity}.bcard{flex:none;max-width:240px;scroll-snap-align:start}}
 @media (min-width:960px){
  .bang.has-dish{grid-template-columns:minmax(0,1fr) minmax(320px,1.1fr) minmax(0,1fr);align-items:start}
- .bang.has-dish .bplate{grid-column:2;grid-row:1 / span 3;position:sticky;top:16px}
- .bang.has-dish .bgroup{grid-column:auto}
+ .bang.has-dish{grid-auto-flow:row dense}
+ .bang.has-dish .bplate{grid-column:2;grid-row:1 / span 30;position:sticky;top:16px}
+ .bang.has-dish .bgroup:nth-of-type(even){grid-column:1}
+ .bang.has-dish .bgroup:nth-of-type(odd){grid-column:3}
  .bang:not(.has-dish){grid-template-columns:minmax(320px,420px) minmax(0,1fr);align-items:start}
  .bang:not(.has-dish) .bplate{grid-row:1 / span 3}
 }

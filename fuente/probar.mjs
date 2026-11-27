@@ -88,7 +88,8 @@ await page.fill('#bBrief', 'Pulpo'); await page.click('#bStart button[type=submi
 ok((await page.inputValue('#bName')).startsWith('Pulpo'), 'el plato no empieza por el pulpo');
 ok(await page.locator('.bread .bnotes li').count() > 0 && (await page.textContent('.bread')).includes('Manda'), 'el plato no dice cómo va ni qué le falta');
 ok(await page.locator('.bgroup-need [data-add]').count() > 0, 'no salen ideas para lo que le falta al plato');
-for (const g of ['fresh', 'crunch', 'creamy', 'goes', 'tech', 'recipes']) ok(await page.locator('.bgroup-' + g + ' [data-add]').count() > 0, 'no salen ideas del grupo ' + g);
+ok(await page.locator('.bgroup-crunch [data-add], [data-group=need-crujiente] [data-add]').count() > 0, 'no salen ideas crujientes');
+for (const g of ['fresh', 'creamy', 'goes', 'tech', 'recipes']) ok(await page.locator('.bgroup-' + g + ' [data-add]').count() > 0, 'no salen ideas del grupo ' + g);
 const fr = (await page.locator('.bgroup-fresh [data-add] strong').first().textContent()).trim();
 await page.locator('.bgroup-fresh [data-add]').first().click(); await page.waitForFunction(n => document.querySelector('#bDish')?.innerText.includes(n), fr);
 const rec = (await page.locator('.bgroup-recipes [data-add] strong').first().textContent()).trim();
