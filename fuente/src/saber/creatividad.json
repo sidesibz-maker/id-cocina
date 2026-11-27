@@ -6193,5 +6193,959 @@
    "temporada-mes-a-mes",
    "cocinar-para-compartir"
   ]
+ },
+ {
+  "id": "cuaderno-de-cocina",
+  "name": "Llevar un cuaderno de cocina",
+  "name_en": "Keeping a kitchen notebook",
+  "cat": "creatividad",
+  "group": "Oficio",
+  "aka": [
+   "cuaderno de cocina",
+   "libreta de cocina",
+   "cuaderno de ideas",
+   "diario de cocina",
+   "notas de cocinero"
+  ],
+  "summary": "Cómo organizar un cuaderno de cocina útil: ideas, pruebas, recetas fijas y aprendizajes separados, con fecha, y repasarlo para que alimente la creación.",
+  "what": "Un cuaderno de cocina es la memoria del cocinero: ideas que aparecen en cualquier momento, pruebas con sus resultados, recetas que ya funcionan y cosas aprendidas de otros. Sirve si está ordenado y si se vuelve a leer. Funciona separar las ideas sueltas (chispas), las pruebas en curso, las fichas terminadas y las notas de aprendizaje. Esta app tiene un espacio para cada cosa: cuaderno de chispas en el Laboratorio, Diario, versiones de platos y Biblioteca.",
+  "method": [
+   "Separa cuatro tipos de notas: ideas sueltas, pruebas en curso, recetas fijas y aprendizajes.",
+   "Apunta siempre la fecha y el contexto (producto, temporada, quién estaba).",
+   "Escribe las ideas en cuanto aparecen, aunque sean de una línea.",
+   "En las pruebas, apunta lo que cambiaste, el resultado y el siguiente paso.",
+   "Una vez a la semana, repasa las ideas y pasa alguna a prueba.",
+   "Una vez al mes, pasa a recetas fijas lo que ya funciona."
+  ],
+  "ratios": [
+   {
+    "use": "Repaso de ideas",
+    "ratio": "Semanal",
+    "note": "Para que no se queden olvidadas."
+   },
+   {
+    "use": "Paso a receta fija",
+    "ratio": "Mensual",
+    "note": "Lo probado y estable."
+   },
+   {
+    "use": "Notas por prueba",
+    "ratio": "Cambio, resultado y siguiente paso",
+    "note": "Tres líneas bastan."
+   }
+  ],
+  "variants": [
+   {
+    "id": "documentar-tu-obra",
+    "name": "Documentar tu obra",
+    "note": "Fichas, fotos y trayectoria."
+   },
+   {
+    "id": "catas-y-notas",
+    "name": "Pruebas de cata",
+    "note": "Cómo apuntar una cata."
+   },
+   {
+    "id": "rutina-semanal-de-i-d",
+    "name": "Rutina de I+D",
+    "note": "Cuándo repasar el cuaderno."
+   }
+  ],
+  "keys": [
+   "Fecha en todo.",
+   "Separar ideas, pruebas, recetas y aprendizajes.",
+   "Apuntar enseguida.",
+   "Repasar con regularidad.",
+   "Pasar lo que funciona a receta fija."
+  ],
+  "errors": [
+   {
+    "p": "Cuaderno que no se vuelve a leer",
+    "fix": "Sin repaso. Fija un rato semanal."
+   },
+   {
+    "p": "Notas que no se entienden",
+    "fix": "Sin contexto. Apunta fecha, producto y cantidades."
+   },
+   {
+    "p": "Todo mezclado",
+    "fix": "Sin estructura. Separa los cuatro tipos de nota."
+   }
+  ],
+  "history": "Los cuadernos de recetas y notas han acompañado siempre a los cocineros, desde los recetarios manuscritos hasta las libretas de los jefes actuales.",
+  "uses": [
+   "Creación diaria",
+   "Seguimiento de pruebas",
+   "Formación propia",
+   "Base del dossier profesional"
+  ],
+  "keep": "Haz copia de seguridad de tus notas: son años de trabajo.",
+  "pro": "Lleva siempre algo para apuntar en la cocina; la idea que no se apunta en el momento se pierde.",
+  "related": [
+   "documentar-tu-obra",
+   "catas-y-notas",
+   "rutina-semanal-de-i-d",
+   "inspiracion-fuera-de-la-cocina",
+   "escribir-una-receta"
+  ]
+ },
+ {
+  "id": "catas-comparadas",
+  "name": "Catas comparadas de producto",
+  "name_en": "Comparative product tastings",
+  "cat": "creatividad",
+  "group": "Método",
+  "aka": [
+   "cata comparada",
+   "comparar productos",
+   "cata de aceites",
+   "cata de tomates",
+   "cata horizontal",
+   "cata de variedades"
+  ],
+  "summary": "Cómo catar varias versiones de un mismo producto una al lado de otra (variedades, orígenes, maduraciones, marcas) para elegir con criterio y aprender.",
+  "what": "Comparar es la mejor forma de aprender a distinguir: cinco aceites, seis tomates, varias anchoas o distintos tiempos de maduración de una carne, catados juntos y en las mismas condiciones, enseñan más que años probándolos por separado. Una cata comparada bien hecha tiene un orden, unas condiciones iguales, algo neutro entre muestras y una forma de apuntar. Sirve para elegir producto, para formar al equipo y para crear. El método general de cata está en [[catas-y-notas]].",
+  "method": [
+   "Elige un solo producto y entre 3 y 6 muestras distintas.",
+   "Prepáralas igual: misma temperatura, mismo corte, misma cocción (o en crudo).",
+   "Numéralas y, si puedes, cata a ciegas.",
+   "Cata de lo más suave a lo más intenso, con agua y pan neutro entre muestras.",
+   "Apunta para cada una: aspecto, aroma, sabor, textura, final y uso que le darías.",
+   "Compara al final y decide: cuál para qué uso."
+  ],
+  "ratios": [
+   {
+    "use": "Muestras",
+    "ratio": "3–6",
+    "note": "Más cansan el paladar."
+   },
+   {
+    "use": "Cantidad por muestra",
+    "ratio": "Un bocado o una cucharadita",
+    "note": "Igual en todas."
+   },
+   {
+    "use": "Catadores",
+    "ratio": "2–5",
+    "note": "Con alguien que no conozca las muestras."
+   }
+  ],
+  "variants": [
+   {
+    "id": "catas-y-notas",
+    "name": "Pruebas de cata",
+    "note": "El método general."
+   },
+   {
+    "id": "trabajar-con-un-productor",
+    "name": "Trabajar con un productor",
+    "note": "Catar con quien lo produce."
+   },
+   {
+    "id": "un-solo-producto",
+    "name": "Un solo producto",
+    "note": "Explorar un producto en cocina."
+   }
+  ],
+  "keys": [
+   "Mismas condiciones para todas las muestras.",
+   "A ciegas si puedes.",
+   "De suave a intenso.",
+   "Neutro entre muestras.",
+   "Decidir para qué uso sirve cada una."
+  ],
+  "errors": [
+   {
+    "p": "Todo sabe igual al final",
+    "fix": "Demasiadas muestras. Limita a 3–6."
+   },
+   {
+    "p": "Resultados influidos por la etiqueta",
+    "fix": "Cata a ciegas."
+   },
+   {
+    "p": "Comparaciones injustas",
+    "fix": "Condiciones distintas. Prepáralas igual."
+   }
+  ],
+  "history": "Las catas comparadas vienen del mundo del vino y del aceite y se usan cada vez más en cocina para elegir producto.",
+  "uses": [
+   "Elegir aceite, sal, vinagre o tomate",
+   "Formación del equipo",
+   "Diseñar un plato de producto",
+   "Visitas a productores"
+  ],
+  "keep": "Guarda las notas de cada cata comparada con fecha y origen de cada muestra.",
+  "pro": "Haz una cata comparada al mes con el producto de temporada que más uses.",
+  "related": [
+   "catas-y-notas",
+   "trabajar-con-un-productor",
+   "un-solo-producto",
+   "aceite-de-oliva",
+   "tomate"
+  ]
+ },
+ {
+  "id": "trabajar-con-un-productor",
+  "name": "Trabajar con un productor",
+  "name_en": "Working with a producer",
+  "cat": "creatividad",
+  "group": "Raíces",
+  "aka": [
+   "productor local",
+   "agricultor",
+   "pescador",
+   "ganadero",
+   "colaborar con productores",
+   "producto de cercania"
+  ],
+  "summary": "Cómo construir una relación creativa con quien cultiva, pesca o cría: conocer su trabajo, probar juntos, planificar variedades y crear platos a partir de su producto.",
+  "what": "El productor sabe cosas del producto que el cocinero no ve: cuándo está mejor cada variedad, qué partes se desaprovechan, qué cambia con el tiempo o la tierra. Trabajar con él no es solo comprarle: es visitarle, probar juntos, contarle qué se busca en cocina y dejarse sorprender por lo que propone. De esa relación salen platos con identidad y producto de mejor calidad. Es la forma práctica de lo que cuenta [[producto-de-la-isla]].",
+  "method": [
+   "Visita al productor en su campo, su barca o su granja, en distintas épocas.",
+   "Pregúntale qué hace, qué le preocupa, qué variedades tiene y cuándo están mejor.",
+   "Prueba el producto con él, crudo y cocinado de forma sencilla.",
+   "Cuéntale qué buscas en cocina y escucha qué te propone.",
+   "Crea un plato a partir de su producto y llévaselo a probar.",
+   "Cuenta su trabajo en la carta o en sala, con su permiso."
+  ],
+  "ratios": [
+   {
+    "use": "Visitas",
+    "ratio": "Al menos una por temporada",
+    "note": "El producto cambia con el año."
+   },
+   {
+    "use": "Pruebas conjuntas",
+    "ratio": "Cada vez que haya una variedad nueva",
+    "note": "Catad juntos."
+   },
+   {
+    "use": "Platos nacidos de la relación",
+    "ratio": "1–2 por temporada",
+    "note": "Con su producto como protagonista."
+   }
+  ],
+  "variants": [
+   {
+    "id": "producto-de-la-isla",
+    "name": "Producto de la isla",
+    "note": "La despensa local."
+   },
+   {
+    "id": "catas-comparadas",
+    "name": "Catas comparadas",
+    "note": "Probar variedades juntos."
+   },
+   {
+    "id": "cocina-de-aprovechamiento",
+    "name": "Aprovechamiento",
+    "note": "Usar lo que el mercado no valora."
+   }
+  ],
+  "keys": [
+   "Ir a su terreno.",
+   "Escuchar antes de pedir.",
+   "Probar juntos.",
+   "Crear con su producto y llevarle el resultado.",
+   "Contar su trabajo con respeto."
+  ],
+  "errors": [
+   {
+    "p": "Relación solo de compra",
+    "fix": "Sin visitas ni conversación. Ve a verle y prueba con él."
+   },
+   {
+    "p": "Pedir lo imposible",
+    "fix": "Sin conocer su trabajo. Pregunta qué puede dar y cuándo."
+   },
+   {
+    "p": "Usar su nombre sin cuidado",
+    "fix": "Pide permiso y cuéntalo con datos ciertos."
+   }
+  ],
+  "history": "La colaboración estrecha entre cocineros y productores ha sido una de las bases de la cocina de producto de las últimas décadas.",
+  "uses": [
+   "Platos de producto local",
+   "Menú de temporada",
+   "Formación del equipo",
+   "Contar la cocina en sala"
+  ],
+  "keep": "Lleva un cuaderno de productores con lo que te enseñan y lo que hacéis juntos.",
+  "pro": "Invita al productor a probar el plato hecho con su producto: es la mejor forma de que la relación crezca.",
+  "related": [
+   "producto-de-la-isla",
+   "catas-comparadas",
+   "cocina-de-aprovechamiento",
+   "cocinar-con-lo-del-mercado",
+   "contar-un-plato"
+  ]
+ },
+ {
+  "id": "el-acabado-del-plato",
+  "name": "El acabado del plato",
+  "name_en": "Finishing a dish",
+  "cat": "creatividad",
+  "group": "Sabor",
+  "aka": [
+   "acabado",
+   "terminar un plato",
+   "ultimo toque",
+   "finishing",
+   "sal en escamas",
+   "aceite final"
+  ],
+  "summary": "El último gesto antes de que el plato salga: sal, aceite, ácido, hierba, ralladura o crujiente. Por qué decide la primera impresión y cómo elegirlo.",
+  "what": "El acabado es lo primero que nota el comensal: el brillo de un aceite, el crujido de la sal en escamas, el aroma de una ralladura, el frescor de una hierba recién rota. Se añade en el último segundo, en el pase, y puede corregir o completar el plato: un punto de sal que despierta, un ácido que aligera, una grasa que redondea. Pensarlo bien es tan importante como la cocción. Las sales, aceites y hierbas están en sus fichas.",
+  "method": [
+   "Prueba el plato montado sin acabado y pregúntate qué le falta: sal, ácido, grasa, aroma o textura.",
+   "Elige un solo acabado principal que responda a eso.",
+   "Ten el acabado preparado en el pase: sal en escamas, aceite en biberón, cítricos, hierbas lavadas y secas.",
+   "Añádelo en el último segundo, en el sitio donde se va a notar.",
+   "No repitas el mismo acabado en todos los platos del menú.",
+   "Apunta en la ficha el acabado exacto y su cantidad."
+  ],
+  "ratios": [
+   {
+    "use": "Acabados por plato",
+    "ratio": "1–2",
+    "note": "Más se pisan."
+   },
+   {
+    "use": "Sal en escamas",
+    "ratio": "Unas pocas escamas visibles",
+    "note": "Para que crujan."
+   },
+   {
+    "use": "Aceite",
+    "ratio": "Unas gotas o un hilo",
+    "note": "Brillo y aroma."
+   }
+  ],
+  "variants": [
+   {
+    "id": "sales-aromaticas",
+    "name": "Sales aromáticas",
+    "note": "Sal con aroma para terminar."
+   },
+   {
+    "id": "aceites-aromatizados",
+    "name": "Aceites aromatizados",
+    "note": "El brillo final."
+   },
+   {
+    "id": "el-aroma-en-el-plato",
+    "name": "El aroma en el plato",
+    "note": "El acabado aromático."
+   }
+  ],
+  "keys": [
+   "El acabado decide la primera impresión.",
+   "Uno principal y con intención.",
+   "En el último segundo.",
+   "Preparado en el pase.",
+   "Anotado en la ficha."
+  ],
+  "errors": [
+   {
+    "p": "Todos los platos con el mismo acabado",
+    "fix": "Por costumbre. Elige el que pide cada plato."
+   },
+   {
+    "p": "Sal que se disuelve",
+    "fix": "Puesta sobre zona húmeda o pronto. Al final y en zona seca."
+   },
+   {
+    "p": "Hierbas lacias",
+    "fix": "Puestas con antelación o sobre caliente. Al final."
+   }
+  ],
+  "history": "Terminar los platos con buen aceite, sal o hierbas en el último momento es una costumbre de las cocinas mediterráneas que la cocina actual ha llevado al detalle.",
+  "uses": [
+   "Todos los platos",
+   "Pase",
+   "Corrección de última hora",
+   "Formación del equipo de pase"
+  ],
+  "keep": "Revisa cada día que los acabados del pase estén frescos.",
+  "pro": "Ten en el pase una bandeja fija de acabados y que todo el equipo sepa cuál lleva cada plato.",
+  "related": [
+   "sales-aromaticas",
+   "aceites-aromatizados",
+   "el-aroma-en-el-plato",
+   "corregir-un-plato",
+   "emplatado",
+   "sal-y-flor-de-sal"
+  ]
+ },
+ {
+  "id": "disenar-el-bocado",
+  "name": "Diseñar el bocado",
+  "name_en": "Designing the bite",
+  "cat": "creatividad",
+  "group": "Método",
+  "aka": [
+   "el bocado",
+   "bocado perfecto",
+   "cada bocado",
+   "composicion del bocado",
+   "bocado completo"
+  ],
+  "summary": "Pensar un plato desde el bocado: qué cabe en una cucharada o un tenedor, en qué proporción y en qué orden, para que cada bocado tenga el plato entero.",
+  "what": "El comensal no come el plato de golpe, come bocados. Un plato funciona si cada bocado tiene el protagonista, el acompañamiento, la salsa y el acabado en la proporción justa. Diseñar el bocado es pensar el tamaño de los cortes, la cantidad de salsa por pieza, dónde se coloca el crujiente y cómo se va a llevar todo a la boca. Es especialmente importante en platos de menú y aperitivos.",
+  "method": [
+   "Decide la herramienta: cuchara, tenedor, mano o palillo.",
+   "Corta el protagonista al tamaño de un bocado o en piezas que el comensal pueda cortar fácil.",
+   "Calcula la salsa y los acompañantes por bocado, no por plato.",
+   "Coloca los elementos para que se puedan coger juntos.",
+   "Prueba bocados al azar del plato montado: todos deben tener lo esencial.",
+   "Ajusta cortes y cantidades hasta que cada bocado sea completo."
+  ],
+  "ratios": [
+   {
+    "use": "Bocado de tenedor",
+    "ratio": "10–15 g",
+    "note": "Proteína, acompañante y salsa."
+   },
+   {
+    "use": "Bocado de cuchara",
+    "ratio": "8–12 g",
+    "note": "Para aperitivos y postres."
+   },
+   {
+    "use": "Salsa por bocado",
+    "ratio": "Lo justo para cubrir",
+    "note": "Ni seco ni nadando."
+   }
+  ],
+  "variants": [
+   {
+    "id": "construir-un-plato",
+    "name": "Construir un plato",
+    "note": "El plato completo."
+   },
+   {
+    "id": "aperitivos-y-snacks",
+    "name": "Aperitivos",
+    "note": "El bocado único."
+   },
+   {
+    "id": "texturas-en-el-plato",
+    "name": "Texturas",
+    "note": "Qué textura tiene cada bocado."
+   }
+  ],
+  "keys": [
+   "Cada bocado, el plato entero.",
+   "Cortes al tamaño de la herramienta.",
+   "Salsa calculada por bocado.",
+   "Elementos que se puedan coger juntos.",
+   "Probar bocados al azar."
+  ],
+  "errors": [
+   {
+    "p": "Bocados desiguales",
+    "fix": "Elementos en montones. Repártelos."
+   },
+   {
+    "p": "Piezas difíciles de comer",
+    "fix": "Cortes grandes o duros. Ajusta el tamaño."
+   },
+   {
+    "p": "Salsa que se acaba antes",
+    "fix": "Calculada por plato. Calcúlala por bocado."
+   }
+  ],
+  "history": "La atención al bocado como unidad de diseño creció con los menús degustación de muchos pases pequeños.",
+  "uses": [
+   "Menú degustación",
+   "Aperitivos",
+   "Postres",
+   "Revisión de platos"
+  ],
+  "keep": "Apunta en la ficha el corte y la cantidad por bocado.",
+  "pro": "En la cata, prueba siempre tres bocados distintos del mismo plato. Una prueba sencilla: monta el plato, dáselo a alguien del equipo y mira cómo lo come; si aparta algo o deja salsa, el bocado no está bien pensado.",
+  "related": [
+   "construir-un-plato",
+   "aperitivos-y-snacks",
+   "texturas-en-el-plato",
+   "del-plato-al-menu",
+   "emplatado"
+  ]
+ },
+ {
+  "id": "recibir-una-critica",
+  "name": "Recibir una crítica",
+  "name_en": "Taking criticism",
+  "cat": "creatividad",
+  "group": "Oficio",
+  "aka": [
+   "critica",
+   "opinion sobre un plato",
+   "feedback",
+   "criticas a mi cocina",
+   "aprender de la critica"
+  ],
+  "summary": "Cómo escuchar y usar las opiniones sobre tu cocina (del equipo, de otros cocineros, de comensales o de la prensa) sin desanimarte ni perder tu criterio.",
+  "what": "Toda cocina recibe críticas: del equipo en una cata, de otro cocinero, de un comensal o por escrito. Una crítica útil señala algo concreto; una inútil solo expresa un gusto. Aprender a separarlas, escuchar sin defenderse en el momento y decidir con calma qué cambiar es una parte del oficio creativo. El criterio final sigue siendo tuyo, pero una buena crítica puede ahorrarte meses.",
+  "method": [
+   "Escucha entera sin interrumpir ni justificarte.",
+   "Pregunta para concretar: ¿qué exactamente?, ¿en qué momento?, ¿qué esperabas?",
+   "Apunta la crítica tal cual, sin interpretarla.",
+   "Deja pasar un día antes de decidir.",
+   "Separa lo concreto (punto, sal, temperatura, cantidad) de lo que es gusto personal.",
+   "Prueba un cambio si la crítica es concreta y cata el resultado."
+  ],
+  "ratios": [
+   {
+    "use": "Tiempo antes de decidir",
+    "ratio": "24 horas",
+    "note": "Para responder con calma."
+   },
+   {
+    "use": "Críticas que se repiten",
+    "ratio": "Atención prioritaria",
+    "note": "Si varias personas dicen lo mismo, hay algo."
+   },
+   {
+    "use": "Cambios por crítica",
+    "ratio": "1 a probar",
+    "note": "Y catar el resultado."
+   }
+  ],
+  "variants": [
+   {
+    "id": "aprender-del-comensal",
+    "name": "Aprender del comensal",
+    "note": "Lo que vuelve en el plato."
+   },
+   {
+    "id": "prueba-con-el-equipo",
+    "name": "Prueba con el equipo",
+    "note": "La crítica interna organizada."
+   },
+   {
+    "id": "estilo-propio",
+    "name": "Estilo propio",
+    "note": "El criterio que no se negocia."
+   }
+  ],
+  "keys": [
+   "Escuchar sin defenderse.",
+   "Pedir concreción.",
+   "Dejar pasar un día.",
+   "Separar lo concreto del gusto.",
+   "El criterio final es tuyo."
+  ],
+  "errors": [
+   {
+    "p": "Reaccionar en caliente",
+    "fix": "Respuesta inmediata. Agradece, apunta y decide al día siguiente."
+   },
+   {
+    "p": "Cambiar todo por una opinión",
+    "fix": "Crítica aislada. Espera a ver si se repite."
+   },
+   {
+    "p": "Ignorar todas las críticas",
+    "fix": "Orgullo. Busca lo concreto en cada una."
+   }
+  ],
+  "history": "La crítica forma parte de cualquier oficio creativo; en cocina llega de muchos sitios, de la sala a la prensa.",
+  "uses": [
+   "Mejorar platos",
+   "Formación propia",
+   "Relación con el equipo",
+   "Crecimiento profesional"
+  ],
+  "keep": "Guarda las críticas útiles en tu cuaderno con lo que cambiaste.",
+  "pro": "Fomenta en el equipo que se critiquen los platos con concreción: «falta sal en la salsa», no «no me gusta».",
+  "related": [
+   "aprender-del-comensal",
+   "prueba-con-el-equipo",
+   "estilo-propio",
+   "corregir-un-plato",
+   "catas-y-notas"
+  ]
+ },
+ {
+  "id": "crear-un-plato-en-una-semana",
+  "name": "Crear un plato en una semana",
+  "name_en": "Creating a dish in a week",
+  "cat": "creatividad",
+  "group": "Método",
+  "aka": [
+   "plato en una semana",
+   "calendario de creacion",
+   "sprint de cocina",
+   "plan de un plato nuevo",
+   "de la idea a la carta"
+  ],
+  "summary": "Un plan de cinco días para llevar una idea a un plato probado: idea y producto, primeras pruebas, ajuste, cata con el equipo y ficha final.",
+  "what": "A veces hace falta un plato nuevo pronto: un cambio de temporada, un producto que llega, un hueco en la carta. Un plan corto y ordenado evita dar vueltas sin avanzar. Cada día tiene un objetivo: el primero, la idea y el producto; el segundo y el tercero, pruebas; el cuarto, la cata con el equipo; el quinto, la ficha y el montaje final. Los métodos de cada paso están en [[construir-un-plato]], [[catas-y-notas]] y [[de-la-prueba-a-la-receta-fija]].",
+  "method": [
+   "Día 1: define la idea en una frase, prueba el producto y elige técnica y acompañantes.",
+   "Día 2: primera versión completa; cata y apunta qué falta y qué sobra.",
+   "Día 3: segunda versión con un cambio cada vez; decide el montaje.",
+   "Día 4: cata con el equipo y sala; recoge críticas concretas.",
+   "Día 5: versión final, ficha escrita con cantidades y fotos.",
+   "Si el plato no está a la altura el quinto día, se aparca: mejor eso que sacar un plato a medias."
+  ],
+  "ratios": [
+   {
+    "use": "Duración",
+    "ratio": "5 días de trabajo",
+    "note": "Unas horas cada día."
+   },
+   {
+    "use": "Versiones",
+    "ratio": "2–4",
+    "note": "Con un cambio cada vez."
+   },
+   {
+    "use": "Catas",
+    "ratio": "Una propia cada día y una con el equipo",
+    "note": "El día 4."
+   }
+  ],
+  "variants": [
+   {
+    "id": "construir-un-plato",
+    "name": "Construir un plato",
+    "note": "El método base."
+   },
+   {
+    "id": "rutina-semanal-de-i-d",
+    "name": "Rutina de I+D",
+    "note": "La creación como hábito."
+   },
+   {
+    "id": "de-la-prueba-a-la-receta-fija",
+    "name": "Receta fija",
+    "note": "El cierre del plan."
+   }
+  ],
+  "keys": [
+   "Un objetivo por día.",
+   "Idea clara desde el día 1.",
+   "Un cambio por prueba.",
+   "Cata con el equipo antes de cerrar.",
+   "Aparcar si no está listo."
+  ],
+  "errors": [
+   {
+    "p": "Llegar al día 5 sin plato",
+    "fix": "Idea difusa el día 1. Defínela en una frase."
+   },
+   {
+    "p": "Cambiar todo cada día",
+    "fix": "Sin método. Un cambio por versión."
+   },
+   {
+    "p": "Sacar el plato a medias",
+    "fix": "Prisa. Mejor aparcarlo y seguir la semana siguiente."
+   }
+  ],
+  "history": "Trabajar con plazos cortos y objetivos diarios es habitual en oficios de diseño y se adapta bien al desarrollo de platos.",
+  "uses": [
+   "Cambio de carta",
+   "Producto nuevo",
+   "Retos del equipo",
+   "Concursos"
+  ],
+  "keep": "Guarda en el diario lo que hiciste cada día y en la ficha el resultado final.",
+  "pro": "Planifica los cinco días en la agenda de la semana como si fueran servicios.",
+  "related": [
+   "construir-un-plato",
+   "catas-y-notas",
+   "de-la-prueba-a-la-receta-fija",
+   "rutina-semanal-de-i-d",
+   "prueba-con-el-equipo"
+  ]
+ },
+ {
+  "id": "aprender-una-cocina-extranjera",
+  "name": "Aprender una cocina extranjera",
+  "name_en": "Learning a foreign cuisine",
+  "cat": "creatividad",
+  "group": "Oficio",
+  "aka": [
+   "cocina de otro pais",
+   "estudiar una cocina",
+   "cocinas del mundo",
+   "aprender cocina japonesa",
+   "aprender cocina mexicana"
+  ],
+  "summary": "Cómo estudiar en serio la cocina de otro país: su despensa, sus técnicas básicas, sus platos de casa y su lógica, antes de mezclarla con la propia.",
+  "what": "Aprender otra cocina abre muchas ideas, pero solo si se entiende de verdad y no se copian solo los platos famosos. Cada cocina tiene una despensa, unas técnicas básicas y una lógica (cómo se equilibra, cómo se come, qué se valora). El camino es aprender primero las bases y los platos de casa, cocinarlos fielmente muchas veces, y solo después llevar lo aprendido a la propia cocina con respeto por el origen, como cuenta [[de-un-viaje-a-un-plato]].",
+  "method": [
+   "Elige una cocina y busca sus bases: despensa, técnicas, utensilios y platos de casa.",
+   "Aprende de personas de esa cocina: cocineros, libros de autores de allí, mercados.",
+   "Cocina los platos básicos de forma fiel varias veces antes de cambiar nada.",
+   "Entiende la lógica: cómo se equilibra el sabor, cómo se organiza una comida.",
+   "Identifica qué técnica o idea podrías llevar a tu cocina con tu producto.",
+   "Nombra el origen cuando uses algo aprendido."
+  ],
+  "ratios": [
+   {
+    "use": "Platos de base cocinados fielmente",
+    "ratio": "5–10 antes de versionar",
+    "note": "Para entender la lógica."
+   },
+   {
+    "use": "Fuentes",
+    "ratio": "Al menos una de personas de esa cocina",
+    "note": "Libros, cocineros, mercados."
+   },
+   {
+    "use": "Ideas llevadas a tu cocina",
+    "ratio": "1–2 bien entendidas",
+    "note": "Mejor que muchas superficiales."
+   }
+  ],
+  "variants": [
+   {
+    "id": "de-un-viaje-a-un-plato",
+    "name": "De un viaje a un plato",
+    "note": "Traducir lo aprendido."
+   },
+   {
+    "id": "leer-un-libro-de-cocina",
+    "name": "Leer un libro de cocina",
+    "note": "Estudiar con libros."
+   },
+   {
+    "id": "aprender-de-un-stage",
+    "name": "Stage",
+    "note": "Aprender en una cocina de allí."
+   }
+  ],
+  "keys": [
+   "Primero las bases.",
+   "Aprender de gente de esa cocina.",
+   "Cocinar fiel antes de versionar.",
+   "Entender la lógica, no solo los platos.",
+   "Respeto y origen nombrado."
+  ],
+  "errors": [
+   {
+    "p": "Fusión sin sentido",
+    "fix": "Mezclar sin entender. Aprende las bases primero."
+   },
+   {
+    "p": "Solo platos famosos",
+    "fix": "Busca la cocina de casa."
+   },
+   {
+    "p": "Caricatura de otra cocina",
+    "fix": "Aprende de personas de allí y nombra el origen."
+   }
+  ],
+  "history": "Los cocineros siempre han aprendido de otras cocinas por el comercio, los viajes y las migraciones; hoy el acceso a otras cocinas es mayor que nunca.",
+  "uses": [
+   "Formación propia",
+   "Ideas para la carta",
+   "Formación del equipo",
+   "Trayectoria"
+  ],
+  "keep": "Guarda en el cuaderno las bases aprendidas de cada cocina y sus fuentes.",
+  "pro": "Dedica una temporada a una cocina: un plato de base por semana en la rutina de I+D.",
+  "related": [
+   "de-un-viaje-a-un-plato",
+   "leer-un-libro-de-cocina",
+   "aprender-de-un-stage",
+   "estilo-propio",
+   "rutina-semanal-de-i-d"
+  ]
+ },
+ {
+  "id": "investigar-la-historia-de-un-plato",
+  "name": "Investigar la historia de un plato",
+  "name_en": "Researching the history of a dish",
+  "cat": "creatividad",
+  "group": "Raíces",
+  "aka": [
+   "historia de un plato",
+   "origen de una receta",
+   "investigar recetas antiguas",
+   "recetarios antiguos",
+   "documentar la tradicion"
+  ],
+  "summary": "Cómo investigar de dónde viene un plato con rigor: fuentes fiables, recetarios, personas mayores, y cómo contarlo sin inventar.",
+  "what": "Conocer la historia de un plato ayuda a entenderlo, a reinterpretarlo con respeto y a contarlo bien. Pero sobre el origen de los platos circulan muchas leyendas. Investigar con rigor es buscar fuentes (recetarios antiguos, archivos, estudios), preguntar a quien lo cocinaba, comparar versiones y distinguir lo que se sabe de lo que se cuenta. Y al contarlo, decir solo lo que se puede sostener, como piden las fichas de esta Biblioteca.",
+  "method": [
+   "Empieza por quienes lo cocinan o cocinaban: personas mayores, cocineros de la zona.",
+   "Busca recetarios antiguos y textos de historia de la alimentación.",
+   "Compara versiones de distintas épocas y lugares: qué cambia y qué se mantiene.",
+   "Separa lo documentado de lo que es leyenda o tradición oral.",
+   "Apunta las fuentes de cada dato.",
+   "Al contarlo, di lo seguro y presenta como tradición lo que no lo es."
+  ],
+  "ratios": [
+   {
+    "use": "Fuentes por dato importante",
+    "ratio": "Al menos 2",
+    "note": "Si solo hay una, es dudoso."
+   },
+   {
+    "use": "Versiones comparadas",
+    "ratio": "3 o más",
+    "note": "Para ver la esencia del plato."
+   },
+   {
+    "use": "Lo que se cuenta en sala",
+    "ratio": "Solo lo seguro",
+    "note": "Lo demás, como tradición."
+   }
+  ],
+  "variants": [
+   {
+    "id": "memoria-del-sabor",
+    "name": "La memoria del sabor",
+    "note": "El recuerdo personal."
+   },
+   {
+    "id": "reinterpretar-un-clasico",
+    "name": "Reinterpretar un clásico",
+    "note": "Qué hacer con lo aprendido."
+   },
+   {
+    "id": "cocina-ibicenca",
+    "name": "Cocina ibicenca",
+    "note": "La tradición de la isla."
+   }
+  ],
+  "keys": [
+   "Personas y recetarios como fuentes.",
+   "Comparar versiones.",
+   "Separar dato de leyenda.",
+   "Apuntar las fuentes.",
+   "Contar solo lo seguro."
+  ],
+  "errors": [
+   {
+    "p": "Repetir leyendas como hechos",
+    "fix": "Sin contrastar. Busca fuentes y matiza."
+   },
+   {
+    "p": "Una sola versión del plato",
+    "fix": "Compara varias."
+   },
+   {
+    "p": "Fuentes perdidas",
+    "fix": "Apunta de dónde sale cada dato."
+   }
+  ],
+  "history": "La historia de la alimentación se ha convertido en un campo de estudio propio, y muchos cocineros colaboran con historiadores para recuperar recetas.",
+  "uses": [
+   "Reinterpretar platos tradicionales",
+   "Contar platos en sala",
+   "Menús de raíz",
+   "Formación"
+  ],
+  "keep": "Guarda en el cuaderno las fuentes y versiones de cada plato investigado.",
+  "pro": "Cuando trabajes un plato de la isla, graba o apunta la versión de quien lo cocina en casa.",
+  "related": [
+   "memoria-del-sabor",
+   "reinterpretar-un-clasico",
+   "cocina-ibicenca",
+   "contar-un-plato",
+   "leer-un-libro-de-cocina"
+  ]
+ },
+ {
+  "id": "jugar-con-la-forma",
+  "name": "Jugar con la forma",
+  "name_en": "Playing with shape",
+  "cat": "creatividad",
+  "group": "Método",
+  "aka": [
+   "forma en el plato",
+   "cortes y formas",
+   "geometria del plato",
+   "laminas esferas cilindros",
+   "presentacion de formas"
+  ],
+  "summary": "Cómo la forma de cada elemento (lámina, dado, esfera, cilindro, hilo, puré) cambia cómo se ve, cómo se come y cómo sabe un plato.",
+  "what": "El mismo ingrediente cortado de distinta forma cambia el plato: una zanahoria en láminas finas se come cruda y crujiente; en dados, se glasea; en puré, acaricia. La forma afecta a la textura, a la velocidad con que llega el sabor, a la temperatura y a cómo se ve. Jugar con la forma (láminas, dados, hilos, esferas, cilindros, piezas enteras) es una herramienta creativa sencilla y potente. Los cortes básicos están en [[cortes-de-cuchillo]].",
+  "method": [
+   "Elige un ingrediente y piensa todas las formas posibles: entero, lámina, dado, hilo, puré, polvo, esfera.",
+   "Prueba cómo cambia la textura y el sabor en cada forma.",
+   "Decide qué forma cuenta mejor el plato.",
+   "Combina formas distintas para dar ritmo: algo entero, algo fino, algo cremoso.",
+   "Cuida la regularidad: la misma forma, del mismo tamaño.",
+   "Comprueba que la forma no complica comerlo."
+  ],
+  "ratios": [
+   {
+    "use": "Formas distintas por plato",
+    "ratio": "2–3",
+    "note": "Dan ritmo."
+   },
+   {
+    "use": "Láminas crudas",
+    "ratio": "1–2 mm",
+    "note": "Con mandolina."
+   },
+   {
+    "use": "Regularidad",
+    "ratio": "Mismo tamaño en la misma forma",
+    "note": "Cocción y aspecto parejos."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cortes-de-cuchillo",
+    "name": "Cortes de cuchillo",
+    "note": "La técnica."
+   },
+   {
+    "id": "texturas-en-el-plato",
+    "name": "Texturas",
+    "note": "Forma y textura van juntas."
+   },
+   {
+    "id": "un-solo-producto",
+    "name": "Un solo producto",
+    "note": "Un ingrediente en varias formas."
+   }
+  ],
+  "keys": [
+   "La forma cambia textura y sabor.",
+   "Elegir la forma que cuenta el plato.",
+   "Combinar formas para dar ritmo.",
+   "Regularidad.",
+   "Que se pueda comer bien."
+  ],
+  "errors": [
+   {
+    "p": "Formas que no se comen bien",
+    "fix": "Piezas grandes o duras. Ajusta tamaño."
+   },
+   {
+    "p": "Todo con la misma forma",
+    "fix": "Monotonía. Combina formas."
+   },
+   {
+    "p": "Forma por la forma",
+    "fix": "Sin función. Pregúntate qué aporta."
+   }
+  ],
+  "history": "Los cortes clásicos de la cocina francesa y la cocina de vanguardia han hecho de la forma un recurso creativo más.",
+  "uses": [
+   "Construir platos",
+   "Aperitivos",
+   "Ejercicios creativos",
+   "Formación en cortes"
+  ],
+  "keep": "Apunta en la ficha la forma y el tamaño de cada elemento.",
+  "pro": "Pide al equipo que presente un mismo ingrediente en tres formas distintas y catadlas. Un ejercicio útil es tomar un producto de temporada, como la calabaza o el hinojo, y presentarlo en tres formas en el mismo plato: crudo en láminas, asado en piezas y en puré.",
+  "related": [
+   "cortes-de-cuchillo",
+   "texturas-en-el-plato",
+   "un-solo-producto",
+   "emplatado",
+   "disenar-el-bocado"
+  ]
  }
 ]

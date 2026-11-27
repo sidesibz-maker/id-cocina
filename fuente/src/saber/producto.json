@@ -13272,5 +13272,1700 @@
    "fritura",
    "temporada-mes-a-mes"
   ]
+ },
+ {
+  "id": "salmon",
+  "name": "Salmón",
+  "name_en": "Salmon",
+  "cat": "producto",
+  "group": "Pescado y marisco",
+  "aka": [
+   "salmón",
+   "salmón atlántico",
+   "salmón salvaje",
+   "salmón de crianza",
+   "lomo de salmón",
+   "salmón ahumado"
+  ],
+  "summary": "Pescado graso de carne anaranjada, casi siempre de crianza; versátil a la plancha, al horno, en curado, ahumado o crudo tratado.",
+  "what": "El salmón que se encuentra casi siempre es atlántico de crianza (Noruega, Escocia, Chile), de carne grasa, anaranjada y en lascas; el salvaje, del Pacífico o de ríos del norte, es más magro y de color más intenso. Su grasa lo hace agradecido: aguanta bien la plancha, el horno, el [[curado-de-pescado|curado]], el ahumado y el crudo.\n\nPara crudo o poco hecho, se usa pieza congelada antes o ya tratada. La línea blanca de grasa entre lascas aparece cuando se pasa de punto.",
+  "method": [
+   "Elige lomos brillantes, firmes, sin manchas ni olor fuerte.",
+   "Retira las espinas finas con pinzas, en el sentido de la espina.",
+   "Plancha: por la piel bien seca a fuego medio-alto hasta que se vea el cambio de color en tres cuartas partes; un toque por la carne.",
+   "Horno: a 180 °C, 8–12 minutos según grosor.",
+   "Para crudo, curado o tartar: pieza congelada antes o ya tratada."
+  ],
+  "ratios": [
+   {
+    "use": "Punto jugoso",
+    "ratio": "45–50 °C en el centro",
+    "note": "Congelado antes si queda por debajo de 60 °C."
+   },
+   {
+    "use": "Lomo al horno",
+    "ratio": "180 °C, 8–12 minutos",
+    "note": "Según grosor."
+   },
+   {
+    "use": "Ración",
+    "ratio": "150–180 g limpio",
+    "note": ""
+   },
+   {
+    "use": "Curado rápido",
+    "ratio": "Sal y azúcar 1:1, 12–24 horas",
+    "note": "Pieza tratada."
+   }
+  ],
+  "variants": [
+   {
+    "id": "curado-de-pescado",
+    "name": "Gravlax",
+    "note": "Curado con sal y azúcar."
+   },
+   {
+    "id": "ahumado",
+    "name": "Ahumado",
+    "note": "En frío o en caliente."
+   },
+   {
+    "id": "sushi-y-sashimi",
+    "name": "Crudo",
+    "note": "Pieza tratada."
+   },
+   {
+    "id": "pescado-azul",
+    "name": "Pescado graso",
+    "note": "Otros grasos."
+   }
+  ],
+  "keys": [
+   "Pescado que queda por debajo de 60 °C en el centro: congelado antes (-20 °C al menos 24 horas en toda la pieza) o ya tratado, por el anisakis.",
+   "Quitar espinas finas con pinzas.",
+   "Piel muy seca para que cruja.",
+   "Sacar antes de que salga la grasa blanca.",
+   "Su grasa admite ácidos y salsas frescas."
+  ],
+  "errors": [
+   {
+    "p": "Grasa blanca en la superficie",
+    "fix": "Pasado de punto. Saca antes."
+   },
+   {
+    "p": "Piel pegada",
+    "fix": "Piel húmeda o sartén fría. Seca y calienta."
+   },
+   {
+    "p": "Espinas en el plato",
+    "fix": "Sin repasar. Pinzas."
+   }
+  ],
+  "history": "La cría de salmón se desarrolló en Noruega en la segunda mitad del siglo XX y hoy domina el mercado.",
+  "uses": [
+   "Plancha y horno",
+   "Curados y ahumados",
+   "Tartares y crudos",
+   "Rillettes"
+  ],
+  "keep": "Lomos, 2 días a 0–2 °C; congela bien.",
+  "pro": "Porciona al recibir; los recortes, a tartar o rillettes.",
+  "related": [
+   "curado-de-pescado",
+   "ahumado",
+   "sushi-y-sashimi",
+   "pescado-azul",
+   "rillettes-y-pates-de-pescado",
+   "fileteado-de-pescado"
+  ]
+ },
+ {
+  "id": "anguila-y-angula",
+  "name": "Anguila y angula",
+  "name_en": "Eel and elvers",
+  "cat": "producto",
+  "group": "Pescado y marisco",
+  "aka": [
+   "anguila",
+   "angula",
+   "anguila ahumada",
+   "unagi",
+   "angulas al ajillo",
+   "gulas"
+  ],
+  "summary": "Pez de río y mar de carne grasa y firme, para guisos, brasa y ahumado; la angula es su cría, un lujo escaso y protegido.",
+  "what": "La anguila vive en ríos y lagunas y desova en el mar; su carne es grasa, firme y sabrosa. En España se guisa en [[all-i-pebre]] en la Albufera de Valencia, se hace a la brasa o se ahuma; en Japón, el unagi se asa lacado. La angula es la cría que remonta los ríos: se come cocinada al ajillo, en cazuela de barro. Las gulas son un sucedáneo de surimi de pescado.\n\nLa anguila europea es una especie en peligro con pesca muy regulada. Su sangre cruda es irritante, así que se manipula con guantes, sin tocarse los ojos, y se cocina siempre bien.",
+  "method": [
+   "Compra de origen controlado y dentro de las normas de pesca.",
+   "Manipula con guantes; limpia bien la sangre con agua.",
+   "Quita la piel o frótala con sal para retirar la mucosidad; trocea.",
+   "Para guiso o brasa, cocínala siempre bien hecha.",
+   "Angulas: al ajillo en cazuela de barro con aceite muy caliente, ajo y guindilla, un instante."
+  ],
+  "ratios": [
+   {
+    "use": "Ración en guiso",
+    "ratio": "200–250 g",
+    "note": ""
+   },
+   {
+    "use": "En guiso",
+    "ratio": "15–20 minutos",
+    "note": "Bien hecha."
+   },
+   {
+    "use": "Angulas por ración",
+    "ratio": "80–100 g",
+    "note": ""
+   },
+   {
+    "use": "Angulas al ajillo",
+    "ratio": "Aceite muy caliente, 30 segundos",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "all-i-pebre",
+    "name": "All i pebre",
+    "note": "Guiso valenciano."
+   },
+   {
+    "id": "teriyaki-y-glaseados-de-soja",
+    "name": "Unagi",
+    "note": "Lacada japonesa."
+   },
+   {
+    "id": "ahumado",
+    "name": "Ahumada",
+    "note": "Conservación."
+   },
+   {
+    "id": "trucha-y-pescados-de-rio",
+    "name": "Pescados de río",
+    "note": "Otros."
+   }
+  ],
+  "keys": [
+   "Especie en peligro: origen controlado.",
+   "Guantes: sangre cruda irritante.",
+   "Siempre bien cocinada.",
+   "Grasa: admite brasa y lacado.",
+   "Angula: un instante en aceite caliente."
+  ],
+  "errors": [
+   {
+    "p": "Textura gomosa",
+    "fix": "Poco cocinada. Alarga."
+   },
+   {
+    "p": "Piel viscosa",
+    "fix": "Sin limpiar. Frota con sal."
+   },
+   {
+    "p": "Angulas quemadas",
+    "fix": "Mucho tiempo. Solo un instante."
+   }
+  ],
+  "history": "La anguila ha sido un recurso tradicional de la Albufera, el Delta del Ebro y los ríos del norte; la angula fue comida humilde antes de volverse un lujo.",
+  "uses": [
+   "Guisos",
+   "Brasa y lacados",
+   "Ahumados",
+   "Angulas al ajillo"
+  ],
+  "keep": "Viva o fresca, 1 día en frío; ahumada, según envase.",
+  "pro": "Compra limpia si se puede; anota el origen.",
+  "related": [
+   "all-i-pebre",
+   "teriyaki-y-glaseados-de-soja",
+   "ahumado",
+   "trucha-y-pescados-de-rio",
+   "cazuelas-de-barro-y-hierro",
+   "cocina-y-paisaje"
+  ]
+ },
+ {
+  "id": "pez-limon-y-seriola",
+  "name": "Pez limón o seriola",
+  "name_en": "Amberjack",
+  "cat": "producto",
+  "group": "Pescado y marisco",
+  "aka": [
+   "pez limón",
+   "seriola",
+   "medregal",
+   "lecha",
+   "hamachi",
+   "amberjack"
+  ],
+  "summary": "Pescado pelágico de carne blanca rosada, firme y algo grasa; excelente en crudo tratado, a la plancha y en guisos.",
+  "what": "El pez limón o seriola es un gran pescado de paso del Mediterráneo y del Atlántico, de carne blanca rosada, firme y con un punto de grasa. Es muy apreciado en Baleares y Canarias, donde aparece a finales de verano y en otoño. En Japón, su pariente cercano (hamachi) es uno de los pescados más usados en crudo.\n\nSe despieza en lomos como los pescados grandes y se usa en tartares, a la plancha o en guisos. Para crudo, siempre congelado antes o ya tratado.",
+  "method": [
+   "Despieza en lomos y retira la piel y la parte oscura.",
+   "Crudo: lomo congelado antes, cortado en láminas o dados con aliño cítrico.",
+   "Plancha: rodajas o tacos gruesos, marcados por fuera y jugosos dentro.",
+   "Guiso: tacos añadidos al final.",
+   "Cabeza y espinas, para caldo."
+  ],
+  "ratios": [
+   {
+    "use": "Punto en plancha",
+    "ratio": "50 °C en el centro",
+    "note": "Congelado antes si queda por debajo de 60 °C."
+   },
+   {
+    "use": "Ración en crudo",
+    "ratio": "100–120 g",
+    "note": "Entrante."
+   },
+   {
+    "use": "Ración en plancha",
+    "ratio": "180 g",
+    "note": ""
+   },
+   {
+    "use": "Taco para plancha",
+    "ratio": "3 cm",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "sushi-y-sashimi",
+    "name": "Sashimi",
+    "note": "Hamachi."
+   },
+   {
+    "id": "ceviche-y-crudos",
+    "name": "Crudos",
+    "note": "Cítricos."
+   },
+   {
+    "id": "despiece-de-pescados-grandes",
+    "name": "Despiece",
+    "note": "En lomos."
+   },
+   {
+    "id": "producto-de-la-isla",
+    "name": "Producto de la isla",
+    "note": "Temporada."
+   }
+  ],
+  "keys": [
+   "Pescado que queda por debajo de 60 °C en el centro: congelado antes (-20 °C al menos 24 horas en toda la pieza) o ya tratado, por el anisakis.",
+   "Retirar la parte oscura.",
+   "Plancha breve.",
+   "Temporada de finales de verano y otoño.",
+   "Aliños cítricos."
+  ],
+  "errors": [
+   {
+    "p": "Seco",
+    "fix": "Pasado. Saca a 50 °C."
+   },
+   {
+    "p": "Sabor fuerte",
+    "fix": "Parte oscura. Retírala."
+   },
+   {
+    "p": "Láminas rotas",
+    "fix": "Cuchillo sin filo. Afila y corta en una pasada."
+   }
+  ],
+  "history": "El pez limón es un pescado de temporada muy apreciado en Baleares y Canarias; en Japón, su pariente es protagonista del sashimi.",
+  "uses": [
+   "Crudos y tartares",
+   "Plancha",
+   "Guisos",
+   "Escabeches"
+  ],
+  "keep": "Lomos, 2 días a 0–2 °C; congela bien.",
+  "pro": "Despieza al recibir; colas a tartar y lomos a plancha.",
+  "related": [
+   "sushi-y-sashimi",
+   "ceviche-y-crudos",
+   "despiece-de-pescados-grandes",
+   "producto-de-la-isla",
+   "citricos",
+   "atun-rojo-y-bonito"
+  ]
+ },
+ {
+  "id": "presa-secreto-y-pluma",
+  "name": "Presa, secreto, pluma y lagarto",
+  "name_en": "Iberian pork cuts",
+  "cat": "producto",
+  "group": "Carne",
+  "aka": [
+   "presa ibérica",
+   "secreto ibérico",
+   "pluma ibérica",
+   "lagarto ibérico",
+   "abanico",
+   "cortes del ibérico"
+  ],
+  "summary": "Los cortes sueltos del cerdo ibérico, muy infiltrados de grasa, que se hacen a la brasa o plancha y se sirven jugosos.",
+  "what": "Del cerdo [[cerdo-iberico|ibérico]] salen cortes pequeños muy apreciados por su grasa infiltrada: la presa, un músculo junto a la paletilla, grueso, para cortar en tiras tras la brasa; el secreto, una lámina fina entre el tocino y el lomo, muy grasa, que se hace en un momento; la pluma, triangular, del final del lomo, jugosa y tierna; el lagarto, una tira fina junto al lomo; y el abanico, plano y fibroso, de la parte externa de las costillas.\n\nEl ibérico de buena procedencia se puede servir jugoso, con el centro rosado; en general, con cerdo se recomienda al menos 63 °C en el centro con reposo.",
+  "method": [
+   "Saca las piezas del frío 20–30 minutos antes.",
+   "Sala justo antes de la brasa o la plancha, muy caliente.",
+   "Secreto y lagarto: 1–2 minutos por lado, que la grasa se tueste.",
+   "Presa y pluma: marca por todos lados y termina a fuego medio o en horno, con sonda.",
+   "Deja reposar 3–5 minutos y corta en contra de la fibra."
+  ],
+  "ratios": [
+   {
+    "use": "Presa y pluma jugosas",
+    "ratio": "60–63 °C en el centro",
+    "note": "Con reposo."
+   },
+   {
+    "use": "Secreto",
+    "ratio": "1–2 minutos por lado",
+    "note": "Lámina fina."
+   },
+   {
+    "use": "Ración",
+    "ratio": "180–220 g",
+    "note": ""
+   },
+   {
+    "use": "Reposo",
+    "ratio": "3–5 minutos",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "cerdo-iberico",
+    "name": "Cerdo ibérico",
+    "note": "La raza."
+   },
+   {
+    "id": "fuego-y-brasa",
+    "name": "Brasa",
+    "note": "La cocción preferida."
+   },
+   {
+    "id": "sellado-y-reposo",
+    "name": "Sellado y reposo",
+    "note": "Punto."
+   },
+   {
+    "id": "chimichurri",
+    "name": "Salsas verdes",
+    "note": "Para acompañar."
+   }
+  ],
+  "keys": [
+   "Fuego fuerte y tiempo corto.",
+   "Reposo antes de cortar.",
+   "Cortar en contra de la fibra.",
+   "Sonda en las piezas gruesas.",
+   "Sal al final o justo antes."
+  ],
+  "errors": [
+   {
+    "p": "Presa seca",
+    "fix": "Pasada. Saca a 60–63 °C."
+   },
+   {
+    "p": "Secreto gomoso",
+    "fix": "Grasa sin tostar. Más fuego."
+   },
+   {
+    "p": "Carne correosa al morder",
+    "fix": "Cortada a favor de la fibra. Corta en contra."
+   }
+  ],
+  "history": "Estos cortes eran piezas de carnicero o de matanza; desde los años noventa se popularizaron en restaurantes de toda España.",
+  "uses": [
+   "Brasa y plancha",
+   "Tapas",
+   "Platos principales"
+  ],
+  "keep": "3–4 días a 0–4 °C; al vacío, algo más.",
+  "pro": "Porciona en pesos iguales; sonda en cada servicio.",
+  "related": [
+   "cerdo-iberico",
+   "fuego-y-brasa",
+   "sellado-y-reposo",
+   "chimichurri",
+   "punto-de-la-carne",
+   "pulir-y-limpiar-carnes"
+  ]
+ },
+ {
+  "id": "entrana-y-cortes-de-fibra-larga",
+  "name": "Entraña, falda y cortes de fibra larga",
+  "name_en": "Skirt, flank and long-fibred cuts",
+  "cat": "producto",
+  "group": "Carne",
+  "aka": [
+   "entraña",
+   "falda",
+   "arrachera",
+   "vacío",
+   "babilla de falda",
+   "skirt steak",
+   "flank"
+  ],
+  "summary": "Cortes planos de vacuno con fibra larga y marcada, muy sabrosos: brasa rápida y fuerte, punto jugoso y corte fino en contra de la fibra.",
+  "what": "La entraña (parte del diafragma), la falda y el vacío son cortes planos de la parte baja del vacuno, con fibras largas y gruesas bien visibles. Son muy sabrosos y, bien tratados, tiernos: se cocinan rápido a fuego muy fuerte, se dejan jugosos y se cortan en tiras finas en contra de la fibra, que acorta las fibras al morder. Son clásicos de la parrilla argentina y de la arrachera mexicana.\n\nLa entraña lleva una membrana exterior que se retira, salvo si se busca su costra. Ver [[cortes-de-vacuno]].",
+  "method": [
+   "Retira la membrana exterior y la grasa sobrante.",
+   "Marina si quieres (cítrico, ajo, especias) 1–4 horas en frío.",
+   "Seca y sala; cocina a fuego muy fuerte 2–4 minutos por lado.",
+   "Deja reposar 5 minutos.",
+   "Corta en tiras finas en contra de la fibra, en diagonal."
+  ],
+  "ratios": [
+   {
+    "use": "Punto jugoso",
+    "ratio": "54–57 °C en el centro",
+    "note": "Más hecho, más duro."
+   },
+   {
+    "use": "Brasa",
+    "ratio": "2–4 minutos por lado",
+    "note": "Fuego muy fuerte."
+   },
+   {
+    "use": "Ración",
+    "ratio": "200–250 g",
+    "note": ""
+   },
+   {
+    "use": "Marinado",
+    "ratio": "1–4 horas",
+    "note": "En frío."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cortes-de-vacuno",
+    "name": "Cortes de vacuno",
+    "note": "El mapa."
+   },
+   {
+    "id": "chimichurri",
+    "name": "Chimichurri",
+    "note": "Para servir."
+   },
+   {
+    "id": "tacos-y-antojitos",
+    "name": "Tacos",
+    "note": "Arrachera."
+   },
+   {
+    "id": "fuego-y-brasa",
+    "name": "Brasa",
+    "note": "La cocción."
+   }
+  ],
+  "keys": [
+   "Fuego muy fuerte, tiempo corto.",
+   "Punto jugoso.",
+   "Reposo.",
+   "Cortar fino en contra de la fibra.",
+   "Quitar la membrana."
+  ],
+  "errors": [
+   {
+    "p": "Dura",
+    "fix": "Cortada a favor de la fibra o pasada. Corta en contra y saca antes."
+   },
+   {
+    "p": "Sin costra",
+    "fix": "Fuego flojo o carne húmeda. Seca y sube el fuego."
+   },
+   {
+    "p": "Encoge mucho",
+    "fix": "Membrana sin quitar. Retírala."
+   }
+  ],
+  "history": "La entraña y el vacío son cortes muy populares en la parrilla argentina y uruguaya; la arrachera, en el norte de México.",
+  "uses": [
+   "Brasa y plancha",
+   "Tacos",
+   "Ensaladas templadas",
+   "Bocadillos"
+  ],
+  "keep": "3–4 días a 0–4 °C; al vacío, algo más.",
+  "pro": "Limpia y porciona al recibir; corta al pase.",
+  "related": [
+   "cortes-de-vacuno",
+   "chimichurri",
+   "tacos-y-antojitos",
+   "fuego-y-brasa",
+   "marinada",
+   "sellado-y-reposo"
+  ]
+ },
+ {
+  "id": "cortes-de-guiso-de-vacuno",
+  "name": "Cortes de guiso de vacuno",
+  "name_en": "Beef braising cuts",
+  "cat": "producto",
+  "group": "Carne",
+  "aka": [
+   "morcillo",
+   "aguja",
+   "llana",
+   "espaldilla",
+   "pecho",
+   "babilla",
+   "carne para guisar",
+   "aguja de ternera"
+  ],
+  "summary": "Las piezas con colágeno y fibra del vacuno (morcillo, aguja, pecho, llana, espaldilla) que piden cocción larga y dan guisos melosos.",
+  "what": "Los cortes de guiso son los músculos que trabajan mucho: el morcillo (pierna, muy gelatinoso, el del [[ossobuco]]), la aguja (cuello y principio del lomo, con vetas de grasa), el pecho (graso y fibroso), la llana y la espaldilla (de la paletilla). Tienen mucho colágeno, que con cocción larga y húmeda se convierte en gelatina y deja la carne melosa y la salsa ligada.\n\nTambién son los mejores para picar. Ver [[guisos-largos]] y [[colageno-y-gelatina]].",
+  "method": [
+   "Corta en trozos grandes y regulares, de 4–5 cm, sin quitar todo el tejido conectivo.",
+   "Seca y dora en tandas para que no se cuezan.",
+   "Moja hasta casi cubrir y guisa a fuego muy suave o en horno a 150–160 °C.",
+   "Comprueba con un tenedor: debe entrar sin resistencia.",
+   "Deja reposar en su salsa; mejor de un día para otro."
+  ],
+  "ratios": [
+   {
+    "use": "Morcillo y aguja",
+    "ratio": "2,5–3 horas a fuego suave",
+    "note": ""
+   },
+   {
+    "use": "Horno de guiso",
+    "ratio": "150–160 °C, tapado",
+    "note": ""
+   },
+   {
+    "use": "Ración",
+    "ratio": "250 g en crudo",
+    "note": "Pierde peso."
+   },
+   {
+    "use": "Trozo",
+    "ratio": "4–5 cm",
+    "note": "Regular."
+   }
+  ],
+  "variants": [
+   {
+    "id": "guisos-largos",
+    "name": "Guisos largos",
+    "note": "La técnica."
+   },
+   {
+    "id": "braseado",
+    "name": "Braseado",
+    "note": "Pieza entera."
+   },
+   {
+    "id": "ossobuco",
+    "name": "Ossobuco",
+    "note": "Morcillo en rodajas."
+   },
+   {
+    "id": "picar-carne-y-hamburguesas",
+    "name": "Para picar",
+    "note": "Aguja y pecho."
+   }
+  ],
+  "keys": [
+   "Colágeno: cocción larga y húmeda.",
+   "Dorar en tandas.",
+   "Fuego muy suave.",
+   "Reposar en su salsa.",
+   "Trozos regulares."
+  ],
+  "errors": [
+   {
+    "p": "Carne dura",
+    "fix": "Poco tiempo. Alarga."
+   },
+   {
+    "p": "Carne seca y deshilachada",
+    "fix": "Hervor fuerte. Fuego suave."
+   },
+   {
+    "p": "Salsa sin cuerpo",
+    "fix": "Cortes magros. Usa morcillo o aguja."
+   }
+  ],
+  "history": "Estos cortes han sido la base de los guisos de carne de toda la cocina popular europea.",
+  "uses": [
+   "Guisos y estofados",
+   "Carne picada",
+   "Caldos",
+   "Rellenos"
+  ],
+  "keep": "Crudo, 3–4 días a 0–4 °C; guisado, 4 días en frío.",
+  "pro": "Guisa en tanda grande y porciona en frío.",
+  "related": [
+   "guisos-largos",
+   "braseado",
+   "ossobuco",
+   "picar-carne-y-hamburguesas",
+   "colageno-y-gelatina",
+   "vaca-vieja-y-buey"
+  ]
+ },
+ {
+  "id": "caza-de-pelo",
+  "name": "Caza de pelo",
+  "name_en": "Furred game",
+  "cat": "producto",
+  "group": "Carne",
+  "aka": [
+   "jabalí",
+   "ciervo",
+   "venado",
+   "corzo",
+   "gamo",
+   "liebre",
+   "carne de caza"
+  ],
+  "summary": "Jabalí, ciervo, corzo y liebre: carnes magras y de sabor intenso, para asados al punto en las piezas nobles y guisos en las demás.",
+  "what": "La caza mayor (ciervo, corzo, gamo, jabalí) y menor de pelo (liebre, conejo de monte) da carnes muy magras, oscuras y sabrosas. Los lomos y solomillos de ciervo y corzo se asan al punto, rosados; las piernas, paletillas y cuellos se guisan o se marinan. El jabalí, por su riesgo de triquinosis, se consume solo con análisis veterinario y siempre bien hecho.\n\nToda la caza debe proceder de canales controladas sanitariamente. Ver [[guisos-de-caza]] y [[fondo-de-caza]].",
+  "method": [
+   "Compra caza con control sanitario; el jabalí, con análisis de triquina.",
+   "Limpia bien las membranas y la grasa, que da sabor fuerte.",
+   "Piezas nobles (lomo de ciervo o corzo): marca y deja rosado, con reposo.",
+   "Piezas de guiso: marina en vino y verduras 12–24 horas en frío y guisa largo.",
+   "Jabalí y liebre: siempre bien hechos."
+  ],
+  "ratios": [
+   {
+    "use": "Lomo de ciervo o corzo",
+    "ratio": "54–56 °C en el centro",
+    "note": "Rosado, con reposo."
+   },
+   {
+    "use": "Jabalí",
+    "ratio": "71 °C o más en el centro",
+    "note": "Siempre."
+   },
+   {
+    "use": "Marinado de guiso",
+    "ratio": "12–24 horas en frío",
+    "note": ""
+   },
+   {
+    "use": "Ración",
+    "ratio": "180 g de lomo o 250 g de guiso",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "guisos-de-caza",
+    "name": "Guisos de caza",
+    "note": "Técnica."
+   },
+   {
+    "id": "fondo-de-caza",
+    "name": "Fondo de caza",
+    "note": "Con huesos."
+   },
+   {
+    "id": "caza-de-pluma",
+    "name": "Caza de pluma",
+    "note": "Aves."
+   },
+   {
+    "id": "frutos-rojos-y-fruta-de-hueso",
+    "name": "Frutos rojos",
+    "note": "Para salsas."
+   }
+  ],
+  "keys": [
+   "Solo caza con control sanitario.",
+   "Jabalí: análisis de triquina y siempre bien hecho.",
+   "Carne magra: no pasarla.",
+   "Quitar membranas y grasa.",
+   "Marinar las piezas de guiso."
+  ],
+  "errors": [
+   {
+    "p": "Lomo seco",
+    "fix": "Pasado. Saca rosado y reposa."
+   },
+   {
+    "p": "Sabor muy fuerte",
+    "fix": "Grasa y membranas. Límpialas."
+   },
+   {
+    "p": "Guiso duro",
+    "fix": "Poco tiempo. Alarga."
+   }
+  ],
+  "history": "La caza es parte de la cocina de otoño e invierno en el interior de España, con temporadas reguladas.",
+  "uses": [
+   "Asados",
+   "Guisos",
+   "Patés y terrinas",
+   "Embutidos"
+  ],
+  "keep": "3–4 días a 0–4 °C; congela bien.",
+  "pro": "Pide documentación sanitaria y anótala; etiqueta cada pieza.",
+  "related": [
+   "guisos-de-caza",
+   "fondo-de-caza",
+   "caza-de-pluma",
+   "frutos-rojos-y-fruta-de-hueso",
+   "marinada",
+   "prensados-y-terrinas"
+  ]
+ },
+ {
+  "id": "quesos-de-vaca-del-norte",
+  "name": "Quesos de vaca del norte",
+  "name_en": "Cow's milk cheeses of northern Spain",
+  "cat": "producto",
+  "group": "Lácteos",
+  "aka": [
+   "tetilla",
+   "San Simón",
+   "Arzúa-Ulloa",
+   "afuega'l pitu",
+   "queso de Cantabria",
+   "quesos gallegos"
+  ],
+  "summary": "Quesos de leche de vaca de Galicia, Asturias y Cantabria: tiernos y cremosos (tetilla, Arzúa), ahumados (San Simón) o de pasta láctica (afuega'l pitu).",
+  "what": "En la cornisa cantábrica la leche es de vaca y los quesos lo reflejan: la tetilla y el Arzúa-Ulloa gallegos, de pasta blanda, mantecosa y suave, que funden muy bien; el San Simón da Costa, con forma de bala y ahumado con abedul; el queso de nata de Cantabria, cremoso; y el afuega'l pitu asturiano, de pasta láctica, a veces con pimentón. Los quesos azules de la zona tienen ficha propia en [[quesos-azules]].\n\nSe sirven a temperatura ambiente y son excelentes fundidos.",
+  "method": [
+   "Saca el queso del frío 30–60 minutos antes.",
+   "Los tiernos, en cuñas gruesas; los ahumados, en láminas.",
+   "Para fundir, usa tetilla o Arzúa: funden sin separar la grasa.",
+   "Combina con membrillo, miel o nueces.",
+   "Guarda envuelto en papel encerado."
+  ],
+  "ratios": [
+   {
+    "use": "Servicio",
+    "ratio": "16–18 °C",
+    "note": "Atemperado."
+   },
+   {
+    "use": "Ración en tabla",
+    "ratio": "50–60 g",
+    "note": ""
+   },
+   {
+    "use": "Fundido",
+    "ratio": "Fuego suave",
+    "note": "Sin hervir."
+   },
+   {
+    "use": "Maduración tetilla",
+    "ratio": "1 semana o más",
+    "note": "Orientativo."
+   }
+  ],
+  "variants": [
+   {
+    "id": "quesos-curados-de-oveja",
+    "name": "Quesos de oveja",
+    "note": "Los de la Meseta."
+   },
+   {
+    "id": "quesos-azules",
+    "name": "Azules del norte",
+    "note": "Cabrales y otros."
+   },
+   {
+    "id": "salsas-de-queso",
+    "name": "Salsas de queso",
+    "note": "Fundidos."
+   },
+   {
+    "id": "quesos-en-cocina",
+    "name": "Queso en cocina",
+    "note": "Usos."
+   }
+  ],
+  "keys": [
+   "Atemperar antes de servir.",
+   "Tiernos: funden muy bien.",
+   "Ahumados: láminas finas.",
+   "Envolver en papel encerado.",
+   "Alérgeno: leche."
+  ],
+  "errors": [
+   {
+    "p": "Queso sudado",
+    "fix": "Envuelto en film. Papel encerado."
+   },
+   {
+    "p": "Fundido grasiento",
+    "fix": "Fuego fuerte. Suave."
+   },
+   {
+    "p": "Sabor apagado",
+    "fix": "Servido frío. Atempera."
+   }
+  ],
+  "history": "Varios de estos quesos tienen denominación de origen y reflejan la tradición ganadera de vacuno del norte peninsular.",
+  "uses": [
+   "Tablas",
+   "Fundidos y salsas",
+   "Postres con membrillo",
+   "Bocadillos"
+  ],
+  "keep": "Tiernos, 2–3 semanas en frío; empezados, 1 semana.",
+  "pro": "Atempera lo de cada servicio; fecha al abrir.",
+  "related": [
+   "quesos-curados-de-oveja",
+   "quesos-azules",
+   "salsas-de-queso",
+   "quesos-en-cocina",
+   "granada-y-membrillo",
+   "leche-nata-y-mantequilla"
+  ]
+ },
+ {
+  "id": "quesos-de-cabra",
+  "name": "Quesos de cabra",
+  "name_en": "Goat's milk cheeses",
+  "cat": "producto",
+  "group": "Lácteos",
+  "aka": [
+   "queso de cabra",
+   "rulo de cabra",
+   "queso de Murcia al vino",
+   "payoyo",
+   "queso de cabra curado",
+   "chèvre"
+  ],
+  "summary": "De frescos y lácticos a curados y firmes: rulos para gratinar, Murcia al vino, payoyo y quesos de cabra curados del sur.",
+  "what": "La leche de cabra da quesos de sabor más ácido y animal que los de vaca. Los frescos y los rulos de pasta láctica, cremosos, se gratinan o se untan; el queso de Murcia al vino tiene la corteza bañada en vino tinto; el payoyo de Cádiz y otros del sur son curados en aceite o al natural; los canarios tienen ficha en [[quesos-de-las-islas]].\n\nEl rulo de cabra gratinado es un clásico de ensaladas y tostas. Los de leche cruda maduran al menos 60 días.",
+  "method": [
+   "Saca del frío 30 minutos antes de servir.",
+   "Rulos: corta con hilo o cuchillo caliente en rodajas.",
+   "Gratinado: rodajas sobre pan o en bandeja, a grill fuerte 2–3 minutos.",
+   "Curados: cuñas finas, con aceite o miel.",
+   "Guarda bien envuelto: su olor pasa a otros alimentos."
+  ],
+  "ratios": [
+   {
+    "use": "Gratinado",
+    "ratio": "Grill fuerte, 2–3 minutos",
+    "note": ""
+   },
+   {
+    "use": "Rodaja de rulo",
+    "ratio": "1,5 cm",
+    "note": ""
+   },
+   {
+    "use": "Ración en tabla",
+    "ratio": "40–60 g",
+    "note": ""
+   },
+   {
+    "use": "Servicio",
+    "ratio": "16–18 °C",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "untables-de-queso-fresco",
+    "name": "Untables",
+    "note": "Con cabra fresco."
+   },
+   {
+    "id": "quesos-de-las-islas",
+    "name": "Quesos canarios",
+    "note": "Majorero y otros."
+   },
+   {
+    "id": "gratinado",
+    "name": "Gratinado",
+    "note": "Rulo."
+   },
+   {
+    "id": "miel-y-azucares",
+    "name": "Con miel",
+    "note": "Clásico."
+   }
+  ],
+  "keys": [
+   "Sabor ácido y animal.",
+   "Rulo: grill corto y fuerte.",
+   "Cortar con hilo o cuchillo caliente.",
+   "Bien envuelto en frío.",
+   "Alérgeno: leche."
+  ],
+  "errors": [
+   {
+    "p": "Gratinado derramado",
+    "fix": "Grill largo. Corto y fuerte."
+   },
+   {
+    "p": "Rodajas rotas",
+    "fix": "Cuchillo frío. Hilo o cuchillo caliente."
+   },
+   {
+    "p": "Olor en la cámara",
+    "fix": "Mal envuelto. Recipiente cerrado."
+   }
+  ],
+  "history": "España tiene una gran cabaña caprina en el sur, el sureste y Canarias, con quesos de cabra muy variados.",
+  "uses": [
+   "Ensaladas y tostas",
+   "Tablas",
+   "Postres con miel",
+   "Rellenos"
+  ],
+  "keep": "Frescos, 1 semana en frío; curados, semanas.",
+  "pro": "Rodajas cortadas y en frío; gratina al pedido.",
+  "related": [
+   "untables-de-queso-fresco",
+   "quesos-de-las-islas",
+   "gratinado",
+   "miel-y-azucares",
+   "quesos-en-cocina",
+   "ensaladas-templadas"
+  ]
+ },
+ {
+  "id": "mostazas",
+  "name": "Mostazas",
+  "name_en": "Mustards",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "mostaza",
+   "mostaza de Dijon",
+   "mostaza antigua",
+   "mostaza en grano",
+   "semillas de mostaza",
+   "mostaza inglesa"
+  ],
+  "summary": "Semillas y pastas de mostaza: picantes, ácidas, en grano o finas; para vinagretas, salsas, marinadas y para emulsionar.",
+  "what": "La mostaza se hace con semillas (blancas, más suaves; negras y marrones, más picantes) molidas y mezcladas con líquido: vino, vinagre, agua o mosto. El picor aparece al mojar la semilla molida y se pierde con el calor. La de Dijon es fina y picante; la antigua lleva el grano entero; la inglesa en polvo, muy fuerte; la alemana y la americana, más suaves y dulces.\n\nAyuda a emulsionar [[vinagreta|vinagretas]] y [[mayonesa|mayonesas]]. Es uno de los catorce alérgenos que deben declararse.",
+  "method": [
+   "Para vinagretas, bate la mostaza con el ácido antes de añadir el aceite.",
+   "En salsas calientes, añádela al final y sin hervir para conservar el picor.",
+   "Semillas enteras: tuéstalas en aceite hasta que salten (cocina india) o encúrtelas.",
+   "Mostaza casera: semilla molida con vinagre, agua, sal y algo de azúcar, reposada 1–2 días.",
+   "Úsala para pincelar carnes antes del empanado o la costra."
+  ],
+  "ratios": [
+   {
+    "use": "En vinagreta",
+    "ratio": "1 cucharadita por 100 ml",
+    "note": "Emulsiona."
+   },
+   {
+    "use": "Mostaza casera",
+    "ratio": "Semilla y líquido 1:1",
+    "note": "Reposo 1–2 días."
+   },
+   {
+    "use": "En salsa caliente",
+    "ratio": "Al final, sin hervir",
+    "note": ""
+   },
+   {
+    "use": "Abierta",
+    "ratio": "Meses en frío",
+    "note": "Pierde picor."
+   }
+  ],
+  "variants": [
+   {
+    "id": "salsa-de-pimienta-y-mostaza",
+    "name": "Salsa de mostaza",
+    "note": "Para carnes."
+   },
+   {
+    "id": "vinagreta",
+    "name": "Vinagreta",
+    "note": "Emulsión."
+   },
+   {
+    "id": "picante-y-pungencia",
+    "name": "Picante",
+    "note": "Cómo pica la mostaza."
+   },
+   {
+    "id": "pickles-de-servicio",
+    "name": "Encurtidos",
+    "note": "Con semillas."
+   }
+  ],
+  "keys": [
+   "El calor le quita el picor.",
+   "Ayuda a emulsionar.",
+   "Grano entero: textura.",
+   "Alérgeno: mostaza.",
+   "En frío tras abrir."
+  ],
+  "errors": [
+   {
+    "p": "Salsa amarga",
+    "fix": "Mostaza hervida. Al final."
+   },
+   {
+    "p": "Vinagreta cortada",
+    "fix": "Poca mostaza. Añade y bate."
+   },
+   {
+    "p": "Mostaza sin picor",
+    "fix": "Vieja o calentada. Fresca y al final."
+   }
+  ],
+  "history": "La mostaza se usa como condimento desde la Antigüedad; Dijon se hizo famosa por ella en la Edad Media.",
+  "uses": [
+   "Vinagretas y mayonesas",
+   "Salsas",
+   "Marinadas",
+   "Costras"
+  ],
+  "keep": "Abierta, meses en frío; semillas, un año en seco.",
+  "pro": "Declara el alérgeno en cada elaboración que la lleve.",
+  "related": [
+   "salsa-de-pimienta-y-mostaza",
+   "vinagreta",
+   "picante-y-pungencia",
+   "pickles-de-servicio",
+   "mayonesa",
+   "salsas-de-mesa-caseras"
+  ]
+ },
+ {
+  "id": "fideos-asiaticos",
+  "name": "Fideos asiáticos",
+  "name_en": "Asian noodles",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "soba",
+   "udon",
+   "fideos de arroz",
+   "fideos de huevo",
+   "fideos de ramen",
+   "fideos de cristal",
+   "noodles"
+  ],
+  "summary": "Fideos de trigo, arroz, alforfón o almidón: soba, udon, ramen, de arroz y de cristal; cada uno con su cocción y su uso.",
+  "what": "Los fideos asiáticos son muy distintos entre sí. Los de trigo: udon (gruesos y blandos), ramen (con agua alcalina, firmes y amarillos) y los de huevo chinos para saltear. Los soba japoneses llevan alforfón, a menudo con trigo. Los de arroz (planos o finos) se remojan o se cuecen poco; los de cristal, de almidón de judía mungo o boniato, quedan transparentes y elásticos.\n\nEl soba de alforfón puro no lleva gluten, pero muchos sí: revisa la etiqueta.",
+  "method": [
+   "Lee el envase: los tiempos varían mucho según tipo y grosor.",
+   "Trigo y soba: en agua abundante hirviendo, sin sal en el caso del soba.",
+   "Soba para servir frío: enjuaga en agua fría frotando para quitar el almidón.",
+   "Arroz: remojo en agua tibia o cocción corta, según grosor; terminan en el wok.",
+   "Cristal: remojo en agua caliente 5–10 minutos."
+  ],
+  "ratios": [
+   {
+    "use": "Ramen fresco",
+    "ratio": "1–2 minutos",
+    "note": ""
+   },
+   {
+    "use": "Udon",
+    "ratio": "8–12 minutos secos; 2–3 frescos",
+    "note": ""
+   },
+   {
+    "use": "Soba",
+    "ratio": "4–6 minutos",
+    "note": "Y agua fría."
+   },
+   {
+    "use": "Ración",
+    "ratio": "80–100 g en seco",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "ramen",
+    "name": "Ramen",
+    "note": "La sopa."
+   },
+   {
+    "id": "pad-thai",
+    "name": "Pad thai",
+    "note": "Fideos de arroz."
+   },
+   {
+    "id": "pho",
+    "name": "Pho",
+    "note": "Fideos de arroz."
+   },
+   {
+    "id": "coccion-de-pasta-y-noquis",
+    "name": "Cocción de pasta",
+    "note": "Principios."
+   }
+  ],
+  "keys": [
+   "Cada tipo, su tiempo.",
+   "Soba frío: enjuagar frotando.",
+   "Arroz: remojo y wok.",
+   "Al dente si terminan en caldo.",
+   "Alérgenos: gluten, huevo o soja según tipo."
+  ],
+  "errors": [
+   {
+    "p": "Fideos pegados",
+    "fix": "Poca agua o sin enjuagar. Más agua y enjuaga."
+   },
+   {
+    "p": "Fideos pasados en sopa",
+    "fix": "Cocidos del todo. Al dente."
+   },
+   {
+    "p": "Fideos de arroz rotos",
+    "fix": "Remojo largo. Ajusta."
+   }
+  ],
+  "history": "Los fideos son básicos en China, Japón, Corea y el sudeste asiático desde hace siglos, con cientos de formas.",
+  "uses": [
+   "Sopas",
+   "Salteados",
+   "Ensaladas frías",
+   "Rollitos"
+  ],
+  "keep": "Secos, meses; frescos, según envase en frío.",
+  "pro": "Cuece al pedido; ten agua hirviendo siempre en el servicio.",
+  "related": [
+   "ramen",
+   "pad-thai",
+   "pho",
+   "coccion-de-pasta-y-noquis",
+   "salteado-y-wok",
+   "pasta-seca"
+  ]
+ },
+ {
+  "id": "sidra-y-cerveza-en-cocina",
+  "name": "Sidra y cerveza en cocina",
+  "name_en": "Cider and beer in cooking",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "sidra",
+   "cerveza",
+   "chorizo a la sidra",
+   "merluza a la sidra",
+   "carbonnade",
+   "rebozado con cerveza"
+  ],
+  "summary": "Bebidas fermentadas que aportan acidez, amargor y gas: sidra para pescados, chorizo y salsas; cerveza para guisos, masas y rebozados.",
+  "what": "La sidra natural asturiana y vasca es ácida y poco dulce: da salsas ligeras a pescados y almejas, guisa el chorizo y acompaña a la manzana en postres. La cerveza aporta amargor y notas tostadas: las rubias para rebozados (el gas aligera la masa) y panes rápidos; las tostadas y negras para guisos de carne como la carbonnade flamenca.\n\nAl reducir, el amargor de la cerveza se concentra: conviene equilibrarlo con dulce. El alcohol no desaparece del todo al cocinar.",
+  "method": [
+   "Sidra en salsa: reduce a la mitad con chalota y termina con mantequilla o la gelatina del pescado.",
+   "Chorizo a la sidra: cuece el chorizo en sidra a fuego suave 15–20 minutos.",
+   "Cerveza en guiso: moja tras dorar la carne y equilibra con cebolla caramelizada o un poco de azúcar.",
+   "Rebozado: usa cerveza muy fría en lugar de agua.",
+   "No reduzcas demasiado la cerveza: amarga."
+  ],
+  "ratios": [
+   {
+    "use": "Rebozado",
+    "ratio": "Harina y cerveza fría 1:1,2",
+    "note": "Al momento."
+   },
+   {
+    "use": "Salsa de sidra",
+    "ratio": "Reducir a la mitad",
+    "note": ""
+   },
+   {
+    "use": "Guiso con cerveza",
+    "ratio": "330 ml por kg de carne",
+    "note": "Con caldo."
+   },
+   {
+    "use": "Chorizo a la sidra",
+    "ratio": "15–20 minutos",
+    "note": "Fuego suave."
+   }
+  ],
+  "variants": [
+   {
+    "id": "rebozados-y-empanados",
+    "name": "Rebozados",
+    "note": "Con cerveza."
+   },
+   {
+    "id": "vinos-y-licores",
+    "name": "Vinos",
+    "note": "Otros alcoholes en cocina."
+   },
+   {
+    "id": "estofados-al-vino",
+    "name": "Estofados",
+    "note": "Técnica parecida."
+   },
+   {
+    "id": "manzana-y-pera",
+    "name": "Manzana",
+    "note": "Con sidra."
+   }
+  ],
+  "keys": [
+   "Sidra: acidez ligera.",
+   "Cerveza: amargor que se concentra.",
+   "Cerveza fría para rebozar.",
+   "El alcohol no desaparece del todo.",
+   "La cerveza suele llevar gluten."
+  ],
+  "errors": [
+   {
+    "p": "Salsa amarga",
+    "fix": "Cerveza muy reducida. Equilibra con dulce."
+   },
+   {
+    "p": "Rebozado pesado",
+    "fix": "Cerveza caliente o sin gas. Muy fría."
+   },
+   {
+    "p": "Salsa de sidra agria",
+    "fix": "Sin grasa al final. Monta con mantequilla."
+   }
+  ],
+  "history": "La sidra es la bebida tradicional de Asturias y el País Vasco; la cerveza se usa en la cocina de Bélgica, Alemania y Gran Bretaña desde hace siglos.",
+  "uses": [
+   "Salsas de pescado",
+   "Guisos",
+   "Rebozados",
+   "Panes rápidos"
+  ],
+  "keep": "Abiertas, 2–3 días en frío para cocinar.",
+  "pro": "Declara gluten si usas cerveza; menús sin alcohol, sustituye por caldo y vinagre.",
+  "related": [
+   "rebozados-y-empanados",
+   "vinos-y-licores",
+   "estofados-al-vino",
+   "manzana-y-pera",
+   "chorizo-y-embutidos-curados",
+   "panes-rapidos-sin-levadura"
+  ]
+ },
+ {
+  "id": "ajos-tiernos-y-cebolletas",
+  "name": "Ajos tiernos y cebolletas",
+  "name_en": "Green garlic and spring onions",
+  "cat": "producto",
+  "group": "Huerta",
+  "aka": [
+   "ajos tiernos",
+   "ajetes",
+   "cebolleta",
+   "cebolla tierna",
+   "cebollino chino",
+   "revuelto de ajetes"
+  ],
+  "summary": "Los ajos y cebollas recogidos jóvenes, de sabor suave y fresco; de invierno a primavera, para revueltos, tortillas, brasa y crudos.",
+  "what": "Los ajos tiernos (ajetes) son plantas de ajo arrancadas antes de formar la cabeza: tallo verde y bulbo pequeño, sabor suave. La cebolleta o cebolla tierna es la cebolla joven con su tallo verde, más dulce y jugosa que la cebolla seca. Ambos son de finales de invierno y primavera.\n\nSe usan en revueltos, tortillas y arroces, a la brasa o a la plancha enteros, o crudos en ensaladas. Su parte verde se aprovecha en salsas y aceites. Ver [[cebolla-y-ajo]].",
+  "method": [
+   "Corta las raíces y la parte más dura y seca del verde.",
+   "Lava entre las capas, donde queda tierra.",
+   "Ajetes: en trozos, saltea 2–3 minutos antes de añadir huevo o arroz.",
+   "Cebolletas: a la brasa o a la plancha enteras, o en juliana cruda.",
+   "El verde, picado fino, como hierba al final."
+  ],
+  "ratios": [
+   {
+    "use": "Ajetes salteados",
+    "ratio": "2–3 minutos",
+    "note": "Sin dorar fuerte."
+   },
+   {
+    "use": "Cebolleta a la brasa",
+    "ratio": "5–8 minutos",
+    "note": "Tierna dentro."
+   },
+   {
+    "use": "Revuelto",
+    "ratio": "100 g de ajetes por 4 huevos",
+    "note": ""
+   },
+   {
+    "use": "Ración de guarnición",
+    "ratio": "100 g",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "cebolla-y-ajo",
+    "name": "Cebolla y ajo",
+    "note": "Los secos."
+   },
+   {
+    "id": "calcots-y-salvitxada",
+    "name": "Calçots",
+    "note": "Cebolla tierna a la brasa."
+   },
+   {
+    "id": "tortilla-y-huevos-de-brunch",
+    "name": "Revueltos",
+    "note": "Uso clásico."
+   },
+   {
+    "id": "verduras-a-la-brasa",
+    "name": "Brasa",
+    "note": "Enteras."
+   }
+  ],
+  "keys": [
+   "Temporada de invierno a primavera.",
+   "Lavar entre capas.",
+   "Cocciones cortas.",
+   "El verde, como hierba.",
+   "Más suaves que los secos."
+  ],
+  "errors": [
+   {
+    "p": "Ajetes duros",
+    "fix": "Parte verde dura. Usa la tierna."
+   },
+   {
+    "p": "Amargos",
+    "fix": "Dorados de más. Fuego medio."
+   },
+   {
+    "p": "Tierra",
+    "fix": "Sin abrir capas. Lava bien."
+   }
+  ],
+  "history": "Los ajetes y las cebolletas son productos de temporada habituales en los mercados españoles de finales de invierno.",
+  "uses": [
+   "Revueltos y tortillas",
+   "Arroces",
+   "Brasa",
+   "Ensaladas"
+  ],
+  "keep": "1 semana en frío, envueltos en papel húmedo.",
+  "pro": "Limpios y en frío; el verde aparte para aceites y salsas.",
+  "related": [
+   "cebolla-y-ajo",
+   "calcots-y-salvitxada",
+   "tortilla-y-huevos-de-brunch",
+   "verduras-a-la-brasa",
+   "temporada-mes-a-mes",
+   "emulsiones-de-hierbas"
+  ]
+ },
+ {
+  "id": "nispero",
+  "name": "Níspero",
+  "name_en": "Loquat",
+  "cat": "producto",
+  "group": "Fruta",
+  "aka": [
+   "níspero",
+   "níspero japonés",
+   "nísperos de Callosa",
+   "loquat"
+  ],
+  "summary": "Fruta de primavera, anaranjada, jugosa, ácida y dulce, con huesos grandes; delicada, para comer fresca, en compota o en postres.",
+  "what": "El níspero que se consume en España es el japonés, un fruto de primavera (abril y mayo) de piel anaranjada y fina, carne jugosa, entre ácida y dulce, con uno o varios huesos grandes y brillantes. Es muy delicado: se mancha con el roce y dura poco. Alicante (Callosa d'en Sarrià) es una gran zona productora.\n\nSe come fresco, pelado, o se usa en compotas, sorbetes, mermeladas y tartas. Sus huesos no se comen.",
+  "method": [
+   "Elige nísperos firmes, de color uniforme, con pocas manchas.",
+   "Manipula con cuidado: se marcan enseguida.",
+   "Pela tirando de la piel desde el rabillo y quita los huesos y la membrana interior.",
+   "Para compota, cuece con poco azúcar y limón 5–8 minutos.",
+   "Úsalos el mismo día o al siguiente."
+  ],
+  "ratios": [
+   {
+    "use": "Compota",
+    "ratio": "5–8 minutos con 10 % de azúcar",
+    "note": ""
+   },
+   {
+    "use": "Rendimiento",
+    "ratio": "60–65 % de pulpa",
+    "note": "Sin piel ni huesos."
+   },
+   {
+    "use": "Ración de postre",
+    "ratio": "150 g de pulpa",
+    "note": ""
+   },
+   {
+    "use": "Temporada",
+    "ratio": "Abril y mayo",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "frutas-en-almibar",
+    "name": "En almíbar",
+    "note": "Conservación."
+   },
+   {
+    "id": "helados-y-sorbetes",
+    "name": "Sorbete",
+    "note": "Fresco."
+   },
+   {
+    "id": "confituras-y-mermeladas",
+    "name": "Mermelada",
+    "note": "Con limón."
+   },
+   {
+    "id": "postres-de-fruta-por-temporada",
+    "name": "Postres de temporada",
+    "note": "Primavera."
+   }
+  ],
+  "keys": [
+   "Fruta muy delicada.",
+   "Temporada corta de primavera.",
+   "Quitar huesos y membrana.",
+   "Usar pronto.",
+   "Ácido y dulce: agradece poco azúcar."
+  ],
+  "errors": [
+   {
+    "p": "Pulpa oscura",
+    "fix": "Oxidación. Limón y al momento."
+   },
+   {
+    "p": "Fruta manchada",
+    "fix": "Roce o golpes. Manipula con cuidado."
+   },
+   {
+    "p": "Compota deshecha",
+    "fix": "Cocción larga. 5–8 minutos."
+   }
+  ],
+  "history": "El níspero japonés llegó a la península en el siglo XIX y se adaptó muy bien al clima mediterráneo.",
+  "uses": [
+   "Postres",
+   "Compotas y sorbetes",
+   "Ensaladas de fruta",
+   "Chutneys"
+  ],
+  "keep": "2–3 días en frío.",
+  "pro": "Pela al momento; compota en tanda corta.",
+  "related": [
+   "frutas-en-almibar",
+   "helados-y-sorbetes",
+   "confituras-y-mermeladas",
+   "postres-de-fruta-por-temporada",
+   "temporada-mes-a-mes",
+   "oxidacion-y-pardeamiento"
+  ]
+ },
+ {
+  "id": "chirimoya",
+  "name": "Chirimoya",
+  "name_en": "Cherimoya",
+  "cat": "producto",
+  "group": "Fruta",
+  "aka": [
+   "chirimoya",
+   "chirimoya de Motril",
+   "chirimoya de la costa tropical",
+   "cherimoya"
+  ],
+  "summary": "Fruta de otoño e invierno de la costa tropical de Granada y Málaga, de pulpa blanca, cremosa y muy dulce, con semillas negras.",
+  "what": "La chirimoya es una fruta de origen andino que se cultiva en la costa de Granada y Málaga, con denominación de origen. Tiene piel verde escamosa y pulpa blanca, cremosa, muy dulce y aromática, con semillas negras que no se comen. Madura fuera del árbol: está lista cuando cede ligeramente al tacto, como un aguacate.\n\nSe come con cuchara, o se usa en batidos, sorbetes, mousses y helados. La pulpa se oxida, así que se le añade cítrico.",
+  "method": [
+   "Deja madurar a temperatura ambiente hasta que ceda un poco al tacto.",
+   "Parte por la mitad y saca la pulpa con cuchara.",
+   "Retira todas las semillas: no se comen.",
+   "Añade zumo de naranja o limón para que no se oxide.",
+   "Tritura y pasa por colador fino para sorbetes y cremas."
+  ],
+  "ratios": [
+   {
+    "use": "Rendimiento",
+    "ratio": "60–70 % de pulpa",
+    "note": ""
+   },
+   {
+    "use": "Sorbete",
+    "ratio": "1 kg de pulpa, 150 g de azúcar y zumo",
+    "note": ""
+   },
+   {
+    "use": "Ración",
+    "ratio": "1/2 chirimoya",
+    "note": ""
+   },
+   {
+    "use": "Temporada",
+    "ratio": "Octubre a abril",
+    "note": "Aprox."
+   }
+  ],
+  "variants": [
+   {
+    "id": "aguacate-y-frutas-tropicales",
+    "name": "Frutas tropicales",
+    "note": "Otras."
+   },
+   {
+    "id": "helados-y-sorbetes",
+    "name": "Sorbete",
+    "note": "Uso clásico."
+   },
+   {
+    "id": "mousses-y-cremosos",
+    "name": "Mousse",
+    "note": "Postre."
+   },
+   {
+    "id": "citricos",
+    "name": "Cítricos",
+    "note": "Contra la oxidación."
+   }
+  ],
+  "keys": [
+   "Madura fuera del árbol.",
+   "Lista cuando cede al tacto.",
+   "Sin semillas.",
+   "Cítrico contra la oxidación.",
+   "Muy dulce: poco azúcar añadido."
+  ],
+  "errors": [
+   {
+    "p": "Pulpa dura",
+    "fix": "Verde. Deja madurar."
+   },
+   {
+    "p": "Pulpa parda",
+    "fix": "Oxidada. Añade cítrico."
+   },
+   {
+    "p": "Fermentada",
+    "fix": "Pasada. Úsala al punto."
+   }
+  ],
+  "history": "La chirimoya llegó de los Andes y encontró en la costa tropical andaluza uno de sus mayores centros de cultivo del mundo.",
+  "uses": [
+   "Postres",
+   "Sorbetes y helados",
+   "Batidos",
+   "Fruta de cuchara"
+  ],
+  "keep": "Madura, 2–3 días en frío; pulpa con cítrico, congelada meses.",
+  "pro": "Congela la pulpa con cítrico en temporada.",
+  "related": [
+   "aguacate-y-frutas-tropicales",
+   "helados-y-sorbetes",
+   "mousses-y-cremosos",
+   "citricos",
+   "postres-de-fruta-por-temporada",
+   "oxidacion-y-pardeamiento"
+  ]
+ },
+ {
+  "id": "kiwi",
+  "name": "Kiwi",
+  "name_en": "Kiwifruit",
+  "cat": "producto",
+  "group": "Fruta",
+  "aka": [
+   "kiwi",
+   "kiwi verde",
+   "kiwi amarillo",
+   "kiwi gallego",
+   "actinidina"
+  ],
+  "summary": "Fruta de invierno, ácida y jugosa, con una enzima que ablanda carnes e impide cuajar la gelatina y los lácteos si va cruda.",
+  "what": "El kiwi verde es ácido y jugoso; el amarillo, más dulce. España lo cultiva en Galicia y Asturias, con temporada de noviembre a mayo. Contiene actinidina, una enzima que rompe proteínas: ablanda carnes en marinadas, pero impide que cuaje la gelatina y amarga los lácteos si se usa crudo. Cocido o escaldado, la enzima se destruye. Ver [[enzimas-en-cocina]].\n\nEs un alérgeno frecuente en algunas personas, aunque no está entre los de declaración obligatoria.",
+  "method": [
+   "Madura a temperatura ambiente; listo cuando cede un poco.",
+   "Pela con pelador o saca la pulpa con cuchara.",
+   "Para gelatinas o con lácteos, escalda o cuece la pulpa antes.",
+   "En marinadas de carne, poco tiempo: ablanda muy rápido.",
+   "No tritures las semillas: amargan."
+  ],
+  "ratios": [
+   {
+    "use": "Marinada con kiwi",
+    "ratio": "30–60 minutos",
+    "note": "Más, la carne se deshace."
+   },
+   {
+    "use": "Desactivar la enzima",
+    "ratio": "Hervir 2–3 minutos",
+    "note": "Para gelatina."
+   },
+   {
+    "use": "Ración",
+    "ratio": "1–2 kiwis",
+    "note": ""
+   },
+   {
+    "use": "Temporada",
+    "ratio": "Noviembre a mayo",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "enzimas-en-cocina",
+    "name": "Enzimas",
+    "note": "Actinidina."
+   },
+   {
+    "id": "gelatinas-de-fruta",
+    "name": "Gelatinas de fruta",
+    "note": "Pulpa cocida."
+   },
+   {
+    "id": "marinada",
+    "name": "Marinadas",
+    "note": "Ablanda."
+   },
+   {
+    "id": "aguacate-y-frutas-tropicales",
+    "name": "Frutas tropicales",
+    "note": "Otras con enzimas."
+   }
+  ],
+  "keys": [
+   "Enzima: cocer antes de gelatina o lácteos.",
+   "Marinadas muy cortas.",
+   "Semillas sin triturar.",
+   "Madurar fuera del frío.",
+   "Puede dar alergia."
+  ],
+  "errors": [
+   {
+    "p": "Gelatina que no cuaja",
+    "fix": "Kiwi crudo. Cuece la pulpa."
+   },
+   {
+    "p": "Nata o yogur amargos",
+    "fix": "Kiwi crudo mucho rato. Sirve al momento o cuece."
+   },
+   {
+    "p": "Carne pastosa",
+    "fix": "Marinada larga. 30–60 minutos."
+   }
+  ],
+  "history": "El kiwi viene de China y se popularizó desde Nueva Zelanda en el siglo XX; hoy se cultiva bien en el norte de España.",
+  "uses": [
+   "Postres",
+   "Marinadas",
+   "Ensaladas de fruta",
+   "Salsas"
+  ],
+  "keep": "Duro, semanas en frío; maduro, 1 semana.",
+  "pro": "Anota la enzima en las fichas de postres con gelatina.",
+  "related": [
+   "enzimas-en-cocina",
+   "gelatinas-de-fruta",
+   "marinada",
+   "aguacate-y-frutas-tropicales",
+   "temporada-mes-a-mes",
+   "postres-de-fruta-por-temporada"
+  ]
  }
 ]

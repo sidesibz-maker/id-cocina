@@ -6817,5 +6817,995 @@
       "hierbas-frescas",
       "fuego-y-brasa"
     ]
+  },
+  {
+    "id": "puttanesca-y-arrabbiata",
+    "name": "Puttanesca y arrabbiata",
+    "name_en": "Puttanesca and arrabbiata",
+    "aka": [
+      "salsa puttanesca",
+      "salsa arrabbiata",
+      "alla norma",
+      "salsas napolitanas de tomate",
+      "salsas de tomate para pasta"
+    ],
+    "cat": "salsas",
+    "group": "Salsas del mundo",
+    "summary": "Salsas rápidas de tomate del sur de Italia para pasta seca: la puttanesca con anchoa, aceitunas y alcaparras, y la arrabbiata con ajo y mucha guindilla.",
+    "what": "Son salsas de despensa que se hacen en lo que tarda en cocer la pasta. La arrabbiata es la más sencilla: ajo y guindilla en aceite de oliva, tomate pelado y perejil; debe picar de verdad. La puttanesca empieza igual, añade anchoas fundidas en el aceite, aceitunas negras y alcaparras, y queda salada, intensa y muy mediterránea. La norma, de Sicilia, une tomate y berenjena frita y se termina con ricota salada rallada.\n\nTodas se apoyan en una buena [[salsa-de-tomate]] rápida, sin cocciones largas, y se terminan en la sartén con la pasta y un poco de su agua de cocción para que liguen. No llevan queso, salvo la norma. La pasta romana está en [[pastas-romanas]]; para la cocción, ver [[coccion-de-pasta-y-noquis]].",
+    "base": {
+      "for": "4 raciones (400 g de pasta seca)",
+      "items": [
+        [
+          "Aceite de oliva virgen extra",
+          "50 ml"
+        ],
+        [
+          "Ajo en láminas",
+          "2 dientes"
+        ],
+        [
+          "Guindilla seca",
+          "1–2"
+        ],
+        [
+          "Filetes de anchoa en aceite",
+          "4–6"
+        ],
+        [
+          "Tomate pelado triturado a mano",
+          "800 g"
+        ],
+        [
+          "Aceitunas negras deshuesadas",
+          "80 g"
+        ],
+        [
+          "Alcaparras desaladas",
+          "20 g"
+        ],
+        [
+          "Perejil u orégano",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Calienta el aceite con el ajo y la guindilla a fuego suave hasta que el ajo esté dorado claro.",
+        "Añade las anchoas y deja que se deshagan, removiendo, 1 minuto.",
+        "Incorpora el tomate, sube el fuego y cuece 10–12 minutos hasta que espese.",
+        "Añade las aceitunas y las alcaparras en los últimos 2 minutos; prueba antes de salar.",
+        "Saltea la pasta al dente con la salsa y un cacillo de su agua hasta que ligue; termina con la hierba."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Arrabbiata",
+        "ratio": "Sin anchoa, aceitunas ni alcaparras; 2–3 guindillas",
+        "note": "Perejil al final."
+      },
+      {
+        "use": "Norma",
+        "ratio": "1 berenjena frita en dados por cada 400 g de pasta",
+        "note": "Ricota salada rallada."
+      },
+      {
+        "use": "Salsa por ración",
+        "ratio": "150–180 g",
+        "note": "Con 100 g de pasta seca."
+      },
+      {
+        "use": "Agua de cocción",
+        "ratio": "50–100 ml al saltear",
+        "note": "Liga y da brillo."
+      }
+    ],
+    "variants": [
+      {
+        "id": "salsa-de-tomate",
+        "name": "Salsa de tomate",
+        "note": "La base."
+      },
+      {
+        "id": "pastas-romanas",
+        "name": "Pastas romanas",
+        "note": "Otras salsas clásicas de pasta."
+      },
+      {
+        "id": "bagna-cauda-y-salsas-de-anchoa",
+        "name": "Salsas de anchoa",
+        "note": "La anchoa fundida en aceite."
+      },
+      {
+        "id": null,
+        "name": "Pasta alla norma",
+        "note": "Con berenjena y ricota salada."
+      }
+    ],
+    "keys": [
+      "Cocción corta: tomate vivo.",
+      "Anchoa fundida, no frita.",
+      "Aceitunas y alcaparras al final.",
+      "Sala al final: todo ya es salado.",
+      "Ligar con el agua de la pasta."
+    ],
+    "errors": [
+      {
+        "p": "Salsa demasiado salada",
+        "fix": "Anchoa, aceituna y alcaparra con sal. Desala las alcaparras y sala al final."
+      },
+      {
+        "p": "Ajo amargo",
+        "fix": "Ajo tostado de más. Retira al dorado claro."
+      },
+      {
+        "p": "Pasta seca y salsa aparte",
+        "fix": "No se saltearon juntas. Termina en la sartén con agua de cocción."
+      }
+    ],
+    "history": "Son salsas populares de Nápoles, Roma y Sicilia, hechas con ingredientes de despensa. La puttanesca se difundió sobre todo en la segunda mitad del siglo XX.",
+    "uses": [
+      "Pasta seca larga y corta",
+      "Pescado al horno",
+      "Pollo guisado",
+      "Pan tostado"
+    ],
+    "keep": "3–4 días en frío sin la hierba fresca; 2 meses congelada.",
+    "pro": "Ten la base de tomate hecha; termina cada salsa en sartén por ración con la pasta.",
+    "related": [
+      "salsa-de-tomate",
+      "pastas-romanas",
+      "pasta-seca",
+      "coccion-de-pasta-y-noquis",
+      "aceitunas-y-alcaparras",
+      "bagna-cauda-y-salsas-de-anchoa"
+    ]
+  },
+  {
+    "id": "piri-piri-y-salsas-de-chile-africanas",
+    "name": "Piri-piri y salsas de chile africanas",
+    "name_en": "Piri-piri and African chilli sauces",
+    "aka": [
+      "piri-piri",
+      "peri-peri",
+      "pollo piri-piri",
+      "shito",
+      "salsa de chile africana",
+      "pili-pili"
+    ],
+    "cat": "salsas",
+    "group": "Salsas del mundo",
+    "summary": "El piri-piri de chile pequeño, ajo, limón y aceite para el pollo a la brasa, y el shito ghanés de chile, pescado seco y cebolla frita.",
+    "what": "El piri-piri es un chile pequeño y muy picante y también la salsa que se hace con él: chile, ajo, zumo de limón, pimentón, aceite y vinagre, a veces con un chorro de aguardiente. Nació del encuentro entre la cocina portuguesa y la de Mozambique y Angola, y es la marinada y salsa clásica del pollo abierto a la brasa. Se pinta durante el asado y se sirve aparte.\n\nEl shito de Ghana es otra cosa: chile seco, cebolla, jengibre y ajo fritos muy despacio en abundante aceite con gamba o pescado seco molido, hasta quedar una pasta oscura, aceitosa y muy sabrosa, para arroz, huevos y pescado. En África del Oeste y Central también se llaman pili-pili muchas salsas simples de chile. Para el picor, ver [[picante-y-pungencia]].",
+    "base": {
+      "for": "unos 250 ml de piri-piri",
+      "items": [
+        [
+          "Chiles piri-piri o chile rojo pequeño",
+          "40–60 g"
+        ],
+        [
+          "Pimiento rojo asado (para suavizar)",
+          "100 g"
+        ],
+        [
+          "Ajo",
+          "4 dientes"
+        ],
+        [
+          "Zumo de limón",
+          "60 ml"
+        ],
+        [
+          "Vinagre de vino",
+          "20 ml"
+        ],
+        [
+          "Pimentón dulce",
+          "5 g"
+        ],
+        [
+          "Orégano seco",
+          "2 g"
+        ],
+        [
+          "Aceite de oliva",
+          "100 ml"
+        ],
+        [
+          "Sal",
+          "6 g"
+        ]
+      ],
+      "steps": [
+        "Si quieres más sabor, asa los chiles y el ajo en la brasa o en sartén hasta que se marquen.",
+        "Tritura todo menos el aceite hasta tener una pasta fina.",
+        "Añade el aceite en hilo con la batidora en marcha.",
+        "Prueba y ajusta de sal, ácido y picor; reposa 1 hora en frío.",
+        "Para el pollo, marina con una parte 2–12 horas en frío y reserva otra parte limpia para servir."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Marinada de pollo",
+        "ratio": "100 ml por pollo de 1,5 kg",
+        "note": "2–12 horas en frío."
+      },
+      {
+        "use": "Pintar en la brasa",
+        "ratio": "Cada 5–10 minutos en la última parte",
+        "note": "Con salsa sin contacto con carne cruda."
+      },
+      {
+        "use": "Shito",
+        "ratio": "200 g de cebolla, 50 g de chile seco, 50 g de gamba seca molida, 250 ml de aceite",
+        "note": "Freír 40–60 minutos a fuego bajo."
+      },
+      {
+        "use": "Ración en mesa",
+        "ratio": "15–20 ml",
+        "note": "Muy picante."
+      }
+    ],
+    "variants": [
+      {
+        "id": "pollo-y-aves",
+        "name": "Pollo a la brasa",
+        "note": "Su uso clásico."
+      },
+      {
+        "id": "sambal",
+        "name": "Sambal",
+        "note": "Otra familia de chile frito."
+      },
+      {
+        "id": "chiles-secos-y-frescos",
+        "name": "Chiles",
+        "note": "El producto."
+      },
+      {
+        "id": null,
+        "name": "Shito",
+        "note": "Chile y pescado seco fritos en aceite."
+      }
+    ],
+    "keys": [
+      "Ácido, ajo y chile en equilibrio.",
+      "Asar el chile da profundidad.",
+      "Separar la salsa de marinar de la de servir.",
+      "Pintar en la última parte del asado.",
+      "El shito se fríe muy despacio."
+    ],
+    "errors": [
+      {
+        "p": "Salsa que solo pica",
+        "fix": "Faltan ácido, ajo y pimiento. Añade pimiento asado y limón."
+      },
+      {
+        "p": "Pollo quemado por fuera",
+        "fix": "Pintado desde el principio. Pinta al final y con brasa menos fuerte."
+      },
+      {
+        "p": "Shito amargo",
+        "fix": "Fuego alto. Fríe a fuego bajo y remueve."
+      }
+    ],
+    "history": "El piri-piri es fruto del contacto entre portugueses y africanos en Mozambique y Angola, y hoy es un sabor habitual de la parrilla portuguesa. El shito es un condimento tradicional de Ghana.",
+    "uses": [
+      "Pollo y aves a la brasa",
+      "Gambas y marisco a la plancha",
+      "Arroz y huevos",
+      "Patatas"
+    ],
+    "keep": "Piri-piri (ajo crudo en aceite): en frío, como mucho 4 días. Shito: 1 semana en frío, cubierto de su aceite. La salsa que ha tocado carne cruda se tira.",
+    "pro": "Haz la salsa en dos recipientes, uno para marinar y otro para servir. El shito, en tanda semanal.",
+    "related": [
+      "picante-y-pungencia",
+      "chiles-secos-y-frescos",
+      "pollo-y-aves",
+      "fuego-y-brasa",
+      "sambal",
+      "marinada"
+    ]
+  },
+  {
+    "id": "toum",
+    "name": "Toum",
+    "name_en": "Toum (Lebanese garlic sauce)",
+    "aka": [
+      "salsa de ajo libanesa",
+      "toum libanés",
+      "emulsión de ajo sin huevo",
+      "salsa de ajo del shawarma"
+    ],
+    "cat": "salsas",
+    "group": "Emulsiones frías",
+    "summary": "Emulsión libanesa de ajo, sal, limón y aceite neutro, sin huevo: blanca, ligera como una mousse y muy potente, para pollo asado y brochetas.",
+    "what": "El toum es una emulsión que se sostiene solo con ajo. El ajo majado con sal suelta compuestos que ayudan a emulsionar, y al añadir aceite en hilo, alternando con zumo de limón y agua helada, sale una crema blanca, esponjosa y muy firme. Es como un [[alioli]] sin huevo, pero se hace con aceite neutro, no de oliva, porque este amarga al batirlo tanto y su sabor competiría con el ajo.\n\nAcompaña el pollo asado, las brochetas, el shawarma y las patatas fritas, y sirve para untar pan o enriquecer un aliño. Es muy intenso: se usa poco. Al ser ajo crudo en aceite, se guarda en frío y pocos días. Ver [[emulsiones]] y [[cebolla-y-ajo]].",
+    "base": {
+      "for": "unos 500 ml",
+      "items": [
+        [
+          "Ajo pelado, sin germen",
+          "60 g"
+        ],
+        [
+          "Sal fina",
+          "5 g"
+        ],
+        [
+          "Zumo de limón",
+          "40 ml"
+        ],
+        [
+          "Agua helada",
+          "20–30 ml"
+        ],
+        [
+          "Aceite neutro (girasol)",
+          "400 ml"
+        ]
+      ],
+      "steps": [
+        "Tritura el ajo con la sal en procesadora hasta tener una pasta muy fina, rascando las paredes.",
+        "Con la máquina en marcha, añade el aceite en hilo muy fino, unos 50 ml.",
+        "Alterna: un chorrito de limón, más aceite en hilo, un chorrito de agua helada, más aceite.",
+        "Sigue hasta acabar el aceite; debe quedar blanca, firme y brillante.",
+        "Pasa a un recipiente, tapa y deja reposar en frío unas horas: se suaviza."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Proporción base",
+        "ratio": "Ajo 1 parte, aceite 6–7 partes",
+        "note": "En peso."
+      },
+      {
+        "use": "Toum más suave",
+        "ratio": "Mitad toum, mitad yogur",
+        "note": "Para salsas de bocadillo."
+      },
+      {
+        "use": "Ración",
+        "ratio": "10–15 g",
+        "note": "Es muy potente."
+      },
+      {
+        "use": "Marinada de pollo",
+        "ratio": "2 cucharadas de toum por kilo, con limón y especias",
+        "note": "2–12 horas en frío."
+      }
+    ],
+    "variants": [
+      {
+        "id": "alioli",
+        "name": "Alioli",
+        "note": "Pariente mediterráneo, de aceite de oliva."
+      },
+      {
+        "id": "emulsiones",
+        "name": "Emulsiones",
+        "note": "El principio."
+      },
+      {
+        "id": "kebab-y-pinchos",
+        "name": "Brochetas",
+        "note": "Su compañero habitual."
+      },
+      {
+        "id": null,
+        "name": "Toum con yogur",
+        "note": "Más suave."
+      }
+    ],
+    "keys": [
+      "Ajo sin germen: menos amargo.",
+      "Pasta muy fina antes del aceite.",
+      "Aceite neutro, no de oliva.",
+      "Hilo fino y alternar limón y agua.",
+      "Reposo en frío: se suaviza."
+    ],
+    "errors": [
+      {
+        "p": "Se corta y queda líquido",
+        "fix": "Aceite demasiado rápido. Empieza otra vez con ajo majado y añade el cortado poco a poco."
+      },
+      {
+        "p": "Sabor amargo",
+        "fix": "Germen del ajo o aceite de oliva. Quita el germen y usa aceite neutro."
+      },
+      {
+        "p": "Demasiado picante",
+        "fix": "Recién hecho. Deja reposar en frío o rebaja con yogur."
+      }
+    ],
+    "history": "Es una salsa tradicional del Líbano y de la cocina de Levante, ligada al pollo asado y al shawarma. Pertenece a la gran familia mediterránea de emulsiones de ajo y aceite.",
+    "uses": [
+      "Pollo asado y a la brasa",
+      "Brochetas y shawarma",
+      "Patatas fritas",
+      "Panes planos"
+    ],
+    "keep": "En frío, en recipiente cerrado, como mucho 4 días (ajo crudo en aceite).",
+    "pro": "Hazlo en procesadora en tandas de 3–4 días; ten un poco rebajado con yogur para los platos que piden menos ajo.",
+    "related": [
+      "alioli",
+      "emulsiones",
+      "cebolla-y-ajo",
+      "kebab-y-pinchos",
+      "pollo-y-aves",
+      "mayonesa"
+    ]
+  },
+  {
+    "id": "salsa-de-mostaza-y-eneldo",
+    "name": "Salsa de mostaza y eneldo",
+    "name_en": "Mustard and dill sauce",
+    "aka": [
+      "salsa para gravlax",
+      "salsa escandinava de mostaza",
+      "mostaza dulce con eneldo",
+      "salsa de eneldo"
+    ],
+    "cat": "salsas",
+    "group": "Emulsiones frías",
+    "summary": "Emulsión escandinava de mostaza, azúcar, vinagre, aceite y eneldo: dulce, ácida y picante, para salmón curado, arenque, patatas y huevos.",
+    "what": "Es la salsa con la que se sirve el salmón curado con eneldo en los países nórdicos. Se bate mostaza (una parte dulce y otra fuerte) con azúcar y vinagre, y se monta con aceite neutro en hilo como una [[vinagreta]] espesa, casi una mayonesa sin huevo; la mostaza hace de emulsionante. Al final se añade mucho eneldo picado.\n\nQueda espesa, brillante y con equilibrio de dulce, ácido y picante, perfecta para pescados grasos curados o ahumados, arenques, patata cocida, huevo duro y verduras crudas. Para el curado del salmón, ver [[curado-de-pescado]]. Si el pescado que acompaña se sirve crudo o curado, debe haberse congelado antes como manda la norma del anisakis.",
+    "base": {
+      "for": "unos 250 ml",
+      "items": [
+        [
+          "Mostaza fuerte tipo Dijon",
+          "40 g"
+        ],
+        [
+          "Mostaza dulce o de grano",
+          "30 g"
+        ],
+        [
+          "Azúcar",
+          "20 g"
+        ],
+        [
+          "Vinagre de vino blanco o de manzana",
+          "25 ml"
+        ],
+        [
+          "Aceite neutro",
+          "120 ml"
+        ],
+        [
+          "Eneldo fresco picado",
+          "15 g"
+        ],
+        [
+          "Sal y pimienta blanca",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Mezcla las mostazas, el azúcar, el vinagre, la sal y la pimienta hasta disolver el azúcar.",
+        "Añade el aceite en hilo batiendo con varilla o batidora hasta que espese.",
+        "Incorpora el eneldo picado.",
+        "Prueba y ajusta: si está muy picante, más azúcar; si está plana, más vinagre.",
+        "Reposa 30 minutos en frío antes de servir."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Con salmón curado",
+        "ratio": "20–25 g por ración",
+        "note": "Aparte o en el plato."
+      },
+      {
+        "use": "Versión ligera",
+        "ratio": "Mitad salsa, mitad yogur o crema agria",
+        "note": "Para patatas."
+      },
+      {
+        "use": "Equilibrio",
+        "ratio": "Azúcar y vinagre a pesos parecidos",
+        "note": "Ajustar al gusto."
+      },
+      {
+        "use": "Eneldo",
+        "ratio": "6 % del peso de la salsa",
+        "note": "Picado al final."
+      }
+    ],
+    "variants": [
+      {
+        "id": "curado-de-pescado",
+        "name": "Salmón curado",
+        "note": "Su pareja natural."
+      },
+      {
+        "id": "vinagreta",
+        "name": "Vinagreta",
+        "note": "Misma técnica, menos espesa."
+      },
+      {
+        "id": "salsa-de-pimienta-y-mostaza",
+        "name": "Salsas de mostaza",
+        "note": "Versiones calientes."
+      },
+      {
+        "id": "salsas-de-rabano-picante",
+        "name": "Rábano picante",
+        "note": "Otra salsa fría para pescado ahumado."
+      }
+    ],
+    "keys": [
+      "La mostaza emulsiona.",
+      "Dulce, ácido y picante en equilibrio.",
+      "Aceite neutro para no tapar.",
+      "Eneldo fresco y abundante al final.",
+      "Mejor tras un reposo corto."
+    ],
+    "errors": [
+      {
+        "p": "Salsa que se corta",
+        "fix": "Aceite rápido o poca mostaza. Añade mostaza y bate de nuevo."
+      },
+      {
+        "p": "Demasiado dulce",
+        "fix": "Mostaza dulce en exceso. Sube la de Dijon y el vinagre."
+      },
+      {
+        "p": "Eneldo oscuro",
+        "fix": "Picado con mucha antelación. Añádelo en el día."
+      }
+    ],
+    "history": "Es la salsa tradicional del salmón curado con eneldo de Suecia y del resto de Escandinavia. Su uso se ha extendido con la popularidad de los pescados curados.",
+    "uses": [
+      "Salmón y trucha curados o ahumados",
+      "Arenques",
+      "Patata cocida y huevo",
+      "Verduras crudas"
+    ],
+    "keep": "4–5 días en frío sin el eneldo; con eneldo, 2–3 días. El pescado curado o crudo que acompaña, congelado antes a −20 °C al menos 24 horas en toda la pieza (anisakis).",
+    "pro": "Haz la base en tanda y añade el eneldo fresco cada día.",
+    "related": [
+      "curado-de-pescado",
+      "vinagreta",
+      "salsa-de-pimienta-y-mostaza",
+      "salsas-de-rabano-picante",
+      "hierbas-frescas",
+      "pescado-azul"
+    ]
+  },
+  {
+    "id": "mojo-cubano",
+    "name": "Mojo cubano",
+    "name_en": "Cuban mojo",
+    "aka": [
+      "mojo criollo",
+      "mojo de naranja agria",
+      "mojo para yuca",
+      "mojo para lechón"
+    ],
+    "cat": "salsas",
+    "group": "Salsas del mundo",
+    "summary": "Ajo majado, naranja agria, comino y orégano con aceite caliente: marinada y salsa del cerdo asado, la yuca y los tostones en el Caribe.",
+    "what": "El mojo cubano es pariente lejano de los [[mojo-picon|mojos canarios]], pero se basa en el cítrico. Se maja mucho ajo con sal, comino y orégano, se añade zumo de naranja agria y se vierte encima aceite caliente, que suaviza el ajo y libera los aromas. Es ácido, muy aromático y ligero.\n\nSe usa de dos formas: como marinada larga para el cerdo asado (pernil, lechón), que se pinta luego durante el asado, y como salsa para la yuca cocida, los tostones de plátano y las carnes a la brasa. Si no hay naranja agria, se sustituye por naranja y lima. Al llevar ajo en aceite, se guarda en frío y pocos días. Ver [[marinada]] y [[citricos]].",
+    "base": {
+      "for": "unos 400 ml",
+      "items": [
+        [
+          "Ajo pelado",
+          "40 g"
+        ],
+        [
+          "Sal",
+          "6 g"
+        ],
+        [
+          "Comino molido",
+          "3 g"
+        ],
+        [
+          "Orégano seco",
+          "2 g"
+        ],
+        [
+          "Zumo de naranja agria (o 2 partes de naranja y 1 de lima)",
+          "250 ml"
+        ],
+        [
+          "Aceite de oliva o neutro",
+          "100 ml"
+        ],
+        [
+          "Cebolla en pluma fina (opcional)",
+          "100 g"
+        ]
+      ],
+      "steps": [
+        "Maja el ajo con la sal, el comino y el orégano hasta tener una pasta.",
+        "Añade el zumo de naranja agria y mezcla.",
+        "Calienta el aceite a unos 120 °C, sin que humee, y viértelo sobre la mezcla; si lleva cebolla, añádela antes.",
+        "Remueve y deja enfriar.",
+        "Prueba y ajusta: ácido, salado y con mucho ajo."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Marinada de pernil o paletilla",
+        "ratio": "250 ml por cada 2 kg de carne",
+        "note": "12–24 horas en frío."
+      },
+      {
+        "use": "Yuca o tostones",
+        "ratio": "30–40 ml por ración",
+        "note": "Templado por encima."
+      },
+      {
+        "use": "Sin naranja agria",
+        "ratio": "Naranja y lima 2:1",
+        "note": "Aproxima la acidez."
+      },
+      {
+        "use": "Pintar el asado",
+        "ratio": "Cada 30–45 minutos",
+        "note": "Con mojo limpio, no el de marinar."
+      }
+    ],
+    "variants": [
+      {
+        "id": "mojo-picon",
+        "name": "Mojo picón",
+        "note": "El primo canario."
+      },
+      {
+        "id": "mojo-verde",
+        "name": "Mojo verde",
+        "note": "Con hierbas."
+      },
+      {
+        "id": "cochinita-pibil",
+        "name": "Cochinita pibil",
+        "note": "Otro cerdo con naranja agria."
+      },
+      {
+        "id": "adobo",
+        "name": "Adobos",
+        "note": "Familia de marinadas."
+      }
+    ],
+    "keys": [
+      "Mucho ajo majado.",
+      "Naranja agria o mezcla de naranja y lima.",
+      "Aceite caliente, no humeante.",
+      "Marinada larga para el cerdo.",
+      "Separar el mojo de marinar del de servir."
+    ],
+    "errors": [
+      {
+        "p": "Ajo crudo y agresivo",
+        "fix": "Aceite frío. Viértelo caliente sobre el majado."
+      },
+      {
+        "p": "Mojo dulce",
+        "fix": "Solo naranja dulce. Añade lima o vinagre."
+      },
+      {
+        "p": "Aceite quemado",
+        "fix": "Demasiado caliente. No dejes que humee."
+      }
+    ],
+    "history": "El mojo cubano se asocia a las fiestas y al cerdo asado en Cuba y en las cocinas del Caribe de habla hispana. Su nombre y su idea llegaron con la emigración canaria.",
+    "uses": [
+      "Cerdo asado",
+      "Yuca cocida",
+      "Tostones de plátano",
+      "Pollo y carnes a la brasa"
+    ],
+    "keep": "En frío, como mucho 4 días (ajo en aceite). El mojo que ha estado en contacto con carne cruda se tira.",
+    "pro": "Haz dos tandas: una para marinar y otra para servir. Prepáralo en el día o la víspera.",
+    "related": [
+      "mojo-picon",
+      "mojo-verde",
+      "marinada",
+      "citricos",
+      "yuca-y-tuberculos-tropicales",
+      "cochinillo"
+    ]
+  },
+  {
+    "id": "salsa-verde-italiana",
+    "name": "Salsa verde italiana",
+    "name_en": "Italian salsa verde",
+    "aka": [
+      "bagnet verd",
+      "salsa verde piamontesa",
+      "salsa verde para bollito",
+      "salsa verde con anchoa y alcaparra"
+    ],
+    "cat": "salsas",
+    "group": "Salsas del mundo",
+    "summary": "Perejil picado con anchoa, alcaparras, ajo, miga de pan en vinagre y aceite de oliva: salsa cruda, sápida y ácida para carnes cocidas, lengua y pescado.",
+    "what": "No tiene nada que ver con la [[salsa-verde]] vasca de pescado, que se liga con la gelatina en caliente. La italiana es cruda: perejil abundante picado a cuchillo con anchoas, alcaparras, ajo, miga de pan remojada en vinagre y, en algunas casas, yema de huevo duro, todo ligado con aceite de oliva. Queda espesa, granulosa, ácida y salina.\n\nEs la salsa del bollito misto del Piamonte y de la lengua de ternera, y va muy bien con carnes hervidas o a la brasa, pescado cocido, huevos y verduras. Es pariente del [[chimichurri]] y de la [[gremolata]], pero con el umami de la anchoa y la acidez del vinagre. Por llevar ajo y hierba fresca en aceite, se guarda en frío y pocos días.",
+    "base": {
+      "for": "unos 250 g",
+      "items": [
+        [
+          "Perejil (hojas)",
+          "60 g"
+        ],
+        [
+          "Filetes de anchoa",
+          "4"
+        ],
+        [
+          "Alcaparras desaladas",
+          "20 g"
+        ],
+        [
+          "Ajo",
+          "1 diente"
+        ],
+        [
+          "Miga de pan",
+          "30 g"
+        ],
+        [
+          "Vinagre de vino blanco",
+          "20 ml"
+        ],
+        [
+          "Yema de huevo duro (opcional)",
+          "1"
+        ],
+        [
+          "Aceite de oliva virgen extra",
+          "120 ml"
+        ]
+      ],
+      "steps": [
+        "Remoja la miga en el vinagre 5 minutos y escúrrela un poco.",
+        "Pica a cuchillo el perejil, las anchoas, las alcaparras y el ajo hasta tener una mezcla fina pero con textura.",
+        "Añade la miga desmenuzada y la yema si la usas.",
+        "Liga con el aceite hasta textura de salsa espesa.",
+        "Reposa 30 minutos y ajusta de ácido; la sal casi no hace falta."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Bollito o carnes hervidas",
+        "ratio": "30–40 g por ración",
+        "note": "A temperatura ambiente."
+      },
+      {
+        "use": "Lengua",
+        "ratio": "Cubrir las lonchas finas",
+        "note": "Clásico piamontés."
+      },
+      {
+        "use": "Pescado cocido o a la brasa",
+        "ratio": "20–30 g",
+        "note": "Con un punto más de limón."
+      },
+      {
+        "use": "Textura",
+        "ratio": "Picado a cuchillo",
+        "note": "La batidora la vuelve pasta."
+      }
+    ],
+    "variants": [
+      {
+        "id": "salsa-verde",
+        "name": "Salsa verde vasca",
+        "note": "Otra cosa: caliente y ligada con pescado."
+      },
+      {
+        "id": "chimichurri",
+        "name": "Chimichurri",
+        "note": "Pariente de hierbas y vinagre."
+      },
+      {
+        "id": "gremolata",
+        "name": "Gremolata",
+        "note": "Perejil, ajo y limón sin aceite."
+      },
+      {
+        "id": "pot-au-feu",
+        "name": "Carnes hervidas",
+        "note": "El plato que pide esta salsa."
+      }
+    ],
+    "keys": [
+      "Picado a cuchillo.",
+      "Anchoa y alcaparra dan el sabor.",
+      "Pan en vinagre para el cuerpo y la acidez.",
+      "Aceite de oliva bueno.",
+      "Casi no necesita sal."
+    ],
+    "errors": [
+      {
+        "p": "Salsa oscura",
+        "fix": "Batidora o picada con mucha antelación. Pica a cuchillo y en el día."
+      },
+      {
+        "p": "Demasiado salada",
+        "fix": "Alcaparras sin desalar. Desálalas y no añadas sal."
+      },
+      {
+        "p": "Salsa aceitosa y suelta",
+        "fix": "Poca miga o perejil. Aumenta la miga o el perejil."
+      }
+    ],
+    "history": "Es una salsa tradicional del norte de Italia, sobre todo del Piamonte, ligada a las carnes hervidas. Las salsas verdes de hierbas picadas existen en muchas cocinas europeas desde hace siglos.",
+    "uses": [
+      "Carnes hervidas y lengua",
+      "Carnes a la brasa",
+      "Pescado cocido",
+      "Huevos y patatas"
+    ],
+    "keep": "En frío, como mucho 3 días (ajo y hierba fresca en aceite), con una capa de aceite por encima.",
+    "pro": "Ten las anchoas y alcaparras picadas; añade el perejil a cuchillo en el día.",
+    "related": [
+      "salsa-verde",
+      "chimichurri",
+      "gremolata",
+      "bagna-cauda-y-salsas-de-anchoa",
+      "pot-au-feu",
+      "aceitunas-y-alcaparras"
+    ]
+  },
+  {
+    "id": "ezme",
+    "name": "Ezme",
+    "name_en": "Ezme (Turkish chopped pepper salsa)",
+    "aka": [
+      "acılı ezme",
+      "ezme turca",
+      "salsa picada de tomate y pimiento",
+      "ezme de kebab"
+    ],
+    "cat": "salsas",
+    "group": "Salsas del mundo",
+    "summary": "Picado muy fino de tomate, pimiento, cebolla y perejil con melaza de granada, pasta de pimiento, zumaque y chile: salsa ácida y picante para kebab y brasa.",
+    "what": "El ezme turco está entre una ensalada y una salsa: tomate sin semillas, pimientos rojo y verde, cebolla y perejil picados a cuchillo hasta quedar casi un majado, aliñados con pasta de pimiento rojo, chile en escamas, zumaque, melaza de granada, limón y aceite de oliva. El resultado es rojo, jugoso, ácido, algo dulce y picante.\n\nAcompaña los [[kebab-y-pinchos|kebabs]] y las carnes a la brasa, los panes planos y las verduras asadas. El picado a cuchillo es la clave: con batidora se vuelve un puré aguado. Es pariente de la [[chiles-y-salsas-mexicanas|salsa mexicana]] y del pebre, pero con los sabores de Anatolia: zumaque, granada y pimiento.",
+    "base": {
+      "for": "unos 500 g",
+      "items": [
+        [
+          "Tomate maduro sin semillas",
+          "250 g"
+        ],
+        [
+          "Pimiento rojo",
+          "80 g"
+        ],
+        [
+          "Pimiento verde o chile verde suave",
+          "60 g"
+        ],
+        [
+          "Cebolla",
+          "60 g"
+        ],
+        [
+          "Perejil",
+          "20 g"
+        ],
+        [
+          "Pasta de pimiento rojo (o pimiento asado triturado)",
+          "20 g"
+        ],
+        [
+          "Chile rojo en escamas",
+          "3–5 g"
+        ],
+        [
+          "Zumaque",
+          "3 g"
+        ],
+        [
+          "Melaza de granada",
+          "15 ml"
+        ],
+        [
+          "Zumo de limón",
+          "15 ml"
+        ],
+        [
+          "Aceite de oliva virgen extra",
+          "30 ml"
+        ],
+        [
+          "Sal",
+          "4 g"
+        ]
+      ],
+      "steps": [
+        "Pica la cebolla, sálala un poco y frótala con el zumaque; deja 10 minutos y escurre.",
+        "Pica a cuchillo el tomate, los pimientos y el perejil, cada uno muy fino.",
+        "Junta todo en la tabla y sigue picando hasta que parezca un majado grueso.",
+        "Aliña con la pasta de pimiento, el chile, la melaza, el limón, el aceite y la sal.",
+        "Reposa 15–20 minutos y escurre el exceso de jugo antes de servir."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Con kebab o brasa",
+        "ratio": "40–60 g por ración",
+        "note": "Frío o a temperatura ambiente."
+      },
+      {
+        "use": "Picante",
+        "ratio": "Ajustar con las escamas de chile",
+        "note": "Del suave al fuerte."
+      },
+      {
+        "use": "Acidez",
+        "ratio": "Melaza y limón a partes iguales",
+        "note": "Probar con pan."
+      },
+      {
+        "use": "Sin pasta de pimiento",
+        "ratio": "30 g de pimiento asado triturado",
+        "note": "Más suave."
+      }
+    ],
+    "variants": [
+      {
+        "id": "kebab-y-pinchos",
+        "name": "Kebab",
+        "note": "Su compañero clásico."
+      },
+      {
+        "id": "pebre-y-aji-colombiano",
+        "name": "Pebre",
+        "note": "Picado sudamericano parecido."
+      },
+      {
+        "id": "chiles-y-salsas-mexicanas",
+        "name": "Salsa mexicana",
+        "note": "Otra salsa picada."
+      },
+      {
+        "id": "granada-y-membrillo",
+        "name": "Melaza de granada",
+        "note": "El ácido dulce."
+      }
+    ],
+    "keys": [
+      "Picado a cuchillo, muy fino.",
+      "Tomate sin semillas.",
+      "Cebolla con zumaque para suavizarla.",
+      "Melaza de granada para el dulce ácido.",
+      "Escurrir antes de servir."
+    ],
+    "errors": [
+      {
+        "p": "Ezme aguado",
+        "fix": "Tomate con semillas o batidora. Quita semillas, pica a cuchillo y escurre."
+      },
+      {
+        "p": "Cebolla dominante",
+        "fix": "Sin macerar. Sálala y frótala con zumaque antes."
+      },
+      {
+        "p": "Sabor plano",
+        "fix": "Falta ácido y especia. Más melaza, limón y zumaque."
+      }
+    ],
+    "history": "El ezme es habitual en las parrillas y casas de kebab de Turquía, sobre todo en el sureste del país. Comparte idea con las ensaladas picadas de todo el Mediterráneo oriental.",
+    "uses": [
+      "Kebab y brochetas",
+      "Carnes a la brasa",
+      "Panes planos",
+      "Verduras asadas"
+    ],
+    "keep": "En el día; como mucho 1 día en frío, escurrido.",
+    "pro": "Pica las verduras por separado y júntalas y aliña en el servicio.",
+    "related": [
+      "kebab-y-pinchos",
+      "granada-y-membrillo",
+      "pimientos",
+      "tomate",
+      "panes-planos",
+      "fuego-y-brasa"
+    ]
   }
 ]

@@ -24372,5 +24372,3208 @@
    "afilar-y-cuidar-cuchillos",
    "ceviche-y-crudos"
   ]
+ },
+ {
+  "id": "olla-gitana",
+  "name": "Olla gitana",
+  "name_en": "Olla gitana (vegetable and chickpea stew)",
+  "cat": "tecnicas",
+  "group": "Cocina levantina",
+  "technique": "guiso",
+  "aka": [
+   "olla gitana",
+   "olla gitana murciana",
+   "potaje de verduras con pera",
+   "guiso de garbanzos y calabaza"
+  ],
+  "summary": "Guiso de garbanzos y alubias con calabaza, judías verdes y pera, ligado con un majado de almendra, ajo y pan frito.",
+  "what": "La olla gitana es un guiso de huerta de Murcia y del sur de Valencia: garbanzos (y a veces alubias) con calabaza, judías verdes, patata y, como sello, trozos de pera que aportan un punto dulce. Se perfuma con pimentón, comino y azafrán y se espesa al final con un majado de almendras, ajo y pan frito.\n\nEs un plato sin carne, de otoño. Cada casa decide si lleva alubias, hierbabuena o un chorrito de vinagre al final.",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Garbanzos remojados 12 horas",
+     "300 g en seco"
+    ],
+    [
+     "Calabaza en dados",
+     "500 g"
+    ],
+    [
+     "Judías verdes en trozos",
+     "250 g"
+    ],
+    [
+     "Patata",
+     "300 g"
+    ],
+    [
+     "Peras firmes en cuartos",
+     "2"
+    ],
+    [
+     "Cebolla y tomate rallado",
+     "1 y 2"
+    ],
+    [
+     "Pimentón dulce, comino y azafrán",
+     "8 g, 2 g y unas hebras"
+    ],
+    [
+     "Majado: almendras, ajo y pan frito",
+     "40 g, 3 dientes y 1 rebanada"
+    ]
+   ],
+   "steps": [
+    "Cuece los garbanzos en agua caliente a fuego suave 1,5–2 horas, hasta casi tiernos.",
+    "Haz un sofrito de cebolla y tomate; aparta y añade el pimentón y el comino.",
+    "Incorpora el sofrito, la calabaza, la patata y las judías y cuece 20 minutos.",
+    "Añade las peras y el azafrán y cuece 10 minutos más.",
+    "Liga con el majado desleído en caldo, cuece 5 minutos y deja reposar."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Garbanzos",
+    "ratio": "1,5–2 horas",
+    "note": "Agua caliente."
+   },
+   {
+    "use": "Verduras",
+    "ratio": "30 minutos al final",
+    "note": "Pera los últimos 10."
+   },
+   {
+    "use": "Majado",
+    "ratio": "40 g de almendra por 6 raciones",
+    "note": "Espesa."
+   },
+   {
+    "use": "Ración",
+    "ratio": "450 g",
+    "note": "Plato único."
+   }
+  ],
+  "variants": [
+   {
+    "id": "legumbres",
+    "name": "Legumbres",
+    "note": "Remojo y cocción."
+   },
+   {
+    "id": "calabaza",
+    "name": "Calabaza",
+    "note": "Se deshace y liga."
+   },
+   {
+    "id": "picada",
+    "name": "Majado",
+    "note": "Ligazón de almendra y pan."
+   },
+   {
+    "id": "espinacas-con-garbanzos",
+    "name": "Espinacas con garbanzos",
+    "note": "Otro potaje sin carne."
+   }
+  ],
+  "keys": [
+   "Garbanzo en agua caliente.",
+   "Pera firme, al final.",
+   "Majado para ligar.",
+   "Pimentón fuera del fuego.",
+   "Cada casa, su olla."
+  ],
+  "errors": [
+   {
+    "p": "Garbanzo duro",
+    "fix": "Poco remojo o agua fría. Remoja y cuece en caliente."
+   },
+   {
+    "p": "Pera deshecha",
+    "fix": "Añadida pronto o madura. Firme y al final."
+   },
+   {
+    "p": "Caldo aguado",
+    "fix": "Sin majado. Liga con almendra y pan."
+   }
+  ],
+  "history": "La olla gitana es un guiso tradicional de la huerta murciana y del sur de Valencia, de otoño y sin carne.",
+  "uses": [
+   "Platos de cuchara",
+   "Menús vegetales",
+   "Guisos de otoño"
+  ],
+  "keep": "4 días en frío; mejora al día siguiente.",
+  "pro": "Garbanzos cocidos en tanda; verduras y pera al terminar.",
+  "related": [
+   "legumbres",
+   "calabaza",
+   "picada",
+   "espinacas-con-garbanzos",
+   "manzana-y-pera",
+   "fabada-y-potajes"
+  ]
+ },
+ {
+  "id": "escudella-i-carn-dolla",
+  "name": "Escudella i carn d'olla",
+  "name_en": "Catalan meat and vegetable stew",
+  "cat": "tecnicas",
+  "group": "Cocina catalana",
+  "technique": "hervido",
+  "aka": [
+   "escudella",
+   "carn d'olla",
+   "escudella i carn d'olla",
+   "pilota",
+   "galets",
+   "sopa de Navidad catalana"
+  ],
+  "summary": "Cocido catalán: carnes, butifarras, pilota y verduras cocidas juntas; el caldo con galets como primer plato y las carnes después.",
+  "what": "La escudella i carn d'olla es el cocido de Cataluña. Se cuecen juntos huesos y carnes (gallina, ternera, cerdo), butifarra blanca y negra, garbanzos, verduras (col, patata, zanahoria, nabo, apio) y la pilota, una gran albóndiga de carne picada con huevo, pan, ajo y perejil. Primero se sirve el caldo con pasta (los galets, en forma de caracola) y luego la carn d'olla en fuente.\n\nEs el plato tradicional de Navidad en Cataluña. Ver [[cocido]].",
+  "base": {
+   "for": "8 raciones",
+   "items": [
+    [
+     "Gallina o pollo",
+     "1/2"
+    ],
+    [
+     "Morcillo de ternera y espinazo de cerdo",
+     "500 g y 400 g"
+    ],
+    [
+     "Huesos de rodilla y de jamón",
+     "500 g"
+    ],
+    [
+     "Butifarra blanca y negra",
+     "1 de cada"
+    ],
+    [
+     "Garbanzos remojados",
+     "250 g en seco"
+    ],
+    [
+     "Col, patata, zanahoria, nabo y apio",
+     "1 kg en total"
+    ],
+    [
+     "Pilota: carne picada, huevo, pan mojado, ajo y perejil",
+     "400 g, 1, 50 g y al gusto"
+    ],
+    [
+     "Galets",
+     "200 g"
+    ]
+   ],
+   "steps": [
+    "Pon carnes y huesos en agua fría, lleva a hervor y espuma; cuece a fuego suave 2 horas.",
+    "Añade los garbanzos en una red y cuece 1 hora más.",
+    "Incorpora la pilota, las verduras y las butifarras y cuece 40 minutos.",
+    "Cuela el caldo, cuece los galets en él y sirve como primer plato.",
+    "Sirve la carn d'olla en fuente con verduras y garbanzos."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Cocción total",
+    "ratio": "3,5–4 horas",
+    "note": "Fuego suave."
+   },
+   {
+    "use": "Pilota",
+    "ratio": "40 minutos en el caldo",
+    "note": "Hecha al centro."
+   },
+   {
+    "use": "Galets",
+    "ratio": "30 g por ración",
+    "note": ""
+   },
+   {
+    "use": "Caldo por ración",
+    "ratio": "350 ml",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "cocido",
+    "name": "Cocido madrileño",
+    "note": "El pariente."
+   },
+   {
+    "id": "caldo-de-cocido-y-jamon",
+    "name": "Caldo de cocido",
+    "note": "La base."
+   },
+   {
+    "id": "albondigas",
+    "name": "Albóndigas",
+    "note": "Pariente de la pilota."
+   },
+   {
+    "id": "pot-au-feu",
+    "name": "Pot-au-feu",
+    "note": "Versión francesa."
+   }
+  ],
+  "keys": [
+   "Espumar al principio.",
+   "Fuego suave para un caldo limpio.",
+   "Cada ingrediente, a su tiempo.",
+   "Primero la sopa, después la carne.",
+   "Cada casa, su escudella."
+  ],
+  "errors": [
+   {
+    "p": "Caldo turbio",
+    "fix": "Hervor fuerte o sin espumar. Fuego suave y espuma."
+   },
+   {
+    "p": "Pilota que se rompe",
+    "fix": "Poco ligada. Más pan y huevo."
+   },
+   {
+    "p": "Verduras deshechas",
+    "fix": "Añadidas pronto. Al final."
+   }
+  ],
+  "history": "La escudella es el plato tradicional de Navidad en Cataluña y, durante siglos, la comida diaria de muchas casas.",
+  "uses": [
+   "Comidas de fiesta",
+   "Platos de invierno",
+   "Caldos para otras elaboraciones"
+  ],
+  "keep": "Caldo, 3–4 días en frío o congelado; carnes, 3 días.",
+  "pro": "Caldo en tanda; galets al pedido.",
+  "related": [
+   "cocido",
+   "caldo-de-cocido-y-jamon",
+   "albondigas",
+   "pot-au-feu",
+   "legumbres",
+   "coles-y-brasicas"
+  ]
+ },
+ {
+  "id": "cocido-maragato",
+  "name": "Cocido maragato",
+  "name_en": "Maragato stew",
+  "cat": "tecnicas",
+  "group": "Cocina castellana",
+  "technique": "hervido",
+  "aka": [
+   "cocido maragato",
+   "cocido al revés",
+   "cocido de Astorga",
+   "cocido leonés"
+  ],
+  "summary": "Cocido de León que se sirve al revés: primero las carnes, luego garbanzos y verdura, y la sopa al final.",
+  "what": "El cocido maragato, de la comarca de Astorga (León), lleva muchas carnes: morcillo, gallina, chorizo, lacón, oreja, tocino, costilla, a veces relleno de pan y huevo. Lo distintivo es el orden: se sirven primero las carnes, luego los garbanzos con la verdura (repollo) y por último la sopa.\n\nSe cuenta que el orden viene de los arrieros que comían primero lo más sustancioso; es una explicación popular. Ver [[cocido]].",
+  "base": {
+   "for": "8 raciones",
+   "items": [
+    [
+     "Garbanzos remojados",
+     "400 g en seco"
+    ],
+    [
+     "Morcillo, gallina, lacón y oreja",
+     "2 kg en total"
+    ],
+    [
+     "Chorizo y tocino",
+     "300 g y 200 g"
+    ],
+    [
+     "Repollo",
+     "1 pequeño"
+    ],
+    [
+     "Patatas",
+     "4"
+    ],
+    [
+     "Fideos finos",
+     "150 g"
+    ],
+    [
+     "Relleno: pan, huevo, ajo y perejil (opcional)",
+     "200 g, 2 y al gusto"
+    ]
+   ],
+   "steps": [
+    "Cuece las carnes en agua fría, espumando, a fuego suave 1 hora.",
+    "Añade los garbanzos en agua caliente y cuece 2–2,5 horas.",
+    "Cuece aparte el repollo con las patatas y rehógalo con ajo y pimentón.",
+    "Fríe el relleno en bolas o tortilla y cuécelo los últimos 15 minutos.",
+    "Sirve las carnes primero, luego garbanzos y verdura, y al final la sopa de fideos."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Cocción total",
+    "ratio": "3–3,5 horas",
+    "note": "Fuego suave."
+   },
+   {
+    "use": "Carnes por ración",
+    "ratio": "250 g",
+    "note": "Variadas."
+   },
+   {
+    "use": "Garbanzos",
+    "ratio": "50 g en seco por ración",
+    "note": ""
+   },
+   {
+    "use": "Sopa",
+    "ratio": "300 ml por ración",
+    "note": "Al final."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cocido",
+    "name": "Cocido madrileño",
+    "note": "Orden habitual."
+   },
+   {
+    "id": "chorizo-y-embutidos-curados",
+    "name": "Chorizo",
+    "note": "Del compango."
+   },
+   {
+    "id": "coles-y-brasicas",
+    "name": "Repollo",
+    "note": "Rehogado."
+   },
+   {
+    "id": "lacon-con-grelos",
+    "name": "Lacón",
+    "note": "Otra carne del cocido."
+   }
+  ],
+  "keys": [
+   "Orden al revés: carne, garbanzo, sopa.",
+   "Muchas carnes y casquería.",
+   "Verdura aparte.",
+   "Fuego suave.",
+   "Cada casa, su cocido."
+  ],
+  "errors": [
+   {
+    "p": "Garbanzo duro",
+    "fix": "Agua fría o poco remojo. Agua caliente."
+   },
+   {
+    "p": "Repollo con mal olor",
+    "fix": "Cocido largo. Aparte y justo."
+   },
+   {
+    "p": "Caldo graso",
+    "fix": "Mucho tocino. Desgrasa en frío."
+   }
+  ],
+  "history": "El cocido maragato es típico de la Maragatería, en León, y su orden al revés lo ha hecho conocido en toda España.",
+  "uses": [
+   "Comidas de invierno",
+   "Platos de fiesta"
+  ],
+  "keep": "3–4 días en frío por separado.",
+  "pro": "Carnes y caldo en tanda; verdura al día.",
+  "related": [
+   "cocido",
+   "chorizo-y-embutidos-curados",
+   "coles-y-brasicas",
+   "lacon-con-grelos",
+   "casqueria",
+   "legumbres"
+  ]
+ },
+ {
+  "id": "cocido-montanes",
+  "name": "Cocido montañés",
+  "name_en": "Cantabrian bean and cabbage stew",
+  "cat": "tecnicas",
+  "group": "Clásicos españoles",
+  "technique": "guiso",
+  "aka": [
+   "cocido montañés",
+   "cocido de Cantabria",
+   "alubias con berza",
+   "cocido lebaniego"
+  ],
+  "summary": "Guiso de Cantabria de alubias blancas y berza cocidas por separado y unidas al final, con compango de chorizo, morcilla y tocino.",
+  "what": "El cocido montañés une dos ollas: en una, alubias blancas con el compango (chorizo, morcilla, tocino, costilla, oreja); en otra, la berza (col) cocida, escurrida y rehogada con ajo y pimentón. Se juntan al final para que cada parte conserve su sabor. Es más espeso que un caldo y menos que una fabada.\n\nEl cocido lebaniego, de Liébana, lleva garbanzos en lugar de alubias. Cada casa tiene sus proporciones.",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Alubias blancas remojadas",
+     "500 g en seco"
+    ],
+    [
+     "Berza o col",
+     "1 kg"
+    ],
+    [
+     "Chorizo y morcilla",
+     "2 de cada"
+    ],
+    [
+     "Tocino y costilla de cerdo",
+     "200 g y 400 g"
+    ],
+    [
+     "Ajo y pimentón dulce",
+     "3 dientes y 5 g"
+    ],
+    [
+     "Aceite de oliva",
+     "40 ml"
+    ]
+   ],
+   "steps": [
+    "Cuece las alubias con el tocino y la costilla, empezando en agua fría, asustando con agua fría dos o tres veces, 1,5–2 horas.",
+    "Añade el chorizo y la morcilla pinchada los últimos 30 minutos.",
+    "Cuece la berza picada en otra olla 30–40 minutos y escúrrela.",
+    "Rehoga la berza con ajo y pimentón.",
+    "Junta la berza con las alubias, cuece 10 minutos y deja reposar."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Alubias",
+    "ratio": "1,5–2 horas",
+    "note": "Fuego suave."
+   },
+   {
+    "use": "Berza",
+    "ratio": "30–40 minutos aparte",
+    "note": ""
+   },
+   {
+    "use": "Alubias por ración",
+    "ratio": "80 g en seco",
+    "note": ""
+   },
+   {
+    "use": "Reposo",
+    "ratio": "15 minutos",
+    "note": "Liga."
+   }
+  ],
+  "variants": [
+   {
+    "id": "fabada-y-potajes",
+    "name": "Fabada",
+    "note": "Pariente asturiana."
+   },
+   {
+    "id": "alubias-de-tolosa",
+    "name": "Alubias de Tolosa",
+    "note": "Otra alubia del norte."
+   },
+   {
+    "id": "caldo-gallego",
+    "name": "Caldo gallego",
+    "note": "Con berza."
+   },
+   {
+    "id": "morcilla-y-embutidos-de-sangre",
+    "name": "Morcilla",
+    "note": "Del compango."
+   }
+  ],
+  "keys": [
+   "Dos ollas: alubias y berza.",
+   "Asustar las alubias con agua fría.",
+   "Morcilla pinchada y al final.",
+   "Juntar al final.",
+   "Cada casa, sus proporciones."
+  ],
+  "errors": [
+   {
+    "p": "Alubias rotas",
+    "fix": "Hervor fuerte. Fuego suave."
+   },
+   {
+    "p": "Sabor a col fuerte",
+    "fix": "Berza cocida junta. Por separado."
+   },
+   {
+    "p": "Caldo aguado",
+    "fix": "Poco reposo. Machaca unas alubias."
+   }
+  ],
+  "history": "El cocido montañés es el plato de cuchara más representativo de Cantabria.",
+  "uses": [
+   "Platos de invierno",
+   "Comidas de cuchara"
+  ],
+  "keep": "4 días en frío; mejora al día siguiente.",
+  "pro": "Alubias y berza en tanda por separado; se juntan por servicio.",
+  "related": [
+   "fabada-y-potajes",
+   "alubias-de-tolosa",
+   "caldo-gallego",
+   "morcilla-y-embutidos-de-sangre",
+   "chorizo-y-embutidos-curados",
+   "legumbres"
+  ]
+ },
+ {
+  "id": "ternasco-y-lechazo-asado",
+  "name": "Ternasco y lechazo asados",
+  "name_en": "Roast young lamb",
+  "cat": "tecnicas",
+  "group": "Clásicos españoles",
+  "technique": "horno",
+  "aka": [
+   "lechazo asado",
+   "ternasco de Aragón",
+   "cordero asado",
+   "cuarto de lechazo",
+   "asado castellano"
+  ],
+  "summary": "Cuartos de cordero lechal o ternasco asados en cazuela de barro con agua, sal y manteca, hasta que la carne se despega y la piel cruje.",
+  "what": "El asado castellano de lechazo (cordero que solo ha mamado) se hace en horno, en cazuela de barro, con poco más que agua, sal y un poco de manteca: la piel queda dorada y crujiente y la carne se despega del hueso. El ternasco de Aragón es un cordero algo mayor, que se asa de forma parecida, a menudo con patatas a lo pobre.\n\nEl secreto es el tiempo, el horno moderado y regar con el jugo. Ver [[cordero]] y [[horno-de-lena]].",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Cuarto de lechazo (paletilla o pierna)",
+     "2,5 kg"
+    ],
+    [
+     "Agua",
+     "300 ml"
+    ],
+    [
+     "Manteca de cerdo",
+     "40 g"
+    ],
+    [
+     "Sal",
+     "al gusto"
+    ],
+    [
+     "Ajo y laurel (opcional)",
+     "2 dientes y 1 hoja"
+    ]
+   ],
+   "steps": [
+    "Sala la pieza y colócala con la piel hacia abajo en una cazuela de barro con el agua.",
+    "Unta con manteca y hornea a 160–170 °C 1 hora, regando de vez en cuando.",
+    "Da la vuelta, con la piel hacia arriba, y sigue 45–60 minutos, regando.",
+    "Sube a 200 °C los últimos 10 minutos para que la piel cruja.",
+    "Deja reposar 10 minutos y sirve con su jugo y una ensalada."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Horno",
+    "ratio": "160–170 °C, 1,75–2 horas",
+    "note": "Según pieza."
+   },
+   {
+    "use": "Final para dorar",
+    "ratio": "200 °C, 10 minutos",
+    "note": "Piel crujiente."
+   },
+   {
+    "use": "Ración",
+    "ratio": "500–600 g con hueso",
+    "note": ""
+   },
+   {
+    "use": "Agua",
+    "ratio": "300 ml por cuarto",
+    "note": "Repón si se seca."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cordero",
+    "name": "Cordero",
+    "note": "Piezas."
+   },
+   {
+    "id": "horno-de-lena",
+    "name": "Horno de leña",
+    "note": "El horno tradicional."
+   },
+   {
+    "id": "cochinillo",
+    "name": "Cochinillo",
+    "note": "El otro asado castellano."
+   },
+   {
+    "id": "guarniciones-de-patata",
+    "name": "Patatas a lo pobre",
+    "note": "Con el ternasco."
+   }
+  ],
+  "keys": [
+   "Piel abajo primero, arriba después.",
+   "Horno moderado y largo.",
+   "Regar con el jugo.",
+   "Final fuerte para la piel.",
+   "Cazuela de barro si se puede."
+  ],
+  "errors": [
+   {
+    "p": "Carne seca",
+    "fix": "Horno fuerte o sin agua. Baja y riega."
+   },
+   {
+    "p": "Piel blanda",
+    "fix": "Sin golpe final. 200 °C al final."
+   },
+   {
+    "p": "Jugo quemado",
+    "fix": "Poca agua. Repón."
+   }
+  ],
+  "history": "El asado de lechazo es un emblema de Castilla y León; el ternasco de Aragón tiene indicación geográfica protegida.",
+  "uses": [
+   "Comidas de fiesta",
+   "Asados para compartir"
+  ],
+  "keep": "Mejor al momento; asado, 3 días en frío y regenerado en horno.",
+  "pro": "Asa por tandas según reservas; termina la piel al pase.",
+  "related": [
+   "cordero",
+   "horno-de-lena",
+   "cochinillo",
+   "guarniciones-de-patata",
+   "asado-al-horno",
+   "cazuelas-de-barro-y-hierro"
+  ]
+ },
+ {
+  "id": "empanada-gallega",
+  "name": "Empanada gallega",
+  "name_en": "Galician empanada",
+  "cat": "tecnicas",
+  "group": "Cocina gallega",
+  "technique": "horno",
+  "aka": [
+   "empanada gallega",
+   "empanada de bonito",
+   "empanada de zorza",
+   "empanada de berberechos",
+   "empanada de xoubas",
+   "masa de empanada"
+  ],
+  "summary": "Empanada grande de masa de pan o de hojaldre sencillo rellena de un sofrito de cebolla y pimiento con bonito, carne, zamburiñas o berberechos.",
+  "what": "La empanada gallega es una gran tarta salada cerrada, cocida al horno: una masa de harina, agua, aceite del sofrito y levadura (o sin ella), estirada fina, rellena de un sofrito abundante de cebolla y pimiento con pimentón, y del relleno elegido: bonito o atún, carne de cerdo adobada (zorza), pollo, zamburiñas, berberechos o sardinas. Se sirve templada o fría, en porciones.\n\nUsar el aceite del sofrito en la masa le da color y sabor. Cada casa tiene su masa y su relleno. Ver [[coca-y-masas-saladas]].",
+  "base": {
+   "for": "1 empanada de 35 cm (8 porciones)",
+   "items": [
+    [
+     "Harina de trigo",
+     "500 g"
+    ],
+    [
+     "Agua templada",
+     "200 ml"
+    ],
+    [
+     "Aceite del sofrito",
+     "80 ml"
+    ],
+    [
+     "Levadura fresca",
+     "10 g"
+    ],
+    [
+     "Sal",
+     "8 g"
+    ],
+    [
+     "Cebolla y pimiento rojo en tiras",
+     "1 kg y 2"
+    ],
+    [
+     "Bonito en conserva o cocinado",
+     "400 g"
+    ],
+    [
+     "Huevo para pintar",
+     "1"
+    ]
+   ],
+   "steps": [
+    "Pocha muy despacio la cebolla y el pimiento en aceite 40 minutos; añade pimentón y escurre reservando el aceite.",
+    "Amasa la harina con el agua, la levadura, la sal y el aceite del sofrito; deja reposar 30 minutos.",
+    "Divide en dos, estira fino y forra la bandeja con una mitad.",
+    "Reparte el sofrito y el bonito, cubre con la otra mitad, sella el borde con un cordón y haz un agujero central.",
+    "Pinta con huevo y hornea a 190 °C 35–45 minutos, hasta dorar."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Masa",
+    "ratio": "Harina, agua y aceite 100:40:16",
+    "note": ""
+   },
+   {
+    "use": "Horneado",
+    "ratio": "190 °C, 35–45 minutos",
+    "note": "Base dorada."
+   },
+   {
+    "use": "Relleno",
+    "ratio": "1 kg de sofrito por empanada",
+    "note": "Generoso."
+   },
+   {
+    "use": "Porción",
+    "ratio": "1/8",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "coca-y-masas-saladas",
+    "name": "Masas saladas",
+    "note": "Cocas y empanadas."
+   },
+   {
+    "id": "conservas-de-pescado-y-marisco",
+    "name": "Conservas",
+    "note": "Bonito y berberechos."
+   },
+   {
+    "id": "vieiras-y-zamburinas",
+    "name": "Zamburiñas",
+    "note": "Relleno de marisco."
+   },
+   {
+    "id": "sofrito",
+    "name": "Sofrito",
+    "note": "La base."
+   }
+  ],
+  "keys": [
+   "Sofrito largo y bien escurrido.",
+   "Aceite del sofrito en la masa.",
+   "Masa fina y bien sellada.",
+   "Agujero para el vapor.",
+   "Cada casa, su relleno."
+  ],
+  "errors": [
+   {
+    "p": "Base cruda",
+    "fix": "Relleno húmedo. Escurre y hornea abajo."
+   },
+   {
+    "p": "Masa dura",
+    "fix": "Masa gruesa o poca grasa. Estira fino y añade aceite."
+   },
+   {
+    "p": "Se abre",
+    "fix": "Borde mal sellado. Haz el cordón."
+   }
+  ],
+  "history": "La empanada es uno de los platos más antiguos y populares de Galicia, presente en todas sus fiestas.",
+  "uses": [
+   "Comidas al aire libre",
+   "Aperitivos",
+   "Platos para compartir"
+  ],
+  "keep": "2–3 días en frío; se sirve templada o fría.",
+  "pro": "Sofrito y masa el día antes; hornea por la mañana.",
+  "related": [
+   "coca-y-masas-saladas",
+   "conservas-de-pescado-y-marisco",
+   "vieiras-y-zamburinas",
+   "sofrito",
+   "atun-rojo-y-bonito",
+   "pimientos"
+  ]
+ },
+ {
+  "id": "atascaburras",
+  "name": "Atascaburras",
+  "name_en": "Salt cod and potato mash",
+  "cat": "tecnicas",
+  "group": "Cocina castellana",
+  "aka": [
+   "atascaburras",
+   "ajoarriero manchego",
+   "puré de bacalao y patata",
+   "bacalao con patata manchego"
+  ],
+  "summary": "Puré manchego de patata cocida y bacalao desalado, majado con ajo y aceite, coronado con huevo duro y nueces.",
+  "what": "El atascaburras es un plato de La Mancha (Albacete, Cuenca) para los días de frío: patata cocida y bacalao desalado y desmigado, majados juntos con ajo y aceite de oliva hasta formar una pasta untuosa, que se sirve templada con huevo duro y nueces por encima. Es pariente del ajoarriero de patata.\n\nSe trabaja a mano con un mortero o una cuchara de palo, añadiendo aceite poco a poco. Cada casa ajusta el ajo.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Patatas",
+     "800 g"
+    ],
+    [
+     "Bacalao desalado",
+     "300 g"
+    ],
+    [
+     "Ajo",
+     "3 dientes"
+    ],
+    [
+     "Aceite de oliva",
+     "150 ml"
+    ],
+    [
+     "Huevos duros",
+     "2"
+    ],
+    [
+     "Nueces",
+     "40 g"
+    ]
+   ],
+   "steps": [
+    "Cuece las patatas peladas en agua; en los últimos 5 minutos añade el bacalao.",
+    "Saca el bacalao, desmígalo sin piel ni espinas y reserva el agua.",
+    "Maja el ajo, añade el bacalao y luego la patata, trabajando con la mano del mortero.",
+    "Incorpora el aceite poco a poco y algo del agua de cocción hasta una pasta untuosa.",
+    "Sirve templado con huevo duro picado y nueces."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Patata y bacalao",
+    "ratio": "8:3",
+    "note": "Según la casa."
+   },
+   {
+    "use": "Bacalao",
+    "ratio": "5 minutos en el agua",
+    "note": "Al final."
+   },
+   {
+    "use": "Aceite",
+    "ratio": "150 ml por 4 raciones",
+    "note": "Poco a poco."
+   },
+   {
+    "use": "Ración",
+    "ratio": "250 g",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "bacalao",
+    "name": "Bacalao",
+    "note": "Desalado."
+   },
+   {
+    "id": "bacalao-ajoarriero",
+    "name": "Ajoarriero",
+    "note": "Pariente."
+   },
+   {
+    "id": "desalado-y-remojo",
+    "name": "Desalado",
+    "note": "Antes de empezar."
+   },
+   {
+    "id": "pures-de-verdura",
+    "name": "Purés",
+    "note": "Técnica de majado."
+   }
+  ],
+  "keys": [
+   "Bacalao bien desalado.",
+   "Majar, no triturar.",
+   "Aceite poco a poco.",
+   "Servir templado.",
+   "Cada casa, su ajo."
+  ],
+  "errors": [
+   {
+    "p": "Pasta elástica",
+    "fix": "Triturada con batidora. Maja a mano."
+   },
+   {
+    "p": "Muy salado",
+    "fix": "Desalado corto. Más remojo."
+   },
+   {
+    "p": "Seco",
+    "fix": "Poco aceite o agua. Añade."
+   }
+  ],
+  "history": "El atascaburras es un plato tradicional de la Mancha oriental, de días de frío.",
+  "uses": [
+   "Entrantes",
+   "Tostas",
+   "Tapas templadas"
+  ],
+  "keep": "2–3 días en frío; se templa antes de servir.",
+  "pro": "Hecho en tanda; huevo y nuez al servir.",
+  "related": [
+   "bacalao",
+   "bacalao-ajoarriero",
+   "desalado-y-remojo",
+   "pures-de-verdura",
+   "patata-y-boniato",
+   "frutos-secos"
+  ]
+ },
+ {
+  "id": "sancocho-canario",
+  "name": "Sancocho canario",
+  "name_en": "Canarian salt fish with potatoes",
+  "cat": "tecnicas",
+  "group": "Cocina canaria",
+  "technique": "hervido",
+  "aka": [
+   "sancocho canario",
+   "sancocho de cherne",
+   "pescado salado con papas",
+   "pella de gofio"
+  ],
+  "summary": "Pescado salado desalado (cherna o corvina) cocido con papas y batata, con mojo picón y pella de gofio.",
+  "what": "El sancocho canario es pescado salado, sobre todo cherna, que se desala durante un día o dos y se cuece con papas y batata. Se sirve con mojo, normalmente rojo, y pella de gofio, una masa de harina de cereal tostado amasada con agua, sal y a veces aceite o azúcar.\n\nEs plato de celebración, por ejemplo en Semana Santa. Cada isla y cada casa tienen su forma de servirlo.",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Cherna u otro pescado salado",
+     "1,2 kg"
+    ],
+    [
+     "Papas",
+     "1,2 kg"
+    ],
+    [
+     "Batata",
+     "600 g"
+    ],
+    [
+     "Mojo picón",
+     "250 ml"
+    ],
+    [
+     "Gofio",
+     "300 g"
+    ],
+    [
+     "Agua, sal y aceite para la pella",
+     "200 ml, 3 g y 20 ml"
+    ]
+   ],
+   "steps": [
+    "Desala el pescado en agua fría en frío 24–48 horas, cambiando el agua varias veces.",
+    "Cuece las papas y la batata con piel en agua con sal 20–25 minutos.",
+    "Cuece el pescado en agua sin sal 10–15 minutos, sin que hierva fuerte.",
+    "Amasa el gofio con agua, sal y aceite hasta una pella firme; forma un rulo y corta en rodajas.",
+    "Sirve el pescado con las papas, la batata, el mojo y la pella."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Desalado",
+    "ratio": "24–48 horas en frío",
+    "note": "Probar."
+   },
+   {
+    "use": "Cocción del pescado",
+    "ratio": "10–15 minutos",
+    "note": "Sin hervor fuerte."
+   },
+   {
+    "use": "Pescado por ración",
+    "ratio": "200 g",
+    "note": ""
+   },
+   {
+    "use": "Pella",
+    "ratio": "Gofio y agua 3:2",
+    "note": "Aprox."
+   }
+  ],
+  "variants": [
+   {
+    "id": "mojo-picon",
+    "name": "Mojo picón",
+    "note": "La salsa."
+   },
+   {
+    "id": "papas-arrugadas",
+    "name": "Papas",
+    "note": "Canarias."
+   },
+   {
+    "id": "mero-y-cherna",
+    "name": "Cherna",
+    "note": "El pescado."
+   },
+   {
+    "id": "desalado-y-remojo",
+    "name": "Desalado",
+    "note": "Tiempo y frío."
+   }
+  ],
+  "keys": [
+   "Desalar en frío y probar.",
+   "Pescado sin hervor fuerte.",
+   "Mojo y pella al servir.",
+   "Papas con piel.",
+   "Cada isla, su sancocho."
+  ],
+  "errors": [
+   {
+    "p": "Muy salado",
+    "fix": "Desalado corto. Más tiempo y cambios de agua."
+   },
+   {
+    "p": "Pescado deshecho",
+    "fix": "Hervor fuerte. Fuego suave."
+   },
+   {
+    "p": "Pella seca",
+    "fix": "Poca agua. Añade poco a poco."
+   }
+  ],
+  "history": "El sancocho es uno de los platos más tradicionales de Canarias, muy ligado a la Semana Santa.",
+  "uses": [
+   "Comidas de fiesta",
+   "Platos de pescado"
+  ],
+  "keep": "Pescado desalado, 2 días en frío; cocido, al momento.",
+  "pro": "Desala con antelación y anota los cambios de agua.",
+  "related": [
+   "mojo-picon",
+   "papas-arrugadas",
+   "mero-y-cherna",
+   "desalado-y-remojo",
+   "patata-y-boniato",
+   "salazones-y-huevas"
+  ]
+ },
+ {
+  "id": "ropa-vieja",
+  "name": "Ropa vieja",
+  "name_en": "Ropa vieja",
+  "cat": "tecnicas",
+  "group": "Cocina canaria",
+  "technique": "salteado",
+  "aka": [
+   "ropa vieja",
+   "ropa vieja canaria",
+   "garbanzas con carne",
+   "aprovechamiento de cocido"
+  ],
+  "summary": "Garbanzos con carne desmigada de ternera y pollo, rehogados con sofrito, pimentón y papas fritas; nacida para aprovechar el cocido.",
+  "what": "La ropa vieja es un plato de aprovechamiento: la carne y los garbanzos que sobran del cocido se desmigan y se rehogan con un sofrito de cebolla, pimiento, tomate y ajo, pimentón, comino y tomillo, y a menudo papas fritas en dados. En Canarias es plato propio, con garbanzos (garbanzas) y carne de ternera y pollo. En Andalucía hay versiones parecidas; en Cuba, la ropa vieja es carne deshilachada en salsa.\n\nCada casa le pone su toque.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Garbanzos cocidos",
+     "500 g"
+    ],
+    [
+     "Carne cocida de ternera y pollo desmigada",
+     "400 g"
+    ],
+    [
+     "Papas en dados fritas",
+     "300 g"
+    ],
+    [
+     "Cebolla, pimiento y tomate",
+     "1, 1 y 2"
+    ],
+    [
+     "Ajo, pimentón, comino y tomillo",
+     "2 dientes, 5 g, 2 g y una pizca"
+    ],
+    [
+     "Vino blanco",
+     "60 ml"
+    ]
+   ],
+   "steps": [
+    "Haz un sofrito con la cebolla, el pimiento, el ajo y el tomate.",
+    "Añade el pimentón, el comino y el tomillo y moja con el vino.",
+    "Incorpora la carne desmigada y rehoga 5 minutos.",
+    "Añade los garbanzos y las papas y saltea a fuego medio hasta que todo esté caliente.",
+    "Ajusta de sal y sirve."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Garbanzo y carne",
+    "ratio": "5:4",
+    "note": "Según lo que sobre."
+   },
+   {
+    "use": "Calentado",
+    "ratio": "75 °C o más en el centro",
+    "note": "Aprovechamiento seguro."
+   },
+   {
+    "use": "Ración",
+    "ratio": "350 g",
+    "note": ""
+   },
+   {
+    "use": "Papas",
+    "ratio": "75 g por ración",
+    "note": "Fritas."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cocido",
+    "name": "Cocido",
+    "note": "De donde sale."
+   },
+   {
+    "id": "cocina-de-aprovechamiento",
+    "name": "Aprovechamiento",
+    "note": "La idea."
+   },
+   {
+    "id": "espinacas-con-garbanzos",
+    "name": "Garbanzos rehogados",
+    "note": "Otro guiso andaluz."
+   },
+   {
+    "id": "sofrito",
+    "name": "Sofrito",
+    "note": "La base."
+   }
+  ],
+  "keys": [
+   "Sobras enfriadas rápido y en frío.",
+   "Sofrito sabroso.",
+   "Recalentar bien.",
+   "Garbanzo entero, no puré.",
+   "Cada casa, su toque."
+  ],
+  "errors": [
+   {
+    "p": "Plato seco",
+    "fix": "Poco sofrito o vino. Añade."
+   },
+   {
+    "p": "Garbanzos rotos",
+    "fix": "Removido de más. Mezcla suave."
+   },
+   {
+    "p": "Papas blandas",
+    "fix": "Añadidas pronto. Al final."
+   }
+  ],
+  "history": "La ropa vieja nació como forma de aprovechar las sobras del cocido y es un plato muy popular en Canarias.",
+  "uses": [
+   "Platos de aprovechamiento",
+   "Platos únicos"
+  ],
+  "keep": "Sobras de cocido, 3 días en frío; la ropa vieja, al momento.",
+  "pro": "Carne desmigada y garbanzos en frío; saltea al pedido.",
+  "related": [
+   "cocido",
+   "cocina-de-aprovechamiento",
+   "espinacas-con-garbanzos",
+   "sofrito",
+   "legumbres",
+   "reposos-y-regeneracion"
+  ]
+ },
+ {
+  "id": "caldereta-extremena",
+  "name": "Caldereta extremeña",
+  "name_en": "Extremaduran lamb stew",
+  "cat": "tecnicas",
+  "group": "Clásicos españoles",
+  "technique": "guiso",
+  "aka": [
+   "caldereta extremeña",
+   "caldereta de cordero",
+   "caldereta de cabrito",
+   "caldereta pastoril"
+  ],
+  "summary": "Guiso de cordero o cabrito con pimiento, pimentón de la Vera y laurel, ligado con un majado de hígado frito, ajo y pan.",
+  "what": "La caldereta extremeña es el guiso pastoril de cordero o cabrito: la carne en trozos se dora, se guisa con cebolla, pimiento, ajo, laurel, pimentón de la Vera y vino blanco, y se liga al final con un majado de su propio hígado frito, ajo, pan frito y a veces pimiento choricero.\n\nEs plato de fiestas y matanzas en Extremadura. Cada casa ajusta el pimentón y el majado.",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Cordero o cabrito en trozos",
+     "2 kg"
+    ],
+    [
+     "Hígado del cordero",
+     "200 g"
+    ],
+    [
+     "Cebolla y pimiento rojo",
+     "2 y 2"
+    ],
+    [
+     "Ajo y laurel",
+     "1 cabeza y 2 hojas"
+    ],
+    [
+     "Pimentón de la Vera",
+     "10 g"
+    ],
+    [
+     "Vino blanco",
+     "200 ml"
+    ],
+    [
+     "Pan frito",
+     "2 rebanadas"
+    ]
+   ],
+   "steps": [
+    "Dora la carne salpimentada en aceite y reserva; fríe el hígado y el pan y reserva.",
+    "Pocha la cebolla, el pimiento y el ajo en la misma grasa.",
+    "Vuelve la carne, añade el laurel, aparta y añade el pimentón; moja con el vino y agua hasta casi cubrir.",
+    "Guisa a fuego suave 1–1,5 horas, hasta que la carne esté tierna.",
+    "Maja el hígado, el pan y unos ajos con caldo, liga el guiso y cuece 10 minutos."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Guiso",
+    "ratio": "1–1,5 horas",
+    "note": "Fuego suave."
+   },
+   {
+    "use": "Hígado",
+    "ratio": "100 g por kg de carne",
+    "note": "Majado."
+   },
+   {
+    "use": "Ración",
+    "ratio": "350 g con hueso",
+    "note": ""
+   },
+   {
+    "use": "Pimentón",
+    "ratio": "Fuera del fuego",
+    "note": "Que no amargue."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cordero",
+    "name": "Cordero",
+    "note": "Piezas para guiso."
+   },
+   {
+    "id": "cabrito",
+    "name": "Cabrito",
+    "note": "Alternativa."
+   },
+   {
+    "id": "picada",
+    "name": "Majado",
+    "note": "Ligazón."
+   },
+   {
+    "id": "pimenton-y-noras",
+    "name": "Pimentón de la Vera",
+    "note": "Ahumado."
+   }
+  ],
+  "keys": [
+   "Dorar bien la carne.",
+   "Pimentón fuera del fuego.",
+   "Majado de hígado para ligar.",
+   "Fuego suave.",
+   "Cada casa, su caldereta."
+  ],
+  "errors": [
+   {
+    "p": "Salsa amarga",
+    "fix": "Pimentón quemado. Aparta del fuego."
+   },
+   {
+    "p": "Carne dura",
+    "fix": "Poco tiempo. Alarga."
+   },
+   {
+    "p": "Salsa sin cuerpo",
+    "fix": "Sin majado. Liga con hígado y pan."
+   }
+  ],
+  "history": "La caldereta es un guiso de pastores de Extremadura, hecho en el campo en caldero de hierro.",
+  "uses": [
+   "Guisos de fiesta",
+   "Platos de cuchara"
+  ],
+  "keep": "4 días en frío; mejora al día siguiente.",
+  "pro": "Guisa en tanda y liga al regenerar.",
+  "related": [
+   "cordero",
+   "cabrito",
+   "picada",
+   "pimenton-y-noras",
+   "guisos-largos",
+   "casqueria"
+  ]
+ },
+ {
+  "id": "caparrones",
+  "name": "Caparrones",
+  "name_en": "Riojan red beans",
+  "cat": "tecnicas",
+  "group": "Clásicos españoles",
+  "technique": "guiso",
+  "aka": [
+   "caparrones",
+   "alubias rojas riojanas",
+   "caparrones con chorizo",
+   "potaje de caparrones"
+  ],
+  "summary": "Alubias rojas pintas de La Rioja guisadas despacio con chorizo, costilla y guindillas en vinagre al lado.",
+  "what": "Los caparrones son alubias rojas, pequeñas y redondeadas, típicas de La Rioja (Anguiano). Se guisan a fuego muy suave con cebolla, pimiento, chorizo, costilla adobada y a veces oreja, hasta que el caldo queda espeso y la piel de la alubia intacta. Se sirven con guindillas en vinagre.\n\nComo toda alubia, se asustan con agua fría para que la piel no se rompa. Cada casa decide el compango.",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Caparrones remojados 12 horas",
+     "500 g en seco"
+    ],
+    [
+     "Chorizo de cocinar",
+     "2"
+    ],
+    [
+     "Costilla de cerdo adobada",
+     "400 g"
+    ],
+    [
+     "Cebolla y pimiento verde",
+     "1 y 1"
+    ],
+    [
+     "Aceite de oliva",
+     "50 ml"
+    ],
+    [
+     "Guindillas en vinagre",
+     "para servir"
+    ]
+   ],
+   "steps": [
+    "Pon las alubias en agua fría con la cebolla, el pimiento, el aceite y la costilla.",
+    "Lleva a hervor y baja a fuego muy suave; asusta con agua fría dos o tres veces.",
+    "Cuece 1,5–2 horas, moviendo la olla sin remover.",
+    "Añade el chorizo los últimos 30 minutos.",
+    "Tritura la cebolla y el pimiento con algo de caldo para espesar; sirve con guindillas."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Cocción",
+    "ratio": "1,5–2 horas",
+    "note": "Fuego muy suave."
+   },
+   {
+    "use": "Alubias por ración",
+    "ratio": "80 g en seco",
+    "note": ""
+   },
+   {
+    "use": "Chorizo",
+    "ratio": "Últimos 30 minutos",
+    "note": ""
+   },
+   {
+    "use": "Reposo",
+    "ratio": "15–30 minutos",
+    "note": "Mejoran."
+   }
+  ],
+  "variants": [
+   {
+    "id": "alubias-de-tolosa",
+    "name": "Alubias de Tolosa",
+    "note": "Alubia negra vasca."
+   },
+   {
+    "id": "patatas-a-la-riojana",
+    "name": "Patatas a la riojana",
+    "note": "Otro guiso riojano."
+   },
+   {
+    "id": "chorizo-y-embutidos-curados",
+    "name": "Chorizo",
+    "note": "El compango."
+   },
+   {
+    "id": "vinagreta-piparras",
+    "name": "Guindillas",
+    "note": "Al lado."
+   }
+  ],
+  "keys": [
+   "Fuego muy suave.",
+   "Asustar con agua fría.",
+   "Mover la olla, no remover.",
+   "Guindillas al lado.",
+   "Cada casa, su compango."
+  ],
+  "errors": [
+   {
+    "p": "Alubias peladas",
+    "fix": "Hervor fuerte. Fuego mínimo."
+   },
+   {
+    "p": "Caldo aguado",
+    "fix": "Sin espesar. Tritura verdura y alubias."
+   },
+   {
+    "p": "Alubias duras",
+    "fix": "Poco remojo. Remoja 12 horas."
+   }
+  ],
+  "history": "Los caparrones son la legumbre más representativa de La Rioja, con fiestas propias en algunos pueblos.",
+  "uses": [
+   "Platos de cuchara",
+   "Comidas de invierno"
+  ],
+  "keep": "4 días en frío; mejoran al día siguiente.",
+  "pro": "Guisa en tanda; el chorizo al regenerar.",
+  "related": [
+   "alubias-de-tolosa",
+   "patatas-a-la-riojana",
+   "chorizo-y-embutidos-curados",
+   "vinagreta-piparras",
+   "legumbres",
+   "fabada-y-potajes"
+  ]
+ },
+ {
+  "id": "frito-mallorquin",
+  "name": "Frito mallorquín",
+  "name_en": "Mallorcan fry-up",
+  "cat": "tecnicas",
+  "group": "Cocina de Baleares",
+  "technique": "salteado",
+  "aka": [
+   "frit mallorquí",
+   "frito mallorquín",
+   "frit de matances",
+   "frit de xot",
+   "frito de cordero"
+  ],
+  "summary": "Salteado de dados de cordero o cerdo y su asadura con patata, pimiento, cebolla tierna, hinojo silvestre y ajo.",
+  "what": "El frit mallorquí es un salteado de Mallorca hecho con carne y vísceras de cordero o de cerdo (hígado, pulmón, sangre cocida) en dados pequeños, junto con patata en dados, pimiento rojo, cebolla tierna, ajos tiernos e hinojo silvestre, todo frito por separado y unido al final con laurel y pimienta. El frit de matances es el de la matanza del cerdo.\n\nEs pariente de la [[frita-de-pulpo-y-de-porc|frita ibicenca]]. Cada casa lo hace a su manera.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Carne de cordero o cerdo en dados",
+     "400 g"
+    ],
+    [
+     "Hígado y asadura en dados",
+     "300 g"
+    ],
+    [
+     "Patata en dados pequeños",
+     "500 g"
+    ],
+    [
+     "Pimiento rojo y cebolla tierna",
+     "1 y 2"
+    ],
+    [
+     "Ajos tiernos e hinojo silvestre",
+     "4 y unas ramas"
+    ],
+    [
+     "Laurel, pimienta y aceite de oliva",
+     "2 hojas, al gusto y 150 ml"
+    ]
+   ],
+   "steps": [
+    "Fríe la patata en dados en aceite hasta dorar y reserva.",
+    "Fríe el pimiento y la cebolla con los ajos tiernos y reserva.",
+    "Saltea la carne a fuego fuerte, luego la asadura y el hígado, con el laurel.",
+    "Une todo con el hinojo picado y la pimienta y saltea 2–3 minutos.",
+    "Sirve caliente."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Dados",
+    "ratio": "1,5 cm",
+    "note": "Iguales."
+   },
+   {
+    "use": "Vísceras",
+    "ratio": "Bien hechas, 70 °C o más",
+    "note": ""
+   },
+   {
+    "use": "Ración",
+    "ratio": "300 g",
+    "note": ""
+   },
+   {
+    "use": "Patata",
+    "ratio": "125 g por ración",
+    "note": "Frita aparte."
+   }
+  ],
+  "variants": [
+   {
+    "id": "frita-de-pulpo-y-de-porc",
+    "name": "Frita ibicenca",
+    "note": "Pariente."
+   },
+   {
+    "id": "casqueria",
+    "name": "Casquería",
+    "note": "Vísceras."
+   },
+   {
+    "id": "cordero",
+    "name": "Cordero",
+    "note": "La carne."
+   },
+   {
+    "id": "hinojo-y-apio",
+    "name": "Hinojo",
+    "note": "Silvestre."
+   }
+  ],
+  "keys": [
+   "Todo frito por separado.",
+   "Dados del mismo tamaño.",
+   "Vísceras muy frescas y bien hechas.",
+   "Hinojo al final.",
+   "Cada casa, su frit."
+  ],
+  "errors": [
+   {
+    "p": "Patata blanda",
+    "fix": "Frita con la carne. Aparte."
+   },
+   {
+    "p": "Hígado duro",
+    "fix": "Mucho tiempo. Justo."
+   },
+   {
+    "p": "Graso",
+    "fix": "Sin escurrir. Escurre cada fritura."
+   }
+  ],
+  "history": "El frit es uno de los platos más populares de Mallorca, ligado a la matanza y a la Pascua.",
+  "uses": [
+   "Tapas",
+   "Platos principales",
+   "Comidas de matanza"
+  ],
+  "keep": "Al momento; los fritos por separado, 1 día en frío.",
+  "pro": "Elementos fritos por separado; une al pedido.",
+  "related": [
+   "frita-de-pulpo-y-de-porc",
+   "casqueria",
+   "cordero",
+   "hinojo-y-apio",
+   "sopas-mallorquinas",
+   "cerdo-de-capa-blanca"
+  ]
+ },
+ {
+  "id": "imam-bayildi",
+  "name": "Imam bayildi y berenjenas rellenas turcas",
+  "name_en": "Imam bayildi",
+  "cat": "tecnicas",
+  "group": "Mediterráneo oriental y Magreb",
+  "technique": "confitado",
+  "aka": [
+   "imam bayildi",
+   "berenjenas a la turca",
+   "karniyarik",
+   "berenjena rellena turca"
+  ],
+  "summary": "Berenjenas enteras fritas o asadas, abiertas y rellenas de cebolla, tomate, ajo y perejil, cocidas en mucho aceite y servidas templadas.",
+  "what": "El imam bayildi es un plato turco de berenjenas: se pelan a tiras, se fríen o asan enteras hasta que ablandan, se abren a lo largo y se rellenan de cebolla pochada en mucho aceite de oliva, tomate, ajo y perejil. Se terminan al horno o en cazuela tapada con su aceite y se sirven templadas o frías, como plato de aceite (zeytinyağlı). El karniyarik es la versión con carne picada, que se sirve caliente.\n\nEl nombre se suele traducir como «el imán se desmayó»; hay varias leyendas sobre el motivo.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Berenjenas medianas",
+     "4"
+    ],
+    [
+     "Cebollas en juliana",
+     "3"
+    ],
+    [
+     "Tomates maduros pelados y picados",
+     "3"
+    ],
+    [
+     "Ajo laminado",
+     "6 dientes"
+    ],
+    [
+     "Perejil picado",
+     "1 manojo"
+    ],
+    [
+     "Aceite de oliva",
+     "150 ml"
+    ],
+    [
+     "Azúcar y sal",
+     "una pizca y al gusto"
+    ]
+   ],
+   "steps": [
+    "Pela las berenjenas a tiras, sálalas 20 minutos y sécalas.",
+    "Fríelas o ásalas enteras hasta que estén blandas.",
+    "Pocha la cebolla y el ajo en el aceite 15 minutos, añade el tomate, el azúcar y el perejil y cocina 10 minutos.",
+    "Abre las berenjenas a lo largo y rellénalas.",
+    "Hornea a 180 °C 30–40 minutos con un poco de agua y el aceite; sirve templado."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Horno",
+    "ratio": "180 °C, 30–40 minutos",
+    "note": "Tapado al principio."
+   },
+   {
+    "use": "Relleno",
+    "ratio": "150 g por berenjena",
+    "note": ""
+   },
+   {
+    "use": "Servicio",
+    "ratio": "Templado o frío",
+    "note": "Plato de aceite."
+   },
+   {
+    "use": "Ración",
+    "ratio": "1 berenjena",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "berenjena",
+    "name": "Berenjena",
+    "note": "Producto."
+   },
+   {
+    "id": "verduras-rellenas",
+    "name": "Verduras rellenas",
+    "note": "La familia."
+   },
+   {
+    "id": "musaka",
+    "name": "Musaka",
+    "note": "Otro clásico de berenjena."
+   },
+   {
+    "id": "dolmas",
+    "name": "Dolmas",
+    "note": "Otro plato de aceite."
+   }
+  ],
+  "keys": [
+   "Berenjena bien blanda antes de rellenar.",
+   "Cebolla pochada y abundante.",
+   "Aceite generoso.",
+   "Servir templado.",
+   "Con carne, karniyarik y caliente."
+  ],
+  "errors": [
+   {
+    "p": "Berenjena dura",
+    "fix": "Poco cocinada antes. Fríe o asa más."
+   },
+   {
+    "p": "Amarga",
+    "fix": "Berenjena vieja. Sala y escurre."
+   },
+   {
+    "p": "Relleno seco",
+    "fix": "Poco aceite. Añade."
+   }
+  ],
+  "history": "El imam bayildi es un clásico de la cocina turca de platos en aceite de oliva.",
+  "uses": [
+   "Mezze",
+   "Platos vegetales",
+   "Entrantes templados"
+  ],
+  "keep": "4 días en frío; mejor al día siguiente.",
+  "pro": "Elabora en tanda; atempera antes de servir.",
+  "related": [
+   "berenjena",
+   "verduras-rellenas",
+   "musaka",
+   "dolmas",
+   "cebolla-y-ajo",
+   "aceite-de-oliva"
+  ]
+ },
+ {
+  "id": "lahmacun-y-pide",
+  "name": "Lahmacun y pide",
+  "name_en": "Lahmacun and pide",
+  "cat": "tecnicas",
+  "group": "Mediterráneo oriental y Magreb",
+  "technique": "horno",
+  "aka": [
+   "lahmacun",
+   "pide",
+   "pizza turca",
+   "pan de carne turco"
+  ],
+  "summary": "Panes turcos al horno muy caliente: el lahmacun, fino y redondo con carne picada especiada; la pide, en forma de barca rellena.",
+  "what": "El lahmacun es una masa muy fina cubierta con una pasta cruda de carne picada, cebolla, tomate, pimiento, perejil y especias, que se hornea en pocos minutos a temperatura muy alta; se enrolla con perejil, cebolla y limón. La pide es una masa en forma de barca con los bordes doblados, rellena de carne, queso, huevo o espinacas.\n\nAmbos se hacen en horno de piedra. Ver [[panes-planos]] y [[pizza]].",
+  "base": {
+   "for": "6 lahmacun",
+   "items": [
+    [
+     "Masa de pan",
+     "500 g"
+    ],
+    [
+     "Carne picada de cordero o vacuno",
+     "300 g"
+    ],
+    [
+     "Cebolla, tomate y pimiento rojo muy picados",
+     "1, 2 y 1"
+    ],
+    [
+     "Perejil picado",
+     "1 manojo"
+    ],
+    [
+     "Pimentón, comino y pul biber (chile en escamas)",
+     "5 g, 3 g y al gusto"
+    ],
+    [
+     "Limón, perejil y cebolla para servir",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Mezcla la carne con las verduras escurridas, el perejil y las especias hasta una pasta.",
+    "Divide la masa en 6 y estira muy fina, en círculos de 25 cm.",
+    "Extiende una capa fina de la pasta de carne hasta el borde.",
+    "Hornea a 250 °C o más sobre piedra 6–8 minutos, hasta que el borde esté dorado y la carne hecha.",
+    "Sirve con perejil, cebolla y limón, para enrollar."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Horno",
+    "ratio": "250 °C o más, 6–8 minutos",
+    "note": "Sobre piedra."
+   },
+   {
+    "use": "Capa de carne",
+    "ratio": "50 g por lahmacun",
+    "note": "Fina."
+   },
+   {
+    "use": "Carne",
+    "ratio": "70 °C o más",
+    "note": "Hecha."
+   },
+   {
+    "use": "Ración",
+    "ratio": "1–2 piezas",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "panes-planos",
+    "name": "Panes planos",
+    "note": "La familia."
+   },
+   {
+    "id": "pizza",
+    "name": "Pizza",
+    "note": "Horno fuerte."
+   },
+   {
+    "id": "kebab-y-pinchos",
+    "name": "Kofta",
+    "note": "Otra carne picada especiada."
+   },
+   {
+    "id": "pastela-y-pasteles-de-carne",
+    "name": "Pasteles de carne",
+    "note": "Masas rellenas."
+   }
+  ],
+  "keys": [
+   "Masa muy fina.",
+   "Capa fina de carne cruda.",
+   "Horno muy caliente.",
+   "Verduras escurridas.",
+   "Servir enrollado con limón."
+  ],
+  "errors": [
+   {
+    "p": "Masa blanda",
+    "fix": "Horno flojo o capa gruesa. Más calor, menos carne."
+   },
+   {
+    "p": "Carne aguada",
+    "fix": "Tomate sin escurrir. Escurre."
+   },
+   {
+    "p": "Borde quemado y centro crudo",
+    "fix": "Masa desigual. Estira uniforme."
+   }
+  ],
+  "history": "El lahmacun es muy popular en Turquía, Armenia y el Levante; la pide es típica de Turquía.",
+  "uses": [
+   "Comida de calle",
+   "Aperitivos",
+   "Platos para compartir"
+  ],
+  "keep": "Al momento; masa en frío 1–2 días.",
+  "pro": "Masa en bolas y pasta de carne lista; horno al pedido.",
+  "related": [
+   "panes-planos",
+   "pizza",
+   "kebab-y-pinchos",
+   "pastela-y-pasteles-de-carne",
+   "cordero",
+   "especias"
+  ]
+ },
+ {
+  "id": "shawarma",
+  "name": "Shawarma",
+  "name_en": "Shawarma",
+  "cat": "tecnicas",
+  "group": "Mediterráneo oriental y Magreb",
+  "technique": "horno",
+  "aka": [
+   "shawarma",
+   "döner",
+   "gyros",
+   "carne al pastor de espetón",
+   "shawarma de pollo"
+  ],
+  "summary": "Carne marinada en láminas apilada en un espetón que gira ante el fuego y se corta fina; en casa, se asa en bandeja y se dora al final.",
+  "what": "El shawarma del Levante, el döner turco y el gyros griego son la misma idea: láminas de carne (pollo, cordero, ternera) marinadas con especias, yogur o limón, apiladas en un espetón vertical que gira ante la fuente de calor; se cortan las capas exteriores a medida que se doran. Se sirve en pan plano con salsa de ajo o tahina, encurtidos y verduras.\n\nSin espetón, se asa la carne marinada en bandeja a horno fuerte y se dora en plancha antes de servir. Lo que se corta debe estar bien hecho.",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Contramuslo de pollo deshuesado",
+     "1,2 kg"
+    ],
+    [
+     "Yogur natural",
+     "150 g"
+    ],
+    [
+     "Zumo de limón y ajo",
+     "40 ml y 4 dientes"
+    ],
+    [
+     "Especias: comino, pimentón, cúrcuma, canela, pimienta",
+     "15 g en total"
+    ],
+    [
+     "Aceite de oliva",
+     "40 ml"
+    ],
+    [
+     "Panes planos, salsa de ajo o tahina y encurtidos",
+     "para servir"
+    ]
+   ],
+   "steps": [
+    "Marina el pollo con el yogur, el limón, el ajo, las especias y el aceite 4–12 horas en frío.",
+    "Extiende en bandeja en una capa y asa a 220 °C 25–30 minutos.",
+    "Deja reposar 5 minutos y corta en tiras finas.",
+    "Dora las tiras en plancha muy caliente justo antes de servir.",
+    "Sirve en pan plano con salsa, encurtidos y verduras."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Marinado",
+    "ratio": "4–12 horas en frío",
+    "note": ""
+   },
+   {
+    "use": "Horno",
+    "ratio": "220 °C, 25–30 minutos",
+    "note": "Pollo a 75 °C."
+   },
+   {
+    "use": "Ración",
+    "ratio": "180–200 g de carne",
+    "note": ""
+   },
+   {
+    "use": "Especias",
+    "ratio": "12 g por kg de carne",
+    "note": "Aprox."
+   }
+  ],
+  "variants": [
+   {
+    "id": "kebab-y-pinchos",
+    "name": "Kebab",
+    "note": "Brochetas."
+   },
+   {
+    "id": "salsa-tahina-limon",
+    "name": "Salsa de tahina",
+    "note": "Para servir."
+   },
+   {
+    "id": "panes-planos",
+    "name": "Pan plano",
+    "note": "El envoltorio."
+   },
+   {
+    "id": "pickles-de-servicio",
+    "name": "Encurtidos",
+    "note": "Acompañan."
+   }
+  ],
+  "keys": [
+   "Marinado largo en frío.",
+   "Contramuslo: más jugoso.",
+   "Dorar al final.",
+   "Lo que se corta, siempre bien hecho.",
+   "Sobras: enfriar rápido."
+  ],
+  "errors": [
+   {
+    "p": "Carne seca",
+    "fix": "Pechuga o pasado. Contramuslo y sonda."
+   },
+   {
+    "p": "Sin costra",
+    "fix": "Sin dorar al final. Plancha muy caliente."
+   },
+   {
+    "p": "Insípido",
+    "fix": "Marinado corto. Alarga."
+   }
+  ],
+  "history": "El asado en espetón vertical se difundió desde el antiguo Imperio otomano y hoy tiene versiones en todo el mundo.",
+  "uses": [
+   "Comida de calle",
+   "Bocadillos y wraps",
+   "Platos para compartir"
+  ],
+  "keep": "Carne cruda marinada, 1 día en frío; asada, 3 días.",
+  "pro": "Asa en tanda y dora por ración.",
+  "related": [
+   "kebab-y-pinchos",
+   "salsa-tahina-limon",
+   "panes-planos",
+   "pickles-de-servicio",
+   "marinada",
+   "pollo-y-aves"
+  ]
+ },
+ {
+  "id": "fesenjan",
+  "name": "Fesenjan",
+  "name_en": "Fesenjan",
+  "cat": "tecnicas",
+  "group": "Cocina del mundo",
+  "technique": "guiso",
+  "aka": [
+   "fesenjan",
+   "fesenyán",
+   "khoresh fesenjan",
+   "guiso de nuez y granada",
+   "khoresh"
+  ],
+  "summary": "Guiso iraní de pollo o pato en una salsa espesa de nueces molidas tostadas y melaza de granada, agridulce y oscura.",
+  "what": "El fesenjan es un khoresh, un guiso de la cocina iraní que se sirve con arroz. Se tuestan y muelen nueces, se cuecen despacio en caldo hasta que sueltan su aceite y la salsa oscurece, y se añade melaza de granada, que da el punto ácido; luego se cocina en ella pollo, pato o albóndigas. Se ajusta con azúcar o más melaza hasta el equilibrio agridulce que guste en casa.\n\nSe sirve con [[arroz-persa-tahdig]].",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Muslos de pollo",
+     "1 kg"
+    ],
+    [
+     "Nueces",
+     "250 g"
+    ],
+    [
+     "Melaza de granada",
+     "100 ml"
+    ],
+    [
+     "Cebolla",
+     "1"
+    ],
+    [
+     "Caldo o agua",
+     "600 ml"
+    ],
+    [
+     "Azúcar (opcional), canela y sal",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Tuesta las nueces en seco y muélelas muy finas.",
+    "Cuécelas en el caldo a fuego suave 45–60 minutos, removiendo, hasta que suelten aceite y oscurezcan.",
+    "Dora el pollo con la cebolla y añádelo a la salsa con la melaza de granada.",
+    "Cuece 40–45 minutos más, hasta que el pollo esté tierno.",
+    "Ajusta de dulce y ácido y sirve con arroz."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Nueces",
+    "ratio": "60 g por ración",
+    "note": "Molidas."
+   },
+   {
+    "use": "Salsa de nuez",
+    "ratio": "45–60 minutos",
+    "note": "Suelta aceite."
+   },
+   {
+    "use": "Pollo",
+    "ratio": "40–45 minutos",
+    "note": "Muslo a 75 °C o más."
+   },
+   {
+    "use": "Melaza",
+    "ratio": "100 ml por 4 raciones",
+    "note": "Ajustar."
+   }
+  ],
+  "variants": [
+   {
+    "id": "granada-y-membrillo",
+    "name": "Granada",
+    "note": "Melaza."
+   },
+   {
+    "id": "frutos-secos",
+    "name": "Nueces",
+    "note": "La base."
+   },
+   {
+    "id": "pato",
+    "name": "Pato",
+    "note": "Alternativa clásica."
+   },
+   {
+    "id": "arroz-persa-tahdig",
+    "name": "Arroz persa",
+    "note": "Para servir."
+   }
+  ],
+  "keys": [
+   "Nueces tostadas y muy finas.",
+   "Cocción larga hasta que oscurezca.",
+   "Equilibrio agridulce.",
+   "Remover para que no se pegue.",
+   "Alérgeno: frutos secos."
+  ],
+  "errors": [
+   {
+    "p": "Salsa pálida",
+    "fix": "Poco tiempo. Cuece más."
+   },
+   {
+    "p": "Demasiado ácido",
+    "fix": "Mucha melaza. Ajusta con azúcar."
+   },
+   {
+    "p": "Se pega",
+    "fix": "Fuego alto. Bájalo y remueve."
+   }
+  ],
+  "history": "El fesenjan es uno de los guisos más festivos de Irán, ligado a la región del Caspio.",
+  "uses": [
+   "Platos con arroz",
+   "Comidas de fiesta"
+  ],
+  "keep": "4 días en frío; mejora al día siguiente.",
+  "pro": "Salsa en tanda; carne y ajuste por servicio.",
+  "related": [
+   "granada-y-membrillo",
+   "frutos-secos",
+   "pato",
+   "arroz-persa-tahdig",
+   "salsas-agridulces-y-gastriques",
+   "pollo-y-aves"
+  ]
+ },
+ {
+  "id": "moqueca",
+  "name": "Moqueca",
+  "name_en": "Moqueca",
+  "cat": "tecnicas",
+  "group": "Cocina de América",
+  "technique": "guiso",
+  "aka": [
+   "moqueca",
+   "moqueca baiana",
+   "moqueca capixaba",
+   "guiso de pescado brasileño",
+   "aceite de dendê"
+  ],
+  "summary": "Guiso brasileño de pescado y gambas con tomate, pimiento, cebolla, cilantro y leche de coco, a menudo con aceite de palma.",
+  "what": "La moqueca es un guiso de pescado de Brasil cocinado en cazuela de barro. La baiana, de Bahía, lleva leche de coco y aceite de dendê (de palma, rojo y aromático); la capixaba, de Espírito Santo, solo aceite de oliva o de semillas, tomate y achiote. Las capas de cebolla, tomate y pimiento se colocan con el pescado marinado en lima y ajo, y se cuecen poco, sin remover.\n\nSe sirve con arroz y pirão, una papilla de harina de yuca con el caldo. Cada región defiende la suya.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Pescado firme en rodajas (corvina, mero)",
+     "800 g"
+    ],
+    [
+     "Gambas peladas",
+     "300 g"
+    ],
+    [
+     "Lima y ajo para marinar",
+     "2 y 3 dientes"
+    ],
+    [
+     "Cebolla, tomate y pimiento en rodajas",
+     "2, 3 y 2"
+    ],
+    [
+     "Leche de coco",
+     "400 ml"
+    ],
+    [
+     "Aceite de dendê o de oliva",
+     "40 ml"
+    ],
+    [
+     "Cilantro",
+     "1 manojo"
+    ]
+   ],
+   "steps": [
+    "Marina el pescado con la lima, el ajo y sal 20–30 minutos en frío.",
+    "En una cazuela, haz capas de cebolla, tomate y pimiento, el pescado y otra capa de verduras.",
+    "Añade la leche de coco y el aceite, tapa y cuece a fuego medio 15 minutos sin remover.",
+    "Añade las gambas y el cilantro y cuece 3–5 minutos más.",
+    "Sirve en la cazuela con arroz."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Marinado",
+    "ratio": "20–30 minutos",
+    "note": "En frío."
+   },
+   {
+    "use": "Cocción",
+    "ratio": "15 minutos más 3–5 de gambas",
+    "note": "Sin remover."
+   },
+   {
+    "use": "Pescado",
+    "ratio": "60 °C o más en el centro",
+    "note": "Bien hecho."
+   },
+   {
+    "use": "Ración",
+    "ratio": "275 g de pescado y marisco",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "coco",
+    "name": "Leche de coco",
+    "note": "La salsa."
+   },
+   {
+    "id": "corvina",
+    "name": "Corvina",
+    "note": "El pescado."
+   },
+   {
+    "id": "zarzuela",
+    "name": "Zarzuela",
+    "note": "Otro guiso de pescado."
+   },
+   {
+    "id": "yuca-y-tuberculos-tropicales",
+    "name": "Yuca",
+    "note": "Para el pirão."
+   }
+  ],
+  "keys": [
+   "Capas, sin remover.",
+   "Pescado firme.",
+   "Cocción corta.",
+   "Cilantro al final.",
+   "Cada región, su moqueca."
+  ],
+  "errors": [
+   {
+    "p": "Pescado roto",
+    "fix": "Removido o blando. Firme y sin tocar."
+   },
+   {
+    "p": "Salsa cortada",
+    "fix": "Hervor fuerte con coco. Fuego medio."
+   },
+   {
+    "p": "Gambas duras",
+    "fix": "Pronto. Al final."
+   }
+  ],
+  "history": "La moqueca es uno de los platos más conocidos de Brasil, con versiones rivales en Bahía y Espírito Santo.",
+  "uses": [
+   "Platos de pescado",
+   "Comidas para compartir"
+  ],
+  "keep": "Al momento; el sofrito de base, 2 días en frío.",
+  "pro": "Pescado marinado y verduras cortadas; cazuela al pedido.",
+  "related": [
+   "coco",
+   "corvina",
+   "zarzuela",
+   "yuca-y-tuberculos-tropicales",
+   "chiles-secos-y-frescos",
+   "langostino-y-gamba-blanca"
+  ]
+ },
+ {
+  "id": "empanadas-criollas",
+  "name": "Empanadas criollas",
+  "name_en": "Argentine empanadas",
+  "cat": "tecnicas",
+  "group": "Cocina de América",
+  "technique": "horno",
+  "aka": [
+   "empanadas argentinas",
+   "empanadas criollas",
+   "empanadas salteñas",
+   "empanadas de carne",
+   "repulgue"
+  ],
+  "summary": "Empanadillas de masa con grasa rellenas de carne picada a cuchillo, cebolla, comino, huevo y aceituna, cerradas con repulgue y horneadas o fritas.",
+  "what": "Las empanadas argentinas llevan una masa de harina con grasa (manteca o grasa de vacuno), y un relleno de carne de vacuno picada a cuchillo, mucha cebolla, pimentón, comino, huevo duro y aceitunas, a veces pasas. Se cierran con el repulgue, un borde trenzado que identifica el relleno, y se hornean o se fríen. Cada provincia tiene su estilo: las salteñas son jugosas y pequeñas, las tucumanas a cuchillo.\n\nEl relleno se enfría por completo antes de cerrar. Ver [[coca-y-masas-saladas]].",
+  "base": {
+   "for": "20 empanadas",
+   "items": [
+    [
+     "Harina",
+     "500 g"
+    ],
+    [
+     "Grasa (manteca o de vacuno)",
+     "120 g"
+    ],
+    [
+     "Agua templada con sal",
+     "220 ml"
+    ],
+    [
+     "Carne de vacuno picada a cuchillo",
+     "600 g"
+    ],
+    [
+     "Cebolla",
+     "500 g"
+    ],
+    [
+     "Pimentón, comino y chile",
+     "8 g, 3 g y al gusto"
+    ],
+    [
+     "Huevo duro y aceitunas",
+     "2 y 60 g"
+    ]
+   ],
+   "steps": [
+    "Amasa la harina con la grasa derretida y el agua; reposa 30 minutos y estira en discos de 12 cm.",
+    "Pocha la cebolla, añade la carne y las especias y cocina hasta que esté hecha; enfría por completo.",
+    "Pon una cucharada de relleno, huevo y aceituna en cada disco.",
+    "Cierra en media luna y haz el repulgue.",
+    "Hornea a 220 °C 15–18 minutos o fríe a 175–180 °C, hasta dorar."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Relleno por pieza",
+    "ratio": "40–45 g",
+    "note": "Frío."
+   },
+   {
+    "use": "Horno",
+    "ratio": "220 °C, 15–18 minutos",
+    "note": "Pintadas con huevo."
+   },
+   {
+    "use": "Fritura",
+    "ratio": "175–180 °C",
+    "note": ""
+   },
+   {
+    "use": "Ración",
+    "ratio": "3 empanadas",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "coca-y-masas-saladas",
+    "name": "Empanadas",
+    "note": "La familia."
+   },
+   {
+    "id": "empanada-gallega",
+    "name": "Empanada gallega",
+    "note": "La grande."
+   },
+   {
+    "id": "chimichurri",
+    "name": "Chimichurri",
+    "note": "En la mesa."
+   },
+   {
+    "id": "pastela-y-pasteles-de-carne",
+    "name": "Pasteles de carne",
+    "note": "Masas rellenas."
+   }
+  ],
+  "keys": [
+   "Carne a cuchillo, mejor que picada.",
+   "Mucha cebolla para jugosidad.",
+   "Relleno frío.",
+   "Repulgue bien cerrado.",
+   "Cada provincia, su empanada."
+  ],
+  "errors": [
+   {
+    "p": "Se abren",
+    "fix": "Relleno caliente o borde mal cerrado. Enfría y sella."
+   },
+   {
+    "p": "Relleno seco",
+    "fix": "Poca cebolla. Más cebolla."
+   },
+   {
+    "p": "Masa dura",
+    "fix": "Poca grasa. Ajusta."
+   }
+  ],
+  "history": "Las empanadas llegaron a América con la cocina española y en Argentina se convirtieron en una seña de identidad regional.",
+  "uses": [
+   "Aperitivos",
+   "Comida para compartir",
+   "Comida de calle"
+  ],
+  "keep": "Formadas crudas, congeladas semanas; cocidas, 2 días en frío.",
+  "pro": "Forma y congela en tanda; hornea al pedido.",
+  "related": [
+   "coca-y-masas-saladas",
+   "empanada-gallega",
+   "chimichurri",
+   "pastela-y-pasteles-de-carne",
+   "aceitunas-y-alcaparras",
+   "picar-carne-y-hamburguesas"
+  ]
+ },
+ {
+  "id": "rendang",
+  "name": "Rendang",
+  "name_en": "Rendang",
+  "cat": "tecnicas",
+  "group": "Cocina de Asia",
+  "technique": "guiso",
+  "aka": [
+   "rendang",
+   "rendang de ternera",
+   "curry seco indonesio",
+   "rendang minangkabau"
+  ],
+  "summary": "Ternera guisada durante horas en leche de coco con una pasta de chiles, chalota, jengibre, galanga y hierba limón, hasta que se seca y caramaliza.",
+  "what": "El rendang es un guiso de Sumatra (pueblo minangkabau), muy extendido en Indonesia y Malasia. La carne de vacuno se cuece en leche de coco con una pasta de especias (chiles, chalota, ajo, jengibre, galanga, cúrcuma, hierba limón, hojas de lima) durante horas, hasta que el líquido se evapora, el coco suelta su aceite y la carne se fríe en él y se oscurece. El resultado es casi seco y muy concentrado.\n\nHay versiones más jugosas (kalio). Cada casa tiene su pasta.",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Morcillo o aguja de ternera en dados",
+     "1,2 kg"
+    ],
+    [
+     "Leche de coco",
+     "800 ml"
+    ],
+    [
+     "Pasta: chiles, chalotas, ajo, jengibre, galanga, cúrcuma",
+     "300 g en total"
+    ],
+    [
+     "Hierba limón golpeada",
+     "3 tallos"
+    ],
+    [
+     "Hojas de lima kaffir",
+     "5"
+    ],
+    [
+     "Coco rallado tostado",
+     "50 g"
+    ],
+    [
+     "Azúcar de palma y sal",
+     "15 g y al gusto"
+    ]
+   ],
+   "steps": [
+    "Tritura los ingredientes de la pasta hasta una pasta fina.",
+    "Pon la carne, la leche de coco, la pasta, la hierba limón y las hojas en una olla y lleva a hervor.",
+    "Cuece a fuego suave destapado 2,5–3 horas, removiendo cada vez más a medida que reduce.",
+    "Añade el coco tostado molido, el azúcar y la sal.",
+    "Sigue removiendo hasta que la carne se fría en el aceite del coco y oscurezca."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Cocción total",
+    "ratio": "3–4 horas",
+    "note": "Fuego suave."
+   },
+   {
+    "use": "Coco",
+    "ratio": "650 ml por kg de carne",
+    "note": ""
+   },
+   {
+    "use": "Ración",
+    "ratio": "200 g de carne",
+    "note": ""
+   },
+   {
+    "use": "Final",
+    "ratio": "Remover sin parar",
+    "note": "Se pega."
+   }
+  ],
+  "variants": [
+   {
+    "id": "curry-y-guisos-especiados",
+    "name": "Curries",
+    "note": "La familia."
+   },
+   {
+    "id": "pastas-de-especias",
+    "name": "Pastas de especias",
+    "note": "La base."
+   },
+   {
+    "id": "coco",
+    "name": "Coco",
+    "note": "Leche y rallado."
+   },
+   {
+    "id": "cortes-de-guiso-de-vacuno",
+    "name": "Cortes de guiso",
+    "note": "Morcillo o aguja."
+   }
+  ],
+  "keys": [
+   "Cocción muy larga.",
+   "Reducir hasta que suelte el aceite.",
+   "Remover al final sin parar.",
+   "Corte con colágeno.",
+   "Cada casa, su pasta."
+  ],
+  "errors": [
+   {
+    "p": "Quemado al final",
+    "fix": "Sin remover. Remueve sin parar."
+   },
+   {
+    "p": "Carne dura",
+    "fix": "Poco tiempo. Alarga."
+   },
+   {
+    "p": "Sin color",
+    "fix": "Retirado pronto. Hasta que oscurezca."
+   }
+  ],
+  "history": "El rendang es originario de los minangkabau de Sumatra Occidental y se preparaba para conservar la carne durante días.",
+  "uses": [
+   "Platos con arroz",
+   "Comidas de fiesta"
+  ],
+  "keep": "4–5 días en frío; se congela bien.",
+  "pro": "Elabora en tanda grande; regenera con un poco de agua.",
+  "related": [
+   "curry-y-guisos-especiados",
+   "pastas-de-especias",
+   "coco",
+   "cortes-de-guiso-de-vacuno",
+   "aromaticos-de-asia",
+   "guisos-largos"
+  ]
+ },
+ {
+  "id": "nasi-goreng",
+  "name": "Nasi goreng y arroces fritos",
+  "name_en": "Nasi goreng and fried rice",
+  "cat": "tecnicas",
+  "group": "Cocina de Asia",
+  "technique": "salteado",
+  "aka": [
+   "nasi goreng",
+   "arroz frito",
+   "arroz tres delicias",
+   "khao pad",
+   "arroz salteado"
+  ],
+  "summary": "Arroz cocido del día anterior salteado a fuego fuerte con pasta de chalota y chile, salsa de soja dulce y huevo frito encima.",
+  "what": "El nasi goreng es el arroz frito de Indonesia: arroz cocido frío, salteado con una pasta de chalota, ajo y chile, pasta de gamba y kecap manis (soja dulce), servido con huevo frito, pepino y crujientes. Es primo del arroz frito chino y del khao pad tailandés.\n\nLa clave es usar arroz cocido y bien frío, que se suelta y no se apelmaza. Ese arroz se enfría rápido nada más cocerlo y se guarda en frío, porque el arroz cocido a temperatura ambiente es un riesgo.",
+  "base": {
+   "for": "2 raciones",
+   "items": [
+    [
+     "Arroz cocido del día anterior, frío",
+     "400 g"
+    ],
+    [
+     "Chalotas, ajo y chile",
+     "3, 2 dientes y 1–2"
+    ],
+    [
+     "Pasta de gamba (opcional)",
+     "5 g"
+    ],
+    [
+     "Kecap manis o soja con azúcar",
+     "30 ml"
+    ],
+    [
+     "Pollo o gambas en trozos",
+     "150 g"
+    ],
+    [
+     "Huevos",
+     "2"
+    ],
+    [
+     "Aceite neutro",
+     "30 ml"
+    ]
+   ],
+   "steps": [
+    "Maja las chalotas, el ajo, el chile y la pasta de gamba.",
+    "Saltea la pasta en el wok muy caliente 1 minuto; añade el pollo o las gambas y cocina.",
+    "Añade el arroz desmenuzado y saltea a fuego fuerte hasta que esté caliente y suelto.",
+    "Añade el kecap manis y saltea 1 minuto más.",
+    "Sirve con un huevo frito encima, pepino y crujientes."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Arroz cocido",
+    "ratio": "Enfriado rápido, 1 día en frío",
+    "note": "No a temperatura ambiente."
+   },
+   {
+    "use": "Salteado",
+    "ratio": "4–5 minutos a fuego fuerte",
+    "note": ""
+   },
+   {
+    "use": "Calentado",
+    "ratio": "75 °C o más en el centro",
+    "note": ""
+   },
+   {
+    "use": "Ración",
+    "ratio": "200 g de arroz cocido",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "salteado-y-wok",
+    "name": "Wok",
+    "note": "La técnica."
+   },
+   {
+    "id": "arroz-japones-y-al-vapor",
+    "name": "Arroz cocido",
+    "note": "La base."
+   },
+   {
+    "id": "soja-y-derivados",
+    "name": "Soja dulce",
+    "note": "Kecap manis."
+   },
+   {
+    "id": "pastas-fermentadas-de-asia",
+    "name": "Pasta de gamba",
+    "note": "Umami."
+   }
+  ],
+  "keys": [
+   "Arroz frío, enfriado rápido.",
+   "Wok muy caliente.",
+   "Tandas pequeñas.",
+   "Huevo frito encima.",
+   "Recalentar a fondo."
+  ],
+  "errors": [
+   {
+    "p": "Arroz apelmazado",
+    "fix": "Arroz recién hecho. Usa arroz frío."
+   },
+   {
+    "p": "Arroz cocido al vapor en el wok",
+    "fix": "Wok lleno o frío. Tandas pequeñas."
+   },
+   {
+    "p": "Demasiado dulce",
+    "fix": "Mucho kecap. Ajusta con sal o soja normal."
+   }
+  ],
+  "history": "El nasi goreng es considerado uno de los platos nacionales de Indonesia y se come a cualquier hora.",
+  "uses": [
+   "Platos rápidos",
+   "Aprovechamiento de arroz",
+   "Comida de calle"
+  ],
+  "keep": "Al momento; el arroz cocido, enfriado rápido y 1 día en frío.",
+  "pro": "Arroz cocido y abatido; saltea al pedido.",
+  "related": [
+   "salteado-y-wok",
+   "arroz-japones-y-al-vapor",
+   "soja-y-derivados",
+   "pastas-fermentadas-de-asia",
+   "cocina-de-aprovechamiento",
+   "reposos-y-regeneracion"
+  ]
+ },
+ {
+  "id": "mapo-tofu",
+  "name": "Mapo tofu",
+  "name_en": "Mapo tofu",
+  "cat": "tecnicas",
+  "group": "Cocina de Asia",
+  "technique": "guiso",
+  "aka": [
+   "mapo tofu",
+   "tofu de Sichuan",
+   "doubanjiang",
+   "pimienta de Sichuan",
+   "mala"
+  ],
+  "summary": "Tofu sedoso en salsa roja de Sichuan con carne picada, pasta de habas picante, soja fermentada y pimienta de Sichuan que adormece.",
+  "what": "El mapo tofu es un plato de Sichuan: tofu blando en dados cocido en una salsa de doubanjiang (pasta fermentada de habas y chile), habas negras fermentadas, ajo, jengibre, un poco de carne picada y caldo, espesada con almidón y terminada con aceite de chile y pimienta de Sichuan molida. Combina el picante del chile con el hormigueo de la pimienta, el sabor que en Sichuan llaman mala.\n\nEl tofu se escalda antes en agua con sal para que se mantenga entero. Ver [[pastas-fermentadas-de-asia]].",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Tofu sedoso o blando en dados",
+     "500 g"
+    ],
+    [
+     "Carne picada de cerdo o vacuno",
+     "150 g"
+    ],
+    [
+     "Doubanjiang",
+     "40 g"
+    ],
+    [
+     "Habas negras fermentadas",
+     "10 g"
+    ],
+    [
+     "Ajo y jengibre picados",
+     "3 dientes y 15 g"
+    ],
+    [
+     "Caldo",
+     "300 ml"
+    ],
+    [
+     "Almidón de maíz con agua",
+     "10 g en 30 ml"
+    ],
+    [
+     "Pimienta de Sichuan tostada y molida y aceite de chile",
+     "3 g y 20 ml"
+    ]
+   ],
+   "steps": [
+    "Escalda el tofu en agua con sal 2 minutos y escurre.",
+    "Saltea la carne hasta que esté dorada y suelta.",
+    "Añade el doubanjiang, las habas negras, el ajo y el jengibre y fríe hasta que el aceite se ponga rojo.",
+    "Moja con el caldo, añade el tofu y cuece 5 minutos moviendo la sartén sin romperlo.",
+    "Liga con el almidón en dos veces y termina con aceite de chile y pimienta de Sichuan."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Tofu",
+    "ratio": "125 g por ración",
+    "note": ""
+   },
+   {
+    "use": "Escaldado",
+    "ratio": "2 minutos en agua con sal",
+    "note": "Se mantiene entero."
+   },
+   {
+    "use": "Pimienta de Sichuan",
+    "ratio": "3 g por 4 raciones",
+    "note": "Al final."
+   },
+   {
+    "use": "Cocción",
+    "ratio": "5 minutos en salsa",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "soja-y-derivados",
+    "name": "Tofu",
+    "note": "El producto."
+   },
+   {
+    "id": "pastas-fermentadas-de-asia",
+    "name": "Doubanjiang",
+    "note": "La pasta."
+   },
+   {
+    "id": "salsa-xo-y-aceites-de-chile",
+    "name": "Aceite de chile",
+    "note": "Para terminar."
+   },
+   {
+    "id": "pimientas",
+    "name": "Pimienta de Sichuan",
+    "note": "El hormigueo."
+   }
+  ],
+  "keys": [
+   "Escaldar el tofu.",
+   "Freír la pasta hasta que el aceite enrojezca.",
+   "Mover la sartén, no remover.",
+   "Pimienta de Sichuan al final.",
+   "Alérgeno: soja."
+  ],
+  "errors": [
+   {
+    "p": "Tofu roto",
+    "fix": "Removido con cuchara. Mueve la sartén."
+   },
+   {
+    "p": "Salsa aguada",
+    "fix": "Poco almidón. Liga en dos veces."
+   },
+   {
+    "p": "Sin hormigueo",
+    "fix": "Pimienta vieja. Tuesta y muele al momento."
+   }
+  ],
+  "history": "El mapo tofu es uno de los platos más conocidos de la cocina de Sichuan, en China.",
+  "uses": [
+   "Platos con arroz",
+   "Platos picantes",
+   "Menús de cocina asiática"
+  ],
+  "keep": "Al momento; la salsa base, 3 días en frío.",
+  "pro": "Salsa hecha; tofu y ligado al pedido.",
+  "related": [
+   "soja-y-derivados",
+   "pastas-fermentadas-de-asia",
+   "salsa-xo-y-aceites-de-chile",
+   "pimientas",
+   "salteado-y-wok",
+   "picante-y-pungencia"
+  ]
+ },
+ {
+  "id": "borscht",
+  "name": "Borscht",
+  "name_en": "Borscht",
+  "cat": "tecnicas",
+  "group": "Cocina del mundo",
+  "technique": "hervido",
+  "aka": [
+   "borscht",
+   "borsch",
+   "sopa de remolacha",
+   "barszcz",
+   "smetana"
+  ],
+  "summary": "Sopa de remolacha de Europa del Este, con col, patata y caldo de carne o vegetal; agria y dulce, servida con nata agria y eneldo.",
+  "what": "El borscht es la sopa de remolacha de Ucrania y de buena parte de Europa del Este. La versión más conocida lleva caldo de carne, remolacha, col, patata, zanahoria, cebolla y tomate, con un toque ácido de vinagre o limón que fija el color rojo. Se sirve caliente con smetana (nata agria) y eneldo. En Polonia, el barszcz es un caldo claro de remolacha; también hay versiones frías de verano.\n\nCada casa tiene su receta. La remolacha se añade con el ácido para que no pierda color.",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Caldo de carne o de verduras",
+     "2 l"
+    ],
+    [
+     "Remolacha cruda en tiras",
+     "500 g"
+    ],
+    [
+     "Col en juliana",
+     "300 g"
+    ],
+    [
+     "Patata en dados",
+     "300 g"
+    ],
+    [
+     "Zanahoria y cebolla",
+     "1 y 1"
+    ],
+    [
+     "Tomate concentrado",
+     "30 g"
+    ],
+    [
+     "Vinagre o zumo de limón",
+     "20 ml"
+    ],
+    [
+     "Nata agria y eneldo",
+     "para servir"
+    ]
+   ],
+   "steps": [
+    "Rehoga la cebolla y la zanahoria; añade la remolacha, el tomate y el vinagre y cocina 10 minutos.",
+    "Lleva el caldo a hervor con la patata y cuece 10 minutos.",
+    "Añade la col y cuece 10 minutos más.",
+    "Incorpora el sofrito de remolacha y cuece 5–10 minutos, sin hervir fuerte.",
+    "Ajusta de sal, ácido y azúcar y sirve con nata agria y eneldo."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Remolacha",
+    "ratio": "80 g por ración",
+    "note": "Cruda."
+   },
+   {
+    "use": "Cocción total",
+    "ratio": "35–40 minutos",
+    "note": ""
+   },
+   {
+    "use": "Ácido",
+    "ratio": "20 ml por 2 l",
+    "note": "Fija el color."
+   },
+   {
+    "use": "Ración",
+    "ratio": "350 ml",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "remolacha-y-raices",
+    "name": "Remolacha",
+    "note": "Producto."
+   },
+   {
+    "id": "coles-y-brasicas",
+    "name": "Col",
+    "note": "Producto."
+   },
+   {
+    "id": "lacteos-fermentados",
+    "name": "Nata agria",
+    "note": "Para servir."
+   },
+   {
+    "id": "cremas-frias-de-verdura",
+    "name": "Borscht frío",
+    "note": "Versión de verano."
+   }
+  ],
+  "keys": [
+   "Ácido con la remolacha para el color.",
+   "Sin hervor fuerte al final.",
+   "Equilibrio agridulce.",
+   "Nata agria y eneldo al servir.",
+   "Cada casa, su borscht."
+  ],
+  "errors": [
+   {
+    "p": "Color pardo",
+    "fix": "Sin ácido o hervido. Añade ácido y baja el fuego."
+   },
+   {
+    "p": "Sopa plana",
+    "fix": "Sin ajuste. Sal, ácido y una pizca de azúcar."
+   },
+   {
+    "p": "Col pasada",
+    "fix": "Mucho tiempo. 10 minutos."
+   }
+  ],
+  "history": "El borscht es un plato emblemático de Ucrania; su cocina tradicional está reconocida como patrimonio cultural inmaterial por la UNESCO.",
+  "uses": [
+   "Sopas de invierno",
+   "Sopas frías de verano"
+  ],
+  "keep": "4 días en frío; mejora al día siguiente.",
+  "pro": "Elabora en tanda; nata y eneldo al pase.",
+  "related": [
+   "remolacha-y-raices",
+   "coles-y-brasicas",
+   "lacteos-fermentados",
+   "cremas-frias-de-verdura",
+   "caldo-de-verduras",
+   "hierbas-frescas"
+  ]
+ },
+ {
+  "id": "despiece-de-cordero",
+  "name": "Despiece de cordero",
+  "name_en": "Breaking down lamb",
+  "cat": "tecnicas",
+  "group": "Conservar y transformar",
+  "aka": [
+   "despiece de cordero",
+   "deshuesar paletilla",
+   "costillar francés",
+   "carré de cordero",
+   "pierna deshuesada",
+   "despiezar cordero"
+  ],
+  "summary": "Cómo dividir un cordero o un cuarto en paletilla, pierna, costillar, cuello y falda, y preparar cada pieza para su cocción.",
+  "what": "Un cordero se divide en canal en dos medias, y cada media en cuarto delantero (paletilla, cuello, costillar de agujas, pecho) y trasero (pierna, riñonada, costillar de palo, falda). Cada pieza tiene un uso: la paletilla y la pierna para asar; el costillar para chuletas o carré a la francesa (huesos limpios); el cuello y la falda para guisos y fondos; los huesos y recortes para [[fondo-de-cordero|fondo]].\n\nSe trabaja en frío, siguiendo las articulaciones y la membrana entre músculos. Ver [[cordero]] y [[deshuesar-y-enrollar-piezas]].",
+  "method": [
+   "Separa la paletilla siguiendo la membrana bajo el omóplato, sin cortar hueso.",
+   "Corta el cuello y separa el costillar del pecho con sierra o cuchilla.",
+   "Separa la pierna por la articulación de la cadera.",
+   "Carré: limpia los huesos del costillar raspando la carne y la membrana hasta dejarlos blancos.",
+   "Pierna o paletilla deshuesada: sigue el hueso con la punta del cuchillo, abre en libro, salpimenta, enrolla y ata."
+  ],
+  "ratios": [
+   {
+    "use": "Pierna asada",
+    "ratio": "300 g por ración con hueso",
+    "note": ""
+   },
+   {
+    "use": "Carré",
+    "ratio": "3–4 costillas por ración",
+    "note": ""
+   },
+   {
+    "use": "Punto rosado del carré",
+    "ratio": "58–60 °C en el centro",
+    "note": ""
+   },
+   {
+    "use": "Recortes",
+    "ratio": "Al fondo o a picar",
+    "note": "Nada se tira."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cordero",
+    "name": "Cordero",
+    "note": "Piezas y razas."
+   },
+   {
+    "id": "deshuesar-y-enrollar-piezas",
+    "name": "Deshuesar y enrollar",
+    "note": "Técnica."
+   },
+   {
+    "id": "bridar-y-mechar",
+    "name": "Bridar",
+    "note": "Atar las piezas."
+   },
+   {
+    "id": "fondo-de-cordero",
+    "name": "Fondo de cordero",
+    "note": "Con los huesos."
+   }
+  ],
+  "keys": [
+   "Trabajar en frío.",
+   "Seguir articulaciones y membranas.",
+   "Cada pieza, su cocción.",
+   "Huesos del carré limpios.",
+   "Recortes a fondos y picados."
+  ],
+  "errors": [
+   {
+    "p": "Astillas de hueso",
+    "fix": "Corte con cuchillo en hueso. Usa sierra o la articulación."
+   },
+   {
+    "p": "Carne desgarrada",
+    "fix": "Cuchillo sin filo. Afila."
+   },
+   {
+    "p": "Pierna enrollada que se abre",
+    "fix": "Mal atada. Brida firme y regular."
+   }
+  ],
+  "history": "El despiece del cordero es un oficio de carnicería con nombres de piezas que cambian según la región.",
+  "uses": [
+   "Asados",
+   "Chuletas y carré",
+   "Guisos",
+   "Fondos"
+  ],
+  "keep": "Piezas, 3–4 días a 0–4 °C; envasadas al vacío, algo más.",
+  "pro": "Despieza al recibir, etiqueta por pieza y destina recortes.",
+  "related": [
+   "cordero",
+   "deshuesar-y-enrollar-piezas",
+   "bridar-y-mechar",
+   "fondo-de-cordero",
+   "afilar-y-cuidar-cuchillos",
+   "punto-de-la-carne"
+  ]
+ },
+ {
+  "id": "picar-carne-y-hamburguesas",
+  "name": "Picar carne y hamburguesas",
+  "name_en": "Grinding meat and burgers",
+  "cat": "tecnicas",
+  "group": "Calor y punto",
+  "aka": [
+   "carne picada",
+   "picar carne",
+   "picadora",
+   "hamburguesa",
+   "picar a cuchillo",
+   "smash burger"
+  ],
+  "summary": "Elegir la mezcla de cortes y grasa, picar en frío con máquina o a cuchillo, formar sin apretar y cocinar la carne picada siempre hecha por dentro.",
+  "what": "Picar la carne en casa permite elegir los cortes y la grasa: para hamburguesa, una mezcla de cortes sabrosos (aguja, falda, pecho) con un 15–20 % de grasa. Todo debe estar muy frío, incluidas las piezas de la picadora, para que la grasa no se funda y la carne no se empaste. A cuchillo, la textura es más suelta y jugosa.\n\nAl picar, las bacterias de la superficie pasan al interior. Por eso la carne picada se pica lo más cerca posible del momento de cocinar, se guarda muy fría y se cocina hasta 70 °C o más en el centro.",
+  "method": [
+   "Corta la carne en tiras y enfríala con la picadora (cuchilla y discos) en el congelador 20–30 minutos.",
+   "Pica una vez por disco grueso; para más finura, una segunda vez por disco medio.",
+   "Forma las hamburguesas sin apretar, con un hueco en el centro para que no se hinchen; sala justo antes de cocinar.",
+   "Cocina en plancha muy caliente sin aplastar (salvo la smash burger, que se aplasta al principio).",
+   "Comprueba con sonda: 70 °C o más en el centro."
+  ],
+  "ratios": [
+   {
+    "use": "Grasa en la mezcla",
+    "ratio": "15–20 %",
+    "note": "Jugosa."
+   },
+   {
+    "use": "Hamburguesa",
+    "ratio": "150–180 g",
+    "note": "2 cm de grosor."
+   },
+   {
+    "use": "Centro de carne picada",
+    "ratio": "70 °C o más",
+    "note": "Siempre."
+   },
+   {
+    "use": "Conservación picada",
+    "ratio": "24 horas a 0–2 °C",
+    "note": "Mejor al momento."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cortes-de-guiso-de-vacuno",
+    "name": "Cortes para picar",
+    "note": "Aguja, pecho y falda."
+   },
+   {
+    "id": "albondigas",
+    "name": "Albóndigas",
+    "note": "Otro uso de la carne picada."
+   },
+   {
+    "id": "steak-tartar-y-carne-cruda",
+    "name": "Tartar",
+    "note": "Picada a cuchillo, con sus propias precauciones."
+   },
+   {
+    "id": "plancha-y-sarten",
+    "name": "Plancha",
+    "note": "Fuego fuerte."
+   }
+  ],
+  "keys": [
+   "Todo muy frío.",
+   "15–20 % de grasa.",
+   "Formar sin apretar y salar al final.",
+   "Carne picada: 70 °C o más en el centro.",
+   "Picar cerca del momento de cocinar."
+  ],
+  "errors": [
+   {
+    "p": "Carne empastada",
+    "fix": "Carne o máquina caliente. Enfría todo."
+   },
+   {
+    "p": "Hamburguesa seca",
+    "fix": "Poca grasa o aplastada al cocinar. Más grasa y no aplastes."
+   },
+   {
+    "p": "Hamburguesa abombada",
+    "fix": "Sin hueco central. Hunde el centro."
+   }
+  ],
+  "history": "La picadora de carne se difundió en el siglo XIX; la hamburguesa se popularizó en Estados Unidos a principios del XX.",
+  "uses": [
+   "Hamburguesas",
+   "Albóndigas",
+   "Rellenos",
+   "Salsas de carne"
+  ],
+  "keep": "Picada, 24 horas a 0–2 °C; hamburguesas formadas, congeladas semanas.",
+  "pro": "Pica por servicio y anota la hora; forma con molde y papel.",
+  "related": [
+   "cortes-de-guiso-de-vacuno",
+   "albondigas",
+   "steak-tartar-y-carne-cruda",
+   "plancha-y-sarten",
+   "cadena-de-frio",
+   "punto-de-la-carne"
+  ]
  }
 ]

@@ -9632,5 +9632,1379 @@
       "pan-del-dia-y-pan-viejo",
       "untables-de-legumbre"
     ]
+  },
+  {
+    "id": "cremas-de-verdura-calientes",
+    "name": "Cremas de verdura calientes",
+    "name_en": "Hot vegetable soups",
+    "cat": "bases",
+    "group": "Cremas y guarniciones",
+    "aka": [
+      "crema de calabaza",
+      "crema de puerro",
+      "crema de setas",
+      "crema de verduras",
+      "sopa crema",
+      "potaje de verduras triturado"
+    ],
+    "role": "cremoso",
+    "techniques": [
+      "pure",
+      "hervido"
+    ],
+    "summary": "Cremas de calabaza, puerro, setas, coliflor o verduras de temporada: base de aromáticos, verdura, caldo, triturado fino y un acabado que les da carácter.",
+    "what": "Una crema de verdura se construye en cuatro pasos: un sofrito suave de aromáticos (puerro, cebolla), la verdura protagonista rehogada para que coja sabor, un líquido con sabor (caldo, agua de cocción) y un triturado muy fino terminado con una grasa (mantequilla, aceite, nata). Lo que la distingue es el acabado: un aceite de hierbas, un crujiente, una nota ácida o un elemento tostado. La versión fría está en [[cremas-frias-de-verdura]] y los purés densos en [[pures-de-verdura]].",
+    "base": {
+      "for": "6 raciones de crema de calabaza",
+      "items": [
+        [
+          "Calabaza pelada en dados",
+          "1 kg"
+        ],
+        [
+          "Puerro (parte blanca) o cebolla",
+          "200 g"
+        ],
+        [
+          "Mantequilla o aceite de oliva",
+          "40 g"
+        ],
+        [
+          "Caldo de verduras o de ave",
+          "800 ml"
+        ],
+        [
+          "Nata o leche (opcional)",
+          "100 g"
+        ],
+        [
+          "Sal, pimienta y nuez moscada o jengibre",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Rehoga el puerro en la grasa a fuego suave 10 minutos, sin color.",
+        "Añade la calabaza y rehoga 5 minutos más.",
+        "Moja con el caldo caliente y cuece 20–25 minutos, hasta que esté muy tierna.",
+        "Tritura en caliente, ajusta la textura con caldo o nata y pasa por colador fino.",
+        "Sazona y sirve con un acabado: aceite de hierbas, semillas tostadas o un toque ácido."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Verdura y líquido",
+        "ratio": "1 kg de verdura por 700–900 ml de caldo",
+        "note": "Ajusta tras triturar."
+      },
+      {
+        "use": "Verduras verdes",
+        "ratio": "Cocción corta (5–8 minutos) y triturado inmediato",
+        "note": "Para conservar el color."
+      },
+      {
+        "use": "Acabado",
+        "ratio": "Un toque graso y uno crujiente o ácido",
+        "note": "Lo que hace memorable una crema."
+      }
+    ],
+    "variants": [
+      {
+        "id": "cremas-frias-de-verdura",
+        "name": "Cremas frías",
+        "note": "Vichyssoise y cremas de verano."
+      },
+      {
+        "id": "pures-de-verdura",
+        "name": "Purés",
+        "note": "La versión espesa de guarnición."
+      },
+      {
+        "id": "caldo-de-verduras-tostadas",
+        "name": "Caldo de verduras tostadas",
+        "note": "Un líquido con más fondo."
+      }
+    ],
+    "keys": [
+      "Aromáticos sin color para cremas limpias.",
+      "Líquido con sabor, no solo agua.",
+      "Triturar en caliente y colar.",
+      "Verdes, poca cocción.",
+      "El acabado le da personalidad."
+    ],
+    "errors": [
+      {
+        "p": "Crema sosa",
+        "fix": "Líquido sin sabor o poca sal. Usa caldo y sazona al final."
+      },
+      {
+        "p": "Granulosa",
+        "fix": "Triturado corto. Tritura más y cuela."
+      },
+      {
+        "p": "Color apagado",
+        "fix": "Verdura verde cocida de más. Cuece menos y tritura enseguida."
+      }
+    ],
+    "history": "Las cremas de verdura trituradas se generalizaron con la cocina clásica francesa y con las batidoras eléctricas, y hoy son un plato básico de las cocinas de casa y de restaurante.",
+    "uses": [
+      "Primer plato de otoño e invierno",
+      "Aperitivo en taza",
+      "Base de plato con pescado o huevo",
+      "Menú de mediodía"
+    ],
+    "keep": "Abatir de 60 °C a menos de 10 °C en menos de 2 horas. En frío, 2–3 días; congelada, 2 meses. Regenerar hasta hervir.",
+    "pro": "Haz la crema por la mañana, abátela y calienta por raciones; los acabados, al servir.",
+    "related": [
+      "cremas-frias-de-verdura",
+      "pures-de-verdura",
+      "caldo-de-verduras",
+      "calabaza",
+      "cadena-de-frio"
+    ]
+  },
+  {
+    "id": "salteado-de-primavera",
+    "name": "Salteado de verduras de primavera",
+    "name_en": "Spring vegetable sauté",
+    "cat": "bases",
+    "group": "Técnicas para verduras",
+    "aka": [
+      "verduras de primavera",
+      "habitas y guisantes salteados",
+      "trigueros salteados",
+      "ajos tiernos",
+      "salteado verde"
+    ],
+    "role": "guarnicion",
+    "techniques": [
+      "salteado",
+      "hervido"
+    ],
+    "summary": "Habas, guisantes, espárragos trigueros, ajos tiernos y alcachofas escaldados por separado y salteados juntos al momento, con hierbas y una grasa ligera.",
+    "what": "La primavera trae verduras tiernas y dulces que piden poca cocción. Cada una tiene su tiempo: se escaldan por separado y se enfrían en hielo, y al pedir se saltean juntas unos segundos con aceite o mantequilla, a veces con un poco de jamón o de caldo para ligar, y se terminan con menta o perejil y limón. Las fichas de producto de [[esparrago-y-guisante]] y [[alcachofas]] explican cada verdura.",
+    "base": {
+      "for": "4 raciones",
+      "items": [
+        [
+          "Habas tiernas desgranadas",
+          "150 g"
+        ],
+        [
+          "Guisantes",
+          "150 g"
+        ],
+        [
+          "Espárragos trigueros",
+          "150 g"
+        ],
+        [
+          "Ajos tiernos",
+          "4"
+        ],
+        [
+          "Alcachofas en láminas (con limón)",
+          "2"
+        ],
+        [
+          "Aceite de oliva o mantequilla",
+          "30 g"
+        ],
+        [
+          "Caldo de verduras",
+          "50 ml"
+        ],
+        [
+          "Menta, perejil y limón",
+          "al gusto"
+        ],
+        [
+          "Jamón en tiras (opcional)",
+          "40 g"
+        ]
+      ],
+      "steps": [
+        "Escalda por separado habas (1–2 minutos), guisantes (1–2) y trigueros (1–2) en agua con sal y enfría en hielo; pela las habas grandes.",
+        "Saltea las alcachofas en láminas con el aceite hasta que doren.",
+        "Añade los ajos tiernos en trozos y el jamón si lo usas.",
+        "Añade el resto de verduras y el caldo y saltea 1–2 minutos para calentar y ligar.",
+        "Termina con hierbas, limón y sal."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Escaldado",
+        "ratio": "1–2 minutos por verdura en agua con 1 % de sal",
+        "note": "Por separado."
+      },
+      {
+        "use": "Salteado final",
+        "ratio": "1–2 minutos",
+        "note": "Solo calentar y ligar."
+      },
+      {
+        "use": "Ración",
+        "ratio": "120–150 g de verdura",
+        "note": "Como guarnición o entrante."
+      }
+    ],
+    "variants": [
+      {
+        "id": "esparrago-y-guisante",
+        "name": "Espárrago y guisante",
+        "note": "El producto."
+      },
+      {
+        "id": "menestra-de-verduras",
+        "name": "Menestra",
+        "note": "El guiso tradicional de verduras."
+      },
+      {
+        "id": "escaldado-de-verduras",
+        "name": "Escaldado",
+        "note": "La técnica previa."
+      }
+    ],
+    "keys": [
+      "Cada verdura con su tiempo.",
+      "Enfriar en hielo para fijar el color.",
+      "Salteado final corto.",
+      "Hierbas frescas y limón al final.",
+      "Verdura del día: en primavera cambia cada semana."
+    ],
+    "errors": [
+      {
+        "p": "Verduras pasadas",
+        "fix": "Todas a la vez o mucho tiempo. Escalda por separado."
+      },
+      {
+        "p": "Color apagado",
+        "fix": "Sin enfriar en hielo. Enfría al momento."
+      },
+      {
+        "p": "Sosa",
+        "fix": "Sin sal en el agua o sin ácido. Sala el agua y termina con limón."
+      }
+    ],
+    "history": "Las verduras de primavera salteadas, con o sin jamón, son un plato de temporada tradicional en muchas zonas de España.",
+    "uses": [
+      "Guarnición de cordero y pescado",
+      "Entrante con huevo",
+      "Plato vegetal",
+      "Arroces y pastas de primavera"
+    ],
+    "keep": "Escaldadas y secas, en frío 1–2 días. Salteadas, al momento.",
+    "pro": "Escalda todo por la mañana y guarda por separado en cajas; saltea por raciones al pedir.",
+    "related": [
+      "esparrago-y-guisante",
+      "alcachofas",
+      "escaldado-de-verduras",
+      "judia-verde-y-habas",
+      "menestra-de-verduras",
+      "temporada-mes-a-mes"
+    ]
+  },
+  {
+    "id": "verduras-de-verano-a-la-plancha",
+    "name": "Verduras de verano a la plancha",
+    "name_en": "Griddled summer vegetables",
+    "cat": "bases",
+    "group": "Técnicas para verduras",
+    "aka": [
+      "parrillada de verduras",
+      "verduras a la plancha",
+      "calabacin a la plancha",
+      "berenjena a la plancha",
+      "verduras de verano"
+    ],
+    "role": "guarnicion",
+    "techniques": [
+      "plancha"
+    ],
+    "summary": "Calabacín, berenjena, pimiento, cebolla y tomate en láminas, marcados a la plancha o la brasa y aliñados con aceite de hierbas: la guarnición del verano.",
+    "what": "Las verduras de verano tienen mucha agua y se hacen rápido. Cortadas en láminas de grosor regular, saladas un poco antes y marcadas en plancha o parrilla muy caliente, quedan con marcas tostadas y el interior tierno. Un aliño en caliente de aceite, ajo, hierbas y un ácido las termina. La técnica de la brasa está en [[verduras-a-la-brasa]].",
+    "base": {
+      "for": "4 raciones",
+      "items": [
+        [
+          "Calabacín",
+          "1"
+        ],
+        [
+          "Berenjena",
+          "1"
+        ],
+        [
+          "Pimiento rojo",
+          "1"
+        ],
+        [
+          "Cebolla roja",
+          "1"
+        ],
+        [
+          "Tomates",
+          "2"
+        ],
+        [
+          "Aceite de oliva",
+          "60 g"
+        ],
+        [
+          "Ajo, albahaca, orégano o tomillo",
+          "al gusto"
+        ],
+        [
+          "Vinagre de jerez o limón",
+          "15 g"
+        ],
+        [
+          "Sal en escamas",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Corta calabacín y berenjena en láminas de 1 cm, pimiento en tiras anchas, cebolla en rodajas gruesas y tomates por la mitad.",
+        "Sala la berenjena y el calabacín 10 minutos y sécalos.",
+        "Pinta con aceite y marca en plancha o parrilla muy caliente, 2–3 minutos por lado, sin moverlas.",
+        "Mezcla el resto del aceite con ajo, hierbas y vinagre.",
+        "Aliña las verduras en caliente y sirve templadas o a temperatura ambiente."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Grosor",
+        "ratio": "1 cm",
+        "note": "Igual en todas para que se hagan a la vez."
+      },
+      {
+        "use": "Plancha",
+        "ratio": "Muy caliente, 2–3 minutos por lado",
+        "note": "Sin mover para marcar."
+      },
+      {
+        "use": "Aliño",
+        "ratio": "3 de aceite por 1 de ácido",
+        "note": "En caliente."
+      }
+    ],
+    "variants": [
+      {
+        "id": "verduras-a-la-brasa",
+        "name": "Verduras a la brasa",
+        "note": "Con zonas de calor."
+      },
+      {
+        "id": "verduras-marinadas",
+        "name": "Verduras marinadas",
+        "note": "Aliñadas y reposadas."
+      },
+      {
+        "id": "pisto-y-sanfaina",
+        "name": "Pisto",
+        "note": "Las mismas verduras guisadas."
+      }
+    ],
+    "keys": [
+      "Grosor regular.",
+      "Plancha muy caliente.",
+      "Sin mover para marcar.",
+      "Aliño en caliente.",
+      "Mejor templadas que frías de cámara."
+    ],
+    "errors": [
+      {
+        "p": "Verduras cocidas sin marcas",
+        "fix": "Plancha fría o verdura mojada. Calienta y seca."
+      },
+      {
+        "p": "Berenjena correosa",
+        "fix": "Poco hecha. Más tiempo a fuego medio."
+      },
+      {
+        "p": "Quemadas fuera y crudas dentro",
+        "fix": "Láminas gruesas. Corta a 1 cm."
+      }
+    ],
+    "history": "Las parrilladas de verduras de verano son habituales en toda la cocina mediterránea, en casa y en restaurante.",
+    "uses": [
+      "Guarnición de carnes y pescados a la brasa",
+      "Entrante con queso fresco",
+      "Bocadillos",
+      "Base de ensaladas templadas"
+    ],
+    "keep": "Marcadas y aliñadas, en frío 2–3 días; mejor a temperatura ambiente al servir.",
+    "pro": "Marca en tanda antes del servicio, aliña y sirve a temperatura ambiente o pásalas un instante por la plancha.",
+    "related": [
+      "verduras-a-la-brasa",
+      "verduras-marinadas",
+      "pisto-y-sanfaina",
+      "berenjena",
+      "ensaladas-templadas"
+    ]
+  },
+  {
+    "id": "verduras-de-otono-asadas",
+    "name": "Verduras de otoño asadas",
+    "name_en": "Roasted autumn vegetables",
+    "cat": "bases",
+    "group": "Técnicas para verduras",
+    "aka": [
+      "calabaza asada",
+      "boniato asado",
+      "verduras asadas de otono",
+      "asado de raices",
+      "bandeja de verduras al horno"
+    ],
+    "role": "guarnicion",
+    "techniques": [
+      "horno",
+      "caramelizado"
+    ],
+    "summary": "Calabaza, boniato, chirivía, cebolla roja, setas y uvas asadas en bandeja con especias y un glaseado ligero de miel y vinagre.",
+    "what": "El otoño trae verduras densas y dulces que mejoran mucho asadas: la calabaza, el boniato y las raíces se caramelizan por los bordes y concentran su sabor. Se cortan en trozos parecidos, se aliñan con aceite, sal y especias, y se asan a horno fuerte, añadiendo las que tardan menos (setas, uvas) al final. Un toque de miel y vinagre al final las glasea. La técnica general está en [[asado-de-verduras]].",
+    "base": {
+      "for": "4 raciones",
+      "items": [
+        [
+          "Calabaza en gajos",
+          "400 g"
+        ],
+        [
+          "Boniato en trozos",
+          "300 g"
+        ],
+        [
+          "Chirivía o zanahoria",
+          "200 g"
+        ],
+        [
+          "Cebolla roja en gajos",
+          "1"
+        ],
+        [
+          "Setas",
+          "150 g"
+        ],
+        [
+          "Uvas (opcional)",
+          "100 g"
+        ],
+        [
+          "Aceite de oliva",
+          "50 g"
+        ],
+        [
+          "Comino, pimentón o romero",
+          "al gusto"
+        ],
+        [
+          "Miel y vinagre de jerez",
+          "15 g y 15 g"
+        ],
+        [
+          "Sal",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Corta las verduras en trozos de tamaño parecido.",
+        "Aliña con aceite, sal y especias y extiende en una sola capa.",
+        "Asa a 200–220 °C, 25–30 minutos, girando a mitad.",
+        "Añade las setas y las uvas los últimos 10 minutos.",
+        "Mezcla la miel con el vinagre, riega al salir y vuelve al horno 2 minutos."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Horno",
+        "ratio": "200–220 °C, 25–35 minutos",
+        "note": "En una sola capa."
+      },
+      {
+        "use": "Glaseado",
+        "ratio": "Miel y vinagre a partes iguales",
+        "note": "Al final."
+      },
+      {
+        "use": "Tamaño",
+        "ratio": "Trozos de 3–4 cm",
+        "note": "Parejos."
+      }
+    ],
+    "variants": [
+      {
+        "id": "asado-de-verduras",
+        "name": "Asado de verduras",
+        "note": "La técnica general."
+      },
+      {
+        "id": "calabaza",
+        "name": "Calabaza",
+        "note": "Variedades."
+      },
+      {
+        "id": "pure-de-castanas-salado",
+        "name": "Con castañas",
+        "note": "Castañas glaseadas o en puré."
+      }
+    ],
+    "keys": [
+      "Una sola capa: amontonadas se cuecen.",
+      "Trozos parejos.",
+      "Horno fuerte.",
+      "Lo rápido, al final.",
+      "Glaseado ácido-dulce al terminar."
+    ],
+    "errors": [
+      {
+        "p": "Verduras blandas sin dorar",
+        "fix": "Bandeja llena o horno flojo. Dos bandejas y más calor."
+      },
+      {
+        "p": "Quemadas por fuera",
+        "fix": "Miel desde el principio. Glasea al final."
+      },
+      {
+        "p": "Desiguales",
+        "fix": "Trozos de tamaño distinto. Corta parejo."
+      }
+    ],
+    "history": "Asar verduras de otoño en el horno o en las brasas es una costumbre de las cocinas rurales europeas.",
+    "uses": [
+      "Guarnición de caza, pato y cerdo",
+      "Plato vegetal con queso o legumbre",
+      "Ensaladas templadas",
+      "Cremas"
+    ],
+    "keep": "Asadas, en frío 3 días; regenerar en horno.",
+    "pro": "Asa en tanda por la mañana y termina el glaseado por raciones al pedir.",
+    "related": [
+      "asado-de-verduras",
+      "calabaza",
+      "patata-y-boniato",
+      "remolacha-y-raices",
+      "pure-de-castanas-salado",
+      "setas"
+    ]
+  },
+  {
+    "id": "verduras-de-invierno-glaseadas",
+    "name": "Verduras de invierno glaseadas y asadas",
+    "name_en": "Glazed and roasted winter vegetables",
+    "cat": "bases",
+    "group": "Técnicas para verduras",
+    "aka": [
+      "coles de bruselas asadas",
+      "zanahorias glaseadas",
+      "nabos glaseados",
+      "raices glaseadas",
+      "verduras de invierno"
+    ],
+    "role": "guarnicion",
+    "techniques": [
+      "horno",
+      "caramelizado"
+    ],
+    "summary": "Coles de Bruselas asadas hasta tostar, y zanahorias, nabos, chirivías y cebollitas glaseados con mantequilla y caldo: guarniciones de invierno.",
+    "what": "En invierno mandan las coles y las raíces. Las coles de Bruselas, partidas y asadas por la cara del corte, pierden el amargor y se vuelven dulces y tostadas. Las raíces y las cebollitas se glasean: se cuecen tapadas con mantequilla, una pizca de azúcar y un poco de caldo, hasta que el líquido se reduce y las cubre de brillo, como explica [[glaseado-de-verduras]]. Combinadas, dan una guarnición de invierno con color y profundidad.",
+    "base": {
+      "for": "4 raciones",
+      "items": [
+        [
+          "Coles de Bruselas partidas",
+          "300 g"
+        ],
+        [
+          "Zanahorias, nabos o chirivías en bastones",
+          "400 g"
+        ],
+        [
+          "Cebollitas peladas",
+          "12"
+        ],
+        [
+          "Mantequilla",
+          "40 g"
+        ],
+        [
+          "Azúcar o miel",
+          "10 g"
+        ],
+        [
+          "Caldo de ave o de verduras",
+          "200 ml"
+        ],
+        [
+          "Aceite de oliva",
+          "20 g"
+        ],
+        [
+          "Tomillo, sal y pimienta",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Asa las coles de Bruselas con aceite y sal, con el corte hacia abajo, a 220 °C, 15–20 minutos, hasta tostar.",
+        "Pon las raíces y las cebollitas en una sartén ancha con la mantequilla, el azúcar, la sal, el tomillo y el caldo hasta media altura.",
+        "Tapa con un papel y cuece a fuego medio hasta que estén casi tiernas.",
+        "Destapa y reduce, moviendo la sartén, hasta que el líquido las cubra de brillo.",
+        "Mezcla con las coles y sirve."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Coles de Bruselas",
+        "ratio": "220 °C, 15–20 minutos, por el corte",
+        "note": "Tostadas, no grises."
+      },
+      {
+        "use": "Glaseado",
+        "ratio": "Caldo hasta media altura con 10 % de mantequilla",
+        "note": "Reducir hasta brillar."
+      },
+      {
+        "use": "Ración",
+        "ratio": "150–180 g",
+        "note": "Como guarnición."
+      }
+    ],
+    "variants": [
+      {
+        "id": "glaseado-de-verduras",
+        "name": "Glaseado de verduras",
+        "note": "La técnica."
+      },
+      {
+        "id": "coles-y-brasicas",
+        "name": "Coles",
+        "note": "Variedades."
+      },
+      {
+        "id": "lombarda-guisada",
+        "name": "Lombarda guisada",
+        "note": "Otra guarnición de invierno."
+      }
+    ],
+    "keys": [
+      "Coles por el corte para tostar.",
+      "Raíces del mismo tamaño.",
+      "Glasear reduciendo, no hirviendo de más.",
+      "Un punto ácido o cítrico al final.",
+      "Servir con brillo."
+    ],
+    "errors": [
+      {
+        "p": "Coles amargas y grises",
+        "fix": "Hervidas o asadas poco. Ásalas fuerte."
+      },
+      {
+        "p": "Raíces blandas sin brillo",
+        "fix": "Mucho líquido. Reduce al final."
+      },
+      {
+        "p": "Glaseado quemado",
+        "fix": "Fuego alto al final. Muévelo y vigila."
+      }
+    ],
+    "history": "Las raíces glaseadas son una guarnición clásica de la cocina europea; asar coles de Bruselas se ha popularizado en la cocina actual.",
+    "uses": [
+      "Guarnición de carnes de invierno",
+      "Pato y caza",
+      "Asados",
+      "Plato vegetal"
+    ],
+    "keep": "En frío 2–3 días; regenerar en sartén con un poco de caldo.",
+    "pro": "Glasea en tanda y termina en sartén por raciones al pedir.",
+    "related": [
+      "glaseado-de-verduras",
+      "coles-y-brasicas",
+      "remolacha-y-raices",
+      "lombarda-guisada",
+      "asado-de-verduras"
+    ]
+  },
+  {
+    "id": "pipirrana",
+    "name": "Pipirrana y ensaladas picadas",
+    "name_en": "Pipirrana and chopped salads",
+    "cat": "bases",
+    "group": "Aliños de pase",
+    "aka": [
+      "pipirrana",
+      "pirriaca",
+      "ensalada picada",
+      "piriñaca",
+      "ensalada de tomate y pimiento picado"
+    ],
+    "role": "fresco",
+    "techniques": [
+      "crudo"
+    ],
+    "summary": "Tomate, pimiento, cebolla y pepino picados en dados pequeños y aliñados con aceite, vinagre y sal: ensalada fresca de verano y aliño para pescados.",
+    "what": "Es una ensalada de verduras crudas picadas muy pequeñas, de la tradición andaluza, con un buen aceite y vinagre. Según la zona se le añade huevo cocido, atún o se maja el tomate con ajo. Picada muy fina se convierte en un aliño fresco para pescados a la brasa, mariscos o legumbres. Comparte espíritu con el [[gazpacho-y-salmorejo|gazpacho]].",
+    "base": {
+      "for": "4 raciones",
+      "items": [
+        [
+          "Tomate maduro y firme",
+          "400 g"
+        ],
+        [
+          "Pimiento verde italiano",
+          "150 g"
+        ],
+        [
+          "Cebolla dulce o cebolleta",
+          "100 g"
+        ],
+        [
+          "Pepino (opcional)",
+          "100 g"
+        ],
+        [
+          "Aceite de oliva virgen extra",
+          "60 g"
+        ],
+        [
+          "Vinagre de vino o de jerez",
+          "20 g"
+        ],
+        [
+          "Sal",
+          "al gusto"
+        ],
+        [
+          "Huevo cocido o atún (opcional)",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Pica todas las verduras en dados pequeños y regulares de 5 mm.",
+        "Lava la cebolla picada en agua fría 10 minutos y escúrrela.",
+        "Mezcla las verduras con la sal y deja 10 minutos para que suelten jugo.",
+        "Añade el aceite y el vinagre y mezcla.",
+        "Sirve fría, con huevo o atún si quieres."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Verduras",
+        "ratio": "2 de tomate, 1 de pimiento, 0,7 de cebolla",
+        "note": "En dados de 5 mm."
+      },
+      {
+        "use": "Aliño",
+        "ratio": "3 de aceite por 1 de vinagre",
+        "note": "Con el jugo del tomate."
+      },
+      {
+        "use": "Como aliño de pescado",
+        "ratio": "Dados de 2–3 mm",
+        "note": "Una cucharada por ración."
+      }
+    ],
+    "variants": [
+      {
+        "id": "gazpacho-y-salmorejo",
+        "name": "Gazpacho",
+        "note": "Las mismas verduras trituradas."
+      },
+      {
+        "id": "tomate-alinado",
+        "name": "Tomate aliñado",
+        "note": "Solo tomate."
+      },
+      {
+        "id": "salsa-vierge",
+        "name": "Salsa vierge",
+        "note": "Aliño de tomate en dados con aceite y hierbas."
+      }
+    ],
+    "keys": [
+      "Picado fino y regular.",
+      "Tomate firme y maduro.",
+      "Cebolla lavada.",
+      "Sal unos minutos antes.",
+      "Servir fría pero no helada."
+    ],
+    "errors": [
+      {
+        "p": "Aguada",
+        "fix": "Tomate muy blando o salado con antelación. Usa tomate firme y aliña al servir."
+      },
+      {
+        "p": "Cebolla fuerte",
+        "fix": "Sin lavar. Lávala en agua fría."
+      },
+      {
+        "p": "Sosa",
+        "fix": "Poco vinagre o sal. Ajusta."
+      }
+    ],
+    "history": "La pipirrana es una ensalada tradicional de Andalucía, sobre todo de Jaén, con muchas variantes locales.",
+    "uses": [
+      "Ensalada de verano",
+      "Aliño para pescado a la brasa",
+      "Con legumbres",
+      "Tapa con atún o huevo"
+    ],
+    "keep": "En frío, el mismo día.",
+    "pro": "Pica las verduras por la mañana por separado y mezcla y aliña al pedir.",
+    "related": [
+      "gazpacho-y-salmorejo",
+      "tomate-alinado",
+      "salsa-vierge",
+      "tomate",
+      "pimientos"
+    ]
+  },
+  {
+    "id": "ensaladas-de-col",
+    "name": "Ensaladas de col",
+    "name_en": "Cabbage slaws",
+    "cat": "bases",
+    "group": "Aliños de pase",
+    "aka": [
+      "coleslaw",
+      "ensalada de col",
+      "ensalada de lombarda",
+      "col cruda",
+      "ensalada de repollo"
+    ],
+    "role": "fresco",
+    "techniques": [
+      "crudo"
+    ],
+    "summary": "Col blanca o lombarda cortada muy fina, salada y escurrida, aliñada con mayonesa ligera o vinagreta: guarnición crujiente para carnes a la brasa y bocadillos.",
+    "what": "La col cruda cortada muy fina es crujiente, fresca y aguanta el aliño sin ablandarse enseguida. Salada unos minutos suelta agua y queda más tierna y sabrosa. Con zanahoria, manzana o hinojo rallados y un aliño de mayonesa ligera y vinagre es la ensalada de col clásica; con vinagreta y hierbas, una versión más fresca. Es la guarnición perfecta para carnes grasas, costillas y bocadillos de brasa.",
+    "base": {
+      "for": "6 raciones",
+      "items": [
+        [
+          "Col blanca o lombarda",
+          "600 g"
+        ],
+        [
+          "Zanahoria rallada",
+          "150 g"
+        ],
+        [
+          "Manzana ácida en juliana",
+          "1"
+        ],
+        [
+          "Sal",
+          "6 g"
+        ],
+        [
+          "Mayonesa (con yema pasteurizada) o yogur",
+          "100 g"
+        ],
+        [
+          "Vinagre de manzana",
+          "20 g"
+        ],
+        [
+          "Mostaza",
+          "10 g"
+        ],
+        [
+          "Azúcar o miel",
+          "5 g"
+        ],
+        [
+          "Perejil o eneldo",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Corta la col en juliana muy fina con cuchillo o mandolina.",
+        "Mezcla con la sal y deja 20–30 minutos; escurre apretando.",
+        "Mezcla la mayonesa, el vinagre, la mostaza y el azúcar.",
+        "Mezcla la col con la zanahoria, la manzana y el aliño.",
+        "Termina con hierbas y deja reposar 15 minutos antes de servir."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Salado",
+        "ratio": "1 % de sal sobre la col, 20–30 minutos",
+        "note": "Escurrir bien."
+      },
+      {
+        "use": "Aliño cremoso",
+        "ratio": "100 g de mayonesa con 20 g de vinagre por 600 g de col",
+        "note": "Ligero, no empastado."
+      },
+      {
+        "use": "Versión de vinagreta",
+        "ratio": "3 de aceite por 1 de vinagre",
+        "note": "Más fresca."
+      }
+    ],
+    "variants": [
+      {
+        "id": "coles-y-brasicas",
+        "name": "Coles",
+        "note": "Variedades."
+      },
+      {
+        "id": "kimchi-rapido-de-guarnicion",
+        "name": "Kimchi rápido",
+        "note": "Col picante y fermentada."
+      },
+      {
+        "id": "mayonesa",
+        "name": "Mayonesa",
+        "note": "La base del aliño cremoso."
+      }
+    ],
+    "keys": [
+      "Corte muy fino.",
+      "Salar y escurrir.",
+      "Aliño ligero y ácido.",
+      "Reposo corto antes de servir.",
+      "Con mayonesa, siempre en frío."
+    ],
+    "errors": [
+      {
+        "p": "Aguada",
+        "fix": "Sin salar y escurrir. Sala y escurre."
+      },
+      {
+        "p": "Empalagosa",
+        "fix": "Mucha mayonesa. Más ácido y menos mayonesa."
+      },
+      {
+        "p": "Dura",
+        "fix": "Corte grueso. Usa mandolina."
+      }
+    ],
+    "history": "Las ensaladas de col cruda son tradicionales en el norte de Europa y se popularizaron en América como acompañamiento de carnes a la brasa.",
+    "uses": [
+      "Carnes a la brasa y costillas",
+      "Bocadillos y hamburguesas",
+      "Pescado frito",
+      "Tacos"
+    ],
+    "keep": "Con mayonesa, en frío y en el día. Con vinagreta, 2 días.",
+    "pro": "Sala y escurre la col por la mañana; aliña por tandas durante el servicio.",
+    "related": [
+      "coles-y-brasicas",
+      "kimchi-rapido-de-guarnicion",
+      "mayonesa",
+      "barbacoa-lenta",
+      "pickles-de-servicio"
+    ]
+  },
+  {
+    "id": "ensaladas-de-fruta-saladas",
+    "name": "Ensaladas de fruta saladas",
+    "name_en": "Savoury fruit salads",
+    "cat": "bases",
+    "group": "Cremas y guarniciones",
+    "aka": [
+      "sandia con queso",
+      "melon con jamon",
+      "melocoton con queso",
+      "ensalada de higos",
+      "fruta salada"
+    ],
+    "role": "fresco",
+    "techniques": [
+      "crudo"
+    ],
+    "summary": "Fruta de temporada combinada con queso, embutido, hierbas, aceite, sal y pimienta: entrantes frescos de verano y otoño.",
+    "what": "La fruta madura, con su dulzor y acidez, combina muy bien con lo salado y lo graso: sandía con queso fresco de cabra y menta, melón con jamón, melocotón con queso cremoso y albahaca, higos con queso azul o con embutido. La clave es la fruta en su punto, fría pero no helada, buena sal en escamas, aceite y pimienta. Son platos de temporada muy rápidos que dependen todo del producto.",
+    "base": {
+      "for": "4 raciones de sandía con queso fresco",
+      "items": [
+        [
+          "Sandía sin pepitas en dados o triángulos",
+          "600 g"
+        ],
+        [
+          "Queso fresco de cabra u oveja",
+          "150 g"
+        ],
+        [
+          "Menta y albahaca",
+          "unas hojas"
+        ],
+        [
+          "Cebolla roja en aros finos (lavada)",
+          "30 g"
+        ],
+        [
+          "Aceite de oliva virgen extra",
+          "30 g"
+        ],
+        [
+          "Lima o vinagre suave",
+          "unas gotas"
+        ],
+        [
+          "Sal en escamas y pimienta negra",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Corta la fruta en piezas regulares y enfríala ligeramente.",
+        "Desmenuza el queso por encima.",
+        "Añade la cebolla y las hierbas rotas a mano.",
+        "Aliña con aceite, unas gotas de ácido, sal en escamas y pimienta.",
+        "Sirve enseguida."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Fruta y queso",
+        "ratio": "4 partes de fruta por 1 de queso",
+        "note": "La fruta protagonista."
+      },
+      {
+        "use": "Sal",
+        "ratio": "Sal en escamas al servir",
+        "note": "Contrasta con el dulce."
+      },
+      {
+        "use": "Temperatura",
+        "ratio": "Fruta a 8–10 °C",
+        "note": "Fría pero con sabor."
+      }
+    ],
+    "variants": [
+      {
+        "id": "melon-y-sandia",
+        "name": "Melón y sandía",
+        "note": "El producto."
+      },
+      {
+        "id": "higos-y-algarroba",
+        "name": "Higos con queso",
+        "note": "Higos frescos de la isla."
+      },
+      {
+        "id": "quesos-de-las-islas",
+        "name": "Quesos de la isla",
+        "note": "Quesos frescos de cabra y oveja."
+      }
+    ],
+    "keys": [
+      "Fruta madura y de temporada.",
+      "Fría pero no helada.",
+      "Sal en escamas y pimienta.",
+      "Hierbas frescas rotas a mano.",
+      "Montar al momento."
+    ],
+    "errors": [
+      {
+        "p": "Sin sabor",
+        "fix": "Fruta verde o helada. Usa fruta madura y atempérala."
+      },
+      {
+        "p": "Aguado",
+        "fix": "Montado con antelación. Monta al servir."
+      },
+      {
+        "p": "Desequilibrio",
+        "fix": "Mucho queso o embutido. La fruta manda."
+      }
+    ],
+    "history": "Combinar fruta con queso o jamón es una tradición del Mediterráneo, del melón con jamón a los higos con queso.",
+    "uses": [
+      "Entrante de verano",
+      "Aperitivo",
+      "Tapa",
+      "Plato fresco de mediodía"
+    ],
+    "keep": "Fruta cortada en frío, unas horas. Montada, al momento.",
+    "pro": "Corta la fruta antes del servicio y monta y aliña por raciones.",
+    "related": [
+      "melon-y-sandia",
+      "higos-y-algarroba",
+      "quesos-de-las-islas",
+      "frutos-rojos-y-fruta-de-hueso",
+      "ensalada-de-hierbas"
+    ]
+  },
+  {
+    "id": "hojas-amargas",
+    "name": "Hojas amargas: endivia, radicchio y escarola",
+    "name_en": "Bitter leaves",
+    "cat": "bases",
+    "group": "Técnicas para verduras",
+    "aka": [
+      "endivias",
+      "radicchio",
+      "escarola",
+      "achicoria",
+      "hojas amargas a la brasa",
+      "ensalada de hojas amargas"
+    ],
+    "role": "guarnicion",
+    "techniques": [
+      "brasa",
+      "crudo"
+    ],
+    "summary": "Cómo usar las hojas amargas en crudo con aliños potentes o asadas y a la brasa: equilibrar su amargor con grasa, dulzor, sal y ácido.",
+    "what": "La endivia, el radicchio, la escarola y la achicoria tienen un amargor agradable que limpia la boca y contrasta con platos grasos. En crudo piden aliños con carácter: anchoa, ajo, naranja, frutos secos, queso azul. Asadas o a la brasa en cuartos, el amargor se suaviza y aparecen notas dulces y tostadas. Equilibrarlas es cuestión de añadir grasa, algo dulce y sal. Las variedades están en [[hojas-y-brotes]].",
+    "base": {
+      "for": "4 raciones de radicchio a la brasa",
+      "items": [
+        [
+          "Radicchio o endivias en cuartos",
+          "2 cogollos"
+        ],
+        [
+          "Aceite de oliva",
+          "30 g"
+        ],
+        [
+          "Miel",
+          "10 g"
+        ],
+        [
+          "Vinagre balsámico o de jerez",
+          "15 g"
+        ],
+        [
+          "Naranja en gajos",
+          "1"
+        ],
+        [
+          "Nueces tostadas",
+          "30 g"
+        ],
+        [
+          "Queso azul o curado",
+          "40 g"
+        ],
+        [
+          "Sal en escamas",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Corta los cogollos en cuartos dejando la base para que no se deshagan.",
+        "Pinta con aceite y sal y marca en la brasa o la plancha 2–3 minutos por lado.",
+        "Mezcla la miel con el vinagre y un poco de aceite.",
+        "Coloca las hojas, riega con el aliño y termina con la naranja, las nueces y el queso.",
+        "Sirve templado."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "A la brasa",
+        "ratio": "Cuartos, 2–3 minutos por lado",
+        "note": "Tostado por fuera, tierno dentro."
+      },
+      {
+        "use": "Aliño",
+        "ratio": "Aceite, ácido y algo dulce 3:1:0,5",
+        "note": "Equilibra el amargor."
+      },
+      {
+        "use": "En crudo",
+        "ratio": "Hojas lavadas en agua fría 10 minutos",
+        "note": "Más crujientes y algo menos amargas."
+      }
+    ],
+    "variants": [
+      {
+        "id": "hojas-y-brotes",
+        "name": "Hojas y brotes",
+        "note": "Variedades."
+      },
+      {
+        "id": "bagna-cauda-y-salsas-de-anchoa",
+        "name": "Con anchoa",
+        "note": "El aliño clásico de las hojas amargas."
+      },
+      {
+        "id": "ensaladas-de-citricos",
+        "name": "Con cítricos",
+        "note": "La naranja equilibra el amargor."
+      }
+    ],
+    "keys": [
+      "Equilibra el amargor con grasa, dulce y sal.",
+      "Deja la base para que no se deshagan.",
+      "A la brasa, poco tiempo.",
+      "Aliño con carácter.",
+      "Contrapunto de platos grasos."
+    ],
+    "errors": [
+      {
+        "p": "Demasiado amargo",
+        "fix": "Sin equilibrio. Añade grasa, miel o naranja."
+      },
+      {
+        "p": "Hojas deshechas en la brasa",
+        "fix": "Sin base o mucho tiempo. Corta con base y marca rápido."
+      },
+      {
+        "p": "Aliño que se pierde",
+        "fix": "Aliño tímido. Usa anchoa, queso o vinagre potente."
+      }
+    ],
+    "history": "Las hojas amargas son muy apreciadas en la cocina italiana y francesa, y la escarola y la endivia son habituales en las ensaladas de invierno en España.",
+    "uses": [
+      "Ensaladas de invierno",
+      "Guarnición de carnes grasas",
+      "Entrante a la brasa",
+      "Con quesos"
+    ],
+    "keep": "En frío, en caja con papel húmedo, 4–5 días.",
+    "pro": "Ten los cogollos cortados en frío y márcalos al pedir.",
+    "related": [
+      "hojas-y-brotes",
+      "bagna-cauda-y-salsas-de-anchoa",
+      "ensaladas-de-citricos",
+      "verduras-a-la-brasa",
+      "contraste-y-equilibrio"
+    ]
+  },
+  {
+    "id": "ensalada-campera",
+    "name": "Ensalada campera",
+    "name_en": "Spanish country potato salad",
+    "cat": "bases",
+    "group": "Cremas y guarniciones",
+    "aka": [
+      "campera",
+      "ensalada de patata",
+      "patatas alinadas",
+      "ensalada de verano de patata"
+    ],
+    "role": "guarnicion",
+    "techniques": [
+      "hervido"
+    ],
+    "summary": "Patata cocida con tomate, pimiento, cebolla, huevo, atún y aceitunas, aliñada con aceite y vinagre: la ensalada de verano de toda la vida.",
+    "what": "Es la prima sin mayonesa de la [[ensaladilla-rusa]]: patata cocida en trozos, aliñada en tibio con aceite y vinagre, con verduras frescas, huevo cocido, atún o bonito y aceitunas. Lo que la hace buena es la patata en su punto, aliñada aún tibia para que absorba el aliño, y un aceite y un vinagre de calidad. Se sirve fresca, pero no helada.",
+    "base": {
+      "for": "4 raciones",
+      "items": [
+        [
+          "Patata de carne firme",
+          "800 g"
+        ],
+        [
+          "Tomate",
+          "2"
+        ],
+        [
+          "Pimiento verde",
+          "1"
+        ],
+        [
+          "Cebolleta",
+          "1"
+        ],
+        [
+          "Huevos cocidos",
+          "3"
+        ],
+        [
+          "Atún o bonito en aceite",
+          "150 g"
+        ],
+        [
+          "Aceitunas",
+          "60 g"
+        ],
+        [
+          "Aceite de oliva virgen extra",
+          "60 g"
+        ],
+        [
+          "Vinagre de vino",
+          "20 g"
+        ],
+        [
+          "Sal y perejil",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Cuece las patatas con piel en agua con sal hasta que estén tiernas; pélalas en tibio y córtalas en trozos.",
+        "Aliña la patata en tibio con la mitad del aceite, el vinagre y la sal.",
+        "Corta el tomate, el pimiento y la cebolleta.",
+        "Mezcla todo con el huevo en cuartos, el atún y las aceitunas.",
+        "Termina con el resto del aceite, perejil y sal; sirve fresca."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Aliño",
+        "ratio": "3 de aceite por 1 de vinagre",
+        "note": "Mitad en tibio, mitad al servir."
+      },
+      {
+        "use": "Patata",
+        "ratio": "200 g por ración",
+        "note": "Cocida con piel."
+      },
+      {
+        "use": "Temperatura",
+        "ratio": "Fresca, a 10–15 °C",
+        "note": "Helada pierde sabor."
+      }
+    ],
+    "variants": [
+      {
+        "id": "ensaladilla-rusa",
+        "name": "Ensaladilla rusa",
+        "note": "Con mayonesa."
+      },
+      {
+        "id": "ensaladas-templadas",
+        "name": "Ensaladas templadas",
+        "note": "Con la patata caliente."
+      },
+      {
+        "id": "guarniciones-de-patata",
+        "name": "Guarniciones de patata",
+        "note": "Elegir y cocer la patata."
+      }
+    ],
+    "keys": [
+      "Patata cocida con piel.",
+      "Aliño en tibio.",
+      "Buen aceite y buen vinagre.",
+      "Ingredientes frescos y cortados al momento.",
+      "Fresca, no helada."
+    ],
+    "errors": [
+      {
+        "p": "Patata deshecha",
+        "fix": "Cocción larga o patata harinosa. Usa patata firme."
+      },
+      {
+        "p": "Sosa",
+        "fix": "Aliñada en frío. Aliña la patata en tibio."
+      },
+      {
+        "p": "Aguada",
+        "fix": "Tomate muy maduro. Escúrrelo o usa tomate firme."
+      }
+    ],
+    "history": "La ensalada campera es un plato de verano de toda España, con tantas versiones como casas.",
+    "uses": [
+      "Entrante de verano",
+      "Guarnición fría",
+      "Menú de mediodía",
+      "Tapa"
+    ],
+    "keep": "En frío, 1 día.",
+    "pro": "Cuece y aliña la patata por la mañana; monta con los ingredientes frescos al servir.",
+    "related": [
+      "ensaladilla-rusa",
+      "ensaladas-templadas",
+      "guarniciones-de-patata",
+      "atun-rojo-y-bonito",
+      "tomate"
+    ]
   }
 ]

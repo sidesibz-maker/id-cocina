@@ -15336,5 +15336,2491 @@
    "crema-pastelera",
    "frutas-en-almibar"
   ]
+ },
+ {
+  "id": "helado-de-vainilla",
+  "name": "Helado de vainilla",
+  "name_en": "Vanilla ice cream",
+  "cat": "dulce",
+  "group": "Frío",
+  "aka": [
+   "helado de vainilla",
+   "helado de crema",
+   "helado base",
+   "gelato de vainilla",
+   "helado de nata"
+  ],
+  "summary": "El helado de crema de referencia: base de leche, nata, yema y azúcar cocida a 82–84 °C, infusionada con vaina de vainilla, madurada y mantecada.",
+  "what": "Es la base sobre la que se construyen casi todos los helados de crema. Se hace una [[crema-inglesa]] con leche, nata, yema y azúcar, se infusiona con vainilla de buena calidad, se enfría rápido, se deja madurar en frío para que las proteínas y la grasa se asienten y se manteca. El equilibrio de azúcar y grasa sigue las reglas de [[helados-y-sorbetes]]. Un buen helado de vainilla, con pocos ingredientes y bien hecho, es uno de los mejores acompañamientos de postres calientes.",
+  "base": {
+   "for": "unos 1,2 kg",
+   "items": [
+    [
+     "Leche entera",
+     "650 g"
+    ],
+    [
+     "Nata 35 %",
+     "250 g"
+    ],
+    [
+     "Yemas",
+     "100 g"
+    ],
+    [
+     "Azúcar",
+     "160 g"
+    ],
+    [
+     "Glucosa o dextrosa",
+     "30 g"
+    ],
+    [
+     "Vainas de vainilla",
+     "1–2"
+    ],
+    [
+     "Sal",
+     "1 g"
+    ]
+   ],
+   "steps": [
+    "Abre la vainilla, raspa las semillas y calienta la leche y la nata con la vaina y las semillas hasta que hiervan; tapa e infusiona 20–30 minutos.",
+    "Bate las yemas con el azúcar, la glucosa y la sal; añade la leche caliente y devuelve al cazo.",
+    "Cuece a fuego suave removiendo hasta 82–84 °C, cuando nape.",
+    "Cuela, enfría rápido sobre hielo y deja madurar en frío 6–12 horas.",
+    "Mantécala y guarda a −18 °C."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Base de crema",
+    "ratio": "16–20 % de azúcares y 8–12 % de grasa",
+    "note": "Mira [[helados-y-sorbetes]]."
+   },
+   {
+    "use": "Cocción",
+    "ratio": "82–84 °C",
+    "note": "Como una crema inglesa."
+   },
+   {
+    "use": "Maduración",
+    "ratio": "6–12 horas a 0–4 °C",
+    "note": "Mejor textura y más aroma."
+   },
+   {
+    "use": "Servicio",
+    "ratio": "−12 a −10 °C",
+    "note": "Saca del congelador 10 minutos antes."
+   }
+  ],
+  "variants": [
+   {
+    "id": "crema-inglesa",
+    "name": "Crema inglesa",
+    "note": "La base cocida."
+   },
+   {
+    "id": "helados-de-autor",
+    "name": "Helados infusionados",
+    "note": "La misma base con otros aromas."
+   },
+   {
+    "id": "vainilla-y-cacao",
+    "name": "Vainilla",
+    "note": "Variedades y cómo usarla."
+   }
+  ],
+  "keys": [
+   "Vainilla de buena calidad, infusionada larga.",
+   "Cocer a 82–84 °C, nunca hervir.",
+   "Enfriar rápido y madurar.",
+   "Mantecar lo justo: muy batido entra demasiado aire.",
+   "Las vainas usadas, secas, sirven para azúcar de vainilla."
+  ],
+  "errors": [
+   {
+    "p": "Cristales de hielo",
+    "fix": "Poco azúcar o sólidos, o recongelado. Revisa el equilibrio y no recongeles."
+   },
+   {
+    "p": "Sabor a huevo",
+    "fix": "Crema cocida de más. Saca a 82–84 °C."
+   },
+   {
+    "p": "Duro",
+    "fix": "Poco azúcar o servido muy frío. Ajusta y atempera."
+   }
+  ],
+  "history": "El helado de crema de vainilla se popularizó en Europa y América en los siglos XVIII y XIX y es hoy el sabor de referencia de la heladería.",
+  "uses": [
+   "Acompañar postres calientes",
+   "Base de otros helados",
+   "Postres helados montados",
+   "Con fruta asada"
+  ],
+  "keep": "Tapado a −18 °C, 1–2 semanas para la mejor textura.",
+  "pro": "Haz la base en tanda y congela el mix madurado en porciones para mantecar según el servicio.",
+  "related": [
+   "crema-inglesa",
+   "helados-y-sorbetes",
+   "helados-de-autor",
+   "vainilla-y-cacao",
+   "fruta-asada"
+  ]
+ },
+ {
+  "id": "helado-de-chocolate",
+  "name": "Helado de chocolate",
+  "name_en": "Chocolate ice cream",
+  "cat": "dulce",
+  "group": "Frío",
+  "aka": [
+   "helado de chocolate negro",
+   "helado de cacao",
+   "gelato al cioccolato",
+   "sorbete de chocolate"
+  ],
+  "summary": "Helado intenso de chocolate negro y cacao, con la grasa y el azúcar ajustados porque el chocolate ya aporta sólidos; y el sorbete de chocolate sin lácteos.",
+  "what": "El chocolate aporta grasa (manteca de cacao), azúcar y sólidos, así que una base de helado de chocolate lleva menos nata y menos azúcar que una de vainilla. El cacao en polvo da intensidad y color sin tanta grasa. El sorbete de chocolate, con agua en lugar de leche, es aún más intenso y limpio. Una pizca de sal y un buen chocolate lo son todo. Las bases del chocolate están en [[chocolate-y-templado]].",
+  "base": {
+   "for": "unos 1,2 kg",
+   "items": [
+    [
+     "Leche entera",
+     "700 g"
+    ],
+    [
+     "Nata 35 %",
+     "120 g"
+    ],
+    [
+     "Azúcar",
+     "140 g"
+    ],
+    [
+     "Glucosa o dextrosa",
+     "30 g"
+    ],
+    [
+     "Cacao puro en polvo",
+     "30 g"
+    ],
+    [
+     "Chocolate negro 64–70 %",
+     "130 g"
+    ],
+    [
+     "Yemas (opcional, más cremoso)",
+     "40 g"
+    ],
+    [
+     "Sal",
+     "1 g"
+    ]
+   ],
+   "steps": [
+    "Mezcla el azúcar, la glucosa, el cacao y la sal.",
+    "Calienta la leche y la nata, añade la mezcla seca batiendo y lleva a hervor 1 minuto (si lleva yemas, cuece como una crema inglesa a 82–84 °C).",
+    "Vierte sobre el chocolate troceado y emulsiona con túrmix.",
+    "Enfría rápido y deja madurar 6–12 horas.",
+    "Mantécala y guarda a −18 °C."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Chocolate",
+    "ratio": "100–150 g de chocolate y 25–35 g de cacao por kilo",
+    "note": "Reduce nata y azúcar."
+   },
+   {
+    "use": "Sorbete de chocolate",
+    "ratio": "650 g de agua, 180 g de azúcar, 50 g de cacao y 120 g de chocolate",
+    "note": "Sin lácteos; muy intenso."
+   },
+   {
+    "use": "Servicio",
+    "ratio": "−12 a −10 °C",
+    "note": "Más frío pierde aroma."
+   }
+  ],
+  "variants": [
+   {
+    "id": "helado-de-vainilla",
+    "name": "Helado de vainilla",
+    "note": "La base de crema clásica."
+   },
+   {
+    "id": "postres-de-chocolate",
+    "name": "Postres de chocolate",
+    "note": "Con qué servirlo."
+   },
+   {
+    "id": "helados-de-frutos-secos",
+    "name": "Helado de gianduja",
+    "note": "Chocolate con avellana."
+   }
+  ],
+  "keys": [
+   "Menos nata y azúcar: el chocolate ya los aporta.",
+   "Emulsiona bien el chocolate.",
+   "Cacao hervido un minuto para que no sepa a crudo.",
+   "Una pizca de sal.",
+   "Madura antes de mantecar."
+  ],
+  "errors": [
+   {
+    "p": "Duro y arenoso",
+    "fix": "Demasiado chocolate o grasa. Reduce y equilibra con agua o leche."
+   },
+   {
+    "p": "Sabor a cacao crudo",
+    "fix": "Cacao sin hervir. Hierve la base un minuto."
+   },
+   {
+    "p": "Poco intenso",
+    "fix": "Chocolate flojo. Sube el cacao."
+   }
+  ],
+  "history": "El helado de chocolate es uno de los sabores clásicos de la heladería europea desde el siglo XVIII, cuando el chocolate se popularizó como bebida y postre.",
+  "uses": [
+   "Postres de chocolate",
+   "Con fruta ácida",
+   "Postres helados montados",
+   "Petit four helado"
+  ],
+  "keep": "Tapado a −18 °C, 1–2 semanas.",
+  "pro": "El sorbete de chocolate es una buena opción sin lácteos para la carta.",
+  "related": [
+   "chocolate-y-templado",
+   "helados-y-sorbetes",
+   "helado-de-vainilla",
+   "postres-de-chocolate",
+   "vainilla-y-cacao"
+  ]
+ },
+ {
+  "id": "helado-de-yogur",
+  "name": "Helado de yogur",
+  "name_en": "Frozen yogurt",
+  "cat": "dulce",
+  "group": "Frío",
+  "aka": [
+   "helado de yogur",
+   "yogur helado",
+   "frozen yogurt",
+   "helado de yogur griego",
+   "helado acido"
+  ],
+  "summary": "Helado fresco y ácido de yogur con una base cocida de leche y azúcar, en el que el yogur se añade en frío para conservar su sabor y sus fermentos.",
+  "what": "El yogur da un helado más ligero y ácido que uno de crema, perfecto con fruta y como contrapunto de postres dulces. Para que no quede duro ni pierda su sabor, se hace una base cocida de leche, nata, azúcar y glucosa (que pasteuriza y disuelve el azúcar), se enfría y solo entonces se mezcla con el yogur. Si el yogur se calienta, pierde su frescura. El yogur griego, más graso, da la textura más cremosa.",
+  "base": {
+   "for": "unos 1,1 kg",
+   "items": [
+    [
+     "Yogur griego natural",
+     "600 g"
+    ],
+    [
+     "Leche entera",
+     "200 g"
+    ],
+    [
+     "Nata 35 %",
+     "100 g"
+    ],
+    [
+     "Azúcar",
+     "150 g"
+    ],
+    [
+     "Glucosa o dextrosa",
+     "50 g"
+    ],
+    [
+     "Zumo de limón",
+     "15 g"
+    ],
+    [
+     "Sal",
+     "una pizca"
+    ]
+   ],
+   "steps": [
+    "Calienta la leche, la nata, el azúcar, la glucosa y la sal a 85 °C, removiendo hasta disolver.",
+    "Enfría rápido sobre hielo hasta menos de 10 °C.",
+    "Mézclala con el yogur y el limón con varilla, sin calentar.",
+    "Madura en frío 2–4 horas.",
+    "Mantécalo y guarda a −18 °C."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Yogur",
+    "ratio": "50–60 % del total",
+    "note": "Añadido en frío."
+   },
+   {
+    "use": "Azúcares",
+    "ratio": "18–20 % sobre el total",
+    "note": "La acidez pide algo más de dulce."
+   },
+   {
+    "use": "Base cocida",
+    "ratio": "Leche y azúcares a 85 °C",
+    "note": "Enfriada antes de mezclar."
+   }
+  ],
+  "variants": [
+   {
+    "id": "lacteos-fermentados",
+    "name": "Lácteos fermentados",
+    "note": "Kéfir o nata fermentada en lugar de yogur."
+   },
+   {
+    "id": "polos-y-helados-de-palo",
+    "name": "Polos de yogur",
+    "note": "La misma base sin mantecar."
+   },
+   {
+    "id": "coulis-y-geles-de-fruta",
+    "name": "Con coulis",
+    "note": "Vetas de fruta al mantecar."
+   }
+  ],
+  "keys": [
+   "Yogur siempre en frío.",
+   "Base cocida y bien fría antes de mezclar.",
+   "Yogur griego para más cremosidad.",
+   "Glucosa para que no quede duro.",
+   "Servir algo menos frío que un helado de crema."
+  ],
+  "errors": [
+   {
+    "p": "Duro",
+    "fix": "Poco azúcar o yogur muy desnatado. Ajusta azúcares y usa yogur entero."
+   },
+   {
+    "p": "Sabor a leche cocida",
+    "fix": "Yogur calentado. Añádelo en frío."
+   },
+   {
+    "p": "Muy ácido",
+    "fix": "Yogur muy ácido. Sube un poco el azúcar o la nata."
+   }
+  ],
+  "history": "Los helados de yogur se popularizaron a finales del siglo XX como alternativa más ligera a los helados de crema.",
+  "uses": [
+   "Con fruta y crujientes",
+   "Prepostre",
+   "Contrapunto de postres de chocolate",
+   "Desayuno y brunch"
+  ],
+  "keep": "Tapado a −18 °C, 1 semana.",
+  "pro": "Mezcla y manteca el día de servicio: el sabor fresco del yogur se pierde con los días.",
+  "related": [
+   "lacteos-fermentados",
+   "helados-y-sorbetes",
+   "polos-y-helados-de-palo",
+   "labneh",
+   "coulis-y-geles-de-fruta"
+  ]
+ },
+ {
+  "id": "sorbetes-de-citricos",
+  "name": "Sorbetes de cítricos",
+  "name_en": "Citrus sorbets",
+  "cat": "dulce",
+  "group": "Frío",
+  "aka": [
+   "sorbete de limon",
+   "sorbete de mandarina",
+   "sorbete de naranja",
+   "sorbete de lima",
+   "sorbete de pomelo"
+  ],
+  "summary": "Sorbetes de limón, mandarina, naranja sanguina, lima o pomelo: zumo, ralladura y almíbar equilibrados para una textura lisa y un sabor limpio.",
+  "what": "Un sorbete de cítrico es zumo con almíbar y ralladura, equilibrado para que la textura sea lisa y no se convierta en hielo. Los cítricos tienen poco azúcar propio (sobre todo limón y lima) y mucha acidez, así que necesitan más azúcar añadido que un sorbete de fruta dulce. La ralladura frotada con el azúcar aporta el aroma de la piel. Es el prepostre clásico y el mejor limpiador de boca entre platos.",
+  "base": {
+   "for": "unos 1 kg de sorbete de limón",
+   "items": [
+    [
+     "Zumo de limón recién exprimido",
+     "250 g"
+    ],
+    [
+     "Agua",
+     "500 g"
+    ],
+    [
+     "Azúcar",
+     "230 g"
+    ],
+    [
+     "Glucosa o dextrosa",
+     "40 g"
+    ],
+    [
+     "Ralladura de limón",
+     "2 limones"
+    ],
+    [
+     "Estabilizante para sorbetes (opcional)",
+     "2–3 g"
+    ]
+   ],
+   "steps": [
+    "Frota la ralladura con el azúcar.",
+    "Calienta el agua con el azúcar, la glucosa y el estabilizante hasta disolver, sin llegar a hervir.",
+    "Enfría y añade el zumo de limón.",
+    "Cuela si quieres un sorbete muy liso; deja madurar en frío 2–4 horas.",
+    "Mantécalo y guarda a −18 °C."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Sorbete de limón o lima",
+    "ratio": "25 % de zumo, 25–30 % de azúcares, el resto agua",
+    "note": "Muy ácido: pide más azúcar."
+   },
+   {
+    "use": "Sorbete de mandarina o naranja",
+    "ratio": "70–80 % de zumo y 18–22 % de azúcares",
+    "note": "Más dulce, menos agua."
+   },
+   {
+    "use": "Servicio",
+    "ratio": "−12 a −10 °C",
+    "note": "En copa fría."
+   }
+  ],
+  "variants": [
+   {
+    "id": "citricos",
+    "name": "Cítricos",
+    "note": "Variedades y temporada."
+   },
+   {
+    "id": "helados-sin-maquina",
+    "name": "Granizado de cítrico",
+    "note": "La misma base raspada."
+   },
+   {
+    "id": "sorbetes-de-vino-y-cava",
+    "name": "Sorbete de cava",
+    "note": "Con vino espumoso."
+   }
+  ],
+  "keys": [
+   "Zumo recién exprimido: se oxida.",
+   "Ralladura frotada con el azúcar.",
+   "Más azúcar en limón y lima.",
+   "Madurar antes de mantecar.",
+   "Servir en copa fría."
+  ],
+  "errors": [
+   {
+    "p": "Cristales de hielo",
+    "fix": "Poco azúcar. Sube los azúcares."
+   },
+   {
+    "p": "Amargo",
+    "fix": "Ralladura con parte blanca o zumo exprimido de más. Solo la piel de color."
+   },
+   {
+    "p": "No endurece",
+    "fix": "Demasiado azúcar. Diluye con agua o zumo."
+   }
+  ],
+  "history": "Los sorbetes de limón son de los más antiguos de la heladería mediterránea, herederos de los refrescos de nieve con zumo de fruta.",
+  "uses": [
+   "Prepostre",
+   "Entre platos de un menú largo",
+   "Con fruta y hierbas",
+   "Postre ligero"
+  ],
+  "keep": "Tapado a −18 °C, 1 semana.",
+  "pro": "Cambia de cítrico según la temporada de invierno: mandarina, sanguina, pomelo.",
+  "related": [
+   "citricos",
+   "helados-y-sorbetes",
+   "helados-sin-maquina",
+   "sorbetes-de-vino-y-cava",
+   "final-del-menu"
+  ]
+ },
+ {
+  "id": "barquillos-y-obleas",
+  "name": "Barquillos y obleas",
+  "name_en": "Wafers and rolled wafers",
+  "cat": "dulce",
+  "group": "Espumas y azúcar",
+  "aka": [
+   "barquillo",
+   "barquillos",
+   "oblea",
+   "cucurucho",
+   "galleta enrollada",
+   "tuile enrollada"
+  ],
+  "summary": "Láminas finísimas de masa cocidas en plancha o al horno y enrolladas o moldeadas en caliente: barquillos, cucuruchos y soportes crujientes para helados y cremas.",
+  "what": "La masa de barquillo es líquida, de harina, azúcar, mantequilla y clara o agua; se cuece en una plancha de barquillos muy caliente, o extendida fina al horno, y al salir se enrolla o se moldea antes de que endurezca. Queda crujiente, ligera y con un ligero sabor tostado. Son el soporte clásico del helado (cucurucho) y un crujiente para postres. Son primos de las [[tejas-y-crujientes-dulces|tejas]].",
+  "base": {
+   "for": "unos 30 barquillos",
+   "items": [
+    [
+     "Harina floja",
+     "100 g"
+    ],
+    [
+     "Azúcar glas",
+     "100 g"
+    ],
+    [
+     "Mantequilla fundida",
+     "60 g"
+    ],
+    [
+     "Claras",
+     "100 g"
+    ],
+    [
+     "Vainilla o canela",
+     "al gusto"
+    ],
+    [
+     "Sal",
+     "una pizca"
+    ]
+   ],
+   "steps": [
+    "Mezcla el azúcar, la harina y la sal; añade las claras y después la mantequilla fundida. Reposa 30 minutos.",
+    "En plancha de barquillos: calienta, pon una cucharada de masa, cierra 1–2 minutos hasta dorar.",
+    "Al horno: extiende círculos muy finos sobre tapete y hornea a 170–180 °C, 5–7 minutos.",
+    "Enrolla o moldea al momento sobre un cono o palo.",
+    "Guarda en lata hermética en cuanto se enfríen."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Masa",
+    "ratio": "Harina, azúcar y clara a partes iguales con 60 % de mantequilla",
+    "note": "Fina y líquida."
+   },
+   {
+    "use": "Horneado",
+    "ratio": "170–180 °C, 5–7 minutos",
+    "note": "Dorado parejo."
+   },
+   {
+    "use": "Moldeado",
+    "ratio": "En los primeros 15–20 segundos",
+    "note": "Después se rompe."
+   }
+  ],
+  "variants": [
+   {
+    "id": "tejas-y-crujientes-dulces",
+    "name": "Tejas",
+    "note": "Láminas crujientes moldeadas."
+   },
+   {
+    "id": "crepes-y-gofres",
+    "name": "Gofres",
+    "note": "Masas cocidas en hierro, más gruesas."
+   },
+   {
+    "id": "helados-y-sorbetes",
+    "name": "Cucurucho de helado",
+    "note": "El uso clásico."
+   }
+  ],
+  "keys": [
+   "Masa muy fina y pareja.",
+   "Moldear en caliente y deprisa.",
+   "Guardar en hermético en cuanto enfríen.",
+   "Plancha bien caliente y engrasada al principio.",
+   "Montar con helado al momento."
+  ],
+  "errors": [
+   {
+    "p": "Se rompen al enrollar",
+    "fix": "Demasiado fríos o horneados de más. Enrolla al salir."
+   },
+   {
+    "p": "Blandos",
+    "fix": "Humedad o poco horno. Hornea hasta dorar y guarda en hermético."
+   },
+   {
+    "p": "Se pegan a la plancha",
+    "fix": "Plancha fría o sin engrasar. Calienta y engrasa."
+   }
+  ],
+  "history": "Los barquillos son un dulce tradicional de Europa desde la Edad Media; en España fueron dulce callejero de feria, vendido por los barquilleros.",
+  "uses": [
+   "Cucuruchos de helado",
+   "Crujiente de postres",
+   "Petit four",
+   "Soporte de cremas"
+  ],
+  "keep": "En lata hermética con gel de sílice, 1 semana.",
+  "pro": "Hornea la masa en círculos y moldéalos en conos pequeños para servir helado en bocado.",
+  "related": [
+   "tejas-y-crujientes-dulces",
+   "crepes-y-gofres",
+   "helados-y-sorbetes",
+   "petit-fours",
+   "decoraciones-de-azucar-y-chocolate"
+  ]
+ },
+ {
+  "id": "nata-montada-y-chantilly",
+  "name": "Nata montada y chantilly",
+  "name_en": "Whipped cream and Chantilly",
+  "cat": "dulce",
+  "group": "Cremas",
+  "aka": [
+   "nata montada",
+   "chantilly",
+   "crema chantilly",
+   "nata semimontada",
+   "nata estabilizada"
+  ],
+  "summary": "Cómo montar nata en su punto (semimontada o firme), endulzarla y aromatizarla, y estabilizarla para que aguante en el pase.",
+  "what": "Al batir nata fría con al menos un 35 % de grasa, la grasa atrapa aire y la nata dobla su volumen. Semimontada (marca surcos y cae de la varilla) es la que se usa para mezclar en mousses y como acompañamiento suave; montada (forma picos firmes) para rellenar y decorar. La chantilly es nata montada con un poco de azúcar y vainilla. Si se bate de más, la grasa se separa y empieza a hacerse mantequilla. Para que aguante horas se estabiliza con un poco de mascarpone o gelatina.",
+  "base": {
+   "for": "unos 500 g de chantilly",
+   "items": [
+    [
+     "Nata 35 % muy fría (4 °C)",
+     "500 g"
+    ],
+    [
+     "Azúcar glas",
+     "40 g"
+    ],
+    [
+     "Vainilla",
+     "semillas de 1/2 vaina"
+    ],
+    [
+     "Mascarpone (para estabilizar, opcional)",
+     "50–100 g"
+    ]
+   ],
+   "steps": [
+    "Enfría el bol y las varillas en la cámara.",
+    "Pon la nata fría con el azúcar, la vainilla y el mascarpone si lo usas.",
+    "Bate a velocidad media hasta que marque surcos (semimontada) o forme picos (montada).",
+    "Termina a mano con varilla para no pasarte.",
+    "Guarda en frío en manga o recipiente tapado."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Chantilly",
+    "ratio": "8–10 % de azúcar glas sobre la nata",
+    "note": "Con vainilla."
+   },
+   {
+    "use": "Estabilizada con mascarpone",
+    "ratio": "10–20 % sobre la nata",
+    "note": "Aguanta horas en el pase."
+   },
+   {
+    "use": "Estabilizada con gelatina",
+    "ratio": "2 g de gelatina por 500 g de nata, disuelta en un poco de nata templada",
+    "note": "Para rellenos que se cortan."
+   }
+  ],
+  "variants": [
+   {
+    "id": "mousses-y-cremosos",
+    "name": "Mousses",
+    "note": "La nata semimontada como aire."
+   },
+   {
+    "id": "crema-pastelera",
+    "name": "Crema diplomática",
+    "note": "Pastelera con nata montada."
+   },
+   {
+    "id": "mantequilla-casera",
+    "name": "Mantequilla",
+    "note": "Lo que pasa si se bate de más."
+   }
+  ],
+  "keys": [
+   "Nata, bol y varillas muy fríos.",
+   "Nata de al menos 35 % de grasa.",
+   "Para mezclar, semimontada; para decorar, montada.",
+   "Termina a mano para no pasarte.",
+   "Estabiliza si tiene que aguantar."
+  ],
+  "errors": [
+   {
+    "p": "No monta",
+    "fix": "Nata caliente o poco grasa. Enfría todo y usa nata de 35 %."
+   },
+   {
+    "p": "Granulada, cortada",
+    "fix": "Batida de más. Añade un poco de nata líquida y mezcla a mano."
+   },
+   {
+    "p": "Se baja en el plato",
+    "fix": "Sin estabilizar. Añade mascarpone o gelatina."
+   }
+  ],
+  "history": "La nata montada con azúcar, conocida como crema chantilly, es una preparación clásica de la pastelería francesa desde hace siglos.",
+  "uses": [
+   "Acompañar postres",
+   "Rellenar",
+   "Decorar",
+   "Mousses y bavaroises"
+  ],
+  "keep": "En frío y tapada, 1 día; estabilizada, 2 días.",
+  "pro": "Monta en pequeñas cantidades durante el servicio o estabiliza con mascarpone para tener manga preparada.",
+  "related": [
+   "mousses-y-cremosos",
+   "crema-pastelera",
+   "espumas-con-sifon",
+   "leche-nata-y-mantequilla",
+   "pavlova-y-postres-de-merengue"
+  ]
+ },
+ {
+  "id": "tierras-y-polvos-dulces",
+  "name": "Tierras y polvos dulces",
+  "name_en": "Sweet soils and powders",
+  "cat": "dulce",
+  "group": "Espumas y azúcar",
+  "aka": [
+   "tierra de cacao",
+   "tierra de galleta",
+   "polvo de fruta",
+   "polvo de aceite",
+   "tierra dulce",
+   "azucar de hierbas"
+  ],
+  "summary": "Elementos en grano y en polvo para postres de emplatado: tierra de cacao o de galleta, polvos de fruta seca y azúcares aromáticos.",
+  "what": "En un postre de emplatado, una tierra da crujiente, color oscuro y un punto tostado; un polvo de fruta, un golpe de sabor ácido y color intenso. La tierra de cacao es una masa arenosa de mantequilla, azúcar, harina, almendra y cacao horneada y desmenuzada. Los polvos se hacen triturando fruta muy seca (deshidratada o liofilizada) y tamizando. Los azúcares aromáticos se hacen triturando azúcar con hierbas o pieles secas. La versión salada está en [[tierras-saladas]].",
+  "base": {
+   "for": "unos 300 g de tierra de cacao",
+   "items": [
+    [
+     "Mantequilla fría",
+     "80 g"
+    ],
+    [
+     "Azúcar moreno",
+     "80 g"
+    ],
+    [
+     "Harina",
+     "70 g"
+    ],
+    [
+     "Almendra molida",
+     "50 g"
+    ],
+    [
+     "Cacao puro",
+     "25 g"
+    ],
+    [
+     "Sal",
+     "2 g"
+    ]
+   ],
+   "steps": [
+    "Frota todos los ingredientes con las yemas de los dedos hasta formar migas de distintos tamaños.",
+    "Extiende sobre bandeja con papel y enfría 15 minutos.",
+    "Hornea a 160 °C, 15–20 minutos, removiendo a mitad.",
+    "Deja enfriar del todo: cruje al enfriar.",
+    "Desmenuza al tamaño que quieras y guarda en hermético."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Tierra de cacao",
+    "ratio": "Mantequilla, azúcar, harina y almendra casi a partes iguales con 10 % de cacao",
+    "note": "160 °C, 15–20 minutos."
+   },
+   {
+    "use": "Polvo de fruta",
+    "ratio": "Fruta deshidratada a 60 °C hasta crujiente o liofilizada, triturada y tamizada",
+    "note": "Guardar con gel de sílice."
+   },
+   {
+    "use": "Azúcar de hierbas",
+    "ratio": "100 g de azúcar con 5 g de hierba seca o piel seca, triturado",
+    "note": "Para escarchar bordes o terminar."
+   }
+  ],
+  "variants": [
+   {
+    "id": "tierras-saladas",
+    "name": "Tierras saladas",
+    "note": "Aceituna, setas, queso."
+   },
+   {
+    "id": "crumbles-de-fruta",
+    "name": "Crumble",
+    "note": "La misma masa sobre fruta."
+   },
+   {
+    "id": "deshidratados-y-crujientes",
+    "name": "Deshidratados",
+    "note": "Cómo secar la fruta."
+   }
+  ],
+  "keys": [
+   "Migas irregulares dan más textura.",
+   "Enfriar antes de desmenuzar.",
+   "Polvos de fruta con fruta completamente seca.",
+   "Hermético y con gel de sílice.",
+   "Poner en el último momento sobre zona seca."
+  ],
+  "errors": [
+   {
+    "p": "Tierra blanda",
+    "fix": "Poco horno o humedad. Hornea más y guarda en hermético."
+   },
+   {
+    "p": "Polvo apelmazado",
+    "fix": "Fruta húmeda. Seca más y guarda con gel de sílice."
+   },
+   {
+    "p": "Sabor a cacao crudo",
+    "fix": "Poco horno. Hornea hasta que huela a tostado."
+   }
+  ],
+  "history": "Las tierras y polvos comestibles se extendieron en la pastelería de restaurante de principios del siglo XXI como elementos de textura y color.",
+  "uses": [
+   "Postres de emplatado",
+   "Base para quenelles de helado",
+   "Decoración de vasos",
+   "Petit fours"
+  ],
+  "keep": "Tierra de cacao en hermético, 1–2 semanas. Polvos de fruta con gel de sílice, 1 mes.",
+  "pro": "Ten en la partida de postres una tierra oscura y un polvo de fruta ácida: combinan con casi todo.",
+  "related": [
+   "tierras-saladas",
+   "crumbles-de-fruta",
+   "deshidratados-y-crujientes",
+   "sable-y-galletas",
+   "construir-un-postre"
+  ]
+ },
+ {
+  "id": "rosquillas-de-san-isidro",
+  "name": "Rosquillas de San Isidro",
+  "name_en": "San Isidro doughnut biscuits",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "rosquillas listas",
+   "rosquillas tontas",
+   "rosquillas francesas",
+   "rosquillas de santa clara",
+   "rosquillas de madrid"
+  ],
+  "summary": "Rosquillas horneadas de la fiesta de San Isidro en Madrid: tontas (sin cobertura), listas (con glasa de azúcar y limón) y francesas (con almendra).",
+  "what": "Son rosquillas de una masa tierna de huevo, aceite, azúcar, anís y harina, horneadas hasta dorar. Las tontas se dejan así, con un brillo de huevo; las listas se cubren con una glasa blanca de azúcar y limón; las francesas, con almendra picada y azúcar; las de Santa Clara, con un merengue seco. Son de la familia de las [[galletas-de-aceite|rosquillas de aceite]].",
+  "base": {
+   "for": "unas 25 rosquillas",
+   "items": [
+    [
+     "Huevos",
+     "3"
+    ],
+    [
+     "Aceite de oliva suave",
+     "80 g"
+    ],
+    [
+     "Azúcar",
+     "80 g"
+    ],
+    [
+     "Anís (licor) o anís en grano",
+     "20 g o 2 g"
+    ],
+    [
+     "Harina floja",
+     "400 g aprox."
+    ],
+    [
+     "Levadura química",
+     "8 g"
+    ],
+    [
+     "Glasa: azúcar glas, clara pasteurizada y zumo de limón",
+     "200 g, 30 g y 10 g"
+    ]
+   ],
+   "steps": [
+    "Bate los huevos con el azúcar; añade el aceite y el anís.",
+    "Incorpora la harina con la levadura poco a poco hasta tener una masa blanda que no se pegue.",
+    "Forma bolas de 25 g, haz un agujero con el dedo y agrándalo girando.",
+    "Pinta con huevo y hornea a 180 °C, 15–18 minutos, hasta que estén doradas.",
+    "Para las listas, baña en frío con la glasa y deja secar."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Masa",
+    "ratio": "3 huevos, 80 g de aceite y 80 g de azúcar por unos 400 g de harina",
+    "note": "Blanda pero manejable."
+   },
+   {
+    "use": "Horneado",
+    "ratio": "180 °C, 15–18 minutos",
+    "note": "Dorado uniforme."
+   },
+   {
+    "use": "Glasa",
+    "ratio": "200 g de azúcar glas, 30 g de clara pasteurizada y 10 g de limón",
+    "note": "Seca al aire."
+   }
+  ],
+  "variants": [
+   {
+    "id": "galletas-de-aceite",
+    "name": "Rosquillas de aceite",
+    "note": "Otras rosquillas de casa."
+   },
+   {
+    "id": "glaseados-y-glasa-real",
+    "name": "Glasa",
+    "note": "La cobertura de las listas."
+   },
+   {
+    "id": "berlinas-y-donuts",
+    "name": "Rosquillas fritas de levadura",
+    "note": "Los donuts."
+   }
+  ],
+  "keys": [
+   "Masa blanda: no añadas toda la harina de golpe.",
+   "Agujero grande: se cierra al hornear.",
+   "Pintar con huevo para el brillo.",
+   "Glasa con clara pasteurizada.",
+   "Secar la glasa al aire."
+  ],
+  "errors": [
+   {
+    "p": "Agujero cerrado",
+    "fix": "Agujero pequeño. Hazlo más grande."
+   },
+   {
+    "p": "Duras",
+    "fix": "Demasiada harina. Añade solo hasta que no se pegue."
+   },
+   {
+    "p": "Glasa que no seca",
+    "fix": "Glasa líquida. Añade azúcar glas."
+   }
+  ],
+  "history": "Las rosquillas tontas y listas son el dulce de la fiesta de San Isidro, patrón de Madrid, que se celebra en mayo.",
+  "uses": [
+   "Dulce de fiesta",
+   "Merienda",
+   "Con café",
+   "Petit four de raíz"
+  ],
+  "keep": "En lata, 1 semana.",
+  "pro": "Haz las dos versiones en la misma tanda y sírvelas juntas en la temporada de la fiesta.",
+  "related": [
+   "galletas-de-aceite",
+   "glaseados-y-glasa-real",
+   "berlinas-y-donuts",
+   "postres-clasicos-espanoles",
+   "merengues"
+  ]
+ },
+ {
+  "id": "fartons",
+  "name": "Fartons",
+  "name_en": "Fartons",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "farton",
+   "fartons de alboraia",
+   "bollo para horchata",
+   "bollos glaseados"
+  ],
+  "summary": "Bollos alargados, esponjosos y glaseados de azúcar, pensados para mojar en horchata: un dulce valenciano de masa enriquecida.",
+  "what": "Son bollos de una masa enriquecida tierna, con leche, huevo, azúcar y aceite, formados en tiras alargadas, horneados y cubiertos con un glaseado de azúcar. Su miga esponjosa absorbe la horchata fría sin deshacerse. La horchata de chufa se cuenta en [[leches-vegetales]]. La masa es pariente del [[brioche]], más ligera. Lo propio es tomarlos fríos con la horchata, en verano, mojándolos poco a poco. En un menú pueden ser un final sencillo y local, en tamaño pequeño, con una horchata o una leche de almendra helada.",
+  "base": {
+   "for": "unos 16 fartons",
+   "items": [
+    [
+     "Harina de fuerza",
+     "500 g"
+    ],
+    [
+     "Leche templada",
+     "160 g"
+    ],
+    [
+     "Huevos",
+     "2"
+    ],
+    [
+     "Azúcar",
+     "80 g"
+    ],
+    [
+     "Aceite de girasol o de oliva suave",
+     "60 g"
+    ],
+    [
+     "Levadura fresca",
+     "25 g"
+    ],
+    [
+     "Sal",
+     "6 g"
+    ],
+    [
+     "Glaseado: azúcar glas y agua",
+     "200 g y 35 g"
+    ]
+   ],
+   "steps": [
+    "Amasa todo 8–10 minutos hasta una masa lisa y blanda. Fermenta hasta que doble.",
+    "Divide en piezas de 50 g y forma tiras de 14–15 cm.",
+    "Colócalas en bandeja y deja levar hasta que casi doblen.",
+    "Hornea a 180 °C, 12–15 minutos, hasta un dorado claro.",
+    "Glasea en templado con el azúcar glas mezclado con el agua."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Masa",
+    "ratio": "32 % de leche, 16 % de azúcar y 12 % de aceite sobre la harina",
+    "note": "Tierna y esponjosa."
+   },
+   {
+    "use": "Horneado",
+    "ratio": "180 °C, 12–15 minutos",
+    "note": "Color claro."
+   },
+   {
+    "use": "Glaseado",
+    "ratio": "200 g de azúcar glas por 35 g de agua",
+    "note": "En templado."
+   }
+  ],
+  "variants": [
+   {
+    "id": "leches-vegetales",
+    "name": "Horchata",
+    "note": "La bebida con la que se toman."
+   },
+   {
+    "id": "brioche",
+    "name": "Brioche",
+    "note": "Masa enriquecida más mantecosa."
+   },
+   {
+    "id": "bollos-suizos",
+    "name": "Bollos suizos",
+    "note": "Otro bollo de pastelería española."
+   }
+  ],
+  "keys": [
+   "Masa blanda y bien fermentada.",
+   "Horneado corto: miga esponjosa.",
+   "Glasear en templado.",
+   "Formas regulares.",
+   "Mejor del día."
+  ],
+  "errors": [
+   {
+    "p": "Secos",
+    "fix": "Horneado largo. Saca en dorado claro."
+   },
+   {
+    "p": "Densos",
+    "fix": "Poca fermentación. Deja levar más."
+   },
+   {
+    "p": "Glaseado que no cuaja",
+    "fix": "Glaseado líquido o bollo caliente. Espésalo y glasea en templado."
+   }
+  ],
+  "history": "Los fartons son un dulce tradicional de Alboraia, en Valencia, ligado a la horchata de chufa desde el siglo XX.",
+  "uses": [
+   "Con horchata",
+   "Merienda",
+   "Desayuno",
+   "Dulce de verano"
+  ],
+  "keep": "Tapados, 1–2 días.",
+  "pro": "Sírvelos con horchata muy fría como postre de verano o merienda. Para petit four, forma piezas de 20 g y glasea con un glaseado algo más espeso.",
+  "related": [
+   "leches-vegetales",
+   "brioche",
+   "bollos-suizos",
+   "glaseados-y-glasa-real",
+   "masa-madre"
+  ]
+ },
+ {
+  "id": "bunuelos-de-calabaza",
+  "name": "Buñuelos de calabaza",
+  "name_en": "Pumpkin fritters",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "bunyols de carabassa",
+   "buñuelos de fallas",
+   "bunuelos de calabaza",
+   "picarones"
+  ],
+  "summary": "Buñuelos de masa de levadura con calabaza asada, fritos en forma de aro y espolvoreados con azúcar: el dulce de las Fallas valencianas.",
+  "what": "La calabaza asada y triturada se mezcla con harina, levadura y agua hasta una masa muy blanda y pegajosa que se fermenta. Se forma un aro con los dedos mojados y se fríe hasta que se hincha y dora. Quedan crujientes por fuera y tiernos y aireados por dentro, con el dulzor de la [[calabaza]]. Se sirven con azúcar y a menudo con chocolate. Los picarones peruanos, con calabaza y boniato y almíbar, son parientes.",
+  "base": {
+   "for": "unos 25 buñuelos",
+   "items": [
+    [
+     "Calabaza asada y triturada",
+     "300 g"
+    ],
+    [
+     "Harina de fuerza",
+     "300 g"
+    ],
+    [
+     "Levadura fresca",
+     "20 g"
+    ],
+    [
+     "Agua templada o zumo de naranja",
+     "100–150 g"
+    ],
+    [
+     "Sal",
+     "3 g"
+    ],
+    [
+     "Aceite para freír",
+     "c. s."
+    ],
+    [
+     "Azúcar para espolvorear",
+     "c. s."
+    ]
+   ],
+   "steps": [
+    "Disuelve la levadura en el agua y mézclala con la calabaza, la harina y la sal hasta una masa muy blanda y pegajosa.",
+    "Tapa y fermenta hasta que doble, 1–1,5 horas.",
+    "Con las manos mojadas, toma una porción, haz un agujero con el pulgar y déjala caer al aceite a 180 °C.",
+    "Fríe hasta que se hinchen y doren por los dos lados.",
+    "Escurre y espolvorea con azúcar."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Masa",
+    "ratio": "Calabaza y harina a partes iguales",
+    "note": "Muy blanda."
+   },
+   {
+    "use": "Fermentación",
+    "ratio": "1–1,5 horas",
+    "note": "Hasta que doble."
+   },
+   {
+    "use": "Fritura",
+    "ratio": "180 °C",
+    "note": "Hinchados y dorados."
+   }
+  ],
+  "variants": [
+   {
+    "id": "orelletes-y-bunyols",
+    "name": "Buñuelos de la isla",
+    "note": "Buñuelos de patata y otras masas fritas."
+   },
+   {
+    "id": "postres-con-verdura",
+    "name": "Postres con verdura",
+    "note": "Otros usos de la calabaza."
+   },
+   {
+    "id": "churros-y-masas-fritas",
+    "name": "Churros",
+    "note": "Con chocolate."
+   }
+  ],
+  "keys": [
+   "Calabaza asada y escurrida.",
+   "Masa muy blanda: manos mojadas.",
+   "Fermentación completa.",
+   "Aceite a 180 °C.",
+   "Servir recién hechos."
+  ],
+  "errors": [
+   {
+    "p": "Densos",
+    "fix": "Poca fermentación o masa dura. Masa blanda y fermenta más."
+   },
+   {
+    "p": "Aceitosos",
+    "fix": "Aceite frío. Sube a 180 °C."
+   },
+   {
+    "p": "Se pegan a las manos",
+    "fix": "Es normal: mójalas."
+   }
+  ],
+  "history": "Los buñuelos de calabaza son el dulce tradicional de las Fallas de Valencia, en marzo; buñuelos parecidos existen en muchas otras tradiciones.",
+  "uses": [
+   "Dulce de fiesta",
+   "Con chocolate",
+   "Merienda",
+   "Postre de otoño"
+  ],
+  "keep": "Al momento. La masa fermentada aguanta en frío unas horas.",
+  "pro": "Ten la masa fermentada en frío y fríe por raciones.",
+  "related": [
+   "calabaza",
+   "orelletes-y-bunyols",
+   "postres-con-verdura",
+   "churros-y-masas-fritas",
+   "fritura"
+  ]
+ },
+ {
+  "id": "postres-de-cafe",
+  "name": "Postres de café",
+  "name_en": "Coffee desserts",
+  "cat": "dulce",
+  "group": "Cremas",
+  "aka": [
+   "cafe en postres",
+   "crema de cafe",
+   "helado de cafe",
+   "granizado de cafe",
+   "ganache de cafe",
+   "infusion de cafe"
+  ],
+  "summary": "Cómo llevar el café a los postres: infusiones en frío y en caliente, cremas, helados, granizados y ganaches de café, y cómo combinarlo.",
+  "what": "El [[cafe-y-te-en-cocina|café]] da amargor, tostado y aroma, y equilibra muy bien el dulzor del chocolate, el caramelo, la leche o los frutos secos. Se puede usar como espresso concentrado, como infusión en caliente de café en grano en la leche o la nata, o como infusión en frío durante horas, que extrae aroma con menos amargor. El café recién molido y de buena calidad marca la diferencia. Lleva cafeína: conviene tenerlo en cuenta al servirlo por la noche.",
+  "base": {
+   "for": "1 litro de nata infusionada para cremas y helados",
+   "items": [
+    [
+     "Nata o leche",
+     "1 l"
+    ],
+    [
+     "Café en grano tostado, ligeramente machacado",
+     "60–80 g"
+    ],
+    [
+     "Azúcar",
+     "según la receta"
+    ]
+   ],
+   "steps": [
+    "En frío: pon el café machacado en la nata o leche y deja 12–24 horas en cámara.",
+    "En caliente: calienta la leche o nata, añade el café, tapa y deja 15–20 minutos.",
+    "Cuela por paño fino, apretando, y pesa: repón el líquido perdido.",
+    "Usa la nata o leche infusionada en una crema inglesa, un helado, una panna cotta o una ganache.",
+    "Ajusta el azúcar: el café pide algo más de dulce."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Infusión en frío",
+    "ratio": "60–80 g de café en grano por litro, 12–24 h",
+    "note": "Aroma limpio, menos amargor."
+   },
+   {
+    "use": "Granizado de café",
+    "ratio": "1 l de café con 150–180 g de azúcar",
+    "note": "Raspado; con nata o leche merengada."
+   },
+   {
+    "use": "Ganache de café",
+    "ratio": "Nata infusionada con café y chocolate 1:1",
+    "note": "Para trufas y rellenos."
+   }
+  ],
+  "variants": [
+   {
+    "id": "tiramisu-y-mascarpone",
+    "name": "Tiramisú",
+    "note": "El postre de café por excelencia."
+   },
+   {
+    "id": "helados-sin-maquina",
+    "name": "Granizado de café",
+    "note": "Raspado en bandeja."
+   },
+   {
+    "id": "leche-merengada",
+    "name": "Blanco y negro",
+    "note": "Café granizado con leche merengada."
+   }
+  ],
+  "keys": [
+   "Café en grano recién tostado y machacado justo antes.",
+   "Infusión en frío para un aroma más limpio.",
+   "Cuela bien y repón el líquido.",
+   "Equilibra con chocolate, caramelo o leche.",
+   "Avisa de la cafeína."
+  ],
+  "errors": [
+   {
+    "p": "Amargo y astringente",
+    "fix": "Infusión caliente larga o café muy molido. Infusiona menos o en frío."
+   },
+   {
+    "p": "Sin aroma",
+    "fix": "Café viejo o poca cantidad. Usa café fresco y más dosis."
+   },
+   {
+    "p": "Granos en la crema",
+    "fix": "Colado poco fino. Cuela por paño."
+   }
+  ],
+  "history": "El café se usa en postres desde que se popularizó como bebida en Europa; el tiramisú y el granizado de café son algunos de sus postres más conocidos.",
+  "uses": [
+   "Cremas y helados",
+   "Ganaches y trufas",
+   "Granizados",
+   "Petit fours con el café"
+  ],
+  "keep": "Nata infusionada en frío, 2 días. Café en grano cerrado, lejos de la luz.",
+  "pro": "Infusiona la nata la víspera en frío; da el mejor aroma con menos trabajo.",
+  "related": [
+   "cafe-y-te-en-cocina",
+   "tiramisu-y-mascarpone",
+   "helados-sin-maquina",
+   "infusiones",
+   "ganache",
+   "leche-merengada"
+  ]
+ },
+ {
+  "id": "bollos-suizos",
+  "name": "Bollos suizos y pan de leche",
+  "name_en": "Sugar-topped milk buns",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "suizos",
+   "bollo suizo",
+   "pan de leche",
+   "bollos de leche",
+   "pan de leche dulce"
+  ],
+  "summary": "Bollos de masa de leche tierna con una franja de azúcar y mantequilla que se carameliza al hornear; y el pan de leche como base.",
+  "what": "El pan de leche es una masa enriquecida suave, con leche, algo de azúcar, mantequilla y huevo: miga blanca, tierna y fina. Los bollos suizos son esa masa formada en bollos alargados con un corte a lo largo que se rellena con una pasta de azúcar y mantequilla, que se funde y carameliza en el horno. Son un clásico de la bollería de obrador española. La masa es más ligera que la del [[brioche]].",
+  "base": {
+   "for": "unos 14 bollos de 60 g",
+   "items": [
+    [
+     "Harina de fuerza",
+     "500 g"
+    ],
+    [
+     "Leche templada",
+     "250 g"
+    ],
+    [
+     "Huevo",
+     "1"
+    ],
+    [
+     "Azúcar",
+     "60 g"
+    ],
+    [
+     "Mantequilla pomada",
+     "60 g"
+    ],
+    [
+     "Levadura fresca",
+     "20 g"
+    ],
+    [
+     "Sal",
+     "8 g"
+    ],
+    [
+     "Pasta de azúcar: azúcar y mantequilla pomada",
+     "80 g y 40 g"
+    ]
+   ],
+   "steps": [
+    "Amasa la harina, la leche, el huevo, el azúcar, la levadura y la sal; añade la mantequilla y amasa hasta una masa lisa y elástica. Fermenta hasta que doble.",
+    "Divide en piezas de 60 g, bolea y forma bollos alargados.",
+    "Deja levar hasta que casi doblen y pinta con huevo.",
+    "Haz un corte a lo largo con tijera o cuchilla y rellénalo con la pasta de azúcar y mantequilla.",
+    "Hornea a 190 °C, 12–15 minutos, hasta que estén dorados y el azúcar burbujee."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Masa de pan de leche",
+    "ratio": "50 % de leche, 12 % de azúcar y 12 % de mantequilla sobre la harina",
+    "note": "Miga blanca y tierna."
+   },
+   {
+    "use": "Pasta de azúcar",
+    "ratio": "2 partes de azúcar por 1 de mantequilla",
+    "note": "En el corte, antes del horno."
+   },
+   {
+    "use": "Horneado",
+    "ratio": "190 °C, 12–15 minutos",
+    "note": "Dorado y con el azúcar burbujeando."
+   }
+  ],
+  "variants": [
+   {
+    "id": "brioche",
+    "name": "Brioche",
+    "note": "Masa más rica en mantequilla y huevo."
+   },
+   {
+    "id": "fartons",
+    "name": "Fartons",
+    "note": "Bollos alargados glaseados para la horchata."
+   },
+   {
+    "id": "panes-trenzados",
+    "name": "Trenzas de pan de leche",
+    "note": "La misma masa trenzada."
+   }
+  ],
+  "keys": [
+   "Masa bien amasada y fermentada.",
+   "Corte limpio y profundo.",
+   "Pasta de azúcar bien untada en el corte.",
+   "Horno caliente para caramelizar sin secar.",
+   "Mejor del día."
+  ],
+  "errors": [
+   {
+    "p": "Azúcar que se escurre",
+    "fix": "Pasta muy blanda o mucha cantidad. Ajusta y ponla en el corte."
+   },
+   {
+    "p": "Bollos secos",
+    "fix": "Horneado largo. Saca en cuanto doren."
+   },
+   {
+    "p": "Miga densa",
+    "fix": "Poca fermentación. Deja levar más."
+   }
+  ],
+  "history": "Los bollos suizos son una bollería clásica de las pastelerías españolas, sobre todo de Madrid, desde el siglo XIX; el origen exacto del nombre es incierto.",
+  "uses": [
+   "Desayuno y merienda",
+   "Con chocolate",
+   "Pan de leche para bocadillos dulces",
+   "Torrijas"
+  ],
+  "keep": "Tapados, 1–2 días; congelados, 1 mes.",
+  "pro": "Forma y congela los bollos antes de levar; sácalos la noche anterior a cámara.",
+  "related": [
+   "brioche",
+   "fartons",
+   "panes-trenzados",
+   "caramelo",
+   "leche-nata-y-mantequilla"
+  ]
+ },
+ {
+  "id": "mantecadas",
+  "name": "Mantecadas",
+  "name_en": "Mantecadas",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "mantecadas de astorga",
+   "mantecada",
+   "bizcochos de mantequilla en cajita",
+   "mantecadas de leon"
+  ],
+  "summary": "Bizcochos de mantequilla, huevo y azúcar horneados en cajitas de papel, con una costra de azúcar por encima: un dulce leonés.",
+  "what": "Son bizcochos con mucha mantequilla, azúcar y huevo, batidos hasta montar y horneados en cajitas de papel cuadradas, espolvoreados con azúcar para que formen una costra fina y crujiente. Quedan tiernos, densos y con un intenso sabor a mantequilla. Son parientes de las magdalenas ([[bizcochos-humedos]]) y de los [[sobaos-y-quesada|sobaos]]. La clave está en un cremado largo de la mantequilla con el azúcar, que mete aire y da la miga fina, y en no pasarse de horno para que conserven la humedad. La canela y el limón son los aromas tradicionales.",
+  "base": {
+   "for": "unas 16 mantecadas",
+   "items": [
+    [
+     "Mantequilla pomada",
+     "200 g"
+    ],
+    [
+     "Azúcar",
+     "200 g y más para espolvorear"
+    ],
+    [
+     "Huevos",
+     "4"
+    ],
+    [
+     "Harina floja",
+     "200 g"
+    ],
+    [
+     "Levadura química (opcional)",
+     "4 g"
+    ],
+    [
+     "Canela o ralladura de limón",
+     "una pizca"
+    ],
+    [
+     "Sal",
+     "una pizca"
+    ]
+   ],
+   "steps": [
+    "Bate la mantequilla con el azúcar hasta que blanquee.",
+    "Añade los huevos de uno en uno, batiendo bien.",
+    "Incorpora la harina tamizada con la levadura, la canela y la sal, sin batir de más.",
+    "Reparte en cajitas de papel hasta dos tercios y espolvorea con azúcar.",
+    "Hornea a 180–190 °C, 15–20 minutos, hasta que estén doradas."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Masa",
+    "ratio": "Mantequilla, azúcar, huevo y harina a partes iguales",
+    "note": "Tipo cuatro cuartos."
+   },
+   {
+    "use": "Horneado",
+    "ratio": "180–190 °C, 15–20 minutos",
+    "note": "En cajitas de papel."
+   },
+   {
+    "use": "Costra",
+    "ratio": "Azúcar espolvoreado antes de hornear",
+    "note": "Crujiente fina."
+   }
+  ],
+  "variants": [
+   {
+    "id": "bizcochos-humedos",
+    "name": "Magdalenas",
+    "note": "Bizcochos tiernos de la misma familia."
+   },
+   {
+    "id": "sobaos-y-quesada",
+    "name": "Sobaos",
+    "note": "Bizcochos de mantequilla cántabros."
+   },
+   {
+    "id": "leche-nata-y-mantequilla",
+    "name": "Mantequilla",
+    "note": "El ingrediente que manda."
+   }
+  ],
+  "keys": [
+   "Mantequilla de calidad: es el sabor.",
+   "Cremado largo.",
+   "Huevos de uno en uno.",
+   "Azúcar por encima para la costra.",
+   "No pasar de horno."
+  ],
+  "errors": [
+   {
+    "p": "Masa cortada",
+    "fix": "Huevos fríos o añadidos de golpe. Huevos atemperados y de uno en uno."
+   },
+   {
+    "p": "Secas",
+    "fix": "Horno largo. Saca al dorar."
+   },
+   {
+    "p": "Sin costra",
+    "fix": "Poco azúcar por encima. Espolvorea generoso."
+   }
+  ],
+  "history": "Las mantecadas de Astorga, en León, son un dulce tradicional conocido desde hace siglos.",
+  "uses": [
+   "Desayuno y merienda",
+   "Con café o chocolate",
+   "Base de postres",
+   "Dulce de raíz"
+  ],
+  "keep": "Tapadas, 4–5 días.",
+  "pro": "Hornea en cajitas pequeñas para petit four. Sírvelas templadas con un helado de canela o con fruta asada como postre de raíz; también sirven desmigadas como base de vasos.",
+  "related": [
+   "bizcochos-humedos",
+   "sobaos-y-quesada",
+   "leche-nata-y-mantequilla",
+   "postres-clasicos-espanoles",
+   "caramelo"
+  ]
+ },
+ {
+  "id": "miguelitos",
+  "name": "Miguelitos",
+  "name_en": "Miguelitos",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "miguelitos de la roda",
+   "hojaldre relleno de crema",
+   "pastelitos de crema"
+  ],
+  "summary": "Pastelitos de hojaldre muy fino rellenos de crema pastelera y cubiertos de azúcar glas: un dulce manchego de La Roda.",
+  "what": "Son cuadrados de [[hojaldre]] horneado, crujiente y con muchas capas, abiertos y rellenos de [[crema-pastelera]], cubiertos con abundante azúcar glas. Se comen de un bocado o dos y el contraste entre el hojaldre crujiente y la crema suave es lo que los hace tan populares. Son una versión pequeña y sencilla del milhojas. En restaurante funcionan muy bien como petit four o como postre en versión individual algo mayor, acompañados de una fruta ácida o un helado de leche que corte el dulzor de la crema y el azúcar.",
+  "base": {
+   "for": "unos 20 miguelitos",
+   "items": [
+    [
+     "Hojaldre",
+     "500 g"
+    ],
+    [
+     "Crema pastelera espesa, fría",
+     "400 g"
+    ],
+    [
+     "Azúcar glas",
+     "en abundancia"
+    ]
+   ],
+   "steps": [
+    "Estira el hojaldre a 3–4 mm y corta cuadrados de 6 cm.",
+    "Hornea a 200 °C, 12–15 minutos, hasta que estén muy dorados e hinchados.",
+    "Deja enfriar y ábrelos por la mitad con un cuchillo de sierra.",
+    "Rellena con crema en manga.",
+    "Cubre generosamente con azúcar glas."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Hojaldre",
+    "ratio": "Cuadrados de 6 cm a 3–4 mm",
+    "note": "200 °C, 12–15 minutos."
+   },
+   {
+    "use": "Crema",
+    "ratio": "20 g por miguelito",
+    "note": "Espesa y fría."
+   },
+   {
+    "use": "Azúcar glas",
+    "ratio": "Capa generosa",
+    "note": "Es parte del dulce."
+   }
+  ],
+  "variants": [
+   {
+    "id": "milhojas-y-palmeras",
+    "name": "Milhojas",
+    "note": "Hojaldre y crema en capas."
+   },
+   {
+    "id": "pantxineta",
+    "name": "Pantxineta",
+    "note": "Hojaldre relleno de crema con almendra."
+   },
+   {
+    "id": "crema-pastelera",
+    "name": "Crema pastelera",
+    "note": "El relleno."
+   }
+  ],
+  "keys": [
+   "Hojaldre muy horneado para que cruja.",
+   "Rellenar en frío y al momento.",
+   "Crema espesa.",
+   "Azúcar glas abundante.",
+   "Mejor del día."
+  ],
+  "errors": [
+   {
+    "p": "Hojaldre blando",
+    "fix": "Poco horneado o rellenado con antelación. Hornea más y rellena al servir."
+   },
+   {
+    "p": "Crema que se escapa",
+    "fix": "Crema blanda. Usa crema espesa."
+   },
+   {
+    "p": "No suben",
+    "fix": "Hojaldre caliente al hornear. Enfría antes."
+   }
+  ],
+  "history": "Los miguelitos son un dulce tradicional de La Roda, en Albacete, popularizados en la segunda mitad del siglo XX.",
+  "uses": [
+   "Petit four",
+   "Merienda",
+   "Con café",
+   "Dulce de raíz"
+  ],
+  "keep": "Hojaldre horneado sin rellenar, en lata 2 días. Rellenos, al momento.",
+  "pro": "Hornea el hojaldre en tanda y rellena por bandejas pequeñas a lo largo del servicio. Si la crema va perfumada (canela, cítrico, café), cambia el carácter del dulce sin tocar la técnica.",
+  "related": [
+   "hojaldre",
+   "crema-pastelera",
+   "milhojas-y-palmeras",
+   "pantxineta",
+   "petit-fours"
+  ]
+ },
+ {
+  "id": "stollen",
+  "name": "Stollen y panes de Navidad con fruta",
+  "name_en": "Stollen",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "stollen",
+   "pan de navidad aleman",
+   "christstollen",
+   "pan de frutas",
+   "pan dulce de navidad"
+  ],
+  "summary": "Pan de Navidad alemán de masa enriquecida con mantequilla, fruta confitada, pasas maceradas, almendra y a veces un corazón de mazapán, cubierto de azúcar glas.",
+  "what": "Es una masa densa con mucha mantequilla, poca agua y mucha fruta: pasas maceradas en ron, piel confitada de naranja y limón y almendra. Se forma en un pan alargado y doblado, a veces con un cilindro de [[mazapanes-y-pastas-de-almendra|mazapán]] dentro, se hornea, se pinta en caliente con mantequilla fundida y se cubre con azúcar glas en varias capas. Mejora con una o dos semanas de reposo. Es pariente del [[panettone]] y del pan dulce de Navidad de otros países.",
+  "base": {
+   "for": "2 stollen de 750 g",
+   "items": [
+    [
+     "Harina de fuerza",
+     "500 g"
+    ],
+    [
+     "Leche templada",
+     "150 g"
+    ],
+    [
+     "Levadura fresca",
+     "30 g"
+    ],
+    [
+     "Azúcar",
+     "70 g"
+    ],
+    [
+     "Mantequilla pomada",
+     "200 g"
+    ],
+    [
+     "Huevo",
+     "1"
+    ],
+    [
+     "Sal",
+     "6 g"
+    ],
+    [
+     "Pasas maceradas en ron",
+     "200 g"
+    ],
+    [
+     "Piel confitada de naranja y limón",
+     "100 g"
+    ],
+    [
+     "Almendra picada",
+     "80 g"
+    ],
+    [
+     "Mazapán (opcional)",
+     "200 g"
+    ],
+    [
+     "Mantequilla fundida y azúcar glas para cubrir",
+     "80 g y c. s."
+    ]
+   ],
+   "steps": [
+    "Haz un prefermento con la leche, la levadura y 100 g de harina; deja 30 minutos.",
+    "Amasa con el resto de la harina, el azúcar, el huevo, la sal y la mantequilla hasta una masa lisa; incorpora al final la fruta escurrida y la almendra.",
+    "Fermenta 1 hora, divide, aplana en óvalos, pon el mazapán si lo usas y dobla en forma de pan.",
+    "Deja levar 45 minutos y hornea a 170–180 °C, 40–50 minutos.",
+    "Pinta en caliente con mantequilla fundida, cubre con azúcar glas, repite al enfriar y envuelve."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Mantequilla",
+    "ratio": "40 % sobre la harina",
+    "note": "Masa densa y rica."
+   },
+   {
+    "use": "Fruta",
+    "ratio": "60–80 % sobre la harina",
+    "note": "Escurrida para que no humedezca la masa."
+   },
+   {
+    "use": "Reposo",
+    "ratio": "1–2 semanas envuelto",
+    "note": "Gana sabor y humedad."
+   }
+  ],
+  "variants": [
+   {
+    "id": "panettone",
+    "name": "Panettone",
+    "note": "Pan de Navidad de masa madre más ligero."
+   },
+   {
+    "id": "roscon-y-panes-dulces",
+    "name": "Roscón",
+    "note": "El pan dulce de Reyes."
+   },
+   {
+    "id": "frutas-en-almibar",
+    "name": "Fruta confitada",
+    "note": "Cómo hacer la piel confitada."
+   }
+  ],
+  "keys": [
+   "Fruta macerada y bien escurrida.",
+   "Fruta al final del amasado para no romperla.",
+   "Pintar con mantequilla en caliente: sella y conserva.",
+   "Varias capas de azúcar glas.",
+   "Dejar reposar antes de servir."
+  ],
+  "errors": [
+   {
+    "p": "Masa que no sube",
+    "fix": "Mucha fruta o mantequilla. Prefermento y paciencia."
+   },
+   {
+    "p": "Fruta quemada en la superficie",
+    "fix": "Fruta asomando. Métela dentro al formar."
+   },
+   {
+    "p": "Seco",
+    "fix": "Sin pintar con mantequilla. Píntalo en caliente."
+   }
+  ],
+  "history": "El stollen es el pan de Navidad tradicional de Dresde, en Alemania, con siglos de historia.",
+  "uses": [
+   "Dulce de Navidad",
+   "Desayuno de fiestas",
+   "Con café",
+   "Regalo"
+  ],
+  "keep": "Bien envuelto, en lugar fresco, 3–4 semanas.",
+  "pro": "Hornéalo a principios de diciembre y deja que repose: se sirve en lonchas finas.",
+  "related": [
+   "panettone",
+   "roscon-y-panes-dulces",
+   "frutas-en-almibar",
+   "mazapanes-y-pastas-de-almendra",
+   "brioche"
+  ]
+ },
+ {
+  "id": "flores-cristalizadas",
+  "name": "Flores cristalizadas",
+  "name_en": "Crystallised flowers",
+  "cat": "dulce",
+  "group": "Espumas y azúcar",
+  "aka": [
+   "flores escarchadas",
+   "petalos cristalizados",
+   "violetas confitadas",
+   "flores azucaradas",
+   "hojas de menta cristalizadas"
+  ],
+  "summary": "Flores y hojas comestibles pintadas con clara pasteurizada y cubiertas de azúcar fino, secadas hasta quedar crujientes: decoración natural para postres.",
+  "what": "Se pintan pétalos, flores pequeñas u hojas de hierba con una fina capa de clara batida o goma arábiga, se espolvorean con azúcar extrafino y se dejan secar hasta que quedan rígidas, brillantes y crujientes. Conservan el color y algo del aroma de la flor. Solo se usan [[flores-comestibles]] cultivadas sin tratamientos. Decoran tartas, postres de emplatado y petit fours.",
+  "base": {
+   "for": "unas 40 piezas",
+   "items": [
+    [
+     "Flores o pétalos comestibles (violeta, pensamiento, rosa, borraja) o hojas de menta",
+     "40"
+    ],
+    [
+     "Clara pasteurizada",
+     "30 g"
+    ],
+    [
+     "Azúcar extrafino",
+     "100 g"
+    ]
+   ],
+   "steps": [
+    "Limpia las flores con un pincel seco; sin agua.",
+    "Bate la clara ligeramente, solo para romperla.",
+    "Pinta cada flor o pétalo con una capa muy fina de clara por las dos caras.",
+    "Espolvorea con azúcar extrafino hasta cubrir y sacude el exceso.",
+    "Deja secar sobre papel 12–24 horas en lugar seco, o a 40 °C unas horas."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Clara",
+    "ratio": "Capa muy fina",
+    "note": "Con exceso, no secan."
+   },
+   {
+    "use": "Secado",
+    "ratio": "12–24 horas al aire o a 40 °C",
+    "note": "Hasta que estén rígidas."
+   },
+   {
+    "use": "Vegana",
+    "ratio": "Goma arábiga disuelta en agua al 30 %",
+    "note": "En lugar de clara."
+   }
+  ],
+  "variants": [
+   {
+    "id": "flores-comestibles",
+    "name": "Flores comestibles",
+    "note": "Cuáles se pueden comer y cómo usarlas."
+   },
+   {
+    "id": "decoraciones-de-azucar-y-chocolate",
+    "name": "Decoraciones",
+    "note": "Otras piezas de azúcar."
+   },
+   {
+    "id": "merengues",
+    "name": "Claras",
+    "note": "La clara como pegamento."
+   }
+  ],
+  "keys": [
+   "Solo flores comestibles, sin tratar.",
+   "Clara pasteurizada.",
+   "Capa fina y uniforme.",
+   "Secado completo.",
+   "Guardar en hermético."
+  ],
+  "errors": [
+   {
+    "p": "Pegajosas",
+    "fix": "Demasiada clara o secado corto. Capa fina y más tiempo."
+   },
+   {
+    "p": "Pierden color",
+    "fix": "Luz o calor. Seca a la sombra o a baja temperatura."
+   },
+   {
+    "p": "Azúcar irregular",
+    "fix": "Azúcar grueso. Usa azúcar extrafino."
+   }
+  ],
+  "history": "Cristalizar flores con azúcar es una técnica antigua de la confitería europea; las violetas confitadas son tradicionales en algunas zonas de Francia y España.",
+  "uses": [
+   "Decoración de tartas",
+   "Postres de emplatado",
+   "Petit fours",
+   "Cócteles y bebidas"
+  ],
+  "keep": "En recipiente hermético con gel de sílice, 2–3 meses.",
+  "pro": "Haz una tanda en primavera con las flores de temporada y guárdalas para todo el año.",
+  "related": [
+   "flores-comestibles",
+   "decoraciones-de-azucar-y-chocolate",
+   "merengues",
+   "petit-fours",
+   "emplatado"
+  ]
+ },
+ {
+  "id": "cremas-untables-de-frutos-secos",
+  "name": "Cremas untables de frutos secos y cacao",
+  "name_en": "Nut and cocoa spreads",
+  "cat": "dulce",
+  "group": "Chocolate",
+  "aka": [
+   "crema de avellana y cacao",
+   "crema de cacao casera",
+   "mantequilla de cacahuete",
+   "crema de almendra",
+   "untable de avellana",
+   "crema de pistacho"
+  ],
+  "summary": "Frutos secos tostados triturados hasta una pasta lisa, endulzados y con cacao si se quiere: cremas para untar, rellenar y aromatizar postres.",
+  "what": "Al triturar frutos secos tostados durante varios minutos, sueltan su aceite y pasan de polvo a pasta y de pasta a crema fluida. Con azúcar glas, cacao, una pizca de sal y un poco de aceite se obtiene una crema de avellana y cacao casera; con almendra o pistacho, cremas más puras. Sirven para untar, rellenar bollería y bombones, y aromatizar helados y cremas. Parientes del [[turrones-y-pralines|praliné]], pero sin caramelo.",
+  "base": {
+   "for": "unos 450 g de crema de avellana y cacao",
+   "items": [
+    [
+     "Avellanas tostadas y peladas",
+     "250 g"
+    ],
+    [
+     "Azúcar glas",
+     "120 g"
+    ],
+    [
+     "Cacao puro",
+     "30 g"
+    ],
+    [
+     "Leche en polvo (opcional, más cremosa)",
+     "30 g"
+    ],
+    [
+     "Aceite de girasol o de avellana",
+     "30–50 g"
+    ],
+    [
+     "Sal",
+     "2 g"
+    ],
+    [
+     "Vainilla",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Tuesta las avellanas a 160 °C, 12–15 minutos, y pélalas frotándolas en un paño.",
+    "Tritúralas en procesador potente 5–10 minutos, parando para bajar lo de las paredes, hasta que se vuelvan crema fluida.",
+    "Añade el azúcar glas, el cacao, la leche en polvo, la sal y la vainilla, y tritura de nuevo.",
+    "Ajusta la textura con el aceite.",
+    "Guarda en bote cerrado."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Crema de avellana y cacao",
+    "ratio": "250 g de avellana, 120 g de azúcar glas y 30 g de cacao",
+    "note": "Trituración larga."
+   },
+   {
+    "use": "Crema de cacahuete o almendra",
+    "ratio": "Fruto seco tostado con 1 % de sal, sin azúcar",
+    "note": "Para salado o dulce."
+   },
+   {
+    "use": "Crema de pistacho",
+    "ratio": "Pistacho pelado tostado suave y 20–30 % de azúcar glas",
+    "note": "Tostado suave para mantener el verde."
+   }
+  ],
+  "variants": [
+   {
+    "id": "turrones-y-pralines",
+    "name": "Praliné",
+    "note": "Con caramelo."
+   },
+   {
+    "id": "frutos-secos",
+    "name": "Frutos secos",
+    "note": "Tostar y conservar."
+   },
+   {
+    "id": "bombones-y-trufas",
+    "name": "Rellenos de bombón",
+    "note": "Gianduja y pralinés."
+   }
+  ],
+  "keys": [
+   "Tostado justo.",
+   "Paciencia al triturar: pasa por fases.",
+   "Para la máquina si se calienta.",
+   "Una pizca de sal.",
+   "Aceite solo para ajustar."
+  ],
+  "errors": [
+   {
+    "p": "No se vuelve crema",
+    "fix": "Poco tiempo o máquina débil. Sigue triturando con pausas."
+   },
+   {
+    "p": "Granulosa",
+    "fix": "Azúcar normal. Usa azúcar glas."
+   },
+   {
+    "p": "Amarga",
+    "fix": "Frutos secos quemados o con piel. Tuesta menos y pela."
+   }
+  ],
+  "history": "Las cremas de avellana y cacao se hicieron populares en Europa en el siglo XX; las pastas de frutos secos se usan desde hace siglos en la repostería mediterránea.",
+  "uses": [
+   "Untar en pan y bollería",
+   "Rellenos",
+   "Aromatizar helados y cremas",
+   "Desayuno y brunch"
+  ],
+  "keep": "En bote cerrado a temperatura ambiente, 3–4 semanas; remover si se separa el aceite.",
+  "pro": "Hazla con los frutos secos de la temporada; es un relleno muy versátil para la partida de postres.",
+  "related": [
+   "turrones-y-pralines",
+   "frutos-secos",
+   "bombones-y-trufas",
+   "vainilla-y-cacao",
+   "helados-de-frutos-secos"
+  ]
+ },
+ {
+  "id": "selva-negra",
+  "name": "Tarta Selva Negra",
+  "name_en": "Black Forest cake",
+  "cat": "dulce",
+  "group": "Chocolate",
+  "aka": [
+   "selva negra",
+   "tarta selva negra",
+   "schwarzwalder",
+   "tarta de chocolate y cerezas"
+  ],
+  "summary": "Tarta de capas de bizcocho de chocolate empapado en almíbar de cereza y kirsch, con nata montada y cerezas, cubierta de virutas de chocolate.",
+  "what": "Es un clásico de montaje: tres discos de [[bizcochos|bizcocho]] de chocolate, empapados en almíbar con kirsch (aguardiente de cereza) o zumo de cereza, alternados con [[nata-montada-y-chantilly|nata montada]] y cerezas en almíbar o guindas, cubiertos de nata y de virutas de chocolate. Funciona por el contraste entre el chocolate, la nata fresca y la acidez de la cereza. Las técnicas de montaje están en [[montaje-y-cobertura-de-tartas]].",
+  "base": {
+   "for": "una tarta de 22 cm",
+   "items": [
+    [
+     "Bizcocho de chocolate en 3 discos",
+     "1 de 22 cm"
+    ],
+    [
+     "Almíbar: jugo de cerezas, azúcar y kirsch",
+     "150 g, 50 g y 30 g"
+    ],
+    [
+     "Nata 35 % montada con 60 g de azúcar",
+     "700 g"
+    ],
+    [
+     "Cerezas en almíbar o guindas escurridas",
+     "300 g"
+    ],
+    [
+     "Chocolate negro en virutas",
+     "100 g"
+    ],
+    [
+     "Cerezas frescas para decorar",
+     "unas pocas"
+    ]
+   ],
+   "steps": [
+    "Corta el bizcocho en tres discos iguales.",
+    "Empapa el primero con almíbar, cubre con nata y reparte cerezas.",
+    "Repite con el segundo disco y termina con el tercero, empapado.",
+    "Cubre toda la tarta con nata y alisa.",
+    "Pega virutas de chocolate en los laterales y decora con rosetas de nata y cerezas. Enfría 4 horas."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Almíbar",
+    "ratio": "150 g de jugo de cereza, 50 g de azúcar y 30 g de kirsch",
+    "note": "Sin alcohol: solo jugo."
+   },
+   {
+    "use": "Nata",
+    "ratio": "700 g montada con 8–10 % de azúcar",
+    "note": "Estabilizada si va a esperar."
+   },
+   {
+    "use": "Cerezas",
+    "ratio": "300 g escurridas",
+    "note": "Ácidas mejor que dulces."
+   }
+  ],
+  "variants": [
+   {
+    "id": "montaje-y-cobertura-de-tartas",
+    "name": "Montaje de tartas",
+    "note": "Nivelar, rellenar y cubrir."
+   },
+   {
+    "id": "nata-montada-y-chantilly",
+    "name": "Nata montada",
+    "note": "Cómo estabilizarla."
+   },
+   {
+    "id": "frutos-rojos-y-fruta-de-hueso",
+    "name": "Cerezas",
+    "note": "Temporada y variedades."
+   }
+  ],
+  "keys": [
+   "Bizcocho húmedo pero no encharcado.",
+   "Cerezas ácidas para equilibrar.",
+   "Nata bien fría y estable.",
+   "Reposo en frío antes de cortar.",
+   "Avisar del alcohol si lleva kirsch."
+  ],
+  "errors": [
+   {
+    "p": "Tarta que se desliza",
+    "fix": "Nata blanda o capas muy empapadas. Estabiliza la nata y empapa menos."
+   },
+   {
+    "p": "Demasiado dulce",
+    "fix": "Cerezas muy dulces. Usa guindas o añade limón al almíbar."
+   },
+   {
+    "p": "Bizcocho seco",
+    "fix": "Poco almíbar. Empapa más."
+   }
+  ],
+  "history": "La Selva Negra es una tarta tradicional del sur de Alemania, popularizada en el siglo XX y conocida en todo el mundo.",
+  "uses": [
+   "Tarta de celebración",
+   "Postre de carta en porción",
+   "Versión en vaso",
+   "Postre de temporada de cerezas"
+  ],
+  "keep": "En frío, 2 días.",
+  "pro": "Hazla en versión individual en aro con acetato; en vaso, por capas, es rápida para el servicio.",
+  "related": [
+   "bizcochos",
+   "nata-montada-y-chantilly",
+   "montaje-y-cobertura-de-tartas",
+   "frutos-rojos-y-fruta-de-hueso",
+   "chocolate-y-templado"
+  ]
+ },
+ {
+  "id": "leche-asada",
+  "name": "Leche asada",
+  "name_en": "Leche asada",
+  "cat": "dulce",
+  "group": "Cremas",
+  "aka": [
+   "leche asada",
+   "flan horneado",
+   "crema horneada",
+   "leche asada chilena"
+  ],
+  "summary": "Crema de leche, huevo y azúcar horneada sin baño maría hasta que la superficie se dora en manchas: un postre casero de Chile y Perú.",
+  "what": "Es la misma base que un [[crema-catalana-y-flan|flan]], pero se hornea directamente, sin baño maría ni caramelo en el molde, a temperatura más alta. La superficie se tuesta en manchas y el interior queda cuajado y algo más firme y poroso que un flan. Su encanto es precisamente ese tostado y la sencillez. Se sirve fría o templada, sola o con caramelo. Admite aromas sencillos (canela, cítrico, vainilla) y se puede servir con un caramelo ligero o con fruta ácida para equilibrar su dulzor. En cazuelitas individuales llega a la mesa con su costra intacta.",
+  "base": {
+   "for": "8 raciones",
+   "items": [
+    [
+     "Leche entera",
+     "1 l"
+    ],
+    [
+     "Huevos",
+     "6"
+    ],
+    [
+     "Azúcar",
+     "180 g"
+    ],
+    [
+     "Vainilla o ralladura de limón",
+     "al gusto"
+    ],
+    [
+     "Sal",
+     "una pizca"
+    ]
+   ],
+   "steps": [
+    "Calienta la leche con la vainilla y deja templar.",
+    "Bate los huevos con el azúcar y la sal sin hacer espuma.",
+    "Añade la leche templada, cuela y reparte en una fuente o en cazuelitas.",
+    "Hornea a 180 °C, 35–45 minutos (25–30 en cazuelitas), hasta que cuaje y la superficie esté dorada en manchas.",
+    "Deja enfriar y sirve frío o templado."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Crema",
+    "ratio": "1 l de leche, 6 huevos y 180 g de azúcar",
+    "note": "Como un flan."
+   },
+   {
+    "use": "Horneado",
+    "ratio": "180 °C sin baño maría",
+    "note": "Superficie tostada."
+   },
+   {
+    "use": "Punto",
+    "ratio": "Centro cuajado que tiembla poco",
+    "note": "Más firme que un flan."
+   }
+  ],
+  "variants": [
+   {
+    "id": "crema-catalana-y-flan",
+    "name": "Flan",
+    "note": "La misma base al baño maría."
+   },
+   {
+    "id": "tres-leches",
+    "name": "Tres leches",
+    "note": "Otro postre de leche latinoamericano."
+   },
+   {
+    "id": "arroz-con-leche-y-natillas",
+    "name": "Natillas",
+    "note": "Crema cocida en cazo."
+   }
+  ],
+  "keys": [
+   "Batir sin espuma.",
+   "Leche templada, no caliente, al mezclar.",
+   "Sin baño maría: se busca el tostado.",
+   "Horno suficiente para dorar.",
+   "Enfriar antes de cortar."
+  ],
+  "errors": [
+   {
+    "p": "Agujereada y aguada",
+    "fix": "Horno muy fuerte o mucho tiempo. Baja a 170 °C."
+   },
+   {
+    "p": "Sin manchas tostadas",
+    "fix": "Horno flojo. Sube al final o usa gratinador."
+   },
+   {
+    "p": "Espuma en la superficie",
+    "fix": "Batido de más. Bate suave y cuela."
+   }
+  ],
+  "history": "La leche asada es un postre casero tradicional en Chile y Perú, de la familia de los flanes y cremas de huevo.",
+  "uses": [
+   "Postre casero",
+   "Postre de carta sencillo",
+   "Con caramelo",
+   "Merienda"
+  ],
+  "keep": "En frío y tapada, 3 días.",
+  "pro": "Hornea en cazuelitas individuales para servir directamente. Hornea a la hora de la comida para servirla templada, con su superficie aún crujiente.",
+  "related": [
+   "crema-catalana-y-flan",
+   "tres-leches",
+   "arroz-con-leche-y-natillas",
+   "caramelo",
+   "huevos"
+  ]
+ },
+ {
+  "id": "cocadas",
+  "name": "Cocadas y dulces de coco",
+  "name_en": "Coconut sweets",
+  "cat": "dulce",
+  "group": "Espumas y azúcar",
+  "aka": [
+   "cocada",
+   "coquitos",
+   "dulces de coco",
+   "macarons de coco",
+   "bolitas de coco"
+  ],
+  "summary": "Bocados de coco rallado ligado con azúcar, clara o leche condensada, horneados hasta dorar por fuera y quedar tiernos por dentro.",
+  "what": "El [[coco]] rallado se une con azúcar y clara, o con leche condensada o yema, y se forma en montoncitos o bolitas que se hornean hasta que las puntas se doran. Quedan tiernos y húmedos por dentro y tostados por fuera. Son tradicionales en Latinoamérica (cocadas) y en España (coquitos). Con la base bañada en chocolate son un buen petit four sin harina.",
+  "base": {
+   "for": "unos 25 coquitos",
+   "items": [
+    [
+     "Coco rallado",
+     "250 g"
+    ],
+    [
+     "Azúcar",
+     "150 g"
+    ],
+    [
+     "Claras",
+     "3 (unos 100 g)"
+    ],
+    [
+     "Ralladura de lima o vainilla",
+     "al gusto"
+    ],
+    [
+     "Sal",
+     "una pizca"
+    ],
+    [
+     "Chocolate negro para bañar (opcional)",
+     "100 g"
+    ]
+   ],
+   "steps": [
+    "Mezcla el coco, el azúcar, la sal, la ralladura y las claras; deja reposar 15 minutos.",
+    "Forma montoncitos o pirámides de 20 g con las manos húmedas sobre papel.",
+    "Hornea a 170–180 °C, 15–20 minutos, hasta que las puntas estén doradas.",
+    "Deja enfriar en la bandeja.",
+    "Baña la base en chocolate templado si quieres."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Coquitos",
+    "ratio": "250 g de coco, 150 g de azúcar y 3 claras",
+    "note": "170–180 °C, 15–20 minutos."
+   },
+   {
+    "use": "Cocadas con leche condensada",
+    "ratio": "250 g de coco y 200 g de leche condensada",
+    "note": "Más tiernas."
+   },
+   {
+    "use": "Baño de chocolate",
+    "ratio": "Chocolate templado en la base",
+    "note": "Petit four."
+   }
+  ],
+  "variants": [
+   {
+    "id": "coco",
+    "name": "Coco",
+    "note": "El producto."
+   },
+   {
+    "id": "brigadeiros",
+    "name": "Beijinho",
+    "note": "Bolitas de coco y leche condensada."
+   },
+   {
+    "id": "macarons",
+    "name": "Macarons",
+    "note": "Otro bocado de clara y fruto seco."
+   }
+  ],
+  "keys": [
+   "Reposo para que el coco se hidrate.",
+   "Manos húmedas para formar.",
+   "Dorar solo las puntas.",
+   "Enfriar antes de mover.",
+   "Sin harina: aptos sin gluten si los ingredientes lo son."
+  ],
+  "errors": [
+   {
+    "p": "Secos",
+    "fix": "Horno largo. Saca en cuanto doren las puntas."
+   },
+   {
+    "p": "Se desmoronan",
+    "fix": "Poca clara o sin reposo. Añade algo de clara y deja reposar."
+   },
+   {
+    "p": "Quemados en la base",
+    "fix": "Bandeja fina o horno bajo. Usa doble bandeja."
+   }
+  ],
+  "history": "Las cocadas son dulces tradicionales en muchos países de Latinoamérica, y los coquitos forman parte de la repostería española de obrador.",
+  "uses": [
+   "Petit four",
+   "Dulce sin gluten",
+   "Merienda",
+   "Decoración de postres tropicales"
+  ],
+  "keep": "En caja cerrada, 1 semana.",
+  "pro": "Hornea en tanda y baña la base en chocolate el día de servicio.",
+  "related": [
+   "coco",
+   "brigadeiros",
+   "macarons",
+   "petit-fours",
+   "chocolate-y-templado"
+  ]
  }
 ]

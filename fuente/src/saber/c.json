@@ -7467,5 +7467,797 @@
       "cigala-y-langosta",
       "leche-nata-y-mantequilla"
     ]
+  },
+  {
+    "id": "duxelles",
+    "name": "Duxelles",
+    "aka": [
+      "duxelle",
+      "picado de champiñón",
+      "farsa de setas",
+      "relleno de champiñón"
+    ],
+    "cat": "bases",
+    "group": "Bases",
+    "summary": "Champiñón o setas picados muy finos con chalota y mantequilla, cocinados hasta quedar secos: base de rellenos, salsas y hojaldres.",
+    "what": "La duxelles es un picado de champiñón (o de setas y sus recortes) con chalota, rehogado en mantequilla hasta que pierde toda el agua y queda una pasta oscura, seca y muy concentrada. Es una de las bases clásicas de la cocina francesa y una forma de aprovechar tallos y recortes de setas.\n\nSirve para rellenar piezas envueltas en hojaldre o en crepe, verduras, pastas y aves; para dar fondo a una salsa de [[demi-glace]] o a una crema; o para untar tostas. La clave es la paciencia: si queda agua, el relleno humedece la masa. Se termina con vino, perejil o un poco de nata, según el uso. Para el producto, ver [[setas]]; para guarniciones, [[guarniciones-de-setas]].",
+    "base": {
+      "for": "unos 250 g",
+      "items": [
+        [
+          "Champiñón o recortes de setas",
+          "500 g"
+        ],
+        [
+          "Chalota picada fina",
+          "60 g"
+        ],
+        [
+          "Mantequilla",
+          "30 g"
+        ],
+        [
+          "Vino blanco seco o generoso (opcional)",
+          "30 ml"
+        ],
+        [
+          "Perejil picado",
+          "5 g"
+        ],
+        [
+          "Sal y pimienta",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Pica el champiñón muy fino a cuchillo o en procesadora por pulsos, sin hacer puré.",
+        "Rehoga la chalota en la mantequilla 2–3 minutos sin color.",
+        "Añade el champiñón y cocina a fuego medio-alto, removiendo, hasta que suelte el agua y esta se evapore del todo, 15–20 minutos.",
+        "Desglasa con el vino si lo usas y deja secar de nuevo.",
+        "Sala al final, añade el perejil y extiende en bandeja para que se enfríe rápido."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Rendimiento",
+        "ratio": "500 g de champiñón dan unos 200–250 g",
+        "note": "Pierde la mitad o más."
+      },
+      {
+        "use": "Para relleno en hojaldre",
+        "ratio": "Muy seca y fría",
+        "note": "Si no, humedece la masa."
+      },
+      {
+        "use": "Para salsa",
+        "ratio": "2 cucharadas por cada 200 ml de demi-glace",
+        "note": "Cocer 5 minutos."
+      },
+      {
+        "use": "Cremosa",
+        "ratio": "30 ml de nata por cada 200 g",
+        "note": "Para tostas y rellenos de pasta."
+      }
+    ],
+    "variants": [
+      {
+        "id": "guarniciones-de-setas",
+        "name": "Guarniciones de setas",
+        "note": "Otros usos de setas."
+      },
+      {
+        "id": "salsa-de-setas",
+        "name": "Salsa de setas",
+        "note": "Salsa con base de duxelles."
+      },
+      {
+        "id": "caldo-de-setas",
+        "name": "Caldo de setas",
+        "note": "Otro aprovechamiento de recortes."
+      },
+      {
+        "id": "farsas-y-muselinas",
+        "name": "Farsas",
+        "note": "Mezclada con farsa de carne o ave."
+      }
+    ],
+    "keys": [
+      "Picado fino, no puré.",
+      "Cocer hasta que esté completamente seca.",
+      "Salar al final.",
+      "Enfriar extendida.",
+      "Buen destino para tallos y recortes."
+    ],
+    "errors": [
+      {
+        "p": "Relleno que moja la masa",
+        "fix": "Duxelles con agua. Cocina más hasta que esté seca."
+      },
+      {
+        "p": "Textura de puré",
+        "fix": "Procesadora sin pulsos. Pica por pulsos o a cuchillo."
+      },
+      {
+        "p": "Sabor amargo",
+        "fix": "Chalota o setas quemadas. Fuego medio y remover."
+      }
+    ],
+    "history": "Es una preparación clásica francesa; su nombre se relaciona con un noble del siglo XVII al que servía un cocinero célebre, aunque los detalles del origen no son seguros.",
+    "uses": [
+      "Rellenos en hojaldre o crepe",
+      "Verduras y pastas rellenas",
+      "Salsas y cremas",
+      "Tostas"
+    ],
+    "keep": "3 días en frío; 3 meses congelada en porciones.",
+    "pro": "Guarda los tallos y recortes de setas de la semana y haz una tanda de duxelles; congélala en porciones planas.",
+    "related": [
+      "setas",
+      "guarniciones-de-setas",
+      "salsa-de-setas",
+      "demi-glace",
+      "cocina-de-aprovechamiento",
+      "hojaldre"
+    ]
+  },
+  {
+    "id": "farsas-y-muselinas",
+    "name": "Farsas y muselinas",
+    "aka": [
+      "farsa",
+      "muselina de pescado",
+      "mousseline",
+      "quenelles",
+      "relleno de carne",
+      "panada"
+    ],
+    "cat": "bases",
+    "group": "Bases",
+    "summary": "Mezclas de carne o pescado picado con grasa, nata o panada que se usan para rellenar, para terrinas y para quenelles: proporciones y temperatura.",
+    "what": "Una farsa es una carne picada y sazonada con grasa y, a menudo, una [[ligazones|ligazón]] de pan o harina (la panada) que la mantiene jugosa. Es la base de terrinas, pasteles de carne, albóndigas finas y rellenos de aves y pasta. La muselina es su versión más fina: pescado, marisco o ave triturados muy fríos con clara y nata, que se cuecen escalfados (quenelles), en terrina o como relleno, y quedan ligeros y sedosos.\n\nLa temperatura es la clave: todo debe estar muy frío, entre 0 y 4 °C, porque si la grasa se funde al triturar la farsa se corta y queda granulosa. Antes de cocinar toda la tanda, se escalfa una bola de prueba para comprobar sal y textura. Ver [[prensados-y-terrinas]] y [[albondigas]].",
+    "base": {
+      "for": "unos 500 g de muselina de pescado",
+      "items": [
+        [
+          "Pescado blanco sin piel ni espinas (merluza, rape, lenguado) o vieira",
+          "250 g"
+        ],
+        [
+          "Clara de huevo",
+          "1"
+        ],
+        [
+          "Sal fina",
+          "4 g"
+        ],
+        [
+          "Nata líquida muy fría",
+          "200–250 ml"
+        ],
+        [
+          "Pimienta blanca y nuez moscada",
+          "una pizca"
+        ]
+      ],
+      "steps": [
+        "Enfría el pescado, la nata y el vaso de la procesadora en cámara o congelador unos minutos.",
+        "Tritura el pescado con la sal hasta tener una pasta lisa; añade la clara y tritura.",
+        "Con la máquina en marcha y en pulsos, añade la nata fría poco a poco sin calentar la mezcla.",
+        "Pasa por tamiz si la quieres muy fina y comprueba con una bola escalfada en agua a 80 °C.",
+        "Cocina en quenelles escalfadas, en terrina al baño maría o como relleno, hasta 70 °C en el centro."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Muselina de pescado",
+        "ratio": "Pescado 1 parte, nata 0,8–1, 1 clara por cada 250 g",
+        "note": "Muy fría."
+      },
+      {
+        "use": "Farsa de cerdo para terrina",
+        "ratio": "Magro 60 %, grasa 30 %, panada 10 %",
+        "note": "Sal 15–18 g por kilo."
+      },
+      {
+        "use": "Panada",
+        "ratio": "Miga de pan y leche a pesos iguales",
+        "note": "Para albóndigas y rellenos jugosos."
+      },
+      {
+        "use": "Cocción",
+        "ratio": "70 °C en el centro",
+        "note": "Agua a 80 °C, sin hervir."
+      }
+    ],
+    "variants": [
+      {
+        "id": "prensados-y-terrinas",
+        "name": "Terrinas",
+        "note": "El uso principal de la farsa."
+      },
+      {
+        "id": "albondigas",
+        "name": "Albóndigas",
+        "note": "Farsa con panada."
+      },
+      {
+        "id": "duxelles",
+        "name": "Duxelles",
+        "note": "Para aligerar o perfumar una farsa."
+      },
+      {
+        "id": null,
+        "name": "Quenelles",
+        "note": "Muselina escalfada en forma de huso."
+      }
+    ],
+    "keys": [
+      "Todo muy frío: 0–4 °C.",
+      "Sal con la carne o el pescado al principio: liga.",
+      "Nata o grasa poco a poco.",
+      "Bola de prueba antes de cocinar todo.",
+      "Escalfar sin hervir."
+    ],
+    "errors": [
+      {
+        "p": "Farsa cortada y granulosa",
+        "fix": "Se calentó al triturar. Enfría todo y tritura a pulsos."
+      },
+      {
+        "p": "Quenelles que se deshacen",
+        "fix": "Poca clara o mucha nata. Ajusta y prueba con una bola."
+      },
+      {
+        "p": "Terrina seca",
+        "fix": "Poca grasa o cocción alta. Respeta la proporción y cocina hasta 70 °C, no más."
+      }
+    ],
+    "history": "Las farsas son una de las bases de la charcutería y la cocina francesa clásicas. Las muselinas y quenelles de pescado son propias de la cocina de restaurante europea.",
+    "uses": [
+      "Terrinas y pasteles",
+      "Rellenos de aves, pasta y verduras",
+      "Quenelles",
+      "Albóndigas finas"
+    ],
+    "keep": "Cruda: en el día, en frío. Cocinada: 3 días en frío; las terrinas, según su ficha. Se puede congelar cruda en porciones.",
+    "pro": "Trabaja la farsa en tandas pequeñas con el vaso enfriado; ten agua a 80 °C para las pruebas.",
+    "related": [
+      "prensados-y-terrinas",
+      "albondigas",
+      "ligazones",
+      "escalfado",
+      "embutidos-caseros-frescos",
+      "pates-de-higado"
+    ]
+  },
+  {
+    "id": "caldo-de-tomate-asado",
+    "name": "Caldo de tomate asado",
+    "aka": [
+      "caldo de tomate",
+      "fondo de tomate",
+      "agua de tomate asado",
+      "caldo rojo"
+    ],
+    "cat": "fondos",
+    "group": "Fondos claros",
+    "summary": "Tomate maduro asado al horno o a la brasa con cebolla y ajo, cocido poco y colado sin apretar: caldo rojo, dulce y tostado para sopas, arroces y pescados.",
+    "what": "Es un caldo de verano que aprovecha el tomate muy maduro. A diferencia del agua de tomate de las [[aguas-clarificadas]], que es cruda y clara, aquí el tomate se asa hasta concentrarse y tostarse por los bordes, y luego se cuece brevemente en agua con cebolla, ajo y albahaca. Se cuela sin apretar y sale un caldo anaranjado, dulce, ácido y con un fondo tostado.\n\nSirve para mojar un arroz de verduras o de pescado, para un caldo de pescado en el que el tomate tenga peso, para sopas frías o calientes, para escalfar pescado y para dar fondo a una vinagreta de tomate. Hecho sobre la brasa, encaja con la cocina de fuego. Para el producto, ver [[tomate]].",
+    "base": {
+      "for": "unos 1,5 litros",
+      "items": [
+        [
+          "Tomate muy maduro partido en dos",
+          "2 kg"
+        ],
+        [
+          "Cebolla en cuartos",
+          "1 (150 g)"
+        ],
+        [
+          "Ajo con piel",
+          "1 cabeza partida"
+        ],
+        [
+          "Aceite de oliva",
+          "40 ml"
+        ],
+        [
+          "Agua",
+          "1,5 l"
+        ],
+        [
+          "Tallos de albahaca y tomillo",
+          "unos tallos"
+        ],
+        [
+          "Sal",
+          "una pizca"
+        ]
+      ],
+      "steps": [
+        "Coloca el tomate con el corte hacia arriba en bandeja con la cebolla y el ajo, riega con aceite y sala.",
+        "Asa a 200 °C 40–50 minutos, o en la brasa, hasta que esté blando y dorado por los bordes.",
+        "Pásalo todo a una olla, raspa los jugos de la bandeja con un poco de agua y añade el resto del agua y las hierbas.",
+        "Cuece a fuego suave 25–30 minutos.",
+        "Cuela por colador fino sin apretar; para un caldo más claro, pasa después por paño."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Caldo base",
+        "ratio": "1,3 kg de tomate por litro de agua",
+        "note": "Tomate muy maduro."
+      },
+      {
+        "use": "Arroz de verduras",
+        "ratio": "Mitad caldo de tomate y mitad caldo de verduras",
+        "note": "Sala al final."
+      },
+      {
+        "use": "Escalfar pescado",
+        "ratio": "Caldo a 75–80 °C",
+        "note": "Con aceite y albahaca."
+      },
+      {
+        "use": "Reducido para vinagreta",
+        "ratio": "A un tercio",
+        "note": "Con aceite y vinagre."
+      }
+    ],
+    "variants": [
+      {
+        "id": "aguas-clarificadas",
+        "name": "Agua de tomate",
+        "note": "Versión cruda y clara."
+      },
+      {
+        "id": "caldo-de-verduras-tostadas",
+        "name": "Verduras tostadas",
+        "note": "Pariente más amplio."
+      },
+      {
+        "id": "fondos-ahumados-y-de-brasa",
+        "name": "A la brasa",
+        "note": "Versión ahumada."
+      },
+      {
+        "id": "tomate-confitado",
+        "name": "Tomate confitado",
+        "note": "Otro uso del tomate maduro."
+      }
+    ],
+    "keys": [
+      "Tomate muy maduro.",
+      "Asar hasta dorar los bordes, sin quemar.",
+      "Raspar los jugos de la bandeja.",
+      "Cocción corta.",
+      "Colar sin apretar."
+    ],
+    "errors": [
+      {
+        "p": "Caldo ácido y plano",
+        "fix": "Tomate poco maduro. Usa tomate de temporada o asa más tiempo."
+      },
+      {
+        "p": "Caldo amargo",
+        "fix": "Tomate quemado. Retira las partes negras."
+      },
+      {
+        "p": "Caldo turbio",
+        "fix": "Apretado al colar. Deja escurrir solo."
+      }
+    ],
+    "history": "Asar el tomate para concentrar su sabor es habitual en las cocinas mediterráneas. Usarlo como caldo de base es una práctica de la cocina actual de temporada.",
+    "uses": [
+      "Arroces de verdura y pescado",
+      "Sopas",
+      "Escalfar pescado",
+      "Vinagretas"
+    ],
+    "keep": "3 días en frío; 3 meses congelado.",
+    "pro": "Haz caldo cuando haya tomate muy maduro y congélalo en porciones para el resto del año.",
+    "related": [
+      "tomate",
+      "aguas-clarificadas",
+      "caldo-de-verduras-tostadas",
+      "fondos-ahumados-y-de-brasa",
+      "bases-para-arroces",
+      "tomate-confitado"
+    ]
+  },
+  {
+    "id": "alinos-cremosos-para-ensalada",
+    "name": "Aliños cremosos para ensalada",
+    "aka": [
+      "aliño césar",
+      "salsa césar",
+      "aliño de queso azul",
+      "aliño de suero",
+      "aliños de yogur",
+      "dressing"
+    ],
+    "cat": "bases",
+    "group": "Bases",
+    "summary": "Aliños espesos que se pegan a la hoja: el de estilo César con anchoa, parmesano y limón, el de queso azul y los de yogur o suero con hierbas.",
+    "what": "Frente a la [[vinagreta]], que es fluida y se separa, los aliños cremosos se apoyan en una base que da cuerpo: mayonesa, yogur, suero de mantequilla, crema agria o queso. Se pegan a las hojas firmes (romana, cogollo, endibia, col) y a las verduras crudas, y aguantan más en el plato.\n\nEl de estilo César lleva yema o mayonesa, anchoa, ajo, limón, mostaza, parmesano y pimienta. El de queso azul mezcla queso desmigado con yogur o crema agria y un poco de vinagre. Los de suero o yogur con hierbas son frescos y ácidos. Si llevan yema y no se cuecen, siempre con yema pasteurizada. Para las bases, ver [[mayonesa]] y [[lacteos-fermentados]].",
+    "base": {
+      "for": "unos 250 ml de aliño de estilo César",
+      "items": [
+        [
+          "Mayonesa hecha con yema pasteurizada",
+          "100 g"
+        ],
+        [
+          "Filetes de anchoa",
+          "3"
+        ],
+        [
+          "Ajo",
+          "1 diente pequeño"
+        ],
+        [
+          "Zumo de limón",
+          "20 ml"
+        ],
+        [
+          "Mostaza de Dijon",
+          "5 g"
+        ],
+        [
+          "Queso curado de pasta dura rallado",
+          "30 g"
+        ],
+        [
+          "Agua o suero (para aclarar)",
+          "20–40 ml"
+        ],
+        [
+          "Pimienta negra",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Maja la anchoa y el ajo hasta tener una pasta.",
+        "Mézclala con la mayonesa, la mostaza y el limón.",
+        "Añade el queso rallado y pimienta abundante.",
+        "Aclara con agua o suero hasta que cubra una hoja sin escurrir.",
+        "Aliña las hojas frías y secas justo antes de servir."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Queso azul",
+        "ratio": "60 g de queso, 100 g de yogur o crema agria, 10 ml de vinagre",
+        "note": "Desmigado con tenedor."
+      },
+      {
+        "use": "Suero con hierbas",
+        "ratio": "100 ml de suero, 50 g de mayonesa, 10 g de hierbas, ajo",
+        "note": "Fresco y ácido."
+      },
+      {
+        "use": "Yogur y tahini",
+        "ratio": "150 g de yogur, 30 g de tahini, limón y ajo",
+        "note": "Sin mayonesa."
+      },
+      {
+        "use": "Cantidad",
+        "ratio": "25–30 ml por ración de hojas",
+        "note": "Hojas bien secas."
+      }
+    ],
+    "variants": [
+      {
+        "id": "vinagreta",
+        "name": "Vinagreta",
+        "note": "El aliño fluido."
+      },
+      {
+        "id": "salsa-yogur-limon",
+        "name": "Salsa de yogur",
+        "note": "Base de yogur."
+      },
+      {
+        "id": "salsas-de-queso",
+        "name": "Salsas de queso",
+        "note": "Calientes y frías."
+      },
+      {
+        "id": "bagna-cauda-y-salsas-de-anchoa",
+        "name": "Anchoa",
+        "note": "El umami del César."
+      }
+    ],
+    "keys": [
+      "Hojas firmes, frías y secas.",
+      "Base con cuerpo: mayonesa, yogur o queso.",
+      "Aclarar hasta que cubra sin escurrir.",
+      "Yema siempre pasteurizada.",
+      "Aliñar al momento."
+    ],
+    "errors": [
+      {
+        "p": "Ensalada aguada",
+        "fix": "Hojas mojadas. Sécalas bien antes de aliñar."
+      },
+      {
+        "p": "Aliño demasiado espeso",
+        "fix": "Aclara con agua, suero o limón."
+      },
+      {
+        "p": "Sabor plano",
+        "fix": "Falta ácido o sal. Más limón o anchoa."
+      }
+    ],
+    "history": "Los aliños cremosos se popularizaron sobre todo en América del Norte en el siglo XX; el de estilo César nació en un restaurante de la frontera entre México y Estados Unidos. Hoy son comunes en todo el mundo.",
+    "uses": [
+      "Ensaladas de hojas firmes",
+      "Verduras crudas para mojar",
+      "Pollo y pescado frío",
+      "Bocadillos"
+    ],
+    "keep": "3 días en frío, tapados. Con yema pasteurizada; nunca con huevo crudo sin pasteurizar.",
+    "pro": "Ten la base hecha y aclárala en el día; aliña cada ración al momento.",
+    "related": [
+      "vinagreta",
+      "mayonesa",
+      "lacteos-fermentados",
+      "salsas-de-queso",
+      "hojas-y-brotes",
+      "bagna-cauda-y-salsas-de-anchoa"
+    ]
+  },
+  {
+    "id": "dashi-de-jamon",
+    "name": "Dashi de jamón",
+    "aka": [
+      "caldo de jamón y kombu",
+      "dashi ibérico",
+      "caldo de kombu y jamón",
+      "infusión de jamón"
+    ],
+    "cat": "fondos",
+    "group": "Fondos claros",
+    "summary": "El dashi japonés con jamón curado en lugar de bonito seco: kombu infusionado y puntas de jamón, un caldo claro, rápido y lleno de umami.",
+    "what": "El [[dashi]] combina el glutamato del kombu con el inosinato del bonito seco. El jamón curado aporta lo mismo que el bonito: un curado largo que ha concentrado sabor y umami. Sustituirlo da un caldo claro, dorado y muy sabroso, con un perfume de jamón suave, que se hace en una hora y no necesita huesos ni cocciones largas.\n\nSe usa para arroces y fideos, guisantes y habas con jamón, verduras escaldadas, sopas ligeras o para cocer pescado y marisco. Funciona con las puntas y recortes del jamón, con poca grasa, o con un hueso pequeño y bien limpio. Es un ejemplo de [[umami-glutamato-y-sinergia|sinergia del umami]] con producto propio. Para un caldo más largo y potente, ver [[caldo-de-cocido-y-jamon]].",
+    "base": {
+      "for": "1 litro",
+      "items": [
+        [
+          "Agua blanda o filtrada",
+          "1,2 l"
+        ],
+        [
+          "Kombu",
+          "10–15 g"
+        ],
+        [
+          "Puntas o recortes de jamón curado, con poca grasa",
+          "100–150 g"
+        ],
+        [
+          "Setas secas (opcional)",
+          "5 g"
+        ]
+      ],
+      "steps": [
+        "Remoja el kombu en el agua fría 30 minutos o toda la noche en cámara.",
+        "Calienta a 60–65 °C y mantén 45–60 minutos; retira el kombu antes de que hierva.",
+        "Sube a 80–85 °C, añade el jamón y las setas y mantén 20–30 minutos sin hervir.",
+        "Cuela por paño sin apretar y desgrasa si hace falta.",
+        "Prueba antes de salar: el jamón ya sala."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Caldo base",
+        "ratio": "10–15 g de kombu y 100–150 g de jamón por litro",
+        "note": "Claro y suave."
+      },
+      {
+        "use": "Más intenso",
+        "ratio": "200 g de jamón por litro",
+        "note": "Para arroces."
+      },
+      {
+        "use": "Infusión del jamón",
+        "ratio": "20–30 minutos a 80–85 °C",
+        "note": "Más tiempo, sabor a cocido y grasa."
+      },
+      {
+        "use": "Guisantes o habas",
+        "ratio": "Cocer o glasear en el caldo",
+        "note": "Clásico de primavera."
+      }
+    ],
+    "variants": [
+      {
+        "id": "dashi",
+        "name": "Dashi",
+        "note": "El original japonés."
+      },
+      {
+        "id": "caldo-de-cocido-y-jamon",
+        "name": "Caldo de jamón",
+        "note": "Versión de cocción larga."
+      },
+      {
+        "id": "jamon-curado",
+        "name": "Jamón curado",
+        "note": "El producto."
+      },
+      {
+        "id": "caldo-de-vainas-de-guisante-y-habas",
+        "name": "Caldo de vainas",
+        "note": "Para mezclar en primavera."
+      }
+    ],
+    "keys": [
+      "Kombu a baja temperatura, fuera antes de hervir.",
+      "Jamón con poca grasa.",
+      "Sin hervor: claro y limpio.",
+      "El jamón sala: probar antes.",
+      "Buen destino para las puntas del jamón."
+    ],
+    "errors": [
+      {
+        "p": "Caldo turbio y graso",
+        "fix": "Hirvió o el jamón tenía mucha grasa. Mantén por debajo de 85 °C y usa recortes magros."
+      },
+      {
+        "p": "Sabor viscoso o amargo",
+        "fix": "Kombu hervido. Retíralo antes."
+      },
+      {
+        "p": "Caldo salado",
+        "fix": "Demasiado jamón. Rebaja con agua o dashi de kombu."
+      }
+    ],
+    "history": "Combinar kombu con jamón curado es una idea de la cocina de autor española de las últimas décadas, que trasladó la lógica del dashi japonés al producto propio.",
+    "uses": [
+      "Arroces y fideos",
+      "Guisantes y habas",
+      "Verduras escaldadas",
+      "Cocer pescado y marisco"
+    ],
+    "keep": "3 días en frío; 2 meses congelado.",
+    "pro": "Guarda las puntas y recortes magros del jamón congelados y haz el dashi cuando lo necesites: está en una hora.",
+    "related": [
+      "dashi",
+      "jamon-curado",
+      "caldo-de-cocido-y-jamon",
+      "umami-glutamato-y-sinergia",
+      "algas",
+      "esparrago-y-guisante"
+    ]
+  },
+  {
+    "id": "caldo-de-vainas-de-guisante-y-habas",
+    "name": "Caldo de vainas de guisante y habas",
+    "aka": [
+      "caldo de vainas",
+      "caldo de guisante",
+      "caldo verde de primavera",
+      "aprovechar vainas"
+    ],
+    "cat": "fondos",
+    "group": "Fondos claros",
+    "summary": "Caldo corto de las vainas de guisante (y de habas tiernas) con cebolleta y menta: dulce, verde y de primavera, para cocer los propios granos, risottos y cremas.",
+    "what": "Las vainas de los guisantes frescos, que suelen tirarse, tienen el mismo sabor dulce que el grano. Cocidas poco tiempo en agua con cebolleta y unos tallos de menta o perejil, dan un caldo verde pálido, dulce y fresco. Las vainas de habas muy tiernas aportan algo más de cuerpo; las viejas, amargor, así que se usan con cuidado.\n\nEs el caldo ideal para cocer los propios guisantes o habas, para un risotto o un arroz de primavera, para cremas y sopas frías y para glasear verduras de temporada. La cocción debe ser corta y el enfriado rápido: con el tiempo pierde el dulzor y el color. Es [[cocina-de-aprovechamiento|aprovechamiento]] puro. Para el producto, ver [[esparrago-y-guisante]] y [[judia-verde-y-habas]].",
+    "base": {
+      "for": "unos 1,2 litros",
+      "items": [
+        [
+          "Vainas de guisante frescas (y de habas tiernas)",
+          "500 g"
+        ],
+        [
+          "Agua",
+          "1,5 l"
+        ],
+        [
+          "Cebolleta",
+          "1"
+        ],
+        [
+          "Tallos de menta o perejil",
+          "unos tallos"
+        ],
+        [
+          "Sal",
+          "una pizca"
+        ]
+      ],
+      "steps": [
+        "Lava bien las vainas y descarta las manchadas o secas.",
+        "Ponlas con el agua fría, la cebolleta y la sal y lleva a hervor suave.",
+        "Cuece 15–20 minutos; añade los tallos de hierba en los últimos 5 minutos.",
+        "Tritura brevemente y cuela por colador fino apretando un poco, o cuela sin triturar para un caldo más claro.",
+        "Enfría enseguida sobre hielo para que conserve el color y el dulzor."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Caldo base",
+        "ratio": "400 g de vainas por litro de agua",
+        "note": "15–20 minutos."
+      },
+      {
+        "use": "Cocer guisantes",
+        "ratio": "En el propio caldo, 2–4 minutos",
+        "note": "Doble sabor."
+      },
+      {
+        "use": "Risotto de primavera",
+        "ratio": "Todo el caldo de vainas",
+        "note": "Con guisantes y habas."
+      },
+      {
+        "use": "Con dashi de jamón",
+        "ratio": "Mitad y mitad",
+        "note": "Guisantes con jamón."
+      }
+    ],
+    "variants": [
+      {
+        "id": "caldo-de-verduras",
+        "name": "Caldo de verduras",
+        "note": "Para completar."
+      },
+      {
+        "id": "dashi-de-jamon",
+        "name": "Dashi de jamón",
+        "note": "Su pareja de primavera."
+      },
+      {
+        "id": "risotto-y-arroces-cremosos",
+        "name": "Risotto",
+        "note": "Uso habitual."
+      },
+      {
+        "id": "cremas-frias-de-verdura",
+        "name": "Cremas frías",
+        "note": "Base verde y dulce."
+      }
+    ],
+    "keys": [
+      "Vainas frescas y limpias.",
+      "Cocción corta.",
+      "Enfriar sobre hielo.",
+      "Vainas de haba solo tiernas.",
+      "Usarlo con su propio grano."
+    ],
+    "errors": [
+      {
+        "p": "Caldo amargo",
+        "fix": "Vainas de haba viejas o cocción larga. Usa solo tiernas y no pases de 20 minutos."
+      },
+      {
+        "p": "Caldo gris",
+        "fix": "Enfriado lento. Enfría sobre hielo."
+      },
+      {
+        "p": "Caldo insípido",
+        "fix": "Vainas secas o poco cantidad. Usa vainas recién desgranadas."
+      }
+    ],
+    "history": "Aprovechar las vainas para caldos y sopas es una costumbre de la cocina casera de primavera. La cocina de temporada actual lo ha recuperado como base.",
+    "uses": [
+      "Cocer guisantes y habas",
+      "Risottos y arroces de primavera",
+      "Cremas y sopas frías",
+      "Glasear verduras"
+    ],
+    "keep": "2 días en frío; 2 meses congelado (pierde algo de color).",
+    "pro": "Desgrana y haz el caldo el mismo día; usa la tanda en uno o dos días.",
+    "related": [
+      "esparrago-y-guisante",
+      "judia-verde-y-habas",
+      "cocina-de-aprovechamiento",
+      "caldo-de-verduras",
+      "risotto-y-arroces-cremosos",
+      "dashi-de-jamon"
+    ]
   }
 ]

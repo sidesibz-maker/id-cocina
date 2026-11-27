@@ -6333,5 +6333,958 @@
       "vacio-equipo-y-seguridad",
       "huevos"
     ]
+  },
+  {
+    "id": "salsa-diabla",
+    "name": "Salsa diabla",
+    "name_en": "Devil sauce",
+    "aka": [
+      "salsa a la diabla",
+      "sauce diable",
+      "diabla",
+      "pollo a la diabla"
+    ],
+    "cat": "salsas",
+    "group": "Derivadas de la española",
+    "summary": "Reducción de vino blanco, vinagre, chalota y pimienta sobre demi-glace, picante de cayena: salsa viva para aves y carnes a la parrilla.",
+    "what": "Es una derivada de la [[demi-glace]] con mucho carácter: se reduce vino blanco seco con vinagre, chalota y pimienta machacada casi hasta secar, se moja con demi-glace, se cuece unos minutos y se termina con cayena y perejil. Queda oscura, brillante, ácida y picante, sin el dulzor de las salsas de vino generoso.\n\nAcompaña sobre todo el ave abierta y asada a la parrilla, untada antes con mostaza y pan rallado, el plato clásico «a la diabla», y también cerdo, conejo o casquería a la brasa. Su acidez corta la grasa y su picor despierta un plato sencillo. Es pariente de la salsa a la pimienta de [[salsa-de-pimienta-y-mostaza]] y de las reducciones de [[salsas-de-vino]].",
+    "base": {
+      "for": "unos 300 ml",
+      "items": [
+        [
+          "Chalota picada fina",
+          "40 g"
+        ],
+        [
+          "Vino blanco seco",
+          "150 ml"
+        ],
+        [
+          "Vinagre de vino blanco",
+          "50 ml"
+        ],
+        [
+          "Pimienta negra machacada",
+          "3 g"
+        ],
+        [
+          "Demi-glace",
+          "300 ml"
+        ],
+        [
+          "Cayena molida",
+          "una pizca"
+        ],
+        [
+          "Perejil picado",
+          "5 g"
+        ],
+        [
+          "Mantequilla fría (opcional)",
+          "20 g"
+        ]
+      ],
+      "steps": [
+        "Pon la chalota, el vino, el vinagre y la pimienta en un cazo y reduce hasta que quede un tercio del líquido.",
+        "Moja con la demi-glace y cuece a fuego suave 5–8 minutos, desespumando.",
+        "Cuela por chino si la quieres fina o déjala con la chalota si la quieres rústica.",
+        "Añade la cayena poco a poco, probando: debe picar sin tapar.",
+        "Termina con perejil y, si quieres más brillo, monta con la mantequilla fría."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Reducción",
+        "ratio": "Vino y vinagre 3:1, reducidos a un tercio",
+        "note": "Concentra acidez y aroma."
+      },
+      {
+        "use": "Ración",
+        "ratio": "40–50 ml por plato",
+        "note": "Muy sabrosa."
+      },
+      {
+        "use": "Ave a la diabla",
+        "ratio": "Mostaza untada y pan rallado al final de la parrilla",
+        "note": "La salsa aparte."
+      },
+      {
+        "use": "Versión rápida",
+        "ratio": "Con jugo de carne en lugar de demi-glace",
+        "note": "Más ligera."
+      }
+    ],
+    "variants": [
+      {
+        "id": "demi-glace",
+        "name": "Demi-glace",
+        "note": "La base."
+      },
+      {
+        "id": "salsa-de-pimienta-y-mostaza",
+        "name": "Salsa a la pimienta",
+        "note": "Pariente cercana."
+      },
+      {
+        "id": "salsas-de-vino",
+        "name": "Salsas de vino",
+        "note": "Otras reducciones."
+      },
+      {
+        "id": null,
+        "name": "Pollo a la diabla",
+        "note": "Ave abierta, mostaza, pan rallado y esta salsa."
+      }
+    ],
+    "keys": [
+      "Reducción ácida casi a seco.",
+      "Demi-glace limpia y bien reducida.",
+      "Cayena al final y probando.",
+      "Perejil fresco para levantarla.",
+      "Pensada para la parrilla."
+    ],
+    "errors": [
+      {
+        "p": "Salsa agria",
+        "fix": "Reducción corta. Reduce más antes de mojar o equilibra con un poco más de demi-glace."
+      },
+      {
+        "p": "Picante que lo tapa todo",
+        "fix": "Cayena de golpe. Añádela poco a poco."
+      },
+      {
+        "p": "Salsa espesa y pesada",
+        "fix": "Demi-glace muy reducida. Aclara con fondo."
+      }
+    ],
+    "history": "Forma parte de las derivadas de la salsa española recogidas en la cocina francesa clásica. «A la diabla» se ha usado durante siglos para platos picantes y asados a la parrilla.",
+    "uses": [
+      "Ave a la parrilla",
+      "Cerdo y conejo a la brasa",
+      "Casquería",
+      "Carnes frías"
+    ],
+    "keep": "4–5 días en frío; 2 meses congelada sin el perejil. Se regenera con un hervor corto.",
+    "pro": "Ten la reducción de vino y vinagre hecha en tanda y en frío; termina con demi-glace, cayena y perejil por servicio.",
+    "related": [
+      "demi-glace",
+      "espanola",
+      "salsa-de-pimienta-y-mostaza",
+      "salsas-de-vino",
+      "pollo-y-aves",
+      "fuego-y-brasa"
+    ]
+  },
+  {
+    "id": "salsa-poivrade-y-grand-veneur",
+    "name": "Salsa poivrade y grand veneur",
+    "name_en": "Poivrade and grand veneur sauces",
+    "aka": [
+      "poivrade",
+      "salsa pebrada",
+      "grand veneur",
+      "salsa de caza",
+      "salsa del montero"
+    ],
+    "cat": "salsas",
+    "group": "Derivadas de la española",
+    "summary": "Las salsas clásicas para caza de pelo: la poivrade, de marinada reducida, vinagre y pimienta, y la grand veneur, la misma con jalea de grosella y nata.",
+    "what": "La poivrade es la salsa de la caza mayor marinada. Se rehoga una [[mirepoix]] con los recortes de la pieza, se deglasea con vinagre y con la [[marinada]] de vino donde ha estado la carne, se reduce y se moja con [[fondo-de-caza]] o [[demi-glace]]. Se cuece, se cuela y al final se le añade pimienta recién machacada, que le da nombre.\n\nLa grand veneur parte de la poivrade y la termina con jalea de grosella y nata, o, en la versión más antigua, con un poco de sangre de la pieza para ligar. Queda más suave, ligeramente dulce y untuosa. Las dos acompañan venado, jabalí, corzo y liebre, y también carnes rojas de sabor fuerte. Para los guisos, ver [[guisos-de-caza]].",
+    "base": {
+      "for": "unos 500 ml de poivrade",
+      "items": [
+        [
+          "Recortes de la pieza de caza",
+          "200 g"
+        ],
+        [
+          "Mirepoix (zanahoria, cebolla, apio)",
+          "150 g"
+        ],
+        [
+          "Aceite o mantequilla",
+          "30 g"
+        ],
+        [
+          "Vinagre de vino tinto",
+          "60 ml"
+        ],
+        [
+          "Marinada de vino tinto colada",
+          "300 ml"
+        ],
+        [
+          "Fondo de caza o demi-glace",
+          "600 ml"
+        ],
+        [
+          "Tomillo y laurel",
+          "al gusto"
+        ],
+        [
+          "Pimienta negra en grano machacada",
+          "4–5 g"
+        ]
+      ],
+      "steps": [
+        "Dora bien los recortes en la grasa, añade la mirepoix y rehoga hasta que tome color.",
+        "Deglasea con el vinagre y reduce casi a seco.",
+        "Añade la marinada, lleva a hervor, desespuma y reduce a la mitad.",
+        "Moja con el fondo, añade las hierbas y cuece a fuego suave 30–40 minutos, desespumando; en los últimos 10 minutos, añade la pimienta.",
+        "Cuela apretando poco y ajusta el punto de napado. Para grand veneur, añade la jalea y la nata al final."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Grand veneur",
+        "ratio": "30 g de jalea de grosella y 50 ml de nata por cada 300 ml de poivrade",
+        "note": "Fuera del fuego tras un hervor."
+      },
+      {
+        "use": "Pimienta",
+        "ratio": "Solo los últimos 10 minutos",
+        "note": "Más tiempo, amarga."
+      },
+      {
+        "use": "Ración",
+        "ratio": "50–60 ml por plato",
+        "note": "Con caza asada o guisada."
+      },
+      {
+        "use": "Ligazón con sangre",
+        "ratio": "20–30 ml por cada 500 ml",
+        "note": "Sin hervir después: 70–75 °C."
+      }
+    ],
+    "variants": [
+      {
+        "id": "fondo-de-caza",
+        "name": "Fondo de caza",
+        "note": "La base ideal."
+      },
+      {
+        "id": "marinada",
+        "name": "Marinada",
+        "note": "Su vino reducido da el carácter."
+      },
+      {
+        "id": "salsa-cumberland-y-salsas-inglesas",
+        "name": "Cumberland",
+        "note": "Otra salsa de caza con grosella, fría."
+      },
+      {
+        "id": null,
+        "name": "Grand veneur",
+        "note": "Con jalea de grosella y nata."
+      }
+    ],
+    "keys": [
+      "Recortes bien dorados.",
+      "Vinagre y marinada reducidos.",
+      "Pimienta al final, no desde el principio.",
+      "Colar sin apretar.",
+      "La grand veneur, terminada fuera del fuego."
+    ],
+    "errors": [
+      {
+        "p": "Salsa amarga",
+        "fix": "Pimienta cocida mucho tiempo o recortes quemados. Añade la pimienta al final y dora sin quemar."
+      },
+      {
+        "p": "Salsa ácida y verde",
+        "fix": "Marinada o vinagre poco reducidos. Reduce más antes de mojar."
+      },
+      {
+        "p": "Grand veneur cortada",
+        "fix": "Hirvió con la nata o la sangre. Termina fuera del fuego."
+      }
+    ],
+    "history": "Son salsas de la tradición francesa de la caza mayor, recogidas en la cocina clásica. «Grand veneur» alude al jefe de las cacerías de la corte.",
+    "uses": [
+      "Venado y corzo",
+      "Jabalí",
+      "Liebre",
+      "Carnes rojas de sabor fuerte"
+    ],
+    "keep": "Poivrade: 5 días en frío o 2 meses congelada. Grand veneur: se termina en el día.",
+    "pro": "Haz la poivrade en tanda con los recortes del despiece de la caza y termínala por ración.",
+    "related": [
+      "fondo-de-caza",
+      "marinada",
+      "demi-glace",
+      "guisos-de-caza",
+      "mirepoix",
+      "reducciones"
+    ]
+  },
+  {
+    "id": "alcalis-y-bicarbonato",
+    "name": "Álcalis y bicarbonato en cocina",
+    "name_en": "Alkalis and baking soda in cooking",
+    "aka": [
+      "bicarbonato",
+      "medio alcalino",
+      "cal en cocina",
+      "bicarbonato horneado",
+      "ablandar con bicarbonato"
+    ],
+    "cat": "conceptos",
+    "group": "Fundamentos",
+    "summary": "Lo que hace un medio alcalino en la cocina: ablanda legumbres, acelera el dorado, cambia la textura de la carne y de los fideos, y cuándo se pasa.",
+    "what": "Casi toda la cocina es neutra o ácida, pero algunos trucos dependen de lo contrario: subir el pH con un álcali. El más común es el bicarbonato sódico. En el agua de remojo o de cocción de las legumbres ablanda la piel y acorta la cocción. Una pizca acelera la [[reaccion-de-maillard]]: la cebolla se dora antes. En la carne cortada fina, un poco de bicarbonato retiene agua y la deja tierna y jugosa en el salteado. Las sales alcalinas dan a los fideos de ramen su textura elástica y su color amarillo, y la cal transforma el maíz en la nixtamalización.\n\nEl exceso se nota: sabor jabonoso, textura pastosa y pérdida de vitaminas. En verduras verdes mantiene el color pero las deshace. La sosa cáustica que se usa en algunas recetas tradicionales es peligrosa y pide protección. Ver [[ph-y-acidez]].",
+    "base": {
+      "for": "Usos y dosis orientativas",
+      "items": [
+        [
+          "Remojo de legumbres",
+          "1–2 g de bicarbonato por litro"
+        ],
+        [
+          "Cebolla dorada más rápido",
+          "una pizca (0,5 g) por kilo"
+        ],
+        [
+          "Carne en tiras para saltear",
+          "1 g por cada 100 g, 15–20 minutos y lavar"
+        ],
+        [
+          "Bicarbonato horneado (más alcalino)",
+          "1 hora a 120–130 °C"
+        ],
+        [
+          "Fideos alcalinos",
+          "sales alcalinas al 1 % de la harina"
+        ],
+        [
+          "Nixtamalización",
+          "cal alimentaria al 1 % del peso del maíz"
+        ]
+      ],
+      "steps": [
+        "Decide qué quieres del álcali: ablandar, dorar, retener agua o cambiar una masa.",
+        "Mide siempre: unos gramos de más ya dan sabor a jabón.",
+        "En carne, lava o enjuaga después del tratamiento.",
+        "En legumbres, aclara antes de cocer si el remojo llevaba bicarbonato.",
+        "Equilibra con un ácido al final si el plato queda plano."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Legumbres duras",
+        "ratio": "1 g por litro en la cocción",
+        "note": "Más, se deshacen y saben a jabón."
+      },
+      {
+        "use": "Carne para wok",
+        "ratio": "1 g de bicarbonato por 100 g",
+        "note": "Lavar y secar después."
+      },
+      {
+        "use": "Cebolla caramelizada rápida",
+        "ratio": "0,5 g por kilo",
+        "note": "Textura más blanda."
+      },
+      {
+        "use": "Masas tipo pretzel",
+        "ratio": "Baño en agua con bicarbonato horneado al 3–4 %",
+        "note": "Alternativa segura a la sosa."
+      }
+    ],
+    "variants": [
+      {
+        "id": "ph-y-acidez",
+        "name": "pH y acidez",
+        "note": "El otro lado de la escala."
+      },
+      {
+        "id": "tortillas-de-maiz-y-nixtamal",
+        "name": "Nixtamal",
+        "note": "Cal y maíz."
+      },
+      {
+        "id": "ramen",
+        "name": "Fideos de ramen",
+        "note": "Sales alcalinas en la masa."
+      },
+      {
+        "id": "salteado-y-wok",
+        "name": "Carne tierna al wok",
+        "note": "Bicarbonato en la marinada."
+      }
+    ],
+    "keys": [
+      "Un álcali ablanda, dora y retiene agua.",
+      "Dosis de gramos: medir siempre.",
+      "El exceso sabe a jabón.",
+      "Mantiene el verde pero deshace la verdura.",
+      "La sosa, solo con protección; mejor bicarbonato horneado."
+    ],
+    "errors": [
+      {
+        "p": "Legumbres con sabor a jabón",
+        "fix": "Demasiado bicarbonato. Usa 1 g por litro y aclara."
+      },
+      {
+        "p": "Carne con textura gomosa",
+        "fix": "Exceso o tiempo largo. Reduce dosis y lava después."
+      },
+      {
+        "p": "Verdura verde pastosa",
+        "fix": "Bicarbonato en el agua. Usa agua abundante con sal y enfría rápido en su lugar."
+      }
+    ],
+    "history": "Las cenizas, la cal y las aguas alcalinas se han usado en muchas cocinas tradicionales: el maíz en Mesoamérica, los fideos en China, algunas aceitunas y dulces en Europa. El bicarbonato se popularizó en el siglo XIX.",
+    "uses": [
+      "Legumbres",
+      "Carne para saltear",
+      "Masas y fideos",
+      "Dorado de cebollas"
+    ],
+    "keep": "No aplica: es un principio. El bicarbonato, en bote cerrado y seco.",
+    "pro": "Pesa el bicarbonato con báscula de precisión y escribe la dosis en la ficha: es de los ingredientes en los que un gramo cambia el plato.",
+    "related": [
+      "ph-y-acidez",
+      "reaccion-de-maillard",
+      "tortillas-de-maiz-y-nixtamal",
+      "legumbres",
+      "salteado-y-wok",
+      "levaduras-y-gasificantes"
+    ]
+  },
+  {
+    "id": "dureza-del-agua",
+    "name": "Dureza del agua",
+    "name_en": "Water hardness",
+    "aka": [
+      "agua dura",
+      "cal del agua",
+      "agua blanda",
+      "agua filtrada",
+      "calcio en el agua"
+    ],
+    "cat": "conceptos",
+    "group": "Fundamentos",
+    "summary": "Cómo la cal del agua cambia la cocción de legumbres y verduras, el pan, el café, el té y los caldos, y cuándo conviene usar agua blanda o filtrada.",
+    "what": "El agua del grifo lleva disueltas sales de calcio y magnesio: cuantas más tiene, más dura es. Para beber no importa mucho, pero en cocina se nota. El calcio refuerza las pectinas de las paredes vegetales: las legumbres cocidas en agua dura tardan más y la piel queda dura, y algunas verduras no se ablandan del todo. También apaga los aromas del café y del té, deja un velo en los caldos claros y en los hielos y llena de cal las máquinas de vapor, los hornos mixtos y los hervidores.\n\nEn panadería, un agua de dureza media refuerza algo el gluten; muy blanda deja masas pegajosas. Cuando la cocción depende del agua, como en las legumbres, el dashi o el café, el agua blanda o filtrada da mejores resultados. Ver [[agua-y-evaporacion]] y [[legumbres]].",
+    "base": {
+      "for": "Escala orientativa (carbonato cálcico por litro)",
+      "items": [
+        [
+          "Agua blanda",
+          "menos de 60 mg/l"
+        ],
+        [
+          "Agua de dureza media",
+          "60–120 mg/l"
+        ],
+        [
+          "Agua dura",
+          "120–180 mg/l"
+        ],
+        [
+          "Agua muy dura",
+          "más de 180 mg/l"
+        ],
+        [
+          "Medición",
+          "tiras de test o el dato de la compañía de aguas"
+        ],
+        [
+          "Solución",
+          "filtro de jarra, descalcificador o agua mineral de mineralización débil"
+        ]
+      ],
+      "steps": [
+        "Averigua la dureza del agua de tu cocina con una tira de test o el dato de la compañía.",
+        "Para legumbres, dashi, té y café, usa agua blanda o filtrada si la tuya es dura.",
+        "Si no hay otra agua, añade 1 g de bicarbonato por litro a la cocción de legumbres.",
+        "Revisa y descalcifica con regularidad las máquinas que trabajan con vapor.",
+        "En panadería, anota el agua usada si una masa cambia de comportamiento."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Legumbres en agua dura",
+        "ratio": "Agua filtrada o 1 g de bicarbonato por litro",
+        "note": "Piel más tierna."
+      },
+      {
+        "use": "Dashi",
+        "ratio": "Agua blanda",
+        "note": "El kombu suelta mejor su sabor."
+      },
+      {
+        "use": "Café y té",
+        "ratio": "Agua de mineralización débil",
+        "note": "Más aroma y menos amargor."
+      },
+      {
+        "use": "Hielo transparente",
+        "ratio": "Agua filtrada y congelación lenta",
+        "note": "Menos velo blanco."
+      }
+    ],
+    "variants": [
+      {
+        "id": "agua-y-evaporacion",
+        "name": "Agua en cocina",
+        "note": "El papel del agua en general."
+      },
+      {
+        "id": "alcalis-y-bicarbonato",
+        "name": "Bicarbonato",
+        "note": "Corrector en legumbres."
+      },
+      {
+        "id": "dashi",
+        "name": "Dashi",
+        "note": "Muy sensible al agua."
+      },
+      {
+        "id": "cafe-y-te-en-cocina",
+        "name": "Café y té",
+        "note": "El agua es casi todo."
+      }
+    ],
+    "keys": [
+      "El calcio endurece legumbres y verduras.",
+      "Agua blanda para dashi, té y café.",
+      "La cal se come las máquinas de vapor.",
+      "En pan, mejor dureza media.",
+      "Si una receta falla en otra cocina, mira el agua."
+    ],
+    "errors": [
+      {
+        "p": "Garbanzos que no se ablandan",
+        "fix": "Agua dura o legumbre vieja. Usa agua blanda o un poco de bicarbonato."
+      },
+      {
+        "p": "Té o café apagados",
+        "fix": "Agua muy dura. Usa agua filtrada o mineral débil."
+      },
+      {
+        "p": "Caldo claro con velo",
+        "fix": "Cal del agua. Usa agua filtrada para consomés y caldos claros."
+      }
+    ],
+    "history": "Las cocinas tradicionales conocían bien el efecto del agua: en muchas zonas se guardaba agua de lluvia o de fuente para cocer legumbres. La química del agua explicó después el papel del calcio.",
+    "uses": [
+      "Legumbres",
+      "Caldos y dashi",
+      "Café, té e infusiones",
+      "Pan y masas"
+    ],
+    "keep": "No aplica: es un principio.",
+    "pro": "Ten agua filtrada para legumbres, caldos claros y bebidas calientes, y un calendario de descalcificación para las máquinas de vapor.",
+    "related": [
+      "agua-y-evaporacion",
+      "legumbres",
+      "dashi",
+      "cafe-y-te-en-cocina",
+      "alcalis-y-bicarbonato",
+      "gluten-y-reposo-de-masas"
+    ]
+  },
+  {
+    "id": "maduracion-de-frutas-y-etileno",
+    "name": "Maduración de frutas y etileno",
+    "name_en": "Fruit ripening and ethylene",
+    "aka": [
+      "etileno",
+      "frutas climatéricas",
+      "madurar fruta",
+      "fruta que madura en casa",
+      "daño por frío"
+    ],
+    "cat": "conceptos",
+    "group": "Fundamentos",
+    "summary": "Qué frutas siguen madurando después de cogidas y cuáles no, cómo el etileno acelera la maduración y cómo guardarlas para que lleguen a su punto.",
+    "what": "Algunas frutas siguen madurando después de cosechadas: se llaman climatéricas. Producen etileno, un gas que acelera su propia maduración y la de lo que tienen cerca: se ablandan, se endulzan y ganan aroma. Son el plátano, el tomate, el aguacate, el mango, la pera, el melocotón, el albaricoque, la manzana, el kiwi o el higo. Otras no maduran tras cogerlas: los cítricos, la uva, la fresa, la cereza, la piña o la sandía; si llegan verdes, se quedan verdes.\n\nEsto decide cómo se guardan. Las climatéricas se maduran a temperatura ambiente y luego se pasan al frío para frenarlas; las que no maduran, en frío desde el principio. Muchas frutas tropicales y el tomate sufren con el frío: pierden aroma y textura. El etileno estropea antes las hojas verdes, los pepinos o el brócoli. Ver [[frutos-rojos-y-fruta-de-hueso]].",
+    "base": {
+      "for": "Clasificación práctica",
+      "items": [
+        [
+          "Siguen madurando (climatéricas)",
+          "plátano, tomate, aguacate, mango, pera, melocotón, albaricoque, manzana, kiwi, higo"
+        ],
+        [
+          "No maduran tras la cosecha",
+          "cítricos, uva, fresa, cereza, piña, sandía, granada"
+        ],
+        [
+          "Producen mucho etileno",
+          "manzana, pera, plátano maduro, tomate, aguacate"
+        ],
+        [
+          "Sensibles al etileno",
+          "hojas verdes, pepino, brócoli, kiwi, zanahoria"
+        ],
+        [
+          "Dañadas por el frío",
+          "plátano, tomate, aguacate verde, mango, berenjena"
+        ],
+        [
+          "Temperatura de maduración",
+          "18–22 °C"
+        ]
+      ],
+      "steps": [
+        "Compra cada fruta en el punto que necesitas para el día en que la vas a usar.",
+        "Madura las climatéricas a temperatura ambiente; acelera en bolsa de papel con una manzana o un plátano.",
+        "Cuando estén en su punto, pásalas al frío para frenar la maduración.",
+        "Guarda las sensibles al etileno separadas de las que lo producen.",
+        "No metas en cámara el tomate ni los tropicales verdes: pierden sabor."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Aguacate",
+        "ratio": "2–4 días a 20 °C, luego cámara",
+        "note": "En bolsa de papel, más rápido."
+      },
+      {
+        "use": "Tomate",
+        "ratio": "Por encima de 12 °C",
+        "note": "Por debajo pierde aroma."
+      },
+      {
+        "use": "Fruta de hueso",
+        "ratio": "1–3 días a temperatura ambiente",
+        "note": "Luego, en frío y pronto."
+      },
+      {
+        "use": "Plátano",
+        "ratio": "Fuera de cámara",
+        "note": "La piel se ennegrece en frío."
+      }
+    ],
+    "variants": [
+      {
+        "id": "frutos-rojos-y-fruta-de-hueso",
+        "name": "Fruta de hueso",
+        "note": "Climatéricas muy delicadas."
+      },
+      {
+        "id": "aguacate-y-frutas-tropicales",
+        "name": "Tropicales",
+        "note": "Sensibles al frío."
+      },
+      {
+        "id": "tomate",
+        "name": "Tomate",
+        "note": "Fruta climatérica."
+      },
+      {
+        "id": "citricos",
+        "name": "Cítricos",
+        "note": "No maduran tras cogerlos."
+      }
+    ],
+    "keys": [
+      "Unas maduran en la cocina; otras no.",
+      "El etileno acelera la maduración.",
+      "Madurar fuera, frenar en frío.",
+      "Separar productoras y sensibles.",
+      "Tomate y tropicales, lejos del frío."
+    ],
+    "errors": [
+      {
+        "p": "Fresas o cerezas que no mejoran",
+        "fix": "No maduran tras la cosecha. Compra en su punto."
+      },
+      {
+        "p": "Tomate harinoso y sin aroma",
+        "fix": "Guardado en frío. Tenlo a temperatura ambiente y úsalo pronto."
+      },
+      {
+        "p": "Lechugas amarillas en la cámara",
+        "fix": "Junto a manzanas o tomates. Sepáralas."
+      }
+    ],
+    "history": "Madurar fruta en paja, en desvanes o junto a otras frutas es práctica antigua. El papel del etileno como hormona de la maduración se conoce desde el siglo XX.",
+    "uses": [
+      "Compra y guarda de fruta",
+      "Postres y fruta en su punto",
+      "Tomate y aguacate en servicio",
+      "Conservación de verdura de hoja"
+    ],
+    "keep": "No aplica: es un principio.",
+    "pro": "Separa en la cámara frutas productoras de etileno y verduras de hoja. Ten una zona fuera de cámara para tomate, plátano y fruta que aún debe madurar.",
+    "related": [
+      "frutos-rojos-y-fruta-de-hueso",
+      "aguacate-y-frutas-tropicales",
+      "tomate",
+      "citricos",
+      "hojas-y-brotes",
+      "cadena-de-frio"
+    ]
+  },
+  {
+    "id": "congelacion-y-cristales-de-hielo",
+    "name": "Congelación y cristales de hielo",
+    "name_en": "Freezing and ice crystals",
+    "aka": [
+      "congelar",
+      "congelación rápida",
+      "quemadura por frío",
+      "abatidor de congelación",
+      "qué se puede congelar"
+    ],
+    "cat": "conceptos",
+    "group": "Fundamentos",
+    "summary": "Por qué congelar rápido conserva mejor la textura, qué elaboraciones aguantan el congelador y cuáles no, y cómo evitar la quemadura por frío.",
+    "what": "Al congelar, el agua del alimento forma cristales de hielo. Si la congelación es lenta, los cristales crecen grandes, rompen las células y, al descongelar, el producto pierde jugo y queda blando. Si es rápida, como en un abatidor de congelación, los cristales son pequeños y la textura se conserva mucho mejor. Por eso se congela en piezas finas o porciones, bien envueltas y en frío intenso.\n\nNo todo aguanta igual. Las salsas emulsionadas con huevo se cortan, las cremas con almidón normal sueltan agua ([[sineresis-y-estabilidad-de-geles]]), las verduras crudas con mucha agua se ablandan y las hojas verdes se estropean. Los fondos, guisos, masas crudas y la mayoría de carnes y pescados congelan bien. El aire seca la superficie: es la quemadura por frío, que se evita con vacío o envoltorio hermético. Congelar frena los microbios pero no los mata ([[cadena-de-frio]]); para el pescado que se come crudo o poco hecho es obligatoria por el anisakis.",
+    "base": {
+      "for": "Referencias de congelación",
+      "items": [
+        [
+          "Congelación de conservación",
+          "−18 °C o menos"
+        ],
+        [
+          "Abatidor de congelación",
+          "−35 a −40 °C de aire"
+        ],
+        [
+          "Pescado para crudo o poco hecho",
+          "−20 °C al menos 24 horas en toda la pieza"
+        ],
+        [
+          "Congelan bien",
+          "fondos, guisos, masas crudas, carnes, pescados, purés"
+        ],
+        [
+          "Congelan mal",
+          "emulsiones de huevo, cremas de almidón normal, verdura cruda acuosa, hojas"
+        ],
+        [
+          "Protección",
+          "vacío o envoltorio hermético"
+        ]
+      ],
+      "steps": [
+        "Enfría primero la elaboración en cámara o abatidor: no congeles nada caliente.",
+        "Porciona fino y plano para que se congele rápido.",
+        "Envasa al vacío o envuelve bien, sin aire.",
+        "Etiqueta con nombre y fecha.",
+        "Descongela en cámara, nunca a temperatura ambiente."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Calidad en carne",
+        "ratio": "Hasta 6–12 meses a −18 °C",
+        "note": "Bien envasada."
+      },
+      {
+        "use": "Calidad en pescado graso",
+        "ratio": "2–3 meses",
+        "note": "La grasa se enrancia."
+      },
+      {
+        "use": "Fondos y salsas",
+        "ratio": "3 meses",
+        "note": "En porciones."
+      },
+      {
+        "use": "Anisakis",
+        "ratio": "−20 °C 24 horas en toda la pieza",
+        "note": "Antes de servir crudo o poco hecho."
+      }
+    ],
+    "variants": [
+      {
+        "id": "descongelar-y-atemperar",
+        "name": "Descongelar",
+        "note": "La otra mitad del proceso."
+      },
+      {
+        "id": "cadena-de-frio",
+        "name": "Cadena de frío",
+        "note": "Seguridad."
+      },
+      {
+        "id": "helados-y-sorbetes",
+        "name": "Helados",
+        "note": "Cristales pequeños: textura cremosa."
+      },
+      {
+        "id": "sineresis-y-estabilidad-de-geles",
+        "name": "Geles y cremas",
+        "note": "Lo que suelta agua al congelar."
+      }
+    ],
+    "keys": [
+      "Congelación rápida, cristales pequeños.",
+      "Porciones finas y sin aire.",
+      "Nunca congelar caliente.",
+      "Etiqueta y fecha siempre.",
+      "Congelar no mata microbios, salvo el anisakis en pescado."
+    ],
+    "errors": [
+      {
+        "p": "Carne que suelta mucho jugo al descongelar",
+        "fix": "Congelación lenta. Porciona fino y congela en frío intenso."
+      },
+      {
+        "p": "Manchas secas y blanquecinas",
+        "fix": "Quemadura por frío. Envasa al vacío o sin aire."
+      },
+      {
+        "p": "Salsa cortada tras congelar",
+        "fix": "Emulsión de huevo. Congela la base y emulsiona al regenerar."
+      }
+    ],
+    "history": "La congelación industrial rápida se desarrolló en el siglo XX y cambió la forma de conservar pescado y carne. En cocina profesional, el abatidor de congelación es hoy una herramienta habitual.",
+    "uses": [
+      "Producción por adelantado",
+      "Pescado para crudo",
+      "Fondos y guisos",
+      "Masas y helados"
+    ],
+    "keep": "No aplica: es un principio.",
+    "pro": "Etiquetas con fecha en todo lo congelado, porciones del tamaño de uso y congelación en cuanto la elaboración esté fría.",
+    "related": [
+      "cadena-de-frio",
+      "descongelar-y-atemperar",
+      "sineresis-y-estabilidad-de-geles",
+      "helados-y-sorbetes",
+      "agua-y-evaporacion",
+      "curado-de-pescado"
+    ]
+  },
+  {
+    "id": "color-de-la-carne-y-mioglobina",
+    "name": "Color de la carne y mioglobina",
+    "name_en": "Meat colour and myoglobin",
+    "aka": [
+      "mioglobina",
+      "color de la carne",
+      "carne rosada",
+      "anillo de humo",
+      "por qué la carne se pone marrón"
+    ],
+    "cat": "conceptos",
+    "group": "Fundamentos",
+    "summary": "De dónde viene el rojo de la carne, por qué cambia con el aire, el vacío, la cocción, el curado o el humo, y por qué el color no sirve para saber el punto.",
+    "what": "El color de la carne lo da sobre todo la mioglobina, una proteína del músculo que guarda oxígeno. Sin aire, como en el vacío, es púrpura oscuro; al contacto con el oxígeno se vuelve rojo brillante en minutos; con el tiempo y la oxidación pasa a marrón. Ese marrón superficial no significa por sí solo que la carne esté mala: el olor y la textura lo dicen mejor.\n\nCon el calor la mioglobina se desnaturaliza: la carne pasa de roja a rosada y a gris marrón según sube la temperatura ([[punto-de-la-carne]]). Pero el color engaña: el humo de la brasa deja un anillo rosado que no se va; las sales de curado fijan un rosa estable en jamones y embutidos; y un ave puede quedar rosada junto al hueso estando cocinada, o gris sin estarlo. Solo el termómetro da el punto seguro. El atún y el bonito también tienen mioglobina y se oscurecen igual.",
+    "base": {
+      "for": "Estados de color",
+      "items": [
+        [
+          "Carne envasada al vacío",
+          "púrpura oscuro"
+        ],
+        [
+          "Carne expuesta al aire",
+          "rojo brillante en minutos"
+        ],
+        [
+          "Carne oxidada",
+          "marrón en superficie"
+        ],
+        [
+          "Carne cocinada a 55–60 °C",
+          "roja o rosada en el centro"
+        ],
+        [
+          "Carne cocinada por encima de 70 °C",
+          "gris marrón"
+        ],
+        [
+          "Curados y humo",
+          "rosa estable aunque esté cocinada"
+        ]
+      ],
+      "steps": [
+        "Al abrir carne envasada al vacío, déjala respirar 15–20 minutos: recupera el rojo.",
+        "Juzga el estado por olor y textura, no solo por el color.",
+        "Mide el punto con sonda, sobre todo en aves y carne picada.",
+        "En la brasa, cuenta con el anillo rosado del humo: no es crudo.",
+        "En atún y carne cruda cortada, corta lo más cerca posible del servicio."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Vacío abierto",
+        "ratio": "15–20 minutos al aire",
+        "note": "Del púrpura al rojo."
+      },
+      {
+        "use": "Ave",
+        "ratio": "Al menos 70 °C en el centro",
+        "note": "Aunque quede rosada junto al hueso."
+      },
+      {
+        "use": "Carne picada",
+        "ratio": "Al menos 70 °C en el centro",
+        "note": "El color no basta."
+      },
+      {
+        "use": "Atún cortado",
+        "ratio": "Cortar al momento",
+        "note": "Se oscurece en minutos u horas."
+      }
+    ],
+    "variants": [
+      {
+        "id": "punto-de-la-carne",
+        "name": "Punto de la carne",
+        "note": "Temperatura y color."
+      },
+      {
+        "id": "maduracion-de-carne",
+        "name": "Maduración",
+        "note": "Color de la carne madurada."
+      },
+      {
+        "id": "ahumado",
+        "name": "Humo",
+        "note": "El anillo rosado."
+      },
+      {
+        "id": "jamon-curado",
+        "name": "Curados",
+        "note": "Rosa estable."
+      }
+    ],
+    "keys": [
+      "Púrpura sin aire, rojo con aire, marrón con el tiempo.",
+      "El marrón de superficie no siempre es malo.",
+      "El color no dice el punto: sonda.",
+      "Humo y curado dejan rosa.",
+      "Cortar el atún al momento."
+    ],
+    "errors": [
+      {
+        "p": "Carne de vacío que parece pasada",
+        "fix": "Falta de oxígeno. Déjala respirar antes de juzgarla."
+      },
+      {
+        "p": "Ave rosada junto al hueso",
+        "fix": "Puede ser hueso o humo. Mide con sonda antes de decidir."
+      },
+      {
+        "p": "Atún marrón en el plato",
+        "fix": "Cortado con antelación. Corta en el momento y guarda en frío y tapado."
+      }
+    ],
+    "history": "La relación entre color y frescura de la carne se ha usado siempre para juzgarla. El estudio de la mioglobina en el siglo XX explicó sus cambios y llevó al envasado moderno de la carne.",
+    "uses": [
+      "Juzgar carne y pescado",
+      "Punto en la brasa",
+      "Curados y embutidos",
+      "Crudos de carne y atún"
+    ],
+    "keep": "No aplica: es un principio.",
+    "pro": "Sonda en todas las partidas de carne y criterio escrito: el punto lo da la temperatura, no el color.",
+    "related": [
+      "punto-de-la-carne",
+      "maduracion-de-carne",
+      "ahumado",
+      "jamon-curado",
+      "atun-rojo-y-bonito",
+      "cadena-de-frio"
+    ]
   }
 ]
