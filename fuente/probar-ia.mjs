@@ -14,7 +14,7 @@ const answers = {
  ideas: '{"ideas":[{"name":"Coliflor asada y miso","line":"Entera","course":"entrante","why":"Umami","twist":"Brasa","components":[{"role":"principal","name":"Coliflor","techniques":["brasa"],"items":["Coliflor"]}]}],"issues":[]}',
  recipe: '{"name":"Ceviche de corvina","portions":"4","components":[{"role":"principal","name":"Corvina","techniques":["crudo"],"items":[{"name":"Corvina","qty":"400 g"},{"name":"Lima","qty":"6"}],"method":["Cortar en dados","Marinar 3 min"]}],"plating":"Plato frío","issues":[]}',
  radar: '```json\n[{"day":"2026-11-19","kind":"tecnica","heat":"alza","title":"Aviso simulado de prueba","summary":"Resumen.","sources":[{"name":"Fuente","url":"https://example.org/a","date":"2026-11-18"}],"ideas":[],"fit":80}]\n```',
- crear: '{"ideas":[{"texto":"Higo asado con miso","por":"dulce y umami","papel":"salsa"},{"texto":"Hoja de higuera","por":"aroma verde","papel":"toque"},{"texto":"Queso de cabra","por":"cremoso y ácido","papel":"cremoso"}]}',
+ crearViejo: '{"ideas":[{"texto":"Higo asado con miso","por":"dulce y umami","papel":"salsa"},{"texto":"Hoja de higuera","por":"aroma verde","papel":"toque"},{"texto":"Queso de cabra","por":"cremoso y ácido","papel":"cremoso"}]}',
  chat: 'Para la carrillera, **puré de apionabo** tostado:\n- Ásalo entero.\n- Tritúralo con mantequilla.'
 };
 const browser = await chromium.launch();
@@ -87,16 +87,13 @@ ok(notes.includes('puré de apionabo') && notes.includes('—'), 'no se guarda e
 // ideas
 await go('#/crear/ideas'); await page.waitForSelector('#brief'); await page.fill('#brief', 'Entrante con coliflor'); await page.click('#ideasForm button[type=submit]'); await page.waitForSelector('.idea-result');
 ok((await page.textContent('.idea-result')).includes('Coliflor asada y miso'), 'las ideas de ChatGPT no salen');
-// crear: big bang de ideas con ChatGPT y preguntar
-await go('#/crear'); await page.waitForSelector('#bPlate'); await page.fill('#bBrief', 'Algo con higos'); await page.click('#bStart button[type=submit]'); await page.waitForSelector('.bgroup-ai [data-add]');
-ok((await page.textContent('.bgroup-ai')).includes('Higo asado con miso') && (await page.textContent('.bgroup-ai')).includes('dulce y umami'), 'las ideas de ChatGPT no estallan en Crear');
-await page.locator('.bgroup-ai [data-add]').first().click(); await page.waitForFunction(() => document.querySelector('#bDish')?.innerText.includes('Higo asado con miso'));
-await page.click('[data-act=b-ai]'); await page.waitForSelector('.bgroup-ai [data-add]');
-ok(JSON.stringify(sent.at(-1).body).includes('LO QUE YA LLEVA EL PLATO') && JSON.stringify(sent.at(-1).body).includes('Higo asado con miso'), 'pedir más ideas no manda el plato a ChatGPT');
-await page.fill('#bQ', '¿Qué vino le pongo?'); await page.click('#bAsk button[type=submit]'); await page.waitForSelector('.banswer');
-ok((await page.textContent('.banswer')).includes('apionabo'), 'la pregunta sobre el plato no tiene respuesta');
-await page.click('[data-act=b-save]'); await page.waitForSelector('#dishName');
-ok((await page.inputValue('#dishName')).startsWith('Higo') && JSON.stringify(await page.evaluate(() => JSON.parse(localStorage.getItem('id-cocina-v1')).dishes.filter(d => d.name === 'Higo'))).includes('Higo asado con miso'), 'el plato de Crear con ChatGPT no se guarda: ' + await page.inputValue('#dishName'));
+// crear: con ChatGPT conectado, la mesa de ideas sigue sin preguntarle (todo sale de la base de la app)
+const beforeCrear = sent.length;
+await go('#/crear'); await page.waitForSelector('#bPlate'); await page.fill('#bBrief', 'Cordero'); await page.click('#bStart button[type=submit]'); await page.waitForSelector('.bgroup-goes [data-add]');
+await page.locator('.bgroup-goes [data-add]').first().click(); await wait(300);
+ok(sent.length === beforeCrear, 'Crear pregunta a ChatGPT y no debe');
+ok(await page.locator('[data-act=b-ai], #bAsk, .bgroup-ai').count() === 0, 'Crear sigue enseñando cosas de ChatGPT');
+await page.click('[data-act=b-new]'); await wait(200);
 // importar desde captura
 await go('#/crear/importar'); await page.waitForSelector('#recipeShot', {state: 'attached'});
 await page.setInputFiles('#recipeShot', shots + 'foto.png'); await page.waitForSelector('#recipePreview');
