@@ -1510,3 +1510,12 @@ button.exopt:hover{border-color:var(--ink);background:var(--soft)}
 /* Modo cocina: botón de luz fuerte. */
 .cook-bright{margin-right:12px}
 .rail .rail-backup{color:var(--on-coal);border-color:var(--line2)}.rail .rail-backup small{color:var(--mut-coal)}.rail .rail-backup.is-warn{border-color:var(--ember)}
+/* Ficha en el móvil: lo secundario bajo «Más opciones». En el PC se ve todo. */
+.kentry-extra{display:contents}.kentry-moreb{display:none}
+@media (max-width:959px){
+ .kentry-moreb{display:inline-flex}
+ .kentry-acts:not(.is-open) .kentry-extra{display:none}
+ .kentry-acts.is-open .kentry-extra{display:flex;flex-wrap:wrap;gap:4px 20px;width:100%}
+}
+/* Crear en el móvil: el plato vacío no tapa las ideas. */
+@media (max-width:959px){.bdish.is-empty{min-height:64px;padding:10px}}

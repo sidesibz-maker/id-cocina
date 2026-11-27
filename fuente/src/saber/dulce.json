@@ -9314,5 +9314,990 @@
    "labneh",
    "panna-cotta-y-cuajadas"
   ]
+ },
+ {
+  "id": "coca-de-patata",
+  "name": "Coca de patata",
+  "name_en": "Potato sweet bun",
+  "cat": "dulce",
+  "group": "Dulces de la isla",
+  "aka": [
+   "coca de patata de valldemossa",
+   "bollo de patata",
+   "coca dulce de patata",
+   "panecillo de patata"
+  ],
+  "summary": "Bollo dulce mallorquín muy tierno y esponjoso hecho con patata cocida, huevo, azúcar y manteca, espolvoreado con azúcar glas.",
+  "what": "La patata cocida y chafada aporta almidón y humedad a la masa, que queda mucho más tierna y ligera que un pan de leche. Lleva además huevo, azúcar y manteca de cerdo o aceite, y se fermenta con levadura como una masa enriquecida. Se forma en bollos redondos, se hornea poco tiempo y se cubre de azúcar glas. Es pariente de la [[ensaimada]] y del [[brioche]], y se toma en desayuno, merienda o con un chocolate.",
+  "base": {
+   "for": "unos 16 bollos de 60 g",
+   "items": [
+    [
+     "Harina de fuerza",
+     "500 g"
+    ],
+    [
+     "Patata cocida con piel, pelada y chafada fría",
+     "250 g"
+    ],
+    [
+     "Azúcar",
+     "150 g"
+    ],
+    [
+     "Huevos",
+     "150 g (3)"
+    ],
+    [
+     "Manteca de cerdo o aceite de oliva suave",
+     "100 g"
+    ],
+    [
+     "Levadura fresca",
+     "25 g"
+    ],
+    [
+     "Leche templada",
+     "50 g"
+    ],
+    [
+     "Ralladura de limón",
+     "1"
+    ],
+    [
+     "Sal",
+     "5 g"
+    ],
+    [
+     "Azúcar glas",
+     "para terminar"
+    ]
+   ],
+   "steps": [
+    "Disuelve la levadura en la leche templada.",
+    "Mezcla la harina, la patata, el azúcar, los huevos, la sal, la ralladura y la levadura, y amasa 8–10 minutos; añade la manteca al final y amasa hasta una masa blanda y lisa.",
+    "Fermenta tapada a 24–26 °C hasta que doble, 1,5–2 horas.",
+    "Divide en bollos de 60 g, bolea con las manos untadas y colócalos separados en la bandeja.",
+    "Fermenta de nuevo hasta que doblen, 1 hora.",
+    "Hornea a 180–190 °C, 15–20 minutos, hasta un dorado suave. Enfría y espolvorea con azúcar glas."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Patata",
+    "ratio": "50 % de patata cocida sobre la harina",
+    "note": "Patata harinosa, cocida con piel para que no se aguarde."
+   },
+   {
+    "use": "Enriquecido",
+    "ratio": "30 % de azúcar, 30 % de huevo y 20 % de grasa sobre la harina",
+    "note": "Masa blanda; se trabaja con las manos untadas."
+   },
+   {
+    "use": "Horneado",
+    "ratio": "180–190 °C, 15–20 minutos",
+    "note": "Color claro: se seca enseguida."
+   }
+  ],
+  "variants": [
+   {
+    "id": "ensaimada",
+    "name": "Ensaimada",
+    "note": "Otra masa enriquecida de las islas, con manteca en capas."
+   },
+   {
+    "id": "brioche",
+    "name": "Brioche",
+    "note": "Masa enriquecida con mantequilla, sin patata."
+   },
+   {
+    "id": "patata-y-boniato",
+    "name": "Con boniato",
+    "note": "Parte de la patata sustituida por boniato asado; más dulce y anaranjada."
+   }
+  ],
+  "keys": [
+   "Patata cocida con piel y bien escurrida: el agua de más hace la masa pegajosa.",
+   "Patata fría al mezclar.",
+   "Masa blanda: no añadas harina de más, unta las manos.",
+   "Horno corto y color claro.",
+   "Mejor el día que se hacen."
+  ],
+  "errors": [
+   {
+    "p": "Masa muy pegajosa",
+    "fix": "Patata aguada. Cuécela con piel y escurre bien; enfría la masa si hace falta."
+   },
+   {
+    "p": "Bollos densos",
+    "fix": "Fermentación corta. Deja doblar en cada fase."
+   },
+   {
+    "p": "Secos",
+    "fix": "Horneado largo. Saca en cuanto doren."
+   }
+  ],
+  "history": "La coca de patata es un bollo dulce tradicional de Mallorca, especialmente conocido en Valldemossa. Es uno de los dulces de masa enriquecida de la repostería balear.",
+  "uses": [
+   "Desayuno y merienda",
+   "Con chocolate o helado",
+   "Pan dulce de brunch",
+   "Base de torrija o pudin al día siguiente"
+  ],
+  "keep": "Tapada a temperatura ambiente, 1–2 días; congelada, 1 mes. Las del día anterior, para torrijas.",
+  "pro": "Forma los bollos y congélalos sin fermentar; sácalos la noche antes a cámara para fermentarlos por la mañana.",
+  "related": [
+   "ensaimada",
+   "brioche",
+   "patata-y-boniato",
+   "cocina-ibicenca",
+   "torrijas-y-postres-de-pan"
+  ]
+ },
+ {
+  "id": "tarta-de-naranja-entera",
+  "name": "Tarta de naranja entera",
+  "name_en": "Whole orange cake",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "bizcocho de naranja entera",
+   "tarta de naranja y almendra",
+   "pastel de naranja sin harina",
+   "bizcocho de naranja"
+  ],
+  "summary": "Bizcocho húmedo de naranjas enteras cocidas y trituradas con su piel, almendra molida y huevo, sin harina: intenso, amargo y perfumado.",
+  "what": "Las naranjas se cuecen enteras hasta que la piel está muy tierna y se trituran con todo, piel incluida. Ese puré da a la tarta una humedad y un sabor amargo y cítrico que no da la ralladura sola. Con [[almendra]] molida y huevo, sin harina, queda densa y jugosa, y mejora al día siguiente. Funciona con naranja dulce, amarga o con mandarina, y es una buena forma de usar los [[citricos]] de invierno.",
+  "base": {
+   "for": "un molde de 24 cm (10 raciones)",
+   "items": [
+    [
+     "Naranjas enteras",
+     "2 medianas (unos 400 g)"
+    ],
+    [
+     "Huevos",
+     "6"
+    ],
+    [
+     "Azúcar",
+     "220 g"
+    ],
+    [
+     "Almendra molida",
+     "250 g"
+    ],
+    [
+     "Levadura química",
+     "5 g"
+    ],
+    [
+     "Sal",
+     "una pizca"
+    ],
+    [
+     "Almíbar de naranja para pintar (opcional)",
+     "100 g"
+    ]
+   ],
+   "steps": [
+    "Cubre las naranjas con agua y cuécelas enteras a fuego suave 1,5–2 horas, hasta que la piel esté muy tierna. Escurre y deja enfriar.",
+    "Pártelas, quita las pepitas y tritúralas con la piel hasta hacer un puré fino.",
+    "Bate los huevos con el azúcar hasta que blanqueen; añade el puré de naranja, la almendra, la levadura y la sal.",
+    "Vierte en el molde untado y forrado y hornea a 170–175 °C, 50–60 minutos, hasta que al pinchar salga limpio. Si se dora demasiado, cubre con papel.",
+    "Pinta con almíbar de naranja en caliente si quieres más brillo y humedad. Deja enfriar en el molde."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Naranja",
+    "ratio": "400 g de naranja entera por 250 g de almendra y 6 huevos",
+    "note": "Puré muy fino."
+   },
+   {
+    "use": "Cocción de la naranja",
+    "ratio": "1,5–2 horas a fuego suave",
+    "note": "Hasta que la piel se deshaga con el dedo."
+   },
+   {
+    "use": "Horneado",
+    "ratio": "170–175 °C, 50–60 minutos",
+    "note": "Bizcocho denso y húmedo."
+   }
+  ],
+  "variants": [
+   {
+    "id": "tartas-de-frutos-secos",
+    "name": "Tarta de almendra",
+    "note": "La misma base sin naranja."
+   },
+   {
+    "id": "bizcochos-humedos",
+    "name": "Bizcocho de aceite y cítricos",
+    "note": "Con harina y aceite, más ligero."
+   },
+   {
+    "id": "citricos",
+    "name": "Con naranja amarga o mandarina",
+    "note": "Más amarga o más dulce; ajusta el azúcar."
+   }
+  ],
+  "keys": [
+   "Cuece la naranja hasta que esté muy tierna: la piel cruda amarga y queda dura.",
+   "Tritura muy fino.",
+   "Sin harina: el aire del huevo batido y la almendra hacen la estructura.",
+   "Cubre si se dora antes de estar hecha por dentro.",
+   "Mejor al día siguiente."
+  ],
+  "errors": [
+   {
+    "p": "Demasiado amarga",
+    "fix": "Naranja poco cocida o muy amarga. Cuece más o cambia el agua a mitad de cocción."
+   },
+   {
+    "p": "Se hunde",
+    "fix": "Horno abierto pronto o poco horneada. Hornea hasta que salga limpio."
+   },
+   {
+    "p": "Húmeda y cruda en el centro",
+    "fix": "Puré muy líquido. Escurre bien las naranjas cocidas."
+   }
+  ],
+  "history": "Los bizcochos de naranja entera y almendra sin harina se asocian a la repostería sefardí y a otras cocinas del Mediterráneo con abundancia de cítricos y almendra.",
+  "uses": [
+   "Postre de invierno",
+   "Merienda y café",
+   "Postre sin gluten",
+   "Con crema de yogur o helado"
+  ],
+  "keep": "Tapada a temperatura ambiente, 4–5 días; mejora con los días.",
+  "pro": "Cuece las naranjas en tanda y congela el puré en porciones de 400 g. Porciona la tarta en frío.",
+  "related": [
+   "citricos",
+   "almendra",
+   "tartas-de-frutos-secos",
+   "bizcochos-humedos",
+   "postres-sin-gluten-y-lacteos"
+  ]
+ },
+ {
+  "id": "helados-de-frutos-secos",
+  "name": "Helados de frutos secos",
+  "name_en": "Nut ice creams",
+  "cat": "dulce",
+  "group": "Frío",
+  "aka": [
+   "helado de pistacho",
+   "helado de avellana",
+   "helado de almendra tostada",
+   "helado de nueces",
+   "helado de praliné"
+  ],
+  "summary": "Helados de pistacho, avellana, almendra o nuez hechos con la pasta pura del fruto seco tostado, ajustando la grasa porque el fruto seco ya la aporta.",
+  "what": "Para un helado de fruto seco intenso, lo mejor es una pasta pura de fruto seco tostado y molido muy fino, añadida a la base de crema o de leche. El fruto seco aporta mucha grasa, así que se baja la nata respecto a un helado normal para que no quede pesado ni arenoso. Un tostado bien llevado y una pizca de sal sacan todo el sabor. El equilibrio general está en [[helados-y-sorbetes]] y los sabores infusionados en [[helados-de-autor]].",
+  "base": {
+   "for": "unos 1,2 kg de helado de pistacho o avellana",
+   "items": [
+    [
+     "Leche entera",
+     "650 g"
+    ],
+    [
+     "Nata 35 %",
+     "150 g"
+    ],
+    [
+     "Yemas",
+     "80 g"
+    ],
+    [
+     "Azúcar",
+     "170 g"
+    ],
+    [
+     "Glucosa o dextrosa",
+     "30 g"
+    ],
+    [
+     "Pasta pura de fruto seco tostado",
+     "120–150 g"
+    ],
+    [
+     "Sal",
+     "1 g"
+    ]
+   ],
+   "steps": [
+    "Tuesta el fruto seco a 150–160 °C hasta que huela, enfría y tritura hasta pasta líquida (o usa pasta pura).",
+    "Haz una crema inglesa con la leche, la nata, las yemas, el azúcar y la glucosa, cocida a 82–84 °C.",
+    "Fuera del fuego, añade la pasta de fruto seco y la sal y tritura con túrmix hasta que esté liso.",
+    "Enfría rápido sobre hielo y madura en frío 6–12 horas.",
+    "Mantécalo y guarda a −18 °C."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Pasta de fruto seco",
+    "ratio": "100–150 g por kilo de base",
+    "note": "Más, y el helado se vuelve graso y duro."
+   },
+   {
+    "use": "Grasa total",
+    "ratio": "Baja la nata a la mitad de un helado de crema normal",
+    "note": "El fruto seco ya aporta grasa."
+   },
+   {
+    "use": "Tostado",
+    "ratio": "150–160 °C, 8–15 minutos según el fruto seco",
+    "note": "El pistacho, tostado suave para no perder el verde."
+   },
+   {
+    "use": "Versión sin lácteos",
+    "ratio": "Leche de almendra y 150 g de pasta de almendra por kilo",
+    "note": "Con 3–4 g de goma garrofín o xantana."
+   }
+  ],
+  "variants": [
+   {
+    "id": "turrones-y-pralines",
+    "name": "Helado de praliné o turrón",
+    "note": "Con praliné en lugar de pasta pura; menos azúcar añadido."
+   },
+   {
+    "id": "menjar-blanc",
+    "name": "Helado de leche de almendra",
+    "note": "Base sin lácteos de almendra."
+   },
+   {
+    "id": "frutos-secos",
+    "name": "Frutos secos",
+    "note": "Variedades y cómo tostar cada uno."
+   }
+  ],
+  "keys": [
+   "Pasta pura y muy fina: los trozos dan textura arenosa.",
+   "Baja la nata: el fruto seco ya es grasa.",
+   "Tostado al punto: es el sabor.",
+   "Una pizca de sal realza el fruto seco.",
+   "Avisa del fruto seco en carta: es un alérgeno frecuente."
+  ],
+  "errors": [
+   {
+    "p": "Textura arenosa",
+    "fix": "Pasta mal molida o demasiada. Tritura más fino y baja la dosis."
+   },
+   {
+    "p": "Helado graso y duro",
+    "fix": "Demasiada grasa total. Reduce la nata."
+   },
+   {
+    "p": "Sabor plano",
+    "fix": "Fruto seco poco tostado o sin sal. Tuesta más y añade sal."
+   }
+  ],
+  "history": "Los helados de avellana, pistacho y almendra son clásicos de la heladería italiana y mediterránea; en España el helado de turrón es tradicional.",
+  "uses": [
+   "Helado de carta",
+   "Acompañar chocolate o fruta asada",
+   "Postres helados montados",
+   "Petit four helado"
+  ],
+  "keep": "Tapado y a −18 °C, 1–2 semanas. Sacar a −12 °C para servir.",
+  "pro": "Haz la pasta de fruto seco en tanda y guárdala en bote cerrado en frío; añádela a la base el día de mantecar.",
+  "related": [
+   "helados-y-sorbetes",
+   "helados-de-autor",
+   "frutos-secos",
+   "almendra",
+   "turrones-y-pralines",
+   "crema-inglesa"
+  ]
+ },
+ {
+  "id": "frutas-maceradas",
+  "name": "Frutas maceradas y ensaladas de fruta",
+  "name_en": "Macerated fruit and fruit salads",
+  "cat": "dulce",
+  "group": "Fruta",
+  "aka": [
+   "macedonia",
+   "fruta macerada",
+   "ensalada de fruta",
+   "fresas maceradas",
+   "fruta con azucar",
+   "fruta con hierbas"
+  ],
+  "summary": "Fruta cruda cortada y dejada unos minutos con azúcar, cítrico, hierbas o un vino: suelta su jugo, se perfuma y se convierte en un postre fresco.",
+  "what": "Macerar es dejar la fruta cortada con un poco de azúcar y ácido: el azúcar saca el jugo por ósmosis, la fruta se ablanda un poco y se forma un almíbar natural con todo su sabor. Con hierbas (menta, albahaca, hierbaluisa, tomillo limonero), especias o un vino dulce se vuelve un postre en sí mismo, o la base fresca de otro. Una ensalada de fruta bien hecha combina frutas de la misma estación, cortes cuidados y un aliño que las una.",
+  "method": [
+   "Elige fruta madura y de temporada; corta cada una en piezas parecidas y quita pepitas y fibras.",
+   "Espolvorea con azúcar (5–10 % del peso) y unas gotas de cítrico; mezcla con cuidado.",
+   "Añade la hierba rota a mano o la especia y, si quieres, un chorrito de vino dulce o licor.",
+   "Deja macerar en frío 15–30 minutos, no más de 2–3 horas.",
+   "Sirve con su jugo, fría, y algo cremoso o crujiente al lado (yogur, helado, galleta)."
+  ],
+  "ratios": [
+   {
+    "use": "Azúcar",
+    "ratio": "5–10 % sobre el peso de la fruta",
+    "note": "Menos si la fruta está muy madura."
+   },
+   {
+    "use": "Tiempo",
+    "ratio": "15–30 minutos en frío",
+    "note": "Más de 3 horas, la fruta se ablanda y pierde color."
+   },
+   {
+    "use": "Hierbas",
+    "ratio": "2–4 g de hojas por cada 500 g de fruta",
+    "note": "Rotas a mano para que no se oxiden."
+   },
+   {
+    "use": "Vino o licor",
+    "ratio": "30–50 ml por cada 500 g de fruta",
+    "note": "Avisa en carta si lleva alcohol."
+   }
+  ],
+  "variants": [
+   {
+    "id": "frutas-en-almibar",
+    "name": "Fruta en almíbar",
+    "note": "La fruta cocida en almíbar; más duradera."
+   },
+   {
+    "id": "coulis-y-geles-de-fruta",
+    "name": "Sopa de fruta",
+    "note": "El jugo de la fruta como sopa fría."
+   },
+   {
+    "id": "postres-de-fruta-por-temporada",
+    "name": "Postres de temporada",
+    "note": "Qué fruta usar en cada estación."
+   }
+  ],
+  "keys": [
+   "Fruta del mismo momento del año: combinan mejor.",
+   "Corte cuidado y regular.",
+   "Macerado corto y en frío.",
+   "Las frutas que se oxidan (manzana, pera, plátano), con cítrico y al final.",
+   "Hierbas rotas a mano, no picadas."
+  ],
+  "errors": [
+   {
+    "p": "Fruta blanda y aguada",
+    "fix": "Macerado largo o mucho azúcar. Acorta el tiempo y la dosis."
+   },
+   {
+    "p": "Fruta oscurecida",
+    "fix": "Oxidación. Añade cítrico y corta las frutas delicadas al final."
+   },
+   {
+    "p": "Sabor plano",
+    "fix": "Falta ácido. Añade cítrico o una fruta ácida."
+   }
+  ],
+  "history": "Las macedonias y la fruta con azúcar o vino son postres caseros de toda Europa; las fresas con vino o con zumo de naranja son tradicionales en muchas casas españolas.",
+  "uses": [
+   "Postre fresco de verano",
+   "Prepostre",
+   "Acompañar cremas, yogures o helados",
+   "Desayuno y brunch"
+  ],
+  "keep": "En frío y tapada, 2–3 horas. No se guarda de un día para otro.",
+  "pro": "Corta la fruta firme antes del servicio y macera por raciones; las frutas delicadas, al pedir.",
+  "related": [
+   "frutas-en-almibar",
+   "coulis-y-geles-de-fruta",
+   "postres-de-fruta-por-temporada",
+   "hierbas-frescas",
+   "frutos-rojos-y-fruta-de-hueso"
+  ]
+ },
+ {
+  "id": "postres-de-algarroba",
+  "name": "Postres de algarroba",
+  "name_en": "Carob desserts",
+  "cat": "dulce",
+  "group": "Dulces de la isla",
+  "aka": [
+   "harina de algarroba",
+   "garrofa",
+   "sirope de algarroba",
+   "bizcocho de algarroba",
+   "helado de algarroba"
+  ],
+  "summary": "Cómo usar la algarroba de la isla en postres: harina tostada para bizcochos y galletas, sirope para salsas y helados, y su sabor dulce parecido al cacao.",
+  "what": "La [[higos-y-algarroba|algarroba]] es el fruto del algarrobo, muy presente en el campo de la isla. Seca y molida da una harina dulce, tostada y con un sabor que recuerda al cacao y al caramelo, sin cafeína. Cocida en agua, sus vainas dan un sirope oscuro. En postres sustituye parte de la harina o del cacao, endulza por sí misma y combina muy bien con almendra, higo, naranja y leche. Hay que reducir el azúcar, porque ya es muy dulce.",
+  "base": {
+   "for": "un bizcocho de algarroba de 24 cm",
+   "items": [
+    [
+     "Harina floja",
+     "180 g"
+    ],
+    [
+     "Harina de algarroba tostada",
+     "70 g"
+    ],
+    [
+     "Levadura química",
+     "10 g"
+    ],
+    [
+     "Huevos",
+     "4"
+    ],
+    [
+     "Azúcar",
+     "150 g"
+    ],
+    [
+     "Aceite de oliva suave",
+     "150 g"
+    ],
+    [
+     "Leche o yogur",
+     "150 g"
+    ],
+    [
+     "Ralladura de naranja",
+     "1"
+    ],
+    [
+     "Sal",
+     "2 g"
+    ]
+   ],
+   "steps": [
+    "Tamiza las harinas con la levadura y la sal.",
+    "Bate los huevos con el azúcar hasta que blanqueen; añade el aceite en hilo, la leche y la ralladura.",
+    "Incorpora las harinas sin batir de más.",
+    "Hornea en molde forrado a 170 °C, 40–45 minutos.",
+    "Deja enfriar y sirve con crema de yogur, helado de leche o higos."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "En bizcochos y galletas",
+    "ratio": "Sustituye un 20–30 % de la harina por harina de algarroba",
+    "note": "Más, y la masa queda densa."
+   },
+   {
+    "use": "En helado",
+    "ratio": "60–80 g de harina de algarroba por kilo de base, con un 10–15 % menos de azúcar",
+    "note": "Infusionada en la leche caliente y colada."
+   },
+   {
+    "use": "Sirope casero",
+    "ratio": "500 g de vainas troceadas y sin semillas en 1,5 l de agua, 1–2 horas; colar y reducir",
+    "note": "Hasta textura de miel."
+   },
+   {
+    "use": "Sustituir cacao",
+    "ratio": "El mismo peso de harina de algarroba, menos azúcar",
+    "note": "Sabor más dulce y menos amargo."
+   }
+  ],
+  "variants": [
+   {
+    "id": "higos-y-algarroba",
+    "name": "Higo y algarroba",
+    "note": "El producto y sus usos salados."
+   },
+   {
+    "id": "condimentos-secos-de-la-isla",
+    "name": "Algarroba en polvo",
+    "note": "Cómo tostarla y molerla en casa."
+   },
+   {
+    "id": "postres-de-chocolate",
+    "name": "Postres de chocolate",
+    "note": "La algarroba combina bien con chocolate negro."
+   }
+  ],
+  "keys": [
+   "Baja el azúcar: la algarroba endulza.",
+   "Harina de algarroba tostada: más sabor que la cruda.",
+   "No pases del 30 % en masas: no tiene gluten.",
+   "Sus mejores parejas: almendra, higo, naranja y leche.",
+   "Es un producto de la isla: cuéntalo."
+  ],
+  "errors": [
+   {
+    "p": "Postre empalagoso",
+    "fix": "Azúcar sin reducir. Quita un 10–20 % del azúcar."
+   },
+   {
+    "p": "Masa densa y pesada",
+    "fix": "Demasiada harina de algarroba. Limítala al 20–30 %."
+   },
+   {
+    "p": "Sabor a crudo",
+    "fix": "Harina sin tostar. Tuéstala suave antes de usarla."
+   }
+  ],
+  "history": "El algarrobo es un árbol muy extendido en el campo de las Baleares y del Mediterráneo. Su fruto se usó durante mucho tiempo como alimento de animales y en épocas de escasez; hoy se recupera en repostería por su sabor.",
+  "uses": [
+   "Bizcochos y galletas",
+   "Helados y cremas",
+   "Sirope para postres y quesos",
+   "Postre de la isla"
+  ],
+  "keep": "Harina de algarroba en bote cerrado, seco y oscuro, varios meses. Sirope en frío, 1 mes. Bizcocho tapado, 3–4 días.",
+  "pro": "Ten harina de algarroba tostada y sirope en la despensa de postres. Un hilo de sirope sobre queso fresco o helado de leche es un postre de la isla.",
+  "related": [
+   "higos-y-algarroba",
+   "condimentos-secos-de-la-isla",
+   "cocina-ibicenca",
+   "bizcochos-humedos",
+   "helados-de-autor",
+   "producto-de-la-isla"
+  ]
+ },
+ {
+  "id": "milhojas-y-palmeras",
+  "name": "Milhojas, palmeras y hojaldres dulces",
+  "name_en": "Mille-feuille, palmiers and sweet puff pastries",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "milhojas",
+   "palmeras",
+   "canas de crema",
+   "cañas de crema",
+   "hojaldre dulce",
+   "mil hojas"
+  ],
+  "summary": "Los dulces de hojaldre más clásicos: milhojas de crema con láminas caramelizadas, palmeras de azúcar y cañas rellenas.",
+  "what": "Todos parten del [[hojaldre]] horneado de forma que quede muy crujiente. Para el milhojas, las láminas se hornean prensadas entre bandejas para que no suban demasiado y se caramelizan con azúcar glas; se montan con [[crema-pastelera]] o diplomática en el último momento. Las palmeras se hacen doblando el hojaldre sobre azúcar hacia el centro y cortando en lonchas: el azúcar se carameliza en el horno. Las cañas se forman enrollando tiras en moldes cónicos y se rellenan de crema o nata.",
+  "base": {
+   "for": "8 milhojas individuales",
+   "items": [
+    [
+     "Hojaldre",
+     "500 g"
+    ],
+    [
+     "Azúcar glas",
+     "60 g"
+    ],
+    [
+     "Crema pastelera o diplomática fría",
+     "600 g"
+    ],
+    [
+     "Azúcar glas para terminar",
+     "c. s."
+    ]
+   ],
+   "steps": [
+    "Estira el hojaldre a 2–3 mm, pínchalo bien y déjalo reposar en frío 30 minutos.",
+    "Hornea entre dos bandejas con papel, con peso encima, a 200 °C 15 minutos; quita la bandeja de arriba y sigue a 180 °C hasta que esté dorado y seco.",
+    "Espolvorea con azúcar glas y carameliza 2–3 minutos en horno a 220 °C o con soplete, vigilando.",
+    "Enfría y corta en rectángulos iguales con cuchillo de sierra.",
+    "Monta al pedir: tres láminas y dos capas de crema en manga. Termina con azúcar glas."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Láminas de milhojas",
+    "ratio": "Hojaldre a 2–3 mm, prensado: 200 °C y luego 180 °C",
+    "note": "Muy dorado y seco."
+   },
+   {
+    "use": "Palmeras",
+    "ratio": "500 g de hojaldre y 150 g de azúcar",
+    "note": "Lonchas de 1 cm, 200 °C, 10–12 minutos y girar 4–5 minutos más."
+   },
+   {
+    "use": "Relleno",
+    "ratio": "70–80 g de crema por milhojas",
+    "note": "Crema firme, de 80–90 g de almidón por litro."
+   }
+  ],
+  "variants": [
+   {
+    "id": "hojaldre",
+    "name": "Hojaldre",
+    "note": "La masa base."
+   },
+   {
+    "id": "tartas-de-fruta",
+    "name": "Tarta fina",
+    "note": "Hojaldre fino con fruta."
+   },
+   {
+    "id": "crema-pastelera",
+    "name": "Crema diplomática",
+    "note": "Pastelera aligerada con nata, para rellenos."
+   }
+  ],
+  "keys": [
+   "Hojaldre bien horneado y seco: el pálido se ablanda con la crema.",
+   "Prensado entre bandejas para láminas finas y regulares.",
+   "Caramelizar en el último paso, vigilando: se quema en segundos.",
+   "Montar al momento.",
+   "Cuchillo de sierra para cortar sin aplastar."
+  ],
+  "errors": [
+   {
+    "p": "Milhojas blando",
+    "fix": "Montado con antelación o hojaldre poco horneado. Hornea más y monta al pedir."
+   },
+   {
+    "p": "Palmeras quemadas",
+    "fix": "Azúcar caramelizado de más. Gira a tiempo y vigila los últimos minutos."
+   },
+   {
+    "p": "Se aplasta al cortar",
+    "fix": "Cuchillo sin sierra o lámina húmeda. Corta las láminas antes de montar."
+   }
+  ],
+  "history": "El milhojas y las palmeras son dulces clásicos de la pastelería francesa que forman parte de la bollería y pastelería de obrador en España desde hace generaciones.",
+  "uses": [
+   "Postre de carta",
+   "Petit four en pequeño",
+   "Desayuno y merienda",
+   "Milhojas salado con verdura o queso"
+  ],
+  "keep": "Láminas horneadas, en lata seca 2–3 días. Palmeras, en lata 1 semana. Montado, al momento.",
+  "pro": "Ten las láminas cortadas en lata y la crema en manga en frío: el milhojas se monta en un minuto.",
+  "related": [
+   "hojaldre",
+   "crema-pastelera",
+   "caramelo",
+   "masas-laminadas-fermentadas",
+   "petit-fours"
+  ]
+ },
+ {
+  "id": "caramelos-y-toffees",
+  "name": "Caramelos y toffees",
+  "name_en": "Sweets and toffees",
+  "cat": "dulce",
+  "group": "Espumas y azúcar",
+  "aka": [
+   "caramelos",
+   "toffee",
+   "caramelos de nata",
+   "caramelos de leche",
+   "caramelos duros",
+   "fudge"
+  ],
+  "summary": "Caramelos para cortar o moldear: duros y transparentes, blandos de nata o leche, toffees de mantequilla y fudge, según el punto al que se cuece el azúcar.",
+  "what": "Un caramelo es un almíbar cocido hasta un punto concreto y enfriado: cuanto más alta la temperatura, menos agua queda y más duro resulta. A 118–122 °C con nata y mantequilla salen caramelos blandos que se cortan; a unos 145–150 °C con mantequilla y azúcar moreno, el toffee crujiente; a 150–155 °C, el caramelo duro y transparente que se moldea. La glucosa evita que el azúcar cristalice. Los puntos del azúcar están en [[caramelo]].",
+  "base": {
+   "for": "unos 60 caramelos blandos de nata",
+   "items": [
+    [
+     "Nata 35 %",
+     "250 g"
+    ],
+    [
+     "Azúcar",
+     "250 g"
+    ],
+    [
+     "Glucosa",
+     "100 g"
+    ],
+    [
+     "Mantequilla",
+     "50 g"
+    ],
+    [
+     "Sal en escamas",
+     "3 g"
+    ],
+    [
+     "Vainilla",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Pon la nata, el azúcar y la glucosa en un cazo de fondo grueso y lleva a hervor removiendo.",
+    "Cuece a fuego medio, removiendo con espátula, hasta 118–122 °C (más alto, más firme).",
+    "Fuera del fuego, añade la mantequilla, la sal y la vainilla.",
+    "Vierte en un marco sobre papel untado y deja enfriar a temperatura ambiente 4–6 horas.",
+    "Corta en dados con cuchillo untado y envuelve cada uno en papel."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Caramelo blando de nata",
+    "ratio": "Nata y azúcar a partes iguales, 20 % de glucosa",
+    "note": "Cocer a 118–122 °C."
+   },
+   {
+    "use": "Fudge",
+    "ratio": "Azúcar, leche o nata y mantequilla a 112–116 °C, batido al enfriar",
+    "note": "Textura granulosa y tierna."
+   },
+   {
+    "use": "Toffee crujiente",
+    "ratio": "200 g de mantequilla y 200 g de azúcar moreno a 145–150 °C",
+    "note": "Se rompe en trozos."
+   },
+   {
+    "use": "Caramelo duro",
+    "ratio": "300 g de azúcar, 100 g de glucosa y 100 g de agua a 150–155 °C",
+    "note": "Se moldea y queda transparente."
+   }
+  ],
+  "variants": [
+   {
+    "id": "caramelo",
+    "name": "Puntos del azúcar",
+    "note": "Qué pasa a cada temperatura."
+   },
+   {
+    "id": "salsas-dulces",
+    "name": "Salsa toffee",
+    "note": "La versión fluida."
+   },
+   {
+    "id": "turrones-y-pralines",
+    "name": "Crocantes y turrones",
+    "note": "Azúcar con frutos secos."
+   }
+  ],
+  "keys": [
+   "Termómetro: dos grados cambian la textura.",
+   "Cazo de fondo grueso y remover las mezclas con lácteo para que no se peguen.",
+   "Glucosa contra la cristalización.",
+   "Envuelve enseguida: el azúcar absorbe humedad.",
+   "Cuidado con el azúcar caliente: quema mucho."
+  ],
+  "errors": [
+   {
+    "p": "Caramelos que se pegan y se deforman",
+    "fix": "Poco cocidos o humedad. Sube 2 °C y envuelve en papel."
+   },
+   {
+    "p": "Granulosos",
+    "fix": "Cristalización. Añade glucosa y no remuevas el almíbar sin lácteo."
+   },
+   {
+    "p": "Sabor a quemado",
+    "fix": "Fuego alto con lácteos. Fuego medio y remover."
+   }
+  ],
+  "history": "Los caramelos de nata y leche y los toffees son dulces de confitería tradicionales en toda Europa; en España los caramelos de leche y de café son clásicos de pastelería.",
+  "uses": [
+   "Petit four",
+   "Regalo de la casa",
+   "Crujiente de toffee para postres",
+   "Caramelo duro para decoraciones"
+  ],
+  "keep": "Envueltos en papel, en caja cerrada y seca, 2–3 semanas.",
+  "pro": "Haz los caramelos en tanda, córtalos y envuélvelos; guárdalos en caja con gel de sílice.",
+  "related": [
+   "caramelo",
+   "salsas-dulces",
+   "turrones-y-pralines",
+   "petit-fours",
+   "decoraciones-de-azucar-y-chocolate"
+  ]
+ },
+ {
+  "id": "postres-de-miel",
+  "name": "Postres de miel",
+  "name_en": "Honey desserts",
+  "cat": "dulce",
+  "group": "Cremas",
+  "aka": [
+   "miel",
+   "flan de miel",
+   "helado de miel",
+   "miel caramelizada",
+   "postres con miel"
+  ],
+  "summary": "Cómo usar la miel en postres: como endulzante con sabor propio en cremas, helados y masas, caramelizada, o en crudo como acabado.",
+  "what": "La [[miel-y-azucares|miel]] endulza más que el azúcar, tiene sabor propio según la flor y retiene humedad, así que las masas con miel quedan más tiernas y se doran antes. Se usa para sustituir parte del azúcar en cremas, flanes, helados y bizcochos, caramelizada para dar notas tostadas, o en crudo al final sobre queso fresco, yogur o fruta asada. Las mieles de romero, tomillo o azahar, propias del Mediterráneo, dan postres con mucho carácter.",
+  "method": [
+   "Elige la miel por su sabor: suave (azahar, romero) para cremas; intensa (brezo, castaño) para acabados y quesos.",
+   "Para sustituir azúcar, usa unas tres cuartas partes de su peso en miel y reduce algo el líquido de la receta.",
+   "En el horno, baja 10–20 °C la temperatura: la miel se dora antes.",
+   "Para miel caramelizada, cuécela en un cazo hasta que oscurezca y huela a tostado y detén con nata o mantequilla.",
+   "En crudo, añádela al final para conservar su aroma.",
+   "No la sirvas a bebés menores de un año: la miel puede contener esporas peligrosas para ellos."
+  ],
+  "ratios": [
+   {
+    "use": "Sustituir azúcar",
+    "ratio": "75 g de miel por cada 100 g de azúcar",
+    "note": "Reduce un 10–15 % el líquido."
+   },
+   {
+    "use": "Flan de miel",
+    "ratio": "1 l de leche, 8 huevos y 150 g de miel",
+    "note": "Baño maría a 150–160 °C hasta que el centro marque 80–82 °C."
+   },
+   {
+    "use": "Helado de miel",
+    "ratio": "120–150 g de miel por kilo de base, en lugar de parte del azúcar",
+    "note": "Queda más blando: ajusta."
+   },
+   {
+    "use": "Horneado con miel",
+    "ratio": "10–20 °C menos que con azúcar",
+    "note": "Cubre si dora demasiado pronto."
+   }
+  ],
+  "variants": [
+   {
+    "id": "requeson-y-postres-de-queso-fresco",
+    "name": "Mel i mató",
+    "note": "Queso fresco con miel."
+   },
+   {
+    "id": "orelletes-y-bunyols",
+    "name": "Buñuelos con miel",
+    "note": "Masas fritas bañadas en miel."
+   },
+   {
+    "id": "turrones-y-pralines",
+    "name": "Turrón",
+    "note": "Miel cocida con almendra."
+   }
+  ],
+  "keys": [
+   "La miel endulza más y dora antes.",
+   "Elige la miel por su sabor.",
+   "En crudo y al final para conservar el aroma.",
+   "Reduce el líquido al sustituir azúcar.",
+   "Nunca para bebés menores de un año."
+  ],
+  "errors": [
+   {
+    "p": "Postre que se dora demasiado",
+    "fix": "Horno alto. Baja la temperatura 10–20 °C."
+   },
+   {
+    "p": "Sabor a miel quemada",
+    "fix": "Miel caramelizada de más. Detén antes, en cuanto huela a tostado."
+   },
+   {
+    "p": "Masa demasiado húmeda",
+    "fix": "Sustitución sin ajustar el líquido. Quita un poco de líquido."
+   }
+  ],
+  "history": "La miel fue el principal endulzante del Mediterráneo antes de que se extendiera el azúcar, y muchos dulces tradicionales españoles, como turrones o buñuelos, la conservan.",
+  "uses": [
+   "Flanes, cremas y helados",
+   "Queso fresco con miel",
+   "Buñuelos y masas fritas",
+   "Fruta asada"
+  ],
+  "keep": "La miel, cerrada y a temperatura ambiente, muchos meses; si cristaliza, se funde al baño maría suave.",
+  "pro": "Ten dos o tres mieles distintas en la partida de postres y elige por plato. Usa la miel cristalizada fundida en masas y helados.",
+  "related": [
+   "miel-y-azucares",
+   "requeson-y-postres-de-queso-fresco",
+   "orelletes-y-bunyols",
+   "turrones-y-pralines",
+   "fruta-asada",
+   "crema-catalana-y-flan"
+  ]
  }
 ]

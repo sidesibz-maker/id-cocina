@@ -16557,5 +16557,1607 @@
    "almendra",
    "pollo-y-aves"
   ]
+ },
+ {
+  "id": "zarzuela",
+  "name": "Zarzuela de pescado y marisco",
+  "name_en": "Zarzuela fish and seafood stew",
+  "cat": "tecnicas",
+  "group": "Cocina catalana",
+  "technique": "guiso",
+  "aka": [
+   "zarzuela",
+   "sarsuela",
+   "zarzuela de marisco",
+   "cazuela de pescado y marisco"
+  ],
+  "summary": "Cazuela de varios pescados y mariscos en una salsa de sofrito, brandy, vino y fumet, ligada con picada; cada pieza entra a su tiempo.",
+  "what": "La zarzuela es una cazuela catalana de pescado y marisco variados: rape, merluza, calamar o sepia, mejillones, almejas, gambas o cigalas. Se construye sobre un [[sofrito]] lento de cebolla y tomate, un flambeado con brandy, vino blanco y [[fumet]], y se liga al final con una [[picada]] de frutos secos, ajo, perejil y pan frito. El nombre recuerda una mezcla de muchos elementos.\n\nLa clave está en el orden: cada pescado y cada marisco entra en el momento justo para que todo llegue a punto a la vez. Cada casa elige sus pescados.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Rape y merluza en trozos",
+     "300 g y 300 g"
+    ],
+    [
+     "Calamar o sepia en anillas",
+     "200 g"
+    ],
+    [
+     "Mejillones y almejas",
+     "250 g y 250 g"
+    ],
+    [
+     "Gambas o cigalas",
+     "8"
+    ],
+    [
+     "Cebolla y tomate rallado",
+     "1 y 300 g"
+    ],
+    [
+     "Brandy y vino blanco",
+     "40 ml y 100 ml"
+    ],
+    [
+     "Fumet",
+     "500 ml"
+    ],
+    [
+     "Picada: almendra, avellana, ajo, perejil, pan frito y azafrán",
+     "30 g, 1 diente, 1 puñado, 20 g y 0,1 g"
+    ],
+    [
+     "Aceite de oliva y harina para enharinar",
+     "60 ml y 30 g"
+    ]
+   ],
+   "steps": [
+    "Marca las gambas unos segundos y resérvalas; enharina y marca los trozos de pescado y resérvalos.",
+    "En el mismo aceite, pocha la cebolla y añade el tomate hasta concentrar; incorpora el calamar 5 minutos.",
+    "Aparta, flambea con el brandy, añade el vino y el fumet y cuece 10 minutos.",
+    "Añade la picada desleída, los mejillones y las almejas; cuando empiecen a abrirse, el pescado y, al final, las gambas.",
+    "Cuece 3–5 minutos moviendo la cazuela, hasta que los moluscos se abran y el pescado esté jugoso; sirve enseguida."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Pescado en la salsa",
+    "ratio": "3–5 minutos",
+    "note": "Trozos de 4 cm."
+   },
+   {
+    "use": "Calamar o sepia",
+    "ratio": "5 minutos o 30 si se quiere tierno",
+    "note": "Muy poco o mucho."
+   },
+   {
+    "use": "Picada",
+    "ratio": "50–60 g por litro",
+    "note": "Liga."
+   },
+   {
+    "use": "Ración",
+    "ratio": "350–400 g de pescado y marisco",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "caldo-de-roca",
+    "name": "Suquet",
+    "note": "El guiso de pescado de la costa catalana."
+   },
+   {
+    "id": "picada",
+    "name": "Picada",
+    "note": "La ligazón."
+   },
+   {
+    "id": "mejillon-y-almeja",
+    "name": "Moluscos",
+    "note": "Depurados y abiertos al momento."
+   },
+   {
+    "id": "bullabesa",
+    "name": "Bullabesa",
+    "note": "Prima provenzal."
+   }
+  ],
+  "keys": [
+   "Cada pieza entra a su tiempo.",
+   "Moluscos vivos y depurados.",
+   "Flambear fuera del fuego.",
+   "Picada al final y mover la cazuela.",
+   "Cada casa elige sus pescados."
+  ],
+  "errors": [
+   {
+    "p": "Pescado pasado",
+    "fix": "Entró pronto. Al final, solo 3–5 minutos."
+   },
+   {
+    "p": "Calamar duro",
+    "fix": "Tiempo intermedio. Muy poco o mucho."
+   },
+   {
+    "p": "Salsa aguada",
+    "fix": "Poca picada o reducción. Reduce y liga."
+   }
+  ],
+  "history": "La zarzuela es un plato de la cocina catalana, popular en las casas de comidas de la costa desde el siglo XX.",
+  "uses": [
+   "Cazuelas para compartir",
+   "Menús de pescado",
+   "Platos de fiesta"
+  ],
+  "keep": "Al momento. La base de sofrito y fumet, 2 días en frío.",
+  "pro": "Base preparada; pescado y marisco por cazuela al pedido.",
+  "related": [
+   "caldo-de-roca",
+   "picada",
+   "mejillon-y-almeja",
+   "bullabesa",
+   "sofrito",
+   "raya-y-pescados-de-fondo"
+  ]
+ },
+ {
+  "id": "fideua-negra-y-arroz-negro",
+  "name": "Arroz negro y fideuá negra",
+  "name_en": "Black rice and black fideuá",
+  "cat": "tecnicas",
+  "group": "Cocina levantina",
+  "technique": "guiso",
+  "aka": [
+   "arroz negro",
+   "arròs negre",
+   "fideuá negra",
+   "arroz con tinta",
+   "fideos negros"
+  ],
+  "summary": "Arroz o fideo seco cocido con sepia o calamar y su tinta en un fumet intenso, servido con alioli.",
+  "what": "El arroz negro se hace como un arroz seco de paella, pero con sepia o calamar en dados y su tinta, que tiñe el grano de negro y le da un sabor marino profundo. La fideuá negra sigue la misma idea con fideo fino tostado. Los dos se sirven con [[alioli]].\n\nLa técnica del arroz seco está en [[arroces]] y la de los fideos en [[pasta-seca]]; lo propio aquí es el sofrito con el cefalópodo y la tinta desleída en el caldo. Cada casa decide si lleva ñora, tomate o pimiento.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Sepia o calamar limpio en dados",
+     "500 g"
+    ],
+    [
+     "Tinta (de las bolsas o en sobres)",
+     "8–10 g"
+    ],
+    [
+     "Ajo, tomate rallado y ñora (opcional)",
+     "3 dientes, 150 g y 1"
+    ],
+    [
+     "Arroz bomba (o fideo fino tostado)",
+     "320 g"
+    ],
+    [
+     "Fumet intenso",
+     "1–1,1 l (800 ml para fideo)"
+    ],
+    [
+     "Aceite de oliva",
+     "80 ml"
+    ],
+    [
+     "Alioli",
+     "150 g"
+    ]
+   ],
+   "steps": [
+    "Saltea la sepia en el aceite hasta que suelte el agua y se dore.",
+    "Añade el ajo y la ñora, luego el tomate, y sofríe hasta que el tomate se concentre.",
+    "Incorpora el arroz y nácaralo; moja con el fumet caliente en el que habrás desleído la tinta.",
+    "Cuece a fuego fuerte 10 minutos y suave 7–8 más, sin remover; deja que se forme un poco de socarrat.",
+    "Reposa 3 minutos y sirve con alioli."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Arroz seco",
+    "ratio": "1 parte por 3–3,5 de fumet",
+    "note": "Bomba."
+   },
+   {
+    "use": "Tinta",
+    "ratio": "8–10 g por 4 raciones",
+    "note": "Desleída en el caldo."
+   },
+   {
+    "use": "Fideuá negra",
+    "ratio": "1 parte de fideo por 2–2,5 de fumet",
+    "note": "Fideo tostado."
+   },
+   {
+    "use": "Cocción",
+    "ratio": "17–18 minutos",
+    "note": "Más reposo."
+   }
+  ],
+  "variants": [
+   {
+    "id": "arroces",
+    "name": "Arroces secos",
+    "note": "Punto y socarrat."
+   },
+   {
+    "id": "pasta-seca",
+    "name": "Fideuá",
+    "note": "Fideo tostado."
+   },
+   {
+    "id": "cefalopodos",
+    "name": "Sepia y calamar",
+    "note": "Limpieza y tinta."
+   },
+   {
+    "id": "alioli",
+    "name": "Alioli",
+    "note": "El acompañante."
+   }
+  ],
+  "keys": [
+   "Sofreír la sepia hasta que se dore.",
+   "Tinta desleída en el caldo, no en seco.",
+   "Fumet intenso.",
+   "No remover después de mojar.",
+   "Alioli siempre."
+  ],
+  "errors": [
+   {
+    "p": "Color grisáceo",
+    "fix": "Poca tinta. Añade más."
+   },
+   {
+    "p": "Arroz pasado",
+    "fix": "Mucho caldo o variedad delicada. Ajusta."
+   },
+   {
+    "p": "Sepia dura",
+    "fix": "Poco sofrito. Dórala bien antes."
+   }
+  ],
+  "history": "El arroz negro es un arroz tradicional de la costa valenciana y catalana; la fideuá negra sigue el mismo modelo con fideos.",
+  "uses": [
+   "Arroces para compartir",
+   "Menús de cocina mediterránea"
+  ],
+  "keep": "Al momento. La base de sepia y sofrito, 2 días en frío.",
+  "pro": "Base sofrita preparada; arroz al pedido.",
+  "related": [
+   "arroces",
+   "pasta-seca",
+   "cefalopodos",
+   "alioli",
+   "fumet",
+   "arroz-por-variedades"
+  ]
+ },
+ {
+  "id": "pescado-a-la-espalda",
+  "name": "Pescado a la espalda",
+  "name_en": "Butterflied fish with garlic oil",
+  "cat": "tecnicas",
+  "group": "Clásicos españoles",
+  "technique": "plancha",
+  "aka": [
+   "pescado a la espalda",
+   "besugo a la espalda",
+   "dorada a la espalda",
+   "a la bilbaína",
+   "refrito de ajos"
+  ],
+  "summary": "Pescado entero abierto en libro, hecho por la piel en plancha, brasa u horno, y regado con un refrito de ajo, guindilla y vinagre.",
+  "what": "Hacer un pescado a la espalda es abrirlo en libro, con la espina central (o sin ella), para que quede plano y se haga deprisa y por igual, con la piel tostada y la carne jugosa. Se cocina en plancha, brasa u horno, casi todo el tiempo por la piel, y se termina con un refrito: ajo laminado y guindilla dorados en aceite, desglasados con un chorro de vinagre, que se vierte caliente por encima.\n\nFunciona con dorada, lubina, besugo, rodaballo pequeño o pescados de roca de ración. Ver también [[pescado-entero]] y [[dorada-y-lubina]].",
+  "base": {
+   "for": "2 raciones",
+   "items": [
+    [
+     "Pescado entero de 800 g–1 kg, escamado y abierto en libro",
+     "1"
+    ],
+    [
+     "Ajo laminado",
+     "4 dientes"
+    ],
+    [
+     "Guindilla",
+     "1"
+    ],
+    [
+     "Aceite de oliva",
+     "80 ml"
+    ],
+    [
+     "Vinagre de vino o de sidra",
+     "15–20 ml"
+    ],
+    [
+     "Perejil y sal",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Abre el pescado por el vientre (o por el lomo), sin separar las mitades; retira la espina si quieres y seca muy bien.",
+    "Sala y cocina por la piel en plancha o brasa fuerte, o en horno a 220 °C, hasta que la carne esté casi hecha; un toque por la carne al final si hace falta.",
+    "Mientras, dora el ajo y la guindilla en el aceite a fuego medio.",
+    "Aparta, añade el vinagre con cuidado (salpica) y vuelve a calentar un momento.",
+    "Pon el pescado en la fuente, riega con el refrito caliente y termina con perejil."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Pieza de 1 kg en plancha",
+    "ratio": "8–10 minutos por la piel",
+    "note": "Carne jugosa."
+   },
+   {
+    "use": "Horno",
+    "ratio": "220 °C, 12–15 minutos",
+    "note": "Abierto y plano."
+   },
+   {
+    "use": "Refrito",
+    "ratio": "80 ml de aceite, 4 ajos y 15–20 ml de vinagre",
+    "note": "Por pieza."
+   },
+   {
+    "use": "Punto",
+    "ratio": "50 °C junto a la espina",
+    "note": "Ver aviso de anisakis."
+   }
+  ],
+  "variants": [
+   {
+    "id": "pescado-entero",
+    "name": "Pescado entero",
+    "note": "Limpieza y presentación."
+   },
+   {
+    "id": "dorada-y-lubina",
+    "name": "Dorada y lubina",
+    "note": "Las más habituales."
+   },
+   {
+    "id": "plancha-y-sarten",
+    "name": "Plancha",
+    "note": "Por la piel."
+   },
+   {
+    "id": "fuego-y-brasa",
+    "name": "Brasa",
+    "note": "En parrilla de pescado."
+   }
+  ],
+  "keys": [
+   "Abierto en libro para que se haga plano y parejo.",
+   "Casi todo por la piel.",
+   "Refrito caliente al final.",
+   "Vinagre con cuidado: salpica.",
+   "Pescado que queda por debajo de 60 °C en el centro: congelado antes (-20 °C al menos 24 horas en toda la pieza) o ya tratado, por el anisakis."
+  ],
+  "errors": [
+   {
+    "p": "Piel pegada",
+    "fix": "Plancha fría o pescado húmedo. Seca y calienta bien."
+   },
+   {
+    "p": "Ajo amargo",
+    "fix": "Ajo quemado. Fuego medio y retira en dorado."
+   },
+   {
+    "p": "Carne seca",
+    "fix": "Pasado. Saca a 50 °C junto a la espina."
+   }
+  ],
+  "history": "El pescado a la espalda con refrito de ajos es una preparación muy extendida en la cocina española, sobre todo en el norte y en las casas de comidas de la costa.",
+  "uses": [
+   "Pescado para compartir",
+   "Brasa y plancha",
+   "Menús de producto"
+  ],
+  "keep": "Al momento. El pescado abierto, el mismo día en frío.",
+  "pro": "Pescados abiertos y secos en bandeja; refrito por pieza al pedido.",
+  "related": [
+   "pescado-entero",
+   "dorada-y-lubina",
+   "plancha-y-sarten",
+   "fuego-y-brasa",
+   "fileteado-de-pescado",
+   "cebolla-y-ajo"
+  ]
+ },
+ {
+  "id": "salpicon-y-cocteles-de-marisco",
+  "name": "Salpicón y cócteles de marisco",
+  "name_en": "Seafood salpicón and cocktails",
+  "cat": "tecnicas",
+  "group": "Clásicos españoles",
+  "aka": [
+   "salpicón de marisco",
+   "cóctel de marisco",
+   "cóctel de gambas",
+   "salsa rosa",
+   "ensalada de marisco"
+  ],
+  "summary": "Marisco cocido y frío con verduras picadas y vinagreta (salpicón) o con salsa rosa (cóctel): platos fríos que dependen del punto del marisco.",
+  "what": "El salpicón es una ensalada fría de marisco cocido (langostino, mejillón, pulpo, cangrejo) con cebolla, pimientos y tomate picados muy finos y una vinagreta. El cóctel de marisco presenta langostinos o gambas cocidos con hojas y una salsa rosa, una mayonesa con tomate y un toque de licor y cítrico.\n\nSon platos sencillos que dependen de dos cosas: el punto del marisco ([[coccion-de-marisco]]), cocido lo justo y cortado en agua con hielo, y el frío: todo se monta en frío y se sirve en el día.",
+  "base": {
+   "for": "4 raciones de salpicón",
+   "items": [
+    [
+     "Langostinos cocidos y pelados",
+     "300 g"
+    ],
+    [
+     "Mejillones abiertos al vapor y sin concha",
+     "200 g"
+    ],
+    [
+     "Pulpo cocido (opcional)",
+     "200 g"
+    ],
+    [
+     "Cebolla, pimiento rojo y verde, tomate en brunoise",
+     "½, ½, ½ y 1"
+    ],
+    [
+     "Aceite de oliva y vinagre de vino",
+     "90 ml y 30 ml"
+    ],
+    [
+     "Perejil y sal",
+     "al gusto"
+    ],
+    [
+     "Salsa rosa: mayonesa, tomate concentrado, brandy, zumo de naranja",
+     "200 g, 30 g, 10 ml y 20 ml"
+    ]
+   ],
+   "steps": [
+    "Cuece el marisco en agua con sal, enfríalo enseguida en agua con hielo y pélalo; trocéalo.",
+    "Pica las verduras en brunoise fina y escúrrelas.",
+    "Emulsiona aceite, vinagre y sal y mezcla con verduras y marisco.",
+    "Reposa 30 minutos en frío y sirve con perejil.",
+    "Cóctel: mezcla los ingredientes de la salsa rosa y nápa los langostinos sobre hojas frescas."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Vinagreta",
+    "ratio": "3 partes de aceite por 1 de vinagre",
+    "note": ""
+   },
+   {
+    "use": "Langostino cocido",
+    "ratio": "2–3 minutos y agua con hielo",
+    "note": "Según tamaño."
+   },
+   {
+    "use": "Temperatura de servicio",
+    "ratio": "4–6 °C",
+    "note": "Frío."
+   },
+   {
+    "use": "Ración",
+    "ratio": "150–180 g de marisco",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "coccion-de-marisco",
+    "name": "Cocción de marisco",
+    "note": "Puntos y tiempos."
+   },
+   {
+    "id": "langostino-y-gamba-blanca",
+    "name": "Langostinos",
+    "note": "Producto."
+   },
+   {
+    "id": "vinagreta",
+    "name": "Vinagreta",
+    "note": "Aliño del salpicón."
+   },
+   {
+    "id": "mayonesa",
+    "name": "Salsa rosa",
+    "note": "Sobre una mayonesa."
+   }
+  ],
+  "keys": [
+   "Marisco cocido lo justo y enfriado en hielo.",
+   "Verduras muy finas y escurridas.",
+   "Todo en frío.",
+   "Mayonesa con huevo pasteurizado.",
+   "Se sirve en el día."
+  ],
+  "errors": [
+   {
+    "p": "Marisco duro",
+    "fix": "Cocido de más. Ajusta el tiempo y corta en hielo."
+   },
+   {
+    "p": "Salpicón aguado",
+    "fix": "Verduras sin escurrir. Escúrrelas."
+   },
+   {
+    "p": "Salsa rosa empalagosa",
+    "fix": "Mucho tomate o licor. Equilibra con cítrico."
+   }
+  ],
+  "history": "El salpicón y el cóctel de marisco son platos fríos muy populares en la cocina española, en casas y en barras, sobre todo en verano y en fiestas.",
+  "uses": [
+   "Entrantes fríos",
+   "Tapas",
+   "Menús de verano y de fiesta"
+  ],
+  "keep": "Montado, en frío y el mismo día. Marisco cocido, 1–2 días en frío.",
+  "pro": "Marisco cocido y frío en cubetas; montar por raciones a lo largo del servicio.",
+  "related": [
+   "coccion-de-marisco",
+   "langostino-y-gamba-blanca",
+   "vinagreta",
+   "mayonesa",
+   "mejillon-y-almeja",
+   "cefalopodos"
+  ]
+ },
+ {
+  "id": "guisos-de-caza",
+  "name": "Guisos de caza mayor",
+  "name_en": "Game stews",
+  "cat": "tecnicas",
+  "group": "Clásicos españoles",
+  "technique": "guiso",
+  "aka": [
+   "jabalí guisado",
+   "ciervo estofado",
+   "venado",
+   "civet",
+   "guiso de caza",
+   "liebre guisada"
+  ],
+  "summary": "Carnes de caza marinadas en vino y guisadas despacio, ligadas al final con una picada o con el hígado: siempre de origen controlado.",
+  "what": "La caza mayor (jabalí, ciervo, corzo) y la liebre tienen carnes oscuras, magras y de sabor intenso. Las piezas de guisar se marinan a menudo en vino tinto con verduras, hierbas y especias, se doran, se guisan con la marinada colada y un [[fondo-de-caza]], y se ligan al final con una [[picada]], chocolate o el hígado majado; en el civet clásico se ligaban con la sangre del animal.\n\nLa caza debe venir con control veterinario: el jabalí, en particular, puede transmitir triquinosis y se cocina siempre bien hecho. Cada zona y cada casa tienen su guiso.",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Carne de jabalí o ciervo en trozos (aguja, paletilla)",
+     "1,5 kg"
+    ],
+    [
+     "Vino tinto",
+     "750 ml"
+    ],
+    [
+     "Zanahoria, cebolla, apio y ajo",
+     "1, 1, 1 rama y 4 dientes"
+    ],
+    [
+     "Laurel, tomillo, enebro y pimienta",
+     "2 hojas, 2 ramas, 6 bayas y 10 granos"
+    ],
+    [
+     "Fondo de caza u oscuro",
+     "500 ml"
+    ],
+    [
+     "Picada o chocolate negro para ligar",
+     "50 g / 20 g"
+    ],
+    [
+     "Aceite de oliva y harina",
+     "60 ml y 30 g"
+    ]
+   ],
+   "steps": [
+    "Marina la carne con el vino, las verduras y las especias 24–48 horas en frío.",
+    "Escurre y seca la carne; cuela la marinada y hiérvela, espumando.",
+    "Dora la carne enharinada por tandas y luego las verduras de la marinada.",
+    "Moja con la marinada hervida y el fondo y guisa a fuego suave o a 150 °C en horno 2,5–3 horas.",
+    "Liga con la picada o el chocolate, ajusta de sal y deja reposar; mejor al día siguiente."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Marinada",
+    "ratio": "24–48 horas en frío",
+    "note": "Vino tinto y aromáticos."
+   },
+   {
+    "use": "Guisado",
+    "ratio": "150 °C, 2,5–3 horas",
+    "note": "Hasta que se deshaga."
+   },
+   {
+    "use": "Jabalí",
+    "ratio": "Bien hecho, por encima de 70 °C en el centro",
+    "note": "Con control veterinario."
+   },
+   {
+    "use": "Ración",
+    "ratio": "250 g de carne en crudo",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "fondo-de-caza",
+    "name": "Fondo de caza",
+    "note": "Base del guiso."
+   },
+   {
+    "id": "marinada",
+    "name": "Marinada de vino",
+    "note": "Cocida o cruda."
+   },
+   {
+    "id": "caza-de-pluma",
+    "name": "Caza de pluma",
+    "note": "Perdiz, pichón y codorniz."
+   },
+   {
+    "id": "vainilla-y-cacao",
+    "name": "Cacao en la salsa",
+    "note": "Para ligar y dar profundidad."
+   }
+  ],
+  "keys": [
+   "Caza con control veterinario, siempre.",
+   "Jabalí siempre bien hecho.",
+   "Marinada hervida y espumada antes de mojar.",
+   "Fuego suave y largo.",
+   "Mejor al día siguiente."
+  ],
+  "errors": [
+   {
+    "p": "Carne seca",
+    "fix": "Pieza magra a fuego fuerte. Fuego suave y piezas de guisar."
+   },
+   {
+    "p": "Sabor muy fuerte",
+    "fix": "Animal adulto o mal conservado. Marina más y ajusta especias."
+   },
+   {
+    "p": "Salsa ácida",
+    "fix": "Marinada sin hervir. Hiérvela y redúcela."
+   }
+  ],
+  "history": "Los guisos de caza son tradicionales en las zonas de monte de toda la península, ligados a la temporada de caza de otoño e invierno.",
+  "uses": [
+   "Platos de invierno",
+   "Menús de temporada",
+   "Rellenos y canelones"
+  ],
+  "keep": "4–5 días en frío en su salsa; se congela bien.",
+  "pro": "Marina y guisa con antelación; regenera en su salsa al pedido.",
+  "related": [
+   "fondo-de-caza",
+   "marinada",
+   "caza-de-pluma",
+   "guisos-largos",
+   "picada",
+   "vinos-y-licores"
+  ]
+ },
+ {
+  "id": "albondigas",
+  "name": "Albóndigas",
+  "name_en": "Meatballs",
+  "cat": "tecnicas",
+  "group": "Clásicos españoles",
+  "technique": "guiso",
+  "aka": [
+   "albóndigas",
+   "mandonguilles",
+   "albóndigas en salsa",
+   "albóndigas con sepia",
+   "albóndigas de pescado"
+  ],
+  "summary": "Carne picada ligada con pan mojado y huevo, formada en bolas, dorada y guisada en una salsa: tiernas si no se aprietan ni se pasan.",
+  "what": "Las albóndigas son bolas de carne picada (a menudo mezcla de vacuno y cerdo) ligadas con miga de pan empapada en leche, huevo, ajo y perejil, que se doran y luego se guisan en una salsa: de tomate, de almendras, con sepia en el mar y montaña catalán, o en un caldo. También se hacen de pescado o de verdura.\n\nLa miga mojada las mantiene tiernas; la sal y el amasado justo las hacen ligar sin endurecerlas. Como toda carne picada, se cocinan hasta el centro. Cada casa tiene su receta.",
+  "base": {
+   "for": "6 raciones (unas 36 piezas de 30 g)",
+   "items": [
+    [
+     "Carne picada de vacuno y cerdo",
+     "500 g y 500 g"
+    ],
+    [
+     "Miga de pan y leche",
+     "80 g y 120 ml"
+    ],
+    [
+     "Huevos",
+     "2"
+    ],
+    [
+     "Ajo y perejil picados",
+     "2 dientes y 1 puñado"
+    ],
+    [
+     "Sal y pimienta",
+     "14 g y al gusto"
+    ],
+    [
+     "Harina para enharinar y aceite",
+     "cantidad necesaria"
+    ],
+    [
+     "Salsa (tomate, almendras o de cebolla y vino)",
+     "1 l"
+    ]
+   ],
+   "steps": [
+    "Empapa la miga en la leche y escúrrela un poco.",
+    "Mezcla la carne, la miga, los huevos, el ajo, el perejil, la sal y la pimienta sin amasar de más; reposa 30 minutos en frío.",
+    "Forma bolas de 30 g con las manos húmedas, sin apretar; enharínalas.",
+    "Dóralas en aceite por tandas; no hace falta que se hagan por dentro.",
+    "Guísalas en la salsa a fuego suave 20–25 minutos, hasta que el centro llegue a 70 °C."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Sal",
+    "ratio": "12–15 g por kg de carne",
+    "note": "Ayuda a ligar."
+   },
+   {
+    "use": "Miga",
+    "ratio": "8 % del peso de la carne",
+    "note": "Empapada en leche."
+   },
+   {
+    "use": "Punto",
+    "ratio": "70 °C en el centro",
+    "note": "Carne picada: siempre hecha."
+   },
+   {
+    "use": "Ración",
+    "ratio": "6 piezas de 30 g",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "mar-i-muntanya",
+    "name": "Albóndigas con sepia",
+    "note": "El mar y montaña catalán."
+   },
+   {
+    "id": "salsa-de-tomate",
+    "name": "En salsa de tomate",
+    "note": "La más habitual."
+   },
+   {
+    "id": "picada",
+    "name": "Salsa de almendras",
+    "note": "Ligada con picada."
+   },
+   {
+    "id": "kebab-y-pinchos",
+    "name": "Kofta",
+    "note": "Carne picada especiada a la brasa."
+   }
+  ],
+  "keys": [
+   "Miga empapada para que queden tiernas.",
+   "Amasar lo justo.",
+   "Formar sin apretar.",
+   "Dorar y terminar en la salsa.",
+   "Centro a 70 °C: es carne picada."
+  ],
+  "errors": [
+   {
+    "p": "Duras y compactas",
+    "fix": "Amasadas o apretadas. Menos trabajo y más miga."
+   },
+   {
+    "p": "Se deshacen en la salsa",
+    "fix": "Poca sal o sin reposo. Sala bien y reposa en frío."
+   },
+   {
+    "p": "Crudas por dentro",
+    "fix": "Poco tiempo en la salsa. Comprueba con sonda."
+   }
+  ],
+  "history": "Las albóndigas son un plato de casa muy extendido en la cocina española, con raíces en la cocina andalusí y versiones en cada región.",
+  "uses": [
+   "Platos de cuchara",
+   "Tapas",
+   "Menús de mediodía"
+  ],
+  "keep": "3–4 días en frío en su salsa; se congelan muy bien.",
+  "pro": "Forma y dora en tanda; guisa y congela en raciones con su salsa.",
+  "related": [
+   "mar-i-muntanya",
+   "salsa-de-tomate",
+   "picada",
+   "kebab-y-pinchos",
+   "guisos-largos",
+   "pan-del-dia-y-pan-viejo"
+  ]
+ },
+ {
+  "id": "steak-tartar-y-carne-cruda",
+  "name": "Steak tartar y carne cruda",
+  "name_en": "Steak tartare and raw beef",
+  "cat": "tecnicas",
+  "group": "Cocina del mundo",
+  "technique": "crudo",
+  "aka": [
+   "steak tartar",
+   "tartar de ternera",
+   "tartar de vaca",
+   "carpaccio de ternera",
+   "carne cruda",
+   "tartar de solomillo"
+  ],
+  "summary": "Carne de vacuno de calidad picada a cuchillo al momento o laminada muy fina, aliñada y servida fría: con todas las precauciones de un crudo.",
+  "what": "El steak tartar es carne cruda de vacuno, picada a cuchillo y aliñada con mostaza, chalota, alcaparras, pepinillo, perejil, una salsa picante y, a menudo, yema de huevo. El carpaccio es la misma carne cortada en láminas finísimas y aliñada con aceite, limón o una salsa ligera.\n\nAl no cocinarse, la seguridad depende de todo lo anterior: una pieza entera de calidad, de proveedor de confianza, mantenida a 0–4 °C, limpia por fuera y picada en el momento, nunca carne picada comprada ni preparada con antelación. La yema, pasteurizada. No se recomienda a embarazadas, niños pequeños, personas mayores ni a quien tenga las defensas bajas.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Solomillo o tapa de vacuno, pieza entera y muy fría",
+     "500 g"
+    ],
+    [
+     "Chalota, alcaparras y pepinillo picados",
+     "1, 20 g y 30 g"
+    ],
+    [
+     "Mostaza",
+     "15 g"
+    ],
+    [
+     "Yema pasteurizada",
+     "1–2"
+    ],
+    [
+     "Perejil, sal, pimienta y salsa picante",
+     "al gusto"
+    ],
+    [
+     "Aceite de oliva",
+     "20 ml"
+    ]
+   ],
+   "steps": [
+    "Saca la carne de la cámara justo antes; trabaja con tabla y cuchillo limpios y fríos.",
+    "Retira la superficie expuesta y los nervios; pica a cuchillo en dados de 3–5 mm.",
+    "Mezcla en un bol sobre hielo con la mostaza, la yema, la chalota, las alcaparras, el pepinillo, el aceite y los condimentos.",
+    "Prueba, ajusta y forma con un aro.",
+    "Sirve enseguida, frío, con pan tostado o patatas fritas."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Carne por ración",
+    "ratio": "120–150 g",
+    "note": "Principal; entrante, 80 g."
+   },
+   {
+    "use": "Temperatura de trabajo",
+    "ratio": "0–4 °C",
+    "note": "Bol sobre hielo."
+   },
+   {
+    "use": "Tiempo hasta servir",
+    "ratio": "Minutos tras picar",
+    "note": "Nunca de antemano."
+   },
+   {
+    "use": "Carpaccio",
+    "ratio": "Láminas de 1–2 mm",
+    "note": "Pieza semicongelada para cortar."
+   }
+  ],
+  "variants": [
+   {
+    "id": "ceviche-y-crudos",
+    "name": "Crudos de pescado",
+    "note": "Otro crudo, con anisakis."
+   },
+   {
+    "id": "vaca-vieja-y-buey",
+    "name": "Vacuno",
+    "note": "Elegir la pieza."
+   },
+   {
+    "id": "cadena-de-frio",
+    "name": "Cadena de frío",
+    "note": "Por qué el frío importa."
+   },
+   {
+    "id": "tartara",
+    "name": "Salsa tártara",
+    "note": "Mismos condimentos en mayonesa."
+   }
+  ],
+  "keys": [
+   "Pieza entera, nunca carne picada comprada.",
+   "Picar al momento y servir enseguida.",
+   "Todo a 0–4 °C: tabla, cuchillo, bol y carne.",
+   "Yema pasteurizada.",
+   "Avisar: no para embarazadas, niños pequeños, mayores ni defensas bajas."
+  ],
+  "errors": [
+   {
+    "p": "Textura pastosa",
+    "fix": "Picada a máquina. Pica a cuchillo."
+   },
+   {
+    "p": "Color oscuro",
+    "fix": "Picada con antelación. Al momento."
+   },
+   {
+    "p": "Sabor plano",
+    "fix": "Poco aliño o sal. Ajusta mostaza, ácido y sal."
+   }
+  ],
+  "history": "El steak tartar se popularizó en la cocina de brasserie francesa en el siglo XX; el carpaccio nació en Italia en la misma época.",
+  "uses": [
+   "Entrantes",
+   "Platos de bistró",
+   "Barra de crudos"
+  ],
+  "keep": "No se guarda: se pica y se sirve. La pieza entera, en frío y según su fecha.",
+  "pro": "Pica y aliña por ración, sobre hielo; nunca en tanda.",
+  "related": [
+   "ceviche-y-crudos",
+   "vaca-vieja-y-buey",
+   "cadena-de-frio",
+   "tartara",
+   "cortes-de-vacuno",
+   "cortes-de-cuchillo"
+  ]
+ },
+ {
+  "id": "pates-de-higado",
+  "name": "Patés y parfaits de hígado",
+  "name_en": "Liver pâtés and parfaits",
+  "cat": "tecnicas",
+  "group": "Cocina francesa",
+  "technique": "pure",
+  "aka": [
+   "paté de hígado",
+   "parfait de hígado",
+   "paté de higaditos",
+   "mousse de hígado",
+   "paté de pollo"
+  ],
+  "summary": "Hígados de ave cocinados hasta el centro y triturados con mantequilla, o cocidos al baño maría en molde: untables finos y sedosos.",
+  "what": "Un paté de hígado se hace con hígados de pollo o de pato, limpios de nervios y de la vesícula verde, salteados o cocidos y triturados con mantequilla, chalota y un licor. El parfait es más fino: los hígados crudos se trituran con huevo, mantequilla o nata y una reducción de vino o licor, se pasan por tamiz y se cuecen al baño maría en un molde.\n\nLos hígados de ave pueden llevar bacterias que solo se eliminan con una cocción completa: hay que llevar el centro a unos 70 °C, aunque se pierda el tono rosado. Se termina cubierto de grasa para conservarlo. Las terrinas de carne están en [[prensados-y-terrinas]].",
+  "base": {
+   "for": "unos 600 g",
+   "items": [
+    [
+     "Hígados de pollo limpios",
+     "500 g"
+    ],
+    [
+     "Chalota picada",
+     "2"
+    ],
+    [
+     "Brandy, oporto o vino generoso",
+     "50 ml"
+    ],
+    [
+     "Mantequilla",
+     "200 g"
+    ],
+    [
+     "Tomillo, sal y pimienta",
+     "al gusto"
+    ],
+    [
+     "Mantequilla clarificada para cubrir",
+     "60 g"
+    ]
+   ],
+   "steps": [
+    "Limpia los hígados de nervios y de cualquier mancha verde; sécalos.",
+    "Saltea la chalota en mantequilla, añade los hígados y el tomillo y cocina a fuego medio hasta que el centro alcance 70 °C.",
+    "Desglasa con el licor y reduce.",
+    "Tritura en caliente con la mantequilla en dados hasta una crema lisa; pasa por tamiz y sala.",
+    "Pon en moldes, enfría y cubre con mantequilla clarificada; reposa 12 horas en frío."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Punto de los hígados",
+    "ratio": "70 °C en el centro",
+    "note": "Imprescindible en ave."
+   },
+   {
+    "use": "Mantequilla",
+    "ratio": "30–40 % del peso de los hígados",
+    "note": "Más, más fino."
+   },
+   {
+    "use": "Parfait al baño maría",
+    "ratio": "Horno a 120–140 °C hasta 70 °C en el centro",
+    "note": "Molde tapado."
+   },
+   {
+    "use": "Sal",
+    "ratio": "12–14 g por kg",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "prensados-y-terrinas",
+    "name": "Terrinas",
+    "note": "Farsas de carne en molde."
+   },
+   {
+    "id": "casqueria",
+    "name": "Casquería",
+    "note": "Hígados y otras piezas."
+   },
+   {
+    "id": "pato",
+    "name": "Hígado de pato",
+    "note": "Más graso y delicado."
+   },
+   {
+    "id": "clarificacion",
+    "name": "Mantequilla clarificada",
+    "note": "Para sellar."
+   }
+  ],
+  "keys": [
+   "Hígados de ave siempre a 70 °C en el centro.",
+   "Limpiar bien nervios y vesícula.",
+   "Triturar en caliente y tamizar.",
+   "Sellar con grasa.",
+   "Reposo de un día antes de servir."
+  ],
+  "errors": [
+   {
+    "p": "Sabor amargo",
+    "fix": "Restos de vesícula. Limpia bien."
+   },
+   {
+    "p": "Textura granulosa",
+    "fix": "Triturado en frío o sin tamiz. Tritura en caliente y tamiza."
+   },
+   {
+    "p": "Superficie oscura",
+    "fix": "Sin sellar. Cubre con mantequilla clarificada."
+   }
+  ],
+  "history": "Los patés de hígado son clásicos de la charcutería francesa y de muchas cocinas europeas de aprovechamiento.",
+  "uses": [
+   "Entrantes y aperitivos",
+   "Tostas",
+   "Tablas"
+  ],
+  "keep": "Sellado con grasa, 4–5 días en frío; una vez abierto, 2 días.",
+  "pro": "Elabora en moldes pequeños de ración; abre solo lo del servicio.",
+  "related": [
+   "prensados-y-terrinas",
+   "casqueria",
+   "pato",
+   "clarificacion",
+   "pollo-y-aves",
+   "vinos-y-licores"
+  ]
+ },
+ {
+  "id": "embutidos-caseros-frescos",
+  "name": "Embutidos caseros frescos",
+  "name_en": "Fresh homemade sausages",
+  "cat": "tecnicas",
+  "group": "Conservar y transformar",
+  "aka": [
+   "salchichas caseras",
+   "butifarra fresca",
+   "chorizo fresco",
+   "longaniza fresca",
+   "embutir"
+  ],
+  "summary": "Carne y grasa de cerdo picadas en frío, sazonadas, ligadas y embutidas en tripa: para cocinar en días, sin curado.",
+  "what": "Los embutidos frescos son carne picada con grasa, sal y especias, embutida en tripa natural y cocinada en pocos días: salchichas, butifarra fresca, chorizo o longaniza frescos. No se curan, así que no llevan sales de curado ni se secan: se tratan como carne picada, en frío y cocinados hasta el centro.\n\nLa clave es el frío y la proporción de grasa: carne y máquina muy frías para que la grasa no se funda al picar, alrededor de un 30 % de grasa para que queden jugosos, y un amasado que ligue la mezcla. Cada casa tiene sus especias. Los embutidos curados de la isla están en [[sobrasada-y-embutidos]].",
+  "base": {
+   "for": "unos 2 kg",
+   "items": [
+    [
+     "Magro de cerdo (aguja, paleta)",
+     "1,4 kg"
+    ],
+    [
+     "Panceta o tocino",
+     "600 g"
+    ],
+    [
+     "Sal",
+     "30–36 g (15–18 g por kg)"
+    ],
+    [
+     "Pimienta y especias (nuez moscada, ajo, pimentón para chorizo)",
+     "al gusto"
+    ],
+    [
+     "Agua o vino muy fríos",
+     "100 ml"
+    ],
+    [
+     "Tripa natural de cerdo lavada y remojada",
+     "3–4 m"
+    ]
+   ],
+   "steps": [
+    "Corta la carne y la grasa en dados y enfríalas casi hasta congelar, junto con las piezas de la picadora.",
+    "Pica por placa media y mezcla con la sal, las especias y el líquido frío, amasando hasta que la mezcla se vuelva pegajosa.",
+    "Fríe una pequeña porción para probar la sal y las especias.",
+    "Embute en la tripa sin aire, ata a la longitud deseada y pincha las burbujas.",
+    "Deja reposar 12 horas en frío para que se asiente; cocina hasta que el centro llegue a 70 °C."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Grasa",
+    "ratio": "25–30 % del total",
+    "note": "Jugosos."
+   },
+   {
+    "use": "Sal",
+    "ratio": "15–18 g por kg",
+    "note": "Liga y sazona."
+   },
+   {
+    "use": "Carne al picar",
+    "ratio": "0–2 °C",
+    "note": "La grasa no se funde."
+   },
+   {
+    "use": "Punto",
+    "ratio": "70 °C en el centro",
+    "note": "Carne picada."
+   }
+  ],
+  "variants": [
+   {
+    "id": "sobrasada-y-embutidos",
+    "name": "Embutidos curados de la isla",
+    "note": "Sobrasada y botifarra."
+   },
+   {
+    "id": "albondigas",
+    "name": "Albóndigas",
+    "note": "Otra carne picada."
+   },
+   {
+    "id": "cerdo-iberico",
+    "name": "Cerdo",
+    "note": "Piezas y grasa."
+   },
+   {
+    "id": "especias",
+    "name": "Especias",
+    "note": "Mezclas propias."
+   }
+  ],
+  "keys": [
+   "Todo muy frío: carne, grasa y máquina.",
+   "Proporción de grasa en torno al 30 %.",
+   "Amasar hasta ligar.",
+   "Probar friendo una porción.",
+   "Frescos: en frío y cocinados hasta el centro."
+  ],
+  "errors": [
+   {
+    "p": "Embutido seco y granuloso",
+    "fix": "Poca grasa o grasa fundida al picar. Más grasa y todo frío."
+   },
+   {
+    "p": "Se abre al cocinar",
+    "fix": "Aire en la tripa o fuego fuerte. Pincha y cocina suave."
+   },
+   {
+    "p": "Soso",
+    "fix": "Sal escasa. Prueba antes de embutir."
+   }
+  ],
+  "history": "Las salchichas y butifarras frescas son parte de la tradición de matanza y charcutería de toda Europa; cada región tiene sus especias.",
+  "uses": [
+   "Brasa",
+   "Guisos y arroces",
+   "Bocadillos",
+   "Legumbres"
+  ],
+  "keep": "Crudos, 2–3 días en frío; congelados, 2–3 meses.",
+  "pro": "Elabora en tandas pequeñas y congela por raciones; etiqueta con la fecha.",
+  "related": [
+   "sobrasada-y-embutidos",
+   "albondigas",
+   "cerdo-iberico",
+   "especias",
+   "cadena-de-frio",
+   "fuego-y-brasa"
+  ]
+ },
+ {
+  "id": "vacio-equipo-y-seguridad",
+  "name": "Cocina al vacío: equipo y seguridad",
+  "name_en": "Sous vide: equipment and safety",
+  "cat": "tecnicas",
+  "group": "Vanguardia",
+  "technique": "bajatemp",
+  "aka": [
+   "envasadora al vacío",
+   "envasadora de campana",
+   "termostato de inmersión",
+   "roner",
+   "sous vide en casa",
+   "bolsas de vacío"
+  ],
+  "summary": "Qué equipo hace falta para cocinar al vacío, cómo usarlo bien y qué reglas de seguridad no se pueden saltar.",
+  "what": "Para cocinar al vacío hacen falta tres cosas: una forma de envasar, un baño a temperatura exacta y una forma de enfriar deprisa. En una cocina profesional, la envasadora de campana saca el aire de verdad y permite envasar líquidos; las de barra, más pequeñas, sirven para sólidos. El baño se controla con un termostato de inmersión o un horno mixto con sonda. En casa se puede sustituir la envasadora por bolsas con cierre sumergidas en agua para expulsar el aire, con más riesgo de que floten o entre agua.\n\nLa técnica y los puntos están en [[baja-temperatura]]. Aquí, la seguridad: el vacío quita el oxígeno, y eso favorece a bacterias como la del botulismo si el producto se guarda mal.",
+  "method": [
+   "Usa bolsas aptas para cocción y no las reutilices.",
+   "Envasa en frío y en una sola capa; los líquidos, fríos y en envasadora de campana.",
+   "Comprueba el termostato con un termómetro calibrado.",
+   "No dejes alimentos más de unas horas por debajo de 55 °C; las cocciones largas, por encima.",
+   "Si no se sirve al momento, enfría la bolsa en agua con hielo hasta bajar de 3 °C y guárdala en frío, etiquetada y por poco tiempo."
+  ],
+  "ratios": [
+   {
+    "use": "Cocciones largas",
+    "ratio": "55 °C o más",
+    "note": "Por debajo, solo unas horas."
+   },
+   {
+    "use": "Abatido",
+    "ratio": "Por debajo de 3 °C en agua con hielo",
+    "note": "Deprisa."
+   },
+   {
+    "use": "Conservación tras cocinar",
+    "ratio": "0–3 °C, pocos días",
+    "note": "Pescado, 1–2 días."
+   },
+   {
+    "use": "Ajo y hierbas frescas crudos en bolsa",
+    "ratio": "Evitar o usar en el día",
+    "note": "Riesgo de botulismo."
+   }
+  ],
+  "variants": [
+   {
+    "id": "baja-temperatura",
+    "name": "Baja temperatura",
+    "note": "Puntos y tiempos."
+   },
+   {
+    "id": "vacio-de-verduras-y-frutas",
+    "name": "Verduras y frutas",
+    "note": "Cocción y compresión."
+   },
+   {
+    "id": "cadena-de-frio",
+    "name": "Cadena de frío",
+    "note": "Temperaturas de riesgo."
+   },
+   {
+    "id": "reposos-y-regeneracion",
+    "name": "Regeneración",
+    "note": "Volver a calentar sin pasar."
+   }
+  ],
+  "keys": [
+   "Envasar frío y en una sola capa.",
+   "Termostato comprobado con termómetro.",
+   "Por debajo de 55 °C, solo cocciones cortas.",
+   "Enfriar en agua con hielo y etiquetar.",
+   "Sin oxígeno no es sin riesgo: el frío manda."
+  ],
+  "errors": [
+   {
+    "p": "Bolsa que flota",
+    "fix": "Aire dentro o gases. Envasa mejor y sujeta con peso."
+   },
+   {
+    "p": "Bolsa que se abre en el baño",
+    "fix": "Sellado sucio o mojado. Limpia el borde y sella dos veces."
+   },
+   {
+    "p": "Producto pasado en el baño",
+    "fix": "Termostato descalibrado. Compruébalo con termómetro."
+   }
+  ],
+  "history": "El envasado al vacío se extendió en la industria alimentaria a mediados del siglo XX y llegó a la cocina profesional en las décadas siguientes; los termostatos de inmersión lo acercaron después a las casas.",
+  "uses": [
+   "Producción por adelantado",
+   "Puntos exactos",
+   "Verduras y frutas",
+   "Marinados"
+  ],
+  "keep": "Lo cocinado al vacío y abatido, en frío, etiquetado y por pocos días; pescado, 1–2 días.",
+  "pro": "Etiqueta cada bolsa con producto, temperatura, tiempo y fecha; un baño por temperatura durante el servicio.",
+  "related": [
+   "baja-temperatura",
+   "vacio-de-verduras-y-frutas",
+   "cadena-de-frio",
+   "reposos-y-regeneracion",
+   "confitado",
+   "ph-y-acidez"
+  ]
+ },
+ {
+  "id": "panes-de-alta-hidratacion",
+  "name": "Panes de alta hidratación",
+  "name_en": "High-hydration breads",
+  "cat": "tecnicas",
+  "group": "Masas",
+  "aka": [
+   "pan de cristal",
+   "chapata",
+   "ciabatta",
+   "pan de alta hidratación",
+   "pliegues",
+   "poolish"
+  ],
+  "summary": "Masas con mucha agua, trabajadas con pliegues en lugar de amasado y horneadas fuertes con vapor: miga muy abierta y corteza fina.",
+  "what": "Los panes de alta hidratación llevan entre un 75 y un 85 % de agua sobre el peso de la harina, o más. Son masas muy blandas que no se amasan como un pan normal: se mezclan, reposan y se fortalecen con pliegues cada media hora, y muchas veces fermentan en frío. Al hornearse fuerte y con vapor, el agua se convierte en grandes alvéolos: miga brillante y abierta, corteza fina y crujiente, como en la chapata o el pan de cristal.\n\nNecesitan una harina de fuerza que aguante el agua, y paciencia. Una prefermentación (poolish o masa madre) les da más sabor. Ver [[gluten-y-reposo-de-masas]] y [[pan-y-focaccia]].",
+  "base": {
+   "for": "2 panes de unos 600 g",
+   "items": [
+    [
+     "Harina de fuerza",
+     "700 g"
+    ],
+    [
+     "Agua fría",
+     "560–600 ml (80–85 %)"
+    ],
+    [
+     "Sal",
+     "15 g"
+    ],
+    [
+     "Levadura fresca",
+     "3 g"
+    ],
+    [
+     "Aceite de oliva (opcional)",
+     "20 ml"
+    ]
+   ],
+   "steps": [
+    "Mezcla la harina con casi toda el agua y deja reposar 30 minutos; añade la levadura, la sal y el resto del agua y mezcla hasta integrar.",
+    "Haz 4 series de pliegues cada 30 minutos con las manos mojadas, estirando y doblando la masa sobre sí misma.",
+    "Fermenta en frío 12–24 horas en un recipiente engrasado.",
+    "Vuelca sobre la mesa enharinada, divide sin desgasificar, da forma suave y deja levar 45–60 minutos.",
+    "Hornea a 240–250 °C con vapor los primeros 15 minutos y sin vapor 15–20 más, hasta que suene hueco."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Hidratación",
+    "ratio": "75–85 % del peso de la harina",
+    "note": "Según la harina."
+   },
+   {
+    "use": "Pliegues",
+    "ratio": "4 series cada 30 minutos",
+    "note": "En lugar de amasar."
+   },
+   {
+    "use": "Horno",
+    "ratio": "240–250 °C con vapor",
+    "note": "15 minutos con vapor, luego sin."
+   },
+   {
+    "use": "Fermentación en frío",
+    "ratio": "4 °C, 12–24 horas",
+    "note": "Más sabor."
+   }
+  ],
+  "variants": [
+   {
+    "id": "pan-y-focaccia",
+    "name": "Pan y focaccia",
+    "note": "Masa directa."
+   },
+   {
+    "id": "masa-madre",
+    "name": "Masa madre",
+    "note": "Para fermentar con más sabor."
+   },
+   {
+    "id": "pizza",
+    "name": "Pizza",
+    "note": "Otra masa de fermentación lenta."
+   },
+   {
+    "id": "pan-del-dia-y-pan-viejo",
+    "name": "Pan de servicio",
+    "note": "Regenerar y aprovechar."
+   }
+  ],
+  "keys": [
+   "Harina de fuerza que aguante el agua.",
+   "Pliegues en lugar de amasado.",
+   "Manos mojadas, no enharinadas.",
+   "Fermentación en frío para sabor.",
+   "Horno fuerte con vapor."
+  ],
+  "errors": [
+   {
+    "p": "Masa que se desparrama",
+    "fix": "Harina floja o pocos pliegues. Harina de fuerza y más pliegues."
+   },
+   {
+    "p": "Miga cerrada",
+    "fix": "Masa desgasificada al formar. Manipula con suavidad."
+   },
+   {
+    "p": "Corteza gruesa y pálida",
+    "fix": "Sin vapor o horno flojo. Vapor y 240 °C o más."
+   }
+  ],
+  "history": "Los panes de alta hidratación, como la chapata, se popularizaron en Italia en el siglo XX; el pan de cristal es una versión de las panaderías catalanas de las últimas décadas.",
+  "uses": [
+   "Pan de servicio",
+   "Bocadillos y tostas",
+   "Pan con tomate"
+  ],
+  "keep": "1 día en bolsa de papel; congelado en porciones, semanas.",
+  "pro": "Masa fermentando en frío la víspera; horneado por tandas según el servicio.",
+  "related": [
+   "pan-y-focaccia",
+   "masa-madre",
+   "pizza",
+   "pan-del-dia-y-pan-viejo",
+   "gluten-y-reposo-de-masas",
+   "harinas-y-almidones"
+  ]
+ },
+ {
+  "id": "ensaladas-de-autor",
+  "name": "Ensaladas de autor",
+  "name_en": "Composed salads",
+  "cat": "tecnicas",
+  "group": "Verduras",
+  "aka": [
+   "ensalada compuesta",
+   "ensalada creativa",
+   "construir una ensalada",
+   "ensalada de temporada"
+  ],
+  "summary": "Cómo construir una ensalada con identidad: una base, un protagonista, ácido, grasa, crujiente y un contraste, aliñados por capas.",
+  "what": "Una ensalada de autor es un plato pensado, no una mezcla de hojas: tiene un protagonista (una verdura de temporada, un pescado curado, una fruta, un queso), una base que lo acompaña, un ácido que despierta, una grasa que redondea, algo crujiente, y un contraste de temperatura, amargor o dulzor. Cada elemento se aliña por separado y se monta al final para que no se mezclen los sabores ni se ablanden las texturas.\n\nLa estructura sirve para cualquier temporada. Ver [[construir-un-plato]], [[contraste-y-equilibrio]] y las fichas de [[hojas-y-brotes]] y [[ensaladas-templadas]].",
+  "base": {
+   "for": "Estructura por ración",
+   "items": [
+    [
+     "Protagonista (verdura asada, crudo de pescado congelado antes, fruta, queso)",
+     "60–100 g"
+    ],
+    [
+     "Base (hojas, cereal, legumbre, puré frío)",
+     "40–60 g"
+    ],
+    [
+     "Ácido (vinagreta, cítrico, encurtido)",
+     "10–15 ml"
+    ],
+    [
+     "Grasa (aceite bueno, queso, frutos secos)",
+     "10–15 g"
+    ],
+    [
+     "Crujiente (frutos secos, migas, semillas)",
+     "5–10 g"
+    ],
+    [
+     "Contraste (amargo, dulce, picante, templado)",
+     "un toque"
+    ]
+   ],
+   "steps": [
+    "Elige un protagonista de temporada y piensa qué le falta: ácido, grasa, crujiente, frescor.",
+    "Prepara cada elemento por separado: asados, crudos, encurtidos, crujientes.",
+    "Aliña cada elemento con lo que necesita: el ácido a lo graso, la grasa a lo seco.",
+    "Monta en el último momento, en capas o en zonas, con lo crujiente arriba.",
+    "Termina con sal en escamas, hierbas y un hilo de aceite."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Aliño",
+    "ratio": "1 parte de ácido por 3 de aceite",
+    "note": "Más ácido para lo graso."
+   },
+   {
+    "use": "Sal en escamas",
+    "ratio": "Al final",
+    "note": "Para que cruja."
+   },
+   {
+    "use": "Contraste de temperatura",
+    "ratio": "Un elemento templado",
+    "note": "Ver ensaladas templadas."
+   },
+   {
+    "use": "Ración",
+    "ratio": "150–200 g en total",
+    "note": "Entrante."
+   }
+  ],
+  "variants": [
+   {
+    "id": "ensaladas-templadas",
+    "name": "Ensaladas templadas",
+    "note": "Con algo caliente."
+   },
+   {
+    "id": "ensalada-de-hierbas",
+    "name": "Ensalada de hierbas",
+    "note": "Hojas y brotes."
+   },
+   {
+    "id": "ensaladas-de-legumbre-y-cereal",
+    "name": "Con legumbre y cereal",
+    "note": "Más saciantes."
+   },
+   {
+    "id": "ensalada-payesa",
+    "name": "Ensalada payesa",
+    "note": "La tradición de la isla."
+   }
+  ],
+  "keys": [
+   "Un protagonista claro.",
+   "Cada elemento aliñado aparte.",
+   "Montar al final.",
+   "Crujiente arriba y sal en escamas al servir.",
+   "Si lleva pescado crudo, congelado antes."
+  ],
+  "errors": [
+   {
+    "p": "Ensalada plana",
+    "fix": "Falta ácido o contraste. Añade un encurtido o un amargo."
+   },
+   {
+    "p": "Todo blando",
+    "fix": "Montada antes. Crujiente al final."
+   },
+   {
+    "p": "Demasiados ingredientes",
+    "fix": "Sin protagonista. Quita hasta que se entienda."
+   }
+  ],
+  "history": "La ensalada compuesta de restaurante, pensada como un plato completo, se extendió con la cocina moderna europea de finales del siglo XX.",
+  "uses": [
+   "Entrantes",
+   "Menús de temporada",
+   "Platos vegetales"
+  ],
+  "keep": "Los elementos por separado, en frío y según cada uno; montada, al momento.",
+  "pro": "Mise en place por elementos en cubetas; montaje por ración.",
+  "related": [
+   "construir-un-plato",
+   "contraste-y-equilibrio",
+   "hojas-y-brotes",
+   "ensaladas-templadas",
+   "vinagreta",
+   "texturas-y-percepcion"
+  ]
  }
 ]

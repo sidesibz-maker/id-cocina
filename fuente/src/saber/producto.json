@@ -9022,5 +9022,856 @@
    "especias",
    "aromaticos-de-asia"
   ]
+ },
+ {
+  "id": "lenguado-y-pescados-planos",
+  "name": "Lenguado y pescados planos",
+  "name_en": "Sole and flatfish",
+  "cat": "producto",
+  "group": "Pescado y marisco",
+  "aka": [
+   "lenguado",
+   "acedía",
+   "platija",
+   "gallo",
+   "pescados planos",
+   "lenguado a la meunière"
+  ],
+  "summary": "Pescados planos de carne fina y blanca: se pelan, se filetean en cuatro y se cocinan muy poco, enharinados, a la plancha o al vapor.",
+  "what": "Los pescados planos viven pegados al fondo y tienen los dos ojos en la misma cara. El lenguado es el más apreciado: carne blanca, firme y fina, que se separa en filetes limpios. La acedía es un lenguado pequeño, muy popular frito en Andalucía; el gallo del Cantábrico, de carne más blanda, se hace rebozado o a la plancha; la platija es más suave. El rodaballo y el gallo de San Pedro tienen su propia ficha en [[gallo-y-rodaballo]].\n\nSu carne fina se pasa enseguida: cocciones cortas y suaves. El clásico es el lenguado enharinado y dorado en mantequilla, terminado con limón y perejil.",
+  "method": [
+   "Pela el lenguado: corta la piel oscura junto a la cola, sujétala con un paño y tira hacia la cabeza de un golpe.",
+   "Para filetes, corta por la línea central y saca cuatro filetes, dos por cara, pegado a la espina.",
+   "Entero o en filetes, sala, enharina ligeramente y dora en mantequilla espumosa con un poco de aceite, 2–3 minutos por lado si está entero.",
+   "Termina con limón, perejil y la mantequilla tostada de la sartén.",
+   "Acedías y pescados pequeños: enharinados y fritos en aceite de oliva a 180 °C."
+  ],
+  "ratios": [
+   {
+    "use": "Lenguado entero de ración",
+    "ratio": "300–400 g",
+    "note": "Pelado por la cara oscura."
+   },
+   {
+    "use": "Punto",
+    "ratio": "45–50 °C en el centro",
+    "note": "Congelado antes o ya tratado si queda por debajo de 60 °C."
+   },
+   {
+    "use": "Rendimiento en filetes",
+    "ratio": "40–45 %",
+    "note": "Sobre pieza entera."
+   },
+   {
+    "use": "Acedía frita",
+    "ratio": "180 °C, 2–3 minutos",
+    "note": "Enharinada."
+   }
+  ],
+  "variants": [
+   {
+    "id": "mantequilla-noisette",
+    "name": "A la meunière",
+    "note": "Mantequilla tostada, limón y perejil."
+   },
+   {
+    "id": "fileteado-de-pescado",
+    "name": "Fileteado",
+    "note": "Cuatro filetes por pieza."
+   },
+   {
+    "id": "gallo-y-rodaballo",
+    "name": "Rodaballo y gallo de San Pedro",
+    "note": "Otros pescados planos."
+   },
+   {
+    "id": "pescaito-frito",
+    "name": "Fritura",
+    "note": "Para acedías."
+   }
+  ],
+  "keys": [
+   "Cocción corta: la carne es fina.",
+   "Pelar la piel oscura de un tirón.",
+   "Enharinado ligero para dorar sin pegarse.",
+   "Pescado que queda por debajo de 60 °C en el centro: congelado antes (-20 °C al menos 24 horas en toda la pieza) o ya tratado, por el anisakis.",
+   "Las espinas, al fumet: es de los más finos."
+  ],
+  "errors": [
+   {
+    "p": "Filete roto",
+    "fix": "Pescado caliente o cuchillo romo. Trabaja en frío y con filo."
+   },
+   {
+    "p": "Carne seca",
+    "fix": "Pasado. Retira a 45–50 °C."
+   },
+   {
+    "p": "Piel que no sale",
+    "fix": "Sin cortar bien junto a la cola. Corta y tira con un paño."
+   }
+  ],
+  "history": "El lenguado es uno de los pescados más valorados de la cocina europea; la acedía forma parte de la fritura gaditana tradicional.",
+  "uses": [
+   "Pescado de ración",
+   "Filetes con salsas finas",
+   "Frituras",
+   "Fumets"
+  ],
+  "keep": "Entero, 1–2 días a 0–2 °C sobre hielo; filetes, en el día.",
+  "pro": "Pela y filetea al recibir; espinas a un fumet del día.",
+  "related": [
+   "gallo-y-rodaballo",
+   "fileteado-de-pescado",
+   "mantequilla-noisette",
+   "pescaito-frito",
+   "fumet",
+   "dorada-y-lubina"
+  ]
+ },
+ {
+  "id": "merluza-y-pescadilla",
+  "name": "Merluza y pescadilla",
+  "name_en": "Hake",
+  "cat": "producto",
+  "group": "Pescado y marisco",
+  "aka": [
+   "merluza",
+   "pescadilla",
+   "cogote de merluza",
+   "kokotxas de merluza",
+   "merluza de pincho",
+   "lomo de merluza"
+  ],
+  "summary": "Pescado blanco de carne tierna en lascas grandes: se cuida en la compra, se cocina suave y se aprovecha entero.",
+  "what": "La merluza es uno de los pescados más consumidos en España: carne blanca, tierna y jugosa que se abre en lascas grandes, y un sabor suave. La pescadilla es la merluza pequeña. La de anzuelo (de pincho) llega con menos golpes y la carne más firme que la de arrastre. Se aprovecha casi todo: lomo, cola, cogote (la parte junto a la cabeza, muy jugosa), ventresca, kokotxas y la cabeza para caldos.\n\nSu carne delicada pide cocciones suaves: en [[salsa-verde]], al vapor, a la plancha por la piel, rebozada a la romana o cocida con patatas. Es un pescado en el que el anisakis aparece con frecuencia: se revisa y, si se sirve poco hecho, se congela antes.",
+  "method": [
+   "Elige por el brillo, el ojo vivo, las agallas rojas y la carne firme; revisa la ventresca al limpiar.",
+   "Corta en rodajas o en lomos según el uso; guarda la cabeza y las espinas para el fumet.",
+   "Sala 10 minutos antes de cocinar.",
+   "Cocina suave: en salsa a fuego bajo moviendo la cazuela, al vapor o a la plancha por la piel.",
+   "Retira en cuanto las lascas se separen, todavía nacaradas."
+  ],
+  "ratios": [
+   {
+    "use": "Lomo de merluza",
+    "ratio": "45–50 °C en el centro",
+    "note": "Congelada antes o ya tratada si queda por debajo de 60 °C."
+   },
+   {
+    "use": "Rodaja en salsa verde",
+    "ratio": "6–8 minutos a fuego suave",
+    "note": "Rodajas de 3 cm."
+   },
+   {
+    "use": "Ración",
+    "ratio": "180–200 g de lomo",
+    "note": ""
+   },
+   {
+    "use": "Rendimiento",
+    "ratio": "50–55 % de lomo",
+    "note": "Sobre pieza entera."
+   }
+  ],
+  "variants": [
+   {
+    "id": "salsa-verde",
+    "name": "Merluza en salsa verde",
+    "note": "Con almejas y perejil."
+   },
+   {
+    "id": "pil-pil",
+    "name": "Kokotxas al pil-pil",
+    "note": "Gelatina de la merluza."
+   },
+   {
+    "id": "rebozados-y-empanados",
+    "name": "A la romana",
+    "note": "Harina y huevo."
+   },
+   {
+    "id": "fumet",
+    "name": "Fumet",
+    "note": "Con cabeza y espinas."
+   }
+  ],
+  "keys": [
+   "Merluza de anzuelo: menos golpes, carne más firme.",
+   "Cocción suave: se pasa enseguida.",
+   "Revisa el anisakis al limpiar, sobre todo en la ventresca.",
+   "Pescado que queda por debajo de 60 °C en el centro: congelado antes (-20 °C al menos 24 horas en toda la pieza) o ya tratado.",
+   "Cabeza y espinas, al fumet."
+  ],
+  "errors": [
+   {
+    "p": "Carne seca y deshecha",
+    "fix": "Hervor fuerte o mucho tiempo. Fuego suave y retira antes."
+   },
+   {
+    "p": "Carne blanda y aguada",
+    "fix": "Merluza de días o golpeada. Compra fresca y de anzuelo."
+   },
+   {
+    "p": "Rebozado que se despega",
+    "fix": "Pescado húmedo. Sécalo antes."
+   }
+  ],
+  "history": "La merluza es uno de los pescados más presentes en la cocina española, sobre todo en la vasca y la gallega, con platos como la merluza en salsa verde.",
+  "uses": [
+   "Guisos y salsas",
+   "Plancha y vapor",
+   "Rebozados",
+   "Fumets"
+  ],
+  "keep": "Entera, 1–2 días a 0–2 °C sobre hielo; en lomos, en el día.",
+  "pro": "Limpia y porciona al recibir; cabezas al fumet del día.",
+  "related": [
+   "salsa-verde",
+   "pil-pil",
+   "fumet",
+   "fileteado-de-pescado",
+   "rebozados-y-empanados",
+   "bacalao"
+  ]
+ },
+ {
+  "id": "salmonete",
+  "name": "Salmonete",
+  "name_en": "Red mullet",
+  "cat": "producto",
+  "group": "Pescado y marisco",
+  "aka": [
+   "salmonete",
+   "salmonete de roca",
+   "salmonete de fango",
+   "moll",
+   "filetes de salmonete"
+  ],
+  "summary": "Pescado de roca pequeño, rojo y muy sabroso: piel fina que se tuesta, carne delicada e hígado que se aprovecha.",
+  "what": "El salmonete es uno de los pescados de roca más sabrosos del Mediterráneo, de piel rosada y carne fina con un sabor intenso, casi a marisco. El de roca, de colores más vivos, suele ser más apreciado que el de fango. Su hígado es un bocado delicado que se usa en salsas o se deja dentro al freírlo entero.\n\nSe cocina muy poco: frito entero si es pequeño, en filetes con la piel tostada en plancha o brasa, o en crudo, curado o marinado si es muy fresco y se ha congelado antes. Tiene espinas finas que se quitan con pinzas.",
+  "method": [
+   "Escama con cuidado: la piel es muy fina.",
+   "Para filetes, saca los lomos y quita las espinas finas con pinzas.",
+   "Plancha o brasa: por la piel a fuego fuerte 1–2 minutos y un toque por la carne.",
+   "Frito: entero y enharinado, en aceite a 180 °C.",
+   "Guarda el hígado para una salsa o un aliño."
+  ],
+  "ratios": [
+   {
+    "use": "Filete por la piel",
+    "ratio": "1–2 minutos a fuego fuerte",
+    "note": "Piel crujiente."
+   },
+   {
+    "use": "Frito entero",
+    "ratio": "180 °C, 2–3 minutos",
+    "note": "Piezas pequeñas."
+   },
+   {
+    "use": "Ración",
+    "ratio": "2–3 piezas de 80–120 g",
+    "note": ""
+   },
+   {
+    "use": "En crudo o curado",
+    "ratio": "Congelado antes a -20 °C al menos 24 horas",
+    "note": "En toda la pieza."
+   }
+  ],
+  "variants": [
+   {
+    "id": "pescado-de-roca",
+    "name": "Pescado de roca",
+    "note": "Su familia."
+   },
+   {
+    "id": "curado-de-pescado",
+    "name": "Curado",
+    "note": "Filetes finos, pocas horas."
+   },
+   {
+    "id": "pescaito-frito",
+    "name": "Frito",
+    "note": "Entero y enharinado."
+   },
+   {
+    "id": "plancha-y-sarten",
+    "name": "Plancha",
+    "note": "Por la piel."
+   }
+  ],
+  "keys": [
+   "Escamar con cuidado: la piel es fina.",
+   "Cocción muy corta.",
+   "Espinas finas fuera con pinzas.",
+   "El hígado es sabor.",
+   "Pescado que queda por debajo de 60 °C en el centro o en crudo: congelado antes o ya tratado, por el anisakis."
+  ],
+  "errors": [
+   {
+    "p": "Piel rota",
+    "fix": "Escamado brusco. Hazlo con suavidad."
+   },
+   {
+    "p": "Filete que se curva",
+    "fix": "La piel encoge. Presiona al principio."
+   },
+   {
+    "p": "Carne seca",
+    "fix": "Pasado. Muy poco tiempo."
+   }
+  ],
+  "history": "El salmonete es un pescado valorado en el Mediterráneo desde la antigüedad, y forma parte de la cocina marinera de las islas.",
+  "uses": [
+   "Plancha y brasa",
+   "Frituras",
+   "Crudos y curados",
+   "Arroces y caldos"
+  ],
+  "keep": "Entero, 1 día a 0–2 °C; mejor el mismo día.",
+  "pro": "Filetea y quita espinas antes del servicio; guarda en frío en bandeja con papel.",
+  "related": [
+   "pescado-de-roca",
+   "curado-de-pescado",
+   "pescaito-frito",
+   "plancha-y-sarten",
+   "fileteado-de-pescado",
+   "dorada-y-lubina"
+  ]
+ },
+ {
+  "id": "langostino-y-gamba-blanca",
+  "name": "Langostino y gamba blanca",
+  "name_en": "King prawn and white prawn",
+  "cat": "producto",
+  "group": "Pescado y marisco",
+  "aka": [
+   "langostino",
+   "gamba blanca",
+   "langostino cocido",
+   "gamba cocida",
+   "langostino a la plancha"
+  ],
+  "summary": "Crustáceos dulces que se cuecen en agua muy salada un minuto o dos, se cortan en hielo y se sirven a punto.",
+  "what": "El langostino tiene la carne firme y dulce y la cola larga; el salvaje es más sabroso que el de cultivo, que llega casi siempre congelado. La gamba blanca es más pequeña, fina y dulce, y se luce cocida o a la plancha. Los dos se cocinan muy poco: cocidos en agua con mucha sal y cortados en agua con hielo, o marcados en plancha con sal gruesa.\n\nLa cabeza ennegrecida indica que el producto tiene días. Son alérgenos (crustáceos). La [[gamba-roja]] tiene su propia ficha.",
+  "method": [
+   "Lleva a hervor agua con mucha sal (o agua de mar).",
+   "Echa el marisco, cuenta desde que vuelve a hervir y saca a su tiempo.",
+   "Pásalo enseguida a agua con hielo y sal; escurre al minuto.",
+   "Plancha: muy caliente, sal gruesa, 1–2 minutos por lado.",
+   "Guarda cabezas y cáscaras para fondos y aceites."
+  ],
+  "ratios": [
+   {
+    "use": "Agua de cocción",
+    "ratio": "50–60 g de sal por litro",
+    "note": "O agua de mar."
+   },
+   {
+    "use": "Gamba blanca",
+    "ratio": "1 minuto desde que vuelve a hervir",
+    "note": "Y agua con hielo."
+   },
+   {
+    "use": "Langostino grande",
+    "ratio": "2–3 minutos",
+    "note": "Según tamaño."
+   },
+   {
+    "use": "Ración",
+    "ratio": "150–200 g",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "coccion-de-marisco",
+    "name": "Cocción de marisco",
+    "note": "Tiempos y puntos."
+   },
+   {
+    "id": "salpicon-y-cocteles-de-marisco",
+    "name": "Salpicón y cóctel",
+    "note": "Usos en frío."
+   },
+   {
+    "id": "gamba-roja",
+    "name": "Gamba roja",
+    "note": "La de la isla."
+   },
+   {
+    "id": "fondo-de-marisco",
+    "name": "Fondo de marisco",
+    "note": "Con cabezas y cáscaras."
+   }
+  ],
+  "keys": [
+   "Cocción corta y corte en hielo.",
+   "Agua muy salada.",
+   "Cabeza negra: producto con días.",
+   "Congelado: descongelar en cámara.",
+   "Alérgeno: crustáceo."
+  ],
+  "errors": [
+   {
+    "p": "Carne harinosa",
+    "fix": "Cocido de más o mal descongelado. Menos tiempo y descongelación en frío."
+   },
+   {
+    "p": "Soso",
+    "fix": "Agua con poca sal. Sala bien."
+   },
+   {
+    "p": "Se pela mal",
+    "fix": "Sin corte en hielo. Enfría al momento."
+   }
+  ],
+  "history": "Langostinos y gambas cocidos son un clásico de las barras y mesas de fiesta en toda España, con zonas de la costa andaluza muy conocidas por ellos.",
+  "uses": [
+   "Cocidos fríos",
+   "Plancha",
+   "Arroces",
+   "Salpicones y cócteles"
+  ],
+  "keep": "Frescos, 1 día a 0–2 °C. Cocidos, 1–2 días en frío. Congelados, a -18 °C o menos.",
+  "pro": "Cuece por tandas y guarda en frío escurridos; cabezas a fondo.",
+  "related": [
+   "coccion-de-marisco",
+   "salpicon-y-cocteles-de-marisco",
+   "gamba-roja",
+   "fondo-de-marisco",
+   "cigala-y-langosta",
+   "arroces"
+  ]
+ },
+ {
+  "id": "pavo",
+  "name": "Pavo",
+  "name_en": "Turkey",
+  "cat": "producto",
+  "group": "Aves",
+  "aka": [
+   "pavo",
+   "pechuga de pavo",
+   "muslo de pavo",
+   "pavo asado",
+   "pavo relleno"
+  ],
+  "summary": "Ave grande de pechuga muy magra y muslos de carne oscura: mejor despiezado, con salmuera y cada parte a su punto.",
+  "what": "El pavo tiene una pechuga grande y muy magra, que se seca con facilidad, y unos muslos de carne oscura con más tejido, que piden más tiempo. Por eso asarlo entero es difícil: cuando el muslo está hecho, la pechuga suele estar seca. Se trabaja mejor despiezado, con una [[salmuera]] o un [[marinados-en-seco|salado previo]], la pechuga a su punto y los muslos guisados, confitados o asados más tiempo.\n\nSi se rellena, el relleno se cocina aparte o se comprueba que llega a temperatura segura, porque dentro del ave se calienta tarde.",
+  "method": [
+   "Despieza: pechugas, muslos y alas; carcasa al fondo.",
+   "Pon la pechuga en salmuera unas horas o sálala la víspera.",
+   "Pechuga: dórala y termínala en horno hasta 72–74 °C en el centro (o en baja temperatura, con su tiempo); reposa.",
+   "Muslos: guísalos, confítalos o ásalos más tiempo, hasta que la carne se separe del hueso.",
+   "Relleno: cocínalo aparte en bandeja; si va dentro, hasta 74 °C en el centro del relleno."
+  ],
+  "ratios": [
+   {
+    "use": "Salmuera de pechuga",
+    "ratio": "50–60 g de sal por litro, 4–8 horas",
+    "note": "Lavar y secar."
+   },
+   {
+    "use": "Pechuga",
+    "ratio": "72–74 °C en el centro",
+    "note": "En baja temperatura, 62–65 °C con su tiempo."
+   },
+   {
+    "use": "Muslo",
+    "ratio": "75–80 °C en el centro",
+    "note": "O hasta que se deshaga."
+   },
+   {
+    "use": "Ración",
+    "ratio": "180–200 g de carne",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "pollo-y-aves",
+    "name": "Pollo y aves",
+    "note": "La misma lógica."
+   },
+   {
+    "id": "despiece-de-aves",
+    "name": "Despiece",
+    "note": "Cada parte a su punto."
+   },
+   {
+    "id": "salmuera",
+    "name": "Salmuera",
+    "note": "Para la pechuga."
+   },
+   {
+    "id": "confitado",
+    "name": "Muslos confitados",
+    "note": "Tiernos y jugosos."
+   }
+  ],
+  "keys": [
+   "Despiezado se cocina mejor que entero.",
+   "Salmuera para la pechuga.",
+   "Pechuga y muslo, cada uno a su punto.",
+   "Relleno aparte o comprobado con sonda.",
+   "La carcasa, al fondo."
+  ],
+  "errors": [
+   {
+    "p": "Pechuga seca",
+    "fix": "Asado entero o sin salmuera. Despieza y usa salmuera."
+   },
+   {
+    "p": "Muslo duro",
+    "fix": "Poco tiempo. Cocción más larga."
+   },
+   {
+    "p": "Relleno frío por dentro",
+    "fix": "Dentro del ave. Cocínalo aparte."
+   }
+  ],
+  "history": "El pavo llegó de América y se convirtió en un ave de fiesta en muchas cocinas europeas.",
+  "uses": [
+   "Asados de fiesta",
+   "Pechuga fileteada",
+   "Guisos con los muslos",
+   "Fondos"
+  ],
+  "keep": "Crudo, 2–3 días a 0–4 °C. Cocinado y enfriado rápido, 3 días.",
+  "pro": "Despieza al recibir, salmuera la víspera y cocina cada parte por separado.",
+  "related": [
+   "pollo-y-aves",
+   "despiece-de-aves",
+   "salmuera",
+   "confitado",
+   "asado-al-horno",
+   "fondo-oscuro-de-ave"
+  ]
+ },
+ {
+  "id": "jamon-curado",
+  "name": "Jamón curado",
+  "name_en": "Cured ham",
+  "cat": "producto",
+  "group": "Carne",
+  "aka": [
+   "jamón",
+   "jamón serrano",
+   "jamón ibérico",
+   "paleta",
+   "cortar jamón",
+   "crujiente de jamón",
+   "huesos de jamón"
+  ],
+  "summary": "Pieza curada que se corta fina y se sirve a temperatura ambiente, y que en cocina aporta sal, grasa y umami sin cocinarse de más.",
+  "what": "El jamón curado es la pata trasera del cerdo salada y curada durante meses o años; la paleta es la delantera, más pequeña. El jamón de cerdo blanco y el de cerdo ibérico se diferencian en la raza, la alimentación y la curación, y eso cambia la grasa y el sabor. Se sirve cortado muy fino a cuchillo, a temperatura ambiente para que la grasa brille.\n\nEn cocina se usa como condimento: unas lonchas sobre un plato caliente, taquitos en un salteado al final, crujientes al horno o los huesos para [[caldo-de-cocido-y-jamon|caldos]]. Cocinado mucho tiempo se endurece y sala; mejor añadirlo al final.",
+  "method": [
+   "Pieza en el soporte con la pezuña hacia arriba para empezar por la maza; quita solo la corteza de la zona que vas a cortar.",
+   "Corta lonchas finas y pequeñas con cuchillo largo y flexible, en paralelo.",
+   "Tapa la zona cortada con su propia grasa o un paño.",
+   "En cocina, añádelo al final o fuera del fuego.",
+   "Crujiente: lonchas finas en horno a 150–160 °C 10–15 minutos sobre papel."
+  ],
+  "ratios": [
+   {
+    "use": "Temperatura de servicio",
+    "ratio": "20–25 °C",
+    "note": "La grasa debe brillar."
+   },
+   {
+    "use": "Crujiente de jamón",
+    "ratio": "150–160 °C, 10–15 minutos",
+    "note": "Lonchas finas."
+   },
+   {
+    "use": "Ración de jamón cortado",
+    "ratio": "50–80 g",
+    "note": ""
+   },
+   {
+    "use": "Caldo de huesos",
+    "ratio": "1 hueso por 3 l de agua, 2–3 horas",
+    "note": "Sin sal añadida."
+   }
+  ],
+  "variants": [
+   {
+    "id": "caldo-de-cocido-y-jamon",
+    "name": "Caldo de jamón",
+    "note": "Con huesos."
+   },
+   {
+    "id": "cerdo-iberico",
+    "name": "Cerdo ibérico",
+    "note": "Cortes frescos."
+   },
+   {
+    "id": "sobrasada-y-embutidos",
+    "name": "Embutidos",
+    "note": "Otros curados."
+   },
+   {
+    "id": "crujientes-salados",
+    "name": "Crujientes",
+    "note": "Láminas al horno."
+   }
+  ],
+  "keys": [
+   "Corte fino y a cuchillo.",
+   "Temperatura ambiente para servir.",
+   "En cocina, al final: cocido de más se endurece.",
+   "Prueba la sal del plato antes de añadir más.",
+   "Huesos y recortes al caldo."
+  ],
+  "errors": [
+   {
+    "p": "Lonchas gruesas y duras",
+    "fix": "Cuchillo inadecuado o sin técnica. Cuchillo largo y flexible."
+   },
+   {
+    "p": "Grasa amarillenta y rancia",
+    "fix": "Zona expuesta mucho tiempo. Retira esa capa y tapa siempre el corte."
+   },
+   {
+    "p": "Plato salado",
+    "fix": "Jamón añadido a un plato ya sazonado. Sala al final."
+   }
+  ],
+  "history": "Curar las patas del cerdo con sal es una tradición muy antigua de la península, hoy con varias denominaciones y estilos reconocidos.",
+  "uses": [
+   "Servicio en lonchas",
+   "Condimento de platos",
+   "Crujientes",
+   "Caldos y fondos"
+  ],
+  "keep": "Pieza empezada, en lugar fresco y seco, con el corte tapado con su grasa. Loncheado al vacío, en frío y según su fecha; sacar antes de servir.",
+  "pro": "Corta al momento o loncha justo antes del servicio; aprovecha huesos y puntas para caldos.",
+  "related": [
+   "caldo-de-cocido-y-jamon",
+   "cerdo-iberico",
+   "sobrasada-y-embutidos",
+   "crujientes-salados",
+   "umami-y-fondo",
+   "sal-y-osmosis"
+  ]
+ },
+ {
+  "id": "coles-y-brasicas",
+  "name": "Coles y brásicas",
+  "name_en": "Cabbages and brassicas",
+  "cat": "producto",
+  "group": "Huerta",
+  "aka": [
+   "col",
+   "repollo",
+   "lombarda",
+   "coliflor",
+   "brócoli",
+   "coles de Bruselas",
+   "col rizada",
+   "kale",
+   "romanesco"
+  ],
+  "summary": "Verduras de invierno de la familia de la col: dulces y crujientes si se cocinan poco o se tuestan; azufradas y grises si se pasan.",
+  "what": "La familia de la col reúne verduras de hoja (repollo, lombarda, col rizada, col china), de flor (coliflor, brócoli, romanesco) y de yema (coles de Bruselas). Son de temporada fría, y muchas ganan dulzor con las heladas. Comparten unos compuestos de azufre que, con una cocción larga en agua, dan olor fuerte y color apagado; tostadas, asadas o salteadas deprisa, se vuelven dulces y con notas de fruto seco.\n\nTambién se comen crudas: la col cortada muy fina y masajeada con sal se ablanda y se vuelve una ensalada crujiente. La lombarda cambia de color con el ácido: rojiza con vinagre, azulada sin él.",
+  "method": [
+   "Elige piezas pesadas, compactas y de hojas firmes.",
+   "Asadas: coliflor en ramilletes o entera, coles de Bruselas por la mitad, horno a 200–220 °C hasta dorar.",
+   "Salteadas o escaldadas: poco tiempo, que queden verdes y firmes.",
+   "En crudo: col en juliana muy fina, sal y un ácido, masajeada 5 minutos.",
+   "Lombarda guisada con manzana, cebolla, vinagre y un poco de azúcar, a fuego suave."
+  ],
+  "ratios": [
+   {
+    "use": "Coliflor o coles asadas",
+    "ratio": "200–220 °C, 20–30 minutos",
+    "note": "Hasta dorar."
+   },
+   {
+    "use": "Brócoli escaldado",
+    "ratio": "2–3 minutos",
+    "note": "Y agua con hielo."
+   },
+   {
+    "use": "Col cruda masajeada",
+    "ratio": "10 g de sal por kg",
+    "note": "5 minutos y escurrir."
+   },
+   {
+    "use": "Lombarda guisada",
+    "ratio": "45–60 minutos a fuego suave",
+    "note": "Con vinagre para el color."
+   }
+  ],
+  "variants": [
+   {
+    "id": "pure-coliflor-tostada",
+    "name": "Puré de coliflor tostada",
+    "note": "Asada antes."
+   },
+   {
+    "id": "kimchi",
+    "name": "Kimchi",
+    "note": "Col china fermentada."
+   },
+   {
+    "id": "asado-de-verduras",
+    "name": "Asado",
+    "note": "Para dorar."
+   },
+   {
+    "id": "ph-y-acidez",
+    "name": "Color de la lombarda",
+    "note": "El ácido la vuelve roja."
+   }
+  ],
+  "keys": [
+   "Poco tiempo o mucho tueste: nunca hervida sin fin.",
+   "Las heladas las endulzan: son de invierno.",
+   "En crudo, muy fina y masajeada con sal.",
+   "Lombarda con ácido para que no se vuelva azul.",
+   "Hojas exteriores y tallos, al caldo."
+  ],
+  "errors": [
+   {
+    "p": "Olor fuerte y color gris",
+    "fix": "Cocción larga en agua. Menos tiempo o asar."
+   },
+   {
+    "p": "Lombarda azulada",
+    "fix": "Sin ácido. Añade vinagre o manzana."
+   },
+   {
+    "p": "Coliflor asada blanda y pálida",
+    "fix": "Bandeja llena u horno flojo. Separa y sube el horno."
+   }
+  ],
+  "history": "Las coles son de las verduras más antiguas de Europa y han sido la base de la cocina de invierno, en potajes, fermentados y guisos.",
+  "uses": [
+   "Asados y brasa",
+   "Purés",
+   "Ensaladas crudas",
+   "Fermentados",
+   "Potajes"
+  ],
+  "keep": "Enteras, 1–2 semanas en frío; la col entera, más. Cortadas, 2–3 días tapadas.",
+  "pro": "Asa por bandejas y termina al pedido; ten col cruda masajeada para dar crujiente.",
+  "related": [
+   "pure-coliflor-tostada",
+   "kimchi",
+   "asado-de-verduras",
+   "ph-y-acidez",
+   "hojas-y-brotes",
+   "punto-de-las-verduras"
+  ]
+ },
+ {
+  "id": "manzana-y-pera",
+  "name": "Manzana y pera",
+  "name_en": "Apple and pear",
+  "cat": "producto",
+  "group": "Fruta",
+  "aka": [
+   "manzana",
+   "pera",
+   "manzana reineta",
+   "manzana verde",
+   "pera conferencia",
+   "manzana asada",
+   "compota"
+  ],
+  "summary": "Frutas de otoño e invierno que sirven en dulce y en salado: ácidas para cocinar y acompañar, dulces y aromáticas para crudo.",
+  "what": "Hay manzanas ácidas y firmes, que aguantan la cocción y equilibran platos grasos (reineta, verde), y manzanas dulces y crujientes para comer en crudo. La reineta se deshace al asarla y da compotas muy buenas. Las peras son más aromáticas y jugosas; unas se mantienen enteras al escalfarlas y otras se deshacen. Las peras maduran fuera del árbol: se compran duras y se dejan a temperatura ambiente.\n\nEn salado acompañan cerdo, morcilla, hígados, caza y quesos; en crudo, en láminas o en juliana, dan frescor a ensaladas y crudos. Se oxidan al cortarlas: ver [[oxidacion-y-pardeamiento]].",
+  "method": [
+   "Elige la variedad por el uso: ácida para cocinar, dulce para crudo.",
+   "Corta al momento o protege con agua acidulada.",
+   "Asadas: enteras o en mitades con mantequilla y un poco de azúcar, horno a 180 °C hasta que se ablanden.",
+   "Compota: en dados con muy poco líquido, a fuego suave, hasta deshacer.",
+   "Peras escalfadas: peladas, en almíbar ligero o vino a 85–90 °C hasta que la punta del cuchillo entre fácil."
+  ],
+  "ratios": [
+   {
+    "use": "Manzana asada",
+    "ratio": "180 °C, 30–45 minutos",
+    "note": "Según tamaño."
+   },
+   {
+    "use": "Compota",
+    "ratio": "1 kg de fruta, 50–100 ml de agua, 50 g de azúcar",
+    "note": "Menos azúcar para salado."
+   },
+   {
+    "use": "Pera escalfada",
+    "ratio": "85–90 °C, 15–30 minutos",
+    "note": "Según madurez."
+   },
+   {
+    "use": "Agua acidulada",
+    "ratio": "Zumo de 1 limón por litro",
+    "note": "Para que no se oxide."
+   }
+  ],
+  "variants": [
+   {
+    "id": "fruta-asada",
+    "name": "Fruta asada",
+    "note": "Al horno."
+   },
+   {
+    "id": "frutas-en-almibar",
+    "name": "Peras en almíbar",
+    "note": "Escalfadas."
+   },
+   {
+    "id": "chutneys-y-compotas-saladas",
+    "name": "Compotas saladas",
+    "note": "Para carnes y quesos."
+   },
+   {
+    "id": "oxidacion-y-pardeamiento",
+    "name": "Oxidación",
+    "note": "Cómo evitarla."
+   }
+  ],
+  "keys": [
+   "Ácida para cocinar, dulce para crudo.",
+   "Cortar al momento o en agua acidulada.",
+   "Las peras maduran a temperatura ambiente.",
+   "Grasa y sal les sientan bien en salado.",
+   "Guárdalas separadas: aceleran la maduración de otras frutas."
+  ],
+  "errors": [
+   {
+    "p": "Manzana deshecha en un salteado",
+    "fix": "Variedad blanda. Usa una ácida y firme."
+   },
+   {
+    "p": "Pera dura y sin aroma",
+    "fix": "Sin madurar. Déjala unos días a temperatura ambiente."
+   },
+   {
+    "p": "Láminas oscuras",
+    "fix": "Cortadas antes. Corta al momento o acidula."
+   }
+  ],
+  "history": "Manzanas y peras se cultivan en Europa desde la antigüedad y son la fruta de guarda tradicional del otoño y el invierno.",
+  "uses": [
+   "Postres asados y escalfados",
+   "Compotas para carnes",
+   "Ensaladas y crudos",
+   "Tartas"
+  ],
+  "keep": "En frío, separadas de otras frutas, varias semanas las manzanas; las peras maduras, pocos días.",
+  "pro": "Corta al momento; ten compota salada hecha para acompañar carnes.",
+  "related": [
+   "fruta-asada",
+   "frutas-en-almibar",
+   "chutneys-y-compotas-saladas",
+   "oxidacion-y-pardeamiento",
+   "quesos-en-cocina",
+   "tartas-de-fruta"
+  ]
  }
 ]

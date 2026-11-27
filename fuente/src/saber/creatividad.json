@@ -3718,5 +3718,575 @@
    "documentar-tu-obra",
    "estilo-propio"
   ]
+ },
+ {
+  "id": "menu-a-cuatro-manos",
+  "name": "Un menú a cuatro manos",
+  "name_en": "A four-hands menu",
+  "cat": "creatividad",
+  "group": "Menús",
+  "aka": [
+   "cocina a cuatro manos",
+   "colaboracion entre cocineros",
+   "cena a cuatro manos",
+   "menu compartido",
+   "cocinero invitado"
+  ],
+  "summary": "Cómo crear un menú con otro cocinero: encontrar un hilo común, repartir los pases, respetar dos estilos y que el resultado sea un solo menú, no dos medios.",
+  "what": "Cocinar con otro cocinero obliga a mirar la propia cocina desde fuera. El reto creativo es que dos estilos, dos productos o dos lugares se entiendan en un mismo menú: que haya diálogo entre los pases y no una sucesión de platos de cada uno. Funciona mejor cuando hay un hilo claro (un producto, un paisaje, una técnica compartida), cuando cada uno aporta lo que mejor hace y cuando se prueba todo junto antes. Las reglas del [[ritmo-de-un-menu]] siguen valiendo.",
+  "method": [
+   "Antes de proponer platos, cuéntale al otro cocinero tu cocina y escucha la suya: productos, técnicas, lo que nunca haríais.",
+   "Elegid juntos un hilo: un producto que los dos tengáis, un paisaje, una técnica o un contraste entre vuestros lugares.",
+   "Repartid los pases por ritmo y no por turnos: alternad cuando tenga sentido, compartid algún plato hecho a medias.",
+   "Proponed un plato en el que cada uno aporte un elemento del otro: es el que mejor cuenta la colaboración.",
+   "Haced una prueba completa juntos, en orden y a la temperatura de servicio.",
+   "Pensad cómo se contará en sala: quién hace qué y por qué están juntos esos platos."
+  ],
+  "ratios": [
+   {
+    "use": "Platos compartidos",
+    "ratio": "Al menos 1–2 en el menú",
+    "note": "Son los que justifican la colaboración."
+   },
+   {
+    "use": "Hilo común",
+    "ratio": "1 idea clara",
+    "note": "Más ideas, menos menú."
+   },
+   {
+    "use": "Pruebas conjuntas",
+    "ratio": "Al menos una completa",
+    "note": "Antes del día."
+   }
+  ],
+  "variants": [
+   {
+    "id": "ritmo-de-un-menu",
+    "name": "Ritmo de un menú",
+    "note": "Cómo ordenar los pases."
+   },
+   {
+    "id": "aprender-de-un-stage",
+    "name": "Aprender de un stage",
+    "note": "Otra forma de trabajar con otra cocina."
+   },
+   {
+    "id": "estilo-propio",
+    "name": "Estilo propio",
+    "note": "Saber qué te define antes de mezclarlo."
+   }
+  ],
+  "keys": [
+   "Un hilo común antes que una lista de platos.",
+   "Diálogo entre pases, no turnos.",
+   "Cada uno aporta lo que mejor hace.",
+   "Al menos un plato hecho entre los dos.",
+   "Probar todo junto antes del día."
+  ],
+  "errors": [
+   {
+    "p": "Dos menús pegados",
+    "fix": "Sin hilo común. Define la idea y reordena los pases por ritmo."
+   },
+   {
+    "p": "Platos que se pisan",
+    "fix": "Mismo producto o técnica repetidos. Reparte por contraste."
+   },
+   {
+    "p": "Un estilo tapa al otro",
+    "fix": "Falta de equilibrio. Asegura que los dos se reconozcan en el menú."
+   }
+  ],
+  "history": "Las cenas a cuatro manos entre cocineros se han hecho habituales en las últimas décadas como forma de intercambio y aprendizaje entre cocinas.",
+  "uses": [
+   "Cenas con cocineros invitados",
+   "Intercambios con otras cocinas",
+   "Eventos",
+   "Aprendizaje propio"
+  ],
+  "keep": "Guarda el menú, las fichas de los platos compartidos y lo que aprendiste del otro cocinero.",
+  "pro": "Deja escrito qué aporta cada uno a cada plato: ayuda en la cocina y en la sala.",
+  "related": [
+   "ritmo-de-un-menu",
+   "aprender-de-un-stage",
+   "estilo-propio",
+   "contar-un-plato",
+   "prueba-con-el-equipo"
+  ]
+ },
+ {
+  "id": "cocinar-con-un-solo-color",
+  "name": "Cocinar con un solo color",
+  "name_en": "Cooking with a single colour",
+  "cat": "creatividad",
+  "group": "Método",
+  "aka": [
+   "plato monocromo",
+   "plato blanco",
+   "plato verde",
+   "un solo color",
+   "monocromatico"
+  ],
+  "summary": "Un ejercicio creativo: construir un plato con productos de un mismo color y mantener el interés con texturas, temperaturas y sabores distintos.",
+  "what": "Limitar el color obliga a pensar en todo lo demás. Un plato blanco (coliflor, almendra, pescado blanco, lácteos, cebolla), verde (guisante, hierbas, pepino, aceite verde) o rojo (tomate, fresa, remolacha, pimiento) se vuelve interesante si cada elemento aporta una textura, una temperatura o un sabor distinto. Además, los productos de un mismo color a menudo coinciden en temporada y combinan bien. Es un buen reto del Laboratorio y una forma de entrenar el ojo y el paladar.",
+  "method": [
+   "Elige un color y haz la lista de productos de temporada de ese color: verduras, frutas, lácteos, pescados, salsas.",
+   "Elige un protagonista y busca tres o cuatro acompañantes con texturas distintas: crudo, crema, crujiente, gel.",
+   "Mete un contraste de sabor (ácido, amargo, salado) aunque el color sea el mismo.",
+   "Juega con los matices: un plato blanco tiene marfiles, grises y transparentes; uno verde, del claro al oscuro.",
+   "Prueba el plato con los ojos cerrados: tiene que funcionar también sin el efecto visual.",
+   "Si el plato es aburrido, añade un solo punto de otro color como acento."
+  ],
+  "ratios": [
+   {
+    "use": "Texturas distintas",
+    "ratio": "Al menos 3",
+    "note": "Crema, crujiente y algo jugoso o crudo."
+   },
+   {
+    "use": "Contraste de sabor",
+    "ratio": "Al menos 1",
+    "note": "Ácido, amargo o salado."
+   },
+   {
+    "use": "Acento de otro color",
+    "ratio": "0–1",
+    "note": "Solo si el plato lo pide."
+   }
+  ],
+  "variants": [
+   {
+    "id": "emplatado",
+    "name": "Emplatado",
+    "note": "Cómo componer el plato."
+   },
+   {
+    "id": "clorofila-y-colores-naturales",
+    "name": "Colores naturales",
+    "note": "Cómo intensificar un color sin artificios."
+   },
+   {
+    "id": "un-solo-producto",
+    "name": "Un solo producto",
+    "note": "Otro ejercicio de limitación."
+   }
+  ],
+  "keys": [
+   "La limitación de color obliga a variar textura y temperatura.",
+   "Mismo color suele ser misma temporada.",
+   "Un contraste de sabor imprescindible.",
+   "Juega con matices del mismo color.",
+   "Tiene que saber bien con los ojos cerrados."
+  ],
+  "errors": [
+   {
+    "p": "Plato plano",
+    "fix": "Texturas iguales. Añade un crujiente y algo crudo."
+   },
+   {
+    "p": "Sabe a poco",
+    "fix": "Sin contraste de sabor. Añade ácido o amargo."
+   },
+   {
+    "p": "Efecto sin sentido",
+    "fix": "Productos elegidos solo por el color. Comprueba que combinan en boca."
+   }
+  ],
+  "history": "Los platos monocromos aparecen en la cocina de autor como ejercicio visual y creativo; los productos de una misma estación suelen compartir tonos.",
+  "uses": [
+   "Retos del Laboratorio",
+   "Aperitivo o prepostre de menú",
+   "Formación del equipo",
+   "Plato de temporada"
+  ],
+  "keep": "Guarda las fichas de los ejercicios y las fotos: a veces un ejercicio acaba en carta.",
+  "pro": "Propón el reto al equipo con un color y una semana de plazo; catad los resultados juntos.",
+  "related": [
+   "emplatado",
+   "clorofila-y-colores-naturales",
+   "un-solo-producto",
+   "contraste-y-equilibrio",
+   "temporada-mes-a-mes"
+  ]
+ },
+ {
+  "id": "contraste-de-temperaturas",
+  "name": "El contraste de temperaturas",
+  "name_en": "Temperature contrast",
+  "cat": "creatividad",
+  "group": "Sabor",
+  "aka": [
+   "frio y caliente",
+   "contraste termico",
+   "temperatura en el plato",
+   "caliente y frio en un bocado"
+  ],
+  "summary": "Cómo usar el contraste entre frío y caliente en un mismo plato o bocado: qué aporta, cuánto dura y cómo hacer que llegue intacto a la mesa.",
+  "what": "Un helado sobre una fruta asada caliente, un tartar frío con una tostada recién hecha o una crema fría con un crujiente caliente sorprenden porque la boca nota dos temperaturas a la vez. El contraste aviva el bocado, pero dura poco: en dos o tres minutos todo tiende a templarse. Además, la temperatura cambia el sabor: el frío apaga el dulce, la sal y el aroma, y el calor los aviva, así que cada elemento se sazona para la temperatura a la que se come. La base científica está en [[temperatura-de-servicio]].",
+  "method": [
+   "Decide qué elemento va frío y cuál caliente, y por qué: frescor frente a profundidad, crudo frente a tostado.",
+   "Sazona cada elemento a la temperatura a la que se va a comer: el frío pide más sal y más dulce.",
+   "Separa los elementos en el plato o pon una barrera (un crujiente, una lámina) para que no se templen entre sí.",
+   "Monta en el último segundo y sirve sin esperar.",
+   "Calcula el tiempo de llegada a la mesa: si es largo, el contraste se pierde.",
+   "Prueba el bocado completo en el pase, como lo comerá el comensal."
+  ],
+  "ratios": [
+   {
+    "use": "Elemento caliente",
+    "ratio": "60–65 °C al servir",
+    "note": "Más caliente quema; menos no contrasta."
+   },
+   {
+    "use": "Elemento frío",
+    "ratio": "2–6 °C, o −12 a −10 °C si es helado",
+    "note": "Plato frío si lo frío es protagonista."
+   },
+   {
+    "use": "Duración del contraste",
+    "ratio": "2–3 minutos",
+    "note": "Monta y sirve al momento."
+   }
+  ],
+  "variants": [
+   {
+    "id": "contraste-y-equilibrio",
+    "name": "Contraste y equilibrio",
+    "note": "Otros contrastes: textura y sabor."
+   },
+   {
+    "id": "temperatura-de-servicio",
+    "name": "Temperatura de servicio",
+    "note": "Cómo cambia el sabor con la temperatura."
+   },
+   {
+    "id": "helados-de-autor",
+    "name": "Helados salados",
+    "note": "El frío en platos salados."
+   }
+  ],
+  "keys": [
+   "El contraste dura poco: montaje y servicio inmediatos.",
+   "Sazona cada elemento para su temperatura.",
+   "Separa o protege para que no se templen.",
+   "El frío apaga sabores; el calor los aviva.",
+   "Prueba el bocado completo."
+  ],
+  "errors": [
+   {
+    "p": "Todo llega templado",
+    "fix": "Montaje lento o elementos en contacto. Monta al final y separa."
+   },
+   {
+    "p": "Lo frío sabe a poco",
+    "fix": "Sazonado en caliente. Rectifica en frío."
+   },
+   {
+    "p": "Helado derretido",
+    "fix": "Sobre una superficie muy caliente. Usa una barrera crujiente."
+   }
+  ],
+  "history": "Combinar frío y caliente es tan antiguo como servir helado con un postre caliente; la cocina de autor lo ha llevado a platos salados y aperitivos.",
+  "uses": [
+   "Postres con helado",
+   "Aperitivos",
+   "Crudos con elemento caliente",
+   "Platos de verano"
+  ],
+  "keep": "Anota en la ficha del plato la temperatura de cada elemento y el tiempo máximo entre montaje y mesa.",
+  "pro": "Organiza el pase para que el elemento frío salga de la cámara en el último paso. Platos atemperados según cuál sea el protagonista.",
+  "related": [
+   "contraste-y-equilibrio",
+   "temperatura-de-servicio",
+   "helados-de-autor",
+   "construir-un-plato",
+   "emplatado"
+  ]
+ },
+ {
+  "id": "de-un-viaje-a-un-plato",
+  "name": "De un viaje a un plato",
+  "name_en": "From a journey to a dish",
+  "cat": "creatividad",
+  "group": "Raíces",
+  "aka": [
+   "viajar para cocinar",
+   "cocina de viaje",
+   "influencias de viaje",
+   "traer ideas de viaje",
+   "cocina viajera"
+  ],
+  "summary": "Cómo convertir lo que se aprende en un viaje en un plato propio: observar, apuntar, entender el contexto y traducirlo al producto de casa, con respeto por el origen.",
+  "what": "Un viaje enseña sabores, técnicas y formas de comer que no se aprenden en casa. Para que acabe en un plato y no en una copia, hay que entender por qué ese plato es así allí: el clima, el producto, la historia, la forma de comerlo. Después se traduce con el producto y el estilo propios, conservando lo esencial. Y se cuenta de dónde viene: nombrar el origen es respeto, y caricaturizar una cocina ajena es lo contrario. Para otras fuentes, mira [[inspiracion-fuera-de-la-cocina]].",
+  "method": [
+   "Durante el viaje, come en mercados, casas y lugares sencillos además de restaurantes, y apunta cada día lo que más te sorprende.",
+   "Pregunta cómo y por qué se hace algo; si puedes, cocina con alguien de allí.",
+   "Al volver, elige una sola idea: un sabor, una técnica, una forma de comer.",
+   "Busca su equivalente en tu producto y tu temporada: qué tienes en la isla que cumpla la misma función.",
+   "Cocina versiones hasta que el plato sea tuyo pero se reconozca el origen.",
+   "Nombra el origen en la ficha y en sala."
+  ],
+  "ratios": [
+   {
+    "use": "Ideas por viaje llevadas a la cocina",
+    "ratio": "1–3",
+    "note": "Pocas y bien trabajadas."
+   },
+   {
+    "use": "Notas",
+    "ratio": "Cada día del viaje",
+    "note": "Con fotos y sabores descritos."
+   },
+   {
+    "use": "Producto local en el plato",
+    "ratio": "El protagonista y casi todo lo demás",
+    "note": "La técnica o el sabor vienen de fuera."
+   }
+  ],
+  "variants": [
+   {
+    "id": "inspiracion-fuera-de-la-cocina",
+    "name": "Inspiración fuera de la cocina",
+    "note": "Otras fuentes de ideas."
+   },
+   {
+    "id": "aprender-de-un-stage",
+    "name": "Aprender de un stage",
+    "note": "Viajar para trabajar en otra cocina."
+   },
+   {
+    "id": "producto-de-la-isla",
+    "name": "Producto de la isla",
+    "note": "La despensa donde se traduce la idea."
+   }
+  ],
+  "keys": [
+   "Entender el contexto antes de copiar la forma.",
+   "Una idea por plato.",
+   "Producto propio, idea viajera.",
+   "Nombrar el origen.",
+   "Nada de caricaturas de una cocina ajena."
+  ],
+  "errors": [
+   {
+    "p": "Plato que es una copia",
+    "fix": "Se reprodujo sin traducir. Cambia el producto por el tuyo y mantén la idea."
+   },
+   {
+    "p": "Plato que no se entiende",
+    "fix": "Se perdió lo esencial. Vuelve a la nota y busca qué lo hacía especial."
+   },
+   {
+    "p": "Ingredientes importados sin sentido",
+    "fix": "Se buscó lo exótico. Busca el equivalente local."
+   }
+  ],
+  "history": "Los cocineros siempre han traído ideas de sus viajes, y muchas cocinas regionales nacieron del intercambio entre pueblos a través del comercio y las migraciones.",
+  "uses": [
+   "Platos nuevos de carta",
+   "Menú de temporada con influencia",
+   "Formación del equipo",
+   "Contar la trayectoria propia"
+  ],
+  "keep": "Guarda el cuaderno de viaje con fecha en tu archivo y enlázalo a los platos que salgan de él.",
+  "pro": "Al volver de un viaje, prepara una cata con el equipo de las ideas que traes y decidid cuál se trabaja.",
+  "related": [
+   "inspiracion-fuera-de-la-cocina",
+   "aprender-de-un-stage",
+   "producto-de-la-isla",
+   "documentar-tu-obra",
+   "contar-un-plato"
+  ]
+ },
+ {
+  "id": "reinterpretar-un-clasico",
+  "name": "Reinterpretar un clásico",
+  "name_en": "Reinterpreting a classic",
+  "cat": "creatividad",
+  "group": "Método",
+  "aka": [
+   "version de un clasico",
+   "actualizar un plato",
+   "deconstruccion",
+   "plato clasico renovado",
+   "revisitar un plato"
+  ],
+  "summary": "Cómo actualizar un plato clásico de la cocina española o mediterránea sin perder lo que lo hace reconocible: qué tocar, qué respetar y cuándo dejarlo como está.",
+  "what": "Un clásico ha llegado hasta hoy porque funciona. Reinterpretarlo tiene sentido si se aporta algo: un producto mejor, una técnica más precisa, una forma más actual de servirlo o un contraste que le faltaba. Lo primero es hacer la versión clásica muy bien y entender qué la define. Después se cambia una cosa cada vez (forma, textura, temperatura, formato) y se comprueba que se sigue reconociendo. A veces la mejor reinterpretación es la más fiel, hecha con el mejor producto. Para los recuerdos personales, mira [[memoria-del-sabor]].",
+  "method": [
+   "Cocina el clásico en su versión tradicional, con el mejor producto, hasta que salga perfecto.",
+   "Escribe qué lo hace reconocible: un sabor, un contraste, una textura, una forma de comerlo.",
+   "Decide qué vas a cambiar y por qué: forma, temperatura, textura, formato o un producto.",
+   "Cambia una sola cosa por prueba y cata al lado del original.",
+   "Pregunta a alguien que conozca bien el clásico si lo reconoce.",
+   "Si la versión no mejora el original, quédate con el original bien hecho."
+  ],
+  "ratios": [
+   {
+    "use": "Elementos que se respetan",
+    "ratio": "El sabor central y 1–2 rasgos",
+    "note": "Lo que lo hace reconocible."
+   },
+   {
+    "use": "Cambios por prueba",
+    "ratio": "1",
+    "note": "Mira [[catas-y-notas]]."
+   },
+   {
+    "use": "Comparación",
+    "ratio": "Siempre con el original al lado",
+    "note": "Gana el que mejor sepa."
+   }
+  ],
+  "variants": [
+   {
+    "id": "memoria-del-sabor",
+    "name": "La memoria del sabor",
+    "note": "Reinterpretar un recuerdo propio."
+   },
+   {
+    "id": "cocina-ibicenca",
+    "name": "Clásicos de la isla",
+    "note": "Los platos tradicionales de Ibiza."
+   },
+   {
+    "id": "producto-o-tecnica",
+    "name": "Producto o técnica",
+    "note": "Decidir cuánto intervenir."
+   }
+  ],
+  "keys": [
+   "Domina el original antes de cambiarlo.",
+   "Cambia la forma, no el alma.",
+   "Una cosa cada vez.",
+   "El original al lado en cada cata.",
+   "A veces lo mejor es no tocarlo."
+  ],
+  "errors": [
+   {
+    "p": "Nadie lo reconoce",
+    "fix": "Se cambió lo esencial. Vuelve al sabor central."
+   },
+   {
+    "p": "Deconstrucción sin sentido",
+    "fix": "Elementos separados que no se comen juntos. Asegura que el bocado completo recuerde al clásico."
+   },
+   {
+    "p": "Peor que el original",
+    "fix": "La versión no aporta. Mejora el producto del original o déjalo."
+   }
+  ],
+  "history": "Reinterpretar los clásicos ha sido un motor de la cocina española de autor de las últimas décadas, que llevó platos tradicionales a nuevas formas y texturas.",
+  "uses": [
+   "Platos de carta con raíz",
+   "Menú de raíz",
+   "Formación del equipo",
+   "Retos del Laboratorio"
+  ],
+  "keep": "Guarda la ficha del original y de cada versión, con lo que cambiaste y por qué.",
+  "pro": "Sirve la reinterpretación y el original en la cata con el equipo; votad a ciegas.",
+  "related": [
+   "memoria-del-sabor",
+   "cocina-ibicenca",
+   "producto-o-tecnica",
+   "catas-y-notas",
+   "postres-clasicos-espanoles"
+  ]
+ },
+ {
+  "id": "cocinar-para-el-visitante",
+  "name": "Cocinar para el visitante",
+  "name_en": "Cooking for visitors",
+  "cat": "creatividad",
+  "group": "Raíces",
+  "aka": [
+   "cocina para turistas",
+   "comensal internacional",
+   "cocina local para visitantes",
+   "identidad y visitante",
+   "contar la isla"
+  ],
+  "summary": "Cómo presentar la cocina de la isla a comensales de todo el mundo sin diluirla: qué adaptar, qué no tocar y cómo hacerla comprensible.",
+  "what": "En una isla que recibe a mucha gente de fuera, el riesgo es cocinar para lo que el visitante cree que quiere y perder la identidad. El reto creativo es lo contrario: que alguien que no conoce la isla entienda y disfrute su cocina. Eso pide platos legibles (un producto reconocible, una explicación sencilla), algo de puente con lo que el visitante conoce y una verdad que no se negocia: el producto y los sabores de aquí. Las dietas y alergias se atienden sin rebajar el plato. La base está en [[cocina-ibicenca]] y [[producto-de-la-isla]].",
+  "method": [
+   "Define qué no se toca: los productos y sabores que hacen que tu cocina sea de la isla.",
+   "Para cada plato, busca un punto de entrada reconocible para quien viene de fuera: un producto conocido, una técnica familiar.",
+   "Cuenta el plato en pocas palabras, en varios idiomas si hace falta: origen, producto, cómo se come.",
+   "Ten adaptaciones probadas para alergias y dietas, sin cambiar la esencia.",
+   "Observa qué platos se quedan en el plato y por qué: a veces falta explicación, no cambiar la receta.",
+   "Incluye siempre algo que solo se pueda comer aquí."
+  ],
+  "ratios": [
+   {
+    "use": "Platos de raíz en la carta",
+    "ratio": "Al menos uno por sección",
+    "note": "Lo que se viene a buscar."
+   },
+   {
+    "use": "Explicación del plato",
+    "ratio": "1–2 frases",
+    "note": "En la carta y en sala."
+   },
+   {
+    "use": "Adaptaciones",
+    "ratio": "Probadas de antemano",
+    "note": "Mira [[cocinar-con-restricciones]]."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cocina-ibicenca",
+    "name": "Cocina ibicenca",
+    "note": "Los platos y técnicas de la isla."
+   },
+   {
+    "id": "contar-un-plato",
+    "name": "Contar un plato",
+    "note": "Cómo explicarlo en sala."
+   },
+   {
+    "id": "cocinar-con-restricciones",
+    "name": "Cocinar con restricciones",
+    "note": "Alergias y dietas sin perder el plato."
+   }
+  ],
+  "keys": [
+   "Identidad no negociable, presentación comprensible.",
+   "Un punto de entrada reconocible en cada plato.",
+   "Contar más antes que cambiar la receta.",
+   "Algo que solo se pueda comer aquí.",
+   "Adaptaciones probadas, no improvisadas."
+  ],
+  "errors": [
+   {
+    "p": "Carta igual que en cualquier sitio",
+    "fix": "Se cocina para el visitante imaginado. Vuelve al producto y a los platos de la isla."
+   },
+   {
+    "p": "Platos que no se entienden",
+    "fix": "Falta de explicación. Añade una frase clara y un punto de entrada."
+   },
+   {
+    "p": "Adaptaciones que desvirtúan",
+    "fix": "Se cambia la esencia. Diseña la adaptación desde el sabor central."
+   }
+  ],
+  "history": "Las islas mediterráneas viven desde hace décadas el encuentro entre su cocina tradicional y los visitantes; muchas cocinas han encontrado en ese encuentro su identidad actual.",
+  "uses": [
+   "Diseño de la carta",
+   "Explicación en sala",
+   "Menú de raíz",
+   "Formación del equipo"
+  ],
+  "keep": "Apunta en la ficha de cada plato cómo se explica en otros idiomas y qué preguntas hacen los comensales.",
+  "pro": "Prepara con sala una frase por plato en los idiomas más habituales; el diccionario de cocina de la app ayuda con los términos.",
+  "related": [
+   "cocina-ibicenca",
+   "producto-de-la-isla",
+   "contar-un-plato",
+   "cocinar-con-restricciones",
+   "escribir-una-carta",
+   "cocina-de-verano-e-invierno"
+  ]
  }
 ]
