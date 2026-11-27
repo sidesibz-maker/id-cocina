@@ -17,6 +17,7 @@ import {cardsFor} from './train.js';
 import {bookSheet, printBook} from './kbook.js';
 import {compareSheet} from './kcompare.js';
 import {GLOSSARY} from '../saber/glosario.js';
+import {IDIOMAS} from '../saber/glosario-idiomas.js';
 // «Para ti»: fichas que casan con los intereses de Mi cocina (brasa, marisco, México, fermentos…).
 const INTEREST_WORDS = {'brasa': 'brasa', 'verdura a la brasa': 'verduras brasa', 'pescado y marisco': 'pescado marisco', 'postres': 'crema|merengue|helado|flao', 'asia': 'dashi|tempura|miso|ponzu|dumplings|curry|robata', 'mexico': 'chiles|tortillas|maiz', 'méxico': 'chiles|tortillas|maiz', 'casqueria': 'casqueria', 'casquería': 'casqueria', 'encurtidos y fermentos': 'fermentacion|encurtidos', 'sin alcohol': 'maridaje sin alcohol|shrubs|kombucha', 'cocina ibicenca': 'ibicenca|flao|almendra', 'para compartir': 'picada'};
 function forYouHtml() {
@@ -265,11 +266,20 @@ function entryHtml(id, tab) {
 }
 
 // ---------- Diccionario de cocina: términos del oficio, de la A a la Z ----------
+// Cada término, también en francés, italiano, inglés y (si lo hay) japonés, con un botón para oírlo pronunciado.
+const VOICE = {es: 'es-ES', fr: 'fr-FR', it: 'it-IT', en: 'en-GB', ja: 'ja-JP'}, LANGS = () => [['fr', t('Francés', 'French')], ['it', t('Italiano', 'Italian')], ['en', t('Inglés', 'English')], ['ja', t('Japonés', 'Japanese')]];
+const canSay = () => typeof speechSynthesis !== 'undefined' && typeof SpeechSynthesisUtterance !== 'undefined';
+const sayBtn = (word, lang, label) => (canSay() && word ? ' <button type="button" class="kdict-say" data-say="' + esc(word) + '" data-lang="' + esc(VOICE[lang] || 'es-ES') + '" aria-label="' + esc(label) + '">' + icon('sound') + '</button>' : '');
+function langsHtml(w) {
+ const x = IDIOMAS[w]; if (!x) return '';
+ const list = LANGS().filter(([k]) => x[k]);
+ return list.length ? '<span class="kdict-langs">' + list.map(([k, l]) => '<span><small>' + esc(l) + '</small> ' + esc(x[k]) + sayBtn(x[k], k, t('Escuchar en ', 'Listen in ') + l.toLowerCase() + ': ' + x[k]) + '</span>').join('') + '</span>' : '';
+}
 function dictHtml(focus) {
  const list = GLOSSARY.slice().sort((a, b) => a[0].localeCompare(b[0], 'es'));
  return '<a class="back" href="#/biblioteca">' + icon('left') + esc(t('Biblioteca', 'Library')) + '</a><header class="page-head"><h1>' + esc(t('Diccionario de cocina', 'Kitchen dictionary')) + '</h1><p>' + esc(t('Las palabras del oficio en una o dos frases. Cuando hay ficha, enlaza para saber más.', 'The words of the trade in a sentence or two. Where there is an entry, it links to learn more.')) + '</p></header>' +
   '<div class="searchbox"><label class="sr" for="dictQ">' + esc(t('Buscar un término', 'Find a term')) + '</label>' + icon('search') + '<input id="dictQ" type="search" autocomplete="off" placeholder="' + esc(t('Napar, desglasar, brunoise…', 'Napar, deglaze, brunoise…')) + '"></div>' +
-  '<p class="fine" id="dictStatus" role="status"></p><dl class="kdict">' + list.map(([w, d, id]) => '<div class="kdict-row' + (norm(w) === norm(focus) ? ' is-focus' : '') + '" id="dict-' + esc(slug(w)) + '" data-w="' + esc(norm(w + ' ' + d)) + '"><dt>' + esc(w) + '</dt><dd>' + esc(d) + (id && entryById(id) ? ' <a class="kref" href="' + href(id) + '">' + esc(t('Ficha: ', 'Entry: ') + entryById(id).name) + '</a>' : '') + '</dd></div>').join('') + '</dl>';
+  '<p class="fine" id="dictStatus" role="status"></p><dl class="kdict">' + list.map(([w, d, id]) => '<div class="kdict-row' + (norm(w) === norm(focus) ? ' is-focus' : '') + '" id="dict-' + esc(slug(w)) + '" data-w="' + esc(norm(w + ' ' + d + ' ' + Object.values(IDIOMAS[w] || {}).join(' '))) + '"><dt>' + esc(w) + sayBtn(w, IDIOMAS[w]?.origen && IDIOMAS[w].origen !== 'es' && norm(IDIOMAS[w][IDIOMAS[w].origen] || '') === norm(w) ? IDIOMAS[w].origen : 'es', t('Escuchar ', 'Listen to ') + w) + '</dt><dd>' + esc(d) + langsHtml(w) + (id && entryById(id) ? ' <a class="kref" href="' + href(id) + '">' + esc(t('Ficha: ', 'Entry: ') + entryById(id).name) + '</a>' : '') + '</dd></div>').join('') + '</dl>';
 }
 export const render = params => {
  if (params[0] === 'buscar') { presetSaber(params[1] ? decodeURIComponent(params[1]) : ''); params.length = 0; }
@@ -308,8 +318,8 @@ function entryFromReply(text, topic) {
 export function mount(root, params) {
  const repaint = () => { if (root.isConnected) root.innerHTML = render(params); };
  if (params[0] === 'diccionario') {
-  const dq = $('#dictQ', root);
-  dq?.addEventListener('input', () => { const q = norm(dq.value).trim(); let n = 0; $$('.kdict-row', root).forEach(row => { row.hidden = !!q && !row.dataset.w.includes(q); if (!row.hidden) n++; }); $('#dictStatus', root).textContent = q ? (n === 1 ? t('1 término', '1 term') : n + t(' términos', ' terms')) : ''; });
+  root.addEventListener('input', e => { if (e.target.id !== 'dictQ') return; const dq = e.target, q = norm(dq.value).trim(); let n = 0; $$('.kdict-row', root).forEach(row => { row.hidden = !!q && !row.dataset.w.includes(q); if (!row.hidden) n++; }); $('#dictStatus', root).textContent = q ? (n === 1 ? t('1 término', '1 term') : n + t(' términos', ' terms')) : ''; });
+  root.addEventListener('click', e => { const b = e.target.closest('[data-say]'); if (!b) return; try { speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(b.dataset.say); u.lang = b.dataset.lang || 'es-ES'; u.rate = .9; speechSynthesis.speak(u); } catch {} });
   if (params[1]) setTimeout(() => $('.kdict-row.is-focus', root)?.scrollIntoView({block: 'center'}), 50);
   return null;
  }

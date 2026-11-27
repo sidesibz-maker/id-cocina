@@ -38,9 +38,13 @@ ok(chatUrl.startsWith('https://chatgpt.com/') && (chatUrl.includes('?q=') ? deco
 console.log('enlace al chat con la consulta escrita:', chatUrl.includes('?q='));
 await page.fill('#adviceReply', 'Claro:\n```json\n{"verdict":"Tiene sentido, baja el romesco.","works":["La brasa"],"changes":[{"what":"Más ácido","why":"Hay grasa","how":"Cebolla encurtida"}],"signature":"Aceite ahumado","service":{"mise":["Pulpo cocido"],"pass":"Tres minutos","risks":[]},"plating":"Sencillo","variants":[{"label":"Más sencilla","idea":"Solo patata"}],"names":[{"es":"Pulpo brasa","en":"Charcoal octopus"}],"allergens":["moluscos"],"issues":[]}\n```');
 await page.evaluate(t => navigator.clipboard.writeText(t), await page.inputValue('#adviceReply')); await page.fill('#adviceReply', ''); await page.click('#adviceSec [data-paste]'); await page.waitForSelector('.advice-lead');
-// Imagen: copiar descripción y añadir un archivo
+// Imagen: copiar descripción y añadir un archivo (con el estilo de fotos de la casa, si lo hay)
+const dishHash = await page.evaluate(() => location.hash);
+await go('#/cocina'); await page.waitForSelector('#kPhoto'); await page.fill('#kPhoto', 'Plato de cerámica negra mate y luz de ventana'); await page.click('#kSave'); await wait(600);
+await go(dishHash); await page.waitForSelector('#dishName');
 await page.click('[data-act=image]'); await wait(200);
-ok((await page.evaluate(() => navigator.clipboard.readText())).includes('fotografía gastronómica'), 'la descripción de la imagen no se copia');
+const imgAsk = await page.evaluate(() => navigator.clipboard.readText());
+ok(imgAsk.includes('fotografía gastronómica') && imgAsk.includes('cerámica negra mate'), 'la descripción de la imagen no lleva el estilo de tus fotos');
 writeFileSync(shots + 'foto.png', Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAgAAAAGCAYAAAD+Bd/7AAAAFUlEQVR4nGP8z8DwnwEPYMInOXwUAAASWwIKHrzNmwAAAABJRU5ErkJggg==', 'base64'));
 await page.setInputFiles('#imageFile', shots + 'foto.png'); await page.waitForSelector('.shot img[src^="blob:"]');
 // Prueba de cata

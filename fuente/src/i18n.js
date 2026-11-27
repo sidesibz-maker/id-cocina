@@ -10,7 +10,8 @@ export const prefs = {
  theme: saved.theme === 'dark' || saved.theme === 'light' ? saved.theme : null,
  stepsHidden: !!saved.stepsHidden,
  size: ['grande', 'enorme'].includes(saved.size) ? saved.size : 'normal',
- contrast: saved.contrast === 'alto' ? 'alto' : 'normal'
+ contrast: saved.contrast === 'alto' ? 'alto' : 'normal',
+ homeHide: Array.isArray(saved.homeHide) ? saved.homeHide.filter(x => typeof x === 'string') : []
 };
 
 export const systemDark = () => typeof matchMedia === 'function' && matchMedia('(prefers-color-scheme: dark)').matches;

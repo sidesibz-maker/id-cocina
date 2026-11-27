@@ -127,6 +127,15 @@ await team.reload(); await team.waitForSelector('h1'); ok((await team.textConten
 await page.click('#fichaSec [data-act=team]'); await page.click('.sheet [data-s=off]'); await wait(400);
 await team.reload(); await team.waitForSelector('h1'); ok((await team.textContent('h1')).includes('ya no se comparte'), 'dejar de compartir no corta el enlace');
 await team.screenshot({path: shots + 'ficha-equipo.png'});
+// Hoy a tu gusto: quitar el radar y la pregunta del día, y que se recuerde
+await page.evaluate(() => { location.hash = '#/hoy'; }); await page.waitForSelector('[data-act=home-custom]');
+await page.click('[data-act=home-custom]'); await page.waitForSelector('[data-part=radar]');
+await page.uncheck('[data-part=radar]'); await page.uncheck('[data-part=search]'); await wait(200);
+ok(await page.locator('#homeSaber').count() === 0, 'quitar el buscador de Hoy no lo quita');
+await page.keyboard.press('Escape'); await page.reload(); await page.waitForSelector('.hello h1');
+ok(await page.locator('#homeSaber').count() === 0, 'Hoy no recuerda lo que quitaste');
+await page.click('[data-act=home-custom]'); await page.waitForSelector('[data-part=search]'); await page.check('[data-part=search]'); await page.check('[data-part=radar]'); await wait(200); await page.keyboard.press('Escape');
+ok(await page.locator('#homeSaber').count() === 1, 'volver a poner el buscador en Hoy no funciona');
 ok(!errors.length, 'errores: ' + errors.join(' | '));
 await browser.close();
 console.log(fails.length ? 'FALLOS:\n - ' + fails.join('\n - ') : 'lo más nuevo: todo correcto');

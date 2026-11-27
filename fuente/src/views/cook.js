@@ -55,15 +55,16 @@ export function timesIn(text) {
  return out;
 }
 
-let state = {key: '', step: 0, people: 0, lock: null, done: new Set()};
+let state = {key: '', step: 0, people: 0, lock: null, done: new Set(), view: 'ings'};
 export function render(params) {
  const r = load(params);
  if (!r) return '<a class="back" href="#/libreta">' + icon('left') + esc(t('Platos', 'Dishes')) + '</a><div class="empty">' + icon('book') + '<h3>' + esc(t('No encuentro esta receta', 'I cannot find this recipe')) + '</h3><p>' + esc(t('Puede que se haya movido o que no tenga ingredientes ni pasos.', 'It may have moved, or it has no ingredients or steps.')) + '</p></div>';
  const key = params.join('/');
- if (state.key !== key) state = {key, step: 0, people: r.base, lock: state.lock, done: new Set()};
- return '<div class="cook"><header class="cook-head"><a class="back" href="' + esc(r.back) + '">' + icon('left') + esc(t('Salir del modo cocina', 'Leave cook mode')) + '</a><h1>' + esc(r.name) + '</h1>' + (document.fullscreenEnabled ? '<button type="button" class="linkbtn cook-full" data-full aria-pressed="' + !!document.fullscreenElement + '">' + esc(document.fullscreenElement ? t('Salir de pantalla completa', 'Exit full screen') : t('Pantalla completa', 'Full screen')) + '</button>' : '') +
+ if (state.key !== key) state = {key, step: 0, people: r.base, lock: state.lock, done: new Set(), view: 'ings'};
+ return '<div class="cook" data-view="' + state.view + '"><header class="cook-head"><a class="back" href="' + esc(r.back) + '">' + icon('left') + esc(t('Salir del modo cocina', 'Leave cook mode')) + '</a><h1>' + esc(r.name) + '</h1>' + (document.fullscreenEnabled ? '<button type="button" class="linkbtn cook-full" data-full aria-pressed="' + !!document.fullscreenElement + '">' + esc(document.fullscreenElement ? t('Salir de pantalla completa', 'Exit full screen') : t('Pantalla completa', 'Full screen')) + '</button>' : '') +
   '<div class="cook-scale"><label for="cookN">' + esc(t('Voy a hacer', 'I am making')) + '</label><div class="tinput"><input id="cookN" inputmode="decimal" value="' + esc(nice(state.people)) + '" autocomplete="off"><span>' + esc(r.unit) + '</span></div>' + (r.base !== 1 || r.unit ? '<small>' + esc(t('La receta es para ', 'The recipe is for ') + nice(r.base) + ' ' + (r.base === 1 && r.unit === 'raciones' ? 'ración' : r.base === 1 && r.unit === 'servings' ? 'serving' : r.unit)) + '</small>' : '') + '</div>' + (r.note ? '<p class="fine">' + esc(r.note) + '</p>' : '') + '</header>' +
-  '<div class="cook-body"><section class="cook-ings" aria-label="' + esc(t('Ingredientes', 'Ingredients')) + '"><h2>' + esc(t('Ingredientes', 'Ingredients')) + '</h2><div id="cookIngs">' + ings(r) + '</div></section>' +
+  '<div class="seg cook-switch" role="group" aria-label="' + esc(t('Qué ver', 'What to show')) + '"><button type="button" class="seg-btn' + (state.view === 'ings' ? ' active' : '') + '" data-cview="ings" aria-pressed="' + (state.view === 'ings') + '">' + esc(t('Ingredientes', 'Ingredients')) + '</button><button type="button" class="seg-btn' + (state.view === 'steps' ? ' active' : '') + '" data-cview="steps" aria-pressed="' + (state.view === 'steps') + '">' + esc(t('Pasos', 'Steps')) + '</button></div>' +
+  '<div class="cook-body"><section class="cook-ings" aria-label="' + esc(t('Ingredientes', 'Ingredients')) + '"><h2>' + esc(t('Ingredientes', 'Ingredients')) + '</h2><div id="cookIngs">' + ings(r) + '</div>' + (r.steps.length ? '<button type="button" class="btn primary cook-start" data-cview="steps">' + icon('flame') + esc(t('Empezar a cocinar', 'Start cooking')) + '</button>' : '') + '</section>' +
   '<section class="cook-steps" aria-label="' + esc(t('Pasos', 'Steps')) + '"><div id="cookStep">' + step(r) + '</div></section></div></div>';
 }
 function ings(r) {
@@ -98,7 +99,13 @@ export function mount(root, params) {
  const vis = () => { if (!document.hidden) keepAwake(); };
  document.addEventListener('visibilitychange', vis);
  const paintStep = () => { $('#cookStep', root).innerHTML = step(r); if (state.read && r.steps[state.step]) say(t('Paso ', 'Step ') + (state.step + 1) + '. ' + r.steps[state.step].text); };
+ // En el móvil: ingredientes o pasos, y pasar de paso deslizando el dedo.
+ const setView = v => { state.view = v; const c = $('.cook', root); if (c) c.dataset.view = v; $$('.cook-switch [data-cview]', root).forEach(b => { const on = b.dataset.cview === v; b.classList.toggle('active', on); b.setAttribute('aria-pressed', on); }); scrollTo({top: 0}); };
+ let sx = null, sy = null;
+ root.addEventListener('pointerdown', e => { if (e.target.closest('#cookStep') && e.pointerType !== 'mouse') { sx = e.clientX; sy = e.clientY; } });
+ root.addEventListener('pointerup', e => { if (sx == null) return; const dx = e.clientX - sx, dy = e.clientY - sy; sx = null; if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) { state.step = Math.max(0, Math.min(r.steps.length - 1, state.step + (dx < 0 ? 1 : -1))); paintStep(); } });
  root.addEventListener('click', e => {
+  const v = e.target.closest('[data-cview]'); if (v) { setView(v.dataset.cview); return; }
   const g = e.target.closest('[data-go]'), s = e.target.closest('[data-step]'), tm = e.target.closest('[data-timer]');
   if (g) { state.step += Number(g.dataset.go); paintStep(); $('.cook-text', root)?.focus?.(); }
   if (s) { state.step = Number(s.dataset.step); paintStep(); }

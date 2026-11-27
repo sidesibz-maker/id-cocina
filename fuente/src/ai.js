@@ -44,7 +44,7 @@ export function imagePrompt(dish, style) {
  const d = imageRequest(state.kb, dish, style);
  return 'Crea una fotografía gastronómica profesional y realista de un plato de restaurante: «' + d.name + '».' + (d.concept ? ' Idea: ' + d.concept + '.' : '') + '\nEn el plato:\n' +
   d.components.map(c => '- ' + [c.role, c.name].filter(Boolean).join(': ') + (c.techniques.length ? ' (' + c.techniques.join(', ') + ')' : '') + (c.items.length ? ' — ' + c.items.join(', ') : '')).join('\n') +
-  '\nEmplatado: ' + (d.plating || 'sencillo, generoso y natural, sin puntos de salsa, sin pinzas y sin flores') + '.\nToma: ' + STYLE[d.style] + '.\nAmbiente: restaurante mediterráneo de brasa, plato de cerámica artesanal mate, materiales naturales.\n' +
+  '\nEmplatado: ' + (d.plating || 'sencillo, generoso y natural, sin puntos de salsa, sin pinzas y sin flores') + '.\nToma: ' + STYLE[d.style] + '.\n' + (state.settings?.photo_style ? 'Estilo fijo de la casa, igual en todas sus fotos (respétalo): ' + state.settings.photo_style + '.\n' : 'Ambiente: restaurante mediterráneo de brasa, plato de cerámica artesanal mate, materiales naturales.\n') +
   'La comida debe parecer cocinada de verdad y apetecible, con marcas de brasa donde toque, colores naturales y una ración realista. Solo lo que está en la lista. Sin texto, sin letras, sin logotipos, sin manos y sin personas.';
 }
 export function importPrompt() {

@@ -3,7 +3,7 @@ import {inSeason} from '../flavor-core.js';
 import {presetSaber} from './saber.js';
 import {go} from '../nav.js';
 import {t, en, longDate, greeting, dayKey, relDay, monthName} from '../i18n.js';
-import {esc, icon, $, metaRow} from '../ui.js';
+import {esc, icon, $, metaRow, sheet} from '../ui.js';
 import {state, liveTrends, liveDishes, userName, liveDocs, docById} from '../store.js';
 import {timers} from '../timers.js';
 import {dueToday, cards as trainCards} from './train.js';
@@ -129,18 +129,19 @@ export function render() {
  let html = '<header class="hello hello-row"><div><h1>' + esc(greeting()) + (name ? ', ' + esc(name) : '') + '.</h1>' +
   '<p class="hello-sub">' + esc(longDate().replace(/^./, c => c.toUpperCase()) + '. ') + esc(counts.length ? (counts.join(t(' y ', ' and ')) + '.').replace(/^./, c => c.toUpperCase()) : t('Tu cuaderno de I+D: crea, prueba y afina platos propios.', 'Your R&D notebook: create, test and refine dishes of your own.')) + '</p></div>' + (state.canEdit ? '<a class="btn primary" href="#/crear">' + icon('plus') + esc(t('Crear un plato', 'Create a dish')) + '</a>' : '') + '</header>';
 
- html += '<div class="today-grid">' + nowPanel(dishes) + craft() + '</div>';
- html += dailyEntry();
- html += '<form class="ksearch" id="homeSaber" role="search"><label class="sr" for="homeSaberQ">' + esc(t('Buscar en la Biblioteca', 'Search the library')) + '</label><div class="searchbox">' + icon('search') + '<input id="homeSaberQ" type="search" placeholder="' + esc(t('¿Qué quieres saber? Bechamel, fumet, emulsión…', 'What do you want to know? Béchamel, stock, emulsion…')) + '" autocomplete="off" enterkeyhint="search"></div></form>';
+ if (show('now')) html += '<div class="today-grid">' + nowPanel(dishes) + craft() + '</div>';
+ if (show('daily')) html += dailyEntry();
+ if (show('search')) html += '<form class="ksearch" id="homeSaber" role="search"><label class="sr" for="homeSaberQ">' + esc(t('Buscar en la Biblioteca', 'Search the library')) + '</label><div class="searchbox">' + icon('search') + '<input id="homeSaberQ" type="search" placeholder="' + esc(t('¿Qué quieres saber? Bechamel, fumet, emulsión…', 'What do you want to know? Béchamel, stock, emulsion…')) + '" autocomplete="off" enterkeyhint="search"></div></form>';
  html += firstSteps();
- html += questionOfDay();
- if (top) html += lead(top, day);
+ if (show('question')) html += questionOfDay();
+ if (!show('radar')) {}
+ else if (top) html += lead(top, day);
  else html += '<div class="cover cover-empty"><span class="cover-title">' + esc(state.loaded ? t('El radar está vacío', 'The radar is empty') : t('Abriendo el radar…', 'Opening the radar…')) + '</span>' +
   '<span class="cover-sum">' + esc(t('Aquí sale lo que se mueve en las mejores cocinas y revistas, llevado a tu cocina. Entra en el Radar y pulsa «Buscar tendencias de hoy».', 'What is moving in the best kitchens and magazines, brought to your kitchen, shows up here. Open the Radar and press “Find today\'s trends”.')) + '</span></div>';
 
- if (rest.length) html += '<section class="sec">' + sectionHead(day === dayKey() ? t('Hoy en el radar', 'On the radar today') : t('Lo último del radar', 'Latest on the radar'), moreLink('#/radar', t('Todo el radar', 'Full radar'))) + '<div class="strip">' + rest.map(x => trendCard(x)).join('') + '</div></section>';
+ if (rest.length && show('radar')) html += '<section class="sec">' + sectionHead(day === dayKey() ? t('Hoy en el radar', 'On the radar today') : t('Lo último del radar', 'Latest on the radar'), moreLink('#/radar', t('Todo el radar', 'Full radar'))) + '<div class="strip">' + rest.map(x => trendCard(x)).join('') + '</div></section>';
 
- if (ideaOfDay && ideaOfDay !== top) {
+ if (ideaOfDay && ideaOfDay !== top && show('radar')) {
   const idea = trIdeas(ideaOfDay)[0];
   html += '<section class="sec">' + sectionHead(t('Idea del día', 'Idea of the day')) + '<article class="idea"><div class="idea-text"><h3>' + esc(trText(ideaOfDay, 'title')) + '</h3><p>' + esc(trText(ideaOfDay, 'summary')) + '</p>' +
    (trText(ideaOfDay, 'adapt') ? '<p class="idea-adapt">' + esc(trText(ideaOfDay, 'adapt')) + '</p>' : '') + '</div>' +
@@ -149,7 +150,7 @@ export function render() {
  }
 
  const others = dishes.filter(x => x !== (dishes.find(y => dishLayers(y).length > 1) || dishes[0]));
- if (others.length || !dishes.length) {
+ if ((others.length || !dishes.length) && show('dishes')) {
  html += '<section class="sec">' + sectionHead(others.length ? t('Más platos en marcha', 'More dishes in progress') : t('En marcha', 'In progress'), others.length ? moreLink('#/libreta', t('Todos tus platos', 'All your dishes')) : '');
  if (others.length) html += '<div class="dish-grid">' + others.map(dishCard).join('') + '</div>';
 
@@ -166,8 +167,16 @@ export function render() {
   '<a class="tile tile-big" href="#/sabores">' + icon('wheel') + '<strong>' + esc(t('¿Con qué combina?', 'What does it pair with?')) + '</strong><span>' + esc(t('Combinaciones clásicas, atrevidas y puentes entre dos productos', 'Classic and bold pairings, and bridges between two products')) + '</span></a>' +
   '<a class="tile tile-big" href="#/cocina">' + icon('pan') + '<strong>' + esc(t('Mi cocina', 'My kitchen')) + '</strong><span>' + esc(k ? k.catalogue + t(' productos en el catálogo, ', ' products in the catalogue, ') + k.known + t(' básicos tuyos', ' staples of yours') : t('Tu equipo, tu estilo y tus reglas', 'Your equipment, style and rules')) + '</span></a></div></section>';
 
- html += seasonal();
+ if (show('season')) html += seasonal();
+ html += '<p class="fine home-custom"><button type="button" class="linkbtn" data-act="home-custom">' + icon('gear') + esc(t('Elegir qué ves en Hoy', 'Choose what you see on Today')) + '</button></p>';
  return html;
+}
+// Qué partes de Hoy se ven (se guarda en este aparato).
+const HOME_PARTS = () => [['now', t('El plato en marcha y lo de hoy', 'The dish in progress and today')], ['daily', t('La ficha del día', 'Entry of the day')], ['search', t('Buscar en la Biblioteca', 'Search the library')], ['question', t('La pregunta del día', 'Question of the day')], ['radar', t('El radar', 'The radar')], ['dishes', t('Más platos en marcha', 'More dishes in progress')], ['season', t('De temporada', 'In season')]];
+const show = id => !prefs.homeHide.includes(id);
+function customSheet(root) {
+ const s = sheet({title: t('Elegir qué ves en Hoy', 'Choose what you see on Today'), body: '<p class="lead">' + esc(t('Marca lo que quieres ver al abrir la app. Lo que quites sigue en su sitio del menú.', 'Tick what you want to see when you open the app. What you hide stays in the menu.')) + '</p><div class="home-parts">' + HOME_PARTS().map(([id, l]) => '<label class="check"><input type="checkbox" data-part="' + id + '"' + (show(id) ? ' checked' : '') + '> ' + esc(l) + '</label>').join('') + '</div>'});
+ s.el.addEventListener('change', e => { const c = e.target.closest('[data-part]'); if (!c) return; const hide = new Set(prefs.homeHide); if (c.checked) hide.delete(c.dataset.part); else hide.add(c.dataset.part); setPref('homeHide', [...hide]); root.innerHTML = render(); hydrateImages(root); });
 }
 
 export function mount(root) {
@@ -176,6 +185,7 @@ export function mount(root) {
  root.addEventListener('submit', e => { if (e.target.id !== 'homeSaber') return; e.preventDefault(); presetSaber(e.target.querySelector('input').value); go('biblioteca'); });
  root.addEventListener('click', e => {
   if (e.target.closest('[data-act=challenge-done]')) { completeChallenge().then(lv => { if (lv != null) import('../ui.js').then(({toast}) => toast(t('¡Reto cumplido! Tu nivel ha subido en Mi trayectoria.', 'Challenge done! Your level went up in My career.'), 'info', 5000)); }); return; }
+  if (e.target.closest('[data-act=home-custom]')) { customSheet(root); return; }
   if (e.target.closest('[data-act=hide-steps]')) { setPref('stepsHidden', true); e.target.closest('.steps').remove(); return; }
   const o = e.target.closest('[data-open]');
   if (o) { e.preventDefault(); document.dispatchEvent(new CustomEvent('id-open', {detail: o.dataset.open})); return; }

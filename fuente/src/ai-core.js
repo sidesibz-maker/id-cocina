@@ -92,7 +92,8 @@ export function cleanProfile(value) {
  return {
   name: clip(p.name, 40), equipment: [...new Set((Array.isArray(p.equipment) ? p.equipment : []).filter(e => EQUIPMENT_IDS.includes(e)))],
   other_equipment: clip(p.other_equipment, 200), style: clip(p.style, 400), signature: clip(p.signature, 500),
-  avoid: texts(p.avoid, 16, 60), interests: texts(p.interests, 16, 60), service: clip(p.service, 300)
+  avoid: texts(p.avoid, 16, 60), interests: texts(p.interests, 16, 60), service: clip(p.service, 300),
+  photo_style: clip(p.photo_style, 400)
  };
 }
 // La cocina, resumida para la consulta: equipo, estilo, reglas y básicos. Nada más.

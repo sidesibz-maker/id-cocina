@@ -59,6 +59,13 @@ ok((await page.evaluate(() => window.__said.at(-1) || '')).startsWith('Paso 2'),
 // Pantalla completa (si el navegador la permite)
 await go('#/cocinar/biblioteca/bechamel'); await page.waitForSelector('.cook-head');
 if (await page.evaluate(() => document.fullscreenEnabled)) ok(await page.locator('[data-full]').count() === 1, 'no hay botón de pantalla completa');
+{ const ph = await (await browser.newContext({viewport: {width: 390, height: 844}, hasTouch: true})).newPage();
+ await ph.goto(page.url().split('#')[0] + '#/cocinar/biblioteca/bechamel'); await ph.waitForSelector('.cook-switch');
+ ok(await ph.locator('.cook-ings').isVisible() && !(await ph.locator('.cook-steps').isVisible()), 'en el móvil no empieza por los ingredientes');
+ await ph.click('.cook-start'); await ph.waitForSelector('.cook-text', {state: 'visible'});
+ ok(!(await ph.locator('.cook-ings').isVisible()), 'en el móvil no pasa a los pasos');
+ ok(await ph.evaluate(() => document.documentElement.scrollWidth <= innerWidth), 'el modo cocina se sale en el móvil');
+ await ph.context().close(); }
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));
 await browser.close();
 if (fails.length) { console.error('FALLOS en el modo cocina:\n - ' + fails.join('\n - ')); process.exit(1); }

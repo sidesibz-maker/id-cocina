@@ -1470,3 +1470,28 @@ button.exopt:hover{border-color:var(--ink);background:var(--soft)}
  .cert p{font-size:13pt;margin:0}.cert-list{font-size:10pt!important;color:var(--mut);max-width:150mm;margin:0 auto!important}.cert footer{margin-top:8mm;font-size:11pt}
  .mstrip span.is-on{background:#333;color:#fff}
 }
+/* Escalas de puntos (Herramientas → Temperaturas). */
+.rulers{margin-bottom:24px}.rulers-grid{display:grid;gap:24px 32px}@media (min-width:960px){.rulers-grid{grid-template-columns:1fr 1fr}}
+.ruler{margin:0}.ruler figcaption{margin-bottom:8px}
+.ruler-bar{position:relative;height:18px;border:1px solid var(--line);background:linear-gradient(90deg,var(--t-cold),var(--t-cool) 35%,var(--t-warm) 60%,var(--t-hot) 85%,var(--ember));background-size:100% 3px;background-repeat:no-repeat;background-position:0 50%;margin-bottom:22px}
+.ruler-band{position:absolute;top:-1px;bottom:-1px;border:1px solid var(--bg)}
+.ruler-end{position:absolute;top:22px;left:0;font:600 12px/1 var(--narrow);color:var(--mut)}.ruler-end.is-max{left:auto;right:0}
+.ruler-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px}
+.ruler-list li{display:flex;align-items:baseline;gap:8px;font-size:15px}.ruler-list i{width:12px;height:12px;flex:none;display:inline-block}
+.ruler-list b{font-variant-numeric:tabular-nums;min-width:7.5em;display:inline-block}
+/* Modo cocina en el móvil: ingredientes o pasos, de uno en uno. */
+.cook-switch,.cook-start{display:none}
+@media (max-width:959px){
+ .cook-switch{display:flex;width:100%;margin-top:12px}.cook-switch .seg-btn{flex:1;min-height:48px;font-size:17px}
+ .cook[data-view=ings] .cook-steps{display:none}.cook[data-view=steps] .cook-ings{display:none}
+ .cook-start{display:inline-flex;width:100%;justify-content:center;margin-top:16px;min-height:52px;font-size:18px}
+ .cook-text{font-size:clamp(24px,6.6vw,32px);line-height:1.35}
+ .cook-nav .btn{min-height:56px;font-size:18px}
+}
+/* Hoy a tu gusto. */
+.home-custom{margin-top:32px;text-align:center}.home-parts{display:flex;flex-direction:column;gap:6px}.home-parts .check{display:flex;gap:10px;align-items:center;min-height:44px}.home-parts input{width:20px;height:20px}
+/* Diccionario: traducciones y escuchar. */
+.kdict-langs{display:flex;flex-wrap:wrap;gap:4px 16px;margin-top:6px;font-size:14px}
+.kdict-langs small{color:var(--mut);font-family:var(--narrow);font-weight:600}
+.kdict-say{display:inline-grid;place-items:center;width:32px;height:32px;margin-left:2px;border:0;background:transparent;color:var(--mut);cursor:pointer;vertical-align:middle}
+.kdict-say:hover{color:var(--ink)}.kdict-say .ic{width:18px;height:18px}

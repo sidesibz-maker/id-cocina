@@ -41,6 +41,7 @@ const bk = await page.textContent('#bkOut'); ok(bk.includes('700 g') && bk.inclu
 // Conversiones
 await go('#/herramientas/temperaturas'); await page.fill('#cv-c', '180'); await page.dispatchEvent('#cv-c', 'input'); await wait(100);
 ok((await page.inputValue('#cv-f')) === '356', 'conversión de grados mal');
+ok(await page.locator('.ruler').count() === 7 && (await page.textContent('.rulers')).includes('Bola blanda') && (await page.textContent('.rulers')).includes('Nacarado'), 'faltan las escalas de puntos');
 // Temporizadores
 await go('#/herramientas/temporizadores'); await page.fill('#tmName', 'Fondo'); await page.fill('#tmMin', '0,02'); await page.click('#tmForm button[type=submit]'); await wait(300);
 ok(await page.locator('.tm').count() === 1, 'no crea el temporizador');
