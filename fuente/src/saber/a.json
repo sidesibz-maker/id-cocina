@@ -4442,5 +4442,951 @@
       "hierbas-frescas",
       "aceites-aromatizados"
     ]
+  },
+  {
+    "id": "actividad-de-agua",
+    "name": "Actividad de agua",
+    "name_en": "Water activity",
+    "aka": [
+      "aw",
+      "agua libre",
+      "agua disponible",
+      "conservación por sal y azúcar",
+      "humedad y crujiente"
+    ],
+    "cat": "conceptos",
+    "group": "Fundamentos",
+    "summary": "Cuánta del agua de un alimento está libre para que crezcan microbios o se ablande una textura: explica salazones, confituras, curados y crujientes.",
+    "what": "No todo el agua de un alimento cuenta igual. Parte está atada a la sal, al azúcar, a las proteínas o al almidón y no la pueden usar los microbios ni participa en las reacciones. La actividad de agua (aw) mide la parte libre en una escala de 0 a 1: el agua pura es 1, la carne y el pescado frescos rondan 0,99, un jamón curado queda por debajo de 0,90 y una galleta seca por debajo de 0,40.\n\nBajar la aw es lo que hacen la sal de una [[salmuera]] o una salazón, el azúcar de una confitura, el secado y el curado. No es lo mismo que la humedad: una confitura tiene bastante agua, pero el azúcar la retiene. La aw también decide las texturas: un crujiente que absorbe agua del aire o de una crema pierde el crujido. La relación con la sal está en [[sal-y-osmosis]] y con la evaporación en [[agua-y-evaporacion]].",
+    "base": {
+      "for": "Referencias de actividad de agua",
+      "items": [
+        [
+          "Agua pura",
+          "1,00"
+        ],
+        [
+          "Carne, pescado, verdura y fruta frescos",
+          "0,97–0,99"
+        ],
+        [
+          "Límite aproximado para el botulismo",
+          "0,94"
+        ],
+        [
+          "Mayoría de bacterias",
+          "no crecen por debajo de 0,90–0,91"
+        ],
+        [
+          "Embutidos y jamones curados",
+          "0,85–0,90"
+        ],
+        [
+          "Confituras con 60–65 % de azúcar",
+          "0,80–0,85"
+        ],
+        [
+          "Mohos y levaduras resistentes",
+          "aún crecen hasta 0,60–0,80"
+        ],
+        [
+          "Crujientes, galletas y deshidratados",
+          "por debajo de 0,40"
+        ]
+      ],
+      "steps": [
+        "Piensa en la aw cuando quieras conservar sin frío o mantener una textura seca.",
+        "Para bajarla: añade sal o azúcar, seca o cura; cada uno cambia también sabor y textura.",
+        "Recuerda que la aw baja no mata microbios: los frena. El frío sigue siendo necesario si no se llega a valores seguros.",
+        "Separa los crujientes de las cremas hasta el último momento y guárdalos con gel de sílice.",
+        "En curados caseros, controla la pérdida de peso como medida práctica de secado."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Confitura estable",
+        "ratio": "60–65 % de azúcar en el producto final",
+        "note": "Con menos, siempre en frío."
+      },
+      {
+        "use": "Salazón de pescado",
+        "ratio": "Pérdida de peso del 30–40 %",
+        "note": "Según pieza y método."
+      },
+      {
+        "use": "Embutido curado",
+        "ratio": "Pérdida de peso del 30–35 %",
+        "note": "Junto a la acidez de la fermentación."
+      },
+      {
+        "use": "Crujiente estable",
+        "ratio": "Secado completo y bote hermético",
+        "note": "Absorbe agua del aire en horas."
+      }
+    ],
+    "variants": [
+      {
+        "id": "sal-y-osmosis",
+        "name": "Sal y ósmosis",
+        "note": "Cómo la sal mueve el agua."
+      },
+      {
+        "id": "deshidratados-y-crujientes",
+        "name": "Deshidratados",
+        "note": "Bajar la aw secando."
+      },
+      {
+        "id": "confituras-y-mermeladas",
+        "name": "Confituras",
+        "note": "Bajar la aw con azúcar."
+      },
+      {
+        "id": "salazones-y-huevas",
+        "name": "Salazones",
+        "note": "Bajar la aw con sal."
+      }
+    ],
+    "keys": [
+      "Humedad y actividad de agua no son lo mismo.",
+      "Sal y azúcar atan agua; secar la quita.",
+      "Una aw baja frena los microbios, no los mata.",
+      "Los mohos y algunas levaduras aguantan mucho más que las bacterias.",
+      "Un crujiente y una crema juntos se igualan: el crujiente se ablanda."
+    ],
+    "errors": [
+      {
+        "p": "Confitura baja en azúcar con moho",
+        "fix": "Con menos azúcar la aw sube. Guárdala en frío y gástala pronto."
+      },
+      {
+        "p": "Teja blanda en el pase",
+        "fix": "Absorbe humedad del ambiente o del plato. Bote hermético con gel de sílice y montaje al último momento."
+      },
+      {
+        "p": "Curado casero que se estropea por dentro",
+        "fix": "Secado demasiado rápido por fuera que deja el centro húmedo. Seca más despacio y controla el peso."
+      }
+    ],
+    "history": "Salar, secar y endulzar son formas de conservar tan antiguas como la cocina. El concepto de actividad de agua llegó con la ciencia de los alimentos del siglo XX y explicó por qué funcionaban.",
+    "uses": [
+      "Salazones y curados",
+      "Confituras y frutas confitadas",
+      "Crujientes y deshidratados",
+      "Conservación de mezclas secas"
+    ],
+    "keep": "No aplica: es un principio.",
+    "pro": "Etiqueta las elaboraciones de aw baja con su fecha igual que las demás. Las de azúcar o sal reducidos, como cualquier elaboración fresca: en frío y pocos días.",
+    "related": [
+      "sal-y-osmosis",
+      "agua-y-evaporacion",
+      "deshidratados-y-crujientes",
+      "confituras-y-mermeladas",
+      "salazones-y-huevas",
+      "cadena-de-frio"
+    ]
+  },
+  {
+    "id": "transferencia-de-calor",
+    "name": "Transferencia de calor",
+    "name_en": "Heat transfer",
+    "aka": [
+      "conducción",
+      "convección",
+      "radiación",
+      "cómo llega el calor",
+      "calor de la brasa"
+    ],
+    "cat": "conceptos",
+    "group": "Fundamentos",
+    "summary": "Conducción, convección y radiación: las tres formas en que el calor llega al alimento y por qué cada fuego cocina distinto.",
+    "what": "El calor llega a la comida de tres maneras. Por conducción, de un cuerpo a otro en contacto: la plancha a la carne, y dentro de la pieza, de fuera hacia el centro. Por convección, transportado por un fluido que se mueve: el agua de un hervor, el aceite de la [[fritura]], el aire de un horno ventilado. Por radiación, sin contacto: las brasas, la salamandra, las paredes de un horno de leña.\n\nEl agua y el aceite transmiten el calor mucho más deprisa que el aire: por eso un horno a 180 °C no quema la mano un instante y el agua a 100 °C sí. El vapor que condensa sobre la pieza suelta mucha energía, de ahí la eficacia del vapor. En la brasa domina la radiación, que baja mucho al alejar la parrilla: la altura es el mando del fuego. Ver [[fuego-y-brasa]].",
+    "base": {
+      "for": "Cómo cocina cada medio",
+      "items": [
+        [
+          "Plancha y sartén",
+          "conducción por contacto"
+        ],
+        [
+          "Agua, caldo y aceite",
+          "convección rápida"
+        ],
+        [
+          "Horno sin ventilador",
+          "convección lenta y radiación de paredes"
+        ],
+        [
+          "Horno ventilado",
+          "convección más rápida y seca"
+        ],
+        [
+          "Vapor",
+          "condensación: mucha energía a 100 °C"
+        ],
+        [
+          "Brasa y salamandra",
+          "radiación, muy sensible a la distancia"
+        ]
+      ],
+      "steps": [
+        "Elige el medio según lo que buscas: dorado y costra (contacto, radiación) o cocción pareja (agua, vapor).",
+        "Ten en cuenta el grosor: el tiempo para llegar al centro crece más o menos con el cuadrado del grosor; el doble de grosor, unas cuatro veces más tiempo.",
+        "Seca la superficie antes de dorar: el agua en la superficie se queda en 100 °C y frena el dorado.",
+        "En la brasa, regula la potencia con la altura de la parrilla y la cantidad de brasa, no esperando.",
+        "Cuenta con el calor residual: el centro sigue subiendo unos grados en el reposo."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Grosor y tiempo",
+        "ratio": "Doble de grosor, unas 4 veces más tiempo",
+        "note": "Por conducción hasta el centro."
+      },
+      {
+        "use": "Calor residual",
+        "ratio": "3–6 °C más en el centro tras retirar",
+        "note": "Mayor en piezas grandes y fuego fuerte."
+      },
+      {
+        "use": "Horno ventilado",
+        "ratio": "10–20 °C menos que sin ventilador",
+        "note": "Como referencia de partida."
+      },
+      {
+        "use": "Dorado",
+        "ratio": "Superficie seca y por encima de 140 °C",
+        "note": "Ver Maillard."
+      }
+    ],
+    "variants": [
+      {
+        "id": "fuego-y-brasa",
+        "name": "Brasa",
+        "note": "Radiación y control por altura."
+      },
+      {
+        "id": "plancha-y-sarten",
+        "name": "Plancha",
+        "note": "Conducción por contacto."
+      },
+      {
+        "id": "papillote-y-vapor",
+        "name": "Vapor",
+        "note": "Condensación."
+      },
+      {
+        "id": "horno-de-lena",
+        "name": "Horno de leña",
+        "note": "Radiación de bóveda y suelo."
+      }
+    ],
+    "keys": [
+      "Tres vías: contacto, fluido en movimiento y radiación.",
+      "El agua cocina mucho más deprisa que el aire a la misma temperatura.",
+      "En la brasa, la distancia manda.",
+      "El grosor pesa más que el peso.",
+      "Superficie seca para dorar."
+    ],
+    "errors": [
+      {
+        "p": "Pieza quemada por fuera y cruda por dentro",
+        "fix": "Calor demasiado intenso para su grosor. Baja la intensidad o termina a calor suave."
+      },
+      {
+        "p": "Carne que cuece en vez de dorar",
+        "fix": "Superficie húmeda o sartén llena que pierde temperatura. Seca y trabaja por tandas."
+      },
+      {
+        "p": "Asado pasado de punto tras el reposo",
+        "fix": "No se contó el calor residual. Retira unos grados antes."
+      }
+    ],
+    "history": "Los cocineros dominaron estas tres vías mucho antes de saber nombrarlas. La física del calor las explicó en los siglos XVIII y XIX, y la cocina moderna las ha medido con termómetros y sondas.",
+    "uses": [
+      "Elegir método de cocción",
+      "Brasa y parrilla",
+      "Asados y piezas grandes",
+      "Fritura y vapor"
+    ],
+    "keep": "No aplica: es un principio.",
+    "pro": "Sonda en las piezas grandes y referencias escritas de altura de parrilla y tiempo por grosor para cada pieza habitual.",
+    "related": [
+      "fuego-y-brasa",
+      "plancha-y-sarten",
+      "papillote-y-vapor",
+      "punto-de-la-carne",
+      "reaccion-de-maillard",
+      "sellado-y-reposo"
+    ]
+  },
+  {
+    "id": "punto-de-fusion-de-las-grasas",
+    "name": "Punto de fusión de las grasas",
+    "name_en": "Melting point of fats",
+    "aka": [
+      "fusión de grasas",
+      "cristalización de grasas",
+      "grasas sólidas y líquidas",
+      "sebo",
+      "grasa que cuaja en el plato"
+    ],
+    "cat": "conceptos",
+    "group": "Fundamentos",
+    "summary": "A qué temperatura se ablanda o se funde cada grasa y por qué eso decide la textura en boca, la temperatura de servicio y las emulsiones.",
+    "what": "Las grasas no se funden de golpe: son mezclas que se ablandan en un tramo de temperaturas. Cuanto más saturadas, más alto funden. El aceite de oliva es líquido a temperatura ambiente y se enturbia en la cámara; la mantequilla se ablanda entre 15 y 20 °C y se funde hacia 32–35 °C; la manteca de cacao funde justo por debajo de la temperatura de la boca, por eso el chocolate se deshace al comerlo; el sebo de vaca y la grasa de cordero necesitan más de 40 °C.\n\nEsto explica por qué el cordero se sirve muy caliente y en plato caliente, por qué un jamón ibérico se corta a temperatura ambiente, por qué una salsa montada con mantequilla se corta si se enfría y por qué un caldo frío se cubre de una costra. Las grasas también cristalizan al enfriarse, y la forma del cristal cambia la textura: es la base del [[chocolate-y-templado|templado del chocolate]].",
+    "base": {
+      "for": "Temperaturas orientativas",
+      "items": [
+        [
+          "Aceite de oliva",
+          "líquido; se enturbia y espesa en la cámara"
+        ],
+        [
+          "Grasa de pato",
+          "blanda a temperatura ambiente"
+        ],
+        [
+          "Mantequilla",
+          "se ablanda a 15–20 °C, se funde hacia 32–35 °C"
+        ],
+        [
+          "Manteca de cacao",
+          "funde hacia 34–36 °C"
+        ],
+        [
+          "Manteca de cerdo",
+          "funde entre unos 30 y 45 °C según la parte"
+        ],
+        [
+          "Sebo de vaca y grasa de cordero",
+          "por encima de 40–45 °C"
+        ]
+      ],
+      "steps": [
+        "Piensa a qué temperatura se va a comer el plato y elige una grasa que esté fundida o cremosa a esa temperatura.",
+        "Con carnes de grasa dura, sirve muy caliente y en plato caliente.",
+        "En platos fríos, usa aceite o grasas blandas: la grasa dura se nota cerosa.",
+        "Templa a temperatura ambiente los embutidos y quesos antes de servir.",
+        "Desgrasa fondos y caldos en frío: la grasa solidificada se retira entera."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Cordero o vaca",
+        "ratio": "Plato a 60–70 °C",
+        "note": "Evita la grasa cuajada."
+      },
+      {
+        "use": "Jamón y embutidos",
+        "ratio": "Servir a 20–24 °C",
+        "note": "La grasa brilla y se funde en boca."
+      },
+      {
+        "use": "Salsas montadas con mantequilla",
+        "ratio": "Mantener a 55–60 °C",
+        "note": "Fría se corta; muy caliente, se separa."
+      },
+      {
+        "use": "Aceite en vinagretas frías",
+        "ratio": "Sacar de la cámara 15–20 minutos antes",
+        "note": "Recupera fluidez."
+      }
+    ],
+    "variants": [
+      {
+        "id": "grasas-punto-de-humo-y-oxidacion",
+        "name": "Punto de humo",
+        "note": "El otro extremo: grasas a temperatura alta."
+      },
+      {
+        "id": "chocolate-y-templado",
+        "name": "Templado",
+        "note": "Cristalización controlada."
+      },
+      {
+        "id": "temperatura-de-servicio",
+        "name": "Temperatura de servicio",
+        "note": "Cómo se percibe cada plato."
+      },
+      {
+        "id": "beurre-blanc",
+        "name": "Beurre blanc",
+        "note": "Emulsión que depende de la temperatura."
+      }
+    ],
+    "keys": [
+      "Más saturada, más alto funde.",
+      "La grasa dura fría se nota cerosa en boca.",
+      "Plato caliente para cordero y vaca.",
+      "Embutidos y quesos, templados.",
+      "Desgrasar en frío es más limpio."
+    ],
+    "errors": [
+      {
+        "p": "Grasa blanca cuajada en el plato",
+        "fix": "Grasa dura servida tibia. Calienta el plato y sirve al momento."
+      },
+      {
+        "p": "Aceite turbio y espeso",
+        "fix": "Frío de la cámara. Atempera: no está estropeado."
+      },
+      {
+        "p": "Ganache o crema con textura arenosa",
+        "fix": "Grasa cristalizada de forma desordenada. Funde y enfría de forma controlada."
+      }
+    ],
+    "history": "La cocina popular siempre ha jugado con esto: platos de cordero servidos humeantes, embutidos que se cuelgan y se cortan a temperatura de casa. La química de los lípidos explicó después el comportamiento de cada grasa.",
+    "uses": [
+      "Temperatura de servicio de carnes",
+      "Salsas montadas",
+      "Embutidos y quesos",
+      "Chocolate y cremas"
+    ],
+    "keep": "No aplica: es un principio.",
+    "pro": "Calientaplatos para carnes de grasa dura y referencias escritas de temperatura de servicio en cada ficha de plato.",
+    "related": [
+      "grasas-punto-de-humo-y-oxidacion",
+      "temperatura-de-servicio",
+      "chocolate-y-templado",
+      "leche-nata-y-mantequilla",
+      "cordero",
+      "jamon-curado"
+    ]
+  },
+  {
+    "id": "enzimas-en-cocina",
+    "name": "Enzimas en cocina",
+    "name_en": "Enzymes in cooking",
+    "aka": [
+      "enzimas",
+      "proteasas",
+      "piña y gelatina",
+      "amilasa de la yema",
+      "ablandar con fruta"
+    ],
+    "cat": "conceptos",
+    "group": "Fundamentos",
+    "summary": "Proteínas que aceleran cambios en los alimentos: ablandan, pardean, dan picor o licúan, y casi todas se detienen con calor.",
+    "what": "Las enzimas son proteínas que provocan cambios concretos: cortan proteínas, almidones o grasas, o combinan compuestos para dar color o aroma. Están en los propios alimentos y trabajan mejor en templado; casi todas se desactivan por encima de unos 60–80 °C.\n\nEn cocina se notan a menudo. La piña, el kiwi, la papaya y el higo frescos tienen enzimas que cortan proteínas: ablandan una marinada (y si se pasan, la dejan pastosa) e impiden que cuaje la gelatina; cocidas, dejan de hacerlo. La yema tiene una enzima que rompe el almidón: por eso la [[crema-pastelera]] debe hervir, o se licúa en la cámara. El pardeamiento de la manzana es enzimático ([[oxidacion-y-pardeamiento]]). El picor del ajo, la mostaza o el wasabi nace de una enzima al cortar ([[picante-y-pungencia]]). La [[maduracion-de-carne]] y el [[miso-y-koji|koji]] son trabajo enzimático controlado.",
+    "base": {
+      "for": "Enzimas que se encuentran en la cocina",
+      "items": [
+        [
+          "Piña, kiwi, papaya e higo frescos",
+          "cortan proteínas: ablandan, impiden cuajar la gelatina"
+        ],
+        [
+          "Yema de huevo",
+          "rompe el almidón si no se lleva a hervor"
+        ],
+        [
+          "Manzana, pera, alcachofa, aguacate",
+          "pardeamiento al cortar"
+        ],
+        [
+          "Ajo, cebolla, mostaza, coles",
+          "picor y aroma al cortar o majar"
+        ],
+        [
+          "Carne en maduración",
+          "ablandan las fibras"
+        ],
+        [
+          "Koji",
+          "rompe almidón y proteína: dulzor y umami"
+        ]
+      ],
+      "steps": [
+        "Si una enzima molesta, desactívala con calor: escalda la fruta, hierve la crema.",
+        "Si ayuda, dale tiempo a temperatura templada o en frío, según el caso.",
+        "Para gelatinas con fruta tropical fresca, cuece antes la fruta o usa agar.",
+        "En marinadas con fruta fresca, limita el tiempo a 30–60 minutos en piezas finas.",
+        "Para frenar el pardeamiento, combina frío, ácido y poco contacto con el aire."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Fruta tropical para gelatina",
+        "ratio": "Llevar a 85–90 °C unos minutos",
+        "note": "Pierde la enzima."
+      },
+      {
+        "use": "Crema con yema y almidón",
+        "ratio": "Hervor 1–2 minutos",
+        "note": "Si no, se licúa al reposar."
+      },
+      {
+        "use": "Marinada con piña o papaya",
+        "ratio": "30–60 minutos",
+        "note": "Más tiempo, textura pastosa."
+      },
+      {
+        "use": "Mostaza en polvo",
+        "ratio": "Agua fría y 10 minutos de reposo",
+        "note": "La enzima necesita agua y frío."
+      }
+    ],
+    "variants": [
+      {
+        "id": "oxidacion-y-pardeamiento",
+        "name": "Pardeamiento enzimático",
+        "note": "Fruta y verdura cortadas."
+      },
+      {
+        "id": "maduracion-de-carne",
+        "name": "Maduración",
+        "note": "Enzimas propias de la carne."
+      },
+      {
+        "id": "miso-y-koji",
+        "name": "Koji",
+        "note": "Enzimas de un hongo al servicio del sabor."
+      },
+      {
+        "id": "picante-y-pungencia",
+        "name": "Picor enzimático",
+        "note": "Ajo, mostaza, wasabi."
+      }
+    ],
+    "keys": [
+      "Casi todas las enzimas se detienen con calor.",
+      "Piña, kiwi o papaya frescos no dejan cuajar la gelatina.",
+      "Crema con yema y almidón: siempre hervor.",
+      "El frío frena las enzimas pero no las para.",
+      "Usadas con control, dan sabor y textura."
+    ],
+    "errors": [
+      {
+        "p": "Gelatina de piña que no cuaja",
+        "fix": "Enzima activa. Cuece la fruta o usa agar."
+      },
+      {
+        "p": "Crema pastelera líquida al día siguiente",
+        "fix": "No hirvió. Cuece con hervor suave 1–2 minutos."
+      },
+      {
+        "p": "Carne marinada con fruta y textura harinosa",
+        "fix": "Demasiado tiempo. Reduce a minutos, no horas."
+      }
+    ],
+    "history": "La cocina usaba enzimas sin saberlo: el cuajo para el queso, la papaya para ablandar carne, el koji en Asia. Su estudio científico desde el siglo XIX explicó estos usos y permitió controlarlos.",
+    "uses": [
+      "Marinadas",
+      "Cremas y gelatinas",
+      "Maduración y fermentación",
+      "Picor y aroma"
+    ],
+    "keep": "No aplica: es un principio.",
+    "pro": "Anota en la ficha de cada elaboración si lleva una fruta o ingrediente con enzimas activas y cómo se neutraliza.",
+    "related": [
+      "oxidacion-y-pardeamiento",
+      "maduracion-de-carne",
+      "miso-y-koji",
+      "crema-pastelera",
+      "gelificantes-y-espesantes",
+      "coagulacion-de-proteinas"
+    ]
+  },
+  {
+    "id": "amargor-y-astringencia",
+    "name": "Amargor y astringencia",
+    "name_en": "Bitterness and astringency",
+    "aka": [
+      "amargo",
+      "astringente",
+      "taninos",
+      "corregir el amargor",
+      "sequedad en boca"
+    ],
+    "cat": "conceptos",
+    "group": "Fundamentos",
+    "summary": "El amargo es un gusto; la astringencia, una sensación de sequedad. Cómo usarlos, medirlos y corregirlos en un plato.",
+    "what": "El amargor es uno de los gustos básicos y lo dan muchos compuestos distintos: los de la endibia y el radicchio, la piel de los cítricos, el café, el cacao, la cerveza, la corteza quemada de la brasa o el aceite temprano. En poca cantidad da profundidad y hace que un plato no canse; en exceso, lo tapa todo.\n\nLa astringencia no es un gusto: es la sequedad y aspereza que dejan los taninos al unirse a las proteínas de la saliva. La dan el vino tinto, el té muy infusionado, la piel de la nuez, el caqui o el membrillo verdes y la granada. La grasa y la proteína la suavizan: por eso el tinto va bien con carne. La sal es el mejor corrector del amargor; el dulce, la grasa y el umami lo tapan. Para el equilibrio de un plato, ver [[contraste-y-equilibrio]].",
+    "base": {
+      "for": "Fuentes y correctores",
+      "items": [
+        [
+          "Hojas amargas",
+          "endibia, radicchio, escarola, rúcula"
+        ],
+        [
+          "Piel de cítrico",
+          "parte blanca, sobre todo"
+        ],
+        [
+          "Tostados",
+          "café, cacao, corteza de brasa"
+        ],
+        [
+          "Astringentes",
+          "vino tinto, té largo, piel de nuez, granada, caqui verde"
+        ],
+        [
+          "Corrector principal del amargor",
+          "sal"
+        ],
+        [
+          "Suavizan la astringencia",
+          "grasa y proteína"
+        ]
+      ],
+      "steps": [
+        "Prueba el ingrediente amargo solo y decide si quieres usarlo o domarlo.",
+        "Sala un poco: la sal baja el amargor más que el azúcar.",
+        "Acompaña con grasa, dulce o umami si sigue dominando.",
+        "Para hojas amargas, el frío, el agua helada y un corte fino lo suavizan; el escaldado lo baja más.",
+        "Controla los tiempos de infusión y de cocción: muchos amargos salen al alargar."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Hojas amargas en ensalada",
+        "ratio": "Agua helada 10–15 minutos",
+        "note": "Más crujientes y algo menos amargas."
+      },
+      {
+        "use": "Piel de cítrico",
+        "ratio": "Escaldar 2–3 veces partiendo de agua fría",
+        "note": "Para confitar sin amargor."
+      },
+      {
+        "use": "Infusiones y tés en cocina",
+        "ratio": "Respetar tiempo; más tiempo, más tanino",
+        "note": "Mejor más cantidad y menos tiempo."
+      },
+      {
+        "use": "Fumet y caldos de pescado",
+        "ratio": "20–30 minutos de cocción",
+        "note": "Las espinas amargan."
+      }
+    ],
+    "variants": [
+      {
+        "id": "contraste-y-equilibrio",
+        "name": "Equilibrio",
+        "note": "El amargo dentro del plato."
+      },
+      {
+        "id": "texturas-y-percepcion",
+        "name": "Percepción",
+        "note": "La astringencia como sensación."
+      },
+      {
+        "id": "coles-y-brasicas",
+        "name": "Coles",
+        "note": "Amargos de la familia de la col."
+      },
+      {
+        "id": "cafe-y-te-en-cocina",
+        "name": "Café y té",
+        "note": "Amargo y tanino útiles."
+      }
+    ],
+    "keys": [
+      "Amargo es un gusto; astringente, una sensación.",
+      "La sal corrige el amargor.",
+      "Grasa y proteína suavizan la astringencia.",
+      "Un toque de amargo hace que un plato no canse.",
+      "Infusiones largas, más tanino."
+    ],
+    "errors": [
+      {
+        "p": "Salsa amarga por la piel del cítrico",
+        "fix": "Sobró parte blanca o se coció mucho. Usa solo la piel exterior y añádela al final."
+      },
+      {
+        "p": "Plato que seca la boca",
+        "fix": "Demasiado tanino. Añade grasa o proteína, o acorta la infusión."
+      },
+      {
+        "p": "Verdura de brasa amarga",
+        "fix": "Carbonizado de más. Busca tostado, no negro."
+      }
+    ],
+    "history": "Las cocinas mediterráneas siempre han apreciado el amargo: hojas silvestres, aperitivos de hierbas, alcachofas, aceitunas. La ciencia sensorial reciente ha explicado que amargor y astringencia funcionan por vías distintas.",
+    "uses": [
+      "Ensaladas de hojas",
+      "Equilibrio de platos dulces y grasos",
+      "Salsas y jugos",
+      "Postres de cacao y café"
+    ],
+    "keep": "No aplica: es un principio.",
+    "pro": "Prueba cada tanda de hojas, aceite y cítrico: su amargor cambia con la temporada y el origen. Ajusta sal y acompañamientos en consecuencia.",
+    "related": [
+      "contraste-y-equilibrio",
+      "texturas-y-percepcion",
+      "acidez-en-cocina",
+      "coles-y-brasicas",
+      "cafe-y-te-en-cocina",
+      "citricos"
+    ]
+  },
+  {
+    "id": "densidad-y-grados-brix",
+    "name": "Densidad y grados Brix",
+    "name_en": "Density and Brix degrees",
+    "aka": [
+      "Brix",
+      "refractómetro",
+      "densidad del almíbar",
+      "concentración de azúcar",
+      "medir el dulzor"
+    ],
+    "cat": "conceptos",
+    "group": "Fundamentos",
+    "summary": "Medir cuánto azúcar disuelto hay en un líquido para repetir almíbares, sorbetes, confituras y salmueras sin depender de la vista.",
+    "what": "El grado Brix indica los gramos de azúcar disuelto por cada 100 g de líquido. Un almíbar de agua y azúcar a partes iguales tiene 50 °Brix; una fresa madura, entre 7 y 10; una uva para vino, bastante más. Se mide con un refractómetro: una gota sobre el cristal y se lee al momento. También vale un densímetro, porque cuanto más azúcar, más denso el líquido.\n\nMedir permite repetir resultados con fruta que cambia cada semana: un sorbete con pocos Brix se congela duro y con muchos no cuaja; una confitura se aparta en su punto sin adivinar; una salmuera se controla igual con un densímetro de sal. El refractómetro lee todo lo disuelto, no solo azúcar, así que en zumos ácidos o salados la lectura es orientativa. Lo dulce en la percepción está en [[caramelizacion-de-azucares]] y [[miel-y-azucares]].",
+    "base": {
+      "for": "Referencias habituales",
+      "items": [
+        [
+          "Almíbar 1:1 de agua y azúcar",
+          "50 °Brix"
+        ],
+        [
+          "Almíbar ligero para fruta",
+          "20–30 °Brix"
+        ],
+        [
+          "Base de sorbete",
+          "25–32 °Brix según fruta y alcohol"
+        ],
+        [
+          "Confitura en su punto",
+          "60–65 °Brix"
+        ],
+        [
+          "Fruta madura",
+          "8–20 °Brix según fruta"
+        ],
+        [
+          "Herramienta",
+          "refractómetro de 0–32 o 0–90 °Brix"
+        ]
+      ],
+      "steps": [
+        "Calibra el refractómetro con agua destilada a cero.",
+        "Pon una gota a temperatura ambiente: caliente, la lectura sale falsa salvo que el aparato compense.",
+        "Lee y corrige: añade almíbar si falta azúcar o agua o zumo si sobra.",
+        "Mide la fruta antes de empezar y anota el valor junto a la receta.",
+        "En confituras, toma la muestra fría y mide varias veces al final de la cocción."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Sorbete de fruta",
+        "ratio": "26–30 °Brix",
+        "note": "Menos con alcohol o con fruta muy dulce."
+      },
+      {
+        "use": "Almíbar para mojar bizcochos",
+        "ratio": "30–40 °Brix",
+        "note": "Con o sin licor."
+      },
+      {
+        "use": "Confitura",
+        "ratio": "60–65 °Brix",
+        "note": "Por debajo, siempre en frío."
+      },
+      {
+        "use": "Fruta en almíbar",
+        "ratio": "18–25 °Brix",
+        "note": "Ligero, respeta la fruta."
+      }
+    ],
+    "variants": [
+      {
+        "id": "helados-y-sorbetes",
+        "name": "Sorbetes",
+        "note": "El uso más claro del Brix."
+      },
+      {
+        "id": "confituras-y-mermeladas",
+        "name": "Confituras",
+        "note": "Punto sin adivinar."
+      },
+      {
+        "id": "frutas-en-almibar",
+        "name": "Almíbares",
+        "note": "Concentraciones repetibles."
+      },
+      {
+        "id": "salmuera",
+        "name": "Salmueras",
+        "note": "Misma idea con sal."
+      }
+    ],
+    "keys": [
+      "Brix: gramos de azúcar disuelto en 100 g.",
+      "La fruta cambia; medir corrige.",
+      "Muestra a temperatura ambiente.",
+      "Lee todo lo disuelto, no solo azúcar.",
+      "Anota el valor en cada receta."
+    ],
+    "errors": [
+      {
+        "p": "Sorbete duro como piedra",
+        "fix": "Pocos Brix. Sube el azúcar o usa algo de azúcar invertido o glucosa."
+      },
+      {
+        "p": "Sorbete blando que no cuaja",
+        "fix": "Demasiados Brix o alcohol. Aclara con agua o zumo."
+      },
+      {
+        "p": "Lecturas que no cuadran",
+        "fix": "Muestra caliente o aparato sin calibrar. Enfría la gota y calibra con agua."
+      }
+    ],
+    "history": "La escala Brix procede de la química del azúcar del siglo XIX y se ha usado desde entonces en vinicultura, zumería y confitería. En cocina se generalizó con los refractómetros de mano.",
+    "uses": [
+      "Sorbetes y granizados",
+      "Almíbares",
+      "Confituras",
+      "Control de madurez de la fruta"
+    ],
+    "keep": "No aplica: es un principio.",
+    "pro": "Un refractómetro en la partida de postres y la cifra de Brix escrita en cada receta de sorbete y almíbar. Mide cada tanda de fruta.",
+    "related": [
+      "helados-y-sorbetes",
+      "confituras-y-mermeladas",
+      "frutas-en-almibar",
+      "miel-y-azucares",
+      "salmuera",
+      "actividad-de-agua"
+    ]
+  },
+  {
+    "id": "picante-y-pungencia",
+    "name": "Picante y pungencia",
+    "name_en": "Heat and pungency",
+    "aka": [
+      "picor",
+      "capsaicina",
+      "pungencia",
+      "picante de la mostaza",
+      "calmar el picante"
+    ],
+    "cat": "conceptos",
+    "group": "Fundamentos",
+    "summary": "Cada picante viene de una sustancia distinta y se comporta distinto con el calor, el agua y la grasa: chile, pimienta, mostaza, wasabi, ajo y jengibre.",
+    "what": "El picor no es un gusto: es una sensación de calor o irritación. Pero no todos los picantes funcionan igual. La capsaicina del chile se disuelve en grasa y alcohol, no en agua; aguanta la cocción y se queda en la boca: la leche, el yogur o el aceite la calman mejor que el agua. La piperina de la pimienta pica menos y su aroma se pierde con la cocción larga: se muele al final.\n\nLa mostaza, el wasabi, el rábano picante y la rúcula pican por compuestos volátiles que se forman al romper la célula con agua; suben a la nariz y desaparecen pronto y con el calor. El ajo y la cebolla crudos pican por una reacción parecida al cortarlos; cocinados, se endulzan. El jengibre cambia de picor fresco a más cálido al secarse o cocinarse. La pimienta de Sichuan no pica: hormiguea. El producto está en [[chiles-secos-y-frescos]].",
+    "base": {
+      "for": "Cómo se comporta cada picante",
+      "items": [
+        [
+          "Chile (capsaicina)",
+          "soluble en grasa; resiste el calor; persistente"
+        ],
+        [
+          "Pimienta negra (piperina)",
+          "aroma volátil; moler al final"
+        ],
+        [
+          "Mostaza, wasabi, rábano picante",
+          "se forma al majar con agua; volátil; se pierde con calor"
+        ],
+        [
+          "Ajo y cebolla crudos",
+          "se forma al cortar; se suaviza al cocinar"
+        ],
+        [
+          "Jengibre",
+          "fresco y vivo en crudo; más cálido seco o cocinado"
+        ],
+        [
+          "Pimienta de Sichuan",
+          "hormigueo, no picor"
+        ]
+      ],
+      "steps": [
+        "Decide qué picor quieres: de nariz y fugaz (mostaza, wasabi) o de boca y largo (chile).",
+        "Con chile, dosifica poco a poco: el picor se acumula al comer.",
+        "Si pasa de picante, añade grasa, lácteo, dulce o más volumen, no agua.",
+        "Ralla wasabi o rábano picante al momento y mezcla la mostaza en polvo con agua fría; espera 10 minutos.",
+        "Añade pimienta y jengibre fresco al final si quieres su aroma."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Mostaza en polvo",
+        "ratio": "1 parte de polvo y 1 de agua fría, 10 minutos",
+        "note": "Con vinagre desde el principio pica menos."
+      },
+      {
+        "use": "Aceite de chile",
+        "ratio": "Chile seco 1 parte, aceite 4 partes",
+        "note": "La capsaicina pasa al aceite."
+      },
+      {
+        "use": "Calmar una salsa",
+        "ratio": "Yogur, nata o coco al 10–20 %",
+        "note": "Y algo de dulce."
+      },
+      {
+        "use": "Ajo crudo en un aliño",
+        "ratio": "Majar y esperar 10 minutos",
+        "note": "Más picor; escaldado, menos."
+      }
+    ],
+    "variants": [
+      {
+        "id": "chiles-secos-y-frescos",
+        "name": "Chiles",
+        "note": "El producto."
+      },
+      {
+        "id": "salsa-xo-y-aceites-de-chile",
+        "name": "Aceites de chile",
+        "note": "Capsaicina en grasa."
+      },
+      {
+        "id": "salsa-de-pimienta-y-mostaza",
+        "name": "Pimienta y mostaza",
+        "note": "Dos picores en una salsa."
+      },
+      {
+        "id": "enzimas-en-cocina",
+        "name": "Enzimas",
+        "note": "Por qué la mostaza pica al mojarla."
+      }
+    ],
+    "keys": [
+      "El chile se calma con grasa, no con agua.",
+      "Mostaza y wasabi: al momento, con agua fría.",
+      "El calor apaga los picores volátiles y deja el del chile.",
+      "Pimienta, recién molida y al final.",
+      "Dosifica: el picor se acumula."
+    ],
+    "errors": [
+      {
+        "p": "Salsa demasiado picante",
+        "fix": "Amplía la base o añade lácteo, grasa o dulce. El agua no lo arregla."
+      },
+      {
+        "p": "Wasabi o mostaza sin fuerza",
+        "fix": "Preparados con antelación o con calor. Hazlos al momento."
+      },
+      {
+        "p": "Picor que crece en el guiso",
+        "fix": "El chile suelta más con el tiempo. Ponlo con menos cantidad o retíralo antes."
+      }
+    ],
+    "history": "Antes del chile, el picor europeo venía de la pimienta, la mostaza, el ajo y el jengibre. El chile llegó de América a partir del siglo XVI y se extendió por medio mundo, desde la cocina española a las de Asia.",
+    "uses": [
+      "Salsas picantes",
+      "Aliños y marinadas",
+      "Acompañamientos de brasa",
+      "Cocinas asiáticas y americanas"
+    ],
+    "keep": "No aplica: es un principio.",
+    "pro": "Escribe la cantidad de chile por peso, no por unidad, y prueba cada partida: su picor cambia mucho de una a otra.",
+    "related": [
+      "chiles-secos-y-frescos",
+      "salsa-xo-y-aceites-de-chile",
+      "salsa-de-pimienta-y-mostaza",
+      "especias",
+      "cebolla-y-ajo",
+      "enzimas-en-cocina"
+    ]
   }
 ]

@@ -9873,5 +9873,1712 @@
    "quesos-en-cocina",
    "tartas-de-fruta"
   ]
+ },
+ {
+  "id": "buey-de-mar-y-centollo",
+  "name": "Buey de mar y centollo",
+  "name_en": "Brown crab and spider crab",
+  "cat": "producto",
+  "group": "Pescado y marisco",
+  "aka": [
+   "buey de mar",
+   "centollo",
+   "centolla",
+   "txangurro",
+   "cangrejo",
+   "coral de centollo"
+  ],
+  "summary": "Cangrejos grandes de carne dulce y pasta intensa en el caparazón: se cuecen enteros, se abren en frío y se aprovechan del todo.",
+  "what": "El buey de mar tiene grandes pinzas llenas de carne blanca y firme y una pasta cremosa dentro del caparazón. El centollo tiene patas largas, carne más fina y dulce y un coral muy sabroso, sobre todo en las hembras. Los dos se compran vivos y pesados para su tamaño, señal de que están llenos.\n\nSe cuecen enteros en agua muy salada, se enfrían y se abren para sacar la carne y la pasta. Se comen fríos, en salpicón, o se mezcla la carne con un sofrito y se gratina en su caparazón, como en el txangurro vasco. Su pesca está regulada con vedas y tallas. Ver [[limpiar-y-abrir-marisco]].",
+  "method": [
+   "Elige piezas vivas, activas y pesadas; las hembras suelen tener más coral.",
+   "Adormécelas en frío 20–30 minutos antes de cocer.",
+   "Cuece en agua hirviendo con mucha sal, contando desde que vuelve a hervir, y deja enfriar boca abajo para que no pierdan el jugo.",
+   "Abre el caparazón, quita agallas y boca, saca la carne de cuerpo y patas y guarda la pasta.",
+   "Para gratinar: mezcla la carne con un sofrito de cebolla, tomate y un toque de brandy, rellena el caparazón, cubre con pan rallado y mantequilla y dora."
+  ],
+  "ratios": [
+   {
+    "use": "Agua de cocción",
+    "ratio": "50–60 g de sal por litro",
+    "note": "O agua de mar."
+   },
+   {
+    "use": "Centollo de 1 kg",
+    "ratio": "15–18 minutos",
+    "note": "Desde que vuelve a hervir."
+   },
+   {
+    "use": "Buey de mar de 1 kg",
+    "ratio": "18–20 minutos",
+    "note": "Más si es mayor."
+   },
+   {
+    "use": "Ración de carne limpia",
+    "ratio": "100–150 g",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "limpiar-y-abrir-marisco",
+    "name": "Abrir y limpiar",
+    "note": "Qué se tira y qué se aprovecha."
+   },
+   {
+    "id": "coccion-de-marisco",
+    "name": "Cocción de marisco",
+    "note": "Puntos."
+   },
+   {
+    "id": "salpicon-y-cocteles-de-marisco",
+    "name": "En salpicón",
+    "note": "Frío."
+   },
+   {
+    "id": "gratinado",
+    "name": "Gratinado en su caparazón",
+    "note": "Al estilo del txangurro."
+   }
+  ],
+  "keys": [
+   "Vivo y pesado para su tamaño.",
+   "Agua muy salada y tiempo por peso.",
+   "Enfriar boca abajo.",
+   "La pasta y el coral son la mitad del sabor.",
+   "Alérgeno: crustáceo."
+  ],
+  "errors": [
+   {
+    "p": "Carne aguada",
+    "fix": "Pieza vacía o muerta antes de cocer. Elige vivas y pesadas."
+   },
+   {
+    "p": "Patas que se sueltan",
+    "fix": "Cocción brusca. Adormece en frío antes."
+   },
+   {
+    "p": "Carne dura",
+    "fix": "Cocción larga. Ajusta al peso."
+   }
+  ],
+  "history": "El buey de mar y el centollo son mariscos muy apreciados de la costa atlántica y cantábrica; el txangurro es un plato clásico de la cocina vasca.",
+  "uses": [
+   "Mariscadas y fríos",
+   "Gratinados",
+   "Salpicones",
+   "Arroces y cremas"
+  ],
+  "keep": "Vivos, 1–2 días a 4–6 °C tapados con paño húmedo. Cocidos, 1–2 días en frío.",
+  "pro": "Cuece por la mañana, enfría y limpia; carne y pasta por separado en frío.",
+  "related": [
+   "limpiar-y-abrir-marisco",
+   "coccion-de-marisco",
+   "salpicon-y-cocteles-de-marisco",
+   "gratinado",
+   "cigala-y-langosta",
+   "fondo-de-marisco"
+  ]
+ },
+ {
+  "id": "vieiras-y-zamburinas",
+  "name": "Vieiras y zamburiñas",
+  "name_en": "Scallops and queen scallops",
+  "cat": "producto",
+  "group": "Pescado y marisco",
+  "aka": [
+   "vieira",
+   "vieiras",
+   "zamburiña",
+   "zamburiñas",
+   "coral de vieira",
+   "vieiras a la gallega"
+  ],
+  "summary": "Bivalvos de músculo blanco y dulce y coral naranja: marcados un minuto a fuego muy vivo, gratinados o en crudo si son de procedencia segura.",
+  "what": "La vieira es un molusco de concha grande cuyo músculo blanco, tierno y dulce, se come junto al coral naranja. La zamburiña es más pequeña, de sabor parecido y muy popular a la plancha en Galicia. Las dos se compran vivas o ya limpias, de procedencia controlada: algunos moluscos pueden acumular toxinas de algas y su venta está vigilada.\n\nEl músculo se cocina muy poco: marcado a fuego muy vivo hasta que se dora por fuera y queda translúcido dentro, o gratinado en su concha con un sofrito y pan rallado. En crudo, solo si son muy frescas y de proveedor de confianza. Ver [[limpiar-y-abrir-marisco]].",
+  "method": [
+   "Abre las vieiras por la concha plana, separa el músculo y el coral y tira lo demás; lava rápido y seca muy bien.",
+   "Plancha: muy caliente, con poco aceite, el músculo seco y salado justo antes; 1 minuto por lado sin moverlo.",
+   "Zamburiñas en su concha: a la plancha con un poco de ajo, perejil y aceite, 2–3 minutos.",
+   "Gratinadas: en la concha con un sofrito de cebolla, un chorrito de vino, pan rallado y aceite, horno fuerte 5–6 minutos.",
+   "En crudo: láminas finas, aliñadas al momento."
+  ],
+  "ratios": [
+   {
+    "use": "Vieira marcada",
+    "ratio": "Plancha muy caliente, 1 minuto por lado",
+    "note": "Centro translúcido."
+   },
+   {
+    "use": "Zamburiña en su concha",
+    "ratio": "2–3 minutos",
+    "note": "Plancha."
+   },
+   {
+    "use": "Gratinado",
+    "ratio": "220 °C, 5–6 minutos",
+    "note": "Hasta dorar."
+   },
+   {
+    "use": "Ración",
+    "ratio": "3–4 vieiras o 8–10 zamburiñas",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "limpiar-y-abrir-marisco",
+    "name": "Abrir vieiras",
+    "note": "Músculo y coral."
+   },
+   {
+    "id": "plancha-y-sarten",
+    "name": "Plancha",
+    "note": "Fuego muy vivo."
+   },
+   {
+    "id": "gratinado",
+    "name": "Gratinadas",
+    "note": "En su concha."
+   },
+   {
+    "id": "beurre-blanc",
+    "name": "Con salsa de mantequilla",
+    "note": "Clásico."
+   }
+  ],
+  "keys": [
+   "Procedencia controlada siempre.",
+   "Músculo muy seco antes de marcar.",
+   "Fuego muy vivo y poco tiempo.",
+   "El coral también se come.",
+   "Alérgeno: molusco."
+  ],
+  "errors": [
+   {
+    "p": "Vieira que suelta agua y no dora",
+    "fix": "Húmeda o tratada con agua. Sécala y elige producto sin tratar."
+   },
+   {
+    "p": "Textura gomosa",
+    "fix": "Pasada. 1 minuto por lado."
+   },
+   {
+    "p": "Arena",
+    "fix": "Mal lavada. Lava rápido en agua fría."
+   }
+  ],
+  "history": "La vieira es un marisco muy ligado a Galicia y a la tradición del Camino de Santiago, donde su concha es un símbolo conocido.",
+  "uses": [
+   "Plancha",
+   "Gratinados",
+   "Crudos",
+   "Arroces y guisos"
+  ],
+  "keep": "Vivas, 1–2 días en frío tapadas con paño húmedo. Limpias, el mismo día.",
+  "pro": "Limpia antes del servicio y guarda los músculos secos en bandeja con papel.",
+  "related": [
+   "limpiar-y-abrir-marisco",
+   "plancha-y-sarten",
+   "gratinado",
+   "beurre-blanc",
+   "mejillon-y-almeja",
+   "ostras-y-percebes"
+  ]
+ },
+ {
+  "id": "trucha-y-pescados-de-rio",
+  "name": "Trucha y pescados de río",
+  "name_en": "Trout and freshwater fish",
+  "cat": "producto",
+  "group": "Pescado y marisco",
+  "aka": [
+   "trucha",
+   "trucha arcoíris",
+   "trucha a la navarra",
+   "pescados de río",
+   "tenca",
+   "barbo"
+  ],
+  "summary": "Pescados de agua dulce de carne fina y delicada: hoy casi siempre trucha de piscifactoría, a la plancha, en papillote o con jamón.",
+  "what": "La trucha es el pescado de río más habitual en cocina: casi siempre de piscifactoría, de carne blanca o rosada, fina y suave. Se cocina entera o en lomos, con poco tiempo: a la plancha por la piel, en [[papillote-y-vapor|papillote]], frita o rellena de jamón, como en la receta navarra. Otros pescados de río, como la tenca o el barbo, tienen tradición en zonas de interior, pero tienen muchas espinas.\n\nLos pescados de agua dulce pueden tener sus propios parásitos: para servirlos crudos o poco hechos, se congelan antes como cualquier pescado.",
+  "method": [
+   "Elige piezas de ojo brillante y piel tersa; la trucha de ración pesa 250–350 g.",
+   "Eviscera, lava y seca; deja la piel, que es fina y se tuesta.",
+   "A la plancha o en sartén por la piel 3–4 minutos y 1 por la carne.",
+   "A la navarra: rellena con una loncha de jamón, enharina y fríe en el aceite donde se ha dorado el jamón.",
+   "En papillote o al horno: 180–200 °C, 10–12 minutos."
+  ],
+  "ratios": [
+   {
+    "use": "Trucha de ración",
+    "ratio": "250–350 g",
+    "note": "Entera."
+   },
+   {
+    "use": "Punto",
+    "ratio": "45–50 °C en el centro",
+    "note": "Congelada antes si queda por debajo de 60 °C."
+   },
+   {
+    "use": "Horno",
+    "ratio": "180–200 °C, 10–12 minutos",
+    "note": "Pieza entera."
+   },
+   {
+    "use": "Rendimiento en lomos",
+    "ratio": "50–55 %",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "papillote-y-vapor",
+    "name": "Papillote",
+    "note": "Cocción suave."
+   },
+   {
+    "id": "jamon-curado",
+    "name": "A la navarra",
+    "note": "Con jamón."
+   },
+   {
+    "id": "ahumado",
+    "name": "Trucha ahumada",
+    "note": "Curada y ahumada."
+   },
+   {
+    "id": "fileteado-de-pescado",
+    "name": "Fileteado",
+    "note": "Lomos y espinas."
+   }
+  ],
+  "keys": [
+   "Cocción corta: carne fina.",
+   "La piel se tuesta: no la quites.",
+   "Pescado de río crudo o poco hecho (por debajo de 60 °C): congelado antes (-20 °C al menos 24 horas en toda la pieza) o ya tratado.",
+   "Muy fresca: pierde calidad deprisa.",
+   "Espinas finas: quítalas con pinzas en los lomos."
+  ],
+  "errors": [
+   {
+    "p": "Sabor a barro",
+    "fix": "Pescado de mala procedencia. Cambia de proveedor."
+   },
+   {
+    "p": "Carne seca",
+    "fix": "Pasada. Saca antes."
+   },
+   {
+    "p": "Piel pegada",
+    "fix": "Sartén fría o pescado húmedo. Seca y calienta."
+   }
+  ],
+  "history": "La trucha ha sido el pescado de río de la cocina de interior y de montaña en toda la península; la trucha a la navarra es uno de sus platos más conocidos.",
+  "uses": [
+   "Pescado de ración",
+   "Plancha y horno",
+   "Ahumados",
+   "Rellenos"
+  ],
+  "keep": "Entera, 1–2 días a 0–2 °C; en lomos, el mismo día.",
+  "pro": "Limpia al recibir y guarda seca en bandeja con papel.",
+  "related": [
+   "papillote-y-vapor",
+   "jamon-curado",
+   "ahumado",
+   "fileteado-de-pescado",
+   "dorada-y-lubina",
+   "plancha-y-sarten"
+  ]
+ },
+ {
+  "id": "remolacha-y-raices",
+  "name": "Remolacha y raíces",
+  "name_en": "Beetroot and root vegetables",
+  "cat": "producto",
+  "group": "Huerta",
+  "aka": [
+   "remolacha",
+   "chirivía",
+   "nabo",
+   "colinabo",
+   "rábano",
+   "zanahoria",
+   "raíces asadas"
+  ],
+  "summary": "Raíces dulces y terrosas que ganan con el asado lento, a la sal o en ceniza, y que también se comen crudas, finas y aliñadas.",
+  "what": "Las raíces (remolacha, zanahoria, chirivía, nabo, colinabo, rábano) son verduras de guarda, de invierno, dulces y terrosas. Asadas enteras, a la sal o en ceniza concentran el azúcar y se vuelven melosas; crudas, en láminas finas o ralladas, son crujientes y frescas. La remolacha tiñe todo de rojo y sus hojas se cocinan como acelgas; la chirivía, más dulce y perfumada que la zanahoria, es estupenda asada o en puré; el rábano, picante y crujiente, va crudo o encurtido.\n\nPiden contraste: algo ácido, graso o salado, como queso, yogur, cítrico, frutos secos o vinagre.",
+  "method": [
+   "Remolacha entera: envuelta en papel con un poco de aceite y sal, horno a 180–200 °C hasta que un cuchillo entre fácil; pela templada con guantes.",
+   "Asadas en trozos: chirivía, zanahoria o nabo con aceite y sal a 200–220 °C hasta dorar.",
+   "A la sal o en ceniza: ver las fichas de esas técnicas.",
+   "Crudas: láminas finas en mandolina, a agua con hielo, y aliño al momento.",
+   "Hojas de remolacha y de nabo: salteadas o en guisos."
+  ],
+  "ratios": [
+   {
+    "use": "Remolacha entera asada",
+    "ratio": "180–200 °C, 1–1,5 horas",
+    "note": "Según tamaño."
+   },
+   {
+    "use": "Raíces en trozos asadas",
+    "ratio": "200–220 °C, 25–35 minutos",
+    "note": "Sin amontonar."
+   },
+   {
+    "use": "Remolacha cocida",
+    "ratio": "40–60 minutos en agua con sal",
+    "note": "Sin pelar."
+   },
+   {
+    "use": "Encurtido rápido de rábano",
+    "ratio": "Vinagre, agua y azúcar 1:1:0,5",
+    "note": "1 hora."
+   }
+  ],
+  "variants": [
+   {
+    "id": "asado-de-verduras",
+    "name": "Asado",
+    "note": "Para dorar y concentrar."
+   },
+   {
+    "id": "coccion-a-la-sal",
+    "name": "A la sal",
+    "note": "Remolacha y apionabo."
+   },
+   {
+    "id": "coccion-en-hoja-y-ceniza",
+    "name": "En ceniza",
+    "note": "Remolacha y nabo enteros."
+   },
+   {
+    "id": "fondo-de-raices",
+    "name": "Caldo de raíces",
+    "note": "Con pieles y recortes."
+   }
+  ],
+  "keys": [
+   "Asado lento para concentrar.",
+   "Guantes con la remolacha.",
+   "Contraste ácido, graso o salado.",
+   "Las hojas también se comen.",
+   "Crudas, finas y en agua con hielo."
+  ],
+  "errors": [
+   {
+    "p": "Remolacha dura por dentro",
+    "fix": "Poco tiempo. Sigue hasta que el cuchillo entre fácil."
+   },
+   {
+    "p": "Todo teñido de rojo",
+    "fix": "Remolacha mezclada antes. Monta al final."
+   },
+   {
+    "p": "Raíces asadas blandas y pálidas",
+    "fix": "Bandeja llena u horno flojo. Separa y sube el horno."
+   }
+  ],
+  "history": "Las raíces han sido la verdura de guarda del invierno en toda Europa; la remolacha y la chirivía vuelven a ser habituales en la cocina actual.",
+  "uses": [
+   "Asados y guarniciones",
+   "Purés",
+   "Ensaladas y crudos",
+   "Encurtidos",
+   "Caldos"
+  ],
+  "keep": "Sin hojas, 2–3 semanas en frío; asadas, 4–5 días en frío.",
+  "pro": "Asa por tandas y guarda peladas en frío; corta en crudo al momento.",
+  "related": [
+   "asado-de-verduras",
+   "coccion-a-la-sal",
+   "coccion-en-hoja-y-ceniza",
+   "fondo-de-raices",
+   "encurtidos-rapidos",
+   "pures-de-verdura"
+  ]
+ },
+ {
+  "id": "calabacin-y-pepino",
+  "name": "Calabacín y pepino",
+  "name_en": "Courgette and cucumber",
+  "cat": "producto",
+  "group": "Huerta",
+  "aka": [
+   "calabacín",
+   "pepino",
+   "calabacín a la brasa",
+   "pepino encurtido",
+   "calabacín crudo"
+  ],
+  "summary": "Verduras de verano con mucha agua: piden fuego vivo o crudo en láminas, sal para quitar agua y nada de cocciones largas.",
+  "what": "El calabacín y el pepino son de la familia de la calabaza y tienen mucha agua y un sabor suave. El calabacín pequeño y firme es el mejor: crudo en láminas finas, a la plancha o a la brasa a fuego vivo, en tortillas, rellenos o cremas; su flor se rellena y se fríe. El pepino se come casi siempre crudo, en ensaladas, sopas frías y encurtidos.\n\nSi un calabacín o un pepino sabe muy amargo, no se come: ese amargor puede indicar compuestos que sientan mal. Salar en crudo saca agua y mejora la textura.",
+  "method": [
+   "Elige piezas pequeñas, firmes y brillantes.",
+   "Calabacín a la plancha o brasa: en rodajas gruesas o a lo largo, con aceite y sal, fuego vivo, sin moverlo hasta que marque.",
+   "Calabacín crudo: láminas finas en mandolina, aliñadas con cítrico, aceite y sal justo antes.",
+   "Pepino: pélalo a tiras si la piel es gruesa, quita las semillas si suelta mucha agua y sálalo 15 minutos antes de aliñar.",
+   "Prueba un trocito crudo: si amarga, se descarta."
+  ],
+  "ratios": [
+   {
+    "use": "Calabacín a la plancha",
+    "ratio": "Fuego vivo, 2–3 minutos por lado",
+    "note": "Firme."
+   },
+   {
+    "use": "Pepino salado",
+    "ratio": "10 g de sal por kg, 15 minutos",
+    "note": "Escurrir."
+   },
+   {
+    "use": "Encurtido de pepino",
+    "ratio": "Vinagre, agua y azúcar 1:1:0,5",
+    "note": "24 horas."
+   },
+   {
+    "use": "Crema fría",
+    "ratio": "1 kg de calabacín o pepino, 150 g de yogur, aceite",
+    "note": "Con hierbas."
+   }
+  ],
+  "variants": [
+   {
+    "id": "flores-comestibles",
+    "name": "Flor de calabacín",
+    "note": "Rellena y frita."
+   },
+   {
+    "id": "encurtidos-rapidos",
+    "name": "Pepinillos y encurtidos",
+    "note": "Crujientes."
+   },
+   {
+    "id": "cremas-frias-de-verdura",
+    "name": "Cremas frías",
+    "note": "De pepino o calabacín."
+   },
+   {
+    "id": "verduras-a-la-brasa",
+    "name": "A la brasa",
+    "note": "Fuego vivo."
+   }
+  ],
+  "keys": [
+   "Piezas pequeñas y firmes.",
+   "Fuego vivo o crudo: nada de cocciones largas.",
+   "Salar para quitar agua.",
+   "Si amarga mucho, se tira.",
+   "Aliñar al momento."
+  ],
+  "errors": [
+   {
+    "p": "Calabacín aguado",
+    "fix": "Cocción lenta o tapado. Fuego vivo y sin tapar."
+   },
+   {
+    "p": "Ensalada de pepino aguada",
+    "fix": "Sin salar ni escurrir. Sala y escurre antes."
+   },
+   {
+    "p": "Sabor muy amargo",
+    "fix": "Pieza en mal estado. Descártala."
+   }
+  ],
+  "history": "El pepino se cultiva desde hace milenios en Asia y el Mediterráneo; el calabacín, de origen americano, se desarrolló como verdura en Italia y se extendió por Europa.",
+  "uses": [
+   "Plancha y brasa",
+   "Crudos y ensaladas",
+   "Cremas frías",
+   "Encurtidos",
+   "Rellenos"
+  ],
+  "keep": "4–7 días en frío, en la zona menos fría; cortados, en el día.",
+  "pro": "Corta al momento; ten pepino salado y escurrido para aliños.",
+  "related": [
+   "flores-comestibles",
+   "encurtidos-rapidos",
+   "cremas-frias-de-verdura",
+   "verduras-a-la-brasa",
+   "gazpacho-y-salmorejo",
+   "pisto-y-sanfaina"
+  ]
+ },
+ {
+  "id": "judia-verde-y-habas",
+  "name": "Judía verde y habas",
+  "name_en": "Green beans and broad beans",
+  "cat": "producto",
+  "group": "Huerta",
+  "aka": [
+   "judía verde",
+   "judías verdes",
+   "vainas",
+   "habas",
+   "habitas",
+   "habas tiernas",
+   "habas con jamón"
+  ],
+  "summary": "Vainas y semillas tiernas de primavera y verano: escaldadas lo justo, peladas dos veces en el caso de las habas grandes.",
+  "what": "La judía verde es la vaina tierna de la judía: plana o redonda, se escalda o se cuece lo justo para que quede tierna y verde, y se termina salteada, en ensalada o en guisos. Las habas tiernas se desgranan de su vaina; las muy pequeñas se comen crudas o con un salteado rápido, y las grandes se escaldan y se les quita también la piel de cada grano, que es dura.\n\nUn aviso: algunas personas, por un problema hereditario, no pueden comer habas (favismo). Las habas secas están en [[legumbres]].",
+  "method": [
+   "Judía verde: quita las puntas y los hilos si los tiene; escalda en agua abundante con sal y corta en hielo.",
+   "Termina salteada con ajo, en ensalada o en la [[menestra-de-verduras]].",
+   "Habas: desgrana; si son grandes, escalda 30–60 segundos, enfría en hielo y quita la piel de cada grano.",
+   "Habitas pequeñas: crudas con sal y aceite, o salteadas 1–2 minutos con jamón y cebolleta.",
+   "Guarda las vainas tiernas de las habas para caldos."
+  ],
+  "ratios": [
+   {
+    "use": "Judía verde",
+    "ratio": "4–7 minutos en agua con sal",
+    "note": "Según grosor y gusto."
+   },
+   {
+    "use": "Habas grandes",
+    "ratio": "30–60 segundos y hielo",
+    "note": "Para pelar."
+   },
+   {
+    "use": "Habas con jamón",
+    "ratio": "1–2 minutos salteadas",
+    "note": "Tiernas."
+   },
+   {
+    "use": "Rendimiento de habas",
+    "ratio": "25–30 % de grano pelado",
+    "note": "Sobre vaina."
+   }
+  ],
+  "variants": [
+   {
+    "id": "escaldado-de-verduras",
+    "name": "Escaldado",
+    "note": "Punto y color."
+   },
+   {
+    "id": "menestra-de-verduras",
+    "name": "Menestra",
+    "note": "Con otras verduras de temporada."
+   },
+   {
+    "id": "esparrago-y-guisante",
+    "name": "Guisantes",
+    "note": "Primavera."
+   },
+   {
+    "id": "untables-de-legumbre",
+    "name": "Puré de habas",
+    "note": "Untable verde."
+   }
+  ],
+  "keys": [
+   "Escaldado corto y corte en hielo.",
+   "Habas grandes, peladas dos veces.",
+   "Habitas pequeñas, casi crudas.",
+   "Aviso: favismo en algunas personas.",
+   "Vainas al caldo."
+  ],
+  "errors": [
+   {
+    "p": "Judías grises",
+    "fix": "Cocción larga o tapadas. Agua abundante y destapadas."
+   },
+   {
+    "p": "Habas duras y harinosas",
+    "fix": "Grandes y sin pelar. Pélalas."
+   },
+   {
+    "p": "Judías con hilos",
+    "fix": "Sin limpiar. Quítalos."
+   }
+  ],
+  "history": "Las habas se cultivan en el Mediterráneo desde la antigüedad; la judía verde llegó de América y es hoy una verdura cotidiana en toda la península.",
+  "uses": [
+   "Guarniciones",
+   "Menestras y guisos",
+   "Ensaladas",
+   "Salteados con jamón"
+  ],
+  "keep": "Judía verde, 4–5 días en frío; habas en vaina, 2–3 días; escaldadas, 2 días.",
+  "pro": "Escalda y pela por la mañana; saltea al pedido.",
+  "related": [
+   "escaldado-de-verduras",
+   "menestra-de-verduras",
+   "esparrago-y-guisante",
+   "untables-de-legumbre",
+   "legumbres",
+   "punto-de-las-verduras"
+  ]
+ },
+ {
+  "id": "pimientas",
+  "name": "Pimientas",
+  "name_en": "Peppercorns",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "pimienta negra",
+   "pimienta blanca",
+   "pimienta verde",
+   "pimienta rosa",
+   "pimienta de Sichuan",
+   "pimienta de Jamaica",
+   "pimienta larga"
+  ],
+  "summary": "La especia más usada, con muchas caras: negra, blanca, verde, y otras «pimientas» que ni siquiera lo son; molidas al momento.",
+  "what": "La pimienta negra, la blanca y la verde son el mismo fruto en distintos estados: la verde se recoge tierna y se conserva en salmuera o seca; la negra se seca entera y es la más aromática; la blanca es el grano sin su piel exterior, más picante y menos aromática, útil en salsas claras. Otras se llaman pimienta sin serlo: la rosa es la baya de otro árbol, dulce y perfumada (puede dar problemas a personas alérgicas a anacardos y pistachos); la de Sichuan da un hormigueo más que picor; la de Jamaica recuerda al clavo y la canela.\n\nEl aroma se pierde rápido una vez molida: se muele al momento y, en cocciones largas, se añade también al final. Ver [[especias]].",
+  "method": [
+   "Compra en grano y muele al momento.",
+   "Tuesta en seco unos segundos las que lo agradecen (Sichuan, negra para mezclas).",
+   "En cocciones largas, pon granos enteros al principio y molida al final.",
+   "Usa blanca en salsas y purés claros si no quieres puntos negros.",
+   "Machaca en mortero cuando quieras textura, como en una costra de pimienta."
+  ],
+  "ratios": [
+   {
+    "use": "Costra de pimienta",
+    "ratio": "10–15 g machacada por kg de carne",
+    "note": "Para asar o sellar."
+   },
+   {
+    "use": "Pimienta verde en salsa",
+    "ratio": "15 g por 300 ml",
+    "note": "Escurrida de su salmuera."
+   },
+   {
+    "use": "Sichuan tostada",
+    "ratio": "Sartén seca, 30–60 segundos",
+    "note": "Hasta que huela."
+   },
+   {
+    "use": "Pimienta en un caldo",
+    "ratio": "8–10 granos por litro",
+    "note": "Entera."
+   }
+  ],
+  "variants": [
+   {
+    "id": "especias",
+    "name": "Especias",
+    "note": "Tostar y moler."
+   },
+   {
+    "id": "salsa-de-pimienta-y-mostaza",
+    "name": "Salsa de pimienta",
+    "note": "Para carnes."
+   },
+   {
+    "id": "rubs-y-mezclas-secas",
+    "name": "Mezclas secas",
+    "note": "Con pimienta."
+   },
+   {
+    "id": "aromaticos-de-asia",
+    "name": "Aromáticos de Asia",
+    "note": "Con la de Sichuan."
+   }
+  ],
+  "keys": [
+   "En grano y molida al momento.",
+   "Negra para aroma, blanca para salsas claras.",
+   "Rosa: no es pimienta; aviso para alérgicos a anacardos y pistachos.",
+   "Sichuan: hormigueo más que picante.",
+   "Al final en cocciones largas."
+  ],
+  "errors": [
+   {
+    "p": "Sin aroma",
+    "fix": "Molida hace tiempo. Muele al momento."
+   },
+   {
+    "p": "Salsa con puntos negros",
+    "fix": "Pimienta negra en salsa blanca. Usa blanca."
+   },
+   {
+    "p": "Picor que domina",
+    "fix": "Exceso. Pesa la dosis."
+   }
+  ],
+  "history": "La pimienta fue durante siglos una de las especias más valiosas del comercio entre Asia y Europa; hoy es la especia más común de cualquier cocina.",
+  "uses": [
+   "Sazonado de todo",
+   "Salsas",
+   "Costras y mezclas secas",
+   "Caldos y marinadas"
+  ],
+  "keep": "En grano, en bote cerrado y oscuro, más de un año; molida, semanas.",
+  "pro": "Molinillos llenos en cada partida; mezclas propias en tanda pequeña.",
+  "related": [
+   "especias",
+   "salsa-de-pimienta-y-mostaza",
+   "rubs-y-mezclas-secas",
+   "aromaticos-de-asia",
+   "aromas-y-volatiles",
+   "chiles-secos-y-frescos"
+  ]
+ },
+ {
+  "id": "quesos-azules",
+  "name": "Quesos azules",
+  "name_en": "Blue cheeses",
+  "cat": "producto",
+  "group": "Lácteos",
+  "aka": [
+   "queso azul",
+   "cabrales",
+   "valdeón",
+   "roquefort",
+   "gorgonzola",
+   "stilton",
+   "queso de cueva"
+  ],
+  "summary": "Quesos con vetas de moho azul, intensos, salados y cremosos: se usan con medida, en frío con dulce y en salsas sin hervir.",
+  "what": "Los quesos azules llevan un moho que crece en vetas por su interior durante la maduración, a menudo en cuevas o cámaras húmedas. Son intensos, salados, algo picantes y cremosos. Los hay de vaca, de oveja, de cabra o de mezcla: en la península, el cabrales asturiano o el valdeón; en Francia, el roquefort, de oveja; en Italia, el gorgonzola, más suave y cremoso.\n\nEn cocina se usan con medida porque dominan: en salsas para carnes o pastas, fundidos sin hervir; en frío, con fruta, miel, frutos secos o pan de pasas. Ver [[salsas-de-queso]] y [[quesos-en-cocina]].",
+  "method": [
+   "Sácalos de la cámara 30–60 minutos antes de servir.",
+   "Desmigaja en frío con un tenedor, no lo cortes en láminas finas si es muy cremoso.",
+   "En salsa: funde a fuego suave en nata o en un jugo, sin hervir, y ajusta con pimienta.",
+   "Equilibra su sal e intensidad con dulce (pera, higo, miel), ácido o frutos secos.",
+   "Guárdalo envuelto en papel, separado de otros quesos."
+  ],
+  "ratios": [
+   {
+    "use": "Salsa de queso azul",
+    "ratio": "80–100 g de queso por 200 ml de nata",
+    "note": "Sin hervir."
+   },
+   {
+    "use": "Temperatura de servicio",
+    "ratio": "16–18 °C",
+    "note": "Sacar con tiempo."
+   },
+   {
+    "use": "Ración en tabla",
+    "ratio": "25–30 g",
+    "note": "Es intenso."
+   },
+   {
+    "use": "En ensalada",
+    "ratio": "15–20 g por ración",
+    "note": "Desmigado."
+   }
+  ],
+  "variants": [
+   {
+    "id": "salsas-de-queso",
+    "name": "Salsas de queso",
+    "note": "Fundido sin hervir."
+   },
+   {
+    "id": "quesos-en-cocina",
+    "name": "Quesos en cocina",
+    "note": "Cómo funde cada uno."
+   },
+   {
+    "id": "manzana-y-pera",
+    "name": "Con pera",
+    "note": "Contraste dulce."
+   },
+   {
+    "id": "miel-y-azucares",
+    "name": "Con miel",
+    "note": "Clásico de tabla."
+   }
+  ],
+  "keys": [
+   "Con medida: domina el plato.",
+   "Sin hervir en salsas.",
+   "Dulce, ácido o frutos secos para equilibrar.",
+   "Temperatura ambiente para servir.",
+   "Envuelto en papel y aparte de otros quesos."
+  ],
+  "errors": [
+   {
+    "p": "Salsa granulosa o grasa",
+    "fix": "Ha hervido. Funde a fuego suave."
+   },
+   {
+    "p": "Plato salado",
+    "fix": "Demasiado queso. Reduce y no sales el resto."
+   },
+   {
+    "p": "Queso que contagia sabor",
+    "fix": "Guardado junto a otros. Sepáralo."
+   }
+  ],
+  "history": "Los quesos azules se elaboran desde hace siglos en zonas de montaña con cuevas húmedas; el cabrales, el roquefort o el gorgonzola son ejemplos conocidos.",
+  "uses": [
+   "Tablas de quesos",
+   "Salsas",
+   "Ensaladas",
+   "Rellenos y gratinados"
+  ],
+  "keep": "En frío, envuelto en papel y en recipiente cerrado, 2–3 semanas una vez abierto.",
+  "pro": "Porciona en frío y saca a temperatura antes del servicio; salsa al pedido.",
+  "related": [
+   "salsas-de-queso",
+   "quesos-en-cocina",
+   "manzana-y-pera",
+   "miel-y-azucares",
+   "frutos-secos",
+   "quesos-de-las-islas"
+  ]
+ },
+ {
+  "id": "besugo-y-pargo",
+  "name": "Besugo, pargo y espáridos",
+  "name_en": "Sea bream family",
+  "cat": "producto",
+  "group": "Pescado y marisco",
+  "aka": [
+   "besugo",
+   "pargo",
+   "dentón",
+   "sargo",
+   "breca",
+   "espáridos",
+   "besugo al horno"
+  ],
+  "summary": "La familia de la dorada: pescados de carne blanca, firme y sabrosa, perfectos enteros al horno, a la brasa o a la espalda.",
+  "what": "El besugo, el pargo, el dentón, el sargo y la breca son parientes de la [[dorada-y-lubina|dorada]]: pescados de roca y de costa de carne blanca, firme y sabrosa. El besugo, de ojo grande, es un pescado de fiesta en buena parte de España; el pargo y el dentón son grandes y de carne muy firme, ideales para piezas para compartir; el sargo y la breca, más pequeños, para ración.\n\nSe cocinan enteros (al horno, a la brasa, [[pescado-a-la-espalda|a la espalda]], a la sal) o en lomos con la piel tostada. Como todo pescado que queda poco hecho, se congela antes o se sirve bien hecho junto a la espina si hay dudas.",
+  "method": [
+   "Elige por el brillo, el ojo vivo y las agallas rojas; escama con cuidado.",
+   "Eviscera, limpia la sangre junto a la espina y seca bien.",
+   "Entero al horno: con cortes en el lomo, sal, aceite y limón, a 200 °C sobre patatas panaderas o en bandeja.",
+   "A la brasa o a la espalda: abierto o entero, por la piel.",
+   "Comprueba el punto junto a la espina en la parte más gruesa."
+  ],
+  "ratios": [
+   {
+    "use": "Besugo de 1 kg al horno",
+    "ratio": "200 °C, 20–25 minutos",
+    "note": "Hasta 50 °C junto a la espina."
+   },
+   {
+    "use": "Pargo grande",
+    "ratio": "200 °C, 30–40 minutos",
+    "note": "Para 4 personas, 2 kg."
+   },
+   {
+    "use": "Ración",
+    "ratio": "350–400 g en entero",
+    "note": ""
+   },
+   {
+    "use": "Punto",
+    "ratio": "50 °C junto a la espina",
+    "note": "Congelado antes si queda por debajo de 60 °C."
+   }
+  ],
+  "variants": [
+   {
+    "id": "pescado-a-la-espalda",
+    "name": "A la espalda",
+    "note": "Con refrito de ajos."
+   },
+   {
+    "id": "dorada-y-lubina",
+    "name": "Dorada",
+    "note": "La pariente más común."
+   },
+   {
+    "id": "coccion-a-la-sal",
+    "name": "A la sal",
+    "note": "Entero en costra."
+   },
+   {
+    "id": "pescado-entero",
+    "name": "Pescado entero",
+    "note": "Presentación en sala."
+   }
+  ],
+  "keys": [
+   "Pescado entero: más jugoso.",
+   "Sonda junto a la espina.",
+   "Pescado que queda por debajo de 60 °C en el centro: congelado antes (-20 °C al menos 24 horas en toda la pieza) o ya tratado, por el anisakis.",
+   "Las cabezas y espinas, al caldo.",
+   "Grandes para compartir; pequeños de ración."
+  ],
+  "errors": [
+   {
+    "p": "Carne seca",
+    "fix": "Horno largo. Sonda y saca a 50 °C."
+   },
+   {
+    "p": "Piel pegada en la bandeja",
+    "fix": "Pescado húmedo o sin aceite. Seca y unta."
+   },
+   {
+    "p": "Crudo junto a la espina",
+    "fix": "Pieza fría o grande. Atempera y ajusta el tiempo."
+   }
+  ],
+  "history": "El besugo al horno es un plato tradicional de las fiestas de invierno en muchas zonas de España; el pargo y el dentón son pescados muy valorados en el Mediterráneo.",
+  "uses": [
+   "Pescado entero al horno",
+   "Brasa",
+   "Lomos con piel",
+   "Caldos"
+  ],
+  "keep": "Entero, 2–3 días a 0–2 °C sobre hielo; en lomos, 1 día.",
+  "pro": "Pesa y marca cada pieza; calcula tiempos según peso.",
+  "related": [
+   "pescado-a-la-espalda",
+   "dorada-y-lubina",
+   "coccion-a-la-sal",
+   "pescado-entero",
+   "pescado-de-roca",
+   "asado-al-horno"
+  ]
+ },
+ {
+  "id": "cerdo-de-capa-blanca",
+  "name": "Cerdo de capa blanca",
+  "name_en": "White pork",
+  "cat": "producto",
+  "group": "Carne",
+  "aka": [
+   "cerdo",
+   "lomo de cerdo",
+   "chuleta de cerdo",
+   "costilla de cerdo",
+   "panceta",
+   "aguja",
+   "solomillo de cerdo"
+  ],
+  "summary": "El cerdo de todos los días: cortes magros que piden salmuera y punto justo, y cortes grasos que piden tiempo o brasa.",
+  "what": "El cerdo de capa blanca, de razas de producción, es más magro y de grasa menos infiltrada que el [[cerdo-iberico|ibérico]]. Tiene cortes magros (lomo, solomillo, cinta) que se secan si se pasan y agradecen una salmuera, y cortes con grasa y colágeno (aguja, panceta, costilla, paletilla, carrillera) que se hacen a la brasa, al horno lento, confitados o guisados.\n\nSu punto jugoso está en 62–65 °C en el centro para los cortes magros, como indica [[punto-de-la-carne]]; los cortes de trabajo se cocinan hasta que se deshacen.",
+  "method": [
+   "Cortes magros: salmuera de 1–4 horas, secado y dorado fuerte; termina hasta 62–65 °C y reposa.",
+   "Costilla y panceta: horno lento o baja temperatura hasta tiernas, y terminado con lacado o en brasa.",
+   "Aguja: en filetes gruesos a la brasa, o en dados para guisos y brochetas.",
+   "Paletilla: asada lenta o en barbacoa hasta deshilachar.",
+   "Guarda huesos y recortes para fondos."
+  ],
+  "ratios": [
+   {
+    "use": "Lomo o solomillo",
+    "ratio": "62–65 °C en el centro",
+    "note": "Reposo de 5 minutos."
+   },
+   {
+    "use": "Salmuera",
+    "ratio": "50–60 g de sal por litro, 1–4 horas",
+    "note": "Según grosor."
+   },
+   {
+    "use": "Costilla al horno",
+    "ratio": "150 °C, 2,5–3 horas",
+    "note": "Tapada y luego lacada."
+   },
+   {
+    "use": "Panceta en baja temperatura",
+    "ratio": "70–75 °C, 18–24 horas",
+    "note": "Prensada y dorada."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cerdo-iberico",
+    "name": "Cerdo ibérico",
+    "note": "Más grasa infiltrada."
+   },
+   {
+    "id": "salmuera",
+    "name": "Salmuera",
+    "note": "Para los magros."
+   },
+   {
+    "id": "lacado-de-carnes",
+    "name": "Costillas lacadas",
+    "note": "Acabado."
+   },
+   {
+    "id": "barbacoa-lenta",
+    "name": "Barbacoa lenta",
+    "note": "Paletilla y costilla."
+   }
+  ],
+  "keys": [
+   "Magros con salmuera y punto justo.",
+   "Grasos con tiempo.",
+   "Sonda: el cerdo magro pasa de jugoso a seco en minutos.",
+   "Reposo antes de cortar.",
+   "Huesos al fondo."
+  ],
+  "errors": [
+   {
+    "p": "Lomo seco",
+    "fix": "Pasado o sin salmuera. Salmuera y 62–65 °C."
+   },
+   {
+    "p": "Costilla dura",
+    "fix": "Poco tiempo. Más horas a fuego suave."
+   },
+   {
+    "p": "Panceta gomosa",
+    "fix": "Piel sin secar ni tostar. Sécala y dórala fuerte."
+   }
+  ],
+  "history": "El cerdo ha sido la carne más presente en la cocina popular de la península, con la matanza como base de la despensa de invierno.",
+  "uses": [
+   "Brasa",
+   "Asados",
+   "Guisos",
+   "Embutidos frescos"
+  ],
+  "keep": "Crudo, 3–4 días en frío; picado, 1–2 días. Cocinado, 3–4 días.",
+  "pro": "Porciona al recibir y pon los magros en salmuera la víspera.",
+  "related": [
+   "cerdo-iberico",
+   "salmuera",
+   "lacado-de-carnes",
+   "barbacoa-lenta",
+   "punto-de-la-carne",
+   "embutidos-caseros-frescos"
+  ]
+ },
+ {
+  "id": "castana-y-caqui",
+  "name": "Castaña y caqui",
+  "name_en": "Chestnut and persimmon",
+  "cat": "producto",
+  "group": "Fruta",
+  "aka": [
+   "castaña",
+   "castañas asadas",
+   "puré de castaña",
+   "caqui",
+   "persimon",
+   "frutas de otoño"
+  ],
+  "summary": "Dos frutos de otoño: la castaña, harinosa y dulce, para asar, guisar o hacer puré; el caqui, que solo se come cuando está maduro.",
+  "what": "La castaña es un fruto seco harinoso y dulce, casi como un cereal: se asa, se cuece, se hace puré, acompaña guisos de caza y cerdo y se convierte en harina. Hay que cortar su piel antes de asarla para que no explote, y pelarla en caliente, quitando también la piel interior, que amarga.\n\nEl caqui es una fruta de otoño muy dulce. Hay variedades astringentes, que solo se pueden comer cuando están blandas del todo, y otras tratadas o naturalmente no astringentes que se comen firmes y se cortan en láminas. En salado van bien con carnes, quesos y ensaladas de otoño.",
+  "method": [
+   "Castañas asadas: haz un corte en la piel, ásalas en horno o brasa y pélalas en caliente envueltas en un paño.",
+   "Castañas cocidas: con el corte hecho, en agua con sal, anís o laurel; pela en caliente.",
+   "Puré: castañas peladas cocidas en leche o caldo y trituradas con mantequilla.",
+   "Caqui firme: pélalo y córtalo en láminas o dados para ensaladas y crudos.",
+   "Caqui blando: con cuchara, en postres, salsas y sorbetes."
+  ],
+  "ratios": [
+   {
+    "use": "Castañas asadas",
+    "ratio": "200 °C, 20–25 minutos",
+    "note": "Con el corte hecho."
+   },
+   {
+    "use": "Castañas cocidas",
+    "ratio": "30–40 minutos",
+    "note": "Según tamaño."
+   },
+   {
+    "use": "Puré de castaña",
+    "ratio": "500 g de castaña pelada, 300 ml de leche o caldo, 50 g de mantequilla",
+    "note": ""
+   },
+   {
+    "use": "Ración de castañas asadas",
+    "ratio": "150 g",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "frutos-secos",
+    "name": "Frutos secos",
+    "note": "Otros frutos de otoño."
+   },
+   {
+    "id": "guisos-de-caza",
+    "name": "Con caza",
+    "note": "Castañas en guisos."
+   },
+   {
+    "id": "pures-de-verdura",
+    "name": "Purés",
+    "note": "Puré de castaña."
+   },
+   {
+    "id": "fruta-asada",
+    "name": "Fruta asada",
+    "note": "Caqui al horno."
+   }
+  ],
+  "keys": [
+   "Cortar la piel de la castaña antes de asar.",
+   "Pelar en caliente, también la piel interior.",
+   "Caqui astringente: solo muy maduro.",
+   "Ambos son de temporada corta.",
+   "En salado, con carnes de otoño."
+  ],
+  "errors": [
+   {
+    "p": "Castañas que explotan",
+    "fix": "Sin corte. Córtalas siempre."
+   },
+   {
+    "p": "Imposibles de pelar",
+    "fix": "Peladas frías. Pela en caliente."
+   },
+   {
+    "p": "Caqui que reseca la boca",
+    "fix": "Astringente y verde. Espera a que esté blando."
+   }
+  ],
+  "history": "La castaña fue durante siglos un alimento básico en las zonas de montaña de la península; el caqui llegó de Asia y es hoy una fruta de otoño habitual.",
+  "uses": [
+   "Guarniciones de otoño",
+   "Purés",
+   "Guisos de caza",
+   "Postres",
+   "Ensaladas"
+  ],
+  "keep": "Castañas frescas, 1–2 semanas en frío; peladas, congeladas. Caqui maduro, pocos días en frío.",
+  "pro": "Pela castañas en tanda y congélalas; corta el caqui al momento.",
+  "related": [
+   "frutos-secos",
+   "guisos-de-caza",
+   "pures-de-verdura",
+   "fruta-asada",
+   "caza-de-pluma",
+   "granada-y-membrillo"
+  ]
+ },
+ {
+  "id": "mantecas-y-grasas-animales",
+  "name": "Mantecas y grasas animales",
+  "name_en": "Lard and animal fats",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "manteca de cerdo",
+   "sebo",
+   "grasa de pato",
+   "grasa de pollo",
+   "fundir grasa",
+   "grasa de vaca"
+  ],
+  "summary": "Manteca, sebo y grasas de ave: cómo fundirlas, para qué sirve cada una y cómo guardarlas sin que se enrancien.",
+  "what": "Las grasas animales fueron durante siglos la grasa de cocinar de buena parte de Europa y siguen siendo insustituibles para ciertos usos. La manteca de cerdo da hojaldres y mantecados tiernos y fritos sabrosos; el sebo de vacuno aguanta mucho calor y da patatas fritas muy crujientes; la grasa de pato es la del confit y de las patatas asadas; la de pollo perfuma arroces y sofritos.\n\nSe obtienen fundiendo a fuego suave los recortes de grasa y colándolos. Su sabor y su estabilidad dependen de cómo se funden: despacio y sin quemar. Para aromatizarlas, ver [[grasas-infusionadas]].",
+  "method": [
+   "Corta la grasa en dados pequeños o pícala, sin restos de carne.",
+   "Fúndela a fuego muy suave con un poco de agua en el fondo, removiendo de vez en cuando.",
+   "Cuando los chicharrones estén dorados y la grasa transparente, cuela por paño.",
+   "Enfría y guarda en tarros cerrados, en frío.",
+   "Usa cada grasa según su fuerza: sebo para freír fuerte, manteca para masas, pato para confitar y asar."
+  ],
+  "ratios": [
+   {
+    "use": "Fundido",
+    "ratio": "Fuego muy suave, grasa a 100–120 °C",
+    "note": "1–3 horas según cantidad."
+   },
+   {
+    "use": "Rendimiento",
+    "ratio": "60–80 % de grasa limpia",
+    "note": "Según el recorte."
+   },
+   {
+    "use": "Patatas en grasa de pato",
+    "ratio": "Horno a 200–220 °C",
+    "note": "Crujientes."
+   },
+   {
+    "use": "Sebo para fritura",
+    "ratio": "170–180 °C",
+    "note": "Muy estable."
+   }
+  ],
+  "variants": [
+   {
+    "id": "grasas-infusionadas",
+    "name": "Grasas aromatizadas",
+    "note": "Con hierbas y especias."
+   },
+   {
+    "id": "confitado",
+    "name": "Confitado",
+    "note": "En grasa de pato o cerdo."
+   },
+   {
+    "id": "grasas-punto-de-humo-y-oxidacion",
+    "name": "Punto de humo",
+    "note": "Cuál aguanta más."
+   },
+   {
+    "id": "hojaldre",
+    "name": "Hojaldre con manteca",
+    "note": "Masas tiernas."
+   }
+  ],
+  "keys": [
+   "Fundir despacio: quemada, amarga.",
+   "Colar por paño para que dure.",
+   "En frío y en tarro cerrado.",
+   "Cada grasa, su uso.",
+   "Los chicharrones también se aprovechan."
+  ],
+  "errors": [
+   {
+    "p": "Grasa oscura y amarga",
+    "fix": "Fundida a fuego fuerte. Fuego muy suave."
+   },
+   {
+    "p": "Grasa que se enrancia pronto",
+    "fix": "Restos de carne o agua. Cuela bien y guarda en frío."
+   },
+   {
+    "p": "Olor fuerte",
+    "fix": "Recortes viejos. Usa grasa fresca."
+   }
+  ],
+  "history": "La manteca de cerdo y otras grasas animales fueron la grasa de cocinar habitual en el interior y el norte de la península y en buena parte de Europa.",
+  "uses": [
+   "Frituras",
+   "Masas y pastelería",
+   "Confitados",
+   "Asados de patata",
+   "Sofritos"
+  ],
+  "keep": "Coladas y en tarro cerrado, 2–3 meses en frío; congeladas, más.",
+  "pro": "Funde los recortes de grasa en tanda y guarda en tarros etiquetados.",
+  "related": [
+   "grasas-infusionadas",
+   "confitado",
+   "grasas-punto-de-humo-y-oxidacion",
+   "hojaldre",
+   "pato",
+   "fritura"
+  ]
+ },
+ {
+  "id": "quesos-frescos-y-de-pasta-hilada",
+  "name": "Quesos frescos y de pasta hilada",
+  "name_en": "Fresh and stretched-curd cheeses",
+  "cat": "producto",
+  "group": "Lácteos",
+  "aka": [
+   "mozzarella",
+   "burrata",
+   "stracciatella",
+   "scamorza",
+   "feta",
+   "queso fresco",
+   "queso de Burgos"
+  ],
+  "summary": "Quesos jóvenes, húmedos y lácteos: se sirven fríos con tomate, aceite y hierbas, o se funden con cuidado de su agua.",
+  "what": "Los quesos frescos no tienen maduración o muy poca: son húmedos, suaves y lácteos. La mozzarella y la burrata son quesos de pasta hilada, cuya cuajada se estira en agua caliente; la burrata lleva dentro una crema de nata y hebras de queso (stracciatella); la scamorza es una pasta hilada secada y a veces ahumada. El feta se conserva en salmuera y es salado y ácido. Los quesos frescos de leche de vaca, oveja o cabra, como el de Burgos, son suaves y se comen tal cual.\n\nSe sirven fríos pero no helados, con tomate, fruta, hierbas, aceite y sal. Para fundir, hay que escurrirlos bien. Ver [[quesos-en-cocina]].",
+  "method": [
+   "Saca el queso de la cámara 20–30 minutos antes y escúrrelo de su suero.",
+   "En crudo: rómpelo con las manos en lugar de cortarlo; sal en escamas, aceite y algo ácido.",
+   "Para gratinar o fundir: córtalo y escúrrelo sobre papel 30 minutos para que no suelte agua.",
+   "Feta: desmigado en ensaladas, horneado con tomate o marcado en plancha.",
+   "Elige quesos de leche pasteurizada si se sirven a personas sensibles (embarazadas, niños pequeños, defensas bajas)."
+  ],
+  "ratios": [
+   {
+    "use": "Temperatura de servicio",
+    "ratio": "8–12 °C",
+    "note": "Fresco, no helado."
+   },
+   {
+    "use": "Burrata",
+    "ratio": "1 de 125 g para 2 personas",
+    "note": "Entrante."
+   },
+   {
+    "use": "Escurrido para fundir",
+    "ratio": "30 minutos sobre papel",
+    "note": "Que no agüe."
+   },
+   {
+    "use": "Feta al horno",
+    "ratio": "200 °C, 15–20 minutos",
+    "note": "Con tomate y aceite."
+   }
+  ],
+  "variants": [
+   {
+    "id": "quesos-en-cocina",
+    "name": "Quesos en cocina",
+    "note": "Cómo funde cada uno."
+   },
+   {
+    "id": "tomate",
+    "name": "Con tomate",
+    "note": "Pareja clásica."
+   },
+   {
+    "id": "pizza",
+    "name": "Pizza",
+    "note": "Mozzarella escurrida."
+   },
+   {
+    "id": "quesos-de-las-islas",
+    "name": "Queso fresco de la isla",
+    "note": "Para flaó y ensaladas."
+   }
+  ],
+  "keys": [
+   "Frescos pero no helados.",
+   "Romper con las manos, no cortar.",
+   "Escurrir antes de fundir.",
+   "Leche pasteurizada para personas sensibles.",
+   "Se consumen pronto."
+  ],
+  "errors": [
+   {
+    "p": "Pizza o gratinado aguados",
+    "fix": "Queso sin escurrir. Escúrrelo."
+   },
+   {
+    "p": "Queso sin sabor",
+    "fix": "Servido helado. Sácalo antes."
+   },
+   {
+    "p": "Textura gomosa al fundir",
+    "fix": "Calor fuerte y largo. Añádelo al final."
+   }
+  ],
+  "history": "La mozzarella y la burrata son quesos del sur de Italia; el feta, de Grecia; los quesos frescos son tradicionales en toda la península.",
+  "uses": [
+   "Entrantes fríos",
+   "Ensaladas",
+   "Pizzas y gratinados",
+   "Postres con fruta"
+  ],
+  "keep": "En su suero o salmuera, en frío y según su fecha; abiertos, 1–3 días.",
+  "pro": "Compra en pequeñas cantidades y saca del frío por raciones.",
+  "related": [
+   "quesos-en-cocina",
+   "tomate",
+   "pizza",
+   "quesos-de-las-islas",
+   "lacteos-fermentados",
+   "parmigiana"
+  ]
+ },
+ {
+  "id": "yuca-y-tuberculos-tropicales",
+  "name": "Yuca y tubérculos tropicales",
+  "name_en": "Cassava and tropical tubers",
+  "cat": "producto",
+  "group": "Huerta",
+  "aka": [
+   "yuca",
+   "mandioca",
+   "ñame",
+   "malanga",
+   "taro",
+   "harina de mandioca",
+   "yuca frita"
+  ],
+  "summary": "Raíces y tubérculos de climas cálidos, muy almidonados, que siempre se comen cocinados: hervidos, fritos o en puré.",
+  "what": "La yuca o mandioca es una raíz alargada de corteza gruesa y carne blanca muy almidonada; cocida queda tierna y algo fibrosa, y frita, muy crujiente. De ella se obtienen la harina de mandioca y la tapioca. El ñame, la malanga y el taro son otros tubérculos tropicales de carne densa y sabor suave.\n\nTodos se comen siempre cocinados: la yuca cruda contiene compuestos tóxicos que la cocción elimina, y el taro y la malanga crudos irritan la boca. Se pelan con cuchillo, se cuecen bien y luego se fríen, se asan o se hacen puré.",
+  "method": [
+   "Yuca: corta en trozos, haz un corte a lo largo de la corteza y retírala junto con la capa rosada de debajo.",
+   "Cuece en agua con sal hasta que esté tierna y empiece a abrirse; retira la fibra central.",
+   "Fríe los trozos cocidos y secos en aceite a 180 °C hasta dorar, o cháfalos en puré con grasa.",
+   "Ñame, malanga y taro: pela con guantes si irritan la piel y cuece bien antes de usar.",
+   "Nunca los sirvas crudos ni a medio cocer."
+  ],
+  "ratios": [
+   {
+    "use": "Yuca cocida",
+    "ratio": "20–30 minutos en agua con sal",
+    "note": "Hasta que se abra."
+   },
+   {
+    "use": "Yuca frita",
+    "ratio": "180 °C, 3–5 minutos",
+    "note": "Cocida antes y seca."
+   },
+   {
+    "use": "Farofa",
+    "ratio": "Harina de mandioca tostada en grasa, 5–8 minutos",
+    "note": "Removiendo."
+   },
+   {
+    "use": "Ración",
+    "ratio": "200 g",
+    "note": "Como guarnición."
+   }
+  ],
+  "variants": [
+   {
+    "id": "patata-y-boniato",
+    "name": "Patata y boniato",
+    "note": "Otros tubérculos."
+   },
+   {
+    "id": "harinas-y-almidones",
+    "name": "Tapioca y harina de mandioca",
+    "note": "Almidones."
+   },
+   {
+    "id": "fritura",
+    "name": "Fritura",
+    "note": "Yuca frita."
+   },
+   {
+    "id": "feijoada",
+    "name": "Farofa",
+    "note": "Con la feijoada."
+   }
+  ],
+  "keys": [
+   "Siempre bien cocinados.",
+   "Pelar corteza y capa rosada de la yuca.",
+   "Quitar la fibra central tras cocer.",
+   "Cocer antes de freír.",
+   "Guantes con el taro si irrita."
+  ],
+  "errors": [
+   {
+    "p": "Yuca dura",
+    "fix": "Poca cocción. Sigue hasta que se abra."
+   },
+   {
+    "p": "Frita grasienta",
+    "fix": "Húmeda o aceite frío. Seca y 180 °C."
+   },
+   {
+    "p": "Picor en la boca con taro",
+    "fix": "Poco cocinado. Cuécelo más."
+   }
+  ],
+  "history": "La yuca es originaria de América del Sur y es un alimento básico en zonas tropicales de América, África y Asia; el ñame y el taro lo son en otras regiones cálidas.",
+  "uses": [
+   "Guarniciones",
+   "Frituras",
+   "Purés",
+   "Harinas y farofa"
+  ],
+  "keep": "Yuca fresca, 2–3 días en lugar fresco; pelada y cubierta de agua, 1 día en frío; congelada pelada, meses.",
+  "pro": "Cuece en tanda y fríe al pedido.",
+  "related": [
+   "patata-y-boniato",
+   "harinas-y-almidones",
+   "fritura",
+   "feijoada",
+   "aguacate-y-frutas-tropicales",
+   "coco"
+  ]
+ },
+ {
+  "id": "aceites-de-semillas-y-frutos-secos",
+  "name": "Aceites de semillas y de frutos secos",
+  "name_en": "Seed and nut oils",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "aceite de girasol",
+   "girasol alto oleico",
+   "aceite de cacahuete",
+   "aceite de nuez",
+   "aceite de avellana",
+   "aceite de pepita de uva"
+  ],
+  "summary": "Aceites neutros para freír y emulsionar, y aceites de frutos secos tostados para aliñar en crudo: cada uno su uso.",
+  "what": "Además del [[aceite-de-oliva]], la cocina usa otros aceites. Los de semillas refinados (girasol, sobre todo el alto oleico, cacahuete, pepita de uva) son neutros y estables: van bien para freír y para emulsiones donde no se quiere sabor, como una mayonesa suave. Los de frutos secos tostados (nuez, avellana, pistacho, almendra) y el de sésamo tostado son muy aromáticos y delicados: se usan en crudo, en gotas, para terminar platos y aliños.\n\nLos aceites con muchas grasas poliinsaturadas se enrancian antes y aguantan peor el calor. Los de frutos secos y cacahuete son alérgenos. Ver [[grasas-punto-de-humo-y-oxidacion]].",
+  "method": [
+   "Elige por el uso: neutro y estable para freír; aromático para terminar.",
+   "Freír con girasol alto oleico o cacahuete refinado, controlando la temperatura.",
+   "Aliñar con aceite de nuez o avellana mezclado con uno neutro para que no domine.",
+   "Guarda los aceites de frutos secos en frío y a oscuras, en botellas pequeñas.",
+   "Señala en la ficha del plato el aceite de frutos secos por alérgenos."
+  ],
+  "ratios": [
+   {
+    "use": "Fritura en alto oleico",
+    "ratio": "170–180 °C",
+    "note": "Muy estable."
+   },
+   {
+    "use": "Vinagreta con aceite de nuez",
+    "ratio": "1 parte de nuez y 2 de neutro por 1 de vinagre",
+    "note": "Para que no domine."
+   },
+   {
+    "use": "Aceite de frutos secos para terminar",
+    "ratio": "Unas gotas por ración",
+    "note": "En crudo."
+   },
+   {
+    "use": "Mayonesa suave",
+    "ratio": "2/3 de girasol y 1/3 de oliva",
+    "note": "Neutra y estable."
+   }
+  ],
+  "variants": [
+   {
+    "id": "aceite-de-oliva",
+    "name": "Aceite de oliva",
+    "note": "El de la casa."
+   },
+   {
+    "id": "sesamo",
+    "name": "Aceite de sésamo",
+    "note": "Tostado, para terminar."
+   },
+   {
+    "id": "fritura",
+    "name": "Fritura",
+    "note": "Aceites estables."
+   },
+   {
+    "id": "frutos-secos",
+    "name": "Frutos secos",
+    "note": "De donde salen."
+   }
+  ],
+  "keys": [
+   "Neutros para freír, aromáticos para terminar.",
+   "Los de frutos secos, en frío y a oscuras.",
+   "Alto oleico: más estable al calor.",
+   "Alérgenos: frutos secos y cacahuete.",
+   "Botellas pequeñas: se enrancian."
+  ],
+  "errors": [
+   {
+    "p": "Aceite de nuez rancio",
+    "fix": "Guardado al calor o mucho tiempo. En frío y en botella pequeña."
+   },
+   {
+    "p": "Fritura con humo y mal olor",
+    "fix": "Aceite poco estable o pasado. Usa alto oleico y cambia a tiempo."
+   },
+   {
+    "p": "Aliño que solo sabe a fruto seco",
+    "fix": "Aceite aromático puro. Mézclalo con uno neutro."
+   }
+  ],
+  "history": "Los aceites de semillas se generalizaron con la industria en el siglo XX; los de frutos secos tienen tradición en Francia y en otras zonas productoras de nueces y avellanas.",
+  "uses": [
+   "Fritura",
+   "Emulsiones neutras",
+   "Aliños y acabados",
+   "Repostería"
+  ],
+  "keep": "Neutros, meses cerrados y a oscuras. De frutos secos, en frío y pocas semanas tras abrir.",
+  "pro": "Ten un aceite neutro para freír y dos o tres aromáticos pequeños para terminar.",
+  "related": [
+   "aceite-de-oliva",
+   "sesamo",
+   "fritura",
+   "frutos-secos",
+   "grasas-punto-de-humo-y-oxidacion",
+   "mayonesa"
+  ]
+ },
+ {
+  "id": "pastas-fermentadas-de-asia",
+  "name": "Pastas fermentadas de Asia",
+  "name_en": "Asian fermented pastes",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "gochujang",
+   "doenjang",
+   "doubanjiang",
+   "pasta de habas picante",
+   "pasta de gambas",
+   "pasta de soja fermentada"
+  ],
+  "summary": "Pastas de soja, habas, chile o marisco fermentadas: sal, umami y picante concentrados para salsas, marinadas y salteados.",
+  "what": "Muchas cocinas de Asia usan pastas fermentadas como condimento base. El gochujang coreano mezcla chile, arroz y soja fermentados: dulce, picante y profundo. El doenjang, también coreano, es una pasta de soja fermentada parecida al [[miso-y-koji|miso]], más rústica e intensa. El doubanjiang de Sichuan es una pasta de habas y chile fermentados, salada y picante, que se fríe en aceite para despertar su sabor. Las pastas de gambas del sudeste asiático son muy saladas y olorosas y se usan en poca cantidad.\n\nTodas son muy saladas: se usan como condimento y se ajusta la sal del plato después.",
+  "method": [
+   "Prueba cada pasta sola: la sal y el picante varían mucho.",
+   "Doubanjiang: fríelo en aceite a fuego medio hasta que el aceite se tiña de rojo antes de añadir el resto.",
+   "Gochujang: diluido con soja, vinagre, azúcar y aceite de sésamo para salsas y marinadas.",
+   "Doenjang: en caldos y guisos, añadido al final y sin hervir mucho.",
+   "Pasta de gambas: tostada o frita unos segundos, en cantidades mínimas."
+  ],
+  "ratios": [
+   {
+    "use": "Salsa de gochujang",
+    "ratio": "2 partes de gochujang, 1 de soja, 1 de vinagre, 1 de azúcar",
+    "note": "Más aceite de sésamo."
+   },
+   {
+    "use": "Doubanjiang frito",
+    "ratio": "1 cucharada por 2 cucharadas de aceite",
+    "note": "Fuego medio."
+   },
+   {
+    "use": "Doenjang en caldo",
+    "ratio": "30–40 g por litro",
+    "note": "Al final."
+   },
+   {
+    "use": "Pasta de gambas",
+    "ratio": "5 g para 4 raciones",
+    "note": "Muy intensa."
+   }
+  ],
+  "variants": [
+   {
+    "id": "miso-y-koji",
+    "name": "Miso",
+    "note": "La pasta japonesa."
+   },
+   {
+    "id": "soja-y-derivados",
+    "name": "Salsa de soja",
+    "note": "Otro fermentado de soja."
+   },
+   {
+    "id": "pastas-de-especias",
+    "name": "Pastas de especias",
+    "note": "Pastas frescas sin fermentar."
+   },
+   {
+    "id": "bibimbap",
+    "name": "Bibimbap",
+    "note": "Con salsa de gochujang."
+   }
+  ],
+  "keys": [
+   "Muy saladas: condimento, no base.",
+   "Probar cada marca antes de usar.",
+   "Freír el doubanjiang para despertar su sabor.",
+   "Doenjang y miso, sin hervir mucho.",
+   "Alérgenos: soja, trigo, marisco según la pasta."
+  ],
+  "errors": [
+   {
+    "p": "Plato salado",
+    "fix": "Pasta más sal. Sala al final."
+   },
+   {
+    "p": "Sabor crudo",
+    "fix": "Doubanjiang sin freír. Fríelo en aceite antes."
+   },
+   {
+    "p": "Olor fuerte en la cocina",
+    "fix": "Pasta de gambas en exceso o quemada. Poca y a fuego medio."
+   }
+  ],
+  "history": "Las pastas fermentadas son la base de muchas cocinas de Asia oriental y del sudeste asiático desde hace siglos.",
+  "uses": [
+   "Salsas y marinadas",
+   "Salteados",
+   "Caldos y guisos",
+   "Glaseados"
+  ],
+  "keep": "Abiertas, en frío y bien cerradas, varios meses.",
+  "pro": "Ten salsas base hechas con estas pastas y ajusta cada plato al pedido.",
+  "related": [
+   "miso-y-koji",
+   "soja-y-derivados",
+   "pastas-de-especias",
+   "bibimbap",
+   "umami-glutamato-y-sinergia",
+   "bulgogi-y-barbacoa-coreana"
+  ]
  }
 ]

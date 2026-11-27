@@ -18159,5 +18159,3049 @@
    "vinagreta",
    "texturas-y-percepcion"
   ]
+ },
+ {
+  "id": "papas-arrugadas",
+  "name": "Papas arrugadas",
+  "name_en": "Canarian wrinkled potatoes",
+  "cat": "tecnicas",
+  "group": "Cocina canaria",
+  "technique": "hervido",
+  "aka": [
+   "papas arrugadas",
+   "papas con mojo",
+   "papas sancochadas",
+   "papas negras"
+  ],
+  "summary": "Papas pequeñas con piel cocidas en agua muy salada y secadas al fuego hasta que se arrugan y se cubren de sal; con mojo.",
+  "what": "Las papas arrugadas son el acompañamiento más conocido de Canarias: papas pequeñas, con piel, cocidas en muy poca agua y mucha sal, que al final se secan al fuego moviendo el caldero hasta que la piel se arruga y queda cubierta de una capa fina de sal blanca. El interior queda cremoso.\n\nSe sirven con [[mojo-picon|mojo rojo]] y [[mojo-verde]], solas o con pescado, carne o queso. Las islas tienen variedades de papa propias, pequeñas y de carne densa, que son las que mejor funcionan. Cada casa tiene su punto de sal.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Papas pequeñas y del mismo tamaño, con piel",
+     "1 kg"
+    ],
+    [
+     "Agua",
+     "la justa para cubrirlas"
+    ],
+    [
+     "Sal gruesa",
+     "150–200 g por litro de agua"
+    ],
+    [
+     "Mojos rojo y verde",
+     "para acompañar"
+    ]
+   ],
+   "steps": [
+    "Lava bien las papas sin pelarlas.",
+    "Ponlas en una olla ancha, cúbrelas apenas de agua y añade la sal.",
+    "Cuece a fuego medio 20–25 minutos, hasta que la punta de un cuchillo entre fácil.",
+    "Tira el agua y vuelve la olla al fuego suave, moviéndola, hasta que la piel se seque, se arrugue y se cubra de sal.",
+    "Sirve templadas con los mojos."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Sal",
+    "ratio": "150–200 g por litro de agua",
+    "note": "Poca agua."
+   },
+   {
+    "use": "Cocción",
+    "ratio": "20–25 minutos",
+    "note": "Según tamaño."
+   },
+   {
+    "use": "Secado",
+    "ratio": "5–10 minutos a fuego suave",
+    "note": "Moviendo la olla."
+   },
+   {
+    "use": "Ración",
+    "ratio": "250 g",
+    "note": "Como acompañamiento."
+   }
+  ],
+  "variants": [
+   {
+    "id": "mojo-picon",
+    "name": "Mojo rojo",
+    "note": "Con pimienta y pimentón."
+   },
+   {
+    "id": "mojo-verde",
+    "name": "Mojo verde",
+    "note": "Con cilantro o perejil."
+   },
+   {
+    "id": "patata-y-boniato",
+    "name": "Patata",
+    "note": "Variedades y cocción."
+   },
+   {
+    "id": "sal-y-flor-de-sal",
+    "name": "Sal",
+    "note": "La costra blanca."
+   }
+  ],
+  "keys": [
+   "Papas pequeñas y del mismo tamaño.",
+   "Poca agua y mucha sal.",
+   "Secar al fuego para arrugar.",
+   "Sin pelar: la piel es parte del plato.",
+   "Cada casa tiene su punto de sal."
+  ],
+  "errors": [
+   {
+    "p": "No se arrugan",
+    "fix": "Mucha agua o sin secar. Menos agua y sécalas al fuego."
+   },
+   {
+    "p": "Demasiado saladas por dentro",
+    "fix": "Papas peladas o agrietadas. Usa papas enteras y sanas."
+   },
+   {
+    "p": "Unas crudas y otras deshechas",
+    "fix": "Tamaños distintos. Elige papas iguales."
+   }
+  ],
+  "history": "Las papas arrugadas son un plato tradicional de Canarias, ligado a la cocción de papas en agua de mar.",
+  "uses": [
+   "Acompañamiento de pescados y carnes",
+   "Tapas con mojos",
+   "Cocina canaria"
+  ],
+  "keep": "Mejor al momento; 1–2 días en frío, regeneradas en sartén seca.",
+  "pro": "Cuece por tandas a lo largo del servicio; los mojos, hechos de antemano.",
+  "related": [
+   "mojo-picon",
+   "mojo-verde",
+   "patata-y-boniato",
+   "sal-y-flor-de-sal",
+   "guarniciones-de-patata",
+   "sal-y-osmosis"
+  ]
+ },
+ {
+  "id": "migas-de-pastor",
+  "name": "Migas de pastor",
+  "name_en": "Shepherd's migas",
+  "cat": "tecnicas",
+  "group": "Clásicos españoles",
+  "technique": "salteado",
+  "aka": [
+   "migas",
+   "migas extremeñas",
+   "migas manchegas",
+   "migas de pastor",
+   "migas con uvas"
+  ],
+  "summary": "Pan duro humedecido la víspera y salteado despacio con ajo, aceite y tocino o chorizo hasta quedar suelto y dorado.",
+  "what": "Las migas son un plato de pastores del interior de la península: pan del día anterior cortado muy fino o desmigado, humedecido con agua salada y dejado reposar tapado, que se saltea en una sartén grande con aceite, ajos y, según la casa, panceta, chorizo o pimientos, removiendo con una rasera durante un buen rato hasta que las migas quedan sueltas, jugosas por dentro y doradas por fuera.\n\nSe acompañan de uvas, granada, pimientos fritos, un huevo frito o sardinas. Hay migas en Extremadura, La Mancha, Aragón, Andalucía y otras zonas, y cada una tiene su manera. Es [[cocina-de-aprovechamiento]] pura.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Pan del día anterior, de miga densa",
+     "500 g"
+    ],
+    [
+     "Agua con sal",
+     "150–200 ml con 5 g de sal"
+    ],
+    [
+     "Ajos sin pelar, golpeados",
+     "6"
+    ],
+    [
+     "Panceta o chorizo en dados",
+     "150 g"
+    ],
+    [
+     "Pimentón (opcional)",
+     "3 g"
+    ],
+    [
+     "Aceite de oliva",
+     "100 ml"
+    ],
+    [
+     "Uvas, pimientos fritos o huevos para acompañar",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "La víspera, corta el pan en láminas finas o desmígalo, rocíalo con el agua salada, mezcla y tápalo con un paño húmedo.",
+    "Fríe los ajos y la panceta o el chorizo en el aceite; retíralos y deja la grasa.",
+    "Añade el pan y saltea a fuego medio-suave, cortando y removiendo con una rasera, 20–30 minutos.",
+    "Cuando las migas estén sueltas y doradas, devuelve los ajos y la panceta; añade el pimentón al final, fuera del fuego.",
+    "Sirve con uvas, pimientos o un huevo frito."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Humedad del pan",
+    "ratio": "30–40 ml de agua por 100 g de pan",
+    "note": "Húmedo, no empapado."
+   },
+   {
+    "use": "Salteado",
+    "ratio": "20–30 minutos a fuego medio-suave",
+    "note": "Sin parar de remover."
+   },
+   {
+    "use": "Ración",
+    "ratio": "125 g de pan",
+    "note": ""
+   },
+   {
+    "use": "Aceite",
+    "ratio": "25 ml por ración",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "pan-del-dia-y-pan-viejo",
+    "name": "Pan viejo",
+    "note": "La base."
+   },
+   {
+    "id": "cocina-de-aprovechamiento",
+    "name": "Aprovechamiento",
+    "note": "Cocina de pastores."
+   },
+   {
+    "id": "sobrasada-y-embutidos",
+    "name": "Con embutidos",
+    "note": "Chorizo o sobrasada."
+   },
+   {
+    "id": "uva-y-pasas",
+    "name": "Con uvas",
+    "note": "El contrapunto dulce."
+   }
+  ],
+  "keys": [
+   "Pan de miga densa y del día anterior.",
+   "Humedecer la víspera.",
+   "Fuego medio y remover sin parar.",
+   "Pimentón al final, fuera del fuego.",
+   "Cada zona tiene sus migas."
+  ],
+  "errors": [
+   {
+    "p": "Migas apelmazadas",
+    "fix": "Pan demasiado mojado. Menos agua y más tiempo de salteado."
+   },
+   {
+    "p": "Migas duras",
+    "fix": "Pan seco sin humedecer. Humedécelo la víspera."
+   },
+   {
+    "p": "Quemadas por fuera",
+    "fix": "Fuego alto. Medio-suave y paciencia."
+   }
+  ],
+  "history": "Las migas son un plato tradicional de pastores y jornaleros de muchas zonas de la península, hecho con el pan que sobraba.",
+  "uses": [
+   "Platos de invierno",
+   "Tapas",
+   "Desayunos de campo"
+  ],
+  "keep": "Mejor al momento. El pan humedecido, 1 día en frío tapado.",
+  "pro": "Pan humedecido la víspera; saltea en sartenes grandes por tandas.",
+  "related": [
+   "pan-del-dia-y-pan-viejo",
+   "cocina-de-aprovechamiento",
+   "sobrasada-y-embutidos",
+   "uva-y-pasas",
+   "pimenton-y-noras",
+   "cebolla-y-ajo"
+  ]
+ },
+ {
+  "id": "cachopo",
+  "name": "Cachopo",
+  "name_en": "Cachopo",
+  "cat": "tecnicas",
+  "group": "Clásicos españoles",
+  "technique": "fritura",
+  "aka": [
+   "cachopo",
+   "cachopo asturiano",
+   "filete relleno empanado",
+   "escalope relleno"
+  ],
+  "summary": "Dos filetes finos de ternera rellenos de jamón y queso, empanados y fritos: el gran empanado asturiano.",
+  "what": "El cachopo es un plato asturiano: dos filetes de ternera grandes y finos que encierran jamón curado y un queso que funda, empanados y fritos hasta quedar dorados y crujientes, con el queso fundido dentro. Suele servirse con patatas fritas y pimientos.\n\nEs una variante generosa del escalope relleno, y la técnica es la del [[rebozados-y-empanados|empanado]]: filetes muy finos para que la carne se haga a la vez que se dora el pan, bordes bien sellados para que no se escape el queso y aceite a la temperatura justa. Los rellenos cambian: setas, cecina, quesos azules. Cada casa tiene el suyo.",
+  "base": {
+   "for": "2–3 raciones (1 cachopo)",
+   "items": [
+    [
+     "Filetes de ternera grandes y finos (3–4 mm)",
+     "2 × 200 g"
+    ],
+    [
+     "Jamón curado en lonchas",
+     "60 g"
+    ],
+    [
+     "Queso que funda en lonchas",
+     "80 g"
+    ],
+    [
+     "Harina, huevo batido y pan rallado",
+     "cantidad necesaria"
+    ],
+    [
+     "Aceite para freír",
+     "abundante"
+    ],
+    [
+     "Sal",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Golpea los filetes entre dos papeles hasta 3–4 mm de grosor; sala ligeramente.",
+    "Cubre un filete con el jamón y el queso dejando un borde libre de 1 cm; cubre con el otro filete y presiona los bordes.",
+    "Pasa por harina, huevo y pan rallado, presionando bien los bordes; repite huevo y pan si quieres más costra.",
+    "Reposa 15 minutos en frío para que se asiente el empanado.",
+    "Fríe en aceite a 170–175 °C 3–4 minutos por cara, hasta dorar; escurre en rejilla y corta en porciones."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Grosor de los filetes",
+    "ratio": "3–4 mm",
+    "note": "Golpeados."
+   },
+   {
+    "use": "Fritura",
+    "ratio": "170–175 °C, 3–4 minutos por cara",
+    "note": "Carne hecha y queso fundido."
+   },
+   {
+    "use": "Borde sin relleno",
+    "ratio": "1 cm",
+    "note": "Para sellar."
+   },
+   {
+    "use": "Ración",
+    "ratio": "Un cachopo para 2–3 personas",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "rebozados-y-empanados",
+    "name": "Empanados",
+    "note": "La técnica."
+   },
+   {
+    "id": "ternera-lechal",
+    "name": "Ternera",
+    "note": "Piezas para filetes."
+   },
+   {
+    "id": "jamon-curado",
+    "name": "Jamón",
+    "note": "El relleno clásico."
+   },
+   {
+    "id": "quesos-azules",
+    "name": "Con queso azul",
+    "note": "Relleno de la zona."
+   }
+  ],
+  "keys": [
+   "Filetes muy finos y del mismo tamaño.",
+   "Borde libre y bien sellado.",
+   "Empanado presionado y reposado.",
+   "Aceite a temperatura constante.",
+   "Cada casa, su relleno."
+  ],
+  "errors": [
+   {
+    "p": "Se escapa el queso",
+    "fix": "Bordes sin sellar o relleno hasta el borde. Deja 1 cm y presiona."
+   },
+   {
+    "p": "Pan quemado y carne cruda",
+    "fix": "Filetes gruesos o aceite muy caliente. Más finos y 170 °C."
+   },
+   {
+    "p": "Empanado que se despega",
+    "fix": "Carne húmeda o sin reposo. Seca y reposa en frío."
+   }
+  ],
+  "history": "El cachopo es un plato popular de Asturias que se ha extendido mucho en las últimas décadas, con concursos y versiones de todo tipo.",
+  "uses": [
+   "Platos para compartir",
+   "Menús de cocina asturiana"
+  ],
+  "keep": "Montado y empanado crudo, 1 día en frío; se congela bien en crudo.",
+  "pro": "Monta y empana por la mañana; fríe al pedido.",
+  "related": [
+   "rebozados-y-empanados",
+   "ternera-lechal",
+   "jamon-curado",
+   "quesos-azules",
+   "fritura",
+   "croquetas"
+  ]
+ },
+ {
+  "id": "menestra-de-verduras",
+  "name": "Menestra de verduras",
+  "name_en": "Spring vegetable menestra",
+  "cat": "tecnicas",
+  "group": "Clásicos españoles",
+  "technique": "hervido",
+  "aka": [
+   "menestra",
+   "menestra de Tudela",
+   "menestra navarra",
+   "verduras de primavera",
+   "menestra de verduras"
+  ],
+  "summary": "Verduras de primavera cocidas cada una a su punto y reunidas en un sofrito ligero con jamón y su caldo.",
+  "what": "La menestra es un plato de verduras de temporada, sobre todo de la huerta navarra y riojana: alcachofas, espárragos, guisantes, habas, judías verdes, a veces coliflor o borraja. Cada verdura se cuece por separado, a su punto, y luego se reúnen en un sofrito ligero de cebolla y jamón ligado con un poco de harina y el caldo de cocción. Algunas casas rebozan y fríen las alcachofas o los espárragos antes de añadirlos.\n\nEl secreto es el punto de cada verdura ([[punto-de-las-verduras]]): todas tiernas, ninguna pasada. Cada casa y cada temporada tienen su menestra.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Alcachofas limpias",
+     "4"
+    ],
+    [
+     "Espárragos verdes o blancos",
+     "8"
+    ],
+    [
+     "Guisantes y habas desgranados",
+     "150 g y 150 g"
+    ],
+    [
+     "Judías verdes",
+     "150 g"
+    ],
+    [
+     "Cebolla picada y jamón en taquitos",
+     "1 y 80 g"
+    ],
+    [
+     "Harina",
+     "10 g"
+    ],
+    [
+     "Caldo de la cocción de las verduras",
+     "300 ml"
+    ],
+    [
+     "Aceite de oliva",
+     "50 ml"
+    ]
+   ],
+   "steps": [
+    "Cuece cada verdura por separado en agua con sal hasta su punto y enfríala; guarda parte del caldo.",
+    "Pocha la cebolla en el aceite, añade el jamón y la harina y rehoga un minuto.",
+    "Moja con el caldo y deja que espese ligeramente.",
+    "Añade las verduras y calienta 2–3 minutos moviendo la cazuela.",
+    "Ajusta de sal y sirve enseguida."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Judía verde",
+    "ratio": "5–7 minutos",
+    "note": "Tierna."
+   },
+   {
+    "use": "Alcachofa",
+    "ratio": "12–15 minutos",
+    "note": "En agua acidulada."
+   },
+   {
+    "use": "Guisante y haba",
+    "ratio": "1–3 minutos",
+    "note": "Según tamaño."
+   },
+   {
+    "use": "Ración",
+    "ratio": "250 g de verdura",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "alcachofas",
+    "name": "Alcachofas",
+    "note": "Limpieza y punto."
+   },
+   {
+    "id": "esparrago-y-guisante",
+    "name": "Espárragos y guisantes",
+    "note": "Primavera."
+   },
+   {
+    "id": "judia-verde-y-habas",
+    "name": "Judías verdes y habas",
+    "note": "Producto."
+   },
+   {
+    "id": "punto-de-las-verduras",
+    "name": "Punto de las verduras",
+    "note": "Cada una a su tiempo."
+   }
+  ],
+  "keys": [
+   "Cada verdura cocida aparte.",
+   "Puntos tiernos, nunca pasados.",
+   "Caldo de cocción para la salsa.",
+   "Juntar al final y servir enseguida.",
+   "Cada casa, su menestra."
+  ],
+  "errors": [
+   {
+    "p": "Verduras pasadas",
+    "fix": "Cocidas juntas. Por separado y a su punto."
+   },
+   {
+    "p": "Salsa espesa y pastosa",
+    "fix": "Mucha harina. Solo un poco."
+   },
+   {
+    "p": "Alcachofas negras",
+    "fix": "Sin agua acidulada. Acidula."
+   }
+  ],
+  "history": "La menestra es un plato tradicional de la huerta navarra y riojana, sobre todo de la Ribera, ligado a la primavera.",
+  "uses": [
+   "Entrantes de temporada",
+   "Platos vegetales",
+   "Guarnición"
+  ],
+  "keep": "Verduras cocidas por separado, 2 días en frío; la menestra montada, al momento.",
+  "pro": "Verduras cocidas y frías por separado; montaje por ración.",
+  "related": [
+   "alcachofas",
+   "esparrago-y-guisante",
+   "judia-verde-y-habas",
+   "punto-de-las-verduras",
+   "escaldado-de-verduras",
+   "jamon-curado"
+  ]
+ },
+ {
+  "id": "limpiar-y-abrir-marisco",
+  "name": "Limpiar y abrir marisco",
+  "name_en": "Cleaning and opening shellfish",
+  "cat": "tecnicas",
+  "group": "Conservar y transformar",
+  "aka": [
+   "abrir vieiras",
+   "limpiar navajas",
+   "pelar cigalas",
+   "abrir centollo",
+   "limpiar buey de mar",
+   "pelar langostinos"
+  ],
+  "summary": "Cómo abrir, pelar y limpiar los mariscos más comunes sin perder carne, jugo ni coral, y qué partes se tiran.",
+  "what": "Cada marisco tiene su forma de abrirse y sus partes que no se comen. En las vieiras se separa el músculo blanco y el coral y se tira el resto. En las navajas, la tripa oscura. En el buey de mar y el centollo cocidos, las agallas (los «dedos») y la boca, y se aprovechan la carne de patas y cuerpo y la pasta de la cabeza. En los langostinos y cigalas, el intestino. Las ostras tienen su técnica en [[ostras-y-percebes]].\n\nLo esencial es trabajar con el marisco vivo o recién cocido, en frío, y con la herramienta adecuada: cuchillo corto y romo para bivalvos, tijeras y pinzas para crustáceos.",
+  "method": [
+   "Vieiras: mete un cuchillo romo por la parte plana, corta el músculo pegado a la concha superior, saca el contenido y separa el músculo y el coral; tira las barbas y la parte oscura. Lava rápido en agua fría.",
+   "Navajas: purga en agua salada fría, ábrelas al vapor o en plancha unos segundos y retira la tripa oscura.",
+   "Langostinos y cigalas en crudo: separa la cabeza, aprieta la cola por los lados para romper el caparazón y saca la carne; quita el intestino.",
+   "Buey de mar o centollo cocido: separa el caparazón del cuerpo, quita las agallas y la boca, saca la carne del cuerpo y casca patas y pinzas; guarda la pasta del caparazón.",
+   "Guarda cabezas y caparazones para fondos."
+  ],
+  "ratios": [
+   {
+    "use": "Rendimiento de la vieira",
+    "ratio": "20–25 % de músculo y coral",
+    "note": "Sobre peso con concha."
+   },
+   {
+    "use": "Rendimiento del buey de mar",
+    "ratio": "25–35 % de carne",
+    "note": "Más en hembras con pasta."
+   },
+   {
+    "use": "Purgado de navajas",
+    "ratio": "Agua con 30–35 g de sal por litro, 1 hora",
+    "note": "En frío."
+   },
+   {
+    "use": "Temperatura de trabajo",
+    "ratio": "0–4 °C",
+    "note": "Marisco en frío."
+   }
+  ],
+  "variants": [
+   {
+    "id": "vieiras-y-zamburinas",
+    "name": "Vieiras",
+    "note": "Producto y punto."
+   },
+   {
+    "id": "buey-de-mar-y-centollo",
+    "name": "Buey de mar y centollo",
+    "note": "Cocción y carne."
+   },
+   {
+    "id": "ostras-y-percebes",
+    "name": "Ostras",
+    "note": "Cómo abrirlas."
+   },
+   {
+    "id": "coccion-de-marisco",
+    "name": "Cocción de marisco",
+    "note": "Puntos."
+   }
+  ],
+  "keys": [
+   "Marisco vivo o recién cocido, y en frío.",
+   "Herramienta adecuada: cuchillo romo, tijeras, pinzas.",
+   "Fuera intestinos, agallas y partes oscuras.",
+   "Guarda jugos, corales y caparazones.",
+   "Bivalvos siempre depurados."
+  ],
+  "errors": [
+   {
+    "p": "Arena en las navajas",
+    "fix": "Sin purgar. Purga en agua salada fría."
+   },
+   {
+    "p": "Vieira rota",
+    "fix": "Cuchillo por el lado equivocado. Entra por la concha plana."
+   },
+   {
+    "p": "Restos de caparazón en la carne",
+    "fix": "Cascado brusco. Revisa la carne con los dedos."
+   }
+  ],
+  "history": "Abrir y limpiar marisco es oficio básico de las cocinas de costa y de las marisquerías de toda la península.",
+  "uses": [
+   "Preparación de marisco para crudos, plancha y guisos",
+   "Fondos con caparazones"
+  ],
+  "keep": "Carne limpia de marisco, el mismo día en frío; cocida, 1–2 días.",
+  "pro": "Limpia al recibir o justo antes del servicio; caparazones a una caja para fondos.",
+  "related": [
+   "vieiras-y-zamburinas",
+   "buey-de-mar-y-centollo",
+   "ostras-y-percebes",
+   "coccion-de-marisco",
+   "mejillon-y-almeja",
+   "fondo-de-marisco"
+  ]
+ },
+ {
+  "id": "bridar-y-mechar",
+  "name": "Bridar, mechar y enrollar",
+  "name_en": "Trussing, larding and rolling",
+  "cat": "tecnicas",
+  "group": "Conservar y transformar",
+  "aka": [
+   "bridar",
+   "atar carne",
+   "mechar",
+   "redondo mechado",
+   "enrollar carne",
+   "nudo de carnicero",
+   "rollo de carne"
+  ],
+  "summary": "Atar piezas para que tengan forma regular, meter grasa o sabor dentro de las magras y enrollar con relleno.",
+  "what": "Bridar es atar una pieza con hilo de algodón para darle forma regular y compacta: así se cocina por igual y se corta en rodajas limpias. Mechar es introducir tiras de tocino, panceta, jamón o verduras dentro de una pieza magra (un redondo, un lomo) con una aguja mechadora, para darle grasa y sabor por dentro. Enrollar es abrir una pieza fina, cubrirla de relleno y cerrarla en un rollo atado.\n\nLas tres técnicas sirven para asados y braseados de piezas magras o irregulares. El bridado de aves está en [[despiece-de-aves]].",
+  "method": [
+   "Bridar: pasa el hilo alrededor de la pieza cada 2–3 cm con nudos sencillos, o en una sola tira con lazadas; aprieta lo justo para dar forma, sin cortar la carne.",
+   "Mechar: congela un poco las tiras de tocino para que estén firmes, mételas en la mechadora y atraviesa la pieza en el sentido de la fibra.",
+   "Enrollar: abre la pieza en libro hasta un grosor parejo, sazona, extiende el relleno dejando un borde libre y enrolla apretando.",
+   "Ata el rollo y dóralo por todos los lados antes de asar o brasear.",
+   "Quita el hilo antes de cortar."
+  ],
+  "ratios": [
+   {
+    "use": "Separación del hilo",
+    "ratio": "2–3 cm",
+    "note": "Rodajas regulares."
+   },
+   {
+    "use": "Mechado",
+    "ratio": "4–6 tiras por kg de carne",
+    "note": "En el sentido de la fibra."
+   },
+   {
+    "use": "Grosor para enrollar",
+    "ratio": "1,5–2 cm",
+    "note": "Parejo."
+   },
+   {
+    "use": "Redondo mechado braseado",
+    "ratio": "150 °C, 2,5–3 horas",
+    "note": "Hasta que esté tierno."
+   }
+  ],
+  "variants": [
+   {
+    "id": "despiece-de-aves",
+    "name": "Bridar aves",
+    "note": "Aves enteras para asar."
+   },
+   {
+    "id": "braseado",
+    "name": "Braseado",
+    "note": "Para redondos y rollos."
+   },
+   {
+    "id": "asado-al-horno",
+    "name": "Asado",
+    "note": "Piezas atadas al horno."
+   },
+   {
+    "id": "deshuesar-y-enrollar-piezas",
+    "name": "Deshuesar y enrollar",
+    "note": "Piernas y paletillas."
+   }
+  ],
+  "keys": [
+   "Hilo de algodón de cocina, nunca sintético.",
+   "Atar para dar forma, no para estrangular.",
+   "Mechar en el sentido de la fibra.",
+   "Grosor parejo antes de enrollar.",
+   "Quitar el hilo antes de servir."
+  ],
+  "errors": [
+   {
+    "p": "Rollo que se abre",
+    "fix": "Atado flojo o relleno hasta el borde. Deja borde y ata firme."
+   },
+   {
+    "p": "Carne cortada por el hilo",
+    "fix": "Demasiado apretado. Ata lo justo."
+   },
+   {
+    "p": "Pieza seca",
+    "fix": "Magra sin mechar o pasada de punto. Mecha y controla con sonda."
+   }
+  ],
+  "history": "Bridar, mechar y enrollar son técnicas clásicas de carnicería y de la cocina de asados y braseados europea.",
+  "uses": [
+   "Asados y braseados",
+   "Redondos y rollos rellenos",
+   "Piezas para cortar en frío"
+  ],
+  "keep": "Piezas atadas en crudo, en frío y según el producto; rellenas, 1 día.",
+  "pro": "Ata y rellena antes del servicio; anota en la ficha el peso y el tiempo.",
+  "related": [
+   "despiece-de-aves",
+   "braseado",
+   "asado-al-horno",
+   "deshuesar-y-enrollar-piezas",
+   "punto-de-la-carne",
+   "ternera-lechal"
+  ]
+ },
+ {
+  "id": "deshuesar-y-enrollar-piezas",
+  "name": "Deshuesar piernas y paletillas",
+  "name_en": "Boning legs and shoulders",
+  "cat": "tecnicas",
+  "group": "Conservar y transformar",
+  "aka": [
+   "deshuesar pierna",
+   "deshuesar paletilla",
+   "pierna de cordero deshuesada",
+   "abrir en mariposa",
+   "paletilla rellena"
+  ],
+  "summary": "Sacar los huesos de una pierna o una paletilla siguiendo el hueso con la punta del cuchillo, para abrirla, rellenarla o cocinarla pareja.",
+  "what": "Deshuesar una pierna o una paletilla permite cocinarla de forma pareja, rellenarla y cortarla limpia. Se hace siguiendo cada hueso con la punta de un cuchillo corto y firme, raspando para no dejar carne. La pierna se puede deshuesar en túnel, sacando el hueso sin abrir la pieza, o abrirla en mariposa para tener una lámina de grosor parecido que se marina, se asa a la brasa o se rellena y se enrolla.\n\nLos huesos se tuestan para un [[fondo-de-cordero|fondo]] o un jugo. La misma técnica sirve para cabrito, cerdo o ternera.",
+  "method": [
+   "Pierna: separa el hueso de la cadera siguiendo su forma con la punta del cuchillo, hasta llegar a la articulación.",
+   "Sigue el hueso largo raspando a su alrededor; sácalo por el extremo (en túnel) o abre la carne a lo largo del hueso (en mariposa).",
+   "Paletilla: separa la paleta (hueso plano) por las dos caras y desarticula; luego sigue el hueso del brazo.",
+   "Abre las zonas gruesas con cortes en libro para que la pieza quede de grosor parejo; retira nervios grandes.",
+   "Marina, rellena y ata, o asa abierta."
+  ],
+  "ratios": [
+   {
+    "use": "Pierna abierta a la brasa",
+    "ratio": "58–60 °C en el centro",
+    "note": "Reposo de 10 minutos."
+   },
+   {
+    "use": "Rendimiento de la pierna",
+    "ratio": "65–70 % de carne",
+    "note": "Sobre pieza con hueso."
+   },
+   {
+    "use": "Grosor parejo",
+    "ratio": "3–4 cm",
+    "note": "Para cocción uniforme."
+   },
+   {
+    "use": "Huesos para jugo",
+    "ratio": "Tostados a 200 °C, 40 minutos",
+    "note": "Luego al fondo."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cordero",
+    "name": "Cordero",
+    "note": "Piernas y paletillas."
+   },
+   {
+    "id": "bridar-y-mechar",
+    "name": "Bridar y enrollar",
+    "note": "Para cerrar la pieza."
+   },
+   {
+    "id": "fondo-de-cordero",
+    "name": "Fondo de cordero",
+    "note": "Con los huesos."
+   },
+   {
+    "id": "fuego-y-brasa",
+    "name": "Pierna abierta a la brasa",
+    "note": "Marinada y asada."
+   }
+  ],
+  "keys": [
+   "Cuchillo corto y firme, siempre pegado al hueso.",
+   "Raspar el hueso para no dejar carne.",
+   "Grosor parejo antes de cocinar.",
+   "Los huesos, al fondo.",
+   "Trabajar en frío."
+  ],
+  "errors": [
+   {
+    "p": "Carne perforada",
+    "fix": "Cuchillo lejos del hueso. Pégalo al hueso."
+   },
+   {
+    "p": "Cocción desigual",
+    "fix": "Grosor irregular. Abre en libro las zonas gruesas."
+   },
+   {
+    "p": "Mucha carne en el hueso",
+    "fix": "Cortes cortos. Raspa siguiendo el hueso."
+   }
+  ],
+  "history": "Deshuesar piezas es una técnica básica de carnicería y de la cocina de asados.",
+  "uses": [
+   "Asados rellenos",
+   "Brasa de piezas abiertas",
+   "Rollos para cortar",
+   "Fondos"
+  ],
+  "keep": "Pieza deshuesada cruda, 2–3 días en frío; marinada o rellena, 1–2 días.",
+  "pro": "Deshuesa al recibir y porciona; huesos al fondo de la semana.",
+  "related": [
+   "cordero",
+   "bridar-y-mechar",
+   "fondo-de-cordero",
+   "fuego-y-brasa",
+   "asado-al-horno",
+   "cabrito"
+  ]
+ },
+ {
+  "id": "pulir-y-limpiar-carnes",
+  "name": "Pulir y limpiar carnes",
+  "name_en": "Trimming meat",
+  "cat": "tecnicas",
+  "group": "Conservar y transformar",
+  "aka": [
+   "pulir solomillo",
+   "limpiar lomo",
+   "quitar la telilla",
+   "membrana plateada",
+   "cordón del solomillo",
+   "recortes de carne"
+  ],
+  "summary": "Quitar telillas, nervios y grasa sobrante de una pieza para que se cocine pareja y se coma sin tropiezos, aprovechando los recortes.",
+  "what": "Pulir es limpiar una pieza de carne de lo que no se come o estorba: la membrana plateada que cubre algunos músculos y encoge al cocinar, nervios gruesos, cartílagos y la grasa exterior que sobra. Un solomillo pulido se separa en cabeza, centro y punta, y su cordón lateral, con más nervio, se aprovecha.\n\nUn buen pulido mejora la cocción (la pieza no se curva), la textura y el rendimiento si los recortes se usan en [[jugo-de-carne|jugos]], picadas o guisos. Se trabaja en frío, con un cuchillo fino y flexible.",
+  "method": [
+   "Seca la pieza y colócala sobre la tabla con la membrana hacia arriba.",
+   "Mete la punta del cuchillo bajo la membrana, sujeta el extremo y desliza la hoja hacia fuera, con el filo ligeramente hacia arriba, sin llevarte carne.",
+   "Retira la grasa exterior sobrante, dejando una capa fina donde convenga.",
+   "En el solomillo, separa el cordón lateral y divide en cabeza, centro y punta.",
+   "Guarda recortes, nervios y grasa limpia para jugos, picadas o para fundir."
+  ],
+  "ratios": [
+   {
+    "use": "Rendimiento del solomillo pulido",
+    "ratio": "70–80 %",
+    "note": "Según la pieza."
+   },
+   {
+    "use": "Grasa a dejar en piezas de asar",
+    "ratio": "3–5 mm",
+    "note": "Protege y da sabor."
+   },
+   {
+    "use": "Carne al pulir",
+    "ratio": "0–4 °C",
+    "note": "Más fácil y seguro."
+   },
+   {
+    "use": "Recortes para picada",
+    "ratio": "Sin nervios ni membranas",
+    "note": "Del día."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cortes-de-vacuno",
+    "name": "Cortes de vacuno",
+    "note": "Qué pieza para qué."
+   },
+   {
+    "id": "porcionado-y-racionado",
+    "name": "Porcionado",
+    "note": "Después de pulir."
+   },
+   {
+    "id": "jugo-de-carne",
+    "name": "Jugo con recortes",
+    "note": "Aprovechamiento."
+   },
+   {
+    "id": "cortes-de-cuchillo",
+    "name": "Técnica de cuchillo",
+    "note": "Filo y agarre."
+   }
+  ],
+  "keys": [
+   "Cuchillo fino, flexible y afilado.",
+   "Filo hacia la membrana, no hacia la carne.",
+   "Deja algo de grasa en piezas de asar.",
+   "Trabaja la carne en frío.",
+   "Los recortes no son desperdicio."
+  ],
+  "errors": [
+   {
+    "p": "Carne arrancada con la membrana",
+    "fix": "Filo hacia la carne. Inclínalo hacia la membrana."
+   },
+   {
+    "p": "Pieza que se curva al cocinar",
+    "fix": "Membrana sin quitar. Retírala entera."
+   },
+   {
+    "p": "Recortes desaprovechados",
+    "fix": "Sin destino. Planifica jugos y picadas."
+   }
+  ],
+  "history": "Pulir y limpiar las piezas es oficio básico de carnicería y de la partida de carnes de cualquier cocina profesional.",
+  "uses": [
+   "Preparación de solomillos y lomos",
+   "Piezas para asar",
+   "Recortes para jugos"
+  ],
+  "keep": "Carne pulida, en frío y tapada según la pieza; recortes, el mismo día o congelados.",
+  "pro": "Pule al recibir y porciona; recortes etiquetados para jugos y picadas.",
+  "related": [
+   "cortes-de-vacuno",
+   "porcionado-y-racionado",
+   "jugo-de-carne",
+   "cortes-de-cuchillo",
+   "punto-de-la-carne",
+   "cocina-de-aprovechamiento"
+  ]
+ },
+ {
+  "id": "sopa-de-cebolla",
+  "name": "Sopa de cebolla gratinada",
+  "name_en": "French onion soup",
+  "cat": "tecnicas",
+  "group": "Cocina francesa",
+  "technique": "gratinado",
+  "aka": [
+   "sopa de cebolla",
+   "soupe à l'oignon",
+   "sopa de cebolla gratinada",
+   "gratinée"
+  ],
+  "summary": "Cebolla caramelizada lentamente, mojada con vino y fondo oscuro, y servida con pan tostado y queso gratinado.",
+  "what": "La sopa de cebolla francesa se hace con mucha cebolla cocinada despacio hasta quedar dorada y dulce ([[caramelizacion-de-verduras]]), un poco de harina, vino blanco y un [[fondo-oscuro]] de vacuno. Se sirve en cuenco resistente al horno, cubierta con pan tostado y queso rallado, y se gratina hasta que el queso burbujea y se dora.\n\nTodo el sabor depende de la paciencia con la cebolla y de un buen fondo. Cada casa decide si lleva harina, vino o un chorrito de licor.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Cebolla en juliana",
+     "1 kg"
+    ],
+    [
+     "Mantequilla y aceite",
+     "40 g y 20 ml"
+    ],
+    [
+     "Harina (opcional)",
+     "15 g"
+    ],
+    [
+     "Vino blanco seco",
+     "150 ml"
+    ],
+    [
+     "Fondo oscuro de vacuno",
+     "1 l"
+    ],
+    [
+     "Tomillo y laurel",
+     "1 rama y 1 hoja"
+    ],
+    [
+     "Pan en rebanadas tostadas",
+     "8"
+    ],
+    [
+     "Queso curado que funda, rallado",
+     "150 g"
+    ]
+   ],
+   "steps": [
+    "Pocha la cebolla con la mantequilla, el aceite y una pizca de sal a fuego medio-suave 45–60 minutos, desglasando con agua cuando se pegue, hasta que esté marrón y dulce.",
+    "Añade la harina y tuéstala un minuto; moja con el vino y reduce.",
+    "Añade el fondo y las hierbas y cuece 20–30 minutos; ajusta de sal.",
+    "Reparte en cuencos de horno, cubre con el pan y el queso.",
+    "Gratina en salamandra u horno fuerte hasta que el queso burbujee y se dore."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Cebolla",
+    "ratio": "250 g por ración",
+    "note": "Se reduce mucho."
+   },
+   {
+    "use": "Caramelización",
+    "ratio": "45–60 minutos",
+    "note": "Fuego medio-suave."
+   },
+   {
+    "use": "Gratinado",
+    "ratio": "220–250 °C, 3–5 minutos",
+    "note": "O salamandra."
+   },
+   {
+    "use": "Queso",
+    "ratio": "35–40 g por cuenco",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "caramelizacion-de-verduras",
+    "name": "Cebolla caramelizada",
+    "note": "La base."
+   },
+   {
+    "id": "fondo-oscuro",
+    "name": "Fondo oscuro",
+    "note": "Para mojar."
+   },
+   {
+    "id": "gratinado",
+    "name": "Gratinado",
+    "note": "La costra de queso."
+   },
+   {
+    "id": "sopas-de-ajo",
+    "name": "Sopas de ajo",
+    "note": "Otra sopa de pan."
+   }
+  ],
+  "keys": [
+   "Paciencia con la cebolla: es todo el sabor.",
+   "Desglasar lo pegado con agua.",
+   "Buen fondo oscuro.",
+   "Pan bien tostado para que no se deshaga.",
+   "Gratinar al momento."
+  ],
+  "errors": [
+   {
+    "p": "Sopa dulzona y plana",
+    "fix": "Poco fondo o sin ácido. Más fondo y un chorrito de vino."
+   },
+   {
+    "p": "Cebolla quemada",
+    "fix": "Fuego alto. Medio-suave y desglasar."
+   },
+   {
+    "p": "Pan en papilla",
+    "fix": "Pan poco tostado. Tuéstalo bien."
+   }
+  ],
+  "history": "La sopa de cebolla gratinada es un clásico de la cocina popular de París, ligada a los mercados y a las noches de invierno.",
+  "uses": [
+   "Entrantes de invierno",
+   "Menús de cocina francesa"
+  ],
+  "keep": "La sopa sin gratinar, 4–5 días en frío; se congela bien.",
+  "pro": "Cebolla caramelizada en tanda; sopa hecha y gratinado por cuenco al pedido.",
+  "related": [
+   "caramelizacion-de-verduras",
+   "fondo-oscuro",
+   "gratinado",
+   "sopas-de-ajo",
+   "cebolla-y-ajo",
+   "quesos-en-cocina"
+  ]
+ },
+ {
+  "id": "arancini",
+  "name": "Arancini y croquetas de arroz",
+  "name_en": "Arancini and rice croquettes",
+  "cat": "tecnicas",
+  "group": "Cocina italiana",
+  "technique": "fritura",
+  "aka": [
+   "arancini",
+   "arancine",
+   "supplì",
+   "croquetas de arroz",
+   "bolas de arroz fritas"
+  ],
+  "summary": "Arroz cremoso frío, formado en bolas con un relleno, empanado y frito hasta que el centro está caliente y el queso funde.",
+  "what": "Los arancini sicilianos son bolas o conos de arroz cocido con azafrán, rellenos de ragú y guisantes o de queso, empanados y fritos. Los supplì romanos son cilindros de arroz con tomate y un corazón de mozzarella que se estira al morder. Los dos nacen del aprovechamiento de un [[risotto-y-arroces-cremosos|risotto]] o un arroz meloso del día anterior.\n\nEl arroz tiene que estar frío y firme para formar bien, y como es arroz cocido, se enfría rápido y se guarda poco. La fritura debe calentar el centro sin quemar la costra.",
+  "base": {
+   "for": "unas 12 piezas de 90 g",
+   "items": [
+    [
+     "Risotto o arroz cremoso frío (con queso y azafrán)",
+     "800 g"
+    ],
+    [
+     "Relleno: ragú espeso o mozzarella en dados",
+     "200 g"
+    ],
+    [
+     "Harina, huevo batido y pan rallado fino",
+     "cantidad necesaria"
+    ],
+    [
+     "Aceite para freír",
+     "abundante"
+    ]
+   ],
+   "steps": [
+    "Extiende el arroz recién hecho en bandeja, enfríalo rápido y déjalo en frío hasta el día siguiente.",
+    "Con las manos húmedas, toma 70 g de arroz, haz un hueco, pon el relleno y ciérralo con más arroz en forma de bola o cono.",
+    "Empana en harina, huevo y pan, presionando.",
+    "Fríe a 170–175 °C 4–5 minutos, hasta que estén dorados y el centro caliente.",
+    "Escurre en rejilla y sirve enseguida."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Pieza",
+    "ratio": "70 g de arroz y 15–20 g de relleno",
+    "note": ""
+   },
+   {
+    "use": "Fritura",
+    "ratio": "170–175 °C, 4–5 minutos",
+    "note": "Centro caliente."
+   },
+   {
+    "use": "Arroz cocido",
+    "ratio": "Enfriar rápido y usar en 1–2 días",
+    "note": "Riesgo de esporas."
+   },
+   {
+    "use": "Ración",
+    "ratio": "2–3 piezas",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "risotto-y-arroces-cremosos",
+    "name": "Risotto",
+    "note": "La base."
+   },
+   {
+    "id": "croquetas",
+    "name": "Croquetas",
+    "note": "Otro empanado frito."
+   },
+   {
+    "id": "ragu",
+    "name": "Ragú",
+    "note": "Relleno clásico."
+   },
+   {
+    "id": "rebozados-y-empanados",
+    "name": "Empanado",
+    "note": "Harina, huevo y pan."
+   }
+  ],
+  "keys": [
+   "Arroz frío y firme para formar.",
+   "Relleno bien cerrado en el centro.",
+   "Empanado presionado.",
+   "Fritura que calienta el centro sin quemar.",
+   "Arroz cocido: enfriar rápido y usar pronto."
+  ],
+  "errors": [
+   {
+    "p": "Se abren al freír",
+    "fix": "Arroz poco firme o relleno húmedo. Enfría más y cierra bien."
+   },
+   {
+    "p": "Centro frío",
+    "fix": "Piezas grandes o aceite muy caliente. Más pequeñas y 170 °C."
+   },
+   {
+    "p": "Aceitosos",
+    "fix": "Aceite frío. Sube a 170–175 °C."
+   }
+  ],
+  "history": "Los arancini son tradicionales de Sicilia y los supplì, de Roma; los dos son comida callejera de aprovechamiento.",
+  "uses": [
+   "Aperitivos y tapas",
+   "Comida para compartir",
+   "Aprovechamiento de arroces"
+  ],
+  "keep": "Formados y empanados crudos, 1 día en frío o congelados; fritos, al momento.",
+  "pro": "Forma y congela por tandas; fríe al pedido desde congelado a 165–170 °C.",
+  "related": [
+   "risotto-y-arroces-cremosos",
+   "croquetas",
+   "ragu",
+   "rebozados-y-empanados",
+   "cadena-de-frio",
+   "azafran"
+  ]
+ },
+ {
+  "id": "bulgogi-y-barbacoa-coreana",
+  "name": "Bulgogi y barbacoa coreana",
+  "name_en": "Bulgogi and Korean barbecue",
+  "cat": "tecnicas",
+  "group": "Cocina de Asia",
+  "technique": "plancha",
+  "aka": [
+   "bulgogi",
+   "barbacoa coreana",
+   "galbi",
+   "costillas coreanas",
+   "ssam",
+   "ssamjang"
+  ],
+  "summary": "Carne en láminas finas marinada en soja, azúcar, ajo, pera y sésamo, hecha en segundos a fuego vivo y comida envuelta en hojas.",
+  "what": "El bulgogi es carne de vacuno cortada en láminas muy finas y marinada en soja, azúcar, ajo, cebolleta, aceite de sésamo y pera rallada, que aporta dulzor y ablanda. Se hace en segundos en plancha, sartén o parrilla a fuego muy vivo. En la barbacoa coreana se asan en la mesa estas carnes y otras, como las costillas marinadas o la panceta sin marinar, y se comen envueltas en hojas de lechuga con arroz, ajo, una pasta de soja y chile y encurtidos.\n\nCada casa tiene su marinada.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Vacuno tierno (lomo o falda) en láminas de 2–3 mm",
+     "600 g"
+    ],
+    [
+     "Salsa de soja",
+     "60 ml"
+    ],
+    [
+     "Azúcar",
+     "25 g"
+    ],
+    [
+     "Pera rallada",
+     "½"
+    ],
+    [
+     "Ajo y cebolleta",
+     "4 dientes y 2"
+    ],
+    [
+     "Aceite de sésamo y sésamo tostado",
+     "15 ml y 10 g"
+    ],
+    [
+     "Hojas de lechuga, arroz y pasta de soja y chile",
+     "para servir"
+    ]
+   ],
+   "steps": [
+    "Semicongela la carne 30–45 minutos y córtala en láminas muy finas contra la fibra.",
+    "Mezcla la soja, el azúcar, la pera, el ajo, la cebolleta y el aceite de sésamo.",
+    "Marina la carne de 1 a 12 horas en frío.",
+    "Hazla en plancha o sartén muy caliente, por tandas, 1–2 minutos, hasta que se caramelice.",
+    "Sirve con sésamo, hojas de lechuga, arroz y salsa para envolver."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Marinada",
+    "ratio": "1–12 horas en frío",
+    "note": "La pera ablanda."
+   },
+   {
+    "use": "Plancha",
+    "ratio": "Fuego muy vivo, 1–2 minutos",
+    "note": "Por tandas."
+   },
+   {
+    "use": "Grosor",
+    "ratio": "2–3 mm",
+    "note": "Carne semicongelada."
+   },
+   {
+    "use": "Ración",
+    "ratio": "150 g",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "soja-y-derivados",
+    "name": "Salsa de soja",
+    "note": "Base de la marinada."
+   },
+   {
+    "id": "kimchi",
+    "name": "Kimchi",
+    "note": "El acompañamiento."
+   },
+   {
+    "id": "bibimbap",
+    "name": "Bibimbap",
+    "note": "Otro clásico coreano."
+   },
+   {
+    "id": "robata-y-parrilla-japonesa",
+    "name": "Parrilla japonesa",
+    "note": "Otra parrilla de mesa."
+   }
+  ],
+  "keys": [
+   "Láminas muy finas contra la fibra.",
+   "Fruta rallada para ablandar y endulzar.",
+   "Fuego muy vivo y tandas pequeñas.",
+   "Envolver en hojas con arroz y salsa.",
+   "Cada casa, su marinada."
+  ],
+  "errors": [
+   {
+    "p": "Carne cocida y gris",
+    "fix": "Plancha llena o poco caliente. Tandas pequeñas."
+   },
+   {
+    "p": "Carne blanda y harinosa",
+    "fix": "Marinada larga con mucha pera. Acorta."
+   },
+   {
+    "p": "Azúcar quemado",
+    "fix": "Fuego con llama directa. Plancha caliente sin llama."
+   }
+  ],
+  "history": "El bulgogi es uno de los platos de carne más conocidos de Corea, y la barbacoa de mesa es una costumbre muy extendida en el país.",
+  "uses": [
+   "Brasa y plancha",
+   "Platos para compartir",
+   "Rellenos de pan o arroz"
+  ],
+  "keep": "Marinada, 1 día en frío. Cocinada, al momento.",
+  "pro": "Carne laminada y marinada la víspera; plancha al pedido.",
+  "related": [
+   "soja-y-derivados",
+   "kimchi",
+   "bibimbap",
+   "robata-y-parrilla-japonesa",
+   "marinada",
+   "sesamo"
+  ]
+ },
+ {
+  "id": "okonomiyaki",
+  "name": "Okonomiyaki",
+  "name_en": "Okonomiyaki",
+  "cat": "tecnicas",
+  "group": "Cocina de Asia",
+  "technique": "plancha",
+  "aka": [
+   "okonomiyaki",
+   "tortilla japonesa",
+   "crep de col japonesa",
+   "salsa okonomiyaki"
+  ],
+  "summary": "Tortita de col, masa ligera y huevo hecha en plancha con panceta, terminada con salsa espesa, mayonesa y bonito seco.",
+  "what": "El okonomiyaki es una tortita japonesa hecha en plancha: mucha col en juliana fina mezclada con una masa ligera de harina, caldo y huevo, cubierta con lonchas finas de panceta, y cocinada a fuego medio hasta que la col se ablanda y el exterior se dora. Se termina con una salsa espesa dulce y salada, mayonesa, copos de bonito seco y alga en polvo. El nombre viene a significar «a tu gusto»: lleva lo que se quiera.\n\nHay estilos distintos según la ciudad: unos mezclan todo y otros montan las capas por separado con fideos. Cada casa tiene el suyo.",
+  "base": {
+   "for": "2 tortitas grandes",
+   "items": [
+    [
+     "Col en juliana muy fina",
+     "300 g"
+    ],
+    [
+     "Harina de trigo",
+     "100 g"
+    ],
+    [
+     "Dashi o agua",
+     "120 ml"
+    ],
+    [
+     "Huevos",
+     "2"
+    ],
+    [
+     "Cebolleta picada",
+     "2"
+    ],
+    [
+     "Panceta en lonchas finas",
+     "100 g"
+    ],
+    [
+     "Salsa okonomiyaki, mayonesa, bonito seco y alga en polvo",
+     "para terminar"
+    ]
+   ],
+   "steps": [
+    "Mezcla la harina con el dashi y los huevos hasta una masa sin grumos.",
+    "Añade la col y la cebolleta y mezcla con suavidad, sin batir.",
+    "Vierte en plancha o sartén aceitada a fuego medio, formando una tortita de 2 cm; cubre con la panceta.",
+    "Cocina 5–6 minutos, dale la vuelta y cocina 5–6 minutos más, tapado, hasta que el centro esté hecho.",
+    "Termina con la salsa, la mayonesa en hilos, el bonito y el alga."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Plancha",
+    "ratio": "180–200 °C, 5–6 minutos por lado",
+    "note": "Tapado al final."
+   },
+   {
+    "use": "Grosor",
+    "ratio": "2 cm",
+    "note": ""
+   },
+   {
+    "use": "Col",
+    "ratio": "3 partes de col por 1 de harina en peso",
+    "note": "Mucha col."
+   },
+   {
+    "use": "Ración",
+    "ratio": "1 tortita de 20 cm",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "dashi",
+    "name": "Dashi",
+    "note": "Líquido de la masa."
+   },
+   {
+    "id": "coles-y-brasicas",
+    "name": "Col",
+    "note": "Cortada muy fina."
+   },
+   {
+    "id": "plancha-y-sarten",
+    "name": "Plancha",
+    "note": "Calor por contacto."
+   },
+   {
+    "id": "tortilla-y-huevos-de-brunch",
+    "name": "Tortillas",
+    "note": "Otros platos de huevo en sartén."
+   }
+  ],
+  "keys": [
+   "Mucha col y poca masa.",
+   "No batir: la masa debe quedar ligera.",
+   "Fuego medio para que se haga el centro.",
+   "Tapar al final.",
+   "Cada casa, su okonomiyaki."
+  ],
+  "errors": [
+   {
+    "p": "Crudo por dentro",
+    "fix": "Fuego alto o tortita gruesa. Fuego medio y tapa."
+   },
+   {
+    "p": "Se rompe al dar la vuelta",
+    "fix": "Poco hecho abajo. Espera a que dore."
+   },
+   {
+    "p": "Pesado y denso",
+    "fix": "Mucha masa. Más col."
+   }
+  ],
+  "history": "El okonomiyaki es una comida popular japonesa, con estilos muy conocidos en Osaka y Hiroshima.",
+  "uses": [
+   "Platos para compartir",
+   "Comida de barra",
+   "Aprovechamiento de verduras"
+  ],
+  "keep": "Masa sin col, 1 día en frío; la tortita, al momento.",
+  "pro": "Col cortada y masa hecha; mezcla y cocina al pedido.",
+  "related": [
+   "dashi",
+   "coles-y-brasicas",
+   "plancha-y-sarten",
+   "tortilla-y-huevos-de-brunch",
+   "salazones-y-huevas",
+   "mayonesa"
+  ]
+ },
+ {
+  "id": "bacalao-ajoarriero",
+  "name": "Bacalao al ajoarriero",
+  "name_en": "Ajoarriero salt cod",
+  "cat": "tecnicas",
+  "group": "Clásicos españoles",
+  "technique": "guiso",
+  "aka": [
+   "ajoarriero",
+   "bacalao al ajoarriero",
+   "bacalao ajoarriero",
+   "guiso de bacalao desmigado"
+  ],
+  "summary": "Bacalao desalado y desmigado guisado brevemente en un sofrito de ajo, pimiento, tomate y carne de choricero.",
+  "what": "El ajoarriero es un guiso de interior hecho con [[bacalao]] en salazón, desalado y desmigado, que se cocina unos minutos en un sofrito de ajo, cebolla, pimiento, tomate y carne de pimiento choricero. Queda jugoso y rojo, y se come con pan o como relleno. Es muy popular en Navarra, Aragón y otras zonas de interior, cada una con su versión: con huevo cuajado, con patata o con marisco.\n\nEl bacalao se añade al final y se cocina poco, para que quede en lascas tiernas. Cada casa tiene su receta.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Bacalao desalado y desmigado",
+     "400 g"
+    ],
+    [
+     "Cebolla y pimiento verde y rojo",
+     "1, 1 y 1"
+    ],
+    [
+     "Ajo",
+     "4 dientes"
+    ],
+    [
+     "Tomate triturado",
+     "300 g"
+    ],
+    [
+     "Carne de pimiento choricero",
+     "2 cucharadas"
+    ],
+    [
+     "Aceite de oliva",
+     "80 ml"
+    ],
+    [
+     "Guindilla (opcional)",
+     "1"
+    ]
+   ],
+   "steps": [
+    "Dora los ajos laminados en el aceite y añade la cebolla y los pimientos; pocha 20 minutos.",
+    "Añade el tomate y el choricero y cocina hasta que la salsa esté espesa.",
+    "Incorpora el bacalao desmigado y escurrido.",
+    "Cocina 5–8 minutos a fuego suave, moviendo, hasta que el bacalao se impregne.",
+    "Ajusta de sal al final: el bacalao ya trae."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Bacalao por ración",
+    "ratio": "100 g desalado",
+    "note": ""
+   },
+   {
+    "use": "Cocción del bacalao",
+    "ratio": "5–8 minutos",
+    "note": "En lascas."
+   },
+   {
+    "use": "Choricero",
+    "ratio": "2 cucharadas por 4 raciones",
+    "note": "Color y sabor."
+   },
+   {
+    "use": "Desalado",
+    "ratio": "24–36 horas para tiras",
+    "note": "Ver desalado."
+   }
+  ],
+  "variants": [
+   {
+    "id": "bacalao",
+    "name": "Bacalao",
+    "note": "Desalado y partes."
+   },
+   {
+    "id": "salsa-vizcaina",
+    "name": "Vizcaína",
+    "note": "Otra salsa de choricero."
+   },
+   {
+    "id": "desalado-y-remojo",
+    "name": "Desalado",
+    "note": "Tiempos."
+   },
+   {
+    "id": "pisto-y-sanfaina",
+    "name": "Pisto",
+    "note": "Verduras pochadas."
+   }
+  ],
+  "keys": [
+   "Sofrito bien pochado antes del bacalao.",
+   "Bacalao al final y poco tiempo.",
+   "Sal al final.",
+   "Choricero para el color y el fondo.",
+   "Cada casa, su ajoarriero."
+  ],
+  "errors": [
+   {
+    "p": "Bacalao seco y fibroso",
+    "fix": "Cocinado de más. Solo 5–8 minutos."
+   },
+   {
+    "p": "Plato salado",
+    "fix": "Bacalao poco desalado. Desala más."
+   },
+   {
+    "p": "Salsa aguada",
+    "fix": "Tomate poco reducido. Reduce antes."
+   }
+  ],
+  "history": "El ajoarriero es un plato tradicional de Navarra, Aragón y otras zonas de interior, ligado al bacalao salado que llegaba de la costa.",
+  "uses": [
+   "Platos de cuchara",
+   "Rellenos de pimientos",
+   "Tapas con pan"
+  ],
+  "keep": "3 días en frío; se regenera suave.",
+  "pro": "Sofrito hecho; bacalao al pedido o por tandas cortas.",
+  "related": [
+   "bacalao",
+   "salsa-vizcaina",
+   "desalado-y-remojo",
+   "pisto-y-sanfaina",
+   "pimientos",
+   "sofrito"
+  ]
+ },
+ {
+  "id": "porrusalda",
+  "name": "Porrusalda",
+  "name_en": "Leek and potato soup",
+  "cat": "tecnicas",
+  "group": "Cocina vasca",
+  "technique": "guiso",
+  "aka": [
+   "porrusalda",
+   "sopa de puerros",
+   "puerros con patatas",
+   "porrusalda con bacalao"
+  ],
+  "summary": "Sopa de puerro, patata y zanahoria con buen aceite, a veces con bacalao: sencilla, de casa y de invierno.",
+  "what": "La porrusalda es una sopa vasca de puerros, patata cascada y zanahoria cocidas en agua o caldo con aceite de oliva y ajo. La patata suelta su almidón y espesa ligeramente el caldo. Muchas casas le añaden bacalao desmigado al final, y otras la hacen con algo de calabaza.\n\nEs un plato humilde que depende de la calidad del puerro y del aceite y de no pasar la verdura. Cada casa la hace a su manera.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Puerros (parte blanca y algo de verde) en rodajas",
+     "600 g"
+    ],
+    [
+     "Patatas cascadas",
+     "400 g"
+    ],
+    [
+     "Zanahoria en rodajas",
+     "1"
+    ],
+    [
+     "Ajo",
+     "2 dientes"
+    ],
+    [
+     "Aceite de oliva",
+     "60 ml"
+    ],
+    [
+     "Agua o caldo",
+     "1,2 l"
+    ],
+    [
+     "Bacalao desalado desmigado (opcional)",
+     "150 g"
+    ]
+   ],
+   "steps": [
+    "Rehoga el ajo y el puerro en el aceite a fuego suave 8–10 minutos, sin que tomen color.",
+    "Añade la zanahoria y la patata cascada y rehoga un minuto.",
+    "Moja con el agua o el caldo y cuece 25–30 minutos a fuego suave.",
+    "Si lleva bacalao, añádelo los últimos 5 minutos.",
+    "Ajusta de sal y sirve con un hilo de aceite crudo."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Cocción",
+    "ratio": "25–30 minutos",
+    "note": "Patata tierna."
+   },
+   {
+    "use": "Puerro por ración",
+    "ratio": "150 g",
+    "note": ""
+   },
+   {
+    "use": "Bacalao",
+    "ratio": "5 minutos al final",
+    "note": "Opcional."
+   },
+   {
+    "use": "Caldo",
+    "ratio": "300 ml por ración",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "cebolla-y-ajo",
+    "name": "Puerro",
+    "note": "La familia de la cebolla."
+   },
+   {
+    "id": "bacalao",
+    "name": "Con bacalao",
+    "note": "Desmigado al final."
+   },
+   {
+    "id": "caldo-de-verduras",
+    "name": "Caldo de verduras",
+    "note": "Para mojar."
+   },
+   {
+    "id": "patata-y-boniato",
+    "name": "Patata",
+    "note": "Cascada para espesar."
+   }
+  ],
+  "keys": [
+   "Puerro rehogado sin color.",
+   "Patata cascada para espesar.",
+   "Buen aceite al final.",
+   "Bacalao solo al final.",
+   "Cada casa, su porrusalda."
+  ],
+  "errors": [
+   {
+    "p": "Sopa aguada",
+    "fix": "Patata cortada a cuchillo. Cáscala."
+   },
+   {
+    "p": "Puerro amargo",
+    "fix": "Dorado de más. Rehoga suave."
+   },
+   {
+    "p": "Bacalao seco",
+    "fix": "Añadido pronto. Al final."
+   }
+  ],
+  "history": "La porrusalda es una sopa tradicional de la cocina vasca y navarra, de casa y de invierno.",
+  "uses": [
+   "Platos de cuchara",
+   "Menús de invierno",
+   "Cocina de aprovechamiento"
+  ],
+  "keep": "3 días en frío; sin bacalao se congela bien.",
+  "pro": "Base hecha en tanda; bacalao por ración al regenerar.",
+  "related": [
+   "cebolla-y-ajo",
+   "bacalao",
+   "caldo-de-verduras",
+   "patata-y-boniato",
+   "marmitako",
+   "aceite-de-oliva"
+  ]
+ },
+ {
+  "id": "patatas-a-la-riojana",
+  "name": "Patatas a la riojana",
+  "name_en": "Riojan potatoes with chorizo",
+  "cat": "tecnicas",
+  "group": "Clásicos españoles",
+  "technique": "guiso",
+  "aka": [
+   "patatas a la riojana",
+   "patatas con chorizo",
+   "guiso de patatas con chorizo"
+  ],
+  "summary": "Patata cascada guisada con chorizo, pimiento choricero, cebolla y pimentón hasta que el caldo se espesa y se vuelve rojo.",
+  "what": "Las patatas a la riojana son un guiso de patata cascada con chorizo, cebolla, ajo, carne de pimiento choricero y pimentón, cocido en agua hasta que la patata está tierna y el caldo, espeso y rojizo por el almidón y la grasa del chorizo. Algunas casas añaden un poco de guindilla.\n\nEs un plato humilde de La Rioja, con primos en todo el norte. La clave es cascar la patata y no remover demasiado. Cada casa tiene la suya.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Patatas cascadas",
+     "1 kg"
+    ],
+    [
+     "Chorizo para guisar en rodajas",
+     "200 g"
+    ],
+    [
+     "Cebolla y pimiento verde",
+     "1 y 1"
+    ],
+    [
+     "Ajo",
+     "2 dientes"
+    ],
+    [
+     "Carne de pimiento choricero y pimentón",
+     "1 cucharada y 5 g"
+    ],
+    [
+     "Guindilla (opcional)",
+     "1"
+    ],
+    [
+     "Aceite de oliva",
+     "40 ml"
+    ],
+    [
+     "Agua",
+     "1,2 l"
+    ]
+   ],
+   "steps": [
+    "Pocha la cebolla, el pimiento y el ajo en el aceite 10 minutos.",
+    "Añade el chorizo y rehoga hasta que suelte la grasa.",
+    "Aparta, añade el pimentón y el choricero y, enseguida, las patatas.",
+    "Moja con agua hasta cubrir y cuece a fuego suave 25–30 minutos, moviendo la cazuela sin remover.",
+    "Ajusta de sal y deja reposar 5 minutos."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Patata por ración",
+    "ratio": "250 g",
+    "note": "Cascada."
+   },
+   {
+    "use": "Chorizo",
+    "ratio": "50 g por ración",
+    "note": ""
+   },
+   {
+    "use": "Cocción",
+    "ratio": "25–30 minutos",
+    "note": "A fuego suave."
+   },
+   {
+    "use": "Pimentón",
+    "ratio": "Fuera del fuego",
+    "note": "Que no se queme."
+   }
+  ],
+  "variants": [
+   {
+    "id": "patata-y-boniato",
+    "name": "Patata",
+    "note": "Cascada para espesar."
+   },
+   {
+    "id": "pimenton-y-noras",
+    "name": "Pimentón y choricero",
+    "note": "Color y sabor."
+   },
+   {
+    "id": "guisos-largos",
+    "name": "Guisos",
+    "note": "La lógica del guiso."
+   },
+   {
+    "id": "sobrasada-y-embutidos",
+    "name": "Embutidos",
+    "note": "Para guisar."
+   }
+  ],
+  "keys": [
+   "Patata cascada.",
+   "Pimentón fuera del fuego.",
+   "Mover la cazuela, no remover.",
+   "Reposo breve.",
+   "Cada casa, sus patatas."
+  ],
+  "errors": [
+   {
+    "p": "Caldo aguado",
+    "fix": "Patata cortada a cuchillo. Cáscala."
+   },
+   {
+    "p": "Amargo",
+    "fix": "Pimentón quemado. Fuera del fuego."
+   },
+   {
+    "p": "Patatas deshechas",
+    "fix": "Removido o mucho tiempo. Mueve la cazuela."
+   }
+  ],
+  "history": "Las patatas a la riojana son un guiso tradicional de La Rioja, muy extendido por todo el norte de España.",
+  "uses": [
+   "Platos de cuchara",
+   "Menús de mediodía"
+  ],
+  "keep": "3 días en frío; mejor al día siguiente.",
+  "pro": "Guiso en tanda; regenera suave con un poco de agua.",
+  "related": [
+   "patata-y-boniato",
+   "pimenton-y-noras",
+   "guisos-largos",
+   "sobrasada-y-embutidos",
+   "marmitako",
+   "pimientos"
+  ]
+ },
+ {
+  "id": "gazpachuelo",
+  "name": "Gazpachuelo",
+  "name_en": "Gazpachuelo",
+  "cat": "tecnicas",
+  "group": "Cocina andaluza",
+  "technique": "emulsion",
+  "aka": [
+   "gazpachuelo",
+   "gazpachuelo malagueño",
+   "sopa de mayonesa",
+   "sopa de pescado con mayonesa"
+  ],
+  "summary": "Sopa caliente de caldo de pescado, patata y pescado, ligada al final con mayonesa añadida poco a poco sin que hierva.",
+  "what": "El gazpachuelo es una sopa caliente de la costa de Málaga: caldo de pescado con patata cocida y trozos de pescado o marisco, que se liga al final con una [[mayonesa]] desleída con un poco del caldo caliente, añadiendo el resto del caldo poco a poco para que no se corte. Queda blanca, cremosa y algo ácida.\n\nComo toda [[emulsiones|emulsión]] con huevo, no puede hervir una vez ligada. En restauración, la mayonesa se hace con huevo pasteurizado. Cada casa decide si lleva pescado, almejas o gambas.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Caldo de pescado",
+     "1,2 l"
+    ],
+    [
+     "Patatas en rodajas",
+     "400 g"
+    ],
+    [
+     "Pescado blanco en trozos (merluza, rape)",
+     "300 g"
+    ],
+    [
+     "Mayonesa con huevo pasteurizado",
+     "200 g"
+    ],
+    [
+     "Zumo de limón o vinagre",
+     "al gusto"
+    ],
+    [
+     "Sal",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Cuece las patatas en el caldo 15 minutos.",
+    "Añade el pescado y cuece 3–5 minutos; aparta del fuego.",
+    "Pon la mayonesa en un bol y añade un cazo de caldo caliente poco a poco, batiendo.",
+    "Vierte la mezcla en la olla fuera del fuego, removiendo, sin que hierva.",
+    "Ajusta de sal y ácido y sirve enseguida."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Mayonesa",
+    "ratio": "50 g por ración",
+    "note": "Templada antes."
+   },
+   {
+    "use": "Temperatura al ligar",
+    "ratio": "Por debajo de 75 °C",
+    "note": "Si hierve, se corta."
+   },
+   {
+    "use": "Patata",
+    "ratio": "15 minutos en el caldo",
+    "note": ""
+   },
+   {
+    "use": "Pescado",
+    "ratio": "3–5 minutos",
+    "note": "En trozos."
+   }
+  ],
+  "variants": [
+   {
+    "id": "mayonesa",
+    "name": "Mayonesa",
+    "note": "La ligazón."
+   },
+   {
+    "id": "fumet",
+    "name": "Caldo de pescado",
+    "note": "La base."
+   },
+   {
+    "id": "emulsiones",
+    "name": "Emulsiones",
+    "note": "Por qué se corta."
+   },
+   {
+    "id": "merluza-y-pescadilla",
+    "name": "Merluza",
+    "note": "Pescado habitual."
+   }
+  ],
+  "keys": [
+   "Templar la mayonesa con caldo antes.",
+   "Fuera del fuego y sin hervir.",
+   "Huevo pasteurizado.",
+   "Servir enseguida.",
+   "Cada casa, su gazpachuelo."
+  ],
+  "errors": [
+   {
+    "p": "Sopa cortada",
+    "fix": "Ha hervido. Liga fuera del fuego."
+   },
+   {
+    "p": "Sopa sosa",
+    "fix": "Caldo flojo. Usa un buen caldo de pescado."
+   },
+   {
+    "p": "Grumos de mayonesa",
+    "fix": "Mayonesa sin templar. Deslíela antes."
+   }
+  ],
+  "history": "El gazpachuelo es una sopa tradicional de pescadores de Málaga, de las pocas sopas calientes ligadas con mayonesa.",
+  "uses": [
+   "Sopas calientes",
+   "Menús de cocina andaluza"
+  ],
+  "keep": "Al momento; el caldo con patata, 2 días en frío.",
+  "pro": "Caldo con patata hecho; pescado y ligazón por ración.",
+  "related": [
+   "mayonesa",
+   "fumet",
+   "emulsiones",
+   "merluza-y-pescadilla",
+   "patata-y-boniato",
+   "cadena-de-frio"
+  ]
+ },
+ {
+  "id": "trinxat",
+  "name": "Trinxat",
+  "name_en": "Cabbage and potato cake",
+  "cat": "tecnicas",
+  "group": "Cocina catalana",
+  "technique": "plancha",
+  "aka": [
+   "trinxat",
+   "trinxat de la Cerdanya",
+   "col y patata",
+   "torta de col y patata"
+  ],
+  "summary": "Col de invierno y patata cocidas, chafadas y doradas en sartén como una torta, con ajo y panceta crujiente.",
+  "what": "El trinxat es un plato de la montaña catalana: col de invierno, a poder ser después de las heladas, y patata, cocidas juntas, escurridas y chafadas con un tenedor, y doradas en sartén con ajo y aceite o grasa de cerdo como una torta. Se sirve con tiras de panceta o tocino crujiente por encima.\n\nEs cocina de aprovechamiento y de frío. Lo importante es escurrir bien la verdura para que la torta se dore y no quede aguada. Cada casa lo hace a su manera.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Col rizada o de invierno",
+     "800 g"
+    ],
+    [
+     "Patatas",
+     "600 g"
+    ],
+    [
+     "Ajo",
+     "3 dientes"
+    ],
+    [
+     "Panceta o tocino en tiras",
+     "150 g"
+    ],
+    [
+     "Aceite de oliva o manteca",
+     "60 ml"
+    ],
+    [
+     "Sal",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Cuece la col troceada y las patatas en agua con sal hasta que estén tiernas, 25–30 minutos.",
+    "Escúrrelas muy bien y cháfalas con un tenedor; deja que suelten vapor.",
+    "Fríe la panceta en la sartén hasta que esté crujiente y resérvala; dora el ajo en esa grasa.",
+    "Añade la mezcla de col y patata, aplana y dora a fuego medio 5–6 minutos; dale la vuelta con un plato y dora la otra cara.",
+    "Sirve con la panceta crujiente por encima."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Col y patata",
+    "ratio": "Partes parecidas en peso",
+    "note": ""
+   },
+   {
+    "use": "Dorado",
+    "ratio": "5–6 minutos por cara",
+    "note": "Fuego medio."
+   },
+   {
+    "use": "Panceta",
+    "ratio": "35–40 g por ración",
+    "note": "Crujiente."
+   },
+   {
+    "use": "Ración",
+    "ratio": "300 g",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "coles-y-brasicas",
+    "name": "Col de invierno",
+    "note": "Mejor tras las heladas."
+   },
+   {
+    "id": "patata-chafada-brasa",
+    "name": "Patata chafada",
+    "note": "Otra patata aplastada y dorada."
+   },
+   {
+    "id": "cocina-de-aprovechamiento",
+    "name": "Aprovechamiento",
+    "note": "Cocina de montaña."
+   },
+   {
+    "id": "tortilla-y-huevos-de-brunch",
+    "name": "Tortilla",
+    "note": "Dar la vuelta con plato."
+   }
+  ],
+  "keys": [
+   "Escurrir muy bien la verdura.",
+   "Chafar con tenedor, no triturar.",
+   "Grasa caliente para dorar.",
+   "Dar la vuelta con un plato.",
+   "Cada casa, su trinxat."
+  ],
+  "errors": [
+   {
+    "p": "Torta que no se dora",
+    "fix": "Verdura húmeda. Escurre y deja que suelte vapor."
+   },
+   {
+    "p": "Se rompe al dar la vuelta",
+    "fix": "Poco dorada abajo. Espera más."
+   },
+   {
+    "p": "Pastoso",
+    "fix": "Triturado. Chafa con tenedor."
+   }
+  ],
+  "history": "El trinxat es un plato tradicional de la Cerdanya y otras comarcas de montaña de Cataluña y Andorra.",
+  "uses": [
+   "Guarniciones de invierno",
+   "Platos de mediodía",
+   "Cocina de aprovechamiento"
+  ],
+  "keep": "La mezcla cocida, 2 días en frío; dorado, al momento.",
+  "pro": "Mezcla cocida y escurrida; dora en sartenes individuales al pedido.",
+  "related": [
+   "coles-y-brasicas",
+   "patata-chafada-brasa",
+   "cocina-de-aprovechamiento",
+   "tortilla-y-huevos-de-brunch",
+   "patata-y-boniato",
+   "mantecas-y-grasas-animales"
+  ]
+ },
+ {
+  "id": "descongelar-y-atemperar",
+  "name": "Descongelar y atemperar",
+  "name_en": "Thawing and tempering",
+  "cat": "tecnicas",
+  "group": "Conservar y transformar",
+  "aka": [
+   "descongelar",
+   "descongelación",
+   "atemperar",
+   "sacar de la cámara",
+   "descongelar pescado",
+   "descongelar carne"
+  ],
+  "summary": "Pasar del congelador a la sartén sin riesgos ni pérdida de calidad: descongelar en frío y atemperar lo justo antes de cocinar.",
+  "what": "Descongelar bien es tan importante como congelar bien. Lo más seguro es hacerlo en la cámara, a 0–4 °C, despacio: el producto nunca entra en temperaturas de riesgo y pierde menos jugo. Para piezas pequeñas sirve el agua fría, con el producto en bolsa cerrada y el agua renovada. A temperatura ambiente no se descongela nada: la superficie pasa horas en la zona templada mientras el centro sigue helado. Ver [[cadena-de-frio]].\n\nAtemperar es otra cosa: sacar de la cámara una pieza ya descongelada un rato antes de cocinarla para que el centro no esté helado y el punto sea parejo. Se hace por poco tiempo y con piezas que se van a cocinar enseguida.",
+  "method": [
+   "Planifica: pasa el producto del congelador a la cámara con tiempo, en bandeja con rejilla para que no quede en su agua.",
+   "Piezas pequeñas con prisa: en bolsa cerrada, sumergidas en agua fría que se cambia cada 30 minutos.",
+   "El pescado para crudo, siempre descongelado en la cámara.",
+   "Seca bien el producto descongelado antes de cocinarlo.",
+   "Atempera las carnes 20–60 minutos según tamaño, tapadas y lejos del calor, solo si se cocinan enseguida."
+  ],
+  "ratios": [
+   {
+    "use": "Descongelado en cámara",
+    "ratio": "0–4 °C, unas 24 horas por cada 2 kg",
+    "note": "Piezas grandes, más."
+   },
+   {
+    "use": "Agua fría",
+    "ratio": "Cambiar el agua cada 30 minutos",
+    "note": "Producto en bolsa cerrada."
+   },
+   {
+    "use": "Atemperado de carnes",
+    "ratio": "20–60 minutos fuera de la cámara",
+    "note": "Según grosor."
+   },
+   {
+    "use": "Recongelar",
+    "ratio": "Solo si se ha cocinado",
+    "note": "Nunca crudo descongelado."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cadena-de-frio",
+    "name": "Cadena de frío",
+    "note": "Temperaturas de riesgo."
+   },
+   {
+    "id": "punto-de-la-carne",
+    "name": "Punto de la carne",
+    "note": "Por qué atemperar."
+   },
+   {
+    "id": "ceviche-y-crudos",
+    "name": "Pescado para crudo",
+    "note": "Congelado y descongelado en frío."
+   },
+   {
+    "id": "reposos-y-regeneracion",
+    "name": "Regeneración",
+    "note": "Volver a calentar."
+   }
+  ],
+  "keys": [
+   "Descongelar en la cámara, nunca a temperatura ambiente.",
+   "Rejilla para que no quede en su agua.",
+   "Secar antes de cocinar.",
+   "Atemperar poco tiempo y cocinar enseguida.",
+   "No recongelar crudo lo descongelado."
+  ],
+  "errors": [
+   {
+    "p": "Pieza que suelta mucha agua",
+    "fix": "Descongelada deprisa o en su agua. Despacio en cámara y sobre rejilla."
+   },
+   {
+    "p": "Centro aún congelado",
+    "fix": "Poco tiempo. Calcula 24 horas por cada 2 kg."
+   },
+   {
+    "p": "Superficie gris y pegajosa",
+    "fix": "Descongelada a temperatura ambiente. En cámara siempre."
+   }
+  ],
+  "history": "Con la congelación generalizada en las cocinas, descongelar en frío se convirtió en una de las rutinas básicas de cualquier partida.",
+  "uses": [
+   "Carnes y pescados congelados",
+   "Pescado para crudo",
+   "Producción por adelantado"
+  ],
+  "keep": "Descongelado en cámara, cocinar en 1–2 días según el producto.",
+  "pro": "Pasa al frío el producto del día siguiente al cerrar el servicio, etiquetado con la hora.",
+  "related": [
+   "cadena-de-frio",
+   "punto-de-la-carne",
+   "ceviche-y-crudos",
+   "reposos-y-regeneracion",
+   "sellado-y-reposo",
+   "porcionado-y-racionado"
+  ]
+ },
+ {
+  "id": "cazuelas-de-barro-y-hierro",
+  "name": "Cazuelas de barro y sartenes de hierro",
+  "name_en": "Clay pots and iron pans",
+  "cat": "tecnicas",
+  "group": "Calor y punto",
+  "aka": [
+   "cazuela de barro",
+   "curar una cazuela",
+   "sartén de hierro",
+   "curar sartén",
+   "paella de acero",
+   "wok de hierro"
+  ],
+  "summary": "Cómo curar, usar y cuidar el barro, el hierro y el acero para que duren, no se peguen y cocinen como deben.",
+  "what": "La cazuela de barro guarda y reparte el calor con suavidad: ideal para guisos, arroces al horno y platos que se sirven en ella. Teme los cambios bruscos de temperatura y el fuego directo muy fuerte, y conviene curarla antes del primer uso. Las sartenes de hierro colado y de acero al carbono, y las paellas y woks de acero, aguantan calor muy alto y doran como ninguna, pero se oxidan si no se cuidan: se curan con capas finas de aceite que el calor convierte en una película antiadherente.\n\nCon un buen cuidado, estos utensilios duran décadas y mejoran con el uso.",
+  "method": [
+   "Barro nuevo: sumérgelo en agua 12 horas, sécalo, frota el fondo con ajo o aceite y caliéntalo poco a poco con agua dentro.",
+   "Usa el barro con difusor en fuego directo, sube el calor despacio y nunca lo pongas caliente sobre una superficie fría o mojada.",
+   "Hierro y acero: lava, seca al fuego, unta una capa muy fina de aceite y calienta hasta que humee; repite varias veces.",
+   "Tras cada uso, lava con agua caliente y poco o ningún jabón, seca al fuego y unta una película fina de aceite.",
+   "Evita guisos muy ácidos y largos en hierro sin curar: desgastan la capa."
+  ],
+  "ratios": [
+   {
+    "use": "Remojo del barro nuevo",
+    "ratio": "12 horas",
+    "note": "Antes del primer uso."
+   },
+   {
+    "use": "Curado del hierro en horno",
+    "ratio": "230–250 °C, 1 hora",
+    "note": "Capa muy fina de aceite."
+   },
+   {
+    "use": "Capas de curado",
+    "ratio": "3–4",
+    "note": "Cada una fina."
+   },
+   {
+    "use": "Barro en horno",
+    "ratio": "Meter con el horno frío o templado",
+    "note": "Sin cambios bruscos."
+   }
+  ],
+  "variants": [
+   {
+    "id": "plancha-y-sarten",
+    "name": "Plancha y sartén",
+    "note": "Uso del calor por contacto."
+   },
+   {
+    "id": "arroces",
+    "name": "Paella",
+    "note": "Acero para arroces."
+   },
+   {
+    "id": "salteado-y-wok",
+    "name": "Wok",
+    "note": "Acero y calor máximo."
+   },
+   {
+    "id": "horno-de-lena",
+    "name": "Barro al horno",
+    "note": "Guisos y arroces."
+   }
+  ],
+  "keys": [
+   "Barro: sin cambios bruscos de temperatura.",
+   "Hierro: seco y aceitado siempre.",
+   "Capas de aceite muy finas al curar.",
+   "Poco o nada de jabón en el hierro.",
+   "Mejoran con el uso."
+  ],
+  "errors": [
+   {
+    "p": "Cazuela de barro agrietada",
+    "fix": "Cambio brusco de temperatura. Calienta poco a poco y usa difusor."
+   },
+   {
+    "p": "Sartén oxidada",
+    "fix": "Guardada húmeda. Frota, cura de nuevo y sécala siempre al fuego."
+   },
+   {
+    "p": "Capa pegajosa",
+    "fix": "Demasiado aceite al curar. Capas muy finas."
+   }
+  ],
+  "history": "La cazuela de barro es uno de los utensilios más antiguos de la cocina mediterránea; las sartenes y paellas de hierro y acero han sido las de toda la vida en las cocinas españolas.",
+  "uses": [
+   "Guisos y arroces al horno",
+   "Dorados y sellados",
+   "Paellas y salteados"
+  ],
+  "keep": "Barro, seco y ventilado; hierro y acero, secos y con una película de aceite.",
+  "pro": "Ten un juego curado para cada uso y no lo metas en el lavavajillas.",
+  "related": [
+   "plancha-y-sarten",
+   "arroces",
+   "salteado-y-wok",
+   "horno-de-lena",
+   "sellado-y-reposo",
+   "guisos-largos"
+  ]
+ },
+ {
+  "id": "afilar-y-cuidar-cuchillos",
+  "name": "Afilar y cuidar los cuchillos",
+  "name_en": "Sharpening and caring for knives",
+  "cat": "tecnicas",
+  "group": "Conservar y transformar",
+  "aka": [
+   "afilar",
+   "piedra de afilar",
+   "chaira",
+   "asentar el filo",
+   "cuidado de cuchillos",
+   "ángulo de afilado"
+  ],
+  "summary": "Piedras para recuperar el filo, chaira para mantenerlo y buenos hábitos para que dure: un cuchillo afilado es más seguro.",
+  "what": "Un cuchillo afilado corta con poca fuerza, no resbala y daña menos el producto; uno romo obliga a apretar y es el que más corta las manos. Afilar es quitar metal para rehacer el filo, con piedras de distinto grano: una gruesa para recuperar un filo perdido y una fina para pulirlo. Asentar con la chaira no afila: endereza el filo doblado durante el trabajo y se hace a menudo.\n\nEl ángulo depende del cuchillo: los de estilo japonés, más finos, llevan ángulos más cerrados que los europeos. Ver [[cortes-de-cuchillo]].",
+  "method": [
+   "Remoja la piedra al agua el tiempo que indique el fabricante y apóyala sobre un paño húmedo.",
+   "Mantén el ángulo constante y pasa toda la hoja, del talón a la punta, primero por una cara hasta notar una rebaba en el filo y luego por la otra.",
+   "Pasa a la piedra de grano fino y repite con menos presión para pulir.",
+   "Asienta con la chaira unas pasadas alternas antes de cada sesión de corte.",
+   "Lava a mano, seca enseguida y guarda en soporte o funda; corta sobre madera o plástico."
+  ],
+  "ratios": [
+   {
+    "use": "Ángulo de cuchillos europeos",
+    "ratio": "18–20 grados por cara",
+    "note": "Más resistente."
+   },
+   {
+    "use": "Ángulo de cuchillos japoneses",
+    "ratio": "12–15 grados por cara",
+    "note": "Más fino."
+   },
+   {
+    "use": "Grano para recuperar filo",
+    "ratio": "400–1000",
+    "note": "Desbaste."
+   },
+   {
+    "use": "Grano para pulir",
+    "ratio": "3000–6000",
+    "note": "Acabado."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cortes-de-cuchillo",
+    "name": "Cortes de cuchillo",
+    "note": "Técnica de corte."
+   },
+   {
+    "id": "fileteado-de-pescado",
+    "name": "Fileteado",
+    "note": "Cuchillo flexible."
+   },
+   {
+    "id": "pulir-y-limpiar-carnes",
+    "name": "Pulir carnes",
+    "note": "Filo fino."
+   },
+   {
+    "id": "sushi-y-sashimi",
+    "name": "Corte de sashimi",
+    "note": "Filo perfecto."
+   }
+  ],
+  "keys": [
+   "Ángulo constante: es todo el secreto.",
+   "Chaira para mantener, piedra para afilar.",
+   "Tabla de madera o plástico, nunca vidrio ni piedra.",
+   "Lavar a mano y secar enseguida.",
+   "Un cuchillo afilado es más seguro."
+  ],
+  "errors": [
+   {
+    "p": "Filo que no mejora",
+    "fix": "Ángulo cambiante. Mantén la mano fija y sigue hasta notar rebaba."
+   },
+   {
+    "p": "Filo que se pierde enseguida",
+    "fix": "Tabla dura o golpes. Cambia de tabla y asienta con chaira."
+   },
+   {
+    "p": "Manchas de óxido",
+    "fix": "Guardado húmedo. Seca siempre."
+   }
+  ],
+  "history": "Afilar es un oficio tan antiguo como el cuchillo; la tradición japonesa de piedras al agua se ha extendido en las cocinas profesionales de todo el mundo.",
+  "uses": [
+   "Mantenimiento diario",
+   "Preparación de cortes finos",
+   "Seguridad en la partida"
+  ],
+  "keep": "Cuchillos secos en soporte o funda; piedras secas y planas.",
+  "pro": "Asienta cada día y afila con piedra una vez por semana o cuando haga falta.",
+  "related": [
+   "cortes-de-cuchillo",
+   "fileteado-de-pescado",
+   "pulir-y-limpiar-carnes",
+   "sushi-y-sashimi",
+   "porcionado-y-racionado",
+   "deshuesar-y-enrollar-piezas"
+  ]
+ },
+ {
+  "id": "feijoada",
+  "name": "Feijoada",
+  "name_en": "Feijoada",
+  "cat": "tecnicas",
+  "group": "Cocina de América",
+  "technique": "guiso",
+  "aka": [
+   "feijoada",
+   "frijoles negros con cerdo",
+   "feijoada brasileña",
+   "farofa"
+  ],
+  "summary": "Alubias negras guisadas con carnes de cerdo saladas y ahumadas, servidas con arroz, col salteada, harina de mandioca tostada y naranja.",
+  "what": "La feijoada brasileña es un guiso de alubias negras con varias carnes de cerdo, saladas, curadas y ahumadas (costilla, panceta, embutidos, a veces orejas y pies), cocido lentamente hasta que el caldo espesa. Se sirve con arroz blanco, col en tiras salteada con ajo, farofa (harina de mandioca tostada en mantequilla o grasa) y gajos de naranja que aligeran el plato.\n\nEn Portugal también hay feijoadas, con alubias blancas o rojas. Es un plato de fiesta y de casa, y cada familia elige sus carnes.",
+  "base": {
+   "for": "8 raciones",
+   "items": [
+    [
+     "Alubias negras remojadas 12 horas",
+     "600 g en seco"
+    ],
+    [
+     "Costilla y panceta saladas o curadas, desaladas",
+     "600 g"
+    ],
+    [
+     "Embutido ahumado",
+     "300 g"
+    ],
+    [
+     "Cebolla, ajo y laurel",
+     "2, 6 dientes y 2 hojas"
+    ],
+    [
+     "Arroz blanco, col en tiras y naranja",
+     "para servir"
+    ],
+    [
+     "Harina de mandioca y mantequilla para la farofa",
+     "200 g y 40 g"
+    ]
+   ],
+   "steps": [
+    "Desala las carnes saladas en agua fría 12–24 horas, cambiando el agua.",
+    "Cuece las alubias con el laurel y las carnes más duras a fuego suave 1,5 horas.",
+    "Sofríe la cebolla y el ajo, añade un cazo de alubias, cháfalas y devuelve todo a la olla con el embutido.",
+    "Cuece 45–60 minutos más hasta que el caldo esté espeso; ajusta de sal.",
+    "Farofa: tuesta la harina de mandioca en la mantequilla hasta que huela; sirve con arroz, col salteada y naranja."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Alubias",
+    "ratio": "75 g en seco por ración",
+    "note": ""
+   },
+   {
+    "use": "Carnes",
+    "ratio": "110–120 g por ración",
+    "note": "Variadas."
+   },
+   {
+    "use": "Cocción",
+    "ratio": "2–2,5 horas a fuego suave",
+    "note": ""
+   },
+   {
+    "use": "Desalado de carnes",
+    "ratio": "12–24 horas",
+    "note": "Cambiando el agua."
+   }
+  ],
+  "variants": [
+   {
+    "id": "fabada-y-potajes",
+    "name": "Fabada",
+    "note": "La prima asturiana."
+   },
+   {
+    "id": "legumbres",
+    "name": "Alubias",
+    "note": "Remojo y cocción."
+   },
+   {
+    "id": "cassoulet-y-confit",
+    "name": "Cassoulet",
+    "note": "Otra cazuela de alubias y carnes."
+   },
+   {
+    "id": "yuca-y-tuberculos-tropicales",
+    "name": "Mandioca",
+    "note": "Para la farofa."
+   }
+  ],
+  "keys": [
+   "Desalar bien las carnes.",
+   "Chafar parte de las alubias para espesar.",
+   "Fuego suave y largo.",
+   "Naranja y col para aligerar.",
+   "Cada familia, sus carnes."
+  ],
+  "errors": [
+   {
+    "p": "Demasiado salada",
+    "fix": "Carnes poco desaladas. Más remojo."
+   },
+   {
+    "p": "Caldo aguado",
+    "fix": "Sin chafar alubias. Chafa un cazo."
+   },
+   {
+    "p": "Alubias duras",
+    "fix": "Poco tiempo o sal pronto. Más tiempo y sal al final."
+   }
+  ],
+  "history": "La feijoada es considerada uno de los platos nacionales de Brasil; en Portugal existen feijoadas propias con otras alubias.",
+  "uses": [
+   "Platos de fiesta",
+   "Comidas para compartir"
+  ],
+  "keep": "4–5 días en frío; se congela bien.",
+  "pro": "Guisa la víspera; guarniciones al servicio.",
+  "related": [
+   "fabada-y-potajes",
+   "legumbres",
+   "cassoulet-y-confit",
+   "yuca-y-tuberculos-tropicales",
+   "desalado-y-remojo",
+   "citricos"
+  ]
+ },
+ {
+  "id": "bacalhau-a-bras",
+  "name": "Bacalao a Brás",
+  "name_en": "Bacalhau à Brás",
+  "cat": "tecnicas",
+  "group": "Cocina del mundo",
+  "technique": "salteado",
+  "aka": [
+   "bacalhau à Brás",
+   "bacalao dorado",
+   "bacalao con patatas paja y huevo",
+   "cocina portuguesa"
+  ],
+  "summary": "Bacalao desmigado con cebolla pochada, patatas paja y huevo cuajado cremoso: el revuelto de bacalao de Lisboa.",
+  "what": "El bacalao a Brás es un plato portugués muy popular: [[bacalao]] desalado y desmigado, salteado con cebolla pochada y ajo, mezclado con patatas cortadas muy finas en paja y fritas, y ligado al final con huevo batido que cuaja apenas, cremoso, como un revuelto. Se termina con perejil y aceitunas negras.\n\nLa clave es el punto del huevo: fuera del fuego antes de que cuaje del todo. Cada casa tiene su versión; hay una parecida en España, el bacalao dorado.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Bacalao desalado y desmigado",
+     "400 g"
+    ],
+    [
+     "Patatas en paja muy fina, fritas",
+     "400 g en crudo"
+    ],
+    [
+     "Cebolla en juliana fina",
+     "2"
+    ],
+    [
+     "Ajo",
+     "2 dientes"
+    ],
+    [
+     "Huevos",
+     "6"
+    ],
+    [
+     "Aceite de oliva",
+     "60 ml"
+    ],
+    [
+     "Perejil y aceitunas negras",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Fríe las patatas en paja en aceite a 170–180 °C hasta dorar; escurre y sala poco.",
+    "Pocha la cebolla y el ajo en el aceite hasta que estén blandos y dorados.",
+    "Añade el bacalao y saltea 2–3 minutos.",
+    "Incorpora las patatas y, a fuego bajo, los huevos batidos; mezcla sin parar hasta que cuajen apenas.",
+    "Retira del fuego cuando esté cremoso y termina con perejil y aceitunas."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Patatas paja",
+    "ratio": "170–180 °C, 2–3 minutos",
+    "note": "Muy finas."
+   },
+   {
+    "use": "Huevos",
+    "ratio": "1,5 por ración",
+    "note": "Cremosos."
+   },
+   {
+    "use": "Bacalao",
+    "ratio": "100 g por ración",
+    "note": "Desalado."
+   },
+   {
+    "use": "Punto del huevo",
+    "ratio": "Retirar a 65–70 °C",
+    "note": "Sigue cuajando."
+   }
+  ],
+  "variants": [
+   {
+    "id": "bacalao",
+    "name": "Bacalao",
+    "note": "Desalado y migas."
+   },
+   {
+    "id": "tortilla-y-huevos-de-brunch",
+    "name": "Revueltos",
+    "note": "Punto del huevo."
+   },
+   {
+    "id": "guarniciones-de-patata",
+    "name": "Patatas fritas",
+    "note": "Para la paja."
+   },
+   {
+    "id": "bacalao-ajoarriero",
+    "name": "Ajoarriero",
+    "note": "Otro bacalao desmigado."
+   }
+  ],
+  "keys": [
+   "Patata paja muy fina y crujiente.",
+   "Cebolla bien pochada.",
+   "Huevo cremoso: fuera del fuego antes de tiempo.",
+   "Poca sal: el bacalao ya trae.",
+   "Cada casa, su versión."
+  ],
+  "errors": [
+   {
+    "p": "Huevo seco",
+    "fix": "Cuajado de más. Retira antes."
+   },
+   {
+    "p": "Patatas blandas",
+    "fix": "Fritas pronto o mezcladas antes. Fríe y mezcla al final."
+   },
+   {
+    "p": "Salado",
+    "fix": "Bacalao poco desalado. Desala más."
+   }
+  ],
+  "history": "El bacalao a Brás es un plato de la cocina popular de Lisboa, muy extendido en todo Portugal.",
+  "uses": [
+   "Platos de mediodía",
+   "Tapas",
+   "Cocina portuguesa"
+  ],
+  "keep": "Al momento. Bacalao desmigado y cebolla pochada, 2 días en frío.",
+  "pro": "Patatas paja fritas y cebolla pochada de antemano; montaje al pedido.",
+  "related": [
+   "bacalao",
+   "tortilla-y-huevos-de-brunch",
+   "guarniciones-de-patata",
+   "bacalao-ajoarriero",
+   "desalado-y-remojo",
+   "puntos-del-huevo"
+  ]
+ },
+ {
+  "id": "goulash",
+  "name": "Goulash",
+  "name_en": "Goulash",
+  "cat": "tecnicas",
+  "group": "Cocina del mundo",
+  "technique": "guiso",
+  "aka": [
+   "goulash",
+   "gulyás",
+   "pörkölt",
+   "guiso húngaro",
+   "estofado de pimentón"
+  ],
+  "summary": "Vacuno guisado con mucha cebolla y pimentón dulce, alcaravea y caldo: sopa espesa o estofado según la cantidad de líquido.",
+  "what": "El goulash es un guiso húngaro de carne de vacuno, mucha cebolla pochada y abundante pimentón dulce, con alcaravea, ajo y a veces tomate y pimiento. Con más caldo y patata es una sopa espesa; con poco líquido es un estofado de salsa roja y brillante. Se acompaña de pan, patata o pequeñas pastas.\n\nComo en todos los guisos con pimentón, el pimentón se añade fuera del fuego para que no se queme. Cada casa y cada región tienen su versión.",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Aguja o morcillo de vacuno en dados",
+     "1,2 kg"
+    ],
+    [
+     "Cebolla picada",
+     "700 g"
+    ],
+    [
+     "Pimentón dulce",
+     "25 g"
+    ],
+    [
+     "Alcaravea y ajo",
+     "3 g y 3 dientes"
+    ],
+    [
+     "Tomate y pimiento rojo",
+     "1 y 1"
+    ],
+    [
+     "Caldo o agua",
+     "800 ml (1,5 l para sopa)"
+    ],
+    [
+     "Patata en dados (para sopa)",
+     "500 g"
+    ],
+    [
+     "Manteca o aceite",
+     "50 g"
+    ]
+   ],
+   "steps": [
+    "Pocha la cebolla en la grasa a fuego medio 20–25 minutos, hasta dorar.",
+    "Aparta del fuego, añade el pimentón, la alcaravea y el ajo y remueve.",
+    "Incorpora la carne, el tomate y el pimiento, vuelve al fuego y deja que la carne suelte su jugo.",
+    "Moja con el caldo y cuece tapado a fuego suave 1,5–2 horas, hasta que la carne esté tierna.",
+    "Para sopa, añade la patata y más caldo los últimos 25 minutos; ajusta de sal."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Pimentón",
+    "ratio": "20 g por kg de carne",
+    "note": "Fuera del fuego."
+   },
+   {
+    "use": "Cebolla",
+    "ratio": "Más de la mitad del peso de la carne",
+    "note": "Espesa la salsa."
+   },
+   {
+    "use": "Cocción",
+    "ratio": "1,5–2 horas a fuego suave",
+    "note": ""
+   },
+   {
+    "use": "Ración",
+    "ratio": "200 g de carne",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "guisos-largos",
+    "name": "Guisos largos",
+    "note": "Fuego suave y tiempo."
+   },
+   {
+    "id": "pimenton-y-noras",
+    "name": "Pimentón",
+    "note": "Sin quemar."
+   },
+   {
+    "id": "estofados-al-vino",
+    "name": "Estofados",
+    "note": "Otra cocina de guisos."
+   },
+   {
+    "id": "especias",
+    "name": "Alcaravea",
+    "note": "Especia de la receta."
+   }
+  ],
+  "keys": [
+   "Mucha cebolla bien pochada.",
+   "Pimentón fuera del fuego.",
+   "Carne de guisar y tiempo.",
+   "Sopa o estofado según el líquido.",
+   "Cada casa, su goulash."
+  ],
+  "errors": [
+   {
+    "p": "Amargo",
+    "fix": "Pimentón quemado. Fuera del fuego."
+   },
+   {
+    "p": "Carne dura",
+    "fix": "Poco tiempo. Sigue hasta que esté tierna."
+   },
+   {
+    "p": "Salsa aguada",
+    "fix": "Poca cebolla o mucho líquido. Reduce."
+   }
+  ],
+  "history": "El goulash es un plato tradicional de Hungría, nacido como comida de pastores, que se extendió por toda Europa central.",
+  "uses": [
+   "Platos de invierno",
+   "Sopas espesas",
+   "Guisos para compartir"
+  ],
+  "keep": "4 días en frío; se congela bien.",
+  "pro": "Guisa la víspera; regenera con un poco de caldo.",
+  "related": [
+   "guisos-largos",
+   "pimenton-y-noras",
+   "estofados-al-vino",
+   "especias",
+   "cebolla-y-ajo",
+   "vaca-vieja-y-buey"
+  ]
+ },
+ {
+  "id": "chili-con-carne",
+  "name": "Chili con carne",
+  "name_en": "Chili con carne",
+  "cat": "tecnicas",
+  "group": "Cocina de América",
+  "technique": "guiso",
+  "aka": [
+   "chili con carne",
+   "chili",
+   "guiso de carne y chiles",
+   "chili tex-mex"
+  ],
+  "summary": "Carne de vacuno guisada con chiles secos hidratados, comino, cebolla y tomate, a veces con alubias: un guiso picante y profundo.",
+  "what": "El chili con carne es un guiso de la cocina del sur de Estados Unidos y la frontera con México: carne de vacuno, picada o en dados, guisada con una pasta de [[chiles-secos-y-frescos|chiles secos]] tostados e hidratados, comino, orégano, cebolla, ajo y tomate. Muchas versiones llevan alubias; otras lo consideran un error. Se sirve con arroz, pan de maíz, queso, cebolla o nata agria.\n\nEl sabor sale de los chiles bien tostados y de una cocción larga. Cada cocinero defiende su receta.",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Carne de vacuno picada gruesa o en dados pequeños",
+     "1 kg"
+    ],
+    [
+     "Chiles secos (ancho y uno ahumado)",
+     "4 y 1"
+    ],
+    [
+     "Cebolla y ajo",
+     "2 y 4 dientes"
+    ],
+    [
+     "Comino y orégano",
+     "8 g y 3 g"
+    ],
+    [
+     "Tomate triturado",
+     "400 g"
+    ],
+    [
+     "Caldo",
+     "500 ml"
+    ],
+    [
+     "Alubias rojas cocidas (opcional)",
+     "400 g"
+    ],
+    [
+     "Aceite",
+     "40 ml"
+    ]
+   ],
+   "steps": [
+    "Tuesta los chiles sin semillas unos segundos, hidrátalos en agua caliente 20 minutos y tritúralos con un poco de esa agua.",
+    "Dora la carne por tandas en el aceite y resérvala.",
+    "Pocha la cebolla y el ajo, añade el comino y el orégano unos segundos y la pasta de chile.",
+    "Devuelve la carne, añade el tomate y el caldo y cuece a fuego suave 1,5–2 horas.",
+    "Añade las alubias los últimos 20 minutos si las usas; ajusta de sal."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Cocción",
+    "ratio": "1,5–2 horas",
+    "note": "A fuego suave."
+   },
+   {
+    "use": "Carne picada",
+    "ratio": "70 °C en el centro o más",
+    "note": "Guisada, siempre hecha."
+   },
+   {
+    "use": "Chiles",
+    "ratio": "4–5 por kg de carne",
+    "note": "Según picante."
+   },
+   {
+    "use": "Ración",
+    "ratio": "250 g",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "chiles-secos-y-frescos",
+    "name": "Chiles",
+    "note": "Tostar e hidratar."
+   },
+   {
+    "id": "chiles-y-salsas-mexicanas",
+    "name": "Salsas mexicanas",
+    "note": "Técnica de chiles."
+   },
+   {
+    "id": "guisos-largos",
+    "name": "Guisos",
+    "note": "Fuego suave."
+   },
+   {
+    "id": "legumbres",
+    "name": "Con alubias",
+    "note": "Opcional."
+   }
+  ],
+  "keys": [
+   "Chiles tostados segundos, sin quemar.",
+   "Dorar la carne por tandas.",
+   "Especias fritas antes del líquido.",
+   "Cocción larga y suave.",
+   "Cada cocinero, su chili."
+  ],
+  "errors": [
+   {
+    "p": "Amargo",
+    "fix": "Chiles quemados. Tuesta solo segundos."
+   },
+   {
+    "p": "Carne gris",
+    "fix": "Dorada amontonada. Por tandas."
+   },
+   {
+    "p": "Demasiado picante",
+    "fix": "Chiles picantes de más. Equilibra con más carne o tomate."
+   }
+  ],
+  "history": "El chili con carne se asocia a Texas y a la cocina de la frontera con México, con muchas versiones y concursos.",
+  "uses": [
+   "Platos de cuchara",
+   "Comidas para compartir",
+   "Rellenos"
+  ],
+  "keep": "4 días en frío; se congela muy bien.",
+  "pro": "Guisa en tanda y congela por raciones.",
+  "related": [
+   "chiles-secos-y-frescos",
+   "chiles-y-salsas-mexicanas",
+   "guisos-largos",
+   "legumbres",
+   "mole",
+   "especias"
+  ]
  }
 ]

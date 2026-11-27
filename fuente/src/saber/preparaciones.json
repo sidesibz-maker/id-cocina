@@ -7058,5 +7058,1289 @@
       "umami-y-fondo",
       "grasas-infusionadas"
     ]
+  },
+  {
+    "id": "salsas-de-mesa-caseras",
+    "name": "Ketchup, mostaza y salsas de mesa caseras",
+    "name_en": "Homemade ketchup, mustard and table sauces",
+    "cat": "salsas",
+    "group": "Aliños de pase",
+    "aka": [
+      "ketchup casero",
+      "mostaza casera",
+      "salsa barbacoa casera",
+      "salsas de mesa",
+      "salsa de tomate dulce"
+    ],
+    "role": "salsa",
+    "techniques": [
+      "guiso"
+    ],
+    "summary": "Las salsas de mesa hechas en cocina: ketchup de tomate asado, mostaza de grano y salsa barbacoa ahumada, con el equilibrio de dulce, ácido y especia controlado.",
+    "what": "Las salsas de mesa industriales son muy dulces y planas; hechas en casa pueden tener el sabor del producto propio. El ketchup es tomate concentrado con vinagre, azúcar, cebolla y especias, reducido hasta napar. La mostaza se hace con grano de mostaza remojado en vinagre y líquido y triturado: el picor depende del líquido y de la temperatura. La salsa barbacoa parte de un ketchup al que se añaden ahumado, melaza o miel y especias. Acompañan bocadillos, patatas, carnes a la brasa y frituras.",
+    "base": {
+      "for": "unos 600 g de ketchup",
+      "items": [
+        [
+          "Tomate maduro asado o en conserva",
+          "1,2 kg"
+        ],
+        [
+          "Cebolla",
+          "200 g"
+        ],
+        [
+          "Ajo",
+          "2 dientes"
+        ],
+        [
+          "Vinagre de vino o de manzana",
+          "120 g"
+        ],
+        [
+          "Azúcar moreno",
+          "90 g"
+        ],
+        [
+          "Sal",
+          "10 g"
+        ],
+        [
+          "Especias: clavo, pimienta de Jamaica, canela, mostaza en grano",
+          "al gusto"
+        ],
+        [
+          "Pimentón dulce o ahumado",
+          "5 g"
+        ]
+      ],
+      "steps": [
+        "Sofríe la cebolla y el ajo sin color.",
+        "Añade el tomate, las especias y el pimentón y cuece a fuego suave 30–40 minutos.",
+        "Tritura muy fino y pasa por colador.",
+        "Vuelve al fuego con el vinagre, el azúcar y la sal y reduce removiendo hasta que espese y nape, 30–45 minutos.",
+        "Ajusta de dulce y ácido, envasa en caliente en tarros limpios y guarda en frío."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Ketchup",
+        "ratio": "1,2 kg de tomate, 120 g de vinagre y 90 g de azúcar",
+        "note": "Reducido hasta napar."
+      },
+      {
+        "use": "Mostaza de grano",
+        "ratio": "100 g de grano (mitad amarillo, mitad oscuro), 120 g de vinagre, 60 g de agua o cerveza, 10 g de sal y 15 g de miel",
+        "note": "Remojo 12–24 h en frío y trituración parcial; con líquido frío pica más."
+      },
+      {
+        "use": "Salsa barbacoa",
+        "ratio": "Ketchup con 10 % de melaza o miel, pimentón ahumado y un poco de mostaza",
+        "note": "Para pintar al final de la brasa."
+      }
+    ],
+    "variants": [
+      {
+        "id": "salsa-de-tomate",
+        "name": "Salsa de tomate",
+        "note": "La salsa de cocina sin vinagre ni azúcar."
+      },
+      {
+        "id": "salsa-de-pimienta-y-mostaza",
+        "name": "Salsas de mostaza",
+        "note": "Salsas calientes con mostaza."
+      },
+      {
+        "id": "chutneys-y-compotas-saladas",
+        "name": "Chutney",
+        "note": "Agridulce con trozos de fruta."
+      }
+    ],
+    "keys": [
+      "Tomate muy maduro o asado: concentra el sabor.",
+      "Reduce despacio y removiendo: se pega enseguida.",
+      "Equilibra al final dulce, ácido y sal.",
+      "La mostaza pica más con líquido frío y menos con caliente.",
+      "Deja reposar la mostaza unos días: el picor se suaviza."
+    ],
+    "errors": [
+      {
+        "p": "Ketchup aguado",
+        "fix": "Poca reducción. Sigue reduciendo hasta que nape."
+      },
+      {
+        "p": "Mostaza amarga",
+        "fix": "Recién hecha o con grano viejo. Deja reposar unos días en frío."
+      },
+      {
+        "p": "Sabor a quemado",
+        "fix": "Fuego alto al reducir. Fuego suave y remover."
+      }
+    ],
+    "history": "El ketchup de tomate se popularizó en el siglo XIX en el mundo anglosajón; la mostaza de grano es un condimento antiguo de la cocina europea.",
+    "uses": [
+      "Bocadillos y hamburguesas",
+      "Patatas fritas y frituras",
+      "Carnes a la brasa",
+      "Base de salsas agridulces"
+    ],
+    "keep": "En tarro limpio y en frío: ketchup y barbacoa, 3–4 semanas; mostaza, 2–3 meses.",
+    "pro": "Haz ketchup en temporada de tomate y guárdalo en tarros en frío. En el pase, en biberón.",
+    "related": [
+      "salsa-de-tomate",
+      "salsa-de-pimienta-y-mostaza",
+      "chutneys-y-compotas-saladas",
+      "tomate",
+      "barbacoa-lenta",
+      "salsas-agridulces-y-gastriques"
+    ]
+  },
+  {
+    "id": "mantequilla-casera",
+    "name": "Mantequilla casera y mantequilla cultivada",
+    "name_en": "Homemade and cultured butter",
+    "cat": "bases",
+    "group": "Crujientes y acabados",
+    "aka": [
+      "mantequilla casera",
+      "mantequilla cultivada",
+      "mantequilla de nata fermentada",
+      "suero de mantequilla",
+      "mazada",
+      "batir mantequilla"
+    ],
+    "role": "toque",
+    "techniques": [
+      "fermentado"
+    ],
+    "summary": "Cómo hacer mantequilla batiendo nata hasta separar la grasa del suero, y cómo hacerla cultivada, fermentando antes la nata para que tenga más sabor.",
+    "what": "Si se bate nata más allá del punto de montada, la grasa se agrupa en granos y se separa un líquido: el suero de mantequilla. Lavando los granos con agua helada y amasándolos se obtiene mantequilla. Si antes se fermenta la nata con un cultivo (como en los [[lacteos-fermentados]]), la mantequilla queda más aromática y algo ácida: es la mantequilla cultivada. Con sal en escamas, hierbas o algas, es un buen servicio de pan propio. El suero que sobra sirve para masas y marinadas.",
+    "base": {
+      "for": "unos 450 g de mantequilla y 500 g de suero",
+      "items": [
+        [
+          "Nata 35–40 % de grasa, pasteurizada",
+          "1 l"
+        ],
+        [
+          "Yogur o kéfir con fermentos vivos (para la cultivada)",
+          "50 g"
+        ],
+        [
+          "Agua helada",
+          "para lavar"
+        ],
+        [
+          "Sal en escamas",
+          "6–10 g (opcional)"
+        ]
+      ],
+      "steps": [
+        "Para la cultivada: mezcla la nata con el yogur y deja a 20–22 °C, 18–24 horas, hasta que espese y huela ácido; enfría a 12–14 °C antes de batir.",
+        "Bate la nata con la varilla a velocidad media: primero monta, después se vuelve granulada y amarillenta y se separa el suero.",
+        "Cuela y guarda el suero.",
+        "Lava los granos con agua helada, amasándolos con espátula, hasta que el agua salga clara: el suero que quede agria la mantequilla.",
+        "Escurre bien, amasa con la sal y forma barras o pastillas. Guarda en frío envuelta."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Rendimiento",
+        "ratio": "Unos 450 g de mantequilla por litro de nata de 35–40 %",
+        "note": "El resto es suero."
+      },
+      {
+        "use": "Nata para batir",
+        "ratio": "A 12–14 °C",
+        "note": "Muy fría tarda; caliente queda grasienta."
+      },
+      {
+        "use": "Sal",
+        "ratio": "1,5–2 % sobre la mantequilla",
+        "note": "En escamas para servicio de pan."
+      }
+    ],
+    "variants": [
+      {
+        "id": "mantequillas-compuestas",
+        "name": "Mantequillas compuestas",
+        "note": "Con hierbas, especias u otros sabores."
+      },
+      {
+        "id": "mantequillas-de-algas-miso-y-verdura",
+        "name": "Mantequillas de algas y miso",
+        "note": "Sabores de mar y de fondo."
+      },
+      {
+        "id": "grasas-infusionadas",
+        "name": "Mantequilla clarificada",
+        "note": "Sin agua ni sólidos lácteos."
+      }
+    ],
+    "keys": [
+      "Nata de buena calidad y con mucha grasa.",
+      "Lava bien hasta que el agua salga clara.",
+      "Temperatura de batido de 12–14 °C.",
+      "Cultivada: fermentación completa y nata fría antes de batir.",
+      "Aprovecha el suero en masas, panes y marinadas."
+    ],
+    "errors": [
+      {
+        "p": "No se separa",
+        "fix": "Nata muy fría. Déjala atemperar a 12–14 °C y sigue batiendo."
+      },
+      {
+        "p": "Mantequilla agria o que dura poco",
+        "fix": "Suero sin lavar. Lava más con agua helada."
+      },
+      {
+        "p": "Grasienta y blanda",
+        "fix": "Nata caliente o amasado excesivo. Trabaja en frío."
+      }
+    ],
+    "history": "Batir nata para hacer mantequilla es una práctica antigua de las zonas ganaderas; la mantequilla de nata fermentada es tradicional en el norte de Europa.",
+    "uses": [
+      "Servicio de pan",
+      "Mantequillas compuestas",
+      "Terminar salsas y verduras",
+      "El suero, para panes rápidos y marinadas"
+    ],
+    "keep": "Bien lavada y envuelta, en frío 1–2 semanas; congelada, 3 meses. El suero, en frío 1 semana.",
+    "pro": "Haz mantequilla cultivada para el servicio de pan una o dos veces por semana; el suero va al pan de soda o a marinar pollo.",
+    "related": [
+      "lacteos-fermentados",
+      "mantequillas-compuestas",
+      "leche-nata-y-mantequilla",
+      "panes-rapidos-sin-levadura",
+      "grasas-infusionadas"
+    ]
+  },
+  {
+    "id": "huevos-encurtidos-y-marinados",
+    "name": "Huevos encurtidos y marinados",
+    "name_en": "Pickled and marinated eggs",
+    "cat": "bases",
+    "group": "Encurtidos y marinadas",
+    "aka": [
+      "huevos en soja",
+      "huevo marinado",
+      "huevos encurtidos",
+      "huevo de ramen",
+      "huevos en remolacha",
+      "huevos de codorniz encurtidos"
+    ],
+    "role": "toque",
+    "techniques": [
+      "encurtido",
+      "curado"
+    ],
+    "summary": "Huevos cocidos, de yema firme o melosa, pelados y dejados en un líquido de soja, vinagre o remolacha que les da sabor y color.",
+    "what": "Un huevo cocido en su punto y pelado absorbe el sabor del líquido en el que se deja: en soja, mirin y agua queda de color ámbar con la yema melosa, como el que acompaña al ramen; en vinagre con remolacha se tiñe de rosa intenso y gana acidez; en un escabeche suave se vuelve un aperitivo. Los de codorniz se hacen igual en menos tiempo. Los puntos de cocción están en [[puntos-del-huevo]].",
+    "base": {
+      "for": "8 huevos marinados en soja",
+      "items": [
+        [
+          "Huevos",
+          "8"
+        ],
+        [
+          "Salsa de soja",
+          "150 ml"
+        ],
+        [
+          "Mirin o vino dulce",
+          "100 ml"
+        ],
+        [
+          "Agua",
+          "150 ml"
+        ],
+        [
+          "Azúcar",
+          "20 g"
+        ],
+        [
+          "Jengibre y ajo laminados",
+          "unas láminas"
+        ]
+      ],
+      "steps": [
+        "Hierve el agua de la marinada con la soja, el mirin, el azúcar, el jengibre y el ajo; deja enfriar del todo.",
+        "Cuece los huevos desde agua hirviendo 6,5–7 minutos para yema melosa (9–10 para yema firme) y enfríalos en agua con hielo.",
+        "Pélalos con cuidado bajo el agua.",
+        "Sumérgelos en la marinada fría, con un papel encima para que queden cubiertos, en cámara a 0–4 °C.",
+        "A las 6–12 horas están listos; sácalos de la marinada a las 24 horas para que no se salen de más."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Marinada de soja",
+        "ratio": "Soja, mirin y agua en proporción 3 : 2 : 3",
+        "note": "6–24 horas en frío."
+      },
+      {
+        "use": "Huevos encurtidos en remolacha",
+        "ratio": "Vinagre y agua a partes iguales con 5 % de azúcar, 2 % de sal y remolacha cocida",
+        "note": "Huevos de yema firme, 2–3 días en frío."
+      },
+      {
+        "use": "Huevos de codorniz",
+        "ratio": "Cocidos 2,5 minutos (melosos) o 4 (firmes)",
+        "note": "Marinada 2–4 horas."
+      }
+    ],
+    "variants": [
+      {
+        "id": "puntos-del-huevo",
+        "name": "Puntos del huevo",
+        "note": "Tiempos para cada textura de yema."
+      },
+      {
+        "id": "huevos-de-guarnicion",
+        "name": "Yema curada",
+        "note": "Otra forma de dar sabor a la yema."
+      },
+      {
+        "id": "pickles-de-servicio",
+        "name": "Pickles de servicio",
+        "note": "El líquido de encurtir."
+      }
+    ],
+    "keys": [
+      "Huevo enfriado en hielo nada más cocerlo: pela mejor y la yema no se pasa.",
+      "Marinada siempre fría y huevos siempre en cámara.",
+      "Saca los de soja a las 24 horas: si no, se salan y la clara se endurece.",
+      "Los encurtidos en vinagre, con yema firme.",
+      "Usa un recipiente estrecho para que la marinada los cubra."
+    ],
+    "errors": [
+      {
+        "p": "Huevo muy salado",
+        "fix": "Demasiado tiempo en la soja. Sácalos a las 24 horas."
+      },
+      {
+        "p": "Clara rota al pelar",
+        "fix": "Huevos muy frescos o sin enfriar. Usa huevos de unos días y enfría en hielo."
+      },
+      {
+        "p": "Color desigual",
+        "fix": "Huevos sin cubrir. Pon un papel encima para que queden sumergidos."
+      }
+    ],
+    "history": "El huevo marinado en soja es tradicional en las cocinas de Japón y Corea, y los huevos encurtidos en vinagre existen en muchas cocinas europeas y americanas.",
+    "uses": [
+      "Ramen y caldos",
+      "Arroces y ensaladas",
+      "Aperitivo",
+      "Bocadillos"
+    ],
+    "keep": "Siempre en frío a 0–4 °C. Marinados en soja, 3 días fuera de la marinada; encurtidos en vinagre, 1 semana. Desecha si cambian de olor.",
+    "pro": "Marina una tanda cada dos o tres días para tenerlos siempre en su punto; córtalos con hilo o cuchillo húmedo.",
+    "related": [
+      "puntos-del-huevo",
+      "huevos",
+      "huevos-de-guarnicion",
+      "pickles-de-servicio",
+      "soja-y-derivados",
+      "ramen"
+    ]
+  },
+  {
+    "id": "granos-y-fideos-de-verdura",
+    "name": "Verdura en grano y en fideos",
+    "name_en": "Vegetable rice and noodles",
+    "cat": "bases",
+    "group": "Técnicas para verduras",
+    "aka": [
+      "arroz de coliflor",
+      "cuscus de coliflor",
+      "espaguetis de calabacin",
+      "fideos de verdura",
+      "verdura rallada",
+      "tallarines de verdura"
+    ],
+    "role": "guarnicion",
+    "techniques": [
+      "salteado",
+      "crudo"
+    ],
+    "summary": "Coliflor o brócoli rallados como un grano, y calabacín, zanahoria o pepino en tiras largas como fideos: guarniciones ligeras, crudas o salteadas al momento.",
+    "what": "Rallar o triturar a impulsos la coliflor o el brócoli da un «grano» que se saltea en uno o dos minutos y recoge bien los aliños, como un cuscús. Las verduras firmes cortadas en tiras largas con mandolina, espiralizador o pelador hacen de fideos: crudas y aliñadas, o salteadas muy poco para que no suelten agua. No sustituyen al arroz o a la pasta en sabor, pero dan guarniciones frescas y ligeras con mucha textura.",
+    "base": {
+      "for": "4 raciones de grano de coliflor",
+      "items": [
+        [
+          "Coliflor sin tronco",
+          "600 g"
+        ],
+        [
+          "Aceite de oliva",
+          "30 g"
+        ],
+        [
+          "Ajo o chalota picada",
+          "1 diente o 30 g"
+        ],
+        [
+          "Hierbas frescas, ralladura de limón y frutos secos tostados",
+          "al gusto"
+        ],
+        [
+          "Sal",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Ralla los floretes con un rallador grueso o tritúralos a impulsos en procesador hasta que parezcan granos de cuscús.",
+        "Seca el grano con papel si suelta humedad.",
+        "Saltea a fuego fuerte con el aceite y la chalota, 2–3 minutos, sin tapar, hasta que esté tierno pero entero.",
+        "Sala al final y termina con hierbas, ralladura y frutos secos.",
+        "Sirve enseguida."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Grano de coliflor o brócoli",
+        "ratio": "Salteado a fuego fuerte 2–3 minutos",
+        "note": "También crudo, aliñado como un tabulé."
+      },
+      {
+        "use": "Fideos de calabacín o pepino",
+        "ratio": "Salados con 1 % de sal 10 minutos y escurridos si van crudos",
+        "note": "Salteados, 30–60 segundos."
+      },
+      {
+        "use": "Fideos de zanahoria o remolacha",
+        "ratio": "Escaldados 20–30 segundos o crudos aliñados",
+        "note": "Más firmes; aguantan más el aliño."
+      }
+    ],
+    "variants": [
+      {
+        "id": "ensaladas-de-legumbre-y-cereal",
+        "name": "Tabulé",
+        "note": "La misma idea con cereal."
+      },
+      {
+        "id": "tartares-y-carpaccios-vegetales",
+        "name": "Carpaccio de verdura",
+        "note": "Láminas finas aliñadas."
+      },
+      {
+        "id": "cortes-de-cuchillo",
+        "name": "Cortes de cuchillo",
+        "note": "Juliana y otros cortes finos."
+      }
+    ],
+    "keys": [
+      "Seca bien la verdura rallada: el agua la cuece en vez de saltearla.",
+      "Fuego fuerte y poco tiempo.",
+      "Sal al final para que no suelte agua.",
+      "Los fideos crudos, salados y escurridos antes de aliñar.",
+      "Añade siempre algo graso y crujiente."
+    ],
+    "errors": [
+      {
+        "p": "Grano blando y aguado",
+        "fix": "Sartén fría o mucho tiempo. Fuego fuerte y 2–3 minutos."
+      },
+      {
+        "p": "Fideos que sueltan agua en el plato",
+        "fix": "Sin salar ni escurrir. Sala, escurre y seca."
+      },
+      {
+        "p": "Sabe a crudo",
+        "fix": "Falta aliño. Ácido, grasa y sal generosos."
+      }
+    ],
+    "history": "Usar verdura rallada o en tiras en lugar de cereales y pasta se ha extendido en las últimas décadas en la cocina vegetal y ligera.",
+    "uses": [
+      "Guarnición de pescado y carne",
+      "Base de plato vegetal",
+      "Ensaladas frescas",
+      "Menú ligero de mediodía"
+    ],
+    "keep": "Rallada y en frío, en caja con papel, 1–2 días. Cocinada, al momento.",
+    "pro": "Ralla la coliflor por la mañana y guárdala en caja con papel; saltea por raciones al pedir.",
+    "related": [
+      "ensaladas-de-legumbre-y-cereal",
+      "tartares-y-carpaccios-vegetales",
+      "cortes-de-cuchillo",
+      "salteado-y-wok",
+      "escaldado-de-verduras"
+    ]
+  },
+  {
+    "id": "alinos-para-ostras-y-crudos-de-mar",
+    "name": "Aliños para ostras y crudos de mar",
+    "name_en": "Dressings for oysters and raw seafood",
+    "cat": "salsas",
+    "group": "Aliños de pase",
+    "aka": [
+      "mignonette",
+      "salsa para ostras",
+      "alino para ostras",
+      "vinagreta de chalota",
+      "granizado para ostras",
+      "alino para erizo"
+    ],
+    "role": "fresco",
+    "techniques": [
+      "crudo"
+    ],
+    "summary": "Aliños ácidos y finos para ostras, almejas, erizo o carpaccios de pescado: vinagreta de chalota, cítricos, granizados salados y gotas de aceite.",
+    "what": "Las [[ostras-y-percebes|ostras]] y los crudos de mar piden un aliño que acompañe sin tapar: ácido limpio, un punto de dulzor y textura fina. El clásico es una vinagreta de chalota picada muy fina en vinagre de vino con pimienta. Otras opciones son un cítrico con aceite y hierbas, un granizado salado de pepino o manzana verde, o unas gotas de aceite verde. Se ponen en muy poca cantidad, una o dos gotas o una cucharadita, justo antes de comer.",
+    "base": {
+      "for": "unas 30 ostras",
+      "items": [
+        [
+          "Chalota picada muy fina",
+          "40 g"
+        ],
+        [
+          "Vinagre de vino tinto o de cava",
+          "100 ml"
+        ],
+        [
+          "Pimienta negra recién molida",
+          "1 g"
+        ],
+        [
+          "Sal",
+          "una pizca"
+        ],
+        [
+          "Cebollino (opcional)",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Pica la chalota muy fina, en brunoise.",
+        "Mézclala con el vinagre, la pimienta y la sal.",
+        "Deja reposar 30 minutos en frío para que la chalota se suavice.",
+        "Sirve en un cuenco pequeño con cuchara: media cucharadita por ostra.",
+        "Añade el cebollino justo antes de servir."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Vinagreta de chalota",
+        "ratio": "40 g de chalota por 100 ml de vinagre",
+        "note": "Media cucharadita por ostra."
+      },
+      {
+        "use": "Aliño cítrico",
+        "ratio": "Zumo de lima o yuzu, aceite suave y ralladura, 1:2",
+        "note": "Para erizo y carpaccios."
+      },
+      {
+        "use": "Granizado salado",
+        "ratio": "Zumo de pepino o manzana verde con 1 % de sal y unas gotas de vinagre, raspado",
+        "note": "Una cucharadita sobre cada ostra."
+      }
+    ],
+    "variants": [
+      {
+        "id": "ponzu-y-salsas-citricas",
+        "name": "Ponzu",
+        "note": "Cítrico y soja para crudos."
+      },
+      {
+        "id": "salsas-citricas-para-pescado",
+        "name": "Salsas cítricas para pescado",
+        "note": "Para pescados crudos o a la brasa."
+      },
+      {
+        "id": "aguas-clarificadas",
+        "name": "Aguas de vegetación",
+        "note": "Base de granizados y aliños limpios."
+      }
+    ],
+    "keys": [
+      "Poca cantidad: el marisco es el protagonista.",
+      "Chalota muy fina y reposada en el vinagre.",
+      "Todo muy frío, como el marisco.",
+      "Aliña justo antes de comer.",
+      "Marisco crudo solo de origen controlado y muy fresco."
+    ],
+    "errors": [
+      {
+        "p": "El aliño tapa la ostra",
+        "fix": "Demasiada cantidad o ácido fuerte. Reduce la dosis o rebaja el vinagre."
+      },
+      {
+        "p": "Chalota fuerte",
+        "fix": "Sin reposar. Déjala 30 minutos en el vinagre."
+      },
+      {
+        "p": "Granizado aguado",
+        "fix": "Se ha fundido. Rasca y sirve sobre hielo."
+      }
+    ],
+    "history": "La vinagreta de chalota para ostras es un clásico de las marisquerías francesas; acompañar el marisco crudo con cítricos es habitual en muchas cocinas de costa.",
+    "uses": [
+      "Ostras",
+      "Almejas y navajas crudas",
+      "Erizo de mar",
+      "Carpaccios y crudos de pescado"
+    ],
+    "keep": "Vinagreta de chalota en frío, 3 días. Aliños cítricos, el día. Granizado congelado, 1 semana.",
+    "pro": "Ten los aliños en cuencos pequeños sobre hielo en el pase y aliña cada ostra al momento.",
+    "related": [
+      "ostras-y-percebes",
+      "erizo-de-mar",
+      "ceviche-y-crudos",
+      "ponzu-y-salsas-citricas",
+      "vinagreta",
+      "mejillon-y-almeja"
+    ]
+  },
+  {
+    "id": "ensaladilla-rusa",
+    "name": "Ensaladilla rusa",
+    "name_en": "Spanish potato salad",
+    "cat": "bases",
+    "group": "Cremas y guarniciones",
+    "aka": [
+      "ensaladilla",
+      "ensalada rusa",
+      "ensaladilla de atun",
+      "ensaladilla de gambas",
+      "tapa de ensaladilla"
+    ],
+    "role": "principal",
+    "techniques": [
+      "hervido",
+      "emulsion"
+    ],
+    "summary": "Patata cocida con verduras, atún o marisco ligada con mayonesa: la tapa fría más clásica de las barras españolas, y cómo hacerla fina y segura.",
+    "what": "Es patata cocida con piel, pelada y cortada o chafada, con zanahoria, guisante, huevo cocido, aceitunas o pimiento, y un pescado en conserva o marisco, todo ligado con [[mayonesa]]. La diferencia la marcan una patata en su punto, un aliño en tibio con un poco de vinagre o encurtido y una mayonesa propia. Como lleva mayonesa, se mantiene siempre en frío y se consume pronto.",
+    "base": {
+      "for": "8 raciones",
+      "items": [
+        [
+          "Patata de carne firme",
+          "1 kg"
+        ],
+        [
+          "Zanahoria",
+          "200 g"
+        ],
+        [
+          "Guisantes",
+          "150 g"
+        ],
+        [
+          "Huevos",
+          "3"
+        ],
+        [
+          "Atún o bonito en aceite, escurrido",
+          "200 g"
+        ],
+        [
+          "Aceitunas o pepinillos picados",
+          "60 g"
+        ],
+        [
+          "Vinagre de vino o líquido de encurtido",
+          "15 g"
+        ],
+        [
+          "Mayonesa con yema pasteurizada",
+          "300–400 g"
+        ],
+        [
+          "Sal y pimienta",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Cuece las patatas con piel en agua con sal hasta que estén tiernas, 25–35 minutos; cuece la zanahoria en dados, los guisantes 3–4 minutos y los huevos 10 minutos.",
+        "Pela las patatas en templado, córtalas en dados o cháfalas con tenedor, y alíñalas en tibio con el vinagre y la sal.",
+        "Enfría todo por separado hasta que esté frío.",
+        "Mezcla las verduras, el huevo picado, el pescado y las aceitunas con la mayonesa, sin hacer puré.",
+        "Ajusta y guarda en frío hasta servir."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Mayonesa",
+        "ratio": "300–400 g por kilo de patata",
+        "note": "Más si la quieres muy cremosa."
+      },
+      {
+        "use": "Aliño en tibio",
+        "ratio": "15 g de vinagre por kilo de patata",
+        "note": "Da el punto que distingue una buena ensaladilla."
+      },
+      {
+        "use": "Temperatura de mezcla",
+        "ratio": "Todo frío, por debajo de 8 °C",
+        "note": "Nunca mayonesa sobre patata caliente."
+      }
+    ],
+    "variants": [
+      {
+        "id": "mayonesa",
+        "name": "Mayonesa",
+        "note": "La salsa que la liga."
+      },
+      {
+        "id": "guarniciones-de-patata",
+        "name": "Patata cocida",
+        "note": "Elegir la patata y su punto."
+      },
+      {
+        "id": "atun-rojo-y-bonito",
+        "name": "Con bonito o ventresca",
+        "note": "El pescado más habitual."
+      }
+    ],
+    "keys": [
+      "Patata cocida con piel: no se aguarda.",
+      "Aliño en tibio con un toque ácido.",
+      "Todo frío antes de añadir la mayonesa.",
+      "Mayonesa con yema pasteurizada.",
+      "Siempre en frío y consumida pronto."
+    ],
+    "errors": [
+      {
+        "p": "Ensaladilla aguada",
+        "fix": "Patata cocida pelada o mal escurrida. Cuécela con piel y escurre."
+      },
+      {
+        "p": "Sosa",
+        "fix": "Sin aliño ni sal en la patata. Aliña en tibio."
+      },
+      {
+        "p": "Mayonesa cortada al mezclar",
+        "fix": "Patata caliente. Enfría antes de mezclar."
+      }
+    ],
+    "history": "La ensaladilla rusa es una adaptación española de una ensalada de origen ruso del siglo XIX y es hoy una de las tapas más populares de las barras de España.",
+    "uses": [
+      "Tapa fría",
+      "Entrante",
+      "Relleno de pimientos o tomates",
+      "Aperitivo con picos o regañás"
+    ],
+    "keep": "En frío a 0–4 °C y tapada, 1–2 días. No se deja a temperatura ambiente en el servicio.",
+    "pro": "Cuece y corta las verduras por la mañana y mezcla con la mayonesa en la cantidad del día. En el pase, en recipiente sobre frío.",
+    "related": [
+      "mayonesa",
+      "guarniciones-de-patata",
+      "atun-rojo-y-bonito",
+      "puntos-del-huevo",
+      "cadena-de-frio",
+      "emulsiones"
+    ]
+  },
+  {
+    "id": "chicharrones-y-cortezas",
+    "name": "Chicharrones, cortezas y torreznos",
+    "name_en": "Crackling, pork rinds and torreznos",
+    "cat": "bases",
+    "group": "Crujientes y acabados",
+    "aka": [
+      "cortezas de cerdo",
+      "chicharrones",
+      "torreznos",
+      "piel de cerdo crujiente",
+      "crackling",
+      "piel inflada"
+    ],
+    "role": "crujiente",
+    "techniques": [
+      "fritura",
+      "hervido"
+    ],
+    "summary": "Piel y panceta de cerdo cocidas, secadas y fritas hasta inflarse y crujir: aperitivo, acabado crujiente o guarnición de platos de cuchara.",
+    "what": "La piel de cerdo tiene mucho colágeno: si se cuece hasta que esté blanda, se raspa la grasa, se seca del todo y se fríe en aceite muy caliente, el agua que queda dentro se convierte en vapor y la piel se infla como una corteza ligera. Los torreznos son tiras de panceta con piel, a menudo adobada, confitadas y fritas hasta que la piel cruje. Los chicharrones son los trozos crujientes que quedan al derretir grasa de cerdo. Las pieles de pollo y de pescado crujientes están en [[deshidratados-y-crujientes]].",
+    "base": {
+      "for": "unos 150 g de cortezas",
+      "items": [
+        [
+          "Piel de cerdo limpia",
+          "500 g"
+        ],
+        [
+          "Agua con sal",
+          "para cubrir"
+        ],
+        [
+          "Aceite de girasol para freír",
+          "c. s."
+        ],
+        [
+          "Sal fina, pimentón o especias",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Cuece la piel en agua con sal a fuego suave 1,5–2 horas, hasta que esté muy blanda.",
+        "Deja templar y raspa con cuchillo toda la grasa de la cara interior.",
+        "Corta en trozos y sécalos en deshidratador u horno a 60–70 °C, 8–12 horas, hasta que estén duros y translúcidos.",
+        "Fríe los trozos secos en tandas pequeñas en aceite a 190–200 °C: se inflan en segundos.",
+        "Escurre y sazona en caliente."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Cortezas infladas",
+        "ratio": "Piel cocida 1,5–2 h, secada a 60–70 °C 8–12 h y frita a 190–200 °C",
+        "note": "Bien seca: es lo que la hace inflarse."
+      },
+      {
+        "use": "Torreznos",
+        "ratio": "Panceta con piel en tiras, confitada en grasa a 110–120 °C 1 h y frita a 190 °C",
+        "note": "Piel crujiente, carne tierna."
+      },
+      {
+        "use": "Chicharrones",
+        "ratio": "Grasa de cerdo troceada derretida a fuego suave",
+        "note": "Lo que queda dorado en la grasa."
+      }
+    ],
+    "variants": [
+      {
+        "id": "deshidratados-y-crujientes",
+        "name": "Pieles de pollo y pescado",
+        "note": "Otras pieles crujientes."
+      },
+      {
+        "id": "grasas-infusionadas",
+        "name": "Manteca de cerdo",
+        "note": "La grasa derretida que acompaña los chicharrones."
+      },
+      {
+        "id": "crujientes-salados",
+        "name": "Crujientes salados",
+        "note": "Otros acabados crujientes."
+      }
+    ],
+    "keys": [
+      "Raspa toda la grasa de la piel cocida.",
+      "Secado completo: con humedad no se infla y salpica.",
+      "Aceite muy caliente y tandas pequeñas.",
+      "Sazona en caliente.",
+      "Cuidado con el aceite: la piel húmeda lo hace saltar."
+    ],
+    "errors": [
+      {
+        "p": "No se infla",
+        "fix": "Piel poco seca o aceite frío. Seca más y fríe a 190–200 °C."
+      },
+      {
+        "p": "Corteza dura y grasienta",
+        "fix": "Grasa sin raspar. Raspa bien antes de secar."
+      },
+      {
+        "p": "Salpica mucho",
+        "fix": "Piel húmeda. Sécala del todo."
+      }
+    ],
+    "history": "Las cortezas, los chicharrones y los torreznos son tradicionales en muchas zonas de España, ligados a la matanza del cerdo y al aprovechamiento de todo el animal.",
+    "uses": [
+      "Aperitivo",
+      "Crujiente sobre purés y legumbres",
+      "Acompañar huevos y migas",
+      "Polvo de corteza para empanar"
+    ],
+    "keep": "Piel secada sin freír, en bote cerrado, 2–3 meses. Fritas, en lata, 2–3 días.",
+    "pro": "Seca la piel en tanda y fríe al momento la cantidad del servicio: se inflan en segundos.",
+    "related": [
+      "deshidratados-y-crujientes",
+      "grasas-infusionadas",
+      "crujientes-salados",
+      "cerdo-iberico",
+      "fritura",
+      "cocina-de-aprovechamiento"
+    ]
+  },
+  {
+    "id": "salsas-de-rabano-picante",
+    "name": "Salsas de rábano picante",
+    "name_en": "Horseradish sauces",
+    "cat": "salsas",
+    "group": "Aliños de pase",
+    "aka": [
+      "rabano picante",
+      "horseradish",
+      "crema de rabano picante",
+      "salsa de rabano",
+      "wasabi fresco"
+    ],
+    "role": "salsa",
+    "techniques": [
+      "crudo"
+    ],
+    "summary": "Raíz de rábano picante rallada con ácido, nata o lácteo fermentado: una salsa fría y picante que despierta carnes asadas, pescados ahumados y remolacha.",
+    "what": "El picor del rábano picante aparece al rallarlo, cuando se rompen sus células, y se va muy deprisa: por eso se ralla justo antes o se fija enseguida con vinagre o limón. Mezclado con nata, nata fermentada o yogur da una crema fría y picante; con vinagre solo, un condimento fuerte. Su pariente japonés es el wasabi, que se usa rallado al momento con el [[sushi-y-sashimi]].",
+    "base": {
+      "for": "unos 250 g de crema de rábano",
+      "items": [
+        [
+          "Rábano picante fresco pelado",
+          "60 g"
+        ],
+        [
+          "Vinagre de vino blanco o zumo de limón",
+          "15 g"
+        ],
+        [
+          "Nata fermentada o nata semimontada",
+          "180 g"
+        ],
+        [
+          "Mostaza suave",
+          "5 g"
+        ],
+        [
+          "Sal y una pizca de azúcar",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Ralla el rábano picante muy fino, en lugar ventilado: pica en los ojos.",
+        "Mézclalo enseguida con el vinagre para fijar el picor.",
+        "Incorpora la nata, la mostaza, la sal y el azúcar.",
+        "Prueba y ajusta el picor con más rábano o más nata.",
+        "Sirve frío y en el día."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Crema de rábano",
+        "ratio": "1 parte de rábano rallado por 3 de lácteo",
+        "note": "Ajusta al picor de la raíz."
+      },
+      {
+        "use": "Rábano con vinagre",
+        "ratio": "Rábano rallado con su peso en vinagre suave y una pizca de sal",
+        "note": "Condimento fuerte."
+      },
+      {
+        "use": "Con remolacha",
+        "ratio": "1 parte de rábano por 2 de remolacha cocida rallada",
+        "note": "Para pescados ahumados y carnes."
+      }
+    ],
+    "variants": [
+      {
+        "id": "lacteos-fermentados",
+        "name": "Lácteos fermentados",
+        "note": "La base cremosa de la salsa."
+      },
+      {
+        "id": "sushi-y-sashimi",
+        "name": "Wasabi",
+        "note": "El rábano japonés con pescado crudo."
+      },
+      {
+        "id": "salsa-de-pimienta-y-mostaza",
+        "name": "Salsas de mostaza",
+        "note": "Otro picante para carnes."
+      }
+    ],
+    "keys": [
+      "Ralla al momento: el picor se va en minutos.",
+      "Fija con ácido enseguida.",
+      "Ajusta el lácteo según lo que pique la raíz.",
+      "Cuidado con los ojos al rallar.",
+      "Hazla el día que se sirve."
+    ],
+    "errors": [
+      {
+        "p": "No pica",
+        "fix": "Rallado con antelación o raíz vieja. Ralla al momento y fija con vinagre."
+      },
+      {
+        "p": "Pica demasiado",
+        "fix": "Demasiado rábano. Añade nata o yogur."
+      },
+      {
+        "p": "Salsa aguada",
+        "fix": "Nata poco montada. Usa nata fermentada o semimontada."
+      }
+    ],
+    "history": "El rábano picante se usa desde hace siglos en las cocinas del centro y norte de Europa con carnes y pescados, y el wasabi es su equivalente en Japón.",
+    "uses": [
+      "Carnes asadas frías y calientes",
+      "Pescados ahumados",
+      "Remolacha y patatas",
+      "Ostras y crudos (en poca cantidad)"
+    ],
+    "keep": "Crema en frío y tapada, 1–2 días; pierde picor con las horas.",
+    "pro": "Ralla el rábano en pequeñas cantidades durante el servicio y mezcla con la base ya preparada.",
+    "related": [
+      "lacteos-fermentados",
+      "sushi-y-sashimi",
+      "salsa-de-pimienta-y-mostaza",
+      "tartares-y-carpaccios-vegetales",
+      "salazones-y-huevas"
+    ]
+  },
+  {
+    "id": "pure-de-castanas-salado",
+    "name": "Puré de castañas y guarniciones de otoño",
+    "name_en": "Chestnut purée and autumn garnishes",
+    "cat": "bases",
+    "group": "Cremas y guarniciones",
+    "aka": [
+      "pure de castana",
+      "castanas glaseadas",
+      "castanas salteadas",
+      "guarnicion de castanas",
+      "crema de castanas salada"
+    ],
+    "role": "cremoso",
+    "techniques": [
+      "pure",
+      "hervido"
+    ],
+    "summary": "Castañas peladas cocidas en caldo y trituradas con mantequilla, o glaseadas enteras: guarnición dulce y terrosa para caza, aves y cerdo.",
+    "what": "La castaña cocida en caldo da un puré espeso, dulce y terroso que acompaña muy bien carnes de otoño: pato, caza, cerdo o ave asada. Enteras se glasean como las cebolletas, con mantequilla, un poco de azúcar y caldo, o se saltean con setas y panceta. La parte más laboriosa es pelarlas; se pueden usar castañas ya peladas cocidas o congeladas. La versión dulce está en [[castanas-en-dulce]].",
+    "base": {
+      "for": "unos 600 g de puré",
+      "items": [
+        [
+          "Castañas peladas",
+          "500 g"
+        ],
+        [
+          "Caldo de ave o de verduras",
+          "600 ml"
+        ],
+        [
+          "Apio o cebolla",
+          "80 g"
+        ],
+        [
+          "Mantequilla",
+          "60 g"
+        ],
+        [
+          "Nata (opcional)",
+          "60 g"
+        ],
+        [
+          "Sal, pimienta y una hoja de laurel",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Cuece las castañas con el apio, el laurel y el caldo a fuego suave 25–35 minutos, hasta que estén muy tiernas.",
+        "Escurre guardando el caldo.",
+        "Tritura en caliente con la mantequilla y la nata, añadiendo caldo hasta la textura deseada.",
+        "Pasa por tamiz para una textura fina.",
+        "Ajusta de sal y pimienta."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Puré",
+        "ratio": "500 g de castaña pelada por 60 g de mantequilla",
+        "note": "Caldo de cocción para ajustar."
+      },
+      {
+        "use": "Castañas glaseadas",
+        "ratio": "Mantequilla, una pizca de azúcar y caldo hasta media altura, tapadas con papel",
+        "note": "Reducir hasta que brillen."
+      },
+      {
+        "use": "Pelado",
+        "ratio": "Corte en la piel y escaldado de 2–3 minutos",
+        "note": "Pelar en caliente."
+      }
+    ],
+    "variants": [
+      {
+        "id": "castanas-en-dulce",
+        "name": "Castañas en dulce",
+        "note": "Crema dulce y mont blanc."
+      },
+      {
+        "id": "pures-de-verdura",
+        "name": "Purés de verdura",
+        "note": "La técnica general."
+      },
+      {
+        "id": "guarniciones-de-setas",
+        "name": "Con setas",
+        "note": "Castañas salteadas con setas de otoño."
+      }
+    ],
+    "keys": [
+      "Pela en caliente y quita la película.",
+      "Cocción lenta hasta que se deshagan.",
+      "Tamiza para una textura fina.",
+      "Un punto ácido o amargo equilibra el dulzor.",
+      "Combina con setas, caza y ave."
+    ],
+    "errors": [
+      {
+        "p": "Puré granuloso",
+        "fix": "Castañas poco cocidas. Cuece más y tamiza."
+      },
+      {
+        "p": "Demasiado espeso",
+        "fix": "Espesa al enfriar. Ajusta con caldo caliente."
+      },
+      {
+        "p": "Película amarga",
+        "fix": "Mal peladas. Quita bien la película interior."
+      }
+    ],
+    "history": "Las castañas fueron alimento básico en zonas de montaña de España y Europa, y siguen siendo guarnición de otoño en muchas cocinas.",
+    "uses": [
+      "Caza y pato",
+      "Ave asada",
+      "Cerdo",
+      "Base de plato de otoño"
+    ],
+    "keep": "En frío, tapado a piel, 3 días; congelado, 2 meses.",
+    "pro": "Cuece las castañas en tanda y congela el puré; las glaseadas se hacen por raciones al pedir.",
+    "related": [
+      "castanas-en-dulce",
+      "pures-de-verdura",
+      "guarniciones-de-setas",
+      "pato",
+      "caza-de-pluma",
+      "glaseado-de-verduras"
+    ]
+  },
+  {
+    "id": "ensaladas-de-citricos",
+    "name": "Ensaladas de cítricos",
+    "name_en": "Citrus salads",
+    "cat": "bases",
+    "group": "Cremas y guarniciones",
+    "aka": [
+      "ensalada de naranja",
+      "remojon",
+      "naranja con bacalao",
+      "ensalada de pomelo",
+      "citricos a vivo",
+      "ensalada de invierno"
+    ],
+    "role": "fresco",
+    "techniques": [
+      "crudo"
+    ],
+    "summary": "Gajos o rodajas de cítricos pelados a vivo con aceite, sal, cebolla, aceitunas o hinojo: ensaladas frescas de invierno y acompañamiento de pescados y carnes.",
+    "what": "Los [[citricos]] pelados a vivo, sin piel ni membranas, dan una ensalada jugosa, ácida y dulce a la vez. Con buen aceite, sal en escamas, cebolla roja, aceitunas negras o hinojo es un plato completo de invierno; con bacalao desmigado, una ensalada tradicional del sur. Mezclar naranja, pomelo, mandarina y limón da colores y acideces distintas. Funciona también como contrapunto de carnes grasas y pescados a la brasa.",
+    "base": {
+      "for": "4 raciones",
+      "items": [
+        [
+          "Naranjas, pomelos o mandarinas",
+          "4–5 piezas"
+        ],
+        [
+          "Cebolla roja en aros finos",
+          "50 g"
+        ],
+        [
+          "Aceitunas negras",
+          "60 g"
+        ],
+        [
+          "Hinojo en láminas finas (opcional)",
+          "1/2 bulbo"
+        ],
+        [
+          "Aceite de oliva virgen extra",
+          "40 g"
+        ],
+        [
+          "Sal en escamas y pimienta",
+          "al gusto"
+        ],
+        [
+          "Hierbas: menta, hinojo o perejil",
+          "unas hojas"
+        ]
+      ],
+      "steps": [
+        "Pela los cítricos a vivo: corta los extremos, retira la piel y la parte blanca con el cuchillo siguiendo la curva, y saca los gajos entre las membranas o corta en rodajas.",
+        "Recoge el zumo que suelten.",
+        "Lava la cebolla en agua fría 10 minutos para suavizarla.",
+        "Coloca los cítricos, la cebolla, las aceitunas y el hinojo.",
+        "Aliña con el aceite, el zumo recogido, sal en escamas, pimienta y hierbas, justo antes de servir."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Aliño",
+        "ratio": "Aceite y el zumo que suelta la fruta, 2:1",
+        "note": "Sin vinagre: ya hay ácido."
+      },
+      {
+        "use": "Con bacalao",
+        "ratio": "150 g de bacalao desalado y desmigado por cada 4 naranjas",
+        "note": "Ensalada de naranja y bacalao."
+      },
+      {
+        "use": "Como guarnición",
+        "ratio": "60–80 g de cítrico por ración",
+        "note": "Junto a pescado o carne a la brasa."
+      }
+    ],
+    "variants": [
+      {
+        "id": "citricos",
+        "name": "Cítricos",
+        "note": "Variedades y temporada."
+      },
+      {
+        "id": "ensalada-de-hierbas",
+        "name": "Ensalada de hierbas",
+        "note": "Otra guarnición fresca."
+      },
+      {
+        "id": "bacalao",
+        "name": "Con bacalao",
+        "note": "Desalado y desmigado."
+      }
+    ],
+    "keys": [
+      "Pelado a vivo: sin parte blanca, que amarga.",
+      "Aprovecha el zumo que suelta la fruta.",
+      "Sal en escamas al final.",
+      "Cebolla lavada en agua fría.",
+      "Mezcla cítricos de distinta acidez y color."
+    ],
+    "errors": [
+      {
+        "p": "Amarga",
+        "fix": "Restos de parte blanca. Pela con cuchillo afilado."
+      },
+      {
+        "p": "Aguada",
+        "fix": "Aliñada con antelación. Aliña al servir."
+      },
+      {
+        "p": "Cebolla fuerte",
+        "fix": "Sin lavar. Déjala en agua fría."
+      }
+    ],
+    "history": "Las ensaladas de naranja con aceite, sal y otros ingredientes son tradicionales en el sur de España y en otras zonas del Mediterráneo con abundancia de cítricos.",
+    "uses": [
+      "Ensalada de invierno",
+      "Guarnición de pescado o pato",
+      "Entrante fresco",
+      "Acompañar bacalao"
+    ],
+    "keep": "Gajos pelados en frío, tapados, 1 día. Aliñada, al momento.",
+    "pro": "Pela los cítricos por la mañana y guárdalos con su zumo en frío; monta y aliña al pedir.",
+    "related": [
+      "citricos",
+      "ensalada-de-hierbas",
+      "bacalao",
+      "aceitunas-y-alcaparras",
+      "hinojo-y-apio",
+      "cortes-de-cuchillo"
+    ]
   }
 ]

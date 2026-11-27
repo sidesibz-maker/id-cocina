@@ -5860,5 +5860,825 @@
       "cocina-ibicenca",
       "aceitunas-y-alcaparras"
     ]
+  },
+  {
+    "id": "tare-japonesa",
+    "name": "Tare japonesa",
+    "aka": [
+      "tare",
+      "shoyu tare",
+      "shio tare",
+      "miso tare",
+      "tare de yakitori",
+      "base de sazón del ramen"
+    ],
+    "cat": "bases",
+    "group": "Bases",
+    "summary": "Concentrado salado que sazona un caldo o glasea una brocheta: soja, sal o miso con mirin, sake y umami de kombu y setas.",
+    "what": "En Japón se separa el caldo de la sazón. El caldo se hace sin sal; la sal y buena parte del sabor llegan con la tare, un concentrado que se pone en el fondo del cuenco antes de verter el caldo, como en el [[ramen]]. Hay tres familias: shoyu tare (de soja), shio tare (de sal, más clara) y miso tare. La tare de yakitori es otra cosa: soja, mirin, sake y azúcar reducidos, enriquecidos con los jugos de las brochetas que se mojan en ella una y otra vez.\n\nLa idea es útil fuera de lo japonés: un caldo neutro con distintas tares da platos distintos, y la sazón queda exacta en cada cuenco. Las tares se apoyan en el umami del kombu, las setas secas y el bonito seco ([[umami-glutamato-y-sinergia]]).",
+    "base": {
+      "for": "unos 600 ml de shoyu tare",
+      "items": [
+        [
+          "Salsa de soja",
+          "500 ml"
+        ],
+        [
+          "Mirin",
+          "120 ml"
+        ],
+        [
+          "Sake",
+          "100 ml"
+        ],
+        [
+          "Kombu",
+          "10 g"
+        ],
+        [
+          "Shiitake seco",
+          "10 g"
+        ],
+        [
+          "Bonito seco en escamas",
+          "15 g"
+        ],
+        [
+          "Azúcar (opcional)",
+          "10 g"
+        ]
+      ],
+      "steps": [
+        "Hidrata el kombu y el shiitake en la soja 2–3 horas en frío o toda la noche.",
+        "Calienta el sake y el mirin en un cazo y deja hervir 1 minuto para quitar parte del alcohol.",
+        "Añade la soja con el kombu y las setas y calienta hasta 80 °C, sin hervir; retira el kombu.",
+        "Apaga el fuego, añade el bonito y deja infusionar 10 minutos.",
+        "Cuela apretando y enfría rápido."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Cuenco de ramen",
+        "ratio": "25–35 ml de tare por 350 ml de caldo",
+        "note": "Probar con el caldo de la casa."
+      },
+      {
+        "use": "Shio tare",
+        "ratio": "Caldo de kombu 500 ml con 60–75 g de sal y 50 ml de sake",
+        "note": "Clara y salina."
+      },
+      {
+        "use": "Tare de yakitori",
+        "ratio": "Soja, mirin y sake 2:2:1 con 10 % de azúcar, reducida un tercio",
+        "note": "Con huesos de pollo asados."
+      },
+      {
+        "use": "Aliño de arroz o verdura",
+        "ratio": "1 parte de tare por 4 de caldo",
+        "note": "Sazón rápida."
+      }
+    ],
+    "variants": [
+      {
+        "id": "ramen",
+        "name": "Ramen",
+        "note": "Uso principal de las tares de caldo."
+      },
+      {
+        "id": "robata-y-parrilla-japonesa",
+        "name": "Yakitori",
+        "note": "Tare para glasear brochetas."
+      },
+      {
+        "id": "teriyaki-y-glaseados-de-soja",
+        "name": "Teriyaki",
+        "note": "Glaseado de la misma familia."
+      },
+      {
+        "id": null,
+        "name": "Miso tare",
+        "note": "Miso con ajo, sésamo y grasa; para caldos densos."
+      }
+    ],
+    "keys": [
+      "Caldo sin sal, sazón con la tare.",
+      "No hervir la soja con el kombu: sabe a cocido.",
+      "Mide la tare por cuenco: sazón exacta.",
+      "Una tare de yakitori mejora con el uso, si se cuida.",
+      "Distintas tares, distintos platos con un solo caldo."
+    ],
+    "errors": [
+      {
+        "p": "Tare con gusto a soja hervida",
+        "fix": "Hirvió. Calienta hasta 80 °C y retira."
+      },
+      {
+        "p": "Cuenco salado",
+        "fix": "Demasiada tare para ese caldo. Mide en cada cuenco y prueba."
+      },
+      {
+        "p": "Tare de brochetas que fermenta",
+        "fix": "Se dejó templada. Hiérvela 1–2 minutos y guárdala en frío cada noche."
+      }
+    ],
+    "history": "La separación entre caldo y sazón es propia de la cocina japonesa y se ha hecho muy visible con la expansión del ramen. Las salsas de soja reducidas para la parrilla son también tradicionales.",
+    "uses": [
+      "Ramen y sopas de fideos",
+      "Brochetas a la brasa",
+      "Arroces y verduras",
+      "Glaseados"
+    ],
+    "keep": "Shoyu tare: 1 mes en frío, bien cerrada. Shio tare: 2 semanas. La de yakitori, que recibe jugos de carne: hervirla cada día y guardarla en frío.",
+    "pro": "Ten la tare en un dosificador por servicio y la cantidad por cuenco escrita en la ficha. Haz tanda para varias semanas.",
+    "related": [
+      "ramen",
+      "robata-y-parrilla-japonesa",
+      "teriyaki-y-glaseados-de-soja",
+      "dashi",
+      "soja-y-derivados",
+      "umami-glutamato-y-sinergia"
+    ]
+  },
+  {
+    "id": "fondos-ahumados-y-de-brasa",
+    "name": "Fondos ahumados y de brasa",
+    "aka": [
+      "fondo de brasa",
+      "caldo ahumado",
+      "fondo de huesos a la brasa",
+      "caldo de leña",
+      "cebolla quemada"
+    ],
+    "cat": "fondos",
+    "group": "Fondos oscuros",
+    "summary": "Fondos y caldos con huesos, espinas o verduras pasados por la brasa: sabor a fuego sin que el humo amargue.",
+    "what": "En una cocina de brasa, el fuego puede estar también dentro de los fondos. Se tuestan huesos, espinas o verduras sobre la brasa o junto a ella en lugar de en el horno, o se añaden al caldo cebolla y puerro quemados por fuera, piel de pimiento asado o un trozo de corteza de carne de la parrilla. Sale un [[fondo-oscuro]] o un caldo con un fondo tostado y un punto ahumado que liga con lo que se sirve a la brasa.\n\nLa clave es la medida: el humo intenso y los trozos carbonizados dan amargor y gusto a ceniza, y la cocción larga lo concentra. Mejor tostar fuerte en poco tiempo con brasa limpia que ahumar mucho rato. Para el fuego en sí, ver [[fuego-y-brasa]] y [[ahumado]].",
+    "base": {
+      "for": "unos 2 litros",
+      "items": [
+        [
+          "Huesos de ave o de ternera troceados",
+          "2 kg"
+        ],
+        [
+          "Cebolla con piel, partida en dos",
+          "2 (300 g)"
+        ],
+        [
+          "Puerro",
+          "1 (200 g)"
+        ],
+        [
+          "Zanahoria",
+          "150 g"
+        ],
+        [
+          "Tomate maduro",
+          "200 g"
+        ],
+        [
+          "Agua fría",
+          "3,5 l"
+        ],
+        [
+          "Tomillo, laurel y pimienta en grano",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Asa los huesos sobre brasa media o a su lado, dándoles la vuelta, hasta que estén dorados por todas partes; 30–45 minutos.",
+        "Pon las cebollas por el corte directamente sobre la brasa hasta que estén negras en la cara, 10 minutos; el puerro y la zanahoria, hasta que se tuesten.",
+        "Pasa todo a la olla, cubre con el agua fría y lleva a 85–90 °C sin que hierva.",
+        "Desespuma, añade el tomate y los aromáticos y cuece 4–6 horas para ave o 6–8 para ternera.",
+        "Cuela, enfría rápido y desgrasa en frío. Prueba: si amarga, la próxima vez menos tiempo de tueste o menos humo."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Fondo de ave a la brasa",
+        "ratio": "2 kg de huesos por 3,5 l de agua, 4–6 h",
+        "note": "Para jugos de ave."
+      },
+      {
+        "use": "Cebolla quemada",
+        "ratio": "1–2 cebollas por cada 3 l",
+        "note": "Color y dulzor tostado."
+      },
+      {
+        "use": "Caldo de verduras de brasa",
+        "ratio": "1,5 kg de verdura asada por 2,5 l, 1 h",
+        "note": "Ver caldos de verdura tostada."
+      },
+      {
+        "use": "Espinas a la brasa",
+        "ratio": "Tostado corto y cocción de 20–30 minutos",
+        "note": "El pescado amarga con el tiempo."
+      }
+    ],
+    "variants": [
+      {
+        "id": "fondo-oscuro-de-ave",
+        "name": "Fondo oscuro de ave",
+        "note": "Versión de horno."
+      },
+      {
+        "id": "caldo-de-verduras-tostadas",
+        "name": "Verduras tostadas",
+        "note": "Sin hueso."
+      },
+      {
+        "id": "jugo-de-espinas-asadas",
+        "name": "Jugo de espinas",
+        "note": "La idea aplicada al pescado."
+      },
+      {
+        "id": "ahumado-con-hierbas",
+        "name": "Ahumado con hierbas",
+        "note": "Humo aromático corto."
+      }
+    ],
+    "keys": [
+      "Tostado fuerte y corto mejor que humo largo.",
+      "Brasa limpia, sin llama sucia de grasa.",
+      "Negro solo en la cara de la cebolla, no en los huesos.",
+      "La cocción concentra el humo: mide al principio.",
+      "Prueba antes de reducir."
+    ],
+    "errors": [
+      {
+        "p": "Fondo amargo o con gusto a ceniza",
+        "fix": "Huesos carbonizados o mucho humo. Tuesta menos y retira las partes negras."
+      },
+      {
+        "p": "Glasa que amarga al reducir",
+        "fix": "El amargor se concentra. Reduce menos o mezcla con un fondo neutro."
+      },
+      {
+        "p": "Fondo graso y turbio",
+        "fix": "Hirvió con la grasa de la brasa. Desgrasa y cuece sin hervor."
+      }
+    ],
+    "history": "Tostar huesos y verduras antes de mojarlos es una práctica de siempre de la cocina clásica. Las cocinas de brasa y de leña han llevado ese tostado al fuego vivo como sello propio.",
+    "uses": [
+      "Jugos para carnes a la brasa",
+      "Arroces de carne",
+      "Guisos y salsas oscuras",
+      "Caldos de verduras para platos de fuego"
+    ],
+    "keep": "En frío 3–4 días; congelado en porciones, 3 meses. Desgrasado y abatido tras colar.",
+    "pro": "Aprovecha la brasa al final del servicio, cuando está limpia y baja, para tostar los huesos y la cebolla del fondo del día siguiente.",
+    "related": [
+      "fuego-y-brasa",
+      "ahumado",
+      "fondo-oscuro",
+      "fondo-oscuro-de-ave",
+      "caldo-de-verduras-tostadas",
+      "jugo-de-carne"
+    ]
+  },
+  {
+    "id": "jugo-de-espinas-asadas",
+    "name": "Jugo de espinas asadas",
+    "aka": [
+      "jugo de pescado",
+      "jus de pescado",
+      "jugo de espinas",
+      "salsa de espinas asadas",
+      "fondo oscuro de pescado"
+    ],
+    "cat": "fondos",
+    "group": "Jugos y glasas",
+    "summary": "Espinas y cabezas de pescado blanco asadas, mojadas poco tiempo y reducidas: un jugo tostado para pescados a la brasa o asados.",
+    "what": "Es el equivalente marino del [[jugo-de-carne]]. Se asan espinas y cabezas limpias de pescado blanco de carne firme (rape, rodaballo, gallo, lubina, dorada, merluza) hasta dorarlas, se deglasea con vino blanco, se moja justo a cubrir y se cuece poco, porque las espinas amargan pronto. Colado y reducido, sale un jugo ámbar, con cuerpo por la gelatina, que sabe a pescado asado y no a caldo.\n\nSe termina montado con mantequilla o aceite, o con un punto de ácido. Acompaña pescados a la brasa, a la plancha o asados y es una alternativa al [[beurre-blanc]] más ligera. Se puede partir de agua, de [[fumet]] o de [[caldo-de-roca]] para más intensidad. No conviene usar pescado azul, que da sabor fuerte y grasa.",
+    "base": {
+      "for": "unos 300 ml de jugo",
+      "items": [
+        [
+          "Espinas y cabezas de pescado blanco, sin agallas ni sangre",
+          "1,5 kg"
+        ],
+        [
+          "Aceite de oliva",
+          "40 ml"
+        ],
+        [
+          "Chalota en láminas",
+          "100 g"
+        ],
+        [
+          "Ajo",
+          "2 dientes"
+        ],
+        [
+          "Tomate maduro",
+          "100 g"
+        ],
+        [
+          "Vino blanco seco",
+          "150 ml"
+        ],
+        [
+          "Agua fría o fumet",
+          "1,2 l"
+        ],
+        [
+          "Tomillo y piel de limón",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Lava las espinas en agua fría para quitar la sangre, trocéalas y sécalas bien.",
+        "Ásalas con el aceite en bandeja a 200–220 °C, 20–25 minutos, o en la brasa, hasta que estén doradas; o dóralas en una cacerola ancha.",
+        "Rehoga la chalota y el ajo, añade el tomate y las espinas y deglasea con el vino hasta que casi se evapore.",
+        "Moja justo a cubrir y cuece a fuego suave 20–30 minutos, desespumando.",
+        "Cuela sin apretar, reduce a fuego vivo hasta que nape la cuchara y termina con mantequilla fría o aceite."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Rendimiento",
+        "ratio": "1,5 kg de espinas para 250–300 ml de jugo",
+        "note": "Reducido."
+      },
+      {
+        "use": "Montar",
+        "ratio": "20–30 g de mantequilla por cada 100 ml",
+        "note": "Fuera del fuego."
+      },
+      {
+        "use": "Ración",
+        "ratio": "25–30 ml por plato",
+        "note": "Muy concentrado."
+      },
+      {
+        "use": "Con fumet en lugar de agua",
+        "ratio": "Misma cantidad",
+        "note": "Más cuerpo y sabor."
+      }
+    ],
+    "variants": [
+      {
+        "id": "fumet",
+        "name": "Fumet",
+        "note": "Versión clara, sin asar."
+      },
+      {
+        "id": "caldo-de-roca",
+        "name": "Caldo de roca",
+        "note": "Para un jugo más mediterráneo."
+      },
+      {
+        "id": "fondos-ahumados-y-de-brasa",
+        "name": "Espinas a la brasa",
+        "note": "Más fuego."
+      },
+      {
+        "id": "beurre-blanc",
+        "name": "Beurre blanc",
+        "note": "Alternativa más grasa."
+      }
+    ],
+    "keys": [
+      "Espinas limpias de sangre y agallas.",
+      "Asar hasta dorar, no hasta quemar.",
+      "Cocción corta: 20–30 minutos.",
+      "Colar sin apretar para que no enturbie.",
+      "Reducir en cazo ancho y montar al final."
+    ],
+    "errors": [
+      {
+        "p": "Jugo amargo",
+        "fix": "Agallas, sangre o cocción larga. Limpia bien y no pases de 30 minutos."
+      },
+      {
+        "p": "Jugo turbio",
+        "fix": "Hirvió fuerte o se apretó al colar. Cuece suave y cuela por estameña."
+      },
+      {
+        "p": "Jugo sin cuerpo",
+        "fix": "Pocas cabezas o espinas de pescado pequeño. Usa rape, rodaballo o gallo."
+      }
+    ],
+    "history": "Los jugos de carne asada son clásicos de la cocina francesa. La cocina de autor aplicó la misma idea al pescado en las últimas décadas para acompañar pescados asados sin salsas pesadas.",
+    "uses": [
+      "Pescado a la brasa o a la plancha",
+      "Pescado asado entero o en lomo",
+      "Arroces de pescado",
+      "Base de salsas de pescado"
+    ],
+    "keep": "Sin montar, 2 días en frío o 2 meses congelado. Se monta al regenerar.",
+    "pro": "Asa las espinas del despiece del día y congela el jugo reducido en porciones pequeñas. Monta cada tanda en el pase.",
+    "related": [
+      "fumet",
+      "jugo-de-carne",
+      "reducciones",
+      "beurre-blanc",
+      "pescado-entero",
+      "gallo-y-rodaballo"
+    ]
+  },
+  {
+    "id": "caldo-claro-chino",
+    "name": "Caldo claro chino",
+    "aka": [
+      "caldo superior",
+      "caldo de gallina y jamón",
+      "caldo claro asiático",
+      "caldo para wonton",
+      "consomé chino"
+    ],
+    "cat": "fondos",
+    "group": "Fondos claros",
+    "summary": "Caldo muy limpio de gallina, cerdo y jamón curado con jengibre y cebolleta, cocido sin hervor: base de sopas, braseados y salsas finas.",
+    "what": "Es el caldo de referencia de la cocina china de restaurante: gallina vieja, jarrete o costilla de cerdo y jamón curado, blanqueados y cocidos muchas horas a fuego muy bajo, con jengibre y cebolleta. Sale transparente, dorado, con mucho sabor y sin grasa. Sirve para sopas de wonton y fideos, para mojar verduras salteadas, para braseados y para salsas ligadas con almidón.\n\nSe parece al [[fondo-blanco]], pero el jamón y la ausencia de verduras de mirepoix le dan un sabor más cárnico y umami. El jamón curado español funciona muy bien en lugar del jamón chino. Para una limpieza total, se puede clarificar con carne picada como un [[consome]].",
+    "base": {
+      "for": "unos 3 litros",
+      "items": [
+        [
+          "Gallina vieja troceada",
+          "1,5 kg"
+        ],
+        [
+          "Jarrete o costilla de cerdo",
+          "1 kg"
+        ],
+        [
+          "Jamón curado (puntas o hueso con carne)",
+          "200 g"
+        ],
+        [
+          "Jengibre en rodajas",
+          "30 g"
+        ],
+        [
+          "Cebolleta",
+          "3"
+        ],
+        [
+          "Agua fría",
+          "5 l"
+        ],
+        [
+          "Vino de arroz (opcional)",
+          "50 ml"
+        ]
+      ],
+      "steps": [
+        "Blanquea la gallina y el cerdo: cubre con agua fría, lleva a hervor 3–5 minutos, escurre y lava bajo el grifo.",
+        "Pon las carnes y el jamón en una olla limpia con el agua fría y lleva despacio a 85–90 °C.",
+        "Desespuma bien, añade el jengibre y la cebolleta y mantén sin hervor 4–5 horas.",
+        "Añade el vino de arroz en la última media hora si lo usas.",
+        "Cuela por estameña sin apretar, enfría rápido y desgrasa en frío."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Caldo base",
+        "ratio": "2,7 kg de carne y hueso por 5 l de agua",
+        "note": "Rinde unos 3 l."
+      },
+      {
+        "use": "Jamón",
+        "ratio": "40 g por litro de agua",
+        "note": "Sala: no añadas sal hasta el final."
+      },
+      {
+        "use": "Clarificado",
+        "ratio": "250 g de pechuga picada y 2 claras por litro",
+        "note": "Como un consomé."
+      },
+      {
+        "use": "Sopa de wonton",
+        "ratio": "300 ml por ración",
+        "note": "Sazonar con sal y unas gotas de aceite de sésamo."
+      }
+    ],
+    "variants": [
+      {
+        "id": "fondo-blanco",
+        "name": "Fondo blanco",
+        "note": "Versión francesa con verduras."
+      },
+      {
+        "id": "consome",
+        "name": "Consomé",
+        "note": "Clarificación."
+      },
+      {
+        "id": "caldo-de-cocido-y-jamon",
+        "name": "Caldo de cocido",
+        "note": "Pariente español."
+      },
+      {
+        "id": "dumplings-y-masas-al-vapor",
+        "name": "Wonton y dumplings",
+        "note": "Su uso más típico."
+      }
+    ],
+    "keys": [
+      "Blanquear las carnes: limpieza.",
+      "Nunca hervir: 85–90 °C.",
+      "Sin verduras dulces: jengibre y cebolleta.",
+      "El jamón da umami y sal.",
+      "Colar sin apretar."
+    ],
+    "errors": [
+      {
+        "p": "Caldo turbio",
+        "fix": "Hirvió o no se blanqueó. Blanquea y mantén por debajo del hervor."
+      },
+      {
+        "p": "Caldo salado",
+        "fix": "Mucho jamón o reducido. Sala solo al final y ajusta el jamón."
+      },
+      {
+        "p": "Sabor plano",
+        "fix": "Gallina joven o poco tiempo. Usa gallina vieja y respeta las horas."
+      }
+    ],
+    "history": "Los caldos claros de gallina y jamón son la base de la cocina cantonesa y de otras cocinas regionales chinas de restaurante. Su técnica de blanqueado y cocción suave es muy antigua.",
+    "uses": [
+      "Sopas de wonton y fideos",
+      "Verduras salteadas",
+      "Braseados",
+      "Salsas ligadas con almidón"
+    ],
+    "keep": "En frío 3–4 días; congelado, 3 meses. Desgrasado y abatido tras colar.",
+    "pro": "Haz tanda grande una vez por semana y congélala en bloques de 1 l. Las puntas de jamón del despiece son perfectas para este caldo.",
+    "related": [
+      "fondo-blanco",
+      "consome",
+      "caldo-de-cocido-y-jamon",
+      "jamon-curado",
+      "dumplings-y-masas-al-vapor",
+      "aromaticos-de-asia"
+    ]
+  },
+  {
+    "id": "alinos-japoneses-de-vinagre",
+    "name": "Aliños japoneses de vinagre",
+    "aka": [
+      "amazu",
+      "nihaizu",
+      "sanbaizu",
+      "tosazu",
+      "sunomono",
+      "aliño de vinagre de arroz"
+    ],
+    "cat": "bases",
+    "group": "Bases",
+    "summary": "Mezclas de vinagre de arroz con azúcar, soja, mirin o dashi: amazu, nihaizu, sanbaizu y tosazu, para encurtidos rápidos y ensaladas ácidas.",
+    "what": "La cocina japonesa tiene una familia de aliños de vinagre de arroz que se combinan como piezas. El amazu es vinagre con azúcar, para encurtir jengibre, rábano o pepino. El nihaizu, vinagre y soja, es seco y salado. El sanbaizu, vinagre, soja y mirin o azúcar, es el más equilibrado. El tosazu es un sanbaizu con [[dashi]] infusionado con bonito seco, más suave y profundo.\n\nSe usan en los sunomono (ensaladas ácidas de pepino, alga wakame y marisco), para aliñar verduras escaldadas o para marinar pescado. Son más suaves que una [[vinagreta]] porque el vinagre de arroz tiene menos acidez y no llevan aceite. Son parientes del [[ponzu-y-salsas-citricas|ponzu]], que usa cítrico en lugar de vinagre.",
+    "base": {
+      "for": "unos 300 ml de tosazu",
+      "items": [
+        [
+          "Vinagre de arroz",
+          "100 ml"
+        ],
+        [
+          "Dashi",
+          "100 ml"
+        ],
+        [
+          "Salsa de soja clara",
+          "40 ml"
+        ],
+        [
+          "Mirin",
+          "40 ml"
+        ],
+        [
+          "Azúcar",
+          "10 g"
+        ],
+        [
+          "Bonito seco en escamas",
+          "5 g"
+        ]
+      ],
+      "steps": [
+        "Calienta el dashi, la soja, el mirin y el azúcar hasta que el azúcar se disuelva, sin hervir.",
+        "Retira del fuego, añade el vinagre y el bonito seco.",
+        "Deja infusionar hasta que enfríe y cuela.",
+        "Guárdalo en frío y prueba antes de usar: debe ser ácido, suave y un poco dulce.",
+        "Para sunomono, sala el pepino en rodajas finas 10 minutos, escurre y aliña al momento."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Amazu",
+        "ratio": "Vinagre de arroz 100 ml, azúcar 30–40 g, sal 2 g",
+        "note": "Encurtidos rápidos."
+      },
+      {
+        "use": "Nihaizu",
+        "ratio": "Vinagre y soja 1:1",
+        "note": "Seco; para marisco."
+      },
+      {
+        "use": "Sanbaizu",
+        "ratio": "Vinagre, soja y mirin 1:1:1",
+        "note": "Rebajar con dashi al gusto."
+      },
+      {
+        "use": "Sunomono",
+        "ratio": "20–25 ml de aliño por cada 100 g de verdura",
+        "note": "Verdura bien escurrida."
+      }
+    ],
+    "variants": [
+      {
+        "id": "ponzu-y-salsas-citricas",
+        "name": "Ponzu",
+        "note": "Con cítrico en lugar de vinagre."
+      },
+      {
+        "id": "encurtidos-rapidos",
+        "name": "Encurtidos rápidos",
+        "note": "Amazu como líquido de encurtir."
+      },
+      {
+        "id": "sushi-y-sashimi",
+        "name": "Arroz de sushi",
+        "note": "Otra mezcla de vinagre, azúcar y sal."
+      },
+      {
+        "id": null,
+        "name": "Tosazu",
+        "note": "Sanbaizu con dashi y bonito."
+      }
+    ],
+    "keys": [
+      "Vinagre de arroz: menos ácido que el de vino.",
+      "Sin aceite: limpios y frescos.",
+      "Combinar como piezas: dulce, salado, umami.",
+      "Escurrir bien la verdura antes de aliñar.",
+      "Aliñar al momento: la verdura suelta agua."
+    ],
+    "errors": [
+      {
+        "p": "Aliño agresivo",
+        "fix": "Vinagre de vino en lugar de arroz o sin rebajar. Usa vinagre de arroz o añade dashi."
+      },
+      {
+        "p": "Ensalada aguada",
+        "fix": "Pepino sin salar ni escurrir. Sala, espera y escurre bien."
+      },
+      {
+        "p": "Sabor plano",
+        "fix": "Falta umami. Usa dashi o un poco de bonito seco."
+      }
+    ],
+    "history": "Los aliños de vinagre forman parte de la estructura de la comida japonesa tradicional, donde un plato ácido acompaña al resto. Sus proporciones clásicas se transmiten como fórmulas de cocina.",
+    "uses": [
+      "Ensaladas de pepino y algas",
+      "Marisco cocido",
+      "Encurtidos rápidos",
+      "Verduras escaldadas"
+    ],
+    "keep": "Amazu y nihaizu: 1 mes en frío. Con dashi (tosazu): 4–5 días en frío. Si se usan con pescado crudo o marinado, el pescado debe haberse congelado a −20 °C al menos 24 horas en toda la pieza (anisakis).",
+    "pro": "Ten amazu y sanbaizu en botellas etiquetadas; el tosazu, en tandas pequeñas para la semana.",
+    "related": [
+      "dashi",
+      "ponzu-y-salsas-citricas",
+      "encurtidos-rapidos",
+      "vinagres",
+      "algas",
+      "vinagreta"
+    ]
+  },
+  {
+    "id": "fondos-a-presion",
+    "name": "Fondos en olla a presión",
+    "aka": [
+      "caldo a presión",
+      "fondo rápido",
+      "olla exprés",
+      "olla a presión",
+      "caldos a presión"
+    ],
+    "cat": "fondos",
+    "group": "Fondos claros",
+    "summary": "Fondos y caldos en una fracción del tiempo, más claros y aromáticos que en olla abierta: tiempos, cantidades y precauciones.",
+    "what": "En una olla a presión el agua llega a unos 115–120 °C, de modo que el colágeno se convierte en gelatina mucho antes y el sabor se extrae en una o dos horas en lugar de cuatro u ocho. Además, al no haber burbujeo, el caldo sale más limpio, y los aromas, que no escapan con el vapor, se quedan dentro.\n\nSirve para fondos de ave, de ternera, de cerdo, caldos de verdura y de crustáceo; también para jugos con mucha gelatina. No conviene para el [[fumet]] de pescado blanco, que amarga a esas temperaturas. Lo que no se puede hacer es desespumar durante la cocción: se blanquean o lavan los huesos antes. Para el principio, ver [[colageno-y-gelatina]].",
+    "base": {
+      "for": "unos 2 litros (olla de 8–10 l)",
+      "items": [
+        [
+          "Huesos de ave o de ternera troceados, blanqueados",
+          "2 kg"
+        ],
+        [
+          "Cebolla",
+          "150 g"
+        ],
+        [
+          "Zanahoria",
+          "100 g"
+        ],
+        [
+          "Puerro o apio",
+          "100 g"
+        ],
+        [
+          "Agua fría",
+          "2,5 l"
+        ],
+        [
+          "Laurel, tomillo y pimienta en grano",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Blanquea los huesos en agua hirviendo 3–5 minutos y lávalos; para fondo oscuro, ásalos antes.",
+        "Pon huesos, verduras, aromáticos y agua en la olla sin pasar de dos tercios de su capacidad.",
+        "Cierra, lleva a presión a fuego medio y baja al mínimo que la mantenga.",
+        "Cuece 1–1,5 horas para ave, 2–2,5 para ternera o huesos grandes.",
+        "Apaga y deja que la presión baje sola antes de abrir; cuela sin apretar, enfría rápido y desgrasa en frío."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Fondo blanco de ave",
+        "ratio": "1–1,5 h a presión",
+        "note": "Frente a 4 h en olla abierta."
+      },
+      {
+        "use": "Fondo de ternera",
+        "ratio": "2–2,5 h a presión",
+        "note": "Frente a 6–8 h."
+      },
+      {
+        "use": "Caldo de verduras",
+        "ratio": "20–30 minutos",
+        "note": "Más tiempo, sabores cocidos."
+      },
+      {
+        "use": "Caldo de crustáceo",
+        "ratio": "20–25 minutos",
+        "note": "Cáscaras tostadas antes."
+      }
+    ],
+    "variants": [
+      {
+        "id": "fondo-blanco",
+        "name": "Fondo blanco",
+        "note": "Versión clásica en olla abierta."
+      },
+      {
+        "id": "fondo-oscuro",
+        "name": "Fondo oscuro",
+        "note": "Huesos asados antes."
+      },
+      {
+        "id": "caldo-de-marisco-expres",
+        "name": "Caldo de marisco exprés",
+        "note": "Otra vía rápida."
+      },
+      {
+        "id": "glace",
+        "name": "Glasa",
+        "note": "Reducir después en olla abierta."
+      }
+    ],
+    "keys": [
+      "Blanquear o lavar los huesos: no se puede desespumar.",
+      "Como mucho dos tercios de la olla.",
+      "Fuego mínimo una vez en presión.",
+      "Despresurizar sola: el escape brusco enturbia.",
+      "Pescado blanco, no: amarga."
+    ],
+    "errors": [
+      {
+        "p": "Caldo turbio",
+        "fix": "Despresurizado de golpe o fuego fuerte. Deja bajar la presión sola y cuece al mínimo."
+      },
+      {
+        "p": "Sabor a cocido o verdura pasada",
+        "fix": "Demasiado tiempo para verduras. Añádelas en una segunda cocción corta o acorta."
+      },
+      {
+        "p": "Fumet amargo",
+        "fix": "Las espinas no aguantan la temperatura. Haz el fumet en olla abierta, 20–30 minutos."
+      }
+    ],
+    "history": "La olla a presión moderna se popularizó en las cocinas domésticas en el siglo XX. Su uso en cocina profesional para fondos se ha extendido en las últimas décadas por el ahorro de tiempo y la calidad del caldo.",
+    "uses": [
+      "Fondos de ave y carne",
+      "Caldos de verdura",
+      "Caldos de crustáceo",
+      "Jugos gelatinosos"
+    ],
+    "keep": "Como cualquier fondo: abatido tras colar, 3–4 días en frío, 3 meses congelado.",
+    "pro": "Revisa juntas y válvulas cada semana y no la llenes de más. Sirve para sacar un fondo de última hora sin depender de la noche anterior.",
+    "related": [
+      "fondo-blanco",
+      "fondo-oscuro",
+      "colageno-y-gelatina",
+      "glace",
+      "caldo-de-marisco-expres",
+      "cadena-de-frio"
+    ]
   }
 ]

@@ -4288,5 +4288,959 @@
    "escribir-una-carta",
    "cocina-de-verano-e-invierno"
   ]
+ },
+ {
+  "id": "simplificar-un-plato",
+  "name": "Simplificar un plato",
+  "name_en": "Simplifying a dish",
+  "cat": "creatividad",
+  "group": "Método",
+  "aka": [
+   "quitar elementos",
+   "menos es mas",
+   "depurar un plato",
+   "plato recargado",
+   "editar un plato"
+  ],
+  "summary": "Un método para quitar lo que sobra en un plato hasta quedarse con lo esencial, sin perder sabor ni interés.",
+  "what": "Los platos suelen crecer por acumulación: cada prueba añade un elemento que arregla algo, y al final hay demasiadas cosas que compiten. Simplificar es el trabajo contrario: quitar elemento a elemento y comprobar si se echa de menos. Un plato más simple se entiende mejor, se monta más rápido y deja ver el producto. No es hacer platos pobres: cada elemento que queda tiene que estar perfecto.",
+  "method": [
+   "Haz la lista de todos los elementos del plato, incluidos acabados y salsas.",
+   "Al lado de cada uno, escribe qué aporta: sabor, textura, temperatura, color o nada claro.",
+   "Prepara el plato completo y, al lado, versiones quitando un elemento cada vez.",
+   "Cata las versiones con el equipo: si nadie echa de menos un elemento, sobra.",
+   "Si dos elementos aportan lo mismo (dos ácidos, dos crujientes), quédate con el mejor.",
+   "Mejora lo que queda: cuando hay menos cosas, cada una se nota más."
+  ],
+  "ratios": [
+   {
+    "use": "Elementos de un plato principal",
+    "ratio": "3–5",
+    "note": "Protagonista, 1–2 acompañantes, salsa y acabado."
+   },
+   {
+    "use": "Elementos que hacen lo mismo",
+    "ratio": "1 por función",
+    "note": "Un ácido, un crujiente, una grasa."
+   },
+   {
+    "use": "Pruebas de quitar",
+    "ratio": "Una por elemento",
+    "note": "Siempre comparando con el plato completo."
+   }
+  ],
+  "variants": [
+   {
+    "id": "construir-un-plato",
+    "name": "Construir un plato",
+    "note": "El camino de ida: de la idea al plato."
+   },
+   {
+    "id": "producto-o-tecnica",
+    "name": "Producto o técnica",
+    "note": "Decidir cuánto intervenir."
+   },
+   {
+    "id": "corregir-un-plato",
+    "name": "Corregir un plato",
+    "note": "Ajustar lo que queda."
+   }
+  ],
+  "keys": [
+   "Cada elemento tiene que tener una función clara.",
+   "Si nadie lo echa de menos, sobra.",
+   "Una función, un elemento.",
+   "Lo que queda, perfecto.",
+   "Simple no es pobre."
+  ],
+  "errors": [
+   {
+    "p": "Plato que pierde interés al simplificar",
+    "fix": "Se quitó el contraste. Recupera un elemento de contraste."
+   },
+   {
+    "p": "Plato que sigue recargado",
+    "fix": "Acabados y decoraciones sin función. Quítalos también."
+   },
+   {
+    "p": "Plato plano",
+    "fix": "Lo que queda no está a la altura. Mejora el producto o el punto."
+   }
+  ],
+  "history": "La búsqueda de platos con menos elementos y más producto se ha convertido en una tendencia de la cocina de autor reciente, después de una etapa de platos muy complejos.",
+  "uses": [
+   "Revisión de platos de carta",
+   "Platos que no terminan de funcionar",
+   "Menús largos",
+   "Formación del equipo"
+  ],
+  "keep": "Guarda en la ficha del plato las versiones descartadas y por qué se quitó cada elemento.",
+  "pro": "Haz una sesión de quitar con el equipo cada cambio de carta: un plato, todas sus versiones y una votación.",
+  "related": [
+   "construir-un-plato",
+   "producto-o-tecnica",
+   "corregir-un-plato",
+   "catas-y-notas",
+   "emplatado"
+  ]
+ },
+ {
+  "id": "el-aroma-en-el-plato",
+  "name": "El aroma en el plato",
+  "name_en": "Aroma on the plate",
+  "cat": "creatividad",
+  "group": "Sabor",
+  "aka": [
+   "aroma",
+   "olfato",
+   "hierbas quemadas",
+   "humo en la mesa",
+   "presentacion aromatica",
+   "perfume del plato"
+  ],
+  "summary": "Cómo pensar el aroma como un ingrediente más: qué se huele antes del primer bocado, cómo se libera en la mesa y cómo usarlo sin que tape el plato.",
+  "what": "Gran parte de lo que llamamos sabor es aroma: lo que se huele al acercar el plato y lo que sube por la nariz al masticar. Por eso un plato puede mejorar mucho con un acabado aromático: una ralladura de cítrico, un aceite de hierba, una hierba recién rota, un humo suave. El aroma es frágil: se pierde con el calor prolongado y con el tiempo, así que se añade al final o en la propia mesa. La parte científica está en [[aromas-y-volatiles]].",
+  "method": [
+   "Huele cada elemento del plato por separado y el plato completo: decide qué aroma quieres que llegue primero.",
+   "Añade el aroma al final: ralladura, hierba rota a mano, aceite aromático en crudo.",
+   "Usa el calor para liberarlo en la mesa: una salsa caliente sobre hierbas, un caldo vertido delante del comensal.",
+   "Prueba el humo o las hierbas quemadas solo si encajan con el plato y en poca cantidad.",
+   "Comprueba que el aroma acompaña al sabor: si huele a una cosa y sabe a otra, confunde.",
+   "Cata el plato con la nariz tapada y sin tapar para entender cuánto pesa el aroma."
+  ],
+  "ratios": [
+   {
+    "use": "Aromas protagonistas por plato",
+    "ratio": "1",
+    "note": "Más se mezclan y se pierden."
+   },
+   {
+    "use": "Momento de añadirlo",
+    "ratio": "Al final o en la mesa",
+    "note": "El calor largo lo apaga."
+   },
+   {
+    "use": "Ahumado en la mesa",
+    "ratio": "Unos segundos",
+    "note": "Más satura y amarga."
+   }
+  ],
+  "variants": [
+   {
+    "id": "aromas-y-volatiles",
+    "name": "Aromas y volátiles",
+    "note": "Por qué el aroma se pierde y cómo se libera."
+   },
+   {
+    "id": "ahumado-con-hierbas",
+    "name": "Ahumado con hierbas",
+    "note": "El humo aromático de romero, tomillo o hinojo."
+   },
+   {
+    "id": "infusiones",
+    "name": "Infusiones",
+    "note": "Cómo extraer aroma en líquidos."
+   }
+  ],
+  "keys": [
+   "El aroma se huele antes del primer bocado: es la primera impresión.",
+   "Al final y en crudo.",
+   "Un aroma protagonista.",
+   "Que el aroma cuente lo mismo que el sabor.",
+   "El humo, con mucha medida."
+  ],
+  "errors": [
+   {
+    "p": "Plato sin aroma",
+    "fix": "Todo cocinado y sin acabado. Añade un elemento aromático en crudo al final."
+   },
+   {
+    "p": "Aroma que tapa el plato",
+    "fix": "Demasiada cantidad. Reduce a un toque."
+   },
+   {
+    "p": "El aroma se pierde antes de llegar",
+    "fix": "Añadido demasiado pronto. Termina en el pase o en la mesa."
+   }
+  ],
+  "history": "Acabar platos con hierbas, cítricos o especias recién preparados es tan antiguo como la cocina; la cocina de autor ha convertido el aroma en un elemento más del servicio.",
+  "uses": [
+   "Acabado de platos",
+   "Servicio en la mesa",
+   "Platos de brasa",
+   "Postres"
+  ],
+  "keep": "Apunta en la ficha del plato qué aroma lleva y en qué momento exacto se añade.",
+  "pro": "Ten los elementos aromáticos preparados en el pase (cítricos, hierbas, aceites) y añádelos en el último gesto.",
+  "related": [
+   "aromas-y-volatiles",
+   "ahumado-con-hierbas",
+   "infusiones",
+   "hierbas-frescas",
+   "emplatado",
+   "citricos"
+  ]
+ },
+ {
+  "id": "salir-de-un-bloqueo-creativo",
+  "name": "Salir de un bloqueo creativo",
+  "name_en": "Getting out of a creative block",
+  "cat": "creatividad",
+  "group": "Método",
+  "aka": [
+   "bloqueo creativo",
+   "falta de ideas",
+   "no se me ocurre nada",
+   "estancamiento",
+   "rutina creativa"
+  ],
+  "summary": "Qué hacer cuando no salen ideas: ejercicios concretos para volver a crear, desde limitaciones y retos hasta cambiar de entorno o volver a lo básico.",
+  "what": "Todo cocinero pasa por épocas en las que no salen ideas o todo parece repetido. Suele pasar por cansancio, por demasiada presión o por mirar siempre en el mismo sitio. La salida rara vez es esperar la inspiración: funciona mejor trabajar con método y con limitaciones, cambiar de punto de partida y volver a cocinar sin objetivo. Muchas de las fichas de creatividad sirven como ejercicios; esta los ordena para cuando hacen falta.",
+  "method": [
+   "Descansa de verdad un par de días si estás agotado: sin descanso no hay ideas.",
+   "Cambia el punto de partida: si siempre empiezas por el producto, empieza por una técnica, un color o un recuerdo.",
+   "Ponte una limitación: cinco ingredientes, un solo color, una sola técnica.",
+   "Vuelve a cocinar un clásico muy bien hecho, sin intención de cambiarlo.",
+   "Sal de la cocina: mercado, campo, un museo, un libro que no sea de cocina.",
+   "Repasa tu cuaderno de chispas y de errores: muchas ideas a medio hacer esperan ahí."
+  ],
+  "ratios": [
+   {
+    "use": "Ejercicios por semana",
+    "ratio": "1–2",
+    "note": "Pequeños y sin presión."
+   },
+   {
+    "use": "Limitaciones",
+    "ratio": "1 por ejercicio",
+    "note": "Una sola regla clara."
+   },
+   {
+    "use": "Tiempo fuera de la cocina",
+    "ratio": "Al menos medio día a la semana",
+    "note": "Para mirar otras cosas."
+   }
+  ],
+  "variants": [
+   {
+    "id": "inspiracion-fuera-de-la-cocina",
+    "name": "Inspiración fuera de la cocina",
+    "note": "Buscar ideas en otros sitios."
+   },
+   {
+    "id": "crear-con-cinco-ingredientes",
+    "name": "Crear con cinco ingredientes",
+    "note": "Un ejercicio de limitación."
+   },
+   {
+    "id": "del-error-al-plato",
+    "name": "Del error al plato",
+    "note": "Ideas que salen de lo que falla."
+   }
+  ],
+  "keys": [
+   "No esperes la inspiración: trabaja con método.",
+   "Cambia el punto de partida.",
+   "Limitaciones claras abren caminos.",
+   "Descansar también es parte del trabajo creativo.",
+   "El cuaderno de ideas es tu reserva."
+  ],
+  "errors": [
+   {
+    "p": "Forzar platos sin ganas",
+    "fix": "Agotamiento. Descansa y vuelve con un ejercicio pequeño."
+   },
+   {
+    "p": "Repetir siempre lo mismo",
+    "fix": "Mismo punto de partida. Cámbialo."
+   },
+   {
+    "p": "Copiar a otros por falta de ideas",
+    "fix": "Busca fuera de la cocina y en tu propio paisaje."
+   }
+  ],
+  "history": "Los bloqueos creativos son comunes en cualquier oficio creativo; los ejercicios con limitaciones son una herramienta clásica en arte, diseño y cocina.",
+  "uses": [
+   "Épocas sin ideas",
+   "Preparar una carta nueva",
+   "Formación del equipo",
+   "Retos del Laboratorio"
+  ],
+  "keep": "Anota qué ejercicio te sacó de cada bloqueo: te servirá la próxima vez.",
+  "pro": "Propón al equipo un reto pequeño a la semana del Laboratorio, sin que tenga que acabar en carta.",
+  "related": [
+   "inspiracion-fuera-de-la-cocina",
+   "del-error-al-plato",
+   "cocinar-con-un-solo-color",
+   "un-solo-producto",
+   "reinterpretar-un-clasico"
+  ]
+ },
+ {
+  "id": "de-la-prueba-a-la-receta-fija",
+  "name": "De la prueba a la receta fija",
+  "name_en": "From trial to fixed recipe",
+  "cat": "creatividad",
+  "group": "Oficio",
+  "aka": [
+   "estandarizar un plato",
+   "receta fija",
+   "escalar una receta",
+   "ficha definitiva",
+   "repetir un plato igual"
+  ],
+  "summary": "Cómo pasar un plato que funcionó en una prueba a una receta que salga igual cada día: pesar, escalar, fijar puntos y probarla en servicio.",
+  "what": "Un plato que sale perfecto una vez en una prueba no está terminado hasta que sale igual cada día, lo haga quien lo haga. Para eso hay que convertir lo que se hizo a ojo en cantidades pesadas, tiempos y temperaturas, escalar de una ración a una tanda sin que cambie el sabor, y fijar los puntos de control (cómo se sabe que está bien). La herramienta de escalar de la app ayuda con las cantidades; el criterio lo pone el cocinero.",
+  "method": [
+   "Repite la prueba pesando todo, incluidos sal, aceite y acabados, y apuntando tiempos y temperaturas.",
+   "Escala a la tanda de trabajo con proporciones; ajusta a mano sal, especias y espesantes, que no escalan siempre igual.",
+   "Escribe los puntos de control: textura, temperatura al corazón, color o sabor que indican que está bien.",
+   "Pide a otra persona del equipo que la haga siguiendo solo la ficha.",
+   "Cata su resultado al lado del original y corrige la ficha donde no se entendió.",
+   "Pruébala en servicio real y apunta lo que cambia con el ritmo del pase."
+  ],
+  "ratios": [
+   {
+    "use": "Pruebas antes de fijar",
+    "ratio": "Al menos 3 iguales",
+    "note": "Una por otra persona del equipo."
+   },
+   {
+    "use": "Sal y especias al escalar",
+    "ratio": "Empieza con un 80–90 % de lo proporcional y ajusta",
+    "note": "Las tandas grandes se concentran distinto."
+   },
+   {
+    "use": "Puntos de control",
+    "ratio": "1–3 por elaboración",
+    "note": "Medibles: temperatura, textura, tiempo."
+   }
+  ],
+  "variants": [
+   {
+    "id": "documentar-tu-obra",
+    "name": "Documentar tu obra",
+    "note": "Cómo guardar la ficha."
+   },
+   {
+    "id": "catas-y-notas",
+    "name": "Pruebas de cata",
+    "note": "Comparar versiones con método."
+   },
+   {
+    "id": "prueba-con-el-equipo",
+    "name": "Prueba con el equipo",
+    "note": "Cómo organizar la prueba conjunta."
+   }
+  ],
+  "keys": [
+   "Pesa todo, también la sal.",
+   "Escala con proporciones y corrige a mano.",
+   "Puntos de control medibles.",
+   "Que otro la haga solo con la ficha.",
+   "La ficha se corrige hasta que sale igual."
+  ],
+  "errors": [
+   {
+    "p": "Sale distinto cada día",
+    "fix": "Cantidades a ojo. Pesa y fija puntos de control."
+   },
+   {
+    "p": "La tanda grande sabe distinto",
+    "fix": "Escalado lineal de sal o espesantes. Ajusta a mano."
+   },
+   {
+    "p": "Nadie más sabe hacerlo",
+    "fix": "Ficha incompleta. Pide a otro que la siga y corrígela."
+   }
+  ],
+  "history": "Fijar recetas por escrito con cantidades y tiempos es la base de la cocina profesional, y se ha hecho más precisa con las básculas, termómetros y fichas actuales.",
+  "uses": [
+   "Llevar un plato nuevo a la carta",
+   "Formación del equipo",
+   "Recuperar un plato antiguo",
+   "Platos firma"
+  ],
+  "keep": "Guarda la ficha fija junto a sus versiones de prueba, con la fecha en que se dio por buena.",
+  "pro": "No des un plato por terminado hasta que otra persona del equipo lo haya sacado bien siguiendo la ficha.",
+  "related": [
+   "documentar-tu-obra",
+   "catas-y-notas",
+   "prueba-con-el-equipo",
+   "plato-firma",
+   "corregir-un-plato"
+  ]
+ },
+ {
+  "id": "crear-con-cinco-ingredientes",
+  "name": "Crear con cinco ingredientes",
+  "name_en": "Creating with five ingredients",
+  "cat": "creatividad",
+  "group": "Método",
+  "aka": [
+   "cinco ingredientes",
+   "limitacion de ingredientes",
+   "reto de ingredientes",
+   "plato con pocos ingredientes",
+   "cocina minima"
+  ],
+  "summary": "Un ejercicio de creación: hacer un plato completo con solo cinco ingredientes (sin contar sal, aceite y agua), sacando de cada uno varias texturas y funciones.",
+  "what": "Limitar los ingredientes obliga a sacar más de cada uno: la misma verdura puede estar cruda, asada y en crema; un cítrico da zumo, ralladura y piel confitada; un fruto seco, crujiente y leche. El resultado suele ser un plato más claro y con más identidad. Es un buen reto para el Laboratorio, para el equipo y para salir de un bloqueo, y a veces acaba en carta.",
+  "method": [
+   "Elige el protagonista y cuatro ingredientes más; sal, aceite, agua y pimienta no cuentan.",
+   "Para cada ingrediente, apunta todas las formas en que puedes usarlo: crudo, cocinado, en crema, crujiente, en polvo, en jugo, encurtido.",
+   "Comprueba que el plato tiene ácido, grasa, sal, una textura crujiente y una cremosa con solo esos ingredientes.",
+   "Monta una primera versión y cátala.",
+   "Ajusta las formas, no los ingredientes: si falta algo, búscalo dentro de los cinco.",
+   "Si el plato funciona, piensa si añadir un sexto ingrediente lo mejoraría o solo lo complicaría."
+  ],
+  "ratios": [
+   {
+    "use": "Ingredientes",
+    "ratio": "5 (más sal, aceite y agua)",
+    "note": "La regla del ejercicio."
+   },
+   {
+    "use": "Formas por ingrediente",
+    "ratio": "1–3",
+    "note": "Ahí está la creatividad."
+   },
+   {
+    "use": "Tiempo del reto",
+    "ratio": "Una sesión de 2–3 horas",
+    "note": "Prisa razonable para decidir."
+   }
+  ],
+  "variants": [
+   {
+    "id": "un-solo-producto",
+    "name": "Un solo producto",
+    "note": "La versión extrema: un ingrediente."
+   },
+   {
+    "id": "cocinar-con-un-solo-color",
+    "name": "Un solo color",
+    "note": "Otra limitación creativa."
+   },
+   {
+    "id": "cocina-de-aprovechamiento",
+    "name": "Cocina de aprovechamiento",
+    "note": "Sacar todo de cada producto."
+   }
+  ],
+  "keys": [
+   "Pocos ingredientes, muchas formas.",
+   "Equilibrio completo dentro de los cinco.",
+   "Ajusta formas antes que añadir ingredientes.",
+   "Producto excelente: con tan poco, todo se nota.",
+   "El reto no tiene que acabar en carta para ser útil."
+  ],
+  "errors": [
+   {
+    "p": "Plato pobre",
+    "fix": "Cada ingrediente en una sola forma. Busca más texturas de cada uno."
+   },
+   {
+    "p": "Falta ácido o crujiente",
+    "fix": "Busca la función dentro de los cinco: un cítrico, un fruto seco tostado."
+   },
+   {
+    "p": "Trampas con ingredientes ocultos",
+    "fix": "Respeta la regla; ahí está el aprendizaje."
+   }
+  ],
+  "history": "Los retos con ingredientes limitados son un ejercicio habitual en escuelas y concursos de cocina, porque obligan a pensar en técnica y equilibrio.",
+  "uses": [
+   "Retos del Laboratorio",
+   "Formación del equipo",
+   "Salir de un bloqueo",
+   "Platos de producto"
+  ],
+  "keep": "Guarda cada reto con sus cinco ingredientes, las formas usadas y una foto.",
+  "pro": "Propón el reto con los ingredientes de temporada que entran esa semana; catad los resultados juntos.",
+  "related": [
+   "un-solo-producto",
+   "cocinar-con-un-solo-color",
+   "cocina-de-aprovechamiento",
+   "salir-de-un-bloqueo-creativo",
+   "construir-un-plato"
+  ]
+ },
+ {
+  "id": "rutina-semanal-de-i-d",
+  "name": "Una rutina semanal de I+D",
+  "name_en": "A weekly R&D routine",
+  "cat": "creatividad",
+  "group": "Oficio",
+  "aka": [
+   "rutina de creacion",
+   "tiempo de investigacion",
+   "dia de pruebas",
+   "i+d semanal",
+   "habito creativo"
+  ],
+  "summary": "Cómo reservar cada semana un tiempo fijo para investigar y crear, con un orden sencillo: probar producto, desarrollar una idea, catar y documentar.",
+  "what": "Las ideas que llegan a la carta suelen salir de un trabajo constante, no de inspiraciones sueltas. Una rutina corta pero fija (unas horas a la semana, siempre el mismo día) basta para que la creación avance: se prueba el producto que entra, se trabaja una idea del cuaderno, se cata con alguien y se apunta. Con el tiempo, el cuaderno de pruebas se convierte en una reserva de platos. Esta app está pensada para esa rutina: Laboratorio, Diario, versiones de platos y Biblioteca.",
+  "method": [
+   "Fija un día y unas horas a la semana para I+D y respétalos como un servicio más.",
+   "Primera parte: prueba el producto de temporada que ha entrado, crudo y cocinado de forma simple.",
+   "Segunda parte: elige una sola idea del cuaderno de chispas y desarróllala con pruebas cortas.",
+   "Tercera parte: cata con alguien del equipo y apunta conclusiones concretas.",
+   "Cierra documentando: versión del plato, fotos y siguiente paso.",
+   "Una vez al mes, repasa lo trabajado y decide qué pasa a prueba en serio."
+  ],
+  "ratios": [
+   {
+    "use": "Tiempo semanal",
+    "ratio": "2–4 horas fijas",
+    "note": "Mejor poco y constante que mucho y a veces."
+   },
+   {
+    "use": "Ideas por sesión",
+    "ratio": "1",
+    "note": "Una idea trabajada a fondo."
+   },
+   {
+    "use": "Revisión",
+    "ratio": "Mensual",
+    "note": "Qué avanza y qué se descarta."
+   }
+  ],
+  "variants": [
+   {
+    "id": "documentar-tu-obra",
+    "name": "Documentar tu obra",
+    "note": "Cómo guardar lo que sale de la rutina."
+   },
+   {
+    "id": "catas-y-notas",
+    "name": "Pruebas de cata",
+    "note": "Cómo catar con método."
+   },
+   {
+    "id": "salir-de-un-bloqueo-creativo",
+    "name": "Salir de un bloqueo",
+    "note": "Ejercicios cuando no salen ideas."
+   }
+  ],
+  "keys": [
+   "Día y hora fijos.",
+   "Una idea por sesión.",
+   "Siempre catar con alguien.",
+   "Documentar antes de cerrar.",
+   "Revisar cada mes."
+  ],
+  "errors": [
+   {
+    "p": "La rutina desaparece en temporada alta",
+    "fix": "Sin hora fija. Reduce el tiempo, pero mantén la cita."
+   },
+   {
+    "p": "Muchas ideas a medias",
+    "fix": "Demasiadas a la vez. Una por sesión."
+   },
+   {
+    "p": "Pruebas que se olvidan",
+    "fix": "Sin documentar. Cierra cada sesión apuntando."
+   }
+  ],
+  "history": "Muchas cocinas de autor dedican tiempo fijo a la investigación, a veces en talleres propios; a escala de un cocinero, la constancia es lo que hace que la creación avance.",
+  "uses": [
+   "Desarrollo de platos nuevos",
+   "Formación propia",
+   "Preparar la temporada siguiente",
+   "Formación del equipo"
+  ],
+  "keep": "Usa el Diario para apuntar cada sesión y las versiones de plato para guardar los avances.",
+  "pro": "Invita cada semana a alguien distinto del equipo a la sesión de cata: aprende y aporta otra mirada.",
+  "related": [
+   "documentar-tu-obra",
+   "catas-y-notas",
+   "salir-de-un-bloqueo-creativo",
+   "de-la-prueba-a-la-receta-fija",
+   "un-solo-producto"
+  ]
+ },
+ {
+  "id": "aprender-del-comensal",
+  "name": "Aprender del comensal",
+  "name_en": "Learning from diners",
+  "cat": "creatividad",
+  "group": "Método",
+  "aka": [
+   "opinion del comensal",
+   "platos que vuelven",
+   "escuchar a la sala",
+   "feedback de sala",
+   "reaccion del comensal"
+  ],
+  "summary": "Cómo usar lo que el comensal deja, comenta o repite para mejorar los platos, sin perder el criterio propio.",
+  "what": "El plato que vuelve a la cocina cuenta mucho: si siempre queda la guarnición, si la salsa se termina con pan, si un elemento se aparta. Sala también oye comentarios que no llegan a la cocina. Escuchar eso con método ayuda a corregir platos, pero no significa cocinar al gusto de cada uno: el criterio sigue siendo del cocinero. Se trata de distinguir los problemas reales (algo que no se entiende, no se come o cansa) de las preferencias personales.",
+  "method": [
+   "Mira los platos que vuelven durante una o dos semanas: qué queda en el plato y en qué cantidad.",
+   "Pide a sala que apunte comentarios concretos, sin interpretar.",
+   "Busca patrones: algo que se repite en muchas mesas, no un comentario aislado.",
+   "Separa lo que es un problema del plato (se queda, no se entiende, cansa) de los gustos personales.",
+   "Haz un cambio pequeño y vuelve a observar.",
+   "Apunta en la ficha del plato qué cambiaste y por qué."
+  ],
+  "ratios": [
+   {
+    "use": "Periodo de observación",
+    "ratio": "1–2 semanas por plato",
+    "note": "Para ver patrones."
+   },
+   {
+    "use": "Cambios por ronda",
+    "ratio": "1",
+    "note": "Para saber qué funcionó."
+   },
+   {
+    "use": "Comentarios que cuentan",
+    "ratio": "Los que se repiten",
+    "note": "Un comentario aislado es una preferencia."
+   }
+  ],
+  "variants": [
+   {
+    "id": "corregir-un-plato",
+    "name": "Corregir un plato",
+    "note": "Cómo ajustar lo que falla."
+   },
+   {
+    "id": "simplificar-un-plato",
+    "name": "Simplificar un plato",
+    "note": "Cuando sobra algo que no se come."
+   },
+   {
+    "id": "contar-un-plato",
+    "name": "Contar un plato",
+    "note": "Cuando el problema es que no se entiende."
+   }
+  ],
+  "keys": [
+   "El plato que vuelve es información.",
+   "Patrones, no casos aislados.",
+   "Problema del plato frente a gusto personal.",
+   "Un cambio cada vez.",
+   "El criterio final es del cocinero."
+  ],
+  "errors": [
+   {
+    "p": "Cambiar por cada comentario",
+    "fix": "Reacción a casos aislados. Espera a ver patrones."
+   },
+   {
+    "p": "Ignorar lo que vuelve",
+    "fix": "Orgullo o prisa. Míralo con calma: es la crítica más honesta."
+   },
+   {
+    "p": "Plato que pierde identidad",
+    "fix": "Se cocina al gusto de todos. Mantén lo esencial y ajusta lo demás."
+   }
+  ],
+  "history": "Observar lo que vuelve en el plato es una costumbre antigua de las cocinas profesionales para ajustar raciones, sazón y platos.",
+  "uses": [
+   "Revisión de platos de carta",
+   "Ajuste de raciones",
+   "Mejorar la explicación en sala",
+   "Decidir cambios de carta"
+  ],
+  "keep": "Apunta en la ficha del plato las observaciones y los cambios hechos, con fecha.",
+  "pro": "Haz una reunión corta con sala al cambiar un plato para recoger lo que han oído.",
+  "related": [
+   "corregir-un-plato",
+   "simplificar-un-plato",
+   "contar-un-plato",
+   "catas-y-notas",
+   "del-plato-al-menu"
+  ]
+ },
+ {
+  "id": "sesiones-de-ideas-en-equipo",
+  "name": "Sesiones de ideas en equipo",
+  "name_en": "Team ideation sessions",
+  "cat": "creatividad",
+  "group": "Método",
+  "aka": [
+   "lluvia de ideas",
+   "crear en equipo",
+   "reunion creativa",
+   "brainstorming de cocina",
+   "ideas del equipo"
+  ],
+  "summary": "Cómo organizar una sesión corta para que el equipo proponga ideas de platos: reglas, ejercicios y cómo pasar de muchas ideas a una prueba.",
+  "what": "El equipo ve el producto todos los días, viene de cocinas distintas y tiene recuerdos de sabor propios: es una fuente de ideas muy valiosa si se le da espacio. Una buena sesión de ideas es corta, tiene un tema concreto, separa el momento de proponer del de elegir y termina con una o dos ideas que alguien va a probar. Las [[prueba-con-el-equipo|pruebas con el equipo]] son el paso siguiente.",
+  "method": [
+   "Elige un tema concreto: un producto de temporada, una técnica, un hueco de la carta.",
+   "Da unos minutos para que cada uno apunte ideas en silencio antes de hablar.",
+   "Ronda de ideas: todas valen y nadie critica todavía.",
+   "Agrupa las ideas parecidas y vota las que más interesan.",
+   "Asigna una o dos ideas a quien las va a probar, con fecha.",
+   "Cierra y apunta todas las ideas, también las no elegidas, en el cuaderno."
+  ],
+  "ratios": [
+   {
+    "use": "Duración",
+    "ratio": "30–45 minutos",
+    "note": "Corta y concentrada."
+   },
+   {
+    "use": "Ideas elegidas",
+    "ratio": "1–2",
+    "note": "Para que se prueben de verdad."
+   },
+   {
+    "use": "Personas",
+    "ratio": "3–8",
+    "note": "Cocina y sala."
+   }
+  ],
+  "variants": [
+   {
+    "id": "prueba-con-el-equipo",
+    "name": "Prueba con el equipo",
+    "note": "El siguiente paso: catar lo desarrollado."
+   },
+   {
+    "id": "crear-con-cinco-ingredientes",
+    "name": "Retos",
+    "note": "Ejercicios con limitación para la sesión."
+   },
+   {
+    "id": "memoria-del-sabor",
+    "name": "Recuerdos del equipo",
+    "note": "Cada uno trae un sabor de casa."
+   }
+  ],
+  "keys": [
+   "Tema concreto.",
+   "Primero en silencio, luego en voz alta.",
+   "Proponer y elegir son momentos distintos.",
+   "Toda idea elegida tiene responsable y fecha.",
+   "Guarda también las ideas no elegidas."
+  ],
+  "errors": [
+   {
+    "p": "Solo hablan los mismos",
+    "fix": "Sin tiempo en silencio. Que todos apunten antes de hablar."
+   },
+   {
+    "p": "Muchas ideas y ninguna se prueba",
+    "fix": "Sin responsable. Asigna y pon fecha."
+   },
+   {
+    "p": "Ideas que se critican al nacer",
+    "fix": "Mezclar proponer y elegir. Sepáralos."
+   }
+  ],
+  "history": "Las sesiones de ideas en grupo son una herramienta habitual en diseño y otros oficios creativos, y muchas cocinas las han adaptado a su trabajo de I+D.",
+  "uses": [
+   "Preparar una carta nueva",
+   "Trabajar un producto de temporada",
+   "Implicar al equipo",
+   "Salir de un bloqueo"
+  ],
+  "keep": "Guarda las ideas de cada sesión en el cuaderno de chispas del Laboratorio.",
+  "pro": "Haz una sesión al inicio de cada temporada con el producto que entra; las ideas elegidas van a la rutina de I+D.",
+  "related": [
+   "prueba-con-el-equipo",
+   "crear-con-cinco-ingredientes",
+   "memoria-del-sabor",
+   "rutina-semanal-de-i-d",
+   "salir-de-un-bloqueo-creativo"
+  ]
+ },
+ {
+  "id": "construir-un-postre",
+  "name": "Construir un postre",
+  "name_en": "Building a dessert",
+  "cat": "creatividad",
+  "group": "Método",
+  "aka": [
+   "crear un postre",
+   "disenar un postre",
+   "postre de emplatado",
+   "equilibrio dulce",
+   "postre de autor"
+  ],
+  "summary": "Un método para crear postres equilibrados: un protagonista, el dulzor medido, acidez, texturas y temperaturas, y su lugar al final del menú.",
+  "what": "Un postre se construye como un plato salado, con una dificultad añadida: el azúcar cansa y tapa. Por eso el equilibrio es aún más importante: un protagonista claro (una fruta, un chocolate, un lácteo, un fruto seco), un punto ácido o amargo que corte el dulce, una pizca de sal, y contrastes de textura (cremoso, crujiente, aireado) y de temperatura (helado y templado). Llega al final de la comida, así que debe ser ligero en sensación aunque sea intenso en sabor. Para el método general, mira [[construir-un-plato]].",
+  "method": [
+   "Elige el protagonista y su mejor forma: fruta de temporada, chocolate, lácteo, fruto seco.",
+   "Mide el dulzor: prueba cada elemento y quita azúcar donde puedas.",
+   "Añade un contrapunto: ácido (cítrico, fruta ácida, yogur), amargo (cacao, café, caramelo oscuro) o salado.",
+   "Asegura al menos tres texturas: cremosa, crujiente y otra (aireada, gel, fruta cruda).",
+   "Piensa la temperatura: un elemento frío y uno templado dan vida.",
+   "Cata el postre después de un menú completo: si cansa, quita dulce o cantidad."
+  ],
+  "ratios": [
+   {
+    "use": "Elementos de un postre",
+    "ratio": "3–5",
+    "note": "Protagonista, cremoso, crujiente, ácido y frío."
+   },
+   {
+    "use": "Peso total",
+    "ratio": "80–120 g tras un menú",
+    "note": "Más en carta sola."
+   },
+   {
+    "use": "Sal",
+    "ratio": "Una pizca en casi todos los elementos",
+    "note": "Levanta el sabor sin notarse."
+   }
+  ],
+  "variants": [
+   {
+    "id": "construir-un-plato",
+    "name": "Construir un plato",
+    "note": "El método general."
+   },
+   {
+    "id": "final-del-menu",
+    "name": "El final del menú",
+    "note": "Prepostre, postre y petit fours."
+   },
+   {
+    "id": "postres-de-fruta-por-temporada",
+    "name": "Postres de temporada",
+    "note": "La fruta de cada estación."
+   }
+  ],
+  "keys": [
+   "Menos azúcar del que crees.",
+   "Siempre un contrapunto ácido, amargo o salado.",
+   "Tres texturas como mínimo.",
+   "Contraste de temperatura.",
+   "Pensado para llegar después de comer."
+  ],
+  "errors": [
+   {
+    "p": "Empalagoso",
+    "fix": "Demasiado azúcar o sin contrapunto. Quita azúcar y añade ácido."
+   },
+   {
+    "p": "Monótono",
+    "fix": "Todo cremoso. Añade crujiente y algo frío."
+   },
+   {
+    "p": "Pesado al final del menú",
+    "fix": "Demasiada cantidad o grasa. Reduce la ración y aligera."
+   }
+  ],
+  "history": "El postre de emplatado como plato construido, con varias elaboraciones y contrastes, se desarrolló en la pastelería de restaurante de finales del siglo XX.",
+  "uses": [
+   "Postres de carta",
+   "Postre de menú degustación",
+   "Retos del Laboratorio",
+   "Formación de la partida de postres"
+  ],
+  "keep": "Guarda cada versión con el peso de cada elemento y su temperatura de servicio.",
+  "pro": "Cata los postres nuevos siempre después de unos platos salados, como los comerá el comensal.",
+  "related": [
+   "construir-un-plato",
+   "final-del-menu",
+   "postres-de-fruta-por-temporada",
+   "contraste-de-temperaturas",
+   "acidez-en-cocina",
+   "emplatado"
+  ]
+ },
+ {
+  "id": "la-verdura-como-protagonista",
+  "name": "La verdura como protagonista",
+  "name_en": "Vegetables as the main event",
+  "cat": "creatividad",
+  "group": "Método",
+  "aka": [
+   "plato de verdura",
+   "verdura principal",
+   "cocina vegetal",
+   "plato vegetal de autor",
+   "verdura en el centro"
+  ],
+  "summary": "Cómo construir platos en los que una verdura ocupa el lugar de la carne o el pescado: elegir la pieza, darle profundidad y textura, y servirla con la misma ambición.",
+  "what": "Poner una verdura en el centro del plato exige tratarla como una pieza principal: elegir una buena pieza entera o un corte generoso, cocinarla con una técnica que le dé profundidad (brasa, asado largo, glaseado, ceniza), y rodearla de una salsa con fondo, un elemento graso, un ácido y un crujiente. El [[umami-y-fondo|umami]] (setas, algas, miso, tomate seco, queso curado) sustituye al que daría la carne. Un plato vegetal bien hecho no es una guarnición ascendida: es un plato completo.",
+  "method": [
+   "Elige una verdura en su pico y en pieza grande: col, coliflor, calabaza, berenjena, puerro, apio nabo.",
+   "Dale una cocción que concentre: brasa, asado largo, glaseado con su propio jugo o cocción en ceniza.",
+   "Construye una salsa con fondo: un jugo de verdura tostada, una mantequilla de miso o un caldo de setas.",
+   "Añade grasa (aceite, mantequilla, frutos secos), un ácido y un crujiente.",
+   "Busca un elemento de la misma verdura en otra forma: cruda, encurtida o en puré.",
+   "Sírvela con el mismo cuidado de emplatado que una carne."
+  ],
+  "ratios": [
+   {
+    "use": "Ración de pieza principal",
+    "ratio": "200–300 g de verdura",
+    "note": "Una pieza que se corte en el plato."
+   },
+   {
+    "use": "Fuentes de umami",
+    "ratio": "Al menos 1 en el plato",
+    "note": "Setas, algas, miso, tomate seco, queso curado."
+   },
+   {
+    "use": "Formas de la misma verdura",
+    "ratio": "2",
+    "note": "Pieza cocinada y un contrapunto crudo o encurtido."
+   }
+  ],
+  "variants": [
+   {
+    "id": "verduras-a-la-brasa",
+    "name": "Verduras a la brasa",
+    "note": "La técnica de la brasa."
+   },
+   {
+    "id": "caldo-de-verduras-tostadas",
+    "name": "Jugo de verdura tostada",
+    "note": "La salsa oscura sin carne."
+   },
+   {
+    "id": "cocinar-con-restricciones",
+    "name": "Cocina vegetal",
+    "note": "Adaptar platos sin carne ni pescado."
+   }
+  ],
+  "keys": [
+   "Pieza grande y verdura en su pico.",
+   "Cocción que concentre y tueste.",
+   "Salsa con fondo y umami.",
+   "Grasa, ácido y crujiente.",
+   "La misma ambición que un plato de carne."
+  ],
+  "errors": [
+   {
+    "p": "Plato que parece una guarnición",
+    "fix": "Pieza pequeña y sin salsa. Pieza grande, salsa y emplatado de principal."
+   },
+   {
+    "p": "Falta de profundidad",
+    "fix": "Sin tostado ni umami. Tuesta más y añade una fuente de umami."
+   },
+   {
+    "p": "Verdura aguada",
+    "fix": "Cocción húmeda. Usa brasa u horno y sala antes."
+   }
+  ],
+  "history": "La cocina de autor de las últimas décadas ha dado a la verdura un papel protagonista, con platos vegetales que ocupan el lugar central del menú.",
+  "uses": [
+   "Plato principal vegetal",
+   "Menú vegetal",
+   "Menú degustación",
+   "Plato de temporada"
+  ],
+  "keep": "Guarda en la ficha la pieza, la técnica y los tiempos exactos: las verduras cambian mucho según la temporada.",
+  "pro": "Precocina las piezas grandes (asado o vapor) y termínalas en la brasa al pedir.",
+  "related": [
+   "verduras-a-la-brasa",
+   "caldo-de-verduras-tostadas",
+   "umami-y-fondo",
+   "cocinar-con-restricciones",
+   "construir-un-plato",
+   "asado-de-verduras"
+  ]
  }
 ]

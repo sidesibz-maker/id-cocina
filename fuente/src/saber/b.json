@@ -4829,5 +4829,978 @@
       "dorada-y-lubina",
       "emulsiones-al-momento"
     ]
+  },
+  {
+    "id": "nuoc-cham-y-nam-jim",
+    "name": "Nuoc cham y nam jim",
+    "name_en": "Nuoc cham and nam jim",
+    "aka": [
+      "nuoc cham",
+      "nước chấm",
+      "nam jim",
+      "nam jim jaew",
+      "salsa vietnamita",
+      "salsa tailandesa para mojar"
+    ],
+    "cat": "salsas",
+    "group": "Asia",
+    "summary": "Salsas para mojar de Vietnam y Tailandia: salsa de pescado, lima, azúcar, ajo y chile en equilibrio, sin grasa y muy frescas.",
+    "what": "Son las salsas de mesa del sudeste asiático: líquidas, sin aceite y montadas sobre cuatro sabores a la vez, salado (salsa de pescado), ácido (lima o vinagre), dulce (azúcar) y picante (chile), con ajo crudo. El nuoc cham vietnamita es la más suave: se rebaja con agua y acompaña rollitos, fideos fríos, ensaladas y carnes a la brasa. El nam jim tailandés es más intenso y lleva raíz de cilantro majada; la versión para marisco es verde y muy ácida. El nam jim jaew, del noreste de Tailandia, usa chile seco tostado, tamarindo y arroz tostado molido, y es la salsa clásica para carne a la parrilla.\n\nSon de la misma familia que el [[ponzu-y-salsas-citricas|ponzu]], pero más dulces y picantes. Para la salsa de pescado, ver [[garum-y-salsas-de-pescado]].",
+    "base": {
+      "for": "unos 350 ml de nuoc cham",
+      "items": [
+        [
+          "Agua",
+          "150 ml"
+        ],
+        [
+          "Salsa de pescado",
+          "60 ml"
+        ],
+        [
+          "Zumo de lima",
+          "60 ml"
+        ],
+        [
+          "Azúcar",
+          "45 g"
+        ],
+        [
+          "Ajo",
+          "2 dientes, picados muy finos"
+        ],
+        [
+          "Chile rojo fresco",
+          "1–2, en rodajas finas"
+        ],
+        [
+          "Zanahoria en hilos finos (opcional)",
+          "30 g"
+        ]
+      ],
+      "steps": [
+        "Disuelve el azúcar en el agua tibia y deja enfriar.",
+        "Añade la salsa de pescado y el zumo de lima, y prueba: debe estar a la vez dulce, ácido y salado, sin que ninguno mande.",
+        "Incorpora el ajo y el chile al final; si los dejas reposar 15 minutos, flotan y el sabor se reparte.",
+        "Ajusta con más lima, azúcar o agua según el plato: para mojar, más intensa; para aliñar fideos, más rebajada.",
+        "Para nam jim de marisco, maja ajo, chile verde y raíz de cilantro, y añade lima, salsa de pescado y azúcar de palma sin agua."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Nuoc cham para mojar",
+        "ratio": "Pescado, lima y azúcar 1:1:0,75, con 2–3 partes de agua",
+        "note": "Rebajado y equilibrado."
+      },
+      {
+        "use": "Nam jim de marisco",
+        "ratio": "Lima 2 partes, salsa de pescado 1, azúcar de palma 0,5",
+        "note": "Sin agua, muy ácido."
+      },
+      {
+        "use": "Nam jim jaew",
+        "ratio": "1 cucharada de arroz tostado molido por cada 100 ml",
+        "note": "Con tamarindo y chile seco."
+      },
+      {
+        "use": "Aliño de ensalada o fideos",
+        "ratio": "40–50 ml por ración",
+        "note": "Justo antes de servir."
+      }
+    ],
+    "variants": [
+      {
+        "id": "ponzu-y-salsas-citricas",
+        "name": "Ponzu",
+        "note": "Pariente japonés, sin azúcar ni chile."
+      },
+      {
+        "id": "garum-y-salsas-de-pescado",
+        "name": "Salsa de pescado",
+        "note": "La base salada."
+      },
+      {
+        "id": null,
+        "name": "Nam jim jaew",
+        "note": "Chile seco, tamarindo y arroz tostado: para carne a la brasa."
+      },
+      {
+        "id": "pho",
+        "name": "Mesa vietnamita",
+        "note": "Junto a sopas y fideos."
+      }
+    ],
+    "keys": [
+      "Cuatro sabores a la vez: ninguno debe mandar.",
+      "Azúcar disuelto antes de añadir el resto.",
+      "Ajo y chile al final y muy finos.",
+      "Lima recién exprimida: la de horas antes amarga.",
+      "Más rebajada para aliñar; más intensa para mojar."
+    ],
+    "errors": [
+      {
+        "p": "Salsa que solo sabe a pescado",
+        "fix": "Falta ácido y dulce o agua. Equilibra probando con una hoja de lechuga."
+      },
+      {
+        "p": "Sabor amargo",
+        "fix": "Lima exprimida con mucha antelación. Haz el zumo el mismo día."
+      },
+      {
+        "p": "Azúcar en el fondo",
+        "fix": "No se disolvió. Disuelve antes en agua tibia."
+      }
+    ],
+    "history": "Las salsas de pescado fermentado son muy antiguas en el sudeste asiático. Estas mezclas para mojar forman parte de la mesa diaria de Vietnam y Tailandia, con versiones distintas en cada región y casa.",
+    "uses": [
+      "Rollitos frescos y fritos",
+      "Carne y pescado a la brasa",
+      "Fideos fríos y ensaladas",
+      "Marisco cocido o a la plancha"
+    ],
+    "keep": "Sin el ajo ni la lima, la base aguanta 1 semana en frío. Terminada, 2–3 días en frío. Si acompaña pescado crudo o poco hecho, ese pescado debe haberse congelado a −20 °C al menos 24 horas en toda la pieza (anisakis).",
+    "pro": "Ten la base de agua, azúcar y salsa de pescado hecha; añade lima, ajo y chile en el día. Sirve en cuencos pequeños individuales.",
+    "related": [
+      "ponzu-y-salsas-citricas",
+      "garum-y-salsas-de-pescado",
+      "aromaticos-de-asia",
+      "chiles-secos-y-frescos",
+      "pho",
+      "citricos"
+    ]
+  },
+  {
+    "id": "ssamjang-y-salsas-coreanas",
+    "name": "Ssamjang y salsas coreanas",
+    "name_en": "Ssamjang and Korean sauces",
+    "aka": [
+      "ssamjang",
+      "gochujang",
+      "doenjang",
+      "chogochujang",
+      "yangnyeom",
+      "salsa coreana"
+    ],
+    "cat": "salsas",
+    "group": "Asia",
+    "summary": "Salsas sobre pastas fermentadas de soja y chile: ssamjang para envolver carne a la brasa, chogochujang ácida y yangnyeom para glasear.",
+    "what": "La cocina coreana construye muchas de sus salsas sobre dos pastas fermentadas: el doenjang, de soja, parecido a un miso rústico, y el gochujang, de chile, arroz glutinoso y soja, rojo, dulce, salado y picante. El ssamjang mezcla ambas con ajo, aceite de sésamo, sésamo tostado y cebolleta: es la pasta espesa que se pone sobre la carne a la brasa antes de envolverla en una hoja de lechuga.\n\nEl chogochujang aclara el gochujang con vinagre y azúcar: es ácido y vivo, para verduras, mariscos y pescado crudo. El yangnyeom es una salsa de gochujang, soja, ajo y azúcar o miel que se reduce para glasear pollo frito o costillas. Las tres se hacen en minutos y aguantan bien. Para el plato de arroz, ver [[bibimbap]]; para los fermentos, [[miso-y-koji]] y [[kimchi]].",
+    "base": {
+      "for": "unos 200 g de ssamjang",
+      "items": [
+        [
+          "Doenjang (pasta de soja fermentada)",
+          "80 g"
+        ],
+        [
+          "Gochujang",
+          "40 g"
+        ],
+        [
+          "Ajo picado",
+          "10 g"
+        ],
+        [
+          "Cebolleta picada fina",
+          "20 g"
+        ],
+        [
+          "Aceite de sésamo tostado",
+          "15 ml"
+        ],
+        [
+          "Sésamo tostado",
+          "10 g"
+        ],
+        [
+          "Miel o azúcar",
+          "10 g"
+        ],
+        [
+          "Agua (si hace falta aclarar)",
+          "10–20 ml"
+        ]
+      ],
+      "steps": [
+        "Mezcla el doenjang y el gochujang hasta tener una pasta homogénea.",
+        "Añade el ajo, la cebolleta, la miel y el aceite de sésamo.",
+        "Incorpora el sésamo tostado, ligeramente machacado para que suelte aroma.",
+        "Ajusta la textura con un poco de agua: debe quedarse sobre la carne sin escurrir.",
+        "Prueba: salado, dulce, picante y tostado en equilibrio; la cebolleta y el ajo le dan frescor."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Ssamjang",
+        "ratio": "Doenjang 2 partes, gochujang 1",
+        "note": "Pasta espesa."
+      },
+      {
+        "use": "Chogochujang",
+        "ratio": "Gochujang 3 partes, vinagre 2, azúcar 1",
+        "note": "Ácida y fluida."
+      },
+      {
+        "use": "Yangnyeom para glasear",
+        "ratio": "Gochujang 2, soja 1, miel 2, ajo al gusto",
+        "note": "Reducir hasta napar."
+      },
+      {
+        "use": "Ración de ssamjang",
+        "ratio": "10–15 g por bocado envuelto",
+        "note": "Sobre la carne caliente."
+      }
+    ],
+    "variants": [
+      {
+        "id": "bibimbap",
+        "name": "Bibimbap",
+        "note": "Gochujang como salsa de mezcla."
+      },
+      {
+        "id": "kimchi",
+        "name": "Kimchi",
+        "note": "El otro pilar fermentado."
+      },
+      {
+        "id": "teriyaki-y-glaseados-de-soja",
+        "name": "Glaseados de soja",
+        "note": "Primo del yangnyeom."
+      },
+      {
+        "id": "miso-y-koji",
+        "name": "Pastas fermentadas",
+        "note": "Familia del doenjang."
+      }
+    ],
+    "keys": [
+      "Dos pastas: soja fermentada y chile fermentado.",
+      "Ajo, cebolleta y sésamo frescos aportan vida.",
+      "El ssamjang es para envolver carne de brasa.",
+      "El chogochujang necesita ácido y algo de dulce.",
+      "Los glaseados con miel se queman pronto: al final."
+    ],
+    "errors": [
+      {
+        "p": "Ssamjang demasiado salado",
+        "fix": "Mucho doenjang. Sube el gochujang y la miel, o añade sésamo molido."
+      },
+      {
+        "p": "Glaseado quemado",
+        "fix": "Azúcar de la miel y del gochujang. Pinta al final y con brasa menos fuerte."
+      },
+      {
+        "p": "Chogochujang espeso y apagado",
+        "fix": "Falta vinagre. Aclara y equilibra con azúcar."
+      }
+    ],
+    "history": "Las pastas fermentadas de soja tienen una larga historia en Corea; el gochujang se desarrolló tras la llegada del chile. La costumbre de envolver la carne asada en hojas con pasta es propia de la mesa coreana.",
+    "uses": [
+      "Carne de cerdo o vaca a la brasa en hoja de lechuga",
+      "Pollo frito glaseado",
+      "Verduras crudas y escaldadas",
+      "Arroz mezclado"
+    ],
+    "keep": "Ssamjang y chogochujang: 1–2 semanas en frío en bote cerrado. Yangnyeom reducido: 1 semana. Si el chogochujang acompaña pescado crudo, el pescado debe haberse congelado a −20 °C al menos 24 horas en toda la pieza (anisakis).",
+    "pro": "Haz tanda de ssamjang para la semana y añade la cebolleta fresca en el día. Ten el glaseado en biberón y templado para pintar en el último minuto de brasa.",
+    "related": [
+      "bibimbap",
+      "kimchi",
+      "miso-y-koji",
+      "soja-y-derivados",
+      "sesamo",
+      "fuego-y-brasa"
+    ]
+  },
+  {
+    "id": "goma-dare-y-salsas-de-sesamo",
+    "name": "Goma dare y salsas de sésamo",
+    "name_en": "Goma dare and sesame sauces",
+    "aka": [
+      "goma dare",
+      "salsa de sésamo",
+      "goma-ae",
+      "salsa de sésamo china",
+      "aliño de sésamo"
+    ],
+    "cat": "salsas",
+    "group": "Asia",
+    "summary": "Sésamo tostado molido con soja, vinagre, azúcar y caldo: salsa cremosa y tostada para verduras, fideos fríos y carnes cocidas.",
+    "what": "La goma dare japonesa es una salsa espesa de sésamo blanco tostado y molido, soja, vinagre de arroz, azúcar o mirin y un poco de [[dashi]] o agua. Es cremosa sin llevar lácteo ni huevo, sabe a tostado y queda ligeramente dulce. Se usa para mojar carnes y verduras escaldadas, para aliñar fideos fríos y ensaladas. En el goma-ae se hace más espesa y se mezcla con espinacas u otras verduras escaldadas.\n\nEn China, la pasta de sésamo tostado se aclara con soja, vinagre negro, aceite de chile y azúcar para fideos fríos. Las dos se parecen a la [[salsa-tahina-limon|salsa de tahina]], pero el tahini lleva sésamo menos tostado y se aliña con limón. El sésamo es un alérgeno: hay que avisarlo.",
+    "base": {
+      "for": "unos 250 ml",
+      "items": [
+        [
+          "Sésamo blanco tostado",
+          "80 g"
+        ],
+        [
+          "Salsa de soja",
+          "35 ml"
+        ],
+        [
+          "Vinagre de arroz",
+          "25 ml"
+        ],
+        [
+          "Mirin",
+          "20 ml"
+        ],
+        [
+          "Azúcar",
+          "15 g"
+        ],
+        [
+          "Dashi o agua",
+          "60–80 ml"
+        ],
+        [
+          "Aceite de sésamo tostado (opcional)",
+          "5 ml"
+        ]
+      ],
+      "steps": [
+        "Tuesta el sésamo en sartén a fuego medio, removiendo, hasta que esté dorado y huela; 3–5 minutos.",
+        "Muélelo en mortero o molinillo hasta que suelte aceite y forme una pasta húmeda.",
+        "Añade el azúcar, la soja, el vinagre y el mirin y mezcla hasta que esté liso.",
+        "Aclara poco a poco con el dashi frío hasta textura de nata espesa.",
+        "Prueba y ajusta: tostado, salado, dulce y un punto ácido."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Goma dare para mojar",
+        "ratio": "Sésamo 80 g por 140–160 ml de líquido",
+        "note": "Como nata espesa."
+      },
+      {
+        "use": "Goma-ae",
+        "ratio": "Menos líquido; 30 g de salsa por 100 g de verdura",
+        "note": "Verdura escurrida y fría."
+      },
+      {
+        "use": "Fideos fríos",
+        "ratio": "40–50 ml por ración",
+        "note": "Aclarada con caldo."
+      },
+      {
+        "use": "Con pasta de sésamo hecha",
+        "ratio": "60 g de pasta en lugar del sésamo",
+        "note": "Más rápida y fina."
+      }
+    ],
+    "variants": [
+      {
+        "id": "salsa-tahina-limon",
+        "name": "Salsa de tahina",
+        "note": "Versión de Oriente Medio, con limón."
+      },
+      {
+        "id": "tarator-y-salsas-de-frutos-secos",
+        "name": "Salsas de frutos secos",
+        "note": "La misma idea con otros frutos."
+      },
+      {
+        "id": "salsa-de-cacahuete-y-satay",
+        "name": "Salsa de cacahuete",
+        "note": "Pariente del sudeste asiático."
+      },
+      {
+        "id": null,
+        "name": "Salsa de sésamo china",
+        "note": "Con vinagre negro y aceite de chile."
+      }
+    ],
+    "keys": [
+      "Tostar bien el sésamo: ahí está el sabor.",
+      "Moler hasta que suelte aceite.",
+      "Aclarar con caldo frío poco a poco.",
+      "Espesa al reposar: se aclara antes de servir.",
+      "Alérgeno: avisar siempre."
+    ],
+    "errors": [
+      {
+        "p": "Salsa granulosa",
+        "fix": "Sésamo poco molido. Muele más o usa pasta de sésamo."
+      },
+      {
+        "p": "Sabor amargo",
+        "fix": "Sésamo tostado de más. Tuesta a fuego medio y retira al dorar."
+      },
+      {
+        "p": "Salsa cortada o con aceite arriba",
+        "fix": "Líquido añadido de golpe. Añade poco a poco batiendo."
+      }
+    ],
+    "history": "El sésamo se cultiva y se muele desde hace milenios en Asia y Oriente Medio. En Japón y China forma parte de aliños y salsas cotidianas, con muchas variantes de casa.",
+    "uses": [
+      "Verduras escaldadas",
+      "Fideos fríos",
+      "Carnes cocidas en caldo",
+      "Tofu y ensaladas"
+    ],
+    "keep": "4–5 días en frío en bote cerrado; con dashi, 3 días. Se espesa: aclara con agua o caldo antes de servir.",
+    "pro": "Muele el sésamo tostado en cantidad y guárdalo como pasta; termina la salsa con el líquido en el día.",
+    "related": [
+      "sesamo",
+      "dashi",
+      "soja-y-derivados",
+      "salsa-tahina-limon",
+      "escaldado-de-verduras",
+      "tarator-y-salsas-de-frutos-secos"
+    ]
+  },
+  {
+    "id": "huancaina-y-salsas-de-aji",
+    "name": "Huancaína y salsas de ají",
+    "name_en": "Huancaína and aji sauces",
+    "aka": [
+      "salsa huancaína",
+      "papa a la huancaína",
+      "ocopa",
+      "salsa criolla",
+      "uchucuta",
+      "salsas peruanas"
+    ],
+    "cat": "salsas",
+    "group": "Salsas del mundo",
+    "summary": "Salsas peruanas de ají: la huancaína cremosa de ají amarillo y queso fresco, la ocopa de huacatay y cacahuete y la salsa criolla de cebolla y lima.",
+    "what": "El ají amarillo, afrutado y de picor medio, es la base de varias salsas peruanas. La huancaína tritura ají amarillo rehogado con queso fresco, leche, galletas saladas o pan para dar cuerpo y aceite: sale una crema amarilla, suave y algo picante, que se sirve sobre patata cocida y huevo duro, o con verduras y carnes. La ocopa, del sur andino, usa ají, huacatay (una hierba aromática), cacahuete tostado y queso.\n\nLa salsa criolla es otra cosa: cebolla roja en pluma fina, lavada, con lima, ají, cilantro y sal; es un encurtido rápido que acompaña casi todo. La uchucuta es una salsa picante de mesa con ají, hierbas y queso. Para el ají como producto, ver [[chiles-secos-y-frescos]]; para la causa, [[causa-y-ajies-peruanos]].",
+    "base": {
+      "for": "unos 500 ml de huancaína",
+      "items": [
+        [
+          "Ají amarillo fresco sin semillas ni venas",
+          "150 g (o 120 g de pasta)"
+        ],
+        [
+          "Cebolla",
+          "60 g"
+        ],
+        [
+          "Ajo",
+          "1 diente"
+        ],
+        [
+          "Queso fresco de vaca",
+          "200 g"
+        ],
+        [
+          "Leche evaporada o leche entera",
+          "150 ml"
+        ],
+        [
+          "Galletas saladas o pan sin corteza",
+          "30 g"
+        ],
+        [
+          "Aceite de girasol u oliva suave",
+          "50 ml"
+        ],
+        [
+          "Sal",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Escalda el ají limpio dos veces partiendo de agua fría si lo quieres menos picante.",
+        "Rehoga el ají, la cebolla y el ajo en un poco de aceite a fuego medio 6–8 minutos, sin color.",
+        "Tritura con el queso, la leche y las galletas hasta que esté muy fino.",
+        "Añade el aceite en hilo con la batidora en marcha para emulsionar.",
+        "Ajusta la textura con leche (para napar) o con galleta (más espesa) y sala al final: el queso ya sala."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Huancaína para napar",
+        "ratio": "Queso y ají a pesos parecidos",
+        "note": "Textura de crema espesa."
+      },
+      {
+        "use": "Ocopa",
+        "ratio": "Cacahuete tostado 50 g y huacatay 20 g por cada 200 g de base",
+        "note": "Más tostada y herbal."
+      },
+      {
+        "use": "Salsa criolla",
+        "ratio": "1 cebolla roja por lima y media",
+        "note": "Cebolla lavada en agua helada 10 minutos."
+      },
+      {
+        "use": "Ración",
+        "ratio": "60–80 ml sobre la patata",
+        "note": "A temperatura ambiente."
+      }
+    ],
+    "variants": [
+      {
+        "id": "causa-y-ajies-peruanos",
+        "name": "Causa y ajíes",
+        "note": "La otra gran elaboración de ají amarillo."
+      },
+      {
+        "id": null,
+        "name": "Ocopa",
+        "note": "Con huacatay y cacahuete."
+      },
+      {
+        "id": null,
+        "name": "Salsa criolla",
+        "note": "Cebolla, lima y ají: encurtido rápido."
+      },
+      {
+        "id": "anticuchos",
+        "name": "Anticuchos",
+        "note": "Brochetas que piden salsa de ají."
+      }
+    ],
+    "keys": [
+      "Ají rehogado: quita el gusto a crudo.",
+      "Escaldar el ají modera el picor sin perder sabor.",
+      "La galleta da cuerpo; la leche, fluidez.",
+      "Salar al final: el queso sala.",
+      "Se espesa en frío: ajusta antes de servir."
+    ],
+    "errors": [
+      {
+        "p": "Huancaína muy picante",
+        "fix": "Venas y semillas o ají sin escaldar. Límpialo bien y escáldalo."
+      },
+      {
+        "p": "Textura arenosa",
+        "fix": "Queso o galleta mal triturados. Tritura más tiempo y cuela si hace falta."
+      },
+      {
+        "p": "Salsa que se corta",
+        "fix": "Aceite añadido de golpe o salsa caliente. Emulsiona en frío y en hilo."
+      }
+    ],
+    "history": "La papa a la huancaína toma su nombre de Huancayo, en los Andes centrales de Perú, y es hoy un plato de todo el país. La ocopa es propia de la zona de Arequipa. Las salsas de ají son parte de la mesa peruana desde mucho antes de la llegada de los españoles.",
+    "uses": [
+      "Patata cocida y huevo",
+      "Verduras a la brasa",
+      "Pasta y arroces",
+      "Brochetas y anticuchos"
+    ],
+    "keep": "Huancaína y ocopa: 2–3 días en frío, tapadas. Salsa criolla: en el día. Se espesan en frío; aclara con leche.",
+    "pro": "Haz la base de ají rehogado en tanda y congélala en porciones; tritura con el queso en el día.",
+    "related": [
+      "causa-y-ajies-peruanos",
+      "chiles-secos-y-frescos",
+      "anticuchos",
+      "patata-y-boniato",
+      "quesos-en-cocina",
+      "cebolla-encurtida"
+    ]
+  },
+  {
+    "id": "chermoula-y-zhug",
+    "name": "Chermoula y zhug",
+    "name_en": "Chermoula and zhug",
+    "aka": [
+      "chermoula",
+      "charmoula",
+      "zhug",
+      "zhoug",
+      "skhug",
+      "salsa verde especiada"
+    ],
+    "cat": "salsas",
+    "group": "Salsas del mundo",
+    "summary": "Salsas verdes especiadas del Magreb y de Yemen: cilantro, perejil, ajo, comino y limón o chile, para marinar pescado y acompañar brasa.",
+    "what": "Son salsas verdes de hierba picada como la [[salsa-verde]] o el [[chimichurri]], pero especiadas. La chermoula del Magreb lleva cilantro y perejil, ajo, comino, pimentón, chile, limón y aceite de oliva; a veces piel de limón encurtido. Es la marinada clásica del pescado antes de asarlo o guisarlo en [[tajin]], y también se sirve como salsa.\n\nEl zhug, de origen yemení y muy extendido en Israel, es más picante y menos ácido: cilantro, chile verde, ajo, cardamomo, comino y aceite. Acompaña falafel, huevos, carnes a la brasa y legumbres. Las dos se pican a cuchillo o se trituran en pulsos cortos, sin calentar las hierbas, que se oxidan y amargan. Son elaboraciones de hierba fresca y ajo en aceite: siempre en frío y pocos días.",
+    "base": {
+      "for": "unos 300 g de chermoula",
+      "items": [
+        [
+          "Cilantro (hoja y tallo fino)",
+          "60 g"
+        ],
+        [
+          "Perejil",
+          "40 g"
+        ],
+        [
+          "Ajo",
+          "3 dientes"
+        ],
+        [
+          "Comino tostado y molido",
+          "5 g"
+        ],
+        [
+          "Pimentón dulce",
+          "5 g"
+        ],
+        [
+          "Chile seco o fresco",
+          "al gusto"
+        ],
+        [
+          "Zumo de limón",
+          "40 ml"
+        ],
+        [
+          "Aceite de oliva virgen extra",
+          "120 ml"
+        ],
+        [
+          "Sal",
+          "5 g"
+        ]
+      ],
+      "steps": [
+        "Tuesta el comino en grano en sartén seca 1–2 minutos y muélelo.",
+        "Pica las hierbas a cuchillo o tritúralas con el ajo en pulsos cortos, sin que se calienten.",
+        "Añade las especias, la sal, el limón y el aceite y mezcla.",
+        "Deja reposar 30 minutos en frío para que se integre.",
+        "Para marinar pescado, úntalo y déjalo en frío 30 minutos a 2 horas: más tiempo, el limón lo cuece."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Marinada de pescado",
+        "ratio": "50 g por cada 500 g de pescado",
+        "note": "30 minutos a 2 horas en frío."
+      },
+      {
+        "use": "Zhug",
+        "ratio": "Cilantro 80 g, chile verde 40 g, ajo 3 dientes, 100 ml de aceite",
+        "note": "Con cardamomo y comino."
+      },
+      {
+        "use": "Salsa de acompañamiento",
+        "ratio": "20–30 g por ración",
+        "note": "Al pasar el plato."
+      },
+      {
+        "use": "Con limón encurtido",
+        "ratio": "15–20 g de piel picada por cada 300 g",
+        "note": "Baja la sal."
+      }
+    ],
+    "variants": [
+      {
+        "id": "salsa-verde",
+        "name": "Salsa verde",
+        "note": "La versión sin especias."
+      },
+      {
+        "id": "chimichurri",
+        "name": "Chimichurri",
+        "note": "Pariente argentino, con vinagre."
+      },
+      {
+        "id": "tajin",
+        "name": "Tajín de pescado",
+        "note": "Uso clásico de la chermoula."
+      },
+      {
+        "id": "falafel-y-fritos-de-legumbre",
+        "name": "Falafel",
+        "note": "Compañero habitual del zhug."
+      }
+    ],
+    "keys": [
+      "Hierbas sin calentar: pulsos cortos o cuchillo.",
+      "Especias tostadas y recién molidas.",
+      "La chermoula marina; el zhug acompaña.",
+      "Limón al final si se guarda: oscurece la hierba.",
+      "Ajo y hierba en aceite: frío y pocos días."
+    ],
+    "errors": [
+      {
+        "p": "Salsa oscura y amarga",
+        "fix": "Hierba triturada en caliente o con ácido mucho tiempo. Pica en frío y añade el limón al servir."
+      },
+      {
+        "p": "Pescado blanquecino y seco",
+        "fix": "Demasiado tiempo en la marinada ácida. Máximo 2 horas."
+      },
+      {
+        "p": "Zhug sin fuerza",
+        "fix": "Especias viejas. Tuesta y muele al momento."
+      }
+    ],
+    "history": "La chermoula es propia de la cocina de Marruecos, Argelia y Túnez, con muchas versiones caseras. El zhug viene de la cocina yemení y viajó con las comunidades judías yemeníes, por eso hoy es habitual en Israel.",
+    "uses": [
+      "Marinada de pescado",
+      "Pescado y carne a la brasa",
+      "Legumbres y falafel",
+      "Huevos y verduras asadas"
+    ],
+    "keep": "En frío, tapada con una capa de aceite, como mucho 4 días (ajo y hierba fresca en aceite). No se guarda a temperatura ambiente.",
+    "pro": "Pica las hierbas en el día y ten las especias tostadas y molidas preparadas. Añade el ácido justo antes del servicio para que no pierda color.",
+    "related": [
+      "salsa-verde",
+      "chimichurri",
+      "tajin",
+      "falafel-y-fritos-de-legumbre",
+      "hierbas-frescas",
+      "especias"
+    ]
+  },
+  {
+    "id": "avgolemono",
+    "name": "Avgolemono",
+    "name_en": "Avgolemono",
+    "aka": [
+      "salsa de huevo y limón",
+      "avgolémono",
+      "sopa de huevo y limón",
+      "ligazón de huevo y limón"
+    ],
+    "cat": "salsas",
+    "group": "Salsas del mundo",
+    "summary": "Huevo y limón batidos y ligados con caldo caliente: salsa y sopa griega, sedosa y ácida, para verduras, albóndigas, arroz y pescado.",
+    "what": "El avgolemono es una ligazón de huevo (o solo yemas) batido con zumo de limón, al que se le añade caldo caliente poco a poco para templarlo y después se calienta sin hervir hasta que espesa. Queda una salsa sedosa, ligeramente espumosa y ácida, que se sirve sobre verduras rellenas, albóndigas, alcachofas, cordero o pescado. Con más caldo y arroz o pasta pequeña se convierte en sopa.\n\nEs pariente de la [[ligazones|ligazón]] de yema de la cocina clásica y de las salsas de huevo y limón de la cocina sefardí y del resto del Mediterráneo oriental. La clave es la temperatura: el huevo debe cuajar justo lo necesario para espesar, sin granos. Funciona mejor con un caldo con algo de gelatina, como un [[fondo-blanco]] de ave o un caldo de pescado.",
+    "base": {
+      "for": "unos 500 ml de salsa",
+      "items": [
+        [
+          "Caldo de ave o de pescado caliente",
+          "400 ml"
+        ],
+        [
+          "Huevos enteros (o 4 yemas)",
+          "2"
+        ],
+        [
+          "Zumo de limón",
+          "50–60 ml"
+        ],
+        [
+          "Almidón de maíz (opcional, para estabilizar)",
+          "8 g"
+        ],
+        [
+          "Sal y pimienta blanca",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Bate los huevos hasta que espumen y añade el zumo de limón batiendo.",
+        "Si usas almidón, disuélvelo antes en un poco de caldo frío y añádelo al caldo caliente, que debe hervir 1 minuto.",
+        "Vierte el caldo caliente sobre el huevo en hilo, batiendo sin parar, hasta haber añadido la mitad.",
+        "Devuelve todo al cazo y calienta a fuego suave removiendo hasta que espese y la salsa llegue a 75–80 °C, sin hervir.",
+        "Corrige de sal y de limón y sirve enseguida."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Salsa para napar",
+        "ratio": "2 huevos por cada 400 ml de caldo",
+        "note": "Con 8 g de almidón aguanta más."
+      },
+      {
+        "use": "Sopa",
+        "ratio": "2 huevos por litro de caldo, con 60–80 g de arroz",
+        "note": "Más fluida."
+      },
+      {
+        "use": "Solo yemas",
+        "ratio": "4 yemas por cada 400 ml",
+        "note": "Más rica y estable."
+      },
+      {
+        "use": "Limón",
+        "ratio": "12–15 % del volumen del caldo",
+        "note": "Ajustar a gusto."
+      }
+    ],
+    "variants": [
+      {
+        "id": "ligazones",
+        "name": "Ligazón de yema",
+        "note": "El principio clásico."
+      },
+      {
+        "id": "veloute",
+        "name": "Velouté",
+        "note": "Si se liga con roux antes, más estable."
+      },
+      {
+        "id": "albondigas",
+        "name": "Albóndigas",
+        "note": "Uso habitual."
+      },
+      {
+        "id": null,
+        "name": "Sopa de huevo y limón",
+        "note": "Con arroz o pasta pequeña."
+      }
+    ],
+    "keys": [
+      "Templar el huevo con el caldo en hilo.",
+      "Calentar sin hervir hasta 75–80 °C.",
+      "Un poco de almidón la hace mucho más estable.",
+      "Caldo con gelatina: más cuerpo.",
+      "Al momento: no admite recalentados fuertes."
+    ],
+    "errors": [
+      {
+        "p": "Salsa granulada",
+        "fix": "Hirvió o se añadió el caldo de golpe. Tritura al momento con batidora; la próxima vez, más despacio y sin hervir."
+      },
+      {
+        "p": "Salsa líquida",
+        "fix": "No llegó a temperatura o poco huevo. Calienta más removiendo, sin pasar de 80 °C."
+      },
+      {
+        "p": "Demasiado ácida",
+        "fix": "Exceso de limón. Añade más caldo o una yema más."
+      }
+    ],
+    "history": "Es una de las salsas más reconocibles de la cocina griega, con parientes en la cocina sefardí, turca y de Oriente Medio. Las ligazones de huevo y agraz o limón eran habituales en la cocina mediterránea antigua.",
+    "uses": [
+      "Verduras rellenas y hojas de parra",
+      "Albóndigas",
+      "Alcachofas y guisantes",
+      "Pescado escalfado",
+      "Sopa de ave con arroz"
+    ],
+    "keep": "Mejor al momento. Se puede mantener a 60–65 °C al baño maría 1 hora; lo que sobra se tira. No se recalienta a fuego directo.",
+    "pro": "Ten el caldo caliente y los huevos batidos con limón preparados; liga por tandas pequeñas a lo largo del servicio.",
+    "related": [
+      "ligazones",
+      "fondo-blanco",
+      "albondigas",
+      "alcachofas",
+      "citricos",
+      "huevos"
+    ]
+  },
+  {
+    "id": "ajada-gallega",
+    "name": "Ajada gallega",
+    "name_en": "Galician garlic and paprika oil",
+    "aka": [
+      "ajada",
+      "allada",
+      "aceite de pimentón y ajo",
+      "a la gallega"
+    ],
+    "cat": "salsas",
+    "group": "Salsas españolas",
+    "summary": "Aceite de oliva con ajo frito y pimentón, a veces con un punto de vinagre: el aliño caliente de la merluza, la caldeirada y el pescado cocido gallego.",
+    "what": "La ajada es una de las salsas más sencillas de la cocina española: ajo laminado frito en aceite de oliva, fuera del fuego una cucharada de pimentón y, en muchas casas, un chorrito de vinagre o del agua de cocción del pescado. Se vierte caliente sobre pescado cocido (merluza, rape, raya, bacalao) y patata cachelo. Es el acabado de la caldeirada y de la merluza a la gallega.\n\nEl punto decisivo es el pimentón: se añade con el aceite fuera del fuego, a unos 120–140 °C, para que suelte color y aroma sin quemarse; quemado, amarga sin remedio. Se parece al aliño del [[pulpo-a-feira|pulpo á feira]], que lleva aceite y pimentón pero no ajo frito. Para el producto, ver [[pimenton-y-noras]].",
+    "base": {
+      "for": "4–6 raciones (unos 170 ml)",
+      "items": [
+        [
+          "Aceite de oliva virgen extra",
+          "150 ml"
+        ],
+        [
+          "Ajo en láminas",
+          "4 dientes (20 g)"
+        ],
+        [
+          "Pimentón dulce",
+          "5 g"
+        ],
+        [
+          "Pimentón picante (opcional)",
+          "1–2 g"
+        ],
+        [
+          "Vinagre de vino o agua de cocción del pescado",
+          "10–20 ml"
+        ],
+        [
+          "Sal",
+          "una pizca"
+        ]
+      ],
+      "steps": [
+        "Pon el aceite y el ajo en frío en un cazo y calienta a fuego medio hasta que el ajo esté dorado claro.",
+        "Retira del fuego y espera unos 30 segundos: el aceite debe bajar a unos 120–140 °C.",
+        "Añade el pimentón y remueve; debe espumar ligeramente y teñir el aceite sin oscurecerse.",
+        "Agrega enseguida el vinagre o el agua de cocción para cortar la temperatura; cuidado con las salpicaduras.",
+        "Vierte caliente sobre el pescado y la patata recién escurridos."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Pescado cocido",
+        "ratio": "25–30 ml por ración",
+        "note": "Sobre pescado y patata calientes."
+      },
+      {
+        "use": "Pimentón",
+        "ratio": "3–4 g por cada 100 ml de aceite",
+        "note": "Fuera del fuego."
+      },
+      {
+        "use": "Con agua de cocción",
+        "ratio": "10–15 % del aceite",
+        "note": "Liga un poco y suaviza."
+      },
+      {
+        "use": "Caldeirada",
+        "ratio": "Ajada a partes iguales sobre pescado y patata",
+        "note": "Recién hecha."
+      }
+    ],
+    "variants": [
+      {
+        "id": "pulpo-a-feira",
+        "name": "Aliño del pulpo",
+        "note": "Aceite y pimentón sin ajo frito."
+      },
+      {
+        "id": "pil-pil",
+        "name": "Pil-pil",
+        "note": "Ajo y aceite ligados con la gelatina del bacalao."
+      },
+      {
+        "id": null,
+        "name": "Refrito",
+        "note": "Ajo, guindilla y vinagre sobre pescado a la espalda."
+      },
+      {
+        "id": "merluza-y-pescadilla",
+        "name": "Merluza a la gallega",
+        "note": "Su uso más conocido."
+      }
+    ],
+    "keys": [
+      "Ajo dorado claro, nunca tostado.",
+      "Pimentón fuera del fuego.",
+      "El vinagre o el agua cortan la temperatura y equilibran.",
+      "Se vierte caliente sobre producto caliente.",
+      "Pimentón de calidad y reciente."
+    ],
+    "errors": [
+      {
+        "p": "Ajada amarga y oscura",
+        "fix": "Pimentón quemado. Retira del fuego y deja bajar la temperatura antes de añadirlo."
+      },
+      {
+        "p": "Ajo amargo",
+        "fix": "Ajo tostado de más. Retira al dorado claro: sigue cogiendo color fuera del fuego."
+      },
+      {
+        "p": "Aceite plano",
+        "fix": "Poco ajo o pimentón viejo. Aumenta el ajo y renueva el pimentón."
+      }
+    ],
+    "history": "Es una elaboración tradicional gallega, ligada al pescado cocido y a la caldeirada de la costa. Comparte idea con los refritos de ajo y aceite de toda la cocina española.",
+    "uses": [
+      "Merluza y pescado cocido",
+      "Caldeirada",
+      "Bacalao y raya",
+      "Patata cocida y coliflor"
+    ],
+    "keep": "Mejor al momento. Si sobra, en frío y como mucho 4 días (ajo en aceite); se templa antes de usar, sin volver a freír el pimentón.",
+    "pro": "Lamina el ajo en el día y haz la ajada en cazo pequeño por tandas durante el servicio, con el pimentón pesado en un cuenco al lado.",
+    "related": [
+      "pimenton-y-noras",
+      "merluza-y-pescadilla",
+      "pulpo-a-feira",
+      "aceite-de-oliva",
+      "cebolla-y-ajo",
+      "bacalao"
+    ]
   }
 ]
