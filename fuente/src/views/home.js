@@ -168,6 +168,7 @@ export function render() {
   '<a class="tile tile-big" href="#/cocina">' + icon('pan') + '<strong>' + esc(t('Mi cocina', 'My kitchen')) + '</strong><span>' + esc(k ? k.catalogue + t(' productos en el catálogo, ', ' products in the catalogue, ') + k.known + t(' básicos tuyos', ' staples of yours') : t('Tu equipo, tu estilo y tus reglas', 'Your equipment, style and rules')) + '</span></a></div></section>';
 
  if (show('season')) html += seasonal();
+ html += '<p class="home-data"><button type="button" class="rail-backup" data-act="menu-open" data-backup-state></button></p>';
  html += '<p class="fine home-custom"><button type="button" class="linkbtn" data-act="home-custom">' + icon('gear') + esc(t('Elegir qué ves en Hoy', 'Choose what you see on Today')) + '</button></p>';
  return html;
 }
@@ -185,6 +186,7 @@ export function mount(root) {
  root.addEventListener('submit', e => { if (e.target.id !== 'homeSaber') return; e.preventDefault(); presetSaber(e.target.querySelector('input').value); go('biblioteca'); });
  root.addEventListener('click', e => {
   if (e.target.closest('[data-act=challenge-done]')) { completeChallenge().then(lv => { if (lv != null) import('../ui.js').then(({toast}) => toast(t('¡Reto cumplido! Tu nivel ha subido en Mi trayectoria.', 'Challenge done! Your level went up in My career.'), 'info', 5000)); }); return; }
+  if (e.target.closest('[data-act=menu-open]')) { document.querySelector('.rail-foot [data-act=menu], .top [data-act=menu]')?.click(); return; }
   if (e.target.closest('[data-act=home-custom]')) { customSheet(root); return; }
   if (e.target.closest('[data-act=hide-steps]')) { setPref('stepsHidden', true); e.target.closest('.steps').remove(); return; }
   const o = e.target.closest('[data-open]');

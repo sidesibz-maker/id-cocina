@@ -130,6 +130,7 @@ async function dossier() {
   (mastered.length || comfy.length ? '<section class="ficha-comp"><h2>' + esc(t('Técnicas', 'Techniques')) + '</h2>' + (mastered.length ? '<p><strong>' + esc(t('Domino: ', 'Mastered: ')) + '</strong>' + esc(mastered.join(', ')) + '</p>' : '') + (comfy.length ? '<p><strong>' + esc(t('Controlo: ', 'Comfortable: ')) + '</strong>' + esc(comfy.join(', ')) + '</p>' : '') + '</section>' : '') +
   (sig.length ? '<section class="ficha-comp"><h2>' + esc(t('Platos firma', 'Signature dishes')) + '</h2><div class="dossier-dishes">' + sig.map((d, k) => '<figure>' + (pics[k] ? '<img src="' + esc(pics[k]) + '" alt="">' : flavorPrint(d.flavor?.axes, {size: 90})) + '<figcaption><strong>' + esc(d.name) + '</strong>' + (d.concept ? '<span>' + esc(d.concept) + '</span>' : '') + '</figcaption></figure>').join('') + '</div></section>' : '') +
   (wins.length ? '<section class="ficha-comp"><h2>' + esc(t('Logros', 'Achievements')) + '</h2><ul>' + wins.map(w => '<li>' + esc(w.title) + (w.when ? ' <small>(' + esc(new Date(w.when + 'T12:00:00').toLocaleDateString(locale(), {month: 'long', year: 'numeric'})) + ')</small>' : '') + '</li>').join('') + '</ul></section>' : '') +
+  studyHtml() +
   (p.languages ? '<p class="ficha-line"><strong>' + esc(t('Idiomas: ', 'Languages: ')) + '</strong>' + esc(p.languages) + '</p>' : '') + '</article>';
  const imgs = [...host.querySelectorAll('img')];
  await Promise.all(imgs.map(i => (i.complete ? 0 : new Promise(r => { i.onload = i.onerror = r; setTimeout(r, 1500); }))));
@@ -160,4 +161,17 @@ export function mount(root) {
   await saveDoc('objetivo', g.id, {steps: (g.steps || []).map((s, i) => (i === k ? {...s, done: c.checked} : s))});
  });
  return null;
+}
+
+// En el dossier: lo que estudias y creas en la app (rutas superadas, exámenes, fichas leídas, platos y pruebas).
+function studyHtml() {
+ const routes = liveDocs('logro').filter(x => x.route), exams = liveDocs('examen').filter(x => Number.isFinite(Number(x.nota)));
+ const read = Object.keys(docById('lectura:estado')?.read || {}).length, dishes = liveDishes(), carta = dishes.filter(d => d.status === 'carta').length;
+ const tests = dishes.reduce((n, d) => n + (d.tests || []).filter(Boolean).length, 0);
+ const avg = exams.length ? Math.round(exams.slice(-20).reduce((a, x) => a + Number(x.nota), 0) / Math.min(20, exams.length) * 10) / 10 : null;
+ const facts = [read ? read + t(' fichas técnicas estudiadas', ' technical entries studied') : '', exams.length ? exams.length + t(' exámenes, nota media ', ' exams, average mark ') + String(avg).replace('.', ',') : '', dishes.length ? dishes.length + t(' platos en desarrollo', ' dishes in development') + (carta ? t(', ', ', ') + carta + t(' en carta', ' on the menu') : '') : '', tests ? tests + t(' pruebas de cata anotadas', ' tasting tests recorded') : ''].filter(Boolean);
+ if (!routes.length && !facts.length) return '';
+ return '<section class="ficha-comp"><h2>' + esc(t('Formación continua e I+D', 'Ongoing training and R&D')) + '</h2>' +
+  (routes.length ? '<p><strong>' + esc(t('Rutas superadas: ', 'Paths passed: ')) + '</strong>' + esc(routes.map(x => x.title.replace(/^Ruta «|^Path “/, '').replace(/» de la Biblioteca superada con un |” of the Library passed with /, ' (') + ')').join(', ')) + '</p>' : '') +
+  (facts.length ? '<p>' + esc(facts.join('. ') + '.') + '</p>' : '') + '</section>';
 }

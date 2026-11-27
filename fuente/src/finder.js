@@ -15,8 +15,11 @@ const SECTIONS = () => [
  ['#/herramientas', 'bolt', t('Herramientas', 'Tools')], ['#/sabores', 'wheel', t('Sabores', 'Flavours')], ['#/temporada', 'leaf', t('Temporada', 'Season')], ['#/preguntar', 'chat', t('Preguntar', 'Ask')], ['#/cocina', 'pan', t('Mi cocina', 'My kitchen')]
 ];
 // Puntuación sencilla: todas las palabras tienen que estar; vale más si están en el nombre y al principio.
+// Palabras de relleno que no buscan nada («mis platos con pulpo» busca «pulpo»).
+const FILL = new Set(['mis', 'mi', 'platos', 'plato', 'con', 'de', 'del', 'la', 'el', 'los', 'las', 'un', 'una', 'y', 'en', 'para', 'que', 'receta', 'recetas', 'buscar', 'busca', 'algo', 'my', 'dishes', 'dish', 'with', 'the', 'a', 'of', 'and']);
+const meaning = q => { const w = norm(q).split(' ').filter(Boolean), keep = w.filter(x => !FILL.has(x)); return (keep.length ? keep : w).join(' '); };
 function score(q, name, extra = '') {
- const words = norm(q).split(' ').filter(Boolean), n = norm(name), x = norm(extra);
+ const words = meaning(q).split(' ').filter(Boolean), n = norm(name), x = norm(extra);
  if (!words.length) return 0;
  let s = 0;
  for (const w of words) { if (n.startsWith(w)) s += 30; else if ((' ' + n).includes(' ' + w)) s += 20; else if (n.includes(w)) s += 10; else if (x.includes(w)) s += 3; else return 0; }
@@ -27,7 +30,7 @@ export function find(q) {
  const add = (label, rows) => { const r = rows.filter(x => x.s > 0).sort((a, b) => b.s - a.s).slice(0, 6); if (r.length) groups.push({label, rows: r}); };
  add(t('Platos', 'Dishes'), liveDishes().map(d => ({href: '#/plato/' + d.id, ic: 'book', title: d.name, sub: d.concept || (d.tags || []).map(x => '#' + x).join(' '), s: score(q, d.name, [d.concept, d.notes, (d.tags || []).join(' '), d.components.flatMap(c => c.items.map(i => i.n)).join(' ')].join(' '))})));
  add(t('Subrecetas', 'Sub-recipes'), liveSubs().map(x => ({href: '#/subreceta/' + x.id, ic: 'pan', title: x.name, sub: x.yield ? t('Rinde ', 'Yields ') + x.yield : '', s: score(q, x.name, x.items.map(i => i.n).join(' ') + ' ' + x.method)})));
- const lib = q.trim().length >= 2 ? saberSearch(q, 6) : [];
+ const lib = meaning(q).length >= 2 ? saberSearch(meaning(q), 6) : [];
  if (lib.length) groups.push({label: t('Biblioteca', 'Library'), rows: lib.map((e, k) => ({href: '#/biblioteca/' + e.id, ic: 'library', title: e.name, sub: e.summary || '', s: 100 - k}))});
  if (q.trim().length >= 3) groups.push({label: t('Biblioteca infinita', 'Endless library'), rows: [{href: '#/biblioteca/buscar/' + encodeURIComponent(q.trim()), ic: 'spark', title: t('Buscar o escribir «', 'Find or write “') + q.trim() + t('» en la Biblioteca', '” in the library'), sub: t('Si no está, ChatGPT escribe su ficha completa', 'If it is not there, ChatGPT writes its full entry'), s: 1}]});
  add(t('Diccionario', 'Dictionary'), GLOSSARY.map(([w, d]) => ({href: '#/biblioteca/diccionario/' + encodeURIComponent(w), ic: 'library', title: w, sub: d, s: score(q, w)})));
@@ -39,16 +42,27 @@ export function find(q) {
  return groups;
 }
 
+const Rec = typeof window !== 'undefined' ? (window.SpeechRecognition || window.webkitSpeechRecognition) : null;
 let open = null;
 export function openFinder(initial = '') {
  if (open) { $('#finderQ', open.el)?.focus(); return; }
  const s = sheet({title: t('Buscar en todo', 'Search everything'), wide: true, onClose: () => { open = null; }, body:
   '<div class="searchbox searchbox-big"><label class="sr" for="finderQ">' + esc(t('Buscar', 'Search')) + '</label>' + icon('search') + '<input id="finderQ" type="search" autocomplete="off" enterkeyhint="go" placeholder="' + esc(t('Platos, subrecetas, bechamel, diario, herramientas…', 'Dishes, sub-recipes, béchamel, journal, tools…')) + '" value="' + esc(initial) + '" role="combobox" aria-expanded="true" aria-controls="finderRes" aria-autocomplete="list"></div>' +
+  (Rec ? '<button type="button" class="btn ghost finder-mic" data-finder-mic>' + icon('mic') + '<span>' + esc(t('Dictar', 'Dictate')) + '</span></button>' : '') +
   '<div id="finderRes" class="finder" role="listbox" aria-label="' + esc(t('Resultados', 'Results')) + '"></div><p class="fine finder-keys">' + esc(t('Flechas para moverte, Intro para abrir, Esc para cerrar. Ctrl+K desde cualquier sitio.', 'Arrows to move, Enter to open, Esc to close. Ctrl+K from anywhere.')) + ' <button type="button" class="linkbtn" data-act="keys">' + esc(t('Todos los atajos', 'All shortcuts')) + '</button></p>'});
  open = s;
  const input = $('#finderQ', s.el), res = $('#finderRes', s.el);
  let at = 0;
  const mark = () => { const items = $$('.finder-row', res); items.forEach((el, k) => { const on = k === at; el.classList.toggle('is-on', on); el.setAttribute('aria-selected', on); if (on) { input.setAttribute('aria-activedescendant', el.id); el.scrollIntoView({block: 'nearest'}); } }); };
+ // Dictar la búsqueda: con las manos ocupadas, se dice «bechamel» o «mis platos con pulpo».
+ s.el.addEventListener('click', e => {
+  const m = e.target.closest('[data-finder-mic]'); if (!m || !Rec) return;
+  try { const r = new Rec(); r.lang = en() ? 'en-GB' : 'es-ES'; r.interimResults = false; r.maxAlternatives = 1;
+   m.classList.add('is-on'); m.lastChild.textContent = t('Escuchando…', 'Listening…');
+   r.onresult = ev => { input.value = ev.results[0][0].transcript; input.dispatchEvent(new Event('input', {bubbles: true})); input.focus(); };
+   r.onend = () => { m.classList.remove('is-on'); m.lastChild.textContent = t('Dictar', 'Dictate'); };
+   r.start(); } catch {}
+ });
  const paint = () => {
   const q = input.value.trim();
   if (!q) { res.innerHTML = '<p class="hint">' + esc(t('Escribe lo que buscas.', 'Type what you are looking for.')) + '</p>'; return; }

@@ -130,6 +130,11 @@ if (gotCert) {
  await p3.evaluate(() => { window.print = () => { window.__cert = document.getElementById('printFicha').innerText; }; });
  await p3.click('[data-ex=cert]'); await p3.waitForFunction(() => window.__cert);
  ok((await p3.evaluate(() => window.__cert)).includes('Certificado de aprendizaje'), 'el certificado no se imprime');
+ await p3.evaluate(() => { location.hash = '#/trayectoria'; }); await p3.waitForSelector('[data-act=dossier]');
+ await p3.evaluate(() => { window.print = () => { window.__dossier = document.getElementById('printFicha').innerText; }; });
+ await p3.click('[data-act=dossier]'); await p3.waitForFunction(() => window.__dossier, null, {timeout: 8000}).catch(() => {});
+ const dos = await p3.evaluate(() => window.__dossier || '');
+ ok(dos.includes('Formación continua') && dos.includes('Rutas superadas'), 'el dossier no lleva tu formación en la app: ' + dos.slice(0, 200));
 }
 await ctx3.close();
 ok(errors.length === 0, 'errores en la página: ' + errors.join(' | '));

@@ -59,6 +59,12 @@ ok((await page.evaluate(() => window.__said.at(-1) || '')).startsWith('Paso 2'),
 // Pantalla completa (si el navegador la permite)
 await go('#/cocinar/biblioteca/bechamel'); await page.waitForSelector('.cook-head');
 if (await page.evaluate(() => document.fullscreenEnabled)) ok(await page.locator('[data-full]').count() === 1, 'no hay botón de pantalla completa');
+{ const before = await page.evaluate(() => document.documentElement.dataset.theme);
+ await page.evaluate(() => { location.hash = '#/cocinar/biblioteca/bechamel'; }); await page.waitForSelector('[data-bright]');
+ await page.click('[data-bright]');
+ ok(await page.evaluate(() => document.documentElement.dataset.theme === 'light' && document.documentElement.dataset.contrast === 'alto'), 'la pantalla para luz fuerte no se aclara');
+ await page.evaluate(() => { location.hash = '#/hoy'; }); await wait(400);
+ ok(await page.evaluate(b => document.documentElement.dataset.theme === b && !document.documentElement.dataset.contrast, before), 'al salir del modo cocina no vuelve tu pantalla'); }
 { const ph = await (await browser.newContext({viewport: {width: 390, height: 844}, hasTouch: true})).newPage();
  await ph.goto(page.url().split('#')[0] + '#/cocinar/biblioteca/bechamel'); await ph.waitForSelector('.cook-switch');
  ok(await ph.locator('.cook-ings').isVisible() && !(await ph.locator('.cook-steps').isVisible()), 'en el móvil no empieza por los ingredientes');

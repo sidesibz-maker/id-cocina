@@ -22,6 +22,8 @@ await page.reload(); await page.waitForSelector('.hello h1'); await wait(500);
 await page.keyboard.press('Control+k'); await page.waitForSelector('#finderQ');
 await page.fill('#finderQ', 'calamar'); await wait(150);
 ok((await page.textContent('#finderRes')).includes('Calamar a la brasa'), 'el buscador no encuentra el plato');
+await page.fill('#finderQ', 'mis platos con calamar'); await wait(150);
+ok((await page.textContent('#finderRes')).includes('Calamar a la brasa'), 'el buscador no quita las palabras de relleno');
 await page.fill('#finderQ', 'romesco'); await wait(150);
 ok((await page.textContent('#finderRes')).includes('Subrecetas'), 'el buscador no encuentra la subreceta');
 await page.fill('#finderQ', 'bechamel'); await wait(150);

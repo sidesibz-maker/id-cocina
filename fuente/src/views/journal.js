@@ -3,6 +3,9 @@
 // Cada entrada es un documento «diario:…» (va en la copia y se sincroniza); nada se borra, va a la papelera.
 import {t, en, locale, dayKey, longDate} from '../i18n.js';
 import {esc, icon, $, $$, toast, ask, friendly, short} from '../ui.js';
+import {uploadImage} from '../store.js';
+import {shrinkImage} from '../ai.js';
+import {hydrateImages} from './shared.js';
 import {state, liveDocs, docById, saveDoc, trashDoc, liveDishes} from '../store.js';
 import {iaOn, askIa, iaMessage} from '../ia.js';
 import {go} from '../nav.js';
@@ -92,12 +95,14 @@ function editor(id) {
  const e = id === 'nuevo' ? {day: dayKey(), service: new Date().getHours() < 18 ? 'comida' : 'cena'} : docById(id);
  if (!e || e.type && e.type !== 'diario') return '<a class="back" href="#/diario">' + icon('left') + esc(t('Diario', 'Journal')) + '</a><div class="empty">' + icon('edit') + '<h3>' + esc(t('No encuentro esta entrada', 'I cannot find this entry')) + '</h3></div>';
  const dishes = liveDishes().slice(0, 60);
+ jpics = Array.isArray(e.images) ? e.images.slice() : [];
  return '<a class="back" href="#/diario">' + icon('left') + esc(t('Diario', 'Journal')) + '</a><header class="page-head"><h1>' + esc(id === 'nuevo' ? t('¿Cómo ha ido?', 'How did it go?') : longDate(e.day)) + '</h1></header>' +
   '<form id="jform" class="card jform" data-id="' + esc(id) + '"><div class="tpair"><div class="tfield"><label for="jday">' + esc(t('Día', 'Day')) + '</label><input id="jday" type="date" value="' + esc(e.day) + '" max="' + dayKey() + '"></div>' +
   '<div class="tfield"><label for="jservice">' + esc(t('Servicio', 'Service')) + '</label><select id="jservice">' + SERVICES.map(s => '<option value="' + s[0] + '"' + (s[0] === e.service ? ' selected' : '') + '>' + esc(en() ? s[2] : s[1]) + '</option>').join('') + '</select></div>' +
   '<div class="tfield"><label for="jcovers">' + esc(t('Cubiertos', 'Covers')) + '</label><input id="jcovers" inputmode="numeric" value="' + esc(e.covers || '') + '" autocomplete="off"></div></div>' +
   '<fieldset class="jmoods"><legend>' + esc(t('¿Qué tal el servicio?', 'How was service?')) + '</legend><div class="seg">' + MOODS.map(m => '<label class="seg-btn' + (Number(e.mood) === m[0] ? ' active' : '') + '"><input type="radio" name="jmood" value="' + m[0] + '" class="sr"' + (Number(e.mood) === m[0] ? ' checked' : '') + '>' + esc(en() ? m[2] : m[1]) + '</label>').join('') + '</div></fieldset>' +
   FIELDS.map(([k, label, ph]) => '<div class="tfield"><label for="j-' + k + '">' + esc(label(t)) + '</label><textarea id="j-' + k + '" data-voice rows="3" maxlength="3000" placeholder="' + esc(ph(t)) + '">' + esc(e[k] || '') + '</textarea></div>').join('') +
+  '<div class="tfield"><p class="jlegend">' + esc(t('Fotos del día (platos, pruebas, el pase)', 'Photos of the day (dishes, tests, the pass)')) + '</p><div id="jpics" class="jpics">' + picsHtml() + '</div><label class="btn ghost" for="jphoto">' + icon('image') + '<span>' + esc(t('Añadir fotos', 'Add photos')) + '</span></label><input id="jphoto" class="sr" type="file" accept="image/*" multiple></div>' +
   (dishes.length ? '<fieldset class="tfield"><legend class="jlegend">' + esc(t('Platos de tu libreta que han salido o has tocado', 'Dishes from your notebook that went out or you worked on')) + '</legend><div class="chips jdishes">' + dishes.map(d => '<label class="chip' + ((e.dishes || []).includes(d.id) ? ' chip-have' : '') + '"><input type="checkbox" class="sr" value="' + esc(d.id) + '"' + ((e.dishes || []).includes(d.id) ? ' checked' : '') + '>' + esc(d.name) + '</label>').join('') + '</div></fieldset>' : '') +
   '<div class="row-actions">' + (id !== 'nuevo' ? '<button type="button" class="btn danger" data-act="trash">' + icon('trash') + esc(t('A la papelera', 'To the bin')) + '</button>' : '') + '<button type="submit" class="btn primary">' + icon('check') + esc(t('Guardar', 'Save')) + '</button></div></form>' +
   (id !== 'nuevo' && (e.dishes || []).length ? '<section class="sec">' + '<header class="sec-head"><div><h2>' + esc(t('Platos de este día', 'Dishes from this day')) + '</h2></div></header><div class="chips">' + e.dishes.map(did => { const d = state.dishes.find(x => x.id === did); return d ? '<a class="chip" href="#/plato/' + esc(d.id) + '">' + esc(d.name) + '</a>' : ''; }).join('') + '</div></section>' : '');
@@ -156,17 +161,28 @@ export function mount(root, params) {
    await trashDoc(id); toast(t('En la papelera.', 'Moved to the bin.')); go('diario');
   }
  });
+ // Fotos del día: se guardan con la entrada; «Quitar» la retira sin borrarla.
+ root.addEventListener('change', async e => {
+  if (e.target.id !== 'jphoto' || !e.target.files?.length) return;
+  for (const f of [...e.target.files].slice(0, 6)) { try { jpics.push({path: await uploadImage('diario', await shrinkImage(f)), at: new Date().toISOString()}); } catch { toast(t('No se pudo guardar una foto.', 'A photo could not be saved.'), 'error'); } }
+  e.target.value = ''; paintPics(root);
+ });
+ root.addEventListener('click', e => { const q = e.target.closest('[data-unpic]'); if (!q) return; const p = jpics.find(x => x.path === q.dataset.unpic); if (p) p.deleted_at = new Date().toISOString(); paintPics(root); });
  root.addEventListener('submit', async e => {
   if (e.target.id !== 'jform') return;
   e.preventDefault();
   const f = e.target, id = f.dataset.id, val = k => $('#j-' + k, f).value.trim();
   const patch = {day: $('#jday', f).value || dayKey(), service: $('#jservice', f).value, covers: Math.max(0, parseInt($('#jcovers', f).value, 10) || 0) || null, mood: Number(f.querySelector('input[name=jmood]:checked')?.value) || null,
-   good: val('good'), bad: val('bad'), learned: val('learned'), ideas: val('ideas'), dishes: $$('.jdishes input:checked', f).map(x => x.value)};
+   good: val('good'), bad: val('bad'), learned: val('learned'), ideas: val('ideas'), dishes: $$('.jdishes input:checked', f).map(x => x.value), images: jpics};
   patch.dishNames = patch.dishes.map(d => state.dishes.find(x => x.id === d)?.name).filter(Boolean);
-  if (!patch.good && !patch.bad && !patch.learned && !patch.ideas && !patch.covers) { toast(t('Escribe al menos una línea.', 'Write at least one line.'), 'error'); return; }
+  if (!patch.good && !patch.bad && !patch.learned && !patch.ideas && !patch.covers && !jpics.some(x => !x.deleted_at)) { toast(t('Escribe al menos una línea.', 'Write at least one line.'), 'error'); return; }
   try { await saveDoc('diario', id === 'nuevo' ? null : id, patch); toast(t('Guardado en tu diario.', 'Saved to your journal.')); go('diario'); }
   catch (err) { toast(friendly(err), 'error'); }
  });
  return null;
 }
 export function onData(what, root, params) { if (!params[0] && ['remote', 'load'].includes(what)) { const host = root; host.innerHTML = render(params); } }
+
+let jpics = [];
+const picsHtml = () => jpics.filter(x => !x.deleted_at).map(x => '<figure class="jpic"><img data-img="' + esc(x.path) + '" alt="' + esc(t('Foto del día', 'Photo of the day')) + '"><button type="button" class="linkbtn" data-unpic="' + esc(x.path) + '">' + esc(t('Quitar', 'Remove')) + '</button></figure>').join('');
+function paintPics(root) { const box = $('#jpics', root); if (box) { box.innerHTML = picsHtml(); hydrateImages(box); } }

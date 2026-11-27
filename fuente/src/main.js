@@ -1,4 +1,5 @@
 // I+D · arranque, menú y navegación. La app vive entera en este ordenador: no hay cuentas ni servidores.
+import {dataStatus} from './status.js';
 import './lab.css';
 import {applyPrefs, prefs, setPref, isDark, t} from './i18n.js';
 import {$, $$, esc, icon, sheet, toast, closeSheets, friendly} from './ui.js';
@@ -57,7 +58,7 @@ function shell() {
    '<button type="button" class="rail-find" data-act="finder">' + icon('search') + '<span>' + esc(t('Buscar', 'Search')) + '</span><kbd>Ctrl K</kbd></button>' +
    '<a class="rail-create" href="#/crear" data-nav="crear">' + icon('plus') + '<span>' + esc(t('Crear un plato', 'Create a dish')) + '</span></a>' +
    '<nav class="rail-nav" aria-label="' + esc(t('Secciones', 'Sections')) + '">' + item(NAV[0]) + RAIL_MAIN.map(x => item(x, 'nav-main')).join('') + '<span class="rail-sep" aria-hidden="true"></span>' + RAIL_CRAFT.map(x => item(x)).join('') + '<span class="rail-sep" aria-hidden="true"></span>' + RAIL_MORE.map(x => item(x, 'nav-small')).join('') + '</nav>' +
-   '<div class="rail-foot"><button type="button" class="rail-link" data-act="menu">' + icon('gear') + '<span>' + esc(t('Ajustes', 'Settings')) + '</span></button></div></aside>' +
+   '<div class="rail-foot"><button type="button" class="rail-backup" data-act="menu" data-backup-state></button><button type="button" class="rail-link" data-act="menu">' + icon('gear') + '<span>' + esc(t('Ajustes', 'Settings')) + '</span></button></div></aside>' +
   '<header class="top"><a class="wordmark" href="#/hoy" aria-label="I+D">I<b>+</b>D</a><span class="top-rest">' + esc(t('Cuaderno de cocina', 'Kitchen notebook')) + '</span><a class="top-ask" href="#/preguntar" data-nav="preguntar">' + icon('chat') + '<span>' + esc(t('Preguntar', 'Ask')) + '</span></a><button type="button" class="iconbtn" data-act="finder" aria-label="' + esc(t('Buscar en todo', 'Search everything')) + '">' + icon('search') + '</button><button type="button" class="iconbtn" data-act="menu" aria-label="' + esc(t('Más y ajustes', 'More and settings')) + '">' + icon('menu') + '<i class="badge badge-dot" data-badge="radar" aria-hidden="true" hidden></i></button></header>' +
   '<div id="notices"></div><main id="view" tabindex="-1"></main><nav class="tabs" aria-label="' + esc(t('Secciones', 'Sections')) + '">' + NAV.map(item).join('') + '</nav></div>';
  $('.skip-link', app()).onclick = e => {
@@ -75,6 +76,12 @@ function notices() {
  const live = state.dishes.filter(d => !d.deleted_at).length, days = state.lastBackup ? Math.floor((Date.now() - new Date(state.lastBackup).getTime()) / 86400000) : null;
  host.innerHTML = live >= 3 && (days === null || days > 14) ? '<div class="notice" role="status">' + icon('info') + '<p><strong>' + esc(t('Haz una copia de seguridad.', 'Make a backup.')) + '</strong> ' + esc(days === null ? t('Tu libreta está solo en este ordenador y aún no tiene copia.', 'Your notebook lives only on this computer and has no backup yet.') : t('La última copia es de hace ' + days + ' días.', 'The last backup was ' + days + ' days ago.')) + ' <button type="button" class="linkbtn" id="noticeBackup">' + esc(t('Descargar copia', 'Download backup')) + '</button></p></div>' : '';
  const b = $('#noticeBackup'); if (b) b.onclick = backup;
+ paintDataStatus();
+}
+// La copia y la sincronización, siempre a la vista (menú lateral y portada).
+function paintDataStatus() {
+ const d = dataStatus();
+ $$('[data-backup-state]').forEach(el => { el.className = el.className.replace(/\s*is-(ok|warn)/g, '') + ' is-' + d.level; el.innerHTML = '<i aria-hidden="true"></i><span><strong>' + esc(d.copy) + '</strong><small>' + esc(d.sync) + '</small></span>'; el.title = d.copy + '. ' + d.sync; });
 }
 function badges() {
  const n = unseenTrends();

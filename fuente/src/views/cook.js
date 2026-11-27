@@ -1,7 +1,9 @@
 // I+D · Modo cocina: una receta para usarla con las manos ocupadas. Letra grande, un paso cada vez, la pantalla no se
 // apaga, las cantidades se multiplican por las raciones que vas a hacer y cada tiempo de un paso («25 min») es un botón
 // que pone un temporizador. Vale para platos, subrecetas y recetas de la Biblioteca.
-import {t, en} from '../i18n.js';
+import {t, en, applyPrefs} from '../i18n.js';
+// Luz fuerte de cocina: lámina blanca y alto contraste solo mientras se cocina (no cambia tus ajustes).
+const applyBright = () => { if (!bright) { applyPrefs(); return; } document.documentElement.dataset.theme = 'light'; document.documentElement.dataset.contrast = 'alto'; };
 import {esc, icon, $, $$} from '../ui.js';
 import {dishById, subById} from '../store.js';
 import {entryById} from '../saber/index.js';
@@ -55,13 +57,13 @@ export function timesIn(text) {
  return out;
 }
 
-let state = {key: '', step: 0, people: 0, lock: null, done: new Set(), view: 'ings'};
+let state = {key: '', step: 0, people: 0, lock: null, done: new Set(), view: 'ings'}, bright = false;
 export function render(params) {
  const r = load(params);
  if (!r) return '<a class="back" href="#/libreta">' + icon('left') + esc(t('Platos', 'Dishes')) + '</a><div class="empty">' + icon('book') + '<h3>' + esc(t('No encuentro esta receta', 'I cannot find this recipe')) + '</h3><p>' + esc(t('Puede que se haya movido o que no tenga ingredientes ni pasos.', 'It may have moved, or it has no ingredients or steps.')) + '</p></div>';
  const key = params.join('/');
  if (state.key !== key) state = {key, step: 0, people: r.base, lock: state.lock, done: new Set(), view: 'ings'};
- return '<div class="cook" data-view="' + state.view + '"><header class="cook-head"><a class="back" href="' + esc(r.back) + '">' + icon('left') + esc(t('Salir del modo cocina', 'Leave cook mode')) + '</a><h1>' + esc(r.name) + '</h1>' + (document.fullscreenEnabled ? '<button type="button" class="linkbtn cook-full" data-full aria-pressed="' + !!document.fullscreenElement + '">' + esc(document.fullscreenElement ? t('Salir de pantalla completa', 'Exit full screen') : t('Pantalla completa', 'Full screen')) + '</button>' : '') +
+ return '<div class="cook" data-view="' + state.view + '"><header class="cook-head"><a class="back" href="' + esc(r.back) + '">' + icon('left') + esc(t('Salir del modo cocina', 'Leave cook mode')) + '</a><h1>' + esc(r.name) + '</h1>' + '<button type="button" class="linkbtn cook-bright" data-bright aria-pressed="' + bright + '">' + icon('sun') + esc(bright ? t('Volver a tu pantalla', 'Back to your screen') : t('Pantalla para luz fuerte', 'Screen for bright light')) + '</button>' + (document.fullscreenEnabled ? '<button type="button" class="linkbtn cook-full" data-full aria-pressed="' + !!document.fullscreenElement + '">' + esc(document.fullscreenElement ? t('Salir de pantalla completa', 'Exit full screen') : t('Pantalla completa', 'Full screen')) + '</button>' : '') +
   '<div class="cook-scale"><label for="cookN">' + esc(t('Voy a hacer', 'I am making')) + '</label><div class="tinput"><input id="cookN" inputmode="decimal" value="' + esc(nice(state.people)) + '" autocomplete="off"><span>' + esc(r.unit) + '</span></div>' + (r.base !== 1 || r.unit ? '<small>' + esc(t('La receta es para ', 'The recipe is for ') + nice(r.base) + ' ' + (r.base === 1 && r.unit === 'raciones' ? 'ración' : r.base === 1 && r.unit === 'servings' ? 'serving' : r.unit)) + '</small>' : '') + '</div>' + (r.note ? '<p class="fine">' + esc(r.note) + '</p>' : '') + '</header>' +
   '<div class="seg cook-switch" role="group" aria-label="' + esc(t('Qué ver', 'What to show')) + '"><button type="button" class="seg-btn' + (state.view === 'ings' ? ' active' : '') + '" data-cview="ings" aria-pressed="' + (state.view === 'ings') + '">' + esc(t('Ingredientes', 'Ingredients')) + '</button><button type="button" class="seg-btn' + (state.view === 'steps' ? ' active' : '') + '" data-cview="steps" aria-pressed="' + (state.view === 'steps') + '">' + esc(t('Pasos', 'Steps')) + '</button></div>' +
   '<div class="cook-body"><section class="cook-ings" aria-label="' + esc(t('Ingredientes', 'Ingredients')) + '"><h2>' + esc(t('Ingredientes', 'Ingredients')) + '</h2><div id="cookIngs">' + ings(r) + '</div>' + (r.steps.length ? '<button type="button" class="btn primary cook-start" data-cview="steps">' + icon('flame') + esc(t('Empezar a cocinar', 'Start cooking')) + '</button>' : '') + '</section>' +
@@ -106,6 +108,7 @@ export function mount(root, params) {
  root.addEventListener('pointerup', e => { if (sx == null) return; const dx = e.clientX - sx, dy = e.clientY - sy; sx = null; if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) { state.step = Math.max(0, Math.min(r.steps.length - 1, state.step + (dx < 0 ? 1 : -1))); paintStep(); } });
  root.addEventListener('click', e => {
   const v = e.target.closest('[data-cview]'); if (v) { setView(v.dataset.cview); return; }
+  const bb = e.target.closest('[data-bright]'); if (bb) { bright = !bright; applyBright(); bb.setAttribute('aria-pressed', bright); bb.lastChild.textContent = bright ? t('Volver a tu pantalla', 'Back to your screen') : t('Pantalla para luz fuerte', 'Screen for bright light'); return; }
   const g = e.target.closest('[data-go]'), s = e.target.closest('[data-step]'), tm = e.target.closest('[data-timer]');
   if (g) { state.step += Number(g.dataset.go); paintStep(); $('.cook-text', root)?.focus?.(); }
   if (s) { state.step = Number(s.dataset.step); paintStep(); }
@@ -119,8 +122,8 @@ export function mount(root, params) {
  // Con teclado: flechas para pasar de paso.
  const keys = e => { if (/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName)) return; if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); state.step = Math.min(r.steps.length - 1, state.step + 1); paintStep(); } if (e.key === 'ArrowLeft') { state.step = Math.max(0, state.step - 1); paintStep(); } };
  document.addEventListener('keydown', keys);
- document.documentElement.classList.add('cooking');
- return () => { document.removeEventListener('visibilitychange', vis); document.removeEventListener('keydown', keys); document.documentElement.classList.remove('cooking'); try { state.lock?.release(); } catch {} try { if (canSpeak()) speechSynthesis.cancel(); } catch {} try { if (document.fullscreenElement) document.exitFullscreen(); } catch {} state.lock = null; };
+ document.documentElement.classList.add('cooking'); applyBright();
+ return () => { if (bright) { bright = false; applyPrefs(); } document.removeEventListener('visibilitychange', vis); document.removeEventListener('keydown', keys); document.documentElement.classList.remove('cooking'); try { state.lock?.release(); } catch {} try { if (canSpeak()) speechSynthesis.cancel(); } catch {} try { if (document.fullscreenElement) document.exitFullscreen(); } catch {} state.lock = null; };
 }
 export const cookLink = (kind, id) => '#/cocinar/' + kind + '/' + encodeURIComponent(id);
 export {$$, en};

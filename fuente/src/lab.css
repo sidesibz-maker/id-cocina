@@ -1495,3 +1495,18 @@ button.exopt:hover{border-color:var(--ink);background:var(--soft)}
 .kdict-langs small{color:var(--mut);font-family:var(--narrow);font-weight:600}
 .kdict-say{display:inline-grid;place-items:center;width:32px;height:32px;margin-left:2px;border:0;background:transparent;color:var(--mut);cursor:pointer;vertical-align:middle}
 .kdict-say:hover{color:var(--ink)}.kdict-say .ic{width:18px;height:18px}
+/* Copia de seguridad y sincronización, siempre a la vista. */
+.rail-backup{display:flex;gap:8px;align-items:flex-start;width:100%;text-align:left;background:transparent;border:1px solid var(--line);color:var(--ink);padding:8px 10px;margin-bottom:8px;cursor:pointer;font:inherit}
+.rail-backup i{width:8px;height:8px;margin-top:6px;flex:none;background:var(--ok-ink)}.rail-backup.is-warn i{background:var(--ember)}.rail-backup.is-warn{border-color:var(--ember)}
+.rail-backup span{display:flex;flex-direction:column;min-width:0}.rail-backup strong{font-size:13px;font-weight:600}.rail-backup small{font-size:12px;color:var(--mut)}
+.home-data{margin-top:32px;display:flex;justify-content:center}.home-data .rail-backup{width:auto;max-width:360px}
+.home-custom{margin-top:8px}
+/* Buscador: dictar. */
+.finder-mic{margin-top:8px}.finder-mic.is-on{border-color:var(--ember);color:var(--ember-ink)}
+/* Diario: fotos del día; el plato enseña los días del diario. */
+.jpics{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px;margin:6px 0 10px}.jpics:empty{display:none}
+.jpic{margin:0;border:1px solid var(--line)}.jpic img{width:100%;aspect-ratio:1;object-fit:cover;display:block;background:var(--soft)}.jpic .linkbtn{padding:4px 8px;min-height:36px}
+.dish-diary{display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center}.dish-diary .ic{width:16px;height:16px}
+/* Modo cocina: botón de luz fuerte. */
+.cook-bright{margin-right:12px}
+.rail .rail-backup{color:var(--on-coal);border-color:var(--line2)}.rail .rail-backup small{color:var(--mut-coal)}.rail .rail-backup.is-warn{border-color:var(--ember)}

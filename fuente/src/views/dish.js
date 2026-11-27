@@ -5,6 +5,7 @@ import {ALLERGENS, IMAGE_STYLES} from '../ai-core.js';
 import {searchIngredients, flavorContext} from '../kitchen.js';
 import {t, en, pick, relDay, shortDate, seasonOf, seasonLabel, dayKey} from '../i18n.js';
 import {esc, icon, $, $$, uid, toast, friendly, sheet, ask, flavorMeters, flavorPrint, verdictText, axisName, lackName, clip} from '../ui.js';
+import {liveDocs} from '../store.js';
 import {state, dishById, fetchDish, createDish, saveDish, trashDish, restoreDish, imageUrl, uploadImage, userName, subById, createSub, dishVersions, snapshotDish} from '../store.js';
 import {advicePrompt, imagePrompt, adviceFromReply, copy, shrinkImage, pairingPrompt} from '../ai.js';
 import {iaOn, askIa, iaMessage, imageData} from '../ia.js';
@@ -275,6 +276,8 @@ function testTrend(list) {
 function testsHtml() {
  const can = editable(), tests = [...cur.tests].filter(Boolean).reverse();
  let html = '<h2>' + esc(t('Pruebas de cata', 'Tasting tests')) + '</h2>';
+ const inDiary = cur.id ? liveDocs('diario').filter(x => (x.dishes || []).includes(cur.id)).sort((x, y) => String(y.day).localeCompare(String(x.day))).slice(0, 6) : [];
+ if (inDiary.length) html += '<p class="fine dish-diary">' + icon('edit') + esc(t('En tu diario: ', 'In your journal: ')) + inDiary.map(x => '<a href="#/diario/' + encodeURIComponent(x.id) + '">' + esc(new Date(x.day + 'T12:00:00').toLocaleDateString(en() ? 'en-GB' : 'es-ES', {day: 'numeric', month: 'short'})) + '</a>').join(', ') + '</p>';
  // Lo que te apuntaste para la próxima vez, arriba, antes de volver a cocinarlo.
  const pending = tests.find(x => x.next);
  if (pending) html += '<div class="callout test-pending"><h3>' + esc(t('Lo que te apuntaste para esta vez', 'What you noted for this time')) + '</h3><p>' + esc(pending.next) + '</p></div>';

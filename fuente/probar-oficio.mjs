@@ -31,7 +31,15 @@ ok((await page.textContent('.rail')).includes('Diario') && (await page.textConte
 await go('#/diario'); ok(await page.isVisible('.empty'), 'el diario vacío no lo explica');
 await go('#/diario/nuevo'); await page.fill('#jcovers', '74'); await page.click('.jmoods label:nth-child(4)');
 await page.fill('#j-good', 'El calamar salió perfecto'); await page.fill('#j-bad', 'Retraso en el pase de la brasa'); await page.fill('#j-learned', 'Atemperar el calamar antes de la brasa');
-await page.click('.jdishes label'); await page.click('#jform button[type=submit]'); await wait(400);
+await page.click('.jdishes label');
+const jpng = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==', 'base64');
+await page.setInputFiles('#jphoto', {name: 'pase.png', mimeType: 'image/png', buffer: jpng}); await page.waitForSelector('.jpic');
+await page.click('#jform button[type=submit]'); await wait(400);
+const jdoc = await page.evaluate(() => Object.values(JSON.parse(localStorage.getItem('id-cocina-v1')).docs).find(d => d.type === 'diario' && d.good === 'El calamar salió perfecto'));
+ok(jdoc && jdoc.images?.length === 1 && jdoc.dishes?.length === 1, 'la foto del diario no se guarda');
+await page.evaluate(id => { location.hash = '#/plato/' + id; }, jdoc.dishes[0]); await page.waitForSelector('#dishName');
+ok(await page.locator('.dish-diary a').count() === 1, 'el plato no enseña el día del diario');
+await page.evaluate(() => { location.hash = '#/diario'; }); await wait(400);
 ok(await page.evaluate(() => location.hash) === '#/diario', 'guardar no vuelve al diario');
 ok(await page.locator('.jcard').count() === 1, 'no sale la entrada guardada');
 ok((await page.textContent('.jstats')).includes('74'), 'no cuenta los cubiertos de la semana');
