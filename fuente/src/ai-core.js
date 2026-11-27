@@ -111,18 +111,18 @@ export function kitchenRequest(kb, kitchen, settings, restaurant, now = new Date
 // las subrecetas propias, luego en la tabla de sabores. Lo que no se reconoce se conserva con su nombre, sin perfil.
 export function ideaToDish(kb, kitchen, idea, newId = () => Math.random().toString(36).slice(2, 10)) {
  const subs = kitchen?.subrecipes || [];
- const item = (name, lead) => {
-  const n = clip(name, 80);
+ const item = (name, lead, q = '') => {
+  const n = clip(name, 80), qty = clip(q, 40);
   if (!n) return null;
   const own = subs.find(s => norm(s.name) === norm(n));
-  if (own) return {n: own.name, k: own.kb, w: lead ? 3 : 2, src: 'recipe', ref: own.id, ...(own.mix.length ? {mix: own.mix} : {})};
+  if (own) return {n: own.name, k: own.kb, w: lead ? 3 : 2, src: 'recipe', ref: own.id, ...(own.mix.length ? {mix: own.mix} : {}), ...(qty ? {q: qty} : {})};
   const k = matchName(kb, n);
-  return {n, k, w: lead ? 3 : 2, src: k ? 'kb' : 'free'};
+  return {n, k, w: lead ? 3 : 2, src: k ? 'kb' : 'free', ...(qty ? {q: qty} : {})};
  };
  const components = (Array.isArray(idea?.components) ? idea.components : []).slice(0, 8).map(c => {
   const r = ROLE_IDS.includes(c?.role) ? c.role : 'guarnicion';
-  const names = (Array.isArray(c?.items) ? c.items : []).map(x => (typeof x === 'string' ? x : x?.n || x?.name)).filter(Boolean);
-  const items = (names.length ? names : [c?.name]).slice(0, 10).map((n, k) => item(n, r === 'principal' && k === 0)).filter(Boolean);
+  const list = (Array.isArray(c?.items) ? c.items : []).map(x => (typeof x === 'string' ? {n: x} : {n: x?.n || x?.name, q: x?.q || x?.qty || ''})).filter(x => x.n);
+  const items = (list.length ? list : [{n: c?.name}]).slice(0, 10).map((x, k) => item(x.n, r === 'principal' && k === 0, x.q)).filter(Boolean);
   return {id: newId(), role: r, name: clip(c?.name, 90), techniques: [...new Set((Array.isArray(c?.techniques) ? c.techniques : []).map(techOf).filter(Boolean))].slice(0, 5), items};
  }).filter(c => c.items.length || c.name);
  return {name: clip(idea?.name, 140), concept: clip(idea?.line, 600), course: COURSE_IDS.includes(idea?.course) ? idea.course : 'otro', components};

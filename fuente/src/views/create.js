@@ -64,6 +64,8 @@ function recIds(e) {
  return REC_IX.get(e.id);
 }
 const ings = () => board.items.filter(x => x.k === 'ing').map(x => x.id);
+// Ingredientes de una receta de la Biblioteca, con su cantidad, para que el plato nazca con gramos.
+const recQty = e => (e.base?.items || []).slice(0, 10).map(x => [String(x[0]).replace(/\s*\(.*\)$/, ''), String(x[1] || '')]);
 const plateIds = () => [...new Set([...ings(), ...board.items.filter(x => x.k === 'rec').flatMap(x => { const e = entryById(x.id); return e ? recIds(e) : []; })])];
 function draftDish() { return state.kb ? {...ideaToDish(state.kb, state.kitchen, toIdea(), () => 'x'), course: board.course || 'otro'} : null; }
 // Las ideas que estallan alrededor del plato, por grupos. Cada tarjeta: {k, id, label, why, role, items}.
@@ -125,7 +127,7 @@ function burst() {
   if (s && hits.length) recs.push({e, s: s / Math.sqrt(ids.length), hits});
  }
  recs.sort((a, b) => b.s - a.s || a.e.id.localeCompare(b.e.id));
- out.push(['recipes', t('Recetas de la Biblioteca', 'Library recipes'), recs.slice(0, 6).map(({e, hits}) => ({k: 'rec', id: e.id, label: e.name, why: t('lleva ' + and(hits.slice(0, 2).map(lo)) + ', que va con ' + lo(main), 'has ' + and(hits.slice(0, 2).map(lo)) + ', which goes with ' + lo(main)), role: e.cat === 'salsas' ? 'salsa' : e.cat === 'dulce' ? 'cremoso' : 'guarnicion', items: e.base.items.slice(0, 6).map(x => String(x[0]).replace(/\s*\(.*\)$/, ''))}))]);
+ out.push(['recipes', t('Recetas de la Biblioteca', 'Library recipes'), recs.slice(0, 6).map(({e, hits}) => ({k: 'rec', id: e.id, label: e.name, why: t('lleva ' + and(hits.slice(0, 2).map(lo)) + ', que va con ' + lo(main), 'has ' + and(hits.slice(0, 2).map(lo)) + ', which goes with ' + lo(main)), role: e.cat === 'salsas' ? 'salsa' : e.cat === 'dulce' ? 'cremoso' : 'guarnicion', items: e.base.items.slice(0, 6).map(x => String(x[0]).replace(/\s*\(.*\)$/, '')), qty: recQty(e)}))]);
  return out.filter(c => c[2].length);
 }
 function autoName() {
@@ -138,11 +140,11 @@ function autoName() {
 function toIdea() {
  const techs = board.items.filter(x => x.k === 'tech').map(x => x.id), parts = board.items.filter(x => x.k !== 'tech');
  return {name: autoName() || t('Plato nuevo', 'New dish'), line: board.brief.slice(0, 240), course: board.course || 'otro', why: '', twist: '',
-  components: parts.map((x, k) => ({role: k ? (x.role || 'guarnicion') : 'principal', name: x.label, techniques: k ? [] : techs.filter(id => AI_TECHS.includes(id)), items: x.items?.length ? x.items : [x.label]}))};
+  components: parts.map((x, k) => ({role: k ? (x.role || 'guarnicion') : 'principal', name: x.label, techniques: k ? [] : techs.filter(id => AI_TECHS.includes(id)), items: x.qty?.length ? x.qty.map(([n, q]) => ({n, q})) : x.items?.length ? x.items : [x.label]}))};
 }
 function add(card) {
  if (!card || board.items.some(x => x.k === card.k && x.id === card.id)) return;
- board.items.push({k: card.k, id: card.id || card.label, label: card.label, role: board.items.some(x => x.k !== 'tech') ? (card.role || 'guarnicion') : 'principal', ...(card.items ? {items: card.items} : {})});
+ board.items.push({k: card.k, id: card.id || card.label, label: card.label, role: board.items.some(x => x.k !== 'tech') ? (card.role || 'guarnicion') : 'principal', ...(card.items ? {items: card.items} : {}), ...(card.qty ? {qty: card.qty} : {})});
  keep();
 }
 function cardHtml(c, key, k) {
@@ -192,7 +194,7 @@ function mountStudio(root) {
   const ids = found(text);
   for (const id of ids) add({k: 'ing', id, label: cap(ingName(id)), role: 'guarnicion'});
   // Si dice una receta de la Biblioteca por su nombre (romesco, alioli…), también entra.
-  if (!ids.length) { const e2 = search(text, 1)[0]; if (e2 && e2.base?.items?.length && norm(e2.name).includes(norm(text).split(' ')[0])) add({k: 'rec', id: e2.id, label: e2.name, role: e2.cat === 'salsas' ? 'salsa' : 'guarnicion', items: e2.base.items.slice(0, 6).map(x => String(x[0]).replace(/\s*\(.*\)$/, ''))}); }
+  if (!ids.length) { const e2 = search(text, 1)[0]; if (e2 && e2.base?.items?.length && norm(e2.name).includes(norm(text).split(' ')[0])) add({k: 'rec', id: e2.id, label: e2.name, role: e2.cat === 'salsas' ? 'salsa' : 'guarnicion', items: e2.base.items.slice(0, 6).map(x => String(x[0]).replace(/\s*\(.*\)$/, '')), qty: recQty(e2)}); }
   keep();
   if (!board.items.length && !course) toast(t('No reconozco ningún producto ahí. Prueba con uno concreto (pulpo, calabaza, cordero…) o toca uno de abajo.', 'I do not recognise a product there. Try a specific one (octopus, pumpkin, lamb…) or tap one below.'), 'info', 6000);
   paint(); $('#bBrief', root)?.focus();

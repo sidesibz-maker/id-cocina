@@ -1425,3 +1425,22 @@ button.exopt:hover{border-color:var(--ink);background:var(--soft)}
 .bnotes li.is-ok .ic{color:var(--ok-ink)}
 .bnotes span{display:flex;flex-direction:column}.bnotes small{color:var(--mut);font-size:13px;line-height:1.45}
 .bgroup-need h2{color:var(--ember-ink)}
+/* Ficha técnica profesional (también en pantalla dentro de la hoja de raciones y versiones). */
+.sklabels{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:6px 0}
+.sklabels .chip[aria-pressed=true]{border-color:var(--ember);color:var(--ember-ink)}
+.versions li{display:flex;gap:10px;align-items:flex-start}.vpick{display:inline-flex;align-items:center;min-height:44px;min-width:32px}.vpick input{width:20px;height:20px}
+.dalg-warn{color:var(--warn-ink)}.dalg-warn .ic{width:16px;height:16px;vertical-align:-3px;margin-right:4px}
+.scale-row{max-width:520px}.scale-t td:last-child{font-variant-numeric:tabular-nums}
+@media print{
+ .ficha-pro .ficha-data{display:flex;flex-wrap:wrap;gap:4px 18px;margin:6px 0 0;font-size:9.5pt}
+ .ficha-pro .ficha-data div{display:flex;gap:4px}.ficha-pro .ficha-data dt{color:var(--mut)}.ficha-pro .ficha-data dt::after{content:':'}.ficha-pro .ficha-data dd{margin:0;font-weight:600}
+ .ficha-alg{break-inside:avoid;margin:8px 0;padding:6px 0;border-bottom:1px solid var(--line)}.ficha-alg h2{font-size:10.5pt;margin:0 0 4px}
+ .ficha-alg ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
+ .ficha-alg li{border:1px solid var(--line);padding:3px 4px;font-size:8pt;line-height:1.2;display:flex;flex-direction:column}
+ .ficha-alg li b{font-size:9pt}.ficha-alg li.is-on{border:1.5px solid var(--ink);font-weight:600}
+ .ficha-n{display:inline-block;min-width:1.6em;font-variant-numeric:tabular-nums}
+ .ficha-pro thead th{text-align:left;font-size:8.5pt;color:var(--mut);font-weight:600;border-bottom:1px solid var(--ink);padding:2px 0}
+ .ficha-pro .ficha-q small{display:block;color:var(--mut);font-size:8pt}
+ .ficha-steps{margin:4px 0 0 1.4em;padding:0;list-style:decimal}.ficha-steps li{margin:2px 0;display:list-item}.ficha-steps li::marker{font-weight:600;color:var(--ink)}
+ .ficha-plating-in{display:flex;gap:12px;align-items:flex-start}.ficha-plating-in .ficha-method{flex:1}.ficha-plating-in img{width:55mm;height:55mm;object-fit:contain;border:1px solid var(--line)}
+}

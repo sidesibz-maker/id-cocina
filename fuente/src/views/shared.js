@@ -97,8 +97,9 @@ export {hostOf};
 
 // Alérgenos de un plato: los que ha confirmado el cocinero (d.allergens) o, si aún no, la pista de la IA (probables).
 import {ALLERGENS as ALG} from '../ai-core.js';
+import {autoAllergens} from '../ficha-pro.js';
 export function dishAllergens(d) {
- const confirmed = Array.isArray(d?.allergens), ids = confirmed ? d.allergens : (d?.advice?.allergens || []);
+ const confirmed = Array.isArray(d?.allergens), ids = confirmed ? d.allergens : [...new Set([...autoAllergens(d, ALG.map(a => a[0])).map(a => a.id), ...(d?.advice?.allergens || [])])];
  const list = ids.map(id => ALG.find(a => a[0] === id)).filter(Boolean);
  return {confirmed, ids: list.map(a => a[0]), names: list.map(a => (en() ? a[2] : a[1]))};
 }
