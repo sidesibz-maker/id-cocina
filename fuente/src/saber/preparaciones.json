@@ -8342,5 +8342,1295 @@
       "hinojo-y-apio",
       "cortes-de-cuchillo"
     ]
+  },
+  {
+    "id": "verduras-de-hoja-salteadas",
+    "name": "Verduras de hoja salteadas",
+    "name_en": "Sautéed leafy greens",
+    "cat": "bases",
+    "group": "Técnicas para verduras",
+    "aka": [
+      "espinacas a la catalana",
+      "acelgas salteadas",
+      "grelos",
+      "espinacas salteadas",
+      "hojas salteadas",
+      "verdura de hoja"
+    ],
+    "role": "guarnicion",
+    "techniques": [
+      "salteado",
+      "hervido"
+    ],
+    "summary": "Espinacas, acelgas, grelos o kale salteados con ajo y aceite, o a la catalana con pasas y piñones: guarnición rápida, verde y sabrosa.",
+    "what": "Las verduras de hoja tienen mucha agua y se reducen mucho al cocinarlas. Las tiernas (espinaca, acelga joven) se saltean directamente a fuego vivo hasta que se ablandan; las duras o amargas (grelos, kale, hojas de nabo) se escaldan antes y se escurren bien. Ajo, buen aceite, un ácido y algo crujiente o dulce completan la guarnición. Las espinacas a la catalana, con pasas y piñones, son un clásico. Para el guiso con legumbre, mira [[espinacas-con-garbanzos]].",
+    "base": {
+      "for": "4 raciones de espinacas a la catalana",
+      "items": [
+        [
+          "Espinacas frescas limpias",
+          "800 g"
+        ],
+        [
+          "Aceite de oliva",
+          "40 g"
+        ],
+        [
+          "Ajo laminado",
+          "2 dientes"
+        ],
+        [
+          "Pasas remojadas",
+          "30 g"
+        ],
+        [
+          "Piñones tostados",
+          "30 g"
+        ],
+        [
+          "Sal",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Lava bien las espinacas y escúrrelas.",
+        "Calienta el aceite y dora ligeramente el ajo.",
+        "Añade las espinacas por tandas a fuego vivo, removiendo, hasta que se ablanden, 1–2 minutos.",
+        "Escurre el agua que suelten si es mucha.",
+        "Añade las pasas y los piñones, sala y sirve enseguida."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Rendimiento",
+        "ratio": "800 g de espinaca fresca dan unos 250 g cocinada",
+        "note": "Calcula 200 g crudos por ración."
+      },
+      {
+        "use": "Hojas duras (grelos, kale)",
+        "ratio": "Escaldar 1–3 minutos en agua con sal y enfriar",
+        "note": "Después saltear."
+      },
+      {
+        "use": "Acelgas",
+        "ratio": "Pencas en trozos 3–4 minutos antes que las hojas",
+        "note": "Las pencas tardan más."
+      }
+    ],
+    "variants": [
+      {
+        "id": "espinacas-con-garbanzos",
+        "name": "Espinacas con garbanzos",
+        "note": "El guiso sevillano de hoja y legumbre."
+      },
+      {
+        "id": "hojas-y-brotes",
+        "name": "Hojas y brotes",
+        "note": "Variedades de hoja."
+      },
+      {
+        "id": "escaldado-de-verduras",
+        "name": "Escaldado",
+        "note": "Para las hojas duras."
+      }
+    ],
+    "keys": [
+      "Hojas bien secas para saltear y no cocer.",
+      "Fuego vivo y por tandas.",
+      "Hojas duras, escaldadas antes.",
+      "Sal al final.",
+      "Un ácido o un crujiente al servir."
+    ],
+    "errors": [
+      {
+        "p": "Verdura aguada",
+        "fix": "Demasiada cantidad a la vez o hojas mojadas. Tandas pequeñas y escurrir."
+      },
+      {
+        "p": "Sabor metálico o amargo",
+        "fix": "Cocción larga o hojas duras sin escaldar. Saltea poco y escalda las duras."
+      },
+      {
+        "p": "Ajo quemado",
+        "fix": "Fuego alto con el ajo solo. Dóralo poco y añade la verdura enseguida."
+      }
+    ],
+    "history": "Las espinacas con pasas y piñones son tradicionales en Cataluña y otras zonas mediterráneas, y los grelos son una verdura de hoja muy propia de Galicia.",
+    "uses": [
+      "Guarnición de pescado y carne",
+      "Con huevo escalfado",
+      "Relleno de cocas y empanadas",
+      "Plato vegetal"
+    ],
+    "keep": "Crudas en frío, en caja con papel, 2–3 días. Cocinadas, mejor al momento; en frío 1 día.",
+    "pro": "Escalda las hojas duras por la mañana y saltea al pedir; las tiernas, directas a la sartén.",
+    "related": [
+      "espinacas-con-garbanzos",
+      "hojas-y-brotes",
+      "escaldado-de-verduras",
+      "salteado-y-wok",
+      "frutos-secos"
+    ]
+  },
+  {
+    "id": "berenjenas-fritas-con-miel",
+    "name": "Berenjenas fritas con miel",
+    "name_en": "Fried aubergine with honey",
+    "cat": "bases",
+    "group": "Crujientes y acabados",
+    "aka": [
+      "berenjenas con miel de cana",
+      "berenjena frita",
+      "bastones de berenjena",
+      "berenjenas a la cordobesa"
+    ],
+    "role": "principal",
+    "techniques": [
+      "fritura"
+    ],
+    "summary": "Bastones o rodajas de berenjena rebozados en harina, fritos hasta crujientes y terminados con miel o melaza de caña: tapa clásica andaluza.",
+    "what": "La [[berenjena]] se corta en bastones o rodajas, se deja en agua con sal o en leche para que suelte amargor y absorba menos aceite, se escurre, se pasa por harina y se fríe hasta que la superficie cruje y el interior está cremoso. Al servir se riega con melaza de caña o miel. El contraste entre la fritura salada y el dulce oscuro de la melaza es lo que la hace irresistible.",
+    "base": {
+      "for": "4 raciones",
+      "items": [
+        [
+          "Berenjenas",
+          "2 (unos 600 g)"
+        ],
+        [
+          "Leche o agua con 2 % de sal",
+          "para cubrir"
+        ],
+        [
+          "Harina de trigo o de garbanzo",
+          "100 g"
+        ],
+        [
+          "Aceite de oliva para freír",
+          "c. s."
+        ],
+        [
+          "Melaza de caña o miel",
+          "40–60 g"
+        ],
+        [
+          "Sal en escamas",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Corta las berenjenas en bastones de 1 cm.",
+        "Déjalas 30–60 minutos en leche o en agua con sal.",
+        "Escurre y seca bien; pasa por harina y sacude el exceso.",
+        "Fríe en aceite a 180 °C en tandas pequeñas hasta que estén doradas, 3–4 minutos.",
+        "Escurre, sala con escamas y riega con la melaza al servir."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Remojo",
+        "ratio": "30–60 minutos en leche o agua con 2 % de sal",
+        "note": "Menos aceite absorbido."
+      },
+      {
+        "use": "Fritura",
+        "ratio": "180 °C, 3–4 minutos",
+        "note": "Tandas pequeñas."
+      },
+      {
+        "use": "Melaza",
+        "ratio": "10–15 g por ración",
+        "note": "Al servir, no antes."
+      }
+    ],
+    "variants": [
+      {
+        "id": "berenjena",
+        "name": "Berenjena",
+        "note": "Variedades y tratamiento."
+      },
+      {
+        "id": "tempura",
+        "name": "Berenjena en tempura",
+        "note": "Rebozado ligero y crujiente."
+      },
+      {
+        "id": "postres-de-miel",
+        "name": "Miel",
+        "note": "Cómo elegirla."
+      }
+    ],
+    "keys": [
+      "Remojo para que absorba menos aceite.",
+      "Seca bien antes de enharinar.",
+      "Aceite caliente y tandas pequeñas.",
+      "Melaza al servir para que no se ablande.",
+      "Sal en escamas: el contraste con el dulce."
+    ],
+    "errors": [
+      {
+        "p": "Aceitosas",
+        "fix": "Aceite frío o sin remojo. Remoja y fríe a 180 °C."
+      },
+      {
+        "p": "Blandas",
+        "fix": "Melaza demasiado pronto o tandas grandes. Riega al servir."
+      },
+      {
+        "p": "Amargas",
+        "fix": "Berenjena pasada. Usa berenjena firme y brillante."
+      }
+    ],
+    "history": "Las berenjenas fritas con miel de caña son una tapa tradicional de Andalucía, sobre todo de Córdoba y Málaga, con raíces en la cocina andalusí.",
+    "uses": [
+      "Tapa",
+      "Aperitivo para compartir",
+      "Guarnición de carnes",
+      "Entrante"
+    ],
+    "keep": "Cortadas en remojo, en frío unas horas. Fritas, al momento.",
+    "pro": "Ten los bastones en remojo en frío y fríe al pedir; la melaza, en biberón.",
+    "related": [
+      "berenjena",
+      "tempura",
+      "fritura",
+      "postres-de-miel",
+      "rebozados-y-empanados"
+    ]
+  },
+  {
+    "id": "tomate-alinado",
+    "name": "Tomate aliñado",
+    "name_en": "Dressed tomato",
+    "cat": "bases",
+    "group": "Aliños de pase",
+    "aka": [
+      "tomate alinado",
+      "ensalada de tomate",
+      "tomate con aceite y sal",
+      "tomate de temporada"
+    ],
+    "role": "fresco",
+    "techniques": [
+      "crudo"
+    ],
+    "summary": "Tomate de temporada cortado, sazonado con sal en escamas y aliñado con buen aceite y poco más: el plato más simple y el que más depende del producto.",
+    "what": "Un buen [[tomate]] en su punto, a temperatura ambiente, solo necesita sal, aceite y quizá un poco de ajo, cebolleta, orégano o comino. La sal se pone un rato antes para que el tomate suelte su jugo, que con el aceite forma el aliño. Nunca sale de la cámara directo a la mesa: el frío apaga su sabor. Es un plato de verano que muestra la calidad del producto y de la cocina que lo elige.",
+    "base": {
+      "for": "4 raciones",
+      "items": [
+        [
+          "Tomates maduros de temporada",
+          "800 g"
+        ],
+        [
+          "Sal en escamas",
+          "5–6 g"
+        ],
+        [
+          "Aceite de oliva virgen extra",
+          "50 g"
+        ],
+        [
+          "Cebolleta o chalota en aros finos (opcional)",
+          "30 g"
+        ],
+        [
+          "Ajo muy picado (opcional)",
+          "1 diente"
+        ],
+        [
+          "Orégano, albahaca o comino",
+          "al gusto"
+        ],
+        [
+          "Vinagre de jerez (opcional)",
+          "unas gotas"
+        ]
+      ],
+      "steps": [
+        "Saca los tomates de la cámara al menos 1 hora antes: a temperatura ambiente saben más.",
+        "Córtalos en gajos o rodajas gruesas, según la variedad.",
+        "Sálalos y déjalos 10 minutos para que suelten jugo.",
+        "Añade la cebolleta, el ajo y la hierba.",
+        "Riega con el aceite y unas gotas de vinagre si el tomate lo pide, y sirve con el jugo."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Sal",
+        "ratio": "0,6–0,8 % sobre el tomate",
+        "note": "10 minutos antes del aceite."
+      },
+      {
+        "use": "Aceite",
+        "ratio": "1 parte por cada 15 de tomate",
+        "note": "Buen aceite: es la mitad del plato."
+      },
+      {
+        "use": "Temperatura",
+        "ratio": "Ambiente, 18–22 °C",
+        "note": "Nunca recién salido de la cámara."
+      }
+    ],
+    "variants": [
+      {
+        "id": "tomate",
+        "name": "Tomate",
+        "note": "Variedades y temporada."
+      },
+      {
+        "id": "tartares-y-carpaccios-vegetales",
+        "name": "Tartar de tomate",
+        "note": "El tomate pelado en dados aliñados."
+      },
+      {
+        "id": "gazpacho-y-salmorejo",
+        "name": "Gazpacho y salmorejo",
+        "note": "El tomate en sopas frías."
+      }
+    ],
+    "keys": [
+      "Tomate en su punto y de temporada.",
+      "Temperatura ambiente.",
+      "Sal un rato antes.",
+      "Buen aceite y poco más.",
+      "El jugo del plato es el aliño: sirve con él."
+    ],
+    "errors": [
+      {
+        "p": "Sin sabor",
+        "fix": "Tomate frío o fuera de temporada. Atempéralo o espera a la temporada."
+      },
+      {
+        "p": "Aguado",
+        "fix": "Salado con mucha antelación. Sala 10 minutos antes."
+      },
+      {
+        "p": "Tapado por el ajo o la cebolla",
+        "fix": "Demasiada cantidad. Que acompañen, no dominen."
+      }
+    ],
+    "history": "El tomate aliñado con aceite y sal es un plato de verano de toda la España mediterránea y del sur, con variantes como el aliño de tomate con comino.",
+    "uses": [
+      "Entrante de verano",
+      "Guarnición de pescado y carne a la brasa",
+      "Con ventresca o queso fresco",
+      "Tapa"
+    ],
+    "keep": "Tomates enteros fuera de la cámara si se van a usar en 1–2 días. Aliñado, al momento.",
+    "pro": "Elige cada día los tomates en su punto; córtalos al pedir.",
+    "related": [
+      "tomate",
+      "tartares-y-carpaccios-vegetales",
+      "gazpacho-y-salmorejo",
+      "aceite-de-oliva",
+      "sal-y-flor-de-sal"
+    ]
+  },
+  {
+    "id": "polenta-cremosa",
+    "name": "Polenta cremosa",
+    "name_en": "Creamy polenta",
+    "cat": "bases",
+    "group": "Cremas y guarniciones",
+    "aka": [
+      "polenta",
+      "polenta blanda",
+      "gachas de maiz",
+      "sémola de maiz cremosa",
+      "polenta con queso"
+    ],
+    "role": "cremoso",
+    "techniques": [
+      "hervido",
+      "pure"
+    ],
+    "summary": "Sémola de maíz cocida lentamente en caldo o leche hasta quedar cremosa, terminada con mantequilla y queso: base suave para guisos, setas y carnes.",
+    "what": "La polenta es [[maiz|sémola de maíz]] cocida en líquido hasta que el almidón se hincha y la mezcla espesa. Cremosa, se sirve en el momento como un puré, con mantequilla y queso curado; si se deja enfriar en placa, cuaja y se puede cortar y dorar ([[panisse-y-polenta-frita]]). Es una gran base para guisos con salsa, setas, ragús o verduras asadas.",
+    "base": {
+      "for": "6 raciones",
+      "items": [
+        [
+          "Sémola de maíz (no instantánea)",
+          "200 g"
+        ],
+        [
+          "Caldo de ave o de verduras, o leche y agua",
+          "1–1,2 l"
+        ],
+        [
+          "Mantequilla",
+          "50 g"
+        ],
+        [
+          "Queso curado rallado",
+          "60 g"
+        ],
+        [
+          "Sal",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Lleva el líquido a hervor con la sal.",
+        "Añade la sémola en lluvia batiendo con varilla para que no haga grumos.",
+        "Cuece a fuego muy suave, removiendo a menudo, 30–45 minutos (según la sémola), hasta que esté tierna y se despegue un poco.",
+        "Fuera del fuego, añade la mantequilla y el queso.",
+        "Ajusta la textura con líquido caliente: tiene que caer de la cuchara."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Polenta cremosa",
+        "ratio": "1 parte de sémola por 5–6 de líquido",
+        "note": "30–45 minutos."
+      },
+      {
+        "use": "Polenta para placa",
+        "ratio": "1 parte por 4–5",
+        "note": "Más firme para cortar."
+      },
+      {
+        "use": "Acabado",
+        "ratio": "50 g de mantequilla y 60 g de queso por 200 g de sémola",
+        "note": "Fuera del fuego."
+      }
+    ],
+    "variants": [
+      {
+        "id": "panisse-y-polenta-frita",
+        "name": "Polenta frita",
+        "note": "Cuajada en placa y dorada."
+      },
+      {
+        "id": "maiz",
+        "name": "Maíz",
+        "note": "Variedades de sémola."
+      },
+      {
+        "id": "pures-de-verdura",
+        "name": "Purés",
+        "note": "Otras bases cremosas."
+      }
+    ],
+    "keys": [
+      "Sémola en lluvia y batiendo.",
+      "Fuego muy suave y remover a menudo: salpica y se pega.",
+      "Cocción completa para que no sepa a crudo.",
+      "Termina fuera del fuego con grasa y queso.",
+      "Mantenla fluida: espesa en minutos."
+    ],
+    "errors": [
+      {
+        "p": "Grumos",
+        "fix": "Sémola añadida de golpe. En lluvia y con varilla."
+      },
+      {
+        "p": "Sabe a crudo o arenosa",
+        "fix": "Poca cocción. Alarga hasta que esté tierna."
+      },
+      {
+        "p": "Espesa demasiado en el pase",
+        "fix": "Es normal. Aligera con líquido caliente."
+      }
+    ],
+    "history": "La polenta es un alimento tradicional del norte de Italia, y las gachas de harina de maíz tienen también tradición en otras zonas de Europa y de España.",
+    "uses": [
+      "Base de guisos y ragús",
+      "Con setas",
+      "Con carnes estofadas",
+      "Plato vegetal con verduras asadas"
+    ],
+    "keep": "Al momento; en frío cuaja y se convierte en polenta de placa.",
+    "pro": "Mantenla al baño maría tapada durante el servicio y ajusta con caldo caliente cada vez que sirvas.",
+    "related": [
+      "panisse-y-polenta-frita",
+      "maiz",
+      "pures-de-verdura",
+      "guarniciones-de-setas",
+      "quesos-en-cocina",
+      "braseado"
+    ]
+  },
+  {
+    "id": "lombarda-guisada",
+    "name": "Lombarda guisada",
+    "name_en": "Braised red cabbage",
+    "cat": "bases",
+    "group": "Cremas y guarniciones",
+    "aka": [
+      "lombarda",
+      "col lombarda",
+      "lombarda con manzana",
+      "col roja guisada",
+      "lombarda de navidad"
+    ],
+    "role": "guarnicion",
+    "techniques": [
+      "guiso"
+    ],
+    "summary": "Col lombarda en juliana guisada despacio con manzana, cebolla, vinagre, un poco de azúcar y especias: guarnición agridulce de invierno para carnes y caza.",
+    "what": "La lombarda se corta fina y se guisa tapada con grasa, cebolla, manzana, vinagre de vino tinto y algo de azúcar o miel, con clavo, canela o laurel. El ácido mantiene su color morado brillante; sin él, vira a azul grisáceo (mira [[ph-y-acidez]]). Queda tierna, agridulce y especiada, y acompaña muy bien carnes grasas, pato, caza y cerdo asado.",
+    "base": {
+      "for": "6 raciones",
+      "items": [
+        [
+          "Lombarda en juliana fina",
+          "1 kg"
+        ],
+        [
+          "Cebolla en juliana",
+          "150 g"
+        ],
+        [
+          "Manzana ácida en dados",
+          "2"
+        ],
+        [
+          "Grasa de pato, mantequilla o aceite",
+          "40 g"
+        ],
+        [
+          "Vinagre de vino tinto",
+          "60 g"
+        ],
+        [
+          "Azúcar moreno o miel",
+          "30–40 g"
+        ],
+        [
+          "Vino tinto o zumo de manzana",
+          "150 ml"
+        ],
+        [
+          "Clavo, canela y laurel",
+          "2, 1 rama y 1"
+        ],
+        [
+          "Sal",
+          "8 g"
+        ]
+      ],
+      "steps": [
+        "Pocha la cebolla en la grasa 10 minutos.",
+        "Añade la lombarda, la sal y el vinagre y remueve: verás cómo el color se aviva.",
+        "Añade la manzana, el azúcar, el vino y las especias.",
+        "Tapa y cuece a fuego suave 45–60 minutos, removiendo de vez en cuando, hasta que esté tierna.",
+        "Destapa al final para reducir el líquido; retira las especias y ajusta el agridulce."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Ácido",
+        "ratio": "60 g de vinagre por kilo de lombarda",
+        "note": "Mantiene el color."
+      },
+      {
+        "use": "Dulce",
+        "ratio": "30–40 g de azúcar o miel por kilo",
+        "note": "Ajusta según la manzana."
+      },
+      {
+        "use": "Cocción",
+        "ratio": "45–60 minutos tapada",
+        "note": "Reducir al final."
+      }
+    ],
+    "variants": [
+      {
+        "id": "coles-y-brasicas",
+        "name": "Coles y brásicas",
+        "note": "La familia de la col."
+      },
+      {
+        "id": "chutneys-y-compotas-saladas",
+        "name": "Agridulces de fruta",
+        "note": "Otras guarniciones agridulces."
+      },
+      {
+        "id": "pickles-de-servicio",
+        "name": "Lombarda encurtida",
+        "note": "En crudo y en vinagre, más crujiente."
+      }
+    ],
+    "keys": [
+      "Vinagre al principio para fijar el color.",
+      "Fuego suave y tapada.",
+      "Equilibrio entre ácido y dulce.",
+      "Mejor de un día para otro.",
+      "Grasa de pato para acompañar caza o pato."
+    ],
+    "errors": [
+      {
+        "p": "Color azulado o gris",
+        "fix": "Falta ácido. Añade vinagre."
+      },
+      {
+        "p": "Dura",
+        "fix": "Poca cocción. Alarga tapada."
+      },
+      {
+        "p": "Empalagosa",
+        "fix": "Demasiado dulce. Añade vinagre y sal."
+      }
+    ],
+    "history": "La lombarda guisada es tradicional en la Navidad de algunas zonas de España, como Madrid, y en las cocinas del centro y norte de Europa.",
+    "uses": [
+      "Guarnición de pato y caza",
+      "Cerdo asado",
+      "Comida de Navidad",
+      "Bocadillos con carne"
+    ],
+    "keep": "En frío y tapada, 4–5 días; congelada, 2 meses. Mejora reposada.",
+    "pro": "Guísala en tanda la víspera y regenera por raciones.",
+    "related": [
+      "coles-y-brasicas",
+      "ph-y-acidez",
+      "pato",
+      "chutneys-y-compotas-saladas",
+      "caza-de-pluma",
+      "guisos-largos"
+    ]
+  },
+  {
+    "id": "pimientos-fritos-y-padron",
+    "name": "Pimientos de Padrón y pimientos fritos",
+    "name_en": "Padrón and fried peppers",
+    "cat": "bases",
+    "group": "Crujientes y acabados",
+    "aka": [
+      "pimientos de padron",
+      "pimientos fritos",
+      "pimiento italiano frito",
+      "pimientos del piquillo fritos",
+      "guindillas fritas"
+    ],
+    "role": "guarnicion",
+    "techniques": [
+      "fritura",
+      "confitado"
+    ],
+    "summary": "Pimientos pequeños fritos enteros hasta que la piel se ampolla, con sal gruesa, y pimientos verdes confitados lentamente en aceite como guarnición.",
+    "what": "Los pimientos pequeños (Padrón, guindillas verdes) se fríen enteros en aceite caliente hasta que la piel se ampolla y se tuesta, y se salan con sal gruesa: unos pican y otros no. Los pimientos verdes de freír (tipo italiano) se hacen a fuego suave en aceite, casi confitados, hasta que están muy tiernos y dulces, y acompañan carnes, pescados y huevos. Las variedades están en [[pimientos]].",
+    "base": {
+      "for": "4 raciones de pimientos de Padrón",
+      "items": [
+        [
+          "Pimientos de Padrón",
+          "300 g"
+        ],
+        [
+          "Aceite de oliva",
+          "para cubrir el fondo generosamente"
+        ],
+        [
+          "Sal gruesa",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Lava y seca muy bien los pimientos: con agua el aceite salta.",
+        "Calienta el aceite a fuego fuerte (170–180 °C) en una sartén amplia.",
+        "Fríe los pimientos en una sola capa, moviendo, 1–2 minutos, hasta que la piel se ampolle y tome color.",
+        "Escurre sobre papel.",
+        "Sala con sal gruesa y sirve al momento."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Pimientos de Padrón",
+        "ratio": "Aceite a 170–180 °C, 1–2 minutos",
+        "note": "Piel ampollada, interior tierno."
+      },
+      {
+        "use": "Pimiento verde de freír",
+        "ratio": "Aceite a fuego suave, 15–20 minutos",
+        "note": "Casi confitado, muy tierno."
+      },
+      {
+        "use": "Sal",
+        "ratio": "Gruesa, al salir",
+        "note": "Se nota en el bocado."
+      }
+    ],
+    "variants": [
+      {
+        "id": "pimientos",
+        "name": "Pimientos",
+        "note": "Variedades y temporada."
+      },
+      {
+        "id": "pimientos-asados-alinados",
+        "name": "Pimientos asados",
+        "note": "Asados y aliñados en tiras."
+      },
+      {
+        "id": "pisto-y-sanfaina",
+        "name": "Pisto",
+        "note": "Pimiento guisado con otras verduras."
+      }
+    ],
+    "keys": [
+      "Pimientos muy secos antes de freír.",
+      "Aceite caliente y una sola capa.",
+      "Sal gruesa al final.",
+      "Los verdes grandes, a fuego suave.",
+      "Servir al momento."
+    ],
+    "errors": [
+      {
+        "p": "Aceite que salta",
+        "fix": "Pimientos mojados. Sécalos bien."
+      },
+      {
+        "p": "Blandos y aceitosos",
+        "fix": "Aceite frío o sartén llena. Calienta más y fríe por tandas."
+      },
+      {
+        "p": "Pimiento verde duro",
+        "fix": "Fuego alto. Fuego suave y más tiempo."
+      }
+    ],
+    "history": "Los pimientos de Padrón son una variedad tradicional de Galicia, y los pimientos verdes fritos son una guarnición habitual en toda España.",
+    "uses": [
+      "Tapa",
+      "Guarnición de carnes y pescados",
+      "Con huevos fritos",
+      "Bocadillos"
+    ],
+    "keep": "Crudos en frío, 1 semana. Fritos, al momento.",
+    "pro": "Fríe por raciones al pedir; ten los pimientos lavados y secos en caja.",
+    "related": [
+      "pimientos",
+      "pimientos-asados-alinados",
+      "pisto-y-sanfaina",
+      "fritura",
+      "sal-y-flor-de-sal"
+    ]
+  },
+  {
+    "id": "al-ajillo",
+    "name": "Al ajillo",
+    "name_en": "Al ajillo (garlic and chilli oil)",
+    "cat": "salsas",
+    "group": "Aliños de pase",
+    "aka": [
+      "ajillo",
+      "gambas al ajillo",
+      "champinones al ajillo",
+      "conejo al ajillo",
+      "aceite de ajo y guindilla"
+    ],
+    "role": "salsa",
+    "techniques": [
+      "confitado",
+      "salteado"
+    ],
+    "summary": "Aceite de oliva con ajo laminado y guindilla en el que se cocina rápido marisco, setas o carne: una de las preparaciones más sencillas y sabrosas de la cocina española.",
+    "what": "Se calienta aceite de oliva con ajo laminado y guindilla hasta que el ajo empieza a dorar, y en ese aceite se cocina muy rápido el producto: gambas, champiñones, pollo o conejo troceado, o se riega sobre pescado. Se termina con perejil y a veces un chorro de vino blanco o de caldo. El aceite que queda es lo mejor: se moja con pan. Todo depende del punto del ajo: dorado claro, nunca quemado.",
+    "base": {
+      "for": "4 raciones de gambas al ajillo",
+      "items": [
+        [
+          "Gambas peladas",
+          "400 g"
+        ],
+        [
+          "Aceite de oliva virgen extra",
+          "120 g"
+        ],
+        [
+          "Ajo laminado",
+          "4–5 dientes"
+        ],
+        [
+          "Guindilla seca",
+          "1–2"
+        ],
+        [
+          "Perejil picado",
+          "10 g"
+        ],
+        [
+          "Sal",
+          "al gusto"
+        ],
+        [
+          "Vino blanco (opcional)",
+          "30 ml"
+        ]
+      ],
+      "steps": [
+        "Calienta el aceite a fuego medio con el ajo y la guindilla.",
+        "Cuando el ajo empiece a dorar por los bordes, sube el fuego y añade las gambas saladas.",
+        "Cocina 1–2 minutos, hasta que cambien de color, sin pasarlas.",
+        "Añade el vino si lo usas y deja que evapore unos segundos.",
+        "Termina con perejil y sirve en la misma cazuela, chisporroteando."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Aceite y ajo",
+        "ratio": "120 g de aceite por 4–5 dientes",
+        "note": "Ajo dorado claro."
+      },
+      {
+        "use": "Gambas",
+        "ratio": "1–2 minutos en el aceite",
+        "note": "Jugosas, no secas."
+      },
+      {
+        "use": "Champiñones o setas",
+        "ratio": "3–4 minutos a fuego vivo",
+        "note": "Con un chorro de vino blanco."
+      }
+    ],
+    "variants": [
+      {
+        "id": "pil-pil",
+        "name": "Pil-pil",
+        "note": "Aceite y ajo emulsionados con la gelatina del bacalao."
+      },
+      {
+        "id": "aceites-aromatizados",
+        "name": "Aceite de ajo",
+        "note": "El aceite aromatizado para guardar."
+      },
+      {
+        "id": "conejo",
+        "name": "Conejo al ajillo",
+        "note": "La versión de carne."
+      }
+    ],
+    "keys": [
+      "Ajo dorado claro: quemado amarga todo.",
+      "Producto en el último momento, cocción rápida.",
+      "Buen aceite: es la salsa.",
+      "Cazuela de barro para servir chisporroteando.",
+      "Pan para mojar."
+    ],
+    "errors": [
+      {
+        "p": "Ajo quemado y amargo",
+        "fix": "Fuego alto con el ajo solo. Empieza en frío o a fuego medio."
+      },
+      {
+        "p": "Gambas secas",
+        "fix": "Demasiado tiempo. 1–2 minutos bastan."
+      },
+      {
+        "p": "Sin sabor",
+        "fix": "Poco ajo o aceite flojo. Sube el ajo y usa buen aceite."
+      }
+    ],
+    "history": "Cocinar al ajillo es una forma muy extendida en la cocina española, con platos clásicos como las gambas al ajillo o el conejo al ajillo.",
+    "uses": [
+      "Tapa de gambas o champiñones",
+      "Pescados",
+      "Pollo y conejo",
+      "Verduras salteadas"
+    ],
+    "keep": "Al momento. El aceite de ajo sobrante, en frío y como máximo 4 días.",
+    "pro": "Ten el ajo laminado y las cazuelitas preparadas; se hace en 3 minutos al pedir.",
+    "related": [
+      "pil-pil",
+      "aceites-aromatizados",
+      "conejo",
+      "gamba-roja",
+      "guarniciones-de-setas",
+      "cebolla-y-ajo"
+    ]
+  },
+  {
+    "id": "patatas-revolconas",
+    "name": "Patatas revolconas",
+    "name_en": "Patatas revolconas",
+    "cat": "bases",
+    "group": "Cremas y guarniciones",
+    "aka": [
+      "revolconas",
+      "patatas meneadas",
+      "patatas con pimenton",
+      "pure de patata con pimenton"
+    ],
+    "role": "cremoso",
+    "techniques": [
+      "hervido",
+      "pure"
+    ],
+    "summary": "Patata cocida y chafada con un aceite de ajo y pimentón, coronada con torreznos crujientes: guarnición y plato de la cocina castellana.",
+    "what": "Es un puré rústico: patata cocida con laurel, chafada con tenedor (no triturada) y mezclada con un aceite en el que se han frito ajo y, fuera del fuego, pimentón. Queda naranja, sabrosa y con textura. Se sirve con torreznos o panceta crujiente encima. Es pariente de la [[patata-chafada-brasa]] y de los purés de patata, pero con el carácter del pimentón.",
+    "base": {
+      "for": "4 raciones",
+      "items": [
+        [
+          "Patata",
+          "1 kg"
+        ],
+        [
+          "Laurel",
+          "1 hoja"
+        ],
+        [
+          "Aceite de oliva",
+          "80 g"
+        ],
+        [
+          "Ajo",
+          "3 dientes"
+        ],
+        [
+          "Pimentón dulce y picante",
+          "8 g y 2 g"
+        ],
+        [
+          "Torreznos o panceta en tiras",
+          "200 g"
+        ],
+        [
+          "Sal",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Cuece las patatas en trozos con el laurel y sal hasta que estén muy tiernas; reserva algo del agua.",
+        "Fríe la panceta hasta que esté crujiente; resérvala y usa su grasa con el aceite.",
+        "Dora el ajo laminado en el aceite; fuera del fuego, añade el pimentón y remueve.",
+        "Chafa las patatas con tenedor, añade el aceite de pimentón y un poco del agua de cocción, y mezcla con energía.",
+        "Sirve con los torreznos encima."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Aceite de pimentón",
+        "ratio": "80 g de aceite y 10 g de pimentón por kilo de patata",
+        "note": "Pimentón fuera del fuego."
+      },
+      {
+        "use": "Textura",
+        "ratio": "Chafada con tenedor y agua de cocción",
+        "note": "Rústica, no lisa."
+      },
+      {
+        "use": "Torreznos",
+        "ratio": "50 g por ración",
+        "note": "Bien crujientes."
+      }
+    ],
+    "variants": [
+      {
+        "id": "patata-chafada-brasa",
+        "name": "Patata chafada",
+        "note": "Aplastada y dorada en la brasa."
+      },
+      {
+        "id": "chicharrones-y-cortezas",
+        "name": "Torreznos",
+        "note": "El crujiente de cerdo."
+      },
+      {
+        "id": "pimenton-y-noras",
+        "name": "Pimentón",
+        "note": "Cómo usarlo sin quemarlo."
+      }
+    ],
+    "keys": [
+      "Pimentón fuera del fuego: se quema en segundos.",
+      "Chafar, no triturar.",
+      "Agua de cocción para ligar.",
+      "Torreznos muy crujientes.",
+      "Servir caliente."
+    ],
+    "errors": [
+      {
+        "p": "Amargo",
+        "fix": "Pimentón quemado. Añádelo fuera del fuego."
+      },
+      {
+        "p": "Seca",
+        "fix": "Poco aceite o agua. Añade agua de cocción."
+      },
+      {
+        "p": "Engrudo",
+        "fix": "Triturada con batidora. Usa tenedor."
+      }
+    ],
+    "history": "Las patatas revolconas son un plato tradicional de Castilla, sobre todo de Ávila y Salamanca, ligado a la matanza.",
+    "uses": [
+      "Guarnición de carnes",
+      "Tapa con torreznos",
+      "Con huevo frito o escalfado",
+      "Plato de invierno"
+    ],
+    "keep": "Al momento; en frío 1–2 días, regenerar con agua caliente.",
+    "pro": "Cuece la patata y prepara el aceite antes del servicio; mezcla en caliente al pedir.",
+    "related": [
+      "patata-chafada-brasa",
+      "chicharrones-y-cortezas",
+      "pimenton-y-noras",
+      "guarniciones-de-patata",
+      "patata-y-boniato"
+    ]
+  },
+  {
+    "id": "legumbres-salteadas-de-guarnicion",
+    "name": "Legumbres salteadas de guarnición",
+    "name_en": "Sautéed legume sides",
+    "cat": "bases",
+    "group": "Cremas y guarniciones",
+    "aka": [
+      "garbanzos salteados",
+      "alubias salteadas",
+      "garbanzos crujientes salteados",
+      "judiones salteados",
+      "lentejas salteadas"
+    ],
+    "role": "guarnicion",
+    "techniques": [
+      "salteado"
+    ],
+    "summary": "Garbanzos, alubias o lentejas ya cocidos y salteados a fuego vivo con aceite, ajo, especias y hojas: guarnición rápida y sabrosa para carnes, pescados y huevos.",
+    "what": "Una [[legumbres|legumbre]] bien cocida y escurrida se puede saltear en una sartén con buen aceite hasta que la superficie se dora un poco, con ajo, pimentón o comino, y terminar con espinacas, hierbas, limón o un sofrito. Queda una guarnición con textura, sabrosa y mucho más rápida que un guiso. Los garbanzos, si se secan bien, quedan dorados por fuera y cremosos por dentro.",
+    "base": {
+      "for": "4 raciones",
+      "items": [
+        [
+          "Garbanzos cocidos y escurridos",
+          "400 g"
+        ],
+        [
+          "Aceite de oliva",
+          "40 g"
+        ],
+        [
+          "Ajo laminado",
+          "2 dientes"
+        ],
+        [
+          "Comino y pimentón",
+          "2 g y 3 g"
+        ],
+        [
+          "Espinacas o acelgas tiernas",
+          "150 g"
+        ],
+        [
+          "Zumo de limón",
+          "15 g"
+        ],
+        [
+          "Sal",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Escurre y seca bien los garbanzos con papel.",
+        "Saltea en el aceite caliente a fuego vivo 5–6 minutos, sin moverlos mucho, hasta que doren.",
+        "Añade el ajo y las especias 30 segundos.",
+        "Añade las hojas y saltea hasta que se ablanden.",
+        "Termina con limón y sal."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Garbanzos dorados",
+        "ratio": "Fuego vivo, 5–6 minutos",
+        "note": "Bien secos antes."
+      },
+      {
+        "use": "Alubias o judiones",
+        "ratio": "Salteado corto, 2–3 minutos",
+        "note": "Más delicados: se rompen."
+      },
+      {
+        "use": "Lentejas",
+        "ratio": "Pardina o beluga cocidas al dente, salteadas con sofrito",
+        "note": "Guarnición para pescado."
+      }
+    ],
+    "variants": [
+      {
+        "id": "espinacas-con-garbanzos",
+        "name": "Espinacas con garbanzos",
+        "note": "El guiso tradicional."
+      },
+      {
+        "id": "ensaladas-de-legumbre-y-cereal",
+        "name": "Ensaladas de legumbre",
+        "note": "La legumbre en frío."
+      },
+      {
+        "id": "crujientes-salados",
+        "name": "Garbanzos crujientes",
+        "note": "Tostados hasta crujir."
+      }
+    ],
+    "keys": [
+      "Legumbre en su punto: entera.",
+      "Muy seca antes de saltear.",
+      "Fuego vivo y sin remover mucho al principio.",
+      "Especias al final, un instante.",
+      "Ácido y hojas para refrescar."
+    ],
+    "errors": [
+      {
+        "p": "Se rompen",
+        "fix": "Legumbre muy cocida o mucho movimiento. Mueve poco."
+      },
+      {
+        "p": "No doran",
+        "fix": "Húmedas o sartén fría. Seca y calienta más."
+      },
+      {
+        "p": "Especias quemadas",
+        "fix": "Demasiado tiempo. 30 segundos."
+      }
+    ],
+    "history": "Saltear legumbres cocidas es una forma tradicional de aprovechar el cocido y los potajes en muchas cocinas de España y del Mediterráneo.",
+    "uses": [
+      "Guarnición de carnes y pescados",
+      "Con huevo",
+      "Plato vegetal",
+      "Tapa"
+    ],
+    "keep": "Legumbre cocida en frío, 3–4 días. Salteada, al momento.",
+    "pro": "Ten legumbre cocida y escurrida en caja; saltea por raciones al pedir.",
+    "related": [
+      "legumbres",
+      "espinacas-con-garbanzos",
+      "ensaladas-de-legumbre-y-cereal",
+      "verduras-de-hoja-salteadas",
+      "especias"
+    ]
+  },
+  {
+    "id": "picos-y-reganas",
+    "name": "Picos, regañás y panes crujientes",
+    "name_en": "Breadsticks and crispbreads",
+    "cat": "bases",
+    "group": "Crujientes y acabados",
+    "aka": [
+      "picos",
+      "reganas",
+      "regañás",
+      "colines",
+      "grissini",
+      "pan crujiente",
+      "crackers de pan"
+    ],
+    "role": "crujiente",
+    "techniques": [
+      "horno"
+    ],
+    "summary": "Panes finos y secos horneados hasta crujir: picos y colines para acompañar, regañás en láminas para mojar o untar.",
+    "what": "Son masas de pan con aceite, estiradas o formadas muy finas y horneadas hasta secarse por completo. Los picos y colines son bastones pequeños; las regañás, láminas finas y onduladas con sal y a veces sésamo. Duran semanas en lata y acompañan quesos, embutidos, untables y salazones. Son la versión crujiente del [[pan-y-focaccia|pan]] de servicio y una buena forma de aprovechar masa sobrante.",
+    "base": {
+      "for": "unos 300 g de regañás",
+      "items": [
+        [
+          "Harina panificable",
+          "250 g"
+        ],
+        [
+          "Agua",
+          "130 g"
+        ],
+        [
+          "Aceite de oliva",
+          "30 g"
+        ],
+        [
+          "Levadura fresca",
+          "4 g"
+        ],
+        [
+          "Sal",
+          "5 g"
+        ],
+        [
+          "Sal en escamas, sésamo o romero",
+          "para cubrir"
+        ]
+      ],
+      "steps": [
+        "Amasa todo hasta una masa lisa y firme; fermenta 1 hora.",
+        "Divide en porciones y estira muy fino, 1–2 mm, con rodillo o laminadora.",
+        "Corta en tiras o láminas irregulares, pincha, pinta con aceite y espolvorea sal y semillas.",
+        "Hornea a 190–200 °C, 10–14 minutos, hasta que estén doradas y secas.",
+        "Deja enfriar en rejilla: crujen al enfriar."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Masa",
+        "ratio": "52 % de agua y 12 % de aceite sobre la harina",
+        "note": "Firme para estirar fino."
+      },
+      {
+        "use": "Grosor",
+        "ratio": "1–2 mm las regañás, 5–8 mm los colines",
+        "note": "Más fino, más crujiente."
+      },
+      {
+        "use": "Horneado",
+        "ratio": "190–200 °C, 10–14 minutos",
+        "note": "Colines, 160 °C más tiempo para secar."
+      }
+    ],
+    "variants": [
+      {
+        "id": "panes-planos",
+        "name": "Panes planos",
+        "note": "Finos pero tiernos."
+      },
+      {
+        "id": "crujientes-de-cereal-y-semillas",
+        "name": "Crackers de semillas",
+        "note": "Sin harina."
+      },
+      {
+        "id": "pan-del-dia-y-pan-viejo",
+        "name": "Pan del día anterior",
+        "note": "Tostas y crujientes de pan viejo."
+      }
+    ],
+    "keys": [
+      "Estira muy fino y parejo.",
+      "Pincha para que no se hinchen.",
+      "Seca del todo en el horno.",
+      "Enfría en rejilla.",
+      "Guarda en lata: la humedad los ablanda."
+    ],
+    "errors": [
+      {
+        "p": "Blandos",
+        "fix": "Gruesos o poco horneados. Estira más fino y seca más."
+      },
+      {
+        "p": "Hinchados",
+        "fix": "Sin pinchar. Pincha la masa."
+      },
+      {
+        "p": "Quemados por los bordes",
+        "fix": "Grosor desigual. Estira parejo."
+      }
+    ],
+    "history": "Los picos y las regañás son panes secos tradicionales de Andalucía, y los colines o grissini, del norte de Italia.",
+    "uses": [
+      "Acompañar quesos y embutidos",
+      "Untables y cremas",
+      "Aperitivo",
+      "Servicio de pan crujiente"
+    ],
+    "keep": "En lata cerrada, 2–3 semanas.",
+    "pro": "Hornea en tanda una vez por semana; usa masa de pan sobrante para no desperdiciarla.",
+    "related": [
+      "pan-y-focaccia",
+      "panes-planos",
+      "crujientes-de-cereal-y-semillas",
+      "pan-del-dia-y-pan-viejo",
+      "untables-de-legumbre"
+    ]
   }
 ]

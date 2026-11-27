@@ -5242,5 +5242,956 @@
    "construir-un-plato",
    "asado-de-verduras"
   ]
+ },
+ {
+  "id": "fotografiar-platos",
+  "name": "Fotografiar tus platos",
+  "name_en": "Photographing your dishes",
+  "cat": "creatividad",
+  "group": "Oficio",
+  "aka": [
+   "fotografia de platos",
+   "fotos de cocina",
+   "foto del plato",
+   "fotografiar comida",
+   "luz para fotos"
+  ],
+  "summary": "Cómo hacer fotos útiles y bonitas de tus platos con el móvil: luz natural, ángulos fijos, fondo neutro y una rutina para que sirvan como archivo.",
+  "what": "Una buena foto sirve para recordar exactamente cómo era un plato, compararlo con versiones anteriores, enseñar al equipo el montaje y mostrar tu trabajo. No hace falta equipo caro: luz natural lateral, el plato limpio, un fondo neutro y siempre los mismos ángulos. Lo más importante es la constancia, para que las fotos de distintas fechas se puedan comparar. Se guardan con la versión del plato, como cuenta [[documentar-tu-obra]].",
+  "method": [
+   "Busca un sitio fijo junto a una ventana, con luz natural lateral y sin sol directo.",
+   "Usa un fondo neutro (mesa de madera clara, piedra o papel gris) y la vajilla del servicio.",
+   "Limpia los bordes del plato y fotografía nada más montar, antes de que se enfríe o se apague.",
+   "Haz siempre tres fotos: cenital, a 45° y un detalle cerca.",
+   "Desactiva el flash; si hace falta, rebota la luz con un cartón blanco.",
+   "Guarda las fotos con fecha y nombre del plato en su ficha."
+  ],
+  "ratios": [
+   {
+    "use": "Fotos por plato",
+    "ratio": "3 (cenital, 45°, detalle)",
+    "note": "Siempre las mismas."
+   },
+   {
+    "use": "Tiempo",
+    "ratio": "En el primer minuto tras montar",
+    "note": "Después los brillos y el volumen se pierden."
+   },
+   {
+    "use": "Luz",
+    "ratio": "Natural lateral, sin flash",
+    "note": "Colores reales."
+   }
+  ],
+  "variants": [
+   {
+    "id": "documentar-tu-obra",
+    "name": "Documentar tu obra",
+    "note": "Dónde y cómo guardar las fotos."
+   },
+   {
+    "id": "emplatado",
+    "name": "Emplatado",
+    "note": "Lo que la foto muestra."
+   },
+   {
+    "id": "contar-un-plato",
+    "name": "Contar un plato",
+    "note": "La foto como parte del relato."
+   }
+  ],
+  "keys": [
+   "Luz natural lateral.",
+   "Mismos ángulos siempre.",
+   "Foto al momento.",
+   "Plato y bordes limpios.",
+   "Guardar con fecha y versión."
+  ],
+  "errors": [
+   {
+    "p": "Colores falsos",
+    "fix": "Flash o luz artificial mezclada. Usa luz natural."
+   },
+   {
+    "p": "Fotos que no se pueden comparar",
+    "fix": "Ángulos y luces distintos. Fija un sitio y tres ángulos."
+   },
+   {
+    "p": "Plato apagado",
+    "fix": "Foto tardía. Fotografía nada más montar."
+   }
+  ],
+  "history": "La fotografía de cocina pasó de los libros y revistas al teléfono de cada cocinero, y hoy es parte del oficio para documentar y mostrar el trabajo.",
+  "uses": [
+   "Archivo de platos",
+   "Formación del equipo en el montaje",
+   "Dossier profesional",
+   "Comparar versiones"
+  ],
+  "keep": "Guarda las fotos en la ficha de cada plato y haz copia de seguridad.",
+  "pro": "Monta un rincón fijo de fotos en la cocina y haz la foto en la cena de prueba de cada plato nuevo.",
+  "related": [
+   "documentar-tu-obra",
+   "emplatado",
+   "contar-un-plato",
+   "plato-firma",
+   "de-la-prueba-a-la-receta-fija"
+  ]
+ },
+ {
+  "id": "escribir-una-receta",
+  "name": "Cómo escribir una receta",
+  "name_en": "How to write a recipe",
+  "cat": "creatividad",
+  "group": "Oficio",
+  "aka": [
+   "redactar una receta",
+   "ficha de receta",
+   "escribir una ficha",
+   "receta clara",
+   "pasos de una receta"
+  ],
+  "summary": "Cómo redactar una receta o una ficha que cualquiera del equipo pueda seguir: ingredientes pesados y en orden, pasos claros, puntos de control y conservación.",
+  "what": "Una receta bien escrita es la diferencia entre un plato que sale igual cada día y uno que depende de quién esté. Tiene que ser concreta: cantidades en peso, ingredientes en el orden en que se usan, pasos cortos con un verbo al principio, temperaturas y tiempos, y lo más importante, cómo saber que está bien (el punto de control). Las fichas de esta Biblioteca siguen esa idea.",
+  "method": [
+   "Escribe el rendimiento al principio: para cuántas raciones o cuántos gramos.",
+   "Lista los ingredientes en peso y en el orden en que se usan, con su estado (picado, a temperatura ambiente).",
+   "Escribe pasos cortos que empiecen con un verbo: «Tuesta», «Añade», «Cuece».",
+   "Añade temperaturas, tiempos y el punto de control: color, textura, temperatura al corazón.",
+   "Cierra con conservación, regeneración y acabado en el pase.",
+   "Pide a alguien que la siga sin preguntarte y corrige lo que no entienda."
+  ],
+  "ratios": [
+   {
+    "use": "Pasos",
+    "ratio": "Una acción por paso",
+    "note": "Si hay dos, divide."
+   },
+   {
+    "use": "Unidades",
+    "ratio": "Gramos y grados",
+    "note": "Nada de tazas o «un puñado»."
+   },
+   {
+    "use": "Puntos de control",
+    "ratio": "1 por elaboración como mínimo",
+    "note": "Medible o visible."
+   }
+  ],
+  "variants": [
+   {
+    "id": "de-la-prueba-a-la-receta-fija",
+    "name": "De la prueba a la receta fija",
+    "note": "Estandarizar un plato."
+   },
+   {
+    "id": "documentar-tu-obra",
+    "name": "Documentar tu obra",
+    "note": "Dónde guardar las recetas."
+   },
+   {
+    "id": "precision-en-pasteleria",
+    "name": "Precisión en pastelería",
+    "note": "Pesar y medir."
+   }
+  ],
+  "keys": [
+   "Rendimiento al principio.",
+   "Ingredientes en peso y en orden de uso.",
+   "Un verbo y una acción por paso.",
+   "Punto de control claro.",
+   "Prueba de lectura con otra persona."
+  ],
+  "errors": [
+   {
+    "p": "Nadie entiende la receta",
+    "fix": "Pasos largos o mezclados. Divide y simplifica."
+   },
+   {
+    "p": "Sale distinto cada vez",
+    "fix": "Sin cantidades exactas ni puntos de control. Añádelos."
+   },
+   {
+    "p": "Ingredientes olvidados",
+    "fix": "Lista desordenada. Ordénalos según se usan."
+   }
+  ],
+  "history": "Las recetas escritas pasaron de listas aproximadas a fichas técnicas precisas con la profesionalización de las cocinas en el siglo XX.",
+  "uses": [
+   "Fichas de platos",
+   "Formación del equipo",
+   "Libro de la casa",
+   "Compartir recetas en un stage o colaboración"
+  ],
+  "keep": "Guarda cada receta con fecha y versión; anota los cambios en lugar de borrar.",
+  "pro": "Escribe la ficha el mismo día que el plato entra en carta, no después.",
+  "related": [
+   "de-la-prueba-a-la-receta-fija",
+   "documentar-tu-obra",
+   "precision-en-pasteleria",
+   "contar-un-plato",
+   "nombrar-un-plato"
+  ]
+ },
+ {
+  "id": "de-un-vino-a-un-plato",
+  "name": "De un vino a un plato",
+  "name_en": "From a wine to a dish",
+  "cat": "creatividad",
+  "group": "Sabor",
+  "aka": [
+   "crear desde un vino",
+   "maridaje inverso",
+   "plato para un vino",
+   "cocinar para una bebida",
+   "vino y comida"
+  ],
+  "summary": "Cómo crear un plato partiendo de un vino u otra bebida: leer sus aromas, su acidez y su cuerpo, y construir el plato para que los dos mejoren juntos.",
+  "what": "Normalmente se busca un vino para un plato; hacerlo al revés es un buen ejercicio creativo, útil en cenas con bodegas, catas o menús maridados. Se cata la bebida con atención (aromas, acidez, dulzor, taninos, cuerpo, burbuja) y se diseña un plato que comparta algún aroma y equilibre lo demás: la acidez del vino corta la grasa del plato, los taninos piden proteína y grasa, el dulzor del vino pide sal o picante. Lo mismo vale para una bebida sin alcohol, como cuenta [[maridaje-sin-alcohol]].",
+  "method": [
+   "Cata la bebida y apunta: aromas principales, acidez, dulzor, taninos o amargor, cuerpo y final.",
+   "Elige un puente: un aroma que repetirás en el plato (cítrico, fruta, tostado, hierba).",
+   "Equilibra lo que la bebida tiene de más: con mucha acidez, un plato con grasa; con taninos, proteína y grasa; con dulzor, sal o especia.",
+   "Evita choques: el vinagre y algunos amargos fuertes estropean el vino.",
+   "Prueba bocado y sorbo juntos con varias versiones del plato.",
+   "Ajusta el plato, no la bebida: es el punto de partida."
+  ],
+  "ratios": [
+   {
+    "use": "Puentes aromáticos",
+    "ratio": "1–2 por plato",
+    "note": "Uno claro es suficiente."
+   },
+   {
+    "use": "Acidez del plato",
+    "ratio": "Menor que la del vino",
+    "note": "Si no, el vino parece plano."
+   },
+   {
+    "use": "Pruebas",
+    "ratio": "2–3 versiones del plato con la bebida",
+    "note": "Siempre bocado y sorbo juntos."
+   }
+  ],
+  "variants": [
+   {
+    "id": "maridaje-sin-alcohol",
+    "name": "Maridaje sin alcohol",
+    "note": "Bebidas sin alcohol con el mismo método."
+   },
+   {
+    "id": "maridaje-de-sabores",
+    "name": "Maridaje de sabores",
+    "note": "Afinidad y contraste."
+   },
+   {
+    "id": "vinos-y-licores",
+    "name": "Vinos y licores",
+    "note": "Cómo se comportan en cocina."
+   }
+  ],
+  "keys": [
+   "La bebida es el punto de partida.",
+   "Un puente aromático claro.",
+   "Equilibra acidez, taninos y dulzor.",
+   "Cuidado con el vinagre en el plato.",
+   "Prueba siempre bocado y sorbo juntos."
+  ],
+  "errors": [
+   {
+    "p": "El vino parece plano",
+    "fix": "Plato demasiado ácido o dulce. Baja ácido y azúcar."
+   },
+   {
+    "p": "Sabor metálico",
+    "fix": "Taninos con pescado azul o ciertos ingredientes. Cambia la proteína o el vino."
+   },
+   {
+    "p": "No se nota relación",
+    "fix": "Sin puente. Repite un aroma de la bebida en el plato."
+   }
+  ],
+  "history": "Las cenas maridadas con bodegas y los menús con vino han llevado a muchos cocineros a crear platos pensados para una bebida concreta.",
+  "uses": [
+   "Cenas con bodegas",
+   "Menús maridados",
+   "Catas",
+   "Ejercicio creativo"
+  ],
+  "keep": "Guarda la ficha del plato con la bebida y las notas de cata de ambos.",
+  "pro": "Cata con el sumiller o quien lleve las bebidas: dos paladares encuentran mejor el puente.",
+  "related": [
+   "maridaje-sin-alcohol",
+   "maridaje-de-sabores",
+   "vinos-y-licores",
+   "acidez-en-cocina",
+   "catas-y-notas"
+  ]
+ },
+ {
+  "id": "texturas-en-el-plato",
+  "name": "Diseñar las texturas de un plato",
+  "name_en": "Designing textures on the plate",
+  "cat": "creatividad",
+  "group": "Sabor",
+  "aka": [
+   "texturas",
+   "crujiente y cremoso",
+   "diseñar texturas",
+   "contraste de texturas",
+   "mapa de texturas"
+  ],
+  "summary": "Cómo pensar las texturas de un plato a propósito: qué aporta cada una, cuántas caben y cómo conseguir que lleguen intactas a la mesa.",
+  "what": "La textura es la mitad del placer de comer: un plato con todo blando cansa aunque sepa bien. Diseñar texturas es decidir qué elementos son cremosos, crujientes, jugosos, firmes, gelatinosos o aireados, y cómo se reparten en el bocado. Un buen plato suele tener una base cremosa o jugosa, un protagonista con su propia textura y un contrapunto crujiente. La percepción y la ciencia de la textura están en [[texturas-y-percepcion]].",
+  "method": [
+   "Haz una lista de los elementos del plato y apunta la textura de cada uno.",
+   "Comprueba que no todos son iguales: si todo es blando, falta un crujiente; si todo es seco, falta algo jugoso o cremoso.",
+   "Decide la textura protagonista y que las demás la acompañen.",
+   "Protege los crujientes: lejos de la salsa, en el último momento.",
+   "Piensa la textura dentro del bocado completo: lo que se come junto.",
+   "Prueba el plato al cabo de 2–3 minutos: las texturas cambian con el tiempo."
+  ],
+  "ratios": [
+   {
+    "use": "Texturas distintas por plato",
+    "ratio": "3–4",
+    "note": "Más se vuelve confuso."
+   },
+   {
+    "use": "Crujiente",
+    "ratio": "Un 10–15 % del bocado",
+    "note": "Suficiente para notarlo."
+   },
+   {
+    "use": "Tiempo de vida del crujiente",
+    "ratio": "2–3 minutos sobre algo húmedo",
+    "note": "Monta al final."
+   }
+  ],
+  "variants": [
+   {
+    "id": "texturas-y-percepcion",
+    "name": "Texturas y percepción",
+    "note": "La ciencia."
+   },
+   {
+    "id": "contraste-y-equilibrio",
+    "name": "Contraste y equilibrio",
+    "note": "Los demás contrastes."
+   },
+   {
+    "id": "crujientes-salados",
+    "name": "Crujientes salados",
+    "note": "Recursos para el crujiente."
+   }
+  ],
+  "keys": [
+   "Cada elemento, una textura consciente.",
+   "Siempre un contrapunto.",
+   "Proteger los crujientes.",
+   "Pensar el bocado completo.",
+   "Probar después de unos minutos."
+  ],
+  "errors": [
+   {
+    "p": "Plato monótono",
+    "fix": "Todo blando. Añade un crujiente o algo crudo."
+   },
+   {
+    "p": "Crujiente que llega blando",
+    "fix": "Montado pronto o sobre la salsa. Al final y en zona seca."
+   },
+   {
+    "p": "Demasiadas texturas",
+    "fix": "Confunde. Quédate con 3–4."
+   }
+  ],
+  "history": "La atención a la textura como elemento de diseño del plato creció con la cocina de vanguardia, que creó nuevas texturas con gelificantes, espumas y deshidratados.",
+  "uses": [
+   "Construir platos nuevos",
+   "Corregir platos que cansan",
+   "Postres",
+   "Formación del equipo"
+  ],
+  "keep": "Anota en la ficha la textura de cada elemento y cuándo se añade.",
+  "pro": "En la cata, pregunta siempre: ¿qué cruje y qué se funde? Si no hay respuesta, falta algo.",
+  "related": [
+   "texturas-y-percepcion",
+   "contraste-y-equilibrio",
+   "crujientes-salados",
+   "construir-un-plato",
+   "contraste-de-temperaturas"
+  ]
+ },
+ {
+  "id": "preparar-un-concurso",
+  "name": "Preparar un concurso de cocina",
+  "name_en": "Preparing for a cooking competition",
+  "cat": "creatividad",
+  "group": "Oficio",
+  "aka": [
+   "concurso de cocina",
+   "competicion de cocina",
+   "concurso de cocineros",
+   "prueba de concurso",
+   "certamen gastronomico"
+  ],
+  "summary": "Cómo preparar un concurso: entender las bases, diseñar un plato que cuente algo, ensayar con tiempo y peso, y llegar con todo planificado.",
+  "what": "Un concurso obliga a cocinar con reglas, tiempo limitado y un jurado. Es una gran escuela: exige precisión, planificación y un plato con idea clara. Lo primero es leer las bases con detalle (producto obligatorio, tiempos, raciones, material permitido). Después se diseña un plato que muestre la propia cocina dentro de esas reglas, y se ensaya cronometrado tantas veces como haga falta. El día del concurso se cocina lo que ya se ha hecho muchas veces.",
+  "method": [
+   "Lee las bases dos veces y apunta todo lo obligatorio y lo prohibido.",
+   "Diseña un plato con una idea clara que cuente tu cocina y use bien el producto obligatorio.",
+   "Escribe el plan de trabajo minuto a minuto y la lista de material e ingredientes pesados.",
+   "Ensaya completo y cronometrado al menos tres veces, con alguien que haga de jurado.",
+   "Ajusta el plato y el plan después de cada ensayo; simplifica lo arriesgado.",
+   "Prepara una explicación del plato de un minuto para el jurado."
+  ],
+  "ratios": [
+   {
+    "use": "Ensayos completos",
+    "ratio": "Al menos 3",
+    "note": "Cronometrados."
+   },
+   {
+    "use": "Margen de tiempo",
+    "ratio": "Terminar el ensayo con 10 % del tiempo de sobra",
+    "note": "El día siempre surge algo."
+   },
+   {
+    "use": "Explicación del plato",
+    "ratio": "1 minuto",
+    "note": "Clara y sin adornos."
+   }
+  ],
+  "variants": [
+   {
+    "id": "construir-un-plato",
+    "name": "Construir un plato",
+    "note": "El método del plato."
+   },
+   {
+    "id": "contar-un-plato",
+    "name": "Contar un plato",
+    "note": "La explicación al jurado."
+   },
+   {
+    "id": "crear-con-cinco-ingredientes",
+    "name": "Retos con limitación",
+    "note": "Buena preparación para las bases."
+   }
+  ],
+  "keys": [
+   "Las bases mandan.",
+   "Un plato con una idea clara.",
+   "Plan minuto a minuto.",
+   "Ensayar hasta que sea rutina.",
+   "Nada nuevo el día del concurso."
+  ],
+  "errors": [
+   {
+    "p": "Fuera de tiempo",
+    "fix": "Plan poco ensayado. Cronometra y simplifica."
+   },
+   {
+    "p": "Plato que no cumple las bases",
+    "fix": "Bases leídas por encima. Haz una lista de comprobación."
+   },
+   {
+    "p": "Nervios que bloquean",
+    "fix": "Pocos ensayos. Repite hasta que salga sin pensar."
+   }
+  ],
+  "history": "Los concursos de cocina son desde hace décadas una forma de formación y reconocimiento para cocineros jóvenes y profesionales.",
+  "uses": [
+   "Concursos de cocina",
+   "Retos con el equipo",
+   "Formación",
+   "Trayectoria profesional"
+  ],
+  "keep": "Guarda el plato, el plan y las notas de cada ensayo y del concurso en tu archivo y trayectoria.",
+  "pro": "Pide permiso para ensayar en la cocina fuera del servicio y que el equipo te cronometre y critique.",
+  "related": [
+   "construir-un-plato",
+   "contar-un-plato",
+   "crear-con-cinco-ingredientes",
+   "documentar-tu-obra",
+   "de-la-prueba-a-la-receta-fija"
+  ]
+ },
+ {
+  "id": "ensenar-una-tecnica",
+  "name": "Enseñar una técnica",
+  "name_en": "Teaching a technique",
+  "cat": "creatividad",
+  "group": "Oficio",
+  "aka": [
+   "ensenar en cocina",
+   "formar a un cocinero",
+   "explicar una tecnica",
+   "transmitir el oficio",
+   "formacion del equipo"
+  ],
+  "summary": "Cómo enseñar una técnica a otro cocinero para que la entienda y la repita: mostrar, explicar el porqué, dejar hacer y corregir.",
+  "what": "Saber hacer algo no es lo mismo que saber enseñarlo. Una técnica se aprende mejor cuando se ve hecha, se entiende por qué se hace así, se practica con las propias manos y se recibe una corrección concreta. Enseñar también obliga al que enseña a ordenar lo que sabe, y a menudo descubre cosas que hacía sin pensar. Es parte del oficio y de la carrera de un jefe de cocina.",
+  "method": [
+   "Prepara la explicación: qué se va a aprender, para qué sirve y cuál es el punto clave.",
+   "Hazlo tú una vez despacio, explicando cada paso y por qué.",
+   "Deja que lo haga el otro mientras miras, sin quitarle el cuchillo.",
+   "Corrige una cosa cada vez, con palabras concretas («más fino», «menos fuego»).",
+   "Repite hasta que salga bien dos veces seguidas.",
+   "Déjale la ficha de la técnica para que la consulte."
+  ],
+  "ratios": [
+   {
+    "use": "Correcciones por intento",
+    "ratio": "1",
+    "note": "Más, y se pierde."
+   },
+   {
+    "use": "Repeticiones",
+    "ratio": "Hasta 2 bien seguidas",
+    "note": "Una puede ser suerte."
+   },
+   {
+    "use": "Explicación inicial",
+    "ratio": "2–3 minutos",
+    "note": "Más, y se olvida."
+   }
+  ],
+  "variants": [
+   {
+    "id": "escribir-una-receta",
+    "name": "Escribir una receta",
+    "note": "La ficha que acompaña la enseñanza."
+   },
+   {
+    "id": "prueba-con-el-equipo",
+    "name": "Prueba con el equipo",
+    "note": "Enseñar a catar."
+   },
+   {
+    "id": "aprender-de-un-stage",
+    "name": "Aprender de un stage",
+    "note": "El otro lado: aprender."
+   }
+  ],
+  "keys": [
+   "Explica el porqué, no solo el cómo.",
+   "Deja hacer.",
+   "Una corrección cada vez.",
+   "Palabras concretas.",
+   "Ficha escrita para después."
+  ],
+  "errors": [
+   {
+    "p": "No lo repite bien",
+    "fix": "Solo miró. Que lo haga con sus manos."
+   },
+   {
+    "p": "Se bloquea",
+    "fix": "Demasiadas correcciones. Una cada vez."
+   },
+   {
+    "p": "Lo olvida",
+    "fix": "Sin ficha ni repetición. Deja la ficha y repetid otro día."
+   }
+  ],
+  "history": "El oficio de cocinero se ha transmitido siempre de cocinero a cocinero en la propia cocina, y las escuelas de cocina lo han ordenado y ampliado.",
+  "uses": [
+   "Formación del equipo",
+   "Clases y talleres",
+   "Stages",
+   "Trayectoria profesional"
+  ],
+  "keep": "Apunta en tu trayectoria las formaciones que das: también forman parte de tu carrera.",
+  "pro": "Enseña una técnica al mes al equipo en un momento tranquilo; enseñar consolida lo que sabes.",
+  "related": [
+   "escribir-una-receta",
+   "prueba-con-el-equipo",
+   "aprender-de-un-stage",
+   "cocinar-en-una-demostracion",
+   "documentar-tu-obra"
+  ]
+ },
+ {
+  "id": "cocinar-en-una-demostracion",
+  "name": "Cocinar en una demostración",
+  "name_en": "Cooking in a live demonstration",
+  "cat": "creatividad",
+  "group": "Oficio",
+  "aka": [
+   "demostracion de cocina",
+   "showcooking",
+   "cocina en directo",
+   "ponencia de cocina",
+   "cocinar delante de publico"
+  ],
+  "summary": "Cómo preparar una demostración en directo: elegir qué contar, preparar la mise en place, ensayar el tiempo y explicar mientras se cocina.",
+  "what": "En una demostración se cocina y se explica a la vez, delante de público, con poco tiempo y material distinto al de casa. Funciona cuando se cuenta una sola idea clara (una técnica, un producto, un plato), casi todo está preparado de antes y solo se hacen en directo los pasos que enseñan algo. El público tiene que entender qué se hace y por qué, y poder repetirlo o recordarlo.",
+  "method": [
+   "Elige una sola idea que el público se lleve: una técnica, un producto o un plato.",
+   "Divide el plato en pasos y decide cuáles se hacen en directo y cuáles llegan preparados.",
+   "Prepara la mise en place en recipientes claros, en el orden en que se usarán, y una versión terminada del plato.",
+   "Ensaya hablando en voz alta y con cronómetro.",
+   "Durante la demostración, explica qué haces y por qué, y repite la idea principal al final.",
+   "Deja la receta escrita o la ficha para quien quiera repetirla."
+  ],
+  "ratios": [
+   {
+    "use": "Ideas por demostración",
+    "ratio": "1 principal",
+    "note": "Más se olvidan."
+   },
+   {
+    "use": "Pasos en directo",
+    "ratio": "2–4",
+    "note": "Los que enseñan algo."
+   },
+   {
+    "use": "Margen de tiempo",
+    "ratio": "15–20 % libre para preguntas",
+    "note": "Siempre hay."
+   }
+  ],
+  "variants": [
+   {
+    "id": "ensenar-una-tecnica",
+    "name": "Enseñar una técnica",
+    "note": "La base de la demostración."
+   },
+   {
+    "id": "contar-un-plato",
+    "name": "Contar un plato",
+    "note": "El relato."
+   },
+   {
+    "id": "preparar-un-concurso",
+    "name": "Preparar un concurso",
+    "note": "Otra situación con tiempo y público."
+   }
+  ],
+  "keys": [
+   "Una idea clara.",
+   "Casi todo preparado de antes.",
+   "Un plato terminado de reserva.",
+   "Explicar el porqué mientras se cocina.",
+   "Ensayar en voz alta."
+  ],
+  "errors": [
+   {
+    "p": "Se acaba el tiempo",
+    "fix": "Demasiados pasos en directo. Lleva más preparado."
+   },
+   {
+    "p": "El público no entiende",
+    "fix": "Sin idea principal o explicación. Repite la idea al final."
+   },
+   {
+    "p": "Algo sale mal en directo",
+    "fix": "Sin plato de reserva. Ten uno terminado."
+   }
+  ],
+  "history": "Las demostraciones de cocina en congresos, ferias y escuelas se han convertido en una parte habitual de la carrera de muchos cocineros.",
+  "uses": [
+   "Congresos y ferias",
+   "Clases",
+   "Presentaciones de producto",
+   "Formación"
+  ],
+  "keep": "Guarda el guion, la receta y las fotos de cada demostración en tu trayectoria.",
+  "pro": "Prepara una lista de comprobación de material: en un escenario siempre falta algo.",
+  "related": [
+   "ensenar-una-tecnica",
+   "contar-un-plato",
+   "preparar-un-concurso",
+   "escribir-una-receta",
+   "documentar-tu-obra"
+  ]
+ },
+ {
+  "id": "el-servicio-de-pan",
+  "name": "El servicio de pan como plato",
+  "name_en": "The bread service as a dish",
+  "cat": "creatividad",
+  "group": "Menús",
+  "aka": [
+   "pan y mantequilla",
+   "servicio de pan",
+   "pan de la casa",
+   "pan con aceite",
+   "pan del menu"
+  ],
+  "summary": "Cómo pensar el pan y su acompañamiento como un pase más del menú: un pan propio, una grasa con identidad y el momento justo para servirlo.",
+  "what": "El pan es lo primero que se come y muchas veces lo que más se recuerda. Tratado como un plato, cuenta mucho de una cocina: un pan propio (de masa madre, una focaccia, un pan plano a la brasa), una grasa con carácter (aceite de la isla, mantequilla cultivada, manteca, un untable) y un toque de sal o de hierba. También importa cuándo llega: con el aperitivo, con un plato con salsa o como pase propio.",
+  "method": [
+   "Elige un pan que puedas hacer bien cada día: [[pan-y-focaccia|focaccia]], masa madre, [[panes-planos|pan plano]] o pan rápido.",
+   "Elige una grasa con identidad: aceite de oliva propio, mantequilla cultivada, manteca o un untable.",
+   "Añade un toque: sal en escamas, hierbas secas de la isla, una miel, un encurtido.",
+   "Decide el momento: al principio, con un plato de salsa o como pase propio.",
+   "Sírvelo templado y en ración pensada para que no quite el hambre.",
+   "Cámbialo con la temporada como cualquier otro plato."
+  ],
+  "ratios": [
+   {
+    "use": "Pan por persona",
+    "ratio": "40–60 g",
+    "note": "En un menú largo, menos."
+   },
+   {
+    "use": "Grasa",
+    "ratio": "10–15 g por persona",
+    "note": "Mantequilla o untable."
+   },
+   {
+    "use": "Temperatura",
+    "ratio": "Templado, recién hecho o regenerado",
+    "note": "Frío pierde mucho."
+   }
+  ],
+  "variants": [
+   {
+    "id": "mantequilla-casera",
+    "name": "Mantequilla cultivada",
+    "note": "La grasa de la casa."
+   },
+   {
+    "id": "pan-y-focaccia",
+    "name": "Pan y focaccia",
+    "note": "El pan de levadura."
+   },
+   {
+    "id": "panes-planos",
+    "name": "Panes planos",
+    "note": "Pan a la brasa al momento."
+   }
+  ],
+  "keys": [
+   "Un pan propio que salga bien cada día.",
+   "Una grasa con identidad.",
+   "Templado.",
+   "Ración medida.",
+   "Cambiar con la temporada."
+  ],
+  "errors": [
+   {
+    "p": "El comensal se llena de pan",
+    "fix": "Ración grande o pan servido sin control. Ración medida."
+   },
+   {
+    "p": "Pan frío o seco",
+    "fix": "Cortado con antelación. Regenera y corta al momento."
+   },
+   {
+    "p": "Pan sin relación con la cocina",
+    "fix": "Pan comprado sin pensar. Busca uno con identidad."
+   }
+  ],
+  "history": "El servicio de pan ha ganado protagonismo en muchos restaurantes de autor, que elaboran su propio pan y su mantequilla como parte del menú.",
+  "uses": [
+   "Menú degustación",
+   "Carta",
+   "Aperitivo",
+   "Identidad de la casa"
+  ],
+  "keep": "Guarda la ficha del pan y de la grasa como cualquier plato.",
+  "pro": "Hornea o regenera el pan para cada turno y ten la mantequilla atemperada en el pase.",
+  "related": [
+   "pan-y-focaccia",
+   "panes-planos",
+   "mantequilla-casera",
+   "masa-madre",
+   "aceite-de-oliva",
+   "aperitivos-y-snacks"
+  ]
+ },
+ {
+  "id": "elegir-la-vajilla",
+  "name": "Elegir la vajilla para un plato",
+  "name_en": "Choosing the tableware for a dish",
+  "cat": "creatividad",
+  "group": "Método",
+  "aka": [
+   "vajilla",
+   "plato y presentacion",
+   "elegir el plato",
+   "ceramica",
+   "soporte del plato"
+  ],
+  "summary": "Cómo elegir el plato, cuenco o soporte en el que se sirve una creación: forma, tamaño, color, textura y temperatura, al servicio de la comida.",
+  "what": "La vajilla es el marco del plato: puede hacerlo más claro o taparlo. Un cuenco hondo pide caldos y guisos; un plato llano y amplio, elementos separados; una piedra o un soporte de madera, bocados para comer con la mano. El color del fondo cambia cómo se ven los colores de la comida, y la temperatura de la vajilla cambia cómo llega el plato. Elegirla es parte de crear, junto al [[emplatado]].",
+  "method": [
+   "Piensa cómo se come el plato: con cuchara, con cubiertos, con la mano.",
+   "Elige la forma: honda para líquidos, llana para elementos separados, pequeña para bocados.",
+   "Elige el tamaño para que el plato respire: ni perdido en un plato enorme ni apretado.",
+   "Elige el color y la textura del fondo que mejor muestren los colores de la comida.",
+   "Decide la temperatura: plato caliente para lo caliente, frío para lo frío.",
+   "Prueba el plato montado en dos o tres vajillas distintas y elige con el equipo."
+  ],
+  "ratios": [
+   {
+    "use": "Espacio libre en el plato",
+    "ratio": "Alrededor de un tercio",
+    "note": "Para que respire."
+   },
+   {
+    "use": "Temperatura de la vajilla",
+    "ratio": "Caliente a 50–60 °C para platos calientes",
+    "note": "Frío de cámara para crudos y helados."
+   },
+   {
+    "use": "Pruebas",
+    "ratio": "2–3 vajillas por plato nuevo",
+    "note": "Elegir viendo el plato montado."
+   }
+  ],
+  "variants": [
+   {
+    "id": "emplatado",
+    "name": "Emplatado",
+    "note": "Cómo componer sobre el soporte."
+   },
+   {
+    "id": "cocina-y-paisaje",
+    "name": "Cocina y paisaje",
+    "note": "Vajilla y materiales del lugar."
+   },
+   {
+    "id": "contraste-de-temperaturas",
+    "name": "Temperaturas",
+    "note": "La vajilla también calienta o enfría."
+   }
+  ],
+  "keys": [
+   "La vajilla al servicio del plato.",
+   "Forma según cómo se come.",
+   "Espacio para que respire.",
+   "Color de fondo que realce.",
+   "Temperatura de la vajilla."
+  ],
+  "errors": [
+   {
+    "p": "Plato perdido en la vajilla",
+    "fix": "Vajilla demasiado grande. Usa una más pequeña."
+   },
+   {
+    "p": "Comida que llega fría",
+    "fix": "Vajilla fría. Calienta los platos."
+   },
+   {
+    "p": "La vajilla llama más la atención que la comida",
+    "fix": "Soporte recargado. Elige uno más sencillo."
+   }
+  ],
+  "history": "La vajilla de autor y la colaboración entre cocineros y ceramistas se han extendido en la cocina actual como parte de la identidad de cada casa.",
+  "uses": [
+   "Platos nuevos",
+   "Menú degustación",
+   "Fotografía de platos",
+   "Identidad de la casa"
+  ],
+  "keep": "Apunta en la ficha de cada plato la vajilla en la que se sirve y su temperatura.",
+  "pro": "Monta los platos nuevos en varias vajillas en la cena de prueba y elegid viéndolos.",
+  "related": [
+   "emplatado",
+   "cocina-y-paisaje",
+   "contraste-de-temperaturas",
+   "fotografiar-platos",
+   "construir-un-plato"
+  ]
+ },
+ {
+  "id": "cocinar-con-lo-del-mercado",
+  "name": "Cocinar con lo que trae el mercado",
+  "name_en": "Cooking from the market",
+  "cat": "creatividad",
+  "group": "Raíces",
+  "aka": [
+   "cocina de mercado",
+   "plato del dia",
+   "producto del dia",
+   "improvisar con producto",
+   "cocina de lonja"
+  ],
+  "summary": "Cómo crear rápido un plato a partir del producto que entra ese día: mirar, probar, elegir una técnica que lo muestre y decidir en poco tiempo.",
+  "what": "Cocinar con lo que trae el mercado o la lonja es la forma más directa de cocina de temporada: no se decide el plato antes, sino al ver el producto. Requiere tener una despensa de bases preparadas (fondos, aliños, encurtidos, crujientes) y un repertorio de técnicas que se puedan aplicar rápido. Es un buen ejercicio diario de creatividad y una forma de mantener la carta viva con un plato del día.",
+  "method": [
+   "Ve al mercado o recibe el producto con la mente abierta y elige lo que esté mejor ese día.",
+   "Pruébalo crudo o cocinado de la forma más simple.",
+   "Elige una técnica que lo muestre: crudo, brasa, vapor, guiso corto.",
+   "Busca en tu despensa una base que lo acompañe: un fondo, un aliño, un encurtido, un crujiente.",
+   "Monta el plato con pocos elementos y cátalo.",
+   "Apunta el resultado: lo que funcione puede volver a la carta en su temporada."
+  ],
+  "ratios": [
+   {
+    "use": "Elementos del plato del día",
+    "ratio": "3–4",
+    "note": "Rápido y claro."
+   },
+   {
+    "use": "Bases de despensa",
+    "ratio": "5–6 siempre preparadas",
+    "note": "Fondos, aliños, encurtidos, crujientes, grasas."
+   },
+   {
+    "use": "Tiempo de decisión",
+    "ratio": "Menos de una hora",
+    "note": "Es parte del ejercicio."
+   }
+  ],
+  "variants": [
+   {
+    "id": "menu-de-temporada",
+    "name": "Menú de temporada",
+    "note": "La temporada a escala de menú."
+   },
+   {
+    "id": "producto-de-la-isla",
+    "name": "Producto de la isla",
+    "note": "Conocer la despensa local."
+   },
+   {
+    "id": "un-solo-producto",
+    "name": "Un solo producto",
+    "note": "Explorar un producto a fondo."
+   }
+  ],
+  "keys": [
+   "Elegir lo mejor del día.",
+   "Probar antes de decidir.",
+   "Bases de despensa preparadas.",
+   "Pocos elementos.",
+   "Apuntar lo que funciona."
+  ],
+  "errors": [
+   {
+    "p": "Plato improvisado sin rumbo",
+    "fix": "Demasiados elementos. Producto, técnica, base y acabado."
+   },
+   {
+    "p": "No da tiempo",
+    "fix": "Sin bases preparadas. Mantén la despensa de bases."
+   },
+   {
+    "p": "Idea buena que se pierde",
+    "fix": "Sin anotar. Apúntala en el diario."
+   }
+  ],
+  "history": "La cocina de mercado, que decide el menú según el producto del día, es una tradición de muchas cocinas mediterráneas y fue reivindicada por la cocina de autor de finales del siglo XX.",
+  "uses": [
+   "Plato del día",
+   "Menú de mediodía",
+   "Ejercicio creativo diario",
+   "Aprovechar producto excepcional"
+  ],
+  "keep": "Anota cada plato del día en el diario con fecha y producto.",
+  "pro": "Mantén siempre preparadas cinco o seis bases versátiles; son las que permiten crear rápido.",
+  "related": [
+   "menu-de-temporada",
+   "producto-de-la-isla",
+   "un-solo-producto",
+   "temporada-mes-a-mes",
+   "cocinar-para-compartir"
+  ]
  }
 ]

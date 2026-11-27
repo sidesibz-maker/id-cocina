@@ -11580,5 +11580,1697 @@
    "umami-glutamato-y-sinergia",
    "bulgogi-y-barbacoa-coreana"
   ]
+ },
+ {
+  "id": "pez-espada-y-emperador",
+  "name": "Pez espada o emperador",
+  "name_en": "Swordfish",
+  "cat": "producto",
+  "group": "Pescado y marisco",
+  "aka": [
+   "pez espada",
+   "emperador",
+   "aguja palá",
+   "rodaja de emperador",
+   "swordfish"
+  ],
+  "summary": "Pescado grande de carne compacta, sin espinas y poco grasa, que se vende en rodajas; pide punto justo y mucho cuidado de no secarlo.",
+  "what": "El pez espada, llamado emperador en buena parte de España, es un gran pescado de alta mar de carne blanca rosada, compacta y sin espinas, parecida a la de la carne. Llega en rodajas o lomos de piezas despiezadas, con piel gruesa y un anillo oscuro que se retira si amarga. Es magro, así que se seca enseguida si se pasa de punto.\n\nAl ser un pescado grande y longevo, acumula mercurio: las autoridades sanitarias recomiendan que embarazadas, mujeres que dan el pecho y niños pequeños lo eviten o lo limiten. Ver [[despiece-de-pescados-grandes]].",
+  "method": [
+   "Elige rodajas brillantes, firmes, sin bordes secos ni olor fuerte.",
+   "Quita la piel y, si quieres, la parte oscura.",
+   "Seca bien, sala justo antes y marca en plancha o brasa muy caliente.",
+   "Retira con el centro aún jugoso y deja reposar 1 minuto.",
+   "En guiso o brocheta, tacos de 3 cm y poco tiempo."
+  ],
+  "ratios": [
+   {
+    "use": "Rodaja para plancha",
+    "ratio": "2–2,5 cm",
+    "note": "Más fina se seca."
+   },
+   {
+    "use": "Punto jugoso",
+    "ratio": "50–52 °C en el centro",
+    "note": "Congelado antes si queda por debajo de 60 °C."
+   },
+   {
+    "use": "Ración",
+    "ratio": "180–200 g limpio",
+    "note": ""
+   },
+   {
+    "use": "Plancha",
+    "ratio": "2 minutos por lado",
+    "note": "Fuego fuerte."
+   }
+  ],
+  "variants": [
+   {
+    "id": "atun-rojo-y-bonito",
+    "name": "Atún",
+    "note": "Otro gran pescado en rodajas."
+   },
+   {
+    "id": "kebab-y-pinchos",
+    "name": "Brochetas",
+    "note": "En tacos."
+   },
+   {
+    "id": "plancha-y-sarten",
+    "name": "Plancha",
+    "note": "Fuego fuerte."
+   },
+   {
+    "id": "despiece-de-pescados-grandes",
+    "name": "Despiece",
+    "note": "De la pieza a la rodaja."
+   }
+  ],
+  "keys": [
+   "Rodaja gruesa y fuego fuerte.",
+   "Sacar antes de que se seque.",
+   "Pescado que queda por debajo de 60 °C en el centro: congelado antes (-20 °C al menos 24 horas en toda la pieza) o ya tratado, por el anisakis.",
+   "Embarazadas, lactancia y niños pequeños: evitarlo o limitarlo, por el mercurio.",
+   "Marinadas cortas con ácido."
+  ],
+  "errors": [
+   {
+    "p": "Seco y fibroso",
+    "fix": "Pasado de punto o rodaja fina. Más grueso y menos tiempo."
+   },
+   {
+    "p": "Sabor amargo",
+    "fix": "Parte oscura. Retírala."
+   },
+   {
+    "p": "No dora",
+    "fix": "Pescado húmedo. Sécalo bien."
+   }
+  ],
+  "history": "El pez espada se pesca con palangre en el Atlántico y el Mediterráneo, y en España es habitual en lonjas del sur y de Levante.",
+  "uses": [
+   "Plancha y brasa",
+   "Brochetas",
+   "Guisos con tomate",
+   "Carpaccio de pieza congelada"
+  ],
+  "keep": "Rodajas, 1–2 días a 0–2 °C bien envueltas; congela bien.",
+  "pro": "Porciona al recibir con pesos iguales; las colas a brochetas.",
+  "related": [
+   "atun-rojo-y-bonito",
+   "kebab-y-pinchos",
+   "plancha-y-sarten",
+   "despiece-de-pescados-grandes",
+   "punto-de-la-carne",
+   "cadena-de-frio"
+  ]
+ },
+ {
+  "id": "mero-y-cherna",
+  "name": "Mero, cherna y meros de roca",
+  "name_en": "Grouper and wreckfish",
+  "cat": "producto",
+  "group": "Pescado y marisco",
+  "aka": [
+   "mero",
+   "cherna",
+   "abadejo de roca",
+   "falso abadejo",
+   "gitano",
+   "grouper"
+  ],
+  "summary": "Pescados de roca de carne blanca, gelatinosa y en lascas grandes; muy apreciados en guiso, al horno, en caldo y en cocina canaria.",
+  "what": "El mero y la cherna son grandes pescados de roca de carne blanca, firme, en lascas grandes y con mucha gelatina en la piel y la cabeza. El mero mediterráneo es escaso y está muy protegido en muchas zonas; la cherna es habitual en Canarias, donde se guisa, se sancocha y se hace a la plancha. Otros meros de roca menores se usan igual.\n\nSu carne aguanta bien la cocción larga sin deshacerse, y la cabeza y las espinas dan caldos muy ligados.",
+  "method": [
+   "Elige piezas con piel brillante y carne translúcida; pide la cabeza para caldo.",
+   "Porciona en rodajas o lomos con piel.",
+   "Plancha por la piel o al horno; en guiso, añádelo al final para que no se deshaga.",
+   "Usa la cabeza y las espinas para un caldo gelatinoso.",
+   "Comprueba el punto: la lasca se separa y está jugosa."
+  ],
+  "ratios": [
+   {
+    "use": "Lomo al horno",
+    "ratio": "190 °C, 12–15 minutos",
+    "note": "Según grosor."
+   },
+   {
+    "use": "En guiso",
+    "ratio": "8–10 minutos al final",
+    "note": "Sin hervir fuerte."
+   },
+   {
+    "use": "Ración",
+    "ratio": "180–200 g limpio",
+    "note": ""
+   },
+   {
+    "use": "Caldo de cabeza",
+    "ratio": "25–30 minutos",
+    "note": "Muy ligado."
+   }
+  ],
+  "variants": [
+   {
+    "id": "pescado-de-roca",
+    "name": "Pescado de roca",
+    "note": "La familia."
+   },
+   {
+    "id": "caldero",
+    "name": "Caldero",
+    "note": "Guiso de pescado."
+   },
+   {
+    "id": "fumet",
+    "name": "Fumet",
+    "note": "Con la cabeza."
+   },
+   {
+    "id": "despiece-de-pescados-grandes",
+    "name": "Despiece",
+    "note": "Piezas grandes."
+   }
+  ],
+  "keys": [
+   "Carne en lascas que aguanta el guiso.",
+   "Cabeza y piel muy gelatinosas.",
+   "Mero mediterráneo: escaso y protegido; mejor otras especies.",
+   "Pescado que queda por debajo de 60 °C en el centro: congelado antes (-20 °C al menos 24 horas en toda la pieza) o ya tratado, por el anisakis.",
+   "En guiso, al final."
+  ],
+  "errors": [
+   {
+    "p": "Se deshace en el guiso",
+    "fix": "Mucho tiempo o hervor fuerte. Al final y fuego suave."
+   },
+   {
+    "p": "Piel gomosa",
+    "fix": "Sin tostar. Marca por la piel."
+   },
+   {
+    "p": "Caldo turbio",
+    "fix": "Hervor fuerte. Fuego suave."
+   }
+  ],
+  "history": "La cherna es un pescado muy ligado a la cocina canaria; el mero ha sido siempre un pescado de prestigio en el Mediterráneo.",
+  "uses": [
+   "Guisos de pescado",
+   "Horno",
+   "Plancha",
+   "Caldos"
+  ],
+  "keep": "Entero o en lomos, 2 días a 0–2 °C sobre hielo.",
+  "pro": "Lomos para plancha, recortes para guiso y cabeza para caldo.",
+  "related": [
+   "pescado-de-roca",
+   "caldero",
+   "fumet",
+   "despiece-de-pescados-grandes",
+   "colageno-y-gelatina",
+   "mojo-verde"
+  ]
+ },
+ {
+  "id": "corvina",
+  "name": "Corvina",
+  "name_en": "Meagre",
+  "cat": "producto",
+  "group": "Pescado y marisco",
+  "aka": [
+   "corvina",
+   "corvina de crianza",
+   "verrugato",
+   "meagre"
+  ],
+  "summary": "Pescado blanco grande de carne firme, jugosa y de sabor suave; da lomos gruesos para plancha, horno y crudo tratado.",
+  "what": "La corvina es un pescado grande de carne blanca, firme y jugosa, de sabor delicado y con poca espina. Se encuentra salvaje y, cada vez más, de crianza, en piezas de 2 a 10 kg. Da lomos gruesos que se marcan bien con la piel, y es un pescado muy usado en cebiches en Sudamérica.\n\nComo pescado grande, se despieza en lomos. Para crudo, siempre congelado antes o ya tratado.",
+  "method": [
+   "Escama y despieza en lomos; retira las espinas finas.",
+   "Porciona en raciones con piel.",
+   "Marca por la piel en sartén muy caliente y termina a fuego medio o en horno.",
+   "Para cebiche, usa la pieza congelada antes y corta en dados.",
+   "Cabeza y espinas, para caldo."
+  ],
+  "ratios": [
+   {
+    "use": "Lomo con piel",
+    "ratio": "4–5 minutos por la piel y 1 por la carne",
+    "note": "Según grosor."
+   },
+   {
+    "use": "Punto",
+    "ratio": "50–52 °C en el centro",
+    "note": "Congelado antes si queda por debajo de 60 °C."
+   },
+   {
+    "use": "Ración",
+    "ratio": "170–200 g limpio",
+    "note": ""
+   },
+   {
+    "use": "Rendimiento",
+    "ratio": "45–50 % en lomo limpio",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "ceviche-y-crudos",
+    "name": "Cebiche",
+    "note": "Congelada antes."
+   },
+   {
+    "id": "dorada-y-lubina",
+    "name": "Lubina",
+    "note": "Otro pescado blanco."
+   },
+   {
+    "id": "fileteado-de-pescado",
+    "name": "Fileteado",
+    "note": "En lomos."
+   },
+   {
+    "id": "plancha-y-sarten",
+    "name": "Plancha",
+    "note": "Por la piel."
+   }
+  ],
+  "keys": [
+   "Lomos gruesos con piel.",
+   "Marcar por la piel.",
+   "Pescado que queda por debajo de 60 °C en el centro: congelado antes (-20 °C al menos 24 horas en toda la pieza) o ya tratado, por el anisakis.",
+   "Sabor suave: aliños con carácter.",
+   "Cabeza y espinas al caldo."
+  ],
+  "errors": [
+   {
+    "p": "Piel blanda",
+    "fix": "Sartén fría o pescado húmedo. Seca y calienta."
+   },
+   {
+    "p": "Carne seca",
+    "fix": "Pasada. Saca a 50–52 °C."
+   },
+   {
+    "p": "Lomo que se curva",
+    "fix": "Piel tensa. Presiona al empezar o haz cortes finos."
+   }
+  ],
+  "history": "La corvina es un pescado tradicional del Atlántico sur peninsular y del Mediterráneo, y es la base de muchos cebiches de Perú.",
+  "uses": [
+   "Plancha",
+   "Horno",
+   "Cebiche",
+   "Caldos"
+  ],
+  "keep": "Lomos, 2 días a 0–2 °C; congela bien.",
+  "pro": "Despieza al recibir; lomo para plancha y colas para crudo.",
+  "related": [
+   "ceviche-y-crudos",
+   "dorada-y-lubina",
+   "fileteado-de-pescado",
+   "plancha-y-sarten",
+   "despiece-de-pescados-grandes",
+   "fumet"
+  ]
+ },
+ {
+  "id": "necora-y-cangrejos",
+  "name": "Nécora y cangrejos",
+  "name_en": "Velvet crab and crabs",
+  "cat": "producto",
+  "group": "Pescado y marisco",
+  "aka": [
+   "nécora",
+   "cangrejo verde",
+   "cangrejo de mar",
+   "cangrejo azul",
+   "cangrejo de río",
+   "velvet crab"
+  ],
+  "summary": "Cangrejos pequeños y medianos de carne dulce y mucho sabor; cocidos para comer, o machacados para caldos, arroces y sopas.",
+  "what": "La nécora es un cangrejo de las costas gallegas y cantábricas, de caparazón aterciopelado, con carne dulce y corales muy sabrosos; se come cocida. Los cangrejos pequeños de costa (verde, de roca) apenas tienen carne pero dan caldos y arroces potentes. El cangrejo azul, especie invasora en el Mediterráneo y el Delta del Ebro, se usa cada vez más en cocina. El cangrejo de río se guisa con salsa.\n\nSe compran vivos y se cocinan el mismo día. Ver [[coccion-de-marisco]] y [[buey-de-mar-y-centollo]].",
+  "method": [
+   "Compra vivos, que pesen y se muevan; guarda en frío tapados con un paño húmedo.",
+   "Para comer, cuécelos en agua de mar o con 35 g de sal por litro.",
+   "Enfría en agua con hielo y sal y deja escurrir boca abajo.",
+   "Para caldo, trocéalos y tuéstalos en aceite antes de mojar.",
+   "Machaca los restos para sacar todo el sabor."
+  ],
+  "ratios": [
+   {
+    "use": "Cocción de nécora",
+    "ratio": "6–8 minutos desde el hervor",
+    "note": "Piezas medianas."
+   },
+   {
+    "use": "Agua de cocción",
+    "ratio": "35 g de sal por litro",
+    "note": "Como el mar."
+   },
+   {
+    "use": "Caldo",
+    "ratio": "1 kg de cangrejos por 2 l",
+    "note": "Tostados antes."
+   },
+   {
+    "use": "Ración de nécoras",
+    "ratio": "3–4 piezas",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "buey-de-mar-y-centollo",
+    "name": "Buey y centollo",
+    "note": "Los grandes."
+   },
+   {
+    "id": "coccion-de-marisco",
+    "name": "Cocción",
+    "note": "Tiempos y sal."
+   },
+   {
+    "id": "fondo-de-marisco",
+    "name": "Fondo de marisco",
+    "note": "Con los pequeños."
+   },
+   {
+    "id": "bisque",
+    "name": "Bisque",
+    "note": "Sopa de cangrejo."
+   }
+  ],
+  "keys": [
+   "Siempre vivos y cocinados el mismo día.",
+   "Agua salada como el mar.",
+   "Pequeños: al caldo y al arroz.",
+   "Tostar antes de mojar.",
+   "Alérgeno: crustáceos."
+  ],
+  "errors": [
+   {
+    "p": "Carne aguada",
+    "fix": "Cangrejos que no pesan. Elige pesados."
+   },
+   {
+    "p": "Caldo plano",
+    "fix": "Sin tostar ni machacar. Tuesta y aplasta."
+   },
+   {
+    "p": "Patas que se sueltan",
+    "fix": "Agua fría al empezar. Echa al agua hirviendo."
+   }
+  ],
+  "history": "La nécora es uno de los mariscos más populares de Galicia; el cangrejo azul ha llegado al Mediterráneo en los últimos años y se ha incorporado a la cocina local.",
+  "uses": [
+   "Mariscadas",
+   "Caldos y arroces",
+   "Sopas",
+   "Salsas"
+  ],
+  "keep": "Vivos, 1 día a 4–8 °C tapados; cocidos, 2 días en frío.",
+  "pro": "Pequeños congelados en lotes para caldos.",
+  "related": [
+   "buey-de-mar-y-centollo",
+   "coccion-de-marisco",
+   "fondo-de-marisco",
+   "bisque",
+   "limpiar-y-abrir-marisco",
+   "arroces"
+  ]
+ },
+ {
+  "id": "moluscos-de-roca",
+  "name": "Lapas, bígaros y cañaíllas",
+  "name_en": "Limpets, winkles and murex",
+  "cat": "producto",
+  "group": "Pescado y marisco",
+  "aka": [
+   "lapas",
+   "bígaros",
+   "cañaíllas",
+   "caracolillos de mar",
+   "burgados",
+   "lapas a la plancha"
+  ],
+  "summary": "Pequeños moluscos de concha que se cuecen, se pinchan y se comen con un palillo, o se asan a la plancha con mojo.",
+  "what": "Las lapas, los bígaros, las cañaíllas y los burgados son moluscos de roca y de playa de sabor marino intenso. Los bígaros y las cañaíllas se cuecen en agua con sal y laurel y se sacan con un palillo; las lapas se hacen a la plancha boca arriba con mojo verde, muy típicas de Canarias. Su recolección y venta están reguladas en muchas zonas y conviene comprarlos en lonja o pescadería.\n\nSe purgan en agua de mar antes de cocinar para que suelten arena.",
+  "method": [
+   "Compra vivos, de origen controlado; descarta los rotos o vacíos.",
+   "Purga en agua con sal 1–2 horas y enjuaga.",
+   "Bígaros y cañaíllas: al agua hirviendo con sal y laurel 3–5 minutos.",
+   "Lapas: a la plancha boca arriba con mojo hasta que se despeguen.",
+   "Sirve con palillos o pinchos."
+  ],
+  "ratios": [
+   {
+    "use": "Bígaros",
+    "ratio": "3–4 minutos desde el hervor",
+    "note": ""
+   },
+   {
+    "use": "Cañaíllas",
+    "ratio": "5–6 minutos",
+    "note": ""
+   },
+   {
+    "use": "Lapas a la plancha",
+    "ratio": "2–3 minutos",
+    "note": "Boca arriba."
+   },
+   {
+    "use": "Ración de aperitivo",
+    "ratio": "150 g",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "mojo-verde",
+    "name": "Mojo verde",
+    "note": "Para las lapas."
+   },
+   {
+    "id": "mejillon-y-almeja",
+    "name": "Mejillón y almeja",
+    "note": "Otros moluscos."
+   },
+   {
+    "id": "coccion-de-marisco",
+    "name": "Cocción",
+    "note": "Tiempos."
+   },
+   {
+    "id": "caracoles",
+    "name": "Caracoles",
+    "note": "Técnica parecida de tierra."
+   }
+  ],
+  "keys": [
+   "Vivos y de origen controlado.",
+   "Purgar la arena.",
+   "Cocciones cortas: se endurecen.",
+   "Recolección regulada en muchas zonas.",
+   "Alérgeno: moluscos."
+  ],
+  "errors": [
+   {
+    "p": "Arena",
+    "fix": "Sin purgar. Purga 1–2 horas."
+   },
+   {
+    "p": "Carne dura",
+    "fix": "Cocción larga. Acorta."
+   },
+   {
+    "p": "No salen de la concha",
+    "fix": "Poco cocidos. 1 minuto más."
+   }
+  ],
+  "history": "Las lapas con mojo son un clásico de Canarias, y los bígaros y las cañaíllas son tapas tradicionales en el norte y en Andalucía.",
+  "uses": [
+   "Aperitivos",
+   "Tapas",
+   "Arroces marineros"
+  ],
+  "keep": "Vivos, 1–2 días a 4–8 °C tapados con paño húmedo; cocidos, 1 día.",
+  "pro": "Cuece en tandas pequeñas y sirve templados.",
+  "related": [
+   "mojo-verde",
+   "mejillon-y-almeja",
+   "coccion-de-marisco",
+   "caracoles",
+   "aperitivos-y-snacks",
+   "ostras-y-percebes"
+  ]
+ },
+ {
+  "id": "galeras",
+  "name": "Galeras",
+  "name_en": "Mantis shrimp",
+  "cat": "producto",
+  "group": "Pescado y marisco",
+  "aka": [
+   "galeras",
+   "galera",
+   "galera de mar",
+   "mantis",
+   "squilla"
+  ],
+  "summary": "Crustáceo mediterráneo de mucho sabor y poca carne; cocido, a la plancha, en arroces y en caldos.",
+  "what": "La galera es un crustáceo del Mediterráneo, plano y con el cuerpo segmentado, de sabor dulce y marino muy intenso pero con poca carne y difícil de pelar. Es habitual en Valencia, Cataluña y Baleares, en arroces, caldos y sopas, o simplemente cocida o a la plancha. Las de invierno, más llenas y con huevas, son las más apreciadas.\n\nSe pelan cortando los bordes con tijera y levantando la cáscara de arriba.",
+  "method": [
+   "Elige galeras vivas o muy frescas, pesadas y de color vivo.",
+   "Cocidas: al agua hirviendo con sal 2–3 minutos.",
+   "Plancha: con sal gruesa y aceite, 2 minutos por lado.",
+   "En arroz o caldo, añádelas enteras al fondo.",
+   "Para pelar, corta los bordes con tijera y levanta la cáscara."
+  ],
+  "ratios": [
+   {
+    "use": "Cocción",
+    "ratio": "2–3 minutos desde el hervor",
+    "note": ""
+   },
+   {
+    "use": "Agua",
+    "ratio": "35 g de sal por litro",
+    "note": ""
+   },
+   {
+    "use": "Plancha",
+    "ratio": "2 minutos por lado",
+    "note": ""
+   },
+   {
+    "use": "Arroz",
+    "ratio": "2–3 por ración",
+    "note": "Sabor más que carne."
+   }
+  ],
+  "variants": [
+   {
+    "id": "arroces",
+    "name": "Arroces",
+    "note": "Al fondo."
+   },
+   {
+    "id": "fondo-de-marisco",
+    "name": "Caldo",
+    "note": "Muy sabroso."
+   },
+   {
+    "id": "gamba-roja",
+    "name": "Gamba roja",
+    "note": "Otro marisco del Mediterráneo."
+   },
+   {
+    "id": "coccion-de-marisco",
+    "name": "Cocción",
+    "note": "Tiempos."
+   }
+  ],
+  "keys": [
+   "Sabor intenso, poca carne.",
+   "Mejores en invierno.",
+   "Cocciones muy cortas.",
+   "Pelar con tijera.",
+   "Alérgeno: crustáceos."
+  ],
+  "errors": [
+   {
+    "p": "Carne pastosa",
+    "fix": "Galeras viejas. Compra vivas."
+   },
+   {
+    "p": "Difíciles de pelar",
+    "fix": "Sin tijera. Corta los bordes."
+   },
+   {
+    "p": "Arroz sin sabor",
+    "fix": "Pocas galeras. Úsalas también en el caldo."
+   }
+  ],
+  "history": "Las galeras son un marisco tradicional de la costa mediterránea española, en particular de Valencia y Cataluña.",
+  "uses": [
+   "Arroces",
+   "Caldos y sopas",
+   "Tapas"
+  ],
+  "keep": "Vivas o frescas, 1 día a 0–2 °C; cocidas, 1–2 días.",
+  "pro": "Cuece al momento; las de menos calidad, al caldo.",
+  "related": [
+   "arroces",
+   "fondo-de-marisco",
+   "gamba-roja",
+   "coccion-de-marisco",
+   "caldo-de-marisco-expres",
+   "all-i-pebre"
+  ]
+ },
+ {
+  "id": "cardo-y-borraja",
+  "name": "Cardo y borraja",
+  "name_en": "Cardoon and borage",
+  "cat": "producto",
+  "group": "Huerta",
+  "aka": [
+   "cardo",
+   "borraja",
+   "cardo con almendras",
+   "borraja con patatas",
+   "pencas"
+  ],
+  "summary": "Dos verduras de invierno del valle del Ebro: el cardo, de pencas carnosas que se pelan y cuecen; la borraja, de tallos y hojas con sabor fresco.",
+  "what": "El cardo es pariente de la alcachofa: se comen sus pencas, que se pelan para quitar las fibras y se cuecen hasta que estén tiernas; se oxidan enseguida, como la [[alcachofas|alcachofa]]. En Navarra y Aragón se sirve en Navidad con salsa de almendras. La borraja, de tallos peludos y sabor fresco que recuerda al pepino, se cuece con patata y se aliña con aceite; sus flores azules son comestibles.\n\nAmbas se venden también cocidas en conserva.",
+  "method": [
+   "Cardo: separa las pencas, quita hilos y fibras con un cuchillo y corta en trozos.",
+   "Pon los trozos en agua con limón o harina para que no se oxiden.",
+   "Cuece el cardo en agua con sal y un poco de harina 45–60 minutos, hasta tierno.",
+   "Borraja: limpia los tallos quitando las hojas duras y la piel con pelillos; trocea.",
+   "Cuece la borraja con patata 15–20 minutos y aliña con aceite de oliva."
+  ],
+  "ratios": [
+   {
+    "use": "Cardo",
+    "ratio": "45–60 minutos de cocción",
+    "note": "Hasta tierno."
+   },
+   {
+    "use": "Agua blanca",
+    "ratio": "20 g de harina por litro",
+    "note": "Contra la oxidación."
+   },
+   {
+    "use": "Borraja con patata",
+    "ratio": "15–20 minutos",
+    "note": ""
+   },
+   {
+    "use": "Ración",
+    "ratio": "200–250 g cocido",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "alcachofas",
+    "name": "Alcachofa",
+    "note": "La pariente."
+   },
+   {
+    "id": "flores-comestibles",
+    "name": "Flor de borraja",
+    "note": "Para decorar."
+   },
+   {
+    "id": "almendra",
+    "name": "Salsa de almendras",
+    "note": "Para el cardo."
+   },
+   {
+    "id": "guarniciones-de-patata",
+    "name": "Con patata",
+    "note": "Borraja."
+   }
+  ],
+  "keys": [
+   "Pelar bien las fibras del cardo.",
+   "Agua ácida o con harina contra la oxidación.",
+   "Cardo: cocción larga.",
+   "Borraja: piel con pelillos fuera.",
+   "Verduras de invierno."
+  ],
+  "errors": [
+   {
+    "p": "Cardo negro",
+    "fix": "Oxidado. Agua con limón o harina."
+   },
+   {
+    "p": "Cardo fibroso",
+    "fix": "Mal pelado. Quita todos los hilos."
+   },
+   {
+    "p": "Cardo amargo",
+    "fix": "Pencas verdes. Usa las blancas y cuece más."
+   }
+  ],
+  "history": "El cardo y la borraja son verduras tradicionales de las huertas del valle del Ebro; el cardo es plato de Nochebuena en Navarra y Aragón.",
+  "uses": [
+   "Guarniciones",
+   "Verdura de invierno",
+   "Con almejas o jamón"
+  ],
+  "keep": "Crudo, 4–5 días en frío envuelto; cocido, 3 días en su agua.",
+  "pro": "Cuece en tanda y guarda en su agua.",
+  "related": [
+   "alcachofas",
+   "flores-comestibles",
+   "almendra",
+   "guarniciones-de-patata",
+   "oxidacion-y-pardeamiento",
+   "menestra-de-verduras"
+  ]
+ },
+ {
+  "id": "verduras-asiaticas",
+  "name": "Verduras asiáticas",
+  "name_en": "Asian greens",
+  "cat": "producto",
+  "group": "Huerta",
+  "aka": [
+   "pak choi",
+   "bok choy",
+   "col china",
+   "gai lan",
+   "brócoli chino",
+   "mizuna",
+   "tatsoi",
+   "daikon"
+  ],
+  "summary": "Coles de hoja, brotes y raíces de Asia: pak choi, col china, gai lan, mizuna y daikon, para wok, vapor, sopas y encurtidos.",
+  "what": "Las verduras asiáticas de la familia de las coles se han hecho habituales: el pak choi, de pencas blancas jugosas y hoja verde; la col china, alargada y tierna, base del [[kimchi]]; el gai lan o brócoli chino, de tallos gruesos y algo amargos; la mizuna y el tatsoi, hojas para ensalada o salteados; y el daikon, un rábano blanco grande y suave.\n\nSe cocinan muy poco: al wok, al vapor, escaldadas con salsa de ostras o en sopas.",
+  "method": [
+   "Lava bien entre las pencas, donde queda tierra.",
+   "Separa tallos y hojas: los tallos necesitan algo más de tiempo.",
+   "Al wok: tallos 1–2 minutos, hojas 30 segundos, con ajo y un chorrito de caldo.",
+   "Escaldado: 1–2 minutos en agua con sal y aceite, y aliño de soja o salsa de ostras.",
+   "Daikon: crudo rallado, encurtido o cocido en caldos."
+  ],
+  "ratios": [
+   {
+    "use": "Pak choi al wok",
+    "ratio": "2–3 minutos en total",
+    "note": ""
+   },
+   {
+    "use": "Gai lan escaldado",
+    "ratio": "2 minutos",
+    "note": "Tallos tiernos."
+   },
+   {
+    "use": "Ración de guarnición",
+    "ratio": "150 g",
+    "note": ""
+   },
+   {
+    "use": "Daikon en caldo",
+    "ratio": "20–30 minutos",
+    "note": "Transparente."
+   }
+  ],
+  "variants": [
+   {
+    "id": "salteado-y-wok",
+    "name": "Wok",
+    "note": "La técnica."
+   },
+   {
+    "id": "coles-y-brasicas",
+    "name": "Coles",
+    "note": "La familia."
+   },
+   {
+    "id": "kimchi",
+    "name": "Kimchi",
+    "note": "Con col china."
+   },
+   {
+    "id": "verduras-al-vapor",
+    "name": "Vapor",
+    "note": "Suave."
+   }
+  ],
+  "keys": [
+   "Cocciones muy cortas.",
+   "Tallos antes que hojas.",
+   "Lavar bien entre las pencas.",
+   "Fuego fuerte en el wok.",
+   "Salsas sencillas: ajo, soja, ostras."
+  ],
+  "errors": [
+   {
+    "p": "Verdura aguada",
+    "fix": "Wok poco caliente o lleno. Tandas pequeñas."
+   },
+   {
+    "p": "Tallos crudos y hojas pasadas",
+    "fix": "Todo a la vez. Separa tiempos."
+   },
+   {
+    "p": "Tierra",
+    "fix": "Lavado rápido. Abre las pencas."
+   }
+  ],
+  "history": "Estas verduras son básicas en las cocinas de China, Japón y Corea, y hoy se cultivan también en Europa.",
+  "uses": [
+   "Salteados",
+   "Sopas y ramen",
+   "Guarniciones",
+   "Encurtidos"
+  ],
+  "keep": "4–5 días en frío en bolsa perforada.",
+  "pro": "Lavadas y separadas en tallo y hoja antes del servicio.",
+  "related": [
+   "salteado-y-wok",
+   "coles-y-brasicas",
+   "kimchi",
+   "verduras-al-vapor",
+   "ramen",
+   "remolacha-y-raices"
+  ]
+ },
+ {
+  "id": "datiles-y-frutas-secas",
+  "name": "Dátiles, orejones y frutas secas",
+  "name_en": "Dates and dried fruit",
+  "cat": "producto",
+  "group": "Fruta",
+  "aka": [
+   "dátiles",
+   "orejones",
+   "ciruelas pasas",
+   "higos secos",
+   "fruta deshidratada",
+   "dátil medjool"
+  ],
+  "summary": "Frutas secadas al sol o al aire, muy dulces y concentradas: dátiles, orejones, ciruelas e higos, para guisos, rellenos, postres y aperitivos.",
+  "what": "Los dátiles son el fruto de la palmera datilera, dulces, carnosos y con notas de caramelo; los hay blandos (como el medjool) y semisecos. Los orejones son albaricoques secos, ácidos y dulces; las ciruelas pasas dan cuerpo y oscuridad a los guisos; los higos secos, ver [[higos-y-algarroba]]. Las pasas tienen su ficha en [[uva-y-pasas]].\n\nEn cocina salada equilibran guisos de carne y tajines; en dulce, endulzan sin azúcar añadido y dan textura.",
+  "method": [
+   "Elige frutas flexibles, brillantes y sin azúcar cristalizado en la superficie.",
+   "Deshuesa los dátiles con un corte a lo largo.",
+   "Hidrata en agua tibia, té o vino 20–30 minutos si están muy secas.",
+   "En guisos, añádelas en los últimos 20–30 minutos.",
+   "Tritura dátiles hidratados para una pasta dulce que sustituye al azúcar."
+  ],
+  "ratios": [
+   {
+    "use": "Hidratación",
+    "ratio": "20–30 minutos en líquido tibio",
+    "note": ""
+   },
+   {
+    "use": "Pasta de dátil",
+    "ratio": "200 g de dátil y 100 ml de agua",
+    "note": "Triturada."
+   },
+   {
+    "use": "En guiso de carne",
+    "ratio": "50 g por ración",
+    "note": ""
+   },
+   {
+    "use": "Dátiles rellenos",
+    "ratio": "2–3 por ración",
+    "note": "Aperitivo."
+   }
+  ],
+  "variants": [
+   {
+    "id": "tajin",
+    "name": "Tajín",
+    "note": "Con ciruelas o dátiles."
+   },
+   {
+    "id": "uva-y-pasas",
+    "name": "Pasas",
+    "note": "Ficha propia."
+   },
+   {
+    "id": "higos-y-algarroba",
+    "name": "Higos",
+    "note": "Secos."
+   },
+   {
+    "id": "pan-de-higo-y-dulces-de-fruta-seca",
+    "name": "Dulces de fruta seca",
+    "note": "Postres."
+   }
+  ],
+  "keys": [
+   "Dulzor concentrado: dosificar.",
+   "Hidratar si están muy secas.",
+   "En guiso, al final.",
+   "Dátil triturado como endulzante.",
+   "Algunos orejones llevan sulfitos: alérgeno a declarar."
+  ],
+  "errors": [
+   {
+    "p": "Guiso empalagoso",
+    "fix": "Mucha fruta. Equilibra con ácido."
+   },
+   {
+    "p": "Fruta que se deshace",
+    "fix": "Añadida pronto. Al final."
+   },
+   {
+    "p": "Fruta dura",
+    "fix": "Sin hidratar. Remoja."
+   }
+  ],
+  "history": "La fruta seca es una de las formas de conservación más antiguas; los dátiles son base de la alimentación en Oriente Próximo y el norte de África.",
+  "uses": [
+   "Tajines y guisos",
+   "Postres",
+   "Aperitivos rellenos",
+   "Panes y granolas"
+  ],
+  "keep": "Meses en lugar fresco y cerrado; los dátiles blandos, en frío.",
+  "pro": "Pasta de dátil en tanda; 1 semana en frío.",
+  "related": [
+   "tajin",
+   "uva-y-pasas",
+   "higos-y-algarroba",
+   "pan-de-higo-y-dulces-de-fruta-seca",
+   "frutos-secos",
+   "miel-y-azucares"
+  ]
+ },
+ {
+  "id": "quesos-curados-de-oveja",
+  "name": "Quesos curados de oveja",
+  "name_en": "Aged sheep's milk cheeses",
+  "cat": "producto",
+  "group": "Lácteos",
+  "aka": [
+   "queso manchego",
+   "idiazabal",
+   "queso zamorano",
+   "roncal",
+   "queso de oveja curado",
+   "queso viejo"
+  ],
+  "summary": "Quesos de pasta prensada de leche de oveja, de sabor intenso y graso que gana con la curación: manchego, idiazabal, zamorano, roncal.",
+  "what": "España tiene una larga tradición de quesos de oveja de pasta prensada: el manchego, de La Mancha; el idiazabal, del País Vasco y Navarra, a menudo ahumado; el zamorano; el roncal, del Pirineo navarro. Según la curación pasan de semicurados, suaves y elásticos, a curados y viejos, secos, intensos y con cristales.\n\nSe sirven a temperatura ambiente en cuñas finas, rallados sobre platos o fundidos en salsas. Los de leche cruda deben madurar al menos 60 días; embarazadas, mejor los pasteurizados.",
+  "method": [
+   "Saca el queso del frío 30–60 minutos antes de servirlo.",
+   "Corta en cuñas finas desde el centro hacia la corteza.",
+   "Retira la corteza si no es comestible (de cera o tratada).",
+   "Ralla los viejos sobre pasta, verduras o arroces.",
+   "En salsas, fúndelos a fuego suave sin hervir."
+  ],
+  "ratios": [
+   {
+    "use": "Servicio",
+    "ratio": "16–18 °C",
+    "note": "30–60 minutos fuera del frío."
+   },
+   {
+    "use": "Semicurado",
+    "ratio": "2–4 meses de curación",
+    "note": "Orientativo."
+   },
+   {
+    "use": "Curado y viejo",
+    "ratio": "6–12 meses o más",
+    "note": "Orientativo."
+   },
+   {
+    "use": "Ración en tabla",
+    "ratio": "40–60 g",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "quesos-en-cocina",
+    "name": "Queso en cocina",
+    "note": "Usos."
+   },
+   {
+    "id": "quesos-de-las-islas",
+    "name": "Quesos de las islas",
+    "note": "Otros curados."
+   },
+   {
+    "id": "salsas-de-queso",
+    "name": "Salsas de queso",
+    "note": "Fundidos."
+   },
+   {
+    "id": "granada-y-membrillo",
+    "name": "Con membrillo",
+    "note": "Clásico."
+   }
+  ],
+  "keys": [
+   "Servir a temperatura ambiente.",
+   "Cuñas finas.",
+   "Curación: más tiempo, más intensidad.",
+   "Leche cruda: al menos 60 días de maduración.",
+   "Alérgeno: leche."
+  ],
+  "errors": [
+   {
+    "p": "Sabor apagado",
+    "fix": "Servido frío. Atempera."
+   },
+   {
+    "p": "Queso reseco",
+    "fix": "Sin envolver. Papel encerado y luego film flojo."
+   },
+   {
+    "p": "Salsa granulosa",
+    "fix": "Hervido. Fuego suave."
+   }
+  ],
+  "history": "Los quesos de oveja de pasta prensada están ligados al pastoreo de la Meseta, el País Vasco y el Pirineo, y varios tienen denominación de origen.",
+  "uses": [
+   "Tablas y aperitivos",
+   "Rallados",
+   "Salsas",
+   "Postres con fruta"
+  ],
+  "keep": "Semanas en frío envuelto en papel encerado; cortado, 2–3 semanas.",
+  "pro": "Cuñas cortadas al momento; atempera lo de cada servicio.",
+  "related": [
+   "quesos-en-cocina",
+   "quesos-de-las-islas",
+   "salsas-de-queso",
+   "granada-y-membrillo",
+   "quesos-azules",
+   "catas-y-notas"
+  ]
+ },
+ {
+  "id": "levaduras-y-gasificantes",
+  "name": "Levaduras e impulsores",
+  "name_en": "Yeasts and leaveners",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "levadura fresca",
+   "levadura seca",
+   "levadura química",
+   "polvo de hornear",
+   "bicarbonato",
+   "gasificantes",
+   "impulsor"
+  ],
+  "summary": "Lo que hace subir las masas: levaduras vivas (fresca y seca) que fermentan, e impulsores químicos que sueltan gas con el calor o el ácido.",
+  "what": "Hay dos familias. Las levaduras biológicas son hongos vivos que comen azúcares y sueltan gas y aromas: la fresca, en bloque, perecedera; la seca activa, que se hidrata antes; y la seca instantánea, que se mezcla directamente con la harina. La [[masa-madre]] es un cultivo propio de levaduras y bacterias.\n\nLos impulsores químicos no fermentan: el bicarbonato necesita un ácido (yogur, suero, limón) para soltar gas; la levadura química (polvo de hornear) ya lleva el ácido y reacciona con la humedad y el calor. Se usan en bizcochos, galletas y masas rápidas.",
+  "method": [
+   "Levadura fresca: desmenuza y disuelve en parte del líquido templado.",
+   "Seca instantánea: mezcla directamente con la harina, lejos de la sal.",
+   "Bicarbonato: combina con un ingrediente ácido y hornea enseguida.",
+   "Levadura química: tamiza con la harina para repartirla bien.",
+   "Comprueba fechas: las levaduras pierden fuerza con el tiempo."
+  ],
+  "ratios": [
+   {
+    "use": "Fresca por kg de harina",
+    "ratio": "20–30 g",
+    "note": "Masas directas."
+   },
+   {
+    "use": "Seca instantánea",
+    "ratio": "1/3 del peso de la fresca",
+    "note": "7–10 g por kg."
+   },
+   {
+    "use": "Levadura química",
+    "ratio": "10–16 g por 500 g de harina",
+    "note": ""
+   },
+   {
+    "use": "Bicarbonato",
+    "ratio": "2–5 g por 500 g de harina",
+    "note": "Con ácido."
+   }
+  ],
+  "variants": [
+   {
+    "id": "masa-madre",
+    "name": "Masa madre",
+    "note": "Fermentación propia."
+   },
+   {
+    "id": "panes-rapidos-sin-levadura",
+    "name": "Panes rápidos",
+    "note": "Con impulsor químico."
+   },
+   {
+    "id": "pan-y-focaccia",
+    "name": "Pan",
+    "note": "Con levadura."
+   },
+   {
+    "id": "bizcochos",
+    "name": "Bizcochos",
+    "note": "Con impulsor."
+   }
+  ],
+  "keys": [
+   "Levadura viva: se muere con calor fuerte.",
+   "Sal y levadura, separadas al mezclar.",
+   "Bicarbonato siempre con ácido.",
+   "Medir con precisión: el exceso amarga.",
+   "Masas con impulsor químico: al horno enseguida."
+  ],
+  "errors": [
+   {
+    "p": "Masa que no sube",
+    "fix": "Levadura muerta o líquido caliente. Comprueba y templa a 25–30 °C."
+   },
+   {
+    "p": "Sabor metálico o jabonoso",
+    "fix": "Exceso de bicarbonato. Ajusta y añade ácido."
+   },
+   {
+    "p": "Bizcocho que sube y baja",
+    "fix": "Exceso de impulsor. Reduce."
+   }
+  ],
+  "history": "La levadura de panadería se aisló y comercializó en el siglo XIX; los impulsores químicos se difundieron en la misma época.",
+  "uses": [
+   "Panes y bollería",
+   "Bizcochos y galletas",
+   "Masas fritas",
+   "Rebozados ligeros"
+  ],
+  "keep": "Fresca, 2 semanas en frío; seca, meses cerrada; química, en lugar seco.",
+  "pro": "Pesa siempre; anota el lote y la fecha de la levadura fresca.",
+  "related": [
+   "masa-madre",
+   "panes-rapidos-sin-levadura",
+   "pan-y-focaccia",
+   "bizcochos",
+   "gluten-y-reposo-de-masas",
+   "precision-en-pasteleria"
+  ]
+ },
+ {
+  "id": "conservas-de-pescado-y-marisco",
+  "name": "Conservas de pescado y marisco",
+  "name_en": "Tinned fish and seafood",
+  "cat": "producto",
+  "group": "Despensa",
+  "aka": [
+   "conservas",
+   "latas",
+   "berberechos en lata",
+   "mejillones en escabeche",
+   "ventresca en lata",
+   "sardinillas",
+   "anchoas en aceite"
+  ],
+  "summary": "Pescados y mariscos esterilizados en lata o tarro, en aceite, escabeche o al natural; producto de despensa con calidad muy alta en España.",
+  "what": "Las conservas de pescado y marisco son una tradición fuerte en Galicia, Cantabria y el País Vasco: atún y bonito, ventresca, sardinillas, mejillones en escabeche, berberechos y almejas al natural, navajas, zamburiñas, pulpo y calamares. Se esterilizan en el envase y duran años sin frío; algunas, como las sardinas en aceite, mejoran con el tiempo.\n\nLas anchoas en aceite no son una conserva esterilizada sino una semiconserva: necesitan frío. Las latas hinchadas, abombadas, muy abolladas, oxidadas o que salpican al abrir se desechan sin probar.",
+  "method": [
+   "Revisa cada lata: descarta las hinchadas, abolladas en el cierre u oxidadas.",
+   "Abre y huele: sin burbujas ni olores raros.",
+   "Sírvelas a temperatura ambiente, en su lata o emplatadas, con su jugo.",
+   "Aprovecha el aceite o el escabeche para aliñar.",
+   "Pasa lo sobrante a un recipiente cerrado y guárdalo en frío."
+  ],
+  "ratios": [
+   {
+    "use": "Ración de aperitivo",
+    "ratio": "1 lata para 2",
+    "note": ""
+   },
+   {
+    "use": "Abierta",
+    "ratio": "2–3 días en frío",
+    "note": "Fuera de la lata."
+   },
+   {
+    "use": "Semiconservas",
+    "ratio": "Siempre en frío, 4–8 °C",
+    "note": "Anchoas."
+   },
+   {
+    "use": "Aceite de la lata",
+    "ratio": "Para aliños",
+    "note": "Mucho sabor."
+   }
+  ],
+  "variants": [
+   {
+    "id": "salazones-y-huevas",
+    "name": "Salazones",
+    "note": "Anchoas y mojama."
+   },
+   {
+    "id": "escabeche",
+    "name": "Escabeche",
+    "note": "Técnica casera."
+   },
+   {
+    "id": "conservas-en-aceite",
+    "name": "Conservas en aceite",
+    "note": "Técnica casera."
+   },
+   {
+    "id": "aperitivos-y-snacks",
+    "name": "Aperitivos",
+    "note": "Con patatas y encurtidos."
+   }
+  ],
+  "keys": [
+   "Latas hinchadas o dañadas: a la basura, sin probar.",
+   "Anchoas en aceite: en frío.",
+   "Abierta, a un recipiente y al frío.",
+   "Aprovechar el jugo.",
+   "Alérgenos: pescado, moluscos o crustáceos."
+  ],
+  "errors": [
+   {
+    "p": "Sabor metálico",
+    "fix": "Guardada abierta en la lata. Pasa a otro recipiente."
+   },
+   {
+    "p": "Pescado seco",
+    "fix": "Escurrido del todo. Sirve con su aceite."
+   },
+   {
+    "p": "Anchoas blandas y rancias",
+    "fix": "Fuera del frío. Guárdalas a 4–8 °C."
+   }
+  ],
+  "history": "La industria conservera del norte de España creció desde el siglo XIX y hoy es una de las más reconocidas del mundo.",
+  "uses": [
+   "Aperitivos",
+   "Ensaladas",
+   "Bocadillos y tostas",
+   "Arroces y pastas rápidas"
+  ],
+  "keep": "Cerradas, años en lugar fresco; abiertas, 2–3 días en frío fuera de la lata.",
+  "pro": "Rota el stock por fechas y revisa las latas al recibir.",
+  "related": [
+   "salazones-y-huevas",
+   "escabeche",
+   "conservas-en-aceite",
+   "aperitivos-y-snacks",
+   "atun-rojo-y-bonito",
+   "mejillon-y-almeja"
+  ]
+ },
+ {
+  "id": "morcilla-y-embutidos-de-sangre",
+  "name": "Morcilla y embutidos de sangre",
+  "name_en": "Blood sausage",
+  "cat": "producto",
+  "group": "Carne",
+  "aka": [
+   "morcilla",
+   "morcilla de Burgos",
+   "morcilla de cebolla",
+   "morcilla asturiana",
+   "botifarra negra",
+   "morcilla dulce"
+  ],
+  "summary": "Embutidos cocidos de sangre de cerdo con cebolla, arroz, especias o grasa; cada región tiene la suya, para plancha, guisos y rellenos.",
+  "what": "La morcilla se hace con sangre de cerdo, grasa y especias, y según la región con cebolla, arroz, pan, piñones o calabaza. La de Burgos lleva arroz; la asturiana, cebolla y ahumado, para la fabada; la botifarra negra catalana, más fina; y en Canarias y algunas zonas hay morcillas dulces con pasas y almendras. Casi todas se venden cocidas.\n\nLa de arroz se dora en rodajas; las de cebolla se guisan. Cada pueblo tiene su receta.",
+  "method": [
+   "Pínchala si va a guisarse, para que no reviente.",
+   "Morcilla de arroz: en rodajas gruesas, a la plancha o sartén sin apenas grasa.",
+   "En guisos, añádela al final y cuece a fuego suave.",
+   "Sin piel, desmigada, sirve para rellenos, croquetas y revueltos.",
+   "Calienta bien por dentro si es casera o fresca."
+  ],
+  "ratios": [
+   {
+    "use": "Rodajas para plancha",
+    "ratio": "1,5–2 cm",
+    "note": "Dorada por fuera."
+   },
+   {
+    "use": "En guiso",
+    "ratio": "Últimos 15–20 minutos",
+    "note": "Fuego suave."
+   },
+   {
+    "use": "Morcilla fresca",
+    "ratio": "70 °C o más en el centro",
+    "note": "Bien hecha."
+   },
+   {
+    "use": "Ración de tapa",
+    "ratio": "80–100 g",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "fabada-y-potajes",
+    "name": "Fabada",
+    "note": "Morcilla asturiana."
+   },
+   {
+    "id": "embutidos-caseros-frescos",
+    "name": "Embutidos frescos",
+    "note": "Elaboración."
+   },
+   {
+    "id": "sobrasada-y-embutidos",
+    "name": "Sobrasada",
+    "note": "Otros embutidos."
+   },
+   {
+    "id": "cocido",
+    "name": "Cocido",
+    "note": "En el compango."
+   }
+  ],
+  "keys": [
+   "Pinchar antes de guisar.",
+   "Dorar sin grasa añadida.",
+   "Al guiso, al final.",
+   "Cada región, su morcilla.",
+   "Algunas llevan gluten (pan, harina): revisa la etiqueta."
+  ],
+  "errors": [
+   {
+    "p": "Revienta",
+    "fix": "Hervor fuerte o sin pinchar. Fuego suave y pincha."
+   },
+   {
+    "p": "Se deshace en la sartén",
+    "fix": "Rodajas finas o fuego bajo. Más gruesas y fuego medio-alto."
+   },
+   {
+    "p": "Guiso grasiento",
+    "fix": "Mucho tiempo. Añádela al final."
+   }
+  ],
+  "history": "La morcilla es uno de los productos de la matanza del cerdo en casi toda España, con variedades muy distintas según la región.",
+  "uses": [
+   "Tapas",
+   "Fabadas y cocidos",
+   "Rellenos y croquetas",
+   "Revueltos"
+  ],
+  "keep": "Cocida, 1–2 semanas en frío cerrada; abierta, 4–5 días.",
+  "pro": "Rodajas listas y en frío; dora al pedido.",
+  "related": [
+   "fabada-y-potajes",
+   "embutidos-caseros-frescos",
+   "sobrasada-y-embutidos",
+   "cocido",
+   "cerdo-de-capa-blanca",
+   "alubias-de-tolosa"
+  ]
+ },
+ {
+  "id": "chorizo-y-embutidos-curados",
+  "name": "Chorizo y embutidos curados",
+  "name_en": "Chorizo and cured sausages",
+  "cat": "producto",
+  "group": "Carne",
+  "aka": [
+   "chorizo",
+   "salchichón",
+   "longaniza",
+   "fuet",
+   "chorizo de cocinar",
+   "chorizo ibérico",
+   "lomo embuchado"
+  ],
+  "summary": "Embutidos de cerdo curados: chorizo con pimentón, salchichón y fuet con pimienta, lomo embuchado; para comer tal cual o para guisar.",
+  "what": "El chorizo es carne de cerdo picada con pimentón, ajo y sal, embutida y curada; el pimentón le da color y sabor, y puede ser dulce o picante, ahumado o no. Hay dos usos: el chorizo curado para comer en lonchas, y el chorizo fresco o semicurado «de cocinar», para guisos, lentejas, patatas y huevos. El salchichón y el fuet llevan pimienta en lugar de pimentón; el lomo embuchado es la pieza entera.\n\nLa [[sobrasada-y-embutidos|sobrasada]] es un embutido curado pero untable. Cada región tiene sus chorizos.",
+  "method": [
+   "Curados para comer: lonchas finas, a temperatura ambiente.",
+   "Para guisar: rodajas o trozos, añadidos con el sofrito para que suelten la grasa roja.",
+   "Chorizo fresco: cocínalo siempre bien hecho.",
+   "A la plancha o a la sidra: a fuego medio sin quemar el pimentón.",
+   "Quita la piel si es gruesa o de tripa artificial."
+  ],
+  "ratios": [
+   {
+    "use": "Lonchas",
+    "ratio": "2–3 mm",
+    "note": "Curado."
+   },
+   {
+    "use": "En guiso",
+    "ratio": "40–50 g por ración",
+    "note": ""
+   },
+   {
+    "use": "Chorizo fresco",
+    "ratio": "70 °C o más en el centro",
+    "note": "Siempre hecho."
+   },
+   {
+    "use": "Ración de tabla",
+    "ratio": "50–60 g",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "sobrasada-y-embutidos",
+    "name": "Sobrasada",
+    "note": "Curado untable."
+   },
+   {
+    "id": "jamon-curado",
+    "name": "Jamón",
+    "note": "Otra curación del cerdo."
+   },
+   {
+    "id": "embutidos-caseros-frescos",
+    "name": "Embutidos frescos",
+    "note": "Elaboración."
+   },
+   {
+    "id": "pimenton-y-noras",
+    "name": "Pimentón",
+    "note": "La especia."
+   }
+  ],
+  "keys": [
+   "Curado para comer; fresco para guisar.",
+   "Pimentón sin quemar.",
+   "Fresco: siempre bien hecho.",
+   "Lonchas a temperatura ambiente.",
+   "Revisa alérgenos: algunos llevan lactosa o gluten."
+  ],
+  "errors": [
+   {
+    "p": "Guiso amargo",
+    "fix": "Pimentón quemado. Fuego medio."
+   },
+   {
+    "p": "Demasiada grasa",
+    "fix": "Mucho chorizo. Desgrasa o reduce cantidad."
+   },
+   {
+    "p": "Lonchas sin sabor",
+    "fix": "Servidas frías. Atempera."
+   }
+  ],
+  "history": "El chorizo con pimentón es un embutido muy extendido en España y Portugal desde que el pimentón llegó a la península.",
+  "uses": [
+   "Tablas y aperitivos",
+   "Lentejas, alubias y cocidos",
+   "Huevos y patatas",
+   "Bocadillos"
+  ],
+  "keep": "Curado entero, semanas en lugar fresco y seco; empezado, envuelto en frío.",
+  "pro": "Separa los de cortar de los de cocinar y etiqueta.",
+  "related": [
+   "sobrasada-y-embutidos",
+   "jamon-curado",
+   "embutidos-caseros-frescos",
+   "pimenton-y-noras",
+   "patatas-a-la-riojana",
+   "legumbres"
+  ]
+ },
+ {
+  "id": "cecina",
+  "name": "Cecina",
+  "name_en": "Cecina (cured beef)",
+  "cat": "producto",
+  "group": "Carne",
+  "aka": [
+   "cecina",
+   "cecina de León",
+   "cecina de vaca",
+   "cecina de chivo",
+   "carne curada"
+  ],
+  "summary": "Carne de vacuno salada, ahumada y curada, de sabor intenso y textura firme; se sirve en lonchas finas con aceite.",
+  "what": "La cecina es carne de vacuno (a veces de caballo, chivo o ciervo) salada, ligeramente ahumada con leña de roble o encina y curada al aire durante meses. La más conocida es la de León, hecha con los cuartos traseros de vacas adultas. Tiene un color rojo oscuro, borde tostado y un sabor intenso entre el jamón y el ahumado.\n\nSe sirve en lonchas muy finas con aceite de oliva, sola o en platos fríos y calientes.",
+  "method": [
+   "Retira la parte exterior seca y tostada antes de cortar.",
+   "Corta en lonchas muy finas, a cuchillo o con máquina.",
+   "Sirve a temperatura ambiente con un hilo de aceite de oliva.",
+   "En platos calientes, añádela al final, solo para templar.",
+   "Envuelve la pieza empezada con film en la cara de corte."
+  ],
+  "ratios": [
+   {
+    "use": "Lonchas",
+    "ratio": "1 mm o menos",
+    "note": "Muy finas."
+   },
+   {
+    "use": "Servicio",
+    "ratio": "20–22 °C",
+    "note": "Que brille la grasa."
+   },
+   {
+    "use": "Ración",
+    "ratio": "60–80 g",
+    "note": ""
+   },
+   {
+    "use": "Curación",
+    "ratio": "7 meses o más",
+    "note": "Orientativo."
+   }
+  ],
+  "variants": [
+   {
+    "id": "jamon-curado",
+    "name": "Jamón",
+    "note": "Corte parecido."
+   },
+   {
+    "id": "vaca-vieja-y-buey",
+    "name": "Vaca vieja",
+    "note": "La carne de partida."
+   },
+   {
+    "id": "ahumado",
+    "name": "Ahumado",
+    "note": "Parte del proceso."
+   },
+   {
+    "id": "tostadas-y-montaditos",
+    "name": "Montaditos",
+    "note": "Con pan."
+   }
+  ],
+  "keys": [
+   "Lonchas finísimas.",
+   "A temperatura ambiente.",
+   "Aceite de oliva por encima.",
+   "En caliente, solo templar.",
+   "Pieza empezada, tapada por el corte."
+  ],
+  "errors": [
+   {
+    "p": "Dura y correosa",
+    "fix": "Lonchas gruesas. Más finas."
+   },
+   {
+    "p": "Sin sabor",
+    "fix": "Servida fría. Atempera."
+   },
+   {
+    "p": "Borde amargo",
+    "fix": "Parte exterior. Retírala."
+   }
+  ],
+  "history": "La cecina es tradicional en León y otras zonas del norte de Castilla, donde la curación aprovecha el frío y el aire seco de la montaña.",
+  "uses": [
+   "Tablas y aperitivos",
+   "Ensaladas",
+   "Huevos y croquetas",
+   "Carpaccios"
+  ],
+  "keep": "Pieza, semanas en lugar fresco; loncheada al vacío, en frío.",
+  "pro": "Corta al momento; las puntas a croquetas o caldos.",
+  "related": [
+   "jamon-curado",
+   "vaca-vieja-y-buey",
+   "ahumado",
+   "tostadas-y-montaditos",
+   "marinados-en-seco",
+   "aceite-de-oliva"
+  ]
+ },
+ {
+  "id": "raor-y-pescados-de-la-isla",
+  "name": "Raor y pescados de temporada de la isla",
+  "name_en": "Pearly razorfish and island fish",
+  "cat": "producto",
+  "group": "Pescado y marisco",
+  "aka": [
+   "raor",
+   "raó",
+   "pez navaja",
+   "rotja",
+   "gerret",
+   "caramel",
+   "jonquillo"
+  ],
+  "summary": "El raor, pequeño pescado de arena de temporada corta en Baleares, frito entero, y otros pescados pequeños de la isla para freír y guisar.",
+  "what": "El raor es un pescado pequeño y colorido de fondos de arena de Baleares, de carne blanca y fina, muy apreciado en Ibiza y Mallorca. Se pesca solo en una temporada corta de finales de verano y otoño, con normas que fijan cada año las autoridades de pesca: conviene consultarlas. Se fríe entero, sin escamar, porque las escamas crujen.\n\nOtros pescados pequeños de la isla, como el gerret, el caramel o la rotja, se fríen, se guisan o se usan en caldos. Ver [[producto-de-la-isla]].",
+  "method": [
+   "Compra raor de lonja dentro de la temporada autorizada.",
+   "Eviscéralo sin escamar y sécalo bien.",
+   "Sala y pásalo por harina, sacudiendo el exceso.",
+   "Fríe entero en aceite de oliva a 180 °C 3–4 minutos, hasta que esté crujiente.",
+   "Sirve enseguida con limón."
+  ],
+  "ratios": [
+   {
+    "use": "Fritura del raor",
+    "ratio": "180 °C, 3–4 minutos",
+    "note": "Entero."
+   },
+   {
+    "use": "Ración",
+    "ratio": "3–4 piezas",
+    "note": "Según tamaño."
+   },
+   {
+    "use": "Temporada",
+    "ratio": "Finales de verano y otoño",
+    "note": "Regulada cada año."
+   },
+   {
+    "use": "Pescado pequeño frito",
+    "ratio": "180 °C, 2–3 minutos",
+    "note": "Gerret y caramel."
+   }
+  ],
+  "variants": [
+   {
+    "id": "pescaito-frito",
+    "name": "Fritura de pescado",
+    "note": "La técnica."
+   },
+   {
+    "id": "producto-de-la-isla",
+    "name": "Producto de la isla",
+    "note": "Temporadas."
+   },
+   {
+    "id": "pescado-de-roca",
+    "name": "Pescado de roca",
+    "note": "Para guisos."
+   },
+   {
+    "id": "cocina-ibicenca",
+    "name": "Cocina ibicenca",
+    "note": "Contexto."
+   }
+  ],
+  "keys": [
+   "Temporada corta y regulada: consulta las normas del año.",
+   "Raor sin escamar: crujen al freír.",
+   "Aceite limpio y caliente.",
+   "Servir al momento.",
+   "Pescado pequeño: harina fina y poca."
+  ],
+  "errors": [
+   {
+    "p": "Fritura blanda",
+    "fix": "Aceite frío o pescado húmedo. Seca y calienta a 180 °C."
+   },
+   {
+    "p": "Escamas duras",
+    "fix": "Pescado grande o fuera de temporada. Elige pequeños."
+   },
+   {
+    "p": "Pescado aceitoso",
+    "fix": "Aceite frío o tandas grandes. Tandas pequeñas."
+   }
+  ],
+  "history": "La pesca del raor es una tradición de otoño en Ibiza y Mallorca, con una temporada que se regula cada año.",
+  "uses": [
+   "Frituras",
+   "Tapas",
+   "Platos de temporada"
+  ],
+  "keep": "Mismo día; 1 día como máximo a 0–2 °C.",
+  "pro": "Freír al pedido en tandas pequeñas.",
+  "related": [
+   "pescaito-frito",
+   "producto-de-la-isla",
+   "pescado-de-roca",
+   "cocina-ibicenca",
+   "fritura",
+   "temporada-mes-a-mes"
+  ]
  }
 ]

@@ -12872,5 +12872,2469 @@
    "miel-y-azucares",
    "petit-fours"
   ]
+ },
+ {
+  "id": "tres-leches",
+  "name": "Pastel de tres leches",
+  "name_en": "Tres leches cake",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "tres leches",
+   "torta tres leches",
+   "bizcocho de tres leches",
+   "pastel de leches"
+  ],
+  "summary": "Bizcocho esponjoso empapado en una mezcla de leche evaporada, leche condensada y nata, servido muy frío con merengue o nata montada.",
+  "what": "Es un [[bizcochos|bizcocho de huevo montado]] que se pincha y se empapa en caliente o templado con tres lácteos: leche evaporada, leche condensada y nata o leche entera. Absorbe una gran cantidad de líquido sin deshacerse y queda húmedo, frío y muy lácteo. Se cubre con merengue italiano o nata montada y a veces canela. Es muy dulce: pide fruta ácida o café al lado.",
+  "base": {
+   "for": "una bandeja de 22 × 30 cm (12 raciones)",
+   "items": [
+    [
+     "Huevos",
+     "5"
+    ],
+    [
+     "Azúcar",
+     "150 g"
+    ],
+    [
+     "Harina floja",
+     "150 g"
+    ],
+    [
+     "Levadura química",
+     "5 g"
+    ],
+    [
+     "Leche",
+     "60 g"
+    ],
+    [
+     "Leche evaporada",
+     "400 g"
+    ],
+    [
+     "Leche condensada",
+     "350 g"
+    ],
+    [
+     "Nata 35 %",
+     "200 g"
+    ],
+    [
+     "Nata montada o merengue italiano para cubrir",
+     "300 g"
+    ]
+   ],
+   "steps": [
+    "Monta los huevos con el azúcar hasta que tripliquen; añade la leche y, con lengua, la harina y la levadura tamizadas.",
+    "Hornea en bandeja forrada a 175 °C, 25–30 minutos.",
+    "Mezcla las tres leches frías.",
+    "Pincha el bizcocho templado por toda la superficie y vierte la mezcla poco a poco, dejando que la absorba.",
+    "Enfría al menos 6 horas en cámara y cubre con nata o merengue al servir."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Bizcocho",
+    "ratio": "5 huevos, 150 g de azúcar y 150 g de harina",
+    "note": "175 °C, 25–30 minutos."
+   },
+   {
+    "use": "Mezcla de leches",
+    "ratio": "Unos 950 g por bandeja de 22 × 30 cm",
+    "note": "Leche evaporada, condensada y nata."
+   },
+   {
+    "use": "Reposo",
+    "ratio": "6–12 horas en frío",
+    "note": "Mejor del día siguiente."
+   }
+  ],
+  "variants": [
+   {
+    "id": "bizcochos",
+    "name": "Bizcocho de huevo montado",
+    "note": "La base que absorbe sin romperse."
+   },
+   {
+    "id": "baba-y-savarin",
+    "name": "Babá",
+    "note": "Otra masa empapada, en almíbar."
+   },
+   {
+    "id": "merengues",
+    "name": "Cubierta de merengue",
+    "note": "Merengue italiano para cubrir y quemar."
+   }
+  ],
+  "keys": [
+   "Bizcocho bien aireado: absorbe más sin hacerse papilla.",
+   "Pincha bien y vierte poco a poco.",
+   "Reposo largo en frío.",
+   "Equilibra el dulzor con fruta ácida o café.",
+   "Siempre en frío: es un postre lácteo."
+  ],
+  "errors": [
+   {
+    "p": "Bizcocho deshecho",
+    "fix": "Bizcocho poco hecho o empapado de golpe. Hornea bien y vierte poco a poco."
+   },
+   {
+    "p": "Líquido en el fondo",
+    "fix": "Demasiada mezcla o poco reposo. Ajusta la cantidad y espera."
+   },
+   {
+    "p": "Empalagoso",
+    "fix": "Sin contraste. Sirve con fruta ácida o canela y menos condensada."
+   }
+  ],
+  "history": "El pastel de tres leches es muy popular en México, Centroamérica y otros países de Latinoamérica, donde se ha convertido en postre de celebración.",
+  "uses": [
+   "Postre de carta",
+   "Postre para compartir",
+   "Celebraciones",
+   "Con fruta tropical"
+  ],
+  "keep": "En frío y tapado, 3 días.",
+  "pro": "Hornea y empapa la víspera; porciona en frío y cubre al servir.",
+  "related": [
+   "bizcochos",
+   "baba-y-savarin",
+   "merengues",
+   "leche-nata-y-mantequilla",
+   "aguacate-y-frutas-tropicales"
+  ]
+ },
+ {
+  "id": "brigadeiros",
+  "name": "Brigadeiros y dulces de leche condensada",
+  "name_en": "Brigadeiros",
+  "cat": "dulce",
+  "group": "Chocolate",
+  "aka": [
+   "brigadeiro",
+   "beijinho",
+   "trufas de leche condensada",
+   "dulce brasileno"
+  ],
+  "summary": "Bolitas de leche condensada cocida con cacao y mantequilla, rebozadas en fideos de chocolate: el dulce de fiesta brasileño y sus variantes.",
+  "what": "Se cuece leche condensada con cacao y mantequilla, removiendo, hasta que la mezcla espesa y se despega del fondo del cazo. Fría, se bolea y se reboza. Es más sencillo que una [[bombones-y-trufas|trufa]] de ganache y muy estable a temperatura ambiente. El beijinho es la versión de coco, sin cacao. Con buen cacao, una pizca de sal y un rebozo de frutos secos o cacao puro se convierten en un petit four con menos dulzor aparente.",
+  "base": {
+   "for": "unos 25 brigadeiros",
+   "items": [
+    [
+     "Leche condensada",
+     "400 g"
+    ],
+    [
+     "Cacao puro en polvo",
+     "20 g"
+    ],
+    [
+     "Chocolate negro picado (opcional)",
+     "40 g"
+    ],
+    [
+     "Mantequilla",
+     "20 g"
+    ],
+    [
+     "Sal",
+     "una pizca"
+    ],
+    [
+     "Fideos de chocolate, cacao o frutos secos para rebozar",
+     "c. s."
+    ]
+   ],
+   "steps": [
+    "Pon la leche condensada, el cacao, la mantequilla y la sal en un cazo de fondo grueso.",
+    "Cuece a fuego medio-bajo sin dejar de remover, 10–12 minutos, hasta que la mezcla se despegue del fondo y se mueva en bloque.",
+    "Añade el chocolate fuera del fuego si lo usas.",
+    "Pasa a un plato untado, cubre a piel y enfría.",
+    "Bolea piezas de 15 g con las manos untadas de mantequilla y reboza."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Brigadeiro",
+    "ratio": "400 g de leche condensada, 20 g de cacao y 20 g de mantequilla",
+    "note": "Cocer hasta que se despegue."
+   },
+   {
+    "use": "Beijinho",
+    "ratio": "400 g de leche condensada, 50 g de coco rallado y 20 g de mantequilla",
+    "note": "Rebozado en coco."
+   },
+   {
+    "use": "Punto",
+    "ratio": "Más cocción: más firme",
+    "note": "Para cuchara, retira antes."
+   }
+  ],
+  "variants": [
+   {
+    "id": "bombones-y-trufas",
+    "name": "Trufas",
+    "note": "Ganache boleada, más chocolate."
+   },
+   {
+    "id": "coco",
+    "name": "Beijinho",
+    "note": "La versión de coco."
+   },
+   {
+    "id": "salsas-dulces",
+    "name": "Dulce de leche",
+    "note": "Otra forma de cocer la leche y el azúcar."
+   }
+  ],
+  "keys": [
+   "Remueve sin parar: se pega enseguida.",
+   "El punto: la masa se despega y se mueve en bloque.",
+   "Buen cacao y una pizca de sal.",
+   "Manos untadas para bolear.",
+   "Estable a temperatura ambiente unas horas."
+  ],
+  "errors": [
+   {
+    "p": "No se pueden bolear",
+    "fix": "Poca cocción. Cuece más hasta que se despegue."
+   },
+   {
+    "p": "Duros",
+    "fix": "Cocción excesiva. Retira antes."
+   },
+   {
+    "p": "Sabor a quemado",
+    "fix": "Fuego alto. Fuego medio-bajo y remover."
+   }
+  ],
+  "history": "El brigadeiro es un dulce muy popular en Brasil, presente en casi todas las celebraciones; se popularizó en el siglo XX.",
+  "uses": [
+   "Petit four",
+   "Dulce de fiesta",
+   "Relleno de pasteles",
+   "A cuchara, como crema"
+  ],
+  "keep": "En caja cerrada a temperatura fresca, 2–3 días; en frío, 1 semana.",
+  "pro": "Cuece la masa en tanda y bolea por la mañana; rebózalos en cacao puro para un acabado menos dulce.",
+  "related": [
+   "bombones-y-trufas",
+   "coco",
+   "salsas-dulces",
+   "petit-fours",
+   "vainilla-y-cacao"
+  ]
+ },
+ {
+  "id": "linzer-y-tartas-de-celosia",
+  "name": "Linzer y tartas de celosía",
+  "name_en": "Linzer torte and lattice tarts",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "linzer torte",
+   "tarta linzer",
+   "tarta de celosia",
+   "crostata",
+   "tarta de confitura"
+  ],
+  "summary": "Tartas de masa de frutos secos y especias rellenas de confitura y cubiertas con una celosía de la misma masa: la linzer austriaca y la crostata italiana.",
+  "what": "La masa lleva, además de harina y mantequilla, avellana o almendra molida, canela y a veces clavo y ralladura: queda tierna, aromática y algo arenosa. Se forra el molde, se rellena con una [[confituras-y-mermeladas|confitura]] espesa y ácida (frambuesa, grosella, albaricoque) y se cubre con tiras cruzadas de masa. La crostata italiana es la misma idea con una masa quebrada más sencilla. Mejoran al día siguiente.",
+  "base": {
+   "for": "una tarta de 24 cm",
+   "items": [
+    [
+     "Mantequilla fría",
+     "200 g"
+    ],
+    [
+     "Azúcar",
+     "120 g"
+    ],
+    [
+     "Avellana o almendra tostada molida",
+     "150 g"
+    ],
+    [
+     "Harina floja",
+     "220 g"
+    ],
+    [
+     "Huevo",
+     "1"
+    ],
+    [
+     "Canela",
+     "3 g"
+    ],
+    [
+     "Clavo molido y ralladura de limón",
+     "una pizca y 1"
+    ],
+    [
+     "Confitura espesa de frambuesa o grosella",
+     "300 g"
+    ]
+   ],
+   "steps": [
+    "Mezcla la mantequilla con el azúcar, añade el huevo, y después la harina, el fruto seco, las especias y la ralladura. Enfría 1 hora.",
+    "Estira dos tercios a 5 mm y forra el molde; extiende la confitura.",
+    "Estira el resto, corta tiras de 1,5 cm y forma la celosía sobre la tarta.",
+    "Pinta las tiras con huevo y hornea a 175–180 °C, 35–40 minutos.",
+    "Deja enfriar y reposar un día antes de servir."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Masa linzer",
+    "ratio": "Mantequilla, harina y fruto seco en proporción 1 : 1,1 : 0,75",
+    "note": "Masa blanda: trabájala en frío."
+   },
+   {
+    "use": "Confitura",
+    "ratio": "300 g por tarta de 24 cm",
+    "note": "Espesa y ácida."
+   },
+   {
+    "use": "Horneado",
+    "ratio": "175–180 °C, 35–40 minutos",
+    "note": "Hasta que la confitura burbujee."
+   }
+  ],
+  "variants": [
+   {
+    "id": "masa-quebrada",
+    "name": "Crostata",
+    "note": "Con masa quebrada dulce sencilla."
+   },
+   {
+    "id": "confituras-y-mermeladas",
+    "name": "Confituras",
+    "note": "El relleno."
+   },
+   {
+    "id": "tartas-de-frutos-secos",
+    "name": "Tartas de frutos secos",
+    "note": "Otras masas de almendra."
+   }
+  ],
+  "keys": [
+   "Masa fría: es blanda y se rompe.",
+   "Confitura espesa y ácida.",
+   "Tiras de grosor regular para una celosía bonita.",
+   "Reposo de un día: se asientan masa y sabores.",
+   "Fruto seco bien tostado."
+  ],
+  "errors": [
+   {
+    "p": "Celosía que se rompe",
+    "fix": "Masa caliente. Corta las tiras en frío y colócalas con espátula."
+   },
+   {
+    "p": "Confitura que se sale",
+    "fix": "Confitura líquida. Usa una más espesa."
+   },
+   {
+    "p": "Base cruda",
+    "fix": "Molde alto o horno flojo. Hornea en la parte baja."
+   }
+  ],
+  "history": "La linzer torte es una tarta tradicional de Austria, asociada a la ciudad de Linz, y se considera una de las tartas con receta escrita más antiguas de Europa; la crostata es su pariente italiano.",
+  "uses": [
+   "Merienda",
+   "Postre de carta en porción",
+   "Tartaletas individuales",
+   "Galletas linzer rellenas"
+  ],
+  "keep": "Tapada a temperatura ambiente, 4–5 días; mejora con los días.",
+  "pro": "Hornea la víspera; las galletas linzer (dos galletas unidas con confitura) son un buen petit four con la misma masa.",
+  "related": [
+   "masa-quebrada",
+   "confituras-y-mermeladas",
+   "tartas-de-frutos-secos",
+   "frutos-secos",
+   "especias"
+  ]
+ },
+ {
+  "id": "kaiserschmarrn",
+  "name": "Kaiserschmarrn y tortitas rotas",
+  "name_en": "Kaiserschmarrn",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "kaiserschmarrn",
+   "tortita del emperador",
+   "tortita rota",
+   "crepe rota",
+   "schmarrn"
+  ],
+  "summary": "Tortita gruesa y esponjosa con claras montadas, rota en trozos en la sartén y caramelizada con azúcar, servida con compota de fruta.",
+  "what": "Es una masa de [[crepes-y-gofres|tortita]] más rica, con las claras montadas aparte, que se cuaja en sartén con mantequilla, se termina en el horno y se rompe en trozos irregulares con dos espátulas. Después se carameliza con un poco de azúcar en la sartén y se sirve con azúcar glas y compota de ciruela o manzana. Por fuera crujiente y por dentro esponjosa, es un postre caliente de sartén muy agradecido.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Yemas",
+     "4"
+    ],
+    [
+     "Leche",
+     "250 g"
+    ],
+    [
+     "Harina",
+     "130 g"
+    ],
+    [
+     "Claras",
+     "4"
+    ],
+    [
+     "Azúcar",
+     "40 g y 20 g para caramelizar"
+    ],
+    [
+     "Pasas maceradas en ron o zumo (opcional)",
+     "40 g"
+    ],
+    [
+     "Mantequilla",
+     "40 g"
+    ],
+    [
+     "Sal y ralladura de limón",
+     "una pizca y 1"
+    ],
+    [
+     "Azúcar glas y compota de ciruela",
+     "para servir"
+    ]
+   ],
+   "steps": [
+    "Mezcla las yemas, la leche, la harina, la sal y la ralladura hasta una masa lisa.",
+    "Monta las claras con 40 g de azúcar y mézclalas con la masa con lengua.",
+    "Funde la mantequilla en una sartén apta para horno, vierte la masa y reparte las pasas. Cuaja 2–3 minutos a fuego medio.",
+    "Pasa al horno a 190 °C, 8–10 minutos, hasta que suba y dore.",
+    "Rompe en trozos con dos espátulas, espolvorea 20 g de azúcar y carameliza en el fuego 1–2 minutos. Sirve con azúcar glas y compota."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Masa",
+    "ratio": "4 huevos separados, 250 g de leche y 130 g de harina",
+    "note": "Claras montadas aparte."
+   },
+   {
+    "use": "Cuajado",
+    "ratio": "2–3 minutos en sartén y 8–10 minutos a 190 °C",
+    "note": "Esponjosa por dentro."
+   },
+   {
+    "use": "Compota",
+    "ratio": "Ciruelas o manzanas con poco azúcar, 10–15 minutos",
+    "note": "Ácida para equilibrar."
+   }
+  ],
+  "variants": [
+   {
+    "id": "crepes-y-gofres",
+    "name": "Tortitas",
+    "note": "Masas líquidas cuajadas en sartén."
+   },
+   {
+    "id": "souffle",
+    "name": "Suflé",
+    "note": "También sube por las claras montadas."
+   },
+   {
+    "id": "frutas-en-almibar",
+    "name": "Compota",
+    "note": "El acompañamiento de fruta."
+   }
+  ],
+  "keys": [
+   "Claras montadas e incorporadas con cuidado.",
+   "Sartén apta para horno.",
+   "Rompe en trozos irregulares, no muy pequeños.",
+   "Carameliza al final para el crujiente.",
+   "Sirve al momento."
+  ],
+  "errors": [
+   {
+    "p": "Densa",
+    "fix": "Claras mal montadas o batidas al mezclar. Monta bien y envuelve."
+   },
+   {
+    "p": "Quemada por debajo",
+    "fix": "Fuego alto. Fuego medio y termina en el horno."
+   },
+   {
+    "p": "Cruda por dentro",
+    "fix": "Poco horno. Alarga 2–3 minutos."
+   }
+  ],
+  "history": "El kaiserschmarrn es un postre tradicional de Austria y del sur de Alemania, muy popular en las cabañas de montaña de los Alpes.",
+  "uses": [
+   "Postre caliente",
+   "Brunch",
+   "Postre para compartir en sartén",
+   "Con helado"
+  ],
+  "keep": "Al momento.",
+  "pro": "Ten la masa base hecha y monta las claras por raciones; se cuaja y se hornea en la misma sartén de servicio.",
+  "related": [
+   "crepes-y-gofres",
+   "souffle",
+   "frutas-en-almibar",
+   "merengues",
+   "fruta-asada"
+  ]
+ },
+ {
+  "id": "pao-de-lo",
+  "name": "Pão de ló y bizcochos de yema",
+  "name_en": "Pão de ló",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "pao de lo",
+   "pan de lo",
+   "bizcocho portugues",
+   "bizcocho de yemas",
+   "bizcocho humedo de centro cremoso"
+  ],
+  "summary": "Bizcocho portugués de muchos huevos y yemas, azúcar y muy poca harina: esponjoso, o con el centro aún cremoso en su versión húmeda.",
+  "what": "Es un [[bizcochos|bizcocho de huevo montado]] con más yemas y menos harina de lo habitual, horneado en molde alto forrado de papel. Bien horneado queda alto, amarillo y esponjoso; en la versión húmeda se saca antes, con el centro aún cremoso, como una crema dentro de un bizcocho. Es pariente de los bizcochos de yema de la repostería conventual española y portuguesa.",
+  "base": {
+   "for": "un molde de 22 cm",
+   "items": [
+    [
+     "Huevos",
+     "4"
+    ],
+    [
+     "Yemas",
+     "6"
+    ],
+    [
+     "Azúcar",
+     "180 g"
+    ],
+    [
+     "Harina floja tamizada",
+     "60 g"
+    ],
+    [
+     "Sal",
+     "una pizca"
+    ]
+   ],
+   "steps": [
+    "Monta los huevos, las yemas, el azúcar y la sal a velocidad alta 10–12 minutos, hasta que tripliquen y hagan cinta.",
+    "Incorpora la harina tamizada con lengua, sin perder aire.",
+    "Vierte en un molde forrado con papel de horno arrugado que sobresalga.",
+    "Versión esponjosa: hornea a 180 °C, 35–40 minutos. Versión húmeda: a 200 °C, 15–20 minutos, con el centro aún tembloroso.",
+    "Deja enfriar en el molde con el papel."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Bizcocho",
+    "ratio": "10 huevos o yemas en total por 180 g de azúcar y 60 g de harina",
+    "note": "Mucha yema, poca harina."
+   },
+   {
+    "use": "Versión húmeda",
+    "ratio": "200 °C, 15–20 minutos",
+    "note": "Centro cremoso."
+   },
+   {
+    "use": "Versión esponjosa",
+    "ratio": "180 °C, 35–40 minutos",
+    "note": "Alto y seco al pinchar."
+   }
+  ],
+  "variants": [
+   {
+    "id": "bizcochos",
+    "name": "Genovesa",
+    "note": "Bizcocho de huevo montado clásico."
+   },
+   {
+    "id": "yemas-y-dulces-de-convento",
+    "name": "Dulces de yema",
+    "note": "La familia conventual."
+   },
+   {
+    "id": "castella-y-bizcochos-japoneses",
+    "name": "Castella",
+    "note": "Bizcocho japonés de origen relacionado."
+   }
+  ],
+  "keys": [
+   "Monta largo: el aire es la única levadura.",
+   "Poca harina, incorporada con suavidad.",
+   "Molde forrado con papel arrugado.",
+   "Versión húmeda: sácalo con el centro tembloroso.",
+   "Enfría en el molde."
+  ],
+  "errors": [
+   {
+    "p": "Se baja",
+    "fix": "Huevo poco montado o horno abierto pronto. Monta más y no abras."
+   },
+   {
+    "p": "Centro crudo en la versión esponjosa",
+    "fix": "Horno corto. Alarga."
+   },
+   {
+    "p": "Seco",
+    "fix": "Horno largo. Saca en cuanto el palillo salga limpio."
+   }
+  ],
+  "history": "El pão de ló es un bizcocho tradicional de Portugal, con versiones regionales; las versiones húmedas de centro cremoso son especialmente conocidas en el norte del país.",
+  "uses": [
+   "Postre",
+   "Merienda",
+   "Base para borrachos y tartas",
+   "Con fruta y crema"
+  ],
+  "keep": "Tapado, 2–3 días; la versión húmeda, en frío y en el día siguiente.",
+  "pro": "Hornea en moldes individuales la versión húmeda y sírvela templada.",
+  "related": [
+   "bizcochos",
+   "yemas-y-dulces-de-convento",
+   "castella-y-bizcochos-japoneses",
+   "pastel-de-nata",
+   "huevos"
+  ]
+ },
+ {
+  "id": "castella-y-bizcochos-japoneses",
+  "name": "Castella y bizcochos japoneses",
+  "name_en": "Castella and Japanese sponge cakes",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "castella",
+   "kasutera",
+   "bizcocho japones",
+   "cheesecake japones",
+   "tarta de queso algodon",
+   "dorayaki"
+  ],
+  "summary": "Bizcochos japoneses de textura muy fina y húmeda: el castella de miel horneado lento, el cheesecake de algodón al baño maría y el dorayaki de sartén.",
+  "what": "El castella es un bizcocho denso y húmedo de huevo, azúcar, miel y harina de fuerza, horneado a temperatura baja en molde cuadrado y reposado envuelto para que se asiente. El cheesecake japonés mezcla una base de queso con merengue y se hornea al baño maría a baja temperatura: queda ligero y tembloroso. El dorayaki son dos tortitas de miel unidas con pasta de judía roja. Todos dependen de horno suave y paciencia.",
+  "base": {
+   "for": "un castella de 18 × 18 cm",
+   "items": [
+    [
+     "Huevos a temperatura ambiente",
+     "5"
+    ],
+    [
+     "Azúcar",
+     "150 g"
+    ],
+    [
+     "Miel",
+     "40 g"
+    ],
+    [
+     "Agua tibia o leche",
+     "30 g"
+    ],
+    [
+     "Harina de fuerza tamizada",
+     "130 g"
+    ]
+   ],
+   "steps": [
+    "Disuelve la miel en el agua tibia.",
+    "Monta los huevos con el azúcar al baño maría templado hasta 35–40 °C y después fuera, hasta que tripliquen y hagan cinta.",
+    "Añade la miel y luego la harina en tres veces con varilla suave.",
+    "Vierte en el molde forrado, pasa una brocheta para quitar burbujas grandes.",
+    "Hornea a 160 °C, 45–55 minutos. Al salir, envuelve en film aún caliente y deja reposar 12 horas antes de cortar."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Castella",
+    "ratio": "5 huevos, 150 g de azúcar, 40 g de miel y 130 g de harina de fuerza",
+    "note": "160 °C, 45–55 minutos."
+   },
+   {
+    "use": "Cheesecake japonés",
+    "ratio": "Base de queso crema, yemas y leche, con merengue de las claras",
+    "note": "Baño maría a 150–160 °C y luego horno apagado."
+   },
+   {
+    "use": "Dorayaki",
+    "ratio": "Tortita de huevo, miel y harina, en sartén a fuego bajo",
+    "note": "Rellena de pasta de judía roja."
+   }
+  ],
+  "variants": [
+   {
+    "id": "pao-de-lo",
+    "name": "Pão de ló",
+    "note": "Bizcocho portugués de la misma familia."
+   },
+   {
+    "id": "postres-asiaticos",
+    "name": "Postres asiáticos",
+    "note": "Mochi, matcha y pasta de judía roja."
+   },
+   {
+    "id": "tarta-de-queso",
+    "name": "Tarta de queso",
+    "note": "Otras formas de cuajar queso."
+   }
+  ],
+  "keys": [
+   "Horno bajo y largo para una miga fina.",
+   "Huevos templados para montar mejor.",
+   "Quita las burbujas grandes antes de hornear.",
+   "Envolver en caliente y reposar: queda húmedo.",
+   "Corte limpio con cuchillo caliente."
+  ],
+  "errors": [
+   {
+    "p": "Superficie agrietada",
+    "fix": "Horno fuerte. Baja la temperatura."
+   },
+   {
+    "p": "Miga con agujeros",
+    "fix": "Burbujas sin quitar. Pasa una brocheta antes de hornear."
+   },
+   {
+    "p": "Se hunde",
+    "fix": "Poco horneado. Alarga y comprueba con un palillo."
+   }
+  ],
+  "history": "El castella se asocia a la llegada de comerciantes portugueses a Nagasaki en el siglo XVI y se convirtió en un dulce típico de Japón; el cheesecake japonés es una creación más reciente.",
+  "uses": [
+   "Merienda y té",
+   "Postre con fruta",
+   "Petit four en cuadrados",
+   "Base de postres japoneses"
+  ],
+  "keep": "Envuelto a temperatura ambiente, 3–4 días; mejor al segundo día.",
+  "pro": "Hornea la víspera y córtalo en frío con cuchillo caliente; sirve con fruta ácida o té.",
+  "related": [
+   "pao-de-lo",
+   "postres-asiaticos",
+   "tarta-de-queso",
+   "bizcochos",
+   "miel-y-azucares"
+  ]
+ },
+ {
+  "id": "maamoul",
+  "name": "Maamoul y galletas rellenas de dátil",
+  "name_en": "Maamoul",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "maamoul",
+   "mamul",
+   "galletas de datil",
+   "galletas de semola rellenas",
+   "pastas rellenas de oriente medio"
+  ],
+  "summary": "Galletas de sémola y mantequilla perfumadas con agua de azahar, rellenas de dátil, nuez o pistacho y marcadas con molde de madera.",
+  "what": "La masa se hace con sémola (y a veces harina) frotada con mantequilla clarificada y dejada reposar para que la sémola se hidrate; después se perfuma con agua de azahar o de rosas. Se forma una bola, se rellena de pasta de dátil o de frutos secos con azúcar y especias y se presiona en un molde de madera que la marca. Se hornean sin que doren mucho y quedan tiernas y arenosas. Son pariente cercano de los [[baklava-y-pasteles-de-filo|pasteles de filo]] en aromas.",
+  "base": {
+   "for": "unas 25 piezas",
+   "items": [
+    [
+     "Sémola fina de trigo",
+     "300 g"
+    ],
+    [
+     "Harina",
+     "60 g"
+    ],
+    [
+     "Mantequilla clarificada fundida",
+     "150 g"
+    ],
+    [
+     "Azúcar",
+     "30 g"
+    ],
+    [
+     "Agua de azahar y agua",
+     "30 g y 40 g"
+    ],
+    [
+     "Levadura química",
+     "2 g"
+    ],
+    [
+     "Relleno: pasta de dátil con canela",
+     "300 g"
+    ],
+    [
+     "Relleno alternativo: nuez o pistacho picado con azúcar y agua de rosas",
+     "250 g"
+    ]
+   ],
+   "steps": [
+    "Frota la sémola y la harina con la mantequilla clarificada; tapa y deja reposar al menos 6 horas o toda la noche.",
+    "Añade el azúcar, la levadura, el agua de azahar y el agua, y une la masa sin amasar.",
+    "Forma bolas de 25 g, ahuécalas, rellena con 12 g de pasta de dátil y cierra.",
+    "Presiona en el molde de madera enharinado y desmolda golpeando.",
+    "Hornea a 180 °C, 15–18 minutos, sin que tomen mucho color. Enfría y espolvorea con azúcar glas si quieres."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Masa",
+    "ratio": "360 g de sémola y harina por 150 g de mantequilla clarificada",
+    "note": "Reposo largo para hidratar la sémola."
+   },
+   {
+    "use": "Relleno",
+    "ratio": "12 g por pieza",
+    "note": "Dátil o frutos secos."
+   },
+   {
+    "use": "Horneado",
+    "ratio": "180 °C, 15–18 minutos",
+    "note": "Pálidos: duros si se doran."
+   }
+  ],
+  "variants": [
+   {
+    "id": "pan-de-higo-y-dulces-de-fruta-seca",
+    "name": "Dulces de fruta seca",
+    "note": "Dátil e higo en otras formas."
+   },
+   {
+    "id": "baklava-y-pasteles-de-filo",
+    "name": "Baklava",
+    "note": "Otro dulce de frutos secos y azahar."
+   },
+   {
+    "id": "grasas-infusionadas",
+    "name": "Mantequilla clarificada",
+    "note": "La grasa de la masa."
+   }
+  ],
+  "keys": [
+   "Reposo largo de la sémola con la grasa.",
+   "No amases: se endurece.",
+   "Relleno en proporción para que no se rompa.",
+   "Horno moderado, poco color.",
+   "Agua de azahar con medida."
+  ],
+  "errors": [
+   {
+    "p": "Se agrietan",
+    "fix": "Masa seca o poco reposada. Reposa más y añade unas gotas de agua."
+   },
+   {
+    "p": "Duros",
+    "fix": "Horneado largo. Sácalos pálidos."
+   },
+   {
+    "p": "No marcan el dibujo",
+    "fix": "Molde sin enharinar o masa blanda. Enharina y enfría la masa."
+   }
+  ],
+  "history": "El maamoul es un dulce tradicional de Líbano, Siria, Palestina y otros países de Oriente Medio, ligado a fiestas religiosas de distintas tradiciones.",
+  "uses": [
+   "Petit four",
+   "Dulce para el café o el té",
+   "Regalo de la casa",
+   "Postre de inspiración mediterránea"
+  ],
+  "keep": "En caja cerrada, 2 semanas.",
+  "pro": "Haz la masa la víspera para el reposo; forma y hornea en tanda.",
+  "related": [
+   "pan-de-higo-y-dulces-de-fruta-seca",
+   "baklava-y-pasteles-de-filo",
+   "grasas-infusionadas",
+   "frutos-secos",
+   "petit-fours"
+  ]
+ },
+ {
+  "id": "halva",
+  "name": "Halva",
+  "name_en": "Halva",
+  "cat": "dulce",
+  "group": "Espumas y azúcar",
+  "aka": [
+   "halva",
+   "halwa",
+   "halva de tahina",
+   "halva de semola",
+   "dulce de sesamo"
+  ],
+  "summary": "Dos dulces con el mismo nombre: el de tahina y almíbar, que se trabaja hasta tener una textura fibrosa, y el de sémola tostada en mantequilla y almíbar.",
+  "what": "El halva de tahina se hace vertiendo un almíbar caliente sobre la pasta de [[sesamo]] y trabajando la mezcla hasta que forma fibras y cristaliza; queda un bloque que se deshace en hebras, con sabor tostado intenso. El halva de sémola, más común en el sur de Asia y Oriente Medio, es sémola tostada en mantequilla y cocida en almíbar o leche hasta formar una pasta tierna. Los dos admiten pistacho, cacao, vainilla o especias.",
+  "base": {
+   "for": "un bloque de unos 600 g de halva de tahina",
+   "items": [
+    [
+     "Tahina removida",
+     "300 g"
+    ],
+    [
+     "Azúcar",
+     "250 g"
+    ],
+    [
+     "Agua",
+     "80 g"
+    ],
+    [
+     "Vainilla o cardamomo",
+     "al gusto"
+    ],
+    [
+     "Pistacho picado",
+     "60 g"
+    ],
+    [
+     "Sal",
+     "una pizca"
+    ]
+   ],
+   "steps": [
+    "Calienta la tahina con la sal y la vainilla a unos 40 °C y añade el pistacho.",
+    "Cuece el azúcar con el agua hasta 118–120 °C.",
+    "Vierte el almíbar en hilo sobre la tahina mientras mezclas con espátula.",
+    "Sigue mezclando 1–2 minutos, hasta que la masa espese, pierda brillo y empiece a formar fibras; no te pases o se desmorona.",
+    "Pasa enseguida a un molde forrado, presiona y deja enfriar 12 horas antes de cortar."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Halva de tahina",
+    "ratio": "300 g de tahina por almíbar de 250 g de azúcar a 118–120 °C",
+    "note": "Mezclar hasta que haga fibras."
+   },
+   {
+    "use": "Halva de sémola",
+    "ratio": "150 g de sémola tostada en 100 g de mantequilla, con almíbar de 150 g de azúcar y 400 g de agua",
+    "note": "Cocer hasta que se separe de las paredes."
+   },
+   {
+    "use": "Reposo",
+    "ratio": "12 horas",
+    "note": "Para que cristalice y se corte."
+   }
+  ],
+  "variants": [
+   {
+    "id": "sesamo",
+    "name": "Sésamo",
+    "note": "Tahina y sésamo tostado."
+   },
+   {
+    "id": "turrones-y-pralines",
+    "name": "Turrón",
+    "note": "Otro dulce de frutos secos y azúcar cocido."
+   },
+   {
+    "id": "salsa-tahina-limon",
+    "name": "Tahina en salado",
+    "note": "La misma pasta en salsa."
+   }
+  ],
+  "keys": [
+   "Almíbar a 118–120 °C: con termómetro.",
+   "Mezcla justo hasta las fibras: más, se desmorona.",
+   "Molde forrado y prensado al momento.",
+   "Reposo largo antes de cortar.",
+   "Tahina de buena calidad, sin amargor."
+  ],
+  "errors": [
+   {
+    "p": "No cuaja",
+    "fix": "Almíbar poco cocido. Llega a 118–120 °C."
+   },
+   {
+    "p": "Se desmorona",
+    "fix": "Mezclado de más. Para en cuanto haga fibras."
+   },
+   {
+    "p": "Amarga",
+    "fix": "Tahina vieja o muy tostada. Cambia de tahina."
+   }
+  ],
+  "history": "El halva tiene muchas versiones en Oriente Medio, los Balcanes, Asia central y el sur de Asia; el de tahina es el más conocido en el Mediterráneo oriental.",
+  "uses": [
+   "Petit four",
+   "Desmenuzado sobre helados y cremas",
+   "Con café",
+   "Postres de sésamo"
+  ],
+  "keep": "Envuelto, en lugar fresco y seco, 1 mes.",
+  "pro": "Desmenuzado es un crujiente-tierno muy original para helados de vainilla o de yogur.",
+  "related": [
+   "sesamo",
+   "turrones-y-pralines",
+   "salsa-tahina-limon",
+   "caramelo",
+   "frutos-secos"
+  ]
+ },
+ {
+  "id": "caneles",
+  "name": "Canelés",
+  "name_en": "Canelés",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "canele",
+   "caneles de burdeos",
+   "canelé",
+   "cannele"
+  ],
+  "summary": "Pequeños pasteles de masa líquida de leche, yema, azúcar y ron, horneados en moldes acanalados hasta tener una costra caramelizada y un centro tierno como una crema.",
+  "what": "La masa es como la de una [[crepes-y-gofres|crêpe]] muy rica en leche, yema y azúcar, perfumada con vainilla y ron, que reposa al menos un día en frío. Se hornea en moldes acanalados untados, primero a temperatura muy alta para formar la costra y después más baja para cocer el interior. El contraste entre la costra oscura, caramelizada y crujiente y el interior húmedo y tierno es lo que lo define. Es un dulce que exige práctica con el horno y los moldes.",
+  "base": {
+   "for": "unos 16 canelés de 5,5 cm",
+   "items": [
+    [
+     "Leche entera",
+     "500 g"
+    ],
+    [
+     "Mantequilla",
+     "50 g"
+    ],
+    [
+     "Vaina de vainilla",
+     "1"
+    ],
+    [
+     "Azúcar",
+     "250 g"
+    ],
+    [
+     "Harina floja",
+     "100 g"
+    ],
+    [
+     "Yemas",
+     "2"
+    ],
+    [
+     "Huevo",
+     "1"
+    ],
+    [
+     "Ron",
+     "50 g"
+    ],
+    [
+     "Mantequilla (o mezcla con cera de abeja alimentaria) para los moldes",
+     "c. s."
+    ]
+   ],
+   "steps": [
+    "Hierve la leche con la mantequilla y la vainilla; deja templar a 50 °C.",
+    "Mezcla el azúcar y la harina; añade el huevo y las yemas, y después la leche templada en hilo, sin batir aire. Añade el ron.",
+    "Cuela y deja reposar en frío 24–48 horas.",
+    "Unta los moldes y enfríalos. Remueve la masa con suavidad y llénalos a 1 cm del borde.",
+    "Hornea a 250 °C, 10–15 minutos, y baja a 180 °C, 45–50 minutos más, hasta que estén muy oscuros.",
+    "Desmolda en caliente y deja enfriar sobre rejilla: la costra se endurece al enfriar."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Masa",
+    "ratio": "500 g de leche, 250 g de azúcar, 100 g de harina y 3 huevos o yemas",
+    "note": "Reposo de 24–48 h."
+   },
+   {
+    "use": "Horneado",
+    "ratio": "250 °C, 10–15 minutos, y 180 °C, 45–50 minutos",
+    "note": "Depende mucho de cada horno y molde."
+   },
+   {
+    "use": "Llenado",
+    "ratio": "A 1 cm del borde",
+    "note": "Si suben de más, la masa está fría o poco reposada."
+   }
+  ],
+  "variants": [
+   {
+    "id": "crepes-y-gofres",
+    "name": "Masas líquidas",
+    "note": "Crêpes y tortitas."
+   },
+   {
+    "id": "clafoutis",
+    "name": "Clafoutis",
+    "note": "Masa líquida horneada con fruta."
+   },
+   {
+    "id": "crema-catalana-y-flan",
+    "name": "Flan",
+    "note": "Crema de huevo y leche cuajada."
+   }
+  ],
+  "keys": [
+   "Reposo largo de la masa: imprescindible.",
+   "No batir aire: los canelés suben y se deforman.",
+   "Moldes bien untados y fríos.",
+   "Muy oscuros: la costra caramelizada es el sabor.",
+   "Ajusta tiempos a tu horno: cada uno es distinto."
+  ],
+  "errors": [
+   {
+    "p": "Suben y salen del molde («sombrero»)",
+    "fix": "Masa poco reposada, con aire o horno muy fuerte. Reposa más y remueve sin batir."
+   },
+   {
+    "p": "Costra pálida",
+    "fix": "Horno flojo o poco tiempo. Hornea hasta muy oscuro."
+   },
+   {
+    "p": "Se pegan",
+    "fix": "Moldes mal untados. Unta bien y enfría."
+   }
+  ],
+  "history": "Los canelés son un dulce tradicional de Burdeos, en Francia, de origen antiguo y recuperado en el siglo XX.",
+  "uses": [
+   "Petit four",
+   "Con café",
+   "Postre con helado de vainilla",
+   "Dulce de merienda"
+  ],
+  "keep": "Mejor el día: la costra se ablanda con las horas. Masa cruda en frío, 3–4 días.",
+  "pro": "Ten masa reposando siempre y hornea cada día; la costra se pierde de un día para otro.",
+  "related": [
+   "crepes-y-gofres",
+   "clafoutis",
+   "crema-catalana-y-flan",
+   "vainilla-y-cacao",
+   "vinos-y-licores"
+  ]
+ },
+ {
+  "id": "charlottes",
+  "name": "Charlottes",
+  "name_en": "Charlottes",
+  "cat": "dulce",
+  "group": "Cremas",
+  "aka": [
+   "charlotte",
+   "charlota",
+   "carlota",
+   "charlotte rusa",
+   "charlotte de frutos rojos",
+   "charlotte de manzana"
+  ],
+  "summary": "Postres montados en molde rodeados de bizcochos de soletilla y rellenos de crema bávara o mousse; y la charlotte caliente de manzana con pan.",
+  "what": "La charlotte fría se monta forrando un aro o molde con bizcochos de soletilla de pie, empapados en almíbar, y rellenando con una bavaroise o una [[mousses-y-cremosos|mousse]] de fruta, chocolate o vainilla; se enfría hasta que cuaja y se termina con fruta. La charlotte caliente, más antigua, forra el molde con rebanadas de pan con mantequilla y se rellena de compota espesa de manzana, horneada hasta que el pan se dora.",
+  "base": {
+   "for": "una charlotte de 20 cm (8 raciones)",
+   "items": [
+    [
+     "Bizcochos de soletilla",
+     "24–28"
+    ],
+    [
+     "Almíbar ligero con licor o zumo",
+     "150 g"
+    ],
+    [
+     "Puré de frutos rojos",
+     "300 g"
+    ],
+    [
+     "Azúcar",
+     "80 g"
+    ],
+    [
+     "Gelatina en hojas",
+     "8 g"
+    ],
+    [
+     "Nata semimontada",
+     "350 g"
+    ],
+    [
+     "Frutos rojos para terminar",
+     "200 g"
+    ]
+   ],
+   "steps": [
+    "Forra el lateral de un aro con acetato y coloca los bizcochos de pie, con la cara plana hacia dentro; cubre el fondo con más bizcochos. Píntalos con almíbar.",
+    "Calienta una parte del puré con el azúcar y disuelve la gelatina hidratada; mézclalo con el resto del puré.",
+    "Cuando esté a 25–30 °C, incorpora la nata semimontada.",
+    "Rellena el molde y enfría al menos 6 horas.",
+    "Desmolda, decora con fruta y ata una cinta alrededor si quieres."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Relleno de mousse de fruta",
+    "ratio": "300 g de puré, 80 g de azúcar, 8 g de gelatina y 350 g de nata",
+    "note": "Mezclar con la base a 25–30 °C."
+   },
+   {
+    "use": "Almíbar",
+    "ratio": "Pintar sin empapar",
+    "note": "El bizcocho debe sostener."
+   },
+   {
+    "use": "Charlotte de manzana",
+    "ratio": "Pan de molde con mantequilla y 1 kg de manzana en compota espesa",
+    "note": "Horno a 200 °C, 35–40 minutos."
+   }
+  ],
+  "variants": [
+   {
+    "id": "mousses-y-cremosos",
+    "name": "Mousses",
+    "note": "El relleno."
+   },
+   {
+    "id": "bizcochos",
+    "name": "Bizcochos de soletilla",
+    "note": "La pared de la charlotte."
+   },
+   {
+    "id": "tiramisu-y-mascarpone",
+    "name": "Tiramisú",
+    "note": "Otro postre de soletilla y crema."
+   }
+  ],
+  "keys": [
+   "Bizcochos de pie y apretados.",
+   "Almíbar pintado, no vertido.",
+   "Relleno con la base a 25–30 °C.",
+   "Frío largo para cuajar.",
+   "Desmolda con acetato para un borde limpio."
+  ],
+  "errors": [
+   {
+    "p": "Se derrumba",
+    "fix": "Bizcochos empapados o relleno sin cuajar. Pinta menos y enfría más."
+   },
+   {
+    "p": "Relleno con grumos",
+    "fix": "Base fría al añadir la nata. Mezcla a 25–30 °C."
+   },
+   {
+    "p": "Charlotte de manzana aguada",
+    "fix": "Compota líquida. Redúcela bien."
+   }
+  ],
+  "history": "Las charlottes son postres clásicos de la pastelería europea; la de manzana caliente es la más antigua y la fría con bavaroise se popularizó en la pastelería francesa del siglo XIX.",
+  "uses": [
+   "Postre para compartir",
+   "Postre de celebración",
+   "Individuales en aro",
+   "Postre de fruta de temporada"
+  ],
+  "keep": "En frío, 2 días.",
+  "pro": "Monta en aros individuales con acetato; congela y desmolda en congelado para un acabado limpio.",
+  "related": [
+   "mousses-y-cremosos",
+   "bizcochos",
+   "tiramisu-y-mascarpone",
+   "gelificantes-y-espesantes",
+   "frutos-rojos-y-fruta-de-hueso"
+  ]
+ },
+ {
+  "id": "torta-caprese",
+  "name": "Torta caprese",
+  "name_en": "Torta caprese",
+  "cat": "dulce",
+  "group": "Chocolate",
+  "aka": [
+   "torta caprese",
+   "tarta de chocolate y almendra",
+   "tarta de chocolate sin harina",
+   "tarta caprese"
+  ],
+  "summary": "Tarta de chocolate y almendra sin harina, húmeda por dentro y con una costra fina por fuera.",
+  "what": "Es una tarta de chocolate negro, mantequilla, almendra molida, azúcar y huevo, con las claras montadas aparte, sin harina. La almendra le da cuerpo y humedad, y el chocolate la intensidad. Por fuera forma una costra fina y quebradiza y por dentro queda densa y tierna. Es naturalmente sin gluten y muy buena con helado de vainilla o nata montada.",
+  "base": {
+   "for": "un molde de 24 cm",
+   "items": [
+    [
+     "Chocolate negro 60–70 %",
+     "200 g"
+    ],
+    [
+     "Mantequilla",
+     "200 g"
+    ],
+    [
+     "Almendra molida (o almendra tostada molida)",
+     "200 g"
+    ],
+    [
+     "Azúcar",
+     "180 g"
+    ],
+    [
+     "Huevos separados",
+     "5"
+    ],
+    [
+     "Sal",
+     "una pizca"
+    ],
+    [
+     "Azúcar glas",
+     "para terminar"
+    ]
+   ],
+   "steps": [
+    "Funde el chocolate con la mantequilla a menos de 50 °C.",
+    "Bate las yemas con 120 g de azúcar hasta que blanqueen; añade el chocolate y la almendra.",
+    "Monta las claras con la sal y el resto del azúcar a picos suaves.",
+    "Incorpora las claras en tres veces con lengua.",
+    "Hornea en molde forrado a 170 °C, 40–45 minutos, hasta que la superficie esté firme y el centro aún húmedo. Enfría y espolvorea con azúcar glas."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Tarta",
+    "ratio": "Chocolate, mantequilla y almendra a partes iguales, 5 huevos y 180 g de azúcar",
+    "note": "170 °C, 40–45 minutos."
+   },
+   {
+    "use": "Claras",
+    "ratio": "A picos suaves",
+    "note": "Más firmes se cortan al mezclar."
+   },
+   {
+    "use": "Punto",
+    "ratio": "Palillo con migas húmedas",
+    "note": "No debe salir limpio."
+   }
+  ],
+  "variants": [
+   {
+    "id": "postres-de-chocolate",
+    "name": "Postres de chocolate",
+    "note": "Coulant, brownie y otras tartas."
+   },
+   {
+    "id": "tartas-de-frutos-secos",
+    "name": "Tarta de almendra",
+    "note": "Sin chocolate."
+   },
+   {
+    "id": "postres-sin-gluten-y-lacteos",
+    "name": "Sin gluten",
+    "note": "Postres sin harina."
+   }
+  ],
+  "keys": [
+   "Chocolate fundido a menos de 50 °C.",
+   "Claras a picos suaves e incorporadas con cuidado.",
+   "Sácala con el centro húmedo.",
+   "Mejor al día siguiente.",
+   "Sin harina: sin gluten si todos los ingredientes lo son."
+  ],
+  "errors": [
+   {
+    "p": "Se hunde mucho",
+    "fix": "Claras muy montadas o mezcla brusca. Picos suaves y lengua."
+   },
+   {
+    "p": "Seca",
+    "fix": "Horno largo. Saca con el centro húmedo."
+   },
+   {
+    "p": "Costra que se separa",
+    "fix": "Es normal en parte; enfría en el molde antes de desmoldar."
+   }
+  ],
+  "history": "La torta caprese es una tarta tradicional de la isla de Capri y de la costa de Nápoles, en Italia.",
+  "uses": [
+   "Postre de carta",
+   "Postre sin gluten",
+   "Merienda",
+   "Con helado o nata"
+  ],
+  "keep": "Tapada a temperatura ambiente, 4 días.",
+  "pro": "Hornea en molde grande y porciona en frío; sírvela templada unos segundos con helado.",
+  "related": [
+   "postres-de-chocolate",
+   "tartas-de-frutos-secos",
+   "postres-sin-gluten-y-lacteos",
+   "almendra",
+   "chocolate-y-templado"
+  ]
+ },
+ {
+  "id": "montaje-y-cobertura-de-tartas",
+  "name": "Montaje y cobertura de tartas",
+  "name_en": "Cake assembly and covering",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "montar una tarta",
+   "cubrir una tarta",
+   "nivelar bizcocho",
+   "capa de migas",
+   "tarta de capas",
+   "tarta en aro"
+  ],
+  "summary": "Cómo montar una tarta de capas limpia y estable: nivelar y cortar el bizcocho, empapar, rellenar con dique, capa fina de sellado y cobertura final.",
+  "what": "Una tarta bonita y que se corta bien depende del montaje más que de la receta. Los bizcochos se nivelan y se cortan en discos iguales, se empapan con almíbar justo, se rellenan con capas del mismo grosor dentro de un dique de crema firme para que no se salga el relleno blando, y se cubren primero con una capa fina que atrapa las migas y se enfría, y después con la cobertura final. El montaje en aro con acetato da bordes perfectos para entremets. La técnica de capas finas está en [[tarta-opera-y-entremets]].",
+  "method": [
+   "Enfría los bizcochos (mejor de la víspera, envueltos) y nivela la parte superior con cuchillo de sierra largo.",
+   "Corta en discos del mismo grosor, girando la tarta sobre la base y el cuchillo quieto.",
+   "Empapa cada disco con almíbar con brocha, sin encharcar.",
+   "Si el relleno es blando, haz un dique de crema firme en el borde con manga y rellena dentro.",
+   "Monta todas las capas, alinea, cubre con una capa fina de crema (capa de migas) y enfría 30 minutos.",
+   "Cubre con la capa final usando espátula acodada y base giratoria; alisa con rasqueta y enfría antes de decorar."
+  ],
+  "ratios": [
+   {
+    "use": "Grosor de capas",
+    "ratio": "Bizcocho 1–1,5 cm, relleno 0,8–1 cm",
+    "note": "Iguales en toda la tarta."
+   },
+   {
+    "use": "Almíbar",
+    "ratio": "30–40 % del peso del bizcocho",
+    "note": "Pintado, no vertido."
+   },
+   {
+    "use": "Enfriado entre fases",
+    "ratio": "30 minutos en frío",
+    "note": "Capa de migas firme antes de la final."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cremas-de-mantequilla",
+    "name": "Cremas de mantequilla",
+    "note": "La cobertura más estable."
+   },
+   {
+    "id": "ganache",
+    "name": "Ganache",
+    "note": "Para cubrir y para un acabado de chocolate."
+   },
+   {
+    "id": "glaseados-y-glasa-real",
+    "name": "Glaseado espejo",
+    "note": "Acabado brillante sobre tartas congeladas."
+   }
+  ],
+  "keys": [
+   "Bizcocho frío para cortar limpio.",
+   "Capas iguales: báscula y regla.",
+   "Dique de crema con rellenos blandos.",
+   "Capa de migas antes de la final.",
+   "Base giratoria, espátula acodada y rasqueta."
+  ],
+  "errors": [
+   {
+    "p": "Tarta torcida",
+    "fix": "Capas desiguales. Nivela y corta con la tarta girando."
+   },
+   {
+    "p": "Migas en la cobertura",
+    "fix": "Sin capa de sellado. Haz la capa fina y enfría."
+   },
+   {
+    "p": "Relleno que se sale",
+    "fix": "Sin dique o relleno blando. Haz dique y enfría."
+   }
+  ],
+  "history": "Las tartas de capas cubiertas son una tradición de la pastelería europea y americana; las herramientas de montaje (base giratoria, aros, acetatos) se generalizaron en el siglo XX.",
+  "uses": [
+   "Tartas de celebración",
+   "Tartas de carta en porciones",
+   "Entremets",
+   "Formación de la partida de postres"
+  ],
+  "keep": "Según la crema: con cremas lácteas, en frío 2–3 días.",
+  "pro": "Hornea y corta los bizcochos la víspera; monta en aro con acetato para bordes limpios y congela si vas a glasear.",
+  "related": [
+   "tarta-opera-y-entremets",
+   "cremas-de-mantequilla",
+   "bizcochos",
+   "ganache",
+   "glaseados-y-glasa-real",
+   "manga-pastelera-y-escudillado"
+  ]
+ },
+ {
+  "id": "manga-pastelera-y-escudillado",
+  "name": "Manga pastelera y escudillado",
+  "name_en": "Piping bags and piping",
+  "cat": "dulce",
+  "group": "Espumas y azúcar",
+  "aka": [
+   "manga pastelera",
+   "escudillar",
+   "boquillas",
+   "manga",
+   "decorar con manga",
+   "cornet"
+  ],
+  "summary": "Cómo usar la manga y las boquillas para dar forma a masas, cremas y merengues: llenado, posición, presión y boquillas más útiles.",
+  "what": "Escudillar es dar forma con la manga: bolas de [[pasta-choux|choux]], discos de [[macarons]], tiras de bizcocho, rosetas de crema o puntos de gel. El resultado depende de la masa a la temperatura justa, de la boquilla elegida y de una presión constante con la mano. La boquilla lisa da bolas, tiras y puntos; la rizada, rosetas y estrellas; la de Saint-Honoré, crestas; la plana, cintas. El cornet de papel sirve para escribir y decorar fino.",
+  "method": [
+   "Pon la boquilla, dobla la manga hacia fuera como un cuello y llénala solo hasta la mitad.",
+   "Cierra girando la parte de arriba y empuja el contenido hacia la boquilla para sacar el aire.",
+   "Sujeta con la mano dominante arriba, que aprieta, y guía con la otra cerca de la boquilla.",
+   "Para bolas y puntos, manga vertical a 1 cm, presiona sin mover, para de apretar y corta con un pequeño giro.",
+   "Para tiras y rosetas, manga a 45° y presión constante, terminando con un movimiento limpio.",
+   "Usa plantillas bajo el papel para piezas iguales."
+  ],
+  "ratios": [
+   {
+    "use": "Llenado",
+    "ratio": "Mitad de la manga",
+    "note": "Más, se calienta la masa y cuesta controlar."
+   },
+   {
+    "use": "Altura",
+    "ratio": "0,5–1 cm sobre la bandeja",
+    "note": "Para bolas y discos."
+   },
+   {
+    "use": "Boquillas básicas",
+    "ratio": "Lisa de 8–12 mm, rizada de 10 mm y una fina de 3–4 mm",
+    "note": "Cubren casi todo."
+   }
+  ],
+  "variants": [
+   {
+    "id": "pasta-choux",
+    "name": "Choux",
+    "note": "Bolas y relámpagos."
+   },
+   {
+    "id": "macarons",
+    "name": "Macarons",
+    "note": "Discos iguales."
+   },
+   {
+    "id": "merengues",
+    "name": "Merengues",
+    "note": "Rosetas y formas."
+   }
+  ],
+  "keys": [
+   "Media manga y sin aire.",
+   "Presión constante desde arriba.",
+   "Masa a la temperatura justa.",
+   "Plantillas para piezas iguales.",
+   "Practica en papel antes del servicio."
+  ],
+  "errors": [
+   {
+    "p": "Formas irregulares",
+    "fix": "Presión desigual. Aprieta constante y para antes de levantar."
+   },
+   {
+    "p": "Picos en las bolas",
+    "fix": "Levantado sin cortar. Para de apretar y gira al soltar."
+   },
+   {
+    "p": "Crema que se corta en la manga",
+    "fix": "Mano caliente. Llena menos y cambia de manga."
+   }
+  ],
+  "history": "La manga pastelera y las boquillas metálicas se generalizaron en la pastelería europea del siglo XIX y son hoy una herramienta básica.",
+  "uses": [
+   "Masas (choux, macarons, bizcochos)",
+   "Cremas y rellenos",
+   "Decoración",
+   "Puntos de geles y salsas en emplatado"
+  ],
+  "keep": "Mangas desechables o lavables bien secas; boquillas limpias y secas.",
+  "pro": "Ten mangas preparadas con las cremas del servicio en frío; cámbialas a mitad para que no se calienten.",
+  "related": [
+   "pasta-choux",
+   "macarons",
+   "merengues",
+   "montaje-y-cobertura-de-tartas",
+   "cremas-de-mantequilla",
+   "emplatado"
+  ]
+ },
+ {
+  "id": "precision-en-pasteleria",
+  "name": "Precisión en pastelería",
+  "name_en": "Precision in pastry",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "pesar en pasteleria",
+   "bascula",
+   "termometro de pasteleria",
+   "temperatura de ingredientes",
+   "horno de conveccion",
+   "mise en place pastelera"
+  ],
+  "summary": "Las reglas de la pastelería exacta: pesarlo todo, controlar la temperatura de ingredientes y masas, conocer el horno y apuntar cada resultado.",
+  "what": "En cocina salada se corrige sobre la marcha; en pastelería, casi todo se decide antes de hornear. Por eso se pesan también los líquidos y los huevos, se usa una báscula de precisión para levaduras, gelatinas y sal, se controla con termómetro la temperatura de la mantequilla, las masas y los almíbares, y se conoce el propio horno: dónde calienta más y cómo cambia con el ventilador. Cada receta probada se apunta con sus condiciones para poder repetirla.",
+  "method": [
+   "Pesa todo, también líquidos y huevos, en una báscula de 1 g; usa una de 0,1 g para levaduras, gelatinas, agar y especias.",
+   "Saca los ingredientes con antelación: huevos y mantequilla a la temperatura que pide la receta.",
+   "Usa termómetro para almíbares, cremas, chocolate y la temperatura final de las masas.",
+   "Conoce tu horno: comprueba con un termómetro de horno la temperatura real y los puntos calientes; en convección, baja 10–20 °C respecto a estático.",
+   "Prepara toda la mise en place pesada antes de empezar.",
+   "Apunta en la ficha temperatura del horno, posición de la bandeja, tiempo y resultado."
+  ],
+  "ratios": [
+   {
+    "use": "Báscula de precisión",
+    "ratio": "0,1 g para cantidades de menos de 20 g",
+    "note": "Gelatina, agar, levadura, sal."
+   },
+   {
+    "use": "Horno de convección",
+    "ratio": "10–20 °C menos que en estático",
+    "note": "Comprueba con tu horno."
+   },
+   {
+    "use": "Mantequilla pomada",
+    "ratio": "18–20 °C",
+    "note": "Para cremar y para cremas de mantequilla."
+   }
+  ],
+  "variants": [
+   {
+    "id": "de-la-prueba-a-la-receta-fija",
+    "name": "De la prueba a la receta fija",
+    "note": "Cómo estandarizar."
+   },
+   {
+    "id": "caramelo",
+    "name": "Puntos del azúcar",
+    "note": "Donde el termómetro es imprescindible."
+   },
+   {
+    "id": "chocolate-y-templado",
+    "name": "Templado",
+    "note": "Temperaturas exactas del chocolate."
+   }
+  ],
+  "keys": [
+   "Pesa todo.",
+   "Ingredientes a la temperatura de la receta.",
+   "Termómetro siempre a mano.",
+   "Conoce y calibra tu horno.",
+   "Apunta cada resultado."
+  ],
+  "errors": [
+   {
+    "p": "Recetas que salen distintas",
+    "fix": "Medidas a ojo o en volumen. Pesa todo."
+   },
+   {
+    "p": "Masas que se cortan",
+    "fix": "Ingredientes fríos o calientes. Atempéralos antes."
+   },
+   {
+    "p": "Horneados desiguales",
+    "fix": "Horno con puntos calientes. Gira la bandeja y comprueba la temperatura real."
+   }
+  ],
+  "history": "La pastelería profesional siempre ha trabajado con peso y proporciones; los termómetros digitales y las básculas de precisión la han hecho aún más exacta.",
+  "uses": [
+   "Toda la partida de postres",
+   "Formación",
+   "Recetas nuevas",
+   "Repetir resultados"
+  ],
+  "keep": "Revisa la calibración de báscula y termómetros de vez en cuando con referencias conocidas (agua con hielo a 0 °C).",
+  "pro": "Ten en la partida de postres báscula de 0,1 g, termómetro de sonda y termómetro de horno; son las herramientas más importantes.",
+  "related": [
+   "de-la-prueba-a-la-receta-fija",
+   "caramelo",
+   "chocolate-y-templado",
+   "gelificantes-y-espesantes",
+   "temperatura-de-servicio"
+  ]
+ },
+ {
+  "id": "panes-trenzados",
+  "name": "Panes trenzados",
+  "name_en": "Braided breads",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "pan trenzado",
+   "trenza",
+   "challah",
+   "jala",
+   "trenza de pan dulce",
+   "trenzado de masa"
+  ],
+  "summary": "Masas enriquecidas trenzadas con tres, cuatro o seis cabos: cómo hacer la masa, trenzar y hornear un pan dulce o semidulce brillante.",
+  "what": "La masa es una masa enriquecida con huevo, aceite o mantequilla y algo de miel o azúcar, firme para que los cabos mantengan la forma. Se divide en tiras iguales, se trenzan con tres, cuatro o seis cabos, y se fermenta y pinta con huevo para un brillo intenso. El challah judío es el ejemplo clásico; muchas tradiciones europeas tienen trenzas de fiesta. Es una buena base para panes de servicio dulces o con semillas.",
+  "base": {
+   "for": "una trenza de unos 900 g",
+   "items": [
+    [
+     "Harina de fuerza",
+     "500 g"
+    ],
+    [
+     "Agua templada",
+     "180 g"
+    ],
+    [
+     "Huevos",
+     "2 y 1 para pintar"
+    ],
+    [
+     "Aceite de oliva suave o mantequilla",
+     "50 g"
+    ],
+    [
+     "Miel o azúcar",
+     "50 g"
+    ],
+    [
+     "Levadura fresca",
+     "12 g"
+    ],
+    [
+     "Sal",
+     "9 g"
+    ],
+    [
+     "Sésamo o amapola (opcional)",
+     "para cubrir"
+    ]
+   ],
+   "steps": [
+    "Amasa todo 10 minutos hasta una masa lisa y firme. Fermenta hasta que doble, 1–1,5 horas.",
+    "Divide en cabos iguales (pesa cada uno) y estíralos en tiras de 40 cm, más gruesas en el centro.",
+    "Trenza apretando un poco y sella los extremos metiéndolos debajo.",
+    "Fermenta hasta que crezca un 50–70 %, 45–60 minutos; pinta con huevo.",
+    "Vuelve a pintar justo antes del horno, espolvorea semillas y hornea a 180 °C, 30–35 minutos, hasta que el corazón marque 92–94 °C."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Masa",
+    "ratio": "36 % de agua, 2 huevos, 10 % de grasa y 10 % de miel sobre la harina",
+    "note": "Firme para trenzar."
+   },
+   {
+    "use": "Cabos",
+    "ratio": "3, 4 o 6 de peso idéntico",
+    "note": "Pesa cada uno."
+   },
+   {
+    "use": "Horneado",
+    "ratio": "180 °C, 30–35 minutos",
+    "note": "Doble pintado para el brillo."
+   }
+  ],
+  "variants": [
+   {
+    "id": "brioche",
+    "name": "Brioche trenzado",
+    "note": "Masa más mantecosa."
+   },
+   {
+    "id": "roscon-y-panes-dulces",
+    "name": "Panes dulces de fiesta",
+    "note": "Roscón y monas."
+   },
+   {
+    "id": "pan-y-focaccia",
+    "name": "Pan de levadura",
+    "note": "La masa sin enriquecer."
+   }
+  ],
+  "keys": [
+   "Masa firme para que los cabos no se aplasten.",
+   "Cabos del mismo peso.",
+   "Trenza sin apretar de más: necesita crecer.",
+   "Doble pintado con huevo.",
+   "Corazón a 92–94 °C."
+  ],
+  "errors": [
+   {
+    "p": "Trenza deformada",
+    "fix": "Masa blanda o cabos desiguales. Masa más firme y pesa los cabos."
+   },
+   {
+    "p": "Se abre entre cabos",
+    "fix": "Trenza demasiado apretada o poca fermentación. Trenza suelto y deja crecer."
+   },
+   {
+    "p": "Pálida",
+    "fix": "Pintado escaso. Pinta dos veces."
+   }
+  ],
+  "history": "Los panes trenzados son tradicionales en muchas culturas; el challah es el pan del sábado y de las fiestas en la tradición judía, y en Europa central abundan las trenzas de Pascua y Navidad.",
+  "uses": [
+   "Pan de servicio dulce",
+   "Desayuno y brunch",
+   "Torrijas",
+   "Pan de fiesta"
+  ],
+  "keep": "Tapado a temperatura ambiente, 2–3 días; congelado, 1 mes.",
+  "pro": "Haz trenzas pequeñas individuales para el servicio de pan del brunch.",
+  "related": [
+   "brioche",
+   "roscon-y-panes-dulces",
+   "pan-y-focaccia",
+   "torrijas-y-postres-de-pan",
+   "sesamo"
+  ]
+ },
+ {
+  "id": "rollos-de-canela",
+  "name": "Rollos de canela",
+  "name_en": "Cinnamon rolls",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "rollos de canela",
+   "cinnamon rolls",
+   "caracolas de canela",
+   "kanelbullar",
+   "bollos de canela"
+  ],
+  "summary": "Masa enriquecida enrollada con mantequilla, azúcar moreno y canela, cortada en rodajas, horneada y glaseada: bollería tierna de desayuno.",
+  "what": "Se estira una masa tipo [[brioche]] ligera, se unta con mantequilla pomada mezclada con azúcar moreno y canela, se enrolla y se corta en rodajas que se hornean juntas en una bandeja, de modo que crecen pegadas y quedan tiernas por los lados. Al salir se cubren con un glaseado de azúcar o de queso crema. La versión escandinava se enrolla y retuerce en nudos, con cardamomo, y se termina con azúcar perlado.",
+  "base": {
+   "for": "12 rollos",
+   "items": [
+    [
+     "Harina de fuerza",
+     "500 g"
+    ],
+    [
+     "Leche templada",
+     "250 g"
+    ],
+    [
+     "Huevo",
+     "1"
+    ],
+    [
+     "Azúcar",
+     "60 g"
+    ],
+    [
+     "Mantequilla pomada",
+     "70 g"
+    ],
+    [
+     "Levadura fresca",
+     "20 g"
+    ],
+    [
+     "Sal",
+     "8 g"
+    ],
+    [
+     "Relleno: mantequilla pomada, azúcar moreno y canela",
+     "100 g, 150 g y 12 g"
+    ],
+    [
+     "Glaseado: queso crema, azúcar glas y mantequilla",
+     "120 g, 100 g y 30 g"
+    ]
+   ],
+   "steps": [
+    "Amasa la harina, la leche, el huevo, el azúcar, la levadura y la sal; añade la mantequilla y amasa hasta una masa lisa. Fermenta hasta que doble.",
+    "Estira en un rectángulo de 40 × 30 cm y unta con la mezcla del relleno.",
+    "Enrolla por el lado largo apretando un poco y corta en 12 rodajas con hilo o cuchillo afilado.",
+    "Colócalas en una bandeja untada, algo separadas, y deja levar hasta que se toquen, 45–60 minutos.",
+    "Hornea a 180 °C, 20–25 minutos. Glasea en templado."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Masa",
+    "ratio": "50 % de leche, 12 % de azúcar y 14 % de mantequilla sobre la harina",
+    "note": "Tierna y fácil de estirar."
+   },
+   {
+    "use": "Relleno",
+    "ratio": "Mantequilla, azúcar moreno y canela 1 : 1,5 : 0,12",
+    "note": "Pomada, untable."
+   },
+   {
+    "use": "Horneado",
+    "ratio": "180 °C, 20–25 minutos",
+    "note": "Juntos en bandeja: más tiernos."
+   }
+  ],
+  "variants": [
+   {
+    "id": "masas-laminadas-fermentadas",
+    "name": "Caracolas de hojaldre fermentado",
+    "note": "Con masa laminada, más crujientes."
+   },
+   {
+    "id": "brioche",
+    "name": "Brioche",
+    "note": "La masa base."
+   },
+   {
+    "id": "especias",
+    "name": "Con cardamomo",
+    "note": "La versión escandinava."
+   }
+  ],
+  "keys": [
+   "Relleno pomada, no fundido: si no, se escapa.",
+   "Corta con hilo para no aplastar la espiral.",
+   "Juntos en la bandeja para que queden tiernos.",
+   "Glasea en templado.",
+   "Canela de buena calidad y fresca."
+  ],
+  "errors": [
+   {
+    "p": "Relleno que se sale y se quema",
+    "fix": "Mantequilla fundida o enrollado flojo. Usa pomada y enrolla firme."
+   },
+   {
+    "p": "Rollos secos",
+    "fix": "Horno largo. Saca en cuanto doren."
+   },
+   {
+    "p": "Espiral aplastada",
+    "fix": "Cuchillo romo. Corta con hilo."
+   }
+  ],
+  "history": "Los bollos de canela son muy populares en Suecia y en el resto de Escandinavia, y la versión glaseada se ha extendido desde Norteamérica.",
+  "uses": [
+   "Desayuno y brunch",
+   "Merienda",
+   "Petit four en mini",
+   "Pudin de pan"
+  ],
+  "keep": "Mejor el día. Formados y sin levar, congelados 1 mes; regenerados 5 minutos a 160 °C.",
+  "pro": "Forma y congela en bandeja; saca la noche anterior a cámara y hornea por la mañana.",
+  "related": [
+   "brioche",
+   "masas-laminadas-fermentadas",
+   "especias",
+   "glaseados-y-glasa-real",
+   "galletas-especiadas"
+  ]
+ },
+ {
+  "id": "casadielles",
+  "name": "Casadielles",
+  "name_en": "Casadielles",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "casadiella",
+   "casadielles asturianas",
+   "empanadillas de nuez",
+   "dulces de nuez asturianos"
+  ],
+  "summary": "Empanadillas asturianas de masa fina rellenas de nuez picada con azúcar y anís, fritas o al horno y rebozadas en azúcar.",
+  "what": "Son una masa sencilla de harina, aceite o manteca, vino blanco o anís y agua, estirada fina y rellena con un picado de nuez, azúcar y un poco de anís o vino dulce. Se cierran en forma de cilindro aplastado, se fríen (o se hornean) y se rebozan en azúcar. El contraste entre la masa crujiente y el relleno tierno de nuez es su gracia. Son de la familia de las masas fritas como las [[orelletes-y-bunyols|orelletes]].",
+  "base": {
+   "for": "unas 20 casadielles",
+   "items": [
+    [
+     "Harina",
+     "300 g"
+    ],
+    [
+     "Aceite de oliva suave",
+     "60 g"
+    ],
+    [
+     "Vino blanco",
+     "60 g"
+    ],
+    [
+     "Agua",
+     "60 g"
+    ],
+    [
+     "Sal",
+     "3 g"
+    ],
+    [
+     "Relleno: nuez picada",
+     "250 g"
+    ],
+    [
+     "Relleno: azúcar",
+     "120 g"
+    ],
+    [
+     "Relleno: anís o vino dulce",
+     "40 g"
+    ],
+    [
+     "Aceite para freír y azúcar para rebozar",
+     "c. s."
+    ]
+   ],
+   "steps": [
+    "Mezcla el aceite, el vino, el agua y la sal; añade la harina hasta una masa lisa que no se pegue. Reposa 30 minutos.",
+    "Mezcla la nuez con el azúcar y el anís hasta formar una pasta que se pueda moldear.",
+    "Estira la masa a 2 mm y corta rectángulos de 10 × 8 cm.",
+    "Pon un cilindro de relleno en cada uno, enrolla y sella los extremos con un tenedor.",
+    "Fríe en aceite a 170–175 °C hasta dorar (u hornea a 190 °C, 15–18 minutos) y reboza en azúcar en caliente."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Masa",
+    "ratio": "300 g de harina por 180 g de líquidos (aceite, vino y agua)",
+    "note": "Fina y elástica."
+   },
+   {
+    "use": "Relleno",
+    "ratio": "250 g de nuez, 120 g de azúcar y 40 g de anís",
+    "note": "Pasta moldeable."
+   },
+   {
+    "use": "Fritura",
+    "ratio": "170–175 °C",
+    "note": "Dorado uniforme."
+   }
+  ],
+  "variants": [
+   {
+    "id": "orelletes-y-bunyols",
+    "name": "Orelletes",
+    "note": "Masas fritas de la isla."
+   },
+   {
+    "id": "pestinos-y-dulces-de-sarten",
+    "name": "Pestiños",
+    "note": "Otra masa de sartén con vino."
+   },
+   {
+    "id": "frutos-secos",
+    "name": "Nueces",
+    "note": "Cómo tostar y conservar la nuez."
+   }
+  ],
+  "keys": [
+   "Masa fina para que cruja.",
+   "Relleno firme que no se salga.",
+   "Sellado con tenedor.",
+   "Rebozar en azúcar en caliente.",
+   "Nuez fresca, sin rancio."
+  ],
+  "errors": [
+   {
+    "p": "Se abren al freír",
+    "fix": "Mal sellados. Presiona con tenedor y deja la unión debajo."
+   },
+   {
+    "p": "Masa gruesa y dura",
+    "fix": "Estira más fino."
+   },
+   {
+    "p": "Relleno seco",
+    "fix": "Poco líquido en el relleno. Añade algo de anís o agua."
+   }
+  ],
+  "history": "Las casadielles son un dulce tradicional de Asturias, típico de carnaval y de fiestas.",
+  "uses": [
+   "Postre o merienda",
+   "Petit four",
+   "Dulce de fiesta",
+   "Con helado de vainilla"
+  ],
+  "keep": "En caja cerrada, 4–5 días.",
+  "pro": "Forma y congela crudas; fríe al momento y reboza en azúcar con canela.",
+  "related": [
+   "orelletes-y-bunyols",
+   "pestinos-y-dulces-de-sarten",
+   "frutos-secos",
+   "fritura",
+   "galletas-de-aceite"
+  ]
+ },
+ {
+  "id": "pantxineta",
+  "name": "Pantxineta",
+  "name_en": "Pantxineta",
+  "cat": "dulce",
+  "group": "Masas",
+  "aka": [
+   "pantxineta",
+   "panchineta",
+   "pastel de hojaldre y crema con almendra",
+   "tarta de hojaldre y almendra"
+  ],
+  "summary": "Pastel vasco de hojaldre relleno de crema pastelera y cubierto de almendra laminada, horneado hasta que el hojaldre cruje y la almendra se tuesta.",
+  "what": "Dos discos de [[hojaldre]] encierran una [[crema-pastelera]] espesa; la superficie se pinta con huevo y se cubre de almendra laminada, que se tuesta en el horno. El hojaldre queda crujiente, la crema tierna y la almendra le da el sabor tostado. Se sirve templada o a temperatura ambiente, a veces con azúcar glas. Existe en formato grande o individual.",
+  "base": {
+   "for": "una pantxineta de 24 cm",
+   "items": [
+    [
+     "Hojaldre",
+     "500 g"
+    ],
+    [
+     "Crema pastelera espesa (90 g de almidón por litro), fría",
+     "500 g"
+    ],
+    [
+     "Almendra laminada",
+     "80 g"
+    ],
+    [
+     "Huevo para pintar",
+     "1"
+    ],
+    [
+     "Azúcar glas",
+     "para terminar"
+    ]
+   ],
+   "steps": [
+    "Estira el hojaldre a 3 mm y corta dos discos de 26 y 24 cm.",
+    "Pon el disco grande en una bandeja con papel, extiende la crema dejando 2 cm de borde.",
+    "Pinta el borde con huevo, cubre con el otro disco y sella presionando.",
+    "Pinta la superficie, cubre con la almendra laminada y haz unos cortes pequeños para que salga el vapor.",
+    "Hornea a 190–200 °C, 35–40 minutos, hasta que el hojaldre esté muy dorado. Enfría un poco y espolvorea azúcar glas."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Crema",
+    "ratio": "500 g por pantxineta de 24 cm",
+    "note": "Espesa y fría."
+   },
+   {
+    "use": "Horneado",
+    "ratio": "190–200 °C, 35–40 minutos",
+    "note": "Hojaldre muy dorado."
+   },
+   {
+    "use": "Individuales",
+    "ratio": "Discos de 10 cm, 20–25 minutos",
+    "note": "Para servir templadas."
+   }
+  ],
+  "variants": [
+   {
+    "id": "pastel-vasco-y-tartas-rellenas",
+    "name": "Pastel vasco",
+    "note": "Otra tarta vasca rellena de crema, con masa sablée."
+   },
+   {
+    "id": "milhojas-y-palmeras",
+    "name": "Milhojas",
+    "note": "Hojaldre y crema montados."
+   },
+   {
+    "id": "tartas-de-fruta",
+    "name": "Tarta de crema de almendra",
+    "note": "Hojaldre con frangipane."
+   }
+  ],
+  "keys": [
+   "Crema espesa y fría para que no se escape.",
+   "Bordes bien sellados.",
+   "Cortes en la tapa para el vapor.",
+   "Hojaldre muy dorado: pálido queda blando.",
+   "Mejor templada."
+  ],
+  "errors": [
+   {
+    "p": "Crema que se sale",
+    "fix": "Crema blanda o bordes sin sellar. Usa crema firme y sella."
+   },
+   {
+    "p": "Hojaldre crudo debajo",
+    "fix": "Horno flojo o bandeja alta. Hornea abajo y alarga."
+   },
+   {
+    "p": "Almendra quemada",
+    "fix": "Horno fuerte al final. Cubre con papel si dora pronto."
+   }
+  ],
+  "history": "La pantxineta es un pastel tradicional del País Vasco, muy ligado a la pastelería de San Sebastián.",
+  "uses": [
+   "Postre templado",
+   "Merienda",
+   "Individuales para carta",
+   "Con helado de vainilla"
+  ],
+  "keep": "Mejor el día; regenerar unos minutos en horno. Cruda y montada, congelada 2 semanas.",
+  "pro": "Monta individuales y congélalas; hornea desde congelado alargando unos minutos.",
+  "related": [
+   "hojaldre",
+   "crema-pastelera",
+   "almendra",
+   "pastel-vasco-y-tartas-rellenas",
+   "milhojas-y-palmeras"
+  ]
+ },
+ {
+  "id": "leche-merengada",
+  "name": "Leche merengada",
+  "name_en": "Leche merengada",
+  "cat": "dulce",
+  "group": "Frío",
+  "aka": [
+   "leche merengada",
+   "helado de leche merengada",
+   "granizado de leche",
+   "leche helada con canela"
+  ],
+  "summary": "Leche infusionada con canela y limón, endulzada y helada, mezclada con merengue: un helado o granizado cremoso, ligero y muy español.",
+  "what": "Se infusiona leche con canela y piel de limón, se endulza, se enfría y se congela a medias; después se mezcla con un [[merengues|merengue]] para que quede ligera y cremosa, entre un helado y un granizado. Se sirve espolvoreada con canela, sola o con café (el «blanco y negro»). Como lleva clara sin cocer, se hace con merengue italiano o suizo, o con claras pasteurizadas.",
+  "base": {
+   "for": "unos 1,2 l",
+   "items": [
+    [
+     "Leche entera",
+     "1 l"
+    ],
+    [
+     "Nata (opcional, más cremosa)",
+     "100 g"
+    ],
+    [
+     "Azúcar",
+     "180 g"
+    ],
+    [
+     "Canela en rama y piel de limón",
+     "1 y 1"
+    ],
+    [
+     "Claras para merengue italiano o suizo",
+     "100 g"
+    ],
+    [
+     "Azúcar para el merengue",
+     "60 g"
+    ],
+    [
+     "Canela molida",
+     "para servir"
+    ]
+   ],
+   "steps": [
+    "Calienta la leche con la canela, la piel y el azúcar; deja infusionar tapada 30 minutos, cuela y enfría del todo.",
+    "Congela la leche en bandeja o mantécala a medias, hasta que esté espesa y con cristales.",
+    "Haz un merengue suizo (claras y azúcar a 70 °C, montadas hasta frías) o italiano.",
+    "Mezcla la leche medio helada con el merengue, con varilla, hasta una crema ligera.",
+    "Congela de nuevo 1–2 horas, removiendo, y sirve con canela."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Leche infusionada",
+    "ratio": "1 l de leche con 180 g de azúcar",
+    "note": "Infusión de 30 minutos."
+   },
+   {
+    "use": "Merengue",
+    "ratio": "100 g de claras y 60 g de azúcar, cocido a 70 °C o al estilo italiano",
+    "note": "Seguro sin clara cruda."
+   },
+   {
+    "use": "Servicio",
+    "ratio": "Semihelada, entre −8 y −10 °C",
+    "note": "Cremosa, no dura."
+   }
+  ],
+  "variants": [
+   {
+    "id": "helados-sin-maquina",
+    "name": "Granizados",
+    "note": "Helados sin máquina."
+   },
+   {
+    "id": "helados-y-sorbetes",
+    "name": "Helados",
+    "note": "Equilibrio de azúcar y sólidos."
+   },
+   {
+    "id": "cafe-y-te-en-cocina",
+    "name": "Blanco y negro",
+    "note": "Con café granizado o caliente."
+   }
+  ],
+  "keys": [
+   "Infusión larga para que la canela se note.",
+   "Merengue cocido: nada de clara cruda.",
+   "Mezcla con la leche medio helada.",
+   "Sirve semihelada.",
+   "Canela recién molida al servir."
+  ],
+  "errors": [
+   {
+    "p": "Bloque de hielo",
+    "fix": "Congelada del todo. Remueve y sirve semihelada."
+   },
+   {
+    "p": "Se separa el merengue",
+    "fix": "Leche líquida al mezclar. Mezcla con la leche espesa."
+   },
+   {
+    "p": "Sin aroma",
+    "fix": "Infusión corta. Alarga y usa canela de calidad."
+   }
+  ],
+  "history": "La leche merengada es una bebida helada y postre tradicional de España, muy popular en las horchaterías y heladerías en verano.",
+  "uses": [
+   "Postre de verano",
+   "Prepostre",
+   "Con café",
+   "Acompañar bizcochos y torrijas"
+  ],
+  "keep": "Congelada y tapada, 1 semana; dejar ablandar y remover antes de servir.",
+  "pro": "Prepara la base infusionada la víspera y móntala con el merengue el día de servicio.",
+  "related": [
+   "merengues",
+   "helados-sin-maquina",
+   "helados-y-sorbetes",
+   "leche-nata-y-mantequilla",
+   "especias"
+  ]
+ },
+ {
+  "id": "cocas-dulces-de-fiesta",
+  "name": "Cocas dulces de fiesta",
+  "name_en": "Festive sweet cocas",
+  "cat": "dulce",
+  "group": "Dulces de la isla",
+  "aka": [
+   "coca de sant joan",
+   "coca de llardons",
+   "coca de piñones",
+   "coca dulce",
+   "coca de crema",
+   "coca de fruta confitada"
+  ],
+  "summary": "Cocas dulces de masa enriquecida o de hojaldre cubiertas de crema, fruta confitada, piñones o chicharrones con azúcar, típicas de fiestas en Cataluña, Valencia y Baleares.",
+  "what": "Además de las cocas saladas de verdura ([[coca-y-masas-saladas]]), en el Mediterráneo español hay muchas cocas dulces. La de Sant Joan es una masa tipo brioche estirada en óvalo, cubierta de crema, fruta confitada, piñones y azúcar. La de chicharrones (llardons) es una masa de hojaldre o quebrada con chicharrones de cerdo picados, piñones y mucho azúcar, que se carameliza. Hay también cocas de piñones, de crema quemada o de anís según la zona y la fiesta.",
+  "base": {
+   "for": "una coca de Sant Joan de 40 × 20 cm",
+   "items": [
+    [
+     "Masa de brioche ligera (harina 400 g, leche 150 g, huevos 2, azúcar 60 g, mantequilla 60 g, levadura 15 g, sal 6 g, ralladura de limón)",
+     "unos 750 g"
+    ],
+    [
+     "Crema pastelera espesa",
+     "200 g"
+    ],
+    [
+     "Fruta confitada en tiras",
+     "150 g"
+    ],
+    [
+     "Piñones",
+     "40 g"
+    ],
+    [
+     "Azúcar",
+     "para espolvorear"
+    ],
+    [
+     "Huevo para pintar",
+     "1"
+    ]
+   ],
+   "steps": [
+    "Haz la masa y fermenta hasta que doble.",
+    "Estira en un óvalo de 1 cm de grosor sobre la bandeja y deja levar 45 minutos.",
+    "Pinta con huevo, pon tiras de crema con manga, la fruta confitada y los piñones, y espolvorea azúcar humedecido.",
+    "Hornea a 180 °C, 20–25 minutos, hasta que esté dorada.",
+    "Enfría sobre rejilla."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Coca de Sant Joan",
+    "ratio": "Masa enriquecida a 1 cm, con crema, fruta confitada y piñones",
+    "note": "180 °C, 20–25 minutos."
+   },
+   {
+    "use": "Coca de llardons",
+    "ratio": "Masa con 150 g de chicharrones picados, 50 g de piñones y 150 g de azúcar",
+    "note": "190–200 °C hasta caramelizar."
+   },
+   {
+    "use": "Coca de piñones",
+    "ratio": "Masa fina cubierta de piñones y azúcar",
+    "note": "Vigila que los piñones no se quemen."
+   }
+  ],
+  "variants": [
+   {
+    "id": "coca-y-masas-saladas",
+    "name": "Cocas saladas",
+    "note": "Las de verdura de la isla."
+   },
+   {
+    "id": "roscon-y-panes-dulces",
+    "name": "Panes dulces de fiesta",
+    "note": "Roscón y monas."
+   },
+   {
+    "id": "chicharrones-y-cortezas",
+    "name": "Chicharrones",
+    "note": "El ingrediente de la coca de llardons."
+   }
+  ],
+  "keys": [
+   "Masa bien fermentada y estirada pareja.",
+   "Fruta confitada de buena calidad.",
+   "Piñones vigilados en el horno: se queman rápido.",
+   "Azúcar humedecido para que haga costra.",
+   "Mejor del día."
+  ],
+  "errors": [
+   {
+    "p": "Masa densa",
+    "fix": "Poca fermentación. Deja levar más."
+   },
+   {
+    "p": "Piñones quemados",
+    "fix": "Horno alto. Cubre con papel al final."
+   },
+   {
+    "p": "Crema que se escapa",
+    "fix": "Crema blanda. Usa una más espesa."
+   }
+  ],
+  "history": "Las cocas dulces son tradicionales de las fiestas de Cataluña, Valencia y Baleares; la coca de Sant Joan se toma en la noche de San Juan en Cataluña.",
+  "uses": [
+   "Dulce de fiesta",
+   "Merienda",
+   "Postre para compartir",
+   "Desayuno de fiesta"
+  ],
+  "keep": "Tapada a temperatura ambiente, 1–2 días.",
+  "pro": "Forma la coca y congélala antes de levar; saca la noche anterior y hornea el día de la fiesta.",
+  "related": [
+   "coca-y-masas-saladas",
+   "roscon-y-panes-dulces",
+   "chicharrones-y-cortezas",
+   "brioche",
+   "crema-pastelera",
+   "frutas-en-almibar"
+  ]
  }
 ]

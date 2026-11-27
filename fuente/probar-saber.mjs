@@ -53,9 +53,9 @@ ok((await page.textContent('.kversion')).includes('caldo de jamón') && await pa
 ok(await page.isVisible('#kText'), 'después de guardar no sigues en tu versión');
 await go('#/biblioteca'); await page.fill('#saberQ', ''); await page.waitForSelector('.kshelf'); ok((await page.textContent('#view')).includes('Con tu versión') && (await page.textContent('#view')).includes('Lo último que has consultado'), 'el inicio no marca tus versiones ni lo último consultado');
 // Crear una entrada que falta
-await page.fill('#saberQ', 'salsa de ostras'); await wait(150);
+await page.fill('#saberQ', 'salsa de ostras casera'); await wait(150);
 await page.evaluate(() => localStorage.setItem('id-cocina-ia', JSON.stringify({key: 'sk-proj-prueba0123456789abcdefghijklmnop', daily: false})));
-await page.reload(); await page.waitForSelector('#saberQ'); await page.fill('#saberQ', 'salsa de ostras'); await wait(200);
+await page.reload(); await page.waitForSelector('#saberQ'); await page.fill('#saberQ', 'salsa de ostras casera'); await wait(200);
 await page.click('[data-act=create-ia]'); await page.waitForSelector('.kentry h1');
 ok(lastBody?.model === 'gpt-5.5' && lastBody?.reasoning?.effort === 'medium', 'la ficha no se pide al modelo más listo: ' + JSON.stringify([lastBody?.model, lastBody?.reasoning]));
 ok((await page.textContent('.kentry h1')) === 'Salsa de ostras casera' && (await page.textContent('.kentry')).includes('reducción'), 'no se crea la entrada con ChatGPT');

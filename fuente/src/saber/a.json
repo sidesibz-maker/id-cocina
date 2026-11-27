@@ -5388,5 +5388,950 @@
       "cebolla-y-ajo",
       "enzimas-en-cocina"
     ]
+  },
+  {
+    "id": "salsa-perigueux",
+    "name": "Salsa Périgueux",
+    "name_en": "Périgueux sauce",
+    "aka": [
+      "périgueux",
+      "salsa de trufa",
+      "salsa perigord",
+      "salsa périgourdine",
+      "demi-glace con trufa"
+    ],
+    "cat": "salsas",
+    "group": "Derivadas de la española",
+    "summary": "Demi-glace con vino de Madeira y trufa negra picada: la salsa oscura de lujo para carnes, aves, foie y hojaldres.",
+    "what": "Es una derivada de la [[demi-glace]]: se reduce vino de Madeira (o un vino generoso seco o semiseco), se moja con demi-glace, se cuece hasta napar y se termina fuera del fuego con trufa negra picada y, si se quiere, su jugo. La versión périgourdine lleva la trufa en láminas o en dados en lugar de picada, y a veces un poco de foie montado al final.\n\nEl sabor depende de tres cosas: una demi-glace limpia y bien reducida, un vino con carácter que no se queme en la reducción y trufa de verdad añadida al final, porque su aroma se pierde con el hervor. Acompaña solomillo, pichón, ave asada, huevos, hojaldres rellenos y foie. Para el producto, ver [[trufa]]; para la base, [[espanola|salsa española]].",
+    "base": {
+      "for": "unos 300 ml",
+      "items": [
+        [
+          "Chalota picada fina",
+          "30 g"
+        ],
+        [
+          "Mantequilla",
+          "15 g"
+        ],
+        [
+          "Vino de Madeira u otro vino generoso",
+          "150 ml"
+        ],
+        [
+          "Demi-glace",
+          "300 ml"
+        ],
+        [
+          "Trufa negra picada",
+          "20–30 g"
+        ],
+        [
+          "Jugo de trufa (opcional)",
+          "20 ml"
+        ],
+        [
+          "Mantequilla fría para montar",
+          "20 g"
+        ]
+      ],
+      "steps": [
+        "Suda la chalota en la mantequilla 2–3 minutos sin color.",
+        "Añade 100 ml del vino y reduce a la mitad.",
+        "Moja con la demi-glace y cuece a fuego suave hasta que nape la cuchara, 8–10 minutos, desespumando.",
+        "Cuela por chino fino, añade el resto del vino y el jugo de trufa y da un hervor corto.",
+        "Fuera del fuego, añade la trufa picada y monta con la mantequilla fría. No vuelvas a hervir."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Salsa clásica",
+        "ratio": "Trufa al 7–10 % del peso de la salsa",
+        "note": "Picada fina."
+      },
+      {
+        "use": "Périgourdine",
+        "ratio": "Trufa en dados o láminas, misma cantidad",
+        "note": "Más visible en el plato."
+      },
+      {
+        "use": "Ración",
+        "ratio": "30–40 ml por plato",
+        "note": "Muy concentrada."
+      },
+      {
+        "use": "Con foie",
+        "ratio": "20 g de foie por cada 100 ml, montado al final",
+        "note": "Más untuosa."
+      }
+    ],
+    "variants": [
+      {
+        "id": "demi-glace",
+        "name": "Demi-glace",
+        "note": "La base."
+      },
+      {
+        "id": null,
+        "name": "Périgourdine",
+        "note": "Trufa en dados o láminas."
+      },
+      {
+        "id": null,
+        "name": "Salsa Madeira",
+        "note": "La misma sin trufa."
+      },
+      {
+        "id": "salsas-de-vino",
+        "name": "Salsas de vino",
+        "note": "Otras reducciones de vino sobre fondo oscuro."
+      }
+    ],
+    "keys": [
+      "Demi-glace de calidad: es el cuerpo de la salsa.",
+      "Parte del vino al principio y parte al final, para que conserve aroma.",
+      "Trufa fuera del fuego.",
+      "No hervir una vez añadida la trufa.",
+      "Montar con mantequilla fría para dar brillo."
+    ],
+    "errors": [
+      {
+        "p": "Salsa sin aroma de trufa",
+        "fix": "Trufa hervida o de poca calidad. Añádela al final y fuera del fuego."
+      },
+      {
+        "p": "Salsa demasiado dulce",
+        "fix": "Vino muy dulce o demasiado reducido. Usa un generoso seco o equilibra con unas gotas de vinagre de Jerez."
+      },
+      {
+        "p": "Salsa gomosa",
+        "fix": "Demi-glace reducida de más. Aclara con un poco de fondo."
+      }
+    ],
+    "history": "Toma su nombre del Périgord, en el suroeste de Francia, región conocida por su trufa negra y su foie. Forma parte de las derivadas de la salsa española fijadas por la cocina francesa clásica.",
+    "uses": [
+      "Solomillo y carnes rojas",
+      "Pichón y ave asada",
+      "Foie",
+      "Hojaldres y huevos"
+    ],
+    "keep": "Sin trufa, 4–5 días en frío o 2 meses congelada. Con trufa, mejor en el día: el aroma se apaga.",
+    "pro": "Ten la base de vino y demi-glace hecha y reducida; añade la trufa y monta por tandas pequeñas durante el servicio, al baño maría sin hervir.",
+    "related": [
+      "demi-glace",
+      "espanola",
+      "trufa",
+      "salsas-de-vino",
+      "vinos-y-licores",
+      "reducciones"
+    ]
+  },
+  {
+    "id": "salsa-normanda",
+    "name": "Salsa normanda",
+    "name_en": "Normande sauce",
+    "aka": [
+      "normanda",
+      "sauce normande",
+      "velouté de pescado con nata",
+      "salsa de pescado con champiñón"
+    ],
+    "cat": "salsas",
+    "group": "Derivadas del velouté",
+    "summary": "Velouté de pescado enriquecido con fumet de champiñón, nata y yema, terminado con mantequilla: la salsa blanca clásica para pescados escalfados y mariscos.",
+    "what": "Es una derivada del [[veloute|velouté]] de pescado, es decir, un [[fumet]] ligado con [[roux]] rubio. Se le añade el líquido de cocción de champiñones y, si hay, de mejillones u ostras; se reduce con nata y se liga al final con yema, como una [[alemana]] de pescado, para montarla con mantequilla.\n\nSale una salsa blanca, sedosa y con sabor a mar y a seta, que se sirve con pescado blanco escalfado (lenguado, rodaballo, rape) y guarniciones de champiñón, mejillón o gamba. En la región que le da nombre también se perfuma con sidra. Es más rica que la salsa de vino blanco y más fina que la [[salsa-americana]].",
+    "base": {
+      "for": "unos 500 ml",
+      "items": [
+        [
+          "Velouté de pescado",
+          "400 ml"
+        ],
+        [
+          "Caldo de cocción de champiñón",
+          "100 ml"
+        ],
+        [
+          "Jugo de cocción de mejillón u ostra (opcional)",
+          "50 ml"
+        ],
+        [
+          "Nata líquida para cocinar",
+          "100 ml"
+        ],
+        [
+          "Yemas",
+          "2"
+        ],
+        [
+          "Mantequilla fría",
+          "40 g"
+        ],
+        [
+          "Zumo de limón, sal y pimienta blanca",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Calienta el velouté con el caldo de champiñón y el jugo de marisco y reduce a fuego suave, removiendo, hasta unos 400 ml.",
+        "Añade la mitad de la nata y deja que vuelva a napar.",
+        "Mezcla las yemas con el resto de la nata, templa con un poco de salsa caliente y devuelve al cazo.",
+        "Calienta removiendo sin que hierva hasta que la salsa llegue a 80 °C y espese ligeramente.",
+        "Cuela, monta con la mantequilla fría en dados y ajusta con unas gotas de limón y sal."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Ligazón",
+        "ratio": "2 yemas por cada 500 ml",
+        "note": "Más yema, más rica y más frágil."
+      },
+      {
+        "use": "Champiñón",
+        "ratio": "Cocción de 250 g de champiñón en 150 ml de agua con limón y mantequilla",
+        "note": "Se usa el líquido."
+      },
+      {
+        "use": "Ración",
+        "ratio": "60–80 ml por plato",
+        "note": "Napando el pescado."
+      },
+      {
+        "use": "Con sidra",
+        "ratio": "100 ml de sidra seca reducida a la mitad",
+        "note": "Versión regional."
+      }
+    ],
+    "variants": [
+      {
+        "id": "veloute",
+        "name": "Velouté de pescado",
+        "note": "La base."
+      },
+      {
+        "id": "alemana",
+        "name": "Alemana",
+        "note": "La misma ligazón con fondo de ternera."
+      },
+      {
+        "id": null,
+        "name": "Salsa de vino blanco",
+        "note": "Más sencilla, sin champiñón ni yema."
+      },
+      {
+        "id": "salsa-americana",
+        "name": "Americana",
+        "note": "Salsa de marisco más intensa."
+      }
+    ],
+    "keys": [
+      "Un velouté de pescado limpio y bien cocido.",
+      "Los jugos de champiñón y marisco dan el carácter.",
+      "Yema templada y sin hervir.",
+      "Mantequilla fría al final para dar brillo.",
+      "Limón justo para levantarla."
+    ],
+    "errors": [
+      {
+        "p": "Salsa granulada",
+        "fix": "Hirvió con la yema. Retira del fuego al espesar y no pases de 80 °C."
+      },
+      {
+        "p": "Sabor a harina",
+        "fix": "Velouté poco cocido. Cuécelo 20–30 minutos antes."
+      },
+      {
+        "p": "Salsa plana",
+        "fix": "Faltan los jugos de cocción. Usa fumet bueno y el caldo de champiñón reducido."
+      }
+    ],
+    "history": "Es una salsa de la cocina francesa clásica, ligada a la tradición de pescado, nata y mantequilla del norte de Francia. Su receta quedó fijada entre las derivadas del velouté en la cocina de restaurante del siglo XX.",
+    "uses": [
+      "Lenguado y pescado blanco escalfado",
+      "Mejillones y ostras",
+      "Gratinados de pescado",
+      "Rellenos de vol-au-vent"
+    ],
+    "keep": "Mantener a 60–65 °C al baño maría como mucho 2 horas; lo que sobra, se tira. El velouté base, 3 días en frío.",
+    "pro": "Ten el velouté hecho y el caldo de champiñón reducido; liga con yema y monta en tandas pequeñas durante el servicio.",
+    "related": [
+      "veloute",
+      "fumet",
+      "alemana",
+      "ligazones",
+      "setas",
+      "mejillon-y-almeja"
+    ]
+  },
+  {
+    "id": "sineresis-y-estabilidad-de-geles",
+    "name": "Sinéresis y estabilidad de geles",
+    "name_en": "Syneresis and gel stability",
+    "aka": [
+      "sinéresis",
+      "gel que suelta agua",
+      "lloro de la gelatina",
+      "estabilidad de cremas",
+      "suero en el yogur"
+    ],
+    "cat": "conceptos",
+    "group": "Fundamentos",
+    "summary": "Por qué un gel, una crema o un flan sueltan líquido con el tiempo y cómo evitarlo: tipo de gelificante, dosis, azúcar, ácido y congelación.",
+    "what": "La sinéresis es el líquido que suelta un gel al reposar: la gota de agua sobre la panna cotta, el suero del yogur, el agua al fondo de una crema con almidón o de un flan pasado. Pasa cuando la red que forma el gel se aprieta con el tiempo y expulsa agua.\n\nCada gelificante tiene su tendencia. El agar suelta bastante, sobre todo si está muy concentrado; la gelatina casi nada en frío; los almidones normales sueltan agua al enfriarse y, mucho más, al congelarse, por la retrogradación ([[gelatinizacion-de-almidones]]). La proteína del huevo sobrecocida se contrae y suelta agua, igual que el queso o el yogur removidos. Se combate con la dosis justa, mezclas de gelificantes, azúcar, nata o yema que retienen agua, y evitando congelar lo que no aguanta. Ver [[gelificantes-y-espesantes]].",
+    "base": {
+      "for": "Tendencia a soltar agua",
+      "items": [
+        [
+          "Gelatina",
+          "muy baja en frío"
+        ],
+        [
+          "Agar",
+          "media o alta; mayor cuanto más concentrado"
+        ],
+        [
+          "Almidón de trigo o maíz",
+          "alta al enfriar y al congelar"
+        ],
+        [
+          "Almidones de tapioca o modificados",
+          "baja; aguantan mejor la congelación"
+        ],
+        [
+          "Huevo sobrecocido (flan, crema)",
+          "alta: la proteína se contrae"
+        ],
+        [
+          "Lácteos cuajados removidos",
+          "alta: sueltan suero"
+        ]
+      ],
+      "steps": [
+        "Elige el gelificante según cuánto tiempo y a qué temperatura va a estar el gel.",
+        "Ajusta la dosis: un gel más firme de lo necesario suele soltar más agua.",
+        "Con agar, añade una pequeña parte de goma o algo de gelatina para retener el agua.",
+        "No congeles cremas con almidón normal; usa uno modificado o almidón de tapioca si debe congelarse.",
+        "Cuece las cremas de huevo hasta su punto, no más; enfría rápido y tapa a piel."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Gel de agar más estable",
+        "ratio": "Agar 0,5 % y goma xantana 0,1 %",
+        "note": "Menos lloro."
+      },
+      {
+        "use": "Crema de almidón para congelar",
+        "ratio": "Sustituir por almidón de tapioca",
+        "note": "O modificado."
+      },
+      {
+        "use": "Flan",
+        "ratio": "80–85 °C en el centro como mucho",
+        "note": "Más, se agrieta y suelta suero."
+      },
+      {
+        "use": "Yogur o queso fresco",
+        "ratio": "Escurrir y no batir en exceso",
+        "note": "Removido, suelta suero."
+      }
+    ],
+    "variants": [
+      {
+        "id": "gelificantes-y-espesantes",
+        "name": "Gelificantes",
+        "note": "Cómo se comporta cada uno."
+      },
+      {
+        "id": "gelatinizacion-de-almidones",
+        "name": "Retrogradación",
+        "note": "El almidón que suelta agua."
+      },
+      {
+        "id": "coagulacion-de-proteinas",
+        "name": "Proteínas",
+        "note": "Huevo y lácteos sobrecocidos."
+      },
+      {
+        "id": "gelatinas-saladas",
+        "name": "Gelatinas saladas",
+        "note": "Aplicación práctica."
+      }
+    ],
+    "keys": [
+      "Todo gel tiende a apretarse con el tiempo.",
+      "La gelatina es la más estable en frío; el agar, la que más llora.",
+      "Almidón normal y congelador no se llevan.",
+      "El huevo sobrecocido suelta agua.",
+      "Azúcar, grasa y gomas ayudan a retener el agua."
+    ],
+    "errors": [
+      {
+        "p": "Gel de agar con agua encima",
+        "fix": "Agar alto o gel viejo. Baja la dosis, añade una goma y gelifica en el día."
+      },
+      {
+        "p": "Crema pastelera aguada tras congelar",
+        "fix": "Retrogradación. No la congeles o usa otro almidón."
+      },
+      {
+        "p": "Flan con agujeros y suero",
+        "fix": "Sobrecocido. Horno más suave y baño maría."
+      }
+    ],
+    "history": "El fenómeno es tan antiguo como los cuajados y las gelatinas. La ciencia de los alimentos le puso nombre y explicó su causa en la estructura de los geles.",
+    "uses": [
+      "Geles y gelatinas",
+      "Cremas y flanes",
+      "Lácteos cuajados",
+      "Elaboraciones que se congelan"
+    ],
+    "keep": "No aplica: es un principio.",
+    "pro": "Haz los geles de agar en el día o pruébalos a las 24 horas antes de producir en cantidad. Anota en la ficha si una elaboración admite congelación.",
+    "related": [
+      "gelificantes-y-espesantes",
+      "gelatinizacion-de-almidones",
+      "coagulacion-de-proteinas",
+      "gelatinas-saladas",
+      "panna-cotta-y-cuajadas",
+      "crema-pastelera"
+    ]
+  },
+  {
+    "id": "espumas-y-burbujas",
+    "name": "Espumas y burbujas",
+    "name_en": "Foams and bubbles",
+    "aka": [
+      "espumas",
+      "aire en cocina",
+      "montar",
+      "estabilizar una espuma",
+      "aires de lecitina"
+    ],
+    "cat": "conceptos",
+    "group": "Fundamentos",
+    "summary": "Cómo se atrapa aire en un líquido y qué lo mantiene: proteínas, grasa, azúcar, gelatina o lecitina, y por qué una espuma se viene abajo.",
+    "what": "Una espuma es aire repartido en burbujas pequeñas dentro de un líquido o un sólido. El aire solo no se queda: algo tiene que formar una película alrededor de cada burbuja. En la clara montada son las proteínas que se despliegan al batir; en la nata montada, los glóbulos de grasa que se unen entre sí; en un aire de lecitina, una sustancia que se coloca entre agua y aire; en una espuma de sifón, a menudo gelatina, grasa o almidón que espesan el líquido.\n\nLas espumas se rompen porque el líquido escurre hacia abajo, las burbujas se juntan y el gas se escapa. Lo frenan la viscosidad (azúcar, gelatina, gomas), el frío en las espumas de grasa y las burbujas pequeñas. La grasa enemiga de la clara: una gota de yema la impide montar. Ver [[merengues]] y [[espumas-con-sifon]].",
+    "base": {
+      "for": "Qué sostiene cada espuma",
+      "items": [
+        [
+          "Clara montada",
+          "proteína; el azúcar y el ácido la estabilizan"
+        ],
+        [
+          "Nata montada",
+          "grasa en frío; mínimo un 30–35 % de grasa"
+        ],
+        [
+          "Aire de lecitina",
+          "lecitina al 0,3–0,6 % en un líquido sin mucha grasa"
+        ],
+        [
+          "Espuma de sifón",
+          "gelatina, grasa, almidón o huevo que dan cuerpo"
+        ],
+        [
+          "Masa batida o bizcocho",
+          "proteína y almidón que fijan el aire con el calor"
+        ],
+        [
+          "Enemigos",
+          "grasa en la clara, calor en la nata, tiempo en todas"
+        ]
+      ],
+      "steps": [
+        "Decide qué va a sostener la espuma y elige su condición: frío para la grasa, limpieza para la proteína.",
+        "Monta las claras en recipiente limpio y sin grasa; añade el azúcar poco a poco cuando empiecen a espumar.",
+        "Monta la nata muy fría, con el recipiente frío, y para antes de que se corte.",
+        "Para aires, bate la superficie del líquido con la batidora inclinada y recoge solo la espuma de arriba.",
+        "Sirve las espumas inestables al momento o dales cuerpo con gelatina o goma."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Merengue estable",
+        "ratio": "Azúcar 1–2 veces el peso de la clara",
+        "note": "Más azúcar, más estable y denso."
+      },
+      {
+        "use": "Nata montada",
+        "ratio": "Nata del 35 % a 4–6 °C",
+        "note": "Con menos grasa no monta bien."
+      },
+      {
+        "use": "Aire de lecitina",
+        "ratio": "3–6 g por litro de líquido",
+        "note": "Recoger la espuma de arriba."
+      },
+      {
+        "use": "Espuma caliente de sifón",
+        "ratio": "Gelatina 1–1,5 % o almidón al 2–3 %",
+        "note": "Según la base."
+      }
+    ],
+    "variants": [
+      {
+        "id": "merengues",
+        "name": "Merengues",
+        "note": "Espuma de proteína y azúcar."
+      },
+      {
+        "id": "espumas-con-sifon",
+        "name": "Sifón",
+        "note": "Gas a presión en un líquido con cuerpo."
+      },
+      {
+        "id": "emulsiones",
+        "name": "Emulsiones",
+        "note": "Grasa en agua: la idea vecina."
+      },
+      {
+        "id": "bizcochos",
+        "name": "Bizcochos",
+        "note": "Espumas que el horno fija."
+      }
+    ],
+    "keys": [
+      "Algo tiene que envolver cada burbuja.",
+      "Grasa en la clara: no monta.",
+      "Nata fría y con grasa suficiente.",
+      "Azúcar, gelatina y gomas alargan la vida de la espuma.",
+      "Burbujas pequeñas, espuma más estable."
+    ],
+    "errors": [
+      {
+        "p": "Claras que no montan",
+        "fix": "Grasa o yema. Recipiente limpio y claras sin rastro de yema."
+      },
+      {
+        "p": "Nata cortada en mantequilla",
+        "fix": "Batida de más o caliente. Para antes y trabaja en frío."
+      },
+      {
+        "p": "Aire que desaparece en el plato",
+        "fix": "Espuma sin estabilizar. Sírvela al momento o añade algo de goma."
+      }
+    ],
+    "history": "Las claras montadas y la nata batida se usan en Europa desde hace siglos. Los aires y las espumas de sifón llegaron con la cocina de vanguardia de finales del siglo XX.",
+    "uses": [
+      "Merengues y bizcochos",
+      "Nata montada y mousses",
+      "Aires y espumas de sifón",
+      "Salsas espumadas"
+    ],
+    "keep": "No aplica: es un principio.",
+    "pro": "Para servicio, prefiere espumas con estabilizante o de sifón, que aguantan; los aires de lecitina, al momento y en cantidades pequeñas.",
+    "related": [
+      "merengues",
+      "espumas-con-sifon",
+      "emulsiones",
+      "mousses-y-cremosos",
+      "gelificantes-y-espesantes",
+      "texturas-y-percepcion"
+    ]
+  },
+  {
+    "id": "viscosidad-y-punto-de-napado",
+    "name": "Viscosidad y punto de napado",
+    "name_en": "Viscosity and coating consistency",
+    "aka": [
+      "napar",
+      "punto de napa",
+      "espesor de una salsa",
+      "viscosidad",
+      "cubrir la cuchara"
+    ],
+    "cat": "conceptos",
+    "group": "Fundamentos",
+    "summary": "Cómo medir y ajustar el espesor de una salsa, por qué cambia con la temperatura y qué espesor pide cada uso.",
+    "what": "La viscosidad es la resistencia de un líquido a fluir. En cocina se mide a ojo: una salsa «napa» cuando cubre el dorso de una cuchara con una capa fina y continua, y al pasar el dedo la raya no se cierra. Es el punto de casi todas las salsas para servir; las de glasear van más espesas y las de mojar, más fluidas.\n\nEl espesor cambia con la temperatura: casi todas espesan al enfriarse, sobre todo las de gelatina (reducciones, jugos) y almidón. Por eso una salsa se ajusta a la temperatura a la que se va a comer, no en el cazo hirviendo. Se espesa reduciendo, con [[ligazones]] (roux, almidón, yema), montando con grasa ([[emulsiones]]) o con gomas; se aclara con el líquido de base. Algunas espesan al batir y otras se aclaran al removerlas, como el kétchup o una crema de almidón.",
+    "base": {
+      "for": "Referencias de espesor",
+      "items": [
+        [
+          "Salsa para mojar",
+          "fluida: cae en hilo continuo"
+        ],
+        [
+          "Salsa para napar",
+          "cubre la cuchara y la raya del dedo no se cierra"
+        ],
+        [
+          "Glaseado o laca",
+          "espesa: se queda pegada y brilla"
+        ],
+        [
+          "Jugo o fondo reducido",
+          "espesa mucho al enfriar por la gelatina"
+        ],
+        [
+          "Salsa de almidón",
+          "espesa al enfriar y puede aclararse al removerla"
+        ],
+        [
+          "Crema o puré",
+          "se sostiene en cuchara; marca forma"
+        ]
+      ],
+      "steps": [
+        "Decide el uso: mojar, napar, glasear o sostener.",
+        "Prueba el espesor a temperatura de servicio: deja una cucharada en un plato frío 30 segundos.",
+        "Si falta cuerpo, reduce, liga o monta según la salsa; si sobra, aclara con su propio líquido caliente.",
+        "Ten en cuenta el tiempo en el pase: una salsa que espera en caliente sigue reduciendo.",
+        "Cuela antes de ajustar: los grumos engañan."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Almidón de maíz",
+        "ratio": "15–25 g por litro para napar",
+        "note": "Disuelto en frío."
+      },
+      {
+        "use": "Roux",
+        "ratio": "60–80 g por litro para salsa media",
+        "note": "Ver roux."
+      },
+      {
+        "use": "Goma xantana",
+        "ratio": "1–3 g por litro",
+        "note": "Espesa sin calor; en exceso, textura babosa."
+      },
+      {
+        "use": "Reducción de jugo",
+        "ratio": "Hasta que nape caliente, sin pasar",
+        "note": "Al enfriar quedará más espesa."
+      }
+    ],
+    "variants": [
+      {
+        "id": "ligazones",
+        "name": "Ligazones",
+        "note": "Formas de espesar."
+      },
+      {
+        "id": "reducciones",
+        "name": "Reducciones",
+        "note": "Espesar concentrando."
+      },
+      {
+        "id": "emulsiones",
+        "name": "Emulsiones",
+        "note": "Espesar con grasa."
+      },
+      {
+        "id": "gelificantes-y-espesantes",
+        "name": "Gomas",
+        "note": "Espesar en frío."
+      }
+    ],
+    "keys": [
+      "Ajusta a la temperatura de servicio, no a la del cazo.",
+      "Gelatina y almidón espesan al enfriar.",
+      "Plato frío para probar en segundos.",
+      "Aclara con el líquido de la salsa, no con agua.",
+      "Una salsa que espera en caliente sigue reduciendo."
+    ],
+    "errors": [
+      {
+        "p": "Salsa perfecta en el cazo y gomosa en el plato",
+        "fix": "Ajustada en caliente. Prueba en plato frío y deja más fluida."
+      },
+      {
+        "p": "Salsa que no napa",
+        "fix": "Falta reducción o ligazón. Reduce o liga con almidón al final."
+      },
+      {
+        "p": "Textura babosa",
+        "fix": "Exceso de goma o almidón. Aclara y reduce la dosis."
+      }
+    ],
+    "history": "El punto de napa es una de las medidas más antiguas de la cocina profesional: se transmite de cocinero a cocinero con la cuchara. La ciencia de la reología explicó después por qué cada espesante se comporta de forma distinta.",
+    "uses": [
+      "Salsas de servicio",
+      "Glaseados y lacas",
+      "Cremas y purés",
+      "Jugos y reducciones"
+    ],
+    "keep": "No aplica: es un principio.",
+    "pro": "Ten en cada partida un plato frío para probar el espesor y caldo caliente para corregir. Anota en la ficha de cada salsa su punto, no solo su receta.",
+    "related": [
+      "ligazones",
+      "reducciones",
+      "emulsiones",
+      "gelificantes-y-espesantes",
+      "roux",
+      "temperatura-de-servicio"
+    ]
+  },
+  {
+    "id": "solubilidad-y-extraccion-del-sabor",
+    "name": "Solubilidad y extracción del sabor",
+    "name_en": "Solubility and flavour extraction",
+    "aka": [
+      "extraer sabor",
+      "aromas solubles en grasa",
+      "infusionar en grasa o agua",
+      "alcohol y aroma",
+      "extracción"
+    ],
+    "cat": "conceptos",
+    "group": "Fundamentos",
+    "summary": "Qué sabores salen con agua, cuáles con grasa y cuáles con alcohol, y cómo eso decide cómo infusionar, sofreír o macerar.",
+    "what": "Los compuestos de sabor no se disuelven todos en lo mismo. La sal, los azúcares, los ácidos y casi todo el umami van al agua. Muchos aromas de especias, hierbas, ajo, chile, cítrico y pimentón se disuelven mejor en grasa: por eso se fríen las especias antes de mojar un guiso y por eso un aceite infusionado huele tanto. El alcohol disuelve parte de los dos y por eso los licores de hierbas y los extractos de vainilla funcionan.\n\nLa temperatura y el tiempo mandan: el calor extrae más y más deprisa, pero también saca amargores y se lleva los aromas más volátiles. El tamaño del corte también cuenta: cuanto más fino, más rápida la extracción. Entenderlo evita tirar sabor, como hervir una hierba delicada, o sacar amargor, como alargar un [[fumet]]. Ver [[infusiones]] y [[aromas-y-volatiles]].",
+    "base": {
+      "for": "Dónde se disuelve cada sabor",
+      "items": [
+        [
+          "Agua",
+          "sal, azúcar, ácido, umami, gelatina, taninos"
+        ],
+        [
+          "Grasa",
+          "muchos aromas de especias, hierbas, ajo, chile y cítrico; colorantes como el del pimentón"
+        ],
+        [
+          "Alcohol",
+          "parte de los aromas de agua y de grasa"
+        ],
+        [
+          "Calor",
+          "extrae más deprisa, pero se lleva lo volátil y saca amargor"
+        ],
+        [
+          "Frío y tiempo",
+          "extracciones más limpias y lentas"
+        ],
+        [
+          "Corte fino",
+          "más superficie, extracción más rápida"
+        ]
+      ],
+      "steps": [
+        "Piensa dónde está el sabor que quieres: en agua, en grasa o en los dos.",
+        "Para especias secas y pimentón, rehoga en grasa a fuego medio antes de añadir líquido.",
+        "Para hierbas delicadas, infusiona en caliente fuera del fuego o en frío.",
+        "Para lo que amarga con el tiempo (espinas, té, piel de cítrico), controla minutos.",
+        "Combina medios: una grasa aromatizada y un caldo dan un plato más completo que uno solo."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Especias en un guiso",
+        "ratio": "Rehogar 30–60 segundos en grasa caliente",
+        "note": "Antes de mojar."
+      },
+      {
+        "use": "Hierba delicada en caldo",
+        "ratio": "Infusionar 5–10 minutos fuera del fuego",
+        "note": "Y colar."
+      },
+      {
+        "use": "Infusión en frío",
+        "ratio": "12–24 horas en cámara",
+        "note": "Más limpia, menos amargor."
+      },
+      {
+        "use": "Extracto en alcohol",
+        "ratio": "1 parte de aromático por 5–10 de alcohol",
+        "note": "Semanas en oscuro."
+      }
+    ],
+    "variants": [
+      {
+        "id": "infusiones",
+        "name": "Infusiones",
+        "note": "La técnica."
+      },
+      {
+        "id": "aceites-aromatizados",
+        "name": "Aceites aromatizados",
+        "note": "Extracción en grasa."
+      },
+      {
+        "id": "grasas-infusionadas",
+        "name": "Grasas infusionadas",
+        "note": "Mantequillas y grasas animales."
+      },
+      {
+        "id": "aromas-y-volatiles",
+        "name": "Volátiles",
+        "note": "Lo que se pierde con el calor."
+      }
+    ],
+    "keys": [
+      "Sal, azúcar, ácido y umami van al agua.",
+      "Muchos aromas de especias y hierbas, a la grasa.",
+      "Especias fritas antes de mojar.",
+      "Más calor, más rápido y más amargor.",
+      "Corte fino, extracción rápida."
+    ],
+    "errors": [
+      {
+        "p": "Guiso con especias que no se notan",
+        "fix": "Se echaron en el líquido. Rehógalas primero en grasa."
+      },
+      {
+        "p": "Infusión amarga",
+        "fix": "Demasiado tiempo o calor. Acorta o infusiona en frío."
+      },
+      {
+        "p": "Aceite de hierbas sin aroma",
+        "fix": "Hierba hervida en el aceite. Escáldala y tritúrala con aceite templado."
+      }
+    ],
+    "history": "Macerar en vino, en aceite o en agua es una práctica antigua de cocina, farmacia y perfumería. La química explicó después por qué cada sabor necesita su disolvente.",
+    "uses": [
+      "Guisos especiados",
+      "Aceites y mantequillas aromatizadas",
+      "Caldos e infusiones",
+      "Licores y extractos"
+    ],
+    "keep": "No aplica: es un principio. Los aceites con ajo o hierba fresca, en frío y como mucho 4 días.",
+    "pro": "Escribe en las fichas en qué medio y cuánto tiempo se extrae cada aromático. Las infusiones en frío pueden dejarse hechas la víspera.",
+    "related": [
+      "infusiones",
+      "aceites-aromatizados",
+      "grasas-infusionadas",
+      "aromas-y-volatiles",
+      "especias",
+      "amargor-y-astringencia"
+    ]
+  },
+  {
+    "id": "pasteurizacion-y-esterilizacion",
+    "name": "Pasteurización y esterilización",
+    "name_en": "Pasteurisation and sterilisation",
+    "aka": [
+      "pasteurizar",
+      "esterilizar",
+      "conservas en bote",
+      "tiempo y temperatura",
+      "huevo pasteurizado"
+    ],
+    "cat": "conceptos",
+    "group": "Fundamentos",
+    "summary": "Qué diferencia hay entre pasteurizar y esterilizar, qué combinaciones de temperatura y tiempo se usan y qué se puede hacer con seguridad en una cocina.",
+    "what": "Pasteurizar es calentar lo justo para matar la mayoría de los microbios que causan enfermedad, sin cocinar del todo el alimento. Lo pasteurizado sigue necesitando frío y dura días o semanas. Esterilizar es eliminar también las esporas resistentes, lo que pide más de 100 °C bajo presión, como en las conservas industriales.\n\nLa pasteurización depende de la combinación de temperatura y tiempo en el centro del alimento: a menos temperatura, más tiempo. Es la base de la [[baja-temperatura]] y de los huevos y yemas pasteurizados. Las conservas en bote de alimentos ácidos (con pH por debajo de 4,6) se pueden tratar a 100 °C al baño maría; las de baja acidez (verduras al natural, carnes, pescados, setas) no son seguras así por el riesgo de botulismo: requieren autoclave o mantenerlas siempre en frío. Ver [[cadena-de-frio]] y [[ph-y-acidez]].",
+    "base": {
+      "for": "Combinaciones orientativas de pasteurización (centro del alimento)",
+      "items": [
+        [
+          "60 °C",
+          "45 minutos"
+        ],
+        [
+          "65 °C",
+          "10 minutos"
+        ],
+        [
+          "70 °C",
+          "2 minutos"
+        ],
+        [
+          "75 °C",
+          "30 segundos"
+        ],
+        [
+          "Conserva ácida (pH < 4,6) en bote",
+          "baño maría a 100 °C según tamaño del bote"
+        ],
+        [
+          "Conserva de baja acidez",
+          "solo autoclave (unos 115–121 °C) o siempre en frío"
+        ]
+      ],
+      "steps": [
+        "Mide la temperatura en el centro con sonda, no la del agua.",
+        "Cuenta el tiempo desde que el centro llega a la temperatura, no desde que entra en el baño.",
+        "Enfría rápido después y guarda en frío con fecha.",
+        "Para conservas en bote, comprueba la acidez: solo las ácidas admiten baño maría.",
+        "Ante la duda, trata la elaboración como fresca: frío y pocos días."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Huevo en emulsiones que no se cuecen",
+        "ratio": "Huevo o yema pasteurizados",
+        "note": "Siempre en restauración."
+      },
+      {
+        "use": "Conserva de tomate o fruta",
+        "ratio": "Acidificada y al baño maría a 100 °C",
+        "note": "Bote limpio y tapa nueva."
+      },
+      {
+        "use": "Verdura, setas o pescado en aceite",
+        "ratio": "Siempre en frío y pocos días",
+        "note": "Sin autoclave no hay estabilidad."
+      },
+      {
+        "use": "Elaboración envasada al vacío y pasteurizada",
+        "ratio": "En frío y con fecha",
+        "note": "Ver baja temperatura."
+      }
+    ],
+    "variants": [
+      {
+        "id": "cadena-de-frio",
+        "name": "Cadena de frío",
+        "note": "Lo que sigue a la pasteurización."
+      },
+      {
+        "id": "baja-temperatura",
+        "name": "Baja temperatura",
+        "note": "Pasteurizar cocinando."
+      },
+      {
+        "id": "ph-y-acidez",
+        "name": "Acidez",
+        "note": "La frontera de pH 4,6."
+      },
+      {
+        "id": "conservas-en-aceite",
+        "name": "Conservas en aceite",
+        "note": "Caso de riesgo."
+      }
+    ],
+    "keys": [
+      "Pasteurizar no es esterilizar.",
+      "Temperatura y tiempo, en el centro.",
+      "Lo pasteurizado vive en frío.",
+      "Solo las conservas ácidas admiten baño maría.",
+      "Baja acidez sin autoclave: siempre en frío y pocos días."
+    ],
+    "errors": [
+      {
+        "p": "Bote de verdura al natural guardado en la despensa",
+        "fix": "Baja acidez sin autoclave: riesgo de botulismo. Guárdalo en frío y gástalo pronto, o acidifica."
+      },
+      {
+        "p": "Pieza pasteurizada que no llega al tiempo",
+        "fix": "Se contó desde que entró en el baño. Mide el centro con sonda."
+      },
+      {
+        "p": "Mayonesa casera con huevo crudo",
+        "fix": "Usa huevo o yema pasteurizados."
+      }
+    ],
+    "history": "La pasteurización toma el nombre de Louis Pasteur, que en el siglo XIX demostró que el calor moderado destruye los microbios que estropean el vino y la leche. Las conservas esterilizadas son algo anteriores y se perfeccionaron con el autoclave.",
+    "uses": [
+      "Baja temperatura",
+      "Huevo y yema pasteurizados",
+      "Conservas en bote",
+      "Elaboraciones envasadas"
+    ],
+    "keep": "No aplica: es un principio.",
+    "pro": "Sonda calibrada, tablas de tiempo y temperatura escritas en la partida y etiqueta con fecha en todo lo pasteurizado. Las conservas de baja acidez, solo en frío.",
+    "related": [
+      "cadena-de-frio",
+      "baja-temperatura",
+      "ph-y-acidez",
+      "conservas-en-aceite",
+      "vacio-equipo-y-seguridad",
+      "huevos"
+    ]
   }
 ]

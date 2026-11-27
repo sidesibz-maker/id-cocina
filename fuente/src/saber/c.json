@@ -6680,5 +6680,792 @@
       "caldo-de-marisco-expres",
       "cadena-de-frio"
     ]
+  },
+  {
+    "id": "caldo-de-moluscos",
+    "name": "Caldo de moluscos",
+    "aka": [
+      "agua de mejillón",
+      "agua de almeja",
+      "jugo de mejillón",
+      "caldo de berberecho",
+      "jugo de moluscos"
+    ],
+    "cat": "fondos",
+    "group": "Fondos de mar",
+    "summary": "El jugo que sueltan mejillones, almejas y berberechos al abrirse, colado y usado como caldo o condimento: puro sabor a mar en minutos.",
+    "what": "Al abrir mejillones, almejas, berberechos o navajas al vapor con un poco de vino o agua, sueltan su propia agua de mar, que con la cocción se vuelve un caldo intenso, salino y con mucho umami. Colado por un paño para quitar la arena, es uno de los caldos más rápidos y sabrosos de la cocina: no necesita horas, solo minutos.\n\nEs muy salado, así que se usa como parte del líquido de un arroz, una salsa, una sopa o un [[beurre-blanc]], o se rebaja con [[fumet]] o agua. Sirve también para ligar una salsa de mejillón, para la [[salsa-marinera]] o para dar fondo marino a un plato de verdura. El marisco abierto se aprovecha aparte en ensalada, escabeche o guiso. Para la limpieza del producto, ver [[mejillon-y-almeja]].",
+    "base": {
+      "for": "unos 300 ml de caldo",
+      "items": [
+        [
+          "Mejillones limpios (o almejas o berberechos purgados)",
+          "1 kg"
+        ],
+        [
+          "Vino blanco seco",
+          "100 ml"
+        ],
+        [
+          "Agua",
+          "100 ml"
+        ],
+        [
+          "Chalota en láminas",
+          "40 g"
+        ],
+        [
+          "Tomillo o perejil (tallos)",
+          "unos tallos"
+        ]
+      ],
+      "steps": [
+        "Limpia y desbarba los mejillones; purga las almejas y berberechos en agua fría con sal 1–2 horas.",
+        "Calienta el vino, el agua, la chalota y las hierbas en una cazuela ancha hasta que hierva.",
+        "Añade el marisco, tapa y cuece a fuego vivo moviendo la cazuela hasta que se abra, 2–4 minutos.",
+        "Saca el marisco y cuela el líquido por un paño o filtro fino, dejando el fondo con arena en la cazuela.",
+        "Prueba de sal antes de usarlo y enfría rápido si no se usa enseguida."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Rendimiento",
+        "ratio": "250–350 ml por kilo de mejillón",
+        "note": "Depende del tamaño y la temporada."
+      },
+      {
+        "use": "En un arroz",
+        "ratio": "Hasta un tercio del caldo total",
+        "note": "Más, sala en exceso."
+      },
+      {
+        "use": "En una salsa",
+        "ratio": "100 ml reducidos a la mitad por cada 300 ml de salsa",
+        "note": "Probar antes de salar."
+      },
+      {
+        "use": "Con fumet",
+        "ratio": "1 parte de caldo de moluscos por 2 de fumet",
+        "note": "Caldo más redondo."
+      }
+    ],
+    "variants": [
+      {
+        "id": "fumet",
+        "name": "Fumet",
+        "note": "Para rebajarlo y dar cuerpo."
+      },
+      {
+        "id": "salsa-marinera",
+        "name": "Salsa marinera",
+        "note": "Uso clásico."
+      },
+      {
+        "id": "beurre-blanc",
+        "name": "Beurre blanc de mejillón",
+        "note": "Reducción con su jugo."
+      },
+      {
+        "id": "caldo-de-marisco-expres",
+        "name": "Caldo de marisco exprés",
+        "note": "La versión con crustáceos."
+      }
+    ],
+    "keys": [
+      "Minutos, no horas.",
+      "Colar por paño: la arena se queda.",
+      "Muy salado: sala el plato al final.",
+      "Cuece solo hasta que se abran.",
+      "Aprovecha el marisco aparte."
+    ],
+    "errors": [
+      {
+        "p": "Caldo con arena",
+        "fix": "Mal purgado o mal colado. Purga y cuela por paño, sin apurar el fondo."
+      },
+      {
+        "p": "Plato salado",
+        "fix": "Demasiado caldo de moluscos. Rebaja con fumet o agua."
+      },
+      {
+        "p": "Marisco correoso",
+        "fix": "Cocción larga. Retira en cuanto se abra."
+      }
+    ],
+    "history": "En las cocinas de costa siempre se ha aprovechado el jugo de abrir el marisco para arroces, sopas y salsas. La cocina de restaurante lo ha convertido en un caldo de base propio.",
+    "uses": [
+      "Arroces y fideos",
+      "Salsas de pescado y marisco",
+      "Sopas y cremas",
+      "Beurre blanc y emulsiones"
+    ],
+    "keep": "2 días en frío; 2 meses congelado en porciones pequeñas. Desecha el marisco que esté abierto antes de cocinar o que no se abra.",
+    "pro": "Cada vez que abras marisco, guarda el jugo colado y congélalo en porciones etiquetadas.",
+    "related": [
+      "mejillon-y-almeja",
+      "fumet",
+      "salsa-marinera",
+      "coccion-de-marisco",
+      "arroces",
+      "caldo-de-marisco-expres"
+    ]
+  },
+  {
+    "id": "caldo-de-cortezas-de-queso",
+    "name": "Caldo de cortezas de queso",
+    "aka": [
+      "caldo de parmesano",
+      "caldo de corteza de queso",
+      "brodo di parmigiano",
+      "aprovechar cortezas de queso"
+    ],
+    "cat": "fondos",
+    "group": "Fondos claros",
+    "summary": "Caldo de cortezas de quesos curados de pasta dura, cocidas a fuego suave: umami y cuerpo para risottos, sopas y legumbres.",
+    "what": "Las cortezas de los quesos curados de pasta dura (parmesano, grana, pecorino, quesos curados de oveja con corteza natural) guardan mucho sabor y proteína. Cocidas despacio en agua con cebolla, ajo y laurel, dan un caldo lechoso, salino y con mucho umami, que da cuerpo a un risotto, una sopa de verduras, una legumbre o una salsa de pasta.\n\nEs un caldo de [[cocina-de-aprovechamiento|aprovechamiento]]: se congelan las cortezas a medida que salen y se hace el caldo cuando hay cantidad. Solo valen cortezas naturales, sin cera, parafina ni plástico. La corteza se ablanda y tiende a pegarse al fondo, así que hay que remover. La idea es la del [[umami-glutamato-y-sinergia|umami]] concentrado de los quesos curados; ver [[quesos-en-cocina]].",
+    "base": {
+      "for": "unos 1,5 litros",
+      "items": [
+        [
+          "Cortezas de queso curado de pasta dura, raspadas",
+          "300 g"
+        ],
+        [
+          "Agua fría",
+          "2 l"
+        ],
+        [
+          "Cebolla",
+          "1 (150 g)"
+        ],
+        [
+          "Ajo",
+          "3 dientes"
+        ],
+        [
+          "Laurel",
+          "2 hojas"
+        ],
+        [
+          "Pimienta negra en grano",
+          "5 granos"
+        ],
+        [
+          "Tallos de perejil",
+          "unos tallos"
+        ]
+      ],
+      "steps": [
+        "Raspa la superficie de las cortezas con un cuchillo y lávalas; descarta las que tengan cera o recubrimiento.",
+        "Ponlas con el agua fría y los aromáticos en una olla de fondo grueso.",
+        "Lleva a hervor suave y mantén 1,5–2 horas, removiendo de vez en cuando para que no se peguen.",
+        "Cuela por colador fino; las cortezas blandas se pueden picar para un relleno o un guiso.",
+        "Enfría rápido; la grasa sube y se puede retirar o dejar, según el uso."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Caldo base",
+        "ratio": "150 g de cortezas por litro de agua",
+        "note": "Rinde unos tres cuartos."
+      },
+      {
+        "use": "Risotto",
+        "ratio": "Mitad caldo de queso y mitad caldo de verduras",
+        "note": "Sala al final."
+      },
+      {
+        "use": "Sopa o minestrone",
+        "ratio": "Un tercio del caldo total",
+        "note": "O una corteza en la olla."
+      },
+      {
+        "use": "Legumbres",
+        "ratio": "1 corteza grande por cada 500 g de legumbre seca",
+        "note": "Se retira al final."
+      }
+    ],
+    "variants": [
+      {
+        "id": "caldo-de-verduras",
+        "name": "Caldo de verduras",
+        "note": "Para mezclar y suavizar."
+      },
+      {
+        "id": "minestrone",
+        "name": "Minestrone",
+        "note": "Una corteza en la cocción."
+      },
+      {
+        "id": "risotto-y-arroces-cremosos",
+        "name": "Risotto",
+        "note": "Uso más agradecido."
+      },
+      {
+        "id": "caldo-de-setas",
+        "name": "Con setas secas",
+        "note": "Más umami, por sinergia."
+      }
+    ],
+    "keys": [
+      "Solo cortezas naturales, sin cera ni plástico.",
+      "Raspar y lavar antes de cocer.",
+      "Fuego suave y remover: se pegan.",
+      "Caldo salado: sala el plato al final.",
+      "Congela las cortezas hasta tener cantidad."
+    ],
+    "errors": [
+      {
+        "p": "Cortezas pegadas y quemadas",
+        "fix": "Fuego fuerte y sin remover. Fuego suave y olla de fondo grueso."
+      },
+      {
+        "p": "Caldo con sabor a moho o rancio",
+        "fix": "Cortezas viejas o mal raspadas. Raspa bien y usa cortezas en buen estado."
+      },
+      {
+        "p": "Risotto salado",
+        "fix": "Todo el caldo de queso. Mézclalo con caldo sin sal."
+      }
+    ],
+    "history": "Echar una corteza de queso curado a la sopa o a las legumbres es una costumbre de la cocina casera del norte de Italia. El caldo hecho solo de cortezas se ha extendido en la cocina actual como aprovechamiento.",
+    "uses": [
+      "Risottos",
+      "Sopas y minestrone",
+      "Legumbres",
+      "Salsas de pasta"
+    ],
+    "keep": "4 días en frío; 3 meses congelado. Las cortezas crudas, congeladas, hasta 6 meses.",
+    "pro": "Guarda en el congelador una bolsa etiquetada para las cortezas de queso del día y haz el caldo cuando haya 300 g o más.",
+    "related": [
+      "quesos-en-cocina",
+      "cocina-de-aprovechamiento",
+      "umami-glutamato-y-sinergia",
+      "risotto-y-arroces-cremosos",
+      "minestrone",
+      "legumbres"
+    ]
+  },
+  {
+    "id": "fondo-de-cerdo-y-manitas",
+    "name": "Fondo de cerdo y manitas",
+    "aka": [
+      "caldo de cerdo",
+      "fondo de cerdo",
+      "caldo de manitas",
+      "fondo gelatinoso",
+      "caldo de codillo"
+    ],
+    "cat": "fondos",
+    "group": "Fondos claros",
+    "summary": "Fondo de huesos de cerdo con manitas y codillo, muy rico en gelatina: cuerpo y brillo para guisos, salsas, arroces y caldos de fideos.",
+    "what": "Los huesos de cerdo dan un fondo de sabor más suave que la ternera y muy redondo, y las manitas, la oreja o la piel del codillo le aportan una cantidad enorme de colágeno, que se convierte en gelatina. El resultado cuaja como una gelatina firme en frío y en caliente da a las salsas y los guisos un cuerpo y un brillo difíciles de conseguir de otro modo, sin necesidad de reducir tanto.\n\nSe blanquean primero los huesos y las manitas para limpiar el caldo y se cuecen despacio, sin hervir, si se quiere claro. Hervido con fuerza muchas horas, la grasa y el colágeno se emulsionan y sale un caldo blanco y denso, la base del [[ramen]] de tipo tonkotsu. Para el principio, ver [[colageno-y-gelatina]]; para el producto, [[casqueria]].",
+    "base": {
+      "for": "unos 3 litros",
+      "items": [
+        [
+          "Huesos de cerdo (espinazo, codillo, rodilla)",
+          "2 kg"
+        ],
+        [
+          "Manitas de cerdo partidas a lo largo",
+          "2"
+        ],
+        [
+          "Agua fría",
+          "5 l"
+        ],
+        [
+          "Cebolla",
+          "1 (150 g)"
+        ],
+        [
+          "Puerro",
+          "1 (200 g)"
+        ],
+        [
+          "Ajo",
+          "1 cabeza partida"
+        ],
+        [
+          "Laurel y pimienta en grano",
+          "al gusto"
+        ]
+      ],
+      "steps": [
+        "Blanquea huesos y manitas: cubre con agua fría, lleva a hervor 5 minutos, escurre y lava.",
+        "Pon todo en una olla limpia con el agua fría y lleva despacio a 85–90 °C.",
+        "Desespuma y añade las verduras y los aromáticos.",
+        "Mantén sin hervor 5–6 horas, desgrasando de vez en cuando.",
+        "Cuela, enfría rápido y desgrasa en frío. Las manitas cocidas se pueden deshuesar y aprovechar."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Fondo base",
+        "ratio": "2 kg de huesos y 2 manitas por 5 l de agua",
+        "note": "Cuaja en frío."
+      },
+      {
+        "use": "Para dar cuerpo a otro fondo",
+        "ratio": "1 manita por cada 3 l de fondo",
+        "note": "Más gelatina sin cambiar el sabor."
+      },
+      {
+        "use": "Caldo blanco emulsionado",
+        "ratio": "Hervor fuerte 8–12 horas",
+        "note": "Para fideos; reponer agua."
+      },
+      {
+        "use": "Salsa de guiso",
+        "ratio": "Un tercio del líquido con este fondo",
+        "note": "Brillo y cuerpo."
+      }
+    ],
+    "variants": [
+      {
+        "id": "ramen",
+        "name": "Caldo tonkotsu",
+        "note": "Versión hervida y emulsionada."
+      },
+      {
+        "id": "fondo-blanco",
+        "name": "Fondo blanco",
+        "note": "Fondo claro de ternera o ave."
+      },
+      {
+        "id": "caldo-de-cocido-y-jamon",
+        "name": "Caldo de cocido",
+        "note": "Pariente español con cerdo."
+      },
+      {
+        "id": "gelatinas-saladas",
+        "name": "Gelatinas saladas",
+        "note": "Su gelatina natural."
+      }
+    ],
+    "keys": [
+      "Blanquear: limpieza.",
+      "Las manitas son la gelatina.",
+      "Sin hervor si se quiere claro.",
+      "Desgrasar en frío.",
+      "Aprovechar la carne de las manitas."
+    ],
+    "errors": [
+      {
+        "p": "Fondo turbio y graso",
+        "fix": "Sin blanquear o hervido. Blanquea y cuece por debajo del hervor."
+      },
+      {
+        "p": "Olor fuerte a cerdo",
+        "fix": "Huesos mal limpios. Blanquea y lava bien antes."
+      },
+      {
+        "p": "Salsa gomosa",
+        "fix": "Demasiada gelatina reducida. Aclara con caldo o agua."
+      }
+    ],
+    "history": "Las manitas y el codillo dan cuerpo a guisos tradicionales en toda España y Europa. Los caldos de hueso de cerdo hervidos largo tiempo son propios también de las cocinas de Asia oriental.",
+    "uses": [
+      "Guisos de casquería y legumbres",
+      "Salsas de carne",
+      "Arroces de montaña",
+      "Caldos de fideos"
+    ],
+    "keep": "3–4 días en frío; 3 meses congelado. Abatido tras colar.",
+    "pro": "Congélalo en bloques pequeños: una porción da cuerpo a cualquier salsa sin reducirla tanto.",
+    "related": [
+      "colageno-y-gelatina",
+      "casqueria",
+      "ramen",
+      "fondo-blanco",
+      "caldo-de-cocido-y-jamon",
+      "callos"
+    ]
+  },
+  {
+    "id": "caldo-de-legumbre-y-aquafaba",
+    "name": "Caldo de legumbre y aquafaba",
+    "aka": [
+      "aquafaba",
+      "agua de garbanzos",
+      "caldo de garbanzos",
+      "agua de cocción de legumbres",
+      "clara vegetal"
+    ],
+    "cat": "bases",
+    "group": "Bases",
+    "summary": "El agua de cocer legumbres como caldo con cuerpo para sopas y guisos, y reducida como aquafaba, que monta y emulsiona como la clara de huevo.",
+    "what": "Al cocer garbanzos, judías blancas o alubias, el agua se carga de almidón, proteínas y sabor. Bien sazonada durante la cocción con aromáticos, es un caldo vegetal con cuerpo que liga sopas, guisos de verdura y cremas sin necesidad de espesantes. Reducida hasta tener la textura de una clara de huevo, se llama aquafaba: monta como un merengue, emulsiona salsas tipo mayonesa sin huevo y sustituye a la clara en algunas masas y postres.\n\nLa mejor es la de garbanzo, por su sabor neutro y su poder de montar. Las legumbres deben estar bien cocidas: algunas, como las judías rojas, tienen sustancias que solo se eliminan con un hervor fuerte. Para el producto, ver [[legumbres]]; para emulsionar, [[emulsiones]].",
+    "base": {
+      "for": "unos 2 litros de caldo y 200 ml de aquafaba",
+      "items": [
+        [
+          "Garbanzos secos remojados 12 horas",
+          "500 g (en seco)"
+        ],
+        [
+          "Agua fría",
+          "3 l"
+        ],
+        [
+          "Kombu (opcional)",
+          "5 g"
+        ],
+        [
+          "Cebolla",
+          "1 (150 g)"
+        ],
+        [
+          "Ajo",
+          "2 dientes"
+        ],
+        [
+          "Laurel",
+          "1 hoja"
+        ]
+      ],
+      "steps": [
+        "Escurre los garbanzos remojados y ponlos con el agua, el kombu y los aromáticos.",
+        "Lleva a hervor, desespuma y cuece a fuego suave hasta que estén tiernos, 1,5–2,5 horas según el garbanzo.",
+        "Sala en los últimos 20 minutos si vas a usar el caldo para un guiso; sin sal si vas a hacer aquafaba para postres.",
+        "Cuela y reserva los garbanzos para otra elaboración.",
+        "Para aquafaba, reduce una parte del líquido a fuego suave hasta que tenga la textura de una clara de huevo y enfría."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Aquafaba",
+        "ratio": "Reducir hasta la mitad o un tercio de su volumen",
+        "note": "Textura de clara."
+      },
+      {
+        "use": "Merengue de aquafaba",
+        "ratio": "100 ml de aquafaba, 100 g de azúcar, unas gotas de limón",
+        "note": "Montar 8–12 minutos."
+      },
+      {
+        "use": "Mayonesa sin huevo",
+        "ratio": "50 ml de aquafaba por 200 ml de aceite y 10 ml de vinagre",
+        "note": "Montar como una mayonesa."
+      },
+      {
+        "use": "Caldo para sopa",
+        "ratio": "Mitad caldo de legumbre y mitad caldo de verduras",
+        "note": "Más ligero."
+      }
+    ],
+    "variants": [
+      {
+        "id": "legumbres",
+        "name": "Legumbres",
+        "note": "El producto."
+      },
+      {
+        "id": "emulsiones",
+        "name": "Emulsiones",
+        "note": "La aquafaba como emulsionante."
+      },
+      {
+        "id": "merengues",
+        "name": "Merengues",
+        "note": "La versión sin huevo."
+      },
+      {
+        "id": "postres-sin-gluten-y-lacteos",
+        "name": "Postres sin lácteos",
+        "note": "Uso en dulce."
+      }
+    ],
+    "keys": [
+      "Garbanzo: la mejor aquafaba.",
+      "Reducir hasta textura de clara.",
+      "Sin sal ni aromáticos fuertes si es para postre.",
+      "Legumbres siempre bien cocidas.",
+      "El caldo liga sin espesantes."
+    ],
+    "errors": [
+      {
+        "p": "Aquafaba que no monta",
+        "fix": "Demasiado líquida o con grasa. Redúcela más y usa recipiente limpio."
+      },
+      {
+        "p": "Merengue con sabor a legumbre",
+        "fix": "Aquafaba con aromáticos o sal. Haz una cocción aparte sin ellos o usa más azúcar y vainilla."
+      },
+      {
+        "p": "Caldo turbio y espumoso",
+        "fix": "Hervor fuerte sin desespumar. Desespuma al principio y cuece suave."
+      }
+    ],
+    "history": "Aprovechar el agua de cocer las legumbres es costumbre de la cocina casera. El uso de la aquafaba como sustituto de la clara se difundió en la última década en la cocina vegana.",
+    "uses": [
+      "Sopas y guisos de verdura",
+      "Cremas",
+      "Merengues y mousses sin huevo",
+      "Salsas emulsionadas sin huevo"
+    ],
+    "keep": "Caldo y aquafaba: 3–4 días en frío; 3 meses congelados en porciones.",
+    "pro": "Cada vez que se cuezan garbanzos, guarda el agua; reduce y congela la aquafaba en porciones de 100 ml.",
+    "related": [
+      "legumbres",
+      "lenteja-y-garbanzo-por-variedades",
+      "emulsiones",
+      "merengues",
+      "postres-sin-gluten-y-lacteos",
+      "caldo-de-verduras"
+    ]
+  },
+  {
+    "id": "caldo-de-mazorcas-de-maiz",
+    "name": "Caldo de mazorcas de maíz",
+    "aka": [
+      "caldo de maíz",
+      "caldo de zuro",
+      "caldo de mazorca",
+      "aprovechar las mazorcas"
+    ],
+    "cat": "fondos",
+    "group": "Fondos claros",
+    "summary": "Caldo de las mazorcas desgranadas, crudas o asadas, con cebolla y laurel: dulce, ligeramente almidonado, para cremas, risottos y sopas de maíz.",
+    "what": "Cuando se desgrana el maíz dulce, la mazorca vacía guarda mucho sabor y algo de almidón. Cocida en agua con cebolla y laurel, da un caldo dulce y lechoso que refuerza cualquier elaboración de maíz: una crema, un risotto, una sopa, una polenta o una salsa. Si las mazorcas se tuestan antes sobre la brasa, el caldo gana un fondo ahumado que va muy bien con la cocina de fuego.\n\nEs un caldo rápido y de [[cocina-de-aprovechamiento|aprovechamiento]], típico del verano. Se puede reducir para dar más intensidad o usar para cocer los propios granos. El producto está en [[maiz]]; para el tueste en brasa, ver [[fondos-ahumados-y-de-brasa]].",
+    "base": {
+      "for": "unos 1,5 litros",
+      "items": [
+        [
+          "Mazorcas de maíz dulce desgranadas",
+          "6"
+        ],
+        [
+          "Agua fría",
+          "2 l"
+        ],
+        [
+          "Cebolla",
+          "1 (150 g)"
+        ],
+        [
+          "Laurel",
+          "1 hoja"
+        ],
+        [
+          "Pimienta blanca en grano",
+          "4 granos"
+        ],
+        [
+          "Sal",
+          "una pizca"
+        ]
+      ],
+      "steps": [
+        "Desgrana las mazorcas con un cuchillo y reserva los granos; raspa la mazorca con el dorso del cuchillo para sacar la leche.",
+        "Parte las mazorcas en trozos. Si quieres un caldo ahumado, tuéstalas antes sobre brasa hasta que se doren.",
+        "Ponlas con el agua, la cebolla y los aromáticos y lleva a hervor suave.",
+        "Cuece 45–60 minutos sin hervor fuerte.",
+        "Cuela y reduce si quieres más intensidad. Enfría rápido."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Caldo base",
+        "ratio": "3 mazorcas por litro de agua",
+        "note": "45–60 minutos."
+      },
+      {
+        "use": "Crema de maíz",
+        "ratio": "500 g de granos por 600 ml de caldo",
+        "note": "Triturar y colar."
+      },
+      {
+        "use": "Risotto de maíz",
+        "ratio": "Todo el caldo de mazorca",
+        "note": "Terminar con granos salteados."
+      },
+      {
+        "use": "Caldo reducido",
+        "ratio": "A la mitad",
+        "note": "Para salsas y mantequillas."
+      }
+    ],
+    "variants": [
+      {
+        "id": "maiz",
+        "name": "Maíz",
+        "note": "El producto."
+      },
+      {
+        "id": "fondos-ahumados-y-de-brasa",
+        "name": "Mazorcas a la brasa",
+        "note": "Versión ahumada."
+      },
+      {
+        "id": "caldo-de-verduras",
+        "name": "Caldo de verduras",
+        "note": "Para mezclar."
+      },
+      {
+        "id": "risotto-y-arroces-cremosos",
+        "name": "Risotto",
+        "note": "Uso agradecido."
+      }
+    ],
+    "keys": [
+      "Raspar la mazorca: ahí está la leche.",
+      "Tostar en brasa para un fondo ahumado.",
+      "Cocción corta: más, sabe a cocido.",
+      "Colar fino.",
+      "Usarlo con su propio maíz."
+    ],
+    "errors": [
+      {
+        "p": "Caldo insípido",
+        "fix": "Pocas mazorcas o maíz pasado. Usa más mazorcas y maíz de temporada."
+      },
+      {
+        "p": "Sabor a cocido",
+        "fix": "Demasiado tiempo. No pases de una hora."
+      },
+      {
+        "p": "Caldo amargo",
+        "fix": "Mazorcas quemadas en la brasa. Tuesta, no carbonices."
+      }
+    ],
+    "history": "En las cocinas de América, donde el maíz es básico, se aprovechan las mazorcas para caldos y sopas. En la cocina actual se ha generalizado como caldo de temporada y de aprovechamiento.",
+    "uses": [
+      "Cremas y sopas de maíz",
+      "Risottos y polentas",
+      "Salsas de verano",
+      "Cocer granos de maíz"
+    ],
+    "keep": "3 días en frío; 3 meses congelado.",
+    "pro": "Haz el caldo el mismo día que desgranes el maíz y congélalo en porciones para fuera de temporada.",
+    "related": [
+      "maiz",
+      "cocina-de-aprovechamiento",
+      "caldo-de-verduras",
+      "fondos-ahumados-y-de-brasa",
+      "risotto-y-arroces-cremosos",
+      "panisse-y-polenta-frita"
+    ]
+  },
+  {
+    "id": "beurre-monte",
+    "name": "Beurre monté",
+    "aka": [
+      "mantequilla emulsionada",
+      "mantequilla montada",
+      "pochado en mantequilla",
+      "beurre monte"
+    ],
+    "cat": "bases",
+    "group": "Bases",
+    "summary": "Mantequilla emulsionada con un poco de agua caliente para que se mantenga cremosa y no se separe: para pochar, glasear, napar y mantener producto en el pase.",
+    "what": "La mantequilla fundida se separa en grasa clara, agua y sólidos de leche. Si en cambio se incorpora poco a poco, fría y en dados, sobre una pequeña cantidad de agua caliente batiendo, queda emulsionada: un líquido opaco, cremoso y estable que sabe a mantequilla fresca. Es el beurre monté.\n\nSe mantiene así mientras no pase de unos 85 °C; por encima se corta. Sirve para pochar a baja temperatura marisco, pescado o carne, para glasear verduras, para terminar una salsa o un puré, o para mantener piezas calientes y jugosas en el pase. Es la misma emulsión que el [[beurre-blanc]], sin reducción de vino y chalota. Para el principio, ver [[emulsiones]].",
+    "base": {
+      "for": "unos 270 g",
+      "items": [
+        [
+          "Agua",
+          "30–40 ml"
+        ],
+        [
+          "Mantequilla fría en dados",
+          "250 g"
+        ],
+        [
+          "Sal",
+          "una pizca"
+        ]
+      ],
+      "steps": [
+        "Lleva el agua a hervor en un cazo pequeño y baja el fuego al mínimo.",
+        "Añade un par de dados de mantequilla y bate con varilla hasta que se emulsionen.",
+        "Sigue añadiendo la mantequilla de dos en dos, batiendo sin parar y sin que llegue a hervir.",
+        "Cuando esté toda incorporada, sazona y pasa a un recipiente al baño maría.",
+        "Mantén entre 60 y 80 °C; no pases de 85 °C."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Base",
+        "ratio": "30–40 ml de agua por cada 250 g de mantequilla",
+        "note": "Se puede usar caldo o jugo."
+      },
+      {
+        "use": "Pochar bogavante o cigala",
+        "ratio": "Cubrir la pieza, a 60–70 °C, 5–8 minutos",
+        "note": "Según tamaño."
+      },
+      {
+        "use": "Glasear verduras",
+        "ratio": "20–30 g por ración",
+        "note": "Con la verdura escaldada."
+      },
+      {
+        "use": "Mantener en el pase",
+        "ratio": "65–80 °C",
+        "note": "Por encima de 85 °C se corta."
+      }
+    ],
+    "variants": [
+      {
+        "id": "beurre-blanc",
+        "name": "Beurre blanc",
+        "note": "Con reducción de vino y chalota."
+      },
+      {
+        "id": "mantequilla-noisette",
+        "name": "Mantequilla noisette",
+        "note": "El otro extremo: tostada."
+      },
+      {
+        "id": "glaseado-de-verduras",
+        "name": "Glaseado de verduras",
+        "note": "Uso habitual."
+      },
+      {
+        "id": "escalfado",
+        "name": "Pochado",
+        "note": "Cocción suave en grasa emulsionada."
+      }
+    ],
+    "keys": [
+      "Poca agua caliente y mantequilla fría.",
+      "Añadir de dos en dos dados.",
+      "No hervir nunca.",
+      "Mantener por debajo de 85 °C.",
+      "El agua se puede cambiar por caldo o jugo."
+    ],
+    "errors": [
+      {
+        "p": "Mantequilla separada",
+        "fix": "Se calentó de más. Bate con un poco de agua fría o empieza otra emulsión sobre agua caliente y añádela poco a poco."
+      },
+      {
+        "p": "Emulsión que se solidifica",
+        "fix": "Temperatura demasiado baja. Mantén por encima de 60 °C."
+      },
+      {
+        "p": "Sabor a cocido o rancio",
+        "fix": "Mantenida muchas horas. Haz tandas más pequeñas."
+      }
+    ],
+    "history": "Es una técnica de la cocina francesa de restaurante, muy extendida en la cocina contemporánea para pochar marisco y mantener producto en el pase.",
+    "uses": [
+      "Pochar marisco, pescado y carne",
+      "Glasear verduras",
+      "Terminar salsas y purés",
+      "Mantener piezas en el pase"
+    ],
+    "keep": "Al baño maría entre 60 y 80 °C durante el servicio. La que haya pochado marisco, pescado o carne se tira al final del servicio; la que no, se puede enfriar y fundir para cocinar en 2–3 días.",
+    "pro": "Ten un cazo de beurre monté al baño maría en la partida durante el servicio, con termómetro, y repón en tandas pequeñas.",
+    "related": [
+      "beurre-blanc",
+      "emulsiones",
+      "mantequilla-noisette",
+      "glaseado-de-verduras",
+      "cigala-y-langosta",
+      "leche-nata-y-mantequilla"
+    ]
   }
 ]

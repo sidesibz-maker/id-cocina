@@ -5802,5 +5802,1020 @@
       "cebolla-y-ajo",
       "bacalao"
     ]
+  },
+  {
+    "id": "salsa-cumberland-y-salsas-inglesas",
+    "name": "Salsa Cumberland y salsas inglesas",
+    "name_en": "Cumberland sauce and English sauces",
+    "aka": [
+      "salsa cumberland",
+      "salsa de menta",
+      "mint sauce",
+      "bread sauce",
+      "salsa de pan",
+      "salsas británicas"
+    ],
+    "cat": "salsas",
+    "group": "Salsas clásicas",
+    "summary": "Tres salsas clásicas británicas para asados y caza: la Cumberland de grosella, oporto y cítricos; la de menta y vinagre; y la de pan con leche especiada.",
+    "what": "La cocina inglesa acompaña sus asados con salsas frías o templadas, pensadas para cortar la grasa o suavizar la carne. La Cumberland es la más elaborada: jalea de grosella roja fundida con oporto, zumo y piel de naranja y limón en juliana, chalota, mostaza y un punto de jengibre. Se sirve fría con caza, jamón cocido, terrinas y patés; es pariente de las [[salsas-agridulces-y-gastriques|salsas agridulces]].\n\nLa salsa de menta es menta fresca picada, azúcar, agua caliente y vinagre: muy ácida, para el cordero asado. La bread sauce es leche infusionada con cebolla, clavo y laurel, espesada con miga de pan y terminada con mantequilla o nata; acompaña ave asada. Otra clásica, la de rábano picante, tiene su ficha en [[salsas-de-rabano-picante]].",
+    "base": {
+      "for": "unos 300 ml de salsa Cumberland",
+      "items": [
+        [
+          "Jalea de grosella roja",
+          "200 g"
+        ],
+        [
+          "Oporto",
+          "100 ml"
+        ],
+        [
+          "Naranja (piel y zumo)",
+          "1"
+        ],
+        [
+          "Limón (piel y zumo)",
+          "1"
+        ],
+        [
+          "Chalota picada fina",
+          "20 g"
+        ],
+        [
+          "Mostaza de Dijon",
+          "5 g"
+        ],
+        [
+          "Jengibre en polvo",
+          "una pizca"
+        ]
+      ],
+      "steps": [
+        "Saca la piel de la naranja y el limón sin parte blanca, córtala en juliana muy fina y escáldala 2 minutos partiendo de agua fría; escurre.",
+        "Escalda la chalota 30 segundos y escurre.",
+        "Funde la jalea a fuego suave con el oporto, la mostaza y el jengibre, sin hervir.",
+        "Añade los zumos, la chalota y la juliana de cítricos y deja enfriar.",
+        "Sirve fría o a temperatura ambiente: debe quedar fluida, brillante y agridulce."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Salsa de menta",
+        "ratio": "20 g de hojas de menta, 15 g de azúcar, 30 ml de agua caliente, 45 ml de vinagre de vino blanco",
+        "note": "Reposar 30 minutos."
+      },
+      {
+        "use": "Bread sauce",
+        "ratio": "500 ml de leche, 80 g de miga de pan, 30 g de mantequilla",
+        "note": "Leche infusionada 20 minutos con cebolla, clavo y laurel."
+      },
+      {
+        "use": "Cumberland",
+        "ratio": "30–40 ml por ración",
+        "note": "Fría, con carnes frías o caza."
+      },
+      {
+        "use": "Cumberland más firme",
+        "ratio": "Reducir el oporto a la mitad antes",
+        "note": "Para terrinas."
+      }
+    ],
+    "variants": [
+      {
+        "id": "salsas-de-rabano-picante",
+        "name": "Salsa de rábano picante",
+        "note": "La otra clásica de los asados."
+      },
+      {
+        "id": "salsas-agridulces-y-gastriques",
+        "name": "Agridulces",
+        "note": "Misma familia que la Cumberland."
+      },
+      {
+        "id": null,
+        "name": "Salsa de menta",
+        "note": "Menta, azúcar y vinagre para cordero."
+      },
+      {
+        "id": null,
+        "name": "Bread sauce",
+        "note": "Leche especiada y miga para ave."
+      }
+    ],
+    "keys": [
+      "Piel de cítrico en juliana fina y escaldada.",
+      "La jalea se funde sin hervir.",
+      "La Cumberland se sirve fría.",
+      "La de menta debe ser ácida: corta la grasa del cordero.",
+      "La de pan, con leche bien infusionada."
+    ],
+    "errors": [
+      {
+        "p": "Cumberland amarga",
+        "fix": "Piel con parte blanca o sin escaldar. Sácala fina y escáldala."
+      },
+      {
+        "p": "Salsa de menta negra",
+        "fix": "Menta picada mucho antes. Pica al momento y añade el vinagre enseguida."
+      },
+      {
+        "p": "Bread sauce pastosa",
+        "fix": "Demasiada miga. Aclara con leche caliente."
+      }
+    ],
+    "history": "Son salsas de la tradición británica de los asados y la caza; la Cumberland lleva el nombre de un condado del norte de Inglaterra, aunque su origen exacto no es seguro. Siguen presentes en las mesas festivas del Reino Unido.",
+    "uses": [
+      "Caza y venado",
+      "Cordero asado",
+      "Ave asada",
+      "Jamón cocido, terrinas y patés"
+    ],
+    "keep": "Cumberland: 1 semana en frío. Salsa de menta: en el día. Bread sauce: 2 días en frío; se regenera con leche.",
+    "pro": "Haz la Cumberland en tanda y guárdala en frío; la de menta y la de pan, en el día.",
+    "related": [
+      "salsas-agridulces-y-gastriques",
+      "salsas-de-rabano-picante",
+      "cordero",
+      "caza-de-pluma",
+      "vinos-y-licores",
+      "citricos"
+    ]
+  },
+  {
+    "id": "hoisin-y-salsas-chinas",
+    "name": "Hoisin, judía negra y salsas chinas",
+    "name_en": "Hoisin, black bean and Chinese sauces",
+    "aka": [
+      "hoisin",
+      "salsa de judía negra",
+      "salsa de ostras",
+      "doubanjiang",
+      "douchi",
+      "salsas para wok"
+    ],
+    "cat": "salsas",
+    "group": "Asia",
+    "summary": "Las salsas de la cocina china hechas con soja fermentada: hoisin dulce para lacar, judía negra con ajo y jengibre para pescado y marisco, salsa de ostras y pasta de habas picante.",
+    "what": "Muchas salsas chinas parten de la soja o las habas fermentadas. La hoisin es espesa, dulce y especiada: soja fermentada, azúcar, ajo, vinagre y especias; se usa para lacar cerdo y pato y para mojar. La salsa de judía negra se hace con judías de soja negras fermentadas y saladas (douchi), ajo, jengibre y chile; es salada y profunda y acompaña pescado al vapor, almejas, costillas y verduras. La salsa de ostras, oscura y umami, da brillo a las verduras salteadas. El doubanjiang, pasta de habas y chile fermentados de Sichuan, es la base del picante de muchos guisos.\n\nEn el [[salteado-y-wok|wok]], estas salsas se añaden al final, a menudo ligadas con un poco de almidón para que se agarren al producto. Los productos están en [[pastas-fermentadas-de-asia]] y [[soja-y-derivados]].",
+    "base": {
+      "for": "unos 250 ml de salsa de judía negra",
+      "items": [
+        [
+          "Judías negras fermentadas (douchi)",
+          "30 g"
+        ],
+        [
+          "Ajo picado",
+          "15 g"
+        ],
+        [
+          "Jengibre picado",
+          "10 g"
+        ],
+        [
+          "Chile fresco (opcional)",
+          "1"
+        ],
+        [
+          "Aceite neutro",
+          "20 ml"
+        ],
+        [
+          "Vino de arroz",
+          "30 ml"
+        ],
+        [
+          "Salsa de soja",
+          "20 ml"
+        ],
+        [
+          "Azúcar",
+          "5 g"
+        ],
+        [
+          "Caldo de ave",
+          "150 ml"
+        ],
+        [
+          "Almidón de maíz disuelto en agua fría",
+          "5 g en 15 ml"
+        ]
+      ],
+      "steps": [
+        "Enjuaga las judías negras para quitar parte de la sal y machácalas un poco.",
+        "Saltea el ajo, el jengibre y el chile en el aceite caliente 20–30 segundos, sin que se doren.",
+        "Añade las judías, saltea unos segundos y moja con el vino de arroz.",
+        "Agrega la soja, el azúcar y el caldo y deja hervir 1 minuto.",
+        "Liga con el almidón disuelto hasta que brille y nape."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Pescado al vapor con judía negra",
+        "ratio": "60–80 ml por cada 400 g de pescado",
+        "note": "Por encima al servir."
+      },
+      {
+        "use": "Laca de hoisin",
+        "ratio": "Hoisin, soja y miel 3:1:1",
+        "note": "Pintar en los últimos minutos."
+      },
+      {
+        "use": "Verduras con salsa de ostras",
+        "ratio": "15 ml por cada 200 g de verdura",
+        "note": "Con un poco de caldo."
+      },
+      {
+        "use": "Ligazón para wok",
+        "ratio": "5 g de almidón por cada 200 ml de líquido",
+        "note": "Al final y con hervor."
+      }
+    ],
+    "variants": [
+      {
+        "id": "teriyaki-y-glaseados-de-soja",
+        "name": "Glaseados de soja",
+        "note": "Lacas japonesas parientes."
+      },
+      {
+        "id": "salsa-xo-y-aceites-de-chile",
+        "name": "Salsa XO",
+        "note": "Otra salsa de Hong Kong, de marisco seco."
+      },
+      {
+        "id": null,
+        "name": "Hoisin",
+        "note": "Dulce y especiada, para lacar."
+      },
+      {
+        "id": null,
+        "name": "Doubanjiang",
+        "note": "Habas y chile fermentados, base de Sichuan."
+      }
+    ],
+    "keys": [
+      "Enjuagar las judías negras: son muy saladas.",
+      "Ajo y jengibre, segundos, sin dorar.",
+      "Salsa al final del salteado.",
+      "Almidón disuelto en frío y con hervor.",
+      "Hoisin y salsas dulces: se queman pronto."
+    ],
+    "errors": [
+      {
+        "p": "Salsa demasiado salada",
+        "fix": "Judías sin enjuagar o mucha soja. Enjuaga y sala al final."
+      },
+      {
+        "p": "Salsa con grumos o turbia",
+        "fix": "Almidón mal disuelto. Disuélvelo en agua fría y añádelo con hervor."
+      },
+      {
+        "p": "Laca quemada",
+        "fix": "Mucho azúcar al principio. Pinta solo al final."
+      }
+    ],
+    "history": "Las judías de soja fermentadas son uno de los condimentos más antiguos de China. La hoisin y la salsa de ostras son propias de la cocina cantonesa; el doubanjiang, de Sichuan.",
+    "uses": [
+      "Pescado al vapor",
+      "Almejas y marisco salteado",
+      "Cerdo y pato lacados",
+      "Verduras al wok"
+    ],
+    "keep": "Salsa de judía negra: 4–5 días en frío. Hoisin y salsa de ostras comerciales, en frío una vez abiertas, según envase.",
+    "pro": "Ten el sofrito de ajo, jengibre y judía negra hecho y en frío; termina con caldo y almidón en el wok al momento.",
+    "related": [
+      "pastas-fermentadas-de-asia",
+      "soja-y-derivados",
+      "salteado-y-wok",
+      "papillote-y-vapor",
+      "aromaticos-de-asia",
+      "lacado-de-carnes"
+    ]
+  },
+  {
+    "id": "sambal",
+    "name": "Sambal",
+    "name_en": "Sambal",
+    "aka": [
+      "sambal oelek",
+      "sambal terasi",
+      "sambal matah",
+      "sambal tumis",
+      "pasta de chile indonesia"
+    ],
+    "cat": "salsas",
+    "group": "Asia",
+    "summary": "Pastas y salsas de chile de Indonesia y Malasia: crudas o fritas, con chalota, ajo, pasta de gamba, tamarindo o lima. Picante con sabor.",
+    "what": "Sambal es el nombre que reciben en Indonesia, Malasia y Singapur cientos de salsas de chile. El sambal oelek es el más sencillo: chile rojo fresco machacado con sal y algo de vinagre o lima. El sambal terasi añade pasta de gamba fermentada tostada, que le da un fondo salado y marino. El sambal tumis se fríe despacio con chalota, ajo, azúcar de palma y tamarindo hasta que el aceite se separa: es más dulce, profundo y se conserva mejor. El sambal matah de Bali es crudo: chalota, hierba limón, chile y hoja de lima en aceite caliente.\n\nSe sirve en la mesa con arroz, pescado y carne a la brasa, huevos y verduras, o se usa como base de salteados. El chile está en [[chiles-secos-y-frescos]]; para la química del picor, [[picante-y-pungencia]].",
+    "base": {
+      "for": "unos 300 g de sambal tumis",
+      "items": [
+        [
+          "Chile rojo fresco, en parte sin semillas",
+          "200 g"
+        ],
+        [
+          "Chalota",
+          "100 g"
+        ],
+        [
+          "Ajo",
+          "30 g"
+        ],
+        [
+          "Pasta de gamba fermentada (terasi), tostada",
+          "10 g"
+        ],
+        [
+          "Aceite neutro",
+          "80 ml"
+        ],
+        [
+          "Azúcar de palma",
+          "20 g"
+        ],
+        [
+          "Pulpa de tamarindo",
+          "20 g"
+        ],
+        [
+          "Sal",
+          "5 g"
+        ]
+      ],
+      "steps": [
+        "Tuesta la pasta de gamba en una sartén seca o envuelta en papel de aluminio hasta que huela, 1–2 minutos.",
+        "Tritura el chile, la chalota, el ajo y la pasta de gamba hasta una pasta gruesa.",
+        "Fríe la pasta en el aceite a fuego medio-bajo, removiendo, 15–20 minutos, hasta que oscurezca y el aceite se separe.",
+        "Añade el azúcar, el tamarindo y la sal y cocina 5 minutos más.",
+        "Prueba: picante, dulce, ácido y salado. Enfría rápido y guarda cubierto de su aceite."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Sambal oelek",
+        "ratio": "200 g de chile, 5 g de sal, 15 ml de vinagre o lima",
+        "note": "Machacado en crudo."
+      },
+      {
+        "use": "Sambal matah",
+        "ratio": "100 g de chalota, 2 tallos de hierba limón, 4 chiles, 50 ml de aceite caliente",
+        "note": "Al momento."
+      },
+      {
+        "use": "Para mesa",
+        "ratio": "10–15 g por persona",
+        "note": "En cuenco pequeño."
+      },
+      {
+        "use": "Base de salteado",
+        "ratio": "1 cucharada por ración",
+        "note": "Frita unos segundos antes del producto."
+      }
+    ],
+    "variants": [
+      {
+        "id": "salsa-xo-y-aceites-de-chile",
+        "name": "Aceites de chile",
+        "note": "Otra forma de llevar chile a la mesa."
+      },
+      {
+        "id": "pastas-de-especias",
+        "name": "Pastas de especias",
+        "note": "Bases de curry de la misma región."
+      },
+      {
+        "id": null,
+        "name": "Sambal matah",
+        "note": "Crudo, con chalota y hierba limón."
+      },
+      {
+        "id": null,
+        "name": "Sambal terasi",
+        "note": "Con pasta de gamba tostada."
+      }
+    ],
+    "keys": [
+      "Chile con sabor, no solo picante.",
+      "Freír hasta que el aceite se separe.",
+      "La pasta de gamba, siempre tostada.",
+      "Equilibrar con dulce, ácido y sal.",
+      "Quitar parte de las semillas regula el picor."
+    ],
+    "errors": [
+      {
+        "p": "Sambal amargo",
+        "fix": "Ajo o chalota quemados. Fríe a fuego medio-bajo y remueve."
+      },
+      {
+        "p": "Sambal crudo y áspero",
+        "fix": "Poco tiempo de fritura. Sigue hasta que el aceite se separe."
+      },
+      {
+        "p": "Picor sin sabor",
+        "fix": "Solo chile. Añade chalota, tamarindo y azúcar de palma."
+      }
+    ],
+    "history": "El sambal es parte de la mesa diaria del archipiélago malayo, con versiones propias de cada isla y región. El chile llegó a la zona a partir del siglo XVI y se integró en salsas que ya existían.",
+    "uses": [
+      "Arroz y fideos",
+      "Pescado y carne a la brasa",
+      "Huevos",
+      "Salteados"
+    ],
+    "keep": "Sambal tumis frito: 1 semana en frío, cubierto de aceite. Sambal oelek: 1 semana en frío. Sambal matah: en el día. Las versiones con ajo o chalota en aceite, nunca a temperatura ambiente.",
+    "pro": "Haz el sambal tumis en tanda semanal; el matah, en el momento del servicio.",
+    "related": [
+      "chiles-secos-y-frescos",
+      "picante-y-pungencia",
+      "salsa-xo-y-aceites-de-chile",
+      "pastas-de-especias",
+      "aromaticos-de-asia",
+      "fuego-y-brasa"
+    ]
+  },
+  {
+    "id": "chutneys-frescos-y-raita",
+    "name": "Chutneys frescos y raita",
+    "name_en": "Fresh chutneys and raita",
+    "aka": [
+      "chutney verde",
+      "chutney de menta y cilantro",
+      "chutney de tamarindo",
+      "raita",
+      "salsas indias"
+    ],
+    "cat": "salsas",
+    "group": "Salsas del mundo",
+    "summary": "Las salsas de mesa de la India: chutney verde de cilantro y menta, chutney dulce de tamarindo y raita de yogur, para asados, fritos, legumbres y arroces.",
+    "what": "En la India, chutney no es solo la conserva agridulce que se conoce en Europa ([[chutneys-y-compotas-saladas]]): también son salsas frescas que se hacen en el día. El chutney verde tritura cilantro y menta con chile verde, jengibre, lima, sal y un poco de azúcar; a veces lleva yogur. El de tamarindo es dulce y ácido, con azúcar o panela, comino y jengibre seco, y acompaña fritos y aperitivos.\n\nLa raita es yogur batido con pepino rallado, comino tostado y hierbas, o con cebolla, tomate o boniato. Refresca y equilibra el picante de los curries, los asados del [[tandoor-y-asados-especiados|tandoor]] y el [[biryani]]. Juntas en la mesa, dan los contrastes de la comida india: fresco, ácido, dulce y picante.",
+    "base": {
+      "for": "unos 200 ml de chutney verde",
+      "items": [
+        [
+          "Cilantro (hojas y tallos finos)",
+          "60 g"
+        ],
+        [
+          "Menta (hojas)",
+          "30 g"
+        ],
+        [
+          "Chile verde",
+          "1–2"
+        ],
+        [
+          "Jengibre",
+          "10 g"
+        ],
+        [
+          "Zumo de lima",
+          "30 ml"
+        ],
+        [
+          "Agua fría o yogur",
+          "40–60 ml"
+        ],
+        [
+          "Azúcar",
+          "5 g"
+        ],
+        [
+          "Sal",
+          "3 g"
+        ],
+        [
+          "Comino tostado y molido",
+          "2 g"
+        ]
+      ],
+      "steps": [
+        "Lava y seca bien las hierbas.",
+        "Tritura el chile, el jengibre, la lima, la sal y el azúcar con la mitad del agua.",
+        "Añade las hierbas y tritura en pulsos cortos, con un hielo si hace falta para que no se calienten.",
+        "Aclara con agua o yogur hasta textura de salsa espesa.",
+        "Termina con el comino, prueba y ajusta: fresco, ácido, picante y un punto dulce."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Chutney de tamarindo",
+        "ratio": "100 g de pulpa, 80 g de azúcar o panela, 250 ml de agua",
+        "note": "Cocer hasta napar con comino y jengibre."
+      },
+      {
+        "use": "Raita de pepino",
+        "ratio": "250 g de yogur, 150 g de pepino rallado y escurrido",
+        "note": "Comino tostado y menta."
+      },
+      {
+        "use": "Ración de chutney verde",
+        "ratio": "20–30 ml",
+        "note": "Frío."
+      },
+      {
+        "use": "Chutney verde con yogur",
+        "ratio": "1 parte de chutney por 2 de yogur",
+        "note": "Más suave, para asados."
+      }
+    ],
+    "variants": [
+      {
+        "id": "chutneys-y-compotas-saladas",
+        "name": "Chutneys de conserva",
+        "note": "La versión cocida y agridulce."
+      },
+      {
+        "id": "salsa-yogur-limon",
+        "name": "Salsa de yogur",
+        "note": "Pariente mediterránea de la raita."
+      },
+      {
+        "id": null,
+        "name": "Chutney de tamarindo",
+        "note": "Dulce y ácido, para fritos."
+      },
+      {
+        "id": null,
+        "name": "Raita",
+        "note": "Yogur con pepino y comino."
+      }
+    ],
+    "keys": [
+      "Hierbas frescas trituradas en frío.",
+      "Lima al final para que conserve el verde.",
+      "Comino siempre tostado.",
+      "Escurrir el pepino de la raita.",
+      "Contraste: fresco con picante, dulce con frito."
+    ],
+    "errors": [
+      {
+        "p": "Chutney verde oscuro",
+        "fix": "Hierbas calentadas al triturar o hecho con mucha antelación. Tritura en frío y en el día."
+      },
+      {
+        "p": "Raita aguada",
+        "fix": "Pepino sin escurrir. Sálalo, espera 10 minutos y aprieta."
+      },
+      {
+        "p": "Chutney de tamarindo con semillas o fibras",
+        "fix": "Pulpa sin colar. Remoja y cuela la pulpa antes."
+      }
+    ],
+    "history": "Los chutneys y la raita forman parte de la mesa del subcontinente indio, con muchas versiones regionales. La palabra chutney pasó al inglés y de ahí a Europa asociada sobre todo a las conservas.",
+    "uses": [
+      "Asados y brochetas especiadas",
+      "Fritos y aperitivos",
+      "Arroces y legumbres",
+      "Panes planos"
+    ],
+    "keep": "Chutney verde: 2 días en frío. Raita: 2 días en frío. Chutney de tamarindo cocido: 2 semanas en frío.",
+    "pro": "Ten las hierbas limpias y secas y tritura el chutney verde para cada servicio. El de tamarindo, en tanda semanal.",
+    "related": [
+      "chutneys-y-compotas-saladas",
+      "tandoor-y-asados-especiados",
+      "dal-y-curries-de-legumbre",
+      "biryani",
+      "hierbas-frescas",
+      "lacteos-fermentados"
+    ]
+  },
+  {
+    "id": "pebre-y-aji-colombiano",
+    "name": "Pebre y ají colombiano",
+    "name_en": "Pebre and Colombian ají",
+    "aka": [
+      "pebre chileno",
+      "ají colombiano",
+      "ají de cilantro",
+      "salsa criolla argentina",
+      "salsas frescas de Sudamérica"
+    ],
+    "cat": "salsas",
+    "group": "Salsas del mundo",
+    "summary": "Salsas frescas picadas de Sudamérica: el pebre chileno de tomate, cebolla y cilantro, y el ají colombiano de cebolleta, cilantro, ají y vinagre.",
+    "what": "Son las salsas de picado fino que acompañan el pan, las empanadas y la carne a la brasa en buena parte de Sudamérica. El pebre chileno lleva tomate, cebolla, cilantro, ají verde o rojo, ajo, aceite y vinagre o limón; se sirve con pan y con el asado. El ají colombiano es más líquido y ácido: ají picante, cebolla larga o cebolleta, cilantro, vinagre, agua y sal, a veces con tomate o aguacate; acompaña empanadas, [[arepas]] y sopas.\n\nLa salsa criolla argentina es pariente: tomate, pimiento y cebolla picados con vinagre y aceite, junto al [[chimichurri]] en la parrilla. Se diferencian de la [[chiles-y-salsas-mexicanas|salsa mexicana]] por el vinagre y el uso de cilantro y cebolleta en mayor cantidad. Se hacen a cuchillo y en el día.",
+    "base": {
+      "for": "unos 400 g de pebre",
+      "items": [
+        [
+          "Tomate maduro sin semillas, en dados pequeños",
+          "200 g"
+        ],
+        [
+          "Cebolla en dados pequeños",
+          "100 g"
+        ],
+        [
+          "Cilantro picado",
+          "30 g"
+        ],
+        [
+          "Ají verde o rojo picado sin semillas",
+          "15–20 g"
+        ],
+        [
+          "Ajo picado muy fino",
+          "1 diente"
+        ],
+        [
+          "Aceite de oliva o neutro",
+          "40 ml"
+        ],
+        [
+          "Vinagre de vino blanco o zumo de limón",
+          "20 ml"
+        ],
+        [
+          "Sal",
+          "4 g"
+        ]
+      ],
+      "steps": [
+        "Lava la cebolla picada en agua fría 5 minutos y escúrrela bien para suavizarla.",
+        "Mezcla el tomate, la cebolla, el cilantro, el ají y el ajo.",
+        "Aliña con sal, vinagre y aceite.",
+        "Deja reposar 20–30 minutos en frío para que se integre.",
+        "Prueba y ajusta de sal, ácido y picante antes de servir."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Ají colombiano",
+        "ratio": "50 g de cebolleta, 20 g de cilantro, 1–2 ajíes, 80 ml de vinagre, 80 ml de agua, sal",
+        "note": "Más líquido."
+      },
+      {
+        "use": "Salsa criolla",
+        "ratio": "Tomate, pimiento y cebolla a partes iguales, vinagre y aceite 1:2",
+        "note": "Para asado."
+      },
+      {
+        "use": "Con pan o empanadas",
+        "ratio": "30–40 g por ración",
+        "note": "Fresco."
+      },
+      {
+        "use": "Picor",
+        "ratio": "Medio ají por cada 100 g de base",
+        "note": "Ajustar al ají."
+      }
+    ],
+    "variants": [
+      {
+        "id": "chimichurri",
+        "name": "Chimichurri",
+        "note": "Compañero en la parrilla."
+      },
+      {
+        "id": "chiles-y-salsas-mexicanas",
+        "name": "Salsas mexicanas",
+        "note": "Primas sin vinagre."
+      },
+      {
+        "id": "huancaina-y-salsas-de-aji",
+        "name": "Salsas peruanas",
+        "note": "Otra familia de ají."
+      },
+      {
+        "id": null,
+        "name": "Salsa criolla argentina",
+        "note": "Tomate, pimiento y cebolla."
+      }
+    ],
+    "keys": [
+      "Corte fino y parejo, a cuchillo.",
+      "Cebolla lavada para que no domine.",
+      "Vinagre o limón al gusto de la casa.",
+      "Reposo corto: gana sin perder frescor.",
+      "En el día."
+    ],
+    "errors": [
+      {
+        "p": "Salsa aguada",
+        "fix": "Tomate con semillas o sal mucho antes. Quita semillas y sala cerca del servicio."
+      },
+      {
+        "p": "Cebolla que lo tapa todo",
+        "fix": "Sin lavar o cortada gruesa. Lava en agua fría y pica fino."
+      },
+      {
+        "p": "Cilantro oscuro",
+        "fix": "Picado con antelación. Pica en el día."
+      }
+    ],
+    "history": "El pebre es parte de la mesa diaria de Chile y el ají, de la de Colombia y Ecuador; las dos mezclan ajíes americanos con cebolla, ajo y vinagre llegados de Europa. Cada casa tiene su versión.",
+    "uses": [
+      "Carnes a la brasa",
+      "Empanadas y arepas",
+      "Pan y tostadas",
+      "Sopas y legumbres"
+    ],
+    "keep": "Pebre y salsa criolla: en el día, como mucho 2 días en frío. Ají colombiano: 3 días en frío.",
+    "pro": "Ten las verduras cortadas y la cebolla lavada; mezcla y aliña en el servicio.",
+    "related": [
+      "chimichurri",
+      "chiles-y-salsas-mexicanas",
+      "arepas",
+      "chiles-secos-y-frescos",
+      "tomate",
+      "fuego-y-brasa"
+    ]
+  },
+  {
+    "id": "salsa-marinera",
+    "name": "Salsa marinera",
+    "name_en": "Spanish marinera sauce",
+    "aka": [
+      "a la marinera",
+      "almejas a la marinera",
+      "mejillones a la marinera",
+      "salsa de almejas"
+    ],
+    "cat": "salsas",
+    "group": "Salsas españolas",
+    "summary": "Sofrito de cebolla y ajo con vino blanco, pimentón, un poco de harina o pan y el jugo del marisco: la salsa de las almejas, los mejillones y el pescado a la marinera.",
+    "what": "Es una de las salsas de marisco más populares de la cocina española. Se hace un sofrito suave de cebolla y ajo, se tuesta un poco de harina o pan rallado, se añade pimentón, se moja con vino blanco y caldo de pescado o el agua de abrir el marisco, y en esa salsa se abren las almejas o los mejillones. El jugo que sueltan termina de darle sabor y la harina la liga.\n\nCon menos harina y sin pimentón se acerca a la [[salsa-verde]]; con tomate, a las salsas de tomate para marisco. Sirve también para merluza, rape, calamares y pescado en cazuela. El punto está en no pasar el marisco, que se endurece, y en que la salsa quede ligada pero no espesa. Para limpiar y cocer el marisco, ver [[coccion-de-marisco]].",
+    "base": {
+      "for": "1 kg de almejas o mejillones (4 raciones)",
+      "items": [
+        [
+          "Aceite de oliva virgen extra",
+          "60 ml"
+        ],
+        [
+          "Cebolla picada fina",
+          "150 g"
+        ],
+        [
+          "Ajo picado",
+          "3 dientes"
+        ],
+        [
+          "Harina de trigo o pan rallado",
+          "10 g"
+        ],
+        [
+          "Pimentón dulce",
+          "3 g"
+        ],
+        [
+          "Guindilla (opcional)",
+          "1"
+        ],
+        [
+          "Vino blanco seco",
+          "150 ml"
+        ],
+        [
+          "Fumet o agua de abrir el marisco",
+          "200 ml"
+        ],
+        [
+          "Perejil picado",
+          "10 g"
+        ]
+      ],
+      "steps": [
+        "Purga las almejas 1–2 horas en agua fría con sal (30–35 g por litro); limpia y desbarba los mejillones.",
+        "Sofríe la cebolla y el ajo en el aceite a fuego suave 10–12 minutos, sin color.",
+        "Añade la harina y cocina 1 minuto; fuera del fuego, el pimentón y la guindilla.",
+        "Moja con el vino, deja que evapore el alcohol 2 minutos y añade el fumet; cuece 5 minutos removiendo.",
+        "Añade el marisco, tapa y cocina a fuego vivo hasta que se abra, 2–4 minutos, moviendo la cazuela; termina con perejil."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Ligazón",
+        "ratio": "10 g de harina por cada 350 ml de líquido",
+        "note": "Ligada, no espesa."
+      },
+      {
+        "use": "Marisco",
+        "ratio": "250 g de almejas o mejillones por ración",
+        "note": "Como plato."
+      },
+      {
+        "use": "Pescado a la marinera",
+        "ratio": "150 ml de salsa por cada 600 g de pescado",
+        "note": "En cazuela, 6–8 minutos."
+      },
+      {
+        "use": "Purga de almejas",
+        "ratio": "30–35 g de sal por litro, 1–2 horas",
+        "note": "En frío."
+      }
+    ],
+    "variants": [
+      {
+        "id": "salsa-verde",
+        "name": "Salsa verde",
+        "note": "Sin pimentón, con más perejil."
+      },
+      {
+        "id": "mejillon-y-almeja",
+        "name": "Almejas y mejillones",
+        "note": "El producto."
+      },
+      {
+        "id": "sofrito",
+        "name": "Sofrito",
+        "note": "La base."
+      },
+      {
+        "id": null,
+        "name": "Merluza a la marinera",
+        "note": "La misma salsa con pescado y marisco."
+      }
+    ],
+    "keys": [
+      "Sofrito suave, sin color.",
+      "Pimentón fuera del fuego.",
+      "El jugo del marisco termina la salsa.",
+      "Marisco al final y poco tiempo.",
+      "Ligada, no espesa."
+    ],
+    "errors": [
+      {
+        "p": "Salsa con arena",
+        "fix": "Almejas mal purgadas. Púrgalas y cuela el jugo de abrirlas."
+      },
+      {
+        "p": "Salsa espesa y harinosa",
+        "fix": "Demasiada harina o poco cocida. Reduce la cantidad y cuécela antes de mojar."
+      },
+      {
+        "p": "Marisco duro",
+        "fix": "Cocción larga. Retira en cuanto se abra."
+      }
+    ],
+    "history": "Es una salsa de la cocina popular de las costas españolas, con versiones en el norte y el Mediterráneo. «A la marinera» se usa en España para platos de marisco y pescado con sofrito y vino.",
+    "uses": [
+      "Almejas y mejillones",
+      "Merluza y rape en cazuela",
+      "Calamares",
+      "Arroces y fideos de marisco"
+    ],
+    "keep": "La base sin marisco: 2 días en frío. Con marisco, al momento. Desecha las almejas o mejillones que estén abiertos antes de cocinar o que no se abran.",
+    "pro": "Ten la base de sofrito y vino hecha; abre el marisco en cazuela por ración y termina en el pase.",
+    "related": [
+      "mejillon-y-almeja",
+      "coccion-de-marisco",
+      "salsa-verde",
+      "sofrito",
+      "merluza-y-pescadilla",
+      "pimenton-y-noras"
+    ]
+  },
+  {
+    "id": "tkemali-y-adjika",
+    "name": "Tkemali y adjika",
+    "name_en": "Tkemali and adjika",
+    "aka": [
+      "tkemali",
+      "salsa de ciruela georgiana",
+      "adjika",
+      "ajika",
+      "salsas georgianas"
+    ],
+    "cat": "salsas",
+    "group": "Salsas del mundo",
+    "summary": "Dos salsas de Georgia para carne a la brasa: el tkemali, de ciruela ácida con ajo y hierbas, y la adjika, pasta picante de chile, ajo y especias.",
+    "what": "La cocina georgiana acompaña sus brochetas a la brasa con salsas muy aromáticas. El tkemali se hace con ciruelas ácidas (verdes o rojas, según la temporada) cocidas, pasadas por el pasapurés y sazonadas con ajo, eneldo, cilantro, una menta silvestre de la zona, semilla de cilantro, chile y sal. Es ácido, herbal y algo picante, como un kétchup de fruta sin azúcar.\n\nLa adjika es una pasta de chile rojo, ajo, sal y especias como el cilantro en grano y el fenogreco; la hay seca, casi como una sal de chile, y fresca, con pimiento y tomate. Se usa con carne, en adobos y para sazonar guisos. Las dos encajan con la brasa: ácido y picante contra la grasa. Ver [[kebab-y-pinchos]] y [[salsas-agridulces-y-gastriques]].",
+    "base": {
+      "for": "unos 600 ml de tkemali",
+      "items": [
+        [
+          "Ciruelas ácidas (o ciruelas poco maduras)",
+          "1 kg"
+        ],
+        [
+          "Agua",
+          "150 ml"
+        ],
+        [
+          "Ajo",
+          "4 dientes"
+        ],
+        [
+          "Cilantro fresco",
+          "30 g"
+        ],
+        [
+          "Eneldo",
+          "20 g"
+        ],
+        [
+          "Menta o poleo",
+          "10 g"
+        ],
+        [
+          "Semilla de cilantro molida",
+          "3 g"
+        ],
+        [
+          "Chile seco",
+          "al gusto"
+        ],
+        [
+          "Sal",
+          "10 g"
+        ],
+        [
+          "Azúcar (solo si la fruta es muy ácida)",
+          "0–20 g"
+        ]
+      ],
+      "steps": [
+        "Cuece las ciruelas enteras con el agua a fuego medio hasta que se deshagan, 15–20 minutos.",
+        "Pásalas por el pasapurés o un colador para quitar huesos y pieles.",
+        "Vuelve a poner el puré al fuego y reduce hasta textura de salsa espesa, removiendo.",
+        "Tritura el ajo, las hierbas, las especias, el chile y la sal y añádelos fuera del fuego.",
+        "Prueba y ajusta de sal y ácido; enfría rápido."
+      ]
+    },
+    "ratios": [
+      {
+        "use": "Adjika fresca",
+        "ratio": "200 g de chile rojo, 50 g de ajo, 10 g de sal, cilantro en grano y fenogreco",
+        "note": "Triturado en crudo."
+      },
+      {
+        "use": "Adjika seca",
+        "ratio": "Chile seco molido, ajo seco, sal y especias",
+        "note": "Como sal de chile."
+      },
+      {
+        "use": "Tkemali en la mesa",
+        "ratio": "30–40 ml por ración",
+        "note": "Con carne a la brasa."
+      },
+      {
+        "use": "Adobo con adjika",
+        "ratio": "20 g por kilo de carne",
+        "note": "Con aceite, 2–12 horas en frío."
+      }
+    ],
+    "variants": [
+      {
+        "id": "salsas-agridulces-y-gastriques",
+        "name": "Salsas de fruta",
+        "note": "Familia de las salsas ácidas de fruta."
+      },
+      {
+        "id": "kebab-y-pinchos",
+        "name": "Brochetas",
+        "note": "Su acompañamiento natural."
+      },
+      {
+        "id": null,
+        "name": "Tkemali verde",
+        "note": "Con ciruela inmadura, más ácido."
+      },
+      {
+        "id": null,
+        "name": "Adjika seca",
+        "note": "Sal de chile y especias."
+      }
+    ],
+    "keys": [
+      "Fruta ácida: el tkemali no es una mermelada.",
+      "Hierbas y ajo fuera del fuego.",
+      "Reducir hasta salsa espesa, no pasta.",
+      "La adjika es potente: poca cantidad.",
+      "Ácido y picante contra la grasa de la brasa."
+    ],
+    "errors": [
+      {
+        "p": "Tkemali dulce y plano",
+        "fix": "Ciruela demasiado madura o con azúcar. Usa fruta ácida o equilibra con limón."
+      },
+      {
+        "p": "Hierbas sin aroma",
+        "fix": "Cocidas en la salsa. Añádelas al final."
+      },
+      {
+        "p": "Adjika que solo pica",
+        "fix": "Faltan especias y sal. Tuesta y muele las semillas."
+      }
+    ],
+    "history": "El tkemali y la adjika son salsas tradicionales de Georgia; la adjika se asocia sobre todo a Abjasia y Megrelia, en el oeste del país. Acompañan las brochetas de carne a la brasa de la cocina del Cáucaso.",
+    "uses": [
+      "Carne a la brasa",
+      "Patatas y verduras asadas",
+      "Pollo y cordero",
+      "Adobos"
+    ],
+    "keep": "Tkemali: 2 semanas en frío en bote cerrado. Adjika fresca: 1 semana en frío. Adjika seca: meses en bote cerrado y seco.",
+    "pro": "Haz el tkemali en temporada de ciruela y guárdalo en frío; la adjika seca, en tanda, como condimento de la partida de brasa.",
+    "related": [
+      "kebab-y-pinchos",
+      "salsas-agridulces-y-gastriques",
+      "frutos-rojos-y-fruta-de-hueso",
+      "chiles-secos-y-frescos",
+      "hierbas-frescas",
+      "fuego-y-brasa"
+    ]
   }
 ]

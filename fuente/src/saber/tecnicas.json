@@ -21203,5 +21203,3174 @@
    "mole",
    "especias"
   ]
+ },
+ {
+  "id": "caldeirada",
+  "name": "Caldeirada gallega",
+  "name_en": "Galician fish caldeirada",
+  "cat": "tecnicas",
+  "group": "Cocina gallega",
+  "technique": "hervido",
+  "aka": [
+   "caldeirada",
+   "caldeirada de peixe",
+   "caldeirada de pescado",
+   "merluza a la gallega",
+   "pescado a la gallega"
+  ],
+  "summary": "Pescado y patatas cocidos juntos en agua con laurel y cebolla, servidos con una ajada de aceite, ajo y pimentón.",
+  "what": "La caldeirada es un plato marinero gallego muy sencillo: rodajas de pescado (merluza, rape, raya, congrio) y patatas cocidas en agua con sal, laurel y cebolla, que se escurren y se riegan con una [[ajada-gallega|ajada]], aceite caliente con ajo y pimentón. La misma idea, con merluza y patatas, se llama a menudo merluza a la gallega.\n\nTodo depende del pescado fresco, de no pasar el punto y de una ajada bien hecha, con el pimentón fuera del fuego. Cada puerto tiene su caldeirada.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Pescado en rodajas (merluza, rape, raya)",
+     "1 kg"
+    ],
+    [
+     "Patatas en rodajas gruesas",
+     "800 g"
+    ],
+    [
+     "Cebolla en cuartos y laurel",
+     "1 y 2 hojas"
+    ],
+    [
+     "Agua y sal",
+     "2 l y 20 g"
+    ],
+    [
+     "Ajada: aceite de oliva, ajo laminado y pimentón dulce y picante",
+     "120 ml, 4 dientes y 8 g"
+    ]
+   ],
+   "steps": [
+    "Cuece las patatas con la cebolla y el laurel en agua con sal 15–18 minutos.",
+    "Añade el pescado salado y cuece 6–8 minutos a fuego suave.",
+    "Para la ajada, dora el ajo en el aceite, aparta del fuego, añade el pimentón y remueve; añade un chorro del caldo de cocción.",
+    "Escurre pescado y patatas y colócalos en la fuente.",
+    "Riega con la ajada caliente y sirve enseguida."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Pescado",
+    "ratio": "6–8 minutos a fuego suave",
+    "note": "Rodajas de 3 cm."
+   },
+   {
+    "use": "Patata",
+    "ratio": "200 g por ración",
+    "note": ""
+   },
+   {
+    "use": "Ajada",
+    "ratio": "30 ml por ración",
+    "note": "Pimentón fuera del fuego."
+   },
+   {
+    "use": "Pescado por ración",
+    "ratio": "250 g con espina",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "ajada-gallega",
+    "name": "Ajada",
+    "note": "Aceite, ajo y pimentón."
+   },
+   {
+    "id": "merluza-y-pescadilla",
+    "name": "Merluza",
+    "note": "La más habitual."
+   },
+   {
+    "id": "bullit-de-peix",
+    "name": "Bullit de peix",
+    "note": "El primo ibicenco."
+   },
+   {
+    "id": "pulpo-a-feira",
+    "name": "Pulpo á feira",
+    "note": "Mismo aliño de pimentón."
+   }
+  ],
+  "keys": [
+   "Pescado fresco y fuego suave.",
+   "Patatas casi hechas antes del pescado.",
+   "Pimentón fuera del fuego.",
+   "Servir enseguida.",
+   "Cada puerto, su caldeirada."
+  ],
+  "errors": [
+   {
+    "p": "Pescado deshecho",
+    "fix": "Hervor fuerte. Fuego suave."
+   },
+   {
+    "p": "Ajada amarga",
+    "fix": "Pimentón quemado. Fuera del fuego."
+   },
+   {
+    "p": "Patatas duras",
+    "fix": "Pescado añadido pronto. Cuece antes las patatas."
+   }
+  ],
+  "history": "La caldeirada es un plato tradicional de los marineros gallegos, con versiones en todos los puertos de Galicia y en Portugal.",
+  "uses": [
+   "Platos de pescado",
+   "Menús de cocina gallega"
+  ],
+  "keep": "Al momento. La ajada, en el día.",
+  "pro": "Patatas cocidas por tandas; pescado y ajada al pedido.",
+  "related": [
+   "ajada-gallega",
+   "merluza-y-pescadilla",
+   "bullit-de-peix",
+   "pulpo-a-feira",
+   "raya-y-pescados-de-fondo",
+   "pimenton-y-noras"
+  ]
+ },
+ {
+  "id": "alubias-de-tolosa",
+  "name": "Alubias de Tolosa con sacramentos",
+  "name_en": "Tolosa beans",
+  "cat": "tecnicas",
+  "group": "Cocina vasca",
+  "technique": "guiso",
+  "aka": [
+   "alubias de Tolosa",
+   "alubia negra",
+   "alubias con sacramentos",
+   "babarrunak"
+  ],
+  "summary": "Alubias oscuras cocidas muy despacio solo con cebolla y aceite hasta quedar mantecosas, servidas con berza, morcilla, chorizo y guindillas.",
+  "what": "Las alubias de Tolosa son una alubia oscura, morada o negra, de piel fina y textura mantecosa. Se cuecen lentamente, con poca cosa: agua, aceite y cebolla, sin remover y cortando el hervor con agua fría, hasta que quedan enteras y el caldo espeso y oscuro. Las carnes, los «sacramentos» (berza, morcilla, chorizo, tocino), se cuecen aparte y se sirven al lado, con guindillas encurtidas.\n\nLa técnica de cocción es la de [[fabada-y-potajes]]. Cada casa ajusta los sacramentos.",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Alubias de Tolosa",
+     "500 g"
+    ],
+    [
+     "Cebolla",
+     "1"
+    ],
+    [
+     "Aceite de oliva",
+     "80 ml"
+    ],
+    [
+     "Agua fría",
+     "lo justo para cubrir"
+    ],
+    [
+     "Sacramentos: berza, morcilla, chorizo y tocino",
+     "500 g, 2, 2 y 150 g"
+    ],
+    [
+     "Guindillas en vinagre",
+     "para servir"
+    ]
+   ],
+   "steps": [
+    "Si son de la temporada, pueden no necesitar remojo; si son secas del año anterior, remójalas 8–12 horas.",
+    "Pon las alubias con la cebolla entera y el aceite, cubre de agua fría y lleva a hervor suave.",
+    "Cuece a fuego mínimo 2–3 horas, moviendo la cazuela y añadiendo agua fría cuando deje de hervir; sala al final.",
+    "Cuece aparte la berza y las carnes.",
+    "Sirve las alubias con los sacramentos al lado y guindillas."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Cocción",
+    "ratio": "2–3 horas a fuego mínimo",
+    "note": "Sin remover."
+   },
+   {
+    "use": "Alubia por ración",
+    "ratio": "80 g en seco",
+    "note": ""
+   },
+   {
+    "use": "Asustar",
+    "ratio": "2–3 veces con agua fría",
+    "note": "Para no romper la piel."
+   },
+   {
+    "use": "Sal",
+    "ratio": "Al final",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "fabada-y-potajes",
+    "name": "Fabada y potajes",
+    "note": "La misma técnica."
+   },
+   {
+    "id": "legumbres",
+    "name": "Legumbres",
+    "note": "Remojo y cocción."
+   },
+   {
+    "id": "morcilla-y-embutidos-de-sangre",
+    "name": "Morcilla",
+    "note": "Sacramento."
+   },
+   {
+    "id": "vinagreta-piparras",
+    "name": "Guindillas",
+    "note": "El acompañante."
+   }
+  ],
+  "keys": [
+   "Pocos ingredientes en la olla.",
+   "Fuego mínimo y sin remover.",
+   "Carnes cocidas aparte.",
+   "Sal al final.",
+   "Cada casa, sus sacramentos."
+  ],
+  "errors": [
+   {
+    "p": "Alubias rotas",
+    "fix": "Hervor fuerte o removidas. Mueve la cazuela."
+   },
+   {
+    "p": "Caldo aguado",
+    "fix": "Mucha agua. Añade poco a poco."
+   },
+   {
+    "p": "Alubias duras",
+    "fix": "Alubia vieja. Remoja y alarga."
+   }
+  ],
+  "history": "La alubia de Tolosa es una variedad tradicional de Gipuzkoa, con una feria y un consumo muy ligado a la cocina vasca de invierno.",
+  "uses": [
+   "Platos de cuchara",
+   "Menús de invierno"
+  ],
+  "keep": "4 días en frío; mejoran de un día para otro.",
+  "pro": "Cuece la víspera; regenera sin remover.",
+  "related": [
+   "fabada-y-potajes",
+   "legumbres",
+   "morcilla-y-embutidos-de-sangre",
+   "vinagreta-piparras",
+   "lenteja-y-garbanzo-por-variedades",
+   "coles-y-brasicas"
+  ]
+ },
+ {
+  "id": "judiones-de-la-granja",
+  "name": "Judiones de La Granja",
+  "name_en": "Judiones beans",
+  "cat": "tecnicas",
+  "group": "Cocina castellana",
+  "technique": "guiso",
+  "aka": [
+   "judiones",
+   "judiones de La Granja",
+   "judiones con chorizo",
+   "alubias grandes"
+  ],
+  "summary": "Alubias blancas enormes y mantecosas guisadas con chorizo, oreja, morro y pimentón, a fuego mínimo para que no se rompan.",
+  "what": "Los judiones son una alubia blanca muy grande y mantecosa de la zona de Segovia. Se remojan, se cuecen muy despacio con cebolla, ajo y laurel y se acompañan de chorizo, tocino, oreja y morro de cerdo, terminando con un sofrito de pimentón. Por su tamaño, la piel se rompe con facilidad: la cocción es lenta y sin remover.\n\nTambién se hacen con perdiz o con almejas. Cada casa tiene su receta.",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Judiones remojados 12–24 horas",
+     "500 g en seco"
+    ],
+    [
+     "Chorizo, tocino, oreja y morro de cerdo",
+     "200 g, 100 g, 1 y 1"
+    ],
+    [
+     "Cebolla, ajo y laurel",
+     "1, 3 dientes y 2 hojas"
+    ],
+    [
+     "Pimentón dulce",
+     "5 g"
+    ],
+    [
+     "Aceite de oliva",
+     "50 ml"
+    ]
+   ],
+   "steps": [
+    "Cuece la oreja y el morro limpios aparte 1,5 horas.",
+    "Pon los judiones en agua fría con la cebolla, el ajo y el laurel; lleva a hervor suave y espuma.",
+    "Cuece a fuego mínimo 2–3 horas, añadiendo agua fría cuando deje de hervir; incorpora el tocino y el chorizo en la última hora.",
+    "Haz un sofrito de ajo y pimentón fuera del fuego y añádelo con las carnes troceadas.",
+    "Sala al final y reposa 20 minutos."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Remojo",
+    "ratio": "12–24 horas",
+    "note": "Son muy grandes."
+   },
+   {
+    "use": "Cocción",
+    "ratio": "2–3 horas a fuego mínimo",
+    "note": ""
+   },
+   {
+    "use": "Judión por ración",
+    "ratio": "80 g en seco",
+    "note": ""
+   },
+   {
+    "use": "Reposo",
+    "ratio": "20 minutos",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "fabada-y-potajes",
+    "name": "Fabada",
+    "note": "La misma familia."
+   },
+   {
+    "id": "casqueria",
+    "name": "Oreja y morro",
+    "note": "Limpieza y cocción."
+   },
+   {
+    "id": "caza-de-pluma",
+    "name": "Con perdiz",
+    "note": "Versión de caza."
+   },
+   {
+    "id": "legumbres",
+    "name": "Legumbres",
+    "note": "Remojo."
+   }
+  ],
+  "keys": [
+   "Remojo largo.",
+   "Fuego mínimo y sin remover.",
+   "Oreja y morro cocidos aparte.",
+   "Pimentón fuera del fuego.",
+   "Cada casa, sus judiones."
+  ],
+  "errors": [
+   {
+    "p": "Piel rota",
+    "fix": "Hervor fuerte. Fuego mínimo."
+   },
+   {
+    "p": "Duros",
+    "fix": "Poco remojo o legumbre vieja. Más remojo y tiempo."
+   },
+   {
+    "p": "Caldo graso",
+    "fix": "Carnes sin desgrasar. Cuécelas aparte."
+   }
+  ],
+  "history": "Los judiones son una legumbre tradicional de la provincia de Segovia, con fama en La Granja de San Ildefonso.",
+  "uses": [
+   "Platos de cuchara",
+   "Menús de invierno"
+  ],
+  "keep": "4 días en frío.",
+  "pro": "Cuece la víspera y regenera suave.",
+  "related": [
+   "fabada-y-potajes",
+   "casqueria",
+   "caza-de-pluma",
+   "legumbres",
+   "chorizo-y-embutidos-curados",
+   "alubias-de-tolosa"
+  ]
+ },
+ {
+  "id": "cochifrito",
+  "name": "Cochifrito",
+  "name_en": "Cochifrito",
+  "cat": "tecnicas",
+  "group": "Cocina castellana",
+  "technique": "fritura",
+  "aka": [
+   "cochifrito",
+   "cochifrito de cordero",
+   "cochifrito de cochinillo",
+   "cordero frito con ajos"
+  ],
+  "summary": "Trozos de cordero lechal o cochinillo fritos despacio con ajo y terminados con un golpe de vinagre o limón y pimentón.",
+  "what": "El cochifrito es una fritura lenta de trozos de cordero lechal o de cochinillo, según la zona: en Navarra y Aragón suele ser de cordero; en Segovia, de cochinillo. La carne se fríe en aceite o manteca con ajos hasta que está dorada por fuera y tierna por dentro, y se termina con un chorro de vinagre o limón y, en algunas casas, pimentón.\n\nEs un plato de pastores, rápido y sabroso. Cada zona y cada casa lo hacen a su manera.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Cordero lechal o cochinillo en trozos pequeños",
+     "1,2 kg"
+    ],
+    [
+     "Ajos sin pelar, golpeados",
+     "8"
+    ],
+    [
+     "Aceite de oliva o manteca",
+     "120 ml"
+    ],
+    [
+     "Vinagre de vino o zumo de limón",
+     "40 ml"
+    ],
+    [
+     "Pimentón (opcional) y sal",
+     "5 g y al gusto"
+    ]
+   ],
+   "steps": [
+    "Sala la carne 30 minutos antes.",
+    "Dora los ajos en la grasa y retíralos.",
+    "Fríe la carne a fuego medio, por tandas, hasta que esté dorada; luego baja el fuego y deja que se haga 20–30 minutos, removiendo.",
+    "Devuelve los ajos, aparta, añade el pimentón y el vinagre o limón y mezcla.",
+    "Deja reposar 2 minutos tapado y sirve."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Fritura",
+    "ratio": "Fuego medio y luego suave, 30–40 minutos",
+    "note": "Tierna dentro."
+   },
+   {
+    "use": "Vinagre",
+    "ratio": "30–40 ml por kg",
+    "note": "Al final."
+   },
+   {
+    "use": "Ración",
+    "ratio": "300 g con hueso",
+    "note": ""
+   },
+   {
+    "use": "Trozos",
+    "ratio": "4–5 cm",
+    "note": "Regulares."
+   }
+  ],
+  "variants": [
+   {
+    "id": "cordero",
+    "name": "Cordero lechal",
+    "note": "Producto."
+   },
+   {
+    "id": "cochinillo",
+    "name": "Cochinillo",
+    "note": "Versión segoviana."
+   },
+   {
+    "id": "fritura",
+    "name": "Fritura",
+    "note": "Temperaturas."
+   },
+   {
+    "id": "cabrito",
+    "name": "Cabrito",
+    "note": "Otra carne joven."
+   }
+  ],
+  "keys": [
+   "Carne joven en trozos regulares.",
+   "Dorar y luego fuego suave.",
+   "Ácido al final para cortar la grasa.",
+   "Pimentón fuera del fuego.",
+   "Cada zona, su cochifrito."
+  ],
+  "errors": [
+   {
+    "p": "Carne dura",
+    "fix": "Fuego fuerte todo el tiempo. Baja tras dorar."
+   },
+   {
+    "p": "Grasiento",
+    "fix": "Sin ácido o sin escurrir. Vinagre y escurre."
+   },
+   {
+    "p": "Ajos quemados",
+    "fix": "Retíralos y añádelos al final."
+   }
+  ],
+  "history": "El cochifrito es un plato tradicional de pastores de Navarra, Aragón y Castilla, con cordero o cochinillo según la zona.",
+  "uses": [
+   "Platos de carne",
+   "Raciones para compartir"
+  ],
+  "keep": "Al momento; 2 días en frío, regenerado en sartén.",
+  "pro": "Carne troceada y salada; fritura por tandas al pedido.",
+  "related": [
+   "cordero",
+   "cochinillo",
+   "fritura",
+   "cabrito",
+   "cebolla-y-ajo",
+   "vinagres"
+  ]
+ },
+ {
+  "id": "esgarraet",
+  "name": "Esgarraet",
+  "name_en": "Esgarraet",
+  "cat": "tecnicas",
+  "group": "Cocina levantina",
+  "technique": "crudo",
+  "aka": [
+   "esgarraet",
+   "pimiento asado con bacalao",
+   "ensalada valenciana de pimiento y bacalao"
+  ],
+  "summary": "Pimiento rojo asado en tiras con bacalao desalado y desmigado crudo, ajo laminado y mucho aceite de oliva.",
+  "what": "El esgarraet es un aperitivo valenciano: pimientos rojos asados y pelados en tiras, [[bacalao]] desalado y desmigado en crudo, ajo laminado y aceite de oliva abundante, a veces con aceitunas negras. Reposa unas horas para que el bacalao tome el sabor del pimiento y el aceite.\n\nEl nombre viene de «esgarrar», desgarrar: todo se rompe con las manos. Comparte idea con la [[esqueixada-y-empedrat|esqueixada]] catalana. Cada casa ajusta el ajo y el aceite.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Pimientos rojos asados y pelados",
+     "4"
+    ],
+    [
+     "Bacalao desalado y desmigado",
+     "250 g"
+    ],
+    [
+     "Ajo laminado",
+     "2 dientes"
+    ],
+    [
+     "Aceite de oliva virgen extra",
+     "100 ml"
+    ],
+    [
+     "Aceitunas negras (opcional)",
+     "50 g"
+    ]
+   ],
+   "steps": [
+    "Asa los pimientos, súdalos, pélalos y rómpelos en tiras con las manos, guardando su jugo.",
+    "Desmiga el bacalao desalado en hebras y escúrrelo apretando un poco.",
+    "Mezcla pimiento, bacalao, ajo y aceitunas.",
+    "Cubre con el aceite y el jugo de los pimientos.",
+    "Reposa al menos 2 horas en frío y sirve a temperatura ambiente con pan."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Bacalao",
+    "ratio": "60 g por ración",
+    "note": "Desalado."
+   },
+   {
+    "use": "Reposo",
+    "ratio": "2–12 horas en frío",
+    "note": "Para que se mezclen los sabores."
+   },
+   {
+    "use": "Aceite",
+    "ratio": "25 ml por ración",
+    "note": ""
+   },
+   {
+    "use": "Pimientos asados",
+    "ratio": "200 °C, 40–50 minutos",
+    "note": "Ver pimientos."
+   }
+  ],
+  "variants": [
+   {
+    "id": "pimientos-asados-alinados",
+    "name": "Pimientos asados",
+    "note": "Base."
+   },
+   {
+    "id": "esqueixada-y-empedrat",
+    "name": "Esqueixada",
+    "note": "La prima catalana."
+   },
+   {
+    "id": "bacalao",
+    "name": "Bacalao",
+    "note": "Desalado."
+   },
+   {
+    "id": "pimientos",
+    "name": "Pimientos",
+    "note": "Asar y pelar."
+   }
+  ],
+  "keys": [
+   "Pimientos bien asados y pelados sin agua.",
+   "Bacalao de salazón tradicional bien curado; si es un salado ligero, congélalo antes por el anisakis.",
+   "Romper con las manos.",
+   "Reposo para que se mezcle.",
+   "Servir a temperatura ambiente."
+  ],
+  "errors": [
+   {
+    "p": "Salado",
+    "fix": "Bacalao poco desalado. Desala más."
+   },
+   {
+    "p": "Pimiento aguado",
+    "fix": "Lavado al pelar. Pela en seco."
+   },
+   {
+    "p": "Ajo que domina",
+    "fix": "Mucho ajo. Menos o escaldado."
+   }
+  ],
+  "history": "El esgarraet es un aperitivo tradicional de la cocina valenciana, ligado al bacalao en salazón y a los pimientos asados.",
+  "uses": [
+   "Aperitivos",
+   "Tapas con pan",
+   "Entrantes fríos"
+  ],
+  "keep": "2–3 días en frío cubierto de aceite.",
+  "pro": "Prepara en tanda y saca a temperatura antes del servicio.",
+  "related": [
+   "pimientos-asados-alinados",
+   "esqueixada-y-empedrat",
+   "bacalao",
+   "pimientos",
+   "aceite-de-oliva",
+   "desalado-y-remojo"
+  ]
+ },
+ {
+  "id": "gazpacho-manchego",
+  "name": "Gazpacho manchego",
+  "name_en": "Manchego game stew with flatbread",
+  "cat": "tecnicas",
+  "group": "Cocina castellana",
+  "technique": "guiso",
+  "aka": [
+   "gazpacho manchego",
+   "galianos",
+   "gazpachos de pastor",
+   "torta de gazpacho",
+   "torta cenceña"
+  ],
+  "summary": "Guiso caliente de caza o pollo con tomate y pimiento en el que se cuecen trozos de torta fina sin levadura.",
+  "what": "El gazpacho manchego no se parece al andaluz: es un guiso caliente de pastores de La Mancha. Se hace con carne de caza (conejo, liebre, perdiz) o pollo, guisada con ajo, tomate y pimiento, y al final se añaden trozos de una torta fina y seca de harina y agua, sin levadura, que absorbe el caldo y engorda el guiso. Se comía tradicionalmente sobre la propia torta.\n\nEs una cocina de aprovechamiento de campo, con muchas variantes de una casa a otra.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Conejo o pollo troceado (o caza)",
+     "1 kg"
+    ],
+    [
+     "Ajo, tomate y pimiento",
+     "4 dientes, 2 y 1"
+    ],
+    [
+     "Tomillo y romero",
+     "1 rama de cada"
+    ],
+    [
+     "Torta cenceña o torta fina sin levadura, troceada",
+     "150 g"
+    ],
+    [
+     "Caldo o agua",
+     "1–1,2 l"
+    ],
+    [
+     "Aceite de oliva",
+     "80 ml"
+    ]
+   ],
+   "steps": [
+    "Dora la carne salada en el aceite con los ajos; resérvala.",
+    "Sofríe el tomate y el pimiento en la misma grasa.",
+    "Devuelve la carne, añade las hierbas y el caldo y guisa hasta que esté tierna: 40 minutos el pollo, más la caza.",
+    "Deshuesa en parte si quieres y añade la torta troceada.",
+    "Cuece 5–8 minutos hasta que la torta absorba el caldo y quede melosa; sirve enseguida."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Torta",
+    "ratio": "35–40 g por ración",
+    "note": "Seca y troceada."
+   },
+   {
+    "use": "Caldo",
+    "ratio": "250–300 ml por ración",
+    "note": "La torta lo absorbe."
+   },
+   {
+    "use": "Torta en el guiso",
+    "ratio": "5–8 minutos",
+    "note": "Melosa."
+   },
+   {
+    "use": "Ración de carne",
+    "ratio": "250 g con hueso",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "guisos-de-caza",
+    "name": "Caza",
+    "note": "Conejo, liebre o perdiz."
+   },
+   {
+    "id": "conejo",
+    "name": "Conejo",
+    "note": "El más habitual."
+   },
+   {
+    "id": "panes-planos",
+    "name": "Torta",
+    "note": "Pan plano sin levadura."
+   },
+   {
+    "id": "cocina-de-aprovechamiento",
+    "name": "Aprovechamiento",
+    "note": "Cocina de pastores."
+   }
+  ],
+  "keys": [
+   "Torta seca, que absorba el caldo.",
+   "Caldo con sabor antes de la torta.",
+   "Servir enseguida: la torta sigue bebiendo.",
+   "Caza con control veterinario.",
+   "Cada casa, su gazpacho."
+  ],
+  "errors": [
+   {
+    "p": "Torta en papilla",
+    "fix": "Mucho tiempo o torta poco seca. 5–8 minutos y torta seca."
+   },
+   {
+    "p": "Guiso seco",
+    "fix": "Poco caldo. Añade más."
+   },
+   {
+    "p": "Carne dura",
+    "fix": "Poco tiempo. Guisa más antes de la torta."
+   }
+  ],
+  "history": "El gazpacho manchego es un plato tradicional de pastores de La Mancha, sobre todo de Albacete y alrededores.",
+  "uses": [
+   "Platos de cuchara",
+   "Menús de invierno",
+   "Cocina de caza"
+  ],
+  "keep": "El guiso sin torta, 3 días en frío; la torta, al momento.",
+  "pro": "Guiso hecho; torta al pedido en cazuela.",
+  "related": [
+   "guisos-de-caza",
+   "conejo",
+   "panes-planos",
+   "cocina-de-aprovechamiento",
+   "caza-de-pluma",
+   "tomate"
+  ]
+ },
+ {
+  "id": "pochas",
+  "name": "Pochas",
+  "name_en": "Fresh white beans",
+  "cat": "tecnicas",
+  "group": "Clásicos españoles",
+  "technique": "guiso",
+  "aka": [
+   "pochas",
+   "pochas a la riojana",
+   "pochas navarras",
+   "alubia blanca fresca"
+  ],
+  "summary": "Alubias blancas frescas, sin secar, guisadas en menos de una hora con verduras y, a veces, chorizo o codorniz.",
+  "what": "Las pochas son alubias blancas recogidas antes de secarse, en verano y otoño: se desgranan y se cocinan sin remojo, y en 40–60 minutos quedan tiernas y cremosas. En La Rioja y Navarra se guisan con cebolla, pimiento, tomate, ajo y aceite, y muchas casas añaden chorizo, codorniz o almejas. Se sirven con guindillas.\n\nComo son frescas, se congelan muy bien desgranadas para tenerlas todo el año. Cada casa tiene su receta.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Pochas desgranadas (frescas o congeladas)",
+     "800 g"
+    ],
+    [
+     "Cebolla, pimiento verde y tomate",
+     "1, 1 y 1"
+    ],
+    [
+     "Ajo",
+     "2 dientes"
+    ],
+    [
+     "Aceite de oliva",
+     "60 ml"
+    ],
+    [
+     "Chorizo (opcional)",
+     "150 g"
+    ],
+    [
+     "Agua",
+     "lo justo para cubrir"
+    ]
+   ],
+   "steps": [
+    "Pon las pochas con la cebolla, el pimiento, el tomate y el ajo enteros o en trozos y el aceite; cubre de agua fría.",
+    "Lleva a hervor suave y cuece 40–60 minutos, añadiendo un poco de agua fría si deja de hervir.",
+    "Saca las verduras, tritúralas y devuélvelas para espesar.",
+    "Añade el chorizo en rodajas los últimos 15 minutos si lo usas.",
+    "Sala al final y sirve con guindillas."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Cocción",
+    "ratio": "40–60 minutos",
+    "note": "Sin remojo."
+   },
+   {
+    "use": "Pochas por ración",
+    "ratio": "200 g desgranadas",
+    "note": ""
+   },
+   {
+    "use": "Congelación",
+    "ratio": "Desgranadas y en crudo",
+    "note": "Se cocinan sin descongelar."
+   },
+   {
+    "use": "Sal",
+    "ratio": "Al final",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "legumbres",
+    "name": "Legumbres",
+    "note": "Secas y frescas."
+   },
+   {
+    "id": "judia-verde-y-habas",
+    "name": "Legumbres frescas",
+    "note": "Judía verde y habas."
+   },
+   {
+    "id": "caza-de-pluma",
+    "name": "Con codorniz",
+    "note": "Clásico riojano."
+   },
+   {
+    "id": "vinagreta-piparras",
+    "name": "Guindillas",
+    "note": "Acompañante."
+   }
+  ],
+  "keys": [
+   "Sin remojo: son frescas.",
+   "Fuego suave y sin remover.",
+   "Verduras trituradas para espesar.",
+   "Se congelan muy bien.",
+   "Cada casa, sus pochas."
+  ],
+  "errors": [
+   {
+    "p": "Pochas rotas",
+    "fix": "Hervor fuerte. Fuego suave."
+   },
+   {
+    "p": "Caldo aguado",
+    "fix": "Sin triturar verduras. Tritúralas."
+   },
+   {
+    "p": "Duras",
+    "fix": "Poco tiempo. Sigue hasta que estén cremosas."
+   }
+  ],
+  "history": "Las pochas son un plato de temporada de La Rioja y Navarra, ligado a la cosecha de verano y otoño.",
+  "uses": [
+   "Platos de cuchara",
+   "Menús de temporada"
+  ],
+  "keep": "3 días en frío; desgranadas crudas, congeladas meses.",
+  "pro": "Congela pochas en temporada; guisa en tanda.",
+  "related": [
+   "legumbres",
+   "judia-verde-y-habas",
+   "caza-de-pluma",
+   "vinagreta-piparras",
+   "patatas-a-la-riojana",
+   "fabada-y-potajes"
+  ]
+ },
+ {
+  "id": "escaldums",
+  "name": "Escaldums",
+  "name_en": "Mallorcan poultry stew",
+  "cat": "tecnicas",
+  "group": "Cocina de Baleares",
+  "technique": "guiso",
+  "aka": [
+   "escaldums",
+   "escaldums de pollo",
+   "escaldums de pavo",
+   "guiso mallorquín de ave"
+  ],
+  "summary": "Guiso mallorquín de pollo o pavo con patatas en una salsa de sofrito ligada con almendras, servido en fiestas.",
+  "what": "Los escaldums son un guiso tradicional de Mallorca, de fiestas: pollo o pavo troceado, dorado y guisado con un sofrito de cebolla, tomate y ajo, un poco de vino o caldo, y patatas fritas que se añaden al final. La salsa se liga con una picada de almendras, y muchas casas añaden sobrasada o setas.\n\nComo en todos los guisos de casa de las islas, cada familia tiene su receta: aquí va la base común.",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Pollo o pavo troceado",
+     "1,5 kg"
+    ],
+    [
+     "Cebolla, tomate rallado y ajo",
+     "2, 300 g y 3 dientes"
+    ],
+    [
+     "Vino blanco o caldo",
+     "150 ml y 500 ml"
+    ],
+    [
+     "Patatas en dados, fritas",
+     "600 g"
+    ],
+    [
+     "Picada: almendras tostadas, ajo y perejil",
+     "50 g, 1 diente y 1 puñado"
+    ],
+    [
+     "Sobrasada (opcional)",
+     "60 g"
+    ],
+    [
+     "Aceite de oliva",
+     "80 ml"
+    ]
+   ],
+   "steps": [
+    "Dora el ave salada en el aceite y resérvala.",
+    "Haz un sofrito lento de cebolla, ajo y tomate en la misma grasa.",
+    "Devuelve el ave, moja con el vino y el caldo y guisa 35–45 minutos (más si es pavo).",
+    "Añade la picada desleída y, si quieres, la sobrasada; cuece 5 minutos.",
+    "Incorpora las patatas fritas al final y sirve."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Pollo",
+    "ratio": "35–45 minutos",
+    "note": "Muslo a 75 °C o más."
+   },
+   {
+    "use": "Picada",
+    "ratio": "50 g de almendra por 500 ml",
+    "note": "Liga."
+   },
+   {
+    "use": "Patatas",
+    "ratio": "100 g por ración",
+    "note": "Fritas aparte."
+   },
+   {
+    "use": "Ración",
+    "ratio": "250 g de ave con hueso",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "pepitoria-y-guisos-de-ave",
+    "name": "Pepitoria",
+    "note": "Otro guiso de ave con almendra."
+   },
+   {
+    "id": "picada",
+    "name": "Picada",
+    "note": "La ligazón."
+   },
+   {
+    "id": "sobrasada-y-embutidos",
+    "name": "Sobrasada",
+    "note": "Toque de la isla."
+   },
+   {
+    "id": "pavo",
+    "name": "Pavo",
+    "note": "Versión de fiesta."
+   }
+  ],
+  "keys": [
+   "Sofrito lento.",
+   "Picada de almendra para ligar.",
+   "Patatas fritas aparte y al final.",
+   "Sobrasada al final, sin hervir fuerte.",
+   "Cada casa, sus escaldums."
+  ],
+  "errors": [
+   {
+    "p": "Patatas deshechas",
+    "fix": "Añadidas pronto. Al final."
+   },
+   {
+    "p": "Salsa aguada",
+    "fix": "Poca picada. Añade más."
+   },
+   {
+    "p": "Ave seca",
+    "fix": "Hervor fuerte. Fuego suave."
+   }
+  ],
+  "history": "Los escaldums son un guiso tradicional de Mallorca, ligado a las fiestas, especialmente en Navidad.",
+  "uses": [
+   "Platos de fiesta",
+   "Menús de cocina balear"
+  ],
+  "keep": "3 días en frío sin las patatas.",
+  "pro": "Guiso hecho; patatas fritas al pedido.",
+  "related": [
+   "pepitoria-y-guisos-de-ave",
+   "picada",
+   "sobrasada-y-embutidos",
+   "pavo",
+   "pollo-y-aves",
+   "almendra"
+  ]
+ },
+ {
+  "id": "zarangollo",
+  "name": "Zarangollo",
+  "name_en": "Zarangollo",
+  "cat": "tecnicas",
+  "group": "Cocina levantina",
+  "technique": "salteado",
+  "aka": [
+   "zarangollo",
+   "zarangollo murciano",
+   "calabacín con huevo",
+   "revuelto de calabacín"
+  ],
+  "summary": "Calabacín y cebolla pochados muy despacio en aceite hasta quedar melosos y terminados con huevo cuajado apenas.",
+  "what": "El zarangollo es un plato de la huerta de Murcia: calabacín y cebolla cortados finos y pochados lentamente en aceite de oliva hasta que se deshacen y se vuelven dulces, terminados con huevo batido que cuaja apenas, como un revuelto. Algunas casas añaden patata.\n\nEs sencillo y depende de la paciencia en el pochado y del punto del huevo. Cada casa tiene su manera.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Calabacín en láminas finas o dados",
+     "1 kg"
+    ],
+    [
+     "Cebolla en juliana",
+     "400 g"
+    ],
+    [
+     "Huevos",
+     "4"
+    ],
+    [
+     "Aceite de oliva",
+     "80 ml"
+    ],
+    [
+     "Sal",
+     "al gusto"
+    ]
+   ],
+   "steps": [
+    "Pocha la cebolla en el aceite a fuego suave 15 minutos.",
+    "Añade el calabacín con una pizca de sal y cocina tapado a fuego suave 20–30 minutos, hasta que esté muy meloso.",
+    "Destapa para evaporar el agua sobrante.",
+    "Añade los huevos batidos con sal y remueve a fuego bajo hasta que cuajen apenas.",
+    "Sirve enseguida, caliente o templado."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Pochado",
+    "ratio": "35–45 minutos en total",
+    "note": "Fuego suave."
+   },
+   {
+    "use": "Huevos",
+    "ratio": "1 por ración",
+    "note": "Cremosos."
+   },
+   {
+    "use": "Punto del huevo",
+    "ratio": "Retirar a 65–70 °C",
+    "note": "Sigue cuajando."
+   },
+   {
+    "use": "Ración",
+    "ratio": "300 g",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "calabacin-y-pepino",
+    "name": "Calabacín",
+    "note": "Producto."
+   },
+   {
+    "id": "pisto-y-sanfaina",
+    "name": "Pisto",
+    "note": "Otra verdura pochada."
+   },
+   {
+    "id": "tortilla-y-huevos-de-brunch",
+    "name": "Revueltos",
+    "note": "Punto del huevo."
+   },
+   {
+    "id": "cebolla-y-ajo",
+    "name": "Cebolla",
+    "note": "Pochada lenta."
+   }
+  ],
+  "keys": [
+   "Pochado lento hasta deshacer.",
+   "Evaporar el agua antes del huevo.",
+   "Huevo cremoso, no seco.",
+   "Buen aceite.",
+   "Cada casa, su zarangollo."
+  ],
+  "errors": [
+   {
+    "p": "Aguado",
+    "fix": "Agua del calabacín sin evaporar. Destapa al final."
+   },
+   {
+    "p": "Huevo seco",
+    "fix": "Cuajado de más. Retira antes."
+   },
+   {
+    "p": "Cebolla quemada",
+    "fix": "Fuego alto. Suave."
+   }
+  ],
+  "history": "El zarangollo es un plato tradicional de la huerta murciana.",
+  "uses": [
+   "Tapas",
+   "Platos de verdura",
+   "Cenas ligeras"
+  ],
+  "keep": "Mejor al momento; la verdura pochada, 2 días en frío.",
+  "pro": "Verdura pochada en tanda; huevo al pedido.",
+  "related": [
+   "calabacin-y-pepino",
+   "pisto-y-sanfaina",
+   "tortilla-y-huevos-de-brunch",
+   "cebolla-y-ajo",
+   "huevos",
+   "aceite-de-oliva"
+  ]
+ },
+ {
+  "id": "michirones",
+  "name": "Michirones",
+  "name_en": "Murcian dried broad beans",
+  "cat": "tecnicas",
+  "group": "Cocina levantina",
+  "technique": "guiso",
+  "aka": [
+   "michirones",
+   "habas secas guisadas",
+   "habas con chorizo",
+   "tapa murciana de habas"
+  ],
+  "summary": "Habas secas remojadas y guisadas despacio con hueso de jamón, chorizo, guindilla y laurel: una tapa murciana de invierno.",
+  "what": "Los michirones son habas secas remojadas largo tiempo y cocidas lentamente con hueso de jamón, chorizo, panceta, ajo, laurel y guindilla, hasta que están tiernas y el caldo, sabroso y algo picante. En Murcia se sirven como tapa en cazuelita, con su caldo.\n\nLas habas secas piden mucho remojo y paciencia. Recuerda que algunas personas no pueden comer habas (favismo). Cada casa ajusta el picante.",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Habas secas",
+     "500 g"
+    ],
+    [
+     "Hueso de jamón y chorizo",
+     "1 y 200 g"
+    ],
+    [
+     "Panceta (opcional)",
+     "100 g"
+    ],
+    [
+     "Ajo, laurel y guindilla",
+     "1 cabeza, 2 hojas y 1–2"
+    ],
+    [
+     "Pimentón dulce",
+     "5 g"
+    ],
+    [
+     "Aceite de oliva",
+     "40 ml"
+    ]
+   ],
+   "steps": [
+    "Remoja las habas 24–48 horas en frío, cambiando el agua.",
+    "Ponlas en agua fría con el hueso, la panceta, el ajo, el laurel y la guindilla.",
+    "Cuece a fuego suave 2–3 horas, hasta que estén tiernas; añade el chorizo en la última hora.",
+    "Sofríe el pimentón fuera del fuego en el aceite y añádelo.",
+    "Sala al final y sirve en cazuelitas con su caldo."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Remojo",
+    "ratio": "24–48 horas",
+    "note": "Cambiando el agua."
+   },
+   {
+    "use": "Cocción",
+    "ratio": "2–3 horas",
+    "note": "Fuego suave."
+   },
+   {
+    "use": "Ración de tapa",
+    "ratio": "120–150 g",
+    "note": ""
+   },
+   {
+    "use": "Sal",
+    "ratio": "Al final",
+    "note": "El jamón ya sala."
+   }
+  ],
+  "variants": [
+   {
+    "id": "legumbres",
+    "name": "Legumbres",
+    "note": "Remojo y cocción."
+   },
+   {
+    "id": "judia-verde-y-habas",
+    "name": "Habas frescas",
+    "note": "La versión tierna."
+   },
+   {
+    "id": "caldo-de-cocido-y-jamon",
+    "name": "Caldo de jamón",
+    "note": "Base de sabor."
+   },
+   {
+    "id": "chorizo-y-embutidos-curados",
+    "name": "Chorizo",
+    "note": "Para guisar."
+   }
+  ],
+  "keys": [
+   "Remojo largo.",
+   "Fuego suave y paciencia.",
+   "Sal al final.",
+   "Aviso de favismo en algunas personas.",
+   "Cada casa, su picante."
+  ],
+  "errors": [
+   {
+    "p": "Habas duras",
+    "fix": "Poco remojo. Más tiempo."
+   },
+   {
+    "p": "Salado",
+    "fix": "Hueso muy salado. Desálalo o usa menos."
+   },
+   {
+    "p": "Pimentón amargo",
+    "fix": "Quemado. Fuera del fuego."
+   }
+  ],
+  "history": "Los michirones son una tapa tradicional de Murcia, muy ligada a los bares y al invierno.",
+  "uses": [
+   "Tapas",
+   "Platos de cuchara"
+  ],
+  "keep": "4 días en frío; se congelan bien.",
+  "pro": "Cuece en tanda; sirve en cazuelitas regeneradas.",
+  "related": [
+   "legumbres",
+   "judia-verde-y-habas",
+   "caldo-de-cocido-y-jamon",
+   "chorizo-y-embutidos-curados",
+   "desalado-y-remojo",
+   "pimenton-y-noras"
+  ]
+ },
+ {
+  "id": "duelos-y-quebrantos",
+  "name": "Duelos y quebrantos",
+  "name_en": "Duelos y quebrantos",
+  "cat": "tecnicas",
+  "group": "Cocina castellana",
+  "technique": "salteado",
+  "aka": [
+   "duelos y quebrantos",
+   "huevos con chorizo y tocino",
+   "revuelto manchego"
+  ],
+  "summary": "Revuelto manchego de huevos con chorizo y tocino o panceta fritos en su grasa.",
+  "what": "Duelos y quebrantos es un plato manchego de huevos revueltos con chorizo y tocino o panceta, fritos en su propia grasa. El nombre aparece ya en el Quijote como comida de los sábados, aunque no se sabe con certeza qué llevaba exactamente entonces; hoy se hace como revuelto de huevo con embutido.\n\nLa clave es dorar bien el embutido para que suelte su grasa con pimentón y cuajar el huevo cremoso en ella. Cada casa tiene su versión.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Huevos",
+     "8"
+    ],
+    [
+     "Chorizo en dados",
+     "150 g"
+    ],
+    [
+     "Tocino o panceta en dados",
+     "120 g"
+    ],
+    [
+     "Aceite de oliva",
+     "20 ml"
+    ],
+    [
+     "Sal",
+     "con cuidado"
+    ]
+   ],
+   "steps": [
+    "Dora el tocino o la panceta en el aceite a fuego medio hasta que suelte la grasa.",
+    "Añade el chorizo y dóralo un minuto.",
+    "Baja el fuego y añade los huevos batidos con poca sal.",
+    "Remueve sin parar hasta que cuajen cremosos.",
+    "Sirve enseguida con pan."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Huevos",
+    "ratio": "2 por ración",
+    "note": ""
+   },
+   {
+    "use": "Embutido",
+    "ratio": "65–70 g por ración",
+    "note": ""
+   },
+   {
+    "use": "Punto del huevo",
+    "ratio": "Retirar a 65–70 °C",
+    "note": "Cremoso."
+   },
+   {
+    "use": "Sal",
+    "ratio": "Poca",
+    "note": "El embutido ya sala."
+   }
+  ],
+  "variants": [
+   {
+    "id": "tortilla-y-huevos-de-brunch",
+    "name": "Revueltos",
+    "note": "Punto."
+   },
+   {
+    "id": "chorizo-y-embutidos-curados",
+    "name": "Chorizo",
+    "note": "Producto."
+   },
+   {
+    "id": "huevos",
+    "name": "Huevos",
+    "note": "Frescura."
+   },
+   {
+    "id": "migas-de-pastor",
+    "name": "Migas",
+    "note": "Otro plato manchego."
+   }
+  ],
+  "keys": [
+   "Dorar el embutido para que suelte su grasa.",
+   "Huevo cremoso.",
+   "Poca sal.",
+   "Servir enseguida.",
+   "Cada casa, su versión."
+  ],
+  "errors": [
+   {
+    "p": "Huevo seco",
+    "fix": "Cuajado de más. Retira antes."
+   },
+   {
+    "p": "Salado",
+    "fix": "Sal en el huevo. Menos."
+   },
+   {
+    "p": "Grasiento",
+    "fix": "Mucho tocino. Escurre parte de la grasa."
+   }
+  ],
+  "history": "El nombre aparece en el Quijote como comida de los sábados en La Mancha; su contenido exacto en esa época es objeto de debate.",
+  "uses": [
+   "Desayunos de campo",
+   "Tapas",
+   "Cenas"
+  ],
+  "keep": "Al momento.",
+  "pro": "Embutido dorado de antemano; huevo al pedido.",
+  "related": [
+   "tortilla-y-huevos-de-brunch",
+   "chorizo-y-embutidos-curados",
+   "huevos",
+   "migas-de-pastor",
+   "puntos-del-huevo",
+   "cerdo-de-capa-blanca"
+  ]
+ },
+ {
+  "id": "flamenquin",
+  "name": "Flamenquín",
+  "name_en": "Flamenquín",
+  "cat": "tecnicas",
+  "group": "Cocina andaluza",
+  "technique": "fritura",
+  "aka": [
+   "flamenquín",
+   "flamenquín cordobés",
+   "rollo de lomo y jamón empanado"
+  ],
+  "summary": "Rollo de filetes finos de lomo de cerdo y jamón curado, empanado y frito: el clásico cordobés.",
+  "what": "El flamenquín es un plato de Córdoba: filetes finos de lomo de cerdo cubiertos con jamón curado (a veces queso), enrollados apretados, empanados y fritos hasta quedar dorados por fuera y hechos por dentro. Se sirve en rodajas con patatas fritas y mayonesa.\n\nLa técnica es la del [[rebozados-y-empanados|empanado]], como el [[cachopo]], pero en forma de rollo. Cada casa decide el relleno.",
+  "base": {
+   "for": "4 flamenquines",
+   "items": [
+    [
+     "Filetes finos de lomo de cerdo",
+     "8 × 60 g"
+    ],
+    [
+     "Jamón curado en lonchas",
+     "120 g"
+    ],
+    [
+     "Harina, huevo y pan rallado",
+     "cantidad necesaria"
+    ],
+    [
+     "Aceite para freír",
+     "abundante"
+    ]
+   ],
+   "steps": [
+    "Golpea los filetes hasta 3 mm y solápalos de dos en dos formando un rectángulo.",
+    "Cubre con el jamón y enrolla muy apretado; sujeta con palillos si hace falta.",
+    "Pasa por harina, huevo y pan rallado y reposa 15 minutos en frío.",
+    "Fríe a 170–175 °C 5–6 minutos, girando, hasta que esté dorado y el centro llegue a 65 °C o más.",
+    "Escurre en rejilla, quita los palillos y corta en rodajas."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Fritura",
+    "ratio": "170–175 °C, 5–6 minutos",
+    "note": "Girando."
+   },
+   {
+    "use": "Grosor de los filetes",
+    "ratio": "3 mm",
+    "note": ""
+   },
+   {
+    "use": "Punto del cerdo",
+    "ratio": "65 °C o más en el centro",
+    "note": ""
+   },
+   {
+    "use": "Ración",
+    "ratio": "1 flamenquín",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "cachopo",
+    "name": "Cachopo",
+    "note": "Empanado relleno en plano."
+   },
+   {
+    "id": "rebozados-y-empanados",
+    "name": "Empanado",
+    "note": "Técnica."
+   },
+   {
+    "id": "jamon-curado",
+    "name": "Jamón",
+    "note": "Relleno."
+   },
+   {
+    "id": "cerdo-de-capa-blanca",
+    "name": "Lomo de cerdo",
+    "note": "Producto."
+   }
+  ],
+  "keys": [
+   "Filetes finos y rollo apretado.",
+   "Empanado presionado y reposado.",
+   "Aceite a temperatura constante.",
+   "Sonda en el centro.",
+   "Cada casa, su relleno."
+  ],
+  "errors": [
+   {
+    "p": "Rollo que se abre",
+    "fix": "Enrollado flojo. Aprieta y sujeta."
+   },
+   {
+    "p": "Crudo por dentro",
+    "fix": "Rollo grueso o aceite muy caliente. Más fino y 170 °C."
+   },
+   {
+    "p": "Empanado aceitoso",
+    "fix": "Aceite frío. 170–175 °C."
+   }
+  ],
+  "history": "El flamenquín es un plato tradicional de Córdoba, muy popular en toda Andalucía.",
+  "uses": [
+   "Platos de mediodía",
+   "Tapas en rodajas"
+  ],
+  "keep": "Empanados crudos, 1 día en frío o congelados.",
+  "pro": "Monta y empana por la mañana; fríe al pedido.",
+  "related": [
+   "cachopo",
+   "rebozados-y-empanados",
+   "jamon-curado",
+   "cerdo-de-capa-blanca",
+   "fritura",
+   "guarniciones-de-patata"
+  ]
+ },
+ {
+  "id": "tom-yum",
+  "name": "Tom yum y sopas tailandesas",
+  "name_en": "Tom yum and Thai soups",
+  "cat": "tecnicas",
+  "group": "Cocina de Asia",
+  "technique": "hervido",
+  "aka": [
+   "tom yum",
+   "tom kha",
+   "sopa tailandesa",
+   "sopa agria y picante",
+   "tom yum kung"
+  ],
+  "summary": "Caldo aromático de hierba limón, galanga y lima kaffir, ácido, salado y picante, con gambas o pollo; con coco, tom kha.",
+  "what": "El tom yum es una sopa tailandesa ácida y picante: un caldo ligero perfumado con hierba limón, galanga y hojas de lima kaffir, al que se añaden chiles, salsa de pescado, zumo de lima y, normalmente, gambas, pollo o setas. El tom kha es su versión con leche de coco, más suave y cremosa.\n\nLa técnica es infusionar los aromáticos golpeados en el caldo, cocinar la proteína muy poco y ajustar al final el equilibrio de ácido, sal, picante y dulce. Los [[aromaticos-de-asia]] tienen su ficha. Cada cocinero equilibra a su manera.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Caldo de pollo o de gambas",
+     "1,2 l"
+    ],
+    [
+     "Hierba limón golpeada en trozos",
+     "3 tallos"
+    ],
+    [
+     "Galanga o jengibre en láminas",
+     "30 g"
+    ],
+    [
+     "Hojas de lima kaffir",
+     "5"
+    ],
+    [
+     "Chiles frescos machacados",
+     "2–4"
+    ],
+    [
+     "Gambas peladas o pollo en tiras",
+     "400 g"
+    ],
+    [
+     "Setas",
+     "150 g"
+    ],
+    [
+     "Salsa de pescado, zumo de lima y azúcar",
+     "40 ml, 40 ml y 5 g"
+    ],
+    [
+     "Cilantro",
+     "1 manojo"
+    ]
+   ],
+   "steps": [
+    "Lleva el caldo a hervor con la hierba limón, la galanga y las hojas de lima; cuece 10 minutos.",
+    "Añade los chiles y las setas y cuece 2 minutos.",
+    "Incorpora el pollo (4–5 minutos) o las gambas (1–2 minutos).",
+    "Aparta del fuego y añade la salsa de pescado, el azúcar y el zumo de lima.",
+    "Prueba y equilibra; sirve con cilantro. Los aromáticos duros se apartan al comer."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Infusión de aromáticos",
+    "ratio": "10 minutos de hervor suave",
+    "note": ""
+   },
+   {
+    "use": "Gambas",
+    "ratio": "1–2 minutos",
+    "note": "Hasta que cambien de color."
+   },
+   {
+    "use": "Tom kha",
+    "ratio": "400 ml de leche de coco por litro de caldo",
+    "note": "Sin hervir fuerte."
+   },
+   {
+    "use": "Lima",
+    "ratio": "Fuera del fuego",
+    "note": "Para que no amargue."
+   }
+  ],
+  "variants": [
+   {
+    "id": "aromaticos-de-asia",
+    "name": "Aromáticos",
+    "note": "Hierba limón, galanga y lima."
+   },
+   {
+    "id": "coco",
+    "name": "Tom kha",
+    "note": "Con leche de coco."
+   },
+   {
+    "id": "garum-y-salsas-de-pescado",
+    "name": "Salsa de pescado",
+    "note": "La sal."
+   },
+   {
+    "id": "pho",
+    "name": "Pho",
+    "note": "Otra sopa del sudeste asiático."
+   }
+  ],
+  "keys": [
+   "Aromáticos golpeados para soltar aroma.",
+   "Proteína al final y poco tiempo.",
+   "Lima fuera del fuego.",
+   "Equilibrar ácido, sal, picante y dulce.",
+   "Cada cocinero, su equilibrio."
+  ],
+  "errors": [
+   {
+    "p": "Sopa plana",
+    "fix": "Falta ácido o sal. Ajusta con lima y salsa de pescado."
+   },
+   {
+    "p": "Gambas duras",
+    "fix": "Mucho tiempo. 1–2 minutos."
+   },
+   {
+    "p": "Amargor",
+    "fix": "Lima hervida. Añádela al final."
+   }
+  ],
+  "history": "El tom yum es una de las sopas más conocidas de Tailandia, con muchas variantes regionales.",
+  "uses": [
+   "Sopas",
+   "Entrantes calientes",
+   "Menús de cocina asiática"
+  ],
+  "keep": "Caldo aromatizado, 2–3 días en frío; la proteína, al momento.",
+  "pro": "Caldo infusionado y listo; proteína y ajuste al pedido.",
+  "related": [
+   "aromaticos-de-asia",
+   "coco",
+   "garum-y-salsas-de-pescado",
+   "pho",
+   "citricos",
+   "chiles-secos-y-frescos"
+  ]
+ },
+ {
+  "id": "som-tam",
+  "name": "Som tam y ensaladas de mortero",
+  "name_en": "Som tam and pounded salads",
+  "cat": "tecnicas",
+  "group": "Cocina de Asia",
+  "technique": "crudo",
+  "aka": [
+   "som tam",
+   "ensalada de papaya verde",
+   "ensalada tailandesa",
+   "ensalada de mortero"
+  ],
+  "summary": "Papaya verde rallada y golpeada en mortero con ajo, chile, lima, salsa de pescado, azúcar de palma, tomate y cacahuete.",
+  "what": "El som tam es una ensalada del nordeste de Tailandia y de Laos: papaya verde (aún no madura, firme y neutra) en tiras finas, golpeada ligeramente en un mortero grande con ajo, chile, azúcar de palma, salsa de pescado y lima, junto con judías largas, tomates pequeños y cacahuetes. El golpe ablanda la verdura y le hace absorber el aliño.\n\nLa misma técnica sirve con pepino, zanahoria, mango verde o manzana ácida. Cada cocinero ajusta el picante y el dulce.",
+  "base": {
+   "for": "2 raciones",
+   "items": [
+    [
+     "Papaya verde pelada en tiras finas",
+     "300 g"
+    ],
+    [
+     "Ajo y chiles frescos",
+     "2 dientes y 2–4"
+    ],
+    [
+     "Azúcar de palma o moreno",
+     "15 g"
+    ],
+    [
+     "Salsa de pescado y zumo de lima",
+     "25 ml y 30 ml"
+    ],
+    [
+     "Judías verdes largas en trozos",
+     "60 g"
+    ],
+    [
+     "Tomates pequeños partidos",
+     "6"
+    ],
+    [
+     "Cacahuetes tostados",
+     "30 g"
+    ]
+   ],
+   "steps": [
+    "Maja en el mortero el ajo y los chiles.",
+    "Añade el azúcar, la salsa de pescado y la lima y disuelve.",
+    "Añade las judías y golpéalas ligeramente; luego los tomates.",
+    "Incorpora la papaya y golpea suave mientras mezclas con una cuchara, hasta que absorba el aliño.",
+    "Prueba, ajusta y sirve enseguida con los cacahuetes."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Aliño",
+    "ratio": "Salado, ácido, dulce y picante en equilibrio",
+    "note": "Probar."
+   },
+   {
+    "use": "Papaya por ración",
+    "ratio": "150 g",
+    "note": ""
+   },
+   {
+    "use": "Golpe",
+    "ratio": "Suave, sin triturar",
+    "note": "Que absorba."
+   },
+   {
+    "use": "Servicio",
+    "ratio": "Al momento",
+    "note": "Suelta agua."
+   }
+  ],
+  "variants": [
+   {
+    "id": "aguacate-y-frutas-tropicales",
+    "name": "Frutas tropicales",
+    "note": "Papaya y mango."
+   },
+   {
+    "id": "garum-y-salsas-de-pescado",
+    "name": "Salsa de pescado",
+    "note": "La sal."
+   },
+   {
+    "id": "chiles-secos-y-frescos",
+    "name": "Chiles",
+    "note": "Picante."
+   },
+   {
+    "id": "calabacin-y-pepino",
+    "name": "Con pepino",
+    "note": "Versión fresca."
+   }
+  ],
+  "keys": [
+   "Papaya verde y firme.",
+   "Golpear, no triturar.",
+   "Equilibrio de los cuatro sabores.",
+   "Servir al momento.",
+   "Alérgenos: pescado y cacahuete."
+  ],
+  "errors": [
+   {
+    "p": "Ensalada aguada",
+    "fix": "Hecha con antelación. Al momento."
+   },
+   {
+    "p": "Demasiado picante",
+    "fix": "Muchos chiles. Ajusta y quita semillas."
+   },
+   {
+    "p": "Papaya dura",
+    "fix": "Poco golpe. Golpea un poco más."
+   }
+  ],
+  "history": "El som tam es un plato popular del nordeste de Tailandia y de Laos, muy extendido en toda Tailandia.",
+  "uses": [
+   "Ensaladas",
+   "Acompañamiento de carnes a la brasa",
+   "Comida para compartir"
+  ],
+  "keep": "Al momento. Las tiras de papaya, 1 día en frío.",
+  "pro": "Verduras cortadas en frío; mortero por ración al pedido.",
+  "related": [
+   "aguacate-y-frutas-tropicales",
+   "garum-y-salsas-de-pescado",
+   "chiles-secos-y-frescos",
+   "calabacin-y-pepino",
+   "frutos-secos",
+   "acidez-en-cocina"
+  ]
+ },
+ {
+  "id": "banh-mi",
+  "name": "Banh mi",
+  "name_en": "Banh mi",
+  "cat": "tecnicas",
+  "group": "Cocina de Asia",
+  "aka": [
+   "banh mi",
+   "bocadillo vietnamita",
+   "do chua",
+   "encurtido de zanahoria y rábano"
+  ],
+  "summary": "Bocadillo vietnamita de pan crujiente con paté, carne, encurtido de zanahoria y rábano, pepino, cilantro y chile.",
+  "what": "El banh mi es el bocadillo de la calle de Vietnam, heredero del pan francés: una barra ligera y muy crujiente abierta y untada con paté y mayonesa, rellena de carne (cerdo asado o lacado, embutidos, pollo), un encurtido rápido de zanahoria y rábano blanco, pepino, cilantro y chile, con unas gotas de salsa de soja.\n\nFunciona por contraste: graso y untuoso, ácido y crujiente, fresco y picante. Cada puesto tiene su combinación. Ver [[tostadas-y-montaditos]].",
+  "base": {
+   "for": "4 bocadillos",
+   "items": [
+    [
+     "Barras ligeras y crujientes",
+     "4"
+    ],
+    [
+     "Paté y mayonesa",
+     "80 g y 60 g"
+    ],
+    [
+     "Carne de cerdo asada o lacada en lonchas",
+     "320 g"
+    ],
+    [
+     "Encurtido: zanahoria y rábano blanco en tiras",
+     "200 g"
+    ],
+    [
+     "Líquido de encurtido: vinagre, agua, azúcar y sal",
+     "100 ml, 100 ml, 40 g y 5 g"
+    ],
+    [
+     "Pepino, cilantro y chile",
+     "al gusto"
+    ],
+    [
+     "Salsa de soja",
+     "unas gotas"
+    ]
+   ],
+   "steps": [
+    "Encurtido: mezcla las tiras con el líquido y deja al menos 1 hora; escurre.",
+    "Calienta las barras unos minutos en horno fuerte para que crujan.",
+    "Ábrelas y unta un lado con paté y el otro con mayonesa.",
+    "Rellena con la carne, el encurtido escurrido, pepino, cilantro y chile.",
+    "Termina con unas gotas de soja y sirve enseguida."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Encurtido",
+    "ratio": "Vinagre, agua y azúcar 1:1:0,4",
+    "note": "1 hora mínimo."
+   },
+   {
+    "use": "Carne por bocadillo",
+    "ratio": "80 g",
+    "note": ""
+   },
+   {
+    "use": "Pan",
+    "ratio": "Horno a 200 °C, 3–4 minutos",
+    "note": "Crujiente."
+   },
+   {
+    "use": "Ración",
+    "ratio": "1 bocadillo",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "tostadas-y-montaditos",
+    "name": "Bocadillos",
+    "note": "Barreras de grasa."
+   },
+   {
+    "id": "encurtidos-rapidos",
+    "name": "Encurtidos rápidos",
+    "note": "Do chua."
+   },
+   {
+    "id": "lacado-de-carnes",
+    "name": "Cerdo lacado",
+    "note": "Relleno."
+   },
+   {
+    "id": "pates-de-higado",
+    "name": "Paté",
+    "note": "Untuoso."
+   }
+  ],
+  "keys": [
+   "Pan muy crujiente.",
+   "Encurtido bien escurrido.",
+   "Contraste graso, ácido y fresco.",
+   "Montar al momento.",
+   "Cada puesto, su combinación."
+  ],
+  "errors": [
+   {
+    "p": "Pan blando",
+    "fix": "Sin calentar. Pásalo por el horno."
+   },
+   {
+    "p": "Bocadillo empapado",
+    "fix": "Encurtido sin escurrir. Escúrrelo."
+   },
+   {
+    "p": "Plano",
+    "fix": "Sin ácido ni hierbas. Más encurtido y cilantro."
+   }
+  ],
+  "history": "El banh mi nació en Vietnam a partir del pan francés y se convirtió en una de las comidas callejeras más conocidas del país.",
+  "uses": [
+   "Bocadillos",
+   "Comida de mediodía",
+   "Aperitivos en pan pequeño"
+  ],
+  "keep": "Encurtido, 1–2 semanas en frío; montado, al momento.",
+  "pro": "Encurtido y carnes listos; montaje al pedido.",
+  "related": [
+   "tostadas-y-montaditos",
+   "encurtidos-rapidos",
+   "lacado-de-carnes",
+   "pates-de-higado",
+   "pan-del-dia-y-pan-viejo",
+   "aromaticos-de-asia"
+  ]
+ },
+ {
+  "id": "rollitos-de-papel-de-arroz",
+  "name": "Rollitos de papel de arroz",
+  "name_en": "Fresh rice paper rolls",
+  "cat": "tecnicas",
+  "group": "Cocina de Asia",
+  "technique": "crudo",
+  "aka": [
+   "rollitos vietnamitas",
+   "rollitos frescos",
+   "papel de arroz",
+   "goi cuon",
+   "rollos de primavera frescos"
+  ],
+  "summary": "Láminas de papel de arroz humedecidas y enrolladas con fideos, hierbas, verduras y gambas o cerdo cocidos; con salsa para mojar.",
+  "what": "Los rollitos frescos vietnamitas se hacen con papel de arroz, una lámina fina y seca que se humedece un instante en agua para volverla flexible. Se rellena de fideos de arroz, lechuga, hierbas frescas (menta, cilantro, albahaca), verduras en tiras y gambas o cerdo cocidos, y se enrolla apretado. Se mojan en salsa de cacahuete o en una salsa de pescado, lima y chile.\n\nSon frescos, ligeros y se montan en minutos, pero se secan pronto: se sirven enseguida o tapados con un paño húmedo.",
+  "base": {
+   "for": "12 rollitos",
+   "items": [
+    [
+     "Papel de arroz redondo",
+     "12 hojas"
+    ],
+    [
+     "Fideos de arroz finos cocidos",
+     "100 g en seco"
+    ],
+    [
+     "Gambas cocidas partidas por la mitad",
+     "12 (unos 200 g)"
+    ],
+    [
+     "Lechuga, zanahoria y pepino en tiras",
+     "al gusto"
+    ],
+    [
+     "Menta, cilantro y albahaca",
+     "1 manojo de cada"
+    ],
+    [
+     "Salsa para mojar",
+     "150 ml"
+    ]
+   ],
+   "steps": [
+    "Prepara todos los rellenos cortados y a mano.",
+    "Sumerge una hoja de papel de arroz en agua tibia 3–5 segundos y ponla sobre un paño húmedo.",
+    "Coloca las gambas abajo (se verán a través del papel), y encima hierbas, fideos y verduras.",
+    "Dobla los lados y enrolla apretado.",
+    "Sirve enseguida con la salsa, o tapa con paño húmedo hasta servir."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Remojo del papel",
+    "ratio": "Agua tibia, 3–5 segundos",
+    "note": "Se ablanda luego."
+   },
+   {
+    "use": "Relleno por rollito",
+    "ratio": "40–50 g",
+    "note": ""
+   },
+   {
+    "use": "Ración",
+    "ratio": "3 rollitos",
+    "note": "Entrante."
+   },
+   {
+    "use": "Salsa",
+    "ratio": "30–40 ml por ración",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "salsa-de-cacahuete-y-satay",
+    "name": "Salsa de cacahuete",
+    "note": "Para mojar."
+   },
+   {
+    "id": "nuoc-cham-y-nam-jim",
+    "name": "Nuoc cham",
+    "note": "Lima, pescado y chile."
+   },
+   {
+    "id": "hierbas-frescas",
+    "name": "Hierbas",
+    "note": "Muchas y frescas."
+   },
+   {
+    "id": "langostino-y-gamba-blanca",
+    "name": "Gambas",
+    "note": "Cocidas al punto."
+   }
+  ],
+  "keys": [
+   "Remojo cortísimo del papel.",
+   "Todo cortado antes de empezar.",
+   "Enrollar apretado.",
+   "Servir enseguida.",
+   "Muchas hierbas frescas."
+  ],
+  "errors": [
+   {
+    "p": "Papel que se rompe",
+    "fix": "Remojo largo. 3–5 segundos."
+   },
+   {
+    "p": "Rollito flojo",
+    "fix": "Enrollado sin apretar. Aprieta."
+   },
+   {
+    "p": "Rollitos secos y duros",
+    "fix": "Sin tapar. Paño húmedo."
+   }
+  ],
+  "history": "Los rollitos frescos son un plato popular de Vietnam y se han extendido por todo el mundo.",
+  "uses": [
+   "Entrantes frescos",
+   "Aperitivos",
+   "Comida para compartir"
+  ],
+  "keep": "Al momento, o 2–3 horas tapados con paño húmedo en frío.",
+  "pro": "Rellenos cortados y gambas cocidas; montaje al pedido.",
+  "related": [
+   "salsa-de-cacahuete-y-satay",
+   "nuoc-cham-y-nam-jim",
+   "hierbas-frescas",
+   "langostino-y-gamba-blanca",
+   "crudites-y-cortes",
+   "dumplings-y-masas-al-vapor"
+  ]
+ },
+ {
+  "id": "adobo-filipino",
+  "name": "Adobo filipino",
+  "name_en": "Filipino adobo",
+  "cat": "tecnicas",
+  "group": "Cocina de Asia",
+  "technique": "guiso",
+  "aka": [
+   "adobo filipino",
+   "adobo de pollo",
+   "adobo de cerdo",
+   "pollo en vinagre y soja"
+  ],
+  "summary": "Pollo o cerdo guisado en vinagre, soja, ajo, laurel y pimienta hasta que la salsa reduce y brilla.",
+  "what": "El adobo filipino es el guiso más conocido de Filipinas: pollo o cerdo cocinados en vinagre, salsa de soja, mucho ajo, laurel y pimienta en grano, a fuego suave hasta que la carne está tierna y la salsa reducida y brillante. Muchas casas doran la carne al final para darle costra. No tiene nada que ver con el [[adobo]] español, aunque el nombre venga de ahí.\n\nEl vinagre se hierve sin remover al principio para suavizarlo. Cada casa ajusta la proporción de vinagre y soja.",
+  "base": {
+   "for": "4 raciones",
+   "items": [
+    [
+     "Muslos de pollo o panceta de cerdo en trozos",
+     "1,2 kg"
+    ],
+    [
+     "Vinagre (de caña, arroz o vino blanco)",
+     "120 ml"
+    ],
+    [
+     "Salsa de soja",
+     "80 ml"
+    ],
+    [
+     "Ajo machacado",
+     "1 cabeza"
+    ],
+    [
+     "Laurel y pimienta negra en grano",
+     "3 hojas y 8 g"
+    ],
+    [
+     "Agua",
+     "200 ml"
+    ],
+    [
+     "Azúcar (opcional)",
+     "10 g"
+    ]
+   ],
+   "steps": [
+    "Pon la carne con el vinagre, la soja, el ajo, el laurel, la pimienta y el agua; marina 30 minutos si puedes.",
+    "Lleva a hervor y deja 5 minutos sin remover para suavizar el vinagre.",
+    "Tapa y cuece a fuego suave 35–45 minutos (pollo) o 1–1,5 horas (cerdo).",
+    "Saca la carne y dórala en una sartén con un poco de su grasa.",
+    "Reduce la salsa hasta que brille y vuelve a juntar; sirve con arroz."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Vinagre y soja",
+    "ratio": "3:2",
+    "note": "Ajustar al gusto."
+   },
+   {
+    "use": "Pollo",
+    "ratio": "35–45 minutos",
+    "note": "Muslo a 75 °C o más."
+   },
+   {
+    "use": "Cerdo",
+    "ratio": "1–1,5 horas",
+    "note": "Tierno."
+   },
+   {
+    "use": "Ración",
+    "ratio": "300 g con hueso",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "adobo",
+    "name": "Adobo español",
+    "note": "Otra técnica con el mismo nombre."
+   },
+   {
+    "id": "soja-y-derivados",
+    "name": "Salsa de soja",
+    "note": "La sal."
+   },
+   {
+    "id": "vinagres",
+    "name": "Vinagres",
+    "note": "El ácido."
+   },
+   {
+    "id": "guisos-largos",
+    "name": "Guisos",
+    "note": "Fuego suave."
+   }
+  ],
+  "keys": [
+   "Hervir el vinagre sin remover al principio.",
+   "Mucho ajo y pimienta en grano.",
+   "Dorar la carne al final.",
+   "Reducir la salsa hasta que brille.",
+   "Cada casa, su proporción."
+  ],
+  "errors": [
+   {
+    "p": "Demasiado ácido",
+    "fix": "Vinagre sin hervir o mucho. Hierve y ajusta."
+   },
+   {
+    "p": "Demasiado salado",
+    "fix": "Mucha soja o reducido de más. Rebaja con agua."
+   },
+   {
+    "p": "Carne pálida",
+    "fix": "Sin dorar. Dórala al final."
+   }
+  ],
+  "history": "El adobo es considerado el plato más representativo de Filipinas, con muchas versiones regionales.",
+  "uses": [
+   "Platos con arroz",
+   "Guisos para compartir"
+  ],
+  "keep": "4 días en frío; mejora al día siguiente.",
+  "pro": "Guisa en tanda; dora al pedido.",
+  "related": [
+   "adobo",
+   "soja-y-derivados",
+   "vinagres",
+   "guisos-largos",
+   "pollo-y-aves",
+   "cerdo-de-capa-blanca"
+  ]
+ },
+ {
+  "id": "dolmas",
+  "name": "Dolmas y hojas de parra rellenas",
+  "name_en": "Dolmas",
+  "cat": "tecnicas",
+  "group": "Mediterráneo oriental y Magreb",
+  "technique": "guiso",
+  "aka": [
+   "dolmas",
+   "dolmades",
+   "hojas de parra rellenas",
+   "sarma",
+   "warak enab"
+  ],
+  "summary": "Hojas de parra rellenas de arroz con hierbas (o con carne), enrolladas apretadas y cocidas despacio con aceite y limón.",
+  "what": "Las dolmas son pequeños rollos de hoja de parra rellenos, típicos de Turquía, Grecia y el Levante. La versión vegetal lleva arroz con cebolla, hierbas (eneldo, menta, perejil), a veces piñones y pasas, y se sirve fría con aceite y limón. La versión con carne picada se sirve caliente, a menudo con yogur.\n\nLa técnica es enrollar apretado, colocar los rollos muy juntos en la olla, sujetarlos con un plato y cocerlos a fuego suave hasta que el arroz esté hecho. Cada casa tiene su relleno.",
+  "base": {
+   "for": "unas 40 piezas",
+   "items": [
+    [
+     "Hojas de parra en salmuera o frescas escaldadas",
+     "45"
+    ],
+    [
+     "Arroz redondo lavado",
+     "250 g"
+    ],
+    [
+     "Cebolla picada",
+     "2"
+    ],
+    [
+     "Eneldo, menta y perejil picados",
+     "1 manojo de cada"
+    ],
+    [
+     "Piñones y pasas (opcional)",
+     "30 g y 30 g"
+    ],
+    [
+     "Aceite de oliva",
+     "120 ml"
+    ],
+    [
+     "Zumo de limón",
+     "60 ml"
+    ],
+    [
+     "Agua",
+     "500 ml"
+    ]
+   ],
+   "steps": [
+    "Enjuaga las hojas en salmuera o escalda las frescas 30 segundos.",
+    "Pocha la cebolla en parte del aceite, añade el arroz, las hierbas, los piñones y las pasas, sal y pimienta.",
+    "Pon una cucharadita de relleno en cada hoja por el lado de los nervios, dobla los lados y enrolla apretado.",
+    "Forra la olla con hojas rotas y coloca los rollos muy juntos; añade el resto del aceite, el limón y el agua y cubre con un plato.",
+    "Cuece a fuego suave 45–60 minutos, hasta que el arroz esté tierno; deja enfriar en la olla."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Relleno por hoja",
+    "ratio": "1 cucharadita colmada",
+    "note": "El arroz crece."
+   },
+   {
+    "use": "Cocción",
+    "ratio": "45–60 minutos a fuego suave",
+    "note": "Con peso encima."
+   },
+   {
+    "use": "Ración",
+    "ratio": "6–8 piezas",
+    "note": "Entrante."
+   },
+   {
+    "use": "Servicio",
+    "ratio": "A temperatura ambiente",
+    "note": "Versión de arroz."
+   }
+  ],
+  "variants": [
+   {
+    "id": "coccion-en-hoja-y-ceniza",
+    "name": "Cocción en hoja",
+    "note": "Hojas que envuelven."
+   },
+   {
+    "id": "hierbas-frescas",
+    "name": "Hierbas",
+    "note": "Eneldo, menta y perejil."
+   },
+   {
+    "id": "salsa-yogur-limon",
+    "name": "Salsa de yogur",
+    "note": "Para las de carne."
+   },
+   {
+    "id": "verduras-rellenas",
+    "name": "Verduras rellenas",
+    "note": "La familia."
+   }
+  ],
+  "keys": [
+   "Rollos apretados y muy juntos.",
+   "Peso encima para que no se abran.",
+   "Poco relleno: el arroz crece.",
+   "Enfriar en la olla.",
+   "Cada casa, su relleno."
+  ],
+  "errors": [
+   {
+    "p": "Se abren al cocer",
+    "fix": "Flojos o sin peso. Aprieta y pon un plato encima."
+   },
+   {
+    "p": "Arroz duro",
+    "fix": "Poco líquido o tiempo. Añade agua y cuece más."
+   },
+   {
+    "p": "Hojas duras",
+    "fix": "Hojas viejas sin escaldar. Escalda o usa en salmuera."
+   }
+  ],
+  "history": "Las hojas de parra rellenas son tradicionales en Turquía, Grecia, el Cáucaso y el Levante, con muchos nombres y rellenos.",
+  "uses": [
+   "Mezze y entrantes",
+   "Aperitivos fríos",
+   "Platos vegetales"
+  ],
+  "keep": "4–5 días en frío cubiertas de su aceite.",
+  "pro": "Elabora en tanda y saca a temperatura antes del servicio.",
+  "related": [
+   "coccion-en-hoja-y-ceniza",
+   "hierbas-frescas",
+   "salsa-yogur-limon",
+   "verduras-rellenas",
+   "uva-y-pasas",
+   "citricos"
+  ]
+ },
+ {
+  "id": "kibbeh",
+  "name": "Kibbeh",
+  "name_en": "Kibbeh",
+  "cat": "tecnicas",
+  "group": "Mediterráneo oriental y Magreb",
+  "technique": "fritura",
+  "aka": [
+   "kibbeh",
+   "kibbe",
+   "quibe",
+   "croquetas de bulgur y carne",
+   "kibbeh al horno"
+  ],
+  "summary": "Masa de bulgur y carne picada que envuelve un relleno especiado de carne, cebolla y piñones; frita en husos o al horno en bandeja.",
+  "what": "El kibbeh es un plato del Levante (Líbano, Siria) y de su diáspora: una masa de bulgur fino remojado y carne magra picada muy fina, que se moldea en forma de huso alrededor de un relleno de carne picada salteada con cebolla, especias y piñones, y se fríe. También se hace en bandeja, en capas, al horno. Existe una versión cruda de carne muy fresca que, como todo crudo, exige las máximas precauciones.\n\nLa masa debe trabajarse bien para que se pueda moldear fina sin romperse. Cada casa tiene su mezcla de especias.",
+  "base": {
+   "for": "unas 20 piezas",
+   "items": [
+    [
+     "Bulgur fino",
+     "250 g"
+    ],
+    [
+     "Carne magra de cordero o vacuno picada muy fina",
+     "400 g"
+    ],
+    [
+     "Cebolla rallada",
+     "1"
+    ],
+    [
+     "Especias (comino, canela, pimienta de Jamaica)",
+     "6 g"
+    ],
+    [
+     "Relleno: carne picada, cebolla, piñones y especias",
+     "300 g, 1, 40 g y 4 g"
+    ],
+    [
+     "Aceite para freír",
+     "abundante"
+    ],
+    [
+     "Sal",
+     "12 g por kg"
+    ]
+   ],
+   "steps": [
+    "Remoja el bulgur 15 minutos en agua fría y escúrrelo apretando.",
+    "Amasa la carne con el bulgur, la cebolla, las especias y la sal, con las manos mojadas, hasta una masa fina y moldeable.",
+    "Relleno: saltea la carne con la cebolla y las especias, añade los piñones tostados y enfría.",
+    "Forma huecos alargados con la masa, rellena y cierra en forma de huso.",
+    "Fríe a 175–180 °C 4–5 minutos, hasta dorar; o monta en bandeja y hornea a 190 °C 35–40 minutos."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Bulgur y carne",
+    "ratio": "2 partes de carne por 1 de bulgur aprox.",
+    "note": "Según la casa."
+   },
+   {
+    "use": "Fritura",
+    "ratio": "175–180 °C, 4–5 minutos",
+    "note": "Centro a 70 °C o más."
+   },
+   {
+    "use": "Pieza",
+    "ratio": "50–60 g",
+    "note": ""
+   },
+   {
+    "use": "Al horno",
+    "ratio": "190 °C, 35–40 minutos",
+    "note": "En bandeja."
+   }
+  ],
+  "variants": [
+   {
+    "id": "kebab-y-pinchos",
+    "name": "Kofta",
+    "note": "Otra carne picada especiada."
+   },
+   {
+    "id": "cereales-y-pseudocereales",
+    "name": "Bulgur",
+    "note": "El cereal."
+   },
+   {
+    "id": "croquetas",
+    "name": "Croquetas",
+    "note": "Fritos rellenos."
+   },
+   {
+    "id": "steak-tartar-y-carne-cruda",
+    "name": "Kibbeh crudo",
+    "note": "Precauciones de carne cruda."
+   }
+  ],
+  "keys": [
+   "Masa fina y moldeable.",
+   "Manos mojadas para trabajar.",
+   "Relleno frío.",
+   "Carne picada: hecha por dentro.",
+   "Cada casa, sus especias."
+  ],
+  "errors": [
+   {
+    "p": "Masa que se agrieta",
+    "fix": "Poco trabajada o seca. Amasa más con agua fría."
+   },
+   {
+    "p": "Se abren al freír",
+    "fix": "Paredes finas o rotas. Cierra bien."
+   },
+   {
+    "p": "Crudos por dentro",
+    "fix": "Piezas grandes. Más pequeñas y sonda."
+   }
+  ],
+  "history": "El kibbeh es un plato nacional en Líbano y Siria y se extendió con la emigración, por ejemplo a Brasil.",
+  "uses": [
+   "Mezze",
+   "Aperitivos",
+   "Platos principales al horno"
+  ],
+  "keep": "Formados crudos, congelados semanas; fritos, al momento.",
+  "pro": "Forma en tanda y congela; fríe al pedido.",
+  "related": [
+   "kebab-y-pinchos",
+   "cereales-y-pseudocereales",
+   "croquetas",
+   "steak-tartar-y-carne-cruda",
+   "cordero",
+   "frutos-secos"
+  ]
+ },
+ {
+  "id": "arroz-persa-tahdig",
+  "name": "Arroz persa con tahdig",
+  "name_en": "Persian rice with tahdig",
+  "cat": "tecnicas",
+  "group": "Cocina del mundo",
+  "technique": "vapor",
+  "aka": [
+   "tahdig",
+   "chelow",
+   "arroz persa",
+   "costra de arroz",
+   "arroz iraní"
+  ],
+  "summary": "Basmati sancochado y terminado al vapor tapado con un paño, con una costra dorada y crujiente en el fondo.",
+  "what": "El arroz persa es un basmati muy suelto y perfumado: se remoja, se cuece a medias en agua abundante con sal, se escurre y se termina al vapor en una olla con grasa en el fondo, tapada con un paño bajo la tapa que absorbe la condensación. En el fondo se forma el tahdig, una costra dorada y crujiente que es la parte más apreciada; puede hacerse solo con arroz, con yogur y azafrán, o con láminas de patata o pan.\n\nEl azafrán infusionado colorea parte del arroz al servir. Cada casa tiene su tahdig.",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Arroz basmati",
+     "500 g"
+    ],
+    [
+     "Sal para el agua",
+     "30–40 g por 3 l"
+    ],
+    [
+     "Mantequilla o aceite",
+     "60 g"
+    ],
+    [
+     "Yogur (para el tahdig)",
+     "100 g"
+    ],
+    [
+     "Azafrán infusionado en 50 ml de agua caliente",
+     "0,2 g"
+    ]
+   ],
+   "steps": [
+    "Lava el arroz hasta que el agua salga clara y remójalo 1–2 horas.",
+    "Cuécelo en agua abundante muy salada 5–6 minutos, hasta que esté blando por fuera y firme dentro; escurre.",
+    "Pon la grasa en el fondo de una olla de fondo grueso; mezcla un poco de arroz con el yogur y parte del azafrán y extiéndelo en el fondo.",
+    "Añade el resto del arroz en montaña, haz agujeros con un palo, tapa con un paño bajo la tapa y cocina a fuego medio 10 minutos y bajo 35–45.",
+    "Sirve el arroz suelto con el azafrán y vuelca o rompe el tahdig del fondo."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Sancochado",
+    "ratio": "5–6 minutos en agua muy salada",
+    "note": "Firme dentro."
+   },
+   {
+    "use": "Vapor final",
+    "ratio": "Fuego bajo, 35–45 minutos",
+    "note": "Con paño bajo la tapa."
+   },
+   {
+    "use": "Arroz por ración",
+    "ratio": "80 g en seco",
+    "note": ""
+   },
+   {
+    "use": "Arroz cocido",
+    "ratio": "Enfriar rápido si sobra",
+    "note": "Consumir en 1–2 días."
+   }
+  ],
+  "variants": [
+   {
+    "id": "arroz-por-variedades",
+    "name": "Basmati",
+    "note": "El arroz que se usa."
+   },
+   {
+    "id": "biryani",
+    "name": "Biryani",
+    "note": "Otro arroz al vapor en capas."
+   },
+   {
+    "id": "azafran",
+    "name": "Azafrán",
+    "note": "Infusionado."
+   },
+   {
+    "id": "arroces",
+    "name": "Socarrat",
+    "note": "La costra mediterránea."
+   }
+  ],
+  "keys": [
+   "Lavar y remojar el basmati.",
+   "Sancochar en agua muy salada.",
+   "Paño bajo la tapa.",
+   "Fuego bajo y paciencia para la costra.",
+   "Cada casa, su tahdig."
+  ],
+  "errors": [
+   {
+    "p": "Tahdig quemado",
+    "fix": "Fuego alto. Bájalo tras los primeros minutos."
+   },
+   {
+    "p": "Arroz pastoso",
+    "fix": "Sancochado de más. 5–6 minutos."
+   },
+   {
+    "p": "Sin costra",
+    "fix": "Poca grasa o fuego muy bajo. Ajusta."
+   }
+  ],
+  "history": "El arroz con tahdig es un emblema de la cocina iraní, donde la costra del fondo se sirve como parte principal de la mesa.",
+  "uses": [
+   "Guarnición de guisos y brochetas",
+   "Platos de fiesta"
+  ],
+  "keep": "Al momento; el arroz sobrante, enfriado rápido y 1–2 días en frío.",
+  "pro": "Arroz remojado y sancochado por tandas; olla al fuego según el servicio.",
+  "related": [
+   "arroz-por-variedades",
+   "biryani",
+   "azafran",
+   "arroces",
+   "kebab-y-pinchos",
+   "lacteos-fermentados"
+  ]
+ },
+ {
+  "id": "injera-y-wats",
+  "name": "Injera y wats etíopes",
+  "name_en": "Injera and Ethiopian wats",
+  "cat": "tecnicas",
+  "group": "Cocina del mundo",
+  "technique": "fermentado",
+  "aka": [
+   "injera",
+   "wat",
+   "doro wat",
+   "misir wat",
+   "berbere",
+   "niter kibbeh",
+   "cocina etíope"
+  ],
+  "summary": "Pan plano esponjoso y ácido de teff fermentado, que sirve de plato y cubierto, con guisos especiados con berbere.",
+  "what": "La injera es el pan de Etiopía y Eritrea: una masa líquida de harina de teff fermentada varios días, que se cuece por un solo lado en una plancha tapada hasta quedar esponjosa, llena de agujeros y ligeramente ácida. Se extiende sobre la bandeja y encima se sirven los wats, guisos especiados: el doro wat de pollo con huevo cocido, el misir wat de lentejas rojas. Se come con la mano, usando trozos de injera.\n\nLos wats llevan berbere, una mezcla picante de chile y especias, y a menudo niter kibbeh, mantequilla clarificada con especias. Cada casa tiene su berbere.",
+  "base": {
+   "for": "6 injeras y 4 raciones de misir wat",
+   "items": [
+    [
+     "Harina de teff (o mezcla con trigo)",
+     "300 g"
+    ],
+    [
+     "Agua",
+     "450–500 ml"
+    ],
+    [
+     "Lentejas rojas",
+     "250 g"
+    ],
+    [
+     "Cebolla picada muy fina",
+     "2"
+    ],
+    [
+     "Berbere",
+     "15–20 g"
+    ],
+    [
+     "Ajo y jengibre",
+     "3 dientes y 15 g"
+    ],
+    [
+     "Mantequilla clarificada especiada o aceite",
+     "50 g"
+    ]
+   ],
+   "steps": [
+    "Mezcla la harina con el agua, tapa y deja fermentar 2–3 días a temperatura ambiente, hasta que burbujee y huela ácido.",
+    "Cuece la injera: vierte una capa fina en una sartén caliente, tapa y cocina 2–3 minutos solo por abajo, hasta que la superficie esté llena de agujeros y seca.",
+    "Wat: cocina la cebolla en seco a fuego medio hasta que se ablande, añade la grasa, el berbere, el ajo y el jengibre.",
+    "Añade las lentejas lavadas y agua y cuece 25–30 minutos, hasta que estén cremosas.",
+    "Sirve el wat sobre la injera, con más injera enrollada al lado."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Fermentación de la masa",
+    "ratio": "2–3 días a 20–24 °C",
+    "note": "Hasta que huela ácido."
+   },
+   {
+    "use": "Injera",
+    "ratio": "2–3 minutos, tapada, sin dar la vuelta",
+    "note": ""
+   },
+   {
+    "use": "Misir wat",
+    "ratio": "25–30 minutos",
+    "note": "Cremoso."
+   },
+   {
+    "use": "Berbere",
+    "ratio": "15–20 g por 4 raciones",
+    "note": "Según picante."
+   }
+  ],
+  "variants": [
+   {
+    "id": "panes-planos",
+    "name": "Panes planos",
+    "note": "Otros panes de sartén."
+   },
+   {
+    "id": "dal-y-curries-de-legumbre",
+    "name": "Legumbres especiadas",
+    "note": "Pariente del misir wat."
+   },
+   {
+    "id": "pastas-de-especias",
+    "name": "Mezclas de especias",
+    "note": "Berbere."
+   },
+   {
+    "id": "clarificacion",
+    "name": "Mantequilla clarificada",
+    "note": "Base del niter kibbeh."
+   }
+  ],
+  "keys": [
+   "Masa fermentada hasta que esté ácida.",
+   "Injera por un solo lado y tapada.",
+   "Cebolla cocida en seco antes de la grasa.",
+   "Se come con la mano.",
+   "Cada casa, su berbere."
+  ],
+  "errors": [
+   {
+    "p": "Injera sin agujeros",
+    "fix": "Masa poco fermentada o espesa. Más tiempo y más agua."
+   },
+   {
+    "p": "Injera que se rompe",
+    "fix": "Sartén poco caliente o sin tapar. Calienta y tapa."
+   },
+   {
+    "p": "Wat plano",
+    "fix": "Poca cebolla o berbere. Ajusta."
+   }
+  ],
+  "history": "La injera y los wats son la base de la cocina de Etiopía y Eritrea; el teff es un cereal originario de esa región.",
+  "uses": [
+   "Comida para compartir",
+   "Platos vegetales",
+   "Guisos especiados"
+  ],
+  "keep": "Injera, 1–2 días tapada; wats, 3–4 días en frío.",
+  "pro": "Masa en fermentación continua; injeras por tandas y wats hechos de antemano.",
+  "related": [
+   "panes-planos",
+   "dal-y-curries-de-legumbre",
+   "pastas-de-especias",
+   "clarificacion",
+   "fermentacion-lactica",
+   "cereales-y-pseudocereales"
+  ]
+ },
+ {
+  "id": "locro",
+  "name": "Locro",
+  "name_en": "Locro",
+  "cat": "tecnicas",
+  "group": "Cocina de América",
+  "technique": "guiso",
+  "aka": [
+   "locro",
+   "locro argentino",
+   "guiso de maíz",
+   "guiso andino"
+  ],
+  "summary": "Guiso espeso andino de maíz blanco, alubias, calabaza y carnes de cerdo y vacuno, con una salsa picante al servir.",
+  "what": "El locro es un guiso de la región andina de Sudamérica, muy popular en Argentina: maíz blanco seco (remojado), alubias, calabaza que se deshace y espesa, y carnes de cerdo y vacuno, a menudo con chorizo y panceta, cocinados durante horas a fuego lento. Se sirve con una salsa roja de grasa, pimentón, cebolleta y chile.\n\nEs un plato de invierno y de fiestas. Cada región y cada casa lo hacen a su manera.",
+  "base": {
+   "for": "8 raciones",
+   "items": [
+    [
+     "Maíz blanco seco remojado 12 horas",
+     "400 g"
+    ],
+    [
+     "Alubias blancas remojadas",
+     "200 g"
+    ],
+    [
+     "Calabaza en dados",
+     "800 g"
+    ],
+    [
+     "Carnes: falda de vacuno, panceta y costilla de cerdo, chorizo",
+     "1,2 kg en total"
+    ],
+    [
+     "Cebolla, comino y pimentón",
+     "2, 5 g y 8 g"
+    ],
+    [
+     "Salsa: grasa, pimentón, cebolleta y chile",
+     "60 ml, 10 g, 1 manojo y al gusto"
+    ]
+   ],
+   "steps": [
+    "Cuece el maíz y las alubias remojados en agua abundante 1 hora.",
+    "Añade las carnes en trozos y la cebolla y cuece 1 hora más a fuego suave.",
+    "Incorpora la calabaza, el comino y el pimentón y cuece 45–60 minutos, removiendo, hasta que la calabaza se deshaga y el guiso espese.",
+    "Prepara la salsa calentando la grasa con la cebolleta, apartando y añadiendo el pimentón y el chile.",
+    "Sirve el locro con la salsa por encima."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Cocción total",
+    "ratio": "2,5–3 horas",
+    "note": "Fuego suave."
+   },
+   {
+    "use": "Maíz",
+    "ratio": "50 g en seco por ración",
+    "note": "Remojado."
+   },
+   {
+    "use": "Calabaza",
+    "ratio": "100 g por ración",
+    "note": "Espesa."
+   },
+   {
+    "use": "Ración",
+    "ratio": "450 g",
+    "note": "Plato único."
+   }
+  ],
+  "variants": [
+   {
+    "id": "maiz",
+    "name": "Maíz",
+    "note": "Variedades."
+   },
+   {
+    "id": "calabaza",
+    "name": "Calabaza",
+    "note": "Espesa el guiso."
+   },
+   {
+    "id": "cocido",
+    "name": "Cocido",
+    "note": "Otro guiso de carnes y legumbre."
+   },
+   {
+    "id": "chimichurri",
+    "name": "Salsas argentinas",
+    "note": "Otra salsa de la mesa."
+   }
+  ],
+  "keys": [
+   "Remojar maíz y alubias.",
+   "Fuego suave y largo.",
+   "Calabaza para espesar.",
+   "Salsa picante al servir.",
+   "Cada casa, su locro."
+  ],
+  "errors": [
+   {
+    "p": "Maíz duro",
+    "fix": "Poco remojo o tiempo. Remoja y alarga."
+   },
+   {
+    "p": "Se pega",
+    "fix": "Poco removido al espesar. Remueve más al final."
+   },
+   {
+    "p": "Guiso aguado",
+    "fix": "Poca calabaza. Añade más o reduce."
+   }
+  ],
+  "history": "El locro es un guiso de origen andino, muy ligado en Argentina a las fiestas patrias.",
+  "uses": [
+   "Platos de invierno",
+   "Comidas de fiesta"
+  ],
+  "keep": "4 días en frío; se congela bien.",
+  "pro": "Guisa en tanda; salsa al servir.",
+  "related": [
+   "maiz",
+   "calabaza",
+   "cocido",
+   "chimichurri",
+   "legumbres",
+   "guisos-largos"
+  ]
+ },
+ {
+  "id": "pastel-de-choclo",
+  "name": "Pastel de choclo",
+  "name_en": "Pastel de choclo",
+  "cat": "tecnicas",
+  "group": "Cocina de América",
+  "technique": "horno",
+  "aka": [
+   "pastel de choclo",
+   "pastel de maíz",
+   "pino",
+   "pastel chileno"
+  ],
+  "summary": "Carne picada guisada con cebolla y comino, pollo, huevo y aceitunas, cubierta de crema de maíz tierno y gratinada con azúcar.",
+  "what": "El pastel de choclo es un plato chileno de verano: en una fuente de barro se pone el pino (carne picada guisada con mucha cebolla, comino y pimentón), trozos de pollo, huevo duro, aceitunas y pasas, y se cubre con una pasta de maíz tierno rallado y cocido con albahaca, leche y mantequilla. Se espolvorea con azúcar y se hornea hasta dorar.\n\nEl contraste dulce y salado es su sello. Cada casa decide si lleva pasas o pollo.",
+  "base": {
+   "for": "6 raciones",
+   "items": [
+    [
+     "Maíz tierno desgranado",
+     "1,2 kg"
+    ],
+    [
+     "Albahaca, leche y mantequilla",
+     "1 manojo, 200 ml y 50 g"
+    ],
+    [
+     "Carne picada de vacuno",
+     "600 g"
+    ],
+    [
+     "Cebolla, comino y pimentón",
+     "3, 4 g y 5 g"
+    ],
+    [
+     "Pollo cocido en trozos",
+     "300 g"
+    ],
+    [
+     "Huevos duros, aceitunas negras y pasas",
+     "3, 60 g y 40 g"
+    ],
+    [
+     "Azúcar para espolvorear",
+     "20 g"
+    ]
+   ],
+   "steps": [
+    "Tritura el maíz y cuécelo con la leche, la mantequilla y la albahaca, removiendo, 10–15 minutos, hasta que espese.",
+    "Pino: pocha mucha cebolla, añade la carne, el comino y el pimentón y guisa hasta que esté jugoso.",
+    "En una fuente de horno, reparte el pino, el pollo, el huevo, las aceitunas y las pasas.",
+    "Cubre con la pasta de maíz y espolvorea con azúcar.",
+    "Hornea a 200 °C 25–30 minutos, hasta dorar."
+   ]
+  },
+  "ratios": [
+   {
+    "use": "Horneado",
+    "ratio": "200 °C, 25–30 minutos",
+    "note": "Superficie dorada."
+   },
+   {
+    "use": "Pasta de maíz",
+    "ratio": "10–15 minutos de cocción",
+    "note": "Espesa."
+   },
+   {
+    "use": "Carne picada",
+    "ratio": "Guisada a 70 °C o más",
+    "note": "Siempre hecha."
+   },
+   {
+    "use": "Ración",
+    "ratio": "350 g",
+    "note": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "maiz",
+    "name": "Maíz tierno",
+    "note": "Rallado y cocido."
+   },
+   {
+    "id": "musaka",
+    "name": "Musaka",
+    "note": "Otro pastel de carne gratinado."
+   },
+   {
+    "id": "gratinado",
+    "name": "Gratinado",
+    "note": "Azúcar quemado."
+   },
+   {
+    "id": "albondigas",
+    "name": "Carne picada",
+    "note": "Guisada."
+   }
+  ],
+  "keys": [
+   "Mucha cebolla en el pino.",
+   "Pasta de maíz espesa.",
+   "Azúcar por encima para dorar.",
+   "Fuente de barro si se puede.",
+   "Cada casa, su pastel."
+  ],
+  "errors": [
+   {
+    "p": "Pasta de maíz líquida",
+    "fix": "Poco cocida. Cuece más."
+   },
+   {
+    "p": "Pino seco",
+    "fix": "Poca cebolla. Más cebolla y menos tiempo."
+   },
+   {
+    "p": "Superficie pálida",
+    "fix": "Sin azúcar u horno flojo. Espolvorea y sube."
+   }
+  ],
+  "history": "El pastel de choclo es un plato tradicional de Chile, ligado a la temporada de maíz tierno en verano.",
+  "uses": [
+   "Platos de verano",
+   "Platos al horno para compartir"
+  ],
+  "keep": "3 días en frío; se regenera en horno.",
+  "pro": "Pino y pasta de maíz hechos; montaje y horno por fuente.",
+  "related": [
+   "maiz",
+   "musaka",
+   "gratinado",
+   "albondigas",
+   "pollo-y-aves",
+   "aceitunas-y-alcaparras"
+  ]
+ },
+ {
+  "id": "despiece-de-pescados-grandes",
+  "name": "Despiece de pescados grandes",
+  "name_en": "Breaking down large fish",
+  "cat": "tecnicas",
+  "group": "Conservar y transformar",
+  "aka": [
+   "despiece de atún",
+   "despiece de pez espada",
+   "porcionar pescado grande",
+   "lomos de atún",
+   "rodajas de pescado"
+  ],
+  "summary": "Cómo separar cabeza, lomos, ventresca y recortes de un atún, un pez espada o un mero grande, y porcionarlos en frío sin perder carne.",
+  "what": "Los pescados grandes (atún, pez espada, mero, corvina grande) no se filetean como uno de ración: se despiezan como una res. Primero se separa la cabeza, luego los lomos a lo largo de la espina (el atún da cuatro, dos superiores y dos ventrales), se retira la piel y la parte oscura y sanguinolenta, y se porcionan en bloques o rodajas según el uso. La ventresca, la parte baja del vientre, es la más grasa y valiosa.\n\nSe trabaja con cuchillos largos, mucho frío y orden, para que la carne no se caliente ni se rompa. Ver [[fileteado-de-pescado]] y [[atun-rojo-y-bonito]].",
+  "method": [
+   "Trabaja con el pescado frío, sobre una superficie limpia y amplia, con cuchillos largos bien afilados.",
+   "Separa la cabeza por detrás de las agallas, siguiendo el hueso.",
+   "Corta a lo largo de la línea lateral y saca los lomos pegado a la espina, en pasadas largas.",
+   "Quita la piel y la parte oscura (en el atún, la sangacha) y separa la ventresca.",
+   "Porciona en bloques para crudo o en rodajas regulares para plancha o brasa; envuelve, etiqueta y guarda en frío o congela."
+  ],
+  "ratios": [
+   {
+    "use": "Lomos de atún",
+    "ratio": "4 lomos por pieza",
+    "note": "2 superiores y 2 ventrales."
+   },
+   {
+    "use": "Rendimiento en atún",
+    "ratio": "55–65 % de carne limpia",
+    "note": "Según pieza."
+   },
+   {
+    "use": "Rodajas para plancha",
+    "ratio": "2–3 cm",
+    "note": "Regulares."
+   },
+   {
+    "use": "Bloque para crudo",
+    "ratio": "Congelado a -20 °C al menos 24 horas",
+    "note": "En toda la pieza."
+   }
+  ],
+  "variants": [
+   {
+    "id": "fileteado-de-pescado",
+    "name": "Fileteado",
+    "note": "Pescados de ración."
+   },
+   {
+    "id": "atun-rojo-y-bonito",
+    "name": "Atún",
+    "note": "Zonas y usos."
+   },
+   {
+    "id": "pez-espada-y-emperador",
+    "name": "Pez espada",
+    "note": "Rodajas."
+   },
+   {
+    "id": "porcionado-y-racionado",
+    "name": "Porcionado",
+    "note": "Pesos por ración."
+   }
+  ],
+  "keys": [
+   "Frío constante durante todo el despiece.",
+   "Cuchillos largos y pasadas largas.",
+   "Fuera la parte oscura y sanguinolenta.",
+   "Cada zona, su uso: ventresca, lomo, recortes.",
+   "Bloques para crudo, congelados antes."
+  ],
+  "errors": [
+   {
+    "p": "Carne rota",
+    "fix": "Cortes cortos o cuchillo pequeño. Cuchillo largo y pasadas largas."
+   },
+   {
+    "p": "Carne caliente y blanda",
+    "fix": "Despiece lento sin frío. Trabaja por partes y vuelve a la cámara."
+   },
+   {
+    "p": "Mucha carne en la espina",
+    "fix": "Cuchillo separado del hueso. Pégalo a la espina."
+   }
+  ],
+  "history": "El despiece de grandes pescados es un oficio de lonjas y almadrabas, con tradición en el sur de la península para el atún.",
+  "uses": [
+   "Atún y pez espada",
+   "Meros y corvinas grandes",
+   "Preparación de crudos"
+  ],
+  "keep": "Lomos envueltos, 2–3 días a 0–2 °C; para crudo, congelados.",
+  "pro": "Despieza al recibir y porciona por usos; recortes a tartares, cabeza y espinas a caldo.",
+  "related": [
+   "fileteado-de-pescado",
+   "atun-rojo-y-bonito",
+   "pez-espada-y-emperador",
+   "porcionado-y-racionado",
+   "afilar-y-cuidar-cuchillos",
+   "ceviche-y-crudos"
+  ]
  }
 ]
